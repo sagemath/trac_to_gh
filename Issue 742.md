@@ -1,25 +1,63 @@
 # Issue 742: notebook timeout -- should be easy to set from command line and not timeout by *default*
 
+archive/issues_000742.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/742\n\n",
+    "created_at": "2007-09-23T23:08:25Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook timeout -- should be easy to set from command line and not timeout by *default*",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/742",
+    "user": "was"
+}
+```
+Assignee: was
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/742
 
-Original creator: was
-
-Original creation time: 2007-09-23 23:08:25
-
-Assignee: was
 
 
 
 
 ---
+
+archive/issue_comments_004346.json:
+```json
+{
+    "body": "Attachment\n\nNow fixed.",
+    "created_at": "2007-09-25T06:00:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/742#issuecomment-4346",
+    "user": "was"
+}
+```
 
 Attachment
 
 Now fixed.
 
 
+
 ---
 
-Comment by was created at 2007-09-25 06:00:28
+archive/issue_comments_004347.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-25T06:00:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/742#issuecomment-4347",
+    "user": "was"
+}
+```
 
 Resolution: fixed

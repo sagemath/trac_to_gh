@@ -1,11 +1,21 @@
 # Issue 1195: The "len" function for lists and sequences
 
-Issue created by migration from https://trac.sagemath.org/ticket/1195
-
-Original creator: ljpk
-
-Original creation time: 2007-11-17 23:01:18
-
+archive/issues_001195.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCurrently, the method to obtain the length of a list or sequence is:\n\n{{my_list=Sequence([1,2,3,4])\nlen(my_list)}}\n\nThis is not consistent with either MAGMA or PARI, and there is no method attached to the sequence or list which gives the length.\n\nI would like to suggest that a method be added so that\n\n{{my_list.length()}}\n\nwould give the answer ``4''.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1195\n\n",
+    "created_at": "2007-11-17T23:01:18Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "The \"len\" function for lists and sequences",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1195",
+    "user": "ljpk"
+}
+```
 Assignee: cwitty
 
 Currently, the method to obtain the length of a list or sequence is:
@@ -21,40 +31,99 @@ I would like to suggest that a method be added so that
 
 would give the answer ``4''.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1195
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-11-18 05:53:43
+archive/issue_comments_007415.json:
+```json
+{
+    "body": "On the other hand, len() is the standard Python way of doing things.",
+    "created_at": "2007-11-18T05:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#issuecomment-7415",
+    "user": "mhansen"
+}
+```
 
 On the other hand, len() is the standard Python way of doing things.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-11-24 21:25:51
+archive/issue_comments_007416.json:
+```json
+{
+    "body": "This is not quite true -- there is a `.__len__()` function that `len()` calls.\n\nPerhaps this should be at the level of `SageObject`: `.length()` calls `.__len__()?`  This is irritating but not idiomatic python, so I vote to keep it as is.",
+    "created_at": "2007-11-24T21:25:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#issuecomment-7416",
+    "user": "ncalexan"
+}
+```
 
 This is not quite true -- there is a `.__len__()` function that `len()` calls.
 
 Perhaps this should be at the level of `SageObject`: `.length()` calls `.__len__()?`  This is irritating but not idiomatic python, so I vote to keep it as is.
 
 
+
 ---
 
-Comment by malb created at 2008-02-27 00:05:31
+archive/issue_comments_007417.json:
+```json
+{
+    "body": "I vote against the proposal in this ticket, `len(Foo)` is the Python way.",
+    "created_at": "2008-02-27T00:05:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#issuecomment-7417",
+    "user": "malb"
+}
+```
 
 I vote against the proposal in this ticket, `len(Foo)` is the Python way.
 
 
+
 ---
 
-Comment by was created at 2008-02-27 12:19:20
+archive/issue_comments_007418.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-02-27T12:19:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#issuecomment-7418",
+    "user": "was"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by was created at 2008-02-27 12:19:20
+archive/issue_comments_007419.json:
+```json
+{
+    "body": "> Perhaps this should be at the level of SageObject: .length() calls .__len__()? \n> This is irritating but not idiomatic python, so I vote to keep it as is.\n\nI think this would be annoying.  It also adds to the clutter when one does X.[tab]\non a sage object X.  And everybody learns about len(...) in Python pretty soon.",
+    "created_at": "2008-02-27T12:19:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1195#issuecomment-7419",
+    "user": "was"
+}
+```
 
 > Perhaps this should be at the level of SageObject: .length() calls .__len__()? 
 > This is irritating but not idiomatic python, so I vote to keep it as is.

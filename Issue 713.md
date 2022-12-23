@@ -1,11 +1,21 @@
 # Issue 713: [with patch] Interrupting Singular doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/713
-
-Original creator: malb
-
-Original creation time: 2007-09-20 18:31:26
-
+archive/issues_000713.json:
+```json
+{
+    "body": "Assignee: was\n\nConsider\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis() # forever!\n```\n\nCtrl-C does not interrupt nor kill the Singular process doing the hard work. The attached patch fixes that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/713\n\n",
+    "created_at": "2007-09-20T18:31:26Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] Interrupting Singular doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/713",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Consider
@@ -18,14 +28,42 @@ sage: I.groebner_basis() # forever!
 
 Ctrl-C does not interrupt nor kill the Singular process doing the hard work. The attached patch fixes that.
 
+Issue created by migration from https://trac.sagemath.org/ticket/713
+
+
+
+
 
 ---
+
+archive/issue_comments_003738.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-20T18:31:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/713",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/713#issuecomment-3738",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-09-20 18:57:02
+archive/issue_comments_003739.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-20T18:57:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/713",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/713#issuecomment-3739",
+    "user": "was"
+}
+```
 
 Resolution: fixed

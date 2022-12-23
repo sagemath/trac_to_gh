@@ -1,11 +1,21 @@
 # Issue 1248: mwrank wrapper defect
 
-Issue created by migration from https://trac.sagemath.org/ticket/1248
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-23 16:32:03
-
+archive/issues_001248.json:
+```json
+{
+    "body": "Assignee: was\n\nThe mwrank wrapper crashes for curves requiring a large precision:\n\n```\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\n\nThe workaround is to enlarge the precision, but this does not seem to work:\n\n```\nsage: mwrank_set_precision(40)\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\n\nIn comparison, the mwrank console works:\n\n```\npasta% sage -mwrank -p40\n...\nEnter curve: [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n...\nRank = 2\n...\nGenerator 1 is [-64279912864146869343830:9890032513326436827332346415:5023053676376]; height 19.3576595783878252695113978299426894052\nGenerator 2 is [15973785170:1448063200169915:1]; height 4.540177201347877276441819514533365581727\n```\n\nThis proves that the defect is in the mwrank wrapper, not in mwrank itself.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1248\n\n",
+    "created_at": "2007-11-23T16:32:03Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "mwrank wrapper defect",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1248",
+    "user": "zimmerma"
+}
+```
 Assignee: was
 
 The mwrank wrapper crashes for curves requiring a large precision:
@@ -43,10 +53,25 @@ Generator 2 is [15973785170:1448063200169915:1]; height 4.5401772013478772764418
 This proves that the defect is in the mwrank wrapper, not in mwrank itself.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1248
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-05 19:01:37
+archive/issue_comments_007819.json:
+```json
+{
+    "body": "John Cremona wrote:\n\n```\nThis was Paul Z's observation and seems to be a wrapper problem, so\n\"anyone\" could try to track that down.\n]]]\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-05T19:01:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#issuecomment-7819",
+    "user": "mabshoff"
+}
+```
 
 John Cremona wrote:
 
@@ -60,9 +85,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 23:00:38
+archive/issue_comments_007820.json:
+```json
+{
+    "body": "Since William is rewriting the mwrank wrapper he might take care of this. The crash does happen with Sage 2.10.2.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-15T23:00:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#issuecomment-7820",
+    "user": "mabshoff"
+}
+```
 
 Since William is rewriting the mwrank wrapper he might take care of this. The crash does happen with Sage 2.10.2.alpha0.
 
@@ -71,9 +107,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:23:50
+archive/issue_comments_007821.json:
+```json
+{
+    "body": "Hmmm, since William told be that the mwrank wrapper rewrite is practically done it would be nice to get this into Sage and hopefully resolve this issue, too.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T21:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#issuecomment-7821",
+    "user": "mabshoff"
+}
+```
 
 Hmmm, since William told be that the mwrank wrapper rewrite is practically done it would be nice to get this into Sage and hopefully resolve this issue, too.
 
@@ -82,15 +129,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cwitty created at 2008-08-23 19:14:38
+archive/issue_comments_007822.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-23T19:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#issuecomment-7822",
+    "user": "cwitty"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cwitty created at 2008-08-23 19:14:38
+archive/issue_comments_007823.json:
+```json
+{
+    "body": "This works for me in Sage 3.1.1 on 32-bit and 64-bit x86; maybe the \"mwrank wrapper rewrite\" referred to above did fix the problem?",
+    "created_at": "2008-08-23T19:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1248#issuecomment-7823",
+    "user": "cwitty"
+}
+```
 
 This works for me in Sage 3.1.1 on 32-bit and 64-bit x86; maybe the "mwrank wrapper rewrite" referred to above did fix the problem?

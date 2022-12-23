@@ -1,35 +1,82 @@
 # Issue 1005: Make Sage compile in 32 bit mode on OSX 10.5
 
-Issue created by migration from https://trac.sagemath.org/ticket/1005
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-26 20:43:43
-
+archive/issues_001005.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nKeywords: Leopard\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1005\n\n",
+    "created_at": "2007-10-26T20:43:43Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "Make Sage compile in 32 bit mode on OSX 10.5",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1005",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Keywords: Leopard
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1005
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-26 20:44:55
+archive/issue_comments_006120.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-26T20:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6120",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-27 03:55:40
+archive/issue_comments_006121.json:
+```json
+{
+    "body": "When this is fixed, inst/inst.tex should be updated; I just changed that file to say that OS X 10.5 is not yet supported.",
+    "created_at": "2007-10-27T03:55:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6121",
+    "user": "cwitty"
+}
+```
 
 When this is fixed, inst/inst.tex should be updated; I just changed that file to say that OS X 10.5 is not yet supported.
 
 
+
 ---
 
-Comment by was created at 2007-10-29 01:55:39
+archive/issue_comments_006122.json:
+```json
+{
+    "body": "Some hacks / workarounds:\n\n\n```\nCrazy hacks to get things to build.  Will figure out right fixes once everything\nworks, etc.\n\nThese come from rpw, me, Mabshoff .\n\n1) FLINT (william stein):\nProblem -- Multiple symbols... --\nSolution:\n   comment out this one line 423 of local/include/gmp.h\n/* #define __GMP_EXTERN_INLINE      extern __inline__ */\n\n2) PYTHON (rpw):\nPython fails to build:\nSolution:\nI did\n   export CFLAGS=\"-D__DARWIN_UNIX03\"\nthen in src/ manually did this line again after it failed:\ngcc -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -DNDEBUG -g -O3 -Wall -Wstrict-prototypes  -I. -I./Include   -DPy_BUILD_CORE  -c ./Modules/posixmodule.c -o Modules/posixmodule.o\n\nNote that putting the above CFLAGS lines in spkg-install at the top or in the ./configure\nline did *not* work for some reason.\n\n3) GIVARO (rpw and mabshoff):\nProblem: Fails to build.\nSolution: Add #include \"sys/types.h\" to the top of\nsrc/src/kernel/zpz/givzpz32std.inl\nsrc/src/kernel/zpz/givzpz32uns.inl\n\n```\n",
+    "created_at": "2007-10-29T01:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6122",
+    "user": "was"
+}
+```
 
 Some hacks / workarounds:
 
@@ -67,9 +114,20 @@ src/src/kernel/zpz/givzpz32uns.inl
 
 
 
+
 ---
 
-Comment by was created at 2007-10-29 02:57:10
+archive/issue_comments_006123.json:
+```json
+{
+    "body": "\n```\n4) Building clisp fails with \n\n  UNIX error 45: Operation not supported\n\nSOLUTION: \n\n   cd spkg/build/clisp-*\n   cd src/src\n   make\n   make install\n\nIt works.  The problem is that building tee'ing breaks on 10.5. See\nhttp://osdir.com/ml/apple.fink.tracker/2004-12/msg00149.html\n```\n",
+    "created_at": "2007-10-29T02:57:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6123",
+    "user": "was"
+}
+```
 
 
 ```
@@ -90,9 +148,20 @@ http://osdir.com/ml/apple.fink.tracker/2004-12/msg00149.html
 
 
 
+
 ---
 
-Comment by was created at 2007-10-29 03:00:10
+archive/issue_comments_006124.json:
+```json
+{
+    "body": "\n```\n5) MAXIMA:\n\nSolution: Exactly the same as for clisp.  This works.\n```\n",
+    "created_at": "2007-10-29T03:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6124",
+    "user": "was"
+}
+```
 
 
 ```
@@ -103,9 +172,20 @@ Solution: Exactly the same as for clisp.  This works.
 
 
 
+
 ---
 
-Comment by was created at 2007-10-29 03:14:24
+archive/issue_comments_006125.json:
+```json
+{
+    "body": "Other broken packages:\n\n```\nlcalc -- fails\nflintqs -- fails\nscipy -- fails (looks easy to fix)\n```\n\n\nEverything else builds and Sage starts up.",
+    "created_at": "2007-10-29T03:14:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6125",
+    "user": "was"
+}
+```
 
 Other broken packages:
 
@@ -119,9 +199,20 @@ scipy -- fails (looks easy to fix)
 Everything else builds and Sage starts up.
 
 
+
 ---
 
-Comment by was created at 2007-10-29 05:44:31
+archive/issue_comments_006126.json:
+```json
+{
+    "body": "6) LCALC:\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\n\nin spkg-install to \n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\n\n\nThe former was needed when we supported windows (e.g., lcalc.exe), and\nwas sort of hack-ish.  The latter works around that there is some \nsmall problem with strip on os x, which isn't an issue. \n\n -- William",
+    "created_at": "2007-10-29T05:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6126",
+    "user": "was"
+}
+```
 
 6) LCALC:
 
@@ -145,9 +236,20 @@ small problem with strip on os x, which isn't an issue.
  -- William
 
 
+
 ---
 
-Comment by was created at 2007-10-29 05:55:39
+archive/issue_comments_006127.json:
+```json
+{
+    "body": "7) FLINTQS:\n\nThe fix for flintqs is the same as for givaro, basically.\nTo the file\n\n```\n    src/lanczos.c\n```\n\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\n\nThen it builds fine.",
+    "created_at": "2007-10-29T05:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6127",
+    "user": "was"
+}
+```
 
 7) FLINTQS:
 
@@ -167,9 +269,20 @@ add the following as the first line:
 Then it builds fine.
 
 
+
 ---
 
-Comment by was created at 2007-10-29 07:10:45
+archive/issue_comments_006128.json:
+```json
+{
+    "body": "8) SCIPY\n\nThe final build problem was with Scipy.  There is a problem with g95 not working correctly to build some of scipy on 10.5.  Fortunately, using gfortran instead *does* work.  So I installed a system-wide gfortran in /usr/local/bin/, then did\n\n```\n   export SAGE_FORTRAN=`which gfortran`\n   cd SAGE_ROOT\n   rm spkg/installed/fortran*\n   sage -f fortran-20070912\n   make\n```\n\nand the rest of the build completed fine.",
+    "created_at": "2007-10-29T07:10:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6128",
+    "user": "was"
+}
+```
 
 8) SCIPY
 
@@ -186,9 +299,20 @@ The final build problem was with Scipy.  There is a problem with g95 not working
 and the rest of the build completed fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 07:47:33
+archive/issue_comments_006129.json:
+```json
+{
+    "body": "Replying to [ticket:1005 mabshoff]:\n> NOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5.\n> \n> \n> \n> Doctesting the tutorial results in a bunch of error messages like this:\n> {{{\n> python(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n> *** set a breakpoint in malloc_error_break to debug\n> }}}\n\nCheck out https://lists.ubuntu.com/archives/storm/2007-July/000035.html for some pointers how this might be resolved.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T07:47:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6129",
+    "user": "mabshoff"
+}
+```
 
 Replying to [ticket:1005 mabshoff]:
 > NOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5.
@@ -208,9 +332,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 08:18:10
+archive/issue_comments_006130.json:
+```json
+{
+    "body": "There are two potential patches to try out to fix the non-aligned pointer issue:\n\nhttp://groups.google.com/group/sage-devel/attach/64e42ec65e8a9fa2/no-collect-integer.patch?part=2\n\nhttp://groups.google.com/group/sage-devel/attach/3cd7a66aa5c1a355/__Pyx_ImportModule-decref-fix.patch?part=2\n\nBoth are from Robert Bradshaw, they should get rolled into 2.8.11, so I will open a ticket for them once I get some feedback from Robert.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T08:18:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6130",
+    "user": "mabshoff"
+}
+```
 
 There are two potential patches to try out to fix the non-aligned pointer issue:
 
@@ -225,9 +360,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 08:57:17
+archive/issue_comments_006131.json:
+```json
+{
+    "body": "Pointers toward a potential solution for the flint problem with gmp at link time can be found at \n\nhttp://lists.apple.com/archives/darwin-dev/2006/Oct/msg00015.html\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T08:57:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6131",
+    "user": "mabshoff"
+}
+```
 
 Pointers toward a potential solution for the flint problem with gmp at link time can be found at 
 
@@ -238,16 +384,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-29 17:38:33
+archive/issue_comments_006132.json:
+```json
+{
+    "body": "NOTE: A binary built on 10.5 will *not* work on 10.4.",
+    "created_at": "2007-10-29T17:38:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6132",
+    "user": "was"
+}
+```
 
 NOTE: A binary built on 10.5 will *not* work on 10.4.
 
 
+
 ---
 
-Comment by was created at 2007-10-29 21:20:26
+archive/issue_comments_006133.json:
+```json
+{
+    "body": "I've posted a pre-built version of Sage that was built on Leopard here:\n\nhttp://sagemath.org/SAGEbin/apple_osx/intel/leopard/\n\nThis might be the optimal version of Sage to use on OSX 10.5.  It \nprobably won't 100% work without gfortran installed though.",
+    "created_at": "2007-10-29T21:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6133",
+    "user": "was"
+}
+```
 
 I've posted a pre-built version of Sage that was built on Leopard here:
 
@@ -257,9 +425,20 @@ This might be the optimal version of Sage to use on OSX 10.5.  It
 probably won't 100% work without gfortran installed though.
 
 
+
 ---
 
-Comment by was created at 2007-10-31 21:04:07
+archive/issue_comments_006134.json:
+```json
+{
+    "body": "I just tried making some matplotlib plots using athe sage I built on 10.5.  I get lots of *serious* problems.  Nothing works.  This may be very difficult to resolve; I don't know.   This happens both in the notebook and from the command line.\n\n\n```\nsage: P = point( (0,0) )\nsage: show( P )\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\n```\n\n\nNOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occur.",
+    "created_at": "2007-10-31T21:04:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6134",
+    "user": "was"
+}
+```
 
 I just tried making some matplotlib plots using athe sage I built on 10.5.  I get lots of *serious* problems.  Nothing works.  This may be very difficult to resolve; I don't know.   This happens both in the notebook and from the command line.
 
@@ -287,9 +466,20 @@ python(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being 
 NOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occur.
 
 
+
 ---
 
-Comment by was created at 2007-11-01 06:21:55
+archive/issue_comments_006135.json:
+```json
+{
+    "body": "*READLINE in GP doesn't work*\n\nYet another problem:\n\n\n```\nsage: !gp\n                       GP/PARI CALCULATOR Version 2.3.2 (released)\n               i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                compiled: Oct 31 2007, gcc-4.0.1 (Apple Inc. build 5465)\n                   (readline not compiled in, extended help available)\n                             ^^^^^^^^^^^^^^^\n```\n",
+    "created_at": "2007-11-01T06:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6135",
+    "user": "was"
+}
+```
 
 *READLINE in GP doesn't work*
 
@@ -307,23 +497,56 @@ sage: !gp
 
 
 
+
 ---
 
-Comment by was created at 2007-11-01 06:22:16
+archive/issue_comments_006136.json:
+```json
+{
+    "body": "Changing component from distribution to memleak.",
+    "created_at": "2007-11-01T06:22:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6136",
+    "user": "was"
+}
+```
 
 Changing component from distribution to memleak.
 
 
+
 ---
 
-Comment by was created at 2007-11-01 06:22:33
+archive/issue_comments_006137.json:
+```json
+{
+    "body": "Changing component from memleak to porting.",
+    "created_at": "2007-11-01T06:22:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6137",
+    "user": "was"
+}
+```
 
 Changing component from memleak to porting.
 
 
+
 ---
 
-Comment by was created at 2007-11-01 07:23:32
+archive/issue_comments_006138.json:
+```json
+{
+    "body": "Replying to [comment:15 was]:\n> I just tried making some matplotlib plots using athe sage I built on 10.5.  \n> I get lots of *serious* problems.  \n\nI think this was a result of something involving #1044; I've tested\nagain and I can't replicate this problem at all.  So never mind -- matplotlib is fine :-).",
+    "created_at": "2007-11-01T07:23:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6138",
+    "user": "was"
+}
+```
 
 Replying to [comment:15 was]:
 > I just tried making some matplotlib plots using athe sage I built on 10.5.  
@@ -333,9 +556,20 @@ I think this was a result of something involving #1044; I've tested
 again and I can't replicate this problem at all.  So never mind -- matplotlib is fine :-).
 
 
+
 ---
 
-Comment by was created at 2007-11-01 16:51:56
+archive/issue_comments_006139.json:
+```json
+{
+    "body": "From rpw:\n\n```\nRalf-Philipp Weinmann \t\nto Jean-Guillaume., sage-devel\n\t\nshow details\n\t 7:21 am (2 hours ago) \nDear Dr. Dumas,\n\nI've encountered a build problem in Givaro 3.2.6 on MacOS X 10.5. The\nuint type used in src/kernel/zpz/givzpz32std.inl for example is not\navailable unless sys/types.h is included. The following patch fixes\nthe problem for me:\n\n--- src/kernel/system/givbasictype.h.ORIG       2007-11-01\n15:17:57.000000000 +0100\n+++ src/kernel/system/givbasictype.h    2007-11-01 15:18:33.000000000 +0100\n@@ -11,6 +11,9 @@\n #include \"givaro/givconfig.h\"\n\n #include <stdlib.h> // for size_t\n+#ifdef MACOSX\n+#  include <sys/types.h> // needed on MacOS X 10.5 for uint type\n+#endif\n\n // -- Neutral type: definition of zero and one\n class Neutral {\n```\n",
+    "created_at": "2007-11-01T16:51:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6139",
+    "user": "was"
+}
+```
 
 From rpw:
 
@@ -369,9 +603,20 @@ the problem for me:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 23:54:40
+archive/issue_comments_006140.json:
+```json
+{
+    "body": "The givaro issue has been fixed in givaro-3.2.6.p2 for 2.8.11.rc1\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-01T23:54:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6140",
+    "user": "mabshoff"
+}
+```
 
 The givaro issue has been fixed in givaro-3.2.6.p2 for 2.8.11.rc1
 
@@ -380,9 +625,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 00:43:59
+archive/issue_comments_006141.json:
+```json
+{
+    "body": "The lcalc issue has been fixed in lcalc-20070107.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-02T00:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6141",
+    "user": "mabshoff"
+}
+```
 
 The lcalc issue has been fixed in lcalc-20070107.p0.spkg
 
@@ -391,27 +647,60 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-11-02 00:46:55
+archive/issue_comments_006142.json:
+```json
+{
+    "body": "I've posted a patched python spkg here:\n\nhttp://sage.math.washington.edu/tmp/python-2.5.1.p8.spkg",
+    "created_at": "2007-11-02T00:46:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6142",
+    "user": "was"
+}
+```
 
 I've posted a patched python spkg here:
 
 http://sage.math.washington.edu/tmp/python-2.5.1.p8.spkg
 
 
+
 ---
 
-Comment by was created at 2007-11-02 03:23:17
+archive/issue_comments_006143.json:
+```json
+{
+    "body": "I'm posting spkgs here:\n\nhttp://sage.math.washington.edu/tmp/leopard/",
+    "created_at": "2007-11-02T03:23:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6143",
+    "user": "was"
+}
+```
 
 I'm posting spkgs here:
 
 http://sage.math.washington.edu/tmp/leopard/
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-03 12:13:45
+archive/issue_comments_006144.json:
+```json
+{
+    "body": "All the above spkgs have been merged in 2.8.11. The only open issue now is that g95 miscompiles scipy and we need to figure out what to do about this. A binary of gfortran 4.2.2 is 19mb compressed, so that is not the solution.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-03T12:13:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6144",
+    "user": "mabshoff"
+}
+```
 
 All the above spkgs have been merged in 2.8.11. The only open issue now is that g95 miscompiles scipy and we need to figure out what to do about this. A binary of gfortran 4.2.2 is 19mb compressed, so that is not the solution.
 
@@ -420,9 +709,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-11-20 05:11:57
+archive/issue_comments_006145.json:
+```json
+{
+    "body": "\n```\nHi,\n\nI just did a test and using the new version of g95 here:\n    http://ftp.g95.org/g95-x86-osx.tgz\nworks fine for building Sage on Leopard OS X 10.5 intel.  \nSo, we can just update that and stop worrying about require\ngfortran on that platform.  Very nice. \n\n -- Wiliam\n\n```\n",
+    "created_at": "2007-11-20T05:11:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6145",
+    "user": "was"
+}
+```
 
 
 ```
@@ -440,16 +740,38 @@ gfortran on that platform.  Very nice.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 11:34:26
+archive/issue_comments_006146.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-20T11:34:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6146",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 11:34:26
+archive/issue_comments_006147.json:
+```json
+{
+    "body": "The new fortran.spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/fortran-20071120.spkg\n\nfixes the last known issue.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-20T11:34:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6147",
+    "user": "mabshoff"
+}
+```
 
 The new fortran.spkg at 
 
@@ -462,9 +784,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 11:36:21
+archive/issue_comments_006148.json:
+```json
+{
+    "body": "2.8.13.rc0 builds \"out of the box\" on bsd.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-20T11:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1005#issuecomment-6148",
+    "user": "mabshoff"
+}
+```
 
 2.8.13.rc0 builds "out of the box" on bsd.
 

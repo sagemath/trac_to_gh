@@ -1,11 +1,21 @@
 # Issue 1121: improve point counting for curvers over extension fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/1121
-
-Original creator: malb
-
-Original creation time: 2007-11-07 15:57:31
-
+archive/issues_001121.json:
+```json
+{
+    "body": "Assignee: was\n\nJohn Cremona wrote\n\n\n```\nYou are right of course -- one should always compute the order over\nthe smallest field of definition and then use the easy formula to get\nthe order of E(GF(q^d)) from that of E(GF(q)).\n\nWhile you are at it you should not stop at the smallest field\ncontaining the coefficients of the given curve, it would be enough to\nwork over the field containing the j-invariant, plus a little work\ndeciding which twist your need and all this is as usual a little more\ncomplicated when j=0 or j=1728, or in characteristics 2 and 3.\n\nThis feels like reinventing wheels -- i wonder who has done this already?\n\nAs for implementation, it is *extremely* ugly to work with floating\npoint complex numbers for this (as both Graeme and Alex seem to do.\nIt should be done algebraically!\n\nIf n = #E(GF(q)) then a=1+q-n is the trace of alpha =\n(a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The\ntrace of the d'th power of alpha is just a resultant calculation.\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a\n\n#1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1121\n\n",
+    "created_at": "2007-11-07T15:57:31Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "improve point counting for curvers over extension fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1121",
+    "user": "malb"
+}
+```
 Assignee: was
 
 John Cremona wrote
@@ -38,15 +48,43 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22
 
 #1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1121
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-11-07 15:59:12
+archive/issue_comments_006772.json:
+```json
+{
+    "body": "that should be #1120 instead of #1119",
+    "created_at": "2007-11-07T15:59:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6772",
+    "user": "malb"
+}
+```
 
 that should be #1120 instead of #1119
 
 
+
 ---
+
+archive/issue_comments_006773.json:
+```json
+{
+    "body": "Attachment\n\n8312 just corrects minor thing in documentation\n\nThe Documentation said the cardinality was not cached, but in fact the code does cache.",
+    "created_at": "2008-02-08T01:23:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6773",
+    "user": "gmoose05"
+}
+```
 
 Attachment
 
@@ -55,23 +93,56 @@ Attachment
 The Documentation said the cardinality was not cached, but in fact the code does cache.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-14 06:40:51
+archive/issue_comments_006774.json:
+```json
+{
+    "body": "Yep, looks good to me.",
+    "created_at": "2008-02-14T06:40:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6774",
+    "user": "robertwb"
+}
+```
 
 Yep, looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-14 09:37:24
+archive/issue_comments_006775.json:
+```json
+{
+    "body": "Applied 8312.patch to Sage 2.10.2.alpha0",
+    "created_at": "2008-02-14T09:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6775",
+    "user": "mabshoff"
+}
+```
 
 Applied 8312.patch to Sage 2.10.2.alpha0
 
 
+
 ---
 
-Comment by malb created at 2008-02-14 09:54:31
+archive/issue_comments_006776.json:
+```json
+{
+    "body": "Replying to [comment:2 gmoose05]:\n> 8312 just corrects minor thing in documentation\n> \n> The Documentation said the cardinality was not cached, but in fact the code does cache. \n\nI am confused. Does the patch address the ticket?",
+    "created_at": "2008-02-14T09:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6776",
+    "user": "malb"
+}
+```
 
 Replying to [comment:2 gmoose05]:
 > 8312 just corrects minor thing in documentation
@@ -81,9 +152,20 @@ Replying to [comment:2 gmoose05]:
 I am confused. Does the patch address the ticket?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-14 09:58:48
+archive/issue_comments_006777.json:
+```json
+{
+    "body": "I don't think that the patch addresses the ticket, it just corrects the issue about caching. So I am removing the `with positive review` - I guess we should have opened another ticket for the documentation issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-14T09:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6777",
+    "user": "mabshoff"
+}
+```
 
 I don't think that the patch addresses the ticket, it just corrects the issue about caching. So I am removing the `with positive review` - I guess we should have opened another ticket for the documentation issue.
 
@@ -92,22 +174,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-04-06 11:36:08
+archive/issue_comments_006778.json:
+```json
+{
+    "body": "The issues raised here have all been sorted under other tickets.  This one can be closed.",
+    "created_at": "2008-04-06T11:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6778",
+    "user": "cremona"
+}
+```
 
 The issues raised here have all been sorted under other tickets.  This one can be closed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-06 14:11:49
+archive/issue_comments_006779.json:
+```json
+{
+    "body": "Closing this on the recommendation of John Cremona since the issues have all been fixed.",
+    "created_at": "2008-04-06T14:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6779",
+    "user": "mabshoff"
+}
+```
 
 Closing this on the recommendation of John Cremona since the issues have all been fixed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-06 14:11:49
+archive/issue_comments_006780.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-06T14:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1121",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1121#issuecomment-6780",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

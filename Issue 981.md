@@ -1,11 +1,21 @@
 # Issue 981: bug in the method conjugacy_classes_subgroups
 
-Issue created by migration from https://trac.sagemath.org/ticket/981
-
-Original creator: wdj
-
-Original creation time: 2007-10-24 14:16:00
-
+archive/issues_000981.json:
+```json
+{
+    "body": "Assignee: wdj\n\nCC:  sage-combinat\n\nthere is a bug in the module permgroup.py, at line 1226,\nthe method conjugacy_classes_subgroups calls PermutationGroupElement;\nI think it should be PermutationGroup.\nreported by Biel\n\nIssue created by migration from https://trac.sagemath.org/ticket/981\n\n",
+    "created_at": "2007-10-24T14:16:00Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "bug in the method conjugacy_classes_subgroups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/981",
+    "user": "wdj"
+}
+```
 Assignee: wdj
 
 CC:  sage-combinat
@@ -15,10 +25,25 @@ the method conjugacy_classes_subgroups calls PermutationGroupElement;
 I think it should be PermutationGroup.
 reported by Biel
 
+Issue created by migration from https://trac.sagemath.org/ticket/981
+
+
+
+
 
 ---
 
-Comment by wdj created at 2007-10-24 16:38:21
+archive/issue_comments_006006.json:
+```json
+{
+    "body": "Patch is here:\nhttp://sage.math.washington.edu/home/wdj/patches/permgp-patch.hg\nPasses sage -t. Created agains sage 2.8.3 on a suse amd64 machine,\nso may be a bit old....",
+    "created_at": "2007-10-24T16:38:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6006",
+    "user": "wdj"
+}
+```
 
 Patch is here:
 http://sage.math.washington.edu/home/wdj/patches/permgp-patch.hg
@@ -26,15 +51,37 @@ Passes sage -t. Created agains sage 2.8.3 on a suse amd64 machine,
 so may be a bit old....
 
 
+
 ---
 
-Comment by malb created at 2007-10-24 19:14:33
+archive/issue_comments_006007.json:
+```json
+{
+    "body": "applied to 2.8.9.alpha1",
+    "created_at": "2007-10-24T19:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6007",
+    "user": "malb"
+}
+```
 
 applied to 2.8.9.alpha1
 
 
+
 ---
 
-Comment by malb created at 2007-10-24 19:14:37
+archive/issue_comments_006008.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-24T19:14:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6008",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

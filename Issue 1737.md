@@ -1,11 +1,21 @@
 # Issue 1737: ctl-c doesn't exit job in parametric_plot3d
 
-Issue created by migration from https://trac.sagemath.org/ticket/1737
-
-Original creator: wdj
-
-Original creation time: 2008-01-09 17:40:24
-
+archive/issues_001737.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following paraterization of the Mobius strip\ntakes a very long time and won't quit when ctl-c is\nused:\n\nsage: u,v = var(\"u,v\")\nsage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()\n^D\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n\nThis error message repeats ever time you proess ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1737\n\n",
+    "created_at": "2008-01-09T17:40:24Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "ctl-c doesn't exit job in parametric_plot3d",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1737",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 The following paraterization of the Mobius strip
@@ -19,10 +29,25 @@ sage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2
 
 This error message repeats ever time you proess ctl-c.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1737
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-01-09 18:10:59
+archive/issue_comments_010991.json:
+```json
+{
+    "body": "This works much faster:\nsage: parametric_plot3d([0.5*cos(u)*(1+v*cos(u/2)), 0.5*sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (u,-2, 2), (v,-2, 2)).show()\n\nand is more efficient.",
+    "created_at": "2008-01-09T18:10:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10991",
+    "user": "wdj"
+}
+```
 
 This works much faster:
 sage: parametric_plot3d([0.5*cos(u)*(1+v*cos(u/2)), 0.5*sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (u,-2, 2), (v,-2, 2)).show()
@@ -30,22 +55,55 @@ sage: parametric_plot3d([0.5*cos(u)*(1+v*cos(u/2)), 0.5*sin(u)*(1+v*cos(u/2)), v
 and is more efficient.
 
 
+
 ---
 
-Comment by was created at 2008-01-18 16:24:14
+archive/issue_comments_010992.json:
+```json
+{
+    "body": "This is fixed by #1833.",
+    "created_at": "2008-01-18T16:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10992",
+    "user": "was"
+}
+```
 
 This is fixed by #1833.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 04:13:49
+archive/issue_comments_010993.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T04:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10993",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 04:13:49
+archive/issue_comments_010994.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1 (patch from #1833)",
+    "created_at": "2008-01-21T04:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10994",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1 (patch from #1833)

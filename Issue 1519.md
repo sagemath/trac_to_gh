@@ -1,11 +1,21 @@
 # Issue 1519: hg problem -- This should work but doesn't: sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')
 
-Issue created by migration from https://trac.sagemath.org/ticket/1519
-
-Original creator: was
-
-Original creation time: 2007-12-15 05:52:18
-
+archive/issues_001519.json:
+```json
+{
+    "body": "Assignee: was\n\nDoing\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')\n```\n\n\nshould work, but doesn't, because of the ?stuff at the end.  Fix this.\n\nHow to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1519\n\n",
+    "created_at": "2007-12-15T05:52:18Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "hg problem -- This should work but doesn't: sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1519",
+    "user": "was"
+}
+```
 Assignee: was
 
 Doing
@@ -19,22 +29,61 @@ should work, but doesn't, because of the ?stuff at the end.  Fix this.
 
 How to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1519
+
+
+
+
 
 ---
+
+archive/issue_comments_009730.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-15T06:19:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1519",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9730",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-12-15 06:20:09
+archive/issue_comments_009731.json:
+```json
+{
+    "body": "Note -- there is no easy way to doctest this, since it requires existence of a specific file on the internet with a funny ? in its filename..., and to apply that patch to a repository...",
+    "created_at": "2007-12-15T06:20:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1519",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9731",
+    "user": "was"
+}
+```
 
 Note -- there is no easy way to doctest this, since it requires existence of a specific file on the internet with a funny ? in its filename..., and to apply that patch to a repository...
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:00:00
+archive/issue_comments_009732.json:
+```json
+{
+    "body": "looks good to me and is quite useful.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-15T11:00:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1519",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9732",
+    "user": "mabshoff"
+}
+```
 
 looks good to me and is quite useful.
 
@@ -43,15 +92,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:06:36
+archive/issue_comments_009733.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T11:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1519",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9733",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:06:36
+archive/issue_comments_009734.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T11:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1519",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9734",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

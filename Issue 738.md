@@ -1,11 +1,21 @@
 # Issue 738: probably easy-to-fix bug in matrix2.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/738
-
-Original creator: was
-
-Original creation time: 2007-09-22 21:58:39
-
+archive/issues_000738.json:
+```json
+{
+    "body": "Assignee: robertwb\n\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
+    "created_at": "2007-09-22T21:58:39Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "probably easy-to-fix bug in matrix2.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/738",
+    "user": "was"
+}
+```
 Assignee: robertwb
 
 
@@ -33,37 +43,98 @@ I'm sure one of you can fix this much faster than I can....
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/738
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2007-09-23 18:10:29
+archive/issue_comments_004322.json:
+```json
+{
+    "body": "Changing assignee from robertwb to dmharvey.",
+    "created_at": "2007-09-23T18:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4322",
+    "user": "dmharvey"
+}
+```
 
 Changing assignee from robertwb to dmharvey.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-09-23 18:10:29
+archive/issue_comments_004323.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-23T18:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4323",
+    "user": "dmharvey"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_004324.json:
+```json
+{
+    "body": "Attachment\n\nfixes this bug",
+    "created_at": "2007-09-23T21:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4324",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 fixes this bug
 
 
+
 ---
 
-Comment by dmharvey created at 2007-09-23 23:02:43
+archive/issue_comments_004325.json:
+```json
+{
+    "body": "note: I uploaded a patch for #528 which includes the above patch",
+    "created_at": "2007-09-23T23:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4325",
+    "user": "dmharvey"
+}
+```
 
 note: I uploaded a patch for #528 which includes the above patch
 
 
+
 ---
 
-Comment by was created at 2007-09-23 23:12:29
+archive/issue_comments_004326.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-23T23:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4326",
+    "user": "was"
+}
+```
 
 Resolution: fixed

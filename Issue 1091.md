@@ -1,11 +1,21 @@
 # Issue 1091: small memleaks exposed by ntl_mat_GF2E.py (from 2.8.12.alpha0)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1091
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-04 00:00:54
-
+archive/issues_001091.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nfrom ntl_mat_GF2E.py\n\n```\n==4434== 8 bytes in 1 blocks are definitely lost in loss record 8 of 2,016\n==4434==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4434==    by 0xE452F76: Poly1FactorDom<GFqDom<int>, Dense, GivRandom>::is_prim_root(givvector<int> const&, givvector<int>\nconst&) const (givpoly1proot.inl:236)\n==4434==    by 0xE4547F6: GFqDom<int>::GFqDom(unsigned, unsigned, std::vector<unsigned, std::allocator<unsigned> > const&) (\ngivpoly1proot.inl:300)\n==4434==    by 0xE446EC2: __pyx_pf_4sage_5rings_19finite_field_givaro_18FiniteField_givaro___init__(_object*, _object*, _obj\nect*) (finite_field_givaro.cpp:1755)\n==4434==    by 0x459220: type_call (typeobject.c:436)\n==4434==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4434==    by 0x481ACA: PyEval_EvalFrameEx (ceval.c:3844)\n==4434==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4434==    by 0x4CE4C0: function_call (funcobject.c:517)\n==4434==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4434==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4434==    by 0xDC6C9AA: __pyx_pf_4sage_4libs_3ntl_12ntl_mat_GF2E_12ntl_mat_GF2E__sage_(_object*, _object*, _object*) (ntl_\nmat_GF2E.cpp:3038)\n\n==4434== 8 bytes in 1 blocks are definitely lost in loss record 9 of 2,016\n==4434==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4434==    by 0xE453F11: GFqDom<int>::GFqDom(unsigned, unsigned) (givgfq.inl:930)\n==4434==    by 0xE45445F: GFqDom<int>::GFqDom(unsigned, unsigned, std::vector<unsigned, std::allocator<unsigned> > const&) (\ngivgfq.inl:1033)\n==4434==    by 0xE446EC2: __pyx_pf_4sage_5rings_19finite_field_givaro_18FiniteField_givaro___init__(_object*, _object*, _obj\nect*) (finite_field_givaro.cpp:1755)\n==4434==    by 0x459220: type_call (typeobject.c:436)\n==4434==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4434==    by 0x481ACA: PyEval_EvalFrameEx (ceval.c:3844)\n==4434==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4434==    by 0x4CE4C0: function_call (funcobject.c:517)\n==4434==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4434==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4434==    by 0xDC6C9AA: __pyx_pf_4sage_4libs_3ntl_12ntl_mat_GF2E_12ntl_mat_GF2E__sage_(_object*, _object*, _object*) (ntl_\nmat_GF2E.cpp:3038)\n\n==4434== 8 bytes in 1 blocks are definitely lost in loss record 10 of 2,016\n==4434==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4434==    by 0xE452F76: Poly1FactorDom<GFqDom<int>, Dense, GivRandom>::is_prim_root(givvector<int> const&, givvector<int>\nconst&) const (givpoly1proot.inl:236)\n==4434==    by 0xE4547F6: GFqDom<int>::GFqDom(unsigned, unsigned, std::vector<unsigned, std::allocator<unsigned> > const&) (\ngivpoly1proot.inl:300)\n==4434==    by 0xE446EC2: __pyx_pf_4sage_5rings_19finite_field_givaro_18FiniteField_givaro___init__(_object*, _object*, _obj\nect*) (finite_field_givaro.cpp:1755)\n==4434==    by 0x459220: type_call (typeobject.c:436)\n==4434==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4434==    by 0x481ACA: PyEval_EvalFrameEx (ceval.c:3844)\n==4434==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4434==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==4434==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==4434==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==4434==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1091\n\n",
+    "created_at": "2007-11-04T00:00:54Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "small memleaks exposed by ntl_mat_GF2E.py (from 2.8.12.alpha0)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1091",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 from ntl_mat_GF2E.py
@@ -65,15 +75,43 @@ ect*) (finite_field_givaro.cpp:1755)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1091
+
+
+
+
 
 ---
+
+archive/issue_comments_006605.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-09T23:44:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6605",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2008-01-09 23:52:47
+archive/issue_comments_006606.json:
+```json
+{
+    "body": "Givaro has a number of constructors with a parameter of type `RandIter&` with default argument of the type `(RandIter& g = *(new RandIter()) )`. This is used to initialize a RandIter member variable, copying the new'ed object and immediately leaking the original.\n\nAll three of the valgrind traces found by mabshoff above are leaks of this type.\n\nThe attached patch to `givaro-3.2.6.p4` should fix this be changing the constructor declarations to `(RandIter g = RandIter() )`.\n\nIt does change the signature of the constructors (`RandIter& -> RandIter`), but I don't see any places where this would be a problem after a scan over the givaro sources.",
+    "created_at": "2008-01-09T23:52:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6606",
+    "user": "wjp"
+}
+```
 
 Givaro has a number of constructors with a parameter of type `RandIter&` with default argument of the type `(RandIter& g = *(new RandIter()) )`. This is used to initialize a RandIter member variable, copying the new'ed object and immediately leaking the original.
 
@@ -84,9 +122,20 @@ The attached patch to `givaro-3.2.6.p4` should fix this be changing the construc
 It does change the signature of the constructors (`RandIter& -> RandIter`), but I don't see any places where this would be a problem after a scan over the givaro sources.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 04:42:44
+archive/issue_comments_006607.json:
+```json
+{
+    "body": "Hi wjp - the patch doesn't fix the leak for me. I did rebuild NTL just to be on the save side, but that didn't fix it either. Any tips what to do? Did you verify that the leak is gone via valgrind?\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-10T04:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6607",
+    "user": "mabshoff"
+}
+```
 
 Hi wjp - the patch doesn't fix the leak for me. I did rebuild NTL just to be on the save side, but that didn't fix it either. Any tips what to do? Did you verify that the leak is gone via valgrind?
 
@@ -95,16 +144,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wjp created at 2008-01-10 10:06:21
+archive/issue_comments_006608.json:
+```json
+{
+    "body": "You may have to manually trigger a rebuild of `finite_field_givaro.pyx`. I think `sage -b` didn't pick up the changes to the givaro headers automatically.",
+    "created_at": "2008-01-10T10:06:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6608",
+    "user": "wjp"
+}
+```
 
 You may have to manually trigger a rebuild of `finite_field_givaro.pyx`. I think `sage -b` didn't pick up the changes to the givaro headers automatically.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 18:13:47
+archive/issue_comments_006609.json:
+```json
+{
+    "body": "Thanks wjp. I can confirm that rebuilding `finite_field_givaro.pyx` does fix the issue. An givaro.spkg which incorporates the fix is at:\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha2/givaro-3.2.6.p5.spkg\n\nCheers,\n\nMichale",
+    "created_at": "2008-01-10T18:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6609",
+    "user": "mabshoff"
+}
+```
 
 Thanks wjp. I can confirm that rebuilding `finite_field_givaro.pyx` does fix the issue. An givaro.spkg which incorporates the fix is at:
 
@@ -115,15 +186,37 @@ Cheers,
 Michale
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 18:14:12
+archive/issue_comments_006610.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-10T18:14:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6610",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 18:14:12
+archive/issue_comments_006611.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha2.",
+    "created_at": "2008-01-10T18:14:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1091#issuecomment-6611",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha2.

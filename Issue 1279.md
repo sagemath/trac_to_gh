@@ -1,11 +1,21 @@
 # Issue 1279: LLL on "tall" matrices immediately crashes sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/1279
-
-Original creator: was
-
-Original creation time: 2007-11-26 08:38:20
-
+archive/issues_001279.json:
+```json
+{
+    "body": "Assignee: was\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
+    "created_at": "2007-11-26T08:38:20Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "LLL on \"tall\" matrices immediately crashes sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1279",
+    "user": "was"
+}
+```
 Assignee: was
 
 If you create an n x m matrix over ZZ in sage with n > m, then 
@@ -21,30 +31,67 @@ bsd:~ was$
 
 
 Possible Solutions:
-  1. trap bad conditions somewhere and raise an exception.
+1. trap bad conditions somewhere and raise an exception.
 
-  2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this
+2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this
  
-  3. Put an error in the fplll wrapper code in libs/fplll
+3. Put an error in the fplll wrapper code in libs/fplll
+
+Issue created by migration from https://trac.sagemath.org/ticket/1279
+
+
+
 
 
 ---
 
-Comment by malb created at 2007-11-26 09:59:53
+archive/issue_comments_008015.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2007-11-26T09:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8015",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2007-11-26 09:59:53
+archive/issue_comments_008016.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-26T09:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8016",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2007-11-27 18:08:30
+archive/issue_comments_008017.json:
+```json
+{
+    "body": "A new spkg is available at which replaces the `exit(1)` call with an `abort()` call which we can and do trap.\n\nhttp://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.4-20071127.spkg\n\nStill, we should check for nr>nc ourselves to present a more userfriendly exception rather than a RuntimeError",
+    "created_at": "2007-11-27T18:08:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8017",
+    "user": "malb"
+}
+```
 
 A new spkg is available at which replaces the `exit(1)` call with an `abort()` call which we can and do trap.
 
@@ -53,21 +100,56 @@ http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.4-20071127.spkg
 Still, we should check for nr>nc ourselves to present a more userfriendly exception rather than a RuntimeError
 
 
+
 ---
+
+archive/issue_comments_008018.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-27T22:00:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8018",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-11-27 22:50:26
+archive/issue_comments_008019.json:
+```json
+{
+    "body": "Looks good ready to include.",
+    "created_at": "2007-11-27T22:50:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8019",
+    "user": "was"
+}
+```
 
 Looks good ready to include.
 
 
+
 ---
 
-Comment by malb created at 2007-11-28 10:11:04
+archive/issue_comments_008020.json:
+```json
+{
+    "body": "Do not apply this patch as is:\n\nDamien Stehle wrote via e-mail:\n\n\n```\nI did not apply your patch for d>n, which is not invalid\n(though it was said to be in proved.cpp). If there are linear\ndependencies, LLL will just find them and output zero vectors before a\nLLL-reduced basis of the input lattice.\n```\n\n\nthe new fplll is available at\n\nhttp://sage.math.washington.edu/home/malb/pkgs/fplll-2.1.5.tgz",
+    "created_at": "2007-11-28T10:11:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8020",
+    "user": "malb"
+}
+```
 
 Do not apply this patch as is:
 
@@ -87,16 +169,38 @@ the new fplll is available at
 http://sage.math.washington.edu/home/malb/pkgs/fplll-2.1.5.tgz
 
 
+
 ---
 
-Comment by malb created at 2007-11-28 12:48:45
+archive/issue_comments_008021.json:
+```json
+{
+    "body": "Damien replaced all `exit` calls with `quit` calls. However, neither I nor `man` knows about any `quit` system call and thus 2.1.5 doesn't build at least on my machine.",
+    "created_at": "2007-11-28T12:48:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8021",
+    "user": "malb"
+}
+```
 
 Damien replaced all `exit` calls with `quit` calls. However, neither I nor `man` knows about any `quit` system call and thus 2.1.5 doesn't build at least on my machine.
 
 
+
 ---
 
-Comment by malb created at 2007-11-29 10:19:01
+archive/issue_comments_008022.json:
+```json
+{
+    "body": "A new spkg is available at \n\nhttp://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.6-20071129.spkg\n\nwhich fixes this issue for me. Don't forget to touch `fplll.pyx` and `sage -b` after installing that package.",
+    "created_at": "2007-11-29T10:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8022",
+    "user": "malb"
+}
+```
 
 A new spkg is available at 
 
@@ -105,9 +209,20 @@ http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.1.6-20071129.spkg
 which fixes this issue for me. Don't forget to touch `fplll.pyx` and `sage -b` after installing that package.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-01 02:47:31
+archive/issue_comments_008023.json:
+```json
+{
+    "body": "I installed the new spkg (on 32-bit x86 Linux).  The test in the bug report no longer crashes, and doctests in fplll.pyx and matrix_integer_dense.pyx still pass.\n\nI did not apply the attached patch, and I don't think we should apply it... as Damien points out, that case is not actually invalid.\n\nIn short, the spkg looks good to me.",
+    "created_at": "2007-12-01T02:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8023",
+    "user": "cwitty"
+}
+```
 
 I installed the new spkg (on 32-bit x86 Linux).  The test in the bug report no longer crashes, and doctests in fplll.pyx and matrix_integer_dense.pyx still pass.
 
@@ -116,23 +231,56 @@ I did not apply the attached patch, and I don't think we should apply it... as D
 In short, the spkg looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:12:00
+archive/issue_comments_008024.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha1.",
+    "created_at": "2007-12-01T18:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8024",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha1.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:12:00
+archive/issue_comments_008025.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T18:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8025",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 19:49:13
+archive/issue_comments_008026.json:
+```json
+{
+    "body": "To make it crystal clear: The spkg was merged, the patch was backed out after Carl reminded me :)\n\nMichael",
+    "created_at": "2007-12-01T19:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8026",
+    "user": "mabshoff"
+}
+```
 
 To make it crystal clear: The spkg was merged, the patch was backed out after Carl reminded me :)
 

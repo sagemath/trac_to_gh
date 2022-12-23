@@ -1,55 +1,135 @@
 # Issue 1313: [graphs] calculate chromatic polynomial
 
-Issue created by migration from https://trac.sagemath.org/ticket/1313
-
-Original creator: jason
-
-Original creation time: 2007-11-28 20:02:14
-
+archive/issues_001313.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1313\n\n",
+    "created_at": "2007-11-28T20:02:14Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[graphs] calculate chromatic polynomial",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1313",
+    "user": "jason"
+}
+```
 Assignee: mhansen
 
 Keywords: graphs
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1313
+
+
+
+
 
 ---
 
-Comment by rlm created at 2007-12-17 15:15:13
+archive/issue_comments_008270.json:
+```json
+{
+    "body": "Changing keywords from \"graphs\" to \"\".",
+    "created_at": "2007-12-17T15:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8270",
+    "user": "rlm"
+}
+```
 
 Changing keywords from "graphs" to "".
 
 
+
 ---
 
-Comment by rlm created at 2007-12-17 15:15:13
+archive/issue_comments_008271.json:
+```json
+{
+    "body": "Changing component from combinatorics to graph theory.",
+    "created_at": "2007-12-17T15:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8271",
+    "user": "rlm"
+}
+```
 
 Changing component from combinatorics to graph theory.
 
 
+
 ---
 
-Comment by rlm created at 2007-12-17 15:15:13
+archive/issue_comments_008272.json:
+```json
+{
+    "body": "Changing assignee from mhansen to rlm.",
+    "created_at": "2007-12-17T15:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8272",
+    "user": "rlm"
+}
+```
 
 Changing assignee from mhansen to rlm.
 
 
+
 ---
 
-Comment by boothby created at 2008-02-23 21:04:30
+archive/issue_comments_008273.json:
+```json
+{
+    "body": "See patch at #1311.",
+    "created_at": "2008-02-23T21:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8273",
+    "user": "boothby"
+}
+```
 
 See patch at #1311.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-25 20:47:17
+archive/issue_comments_008274.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-25T20:47:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8274",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-25 20:47:17
+archive/issue_comments_008275.json:
+```json
+{
+    "body": "Merged via patches at #1311 in Sage 2.10.3.alpha0",
+    "created_at": "2008-02-25T20:47:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8275",
+    "user": "mabshoff"
+}
+```
 
 Merged via patches at #1311 in Sage 2.10.3.alpha0

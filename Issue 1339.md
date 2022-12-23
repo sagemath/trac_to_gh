@@ -1,11 +1,21 @@
 # Issue 1339: Solaris: number of partitions broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/1339
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-29 10:01:34
-
+archive/issues_001339.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHello,\n\nnumber of partitions is broken on Solaris/Sparc:\n\n```\nsage -t  devel/sage-main/sage/combinat/combinat.py          **********************************************************************\nFile \"combinat.py\", line 1869:\n    sage: number_of_partitions(100000)\nExpected:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600569421098519\nGot:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366215901578447742962489\n4049306307020046179276449303351011607934245719015571894350972531246610845200636955893446424871682878983218234500926285383140\n4597021307130674510624419227311238999702284408609370935531629697851569569892196108480158600582558780007\n**********************************************************************\nFile \"combinat.py\", line 1896:\n```\n\nbut also more worringly the \"small\" case:\n\n```\n**********************************************************************\nFile \"combinat.py\", line 1924:\n    sage: len([n for n in [1..500] if number_of_partitions(n) != number_of_partitions(n,algorithm='pari')])\nExpected:\n    0\nGot:\n    245\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1339\n\n",
+    "created_at": "2007-11-29T10:01:34Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Solaris: number of partitions broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1339",
+    "user": "mabshoff"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -48,10 +58,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1339
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-26 03:15:40
+archive/issue_comments_008587.json:
+```json
+{
+    "body": "I suspect floating point precision issues. Didn't we do something on MaxOSX/PPC about this by lowering certain precision bounds?\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-26T03:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8587",
+    "user": "mabshoff"
+}
+```
 
 I suspect floating point precision issues. Didn't we do something on MaxOSX/PPC about this by lowering certain precision bounds?
 
@@ -60,16 +85,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-29 17:42:19
+archive/issue_comments_008588.json:
+```json
+{
+    "body": "Changing assignee from mhansen to mabshoff.",
+    "created_at": "2008-07-29T17:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8588",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from mhansen to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-29 17:42:19
+archive/issue_comments_008589.json:
+```json
+{
+    "body": "The solution here is to reduce the various precisions used in the partition code. For qd we have to reduce the precision to *170* bits which indicates either a severe bug on our end or something is seriously wrong in qd.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-29T17:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8589",
+    "user": "mabshoff"
+}
+```
 
 The solution here is to reduce the various precisions used in the partition code. For qd we have to reduce the precision to *170* bits which indicates either a severe bug on our end or something is seriously wrong in qd.
 
@@ -78,23 +125,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-29 17:42:19
+archive/issue_comments_008590.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-07-29T17:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8590",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 03:12:32
+archive/issue_comments_008591.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-08T03:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8591",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 03:12:32
+archive/issue_comments_008592.json:
+```json
+{
+    "body": "This has been fixed by the deprecation of quaddouble via #3762 by Robert Bradshaw.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T03:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1339#issuecomment-8592",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by the deprecation of quaddouble via #3762 by Robert Bradshaw.
 

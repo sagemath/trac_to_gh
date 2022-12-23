@@ -1,39 +1,99 @@
 # Issue 1353: [with patch] fix easy bug in graph_database.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/1353
-
-Original creator: rlm
-
-Original creation time: 2007-12-01 21:04:07
-
+archive/issues_001353.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1353\n\n",
+    "created_at": "2007-12-01T21:04:07Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] fix easy bug in graph_database.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1353",
+    "user": "rlm"
+}
+```
 Assignee: mhansen
 
 Keywords: graphs
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1353
+
+
+
+
 
 ---
+
+archive/issue_comments_008664.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-01T21:04:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1353#issuecomment-8664",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-01 23:09:51
+archive/issue_comments_008665.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2007-12-01T23:09:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1353#issuecomment-8665",
+    "user": "cwitty"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 23:31:54
+archive/issue_comments_008666.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T23:31:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1353#issuecomment-8666",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 23:31:54
+archive/issue_comments_008667.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha2.",
+    "created_at": "2007-12-01T23:31:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1353#issuecomment-8667",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha2.

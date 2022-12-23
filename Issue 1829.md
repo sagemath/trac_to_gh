@@ -1,37 +1,97 @@
 # Issue 1829: [with patch] small improvements for term ordering module
 
-Issue created by migration from https://trac.sagemath.org/ticket/1829
-
-Original creator: malb
-
-Original creation time: 2008-01-18 13:38:27
-
+archive/issues_001829.json:
+```json
+{
+    "body": "Assignee: was\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1829\n\n",
+    "created_at": "2008-01-18T13:38:27Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch] small improvements for term ordering module",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1829",
+    "user": "malb"
+}
+```
 Assignee: was
 
 See attached patch.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1829
+
+
+
+
 
 ---
+
+archive/issue_comments_011582.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-18T13:38:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1829",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11582",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-01-20 06:37:11
+archive/issue_comments_011583.json:
+```json
+{
+    "body": "Looks good to me, I say apply.",
+    "created_at": "2008-01-20T06:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1829",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11583",
+    "user": "ncalexan"
+}
+```
 
 Looks good to me, I say apply.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 06:10:21
+archive/issue_comments_011584.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T06:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1829",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11584",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 06:10:21
+archive/issue_comments_011585.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T06:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1829",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1829#issuecomment-11585",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

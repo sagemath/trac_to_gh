@@ -1,32 +1,81 @@
 # Issue 1561: [with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1561
-
-Original creator: ncalexan
-
-Original creation time: 2007-12-18 19:36:47
-
+archive/issues_001561.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: matrix vector transpose FreeModuleElement\n\nThis makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1561\n\n",
+    "created_at": "2007-12-18T19:36:47Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1561",
+    "user": "ncalexan"
+}
+```
 Assignee: malb
 
 Keywords: matrix vector transpose FreeModuleElement
 
 This makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1561
+
+
+
+
 
 ---
+
+archive/issue_comments_009941.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-18T19:37:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9941",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2007-12-21 22:37:48
+archive/issue_comments_009942.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-21T22:37:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9942",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-21 22:37:48
+archive/issue_comments_009943.json:
+```json
+{
+    "body": "merged in 2.9.1 alpha3",
+    "created_at": "2007-12-21T22:37:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9943",
+    "user": "rlm"
+}
+```
 
 merged in 2.9.1 alpha3

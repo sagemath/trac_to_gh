@@ -1,51 +1,122 @@
 # Issue 1684: Intelligent indentation when user presses "enter".
 
-Issue created by migration from https://trac.sagemath.org/ticket/1684
-
-Original creator: boothby
-
-Original creation time: 2008-01-04 23:24:15
-
+archive/issues_001684.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCommon IDE feature:  \n\n1. if the cursor is in an indented block, pressing \"enter\" should add a line which has the same indentaion as the previous line.\n2. if the cursor is in a line with, for example, an \"if\" statement, pressing enter should increase indentation on the next line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1684\n\n",
+    "created_at": "2008-01-04T23:24:15Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Intelligent indentation when user presses \"enter\".",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1684",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 Common IDE feature:  
 
- 1. if the cursor is in an indented block, pressing "enter" should add a line which has the same indentaion as the previous line.
- 1. if the cursor is in a line with, for example, an "if" statement, pressing enter should increase indentation on the next line.
+1. if the cursor is in an indented block, pressing "enter" should add a line which has the same indentaion as the previous line.
+2. if the cursor is in a line with, for example, an "if" statement, pressing enter should increase indentation on the next line.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/1684
+
+
 
 
 
 ---
 
-Comment by boothby created at 2008-01-04 23:26:34
+archive/issue_comments_010695.json:
+```json
+{
+    "body": "First installment, implements item 1.",
+    "created_at": "2008-01-04T23:26:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10695",
+    "user": "boothby"
+}
+```
 
 First installment, implements item 1.
 
 
+
 ---
+
+archive/issue_comments_010696.json:
+```json
+{
+    "body": "Attachment\n\nPatch ruins IE compatability, do not use.  :(",
+    "created_at": "2008-01-05T08:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10696",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 Patch ruins IE compatability, do not use.  :(
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:27:45
+archive/issue_comments_010697.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_wstein\".",
+    "created_at": "2008-06-20T04:27:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10697",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "" to "editor_wstein".
 
 
+
 ---
 
-Comment by jason created at 2008-07-19 18:42:01
+archive/issue_comments_010698.json:
+```json
+{
+    "body": "I'm not sure of your logic to accomplish #2 (I couldn't seem to find it in the bundle), but it seems that it would be easy to just indent more on the next line if the current line ends in a \":\".",
+    "created_at": "2008-07-19T18:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10698",
+    "user": "jason"
+}
+```
 
 I'm not sure of your logic to accomplish #2 (I couldn't seem to find it in the bundle), but it seems that it would be easy to just indent more on the next line if the current line ends in a ":".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-04 20:25:10
+archive/issue_comments_010699.json:
+```json
+{
+    "body": "There is also an attempt to do this at #4440.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-04T20:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10699",
+    "user": "mabshoff"
+}
+```
 
 There is also an attempt to do this at #4440.
 
@@ -54,15 +125,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by boothby created at 2009-01-22 00:02:08
+archive/issue_comments_010700.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-01-22T00:02:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10700",
+    "user": "boothby"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by boothby created at 2009-01-22 00:02:08
+archive/issue_comments_010701.json:
+```json
+{
+    "body": "Replaced by #4440.",
+    "created_at": "2009-01-22T00:02:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1684#issuecomment-10701",
+    "user": "boothby"
+}
+```
 
 Replaced by #4440.

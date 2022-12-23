@@ -1,11 +1,21 @@
 # Issue 1036: optional macaulay2 package does not install
 
-Issue created by migration from https://trac.sagemath.org/ticket/1036
-
-Original creator: malb
-
-Original creation time: 2007-10-30 17:18:37
-
+archive/issues_001036.json:
+```json
+{
+    "body": "Assignee: was\n\nfirst `bison` is required and after installing that, this happens:\n\n\n```\nIn file included from ../comp.hpp:9,\n                 from ../comp_gb.hpp:6,\n                 from lingb.hpp:8,\n                 from lingb.cpp:1:\n../comp.hpp:7: error: previous declaration of \u2018int gbTrace\u2019 with \u2018C++\u2019 linkage\n../engine.h:1530: error: conflicts with new declaration with \u2018C\u2019 linkage\n```\n\n\nThis is with `GCC 4.2.3` on 64-bit Debian/testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1036\n\n",
+    "created_at": "2007-10-30T17:18:37Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "optional macaulay2 package does not install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1036",
+    "user": "malb"
+}
+```
 Assignee: was
 
 first `bison` is required and after installing that, this happens:
@@ -23,10 +33,25 @@ In file included from ../comp.hpp:9,
 
 This is with `GCC 4.2.3` on 64-bit Debian/testing.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1036
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-30 18:00:25
+archive/issue_comments_006326.json:
+```json
+{
+    "body": "Hello,\n\nMacaulay2 not building is a known issue and #10 should take care of that. But after initial ativity about a month back the work on a new Macaulay2 release seems to have slowed down.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-30T18:00:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6326",
+    "user": "mabshoff"
+}
+```
 
 Hello,
 
@@ -37,36 +62,93 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wjp created at 2007-11-14 23:58:33
+archive/issue_comments_006327.json:
+```json
+{
+    "body": "Attached a small patch. The 'extern int gbTrace' in engine.h is in an extern \"C\" {} block, while 'int gbTrace' is defined in a .cpp file.\n\nSince it doesn't appear to be patched in Macaulay2 svn, attaching a small patch.",
+    "created_at": "2007-11-14T23:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6327",
+    "user": "wjp"
+}
+```
 
 Attached a small patch. The 'extern int gbTrace' in engine.h is in an extern "C" {} block, while 'int gbTrace' is defined in a .cpp file.
 
 Since it doesn't appear to be patched in Macaulay2 svn, attaching a small patch.
 
 
+
 ---
 
-Comment by wjp created at 2007-11-14 23:59:07
+archive/issue_comments_006328.json:
+```json
+{
+    "body": "gbTrace C++-linkage patch",
+    "created_at": "2007-11-14T23:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6328",
+    "user": "wjp"
+}
+```
 
 gbTrace C++-linkage patch
 
 
+
 ---
+
+archive/issue_comments_006329.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-06T04:19:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6329",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-12-16 00:25:44
+archive/issue_comments_006330.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T00:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6330",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-12-16 00:25:44
+archive/issue_comments_006331.json:
+```json
+{
+    "body": "I've put this into sage.",
+    "created_at": "2007-12-16T00:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1036#issuecomment-6331",
+    "user": "was"
+}
+```
 
 I've put this into sage.

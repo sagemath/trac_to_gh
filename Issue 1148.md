@@ -1,11 +1,21 @@
 # Issue 1148: valuation doesn't work for rational numbers
 
-Issue created by migration from https://trac.sagemath.org/ticket/1148
-
-Original creator: dmharvey
-
-Original creation time: 2007-11-11 16:50:33
-
+archive/issues_001148.json:
+```json
+{
+    "body": "Assignee: somebody\n\nIt would be nice if `valuation(3/5, 5)` returned -1, but it does this:\n\n\n```\nsage: valuation(3/5, 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/david/series/<ipython console> in <module>()\n\n/Users/david/sage-2.8.12/local/lib/python2.5/site-packages/sage/rings/arith.py in valuation(m, p)\n    425     r=0\n    426     power=p\n--> 427     while m%power==0:\n    428         r += 1\n    429         power *= p\n\n/Users/david/series/rational.pyx in sage.rings.rational.Rational.__mod__()\n\n/Users/david/series/integer.pyx in sage.rings.integer.Integer.inverse_mod()\n\n<type 'exceptions.ZeroDivisionError'>: Inverse does not exist.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1148\n\n",
+    "created_at": "2007-11-11T16:50:33Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "valuation doesn't work for rational numbers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1148",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 It would be nice if `valuation(3/5, 5)` returned -1, but it does this:
@@ -34,51 +44,136 @@ sage: valuation(3/5, 5)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1148
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2007-11-16 01:13:30
+archive/issue_comments_007007.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-16T01:13:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7007",
+    "user": "dmharvey"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-11-16 01:13:30
+archive/issue_comments_007008.json:
+```json
+{
+    "body": "Changing assignee from somebody to dmharvey.",
+    "created_at": "2007-11-16T01:13:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7008",
+    "user": "dmharvey"
+}
+```
 
 Changing assignee from somebody to dmharvey.
 
 
+
 ---
+
+archive/issue_comments_007009.json:
+```json
+{
+    "body": "Attachment\n\nfixed it",
+    "created_at": "2007-11-16T02:15:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7009",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 fixed it
 
 
+
 ---
+
+archive/issue_comments_007010.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-18T08:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7010",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2007-11-27 04:51:52
+archive/issue_comments_007011.json:
+```json
+{
+    "body": "I tried the combination of 1148.hg and 1148-more.patch patch against 2.8.14.  The source code looks reasonable, and doctesting arith.py and rational.pyx (the two files touched by the change) both succeed.  (I did not try testall.)\n\nIn other words, looks good to me.",
+    "created_at": "2007-11-27T04:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7011",
+    "user": "cwitty"
+}
+```
 
 I tried the combination of 1148.hg and 1148-more.patch patch against 2.8.14.  The source code looks reasonable, and doctesting arith.py and rational.pyx (the two files touched by the change) both succeed.  (I did not try testall.)
 
 In other words, looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:51:29
+archive/issue_comments_007012.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha1.",
+    "created_at": "2007-12-01T18:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7012",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha1.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:51:29
+archive/issue_comments_007013.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T18:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1148#issuecomment-7013",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

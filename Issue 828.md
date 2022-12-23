@@ -1,11 +1,21 @@
 # Issue 828: edit() always puts the editor into the background
 
-Issue created by migration from https://trac.sagemath.org/ticket/828
-
-Original creator: justin
-
-Original creation time: 2007-10-05 05:56:32
-
+archive/issues_000828.json:
+```json
+{
+    "body": "Assignee: was\n\nThe new edit() command in SAGE forces the chosen editor into the background.  I'm not sure of the ramifications, but I have a change to the command that does the following: if DISPLAY is set in the user's environment, the assumption is that the editor will work with X (the window system).  Since the default 'emacs' in Mac OS X does not work with X, the result is that edit() terminates prematurely, complaining that standard output is not a tty.\n\nMy fix is to retain the current behavior only if DISPLAY is set.  Otherwise, the editor command is invoked as a \"foreground\" task, not a background task.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/828\n\n",
+    "created_at": "2007-10-05T05:56:32Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "edit() always puts the editor into the background",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/828",
+    "user": "justin"
+}
+```
 Assignee: was
 
 The new edit() command in SAGE forces the chosen editor into the background.  I'm not sure of the ramifications, but I have a change to the command that does the following: if DISPLAY is set in the user's environment, the assumption is that the editor will work with X (the window system).  Since the default 'emacs' in Mac OS X does not work with X, the result is that edit() terminates prematurely, complaining that standard output is not a tty.
@@ -13,41 +23,102 @@ The new edit() command in SAGE forces the chosen editor into the background.  I'
 My fix is to retain the current behavior only if DISPLAY is set.  Otherwise, the editor command is invoked as a "foreground" task, not a background task.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/828
+
+
+
+
 
 ---
 
-Comment by justin created at 2007-10-05 05:57:01
+archive/issue_comments_005128.json:
+```json
+{
+    "body": "Patch file fixing an edit() problem",
+    "created_at": "2007-10-05T05:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5128",
+    "user": "justin"
+}
+```
 
 Patch file fixing an edit() problem
 
 
+
 ---
+
+archive/issue_comments_005129.json:
+```json
+{
+    "body": "Attachment\n\nI don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.\nI would propose:\n* if a full template is supplied, then take it as the user gives it\n* if you're trying to guess from the \"EDITOR\" variable, you'll have to look up\nhow to pass a line number anyway. For each of these editors you know whether an & makes sense, and this is independent of the &",
+    "created_at": "2007-10-05T07:43:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5129",
+    "user": "nbruin"
+}
+```
 
 Attachment
 
 I don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.
 I would propose:
- * if a full template is supplied, then take it as the user gives it
- * if you're trying to guess from the "EDITOR" variable, you'll have to look up
+* if a full template is supplied, then take it as the user gives it
+* if you're trying to guess from the "EDITOR" variable, you'll have to look up
 how to pass a line number anyway. For each of these editors you know whether an & makes sense, and this is independent of the &
+
 
 
 ---
 
-Comment by nbruin created at 2007-10-05 07:44:22
+archive/issue_comments_005130.json:
+```json
+{
+    "body": "sorry. Why can't I edit my comments? I meant \"independent of the value of EDITOR\".",
+    "created_at": "2007-10-05T07:44:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5130",
+    "user": "nbruin"
+}
+```
 
 sorry. Why can't I edit my comments? I meant "independent of the value of EDITOR".
 
 
+
 ---
 
-Comment by was created at 2007-10-13 07:33:16
+archive/issue_comments_005131.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-10-13T07:33:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5131",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by was created at 2007-10-13 07:33:16
+archive/issue_comments_005132.json:
+```json
+{
+    "body": "I don't think this is needed -- it was only need for the old version...",
+    "created_at": "2007-10-13T07:33:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5132",
+    "user": "was"
+}
+```
 
 I don't think this is needed -- it was only need for the old version...

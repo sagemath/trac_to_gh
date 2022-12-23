@@ -1,11 +1,21 @@
 # Issue 1489: serious bug in calculus maxima parsing
 
-Issue created by migration from https://trac.sagemath.org/ticket/1489
-
-Original creator: was
-
-Original creation time: 2007-12-13 18:27:09
-
+archive/issues_001489.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Dec 13, 2007 9:53 AM, Matthias Hillenbrand <mailanhilli@googlemail.com> wrote:\n> \n> Hello,\n> \n> doing my first steps with SAGE I have a problem dealing with small\n> numbers like 2e-6. Here is a small example:\n> \n> k=var('k')\n> a0=2e-6\n> a1=12\n> b=sqrt(a1+a0*k)\n> show(b)\n> \n> With this parameters I don't get a result but have to interrupt the\n> computation. If I change a0 to a0=2e-2, the computation only needs one\n> second.\n> \n> Am I doing something wrong?\n> \n\nNo, this is a bug in this part of Sage itself in calculus.py.  Many many thanks\nfor finding this (it will be fixed in the next Sage release, which is planned\nfor Saturday). \n\nStarting at Line 6146:\n    #replace all instances of scientific notation\n    #with regular notation\n    search = sci_not.search(s)\n    while not search is None:\n        (start, end) = search.span()\n        s = s.replace(s[start:end], str(RR(s[start:end])))\n        search = sci_not.search(s)\n\nI think this bug was caused by some recent changes in how\nreal number printing works in Sage.  In any case,\nI'm glad you found the bug, which I'm sure we will easily be\nable to fix.   \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1489\n\n",
+    "created_at": "2007-12-13T18:27:09Z",
+    "labels": [
+        "calculus",
+        "blocker",
+        "bug"
+    ],
+    "title": "serious bug in calculus maxima parsing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1489",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -52,15 +62,43 @@ able to fix.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1489
+
+
+
+
 
 ---
+
+archive/issue_comments_009583.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-13T18:40:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1489#issuecomment-9583",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-13 21:55:28
+archive/issue_comments_009584.json:
+```json
+{
+    "body": "Hi,\n\n2.9.alph6 + this patch passes -testall on OSX 10.5.1. It also looks cleaner and reuses hopefully better tested existing code. So my vote is on merging.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-13T21:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1489#issuecomment-9584",
+    "user": "mabshoff"
+}
+```
 
 Hi,
 
@@ -71,15 +109,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 05:11:50
+archive/issue_comments_009585.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-14T05:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1489#issuecomment-9585",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 05:11:50
+archive/issue_comments_009586.json:
+```json
+{
+    "body": "Merged in 2.9.alpha7.",
+    "created_at": "2007-12-14T05:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1489#issuecomment-9586",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha7.

@@ -1,11 +1,21 @@
 # Issue 1127: modularSymbol complement fails for E=128a
 
-Issue created by migration from https://trac.sagemath.org/ticket/1127
-
-Original creator: syazdani
-
-Original creation time: 2007-11-07 20:35:42
-
+archive/issues_001127.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb\n\nThe following code raises the following exception:\n\n```\nsage: E=EllipticCurve(\"128a\")\nsage: ME=E.modular_symbol_space()\nsage: ME.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in complement(self, bound)\n    200         else:\n    201             # failed\n--> 202             raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    203\n    204\n\n<type 'exceptions.RuntimeError'>: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1127\n\n",
+    "created_at": "2007-11-07T20:35:42Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "modularSymbol complement fails for E=128a",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1127",
+    "user": "syazdani"
+}
+```
 Assignee: was
 
 CC:  robertwb
@@ -32,10 +42,25 @@ sage: ME.complement()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1127
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-18 09:11:46
+archive/issue_comments_006808.json:
+```json
+{
+    "body": "This remains unfixed in Sage 2.9.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-18T09:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6808",
+    "user": "mabshoff"
+}
+```
 
 This remains unfixed in Sage 2.9.
 
@@ -44,9 +69,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-20 02:59:34
+archive/issue_comments_006809.json:
+```json
+{
+    "body": "And it is still open in Sage 2.10.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-20T02:59:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6809",
+    "user": "mabshoff"
+}
+```
 
 And it is still open in Sage 2.10.
 
@@ -55,9 +91,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 06:53:19
+archive/issue_comments_006810.json:
+```json
+{
+    "body": "And it is still broken in Sage 3.0.3. This looks like a job for Craig Citro :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-26T06:53:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6810",
+    "user": "mabshoff"
+}
+```
 
 And it is still broken in Sage 3.0.3. This looks like a job for Craig Citro :)
 
@@ -66,16 +113,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 06:53:19
+archive/issue_comments_006811.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2008-06-26T06:53:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6811",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 16:27:56
+archive/issue_comments_006812.json:
+```json
+{
+    "body": "Could #2535 be related?\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T16:27:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6812",
+    "user": "mabshoff"
+}
+```
 
 Could #2535 be related?
 
@@ -84,25 +153,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-22 23:33:05
+archive/issue_comments_006813.json:
+```json
+{
+    "body": "For the record, there are other failures for conductors 144, 192, 225.  These are the only conductors smaller than 250 that fail.\n\nThe patch implements a naive fix.",
+    "created_at": "2009-01-22T23:33:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6813",
+    "user": "AlexGhitza"
+}
+```
 
 For the record, there are other failures for conductors 144, 192, 225.  These are the only conductors smaller than 250 that fail.
 
 The patch implements a naive fix.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-22 23:34:06
+archive/issue_comments_006814.json:
+```json
+{
+    "body": "I'd review this, but I helped write it. :)",
+    "created_at": "2009-01-22T23:34:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6814",
+    "user": "craigcitro"
+}
+```
 
 I'd review this, but I helped write it. :)
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-23 22:41:43
+archive/issue_comments_006815.json:
+```json
+{
+    "body": "I'm still getting \n\n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2618, in congruence_number\n    self.__congruence_number = W.congruence_number(V)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 938, in congruence_number\n    W = other.q_expansion_module(prec, ZZ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 770, in q_expansion_module\n    return self._q_expansion_module_integral(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 910, in _q_expansion_module_integral\n    V = self.q_expansion_module(prec, QQ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 772, in q_expansion_module\n    return self._q_expansion_module_rational(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 861, in _q_expansion_module_rational\n    return self._q_expansion_module(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 820, in _q_expansion_module\n    return A.span([f.padded_list(prec) for f in self.q_expansion_basis(prec, algorithm)])\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 602, in q_expansion_basis\n    return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 1073, in _q_expansion_basis_hecke_dual\n    v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 797, in dual_hecke_matrix\n    T = self._compute_dual_hecke_matrix(n)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 110, in _compute_dual_hecke_matrix\n    return A.restrict(self.dual_free_module(), check=check)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 320, in dual_free_module\n    \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).\n```\n",
+    "created_at": "2009-01-23T22:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6815",
+    "user": "robertwb"
+}
+```
 
 I'm still getting 
 
@@ -142,14 +244,38 @@ RuntimeError: Computation of embedded dual vector space failed (cut down to rank
 
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-24 00:31:56
+archive/issue_comments_006816.json:
+```json
+{
+    "body": "This is a separate issue, see #5080. The patch fixes the issue that was raised.",
+    "created_at": "2009-01-24T00:31:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6816",
+    "user": "robertwb"
+}
+```
 
 This is a separate issue, see #5080. The patch fixes the issue that was raised.
 
 
+
 ---
+
+archive/issue_comments_006817.json:
+```json
+{
+    "body": "Attachment\n\nMerged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T19:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6817",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -160,8 +286,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 19:30:30
+archive/issue_comments_006818.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T19:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6818",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

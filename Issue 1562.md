@@ -1,44 +1,115 @@
 # Issue 1562: Inverse trig functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/1562
-
-Original creator: robertwb
-
-Original creation time: 2007-12-19 03:20:27
-
+archive/issues_001562.json:
+```json
+{
+    "body": "Assignee: was\n\nImplement acot, asin, etc. in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1562\n\n",
+    "created_at": "2007-12-19T03:20:27Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "Inverse trig functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1562",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 Implement acot, asin, etc. in Sage. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1562
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2007-12-19 03:21:25
+archive/issue_comments_009944.json:
+```json
+{
+    "body": "Integrate Dan Drake's code.",
+    "created_at": "2007-12-19T03:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9944",
+    "user": "robertwb"
+}
+```
 
 Integrate Dan Drake's code.
 
 
+
 ---
+
+archive/issue_comments_009945.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-19T07:04:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9945",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2007-12-21 01:40:46
+archive/issue_comments_009946.json:
+```json
+{
+    "body": "merged in 2.9.1 alpha2",
+    "created_at": "2007-12-21T01:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9946",
+    "user": "rlm"
+}
+```
 
 merged in 2.9.1 alpha2
 
 
+
 ---
 
-Comment by rlm created at 2007-12-21 01:40:46
+archive/issue_comments_009947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-21T01:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9947",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-21 01:40:46
+archive/issue_comments_009948.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-12-21T01:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1562#issuecomment-9948",
+    "user": "rlm"
+}
+```
 
 Changing type from defect to enhancement.

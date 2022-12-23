@@ -1,11 +1,21 @@
 # Issue 1934: sage-check for ATLAS broken on OSX
 
-Issue created by migration from https://trac.sagemath.org/ticket/1934
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-26 09:17:47
-
+archive/issues_001934.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nOn OSX we need to exit `sage-check` since we currently do not build ATLAS on OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1934\n\n",
+    "created_at": "2008-01-26T09:17:47Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "sage-check for ATLAS broken on OSX",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1934",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 On OSX we need to exit `sage-check` since we currently do not build ATLAS on OSX.
@@ -14,10 +24,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1934
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-26 09:26:13
+archive/issue_comments_012274.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc0/atlas-3.8.p10.spkg\n\nfixed the issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-26T09:26:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1934#issuecomment-12274",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -30,15 +55,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 09:26:47
+archive/issue_comments_012275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-26T09:26:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1934#issuecomment-12275",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 09:26:47
+archive/issue_comments_012276.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc0",
+    "created_at": "2008-01-26T09:26:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1934#issuecomment-12276",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc0

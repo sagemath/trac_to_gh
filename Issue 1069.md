@@ -1,11 +1,21 @@
 # Issue 1069: find a way to savely enable inplace optimizations
 
-Issue created by migration from https://trac.sagemath.org/ticket/1069
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-02 19:10:13
-
+archive/issues_001069.json:
+```json
+{
+    "body": "Assignee: rbradshaw\n\nSee #1068 and also \n\nhttp://groups.google.com/group/sage-devel/t/175e1796069fd33c\n\nThe short version: if we enable in-place optimizations we cause problems with numpy and potentially other libraries.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1069\n\n",
+    "created_at": "2007-11-02T19:10:13Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "find a way to savely enable inplace optimizations",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1069",
+    "user": "mabshoff"
+}
+```
 Assignee: rbradshaw
 
 See #1068 and also 
@@ -18,44 +28,114 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1069
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-01-29 12:09:10
+archive/issue_comments_006478.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-01-29T12:09:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6478",
+    "user": "malb"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-03-13 10:20:50
+archive/issue_comments_006479.json:
+```json
+{
+    "body": "Changing component from packages: standard to cython.",
+    "created_at": "2015-03-13T10:20:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6479",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from packages: standard to cython.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-06-23 11:31:44
+archive/issue_comments_006480.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-06-23T11:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6480",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-06-23 11:31:44
+archive/issue_comments_006481.json:
+```json
+{
+    "body": "Wontfix, see #18772.",
+    "created_at": "2015-06-23T11:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6481",
+    "user": "jdemeyer"
+}
+```
 
 Wontfix, see #18772.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-06-23 11:31:50
+archive/issue_comments_006482.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-06-23T11:31:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6482",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-07-17 20:05:45
+archive/issue_comments_006483.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2015-07-17T20:05:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1069#issuecomment-6483",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

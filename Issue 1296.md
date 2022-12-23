@@ -1,11 +1,21 @@
 # Issue 1296: Fast permutation arithmatic
 
-Issue created by migration from https://trac.sagemath.org/ticket/1296
-
-Original creator: robertwb
-
-Original creation time: 2007-11-28 05:44:18
-
+archive/issues_001296.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nWhile patching CubeGroup, I noticed that permutation group arithmetic is was extremely slow (every operation passed through the GAP interface for instance). \n\nIt makes sense to re-implement these simple operations in a fast Cython class. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1296\n\n",
+    "created_at": "2007-11-28T05:44:18Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Fast permutation arithmatic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1296",
+    "user": "robertwb"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -14,32 +24,97 @@ While patching CubeGroup, I noticed that permutation group arithmetic is was ext
 
 It makes sense to re-implement these simple operations in a fast Cython class. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1296
+
+
+
+
 
 ---
+
+archive/issue_comments_008138.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-28T05:46:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8138",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008139.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-28T05:46:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8139",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-28 05:48:36
+archive/issue_comments_008140.json:
+```json
+{
+    "body": "Changing assignee from mhansen to robertwb.",
+    "created_at": "2007-11-28T05:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8140",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from mhansen to robertwb.
 
 
+
 ---
+
+archive/issue_comments_008141.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-28T05:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8141",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-28 18:24:48
+archive/issue_comments_008142.json:
+```json
+{
+    "body": "Some benchmarks indicating a 4400x speedup. \n\nThe old code:\n\n```\nsage: G = SymmetricGroup(10)\nsage: g = G.random_element(); h = G.random_element()\nsage: A = range(1000)\nsage: time for _ in A: z = g*h\nCPU time: 2.96 s,  Wall time: 3.09 s\nsage: time for _ in A: z = g.sign()\nCPU time: 1.36 s,  Wall time: 1.41 s\nsage: time for _ in A: z = g.order()\nCPU time: 1.36 s,  Wall time: 1.40 s\nsage: time for _ in A: z = g.list()\nCPU time: 0.95 s,  Wall time: 1.04 s\n```\n\n\nThe new code (note the 10<sup>5</sup>, at 10<sup>3</sup> they were unmeasurably fast): \n\n```\nsage: G = SymmetricGroup(10)\nsage: g = G.random_element(); h = G.random_element()\nsage: A = range(10^5)\nsage: time for _ in A: z = g*h\nCPU time: 0.07 s,  Wall time: 0.07 s\nsage: time for _ in A: z = g.sign()\nCPU time: 0.04 s,  Wall time: 0.04 s\nsage: time for _ in A: z = g.order()\nCPU time: 0.09 s,  Wall time: 0.09 s\nsage: time for _ in A: z = g.list()\nCPU time: 0.12 s,  Wall time: 0.12 s\n```\n",
+    "created_at": "2007-11-28T18:24:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8142",
+    "user": "robertwb"
+}
+```
 
 Some benchmarks indicating a 4400x speedup. 
 
@@ -78,19 +153,56 @@ CPU time: 0.12 s,  Wall time: 0.12 s
 
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-28 18:24:48
+archive/issue_comments_008143.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-28T18:24:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8143",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_008144.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-28T18:29:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8144",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008145.json:
+```json
+{
+    "body": "Attachment\n\nRobert,  if I comment out the following doctest then everything passes (on 100 runs through).\n\n```\n        #sage: G1 = AlternatingGroup([1,2,4,5])\n        #sage: G2 = AlternatingGroup([3,4,6,7])\n        #sage: D = direct_product_permgroups([G1,G2,G1])\n        #sage: D.order()\n        #1728\n        #sage: D = direct_product_permgroups([G1])\n        #sage: D==G1\n        #True\n        #sage: direct_product_permgroups([])\n        #Symmetric group of order 1! as a permutation group\n```\n\n\nUnfortunately, that doctest works perfectly if I do it from the command-line.",
+    "created_at": "2007-12-05T23:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8145",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -113,9 +225,20 @@ Robert,  if I comment out the following doctest then everything passes (on 100 r
 Unfortunately, that doctest works perfectly if I do it from the command-line.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 02:01:54
+archive/issue_comments_008146.json:
+```json
+{
+    "body": "After applying all patches and uncommenting the doctests for direct_product_permgroups like mhansen wrote above I get the following simple to fix doctests:\n\n```\nsage -t  devel/sage-main/sage/groups/perm_gps/permgroup.py  \n**********************************************************************\nFile \"permgroup.py\", line 157:\n    sage: G._gap_()\nExpected:\n    Group([ (1,2,3,4) ])\nGot:\n    Group( [ (1,2,3,4) ] )\n**********************************************************************\nFile \"permgroup.py\", line 159:\n    sage: gap(G)\nExpected:\n    Group([ (1,2,3,4) ])\nGot:\n    Group( [ (1,2,3,4) ] )\n**********************************************************************\nFile \"permgroup.py\", line 1249:\n    sage: G.normalizer(g)\nExpected:\n    Group([ (1,2,3,4), (1,3)(2,4), (2,4) ])\nGot:\n    Group( [ (1,2,3,4), (1,3)(2,4), (2,4) ] )\n**********************************************************************\n2 items had failures:\n   2 of  10 in __main__.example_3\n   1 of   5 in __main__.example_39\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_permgroup.py\n         [12.1 s]\nexit code: 256\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-11T02:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8146",
+    "user": "mabshoff"
+}
+```
 
 After applying all patches and uncommenting the doctests for direct_product_permgroups like mhansen wrote above I get the following simple to fix doctests:
 
@@ -158,9 +281,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 02:13:22
+archive/issue_comments_008147.json:
+```json
+{
+    "body": "Valgrind says:\n\n```\n==28125== Invalid write of size 4\n==28125==    at 0x17B6BC9D: __pyx_pf_4sage_6groups_8perm_gps_17permgroup_element_23PermutationGroupElement___init__ (permgro\nup_element.c:2237)\n==28125==    by 0x458E40: type_call (typeobject.c:436)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==28125==    by 0x483C6A: PyEval_EvalFrameEx (ceval.c:3650)\n==28125==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==28125==    by 0x4CDFF0: function_call (funcobject.c:517)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x41BC62: instancemethod_call (classobject.c:2497)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==28125==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==28125==  Address 0x533f868 is 0 bytes after a block of size 16 alloc'd\n==28125==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==28125==    by 0x17B6C391: __pyx_pf_4sage_6groups_8perm_gps_17permgroup_element_23PermutationGroupElement___init__ (permgro\nup_element.c:2075)\n==28125==    by 0x458E40: type_call (typeobject.c:436)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==28125==    by 0x483C6A: PyEval_EvalFrameEx (ceval.c:3650)\n==28125==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==28125==    by 0x4CDFF0: function_call (funcobject.c:517)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x41BC62: instancemethod_call (classobject.c:2497)\n==28125==    by 0x415542: PyObject_Call (abstract.c:1860)\n==28125==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-11T02:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8147",
+    "user": "mabshoff"
+}
+```
 
 Valgrind says:
 
@@ -201,9 +335,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 02:46:38
+archive/issue_comments_008148.json:
+```json
+{
+    "body": "Adding the following around line 267 of permgroup_element.pyx\n\n```\n        cdef int i\n        print v\n        print len(v)\n        print self.n\n        assert(len(v) <= self.n)\n        for i from 0 <= i < len(v):\n            self.perm[i] = v[i] - 1\n        for i from len(v) <= i < self.n:\n            self.perm[i] = i\n```\n\nproduces:\n\n```\nsage: G1 = AlternatingGroup([1,2,4,5])\n[2, 4, 3, 1]\n4\n4\n[1, 4, 3, 5, 2]\n5\n4\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/<ipython console> in <module>()\n\n/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_named.py in __init__(self, n)\n    160         if isinstance(n, list):\n    161             self._deg = len(n)\n--> 162             PermutationGroup_generic.__init__(self, 'AlternatingGroup(%s)'%n, from_group = True)\n    163         else:\n    164             try:\n\n/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py in __init__(self, gens, from_group, check)\n    189         if from_group and isinstance(gens, str):\n    190             self.__gap = gens\n--> 191             self.gens()  # so will check that group can be defined in GAP (e.g., no missing packages, etc.)\n    192             return\n    193         if is_GapElement(gens):\n\n/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py in gens(self)\n    468             self.__gens = tuple([PermutationGroupElement(gens[n],\n    469                                     self, check = False) for n in \\\n--> 470                                  range(1, int(gens.Length())+1)])\n    471             return self.__gens\n    472\n\n/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/permgroup_element.pyx in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__()\n\n<type 'exceptions.AssertionError'>:\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-11T02:46:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8148",
+    "user": "mabshoff"
+}
+```
 
 Adding the following around line 267 of permgroup_element.pyx
 
@@ -266,27 +411,49 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-11 03:19:17
+archive/issue_comments_008149.json:
+```json
+{
+    "body": "I had tried tracking this down, but to no avail. I bet that's it. \n\nThe contents of v (if the user passes it in) really should be verified--I fear bad things can happen if it's not correct.",
+    "created_at": "2007-12-11T03:19:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8149",
+    "user": "robertwb"
+}
+```
 
 I had tried tracking this down, but to no avail. I bet that's it. 
 
 The contents of v (if the user passes it in) really should be verified--I fear bad things can happen if it's not correct.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 03:54:23
+archive/issue_comments_008150.json:
+```json
+{
+    "body": "Merged\n\n* 1296-fast-permgroup.patch\n* 1296-fast-permgroup2.patch\n* 1296-fast-permgroup3.patch\n* 1296-fast-permgroup4.patch\n* 1296-fast-permgroup5.patch\n* 1296-permgroup_element.pxd\n\nin 2.9.alpha5. William also fixed the segfault issue.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-11T03:54:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8150",
+    "user": "mabshoff"
+}
+```
 
 Merged
 
- * 1296-fast-permgroup.patch
- * 1296-fast-permgroup2.patch
- * 1296-fast-permgroup3.patch
- * 1296-fast-permgroup4.patch
- * 1296-fast-permgroup5.patch
- * 1296-permgroup_element.pxd
+* 1296-fast-permgroup.patch
+* 1296-fast-permgroup2.patch
+* 1296-fast-permgroup3.patch
+* 1296-fast-permgroup4.patch
+* 1296-fast-permgroup5.patch
+* 1296-permgroup_element.pxd
 
 in 2.9.alpha5. William also fixed the segfault issue.
 
@@ -295,21 +462,32 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 05:27:42
+archive/issue_comments_008151.json:
+```json
+{
+    "body": "Failing doctests with 2.9.alpha5, as far as I can tell all related to #1296:\n\n* devel/sage-main/sage/groups/group.pyx\n* devel/sage-main/sage/groups/abelian_gps/abelian_group.py\n* devel/sage-main/sage/gsl/dft.py\n* devel/sage-main/sage/calculus/calculus.py\n* devel/sage-main/sage/interfaces/gap.py\n* devel/sage-main/sage/functions/functions.py\n* devel/sage-main/sage/functions/constants.py\n* devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\n* devel/sage-main/sage/rings/polynomial/polynomial_ring.py\n\nAdditionally also failures in tut.tex and const.tex.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-11T05:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8151",
+    "user": "mabshoff"
+}
+```
 
 Failing doctests with 2.9.alpha5, as far as I can tell all related to #1296:
 
- * devel/sage-main/sage/groups/group.pyx
- * devel/sage-main/sage/groups/abelian_gps/abelian_group.py
- * devel/sage-main/sage/gsl/dft.py
- * devel/sage-main/sage/calculus/calculus.py
- * devel/sage-main/sage/interfaces/gap.py
- * devel/sage-main/sage/functions/functions.py
- * devel/sage-main/sage/functions/constants.py
- * devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
- * devel/sage-main/sage/rings/polynomial/polynomial_ring.py
+* devel/sage-main/sage/groups/group.pyx
+* devel/sage-main/sage/groups/abelian_gps/abelian_group.py
+* devel/sage-main/sage/gsl/dft.py
+* devel/sage-main/sage/calculus/calculus.py
+* devel/sage-main/sage/interfaces/gap.py
+* devel/sage-main/sage/functions/functions.py
+* devel/sage-main/sage/functions/constants.py
+* devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
+* devel/sage-main/sage/rings/polynomial/polynomial_ring.py
 
 Additionally also failures in tut.tex and const.tex.
 
@@ -318,15 +496,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 06:58:06
+archive/issue_comments_008152.json:
+```json
+{
+    "body": "The patches were merged in 2.9.alpha5, the doctests fixed in 2.9.alpha6.",
+    "created_at": "2007-12-14T06:58:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8152",
+    "user": "mabshoff"
+}
+```
 
 The patches were merged in 2.9.alpha5, the doctests fixed in 2.9.alpha6.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 06:58:06
+archive/issue_comments_008153.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-14T06:58:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1296#issuecomment-8153",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

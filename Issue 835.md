@@ -1,11 +1,21 @@
 # Issue 835: cannot coerce real numbers to Integer
 
-Issue created by migration from https://trac.sagemath.org/ticket/835
-
-Original creator: dmharvey
-
-Original creation time: 2007-10-06 15:33:28
-
+archive/issues_000835.json:
+```json
+{
+    "body": "Assignee: somebody\n\nIf a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:\n\n\n```\nsage: Integer(RR(2.0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/835\n\n",
+    "created_at": "2007-10-06T15:33:28Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "cannot coerce real numbers to Integer",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/835",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 If a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:
@@ -25,21 +35,60 @@ sage: Integer(RR(2.0))
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/835
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-07 14:36:51
+archive/issue_comments_005165.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2007-10-07T14:36:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/835",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/835#issuecomment-5165",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
+
+archive/issue_comments_005166.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-11T04:57:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/835",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/835#issuecomment-5166",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-13 05:46:07
+archive/issue_comments_005167.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T05:46:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/835",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/835#issuecomment-5167",
+    "user": "was"
+}
+```
 
 Resolution: fixed

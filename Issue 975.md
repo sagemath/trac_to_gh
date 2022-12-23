@@ -1,11 +1,21 @@
 # Issue 975: Library incompatibilities when launching external applications
 
-Issue created by migration from https://trac.sagemath.org/ticket/975
-
-Original creator: bober
-
-Original creation time: 2007-10-23 19:26:12
-
+archive/issues_000975.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n(See http://groups.google.com/group/sage-devel/browse_thread/thread/78f8b6afea8ca8c8 for some discussion of this bug.)\n\nWhen sage launches an external application (for example, eog, or singular) it does so with LD_LIBRARY_PATH set to sage defaults. This is necessary for some applications (e.g. singular), but it breaks other applications on some systems (e.g. eog, when running on bober's laptop).\n\nThe following examples all take place on bober's laptop, which is a 32-bit Core Duo recently upgraded to Ubuntu 7.10. (Presumably, the problems were not there under Ubuntu 7.04 so this is a system specific defect.)\n\nSome typical examples are\n\n\n```\nsage: !eog\neog: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n\nsage: !gimp\ngimp: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n\nsage: !gvim\ngvim: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol: FT_Library_SetLcdFilter\n```\n\n\nAlso, this extends to a problem with python package locations, for example (glchess is a python program, which, on Ubuntu, at least, has most of its files installed under `/usr/lib/python2.5/site-packages/glchess`)\n\n\n```\nsage: !glchess\nTraceback (most recent call last):\n  File \"/usr/games/glchess\", line 18, in <module>\n    from glchess.glchess import start_game\nImportError: No module named glchess.glchess\n```\n\n\nA basic temporary workaround is to change certain instances of `os.system(command)` to\n`os.system(\"LD_LIBRARY_PATH='' \" + command)`. This may allow plot().show() to work correctly in some cases, for example.\n\nA possible better fix described by mabshoff is \n\n  The problem is that application like singular would fail if LD_LIBRARY_PATH was unset. One solution would be to come up with a white list of applications that are \"Sage internal\" or alternatively check if in case we do '!foo' whether there is a foo in $SAGE_LOCAL/bin and execute with LD_LIBRARY_PATH or alternatively if foo isn't in $SAGE_LOCAL/bin execute with the old LD_LIBRARY_PATH before sage-env changed it [and not with an empty one!]\n\nIssue created by migration from https://trac.sagemath.org/ticket/975\n\n",
+    "created_at": "2007-10-23T19:26:12Z",
+    "labels": [
+        "distribution",
+        "minor",
+        "bug"
+    ],
+    "title": "Library incompatibilities when launching external applications",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/975",
+    "user": "bober"
+}
+```
 Assignee: mabshoff
 
 (See http://groups.google.com/group/sage-devel/browse_thread/thread/78f8b6afea8ca8c8 for some discussion of this bug.)
@@ -48,17 +58,43 @@ A possible better fix described by mabshoff is
 
   The problem is that application like singular would fail if LD_LIBRARY_PATH was unset. One solution would be to come up with a white list of applications that are "Sage internal" or alternatively check if in case we do '!foo' whether there is a foo in $SAGE_LOCAL/bin and execute with LD_LIBRARY_PATH or alternatively if foo isn't in $SAGE_LOCAL/bin execute with the old LD_LIBRARY_PATH before sage-env changed it [and not with an empty one!]
 
+Issue created by migration from https://trac.sagemath.org/ticket/975
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-24 01:46:01
+archive/issue_comments_005945.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-24T01:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5945",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-11-02 18:13:17
+archive/issue_comments_005946.json:
+```json
+{
+    "body": "comment from Fernando Perez\n\n```\n \nOn 11/2/07, William Stein <wstein@gmail.com> wrote:\n \n> Ah, that's very very nice.  OK, I would really like\n> to see that implemented.   Maybe Fernando Perez could\n> tell us how to hook into IPython to make that happen....\n \nShould be fairly straightforward.  In iplib.py, around line 500,\nyou'll find this code:\n \n        # Functions to call the underlying shell.\n \n        # The first is similar to os.system, but it doesn't return a value,\n        # and it allows interpolation of variables in the user's namespace.\n        self.system = lambda cmd: \\\n                      shell(self.var_expand(cmd,depth=2),\n                            header=self.rc.system_header,\n                            verbose=self.rc.system_verbose)\n \n        # These are for getoutput and getoutputerror:\n        self.getoutput = lambda cmd: \\\n                         getoutput(self.var_expand(cmd,depth=2),\n                                   header=self.rc.system_header,\n                                   verbose=self.rc.system_verbose)\n \n        self.getoutputerror = lambda cmd: \\\n                              getoutputerror(self.var_expand(cmd,depth=2),\n                                             header=self.rc.system_header,\n                                             verbose=self.rc.system_verbose)\n \nwhere 'shell', 'getoutput' and 'getoutputerror' are all defined in\nIPython.genutils.\n \nSimply take the ipython instance, and before you hand it to the user\nfor 'live' usage, change its\n.system attribute to be your own routine which is similar to the above\nlambda, but does the additional extra checks you want.\n \nBasically code like (this is just a sketch):\n \nimport new\n \nold_system = ipython_instance.system\n \ndef sage_system(self,cmd):\n  if cmd_in_sage_programs():\n    old_system(cmd)\n  else:\n    try:\n      update_environment()\n      old_system(cmd)\n    finally:\n      restore_environment()\n \nipython_instance.system = new.instancemethod(ipython_instance,sage_system)\n \n \nThis is obviously incomplete, but it should give you an idea of what's needed.\n \nCheers,\n \nf\n }}}",
+    "created_at": "2007-11-02T18:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5946",
+    "user": "was"
+}
+```
 
 comment from Fernando Perez
 
@@ -128,9 +164,20 @@ f
  }}}
 
 
+
 ---
 
-Comment by was created at 2007-12-11 02:53:54
+archive/issue_comments_005947.json:
+```json
+{
+    "body": "\n```\n> \n> \n> sage: hg_sage.commit()\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg diff  | less\n> cd \"/home/wdj/wdj/sagefiles/sage-2.8.13.alpha1/devel/sage\" && hg commit\n> emacs: symbol lookup error: /usr/lib/libcairo.so.2: undefined symbol:\n> FT_Library_SetLcdFilter\n> transaction abort!\n> rollback completed\n> abort: edit failed: emacs exited with status 127\n> \n\nThis is a library conflict.   I know how to fix it, by unsetting some environment\nvariables before calling emacs.   This is trac #975:\n    http://trac.sagemath.org/sage_trac/ticket/975\n\nFor now, if you put this in your SAGE_ROOT/local/bin/ it will be a work-around:\n   (1) Make a file SAGE_ROOT/local/bin/emacs\n   (2) Put this in it:\n\n#!/bin/sh\nunset LD_LIBRARY_PATH\nunset DYLD_LIBRARY_PATH\n/usr/bin/emacs $@\n\n   (3) make it executable:\n        chmod +x SAGE_ROOT/local/bin/emacs\n\nWilliam\n```\n",
+    "created_at": "2007-12-11T02:53:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5947",
+    "user": "was"
+}
+```
 
 
 ```
@@ -167,14 +214,38 @@ William
 
 
 
+
 ---
+
+archive/issue_comments_005948.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-12T00:22:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5948",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2007-12-12 00:28:02
+archive/issue_comments_005949.json:
+```json
+{
+    "body": "The update-environment.patch takes care of the case:\n\n!eog\n\nor other commands using the shell \"!\" function.  However, this does not address other searches for libraries.  So, for example, plot(x,0,1).show() still does *not* pop up a window.\n\nThe following will pop up a window, though:\n\n\n```\nsage: import os\nsage: os.environ['LD_LIBRARY_PATH']=os.environ['SAGE_ORIG_LD_LIBRARY_PATH']\nsage: plot(x,1,2).show()\n```\n\n\nNote that using os.environ like this exposes a memory leak on FreeBSD and possibly Mac OSX (see http://docs.python.org/lib/os-procinfo.html and http://www.freebsd.org/cgi/man.cgi?query=putenv&sektion=3 for example).  Also, probably messes up other things that depend on the modified LD_LIBRARY_PATH\n\nI have no idea how to set the LD_LIBRARY_PATH for the show() command, for example.",
+    "created_at": "2007-12-12T00:28:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5949",
+    "user": "jason"
+}
+```
 
 The update-environment.patch takes care of the case:
 
@@ -197,37 +268,94 @@ Note that using os.environ like this exposes a memory leak on FreeBSD and possib
 I have no idea how to set the LD_LIBRARY_PATH for the show() command, for example.
 
 
+
 ---
 
-Comment by jason created at 2008-01-10 05:16:41
+archive/issue_comments_005950.json:
+```json
+{
+    "body": "Modifies the browsers returned to use \"native-execute\".  Use in conjunction with the native-execute.patch",
+    "created_at": "2008-01-10T05:16:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5950",
+    "user": "jason"
+}
+```
 
 Modifies the browsers returned to use "native-execute".  Use in conjunction with the native-execute.patch
 
 
+
 ---
+
+archive/issue_comments_005951.json:
+```json
+{
+    "body": "Attachment\n\nApply to sage-scripts.  Creates new \"native-execute\" command that resets the LD_LIBRARY_PATH variable.",
+    "created_at": "2008-01-10T05:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5951",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Apply to sage-scripts.  Creates new "native-execute" command that resets the LD_LIBRARY_PATH variable.
 
 
+
 ---
 
-Comment by jason created at 2008-01-10 05:25:40
+archive/issue_comments_005952.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2008-01-10T05:25:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5952",
+    "user": "jason"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by jason created at 2008-01-10 05:27:12
+archive/issue_comments_005953.json:
+```json
+{
+    "body": "All three patches should be applied, with the native-execute patch applied to sage-scripts.  The first patch fixes the \"!eog\" problem from the original ticket.  The last two patches allow plot().show() to open an external window.",
+    "created_at": "2008-01-10T05:27:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5953",
+    "user": "jason"
+}
+```
 
 All three patches should be applied, with the native-execute patch applied to sage-scripts.  The first patch fixes the "!eog" problem from the original ticket.  The last two patches allow plot().show() to open an external window.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 05:37:48
+archive/issue_comments_005954.json:
+```json
+{
+    "body": "Nice work, looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-10T05:37:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5954",
+    "user": "mabshoff"
+}
+```
 
 Nice work, looks good to me.
 
@@ -236,30 +364,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-01-10 06:35:34
+archive/issue_comments_005955.json:
+```json
+{
+    "body": "Thanks.  The last two patches implemented Robert Bradshaw's idea.",
+    "created_at": "2008-01-10T06:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5955",
+    "user": "jason"
+}
+```
 
 Thanks.  The last two patches implemented Robert Bradshaw's idea.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 06:38:52
+archive/issue_comments_005956.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha1.",
+    "created_at": "2008-01-10T06:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5956",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha1.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 06:38:52
+archive/issue_comments_005957.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-10T06:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5957",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 17:37:26
+archive/issue_comments_005958.json:
+```json
+{
+    "body": "There is one problem: `sage -sdist` only copies all scripts from `local/bin` starting with `sage-`, so rename the native-execute-script and fix `sage/misc/viewer.py` with the attached patch.\n\nThe fact that `sage -sdist` only copies files with certain prefixes is *not* documented.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-13T17:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5958",
+    "user": "mabshoff"
+}
+```
 
 There is one problem: `sage -sdist` only copies all scripts from `local/bin` starting with `sage-`, so rename the native-execute-script and fix `sage/misc/viewer.py` with the attached patch.
 

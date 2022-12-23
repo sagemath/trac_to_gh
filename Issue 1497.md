@@ -1,11 +1,21 @@
 # Issue 1497: atlas-3.8.p4.spkg fails to build on Intel Core 2 Duo with 32-bit operating system
 
-Issue created by migration from https://trac.sagemath.org/ticket/1497
-
-Original creator: cwitty
-
-Original creation time: 2007-12-13 23:24:11
-
+archive/issues_001497.json:
+```json
+{
+    "body": "Assignee: was\n\nI run 32-bit Debian on my Core 2 Duo box.  ATLAS detects the Core 2 Duo and attempts to do a 64-bit build, which fails with errors like this:\n\n```\ncd /home/cwitty/sage-2.9.alpha6/spkg/build/atlas-3.8.p4/ATLAS-build ; ./xprobe_comp -v 0 -o atlconf.txt -O 1 -A 15 -Si nof77 0  -Fa ic '-fPIC' -Fa sm '-fPIC' -Fa dm '-fPIC' -Fa sk '-fPIC' -Fa dk '-fPIC' -Fa xc '-fPIC' -C if '/home/cwitty/sage-2.9.alpha6/local/bin/sage_fortran' -Fa if '-fPIC'  -b 64 > config1.out\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/i486-linux-gnu/4.2.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/i486-linux-gnu/4.2.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: cannot find -lgcc\ncollect2: ld returned 1 exit status\nmake[4]: *** [IRunCComp] Error 1\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/i486-linux-gnu/4.2.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/i486-linux-gnu/4.2.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: cannot find -lgcc\ncollect2: ld returned 1 exit status\nmake[4]: *** [IRunCComp] Error 1\n\n\nUnable to find usable compiler for ICC; abortingMake sure compilers are in your path, and specify good compilers to configure\n(see INSTALL.txt or 'configure --help' for details)\n```\n\n(Note the \"-b 64\" at the beginning of the above, which means to do a 64-bit build.)\n\nAdding \"-b 32\" to the configure line in spkg-install allows the build to proceed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1497\n\n",
+    "created_at": "2007-12-13T23:24:11Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "atlas-3.8.p4.spkg fails to build on Intel Core 2 Duo with 32-bit operating system",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1497",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 I run 32-bit Debian on my Core 2 Duo box.  ATLAS detects the Core 2 Duo and attempts to do a 64-bit build, which fails with errors like this:
@@ -32,10 +42,25 @@ Unable to find usable compiler for ICC; abortingMake sure compilers are in your 
 
 Adding "-b 32" to the configure line in spkg-install allows the build to proceed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1497
+
+
+
+
 
 ---
 
-Comment by jkantor created at 2007-12-14 02:41:26
+archive/issue_comments_009612.json:
+```json
+{
+    "body": "This spkg\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/atlas-3.8.p5.spkg\n\nchecks sizeof(long) (using ctypes) and infers whether the system is 32 or 64 bit.",
+    "created_at": "2007-12-14T02:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1497",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1497#issuecomment-9612",
+    "user": "jkantor"
+}
+```
 
 This spkg
 
@@ -44,15 +69,37 @@ http://sage.math.washington.edu/home/jkantor/spkgs/atlas-3.8.p5.spkg
 checks sizeof(long) (using ctypes) and infers whether the system is 32 or 64 bit.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 04:09:28
+archive/issue_comments_009613.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-14T04:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1497",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1497#issuecomment-9613",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 04:09:28
+archive/issue_comments_009614.json:
+```json
+{
+    "body": "Merged in 2.9.alpha7.",
+    "created_at": "2007-12-14T04:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1497",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1497#issuecomment-9614",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha7.

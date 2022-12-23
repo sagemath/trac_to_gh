@@ -1,11 +1,21 @@
 # Issue 796: Yet another fix for c_lib/scons stuff
 
-Issue created by migration from https://trac.sagemath.org/ticket/796
-
-Original creator: craigcitro
-
-Original creation time: 2007-10-03 00:04:24
-
+archive/issues_000796.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nKeywords: c_lib\n\nThe scons setup was still sub-par, and after some discussion, we've come up with what looks like a good solution. Here's the new system ... first, we reorganize $SAGE_ROOT/devel/sage/c_lib into c_lib/src and c_lib/include,  and removed some cruft in the c_lib directory. We now have two symlinks:\n\n$SAGE_ROOT/local/lib/libcsage.[so|dylib] --> $SAGE_ROOT/devel/sage/c_lib/libcsage.[so|dylib]\n\n$SAGE_ROOT/local/include/csage --> $SAGE_ROOT/devel/sage/c_lib/include\n\nNow we've had to make some changes to spkg-install to get this to work well. In particular, *this patch should not be added until the next release*, because getting it via hg_sage.pull() could break your working sage. \n\nThere are patches for both sage-main and scripts-main attached.\n\nEmail me (craig) if you have any issues with this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/796\n\n",
+    "created_at": "2007-10-03T00:04:24Z",
+    "labels": [
+        "distribution",
+        "minor",
+        "bug"
+    ],
+    "title": "Yet another fix for c_lib/scons stuff",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/796",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 Keywords: c_lib
@@ -22,21 +32,60 @@ There are patches for both sage-main and scripts-main attached.
 
 Email me (craig) if you have any issues with this patch.
 
+Issue created by migration from https://trac.sagemath.org/ticket/796
+
+
+
+
 
 ---
+
+archive/issue_comments_004786.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-03T00:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/796#issuecomment-4786",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2007-10-03 00:06:07
+archive/issue_comments_004787.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-03T00:06:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/796#issuecomment-4787",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-10-04 17:39:31
+archive/issue_comments_004788.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T17:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/796#issuecomment-4788",
+    "user": "was"
+}
+```
 
 Resolution: fixed

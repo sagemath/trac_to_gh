@@ -1,44 +1,115 @@
 # Issue 873: sage -clone is rebuilding everything !
 
-Issue created by migration from https://trac.sagemath.org/ticket/873
-
-Original creator: was
-
-Original creation time: 2007-10-13 05:49:12
-
+archive/issues_000873.json:
+```json
+{
+    "body": "Assignee: was\n\nDoing \"sage -clone foo\" rebuild all the pyx files, which is terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/873\n\n",
+    "created_at": "2007-10-13T05:49:12Z",
+    "labels": [
+        "algebraic geometry",
+        "critical",
+        "bug"
+    ],
+    "title": "sage -clone is rebuilding everything !",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/873",
+    "user": "was"
+}
+```
 Assignee: was
 
 Doing "sage -clone foo" rebuild all the pyx files, which is terrible. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/873
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-13 05:49:17
+archive/issue_comments_005382.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-13T05:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5382",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-10-13 05:49:29
+archive/issue_comments_005383.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to user interface.",
+    "created_at": "2007-10-13T05:49:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5383",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to user interface.
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-13 07:02:26
+archive/issue_comments_005384.json:
+```json
+{
+    "body": "fixes slow \"-clone\" (look for Cython-generated files, not Pyrex)",
+    "created_at": "2007-10-13T07:02:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5384",
+    "user": "cwitty"
+}
+```
 
 fixes slow "-clone" (look for Cython-generated files, not Pyrex)
 
 
+
 ---
+
+archive/issue_comments_005385.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-13T07:02:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5385",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-13 07:14:33
+archive/issue_comments_005386.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T07:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5386",
+    "user": "was"
+}
+```
 
 Resolution: fixed

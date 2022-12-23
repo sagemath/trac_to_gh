@@ -1,26 +1,62 @@
 # Issue 876: Implement or wrap Braid Groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/876
-
-Original creator: robertwb
-
-Original creation time: 2007-10-13 09:03:20
-
+archive/issues_000876.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/876\n\n",
+    "created_at": "2007-10-13T09:03:20Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement or wrap Braid Groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/876",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/876
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2007-10-13 09:03:24
+archive/issue_comments_005416.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2007-10-13T09:03:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5416",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 22:25:12
+archive/issue_comments_005417.json:
+```json
+{
+    "body": "This looks very much like a wish list item. Moved.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T22:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5417",
+    "user": "mabshoff"
+}
+```
 
 This looks very much like a wish list item. Moved.
 
@@ -29,16 +65,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-12-05 22:34:58
+archive/issue_comments_005418.json:
+```json
+{
+    "body": "BTW, in gap_packages there is a GPL'd package called braid that might help here. It was packaged before GPLv3 came out (I actually did the packaging but did not write any of the code).",
+    "created_at": "2008-12-05T22:34:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5418",
+    "user": "wdj"
+}
+```
 
 BTW, in gap_packages there is a GPL'd package called braid that might help here. It was packaged before GPLv3 came out (I actually did the packaging but did not write any of the code).
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-30 05:06:29
+archive/issue_comments_005419.json:
+```json
+{
+    "body": "Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n\n```\n    The packages sonata, guava, factint, gapdoc, grape, design, toric,\n    and laguna are loaded in all cases before the workspace is saved,\n    if they are available.\n```\n\n\n```\n    g = Gap(use_workspace_cache=False, max_workspace_size=None)\n    for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n                'gapdoc', 'grape', 'design', \\\n                'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n        try:\n            g.load_package(pkg, verbose=verbose)\n```\n",
+    "created_at": "2009-12-30T05:06:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5419",
+    "user": "kcrisman"
+}
+```
 
 Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:
 
@@ -60,9 +118,20 @@ Incidentally, apparently the braid package is now autoloaded, though it doesn't 
 
 
 
+
 ---
 
-Comment by wdj created at 2009-12-30 12:21:13
+archive/issue_comments_005420.json:
+```json
+{
+    "body": "Replying to [comment:5 kcrisman]:\n> Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n> {{{\n>     The packages sonata, guava, factint, gapdoc, grape, design, toric,\n>     and laguna are loaded in all cases before the workspace is saved,\n>     if they are available.\n> }}}\n> {{{\n>     g = Gap(use_workspace_cache=False, max_workspace_size=None)\n>     for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n>                 'gapdoc', 'grape', 'design', \\\n>                 'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n>         try:\n>             g.load_package(pkg, verbose=verbose)\n> }}}\n\nI think this problem with HAP was fixed long ago.\n\nAlso, I think I had to repackage braid recently because of some loading problems it had. I don't remember the details. Maybe it was because of a problem with gap 4.4.12 and since we use 4.4.10, it is not an issue?",
+    "created_at": "2009-12-30T12:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5420",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:5 kcrisman]:
 > Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:
@@ -85,29 +154,73 @@ I think this problem with HAP was fixed long ago.
 Also, I think I had to repackage braid recently because of some loading problems it had. I don't remember the details. Maybe it was because of a problem with gap 4.4.12 and since we use 4.4.10, it is not an issue?
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:01:18
+archive/issue_comments_005421.json:
+```json
+{
+    "body": "Looks like this is now much further along at #12339.",
+    "created_at": "2012-07-07T03:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5421",
+    "user": "kcrisman"
+}
+```
 
 Looks like this is now much further along at #12339.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:01:18
+archive/issue_comments_005422.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-07-07T03:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5422",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:01:25
+archive/issue_comments_005423.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-07-07T03:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5423",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-17 08:34:38
+archive/issue_comments_005424.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-07-17T08:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/876",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5424",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

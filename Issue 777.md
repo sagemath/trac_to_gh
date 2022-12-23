@@ -1,11 +1,21 @@
 # Issue 777: sign function
 
-Issue created by migration from https://trac.sagemath.org/ticket/777
-
-Original creator: kedlaya
-
-Original creation time: 2007-10-02 00:40:40
-
+archive/issues_000777.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  mhansen\n\nKeywords: sign\n\nShould the following function exist globally?\n\n```\ndef sign(x):\n    if x > 0:\n        return 1\n    if x < 0:\n        return -1\n    return 0\n```\n\nI'm not sure if this is identical to\n\n```\ndef sign(x):\n    return x.__cmp__(0)\n```\n\nI'm also ambivalent as to whether this function is called \"sign\", \"signum\", or \"sgn\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/777\n\n",
+    "created_at": "2007-10-02T00:40:40Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "sign function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/777",
+    "user": "kedlaya"
+}
+```
 Assignee: somebody
 
 CC:  mhansen
@@ -32,17 +42,43 @@ def sign(x):
 
 I'm also ambivalent as to whether this function is called "sign", "signum", or "sgn".
 
+Issue created by migration from https://trac.sagemath.org/ticket/777
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-08-26 15:16:31
+archive/issue_comments_004637.json:
+```json
+{
+    "body": "To release manager: note that this should be closed - see comment in #6803.",
+    "created_at": "2009-08-26T15:16:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4637",
+    "user": "kcrisman"
+}
+```
 
 To release manager: note that this should be closed - see comment in #6803.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-10 15:31:13
+archive/issue_comments_004638.json:
+```json
+{
+    "body": "To clarify: we already have:\n\n```\nsage: sgn(1)\n1\nsage: sgn(-4)\n-1\n```\n\nso this ticket should be closed, presumably as a duplicate.",
+    "created_at": "2009-11-10T15:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4638",
+    "user": "kcrisman"
+}
+```
 
 To clarify: we already have:
 
@@ -56,8 +92,19 @@ sage: sgn(-4)
 so this ticket should be closed, presumably as a duplicate.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-10 16:17:40
+archive/issue_comments_004639.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-11-10T16:17:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4639",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid

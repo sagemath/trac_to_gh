@@ -1,11 +1,21 @@
 # Issue 1382: conversion of sage matrices to mathematica is just completely totally broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/1382
-
-Original creator: was
-
-Original creation time: 2007-12-03 17:09:37
-
+archive/issues_001382.json:
+```json
+{
+    "body": "Assignee: was\n\nWe have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\n\nbut we should have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
+    "created_at": "2007-12-03T17:09:37Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "conversion of sage matrices to mathematica is just completely totally broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1382",
+    "user": "was"
+}
+```
 Assignee: was
 
 We have
@@ -31,49 +41,151 @@ sage: n._mathematica_init_()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1382
+
+
+
+
 
 ---
+
+archive/issue_comments_008859.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-16T23:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8859",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008860.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-16T23:58:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8860",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008861.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T00:01:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8861",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008862.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T00:21:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8862",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-02-17 00:31:35
+archive/issue_comments_008863.json:
+```json
+{
+    "body": "Changing assignee from was to TimothyClemans.",
+    "created_at": "2008-02-17T00:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8863",
+    "user": "TimothyClemans"
+}
+```
 
 Changing assignee from was to TimothyClemans.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-02-17 00:31:35
+archive/issue_comments_008864.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-17T00:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8864",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_008865.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T01:13:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8865",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-17 01:13:40
+archive/issue_comments_008866.json:
+```json
+{
+    "body": "This will not work, since it does not appear to be recursive.  For example:\n\n\n```\nsage: var('x, y, z, b')\n(x, y, z, b)\nsage: f = sin(x^2) + y^z\nsage: f\ny^z + sin(x^2)\nsage: f._mathematica_init_()\n'(Sin[(x) ^ (2)]) + ((y) ^ (z))'\nsage: M = matrix(1, 2, [f, f^2]); M\n[    y^z + sin(x^2) (y^z + sin(x^2))^2]\n```\n\n\nAlso, please post a unified patch making it easy to see just the total changes.",
+    "created_at": "2008-02-17T01:13:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8866",
+    "user": "ncalexan"
+}
+```
 
 This will not work, since it does not appear to be recursive.  For example:
 
@@ -94,30 +206,78 @@ sage: M = matrix(1, 2, [f, f^2]); M
 Also, please post a unified patch making it easy to see just the total changes.
 
 
+
 ---
+
+archive/issue_comments_008867.json:
+```json
+{
+    "body": "Attachment\n\n(this one by William and Timothy) apply this patch right after applying 1382_2.patch",
+    "created_at": "2008-02-23T00:57:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8867",
+    "user": "was"
+}
+```
 
 Attachment
 
 (this one by William and Timothy) apply this patch right after applying 1382_2.patch
 
 
+
 ---
+
+archive/issue_comments_008868.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-23T00:57:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8868",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-23 01:04:43
+archive/issue_comments_008869.json:
+```json
+{
+    "body": "Patch looks good, I say apply.\n\nIs _mathematica_init_ guaranteed not to require Mathematica?  If not, some more doctests need to be declared optional.  Otherwise, looks good.",
+    "created_at": "2008-02-23T01:04:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8869",
+    "user": "ncalexan"
+}
+```
 
 Patch looks good, I say apply.
 
 Is _mathematica_init_ guaranteed not to require Mathematica?  If not, some more doctests need to be declared optional.  Otherwise, looks good.
 
 
+
 ---
 
-Comment by was created at 2008-02-23 01:06:52
+archive/issue_comments_008870.json:
+```json
+{
+    "body": "> Is _mathematica_init_ guaranteed not to require Mathematica? \n\nYes.  It returns a string is must not call Mathematica. \n\nWilliam",
+    "created_at": "2008-02-23T01:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8870",
+    "user": "was"
+}
+```
 
 > Is _mathematica_init_ guaranteed not to require Mathematica? 
 
@@ -126,37 +286,81 @@ Yes.  It returns a string is must not call Mathematica.
 William
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 19:59:57
+archive/issue_comments_008871.json:
+```json
+{
+    "body": "Somebody ought to clue be in \n\n* which patches to apply in which order (the comments are unclear)\n* if all problems regarding optional doctests are solved, i.e. the last comment by William\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T19:59:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8871",
+    "user": "mabshoff"
+}
+```
 
 Somebody ought to clue be in 
 
- * which patches to apply in which order (the comments are unclear)
- * if all problems regarding optional doctests are solved, i.e. the last comment by William
+* which patches to apply in which order (the comments are unclear)
+* if all problems regarding optional doctests are solved, i.e. the last comment by William
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-24 20:39:37
+archive/issue_comments_008872.json:
+```json
+{
+    "body": "Michael.  Apply 1382_2.patch then 1382_5-part2of2.patch.  And the comment about optional is not applicable since _mathematica_init_ should never depend on mathematica.",
+    "created_at": "2008-02-24T20:39:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8872",
+    "user": "was"
+}
+```
 
 Michael.  Apply 1382_2.patch then 1382_5-part2of2.patch.  And the comment about optional is not applicable since _mathematica_init_ should never depend on mathematica.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-02-24 20:48:27
+archive/issue_comments_008873.json:
+```json
+{
+    "body": "William's patch seems to be editing 1382_5.patch. task_1832_2.patch depends on ticket_1382.patch and it doesn't have lines like \"return mathematica.mathematica(tuple(self))\" which are in 1382_5.patch and show up in red on http://trac.sagemath.org/sage_trac/attachment/ticket/1382/1382_5-part2of2.patch",
+    "created_at": "2008-02-24T20:48:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8873",
+    "user": "TimothyClemans"
+}
+```
 
 William's patch seems to be editing 1382_5.patch. task_1832_2.patch depends on ticket_1382.patch and it doesn't have lines like "return mathematica.mathematica(tuple(self))" which are in 1382_5.patch and show up in red on http://trac.sagemath.org/sage_trac/attachment/ticket/1382/1382_5-part2of2.patch
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 21:05:12
+archive/issue_comments_008874.json:
+```json
+{
+    "body": "The patches at this ticket are a mess either way: For task_1832_2.patch I need to ticket_1382.patch. But at that point 1382_5-part2of2.patch doesn't apply cleanly. So, in conclusion: Please post a single patch that has all the changes and that applies cleanly against 2.10.2. To do that merge the fixes back by hand, do not just post a bundle with all patches applied. \n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T21:05:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8874",
+    "user": "mabshoff"
+}
+```
 
 The patches at this ticket are a mess either way: For task_1832_2.patch I need to ticket_1382.patch. But at that point 1382_5-part2of2.patch doesn't apply cleanly. So, in conclusion: Please post a single patch that has all the changes and that applies cleanly against 2.10.2. To do that merge the fixes back by hand, do not just post a bundle with all patches applied. 
 
@@ -165,29 +369,62 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-24 21:13:31
+archive/issue_comments_008875.json:
+```json
+{
+    "body": "I made a typo.  Simply apply \n\n* 1382_5.patch\n* 1382_5-part2of2.patch. \n\nThat's it.  2 patches.   They should not be flattened. \n\nWilliam",
+    "created_at": "2008-02-24T21:13:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8875",
+    "user": "was"
+}
+```
 
 I made a typo.  Simply apply 
 
-  * 1382_5.patch
-  * 1382_5-part2of2.patch. 
+* 1382_5.patch
+* 1382_5-part2of2.patch. 
 
 That's it.  2 patches.   They should not be flattened. 
 
 William
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 21:25:13
+archive/issue_comments_008876.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-24T21:25:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8876",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 21:25:13
+archive/issue_comments_008877.json:
+```json
+{
+    "body": "Merged 1382_5.patch and 1382_5-part2of2.patch in Sage 2.10.3.alpha0. Thanks William for the clarification.",
+    "created_at": "2008-02-24T21:25:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8877",
+    "user": "mabshoff"
+}
+```
 
 Merged 1382_5.patch and 1382_5-part2of2.patch in Sage 2.10.3.alpha0. Thanks William for the clarification.

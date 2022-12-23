@@ -1,11 +1,21 @@
 # Issue 648: memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)
 
-Issue created by migration from https://trac.sagemath.org/ticket/648
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-13 16:01:00
-
+archive/issues_000648.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nHello folks,\n\nmatrix_integer_dense.pyx, lines 2190-2202:\n\n```\n##########################################################\n# Setup the c-library and GMP random number generators.\n# seed it when module is loaded.\nfrom random import randrange\ncdef extern from \"stdlib.h\":\n    long random()\n    void srandom(unsigned int seed)\nk = randrange(0,Integer(2)**(32))\nsrandom(k)\n\ncdef gmp_randstate_t state\ngmp_randinit_mt(state)\ngmp_randseed_ui(state,k)\n```\n\n\nSo in this particular case we actually seed the random number\ngenerator with a random value. Now my questions:\n\na) Why do we need randomness here?\nb) Why don't we use the global seed? \n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/5fe050ae9a2dc373/\n\nIssue created by migration from https://trac.sagemath.org/ticket/648\n\n",
+    "created_at": "2007-09-13T16:01:00Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/648",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Hello folks,
@@ -37,10 +47,25 @@ b) Why don't we use the global seed?
 
 See also http://groups.google.com/group/sage-devel/browse_thread/thread/5fe050ae9a2dc373/
 
+Issue created by migration from https://trac.sagemath.org/ticket/648
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-15 00:09:36
+archive/issue_comments_003367.json:
+```json
+{
+    "body": "Okay, there is a patch for this at\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-remove-unneeded-gmp_randinit_mt.patch\n\nWith the patch Sage startup + quit leads to\n\n```\n==30873== LEAK SUMMARY:\n==30873==    definitely lost: 0 bytes in 0 blocks.\n==30873==      possibly lost: 277,574 bytes in 776 blocks.\n==30873==    still reachable: 136,202,587 bytes in 17,438 blocks.\n==30873==         suppressed: 0 bytes in 0 blocks.\n```\n\n\n./sage -testall passes.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-15T00:09:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/648#issuecomment-3367",
+    "user": "mabshoff"
+}
+```
 
 Okay, there is a patch for this at
 
@@ -64,15 +89,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-15 00:09:36
+archive/issue_comments_003368.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-15T00:09:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/648#issuecomment-3368",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-09-15 00:21:23
+archive/issue_comments_003369.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-15T00:21:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/648#issuecomment-3369",
+    "user": "was"
+}
+```
 
 Resolution: fixed

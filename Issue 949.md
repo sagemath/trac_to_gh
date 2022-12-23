@@ -1,11 +1,21 @@
 # Issue 949: "sage -f" fails to install packages when given an absolute path
 
-Issue created by migration from https://trac.sagemath.org/ticket/949
-
-Original creator: cwitty
-
-Original creation time: 2007-10-20 19:52:36
-
+archive/issues_000949.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen you run this command:\n\n```\ncwitty@magnetar:~/my-sage$ ~/sage/sage -f ~/spkg/mercurial-0.9.5.spkg \n```\n\n\nthe output includes this line:\n\n```\n/home/cwitty/sage/local/bin/sage-spkg: file /home/cwitty/my-sage//home/cwitty/spkg/mercurial-0.9.5.spkg does not exist\n```\n\n\nshowing that \"sage -f\" does some sort of \"convert relative filename to absolute\", but does the operation even if the path is already absolute.\n\nIssue created by migration from https://trac.sagemath.org/ticket/949\n\n",
+    "created_at": "2007-10-20T19:52:36Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "\"sage -f\" fails to install packages when given an absolute path",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/949",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 When you run this command:
@@ -24,21 +34,60 @@ the output includes this line:
 
 showing that "sage -f" does some sort of "convert relative filename to absolute", but does the operation even if the path is already absolute.
 
+Issue created by migration from https://trac.sagemath.org/ticket/949
+
+
+
+
 
 ---
+
+archive/issue_comments_005793.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-20T21:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/949#issuecomment-5793",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-20 21:45:21
+archive/issue_comments_005794.json:
+```json
+{
+    "body": "Simple patch: just don't prefix the filename with the current directory if it already starts with a slash.",
+    "created_at": "2007-10-20T21:45:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/949#issuecomment-5794",
+    "user": "cwitty"
+}
+```
 
 Simple patch: just don't prefix the filename with the current directory if it already starts with a slash.
 
 
+
 ---
 
-Comment by was created at 2007-10-20 22:30:46
+archive/issue_comments_005795.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-20T22:30:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/949#issuecomment-5795",
+    "user": "was"
+}
+```
 
 Resolution: fixed

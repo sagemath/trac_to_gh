@@ -1,11 +1,21 @@
 # Issue 1406: bug in coercion of multivariate polynomials (possibly libsingular related)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1406
-
-Original creator: was
-
-Original creation time: 2007-12-06 04:00:21
-
+archive/issues_001406.json:
+```json
+{
+    "body": "Assignee: somebody\n\nReducing a polynomial to the libsingular polynomials to GF(p^n) is buggy as the following examples all illustrate. \n\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(5)[]\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = GF(25,'a')[]\nsage: S(5*x*y + x + 17*y)\n0*xx*yy + xx + 2*yy\nsage: type(S(5*x*y + x + 17*y))\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: R.<x,y> = ZZ[]\nsage: S.<xx,yy> = Integers(5)[]\nsage: S(5*x*y + x + 17*y)\nxx + 2*yy\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1406\n\n",
+    "created_at": "2007-12-06T04:00:21Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in coercion of multivariate polynomials (possibly libsingular related)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1406",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Reducing a polynomial to the libsingular polynomials to GF(p^n) is buggy as the following examples all illustrate. 
@@ -31,59 +41,155 @@ xx + 2*yy
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1406
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-12-06 06:12:44
+archive/issue_comments_009070.json:
+```json
+{
+    "body": "I have a fix for this, but it causes a segfault in the testing of multi_polynomial_ideal.py .\n\n--Mike",
+    "created_at": "2007-12-06T06:12:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9070",
+    "user": "mhansen"
+}
+```
 
 I have a fix for this, but it causes a segfault in the testing of multi_polynomial_ideal.py .
 
 --Mike
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 06:12:44
+archive/issue_comments_009071.json:
+```json
+{
+    "body": "Changing assignee from somebody to mhansen.",
+    "created_at": "2007-12-06T06:12:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9071",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from somebody to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 06:12:44
+archive/issue_comments_009072.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-06T06:12:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9072",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_009073.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-06T08:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9073",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_009074.json:
+```json
+{
+    "body": "Attachment\n\nThis is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.",
+    "created_at": "2007-12-06T15:55:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9074",
+    "user": "was"
+}
+```
 
 Attachment
 
 This is a -- I think -- better version of the 1406.patch that mhansen attached -- use it instead.
 
 
+
 ---
 
-Comment by was created at 2007-12-06 16:00:48
+archive/issue_comments_009075.json:
+```json
+{
+    "body": "Bonus -- my patch doesn't cause segfaults in multi_polynomial_ideal.py... I think.",
+    "created_at": "2007-12-06T16:00:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9075",
+    "user": "was"
+}
+```
 
 Bonus -- my patch doesn't cause segfaults in multi_polynomial_ideal.py... I think.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 19:48:30
+archive/issue_comments_009076.json:
+```json
+{
+    "body": "Actually, it turns out that that segfault was there all along (with or without the patch).  See #1409 .",
+    "created_at": "2007-12-06T19:48:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9076",
+    "user": "mhansen"
+}
+```
 
 Actually, it turns out that that segfault was there all along (with or without the patch).  See #1409 .
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 20:46:27
+archive/issue_comments_009077.json:
+```json
+{
+    "body": "Ok, looks good to me, merging William's patch.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-06T20:46:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9077",
+    "user": "mabshoff"
+}
+```
 
 Ok, looks good to me, merging William's patch.
 
@@ -92,15 +198,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 20:48:03
+archive/issue_comments_009078.json:
+```json
+{
+    "body": "Merged in 2.9.alpha1.",
+    "created_at": "2007-12-06T20:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9078",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha1.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-06 20:48:03
+archive/issue_comments_009079.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-06T20:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1406#issuecomment-9079",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

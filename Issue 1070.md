@@ -1,11 +1,21 @@
 # Issue 1070: the build system should rebuild Cython modules if the static libraries they depend on change
 
-Issue created by migration from https://trac.sagemath.org/ticket/1070
-
-Original creator: cwitty
-
-Original creation time: 2007-11-02 21:35:57
-
+archive/issues_001070.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  craigcitro\n\nFor instance, if local/lib/libmpfi.a changes, then sage/rings/real_mpfi.pyx should be rebuilt.  \n\nMost of the information to do this is in setup.py; the missing piece is knowing which libraries are static-only, which can presumably be determined by looking in local/lib/ for libraries with \".a\" files and without corresponding \".so\" files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1070\n\n",
+    "created_at": "2007-11-02T21:35:57Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "the build system should rebuild Cython modules if the static libraries they depend on change",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1070",
+    "user": "cwitty"
+}
+```
 Assignee: cwitty
 
 CC:  craigcitro
@@ -14,10 +24,25 @@ For instance, if local/lib/libmpfi.a changes, then sage/rings/real_mpfi.pyx shou
 
 Most of the information to do this is in setup.py; the missing piece is knowing which libraries are static-only, which can presumably be determined by looking in local/lib/ for libraries with ".a" files and without corresponding ".so" files.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1070
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-17 14:28:44
+archive/issue_comments_006484.json:
+```json
+{
+    "body": "This has been fixed during Sage 3.2 or so with the new build system. For example the following change makes the ecm extension depend on libecm.a:\n\n```\n--- a/module_list.py    Tue Dec 16 16:52:43 2008 +0000\n+++ b/module_list.py    Wed Dec 17 06:23:47 2008 -0800\n@@ -339,7 +339,8 @@\n     \n     Extension('sage.libs.libecm',\n               sources = ['sage/libs/libecm.pyx'],\n-              libraries = ['ecm', 'gmp']),\n+              libraries = ['ecm', 'gmp'],\n+              depends = [SAGE_ROOT + \"/local/lib/libecm.a\"]),\n      \n     Extension('sage.libs.mwrank.mwrank',\n               sources = [\"sage/libs/mwrank/mwrank.pyx\",\n```\n\nTouching libecm.a now leads to a rebuild of the ecm extension.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T14:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1070#issuecomment-6484",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed during Sage 3.2 or so with the new build system. For example the following change makes the ecm extension depend on libecm.a:
 
@@ -43,8 +68,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 14:28:44
+archive/issue_comments_006485.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-17T14:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1070#issuecomment-6485",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

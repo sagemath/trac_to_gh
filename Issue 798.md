@@ -1,11 +1,21 @@
 # Issue 798: [with patch] MPolynomial_libsingular.subs
 
-Issue created by migration from https://trac.sagemath.org/ticket/798
-
-Original creator: malb
-
-Original creation time: 2007-10-03 03:04:29
-
+archive/issues_000798.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis used to be broken:\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(2),3)\nsage: f = x + y + 1\nsage: f.subs(x=y+1)\n0 # used to return 1\n```\n\nthe attached two patches fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/798\n\n",
+    "created_at": "2007-10-03T03:04:29Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] MPolynomial_libsingular.subs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/798",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 This used to be broken:
@@ -19,14 +29,42 @@ sage: f.subs(x=y+1)
 
 the attached two patches fixes this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/798
+
+
+
+
 
 ---
+
+archive/issue_comments_004817.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-03T03:04:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/798#issuecomment-4817",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-04 18:11:40
+archive/issue_comments_004818.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T18:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/798#issuecomment-4818",
+    "user": "was"
+}
+```
 
 Resolution: fixed

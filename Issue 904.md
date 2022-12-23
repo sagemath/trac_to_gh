@@ -1,26 +1,64 @@
 # Issue 904: [with patch] graphs: clique-testing
 
-Issue created by migration from https://trac.sagemath.org/ticket/904
-
-Original creator: jason
-
-Original creation time: 2007-10-15 22:19:21
-
+archive/issues_000904.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: graphs\n\nThis adds is_clique and is_indendent_set functions to undirected graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/904\n\n",
+    "created_at": "2007-10-15T22:19:21Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] graphs: clique-testing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/904",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Keywords: graphs
 
 This adds is_clique and is_indendent_set functions to undirected graphs.
 
+Issue created by migration from https://trac.sagemath.org/ticket/904
+
+
+
+
 
 ---
+
+archive/issue_comments_005566.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-15T22:19:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5566",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2007-10-17 16:11:38
+archive/issue_comments_005567.json:
+```json
+{
+    "body": "Updated patch clique_ind_set-2.patch.  Apply this instead of the first patch.\n\nThis adds an option to the is_clique to check if it is a directed clique (i.e., edges in each direction exist) in the case the graph is a directed graph.  This patch also puts both functions into GeneralGraph to make them available to directed graphs.  It also deletes the (now redundant) independent_set function in GeneralGraph.\n\nThis functionality now gives us the Combinatorica EmptyQ and CompleteQ functions, as well as the CliqueQ and IndependentSetQ functions.",
+    "created_at": "2007-10-17T16:11:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5567",
+    "user": "jason"
+}
+```
 
 Updated patch clique_ind_set-2.patch.  Apply this instead of the first patch.
 
@@ -29,29 +67,75 @@ This adds an option to the is_clique to check if it is a directed clique (i.e., 
 This functionality now gives us the Combinatorica EmptyQ and CompleteQ functions, as well as the CliqueQ and IndependentSetQ functions.
 
 
+
 ---
+
+archive/issue_comments_005568.json:
+```json
+{
+    "body": "Attachment\n\nReplaces the first patch above.",
+    "created_at": "2007-10-17T16:12:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5568",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Replaces the first patch above.
 
 
+
 ---
 
-Comment by rlm created at 2007-10-21 04:31:24
+archive/issue_comments_005569.json:
+```json
+{
+    "body": "This patch looks ready for inclusion. Jason -- do you notice any other functions that could be moved to GeneralGraph?",
+    "created_at": "2007-10-21T04:31:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5569",
+    "user": "rlm"
+}
+```
 
 This patch looks ready for inclusion. Jason -- do you notice any other functions that could be moved to GeneralGraph?
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 22:17:43
+archive/issue_comments_005570.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-23T22:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5570",
+    "user": "malb"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 22:17:43
+archive/issue_comments_005571.json:
+```json
+{
+    "body": "merged into 2.8.9.alpha0",
+    "created_at": "2007-10-23T22:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5571",
+    "user": "malb"
+}
+```
 
 merged into 2.8.9.alpha0

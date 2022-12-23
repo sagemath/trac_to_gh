@@ -1,25 +1,61 @@
 # Issue 687: Wrap libSINGULAR's quotient ring implementation
 
-Issue created by migration from https://trac.sagemath.org/ticket/687
-
-Original creator: malb
-
-Original creation time: 2007-09-18 12:45:56
-
+archive/issues_000687.json:
+```json
+{
+    "body": "Assignee: somebody\n\ntitle should say it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/687\n\n",
+    "created_at": "2007-09-18T12:45:56Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "Wrap libSINGULAR's quotient ring implementation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/687",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 title should say it all.
 
+Issue created by migration from https://trac.sagemath.org/ticket/687
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-10-21 22:51:49
+archive/issue_comments_003578.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-21T22:51:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/687",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/687#issuecomment-3578",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2007-10-21 22:51:49
+archive/issue_comments_003579.json:
+```json
+{
+    "body": "Changing assignee from somebody to malb.",
+    "created_at": "2007-10-21T22:51:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/687",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/687#issuecomment-3579",
+    "user": "malb"
+}
+```
 
 Changing assignee from somebody to malb.

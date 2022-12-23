@@ -1,11 +1,21 @@
 # Issue 1848: Elliptic curve Sha an documentation misleading about proof
 
-Issue created by migration from https://trac.sagemath.org/ticket/1848
-
-Original creator: was
-
-Original creation time: 2008-01-19 12:51:26
-
+archive/issues_001848.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\nThe sha an function:\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\nsage: Sha.an()\n1    \n```\n\nhas help that at the beginning misleadingly suggests that it is provably correct when the analytic rank is 1.  Looking at the code, it is clear that currently it is not provably correct except when the rank is 0 and a Manin constant hypothesis holds (which does hold for Cremona's curves). \n\nFix: \n1. Have a proof=False flag that keeps the current implementation\n2. Have a proof=True flag that fails if the Manin constant isn't known by a theorem to be <=2, and which runs new provably correct code in the case of analytic rank 1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1848\n\n",
+    "created_at": "2008-01-19T12:51:26Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Elliptic curve Sha an documentation misleading about proof",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1848",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  cremona
@@ -23,19 +33,45 @@ sage: Sha.an()
 has help that at the beginning misleadingly suggests that it is provably correct when the analytic rank is 1.  Looking at the code, it is clear that currently it is not provably correct except when the rank is 0 and a Manin constant hypothesis holds (which does hold for Cremona's curves). 
 
 Fix: 
-   1. Have a proof=False flag that keeps the current implementation
-   2. Have a proof=True flag that fails if the Manin constant isn't known by a theorem to be <=2, and which runs new provably correct code in the case of analytic rank 1. 
+1. Have a proof=False flag that keeps the current implementation
+2. Have a proof=True flag that fails if the Manin constant isn't known by a theorem to be <=2, and which runs new provably correct code in the case of analytic rank 1. 
+
+Issue created by migration from https://trac.sagemath.org/ticket/1848
+
+
+
 
 
 ---
 
-Comment by was created at 2008-01-19 12:51:33
+archive/issue_comments_011694.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-19T12:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11694",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:46:45
+archive/issue_comments_011695.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2009-07-20T19:46:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11695",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to elliptic curves.

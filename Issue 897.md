@@ -1,11 +1,21 @@
 # Issue 897: number_of_partitions -- now broken on OS X PPC
 
-Issue created by migration from https://trac.sagemath.org/ticket/897
-
-Original creator: was
-
-Original creation time: 2007-10-14 20:35:28
-
+archive/issues_000897.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  sage-combinat\n\nOn OS X PPC with the new number_of_partitions optimized code:\n\n\n```\nfermat:~/sage-2.8.7.rc1 was$ ./sage -t  devel/sage-main/sage/combinat/combinat.py\nsage -t  devel/sage-main/sage/combinat/combinat.py          *******************************************\n***************************  \nFile \"combinat.py\", line 1843:\n    sage: number_of_partitions(100000)\nExpected:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366\n2159015784477429624894049306307020046179276449303351011607934245719015571894350972531246610845200636955\n8934464248716828789832182345009262853831404597021307130674510624419227311238999702284408609370935531629\n697851569569892196108480158600569421098519\nGot:\n    274935105697756965126775163209863526881734293159800547582031259843021473281149641730550507416607366\n2159015784477429624894049306307020046179276449303351011607934245719015571894350972531246610845200636955\n8934464248716828789832182345009262853831404597021307130674510624419227311238999702284408609370935531629\n697851569569892196108480158600569420104082\n**********************************************************************\nFile \"combinat.py\", line 1867:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"combinat.py\", line 1870:\n    sage: number_of_partitions( n - (n % 385) + 369) % 385 == 0\nExpected:\n    True\nGot:\n    False\n\n```\n\n\nThe code works on everything else, i.e., all x86 machines. \n\nIssue created by migration from https://trac.sagemath.org/ticket/897\n\n",
+    "created_at": "2007-10-14T20:35:28Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "number_of_partitions -- now broken on OS X PPC",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/897",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  sage-combinat
@@ -49,32 +59,80 @@ Got:
 
 The code works on everything else, i.e., all x86 machines. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/897
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-14 20:35:54
+archive/issue_comments_005520.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2007-10-14T20:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/897",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/897#issuecomment-5520",
+    "user": "was"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by was created at 2007-10-14 22:53:55
+archive/issue_comments_005521.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-14T22:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/897",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/897#issuecomment-5521",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-10-14 22:53:55
+archive/issue_comments_005522.json:
+```json
+{
+    "body": "It was always broken on OS X!\n\nAnyway, I've patched this up for the release, but more work needs to be done...",
+    "created_at": "2007-10-14T22:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/897",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/897#issuecomment-5522",
+    "user": "was"
+}
+```
 
 It was always broken on OS X!
 
 Anyway, I've patched this up for the release, but more work needs to be done...
 
 
+
 ---
 
-Comment by was created at 2007-10-15 00:33:34
+archive/issue_comments_005523.json:
+```json
+{
+    "body": "ok, everything is all fixed for sage-2.8.7.",
+    "created_at": "2007-10-15T00:33:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/897",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/897#issuecomment-5523",
+    "user": "was"
+}
+```
 
 ok, everything is all fixed for sage-2.8.7.

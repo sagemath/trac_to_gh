@@ -1,35 +1,84 @@
 # Issue 1032: [with patch] Latex'ing variable names is more robust and consistent.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1032
-
-Original creator: jbmohler
-
-Original creation time: 2007-10-29 20:47:42
-
+archive/issues_001032.json:
+```json
+{
+    "body": "Assignee: was\n\nI've refined the latex_variable_name function and called it a few more places to make latex'ing much much better.\n\nPatch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1032\n\n",
+    "created_at": "2007-10-29T20:47:42Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] Latex'ing variable names is more robust and consistent.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1032",
+    "user": "jbmohler"
+}
+```
 Assignee: was
 
 I've refined the latex_variable_name function and called it a few more places to make latex'ing much much better.
 
 Patch attached.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1032
+
+
+
+
 
 ---
+
+archive/issue_comments_006301.json:
+```json
+{
+    "body": "Attachment\n\nthe patch",
+    "created_at": "2007-10-29T20:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6301",
+    "user": "jbmohler"
+}
+```
 
 Attachment
 
 the patch
 
 
+
 ---
 
-Comment by was created at 2007-10-29 21:17:31
+archive/issue_comments_006302.json:
+```json
+{
+    "body": "Please not my worry on sage-devel about maybe this causing problems with singular...",
+    "created_at": "2007-10-29T21:17:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6302",
+    "user": "was"
+}
+```
 
 Please not my worry on sage-devel about maybe this causing problems with singular...
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 22:07:53
+archive/issue_comments_006303.json:
+```json
+{
+    "body": "See http://groups.google.com/group/sage-devel/t/89472eb36248053a to be exact.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T22:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6303",
+    "user": "mabshoff"
+}
+```
 
 See http://groups.google.com/group/sage-devel/t/89472eb36248053a to be exact.
 
@@ -38,9 +87,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jbmohler created at 2007-10-31 15:23:42
+archive/issue_comments_006304.json:
+```json
+{
+    "body": "Towards the bottom of the thread linked by mabshoff, I believe we have William's approval for this patch.\n\nI've personally tested that singular, gp, maxima, and gap all appear to support '_'s in identifiers in their own interpreted languages.  I wanted to do some more extensive tests, but it wasn't quite as easy as I first thought it might be and now that I've tested each of their interpreted languages, I think such further testing does not hold much value.\n\nHence, I think this patch is good to be included (of course, I expect you to be suspicious of that statement -- since I'm the author of the patch!)",
+    "created_at": "2007-10-31T15:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6304",
+    "user": "jbmohler"
+}
+```
 
 Towards the bottom of the thread linked by mabshoff, I believe we have William's approval for this patch.
 
@@ -49,23 +109,56 @@ I've personally tested that singular, gp, maxima, and gap all appear to support 
 Hence, I think this patch is good to be included (of course, I expect you to be suspicious of that statement -- since I'm the author of the patch!)
 
 
+
 ---
 
-Comment by was created at 2007-11-01 19:49:12
+archive/issue_comments_006305.json:
+```json
+{
+    "body": "I think this is fine to go in.",
+    "created_at": "2007-11-01T19:49:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6305",
+    "user": "was"
+}
+```
 
 I think this is fine to go in.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 23:26:31
+archive/issue_comments_006306.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T23:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6306",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 23:26:31
+archive/issue_comments_006307.json:
+```json
+{
+    "body": "applied to 2.8.11.rc1 - I might have misunderstood some of the discussion, sorry.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-01T23:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6307",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.rc1 - I might have misunderstood some of the discussion, sorry.
 
@@ -74,16 +167,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-11-02 00:50:31
+archive/issue_comments_006308.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-11-02T00:50:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6308",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by was created at 2007-11-02 00:50:31
+archive/issue_comments_006309.json:
+```json
+{
+    "body": "This breaks a treasured old behavior:\n\n\n```\n17:48 < mabshoff> Stuff like\n17:48 < mabshoff> File \"polynomial_ring.py\", line 383:\n17:48 < mabshoff>     sage: latex(S)\n17:48 < mabshoff> Expected:\n17:48 < mabshoff>     \\mathbf{Z}[\\alpha_{12}]\n17:48 < mabshoff> Got:\n17:48 < mabshoff>     \\mathbf{Z}[\\text{alpha12}]\n17:48 < mabshoff> Should I just fix those?\n17:48 < wstein> Hey, \\mathbf{Z}[\\text{alpha12}] is pretty damned LAME imho.\n17:48 < mabshoff> Nope, they actually look wrong.\n17:48 < wstein> So joel got rid of the nice behavior that used to be there?\n17:49 < wstein> That's stupid.\n17:49 < wstein> Reject it.\n17:49 < mabshoff> back it out?\n17:49 < wstein> I'm ok with allowing alpha_12, but I don't agree with *forcing* the use \n                of underscores for subscripts.\n17:49 < wstein> The latex form of alpha12 can't have any meaning except $\\alpha_{12}$.\n17:49 < wstein> Yes, I would back it out.\n17:49 < wstein> That's annoying.\n\n```\n",
+    "created_at": "2007-11-02T00:50:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6309",
+    "user": "was"
+}
+```
 
 This breaks a treasured old behavior:
 
@@ -113,16 +228,38 @@ This breaks a treasured old behavior:
 
 
 
+
 ---
 
-Comment by was created at 2007-11-02 00:50:31
+archive/issue_comments_006310.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-11-02T00:50:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6310",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by jbmohler created at 2007-11-02 11:47:31
+archive/issue_comments_006311.json:
+```json
+{
+    "body": "I disagree with the doc-tests above\n\nExhibit A (vanilla 2.8.10):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\text{alpha12}]\n```\n\n\nExhibit B (my patched version):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: latex\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\alpha_{12}]\n```\n",
+    "created_at": "2007-11-02T11:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6311",
+    "user": "jbmohler"
+}
+```
 
 I disagree with the doc-tests above
 
@@ -152,31 +289,77 @@ sage: latex(P)
 
 
 
+
 ---
+
+archive/issue_comments_006312.json:
+```json
+{
+    "body": "Attachment\n\nthe second patch (needed since hg already says the first patch is in)",
+    "created_at": "2007-11-02T18:38:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6312",
+    "user": "jbmohler"
+}
+```
 
 Attachment
 
 the second patch (needed since hg already says the first patch is in)
 
 
+
 ---
 
-Comment by jbmohler created at 2007-11-02 18:40:29
+archive/issue_comments_006313.json:
+```json
+{
+    "body": "The second patch is just the first patch rehashed because the first patch is already in the tree and hg won't reimport.  There are no other differences.\n\nIt unbundles and passes all doc-tests against 2.8.11.rc1",
+    "created_at": "2007-11-02T18:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6313",
+    "user": "jbmohler"
+}
+```
 
 The second patch is just the first patch rehashed because the first patch is already in the tree and hg won't reimport.  There are no other differences.
 
 It unbundles and passes all doc-tests against 2.8.11.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 19:37:14
+archive/issue_comments_006314.json:
+```json
+{
+    "body": "applied to 2.8.11.rc2.",
+    "created_at": "2007-11-02T19:37:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6314",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.rc2.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 19:37:14
+archive/issue_comments_006315.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-02T19:37:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6315",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

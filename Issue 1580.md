@@ -1,11 +1,21 @@
 # Issue 1580: notebook shows graphics out of order
 
-Issue created by migration from https://trac.sagemath.org/ticket/1580
-
-Original creator: jason
-
-Original creation time: 2007-12-21 08:44:06
-
+archive/issues_001580.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(1).show()\nplot(x^3,xmin=0,xmax=1).show()\n```\n\n\nshows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1580\n\n",
+    "created_at": "2007-12-21T08:44:06Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook shows graphics out of order",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1580",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 
@@ -19,10 +29,25 @@ plot(x^3,xmin=0,xmax=1).show()
 shows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1580
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-12-21 21:19:54
+archive/issue_comments_010069.json:
+```json
+{
+    "body": "William says,\n\n```\nThis will likely happen for everybody.  It is likely caused by the 3d\ngraphics not\ncalling the right function to get the next default png filename.\nThanks for reporting it. \n```\n",
+    "created_at": "2007-12-21T21:19:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10069",
+    "user": "cwitty"
+}
+```
 
 William says,
 
@@ -35,20 +60,55 @@ Thanks for reporting it.
 
 
 
+
 ---
+
+archive/issue_comments_010070.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-22T21:00:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10070",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2007-12-23 03:20:26
+archive/issue_comments_010071.json:
+```json
+{
+    "body": "merged in 2.9.1 rc2",
+    "created_at": "2007-12-23T03:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10071",
+    "user": "rlm"
+}
+```
 
 merged in 2.9.1 rc2
 
 
+
 ---
 
-Comment by rlm created at 2007-12-23 03:20:26
+archive/issue_comments_010072.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-23T03:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1580#issuecomment-10072",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

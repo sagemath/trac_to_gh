@@ -1,11 +1,21 @@
 # Issue 847: rewrite the symbolic calculus package to do evaluation / simplification without recursion
 
-Issue created by migration from https://trac.sagemath.org/ticket/847
-
-Original creator: was
-
-Original creation time: 2007-10-10 22:51:26
-
+archive/issues_000847.json:
+```json
+{
+    "body": "Assignee: was\n\nI very much agree with Mike Hansen's conclusion below, which is basically that\nwe have to rewrite the calculus package (at some point) to not use recursion\nin the way it currently does. \n\n\n```\nAnswer: apparently SAGE/Python can't handle numbers bigger than it.\n\nIf I type:\n\nz=5/994;y=0;count=0\nfor j in range(994):\n   y+=z\n   count+=y^2\nprint(float(count*z))\n\nI get 41.7295650158 as expected.\n\nHowever, if I define\n\ndef right(f,a,b,n):\n   Deltax=(b-a)/n;c=a;est=0\n   for i in range(n):\n       c+=Deltax\n       est+=f(c)\n   return(float(est*Deltax))\n\nand then use\n\nright(x^2,0,5,994)\n\nI get a horrible endless loop of error messages identical (!) to\n\n File \"/Applications/.../python2.5/site-packages/sage/calculus/\ncalculus.py\", line 2739, in __float__\n   fops = [float(op) for op in self._operands]\n\nBut if I do\n\nright(x^2,0,5,993)\n\nThen all is well and I get\n\n41.729628378846591\n\nas desired.\n\nDoes this make any sense to anybody?  It's not just 994 - any larger\nnumber creates the same behavior, while the script without definition\nworks fine.  I'm baffled.  I tried the same experiment on sagenb.org\nand got the normal answer where expected, but once again got this\nmessage when I defined the function once I let n>993, while n=993\nworked fine after about 5 seconds.  I was using 2.7.3 at home,\npresumably the latest release on sagenb.org.  What is up with line\n2739?  It's in the constructor for symbolic arithmetic.\n\nThanks for any insight - hopefully also helping make the software\nbetter.\n\n\n--~--~---------~--~----~------------~-------~--~----~\nTo post to this group, send email to sage-support@googlegroups.com\nTo unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com\nFor more options, visit this group at http://groups.google.com/group/sage-support\nURLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/\n-~----------~----~----~----~------~----~------~--~---\n\n\n\t\nReply\tForward\tInvite kcrisman to chat\n\t\n\t\n\t\t\n\t\t\n\t Reply \t\t\nReply to all Reply to allForward Forward Print Add Mike to Contacts list Delete this message Report phishing Show original Message text garbled?\n\tMike Hansen \t\nto sage-support\n\t\nshow details\n\t 3:04 pm (38 minutes ago) \n\nHello,\n\nThe issue is that you are passing in x^2 as a function.  Since x is\ndefined by default to be a symbolic expression, then x^2 is also a\nsymbolic expression.  Furthermore, when you apply it to a value, you\nalso get a symbolic expression.  See this:\n\nsage: g = x^2\nsage: type(g)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: g._operator\n<built-in function pow>\nsage: g._operands\n[x, 2]\nsage: a = g(2)\nsage: a\n4\nsage: type(a)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: a._operator\n<built-in function pow>\nsage: a._operands\n[2, 2]\n\nIn your loop, when you do est += f(c), you build up a huge symbolic\nexpression.  When you try to convert it to a float, it goes down this\ntower and tries to convert everything to floats, but it will only go\nso far down before hitting a maximum recursion error.  That is why you\nare seeing the cutoff around 994.\n\nSymbolic arithmetic is very slow so I personally don't recommend using\nit where you don't need to.  Here is a much better solution which\ndoesn't rely on symbolic expressions.\n\nsage: f = lambda x: x^2\nsage: right(f,0,5, 993)\n41.72962837884662\nsage: right(f,0,5, 1000)\n41.729187499999995\nsage: right(f,0,5, 10000)\n41.672916874999999\nsage: time right(f,0,5, 100000)\nCPU times: user 0.40 s, sys: 0.02 s, total: 0.42 s\nWall time: 0.43\n41.667291668749996\n\nThat being said, some thought should be given to simplifying symbolic\nexpressions after substitution (i.e., f(c)) so that the error you got\ndoesn't happen.\n\nHope that helps,\nMike\n- Hide quoted text -\n\n\nOn 10/10/07, kcrisman <kcrisman@gmail.com> wrote:\n>\n> Answer: apparently SAGE/Python can't handle numbers bigger than it.\n>\n> If I type:\n>\n> z=5/994;y=0;count=0\n> for j in range(994):\n>     y+=z\n>     count+=y^2\n> print(float(count*z))\n>\n> I get 41.7295650158 as expected.\n>\n> However, if I define\n>\n> def right(f,a,b,n):\n>     Deltax=(b-a)/n;c=a;est=0\n>     for i in range(n):\n>         c+=Deltax\n>         est+=f(c)\n>     return(float(est*Deltax))\n>\n> and then use\n>\n> right(x^2,0,5,994)\n>\n> I get a horrible endless loop of error messages identical (!) to\n>\n>  File \"/Applications/.../python2.5/site-packages/sage/calculus/\n> calculus.py\", line 2739, in __float__\n>     fops = [float(op) for op in self._operands]\n>\n> But if I do\n>\n> right(x^2,0,5,993)\n>\n> Then all is well and I get\n>\n> 41.729628378846591\n>\n> as desired.\n>\n> Does this make any sense to anybody?  It's not just 994 - any larger\n> number creates the same behavior, while the script without definition\n> works fine.  I'm baffled.  I tried the same experiment on sagenb.org\n> and got the normal answer where expected, but once again got this\n> message when I defined the function once I let n>993, while n=993\n> worked fine after about 5 seconds.  I was using 2.7.3 at home,\n> presumably the latest release on sagenb.org.  What is up with line\n> 2739?  It's in the constructor for symbolic arithmetic.\n>\n> Thanks for any insight - hopefully also helping make the software\n> better.\n>\n>\n> >\n>\n\n--~--~---------~--~----~------------~-------~--~----~\nTo post to this group, send email to sage-support@googlegroups.com\nTo unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com\nFor more options, visit this group at http://groups.google.com/group/sage-support\nURLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/\n-~----------~----~----~----~------~----~------~--~---\n\n\n\t\nReply\tForward\tMike is not available to chat\n\t\n\t\n\t\n\t\n#  Choose Language\n#   Auto\n#   English (US)\n#   English (UK)\n#   Deutsch\n#   Espa\u00f1ol\n#   Portugu\u00eas\n#   Portugu\u00eas (Portugal)\n#   Fran\u00e7ais\n#   Italiano\n#   Nederlands\n#   Polski\n#   Svenska\n#   Norsk\n#   Suomi\n#   Dansk\n#   \u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438\n#   Hrvatski\n#   Magyar\n#   Slovensk\u00fd\n#   Sloven\u0161\u010dina\n#   \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\n#   Ti\u1ebfng Vi\u1ec7t\n#   \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac\n#   \u00cdslenska\n#   Bahasa Indonesia\n#   Catal\u00e0\n#   \u010cesk\u00fd\n#   Eesti keel\n#   \u0939\u093f\u0928\u094d\u0926\u0940\n#   Lietuvi\u0173\n#   Rom\u00e2n\u0103\n#   \u0420\u0443\u0441\u0441\u043a\u0438\u0439\n#   Tagalog\n#   Hebrew\n#   Arabic\n#   Malay\n#   Latin\n\t\n\t\n\t\n\t\n\t\t\nNew window\nPrint all\nCollapse all\nForward all\n \n\u00ab Back to Inbox\nArchiveReport SpamDelete\n\u2039 Newer 3 of 4 Older \u203a\nCompose a message in a new window by pressing \"Shift\" while clicking Compose Mail or Reply.\nYou are currently using 1301 MB (44%) of your 2911 MB.\nGmail view: standard with chat | standard without chat | basic HTML  Learn more\n\u00a92007 Google - Terms of Use - Privacy Policy - Program Policies - Google Home\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/847\n\n",
+    "created_at": "2007-10-10T22:51:26Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "rewrite the symbolic calculus package to do evaluation / simplification without recursion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/847",
+    "user": "was"
+}
+```
 Assignee: was
 
 I very much agree with Mike Hansen's conclusion below, which is basically that
@@ -276,17 +286,43 @@ Gmail view: standard with chat | standard without chat | basic HTML  Learn more
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/847
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-30 22:01:24
+archive/issue_comments_005238.json:
+```json
+{
+    "body": "[Referee remark] Very good -- just add some more doctests to illustrate what is being fixed.  Great work!",
+    "created_at": "2007-11-30T22:01:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5238",
+    "user": "was"
+}
+```
 
 [Referee remark] Very good -- just add some more doctests to illustrate what is being fixed.  Great work!
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-30 22:03:49
+archive/issue_comments_005239.json:
+```json
+{
+    "body": "And a short 2 line summary of what was fixed would also be very nice.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-30T22:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5239",
+    "user": "mabshoff"
+}
+```
 
 And a short 2 line summary of what was fixed would also be very nice.
 
@@ -295,60 +331,150 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-11-30 22:06:47
+archive/issue_comments_005240.json:
+```json
+{
+    "body": "Officially refereed -- it works.  And it also fixes another bug reported on sage-support day by John Perry.  Nice!\n\nAll it needs now is that spelling error fixed and a doctest to illustrate the recursion.",
+    "created_at": "2007-11-30T22:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5240",
+    "user": "was"
+}
+```
 
 Officially refereed -- it works.  And it also fixes another bug reported on sage-support day by John Perry.  Nice!
 
 All it needs now is that spelling error fixed and a doctest to illustrate the recursion.
 
 
+
 ---
+
+archive/issue_comments_005241.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-30T22:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5241",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 22:59:37
+archive/issue_comments_005242.json:
+```json
+{
+    "body": "Basically, the following things were changed:\n  1) Arithmetic with SymbolicConstants should produce SymbolicConstants (where it makes sense)\n  2) When performing substitution with a SymbolicArithmetic object, the result should be a SymbolicConstant if all the operands are.",
+    "created_at": "2007-11-30T22:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5242",
+    "user": "mhansen"
+}
+```
 
 Basically, the following things were changed:
   1) Arithmetic with SymbolicConstants should produce SymbolicConstants (where it makes sense)
   2) When performing substitution with a SymbolicArithmetic object, the result should be a SymbolicConstant if all the operands are.
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 22:59:37
+archive/issue_comments_005243.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-11-30T22:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5243",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 22:59:37
+archive/issue_comments_005244.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-30T22:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5244",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-01 02:01:57
+archive/issue_comments_005245.json:
+```json
+{
+    "body": "The revised patch looks good to me.",
+    "created_at": "2007-12-01T02:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5245",
+    "user": "cwitty"
+}
+```
 
 The revised patch looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 11:13:25
+archive/issue_comments_005246.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T11:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5246",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 11:13:25
+archive/issue_comments_005247.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha0.\n\nApplied with slight offset:\n\n```\nsage$ hg import 847.patch\napplying 847.patch\npatching file sage/calculus/calculus.py\nHunk #5 succeeded at 2877 with fuzz 2 (offset 35 lines).\n```\n",
+    "created_at": "2007-12-01T11:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/847#issuecomment-5247",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha0.
 

@@ -1,11 +1,21 @@
 # Issue 1288: misformating of some of the reference manual in live version; also out of date
 
-Issue created by migration from https://trac.sagemath.org/ticket/1288
-
-Original creator: was
-
-Original creation time: 2007-11-27 14:09:36
-
+archive/issues_001288.json:
+```json
+{
+    "body": "Assignee: tba\n\nSee below.  I suspect that the best solution is to remove this stuff about \"sage -advanced\" from the reference manual entirely, since it is always going to get out of date, hence be misleading.  It's much better to just described how \"sage -advanced\" works, and suggest that the user try it out, then improve the output of \"sage -advanced\". \n\n\n\n```\nReading 2.3 of the Reference Manual from the Notebook interface, I find that this \"live\" version has turned the lines:\n\n\\item\n\\verb+-advanced+ Lists additional options:\n\n\\begin{verbatim}\n$ sage -advanced\nin devel/doc-main/ref/options.tex into\n\n<li><code>-advanced</code> Lists additional options:\n\n<p>\n<div class=\"verbatim\"><pre><span class=\"math\"> sage -advanced\n\nin localhost:8000/doc/live/ref/node7.html , which, of course, completely wrecks the formatting.  There seems to be no problem with the pre-built  devel/doc-main/html/ref/node7.html , where latex2html has correctly turned the TeX into\n\n<LI><code>-advanced</code> Lists additional options:\n\n<P>\n<div class=\"verbatim\"><pre>\n$ sage -advanced\n\n\nMoreover, the list of options given in options.tex is considerably different from those currently produced by sage -advanced .\n\n\nMac OS X 10.4.11\nSage 2.8.14\n\n-- \n\nFrancis Clarke\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1288\n\n",
+    "created_at": "2007-11-27T14:09:36Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "misformating of some of the reference manual in live version; also out of date",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1288",
+    "user": "was"
+}
+```
 Assignee: tba
 
 See below.  I suspect that the best solution is to remove this stuff about "sage -advanced" from the reference manual entirely, since it is always going to get out of date, hence be misleading.  It's much better to just described how "sage -advanced" works, and suggest that the user try it out, then improve the output of "sage -advanced". 
@@ -48,29 +58,79 @@ Francis Clarke
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1288
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-12-06 21:15:10
+archive/issue_comments_008087.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-06T21:15:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8087",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 21:15:10
+archive/issue_comments_008088.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2007-12-06T21:15:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8088",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
+
+archive/issue_comments_008089.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-08T05:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8089",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:39:11
+archive/issue_comments_008090.json:
+```json
+{
+    "body": "Looks good to me. Initially I was confused about this since it seemed to only remove content until I read William's comments.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-09T10:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8090",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me. Initially I was confused about this since it seemed to only remove content until I read William's comments.
 
@@ -79,15 +139,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:40:17
+archive/issue_comments_008091.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-09T10:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8091",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:40:17
+archive/issue_comments_008092.json:
+```json
+{
+    "body": "Merged in 2.9.alpha2.",
+    "created_at": "2007-12-09T10:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1288#issuecomment-8092",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha2.

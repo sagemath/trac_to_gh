@@ -1,42 +1,100 @@
 # Issue 1603: upgrade pari to 2.3.3, which was recently released
 
-Issue created by migration from https://trac.sagemath.org/ticket/1603
-
-Original creator: was
-
-Original creation time: 2007-12-27 02:05:09
-
+archive/issues_001603.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1603\n\n",
+    "created_at": "2007-12-27T02:05:09Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "upgrade pari to 2.3.3, which was recently released",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1603",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1603
+
+
+
+
 
 ---
 
-Comment by was created at 2007-12-27 05:41:37
+archive/issue_comments_010187.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-27T05:41:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10187",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-12-27 05:52:40
+archive/issue_comments_010188.json:
+```json
+{
+    "body": "The new PARI spkg is here:\n\n    http://sagemath.org/packages/experimental/pari-2.3.3.spkg",
+    "created_at": "2007-12-27T05:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10188",
+    "user": "was"
+}
+```
 
 The new PARI spkg is here:
 
     http://sagemath.org/packages/experimental/pari-2.3.3.spkg
 
 
+
 ---
 
-Comment by was created at 2007-12-27 06:58:13
+archive/issue_comments_010189.json:
+```json
+{
+    "body": "I did a \"make check\" on OS X Intel 10.5.1 after installing the above spkg, and all tests passed.",
+    "created_at": "2007-12-27T06:58:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10189",
+    "user": "was"
+}
+```
 
 I did a "make check" on OS X Intel 10.5.1 after installing the above spkg, and all tests passed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 05:36:24
+archive/issue_comments_010190.json:
+```json
+{
+    "body": "This works for me, too.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-03T05:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10190",
+    "user": "mabshoff"
+}
+```
 
 This works for me, too.
 
@@ -45,8 +103,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 05:37:09
+archive/issue_comments_010191.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-03T05:37:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10191",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

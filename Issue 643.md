@@ -306,3 +306,113 @@ archive/issue_comments_003331.json:
 I made some changes to improve the notebook.  Could people try out my patch and see if it breaks / does anything stupid on other browsers?
 
 It looks like there is a fair amount of cleaning up to do.
+
+
+
+---
+
+archive/issue_comments_003332.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-03T06:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3332",
+    "user": "mhansen"
+}
+```
+
+Attachment
+
+
+
+---
+
+archive/issue_comments_003333.json:
+```json
+{
+    "body": "Attachment\n\nAccidental upload",
+    "created_at": "2007-10-04T06:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3333",
+    "user": "mhansen"
+}
+```
+
+Attachment
+
+Accidental upload
+
+
+
+---
+
+archive/issue_comments_003334.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-04T19:02:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3334",
+    "user": "was"
+}
+```
+
+Attachment
+
+
+
+---
+
+archive/issue_comments_003335.json:
+```json
+{
+    "body": "Please post one patch bundle, so I know what to actually apply.",
+    "created_at": "2007-10-13T06:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3335",
+    "user": "was"
+}
+```
+
+Please post one patch bundle, so I know what to actually apply.
+
+
+
+---
+
+archive/issue_comments_003336.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T06:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3336",
+    "user": "was"
+}
+```
+
+Resolution: fixed
+
+
+
+---
+
+archive/issue_comments_003337.json:
+```json
+{
+    "body": "Very nice!",
+    "created_at": "2007-10-13T06:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/643",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3337",
+    "user": "was"
+}
+```
+
+Very nice!

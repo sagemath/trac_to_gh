@@ -1,33 +1,80 @@
 # Issue 1692: Make doc target force to use local sage instead of sage in $PATH
 
-Issue created by migration from https://trac.sagemath.org/ticket/1692
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-05 14:16:25
-
+archive/issues_001692.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1692\n\n",
+    "created_at": "2008-01-05T14:16:25Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Make doc target force to use local sage instead of sage in $PATH",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1692",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1692
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-25 16:59:12
+archive/issue_comments_010748.json:
+```json
+{
+    "body": "This has been fixed by wstein in $SAGE_ROOT/devel/doc/ref/update. It now sets up the end properly when SAGE_ROOT is empty.",
+    "created_at": "2008-04-25T16:59:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1692#issuecomment-10748",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by wstein in $SAGE_ROOT/devel/doc/ref/update. It now sets up the end properly when SAGE_ROOT is empty.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 16:59:12
+archive/issue_comments_010749.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T16:59:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1692#issuecomment-10749",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 16:59:38
+archive/issue_comments_010750.json:
+```json
+{
+    "body": "Oops: end->env \n\nCheers,\n\nMichael",
+    "created_at": "2008-04-25T16:59:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1692#issuecomment-10750",
+    "user": "mabshoff"
+}
+```
 
 Oops: end->env 
 

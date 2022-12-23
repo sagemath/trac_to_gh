@@ -1,11 +1,21 @@
 # Issue 1858: plot.py coverage is crap -- get it to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/1858
-
-Original creator: was
-
-Original creation time: 2008-01-20 00:33:52
-
+archive/issues_001858.json:
+```json
+{
+    "body": "Assignee: was\n\nRight now:\n\n```\n$ sage -coverage plot.py\n----------------------------------------------------------------------\nplot.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE plot.py: 13% (25 of 185)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1858\n\n",
+    "created_at": "2008-01-20T00:33:52Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "plot.py coverage is crap -- get it to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1858",
+    "user": "was"
+}
+```
 Assignee: was
 
 Right now:
@@ -20,17 +30,43 @@ SCORE plot.py: 13% (25 of 185)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1858
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-20 01:29:45
+archive/issue_comments_011753.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-20T01:29:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11753",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2008-01-20 04:48:43
+archive/issue_comments_011754.json:
+```json
+{
+    "body": "after:\n\n```\nteragon:plot was$ sage -coverage plot.py|more\n----------------------------------------------------------------------\nplot.py\nSCORE plot.py: 35% (64 of 180)\n```\n\n\nIt's a start at least.",
+    "created_at": "2008-01-20T04:48:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11754",
+    "user": "was"
+}
+```
 
 after:
 
@@ -45,14 +81,38 @@ SCORE plot.py: 35% (64 of 180)
 It's a start at least.
 
 
+
 ---
+
+archive/issue_comments_011755.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-20T04:49:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11755",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-01-20 21:41:30
+archive/issue_comments_011756.json:
+```json
+{
+    "body": "The following docstring is probably wrong -- each entry is probably a float between 0 and 1, inclusive.\n\n\n```\n467\t        INPUT: \n468\t            c -- an rgb color 3-tuple, where each tuple entry is an \n469\t                 integer between 0 and 1 \n```\n\n\nBut I think this should be applied.",
+    "created_at": "2008-01-20T21:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11756",
+    "user": "ncalexan"
+}
+```
 
 The following docstring is probably wrong -- each entry is probably a float between 0 and 1, inclusive.
 
@@ -67,14 +127,38 @@ The following docstring is probably wrong -- each entry is probably a float betw
 But I think this should be applied.
 
 
+
 ---
 
-Comment by was created at 2008-01-20 21:44:22
+archive/issue_comments_011757.json:
+```json
+{
+    "body": "fixes the typo nick pointed out",
+    "created_at": "2008-01-20T21:44:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11757",
+    "user": "was"
+}
+```
 
 fixes the typo nick pointed out
 
 
+
 ---
+
+archive/issue_comments_011758.json:
+```json
+{
+    "body": "Attachment\n\nOk, since was fixed the issue this looks good to merge now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T02:12:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11758",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -85,9 +169,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:16:10
+archive/issue_comments_011759.json:
+```json
+{
+    "body": "These two patches seem to depend on at least 1508 to be applied - maybe more.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T02:16:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11759",
+    "user": "mabshoff"
+}
+```
 
 These two patches seem to depend on at least 1508 to be applied - maybe more.
 
@@ -96,9 +191,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 03:52:33
+archive/issue_comments_011760.json:
+```json
+{
+    "body": "This patch also clashes with #1859, so I applied two hunks manually.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T03:52:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11760",
+    "user": "mabshoff"
+}
+```
 
 This patch also clashes with #1859, so I applied two hunks manually.
 
@@ -107,15 +213,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 03:52:51
+archive/issue_comments_011761.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T03:52:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11761",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 03:52:51
+archive/issue_comments_011762.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T03:52:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1858#issuecomment-11762",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1

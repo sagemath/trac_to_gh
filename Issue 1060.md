@@ -1,11 +1,21 @@
 # Issue 1060: fix flintqs compile on OSX 10.5
 
-Issue created by migration from https://trac.sagemath.org/ticket/1060
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-02 00:25:17
-
+archive/issues_001060.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe fix for flintqs is the same as for givaro, basically. To the file\n\n```\n    src/lanczos.c\n```\n\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\n\nThen it builds fine. \n\n-- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1060\n\n",
+    "created_at": "2007-11-02T00:25:17Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "fix flintqs compile on OSX 10.5",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1060",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The fix for flintqs is the same as for givaro, basically. To the file
@@ -24,16 +34,42 @@ Then it builds fine.
 
 -- William
 
+Issue created by migration from https://trac.sagemath.org/ticket/1060
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-02 01:08:01
+archive/issue_comments_006445.json:
+```json
+{
+    "body": "applied to 2.8.11.rc1 - via new flintqs-20070817.p0",
+    "created_at": "2007-11-02T01:08:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1060#issuecomment-6445",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.rc1 - via new flintqs-20070817.p0
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 01:08:01
+archive/issue_comments_006446.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-02T01:08:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1060#issuecomment-6446",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

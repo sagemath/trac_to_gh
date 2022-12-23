@@ -1,34 +1,83 @@
 # Issue 1716: [with patch] add function log1p in mpfr interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/1716
-
-Original creator: zimmerma
-
-Original creation time: 2008-01-07 21:26:56
-
+archive/issues_001716.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI guess other functions implemented in mpfr-2.3.0 are not available from SAGE.\nIf this patch is accepted, I will propose a more complete one with all missing functions.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1716\n\n",
+    "created_at": "2008-01-07T21:26:56Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch] add function log1p in mpfr interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1716",
+    "user": "zimmerma"
+}
+```
 Assignee: somebody
 
 I guess other functions implemented in mpfr-2.3.0 are not available from SAGE.
 If this patch is accepted, I will propose a more complete one with all missing functions.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1716
+
+
+
+
 
 ---
+
+archive/issue_comments_010880.json:
+```json
+{
+    "body": "Attachment\n\nWorks for me.  I think it would be good to add the other functions as well.",
+    "created_at": "2008-01-15T00:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1716",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1716#issuecomment-10880",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Works for me.  I think it would be good to add the other functions as well.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 01:32:10
+archive/issue_comments_010881.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha3.",
+    "created_at": "2008-01-15T01:32:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1716",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1716#issuecomment-10881",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha3.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 01:32:10
+archive/issue_comments_010882.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T01:32:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1716",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1716#issuecomment-10882",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

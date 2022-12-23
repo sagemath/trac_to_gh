@@ -1,11 +1,21 @@
 # Issue 1698: PolyBoRi doesn't work at all on Itanium Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/1698
-
-Original creator: was
-
-Original creation time: 2008-01-06 01:41:04
-
+archive/issues_001698.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  burcin\n\n\n```\n\nHas anybody ever built or used PolyBoRi on Linux *ITANIUM*?  \nBecause I just tried and the simplest\nuse of it from Sage segfaults PolyBoRi.   Since Itanium is \nsupposed to be supported Sage platform this is very\nserious:\n\nsage -t --gdb pbori.pyx\n\nSIGSEGV\nboost::intrusive_ptr<polybori::CCuddCore>::operator-> (this=0x0)\n   at ...intrusive_ptr.hpp:120\n120         return p_;\n\n(this was typed in by me manually just now). \n\nAny ideas?!   If necessary I can loan you the password I  have to an itanium box, but\nhopefully one of you has access to an Itanium Linux machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1698\n\n",
+    "created_at": "2008-01-06T01:41:04Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "PolyBoRi doesn't work at all on Itanium Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1698",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 CC:  burcin
@@ -33,10 +43,25 @@ hopefully one of you has access to an Itanium Linux machine.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1698
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-23 23:15:05
+archive/issue_comments_010771.json:
+```json
+{
+    "body": "Since Kate reported building 2.10 on Linux/Itanium and it passing doctests except #1898 the issue reported above is probably something system specific.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-23T23:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1698#issuecomment-10771",
+    "user": "mabshoff"
+}
+```
 
 Since Kate reported building 2.10 on Linux/Itanium and it passing doctests except #1898 the issue reported above is probably something system specific.
 
@@ -45,8 +70,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-19 15:17:43
+archive/issue_comments_010772.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-19T15:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1698#issuecomment-10772",
+    "user": "was"
+}
+```
 
 Resolution: fixed

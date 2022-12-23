@@ -1,11 +1,21 @@
 # Issue 816: [with patch] Commutative Algebra assorted functionality
 
-Issue created by migration from https://trac.sagemath.org/ticket/816
-
-Original creator: malb
-
-Original creation time: 2007-10-04 00:38:17
-
+archive/issues_000816.json:
+```json
+{
+    "body": "Assignee: was\n\nideal quotients:\n\n\n```\nsage: R.<x,y,z> = PolynomialRing(GF(181),3)\nsage: I = Ideal([x^2+x*y*z,y^2-z^3*y,z^3+y^5*x*z])\nsage: J = Ideal([x])\nsage: Q = I.quotient(J)\nsage: y*z + x in I\nFalse\nsage: x in J\nTrue\nsage: x * (y*z + x) in I\nTrue\n```\n\n\nchanging rings for ideals:\n\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: I\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: I.groebner_basis()\n[z^3 - 1, y^2 + y*z + z^2, x + y + z]\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex'); Q\nPolynomial Ring in x, y, z over Rational Field\nsage: Q.term_order()\nDegree reverse lexicographic term order\n\nsage: J = I.change_ring(Q)\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: J.groebner_basis()\n[x + y + z, y^2 + y*z + z^2, z^3 - 1]\n```\n\n\nconstructing new rings\n\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(127),3,order='lex')\nsage: x > y^2\nTrue\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex')\nsage: x > y^2\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/816\n\n",
+    "created_at": "2007-10-04T00:38:17Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] Commutative Algebra assorted functionality",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/816",
+    "user": "malb"
+}
+```
 Assignee: was
 
 ideal quotients:
@@ -61,35 +71,96 @@ False
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/816
+
+
+
+
 
 ---
+
+archive/issue_comments_005073.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-04T00:38:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/816#issuecomment-5073",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-10-04 00:44:05
+archive/issue_comments_005074.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2007-10-04T00:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/816#issuecomment-5074",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2007-10-04 00:44:05
+archive/issue_comments_005075.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to commutative algebra.",
+    "created_at": "2007-10-04T00:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/816#issuecomment-5075",
+    "user": "malb"
+}
+```
 
 Changing component from algebraic geometry to commutative algebra.
 
 
+
 ---
 
-Comment by malb created at 2007-10-04 00:44:05
+archive/issue_comments_005076.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-04T00:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/816#issuecomment-5076",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-10-04 17:14:07
+archive/issue_comments_005077.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T17:14:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/816#issuecomment-5077",
+    "user": "was"
+}
+```
 
 Resolution: fixed

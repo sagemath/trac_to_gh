@@ -1,11 +1,21 @@
 # Issue 1920: 3d graphics -- constant plot3d's
 
-Issue created by migration from https://trac.sagemath.org/ticket/1920
-
-Original creator: was
-
-Original creation time: 2008-01-25 05:59:46
-
+archive/issues_001920.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mhansen cwitty jason\n\nThis works:\n\n```\nvar('x,y')\nplot3d(0, (x,-1,1), (y,-1,1))\n```\n\n\nThis doesn't:\n\n```\nplot3d(0, (-1,1), (-1,1))\n```\n\n\nIt seems completely reasonable that we fix the above so it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1920\n\n",
+    "created_at": "2008-01-25T05:59:46Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "3d graphics -- constant plot3d's",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1920",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  mhansen cwitty jason
@@ -27,10 +37,25 @@ plot3d(0, (-1,1), (-1,1))
 
 It seems completely reasonable that we fix the above so it does.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1920
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-27 01:03:03
+archive/issue_comments_012169.json:
+```json
+{
+    "body": "This is still an issue with all the plot fixes in Sage 3.1.2.alpha1:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.alpha0, Release Date: 2008-08-22                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: plot3d(0, (-1,1), (-1,1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    533 \n    534             # and now call a possibly user-defined print mechanism\n--> 535             manipulated_val = self.display(arg)\n    536             \n    537             # user display hooks can change the variable to be stored in\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    559             return IPython.generics.result_display(arg)\n    560         except TryNext:            \n--> 561             return self.shell.hooks.result_display(arg)\n    562 \n    563     # Assign the default display method:\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/base.pyx in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1819)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/base.pyx in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8472)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/base.pyx in sage.plot.plot3d.base.Graphics3d._prepare_for_jmol (sage/plot/plot3d/base.c:5321)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/base.pyx in sage.plot.plot3d.base.Graphics3d._box_for_aspect_ratio (sage/plot/plot3d/base.c:5756)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/base.pyx in sage.plot.plot3d.base.Graphics3d._safe_bounding_box (sage/plot/plot3d/base.c:2561)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/parametric_surface.pyx in sage.plot.plot3d.parametric_surface.ParametricSurface.bounding_box (sage/plot/plot3d/parametric_surface.c:2096)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/parametric_surface.pyx in sage.plot.plot3d.parametric_surface.ParametricSurface.triangulate (sage/plot/plot3d/parametric_surface.c:2555)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/parametric_surface.pyx in sage.plot.plot3d.parametric_surface.triangulate (sage/plot/plot3d/parametric_surface.c:2497)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/parametric_surface.pyx in sage.plot.plot3d.parametric_surface.ParametricSurface.eval_grid (sage/plot/plot3d/parametric_surface.c:3916)()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\nsage: \nExiting SAGE (CPU time 0m1.16s, Wall time 0m27.83s).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T01:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12169",
+    "user": "mabshoff"
+}
+```
 
 This is still an issue with all the plot fixes in Sage 3.1.2.alpha1:
 
@@ -139,30 +164,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-22 18:27:42
+archive/issue_comments_012170.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-22T18:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12170",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-07-27 17:30:47
+archive/issue_comments_012171.json:
+```json
+{
+    "body": "Do we still want this?  We've been spending a lot of time making sure people declare their variables.  On the other hand, for a constant function this may not be an issue :)",
+    "created_at": "2010-07-27T17:30:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12171",
+    "user": "kcrisman"
+}
+```
 
 Do we still want this?  We've been spending a lot of time making sure people declare their variables.  On the other hand, for a constant function this may not be an issue :)
 
 
+
 ---
 
-Comment by jason created at 2010-07-27 23:37:51
+archive/issue_comments_012172.json:
+```json
+{
+    "body": "Yes, it seems to make sense to make this work, doesn't it? (a constant function should take any number of parameters and return the constant, right?).  Hopefully my recent (in-progress) revamping of fast_callable will take care of this.  It's probably even easier just to fix this.",
+    "created_at": "2010-07-27T23:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12172",
+    "user": "jason"
+}
+```
 
 Yes, it seems to make sense to make this work, doesn't it? (a constant function should take any number of parameters and return the constant, right?).  Hopefully my recent (in-progress) revamping of fast_callable will take care of this.  It's probably even easier just to fix this.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:53:11
+archive/issue_comments_012173.json:
+```json
+{
+    "body": "This does, in fact, now work.\n\n```\nsage: plot3d(pi, (-1,1), (-1,1))\n```\n\nI can't figure out quite which upgrade did it, though I found several possible suspects.",
+    "created_at": "2012-07-07T03:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12173",
+    "user": "kcrisman"
+}
+```
 
 This does, in fact, now work.
 
@@ -173,36 +242,93 @@ sage: plot3d(pi, (-1,1), (-1,1))
 I can't figure out quite which upgrade did it, though I found several possible suspects.
 
 
+
 ---
+
+archive/issue_comments_012174.json:
+```json
+{
+    "body": "Attachment\n\nApply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.",
+    "created_at": "2012-07-07T03:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12174",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Apply [attachment:trac_1920-verify.patch].  I couldn't find a better place to add this... and if someone knows that this is already tested, please let me know.  I did a grep through the Sage library for plotting the 0 function, but of course if it is more like my test, then one could never find it.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:55:00
+archive/issue_comments_012175.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-07-07T03:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12175",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ppurka created at 2012-11-16 09:16:01
+archive/issue_comments_012176.json:
+```json
+{
+    "body": "This should have been merged long ago.",
+    "created_at": "2012-11-16T09:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12176",
+    "user": "ppurka"
+}
+```
 
 This should have been merged long ago.
 
 
+
 ---
 
-Comment by ppurka created at 2012-11-16 09:16:01
+archive/issue_comments_012177.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-11-16T09:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12177",
+    "user": "ppurka"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-18 11:17:16
+archive/issue_comments_012178.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-12-18T11:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1920#issuecomment-12178",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 1138: add implementation of tonelli-shanks to sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/1138
-
-Original creator: was
-
-Original creation time: 2007-11-10 12:15:35
-
+archive/issues_001138.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  dmharvey\n\n\n```\nHi, I have implemented the Tonelli and Shanks algorithm which has a\ncomplexity of O(ln^4(p)) and appears to be amazing fast. So far its a\nquick and dirty implementation directly in my Sage file and without\nerror handling. I will ask Martin (when meeting him next time in the\noffice) how to integrate the implentation properly in Sage. Of course,\nif somebody else does it, I am even more happy :-) Here is the current\ncode which returns x such that x^2 == a mod p:\n\ndef step3(b,p,r,x):\n       # Step 3: Find exponent\n       if GF(p)(b) == GF(p)(1):\n               return b,r,x,0\n       m = 0\n       while GF(p)(b**(2**m)) != 1:\n               m = m + 1\n       if m == r:\n               return b,r,0,0\n       return b,r,x,m\n\ndef s_root(a,p):\n       # Step 0: Determine q:\n       q = 0\n       e = 0\n       while q % 2 != 1:\n               e = e+1\n               q = (p-1) / 2**e\n       # Step 1: Find generator\n       n = ZZ.random_element()\n       while kronecker(n,p) != -1:\n               n = ZZ.random_element()\n       n = GF(p)(n)\n       z = GF(p)(n**q)\n       # Step 2: Initialize\n       y = z\n       r = e\n       a = GF(p)(a)\n       x = GF(p)(a**((q-1)/2))\n       b = GF(p)(a*(x**2))\n       x = GF(p)(a*x)\n       # Step 3:\n       b,r,x,m = step3(b,p,r,x)\n       # Step 4: Reduce exponent\n       while ZZ(m) != ZZ(0):\n               t = GF(p)(y**(2**(r-m-1)))\n               y = GF(p)(t**2)\n               r = GF(p)(m)\n               x = GF(p)(x*t)\n               b = GF(p)(b*y)\n               b,r,x,m = step3(b,p,r,x)\n       return x\n\na = GF(17)(13)\nprint s_root(a,17)\n```\n\n\nBenchmarks\n\n```\nHi,\n\n> Could you post some cool impressive benchmarks? :-)\n>\n>  william\n\nok :-)\n\nHere the result for finding one root in GF(p) where p is 128, 256 and\n512 bit prime:\n\nResults for 128 bit prime:\nOriginal:\nTime: CPU 0.04 s, Wall: 0.04 s\nNumber of roots found:\n1\nTonelli:\nTime: CPU 0.00 s, Wall: 0.00 s\nNumber of roots found:\n1\nResults for 256 bit prime:\nOriginal:\nTime: CPU 0.96 s, Wall: 0.96 s\nNumber of roots found:\n0\nTonelli:\nTime: CPU 0.00 s, Wall: 0.00 s\nNumber of roots found:\n0\nResults for 512 bit prime:\nOriginal:\nTime: CPU 9.94 s, Wall: 10.09 s\nNumber of roots found:\n0\nTonelli:\nTime: CPU 0.00 s, Wall: 0.00 s\nNumber of roots found:\n0\n\nThis shows only that the old implementation was inefficient for large\np. The results for the original implementation for 256 and 512 bit are\nnot contained in the following results, since sqrt(a) returned an\nerror for the 256 bit and 512 bit case. Here are the results for 100\nrandom values for a. Find x: x^2==a mod p\n\nResults for 128 bit prime:\nOriginal:\nTime: CPU 5.36 s, Wall: 5.41 s\nNumber of roots found:\n47\nTonelli:\nTime: CPU 0.07 s, Wall: 0.08 s\nNumber of roots found:\n47\nResults for 256 bit prime:\nTonelli:\nTime: CPU 0.10 s, Wall: 0.10 s\nNumber of roots found:\n48\nResults for 512 bit prime:\nTonelli:\nTime: CPU 0.30 s, Wall: 0.33 s\nNumber of roots found:\n50\n\n\nHere is the complete code I used:\n- Show quoted text -\n\ndef step3(b,p,r,x):\n       # Step 3: Find exponent\n       if GF(p)(b) == GF(p)(1):\n               return b,r,x,0\n       m = 0\n       while GF(p)(b**(2**m)) != 1:\n               m = m + 1\n       if m == r:\n               return b,r,0,0\n       return b,r,x,m\n\ndef s_root(a,p):\n       # Step 0: Determine q:\n       q = 0\n       e = 0\n       while q % 2 != 1:\n               e = e+1\n               q = (p-1) / 2**e\n       # Step 1: Find generator\n       n = ZZ.random_element()\n       while kronecker(n,p) != -1:\n               n = ZZ.random_element()\n       n = GF(p)(n)\n       z = GF(p)(n**q)\n       # Step 2: Initialize\n       y = z\n       r = e\n       a = GF(p)(a)\n       x = GF(p)(a**((q-1)/2))\n       b = GF(p)(a*(x**2))\n       x = GF(p)(a*x)\n       # Step 3:\n       b,r,x,m = step3(b,p,r,x)\n       # Step 4: Reduce exponent\n       while ZZ(m) != ZZ(0):\n               t = GF(p)(y**(2**(r-m-1)))\n               y = GF(p)(t**2)\n               r = GF(p)(m)\n               x = GF(p)(x*t)\n               b = GF(p)(b*y)\n               b,r,x,m = step3(b,p,r,x)\n       return x\n\nA = {}\n\ndef go1(p):\n       X = {}\n       for i in range(0,len(A)):\n               X[i] = sqrt(GF(p)(A[i]))\n       return X\n\ndef go2(p):\n       X ={}\n       for i in range(0,len(A)):\n               X[i] = s_root(A[i], p)\n       return X\n\ndef analyseResult(A,X,p):\n       numberRoots = 0\n       for i in range(0,len(A)):\n               x = X[i]\n               a = A[i]\n               if x in GF(p):\n                       if (GF(p)(x) != GF(p)(0)) & (GF(p)(x**2) != GF(p)(a)):\n                               print 'Error in implemenation'\n                       elif GF(p)(x) != GF(p)(0):\n                               numberRoots = numberRoots + 1\n       print 'Number of roots found:'\n       print numberRoots\n\nn = 100\n\nprint 'Results for 128 bit prime:'\np = next_prime(2^(128))\nwhile p % 4 != 1:\n       p = next_prime(p+1)\n\nfor i in range(0,n):\n       A[i] = GF(p).random_element()\n\nprint 'Original:'\ntime X = go1(p)\nanalyseResult(A,X,p)\n\nprint 'Tonelli:'\ntime X = go2(p)\nanalyseResult(A,X,p)\n\nprint 'Results for 256 bit prime:'\np = next_prime(2^(256))\nwhile p % 4 != 1:\n       p = next_prime(p+1)\n\nfor i in range(0,n):\n       A[i] = GF(p).random_element()\n\n#print 'Original:'\n#time X = go1(p)\n#analyseResult(A,X,p)\n\nprint 'Tonelli:'\ntime X = go2(p)\nanalyseResult(A,X,p)\n\nprint 'Results for 512 bit prime:'\np = next_prime(2^(512))\nwhile p % 4 != 1:\n       p = next_prime(p+1)\n\nfor i in range(0,n):\n       A[i] = GF(p).random_element()\n\n#print 'Original:'\n#time X = go1(p)\n#analyseResult(A,X,p)\n\nprint 'Tonelli:'\ntime X = go2(p)\nanalyseResult(A,X,p)\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1138\n\n",
+    "created_at": "2007-11-10T12:15:35Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "add implementation of tonelli-shanks to sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1138",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 CC:  dmharvey
@@ -264,38 +274,99 @@ analyseResult(A,X,p)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1138
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-02-16 21:18:52
+archive/issue_comments_006910.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-16T21:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6910",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-16 21:18:52
+archive/issue_comments_006911.json:
+```json
+{
+    "body": "The algorithm as written is NOT faster for actual squares mod p, the timings are poor because sqrt(a) creates symbolic square roots for half the values. \n\nFor p == 1 mod 16, I think there may be an improvement. I am investigating this further.",
+    "created_at": "2008-02-16T21:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6911",
+    "user": "robertwb"
+}
+```
 
 The algorithm as written is NOT faster for actual squares mod p, the timings are poor because sqrt(a) creates symbolic square roots for half the values. 
 
 For p == 1 mod 16, I think there may be an improvement. I am investigating this further.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-16 21:18:52
+archive/issue_comments_006912.json:
+```json
+{
+    "body": "Changing assignee from somebody to robertwb.",
+    "created_at": "2008-02-16T21:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6912",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from somebody to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-16 21:48:04
+archive/issue_comments_006913.json:
+```json
+{
+    "body": "This algorithm has also been implemented in FLINT, so I am simply going to wrap that.",
+    "created_at": "2008-02-16T21:48:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6913",
+    "user": "robertwb"
+}
+```
 
 This algorithm has also been implemented in FLINT, so I am simply going to wrap that.
 
 
+
 ---
+
+archive/issue_comments_006914.json:
+```json
+{
+    "body": "Attachment\n\nI wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. \n\nThere are several other minor optimizations in the patch too.",
+    "created_at": "2008-02-18T22:51:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6914",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -304,21 +375,56 @@ I wasn't able to get FLINT to give me the correct answers, the algorithm turns o
 There are several other minor optimizations in the patch too.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-02-23 03:25:18
+archive/issue_comments_006915.json:
+```json
+{
+    "body": "Isn't this algorithm already in PARI?",
+    "created_at": "2008-02-23T03:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6915",
+    "user": "dmharvey"
+}
+```
 
 Isn't this algorithm already in PARI?
 
 
+
 ---
 
-Comment by dmharvey created at 2008-02-23 14:43:22
+archive/issue_comments_006916.json:
+```json
+{
+    "body": "Robert's patch didn't apply cleanly to 2.10.2, I've rebased it, see new patch. I'm going to review it more carefully now.",
+    "created_at": "2008-02-23T14:43:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6916",
+    "user": "dmharvey"
+}
+```
 
 Robert's patch didn't apply cleanly to 2.10.2, I've rebased it, see new patch. I'm going to review it more carefully now.
 
 
+
 ---
+
+archive/issue_comments_006917.json:
+```json
+{
+    "body": "Attachment\n\nHmmm.... I apply the rebased patch to 2.10.2, and I'm getting one weird doctest failure (mac OS 10.4.11, intel):\n\n\n```\nsage -t  devel/sage-1138b/sage/schemes/generic/projective_space.py\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [12.9 s]\nexit code: 256\n```\n\n\nRobert, could you take a look at this? (Also perhaps check that you agree I haven't mangled your patch during the rebasing.)\n\nOnce this is resolved, I'll continue reviewing the patch (I've been meaning to learn this algorithm for a while... :-))",
+    "created_at": "2008-02-23T16:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6917",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
@@ -338,41 +444,111 @@ Robert, could you take a look at this? (Also perhaps check that you agree I have
 Once this is resolved, I'll continue reviewing the patch (I've been meaning to learn this algorithm for a while... :-))
 
 
+
 ---
+
+archive/issue_comments_006918.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-26T03:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6918",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-03-26 03:14:43
+archive/issue_comments_006919.json:
+```json
+{
+    "body": "I rebased it again against 2.10.4 and touched it up a bit. It should work now. `sage/schemes/generic/projective_space.py` passes on my OS X 10.4.11 intel laptop.",
+    "created_at": "2008-03-26T03:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6919",
+    "user": "robertwb"
+}
+```
 
 I rebased it again against 2.10.4 and touched it up a bit. It should work now. `sage/schemes/generic/projective_space.py` passes on my OS X 10.4.11 intel laptop.
 
 
+
 ---
+
+archive/issue_comments_006920.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0",
+    "created_at": "2008-04-04T20:22:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6920",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-04 20:35:29
+archive/issue_comments_006921.json:
+```json
+{
+    "body": "The original code was from Steffen Reidt: http://groups.google.com/group/sage-devel/browse_frm/thread/e7910523502a641/62d692cb57caf7ff?lnk=gst&q=tonelli+shanks#62d692cb57caf7ff",
+    "created_at": "2008-04-04T20:35:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6921",
+    "user": "mhansen"
+}
+```
 
 The original code was from Steffen Reidt: http://groups.google.com/group/sage-devel/browse_frm/thread/e7910523502a641/62d692cb57caf7ff?lnk=gst&q=tonelli+shanks#62d692cb57caf7ff
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 21:29:23
+archive/issue_comments_006922.json:
+```json
+{
+    "body": "Merged 1138.patch in Sage 3.0.alpha1",
+    "created_at": "2008-04-04T21:29:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6922",
+    "user": "mabshoff"
+}
+```
 
 Merged 1138.patch in Sage 3.0.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 21:29:23
+archive/issue_comments_006923.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-04T21:29:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6923",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

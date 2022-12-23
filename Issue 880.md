@@ -1,11 +1,21 @@
 # Issue 880: 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/880
-
-Original creator: cwitty
-
-Original creation time: 2007-10-13 19:08:48
-
+archive/issues_000880.json:
+```json
+{
+    "body": "Assignee: failure\n\nOn my laptop, many of the doctests crash with SIGSEGV.\nHere's one example:\n\n```\nsage -t  devel/sage-main/sage/categories/category_types.py  \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [1.0 s]\n```\n\n\nMy laptop is 32-bit x86 Debian testing.  I think probably Jaap Spies is seeing the same thing on Fedora 7 (his report on the mailing list doesn't have enough detail to be positive).\n\nIssue created by migration from https://trac.sagemath.org/ticket/880\n\n",
+    "created_at": "2007-10-13T19:08:48Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/880",
+    "user": "cwitty"
+}
+```
 Assignee: failure
 
 On my laptop, many of the doctests crash with SIGSEGV.
@@ -31,21 +41,60 @@ A mysterious error (perphaps a memory error?) occurred, which may have crashed d
 
 My laptop is 32-bit x86 Debian testing.  I think probably Jaap Spies is seeing the same thing on Fedora 7 (his report on the mailing list doesn't have enough detail to be positive).
 
+Issue created by migration from https://trac.sagemath.org/ticket/880
+
+
+
+
 
 ---
+
+archive/issue_comments_005449.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-13T21:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/880#issuecomment-5449",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-13 21:47:42
+archive/issue_comments_005450.json:
+```json
+{
+    "body": "There was a copy-and-paste error that ended up reading uninitialized local variables, causing crashes on some machines.  Remove this incorrect, redundant code.",
+    "created_at": "2007-10-13T21:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/880#issuecomment-5450",
+    "user": "cwitty"
+}
+```
 
 There was a copy-and-paste error that ended up reading uninitialized local variables, causing crashes on some machines.  Remove this incorrect, redundant code.
 
 
+
 ---
 
-Comment by was created at 2007-10-14 22:55:12
+archive/issue_comments_005451.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-14T22:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/880#issuecomment-5451",
+    "user": "was"
+}
+```
 
 Resolution: fixed

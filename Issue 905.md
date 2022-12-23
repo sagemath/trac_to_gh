@@ -1,35 +1,82 @@
 # Issue 905: update the version of ipython included in sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/905
-
-Original creator: was
-
-Original creation time: 2007-10-16 01:39:38
-
+archive/issues_000905.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/905\n\n",
+    "created_at": "2007-10-16T01:39:38Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "update the version of ipython included in sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/905",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  mabshoff
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/905
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-05-11 16:25:45
+archive/issue_comments_005572.json:
+```json
+{
+    "body": "Changing assignee from was to burcin.",
+    "created_at": "2008-05-11T16:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5572",
+    "user": "burcin"
+}
+```
 
 Changing assignee from was to burcin.
 
 
+
 ---
 
-Comment by burcin created at 2008-05-11 16:25:45
+archive/issue_comments_005573.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-11T16:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5573",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by burcin created at 2008-05-11 16:25:45
+archive/issue_comments_005574.json:
+```json
+{
+    "body": "New package with upstream version 0.8.2 available here:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/ipython-0.8.2.spkg\n\nIt works for me.\n\nThere are quite a few entries in trac about updating ipython, see #1625, #1264, #1969.\n\n#1625 is a duplicate of this. The problem mentioned in #1264 doesn't happen with 0.8.2. I didn't update to svn as mentioned in #1969, since I don't know if it is stable enough to distribute with Sage.",
+    "created_at": "2008-05-11T16:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5574",
+    "user": "burcin"
+}
+```
 
 New package with upstream version 0.8.2 available here:
 
@@ -42,15 +89,26 @@ There are quite a few entries in trac about updating ipython, see #1625, #1264, 
 #1625 is a duplicate of this. The problem mentioned in #1264 doesn't happen with 0.8.2. I didn't update to svn as mentioned in #1969, since I don't know if it is stable enough to distribute with Sage.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 19:31:57
+archive/issue_comments_005575.json:
+```json
+{
+    "body": "A couple remarks:\n\n* no need to add me to the CC - I get email from all tickets anyway\n* there is no hg repo in the spkg. I am fixing that\n* \"cp patches/iplib.py src/IPython/iplib.py\" should be removed from spkg-install\n\nI will do all those fixes and provided it installs I will give it a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-11T19:31:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5575",
+    "user": "mabshoff"
+}
+```
 
 A couple remarks:
 
- * no need to add me to the CC - I get email from all tickets anyway
- * there is no hg repo in the spkg. I am fixing that
- * "cp patches/iplib.py src/IPython/iplib.py" should be removed from spkg-install
+* no need to add me to the CC - I get email from all tickets anyway
+* there is no hg repo in the spkg. I am fixing that
+* "cp patches/iplib.py src/IPython/iplib.py" should be removed from spkg-install
 
 I will do all those fixes and provided it installs I will give it a positive review.
 
@@ -59,9 +117,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 19:40:33
+archive/issue_comments_005576.json:
+```json
+{
+    "body": "I did all the above cleanups in \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/ipython-0.8.2.p0.spkg\n\nPositive review since it install and doctests pass. Let's hope we didn't break anything else.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-11T19:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5576",
+    "user": "mabshoff"
+}
+```
 
 I did all the above cleanups in 
 
@@ -74,15 +143,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 19:40:47
+archive/issue_comments_005577.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T19:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5577",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 19:40:47
+archive/issue_comments_005578.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-11T19:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/905",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5578",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0

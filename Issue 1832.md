@@ -1,11 +1,21 @@
 # Issue 1832: change how real(...) is defined in Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/1832
-
-Original creator: was
-
-Original creation time: 2008-01-18 16:12:15
-
+archive/issues_001832.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\n\n\nOn Jan 18, 2008 7:23 AM, Georg wrote:\n> \n> Hi,\n> questions concerning numbers, look at the following session\n> (sage-2.9.3):\n> \n> sage: r = 5/3\n> sage: a = 2.5\n> sage: type(a)\n> <type 'sage.rings.real_mpfr.RealNumber'>\n> sage: type(real(r))\n> <type 'sage.rings.real_double.RealDoubleElement'>\n> sage: type(real(a))\n> <type 'sage.rings.real_mpfr.RealNumber'>\n> sage: type(RR(r))\n> <type 'sage.rings.real_mpfr.RealNumber'>\n> \n> so real() converts a rational to a real_double \n\nreal is defined as:\n    try: return x.real()\n    except AttributeError: return CDF(x).real()\nso it's fallback behavior is to create an RDF, if it hasn't\nbeen otherwise defined.  It should be the \"real part\"\nin general, so for the rationals (and integers) it should be defined to\njust return the rational number.   Even better, the definition\nof the real default method should be changed to try coercing\nx to RDF and if that succeeds, just return x itself.\n\n> and a real_mpfr to a\n> real_mpfr, what's the difference between these types?  Is a\n> real_double just a special case of a real_mpfr with precision 53?  \n\nNo.  A real double is a double precision machine real.  It is much\nfaster than a real_mpfr with precision 53 bits.  However, mpfr's have\nbetter numerical semantics. \n\nsage: a, b = RDF(3993), RDF(18)\nsage: c, d = RR(3993), RR(18)\nsage: time for _ in xrange(10^6): e = a*b\nCPU times: user 0.29 s, sys: 0.01 s, total: 0.30 s\nWall time: 0.31\nsage: time for _ in xrange(10^6): e = c*d\nCPU times: user 0.77 s, sys: 0.01 s, total: 0.78 s\nWall time: 0.83\nsage: time for _ in xrange(10^6): e = a.sin()\nCPU times: user 0.50 s, sys: 0.00 s, total: 0.51 s\nWall time: 0.56\nsage: time for _ in xrange(10^6): e = c.sin()\nCPU times: user 12.24 s, sys: 1.38 s, total: 13.61 s\nWall time: 14.98\n\n> But\n> in this case the variable should be of type real_double?\n> Is there a performance difference between real_mpfr of precision 53\n> and real_double, and if yes how can one convert to a real_double (from\n> real_mpfr with precision 53), like seen above with real() it's not\n> poosible, i just found out to do this by RDF(a), so maybe it's a bug\n> that real(a) is still a real_mpfr?\n\nreal( ... ) means \"real part\"\n\n> How is the real_double implemented, i guess though mpfr?\n\nNo.  It uses GSL for most functionality actually.  CDF for complex\ndouble is similar. \n\nWilliam\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1832\n\n",
+    "created_at": "2008-01-18T16:12:15Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "change how real(...) is defined in Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1832",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -84,42 +94,114 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1832
+
+
+
+
 
 ---
+
+archive/issue_comments_011595.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-18T23:05:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11595",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-18 23:05:46
+archive/issue_comments_011596.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-18T23:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11596",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-18 23:05:46
+archive/issue_comments_011597.json:
+```json
+{
+    "body": "Changing assignee from somebody to mhansen.",
+    "created_at": "2008-01-18T23:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11597",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from somebody to mhansen.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-01-21 20:03:07
+archive/issue_comments_011598.json:
+```json
+{
+    "body": "I can imagine similar problems arising, but this seems like a reasonable fix.  Apply.",
+    "created_at": "2008-01-21T20:03:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11598",
+    "user": "ncalexan"
+}
+```
 
 I can imagine similar problems arising, but this seems like a reasonable fix.  Apply.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-22 01:28:54
+archive/issue_comments_011599.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-22T01:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11599",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-22 01:28:54
+archive/issue_comments_011600.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-22T01:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1832",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11600",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1

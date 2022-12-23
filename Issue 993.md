@@ -1,48 +1,117 @@
 # Issue 993: Pari's gp interpreter has built-in library search path, defeating Sage mechanisms
 
-Issue created by migration from https://trac.sagemath.org/ticket/993
-
-Original creator: cwitty
-
-Original creation time: 2007-10-25 05:01:15
-
+archive/issues_000993.json:
+```json
+{
+    "body": "Assignee: was\n\nPari uses \"-rpath\" (or its equivalent) when building gp, to hardcode a library search path.  This search path is used before the $LD_LIBRARY_PATH set by Sage.  The hardcoded search path includes $SAGE_ROOT/local/lib:/usr/lib .\n\nNormally, this is harmless (and perhaps slightly beneficial, since it means you can run $SAGE_ROOT/local/bin/gp directly, without having the SAGE environment variables set).  However, if you move your Sage installation tree, the hardcoded search path ensures that gp will search /usr/lib before the Sage libraries.  If your /usr/lib has libgmp or libpari-gmp libraries, these will be used instead of Sage's versions, leading (in my case) to one actual doctest failure (where the value of gp(log2), as tested in constants.py, was rounded correctly, rather than the slightly incorrect rounding enshrined in the doctest).\n\nIssue created by migration from https://trac.sagemath.org/ticket/993\n\n",
+    "created_at": "2007-10-25T05:01:15Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "Pari's gp interpreter has built-in library search path, defeating Sage mechanisms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/993",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 Pari uses "-rpath" (or its equivalent) when building gp, to hardcode a library search path.  This search path is used before the $LD_LIBRARY_PATH set by Sage.  The hardcoded search path includes $SAGE_ROOT/local/lib:/usr/lib .
 
 Normally, this is harmless (and perhaps slightly beneficial, since it means you can run $SAGE_ROOT/local/bin/gp directly, without having the SAGE environment variables set).  However, if you move your Sage installation tree, the hardcoded search path ensures that gp will search /usr/lib before the Sage libraries.  If your /usr/lib has libgmp or libpari-gmp libraries, these will be used instead of Sage's versions, leading (in my case) to one actual doctest failure (where the value of gp(log2), as tested in constants.py, was rounded correctly, rather than the slightly incorrect rounding enshrined in the doctest).
 
+Issue created by migration from https://trac.sagemath.org/ticket/993
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-10-25 05:15:29
+archive/issue_comments_006053.json:
+```json
+{
+    "body": "Changing assignee from was to cwitty.",
+    "created_at": "2007-10-25T05:15:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/993#issuecomment-6053",
+    "user": "cwitty"
+}
+```
 
 Changing assignee from was to cwitty.
 
 
+
 ---
 
-Comment by cwitty created at 2007-11-01 06:03:57
+archive/issue_comments_006054.json:
+```json
+{
+    "body": "I've put up a new Pari spkg at http://sage.math.washington.edu/home/cwitty/pari-2.3.2.p4.spkg that disables the use of rpath entirely.  (It's been tested on Linux, but not OS X.)  (This spkg also fixes #830.)",
+    "created_at": "2007-11-01T06:03:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/993#issuecomment-6054",
+    "user": "cwitty"
+}
+```
 
 I've put up a new Pari spkg at http://sage.math.washington.edu/home/cwitty/pari-2.3.2.p4.spkg that disables the use of rpath entirely.  (It's been tested on Linux, but not OS X.)  (This spkg also fixes #830.)
 
 
+
 ---
 
-Comment by was created at 2007-11-01 07:13:33
+archive/issue_comments_006055.json:
+```json
+{
+    "body": "I tested this on osx intel and osx ppc and it works.",
+    "created_at": "2007-11-01T07:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/993#issuecomment-6055",
+    "user": "was"
+}
+```
 
 I tested this on osx intel and osx ppc and it works.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:41:21
+archive/issue_comments_006056.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T10:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/993#issuecomment-6056",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:41:21
+archive/issue_comments_006057.json:
+```json
+{
+    "body": "applied to 2.8.11.alpha0",
+    "created_at": "2007-11-01T10:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/993#issuecomment-6057",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.alpha0

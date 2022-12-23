@@ -1,11 +1,21 @@
 # Issue 1055: Don't factor discriminant for quadratic number fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/1055
-
-Original creator: robertwb
-
-Original creation time: 2007-11-01 20:27:44
-
+archive/issues_001055.json:
+```json
+{
+    "body": "Assignee: was\n\nThe current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. \n\nElements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1055\n\n",
+    "created_at": "2007-11-01T20:27:44Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Don't factor discriminant for quadratic number fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1055",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 The current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. 
@@ -13,42 +23,114 @@ The current implementation of quadratic number fields calculates the discriminan
 Elements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1055
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-03 15:32:40
+archive/issue_comments_006415.json:
+```json
+{
+    "body": "easy to fix?",
+    "created_at": "2007-11-03T15:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6415",
+    "user": "was"
+}
+```
 
 easy to fix?
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-03 17:06:18
+archive/issue_comments_006416.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2007-11-03T17:06:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6416",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-03 22:17:38
+archive/issue_comments_006417.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-03T22:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6417",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_006418.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-03T22:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6418",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-06 21:56:07
+archive/issue_comments_006419.json:
+```json
+{
+    "body": "applied to 2.8.12.rc0",
+    "created_at": "2007-11-06T21:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6419",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.12.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-06 21:56:07
+archive/issue_comments_006420.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-06T21:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6420",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

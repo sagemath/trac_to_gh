@@ -1,11 +1,21 @@
 # Issue 1203: 2.8.13.alpha0: flint doctest failures
 
-Issue created by migration from https://trac.sagemath.org/ticket/1203
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-18 23:12:10
-
+archive/issues_001203.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage-main/sage/libs/flint/fmpz_poly.pyx      **********************************************************************\nFile \"fmpz_poly.pyx\", line 271:\n    sage: g / f\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[3]>\", line 1, in <module>\n        g / f###line 271:\n    sage: g / f\n    TypeError: unsupported operand type(s) for /: 'sage.libs.flint.fmpz_poly.Fmpz_poly' and 'sage.libs.flint.fmpz_poly.Fmpz_poly'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1203\n\n",
+    "created_at": "2007-11-18T23:12:10Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "2.8.13.alpha0: flint doctest failures",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1203",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 
@@ -25,17 +35,45 @@ Exception raised:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1203
+
+
+
+
 
 ---
+
+archive/issue_comments_007451.json:
+```json
+{
+    "body": "Attachment\n\nfix doctest failure",
+    "created_at": "2007-11-19T23:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1203#issuecomment-7451",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 fix doctest failure
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 09:41:19
+archive/issue_comments_007452.json:
+```json
+{
+    "body": "Nobody complained about the patch. I also updated the description to reflect the \"//\". With the updated flint.spkg from \n\nhttp://sage.math.washington.edu/home/mabshoff/flint-0.9-r1072.spkg\n\nit compiles on OSX 10.5 and passes testall on OSX 10.5 and sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-20T09:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1203#issuecomment-7452",
+    "user": "mabshoff"
+}
+```
 
 Nobody complained about the patch. I also updated the description to reflect the "//". With the updated flint.spkg from 
 
@@ -48,15 +86,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 09:41:30
+archive/issue_comments_007453.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-20T09:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1203#issuecomment-7453",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 09:41:30
+archive/issue_comments_007454.json:
+```json
+{
+    "body": "Merged in 2.8.13.rc0.",
+    "created_at": "2007-11-20T09:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1203#issuecomment-7454",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.rc0.

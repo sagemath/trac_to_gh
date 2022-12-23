@@ -1,11 +1,21 @@
 # Issue 1430: [with spkg] sparse eigenvalues and splines
 
-Issue created by migration from https://trac.sagemath.org/ticket/1430
-
-Original creator: jkantor
-
-Original creation time: 2007-12-08 22:57:19
-
+archive/issues_001430.json:
+```json
+{
+    "body": "Assignee: was\n\nscipy has a sandbox directory with experimental or code in development.\nOne of the packages is an arpack wrapper which computes eigenvalues of sparse matrices.\nmatlab uses this in its eigs command. Although the arpack wrapper is not completely finished, it\nhas useful functionality, and since this has been requested multiple times I think including it is good, it will also maybe spur some people to take the wrapper the last mile (me probably).\n\nAlso included is a wrapper of fitpack which has some spline functions (bivariate spline, etc).\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox.spkg\n\n\nThe following shows how to compute the smallest five eigenvalues \n(in magnitude) of a 2000x2000 matrix\n\n\n```\nimport arpack\nfrom scipy import sparse\nm=sparse.csc_matrix(random_matrix(RDF,2000,2000,density=.02).numpy())\ne,v=arpack.eigen(m,5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1430\n\n",
+    "created_at": "2007-12-08T22:57:19Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg] sparse eigenvalues and splines",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1430",
+    "user": "jkantor"
+}
+```
 Assignee: was
 
 scipy has a sandbox directory with experimental or code in development.
@@ -30,32 +40,80 @@ e,v=arpack.eigen(m,5)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1430
+
+
+
+
 
 ---
 
-Comment by jkantor created at 2007-12-13 06:55:07
+archive/issue_comments_009213.json:
+```json
+{
+    "body": "patch with doctests \nhttp://sage.math.washington.edu/home/jkantor/spkgs/arpack_doctest.patch",
+    "created_at": "2007-12-13T06:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1430#issuecomment-9213",
+    "user": "jkantor"
+}
+```
 
 patch with doctests 
 http://sage.math.washington.edu/home/jkantor/spkgs/arpack_doctest.patch
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-13 09:04:55
+archive/issue_comments_009214.json:
+```json
+{
+    "body": "Merged in 2.9.alpha6.",
+    "created_at": "2007-12-13T09:04:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1430#issuecomment-9214",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha6.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-13 09:04:55
+archive/issue_comments_009215.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-13T09:04:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1430#issuecomment-9215",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jkantor created at 2007-12-14 21:49:03
+archive/issue_comments_009216.json:
+```json
+{
+    "body": "new patch, makes the doctest more stable (hopefully)\nhttp://sage.math.washington.edu/home/jkantor/spkgs/arpack_doctest_2.patch\n\n(apply after applying the first one)",
+    "created_at": "2007-12-14T21:49:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1430#issuecomment-9216",
+    "user": "jkantor"
+}
+```
 
 new patch, makes the doctest more stable (hopefully)
 http://sage.math.washington.edu/home/jkantor/spkgs/arpack_doctest_2.patch
@@ -63,9 +121,20 @@ http://sage.math.washington.edu/home/jkantor/spkgs/arpack_doctest_2.patch
 (apply after applying the first one)
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 09:35:59
+archive/issue_comments_009217.json:
+```json
+{
+    "body": "I apply arpack_doctest_2.patch to 2.9.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-15T09:35:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1430#issuecomment-9217",
+    "user": "mabshoff"
+}
+```
 
 I apply arpack_doctest_2.patch to 2.9.rc0.
 

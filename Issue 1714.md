@@ -1,17 +1,44 @@
 # Issue 1714: [with patch, needs review] allow keyword arguments for remote sage methods (sage0)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1714
-
-Original creator: malb
-
-Original creation time: 2008-01-07 15:37:02
-
+archive/issues_001714.json:
+```json
+{
+    "body": "Assignee: was\n\nkeyword arguments were not passed through to the remote sage instance now they are.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1714\n\n",
+    "created_at": "2008-01-07T15:37:02Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] allow keyword arguments for remote sage methods (sage0)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1714",
+    "user": "malb"
+}
+```
 Assignee: was
 
 keyword arguments were not passed through to the remote sage instance now they are.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1714
+
+
+
+
 
 ---
+
+archive/issue_comments_010864.json:
+```json
+{
+    "body": "Attachment\n\nSince #1843 has been merged this patch needs to be revisited now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T05:55:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10864",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,45 +49,113 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-01-29 16:24:04
+archive/issue_comments_010865.json:
+```json
+{
+    "body": "rebased patch against 2.10.1.rc2 (without cputime method)",
+    "created_at": "2008-01-29T16:24:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10865",
+    "user": "malb"
+}
+```
 
 rebased patch against 2.10.1.rc2 (without cputime method)
 
 
+
 ---
 
-Comment by malb created at 2008-01-29 16:24:52
+archive/issue_comments_010866.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-01-29T16:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10866",
+    "user": "malb"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_010867.json:
+```json
+{
+    "body": "Attachment\n\nThe new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.",
+    "created_at": "2008-01-29T16:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10867",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-14 23:38:21
+archive/issue_comments_010868.json:
+```json
+{
+    "body": "Second patch looks fine, I say apply.\n\nThere are no docstrings, but is this code even doctested?  I don't know.",
+    "created_at": "2008-02-14T23:38:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10868",
+    "user": "ncalexan"
+}
+```
 
 Second patch looks fine, I say apply.
 
 There are no docstrings, but is this code even doctested?  I don't know.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 00:24:38
+archive/issue_comments_010869.json:
+```json
+{
+    "body": "Merged sage0_keywords.2.patch in Sage 2.10.2.alpha0",
+    "created_at": "2008-02-15T00:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10869",
+    "user": "mabshoff"
+}
+```
 
 Merged sage0_keywords.2.patch in Sage 2.10.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 00:24:38
+archive/issue_comments_010870.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-15T00:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10870",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

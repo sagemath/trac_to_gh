@@ -1,11 +1,21 @@
 # Issue 844: dsage -- priority queues
 
-Issue created by migration from https://trac.sagemath.org/ticket/844
-
-Original creator: was
-
-Original creation time: 2007-10-10 02:11:49
-
+archive/issues_000844.json:
+```json
+{
+    "body": "Assignee: yqiang\n\nYi,\n\nSuppose I launch 1000 jobs like you saw me do.  Now I want to do\nsomething else, e.g., compute a bunch of things \"at another level\",\nwhile leaving those 1000 jobs (or what remains) in the queue.\nIs there any way to make a d = DSage() that submits jobs ahead\nof the 1000 jobs I submitted before.  E.g.,\n\n```\n    d.eval('foo', priority=-1)\n```\n\n???\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/844\n\n",
+    "created_at": "2007-10-10T02:11:49Z",
+    "labels": [
+        "distribution",
+        "major",
+        "enhancement"
+    ],
+    "title": "dsage -- priority queues",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/844",
+    "user": "was"
+}
+```
 Assignee: yqiang
 
 Yi,
@@ -23,16 +33,42 @@ of the 1000 jobs I submitted before.  E.g.,
 ???
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/844
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-02-01 03:07:26
+archive/issue_comments_005221.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-02-01T03:07:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/844#issuecomment-5221",
+    "user": "mvngu"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-01 03:07:26
+archive/issue_comments_005222.json:
+```json
+{
+    "body": "Close as wontfix. The dsage module has been removed by #7975.",
+    "created_at": "2010-02-01T03:07:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/844#issuecomment-5222",
+    "user": "mvngu"
+}
+```
 
 Close as wontfix. The dsage module has been removed by #7975.

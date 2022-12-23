@@ -1,11 +1,21 @@
 # Issue 1732: block matrix construction
 
-Issue created by migration from https://trac.sagemath.org/ticket/1732
-
-Original creator: robertwb
-
-Original creation time: 2008-01-09 08:24:23
-
+archive/issues_001732.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  dfdeshom@gmail.com\n\n\n```\nIs there a way to construct block matrices in SAGE?\nNot just the \"block_sum\", \"augment\" and \"stack\" functions.\n\nAs an example, let A, B, C, D be matrices and i want to construct a\nmatrix like E=[[A,B],[C,D]]\n\nSuch a feature would be very nice.\n\n-vgermrk-\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1732\n\n",
+    "created_at": "2008-01-09T08:24:23Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "block matrix construction",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1732",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  dfdeshom@gmail.com
@@ -25,13 +35,43 @@ Such a feature would be very nice.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1732
+
+
+
+
 
 ---
+
+archive/issue_comments_010963.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-09T08:26:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10963",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_010964.json:
+```json
+{
+    "body": "Attachment\n\nMuch expanded functionality due to discussion at http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg08958.html\n\nSee the docstrings in the patch for many examples.",
+    "created_at": "2008-01-11T03:14:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10964",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -40,43 +80,111 @@ Much expanded functionality due to discussion at http://www.mail-archive.com/sag
 See the docstrings in the patch for many examples.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-11 03:14:47
+archive/issue_comments_010965.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2008-01-11T03:14:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10965",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-11 03:14:47
+archive/issue_comments_010966.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-11T03:14:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10966",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-11 03:25:57
+archive/issue_comments_010967.json:
+```json
+{
+    "body": "more memory friendly for constant entries",
+    "created_at": "2008-01-11T03:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10967",
+    "user": "robertwb"
+}
+```
 
 more memory friendly for constant entries
 
 
+
 ---
+
+archive/issue_comments_010968.json:
+```json
+{
+    "body": "Attachment\n\nJust wanted to point out that this patch works great for me, both for block diagonal matrices and for creating block matrices from lists.",
+    "created_at": "2008-01-15T01:40:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10968",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 Just wanted to point out that this patch works great for me, both for block diagonal matrices and for creating block matrices from lists.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 03:10:47
+archive/issue_comments_010969.json:
+```json
+{
+    "body": "I merged all three patches into Sage 2.10.alpha3",
+    "created_at": "2008-01-15T03:10:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10969",
+    "user": "mabshoff"
+}
+```
 
 I merged all three patches into Sage 2.10.alpha3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 03:10:47
+archive/issue_comments_010970.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T03:10:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1732#issuecomment-10970",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

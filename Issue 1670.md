@@ -1,11 +1,21 @@
 # Issue 1670: jmol / 3d -- my latest bundle
 
-Issue created by migration from https://trac.sagemath.org/ticket/1670
-
-Original creator: was
-
-Original creation time: 2008-01-03 16:06:53
-
+archive/issues_001670.json:
+```json
+{
+    "body": "Assignee: was\n\nHi,\n\nThis is the latest 3d bundle.\n\nThere will still be some doctest failures in 3d -- just put nodoctest in the files.\n\nThis can be included in Sage, but much work remains before it is released. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1670\n\n",
+    "created_at": "2008-01-03T16:06:53Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "jmol / 3d -- my latest bundle",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1670",
+    "user": "was"
+}
+```
 Assignee: was
 
 Hi,
@@ -16,46 +26,137 @@ There will still be some doctest failures in 3d -- just put nodoctest in the fil
 
 This can be included in Sage, but much work remains before it is released. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1670
+
+
+
+
 
 ---
+
+archive/issue_comments_010603.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-03T20:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10603",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_010604.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-04T06:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10604",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_010605.json:
+```json
+{
+    "body": "Attachment\n\nFigured out how to display text in jmol, got rid of logo, implemented \"ruler\" function for displaying tick marks, ...",
+    "created_at": "2008-01-04T06:19:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10605",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 Figured out how to display text in jmol, got rid of logo, implemented "ruler" function for displaying tick marks, ...
 
 
+
 ---
+
+archive/issue_comments_010606.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-04T07:53:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10606",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_010607.json:
+```json
+{
+    "body": "Attachment\n\nThis replaces one of the same name and merges cleanly (but doctests will fail)",
+    "created_at": "2008-01-04T11:14:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10607",
+    "user": "was"
+}
+```
 
 Attachment
 
 This replaces one of the same name and merges cleanly (but doctests will fail)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-04 11:15:12
+archive/issue_comments_010608.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-04T11:15:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10608",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-04 11:15:12
+archive/issue_comments_010609.json:
+```json
+{
+    "body": "Merged jmol-jan4.hg into 2.9.2.rc0, resolved some small merge conflict introduced #1671. Loads of doctests will fail, but William has assured me that those will be fixed tomorrow.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-04T11:15:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10609",
+    "user": "mabshoff"
+}
+```
 
 Merged jmol-jan4.hg into 2.9.2.rc0, resolved some small merge conflict introduced #1671. Loads of doctests will fail, but William has assured me that those will be fixed tomorrow.
 

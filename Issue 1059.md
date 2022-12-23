@@ -1,11 +1,21 @@
 # Issue 1059: fix lcalc installation on OSX 10.5
 
-Issue created by migration from https://trac.sagemath.org/ticket/1059
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-02 00:24:10
-
+archive/issues_001059.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\n\nin spkg-install to\n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\n\nThe former was needed when we supported windows (e.g., lcalc.exe), and was sort of hack-ish. The latter works around that there is some small problem with strip on os x, which isn't an issue.\n\n    -- William\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1059\n\n",
+    "created_at": "2007-11-02T00:24:10Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "fix lcalc installation on OSX 10.5",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1059",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The fix for lcalc is to change the line
@@ -25,23 +35,60 @@ The former was needed when we supported windows (e.g., lcalc.exe), and was sort 
     -- William
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1059
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-02 00:24:18
+archive/issue_comments_006442.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-02T00:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1059#issuecomment-6442",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 00:41:45
+archive/issue_comments_006443.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-02T00:41:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1059#issuecomment-6443",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-02 00:41:45
+archive/issue_comments_006444.json:
+```json
+{
+    "body": "applied to 2.8.11.rc1 - via with new lcalc-20070107.p0.spkg",
+    "created_at": "2007-11-02T00:41:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1059#issuecomment-6444",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.rc1 - via with new lcalc-20070107.p0.spkg

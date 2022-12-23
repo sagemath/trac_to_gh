@@ -1,11 +1,21 @@
 # Issue 1616: Change asin to arcsin, etc.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1616
-
-Original creator: was
-
-Original creation time: 2007-12-28 20:59:00
-
+archive/issues_001616.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn Dec 25, 2007 9:18 AM, David Joyner <wdjoyner@gmail.com> wrote:\n>\n> Hi:\n>\n> (a) I'm not sure if this is a bug or something missing, but it seems\n> to me it should be easy to plot y=arccsc(x) in SAGE, since it\n> is a basic function of trigonometry and calculus. Two problems:\n> (1) it seems arccsc is not defined,\n\nIt is acsc, just like asin, etc.   This works fine:\n\nsage: show(plot(acsc, 1,2))\n\n> (2) after defining it, it does not seem easy to plot it:\n>\n> sage: acsc = lambda x: CDF(x,0).arccsc()\n> sage: acsc(1.1)\n> 1.14109666064\n> sage: acsc(1.9)\n> 0.554261834452\n> sage: P = plot(RR(acsc(x)),1,2)\n\nRR(acsc(x)) makes no sense; you're pluggin a symbolic variable into\na lambda function, then trying to convert the result to a real field element.\nYou meant to do\n\nsage: acsc = lambda x: float(abs(CDF(x,0).arccsc()))\nsage: show(plot(acsc, 1,2))\n\nSorry sage is so hard to use!  What can we learn from the above?\nThe main problem is acsc versus arccsc, which caused confusion.\nShould we change the names of the \"arc\" functions to arc* instead of a*?\n\nMaple: uses arcsin:\nsage: maple.eval('arcsin(1)')\n'1/2*Pi'\nsage: maple.eval('asin(1)')\n'asin(1)'\n\nMathematica: uses ArcSin:\nsage: mathematica.eval('ASin[1]')\n       ASin[1]\nsage: mathematica.eval('ArcSin[1]')\n\n       Pi\n       --\n       2\n\nMaxima: Uses asin (which is why we currently do):\nsage: maxima.eval('arcsin(1)')\n'arcsin(1)'\nsage: maxima.eval('asin(1)')\n'%pi/2'\n\n\nIf nobody strongly objects in a day or two, I'll open a trac ticket\nto change a*'s to arc*'s.  Better now than later.   And if something\nlike this is confusing David Joyner, then it's to be taken seriously.\n\n> ---------------------------------------------------------------------------\n> <type 'exceptions.TypeError'>             Traceback (most recent call last)\n>\n> /home/wdj/sagestuff/sage-2.8.7.rc1/<ipython console> in <module>()\n>\n> /home/wdj/sagestuff/sage-2.8.7.rc1/<ipython console> in <lambda>(x)\n>\n> /home/wdj/sagestuff/sage-2.8.7.rc1/complex_double.pyx in\n> sage.rings.complex_double.ComplexDoubleField_class.__call__()\n>\n> /home/wdj/sagestuff/sage-2.8.7.rc1/complex_double.pyx in\n> sage.rings.complex_double.ComplexDoubleElement.__init__()\n>\n> <type 'exceptions.TypeError'>: a float is required\n>\n> (b) In fact, what I'd like to do is plot in SAGE what calculus teachers draw\n> frequently on the board: not just one branch of arccsc but rather\n> several of them: ie, the plot of y=csc(x) over say -2\\pi to 2*\\pi,\n> flipped about the 45^o line. Is this easy to do?\n\nThis will do it.  I hope it isn't too ugly:\n\nsage: v = [(csc(x),x) for x in srange(-2*float(pi),2*float(pi),0.1) if x]\nsage: show(line(v), xmin=-20, xmax=20)\n\nThe tricks above:\n  (1) use float(pi) so the iteration through the range of inputs is very fast\n  (2) don't evaluate csc at 0.\n  (3) use a line and flip the order of the points in the graph.\n  (4) use xmin, xmax, since otherwise one large value will through\noff the whole graph.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1616\n\n",
+    "created_at": "2007-12-28T20:59:00Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "Change asin to arcsin, etc.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1616",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -104,15 +114,43 @@ off the whole graph.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1616
+
+
+
+
 
 ---
+
+archive/issue_comments_010273.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-02T19:55:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10273",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-16 22:12:19
+archive/issue_comments_010274.json:
+```json
+{
+    "body": "There is more work left to be done so that the functions always display as arcsin within Sage as well as making sure to treat them as asin when working with Maxima.\n\n\nI will be posting a new patch here in the near future.",
+    "created_at": "2008-01-16T22:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10274",
+    "user": "mhansen"
+}
+```
 
 There is more work left to be done so that the functions always display as arcsin within Sage as well as making sure to treat them as asin when working with Maxima.
 
@@ -120,53 +158,145 @@ There is more work left to be done so that the functions always display as arcsi
 I will be posting a new patch here in the near future.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-16 22:12:19
+archive/issue_comments_010275.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-01-16T22:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10275",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-16 22:12:19
+archive/issue_comments_010276.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-16T22:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10276",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_010277.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-17T00:01:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10277",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_010278.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-17T00:01:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10278",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-17 00:02:01
+archive/issue_comments_010279.json:
+```json
+{
+    "body": "I just put up three new patches (to be applied in order) which pass -testall for me.",
+    "created_at": "2008-01-17T00:02:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10279",
+    "user": "mhansen"
+}
+```
 
 I just put up three new patches (to be applied in order) which pass -testall for me.
 
 
+
 ---
 
-Comment by was created at 2008-01-17 00:57:34
+archive/issue_comments_010280.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-01-17T00:57:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10280",
+    "user": "was"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 20:57:35
+archive/issue_comments_010281.json:
+```json
+{
+    "body": "Merged all three of mahnsen's patches in Sage 2.10.1.alpha0",
+    "created_at": "2008-01-19T20:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10281",
+    "user": "mabshoff"
+}
+```
 
 Merged all three of mahnsen's patches in Sage 2.10.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 20:57:35
+archive/issue_comments_010282.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-19T20:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1616#issuecomment-10282",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

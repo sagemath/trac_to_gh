@@ -1,11 +1,21 @@
 # Issue 1196: inefficiency and inconsistency in calculus numerical conversion
 
-Issue created by migration from https://trac.sagemath.org/ticket/1196
-
-Original creator: was
-
-Original creation time: 2007-11-18 04:14:40
-
+archive/issues_001196.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n> David Harvey did mention to\n> me that getting a numerical approximation of sqrt(2) called maxima, so\n\nThat's not exactly true, since \"Exiting Maxima...\" is not printed out below:\n\nsage: float(sqrt(2))\n1.4142135623730951\nsage: quit\nExiting SAGE (CPU time 0m0.01s, Wall time 0m5.91s).\n\nWhat happens is that if one requests a numerical *float* approximation\nto sqrt(2), then first a float approximation to 2 is computed, then\nthe math.sqrt method is called on it.  \n\nUnfortunately, evidently right now if one requests a high-precision\nnumerical approximation Sage currently does\nend up calling Maxima:\n\n\nsage: RealField(100) ( sqrt(2) )\n1.4142135623730950488016887242\nsage: \nExiting spawned Maxima process.\n\nI consider this a mistake in implementation, which should be optimized. \n\nNotice that\n\nsage: sqrt( RealField(100)(2) )\n1.4142135623730950488016887242\n\ndoes not call Maxima anywhere. \n\nI just investigated, and n(sqrt(2), 100) calls maxima only to simplify\nsqrt(2) before even beginning to do any numerical approximation. \nThis isn't consistent with how the other coercions (e.g., to float) work.   So I've posted\na patch that changes this behavior.  After applying this patch:\n\nsage: RealField(100) ( sqrt(2) )\n1.4142135623730950488016887242\nsage: quit\n(no \"exiting maxima\") \n```\n\n\nNOTE: I've attached two patches.  The first implements the change described above.\nThe second fixes some resulting doctest failures, and also optimizes computation\nof sec, csc, and cot for mpfr elements. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1196\n\n",
+    "created_at": "2007-11-18T04:14:40Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "inefficiency and inconsistency in calculus numerical conversion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1196",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -60,35 +70,98 @@ The second fixes some resulting doctest failures, and also optimizes computation
 of sec, csc, and cot for mpfr elements. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1196
+
+
+
+
 
 ---
+
+archive/issue_comments_007420.json:
+```json
+{
+    "body": "Attachment\n\npatch 1 of 2",
+    "created_at": "2007-11-18T04:15:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#issuecomment-7420",
+    "user": "was"
+}
+```
 
 Attachment
 
 patch 1 of 2
 
 
+
 ---
 
-Comment by was created at 2007-11-18 04:15:26
+archive/issue_comments_007421.json:
+```json
+{
+    "body": "patch 2 of 2",
+    "created_at": "2007-11-18T04:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#issuecomment-7421",
+    "user": "was"
+}
+```
 
 patch 2 of 2
 
 
+
 ---
+
+archive/issue_comments_007422.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-18T04:15:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#issuecomment-7422",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 15:50:45
+archive/issue_comments_007423.json:
+```json
+{
+    "body": "Merged in 2.8.13.rc1.",
+    "created_at": "2007-11-20T15:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#issuecomment-7423",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.rc1.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 15:50:45
+archive/issue_comments_007424.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-20T15:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1196#issuecomment-7424",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 1767: Add SAGE_ATLAS_LIB, SAGE_ATLAS_TARGZ flags to allow use of external atlas
 
-Issue created by migration from https://trac.sagemath.org/ticket/1767
-
-Original creator: jkantor
-
-Original creation time: 2008-01-13 23:48:24
-
+archive/issues_001767.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWe currently provide a SAGE_FORTRAN flag that lets external fortran be used if the user desires.\nSince atlas takes a long time to build, we should have an optional SAGE_ATLAS_LIB flag \nthat would accept the path to a directory that contained libatlas, libcblas, libf77blas, and liblapack. The atlas install script will do some tests to ensure these work and will then create symlinks to them in $SAGE_LOCAL/lib\n\nThere should also be a SAGE_ATLAS_TARGZ with would be the path to a tar or tar.gz with libatlas, libcblas, libf77blas, and liblapack. These would just be copied into $SAGE_LOCAL/lib\n\nAs mentioned some checking needs to be done to ensure the atlas provided is compatible with the fortran we are using, that it actually works, as well as to check that the lapack is the full lapack (8Mb or so) and not a crippled lapack.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1767\n\n",
+    "created_at": "2008-01-13T23:48:24Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Add SAGE_ATLAS_LIB, SAGE_ATLAS_TARGZ flags to allow use of external atlas",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1767",
+    "user": "jkantor"
+}
+```
 Assignee: mabshoff
 
 We currently provide a SAGE_FORTRAN flag that lets external fortran be used if the user desires.
@@ -18,37 +28,96 @@ As mentioned some checking needs to be done to ensure the atlas provided is comp
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1767
+
+
+
+
 
 ---
 
-Comment by aapitzsch created at 2014-07-25 23:12:10
+archive/issue_comments_011182.json:
+```json
+{
+    "body": "`SAGE_ATLAS_LIB` has been introduced long time ago (ticket:1721#comment:7) and IMO there is no need for `SAGE_ATLAS_TARGZ`. So let's close this.",
+    "created_at": "2014-07-25T23:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1767",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1767#issuecomment-11182",
+    "user": "aapitzsch"
+}
+```
 
 `SAGE_ATLAS_LIB` has been introduced long time ago (ticket:1721#comment:7) and IMO there is no need for `SAGE_ATLAS_TARGZ`. So let's close this.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-07-25 23:12:10
+archive/issue_comments_011183.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-07-25T23:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1767",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1767#issuecomment-11183",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-26 08:23:55
+archive/issue_comments_011184.json:
+```json
+{
+    "body": "I agree. But we should try to make it more easy to learn how to avoid ATLAS compilation, see #15371.",
+    "created_at": "2014-07-26T08:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1767",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1767#issuecomment-11184",
+    "user": "chapoton"
+}
+```
 
 I agree. But we should try to make it more easy to learn how to avoid ATLAS compilation, see #15371.
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-26 08:23:55
+archive/issue_comments_011185.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-07-26T08:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1767",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1767#issuecomment-11185",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-08-20 20:32:31
+archive/issue_comments_011186.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-08-20T20:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1767",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1767#issuecomment-11186",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

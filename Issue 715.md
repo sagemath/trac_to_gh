@@ -1,44 +1,102 @@
 # Issue 715: Parents probably not reclaimed due to too much caching
 
-Issue created by migration from https://trac.sagemath.org/ticket/715
-
-Original creator: robertwb
-
-Original creation time: 2007-09-20 19:11:58
-
+archive/issues_000715.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  jpflori zimmerma vbraun robertwb nbruin malb mjo\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/715\n\n",
+    "created_at": "2007-09-20T19:11:58Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Parents probably not reclaimed due to too much caching",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/715",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 CC:  jpflori zimmerma vbraun robertwb nbruin malb mjo
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/715
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-11-14 08:59:41
+archive/issue_comments_003743.json:
+```json
+{
+    "body": "I think this is a bit too vague for a ticket.  Robert, could you be more specific or close this?",
+    "created_at": "2008-11-14T08:59:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3743",
+    "user": "mhansen"
+}
+```
 
 I think this is a bit too vague for a ticket.  Robert, could you be more specific or close this?
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-14 18:25:26
+archive/issue_comments_003744.json:
+```json
+{
+    "body": "The coercion model needs to use weakrefs so that parents aren't needlessly referenced when they're discarded. It is nontrivial to see where the weakrefs need to go, and how to do so without slowing the code down. \n\nThe ticket is still valid.",
+    "created_at": "2008-11-14T18:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3744",
+    "user": "robertwb"
+}
+```
 
 The coercion model needs to use weakrefs so that parents aren't needlessly referenced when they're discarded. It is nontrivial to see where the weakrefs need to go, and how to do so without slowing the code down. 
 
 The ticket is still valid.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-01-20 11:29:18
+archive/issue_comments_003745.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to coercion.",
+    "created_at": "2011-01-20T11:29:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3745",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from basic arithmetic to coercion.
 
 
+
 ---
 
-Comment by jpflori created at 2011-07-04 08:38:12
+archive/issue_comments_003746.json:
+```json
+{
+    "body": "With the piece of code in the desrciption, there is only one reference to these objects in that ZZ._hash_actions dictionary because to build it we test if A1 == A2 and not A1 is A2 as  in coercion_model._action_maps, and because of the current implementation of ellitpic curves, see http://groups.google.com/group/sage-nt/browse_thread/thread/ec8d0ad14a819082 and [#11474](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11474), and decause the above code use only one j-invariant, only ones gets finally stored.\n\nHowever with random curves, I guess there would be all of them.\n\nAbout the weakref, the idea should more be to build something like WeakKeyDictionnary if it does not slow down coercion too much...",
+    "created_at": "2011-07-04T08:38:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3746",
+    "user": "jpflori"
+}
+```
 
 With the piece of code in the desrciption, there is only one reference to these objects in that ZZ._hash_actions dictionary because to build it we test if A1 == A2 and not A1 is A2 as  in coercion_model._action_maps, and because of the current implementation of ellitpic curves, see http://groups.google.com/group/sage-nt/browse_thread/thread/ec8d0ad14a819082 and [#11474](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11474), and decause the above code use only one j-invariant, only ones gets finally stored.
 
@@ -47,9 +105,20 @@ However with random curves, I guess there would be all of them.
 About the weakref, the idea should more be to build something like WeakKeyDictionnary if it does not slow down coercion too much...
 
 
+
 ---
 
-Comment by nbruin created at 2011-07-04 16:05:59
+archive/issue_comments_003747.json:
+```json
+{
+    "body": "The following example also exhibits a suspicious, steady growth in memory use. The only reason I can think of why that would happen is that references to the created finite field remain lying around somewhere, preventing deallocation:\n\n```\nsage: L=prime_range(10^8)\nsage: for p in L: k=GF(p)\n```\n\nIf you change it to the creation of a polynomial ring the memory use rises much faster:\n\n```\nsage: L=prime_range(10^8)\nsage: for p in L: k=GF(p)['t']\n```\n\nAre \"unique\" parents simply *never* deallocated?",
+    "created_at": "2011-07-04T16:05:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3747",
+    "user": "nbruin"
+}
+```
 
 The following example also exhibits a suspicious, steady growth in memory use. The only reason I can think of why that would happen is that references to the created finite field remain lying around somewhere, preventing deallocation:
 
@@ -68,25 +137,58 @@ sage: for p in L: k=GF(p)['t']
 Are "unique" parents simply *never* deallocated?
 
 
+
 ---
 
-Comment by jpflori created at 2011-07-04 16:13:40
+archive/issue_comments_003748.json:
+```json
+{
+    "body": "Be aware that polynomial rings are also cached because of uniqueness of parents, explaining somehow your second memory consumption; see #5970 for example.\n\nFor finite fields I did not check.",
+    "created_at": "2011-07-04T16:13:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3748",
+    "user": "jpflori"
+}
+```
 
 Be aware that polynomial rings are also cached because of uniqueness of parents, explaining somehow your second memory consumption; see #5970 for example.
 
 For finite fields I did not check.
 
 
+
 ---
 
-Comment by jpflori created at 2011-10-24 13:19:39
+archive/issue_comments_003749.json:
+```json
+{
+    "body": "See #11521 for some concrete instances of this problem and some advice to investigate it.",
+    "created_at": "2011-10-24T13:19:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3749",
+    "user": "jpflori"
+}
+```
 
 See #11521 for some concrete instances of this problem and some advice to investigate it.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 10:11:11
+archive/issue_comments_003750.json:
+```json
+{
+    "body": "In my code for the computation Ext algebras of basic algebras, I use letterplace algebras (see #7797), and they involve the creation of many polynomial rings. Only one of them is used at a time, so, the others could be garbage collected. But they aren't, and I suspect this is because of using strong references in the coercion cache.\n\nSee the following example (using #7797)\n\n```\nsage: F.<a,b,c> = FreeAlgebra(GF(4,'z'), implementation='letterplace')\nsage: import gc\nsage: len(gc.get_objects())\n170947\nsage: a*b*c*b*c*a*b*c\na*b*c*b*c*a*b*c\nsage: len(gc.get_objects())\n171556\nsage: del F,a,b,c\nsage: gc.collect()\n81\nsage: len(gc.get_objects())\n171448\nsage: cm = sage.structure.element.get_coercion_model()\nsage: cm.reset_cache()\nsage: gc.collect()\n273\nsage: len(gc.get_objects())\n171108\n```\n\nThat is certainly not a proof of my claim, but it indicates that it might be worth while to investigate.\n\nIn order to facilitate work, I am providing some other tickets that may be related to this:\n\n* #11521 (that might be solved, but needs review)\n* #10262\n* #8905\n* #5970 (this might already be fixed)\n\nI guess that one should use a similar cache model to what I did in #11521: The key for the cache should not just be `(domain,codomain)`, because we want that garbage collection of the cache item is already allowed if just one of domain or codomain is collectable.",
+    "created_at": "2011-12-21T10:11:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3750",
+    "user": "SimonKing"
+}
+```
 
 In my code for the computation Ext algebras of basic algebras, I use letterplace algebras (see #7797), and they involve the creation of many polynomial rings. Only one of them is used at a time, so, the others could be garbage collected. But they aren't, and I suspect this is because of using strong references in the coercion cache.
 
@@ -118,17 +220,28 @@ That is certainly not a proof of my claim, but it indicates that it might be wor
 
 In order to facilitate work, I am providing some other tickets that may be related to this:
 
- * #11521 (that might be solved, but needs review)
- * #10262
- * #8905
- * #5970 (this might already be fixed)
+* #11521 (that might be solved, but needs review)
+* #10262
+* #8905
+* #5970 (this might already be fixed)
 
 I guess that one should use a similar cache model to what I did in #11521: The key for the cache should not just be `(domain,codomain)`, because we want that garbage collection of the cache item is already allowed if just one of domain or codomain is collectable.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 10:41:10
+archive/issue_comments_003751.json:
+```json
+{
+    "body": "I try to wrap my mind around weak references. I found that when creating a weak reference, one can also provide a method that is called when the weak reference becomes invalid. I propose to use such method to erase the deleted object from the cache, regardless whether it appears as domain or codomain.\n\nHere is a proof of concept:\n\n```\nsage: ref = weakref.ref\nsage: D = {}\nsage: def remove(x):\n....:     for a,b,c in D.keys():\n....:         if a is x or b is x or c is x:\n....:             D.__delitem__((a,b,c))\n....:             \nsage: class A:\n....:     def __init__(self,x):\n....:         self.x = x\n....:     def __repr__(self):\n....:         return str(self.x)\n....:     def __del__(self):\n....:         print \"deleting\",self.x\n....:         \nsage: a = A(5)\nsage: b = A(6)\nsage: r = ref(a,remove)\nsage: s = ref(b,remove)\nsage: D[r,r,s] = 1\nsage: D[s,r,s] = 2\nsage: D[s,s,s] = 3\nsage: D[s,s,1] = 4\nsage: D[r,s,1] = 5\nsage: D.values()\n[5, 3, 1, 4, 2]\nsage: del a\ndeleting 5\nsage: D.values()\n[4, 3]\nsage: del b\ndeleting 6\nsage: D.values()\n[]\n```\n",
+    "created_at": "2011-12-21T10:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3751",
+    "user": "SimonKing"
+}
+```
 
 I try to wrap my mind around weak references. I found that when creating a weak reference, one can also provide a method that is called when the weak reference becomes invalid. I propose to use such method to erase the deleted object from the cache, regardless whether it appears as domain or codomain.
 
@@ -173,16 +286,38 @@ sage: D.values()
 
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 14:09:23
+archive/issue_comments_003752.json:
+```json
+{
+    "body": "It turns out that using weak references in the coercion cache will not be enough. Apparently there are other direct references that have to be dealt with.",
+    "created_at": "2011-12-21T14:09:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3752",
+    "user": "SimonKing"
+}
+```
 
 It turns out that using weak references in the coercion cache will not be enough. Apparently there are other direct references that have to be dealt with.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 17:10:06
+archive/issue_comments_003753.json:
+```json
+{
+    "body": "I wonder whether the problem has already been solved. I just tested the example from the ticket description, and get (at least with #11900, #11521 and #11115):\n\n```\nsage: K = GF(1<<55,'t')\nsage: a = K.random_element()\nsage: m0 = get_memory_usage()\nsage: for i in range(1000):\n....:     E = EllipticCurve(j=a); P = E.random_point(); PP = 2*P\n....:     \nsage: get_memory_usage() - m0\n15.22265625\n```\n\n\nI think that this is not particularly scary. I'll repeat the test with vanilla sage-4.8.alpha3, but this will take a while to rebuild.",
+    "created_at": "2011-12-21T17:10:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3753",
+    "user": "SimonKing"
+}
+```
 
 I wonder whether the problem has already been solved. I just tested the example from the ticket description, and get (at least with #11900, #11521 and #11115):
 
@@ -201,18 +336,40 @@ sage: get_memory_usage() - m0
 I think that this is not particularly scary. I'll repeat the test with vanilla sage-4.8.alpha3, but this will take a while to rebuild.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 19:39:46
+archive/issue_comments_003754.json:
+```json
+{
+    "body": "No, even in vanilla sage-4.8.alpha3 I don't find a scary memory leak in this example.\n\nDo we have a better example? One could, of course, argue that one should use weak references for caching even if we do not find an apparent memory leak. I am preparing a patch for it now.",
+    "created_at": "2011-12-21T19:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3754",
+    "user": "SimonKing"
+}
+```
 
 No, even in vanilla sage-4.8.alpha3 I don't find a scary memory leak in this example.
 
 Do we have a better example? One could, of course, argue that one should use weak references for caching even if we do not find an apparent memory leak. I am preparing a patch for it now.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-21 22:45:52
+archive/issue_comments_003755.json:
+```json
+{
+    "body": "Here is an experimental patch.\n\nA new test shows that the weak caching actually works.\n\nNote that the patch also introduces a weak cache for polynomial rings, which might be better to put into #5970. Well, we can sort things out later...",
+    "created_at": "2011-12-21T22:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3755",
+    "user": "SimonKing"
+}
+```
 
 Here is an experimental patch.
 
@@ -221,69 +378,168 @@ A new test shows that the weak caching actually works.
 Note that the patch also introduces a weak cache for polynomial rings, which might be better to put into #5970. Well, we can sort things out later...
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-22 18:29:24
+archive/issue_comments_003756.json:
+```json
+{
+    "body": "It needs work, though. Some tests in sage/structure fail, partially because of pickling, partially because some tests do not follow the new specification of `TripleDict` (namely that the first two parts of each key triple and the associated value must be weak referenceable.",
+    "created_at": "2011-12-22T18:29:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3756",
+    "user": "SimonKing"
+}
+```
 
 It needs work, though. Some tests in sage/structure fail, partially because of pickling, partially because some tests do not follow the new specification of `TripleDict` (namely that the first two parts of each key triple and the associated value must be weak referenceable.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 06:53:36
+archive/issue_comments_003757.json:
+```json
+{
+    "body": "Now I wonder: Should I try to use weak references *and* make it accept stuff that does not allow for weak references?\n\nIn the intended applications, weak references are possible. But in some tests and in the pickle jar, the \"wrong\" type of keys (namely strings and ints) are used.",
+    "created_at": "2011-12-23T06:53:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3757",
+    "user": "SimonKing"
+}
+```
 
-Now I wonder: Should I try to use weak references _and_ make it accept stuff that does not allow for weak references?
+Now I wonder: Should I try to use weak references *and* make it accept stuff that does not allow for weak references?
 
 In the intended applications, weak references are possible. But in some tests and in the pickle jar, the "wrong" type of keys (namely strings and ints) are used.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 09:28:35
+archive/issue_comments_003758.json:
+```json
+{
+    "body": "The only place where the weak references are created is in the `set(...)` method of `TripleDict`. I suggest to simply catch the error that may occur when creating a weak reference, and then use a different way of storing the key. I am now running tests, and I hope that this ticket will be \"needs review\" in a few hours.",
+    "created_at": "2011-12-23T09:28:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3758",
+    "user": "SimonKing"
+}
+```
 
 The only place where the weak references are created is in the `set(...)` method of `TripleDict`. I suggest to simply catch the error that may occur when creating a weak reference, and then use a different way of storing the key. I am now running tests, and I hope that this ticket will be "needs review" in a few hours.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 09:53:49
+archive/issue_comments_003759.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"weak cache coercion\".",
+    "created_at": "2011-12-23T09:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3759",
+    "user": "SimonKing"
+}
+```
 
 Changing keywords from "" to "weak cache coercion".
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 09:53:49
+archive/issue_comments_003760.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-12-23T09:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3760",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 09:53:49
+archive/issue_comments_003761.json:
+```json
+{
+    "body": "With the attached patch, all tests pass for me, and the new features are doctested. Needs review!",
+    "created_at": "2011-12-23T09:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3761",
+    "user": "SimonKing"
+}
+```
 
 With the attached patch, all tests pass for me, and the new features are doctested. Needs review!
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 10:04:26
+archive/issue_comments_003762.json:
+```json
+{
+    "body": "It turns out that this patch only cleanly applies after #11900. So, I introduce #11900 as a dependency. My statement on \"doctests passing\" was with #11900 anyway.",
+    "created_at": "2011-12-23T10:04:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3762",
+    "user": "SimonKing"
+}
+```
 
 It turns out that this patch only cleanly applies after #11900. So, I introduce #11900 as a dependency. My statement on "doctests passing" was with #11900 anyway.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-12-23 10:18:18
+archive/issue_comments_003763.json:
+```json
+{
+    "body": "I was able to apply this patch to vanilla 4.7.2. Should I continue reviewing it like this?\n\nPaul",
+    "created_at": "2011-12-23T10:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3763",
+    "user": "zimmerma"
+}
+```
 
 I was able to apply this patch to vanilla 4.7.2. Should I continue reviewing it like this?
 
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2011-12-23 11:12:33
+archive/issue_comments_003764.json:
+```json
+{
+    "body": "on top of vanilla 4.7.2 several doctests fail:\n\n```\n\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/calculus/interpolators.pyx # 0 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/databases/database.py # 15 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/finance/time_series.pyx # 0 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph_list.py # 4 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph_database.py # 28 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/graph.py # 6 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/graphs/generic_graph.py # 4 doctests failed\n\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/matrix/matrix2.pyx # 3 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/hecke/hecke_operator.py # 1 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/hecke/ambient_module.py # 2 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/subspace.py # 6 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/boundary.py # 3 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/space.py # 3 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/modsym.py # 1 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/modsym/ambient.py # 11 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/modular/abvar/abvar.py # 0 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/schemes/elliptic_curves/heegner.py # 9 doctests failed\n        sage -t  4.7-linux-64bit-ubuntu_10.04.1_lts-x86_64-Linux/devel/sage-715/sage/sandpiles/sandpile.py # Time out\n```\n\nPaul",
+    "created_at": "2011-12-23T11:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3764",
+    "user": "zimmerma"
+}
+```
 
 on top of vanilla 4.7.2 several doctests fail:
 
@@ -313,18 +569,40 @@ on top of vanilla 4.7.2 several doctests fail:
 Paul
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 16:21:55
+archive/issue_comments_003765.json:
+```json
+{
+    "body": "I'll try again on top of vanilla sage-4.8.alpha3. You are right, the patch does apply (almost) cleanly even without #11900. That surprises me, because at some point there was an inconsistency.\n\nHopefully I can see later today whether I get the same errors as you.",
+    "created_at": "2011-12-23T16:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3765",
+    "user": "SimonKing"
+}
+```
 
 I'll try again on top of vanilla sage-4.8.alpha3. You are right, the patch does apply (almost) cleanly even without #11900. That surprises me, because at some point there was an inconsistency.
 
 Hopefully I can see later today whether I get the same errors as you.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 17:28:36
+archive/issue_comments_003766.json:
+```json
+{
+    "body": "It turns out that #11900 is indeed not needed.\n\nI can not reproduce any of the errors you mention.\n\nMoreover, the file \"sage/devel/sage/databases/database.py\", for which you reported an error, does not exist in vanilla sage (not in 4.7.2 and not in 4.8.alpha3).\n\nDid you test other patches before returning to vanilla 4.7.2? Namely, when a patch changes a module from python to cython, and one wants to remove the patch, then it is often needed to also remove any reference to the cython module in `build/sage/...` and in `build/*/sage/...`. For example, when I had #11115 applied and want to remove it again, then I would do `rm build/sage/misc/cachefunc.*` and `rm build/*/sage/misc/cachefunc.*`.",
+    "created_at": "2011-12-23T17:28:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3766",
+    "user": "SimonKing"
+}
+```
 
 It turns out that #11900 is indeed not needed.
 
@@ -335,9 +613,20 @@ Moreover, the file "sage/devel/sage/databases/database.py", for which you report
 Did you test other patches before returning to vanilla 4.7.2? Namely, when a patch changes a module from python to cython, and one wants to remove the patch, then it is often needed to also remove any reference to the cython module in `build/sage/...` and in `build/*/sage/...`. For example, when I had #11115 applied and want to remove it again, then I would do `rm build/sage/misc/cachefunc.*` and `rm build/*/sage/misc/cachefunc.*`.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-12-23 18:09:08
+archive/issue_comments_003767.json:
+```json
+{
+    "body": "yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a\ndifferent clone.\n\nPaul",
+    "created_at": "2011-12-23T18:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3767",
+    "user": "zimmerma"
+}
+```
 
 yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a
 different clone.
@@ -345,9 +634,20 @@ different clone.
 Paul
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-23 18:15:15
+archive/issue_comments_003768.json:
+```json
+{
+    "body": "Replying to [comment:27 zimmerma]:\n> yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a\n> different clone.\n\nBut where does the databases/database.py file come from?\n\nAnd could you post one or two examples for the errors you are getting (i.e. not just which files are problematic, but what commands exactly fail)?",
+    "created_at": "2011-12-23T18:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3768",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:27 zimmerma]:
 > yes I tried other patches (#10983, #8720, #10596) before #715, but each one with a
@@ -358,25 +658,58 @@ But where does the databases/database.py file come from?
 And could you post one or two examples for the errors you are getting (i.e. not just which files are problematic, but what commands exactly fail)?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-24 18:16:31
+archive/issue_comments_003769.json:
+```json
+{
+    "body": "FWIW: I started with sage-4.8.alpha3, have #9138, #11900 and #715 applied, and all doctests pass. I don't know why the patchbot isn't even trying (although it says \"retry: True\"), but from my point of view, everything is alright.",
+    "created_at": "2011-12-24T18:16:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3769",
+    "user": "SimonKing"
+}
+```
 
 FWIW: I started with sage-4.8.alpha3, have #9138, #11900 and #715 applied, and all doctests pass. I don't know why the patchbot isn't even trying (although it says "retry: True"), but from my point of view, everything is alright.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-26 16:18:16
+archive/issue_comments_003770.json:
+```json
+{
+    "body": "I have simplified the routine that removes cache items when a weak reference became invalid. The tests all pass for me.\n\nApply trac715_weak_coercion_cache.patch",
+    "created_at": "2011-12-26T16:18:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3770",
+    "user": "SimonKing"
+}
+```
 
 I have simplified the routine that removes cache items when a weak reference became invalid. The tests all pass for me.
 
 Apply trac715_weak_coercion_cache.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-28 23:18:27
+archive/issue_comments_003771.json:
+```json
+{
+    "body": "One question: Currently, my patch uses weak references only for the first two parts of the key. Should it also use weak references to the value, when possible?\n\nBy \"when possible\", I mean that not all values allow weak references - if it is possible then a weak reference is used, otherwise a strong reference is used. This might contribute to fixing the memory leak in #11521, but it might have a speed penalty.\n\nConcerning #11521: The point is that an action (which currently does not allow weak references, but that might change) has a strong reference to the objects that are used for storing it in the cache. Hence, an action is not collectable with the current patch.\n\nThoughts?",
+    "created_at": "2011-12-28T23:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3771",
+    "user": "SimonKing"
+}
+```
 
 One question: Currently, my patch uses weak references only for the first two parts of the key. Should it also use weak references to the value, when possible?
 
@@ -387,39 +720,96 @@ Concerning #11521: The point is that an action (which currently does not allow w
 Thoughts?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-29 22:26:20
+archive/issue_comments_003772.json:
+```json
+{
+    "body": "Use weak references in the coercion cache",
+    "created_at": "2011-12-29T22:26:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3772",
+    "user": "SimonKing"
+}
+```
 
 Use weak references in the coercion cache
 
 
+
 ---
+
+archive/issue_comments_003773.json:
+```json
+{
+    "body": "Attachment\n\nI have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.",
+    "created_at": "2011-12-29T22:28:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3773",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 I have slightly updated some of the new examples: In the old patch version, I had created `TripleDict(10)`, but meanwhile I learnt that the given parameter should better be odd (actually a prime). So, in the new patch version, it is `TripleDict(11)`.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 09:24:05
+archive/issue_comments_003774.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-12-30T09:24:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3774",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 09:24:05
+archive/issue_comments_003775.json:
+```json
+{
+    "body": "I think I need to modify one detail:\n\nFor efficiency and since domain/codomain of a map must be identic with (and not just equal to) the given keys, my patch compares them by \"is\" rather than \"==\". But I think one should still compare the third item of a key via \"==\" and not \"is\". I need to do some tests first...",
+    "created_at": "2011-12-30T09:24:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3775",
+    "user": "SimonKing"
+}
+```
 
 I think I need to modify one detail:
 
 For efficiency and since domain/codomain of a map must be identic with (and not just equal to) the given keys, my patch compares them by "is" rather than "==". But I think one should still compare the third item of a key via "==" and not "is". I need to do some tests first...
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 13:59:50
+archive/issue_comments_003776.json:
+```json
+{
+    "body": "It really is not an easy question whether or not we should have \"is\" or \"==\".\n\nOn the one hand, we have the lines\n\n```\n!python\n            if y_mor is not None:\n                all.append(\"Coercion on right operand via\")\n                all.append(y_mor)\n                if res is not None and res is not y_mor.codomain():\n                    raise RuntimeError, (\"BUG in coercion model: codomains not equal!\", x_mor, y_mor)\n```\n\nin sage/structure/coerce.pyx seem to imply that comparison via \"is\" is the right thing to do.\n\nBut in the same file, the coercion model copes with the fact that some parents are not unique:\n\n```\n!python\n        # Make sure the domains are correct\n        if R_map.domain() is not R:\n            if fix:\n                connecting = R_map.domain().coerce_map_from(R)\n                if connecting is not None:\n                    R_map = R_map * connecting\n            if R_map.domain() is not R:\n                raise RuntimeError, (\"BUG in coercion model, left domain must be original parent\", R, R_map)\n        if S_map is not None and S_map.domain() is not S:\n            if fix:\n                connecting = S_map.domain().coerce_map_from(S)\n                if connecting is not None:\n                    S_map = S_map * connecting\n            if S_map.domain() is not S:\n                raise RuntimeError, (\"BUG in coercion model, right domain must be original parent\", S, S_map)\n```\n\nThat would suggest that comparison by \"==\" (the old behaviour or `TripleDict`) is fine.\n\nPerhaps we should actually have to variants of `TripleDict`, one using \"is\" and one using \"==\".\n\nNote another detail of sage/structure/coerce.pyx: We have\n\n```\n    cpdef verify_action(self, action, R, S, op, bint fix=True):\n```\n\nbut\n\n```\n    cpdef verify_coercion_maps(self, R, S, homs, bint fix=False):\n```\n\nNote the different default value for \"fix\". If \"fix\" is True then the coercion model tries to cope with non-unique parents by prepending a conversion between the two equal copies of a parent.\n\nSince the default is to fix non-unique parents for actions, but not for coercion maps, I suggest that a \"==\"-`TripleDict` should be used for actions and an \"is\"-`TripleDict` for coercions.",
+    "created_at": "2011-12-30T13:59:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3776",
+    "user": "SimonKing"
+}
+```
 
 It really is not an easy question whether or not we should have "is" or "==".
 
@@ -478,18 +868,40 @@ Note the different default value for "fix". If "fix" is True then the coercion m
 Since the default is to fix non-unique parents for actions, but not for coercion maps, I suggest that a "=="-`TripleDict` should be used for actions and an "is"-`TripleDict` for coercions.
 
 
+
 ---
 
-Comment by jpflori created at 2011-12-30 14:07:01
+archive/issue_comments_003777.json:
+```json
+{
+    "body": "I guess a choice has to be made and that it should at lest be as consistent as possible.\nWhat you propose makes sense to me, is not too far from the current model and gives a little more conssitency.\nMoreover, when both TripleDicts will have been implemented, changing our mind later will be trivial.",
+    "created_at": "2011-12-30T14:07:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3777",
+    "user": "jpflori"
+}
+```
 
 I guess a choice has to be made and that it should at lest be as consistent as possible.
 What you propose makes sense to me, is not too far from the current model and gives a little more conssitency.
 Moreover, when both TripleDicts will have been implemented, changing our mind later will be trivial.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 14:49:32
+archive/issue_comments_003778.json:
+```json
+{
+    "body": "There is another detail. Even in the old version of `TripleDict`, we have\n\n```\n    It is implemented as a list of lists (hereafter called buckets). The bucket \n    is chosen according to a very simple hash based on the object pointer.\n    and each bucket is of the form [k1, k2, k3, value, k1, k2, k3, value, ...]\n    on which a linear search is performed. \n```\n\nSo, the choice of a bucket is based on the object pointer - but then it is not consequent to compare by \"==\".",
+    "created_at": "2011-12-30T14:49:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3778",
+    "user": "SimonKing"
+}
+```
 
 There is another detail. Even in the old version of `TripleDict`, we have
 
@@ -503,18 +915,40 @@ There is another detail. Even in the old version of `TripleDict`, we have
 So, the choice of a bucket is based on the object pointer - but then it is not consequent to compare by "==".
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 14:55:16
+archive/issue_comments_003779.json:
+```json
+{
+    "body": "To be precise: The *old* behaviour was not consequent. The bucket depended on `id(k1),id(k2),id(k3)`, but the comparison was by \"==\" rather than by \"is\".\n\nExperimentally, I will provide two versions of `TripleDict`, one using \"hash\"for determining the bucket and doing comparison by \"==\", the other using \"id\" for determining the bucket and doing comparison by \"is\".",
+    "created_at": "2011-12-30T14:55:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3779",
+    "user": "SimonKing"
+}
+```
 
-To be precise: The _old_ behaviour was not consequent. The bucket depended on `id(k1),id(k2),id(k3)`, but the comparison was by "==" rather than by "is".
+To be precise: The *old* behaviour was not consequent. The bucket depended on `id(k1),id(k2),id(k3)`, but the comparison was by "==" rather than by "is".
 
 Experimentally, I will provide two versions of `TripleDict`, one using "hash"for determining the bucket and doing comparison by "==", the other using "id" for determining the bucket and doing comparison by "is".
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 23:30:08
+archive/issue_comments_003780.json:
+```json
+{
+    "body": "As announced, I have attached an experimental patch. It provides two variants of `TripleDict`, namely using \"==\" or \"is\" for comparison, respectively. Both are used, namely for caching coerce maps or actions, respectively.\n\nIt could be that a last-minute change was interfering, but I am confident that all but the following three tests pass:\n\n```\n        sage -t  devel/sage-main/doc/en/bordeaux_2008/nf_introduction.rst # 1 doctests failed\n        sage -t  devel/sage-main/sage/modular/modsym/space.py # Killed/crashed\n        sage -t  devel/sage-main/sage/structure/coerce_dict.pyx # 3 doctests failed\n```\n\n\nThe memory leak exposed in the ticket description is fixed (more or less):\n\n```\nsage: K = GF(1<<55,'t')\nsage: a = K.random_element()\nsage: for i in range(500):\n....:     E = EllipticCurve(j=a)\n....:     P = E.random_point()\n....:     Q = 2*P\n....:     \nsage: import gc\nsage: gc.collect()\n862\nsage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field\nsage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]\nsage: len(LE)\n2\n```\n\n\nI am not sure whether this makes #11521 redundant.\n\nFor now, it is \"needs work, because of the doctests. But you can already play with the patch.",
+    "created_at": "2011-12-30T23:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3780",
+    "user": "SimonKing"
+}
+```
 
 As announced, I have attached an experimental patch. It provides two variants of `TripleDict`, namely using "==" or "is" for comparison, respectively. Both are used, namely for caching coerce maps or actions, respectively.
 
@@ -552,16 +986,38 @@ I am not sure whether this makes #11521 redundant.
 For now, it is "needs work, because of the doctests. But you can already play with the patch.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-30 23:32:31
+archive/issue_comments_003781.json:
+```json
+{
+    "body": "Sorry, only TWO doctests should fail: The tests of sage/structure/coerce_dict.pyx are, of course, fixed.",
+    "created_at": "2011-12-30T23:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3781",
+    "user": "SimonKing"
+}
+```
 
 Sorry, only TWO doctests should fail: The tests of sage/structure/coerce_dict.pyx are, of course, fixed.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-31 13:07:47
+archive/issue_comments_003782.json:
+```json
+{
+    "body": "The segfault in `sage -t  devel/sage-main/sage/modular/modsym/space.py` seems difficult to debug.\n\nInspecting a core dump with gdb did not help at all:\n\n```\n(gdb) bt\n#0  0x00007f61d12ca097 in kill () from /lib64/libc.so.6\n#1  0x00007f61d0044a40 in sigdie () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libcsage.so\n#2  0x00007f61d0044646 in sage_signal_handler () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libcsage.so\n#3  <signal handler called>\n#4  0x00007f61cf080520 in mpn_submul_1 () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8\n#5  0x00007f61cf0b4f0f in __gmpn_sb_bdiv_q () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8\n#6  0x00007f61cf0b6428 in __gmpn_divexact () from /home/simon/SAGE/sage-4.8.alpha3/local/lib/libgmp.so.8\n#7  0x00007f61ccbf4d64 in ?? ()\n...\n#191 0x55c0ade81d9aeecf in ?? ()\n#192 0xffffe4b8b6920b7b in ?? ()\n#193 0x000000000ac854cf in ?? ()\n#194 0x0000000000000000 in ?? ()\n```\n\n\nHow could one proceed? What other debugging techniques can you recommend?",
+    "created_at": "2011-12-31T13:07:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3782",
+    "user": "SimonKing"
+}
+```
 
 The segfault in `sage -t  devel/sage-main/sage/modular/modsym/space.py` seems difficult to debug.
 
@@ -588,9 +1044,20 @@ Inspecting a core dump with gdb did not help at all:
 How could one proceed? What other debugging techniques can you recommend?
 
 
+
 ---
 
-Comment by vbraun created at 2011-12-31 13:21:37
+archive/issue_comments_003783.json:
+```json
+{
+    "body": "Looks like you did not tell gdb about the executable you were running. You should run \n\n```\ngdb --core=<corefile> $SAGE_LOCAL/bin/python\n```\n",
+    "created_at": "2011-12-31T13:21:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3783",
+    "user": "vbraun"
+}
+```
 
 Looks like you did not tell gdb about the executable you were running. You should run 
 
@@ -600,9 +1067,20 @@ gdb --core=<corefile> $SAGE_LOCAL/bin/python
 
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-31 14:11:30
+archive/issue_comments_003784.json:
+```json
+{
+    "body": "Replying to [comment:42 vbraun]:\n> Looks like you did not tell gdb about the executable you were running.\n\nNo, I did tell it. I did\n\n```\ngdb --core=715doublecore ~/SAGE/sage-4.8.alpha3/local/bin/python\n```\n\n\nShould I do it inside a Sage shell?",
+    "created_at": "2011-12-31T14:11:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3784",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:42 vbraun]:
 > Looks like you did not tell gdb about the executable you were running.
@@ -617,30 +1095,74 @@ gdb --core=715doublecore ~/SAGE/sage-4.8.alpha3/local/bin/python
 Should I do it inside a Sage shell?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-31 14:15:59
+archive/issue_comments_003785.json:
+```json
+{
+    "body": "No, doing the same inside a sage shell did not help either.",
+    "created_at": "2011-12-31T14:15:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3785",
+    "user": "SimonKing"
+}
+```
 
 No, doing the same inside a sage shell did not help either.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-31 14:59:43
+archive/issue_comments_003786.json:
+```json
+{
+    "body": "I am now printing some debugging information into a file, which hopefully means that I am coming closer to the source of the problem. The segfault arises in line 2165 of sage/modular/modsym/space.py",
+    "created_at": "2011-12-31T14:59:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3786",
+    "user": "SimonKing"
+}
+```
 
 I am now printing some debugging information into a file, which hopefully means that I am coming closer to the source of the problem. The segfault arises in line 2165 of sage/modular/modsym/space.py
 
 
+
 ---
 
-Comment by SimonKing created at 2011-12-31 15:18:40
+archive/issue_comments_003787.json:
+```json
+{
+    "body": "Sorry, it was the wrong line number.",
+    "created_at": "2011-12-31T15:18:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3787",
+    "user": "SimonKing"
+}
+```
 
 Sorry, it was the wrong line number.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-01 19:18:25
+archive/issue_comments_003788.json:
+```json
+{
+    "body": "Meanwhile I am rather desperate: I have not the faintest idea how the segfault occurs.\n\nTherefore I used some debugging function that I registered using `sys.settrace(...)`, so that all Python commands in the critical example are written into a file.\n\nI posted logs for the [unpatched](http://sage.math.washington.edu/home/SimonKing/SAGE/tickets/715/fulltrace) and the [patched](http://sage.math.washington.edu/home/SimonKing/SAGE/tickets/715/fulltracePatched) version.\n\nThere is one obvious difference of the two logs: The hash is called more often in the patched version. Calling the hash is rather inefficient for matrix spaces: Each time when the hash of a matrix space is called, the matrix space's string representation is created, which is slow. I suggest to cache the hash value (like what I did for polynomial rings in #9944), but this should be on a different ticket.\n\nApart from that, I can't spot an obvious difference. Do you have any clue?",
+    "created_at": "2012-01-01T19:18:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3788",
+    "user": "SimonKing"
+}
+```
 
 Meanwhile I am rather desperate: I have not the faintest idea how the segfault occurs.
 
@@ -653,9 +1175,20 @@ There is one obvious difference of the two logs: The hash is called more often i
 Apart from that, I can't spot an obvious difference. Do you have any clue?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-02 07:58:05
+archive/issue_comments_003789.json:
+```json
+{
+    "body": "It turns out that using `TripleDictById` for the _action_maps cache makes the segfault disappear.\n\nIf one uses `TripleDict` for _coercion_maps then\n\n```\nsage -t  devel/sage-main/sage/modular/modsym/space.py\n```\n\ntakes 30 seconds, but if one also uses `TripleDictById` then it only takes 23 seconds.\n\nMy conclusion:\n\n* The old version of `TripleDict` was buggy: It uses `id(...)` for the hash table, but `==` for comparison. I think that had to be fixed.\n* The new version of `TripleDict` uses `hash(...)` for the hash table and `==` for comparison. That should be fine, but (1) it leads to a segfault and (2) it leads to a slowdown. After all, calling `hash(...)` is a lot slower than determining the address.\n* The new `TripleDictById` uses `id(...)` for the hash table and `... is ...` for comparison. Problem: It would probably not fix the memory leak.\n\nHowever, the fact that using `TripleDictById` fixes the segfault makes me wonder: Perhaps the segfault occurs when calling `hash(...)` on a parent? Namely, in some cases, and action will already be constructed during initialisation of a parent. But if the hash is determined based on cdef data that aren't initialised, a segfault can easily occur.\n\nI'll investigate that further. In any case, we need to keep an eye on the potential slow-down.",
+    "created_at": "2012-01-02T07:58:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3789",
+    "user": "SimonKing"
+}
+```
 
 It turns out that using `TripleDictById` for the _action_maps cache makes the segfault disappear.
 
@@ -669,18 +1202,29 @@ takes 30 seconds, but if one also uses `TripleDictById` then it only takes 23 se
 
 My conclusion:
 
- * The old version of `TripleDict` was buggy: It uses `id(...)` for the hash table, but `==` for comparison. I think that had to be fixed.
- * The new version of `TripleDict` uses `hash(...)` for the hash table and `==` for comparison. That should be fine, but (1) it leads to a segfault and (2) it leads to a slowdown. After all, calling `hash(...)` is a lot slower than determining the address.
- * The new `TripleDictById` uses `id(...)` for the hash table and `... is ...` for comparison. Problem: It would probably not fix the memory leak.
+* The old version of `TripleDict` was buggy: It uses `id(...)` for the hash table, but `==` for comparison. I think that had to be fixed.
+* The new version of `TripleDict` uses `hash(...)` for the hash table and `==` for comparison. That should be fine, but (1) it leads to a segfault and (2) it leads to a slowdown. After all, calling `hash(...)` is a lot slower than determining the address.
+* The new `TripleDictById` uses `id(...)` for the hash table and `... is ...` for comparison. Problem: It would probably not fix the memory leak.
 
 However, the fact that using `TripleDictById` fixes the segfault makes me wonder: Perhaps the segfault occurs when calling `hash(...)` on a parent? Namely, in some cases, and action will already be constructed during initialisation of a parent. But if the hash is determined based on cdef data that aren't initialised, a segfault can easily occur.
 
 I'll investigate that further. In any case, we need to keep an eye on the potential slow-down.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-02 11:48:25
+archive/issue_comments_003790.json:
+```json
+{
+    "body": "The segfault does not occur while computing a hash. It occurs in line 468 of sage/matrix/matrix_rational_dense.pyx, namely\n\n```\n                mpq_mul(y, w._entries[j], self._matrix[j][i])\n```\n\nI also tested, just before that line, that `w[j]` and `self.get_unsafe(j,i)` (which accesses `w._entries[j]` and `self._matrix[j],[i]`) works.\n\nAt this point, I am at my wits' end. To me, it looks like a change in the way of comparing dictionary keys modifies internals of mpir (IIRC, this is where mpq_mul is defined). gdb can not decipher the core file, and I don't know how valgrind can be used.\n\nWhat else?",
+    "created_at": "2012-01-02T11:48:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3790",
+    "user": "SimonKing"
+}
+```
 
 The segfault does not occur while computing a hash. It occurs in line 468 of sage/matrix/matrix_rational_dense.pyx, namely
 
@@ -695,16 +1239,38 @@ At this point, I am at my wits' end. To me, it looks like a change in the way of
 What else?
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-02 17:03:38
+archive/issue_comments_003791.json:
+```json
+{
+    "body": "Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.",
+    "created_at": "2012-01-02T17:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3791",
+    "user": "vbraun"
+}
+```
 
 Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-02 18:39:54
+archive/issue_comments_003792.json:
+```json
+{
+    "body": "Replying to [comment:50 vbraun]:\n> Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.\n\nWhat???\n\nAccording to `hg qapplied`, I have\n\n```\ntrac_12057_fix_doctests.patch\n9138_flat.patch\ntrac_11319_prime_field_coercion.patch\ntrac_11319_number_field_example.patch\ntrac11900_category_speedup_combined.patch\n11115_flat.patch\ntrac_11115_docfix.patch\ntrac715_two_tripledicts.patch\n```\n\n\nRemark: I work on `openSUSE`, hence, I had to apply #12131 and thus also its dependency #12057. I doubt that the absence of #11115 is responsible for Sage not starting. And all other patches are dependencies.\n\nWhat error occurs when you start Sage with my patch? If we are lucky, it gives some clue why the segfault in the one doctest occurs.\n\nBest regards,\n\nSimon",
+    "created_at": "2012-01-02T18:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3792",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:50 vbraun]:
 > Which patches did you apply? With only `trac715_two_tripledicts.patch` applied sage doesn't start.
@@ -734,34 +1300,78 @@ Best regards,
 Simon
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-02 18:40:38
+archive/issue_comments_003793.json:
+```json
+{
+    "body": "PS: I started on top of sage-4.8.alpha3.",
+    "created_at": "2012-01-02T18:40:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3793",
+    "user": "SimonKing"
+}
+```
 
 PS: I started on top of sage-4.8.alpha3.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 06:25:17
+archive/issue_comments_003794.json:
+```json
+{
+    "body": "Meanwhile I built sage-5.0.prealpha0 and applied #11780 and [attachment:trac715_two_tripledicts.patch]. Sage starts fine.\n\nSo, Volker, what had you have applied when Sage didn't start?",
+    "created_at": "2012-01-03T06:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3794",
+    "user": "SimonKing"
+}
+```
 
 Meanwhile I built sage-5.0.prealpha0 and applied #11780 and [attachment:trac715_two_tripledicts.patch]. Sage starts fine.
 
 So, Volker, what had you have applied when Sage didn't start?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 09:33:46
+archive/issue_comments_003795.json:
+```json
+{
+    "body": "I think I made a progress: I found that the vector space that is part of the crash is *not unique*! So, the `VectorMatrixAction` is defined for a vector space that is equal to but not identical with the vector space it is acting on!\n\nThe natural solution is to try and find out why the vector space is not unique. Vector spaces should be created using the `VectorSpace` constructor, that relies on a `UniqueFactory`. But apparently some very old code is constructing a vector space directly - it wouldn't be the first time that this is causing trouble.",
+    "created_at": "2012-01-03T09:33:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3795",
+    "user": "SimonKing"
+}
+```
 
-I think I made a progress: I found that the vector space that is part of the crash is _not unique_! So, the `VectorMatrixAction` is defined for a vector space that is equal to but not identical with the vector space it is acting on!
+I think I made a progress: I found that the vector space that is part of the crash is *not unique*! So, the `VectorMatrixAction` is defined for a vector space that is equal to but not identical with the vector space it is acting on!
 
 The natural solution is to try and find out why the vector space is not unique. Vector spaces should be created using the `VectorSpace` constructor, that relies on a `UniqueFactory`. But apparently some very old code is constructing a vector space directly - it wouldn't be the first time that this is causing trouble.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 09:43:10
+archive/issue_comments_003796.json:
+```json
+{
+    "body": "PS: Note that vector spaces with different inner product are considered equal.\n\n```\nsage: V = QQ^5\nsage: M = random_matrix(QQ,5,5)\nsage: M.set_immutable()\nsage: W = VectorSpace(QQ,5,inner_product_matrix=M)\nsage: V\nVector space of dimension 5 over Rational Field\nsage: W\nAmbient quadratic space of dimension 5 over Rational Field\nInner product matrix:\n[   0  1/2    1   -1   -1]\n[   0    0    0    1 -1/2]\n[  -2    0    0    0    0]\n[   1    0    2    0    0]\n[   0   -2    0    1    0]\nsage: V==W\nTrue\nsage: type(V)==type(W)\nFalse\n```\n\n\nBut this is not the problem here: The two equal vector spaces involved in the crash have default inner product.\n\nThe non-uniqueness makes me think of another potential solution: The coercion model has a method \"verify_action\". This is *only* called when a new action is found, but not when an action is taken from the cache.\n\nSo, in addition to fixing the non-unique vector space in the modular symbols code, one could *always* verify the action. Probably this would be too slow, though.",
+    "created_at": "2012-01-03T09:43:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3796",
+    "user": "SimonKing"
+}
+```
 
 PS: Note that vector spaces with different inner product are considered equal.
 
@@ -789,28 +1399,61 @@ False
 
 But this is not the problem here: The two equal vector spaces involved in the crash have default inner product.
 
-The non-uniqueness makes me think of another potential solution: The coercion model has a method "verify_action". This is _only_ called when a new action is found, but not when an action is taken from the cache.
+The non-uniqueness makes me think of another potential solution: The coercion model has a method "verify_action". This is *only* called when a new action is found, but not when an action is taken from the cache.
 
-So, in addition to fixing the non-unique vector space in the modular symbols code, one could _always_ verify the action. Probably this would be too slow, though.
+So, in addition to fixing the non-unique vector space in the modular symbols code, one could *always* verify the action. Probably this would be too slow, though.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-01-03 09:59:31
+archive/issue_comments_003797.json:
+```json
+{
+    "body": "Aha! We have a sparse versus a dense vector space! Here is our problem!",
+    "created_at": "2012-01-03T09:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3797",
+    "user": "SimonKing"
+}
+```
 
 Aha! We have a sparse versus a dense vector space! Here is our problem!
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-03 10:08:35
+archive/issue_comments_003798.json:
+```json
+{
+    "body": "I did manage to install it and reproduce the crash. The core dump shows that the stack is completely corrupted before we called into gmp code.",
+    "created_at": "2012-01-03T10:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3798",
+    "user": "vbraun"
+}
+```
 
 I did manage to install it and reproduce the crash. The core dump shows that the stack is completely corrupted before we called into gmp code.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 10:13:09
+archive/issue_comments_003799.json:
+```json
+{
+    "body": "Hi Volker,\n\ngood that you managed to install it. Meanwhile I think I can debug it without the core dump - I think mistaking a sparse with a dense vector space is a pretty convincing reason for a segfault.\n\n\nHowever, I hate that old code!!\n\nI tried `verify_action`, but then hundreds of tests fail in sage/modular/modsym/space.py. So, apparently it is very common to have non-unique parents in such a way that the action can *not* be fixed!\n\nFor example, I see errors like\n\n```\n    TypeError: Coercion of [Infinity] - [0] (of type <class 'sage.modular.modsym.boundary.BoundarySpaceElement'>) into Space of Boundary Modular Symbols for Congruence Subgroup Gamma0(43) of weight 2 and over Rational Field not (yet) defined.\n```\n\n\nAnyway, `verify_action` is no solution.",
+    "created_at": "2012-01-03T10:13:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3799",
+    "user": "SimonKing"
+}
+```
 
 Hi Volker,
 
@@ -819,7 +1462,7 @@ good that you managed to install it. Meanwhile I think I can debug it without th
 
 However, I hate that old code!!
 
-I tried `verify_action`, but then hundreds of tests fail in sage/modular/modsym/space.py. So, apparently it is very common to have non-unique parents in such a way that the action can _not_ be fixed!
+I tried `verify_action`, but then hundreds of tests fail in sage/modular/modsym/space.py. So, apparently it is very common to have non-unique parents in such a way that the action can *not* be fixed!
 
 For example, I see errors like
 
@@ -831,9 +1474,20 @@ For example, I see errors like
 Anyway, `verify_action` is no solution.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 10:18:06
+archive/issue_comments_003800.json:
+```json
+{
+    "body": "Hi all,\n\nJust wanted to say I had no problem installing the new patch on top of sage.4.8.alpha5 with tickets #9138 #11900 #1115 #715 and #11521 in that order and Sage launches.\nI'll start a make ptestlong now.",
+    "created_at": "2012-01-03T10:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3800",
+    "user": "jpflori"
+}
+```
 
 Hi all,
 
@@ -841,30 +1495,76 @@ Just wanted to say I had no problem installing the new patch on top of sage.4.8.
 I'll start a make ptestlong now.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 10:32:09
+archive/issue_comments_003801.json:
+```json
+{
+    "body": "Hi Jean-Pierre,\n\ndon't start ptestlong - I am about to update the new patch such that the segfault does not occur and the time for executing the test is fine and the memleak is gone!",
+    "created_at": "2012-01-03T10:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3801",
+    "user": "SimonKing"
+}
+```
 
 Hi Jean-Pierre,
 
 don't start ptestlong - I am about to update the new patch such that the segfault does not occur and the time for executing the test is fine and the memleak is gone!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 10:33:19
+archive/issue_comments_003802.json:
+```json
+{
+    "body": "Use weak references to the keys of `TripleDict`. Compare by \"==\" or by \"is\", depending on the application. Use weak references for storing actions.",
+    "created_at": "2012-01-03T10:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3802",
+    "user": "SimonKing"
+}
+```
 
 Use weak references to the keys of `TripleDict`. Compare by "==" or by "is", depending on the application. Use weak references for storing actions.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 10:34:29
+archive/issue_comments_003803.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-01-03T10:34:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3803",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003804.json:
+```json
+{
+    "body": "Attachment\n\nSee the updated patch:\n\nApply trac715_two_tripledicts.patch",
+    "created_at": "2012-01-03T10:34:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3804",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -873,9 +1573,20 @@ See the updated patch:
 Apply trac715_two_tripledicts.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 10:42:40
+archive/issue_comments_003805.json:
+```json
+{
+    "body": "Here some remarks on the new patch:\n\nI use `TripleDictById` for storing actions, since otherwise we have trouble with non-unique parents and get segfaults.\n\nIn addition, I do not directly store the action but only a weak reference to it, since otherwise I couldn't fix the memory leak.\n\nSometimes, the stored action is in fact `None`, for which we can't use a weak references. Instead, I use a constant function. For technical reasons it returns False and not None (namely, this is to avoid confusion with a weak reference that has become invalid).\n\n**__Features__**\n\n* The segfault in `sage -t sage/modular/modsym/space.py` is gone.\n* The time for executing that test remains fine, namely 20.7 seconds (unpatched sage-5.0.prealpha0) versus 21.4 seconds (with patch).\n* The example from the ticket description does not leak anymore!\n\nThus, needs, review.",
+    "created_at": "2012-01-03T10:42:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3805",
+    "user": "SimonKing"
+}
+```
 
 Here some remarks on the new patch:
 
@@ -885,25 +1596,47 @@ In addition, I do not directly store the action but only a weak reference to it,
 
 Sometimes, the stored action is in fact `None`, for which we can't use a weak references. Instead, I use a constant function. For technical reasons it returns False and not None (namely, this is to avoid confusion with a weak reference that has become invalid).
 
-*__Features__*
+**__Features__**
 
- * The segfault in `sage -t sage/modular/modsym/space.py` is gone.
- * The time for executing that test remains fine, namely 20.7 seconds (unpatched sage-5.0.prealpha0) versus 21.4 seconds (with patch).
- * The example from the ticket description does not leak anymore!
+* The segfault in `sage -t sage/modular/modsym/space.py` is gone.
+* The time for executing that test remains fine, namely 20.7 seconds (unpatched sage-5.0.prealpha0) versus 21.4 seconds (with patch).
+* The example from the ticket description does not leak anymore!
 
 Thus, needs, review.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 10:48:46
+archive/issue_comments_003806.json:
+```json
+{
+    "body": "Ok, I'll give the new patch a go and report after make ptestlong and checking for the memleaks.",
+    "created_at": "2012-01-03T10:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3806",
+    "user": "jpflori"
+}
+```
 
 Ok, I'll give the new patch a go and report after make ptestlong and checking for the memleaks.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 11:06:49
+archive/issue_comments_003807.json:
+```json
+{
+    "body": "Replying to [comment:63 jpflori]:\n> Ok, I'll give the new patch a go and report after make ptestlong\n\nSo do I.\n\nI guess at least one thing is needed: Provide a doc test that demonstrates the fix of the memory leak. This should be similar to the example for the patch that I have posted at #11521. Note that #11521 is in fact a duplicate: The examples from the two ticket descriptions are almost identical.",
+    "created_at": "2012-01-03T11:06:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3807",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:63 jpflori]:
 > Ok, I'll give the new patch a go and report after make ptestlong
@@ -913,27 +1646,60 @@ So do I.
 I guess at least one thing is needed: Provide a doc test that demonstrates the fix of the memory leak. This should be similar to the example for the patch that I have posted at #11521. Note that #11521 is in fact a duplicate: The examples from the two ticket descriptions are almost identical.
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-03 11:22:52
+archive/issue_comments_003808.json:
+```json
+{
+    "body": "Actions have strong references to domain and codomain, so its no surprise that they keep their coercion cache entry alive. But I don't understand how storing a weak reference to the action can work; Nothing else keeps the action alive unless it happens to be used while the garbage collector is running. So actions are essentially not cached any more. It seem that either actions should only store weak references to domain/codomain or we implement some ring buffer that keeps the last N coerce maps unconditionally alive. \n\nIn fact, the action's reference to domain and codomain seem to be for convenience only. After all you know domain and codomain when you constuct the action and when you pick it from the cache, so there shouldn't be much incentive to look it up. Perhaps it would be easy to make them weak refs, did you look into that?",
+    "created_at": "2012-01-03T11:22:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3808",
+    "user": "vbraun"
+}
+```
 
 Actions have strong references to domain and codomain, so its no surprise that they keep their coercion cache entry alive. But I don't understand how storing a weak reference to the action can work; Nothing else keeps the action alive unless it happens to be used while the garbage collector is running. So actions are essentially not cached any more. It seem that either actions should only store weak references to domain/codomain or we implement some ring buffer that keeps the last N coerce maps unconditionally alive. 
 
 In fact, the action's reference to domain and codomain seem to be for convenience only. After all you know domain and codomain when you constuct the action and when you pick it from the cache, so there shouldn't be much incentive to look it up. Perhaps it would be easy to make them weak refs, did you look into that?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 11:26:31
+archive/issue_comments_003809.json:
+```json
+{
+    "body": "I agree with Volker and would like to test putting weak refs to domain and codomain in Functor as I suggested in #11521 and letting an option to use strong ref by default so that a user building an action but not storing its domain elsewhere won't see it disappear magically.\n\nUnfortunately I do not have much time to do anything more than testing till the end of the week.",
+    "created_at": "2012-01-03T11:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3809",
+    "user": "jpflori"
+}
+```
 
 I agree with Volker and would like to test putting weak refs to domain and codomain in Functor as I suggested in #11521 and letting an option to use strong ref by default so that a user building an action but not storing its domain elsewhere won't see it disappear magically.
 
 Unfortunately I do not have much time to do anything more than testing till the end of the week.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 11:42:41
+archive/issue_comments_003810.json:
+```json
+{
+    "body": "I wouldn't use weak references for anything but caching. In particular, having a weak reference from a functor to its domain or codomain seems a no-go to me.\n\nIn one point I agree: There should be a mechanism to keep an action alive as long as domain and codomain exist. But perhaps this is already the case? Isn't there an action cache as an attribute of any parent? And isn't the action stored there (and not only in the cache of the coercion model) when an action is discovered?\n\nSo, before thinking of a weak reference from the functor to domain and codomain, I would first test whether the problem you describe actually occurs.",
+    "created_at": "2012-01-03T11:42:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3810",
+    "user": "SimonKing"
+}
+```
 
 I wouldn't use weak references for anything but caching. In particular, having a weak reference from a functor to its domain or codomain seems a no-go to me.
 
@@ -942,9 +1708,20 @@ In one point I agree: There should be a mechanism to keep an action alive as lon
 So, before thinking of a weak reference from the functor to domain and codomain, I would first test whether the problem you describe actually occurs.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 13:16:53
+archive/issue_comments_003811.json:
+```json
+{
+    "body": "Just two mental notes:\n\nOne test in sage/structure/coerce.pyx fails, because it explicitly uses the action cache (ignoring the fact that it now contains weak references and not actions).\n\nAnd: The long tests of these two files\n\n```\ndevel/sage/sage/graphs/graph_generators.py\ndevel/sage/sage/graphs/generic_graph.py\n```\n\ntake 10 minutes each. Is my patch to blame, or has it been like that before?",
+    "created_at": "2012-01-03T13:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3811",
+    "user": "SimonKing"
+}
+```
 
 Just two mental notes:
 
@@ -960,9 +1737,20 @@ devel/sage/sage/graphs/generic_graph.py
 take 10 minutes each. Is my patch to blame, or has it been like that before?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 14:16:44
+archive/issue_comments_003812.json:
+```json
+{
+    "body": "With sage4.8.alpha5 plus #9138 #11900 #1115 #715 and #11521 applied some tests fail, namely in the files:\n- sage.rings.padic.padic_base_generic_element.pyx (1 test failed) but did NOT when rerun and did again the next time,\n- sage.rings.number_field.number_field.py (1) and did NOT again,\n- sage.structure.coerce.pyx (5) and did again,\n- sage.algebras.quatalg.quaternion_algebra.py (1) and did again once and then did NOT again,\n- lots of them in sage.homology.* (20+25+50+93+1) and did again.\nThe random behavior of some of the above tests fails with:\n- IndexError: list index out of range (padic)\n- Attribute Error: QuaternionAlgebra_abstract_with_category object has no attribute _a (quatalg)\nand at some point in the stack TripleDicts of the coercion model are present.",
+    "created_at": "2012-01-03T14:16:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3812",
+    "user": "jpflori"
+}
+```
 
 With sage4.8.alpha5 plus #9138 #11900 #1115 #715 and #11521 applied some tests fail, namely in the files:
 - sage.rings.padic.padic_base_generic_element.pyx (1 test failed) but did NOT when rerun and did again the next time,
@@ -976,16 +1764,38 @@ The random behavior of some of the above tests fails with:
 and at some point in the stack TripleDicts of the coercion model are present.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 14:16:44
+archive/issue_comments_003813.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-01-03T14:16:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3813",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 14:18:08
+archive/issue_comments_003814.json:
+```json
+{
+    "body": "Oops, this should be more readable:\n\nWith sage4.8.alpha5 plus [#9138](http://trac.sagemath.org/sage_trac/ticket/9138) [#11900](http://trac.sagemath.org/sage_trac/ticket/11900) [#1115](http://trac.sagemath.org/sage_trac/ticket/1115) [#715](http://trac.sagemath.org/sage_trac/ticket/715) and [#11521](http://trac.sagemath.org/sage_trac/ticket/11521) applied some tests fail, namely in the files:\n\n- sage.rings.padic.padic_base_generic_element.pyx (1 test failed) but did NOT when rerun and did again the next time,\n\n- sage.rings.number_field.number_field.py (1) and did NOT again,\n\n- sage.structure.coerce.pyx (5) and did again,\n\n- sage.algebras.quatalg.quaternion_algebra.py (1) and did again once and then did NOT again,\n\n- lots of them in sage.homology.* (20+25+50+93+1) and did again.\n\nThe random behavior of some of the above tests fails with:\n\n- [IndexError?](http://trac.sagemath.org/sage_trac/wiki/IndexError): list index out of range (padic)\n\n- Attribute Error: [QuaternionAlgebra?](http://trac.sagemath.org/sage_trac/wiki/QuaternionAlgebra)_abstract_with_category object has no attribute _a (quatalg) and at some point in the stack [TripleDicts?](http://trac.sagemath.org/sage_trac/wiki/TripleDicts) of the coercion model are present.",
+    "created_at": "2012-01-03T14:18:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3814",
+    "user": "jpflori"
+}
+```
 
 Oops, this should be more readable:
 
@@ -1008,16 +1818,38 @@ The random behavior of some of the above tests fails with:
 - Attribute Error: [QuaternionAlgebra?](http://trac.sagemath.org/sage_trac/wiki/QuaternionAlgebra)_abstract_with_category object has no attribute _a (quatalg) and at some point in the stack [TripleDicts?](http://trac.sagemath.org/sage_trac/wiki/TripleDicts) of the coercion model are present.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 14:21:47
+archive/issue_comments_003815.json:
+```json
+{
+    "body": "For info, the number_field test also fails with an \"IndexError: list out of range\".",
+    "created_at": "2012-01-03T14:21:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3815",
+    "user": "jpflori"
+}
+```
 
 For info, the number_field test also fails with an "IndexError: list out of range".
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 14:52:54
+archive/issue_comments_003816.json:
+```json
+{
+    "body": "The flaky behaviour probably means that sometimes something gets garbage collected when it shouldn't.\n\nBut why do you have the patch from #11521 applied?\n\nNote that with sage-5.0.prealpha0 + #11780 + the new patch from here, I get two tests with errors, namely\n\n```\n        sage -t  --long -force_lib devel/sage/sage/structure/coerce_dict.pyx # 1 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/structure/coerce.pyx # 5 doctests failed\n```\n\nHowever, the tests took rather long in total: 12100 seconds with the new patch versus 4569 seconds unpatched.\n\nI think the regression is not acceptable.\n\nWell, perhaps you are right and we should experiment with weak references on domain and codomain.",
+    "created_at": "2012-01-03T14:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3816",
+    "user": "SimonKing"
+}
+```
 
 The flaky behaviour probably means that sometimes something gets garbage collected when it shouldn't.
 
@@ -1037,9 +1869,20 @@ I think the regression is not acceptable.
 Well, perhaps you are right and we should experiment with weak references on domain and codomain.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 15:01:12
+archive/issue_comments_003817.json:
+```json
+{
+    "body": "Good point about #11521, I'd say because that what I was firstly interested in.\n\nWithout it applied, the flaky behavior seem to disappear.\n\nI'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.\n\nAnyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.",
+    "created_at": "2012-01-03T15:01:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3817",
+    "user": "jpflori"
+}
+```
 
 Good point about #11521, I'd say because that what I was firstly interested in.
 
@@ -1050,9 +1893,20 @@ I'll post timings with all patches, with all patches except for #11521, and with
 Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 15:07:15
+archive/issue_comments_003818.json:
+```json
+{
+    "body": "Replying to [comment:73 jpflori]:\n> Good point about #11521, I'd say because that what I was firstly interested in.\n> \n> Without it applied, the flaky behavior seem to disappear.\n\nGood!\n \n> I'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.\n\nOK, but I guess the timings I provided should be enough to show that the patch can not remain as it is now.\n\n> Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.\n\nYep. Two potential solutions:\n\n   1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).\n   2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain.\n\nI'm trying the latter now.",
+    "created_at": "2012-01-03T15:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3818",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:73 jpflori]:
 > Good point about #11521, I'd say because that what I was firstly interested in.
@@ -1069,15 +1923,26 @@ OK, but I guess the timings I provided should be enough to show that the patch c
 
 Yep. Two potential solutions:
 
- 1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).
- 2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain.
+   1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).
+   2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain.
 
 I'm trying the latter now.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 15:21:41
+archive/issue_comments_003819.json:
+```json
+{
+    "body": "Replying to [comment:74 SimonKing]:\n\n> Replying to [comment:73 jpflori]:\n> > Good point about #11521, I'd say because that what I was firstly interested in. Without it applied, the flaky behavior seem to disappear.\n> Good!\n> > I'll post timings with all patches, with all patches except for #11521, and with no patches in a few hours.\n> OK, but I guess the timings I provided should be enough to show that the patch can not remain as it is now.\n> > Anyway I guess Volker is right and even with just #715 applied we should check that actions do not get garbage collected continuously as your timings suggest.\n\n> Yep. Two potential solutions: 1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive). 2. Play with the idea to have a strong reference on the action but a weak reference from a functor to its domain and codomain. I'm trying the latter now.\n\nJust to summarize, here is the current problem, please correct me if some of the following is wrong: we want to let a codomain (resp. domain) get garbage collected when its only weak reffed outside of the coercion model.\n\nBefore the current patch the situation is as follows for actions:\n\n- when an action is resolved, it is cached in a triple dict in the coercion model with the domain and codomains as keys\n\n- the action is also cached in the dictionnaries in the domain and the codomain much in the same way\n\n- there is also a similar cache for homsets\n\nThe current patch let weakrefs be used for the keys to the above dictionaries and a weak ref to the corresponding value (which is the action).\n\nThe problem is that as the action is only weak reffed everywhere now, it gets garbage collected all the time (to be confirmed).\n\nIf it is not, then the codomain (resp. domain) will in turn not get garbage collected, because it will be strongly reffed in the action strongly reffed in the domain (resp. codomain) (to be confirmed).\n\nThe problem for the homset patch is slightly different and is being discussed in #11521.",
+    "created_at": "2012-01-03T15:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3819",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:74 SimonKing]:
 
@@ -1109,9 +1974,20 @@ If it is not, then the codomain (resp. domain) will in turn not get garbage coll
 The problem for the homset patch is slightly different and is being discussed in #11521.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 15:25:08
+archive/issue_comments_003820.json:
+```json
+{
+    "body": "Replying to [comment:74 SimonKing]:\n>  1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).\n\nThat's why:\n\n```\nsage: search_src(\"register_action\")\nstructure/parent.pyx:1698:            self.register_action(action)\nstructure/parent.pyx:1791:    cpdef register_action(self, action):\nstructure/parent.pyx:1841:            sage: R.register_action(act)\nstructure/parent.pxd:29:    cpdef register_action(self, action)\n```\n\n\nSo, simply register action isn't used at all - which makes me think why some actions *are* stored in the parent.",
+    "created_at": "2012-01-03T15:25:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3820",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:74 SimonKing]:
 >  1. Find out why apparently not all actions are registered in the parent (because then we would have a strong reference as long as at least the domain is alive).
@@ -1127,26 +2003,59 @@ structure/parent.pxd:29:    cpdef register_action(self, action)
 ```
 
 
-So, simply register action isn't used at all - which makes me think why some actions _are_ stored in the parent.
+So, simply register action isn't used at all - which makes me think why some actions *are* stored in the parent.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-01-03 15:29:14
+archive/issue_comments_003821.json:
+```json
+{
+    "body": "I see. register_action is not to be used after any coercion was established.",
+    "created_at": "2012-01-03T15:29:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3821",
+    "user": "SimonKing"
+}
+```
 
 I see. register_action is not to be used after any coercion was established.
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-03 15:35:54
+archive/issue_comments_003822.json:
+```json
+{
+    "body": "Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution. Perhaps the testsuite stuff can be used to verify that all parents do that?",
+    "created_at": "2012-01-03T15:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3822",
+    "user": "vbraun"
+}
+```
 
 Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution. Perhaps the testsuite stuff can be used to verify that all parents do that?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 15:46:29
+archive/issue_comments_003823.json:
+```json
+{
+    "body": "Replying to [comment:78 vbraun]:\n> Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution.\n\nBut perhaps a difficult one. The condition that `register_action` must not be used after defining any coercion is probably there for a reason.\n\n> Perhaps the testsuite stuff can be used to verify that all parents do that? \n\nHow could it? By hooking into the coercion model, look up any action there and verify that all are registered?",
+    "created_at": "2012-01-03T15:46:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3823",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:78 vbraun]:
 > Just as a remark from the side lines, it seems that consistently storing a reference in the parent would be the cleanest solution.
@@ -1158,14 +2067,38 @@ But perhaps a difficult one. The condition that `register_action` must not be us
 How could it? By hooking into the coercion model, look up any action there and verify that all are registered?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 15:50:17
+archive/issue_comments_003824.json:
+```json
+{
+    "body": "Experimental patch using weak references on domain and codomain of functors",
+    "created_at": "2012-01-03T15:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3824",
+    "user": "SimonKing"
+}
+```
 
 Experimental patch using weak references on domain and codomain of functors
 
 
+
 ---
+
+archive/issue_comments_003825.json:
+```json
+{
+    "body": "Attachment\n\nI have posted an [attachment:test_orphan_functor experimental patch], that has to be applied on top of [attachment:trac715_two_tripledicts.patch].\n\nWith the experimental patch, the coercion model stores strong references to the actions (hence, it restores the original behaviour), but functors will only store weak references to their domains and codomains.\n\nUnfortunately, this does *not* fix the memory leak. But perhaps you want to play with it...\n\nAh! And I just see that \"sage.categories.functor\" was the wrong location to do the change.",
+    "created_at": "2012-01-03T15:56:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3825",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -1173,21 +2106,43 @@ I have posted an [attachment:test_orphan_functor experimental patch], that has t
 
 With the experimental patch, the coercion model stores strong references to the actions (hence, it restores the original behaviour), but functors will only store weak references to their domains and codomains.
 
-Unfortunately, this does _not_ fix the memory leak. But perhaps you want to play with it...
+Unfortunately, this does *not* fix the memory leak. But perhaps you want to play with it...
 
 Ah! And I just see that "sage.categories.functor" was the wrong location to do the change.
 
 
----
-
-Comment by SimonKing created at 2012-01-03 15:58:39
-
-Or I should say: `Action.__domain` is _not_ what the action acts on, but it is a groupoid, and is not used. So, forget the experimental patch.
-
 
 ---
 
-Comment by SimonKing created at 2012-01-03 16:18:11
+archive/issue_comments_003826.json:
+```json
+{
+    "body": "Or I should say: `Action.__domain` is *not* what the action acts on, but it is a groupoid, and is not used. So, forget the experimental patch.",
+    "created_at": "2012-01-03T15:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3826",
+    "user": "SimonKing"
+}
+```
+
+Or I should say: `Action.__domain` is *not* what the action acts on, but it is a groupoid, and is not used. So, forget the experimental patch.
+
+
+
+---
+
+archive/issue_comments_003827.json:
+```json
+{
+    "body": "An action of G on S stores direct references to G and to S.\n\nThe action is a functor, and as a functor, it additionally stores a reference to `Groupoid(G)`, which stores another reference to G, and to the category of S.\n\nIn some cases, the category of S will store references to the base ring of S (for example, if S is an algebra), which might have a pointer back to S (for example if the action of `S.base_ring()` on S was registered during initialisation). In this case, we are lost, since categories are unique parents and thus strongly cached (unless we apply #12215, which poses some problems).\n\nFor the same reason, creating the groupoid of G will result in an eternal reference on G (`Groupoid(G)` is strongly cached and it points to G). So, the best that we can hope for is that we can free S at some point, but we will never be able to free G.\n\nIt starts to be complicated. Time to call it a day...\n\nPerhaps the idea to register actions in the parents (in addition to a weak cache in the coercion model) is better?",
+    "created_at": "2012-01-03T16:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3827",
+    "user": "SimonKing"
+}
+```
 
 An action of G on S stores direct references to G and to S.
 
@@ -1202,9 +2157,20 @@ It starts to be complicated. Time to call it a day...
 Perhaps the idea to register actions in the parents (in addition to a weak cache in the coercion model) is better?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 16:25:12
+archive/issue_comments_003828.json:
+```json
+{
+    "body": "Replying to [comment:82 SimonKing]:\n\n> An action of G on S stores direct references to G and to S. The action is a functor, and as a functor, it additionally stores a reference to `Groupoid(G)`, which stores another reference to G, and to the category of S. In some cases, the category of S will store references to the base ring of S (for example, if S is an algebra), which might have a pointer back to S (for example if the action of `S.base_ring()` on S was registered during initialisation). In this case, we are lost, since categories are unique parents and thus strongly cached (unless we apply #12215, which poses some problems). For the same reason, creating the groupoid of G will result in an eternal reference on G (`Groupoid(G)` is strongly cached and it points to G). So, the best that we can hope for is that we can free S at some point, but we will never be able to free G. It starts to be complicated. Time to call it a day... Perhaps the idea to register actions in the parents (in addition to a weak cache in the coercion model) is better?\n\nBut if you store the actions in both parents (with strong references), you will never be able to free any of the two domain and codomain.\n\nIn the ticket example for example you would get a strong reference to the action in the ZZ cache (which will hopefully never get deleted) (in fact that is what is happening with the current Sage version anyway, isn't that strange according to what you posted, because I guess is already initialized once the for loop is executed?) so the elliptic curves (in the ticket example you only get one stored in that cache because comarison was made with \"==\", if you let the j invariant change within the for loop you would get a growing number of curves in that cache) will stay strongly refed forever as well...",
+    "created_at": "2012-01-03T16:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3828",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:82 SimonKing]:
 
@@ -1215,9 +2181,20 @@ But if you store the actions in both parents (with strong references), you will 
 In the ticket example for example you would get a strong reference to the action in the ZZ cache (which will hopefully never get deleted) (in fact that is what is happening with the current Sage version anyway, isn't that strange according to what you posted, because I guess is already initialized once the for loop is executed?) so the elliptic curves (in the ticket example you only get one stored in that cache because comarison was made with "==", if you let the j invariant change within the for loop you would get a growing number of curves in that cache) will stay strongly refed forever as well...
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 16:56:12
+archive/issue_comments_003829.json:
+```json
+{
+    "body": "My timings\n\n- with everything up to [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521): about 3650 sec (errors as above)\n\n\n- with everything up to [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715): about 3350 sec (only errors in coerce.pyx)\n\n\n- with everything up to [#11115](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11115): about 3350 sec as well (no errors)\n\nSo, unless I did something wrong, I do not get any significant slow down...",
+    "created_at": "2012-01-03T16:56:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3829",
+    "user": "jpflori"
+}
+```
 
 My timings
 
@@ -1232,16 +2209,38 @@ My timings
 So, unless I did something wrong, I do not get any significant slow down...
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-03 18:35:39
+archive/issue_comments_003830.json:
+```json
+{
+    "body": "I got about 3350 sec on top of vanilla sage-4.8.alpha5.",
+    "created_at": "2012-01-03T18:35:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3830",
+    "user": "jpflori"
+}
+```
 
 I got about 3350 sec on top of vanilla sage-4.8.alpha5.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 19:47:15
+archive/issue_comments_003831.json:
+```json
+{
+    "body": "Hi Jean-Pierre,\n\nReplying to [comment:83 jpflori]:\n> But if you store the actions in both parents (with strong references), you will never be able to free any of the two domain and codomain.\n\nThis is not necessarily the case. You would merely get circular references, and they would not obstruct garbage collection, unless one item in the cycle has a `__del__` method.\n\nOne problem, however, is that many actions start with `ZZ`. And if `ZZ` is contained in the cycle, then it can not be collected, since `ZZ` will live forever -- but you know that.\n\n> In the ticket example for example you would get a strong reference to the action in the ZZ cache (which will hopefully never get deleted) (in fact that is what is happening with the current Sage version anyway, isn't that strange according to what you posted, because I guess is already initialized once the for loop is executed?)\n\nYes. And is it really sure that the actions are stored in `ZZ`?\n\nAnyway. They are stored by `==`, and thus only one copy remains alive.\n\n> so the elliptic curves (in the ticket example you only get one stored in that cache because comarison was made with \"==\", if you let the j invariant change within the for loop you would get a growing number of curves in that cache) will stay strongly refed forever as well...\n\nYes. And that is a problem that, again, might be solved using weak references.\n\nNamely:\n\nConsider an action A of G on S. Typically, G is immortal (like `ZZ`), but we are willing to let A and S die if we do not have any \"external\" strong reference to S. In particular, the existence of A should not be enough to keep S alive.\n\nI think this can be accomplished as follows:\n\n* For quick access and for backwards compatibility, we want that actions remain stored in the coercion model. We use weak references to the keys (G,S), but a strong reference to the action (this is what the previous version of [attachment:trac715_two_tripledicts.patch] did).\n* In addition to that, A should only have a weak reference to S; I think it doesn't matter whether the reference from A to G is strong or weak.\n\nLet us analyse what happens with G, S and A:\n\n1. G will remain alive forever, even without an external reference. Namely, the coercion cache has a strong reference to A; as a functor, A points to `Groupoid(G)`; `Groupoid(G)` is strongly cached (unless we use weak caching for `UniqueRepresentation`) and must have a reference to G. If we decide to use weak caching for `UniqueRepresentation`, then we would only have a strong reference from G to A and a weak or strong reference from A to G. That would be fine for garbage collection. Anyway, I think keeping G alive will not hurt.\n2. Assume that there is no external reference to S. There is a weak reference to S from the cache in the coercion model, namely as key of the cache. Moreover, there is another *weak* reference from A to S. Hence, S could be garbage collected. \n3. Assume that there is no external reference to A. If S is garbage collected (see the previous point), then it will remove itself from the coercion cache, and thus the strong reference to A would vanish - it could be collected. But if S is alive, then A will remain alive as well.\n\nHowever, this is how the experimental patch should work - and it does *not* fix the leak. Perhaps this is, again, due to caching the homsets? So, we would need the patch from #12215 as well. Difficult topic.",
+    "created_at": "2012-01-03T19:47:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3831",
+    "user": "SimonKing"
+}
+```
 
 Hi Jean-Pierre,
 
@@ -1268,28 +2267,50 @@ Consider an action A of G on S. Typically, G is immortal (like `ZZ`), but we are
 
 I think this can be accomplished as follows:
 
- * For quick access and for backwards compatibility, we want that actions remain stored in the coercion model. We use weak references to the keys (G,S), but a strong reference to the action (this is what the previous version of [attachment:trac715_two_tripledicts.patch] did).
- * In addition to that, A should only have a weak reference to S; I think it doesn't matter whether the reference from A to G is strong or weak.
+* For quick access and for backwards compatibility, we want that actions remain stored in the coercion model. We use weak references to the keys (G,S), but a strong reference to the action (this is what the previous version of [attachment:trac715_two_tripledicts.patch] did).
+* In addition to that, A should only have a weak reference to S; I think it doesn't matter whether the reference from A to G is strong or weak.
 
 Let us analyse what happens with G, S and A:
 
- 1. G will remain alive forever, even without an external reference. Namely, the coercion cache has a strong reference to A; as a functor, A points to `Groupoid(G)`; `Groupoid(G)` is strongly cached (unless we use weak caching for `UniqueRepresentation`) and must have a reference to G. If we decide to use weak caching for `UniqueRepresentation`, then we would only have a strong reference from G to A and a weak or strong reference from A to G. That would be fine for garbage collection. Anyway, I think keeping G alive will not hurt.
- 2. Assume that there is no external reference to S. There is a weak reference to S from the cache in the coercion model, namely as key of the cache. Moreover, there is another _weak_ reference from A to S. Hence, S could be garbage collected. 
- 3. Assume that there is no external reference to A. If S is garbage collected (see the previous point), then it will remove itself from the coercion cache, and thus the strong reference to A would vanish - it could be collected. But if S is alive, then A will remain alive as well.
+1. G will remain alive forever, even without an external reference. Namely, the coercion cache has a strong reference to A; as a functor, A points to `Groupoid(G)`; `Groupoid(G)` is strongly cached (unless we use weak caching for `UniqueRepresentation`) and must have a reference to G. If we decide to use weak caching for `UniqueRepresentation`, then we would only have a strong reference from G to A and a weak or strong reference from A to G. That would be fine for garbage collection. Anyway, I think keeping G alive will not hurt.
+2. Assume that there is no external reference to S. There is a weak reference to S from the cache in the coercion model, namely as key of the cache. Moreover, there is another *weak* reference from A to S. Hence, S could be garbage collected. 
+3. Assume that there is no external reference to A. If S is garbage collected (see the previous point), then it will remove itself from the coercion cache, and thus the strong reference to A would vanish - it could be collected. But if S is alive, then A will remain alive as well.
 
-However, this is how the experimental patch should work - and it does _not_ fix the leak. Perhaps this is, again, due to caching the homsets? So, we would need the patch from #12215 as well. Difficult topic.
+However, this is how the experimental patch should work - and it does *not* fix the leak. Perhaps this is, again, due to caching the homsets? So, we would need the patch from #12215 as well. Difficult topic.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-01-03 19:49:09
+archive/issue_comments_003832.json:
+```json
+{
+    "body": "Sorry, I meant \"we would need the patch from #11521 as well\".",
+    "created_at": "2012-01-03T19:49:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3832",
+    "user": "SimonKing"
+}
+```
 
 Sorry, I meant "we would need the patch from #11521 as well".
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 22:42:28
+archive/issue_comments_003833.json:
+```json
+{
+    "body": "I have attached another patch, which implements the ideas sketched above. I think it corresponds to what you suggested (\"use a weak reference from the action to the domain\").\n\nOne detail: We have to distinguish between the underlying set, the domain and the codomain of an action. In fact, the new patch only uses a weak reference to the underlying set, and introduces a cdef function (hence, hopefully with little overhead) returning it.\n\nI consider sage-5.0.prealpha0 plus trac11780_unique_auxiliar_polyring.patch (probably not needed) plus [attachment:trac715_two_tripledicts.patch] plus [attachment:trac715_weak_action.patch].\n\nAt least `sage -t sage/modular/modsym/space.py` passes, but I need to run the whole test suite. \n\nThe example from the ticket description does not leak. However, if the j-invariant varies, it seems that for each elliptic curve one copy is preserved:\n\n```\nsage: K = GF(1<<55,'t')\nsage: for i in range(500):\n....:     a = K.random_element()\n....:     E = EllipticCurve(j=a)\n....:     P = E.random_point()\n....:     Q = 2*P\n....:     \nsage: import gc\nsage: gc.collect()\n2124\nsage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field\nsage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]\nsage: len(LE)\n500\n```\n\n\nIn any case, the original leak is fixed with the two patches. The question is whether the second patch suffices to keep actions alive, whether it avoids a regression, and whether all tests pass.\n\nIf everything is alright, we may still try to find out where the remaining strong reference to an elliptic curve comes from.",
+    "created_at": "2012-01-03T22:42:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3833",
+    "user": "SimonKing"
+}
+```
 
 I have attached another patch, which implements the ideas sketched above. I think it corresponds to what you suggested ("use a weak reference from the action to the domain").
 
@@ -1324,23 +2345,56 @@ In any case, the original leak is fixed with the two patches. The question is wh
 If everything is alright, we may still try to find out where the remaining strong reference to an elliptic curve comes from.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-03 22:48:33
+archive/issue_comments_003834.json:
+```json
+{
+    "body": "PS: The additional application of #11521 does not suffice to avoid the remaining strong reference to an elliptic curve.",
+    "created_at": "2012-01-03T22:48:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3834",
+    "user": "SimonKing"
+}
+```
 
 PS: The additional application of #11521 does not suffice to avoid the remaining strong reference to an elliptic curve.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 06:09:03
+archive/issue_comments_003835.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2012-01-04T06:09:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3835",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 06:09:03
+archive/issue_comments_003836.json:
+```json
+{
+    "body": "With the two patches applied, I get some doctest errors that seem trivial to fix, and it takes 10905 seconds in total. Now, I am not sure: Originally, I had much less time with unpatched Sage. \n\nBut perhaps my computer was in a different state at that time? Jean-Pierre, if I understood correctly, you did not find any significant slowdown, right?\n\nThe first (i.e., the \"official\") patch is enough to fix the leak for the original example. According to Jean-Pierre, the timings are fine, it does not matter whether we have no patch, the official patch only, or the first experimental patch. And according to my own test, it does not matter whether we have the first or the second experimental patch.\n\nSo, the further proceeding depends on the following questions:\n\n* The experimental patches provide two different approaches to fix a potential problem, namely actions being deallocated when they are still needed. However, is this potential problem a *real* problem? Only then would it make sense to consider the experimental patches!\n\n* Do we also want to fix the leak in the more difficult example, namely when the j-invariant varies? In this case, we need to find out why the actions are registered in ZZ. It is not clear yet whether one really needs one of the experimental patches to get rid of it.\n\nWhat is your answer to the questions?",
+    "created_at": "2012-01-04T06:09:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3836",
+    "user": "SimonKing"
+}
+```
 
 With the two patches applied, I get some doctest errors that seem trivial to fix, and it takes 10905 seconds in total. Now, I am not sure: Originally, I had much less time with unpatched Sage. 
 
@@ -1350,16 +2404,27 @@ The first (i.e., the "official") patch is enough to fix the leak for the origina
 
 So, the further proceeding depends on the following questions:
 
- * The experimental patches provide two different approaches to fix a potential problem, namely actions being deallocated when they are still needed. However, is this potential problem a _real_ problem? Only then would it make sense to consider the experimental patches!
+* The experimental patches provide two different approaches to fix a potential problem, namely actions being deallocated when they are still needed. However, is this potential problem a *real* problem? Only then would it make sense to consider the experimental patches!
 
- * Do we also want to fix the leak in the more difficult example, namely when the j-invariant varies? In this case, we need to find out why the actions are registered in ZZ. It is not clear yet whether one really needs one of the experimental patches to get rid of it.
+* Do we also want to fix the leak in the more difficult example, namely when the j-invariant varies? In this case, we need to find out why the actions are registered in ZZ. It is not clear yet whether one really needs one of the experimental patches to get rid of it.
 
 What is your answer to the questions?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 09:20:28
+archive/issue_comments_003837.json:
+```json
+{
+    "body": "There are two occasions for writing stuff into `Parent._action_hash`: During initialisation, via register_action, and in addition the action is stored in the parent when a new action is found while calling get_action.\n\nPerhaps we should distinguish the two cases: The actions that are stored during initialisation should probably be \"immortal\". But the actions that is stored on the fly should only be weakly cached.\n\nI think this can be solved by changing `Parent._action_hash` into a dictionary that uses weak references to both the keys and the values. There is one difference between register_action and get_action: register_action additionally stores the actions in a list, but get_action doesn't. Hence, indeed the actions registered during initialisation will survive, but the stuff stored by get_action could become collectable.",
+    "created_at": "2012-01-04T09:20:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3837",
+    "user": "SimonKing"
+}
+```
 
 There are two occasions for writing stuff into `Parent._action_hash`: During initialisation, via register_action, and in addition the action is stored in the parent when a new action is found while calling get_action.
 
@@ -1368,9 +2433,20 @@ Perhaps we should distinguish the two cases: The actions that are stored during 
 I think this can be solved by changing `Parent._action_hash` into a dictionary that uses weak references to both the keys and the values. There is one difference between register_action and get_action: register_action additionally stores the actions in a list, but get_action doesn't. Hence, indeed the actions registered during initialisation will survive, but the stuff stored by get_action could become collectable.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 10:10:59
+archive/issue_comments_003838.json:
+```json
+{
+    "body": "Yesss!! It suffices (in addition to what I did before) to use a `TripleDictById` (which uses weak references to the keys, but strong references to the value) for `Parent._action_hash`!!!\n\nThe leak is no completely gone:\n\n```\nsage: K = GF(1<<55,'t')\nsage: for i in range(50):\n....:     a = K.random_element()\n....:     E = EllipticCurve(j=a)\n....:     P = E.random_point()\n....:     Q = 2*P\n....:     \nsage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field\nsage: import gc, objgraph\nsage: gc.collect()\n882\nsage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]\nsage: len(LE)\n1\n```\n\n\nI need to add a test (or better: modify the test introduced by the first patch), demonstrating that the \"big\" leak is fixed, and I need to add tests for the new code I wrote, and of course I need to run ptestlong.\n\nNevertheless, I think you can start reviewing. And please store the doc test times, so that we can detect any regression.\n\nApply trac715_two_tripledicts.patch trac715_weak_action.patch",
+    "created_at": "2012-01-04T10:10:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3838",
+    "user": "SimonKing"
+}
+```
 
 Yesss!! It suffices (in addition to what I did before) to use a `TripleDictById` (which uses weak references to the keys, but strong references to the value) for `Parent._action_hash`!!!
 
@@ -1401,25 +2477,58 @@ Nevertheless, I think you can start reviewing. And please store the doc test tim
 Apply trac715_two_tripledicts.patch trac715_weak_action.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 10:10:59
+archive/issue_comments_003839.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-01-04T10:10:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3839",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-04 10:12:46
+archive/issue_comments_003840.json:
+```json
+{
+    "body": "Good!\n\nI've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.",
+    "created_at": "2012-01-04T10:12:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3840",
+    "user": "jpflori"
+}
+```
 
 Good!
 
 I've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 10:20:21
+archive/issue_comments_003841.json:
+```json
+{
+    "body": "Replying to [comment:93 jpflori]:\n> I've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.\n\nGood! I am sure that there will be errors (for example, the current test against the leak expects `len(LE)==2`), but the timings will certainly be interesting. And of course, it would be interesting whether an action can die prematurely.",
+    "created_at": "2012-01-04T10:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3841",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:93 jpflori]:
 > I've just built last sage prealpha and am quite busy today, but I'll at least run ptestlong with and without patches to get timings in the afternoo.
@@ -1427,16 +2536,38 @@ Replying to [comment:93 jpflori]:
 Good! I am sure that there will be errors (for example, the current test against the leak expects `len(LE)==2`), but the timings will certainly be interesting. And of course, it would be interesting whether an action can die prematurely.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 12:23:44
+archive/issue_comments_003842.json:
+```json
+{
+    "body": "I am sure that there is a regression compared with vanilla sage-5.0.prealpha0. For example, when I originally ran sage -ptestlong, sage/schemes/hyperellyptic_cuve/hyperellyptic_padic_field.py took 57 seconds, but with the patches it takes 160 seconds.",
+    "created_at": "2012-01-04T12:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3842",
+    "user": "SimonKing"
+}
+```
 
 I am sure that there is a regression compared with vanilla sage-5.0.prealpha0. For example, when I originally ran sage -ptestlong, sage/schemes/hyperellyptic_cuve/hyperellyptic_padic_field.py took 57 seconds, but with the patches it takes 160 seconds.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 13:54:19
+archive/issue_comments_003843.json:
+```json
+{
+    "body": "Meanwhile I took some timings on a different machine. Based on the experience that the schemes code tends to slow down a lot when one does fancy stuff (see #11900 and #11935), I use \"sage/schemes\" as a test bed. \n\nI find (based on sage-4.8.alpha3):\n\nWith patch\n\n```\nking@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied \ntrac_12149.3.patch\n9138_flat.patch\ntrac11900_category_speedup_combined.patch\n11115_flat.patch\ntrac_11115_docfix.patch\ntrac715_two_tripledicts.patch\ntrac715_weak_action.patch\nking@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 625.1 seconds\n```\n\nHere are the five worst:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\n\t [58.1 s]\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/heegner.py\"\n\t [51.1 s]\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\"\n\t [35.2 s]\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\"\n\t [26.9 s]\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\n\t [25.7 s]\n```\n\n\nNow, the same without the two patches from here:\n\n```\nking@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied \ntrac_12149.3.patch\n9138_flat.patch\ntrac11900_category_speedup_combined.patch\n11115_flat.patch\ntrac_11115_docfix.patch\nking@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 597.0 seconds\n```\n\nAnd the five worst, comparing with the times from above, are:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\n\t [55.4 s] (was: [58.1 s])\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/heegner.py\"\n\t [47.2 s] (was: [51.1 s])\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\"\n\t [34.1 s] (was: [35.2 s])\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\"\n\t [26.1 s] (was: [26.9 s])\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\n\t [24.9 s] (was: [25.7 s])\n```\n\n\nHence, we have a slow-down of, overall, `(625.1 - 597)/625.1 = 4.5%`, the slow-down seems to be systematic (you hardly find an example that became faster), and in some cases we have a slow-down of 10%.\n\nI expected it to be worse (after all, coercion affects everything). But still, the question is: Can the slow-down be avoided?",
+    "created_at": "2012-01-04T13:54:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3843",
+    "user": "SimonKing"
+}
+```
 
 Meanwhile I took some timings on a different machine. Based on the experience that the schemes code tends to slow down a lot when one does fancy stuff (see #11900 and #11935), I use "sage/schemes" as a test bed. 
 
@@ -1513,24 +2644,46 @@ Hence, we have a slow-down of, overall, `(625.1 - 597)/625.1 = 4.5%`, the slow-d
 I expected it to be worse (after all, coercion affects everything). But still, the question is: Can the slow-down be avoided?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-04 14:05:37
+archive/issue_comments_003844.json:
+```json
+{
+    "body": "So here are my global timings for ptestlong on sage.5.0.prealpha0:\n\n\n* 3092.9 seconds with no errors on vanilla\n* 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.\n\nThat's kind of strange. Maybe the slowdown is absorbed by the fact that the test are running in parallel ?\n\nI'll just test sage.schemes with a single core and report.",
+    "created_at": "2012-01-04T14:05:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3844",
+    "user": "jpflori"
+}
+```
 
 So here are my global timings for ptestlong on sage.5.0.prealpha0:
 
 
- * 3092.9 seconds with no errors on vanilla
- * 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.
+* 3092.9 seconds with no errors on vanilla
+* 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.
 
 That's kind of strange. Maybe the slowdown is absorbed by the fact that the test are running in parallel ?
 
 I'll just test sage.schemes with a single core and report.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 14:19:29
+archive/issue_comments_003845.json:
+```json
+{
+    "body": "Replying to [comment:97 jpflori]:\n>  * 3092.9 seconds with no errors on vanilla\n>  * 3097.8 seconds with 3 errors in sage.matrix.action.pyx and 1 in  sage.structure.corece_dict.pyx on vanille + the two patches in the  current ticket ([#715](http://trac.sagemath.org/sage_trac/ticket/715)) description.\n\nCool!\n\nNote that the tests in sage/schemes only take 597.5 seconds when I apply #11943 and #11935 on top. Hence, if there really is a slow-down then it can be countered.\n\nOne detail about trac: If you want to link to a ticket, you can just provide the number after the \"hash symbol\", hence, `#715` and not `[#715](http://.../715)`.\n\n> That's kind of strange. Maybe the slowdown is absorbed by the fact that the test are running in parallel ?\n\nI don't know the typical standard deviation of the timings.",
+    "created_at": "2012-01-04T14:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3845",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:97 jpflori]:
 >  * 3092.9 seconds with no errors on vanilla
@@ -1547,9 +2700,20 @@ One detail about trac: If you want to link to a ticket, you can just provide the
 I don't know the typical standard deviation of the timings.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 14:24:22
+archive/issue_comments_003846.json:
+```json
+{
+    "body": "Interestingly, I get slightly different errors:\n\n```\n        sage -t  --long -force_lib devel/sage/sage/structure/coerce_dict.pyx # 1 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/structure/parent.pyx # 1 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/matrix/action.pyx # 5 doctests failed\n```\n\n\nAnyway, this should be easy to fix...",
+    "created_at": "2012-01-04T14:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3846",
+    "user": "SimonKing"
+}
+```
 
 Interestingly, I get slightly different errors:
 
@@ -1563,16 +2727,38 @@ Interestingly, I get slightly different errors:
 Anyway, this should be easy to fix...
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 14:25:18
+archive/issue_comments_003847.json:
+```json
+{
+    "body": "... and it took me 12187.2 seconds.",
+    "created_at": "2012-01-04T14:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3847",
+    "user": "SimonKing"
+}
+```
 
 ... and it took me 12187.2 seconds.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 15:07:31
+archive/issue_comments_003848.json:
+```json
+{
+    "body": "The second patch is updated, more examples are added (in particular, it is demonstrated that the memory leak is fixed even when the j-invariant varies), and the errors that I had with the previous version are gone.\n\nHence, it can now be reviewed. Please try to find regressions!\n\nApply trac715_two_tripledicts.patch trac715_weak_action.patch",
+    "created_at": "2012-01-04T15:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3848",
+    "user": "SimonKing"
+}
+```
 
 The second patch is updated, more examples are added (in particular, it is demonstrated that the memory leak is fixed even when the j-invariant varies), and the errors that I had with the previous version are gone.
 
@@ -1581,16 +2767,27 @@ Hence, it can now be reviewed. Please try to find regressions!
 Apply trac715_two_tripledicts.patch trac715_weak_action.patch
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-04 15:24:26
+archive/issue_comments_003849.json:
+```json
+{
+    "body": "Testing sage.schemes with only one core gave me:\n\n* 1526.0 sec on vanilla\n\n\n* 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)\n\n\n\nThis is more than acceptable according to me (if it does reflect anything... it might only be random stuff).\n\nRunning five tests of sage.schemes.elliptic_curves.padic_lseries gave me:\n\n* 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla\n\n\n* 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)\n\n\n\nStill surprising that I don't find any slow-down as you did, but I might also be good news :)\n\nMy next step is to check for the memory leaks (same j invariant, different j invariants, finite field example of Paul in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) ? or do that last one need a patch for the [HomSet](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AHomSet) cache ? if this is the case it won't prevent this ticket to be closed, but should be treated in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521), otherwise [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) can be closed as duplicate) and that action do not get continuously deleted.\n\nAfterward, I'll properly review your code and examples (that I've already seen many times obviously :)).",
+    "created_at": "2012-01-04T15:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3849",
+    "user": "jpflori"
+}
+```
 
 Testing sage.schemes with only one core gave me:
 
- * 1526.0 sec on vanilla
+* 1526.0 sec on vanilla
 
 
- * 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+* 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
 
 
 
@@ -1598,10 +2795,10 @@ This is more than acceptable according to me (if it does reflect anything... it 
 
 Running five tests of sage.schemes.elliptic_curves.padic_lseries gave me:
 
- * 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla
+* 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla
 
 
- * 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
+* 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)
 
 
 
@@ -1612,9 +2809,20 @@ My next step is to check for the memory leaks (same j invariant, different j inv
 Afterward, I'll properly review your code and examples (that I've already seen many times obviously :)).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 16:06:29
+archive/issue_comments_003850.json:
+```json
+{
+    "body": "Replying to [comment:102 jpflori]:\n> Testing sage.schemes with only one core gave me:\n> \n>  * 1526.0 sec on vanilla\n> \n> \n>  * 1538.8 sec on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)\n\nThat's very good news indeed!\n \n> Running five tests of sage.schemes.elliptic_curves.padic_lseries gave me:\n> \n>  * 51.0, 48.7, 47.0, 47.0, 47.1 on vanilla\n> \n> \n>  * 49.0, 47.2, 48.4, 47.4, 47.7 on vanilla + [#715](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A715)\n\nThat looks like quite some randomness.\n\n> My next step is to check for the memory leaks (same j invariant, different j invariants, finite field example of Paul in [#11521](http://trac.sagemath.org/sage_trac/search/opensearch?q=ticket%3A11521) ? or do that last one need a patch for the [HomSet](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AHomSet) cache ?\n\nYes, the finite field example is not solved:\n\n```\nsage: for p in prime_range(10^5):\n....:     K = GF(p)\n....:     a = K(0)\n....:     \nsage: import gc\nsage: gc.collect()\n0\n```\n\n\nSo, I am going to modify the ticket description of #11521, indicating that the original elliptic curve example has been tackled here, but that there remains an orthogonal problem.\n\n> Afterward, I'll properly review your code and examples (that I've already seen many times obviously :)).\n\nNot so many times: Some examples are only in the very latest version of the second patch.",
+    "created_at": "2012-01-04T16:06:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3850",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:102 jpflori]:
 > Testing sage.schemes with only one core gave me:
@@ -1657,9 +2865,20 @@ So, I am going to modify the ticket description of #11521, indicating that the o
 Not so many times: Some examples are only in the very latest version of the second patch.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-04 16:55:43
+archive/issue_comments_003851.json:
+```json
+{
+    "body": "Please be careful with the non slow-down I reported above.\n\nSomething must have gone wrong with my installation, sorry for that, as I realized that the leak was not fixed.\n\nI'll investigate all of this more carefully ASAP.",
+    "created_at": "2012-01-04T16:55:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3851",
+    "user": "jpflori"
+}
+```
 
 Please be careful with the non slow-down I reported above.
 
@@ -1668,34 +2887,80 @@ Something must have gone wrong with my installation, sorry for that, as I realiz
 I'll investigate all of this more carefully ASAP.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 20:03:40
+archive/issue_comments_003852.json:
+```json
+{
+    "body": "There is one thing, related with regressions, that I didn't do: The `TripleDict` is cimported in sage/structure/coerce.pyx, and thus I could use the cdefed methods \"set\" and \"get\". But instead, I'm using the usual Python `__getitem__` and `__setitem__`. So, I could avoid some overhead. Will test it a bit later.",
+    "created_at": "2012-01-04T20:03:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3852",
+    "user": "SimonKing"
+}
+```
 
 There is one thing, related with regressions, that I didn't do: The `TripleDict` is cimported in sage/structure/coerce.pyx, and thus I could use the cdefed methods "set" and "get". But instead, I'm using the usual Python `__getitem__` and `__setitem__`. So, I could avoid some overhead. Will test it a bit later.
 
 
+
 ---
+
+archive/issue_comments_003853.json:
+```json
+{
+    "body": "Attachment\n\nUse weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!",
+    "created_at": "2012-01-04T20:18:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3853",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Use weak references to the underlying set of an action. Use `TripleDictById` to store actions in parents. Disregard the orphan_functor patch!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 20:20:10
+archive/issue_comments_003854.json:
+```json
+{
+    "body": "I have updated the second patch, so, please replace it with the new version. I am sorry that this came to late for \"ptestlong\", but perhaps the timings with the old patch version indicate what it might make sense to look at with the new version.\n\nApply trac715_two_tripledicts.patch trac715_weak_action.patch",
+    "created_at": "2012-01-04T20:20:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3854",
+    "user": "SimonKing"
+}
+```
 
 I have updated the second patch, so, please replace it with the new version. I am sorry that this came to late for "ptestlong", but perhaps the timings with the old patch version indicate what it might make sense to look at with the new version.
 
 Apply trac715_two_tripledicts.patch trac715_weak_action.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-04 21:26:38
+archive/issue_comments_003855.json:
+```json
+{
+    "body": "By the way, here is an example that shows that a `TripleDictById` finds its items *faster* then a usual dict, even though it has the additional advantage of weak keys. If one uses Cython, one can still save some more, which is what I did in the preceding change of the second patch.\n\nI create a list of pairs of rings:\n\n```\nsage: for p in prime_range(10^3):\n....:     K = GF(p)\n....:     P = K['x','y']\n....:     L.append((K,P))\n....: \nsage: len(L)\n168\n```\n\n\nI create a `TripleDictById` and a usual dictionary, and fill it by the same data:\n\n```\nsage: from sage.structure.coerce_dict import TripleDictById\nsage: D = TripleDictById(113)\nsage: for i,(K,P) in enumerate(L):\n....:     D[K,P,True] = i\n....:     \nsage: E = {}\nsage: for i,(K,P) in enumerate(L):\n....:     E[K,P,True] = i\n....:     \nsage: len(D)\n168\nsage: len(E)\n168\n```\n\n\nI create cython functions that know about the types. In the first, I use the Python way of accessing data from `TripleDictById`, in the second, I use the special cdefed `get()` method, and the third is for usual dictionaries.\n\n```\nsage: cython(\"\"\"\n....: from sage.structure.coerce_dict cimport TripleDictById\n....: def testD(TripleDictById D, list L):\n....:     for K,P in L:\n....:         n = D[K,P,True]\n....: def testDget(TripleDictById D, list L):\n....:     for K,P in L:\n....:         n = D.get(K,P,True)\n....: def testE(dict D, list L):\n....:     for K,P in L:\n....:         n = D[K,P,True]\n....: \"\"\")\n```\n\n\nEven though Cython is supposed to be quite good at optimising dictionary access (mind that `testE(...)` knows that it will receive a dictionary!), I was surprised by how much faster the `TripleDictById` is:\n\n```\nsage: %timeit testD(D,L)\n625 loops, best of 3: 67.8 \u00b5s per loop\nsage: %timeit testDget(D,L)\n625 loops, best of 3: 52.1 \u00b5s per loop\nsage: %timeit testE(E,L)\n125 loops, best of 3: 3.26 ms per loop\n```\n\n\nFourty to sixty times faster! So, I think it was a good idea to use `TripleDictById` not only in the coercion model, but also as an attribute of Parent.",
+    "created_at": "2012-01-04T21:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3855",
+    "user": "SimonKing"
+}
+```
 
-By the way, here is an example that shows that a `TripleDictById` finds its items _faster_ then a usual dict, even though it has the additional advantage of weak keys. If one uses Cython, one can still save some more, which is what I did in the preceding change of the second patch.
+By the way, here is an example that shows that a `TripleDictById` finds its items *faster* then a usual dict, even though it has the additional advantage of weak keys. If one uses Cython, one can still save some more, which is what I did in the preceding change of the second patch.
 
 I create a list of pairs of rings:
 
@@ -1762,16 +3027,38 @@ sage: %timeit testE(E,L)
 Fourty to sixty times faster! So, I think it was a good idea to use `TripleDictById` not only in the coercion model, but also as an attribute of Parent.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-05 17:02:43
+archive/issue_comments_003856.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-01-05T17:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3856",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-05 17:02:43
+archive/issue_comments_003857.json:
+```json
+{
+    "body": "We have a big regression.\n\nI considered the doctests of sage/modules/free_module.py and took each timing twice, in order to be on the safe side.\n\nVanilla 5.0.prealpha0\n\n```\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [11.9 s]\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [10.3 s]\n```\n\n\nWith the first patch from here:\n\n```\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [24.1 s]\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [25.7 s]\n```\n\n\nWith both patches from here:\n\n```\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [26.0 s]\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [25.8 s]\n```\n\n\nI think such a huge regression can't be accepted. Thus, it is \"needs work\".",
+    "created_at": "2012-01-05T17:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3857",
+    "user": "SimonKing"
+}
+```
 
 We have a big regression.
 
@@ -1810,16 +3097,38 @@ sage -t  "devel/sage-main/sage/modules/free_module.py"
 I think such a huge regression can't be accepted. Thus, it is "needs work".
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-05 17:14:15
+archive/issue_comments_003858.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2012-01-05T17:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3858",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-05 17:14:15
+archive/issue_comments_003859.json:
+```json
+{
+    "body": "Your timings are kind of strange in comparison with what I get.\n\nI was going to post what follows which I double checked:\n\nI can finally confirm I do not get any serious speed regression with the last couple of patches.\n\nptestlong gives something between 3100 and 3250 seconds with 5.0.prealpha0 vanilla or 715 applied.\n\nTesting only sage.schemes with one core gives me between 1550 and 1600 with both in the same way.\n\nAnd this time I confirm the test with random j-invariants is fixed by 715 and is not without (I'm getting paranoid now) as well as with a fixed j-invariant.\n\nI'll review the code and example next. \n\nSo when I saw your post, I ran \"sage -t devel/sage/sage-main/modules/free_modules.py\" with both my installations (vanilla and vanilla+715) and got several times about 13 sec for both ! maybe a mean little lower for vanilla (at max .5 sec less).\n\nI should mention I also get a quite big variance, not sure why, because my system is not heavily loaded, maybe cos the disk is on NFS.\n\nE.g. I got between 12.3 and 20.0 (just once) for vanilla and between 12.7and 19. (at the same time, so maybe the network was loaded at that time ??)\n\nFor info I got a quite recent multicore Xeon running an outdated version of Ubuntu 64 bits.",
+    "created_at": "2012-01-05T17:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3859",
+    "user": "jpflori"
+}
+```
 
 Your timings are kind of strange in comparison with what I get.
 
@@ -1844,25 +3153,58 @@ E.g. I got between 12.3 and 20.0 (just once) for vanilla and between 12.7and 19.
 For info I got a quite recent multicore Xeon running an outdated version of Ubuntu 64 bits.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-05 17:15:49
+archive/issue_comments_003860.json:
+```json
+{
+    "body": "Groumpf, trac didnot like my blank lines.\n\nSo the original part I was about to post is inbetween \"I can finally confirm...\" and \"example next.\"",
+    "created_at": "2012-01-05T17:15:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3860",
+    "user": "jpflori"
+}
+```
 
 Groumpf, trac didnot like my blank lines.
 
 So the original part I was about to post is inbetween "I can finally confirm..." and "example next."
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 07:04:01
+archive/issue_comments_003861.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-01-06T07:04:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3861",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 07:04:01
+archive/issue_comments_003862.json:
+```json
+{
+    "body": "It is always possible that there is a regression on some hardware, but not on all.\n\nI made an excessive log, i.e., I logged all Python commands. It turns out that there are only little differences with or without patch. Hence, I am sure that the regression does not come from an excessive garbage collection (otherwise, I would have seen that some objects are created repeatedly). So, I guess the regression comes from the C-level.\n\nThere is one thing that could make my code too slow: I use weak references in my version of `TripleDict` and `TripleDictById`; however, when getting dictionary items, I am calling the weak reference, in order to get the object that it is pointing to, and compare then. That is slow.\n\nI was thinking: Perhaps I could manage to use `id(X)` as key of `TripleDictById`, rather than a weak reference to `X`. The weak reference to `X` could be stored elsewhere.\n\nAnyway, here is a data point:\nUnpatched (there is only `TripleDict`, no `TripleDictById`):\n\n```\nsage: from sage.structure.coerce_dict import TripleDict\nsage: D = TripleDict(113)\nsage: L = []\nsage: for p in prime_range(10^3):\n....:     K = GF(p)\n....:     P = K['x','y']\n....:     L.append((K,P))\n....:     \nsage: for i,(K,P) in enumerate(L):\n....:     D[K,P,True] = i\n....:     \nsage: cython(\"\"\"\n....: def testD(D, list L):\n....:     for K,P in L:\n....:         n = D[K,P,True]\n....: \"\"\")\nsage: %timeit testD(D,L)\n625 loops, best of 3: 30.6 \u00b5s per loop\n```\n\n\nPatched (comparing `TripleDict` and `TripleDictById`):\n\n```\nsage: from sage.structure.coerce_dict import TripleDict, TripleDictById\nsage: D = TripleDict(113)\nsage: E = TripleDictById(113)\nsage: L = []\nsage: for p in prime_range(10^3):\n....:     K = GF(p)\n....:     P = K['x','y']\n....:     L.append((K,P))\n....:     \nsage: for i,(K,P) in enumerate(L):\n....:     D[K,P,True] = i\n....:     E[K,P,True] = i\n....:                                                                                                                        \nsage: cython(\"\"\"                                                                                                             \n....: def testD(D, list L):\n....:     for K,P in L:\n....:         n = D[K,P,True]\n....: \"\"\")\nsage: %timeit testD(D,L)\n25 loops, best of 3: 21 ms per loop\nsage: %timeit testD(E,L)\n625 loops, best of 3: 61.9 \u00b5s per loop\n```\n\n\nIn the applications, I am mainly using `TripleDictById`. Nevertheless, it is only half as fast as the old `TripleDict`. So, this is what I have to work at!",
+    "created_at": "2012-01-06T07:04:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3862",
+    "user": "SimonKing"
+}
+```
 
 It is always possible that there is a regression on some hardware, but not on all.
 
@@ -1928,23 +3270,56 @@ sage: %timeit testD(E,L)
 In the applications, I am mainly using `TripleDictById`. Nevertheless, it is only half as fast as the old `TripleDict`. So, this is what I have to work at!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 07:04:13
+archive/issue_comments_003863.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-01-06T07:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3863",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-06 15:20:45
+archive/issue_comments_003864.json:
+```json
+{
+    "body": "This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....",
+    "created_at": "2012-01-06T15:20:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3864",
+    "user": "vbraun"
+}
+```
 
 This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 16:50:04
+archive/issue_comments_003865.json:
+```json
+{
+    "body": "Replying to [comment:113 vbraun]:\n> This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....\n\nHow should the eraser know which entry is to be removed? I wouldn't like to re-implement the weakref module...\n\nAt least on my machine, I have a regression. In order to avoid it, I am now experimenting with some ideas to speed-up the access to dictionary items: With my current patch, I do something like\n\n```\n    if k1 is bucket[i]()\n```\n\nwhere `buchet[i]` is a weak reference. But calling the reference takes a lot of time.\n\nFor example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.",
+    "created_at": "2012-01-06T16:50:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3865",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:113 vbraun]:
 > This is a bit hackish, but we could also store a strong reference as before but manually `Py_DECREF` it by one. The eraser then has to make sure that cache entries are removed when they fall out of use, or we'll segfault....
@@ -1962,9 +3337,20 @@ where `buchet[i]` is a weak reference. But calling the reference takes a lot of 
 For example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 18:20:49
+archive/issue_comments_003866.json:
+```json
+{
+    "body": "Replying to [comment:114 SimonKing]:\n> For example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.\n\n... but `k1 is bucket[i]()` is a lot faster than `id(k1)==bucket[i].key`. Too bad.",
+    "created_at": "2012-01-06T18:20:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3866",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:114 SimonKing]:
 > For example, since k1 is compared by identity (not equality), it might make sense to store `id(bucket[i]())` as an attribute of the weak reference. This is possible by `weakref.KeyedRef`. And `bucket[i].key` is a bit faster than `bucket[i]()`.
@@ -1972,9 +3358,20 @@ Replying to [comment:114 SimonKing]:
 ... but `k1 is bucket[i]()` is a lot faster than `id(k1)==bucket[i].key`. Too bad.
 
 
+
 ---
 
-Comment by vbraun created at 2012-01-06 18:37:09
+archive/issue_comments_003867.json:
+```json
+{
+    "body": "Replying to [comment:114 SimonKing]:\n> How should the eraser know which entry is to be removed? I wouldn't like to re-implement the weakref module...\n\nAs you said in the preceeding comment, you'd have to store a weak reference elsewhere. The only advantage is that comparing could be done on the actual reference.",
+    "created_at": "2012-01-06T18:37:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3867",
+    "user": "vbraun"
+}
+```
 
 Replying to [comment:114 SimonKing]:
 > How should the eraser know which entry is to be removed? I wouldn't like to re-implement the weakref module...
@@ -1982,59 +3379,136 @@ Replying to [comment:114 SimonKing]:
 As you said in the preceeding comment, you'd have to store a weak reference elsewhere. The only advantage is that comparing could be done on the actual reference.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-06 22:27:04
+archive/issue_comments_003868.json:
+```json
+{
+    "body": "Perhaps as follows: We currently have one ensemble of buckets. Instead, we could have two ensembles, say, `self.keys` and `self.refs`. Each bucket in both ensembles is a list of length `3*n`. Let `X,Y,Z` be  key, let h be the hash of that triple and V the value associated with `X,Y,Z`.\n\nThen, one could store `X,Y,Z` as `self.keys[h][i:i+3]`, with artificially decrementing the reference count for X and Y (but not for Z, which usually is True, False, None, operator.mul and so on), as suggested by Volker. And `self.refs[h][i:i+3]` would be formed by a weak reference to X, a weak reference to Y, and V. The two weak references have a callback function, that tries to find a reference `self.refs[h][j]` when it became invalid, and would delete the corresponding triple both in `self.refs[h]` and in `self.keys[h]`.\n\nTwo weak references with callback function pointing to the same object are distinct (they are only the same if they don't have a callback function). Hence, each reference occurs in the `TripleDict` exactly once. Hence, it makes sense to store the hash value of the *triple* `X,Y,Z` as additional data both in the reference to X and to Y - which is possible with `weakref.KeyedRef`. In that way, deleting an entry when a reference became invalid would be much faster as with my current patch, since it is not needed to search in *all* buckets.\n\nI will try it tomorrow.",
+    "created_at": "2012-01-06T22:27:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3868",
+    "user": "SimonKing"
+}
+```
 
 Perhaps as follows: We currently have one ensemble of buckets. Instead, we could have two ensembles, say, `self.keys` and `self.refs`. Each bucket in both ensembles is a list of length `3*n`. Let `X,Y,Z` be  key, let h be the hash of that triple and V the value associated with `X,Y,Z`.
 
 Then, one could store `X,Y,Z` as `self.keys[h][i:i+3]`, with artificially decrementing the reference count for X and Y (but not for Z, which usually is True, False, None, operator.mul and so on), as suggested by Volker. And `self.refs[h][i:i+3]` would be formed by a weak reference to X, a weak reference to Y, and V. The two weak references have a callback function, that tries to find a reference `self.refs[h][j]` when it became invalid, and would delete the corresponding triple both in `self.refs[h]` and in `self.keys[h]`.
 
-Two weak references with callback function pointing to the same object are distinct (they are only the same if they don't have a callback function). Hence, each reference occurs in the `TripleDict` exactly once. Hence, it makes sense to store the hash value of the _triple_ `X,Y,Z` as additional data both in the reference to X and to Y - which is possible with `weakref.KeyedRef`. In that way, deleting an entry when a reference became invalid would be much faster as with my current patch, since it is not needed to search in _all_ buckets.
+Two weak references with callback function pointing to the same object are distinct (they are only the same if they don't have a callback function). Hence, each reference occurs in the `TripleDict` exactly once. Hence, it makes sense to store the hash value of the *triple* `X,Y,Z` as additional data both in the reference to X and to Y - which is possible with `weakref.KeyedRef`. In that way, deleting an entry when a reference became invalid would be much faster as with my current patch, since it is not needed to search in *all* buckets.
 
 I will try it tomorrow.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-07 12:13:22
+archive/issue_comments_003869.json:
+```json
+{
+    "body": "Here is a preliminary combined patch, implementing the ideas sketched in the previous post -- except that I forgot to explicitly decref stuff... Trying that now. I hope it doesn't segfault.",
+    "created_at": "2012-01-07T12:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3869",
+    "user": "SimonKing"
+}
+```
 
 Here is a preliminary combined patch, implementing the ideas sketched in the previous post -- except that I forgot to explicitly decref stuff... Trying that now. I hope it doesn't segfault.
 
 
----
-
-Comment by SimonKing created at 2012-01-07 12:27:25
-
-Hm. When adding a "Py_DECREF", some doctest segfaults, and also the memory leak is _not_ completely fixed: In the test where one creates 50 elliptic curves with random j-invariant, 12 of them survive garbage collection. That's better than 50, but worse than 1.
-
 
 ---
 
-Comment by SimonKing created at 2012-01-07 12:36:03
+archive/issue_comments_003870.json:
+```json
+{
+    "body": "Hm. When adding a \"Py_DECREF\", some doctest segfaults, and also the memory leak is *not* completely fixed: In the test where one creates 50 elliptic curves with random j-invariant, 12 of them survive garbage collection. That's better than 50, but worse than 1.",
+    "created_at": "2012-01-07T12:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3870",
+    "user": "SimonKing"
+}
+```
+
+Hm. When adding a "Py_DECREF", some doctest segfaults, and also the memory leak is *not* completely fixed: In the test where one creates 50 elliptic curves with random j-invariant, 12 of them survive garbage collection. That's better than 50, but worse than 1.
+
+
+
+---
+
+archive/issue_comments_003871.json:
+```json
+{
+    "body": "First of all, in my current patch, I forgot the case `k1 is k2`: In that case, I would decrement the reference count twice for the same object. However, even when I avoid it, I get a double free.\n\nI wonder: Could the double free result from the fact that I do `del self.key_buckets[h][i:i+3]` when the reference count for `self.key_buckets[h][i]` is already zero? Or would that be no problem?",
+    "created_at": "2012-01-07T12:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3871",
+    "user": "SimonKing"
+}
+```
 
 First of all, in my current patch, I forgot the case `k1 is k2`: In that case, I would decrement the reference count twice for the same object. However, even when I avoid it, I get a double free.
 
 I wonder: Could the double free result from the fact that I do `del self.key_buckets[h][i:i+3]` when the reference count for `self.key_buckets[h][i]` is already zero? Or would that be no problem?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-07 12:51:23
+archive/issue_comments_003872.json:
+```json
+{
+    "body": "I made some progress by using `Py_CLEAR` instead of `Py_DECREF`. Now, it is \"only\" signal 11, not a double-free.",
+    "created_at": "2012-01-07T12:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3872",
+    "user": "SimonKing"
+}
+```
 
 I made some progress by using `Py_CLEAR` instead of `Py_DECREF`. Now, it is "only" signal 11, not a double-free.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-07 18:09:03
+archive/issue_comments_003873.json:
+```json
+{
+    "body": "Sorry, it seems that I have no idea whatsoever of reference counting. I made experiments with `Py_DECREF` resp. `Py_CLEAR` applied to list elements, but in all cases I get a segfault when the next garbage collection occurs.",
+    "created_at": "2012-01-07T18:09:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3873",
+    "user": "SimonKing"
+}
+```
 
 Sorry, it seems that I have no idea whatsoever of reference counting. I made experiments with `Py_DECREF` resp. `Py_CLEAR` applied to list elements, but in all cases I get a segfault when the next garbage collection occurs.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-07 20:06:04
+archive/issue_comments_003874.json:
+```json
+{
+    "body": "I have updated the patch. Instead of storing the original key and using `Py_DECREF`, I store its address instead (for `TripleDictId`) resp. use another weak reference.\n\nWith the new patch, `sage -t \"devel/sage-main/sage/modules/free_module.py\"` works and is about as fast as in vanilla sage.\n\nMoreover, the memleak is fixed.\n\nHowever, the patch isn't fully tested or documented yet. And still `TripleDictById` is only half as fast as the old `TripleDict` (but recall: The old is buggy and uses strong references). So, it isn't ready for review, but of course I'd appreciate preliminary comments.\n\nApply trac715_tripledict_combined.patch",
+    "created_at": "2012-01-07T20:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3874",
+    "user": "SimonKing"
+}
+```
 
 I have updated the patch. Instead of storing the original key and using `Py_DECREF`, I store its address instead (for `TripleDictId`) resp. use another weak reference.
 
@@ -2047,9 +3521,20 @@ However, the patch isn't fully tested or documented yet. And still `TripleDictBy
 Apply trac715_tripledict_combined.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-08 17:21:37
+archive/issue_comments_003875.json:
+```json
+{
+    "body": "OMG!!\n\nI totally misinterpreted how the keys were compared in the original version of `TripleDict`. When I saw the line `if PyList_GET_ITEM(bucket, i) == <PyObject*>k1` in the old code, I thought that this means to compare the objects by equality.\n\nBut now I learnt that this is comparison by identity. Arrgh! The behaviour that I provide with `TripleDictById` was there all along!\n\nConclusion: I should erase my version of `TripleDict` (which really compares by equality, not identity), rename my `TripleDictById` into `TripleDict`, and then finally try to get things up to speed.",
+    "created_at": "2012-01-08T17:21:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3875",
+    "user": "SimonKing"
+}
+```
 
 OMG!!
 
@@ -2060,14 +3545,38 @@ But now I learnt that this is comparison by identity. Arrgh! The behaviour that 
 Conclusion: I should erase my version of `TripleDict` (which really compares by equality, not identity), rename my `TripleDictById` into `TripleDict`, and then finally try to get things up to speed.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-08 23:56:58
+archive/issue_comments_003876.json:
+```json
+{
+    "body": "Introduce weak references to coercion dicts, and refactor the hashtables.",
+    "created_at": "2012-01-08T23:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3876",
+    "user": "SimonKing"
+}
+```
 
 Introduce weak references to coercion dicts, and refactor the hashtables.
 
 
+
 ---
+
+archive/issue_comments_003877.json:
+```json
+{
+    "body": "Attachment\n\nI have posted a new patch version.\n\nRecall that we want a dictionary whose keys are triples; we want to compare all three key items by identity, and we want that there is only a weak reference to the first two key items (the third my have a strong reference).\n\nThe `TripleDictById` is now based on the following idea:\n\n* There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.\n* There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.\n* When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.\n* Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).\n* There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.\n\n__Status of the patch__\n\n* The \"raw\" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.\n* The memleak is fixed.\n* The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.\n\nThe patch still contains both `TripleDict` (which compares weak keys by equality) and `TripleDictById` (which compares keys by identity, similar to what `TripleDict` does in unpatched Sage, but using weak references).\n\nWhat do you think: Should comparison by equality be provided in the patch?\n\nContra:\n\n We don't use it in the rest of Sage, so, why should we add it?\n\nPro:\n\n A \"triple dict by comparison\" is slower than a usual (strong) dictionary, but on the other hand `weakref.WeakKeyDictionary` does not work if the keys are tuples - hence, \"triple dict by comparison\" adds a new feature.",
+    "created_at": "2012-01-09T00:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3877",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -2077,17 +3586,17 @@ Recall that we want a dictionary whose keys are triples; we want to compare all 
 
 The `TripleDictById` is now based on the following idea:
 
- * There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.
- * There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.
- * When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.
- * Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).
- * There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.
+* There is one list that stores the memory addresses of the first two key items and the third key item. In particular, I don't need to decref the key items, since we only store their addresses.
+* There is another list that stores the value corresponding to the key triple, and stores weak references with a callback function to the first two key items.
+* When accessing the dictionary, the address of the first two key items is compared with the stored address, and the third is compared by identity with the stored data.
+* Only when iterating over the `TripleDictById`, the weak references are called (of course: iteritems is supposed to return the keys, not just the address of the keys).
+* There are two reasons for storing the weak references (and not only the addresses): The callback function of the weak references removes unused entries of the dictionary, and we also need it for iteration over the dictionary.
 
 __Status of the patch__
 
- * The "raw" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.
- * The memleak is fixed.
- * The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.
+* The "raw" speed seems to be almost as good as in the unpatched version, the speed of doctests seems to be OK, and I don't observe segfaults.
+* The memleak is fixed.
+* The documentation of sage/structure/coerce_dict.pyx needs more polishing, and last but not least I did not run the doctests yet.
 
 The patch still contains both `TripleDict` (which compares weak keys by equality) and `TripleDictById` (which compares keys by identity, similar to what `TripleDict` does in unpatched Sage, but using weak references).
 
@@ -2102,20 +3611,42 @@ Pro:
  A "triple dict by comparison" is slower than a usual (strong) dictionary, but on the other hand `weakref.WeakKeyDictionary` does not work if the keys are tuples - hence, "triple dict by comparison" adds a new feature.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-09 00:23:01
+archive/issue_comments_003878.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2012-01-09T00:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3878",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-09 16:43:06
+archive/issue_comments_003879.json:
+```json
+{
+    "body": "To answer my own question: I believe that comparison by equality does not make sense (yet), since it isn't used in the coercion model.\n\nTherefore, I have produced a new patch. Idea: The `TripleDict` stores the addresses of the keys. In addition, there is a dictionary of weak references with callback function. The *only* purpose of these references is that their callback functions are erasing invalid dictionary items.\n\n__\"Raw\" speed__\n\nPatched:\n\n```\nsage: from sage.structure.coerce_dict import TripleDict\nsage: D = TripleDict(113)\nsage: L = []\nsage: for p in prime_range(10^3):\n....:     K = GF(p)\n....:     P = K['x','y']\n....:     L.append((K,P))\n....:\nsage: for i,(K,P) in enumerate(L):\n....:     D[K,P,True] = i\n....:\nsage: cython(\"\"\"\n....: from sage.structure.coerce_dict cimport TripleDict\n....: def testTriple(TripleDict D, list L):\n....:     for K,P in L:\n....:         n = D[K,P,True]\n....: def testTripleGet(TripleDict D, list L):\n....:     for K,P in L:\n....:         n = D.get(K,P,True)\n....: def testTripleSet(list L):\n....:     cdef TripleDict D = TripleDict(113)\n....:     for i,(K,P) in enumerate(L):\n....:         D.set(K,P,True, i)\n....: \"\"\")\nsage: %timeit testTriple(D,L)\n625 loops, best of 3: 42.4 \u00b5s per loop\nsage: %timeit testTripleGet(D,L)\n625 loops, best of 3: 28.3 \u00b5s per loop\nsage: %timeit testTripleSet(L)\n125 loops, best of 3: 2.66 ms per loop\n```\n\n\nUnpatched:\n\n```\nsage: %timeit testTriple(D,L)\n625 loops, best of 3: 31.2 \u00b5s per loop\nsage: %timeit testTripleGet(D,L)\n625 loops, best of 3: 17.5 \u00b5s per loop\nsage: %timeit testTripleSet(L)\n625 loops, best of 3: 79.2 \u00b5s per loop\n```\n\n\n__Doctest speed__\n\nPatched\n\n```\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [11.4 s]\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [11.7 s]\n```\n\n\nUnpatched\n\n```\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [11.7 s]\nsage -t  \"devel/sage-main/sage/modules/free_module.py\"\n         [11.5 s]\n```\n\n\n__Conclusion__\n\nUsing weak references, things become a bit slower, but it is a lot better than with the previous patches. According to the timing of the doc tests, the regression doesn't matter in applications.\n\nI guess there is no free lunch, and thus the regression is small enough, given that the memory leak is fixed (which is checked in a new test).\n\nI have not run the full test suite yet, but I think it can be reviewed.\n\nApply trac715_one_triple_dict.patch",
+    "created_at": "2012-01-09T16:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3879",
+    "user": "SimonKing"
+}
+```
 
 To answer my own question: I believe that comparison by equality does not make sense (yet), since it isn't used in the coercion model.
 
-Therefore, I have produced a new patch. Idea: The `TripleDict` stores the addresses of the keys. In addition, there is a dictionary of weak references with callback function. The _only_ purpose of these references is that their callback functions are erasing invalid dictionary items.
+Therefore, I have produced a new patch. Idea: The `TripleDict` stores the addresses of the keys. In addition, there is a dictionary of weak references with callback function. The *only* purpose of these references is that their callback functions are erasing invalid dictionary items.
 
 __"Raw" speed__
 
@@ -2200,56 +3731,124 @@ I have not run the full test suite yet, but I think it can be reviewed.
 Apply trac715_one_triple_dict.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-09 16:43:06
+archive/issue_comments_003880.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-01-09T16:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3880",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003881.json:
+```json
+{
+    "body": "Attachment\n\nDrop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys",
+    "created_at": "2012-01-09T20:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3881",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Drop the distinction of `TripleDict` versus `TripleDictById`. Use the memory addresses as dictionary keys
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-09 20:14:35
+archive/issue_comments_003882.json:
+```json
+{
+    "body": "`make ptest` reported only one error, and the error was in fact a misprint. Hence, I have updated my patch, and with it, all tests should pass.",
+    "created_at": "2012-01-09T20:14:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3882",
+    "user": "SimonKing"
+}
+```
 
 `make ptest` reported only one error, and the error was in fact a misprint. Hence, I have updated my patch, and with it, all tests should pass.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-12 10:37:42
+archive/issue_comments_003883.json:
+```json
+{
+    "body": "Here are finally some first timings for 'make ptest' (this time I first checked the memory leak is actually fixed...)\n\n* sage-5.0.prealpha1 vanilla: 937.4 sec\n* sage-5.0.prealpha1 + 715: 948.8 sec\n\nNo errors for both. I'll report on make ptestlong tomorrow, try to check that actions do not get continuously deleted and finally review the code.",
+    "created_at": "2012-01-12T10:37:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3883",
+    "user": "jpflori"
+}
+```
 
 Here are finally some first timings for 'make ptest' (this time I first checked the memory leak is actually fixed...)
 
- * sage-5.0.prealpha1 vanilla: 937.4 sec
- * sage-5.0.prealpha1 + 715: 948.8 sec
+* sage-5.0.prealpha1 vanilla: 937.4 sec
+* sage-5.0.prealpha1 + 715: 948.8 sec
 
 No errors for both. I'll report on make ptestlong tomorrow, try to check that actions do not get continuously deleted and finally review the code.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-13 08:18:50
+archive/issue_comments_003884.json:
+```json
+{
+    "body": "Running \"make ptestlong\" gave me:\n\n* sage-5.0.prealpha1 vanilla: 1397.9 sec\n* sage-5.0.prealpha1 + 715: 1415.0 sec\n\nwith no errors for both (I remarked that testing sandpile.py was horribly long with my previous install of sage-5.0.prealpha0, something like 1350 sec for it alone; in between I've updated my ubuntu and recompiled everything for prealpha1, so that might explain why my new timings are so faster).\n\nHence no regression!",
+    "created_at": "2012-01-13T08:18:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3884",
+    "user": "jpflori"
+}
+```
 
 Running "make ptestlong" gave me:
 
- * sage-5.0.prealpha1 vanilla: 1397.9 sec
- * sage-5.0.prealpha1 + 715: 1415.0 sec
+* sage-5.0.prealpha1 vanilla: 1397.9 sec
+* sage-5.0.prealpha1 + 715: 1415.0 sec
 
 with no errors for both (I remarked that testing sandpile.py was horribly long with my previous install of sage-5.0.prealpha0, something like 1350 sec for it alone; in between I've updated my ubuntu and recompiled everything for prealpha1, so that might explain why my new timings are so faster).
 
 Hence no regression!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-13 09:00:52
+archive/issue_comments_003885.json:
+```json
+{
+    "body": "Replying to [comment:129 jpflori]:\n> Running \"make ptestlong\" gave me:\n> \n>  * sage-5.0.prealpha1 vanilla: 1397.9 sec\n>  * sage-5.0.prealpha1 + 715: 1415.0 sec\n\nI'm glad that this time (in contrast to what I did in #9138 and was fixing in #11900) it seems that I am not creating a terrible slow-down!",
+    "created_at": "2012-01-13T09:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3885",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:129 jpflori]:
 > Running "make ptestlong" gave me:
@@ -2260,9 +3859,20 @@ Replying to [comment:129 jpflori]:
 I'm glad that this time (in contrast to what I did in #9138 and was fixing in #11900) it seems that I am not creating a terrible slow-down!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-15 09:39:04
+archive/issue_comments_003886.json:
+```json
+{
+    "body": "I found another memory leak:\n\n```\nsage: K = GF(1<<55,'t')\nsage: for i in range(50):\n....:     a = K.random_element()\n....:     E = EllipticCurve(j=a)\n....:     b = K.has_coerce_map_from(E)\n....:     \nsage: import gc\nsage: gc.collect()\n0\n```\n\n\nNamely, `K.coerce_map_from(E)` stores the resulting map (or None) in a strong dictionary.\n\nSeveral questions: Would it suffice to change the dictionary into a `WeakKeyDictionary`? If it would: Would it cause a regression? I guess the answer to the second question is \"yes\", since getting an item out of a weak key dictionary is quite slow and requesting a coerce map is a very frequent operation.\n\nSo, I suppose one could introduce another type of dictionary, analogous to `TripleDict`, which would not test for equality but for identity. \n\nBut should this be here or on a new ticket? I think the patch from here is big enough, hence, do it on a different ticket, but you can try to convince me to do it here.\n\nSince the patchbot tried to use the wrong patches:\n\nApply trac715_one_tripledict.patch",
+    "created_at": "2012-01-15T09:39:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3886",
+    "user": "SimonKing"
+}
+```
 
 I found another memory leak:
 
@@ -2292,20 +3902,42 @@ Since the patchbot tried to use the wrong patches:
 Apply trac715_one_tripledict.patch
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-15 11:37:48
+archive/issue_comments_003887.json:
+```json
+{
+    "body": "I don't know why the patchbot keeps trying to apply *all* patches.\n\nAnyway. First experiments show that a `MonoDict` (which would be my name for a dictionary that uses weak keys, compares the keys by identity and expect a singly item as a key) is a lot faster than a usual dictionary, if the keys are frequently used parents such as finite fields. \"A lot\" means: More than 20 times faster.\n\nI will simply try whether things still work when I replace dictionaries by `MonoDict` in the coercion model. If they do, I'll post here. If there are difficult problems, I'll move it to a different ticket.",
+    "created_at": "2012-01-15T11:37:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3887",
+    "user": "SimonKing"
+}
+```
 
-I don't know why the patchbot keeps trying to apply _all_ patches.
+I don't know why the patchbot keeps trying to apply *all* patches.
 
 Anyway. First experiments show that a `MonoDict` (which would be my name for a dictionary that uses weak keys, compares the keys by identity and expect a singly item as a key) is a lot faster than a usual dictionary, if the keys are frequently used parents such as finite fields. "A lot" means: More than 20 times faster.
 
 I will simply try whether things still work when I replace dictionaries by `MonoDict` in the coercion model. If they do, I'll post here. If there are difficult problems, I'll move it to a different ticket.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-15 14:52:37
+archive/issue_comments_003888.json:
+```json
+{
+    "body": "I'd say we'd better put your MonoDict fix in another ticket, even if it no difficult problems arise, to keep the patch readable enough and the problems clearly separated.\n\nAnd close this one asap... sorry I should be the one finally reviewing your code (I already checked for speed regression and actual fix of the leak as mentioned above), but I do not have much time these days.\n\nI'd say I'll do that on thursday (at worst i hope), as there is some Sage meeting in Paris that day.",
+    "created_at": "2012-01-15T14:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3888",
+    "user": "jpflori"
+}
+```
 
 I'd say we'd better put your MonoDict fix in another ticket, even if it no difficult problems arise, to keep the patch readable enough and the problems clearly separated.
 
@@ -2314,45 +3946,78 @@ And close this one asap... sorry I should be the one finally reviewing your code
 I'd say I'll do that on thursday (at worst i hope), as there is some Sage meeting in Paris that day.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-15 17:04:46
+archive/issue_comments_003889.json:
+```json
+{
+    "body": "See #12313 for the other memleak.",
+    "created_at": "2012-01-15T17:04:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3889",
+    "user": "SimonKing"
+}
+```
 
 See #12313 for the other memleak.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-17 07:21:54
+archive/issue_comments_003890.json:
+```json
+{
+    "body": "You raised the question whether actions (and perhaps maps as well) are garbage collected too often. I inserted some lines of code into the init method of `sage.categories.map.Map` and `sage.categories.action.Action` that counts how often the init method is called (namely by appending one character to some file on my disk). Then, I ran the doctests in `sage.schemes`. Result:\n\n__With #11780 only__\n\n* 76102 maps\n* 41381 actions\n* 647.3 seconds\n\n__With #11780 and #715__\n\n* 76192 maps\n* 46157 actions\n* 658 seconds\n\nSo, actions are created about 10% more often than without the patch, while the speed regression is not so dramatic.\n\nTwo explanations:\n\n1. These 10% of actions would have been needed, and it is *bad* that they were garbage collected.\n\n2. One file contains many tests, and often these tests are quite similar. In particular, many actions will occur in many different tests. Without the patch, the actions created by the first test are strongly cached and are thus still available for the second, third, ... test. But with the patch, the actions created by the first test will be garbage collected when the first test is done. Hence, it is *good* that they were garbage collected.\n\nIn order to find out whether 1. or 2. is the correct explanation, I'll determine the number of maps and actions created in \"single\" computations, namely in the benchmarks discussed at #11900.",
+    "created_at": "2012-01-17T07:21:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3890",
+    "user": "SimonKing"
+}
+```
 
 You raised the question whether actions (and perhaps maps as well) are garbage collected too often. I inserted some lines of code into the init method of `sage.categories.map.Map` and `sage.categories.action.Action` that counts how often the init method is called (namely by appending one character to some file on my disk). Then, I ran the doctests in `sage.schemes`. Result:
 
 __With #11780 only__
 
- * 76102 maps
- * 41381 actions
- * 647.3 seconds
+* 76102 maps
+* 41381 actions
+* 647.3 seconds
 
 __With #11780 and #715__
 
- * 76192 maps
- * 46157 actions
- * 658 seconds
+* 76192 maps
+* 46157 actions
+* 658 seconds
 
 So, actions are created about 10% more often than without the patch, while the speed regression is not so dramatic.
 
 Two explanations:
 
- 1. These 10% of actions would have been needed, and it is _bad_ that they were garbage collected.
+1. These 10% of actions would have been needed, and it is *bad* that they were garbage collected.
 
- 2. One file contains many tests, and often these tests are quite similar. In particular, many actions will occur in many different tests. Without the patch, the actions created by the first test are strongly cached and are thus still available for the second, third, ... test. But with the patch, the actions created by the first test will be garbage collected when the first test is done. Hence, it is _good_ that they were garbage collected.
+2. One file contains many tests, and often these tests are quite similar. In particular, many actions will occur in many different tests. Without the patch, the actions created by the first test are strongly cached and are thus still available for the second, third, ... test. But with the patch, the actions created by the first test will be garbage collected when the first test is done. Hence, it is *good* that they were garbage collected.
 
 In order to find out whether 1. or 2. is the correct explanation, I'll determine the number of maps and actions created in "single" computations, namely in the benchmarks discussed at #11900.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-17 08:34:08
+archive/issue_comments_003891.json:
+```json
+{
+    "body": "Here is some more data. In all cases, I give the number of maps and actions created, first with #11780 only and then with #11780+#715.\n\nFirst test: Start Sage!\n\n -> 191 maps, 44 actions versus 191 maps, 44 actions. Fine!\n\nSecond test:\n\n```\nE = J0(46).endomorphism_ring()\ng = E.gens()\n```\n\n -> 597 maps, 320 actions versus 611 maps, 481 actions. That's about 50% more actions and is thus not good.\n\nThird test:\n\n```\nL = EllipticCurve('960d1').prove_BSD()\n```\n\n -> 3550 maps, 97 actions versus 3550 maps, 97 actions. Fine!\n\nFourth test:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n        if p != 389:\n                G = E.change_ring(GF(p)).abelian_group()\n```\n\n -> 14969 maps, 9884 actions versus 14969 maps, 9885 actions. Fine!\n\nQuestion to the reviewer: How bad do you think is the \"missing action\" in the second example? Would it be worth while to fix it in the method `E.gens`?\n\nWould you even think I should try to modify `TripleDict` so that a list of *strong* references is preserved, but the list can only have a maximal length (thus popping the first references on the list when new references are appended)? In that way, one could extend the life time of the cache, but at the same time one would avoid an infinite memory growth.\n\nIt is a shame that Python only has strong and weak references, but no soft references!",
+    "created_at": "2012-01-17T08:34:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3891",
+    "user": "SimonKing"
+}
+```
 
 Here is some more data. In all cases, I give the number of maps and actions created, first with #11780 only and then with #11780+#715.
 
@@ -2390,14 +4055,25 @@ for p in prime_range(10000):
 
 Question to the reviewer: How bad do you think is the "missing action" in the second example? Would it be worth while to fix it in the method `E.gens`?
 
-Would you even think I should try to modify `TripleDict` so that a list of _strong_ references is preserved, but the list can only have a maximal length (thus popping the first references on the list when new references are appended)? In that way, one could extend the life time of the cache, but at the same time one would avoid an infinite memory growth.
+Would you even think I should try to modify `TripleDict` so that a list of *strong* references is preserved, but the list can only have a maximal length (thus popping the first references on the list when new references are appended)? In that way, one could extend the life time of the cache, but at the same time one would avoid an infinite memory growth.
 
 It is a shame that Python only has strong and weak references, but no soft references!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-18 12:02:16
+archive/issue_comments_003892.json:
+```json
+{
+    "body": "At [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8b2fba49fe1ee69e), Robert Bradshaw suggested the following benchmark, measuring the impact of the new `TripleDict` on multiplication of integers with `RDF` (which does involve actions and thus does involve lookup in `TripleDict`):\n\n```\nsage: def test(n):\n....:     a = Integer(10)\n....:     b = QQ(20)\n....:     s = RDF(30)\n....:     for x in xrange(10**n):\n....:         s += a*b*x\n....:\n```\n\n\nWith Sage-5.0.prealpha0+#11780:\n\n```\nsage: %time test(6)\nCPU times: user 7.25 s, sys: 0.04 s, total: 7.29 s\nWall time: 7.31 s\n```\n\nand with the patch from here added\n\n```\nsage: %time test(6)\nCPU times: user 7.29 s, sys: 0.01 s, total: 7.31 s\nWall time: 7.31 s\n```\n\n\nSo, yet another supporting data point!",
+    "created_at": "2012-01-18T12:02:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3892",
+    "user": "SimonKing"
+}
+```
 
 At [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8b2fba49fe1ee69e), Robert Bradshaw suggested the following benchmark, measuring the impact of the new `TripleDict` on multiplication of integers with `RDF` (which does involve actions and thus does involve lookup in `TripleDict`):
 
@@ -2432,18 +4108,40 @@ Wall time: 7.31 s
 So, yet another supporting data point!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-18 14:19:00
+archive/issue_comments_003893.json:
+```json
+{
+    "body": "Question: How urgent do you see implementing a ring buffer for `TripleDict`? Namely, right now, I'd prefer to work on #12313. Since #12313 changes sage/structure/coerce_dict.pxd, it would probably be easier for me to coordinate work by postponing the ring buffer to a different ticket (or perhaps introduce it at #12313?).\n\nWhat do you think?",
+    "created_at": "2012-01-18T14:19:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3893",
+    "user": "SimonKing"
+}
+```
 
 Question: How urgent do you see implementing a ring buffer for `TripleDict`? Namely, right now, I'd prefer to work on #12313. Since #12313 changes sage/structure/coerce_dict.pxd, it would probably be easier for me to coordinate work by postponing the ring buffer to a different ticket (or perhaps introduce it at #12313?).
 
 What do you think?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-18 14:25:43
+archive/issue_comments_003894.json:
+```json
+{
+    "body": "Replying to [comment:138 SimonKing]:\n\n> Question: How urgent do you see implementing a ring buffer for `TripleDict`? Namely, right now, I'd prefer to work on #12313. Since #12313 changes sage/structure/coerce_dict.pxd, it would probably be easier for me to coordinate work by postponing the ring buffer to a different ticket (or perhaps introduce it at #12313?). What do you think?\n\nI think we'd better close this one asap, especially now that it seems that no speed regression occur, and provide a speed-up in a subsequent ticket (as you did for #9138 and #11900 or two other ones..).\n\nOf course one could argue that we get no speed regression because we go faster when accessing the dicts, but delete actions more often, so the situation for object creations is not exactly as before, but I do not think anybody or any functions relied the lifetime of these objects (or should...).\n\nIf you do agree, I'll review the ticket tomorrow as I already planned to do and mentioned a few comments above.",
+    "created_at": "2012-01-18T14:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3894",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:138 SimonKing]:
 
@@ -2456,9 +4154,20 @@ Of course one could argue that we get no speed regression because we go faster w
 If you do agree, I'll review the ticket tomorrow as I already planned to do and mentioned a few comments above.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-18 14:34:30
+archive/issue_comments_003895.json:
+```json
+{
+    "body": "Replying to [comment:139 jpflori]:\n\n> If you do agree, I'll review the ticket tomorrow\n\nThank you! Yes, I'd prefer it that way. Having the ring buffer means modifying coerce_dict.pxd, which essentially means recompiling almost the whole Sage library, and that takes almost an hour on my laptop. So, it is better for me to not switch back and forth between #715 and #12313.",
+    "created_at": "2012-01-18T14:34:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3895",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:139 jpflori]:
 
@@ -2467,16 +4176,38 @@ Replying to [comment:139 jpflori]:
 Thank you! Yes, I'd prefer it that way. Having the ring buffer means modifying coerce_dict.pxd, which essentially means recompiling almost the whole Sage library, and that takes almost an hour on my laptop. So, it is better for me to not switch back and forth between #715 and #12313.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-24 13:10:20
+archive/issue_comments_003896.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-01-24T13:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3896",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-24 13:10:20
+archive/issue_comments_003897.json:
+```json
+{
+    "body": "Ive finally read your code and have to say bravo!\n\nHowever I've got one request, or rather one question.\n\nWith the current implementation, Actions always use a weak ref for the underlying set so that it can and will be garbage collected if it is not strong refed elsewhere.\n\nYou illustrate and mention that in some examples in action.pyx.\n\nYou also modify an example involving Action and MatrixSpace to make sure that no gc occurs.\n\nI do not think this is the right solution, I mean that the user should be able to use Action has before (and anyway it does not feel right to me that you can create something that can magically disappear).\n\nYou could also argue that nobody actually uses Actions directly (I do not for example :) ), those who do will have to be careful.\n\nI see two solutions:\n\n* Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)\n* Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the \"normal\" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)\n\nWhat does everybody thinks ?",
+    "created_at": "2012-01-24T13:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3897",
+    "user": "jpflori"
+}
+```
 
 Ive finally read your code and have to say bravo!
 
@@ -2494,15 +4225,26 @@ You could also argue that nobody actually uses Actions directly (I do not for ex
 
 I see two solutions:
 
- * Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)
- * Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the "normal" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)
+* Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)
+* Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the "normal" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)
 
 What does everybody thinks ?
 
 
+
 ---
 
-Comment by jpflori created at 2012-01-24 13:48:33
+archive/issue_comments_003898.json:
+```json
+{
+    "body": "Note to myself: could use type(E) rather than importing the AbelianGroupSoLong... type as Simon did in #12313 \n\n(type(E) is not Abelian... but the memory leak can be testing with it as well)\n\nThis is should make the example more understandable.\n\nSame remark apply for ticket about homset.",
+    "created_at": "2012-01-24T13:48:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3898",
+    "user": "jpflori"
+}
+```
 
 Note to myself: could use type(E) rather than importing the AbelianGroupSoLong... type as Simon did in #12313 
 
@@ -2513,9 +4255,20 @@ This is should make the example more understandable.
 Same remark apply for ticket about homset.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-01-24 15:31:23
+archive/issue_comments_003899.json:
+```json
+{
+    "body": "Replying to [comment:142 jpflori]:\n> With the current implementation, Actions always use a weak ref for the underlying set so that it can and will be garbage collected if it is not strong refed elsewhere.\n> \n> You illustrate and mention that in some examples in action.pyx.\n> \n> You also modify an example involving Action and MatrixSpace to make sure that no gc occurs.\n\nOr rather: That it does not occur too late.\n \n> I do not think this is the right solution, I mean that the user should be able to use Action has before (and anyway it does not feel right to me that you can create something that can magically disappear).\n\nI believe that it is fine. Namely, what use would an action have if you do not have any other strong reference to the underlying set S?\n\nThat's to say: You forgot S and *all* of its elements. But what use would an action on S if you not even know to provide a single element of S?\n\n> You could also argue that nobody actually uses Actions directly (I do not for example :) ), those who do will have to be careful.\n\nI think so.\n\n>  * Add a big fat warning in Action documentation (red, in a bloc, at the start, etc.)\n\nOK, that would need more than the short remarks in my added examples.\n\n>  * Implement somehow an option to choose whether to use weak ref (which will be set for the coercion model) or strong ones (set by default, so the \"normal\" and previous behaviour will be the default one). It basically mean passing an additional boolean somehow which will lead the construction of underlying_set, be saved and modify the behavior of underlying_set() (i.e. add () or not)\n\nOne could store the underlying set S either by\n\n```\n    self.S = weakref.ref(S)\n```\n\nresulting in a weak reference, or by\n\n```\n    self.S = ConstantFunction(S)\n```\n\nresulting in a strong reference.\n\nThe advantage is that `underlying_set()` could remain as it is. In particular, we don't need to make the syntax (`return self.S` versus `return self.S()`)  depend on any any parameter used during initialisation. Note that calling a `ConstantFunction` takes almost no time.\n\nHowever, it might even be faster to do\n\n```\n    if self.use_weak_references:\n        return self.S()\n    else:\n        return self.S\n```\n\nwhere `self.use_weak_references` is a `cdef bint` parameter assigned during initialisation.\n\nI can't test it right now.",
+    "created_at": "2012-01-24T15:31:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3899",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:142 jpflori]:
 > With the current implementation, Actions always use a weak ref for the underlying set so that it can and will be garbage collected if it is not strong refed elsewhere.
@@ -2530,7 +4283,7 @@ Or rather: That it does not occur too late.
 
 I believe that it is fine. Namely, what use would an action have if you do not have any other strong reference to the underlying set S?
 
-That's to say: You forgot S and _all_ of its elements. But what use would an action on S if you not even know to provide a single element of S?
+That's to say: You forgot S and *all* of its elements. But what use would an action on S if you not even know to provide a single element of S?
 
 > You could also argue that nobody actually uses Actions directly (I do not for example :) ), those who do will have to be careful.
 
@@ -2572,9 +4325,20 @@ where `self.use_weak_references` is a `cdef bint` parameter assigned during init
 I can't test it right now.
 
 
+
 ---
 
-Comment by jpflori created at 2012-02-08 14:39:45
+archive/issue_comments_003900.json:
+```json
+{
+    "body": "I'll have some time to work on this today or friday.\n\nAny progress on your side ?\n\nFor example, implementing my preferred solution with the \"use_wek_references\"? :)",
+    "created_at": "2012-02-08T14:39:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3900",
+    "user": "jpflori"
+}
+```
 
 I'll have some time to work on this today or friday.
 
@@ -2583,9 +4347,20 @@ Any progress on your side ?
 For example, implementing my preferred solution with the "use_wek_references"? :)
 
 
+
 ---
 
-Comment by SimonKing created at 2012-02-08 16:53:22
+archive/issue_comments_003901.json:
+```json
+{
+    "body": "Replying to [comment:145 jpflori]:\n> I'll have some time to work on this today or friday.\n> \n> Any progress on your side ?\n> \n> For example, implementing my preferred solution with the \"use_wek_references\"? :)\n\nNo. Currently, I focus on computing Ext algebras of finite dimensional path algebra quotients (that's what I get my money for), and to fix my old group cohomology spkg (which wouldn't work with the most recent version of Sage for at least three independent reasons).",
+    "created_at": "2012-02-08T16:53:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3901",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:145 jpflori]:
 > I'll have some time to work on this today or friday.
@@ -2597,16 +4372,38 @@ Replying to [comment:145 jpflori]:
 No. Currently, I focus on computing Ext algebras of finite dimensional path algebra quotients (that's what I get my money for), and to fix my old group cohomology spkg (which wouldn't work with the most recent version of Sage for at least three independent reasons).
 
 
+
 ---
 
-Comment by jpflori created at 2012-02-10 15:00:49
+archive/issue_comments_003902.json:
+```json
+{
+    "body": "Changing keywords from \"weak cache coercion\" to \"weak cache coercion Cernay2012\".",
+    "created_at": "2012-02-10T15:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3902",
+    "user": "jpflori"
+}
+```
 
 Changing keywords from "weak cache coercion" to "weak cache coercion Cernay2012".
 
 
+
 ---
 
-Comment by jpflori created at 2012-02-10 15:00:49
+archive/issue_comments_003903.json:
+```json
+{
+    "body": "I've posted a first draft of a patch to make use of weakrefs optional (did not add doc, nor changed the test added or modified by Simon yet).\n\nI've surely forgotten some places where action are defined etc.\n\nAfter doing that, I've begun thinking that Simon is right and that Actions are too much related to the coecion system for this approch to be valid.\n\nMaybe using weakrefs all the time, even though objects can become unusable is good enough.",
+    "created_at": "2012-02-10T15:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3903",
+    "user": "jpflori"
+}
+```
 
 I've posted a first draft of a patch to make use of weakrefs optional (did not add doc, nor changed the test added or modified by Simon yet).
 
@@ -2617,16 +4414,40 @@ After doing that, I've begun thinking that Simon is right and that Actions are t
 Maybe using weakrefs all the time, even though objects can become unusable is good enough.
 
 
+
 ---
+
+archive/issue_comments_003904.json:
+```json
+{
+    "body": "Attachment\n\nMake use of weakrefs optional: off by default, on for coercion",
+    "created_at": "2012-02-10T16:58:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3904",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 Make use of weakrefs optional: off by default, on for coercion
 
 
+
 ---
 
-Comment by jpflori created at 2012-02-10 17:15:39
+archive/issue_comments_003905.json:
+```json
+{
+    "body": "Some further thoughts:\n\n- Currently my piece of code do not take into account classes overriding get_action\n\n- for this approach to be consistent I guess that get and discover action should return by default strong refed actions, so we should also add optional arguments to all the get and discover actions...",
+    "created_at": "2012-02-10T17:15:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3905",
+    "user": "jpflori"
+}
+```
 
 Some further thoughts:
 
@@ -2635,18 +4456,40 @@ Some further thoughts:
 - for this approach to be consistent I guess that get and discover action should return by default strong refed actions, so we should also add optional arguments to all the get and discover actions...
 
 
+
 ---
 
-Comment by jpflori created at 2012-02-10 17:28:15
+archive/issue_comments_003906.json:
+```json
+{
+    "body": "This last idea won't be really consistent anyway because the get_action function caches its result anyway in _action_hash...\n\nSo i'm now quite convinced that one should use weak refs all the time and that providing documentation about that is sufficient.",
+    "created_at": "2012-02-10T17:28:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3906",
+    "user": "jpflori"
+}
+```
 
 This last idea won't be really consistent anyway because the get_action function caches its result anyway in _action_hash...
 
 So i'm now quite convinced that one should use weak refs all the time and that providing documentation about that is sufficient.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-07 13:11:29
+archive/issue_comments_003907.json:
+```json
+{
+    "body": "I'm finally trying to add some doc to this ticket and realized that in the matrix.action file you state the usual laius about underlying sets eventually getting garbage collected.\n\nHowever, this is not the case in your examples, for the good reason that matrix spaces are cached.\n\nI'll try to provide an example where matrices act on something not cached, and we won a new ticket where your constructions should be used to cache objects :)",
+    "created_at": "2012-03-07T13:11:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3907",
+    "user": "jpflori"
+}
+```
 
 I'm finally trying to add some doc to this ticket and realized that in the matrix.action file you state the usual laius about underlying sets eventually getting garbage collected.
 
@@ -2655,28 +4498,74 @@ However, this is not the case in your examples, for the good reason that matrix 
 I'll try to provide an example where matrices act on something not cached, and we won a new ticket where your constructions should be used to cache objects :)
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-09 12:17:23
+archive/issue_comments_003908.json:
+```json
+{
+    "body": "Reviewer patch; added doc",
+    "created_at": "2012-03-09T12:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3908",
+    "user": "jpflori"
+}
+```
 
 Reviewer patch; added doc
 
 
+
 ---
+
+archive/issue_comments_003909.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-03-09T12:19:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3909",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-09 12:19:46
+archive/issue_comments_003910.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-03-09T12:19:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3910",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-09 12:22:46
+archive/issue_comments_003911.json:
+```json
+{
+    "body": "I've added warning blocks at the top of files modified by Simon (and fixed minor typos without introducing new ones I hope). The generated doc looks ok.\n\nAll tests pass on my computer and the numerical evidence we've gathered so far points that there is no speed regression.\n\nIf Simon or someone else could have a look at my \"reviewer patch\", this can be put to positive review.\n\nPersonally, I'm happy with Simon patches.",
+    "created_at": "2012-03-09T12:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3911",
+    "user": "jpflori"
+}
+```
 
 I've added warning blocks at the top of files modified by Simon (and fixed minor typos without introducing new ones I hope). The generated doc looks ok.
 
@@ -2687,9 +4576,20 @@ If Simon or someone else could have a look at my "reviewer patch", this can be p
 Personally, I'm happy with Simon patches.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-03-09 12:39:11
+archive/issue_comments_003912.json:
+```json
+{
+    "body": "Hi Jean-Pierre,\n\nyour reviewer patch looks fine to me! Thank you for fixing the typos and explaining things a bit clearer!\n\nSo, I change it into \"positive review\", naming you as a reviewer.",
+    "created_at": "2012-03-09T12:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3912",
+    "user": "SimonKing"
+}
+```
 
 Hi Jean-Pierre,
 
@@ -2698,25 +4598,58 @@ your reviewer patch looks fine to me! Thank you for fixing the typos and explain
 So, I change it into "positive review", naming you as a reviewer.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-03-09 12:39:11
+archive/issue_comments_003913.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-03-09T12:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3913",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-09 12:41:49
+archive/issue_comments_003914.json:
+```json
+{
+    "body": "Great!\n\nAnd sorry for the delay. I'll try to tackle the related tickets this afternoon.",
+    "created_at": "2012-03-09T12:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3914",
+    "user": "jpflori"
+}
+```
 
 Great!
 
 And sorry for the delay. I'll try to tackle the related tickets this afternoon.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-10 09:12:10
+archive/issue_comments_003915.json:
+```json
+{
+    "body": "This seems to conflict with #11599.  With #11599 applied, I get doctest errors:\n\n```\nsage -t  -force_lib devel/sage/sage/structure/coerce_dict.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx\", line 210:\n    sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[33]>\", line 1, in <module>\n        from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field###line 210:\n    sage: from sage.schemes.generic.homset import SchemeHomsetModule_abelian_variety_coordinates_field\n    ImportError: cannot import name SchemeHomsetModule_abelian_variety_coordinates_field\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx\", line 211:\n    sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[34]>\", line 1, in <module>\n        LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]###line 211:\n    sage: LE = [x for x in gc.get_objects() if  isinstance(x,SchemeHomsetModule_abelian_variety_coordinates_field)]\n    NameError: name 'SchemeHomsetModule_abelian_variety_coordinates_field' is not defined\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/devel/sage-main/sage/structure/coerce_dict.pyx\", line 212:\n    sage: len(LE)    # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-5.0.beta8/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[35]>\", line 1, in <module>\n        len(LE)    # indirect doctest###line 212:\n    sage: len(LE)    # indirect doctest\n    NameError: name 'LE' is not defined\n**********************************************************************\n```\n",
+    "created_at": "2012-03-10T09:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3915",
+    "user": "jdemeyer"
+}
+```
 
 This seems to conflict with #11599.  With #11599 applied, I get doctest errors:
 
@@ -2772,77 +4705,189 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-10 09:12:10
+archive/issue_comments_003916.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-03-10T09:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3916",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:25:15
+archive/issue_comments_003917.json:
+```json
+{
+    "body": "SchemeHomsetModule_abelian_variety_coordinates_field was indeed renamed to\u00a0SchemeHomset_points_abelian_variety_field in #11599.\n\nWe have two solutions:\n\n* do the same renaming in the doctests here\n* use the EllipticCurve class which provides basically the same test (that's the one I originally pointed out) and which I find more explicit.\n\nI'll provide a patch for this second solution.",
+    "created_at": "2012-03-20T17:25:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3917",
+    "user": "jpflori"
+}
+```
 
 SchemeHomsetModule_abelian_variety_coordinates_field was indeed renamed to SchemeHomset_points_abelian_variety_field in #11599.
 
 We have two solutions:
 
- * do the same renaming in the doctests here
- * use the EllipticCurve class which provides basically the same test (that's the one I originally pointed out) and which I find more explicit.
+* do the same renaming in the doctests here
+* use the EllipticCurve class which provides basically the same test (that's the one I originally pointed out) and which I find more explicit.
 
 I'll provide a patch for this second solution.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:33:23
+archive/issue_comments_003918.json:
+```json
+{
+    "body": "Except that the changes introduced in #11599 seem to break the work done here by reintroducing some caching...",
+    "created_at": "2012-03-20T17:33:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3918",
+    "user": "jpflori"
+}
+```
 
 Except that the changes introduced in #11599 seem to break the work done here by reintroducing some caching...
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:34:20
+archive/issue_comments_003919.json:
+```json
+{
+    "body": "More precisely both my proposed solution fix the import error (with EllipticCurve_finite_field for the second one) but then LE is still of length 50, whence no garbage collection occured.",
+    "created_at": "2012-03-20T17:34:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3919",
+    "user": "jpflori"
+}
+```
 
 More precisely both my proposed solution fix the import error (with EllipticCurve_finite_field for the second one) but then LE is still of length 50, whence no garbage collection occured.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:39:38
+archive/issue_comments_003920.json:
+```json
+{
+    "body": "Applying #11521 solves the problem back, so I guess that this ticket and #11521 should be merged at once as they both depend on each other.",
+    "created_at": "2012-03-20T17:39:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3920",
+    "user": "jpflori"
+}
+```
 
 Applying #11521 solves the problem back, so I guess that this ticket and #11521 should be merged at once as they both depend on each other.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:44:22
+archive/issue_comments_003921.json:
+```json
+{
+    "body": "Here comes a patch.",
+    "created_at": "2012-03-20T17:44:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3921",
+    "user": "jpflori"
+}
+```
 
 Here comes a patch.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:45:04
+archive/issue_comments_003922.json:
+```json
+{
+    "body": "Rebase on top of #11599, now circularly depends on #11521",
+    "created_at": "2012-03-20T17:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3922",
+    "user": "jpflori"
+}
+```
 
 Rebase on top of #11599, now circularly depends on #11521
 
 
+
 ---
+
+archive/issue_comments_003923.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-03-20T17:46:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3923",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-20 17:46:24
+archive/issue_comments_003924.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-03-20T17:46:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3924",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-26 13:23:16
+archive/issue_comments_003925.json:
+```json
+{
+    "body": "A data point that might be helpful: all doctests pass on 5.0.beta10 on 64-bit Linux with qseries\n\n```\ntrac715_one_triple_dict.patch\ntrac_715-reviewer.patch\ntrac_715-rebase_11599.patch\ntrac11521_triple_homset.patch\ntrac_11521-reviewer.patch\n```\n\n\nWhat is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?",
+    "created_at": "2012-03-26T13:23:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3925",
+    "user": "davidloeffler"
+}
+```
 
 A data point that might be helpful: all doctests pass on 5.0.beta10 on 64-bit Linux with qseries
 
@@ -2858,9 +4903,20 @@ trac_11521-reviewer.patch
 What is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-03-26 13:32:07
+archive/issue_comments_003926.json:
+```json
+{
+    "body": "Replying to [comment:162 davidloeffler]:\n> What is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?\n\nFrom my perspective, it is. But I think I am not entitled to set it to positive review, since Jean-Pierre did not explicitly state that he gives his OK.",
+    "created_at": "2012-03-26T13:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3926",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:162 davidloeffler]:
 > What is there here that still needs review? I can confirm that the change in jpflori's reviewer patch does not affect the doctest, in the sense that the new patched doctest fails without this ticket applied but succeeds with it. Is this ready to go in?
@@ -2868,32 +4924,76 @@ Replying to [comment:162 davidloeffler]:
 From my perspective, it is. But I think I am not entitled to set it to positive review, since Jean-Pierre did not explicitly state that he gives his OK.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-26 13:34:44
+archive/issue_comments_003927.json:
+```json
+{
+    "body": "Oh, that's my bad, I just wanted to be sure that Simon was ok with my rebase... (and did not want to set it back to positive review because I did the rebase myself)\n\nSorry about that !",
+    "created_at": "2012-03-26T13:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3927",
+    "user": "jpflori"
+}
+```
 
 Oh, that's my bad, I just wanted to be sure that Simon was ok with my rebase... (and did not want to set it back to positive review because I did the rebase myself)
 
 Sorry about that !
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-26 13:35:54
+archive/issue_comments_003928.json:
+```json
+{
+    "body": "And I'm putting the ticket back to positive review because the three of us seem happy with it.",
+    "created_at": "2012-03-26T13:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3928",
+    "user": "jpflori"
+}
+```
 
 And I'm putting the ticket back to positive review because the three of us seem happy with it.
 
 
+
 ---
 
-Comment by jpflori created at 2012-03-26 13:35:54
+archive/issue_comments_003929.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-03-26T13:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3929",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-04-01 19:20:58
+archive/issue_comments_003930.json:
+```json
+{
+    "body": "Bad news...\n\nApplying [attachment:trac715_one_triple_dict.patch] causes Segmentation Faults on startup on 32-bit systems.\n\n$ ./sage --python -v -c 'import sage.all'\n\n```\n[...]\nimport sage.libs.singular.function_factory # precompiled from /home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/libs/singular/function_factory.pyc\nimport sage.rings.polynomial.multi_polynomial_libsingular # dynamically loaded from /home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(print_backtrace+0x4c)[0xf9f7c74]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(sigdie+0x34)[0xf9f7ce0]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libcsage.so(sage_signal_handler+0x20c)[0xf9f77d4]\n[0x100364]\n[0x10bb81d0]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/coerce.so(+0xb994)[0xe6ab994]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/coerce.so(+0x16654)[0xe6b6654]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/structure/element.so(__pyx_f_4sage_9structure_7element_7Element__richcmp+0x42c)[0xe735e80]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/python2.7/site-packages/sage/rings/real_mpfr.so(+0xcf70)[0xd6bcf70]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x90794)[0xfeb0794]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_RichCompare+0x84)[0xfeb2d8c]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x2b60)[0xff1cd10]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x78a4)[0xff21a54]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x964)[0xff2240c]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x73138)[0xfe93138]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_Call+0x74)[0xfe63900]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(+0x52dac)[0xfe72dac]\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/local/lib/libpython2.7.so.1.0(PyObject_Call+0x74)[0xfe63900]\n[...]\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\n/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/spkg/bin/sage: line 464: 16347 Segmentation fault      python \"$@\"",
+    "created_at": "2012-04-01T19:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3930",
+    "user": "jdemeyer"
+}
+```
 
 Bad news...
 
@@ -2934,40 +5034,95 @@ Sage will now terminate.
 /home/jdemeyer/silius/sage-5.0.beta12-gcc-32/spkg/bin/sage: line 464: 16347 Segmentation fault      python "$@"
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-04-01 19:21:30
+archive/issue_comments_003931.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-04-01T19:21:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3931",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-02 07:31:18
+archive/issue_comments_003932.json:
+```json
+{
+    "body": "Too bad...\nI don't have access to 32 bits cpus but I'll try to setup a VirtualBox installation.\nI'll also ask William for an account on skynet.",
+    "created_at": "2012-04-02T07:31:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3932",
+    "user": "jpflori"
+}
+```
 
 Too bad...
 I don't have access to 32 bits cpus but I'll try to setup a VirtualBox installation.
 I'll also ask William for an account on skynet.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 12:39:31
+archive/issue_comments_003933.json:
+```json
+{
+    "body": "No response from William yet, but I've finally managed to setup a Sage installation on a 32 bits installation of Ubuntu 12.04 beta 2 within a virtual machine and could reproduce the crash.\nLet's now investigate it.",
+    "created_at": "2012-04-11T12:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3933",
+    "user": "jpflori"
+}
+```
 
 No response from William yet, but I've finally managed to setup a Sage installation on a 32 bits installation of Ubuntu 12.04 beta 2 within a virtual machine and could reproduce the crash.
 Let's now investigate it.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 12:48:22
+archive/issue_comments_003934.json:
+```json
+{
+    "body": "The segfault gets raised in a call to TripleDict.get",
+    "created_at": "2012-04-11T12:48:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3934",
+    "user": "jpflori"
+}
+```
 
 The segfault gets raised in a call to TripleDict.get
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 13:09:40
+archive/issue_comments_003935.json:
+```json
+{
+    "body": "More precisely in the line:\n\n\n```\ncdef list bucket = <object>PyList_GET_ITEM(all_buckets, h % PyList_GET_SIZE(all_buckets))\n```\n",
+    "created_at": "2012-04-11T13:09:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3935",
+    "user": "jpflori"
+}
+```
 
 More precisely in the line:
 
@@ -2978,58 +5133,148 @@ cdef list bucket = <object>PyList_GET_ITEM(all_buckets, h % PyList_GET_SIZE(all_
 
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 13:17:43
+archive/issue_comments_003936.json:
+```json
+{
+    "body": "Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.",
+    "created_at": "2012-04-11T13:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3936",
+    "user": "jpflori"
+}
+```
 
 Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 13:50:19
+archive/issue_comments_003937.json:
+```json
+{
+    "body": "The problem seems to be that the C \"%\" operator returns a result of the same sign as its input.\n\nThat is : 14%15 -> 14, but -1%15 -> -1",
+    "created_at": "2012-04-11T13:50:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3937",
+    "user": "jpflori"
+}
+```
 
 The problem seems to be that the C "%" operator returns a result of the same sign as its input.
 
 That is : 14%15 -> 14, but -1%15 -> -1
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 14:38:20
+archive/issue_comments_003938.json:
+```json
+{
+    "body": "C modulo operator",
+    "created_at": "2012-04-11T14:38:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3938",
+    "user": "jpflori"
+}
+```
 
 C modulo operator
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 14:38:59
+archive/issue_comments_003939.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-04-11T14:38:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3939",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003940.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-04-11T14:38:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3940",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 17:02:43
+archive/issue_comments_003941.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-04-11T17:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3941",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 17:02:43
+archive/issue_comments_003942.json:
+```json
+{
+    "body": "Even though the current patches should be OK, I'll provide a slightly different patch after my monologue at #12313 to be more consistent.",
+    "created_at": "2012-04-11T17:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3942",
+    "user": "jpflori"
+}
+```
 
 Even though the current patches should be OK, I'll provide a slightly different patch after my monologue at #12313 to be more consistent.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-04-11 19:18:29
+archive/issue_comments_003943.json:
+```json
+{
+    "body": "Replying to [comment:173 jpflori]:\n> Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.\n\nThank you for tracking that down! I tested that the Cython modulo operator works like the Python one, but apparently my mistake was that I tested the Cython modulo only on Sage integers, but not on C types.\n\nI wonder whether there is a better way to get rid of the problem. for example: The number h is determined by converting the memory address of an object into `Py_ssize_t` - which is signed. Isn't there an unsigned `Py_size_t` (size_t, not ssize_t) as well? Perhaps one should try to use the unsigned type instead? In that way one would avoid the problem of a negative modulus, but would still avoid the slow-down resulting from the test \"`if h<0`\".\n\nI would like to test whether that works (next week, though).",
+    "created_at": "2012-04-11T19:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3943",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:173 jpflori]:
 > Putting back the if h<0: h=-h (without really thinking about it) seems to solve the problem.
@@ -3041,18 +5286,40 @@ I wonder whether there is a better way to get rid of the problem. for example: T
 I would like to test whether that works (next week, though).
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-11 19:42:23
+archive/issue_comments_003944.json:
+```json
+{
+    "body": "Good idea about the unsigned type.\n\nDon't worry about doing it next week, I should be able to test that tomorrow.",
+    "created_at": "2012-04-11T19:42:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3944",
+    "user": "jpflori"
+}
+```
 
 Good idea about the unsigned type.
 
 Don't worry about doing it next week, I should be able to test that tomorrow.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-12 08:09:59
+archive/issue_comments_003945.json:
+```json
+{
+    "body": "For info,\nPy_ssize_t was defined by that PEP:\nhttp://www.python.org/dev/peps/pep-0353/\nand adopted in Python 2.5\n\nThere is no Py_size_t, but I guess that using plain C size_t is ok (the point of Py_ssize_t is to be a signed stuff of the same size as size_t).",
+    "created_at": "2012-04-12T08:09:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3945",
+    "user": "jpflori"
+}
+```
 
 For info,
 Py_ssize_t was defined by that PEP:
@@ -3062,33 +5329,96 @@ and adopted in Python 2.5
 There is no Py_size_t, but I guess that using plain C size_t is ok (the point of Py_ssize_t is to be a signed stuff of the same size as size_t).
 
 
+
 ---
+
+archive/issue_comments_003946.json:
+```json
+{
+    "body": "Attachment\n\nVersion without fuzz",
+    "created_at": "2012-04-12T13:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3946",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 Version without fuzz
 
 
+
 ---
+
+archive/issue_comments_003947.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-04-12T13:48:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3947",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_003948.json:
+```json
+{
+    "body": "Attachment\n\nUse size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM",
+    "created_at": "2012-04-12T13:49:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3948",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
 Use size_t instead of Py_ssize_t for indices used by PyList_GET_ITEM
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-12 13:51:55
+archive/issue_comments_003949.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-04-12T13:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3949",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003950.json:
+```json
+{
+    "body": "Attachment\n\nThe current patches seem ok both on my 64 bits system and on the virtual 32 bits system running within it.\nAt least Sage does start and computes correctly 1+1.\nI'm currently running \"make ptest\" on both system.\nOn the latter, this will take an awfully long time.\n\nI've also taken the liberty to modify the \"reviewer\" patch to fix formatting issues (and rebase patches of #12313 on top of that).",
+    "created_at": "2012-04-12T13:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3950",
+    "user": "jpflori"
+}
+```
 
 Attachment
 
@@ -3100,17 +5430,39 @@ On the latter, this will take an awfully long time.
 I've also taken the liberty to modify the "reviewer" patch to fix formatting issues (and rebase patches of #12313 on top of that).
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-12 14:00:17
+archive/issue_comments_003951.json:
+```json
+{
+    "body": "As I reported in #12313 :\nWith the new patches of #715 + #11521 + #12313, Sage starts both on 32 and 64 bits and make test pass on 64 bits (32 bits not finished yet).",
+    "created_at": "2012-04-12T14:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3951",
+    "user": "jpflori"
+}
+```
 
 As I reported in #12313 :
 With the new patches of #715 + #11521 + #12313, Sage starts both on 32 and 64 bits and make test pass on 64 bits (32 bits not finished yet).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-04-13 06:02:57
+archive/issue_comments_003952.json:
+```json
+{
+    "body": "Is Jean-Pierre just reviewer, or author as well?\n\nAnyway, I am now testing whether the stuff from here plus #11521 plus #12313 works for me as well, with size_t. And perhaps I'll also do some timings tomorrow. If Jean-Pierre is author as well, we could cross-review.\n\nAnd I think I'll also create a combined patch, for each of the three tickets.",
+    "created_at": "2012-04-13T06:02:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3952",
+    "user": "SimonKing"
+}
+```
 
 Is Jean-Pierre just reviewer, or author as well?
 
@@ -3119,9 +5471,20 @@ Anyway, I am now testing whether the stuff from here plus #11521 plus #12313 wor
 And I think I'll also create a combined patch, for each of the three tickets.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-13 06:47:55
+archive/issue_comments_003953.json:
+```json
+{
+    "body": "I don't mind being one of the authors as I spent some time on the ticket as well, although you clearly produced most of the code.\nAnd as you point out, it will make you more \"legitimate\" to set the ticket back to positive review after my last changes.\n\nThe tset finished in my 32 bits virtual machine and I got 4 failures.\nNot sure they are related to the tickets here.\nIt could just be time outs and issues related to Gap.\nI'm rerunning make test, or rather a working euivalent command, with proper logging to check that.\n\nOf course if someone has access to a real 32 bits system, that would be easier to test.",
+    "created_at": "2012-04-13T06:47:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3953",
+    "user": "jpflori"
+}
+```
 
 I don't mind being one of the authors as I spent some time on the ticket as well, although you clearly produced most of the code.
 And as you point out, it will make you more "legitimate" to set the ticket back to positive review after my last changes.
@@ -3134,30 +5497,63 @@ I'm rerunning make test, or rather a working euivalent command, with proper logg
 Of course if someone has access to a real 32 bits system, that would be easier to test.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-13 09:14:38
+archive/issue_comments_003954.json:
+```json
+{
+    "body": "Rerunning the tests within the virtual machine raised (less) errors in the same files.\n\nNamely:\n\n1. A segfault in sage/parallel/decorate.py instead of killing something because of a too long computation\n2. An error in sage/misc/sagedoc.py caused by a failing search_src_or_doc (?!?)\n3. An error in sage/misc/misc.py about an alarm not going off\n4. 0 error in sage/structure/parent.pyx who got killed",
+    "created_at": "2012-04-13T09:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3954",
+    "user": "jpflori"
+}
+```
 
 Rerunning the tests within the virtual machine raised (less) errors in the same files.
 
 Namely:
 
- 1. A segfault in sage/parallel/decorate.py instead of killing something because of a too long computation
- 1. An error in sage/misc/sagedoc.py caused by a failing search_src_or_doc (?!?)
- 1. An error in sage/misc/misc.py about an alarm not going off
- 1. 0 error in sage/structure/parent.pyx who got killed
+1. A segfault in sage/parallel/decorate.py instead of killing something because of a too long computation
+2. An error in sage/misc/sagedoc.py caused by a failing search_src_or_doc (?!?)
+3. An error in sage/misc/misc.py about an alarm not going off
+4. 0 error in sage/structure/parent.pyx who got killed
+
 
 
 ---
 
-Comment by jpflori created at 2012-04-13 09:44:28
+archive/issue_comments_003955.json:
+```json
+{
+    "body": "I could reproduce the previous errors in parent.pyx and they stem from a MeomryError and fail to evaluate the cython(...) code defining classes because of some IOError, so I'm not sure it's related to the tickets here.It might be because of the environment its run within.",
+    "created_at": "2012-04-13T09:44:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3955",
+    "user": "jpflori"
+}
+```
 
 I could reproduce the previous errors in parent.pyx and they stem from a MeomryError and fail to evaluate the cython(...) code defining classes because of some IOError, so I'm not sure it's related to the tickets here.It might be because of the environment its run within.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-04-13 14:16:34
+archive/issue_comments_003956.json:
+```json
+{
+    "body": "For the record: With the current patches from #715 + #11521 + #12313, all tests pass. But I can not test on 32 bit, I'm afraid.\n\nBut MemoryError looks strange to me. I hope it is unrelated with these patches. Anyway, I'm certainly going to use them for my own work.\n\nI still think it would be good to have a combined patch. Anyway, I give a positive review to Jean-Pierre's contribution.",
+    "created_at": "2012-04-13T14:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3956",
+    "user": "SimonKing"
+}
+```
 
 For the record: With the current patches from #715 + #11521 + #12313, all tests pass. But I can not test on 32 bit, I'm afraid.
 
@@ -3166,13 +5562,24 @@ But MemoryError looks strange to me. I hope it is unrelated with these patches. 
 I still think it would be good to have a combined patch. Anyway, I give a positive review to Jean-Pierre's contribution.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-04-14 12:01:23
+archive/issue_comments_003957.json:
+```json
+{
+    "body": "I have just attached a combined patch, created by simply folding all patches that were previously to be applied.\n\nWith *only* that patch, I obtain a single doctest error:\n\n```\nsage -t -force_lib \"devel/sage/sage/structure/coerce_dict.pyx\"\n**********************************************************************\nFile \"/mnt/local/king/SAGE/stable/sage-5.0.beta13/devel/sage/sage/structure/coerce_dict.pyx\", line 210:\n    sage: len(LE)    # indirect doctest\nExpected:\n    1\nGot:\n    50\n```\n\nHowever, this is to be merged together with #11521, and with both tickets together the error vanishes (at least on 64 bit). So, from my point of view, it is a positive review, but we should wait for Jean-Pierre's results on 32 bit.\n\nFor the patchbot:\n\nApply trac_715_combined.patch",
+    "created_at": "2012-04-14T12:01:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3957",
+    "user": "SimonKing"
+}
+```
 
 I have just attached a combined patch, created by simply folding all patches that were previously to be applied.
 
-With _only_ that patch, I obtain a single doctest error:
+With *only* that patch, I obtain a single doctest error:
 
 ```
 sage -t -force_lib "devel/sage/sage/structure/coerce_dict.pyx"
@@ -3192,89 +5599,221 @@ For the patchbot:
 Apply trac_715_combined.patch
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-17 11:33:44
+archive/issue_comments_003958.json:
+```json
+{
+    "body": "The tests we've run on 32 bits seem conclusive, so I'm putting this back to positive review.\nThe errors I got care due to memory shortage within my virtual machine and were not reproduce on real systems.",
+    "created_at": "2012-04-17T11:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3958",
+    "user": "jpflori"
+}
+```
 
 The tests we've run on 32 bits seem conclusive, so I'm putting this back to positive review.
 The errors I got care due to memory shortage within my virtual machine and were not reproduce on real systems.
 
 
+
 ---
 
-Comment by jpflori created at 2012-04-17 11:33:44
+archive/issue_comments_003959.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-04-17T11:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3959",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2012-04-17 19:07:37
+archive/issue_comments_003960.json:
+```json
+{
+    "body": "I'm just confirming that applying this patch & that at #11521 to 5.0-beta13 on a 32-bit linux machine, all tests pass.",
+    "created_at": "2012-04-17T19:07:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3960",
+    "user": "cremona"
+}
+```
 
 I'm just confirming that applying this patch & that at #11521 to 5.0-beta13 on a 32-bit linux machine, all tests pass.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-06 12:12:31
+archive/issue_comments_003961.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-05-06T12:12:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3961",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-05 08:40:06
+archive/issue_comments_003962.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2012-07-05T08:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3962",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-05 08:40:06
+archive/issue_comments_003963.json:
+```json
+{
+    "body": "Unmerging this due to unmerging the dependency #11521.",
+    "created_at": "2012-07-05T08:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3963",
+    "user": "jdemeyer"
+}
+```
 
 Unmerging this due to unmerging the dependency #11521.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-05 08:40:06
+archive/issue_comments_003964.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2012-07-05T08:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3964",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-13 11:51:52
+archive/issue_comments_003965.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-07-13T11:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3965",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-13 11:52:03
+archive/issue_comments_003966.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-07-13T11:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3966",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-15 15:18:17
+archive/issue_comments_003967.json:
+```json
+{
+    "body": "Nils has stated on sage-devel that he was not (immediately) able to apply the patch to sage-5.3.beta2. Indeed there was fuzz 2. So, I rebased the patch, it should now apply fine.",
+    "created_at": "2012-08-15T15:18:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3967",
+    "user": "SimonKing"
+}
+```
 
 Nils has stated on sage-devel that he was not (immediately) able to apply the patch to sage-5.3.beta2. Indeed there was fuzz 2. So, I rebased the patch, it should now apply fine.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-15 15:18:44
+archive/issue_comments_003968.json:
+```json
+{
+    "body": "I forgot:\n\nApply trac_715_combined.patch",
+    "created_at": "2012-08-15T15:18:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3968",
+    "user": "SimonKing"
+}
+```
 
 I forgot:
 
 Apply trac_715_combined.patch
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-15 23:51:23
+archive/issue_comments_003969.json:
+```json
+{
+    "body": "When reviewing #12313 I observed a possible problem for slight leaking (see [comment 125](http://trac.sagemath.org/sage_trac/ticket/12313#comment:125)):\n\nWhen all `KeyRef` objects under a certain key in `_refcache` get deleted, I think you're left with a `{<key> : []}` entry in `_refcache`. So I think in `TripleDictEraser.__call__` you need an extra line:\n\n```\n        cdef list L = _refcache[k1,k2,k3]\n        del L[L.index(r)]\n        if len(L)==0:\n            del _refcache[k1,k2,k3]\n```\n\nor whatever is the best way to remove such things.\n\nSimilar on #12313 in `MonoDictEraser.__call__` of course.\n\nBy all means, if you have a good argument why this is not necessary, revert to Positive Review (and I'd be interested in seeing the argument).\n\n**unweakreffable keys**\n\nNote that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.\n\nYou'd have to ensure that whenever an entry gets deleted from the `MonoDict` or the `TripleDict`, that any references in `strongrefcache` to relevant key components get removed too. Especially for `TripleDict`, this needs to happen in `TripleDictEraser` too, because if any weakreffable key component gets GCd, the whole entry gets removed, so strong refs to other key components should be released.\n\nOf course, it would be better to insist that for `TripleDict`s, there should be\nat least one weakreffable key component and that for `MonoDict`s only\nweakreffable keys are allowed. You might investigate where the offending keys\narise. One place is sage.rings.Ring.ideal (line 495):\n\n\n```\n        gens = args\n        ...\n            first = gens[0]\n        ...\n            elif self.has_coerce_map_from(first):\n                gens = first.gens() # we have a ring as argument\n```\n\nso if you do `4*ZZ` then this gets called with `self=ZZ` and `first=4`. This is\nhow bare integers end up being used as keys into `MonoDict`.  Since this gets\nstored in `ZZ._coerce_from_hash` it's as bad as a permanent reference (we cannot\nput a weakref on 4)\n\n----------------------------------------------------\n**[EDIT] OBSERVATION:**\nreally it looks like this is trying to detect the rare case of\n\n```\nR.ideal(S)\n```\n\nwhere `S` is a ring/ideal coercible into `R` and we're computing `S*R`, the\nextension of `S` to an ideal of `R`. Isn't it a little expensive to abuse to\ncoercion framework for this, expecting it to fail? Can't we use the category\nframework for this and do something like\n\n```\n            elif first in Magmas and self.has_coerce_map_from(first):\n                gens = first.gens() # we have a ring as argument\n```\n\nor whatever is an appropriate test to see if first is even a parent that has a\nchance of having a coerce map to self?\n\nYEP it is. In vanilla 5.0 (so that's even WITH caching)\n\n\n```\nsage: R=Rings()\nsage: timeit('ZZ.has_coerce_map_from(3)')\n625 loops, best of 3: 15.9 \u00b5s per loop\nsage: timeit('3 in R')\n625 loops, best of 3: 6.55 \u00b5s per loop\n```\n\n\nso we should definitely test the category of the element. Question is: which\ncategory? Ideals are not in `Rings()` (which are unitary rings), but they are in\nCommutativeAdditiveMonoids(). Creation of ideals still works if this works,\nthough:\n\n```\nsage: ZZ.has_coerce_map_from(3*ZZ)\nFalse\n```\n\nso I'm not so sure if that branch ever essentially gets used.\n\nThis is a separate issue, continued on #13374.\n\n-------------------------------------------------------------------\nThe storing happens in sage.structure.parent (line 1990):\n\n```\n        if (mor is not None) or _may_cache_none(self, S, \"coerce\"):\n            self._coerce_from_hash[S] = mor\n```\n\nperhaps we should also disallow caching None if S is not weakreffable. Since\nvalid parents should always be weakreffable, we could perhaps just return None\nfor `has_coerce_map_from` for non-weakreffable `S`.",
+    "created_at": "2012-08-15T23:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3969",
+    "user": "nbruin"
+}
+```
 
 When reviewing #12313 I observed a possible problem for slight leaking (see [comment 125](http://trac.sagemath.org/sage_trac/ticket/12313#comment:125)):
 
@@ -3293,7 +5832,7 @@ Similar on #12313 in `MonoDictEraser.__call__` of course.
 
 By all means, if you have a good argument why this is not necessary, revert to Positive Review (and I'd be interested in seeing the argument).
 
-*unweakreffable keys*
+**unweakreffable keys**
 
 Note that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.
 
@@ -3320,7 +5859,7 @@ stored in `ZZ._coerce_from_hash` it's as bad as a permanent reference (we cannot
 put a weakref on 4)
 
 ----------------------------------------------------
-*[EDIT] OBSERVATION:*
+**[EDIT] OBSERVATION:**
 really it looks like this is trying to detect the rare case of
 
 ```
@@ -3379,16 +5918,38 @@ valid parents should always be weakreffable, we could perhaps just return None
 for `has_coerce_map_from` for non-weakreffable `S`.
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-15 23:51:23
+archive/issue_comments_003970.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-08-15T23:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3970",
+    "user": "nbruin"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 07:48:52
+archive/issue_comments_003971.json:
+```json
+{
+    "body": "Replying to [comment:198 nbruin]:\n> When reviewing #12313 I observed a possible problem for slight leaking\n> ...\n> By all means, if you have a good argument why this is not necessary, revert to Positive Review (and I'd be interested in seeing the argument).\n\nYes, it is a potential leak. The argument would be:\n\n* *If* all items indexed by a certain key triple are gone, we are left with three size_t and with one pointer to an empty list, that will not be collected; that's just a few bytes.\n* It is (I believe) quite likely that the same key triple will be used again. Hence, the few bytes will actually be used again.\n* As long as it is not noticeable in a practical computation, I am not sure if it is a good idea to slow deallocation down with a test \"if len(L)==0\".\n\nOK, that is not more than a heuristical argument. The patch would allow a (I believe) very small leak, for the sake of a (probably) very small speed-up.\n\n> **unweakreffable keys**\n> \n> Note that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.\n\nHm. It is quite a long time ago that I wrote the code, so I need some time to reconstruct what I thought.\n\nThe data of a `TripleDict` are stored in buckets. The buckets just provide memory locations of the keys. This is in order to make access to the data very fast: Otherwise, one would have to do special cases for keys that are weak-refable and those that are not. By consequence, the weak references (with callback function) to the keys need to be stored somewhere else: in _refcache. In that way, items whose keys got garbage collected can be removed from cache.\n\nBut why did I put *strong* references in _refcache as well? Let (k1,k2,k3) be a key, and assume that k1 is not weak-refable. Assume further that no external reference to k1 is left, but there are external strong references to k2 and k3. If I would not store a strong reference to k1 in _refcache, then k1 would be garbage collected. Since we do not have a weak reference with callback for k1 and since k2 and k3 can not be collected, the item for (k1,k2,k3) remains in the `TripleDict`. Hence, when iterating over the items (and there is existing code that does iterate over the items!), we would meet a reference to k1 *after* it was garbage collected. That means a segfault occurs.\n\nIn other words: If k2 and k3 are not collectable and k1 can not be weak-refed, then we must ensure that k1 stays alive. The solution is to keep a strong reference to k1 in _refcache.\n\nBut now I wonder: Wouldn't it be better to have _refcache not as a global dictionary, but have a separate _refcache for each `TripleDict`, so that it gets collected if the `TripleDict` gets collected? Is that your suggestion?\n\nI think this would be worth trying.\n\n> You'd have to ensure that whenever an entry gets deleted from the `MonoDict` or the `TripleDict`, that any references in `strongrefcache` to relevant key components get removed too. Especially for `TripleDict`, this needs to happen in `TripleDictEraser` too, because if any weakreffable key component gets GCd, the whole entry gets removed, so strong refs to other key components should be released.\n\nAs I have pointed out, it is important that weak or strong references are stored in _refcache. But perhaps the items in _refcache should be triples of weak or strong references? If I am not mistaken, if (k1,k2,k3) is a key, then it is uniquely determined by (id(k1),id(k2),id(k3)). We store weak references (if possible) that provide (id(k1),id(k2),id(k3)). Hence, the callback function of the weak reference can simply delete this entry.\n\n__Conclusion__\n\n* I will try if the `\"if len(L)==0\"` test leads to a slow-down\n* I will try to replace the global _refcache by a dictionary that is local to each `TripleDict`.\n* I will store the references provided by _refcache in a different form, so that they can more easily be deleted.",
+    "created_at": "2012-08-16T07:48:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3971",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:198 nbruin]:
 > When reviewing #12313 I observed a possible problem for slight leaking
@@ -3397,13 +5958,13 @@ Replying to [comment:198 nbruin]:
 
 Yes, it is a potential leak. The argument would be:
 
- * _If_ all items indexed by a certain key triple are gone, we are left with three size_t and with one pointer to an empty list, that will not be collected; that's just a few bytes.
- * It is (I believe) quite likely that the same key triple will be used again. Hence, the few bytes will actually be used again.
- * As long as it is not noticeable in a practical computation, I am not sure if it is a good idea to slow deallocation down with a test "if len(L)==0".
+* *If* all items indexed by a certain key triple are gone, we are left with three size_t and with one pointer to an empty list, that will not be collected; that's just a few bytes.
+* It is (I believe) quite likely that the same key triple will be used again. Hence, the few bytes will actually be used again.
+* As long as it is not noticeable in a practical computation, I am not sure if it is a good idea to slow deallocation down with a test "if len(L)==0".
 
 OK, that is not more than a heuristical argument. The patch would allow a (I believe) very small leak, for the sake of a (probably) very small speed-up.
 
-> *unweakreffable keys*
+> **unweakreffable keys**
 > 
 > Note that currently, any key that doesn't allow weakreffing, gets a (permanent, global) strong ref in `_refcache` in the value list, keyed by their `id`. That's worse than a normal `dict`. A possible solution is to have a `strongrefcache` on the `MonoDict` or `TripleDict` itself. Then at least the references disappear when the Dict itself goes.
 
@@ -3411,7 +5972,7 @@ Hm. It is quite a long time ago that I wrote the code, so I need some time to re
 
 The data of a `TripleDict` are stored in buckets. The buckets just provide memory locations of the keys. This is in order to make access to the data very fast: Otherwise, one would have to do special cases for keys that are weak-refable and those that are not. By consequence, the weak references (with callback function) to the keys need to be stored somewhere else: in _refcache. In that way, items whose keys got garbage collected can be removed from cache.
 
-But why did I put _strong_ references in _refcache as well? Let (k1,k2,k3) be a key, and assume that k1 is not weak-refable. Assume further that no external reference to k1 is left, but there are external strong references to k2 and k3. If I would not store a strong reference to k1 in _refcache, then k1 would be garbage collected. Since we do not have a weak reference with callback for k1 and since k2 and k3 can not be collected, the item for (k1,k2,k3) remains in the `TripleDict`. Hence, when iterating over the items (and there is existing code that does iterate over the items!), we would meet a reference to k1 _after_ it was garbage collected. That means a segfault occurs.
+But why did I put *strong* references in _refcache as well? Let (k1,k2,k3) be a key, and assume that k1 is not weak-refable. Assume further that no external reference to k1 is left, but there are external strong references to k2 and k3. If I would not store a strong reference to k1 in _refcache, then k1 would be garbage collected. Since we do not have a weak reference with callback for k1 and since k2 and k3 can not be collected, the item for (k1,k2,k3) remains in the `TripleDict`. Hence, when iterating over the items (and there is existing code that does iterate over the items!), we would meet a reference to k1 *after* it was garbage collected. That means a segfault occurs.
 
 In other words: If k2 and k3 are not collectable and k1 can not be weak-refed, then we must ensure that k1 stays alive. The solution is to keep a strong reference to k1 in _refcache.
 
@@ -3425,14 +5986,25 @@ As I have pointed out, it is important that weak or strong references are stored
 
 __Conclusion__
 
- * I will try if the `"if len(L)==0"` test leads to a slow-down
- * I will try to replace the global _refcache by a dictionary that is local to each `TripleDict`.
- * I will store the references provided by _refcache in a different form, so that they can more easily be deleted.
+* I will try if the `"if len(L)==0"` test leads to a slow-down
+* I will try to replace the global _refcache by a dictionary that is local to each `TripleDict`.
+* I will store the references provided by _refcache in a different form, so that they can more easily be deleted.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-08-16 10:14:54
+archive/issue_comments_003972.json:
+```json
+{
+    "body": "Too bad. I tried to add the following to the old patch:\n\n```diff\ndiff --git a/sage/structure/coerce_dict.pxd b/sage/structure/coerce_dict.pxd\n--- a/sage/structure/coerce_dict.pxd\n+++ b/sage/structure/coerce_dict.pxd\n@@ -1,6 +1,7 @@\n cdef class TripleDict:\n     cdef Py_ssize_t _size\n     cdef buckets\n+    cdef dict _refcache\n     cdef double threshold\n     cdef TripleDictEraser eraser\n     cdef get(self, object k1, object k2, object k3)\ndiff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx\n--- a/sage/structure/coerce_dict.pyx\n+++ b/sage/structure/coerce_dict.pyx\n@@ -18,8 +18,6 @@\n # removing dead references from the cache\n ############################################\n \n-cdef dict _refcache = {}\n-\n cdef class TripleDictEraser:\n     \"\"\"\n     Erases items from a :class:`TripleDict` when a weak reference becomes\n@@ -108,8 +106,10 @@\n                 del bucket[i:i+4]\n                 self.D._size -= 1\n                 break\n-        cdef list L = _refcache[k1,k2,k3]\n-        del L[L.index(r)]\n+        try:\n+            self.D._refcache.__delitem__((k1,k2,k3))\n+        except KeyError:\n+            pass\n \n cdef class TripleDict:\n     \"\"\"\n@@ -432,22 +432,24 @@\n         PyList_Append(bucket, h3)\n         PyList_Append(bucket, value)\n         try:\n-            PyList_Append(_refcache.setdefault((h1 , h2, h3), []),\n-                KeyedRef(k1,self.eraser,(h1, h2, h3)))\n+            ref1 = KeyedRef(k1,self.eraser,(h1, h2, h3)))\n         except TypeError:\n-            PyList_Append(_refcache.setdefault((h1, h2, h3), []), k1)\n+            ref1 = k1\n         if k2 is not k1:\n             try:\n-                PyList_Append(_refcache.setdefault((h1 , h2, h3), []),\n-                    KeyedRef(k2,self.eraser,(h1, h2, h3)))\n+                ref2 = KeyedRef(k2,self.eraser,(h1, h2, h3)))\n             except TypeError:\n-                PyList_Append(_refcache.setdefault((h1, h2, h3), []), k2)\n-        if k3 is not k1 and k3 is not k2:\n+                ref2 = k2\n+        else:\n+            ref2 = None\n+        if k3 is not k2 or k3 is not k1:\n             try:\n-                PyList_Append(_refcache.setdefault((h1 , h2, h3), []),\n-                    KeyedRef(k3,self.eraser,(h1, h2, h3)))\n+                ref3 = KeyedRef(k3,self.eraser,(h1, h2, h3)))\n             except TypeError:\n-                PyList_Append(_refcache.setdefault((h1, h2, h3), []),k3)\n+                ref3 = k3\n+        else:\n+            ref3 = None\n+        self._refcache[h1,h2,h3] = (ref1,ref2,ref3)\n         self._size += 1\n \n     def __delitem__(self, k):\n```\n\n\nHowever, with the resulting code, the memory leak discussed here reappears!\n\nSo far, I can only speculate why that has happened. It could be that moving _refcache into the `TripleDict` created a reference cycle (namely, `TripleDict` will occur as attribute to parents, and the parents occur as references in _refcache). If a `__del__` method is involved, the items in the reference cycle can't be collected.\n\nIf this holds true, then one has to have the necessary references in an *external* dictionary. But perhaps one can still ensure that the data associated with one `TripleDict` will be removed, as soon as the `TripleDict` gets garbage collected.",
+    "created_at": "2012-08-16T10:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3972",
+    "user": "SimonKing"
+}
+```
 
 Too bad. I tried to add the following to the old patch:
 
@@ -3515,35 +6087,79 @@ However, with the resulting code, the memory leak discussed here reappears!
 
 So far, I can only speculate why that has happened. It could be that moving _refcache into the `TripleDict` created a reference cycle (namely, `TripleDict` will occur as attribute to parents, and the parents occur as references in _refcache). If a `__del__` method is involved, the items in the reference cycle can't be collected.
 
-If this holds true, then one has to have the necessary references in an _external_ dictionary. But perhaps one can still ensure that the data associated with one `TripleDict` will be removed, as soon as the `TripleDict` gets garbage collected.
+If this holds true, then one has to have the necessary references in an *external* dictionary. But perhaps one can still ensure that the data associated with one `TripleDict` will be removed, as soon as the `TripleDict` gets garbage collected.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-08-16 10:34:36
+archive/issue_comments_003973.json:
+```json
+{
+    "body": "Hm. I tried the alternative idea sketched in the previous post, but the leak is still there. Very strange.",
+    "created_at": "2012-08-16T10:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3973",
+    "user": "SimonKing"
+}
+```
 
 Hm. I tried the alternative idea sketched in the previous post, but the leak is still there. Very strange.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 10:57:49
+archive/issue_comments_003974.json:
+```json
+{
+    "body": "Aaaah! Now I see! The doc test I am struggling with is also failing, if only the old patch is applied. Apparently I forgot that #11521 needs to be applied as well.",
+    "created_at": "2012-08-16T10:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3974",
+    "user": "SimonKing"
+}
+```
 
 Aaaah! Now I see! The doc test I am struggling with is also failing, if only the old patch is applied. Apparently I forgot that #11521 needs to be applied as well.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 11:15:56
+archive/issue_comments_003975.json:
+```json
+{
+    "body": "Yessss! #11521 was missing.\n\nOK. I am now testing the new patch, and will hopefully be able to post it soon.",
+    "created_at": "2012-08-16T11:15:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3975",
+    "user": "SimonKing"
+}
+```
 
 Yessss! #11521 was missing.
 
 OK. I am now testing the new patch, and will hopefully be able to post it soon.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 14:07:02
+archive/issue_comments_003976.json:
+```json
+{
+    "body": "I have attached a new patch, that changes the way how references are being kept track of.\n\nFirst of all, as I have explained in my long post today, it is important for speed that the buckets of `TripleDict` only keep track of the memory locations of the keys. Hence, references (weak or strong, depending on the type of keys) need to be stored somewhere else.\n\nPreviously, there was a global dictionary, that was shared by all `TripleDicts`. That probably was a bad idea, for the reasons you pointed out. Now, the references are stored in a dictionary that is an attribute of each `TripleDict`.\n\nThat has several advantages: In a single `TripleDict`, each key triple only occurs once. Hence, we don't need to store the references in a list addressed by a triple of memory locations, that are popped off the list when being garbage collected.\n\nInstead, each triple of memory locations points to exactly one triple of references. The triple of references is popped off the dictionary as soon as any weak-refed member of the key triple was garbage collected. Note that the `if len(L)==0:` bit is not needed.\n\nAnother advantage: If the `TripleDict` is deallocated, then the strong references associated with the `TripleDict` will vanish as well, which wouldn't have been the case with the old code.\n\nCurrently, there is only one bad situation I can think of: Let P be an object that can not be weak-refed, has a `TripleDict` T as an attribute, is used as a key in T, and has a `__del__` method. Then the reference cycle P->T->T._refcache->P will keep P alive. However, if any of the four assumptions does not hold, then P can be garbage collected. I think we can take that risk.\nIs there any question of yours that I forgot to address?\n\nI didn't do timings, but I've successfully run the doc tests.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch #11521",
+    "created_at": "2012-08-16T14:07:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3976",
+    "user": "SimonKing"
+}
+```
 
 I have attached a new patch, that changes the way how references are being kept track of.
 
@@ -3565,23 +6181,56 @@ I didn't do timings, but I've successfully run the doc tests.
 Apply trac_715_combined.patch trac_715_local_refcache.patch #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 14:07:02
+archive/issue_comments_003977.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-08-16T14:07:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3977",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 14:26:25
+archive/issue_comments_003978.json:
+```json
+{
+    "body": "The patch bot seems to have a problem. It already times out when testing whether the dependencies are applied!",
+    "created_at": "2012-08-16T14:26:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3978",
+    "user": "SimonKing"
+}
+```
 
 The patch bot seems to have a problem. It already times out when testing whether the dependencies are applied!
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-16 17:35:00
+archive/issue_comments_003979.json:
+```json
+{
+    "body": "Excellent! Thank you for the great work. This is incredibly important for so\nmany parts of sage.\n\n> Previously, there was a global dictionary, that was shared by all\n> `TripleDicts`. That probably was a bad idea, for the reasons you pointed out.\n> Now, the references are stored in a dictionary that is an attribute of each\n> `TripleDict`.\n\nExcellent! I agree with your assessment. I think this addresses all my concerns.\nI think this is a useful data structure in general, so can we formalize its\nbehaviour in the documentation? (rewrite as you see fit)\n\n\n```\nTripleDict is a structure like WeakKeyDictionary, optimized for lookup speed.\nKeys consist of a triple (k1,k2,k3) and are looked up by identity rather than\nequality. The keys are stored by weakrefs if possible. If any one of the\ncomponents k1,k2,k3 gets garbage collected, then the entry is removed from the\nTripleDict. Key components that do not allow for weakrefs are stored via a\nnormal refcounted reference. That means that any entry stored using a triple\n(k1,k2,k3) with none of the k1,k2,k3 weakreffable behaves as an entry in a\nnormal dictionary, so its existence in TripleDict prevents it from being garbage\ncollected.\n```\n\n\n> Another advantage: If the `TripleDict` is deallocated, then the strong\n> references associated with the `TripleDict` will vanish as well, which wouldn't\n> have been the case with the old code.\n\nAND if an entry gets deleted/garbage collected due to a weakreffed key component\ndisappearing, we also deref any strongly reffed key components! So I think we\nnever behave worse than a normal dict in terms of keeping objects alive.\n\n> Currently, there is only one bad situation I can think of: Let P be an object\n> that can not be weak-refed, has a `TripleDict` T as an attribute, is used as a\n> key in T, and has a `__del__` method. Then the reference cycle\n> P->T->T._refcache->P will keep P alive.\n\nI think we're safe for that. There are very few `__del__` definitions in the\nsage library and they're all associated with interface-type objects. And those\nare plain python classes anyway, so they are weakreffable.",
+    "created_at": "2012-08-16T17:35:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3979",
+    "user": "nbruin"
+}
+```
 
 Excellent! Thank you for the great work. This is incredibly important for so
 many parts of sage.
@@ -3627,97 +6276,244 @@ sage library and they're all associated with interface-type objects. And those
 are plain python classes anyway, so they are weakreffable.
 
 
+
 ---
+
+archive/issue_comments_003980.json:
+```json
+{
+    "body": "Attachment\n\nDocument the specifications of `TripleDict`",
+    "created_at": "2012-08-16T18:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3980",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Document the specifications of `TripleDict`
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-16 18:31:15
+archive/issue_comments_003981.json:
+```json
+{
+    "body": "I added sage.structure.coerce_dict to the reference manual. I took a slight modification of the text you suggested to document the purpose of that module. Note that the text also refers to #11521, but this should be fine, as #715 and #11521 are mutually dependent, hence, will be merged together.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
+    "created_at": "2012-08-16T18:31:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3981",
+    "user": "SimonKing"
+}
+```
 
 I added sage.structure.coerce_dict to the reference manual. I took a slight modification of the text you suggested to document the purpose of that module. Note that the text also refers to #11521, but this should be fine, as #715 and #11521 are mutually dependent, hence, will be merged together.
 
 Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-16 22:06:25
+archive/issue_comments_003982.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-08-16T22:06:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3982",
+    "user": "nbruin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-16 22:06:25
+archive/issue_comments_003983.json:
+```json
+{
+    "body": "I'm happy. Positive review. I think the bot gets confused and tries to apply the patches in the wrong order.",
+    "created_at": "2012-08-16T22:06:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3983",
+    "user": "nbruin"
+}
+```
 
 I'm happy. Positive review. I think the bot gets confused and tries to apply the patches in the wrong order.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-20 10:16:24
+archive/issue_comments_003984.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-08-20T10:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3984",
+    "user": "SimonKing"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-20 10:16:24
+archive/issue_comments_003985.json:
+```json
+{
+    "body": "On #12313, I found that the `TripleDict.__delitem__` method needs to be fixed, because it does currently not update the `_refcache` dictionary. So, I'd say I fix this here, which means that it needs work and needs another review.",
+    "created_at": "2012-08-20T10:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3985",
+    "user": "SimonKing"
+}
+```
 
 On #12313, I found that the `TripleDict.__delitem__` method needs to be fixed, because it does currently not update the `_refcache` dictionary. So, I'd say I fix this here, which means that it needs work and needs another review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-20 10:33:02
+archive/issue_comments_003986.json:
+```json
+{
+    "body": "Fixed. Keep in mind that the patchbot wouldn't be able to understand that #11521 needs to be merged as well.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
+    "created_at": "2012-08-20T10:33:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3986",
+    "user": "SimonKing"
+}
+```
 
 Fixed. Keep in mind that the patchbot wouldn't be able to understand that #11521 needs to be merged as well.
 
 Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-20 10:33:02
+archive/issue_comments_003987.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-08-20T10:33:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3987",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-20 11:05:48
+archive/issue_comments_003988.json:
+```json
+{
+    "body": "I had to change one detail: If a non-existing item is deleted, then with the old patch version the resulting key error would not name the key but the memory address of the key. Fixed.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
+    "created_at": "2012-08-20T11:05:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3988",
+    "user": "SimonKing"
+}
+```
 
 I had to change one detail: If a non-existing item is deleted, then with the old patch version the resulting key error would not name the key but the memory address of the key. Fixed.
 
 Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-21 08:19:23
+archive/issue_comments_003989.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-08-21T08:19:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3989",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-21 08:54:12
+archive/issue_comments_003990.json:
+```json
+{
+    "body": "Keep track of references in a local dictionary",
+    "created_at": "2012-08-21T08:54:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3990",
+    "user": "SimonKing"
+}
+```
 
 Keep track of references in a local dictionary
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-21 08:55:31
+archive/issue_comments_003991.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-08-21T08:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3991",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003992.json:
+```json
+{
+    "body": "Attachment\n\nOK, the second patch is updated again. Changes: The `get()` method now tests whether the stored weak references to the keys are still active, before returning a value.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521",
+    "created_at": "2012-08-21T08:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3992",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -3726,56 +6522,135 @@ OK, the second patch is updated again. Changes: The `get()` method now tests whe
 Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_specification.patch #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 07:55:18
+archive/issue_comments_003993.json:
+```json
+{
+    "body": "I have added a patch that changes a couple of problems discussed at #12313. In particular\n\n* Remove `TripleDictIter` and replace it by using the new \"yield\" statement in Cython.\n* Test whether the references are valid, before setting an item.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch  trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-08-23T07:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3993",
+    "user": "SimonKing"
+}
+```
 
 I have added a patch that changes a couple of problems discussed at #12313. In particular
 
- * Remove `TripleDictIter` and replace it by using the new "yield" statement in Cython.
- * Test whether the references are valid, before setting an item.
+* Remove `TripleDictIter` and replace it by using the new "yield" statement in Cython.
+* Test whether the references are valid, before setting an item.
 
 Apply trac_715_combined.patch trac_715_local_refcache.patch  trac_715_safer.patch trac_715_specification.patch
 
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 07:56:46
+archive/issue_comments_003994.json:
+```json
+{
+    "body": "... and in addition, set 0.7 as default threshold.",
+    "created_at": "2012-08-23T07:56:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3994",
+    "user": "SimonKing"
+}
+```
 
 ... and in addition, set 0.7 as default threshold.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 10:34:24
+archive/issue_comments_003995.json:
+```json
+{
+    "body": "make ptest did only result in few errors, no segfault! So, it needs work for now, but it is close to success.",
+    "created_at": "2012-08-23T10:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3995",
+    "user": "SimonKing"
+}
+```
 
 make ptest did only result in few errors, no segfault! So, it needs work for now, but it is close to success.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 10:34:24
+archive/issue_comments_003996.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-08-23T10:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3996",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 10:48:19
+archive/issue_comments_003997.json:
+```json
+{
+    "body": "Fix some issues: Test validity of references when setting items; use the new \"yield\" statement in Cython for iteration.",
+    "created_at": "2012-08-23T10:48:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3997",
+    "user": "SimonKing"
+}
+```
 
 Fix some issues: Test validity of references when setting items; use the new "yield" statement in Cython for iteration.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-08-23 10:49:05
+archive/issue_comments_003998.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-08-23T10:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3998",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_003999.json:
+```json
+{
+    "body": "Attachment\n\nNow it should work! Needs review - this time for real...\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-08-23T10:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-3999",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -3786,11 +6661,22 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by nbruin created at 2012-08-24 23:08:31
+archive/issue_comments_004000.json:
+```json
+{
+    "body": "**safer.patch**: `sage/structure/coerce_dict.pyx`\n\n```\n      # This is to cope with a potential racing condition - if garbage \n      # collection and weakref callback happens right between the \n      # \"if (isinstance(r1,...\" and the \"del\", then the previously \n      # existing entry might already be gone. \n```\n\nNo, there is no such racing condition. You are holding references \n`k1,k2,k3`. You have just looked up the weakreference `r1,r2,r3` to these keys\nand checked that the weakrefs are still alive (and hence that it's not the case\nthat one of the `ki` is just a new element that happens to have the same id as a\nnow-deceased previous key element in the dict).\nSince you are holding references, they cannot die in between, so I don't think\nthe\n\n```\n    del self._refcache[<size_t><void *>k1,<size_t><void *>k2,<size_t><void *>k3]\n```\n\nneeds to be quarded. \n\nIt won't hurt, though, and this code will be optimized anyway, so no effect on\nthe review.\n\nConcerning `next_odd_prime`: I'm pretty sure we're keeping a list of primes\nsomewhere in sage. We might want to look in there rather than have this snippet\nhere. Again, not hurtful to do it this way.\n\n**trac_715_specification.patch**: One line fuzz in application. Do we care?",
+    "created_at": "2012-08-24T23:08:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4000",
+    "user": "nbruin"
+}
+```
 
-*safer.patch*: `sage/structure/coerce_dict.pyx`
+**safer.patch**: `sage/structure/coerce_dict.pyx`
 
 ```
       # This is to cope with a potential racing condition - if garbage 
@@ -3820,19 +6706,41 @@ Concerning `next_odd_prime`: I'm pretty sure we're keeping a list of primes
 somewhere in sage. We might want to look in there rather than have this snippet
 here. Again, not hurtful to do it this way.
 
-*trac_715_specification.patch*: One line fuzz in application. Do we care?
+**trac_715_specification.patch**: One line fuzz in application. Do we care?
+
 
 
 ---
 
-Comment by nbruin created at 2012-08-24 23:08:31
+archive/issue_comments_004001.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-08-24T23:08:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4001",
+    "user": "nbruin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-03 09:25:05
+archive/issue_comments_004002.json:
+```json
+{
+    "body": "There are sporadic segfaults found by some (not all) patchbots on #11370 and #12876 that seem to be related with the weak caching bits.\n\nHere, the cdef attribute `sage.categories.action.Action.S` (that's for keeping the underlying set of the action) is turned into a weak reference to the underlying set. Today, I found that there might be an interference with old code in sage/rings/morphism.pyx, namely:\n\n```\ncdef class RingHomomorphism(RingMap):\n    def __init__(self, R, S):\n        \"\"\"\n        Create a lifting ring map.\n\n        EXAMPLES::\n\n            sage: f = Zmod(8).lift()          # indirect doctest\n            sage: f(3)\n            3\n            sage: type(f(3))\n            <type 'sage.rings.integer.Integer'>\n            sage: type(f)\n            <type 'sage.rings.morphism.RingMap_lift'>\n        \"\"\"\n        from sage.categories.sets_cat import Sets\n        H = R.Hom(S, Sets())\n        RingMap.__init__(self, H)\n        self.S = S  # for efficiency\n        try:\n            S._coerce_(R(0).lift())\n        except TypeError:\n            raise TypeError, \"No natural lift map\"\n\n    cdef _update_slots(self, _slots):\n        self.S = _slots['S']\n        Morphism._update_slots(self, _slots)\n\n    cdef _extra_slots(self, _slots):\n        _slots['S'] = self.S\n        return Morphism._extra_slots(self, _slots)\n\n```\n\nHence, `RingHomomorphism` uses the S attribute as well, but differently. And aren't there actions that are ring homomorphisms?\n\nI think it is worth trying to rename the `S` attribute of Action. I put it to \"needs work\", because I doubt that flaky segfaults are acceptable.",
+    "created_at": "2012-09-03T09:25:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4002",
+    "user": "SimonKing"
+}
+```
 
 There are sporadic segfaults found by some (not all) patchbots on #11370 and #12876 that seem to be related with the weak caching bits.
 
@@ -3878,23 +6786,58 @@ Hence, `RingHomomorphism` uses the S attribute as well, but differently. And are
 I think it is worth trying to rename the `S` attribute of Action. I put it to "needs work", because I doubt that flaky segfaults are acceptable.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-03 09:25:05
+archive/issue_comments_004003.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-09-03T09:25:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4003",
+    "user": "SimonKing"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_004004.json:
+```json
+{
+    "body": "Attachment\n\nIntroduce weak references to coercion dicts, and refactor the hashtables.",
+    "created_at": "2012-09-03T09:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4004",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Introduce weak references to coercion dicts, and refactor the hashtables.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-03 09:31:52
+archive/issue_comments_004005.json:
+```json
+{
+    "body": "The main patch is updated, renaming S into US (for Underlying Set - I certainly don't want to blame the US if it doesn't work). Let us see whether stuff at #13370 and #12876 will work now...\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-09-03T09:31:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4005",
+    "user": "SimonKing"
+}
+```
 
 The main patch is updated, renaming S into US (for Underlying Set - I certainly don't want to blame the US if it doesn't work). Let us see whether stuff at #13370 and #12876 will work now...
 
@@ -3903,16 +6846,38 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-03 09:32:02
+archive/issue_comments_004006.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-09-03T09:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4006",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 12:09:48
+archive/issue_comments_004007.json:
+```json
+{
+    "body": "Applying #715 and #11521 gives on OS X 10.6 x86_64:\n\n```\nbsd:sage-5.4.beta0 jdemeyer$ ./sage -t  devel/sage/sage/misc/cachefunc.pyx\nsage -t  \"devel/sage/sage/misc/cachefunc.pyx\"\nThe doctested process was killed by signal 11\n         [14.3 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/cachefunc.pyx\" # Killed/crashed\nTotal time for all tests: 14.3 seconds\n```\n\n\nThis is the only system where this happens.  When running the test with `--verbose`, the test actually passes.",
+    "created_at": "2012-09-05T12:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4007",
+    "user": "jdemeyer"
+}
+```
 
 Applying #715 and #11521 gives on OS X 10.6 x86_64:
 
@@ -3934,9 +6899,20 @@ Total time for all tests: 14.3 seconds
 This is the only system where this happens.  When running the test with `--verbose`, the test actually passes.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 12:17:38
+archive/issue_comments_004008.json:
+```json
+{
+    "body": "Replying to [comment:224 jdemeyer]:\n> Applying #715 and #11521 gives on OS X 10.6 x86_64:\n> {{{\n> bsd:sage-5.4.beta0 jdemeyer$ ./sage -t  devel/sage/sage/misc/cachefunc.pyx\n> sage -t  \"devel/sage/sage/misc/cachefunc.pyx\"\n> The doctested process was killed by signal 11\n>          [14.3 s]\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>         sage -t  \"devel/sage/sage/misc/cachefunc.pyx\" # Killed/crashed\n> Total time for all tests: 14.3 seconds\n> }}}\n> \n> This is the only system where this happens.\n\nBut that means: We finally have a system where it happens *with #715+#11521 only*! So far, we only had Volker's patchbot, which produced segfaults when other patches were applied on top of #11521.\n\nHence, hope increases.\n\n>  When running the test with `--verbose`, the test actually passes.\n\nDid it really fully pass and you came back to your shell prompt, or did the tests pass and there was a segfault when Sage shuts down?\n\nCan you produce a backtrace, say, by using gdb? Or can you give me access to the machine, so that I can do some experiments?\n\nBest regards,\nSimon",
+    "created_at": "2012-09-05T12:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4008",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:224 jdemeyer]:
 > Applying #715 and #11521 gives on OS X 10.6 x86_64:
@@ -3956,7 +6932,7 @@ Replying to [comment:224 jdemeyer]:
 > 
 > This is the only system where this happens.
 
-But that means: We finally have a system where it happens _with #715+#11521 only_! So far, we only had Volker's patchbot, which produced segfaults when other patches were applied on top of #11521.
+But that means: We finally have a system where it happens *with #715+#11521 only*! So far, we only had Volker's patchbot, which produced segfaults when other patches were applied on top of #11521.
 
 Hence, hope increases.
 
@@ -3970,9 +6946,20 @@ Best regards,
 Simon
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 12:28:57
+archive/issue_comments_004009.json:
+```json
+{
+    "body": "Replying to [comment:225 SimonKing]:\n> Did it really fully pass and you came back to your shell prompt, or did the tests pass and there was a segfault when Sage shuts down?\nIt really worked:\n\n```\n715 tests in 72 items.\n715 passed and 0 failed.\nTest passed.\n         [13.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 13.6 seconds\n```\n\n \n> Can you produce a backtrace, say, by using gdb?\nUnder gdb, there is no crash.  There is a doctest failure though:\n\n```\n**********************************************************************\nFile \"/Users/jdemeyer/sage-5.4.beta0/devel/sage/sage/misc/cachefunc.pyx\", line 799, in __main__.example_17\nFailed example:\n    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 704:_sage_    >>> oddprime_factors.precompute(range(1,1\n00), 4)\nExpected nothing\nGot:\n    [Errno 4] Interrupted system call\n    Killing any remaining workers...\n**********************************************************************\nFile \"/Users/jdemeyer/sage-5.4.beta0/devel/sage/sage/misc/cachefunc.pyx\", line 800, in __main__.example_17\nFailed example:\n    oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/jdemeyer/sage-5.4.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/jdemeyer/sage-5.4.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/jdemeyer/sage-5.4.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[4]>\", line 1, in <module>\n        oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]\n    KeyError: ((25,), ())\n```\n\n\n> Or can you give me access to the machine, so that I can do some experiments?\nThis is William's `bsd.math` machine, ask him.",
+    "created_at": "2012-09-05T12:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4009",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:225 SimonKing]:
 > Did it really fully pass and you came back to your shell prompt, or did the tests pass and there was a segfault when Sage shuts down?
@@ -4025,9 +7012,20 @@ Exception raised:
 This is William's `bsd.math` machine, ask him.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 12:37:41
+archive/issue_comments_004010.json:
+```json
+{
+    "body": "Replying to [comment:226 jdemeyer]:\n> Under gdb, there is no crash.  There is a doctest failure though:\n\nInteresting. Isn't gdb supposed to just watch, and not interfere with, the computations?\n\n> This is William's `bsd.math` machine, ask him.\n\nToo bad. I already tested 5.3.rc1 on bsd.math, and it worked fine. No segfault. Perhaps I should retry with 5.4.beta0, then?",
+    "created_at": "2012-09-05T12:37:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4010",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:226 jdemeyer]:
 > Under gdb, there is no crash.  There is a doctest failure though:
@@ -4039,34 +7037,78 @@ Interesting. Isn't gdb supposed to just watch, and not interfere with, the compu
 Too bad. I already tested 5.3.rc1 on bsd.math, and it worked fine. No segfault. Perhaps I should retry with 5.4.beta0, then?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 12:44:50
+archive/issue_comments_004011.json:
+```json
+{
+    "body": "Replying to [comment:227 SimonKing]:\n> Perhaps I should retry with 5.4.beta0, then?\nYes, you could.  sage-5.4.beta0 is more or less stable now (the main uncertainty being #13121 and related tickets).",
+    "created_at": "2012-09-05T12:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4011",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:227 SimonKing]:
 > Perhaps I should retry with 5.4.beta0, then?
 Yes, you could.  sage-5.4.beta0 is more or less stable now (the main uncertainty being #13121 and related tickets).
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 12:46:30
+archive/issue_comments_004012.json:
+```json
+{
+    "body": "Replying to [comment:227 SimonKing]:\n> Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?\nI honestly don't know how gdb works and certainly not how it works within doctesting (`sage -t --gdb`).  Note that this is on OS X and `gdb` might work slightly different compared to Linux.",
+    "created_at": "2012-09-05T12:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4012",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:227 SimonKing]:
 > Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?
 I honestly don't know how gdb works and certainly not how it works within doctesting (`sage -t --gdb`).  Note that this is on OS X and `gdb` might work slightly different compared to Linux.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 12:47:46
+archive/issue_comments_004013.json:
+```json
+{
+    "body": "I should also clarify that the doctest crash is completely reproducible: it really happens every time.",
+    "created_at": "2012-09-05T12:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4013",
+    "user": "jdemeyer"
+}
+```
 
 I should also clarify that the doctest crash is completely reproducible: it really happens every time.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 12:54:55
+archive/issue_comments_004014.json:
+```json
+{
+    "body": "Replying to [comment:228 jdemeyer]:\n> Replying to [comment:227 SimonKing]:\n> > Perhaps I should retry with 5.4.beta0, then?\n> Yes, you could.\n\nBuilding it now...",
+    "created_at": "2012-09-05T12:54:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4014",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:228 jdemeyer]:
 > Replying to [comment:227 SimonKing]:
@@ -4076,21 +7118,43 @@ Replying to [comment:228 jdemeyer]:
 Building it now...
 
 
+
 ---
 
-Comment by vbraun created at 2012-09-05 13:12:27
+archive/issue_comments_004015.json:
+```json
+{
+    "body": "Replying to [comment:227 SimonKing]:\n> Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?\n\nYes, but:\n* gdb installs a bag full of signal handlers (so you can press Ctrl-C and get to the gdb prompt, e.g.)\n* gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).",
+    "created_at": "2012-09-05T13:12:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4015",
+    "user": "vbraun"
+}
+```
 
 Replying to [comment:227 SimonKing]:
 > Interesting. Isn't gdb supposed to just watch, and not interfere with, the computations?
 
 Yes, but:
-  * gdb installs a bag full of signal handlers (so you can press Ctrl-C and get to the gdb prompt, e.g.)
-  * gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).
+* gdb installs a bag full of signal handlers (so you can press Ctrl-C and get to the gdb prompt, e.g.)
+* gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).
+
 
 
 ---
 
-Comment by SimonKing created at 2012-09-05 13:16:01
+archive/issue_comments_004016.json:
+```json
+{
+    "body": "Replying to [comment:232 vbraun]:\n>   * gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).\n\nOK, that is likely to be a problem here.",
+    "created_at": "2012-09-05T13:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4016",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:232 vbraun]:
 >   * gdb disables ASLR by default, so all memory locations are reproducible (but different from running without gdb).
@@ -4098,9 +7162,20 @@ Replying to [comment:232 vbraun]:
 OK, that is likely to be a problem here.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 15:36:03
+archive/issue_comments_004017.json:
+```json
+{
+    "body": "Hooray! Finally I get\n\n```\nbash-3.2$ ../../sage -t sage/misc/cachefunc.pyx \nsage -t  \"devel/sage-main/sage/misc/cachefunc.pyx\"          \nThe doctested process was killed by signal 11\n         [44.1 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-main/sage/misc/cachefunc.pyx\" # Killed/crashed\nTotal time for all tests: 44.1 seconds\n```\n\nWhy is it so much faster for you, Jeroen?",
+    "created_at": "2012-09-05T15:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4017",
+    "user": "SimonKing"
+}
+```
 
 Hooray! Finally I get
 
@@ -4121,9 +7196,20 @@ Total time for all tests: 44.1 seconds
 Why is it so much faster for you, Jeroen?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 15:41:31
+archive/issue_comments_004018.json:
+```json
+{
+    "body": "What I don't understand: With gdb, one gets an error, reportedly in line 800. But line 800 is\n\n```\n        sage: J.groebner_basis.clear_cache()\n```\n\nNothing like\n\n```\nFailed example:\n    oddprime_factors.cache[(Integer(25),),()]###line 705:_sage_    >>> oddprime_factors.cache[(25,),()]\nException raised:\n```\n",
+    "created_at": "2012-09-05T15:41:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4018",
+    "user": "SimonKing"
+}
+```
 
 What I don't understand: With gdb, one gets an error, reportedly in line 800. But line 800 is
 
@@ -4141,25 +7227,58 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 15:51:56
+archive/issue_comments_004019.json:
+```json
+{
+    "body": "I tried to install some valgrind spkg on bsd.math, but it failed.",
+    "created_at": "2012-09-05T15:51:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4019",
+    "user": "SimonKing"
+}
+```
 
 I tried to install some valgrind spkg on bsd.math, but it failed.
 
 
+
 ---
 
-Comment by jpflori created at 2012-09-05 15:54:47
+archive/issue_comments_004020.json:
+```json
+{
+    "body": "Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).\nIIRC, that's what Sage tries to do, so it fails...\nSo you should use a system wide valgrind or force the use of the system wide compiler to build the spkg.",
+    "created_at": "2012-09-05T15:54:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4020",
+    "user": "jpflori"
+}
+```
 
 Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).
 IIRC, that's what Sage tries to do, so it fails...
 So you should use a system wide valgrind or force the use of the system wide compiler to build the spkg.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 16:09:46
+archive/issue_comments_004021.json:
+```json
+{
+    "body": "Replying to [comment:237 jpflori]:\n> Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).\n> IIRC, that's what Sage tries to do, so it fails...\n> So you should use a system wide valgrind or force the use of the system wide compiler to build the spkg.\n\nThank you!\n\nNext attempt: ulimit -c unlimited.\n\nHowever, even though there still was a signal 11, no core dump was written. So, question to the experts: How can I make bsd.math write a core dump of the failing test?",
+    "created_at": "2012-09-05T16:09:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4021",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:237 jpflori]:
 > Valgrind cannot be build with the FSF GCC on OS X (see the ticket I pointed to recently about Valgrind, don't remember where).
@@ -4173,9 +7292,20 @@ Next attempt: ulimit -c unlimited.
 However, even though there still was a signal 11, no core dump was written. So, question to the experts: How can I make bsd.math write a core dump of the failing test?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-05 17:56:09
+archive/issue_comments_004022.json:
+```json
+{
+    "body": "Replying to [comment:234 SimonKing]:\n> Hooray!\nHooray because you get a Segmentation Fault, there are a lot of tickets that should make you happy then :-)\n\n> Why is it so much faster for you, Jeroen?\nCaching (the disk kind) perhaps?",
+    "created_at": "2012-09-05T17:56:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4022",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:234 SimonKing]:
 > Hooray!
@@ -4185,25 +7315,47 @@ Hooray because you get a Segmentation Fault, there are a lot of tickets that sho
 Caching (the disk kind) perhaps?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-05 19:00:32
+archive/issue_comments_004023.json:
+```json
+{
+    "body": "Gosh, it is so frustrating to hunt that Heisenbug!!\n\n* Test the file - there is a segfault, but it doesn't give any clue of what is happening.\n* Test the file with gdb - the segfault is gone, but a \"normal\" error occurs, that is rather odd because it is reported in the wrong line of the file.\n* Try ulimit -c unlimited - there is a segfault, but no core dump is written.\n* Try verbose tests - all tests pass.\n* What I just did: Start each test with a few lines that write something into a log file. Hence, it isn't exactly verbose, but should give some idea in what test the segfault occurs. But alas - all tests pass.\n* Valgrind doesn't seem to be available on bsd.math,\n\nAnything else I could try? So far, I only see the option to try to understand why using gdb results in an error in a very innocent-looking test that should actually use a strong cache.",
+    "created_at": "2012-09-05T19:00:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4023",
+    "user": "SimonKing"
+}
+```
 
 Gosh, it is so frustrating to hunt that Heisenbug!!
 
- * Test the file - there is a segfault, but it doesn't give any clue of what is happening.
- * Test the file with gdb - the segfault is gone, but a "normal" error occurs, that is rather odd because it is reported in the wrong line of the file.
- * Try ulimit -c unlimited - there is a segfault, but no core dump is written.
- * Try verbose tests - all tests pass.
- * What I just did: Start each test with a few lines that write something into a log file. Hence, it isn't exactly verbose, but should give some idea in what test the segfault occurs. But alas - all tests pass.
- * Valgrind doesn't seem to be available on bsd.math,
+* Test the file - there is a segfault, but it doesn't give any clue of what is happening.
+* Test the file with gdb - the segfault is gone, but a "normal" error occurs, that is rather odd because it is reported in the wrong line of the file.
+* Try ulimit -c unlimited - there is a segfault, but no core dump is written.
+* Try verbose tests - all tests pass.
+* What I just did: Start each test with a few lines that write something into a log file. Hence, it isn't exactly verbose, but should give some idea in what test the segfault occurs. But alas - all tests pass.
+* Valgrind doesn't seem to be available on bsd.math,
 
 Anything else I could try? So far, I only see the option to try to understand why using gdb results in an error in a very innocent-looking test that should actually use a strong cache.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-05 20:07:08
+archive/issue_comments_004024.json:
+```json
+{
+    "body": "Replying to [comment:240 SimonKing]:\n>  * Test the file - there is a segfault, but it doesn't give any clue of what is happening.\nI'm pretty sure that's because sage-doctest redirects the output somewhere. I'm\nsure the SIGSEGV causes the usual traceback upon sage crashing. So I'd start\nbreaking into the sage-doctest script and change little things there, hoping to\nnot upset the subtle conditions required to trigger the fault. Indeed\n\n**local/bin/sage-doctest**:801\n\n```python\n            if verbose or gdb or memcheck or massif or cachegrind:\n                import subprocess\n                proc = subprocess.Popen(cmd, shell=True)\n                while time.time()-tm <= TIMEOUT and proc.poll() == None:\n                    time.sleep(0.1)\n                if time.time()-tm >=TIMEOUT:\n                    os.kill(proc.pid, 9)\n                    print \"*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\"\n                e = proc.poll()\n            else:\n                outf = tempfile.NamedTemporaryFile()\n                import subprocess\n                proc = subprocess.Popen(cmd, shell=True, \\\n                        stdout=outf.file.fileno(), stderr = outf.file.fileno())\n                while time.time()-tm <= TIMEOUT and proc.poll() == None:\n                    time.sleep(0.1)\n                if time.time()-tm >=TIMEOUT:\n                    os.kill(proc.pid, 9)\n                    print \"*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\"\n                outf.file.seek(0)\n                out = outf.read()\n                e = proc.poll()\n```\n\nThe verbose parameter does get written into the file that `cmd` executes, so it\nhas effect there as well. You could also just extract that temporary file and\nhack on that.\n\nOf course, this all only might help you to figure out where the SEGV occurs,\nwhich may or may not be related to the real culprit.",
+    "created_at": "2012-09-05T20:07:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4024",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:240 SimonKing]:
 >  * Test the file - there is a segfault, but it doesn't give any clue of what is happening.
@@ -4212,7 +7364,7 @@ sure the SIGSEGV causes the usual traceback upon sage crashing. So I'd start
 breaking into the sage-doctest script and change little things there, hoping to
 not upset the subtle conditions required to trigger the fault. Indeed
 
-*local/bin/sage-doctest*:801
+**local/bin/sage-doctest**:801
 
 ```python
             if verbose or gdb or memcheck or massif or cachegrind:
@@ -4247,9 +7399,20 @@ Of course, this all only might help you to figure out where the SEGV occurs,
 which may or may not be related to the real culprit.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 08:46:40
+archive/issue_comments_004025.json:
+```json
+{
+    "body": "Concerning the oddity that there is an error (but no segfault) with gdb: It says\n\n```\nFile \"/scratch/sking/sage-5.4.beta0/devel/sage-main/sage/misc/cachefunc.pyx\", line 799, in __main__.example_17\nFailed example:\n    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 704:_sage_    >>> oddprime_factors.precompute(range(1,100), 4)\nExpected nothing\nGot:  \n    [Errno 4] Interrupted system call\n    Killing any remaining workers...\n```\n\nWhy does \"interrupted system call\" mean? The failing function appears to be the cached version of\n\n```\n            def oddprime_factors(n):\n                l = [p for p,e in factor(n) if p != 2]\n                return len(l)\n```\n\nWhat system call is involved here?",
+    "created_at": "2012-09-06T08:46:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4025",
+    "user": "SimonKing"
+}
+```
 
 Concerning the oddity that there is an error (but no segfault) with gdb: It says
 
@@ -4274,18 +7437,40 @@ Why does "interrupted system call" mean? The failing function appears to be the 
 What system call is involved here?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 08:59:31
+archive/issue_comments_004026.json:
+```json
+{
+    "body": "PS: When I comment out the \"oddprime_factors\" test, running `sage -t -gdb` does not report any error - and it also makes the segfault in `sage -t` go away!\n\nHence, it seems that the problem really is due to the seemingly harmless test of the \"precompute\" method.",
+    "created_at": "2012-09-06T08:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4026",
+    "user": "SimonKing"
+}
+```
 
 PS: When I comment out the "oddprime_factors" test, running `sage -t -gdb` does not report any error - and it also makes the segfault in `sage -t` go away!
 
 Hence, it seems that the problem really is due to the seemingly harmless test of the "precompute" method.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 09:09:01
+archive/issue_comments_004027.json:
+```json
+{
+    "body": "If the test is\n\n```\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,99), 4)\n            sage: oddprime_factors.cache[(25,),()]\n            1\n```\n\nthen `sage -t` passes. A precomputation in `range(1,90)` or `range(1,50)` or `range(2,100)` works as well. But if the precomputation runs in `range(1,100)` or `range(2,101)` or `range(1,110)`, then there is signal 11.\n\nHence, it really seems that we located the culprit - although I have no idea whatsoever as to what is happening here. It seems that there is no error, if we precompute at most 98 values, but if we have 99 or more precomputed values then there is signal 11.\n\nAny idea what to try next?",
+    "created_at": "2012-09-06T09:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4027",
+    "user": "SimonKing"
+}
+```
 
 If the test is
 
@@ -4306,20 +7491,42 @@ Hence, it really seems that we located the culprit - although I have no idea wha
 Any idea what to try next?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-06 09:22:27
+archive/issue_comments_004028.json:
+```json
+{
+    "body": "Replying to [comment:242 SimonKing]:\n> Why does \"interrupted system call\" mean?\nIt means, quite literally, that a system call got interrupted by a signal.  If a system call (for example some file I/O operation) gets interrupted by a signal, then that system call might fail with \"interrupted system call\", even if the signal was properly handled by the application.  Note the use of \"might\", there is a long discussion in the `signal(7)` man page explaining to which calls this applies.",
+    "created_at": "2012-09-06T09:22:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4028",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:242 SimonKing]:
 > Why does "interrupted system call" mean?
 It means, quite literally, that a system call got interrupted by a signal.  If a system call (for example some file I/O operation) gets interrupted by a signal, then that system call might fail with "interrupted system call", even if the signal was properly handled by the application.  Note the use of "might", there is a long discussion in the `signal(7)` man page explaining to which calls this applies.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 09:24:51
+archive/issue_comments_004029.json:
+```json
+{
+    "body": "By inserting a print statement into `weakref.KeyedRef.__init__` and running the test in the command line, I found that the test does *not* involve keyed weak references.\n\nSince the second argument to the `precompute` method gives the number of used parallel processes, I thought for a moment that parallelity could be the problem, but changing the test into\n\n```\n            sage: oddprime_factors.precompute(range(1,110), 1)\n```\n\ndid *not* make signal 11 vanish.",
+    "created_at": "2012-09-06T09:24:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4029",
+    "user": "SimonKing"
+}
+```
 
-By inserting a print statement into `weakref.KeyedRef.__init__` and running the test in the command line, I found that the test does _not_ involve keyed weak references.
+By inserting a print statement into `weakref.KeyedRef.__init__` and running the test in the command line, I found that the test does *not* involve keyed weak references.
 
 Since the second argument to the `precompute` method gives the number of used parallel processes, I thought for a moment that parallelity could be the problem, but changing the test into
 
@@ -4327,12 +7534,23 @@ Since the second argument to the `precompute` method gives the number of used pa
             sage: oddprime_factors.precompute(range(1,110), 1)
 ```
 
-did _not_ make signal 11 vanish.
+did *not* make signal 11 vanish.
+
 
 
 ---
 
-Comment by vbraun created at 2012-09-06 09:25:25
+archive/issue_comments_004030.json:
+```json
+{
+    "body": "Replying to [comment:242 SimonKing]:\n> Got:  \n>     [Errno 4] Interrupted system call\n>     Killing any remaining workers...\n\nThis sounds more like a bug in the doctest framework. I imagine the worker process segfaults, and the doctesting process is in a blocking system call when the `SIGCHLD` arrives. The doctesting framework should check the `EINTR` result and retry but doesn't.",
+    "created_at": "2012-09-06T09:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4030",
+    "user": "vbraun"
+}
+```
 
 Replying to [comment:242 SimonKing]:
 > Got:  
@@ -4342,9 +7560,20 @@ Replying to [comment:242 SimonKing]:
 This sounds more like a bug in the doctest framework. I imagine the worker process segfaults, and the doctesting process is in a blocking system call when the `SIGCHLD` arrives. The doctesting framework should check the `EINTR` result and retry but doesn't.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 09:31:00
+archive/issue_comments_004031.json:
+```json
+{
+    "body": "Replying to [comment:247 vbraun]:\n> Replying to [comment:242 SimonKing]:\n> > Got:  \n> >     [Errno 4] Interrupted system call\n> >     Killing any remaining workers...\n> \n> This sounds more like a bug in the doctest framework. I imagine the worker process segfaults, and the doctesting process is in a blocking system call when the `SIGCHLD` arrives. The doctesting framework should check the `EINTR` result and retry but doesn't. \n\n... which sounds like [this known problem](http://bugs.python.org/issue12268) or [its duplicate](http://bugs.python.org/issue9867).",
+    "created_at": "2012-09-06T09:31:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4031",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:247 vbraun]:
 > Replying to [comment:242 SimonKing]:
@@ -4357,9 +7586,20 @@ Replying to [comment:247 vbraun]:
 ... which sounds like [this known problem](http://bugs.python.org/issue12268) or [its duplicate](http://bugs.python.org/issue9867).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 11:47:50
+archive/issue_comments_004032.json:
+```json
+{
+    "body": "Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:\n\n```\nsage -t  -force_lib devel/sage-12876/sage/rings/polynomial/infinite_polynomial_ring.py\nThe doctested process was killed by signal 11\n```\n\nSignal 11, same signal as here.\n\nI wonder: Does the patchbot uses some `UniqueRepresentation` to represent a tester? That might be a problem if it is only weakly cached.",
+    "created_at": "2012-09-06T11:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4032",
+    "user": "SimonKing"
+}
+```
 
 Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:
 
@@ -4373,9 +7613,20 @@ Signal 11, same signal as here.
 I wonder: Does the patchbot uses some `UniqueRepresentation` to represent a tester? That might be a problem if it is only weakly cached.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 14:00:43
+archive/issue_comments_004033.json:
+```json
+{
+    "body": "Replying to [comment:249 SimonKing]:\n> Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:\n\nIn an error of an earlier version of #13370 on [Volker's patchbot](http://patchbot.sagemath.org/log/13370/Fedora/17/x86_64/3.5.2-3.fc17.x86_64/volker-desktop.stp.dias.ie/2012-08-27%2023:35:38%20+0100), too:\n\n```\nsage -t  -force_lib devel/sage-13370/sage/rings/polynomial/polynomial_real_mpfr_dense.pyx\nThe doctested process was killed by signal 11\n```\n\n\nThe big question is: How can we deal with that problem?",
+    "created_at": "2012-09-06T14:00:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4033",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:249 SimonKing]:
 > Recall that some of the patchbots report sporadic problems for #13370 or #12876 as well - and at least in the case of #12876, it is seemingly a similar problem:
@@ -4391,11 +7642,22 @@ The doctested process was killed by signal 11
 The big question is: How can we deal with that problem?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 15:46:44
+archive/issue_comments_004034.json:
+```json
+{
+    "body": "It seems to me that it is *not* a side effect. Namely, I put\n\n```\nclass Foo:\n    def bar(self):\n        \"\"\"\n        Cache values for a number of inputs.  Do the computation\n        in parallel, and only bother to compute values that we\n        haven't already cached.\n\n        EXAMPLES::\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n            sage: oddprime_factors.cache[(25,),()]\n            1\n        \"\"\"\n        pass\n```\n\ninto a file and run `sage -t` on it. All tests pass -- **__BUT__** running `sage -t -gdb`, I get the same error as in cachefunc.pyx, where the test above is just one among many other tests:\n\n```\nFailed example:\n    oddprime_factors.precompute(range(Integer(1),Integer(100)), Integer(4))###line 14:_sage_    >>> oddprime_factors.precompute(range(1,100), 4)\nExpected nothing\nGot:\n    [Errno 4] Interrupted system call\n    Killing any remaining workers...\n**********************************************************************\nFile \"/scratch/sking/sage-5.4.beta0/devel/sage-main/sage/misc/blubb.py\", line ?, in __main__.example_0\nFailed example:\n    oddprime_factors.cache[(Integer(25),),()]###line 15:_sage_    >>> oddprime_factors.cache[(25,),()]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/sking/sage-5.4.beta0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/sking/sage-5.4.beta0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/sking/sage-5.4.beta0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[4]>\", line 1, in <module>\n        oddprime_factors.cache[(Integer(25),),()]###line 15:_sage_    >>> oddprime_factors.cache[(25,),()]\n    KeyError: ((25,), ())\n```\n\nThe \"Killing any remaining workers\" comes from a parallel computation, isn't it? The `precompute()` method is parallel. Let us see whether it also fails in an interactive session under gdb!",
+    "created_at": "2012-09-06T15:46:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4034",
+    "user": "SimonKing"
+}
+```
 
-It seems to me that it is _not_ a side effect. Namely, I put
+It seems to me that it is *not* a side effect. Namely, I put
 
 ```
 class Foo:
@@ -4418,7 +7680,7 @@ class Foo:
         pass
 ```
 
-into a file and run `sage -t` on it. All tests pass -- *__BUT__* running `sage -t -gdb`, I get the same error as in cachefunc.pyx, where the test above is just one among many other tests:
+into a file and run `sage -t` on it. All tests pass -- **__BUT__** running `sage -t -gdb`, I get the same error as in cachefunc.pyx, where the test above is just one among many other tests:
 
 ```
 Failed example:
@@ -4447,9 +7709,20 @@ Exception raised:
 The "Killing any remaining workers" comes from a parallel computation, isn't it? The `precompute()` method is parallel. Let us see whether it also fails in an interactive session under gdb!
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-06 15:51:38
+archive/issue_comments_004035.json:
+```json
+{
+    "body": "Yes, it even works (i.e. reproduces the error) interactively, provided one runs \"sage -gdb\"!\n\n```\nsage: @cached_function\n....: def oddprime_factors(n):\n....:     l = [p for p,e in factor(n) if p != 2]\n....:     return len(l)\n....: \nsage: oddprime_factors.precompute(range(1,100), 4)\n[Errno 4] Interrupted system call\nKilling any remaining workers...\nsage: oddprime_factors.precompute(range(1,100), 6)\n[Errno 4] Interrupted system call\nKilling any remaining workers...\nsage: oddprime_factors.precompute(range(1,100))\n[Errno 4] Interrupted system call\nKilling any remaining workers...\nsage: len(oddprime_factors.cache)\n0\n```\n\nInterestingly, using `range(1,99)` (which made the problem vanish in the doctest) does not work interactively.",
+    "created_at": "2012-09-06T15:51:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4035",
+    "user": "SimonKing"
+}
+```
 
 Yes, it even works (i.e. reproduces the error) interactively, provided one runs "sage -gdb"!
 
@@ -4475,38 +7748,82 @@ sage: len(oddprime_factors.cache)
 Interestingly, using `range(1,99)` (which made the problem vanish in the doctest) does not work interactively.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 13:24:08
+archive/issue_comments_004036.json:
+```json
+{
+    "body": "I tried inserting print statements into sage.parallel.use_fork.p_iter_fork._subprocess.\n\nThe print statements *are* executed when successfully running the example in an interactive session.\n\nThey are *not* executed when running it interactively under gdb. Hence, _subprocess (which contains the invalidation of pexpect interfaces) is not involved in the interactive error under gdb.\n\nThey *are* executed when running the doctests. The test then fails (because of the unexpected print statements), but there is no signal 11.\n\nWhat could that mean? Perhaps we actually have two independent problems in the same example: One appears in a gdb'ed interactive session and can be fixed with #13437. The other appears with `sage -t` and remains a mystery.",
+    "created_at": "2012-09-07T13:24:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4036",
+    "user": "SimonKing"
+}
+```
 
 I tried inserting print statements into sage.parallel.use_fork.p_iter_fork._subprocess.
 
-The print statements _are_ executed when successfully running the example in an interactive session.
+The print statements *are* executed when successfully running the example in an interactive session.
 
-They are _not_ executed when running it interactively under gdb. Hence, _subprocess (which contains the invalidation of pexpect interfaces) is not involved in the interactive error under gdb.
+They are *not* executed when running it interactively under gdb. Hence, _subprocess (which contains the invalidation of pexpect interfaces) is not involved in the interactive error under gdb.
 
-They _are_ executed when running the doctests. The test then fails (because of the unexpected print statements), but there is no signal 11.
+They *are* executed when running the doctests. The test then fails (because of the unexpected print statements), but there is no signal 11.
 
 What could that mean? Perhaps we actually have two independent problems in the same example: One appears in a gdb'ed interactive session and can be fixed with #13437. The other appears with `sage -t` and remains a mystery.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 13:37:23
+archive/issue_comments_004037.json:
+```json
+{
+    "body": "Perhaps I stand corrected. I inserted print statement in a different location, one of them directly before calling _subprocess. This statement is printed, then interrupted system call strikes.",
+    "created_at": "2012-09-07T13:37:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4037",
+    "user": "SimonKing"
+}
+```
 
 Perhaps I stand corrected. I inserted print statement in a different location, one of them directly before calling _subprocess. This statement is printed, then interrupted system call strikes.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 13:47:30
+archive/issue_comments_004038.json:
+```json
+{
+    "body": "I forgot that _subprocess redirects stdout. Sorry for the noise.",
+    "created_at": "2012-09-07T13:47:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4038",
+    "user": "SimonKing"
+}
+```
 
 I forgot that _subprocess redirects stdout. Sorry for the noise.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 14:00:50
+archive/issue_comments_004039.json:
+```json
+{
+    "body": "I think now I located the problem exposed by a gdb'ed interactive session. When not redirecting stdout, a print statement before the last line of the \"finally:\" clause of _subprocess is executed. But a print statement inserted right after the call to `self._subprocess(f, dir, v[0])` in `p_iter_fork.__call__` is not executed.\n\nThere is only one line of code between the executed and the not-executed print statements: The last line of `_subprocess`' \"finally:\" clause, namely\n\n```\n            os._exit(0)\n```\n\n\nQuestion to the experts: What could possible go wrong in `os._exit(0)`?",
+    "created_at": "2012-09-07T14:00:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4039",
+    "user": "SimonKing"
+}
+```
 
 I think now I located the problem exposed by a gdb'ed interactive session. When not redirecting stdout, a print statement before the last line of the "finally:" clause of _subprocess is executed. But a print statement inserted right after the call to `self._subprocess(f, dir, v[0])` in `p_iter_fork.__call__` is not executed.
 
@@ -4520,9 +7837,20 @@ There is only one line of code between the executed and the not-executed print s
 Question to the experts: What could possible go wrong in `os._exit(0)`?
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-07 15:50:02
+archive/issue_comments_004040.json:
+```json
+{
+    "body": "Replying to [comment:256 SimonKing]:\n> There is only one line of code between the executed and the not-executed print statements: The last line of `_subprocess`' \"finally:\" clause, namely\n> {{{\n>             os._exit(0)\n> }}}\n> Question to the experts: What could possible go wrong in `os._exit(0)`?\n\nOh dear. That sounds like `_subprocess` is not returning at all! Let's see what the documentation says:\n\n```\nos._exit(n)\n    Exit the process with status n, without calling cleanup handlers,\n    flushing stdio buffers, etc.\n```\n\nCould it be we found a bug in the OSX kernel? A system call that doesn't return?\n\nMore seriously, it seems rather reassuring that the statement that comes after you tell the process to quit, doesn't get executed. It seems to me you've just ruled out it's not the child that SEGV-ing -- it's the parent.\n\nIn fact, we could have known that. In the doctest of `sage.parallel.decorate.Fork` there is an explicit test that shows a child can segfault with no detrimental effect (If you instrument `sage-doctest` to not hide stderr, it's scary to see the backtrace come by, but the doctest passes without problem). The fact that the doctest framework can get its hand on the \"11\" exit code shows it's the parent that generates it. Why do you think this happens due to parallel at all? Under gdb, the test does not segfault, so you're looking at different behaviour. I don't think parallel is implicated in this at all.\n\nReally, *strip away the doctesting layer*! If you read `sage-doctest`, you'll see it produces a straight python file that it then executes straight using python, with IO all redirected. Get that file and run it directly, without redirecting IO. Setting `verbose` doesn't just change the IO redirection in `sage-doctest`. It also gets written into that file and hence can influence behaviour there. So with `sage -t` and `sage -t --verbose` you're really running different code. You want the code that `sage -t` generates with the IO redirection that `sage -t -verbose` does. At that point you might as well just get `sage -t` out of the way completely.\n\nIf you want to help people in the future, patch `sage -t` to have a flag `--keep`, to not throw away any of the temporary files it produces, so that you can pick through the remainders.\n\n--------\n\nUsing `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.",
+    "created_at": "2012-09-07T15:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4040",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:256 SimonKing]:
 > There is only one line of code between the executed and the not-executed print statements: The last line of `_subprocess`' "finally:" clause, namely
@@ -4545,7 +7873,7 @@ More seriously, it seems rather reassuring that the statement that comes after y
 
 In fact, we could have known that. In the doctest of `sage.parallel.decorate.Fork` there is an explicit test that shows a child can segfault with no detrimental effect (If you instrument `sage-doctest` to not hide stderr, it's scary to see the backtrace come by, but the doctest passes without problem). The fact that the doctest framework can get its hand on the "11" exit code shows it's the parent that generates it. Why do you think this happens due to parallel at all? Under gdb, the test does not segfault, so you're looking at different behaviour. I don't think parallel is implicated in this at all.
 
-Really, _strip away the doctesting layer_! If you read `sage-doctest`, you'll see it produces a straight python file that it then executes straight using python, with IO all redirected. Get that file and run it directly, without redirecting IO. Setting `verbose` doesn't just change the IO redirection in `sage-doctest`. It also gets written into that file and hence can influence behaviour there. So with `sage -t` and `sage -t --verbose` you're really running different code. You want the code that `sage -t` generates with the IO redirection that `sage -t -verbose` does. At that point you might as well just get `sage -t` out of the way completely.
+Really, *strip away the doctesting layer*! If you read `sage-doctest`, you'll see it produces a straight python file that it then executes straight using python, with IO all redirected. Get that file and run it directly, without redirecting IO. Setting `verbose` doesn't just change the IO redirection in `sage-doctest`. It also gets written into that file and hence can influence behaviour there. So with `sage -t` and `sage -t --verbose` you're really running different code. You want the code that `sage -t` generates with the IO redirection that `sage -t -verbose` does. At that point you might as well just get `sage -t` out of the way completely.
 
 If you want to help people in the future, patch `sage -t` to have a flag `--keep`, to not throw away any of the temporary files it produces, so that you can pick through the remainders.
 
@@ -4554,14 +7882,38 @@ If you want to help people in the future, patch `sage -t` to have a flag `--keep
 Using `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 16:22:57
+archive/issue_comments_004041.json:
+```json
+{
+    "body": "Temporary file created by sage -t on a test that fails with gdb",
+    "created_at": "2012-09-07T16:22:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4041",
+    "user": "SimonKing"
+}
+```
 
 Temporary file created by sage -t on a test that fails with gdb
 
 
+
 ---
+
+archive/issue_comments_004042.json:
+```json
+{
+    "body": "Attachment\n\nI am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n\nThe original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.",
+    "created_at": "2012-09-07T16:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4042",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -4570,9 +7922,20 @@ I am not totally sure if I understand what you mean: You say it would be interes
 The original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 16:26:49
+archive/issue_comments_004043.json:
+```json
+{
+    "body": "Since the attachments changed, a message for the patchbots:\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-09-07T16:26:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4043",
+    "user": "SimonKing"
+}
+```
 
 Since the attachments changed, a message for the patchbots:
 
@@ -4581,9 +7944,20 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 16:44:29
+archive/issue_comments_004044.json:
+```json
+{
+    "body": "Replying to [comment:257 nbruin]:\n> Using `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.\n\nChanging `os._exit` into `os.exit` won't work. The example `oddprime_factors.precompute(range(1,99))` seems to hang with that change.",
+    "created_at": "2012-09-07T16:44:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4044",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:257 nbruin]:
 > Using `os.exit` versus `os._exit`: I can see why one might have thought that's a good idea. We got what we came for (the function got executed and the result is stored in an `.sobj` -- this should really be communicated via a pipe to the parent, not via a temporary file), so why risk fouling it up by doing more just to exit? However, if someone uses this for side-effects (write to some shared file) it could be the buffers don't get flushed. On the other hand, code is executing in parallel here (that's the point), so one would probably already run into problems.
@@ -4591,9 +7965,20 @@ Replying to [comment:257 nbruin]:
 Changing `os._exit` into `os.exit` won't work. The example `oddprime_factors.precompute(range(1,99))` seems to hang with that change.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-07 16:50:08
+archive/issue_comments_004045.json:
+```json
+{
+    "body": "Replying to [comment:258 SimonKing]:\n> I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n> \n> The original file was as in comment:251. It passes when running `sage -t`, but fails when running `sage -t -gdb`.\n\nBut doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.",
+    "created_at": "2012-09-07T16:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4045",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:258 SimonKing]:
 > I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].
@@ -4603,16 +7988,38 @@ Replying to [comment:258 SimonKing]:
 But doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.
 
 
+
 ---
 
-Comment by vbraun created at 2012-09-07 17:13:17
+archive/issue_comments_004046.json:
+```json
+{
+    "body": "The forked children inherit the parent `atexit` handlers, this is why we get out with `os._exit`. Calling the regular `os.exit` might delete the parent's temp files etc.",
+    "created_at": "2012-09-07T17:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4046",
+    "user": "vbraun"
+}
+```
 
 The forked children inherit the parent `atexit` handlers, this is why we get out with `os._exit`. Calling the regular `os.exit` might delete the parent's temp files etc.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-07 17:32:46
+archive/issue_comments_004047.json:
+```json
+{
+    "body": "Replying to [comment:261 nbruin]:\n> Replying to [comment:258 SimonKing]:\n> > I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n\nThat's not the entire file, so even if you run this through python and not get a SEGV, that doesn't show anything. Since the GDB problem and SEGV are likely independent, you may well have cut out the doctest that generates the SEGV (or changed the memory conditions under which it runs).",
+    "created_at": "2012-09-07T17:32:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4047",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:261 nbruin]:
 > Replying to [comment:258 SimonKing]:
@@ -4621,9 +8028,20 @@ Replying to [comment:261 nbruin]:
 That's not the entire file, so even if you run this through python and not get a SEGV, that doesn't show anything. Since the GDB problem and SEGV are likely independent, you may well have cut out the doctest that generates the SEGV (or changed the memory conditions under which it runs).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 18:00:49
+archive/issue_comments_004048.json:
+```json
+{
+    "body": "Replying to [comment:261 nbruin]:\n> But doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.\n\n\n```\nbash-3.2$ ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py \n```\n\n\nSo, running it in pure python works, of course.\n\nAccording to the sage-doctest script, I thought that the command to run the test under gdb is as follows:\n\n```\nbash-3.2$ gdb --args ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py \nGNU gdb 6.3.50-20050815 (Apple version gdb-1515) (Sat Jan 15 08:33:48 UTC 2011)\nCopyright 2004 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-apple-darwin\"...\"/scratch/sking/sage-5.4.beta0/sage\": not in executable format: File format not recognized\n\n(gdb) r\nStarting program:  \nNo executable file specified.\nUse the \"file\" or \"exec-file\" command.\n```\n\nSo, it didn't work.\n\nWhat is the command to run the test in python under gdb?",
+    "created_at": "2012-09-07T18:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4048",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:261 nbruin]:
 > But doctesting doesn't run it through `sage`. It executes `python failing_test_under_gdb.py`. if I'm not mistaken. If you can run the exact same command and input file that `sage -t` runs and not get a segv where `sage -t` does, there is something really strange. I guess you might want to control for environment variables as well, but other than that there should really not be a difference.
@@ -4659,9 +8077,20 @@ So, it didn't work.
 What is the command to run the test in python under gdb?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 18:02:36
+archive/issue_comments_004049.json:
+```json
+{
+    "body": "Replying to [comment:263 nbruin]:\n> Replying to [comment:261 nbruin]:\n> > Replying to [comment:258 SimonKing]:\n> > > I am not totally sure if I understand what you mean: You say it would be interesting to see the temporary file that is created by `sage -t`? Then: see [attachment:failing_test_under_gdb.py].\n> \n> That's not the entire file\n\nWhy do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.",
+    "created_at": "2012-09-07T18:02:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4049",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:263 nbruin]:
 > Replying to [comment:261 nbruin]:
@@ -4673,9 +8102,20 @@ Replying to [comment:263 nbruin]:
 Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 18:12:36
+archive/issue_comments_004050.json:
+```json
+{
+    "body": "Replying to [comment:264 SimonKing]:\n> {{{\n> bash-3.2$ gdb --args ../../sage -python -t ~/SAGE/work/signal11/my_test_86673.py \n> ...\n> }}}\nShould have been\n\n```\nbash-3.2$ gdb --args ../../local/bin/python -t ~/SAGE/work/signal11/my_test_86673.py \n```\n\n\nHowever, running the test won't work:\n\n```\n(gdb) r\nStarting program: /scratch/sking/sage-5.4.beta0/local/bin/python -t /Users/SimonKing/SAGE/work/signal11/my_test_86673.py\nReading symbols for shared libraries .++++..... done\nTraceback (most recent call last):\n  File \"/Users/SimonKing/SAGE/work/signal11/my_test_86673.py\", line 6, in <module>\n    from sage.all_cmdline import *; \n  File \"/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/all.py\", line 47, in <module>\n    raise RuntimeError(\"To use the Sage libraries, set the environment variable SAGE_ROOT to the Sage build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib\")\nRuntimeError: To use the Sage libraries, set the environment variable SAGE_ROOT to the Sage build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib\n\nProgram exited with code 01.\n(gdb) \n```\n\n\nSo, it needs to be executed inside a Sage shell - but then the test fails in the exactly same way as with sage -t, which shouldn't be a surprise.",
+    "created_at": "2012-09-07T18:12:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4050",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:264 SimonKing]:
 > {{{
@@ -4712,16 +8152,38 @@ Program exited with code 01.
 So, it needs to be executed inside a Sage shell - but then the test fails in the exactly same way as with sage -t, which shouldn't be a surprise.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 18:16:04
+archive/issue_comments_004051.json:
+```json
+{
+    "body": "PS: Setting SAGE_ROOT and LD_LIBRARY_PATH as indicated by the error message did not help.",
+    "created_at": "2012-09-07T18:16:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4051",
+    "user": "SimonKing"
+}
+```
 
 PS: Setting SAGE_ROOT and LD_LIBRARY_PATH as indicated by the error message did not help.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-07 21:41:50
+archive/issue_comments_004052.json:
+```json
+{
+    "body": "Replying to [comment:265 SimonKing]:\n\n> Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.\n\nI did the same but got a bigger file (I'm not attaching it because with the hardcoded paths it's useless, so you have to extract it yourself anyway)\n\n```\nduke sage/5.3rc1$ wc failing_test_under_gdb.py \n  96  283 3714 failing_test_under_gdb.py\nduke sage/5.3rc1$ wc cachefunc_3730.py \n 2592 10019 99307 cachefunc_3730.py\n```\n\nso I suspect that you edited it. However, if your shorter file is still capable of segfaulting, that's fine, of course.\n\nAs you remark, it should be run in a sage shell:\n\n```\nduke sage/5.3rc1$ ./sage -sh\n\nStarting subshell with Sage environment variables set.  Don't forget\nto exit when you are done.  Beware:\n * Do not do anything with other copies of Sage on your system.\n * Do not use this for installing Sage packages using \"sage -i\" or for\n   running \"make\" at Sage's root directory.  These should be done\n   outside the Sage shell.\n\nBypassing shell configuration files...\n\nNote: SAGE_ROOT=/usr/local/sage/5.3rc1\n> time python cachefunc_3730.py \n5.553u 2.243s 0:10.39 74.9%\t0+0k 1128+17624io 1pf+0w\n```\n\nIf you do this on the machine where you get the SEGV (i.e., bsd) in the doctest,\nyou should really get a SEGV from this as well. If you don't, we should probably\nstart taking cosmic radiation into account as well.\n\nFor running under gdb:\n\n```\n> gdb --args python -t cachefunc_3730.py\n[...runs fine...]\n```\n\nwe already know that that prevents the SEGV from happening.\n\nThe key is that now you have a single file, `cachefunc_3730.py` for me, but\nyou'd have a different name, which you can tweak bit by bit. As we've seen,\nrunning `sage -t --verbose` also prevents the SEGV, so setting\n\n```\nif __name__ ==  '__main__':\n    verbose = True\n```\n\nwill likely make the SEGV go away. However, you have finer control now. By\ntweaking the file bit by bit you can probably zoom in on what goes wrong. Plus,\nseeing the traceback from an unredirected stderr might already give you a hint\nof what's going wrong.\n\nMy bet is that all doctests pass and that something goes wrong in `quit_sage`, where the flurry of deletions is likely double-free something or reference an invalid pointer.",
+    "created_at": "2012-09-07T21:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4052",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:265 SimonKing]:
 
@@ -4787,9 +8249,20 @@ of what's going wrong.
 My bet is that all doctests pass and that something goes wrong in `quit_sage`, where the flurry of deletions is likely double-free something or reference an invalid pointer.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-07 22:10:51
+archive/issue_comments_004053.json:
+```json
+{
+    "body": "Replying to [comment:268 nbruin]:\n> Replying to [comment:265 SimonKing]:\n> \n> > Why do you think so? It is the temporary file created by sage-doctest. I had modified sage-doctest so that the location of the temporary file is shown, instead of deleting the file - hence, I could copy it and post it here.\n> \n> I did the same but got a bigger file (I'm not attaching it because with the hardcoded paths it's useless, so you have to extract it yourself anyway)\n> {{{\n> duke sage/5.3rc1$ wc failing_test_under_gdb.py \n>   96  283 3714 failing_test_under_gdb.py\n> duke sage/5.3rc1$ wc cachefunc_3730.py \n>  2592 10019 99307 cachefunc_3730.py\n> }}}\n> so I suspect that you edited it. However, if your shorter file is still capable of segfaulting, that's fine, of course.\n\nAs I said: It is the file from comment:251, it is *not* cachefunc.pyx, but just a single test from cachefunc.pyx that suffices to trigger the error (which also demonstrates that it is not a side effect of other tests).\n\n> If you do this on the machine where you get the SEGV (i.e., bsd) in the doctest,\n\nDo I get SEGV? Is that a synonym of signal 11? \n\n> For running under gdb:\n> {{{\n> > gdb --args python -t cachefunc_3730.py\n> [...runs fine...]\n> }}}\n> we already know that that prevents the SEGV from happening.\n \nIs it preventing it from happening? I thought we have found that some signal problem is still present for sub-processes created with p_iter_fork.",
+    "created_at": "2012-09-07T22:10:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4053",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:268 nbruin]:
 > Replying to [comment:265 SimonKing]:
@@ -4805,7 +8278,7 @@ Replying to [comment:268 nbruin]:
 > }}}
 > so I suspect that you edited it. However, if your shorter file is still capable of segfaulting, that's fine, of course.
 
-As I said: It is the file from comment:251, it is _not_ cachefunc.pyx, but just a single test from cachefunc.pyx that suffices to trigger the error (which also demonstrates that it is not a side effect of other tests).
+As I said: It is the file from comment:251, it is *not* cachefunc.pyx, but just a single test from cachefunc.pyx that suffices to trigger the error (which also demonstrates that it is not a side effect of other tests).
 
 > If you do this on the machine where you get the SEGV (i.e., bsd) in the doctest,
 
@@ -4821,9 +8294,20 @@ Do I get SEGV? Is that a synonym of signal 11?
 Is it preventing it from happening? I thought we have found that some signal problem is still present for sub-processes created with p_iter_fork.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-07 22:41:21
+archive/issue_comments_004054.json:
+```json
+{
+    "body": "Replying to [comment:269 SimonKing]:\n\n> Do I get SEGV? Is that a synonym of signal 11? \n\nAh, yes. SIGSEGV (a segmentation fault) gets communicated via a signal 11.\n\n> Is it preventing it from happening? I thought we have found that some signal problem is still present for sub-processes created with p_iter_fork.\n\nRight. But signal handlers and segfaults are only related to the extent that a segmentation fault gets communicated via a signal. So being killed because of a \"signal 11\" doesn't particularly indicate any problem with stray signals or signal handlers. It's probably just a plain memory fault. At this point I think there is little ground to assume the SIGABRT issues observed are related to the segmentation fault. In particular because #13437 fixes one and not the other.\nEven if there is a connection, it doesn't seem that exploring a hypothetical one is going to help much in tracing the problem. If\n\n```\n$ sage -sh\n...\n> python -t failing_test_under_gdb.py\n```\n\nis giving you a segfault, perhaps you can get that to dump core? (if I send\n`kill -11 [python process]` I get a core dumped if I unset the limit). Alternatively, perhaps\n\n```\n> sage failing_test_under_gdb.py\n```\n\nis close enough that it still segfaults. Sage installs a more useful SIGSEGV handler that at least gives you a traceback on stderr. Apparently involving gdb changes things too much to still observe the error, so from that point it's just tweaking the file and/or sage to see where the error is originating.",
+    "created_at": "2012-09-07T22:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4054",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:269 SimonKing]:
 
@@ -4852,9 +8336,20 @@ is giving you a segfault, perhaps you can get that to dump core? (if I send
 is close enough that it still segfaults. Sage installs a more useful SIGSEGV handler that at least gives you a traceback on stderr. Apparently involving gdb changes things too much to still observe the error, so from that point it's just tweaking the file and/or sage to see where the error is originating.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:15:27
+archive/issue_comments_004055.json:
+```json
+{
+    "body": "Replying to [comment:270 nbruin]:\n> Replying to [comment:269 SimonKing]:\n> If\n> {{{\n> $ sage -sh\n> ...\n> > python -t failing_test_under_gdb.py\n> }}}\n> is giving you a segfault,\n\nIt isn't. As I stated above, with the short test file written down in comment:251 I can reproduce the failure occurring with `sage -t -gdb`, but it passes with `sage -t`. And so does its pure python version.\n\nIn other words, I'll now try to get the python version of the full test of cachefunc.pyx.\n\n> perhaps you can get that to dump core? (if I send\n> `kill -11 [python process]` I get a core dumped if I unset the limit). \n\nCould you elaborate more? By `[python process]` you mean the pid of the test, right? How can I find out the pid in the few seconds that the test takes before failing?",
+    "created_at": "2012-09-08T06:15:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4055",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:270 nbruin]:
 > Replying to [comment:269 SimonKing]:
@@ -4876,9 +8371,20 @@ In other words, I'll now try to get the python version of the full test of cache
 Could you elaborate more? By `[python process]` you mean the pid of the test, right? How can I find out the pid in the few seconds that the test takes before failing?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:19:46
+archive/issue_comments_004056.json:
+```json
+{
+    "body": "Replying to [comment:271 SimonKing]:\n> In other words, I'll now try to get the python version of the full test of cachefunc.pyx.\n\nI tried to modify the function delete_tmpfiles() in sage-doctest such that the temporary files are preserved, but apparently the function is not executed. That may indicate that in fact the test framework fails, not the test.",
+    "created_at": "2012-09-08T06:19:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4056",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:271 SimonKing]:
 > In other words, I'll now try to get the python version of the full test of cachefunc.pyx.
@@ -4886,14 +8392,38 @@ Replying to [comment:271 SimonKing]:
 I tried to modify the function delete_tmpfiles() in sage-doctest such that the temporary files are preserved, but apparently the function is not executed. That may indicate that in fact the test framework fails, not the test.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:24:58
+archive/issue_comments_004057.json:
+```json
+{
+    "body": "Temporary file created by sage -t that gives signal 11",
+    "created_at": "2012-09-08T06:24:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4057",
+    "user": "SimonKing"
+}
+```
 
 Temporary file created by sage -t that gives signal 11
 
 
+
 ---
+
+archive/issue_comments_004058.json:
+```json
+{
+    "body": "Attachment\n\nWith [attachment:cachefunc_94107.py], I get:\n\n```\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n\n------------------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nSegmentation fault\n```\n\n\nSo, that looks much more expressive than what sage -t reports!\n\nHowever, setting ulimit -c unlimited did not result in a dumped core:\n\n```\n(sage-sh) SimonKing@bsd:sage$ ulimit -c unlimited\n(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py \n...\nSegmentation fault\n(sage-sh) SimonKing@bsd:sage$ ls /cores/\n(sage-sh) SimonKing@bsd:sage$ \n```\n\n\nSo, can you explain how I could get a core dump?\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-09-08T06:32:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4058",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -4934,9 +8464,20 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:39:21
+archive/issue_comments_004059.json:
+```json
+{
+    "body": "Playing around with [attachment:cachefunc_94107.py]:\n\n`sage cachefunc_94107.py` also results in that segfault.\n\nStarting sage and then attaching cachefunc_94107.py to the interactive session, I get:\n\n```\nsage: attach ~/SAGE/work/signal11/cachefunc_94107.py\n---------------------------------------------------------------------------\nSystemExit                                Traceback (most recent call last)\n\n/scratch/sking/sage-5.4.beta0/devel/sage-main/<ipython console> in <module>()\n\n/scratch/sking/sage-5.4.beta0/local/lib/python2.7/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1646 \n   1647     if fpath.endswith('.py'):\n-> 1648         execfile(fpath, globals)\n   1649     elif fpath.endswith('.sage'):\n   1650         if (attach and attach_debug_mode) or ((not attach) and load_debug_mode):\n\n/Users/SimonKing/SAGE/work/signal11/cachefunc_94107.py in <module>()\n   2588         sys.exit(255)\n   2589     quit_sage(verbose=False)\n   2590     if runner.failures > 254:\n   2591         sys.exit(254)\n-> 2592     sys.exit(runner.failures)\n\nSystemExit: 0\nType %exit or %quit to exit IPython (%Exit or %Quit do so unconditionally).\nsage: \n```\n\nSo, up to here, it more or less looks normal. But when I press Ctrl-D to leave the interactive session, I get:\n\n```\nExiting Sage (CPU time 0m0.70s, Wall time 0m30.10s).\n/scratch/sking/sage-5.4.beta0/spkg/bin/sage: line 336: 97357 Segmentation fault      sage-ipython \"$@\" -i\n```\n\nThe \"Exiting Sage ...\" is printed at the beginning of sage.all.quit_sage. Hence, it now seems that (again) leaving Sage is the problem.",
+    "created_at": "2012-09-08T06:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4059",
+    "user": "SimonKing"
+}
+```
 
 Playing around with [attachment:cachefunc_94107.py]:
 
@@ -4980,9 +8521,20 @@ Exiting Sage (CPU time 0m0.70s, Wall time 0m30.10s).
 The "Exiting Sage ..." is printed at the beginning of sage.all.quit_sage. Hence, it now seems that (again) leaving Sage is the problem.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:49:12
+archive/issue_comments_004060.json:
+```json
+{
+    "body": "Nils, I have absolutely no idea how you made messages show up in my screen session on bsd.math, and I also have no idea how to answer.\n\nWhat I did now: I edited the test file, so that it ends with\n\n```python\n    except BaseException, msg:\n        print \"an exception has occured\"\n        print msg\n        #quit_sage(verbose=False)\n        import traceback\n        traceback.print_exc(file=sys.stdout)\n        #sys.exit(255)\n    print \"we would now quit, but we don't\"\n    #quit_sage(verbose=False)\n    #if runner.failures > 254:\n    #    sys.exit(254)\n    #sys.exit(runner.failures)\n```\n\nThen, attaching the file and quitting sage works fine, and an exception does not occur. No idea what that means, though.",
+    "created_at": "2012-09-08T06:49:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4060",
+    "user": "SimonKing"
+}
+```
 
 Nils, I have absolutely no idea how you made messages show up in my screen session on bsd.math, and I also have no idea how to answer.
 
@@ -5006,41 +8558,96 @@ What I did now: I edited the test file, so that it ends with
 Then, attaching the file and quitting sage works fine, and an exception does not occur. No idea what that means, though.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 06:55:58
+archive/issue_comments_004061.json:
+```json
+{
+    "body": "Sorry for the noise. The segmentation fault already occurs when doing `quit_sage()` in an interactive session, and then quits sage (which implies executing `quit_sage()` again).",
+    "created_at": "2012-09-08T06:55:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4061",
+    "user": "SimonKing"
+}
+```
 
 Sorry for the noise. The segmentation fault already occurs when doing `quit_sage()` in an interactive session, and then quits sage (which implies executing `quit_sage()` again).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 07:12:43
+archive/issue_comments_004062.json:
+```json
+{
+    "body": "A question, perhaps slightly off-topic (or not?): Do we want to change quit_sage such that using it twice does not result in a segfault but only in a \"harmless\" error (or better: In no error at all)?\n\nI know, one is not supposed to call quit_sage() explicitly (even though it appears in the global name space of interactive sessions), but perhaps it could be made safer.",
+    "created_at": "2012-09-08T07:12:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4062",
+    "user": "SimonKing"
+}
+```
 
 A question, perhaps slightly off-topic (or not?): Do we want to change quit_sage such that using it twice does not result in a segfault but only in a "harmless" error (or better: In no error at all)?
 
 I know, one is not supposed to call quit_sage() explicitly (even though it appears in the global name space of interactive sessions), but perhaps it could be made safer.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 07:21:47
+archive/issue_comments_004063.json:
+```json
+{
+    "body": "Ah! If one does quit_sage() in an interactive session and then quits sage, the segfault occurs in _unsafe_deallocate_pari_stack. That problem is fixed in another patch of mine, namely [at #12215](http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac12215_segfault_fixes.patch).",
+    "created_at": "2012-09-08T07:21:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4063",
+    "user": "SimonKing"
+}
+```
 
 Ah! If one does quit_sage() in an interactive session and then quits sage, the segfault occurs in _unsafe_deallocate_pari_stack. That problem is fixed in another patch of mine, namely [at #12215](http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac12215_segfault_fixes.patch).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 07:33:35
+archive/issue_comments_004064.json:
+```json
+{
+    "body": "If one replaces _unsafe_deallocate_pari_stack by `__dealloc__` (as suggested by #12215), the segfault created by manually using quit_sage() has moved to `sage.rings.integer.clear_mpz_globals()`. I guess that function has to do some checks before calling free.\n\nAnyway. With the change to pari, one still has the signal 11 problem in sage -t sage/misc/cachefunc.pyx, as before.",
+    "created_at": "2012-09-08T07:33:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4064",
+    "user": "SimonKing"
+}
+```
 
 If one replaces _unsafe_deallocate_pari_stack by `__dealloc__` (as suggested by #12215), the segfault created by manually using quit_sage() has moved to `sage.rings.integer.clear_mpz_globals()`. I guess that function has to do some checks before calling free.
 
 Anyway. With the change to pari, one still has the signal 11 problem in sage -t sage/misc/cachefunc.pyx, as before.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-08 07:46:53
+archive/issue_comments_004065.json:
+```json
+{
+    "body": "I don't think that `quit_sage()` is the cause. Here's why. When I run `python cachfunc*.py` I observe that the segfault is happening during the actual doctests. In fact, it can happen in `example_27`.\nI've changed the doctests there to fail, so that non-verbose output tells me what happens:\n\n```\n...\ndef example_27():       r\"\"\">>> set_random_seed(0L)\n\n>>> change_warning_output(sys.stdout)\n\n\n        Call the cached method without using the cache.\n\n        EXAMPLE::\n\n            >>> 1\n            DO WE SEE THIS?\n            >>> P = QQ['a, b, c, d']; (a, b, c, d,) = P._first_ngens(4)###line 1038:_sage_    >>> P.<a,b,c,d> = QQ[]\n            WE DO NOT SEE THIS\n...\n```\n\nWhen I run that, the (added) doctest fails visibly on `DO WE SEE THIS?` but the next line does not fail visibly anymore. That's not to say that that line has the bug in it. It just happens to get trapped in whatever memory corruption has happened before. So at least we know that whatever causes the corruption, it's executed before that point.\n\nThe actual trigger point may not bear real information. For instance, if I edit some doctests in e.g. example_17 to fail, I do get the printed failures but no segfault at all. That is consistent with `--verbose` making the segfault not happen in a way.\n\nIn any case, it seems that in an interactive session the segfault trigger gets postponed even further and only happens in `quit_sage()`. But that doesn't mean that `quit_sage()` is to blame.",
+    "created_at": "2012-09-08T07:46:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4065",
+    "user": "nbruin"
+}
+```
 
 I don't think that `quit_sage()` is the cause. Here's why. When I run `python cachfunc*.py` I observe that the segfault is happening during the actual doctests. In fact, it can happen in `example_27`.
 I've changed the doctests there to fail, so that non-verbose output tells me what happens:
@@ -5070,9 +8677,20 @@ The actual trigger point may not bear real information. For instance, if I edit 
 In any case, it seems that in an interactive session the segfault trigger gets postponed even further and only happens in `quit_sage()`. But that doesn't mean that `quit_sage()` is to blame.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-08 08:19:27
+archive/issue_comments_004066.json:
+```json
+{
+    "body": "Continuing on the bisection tour: While the argument above was sound (the memory corruption must happen before the segfault), the following is a heuristic: We observed that letting a doctest print/fail early in the file prevents the segfault from happening. This could be because such a print changes the memory layout (triggers a GC or something like that) and hence the corruption that is still to come, happens in a different place and doesn't lead to a segfault. This idea seems surprisingly robust in practice: If you add failing doctests below a certain point, you have the segfault in the place pointed out above. If you add failing doctests before a certain point, no segfault happens. The hypothesis is now that the crossover point is where the corruption happens. It's in example_21:\n\n```\n...\n        This class is a pickle. However, sometimes, pickles\n        need to be pickled another time.\n\n        TEST::\n\n            >>> PF = WeylGroup(['A',Integer(3)]).pieri_factors()###line 846:_sage_    >>> PF = WeylGroup(['A',3]).pieri_factors()\n            >>> a = PF.an_element()###line 847:_sage_    >>> a = PF.an_element()\n            >>> 1\n            NOT THIS\n            >>> a.bruhat_lower_covers()###line 848:_sage_    >>> a.bruhat_lower_covers()\n...\n```\n\nWith this in place, a segfault still happens. If I move the failing doctest before `PF.an_element`, we don't get a segfault. So perhaps that routine is to blame? Missing refcount increase perhaps?\n\nOnce again, this is only heuristic! I have no proof. It's just that around this location, segfaulting seems to react to changes.",
+    "created_at": "2012-09-08T08:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4066",
+    "user": "nbruin"
+}
+```
 
 Continuing on the bisection tour: While the argument above was sound (the memory corruption must happen before the segfault), the following is a heuristic: We observed that letting a doctest print/fail early in the file prevents the segfault from happening. This could be because such a print changes the memory layout (triggers a GC or something like that) and hence the corruption that is still to come, happens in a different place and doesn't lead to a segfault. This idea seems surprisingly robust in practice: If you add failing doctests below a certain point, you have the segfault in the place pointed out above. If you add failing doctests before a certain point, no segfault happens. The hypothesis is now that the crossover point is where the corruption happens. It's in example_21:
 
@@ -5096,9 +8714,20 @@ With this in place, a segfault still happens. If I move the failing doctest befo
 Once again, this is only heuristic! I have no proof. It's just that around this location, segfaulting seems to react to changes.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-08 08:47:00
+archive/issue_comments_004067.json:
+```json
+{
+    "body": "\n```\nsage: PF = WeylGroup(['A',3]).pieri_factors()\nsage: %time a = PF.an_element()\n```\n\nI think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.\n\nFurther desperate facts that may or may not be relevant:\n- if you make `TripleDict` strong on *any* of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.\n\n- if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:\n\n```\nset([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])\n```\n\nQuite some entries involving \"root systems\" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?",
+    "created_at": "2012-09-08T08:47:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4067",
+    "user": "nbruin"
+}
+```
 
 
 ```
@@ -5109,9 +8738,9 @@ sage: %time a = PF.an_element()
 I think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.
 
 Further desperate facts that may or may not be relevant:
- - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
+- if you make `TripleDict` strong on *any* of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
 
- - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
+- if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
 
 ```
 set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])
@@ -5120,16 +8749,38 @@ set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python
 Quite some entries involving "root systems" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-08 09:10:52
+archive/issue_comments_004068.json:
+```json
+{
+    "body": "If you guys ever solve this problem, you really deserve some kind of medal for Debugging Excellence.",
+    "created_at": "2012-09-08T09:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4068",
+    "user": "jdemeyer"
+}
+```
 
 If you guys ever solve this problem, you really deserve some kind of medal for Debugging Excellence.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 11:10:16
+archive/issue_comments_004069.json:
+```json
+{
+    "body": "Replying to [comment:282 nbruin]:\nImplicated in all of this, by the way:\n> {{{\n> class WeylGroup_gens(ClearCacheOnPickle, UniqueRepresentation, MatrixGroup_gens)\n> }}}\n> Oh this is so cool.\n\nIndeed! Until not so long ago (i.e., before #11115), `ClearCacheOnPickle` was totally broken. And it is originally done for strongly cached methods. But with the patches from here, `UniqueRepresentation` has a weak cache of its `__classcall__`. That might be worth analysing - I am not sure at all whether this can possibly be a problem, because `__classcall__` is a cached_function, while `ClearCacheOnPickle` is supposed to only clear cached_method.\n\n> All our favourites in one place:\n> {{{\n> class MatrixGroup_gens(MatrixGroup_gap)\n> }}}\n> We're wrapping an interface too!\n\n:)",
+    "created_at": "2012-09-08T11:10:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4069",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:282 nbruin]:
 Implicated in all of this, by the way:
@@ -5149,9 +8800,20 @@ Indeed! Until not so long ago (i.e., before #11115), `ClearCacheOnPickle` was to
 :)
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 15:08:46
+archive/issue_comments_004070.json:
+```json
+{
+    "body": "Replying to [comment:282 nbruin]:\n> Oh sigh ... this could be such a red herring. On bsd.math, there is a huge difference between sage versions in how this piece of code behaves:\n> On `sage 5.4.beta0` (with patches):\n> {{{\n> sage: PF = WeylGroup(['A',3]).pieri_factors()\n> sage: %time a = PF.an_element()\n> CPU times: user 0.06 s, sys: 0.05 s, total: 0.11 s\n> Wall time: 43.57 s\n> }}}\n\nThat's strange, but I can not confirm that timing. On bsd.math with patched 5.4.beta0:\n\n```\nsage: PF = WeylGroup(['A',3]).pieri_factors()\nsage: %time a = PF.an_element()\nCPU times: user 0.06 s, sys: 0.05 s, total: 0.11 s\nWall time: 0.75 s\n```\n\n> We're wrapping an interface too! (that sort of explains the anomalous timing. Apparently the particular 5.4b0 build on bsd has a very bad gap?\n\nWorks for me.",
+    "created_at": "2012-09-08T15:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4070",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:282 nbruin]:
 > Oh sigh ... this could be such a red herring. On bsd.math, there is a huge difference between sage versions in how this piece of code behaves:
@@ -5177,9 +8839,20 @@ Wall time: 0.75 s
 Works for me.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 16:47:48
+archive/issue_comments_004071.json:
+```json
+{
+    "body": "Replying to [comment:282 nbruin]:\n> The method eventually called, PF._an_element_, is a very interesting piece of work.\n\nFor the record: It is the generic _an_element_, defined in sage.structure.parent.Parent.",
+    "created_at": "2012-09-08T16:47:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4071",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:282 nbruin]:
 > The method eventually called, PF._an_element_, is a very interesting piece of work.
@@ -5187,9 +8860,20 @@ Replying to [comment:282 nbruin]:
 For the record: It is the generic _an_element_, defined in sage.structure.parent.Parent.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-08 17:21:53
+archive/issue_comments_004072.json:
+```json
+{
+    "body": "Replying to [comment:285 SimonKing]:\n> That's strange, but I can not confirm that timing. On bsd.math with patched 5.4.beta0:\nI cannot anymore either (I've copied your 5.4b0 on bsd). When I try it now, I get timings similar to yours. When I tried I did so repeatedly, with both sage versions.\n\nHowever, the triggering of the segfault still seems to be as reported: Let a doctest fail before `PF._an_element`: no segfault. Otherwise: segfault.",
+    "created_at": "2012-09-08T17:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4072",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:285 SimonKing]:
 > That's strange, but I can not confirm that timing. On bsd.math with patched 5.4.beta0:
@@ -5198,9 +8882,20 @@ I cannot anymore either (I've copied your 5.4b0 on bsd). When I try it now, I ge
 However, the triggering of the segfault still seems to be as reported: Let a doctest fail before `PF._an_element`: no segfault. Otherwise: segfault.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-08 19:36:24
+archive/issue_comments_004073.json:
+```json
+{
+    "body": "OK, in principle it is possible to handle segfaults with code like:\n\n```\nimport signal\nimport os, sys\nimport traceback\ndef handler(a,frm):\n    tb=traceback.extract_stack(frm)\n    traceback.print_tb(tb,sys.stderr)\n    sys.stderr.flush()\n    os._exit(255)\nsignal.signal(signal.SIGSEGV,handler)\n```\n\nOf course, with a serious corruption, it's doubtful that code can run successfully. Indeed, if we equip the doctesting script with it, we don't get useful information. It makes the script loop forever.\n\nI cannot debug on bsd because OSX wants admin credentials. However, I think it is possible to attach gdb to running processes, in which case it might be possible to poke around in the corpse a bit.\n\nSee\n\n```\nbsd.math.washington.edu:/scratch/nbruin/sage-5.4.beta0/segv_handle_infinite_loop.py\n```\n\n\nI've also tried to put `gc.collect()` in the doctest. If you put it early enough in the file (either before or a bit after the `an_element` call), it prevents the segfault. If you put it right before the test where the segfault happens, the collection itself does not lead to a segfault, but a segfault still happens. This is all consistent with a corruption that happens at one point and triggers a fault somewhere else. Is there a way to put a command in the doctest that would drop us into a (python) debugger or a REPL? then we could pick through the memory and see if there's anything unsavoury.",
+    "created_at": "2012-09-08T19:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4073",
+    "user": "nbruin"
+}
+```
 
 OK, in principle it is possible to handle segfaults with code like:
 
@@ -5230,13 +8925,24 @@ bsd.math.washington.edu:/scratch/nbruin/sage-5.4.beta0/segv_handle_infinite_loop
 I've also tried to put `gc.collect()` in the doctest. If you put it early enough in the file (either before or a bit after the `an_element` call), it prevents the segfault. If you put it right before the test where the segfault happens, the collection itself does not lead to a segfault, but a segfault still happens. This is all consistent with a corruption that happens at one point and triggers a fault somewhere else. Is there a way to put a command in the doctest that would drop us into a (python) debugger or a REPL? then we could pick through the memory and see if there's anything unsavoury.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-08 20:15:38
+archive/issue_comments_004074.json:
+```json
+{
+    "body": "I really wonder about the use of `ClearCacheOnPickle` here. Quite simply: `ClearCacheOnPickle` can not work together with a method whose pickling relies on a `__reduce__` method. It will only work for objects that are pickled via `__getstate__`.\n\nIn particular, since `loads(dumps(W))` *is* `W`, there is nothing emptied. And even when storing it on disc, the cache is not emptied:\n\n```\nsage: W = WeylGroup(['A',3])\nsage: W.cartan_type      \nCached version of <function cartan_type at 0x10aad5398>\nsage: W.cartan_type.cache\n['A', 3]\nsage: save(W,'tmp')\n```\n\nStart new session\n\n```\nsage: W = load('tmp.sobj')\nsage: W.cartan_type.cache\n['A', 3]\n```\n\n\nHence, it makes absolutely no sense to me that `sage.combinat.root_system.weyl_group.WeylGroup_gens` inherits from `ClearCacheOnPickle` and `UniqueRepresentation` at the same time - both bases are orthogonal. I think `ClearCacheOnPickle` should be removed here.\n\nHowever, as I just tested: Dropping `ClearCacheOnPickle` will not fix the signal 11.",
+    "created_at": "2012-09-08T20:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4074",
+    "user": "SimonKing"
+}
+```
 
 I really wonder about the use of `ClearCacheOnPickle` here. Quite simply: `ClearCacheOnPickle` can not work together with a method whose pickling relies on a `__reduce__` method. It will only work for objects that are pickled via `__getstate__`.
 
-In particular, since `loads(dumps(W))` _is_ `W`, there is nothing emptied. And even when storing it on disc, the cache is not emptied:
+In particular, since `loads(dumps(W))` *is* `W`, there is nothing emptied. And even when storing it on disc, the cache is not emptied:
 
 ```
 sage: W = WeylGroup(['A',3])
@@ -5261,9 +8967,20 @@ Hence, it makes absolutely no sense to me that `sage.combinat.root_system.weyl_g
 However, as I just tested: Dropping `ClearCacheOnPickle` will not fix the signal 11.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-09 07:05:59
+archive/issue_comments_004075.json:
+```json
+{
+    "body": "Oops, wrong button. I meant to reply to [comment:282] but instead I edited the text. You can still read the original under \"previous\". Here is the reply:\n\n```\nsage: PF = WeylGroup(['A',3]).pieri_factors()\nsage: %time a = PF.an_element()\n```\n\nI think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.\n\nFurther desperate facts that may or may not be relevant:\n- if you make `TripleDict` strong on *any* of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.\n\n- if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:\n\n```\nset([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])\n```\n\nQuite some entries involving \"root systems\" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?",
+    "created_at": "2012-09-09T07:05:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4075",
+    "user": "nbruin"
+}
+```
 
 Oops, wrong button. I meant to reply to [comment:282] but instead I edited the text. You can still read the original under "previous". Here is the reply:
 
@@ -5275,9 +8992,9 @@ sage: %time a = PF.an_element()
 I think `an_element` is exonerated. If you replace it with `a=iter(PF).next()` you get the same element and the same segfault.
 
 Further desperate facts that may or may not be relevant:
- - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
+- if you make `TripleDict` strong on *any* of its keys, the segfault disappears. That doesn't say no memory corruption happens of course.
 
- - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
+- if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
 
 ```
 set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python objects of type 'long', Ring of integers modulo 389, Extended weight space over the Rational Field of the Root system of type ['A', 3, 1], Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Multivariate Polynomial Ring in a, b, c, d over Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3], Coroot lattice of the Root system of type ['A', 3, 1], Ambient space of the Root system of type ['A', 3], Set of Python objects of type 'int', Weight lattice of the Root system of type ['A', 3, 1], Vector space of dimension 4 over Rational Field, Weight lattice of the Root system of type ['A', 3], Extended weight lattice of the Root system of type ['A', 3, 1], Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <type 'int'>, Root space over the Rational Field of the Root system of type ['A', 3], Interface to the PARI C library, Integer Ring, Root space over the Rational Field of the Root system of type ['A', 3, 1], The Infinity Ring, Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], Root lattice of the Root system of type ['A', 3, 1], Multivariate Polynomial Ring in x, y, z over Rational Field, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <type 'NoneType'>, Root lattice of the Root system of type ['A', 3], <type 'long'>])
@@ -5286,9 +9003,20 @@ set([Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Set of Python
 Quite some entries involving "root systems" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption. In that case the corruption is happening on all systems. It just only triggers a segfault on bsd. So someone with good valgrind experience wanting to analyze the memory management of the `cachefunc.pyx` doctests?
 
 
+
 ---
 
-Comment by jpflori created at 2012-09-09 09:15:11
+archive/issue_comments_004076.json:
+```json
+{
+    "body": "You mean running the complete cachefunc.pyx doctests?\nOr some stripped file?\nI could give it a try.\n\nIIRC I tried running valgrind on Simon example alone involving the cached oddprime thingy, but with the problematic range, the Valgrind output was just horrible, above 280MB...\nI then only used 1,4 as range without parrallelness (the last parameter in Simon example), but did not really find anything obvious.\n\nI'll retry to valgrind this today or tomorrow.",
+    "created_at": "2012-09-09T09:15:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4076",
+    "user": "jpflori"
+}
+```
 
 You mean running the complete cachefunc.pyx doctests?
 Or some stripped file?
@@ -5300,22 +9028,44 @@ I then only used 1,4 as range without parrallelness (the last parameter in Simon
 I'll retry to valgrind this today or tomorrow.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-09 10:43:20
+archive/issue_comments_004077.json:
+```json
+{
+    "body": "Replying to [comment:290 nbruin]:\n> Further desperate facts that may or may not be relevant:\n>  - if you make `TripleDict` strong on *any* of its keys, the segfault disappears.\n\nDo you really say: *Any*? I ask, because the \"classical\" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item.\n\nHence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the \"non-classical\" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.",
+    "created_at": "2012-09-09T10:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4077",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:290 nbruin]:
 > Further desperate facts that may or may not be relevant:
->  - if you make `TripleDict` strong on _any_ of its keys, the segfault disappears.
+>  - if you make `TripleDict` strong on *any* of its keys, the segfault disappears.
 
-Do you really say: _Any_? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item.
+Do you really say: *Any*? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item.
 
 Hence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the "non-classical" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-09 16:18:16
+archive/issue_comments_004078.json:
+```json
+{
+    "body": "Replying to [comment:290 nbruin]:\n>  - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:\n> ...\n> Quite some entries involving \"root systems\" etc., so it's not so far fetched to think that a bad deletion of something involving the `WeylGroup` causes the memory corruption.\n\nI tried to view it from the opposite direction: When feeding a value into a `TripleDict`, I stored the string representation of the value in a dictionary, indexed by the memory address of the value. And when `TripleDictEraser` was removing an item of a `TripleDict`, I wrote the string representation of the current value being deleted and its original string representation into a file.\n\nResult: When running the tests of cachefunc.pyx, it happens 122 times that `TripleDictEraser` is called. It is called on precisely two kinds of values:\n\n1. The value could be an action. If this is the case, then the underlying set of the action is already garbage collected, at the time when the action is removed from the `TripleDict`.\n2. The value could be a weak reference to a set of homomorphisms. If this is the case, then the weak reference is already dead, at the time when it is removed from the `TripleDict`.\n\nHere is the change that I applied:\n\n```diff\ndiff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx\n--- a/sage/structure/coerce_dict.pyx\n+++ b/sage/structure/coerce_dict.pyx\n@@ -33,7 +33,7 @@\n include \"../ext/python_list.pxi\"\n \n from weakref import KeyedRef\n-\n+tmp_dict = {}\n ############################################\n # The following code is responsible for\n # removing dead references from the cache\n@@ -120,14 +120,21 @@\n         cdef size_t h = (k1 + 13*k2 ^ 503*k3)\n         cdef list bucket = <object>PyList_GET_ITEM(self.D.buckets, h % PyList_GET_SIZE(self.D.buckets))\n         cdef int i\n+        f = file('/Users/SimonKing/SAGE/work/tmp','a')\n         for i from 0 <= i < PyList_GET_SIZE(bucket) by 4:\n             if <size_t><object>PyList_GET_ITEM(bucket, i)==k1 and \\\n                <size_t><object>PyList_GET_ITEM(bucket, i+1)==k2 and \\\n                <size_t><object>PyList_GET_ITEM(bucket, i+2)==k3:\n+                try:\n+                    f.write('%s: '%repr(bucket[i+3]))\n+                except BaseException,msg:\n+                    f.write('%s: '%repr(msg))\n+                f.write( '%s\\n'%tmp_dict[id(bucket[i+3])])\n                 del bucket[i:i+4]\n                 self.D._size -= 1\n                 break\n         try:\n+            f.close()\n             self.D._refcache.__delitem__((k1,k2,k3))\n         except KeyError:\n             pass\n@@ -451,6 +458,10 @@\n         self.set(k1, k2, k3, value)\n \n     cdef set(self, object k1, object k2, object k3, value):\n+        if getattr(value,'__module__',None)=='weakref':\n+            tmp_dict[id(value)] = repr(value())\n+        else:\n+            tmp_dict[id(value)] = repr(value)\n         if self.threshold and self._size > len(self.buckets) * self.threshold:\n             self.resize()\n         cdef size_t h1 = <size_t><void *>k1\n```\n\n\nUnfortunately, with that change, the signal 11 is gone. After all, it is a Heisenbug...\n\nThe question is: What do we learn from these data?\n\nIf the underlying set of an action has already been deleted when deleting the action, then of course it would be a problem is some `__dealloc__` method would try to do something with the underlying set.",
+    "created_at": "2012-09-09T16:18:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4078",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:290 nbruin]:
 >  - if you store all key triples fed into TripleDict (setting strong refs), you find 220 keys before the tests run (i.e., just due to sage startup) and 351 after (and no segfault of course). A set of the 151 new entries:
@@ -5326,8 +9076,8 @@ I tried to view it from the opposite direction: When feeding a value into a `Tri
 
 Result: When running the tests of cachefunc.pyx, it happens 122 times that `TripleDictEraser` is called. It is called on precisely two kinds of values:
 
- 1. The value could be an action. If this is the case, then the underlying set of the action is already garbage collected, at the time when the action is removed from the `TripleDict`.
- 2. The value could be a weak reference to a set of homomorphisms. If this is the case, then the weak reference is already dead, at the time when it is removed from the `TripleDict`.
+1. The value could be an action. If this is the case, then the underlying set of the action is already garbage collected, at the time when the action is removed from the `TripleDict`.
+2. The value could be a weak reference to a set of homomorphisms. If this is the case, then the weak reference is already dead, at the time when it is removed from the `TripleDict`.
 
 Here is the change that I applied:
 
@@ -5387,12 +9137,23 @@ The question is: What do we learn from these data?
 If the underlying set of an action has already been deleted when deleting the action, then of course it would be a problem is some `__dealloc__` method would try to do something with the underlying set.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-09 16:41:46
+archive/issue_comments_004079.json:
+```json
+{
+    "body": "Replying to [comment:292 SimonKing]:\n> Do you really say: *Any*? I ask, because the \"classical\" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item. \n> Hence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the \"non-classical\" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.\n\nNot quite. Good suggestion! I tried to only the strongrefs that are either a Category or not, and in either case I prevented the segfault. There's a large overlap between the other keys between different entries, and if a deletion is to blame somewhere, ANY reference to that object would prevent the segfault. I concentrated on the classical use, because that involves few 3rd keys. I found the following possible non-category third keys (not looking at those that are present after sage initialization already):\n\n```\nset([False, True, <built-in function div>, <built-in function mul>,\n None, <built-in function eq>, <built-in function add>,\n <built-in function iadd>])\n```\n\nI tried only storing entries with one third key, for each of the above. Only `<built-in function mul>` prevents segfaulting. This doesn't say with absolute certainty that it's one of those key triples whose deletion causes the problem. It could also be that a subtle change in memory layout prevents the segfault. Anyway, the key triples in question are (only the ones added after sage init):\n\n```\n(Rational Field, <type 'int'>, <built-in function mul>)\n(Univariate Polynomial Ring in x over Rational Field, Integer Ring, <built-in function mul>)\n(Rational Field, Rational Field, <built-in function mul>)\n(Rational Field, Complex Lazy Field, <built-in function mul>)\n(Number Field in I with defining polynomial x^2 + 1, <type 'int'>, <built-in function mul>)\n(Integer Ring, Symbolic Ring, <built-in function mul>)\n(<type 'int'>, Symbolic Ring, <built-in function mul>)\n(Integer Ring, Rational Field, <built-in function mul>)\n(Symbolic Ring, <type 'int'>, <built-in function mul>)\n(<type 'float'>, Symbolic Ring, <built-in function mul>)\n(Real Field with 53 bits of precision, Rational Field, <built-in function mul>)\n(<type 'list'>, Integer Ring, <built-in function mul>)\n(Rational Field, Real Interval Field with 64 bits of precision, <built-in function mul>)\n(Real Interval Field with 64 bits of precision, <type 'int'>, <built-in function mul>)\n(Number Field in I with defining polynomial x^2 + 1, Rational Field, <built-in function mul>)\n(Rational Field, Complex Interval Field with 64 bits of precision, <built-in function mul>)\n(Multivariate Polynomial Ring in a, b, c, d over Rational Field, Rational Field, <built-in function mul>)\n(Multivariate Polynomial Ring in x, y, z over Rational Field, Rational Field, <built-in function mul>)\n(<type 'int'>, Rational Field, <built-in function mul>)\n(Ambient space of the Root system of type ['A', 3], Rational Field, <built-in function mul>)\n(Rational Field, Ambient space of the Root system of type ['A', 3], <built-in function mul>)\n(Rational Field, Root space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)\n(<type 'int'>, Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, <built-in function mul>)\n(Full MatrixSpace of 4 by 4 sparse matrices over Integer Ring, Integer Ring, <built-in function mul>)\n(Integer Ring, Coroot lattice of the Root system of type ['A', 3, 1], <built-in function mul>)\n(Rational Field, Weight space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)\n(Integer Ring, Weight space over the Rational Field of the Root system of type ['A', 3, 1], <built-in function mul>)\n(Rational Field, Integer Ring, <built-in function mul>)\n(Full MatrixSpace of 4 by 4 dense matrices over Rational Field, Vector space of dimension 4 over Rational Field, <built-in function mul>)\n(Vector space of dimension 4 over Rational Field, Rational Field, <built-in function mul>)\n(Integer Ring, Full MatrixSpace of 130 by 390 sparse matrices over Integer Ring, <built-in function mul>)\n(Integer Ring, Full MatrixSpace of 130 by 390 sparse matrices over Rational Field, <built-in function mul>)\n(<type 'long'>, Integer Ring, <built-in function mul>)\n```\n\nBy the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. \n\nAgain, it's only *likely* that one of these objects is involved, since not strong reffing them allows a segfault to happen. Unlikely, but not impossible, is that the mere presence of one of these objects in memory changes the location of an otherwise unrelated memory corruption. I think it's unlikely because the other tests show you can change quite a bit about what you store or not and still get a segfault.",
+    "created_at": "2012-09-09T16:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4079",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:292 SimonKing]:
-> Do you really say: _Any_? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item. 
+> Do you really say: *Any*? I ask, because the "classical" application of `TripleDict` in sage.structure.coerce would either have `None` (for coercion maps) or an operation (for actions) as third key item. 
 > Hence, if a strong reference to the third key items of `TripleDict` suffices to fix the problem, then I reckon the "non-classical" use of `TripleDict` in #11521 is involved in the segfault: The cache for Homsets, which has categories as third key items.
 
 Not quite. Good suggestion! I tried to only the strongrefs that are either a Category or not, and in either case I prevented the segfault. There's a large overlap between the other keys between different entries, and if a deletion is to blame somewhere, ANY reference to that object would prevent the segfault. I concentrated on the classical use, because that involves few 3rd keys. I found the following possible non-category third keys (not looking at those that are present after sage initialization already):
@@ -5443,12 +9204,23 @@ I tried only storing entries with one third key, for each of the above. Only `<b
 
 By the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. 
 
-Again, it's only _likely_ that one of these objects is involved, since not strong reffing them allows a segfault to happen. Unlikely, but not impossible, is that the mere presence of one of these objects in memory changes the location of an otherwise unrelated memory corruption. I think it's unlikely because the other tests show you can change quite a bit about what you store or not and still get a segfault.
+Again, it's only *likely* that one of these objects is involved, since not strong reffing them allows a segfault to happen. Unlikely, but not impossible, is that the mere presence of one of these objects in memory changes the location of an otherwise unrelated memory corruption. I think it's unlikely because the other tests show you can change quite a bit about what you store or not and still get a segfault.
+
 
 
 ---
 
-Comment by nbruin created at 2012-09-09 16:51:20
+archive/issue_comments_004080.json:
+```json
+{
+    "body": "Replying to [comment:294 nbruin]:\n> By the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. \nAnd indeed, changing the cache in `polynomial_ring_constructor.py` to be a `dict` instead of a `WeakValueDictionary` prevents the segfault.\n\nDigging a little deeper (putting `sys.stderr.write(\"point 2\\n\")` in the source), the segfault happens in `sage.rings.polynomial.polynomial_ring_constructor._multi_variate`\n\n```\n                R = MPolynomialRing_libsingular(base_ring, n, names, order)\n```\n\nIn my experience, this bug is relatively robust against things done in python (apart from, strangely, letting doctests fail before a certain point). Simon's code above asks for `repr`. I imagine doing that on a libsingular object calls into libsingular (which has its own `omalloc` handled heap, right?)\n\nWhen I was analyzing references, I stored them wholesale in a list. Only later did I ask for string representatives. Hence, I probably avoided extra calls into libsingular.\n\n\nDigging a littler deeper still, the segfault seems to occur in `MPolynomialRing_libsingular.__init__` in the line:\n\n```\n        self._ring = singular_ring_new(base_ring, n, self._names, order)\n```\n\nwhich goes into `sage/libs/singular/ring. pyx`. Instrumenting the code there a bit:\n\n```\n    sys.stderr.write(\"before _names allocation\\n\")\n    _names = <char**>omAlloc0(sizeof(char*)*(len(names)))\n    sys.stderr.write(\"after _names allocation\\n\")\n\n    for i from 0 <= i < n:\n        _name = names[i]\n        sys.stderr.write(\"calling omStrDup for i=%s with name=%s\\n\"%(i,names[i])\n        _names[i] = omStrDup(_name)\n        sys.stderr.write(\"after omStrDup\\n\")\n```\n\ngives me (note that the strings to be duplicated are fine for printing!):\n\n```\n...\nafter _names allocation\ncalling omStrDup for i=0 with name=a\nafter omStrDup\ncalling omStrDup for i=1 with name=b\n\n<UNHANDLED SIGSEGV>\n```\n\nI think this strongly implicates a corruption of the omAlloc heap. Other people who know much more about singular hopefully can take over.\n\nAll my files (including instrumented code) are on `bsd:/scratch/nbruin/sage-5.4.beta0`. It might be hard to work with directly, but a `hg diff` might give some useful info regarding which files are involved.\n\nOne thing that helps a little bit is to guard the `omStrDup` loop with `sig_on()` and `sig_off`. The the segmentation fault gets reported as a `RuntimeError`. There are of course all kinds of doctests that fail (in particular any of the other polynomial constructions in subsequent tests fail)",
+    "created_at": "2012-09-09T16:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4080",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:294 nbruin]:
 > By the way, I've checked that the segfault really happens during `P = Q['a, b, c, d']` in example 27, not in getting the generators. 
@@ -5504,9 +9276,20 @@ All my files (including instrumented code) are on `bsd:/scratch/nbruin/sage-5.4.
 One thing that helps a little bit is to guard the `omStrDup` loop with `sig_on()` and `sig_off`. The the segmentation fault gets reported as a `RuntimeError`. There are of course all kinds of doctests that fail (in particular any of the other polynomial constructions in subsequent tests fail)
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-09 22:50:17
+archive/issue_comments_004081.json:
+```json
+{
+    "body": "Cc to Martin, since I suppose he knows about Singular's `omAlloc` and can comment on the problems described in comment:295.\n\nNils: Kudos for digging to such depth!\n\nSince there is a new Singular spkg at #13237 which got merged into sage-5.4.beta0, we may check whether the segfault also occurs with the old version of Singular.",
+    "created_at": "2012-09-09T22:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4081",
+    "user": "SimonKing"
+}
+```
 
 Cc to Martin, since I suppose he knows about Singular's `omAlloc` and can comment on the problems described in comment:295.
 
@@ -5515,16 +9298,38 @@ Nils: Kudos for digging to such depth!
 Since there is a new Singular spkg at #13237 which got merged into sage-5.4.beta0, we may check whether the segfault also occurs with the old version of Singular.
 
 
+
 ---
 
-Comment by malb created at 2012-09-10 09:33:04
+archive/issue_comments_004082.json:
+```json
+{
+    "body": "Nothing immediately comes to mind, but you could try and ask [singular-devel] perhaps?",
+    "created_at": "2012-09-10T09:33:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4082",
+    "user": "malb"
+}
+```
 
 Nothing immediately comes to mind, but you could try and ask [singular-devel] perhaps?
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-10 19:28:23
+archive/issue_comments_004083.json:
+```json
+{
+    "body": "OK, I've taken out the `omStrDup` call in `sage/libs/singular/ring.pyx` and just manually copy the strings over:\n\n```\n    for i from 0 <= i < n:\n        _name = names[i]\n        sys.stderr.write(\"calling omStrDup for i=%s with name=%s\\n\"%(i,names[i]))\n        j = 0\n        while <bint> _name[j]:\n            j+=1\n        j+=1     #increment to include the 0\n        sys.stderr.write(\"string length (including 0) seems to be %s\\n\"%j)\n        copiedname =  <char*>omAlloc(sizeof(char)*(j+perturb))\n        sys.stderr.write(\"Done reserving memory buffer; got address %x\\n\"%(<long>copiedname))\n        for 0 <= offset < j:\n            sys.stderr.write(\"copying character nr %s\\n\"%offset)\n            copiedname[offset] = _name[offset]\n        _names[i] = copiedname\n        sys.stderr.write(\"after omStrDup\\n\")\n```\n\nIf I set this code with `perturb=7`, I don't get a segfault. With smaller values I do, and the segfault happens in the `omAlloc` line. Given that `j==2` for most of this code, I guess that memory blocks are at least 8 bytes (this is OSX 64bits).\n\nIf `omAlloc` fails, I guess some of the internal omAlloc data structures is failing (I think the idea is that memory is managed in equal-sized blocks with just a free list on a system mAlloc-ed page). If I were to implement that, I'd store the pointers of the free block linked list in the actual blocks (hence minimum 8 byte blocks), so if anyone omAllocs an 8-byte block and then writes past it, they could ruin the linked list and likely cause a subsequent omAlloc to segfault (because the omAlloc would actually have to access the location pointed to to check if the there is a next node in the free list). Even more likely: some code decides to \"zero out\" a block after it's already been `omFree'd`. That could also be a double deallocation.\n\nThere must be people with vast omAlloc debugging experience who have wonderful tricks to track down this kind of error. A tiny bit of instrumentation should do the trick (frequent verification of free lists, checking that a block is not already in the free list when asked to deallocate -- these are things one could easily do without changing memory layout.\n\nIn the mean time, we can \"fix\" the segfault on bsd by allocating a little extra space for variable names. At least 9 bytes seems to do the trick. By now it's pretty clear that the real error is probably a refcounting error in sage libsingular rings, which didn't become apparent until these things actually do get deallocated.\n\nIf we insist that libsingular rings behave as specified, then part of their specification is likely that they should not be deallocated. Since Volker has already put in manual refcounting, we can simply get the result by\n\n**sage/libs/singular/ring.pyx**:\n\n```diff\n     wrapped_ring = wrap_ring(_ring)\n     if wrapped_ring in ring_refcount_dict:\n         raise ValueError('newly created ring already in dictionary??')\n-    ring_refcount_dict[wrapped_ring] = 1\n+    ring_refcount_dict[wrapped_ring] = 2\n     return _ring\n```\n\nThen one can make another ticket \"make libsingular rings deallocatable\". Given that these rings get tied into the coercion framework anyway, I think you'd be hard-pressed to find a memory regression wrt. pre-#715 sage (perhaps one would have to increase a refcount on an object one level higher, since the `ring_wrapper_Py` objects don't actually live with the _ring. They're only to do an equality test. So with this fix, I think rings would leak in the sense that the `UniqueRepresentation` type that wraps them would die without the ring dying.)\n\nI think exposing the rest of sage to mortal parents is too important to delay on a hard-to-track-down memory issue for deallocation in libsingular.",
+    "created_at": "2012-09-10T19:28:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4083",
+    "user": "nbruin"
+}
+```
 
 OK, I've taken out the `omStrDup` call in `sage/libs/singular/ring.pyx` and just manually copy the strings over:
 
@@ -5556,7 +9361,7 @@ In the mean time, we can "fix" the segfault on bsd by allocating a little extra 
 
 If we insist that libsingular rings behave as specified, then part of their specification is likely that they should not be deallocated. Since Volker has already put in manual refcounting, we can simply get the result by
 
-*sage/libs/singular/ring.pyx*:
+**sage/libs/singular/ring.pyx**:
 
 ```diff
      wrapped_ring = wrap_ring(_ring)
@@ -5572,14 +9377,38 @@ Then one can make another ticket "make libsingular rings deallocatable". Given t
 I think exposing the rest of sage to mortal parents is too important to delay on a hard-to-track-down memory issue for deallocation in libsingular.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-11 01:04:11
+archive/issue_comments_004084.json:
+```json
+{
+    "body": "Fix segfault on bsd",
+    "created_at": "2012-09-11T01:04:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4084",
+    "user": "nbruin"
+}
+```
 
 Fix segfault on bsd
 
 
+
 ---
+
+archive/issue_comments_004085.json:
+```json
+{
+    "body": "Attachment\n\nNils, I find this very interesting! Note that some libsingular refcounting problem was enough to fix a segfault created by #13370, but in that case the refcounting concerned non-commutative rings - see #13145.\n\nI lost track: Did we already test whether #13145 fixes the segfault here as well?",
+    "created_at": "2012-09-11T05:58:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4085",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -5588,9 +9417,20 @@ Nils, I find this very interesting! Note that some libsingular refcounting probl
 I lost track: Did we already test whether #13145 fixes the segfault here as well?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-11 06:01:16
+archive/issue_comments_004086.json:
+```json
+{
+    "body": "I'd say: Let's try this again, with #13145 as a new dependency!\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-09-11T06:01:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4086",
+    "user": "SimonKing"
+}
+```
 
 I'd say: Let's try this again, with #13145 as a new dependency!
 
@@ -5599,9 +9439,20 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-11 06:07:52
+archive/issue_comments_004087.json:
+```json
+{
+    "body": "Nope, doesn't help.\n\n```\nbash-3.2$ ../../sage -t sage/misc/cachefunc.pyx\nsage -t  \"devel/sage-main/sage/misc/cachefunc.pyx\"          \nThe doctested process was killed by signal 11\n         [12.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-main/sage/misc/cachefunc.pyx\" # Killed/crashed\nTotal time for all tests: 12.7 seconds\nbash-3.2$ hg qa\ntrac_715_combined.patch\ntrac_715_local_refcache.patch\ntrac_715_safer.patch\ntrac_715_specification.patch\ntrac_11521_homset_weakcache_combined.patch\ntrac_11521_callback.patch\n13145.patch\n```\n\nand still, under gdb:\n\n```\nsage: @cached_function\n....: def oddprime_factors(n):\n....:     l = [p for p,e in factor(n) if p != 2]\n....:     return len(l)\n....: \nsage: oddprime_factors.precompute(range(1,100))\n[Errno 4] Interrupted system call\nKilling any remaining workers...\n```\n",
+    "created_at": "2012-09-11T06:07:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4087",
+    "user": "SimonKing"
+}
+```
 
 Nope, doesn't help.
 
@@ -5642,9 +9493,20 @@ Killing any remaining workers...
 
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-11 07:02:39
+archive/issue_comments_004088.json:
+```json
+{
+    "body": "Replying to [comment:301 SimonKing]:\n> {{{\n> sage: `@`cached_function\n> ....: def oddprime_factors(n):\n> ....:     l = [p for p,e in factor(n) if p != 2]\n> ....:     return len(l)\n> ....: \n> sage: oddprime_factors.precompute(range(1,100))\n> [Errno 4] Interrupted system call\n> Killing any remaining workers...\n> }}}\nI firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that. Furthermore, we have already seen that we can solve this one by setting and handling SIGALRM more cleanly.",
+    "created_at": "2012-09-11T07:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4088",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:301 SimonKing]:
 > {{{
@@ -5660,9 +9522,20 @@ Replying to [comment:301 SimonKing]:
 I firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that. Furthermore, we have already seen that we can solve this one by setting and handling SIGALRM more cleanly.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-11 08:12:11
+archive/issue_comments_004089.json:
+```json
+{
+    "body": "Replying to [comment:302 nbruin]:\n> I firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that.\n\nSure.\n\nSo, what shall we do? Do we all agree that the plan is as follows:\n\n* The SIGALRM problem (under gdb) is solved on a different ticket already, namely #13437. So, make it a dependency.\n* The refcounting problem that is likely to be behind the signal 11 problem (without gdb) can be temporarily worked around by using a strong cache to libsingular polynomial rings. I only wonder whether the doctests demonstrating the weak cache will still work. But it would be a chance to finally get over with #715 and #11521 and #12215 and #13370 and #12313 and #12876 and so on.\n* A proper fix of the refcounting problem should be done on a new ticket. Nils, since you already made a deep analysis of the problem, could you create that new ticket?\n\nHere is another message to the patchbot, since I forgot to include the new patch:\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch trac_715_osx64-dealloc.patch\n\nAnd then #11521",
+    "created_at": "2012-09-11T08:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4089",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:302 nbruin]:
 > I firmly believe that's an unrelated problem. It's hard to imagine how singular could be involved with that.
@@ -5671,9 +9544,9 @@ Sure.
 
 So, what shall we do? Do we all agree that the plan is as follows:
 
- * The SIGALRM problem (under gdb) is solved on a different ticket already, namely #13437. So, make it a dependency.
- * The refcounting problem that is likely to be behind the signal 11 problem (without gdb) can be temporarily worked around by using a strong cache to libsingular polynomial rings. I only wonder whether the doctests demonstrating the weak cache will still work. But it would be a chance to finally get over with #715 and #11521 and #12215 and #13370 and #12313 and #12876 and so on.
- * A proper fix of the refcounting problem should be done on a new ticket. Nils, since you already made a deep analysis of the problem, could you create that new ticket?
+* The SIGALRM problem (under gdb) is solved on a different ticket already, namely #13437. So, make it a dependency.
+* The refcounting problem that is likely to be behind the signal 11 problem (without gdb) can be temporarily worked around by using a strong cache to libsingular polynomial rings. I only wonder whether the doctests demonstrating the weak cache will still work. But it would be a chance to finally get over with #715 and #11521 and #12215 and #13370 and #12313 and #12876 and so on.
+* A proper fix of the refcounting problem should be done on a new ticket. Nils, since you already made a deep analysis of the problem, could you create that new ticket?
 
 Here is another message to the patchbot, since I forgot to include the new patch:
 
@@ -5682,9 +9555,20 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-11 15:56:06
+archive/issue_comments_004090.json:
+```json
+{
+    "body": "When running sage-5.2.rc0 with patches on `OpenSuse` under gdb, I get the following:\n\n```\nsage: @cached_function\n....: def oddprime_factors(n):\n....:     l = [p for p,e in factor(n) if p != 2]\n....:     return len(l)\n....: \nsage: oddprime_factors.precompute(range(1,100))\nDetaching after fork from child process 20030.\nDetaching after fork from child process 20031.\n...\nDetaching after fork from child process 20127.\nDetaching after fork from child process 20128.\nsage: \n```\n\n\nIf I understand correctly, that message comes from gdb and informs that gdb can only follow one of the two processes after forking. So, that is to be expected, right?\n\nAnyway, it is another data point, telling that the two problems we are seeing here are specific to OS X on Intel.",
+    "created_at": "2012-09-11T15:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4090",
+    "user": "SimonKing"
+}
+```
 
 When running sage-5.2.rc0 with patches on `OpenSuse` under gdb, I get the following:
 
@@ -5709,9 +9593,20 @@ If I understand correctly, that message comes from gdb and informs that gdb can 
 Anyway, it is another data point, telling that the two problems we are seeing here are specific to OS X on Intel.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-11 15:59:16
+archive/issue_comments_004091.json:
+```json
+{
+    "body": "Replying to [comment:304 SimonKing]:\n> If I understand correctly, that message comes from gdb and informs that gdb can only follow one of the two processes after forking. So, that is to be expected, right?\n\nOr perhaps not:\n\n```\nsimon@linux-sqwp:~/SAGE/prerelease/sage-5.2.rc0/devel/sage> gdb\nGNU gdb (GDB) SUSE (7.3-41.1.2)\nCopyright (C) 2011 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-suse-linux\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\n(gdb) show print inferior-events\nPrinting of inferior events is off.\n```\n\nAnyway, I guess it doesn't help with the two problems we are facing here.",
+    "created_at": "2012-09-11T15:59:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4091",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:304 SimonKing]:
 > If I understand correctly, that message comes from gdb and informs that gdb can only follow one of the two processes after forking. So, that is to be expected, right?
@@ -5736,34 +9631,78 @@ Printing of inferior events is off.
 Anyway, I guess it doesn't help with the two problems we are facing here.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 10:21:04
+archive/issue_comments_004092.json:
+```json
+{
+    "body": "The new ticket for the libsingular problem is #13450.\n\nI suggest that we use a temporary work-around, as proposed by Nils, so that we can use #715 and #11521. The work-around should be converted into a proper fix in #13450.",
+    "created_at": "2012-09-12T10:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4092",
+    "user": "SimonKing"
+}
+```
 
 The new ticket for the libsingular problem is #13450.
 
 I suggest that we use a temporary work-around, as proposed by Nils, so that we can use #715 and #11521. The work-around should be converted into a proper fix in #13450.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-12 15:07:20
+archive/issue_comments_004093.json:
+```json
+{
+    "body": "I guess the list of patches in the description needs to be updated?",
+    "created_at": "2012-09-12T15:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4093",
+    "user": "jdemeyer"
+}
+```
 
 I guess the list of patches in the description needs to be updated?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-12 15:15:33
+archive/issue_comments_004094.json:
+```json
+{
+    "body": "**Please update the ticket description if you add patches.**\n\nThanks.",
+    "created_at": "2012-09-12T15:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4094",
+    "user": "jdemeyer"
+}
+```
 
-*Please update the ticket description if you add patches.*
+**Please update the ticket description if you add patches.**
 
 Thanks.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-12 15:22:17
+archive/issue_comments_004095.json:
+```json
+{
+    "body": "Replying to [comment:306 SimonKing]:\n> The new ticket for the libsingular problem is #13450.\nI think that one can be considered a duplicate of #13447\n\nSomething along the lines of attachment:trac_715_osx64-dealloc.patch should work best, because then at least the permanently stored copy is available for `UniqueRepresentation` purposes (for which polynomial rings have their own weakvaluedictionary).\n\nSolving the SIGALRM issue is optional since it only occurs on one machine with gdb and I don't think we specify that sage is supposed to work perfectly under gdb on all supported platforms. A first go at the problem is at #13437 (does its job).",
+    "created_at": "2012-09-12T15:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4095",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:306 SimonKing]:
 > The new ticket for the libsingular problem is #13450.
@@ -5774,9 +9713,20 @@ Something along the lines of attachment:trac_715_osx64-dealloc.patch should work
 Solving the SIGALRM issue is optional since it only occurs on one machine with gdb and I don't think we specify that sage is supposed to work perfectly under gdb on all supported platforms. A first go at the problem is at #13437 (does its job).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 15:40:53
+archive/issue_comments_004096.json:
+```json
+{
+    "body": "Replying to [comment:307 jdemeyer]:\n> I guess the list of patches in the description needs to be updated?\n\nNot necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do. Mainly I wanted to let the patchbot test whether other tests break with a permanent cache (e.g., tests that were introduced in #715 or #11521). But the patchbots seems to be down, so, it doesn't make sense anyway.",
+    "created_at": "2012-09-12T15:40:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4096",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:307 jdemeyer]:
 > I guess the list of patches in the description needs to be updated?
@@ -5784,9 +9734,20 @@ Replying to [comment:307 jdemeyer]:
 Not necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do. Mainly I wanted to let the patchbot test whether other tests break with a permanent cache (e.g., tests that were introduced in #715 or #11521). But the patchbots seems to be down, so, it doesn't make sense anyway.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 15:44:30
+archive/issue_comments_004097.json:
+```json
+{
+    "body": "Replying to [comment:309 nbruin]:\n> Replying to [comment:306 SimonKing]:\n> > The new ticket for the libsingular problem is #13450.\n> I think that one can be considered a duplicate of #13447\n\nProbably. Why didn't you put me as cc? Then, I wouldn't have opened #13450.\n\n> Something along the lines of attachment:trac_715_osx64-dealloc.patch should work best,\n\nBut only as a temporary workaround. In my applications, it is absolutely essential that polynomial rings can be deallocated, or the memory consumption would explode.\n\n> Solving the SIGALRM issue is optional since it only occurs on one machine with gdb and I don't think we specify that sage is supposed to work perfectly under gdb on all supported platforms. A first go at the problem is at #13437 (does its job).\n\nAgreed.",
+    "created_at": "2012-09-12T15:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4097",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:309 nbruin]:
 > Replying to [comment:306 SimonKing]:
@@ -5804,9 +9765,20 @@ But only as a temporary workaround. In my applications, it is absolutely essenti
 Agreed.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 15:49:51
+archive/issue_comments_004098.json:
+```json
+{
+    "body": "Replying to [comment:310 SimonKing]:\n> Not necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do.\n\nPS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.",
+    "created_at": "2012-09-12T15:49:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4098",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:310 SimonKing]:
 > Not necessarily, since I am not sure whether we all agree that a work-around by a permanent cache for polynomial rings is the right thing to do.
@@ -5814,9 +9786,20 @@ Replying to [comment:310 SimonKing]:
 PS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-12 16:31:59
+archive/issue_comments_004099.json:
+```json
+{
+    "body": "Replying to [comment:312 SimonKing]:\n> PS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.\n\nExcellent! that makes you the perfect person to either find convincing evidence that #13447 is not necessary due to some silly configuration issue on `bsd.math` or push through a proper fix! :-). A side-trip to Kaiserslautern sounds like the best way to make progress.",
+    "created_at": "2012-09-12T16:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4099",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:312 SimonKing]:
 > PS: For my own applications, it is certainly not acceptable to have a permanent cache for polynomial rings. Actually, the only reason why I worked on #715, #11521, #12215 and #12313 is to make polynomial rings collectable.
@@ -5824,9 +9807,20 @@ Replying to [comment:312 SimonKing]:
 Excellent! that makes you the perfect person to either find convincing evidence that #13447 is not necessary due to some silly configuration issue on `bsd.math` or push through a proper fix! :-). A side-trip to Kaiserslautern sounds like the best way to make progress.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-12 18:59:38
+archive/issue_comments_004100.json:
+```json
+{
+    "body": "With the current patches of #715 + #11521 + #12215 + #12313, I get:\n\n```\nsage -t  -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta2/devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx\", line 423:\n    sage: len(ring_refcount_dict) == n\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\n\n```\nsage -t  -force_lib devel/sage/sage/libs/singular/ring.pyx\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta2/devel/sage-main/sage/libs/singular/ring.pyx\", line 490:\n    sage: ring_ptr in ring_refcount_dict\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n```\n",
+    "created_at": "2012-09-12T18:59:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4100",
+    "user": "jdemeyer"
+}
+```
 
 With the current patches of #715 + #11521 + #12215 + #12313, I get:
 
@@ -5857,9 +9851,20 @@ Got:
 
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 19:12:30
+archive/issue_comments_004101.json:
+```json
+{
+    "body": "Replying to [comment:314 jdemeyer]:\n> With the current patches of #715 + #11521 + #12215 + #12313, I get:\n\nAnd I guess the failing tests were introduced in one of the four tickets...",
+    "created_at": "2012-09-12T19:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4101",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:314 jdemeyer]:
 > With the current patches of #715 + #11521 + #12215 + #12313, I get:
@@ -5867,16 +9872,38 @@ Replying to [comment:314 jdemeyer]:
 And I guess the failing tests were introduced in one of the four tickets...
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-12 19:20:18
+archive/issue_comments_004102.json:
+```json
+{
+    "body": "I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).",
+    "created_at": "2012-09-12T19:20:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4102",
+    "user": "jdemeyer"
+}
+```
 
 I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-12 20:03:05
+archive/issue_comments_004103.json:
+```json
+{
+    "body": "Replying to [comment:316 jdemeyer]:\n> I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).\n\nIn fact, the two tests were introduced in #11339.\n\nThe tests work, because they explicitly avoid calling the polynomial ring constructor (which has a strong cache in vanilla Sage) and calls the class explicitly. Nils' patch, introduces a strong cache not in the polynomial ring constructor, but directly in the class' `__init__` method. That's why the tests break.",
+    "created_at": "2012-09-12T20:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4103",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:316 jdemeyer]:
 > I'm pretty sure the failing tests are because of [attachment:trac_715_osx64-dealloc.patch] (since that's the only thing that changed recently).
@@ -5886,29 +9913,62 @@ In fact, the two tests were introduced in #11339.
 The tests work, because they explicitly avoid calling the polynomial ring constructor (which has a strong cache in vanilla Sage) and calls the class explicitly. Nils' patch, introduces a strong cache not in the polynomial ring constructor, but directly in the class' `__init__` method. That's why the tests break.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-13 11:20:41
+archive/issue_comments_004104.json:
+```json
+{
+    "body": "Sigh.\n\nNils, you found that `python -t` [attachment:cachefunc_94107.py] segfaults in example_27, right? But if one deletes all tests that come *after* example_27, the segfault vanishes.\n\nIn other words, whether there is a segfault or not depends on the presence of tests that will never be executed because of the segfault.",
+    "created_at": "2012-09-13T11:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4104",
+    "user": "SimonKing"
+}
+```
 
 Sigh.
 
-Nils, you found that `python -t` [attachment:cachefunc_94107.py] segfaults in example_27, right? But if one deletes all tests that come _after_ example_27, the segfault vanishes.
+Nils, you found that `python -t` [attachment:cachefunc_94107.py] segfaults in example_27, right? But if one deletes all tests that come *after* example_27, the segfault vanishes.
 
 In other words, whether there is a segfault or not depends on the presence of tests that will never be executed because of the segfault.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-13 11:32:07
+archive/issue_comments_004105.json:
+```json
+{
+    "body": "There is a segfault when deleting example_1. However, if one additionally deletes any of the tests that comes after example_61, then the segfault vanishes.\n\nIt seems we will not get a reasonable minimal example. Let's see if Hans Sch\u00f6nemann has an idea.",
+    "created_at": "2012-09-13T11:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4105",
+    "user": "SimonKing"
+}
+```
 
 There is a segfault when deleting example_1. However, if one additionally deletes any of the tests that comes after example_61, then the segfault vanishes.
 
 It seems we will not get a reasonable minimal example. Let's see if Hans Schönemann has an idea.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-13 22:35:18
+archive/issue_comments_004106.json:
+```json
+{
+    "body": "Replying to [comment:318 SimonKing]:\n\n> In other words, whether there is a segfault or not depends on the presence of tests that will never be executed because of the segfault.\n\nThat's assuming that the doctesting framework tests all examples *in order*. I'm not 100% positive that that's the case. When I equipped a bunch of tests with lines of the form\n\n```\n    >>> 1\n    EXAMPLE 6\n```\n\netcetera, the segfault vanished (of course!) but I didn't see all test appear in numerical order. I guess I was just blocking that because of the severe cognitive dissonance this was causing, but your remark now makes it unavoidable to acknowledge.\n\nIndeed, reading the generated `.py` file:\n\n```\n...\n    m = sys.modules[__name__]\n...\n        runner = sagedoctest.testmod_returning_runner(m,\n...\n```\n\nso the doctestrunner gets a hold of which doctests to run by getting passed the *module* `__main__`. At that point, it can basically only look up the runnable methods in the dictionary, so ordering is not guaranteed. It likely just extracts the doctests by the usual docstring introspecion tools.\n\nPerhaps if we equip every test with a line\n\n```\n    >>> sys.stderr.write('testing test 6\\n')\n```\n\nwe may might be able to see the actual order in which the examples are tested without preventing the doctest from happening. Perhaps when we establish that, we can strip out the (for us) silly doctesting layer and just have a plain python input file? Or take a guess and hope that `__main__.__dict__` is listing the tests in the order they are tested.",
+    "created_at": "2012-09-13T22:35:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4106",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:318 SimonKing]:
 
@@ -5933,7 +9993,7 @@ Indeed, reading the generated `.py` file:
 ...
 ```
 
-so the doctestrunner gets a hold of which doctests to run by getting passed the _module_ `__main__`. At that point, it can basically only look up the runnable methods in the dictionary, so ordering is not guaranteed. It likely just extracts the doctests by the usual docstring introspecion tools.
+so the doctestrunner gets a hold of which doctests to run by getting passed the *module* `__main__`. At that point, it can basically only look up the runnable methods in the dictionary, so ordering is not guaranteed. It likely just extracts the doctests by the usual docstring introspecion tools.
 
 Perhaps if we equip every test with a line
 
@@ -5944,9 +10004,20 @@ Perhaps if we equip every test with a line
 we may might be able to see the actual order in which the examples are tested without preventing the doctest from happening. Perhaps when we establish that, we can strip out the (for us) silly doctesting layer and just have a plain python input file? Or take a guess and hope that `__main__.__dict__` is listing the tests in the order they are tested.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-09-14 10:22:26
+archive/issue_comments_004107.json:
+```json
+{
+    "body": "Replying to [comment:320 nbruin]:\n> Perhaps if we equip every test with a line\n> {{{\n>     >>> sys.stderr.write('testing test 6\\n')\n> }}}\n> we may might be able to see the actual order in which the examples are tested without preventing the doctest from happening.\n\n<Deep sigh>\n\nI tried, and printing to sys.stderr makes the segfault disappear. However, it shows that the doctests *are* executed in alphabetical order: ..., example_49, example_5, example_50, example_51, ..., example_67, example_7, example_8, example_9.\n\nAssuming that the same order is used when *not* printing to stderr, we still find that the absence of a later doc test will prevent the segfault. Namely, you located the segfault in example_27, but it won't occur when deleting example_62, which comes alphabetically after example_27.",
+    "created_at": "2012-09-14T10:22:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4107",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:320 nbruin]:
 > Perhaps if we equip every test with a line
@@ -5957,14 +10028,25 @@ Replying to [comment:320 nbruin]:
 
 <Deep sigh>
 
-I tried, and printing to sys.stderr makes the segfault disappear. However, it shows that the doctests _are_ executed in alphabetical order: ..., example_49, example_5, example_50, example_51, ..., example_67, example_7, example_8, example_9.
+I tried, and printing to sys.stderr makes the segfault disappear. However, it shows that the doctests *are* executed in alphabetical order: ..., example_49, example_5, example_50, example_51, ..., example_67, example_7, example_8, example_9.
 
-Assuming that the same order is used when _not_ printing to stderr, we still find that the absence of a later doc test will prevent the segfault. Namely, you located the segfault in example_27, but it won't occur when deleting example_62, which comes alphabetically after example_27.
+Assuming that the same order is used when *not* printing to stderr, we still find that the absence of a later doc test will prevent the segfault. Namely, you located the segfault in example_27, but it won't occur when deleting example_62, which comes alphabetically after example_27.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-09-15 17:56:55
+archive/issue_comments_004108.json:
+```json
+{
+    "body": "With Nils' work at #13447, it seems that we have a proper solution of the problem and do not need a permanent cache for polynomial rings.\n\nHence, I am adding #13447 as a dependency.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch\n\nAnd then #11521",
+    "created_at": "2012-09-15T17:56:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4108",
+    "user": "SimonKing"
+}
+```
 
 With Nils' work at #13447, it seems that we have a proper solution of the problem and do not need a permanent cache for polynomial rings.
 
@@ -5975,16 +10057,38 @@ Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch
 And then #11521
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-23 08:42:34
+archive/issue_comments_004109.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-09-23T08:42:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4109",
+    "user": "nbruin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nbruin created at 2012-09-23 08:42:34
+archive/issue_comments_004110.json:
+```json
+{
+    "body": "Removing dependency #13447 again, because it looks like that ticket is not close to resolution. In the mean time, leaving polynomial rings immortal is not a regression compared to previous behaviour. Note that while the issue was only diagnosed on OSX, deallocation of polynomial rings indeed leads to potential write-after-free, so the osx64-dealloc patch should be applied universally.\n\nThat means we're back at comment:317 and positive review. We should really get this merged. At least the libsingular interface is not worse than it was before. Proper coordination of libsingular and python memory management shouldn't hold up reclaiming of other rings.\n\nApply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch trac_715_osx64-dealloc.patch",
+    "created_at": "2012-09-23T08:42:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4110",
+    "user": "nbruin"
+}
+```
 
 Removing dependency #13447 again, because it looks like that ticket is not close to resolution. In the mean time, leaving polynomial rings immortal is not a regression compared to previous behaviour. Note that while the issue was only diagnosed on OSX, deallocation of polynomial rings indeed leads to potential write-after-free, so the osx64-dealloc patch should be applied universally.
 
@@ -5993,58 +10097,148 @@ That means we're back at comment:317 and positive review. We should really get t
 Apply trac_715_combined.patch trac_715_local_refcache.patch trac_715_safer.patch trac_715_specification.patch trac_715_osx64-dealloc.patch
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-09-23 16:15:30
+archive/issue_comments_004111.json:
+```json
+{
+    "body": "SInce these tickets have caused some trouble in the past, I prefer to merge them only in a .beta0 (to maximize the testing), hence the milestone bump.",
+    "created_at": "2012-09-23T16:15:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4111",
+    "user": "jdemeyer"
+}
+```
 
 SInce these tickets have caused some trouble in the past, I prefer to merge them only in a .beta0 (to maximize the testing), hence the milestone bump.
 
 
+
 ---
+
+archive/issue_comments_004112.json:
+```json
+{
+    "body": "Attachment\n\nI combined all the patches in one patch.",
+    "created_at": "2012-10-05T13:59:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4112",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 I combined all the patches in one patch.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-17 20:59:27
+archive/issue_comments_004113.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-10-17T20:59:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4113",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-03 17:35:41
+archive/issue_comments_004114.json:
+```json
+{
+    "body": "Sorry to bring bad news, but a trial sage-5.5.beta1 caused a Segmentation Fault in `sage/schemes/elliptic_curves/ell_number_field.py` on OS X 10.4 PPC.  Removing #715 and #11521 made the problem go away.  This really feels like a d\u00e9j\u00e0 vu, but I'm afraid I need to remove the patch from sage-5.5.beta0.",
+    "created_at": "2012-11-03T17:35:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4114",
+    "user": "jdemeyer"
+}
+```
 
 Sorry to bring bad news, but a trial sage-5.5.beta1 caused a Segmentation Fault in `sage/schemes/elliptic_curves/ell_number_field.py` on OS X 10.4 PPC.  Removing #715 and #11521 made the problem go away.  This really feels like a déjà vu, but I'm afraid I need to remove the patch from sage-5.5.beta0.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-03 17:35:41
+archive/issue_comments_004115.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2012-11-03T17:35:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4115",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-03 17:35:41
+archive/issue_comments_004116.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2012-11-03T17:35:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4116",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-04 08:37:09
+archive/issue_comments_004117.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-11-04T08:37:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4117",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-05 07:51:30
+archive/issue_comments_004118.json:
+```json
+{
+    "body": "sage-5.5.beta0 + #11593 gives\n\n```\nsage -t --long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\nThe doctested process was killed by signal 11\n         [166.4 s]\n```\n\non OS X 10.4 PPC (not on other systems as far as I know).",
+    "created_at": "2012-11-05T07:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4118",
+    "user": "jdemeyer"
+}
+```
 
 sage-5.5.beta0 + #11593 gives
 
@@ -6057,9 +10251,20 @@ The doctested process was killed by signal 11
 on OS X 10.4 PPC (not on other systems as far as I know).
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-12 21:43:16
+archive/issue_comments_004119.json:
+```json
+{
+    "body": "Sigh. While testing a preliminary sage-5.5.beta2, I got again\n\n```\nsage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\nSegmentation fault (core dumped)\n```\n\non a *different* system as before (Linux i686) and with *different* patches.",
+    "created_at": "2012-11-12T21:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4119",
+    "user": "jdemeyer"
+}
+```
 
 Sigh. While testing a preliminary sage-5.5.beta2, I got again
 
@@ -6068,12 +10273,23 @@ sage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_fi
 Segmentation fault (core dumped)
 ```
 
-on a _different_ system as before (Linux i686) and with _different_ patches.
+on a *different* system as before (Linux i686) and with *different* patches.
+
 
 
 ---
 
-Comment by SimonKing created at 2012-11-12 22:20:56
+archive/issue_comments_004120.json:
+```json
+{
+    "body": "Replying to [comment:331 jdemeyer]:\n> Sigh. While testing a preliminary sage-5.5.beta2, I got again\n> {{{\n> sage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\n> Segmentation fault (core dumped)\n> }}}\n> on a *different* system as before (Linux i686) and with *different* patches.\n\nWhat does the core dump say? libsingular again, or something else?\n\nI am sorry, but recently (and at least until end of this week) I will not be able to do Sage development.",
+    "created_at": "2012-11-12T22:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4120",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:331 jdemeyer]:
 > Sigh. While testing a preliminary sage-5.5.beta2, I got again
@@ -6081,16 +10297,27 @@ Replying to [comment:331 jdemeyer]:
 > sage -t  --long -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
 > Segmentation fault (core dumped)
 > }}}
-> on a _different_ system as before (Linux i686) and with _different_ patches.
+> on a *different* system as before (Linux i686) and with *different* patches.
 
 What does the core dump say? libsingular again, or something else?
 
 I am sorry, but recently (and at least until end of this week) I will not be able to do Sage development.
 
 
+
 ---
 
-Comment by mjo created at 2012-11-19 03:39:49
+archive/issue_comments_004121.json:
+```json
+{
+    "body": "FWIW, this is happening here consistently with 5.5.rc0. Not sure if this will be useful, I compiled with my default CFLAGS:\n\n\n```\n(gdb) bt\n#0  convi (x=0x555559c55318, l=0x7ffffffec7d0) at ../src/kernel/gmp/mp.c:1288\n#1  0x00007ffff4bec01a in itostr_sign (x=<optimized out>, sx=1, \n    len=0x7ffffffec858) at ../src/language/es.c:507\n#2  0x00007ffff4bf10b6 in str_absint (x=0x555559c55318, S=0x7ffffffecac0)\n    at ../src/language/es.c:1788\n#3  bruti_intern (g=0x555559c55318, T=<optimized out>, S=0x7ffffffecac0, \n    addsign=1) at ../src/language/es.c:2568\n#4  0x00007ffff4bf197e in bruti_intern (g=0x555559c55348, T=0x7ffff4f4bc80, \n    S=0x7ffffffecac0, addsign=<optimized out>) at ../src/language/es.c:2741\n#5  0x00007ffff4bf0ec4 in GENtostr_fun (out=0x7ffff4bf3d10 <bruti>, \n    T=0x7ffff4f4bc80, x=0x555559c55348) at ../src/language/es.c:1655\n#6  GENtostr (x=0x555559c55348) at ../src/language/es.c:1661\n#7  0x00007fffeaea9d14 in gcmp_sage (y=0x55555ca84ef8, x=0x555559c55348)\n    at sage/libs/pari/misc.h:60\n#8  __pyx_f_4sage_4libs_4pari_3gen_3gen__cmp_c_impl (\n    __pyx_v_left=<optimized out>, __pyx_v_right=<optimized out>)\n    at sage/libs/pari/gen.c:9747\n#9  0x00007fffee0d7697 in __pyx_f_4sage_9structure_7element_7Element__richcmp_c_impl (__pyx_v_left=0x55555a963c58, __pyx_v_right=<optimized out>, \n    __pyx_v_op=2) at sage/structure/element.c:8719\n#10 0x00007fffee0f48e4 in __pyx_f_4sage_9structure_7element_7Element__richcmp\n    (__pyx_v_left=0x55555a963c58, __pyx_v_right=0x55555c6f9db8, __pyx_v_op=2)\n    at sage/structure/element.c:8418\n#11 0x00007fffeaea0d1b in __pyx_pf_4sage_4libs_4pari_3gen_3gen_88__richcmp__ (\n    __pyx_v_op=<optimized out>, __pyx_v_right=<optimized out>, \n    __pyx_v_left=<optimized out>) at sage/libs/pari/gen.c:9709\n#12 __pyx_pw_4sage_4libs_4pari_3gen_3gen_89__richcmp__ (\n    __pyx_v_left=<optimized out>, __pyx_v_right=<optimized out>, \n    __pyx_v_op=<optimized out>) at sage/libs/pari/gen.c:9679\n#13 0x00007ffff7a705fa in try_rich_compare (v=0x55555a963c58, \n    w=0x55555c6f9db8, op=2) at Objects/object.c:617\n#14 0x00007ffff7a7318b in try_rich_compare_bool (op=2, w=0x55555c6f9db8, \n    v=0x55555a963c58) at Objects/object.c:645\n...\n```\n",
+    "created_at": "2012-11-19T03:39:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4121",
+    "user": "mjo"
+}
+```
 
 FWIW, this is happening here consistently with 5.5.rc0. Not sure if this will be useful, I compiled with my default CFLAGS:
 
@@ -6134,9 +10361,20 @@ FWIW, this is happening here consistently with 5.5.rc0. Not sure if this will be
 
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-19 14:22:39
+archive/issue_comments_004122.json:
+```json
+{
+    "body": "Ok, I can reproduce a segfault on a x86_64 system when running ell_number_field.py tests under gdb.\nThe end of the backtrace is similar to what mjo posted.\nThe beginning involves twisted, so it feels like the segfault happens when Sage quits, somewhere in quit_sage.\nThis might be http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac12215_segfault_fixes.patch as the backtrace suggests, and removing the offending PARI deallocation suggests as well.\n\nI'll retry with the patch linked above and the other fix from #12313 for polybori.",
+    "created_at": "2012-11-19T14:22:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4122",
+    "user": "jpflori"
+}
+```
 
 Ok, I can reproduce a segfault on a x86_64 system when running ell_number_field.py tests under gdb.
 The end of the backtrace is similar to what mjo posted.
@@ -6146,9 +10384,20 @@ This might be http://trac.sagemath.org/sage_trac/attachment/ticket/12215/trac122
 I'll retry with the patch linked above and the other fix from #12313 for polybori.
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-19 14:32:58
+archive/issue_comments_004123.json:
+```json
+{
+    "body": "ell_number_field.py seems fine with the two above fixes, so I guess the easiest solution is to open tickets to include these patches alone (and not all the hard work originally targetted in #12215 and #12313), make the tickets here (#715 and #11521) and there (#12215 and #12313) depend on these \"new\" tickets, and relaunch the patchbots with the new set of patches.\n\nMaybe with Nils findings as well, like what is discussed at https://groups.google.com/d/topic/sage-devel/hgQLrqnCeyA/discussion\nif a patch is devised, and #13719, or keep these two for later...",
+    "created_at": "2012-11-19T14:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4123",
+    "user": "jpflori"
+}
+```
 
 ell_number_field.py seems fine with the two above fixes, so I guess the easiest solution is to open tickets to include these patches alone (and not all the hard work originally targetted in #12215 and #12313), make the tickets here (#715 and #11521) and there (#12215 and #12313) depend on these "new" tickets, and relaunch the patchbots with the new set of patches.
 
@@ -6156,9 +10405,20 @@ Maybe with Nils findings as well, like what is discussed at https://groups.googl
 if a patch is devised, and #13719, or keep these two for later...
 
 
+
 ---
 
-Comment by mjo created at 2012-11-19 16:03:11
+archive/issue_comments_004124.json:
+```json
+{
+    "body": "The fix at #12313 is what does it for me:\n\n\n```\n$ sage -hg qapp\ntrac_12313_quit_sage.patch\n$ sage -t -long ./sage/schemes/elliptic_curves/ell_number_field.py\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\"\n\t [43.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 43.8 seconds\n```\n",
+    "created_at": "2012-11-19T16:03:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4124",
+    "user": "mjo"
+}
+```
 
 The fix at #12313 is what does it for me:
 
@@ -6177,9 +10437,20 @@ Total time for all tests: 43.8 seconds
 
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-21 13:49:22
+archive/issue_comments_004125.json:
+```json
+{
+    "body": "Got a segfault in interrupt.pyx during \"make ptestlong\" on 5.5.rc0 plus the fixes mentioned above plus some pynac related patches.\n\nI got\n{{\nFatal Python error: GC object already tracked\n}}\nfollowed by an highly uninterresting backtrace involving Python magic (from libpython itself and the Sage process and doctesting environment I guess), interrupt.so, a final call to PyTuple_New in libpython and boom (through libpthread and libcsage), but in particular nothing related to pynac, so the additional patches concerning pynac can be ruled out.",
+    "created_at": "2012-11-21T13:49:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4125",
+    "user": "jpflori"
+}
+```
 
 Got a segfault in interrupt.pyx during "make ptestlong" on 5.5.rc0 plus the fixes mentioned above plus some pynac related patches.
 
@@ -6190,25 +10461,58 @@ Fatal Python error: GC object already tracked
 followed by an highly uninterresting backtrace involving Python magic (from libpython itself and the Sage process and doctesting environment I guess), interrupt.so, a final call to PyTuple_New in libpython and boom (through libpthread and libcsage), but in particular nothing related to pynac, so the additional patches concerning pynac can be ruled out.
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-21 13:50:27
+archive/issue_comments_004126.json:
+```json
+{
+    "body": "I've not managed to reproduce it by testing interrupt.pyx alone.",
+    "created_at": "2012-11-21T13:50:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4126",
+    "user": "jpflori"
+}
+```
 
 I've not managed to reproduce it by testing interrupt.pyx alone.
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-21 15:33:48
+archive/issue_comments_004127.json:
+```json
+{
+    "body": "In fact I could after some other tens of iterations.\nBy the way it also happened that the test timed out.\nNot sure this is related though, or present without the patches, or whatever.",
+    "created_at": "2012-11-21T15:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4127",
+    "user": "jpflori"
+}
+```
 
 In fact I could after some other tens of iterations.
 By the way it also happened that the test timed out.
 Not sure this is related though, or present without the patches, or whatever.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-11-22 10:17:16
+archive/issue_comments_004128.json:
+```json
+{
+    "body": "Replying to [comment:336 mjo]:\n> The fix at #12313 is what does it for me:\n\nThe next step for me is to move the pari-fix from #12313 to a separate ticket.",
+    "created_at": "2012-11-22T10:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4128",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:336 mjo]:
 > The fix at #12313 is what does it for me:
@@ -6216,40 +10520,95 @@ Replying to [comment:336 mjo]:
 The next step for me is to move the pari-fix from #12313 to a separate ticket.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-11-22 10:26:22
+archive/issue_comments_004129.json:
+```json
+{
+    "body": "Spoke too soon. I thought you are talking about the fix that made pari be properly deallocated. But that's in a patch from #12215.\n\nSo, correcting myself: The next step is to fix pari deallocation as in #12215 on a separate ticket, and then I think my priority will be #13447, which is then likely to involve the patch from #12313.",
+    "created_at": "2012-11-22T10:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4129",
+    "user": "SimonKing"
+}
+```
 
 Spoke too soon. I thought you are talking about the fix that made pari be properly deallocated. But that's in a patch from #12215.
 
 So, correcting myself: The next step is to fix pari deallocation as in #12215 on a separate ticket, and then I think my priority will be #13447, which is then likely to involve the patch from #12313.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-11-22 10:38:30
+archive/issue_comments_004130.json:
+```json
+{
+    "body": "For the record: I created #13741, needing review (but perhaps needing a doctest).",
+    "created_at": "2012-11-22T10:38:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4130",
+    "user": "SimonKing"
+}
+```
 
 For the record: I created #13741, needing review (but perhaps needing a doctest).
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-22 17:33:57
+archive/issue_comments_004131.json:
+```json
+{
+    "body": "I've put the pbori fix from #12313 at #13746.\nI've put it as a dependency here, and #13741 because I feel this was the original problem mjo evoked although applying the other fix was sufficient to slightly modify the order ot the universe and make the problem disappear.",
+    "created_at": "2012-11-22T17:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4131",
+    "user": "jpflori"
+}
+```
 
 I've put the pbori fix from #12313 at #13746.
 I've put it as a dependency here, and #13741 because I feel this was the original problem mjo evoked although applying the other fix was sufficient to slightly modify the order ot the universe and make the problem disappear.
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-22 17:34:38
+archive/issue_comments_004132.json:
+```json
+{
+    "body": "As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...",
+    "created_at": "2012-11-22T17:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4132",
+    "user": "jpflori"
+}
+```
 
 As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-23 13:28:42
+archive/issue_comments_004133.json:
+```json
+{
+    "body": "Replying to [comment:344 jpflori]:\n> As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...\n\nChanging dependencies is fine for me. Just don't change the patch(es).",
+    "created_at": "2012-11-23T13:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4133",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:344 jpflori]:
 > As the ticket was closed, I'm not sure my idea of changind the dependencies field was a good idea...
@@ -6257,17 +10616,39 @@ Replying to [comment:344 jpflori]:
 Changing dependencies is fine for me. Just don't change the patch(es).
 
 
+
 ---
 
-Comment by jpflori created at 2012-11-29 23:06:49
+archive/issue_comments_004134.json:
+```json
+{
+    "body": "Did someone still have random failures?\nOr are we finally approaching the end here?",
+    "created_at": "2012-11-29T23:06:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4134",
+    "user": "jpflori"
+}
+```
 
 Did someone still have random failures?
 Or are we finally approaching the end here?
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-24 21:21:01
+archive/issue_comments_004135.json:
+```json
+{
+    "body": "Building Python without pymalloc, I hopefully got valgrind outputs which might point to the hopefully last problem we have to face:\n\nNot sure we got these so clearly before, but using --without-pymalloc and Valgrind (hint: finish and review #13060) I get lots of\n\n```\n==28631== Invalid read of size 8\n==28631==    at 0x10429E50: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8990)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4EBA106: insertdict (dictobject.c:530)\n==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)\n==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)\n==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)\n==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)\n==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)\n==28631==    by 0x4F24388: PyEval_EvalFrameEx (ceval.c:4718)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4E8C46F: instancemethod_call (classobject.c:2578)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F21828: PyEval_EvalFrameEx (ceval.c:4239)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F2422C: PyEval_EvalFrameEx (ceval.c:4117)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==  Address 0xbd30390 is 48 bytes inside a block of size 256 free'd\n==28631==    at 0x4C28B16: free (vg_replace_malloc.c:446)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4F5F112: collect (gcmodule.c:770)\n==28631==    by 0x4F5FB06: _PyObject_GC_Malloc (gcmodule.c:996)\n==28631==    by 0x4F5FB3C: _PyObject_GC_New (gcmodule.c:1467)\n==28631==    by 0x4E98B97: PyWrapper_New (descrobject.c:1068)\n==28631==    by 0x4EC2258: _PyObject_GenericGetAttrWithDict (object.c:1434)\n==28631==    by 0x10A6CD28: __pyx_pw_4sage_9structure_11coerce_dict_16TripleDictEraser_3__call__ (coerce_dict.c:1225)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4E7EB2D: PyObject_CallFunctionObjArgs (abstract.c:2760)\n==28631==    by 0x4EEA350: PyObject_ClearWeakRefs (weakrefobject.c:881)\n==28631==    by 0x10429E4F: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8989)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4EBA106: insertdict (dictobject.c:530)\n==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)\n==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)\n==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)\n==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)\n==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)\n```\n\nand\n\n```\n==28631== Invalid read of size 8\n==28631==    at 0x4F5FC1E: PyObject_GC_Del (gcmodule.c:210)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4EBA106: insertdict (dictobject.c:530)\n==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)\n==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)\n==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)\n==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)\n==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)\n==28631==    by 0x4F24388: PyEval_EvalFrameEx (ceval.c:4718)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4E8C46F: instancemethod_call (classobject.c:2578)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F21828: PyEval_EvalFrameEx (ceval.c:4239)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F2422C: PyEval_EvalFrameEx (ceval.c:4117)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==  Address 0xbd30360 is 0 bytes inside a block of size 256 free'd\n==28631==    at 0x4C28B16: free (vg_replace_malloc.c:446)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4F5F112: collect (gcmodule.c:770)\n==28631==    by 0x4F5FB06: _PyObject_GC_Malloc (gcmodule.c:996)\n==28631==    by 0x4F5FB3C: _PyObject_GC_New (gcmodule.c:1467)\n==28631==    by 0x4E98B97: PyWrapper_New (descrobject.c:1068)\n==28631==    by 0x4EC2258: _PyObject_GenericGetAttrWithDict (object.c:1434)\n==28631==    by 0x10A6CD28: __pyx_pw_4sage_9structure_11coerce_dict_16TripleDictEraser_3__call__ (coerce_dict.c:1225)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4E7EB2D: PyObject_CallFunctionObjArgs (abstract.c:2760)\n==28631==    by 0x4EEA350: PyObject_ClearWeakRefs (weakrefobject.c:881)\n==28631==    by 0x10429E4F: __pyx_tp_dealloc_4sage_9structure_15category_object_CategoryObject (category_object.c:8989)\n==28631==    by 0x4ED96C5: subtype_dealloc (typeobject.c:1014)\n==28631==    by 0x4EBA106: insertdict (dictobject.c:530)\n==28631==    by 0x4EBCB51: PyDict_SetItem (dictobject.c:775)\n==28631==    by 0x4EC2517: _PyObject_GenericSetAttrWithDict (object.c:1524)\n==28631==    by 0x4EC1F5E: PyObject_SetAttr (object.c:1247)\n==28631==    by 0x4F21600: PyEval_EvalFrameEx (ceval.c:2004)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4EA8F65: function_call (funcobject.c:526)\n==28631==    by 0x4E7DFED: PyObject_Call (abstract.c:2529)\n==28631==    by 0x4F1F6A6: PyEval_CallObjectWithKeywords (ceval.c:3890)\n==28631==    by 0x4F23D5A: PyEval_EvalFrameEx (ceval.c:1739)\n==28631==    by 0x4F26587: PyEval_EvalCodeEx (ceval.c:3253)\n==28631==    by 0x4F266C1: PyEval_EvalCode (ceval.c:667)\n```\n",
+    "created_at": "2012-12-24T21:21:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4135",
+    "user": "jpflori"
+}
+```
 
 Building Python without pymalloc, I hopefully got valgrind outputs which might point to the hopefully last problem we have to face:
 
@@ -6387,16 +10768,38 @@ and
 
 
 
+
 ---
 
-Comment by SimonKing created at 2012-12-25 19:23:15
+archive/issue_comments_004136.json:
+```json
+{
+    "body": "Sorry, I am not experienced enough with valgrind. I don't even know what we learn from the valgrind output. Does it tell in what function/method the invalid read occur? Does it tell what is the reason for the read being invalid? I mean: Does the read concern data that have previously been freed, or what happens?",
+    "created_at": "2012-12-25T19:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4136",
+    "user": "SimonKing"
+}
+```
 
 Sorry, I am not experienced enough with valgrind. I don't even know what we learn from the valgrind output. Does it tell in what function/method the invalid read occur? Does it tell what is the reason for the read being invalid? I mean: Does the read concern data that have previously been freed, or what happens?
 
 
+
 ---
 
-Comment by vbraun created at 2012-12-25 20:55:05
+archive/issue_comments_004137.json:
+```json
+{
+    "body": "The first line is the error, like \"Invalid read of size 8\" = the code wants to read 8 bytes from a location that it is not on the stack or hasn't been malloc'ed. Then follows the stack backtrace, first the function that caused the error then the calling function etc (just like gdb).\n\nValgrind will keep info about the most recent free's to give you a better diagnostic (this has been freed previously and you are this far into the freed space) but it won't track all frees that have ever happened (which would be prohibitive ram usage). There are some options to control this, for example\n\n```\n    --freelist-vol=<number>          volume of freed blocks queue      [20000000]\n    --freelist-big-blocks=<number>   releases first blocks with size >= [1000000]\n```\n\nsee also `valgrind --help`",
+    "created_at": "2012-12-25T20:55:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4137",
+    "user": "vbraun"
+}
+```
 
 The first line is the error, like "Invalid read of size 8" = the code wants to read 8 bytes from a location that it is not on the stack or hasn't been malloc'ed. Then follows the stack backtrace, first the function that caused the error then the calling function etc (just like gdb).
 
@@ -6410,9 +10813,20 @@ Valgrind will keep info about the most recent free's to give you a better diagno
 see also `valgrind --help`
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-26 13:16:18
+archive/issue_comments_004138.json:
+```json
+{
+    "body": "With a trial of sage-5.6.beta2, I get the following doctest error on the Skynet machine `mark` (Solaris SPARC 32-bit):\n\n```\nsage -t  --long -force_lib devel/sage/sage/calculus/wester.py\n**********************************************************************\nFile \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/devel/sage-main/sage/calculus/wester.py\", line 456:\n    sage: d = m.determinant()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[153]>\", line 1, in <module>\n        d = m.determinant()###line 456:\n    sage: d = m.determinant()\n      File \"matrix2.pyx\", line 1167, in sage.matrix.matrix2.Matrix.determinant (sage/matrix/matrix2.c:8553)\n      File \"matrix_symbolic_dense.pyx\", line 436, in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.charpoly (sage/matrix/matrix_symbolic_dense.c:3556)\n      File \"expression.pyx\", line 4911, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:23554)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 1056, in polynomial\n        res = converter()\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 1010, in arithmetic\n        ops = [self(a) for a in ex.operands()]\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 1011, in arithmetic\n        return reduce(operator, ops)\n      File \"element.pyx\", line 1682, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:14096)\n      File \"polynomial_element.pyx\", line 1156, in sage.rings.polynomial.polynomial_element.Polynomial._mul_ (sage/rings/polynomial/polynomial_element.c:11992)\n      File \"polynomial_element.pyx\", line 6165, in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__richcmp__ (sage/rings/polynomial/polynomial_element.c:42959)\n      File \"element.pyx\", line 843, in sage.structure.element.Element._richcmp (sage/structure/element.c:7870)\n      File \"coerce.pyx\", line 854, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:7932)\n      File \"coerce.pyx\", line 1009, in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9483)\n      File \"coerce.pyx\", line 1150, in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11033)\n      File \"parent.pyx\", line 1974, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:13804)\n      File \"parent.pyx\", line 2068, in sage.structure.parent.Parent.discover_coerce_map_from (sage/structure/parent.c:14231)\n      File \"parent_old.pyx\", line 507, in sage.structure.parent_old.Parent._coerce_map_from_ (sage/structure/parent_old.c:6428)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 554, in _coerce_map_from_\n        return self.coerce_map_from(base_ring) * connecting\n      File \"map.pyx\", line 649, in sage.categories.map.Map.__mul__ (sage/categories/map.c:4578)\n      File \"map.pyx\", line 689, in sage.categories.map.Map._composition (sage/categories/map.c:4696)\n      File \"/home/buildbot/build/sage/mark-1/mark_full/build/sage-5.6.beta2/local/lib/python/site-packages/sage/categories/homset.py\", line 261, in Hom\n        _cache[key] = KeyedRef(H, _cache.eraser, (id(X),id(Y),id(category)))\n      File \"coerce_dict.pyx\", line 451, in sage.structure.coerce_dict.TripleDict.__setitem__ (sage/structure/coerce_dict.c:2933)\n      File \"coerce_dict.pyx\", line 471, in sage.structure.coerce_dict.TripleDict.set (sage/structure/coerce_dict.c:3199)\n    KeyError: (26976432, 83278464, 7649040)\n**********************************************************************\n```\n\n\nThe error is reproducible, except that the numbers in the `KeyError` change.",
+    "created_at": "2012-12-26T13:16:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4138",
+    "user": "jdemeyer"
+}
+```
 
 With a trial of sage-5.6.beta2, I get the following doctest error on the Skynet machine `mark` (Solaris SPARC 32-bit):
 
@@ -6471,9 +10885,20 @@ Exception raised:
 The error is reproducible, except that the numbers in the `KeyError` change.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-26 13:23:16
+archive/issue_comments_004139.json:
+```json
+{
+    "body": "Thanks for the report, there is definitely something wrong with our Python refcounting and use of weakrefs.\nI'm currently investigating this using a debug build of Python.\nWith it, some ref counts get negative very quickly and Sage aborts because of the assert which are now tested.\nIn fact, while importing Sage, Python just has the time to:\n* create the empty set in sage/structure/parent.pyx\n* create the Mathematica interface in sage/interfaces/mathematica.pyx\n* assert fails and abort.\n\nAny idea if Sage ever worked correctly with such a build?\nI'm rebuilding a Sage 5.2 with such a build just to see.",
+    "created_at": "2012-12-26T13:23:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4139",
+    "user": "jpflori"
+}
+```
 
 Thanks for the report, there is definitely something wrong with our Python refcounting and use of weakrefs.
 I'm currently investigating this using a debug build of Python.
@@ -6487,17 +10912,39 @@ Any idea if Sage ever worked correctly with such a build?
 I'm rebuilding a Sage 5.2 with such a build just to see.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-26 14:04:34
+archive/issue_comments_004140.json:
+```json
+{
+    "body": "Bad (?) news, Sage 5.2 fails the same way.\nI've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.",
+    "created_at": "2012-12-26T14:04:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4140",
+    "user": "jpflori"
+}
+```
 
 Bad (?) news, Sage 5.2 fails the same way.
 I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-12-26 14:53:45
+archive/issue_comments_004141.json:
+```json
+{
+    "body": "Replying to [comment:352 jpflori]:\n> Bad (?) news, Sage 5.2 fails the same way.\n> I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.\n\nIt means that the debug build of Python can not (yet) be used to debug the problems introduced by this patch.\n\nI suggest that we move fixing these unrelated problems to a new ticket.\n\nHowever, the valgrind output suggests that there *is* something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of \"domain and codomain are both decref'd, which is bad if they are the same\". \n\nBut is that just a guess, or has it been confirmed?",
+    "created_at": "2012-12-26T14:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4141",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:352 jpflori]:
 > Bad (?) news, Sage 5.2 fails the same way.
@@ -6507,14 +10954,25 @@ It means that the debug build of Python can not (yet) be used to debug the probl
 
 I suggest that we move fixing these unrelated problems to a new ticket.
 
-However, the valgrind output suggests that there _is_ something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
+However, the valgrind output suggests that there *is* something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
 
 But is that just a guess, or has it been confirmed?
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-26 15:03:06
+archive/issue_comments_004142.json:
+```json
+{
+    "body": "Replying to [comment:353 SimonKing]:\n> Replying to [comment:352 jpflori]:\n> > Bad (?) news, Sage 5.2 fails the same way.\n> > I've got some FLINT related patches on top of vanilla 5.2 but have double checked I have nothing related to the memleak tickets.\n> \n> It means that the debug build of Python can not (yet) be used to debug the problems introduced by this patch.\nIf there are indeed additional problems caused by the patches here.\n> \n> I suggest that we move fixing these unrelated problems to a new ticket.\nAgreed.\n> \n> However, the valgrind output suggests that there *is* something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of \"domain and codomain are both decref'd, which is bad if they are the same\". \nKind of, there is something wrong happening and it involves TripleDict indeed, but maybe its only a consequence of a previous problem, potentially the assert that fails when Sage starts.\nLet's say that TripleDict tries to delete some of its elements but those were already deleted because of a superfluous previous decref.\nAnd when Python tries to delete them again (because a final valid strong reference has been deleted), it can randomly segfault (and did not until the inclusion of these patches!).\n\nWith the debug build, instead of randomly segfaulting, these spurious decref make the assert clauses abort the program.\n\nA realistic hypothesis is that the decref problems were already present but went unnoticed.\nIt's only the patcehs here which make a deeper use of weakrefs that revealed these previous problems.\nAnd hopefully there are no other problems introduced here (frankly after staring for hours at the new TripleDict code is does not look that bad, so we can hope it is really correct).\n\n> But is that just a guess, or has it been confirmed?\nThat was just a guess, kind of: what could be the more fish here? ok, it is when both domain and codomain are equal.",
+    "created_at": "2012-12-26T15:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4142",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:353 SimonKing]:
 > Replying to [comment:352 jpflori]:
@@ -6527,7 +10985,7 @@ If there are indeed additional problems caused by the patches here.
 > I suggest that we move fixing these unrelated problems to a new ticket.
 Agreed.
 > 
-> However, the valgrind output suggests that there _is_ something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
+> However, the valgrind output suggests that there *is* something wrong with the new `TripleDict` implementation. Is there a way to tell from the valgrind output where (i.e., for instances of what classes) the invalid reads occur? IIRC, you suggested on sage-devel that it could be related with endomorphism rings, kind of "domain and codomain are both decref'd, which is bad if they are the same". 
 Kind of, there is something wrong happening and it involves TripleDict indeed, but maybe its only a consequence of a previous problem, potentially the assert that fails when Sage starts.
 Let's say that TripleDict tries to delete some of its elements but those were already deleted because of a superfluous previous decref.
 And when Python tries to delete them again (because a final valid strong reference has been deleted), it can randomly segfault (and did not until the inclusion of these patches!).
@@ -6542,27 +11000,60 @@ And hopefully there are no other problems introduced here (frankly after staring
 That was just a guess, kind of: what could be the more fish here? ok, it is when both domain and codomain are equal.
 
 
+
 ---
 
-Comment by vbraun created at 2012-12-26 15:04:23
+archive/issue_comments_004143.json:
+```json
+{
+    "body": "The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. \n\nDo we have a ticket and/or updated spkgs for python/singular somewhere that enable all this debugging if I compile with `SAGE_DEBUG=yes`? We should push this out into a beta first, then people can actually look at their own code and see if it does something wrong.",
+    "created_at": "2012-12-26T15:04:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4143",
+    "user": "vbraun"
+}
+```
 
 The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. 
 
 Do we have a ticket and/or updated spkgs for python/singular somewhere that enable all this debugging if I compile with `SAGE_DEBUG=yes`? We should push this out into a beta first, then people can actually look at their own code and see if it does something wrong.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-12-26 15:12:08
+archive/issue_comments_004144.json:
+```json
+{
+    "body": "I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.\n\nThe fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?",
+    "created_at": "2012-12-26T15:12:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4144",
+    "user": "SimonKing"
+}
+```
 
-I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.
 
 The fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-26 15:14:28
+archive/issue_comments_004145.json:
+```json
+{
+    "body": "Replying to [comment:355 vbraun]:\n> The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. \nNot sure what you exactly mean.\nWhat I meant is that Sage was already decrefing objects too much before the patches here, so maybe we did not add anything wrong here, except that random segfaults which could already have happened before now actually do.\n> \n> Do we have a ticket and/or updated spkgs for python/singular somewhere that enable all this debugging if I compile with `SAGE_DEBUG=yes`? We should push this out into a beta first, then people can actually look at their own code and see if it does something wrong.\nI got one for Python on my computer...\n\nI've opened #13864 (the spkg is not there yet, it will be when I attach the diff).",
+    "created_at": "2012-12-26T15:14:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4145",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:355 vbraun]:
 > The negative refcounts are possibly related to this bug since this means somebody is touching a dead object to decref it. 
@@ -6575,40 +11066,84 @@ I got one for Python on my computer...
 I've opened #13864 (the spkg is not there yet, it will be when I attach the diff).
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-26 15:22:43
+archive/issue_comments_004146.json:
+```json
+{
+    "body": "Replying to [comment:356 SimonKing]:\n> I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.\n> \nWas it #13447?\n> The fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?",
+    "created_at": "2012-12-26T15:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4146",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:356 SimonKing]:
-> I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+> I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.
 > 
 Was it #13447?
 > The fact that I had to incref before deallocating suggests that something fishy was going on, and perhaps it is related?
 
 
+
 ---
 
-Comment by SimonKing created at 2012-12-26 17:18:45
+archive/issue_comments_004147.json:
+```json
+{
+    "body": "Replying to [comment:358 jpflori]:\n> Replying to [comment:356 SimonKing]:\n> > I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.\n> > \n> Was it #13447?\n\nNope. It did involve groupoids, I think.",
+    "created_at": "2012-12-26T17:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4147",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:358 jpflori]:
 > Replying to [comment:356 SimonKing]:
-> > I remember - but I do not remember the ticket number - that I had to _incref_ something in the _deallocation_ of something homset-related. It could be that it was in groupoids, but I am not sure.
+> > I remember - but I do not remember the ticket number - that I had to *incref* something in the *deallocation* of something homset-related. It could be that it was in groupoids, but I am not sure.
 > > 
 > Was it #13447?
 
 Nope. It did involve groupoids, I think.
 
 
+
 ---
 
-Comment by vbraun created at 2012-12-26 18:05:22
+archive/issue_comments_004148.json:
+```json
+{
+    "body": "I noticed that the `SAGE_DEBUG` documentation doesn't quite match what we are doing with it. So I proposed to change it at #13865.",
+    "created_at": "2012-12-26T18:05:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4148",
+    "user": "vbraun"
+}
+```
 
 I noticed that the `SAGE_DEBUG` documentation doesn't quite match what we are doing with it. So I proposed to change it at #13865.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-27 09:22:00
+archive/issue_comments_004149.json:
+```json
+{
+    "body": "Hopefully the updated Cython 0.17.3 at #13832 might fix the last bugs we encounter.\nIt indeed involves a fix concerning deallocation of weakreferable cdefed classes, see\nhttps://groups.google.com/d/topic/cython-users/4es75DeacRA/discussion for the release annoucement and\nhttps://groups.google.com/d/topic/cython-users/K5EFvq22UNI/discussion for a previous bug report.\nSo the end of the story is that the intensive of weakrefs made here just revealed bugs already present in Sage but which by some chance never produced segfaults.\n\nSee some comments as well on testing Sage with a pydebug enable Python at #13864 and the long thread at\nhttps://groups.google.com/d/topic/sage-devel/Wt7uxbDkh_A/discussion",
+    "created_at": "2012-12-27T09:22:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4149",
+    "user": "jpflori"
+}
+```
 
 Hopefully the updated Cython 0.17.3 at #13832 might fix the last bugs we encounter.
 It indeed involves a fix concerning deallocation of weakreferable cdefed classes, see
@@ -6620,16 +11155,38 @@ See some comments as well on testing Sage with a pydebug enable Python at #13864
 https://groups.google.com/d/topic/sage-devel/Wt7uxbDkh_A/discussion
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-27 23:14:55
+archive/issue_comments_004150.json:
+```json
+{
+    "body": "Please note #13870.",
+    "created_at": "2012-12-27T23:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4150",
+    "user": "jdemeyer"
+}
+```
 
 Please note #13870.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-07 12:36:10
+archive/issue_comments_004151.json:
+```json
+{
+    "body": "More bad news: #715 + #11521 cause a significant slowdown for the command\n\n```\nsage: time p = polar_plot(lambda t: (100/(100+(t-pi/2)^8))*(2-sin(7*t)-cos(30*t)/2), -pi/4, 3*pi/2, color=\"red\",plot_points=1000)\n```\n\nfrom 22 to 33 seconds. See [https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI)",
+    "created_at": "2013-01-07T12:36:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4151",
+    "user": "jdemeyer"
+}
+```
 
 More bad news: #715 + #11521 cause a significant slowdown for the command
 
@@ -6640,9 +11197,20 @@ sage: time p = polar_plot(lambda t: (100/(100+(t-pi/2)^8))*(2-sin(7*t)-cos(30*t)
 from 22 to 33 seconds. See [https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/EzFPIG6EFMI)
 
 
+
 ---
 
-Comment by SimonKing created at 2013-01-07 12:52:21
+archive/issue_comments_004152.json:
+```json
+{
+    "body": "Without #715 and friends,\n\n```\nsage: %prun p = polar_plot(lambda t: (100/(100+(t-pi/2)^8))*(2-sin(7*t)-cos(30*t)/2), -pi/4, 3*pi/2, color=\"red\",plot_points=1000) \n```\n\nyields\n\n```\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    88368   12.267    0.000   20.873    0.000 arith.py:1439(gcd)\n     9263    9.309    0.001   32.102    0.003 <string>:1(<lambda>)\n79788/39894    2.004    0.000    2.865    0.000 lazy_attribute.py:506(__get__)\n    39894    1.599    0.000    4.681    0.000 homset.py:296(__init__)\n    97631    1.145    0.000    1.737    0.000 arith.py:1611(lcm)\n    19950    0.961    0.000    6.910    0.000 homset.py:40(Hom)\n   185999    0.879    0.000    0.880    0.000 {method 'canonical_coercion' of 'sage.structure.coerce.CoercionModel_cache_maps' objects}\n 8263/999    0.824    0.000   29.602    0.030 plot.py:2307(adaptive_refinement)\n    39895    0.373    0.000    1.783    0.000 {hasattr}\n   159576    0.328    0.000    0.328    0.000 {getattr}\n    14601    0.309    0.000    0.510    0.000 quotient_fields.py:55(gcd)\n    39890    0.304    0.000    5.033    0.000 homset.py:573(__init__)\n   116811    0.259    0.000    0.259    0.000 weakref.py:55(__getitem__)\n```\n\n\nWith #715, it becomes\n\n```\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    89840   43.019    0.000   68.180    0.001 arith.py:1489(gcd)\n     9415   24.524    0.003   97.043    0.010 <string>:1(<lambda>)\n82004/41002    5.752    0.000    7.564    0.000 lazy_attribute.py:506(__get__)\n    41002    4.583    0.000   12.597    0.000 homset.py:353(__init__)\n    20504    4.108    0.000   19.894    0.001 homset.py:80(Hom)\n   189095    2.924    0.000    2.925    0.000 {method 'canonical_coercion' of 'sage.structure.coerce.CoercionModel_cache_maps' objects}\n    99255    2.392    0.000    3.942    0.000 arith.py:1661(lcm)\n 8415/999    1.517    0.000   88.121    0.088 plot.py:2316(adaptive_refinement)\n   205132    1.118    0.000    1.699    0.000 weakref.py:223(__new__)\n   164064    1.088    0.000    1.088    0.000 weakref.py:228(__init__)\n    41003    0.979    0.000    5.099    0.000 {hasattr}\n   205132    0.581    0.000    0.581    0.000 {built-in method __new__ of type object at 0x7f9b33e874a0}\n   164008    0.578    0.000    0.578    0.000 {getattr}\n    40998    0.546    0.000   13.200    0.000 homset.py:630(__init__)\n   119635    0.545    0.000    0.545    0.000 weakref.py:55(__getitem__)\n    14954    0.532    0.000    0.813    0.000 quotient_fields.py:55(gcd)\n    20499    0.424    0.000    8.366    0.000 rings.py:635(__new__)\n   133072    0.394    0.000    0.394    0.000 rational_field.py:217(__hash__)\n   114209    0.370    0.000    0.370    0.000 {method 'lcm' of 'sage.structure.element.PrincipalIdealDomainElement' objects}\n    40998    0.332    0.000   13.532    0.000 homset.py:30(__init__)\n    20499    0.330    0.000    0.330    0.000 dynamic_class.py:122(dynamic_class)\n    20499    0.304    0.000    7.942    0.000 homset.py:23(RingHomset)\n   119748    0.297    0.000    0.297    0.000 {method 'gcd' of 'sage.rings.integer.Integer' objects}\n   189095    0.262    0.000    0.262    0.000 {sage.structure.element.get_coercion_model}\n    61551    0.213    0.000    0.213    0.000 {isinstance}\n    41002    0.204    0.000    5.303    0.000 sets_cat.py:255(_element_constructor_)\n        1    0.201    0.201   98.842   98.842 plot.py:2401(generate_plot_points)\n```\n\n\nSo, it seems to me that the slow-down is in the creation of homsets.\n\nFirst question: Why are so many homsets needed in this example?\n\nSecond question: What can we do to make the creation of a homset more efficient?",
+    "created_at": "2013-01-07T12:52:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4152",
+    "user": "SimonKing"
+}
+```
 
 Without #715 and friends,
 
@@ -6711,9 +11279,20 @@ First question: Why are so many homsets needed in this example?
 Second question: What can we do to make the creation of a homset more efficient?
 
 
+
 ---
 
-Comment by SimonKing created at 2013-01-07 12:55:27
+archive/issue_comments_004153.json:
+```json
+{
+    "body": "Replying to [comment:364 SimonKing]:\n> First question: Why are so many homsets needed in this example?\n\nBy this, I mean \"Why so many even with strong cache?\"\n\nNote that #715 only involves a mild increase in the number of homsets created. But the time for creation increases dramatically.",
+    "created_at": "2013-01-07T12:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4153",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:364 SimonKing]:
 > First question: Why are so many homsets needed in this example?
@@ -6723,32 +11302,65 @@ By this, I mean "Why so many even with strong cache?"
 Note that #715 only involves a mild increase in the number of homsets created. But the time for creation increases dramatically.
 
 
+
 ---
 
-Comment by cremona created at 2013-01-07 13:07:01
+archive/issue_comments_004154.json:
+```json
+{
+    "body": "To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets?  And why also are any gcds being computed?  Is it that for each of the values t which are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?",
+    "created_at": "2013-01-07T13:07:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4154",
+    "user": "cremona"
+}
+```
 
 To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets?  And why also are any gcds being computed?  Is it that for each of the values t which are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?
 
 
+
 ---
 
-Comment by SimonKing created at 2013-01-07 13:12:53
+archive/issue_comments_004155.json:
+```json
+{
+    "body": "Replying to [comment:366 cremona]:\n> To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets? \n\nAnd in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a *strong* cache?\n\n> And why also are any gcds being computed?  Is it that for each of the values twhich are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?\n\nI don't know. But in any case, there is a regression in the time for creating a homset. I have opened #13922 for this problem.",
+    "created_at": "2013-01-07T13:12:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4155",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:366 cremona]:
 > To me it looks as if most of the extra time is in the symbolic gcd calls.  But seriously,  why on earth does potting a simple trig function involve anything as sophisticated as creating homsets? 
 
-And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a _strong_ cache?
+And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a *strong* cache?
 
 > And why also are any gcds being computed?  Is it that for each of the values twhich are being iterated over, which are rational multiples of pi,  the evaluation of sin(7*t) and cos (30*t) is being much too clever when all that is needed is a low-precision numerical value?
 
 I don't know. But in any case, there is a regression in the time for creating a homset. I have opened #13922 for this problem.
 
 
+
 ---
 
-Comment by SimonKing created at 2013-01-07 13:22:51
+archive/issue_comments_004156.json:
+```json
+{
+    "body": "Replying to [comment:367 SimonKing]:\n> And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a *strong* cache?\n\nPS: The category for this homset is always the same, namely the category of euclidean domains. It should definitely not happen that this homset is created more than once, even with a weak cache.",
+    "created_at": "2013-01-07T13:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/715#issuecomment-4156",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:367 SimonKing]:
-> And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a _strong_ cache?
+> And in particular: Why is `Set of Homomorphisms from Integer Ring to Real Interval Field with 64 bits of precision` created a couple of thousands of times, even with a *strong* cache?
 
 PS: The category for this homset is always the same, namely the category of euclidean domains. It should definitely not happen that this homset is created more than once, even with a weak cache.

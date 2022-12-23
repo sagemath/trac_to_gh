@@ -1,19 +1,44 @@
 # Issue 1753: install_scripts() conflict with make install
 
-Issue created by migration from https://trac.sagemath.org/ticket/1753
-
-Original creator: pgrinber
-
-Original creation time: 2008-01-10 22:19:51
-
+archive/issues_001753.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nWhen trying to run install_scripts()  (i.e. installing from an RPM), the desired installation directory is /usr/bin so that when the files are installed, they are available in the $PATH. This causes problems with the kash and M2 scripts. Since in order for the install_scripts() to detect those executables they have to be in the path (usually /usr/bin also), install_scripts() will try to overwrite those files with the script version. This is a problem. A possible improvement is to install the kash and M2 scripts as sage.kash or sage.M2 if install_scripts() detects that it will be overwriting the respective executables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1753\n\n",
+    "created_at": "2008-01-10T22:19:51Z",
+    "labels": [
+        "relocation",
+        "minor",
+        "bug"
+    ],
+    "title": "install_scripts() conflict with make install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1753",
+    "user": "pgrinber"
+}
+```
 Assignee: cwitty
 
 When trying to run install_scripts()  (i.e. installing from an RPM), the desired installation directory is /usr/bin so that when the files are installed, they are available in the $PATH. This causes problems with the kash and M2 scripts. Since in order for the install_scripts() to detect those executables they have to be in the path (usually /usr/bin also), install_scripts() will try to overwrite those files with the script version. This is a problem. A possible improvement is to install the kash and M2 scripts as sage.kash or sage.M2 if install_scripts() detects that it will be overwriting the respective executables.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1753
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-15 20:56:50
+archive/issue_comments_011059.json:
+```json
+{
+    "body": "Ok, this should be easy enough to fix. Axiom should probably also be installed as sage.axiom or something similar.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-15T20:56:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1753#issuecomment-11059",
+    "user": "mabshoff"
+}
+```
 
 Ok, this should be easy enough to fix. Axiom should probably also be installed as sage.axiom or something similar.
 
@@ -22,29 +47,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-05-20 08:22:02
+archive/issue_comments_011060.json:
+```json
+{
+    "body": "`make install` is no longer supported, see #1792.",
+    "created_at": "2016-05-20T08:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1753#issuecomment-11060",
+    "user": "jdemeyer"
+}
+```
 
 `make install` is no longer supported, see #1792.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-05-20 08:22:02
+archive/issue_comments_011061.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-05-20T08:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1753#issuecomment-11061",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-05-20 08:22:07
+archive/issue_comments_011062.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-05-20T08:22:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1753#issuecomment-11062",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-06-12 12:02:30
+archive/issue_comments_011063.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2016-06-12T12:02:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1753#issuecomment-11063",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

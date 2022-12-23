@@ -1,49 +1,133 @@
 # Issue 963: singular attribut getting/setting
 
-Issue created by migration from https://trac.sagemath.org/ticket/963
-
-Original creator: malb
-
-Original creation time: 2007-10-21 15:11:06
-
+archive/issues_000963.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patches provides more convenient access to attributes of Singular objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/963\n\n",
+    "created_at": "2007-10-21T15:11:06Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "enhancement"
+    ],
+    "title": "singular attribut getting/setting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/963",
+    "user": "malb"
+}
+```
 Assignee: was
 
 The attached patches provides more convenient access to attributes of Singular objects.
 
+Issue created by migration from https://trac.sagemath.org/ticket/963
+
+
+
+
 
 ---
+
+archive/issue_comments_005874.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-21T15:11:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5874",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_005875.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-21T16:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5875",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-10-21 22:44:50
+archive/issue_comments_005876.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2007-10-21T22:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5876",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2007-10-21 22:44:50
+archive/issue_comments_005877.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-21T22:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5877",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 19:45:11
+archive/issue_comments_005878.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-23T19:45:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5878",
+    "user": "malb"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 19:45:11
+archive/issue_comments_005879.json:
+```json
+{
+    "body": "applied to 2.8.9.alpha0",
+    "created_at": "2007-10-23T19:45:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/963#issuecomment-5879",
+    "user": "malb"
+}
+```
 
 applied to 2.8.9.alpha0

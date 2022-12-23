@@ -1,11 +1,21 @@
 # Issue 913: real_roots code fails if polynomial obviously has no roots
 
-Issue created by migration from https://trac.sagemath.org/ticket/913
-
-Original creator: cwitty
-
-Original creation time: 2007-10-17 15:38:15
-
+archive/issues_000913.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nThe following test case will loop forever:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + 1).real_root_intervals()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/913\n\n",
+    "created_at": "2007-10-17T15:38:15Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "real_roots code fails if polynomial obviously has no roots",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/913",
+    "user": "cwitty"
+}
+```
 Assignee: cwitty
 
 The following test case will loop forever:
@@ -17,16 +27,44 @@ sage: (x^2 + 1).real_root_intervals()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/913
+
+
+
+
 
 ---
+
+archive/issue_comments_005605.json:
+```json
+{
+    "body": "Attachment\n\nFixed.",
+    "created_at": "2007-10-20T17:19:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/913#issuecomment-5605",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 Fixed.
 
 
+
 ---
 
-Comment by was created at 2007-10-21 00:49:39
+archive/issue_comments_005606.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-21T00:49:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/913#issuecomment-5606",
+    "user": "was"
+}
+```
 
 Resolution: fixed

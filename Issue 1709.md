@@ -1,11 +1,21 @@
 # Issue 1709: [with patch] Make experimental jmol graph plotting work
 
-Issue created by migration from https://trac.sagemath.org/ticket/1709
-
-Original creator: rlm
-
-Original creation time: 2008-01-07 09:09:18
-
+archive/issues_001709.json:
+```json
+{
+    "body": "Assignee: rlm\n\nFor example, you can do\n\n```\nsage: G = graphs.DodecahedralGraph()\nsage: G.plot3d_new()\n```\n\n\nThis still needs to be cleaned up, but at least now it works instead of giving confusing errors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1709\n\n",
+    "created_at": "2008-01-07T09:09:18Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch] Make experimental jmol graph plotting work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1709",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 For example, you can do
@@ -18,23 +28,62 @@ sage: G.plot3d_new()
 
 This still needs to be cleaned up, but at least now it works instead of giving confusing errors.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1709
+
+
+
+
 
 ---
+
+archive/issue_comments_010836.json:
+```json
+{
+    "body": "Attachment\n\nYep, I've been using this and it works great.",
+    "created_at": "2008-01-08T23:05:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1709#issuecomment-10836",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 Yep, I've been using this and it works great.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-08 23:20:58
+archive/issue_comments_010837.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-08T23:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1709#issuecomment-10837",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-08 23:20:58
+archive/issue_comments_010838.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha1.",
+    "created_at": "2008-01-08T23:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1709#issuecomment-10838",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha1.

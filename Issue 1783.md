@@ -1,11 +1,21 @@
 # Issue 1783: fix latex errors with fraction field elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/1783
-
-Original creator: mhansen
-
-Original creation time: 2008-01-15 19:06:52
-
+archive/issues_001783.json:
+```json
+{
+    "body": "Assignee: malb\n\n\n```\nsage:             sage: R = PolynomialRing(QQ, 'x').fraction_field()\nsage:             sage: x = R.gen()\nsage:             sage: a = 1/x\nsage:             sage: a._FractionFieldElement__numerator = R(0)\nsage:             sage: latex(a)\n\\frac{0}{x}\n```\n\n\nIt should instead give 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1783\n\n",
+    "created_at": "2008-01-15T19:06:52Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "fix latex errors with fraction field elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1783",
+    "user": "mhansen"
+}
+```
 Assignee: malb
 
 
@@ -21,33 +31,96 @@ sage:             sage: latex(a)
 
 It should instead give 0.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1783
+
+
+
+
 
 ---
+
+archive/issue_comments_011288.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-15T19:08:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11288",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_011289.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-15T19:22:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11289",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-01-15 19:29:23
+archive/issue_comments_011290.json:
+```json
+{
+    "body": "This should go in.",
+    "created_at": "2008-01-15T19:29:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11290",
+    "user": "ncalexan"
+}
+```
 
 This should go in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 19:47:56
+archive/issue_comments_011291.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T19:47:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11291",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 19:47:56
+archive/issue_comments_011292.json:
+```json
+{
+    "body": "Both patches merged in Sage 2.10.alpha4",
+    "created_at": "2008-01-15T19:47:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11292",
+    "user": "mabshoff"
+}
+```
 
 Both patches merged in Sage 2.10.alpha4

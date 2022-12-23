@@ -1,11 +1,21 @@
 # Issue 1566: NumberField infinite recursion
 
-Issue created by migration from https://trac.sagemath.org/ticket/1566
-
-Original creator: phatsphere
-
-Original creation time: 2007-12-19 12:38:23
-
+archive/issues_001566.json:
+```json
+{
+    "body": "Assignee: was\n\nI think the input is wrong, but it should not loop forever and throw an error.\n\n\n\n```\nK3.<a>=NumberField([x^2+1,sqrt(x^3)+1])\n```\n\n\n\ngives \n\n\n```\nException (click to the left for traceback):\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\n\nhere the infinite traceback:\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server4/sage_notebook/worksheets/phatsphere/0/code/123.py\", line 4, in <module>\n    exec compile(ur'K3=NumberField([x**Integer(2)+Integer(1),sqrt(x**Integer(3))+Integer(1)],names=(\\u0027a\\u0027,)); (a,) = K3._first_ngens(Integer(1))' + '\\n', '', 'single')\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 245, in NumberField\n    return NumberFieldTower(polynomial, name)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 389, in NumberFieldTower\n    w = NumberFieldTower(v[1:], names=names[1:])\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 387, in NumberFieldTower\n    return NumberField(v[0], names=names)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 251, in NumberField\n    polynomial = polynomial.polynomial(QQ)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1344, in polynomial\n    dict([(var(V[i]),G[i]) for i in range(len(G))]), ring=R)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2825, in substitute_over_ring\n    return X._recursive_sub_over_ring(kwds, ring)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3763, in _recursive_sub_over_ring\n    new_ops = [op._recursive_sub_over_ring(kwds, ring=ring) for op in ops]\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4842, in _recursive_sub_over_ring\n    return ring(ops[0](ops[1]._recursive_sub_over_ring(kwds, ring=ring)))\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 218, in __call__\n    return x._polynomial_(self)        \n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1409, in _polynomial_\n    return self.substitute_over_ring(dict(sub), ring=R)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2825, in substitute_over_ring\n    return X._recursive_sub_over_ring(kwds, ring)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4842, in _recursive_sub_over_ring\n    return ring(ops[0](ops[1]._recursive_sub_over_ring(kwds, ring=ring)))\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 218, in __call__\n    return x._polynomial_(self)        \n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1409, in _polynomial_\n    return self.substitute_over_ring(dict(sub), ring=R)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2825, in substitute_over_ring\n    return X._recursive_sub_over_ring(kwds, ring)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4842, in _recursive_sub_over_ring\n    return ring(ops[0](ops[1]._recursive_sub_over_ring(kwds, ring=ring)))\n.\n.\n.\n File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1409, in _polynomial_\n    return self.substitute_over_ring(dict(sub), ring=R)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2825, in substitute_over_ring\n    return X._recursive_sub_over_ring(kwds, ring)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4842, in _recursive_sub_over_ring\n    return ring(ops[0](ops[1]._recursive_sub_over_ring(kwds, ring=ring)))\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 218, in __call__\n    return x._polynomial_(self)        \n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1387, in _polynomial_\n    vars = self.variables()\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3524, in variables\n    return self.simplify().variables(vars)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2555, in simplify\n    S = evaled_symbolic_expression_from_maxima_string(self._maxima_init_())\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6466, in evaled_symbolic_expression_from_maxima_string\n    return symbolic_expression_from_maxima_string(maxima.eval(x))\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n    return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/interfaces/maxima.py\", line 540, in _eval_line\n    self._synchronize()\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/interfaces/maxima.py\", line 600, in _synchronize\n    self._expect_expr(timeout=0.5)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sage/interfaces/maxima.py\", line 453, in _expect_expr\n    i = self._expect.expect(expr,timeout=timeout)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/pexpect.py\", line 911, in expect\n    compiled_pattern_list = self.compile_pattern_list(pattern)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/pexpect.py\", line 843, in compile_pattern_list\n    compiled_pattern_list.append(re.compile(p, re.DOTALL))\n  File \"/usr/local/sage-2.6/local/lib/python2.5/re.py\", line 180, in compile\n    return _compile(pattern, flags)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/re.py\", line 222, in _compile\n    p = _cache.get(cachekey)\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1566\n\n",
+    "created_at": "2007-12-19T12:38:23Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "NumberField infinite recursion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1566",
+    "user": "phatsphere"
+}
+```
 Assignee: was
 
 I think the input is wrong, but it should not loop forever and throw an error.
@@ -109,17 +119,43 @@ RuntimeError: maximum recursion depth exceeded in cmp
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1566
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-19 16:36:43
+archive/issue_comments_009966.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2007-12-19T16:36:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9966",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-12-20 23:59:47
+archive/issue_comments_009967.json:
+```json
+{
+    "body": "I'm taking a look a this....\n\nhere is a simpler example that causes the same problem:\n\n\n```\nsage: K3.<a> = NumberField(sqrt(x))\n```\n",
+    "created_at": "2007-12-20T23:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9967",
+    "user": "dmharvey"
+}
+```
 
 I'm taking a look a this....
 
@@ -132,9 +168,20 @@ sage: K3.<a> = NumberField(sqrt(x))
 
 
 
+
 ---
 
-Comment by dmharvey created at 2007-12-21 00:02:52
+archive/issue_comments_009968.json:
+```json
+{
+    "body": "aha it has nothing to do with number fields:\n\n\n```\nsage: f = sqrt(x)\nsage: g = f.polynomial(QQ)\n[boom]\n```\n",
+    "created_at": "2007-12-21T00:02:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9968",
+    "user": "dmharvey"
+}
+```
 
 aha it has nothing to do with number fields:
 
@@ -147,48 +194,127 @@ sage: g = f.polynomial(QQ)
 
 
 
+
 ---
 
-Comment by dmharvey created at 2007-12-21 00:10:17
+archive/issue_comments_009969.json:
+```json
+{
+    "body": "ok it's some nastiness to do with recursive substitution in symbolic expressions. The same thing happens with `cos(x).polynomial(QQ)` etc. I will leave this voodoo to someone else who understands the symbolic calculus package.",
+    "created_at": "2007-12-21T00:10:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9969",
+    "user": "dmharvey"
+}
+```
 
 ok it's some nastiness to do with recursive substitution in symbolic expressions. The same thing happens with `cos(x).polynomial(QQ)` etc. I will leave this voodoo to someone else who understands the symbolic calculus package.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-12-21 00:11:04
+archive/issue_comments_009970.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to calculus.",
+    "created_at": "2007-12-21T00:11:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9970",
+    "user": "dmharvey"
+}
+```
 
 Changing component from algebraic geometry to calculus.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-22 11:15:54
+archive/issue_comments_009971.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-22T11:15:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9971",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-22 11:15:54
+archive/issue_comments_009972.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-12-22T11:15:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9972",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
+
+archive/issue_comments_009973.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-22T16:57:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9973",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2007-12-22 17:47:44
+archive/issue_comments_009974.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-22T17:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9974",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-22 17:47:44
+archive/issue_comments_009975.json:
+```json
+{
+    "body": "merged in 2.9.1 rc0",
+    "created_at": "2007-12-22T17:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1566#issuecomment-9975",
+    "user": "rlm"
+}
+```
 
 merged in 2.9.1 rc0

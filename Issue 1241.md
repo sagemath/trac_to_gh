@@ -1,11 +1,21 @@
 # Issue 1241: absolute symbolic links left in "make install"
 
-Issue created by migration from https://trac.sagemath.org/ticket/1241
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-22 12:15:36
-
+archive/issues_001241.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAnother problem reported by Emmanuel Thome: the following symbolic links are absolute with respect to the\nbuild directory of SAGE, thus won't work any more after \"make install\":\n\n```\n$ find sage-2.8.13/ | while read f ; do [ -h \"$f\" ] && [ ! \\\n-e \"$f\" ] && ls -l \"$f\" ; done\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzc\\\nmp -> /tmp/sage-2.8.13/spkg/../local/bin/bzdiff\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzf\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzl\\\ness -> /tmp/sage-2.8.13/spkg/../local/bin/bzmore\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bze\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1241\n\n",
+    "created_at": "2007-11-22T12:15:36Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "absolute symbolic links left in \"make install\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1241",
+    "user": "zimmerma"
+}
+```
 Assignee: mabshoff
 
 Another problem reported by Emmanuel Thome: the following symbolic links are absolute with respect to the
@@ -25,17 +35,43 @@ grep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1241
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-22 21:39:43
+archive/issue_comments_007772.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-22T21:39:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7772",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-22 21:39:43
+archive/issue_comments_007773.json:
+```json
+{
+    "body": "I will take care of those issues.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-22T21:39:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7773",
+    "user": "mabshoff"
+}
+```
 
 I will take care of those issues.
 
@@ -44,9 +80,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by zimmerma created at 2007-12-17 12:28:05
+archive/issue_comments_007774.json:
+```json
+{
+    "body": "This problem seems fixed in sage-2.9:\n\n```\nbash-3.2$ pwd\n/usr/local/sage-2.9/sage/local/bin\nbash-3.2$ ls -l bz*\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzcat\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzcmp -> bzdiff\n-rwxr-xr-x 1 zimmerma spaces   2128 2007-12-17 11:25 bzdiff\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzegrep -> bzgrep\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzfgrep -> bzgrep\n-rwxr-xr-x 1 zimmerma spaces   1677 2007-12-17 11:25 bzgrep\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzip2\n-rwxr-xr-x 1 zimmerma spaces  14861 2007-12-17 11:25 bzip2recover\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzless -> bzmore\n-rwxr-xr-x 1 zimmerma spaces   1259 2007-12-17 11:25 bzmore\n```\n",
+    "created_at": "2007-12-17T12:28:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7774",
+    "user": "zimmerma"
+}
+```
 
 This problem seems fixed in sage-2.9:
 
@@ -68,9 +115,20 @@ lrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzless -> bzmore
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-17 19:08:46
+archive/issue_comments_007775.json:
+```json
+{
+    "body": "William verified that this issue was fixed by 2.9.final.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-17T19:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7775",
+    "user": "mabshoff"
+}
+```
 
 William verified that this issue was fixed by 2.9.final.
 
@@ -79,16 +137,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-17 19:08:46
+archive/issue_comments_007776.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-17T19:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7776",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-17 19:30:45
+archive/issue_comments_007777.json:
+```json
+{
+    "body": "Paul Zimmermann also confirmed that the issue has been solved.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-17T19:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1241",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1241#issuecomment-7777",
+    "user": "mabshoff"
+}
+```
 
 Paul Zimmermann also confirmed that the issue has been solved.
 

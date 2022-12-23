@@ -1,17 +1,44 @@
 # Issue 1555: [with patch] typos in tutorial
 
-Issue created by migration from https://trac.sagemath.org/ticket/1555
-
-Original creator: was
-
-Original creation time: 2007-12-17 17:04:06
-
+archive/issues_001555.json:
+```json
+{
+    "body": "Assignee: tba\n\nbill.p from sage-newbie found two typos in tut.tex. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1555\n\n",
+    "created_at": "2007-12-17T17:04:06Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] typos in tutorial",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1555",
+    "user": "was"
+}
+```
 Assignee: tba
 
 bill.p from sage-newbie found two typos in tut.tex. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1555
+
+
+
+
 
 ---
+
+archive/issue_comments_009916.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-17T19:32:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1555#issuecomment-9916",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2007-12-17 22:02:19
+archive/issue_comments_009917.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-17T22:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1555#issuecomment-9917",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-17 22:02:19
+archive/issue_comments_009918.json:
+```json
+{
+    "body": "Merged in 2.9.1.alpha1",
+    "created_at": "2007-12-17T22:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1555#issuecomment-9918",
+    "user": "rlm"
+}
+```
 
 Merged in 2.9.1.alpha1

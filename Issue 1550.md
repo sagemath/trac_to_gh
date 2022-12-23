@@ -1,11 +1,21 @@
 # Issue 1550: use libecm instead of pexpect+ecm binary
 
-Issue created by migration from https://trac.sagemath.org/ticket/1550
-
-Original creator: zimmerma
-
-Original creation time: 2007-12-17 13:46:48
-
+archive/issues_001550.json:
+```json
+{
+    "body": "Assignee: was\n\nI noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line \nparameters, and gets results by parsing the output of ecm.\n\nIt would be much better and more efficient to use the C interface libecm (see the ecm.h header file, and the\necmfactor.c file distributed without GMP-ECM). Note that the C interface already returns information about the\nfound factor and the cofactor (prime, composite). Also, the libecm.a file is already compiled by SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1550\n\n",
+    "created_at": "2007-12-17T13:46:48Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "use libecm instead of pexpect+ecm binary",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1550",
+    "user": "zimmerma"
+}
+```
 Assignee: was
 
 I noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line 
@@ -15,34 +25,97 @@ It would be much better and more efficient to use the C interface libecm (see th
 ecmfactor.c file distributed without GMP-ECM). Note that the C interface already returns information about the
 found factor and the cofactor (prime, composite). Also, the libecm.a file is already compiled by SAGE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1550
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-21 11:41:31
+archive/issue_comments_009883.json:
+```json
+{
+    "body": "This is a great idea.  I thought that Yi Qiang already implemented something like this though, but evidently not (or it didn't get into sage).  I'll ping him again about this.",
+    "created_at": "2008-01-21T11:41:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9883",
+    "user": "was"
+}
+```
 
 This is a great idea.  I thought that Yi Qiang already implemented something like this though, but evidently not (or it didn't get into sage).  I'll ping him again about this.
 
 
+
 ---
 
-Comment by rlm created at 2008-01-21 20:55:04
+archive/issue_comments_009884.json:
+```json
+{
+    "body": "Needs serious improvement- just a minimal implementation, probably in the wrong directory...",
+    "created_at": "2008-01-21T20:55:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9884",
+    "user": "rlm"
+}
+```
 
 Needs serious improvement- just a minimal implementation, probably in the wrong directory...
 
 
+
 ---
+
+archive/issue_comments_009885.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-21T20:56:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9885",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-01-22 01:22:31
+archive/issue_comments_009886.json:
+```json
+{
+    "body": "Patch on top of libecm.patch",
+    "created_at": "2008-01-22T01:22:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9886",
+    "user": "rlm"
+}
+```
 
 Patch on top of libecm.patch
 
 
+
 ---
+
+archive/issue_comments_009887.json:
+```json
+{
+    "body": "Attachment\n\nReview: This is a great patch, which could in addition serve as example of how to interface a C\nlibrary with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):\nfactors 2 and 3 are special within ECM. I would suggest a more difficult example, for instance\necmfactor(1022117, 10.0) which sometimes outputs (True, 1013), sometimes (True, 1009),\nsometimes (True, 1022117), or (False, None). However this might cause problems with the doctests:\nhow to check functions with non-deterministic output?",
+    "created_at": "2008-01-22T08:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9887",
+    "user": "zimmerma"
+}
+```
 
 Attachment
 
@@ -54,9 +127,20 @@ sometimes (True, 1022117), or (False, None). However this might cause problems w
 how to check functions with non-deterministic output?
 
 
+
 ---
 
-Comment by rlm created at 2008-01-22 17:09:34
+archive/issue_comments_009888.json:
+```json
+{
+    "body": "Here's an example (whenever 'random' occurs, the output is not checked against the expected output):\n\n\n```\nsage: ecmfactor(1022117, 10.0) # random output\n(True, 1022117)\n```\n",
+    "created_at": "2008-01-22T17:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9888",
+    "user": "rlm"
+}
+```
 
 Here's an example (whenever 'random' occurs, the output is not checked against the expected output):
 
@@ -68,15 +152,37 @@ sage: ecmfactor(1022117, 10.0) # random output
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-23 04:20:03
+archive/issue_comments_009889.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-23T04:20:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9889",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-23 04:20:03
+archive/issue_comments_009890.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha2",
+    "created_at": "2008-01-23T04:20:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1550",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9890",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha2

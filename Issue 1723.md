@@ -1,11 +1,25 @@
 # Issue 1723: better image support
 
-Issue created by migration from https://trac.sagemath.org/ticket/1723
-
-Original creator: boothby
-
-Original creation time: 2008-01-08 19:33:47
-
+archive/issues_001723.json:
+```json
+{
+    "body": "Assignee: was\n\nAdd functionality to read images into matrices, and combine matrices to make images.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1723\n\n",
+    "created_at": "2008-01-08T19:33:47Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "better image support",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1723",
+    "user": "boothby"
+}
+```
 Assignee: was
 
 Add functionality to read images into matrices, and combine matrices to make images.
+
+Issue created by migration from https://trac.sagemath.org/ticket/1723
+
+

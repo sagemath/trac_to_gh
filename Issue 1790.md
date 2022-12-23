@@ -1,11 +1,21 @@
 # Issue 1790: Sage 2.10.alpha3: numerical noise doctest failure with gcc 4.2.2/x86-64
 
-Issue created by migration from https://trac.sagemath.org/ticket/1790
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-16 01:40:06
-
+archive/issues_001790.json:
+```json
+{
+    "body": "Assignee: failure\n\nAs reported by Kate in https://groups.google.com/group/sage-devel/t/1cd682b8f3e49748\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx**********************************************************************\nFile \"polynomial_element.pyx\", line 2644:\n    sage: p.roots(ring=ComplexIntervalField(200))\nExpected:\n\n[([1.1673039782614186842560458998548421807205603715254890391400816 ..\n1.1673039782614186842560458998548421807205603715254890391400829], 1),\n([0.18123244446987538390180023778112063996871646618462304743773153 ..\n0.18123244446987538390180023778112063996871646618462304743773341] +\n[1.0839541013177106684303444929807665742736402431551156543011306 ..\n1.0839541013177106684303444929807665742736402431551156543011344]*I,\n1),\n([0.18123244446987538390180023778112063996871646618462304743773153 ..\n0.18123244446987538390180023778112063996871646618462304743773341] -\n[1.0839541013177106684303444929807665742736402431551156543011306 ..\n1.0839541013177106684303444929807665742736402431551156543011344]*I,\n1),\n([-0.76488443360058472602982318770854173032899665194736756700777454 ..\n-0.76488443360058472602982318770854173032899665194736756700777...] +\n[0.35247154603172624931794709140258105439420648082424733283769... ..\n0.35247154603172624931794709140258105439420648082424733283769...]*I,\n1),\n([-0.76488443360058472602982318770854173032899665194736756700777454 ..\n-0.764884433600584726029823187708541730328996651947367567007772...] -\n[0.352471546031726249317947091402581054394206480824247332837691... ..\n0.35247154603172624931794709140258105439420648082424733283769341]*I,\n1)]\nGot:\n\n[([1.1673039782614186842560458998548421807205603715254890391400816 ..\n1.1673039782614186842560458998548421807205603715254890391400829], 1),\n([0.18123244446987538390180023778112063996871646618462304743773153 ..\n0.18123244446987538390180023778112063996871646618462304743773341] +\n[1.0839541013177106684303444929807665742736402431551156543011306 ..\n1.0839541013177106684303444929807665742736402431551156543011344]*I,\n1),\n([0.18123244446987538390180023778112063996871646618462304743773153 ..\n0.18123244446987538390180023778112063996871646618462304743773341] -\n[1.0839541013177106684303444929807665742736402431551156543011306 ..\n1.0839541013177106684303444929807665742736402431551156543011344]*I,\n1),\n([-0.76488443360058472602982318770854173032899665194736756700777516 ..\n-0.76488443360058472602982318770854173032899665194736756700777204] +\n[0.35247154603172624931794709140258105439420648082424733283769091 ..\n0.35247154603172624931794709140258105439420648082424733283769372]*I,\n1),\n([-0.76488443360058472602982318770854173032899665194736756700777454 ..\n-0.76488443360058472602982318770854173032899665194736756700777204] -\n[0.35247154603172624931794709140258105439420648082424733283769091 ..\n0.35247154603172624931794709140258105439420648082424733283769372]*I,\n1)]\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2666:\n    sage: p.roots(ring=CIF)\nExpected:\n    [([-1.4142135623730952 .. -1.4142135623730949], 1),\n([1.4142135623730949 .. 1.4142135623730952], 1),\n([-1.2146389322441827 .. -1.2146389322441821] -\n[0.1414250525823937... .. 0.1414250525823939...]*I, 2),\n([-0.141425052582393... .. -0.14142505258239376] +\n[1.2146389322441821 .. 1.2146389322441827]*I, 2),\n([0.141425052582393... .. 0.141425052582393...] -\n[1.2146389322441821 .. 1.2146389322441827]*I, 2),\n([1.2146389322441821 .. 1.2146389322441827] + [0.14142505258239376 ..\n0.14142505258239399]*I, 2)]\nGot:\n    [([-1.4142135623730952 .. -1.4142135623730949], 1),\n([1.4142135623730949 .. 1.4142135623730952], 1),\n([-1.2146389322441827 .. -1.2146389322441821] -\n[0.14142505258239373 .. 0.14142505258239397]*I, 2),\n([-0.14142505258239397 .. -0.14142505258239373] +\n[1.2146389322441821 .. 1.2146389322441827]*I, 2),\n([0.14142505258239376 .. 0.14142505258239397] - [1.2146389322441821 ..\n1.2146389322441827]*I, 2), ([1.2146389322441821 .. 1.2146389322441827]\n+ [0.14142505258239376 .. 0.14142505258239399]*I, 2)]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1790\n\n",
+    "created_at": "2008-01-16T01:40:06Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 2.10.alpha3: numerical noise doctest failure with gcc 4.2.2/x86-64",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1790",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 As reported by Kate in https://groups.google.com/group/sage-devel/t/1cd682b8f3e49748
@@ -91,50 +101,133 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1790
+
+
+
+
 
 ---
+
+archive/issue_comments_011324.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-16T03:00:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11324",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-16 03:40:15
+archive/issue_comments_011325.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-16T03:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11325",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-16 03:40:15
+archive/issue_comments_011326.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha4",
+    "created_at": "2008-01-16T03:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11326",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha4
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-16 05:07:35
+archive/issue_comments_011327.json:
+```json
+{
+    "body": "Wait, RIF is based on mpfr/gmp, right? So the answers should be the same right down to the last bit on any platform...something deeper is going on here that (unless I'm mistaken) shouldn't just be covered up with ... in the doctests.",
+    "created_at": "2008-01-16T05:07:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11327",
+    "user": "robertwb"
+}
+```
 
 Wait, RIF is based on mpfr/gmp, right? So the answers should be the same right down to the last bit on any platform...something deeper is going on here that (unless I'm mistaken) shouldn't just be covered up with ... in the doctests.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-16 05:07:35
+archive/issue_comments_011328.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-01-16T05:07:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11328",
+    "user": "robertwb"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-16 05:07:35
+archive/issue_comments_011329.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-01-16T05:07:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11329",
+    "user": "robertwb"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-16 05:15:26
+archive/issue_comments_011330.json:
+```json
+{
+    "body": "Well, Carl Witty and others are aware of the issue and we have been \"fixing\" those issue like this for a while. I think the real issue might be that the routine that converts the binary representation to string does give you more decimal places than you ask for to ensure that on reconversion you will get the same binary representation. But that is an issue that should be discussed on sage-devel with people like Paul Zimmermann. For that please open another ticket and close this ticket, unless you disagree.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-16T05:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11330",
+    "user": "mabshoff"
+}
+```
 
 Well, Carl Witty and others are aware of the issue and we have been "fixing" those issue like this for a while. I think the real issue might be that the routine that converts the binary representation to string does give you more decimal places than you ask for to ensure that on reconversion you will get the same binary representation. But that is an issue that should be discussed on sage-devel with people like Paul Zimmermann. For that please open another ticket and close this ticket, unless you disagree.
 
@@ -143,23 +236,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-16 05:22:38
+archive/issue_comments_011331.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-16T05:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11331",
+    "user": "robertwb"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-16 05:22:38
+archive/issue_comments_011332.json:
+```json
+{
+    "body": "If Carl Witty and others are already aware of the issue, I'm more confident about this. I'll re-close the ticket.",
+    "created_at": "2008-01-16T05:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11332",
+    "user": "robertwb"
+}
+```
 
 If Carl Witty and others are already aware of the issue, I'm more confident about this. I'll re-close the ticket.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-16 05:26:54
+archive/issue_comments_011333.json:
+```json
+{
+    "body": "Well, I am fairly sure that Carl knows about this since it has been discussed in his presence in IRC. Please also have a look at [and its follow ups]\n\nhttp://websympa.loria.fr/wwsympa/arc/mpfr/2008-01/msg00039.html\n\nwhich discusses reqdigits in our mpfr wrapper. This might cause some of the above issue, but we should really discuss this on sage-devel in my opinion and then comment in the sources, so this is solved once and for all. I had the same reaction as you initially since I also expected the results from computations in this ring [and the mpfi wrapper] to be identical every time.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-16T05:26:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11333",
+    "user": "mabshoff"
+}
+```
 
 Well, I am fairly sure that Carl knows about this since it has been discussed in his presence in IRC. Please also have a look at [and its follow ups]
 
@@ -172,6 +298,19 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_011334.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-16T16:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1790",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1790#issuecomment-11334",
+    "user": "mabshoff"
+}
+```
 
 Attachment

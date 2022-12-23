@@ -1,11 +1,21 @@
 # Issue 1439: (EASY) make install_package('...') through the notebook far less verbose
 
-Issue created by migration from https://trac.sagemath.org/ticket/1439
-
-Original creator: was
-
-Original creation time: 2007-12-09 20:06:02
-
+archive/issues_001439.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was\n\nBackground:\n\n\n```\nOn Dec 9, 2007 1:00 PM, root <daly@axiom-developer.org> wrote:\n> >The main plus of this packaging for sage is that it builds from\n> >source quickly (in a few minutes) using precompiled clisp files.\n> \n> Well, on my 2Ghz machine with 2 Gig of memory running VMWare and\n> using the sage vmware image (but upgrading the VM to have 1G memory)\n> I started the package-install at 3:30am this morning. It is now\n> 2:10pm and the build is still \"in-process\". They are heavy things,\n> your minutes :-)\n\nOn a 1.8Ghz opteron (sagemath.org) it takes 18 minutes (I just tested \nthe install).   I am completely baffled that it would take > 11 hours to\ninstall into vmware under windows.  I'll look into that next time I get a\nchance to use windows (in my office).   Thanks for reporting the problem. \n\n> Likely a portion of the problem is due to starting the package-install\n> from the notebook. I'm running native windows and sage in the VM and\n> connecting thru the browser.\n\nThat is very likely the problem.  The output of installing packages through\nthe notebook is way too verbose, so this is in fact a likely source of\nthe problem (which could be remedied).   Better would be to login as \"manage\"\nand type \"sage -i fricas-0.3.1\".  \n\n> I suspect a lot of CPU is going into running jsMath to redraw the\n> output page. The Fricas build has a lot of output (which could be\n> suppressed during package-install) and jsMath is not fast. Axiom\n> has a NOISE variable in the Makefiles to suppress most output.\n\nExcellent. \n\n> You might consider a note suggesting that installs be done from\n> inside the virtual machine rather than thru the notebook interface.\n\nBetter would be to fix things so they work through the notebook well.\n\n```\n\n\nThe fix would likely be to execute the update command, but pipe everything\nto a file, and include a link to that file in the output (so one can look\nat it and press refresh in the browser to test status).  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1439\n\n",
+    "created_at": "2007-12-09T20:06:02Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "(EASY) make install_package('...') through the notebook far less verbose",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1439",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  was
@@ -59,10 +69,25 @@ at it and press refresh in the browser to test status).
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1439
+
+
+
+
 
 ---
 
-Comment by was created at 2007-12-10 07:08:24
+archive/issue_comments_009282.json:
+```json
+{
+    "body": "This confirms my hypothesis...\n\n\n```\nWell,per your request, I logged in to the Sage VM and did\n sage -f fricas-0.3.1\nsimply hangs. However,\n sage -f axiom4sage-0.3.1\nsucceeds and shows a total time of\n real 18m42\nor, if I include network time\n real 19.6\nwhich is about the wall-clock time.\n\nSo there appears to be a suggestion that it might\nbe a good idea to do package installs directly rather\nthan thru the notebook interface. Potentially this\ncould be due to the large amount of screen output.\n\nApparently the package rename didn't work.\n\n```\n",
+    "created_at": "2007-12-10T07:08:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#issuecomment-9282",
+    "user": "was"
+}
+```
 
 This confirms my hypothesis...
 
@@ -89,9 +114,20 @@ Apparently the package rename didn't work.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 01:38:15
+archive/issue_comments_009283.json:
+```json
+{
+    "body": "This is related to #2174.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T01:38:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#issuecomment-9283",
+    "user": "mabshoff"
+}
+```
 
 This is related to #2174.
 
@@ -100,22 +136,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-18 00:56:58
+archive/issue_comments_009284.json:
+```json
+{
+    "body": "Doesn't seem to be a problem anymore. Close?",
+    "created_at": "2010-01-18T00:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#issuecomment-9284",
+    "user": "timdumol"
+}
+```
 
 Doesn't seem to be a problem anymore. Close?
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 03:16:50
+archive/issue_comments_009285.json:
+```json
+{
+    "body": "Works with sagenb-0.6",
+    "created_at": "2010-01-19T03:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#issuecomment-9285",
+    "user": "timdumol"
+}
+```
 
 Works with sagenb-0.6
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 03:16:50
+archive/issue_comments_009286.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T03:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1439",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1439#issuecomment-9286",
+    "user": "timdumol"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 1187: bug in G.conjugacy_classes_subgroups()
 
-Issue created by migration from https://trac.sagemath.org/ticket/1187
-
-Original creator: was
-
-Original creation time: 2007-11-16 20:45:35
-
+archive/issues_001187.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nThe following should work and be instant:\n\n\n```\nsage: G = SymmetricGroup(5)\nsage: G.conjugacy_classes_subgroups()\n\nRuntimeError:\nGap produced error output\nVariable: 'Sym' must have a value\n\n\n   executing $sage85:=Sym( [ 1 .. 5 ] );;\n```\n\n\n\nI really wanted this to find out which representative subgroups\nare transitive, but can't do that either since `G.is_transitive()`\nisn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1187\n\n",
+    "created_at": "2007-11-16T20:45:35Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "bug in G.conjugacy_classes_subgroups()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1187",
+    "user": "was"
+}
+```
 Assignee: mhansen
 
 The following should work and be instant:
@@ -29,22 +39,61 @@ I really wanted this to find out which representative subgroups
 are transitive, but can't do that either since `G.is_transitive()`
 isn't wrapped -- since Gap has IsTransitive, this would be trivial to wrap.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1187
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-04-24 22:25:44
+archive/issue_comments_007328.json:
+```json
+{
+    "body": "Changing component from combinatorics to group_theory.",
+    "created_at": "2008-04-24T22:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7328",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from combinatorics to group_theory.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-24 22:25:44
+archive/issue_comments_007329.json:
+```json
+{
+    "body": "Changing assignee from mhansen to joyner.",
+    "created_at": "2008-04-24T22:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7329",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from mhansen to joyner.
 
 
+
 ---
+
+archive/issue_comments_007330.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch fixes what I believe is a bug in conjugacy_classes_subgroups(), and adds the method is_transitive().  Note that the optional GAP database is *not* required.\n\nTimings before the patch:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 151.62 s, sys: 16.75 s, total: 168.37 s\nWall time: 175.53\n```\n\n\nand after:\n\n\n```\nsage: G = SymmetricGroup(6)\nsage: time cl = G.conjugacy_classes_subgroups()\nCPU times: user 0.54 s, sys: 0.09 s, total: 0.63 s\nWall time: 1.35\n```\n",
+    "created_at": "2008-04-24T22:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7330",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -73,43 +122,109 @@ Wall time: 1.35
 
 
 
+
 ---
 
-Comment by wdj created at 2008-04-24 23:10:47
+archive/issue_comments_007331.json:
+```json
+{
+    "body": "Is this based on 3.0? I am getting aborted when I try to hg_sage.apply it.",
+    "created_at": "2008-04-24T23:10:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7331",
+    "user": "wdj"
+}
+```
 
 Is this based on 3.0? I am getting aborted when I try to hg_sage.apply it.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-24 23:16:36
+archive/issue_comments_007332.json:
+```json
+{
+    "body": "Yes, it's based on 3.0, with no other patches around.",
+    "created_at": "2008-04-24T23:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7332",
+    "user": "AlexGhitza"
+}
+```
 
 Yes, it's based on 3.0, with no other patches around.
 
 
+
 ---
 
-Comment by wdj created at 2008-04-24 23:32:14
+archive/issue_comments_007333.json:
+```json
+{
+    "body": "Thanks - I got it applied now. Will be running test, etc on it tonight.",
+    "created_at": "2008-04-24T23:32:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7333",
+    "user": "wdj"
+}
+```
 
 Thanks - I got it applied now. Will be running test, etc on it tonight.
 
 
+
 ---
 
-Comment by wdj created at 2008-04-25 02:44:17
+archive/issue_comments_007334.json:
+```json
+{
+    "body": "Looks like a great patch, adding functionality, fixing a bug and correcting some typos in the permgp.py docstrings. Passes sage -testall on an ubuntu 7.10amd64 machine and an intel macbook running OS10.4.",
+    "created_at": "2008-04-25T02:44:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7334",
+    "user": "wdj"
+}
+```
 
 Looks like a great patch, adding functionality, fixing a bug and correcting some typos in the permgp.py docstrings. Passes sage -testall on an ubuntu 7.10amd64 machine and an intel macbook running OS10.4.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 03:05:09
+archive/issue_comments_007335.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T03:05:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7335",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 03:05:09
+archive/issue_comments_007336.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-25T03:05:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1187#issuecomment-7336",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0

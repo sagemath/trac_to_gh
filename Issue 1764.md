@@ -1,11 +1,21 @@
 # Issue 1764: the url in the trac emails is wrong
 
-Issue created by migration from https://trac.sagemath.org/ticket/1764
-
-Original creator: was
-
-Original creation time: 2008-01-13 04:46:12
-
+archive/issues_001764.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe url in trac emails is typically something like\n\n```\nhttp://modular.math.washington.edu:9002/sage_trac/ticket/1657\n```\n\nbut it should be\n\n```\nhttp://trac.sagemath.org/sage_trac/ticket/1657\n```\n\n\nThis is very bad, because people behind certain firewalls can only\nview the latter URL and not the former.  Also the latter URL is stable,\nbut the former could easily change, e.g., if I run trac on a different port. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1764\n\n",
+    "created_at": "2008-01-13T04:46:12Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "bug"
+    ],
+    "title": "the url in the trac emails is wrong",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1764",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 The url in trac emails is typically something like
@@ -25,16 +35,42 @@ This is very bad, because people behind certain firewalls can only
 view the latter URL and not the former.  Also the latter URL is stable,
 but the former could easily change, e.g., if I run trac on a different port. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1764
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-01-13 11:35:58
+archive/issue_comments_011142.json:
+```json
+{
+    "body": "dupe of #1710",
+    "created_at": "2008-01-13T11:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1764",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1764#issuecomment-11142",
+    "user": "malb"
+}
+```
 
 dupe of #1710
 
 
+
 ---
 
-Comment by malb created at 2008-01-13 11:35:58
+archive/issue_comments_011143.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-01-13T11:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1764",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1764#issuecomment-11143",
+    "user": "malb"
+}
+```
 
 Resolution: duplicate

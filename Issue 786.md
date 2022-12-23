@@ -1,11 +1,21 @@
 # Issue 786: standard smith normal form
 
-Issue created by migration from https://trac.sagemath.org/ticket/786
-
-Original creator: syazdani
-
-Original creation time: 2007-10-02 13:38:17
-
+archive/issues_000786.json:
+```json
+{
+    "body": "Assignee: syazdani\n\nKeywords: smith_form\n\nThe smith_form function for integer dense matrices are printed backward from the usual notation. This is because pari prints them backward.\n\nThe enclosed patch fixes this problem, by permuting the entries appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/786\n\n",
+    "created_at": "2007-10-02T13:38:17Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "standard smith normal form",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/786",
+    "user": "syazdani"
+}
+```
 Assignee: syazdani
 
 Keywords: smith_form
@@ -14,16 +24,44 @@ The smith_form function for integer dense matrices are printed backward from the
 
 The enclosed patch fixes this problem, by permuting the entries appropriately.
 
+Issue created by migration from https://trac.sagemath.org/ticket/786
+
+
+
+
 
 ---
+
+archive/issue_comments_004711.json:
+```json
+{
+    "body": "Attachment\n\nThe previous attachement was filled with all sorts of other changes. This should only be one function added to integer_dense function.",
+    "created_at": "2007-10-02T18:13:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/786#issuecomment-4711",
+    "user": "syazdani"
+}
+```
 
 Attachment
 
 The previous attachement was filled with all sorts of other changes. This should only be one function added to integer_dense function.
 
 
+
 ---
 
-Comment by was created at 2007-10-04 18:57:02
+archive/issue_comments_004712.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T18:57:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/786#issuecomment-4712",
+    "user": "was"
+}
+```
 
 Resolution: fixed

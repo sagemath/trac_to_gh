@@ -1,25 +1,63 @@
 # Issue 1530: [with patch] building tut.tex is currently broken
 
+archive/issues_001530.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1530\n\n",
+    "created_at": "2007-12-16T02:02:38Z",
+    "labels": [
+        "algebraic geometry",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch] building tut.tex is currently broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1530",
+    "user": "was"
+}
+```
+Assignee: was
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/1530
 
-Original creator: was
-
-Original creation time: 2007-12-16 02:02:38
-
-Assignee: was
 
 
 
 
 ---
+
+archive/issue_comments_009777.json:
+```json
+{
+    "body": "Attachment\n\nMerged in 2.9.rc3.",
+    "created_at": "2007-12-16T03:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1530",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1530#issuecomment-9777",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged in 2.9.rc3.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 03:06:42
+archive/issue_comments_009778.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T03:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1530",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1530#issuecomment-9778",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

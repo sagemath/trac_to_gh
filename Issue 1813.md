@@ -1,18 +1,45 @@
 # Issue 1813: [with patch] misc enhancements for ref.pdf
 
-Issue created by migration from https://trac.sagemath.org/ticket/1813
-
-Original creator: malb
-
-Original creation time: 2008-01-17 22:48:17
-
+archive/issues_001813.json:
+```json
+{
+    "body": "Assignee: tba\n\n* SAGE => Sage (this is the official spelling now)\n* some options for the hyperlink\n\nIssue created by migration from https://trac.sagemath.org/ticket/1813\n\n",
+    "created_at": "2008-01-17T22:48:17Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch] misc enhancements for ref.pdf",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1813",
+    "user": "malb"
+}
+```
 Assignee: tba
 
-** SAGE => Sage (this is the official spelling now)
- * some options for the hyperlink
+* SAGE => Sage (this is the official spelling now)
+* some options for the hyperlink
+
+Issue created by migration from https://trac.sagemath.org/ticket/1813
+
+
+
 
 
 ---
+
+archive/issue_comments_011462.json:
+```json
+{
+    "body": "Attachment\n\nPatch looks good to me. \n\nCheers,\n\nMichael",
+    "created_at": "2008-01-19T18:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1813#issuecomment-11462",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -23,15 +50,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 20:09:34
+archive/issue_comments_011463.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-19T20:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1813#issuecomment-11463",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 20:09:34
+archive/issue_comments_011464.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha0",
+    "created_at": "2008-01-19T20:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1813#issuecomment-11464",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha0

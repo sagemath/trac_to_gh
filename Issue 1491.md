@@ -1,11 +1,21 @@
 # Issue 1491: [with patch] improve conversion from interface to sage objects (i.e., the dot sage method)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1491
-
-Original creator: was
-
-Original creation time: 2007-12-13 20:22:35
-
+archive/issues_001491.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Dec 13, 2007 11:54 AM, Timothy Clemans <timothy.clemans@gmail.com> wrote:\n> \n> I'm getting\n> \n> {{{id=2|\n> def math_bessel_K(nu,x):\n>        return mathematica(nu).BesselK(x).N(20).sage()\n> math_bessel_K(2,I)\n> ///\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n>   File \"/home/tclemans/.sage/sage_notebook/worksheets/admin/5/code/\n> 9.py\", line 6, in <module>\n>     exec compile(ur'math_bessel_K(Integer(2),I)' + '\\n', '', 'single')\n>   File \"/home/was/s/data/extcode/sage/\", line 1, in <module>\n> \n>   File \"/home/tclemans/.sage/sage_notebook/worksheets/admin/5/code/\n> 9.py\", line 5, in math_bessel_K\n>     return mathematica(nu).BesselK(x).N(Integer(20)).sage()\n>   File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/\n> expect.py\", line 1086, in sage\n>     return self._sage_()\n>   File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/\n> expect.py\", line 1079, in _sage_\n>     return sage.misc.sage_eval.sage_eval(repr(self))\n>   File \"/home/was/s/local/lib/python2.5/site-packages/sage/misc/\n> sage_eval.py\", line 112, in sage_eval\n>     raise SyntaxError, \"%s\\nError using SAGE to evaluate '%s'\"%(msg,\n> p)\n> SyntaxError: invalid syntax (<string>, line 1)\n> Error using SAGE to evaluate '-\n> RealNumber('2.592886175491196978167651322538251462935637034451900356688')\n> +\n> \n> RealNumber('0.180489972066962026629620880838378650496225604668529521981')*I'\n> }}}\n\nThat's coming from a newline, which appears in Mathematica 5 I guess, but not 6.  Anyway,\nthe patch I justed posted at \n\nfixes the problem.  Alternatively rewrite the function like this:\n\nsage: def math_bessel_K(nu,x):\n  return sage_eval(repr(mathematica(nu).BesselK(x).N(20)).replace('\\n',''))\n\nImportant note: The conversion from Mathematica to Sage, i.e., mathematica_object.sage()\nis very naive still -- all it is is basically sage_eval(repr(...))!   This could/would be improved\nif somebody cared a lot.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1491\n\n",
+    "created_at": "2007-12-13T20:22:35Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] improve conversion from interface to sage objects (i.e., the dot sage method)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1491",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -65,28 +75,78 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1491
+
+
+
+
 
 ---
+
+archive/issue_comments_009590.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-13T20:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1491#issuecomment-9590",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-15 05:18:01
+archive/issue_comments_009591.json:
+```json
+{
+    "body": "Looks good.  (Looks reasonable, and sage/interfaces/mathematica.py doctests pass on sage.math.)",
+    "created_at": "2007-12-15T05:18:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1491#issuecomment-9591",
+    "user": "cwitty"
+}
+```
 
 Looks good.  (Looks reasonable, and sage/interfaces/mathematica.py doctests pass on sage.math.)
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 05:40:10
+archive/issue_comments_009592.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T05:40:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1491#issuecomment-9592",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 05:40:10
+archive/issue_comments_009593.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T05:40:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1491#issuecomment-9593",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

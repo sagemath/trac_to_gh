@@ -1,11 +1,21 @@
 # Issue 1323: generate all subspaces of a vector space/projective space
 
-Issue created by migration from https://trac.sagemath.org/ticket/1323
-
-Original creator: jason
-
-Original creation time: 2007-11-28 20:18:47
-
+archive/issues_001323.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mhansen\n\nFrom Chris Godsil's wishlist:\n\n\n```\n>>> Sometimes I want to construct graphs whose vertices are subspaces of a\n>>> vector space over a finite field. It could be useful to have a\n>>> generator for\n>>> the lines of the associated projective space, or even subspaces of a given\n>>> dimension.\n>> Is there an easy way to generate all of the subspaces of a vector space\n>> already in Sage, maybe restricted to a particular dimension, from the\n>> original vector space?\n> Maybe make a ticket for this?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1323\n\n",
+    "created_at": "2007-11-28T20:18:47Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "generate all subspaces of a vector space/projective space",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1323",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  mhansen
@@ -27,10 +37,25 @@ From Chris Godsil's wishlist:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1323
+
+
+
+
 
 ---
 
-Comment by rlm created at 2008-09-25 23:07:40
+archive/issue_comments_008476.json:
+```json
+{
+    "body": "Here is a method for iterating over dimension `k` subspaces of a space of dimension `n`:\n\nFirst, suppose that `F` is a finite field, and our ambient vector space is just `F^n`.\n\nAny subspace of dimension `k` is uniquely described as the rowspace of a `k x n` matrix in reduced row echelon form. This is determined by which columns are pivots, and what the entries of the remaining positions are. Thus it suffices to iterate over `k`-subsets of `[0..n-1]`, declaring those to be the pivots. Certain entries must be zero, according to row-reduced form, and the rest can be arbitrary elements of `F`.\n\nThus, for each `k`-subset of `[0..n-1]`, call it `[j_1, ..., j_k]`, construct a matrix with pivots as described by the `j_i`. For the `m` entries that are nonzero, construct a vector space of dimension `m`, and iterate over it, using the resulting tuples to fill in the matrix.\n\nVoila!\n\nI don't know about projective space, though.",
+    "created_at": "2008-09-25T23:07:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8476",
+    "user": "rlm"
+}
+```
 
 Here is a method for iterating over dimension `k` subspaces of a space of dimension `n`:
 
@@ -45,50 +70,129 @@ Voila!
 I don't know about projective space, though.
 
 
+
 ---
 
-Comment by rlm created at 2008-09-25 23:09:35
+archive/issue_comments_008477.json:
+```json
+{
+    "body": "Oh wait, to get projective space, just shift the dimension by one, duh...",
+    "created_at": "2008-09-25T23:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8477",
+    "user": "rlm"
+}
+```
 
 Oh wait, to get projective space, just shift the dimension by one, duh...
 
 
+
 ---
 
-Comment by rlm created at 2008-10-16 13:14:00
+archive/issue_comments_008478.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-16T13:14:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8478",
+    "user": "rlm"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2008-10-16 13:14:00
+archive/issue_comments_008479.json:
+```json
+{
+    "body": "Changing assignee from was to rlm.",
+    "created_at": "2008-10-16T13:14:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8479",
+    "user": "rlm"
+}
+```
 
 Changing assignee from was to rlm.
 
 
+
 ---
+
+archive/issue_comments_008480.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-17T13:40:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8480",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2008-10-17 17:31:46
+archive/issue_comments_008481.json:
+```json
+{
+    "body": "Applies cleanly and passes sage -testall. Looks good. \nGAP has this very useful function and now Sage does. \nThanks Robert!",
+    "created_at": "2008-10-17T17:31:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8481",
+    "user": "wdj"
+}
+```
 
 Applies cleanly and passes sage -testall. Looks good. 
 GAP has this very useful function and now Sage does. 
 Thanks Robert!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 20:30:33
+archive/issue_comments_008482.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-18T20:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8482",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 20:30:33
+archive/issue_comments_008483.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha0",
+    "created_at": "2008-10-18T20:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1323#issuecomment-8483",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha0

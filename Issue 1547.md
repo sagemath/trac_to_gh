@@ -1,11 +1,21 @@
 # Issue 1547: Add pre-tuned settings for ATLAS for certain CPUs
 
-Issue created by migration from https://trac.sagemath.org/ticket/1547
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-17 04:11:09
-
+archive/issues_001547.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWilliam says:\n\n```\nMichael,\n\nCan we add new machines to the ATLAS database of pre-tuned machines?\nI ask, because my Thinkpad laptop -- a Pentium M, is taking literally\nseveral *hours* to build ATLAS, which sucks.\n\nWilliam\n```\n\n\nI will look into this. I am also afraid that compiling ATLAS on PPC/Linux for example will be a rather long, painful experience, so we ought to get on top of this and submit profiles of those CPUs that are missing upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1547\n\n",
+    "created_at": "2007-12-17T04:11:09Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Add pre-tuned settings for ATLAS for certain CPUs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1547",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 William says:
@@ -27,10 +37,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1547
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-15 20:04:06
+archive/issue_comments_009869.json:
+```json
+{
+    "body": "See\n\nhttp://math-atlas.sourceforge.net/devel/atlas_devel/atlas_devel.html#SECTION00070000000000000000\n\nfor details.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-15T20:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1547#issuecomment-9869",
+    "user": "mabshoff"
+}
+```
 
 See
 
@@ -43,9 +68,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 09:10:44
+archive/issue_comments_009870.json:
+```json
+{
+    "body": "There is an atlas.spkg with tuning information for Pentium M and Athlon MP added at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc5/atlas-3.8.p11.spkg\n\nSee also #1886.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-02T09:10:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1547#issuecomment-9870",
+    "user": "mabshoff"
+}
+```
 
 There is an atlas.spkg with tuning information for Pentium M and Athlon MP added at
 
@@ -58,15 +94,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 09:58:49
+archive/issue_comments_009871.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-02T09:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1547#issuecomment-9871",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 09:58:49
+archive/issue_comments_009872.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc5",
+    "created_at": "2008-02-02T09:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1547#issuecomment-9872",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc5

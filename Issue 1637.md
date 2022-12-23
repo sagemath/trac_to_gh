@@ -1,11 +1,21 @@
 # Issue 1637: Update to mpfr 2.3.1 - fix small issues in the spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/1637
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-29 19:31:15
-
+archive/issues_001637.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nFrom the MPFR mailing list:\n\n```\nThe release of MPFR 2.3.1 is imminent. Please help to make this\nrelease as good as possible by downloading and testing this\nrelease candidate:\n\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.bz2\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.gz\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.zip\n\nThe MD5's:\n3a029172c380fc28f17db9c727d244e5  mpfr-2.3.1-rc1.tar.bz2\n59f3523b93ec6674241110512b932f22  mpfr-2.3.1-rc1.tar.gz\nec69f43ad4bf00c3ce28467f0650bcb8  mpfr-2.3.1-rc1.zip\n\nChanges from version 2.3.0 to version 2.3.1:\n- Bug fixes; see <http://www.mpfr.org/mpfr-2.3.0/#bugs>.\n- Improved MPFR manual.\n\nPlease send success and failure reports to <mpfr@loria.fr>.\n\nIf no problems are found, MPFR 2.3.1 should be released around\n2008-01-12.\n\nHappy New Year,\n\n-- Vincent Lef\u00e8vre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) \n```\n\nPaul Zimmermann also suggested:\n\n```\n## Paul Zimmerman's MPFR\n\nMy name ends with two 'n', and more importantly I'm not the only author.\nThe simplest is to just remove my name.\n\nAlso 'occured' should be 'occurred' in that file.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1637\n\n",
+    "created_at": "2007-12-29T19:31:15Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Update to mpfr 2.3.1 - fix small issues in the spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1637",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 From the MPFR mailing list:
@@ -54,17 +64,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1637
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-31 10:26:46
+archive/issue_comments_010410.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-31T10:26:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1637",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10410",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:33:36
+archive/issue_comments_010411.json:
+```json
+{
+    "body": "An updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc3/mpfr-2.3.1.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-29T13:33:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1637",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10411",
+    "user": "mabshoff"
+}
+```
 
 An updated spkg is at
 
@@ -75,9 +111,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:49:16
+archive/issue_comments_010412.json:
+```json
+{
+    "body": "Passes build and `spkg-check` on Linux, MacOSX 10.5 and Solaris.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-29T13:49:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1637",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10412",
+    "user": "mabshoff"
+}
+```
 
 Passes build and `spkg-check` on Linux, MacOSX 10.5 and Solaris.
 
@@ -86,15 +133,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:49:46
+archive/issue_comments_010413.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc3",
+    "created_at": "2008-01-29T13:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1637",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10413",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:49:46
+archive/issue_comments_010414.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-29T13:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1637",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10414",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

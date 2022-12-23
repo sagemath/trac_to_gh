@@ -1,11 +1,21 @@
 # Issue 1263: change pari C library error handler (instead of overriding exit() with abort())
 
-Issue created by migration from https://trac.sagemath.org/ticket/1263
-
-Original creator: was
-
-Original creation time: 2007-11-25 06:39:30
-
+archive/issues_001263.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jdemeyer\n\nThis is from Anton Mellit, and basically explains how to do what we\nwant, maybe. \n\n\n```\nBy the way I put my sources on sourceforge (http://pari-\npython.cvs.sourceforge.net/pari-python/pari-python/)\nThe error handlers are in errors.cpp and errors.h\nI use slightly modified version of the pari exception handling which\nis implemented using setjmp/longjmp and you use it like this:\nCATCH(CATCH_ALL) {\n   // if error occures\n} TRY {\n   // do something\n} ENDCATCH\nI made similar macros, but I catch exceptions not when they arise in\nPARI, but after PARI prints error message and calls\ndefault_exception_handler, which I set as follows:\ndefault_exception_handler = exception_handler,\nwhere exception_handler simply should return 0 if there is a handler\ninstalled. And the actual handler must be installed in GP_DATA->env\nusing setjmp(GP_DATA->env) (don't forget to store the old handler\nsomewhere and put it back afterwards)\n\nI've recently worked on it so that it catches SIGINT (Ctrl-C).\n\nFirst I turned off PARI's own signal handling. Instead of pari_init I\nuse this:\n\npari_init_opts(64000000, 500000, INIT_DFTm);\n\nThen I install my own signal handler which simply raises pari\nexception. I install the handler at the first CATCH and uninstall it\nand return the Python's one on the last ENDCATCH.\n- Show quoted text -\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1263\n\n",
+    "created_at": "2007-11-25T06:39:30Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "change pari C library error handler (instead of overriding exit() with abort())",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1263",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  jdemeyer
@@ -48,46 +58,116 @@ and return the Python's one on the last ENDCATCH.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1263
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-25 06:39:40
+archive/issue_comments_007922.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-11-25T06:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7922",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-01 15:37:22
+archive/issue_comments_007923.json:
+```json
+{
+    "body": "It is totally not clear to me what this is all about.  In Sage-4.5.2 the PARI error handling works (a bit ugly, but it works).\n\nI would mark it \"duplicate/invalid/wontfix\".",
+    "created_at": "2010-08-01T15:37:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7923",
+    "user": "jdemeyer"
+}
+```
 
 It is totally not clear to me what this is all about.  In Sage-4.5.2 the PARI error handling works (a bit ugly, but it works).
 
 I would mark it "duplicate/invalid/wontfix".
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-16 07:43:12
+archive/issue_comments_007924.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-16T07:43:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7924",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-16 18:09:39
+archive/issue_comments_007925.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-05-16T18:09:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7925",
+    "user": "mariah"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-16 18:09:39
+archive/issue_comments_007926.json:
+```json
+{
+    "body": "If this is a sage-duplicate/invalid/wontfix, then I believe that this ticket can be closed.",
+    "created_at": "2011-05-16T18:09:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7926",
+    "user": "mariah"
+}
+```
 
 If this is a sage-duplicate/invalid/wontfix, then I believe that this ticket can be closed.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-17 15:51:18
+archive/issue_comments_007927.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2011-05-17T15:51:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1263",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1263#issuecomment-7927",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

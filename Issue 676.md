@@ -1,11 +1,21 @@
 # Issue 676: Solaris 10: fix python build
 
-Issue created by migration from https://trac.sagemath.org/ticket/676
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-17 00:44:11
-
+archive/issues_000676.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nKeywords: Solaris 10, python\n\nWe need to add\n\n```\n --with-libs='-lrt -laio -lmd -lmp -lscf -lgen -ldoor -lgcc_s -L/lib/ -luutil -ldl -lm -lsocket -lnsl -lxnet'\n```\n\non Solaris 10 only. It is not needed on Solaris 9.\n\nIssue created by migration from https://trac.sagemath.org/ticket/676\n\n",
+    "created_at": "2007-09-17T00:44:11Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Solaris 10: fix python build",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/676",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Keywords: Solaris 10, python
@@ -18,17 +28,43 @@ We need to add
 
 on Solaris 10 only. It is not needed on Solaris 9.
 
+Issue created by migration from https://trac.sagemath.org/ticket/676
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-17 05:50:12
+archive/issue_comments_003505.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-17T05:50:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/676",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/676#issuecomment-3505",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-17 15:28:03
+archive/issue_comments_003506.json:
+```json
+{
+    "body": "The problem seems to be Solaris 10 on amd64 specific. See \n\nhttp://www.mail-archive.com/openpkg-cvs`@`openpkg.org/msg13989.html\n\nfor a workaround like:\n\n```\nif [ \".`isainfo -k`\" = .amd64 ]; then\n ADD extra configure flags\nfi\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-17T15:28:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/676",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/676#issuecomment-3506",
+    "user": "mabshoff"
+}
+```
 
 The problem seems to be Solaris 10 on amd64 specific. See 
 
@@ -48,9 +84,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 12:48:23
+archive/issue_comments_003507.json:
+```json
+{
+    "body": "This problem also exists on Solaris 10/Sparc. It would be interesting to see if Python 2.5.2 fixes this problem.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-19T12:48:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/676",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/676#issuecomment-3507",
+    "user": "mabshoff"
+}
+```
 
 This problem also exists on Solaris 10/Sparc. It would be interesting to see if Python 2.5.2 fixes this problem.
 
@@ -59,16 +106,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 07:23:11
+archive/issue_comments_003508.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-04-27T07:23:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/676",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/676#issuecomment-3508",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 07:23:11
+archive/issue_comments_003509.json:
+```json
+{
+    "body": "This is a non-issue with the Sun Compiler. So close it as won't fix. \n\nCheers,\n\nMicahell",
+    "created_at": "2008-04-27T07:23:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/676",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/676#issuecomment-3509",
+    "user": "mabshoff"
+}
+```
 
 This is a non-issue with the Sun Compiler. So close it as won't fix. 
 

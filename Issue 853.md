@@ -1,11 +1,21 @@
 # Issue 853: Add a pslq implementation to Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/853
-
-Original creator: was
-
-Original creation time: 2007-10-12 00:27:12
-
+archive/issues_000853.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  burcin robertwb\n\n\n```\nDavid Bailey's ARPREC package http://crd.lbl.gov/~dhbailey/mpdist/\nincludes several implementations of PSLQ, written in C++, and is\nlicensed under BSD. However, ARPREC raw multi arithmatic timings\ndon't look too favorable http://pari.math.u-bordeaux.fr/benchs/\ntimings-mpfr.html and one has the same fix-x86 issues as quad-double.\nIt looks like, however, one of the advantages of PSLQ is that it does\nnot require full-precision at many of the intermediate steps. (that's\nwhat this two-level stuff is about in his package--most operations\nare performed with machine-double arithmetic).\n\nZimmermann also has a GPL implementation, based on gmp, which is only\n1000 lines long. http://www.loria.fr/~zimmerma/free/ No idea yet how\nspeeds compare.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/853\n\n",
+    "created_at": "2007-10-12T00:27:12Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add a pslq implementation to Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/853",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  burcin robertwb
@@ -28,26 +38,63 @@ speeds compare.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/853
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2007-11-16 23:30:57
+archive/issue_comments_005269.json:
+```json
+{
+    "body": "Damien Stehle did some comparisons between the PSLQ implementation of Bailey and his FPLLL, and\nFPLLL was much faster. Of course it would be good to have an independent comparison, but it might\nbe that PSLQ does not outperform LLL when searching for linear relations.",
+    "created_at": "2007-11-16T23:30:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5269",
+    "user": "zimmerma"
+}
+```
 
 Damien Stehle did some comparisons between the PSLQ implementation of Bailey and his FPLLL, and
 FPLLL was much faster. Of course it would be good to have an independent comparison, but it might
 be that PSLQ does not outperform LLL when searching for linear relations.
 
 
+
 ---
 
-Comment by wdj created at 2009-05-07 15:00:53
+archive/issue_comments_005270.json:
+```json
+{
+    "body": "To be precise, Zimmerman's code is at http://www.loria.fr/~zimmerma/free/pslq-1.0.c and is licensed under the GPLv2+.",
+    "created_at": "2009-05-07T15:00:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5270",
+    "user": "wdj"
+}
+```
 
 To be precise, Zimmerman's code is at http://www.loria.fr/~zimmerma/free/pslq-1.0.c and is licensed under the GPLv2+.
 
 
+
 ---
 
-Comment by was created at 2009-08-10 23:03:00
+archive/issue_comments_005271.json:
+```json
+{
+    "body": "I've attached the code/paper that was attached to the following email.\n\n\n```\nagnes.jany@googlemail.com>\nto\twstein@gmail.com\ndate\tMon, Aug 10, 2009 at 2:16 PM\nsubject\tPSLQ implementation\nmailed-by\tgooglemail.com\n\t\nhide details 2:16 PM (1 hour ago)\n\t\n\t\nReply\n\t\n\tFollow up message\nDear Mr Stein,\n\nI'm a mathematics student at the Johannes-Gutenberg University of Mainz, Germany.\nAs a part of my diploma thesis, I have implemented PSLQ to SAGE. You can find\nthe code, a worksheet and a documentation in the attachment of this email. Maybe\nyou can use my work for your project.\n\nYours sincerely,\nAgnes Jany\n```\n",
+    "created_at": "2009-08-10T23:03:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5271",
+    "user": "was"
+}
+```
 
 I've attached the code/paper that was attached to the following email.
 
@@ -78,7 +125,20 @@ Agnes Jany
 
 
 
+
 ---
+
+archive/issue_comments_005272.json:
+```json
+{
+    "body": "Attachment\n\nNote that mpmath, which is now a standard Sage package, contains an implementation of pslq:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.mp.dps = 30\nsage: mpmath.pslq([sqrt(n) for n in range(2, 8+1)])\n[2, 0, 0, 0, 0, 0, -1]\nsage: mpmath.pslq([pi/4, acot(5), acot(239)])\n[1, -4, 1]\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe examples are from the mpmath documentation, see http://mpmath.googlecode.com/svn/trunk/doc/build/identification.html\n\nThe first one says that the only integer relation between the square roots of 2,3,...,8 is `2\\sqrt{2}-\\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.",
+    "created_at": "2009-11-29T03:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5272",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -103,9 +163,20 @@ The examples are from the mpmath documentation, see http://mpmath.googlecode.com
 The first one says that the only integer relation between the square roots of 2,3,...,8 is `2\sqrt{2}-\sqrt{8}=0`.  The second is one of the cool formulas expressing pi as a combination of arccotangents.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-11-29 03:51:55
+archive/issue_comments_005273.json:
+```json
+{
+    "body": "It would still be worth it to wrap Paul Zimmermann's C implementation, since it's fast.  I tried it together with the mpmath implementation on the real life example given at the top of http://www.cecm.sfu.ca/organics/papers/bailey/paper/html/node6.html\n\nBoth give the right answer (yay!).  According to timeit:\n\nZimmermann's C implementation:\n\n\n```\n25 loops, best of 3: 13.6 ms per loop\n```\n\n\nmpmath's implementation:\n\n\n```\n5 loops, best of 3: 267 ms per loop\n```\n\n\nSo the C code is 20 times faster in this example.",
+    "created_at": "2009-11-29T03:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5273",
+    "user": "AlexGhitza"
+}
+```
 
 It would still be worth it to wrap Paul Zimmermann's C implementation, since it's fast.  I tried it together with the mpmath implementation on the real life example given at the top of http://www.cecm.sfu.ca/organics/papers/bailey/paper/html/node6.html
 
@@ -130,9 +201,20 @@ mpmath's implementation:
 So the C code is 20 times faster in this example.
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2009-11-30 16:41:43
+archive/issue_comments_005274.json:
+```json
+{
+    "body": "The mpmath implementation should be correct, but it doesn't implement all the stopping criteria, and sometimes the precision, tolerance and iteration settings need fiddling with to give the right result. So even ignoring speed, it would be desirable for Sage to use an implementation that gives good control over all the settings.\n\nThe 20x difference actually sounds a bit high (though not unrealistic). I wonder if the number of iterations is the same for both implementations (it could be quite different depending just on small implementation details). Also, on my computer, PSLQ runs about twice as fast with mpmath+gmpy than mpmath+Sage.\n\nI don't know how the other implementations compare, but I would favor adding e.g. Paul Zimmermann's implementation to Sage. It should be trivial to wrap mpmath.pslq as well, so perhaps it could be provided as an optional algorithm.",
+    "created_at": "2009-11-30T16:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5274",
+    "user": "fredrik.johansson"
+}
+```
 
 The mpmath implementation should be correct, but it doesn't implement all the stopping criteria, and sometimes the precision, tolerance and iteration settings need fiddling with to give the right result. So even ignoring speed, it would be desirable for Sage to use an implementation that gives good control over all the settings.
 
@@ -141,9 +223,20 @@ The 20x difference actually sounds a bit high (though not unrealistic). I wonder
 I don't know how the other implementations compare, but I would favor adding e.g. Paul Zimmermann's implementation to Sage. It should be trivial to wrap mpmath.pslq as well, so perhaps it could be provided as an optional algorithm.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-02-21 12:05:33
+archive/issue_comments_005275.json:
+```json
+{
+    "body": "I have created an spkg for Paul Zimmermann's C implementation of PSLQ, see\n\nhttp://sage.math.washington.edu/home/ghitza/pslq-1.0.spkg\n\nI have also started writing an interface for using this from Sage, see the attached patch `trac_853.patch`.  This is obviously not done: for one, there should be way more docstrings and doctests.  However, I would like some feedback on the interface before I put much more work into this.  If somebody has a cleaner way of using PSLQ from Sage, I'm happy to listen and throw away what I've done so far.\n\nI'm about to ask for feedback on sage-devel.",
+    "created_at": "2010-02-21T12:05:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5275",
+    "user": "AlexGhitza"
+}
+```
 
 I have created an spkg for Paul Zimmermann's C implementation of PSLQ, see
 
@@ -154,32 +247,78 @@ I have also started writing an interface for using this from Sage, see the attac
 I'm about to ask for feedback on sage-devel.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-02-21 12:05:33
+archive/issue_comments_005276.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2010-02-21T12:05:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5276",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
+
+archive/issue_comments_005277.json:
+```json
+{
+    "body": "Attachment\n\napply after installing pslq-1.0.spkg",
+    "created_at": "2010-02-21T12:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5277",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after installing pslq-1.0.spkg
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-02-21 12:21:24
+archive/issue_comments_005278.json:
+```json
+{
+    "body": "PS (not LQ): I do think that we should also eventually have `implementation=\"mpmath\"` as an option, if only for verification purposes; but I would prefer not to overload this ticket, since it's already two years old.\n\nPPS: I'll change the milestone back to sage-wishlist until this is ready for review.",
+    "created_at": "2010-02-21T12:21:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5278",
+    "user": "AlexGhitza"
+}
+```
 
 PS (not LQ): I do think that we should also eventually have `implementation="mpmath"` as an option, if only for verification purposes; but I would prefer not to overload this ticket, since it's already two years old.
 
 PPS: I'll change the milestone back to sage-wishlist until this is ready for review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-21 13:17:41
+archive/issue_comments_005279.json:
+```json
+{
+    "body": "It's good to see you have tested this on Solaris, though there is a potential Solaris issue:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then \n    echo \"64 bit MacIntel\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \nfi\n```\n\n\nshould, at the very least, be replaced by \n\n\n```\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit version of pslq\" \n    CFLAGS=\"$CFLAGS -m64 \"; export CFLAGS \n    LDFLAGS=\"$LDFLAGS -m64 \"; export LDFLAGS \nfi\n```\n\n\n\nIt is in general safer to put an x in front of the `uname` and then test for whatever we want, with an x in front of that. (This is for maximum portability, using any shell, and is not essential, but I think a good habit to get into). There is no need to quote \"xyes\" as we know it has no spaces in it. \n\nWithout removing the Darwin restriction, it would be impossible to build a 64-bit version on Solaris, OpenSolaris or other system such as HP-UX where both 32-bit and 64-bit executables are supported.\n\nWhether LDFLAGS is necessary or not depends on the package. I've not tried building this 64-bit Solaris. I'll have a look at that later, but I do not think setting LDFLAGS ever appears to do any harm, and is sometimes essential. \n\nActually, better still would be \n\n\n```\nif [ -z \"$CFLAG64\" ] ; then\n  CFLAG64=-m64\nfi\n\nif [ \"x`uname`\" = xyes ]; then \n    echo \"Building a 64-bit of pslq\" \n    CFLAGS=\"$CFLAGS  $CFLAG64\"\n    LDFLAGS=\"$LDFLAGS $CFLAG64\"\nfi\n\nif [ \"x`$SAGE_LOCAL/bin/testcc.sh`\" = xGNU ] ; then\n  CFLAGS=\"$CFLAGS -Wall -pedantic\"\nfi\n\nexport CFLAGS\nexport LDFLAGS\n\n```\n\n\nas that would \n* Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). \n* Add the compiler options -Wall and -pedantic if using gcc. \n\nCompiling with the -Wall -pedantic options I get:\n\n\n```\ndrkirkby@hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c \npslq-1.0.c: In function \u2018print_column\u2019:\npslq-1.0.c:175: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_relation\u2019:\npslq-1.0.c:224: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 3 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018print_matrix\u2019:\npslq-1.0.c:240: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c: In function \u2018pslq\u2019:\npslq-1.0.c:855: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:858: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:860: warning: format \u2018%d\u2019 expects type \u2018int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:870: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c:892: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long int\u2019\npslq-1.0.c: In function \u2018main\u2019:\npslq-1.0.c:972: warning: implicit declaration of function \u2018strcmp\u2019\npslq-1.0.c:1040: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\npslq-1.0.c:1044: warning: format \u2018%u\u2019 expects type \u2018unsigned int *\u2019, but argument 2 has type \u2018long unsigned int *\u2019\npslq-1.0.c:1055: warning: format \u2018%u\u2019 expects type \u2018unsigned int\u2019, but argument 2 has type \u2018long unsigned int\u2019\n```\n\n\nSome of those warnings would lead me to believe a 64-bit build of this would not work as expected. In that case, 'unsigned int' would be 4 bytes, but 'long unsigned int' would be 8 bytes. That could go very pear shaped. \n\nThe function strcmp() is defined in strings.h on Solaris, so I would suggest adding\n\n```\n#include <strings.h>\n```\n\n\nI can't comment on the maths aspect of it - I'm not a mathematician. \n\nSome of these issues need reporting upstream, some are problems with spkg-install. \n\n\n**I would note that all of the above code snippets I wrote were untested, so would need testing**\n\nDave",
+    "created_at": "2010-02-21T13:17:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5279",
+    "user": "drkirkby"
+}
+```
 
 It's good to see you have tested this on Solaris, though there is a potential Solaris issue:
 
@@ -236,8 +375,8 @@ export LDFLAGS
 
 
 as that would 
- * Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). 
- * Add the compiler options -Wall and -pedantic if using gcc. 
+* Allow the variable CFLAG64 to be set to whatever compiler flag is necessary to build 64-bit code, which is not -m64 for all compilers. (CFLAG64 has been used in other packages for this purpose, to increase portability). 
+* Add the compiler options -Wall and -pedantic if using gcc. 
 
 Compiling with the -Wall -pedantic options I get:
 
@@ -278,14 +417,25 @@ I can't comment on the maths aspect of it - I'm not a mathematician.
 Some of these issues need reporting upstream, some are problems with spkg-install. 
 
 
-*I would note that all of the above code snippets I wrote were untested, so would need testing*
+**I would note that all of the above code snippets I wrote were untested, so would need testing**
 
 Dave
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-22 20:31:28
+archive/issue_comments_005280.json:
+```json
+{
+    "body": "I'd like to review that patch (now at SD20 in Marseilles) however I've downloaded sage 4.3.3.alpha1\na few days ago and compiled it on my laptop (Core 2 Duo under Fedora 12), and sage -t * gives\n593 Segfaults (without any patch applied). With this, I don't see how I could seriously review\nthat patch. I hope the final 4.3.3 release is better (now compiling). Is this problem on Fedora 12\nbeing analyzed currently? I can send the complete log from sage -t * with 4.3.3.alpha1 if needed.\n\nPaul",
+    "created_at": "2010-02-22T20:31:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5280",
+    "user": "zimmerma"
+}
+```
 
 I'd like to review that patch (now at SD20 in Marseilles) however I've downloaded sage 4.3.3.alpha1
 a few days ago and compiled it on my laptop (Core 2 Duo under Fedora 12), and sage -t * gives
@@ -296,9 +446,20 @@ being analyzed currently? I can send the complete log from sage -t * with 4.3.3.
 Paul
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-02-22 22:06:10
+archive/issue_comments_005281.json:
+```json
+{
+    "body": "Hi Paul,\n\nI'm in a similar situation, and currently having to build sage-4.3.3 on my laptop since I messed up my 4.3.3.alpha1.  I suggest you send an email to sage-devel about the Fedora 12 issues, with a link to the test log (and maybe also to the build log).\n\nSince you're looking at reviewing this, I will try to finish up the documentation and other things today (most likely tonight...  Australian time).",
+    "created_at": "2010-02-22T22:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5281",
+    "user": "AlexGhitza"
+}
+```
 
 Hi Paul,
 
@@ -307,9 +468,20 @@ I'm in a similar situation, and currently having to build sage-4.3.3 on my lapto
 Since you're looking at reviewing this, I will try to finish up the documentation and other things today (most likely tonight...  Australian time).
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-23 17:30:29
+archive/issue_comments_005282.json:
+```json
+{
+    "body": "I did a comparison of my PSLQ implementation (within Sage) with fpLLL with a knapsack matrix.\nWith Bailey's \"node6\" example, fpLLL is 14 times faster:\n\n```\nsage: m = matrix(9,10)\nsage: for i in range(9):\n    m[i,i]=1\nsage: for i in range(9):\n    m[i,9]=ZZ(num_list[i]*RealField(200)(2)^180)//2^10\n\nsage: L=m.LLL()\nsage: L.row(0)\n(-480, 1920, 0, -16, -255, -660, 840, 160, -360, 219687)\nsage: p.coefficients()\n(480, -1920, 0, 16, 255, 660, -840, -160, 360)\n\nsage: %timeit L=m.LLL()\n625 loops, best of 3: 1.41 ms per loop\n\nsage: %timeit p=PSLQ(num_list, prec=167)\n25 loops, best of 3: 19.8 ms per loop\n```\n\nThus apart from historical reasons (or comparison with fpLLL) I don't see any point to add PSLQ in Sage. Or the default PSLQ mode should be to call fpLLL. However maybe I'm biased because\nfpLLL was designed by a former student of mine.",
+    "created_at": "2010-02-23T17:30:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5282",
+    "user": "zimmerma"
+}
+```
 
 I did a comparison of my PSLQ implementation (within Sage) with fpLLL with a knapsack matrix.
 With Bailey's "node6" example, fpLLL is 14 times faster:
@@ -338,9 +510,20 @@ Thus apart from historical reasons (or comparison with fpLLL) I don't see any po
 fpLLL was designed by a former student of mine.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-23 17:33:28
+archive/issue_comments_005283.json:
+```json
+{
+    "body": "> Or the default PSLQ mode should be to call fpLLL. \n\nin fact, it would be cleaner to have a function `linear_relation`, which could have\nalgorithm=LLL (default) or algorithm=PSLQ.",
+    "created_at": "2010-02-23T17:33:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5283",
+    "user": "zimmerma"
+}
+```
 
 > Or the default PSLQ mode should be to call fpLLL. 
 
@@ -348,9 +531,20 @@ in fact, it would be cleaner to have a function `linear_relation`, which could h
 algorithm=LLL (default) or algorithm=PSLQ.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-24 07:10:24
+archive/issue_comments_005284.json:
+```json
+{
+    "body": "I got some more information about PSLQ by David Bailey, who agreed that I forward it to the Sage\ndevelopers (the references [1] and [2] are those from pslq-1.0.c):\n\n```\nComments:  Reference [1] in your note is the original PSLQ paper, but\nthe algorithm as presented there is quite cumbersome, as it involves\n(needlessly) many full-matrix operations.  Reference [2] stated an\nabbreviated but equivalent version; unfortunately, however, it includes\none bug.  Thus I strongly suggest that you base your implementation on\nthe following paper:\n\nDavid H. Bailey and David J. Broadhurst, \"Parallel Integer Relation\nDetection: Techniques and Applications,\" /Mathematics of Computation/,\nvol. 70, no. 236 (Oct 2000), pg. 1719-1736.  Our preprint copy is\navailable at:\nhttp://crd.lbl.gov/~dhbailey/dhbpapers/ppslq.pdf\n\nThe basic PSLQ algorithm is stated on page 2, and should work well as\nstated (please let me know if you have any problems).  A two-level and a\nthree-level variant are also described, which are faster but quite a bit\nmore complicated.\n\nHowever, if you are really serious, I suggest that you try the\n\"multi-pair\" variant of PSLQ, which is presented in the above paper\nbeginning on page 10.  Although we devised this scheme originally to be\nsuitable for parallel processing, we have found that even on a single\nprocessor system it runs significantly faster, and is significantly more\neffective in recovering relations when the input data is given only to\nlimited precision.  Two- and a three-level variants of the multi-pair\nscheme, in analogy to the two- and three-level versions of the regular\nPSLQ, are also given in the paper.  These are much faster than the basic\nmulti-pair PSLQ scheme, because they perform most operations using\nordinary double-precision arithmetic, updating the multi-precision\narrays only occasionally when needed.\n\nIn my own work, I always use the multi-pair PSLQ.  I use the basic\nmulti-pair PSLQ for n up to 10 or 20 and for modest precision.  For\nlarger n, and, say, 500-digit or more precision, I generally use\ntwo-level multi-pair scheme.  For truly \"heroic\" calculations (e.g., n >\n100 and precision level > 2000 digits), I use the three-level multi-pair\nscheme, since it has advantages for very large calculations and runs\nwell on a parallel system -- see some case studies mentioned in the\nabove paper.\n\nPlease let me know if it works for you.  And if you have any questions,\nI would be pleased to respond.  If you wish, you can look at the\nimplementations of PSLQ and the multi-pair PSLQ schemes (in both C++ and\nFortran-90) that we have bundled with our ARPREC package:\nhttp://crd.lbl.gov/~dhbailey/mpdist\n```\n\nI will try to modify my code to use the \"basic PSLQ algorithm\" described in the paper\nmentioned above. However in the short term I won't be able to implement the multi-pair\nvariant. Thus if somebody wants to do it, please proceed. Alternatively, one might use\nthe PSLQ variants from ARPREC (if the license is ok).",
+    "created_at": "2010-02-24T07:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5284",
+    "user": "zimmerma"
+}
+```
 
 I got some more information about PSLQ by David Bailey, who agreed that I forward it to the Sage
 developers (the references [1] and [2] are those from pslq-1.0.c):
@@ -409,9 +603,20 @@ variant. Thus if somebody wants to do it, please proceed. Alternatively, one mig
 the PSLQ variants from ARPREC (if the license is ok).
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-02-24 11:30:10
+archive/issue_comments_005285.json:
+```json
+{
+    "body": "Just a note on ARPREC's license, since Paul brought it up: it is not BSD as stated in this ticket's description, rather BSD-LBNL.  However, this is apparently compatible with both GPLv2 and GPLv3, according to the table \"Good licenses\" at\n\nhttp://fedoraproject.org/wiki/Licensing\n\nSo there should be no legal obstacles to using ARPREC.",
+    "created_at": "2010-02-24T11:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5285",
+    "user": "AlexGhitza"
+}
+```
 
 Just a note on ARPREC's license, since Paul brought it up: it is not BSD as stated in this ticket's description, rather BSD-LBNL.  However, this is apparently compatible with both GPLv2 and GPLv3, according to the table "Good licenses" at
 
@@ -420,9 +625,20 @@ http://fedoraproject.org/wiki/Licensing
 So there should be no legal obstacles to using ARPREC.
 
 
+
 ---
 
-Comment by hivert created at 2012-06-20 19:03:19
+archive/issue_comments_005286.json:
+```json
+{
+    "body": "Hi Paul,\n\nHow much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n\nFlorent",
+    "created_at": "2012-06-20T19:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5286",
+    "user": "hivert"
+}
+```
 
 Hi Paul,
 
@@ -431,9 +647,20 @@ How much work would that be to interface your C code with Sage ? Do you have a p
 Florent
 
 
+
 ---
 
-Comment by zimmerma created at 2012-06-20 19:58:12
+archive/issue_comments_005287.json:
+```json
+{
+    "body": "Replying to [comment:20 hivert]:\n> How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n\nno idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\nPaul",
+    "created_at": "2012-06-20T19:58:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5287",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:20 hivert]:
 > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?
@@ -443,9 +670,20 @@ no idea. Why do you ask? See comment [comment:2]. I see no reason to interface P
 Paul
 
 
+
 ---
 
-Comment by hivert created at 2012-06-20 21:14:44
+archive/issue_comments_005288.json:
+```json
+{
+    "body": "Replying to [comment:21 zimmerma]:\n> Replying to [comment:20 hivert]:\n> > How much work would that be to interface your C code with Sage ? Do you have a proof of concept ?\n> \n> no idea. Why do you ask? See comment [comment:2]. I see no reason to interface PSLQ.\n\nI'm at a small workshop and there is someone which is currently using Maple and is considering to switch to Sage.. Maple has both LLL and PSLQ. He told me that, he has some stability problem with LLL, in the sense that removing some precision digits gives drastically different results. Apparently PSLQ doesn't. I've no idea if it's a problem with the algorithms or the implementation.",
+    "created_at": "2012-06-20T21:14:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5288",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:21 zimmerma]:
 > Replying to [comment:20 hivert]:
@@ -456,27 +694,60 @@ Replying to [comment:21 zimmerma]:
 I'm at a small workshop and there is someone which is currently using Maple and is considering to switch to Sage.. Maple has both LLL and PSLQ. He told me that, he has some stability problem with LLL, in the sense that removing some precision digits gives drastically different results. Apparently PSLQ doesn't. I've no idea if it's a problem with the algorithms or the implementation.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-06-20 21:40:27
+archive/issue_comments_005289.json:
+```json
+{
+    "body": "I'm curious seeing an example with some stability problem with LLL.\n\nPaul",
+    "created_at": "2012-06-20T21:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5289",
+    "user": "zimmerma"
+}
+```
 
 I'm curious seeing an example with some stability problem with LLL.
 
 Paul
 
 
+
 ---
 
-Comment by AlexGhitza created at 2012-06-21 01:37:26
+archive/issue_comments_005290.json:
+```json
+{
+    "body": "This past January, a student of mine and I have run some experiments comparing fpLLL and the PSLQ implementations from ARPREC (we wanted to take the best current implementations to get a realistic comparison).  In the examples we ran, we found almost no reason to use PSLQ instead of fpLLL for finding integer relations.  The only situation where PSLQ might be more appropriate is when it is extremely expensive to generate extra digits in the input floating point numbers.  PSLQ has a slight edge here because it tends to require fewer digits of precision than fpLLL.  Most of the time this is of no consequence because fpLLL is much faster.  We'll try to write something up describing our experiments and results, but I don't know how soon I'll find time for that.\n\nIn terms of \"stability\", our experiments indicate that PSLQ tends to stick with the correct answer once it finds it, as you add more digits of precision.  With fpLLL, you sometimes hit the right answer with, say 190 digits, but then you get different answers for a short while (say, 191 to 197 digits), and then it stabilises on the right answer again.  Paul, I can dig up an explicit example of this if you are interested.  Again, I don't see this as an issue from a practical point of view -- I would run the algorithm until I get the exact same answer with 3 or 5 different precisions.",
+    "created_at": "2012-06-21T01:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5290",
+    "user": "AlexGhitza"
+}
+```
 
 This past January, a student of mine and I have run some experiments comparing fpLLL and the PSLQ implementations from ARPREC (we wanted to take the best current implementations to get a realistic comparison).  In the examples we ran, we found almost no reason to use PSLQ instead of fpLLL for finding integer relations.  The only situation where PSLQ might be more appropriate is when it is extremely expensive to generate extra digits in the input floating point numbers.  PSLQ has a slight edge here because it tends to require fewer digits of precision than fpLLL.  Most of the time this is of no consequence because fpLLL is much faster.  We'll try to write something up describing our experiments and results, but I don't know how soon I'll find time for that.
 
 In terms of "stability", our experiments indicate that PSLQ tends to stick with the correct answer once it finds it, as you add more digits of precision.  With fpLLL, you sometimes hit the right answer with, say 190 digits, but then you get different answers for a short while (say, 191 to 197 digits), and then it stabilises on the right answer again.  Paul, I can dig up an explicit example of this if you are interested.  Again, I don't see this as an issue from a practical point of view -- I would run the algorithm until I get the exact same answer with 3 or 5 different precisions.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-06-21 07:30:41
+archive/issue_comments_005291.json:
+```json
+{
+    "body": "Alex,\n\n> I can dig up an explicit example of this if you are interested.\n\nyes please do! Such explicit examples are extremely useful.\n\nPaul",
+    "created_at": "2012-06-21T07:30:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5291",
+    "user": "zimmerma"
+}
+```
 
 Alex,
 
@@ -487,16 +758,38 @@ yes please do! Such explicit examples are extremely useful.
 Paul
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-19 17:17:11
+archive/issue_comments_005292.json:
+```json
+{
+    "body": "Any news on this ticket?",
+    "created_at": "2014-11-19T17:17:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5292",
+    "user": "kcrisman"
+}
+```
 
 Any news on this ticket?
 
 
+
 ---
 
-Comment by zimmerma created at 2014-11-19 18:42:25
+archive/issue_comments_005293.json:
+```json
+{
+    "body": "> Any news on this ticket?\n\nI don't know what information was missing in comment [comment:9], but the following reference might be useful: http://dl.acm.org/citation.cfm?id=2465936\n\nPaul",
+    "created_at": "2014-11-19T18:42:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5293",
+    "user": "zimmerma"
+}
+```
 
 > Any news on this ticket?
 
@@ -505,10 +798,21 @@ I don't know what information was missing in comment [comment:9], but the follow
 Paul
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-19 01:52:43
+archive/issue_comments_005294.json:
+```json
+{
+    "body": "See also http://math.stackexchange.com/questions/853339/ which seems quite relevant.\n\nDo we actually *have* one in Sage currently, by the way?  A new user implied we might, just not a very powerful one.",
+    "created_at": "2014-12-19T01:52:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/853",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/853#issuecomment-5294",
+    "user": "kcrisman"
+}
+```
 
 See also http://math.stackexchange.com/questions/853339/ which seems quite relevant.
 
-Do we actually _have_ one in Sage currently, by the way?  A new user implied we might, just not a very powerful one.
+Do we actually *have* one in Sage currently, by the way?  A new user implied we might, just not a very powerful one.

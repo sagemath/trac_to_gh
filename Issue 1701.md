@@ -1,17 +1,44 @@
 # Issue 1701: attempt to clean up currRing if deallocated
 
-Issue created by migration from https://trac.sagemath.org/ticket/1701
-
-Original creator: malb
-
-Original creation time: 2008-01-06 13:23:05
-
+archive/issues_001701.json:
+```json
+{
+    "body": "Assignee: malb\n\nThis patch used to be attached to #1541 but logically doesn't belong there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1701\n\n",
+    "created_at": "2008-01-06T13:23:05Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "attempt to clean up currRing if deallocated",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1701",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 This patch used to be attached to #1541 but logically doesn't belong there.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1701
+
+
+
+
 
 ---
+
+archive/issue_comments_010779.json:
+```json
+{
+    "body": "Attachment\n\nI am under the impression that this patch already got merged, but I will investigate.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-06T16:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1701#issuecomment-10779",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,9 +49,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-01-06 16:17:56
+archive/issue_comments_010780.json:
+```json
+{
+    "body": "I just checked, it is not merged yet:\n\nmulti_polynomial_libsingular.pyx in Sage 2.9.2:\n\n\n```\n    def __dealloc__(self):\n        \"\"\"\n        \"\"\"\n        cdef ring *oldRing = NULL\n        if currRing != self._ring:\n            oldRing = currRing\n            rChangeCurrRing(self._ring)\n        rDelete(self._ring)\n        if oldRing != NULL:\n            rChangeCurrRing(oldRing)\n```\n",
+    "created_at": "2008-01-06T16:17:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1701#issuecomment-10780",
+    "user": "malb"
+}
+```
 
 I just checked, it is not merged yet:
 
@@ -46,16 +84,38 @@ multi_polynomial_libsingular.pyx in Sage 2.9.2:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-07 17:28:14
+archive/issue_comments_010781.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-07T17:28:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1701#issuecomment-10781",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-07 17:28:14
+archive/issue_comments_010782.json:
+```json
+{
+    "body": "Looks good to me, Merged in Sage 2.10.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-07T17:28:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1701#issuecomment-10782",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me, Merged in Sage 2.10.alpha0.
 

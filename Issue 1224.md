@@ -1,11 +1,21 @@
 # Issue 1224: OSX 10.4 PPC failure in sage/rings/finite_field_ntl_gf2e.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/1224
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-20 22:54:21
-
+archive/issues_001224.json:
+```json
+{
+    "body": "Assignee: malb\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage-main/sage/rings/\nfinite_field_ntl_gf2e.pyx**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 978:\n    sage: int(a)\nExpected:\n    2\nGot:\n    33554432\n**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 980:\n    sage: int(a^2 + 1)\nExpected:\n    5\nGot:\n    83886080\n**********************************************************************\n1 items had failures:\n   2 of   3 in __main__.example_41\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_finite_field_ntl_gf2e.pyx\n         [11.1 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 11.1 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1224\n\n",
+    "created_at": "2007-11-20T22:54:21Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "OSX 10.4 PPC failure in sage/rings/finite_field_ntl_gf2e.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1224",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 
@@ -44,30 +54,80 @@ Total time for all tests: 11.1 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1224
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-11-21 00:13:22
+archive/issue_comments_007622.json:
+```json
+{
+    "body": "These are endianness problems (big-endian vs. little-endian): 83886080 is 0x05000000.",
+    "created_at": "2007-11-21T00:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1224#issuecomment-7622",
+    "user": "cwitty"
+}
+```
 
 These are endianness problems (big-endian vs. little-endian): 83886080 is 0x05000000.
 
 
+
 ---
 
-Comment by malb created at 2007-11-21 15:17:26
+archive/issue_comments_007623.json:
+```json
+{
+    "body": "next attempt, patch updated",
+    "created_at": "2007-11-21T15:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1224#issuecomment-7623",
+    "user": "malb"
+}
+```
 
 next attempt, patch updated
 
 
+
 ---
+
+archive/issue_comments_007624.json:
+```json
+{
+    "body": "Attachment\n\nMerged in 2.8.13.rc2.",
+    "created_at": "2007-11-21T15:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1224#issuecomment-7624",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged in 2.8.13.rc2.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-21 15:26:08
+archive/issue_comments_007625.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-21T15:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1224#issuecomment-7625",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

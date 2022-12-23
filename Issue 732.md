@@ -1,11 +1,21 @@
 # Issue 732: graphs: enum changes behavior depending on boundary vertices
 
-Issue created by migration from https://trac.sagemath.org/ticket/732
-
-Original creator: jason
-
-Original creation time: 2007-09-21 19:03:06
-
+archive/issues_000732.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: graphs\n\nThe enum() function for graphs will change behavior depending on if the boundary is set and if 'quick' is passed.\n\n\n```\nsage: from sage.graphs.graph import enum\nsage: g=Graph({0:[1,2],1:[3]})\nsage: g.set_boundary([1])\nsage: enum(g)\n23112\nsage: enum(g,quick=True)\n27012\n```\n\n\nThis unexpected behavior happens because g.vertices() returns the boundary vertices first, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/732\n\n",
+    "created_at": "2007-09-21T19:03:06Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "graphs: enum changes behavior depending on boundary vertices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/732",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Keywords: graphs
@@ -26,16 +36,42 @@ sage: enum(g,quick=True)
 
 This unexpected behavior happens because g.vertices() returns the boundary vertices first, I think.
 
+Issue created by migration from https://trac.sagemath.org/ticket/732
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-10-13 16:58:09
+archive/issue_comments_004298.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T16:58:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/732#issuecomment-4298",
+    "user": "jason"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jason created at 2007-10-13 16:58:09
+archive/issue_comments_004299.json:
+```json
+{
+    "body": "This works now that vertices() sorts the vertices it returns (as of 2.8.6, I believe).",
+    "created_at": "2007-10-13T16:58:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/732#issuecomment-4299",
+    "user": "jason"
+}
+```
 
 This works now that vertices() sorts the vertices it returns (as of 2.8.6, I believe).

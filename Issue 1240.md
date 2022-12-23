@@ -1,11 +1,21 @@
 # Issue 1240: wrong unix rights of some files
 
-Issue created by migration from https://trac.sagemath.org/ticket/1240
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-22 12:12:52
-
+archive/issues_001240.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n[This was reported to me by Emmanuel Thome.]\n\nWhen installing SAGE 2.8.13 on a multi-user site (make dist), the Unix rights of some files are wrong:\n\n```\nhelene% find . ! -perm +004 | xargs ls -lLd\n-rwx--x--x 1 zimmerma spaces    414 2007-11-22 08:56 ./local/bin/sage-rebase_sage.sh\n-rwx--x--x 1 zimmerma spaces    702 2007-11-22 10:13 ./local/bin/sage-server-web\n-rw------- 1 zimmerma spaces   5292 2007-11-22 09:09 ./local/include/cremona/cperiods.h\n...\n-rw-r----- 1 zimmerma spaces   1360 2006-10-26 20:26 ./local/share/moin/underlay/pages/SystemPagesSetup/attachments/all_languages.zip\n...\n```\n\n\nShouldn't all files be at least readable (r) by everybody?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1240\n\n",
+    "created_at": "2007-11-22T12:12:52Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "wrong unix rights of some files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1240",
+    "user": "zimmerma"
+}
+```
 Assignee: mabshoff
 
 [This was reported to me by Emmanuel Thome.]
@@ -25,17 +35,43 @@ helene% find . ! -perm +004 | xargs ls -lLd
 
 Shouldn't all files be at least readable (r) by everybody?
 
+Issue created by migration from https://trac.sagemath.org/ticket/1240
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-22 21:39:28
+archive/issue_comments_007756.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-22T21:39:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7756",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-22 21:39:28
+archive/issue_comments_007757.json:
+```json
+{
+    "body": "I will take care of those.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-22T21:39:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7757",
+    "user": "mabshoff"
+}
+```
 
 I will take care of those.
 
@@ -44,9 +80,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-24 11:03:16
+archive/issue_comments_007758.json:
+```json
+{
+    "body": "Ok, I have fixed \n\n```\nlocal/bin/sage-rebase_sage.sh\nlocal/bin/sage-server-web\nlocal/include/cremona/cperiods.h\n```\n\nand I will take care of the moin moin issue in 2.8.15.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-24T11:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7758",
+    "user": "mabshoff"
+}
+```
 
 Ok, I have fixed 
 
@@ -63,16 +110,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by zimmerma created at 2007-12-17 12:30:20
+archive/issue_comments_007759.json:
+```json
+{
+    "body": "The moin issue is still there in 2.9 (28 files are concerned).",
+    "created_at": "2007-12-17T12:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7759",
+    "user": "zimmerma"
+}
+```
 
 The moin issue is still there in 2.9 (28 files are concerned).
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-19 10:48:57
+archive/issue_comments_007760.json:
+```json
+{
+    "body": "The moinmoin issues are fixed in \n\nhttp://sage.math.washington.edu/home/mabshoff/moin-1.5.7.p2.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-19T10:48:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7760",
+    "user": "mabshoff"
+}
+```
 
 The moinmoin issues are fixed in 
 
@@ -83,44 +152,110 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2007-12-19 19:11:41
+archive/issue_comments_007761.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-19T19:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7761",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-19 19:11:41
+archive/issue_comments_007762.json:
+```json
+{
+    "body": "Merged in 2.9.1 alpha2",
+    "created_at": "2007-12-19T19:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7762",
+    "user": "rlm"
+}
+```
 
 Merged in 2.9.1 alpha2
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 13:54:01
+archive/issue_comments_007763.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-03-04T13:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7763",
+    "user": "zimmerma"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 13:54:01
+archive/issue_comments_007764.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-03-04T13:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7764",
+    "user": "zimmerma"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 13:54:01
+archive/issue_comments_007765.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-03-04T13:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7765",
+    "user": "zimmerma"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 13:54:01
+archive/issue_comments_007766.json:
+```json
+{
+    "body": "I reopen this ticket, since this issue is back with Sage 4.3.3:\n\n```\ntarte% sage\n**************************************************************************\nYou must compile Sage first using 'make' in the Sage root directory.\n(If you have already compiled Sage, you must set the SAGE_ROOT variable in \nthe file '/usr/local/sage-core2/sage').\n**************************************************************************\n```\n\nThis is due to wrong permissions (Sage was installed by Emmanuel Thome with `make dist`):\n\n```\ntiramisu ~ $ ls -l /usr/local/sage-core2/\ntotal 29884\n-rw-r--r--  2 thome caramel    71842 Mar  1 14:43 COPYING.txt\n-rw-r--r--  2 thome caramel    11123 Mar  1 14:43 README.txt\ndrwxr-xr-x  8 thome caramel     4096 Mar  1 16:42 data\ndrwxr-xr-x  4 thome caramel     4096 Mar  1 15:58 devel\ndrwx------ 15 thome caramel     4096 Mar  3 22:01 examples\n-rw-r--r--  1 thome caramel 30427884 Mar  1 17:04 install.log\ndrwx------  2 thome caramel     4096 Mar  3 22:01 ipython\ndrwx------ 12 thome caramel     4096 Mar  3 21:46 local\n-rw-r--r--  2 thome caramel     2618 Feb 11 17:55 makefile\n-rwxr-xr-x  2 thome caramel     1449 Feb 11 17:56 sage\n-rw-r--r--  2 thome caramel     1622 Mar  1 14:43 sage-README-osx.txt\n-rwxr-xr-x  2 thome caramel       38 Mar  1 14:43 sage-python\ndrwx------  6 thome caramel     4096 Mar  3 22:07 spkg\ndrwx------  2 thome caramel     4096 Mar  3 22:07 tmp\n```\n\nI declare this as a blocker since this issue should be fixed *once for all*\n(and automatically checked before doing a release).",
+    "created_at": "2010-03-04T13:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7766",
+    "user": "zimmerma"
+}
+```
 
 I reopen this ticket, since this issue is back with Sage 4.3.3:
 
@@ -158,37 +293,92 @@ I declare this as a blocker since this issue should be fixed *once for all*
 (and automatically checked before doing a release).
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 13:55:54
+archive/issue_comments_007767.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to mvngu.",
+    "created_at": "2010-03-04T13:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7767",
+    "user": "zimmerma"
+}
+```
 
 Changing assignee from mabshoff to mvngu.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-04 16:43:32
+archive/issue_comments_007768.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-04T16:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7768",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-04 16:43:32
+archive/issue_comments_007769.json:
+```json
+{
+    "body": "Please do not reopen tickets that are already closed. Open another ticket for the specific issue related to this ticket and concerning Sage 4.3.3. Then reference this ticket from the newly opened ticket. The issue of the current ticket concerns Sage 2.9.1 and it has already been fixed for that release.",
+    "created_at": "2010-03-04T16:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7769",
+    "user": "mvngu"
+}
+```
 
 Please do not reopen tickets that are already closed. Open another ticket for the specific issue related to this ticket and concerning Sage 4.3.3. Then reference this ticket from the newly opened ticket. The issue of the current ticket concerns Sage 2.9.1 and it has already been fixed for that release.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-04 16:43:32
+archive/issue_comments_007770.json:
+```json
+{
+    "body": "Changing priority from blocker to major.",
+    "created_at": "2010-03-04T16:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7770",
+    "user": "mvngu"
+}
+```
 
 Changing priority from blocker to major.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-04 19:13:49
+archive/issue_comments_007771.json:
+```json
+{
+    "body": "> Please do not reopen tickets that are already closed. Open another ticket ...\n\nok, see #8437.",
+    "created_at": "2010-03-04T19:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7771",
+    "user": "zimmerma"
+}
+```
 
 > Please do not reopen tickets that are already closed. Open another ticket ...
 

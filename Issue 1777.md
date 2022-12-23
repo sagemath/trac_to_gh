@@ -1,11 +1,21 @@
 # Issue 1777: jmol up/down metaphor confusing in the "View" right-click menu
 
-Issue created by migration from https://trac.sagemath.org/ticket/1777
-
-Original creator: jason
-
-Original creation time: 2008-01-14 17:55:53
-
+archive/issues_001777.json:
+```json
+{
+    "body": "Assignee: was\n\nI noticed a potentially confusing thing in the totally awesome 3d \ngraphics we now have with jmol.\n\nsage: arrow3d((0,0,0),(1,1,1))\n\ndraws a very nice-looking 3d arrow in a bounding cube.  When I \nright-click on the graphic and choose \"View | front\", it swings the \nviewpoint around so that I'm looking at the *top* of the original cube \n(so that I'm looking in the direction of the negative z-axis).  I \nrealize that the standard computer graphics viewpoint has the z-axis \ncoming out of the monitor, so \"front\" is a valid label for this position \nin that sense, but it can be confusing to students who would have said \nthat what is labeled as the \"front\" position is actually showing the top \nof graph.  I imagine that it would be even more confusing to calc 3 \nstudents that the labeled \"top\" position is looking in the negative \ny-axis direction *with the positive z pointing down*.\n\nThe positions and actual viewing directions are thus:\n\n\"front\" = looking down negative z-axis, positive y-axis pointing up\n\"back\" = looking down positive z-axis, positive y-axis pointing up\n\n\"left\" = looking down positive x-axis, positive y-axis pointing up\n\"right\" = looking down negative x-axis, positive y-axis pointing up\n\n\"top\" = looking down negative y-axis, positive z-axis pointing *down*\n\"bottom\" = looking down positive y-axis, positive z-axis pointing up\n\nI think it would be less confusing if the View menu just listed viewing \ndirections instead of assigning a \"up\" and \"down\" metaphor that can \nchange depending on if you are doing math or doing computer science.\n\nJason\n\nIssue created by migration from https://trac.sagemath.org/ticket/1777\n\n",
+    "created_at": "2008-01-14T17:55:53Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "jmol up/down metaphor confusing in the \"View\" right-click menu",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1777",
+    "user": "jason"
+}
+```
 Assignee: was
 
 I noticed a potentially confusing thing in the totally awesome 3d 
@@ -42,38 +52,97 @@ change depending on if you are doing math or doing computer science.
 
 Jason
 
+Issue created by migration from https://trac.sagemath.org/ticket/1777
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-07-24 22:26:03
+archive/issue_comments_011249.json:
+```json
+{
+    "body": "See #2873 for how to fix this.",
+    "created_at": "2008-07-24T22:26:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11249",
+    "user": "jason"
+}
+```
 
 See #2873 for how to fix this.
 
 
+
 ---
 
-Comment by jason created at 2009-02-14 10:04:20
+archive/issue_comments_011250.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-14T10:04:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11250",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2009-02-14 10:04:20
+archive/issue_comments_011251.json:
+```json
+{
+    "body": "Changing assignee from was to jason.",
+    "created_at": "2009-02-14T10:04:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11251",
+    "user": "jason"
+}
+```
 
 Changing assignee from was to jason.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-14 14:50:11
+archive/issue_comments_011252.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-14T14:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11252",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-14 14:50:11
+archive/issue_comments_011253.json:
+```json
+{
+    "body": "Fixed via #2873 in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-14T14:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1777",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1777#issuecomment-11253",
+    "user": "mabshoff"
+}
+```
 
 Fixed via #2873 in Sage 3.3.rc1.
 

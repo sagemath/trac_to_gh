@@ -1,36 +1,98 @@
 # Issue 1131: [with patch] EllipticCurve.order alias for EllipticCurve.cardinality
 
-Issue created by migration from https://trac.sagemath.org/ticket/1131
-
-Original creator: malb
-
-Original creation time: 2007-11-08 22:18:04
-
+archive/issues_001131.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1131\n\n",
+    "created_at": "2007-11-08T22:18:04Z",
+    "labels": [
+        "number theory",
+        "trivial",
+        "enhancement"
+    ],
+    "title": "[with patch] EllipticCurve.order alias for EllipticCurve.cardinality",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1131",
+    "user": "malb"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1131
+
+
+
+
 
 ---
+
+archive/issue_comments_006857.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-16T11:57:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6857",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_006858.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-18T08:59:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6858",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-18 09:00:06
+archive/issue_comments_006859.json:
+```json
+{
+    "body": "Added another way of doing it (which I prefer because it's closer to the source). Either way is fine.",
+    "created_at": "2007-11-18T09:00:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6859",
+    "user": "robertwb"
+}
+```
 
 Added another way of doing it (which I prefer because it's closer to the source). Either way is fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 21:19:55
+archive/issue_comments_006860.json:
+```json
+{
+    "body": "Merged in 2.8.13.alpha1.\n\nOk, I merged Robert's version - it seemed slightly cleaner.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-19T21:19:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6860",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.alpha1.
 
@@ -41,8 +103,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 21:19:55
+archive/issue_comments_006861.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-19T21:19:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6861",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

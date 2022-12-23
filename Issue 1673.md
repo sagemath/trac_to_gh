@@ -1,11 +1,21 @@
 # Issue 1673: Failure of coercion between rationals and F_p
 
-Issue created by migration from https://trac.sagemath.org/ticket/1673
-
-Original creator: ljpk
-
-Original creation time: 2008-01-03 19:18:16
-
+archive/issues_001673.json:
+```json
+{
+    "body": "Assignee: malb\n\nIf one has a power series over QQ one can coerce it to have coefficients in FF_p using %:\n\n`delta=CuspForms(1,12).0.q_expansion(30)`\n\n`f=CuspForms(11,2).0.q_expansion(30)`\n\n`f % 11`\n\nHowever, one cannot subtract a series with coefficients in FF_p from a series with coefficients in QQ; the coercion doesn't work:\n\n\n```\nException (click to the left for traceback):\n...\nTypeError: unsupported operand parent(s) for '-': 'Power Series Ring in q over Rational Field' and 'Power Series Ring in q over Ring of integers modulo 11'Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/4/code/7.py\", line 4, in <module>\n    f - delta % Integer(11)\n  File \"/usr/local/sage-2.6/local/lib/python2.5/site-packages/sympy/plotting/\", line 1, in <module>\n    \n  File \"element.pyx\", line 785, in sage.structure.element.ModuleElement.__sub__\n  File \"coerce.pyx\", line 272, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\nTypeError: unsupported operand parent(s) for '-': 'Power Series Ring in q over Rational Field' and 'Power Series Ring in q over Ring of integers modulo 11' }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/1673\n\n",
+    "created_at": "2008-01-03T19:18:16Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Failure of coercion between rationals and F_p",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1673",
+    "user": "ljpk"
+}
+```
 Assignee: malb
 
 If one has a power series over QQ one can coerce it to have coefficients in FF_p using %:
@@ -32,26 +42,63 @@ TypeError: unsupported operand parent(s) for '-': 'Power Series Ring in q over R
   File "coerce.pyx", line 272, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c
 TypeError: unsupported operand parent(s) for '-': 'Power Series Ring in q over Rational Field' and 'Power Series Ring in q over Ring of integers modulo 11' }}}
 
+Issue created by migration from https://trac.sagemath.org/ticket/1673
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2008-01-03 20:23:35
+archive/issue_comments_010621.json:
+```json
+{
+    "body": "There is no automatic coercion from QQ to Fp because there is no natural map (in the mathematical sense). If you want to subtract an element of QQ from an element of Fp, you have to explicitly coerce from QQ to Fp first. Similarly there is no canonical map from QQ[x] to Fp[x], so the coercion error above is correct.\n\nIf anything I think the behaviour where you can do f % 11 and get an element of Fp[x] is incorrect. For example if you take an integer A and compute A % 11, you get an integer, not an element of F11.",
+    "created_at": "2008-01-03T20:23:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#issuecomment-10621",
+    "user": "dmharvey"
+}
+```
 
 There is no automatic coercion from QQ to Fp because there is no natural map (in the mathematical sense). If you want to subtract an element of QQ from an element of Fp, you have to explicitly coerce from QQ to Fp first. Similarly there is no canonical map from QQ[x] to Fp[x], so the coercion error above is correct.
 
 If anything I think the behaviour where you can do f % 11 and get an element of Fp[x] is incorrect. For example if you take an integer A and compute A % 11, you get an integer, not an element of F11.
 
 
+
 ---
 
-Comment by was created at 2008-01-04 08:21:54
+archive/issue_comments_010622.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-01-04T08:21:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#issuecomment-10622",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by was created at 2008-01-04 08:24:38
+archive/issue_comments_010623.json:
+```json
+{
+    "body": "> If anything I think the behaviour where you can do f % 11 and get an element of Fp[x] > is incorrect. For example if you take an integer A and compute A % 11, you get an \n> integer, not an element of F11.\n\nI strongly agree with this.  However, it might be reasonable to have `Mod(f,11)`\ndo what f%11 currently does.  \n\nRight now, use f.change_ring\n\n\n```\nsage: R.<q> = QQ[[]]\nsage: f = 1 + 19*q^2 + q^4\nsage: f.change_ring(GF(13))\n1 + 6*q^2 + q^4\n```\n",
+    "created_at": "2008-01-04T08:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1673#issuecomment-10623",
+    "user": "was"
+}
+```
 
 > If anything I think the behaviour where you can do f % 11 and get an element of Fp[x] > is incorrect. For example if you take an integer A and compute A % 11, you get an 
 > integer, not an element of F11.

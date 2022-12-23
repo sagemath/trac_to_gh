@@ -1,11 +1,21 @@
 # Issue 1440: Inconsistency in subs and substitute for univariate polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/1440
-
-Original creator: was
-
-Original creation time: 2007-12-09 21:09:35
-
+archive/issues_001440.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI very much agree that the problem below is a bug, which we should resolve. \n\n\n```\nsubs and substitute are not equivalent for single variable\npolynomials,\nthough they are in the field of fractions or for polynomials in more\nthan\none variable:\n\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15, Release Date: 2007-12-03                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R.<x> = QQ[]\nsage: f = x^3 + x - 3\nsage: f.subs(x = 5)\n127\nsage: f.substitute(x = 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call\nlast)\n\n/Users/mafwc/<ipython console> in <module>()\n\n/Users/mafwc/element.pyx in\nsage.structure.element.Element.substitute()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.subs()\n\n/Users/mafwc/polynomial_element.pyx in\nsage.rings.polynomial.polynomial_element.Polynomial.__call__()\n\n<type 'exceptions.ValueError'>: must not specify both a keyword and\npositional argument\n\n\nsage: g = f/(x - 1)\nsage: [g.subs(x = 5), g.substitute(x = 5)]\n[127/4, 127/4]\n\n\nsage: R2.<y, z> = PolynomialRing(QQ, 2)\nsage: h = y^3*z + 4*y*z^2 + y + 3*z - 7\nsage: [h.subs(y = 5), h.substitute(y = 5)]\n[20*z^2 + 128*z - 2, 20*z^2 + 128*z - 2]\n\n\n[Mac OS X 10.4.11, 2 GHz Intel Core 2 Duo, 1 GB].\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1440\n\n",
+    "created_at": "2007-12-09T21:09:35Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Inconsistency in subs and substitute for univariate polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1440",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 I very much agree that the problem below is a bug, which we should resolve. 
@@ -62,31 +72,81 @@ sage: [h.subs(y = 5), h.substitute(y = 5)]
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1440
+
+
+
+
 
 ---
 
-Comment by jbmohler created at 2007-12-26 14:48:19
+archive/issue_comments_009287.json:
+```json
+{
+    "body": "This is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class.  I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded.  Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.\n\nNote that because of the issues I mention in the first paragraph I highly suspect that this bug is not unique to univ-variate polys.",
+    "created_at": "2007-12-26T14:48:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9287",
+    "user": "jbmohler"
+}
+```
 
 This is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class.  I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded.  Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.
 
 Note that because of the issues I mention in the first paragraph I highly suspect that this bug is not unique to univ-variate polys.
 
 
+
 ---
 
-Comment by broune created at 2008-05-10 22:59:43
+archive/issue_comments_009288.json:
+```json
+{
+    "body": "Changing assignee from somebody to broune.",
+    "created_at": "2008-05-10T22:59:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9288",
+    "user": "broune"
+}
+```
 
 Changing assignee from somebody to broune.
 
 
+
 ---
 
-Comment by broune created at 2008-05-10 22:59:49
+archive/issue_comments_009289.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-10T22:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9289",
+    "user": "broune"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_009290.json:
+```json
+{
+    "body": "Attachment\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
+    "created_at": "2008-05-13T21:56:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9290",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -105,16 +165,38 @@ Secondly, for some reason the patch posted does not display in the normal way, b
 I don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!
 
 
+
 ---
 
-Comment by broune created at 2008-05-13 22:33:10
+archive/issue_comments_009291.json:
+```json
+{
+    "body": "Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.",
+    "created_at": "2008-05-13T22:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9291",
+    "user": "broune"
+}
+```
 
 Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.
 
 
+
 ---
 
-Comment by cremona created at 2008-05-14 08:14:52
+archive/issue_comments_009292.json:
+```json
+{
+    "body": "Replying to [comment:5 broune]:\n> Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.\n\nNot literally,  but after the assignment they are the __same__ function so the docstring for one is displayed for both.  For example, `prime_factors` is a synonym for `prime_divisors`, and look:\n\n```\nsage: n=123\nsage: n.prime_factors?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method prime_divisors of sage.rings.integer.Integer object at 0xa124980>\nNamespace:      Interactive\nDocstring:\n\n            The prime divisors of self, sorted in increasing order.  If n\n            is negative, we do *not* include -1 among the prime divisors, since -1 is\n            not a prime number.\n\n            EXAMPLES:\n                sage: a = 1; a.prime_divisors()\n                []\n                sage: a = 100; a.prime_divisors()\n                [2, 5]\n                sage: a = -100; a.prime_divisors()\n                [2, 5]\n                sage: a = 2004; a.prime_divisors()\n                [2, 3, 167]\n```\n\nAlthough that looks slightly strange, I think it is ok, especially if the docstring mentions the synonym (which in this case it does not, which is my fault since I inserted the synonym while no-one was looking).",
+    "created_at": "2008-05-14T08:14:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9292",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:5 broune]:
 > Is it possible to attach a docstring if the function is written using an assignment? Otherwise you would get no docstring, or possibly the docstring for subs, upon calling help on subtitute.
@@ -148,30 +230,76 @@ Docstring:
 Although that looks slightly strange, I think it is ok, especially if the docstring mentions the synonym (which in this case it does not, which is my fault since I inserted the synonym while no-one was looking).
 
 
+
 ---
+
+archive/issue_comments_009293.json:
+```json
+{
+    "body": "Attachment\n\nReplacement for previous patch",
+    "created_at": "2008-05-14T14:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9293",
+    "user": "broune"
+}
+```
 
 Attachment
 
 Replacement for previous patch
 
 
+
 ---
 
-Comment by broune created at 2008-05-14 14:13:49
+archive/issue_comments_009294.json:
+```json
+{
+    "body": "The new patch uses = to redefine substitute. I would add a doctest, but I don't know where it would go. It does make the code in the ticket work. Either version is fine by me.",
+    "created_at": "2008-05-14T14:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9294",
+    "user": "broune"
+}
+```
 
 The new patch uses = to redefine substitute. I would add a doctest, but I don't know where it would go. It does make the code in the ticket work. Either version is fine by me.
 
 
+
 ---
 
-Comment by cremona created at 2008-05-14 21:39:16
+archive/issue_comments_009295.json:
+```json
+{
+    "body": "I can see no reason not to apply this one-liner (redef_substi2.patch), even if there are other related issues which the patch does not resolve.",
+    "created_at": "2008-05-14T21:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9295",
+    "user": "cremona"
+}
+```
 
 I can see no reason not to apply this one-liner (redef_substi2.patch), even if there are other related issues which the patch does not resolve.
 
 
+
 ---
 
-Comment by malb created at 2008-06-04 20:38:04
+archive/issue_comments_009296.json:
+```json
+{
+    "body": "I second that, please apply. I'll open a new ticket for:\n\n```\nThis is somewhat tangential to this issue, but subs has been overridden in a few different classes and the overridden implementation is not quite as robust as (or duplicates code from) the implementation in the element base class. I think that the base implementation/architecture should be strengthened in ways that make these overrides unneeded. Of course, then the subs/substitute synonym should entirely be handled by the base class making it impossible for the inconsistency of the noted bug.\n```\n",
+    "created_at": "2008-06-04T20:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9296",
+    "user": "malb"
+}
+```
 
 I second that, please apply. I'll open a new ticket for:
 
@@ -181,15 +309,37 @@ This is somewhat tangential to this issue, but subs has been overridden in a few
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:55:50
+archive/issue_comments_009297.json:
+```json
+{
+    "body": "Merged redef_substi2.patch in Sage 3.0.3.alpha1",
+    "created_at": "2008-06-04T20:55:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9297",
+    "user": "mabshoff"
+}
+```
 
 Merged redef_substi2.patch in Sage 3.0.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:55:50
+archive/issue_comments_009298.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-04T20:55:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9298",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

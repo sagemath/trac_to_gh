@@ -1,11 +1,21 @@
 # Issue 1178: flint in 2.8.12 fails on Solaris 10: u_int16_t undefined
 
-Issue created by migration from https://trac.sagemath.org/ticket/1178
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-15 15:51:45
-
+archive/issues_001178.json:
+```json
+{
+    "body": "Assignee: Bill Hart\n\nHello,\n\nthe problem was reported by Klas Heggemann. See\n\nhttp://groups.google.com/group/sage-devel/t/b35f8758cd98fad6\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1178\n\n",
+    "created_at": "2007-11-15T15:51:45Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "flint in 2.8.12 fails on Solaris 10: u_int16_t undefined",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1178",
+    "user": "mabshoff"
+}
+```
 Assignee: Bill Hart
 
 Hello,
@@ -18,10 +28,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1178
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-06 20:50:11
+archive/issue_comments_007277.json:
+```json
+{
+    "body": "FLINT 1.0 works on Solaris 9 when I define\n\n```\ntypedef unsigned int            uint32_t;\ntypedef unsigned long long      u_int64_t;\n```\n\nin `stdint.h`\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-06T20:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7277",
+    "user": "mabshoff"
+}
+```
 
 FLINT 1.0 works on Solaris 9 when I define
 
@@ -37,15 +62,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-28 05:46:13
+archive/issue_comments_007278.json:
+```json
+{
+    "body": "This has been fixed a while ago. So close it.",
+    "created_at": "2008-01-28T05:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7278",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed a while ago. So close it.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-28 05:46:13
+archive/issue_comments_007279.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-28T05:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7279",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

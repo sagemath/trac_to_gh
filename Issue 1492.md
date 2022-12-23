@@ -1,11 +1,21 @@
 # Issue 1492: sqlite-3.5.3.p1.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/1492
-
-Original creator: yi
-
-Original creation time: 2007-12-13 20:28:05
-
+archive/issues_001492.json:
+```json
+{
+    "body": "Assignee: yi\n\nUpdated to sqlite-3.5.3.\n\nspkg available here:\n\nhttp://sage.math.washington.edu/home/yqiang/sqlite-3.5.3.p1.spkg\n\n\n\nsage -t sage/databases passed on Linux 32bit and OS X 10.5\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1492\n\n",
+    "created_at": "2007-12-13T20:28:05Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "sqlite-3.5.3.p1.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1492",
+    "user": "yi"
+}
+```
 Assignee: yi
 
 Updated to sqlite-3.5.3.
@@ -22,16 +32,42 @@ sage -t sage/databases passed on Linux 32bit and OS X 10.5
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1492
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-14 02:09:05
+archive/issue_comments_009594.json:
+```json
+{
+    "body": "Merged in 2.9.alpha6.",
+    "created_at": "2007-12-14T02:09:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1492",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1492#issuecomment-9594",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha6.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 02:09:05
+archive/issue_comments_009595.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-14T02:09:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1492",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1492#issuecomment-9595",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

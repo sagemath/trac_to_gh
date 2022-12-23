@@ -1,11 +1,21 @@
 # Issue 762: Elliptic curve L-series bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/762
-
-Original creator: was
-
-Original creation time: 2007-09-30 04:34:43
-
+archive/issues_000762.json:
+```json
+{
+    "body": "Assignee: was\n\nThere is a bug in computing the values along a line of the L-series:\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
+    "created_at": "2007-09-30T04:34:43Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Elliptic curve L-series bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/762",
+    "user": "was"
+}
+```
 Assignee: was
 
 There is a bug in computing the values along a line of the L-series:
@@ -23,10 +33,25 @@ ValueError: too many values to unpack
 
 This is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.
 
+Issue created by migration from https://trac.sagemath.org/ticket/762
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-28 23:27:22
+archive/issue_comments_004514.json:
+```json
+{
+    "body": "With 2.8.10.alpha1 we are getting a different error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10.alpha1, Release Date: 2007-10-27               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: E = EllipticCurve('389a')\nsage: sage: L = E.Lseries_dokchitser()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/tmp/Work-mabshoff/sage-2.8.10.alpha1/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'EllipticCurve_rational_field' object has no attribute 'Lseries_dokchitser'\nsage: sage: E.Lseries_values_along_line(0.5, 3, 5)\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-28T23:27:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4514",
+    "user": "mabshoff"
+}
+```
 
 With 2.8.10.alpha1 we are getting a different error:
 
@@ -52,27 +77,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-28 23:58:26
+archive/issue_comments_004515.json:
+```json
+{
+    "body": "this fixes the bug.",
+    "created_at": "2007-10-28T23:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4515",
+    "user": "was"
+}
+```
 
 this fixes the bug.
 
 
+
 ---
+
+archive/issue_comments_004516.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-28T23:58:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4516",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 09:43:21
+archive/issue_comments_004517.json:
+```json
+{
+    "body": "applied to 2.8.11.alpha0",
+    "created_at": "2007-11-01T09:43:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4517",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 09:43:21
+archive/issue_comments_004518.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T09:43:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/762#issuecomment-4518",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

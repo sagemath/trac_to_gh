@@ -1,11 +1,21 @@
 # Issue 1821: Update FLINT to 1.0.6
 
-Issue created by migration from https://trac.sagemath.org/ticket/1821
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-18 01:04:04
-
+archive/issues_001821.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nFLINT 1.0.6 fixes the issue on the teragrid machine. It's just a\nworkaround. I've no idea what was really wrong. It might be that when\nthey implemented the builtin they forgot about arithmetic shift\nissues. At any rate it seems to be broken only when you ask for the\nnumber of bits of 0. The patch just treats this as a special case. The\ntests now pass on that machine, and still pass on sage.math.\n\nAt first I thought it had to do with the fact that the builtin returns\nan int, which is 32 bits, whilst a long is 64 bits. But I was unable\nto fix it under this assumption.\n\nhttp://www.flintlib.org/\n\nBill.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1821\n\n",
+    "created_at": "2008-01-18T01:04:04Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Update FLINT to 1.0.6",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1821",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -31,17 +41,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1821
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-18 01:04:28
+archive/issue_comments_011522.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-18T01:04:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1821#issuecomment-11522",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 18:58:00
+archive/issue_comments_011523.json:
+```json
+{
+    "body": "The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha0/flint-1.06.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-19T18:58:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1821#issuecomment-11523",
+    "user": "mabshoff"
+}
+```
 
 The updated spkg is at
 
@@ -52,15 +88,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 19:52:48
+archive/issue_comments_011524.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-19T19:52:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1821#issuecomment-11524",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 19:52:48
+archive/issue_comments_011525.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha0",
+    "created_at": "2008-01-19T19:52:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1821#issuecomment-11525",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha0

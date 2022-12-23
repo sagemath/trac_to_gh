@@ -1,11 +1,21 @@
 # Issue 792: Problem creating element in module over QQ[x]
 
-Issue created by migration from https://trac.sagemath.org/ticket/792
-
-Original creator: justin
-
-Original creation time: 2007-10-02 18:56:44
-
+archive/issues_000792.json:
+```json
+{
+    "body": "Assignee: was\n\nWe generate a module over QQ[x], and try to get a random element.  Somehow, we wander into code that wants a numerator of a polyomial:\n\n\n```\nsage: R1.<x>=PolynomialRing(QQ)\nsage: M=FreeModule(R1,3)\nsage: B=M.basis()\nsage: f2=R1.random_element()\nsage: n2 = f2*B[1]\nsage: V2=M.span([n2])\nsage: m3=V2.random_element()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/SandBox/Justin/sb/sage-2.8.5.1/<ipython console> in <module>()\n\n/SandBox/Justin/sb/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/modules/free_module.py in random_element(self, prob, **kwds)\n   1240         for i in range(self.rank()):\n   1241             if random.random() <= prob:\n-> 1242                 v += self.gen(i) * R.random_element(**kwds)\n   1243         return v\n   1244 \n\n/SandBox/Justin/sb/sage-2.8.5.1/element.pyx in element.Vector.__mul__()\n\n/SandBox/Justin/sb/sage-2.8.5.1/element.pyx in element.ModuleElement._multiply_by_scalar()\n\n/SandBox/Justin/sb/sage-2.8.5.1/element.pyx in element.ModuleElement._lmul_c()\n\n/SandBox/Justin/sb/sage-2.8.5.1/free_module_element.pyx in free_module_element.FreeModuleElement_generic_dense._lmul_c_impl()\n\n/SandBox/Justin/sb/sage-2.8.5.1/element.pyx in element.RingElement._mul_c()\n\n/SandBox/Justin/sb/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.py in _mul_(self, right)\n    245     def _mul_(self, right):\n    246         return FractionFieldElement(self.parent(),\n--> 247            self.__numerator*right.__numerator,\n    248            self.__denominator*right.__denominator, coerce=False, reduce=True)\n    249 \n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute '_FractionFieldElement__numerator'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/792\n\n",
+    "created_at": "2007-10-02T18:56:44Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Problem creating element in module over QQ[x]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/792",
+    "user": "justin"
+}
+```
 Assignee: was
 
 We generate a module over QQ[x], and try to get a random element.  Somehow, we wander into code that wants a numerator of a polyomial:
@@ -53,16 +63,42 @@ sage: m3=V2.random_element()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/792
+
+
+
+
 
 ---
 
-Comment by justin created at 2007-10-03 03:15:23
+archive/issue_comments_004763.json:
+```json
+{
+    "body": "I'm going to close this.  I can now create elements such as 'm3', above.  The problem went away with the fix to Trac#789,",
+    "created_at": "2007-10-03T03:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/792",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/792#issuecomment-4763",
+    "user": "justin"
+}
+```
 
 I'm going to close this.  I can now create elements such as 'm3', above.  The problem went away with the fix to Trac#789,
 
 
+
 ---
 
-Comment by justin created at 2007-10-03 03:15:23
+archive/issue_comments_004764.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-03T03:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/792",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/792#issuecomment-4764",
+    "user": "justin"
+}
+```
 
 Resolution: fixed

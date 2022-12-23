@@ -1,11 +1,21 @@
 # Issue 731: graphs: set_boundary accepts integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/731
-
-Original creator: jason
-
-Original creation time: 2007-09-21 18:54:22
-
+archive/issues_000731.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: graphs\n\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
+    "created_at": "2007-09-21T18:54:22Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "graphs: set_boundary accepts integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/731",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Keywords: graphs
@@ -25,10 +35,25 @@ sage: g._boundary()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/731
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-09-21 18:57:32
+archive/issue_comments_004290.json:
+```json
+{
+    "body": "The above behavior is consistent.  However, because _boundary is now an integer, we get other errors:\n\n\n```\nsage: enum(g)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in enum(graph, quick)\n   6014                 enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n   6015         return enumeration\n-> 6016     M = graph.am()\n   6017     for i, j in M.nonzero_positions():\n   6018         enumeration += 1 << ((n-(i+1))*n + n-(j+1))\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in am(self)\n   1832\n   1833         \"\"\"\n-> 1834         return self.adjacency_matrix()\n   1835\n   1836     def complement(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in adjacency_matrix(self, sparse)\n   3415         \"\"\"\n   3416         n = len(self._nxg.adj)\n-> 3417         verts = self.vertices()\n   3418         D = {}\n   3419         for e in self.edge_iterator():\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in vertices(self)\n    738         int_verts = []\n    739         for v in self.vertex_iterator():\n--> 740             if v in self._boundary:\n    741                 bdy_verts.append(v)\n    742             else:\n\n<type 'exceptions.TypeError'>: argument of type 'sage.rings.integer.Integer' is not iterable\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n",
+    "created_at": "2007-09-21T18:57:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4290",
+    "user": "jason"
+}
+```
 
 The above behavior is consistent.  However, because _boundary is now an integer, we get other errors:
 
@@ -80,9 +105,20 @@ sage: g._boundary()
 
 
 
+
 ---
 
-Comment by rlm created at 2007-10-22 01:33:48
+archive/issue_comments_004291.json:
+```json
+{
+    "body": "The problem is that you are calling the property (not the function) with parentheses:\n\ntry\n\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g.get_boundary()\n[]\n\n\nThe source code is:\n\n    def set_boundary(self, boundary):\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\nThis is as of 2.8.8.1, so I think we can call this fixed.",
+    "created_at": "2007-10-22T01:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4291",
+    "user": "rlm"
+}
+```
 
 The problem is that you are calling the property (not the function) with parentheses:
 
@@ -103,30 +139,74 @@ The source code is:
 This is as of 2.8.8.1, so I think we can call this fixed.
 
 
+
 ---
 
-Comment by rlm created at 2007-10-22 01:33:48
+archive/issue_comments_004292.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2007-10-22T01:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4292",
+    "user": "rlm"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-22 07:02:17
+archive/issue_comments_004293.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-10-22T07:02:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4293",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-22 07:02:17
+archive/issue_comments_004294.json:
+```json
+{
+    "body": "Resolution changed from worksforme to ",
+    "created_at": "2007-10-22T07:02:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4294",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from worksforme to 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-22 07:03:02
+archive/issue_comments_004295.json:
+```json
+{
+    "body": "Please do not close tickets unless explicitly asked to do so. You can recommend to close a ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-22T07:03:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4295",
+    "user": "mabshoff"
+}
+```
 
 Please do not close tickets unless explicitly asked to do so. You can recommend to close a ticket.
 
@@ -135,15 +215,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 21:15:23
+archive/issue_comments_004296.json:
+```json
+{
+    "body": "closing for good.",
+    "created_at": "2007-10-23T21:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4296",
+    "user": "malb"
+}
+```
 
 closing for good.
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 21:15:23
+archive/issue_comments_004297.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-10-23T21:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4297",
+    "user": "malb"
+}
+```
 
 Resolution: invalid

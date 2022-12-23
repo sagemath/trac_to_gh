@@ -1,11 +1,21 @@
 # Issue 1420: [trivial to fix!] documentation typo
 
-Issue created by migration from https://trac.sagemath.org/ticket/1420
-
-Original creator: was
-
-Original creation time: 2007-12-07 18:34:07
-
+archive/issues_001420.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nhttp://www.sagemath.org/doc/html/tut/node39.html#sec:notebook\n\nYour worksheet can be emailed to someone else, how can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\nSHOULD READ:\n\nYour worksheet can be emailed to someone else, who can open it up in their copy of SAGE. The entire worksheet can now be executed.\n\n\n\n\nThanks for your efforts.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1420\n\n",
+    "created_at": "2007-12-07T18:34:07Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "[trivial to fix!] documentation typo",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1420",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -25,44 +35,114 @@ Thanks for your efforts.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1420
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-12-07 21:51:03
+archive/issue_comments_009160.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-07T21:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9160",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-07 21:51:03
+archive/issue_comments_009161.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2007-12-07T21:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9161",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-07 21:51:03
+archive/issue_comments_009162.json:
+```json
+{
+    "body": "Patch included in #1348 .",
+    "created_at": "2007-12-07T21:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9162",
+    "user": "mhansen"
+}
+```
 
 Patch included in #1348 .
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:29:34
+archive/issue_comments_009163.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2007-12-09T10:29:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9163",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:31:33
+archive/issue_comments_009164.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-09T10:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9164",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-09 10:31:33
+archive/issue_comments_009165.json:
+```json
+{
+    "body": "Merged in 2.9.alpha2.",
+    "created_at": "2007-12-09T10:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9165",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha2.

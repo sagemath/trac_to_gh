@@ -1,11 +1,21 @@
 # Issue 1327: 2.8.14/Solaris: scipy import error - fortran compiler related
 
-Issue created by migration from https://trac.sagemath.org/ticket/1327
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-28 22:20:19
-
+archive/issues_001327.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nOn a Solaris box woth gfortran I get odd import errors with scipy:\n\n```\nFile \"test.py\", line 6:\n    : from scipy import optimize\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/Work-mabshoff/sage-2.8.14/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from scipy import optimize###line 6:\n    : from scipy import optimize\n      File \"/tmp/Work-mabshoff/sage-2.8.14/local/lib/python2.5/site-packages/scipy/optimize/__init__.py\", line 11, in <modul\ne>\n        from lbfgsb import fmin_l_bfgs_b\n      File \"/tmp/Work-mabshoff/sage-2.8.14/local/lib/python2.5/site-packages/scipy/optimize/lbfgsb.py\", line 30, in <module>\n        import _lbfgsb\n    ImportError: ld.so.1: /tmp/Work-mabshoff/sage-2.8.14/local/bin/python: fatal: relocation error: file /tmp/Work-mabshoff/\nsage-2.8.14/local/lib/python/site-packages/scipy/optimize/_lbfgsb.so: symbol G77_etime_0: referenced symbol not found\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1327\n\n",
+    "created_at": "2007-11-28T22:20:19Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "2.8.14/Solaris: scipy import error - fortran compiler related",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1327",
+    "user": "mabshoff"
+}
+```
 Assignee: jkantor
 
 On a Solaris box woth gfortran I get odd import errors with scipy:
@@ -34,26 +44,63 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1327
+
+
+
+
 
 ---
 
-Comment by jkantor created at 2007-12-01 19:48:22
+archive/issue_comments_008497.json:
+```json
+{
+    "body": "I think this will fix this, not tested though since I don't have solaris\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020-1.0.3.1.p2.spkg",
+    "created_at": "2007-12-01T19:48:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1327#issuecomment-8497",
+    "user": "jkantor"
+}
+```
 
 I think this will fix this, not tested though since I don't have solaris
 
 http://sage.math.washington.edu/home/jkantor/spkgs/numpy-20071020-1.0.3.1.p2.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 22:27:47
+archive/issue_comments_008498.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T22:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1327#issuecomment-8498",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 22:27:47
+archive/issue_comments_008499.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha2.\n\nWorks on Solaris :)",
+    "created_at": "2007-12-01T22:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1327#issuecomment-8499",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha2.
 

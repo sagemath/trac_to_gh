@@ -1,11 +1,21 @@
 # Issue 1771: latex bug with symbolics [with fix]
 
-Issue created by migration from https://trac.sagemath.org/ticket/1771
-
-Original creator: was
-
-Original creation time: 2008-01-14 05:08:50
-
+archive/issues_001771.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nPeter.Jipsen\nHi,\n\nwith lprint() on, I calculated\n\ndiff(1/x-1/ln(x))\n\nfollowed by\n\nfactor(_)\n\nand the displayed answer is incorrect because prefix negation is not\nhandled correctly in the _latex_ method.\n\nThe same error in a simpler setting can be observed with:\n\n(-(x-1)/2)._latex_(simplify=False)\n\noutput:\n\n'\\\\frac{-x - 1}{2}'\n\n(The error is usually masked by the fact that symbolic expressions are\nnormalized to avoid prefix negation.)\n\nI think the last two lines of the _latex_ method should probably\nchange from\n\n       elif op is operator.neg:\n           return '-%s' % s[0]\n\nto something like:\n\n       elif op is operator.neg:\n           if ops[0]._has_op(operator.add) or\nops[0]._has_op(operator.sub):\n               s[0] = r'\\left( %s \\right)' %s[0]\n           return '-%s' % s[0]\n\nSorry, I haven't figured out how to turn this into a hg patch (if the\nsolution is even appropriate).\n\n--Peter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1771\n\n",
+    "created_at": "2008-01-14T05:08:50Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "latex bug with symbolics [with fix]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1771",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -56,23 +66,62 @@ solution is even appropriate).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1771
+
+
+
+
 
 ---
+
+archive/issue_comments_011200.json:
+```json
+{
+    "body": "Attachment\n\nThis looks good to me.  Thanks for turning it into a patch Mike!",
+    "created_at": "2008-01-14T05:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1771",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11200",
+    "user": "was"
+}
+```
 
 Attachment
 
 This looks good to me.  Thanks for turning it into a patch Mike!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-14 05:52:24
+archive/issue_comments_011201.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha3.",
+    "created_at": "2008-01-14T05:52:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1771",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11201",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha3.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-14 05:52:24
+archive/issue_comments_011202.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-14T05:52:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1771",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11202",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 1696: osx 10.4 2.9.2 instructions don't work.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1696
-
-Original creator: jkantor
-
-Original creation time: 2008-01-05 23:48:32
-
+archive/issues_001696.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nI tried the 2.9.2 dmg for osx 10.4. There were two major issue\n\n1. Graphically dragging and dropping the sage folder didn't work. about halfway through the copy \n   failed with the message \n\n(You cannot copy \"singular\" to the destination because its name is the \nsame as the name of an item on the destination except for the case of \nsome characters) \n\n2. From the command line I was able to do \n\ncp -R -P /Volumes/sage-2.9.2-OSX10.4-intel-i386-Darwin/sage . \n\nThis worked modulo a missing libintl (see 1695).\n\nIf you only do cp -r, every symbolic link breaks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1696\n\n",
+    "created_at": "2008-01-05T23:48:32Z",
+    "labels": [
+        "relocation",
+        "critical",
+        "bug"
+    ],
+    "title": "osx 10.4 2.9.2 instructions don't work.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1696",
+    "user": "jkantor"
+}
+```
 Assignee: cwitty
 
 I tried the 2.9.2 dmg for osx 10.4. There were two major issue
@@ -25,10 +35,25 @@ This worked modulo a missing libintl (see 1695).
 
 If you only do cp -r, every symbolic link breaks.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1696
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-15 23:31:53
+archive/issue_comments_010764.json:
+```json
+{
+    "body": "What is the current status? I think the problems have been resolved, but can somebody confirm?\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-15T23:31:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1696#issuecomment-10764",
+    "user": "mabshoff"
+}
+```
 
 What is the current status? I think the problems have been resolved, but can somebody confirm?
 
@@ -37,17 +62,39 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-16 06:11:07
+archive/issue_comments_010765.json:
+```json
+{
+    "body": "This can be closed.  The issue is that my osx 10.4 intel build machine had a case-sensitive filesystem.  This is now a non-issue because that machine no longer exists (more precisely it was upgraded to 10.5; it's not my machine).  \n\nWilliam",
+    "created_at": "2008-02-16T06:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1696#issuecomment-10765",
+    "user": "was"
+}
+```
 
 This can be closed.  The issue is that my osx 10.4 intel build machine had a case-sensitive filesystem.  This is now a non-issue because that machine no longer exists (more precisely it was upgraded to 10.5; it's not my machine).  
 
 William
 
 
+
 ---
 
-Comment by was created at 2008-02-16 06:11:07
+archive/issue_comments_010766.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-02-16T06:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1696#issuecomment-10766",
+    "user": "was"
+}
+```
 
 Resolution: wontfix

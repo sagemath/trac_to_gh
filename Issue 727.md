@@ -1,11 +1,21 @@
 # Issue 727: find rational points on ternary quadratic forms -- volunteer needed
 
-Issue created by migration from https://trac.sagemath.org/ticket/727
-
-Original creator: was
-
-Original creation time: 2007-09-21 08:45:15
-
+archive/issues_000727.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  ncalexan justin mstreng rlm pbruin\n\n\n```\nJohn Cremona <john.cremona@gmail.com> \t\t hide details\t 1:37 am (2 minutes ago) \n\treply-to\t\tsage-support@googlegroups.com\t \n\tto\t\tsage-support@googlegroups.com\t \n\tdate\t\tSep 21, 2007 1:37 AM\t \n\tsubject\t\t[sage-support] Re: rational solutions to a bivariate polynomial\t \n\tmailed-by\t\tgooglegroups.com\t \n\nIt *is* a ternary quadratic form once you homogenize with a 3rd variable z.\n\nFinding rational points on plane conics (which is what this is) has\nadvanced substantially in the last few years.  My paper with Rusin\n(Mathematics of Computation, 72 (2003), no. 243, pages 1417-1441.)\nworks well for diaginal ones and is behind Magma's first\nimplementations for RationalPoint(Conic());  a different method by\nDenis Simon is better for non-diagonal ones and is (I believe) what\nMagma uses.\n\nMy method is implemented in the C++ code which is already in Sage in\nthe mwrank package, so all tat would be needed would be to write the\nappropriate wrappers!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/727\n\n",
+    "created_at": "2007-09-21T08:45:15Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "find rational points on ternary quadratic forms -- volunteer needed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/727",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 CC:  ncalexan justin mstreng rlm pbruin
@@ -36,106 +46,279 @@ appropriate wrappers!
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/727
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-01-27 05:02:02
+archive/issue_comments_004235.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to algebraic geometry.",
+    "created_at": "2008-01-27T05:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4235",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from basic arithmetic to algebraic geometry.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-01-27 05:02:02
+archive/issue_comments_004236.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2008-01-27T05:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4236",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-29 08:26:55
+archive/issue_comments_004237.json:
+```json
+{
+    "body": "This is so random -- I have written code to do this.  We already distribute Denis Simon's code to solve such systems, and I have have integrated a little of it.  Patch coming up.  Please talk to me before implementing this.",
+    "created_at": "2008-02-29T08:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4237",
+    "user": "ncalexan"
+}
+```
 
 This is so random -- I have written code to do this.  We already distribute Denis Simon's code to solve such systems, and I have have integrated a little of it.  Patch coming up.  Please talk to me before implementing this.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-29 08:26:55
+archive/issue_comments_004238.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"rational point points conic quadratic form\".",
+    "created_at": "2008-02-29T08:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4238",
+    "user": "ncalexan"
+}
+```
 
 Changing keywords from "" to "rational point points conic quadratic form".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:31:34
+archive/issue_comments_004239.json:
+```json
+{
+    "body": "Changing assignee from was to justin.",
+    "created_at": "2008-11-08T21:31:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4239",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to justin.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:31:34
+archive/issue_comments_004240.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to quadratic forms.",
+    "created_at": "2008-11-08T21:31:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4240",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebraic geometry to quadratic forms.
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-18 18:06:03
+archive/issue_comments_004241.json:
+```json
+{
+    "body": "Define a Conic class with an interface to Denis Simon's qfsolve",
+    "created_at": "2009-06-18T18:06:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4241",
+    "user": "mstreng"
+}
+```
 
 Define a Conic class with an interface to Denis Simon's qfsolve
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-18 18:15:53
+archive/issue_comments_004242.json:
+```json
+{
+    "body": "Changing assignee from justin to mhampton.",
+    "created_at": "2009-06-18T18:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4242",
+    "user": "mstreng"
+}
+```
 
 Changing assignee from justin to mhampton.
 
 
+
 ---
+
+archive/issue_comments_004243.json:
+```json
+{
+    "body": "Attachment\n\nThe patches I just uploaded were part of ncalexan's patch for ticket 6341, implementing Mestre's algorithm. They implement a Conic class and allow one to find points over the rationals. This Conic class needs to be expanded to provide much more functionality, such as finding points and/or rational parametrizations over other fields. If the original question is only for the rationals, then that at least is answered.",
+    "created_at": "2009-06-18T18:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4243",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 The patches I just uploaded were part of ncalexan's patch for ticket 6341, implementing Mestre's algorithm. They implement a Conic class and allow one to find points over the rationals. This Conic class needs to be expanded to provide much more functionality, such as finding points and/or rational parametrizations over other fields. If the original question is only for the rationals, then that at least is answered.
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-18 18:15:53
+archive/issue_comments_004244.json:
+```json
+{
+    "body": "Changing component from quadratic forms to geometry.",
+    "created_at": "2009-06-18T18:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4244",
+    "user": "mstreng"
+}
+```
 
 Changing component from quadratic forms to geometry.
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-23 12:23:42
+archive/issue_comments_004245.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-23T12:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4245",
+    "user": "mstreng"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-23 12:23:42
+archive/issue_comments_004246.json:
+```json
+{
+    "body": "Changing assignee from mhampton to mstreng.",
+    "created_at": "2009-06-23T12:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4246",
+    "user": "mstreng"
+}
+```
 
 Changing assignee from mhampton to mstreng.
 
 
+
 ---
 
-Comment by mstreng created at 2009-06-23 12:23:42
+archive/issue_comments_004247.json:
+```json
+{
+    "body": "I'll work on the Conic class.",
+    "created_at": "2009-06-23T12:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4247",
+    "user": "mstreng"
+}
+```
 
 I'll work on the Conic class.
 
 
+
 ---
+
+archive/issue_comments_004248.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-06T14:23:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4248",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-06 14:27:55
+archive/issue_comments_004249.json:
+```json
+{
+    "body": "* this is being revived at Sage Days 23\n\n* trac_727-conic-extcode.patch should be removed: it updates Denis Simon's code from 2005 to 2007, while 2009 is already shipped with the latest Sage\n\n* trac_727_more_conic_files.patch implements a Conic class that uses Denis Simon's code and can find points on conics over number fields and finite fields. It includes most of trac_727-conic.patch and works by itself on 4.4.4. Some doctests fail. It includes an incomplete and incorrect implementation of Hilbert symbols that should be replaced by the Hilbert symbols of #9334",
+    "created_at": "2010-07-06T14:27:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4249",
+    "user": "mstreng"
+}
+```
 
 * this is being revived at Sage Days 23
 
@@ -144,109 +327,290 @@ Comment by mstreng created at 2010-07-06 14:27:55
 * trac_727_more_conic_files.patch implements a Conic class that uses Denis Simon's code and can find points on conics over number fields and finite fields. It includes most of trac_727-conic.patch and works by itself on 4.4.4. Some doctests fail. It includes an incomplete and incorrect implementation of Hilbert symbols that should be replaced by the Hilbert symbols of #9334
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-06 16:13:06
+archive/issue_comments_004250.json:
+```json
+{
+    "body": "* see http://wiki.sagemath.org/days23/conics\n\n  * I missed the file sage/schemes/plane_conics/__init__.py (which is empty), so the patch in its current form doesn't work",
+    "created_at": "2010-07-06T16:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4250",
+    "user": "mstreng"
+}
+```
 
 * see http://wiki.sagemath.org/days23/conics
 
- * I missed the file sage/schemes/plane_conics/__init__.py (which is empty), so the patch in its current form doesn't work
+  * I missed the file sage/schemes/plane_conics/__init__.py (which is empty), so the patch in its current form doesn't work
+
 
 
 ---
+
+archive/issue_comments_004251.json:
+```json
+{
+    "body": "Attachment\n\napply this patch and the one without \"2\" to get something that almost works",
+    "created_at": "2010-07-07T10:15:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4251",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply this patch and the one without "2" to get something that almost works
 
 
+
 ---
+
+archive/issue_comments_004252.json:
+```json
+{
+    "body": "Attachment\n\nneeds two previous tickets trac_727_more... and trac_9334-hilbert.patch",
+    "created_at": "2010-07-08T09:43:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4252",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 needs two previous tickets trac_727_more... and trac_9334-hilbert.patch
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-12 12:31:07
+archive/issue_comments_004253.json:
+```json
+{
+    "body": "apply after trac_727_more_conic_files1,2,3; requires trac_9334-hilbert.patch to work",
+    "created_at": "2010-07-12T12:31:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4253",
+    "user": "mstreng"
+}
+```
 
 apply after trac_727_more_conic_files1,2,3; requires trac_9334-hilbert.patch to work
 
 
+
 ---
+
+archive/issue_comments_004254.json:
+```json
+{
+    "body": "Attachment\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require trac_9334-hilbert.patch",
+    "created_at": "2010-07-16T18:58:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4254",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require trac_9334-hilbert.patch
 
 
+
 ---
+
+archive/issue_comments_004255.json:
+```json
+{
+    "body": "Attachment\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5",
+    "created_at": "2010-07-18T21:41:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4255",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5
 
 
+
 ---
+
+archive/issue_comments_004256.json:
+```json
+{
+    "body": "Attachment\n\napply only this latest file",
+    "created_at": "2010-07-18T21:51:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4256",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply only this latest file
 
 
+
 ---
+
+archive/issue_comments_004257.json:
+```json
+{
+    "body": "Attachment\n\napply the 1-6 patch on sage 4.5.1, then apply this one",
+    "created_at": "2010-07-20T12:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4257",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply the 1-6 patch on sage 4.5.1, then apply this one
 
 
+
 ---
+
+archive/issue_comments_004258.json:
+```json
+{
+    "body": "Attachment\n\napply after 7 (there is no 8)",
+    "created_at": "2010-07-20T12:42:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4258",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply after 7 (there is no 8)
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-20 12:45:56
+archive/issue_comments_004259.json:
+```json
+{
+    "body": "I'm running a doctest right now. I'll fold them when I get the time. Who wants to review it?",
+    "created_at": "2010-07-20T12:45:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4259",
+    "user": "mstreng"
+}
+```
 
 I'm running a doctest right now. I'll fold them when I get the time. Who wants to review it?
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-20 20:40:19
+archive/issue_comments_004260.json:
+```json
+{
+    "body": "apply only this latest file (works on sage 4.4.4 and on 4.5.1)",
+    "created_at": "2010-07-20T20:40:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4260",
+    "user": "mstreng"
+}
+```
 
 apply only this latest file (works on sage 4.4.4 and on 4.5.1)
 
 
+
 ---
+
+archive/issue_comments_004261.json:
+```json
+{
+    "body": "Attachment\n\n\"All tests passed!\", and I combined the patches into one file",
+    "created_at": "2010-07-20T20:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4261",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 "All tests passed!", and I combined the patches into one file
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-20 20:42:15
+archive/issue_comments_004262.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-20T20:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4262",
+    "user": "mstreng"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-20 21:22:28
+archive/issue_comments_004263.json:
+```json
+{
+    "body": "Those `[with patch, needs review]` bits in the description are no longer necessary, thanks to the workflow.",
+    "created_at": "2010-07-20T21:22:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4263",
+    "user": "rlm"
+}
+```
 
 Those `[with patch, needs review]` bits in the description are no longer necessary, thanks to the workflow.
 
 
+
 ---
 
-Comment by cremona created at 2010-09-11 17:55:07
+archive/issue_comments_004264.json:
+```json
+{
+    "body": "The patch applies fine to 4.6.alpha0, but not all the tests in the new directory pass:\n\n```\n\tsage -t -long \"devel/sage-main/sage/schemes/plane_conics/con_field.py\"\n\tsage -t -long \"devel/sage-main/sage/schemes/plane_conics/con_number_field.py\"\n\tsage -t -long \"devel/sage-main/sage/schemes/plane_conics/con_rational_field.py\"\n\tsage -t -long \"devel/sage-main/sage/schemes/plane_conics/rnfisnorm.py\"\n```\n\nI feared that it would be worse after the new Pari upgrade (which is in 4.6.alpha0).  But it does need looking into.",
+    "created_at": "2010-09-11T17:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4264",
+    "user": "cremona"
+}
+```
 
 The patch applies fine to 4.6.alpha0, but not all the tests in the new directory pass:
 
@@ -260,65 +624,168 @@ The patch applies fine to 4.6.alpha0, but not all the tests in the new directory
 I feared that it would be worse after the new Pari upgrade (which is in 4.6.alpha0).  But it does need looking into.
 
 
+
 ---
 
-Comment by cremona created at 2010-09-11 17:55:07
+archive/issue_comments_004265.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-11T17:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4265",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mstreng created at 2010-11-03 09:58:46
+archive/issue_comments_004266.json:
+```json
+{
+    "body": "It worked just fine on my 4.5.something. I guess the problems are all in \"devel/sage-main/sage/schemes/plane_conics/rnfisnorm.py\", which we can get rid of after #2329 is finished. So let's do #2329 first.",
+    "created_at": "2010-11-03T09:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4266",
+    "user": "mstreng"
+}
+```
 
 It worked just fine on my 4.5.something. I guess the problems are all in "devel/sage-main/sage/schemes/plane_conics/rnfisnorm.py", which we can get rid of after #2329 is finished. So let's do #2329 first.
 
 
+
 ---
+
+archive/issue_comments_004267.json:
+```json
+{
+    "body": "Attachment\n\nApply trac_727_conics.patch to sage 4.6 after #2329 and #9334",
+    "created_at": "2010-12-08T17:28:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4267",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 Apply trac_727_conics.patch to sage 4.6 after #2329 and #9334
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-08 17:34:03
+archive/issue_comments_004268.json:
+```json
+{
+    "body": "Here's a version that uses hilbert symbols and rnfisnorm from resp. #9334 and #2329. This patch provides motivation and testcases for those two other tickets.",
+    "created_at": "2010-12-08T17:34:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4268",
+    "user": "mstreng"
+}
+```
 
 Here's a version that uses hilbert symbols and rnfisnorm from resp. #9334 and #2329. This patch provides motivation and testcases for those two other tickets.
 
 
+
 ---
+
+archive/issue_comments_004269.json:
+```json
+{
+    "body": "Attachment\n\nApply only this latest file (works on sage 4.6.1.rc0 without any other patches)",
+    "created_at": "2011-01-13T14:33:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4269",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 Apply only this latest file (works on sage 4.6.1.rc0 without any other patches)
 
 
+
 ---
 
-Comment by mstreng created at 2011-01-13 14:37:04
+archive/issue_comments_004270.json:
+```json
+{
+    "body": "I moved all number field functionality to #10621. Because of this, no patches from other tickets are needed, you only need to apply trac_727_conics_without_number_fields.patch",
+    "created_at": "2011-01-13T14:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4270",
+    "user": "mstreng"
+}
+```
 
 I moved all number field functionality to #10621. Because of this, no patches from other tickets are needed, you only need to apply trac_727_conics_without_number_fields.patch
 
 
+
 ---
 
-Comment by mstreng created at 2011-01-13 14:37:04
+archive/issue_comments_004271.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-13T14:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4271",
+    "user": "mstreng"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-01-22 15:36:28
+archive/issue_comments_004272.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-22T15:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4272",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-01-22 15:36:28
+archive/issue_comments_004273.json:
+```json
+{
+    "body": "This looks really good. It's embarrassing that we've been shipping Denis Simon's scripts with Sage for years but nobody's sat down and written the interface code necessary to make it accessible.\n\nPatch applied fine to 4.6.2.alpha1, all doctests in sage/schemes passed, the ref manual built OK, and all the examples I tried worked.\n\nI have one minor gripe: there are one or two cases where the new Conic classes inherit methods from the generic plane curve classes that perhaps ought to be replaced with more appropriate conic-specific implementations (e.g the method \"rational_points\"). But that can come in future tickets if people feel it's needed.",
+    "created_at": "2011-01-22T15:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4273",
+    "user": "davidloeffler"
+}
+```
 
 This looks really good. It's embarrassing that we've been shipping Denis Simon's scripts with Sage for years but nobody's sat down and written the interface code necessary to make it accessible.
 
@@ -327,8 +794,19 @@ Patch applied fine to 4.6.2.alpha1, all doctests in sage/schemes passed, the ref
 I have one minor gripe: there are one or two cases where the new Conic classes inherit methods from the generic plane curve classes that perhaps ought to be replaced with more appropriate conic-specific implementations (e.g the method "rational_points"). But that can come in future tickets if people feel it's needed.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-25 08:13:28
+archive/issue_comments_004274.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-01-25T08:13:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/727",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4274",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

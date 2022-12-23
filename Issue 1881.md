@@ -1,11 +1,21 @@
 # Issue 1881: Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()
 
-Issue created by migration from https://trac.sagemath.org/ticket/1881
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-21 22:00:18
-
+archive/issues_001881.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nInitially reported by Jaap:\n\n```\nsage -t  tut.tex                                            \n**********************************************************************\nFile \"tut.py\", line 3574:\n    : factor(f)\nExpected:\n    9 * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\nGot:\n    (9) * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\n**********************************************************************\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1881\n\n",
+    "created_at": "2008-01-21T22:00:18Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1881",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Initially reported by Jaap:
@@ -24,17 +34,45 @@ Got:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1881
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-21 22:16:36
+archive/issue_comments_011899.json:
+```json
+{
+    "body": "This is likely the \"fault\" of Ncalexan's recent changes to factorize.py.  \nI'm not sure this change is bad though -- it's probably good using parens for\nthe unit part.  Though it looks dumb in this case.",
+    "created_at": "2008-01-21T22:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1881#issuecomment-11899",
+    "user": "was"
+}
+```
 
 This is likely the "fault" of Ncalexan's recent changes to factorize.py.  
 I'm not sure this change is bad though -- it's probably good using parens for
 the unit part.  Though it looks dumb in this case.
 
 
+
 ---
+
+archive/issue_comments_011900.json:
+```json
+{
+    "body": "Attachment\n\nYou are right, it does look dumb, but this seems to be fallout from #1391, i.e. \"bug in unit part of factorizations of multivariate polynomials\". At least malb did fix a doctest in that patch in the same fashion. Care to review this trivial patch?\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T22:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1881#issuecomment-11900",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -45,15 +83,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-22 01:44:26
+archive/issue_comments_011901.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-22T01:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1881#issuecomment-11901",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-22 01:44:26
+archive/issue_comments_011902.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-22T01:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1881#issuecomment-11902",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

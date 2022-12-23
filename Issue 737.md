@@ -1,11 +1,21 @@
 # Issue 737: inrange, better name for irange
 
-Issue created by migration from https://trac.sagemath.org/ticket/737
-
-Original creator: jsp
-
-Original creation time: 2007-09-22 19:21:31
-
+archive/issues_000737.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis is a follow up on ticket #706\n\nThe name inrange seems to be more acceptable\n\nExample:\n\nsage: sum(k for k in inrange(1, 10))\n\n55\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/737\n\n",
+    "created_at": "2007-09-22T19:21:31Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "inrange, better name for irange",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/737",
+    "user": "jsp"
+}
+```
 Assignee: somebody
 
 This is a follow up on ticket #706
@@ -20,21 +30,60 @@ sage: sum(k for k in inrange(1, 10))
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/737
+
+
+
+
 
 ---
+
+archive/issue_comments_004319.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-22T19:23:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4319",
+    "user": "jsp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-04 03:51:01
+archive/issue_comments_004320.json:
+```json
+{
+    "body": "This patch is currently being voted on by the JSAGE editorial board.",
+    "created_at": "2007-10-04T03:51:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4320",
+    "user": "was"
+}
+```
 
 This patch is currently being voted on by the JSAGE editorial board.
 
 
+
 ---
 
-Comment by was created at 2007-10-05 04:29:40
+archive/issue_comments_004321.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2007-10-05T04:29:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/737",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4321",
+    "user": "was"
+}
+```
 
 Resolution: wontfix

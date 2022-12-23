@@ -1,11 +1,21 @@
 # Issue 1871: wiki -- pressing control-c just starts another copy running
 
-Issue created by migration from https://trac.sagemath.org/ticket/1871
-
-Original creator: was
-
-Original creation time: 2008-01-20 22:15:06
-
+archive/issues_001871.json:
+```json
+{
+    "body": "Assignee: was\n\nThe wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:\n\n```\nwas@sage:~/tmp$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nwiki(sage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:09 -0700 [-] Log opened.\n2008/01/20 15:09 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:09 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:09 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:09 -0700 [-] Loaded.\n2008/01/20 15:09 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:09 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:09 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9000 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9001\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9001 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9002 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9002\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:12 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:12 -0700 [-] (Port 9002 Closed)\n2008/01/20 15:12 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:12 -0700 [-] Main loop terminated.\n2008/01/20 15:12 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9003 *\n*                                                *\n**************************************************\n...\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1871\n\n",
+    "created_at": "2008-01-20T22:15:06Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "bug"
+    ],
+    "title": "wiki -- pressing control-c just starts another copy running",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1871",
+    "user": "was"
+}
+```
 Assignee: was
 
 The wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:
@@ -84,10 +94,25 @@ Port 9000 is already in use.  Trying next port...
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1871
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-05 14:57:25
+archive/issue_comments_011849.json:
+```json
+{
+    "body": "Also, we should upgrade to the newest version of the wiki software:\n\n\n```\nGreetings Sages!\n\nWas wondering if I might put in a request to have the moin wiki that\nis bundled with sage upgraded to version 1.6.1?   Among all other\nother features/bugfixes introduced since version 1.5.7p2 is\nWikiSynchronization, which I think is extremely cool!\n\nThanks very much.  I truly appreciate all of the wonderful work the\nsage team is doing.\n\nRegards,\n\n--gordon\n```\n",
+    "created_at": "2008-02-05T14:57:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11849",
+    "user": "was"
+}
+```
 
 Also, we should upgrade to the newest version of the wiki software:
 
@@ -110,23 +135,56 @@ Regards,
 
 
 
+
 ---
 
-Comment by rlm created at 2008-02-10 03:17:28
+archive/issue_comments_011850.json:
+```json
+{
+    "body": "See also the details in #596 - a duplicate of this ticket.",
+    "created_at": "2008-02-10T03:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11850",
+    "user": "rlm"
+}
+```
 
 See also the details in #596 - a duplicate of this ticket.
 
 
+
 ---
 
-Comment by rlm created at 2009-03-07 00:02:09
+archive/issue_comments_011851.json:
+```json
+{
+    "body": "These both depend on #3693.",
+    "created_at": "2009-03-07T00:02:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11851",
+    "user": "rlm"
+}
+```
 
 These both depend on #3693.
 
 
+
 ---
 
-Comment by wdj created at 2009-06-19 22:21:15
+archive/issue_comments_011852.json:
+```json
+{
+    "body": "Using an intel macbook running 10.4, I cannot get both patches to apply, nor can I get only the 2nd patch to apply. The first patch fixes the problem (that once you start wiki() running, ctl-c kills the wiki server running on localhost:9000 but also starts it running on localhost:9001.) However, ctl-c also causes an error:\n\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2009-06-19 18:06:30-0400 [-] Log opened.\n2009-06-19 18:06:30-0400 [-] twistd 8.1.0 (/Users/davidjoyner/sagefiles/sage-4.0.2.rc3/local/bin/python 2.5.4) starting up\n2009-06-19 18:06:30-0400 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2009-06-19 18:06:30-0400 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2009-06-19 18:06:30-0400 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1632210>\n2009-06-19 18:06:30-0400 [-] set uid/gid 501/501\n2009-06-19 18:07:06-0400 [HTTPChannel,0,127.0.0.1] /Users/davidjoyner/sagefiles/sage-4.0.2.rc3/local/lib/python2.5/site-packages/MoinMoin/request.py:1485: exceptions.DeprecationWarning: IPv4Address.__getitem__ is deprecated.  Use attributes instead.\n2009-06-19 18:07:06-0400 [-] 127.0.0.1 - - [19/Jun/2009:22:07:05 +0000] \"GET / HTTP/1.1\" 404 7613 \"-\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:06-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:05 +0000] \"GET /wiki/common/js/common.js HTTP/1.1\" 200 3892 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:06-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:05 +0000] \"GET /wiki/modern/css/common.css HTTP/1.1\" 200 7048 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:06-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:05 +0000] \"GET /wiki/modern/css/screen.css HTTP/1.1\" 200 7558 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:06-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:05 +0000] \"GET /wiki/modern/css/print.css HTTP/1.1\" 200 775 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:07-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:06 +0000] \"GET /wiki/modern/css/projection.css HTTP/1.1\" 200 587 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:07-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:06 +0000] \"GET /wiki/common/moinmoin.png HTTP/1.1\" 200 6190 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n2009-06-19 18:07:09-0400 [HTTPChannel,0,127.0.0.1] 127.0.0.1 - - [19/Jun/2009:22:07:08 +0000] \"GET /favicon.ico HTTP/1.1\" 200 1718 \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17\"\n^C2009-06-19 18:07:21-0400 [-] Received SIGINT, shutting down.\n2009-06-19 18:07:21-0400 [-] (Port 9000 Closed)\n2009-06-19 18:07:21-0400 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1632210>\n2009-06-19 18:07:21-0400 [-] Main loop terminated.\n2009-06-19 18:07:21-0400 [-] Server Shut Down.\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/Users/davidjoyner/.sage/temp/zeus.home/618/_Users_davidjoyner__sage_init_sage_0.py in <module>()\n\n/Users/davidjoyner/sagefiles/sage-4.0.2.rc3/local/lib/python2.5/site-packages/sage/server/wiki/moin.pyc in wiki(directory, port, address, threads)\n     98             break\n     99     \n--> 100     os.chdir(original_path)\n    101     return True\n    102 \n\nNameError: global name 'original_path' is not defined\nsage: \n```\n\n\nIs this the intended behavior?\n\nchange \"needs review\" -> \"needs work\" since it seems that the second patch should apply and I suspect that Robert Miller did not intend this behavior.",
+    "created_at": "2009-06-19T22:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11852",
+    "user": "wdj"
+}
+```
 
 Using an intel macbook running 10.4, I cannot get both patches to apply, nor can I get only the 2nd patch to apply. The first patch fixes the problem (that once you start wiki() running, ctl-c kills the wiki server running on localhost:9000 but also starts it running on localhost:9001.) However, ctl-c also causes an error:
 
@@ -180,29 +238,75 @@ Is this the intended behavior?
 change "needs review" -> "needs work" since it seems that the second patch should apply and I suspect that Robert Miller did not intend this behavior.
 
 
+
 ---
+
+archive/issue_comments_011853.json:
+```json
+{
+    "body": "Attachment\n\nApply only this patch",
+    "created_at": "2009-06-19T22:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11853",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 Apply only this patch
 
 
+
 ---
 
-Comment by rlm created at 2009-06-19 22:58:26
+archive/issue_comments_011854.json:
+```json
+{
+    "body": "Hopefully this patch won't rot for another 3 months! :)",
+    "created_at": "2009-06-19T22:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11854",
+    "user": "rlm"
+}
+```
 
 Hopefully this patch won't rot for another 3 months! :)
 
 
+
 ---
 
-Comment by wdj created at 2009-06-20 01:25:51
+archive/issue_comments_011855.json:
+```json
+{
+    "body": "Applies okay to 4.0.2.rc3 and passes sage -testall on an intel macbook running 10.4. Corrects the bug, as advertised, and exits without raising an error.",
+    "created_at": "2009-06-20T01:25:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11855",
+    "user": "wdj"
+}
+```
 
 Applies okay to 4.0.2.rc3 and passes sage -testall on an intel macbook running 10.4. Corrects the bug, as advertised, and exits without raising an error.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 09:48:27
+archive/issue_comments_011856.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T09:48:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11856",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

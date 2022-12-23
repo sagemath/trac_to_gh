@@ -1,11 +1,21 @@
 # Issue 1444: [with patch] some serious hard-coding issues that break all binary installs
 
-Issue created by migration from https://trac.sagemath.org/ticket/1444
-
-Original creator: was
-
-Original creation time: 2007-12-10 01:11:39
-
+archive/issues_001444.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nHi,\n\nThere are a few very serious (but easy to fix)\nproblems with the current sage and upcoming packages\nthat involving hardcoding of paths.  These\nwill cause problems if you move a sage install.\n\nPOLYBORI:\nI noticed this in a SAGE_ROOT/local/bin/:\n\n   lrwxr-xr-x  1 was  was       47 Dec  4 10:52 ipbori -> /Users/was/s/local/share/polybori/ipbori/ipbori\n\nThat link *must* not be hard coded.  Make sure this gets fixed before polybori is in sage.\n\nSINGULAR (very serious):\n   Several Singular-related files in SAGE_ROOT/local/bin/ have hardcoded paths.\n   This makes it so singular will fail to work for everybody who downloads a sage\n   binary right now :-(. \n\n   The package singular-3-0-4-1-20071209.spkg fixes the problem.  Just do \n   sage -upgrade to get it, or download it from \n       http://sagemath.org/packages/standard/singular-3-0-4-1-20071209.spkg\n\nBZIP2:\n   Some minor path hardcoding problems.  Easy to fix.  I've put the file that needs\nto be replaced here...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1444\n\n",
+    "created_at": "2007-12-10T01:11:39Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch] some serious hard-coding issues that break all binary installs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1444",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -39,23 +49,62 @@ to be replaced here...
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1444
+
+
+
+
 
 ---
+
+archive/issue_comments_009316.json:
+```json
+{
+    "body": "Attachment\n\nput this file in spkg/base/   overwriting the one there already.",
+    "created_at": "2007-12-10T01:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1444#issuecomment-9316",
+    "user": "was"
+}
+```
 
 Attachment
 
 put this file in spkg/base/   overwriting the one there already.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-10 03:39:12
+archive/issue_comments_009317.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-10T03:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1444#issuecomment-9317",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-10 03:39:12
+archive/issue_comments_009318.json:
+```json
+{
+    "body": "Merged in 2.9.alpha3.",
+    "created_at": "2007-12-10T03:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1444#issuecomment-9318",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha3.

@@ -1,11 +1,21 @@
 # Issue 1389: Citation instructions for Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/1389
-
-Original creator: jason
-
-Original creation time: 2007-12-03 22:10:33
-
+archive/issues_001389.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mhansen\n\n\n\n```\nWilliam Stein writes:\n\nYes to every single one of your questions.\n\nOn Dec 3, 2007 1:29 PM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> >\n> > I'm citing Sage in a paper I'm writing.  After searching (using the\n> > search function at sagemath.org) and clicking around lots of places, I\n> > found the page in the tutorial:\n> >\n> > http://sagemath.org/doc/html/tut/node62.html\n> >\n> > and the more official instructions at:\n> >\n> > http://sagemath.org/pub.html\n> >\n> > A couple of questions:\n> >\n> > 1. The instructions in the two places conflict each other.  Should we\n> > change the tutorial to match http://sagemath.org/pub.html (or point to it?)\n> >\n> > 1. If I remember correctly, a while ago William encouraged people to use\n> > \"Sage\" instead of \"SAGE\", saying that we had outgrown the acronym.  If\n> > so, there are a _lot_ of occurrences of SAGE that need to replaced in\n> > the documentation and website.  Should we change the citing instructions\n> > to use \"Sage\" instead of \"SAGE\"?\n> >\n> > 3. Every time I look for the citation instructions, I spend at least\n> > 15-20 minutes searching and clicking different places.  I think the\n> > publication page is great marketing material (and a great source of\n> > example Sage code in real life).  Can we link to the publication page\n> > from the main page and indicate that the citation instructions are also\n> > there?\n> >\n> > Thanks,\n> >\n> > Jason\n> >\n> >\n>> > >\n> >\n\n\n\n-- William Stein \nAssociate Professor of Mathematics \nUniversity of Washington \nhttp://wstein.org \n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1389\n\n",
+    "created_at": "2007-12-03T22:10:33Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "bug"
+    ],
+    "title": "Citation instructions for Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1389",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  mhansen
@@ -66,19 +76,45 @@ http://wstein.org
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1389
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-12-10 21:54:23
+archive/issue_comments_008905.json:
+```json
+{
+    "body": "I took care of the second \"#1\" in the email on the wiki:\n\nhttp://wiki.sagemath.org/Publications_using_SAGE",
+    "created_at": "2007-12-10T21:54:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8905",
+    "user": "jason"
+}
+```
 
 I took care of the second "#1" in the email on the wiki:
 
 http://wiki.sagemath.org/Publications_using_SAGE
 
 
+
 ---
 
-Comment by mvngu created at 2008-09-19 08:41:17
+archive/issue_comments_008906.json:
+```json
+{
+    "body": "Here are some possible trivial fixes:\n\n1. From [Status of Development](http://www.sagemath.org/development-status.html)\n\n```\n-SAGE: Timeline\n+Sage: Timeline\n```\n\n\n\n2. From [Sage developers around the world](http://www.sagemath.org/development-map.html)\n   2.1 Within the \"Tom Boothby\" row\n\n```\n-The SAGE Notebook\n+The Sage Notebook\n```\n\n  2.2 Within the \"Wilson Cheung\" row\n\n```\n-Compilation of SAGE on Solaris\n+Compilation of Sage on Solaris\n```\n\n\n```\n-discussion of SAGE build process\n+discussion of Sage build process\n```\n\n  2.3 Within the \"Alex Clemesha\" row\n\n```\n-SAGE's 2d plotting functionality\n+Sage's 2d plotting functionality\n```\n\n  2.4 Within the \"John Cremona\" row\n\n```\n-C++ part of SAGE interface to mwrank, Tables\n+C++ part of Sage interface to mwrank, Tables\n```\n\n\n```\n-organize SAGE Days 6\n+organize Sage Days 6\n```\n\n  2.5 Within the \"Doug Cutrell\" row\n\n```\n-created the SAGE Microsoft Windows installer\n+created the Sage Microsoft Windows installer\n```\n\n  2.6 Within the \"David Kirkby\" row\n\n```\n-Compilation of SAGE on Solaris\n+Compilation of Sage on Solaris\n```\n\n\n```\n-much help on general SAGE build process\n+much help on general Sage build process\n```\n\n  2.7 Within the \"Jason Martin\" row\n\n```\n-work on SAGE 64-bit build\n+work on Sage 64-bit build\n```\n\n  2.8 Within the \"Kate Minola\" row\n\n```\n-improvement on building SAGE components\n+improvement on building Sage components\n```\n\n  2.9 Within the \"Bobby Moretti\" row\n\n```\n-SAGE library distribution\n+Sage library distribution\n```\n\n\n```\n-SAGE chroot jail\n+Sage chroot jail\n```\n\n\n```\n-SAGE .deb\n+Sage .deb\n```\n\n  2.10 Within the \"Bill Page\" row\n\n```\n-SAGE's AXIOM interface\n+Sage's AXIOM interface\n```\n\n  2.11 Within the \"Yi Qiang\" row\n\n```\n-Distributed SAGE (in progress)\n+Distributed Sage (in progress)\n```\n\n  2.12 Within the \"Gary Zablackis\" row\n\n```\n-created all SAGE binaries for MS windows from\n+created all Sage binaries for MS windows from\n```\n\n\n\n3. From [Acknowledgment to Supporters](http://www.sagemath.org/development-ack.html)\n\n```\n-(Check that the selected fund is the \"SAGE Foundation\").\n+(Check that the selected fund is the \"Sage Foundation\").\n```\n\n\n```\n-SAGE Days 6 Workshop (November 10 \u2013 14, 2007)\n+Sage Days 6 Workshop (November 10 \u2013 14, 2007)\n```\n\n\n```\n-SAGE Days 5 Workshop (Sept 30\u2013Oct 3, 2007)\n+Sage Days 5 Workshop (Sept 30\u2013Oct 3, 2007)\n```\n\n\n```\n-Grant No. 0555776, Grant No. 0713225 for 2007-2010 (the SAGE Postdoc)\n+Grant No. 0555776, Grant No. 0713225 for 2007-2010 (the Sage Postdoc)\n```\n\n\n```\n-a Mary Gates Scholarship for work on SAGE.\n+a Mary Gates Scholarship for work on Sage.\n```\n\n\n```\n-for providing the SAGE lab (Sieg Hall 312).\n+for providing the Sage lab (Sieg Hall 312).\n```\n\n\n```\n-hosted and funded SAGE Days 3 and SAGE Days 7.\n+hosted and funded Sage Days 3 and Sage Days 7.\n```\n\n\n\n4. From [Publications](http://www.sagemath.org/library/publications.html), publication items 4 and 20 both have \"SAGE\" in their names. I'm not sure it's a good idea to change those occurrences of \"SAGE\" to \"Sage\".\n\n\n5. From [Success Stories, Testimonials and News Articles](http://www.sagemath.org/library/stories.html)\n   5.1 For testimonial \"Martin Rubey, FriCAS-devel\"\n\n```\n-Just about *all* math colleagues I know are starting to use SAGE now, and\n+Just about *all* math colleagues I know are starting to use Sage now, and\n```\n\n  5.2 For testimonial \"#73, Sage Survey 2008\"\n\n```\n-find what I need in SAGE for my work. Many thanks to your team. You guys have\n+find what I need in Sage for my work. Many thanks to your team. You guys have\n```\n\n  5.3 For testimonial \"David Joyner, 2008-07-15\"\n\n```\n-I used SAGE for some sections of a differential equations course I was teaching\n+I used Sage for some sections of a differential equations course I was teaching\n```\n\n\n```\n-SAGE so I made the assignments worth very little and very easy. Also, I made\n+Sage so I made the assignments worth very little and very easy. Also, I made\n```\n\n\n```\n-did the extra credit ones too and say that they liked SAGE and its philosophy.\n+did the extra credit ones too and say that they liked Sage and its philosophy.\n```\n\n  5.4 For testimonial \"Roland, sage-edu, 2008-08-13\"\n\n```\n-SAGE. I just give examples and not lines of code, mainly because to promote the\n+Sage. I just give examples and not lines of code, mainly because to promote the\n```\n\n\n```\n-usage of SAGE and to encourage others to check the results found.\n+usage of Sage and to encourage others to check the results found.\n```\n\n\n```\n-The following output comes from a SAGE notebook: 1 = 3+5-7 , 2 = 3+7-8 , 3 = 3\n+The following output comes from a Sage notebook: 1 = 3+5-7 , 2 = 3+7-8 , 3 = 3\n```\n\n\n```\n-b. Less easy. Is 3,5,7,8 the best 4-tuple? Two ways to answer this using SAGE:\n+b. Less easy. Is 3,5,7,8 the best 4-tuple? Two ways to answer this using Sage:\n```\n\n\n```\n-in SAGE\", or you can allow also negative numbers and look for the longest\n+in Sage\", or you can allow also negative numbers and look for the longest\n```\n\n\n```\n-of numbers 0..75 as the following SAGE output shows:\n+of numbers 0..75 as the following Sage output shows:\n```\n\n\n```\n-To conclude: SAGE helped me to find relative simple exercises and questions to\n+To conclude: Sage helped me to find relative simple exercises and questions to\n```\n\n\n```\n-become aware of the depth of even simple mathematics. I learned from SAGE\n+become aware of the depth of even simple mathematics. I learned from Sage\n```\n\n  5.5 For the news item 'Sage winner of the 2007 \"Troph\u00e9es du Libre\"'\n\n```\n-SAGE (United States) put forward by William Stein\n+Sage (United States) put forward by William Stein\n```\n\n\n```\n-SAGE makes it possible to study and use a huge range of mathematics, including\n+Sage makes it possible to study and use a huge range of mathematics, including\n```\n\n\n\n6. From [Sage online notebook](https://www.sagenb.org)\n\n```\n-Sign up for a new SAGE Notebook account\n+Sign up for a new Sage Notebook account\n```\n\n  I've also noticed the same typo at the following mirrors:\n\n```\nhttps://sage.math.washington.edu:8103\nhttps://sage.math.washington.edu:8102\nhttp://sage.milnix.org\n```\n\n\n\n7. From [https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG](https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG)\n\n```\n-The SAGE Foundation\n+The Sage Foundation\n```\n\n\n\n8. From [http://groups.google.com/group/sage-edu](http://groups.google.com/group/sage-edu)\n\n```\n-or education-related ideas or questions relating to SAGE.\n+or education-related ideas or questions relating to Sage.\n```\n\n\n\n9. From [http://www.sagemath.org/packages/standard/](http://www.sagemath.org/packages/standard/)\n\n```\n-SAGE Standard Packages\n+Sage Standard Packages\n```\n\n\n\n10. From [http://www.sagemath.org/packages/optional](http://www.sagemath.org/packages/optional)\n\n```\n-SAGE Optional Packages\n+Sage Optional Packages\n```\n\n\n\n11. From [http://www.sagemath.org/packages/experimental](http://www.sagemath.org/packages/experimental)\n\n```\n-SAGE Experimental Packages\n+Sage Experimental Packages\n```\n",
+    "created_at": "2008-09-19T08:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8906",
+    "user": "mvngu"
+}
+```
 
 Here are some possible trivial fixes:
 
@@ -92,7 +128,7 @@ Here are some possible trivial fixes:
 
 
 2. From [Sage developers around the world](http://www.sagemath.org/development-map.html)
-  2.1 Within the "Tom Boothby" row
+   2.1 Within the "Tom Boothby" row
 
 ```
 -The SAGE Notebook
@@ -257,7 +293,7 @@ Here are some possible trivial fixes:
 
 
 5. From [Success Stories, Testimonials and News Articles](http://www.sagemath.org/library/stories.html)
-  5.1 For testimonial "Martin Rubey, FriCAS-devel"
+   5.1 For testimonial "Martin Rubey, FriCAS-devel"
 
 ```
 -Just about *all* math colleagues I know are starting to use SAGE now, and
@@ -416,25 +452,58 @@ http://sage.milnix.org
 
 
 
+
 ---
 
-Comment by jason created at 2008-09-19 11:48:42
+archive/issue_comments_008907.json:
+```json
+{
+    "body": "Wow, thanks for all your work!",
+    "created_at": "2008-09-19T11:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8907",
+    "user": "jason"
+}
+```
 
 Wow, thanks for all your work!
 
 
+
 ---
 
-Comment by schilly created at 2008-09-19 22:21:39
+archive/issue_comments_008908.json:
+```json
+{
+    "body": "about number 5: when i compiled the collection of quotes, i wanted them to be real quotes. I thought about replacing the wrong Sage capitalizations but i rejected it. Do you think it should be replaced?\n\nThe same holds for the publications. They are written in that way, the past cannot be changed ;)",
+    "created_at": "2008-09-19T22:21:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8908",
+    "user": "schilly"
+}
+```
 
 about number 5: when i compiled the collection of quotes, i wanted them to be real quotes. I thought about replacing the wrong Sage capitalizations but i rejected it. Do you think it should be replaced?
 
 The same holds for the publications. They are written in that way, the past cannot be changed ;)
 
 
+
 ---
 
-Comment by mvngu created at 2008-09-20 09:50:23
+archive/issue_comments_008909.json:
+```json
+{
+    "body": "Replying to [comment:5 schilly]:\n> about number 5: when i compiled the collection of quotes, i wanted them to be real quotes. I thought about replacing the wrong Sage capitalizations but i rejected it. Do you think it should be replaced?\n> \n> The same holds for the publications. They are written in that way, the past cannot be changed ;)\n\n\nWell, you're absolutely right on this point, hence my comment \"Here are some _possible_ trivial fixes:\", emphasis added. But I wanted to collect those \"suggestions\" here for future reference.\n\n\n\nRegards,\n\nMinh Van Nguyen",
+    "created_at": "2008-09-20T09:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8909",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:5 schilly]:
 > about number 5: when i compiled the collection of quotes, i wanted them to be real quotes. I thought about replacing the wrong Sage capitalizations but i rejected it. Do you think it should be replaced?
@@ -451,53 +520,138 @@ Regards,
 Minh Van Nguyen
 
 
+
 ---
+
+archive/issue_comments_008910.json:
+```json
+{
+    "body": "Attachment\n\nThis attachment fixes citations of Sage in the file \"<sage-home-dir>/COPYING.txt\".",
+    "created_at": "2008-10-02T02:12:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8910",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 This attachment fixes citations of Sage in the file "<sage-home-dir>/COPYING.txt".
 
 
+
 ---
+
+archive/issue_comments_008911.json:
+```json
+{
+    "body": "Attachment\n\nFixes citations of Sage in the file \"<sage-home-dir>/README.txt\".",
+    "created_at": "2008-10-02T02:20:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8911",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Fixes citations of Sage in the file "<sage-home-dir>/README.txt".
 
 
+
 ---
+
+archive/issue_comments_008912.json:
+```json
+{
+    "body": "Attachment\n\nFixes citations of Sage in the file \"sage-3.1.2/sage-README-osx.txt\".",
+    "created_at": "2008-10-02T02:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8912",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Fixes citations of Sage in the file "sage-3.1.2/sage-README-osx.txt".
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-17 20:32:20
+archive/issue_comments_008913.json:
+```json
+{
+    "body": "Fixes SAGE to Sage in version() etc.",
+    "created_at": "2008-10-17T20:32:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8913",
+    "user": "kcrisman"
+}
+```
 
 Fixes SAGE to Sage in version() etc.
 
 
+
 ---
+
+archive/issue_comments_008914.json:
+```json
+{
+    "body": "Attachment\n\nMost patches here should be trivial to review, though some *may* require rebasing. \n\nThis ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.",
+    "created_at": "2008-10-17T20:36:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8914",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
-Most patches here should be trivial to review, though some _may_ require rebasing. 
+Most patches here should be trivial to review, though some *may* require rebasing. 
 
 This ticket perhaps should have an ongoing existence - as patches are merged, new ones could still be added.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-20 23:06:14
+archive/issue_comments_008915.json:
+```json
+{
+    "body": "Here's a patch to deal with the first item 1 in the description: fix the conflict in citation instructions between the tutorial and sagemath.org.",
+    "created_at": "2008-10-20T23:06:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8915",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch to deal with the first item 1 in the description: fix the conflict in citation instructions between the tutorial and sagemath.org.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-20 23:22:30
+archive/issue_comments_008916.json:
+```json
+{
+    "body": "Of the patches here:\n\n```\ncopying.patch,\nreadme.patch,\nreadmeOSX.patch,\n```\n\nall look okay: the changes are pretty trivial.\n`mercurial-howto.patch` I think is no longer needed, since I think that file has been deleted.  Right?\n\n`10737.patch` actually changes some code, so is slightly less trivial.  It looks good, too.\n\nI'll give a positive review to all of these. Two things:\n\n1. After applying 10737.patch, the output from\n\n```\nsage: banner()\n```\n\nis \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\nwhich is not the same as what I see when I start up Sage:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: clone\n```\n\nNote the two instances of \"SAGE\" here. Where is this string coded?\n| Sage Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\n2. My patch to the tutorial needs review.",
+    "created_at": "2008-10-20T23:22:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8916",
+    "user": "jhpalmieri"
+}
+```
 
 Of the patches here:
 
@@ -543,9 +697,20 @@ Note the two instances of "SAGE" here. Where is this string coded?
 2. My patch to the tutorial needs review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-20 23:48:21
+archive/issue_comments_008917.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Note the two instances of \"SAGE\" here. Where is this string coded?\n\nOkay, found them.  One instance is in a script 'sage-banner', and another is in misc.py.  Patches attached.\n\nI'm beginning to agree with kcrisman that we maybe should merge some of these when we can, then get to the others later...",
+    "created_at": "2008-10-20T23:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8917",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 > Note the two instances of "SAGE" here. Where is this string coded?
@@ -555,30 +720,78 @@ Okay, found them.  One instance is in a script 'sage-banner', and another is in 
 I'm beginning to agree with kcrisman that we maybe should merge some of these when we can, then get to the others later...
 
 
+
 ---
+
+archive/issue_comments_008918.json:
+```json
+{
+    "body": "Attachment\n\npatch misc.py, changing SAGE to Sage",
+    "created_at": "2008-10-20T23:48:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8918",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 patch misc.py, changing SAGE to Sage
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-20 23:49:29
+archive/issue_comments_008919.json:
+```json
+{
+    "body": "change SAGE to Sage in various scripts (e.g. sage-banner)",
+    "created_at": "2008-10-20T23:49:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8919",
+    "user": "jhpalmieri"
+}
+```
 
 change SAGE to Sage in various scripts (e.g. sage-banner)
 
 
+
 ---
+
+archive/issue_comments_008920.json:
+```json
+{
+    "body": "Attachment\n\nI would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.",
+    "created_at": "2008-10-20T23:50:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8920",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 I would comment that I don't know how to easily check (e.g., doctest) the changes that I made to the scripts.  Please referee carefully.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-21 19:28:44
+archive/issue_comments_008921.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n[...]\n> 2. My patch to the tutorial needs review.\n\nThe patch \"1389-tut.patch\" looks good to me. However, here are some further changes to that patch:\n\n1.\n\n```\n-If you use Sage in a book, paper, website, etc., please email William\n-Stein and reference Sage as follows:\n+If you use \\SAGE in a book, paper, website, etc., please email William\n+Stein and reference \\SAGE as follows:\n```\n\n\n2. The following change reflects the BibTeX entry:\n\n```\n-William Stein, Sage Mathematics Software (version x.y.z),\n+William Stein, Sage: Open Source Mathematical Software (version x.y.z),\n```\n\n\n3.\n\n```\n-where you should change x.y.z. to the version of Sage that you used\n-for the paper. In Bibtex:\n+where you should change x.y.z. to the version of \\SAGE that you used\n+for the paper. In BibTeX:\n```\n\n\n4.\n\n```\n-Year = 2008}\n+Year = {2008}\n```\n\n\n5.\n\n```\n-Also, be sure to find out what components of Sage, e.g., Numpy, PARI,\n+Also, be sure to find out what components of \\SAGE, e.g., NumPy, PARI,\n```\n\n\n6.\n\n```\n-finding out who wrote the Sage code you're using and acknowledge them\n+finding out who wrote the \\SAGE code you're using and acknowledge them\n```\n",
+    "created_at": "2008-10-21T19:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8921",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 [...]
@@ -639,9 +852,20 @@ The patch "1389-tut.patch" looks good to me. However, here are some further chan
 
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-21 20:02:54
+archive/issue_comments_008922.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n[...]\n> `mercurial-howto.patch` I think is no longer needed, since I think that file has been deleted.  Right?\n\nNot exactly. It's shipped with sage-3.1.3 source distribution in the directory\n\n```\n<sage-parent-dir>/sage-3.1.3/devel/sage-main/mercurial-howto.txt\n```\n\nBut perhaps it'll be removed in sage-3.2?\n\nThe patch `1389-misc.patch` looks good to me.",
+    "created_at": "2008-10-21T20:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8922",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 [...]
@@ -658,9 +882,20 @@ But perhaps it'll be removed in sage-3.2?
 The patch `1389-misc.patch` looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-21 20:21:23
+archive/issue_comments_008923.json:
+```json
+{
+    "body": "Replying to [comment:15 mvngu]:\n\n> But perhaps it'll be removed in sage-3.2?\n\nIt is gone in Sage 3.1.4.\n\nThis ticket is really messy by now. Can someone in detail list the patches that need to be applied in which order to which repo?\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-21T20:21:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8923",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:15 mvngu]:
 
@@ -675,9 +910,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-21 21:10:22
+archive/issue_comments_008924.json:
+```json
+{
+    "body": "There is a new version of the tut patch, taking the comments into consideration.  Note:\n\nReplying to [comment:14 mvngu]:\n> 4.\n\n> -Year = 2008}\n\n> +Year = {2008}\n\nI made a change like this, but changing `2008`} to `{2008`}}.  The second brace } matches the one a few lines earlier, in the line ``@`manual{sage`.  (The change wasn't really necessary, but it doesn't hurt, either.)",
+    "created_at": "2008-10-21T21:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8924",
+    "user": "jhpalmieri"
+}
+```
 
 There is a new version of the tut patch, taking the comments into consideration.  Note:
 
@@ -691,21 +937,32 @@ Replying to [comment:14 mvngu]:
 I made a change like this, but changing `2008`} to `{2008`}}.  The second brace } matches the one a few lines earlier, in the line ``@`manual{sage`.  (The change wasn't really necessary, but it doesn't hurt, either.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-21 21:22:28
+archive/issue_comments_008925.json:
+```json
+{
+    "body": "Replying to [comment:16 mabshoff]:\n> This ticket is really messy by now. Can someone in detail list the patches that need to be applied in which order to which repo?\n\nThe patches **copying.patch, readme.patch, readmeOSX.patch**\nall affect files at the top-level of SAGE_ROOT.  I don't know if there is a corresponding repository for those, so they might need to be applied by hand.\n\nProduced using `hg_sage`: **10737.patch, 1389-misc.patch**.\n\nProduced using `hg_doc`: **1389-tut.patch**.\n\nProduced using `hg_scripts`: **1389-scripts.patch**.  This one hasn't been reviewed yet; the others all seem to have positive reviews.\n\nAs far as I can tell, these can be applied in any order.\n\nShare and Enjoy.\n  John",
+    "created_at": "2008-10-21T21:22:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8925",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:16 mabshoff]:
 > This ticket is really messy by now. Can someone in detail list the patches that need to be applied in which order to which repo?
 
-The patches *copying.patch, readme.patch, readmeOSX.patch*
+The patches **copying.patch, readme.patch, readmeOSX.patch**
 all affect files at the top-level of SAGE_ROOT.  I don't know if there is a corresponding repository for those, so they might need to be applied by hand.
 
-Produced using `hg_sage`: *10737.patch, 1389-misc.patch*.
+Produced using `hg_sage`: **10737.patch, 1389-misc.patch**.
 
-Produced using `hg_doc`: *1389-tut.patch*.
+Produced using `hg_doc`: **1389-tut.patch**.
 
-Produced using `hg_scripts`: *1389-scripts.patch*.  This one hasn't been reviewed yet; the others all seem to have positive reviews.
+Produced using `hg_scripts`: **1389-scripts.patch**.  This one hasn't been reviewed yet; the others all seem to have positive reviews.
 
 As far as I can tell, these can be applied in any order.
 
@@ -713,9 +970,20 @@ Share and Enjoy.
   John
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-21 21:34:15
+archive/issue_comments_008926.json:
+```json
+{
+    "body": "Replying to [comment:3 mvngu]:\n> 4. From [Publications](http://www.sagemath.org/library/publications.html), publication items 4 and 20 both have \"SAGE\" in their names. I'm not sure it's a good idea to change those occurrences of \"SAGE\" to \"Sage\".\n\n\nI think we can leave publication item 4 alone. The only occurrence of \"SAGE\" for that item is from a quoted text within a paper: \"On page 10 they write \"These performance numbers were obtained using the SAGE library.\"\n\n\n\n\n> 5. From [Success Stories, Testimonials and News Articles](http://www.sagemath.org/library/stories.html)\n\nI agree with [comment:5 schilly] that all quoted texts from this URL should be left alone.\n\n\n\n> 7. From [https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG](https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG)\n\n```\n-The SAGE Foundation\n+The Sage Foundation\n```\n\n\nThe diff hasn't been applied yet.\n\n\n\n> 9. From [http://www.sagemath.org/packages/standard/](http://www.sagemath.org/packages/standard/)\n\n```\n-SAGE Standard Packages\n+Sage Standard Packages\n```\n\n\nThe diff hasn't been applied yet.\n\n\n> 10. From [http://www.sagemath.org/packages/optional](http://www.sagemath.org/packages/optional)\n\n```\n-SAGE Optional Packages\n+Sage Optional Packages\n```\n\n\nThe diff hasn't been applied yet.\n\n\n\n> 11. From [http://www.sagemath.org/packages/experimental](http://www.sagemath.org/packages/experimental)\n\n```\n-SAGE Experimental Packages\n+Sage Experimental Packages\n```\n\n\nThe diff hasn't been applied yet.\n\n\nApart from the above comments, all other diffs at [comment:3 comment 3] has been applied.",
+    "created_at": "2008-10-21T21:34:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8926",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:3 mvngu]:
 > 4. From [Publications](http://www.sagemath.org/library/publications.html), publication items 4 and 20 both have "SAGE" in their names. I'm not sure it's a good idea to change those occurrences of "SAGE" to "Sage".
@@ -781,9 +1049,20 @@ The diff hasn't been applied yet.
 Apart from the above comments, all other diffs at [comment:3 comment 3] has been applied.
 
 
+
 ---
 
-Comment by schilly created at 2008-10-21 22:08:28
+archive/issue_comments_008927.json:
+```json
+{
+    "body": "Replying to [comment:19 mvngu]:\n> ... http://www.sagemath.org ...  change those occurrences of \"SAGE\" to \"Sage\".\n\nHi, I'm well aware of all those old uppercase occurrencies on the website. I just have to finish another project, then I'll redo the packages, download and all other sites like that. Those are old scripts that I'll replace. Don't worry. \n\nThough, the donation page for the foundation is still unclear, since it could be registered by the uppercase version and therefore it simply has this name, but shouldn't be a problem.\n\nHarald",
+    "created_at": "2008-10-21T22:08:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8927",
+    "user": "schilly"
+}
+```
 
 Replying to [comment:19 mvngu]:
 > ... http://www.sagemath.org ...  change those occurrences of "SAGE" to "Sage".
@@ -795,9 +1074,20 @@ Though, the donation page for the foundation is still unclear, since it could be
 Harald
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-22 02:26:18
+archive/issue_comments_008928.json:
+```json
+{
+    "body": "Replying to [comment:17 jhpalmieri]:\n> There is a new version of the tut patch, taking the comments into consideration.\n\nThe revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n```\n-where you should change x.y.z. to the version of Sage that you used\n+where you should change x.y.z to the version of \\SAGE that you used\n```\n",
+    "created_at": "2008-10-22T02:26:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8928",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:17 jhpalmieri]:
 > There is a new version of the tut patch, taking the comments into consideration.
@@ -811,14 +1101,38 @@ The revised patch `1389-tut.patch` looks good. Here's another change to that pat
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-22 02:57:02
+archive/issue_comments_008929.json:
+```json
+{
+    "body": "change citation in tutorial to match sagemath.org (revised revised version)",
+    "created_at": "2008-10-22T02:57:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8929",
+    "user": "jhpalmieri"
+}
+```
 
 change citation in tutorial to match sagemath.org (revised revised version)
 
 
+
 ---
+
+archive/issue_comments_008930.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:21 mvngu]:\n> Replying to [comment:17 jhpalmieri]:\n> > There is a new version of the tut patch, taking the comments into consideration.\n> \n> The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> -where you should change x.y.z. to the version of Sage that you used\n\n> +where you should change x.y.z to the version of \\SAGE that you used\n\nFixed in the newest patch.",
+    "created_at": "2008-10-22T02:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8930",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
@@ -835,9 +1149,20 @@ Replying to [comment:21 mvngu]:
 Fixed in the newest patch.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-22 03:06:53
+archive/issue_comments_008931.json:
+```json
+{
+    "body": "Replying to [comment:22 jhpalmieri]:\n> Replying to [comment:21 mvngu]:\n> > Replying to [comment:17 jhpalmieri]:\n> > > There is a new version of the tut patch, taking the comments into consideration.\n> > \n> > The revised patch `1389-tut.patch` looks good. Here's another change to that patch:\n\n> > -where you should change x.y.z. to the version of Sage that you used\n\n> > +where you should change x.y.z to the version of \\SAGE that you used\n> \n> Fixed in the newest patch.\n\nGreat. The new revised patch `1389-tut.patch` looks good to me.",
+    "created_at": "2008-10-22T03:06:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8931",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:22 jhpalmieri]:
 > Replying to [comment:21 mvngu]:
@@ -855,12 +1180,23 @@ Replying to [comment:22 jhpalmieri]:
 Great. The new revised patch `1389-tut.patch` looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-22 05:24:07
+archive/issue_comments_008932.json:
+```json
+{
+    "body": "Replying to [comment:18 jhpalmieri]:\n> Produced using `hg_scripts`: **1389-scripts.patch**.  This one hasn't been reviewed yet; the others all seem to have positive reviews.\n\nThe patch `1389-scripts.patch` looks good to me. However, when I applied `1389-scripts.patch` against sage-3.1.4 using the command `hg_scripts.patch(\"<path-to>/1389-scripts.patch\")`, the following section from the patch was rejected:\n\n```\ndiff -r 76339a4ccc14 -r f9dd774a1f61 sage-banner\n--- a/sage-banner\tThu Oct 16 03:43:22 2008 -0700\n+++ b/sage-banner\tMon Oct 20 16:36:06 2008 -0700\n@@ -1,4 +1,4 @@\n ----------------------------------------------------------------------\n-| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n+| Sage Version 3.1.4, Release Date: 2008-10-16                       |\n | Type notebook() for the GUI, and license() for information.        |\n ----------------------------------------------------------------------\n```\n\n\nIt seems that the script\n\n```\nsage-3.1.4/local/bin/sage-banner\n```\n\nthat's shipped with sage-3.1.4 contains the line\n\n```\nSAGE Version 3.1.4, Release Date: 2008-10-20\n```\n\nand NOT\n\n```\nSAGE Version 3.1.4, Release Date: 2008-10-16\n```\n\nNotice the different release dates, which I think accounts for the said rejection. By the way, I fetched the sage-3.1.4 source distribution from\n\n```\nhttp://freethemes.mirror.aarnet.edu.au/pub/sage/src/sage-3.1.4.tar\n```\n\nSo if we're going to fix the citation of Sage in the script `sage-3.1.4/local/bin/sage-banner`, then assuming you're working with sage-3.1.4, here's a suggestion:\n\n```\n-| SAGE Version 3.1.4, Release Date: 2008-10-20                       |\n+| Sage Version 3.1.4, Release Date: 2008-10-20                       |\n```\n",
+    "created_at": "2008-10-22T05:24:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8932",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:18 jhpalmieri]:
-> Produced using `hg_scripts`: *1389-scripts.patch*.  This one hasn't been reviewed yet; the others all seem to have positive reviews.
+> Produced using `hg_scripts`: **1389-scripts.patch**.  This one hasn't been reviewed yet; the others all seem to have positive reviews.
 
 The patch `1389-scripts.patch` looks good to me. However, when I applied `1389-scripts.patch` against sage-3.1.4 using the command `hg_scripts.patch("<path-to>/1389-scripts.patch")`, the following section from the patch was rejected:
 
@@ -910,9 +1246,20 @@ So if we're going to fix the citation of Sage in the script `sage-3.1.4/local/bi
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-22 09:39:23
+archive/issue_comments_008933.json:
+```json
+{
+    "body": "I can deal with the sage-banner issue. \n\nCheers,\n\nMichael",
+    "created_at": "2008-10-22T09:39:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8933",
+    "user": "mabshoff"
+}
+```
 
 I can deal with the sage-banner issue. 
 
@@ -921,30 +1268,78 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_008934.json:
+```json
+{
+    "body": "Attachment\n\nChange \"SAGE\" to \"Sage\" in sage-3.1.4/devel/sage-main/sage/misc/all.py.",
+    "created_at": "2008-10-26T11:55:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8934",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Change "SAGE" to "Sage" in sage-3.1.4/devel/sage-main/sage/misc/all.py.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-26 11:57:13
+archive/issue_comments_008935.json:
+```json
+{
+    "body": "Change \"SAGE\" to \"Sage\" in sage-3.1.4/devel/sage-main/sage/misc/misc.py",
+    "created_at": "2008-10-26T11:57:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8935",
+    "user": "mvngu"
+}
+```
 
 Change "SAGE" to "Sage" in sage-3.1.4/devel/sage-main/sage/misc/misc.py
 
 
+
 ---
+
+archive/issue_comments_008936.json:
+```json
+{
+    "body": "Attachment\n\nFor the patches **1389-all.py.patch** and **1389-misc.py.patch**, please also see #4368. The patch **trac_4368.patch** from #4368 also deals with the same files that **1389-all.py.patch** and **1389-misc.py.patch** are dealing with.",
+    "created_at": "2008-10-26T12:02:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8936",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
-For the patches *1389-all.py.patch* and *1389-misc.py.patch*, please also see #4368. The patch *trac_4368.patch* from #4368 also deals with the same files that *1389-all.py.patch* and *1389-misc.py.patch* are dealing with.
+For the patches **1389-all.py.patch** and **1389-misc.py.patch**, please also see #4368. The patch **trac_4368.patch** from #4368 also deals with the same files that **1389-all.py.patch** and **1389-misc.py.patch** are dealing with.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-10-26 12:11:24
+archive/issue_comments_008937.json:
+```json
+{
+    "body": "Positive review for 1389-misc.py.patch.\n\nPlease do not add patches over and over again to this already very messy ticket. The SAGE -> Sage transformation has *zero* to do with the original ticket, so please add new tickets for additional patches.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T12:11:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8937",
+    "user": "mabshoff"
+}
+```
 
 Positive review for 1389-misc.py.patch.
 
@@ -955,9 +1350,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 12:23:45
+archive/issue_comments_008938.json:
+```json
+{
+    "body": "1389-misc.py.patch and 1389-misc.patch also attempt to do the same thing. This is getting really messy.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T12:23:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8938",
+    "user": "mabshoff"
+}
+```
 
 1389-misc.py.patch and 1389-misc.patch also attempt to do the same thing. This is getting really messy.
 
@@ -966,9 +1372,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-26 12:32:40
+archive/issue_comments_008939.json:
+```json
+{
+    "body": "Replying to [comment:28 mabshoff]:\n> 1389-misc.py.patch and 1389-misc.patch also attempt to do the same thing. This is getting really messy.\n\n\nArgh... sorry. My bad. In the future, I'd create new tickets to deal with the ongoing issue of SAGE -> Sage transformation.",
+    "created_at": "2008-10-26T12:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8939",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:28 mabshoff]:
 > 1389-misc.py.patch and 1389-misc.patch also attempt to do the same thing. This is getting really messy.
@@ -977,9 +1394,20 @@ Replying to [comment:28 mabshoff]:
 Argh... sorry. My bad. In the future, I'd create new tickets to deal with the ongoing issue of SAGE -> Sage transformation.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 12:52:26
+archive/issue_comments_008940.json:
+```json
+{
+    "body": "Mike: 1389-tut.patch touches tut.tex.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T12:52:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8940",
+    "user": "mabshoff"
+}
+```
 
 Mike: 1389-tut.patch touches tut.tex.
 
@@ -988,23 +1416,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 13:03:39
+archive/issue_comments_008941.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha1",
+    "created_at": "2008-10-26T13:03:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8941",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 13:03:39
+archive/issue_comments_008942.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-26T13:03:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8942",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 13:04:50
+archive/issue_comments_008943.json:
+```json
+{
+    "body": "Replying to [comment:29 mvngu]:\n\n> \n\n> Argh... sorry. My bad. In the future, I'd create new tickets to deal with the ongoing issue of SAGE -> Sage transformation.\n\nNo problem. If possible make one ticket and attach a whole set of common changes, i.e. don't make one ticket per patch, but one ticket per group of files for example. \n\nThanks for your hard work.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T13:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1389#issuecomment-8943",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:29 mvngu]:
 

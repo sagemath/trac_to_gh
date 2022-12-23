@@ -1,53 +1,135 @@
 # Issue 709: Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.
 
-Issue created by migration from https://trac.sagemath.org/ticket/709
-
-Original creator: jkantor
-
-Original creation time: 2007-09-20 17:41:37
-
+archive/issues_000709.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nScipy and cvxopt tend to appear to build correctly, but then raise exceptions when modules are imported (usually missing symbols). We need doctests so that this is detected when tests are run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/709\n\n",
+    "created_at": "2007-09-20T17:41:37Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/709",
+    "user": "jkantor"
+}
+```
 Assignee: jkantor
 
 Scipy and cvxopt tend to appear to build correctly, but then raise exceptions when modules are imported (usually missing symbols). We need doctests so that this is detected when tests are run.
 
+Issue created by migration from https://trac.sagemath.org/ticket/709
+
+
+
+
 
 ---
+
+archive/issue_comments_003723.json:
+```json
+{
+    "body": "Attachment\n\nThe above patch adds a file that is doctested and tests importing modules from cvxopt and scipy that are known to have problems. This together with the fix for bug 700 should fix the cvxopt problem as well as detect future breakage which is good since cvxopt silently broke when we switched from gfortran to g95.",
+    "created_at": "2007-09-20T18:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3723",
+    "user": "jkantor"
+}
+```
 
 Attachment
 
 The above patch adds a file that is doctested and tests importing modules from cvxopt and scipy that are known to have problems. This together with the fix for bug 700 should fix the cvxopt problem as well as detect future breakage which is good since cvxopt silently broke when we switched from gfortran to g95.
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:12:52
+archive/issue_comments_003724.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-21T02:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3724",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:23:56
+archive/issue_comments_003725.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-09-21T02:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3725",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:23:56
+archive/issue_comments_003726.json:
+```json
+{
+    "body": "I've included this but put a nodoctest in the file until trac #700 is resolved.",
+    "created_at": "2007-09-21T02:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3726",
+    "user": "was"
+}
+```
 
 I've included this but put a nodoctest in the file until trac #700 is resolved.
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:23:56
+archive/issue_comments_003727.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-09-21T02:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3727",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by was created at 2007-10-20 19:57:23
+archive/issue_comments_003728.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-20T19:57:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/709",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/709#issuecomment-3728",
+    "user": "was"
+}
+```
 
 Resolution: fixed

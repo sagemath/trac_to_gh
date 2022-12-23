@@ -1,32 +1,81 @@
 # Issue 1825: rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1825
-
-Original creator: was
-
-Original creation time: 2008-01-18 05:05:35
-
+archive/issues_001825.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1825\n\n",
+    "created_at": "2008-01-18T05:05:35Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1825",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1825
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-18 05:48:06
+archive/issue_comments_011560.json:
+```json
+{
+    "body": "apply this to hg_doc",
+    "created_at": "2008-01-18T05:48:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1825#issuecomment-11560",
+    "user": "was"
+}
+```
 
 apply this to hg_doc
 
 
+
 ---
+
+archive/issue_comments_011561.json:
+```json
+{
+    "body": "Attachment\n\nThis will make people editing and adding to the reference manual vastly easier.",
+    "created_at": "2008-01-18T06:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1825#issuecomment-11561",
+    "user": "was"
+}
+```
 
 Attachment
 
 This will make people editing and adding to the reference manual vastly easier.
 
 
+
 ---
 
-Comment by was created at 2008-01-18 23:11:13
+archive/issue_comments_011562.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-18T23:11:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1825#issuecomment-11562",
+    "user": "was"
+}
+```
 
 Resolution: fixed

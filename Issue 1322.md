@@ -1,11 +1,21 @@
 # Issue 1322: interactive widgets in the notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/1322
-
-Original creator: jason
-
-Original creation time: 2007-11-28 20:16:45
-
+archive/issues_001322.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  jason-sage@creativetrax.com mhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
+    "created_at": "2007-11-28T20:16:45Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "interactive widgets in the notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1322",
+    "user": "jason"
+}
+```
 Assignee: mhansen
 
 CC:  jason-sage@creativetrax.com mhansen timothyclemans
@@ -29,48 +39,109 @@ Also, from Robert Miller (to Jason Grout):
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1322
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-11-30 01:06:00
+archive/issue_comments_008443.json:
+```json
+{
+    "body": "Test to see if CC feature is working.",
+    "created_at": "2007-11-30T01:06:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8443",
+    "user": "jason"
+}
+```
 
 Test to see if CC feature is working.
 
 
+
 ---
 
-Comment by jason created at 2007-11-30 20:14:34
+archive/issue_comments_008444.json:
+```json
+{
+    "body": "See also the thread:\n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/9bc46be5632fe3f1/a86393f145b72f31#a86393f145b72f31](http://groups.google.com/group/sage-devel/browse_thread/thread/9bc46be5632fe3f1/a86393f145b72f31#a86393f145b72f31)",
+    "created_at": "2007-11-30T20:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8444",
+    "user": "jason"
+}
+```
 
 See also the thread:
 
 [http://groups.google.com/group/sage-devel/browse_thread/thread/9bc46be5632fe3f1/a86393f145b72f31#a86393f145b72f31](http://groups.google.com/group/sage-devel/browse_thread/thread/9bc46be5632fe3f1/a86393f145b72f31#a86393f145b72f31)
 
 
+
 ---
+
+archive/issue_comments_008445.json:
+```json
+{
+    "body": "Attachment\n\nExtremely rough cut of initial functionality for interactive widgets in the notebook.",
+    "created_at": "2007-12-01T06:37:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8445",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Extremely rough cut of initial functionality for interactive widgets in the notebook.
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 06:52:11
+archive/issue_comments_008446.json:
+```json
+{
+    "body": "There are several problems with the way things are done in menu-widget.patch:\n\n* We rely on a complete hack of sending an AJAX request with an invalid cell id (-1).  The webserver complains (\"Warning -- cell -1 no longer exists\"), but the code is still executed and everything seems fine.  So it'd be great if we could remove the warning and call it a feature :).\n* The variable is not set initially.  You have to select a value before using the variable.  The variable is not set initially because I couldn't figure out how to set a global variable from within the menu.__init__ function.  We could probably look into the polynomial ring stuff and figure out how to inject variables into the global namespace.  I have a rough cython file written that attempts to define an \"inject_global\" function that injects a variable into the global namespace, but when this function is called from menu.__init__, it doesn't inject into the global namespace.\n* When a value is updated via the menu, it doesn't change or reevaluate any cells in the notebook.  It would be very nice to automatically evaluate other cells in the notebook to get real-time dynamic feedback from picking new values from the menu.\n* When manually reevaluating cells, it seems to display the old value first and then update to the new value.  This is very annoying and takes time and looks bad.\n* There should be some sort of caching eventually implemented to make things faster.  Maybe something like a directive \"%depends_on(x)\" to say that a cell's output only depends on x.  In other words, if x is the same, then we can spit out a cached copy of the cell's output instead of having to reevaluate the cell.\n\nThe menu select box is the tip of the iceberg here.  It'd be nice to have fancy sliders and things like that using javascript.",
+    "created_at": "2007-12-01T06:52:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8446",
+    "user": "jason"
+}
+```
 
 There are several problems with the way things are done in menu-widget.patch:
 
- * We rely on a complete hack of sending an AJAX request with an invalid cell id (-1).  The webserver complains ("Warning -- cell -1 no longer exists"), but the code is still executed and everything seems fine.  So it'd be great if we could remove the warning and call it a feature :).
- * The variable is not set initially.  You have to select a value before using the variable.  The variable is not set initially because I couldn't figure out how to set a global variable from within the menu.__init__ function.  We could probably look into the polynomial ring stuff and figure out how to inject variables into the global namespace.  I have a rough cython file written that attempts to define an "inject_global" function that injects a variable into the global namespace, but when this function is called from menu.__init__, it doesn't inject into the global namespace.
- * When a value is updated via the menu, it doesn't change or reevaluate any cells in the notebook.  It would be very nice to automatically evaluate other cells in the notebook to get real-time dynamic feedback from picking new values from the menu.
- * When manually reevaluating cells, it seems to display the old value first and then update to the new value.  This is very annoying and takes time and looks bad.
- * There should be some sort of caching eventually implemented to make things faster.  Maybe something like a directive "%depends_on(x)" to say that a cell's output only depends on x.  In other words, if x is the same, then we can spit out a cached copy of the cell's output instead of having to reevaluate the cell.
+* We rely on a complete hack of sending an AJAX request with an invalid cell id (-1).  The webserver complains ("Warning -- cell -1 no longer exists"), but the code is still executed and everything seems fine.  So it'd be great if we could remove the warning and call it a feature :).
+* The variable is not set initially.  You have to select a value before using the variable.  The variable is not set initially because I couldn't figure out how to set a global variable from within the menu.__init__ function.  We could probably look into the polynomial ring stuff and figure out how to inject variables into the global namespace.  I have a rough cython file written that attempts to define an "inject_global" function that injects a variable into the global namespace, but when this function is called from menu.__init__, it doesn't inject into the global namespace.
+* When a value is updated via the menu, it doesn't change or reevaluate any cells in the notebook.  It would be very nice to automatically evaluate other cells in the notebook to get real-time dynamic feedback from picking new values from the menu.
+* When manually reevaluating cells, it seems to display the old value first and then update to the new value.  This is very annoying and takes time and looks bad.
+* There should be some sort of caching eventually implemented to make things faster.  Maybe something like a directive "%depends_on(x)" to say that a cell's output only depends on x.  In other words, if x is the same, then we can spit out a cached copy of the cell's output instead of having to reevaluate the cell.
 
 The menu select box is the tip of the iceberg here.  It'd be nice to have fancy sliders and things like that using javascript.
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 06:54:45
+archive/issue_comments_008447.json:
+```json
+{
+    "body": "Oh, and one more thing: we currently have to import the function:\n\n\n```\nsage: from sage.server.notebook.widgets.menu import menu\nsage: menu('f',[sin,cos,tan]).show()\n\n(a menu is shown.  pick a value for f)\n\nsage: plot(f(x),0,2*pi).show()\n\n(the plot of f(x) (with the selected f) is shown.)\n\n```\n",
+    "created_at": "2007-12-01T06:54:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8447",
+    "user": "jason"
+}
+```
 
 Oh, and one more thing: we currently have to import the function:
 
@@ -89,30 +160,74 @@ sage: plot(f(x),0,2*pi).show()
 
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 07:12:42
+archive/issue_comments_008448.json:
+```json
+{
+    "body": "Changing component from combinatorics to notebook.",
+    "created_at": "2007-12-01T07:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8448",
+    "user": "jason"
+}
+```
 
 Changing component from combinatorics to notebook.
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 07:12:42
+archive/issue_comments_008449.json:
+```json
+{
+    "body": "Changing keywords from \"graphs\" to \"\".",
+    "created_at": "2007-12-01T07:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8449",
+    "user": "jason"
+}
+```
 
 Changing keywords from "graphs" to "".
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 07:12:42
+archive/issue_comments_008450.json:
+```json
+{
+    "body": "Changing assignee from mhansen to boothby.",
+    "created_at": "2007-12-01T07:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8450",
+    "user": "jason"
+}
+```
 
 Changing assignee from mhansen to boothby.
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 08:01:32
+archive/issue_comments_008451.json:
+```json
+{
+    "body": "It appears that the warning about a nonexistant cell comes from the line \n\n\n```\n            s = encode_list([cell.next_id(), 'no_new_cell', str(id)])\n```\n\n\nin sage/server/notebook/twisted.py",
+    "created_at": "2007-12-01T08:01:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8451",
+    "user": "jason"
+}
+```
 
 It appears that the warning about a nonexistant cell comes from the line 
 
@@ -125,23 +240,56 @@ It appears that the warning about a nonexistant cell comes from the line
 in sage/server/notebook/twisted.py
 
 
+
 ---
 
-Comment by jason created at 2007-12-01 19:01:48
+archive/issue_comments_008452.json:
+```json
+{
+    "body": "In addition to applying the first patch above, you need to create an empty __init__.py file in sage/server/notebook/widgets/",
+    "created_at": "2007-12-01T19:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8452",
+    "user": "jason"
+}
+```
 
 In addition to applying the first patch above, you need to create an empty __init__.py file in sage/server/notebook/widgets/
 
 
+
 ---
 
-Comment by was created at 2008-02-07 07:29:08
+archive/issue_comments_008453.json:
+```json
+{
+    "body": "See also #1613....",
+    "created_at": "2008-02-07T07:29:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8453",
+    "user": "was"
+}
+```
 
 See also #1613....
 
 
+
 ---
 
-Comment by was created at 2008-02-07 07:30:30
+archive/issue_comments_008454.json:
+```json
+{
+    "body": "Here is a trivial example.  You *must* change 155 to an actual\nexisting blank output cell. \n\n\n```\ndef manipulate():\n    print r\"\"\" \n    <html>\n<script>\nfunction manip(id, cmd) {\n   var cell_input = get_cell(id);\n   cell_input.value = cmd;\n   cell_input.style.display = \"none\";\n   evaluate_cell(id, 0);\n}\n</script>\n    <input type=\"button\" value=\"sin(x)\" onclick=\"manip(155, 'plot(sin,-1,1)')\">\n    <input type=\"button\" value=\"cos(x)\" onclick=\"manip(155, 'plot(cos,-1,1)')\">\n    <input type=\"button\" value=\"tan(x)\" onclick=\"manip(155, 'plot(tan,-1,1)')\">\n    <input type=\"button\" value=\"sin(x^2)\" onclick=\"manip(155, 'plot(sin(x^2),-1,1)')\">\n    </html>\n\"\"\"\n```\n",
+    "created_at": "2008-02-07T07:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8454",
+    "user": "was"
+}
+```
 
 Here is a trivial example.  You *must* change 155 to an actual
 existing blank output cell. 
@@ -169,9 +317,20 @@ function manip(id, cmd) {
 
 
 
+
 ---
 
-Comment by jason created at 2008-02-07 09:46:55
+archive/issue_comments_008455.json:
+```json
+{
+    "body": "More stuff:\n\n\n```\nprint r\"\"\"\n<html>\n<script>\nfunction manip(id,cmd, variable, value) {\n    var cell_input = get_cell(id);\n    cell_input.value = variable+\"=\"+value+\"\\n\"+cmd;\n    cell_input.style.display = \"none\";\n    evaluate_cell(id, 0);\n}\n</script>\n</html>\n\"\"\"\n```\n\n\nand \n\n\n```\ndef menu(cmd, variable, options):\n    ret = \"\"\"<select name='' onchange='manip(%d,\"%s\", \"%s\", this.options[this.selectedIndex].value)'>\"\"\"%(__SAGE_NOTEBOOK_CELL_ID__+1,cmd,variable)\n    for option in options:\n        ret += \"<option value='%s'>%s</option>\"%(repr(option), repr(option))\n    ret += \"</select>\"\n    return ret\n\ndef manipulate(cmd, variables):\n    controls=''\n    for key,val in variables.items():\n        controls += menu(cmd, key, val)\n    print \"<html>\"+controls+\"</html>\"\n```\n\n\nand \n\n\n```\nmanipulate('plot(f(x),(x,0,3))', {'f':[sin,cos,tan]})\n```\n",
+    "created_at": "2008-02-07T09:46:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8455",
+    "user": "jason"
+}
+```
 
 More stuff:
 
@@ -220,9 +379,20 @@ manipulate('plot(f(x),(x,0,3))', {'f':[sin,cos,tan]})
 
 
 
+
 ---
 
-Comment by jason created at 2008-02-13 20:35:28
+archive/issue_comments_008456.json:
+```json
+{
+    "body": "with \"manipulate.patch\", here is a trivial example.  You *must* change the CELL_ID to the id of an existing cell.  That cell will be overwritten.\n\nmanipulate(\"factor(y)\", {'y': TextBox(100)}, CELL_ID)\n\nmanipulate(\"factor(y)\", {'y': Menu([2, 4, 6, 8])}, CELL_ID)\n\nmanipulate(\"factor(y)\", {'y': ButtonGroup([2, 4, 6, 8])}, CELL_ID)\n\nmanipulate(\"factor(y)\", {'y': CheckBox(checked=10, unchecked=20)}, CELL_ID)\n\nmanipulate(\"factor(p*y)\", {'p': TextBox(100), 'y': Menu([(x-1),x^2-2*x+1])}, CELL_ID)\n \n\n(Note to self: fix the bug of printing the menu using str instead of repr, so x^2 looks like 2x)",
+    "created_at": "2008-02-13T20:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8456",
+    "user": "jason"
+}
+```
 
 with "manipulate.patch", here is a trivial example.  You *must* change the CELL_ID to the id of an existing cell.  That cell will be overwritten.
 
@@ -240,14 +410,38 @@ manipulate("factor(p*y)", {'p': TextBox(100), 'y': Menu([(x-1),x^2-2*x+1])}, CEL
 (Note to self: fix the bug of printing the menu using str instead of repr, so x^2 looks like 2x)
 
 
+
 ---
 
-Comment by jason created at 2008-02-13 20:36:19
+archive/issue_comments_008457.json:
+```json
+{
+    "body": "A different very rough cut of functionality.",
+    "created_at": "2008-02-13T20:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8457",
+    "user": "jason"
+}
+```
 
 A different very rough cut of functionality.
 
 
+
 ---
+
+archive/issue_comments_008458.json:
+```json
+{
+    "body": "Attachment\n\nWow, this is a lot of fun!\n\nHere's another, more interesting example.  (This uses a CELL_ID of zero, so the first cell in your notebook will be overwritten.)\n\n```\nx = polygen(ZZ)\ncoeff_range = ButtonGroup([-4,-3,-2,-1,0,1,2,3,4])\nmanipulate(\"p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); p.roots(ring=RR)\", \n           {'a': coeff_range,\n            'b': coeff_range,\n            'c': coeff_range,\n            'd': coeff_range,\n            'e': coeff_range}, 0)\n```\n\n\nJust judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)\n\n1. Having to specify a CELL_ID is lame.\n\n2. The API of specifying a dictionary is bad.  In the above example, the controls don't appear in the expected order (a,b,c,d,e); but that can't be fixed in manipulate, because it doesn't know what order you used when you typed the dictionary literal.  Instead, manipulate should take a list of pairs.\n\nWishlist items:\n\n1. Slider bars would be nice.\n\n2. Widgets should be labeled with the variable name they control.\n\n3. The syntax is pretty ugly.  I haven't thought of a way to fix that without some sort of preparser; here's a first suggestion for a preparser-based syntax:\n\n```\n%manipulate\nx : Menu([2,4,6,8])\ny : Menu([1,10,100,1000])\n--\nx^y\n```\n\nFor extra bonus points, this could work in conjunction with %pari/%magma/etc.",
+    "created_at": "2008-03-01T05:43:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8458",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
@@ -292,16 +486,40 @@ x^y
 For extra bonus points, this could work in conjunction with %pari/%magma/etc.
 
 
+
 ---
+
+archive/issue_comments_008459.json:
+```json
+{
+    "body": "Attachment\n\nthis is independent of the patches above -- it's standalone -- see comments below for how to use.",
+    "created_at": "2008-03-01T10:30:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8459",
+    "user": "was"
+}
+```
 
 Attachment
 
 this is independent of the patches above -- it's standalone -- see comments below for how to use.
 
 
+
 ---
 
-Comment by was created at 2008-03-01 10:32:44
+archive/issue_comments_008460.json:
+```json
+{
+    "body": "This patch manipulate-take3.patch is a completely totally different approach to the whole manipulate thing.  It is just a prototype!!! It's not supposed to work perfectly, in particular, you must enter a number first and press return to see anything.\nAnyway, here are some example inputs (each should be entered in its own cell):\n\n\n```\n@manipulate\ndef myfactor(n):\n    print jsmath(factor(n))\n\n\n@manipulate\ndef polys(m):\n    R = QQ['x']\n    f = R.random_element(m)\n    print \"f = \", jsmath(f)\n    print \"real roots = \", f.real_roots()\n    show(plot(f))\n\n\n\n@manipulate\ndef ellcurve(label):\n    E = EllipticCurve(label)\n    show(E)\n    show(\"E conductor = %s\"%E.conductor())\n    show(E.q_eigenform(7))\n    show(plot(E))\n\n\n\n@manipulate\ndef pl(n):\n    var('x,y')\n    show(x^n-y^n)\n    show(plot3d(x^n-y^n, (x,-2,2), (y,-2,2)))\n\n```\n",
+    "created_at": "2008-03-01T10:32:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8460",
+    "user": "was"
+}
+```
 
 This patch manipulate-take3.patch is a completely totally different approach to the whole manipulate thing.  It is just a prototype!!! It's not supposed to work perfectly, in particular, you must enter a number first and press return to see anything.
 Anyway, here are some example inputs (each should be entered in its own cell):
@@ -343,9 +561,20 @@ def pl(n):
 
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-03-02 01:09:00
+archive/issue_comments_008461.json:
+```json
+{
+    "body": "I love the new code by William.\n\nHere is my first example using it:\n\n```\n@manipulate\ndef gcd_steps(numbers):\n    a, b = numbers\n    w = a\n    y = b\n    while True:\n        x, z = divmod(w, y)\n        print '%d = %d * %d + %d' % (w, x, y, z)\n        if not z:\n            break\n        w = y\n        y = z\n```\n",
+    "created_at": "2008-03-02T01:09:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8461",
+    "user": "TimothyClemans"
+}
+```
 
 I love the new code by William.
 
@@ -368,16 +597,40 @@ def gcd_steps(numbers):
 
 
 
+
 ---
+
+archive/issue_comments_008462.json:
+```json
+{
+    "body": "Attachment\n\npart 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.",
+    "created_at": "2008-03-02T08:53:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8462",
+    "user": "was"
+}
+```
 
 Attachment
 
 part 2 of manipulate with decorators; this is usable again (probably) better docs; but there are several things to do soon and I'm too tired.
 
 
+
 ---
 
-Comment by was created at 2008-03-02 15:31:47
+archive/issue_comments_008463.json:
+```json
+{
+    "body": "Here is the patch that adds full jquery and uijquery support to sage.  apply\nit against the extcode repo.\n\nhttp://sage.math.washington.edu/home/was/patches/extcode-add_jquery_support.patch",
+    "created_at": "2008-03-02T15:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8463",
+    "user": "was"
+}
+```
 
 Here is the patch that adds full jquery and uijquery support to sage.  apply
 it against the extcode repo.
@@ -385,9 +638,20 @@ it against the extcode repo.
 http://sage.math.washington.edu/home/was/patches/extcode-add_jquery_support.patch
 
 
+
 ---
 
-Comment by was created at 2008-03-02 15:33:39
+archive/issue_comments_008464.json:
+```json
+{
+    "body": "Examples of how to use the version as of now:\n\n```\n@manipulate\ndef foo(f=text_box(\"sin(x)\"), L=slider(-5,0), U=slider(0,5)):\n    return plot(f,L,U)\n```\n\n\n\n```\n@manipulate\ndef bar(a,b=slider([1..10])):\n    return a+b\n```\n\n\n\n```\n@manipulate\ndef ec(a,b):\n    E = EllipticCurve([a,b])\n    html(\"<h1>Data about an Elliptic Curve</h1>\")\n    print E.cremona_label()\n    show(E)\n    show(plot(E))\n    show(E.q_eigenform(30))\n    show(E.torsion_order())\n```\n",
+    "created_at": "2008-03-02T15:33:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8464",
+    "user": "was"
+}
+```
 
 Examples of how to use the version as of now:
 
@@ -421,16 +685,40 @@ def ec(a,b):
 
 
 
+
 ---
+
+archive/issue_comments_008465.json:
+```json
+{
+    "body": "Attachment\n\nthis requires that you also install the extcode patch that gives jquery support.",
+    "created_at": "2008-03-03T02:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8465",
+    "user": "was"
+}
+```
 
 Attachment
 
 this requires that you also install the extcode patch that gives jquery support.
 
 
+
 ---
 
-Comment by was created at 2008-03-03 02:09:26
+archive/issue_comments_008466.json:
+```json
+{
+    "body": "Examples as of manipulate_take3_part3.patch\n\n```\n@manipulate\ndef factor_example(n=range(2,1000)):\n    F = factor(n)\n    html(\"<h1 align=center><font color='darkblue' size=+4>factor(%s) = %s</font></h1>\"%(n, F))\n\n\n\n@manipulate\ndef foo(f, xmax=[0,0.1,..20]):\n    show(f)\n    show(plot(f, -1, xmax))\n\n@manipulate\ndef pl(n=[0..30], xmin=[-5..0], xmax=[0..10]):\n    print n, xmin, xmax\n    f = sin(n*x); g = cos(n*x)\n    show(plot(f,xmin,xmax) + plot(g,xmin,xmax,color='red'), figsize=[5,2], xmin=xmin, xmax=xmax)\n\n\n@manipulate\ndef pl(n=[100,200,..,10^4]):\n    html(\"<h1 align=center>Primes up to %s</h1>\"%n)\n    show(plot(prime_pi, 1, n) + plot(x/(log(x)-1), 0.1, n, color='red'))\n\n\n@manipulate\ndef a3dplot(a=[1..10], b=[1..10]):\n    var('x,y')\n    f = x^a + y^b\n    show(f)\n    show(plot3d(f, (x,-2,2), (y,-2,2)))\n\n```\n",
+    "created_at": "2008-03-03T02:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8466",
+    "user": "was"
+}
+```
 
 Examples as of manipulate_take3_part3.patch
 
@@ -471,9 +759,20 @@ def a3dplot(a=[1..10], b=[1..10]):
 
 
 
+
 ---
 
-Comment by was created at 2008-03-03 04:26:39
+archive/issue_comments_008467.json:
+```json
+{
+    "body": "HI: I've put a bundle at \n\n    http://sage.math.washington.edu/home/was/patches/manipulate.hg\n\nsince people were having trouble applying the plain text patches. \n\nWilliam",
+    "created_at": "2008-03-03T04:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8467",
+    "user": "was"
+}
+```
 
 HI: I've put a bundle at 
 
@@ -484,9 +783,20 @@ since people were having trouble applying the plain text patches.
 William
 
 
+
 ---
 
-Comment by was created at 2008-03-03 04:46:14
+archive/issue_comments_008468.json:
+```json
+{
+    "body": "To get this to work, install jquery as follows:\n\nGet \n\nhttp://sage.math.washington.edu/home/was/patches/jquery.tar.bz2 \n\nand unpack it in SAGE_ROOT",
+    "created_at": "2008-03-03T04:46:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8468",
+    "user": "was"
+}
+```
 
 To get this to work, install jquery as follows:
 
@@ -497,9 +807,20 @@ http://sage.math.washington.edu/home/was/patches/jquery.tar.bz2
 and unpack it in SAGE_ROOT
 
 
+
 ---
 
-Comment by was created at 2008-03-03 04:47:28
+archive/issue_comments_008469.json:
+```json
+{
+    "body": "Oops, actually extract \n\nhttp://sage.math.washington.edu/home/was/patches/jquery.tar.bz2\n\nin SAGE_ROOT/data/\n\nSorry for all the trouble.",
+    "created_at": "2008-03-03T04:47:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8469",
+    "user": "was"
+}
+```
 
 Oops, actually extract 
 
@@ -510,43 +831,113 @@ in SAGE_ROOT/data/
 Sorry for all the trouble.
 
 
+
 ---
+
+archive/issue_comments_008470.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-04T11:28:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8470",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_008471.json:
+```json
+{
+    "body": "Attachment\n\nthis is a new better version",
+    "created_at": "2008-03-05T10:01:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8471",
+    "user": "was"
+}
+```
 
 Attachment
 
 this is a new better version
 
 
+
 ---
 
-Comment by was created at 2008-03-07 18:50:42
+archive/issue_comments_008472.json:
+```json
+{
+    "body": "I am now posting the hg bundle for people who want to try this out here:\n\nhttp://sage.math.washington.edu/home/was/patches/interact.hg",
+    "created_at": "2008-03-07T18:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8472",
+    "user": "was"
+}
+```
 
 I am now posting the hg bundle for people who want to try this out here:
 
 http://sage.math.washington.edu/home/was/patches/interact.hg
 
 
+
 ---
 
-Comment by was created at 2008-03-07 18:50:42
+archive/issue_comments_008473.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-07T18:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8473",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2008-03-07 18:50:42
+archive/issue_comments_008474.json:
+```json
+{
+    "body": "Changing assignee from boothby to was.",
+    "created_at": "2008-03-07T18:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8474",
+    "user": "was"
+}
+```
 
 Changing assignee from boothby to was.
 
 
+
 ---
 
-Comment by was created at 2008-03-09 23:46:43
+archive/issue_comments_008475.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-03-09T23:46:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1322#issuecomment-8475",
+    "user": "was"
+}
+```
 
 Resolution: duplicate

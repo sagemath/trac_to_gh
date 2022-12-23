@@ -1,11 +1,21 @@
 # Issue 1001: "Use of uninitialised value of size 4" in pari.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/1001
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-26 02:20:40
-
+archive/issues_001001.json:
+```json
+{
+    "body": "Assignee: was\n\nJust by doing a sage start + immediate quit under valgrind leads to:\n\n```\n==12979== Conditional jump or move depends on uninitialised value(s)\n==12979==    at 0x8088C18: PyObject_Free (obmalloc.c:920)\n==12979==    by 0x8106892: code_dealloc (codeobject.c:270)\n==12979==    by 0x810C769: frame_dealloc (frameobject.c:444)\n==12979==    by 0x80EBB0B: tb_dealloc (traceback.c:34)\n==12979==    by 0x5764226: __Pyx_GetExcValue (gen.c:30664)\n==12979==    by 0x5788110: __pyx_f_py_3gen_12PariInstance___call__ (gen.c:23295)\n==12979==    by 0x805A276: PyObject_Call (abstract.c:1860)\n==12979==    by 0x80BE7CB: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==12979==    by 0x805A48F: PyObject_CallObject (abstract.c:1851)\n==12979==    by 0x5791B62: __pyx_f_py_3gen_12PariInstance___init__ (gen.c:21789)\n==12979==    by 0x809C412: type_call (typeobject.c:436)\n==12979==    by 0x805A276: PyObject_Call (abstract.c:1860)\n==12979==\n==12979== Use of uninitialised value of size 4\n==12979==    at 0x8088C23: PyObject_Free (obmalloc.c:920)\n==12979==    by 0x8106892: code_dealloc (codeobject.c:270)\n==12979==    by 0x810C769: frame_dealloc (frameobject.c:444)\n==12979==    by 0x80EBB0B: tb_dealloc (traceback.c:34)\n==12979==    by 0x5764226: __Pyx_GetExcValue (gen.c:30664)\n==12979==    by 0x5788110: __pyx_f_py_3gen_12PariInstance___call__ (gen.c:23295)\n==12979==    by 0x805A276: PyObject_Call (abstract.c:1860)\n==12979==    by 0x80BE7CB: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==12979==    by 0x805A48F: PyObject_CallObject (abstract.c:1851)\n==12979==    by 0x5791B62: __pyx_f_py_3gen_12PariInstance___init__ (gen.c:21789)\n==12979==    by 0x809C412: type_call (typeobject.c:436)\n==12979==    by 0x805A276: PyObject_Call (abstract.c:1860)\n```\n\nI tracked this down to gen.pyx:5566:\n\n```\n        self.ONE = self(1)\n```\n\nbut I have no clue how to fix this.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1001\n\n",
+    "created_at": "2007-10-26T02:20:40Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "\"Use of uninitialised value of size 4\" in pari.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1001",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 Just by doing a sage start + immediate quit under valgrind leads to:
@@ -53,24 +63,61 @@ Cheers,
 Michael
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1001
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2007-10-28 06:04:35
+archive/issue_comments_006095.json:
+```json
+{
+    "body": "this is likely fixed by the fix for #875, since the offending line in gen.pyx has been changed.",
+    "created_at": "2007-10-28T06:04:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1001#issuecomment-6095",
+    "user": "craigcitro"
+}
+```
 
 this is likely fixed by the fix for #875, since the offending line in gen.pyx has been changed.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-28 06:47:53
+archive/issue_comments_006096.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-10-28T06:47:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1001#issuecomment-6096",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-28 06:48:16
+archive/issue_comments_006097.json:
+```json
+{
+    "body": "\n```\n[07:35] <cwitty> Whenever you pass an address to PyObject_Free, it will read the first 4 bytes of the 4096-byte page containing that address.  If Python allocated that memory, then those 4 bytes will be valid to read.  But if the system malloc allocated them, then there may or may not be valid (according to valgrind) data there.\n[07:35] <cwitty> It just depends on the particular history of allocations/frees in the program so far.\n```\n",
+    "created_at": "2007-10-28T06:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1001#issuecomment-6097",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -80,8 +127,19 @@ Comment by mabshoff created at 2007-10-28 06:48:16
 
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-28 06:50:34
+archive/issue_comments_006098.json:
+```json
+{
+    "body": "For more details, read the comment describing Py_ADDRESS_IN_RANGE, in Objects/obmalloc.c in the Python source code.",
+    "created_at": "2007-10-28T06:50:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1001#issuecomment-6098",
+    "user": "cwitty"
+}
+```
 
 For more details, read the comment describing Py_ADDRESS_IN_RANGE, in Objects/obmalloc.c in the Python source code.

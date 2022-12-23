@@ -1,11 +1,21 @@
 # Issue 945: preparser should ignore "    ....:" when it ignores "sage:"
 
-Issue created by migration from https://trac.sagemath.org/ticket/945
-
-Original creator: cwitty
-
-Original creation time: 2007-10-20 17:15:06
-
+archive/issues_000945.json:
+```json
+{
+    "body": "Assignee: was\n\nHere's a test case.  First I define a function:\n\n```\nsage: def foo(x):\n....:     return x+3\n....: \n```\n\n\nThen I copy/paste the above session:\n\n```\nsage: sage: def foo(x):\n....:     ....:     return x+3\n------------------------------------------------------------\n<type 'exceptions.IndentationError'>: expected an indented block (<ipython console>, line 2)\n\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/945\n\n",
+    "created_at": "2007-10-20T17:15:06Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "preparser should ignore \"    ....:\" when it ignores \"sage:\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/945",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 Here's a test case.  First I define a function:
@@ -30,17 +40,43 @@ sage:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/945
+
+
+
+
 
 ---
 
-Comment by tscrim created at 2013-05-24 17:59:10
+archive/issue_comments_005774.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-05-24T17:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5774",
+    "user": "tscrim"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2013-05-24 17:59:10
+archive/issue_comments_005775.json:
+```json
+{
+    "body": "This was fixed at some point (tested on `5.10.beta2`):\n\n```\nsage: def foo(x):\n....:     return x\n....: \nsage: sage: def foo(x):        \n....:     ....:     return x\n....: ....: \nsage: \nsage: def foo(x):\n....:     ....:     return x\n....: \n```\n",
+    "created_at": "2013-05-24T17:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5775",
+    "user": "tscrim"
+}
+```
 
 This was fixed at some point (tested on `5.10.beta2`):
 
@@ -59,36 +95,91 @@ sage: def foo(x):
 
 
 
+
 ---
 
-Comment by tmonteil created at 2013-06-01 13:50:46
+archive/issue_comments_005776.json:
+```json
+{
+    "body": "I confirm that this works, hence i put a positive review. I do not know who shoud be the author though. Maybe ipython ?",
+    "created_at": "2013-06-01T13:50:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5776",
+    "user": "tmonteil"
+}
+```
 
 I confirm that this works, hence i put a positive review. I do not know who shoud be the author though. Maybe ipython ?
 
 
+
 ---
 
-Comment by tmonteil created at 2013-06-01 13:50:46
+archive/issue_comments_005777.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-06-01T13:50:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5777",
+    "user": "tmonteil"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by tscrim created at 2013-06-01 15:04:46
+archive/issue_comments_005778.json:
+```json
+{
+    "body": "For duplicate tickets, there is no author since there is no patch to be merged.",
+    "created_at": "2013-06-01T15:04:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5778",
+    "user": "tscrim"
+}
+```
 
 For duplicate tickets, there is no author since there is no patch to be merged.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-03 13:07:55
+archive/issue_comments_005779.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-06-03T13:07:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5779",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by vbraun created at 2013-06-03 15:34:42
+archive/issue_comments_005780.json:
+```json
+{
+    "body": "See also #14665 for a related bug.",
+    "created_at": "2013-06-03T15:34:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/945#issuecomment-5780",
+    "user": "vbraun"
+}
+```
 
 See also #14665 for a related bug.

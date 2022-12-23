@@ -1,11 +1,21 @@
 # Issue 1062: gp interface help should use extended help text (from "??")
 
-Issue created by migration from https://trac.sagemath.org/ticket/1062
-
-Original creator: cwitty
-
-Original creation time: 2007-11-02 01:31:09
-
+archive/issues_001062.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  vdelecroix jdemeyer slelievre\n\n\n```\n<wstein> \n The new ?? help looks quite nice. It would\n be good for gp.foo? to use it.\n```\n\n\nThe idea is that\n\n```\nsage: foo = gp(x)\nsage: foo.polroots?\n```\n\n\nshould use the help text from the gp command `??polroots`.\n\nThe obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  This doesn't quite work, for two reasons:\n\n1) gphelp carefully formats the text to fit in the current line width, and then Sage displays this text indented; so almost every line wraps.\n\n2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1062\n\n",
+    "created_at": "2007-11-02T01:31:09Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "gp interface help should use extended help text (from \"??\")",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1062",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 CC:  vdelecroix jdemeyer slelievre
@@ -34,24 +44,61 @@ The obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  Thi
 
 2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1062
+
+
+
+
 
 ---
 
-Comment by mmezzarobba created at 2015-04-13 13:45:48
+archive/issue_comments_006449.json:
+```json
+{
+    "body": "See #17860 for a possible strategy.",
+    "created_at": "2015-04-13T13:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6449",
+    "user": "mmezzarobba"
+}
+```
 
 See #17860 for a possible strategy.
 
 
+
 ---
 
-Comment by slelievre created at 2018-11-23 08:30:42
+archive/issue_comments_006450.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"pari/gp, help\".",
+    "created_at": "2018-11-23T08:30:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6450",
+    "user": "slelievre"
+}
+```
 
 Changing keywords from "" to "pari/gp, help".
 
 
+
 ---
 
-Comment by vdelecroix created at 2020-02-17 13:11:33
+archive/issue_comments_006451.json:
+```json
+{
+    "body": "This works in `cypari2` which is de facto the way to use PARI in Sage\n\n```\nsage: x.polroots?\nSignature:      x.polroots(precision)\nDocstring:     \n   Complex roots of the given polynomial using Schonhage's method, as\n   modified by Gourdon.\n```\n",
+    "created_at": "2020-02-17T13:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6451",
+    "user": "vdelecroix"
+}
+```
 
 This works in `cypari2` which is de facto the way to use PARI in Sage
 
@@ -65,31 +112,75 @@ Docstring:
 
 
 
+
 ---
 
-Comment by vdelecroix created at 2020-02-17 13:11:33
+archive/issue_comments_006452.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-02-17T13:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6452",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-04-04 22:30:06
+archive/issue_comments_006453.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-04-04T22:30:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6453",
+    "user": "mjo"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-20 06:21:41
+archive/issue_comments_006454.json:
+```json
+{
+    "body": "I do not agree that this works. We currently display only the short documentation, for pari() objects as well as for gp() objects.\n\nThe complete doc is much longer.",
+    "created_at": "2020-06-20T06:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6454",
+    "user": "chapoton"
+}
+```
 
 I do not agree that this works. We currently display only the short documentation, for pari() objects as well as for gp() objects.
 
 The complete doc is much longer.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-20 06:21:41
+archive/issue_comments_006455.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2020-06-20T06:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6455",
+    "user": "chapoton"
+}
+```
 
 Changing status from positive_review to needs_info.

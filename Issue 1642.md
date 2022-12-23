@@ -1,41 +1,88 @@
 # Issue 1642: Fortran.spkg: search for common Fortran compiles if no binary is present
 
-Issue created by migration from https://trac.sagemath.org/ticket/1642
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-30 18:50:22
-
+archive/issues_001642.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWe do not have binaries on less common platforms. If SAGE_FORTRAN isn't set we just fail, but we should check for common Fortran compilers and set them then instead of failing. Preference should be:\n* gfotran\n* g95\n* g77\n* f77 - on BSD the g77 is commonly called f77\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1642\n\n",
+    "created_at": "2007-12-30T18:50:22Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "Fortran.spkg: search for common Fortran compiles if no binary is present",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1642",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 We do not have binaries on less common platforms. If SAGE_FORTRAN isn't set we just fail, but we should check for common Fortran compilers and set them then instead of failing. Preference should be:
- * gfotran
- * g95
- * g77
- * f77 - on BSD the g77 is commonly called f77
+* gfotran
+* g95
+* g77
+* f77 - on BSD the g77 is commonly called f77
 
 Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1642
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-31 10:24:03
+archive/issue_comments_010446.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-31T10:24:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1642#issuecomment-10446",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-20 06:31:21
+archive/issue_comments_010447.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-20T06:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1642#issuecomment-10447",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-20 06:31:21
+archive/issue_comments_010448.json:
+```json
+{
+    "body": "This has been fixed by William Stein a while ago.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-20T06:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1642#issuecomment-10448",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by William Stein a while ago.
 

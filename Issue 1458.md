@@ -1,11 +1,21 @@
 # Issue 1458: Ipython bug -- the tracebacks in the sage command line list all absolute paths to Cython files totally incorrectly.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1458
-
-Original creator: was
-
-Original creation time: 2007-12-11 02:46:41
-
+archive/issues_001458.json:
+```json
+{
+    "body": "Assignee: was\n\nOn the command line:\n\n```\nsage: 1/0\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.RingElement.__div__()\n\n/Users/was/coerce.pxi in sage.structure.element._div_c()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer._div_c_impl()\n\n/Users/was/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div()\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n\n\n```\n\n\nNotice that the absolute paths are nonsense.\n\nIn the notebook:\n\n```\n1/0\n```\n\noutputs\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/was/.sage/sage_notebook/worksheets/admin/9/code/5.py\", line 4, in <module>\n    Integer(1)/Integer(0)\n  File \"/Users/was/s/data/extcode/sage/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nso there are no absolute paths.  This is the same as in Python itself:\n\n\n```\n>>> 1/sage.all.ZZ(0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"element.pyx\", line 1482, in sage.structure.element.RingElement.__div__\n  File \"coerce.pyx\", line 252, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1458\n\n",
+    "created_at": "2007-12-11T02:46:41Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "Ipython bug -- the tracebacks in the sage command line list all absolute paths to Cython files totally incorrectly.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1458",
+    "user": "was"
+}
+```
 Assignee: was
 
 On the command line:
@@ -73,10 +83,25 @@ ZeroDivisionError: Rational division by zero
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1458
+
+
+
+
 
 ---
 
-Comment by was created at 2007-12-11 17:06:57
+archive/issue_comments_009398.json:
+```json
+{
+    "body": "From Fernando Perez:\n\n```\nMore than a 'real' ipython bug, something tells me it's an issue with\nthe python inspect module, which we push a bit hard with our\ntracebacks and has a long history of breaking left and right.  But\nwhenever we can, we work around its problems, and I'm sure we could do\nso here too.\n\nCould we start by you updating to the most recent ipython SVN?  In\ncase you prefer tarballs to SVN, I put one of the current code here:\n\nhttp://ipython.scipy.org/dist/testing/ipython-0.8.3.svn.r2876.tar.gz\n\nI ask because Robert Kern just last week fixed some things related to\nthis, and there's a small chance the problem is already gone (I can't\nreproduce it with any of the pyrex code  I have locally).  If not,\nI'll dig deeper.\n```\n",
+    "created_at": "2007-12-11T17:06:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9398",
+    "user": "was"
+}
+```
 
 From Fernando Perez:
 
@@ -100,15 +125,37 @@ I'll dig deeper.
 
 
 
+
 ---
 
-Comment by rlm created at 2009-01-23 02:43:11
+archive/issue_comments_009399.json:
+```json
+{
+    "body": "Duplicates #775.",
+    "created_at": "2009-01-23T02:43:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9399",
+    "user": "rlm"
+}
+```
 
 Duplicates #775.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-23 02:43:11
+archive/issue_comments_009400.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-01-23T02:43:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9400",
+    "user": "rlm"
+}
+```
 
 Resolution: duplicate

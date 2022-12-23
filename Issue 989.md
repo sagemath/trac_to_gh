@@ -1,11 +1,21 @@
 # Issue 989: Stripping $ from documentation
 
-Issue created by migration from https://trac.sagemath.org/ticket/989
-
-Original creator: nbruin
-
-Original creation time: 2007-10-25 01:14:24
-
+archive/issues_000989.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nsage: edit?\n```\n\npresently yields\n\n```\n ...\n          sage: import sage.misc.edit_module as m\n          sage: m.set_edit_template(\"vi -c {line} {file}\")\n ...\n```\n\nwhereas the last line should read\n\n```\n         sage: m.set_edit_template(\"vi -c ${line} ${file}\")\n```\n\ni.e., $ gets stripped from EXAMPLE text where it should not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/989\n\n",
+    "created_at": "2007-10-25T01:14:24Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Stripping $ from documentation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/989",
+    "user": "nbruin"
+}
+```
 Assignee: tba
 
 
@@ -30,17 +40,45 @@ whereas the last line should read
 
 i.e., $ gets stripped from EXAMPLE text where it should not.
 
+Issue created by migration from https://trac.sagemath.org/ticket/989
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-10-27 18:38:52
+archive/issue_comments_006036.json:
+```json
+{
+    "body": "$ signs are stripped from docstrings in sage/misc/sagedoc.py, as part of an effort to convert LaTeX math markup to plain text.\n\nPerhaps the right fix is to notice doctests, and disable these modifications for that part of the docstring.",
+    "created_at": "2007-10-27T18:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6036",
+    "user": "cwitty"
+}
+```
 
 $ signs are stripped from docstrings in sage/misc/sagedoc.py, as part of an effort to convert LaTeX math markup to plain text.
 
 Perhaps the right fix is to notice doctests, and disable these modifications for that part of the docstring.
 
 
+
 ---
+
+archive/issue_comments_006037.json:
+```json
+{
+    "body": "Attachment\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
+    "created_at": "2007-11-04T07:32:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6037",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
@@ -64,15 +102,37 @@ the docstring.  The model was the 'nodoctest' directive already found at the
 top of a file.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-06 21:35:27
+archive/issue_comments_006038.json:
+```json
+{
+    "body": "applied to 2.8.12.rc0",
+    "created_at": "2007-11-06T21:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6038",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.12.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-06 21:35:27
+archive/issue_comments_006039.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-06T21:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6039",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

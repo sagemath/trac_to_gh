@@ -1,11 +1,21 @@
 # Issue 671: Solaris 10: interfaces/singular.py doctests failure
 
-Issue created by migration from https://trac.sagemath.org/ticket/671
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-17 00:32:29
-
+archive/issues_000671.json:
+```json
+{
+    "body": "Assignee: malb or was\n\nKeywords: Solaris 10, doctest, singular\n\n\n```\nsage -t  interfaces/singular.py                             **********************************************************************\nFile \"singular.py\", line 337:\n    sage: singular.eval('2 > 1')\nExpected:\n    '1'\nGot:\n    '2'\n**********************************************************************\nFile \"singular.py\", line 339:\n    sage: singular.eval('2 + 2')\nExpected:\n    '4'\nGot:\n    '1'\n**********************************************************************\n```\n\n\nRunning the same commands directly via Singular:\n\n```\n-bash-3.00$ Singular-3-0-3\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> 2+2\n. ;\n4\n> 1<2;\n1\n> 2<1;\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/671\n\n",
+    "created_at": "2007-09-17T00:32:29Z",
+    "labels": [
+        "packages",
+        "major",
+        "bug"
+    ],
+    "title": "Solaris 10: interfaces/singular.py doctests failure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/671",
+    "user": "mabshoff"
+}
+```
 Assignee: malb or was
 
 Keywords: Solaris 10, doctest, singular
@@ -49,17 +59,43 @@ FB Mathematik der Universitaet, D-67653 Kaiserslautern    \
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/671
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-17 01:24:00
+archive/issue_comments_003476.json:
+```json
+{
+    "body": "Changing component from packages to doctest.",
+    "created_at": "2007-09-17T01:24:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/671#issuecomment-3476",
+    "user": "mabshoff"
+}
+```
 
 Changing component from packages to doctest.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-17 09:53:25
+archive/issue_comments_003477.json:
+```json
+{
+    "body": "Another interesting data point:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/toy_buchberger.py\n<SNIP>\nTrying:\n    Ideal(g1).basis_is_groebner()###line 44:_sage_    >>> Ideal(g1).basis_is_groebner()\nExpecting:\n    True\n```\n\nResult: hang\n\nAnd:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/multi_polynomial_element.py\nTrying:\n    k.factor()###line 1035:_sage_    >>> k.factor()\nExpecting:\n    (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5\n```\n\nResult: hang  \n\nCheers,\n\nMichael",
+    "created_at": "2007-09-17T09:53:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/671#issuecomment-3477",
+    "user": "mabshoff"
+}
+```
 
 Another interesting data point:
 
@@ -91,16 +127,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 06:34:55
+archive/issue_comments_003478.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-26T06:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/671#issuecomment-3478",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 06:34:55
+archive/issue_comments_003479.json:
+```json
+{
+    "body": "This has been fixed by #3405.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-26T06:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/671#issuecomment-3479",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by #3405.
 

@@ -1,21 +1,46 @@
 # Issue 1762: Create optional graphviz package
 
-Issue created by migration from https://trac.sagemath.org/ticket/1762
-
-Original creator: boothby
-
-Original creation time: 2008-01-12 04:42:08
-
+archive/issues_001762.json:
+```json
+{
+    "body": "Assignee: rlm\n\nGraphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.\n\nThe dependencies are rather numerous, but most are optional. Of note, GD and libpng are already included in Sage. [http://www.graphviz.org/doc/build.html](http://www.graphviz.org/doc/build.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1762\n\n",
+    "created_at": "2008-01-12T04:42:08Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Create optional graphviz package",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1762",
+    "user": "boothby"
+}
+```
 Assignee: rlm
 
 Graphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.
 
 The dependencies are rather numerous, but most are optional. Of note, GD and libpng are already included in Sage. [http://www.graphviz.org/doc/build.html](http://www.graphviz.org/doc/build.html)
 
+Issue created by migration from https://trac.sagemath.org/ticket/1762
+
+
+
+
 
 ---
 
-Comment by rlm created at 2008-01-19 01:51:03
+archive/issue_comments_011122.json:
+```json
+{
+    "body": "Here is a broken spkg:\n\nhttp://sage.math.washington.edu/home/rlmill/graphviz-broken-2.16.1.spkg\n\nIt fails to find the libpng library, because it is looking for `libpng12.dylib`, and the files are `libpng12.la` and `libpng12.a` instead. I bet there are more problems with the spkg, too, besides just missing an SPKG.txt. But this gets the ball rolling...",
+    "created_at": "2008-01-19T01:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11122",
+    "user": "rlm"
+}
+```
 
 Here is a broken spkg:
 
@@ -24,9 +49,20 @@ http://sage.math.washington.edu/home/rlmill/graphviz-broken-2.16.1.spkg
 It fails to find the libpng library, because it is looking for `libpng12.dylib`, and the files are `libpng12.la` and `libpng12.a` instead. I bet there are more problems with the spkg, too, besides just missing an SPKG.txt. But this gets the ball rolling...
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 04:40:44
+archive/issue_comments_011123.json:
+```json
+{
+    "body": "I will look into this tomorrow. The problem that needs to be solved is autoconf.ac or something alike. I also think that the issue we need to solve is making python work with out libpng.dylib on 10.4.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-19T04:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11123",
+    "user": "mabshoff"
+}
+```
 
 I will look into this tomorrow. The problem that needs to be solved is autoconf.ac or something alike. I also think that the issue we need to solve is making python work with out libpng.dylib on 10.4.
 
@@ -35,9 +71,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2008-01-19 05:35:50
+archive/issue_comments_011124.json:
+```json
+{
+    "body": "Some comments:\n\n1. On lines 106-110 of `configure.ac`, they basically assume that .dylib is the only type of library name. Who knows where else this kind of assumption will cause trouble...\n\n2. They use this on lines 351-353 of\n\nhttp://www.graphviz.org/pub/graphviz/CURRENT/doxygen/html/gvconfig_8c-source.html\n\n3. The variable name \"DARWIN_DYLIB\" is used only by graphviz- don't be fooled!\n\n4. Seems like a fix that should go upstream...",
+    "created_at": "2008-01-19T05:35:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11124",
+    "user": "rlm"
+}
+```
 
 Some comments:
 
@@ -52,25 +99,58 @@ http://www.graphviz.org/pub/graphviz/CURRENT/doxygen/html/gvconfig_8c-source.htm
 4. Seems like a fix that should go upstream...
 
 
+
 ---
 
-Comment by rlm created at 2008-01-19 21:15:52
+archive/issue_comments_011125.json:
+```json
+{
+    "body": "Yeah, forgot about the existence of:\n\nhttps://networkx.lanl.gov/wiki/pygraphviz",
+    "created_at": "2008-01-19T21:15:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11125",
+    "user": "rlm"
+}
+```
 
 Yeah, forgot about the existence of:
 
 https://networkx.lanl.gov/wiki/pygraphviz
 
 
+
 ---
 
-Comment by rlm created at 2008-01-19 21:16:43
+archive/issue_comments_011126.json:
+```json
+{
+    "body": "Oh, but pygraphviz still depends on graphviz...",
+    "created_at": "2008-01-19T21:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11126",
+    "user": "rlm"
+}
+```
 
 Oh, but pygraphviz still depends on graphviz...
 
 
+
 ---
 
-Comment by boothby created at 2008-03-17 17:04:32
+archive/issue_comments_011127.json:
+```json
+{
+    "body": "As an alternate solution, I've found a package called OGDF -- a GPL2/3 C++ package for drawing graphs:\n\nhttp://www.ogdf.net/\n\nthis will take more work to wrap, but ultimately solves the problem better.",
+    "created_at": "2008-03-17T17:04:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11127",
+    "user": "boothby"
+}
+```
 
 As an alternate solution, I've found a package called OGDF -- a GPL2/3 C++ package for drawing graphs:
 
@@ -79,9 +159,20 @@ http://www.ogdf.net/
 this will take more work to wrap, but ultimately solves the problem better.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 00:37:36
+archive/issue_comments_011128.json:
+```json
+{
+    "body": "I am fixing all the issue I am seeing. #3274 fixes the OSX compile, so we ought to be good.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T00:37:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11128",
+    "user": "mabshoff"
+}
+```
 
 I am fixing all the issue I am seeing. #3274 fixes the OSX compile, so we ought to be good.
 
@@ -90,14 +181,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 00:59:49
+archive/issue_comments_011129.json:
+```json
+{
+    "body": "this patch fixes the OSX build issue",
+    "created_at": "2008-05-23T00:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11129",
+    "user": "mabshoff"
+}
+```
 
 this patch fixes the OSX build issue
 
 
+
 ---
+
+archive/issue_comments_011130.json:
+```json
+{
+    "body": "Attachment\n\nThe updated optional spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2//rc0/graphviz-2.16.1.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T01:09:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11130",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -110,16 +225,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 01:41:20
+archive/issue_comments_011131.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T01:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11131",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 01:41:20
+archive/issue_comments_011132.json:
+```json
+{
+    "body": "The spkg has been uploaded to the optional spkg repo.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T01:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1762",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11132",
+    "user": "mabshoff"
+}
+```
 
 The spkg has been uploaded to the optional spkg repo.
 

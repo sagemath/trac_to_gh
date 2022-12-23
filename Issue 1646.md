@@ -1,11 +1,21 @@
 # Issue 1646: 'matrix in group' test doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/1646
-
-Original creator: schilly
-
-Original creation time: 2007-12-31 17:18:19
-
+archive/issues_001646.json:
+```json
+{
+    "body": "Assignee: was\n\nThe code \n\n\n\n```\nG = SL(2,ZZ)                 \nM = matrix([[1,0],[0,1]])    \nM in G            \n```\n\n\n\nruns possibly forever inside GAP. same for\n\n```\nM = matrix(ZZ,[[1,0],[0,1]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1646\n\n",
+    "created_at": "2007-12-31T17:18:19Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "'matrix in group' test doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1646",
+    "user": "schilly"
+}
+```
 Assignee: was
 
 The code 
@@ -27,45 +37,115 @@ M = matrix(ZZ,[[1,0],[0,1]])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1646
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-24 09:18:19
+archive/issue_comments_010467.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2008-01-24T09:18:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10467",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-24 18:04:30
+archive/issue_comments_010468.json:
+```json
+{
+    "body": "This is due to GAP.  Unless we get GAP to fix this, then the best solution would be for SL to override the __contains__ method.",
+    "created_at": "2008-01-24T18:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10468",
+    "user": "mhansen"
+}
+```
 
 This is due to GAP.  Unless we get GAP to fix this, then the best solution would be for SL to override the __contains__ method.
 
 
+
 ---
 
-Comment by wdj created at 2008-01-24 20:20:09
+archive/issue_comments_010469.json:
+```json
+{
+    "body": "Changing assignee from was to joyner.",
+    "created_at": "2008-01-24T20:20:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10469",
+    "user": "wdj"
+}
+```
 
 Changing assignee from was to joyner.
 
 
+
 ---
 
-Comment by wdj created at 2008-01-24 20:20:09
+archive/issue_comments_010470.json:
+```json
+{
+    "body": "Changing component from linear algebra to group_theory.",
+    "created_at": "2008-01-24T20:20:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10470",
+    "user": "wdj"
+}
+```
 
 Changing component from linear algebra to group_theory.
 
 
+
 ---
 
-Comment by wdj created at 2008-01-24 20:20:09
+archive/issue_comments_010471.json:
+```json
+{
+    "body": "I've reported this to GAP support.",
+    "created_at": "2008-01-24T20:20:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10471",
+    "user": "wdj"
+}
+```
 
 I've reported this to GAP support.
 
 
+
 ---
 
-Comment by wdj created at 2008-01-24 23:06:26
+archive/issue_comments_010472.json:
+```json
+{
+    "body": "from\tLaurent Bartholdi <laurent.bartholdi`@`gmail.com>\nto\tDavid Joyner <wdjoyner`@`gmail.com>,\ncc\tGAP Support <support`@`gap-system.org>,\ndate\tJan 24, 2008 5:36 PM\nsubject\tRe: [GAP Support] membership in SL(2,Z)\nmailed-by\tgmail.com\n\t\nhide details 5:36 PM (27 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nIt's not intentional, and should be fixed. Here's a quick solution:\n\nInstallMethod(\\in,[IsMatrix,IsSpecialLinearGroup],\n function(g,G)\n   return Length(g)=Length(One(G)) and\n             ForAll(g,row->Length(row)=Length(One(g)) and\n             IsOne(DeterminantMat(g));\n end);\n\nneedless to say, there must be lots of other missing methods; e.g. for\ngeneral, symplectic etc. linear groups.\n- Hide quoted text -\n\nOn Jan 24, 2008 9:16 PM, David Joyner <wdjoyner`@`gmail.com> wrote:\n> Hi:\n>\n> I wonder if the behavior of\n>\n> gap> G := SL(2,Integers);\n> SL(2,Integers)\n> gap> g := [[1,0],[0,1]];\n> [ [ 1, 0 ], [ 0, 1 ] ]\n> gap> g in G;\n> user interrupt at ....\n>\n> is intentional: it just hangs, as far as I can tell.\n> Unless I'm doing something wrong, I wonder if\n> an error message should be returned? Perhaps \"method not\n> implemented\" or something?\n>\n> - David Joyner\n>\n> _______________________________________________\n> Support mailing list\n> Support`@`gap-system.org\n> http://mail.gap-system.org/mailman/listinfo/support\n>\n\n\n\n--\nLaurent Bartholdi          \\  laurent.bartholdi<at>gmail<dot>com\nEPFL SB SMA IMB MAD         \\    T\u00e9l\u00e9phone: +41 21-6935458\nStation 8                    \\ Secr\u00e9taire: +41 21-6935471\nCH-1015 Lausanne, Switzerland \\      Fax: +41 21-6930339\nHome address: http://f34.com/68",
+    "created_at": "2008-01-24T23:06:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10472",
+    "user": "wdj"
+}
+```
 
 from	Laurent Bartholdi <laurent.bartholdi`@`gmail.com>
 to	David Joyner <wdjoyner`@`gmail.com>,
@@ -129,23 +209,56 @@ CH-1015 Lausanne, Switzerland \      Fax: +41 21-6930339
 Home address: http://f34.com/68
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-09-06 22:52:04
+archive/issue_comments_010473.json:
+```json
+{
+    "body": "This is a duplicate of #1834, which has been fixed and merged in 3.1.2.alpha4.",
+    "created_at": "2008-09-06T22:52:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10473",
+    "user": "AlexGhitza"
+}
+```
 
 This is a duplicate of #1834, which has been fixed and merged in 3.1.2.alpha4.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-06 22:54:29
+archive/issue_comments_010474.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-09-06T22:54:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10474",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-06 22:54:29
+archive/issue_comments_010475.json:
+```json
+{
+    "body": "Alex,\n\nThanks for finding the dupe. Closed as duplicate.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-06T22:54:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1646#issuecomment-10475",
+    "user": "mabshoff"
+}
+```
 
 Alex,
 

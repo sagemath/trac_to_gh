@@ -1,19 +1,44 @@
 # Issue 1505: make M4RI a shared library
 
-Issue created by migration from https://trac.sagemath.org/ticket/1505
-
-Original creator: malb
-
-Original creation time: 2007-12-14 12:41:26
-
+archive/issues_001505.json:
+```json
+{
+    "body": "Assignee: malb\n\nWe are not the only ones anymore who use M4RI, PolyBoRi (which deputs in Sage 2.9) also uses M4RI. Thus we should make M4RI a shared library to not duplicate code/memory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1505\n\n",
+    "created_at": "2007-12-14T12:41:26Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "make M4RI a shared library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1505",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 We are not the only ones anymore who use M4RI, PolyBoRi (which deputs in Sage 2.9) also uses M4RI. Thus we should make M4RI a shared library to not duplicate code/memory.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1505
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-12-16 15:02:50
+archive/issue_comments_009640.json:
+```json
+{
+    "body": "spkg here:\n\n   http://sage.math.washington.edu/home/malb/pkgs/libm4ri-20071216.spkg\n\nstand-alone shared lib:\n\n   http://sage.math.washington.edu/home/malb/pkgs/libm4ri-1.0.0.tar.gz\n\npatch for Sage:\n\n   attached",
+    "created_at": "2007-12-16T15:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1505#issuecomment-9640",
+    "user": "malb"
+}
+```
 
 spkg here:
 
@@ -28,27 +53,73 @@ patch for Sage:
    attached
 
 
+
 ---
+
+archive/issue_comments_009641.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-16T15:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1505#issuecomment-9641",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-12-16 15:03:45
+archive/issue_comments_009642.json:
+```json
+{
+    "body": "oh, 'make test' passes on 64-bit Linux.",
+    "created_at": "2007-12-16T15:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1505#issuecomment-9642",
+    "user": "malb"
+}
+```
 
 oh, 'make test' passes on 64-bit Linux.
 
 
+
 ---
 
-Comment by rlm created at 2007-12-22 18:53:22
+archive/issue_comments_009643.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-22T18:53:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1505#issuecomment-9643",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-22 18:53:22
+archive/issue_comments_009644.json:
+```json
+{
+    "body": "merged in 2.9.1 rc0",
+    "created_at": "2007-12-22T18:53:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1505#issuecomment-9644",
+    "user": "rlm"
+}
+```
 
 merged in 2.9.1 rc0

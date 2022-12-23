@@ -1,11 +1,21 @@
 # Issue 1503: [with patch] calculus -- formal function calls don't coerce correctly to Mathematica
 
-Issue created by migration from https://trac.sagemath.org/ticket/1503
-
-Original creator: was
-
-Original creation time: 2007-12-14 05:50:21
-
+archive/issues_001503.json:
+```json
+{
+    "body": "Assignee: was\n\nBefore this patch if you make a formal function it will\nnot coerce into Mathematica.  E.g..\n\n\n```\nsage: f = function('Foo', var('x'), var('y'))\nsage: mathematica(f)\nFoo[x, y]\n```\n\n\nWith this patch it does work. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1503\n\n",
+    "created_at": "2007-12-14T05:50:21Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] calculus -- formal function calls don't coerce correctly to Mathematica",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1503",
+    "user": "was"
+}
+```
 Assignee: was
 
 Before this patch if you make a formal function it will
@@ -21,15 +31,43 @@ Foo[x, y]
 
 With this patch it does work. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1503
+
+
+
+
 
 ---
+
+archive/issue_comments_009635.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-15T23:37:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1503#issuecomment-9635",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 23:41:08
+archive/issue_comments_009636.json:
+```json
+{
+    "body": "\n```\n[00:32] <mabshoff> about 1503: Shoudln't the mathematica doctests require mathematica?\n[00:32] <rlm> was-1464: it was a rewrite or nice, line by line, so actually it's a little cleaner\n[00:32] <rlm> the memory management for example\n[00:33] <was-1464> yes, put # optional there.\n[00:33] <mabshoff> ok, will do.\n[00:33] <was-1464> But *only* in the two lines with mathematica(...)\n[00:33] <was-1464> Matheamtica is *not* needed for the _mathematica_init_ lines\n[00:33] <mabshoff> Yep, I was about to ask for clarification on that.\n```\n",
+    "created_at": "2007-12-15T23:41:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1503#issuecomment-9636",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -45,15 +83,37 @@ Comment by mabshoff created at 2007-12-15 23:41:08
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 01:12:49
+archive/issue_comments_009637.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T01:12:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1503#issuecomment-9637",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 01:12:49
+archive/issue_comments_009638.json:
+```json
+{
+    "body": "Merged in 2.9.rc2.",
+    "created_at": "2007-12-16T01:12:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1503#issuecomment-9638",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc2.

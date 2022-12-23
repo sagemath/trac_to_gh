@@ -1,11 +1,21 @@
 # Issue 1679: two documentation typos
 
-Issue created by migration from https://trac.sagemath.org/ticket/1679
-
-Original creator: was
-
-Original creation time: 2008-01-04 09:20:27
-
+archive/issues_001679.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nFabio Tonti to sage-devel\n\t\nshow details 12:56 AM (20 minutes ago)\n\t\n\t\n\t\nReply\n\t\n\t\nThe page numbers are numbers in the pdf version (in parentheses the printed page numbers)\nI'm actually not sure about how to reference the page numbers...\n\npage 175 (162): ** instead of ^;\nthe pyx example says: \"sage: y(x) = x*sin(x**2)\"\nusing the \"**\" is nice for python, but isn't Sage emphasizing to use \"^\" instead?\n\npage 1843 (1830): ncols()... return number of \"rows\" instead of \"coloumns\";\nthe description for ncols() reads \"number of rows\" instead of \"number of coloumns\"\n\n\n\nBest wishes, Fabio\n```\n\n\nNOTES:\n   The first sin(x**2) above this from plot.py, and I agree with changing it to sin(x^2)\n\n   The second listed problem seems like a clear mistake. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1679\n\n",
+    "created_at": "2008-01-04T09:20:27Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "two documentation typos",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1679",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -42,15 +52,43 @@ NOTES:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1679
+
+
+
+
 
 ---
+
+archive/issue_comments_010650.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-13T13:53:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1679#issuecomment-10650",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 14:57:21
+archive/issue_comments_010651.json:
+```json
+{
+    "body": "Looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-13T14:57:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1679#issuecomment-10651",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me.
 
@@ -59,15 +97,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 14:58:26
+archive/issue_comments_010652.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-13T14:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1679#issuecomment-10652",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 14:58:26
+archive/issue_comments_010653.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha3.",
+    "created_at": "2008-01-13T14:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1679#issuecomment-10653",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha3.

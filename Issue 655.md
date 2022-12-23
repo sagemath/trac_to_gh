@@ -1,11 +1,21 @@
 # Issue 655: Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/655
-
-Original creator: malb
-
-Original creation time: 2007-09-14 09:22:40
-
+archive/issues_000655.json:
+```json
+{
+    "body": "Assignee: was\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
+    "created_at": "2007-09-14T09:22:40Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/655",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Apparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:
@@ -35,35 +45,98 @@ I was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivotin
 
 Also, it claims to support GF(q) which is very very slow in SAGE right now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/655
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-09-15 14:27:40
+archive/issue_comments_003405.json:
+```json
+{
+    "body": "Actually, the above is not a bug but the size actually is zero after application of the Gaussian elimination. LinBox clears rows it doesn't need anymore to save memory.\n\nAlso, `InPlaceLinearPivoting` does not crash if called correctly and is often faster than `NoReordering`.",
+    "created_at": "2007-09-15T14:27:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3405",
+    "user": "malb"
+}
+```
 
 Actually, the above is not a bug but the size actually is zero after application of the Gaussian elimination. LinBox clears rows it doesn't need anymore to save memory.
 
 Also, `InPlaceLinearPivoting` does not crash if called correctly and is often faster than `NoReordering`.
 
 
+
 ---
+
+archive/issue_comments_003406.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-15T14:28:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3406",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-09-15 14:29:37
+archive/issue_comments_003407.json:
+```json
+{
+    "body": "`sparsegfp.patch` requires http://sage.math.washington.edu/home/malb/pkgs/linbox-20070915.spkg and exposes some of LinBox's functionality for sparse matrices over GF(p) to SAGE. More to come.",
+    "created_at": "2007-09-15T14:29:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3407",
+    "user": "malb"
+}
+```
 
 `sparsegfp.patch` requires http://sage.math.washington.edu/home/malb/pkgs/linbox-20070915.spkg and exposes some of LinBox's functionality for sparse matrices over GF(p) to SAGE. More to come.
 
 
+
 ---
+
+archive/issue_comments_003408.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-15T21:26:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3408",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-09-21 00:08:19
+archive/issue_comments_003409.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-21T00:08:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/655#issuecomment-3409",
+    "user": "was"
+}
+```
 
 Resolution: fixed

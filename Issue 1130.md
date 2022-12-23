@@ -1,15 +1,25 @@
 # Issue 1130: [with patch] point counting for elliptic curves over non-prime finite fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/1130
-
-Original creator: malb
-
-Original creation time: 2007-11-08 22:16:45
-
+archive/issues_001130.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe user has three new options of finite extension fields:\n1. \"legendre\" - as the name implies: using Legendre symbols\n\n```\nsage: k.<a> = GF(3^10)\nsage: E = EllipticCurve(k,[k.random_element() for _ in range(5)])\nsage: time E.cardinality('legendre')\nCPU times: user 0.39 s, sys: 0.05 s, total: 0.44 s\nWall time: 0.44\n58997\n```\n\n\n1. \"bsgs\" - using the Baby-Step Giant-Step algorithm\n\n```\nsage: time E.cardinality('bsgs')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n\n1. \"heuristic\" - use \"legendre\" if q<100 (as in mwrank) and \"bsgs\" else\n\n```\nsage: time E.cardinality()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n58997\n```\n\n\nNeither of these will win any speed records but it is *much* better than the naive algorithm used before.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1130\n\n",
+    "created_at": "2007-11-08T22:16:45Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] point counting for elliptic curves over non-prime finite fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1130",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 The user has three new options of finite extension fields:
- 1. "legendre" - as the name implies: using Legendre symbols
+1. "legendre" - as the name implies: using Legendre symbols
 
 ```
 sage: k.<a> = GF(3^10)
@@ -21,7 +31,7 @@ Wall time: 0.44
 ```
 
 
- 1. "bsgs" - using the Baby-Step Giant-Step algorithm
+1. "bsgs" - using the Baby-Step Giant-Step algorithm
 
 ```
 sage: time E.cardinality('bsgs')
@@ -31,7 +41,7 @@ Wall time: 0.02
 ```
 
 
- 1. "heuristic" - use "legendre" if q<100 (as in mwrank) and "bsgs" else
+1. "heuristic" - use "legendre" if q<100 (as in mwrank) and "bsgs" else
 
 ```
 sage: time E.cardinality()
@@ -43,24 +53,63 @@ Wall time: 0.02
 
 Neither of these will win any speed records but it is *much* better than the naive algorithm used before.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1130
+
+
+
+
 
 ---
+
+archive/issue_comments_006840.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-10T23:12:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6840",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-18 09:11:09
+archive/issue_comments_006841.json:
+```json
+{
+    "body": "This seems to rely on an earlier patch. (#1120?) Couldn't apply, but mostly looks good. \n\nOne concern I have that the use of the hasse bound may not be enough for extremely small cardinality (maybe I haven't thought this through enough). It isn't used there by default of course. Very clean implementation of the algorithm though!",
+    "created_at": "2007-11-18T09:11:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6841",
+    "user": "robertwb"
+}
+```
 
 This seems to rely on an earlier patch. (#1120?) Couldn't apply, but mostly looks good. 
 
 One concern I have that the use of the hasse bound may not be enough for extremely small cardinality (maybe I haven't thought this through enough). It isn't used there by default of course. Very clean implementation of the algorithm though!
 
 
+
 ---
 
-Comment by malb created at 2007-11-18 15:45:35
+archive/issue_comments_006842.json:
+```json
+{
+    "body": "David Harvey on [sage-devel]:\n\n```\nI'm very concerned about this patch. It is not the case that the LCM\nof the orders of all elements of E(GF(q)) will equal the order of E \n(GF(q)). I haven't tried the code, but if I understand the code\ncorrectly, it will go into an infinite loop on such cases, and it may\nwell give incorrect results in other cases.\n```\n",
+    "created_at": "2007-11-18T15:45:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6842",
+    "user": "malb"
+}
+```
 
 David Harvey on [sage-devel]:
 
@@ -74,9 +123,20 @@ well give incorrect results in other cases.
 
 
 
+
 ---
 
-Comment by malb created at 2007-11-18 15:47:26
+archive/issue_comments_006843.json:
+```json
+{
+    "body": "my reply:\n\n```\nYes, it should not go in, my bad, sorry. I quickly hacked to together\nthe algorithm in \"Elliptic Curves\" by Lawrence Washington and \napparently screwed up badly on the way. He writes:\n\n\"\"\"\n7. If we are looking for the #E(F_q), then repeat steps (1)-(6)  \n[finding the order of a point, malb] with randomly chosen points \nin E(F_q) until the greatest common multiple of the orders divides\nonly one integer N with q + 1 -2*sqrt(q) <= N <= q + 1 + 2*sqrt(q). \nThen N = #E(F_q).\n\"\"\"\n\nApparently I overread the 'divides' part. Also, what is a \n'greatest common divisor'?\n```\n",
+    "created_at": "2007-11-18T15:47:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6843",
+    "user": "malb"
+}
+```
 
 my reply:
 
@@ -99,9 +159,20 @@ Apparently I overread the 'divides' part. Also, what is a
 
 
 
+
 ---
 
-Comment by malb created at 2007-11-18 15:47:58
+archive/issue_comments_006844.json:
+```json
+{
+    "body": "and David again:\n\n\n```\nI still don't believe this algorithm.\n\nLook at this example:\n\nsage: K.<a> = GF(3^4)\nsage: K.polynomial()\na^4 + 2*a^3 + 2\nsage: E = EllipticCurve(K, [2*a^2 + 2*a + 2, 2*a^3 + 2*a + 1])\nsage: points = E.points()\nsage: len(points)\n100\nsage: LCM([P.order() for P in points])\n10\n\nThe hasse bound says the the number of points must be in [64, 100].  \nBut if the best we can do is show divisibility by 10, that's not  \nenough information: it could be 70, 80, 90, or 100.\n\nDoes Washington place any other restrictions on the finite field or  \non the curve?\n```\n",
+    "created_at": "2007-11-18T15:47:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6844",
+    "user": "malb"
+}
+```
 
 and David again:
 
@@ -131,18 +202,40 @@ on the curve?
 
 
 
+
 ---
 
-Comment by cremona created at 2007-11-20 18:36:35
+archive/issue_comments_006845.json:
+```json
+{
+    "body": "David is right that the lcm of the orders of the points does not give the group order, it only gives the exponent of the group.  But that's not what the algorithm described above (by malb) said!  The algorithm says that the group order is the only multiple of that lcm which lies in the Hasse interval.  I believe that to be the case, with a finite number of exceptional fields F_q, as in my posting to sage-devel of 2007-11-20.\n\njec",
+    "created_at": "2007-11-20T18:36:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6845",
+    "user": "cremona"
+}
+```
 
 David is right that the lcm of the orders of the points does not give the group order, it only gives the exponent of the group.  But that's not what the algorithm described above (by malb) said!  The algorithm says that the group order is the only multiple of that lcm which lies in the Hasse interval.  I believe that to be the case, with a finite number of exceptional fields F_q, as in my posting to sage-devel of 2007-11-20.
 
 jec
 
 
+
 ---
 
-Comment by was created at 2007-12-21 09:21:21
+archive/issue_comments_006846.json:
+```json
+{
+    "body": "\n```\n\n> What's the latest on\n>\n> http://trac.sagemath.org/sage_trac/ticket/1130\n>\n> It looks to me like David Harvey pointed out that the algorithm was\n> maybe wrong.  It's unclear if\n> something needs to be done or not after quickly looking at the\n> comments.    Is all that needs to\n> happen for malb to make another patch that incorporates the table the\n> John mentions in his last\n> comment?\n\nSince the code in question was only determining the group\norder, not structure, as long as the table of exceptions is dealt with\nproperly the basic algorithm should work.\n\nBy the way, Larry Washington is currently preparing a second edition\nof his book and he is planning to incorporate this correction,\nattributing it to me and David Harvey.\n\nJohn\n```\n",
+    "created_at": "2007-12-21T09:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6846",
+    "user": "was"
+}
+```
 
 
 ```
@@ -172,42 +265,114 @@ John
 
 
 
+
 ---
 
-Comment by cremona created at 2008-02-15 09:44:34
+archive/issue_comments_006847.json:
+```json
+{
+    "body": "extra functionality for e.c.s over non-prime finite fields",
+    "created_at": "2008-02-15T09:44:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6847",
+    "user": "cremona"
+}
+```
 
 extra functionality for e.c.s over non-prime finite fields
 
 
+
 ---
+
+archive/issue_comments_006848.json:
+```json
+{
+    "body": "Attachment\n\nNew patch fixes this and other issues (#1120, #262, even #29), providing full support for elliptic curves over non-prime finite fields, including intelligent point-counting (including over extension fields), group structure, disctrete log, and more.  All functions fully doctested.",
+    "created_at": "2008-02-15T09:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6848",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 New patch fixes this and other issues (#1120, #262, even #29), providing full support for elliptic curves over non-prime finite fields, including intelligent point-counting (including over extension fields), group structure, disctrete log, and more.  All functions fully doctested.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-16 18:47:05
+archive/issue_comments_006849.json:
+```json
+{
+    "body": "The attached ncalexan-1 bundle fixes a few small issues and formats docstrings as per the Sage standard.  Still to come: removing debug output.",
+    "created_at": "2008-02-16T18:47:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6849",
+    "user": "ncalexan"
+}
+```
 
 The attached ncalexan-1 bundle fixes a few small issues and formats docstrings as per the Sage standard.  Still to come: removing debug output.
 
 
+
 ---
+
+archive/issue_comments_006850.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-16T18:49:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6850",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_006851.json:
+```json
+{
+    "body": "Attachment\n\naddition minor fixes",
+    "created_at": "2008-02-16T20:26:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6851",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 addition minor fixes
 
 
+
 ---
 
-Comment by cremona created at 2008-02-16 20:27:41
+archive/issue_comments_006852.json:
+```json
+{
+    "body": "Thanks to Nick for tidying up my patch.\n\nOnly one comment:  while I approve of separating out the point counting for j=0 and j=1728 as done here, I don't think that the name \"supersingular j invariant\" is right here.  Curves are supersingular iff the cardinality is coprime to the characteristic (with many many equivalent definitions), which is not the same thing.\n\nHence I would suggest changing the name of that function.\n\nI have added a new patch 8312.patch which is to applied along with all the previous ones, and fixes a few rather minor things.",
+    "created_at": "2008-02-16T20:27:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6852",
+    "user": "cremona"
+}
+```
 
 Thanks to Nick for tidying up my patch.
 
@@ -218,28 +383,76 @@ Hence I would suggest changing the name of that function.
 I have added a new patch 8312.patch which is to applied along with all the previous ones, and fixes a few rather minor things.
 
 
+
 ---
+
+archive/issue_comments_006853.json:
+```json
+{
+    "body": "Attachment\n\nThis bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything but malb's bsgs code, which is not ready for application.",
+    "created_at": "2008-02-16T21:25:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6853",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 This bundle should apply to a clean sage-2.10.2.alpha0 and supersedes everything but malb's bsgs code, which is not ready for application.
 
 
+
 ---
+
+archive/issue_comments_006854.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-16T21:47:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6854",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 21:52:06
+archive/issue_comments_006855.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-16T21:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6855",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 21:52:06
+archive/issue_comments_006856.json:
+```json
+{
+    "body": "Merged 1130-jcremona-ncalexan-final.patch in Sage 2.10.2.alpha1 - credit in the official log did get screwed up, so my apologies to John & Nick.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T21:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1130#issuecomment-6856",
+    "user": "mabshoff"
+}
+```
 
 Merged 1130-jcremona-ncalexan-final.patch in Sage 2.10.2.alpha1 - credit in the official log did get screwed up, so my apologies to John & Nick.
 

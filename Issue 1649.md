@@ -1,11 +1,21 @@
 # Issue 1649: Updated eclib.spkg to  eclib-20071231.p0.spkg  or later
 
-Issue created by migration from https://trac.sagemath.org/ticket/1649
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-31 23:59:03
-
+archive/issues_001649.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/eclib-20071231.p0.spkg\n\nChangelog:\neclib-20071231.p0 (Michael Abshoff)\n* added Cygwin support\n* add spkg-check\n* install headers into $SAGE_LOCAL/eclib\n* delete $SAGE_LOCAL/include/cremona\n* chown $SAGE_LOCAL/include/eclib and files underneath\n\neclib-20071231 (John Cremona):\n* renamed to eclib\n* allows elliptic curves as input with rational (as opposed to just integer) coefficients.\n\nThis spkg still needs fixes to `mwrank.pyx` [expect a patch shortly] and is related to #1058.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1649\n\n",
+    "created_at": "2007-12-31T23:59:03Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Updated eclib.spkg to  eclib-20071231.p0.spkg  or later",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1649",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The new spkg can be found at
@@ -14,15 +24,15 @@ http://sage.math.washington.edu/home/mabshoff/eclib-20071231.p0.spkg
 
 Changelog:
 eclib-20071231.p0 (Michael Abshoff)
- * added Cygwin support
- * add spkg-check
- * install headers into $SAGE_LOCAL/eclib
- * delete $SAGE_LOCAL/include/cremona
- * chown $SAGE_LOCAL/include/eclib and files underneath
+* added Cygwin support
+* add spkg-check
+* install headers into $SAGE_LOCAL/eclib
+* delete $SAGE_LOCAL/include/cremona
+* chown $SAGE_LOCAL/include/eclib and files underneath
 
 eclib-20071231 (John Cremona):
- * renamed to eclib
- * allows elliptic curves as input with rational (as opposed to just integer) coefficients.
+* renamed to eclib
+* allows elliptic curves as input with rational (as opposed to just integer) coefficients.
 
 This spkg still needs fixes to `mwrank.pyx` [expect a patch shortly] and is related to #1058.
 
@@ -30,17 +40,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1649
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-01 00:00:16
+archive/issue_comments_010486.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-01T00:00:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10486",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-01 02:15:03
+archive/issue_comments_010487.json:
+```json
+{
+    "body": "I misunderstood John and the old interface no longer works. I had assumed that we needed to enhance the interface to take advantage of the new capabilities:\n\n```\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nsage/libs/mwrank/wrap.cc: In function \u2018char* two_descent_getbasis(two_descent*)\u2019:\nsage/libs/mwrank/wrap.cc:246: error: invalid initialization of reference of type \u2018const std::vector<Point, std::allocator<Point> >&\u2019 from expression of type \u2018std::vector<P2Point, std::allocator<P2Point> >\u2019\nsage/libs/mwrank/wrap.cc:159: error: in passing argument 1 of \u2018char* point_vector_to_str(const std::vector<Point, std::allocator<Point> >&)\u2019\nerror: command 'gcc' failed with exit status 1\n```\n\n\nI haven't investigated how much effort it will be to fix this, but since there are more pressing bugs to fix for me I will step back and hope that somebody else will fix this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-01T02:15:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10487",
+    "user": "mabshoff"
+}
+```
 
 I misunderstood John and the old interface no longer works. I had assumed that we needed to enhance the interface to take advantage of the new capabilities:
 
@@ -60,9 +96,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-04 12:02:48
+archive/issue_comments_010488.json:
+```json
+{
+    "body": "In http://groups.google.com/group/sage-devel/t/1b3e097ee29e7cf6 John has posted a link to an updated eclib.spkg at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20071231.p1.spkg\n\nTo quote:\n\n```\nThis version, which builds on mabshoff's eclib-20071231.p0.spkg,\nhandles the interface with NTL's ZZ_p class better (using a cached\nlist of ZZ_pContext's for those who know NTL) which should certailny\nbe a lot more efficient, and might even solve the problems people had\ntrying to compile this with gcc-4.3 (which I do not have).\n\nSince other parts of Sage use the ZZ_p class it might be worth using\nwhat I did here (in src/procs/gf.{h,cc}) elsewhere too.  I have a\nglobal object of type map<ZZ,ZZ_pContext> consisting of an in\ninitially empty list of pairs [p,c] where p is a prime and c is a\nZZ_pContext which stores the internal NTL data for working mod p.\nWhen I need to switch to a new modulus, instead of just calling\nZZ_p::init() each time (which was happening a lot of times for the\nsame p in programs such as mwrank), I look to see if that p has a\nsaved context and if so just restore it.  If not, is do ZZ_p::init and\nthen save the context.  So each prime only gets init'ed once.\n\nIt is possible that this will have solved other mysterious problems,\nsince the NTL documention (see http://www.shoup.net/ntl/doc/ZZ_p.txt)\nsays\n\n\"One should also not presume that things will work properly\nif the modulus is changed, but its value happens to be the same---\none should restore the same \"context\", from either a ZZ_pBak\nor a ZZ_pContext object.\"\n\nUp to now I *had* been making such a presumption.\n\nIt is still true that this spkg will not build correctly in Sage 2.9.1\n(or even 2.9.2) since there is a small change to the interface which\nrequires a similar small change to the wrapping code, but this has\nbeen put off at least until after the AMS meeting.  But it should\nbuild fine as a stand-alone package.\n\nJohn \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-04T12:02:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10488",
+    "user": "mabshoff"
+}
+```
 
 In http://groups.google.com/group/sage-devel/t/1b3e097ee29e7cf6 John has posted a link to an updated eclib.spkg at
 
@@ -114,16 +161,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 03:20:11
+archive/issue_comments_010489.json:
+```json
+{
+    "body": "This spkg should also fix #1650.",
+    "created_at": "2008-01-27T03:20:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10489",
+    "user": "mabshoff"
+}
+```
 
 This spkg should also fix #1650.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 18:55:55
+archive/issue_comments_010490.json:
+```json
+{
+    "body": "Note that an updated spkg by William is at #1650 that fixes the OSX build issue I introduced by fixing the Cygwin build :(\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-27T18:55:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10490",
+    "user": "mabshoff"
+}
+```
 
 Note that an updated spkg by William is at #1650 that fixes the OSX build issue I introduced by fixing the Cygwin build :(
 
@@ -132,34 +201,93 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_010491.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-27T19:16:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10491",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-01-27 19:17:17
+archive/issue_comments_010492.json:
+```json
+{
+    "body": "I wrote \"needs review\", but I've run the doctests and all pass, and Cremona and\nI just worked on this together, so it's had two eyes.",
+    "created_at": "2008-01-27T19:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10492",
+    "user": "was"
+}
+```
 
 I wrote "needs review", but I've run the doctests and all pass, and Cremona and
 I just worked on this together, so it's had two eyes.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 19:56:53
+archive/issue_comments_010493.json:
+```json
+{
+    "body": "Patch looks good to me. The spkg from #1650 was merged.",
+    "created_at": "2008-01-27T19:56:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10493",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. The spkg from #1650 was merged.
 
 
+
 ---
+
+archive/issue_comments_010494.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-27T20:09:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10494",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 20:16:01
+archive/issue_comments_010495.json:
+```json
+{
+    "body": "The second patch looks good to me, too. I am doing a `sage -ba` to make sure everything still compiles.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-27T20:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10495",
+    "user": "mabshoff"
+}
+```
 
 The second patch looks good to me, too. I am doing a `sage -ba` to make sure everything still compiles.
 
@@ -168,15 +296,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 20:20:33
+archive/issue_comments_010496.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc2",
+    "created_at": "2008-01-27T20:20:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10496",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 20:20:33
+archive/issue_comments_010497.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-27T20:20:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1649",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10497",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

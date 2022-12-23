@@ -1,11 +1,21 @@
 # Issue 1019: strange behavious in notebook with %octave
 
-Issue created by migration from https://trac.sagemath.org/ticket/1019
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-28 09:41:32
-
+archive/issues_001019.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThe following was reported by David Galant:\n\n```\nIn the notebook, starting a block with '%octave' does not produce a\nresult.\nThis has been consistent throughout all releases of sage 2.*\nThe behavior is consistent on MacOS and Ubuntu Linux.\nA sample session showing this is:\n \nsage: from math import *\nsage: sin(1)\n0.8414709848078965\nsage: gp.sin(1)\n0.8414709848078965066525023216\nsage: octave.sin(1)\n0.841471\nsage: %gp\nsage: sin(1)\n0.8414709848078965066525023216\nsage: %octave\nsage: sin(1)\n \nsage: 3+2\n5\nsage: quit\nExited sage process\n```\n\n\nSee\n\nIssue created by migration from https://trac.sagemath.org/ticket/1019\n\n",
+    "created_at": "2007-10-28T09:41:32Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "strange behavious in notebook with %octave",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1019",
+    "user": "mabshoff"
+}
+```
 Assignee: boothby
 
 The following was reported by David Galant:
@@ -39,10 +49,25 @@ Exited sage process
 
 See
 
+Issue created by migration from https://trac.sagemath.org/ticket/1019
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-15 22:31:51
+archive/issue_comments_006246.json:
+```json
+{
+    "body": "This is still an issue with 2.10.1 and when I now switch the Sage notebook at sagenb into octave mode it seems like only every second cell is evaluated.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-15T22:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6246",
+    "user": "mabshoff"
+}
+```
 
 This is still an issue with 2.10.1 and when I now switch the Sage notebook at sagenb into octave mode it seems like only every second cell is evaluated.
 
@@ -51,64 +76,165 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 22:31:51
+archive/issue_comments_006247.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2008-02-15T22:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6247",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by boothby created at 2008-03-05 07:14:28
+archive/issue_comments_006248.json:
+```json
+{
+    "body": "Changing assignee from boothby to was.",
+    "created_at": "2008-03-05T07:14:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6248",
+    "user": "boothby"
+}
+```
 
 Changing assignee from boothby to was.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-03 00:54:03
+archive/issue_comments_006249.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-09-03T00:54:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6249",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-03 00:54:03
+archive/issue_comments_006250.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-03T00:54:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6250",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_006251.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-22T09:19:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6251",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-22 09:21:38
+archive/issue_comments_006252.json:
+```json
+{
+    "body": "It turns out that this is caused by the chdir command (which is run before each cell is evaluated) screwing up the syncronization.\n\nThis can also be fixed by improving the Octave interface to have better error detection.",
+    "created_at": "2009-01-22T09:21:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6252",
+    "user": "mhansen"
+}
+```
 
 It turns out that this is caused by the chdir command (which is run before each cell is evaluated) screwing up the syncronization.
 
 This can also be fixed by improving the Octave interface to have better error detection.
 
 
+
 ---
 
-Comment by jason created at 2009-01-22 17:11:36
+archive/issue_comments_006253.json:
+```json
+{
+    "body": "This works for me.  Mike explained the patch and it sounds reasonable.  Positive Review.",
+    "created_at": "2009-01-22T17:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6253",
+    "user": "jason"
+}
+```
 
 This works for me.  Mike explained the patch and it sounds reasonable.  Positive Review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 08:03:19
+archive/issue_comments_006254.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1",
+    "created_at": "2009-01-23T08:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6254",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 08:03:19
+archive/issue_comments_006255.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T08:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1019",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6255",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

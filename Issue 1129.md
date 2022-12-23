@@ -1,11 +1,21 @@
 # Issue 1129: is_irreducible()
 
-Issue created by migration from https://trac.sagemath.org/ticket/1129
-
-Original creator: jvoight
-
-Original creation time: 2007-11-08 16:22:36
-
+archive/issues_001129.json:
+```json
+{
+    "body": "Assignee: was\n\nsage: F.<t> = NumberField(x^2-5)\nsage: Fx.<xF> = PolynomialRing(F)\nsage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])\nsage: f.is_irreducible()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jvoight/<ipython console> in <module>()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.is_irreducible()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.factor()\n\n/home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\nsage: %magma\n\n  --> Switching to Magma <--\n\n''\nmagma: F<t> := NumberField(Polynomial([-5,0,1]));\n\nmagma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));\n\n[\n<$.1 + 1, 1>,\n<$.1 + 1/2*(-t + 1), 2>,\n<$.1^2 + 1/2*(t - 5), 1>\n]\nmagma: quit\n\nIssue created by migration from https://trac.sagemath.org/ticket/1129\n\n",
+    "created_at": "2007-11-08T16:22:36Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "is_irreducible()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1129",
+    "user": "jvoight"
+}
+```
 Assignee: was
 
 sage: F.<t> = NumberField(x^2-5)
@@ -40,10 +50,25 @@ magma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));
 ]
 magma: quit
 
+Issue created by migration from https://trac.sagemath.org/ticket/1129
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2007-11-17 22:20:39
+archive/issue_comments_006825.json:
+```json
+{
+    "body": "I don't know whether this helps, but here it is:  the problem is clearly in factor(), not in is_irreducible().  Now the function factor() first creates the pari polynomial\n\n```\nMod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n```\n\nand then asks pari to factor it.\n\nBut this is what happens if I try that directly in pari:\n\n```\n? f=Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n%7 = Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n? factor(f)\n  *** factor: bug in GP (Segmentation Fault), please report\n```\n\n\nSo it seems to be an issue with pari, not with sage proper.",
+    "created_at": "2007-11-17T22:20:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6825",
+    "user": "AlexGhitza"
+}
+```
 
 I don't know whether this helps, but here it is:  the problem is clearly in factor(), not in is_irreducible().  Now the function factor() first creates the pari polynomial
 
@@ -66,9 +91,20 @@ But this is what happens if I try that directly in pari:
 So it seems to be an issue with pari, not with sage proper.
 
 
+
 ---
 
-Comment by craigcitro created at 2007-12-01 23:30:15
+archive/issue_comments_006826.json:
+```json
+{
+    "body": "Added a fix for this bug. This code called into the pari library function factor0, which was then calling off to factornf. The error coming from factornf is still boggling to me (see note below), but reading the documentation, it mentions that nffactor is in general faster anyway. So I switched the code to use nffactor; this required one small modification elsewhere in the NumberField code. Specifically, F.pari_polynomial would always return a polynomial in \"x\", but we needed it to be in a different variable (because of Pari's notion of \"priority\" of variables, basically). So I added an optional argument to that function, switched the factor for polynomials over a NumberField to call into nffactor, and now everything seems to work. \n\nNote: the Pari error can be reproduced in gp as follows:\n\n\n```\n? f=Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n%1 = Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n? factor(f)\n  *** factornf: reducible modulus in factornf.\n? factornf(f, a^2-5)\n  *** factornf: reducible modulus in factornf.\n```\n\n\nThe documentation for factornf says that it uses \"Trager's trick\" to do factorization over a number field. I think this is just a bug in Pari, which I'm happy to report, as long as someone confirms for me that I'm not doing something stupid (i.e. not knowing how to use Pari correctly).",
+    "created_at": "2007-12-01T23:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6826",
+    "user": "craigcitro"
+}
+```
 
 Added a fix for this bug. This code called into the pari library function factor0, which was then calling off to factornf. The error coming from factornf is still boggling to me (see note below), but reading the documentation, it mentions that nffactor is in general faster anyway. So I switched the code to use nffactor; this required one small modification elsewhere in the NumberField code. Specifically, F.pari_polynomial would always return a polynomial in "x", but we needed it to be in a different variable (because of Pari's notion of "priority" of variables, basically). So I added an optional argument to that function, switched the factor for polynomials over a NumberField to call into nffactor, and now everything seems to work. 
 
@@ -88,23 +124,56 @@ Note: the Pari error can be reproduced in gp as follows:
 The documentation for factornf says that it uses "Trager's trick" to do factorization over a number field. I think this is just a bug in Pari, which I'm happy to report, as long as someone confirms for me that I'm not doing something stupid (i.e. not knowing how to use Pari correctly).
 
 
+
 ---
 
-Comment by craigcitro created at 2007-12-01 23:30:15
+archive/issue_comments_006827.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-01T23:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6827",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by craigcitro created at 2007-12-01 23:30:15
+archive/issue_comments_006828.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2007-12-01T23:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6828",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-02 00:28:37
+archive/issue_comments_006829.json:
+```json
+{
+    "body": "My results for that gp session don't quite match yours:\n\n```\nparisize = 4000000, primelimit = 500000\n? f=Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n%1 = Mod(1, a^2 - 5)*x^5 + Mod(-a + 2, a^2 - 5)*x^4 + Mod(-a, a^2 - 5)*x^3 + Mod(3*a - 6, a^2 - 5)*x^2 + Mod(5*a - 10, a^2 - 5)*x + Mod(2*a - 5, a^2 - 5)\n? factor(f)\n  *** factor: bug in GP (Segmentation Fault), please report\n```\n\nThis is with 32-bit x86 Debian testing; I get the same results from \"sage -gp\" and from \"/usr/bin/gp\" (from the Debian pari-gp package, version 2.3.2-1).",
+    "created_at": "2007-12-02T00:28:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6829",
+    "user": "cwitty"
+}
+```
 
 My results for that gp session don't quite match yours:
 
@@ -119,16 +188,38 @@ parisize = 4000000, primelimit = 500000
 This is with 32-bit x86 Debian testing; I get the same results from "sage -gp" and from "/usr/bin/gp" (from the Debian pari-gp package, version 2.3.2-1).
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-02 02:57:49
+archive/issue_comments_006830.json:
+```json
+{
+    "body": "I don't know much about the factornf vs. nffactor, but it seems to work for me.",
+    "created_at": "2007-12-02T02:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6830",
+    "user": "robertwb"
+}
+```
 
 I don't know much about the factornf vs. nffactor, but it seems to work for me.
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-02 08:49:18
+archive/issue_comments_006831.json:
+```json
+{
+    "body": "I'm now getting\n\n\n```\nsage:             sage: x = polygen(QQ, 'x')\nsage:             sage: f = x^6 + 10/7*x^5 - 867/49*x^4 - 76/245*x^3 + 3148/35*x^2 - 25944/245*x + 48771/1225\nsage:             sage: K.<a> = NumberField(f)\nsage:             sage: S.<T> = K[]\nsage:             sage: ff = S(f); ff\nT^6 + 10/7*T^5 + (-867/49)*T^4 + (-76/245)*T^3 + 3148/35*T^2 + (-25944/245)*T + 48771/1225\nsage: ff.factor()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"polynomial_element.pyx\", line 1637, in sage.rings.polynomial.polynomial_element.Polynomial.factor\n  File \"gen.pyx\", line 6474, in sage.libs.pari.gen._pari_trap\n<class 'sage.libs.pari.gen.PariError'>:  (8)\n```\n",
+    "created_at": "2007-12-02T08:49:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6831",
+    "user": "robertwb"
+}
+```
 
 I'm now getting
 
@@ -151,53 +242,145 @@ Traceback (most recent call last):
 
 
 
+
 ---
+
+archive/issue_comments_006832.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-02T10:11:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6832",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2007-12-02 10:13:35
+archive/issue_comments_006833.json:
+```json
+{
+    "body": "Fixed this patch up a bit. First, at cwitty's suggestion, rewrote it so that it avoids calling nfinit simply for a change in variable names. Also, wrote some (mildly unwieldy) code to deal with cases like factoring x^2-1/3 over a number field generated by x^2-1/4 -- this is particularly troublesome, since Pari only likes to work with integral polynomials. It all seems to work now, though I make no promises about the speed in the non-integral case. If someone notices it being particularly slow in this case, make a trac ticket and we'll start looking into it.",
+    "created_at": "2007-12-02T10:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6833",
+    "user": "craigcitro"
+}
+```
 
 Fixed this patch up a bit. First, at cwitty's suggestion, rewrote it so that it avoids calling nfinit simply for a change in variable names. Also, wrote some (mildly unwieldy) code to deal with cases like factoring x^2-1/3 over a number field generated by x^2-1/4 -- this is particularly troublesome, since Pari only likes to work with integral polynomials. It all seems to work now, though I make no promises about the speed in the non-integral case. If someone notices it being particularly slow in this case, make a trac ticket and we'll start looking into it.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-02 17:54:53
+archive/issue_comments_006834.json:
+```json
+{
+    "body": "Mostly I like the patch.  I do have one question, though: you use the slow path if self.denominator() != 1.  Is that actually required?  (If so, why?)",
+    "created_at": "2007-12-02T17:54:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6834",
+    "user": "cwitty"
+}
+```
 
 Mostly I like the patch.  I do have one question, though: you use the slow path if self.denominator() != 1.  Is that actually required?  (If so, why?)
 
 
+
 ---
+
+archive/issue_comments_006835.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-02T19:07:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6835",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2007-12-02 19:10:23
+archive/issue_comments_006836.json:
+```json
+{
+    "body": "Added a patch (that applies after trac_1129.hg) that touches up something suggested by cwitty; namely, if the number field is defined by an integral polynomial, there's no reason to do anything complicated with Pari, even if the polynomial we want to factor is non-integral.",
+    "created_at": "2007-12-02T19:10:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6836",
+    "user": "craigcitro"
+}
+```
 
 Added a patch (that applies after trac_1129.hg) that touches up something suggested by cwitty; namely, if the number field is defined by an integral polynomial, there's no reason to do anything complicated with Pari, even if the polynomial we want to factor is non-integral.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-02 19:29:04
+archive/issue_comments_006837.json:
+```json
+{
+    "body": "I like the new version.  Doctests pass in sage/rings.  (Apply trac_1129.hg, then 1129_2.patch)",
+    "created_at": "2007-12-02T19:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6837",
+    "user": "cwitty"
+}
+```
 
 I like the new version.  Doctests pass in sage/rings.  (Apply trac_1129.hg, then 1129_2.patch)
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-02 20:19:26
+archive/issue_comments_006838.json:
+```json
+{
+    "body": "Merged in 2.8.15.rc0.",
+    "created_at": "2007-12-02T20:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6838",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-02 20:19:26
+archive/issue_comments_006839.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-02T20:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6839",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 885: 2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)
 
-Issue created by migration from https://trac.sagemath.org/ticket/885
-
-Original creator: cwitty
-
-Original creation time: 2007-10-13 20:23:36
-
+archive/issues_000885.json:
+```json
+{
+    "body": "Assignee: failure\n\nOn sage.math:\n\n```\nFile \"morphism.pyx\", line 312:\n    sage: c == loads(dumps(c))\nExpected:\n    True\nGot:\n    False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/885\n\n",
+    "created_at": "2007-10-13T20:23:36Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/885",
+    "user": "cwitty"
+}
+```
 Assignee: failure
 
 On sage.math:
@@ -20,16 +30,44 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/885
+
+
+
+
 
 ---
+
+archive/issue_comments_005470.json:
+```json
+{
+    "body": "Attachment\n\nChanged class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).",
+    "created_at": "2007-10-13T22:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5470",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 Changed class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).
 
 
+
 ---
 
-Comment by was created at 2007-10-14 22:56:00
+archive/issue_comments_005471.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-14T22:56:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5471",
+    "user": "was"
+}
+```
 
 Resolution: fixed

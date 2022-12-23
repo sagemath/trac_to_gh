@@ -1,35 +1,99 @@
 # Issue 1564: 3d graphics -- misc improvements
 
-Issue created by migration from https://trac.sagemath.org/ticket/1564
-
-Original creator: was
-
-Original creation time: 2007-12-19 06:33:38
-
+archive/issues_001564.json:
+```json
+{
+    "body": "Assignee: was\n\nI will post patches here, mainly for Robert Bradshaw. These shouldn't be applied\nyet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1564\n\n",
+    "created_at": "2007-12-19T06:33:38Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "3d graphics -- misc improvements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1564",
+    "user": "was"
+}
+```
 Assignee: was
 
 I will post patches here, mainly for Robert Bradshaw. These shouldn't be applied
 yet. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1564
+
+
+
+
 
 ---
+
+archive/issue_comments_009954.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-19T06:34:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9954",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_009955.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-19T08:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9955",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_009956.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-22T22:10:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9956",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2007-12-23 02:58:04
+archive/issue_comments_009957.json:
+```json
+{
+    "body": "http://sagemath.org/packages/optional/jmol-11.2.14.p1.spkg\n\nincluded and `3d-dec22.hg` merged.\n\n`from sage.plot.plot3d.all     import *`\nhas been removed.",
+    "created_at": "2007-12-23T02:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9957",
+    "user": "rlm"
+}
+```
 
 http://sagemath.org/packages/optional/jmol-11.2.14.p1.spkg
 
@@ -39,8 +103,19 @@ included and `3d-dec22.hg` merged.
 has been removed.
 
 
+
 ---
 
-Comment by rlm created at 2007-12-23 02:58:04
+archive/issue_comments_009958.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-23T02:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1564",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9958",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

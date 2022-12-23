@@ -1,11 +1,21 @@
 # Issue 1531: Sage 2.9.rc2: doctest failure sage/calculus/calculus.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/1531
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-16 02:08:14
-
+archive/issues_001531.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nFile \"calculus.py\", line 6144:\n    sage: maxima(f(sqrt(2), theta+3))\nExpected:\n    'Gamma(theta+3,sqrt(2))\nGot:\n    'Gamma(sqrt(2),theta+3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1531\n\n",
+    "created_at": "2007-12-16T02:08:14Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 2.9.rc2: doctest failure sage/calculus/calculus.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1531",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -19,10 +29,25 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1531
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-16 02:08:53
+archive/issue_comments_009779.json:
+```json
+{
+    "body": "\n```\n[02:58] <wstein|packing> 'Gamma(sqrt(2),theta+3) is right and 'Gamma(theta+3,sqrt(2)) is wrong!\n[02:58] <wstein|packing> so change the doctest :-0\n```\n",
+    "created_at": "2007-12-16T02:08:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1531",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1531#issuecomment-9779",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -32,22 +57,55 @@ Comment by mabshoff created at 2007-12-16 02:08:53
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 02:09:07
+archive/issue_comments_009780.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-16T02:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1531",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1531#issuecomment-9780",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 03:03:23
+archive/issue_comments_009781.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T03:03:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1531",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1531#issuecomment-9781",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 03:03:23
+archive/issue_comments_009782.json:
+```json
+{
+    "body": "Merged in 2.9.rc3.",
+    "created_at": "2007-12-16T03:03:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1531",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1531#issuecomment-9782",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc3.

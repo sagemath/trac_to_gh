@@ -1,11 +1,21 @@
 # Issue 718: still rechable memory: various pyx-files instanciated their own PariInstance
 
-Issue created by migration from https://trac.sagemath.org/ticket/718
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-20 20:34:20
-
+archive/issues_000718.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nDoing a startup + quit with Sage 2.8.4.2 leads to five of the following:\n\n```\n==8222== 524,288 bytes in 1 blocks are still reachable in loss record 1,983 of 1,998\n==8222==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==8222==    by 0xA6F983A: gpmalloc (in /tmp/Work-mabshoff/sage-2.8.4.3.pre-vg/local/lib/libpari-gmp.so.2)\n==8222==    by 0xA6FA8DE: pari_init_opts (in /tmp/Work-mabshoff/sage-2.8.4.3.pre-vg/local/lib/libpari-gmp.so.2)\n==8222==    by 0xAA74864: __pyx_f_3gen_12PariInstance___init__ (gen.c:20649)\n==8222==    by 0x459220: type_call (typeobject.c:436)\n==8222==    by 0x415522: PyObject_Call (abstract.c:1860)\n==8222==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==8222==    by 0xAA76BFE: initgen (gen.c:27873)\n==8222==    by 0x49E54D: _PyImport_LoadDynamicModule (importdl.c:53)\n==8222==    by 0x49C45D: import_submodule (import.c:2394)\n==8222==    by 0x49C920: load_next (import.c:2214)\n==8222==    by 0x49CB7D: import_module_level (import.c:2002)\n```\n\nWe should only instantiate one pari instance, so the following culprits ought to import the global pari instance:\n\n```\nrings/real_mpfr.pyx:        cdef PariInstance P\nrings/real_double.pyx:        cdef sage.libs.pari.gen.PariInstance P = sage.libs.pari.gen.pari\nrings/complex_double.pyx:        cdef sage.libs.pari.gen.PariInstance P = sage.libs.pari.gen.pari\nrings/complex_double.pyx:        cdef sage.libs.pari.gen.PariInstance P\nrings/complex_double.pyx:        cdef sage.libs.pari.gen.PariInstance P\n```\n\nThis saves about 2.5 MB of memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/718\n\n",
+    "created_at": "2007-09-20T20:34:20Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "still rechable memory: various pyx-files instanciated their own PariInstance",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/718",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Doing a startup + quit with Sage 2.8.4.2 leads to five of the following:
@@ -42,10 +52,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/718
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-01 03:28:51
+archive/issue_comments_004182.json:
+```json
+{
+    "body": "Well, as it turned out the pari only instantiates its stack ones. The problem is caused by some reference not being freed, so it is very likely a Cython issue.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-01T03:28:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/718#issuecomment-4182",
+    "user": "mabshoff"
+}
+```
 
 Well, as it turned out the pari only instantiates its stack ones. The problem is caused by some reference not being freed, so it is very likely a Cython issue.
 
@@ -54,16 +79,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-18 13:32:40
+archive/issue_comments_004183.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-18T13:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/718#issuecomment-4183",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 01:20:02
+archive/issue_comments_004184.json:
+```json
+{
+    "body": "This is no longer a problem in Sage 3.1.1, so close it as fixed. Who fixed it we will never know :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T01:20:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/718#issuecomment-4184",
+    "user": "mabshoff"
+}
+```
 
 This is no longer a problem in Sage 3.1.1, so close it as fixed. Who fixed it we will never know :)
 
@@ -72,8 +119,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 01:20:02
+archive/issue_comments_004185.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-27T01:20:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/718#issuecomment-4185",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

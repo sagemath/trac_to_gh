@@ -1,11 +1,21 @@
 # Issue 1404: [with patch] bug in %latex feature in the notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/1404
-
-Original creator: was
-
-Original creation time: 2007-12-05 18:13:06
-
+archive/issues_001404.json:
+```json
+{
+    "body": "Assignee: boothby\n\nFrom F Clark:\n\n\n```\nA problem with latex processing in a notebook (otherwise a brilliant\nfeature):\n\n\nEvaluating the input cell:\n\n%latex\n\n$y=\\sin x$\n\n% end of input\n\ntries to process the TeX file:\n\n\\documentclass{article}\\usepackage{fullpage}\\usepackage{amsmath}\n\\usepackage{amssymb}\n\\usepackage{amsfonts}\\usepackage{graphicx}\\usepackage{pstricks}\n\\pagestyle{empty}\n\\begin{document}\n\n$y=\\sin x$\n\n% end of input\\end{document}\n\nbut pdfTeX fails, because the \\end{document} gets commented out.  The\nreason is that  '\\\\end{document}' is tagged on to the end of the input\ntext rather than '\\n\\\\end{document}'.\n\nThe following would seem to solve the problem:\n\ndiff -r 7110a20969c8 sage/misc/latex.py\n--- a/sage/misc/latex.py        Mon Dec 03 22:27:57 2007 -0800\n+++ b/sage/misc/latex.py        Tue Dec 04 22:11:15 2007 +0000\n@@ -203,7 +203,7 @@ class Latex:\n        if self.__slide:\n            O.write('\\n\\n\\\\end{document}')\n        else:\n-            O.write('\\\\end{document}\\n')\n+            O.write('\\n\\\\end{document}\\n')\n\n        O.close()\n        if not debug:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1404\n\n",
+    "created_at": "2007-12-05T18:13:06Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] bug in %latex feature in the notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1404",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 From F Clark:
@@ -57,10 +67,25 @@ diff -r 7110a20969c8 sage/misc/latex.py
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1404
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-05 19:20:32
+archive/issue_comments_009064.json:
+```json
+{
+    "body": "Hmm, since now both branches of the if case are identical except the additional newline couldn't we make collapse the if statement?\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-05T19:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9064",
+    "user": "mabshoff"
+}
+```
 
 Hmm, since now both branches of the if case are identical except the additional newline couldn't we make collapse the if statement?
 
@@ -69,20 +94,55 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_009065.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-15T13:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9065",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 13:27:47
+archive/issue_comments_009066.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T13:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9066",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 13:27:47
+archive/issue_comments_009067.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T13:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9067",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.

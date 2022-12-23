@@ -1,11 +1,21 @@
 # Issue 1554: calculus -- issues with calling symbolic expressions
 
-Issue created by migration from https://trac.sagemath.org/ticket/1554
-
-Original creator: was
-
-Original creation time: 2007-12-17 16:41:42
-
+archive/issues_001554.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Dec 17, 2007 5:32 AM, Joel B. Mohler <joel@kiwistrawberry.us> wrote:\n> \n> Hi,\n> \n> I don't think that the trac 1460 is really fixed.  The bug just got moved\n> around.\n> http://trac.sagemath.org/sage_trac/ticket/1460\n> \n> # sage 2.9\n> sage: t=var('t')\n> sage: f=t*sin(0)\n> sage: float(f(1))\n> # goes boom for a different reason than in 2.8.15\n\nThis is *not* a bug.  The is by design.  Since f has no variables it is no longer\nimplicitly callable:\n\nsage: f.variables()\n()\nsage: f(1)\n.ValueError: the number of arguments must be less than or equal to 0\n\nYou will have to instead write:\nsage: f(t) = t*sin(0)\nsage: f(1)\n0\n\nor use \n\nsage: f=t*sin(0)\nsage: f(t=0)\n0\n\nThis change was introduced because people often do the following\nby accident:\n\nsage: a = (sqrt(2) + 17)(x+2)\nsage: a\nsqrt(2) + 17\n\nOf course, that the above doesn't give an error even in 2.9 is a\nbug!   At least in most cases it works:\n\nsage: (SR(2) + 3)(x)\n<type 'exceptions.ValueError'>: the number of arguments must be less than or equal to 0\n\nAlso, this is a bug:\n\nsage: a = (I*17+3*5)(x+2)\nAttributeError: 'I_class' object has no attribute 'number_of_arguments'\n\n\nI want to emphasize that allowing\n\nsage: a = (sqrt(2) + 17)(x+2)\n\nand having it return sqrt(2) + 17 is *very* confusing to\na lot of people.  I witnessed this time after time after time\nwhen teaching a high school workshop using Sage this\nsummer -- it was really striking how often this happened.\n\n\n> \n> It seems the originally submitted patch by was has a doc-test testing this very\n> thing, but the actual code in my newly upgraded 2.9 just has a bunch of\n> doc-strings that look like:\n> \"\"\"\n> EXAMPLES:\n> \"\"\"\n> with no examples!\n> \n> I'm not sure what went on beyond that.\n> \n> --\n> Joel\n> \n> --~--~---------~--~----~------------~-------~--~----~\n> To post to this group, send email to sage-devel@googlegroups.com\n> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/sage-devel\n> URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/\n> -~----------~----~----~----~------~----~------~--~---\n> \n> \n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1554\n\n",
+    "created_at": "2007-12-17T16:41:42Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "calculus -- issues with calling symbolic expressions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1554",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -108,49 +118,132 @@ http://wstein.org
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1554
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-01-27 02:07:45
+archive/issue_comments_009909.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-27T02:07:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9909",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-27 02:07:45
+archive/issue_comments_009910.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-01-27T02:07:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9910",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
+
+archive/issue_comments_009911.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-27T20:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9911",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-27 20:13:06
+archive/issue_comments_009912.json:
+```json
+{
+    "body": "This was fixed as a (intended) side-effect of another patch.  The patch posted here adds doctests to cover the cases mentioned in this patch.",
+    "created_at": "2008-01-27T20:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9912",
+    "user": "mhansen"
+}
+```
 
 This was fixed as a (intended) side-effect of another patch.  The patch posted here adds doctests to cover the cases mentioned in this patch.
 
 
+
 ---
 
-Comment by was created at 2008-01-27 20:28:48
+archive/issue_comments_009913.json:
+```json
+{
+    "body": "I give this a positive review.",
+    "created_at": "2008-01-27T20:28:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9913",
+    "user": "was"
+}
+```
 
 I give this a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 12:36:13
+archive/issue_comments_009914.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-29T12:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9914",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 12:36:13
+archive/issue_comments_009915.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc3",
+    "created_at": "2008-01-29T12:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1554",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1554#issuecomment-9915",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc3

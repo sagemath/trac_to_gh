@@ -1,11 +1,21 @@
 # Issue 1741: [with spkg] Build zlib with debug info
 
-Issue created by migration from https://trac.sagemath.org/ticket/1741
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-10 05:54:59
-
+archive/issues_001741.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nI have been looking for various problems in zlib that valgrind exposed. Since we do not build with debug info I need to rebuild zlib manually, so fix this in the spkg. An updated spkg with this trivial fix is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha1/zlib-1.2.3.p3.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1741\n\n",
+    "created_at": "2008-01-10T05:54:59Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg] Build zlib with debug info",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1741",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 I have been looking for various problems in zlib that valgrind exposed. Since we do not build with debug info I need to rebuild zlib manually, so fix this in the spkg. An updated spkg with this trivial fix is at 
@@ -16,16 +26,42 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1741
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-10 06:28:06
+archive/issue_comments_011007.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha1.",
+    "created_at": "2008-01-10T06:28:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1741#issuecomment-11007",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha1.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-10 06:28:06
+archive/issue_comments_011008.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-10T06:28:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1741#issuecomment-11008",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

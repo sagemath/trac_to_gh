@@ -1,44 +1,117 @@
 # Issue 754: get SAGE to build on DSL
 
-Issue created by migration from https://trac.sagemath.org/ticket/754
-
-Original creator: mhansen
-
-Original creation time: 2007-09-25 22:46:40
-
+archive/issues_000754.json:
+```json
+{
+    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/754\n\n",
+    "created_at": "2007-09-25T22:46:40Z",
+    "labels": [
+        "distribution",
+        "minor",
+        "enhancement"
+    ],
+    "title": "get SAGE to build on DSL",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/754",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/754
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-09-25 23:41:37
+archive/issue_comments_004461.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-25T23:41:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4461",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_004462.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-25T23:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4462",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_004463.json:
+```json
+{
+    "body": "Attachment\n\nclisp build error fixed by installing GNU sed instead of the BusyBox version.",
+    "created_at": "2007-09-25T23:56:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4463",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 clisp build error fixed by installing GNU sed instead of the BusyBox version.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-14 09:48:07
+archive/issue_comments_004464.json:
+```json
+{
+    "body": "I'm going to mark this invalid as I don't have the need/desire to get it running on DSL.  If someone really wants this, they can open up a new ticket or reopen this one.",
+    "created_at": "2008-11-14T09:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4464",
+    "user": "mhansen"
+}
+```
 
 I'm going to mark this invalid as I don't have the need/desire to get it running on DSL.  If someone really wants this, they can open up a new ticket or reopen this one.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-14 09:48:07
+archive/issue_comments_004465.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-11-14T09:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4465",
+    "user": "mhansen"
+}
+```
 
 Resolution: wontfix

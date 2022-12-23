@@ -1,11 +1,21 @@
 # Issue 1429: spelling error in tutorial
 
-Issue created by migration from https://trac.sagemath.org/ticket/1429
-
-Original creator: was
-
-Original creation time: 2007-12-08 22:16:01
-
+archive/issues_001429.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\n> Your tutorial is very well written!\n\nThanks. \n\n> One small thing is that \"axes\" was misspelled as \"ases\" at the top of page\n> 32.\n\nThanks!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1429\n\n",
+    "created_at": "2007-12-08T22:16:01Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "spelling error in tutorial",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1429",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -21,8 +31,25 @@ Thanks!
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1429
+
+
+
+
 
 ---
+
+archive/issue_comments_009209.json:
+```json
+{
+    "body": "Attachment\n\nHmmm... the attached bundle is for the documentation repository, but it looks like the hg trac plugin is barfing maybe because it's trying to diff against the wrong repository.\n\nPlease let me know if I've screwed up the bundle somehow. thanks.",
+    "created_at": "2007-12-27T19:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1429",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1429#issuecomment-9209",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
@@ -31,24 +58,57 @@ Hmmm... the attached bundle is for the documentation repository, but it looks li
 Please let me know if I've screwed up the bundle somehow. thanks.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-12-28 01:14:24
+archive/issue_comments_009210.json:
+```json
+{
+    "body": "looks like david joyner has already fixed this\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/89313eebbcc37bf2",
+    "created_at": "2007-12-28T01:14:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1429",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1429#issuecomment-9210",
+    "user": "dmharvey"
+}
+```
 
 looks like david joyner has already fixed this
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/89313eebbcc37bf2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 18:47:58
+archive/issue_comments_009211.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-13T18:47:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1429",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1429#issuecomment-9211",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-13 18:47:58
+archive/issue_comments_009212.json:
+```json
+{
+    "body": "This has been fixed by David Joyner as David Harvey suggested.",
+    "created_at": "2008-01-13T18:47:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1429",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1429#issuecomment-9212",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by David Joyner as David Harvey suggested.

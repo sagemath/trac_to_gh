@@ -1,11 +1,21 @@
 # Issue 1151: Bug in creating elements in multivariate quotient rings that cannot be coerced to singular
 
-Issue created by migration from https://trac.sagemath.org/ticket/1151
-
-Original creator: roed
-
-Original creation time: 2007-11-12 00:16:56
-
+archive/issues_001151.json:
+```json
+{
+    "body": "Assignee: was\n\nA.<x> = QQ[]\nGauss.<i> = A.quotient(x^2+1)\nR.<c,d,X1,Y1,X2,Y2,Z1,Z2> = Gauss[]\nS = R.quotient([(X1<sup>2+Y1</sup>2)*Z1<sup>2-c</sup>2*(Z1<sup>4+d*X1</sup>2*Y1^2),\n                    (X2<sup>2+Y2</sup>2)*Z2<sup>2-c</sup>2*(Z2<sup>4+d*X2</sup>2*Y2^2)])\nS(1)\n\nProduces the traceback:\nsage: S(1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/users/spaces/zimmerma/try/<ipython console> in <module>()\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.py in __call__(self, x, coerce)\n   257             R = self.cover_ring()\n   258             x = R(x)\n--> 259         return quotient_ring_element.QuotientRingElement(self, x)\n   260\n   261     def _coerce_impl(self, x):\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring_element.py in __init__(self, parent, rep, reduce)\n    70         self.__rep = rep\n    71         if reduce:\n---> 72             self._reduce_()\n    73\n    74     def _reduce_(self):\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring_element.py in _reduce_(self)\n    74     def _reduce_(self):\n    75         I = self.parent().defining_ideal()\n---> 76         self.__rep = I.reduce(self.__rep)\n    77\n    78     def copy(self):\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in reduce(self, f)\n   805\n   806         try:\n--> 807             singular = self._singular_groebner_basis().parent()\n   808         except (AttributeError, RuntimeError):\n   809             singular = self._singular_groebner_basis().parent()\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in _singular_groebner_basis(self)\n   623             S = self.__singular_groebner_basis\n   624         except AttributeError:\n--> 625             G = self.groebner_basis()\n   626             try:\n   627                 return self.__singular_groebner_basis\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in groebner_basis(self, algorithm)\n  1348                 return self._macaulay2_groebner_basis()\n  1349             else:\n-> 1350                 return self._groebner_basis_using_singular(\"groebner\")\n  1351         elif algorithm.startswith('singular:'):\n  1352             return self._groebner_basis_using_singular(algorithm[9:])\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in _groebner_basis_using_singular(self, algorithm)\n   565         except AttributeError:\n   566             if algorithm==\"groebner\":\n--> 567                 S = self._singular_().groebner()\n   568             elif algorithm==\"std\":\n   569                 S = self._singular_().std()\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in _singular_(self, singular)\n   214         if singular is None: singular = singular_default\n   215         try:\n--> 216             self.ring()._singular_(singular).set_ring()\n   217             I = self.__singular\n   218             if not (I.parent() is singular):\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_(self, singular, force)\n   169             return R\n   170         except (AttributeError, ValueError):\n--> 171             return self._singular_init_(singular, force)\n   172\n   173     def _singular_init_(self, singular=singular_default, force=False):\n\n/local/spaces/logiciels/sage-2.8.10/p4/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in _singular_init_(self, singular, force)\n   176         \"\"\"\n   177         if not self._can_convert_to_singular() and not force:\n--> 178             raise TypeError, \"no conversion of this ring to a Singular ring defined\"\n   179\n   180         if self.ngens()==1:\n\n<type 'exceptions.TypeError'>: no conversion of this ring to a Singular ring defined\n\nThe problem is that QQ[x]/(x^2+1) cannot be a base ring in singular, and when we try to reduce (in creating an element), we can't compute a Grobner basis.\n\nWe need to handle multivariable quotients better over general rings.  One solution would be to write a naive groebner basis implementation that works over an arbitrary ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1151\n\n",
+    "created_at": "2007-11-12T00:16:56Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "Bug in creating elements in multivariate quotient rings that cannot be coerced to singular",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1151",
+    "user": "roed"
+}
+```
 Assignee: was
 
 A.<x> = QQ[]
@@ -98,24 +108,61 @@ The problem is that QQ[x]/(x^2+1) cannot be a base ring in singular, and when we
 
 We need to handle multivariable quotients better over general rings.  One solution would be to write a naive groebner basis implementation that works over an arbitrary ring.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1151
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-01-24 08:59:45
+archive/issue_comments_007022.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to commutative algebra.",
+    "created_at": "2008-01-24T08:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7022",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebraic geometry to commutative algebra.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-01-24 08:59:45
+archive/issue_comments_007023.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2008-01-24T08:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7023",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2008-01-24 11:24:13
+archive/issue_comments_007024.json:
+```json
+{
+    "body": "I've got a possibly very stupid question first. Isn't \n\n\n```\nsage: A.<x> = QQ[]\nsage: Gauss.<i> = A.quotient(x^2+1)\n```\n\n\nequivalent to:\n\n\n```\nsage: A.<x> = QQ[]\nsage: Gauss.<i> = NumberField(x^2+1)\n```\n\n\n? If so, then the base field can be coerced to Singular:\n\n\n```\nsage: R.<c,d,X1,Y1,X2,Y2,Z1,Z2> = Gauss[]\nsage: S = R.quotient([(X1^2+Y1^2)*Z1^2-c^2*(Z1^4+d*X1^2*Y1^2),\n....:                     (X2^2+Y2^2)*Z2^2-c^2*(Z2^4+d*X2^2*Y2^2)])\nsage: S(1)\n1\n```\n\n\nThe behaviour described above would still be a bug but a different one.\n\nBesides that detail, I have a 100% generic Gr\u00f6bner basis implementation in pure Python (very very slow) that -- once integrated -- will resolve this bug for any base field (and ZZ).",
+    "created_at": "2008-01-24T11:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7024",
+    "user": "malb"
+}
+```
 
 I've got a possibly very stupid question first. Isn't 
 
@@ -152,38 +199,95 @@ The behaviour described above would still be a bug but a different one.
 Besides that detail, I have a 100% generic Gröbner basis implementation in pure Python (very very slow) that -- once integrated -- will resolve this bug for any base field (and ZZ).
 
 
+
 ---
 
-Comment by malb created at 2008-01-24 11:24:13
+archive/issue_comments_007025.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-24T11:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7025",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2008-01-24 16:21:34
+archive/issue_comments_007026.json:
+```json
+{
+    "body": "malb -- A number field is a totally different sort of object in Sage than\n`A.quotient(x^2 + 1)`.   It happens that the two are  abstractly isomorphic, though, so whatever coercion you're thinking about can probably be made to work.",
+    "created_at": "2008-01-24T16:21:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7026",
+    "user": "was"
+}
+```
 
 malb -- A number field is a totally different sort of object in Sage than
 `A.quotient(x^2 + 1)`.   It happens that the two are  abstractly isomorphic, though, so whatever coercion you're thinking about can probably be made to work.
 
 
+
 ---
+
+archive/issue_comments_007027.json:
+```json
+{
+    "body": "Attachment\n\nafter #2111 has been merged, this patch fixes the issue of this ticket",
+    "created_at": "2008-02-08T12:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7027",
+    "user": "malb"
+}
+```
 
 Attachment
 
 after #2111 has been merged, this patch fixes the issue of this ticket
 
 
+
 ---
 
-Comment by malb created at 2008-02-18 15:18:38
+archive/issue_comments_007028.json:
+```json
+{
+    "body": "I claim that this issue was resolved in Sage 2.10.2.alpha0.",
+    "created_at": "2008-02-18T15:18:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7028",
+    "user": "malb"
+}
+```
 
 I claim that this issue was resolved in Sage 2.10.2.alpha0.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-18 15:27:08
+archive/issue_comments_007029.json:
+```json
+{
+    "body": "When I apply trac_1151.patch the above example works, so if somebody gives it a positive review I will merge it.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-18T15:27:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7029",
+    "user": "mabshoff"
+}
+```
 
 When I apply trac_1151.patch the above example works, so if somebody gives it a positive review I will merge it.
 
@@ -192,31 +296,75 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-02-27 13:03:02
+archive/issue_comments_007030.json:
+```json
+{
+    "body": "patch still applies to 2.10.2 and make test passes.",
+    "created_at": "2008-02-27T13:03:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7030",
+    "user": "malb"
+}
+```
 
 patch still applies to 2.10.2 and make test passes.
 
 
+
 ---
 
-Comment by burcin created at 2008-02-27 13:40:48
+archive/issue_comments_007031.json:
+```json
+{
+    "body": "The patch looks good to me.\n\nMaybe we should add the original example as a test somewhere, but where?",
+    "created_at": "2008-02-27T13:40:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7031",
+    "user": "burcin"
+}
+```
 
 The patch looks good to me.
 
 Maybe we should add the original example as a test somewhere, but where?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-27 23:20:14
+archive/issue_comments_007032.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc0",
+    "created_at": "2008-02-27T23:20:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7032",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-27 23:20:14
+archive/issue_comments_007033.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-27T23:20:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1151",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1151#issuecomment-7033",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

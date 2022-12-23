@@ -1,11 +1,21 @@
 # Issue 1076: some notebook css/javascript bugs
 
-Issue created by migration from https://trac.sagemath.org/ticket/1076
-
-Original creator: was
-
-Original creation time: 2007-11-03 14:33:00
-
+archive/issues_001076.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nOn 11/2/07, Nick Alexander <ncalexander@gmail.com> wrote:\n>\n> In the notebook, if you click at left for a traceback, the whole\n> traceback disappears.  Repeating brings it back, then a third click\n> gives you the whole traceback.\n>\n> Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.8) Gecko/\n> 20071008 Firefox/2.0.0.8\n> 'SAGE Version 2.8.9, Release Date: 2007-10-25'\n>\n\nReport it to trac. I've noticed the same problem and it really\nbugs me.  In fact, just toggling the output on and off doesn't\nbehave correctly anymore, e.g., clicking on the left makes the output\ntotally disappear instead of showing a little horizontal bar.  Etc.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1076\n\n",
+    "created_at": "2007-11-03T14:33:00Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "some notebook css/javascript bugs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1076",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -30,17 +40,43 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1076
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-03 15:11:55
+archive/issue_comments_006509.json:
+```json
+{
+    "body": "Changing assignee from boothby to was.",
+    "created_at": "2007-11-03T15:11:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6509",
+    "user": "was"
+}
+```
 
 Changing assignee from boothby to was.
 
 
+
 ---
 
-Comment by certik created at 2007-11-13 15:53:15
+archive/issue_comments_006510.json:
+```json
+{
+    "body": "The same problem here on Epiphany, Debian unstable. It's kind of annyoing. :) \n\nBut otherwise the notebook rocks.\n\nOndrej",
+    "created_at": "2007-11-13T15:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6510",
+    "user": "certik"
+}
+```
 
 The same problem here on Epiphany, Debian unstable. It's kind of annyoing. :) 
 
@@ -49,27 +85,73 @@ But otherwise the notebook rocks.
 Ondrej
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-20 00:07:12
+archive/issue_comments_006511.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-11-20T00:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6511",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
+
+archive/issue_comments_006512.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-20T00:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6512",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-20 00:07:12
+archive/issue_comments_006513.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-20T00:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6513",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-11-21 21:38:28
+archive/issue_comments_006514.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-21T21:38:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6514",
+    "user": "was"
+}
+```
 
 Resolution: fixed

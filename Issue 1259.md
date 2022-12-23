@@ -1,11 +1,21 @@
 # Issue 1259: readline miscompiles on OSX 10.5.[1]
 
-Issue created by migration from https://trac.sagemath.org/ticket/1259
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-25 04:34:31
-
+archive/issues_001259.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nJustin Walker reports:\n\n```\nThe only problem with the build is this, with readline:\n\nConfigured with: /var/tmp/gcc/gcc-5465~16/src/configure --disable-\nchecking -enable-werror --prefix=/usr --mandir=/share/man --enable-\nlanguages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/\n$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/\nlib --build=i686-apple-darwin9 --with-arch=apple --with-tune=generic  \n--host=i686-apple-darwin9 --target=i686-apple-darwin9\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5465)\ni686-apple-darwin9-gcc-4.0.1: -compatibility_version only allowed  \nwith -dynamiclib\ni686-apple-darwin9-gcc-4.0.1: -compatibility_version only allowed  \nwith -dynamiclib\nmake[3]: *** [libreadline.5.2.dylib] Error 1\nmake[3]: *** Waiting for unfinished jobs....\nmake[3]: *** [libhistory.5.2.dylib] Error 1\nmake[2]: [install-shared] Error 2 (ignored)\n\nFWIW, this same error crops up in a standalone build of readline, but  \nit kills the build.  Sage seems to be unconcerned.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1259\n\n",
+    "created_at": "2007-11-25T04:34:31Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "readline miscompiles on OSX 10.5.[1]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1259",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Justin Walker reports:
@@ -35,24 +45,61 @@ it kills the build.  Sage seems to be unconcerned.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1259
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-25 04:34:41
+archive/issue_comments_007873.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-25T04:34:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7873",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-17 01:01:19
+archive/issue_comments_007874.json:
+```json
+{
+    "body": "The same issue applies to termcap. On 10.5 we end up with only static libraries.",
+    "created_at": "2008-01-17T01:01:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7874",
+    "user": "mabshoff"
+}
+```
 
 The same issue applies to termcap. On 10.5 we end up with only static libraries.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-28 05:14:48
+archive/issue_comments_007875.json:
+```json
+{
+    "body": "Craig Citro says:\n\n```\nSince we're mentioning it, there's a known issue with the readline\nbuild on certain platforms, which you can spot by looking at your\ninstall.log at the section where readline gets installed. I don't know\nwhy these would be related, and Michael Abshoff is suspicious -- which\nprobably means I'm wrong :) -- but if I were motivated to look, I'd\nprobably start there. This is trac ticket #1259. It's easy to get the\nbuild problems to go away, but I'm not sure if it's the \"right\" way to\ndo so -- if you untar the readline package, go into src/support, and\nlook at shobj-conf. If you edit line 145 to say:\n\ndarwin[89]*)\n\nand line 174 to start with\n\n     darwin[789]*)\n\nthen it builds with no errors. However, if you look at what you're\ndoing, you're basically just telling the builder to use the same\noptions for 10.5 (which is what I assume Darwin9 is?) as it uses on\nDarwin 8. I have absolutely no idea whether or not that's a wise idea.\n\nOnce one does this, you could try rebuilding all of Sage with the new\nreadline package, and seeing if you get the same troubles.\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-28T05:14:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7875",
+    "user": "mabshoff"
+}
+```
 
 Craig Citro says:
 
@@ -88,15 +135,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-24 01:09:07
+archive/issue_comments_007876.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-02-24T01:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7876",
+    "user": "craigcitro"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-24 01:09:07
+archive/issue_comments_007877.json:
+```json
+{
+    "body": "This is going to be fixed with #2282.",
+    "created_at": "2008-02-24T01:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1259#issuecomment-7877",
+    "user": "craigcitro"
+}
+```
 
 This is going to be fixed with #2282.

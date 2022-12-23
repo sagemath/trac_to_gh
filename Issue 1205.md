@@ -1,11 +1,21 @@
 # Issue 1205: 2.8.13.alpha1: modular/modform/numerical.py with new numpy/scipy from #1198
 
-Issue created by migration from https://trac.sagemath.org/ticket/1205
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-19 00:13:59
-
+archive/issues_001205.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py\nsage -t  devel/sage-main/sage/modular/modform/numerical.py  **********************************************************************\nFile \"numerical.py\", line 53:\n    sage: n.ap(2)\nExpected:\n    [3.0, 0.61803398875, -1.61803398875]\nGot:\n    [0.326481263444, -0.241771189268, 0.632965191003]\n**********************************************************************\nFile \"numerical.py\", line 55:\n    sage: n.systems_of_eigenvalues(7)\nExpected:\n    [\n    [-1.61803398875, 2.2360679775, -3.2360679775],\n    [0.61803398875, -2.2360679775, 1.2360679775],\n    [3.0, 4.0, 6.0]\n    ]\nGot:\n    [\n    [-0.241771189268, -0.516457621465, -0.483542378535],\n    [0.326481263444, -1.65296252689, 0.652962526888],\n    [0.632965191003, -2.26593038201, 1.26593038201]\n    ]\n**********************************************************************\nFile \"numerical.py\", line 67:\n    sage: n.eigenvalues([2,3,5])\nExpected:\n    [[3.0, 0.61803398875, -1.61803398875],\n     [4.0, -2.2360679775, 2.2360679775],\n     [6.0, 1.2360679775, -3.2360679775]]\nGot:\n    [[0.326481263444, -0.241771189268, 0.632965191003], [-1.65296252689, -0.516457621465, -2.26593038201], [0.652962526888, -0.483542378535, 1.26593038201]]\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_1\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_numerical.py\n         [1.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1205\n\n",
+    "created_at": "2007-11-19T00:13:59Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "2.8.13.alpha1: modular/modform/numerical.py with new numpy/scipy from #1198",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1205",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 
@@ -58,25 +68,62 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1205
+
+
+
+
 
 ---
 
-Comment by jkantor created at 2007-11-19 04:24:28
+archive/issue_comments_007457.json:
+```json
+{
+    "body": "Something happened and the issue is eigen_left is supposed to compute left eigen_vectors (v*m=\\lambda*v), but is computing right eigen_vectors. There are some other issues so I'm going to add methods right_eigenvectors and left_eigenvectors\nto make this clearer. I have already done this and with the new methods the above tests pass. I am going to run test all to make sure my change didn't break something else, I will post a patch in a few hours.",
+    "created_at": "2007-11-19T04:24:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#issuecomment-7457",
+    "user": "jkantor"
+}
+```
 
 Something happened and the issue is eigen_left is supposed to compute left eigen_vectors (v*m=\lambda*v), but is computing right eigen_vectors. There are some other issues so I'm going to add methods right_eigenvectors and left_eigenvectors
 to make this clearer. I have already done this and with the new methods the above tests pass. I am going to run test all to make sure my change didn't break something else, I will post a patch in a few hours.
 
 
+
 ---
 
-Comment by jkantor created at 2007-11-19 04:26:15
+archive/issue_comments_007458.json:
+```json
+{
+    "body": "The other issues being that the meaning of eigen_left is not consistent between real and complex double matrices.",
+    "created_at": "2007-11-19T04:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#issuecomment-7458",
+    "user": "jkantor"
+}
+```
 
 The other issues being that the meaning of eigen_left is not consistent between real and complex double matrices.
 
 
+
 ---
 
-Comment by jkantor created at 2007-11-19 06:27:01
+archive/issue_comments_007459.json:
+```json
+{
+    "body": "I have a patch that fixes the eigenvector issue with real and complex double matrices. All doc tests (including the above) pass with this patch and the new numpy/scipy\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/double_matrices.hg\n\nThe function eigen_left and eigen_right are replaced by left_eigenvectors and right_eigenvectors. Hopefully this makes it more clear that for example left_eigenvectors are eigenvectors so that v*m=\\lambda*v \n\n(I have to admit I'm still not terribly satisfied with the name)\n\nOne line in graph.py as well as numerical.py needed to be changed to reflect this.",
+    "created_at": "2007-11-19T06:27:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#issuecomment-7459",
+    "user": "jkantor"
+}
+```
 
 I have a patch that fixes the eigenvector issue with real and complex double matrices. All doc tests (including the above) pass with this patch and the new numpy/scipy
 
@@ -89,15 +136,37 @@ The function eigen_left and eigen_right are replaced by left_eigenvectors and ri
 One line in graph.py as well as numerical.py needed to be changed to reflect this.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 08:54:13
+archive/issue_comments_007460.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-19T08:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#issuecomment-7460",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 08:54:13
+archive/issue_comments_007461.json:
+```json
+{
+    "body": "Merged in 2.8.13.alpha1.",
+    "created_at": "2007-11-19T08:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1205#issuecomment-7461",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.alpha1.

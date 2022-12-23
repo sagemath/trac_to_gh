@@ -1,37 +1,99 @@
 # Issue 827: nfrootsof1 from Pari
 
-Issue created by migration from https://trac.sagemath.org/ticket/827
-
-Original creator: jvoight
-
-Original creation time: 2007-10-05 00:00:23
-
+archive/issues_000827.json:
+```json
+{
+    "body": "Assignee: was\n\nImport nfrootsof1 from Pari so as to count the number of roots of unity in a number field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/827\n\n",
+    "created_at": "2007-10-05T00:00:23Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "nfrootsof1 from Pari",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/827",
+    "user": "jvoight"
+}
+```
 Assignee: was
 
 Import nfrootsof1 from Pari so as to count the number of roots of unity in a number field.
 
+Issue created by migration from https://trac.sagemath.org/ticket/827
+
+
+
+
 
 ---
+
+archive/issue_comments_005124.json:
+```json
+{
+    "body": "Attachment\n\nIt appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This just uses it, and fixes (what I think is) a small bug in CyclotomicField(7).zeta(14).",
+    "created_at": "2008-01-19T20:56:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/827#issuecomment-5124",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 It appears that nfrootsof1 is available, i.e. via K.pari_nf().nfrootsof1.  This just uses it, and fixes (what I think is) a small bug in CyclotomicField(7).zeta(14).
 
 
+
 ---
+
+archive/issue_comments_005125.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-19T23:56:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/827#issuecomment-5125",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-20 00:42:38
+archive/issue_comments_005126.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-20T00:42:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/827#issuecomment-5126",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-20 00:42:38
+archive/issue_comments_005127.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha0",
+    "created_at": "2008-01-20T00:42:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/827#issuecomment-5127",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha0

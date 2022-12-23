@@ -1,11 +1,21 @@
 # Issue 673: Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity
 
-Issue created by migration from https://trac.sagemath.org/ticket/673
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-17 00:34:27
-
+archive/issues_000673.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: Solaris 10, doctest, real double\n\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
+    "created_at": "2007-09-17T00:34:27Z",
+    "labels": [
+        "packages",
+        "major",
+        "bug"
+    ],
+    "title": "Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/673",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 Keywords: Solaris 10, doctest, real double
@@ -30,24 +40,61 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/673
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-17 01:24:19
+archive/issue_comments_003484.json:
+```json
+{
+    "body": "Changing assignee from was to failure.",
+    "created_at": "2007-09-17T01:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3484",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to failure.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-09-17 01:24:19
+archive/issue_comments_003485.json:
+```json
+{
+    "body": "Changing component from packages to doctest.",
+    "created_at": "2007-09-17T01:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3485",
+    "user": "mabshoff"
+}
+```
 
 Changing component from packages to doctest.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 00:02:10
+archive/issue_comments_003486.json:
+```json
+{
+    "body": "Some of this might have been fixed by #848.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-15T00:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3486",
+    "user": "mabshoff"
+}
+```
 
 Some of this might have been fixed by #848.
 
@@ -56,12 +103,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_003487.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-09T05:29:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3487",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_003488.json:
+```json
+{
+    "body": "Attachment\n\nPositive review for both patches. This also makes the printing of NaN and Infinity consistent with CC. At the same time it fixes three more doctesting issues on Solaris where the libc caused different printouts.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T07:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3488",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -72,9 +145,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 07:10:22
+archive/issue_comments_003489.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T07:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3489",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.4.1.rc2.
 
@@ -83,8 +167,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 07:10:22
+archive/issue_comments_003490.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-09T07:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/673",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/673#issuecomment-3490",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

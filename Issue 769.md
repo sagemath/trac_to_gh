@@ -1,11 +1,21 @@
 # Issue 769: Matrix_mod2_dense._echelon_strassen gives fals results sometimes
 
-Issue created by migration from https://trac.sagemath.org/ticket/769
-
-Original creator: malb
-
-Original creation time: 2007-10-01 04:21:25
-
+archive/issues_000769.json:
+```json
+{
+    "body": "Assignee: was\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
+    "created_at": "2007-10-01T04:21:25Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "Matrix_mod2_dense._echelon_strassen gives fals results sometimes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/769",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Even though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:
@@ -51,10 +61,25 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/769
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-04 15:54:05
+archive/issue_comments_004568.json:
+```json
+{
+    "body": "I tested 1000 STrassen echelons over QQ with no problems.  I tested 100 over GF(389), i.e., a fairly big\nprime, and even there it fails.  It must be that either:\n    (1) matrix windows are buggy mod p, or\n    (2) the echelon algorithm itself is wrong mod p.\n\nI just tested with *generic* windows, and the *algorithm* is buggy, not the implementation of windows. \n\n--- \n\nI have modified \n\nWilliam",
+    "created_at": "2007-10-04T15:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4568",
+    "user": "was"
+}
+```
 
 I tested 1000 STrassen echelons over QQ with no problems.  I tested 100 over GF(389), i.e., a fairly big
 prime, and even there it fails.  It must be that either:
@@ -70,57 +95,147 @@ I have modified
 William
 
 
+
 ---
 
-Comment by was created at 2007-10-04 15:54:05
+archive/issue_comments_004569.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T15:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4569",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2007-10-04 21:22:51
+archive/issue_comments_004570.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-10-04T21:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4570",
+    "user": "robertwb"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by robertwb created at 2007-10-04 21:22:51
+archive/issue_comments_004571.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-10-04T21:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4571",
+    "user": "robertwb"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by robertwb created at 2007-10-04 21:22:51
+archive/issue_comments_004572.json:
+```json
+{
+    "body": "Changing priority from minor to critical.",
+    "created_at": "2007-10-04T21:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4572",
+    "user": "robertwb"
+}
+```
 
 Changing priority from minor to critical.
 
 
+
 ---
 
-Comment by robertwb created at 2007-10-04 21:22:51
+archive/issue_comments_004573.json:
+```json
+{
+    "body": "I fixed the algorithm, it was forgetting to clear some pivots in some cases on full rank (where it was jumping to the end 'cause it knew it everything but the diagonal was 0's) \n\nI have tested this on 1000's of matrices of varying sizes and primes.",
+    "created_at": "2007-10-04T21:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4573",
+    "user": "robertwb"
+}
+```
 
 I fixed the algorithm, it was forgetting to clear some pivots in some cases on full rank (where it was jumping to the end 'cause it knew it everything but the diagonal was 0's) 
 
 I have tested this on 1000's of matrices of varying sizes and primes.
 
 
+
 ---
 
-Comment by was created at 2007-10-05 02:16:07
+archive/issue_comments_004574.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-05T02:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4574",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_004575.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-05T02:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4575",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-05 02:16:07
+archive/issue_comments_004576.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to linear algebra.",
+    "created_at": "2007-10-05T02:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4576",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to linear algebra.

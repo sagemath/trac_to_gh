@@ -1,11 +1,21 @@
 # Issue 1718: bug in parametric_plot
 
-Issue created by migration from https://trac.sagemath.org/ticket/1718
-
-Original creator: wdj
-
-Original creation time: 2008-01-07 22:34:39
-
+archive/issues_001718.json:
+```json
+{
+    "body": "Assignee: was\n\nsage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))\n\nworks but not this:\n\nsage: parametric_plot([t, t + pi], -2, 2, rgbcolor=(1,0,0))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n....\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute\n'number_of_arguments'\n\nIssue created by migration from https://trac.sagemath.org/ticket/1718\n\n",
+    "created_at": "2008-01-07T22:34:39Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "bug in parametric_plot",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1718",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 sage: parametric_plot([t, t + RR(pi)], -2, 2, rgbcolor=(1,0,0))
@@ -21,15 +31,43 @@ sage: parametric_plot([t, t + pi], -2, 2, rgbcolor=(1,0,0))
 <type 'exceptions.AttributeError'>: 'Pi' object has no attribute
 'number_of_arguments'
 
+Issue created by migration from https://trac.sagemath.org/ticket/1718
+
+
+
+
 
 ---
+
+archive/issue_comments_010889.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-18T16:19:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10889",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:38:22
+archive/issue_comments_010890.json:
+```json
+{
+    "body": "Looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T02:38:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10890",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me.
 
@@ -38,22 +76,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:39:49
+archive/issue_comments_010891.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T02:39:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10891",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 05:26:27
+archive/issue_comments_010892.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1 - and this time I closed the ticket, too.",
+    "created_at": "2008-01-21T05:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10892",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1 - and this time I closed the ticket, too.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 05:26:27
+archive/issue_comments_010893.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T05:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1718#issuecomment-10893",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

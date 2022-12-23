@@ -1,26 +1,62 @@
 # Issue 1758: Simon's variant of LLL reduction
 
-Issue created by migration from https://trac.sagemath.org/ticket/1758
-
-Original creator: malb
-
-Original creation time: 2008-01-11 18:37:58
-
+archive/issues_001758.json:
+```json
+{
+    "body": "Assignee: was\n\nAgain from the MAGMA 2.14 changelog: \"Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehl\u00e9, and works readily in dimensions greater than 100.\" ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )\n\nIssue created by migration from https://trac.sagemath.org/ticket/1758\n\n",
+    "created_at": "2008-01-11T18:37:58Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "Simon's variant of LLL reduction",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1758",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Again from the MAGMA 2.14 changelog: "Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehlé, and works readily in dimensions greater than 100." ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )
 
+Issue created by migration from https://trac.sagemath.org/ticket/1758
+
+
+
+
 
 ---
 
-Comment by was created at 2008-10-30 17:38:51
+archive/issue_comments_011090.json:
+```json
+{
+    "body": "Is this in new versions of fpLLL?  What is this ticket about?",
+    "created_at": "2008-10-30T17:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11090",
+    "user": "was"
+}
+```
 
 Is this in new versions of fpLLL?  What is this ticket about?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 17:41:43
+archive/issue_comments_011091.json:
+```json
+{
+    "body": "The upgrade to the latest upstream fplll (in case this is what this ticket is about) is #4223. All issues with that release have been resolved, so we should upgrade to it in the short term.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-30T17:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11091",
+    "user": "mabshoff"
+}
+```
 
 The upgrade to the latest upstream fplll (in case this is what this ticket is about) is #4223. All issues with that release have been resolved, so we should upgrade to it in the short term.
 
@@ -29,29 +65,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-28 22:11:33
+archive/issue_comments_011092.json:
+```json
+{
+    "body": "> What is this ticket about?",
+    "created_at": "2015-01-28T22:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11092",
+    "user": "aapitzsch"
+}
+```
 
 > What is this ticket about?
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-28 22:11:33
+archive/issue_comments_011093.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-01-28T22:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11093",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2015-01-28 23:10:46
+archive/issue_comments_011094.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-01-28T23:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11094",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-01-29 15:47:57
+archive/issue_comments_011095.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2015-01-29T15:47:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11095",
+    "user": "vbraun"
+}
+```
 
 Resolution: invalid

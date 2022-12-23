@@ -1,11 +1,21 @@
 # Issue 1455: 2.9.alpha4: numerical noise doctest failure on OSX 10.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/1455
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-10 22:40:47
-
+archive/issues_001455.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nRishikesh reported:\n\n```\nsage -t  devel/sage-main/sage/numerical/optimize.py\n**********************************************************************\nFile \"optimize.py\", line 93:\n    sage: find_maximum_on_interval(f, 0,5)\nExpected:\n    (0.561096338191, 0.860333589015)\nGot:\n    (0.561096338191, 0.860333589074)\n**********************************************************************\n\nsage -t  devel/sage-main/sage/calculus/calculus.py\n********************\n**************************************************\nFile \"calculus.py\", line 2446:\n    sage: f.find_maximum_on_interval(0,5)\nExpected:\n    (0.5610963381910451, 0.860333589015)\nGot:\n    (0.5610963381910451, 0.860333589074)\n********************************************************************** \n```\n\n\nCheers,\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1455\n\n",
+    "created_at": "2007-12-10T22:40:47Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "2.9.alpha4: numerical noise doctest failure on OSX 10.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1455",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Rishikesh reported:
@@ -38,23 +48,60 @@ Cheers,
 Michael
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1455
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-10 22:41:35
+archive/issue_comments_009381.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-10T22:41:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1455#issuecomment-9381",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 01:01:26
+archive/issue_comments_009382.json:
+```json
+{
+    "body": "Merged in 2.9.alpha5.",
+    "created_at": "2007-12-11T01:01:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1455#issuecomment-9382",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.alpha5.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-11 01:01:26
+archive/issue_comments_009383.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-11T01:01:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1455#issuecomment-9383",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

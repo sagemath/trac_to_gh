@@ -1,11 +1,21 @@
 # Issue 1217: libfplll error codes - leftover from #1188
 
-Issue created by migration from https://trac.sagemath.org/ticket/1217
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-20 15:54:11
-
+archive/issues_001217.json:
+```json
+{
+    "body": "Assignee: malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\n\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
+    "created_at": "2007-11-20T15:54:11Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "libfplll error codes - leftover from #1188",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1217",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 On IRC:
@@ -31,31 +41,79 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1217
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-01-16 17:21:08
+archive/issue_comments_007554.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"wjp\".",
+    "created_at": "2008-01-16T17:21:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7554",
+    "user": "malb"
+}
+```
 
 Changing keywords from "" to "wjp".
 
 
+
 ---
 
-Comment by malb created at 2008-01-16 17:21:08
+archive/issue_comments_007555.json:
+```json
+{
+    "body": "Checking for \"< 0\" seems to be fine as far as I can see (we do that). So I vote for `invalid`.",
+    "created_at": "2008-01-16T17:21:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7555",
+    "user": "malb"
+}
+```
 
 Checking for "< 0" seems to be fine as far as I can see (we do that). So I vote for `invalid`.
 
 
+
 ---
 
-Comment by malb created at 2008-01-16 17:21:16
+archive/issue_comments_007556.json:
+```json
+{
+    "body": "Changing keywords from \"wjp\" to \"\".",
+    "created_at": "2008-01-16T17:21:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7556",
+    "user": "malb"
+}
+```
 
 Changing keywords from "wjp" to "".
 
 
+
 ---
 
-Comment by wjp created at 2008-01-16 19:04:24
+archive/issue_comments_007557.json:
+```json
+{
+    "body": "I think that we should check for != 0 in all fpLLL calls that are guaranteed to return an LLL-reduced basis, including 'wrapper'.\n\nRationale: Damien Stehl\u00e9 writes:\n\n```\nInternally, LLL calls may fail (which is why we need the wrapper). If\na LLL call returns 0, then it went fine. Otherwise, it can return -1\nor a positive value. -1 means that there were too many loop iterations\n(very unfrequent), and >0 means that the size-reduction failed (much\nmore frequent if the precision is not high enough).\n```\n\nThis means that a positive value indicates a non-reduced basis, which is an error condition for the proved fpLLL functions. (The actual returned value kappa seems to indicate the row in which the size-reduction failed.)\n\nmalb: on IRC, you mentioned a testcase that triggered a positive return value in the main wrapper. Which one? The doctest in `fplll.pyx`'s `wrapper()` seems to work for me. (I tried ~20 times since it has random input.)",
+    "created_at": "2008-01-16T19:04:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7557",
+    "user": "wjp"
+}
+```
 
 I think that we should check for != 0 in all fpLLL calls that are guaranteed to return an LLL-reduced basis, including 'wrapper'.
 
@@ -74,34 +132,80 @@ This means that a positive value indicates a non-reduced basis, which is an erro
 malb: on IRC, you mentioned a testcase that triggered a positive return value in the main wrapper. Which one? The doctest in `fplll.pyx`'s `wrapper()` seems to work for me. (I tried ~20 times since it has random input.)
 
 
+
 ---
 
-Comment by malb created at 2008-01-18 16:25:18
+archive/issue_comments_007558.json:
+```json
+{
+    "body": "I suggest to check for\n* wrapper: !=0\n* proved: !=0\n* heuristic: nothing\n* fast: nothing\n\nas this seems to be correct and to worry about resulting errors afterwards.",
+    "created_at": "2008-01-18T16:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7558",
+    "user": "malb"
+}
+```
 
 I suggest to check for
- * wrapper: !=0
- * proved: !=0
- * heuristic: nothing
- * fast: nothing
+* wrapper: !=0
+* proved: !=0
+* heuristic: nothing
+* fast: nothing
 
 as this seems to be correct and to worry about resulting errors afterwards.
 
 
+
 ---
 
-Comment by wjp created at 2008-01-18 16:57:25
+archive/issue_comments_007559.json:
+```json
+{
+    "body": "That makes sense. The attached patch implements it.",
+    "created_at": "2008-01-18T16:57:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7559",
+    "user": "wjp"
+}
+```
 
 That makes sense. The attached patch implements it.
 
 
+
 ---
+
+archive/issue_comments_007560.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-18T16:57:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7560",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-01-18 17:21:18
+archive/issue_comments_007561.json:
+```json
+{
+    "body": "The patch looks good and applies cleanly, but:\n\n\n```\nFile \"fplll.pyx\", line 162:\n    sage: F.wrapper()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/malb/SAGE/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[4]>\", line 1, in <module>\n        F.wrapper()###line 162:\n    sage: F.wrapper()\n      File \"fplll.pyx\", line 187, in sage.libs.fplll.fplll.FP_LLL.wrapper\n        raise RuntimeError, \"fpLLL returned %d != 0\"%ret\n    RuntimeError: fpLLL returned 3 != 0\n```\n\n\nThis is on a 64-bit Linux. I assume this can be reproduced on `sage.math`.\n\nPS: Trying something bold and reassigning this ticket to wjp, feel free to bounce it.",
+    "created_at": "2008-01-18T17:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7561",
+    "user": "malb"
+}
+```
 
 The patch looks good and applies cleanly, but:
 
@@ -127,16 +231,38 @@ This is on a 64-bit Linux. I assume this can be reproduced on `sage.math`.
 PS: Trying something bold and reassigning this ticket to wjp, feel free to bounce it.
 
 
+
 ---
 
-Comment by malb created at 2008-01-18 17:21:18
+archive/issue_comments_007562.json:
+```json
+{
+    "body": "Changing assignee from malb to wjp.",
+    "created_at": "2008-01-18T17:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7562",
+    "user": "malb"
+}
+```
 
 Changing assignee from malb to wjp.
 
 
+
 ---
 
-Comment by malb created at 2008-01-18 17:52:54
+archive/issue_comments_007563.json:
+```json
+{
+    "body": "\n```\nsage: from sage.libs.fplll.fplll import FP_LLL\nsage: W = random_matrix(ZZ,7,7)\nsage: W # result random\n\n[ -1  -1  -5  -1  -1  -8   3]\n[  2   1   1   3  -3  -6   1]\n[  1   1   1  -1  -3   1   2]\n[ -2   2   1   1 -58  -1  -2]\n[  1   1   1  -1   1  -3  -1]\n[ -1   1   1   1   3   2 -31]\n[  1  -1  -3   1   1  -2   1]\n\nsage: print W.list()\n\n[-1, -1, -5, -1, -1, -8, 3, 2, 1, 1, 3, -3, -6, 1, 1, 1, 1, -1, -3, 1, 2, -2, 2, 1, 1, -58, -1, -2, 1, 1, 1, -1, 1, -3, -1, -1, 1, 1, 1, 3, 2, -31, 1, -1, -3, 1, 1, -2, 1]\n\nsage: F = FP_LLL(W)\nsage: F.wrapper()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n/home/malb/<ipython console> in <module>()\n/home/malb/fplll.pyx in sage.libs.fplll.fplll.FP_LLL.wrapper()\n<type 'exceptions.RuntimeError'>: fpLLL returned 3 != 0\nsage: F._sage_()\n[                    1                     1                     1                    -1                     1                    -3                    -1]\n[                    1                     1                     1                    -1                    -3                     1                     2]\n[                    1                    -1                    -3                     1                     1                    -2                     1]\n[  1889035965444230183   -782769071737015336  -3454574108918260854    782769071737015340 -16557708108281492442  14115538695983654830  14617827127031307303]\n[                   -5                    -1                    -1                    -1                    -1                    -2                     0]\n[                   -4                     4                     3                     3                     4                    -1                     6]\n[                   -4                     9                    -3                     1                  \n```\n",
+    "created_at": "2008-01-18T17:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7563",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -175,22 +301,55 @@ sage: F._sage_()
 
 
 
+
 ---
 
-Comment by malb created at 2008-01-20 17:44:44
+archive/issue_comments_007564.json:
+```json
+{
+    "body": "The patch is fine, it just exposes a bug on my machine. I say apply.",
+    "created_at": "2008-01-20T17:44:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7564",
+    "user": "malb"
+}
+```
 
 The patch is fine, it just exposes a bug on my machine. I say apply.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 05:34:56
+archive/issue_comments_007565.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T05:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7565",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 05:34:56
+archive/issue_comments_007566.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T05:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7566",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

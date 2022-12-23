@@ -1,11 +1,21 @@
 # Issue 1540: lapack.spkg: remove elf binaries from src/INSTALL
 
-Issue created by migration from https://trac.sagemath.org/ticket/1540
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-16 20:26:33
-
+archive/issues_001540.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAs discussed in http://groups.google.com/group/sage-devel/t/13109b350bd5876c  we should remove the Linux elf binaries in src/INSTALL. They seem to cause trouble with certain OSX compilers. An updated  lapack.spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/lapack-20071123.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1540\n\n",
+    "created_at": "2007-12-16T20:26:33Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "lapack.spkg: remove elf binaries from src/INSTALL",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1540",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 As discussed in http://groups.google.com/group/sage-devel/t/13109b350bd5876c  we should remove the Linux elf binaries in src/INSTALL. They seem to cause trouble with certain OSX compilers. An updated  lapack.spkg is at
@@ -16,16 +26,42 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1540
+
+
+
+
 
 ---
 
-Comment by rlm created at 2007-12-18 20:57:20
+archive/issue_comments_009833.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-18T20:57:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1540#issuecomment-9833",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-18 21:07:00
+archive/issue_comments_009834.json:
+```json
+{
+    "body": "Merged in 2.9.1.alpha1",
+    "created_at": "2007-12-18T21:07:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1540#issuecomment-9834",
+    "user": "rlm"
+}
+```
 
 Merged in 2.9.1.alpha1

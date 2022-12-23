@@ -1,11 +1,21 @@
 # Issue 692: add form capabilities to sage notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/692
-
-Original creator: was
-
-Original creation time: 2007-09-19 16:38:55
-
+archive/issues_000692.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nOn 9/19/07, PhantomDuck from Finland wrote:\n> I am complete Sage newbie. The question is, that is it possible to add\n> html-code to Sage web-browser interface?\n\nYou can click \"edit\", then paste arbitray HTML code anywhere in the notebook\nbody, and it will render as HTML.\n\n> The goal would be insert some text-fields/checkboxes and radioboxes\n> and wait for user input. After the input has been given the Sage would\n> run some python programs and display the output. Does this approach\n> require a submit button too?\n\nYou could create an HTML form easily enough by just pasting the HTML\ninto a worksheet in Edit mode.  *Unfortunately* nobody has actually \nimplemented a feature in the notebook that would allow for submission\nof the contents of the form and evaluation of the result.  I think this\nwould actually be pretty easy to implement for a developer. \n\n> e.g.\n> We have equation 2x-1=0. There could be one html-text field where the\n> user could input the root of the polynomial equation, namely 1/2. Then\n> the Sage would check whether the root is correct and give some\n> feedback to the user.\n> \n> Thank you in advance (I know I might be asking silly things but please\n> forgive me for being a total newbie).\n> \n> \n> --~--~---------~--~----~------------~-------~--~----~\n> You received this message because you are subscribed to the Google Groups \"sage-newbie\" group.\n> To post to this group, send email to sage-newbie@googlegroups.com\n> To unsubscribe from this group, send email to sage-newbie-unsubscribe@googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/sage-newbie?hl=en\n> -~----------~----~----~----~------~----~------~--~---\n> \n> \n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/692\n\n",
+    "created_at": "2007-09-19T16:38:55Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "add form capabilities to sage notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/692",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -57,16 +67,42 @@ http://wstein.org
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/692
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-11-29 16:32:05
+archive/issue_comments_003599.json:
+```json
+{
+    "body": "Implementing ticket #1322 would enable variables that allow input in HTML forms as well as other sorts of javascript controls as well, so I'm marking this as a duplicate (am I allowed to mark things as duplicates?)",
+    "created_at": "2007-11-29T16:32:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/692#issuecomment-3599",
+    "user": "jason"
+}
+```
 
 Implementing ticket #1322 would enable variables that allow input in HTML forms as well as other sorts of javascript controls as well, so I'm marking this as a duplicate (am I allowed to mark things as duplicates?)
 
 
+
 ---
 
-Comment by jason created at 2007-11-29 16:32:05
+archive/issue_comments_003600.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-11-29T16:32:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/692#issuecomment-3600",
+    "user": "jason"
+}
+```
 
 Resolution: duplicate

@@ -1,72 +1,189 @@
 # Issue 1538: upgrades of sage_scripts can confuse bash
 
-Issue created by migration from https://trac.sagemath.org/ticket/1538
-
-Original creator: cwitty
-
-Original creation time: 2007-12-16 16:01:56
-
+archive/issues_001538.json:
+```json
+{
+    "body": "Assignee: was\n\nDoing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).\n\nCurrently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1538\n\n",
+    "created_at": "2007-12-16T16:01:56Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "upgrades of sage_scripts can confuse bash",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1538",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 Doing an upgrade of sage_scripts may modify files in local/bin while bash is executing them.  This means that bash may attempt to execute some mixture of the old and new versions (which will usually lead to an error, because bash will begin executing the new version in the middle of a line).
 
 Currently Sage includes an effective workaround for this problem... the upgrade is automatically retried if it fails.  However, we should put in a real fix.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1538
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-12-16 16:06:19
+archive/issue_comments_009818.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2007-12-16T16:06:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9818",
+    "user": "cwitty"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by cwitty created at 2007-12-16 16:06:19
+archive/issue_comments_009819.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to distribution.",
+    "created_at": "2007-12-16T16:06:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9819",
+    "user": "cwitty"
+}
+```
 
 Changing component from algebraic geometry to distribution.
 
 
+
 ---
+
+archive/issue_comments_009820.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-10-05T13:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9820",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-05 13:18:27
+archive/issue_comments_009821.json:
+```json
+{
+    "body": "Changing component from distribution to build.",
+    "created_at": "2012-10-05T13:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9821",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from distribution to build.
 
 
+
 ---
+
+archive/issue_comments_009822.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-08-13T15:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9822",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
----
-
-Comment by jdemeyer created at 2013-12-19 12:16:03
-
-This is solved by the git workflow because everything is now updated *before* the build, not *during* the build.
-
 
 ---
 
-Comment by jdemeyer created at 2013-12-19 12:17:12
+archive/issue_comments_009823.json:
+```json
+{
+    "body": "This is solved by the git workflow because everything is now updated **before** the build, not **during** the build.",
+    "created_at": "2013-12-19T12:16:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9823",
+    "user": "jdemeyer"
+}
+```
+
+This is solved by the git workflow because everything is now updated **before** the build, not **during** the build.
+
+
+
+---
+
+archive/issue_comments_009824.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-12-19T12:17:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9824",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-19 12:17:17
+archive/issue_comments_009825.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-12-19T12:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9825",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2013-12-20 15:59:23
+archive/issue_comments_009826.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2013-12-20T15:59:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1538#issuecomment-9826",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

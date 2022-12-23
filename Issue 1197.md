@@ -1,11 +1,21 @@
 # Issue 1197: [with patch] add cremona's modular symbols program g0n to sage and add wrapper supprot
 
-Issue created by migration from https://trac.sagemath.org/ticket/1197
-
-Original creator: was
-
-Original creation time: 2007-11-18 06:28:08
-
+archive/issues_001197.json:
+```json
+{
+    "body": "Assignee: was\n\nA first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. \n\nA patch bundle that applies cleanly and the corresponding spkg are both\navailable here:\n\n    http://sage.math.washington.edu/home/was/cremona/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1197\n\n",
+    "created_at": "2007-11-18T06:28:08Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] add cremona's modular symbols program g0n to sage and add wrapper supprot",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1197",
+    "user": "was"
+}
+```
 Assignee: was
 
 A first solid version of this is now done, due to work of Ralf PW, John Cremona, and myself. 
@@ -15,16 +25,42 @@ available here:
 
     http://sage.math.washington.edu/home/was/cremona/
 
+Issue created by migration from https://trac.sagemath.org/ticket/1197
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-18 08:25:34
+archive/issue_comments_007425.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-18T08:25:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1197#issuecomment-7425",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-18 08:25:34
+archive/issue_comments_007426.json:
+```json
+{
+    "body": "Merged in 2.8.13.alpha0.",
+    "created_at": "2007-11-18T08:25:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1197#issuecomment-7426",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.alpha0.

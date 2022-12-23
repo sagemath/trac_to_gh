@@ -1,11 +1,21 @@
 # Issue 1252: 2.8.13: gmp related build problems on OSX 10.4.11, 10.5.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/1252
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-24 00:23:16
-
+archive/issues_001252.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nJustin Walker reported:\n\n```\nI did a full build of 2.8.13 on two systems:\n\nMac OS X/10.4.11: Dual Quad-Core Xeon\nMac OS X/10.5.1:  Core Duo\n\nProblems on both:\n10.5.1: blow-up in Flint\n   ld: duplicate symbol ___gmpz_abs in test-support.o and fmpz_poly-\ntest.o\n\n10.4.11: blow-up in cddlib (\"/usr/local\" contamination)\n   /usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: Undefined symbols:\n   ___gmpq_init\n   ...\n\nFWIW, I used \"-j6\" on the 10.4 system and \"-j2\" on the 10.5 system.  \nRerunning the builds without the \"j factor\" gave me the (more or  \nless) the same result on 10.4 and 10.5.\n\nThe full logs (of the \"-j\" builds) are in ~justin/logs on  \nsage.math.washington.edu (tagged with 10.x).\n\nJustin \n```\n\n\nSee http://groups.google.com/group/sage-devel/t/8e446357a1d15a8a\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1252\n\n",
+    "created_at": "2007-11-24T00:23:16Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "2.8.13: gmp related build problems on OSX 10.4.11, 10.5.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1252",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Justin Walker reported:
@@ -43,10 +53,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1252
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-24 01:54:14
+archive/issue_comments_007833.json:
+```json
+{
+    "body": "A potential solution for the 10.4.11 issue can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/cddlib-094b.p0.spkg\n\nFeedback welcome.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-24T01:54:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1252#issuecomment-7833",
+    "user": "mabshoff"
+}
+```
 
 A potential solution for the 10.4.11 issue can be found at
 
@@ -59,22 +84,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-24 13:12:00
+archive/issue_comments_007834.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-24T13:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1252#issuecomment-7834",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-25 04:07:08
+archive/issue_comments_007835.json:
+```json
+{
+    "body": "Merged in 2.8.14.rc2. Justin Walker did report that it fixed the issue for him.",
+    "created_at": "2007-11-25T04:07:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1252#issuecomment-7835",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.14.rc2. Justin Walker did report that it fixed the issue for him.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-25 04:07:08
+archive/issue_comments_007836.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-25T04:07:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1252#issuecomment-7836",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

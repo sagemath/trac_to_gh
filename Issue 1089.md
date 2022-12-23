@@ -1,11 +1,21 @@
 # Issue 1089: [with patch] graphs: update subgraph to handle a list of edges
 
-Issue created by migration from https://trac.sagemath.org/ticket/1089
-
-Original creator: jason
-
-Original creation time: 2007-11-03 20:48:47
-
+archive/issues_001089.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nHere is an update to the subgraph function to handle a list of edges.  If edges are not specified, then it reverts to the original functionality (returning an induced subgraph).\n\nI also fix a doctest that should have been complaining in transitive_reduction and make the doctests in min_spanning_tree make more sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1089\n\n",
+    "created_at": "2007-11-03T20:48:47Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] graphs: update subgraph to handle a list of edges",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1089",
+    "user": "jason"
+}
+```
 Assignee: mhansen
 
 Keywords: graphs
@@ -14,8 +24,25 @@ Here is an update to the subgraph function to handle a list of edges.  If edges 
 
 I also fix a doctest that should have been complaining in transitive_reduction and make the doctests in min_spanning_tree make more sense.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1089
+
+
+
+
 
 ---
+
+archive/issue_comments_006593.json:
+```json
+{
+    "body": "Attachment\n\nJason,\n\nPlease include a fresh patch that comes from a clean install of sage 2.8.11. The base version does not match. Also, the function subgraph(vertices) returns the induced subgraph with the given vertices and *all* edges from the original graph whose endpoints are in vertices. Perhaps the current function should be renamed induced_subgraph, and you could make a separate subgraph_from_edges() function. It also occurs to me that we don't yet have an is_subgraph fucntion...\n\nCheers,\n\nRobert M",
+    "created_at": "2007-11-03T23:29:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6593",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -28,9 +55,20 @@ Cheers,
 Robert M
 
 
+
 ---
 
-Comment by rlm created at 2007-11-03 23:33:02
+archive/issue_comments_006594.json:
+```json
+{
+    "body": "Jason,\n\nI should have mentioned to apply the patches in #1088 to the clean version first, then patch on top of that.\n\nThanks, Robert M",
+    "created_at": "2007-11-03T23:33:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6594",
+    "user": "rlm"
+}
+```
 
 Jason,
 
@@ -39,9 +77,20 @@ I should have mentioned to apply the patches in #1088 to the clean version first
 Thanks, Robert M
 
 
+
 ---
 
-Comment by jason created at 2007-11-04 03:18:46
+archive/issue_comments_006595.json:
+```json
+{
+    "body": "Robert,\n\nYou're right, #1088 should be applied first.  This patch modifies a doctest in #1088 to be more sensible.  I was going to include the better doctest in #1088 to keep both patches more self-contained, but then the doctests wouldn't have passed after only applying #1088.  Did applying this patch after #1088 resolve the issue or would you still like me to rebase against 2.8.11?\n\nAs to the subgraph function: I think it's a reasonable idea to say that the subgraph function returns a graph that is the intersection of what is currently in the graph and the restrictions that you pass relating to vertices and edges (as represented by a list of \"allowable\" vertices and/or edges you pass the subgraph function).  If you pass just a restriction on the vertices to include in the subgraph, then there is no restriction on the edges and you get an induced subgraph.  If you pass a restriction on the edges, then you get a graph with the same vertices as the original graph, but with possibly fewer edges (that is what the added doctest tests).  If you pass a restriction on both the edges and vertices, then the returned graph only has vertices from the vertex set you passed and edges from the edge set you passed.  I don't think that we need to make several different functions for this feature.  But if you think it would be clearer to have several functions, let me know.\n\nOne of the things I'm trying to do here is consolidate functionality when it makes sense so that we don't end up having hundreds of different functions that people have to remember.  I guess the question here is whether it makes sense.\n\nAs for the is_subgraph function, I believe that that problem is quite a bit harder (in a technical sense) than the graph isomorphism problem, even if you restrict to induced subgraphs.  I suppose it would be fairly easy, though, to implement an is_induced_subgraph function by taking k-subsets of the vertices and asking if the induced subgraph is isomorphic to a given graph.\n\nA related feature request is for functions dealing with graph minors (constructing minors, asking if a graph is a minor of another, etc.).\n\nThanks for your comments and suggestions!",
+    "created_at": "2007-11-04T03:18:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6595",
+    "user": "jason"
+}
+```
 
 Robert,
 
@@ -58,9 +107,20 @@ A related feature request is for functions dealing with graph minors (constructi
 Thanks for your comments and suggestions!
 
 
+
 ---
 
-Comment by rlm created at 2007-11-06 19:14:49
+archive/issue_comments_006596.json:
+```json
+{
+    "body": "Jason,\n\nThe reason I was asking you to rebase is that I already patched up the doctests from 1088 (the second patch there). As far as patches go, you can do one of the following:\n\n1) Wait for sage-2.8.12 to be released, and do a patch on top of that.\n\n2) Apply *both* patches in ticket 1088 to a fresh 2.8.11, and do a patch on top of that.\n\nYou've convinced me that these functionalities should be in the same function. I was just thinking that the name \"subgraph\" was a little misleading for a function name. Under your interpretation, all of these would be induced subgraphs, so to speak. I don't know if induced_subgraph is better, since the first thing anyone would look for would be subgraph anyway, and it's shorter to type...\n\nIndeed, the subgraph isomorphism problem is NP-complete, but I was just talking about *is* subgraph, as a subset. Same vertices, same exact edges. I could see this being useful in some situations.",
+    "created_at": "2007-11-06T19:14:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6596",
+    "user": "rlm"
+}
+```
 
 Jason,
 
@@ -75,36 +135,93 @@ You've convinced me that these functionalities should be in the same function. I
 Indeed, the subgraph isomorphism problem is NP-complete, but I was just talking about *is* subgraph, as a subset. Same vertices, same exact edges. I could see this being useful in some situations.
 
 
+
 ---
+
+archive/issue_comments_006597.json:
+```json
+{
+    "body": "Attachment\n\nCorrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.",
+    "created_at": "2007-11-13T23:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6597",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Corrected bugs, rebased against 2.8.12, and put in more comprehensive doctests.
 
 
+
 ---
 
-Comment by jason created at 2007-11-13 23:45:19
+archive/issue_comments_006598.json:
+```json
+{
+    "body": "The subgraph_edges-updated.patch should be applied instead of the subgraph_edges.patch.",
+    "created_at": "2007-11-13T23:45:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6598",
+    "user": "jason"
+}
+```
 
 The subgraph_edges-updated.patch should be applied instead of the subgraph_edges.patch.
 
 
+
 ---
 
-Comment by rlm created at 2007-11-15 18:59:07
+archive/issue_comments_006599.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2007-11-15T18:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6599",
+    "user": "rlm"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 21:42:51
+archive/issue_comments_006600.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-19T21:42:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6600",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 21:42:51
+archive/issue_comments_006601.json:
+```json
+{
+    "body": "Merged in 2.8.13.alpha1.",
+    "created_at": "2007-11-19T21:42:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1089",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1089#issuecomment-6601",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.alpha1.

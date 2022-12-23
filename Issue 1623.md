@@ -1,42 +1,100 @@
 # Issue 1623: update gsl to 1.10
 
-Issue created by migration from https://trac.sagemath.org/ticket/1623
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-29 04:36:48
-
+archive/issues_001623.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1623\n\n",
+    "created_at": "2007-12-29T04:36:48Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "update gsl to 1.10",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1623",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1623
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-29 04:37:26
+archive/issue_comments_010333.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2007-12-29T04:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10333",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-29 04:37:26
+archive/issue_comments_010334.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-29T04:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10334",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by pdenapo created at 2007-12-31 22:33:50
+archive/issue_comments_010335.json:
+```json
+{
+    "body": "Beware that in version 1.10 GNU gsl has chaged its license to\nGPL version 3 (as it is stated in the linked mail), \nso that may raise a license issue",
+    "created_at": "2007-12-31T22:33:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10335",
+    "user": "pdenapo"
+}
+```
 
 Beware that in version 1.10 GNU gsl has chaged its license to
 GPL version 3 (as it is stated in the linked mail), 
 so that may raise a license issue
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-31 22:43:49
+archive/issue_comments_010336.json:
+```json
+{
+    "body": "All licensing issues regarding GPL V3 and Sage have been resolved by the relicensing of Singular 3-0-4 to \"GPL V2 and V3\".\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-31T22:43:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10336",
+    "user": "mabshoff"
+}
+```
 
 All licensing issues regarding GPL V3 and Sage have been resolved by the relicensing of Singular 3-0-4 to "GPL V2 and V3".
 
@@ -45,16 +103,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by pdenapo created at 2008-01-22 00:38:32
+archive/issue_comments_010337.json:
+```json
+{
+    "body": "The other posible problematic package regarding licensing issues is Pari, that I believe is GPL-2",
+    "created_at": "2008-01-22T00:38:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10337",
+    "user": "pdenapo"
+}
+```
 
 The other posible problematic package regarding licensing issues is Pari, that I believe is GPL-2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-22 00:48:35
+archive/issue_comments_010338.json:
+```json
+{
+    "body": "Nope, pari is licensed under:\n\n```\nPARI/GP is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation. It is distributed in the hope that it will be useful, but WITHOUT\nANY WARRANTY WHATSOEVER.\n```\n\nSince they do not mention a specific version it is any GPL license version, which include GPL V3. They do ship a copy of the GPL V2 in their sources tarball, but that doesn't imply GPL V2.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-22T00:48:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10338",
+    "user": "mabshoff"
+}
+```
 
 Nope, pari is licensed under:
 
@@ -72,16 +152,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-01-22 00:49:45
+archive/issue_comments_010339.json:
+```json
+{
+    "body": "PARI is *not* GPL-2.  It is \"GPL versions >= 2\".  They include the GPL V2 license file, but that file very explicitly says that anything licensed under it is GPL >= 2 unless there is an explicit statement to the contrary elsewhere in the distribution, which there isn't.",
+    "created_at": "2008-01-22T00:49:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10339",
+    "user": "was"
+}
+```
 
 PARI is *not* GPL-2.  It is "GPL versions >= 2".  They include the GPL V2 license file, but that file very explicitly says that anything licensed under it is GPL >= 2 unless there is an explicit statement to the contrary elsewhere in the distribution, which there isn't.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-25 22:03:28
+archive/issue_comments_010340.json:
+```json
+{
+    "body": "The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha2/gsl-1.10.spkg\n\nIt builds fine on OSX & Linux. Currently doctesting.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-25T22:03:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10340",
+    "user": "mabshoff"
+}
+```
 
 The updated spkg is at
 
@@ -94,9 +196,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-25 22:55:45
+archive/issue_comments_010341.json:
+```json
+{
+    "body": "I am seeing the following doctest failure:\n\n```\nsage -t  devel/sage-main/sage/rings/real_double.pyx\n**********************************************************************\nFile \"real_double.pyx\", line 477:\n    sage: a = -RDF(1)/RDF(0); a.str()\nExpected:\n    '-inf'\nGot:\n    'inf'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-25T22:55:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10341",
+    "user": "mabshoff"
+}
+```
 
 I am seeing the following doctest failure:
 
@@ -118,9 +231,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-25 23:12:21
+archive/issue_comments_010342.json:
+```json
+{
+    "body": "Another remark: The `spkg-check` target is broken, I am looking into that.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-25T23:12:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10342",
+    "user": "mabshoff"
+}
+```
 
 Another remark: The `spkg-check` target is broken, I am looking into that.
 
@@ -129,9 +253,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-25 23:49:53
+archive/issue_comments_010343.json:
+```json
+{
+    "body": "Ok, this boils down that at least on MacIntel OSX 10.5 the system's `isinf` returns always 1, i.e. all inf's are positive. The issue does not pop up on Linux at all and I have a fixed gsl.spkg that uses a workaround on OSX only.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-25T23:49:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10343",
+    "user": "mabshoff"
+}
+```
 
 Ok, this boils down that at least on MacIntel OSX 10.5 the system's `isinf` returns always 1, i.e. all inf's are positive. The issue does not pop up on Linux at all and I have a fixed gsl.spkg that uses a workaround on OSX only.
 
@@ -140,9 +275,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 00:16:52
+archive/issue_comments_010344.json:
+```json
+{
+    "body": "An updated spkg, that passes doctests now on OSX & Linux is at:\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha2/gsl-1.10.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-26T00:16:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10344",
+    "user": "mabshoff"
+}
+```
 
 An updated spkg, that passes doctests now on OSX & Linux is at:
 
@@ -153,15 +299,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 00:19:12
+archive/issue_comments_010345.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-26T00:19:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10345",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 00:19:26
+archive/issue_comments_010346.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha2",
+    "created_at": "2008-01-26T00:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1623#issuecomment-10346",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha2

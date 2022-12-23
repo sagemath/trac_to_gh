@@ -1,11 +1,21 @@
 # Issue 1157: make sure the sage vmware image files are < 2GB
 
-Issue created by migration from https://trac.sagemath.org/ticket/1157
-
-Original creator: was
-
-Original creation time: 2007-11-12 20:54:29
-
+archive/issues_001157.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n\nThat is the problem, as the file is 2.2GB.  \n\n-rw------- 1 sage sage 2.2G 2007-11-07 09:52 Ubuntu.vmdk\n\nI think it's supposed to be easy (and sometimes very desirable)\nto convert a filesystem in Windows from FAT32 to NTFS.  This\nwill make the filesystem journaled, which means the person won't\nsee the \"checking the file system\" blue screen whenever Windows\ncrashes and reboots.     \n\nThat said -- vmware has an option to split virtual disks into files\nthat are all < 2GB.  I will definitely fix the vmware machine when\ni get back to Seattle to only include files that are < 2GB. However,\nthis will have to wait about a week.   \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1157\n\n",
+    "created_at": "2007-11-12T20:54:29Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "make sure the sage vmware image files are < 2GB",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1157",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -28,17 +38,43 @@ this will have to wait about a week.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1157
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-15 07:24:59
+archive/issue_comments_007061.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to was*.",
+    "created_at": "2007-11-15T07:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7061",
+    "user": "was"
+}
+```
 
 Changing assignee from mabshoff to was*.
 
 
+
 ---
 
-Comment by was created at 2007-11-15 07:24:59
+archive/issue_comments_007062.json:
+```json
+{
+    "body": "\n```\nThis is ticket #1157  - see http://sagetrac.org/sage_trac/ticket/1157\n\nWilliam: you can convert the image using vdiskmanager. There is even a\nGUI for OSX to do that - see  http://communities.vmware.com/message/674493\n- that way I don't have to upload the images to sagemath. I am not\nsure why I got this ticket assigned, but now the ball is back in your\ncourt ;)\n\nCheers,\n\nMichael\n```\n",
+    "created_at": "2007-11-15T07:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7062",
+    "user": "was"
+}
+```
 
 
 ```
@@ -57,22 +93,55 @@ Michael
 
 
 
+
 ---
 
-Comment by was created at 2007-11-15 07:25:06
+archive/issue_comments_007063.json:
+```json
+{
+    "body": "Changing assignee from was* to was.",
+    "created_at": "2007-11-15T07:25:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7063",
+    "user": "was"
+}
+```
 
 Changing assignee from was* to was.
 
 
+
 ---
 
-Comment by was created at 2007-11-15 07:25:06
+archive/issue_comments_007064.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-15T07:25:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7064",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-11-22 04:24:32
+archive/issue_comments_007065.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-22T04:24:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7065",
+    "user": "was"
+}
+```
 
 Resolution: fixed

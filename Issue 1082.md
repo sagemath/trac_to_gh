@@ -1,48 +1,117 @@
 # Issue 1082: "sage -upgrade" behaves poorly when sage-main has not-checked-in changes
 
-Issue created by migration from https://trac.sagemath.org/ticket/1082
-
-Original creator: cwitty
-
-Original creation time: 2007-11-03 18:08:01
-
+archive/issues_001082.json:
+```json
+{
+    "body": "Assignee: was\n\nCurrently, \"sage -upgrade\" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.\n\nInstead, \"sage -upgrade\" should either explain what's going on before it checks in the code, or explain what's going on and then exit without doing anything, so the user can use hg_sage.ci().\n\nIssue created by migration from https://trac.sagemath.org/ticket/1082\n\n",
+    "created_at": "2007-11-03T18:08:01Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "\"sage -upgrade\" behaves poorly when sage-main has not-checked-in changes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1082",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 Currently, "sage -upgrade" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.
 
 Instead, "sage -upgrade" should either explain what's going on before it checks in the code, or explain what's going on and then exit without doing anything, so the user can use hg_sage.ci().
 
+Issue created by migration from https://trac.sagemath.org/ticket/1082
+
+
+
+
 
 ---
 
-Comment by mmezzarobba created at 2014-02-02 10:54:28
+archive/issue_comments_006539.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-02-02T10:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1082",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6539",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-02 10:54:28
+archive/issue_comments_006540.json:
+```json
+{
+    "body": "No more relevant?",
+    "created_at": "2014-02-02T10:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1082",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6540",
+    "user": "mmezzarobba"
+}
+```
 
 No more relevant?
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-02-09 21:36:09
+archive/issue_comments_006541.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-02-09T21:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1082",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6541",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-02-09 21:36:09
+archive/issue_comments_006542.json:
+```json
+{
+    "body": "No longer relevant.",
+    "created_at": "2014-02-09T21:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1082",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6542",
+    "user": "aapitzsch"
+}
+```
 
 No longer relevant.
 
 
+
 ---
 
-Comment by vbraun created at 2014-02-11 21:21:19
+archive/issue_comments_006543.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2014-02-11T21:21:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1082",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6543",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

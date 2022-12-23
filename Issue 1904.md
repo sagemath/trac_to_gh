@@ -1,11 +1,21 @@
 # Issue 1904: elliptic curves -- many period lattice functions just don't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/1904
-
-Original creator: was
-
-Original creation time: 2008-01-24 02:46:27
-
+archive/issues_001904.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  davidloeffler\n\n\n```\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.986917292463919259664019958905016355595167582740265970681046757126500713973\nsage: Lambda.matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\nsage: Lambda.gram_matrix()\nTraceback (most recent call last):\n...\nAttributeError: 'PeriodLattice_ell' object has no attribute 'ambient_vector_space'\nsage: Lambda.basis()\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987, 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: Lambda.basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 2.451389381986790060854224831866525225349617289144796614656471406129152899999*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\ns\n```\n\n\nThe root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1904\n\n",
+    "created_at": "2008-01-24T02:46:27Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "elliptic curves -- many period lattice functions just don't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1904",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  davidloeffler
@@ -36,10 +46,25 @@ s
 
 The root cause of this is that Period lattices actually derive from the abstract free module type, but they don't implement all the functionality that type requires. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1904
+
+
+
+
 
 ---
 
-Comment by cremona created at 2008-09-09 14:22:07
+archive/issue_comments_012051.json:
+```json
+{
+    "body": "Just to confirm that none of this has changed yet despite a lot of (mainly precision-related) work on period lattices leading up to 3.1.2.\n\nI'm not sure what benefits, if any, the class PeriodLattice_ell gains from being derived from FreeModule_generic_pid (via class PeriodLattice), but it means that len(dir(L)) is 210 so there's a lot of work to do implementing possibly trivial and possibly irrelevant things.\n\nThe issue is that a FreeModule_generic_pid seems to think that it's a submodule of some concrete module like `ZZ^n`, rather than being an abstract module;  functions like basis_matrix() make no sense in general.\n\nIf anyone can point out a method of FreeModule_generic_pid which PeriodLattice_ell should implement but does not, I would be happy to implement it.",
+    "created_at": "2008-09-09T14:22:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12051",
+    "user": "cremona"
+}
+```
 
 Just to confirm that none of this has changed yet despite a lot of (mainly precision-related) work on period lattices leading up to 3.1.2.
 
@@ -50,74 +75,184 @@ The issue is that a FreeModule_generic_pid seems to think that it's a submodule 
 If anyone can point out a method of FreeModule_generic_pid which PeriodLattice_ell should implement but does not, I would be happy to implement it.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-11-04 11:59:43
+archive/issue_comments_012052.json:
+```json
+{
+    "body": "Just for the record: ticket #4388 goes some way towards fixing this by providing a basis_matrix() method for period lattices. This fixes all of the problems reported by was above, but several issues remain: for example, I can't seem to create any nonzero element of a period lattice -- the return values of basis() are plain complex numbers, not elements of the lattice, and attempting to coerce them back into the lattice fails.",
+    "created_at": "2008-11-04T11:59:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12052",
+    "user": "davidloeffler"
+}
+```
 
 Just for the record: ticket #4388 goes some way towards fixing this by providing a basis_matrix() method for period lattices. This fixes all of the problems reported by was above, but several issues remain: for example, I can't seem to create any nonzero element of a period lattice -- the return values of basis() are plain complex numbers, not elements of the lattice, and attempting to coerce them back into the lattice fails.
 
 
+
 ---
 
-Comment by cremona created at 2008-11-04 12:06:04
+archive/issue_comments_012053.json:
+```json
+{
+    "body": "You are right, David.  For me this class is just a sort of place-holder to hold the data needed for when you ask an elliptic curve about its periods and related things.  I never thought about it as a lattice in any precise sense.  (I did not create the class, by the way, but I have added to it -- for example, support for real embeddings of number fields, not just Q).\n\nFeel free to let it behave more sensibly for what you need by adding stuff!  John",
+    "created_at": "2008-11-04T12:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12053",
+    "user": "cremona"
+}
+```
 
 You are right, David.  For me this class is just a sort of place-holder to hold the data needed for when you ask an elliptic curve about its periods and related things.  I never thought about it as a lattice in any precise sense.  (I did not create the class, by the way, but I have added to it -- for example, support for real embeddings of number fields, not just Q).
 
 Feel free to let it behave more sensibly for what you need by adding stuff!  John
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-23 07:06:33
+archive/issue_comments_012054.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-23T07:06:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12054",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:47:23
+archive/issue_comments_012055.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-20T19:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12055",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:47:23
+archive/issue_comments_012056.json:
+```json
+{
+    "body": "Assigned to new \"elliptic curves\" component.",
+    "created_at": "2009-07-20T19:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12056",
+    "user": "davidloeffler"
+}
+```
 
 Assigned to new "elliptic curves" component.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:47:23
+archive/issue_comments_012057.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2009-07-20T19:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12057",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to elliptic curves.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-10-09 09:12:51
+archive/issue_comments_012058.json:
+```json
+{
+    "body": "Remove assignee davidloeffler.",
+    "created_at": "2009-10-09T09:12:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12058",
+    "user": "davidloeffler"
+}
+```
 
 Remove assignee davidloeffler.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-09-16 13:11:33
+archive/issue_comments_012059.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"ecc2011\".",
+    "created_at": "2011-09-16T13:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12059",
+    "user": "zimmerma"
+}
+```
 
 Changing keywords from "" to "ecc2011".
 
 
+
 ---
 
-Comment by zimmerma created at 2011-09-16 13:11:33
+archive/issue_comments_012060.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2011-09-16T13:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12060",
+    "user": "zimmerma"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-09-16 13:11:33
+archive/issue_comments_012061.json:
+```json
+{
+    "body": "the examples in the description work with Sage 4.7.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 9322\nsage: E = EllipticCurve('37a1')\nsage: Lambda = E.period_lattice()\nsage: OE = Lambda.omega(); OE\n5.98691729246392\nsage: Lambda.matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\nsage: Lambda.gram_matrix()\n[ 8.96079466670088 0.000000000000000]\n[0.000000000000000  6.00930990211758]\nsage: Lambda.basis()\n(2.99345864623196, 2.45138938198679*I)\nsage: Lambda.basis_matrix()\n[ 2.99345864623196 0.000000000000000]\n[0.000000000000000  2.45138938198679]\n```\n\nShould this ticket be closed?\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "created_at": "2011-09-16T13:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12061",
+    "user": "zimmerma"
+}
+```
 
 the examples in the description work with Sage 4.7.1:
 
@@ -148,9 +283,20 @@ Should this ticket be closed?
 Paul
 
 
+
 ---
 
-Comment by cremona created at 2011-09-16 13:34:20
+archive/issue_comments_012062.json:
+```json
+{
+    "body": "Replying to [comment:7 zimmerma]:\n\n> Should this ticket be closed?\n> \n> Paul\n\nIn my opinion, yes, but see the comments above by David Loeffler.",
+    "created_at": "2011-09-16T13:34:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12062",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:7 zimmerma]:
 
@@ -161,29 +307,73 @@ Replying to [comment:7 zimmerma]:
 In my opinion, yes, but see the comments above by David Loeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-09-16 13:48:15
+archive/issue_comments_012063.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-09-16T13:48:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12063",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-09-16 13:48:15
+archive/issue_comments_012064.json:
+```json
+{
+    "body": "I concur with the vote to close. Setting this to \"positive review\" to bring it to the notice of someone who has the authority to do so. -- David",
+    "created_at": "2011-09-16T13:48:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12064",
+    "user": "davidloeffler"
+}
+```
 
 I concur with the vote to close. Setting this to "positive review" to bring it to the notice of someone who has the authority to do so. -- David
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-09-16 13:48:30
+archive/issue_comments_012065.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-09-16T13:48:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12065",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2011-09-17 05:47:22
+archive/issue_comments_012066.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-09-17T05:47:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1904#issuecomment-12066",
+    "user": "leif"
+}
+```
 
 Resolution: fixed

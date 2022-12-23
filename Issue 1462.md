@@ -1,11 +1,21 @@
 # Issue 1462: speed up "sage -b" -- don't do anything cython stuff if no .pyx, .pxd, or .pxi file changes (not a dupe!)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1462
-
-Original creator: was
-
-Original creation time: 2007-12-11 20:17:38
-
+archive/issues_001462.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is a very very simple patch that makes it so \n\n  sage -b\n\ntakes 1 seconds (on my mac laptop) instead of 10 seconds, so long as \nno Cython code has changed.  Otherwise it works just as before.\n\nThis is orthogonal to Bobby Moretti's patch for caching Cython dependencies.\nBoth should be used.\n\nThis is much simpler -- all it does is -- in 1/100th of a second (or so) compute a hash got from all cython-related files in the repo, and if that hasn't changed from last time, skip all cython-ing of code. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1462\n\n",
+    "created_at": "2007-12-11T20:17:38Z",
+    "labels": [
+        "user interface",
+        "major",
+        "enhancement"
+    ],
+    "title": "speed up \"sage -b\" -- don't do anything cython stuff if no .pyx, .pxd, or .pxi file changes (not a dupe!)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1462",
+    "user": "was"
+}
+```
 Assignee: was
 
 This is a very very simple patch that makes it so 
@@ -22,26 +32,78 @@ This is much simpler -- all it does is -- in 1/100th of a second (or so) compute
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1462
+
+
+
+
 
 ---
+
+archive/issue_comments_009415.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-11T20:18:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1462",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1462#issuecomment-9415",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-12-12 15:55:20
+archive/issue_comments_009416.json:
+```json
+{
+    "body": "I applied this for 2.9.",
+    "created_at": "2007-12-12T15:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1462",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1462#issuecomment-9416",
+    "user": "was"
+}
+```
 
 I applied this for 2.9.
 
 
+
 ---
 
-Comment by was created at 2007-12-12 15:55:20
+archive/issue_comments_009417.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-12T15:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1462",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1462#issuecomment-9417",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_009418.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-13T23:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1462",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1462#issuecomment-9418",
+    "user": "was"
+}
+```
 
 Attachment

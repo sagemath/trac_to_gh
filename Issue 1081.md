@@ -1,11 +1,21 @@
 # Issue 1081: [patch attached] update the deps file
 
-Issue created by migration from https://trac.sagemath.org/ticket/1081
-
-Original creator: was
-
-Original creation time: 2007-11-03 17:26:52
-
+archive/issues_001081.json:
+```json
+{
+    "body": "Assignee: was\n\nHi,\n\nIt's very important to update the deps file so that upgrading 10.5 works now.\n\nUse this file:\n\nhttp://sagemath.org/packages/standard/deps\n\nThis ticket is mainly for Michael Abshoff, the release manager for this release. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1081\n\n",
+    "created_at": "2007-11-03T17:26:52Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[patch attached] update the deps file",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1081",
+    "user": "was"
+}
+```
 Assignee: was
 
 Hi,
@@ -18,16 +28,42 @@ http://sagemath.org/packages/standard/deps
 
 This ticket is mainly for Michael Abshoff, the release manager for this release. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1081
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-06 21:49:52
+archive/issue_comments_006537.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-06T21:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1081#issuecomment-6537",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-06 21:49:52
+archive/issue_comments_006538.json:
+```json
+{
+    "body": "applied to 2.8.12.rc0",
+    "created_at": "2007-11-06T21:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1081#issuecomment-6538",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.12.rc0

@@ -1,11 +1,21 @@
 # Issue 666: add spacing in latex output of matrices for increasing readbility
 
-Issue created by migration from https://trac.sagemath.org/ticket/666
-
-Original creator: pdenapo
-
-Original creation time: 2007-09-16 18:43:39
-
+archive/issues_000666.json:
+```json
+{
+    "body": "Assignee: was\n\nCurrently, printing of matrices in Latex form is difficult to read. I'm submitting a (trivial) patch\nthat adds more spacing to increase readibility.\n\nExample: \n\n```\nsage: M=MatrixSpace(QQ,2,2)\nsage: A=M([[2,3],[4,5]])\nsage: latex(A)\n```\n\ncurrently gives:\n\n```\n\\left(\\begin{array}{rr}\n2&3\\\\\n4&5\n\\end{array}\\right)\n```\n\nMy patch changes this to \n\n```\n\\left(\\begin{array}{rr}\n2 & 3 \\\\\n4 & 5\n\\end{array}\\right)\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/666\n\n",
+    "created_at": "2007-09-16T18:43:39Z",
+    "labels": [
+        "linear algebra",
+        "trivial",
+        "bug"
+    ],
+    "title": "add spacing in latex output of matrices for increasing readbility",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/666",
+    "user": "pdenapo"
+}
+```
 Assignee: was
 
 Currently, printing of matrices in Latex form is difficult to read. I'm submitting a (trivial) patch
@@ -42,14 +52,42 @@ My patch changes this to
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/666
+
+
+
+
 
 ---
+
+archive/issue_comments_003454.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-16T18:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/666#issuecomment-3454",
+    "user": "pdenapo"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:40:03
+archive/issue_comments_003455.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-21T02:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/666#issuecomment-3455",
+    "user": "was"
+}
+```
 
 Resolution: fixed

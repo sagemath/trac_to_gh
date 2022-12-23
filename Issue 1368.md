@@ -1,30 +1,79 @@
 # Issue 1368: fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1368
-
-Original creator: was
-
-Original creation time: 2007-12-02 09:44:38
-
+archive/issues_001368.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1368\n\n",
+    "created_at": "2007-12-02T09:44:38Z",
+    "labels": [
+        "algebraic geometry",
+        "critical",
+        "bug"
+    ],
+    "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1368",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1368
+
+
+
+
 
 ---
+
+archive/issue_comments_008794.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-02T16:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1368",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1368#issuecomment-8794",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-03 01:55:22
+archive/issue_comments_008795.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-03T01:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1368",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1368#issuecomment-8795",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-03 01:55:22
+archive/issue_comments_008796.json:
+```json
+{
+    "body": "Merged in 2.8.15.rc0.",
+    "created_at": "2007-12-03T01:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1368",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1368#issuecomment-8796",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.rc0.

@@ -1,21 +1,46 @@
 # Issue 946: hang when doctesting calculus.py on some systems
 
-Issue created by migration from https://trac.sagemath.org/ticket/946
-
-Original creator: was
-
-Original creation time: 2007-10-20 17:23:23
-
+archive/issues_000946.json:
+```json
+{
+    "body": "Assignee: was\n\nRemove the lines with # not tested -- trac #number\nin them from calculus.py to replicate this problem on sage.math. \nIt might be a weird hanging issue with maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/946\n\n",
+    "created_at": "2007-10-20T17:23:23Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "hang when doctesting calculus.py on some systems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/946",
+    "user": "was"
+}
+```
 Assignee: was
 
 Remove the lines with # not tested -- trac #number
 in them from calculus.py to replicate this problem on sage.math. 
 It might be a weird hanging issue with maxima.
 
+Issue created by migration from https://trac.sagemath.org/ticket/946
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-29 05:48:37
+archive/issue_comments_005781.json:
+```json
+{
+    "body": "This needs some investigation, so if it doesn't make it this should be BD5 material.\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T05:48:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5781",
+    "user": "mabshoff"
+}
+```
 
 This needs some investigation, so if it doesn't make it this should be BD5 material.
 
@@ -24,20 +49,55 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_005782.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-08T20:09:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5782",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-11-18 04:06:25
+archive/issue_comments_005783.json:
+```json
+{
+    "body": "GOOD -- if when applied the tests still work then by definition this patch is good.",
+    "created_at": "2007-11-18T04:06:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5783",
+    "user": "was"
+}
+```
 
 GOOD -- if when applied the tests still work then by definition this patch is good.
 
 
+
 ---
 
-Comment by was created at 2007-11-27 06:25:12
+archive/issue_comments_005784.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-27T06:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/946#issuecomment-5784",
+    "user": "was"
+}
+```
 
 Resolution: fixed

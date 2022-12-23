@@ -1,26 +1,62 @@
 # Issue 1910: linear algebra -- doctesting for sage/matrix/matrix_field_dense.pyx is off for no good reason, and there are lots of problems when we turn it on.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1910
-
-Original creator: was
-
-Original creation time: 2008-01-24 15:17:11
-
+archive/issues_001910.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1910\n\n",
+    "created_at": "2008-01-24T15:17:11Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "linear algebra -- doctesting for sage/matrix/matrix_field_dense.pyx is off for no good reason, and there are lots of problems when we turn it on.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1910",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1910
+
+
+
+
 
 ---
 
-Comment by dfdeshom created at 2008-03-04 17:07:20
+archive/issue_comments_012102.json:
+```json
+{
+    "body": "This seems to be the reason: matrix_field_dense.pyx has matrix_pid_dense has its parent, but matrix_pid_dense doesn't even exist (yet)! Same for matrix_field_sparse and its counterpart, matrix_pid_sparse.",
+    "created_at": "2008-03-04T17:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1910#issuecomment-12102",
+    "user": "dfdeshom"
+}
+```
 
 This seems to be the reason: matrix_field_dense.pyx has matrix_pid_dense has its parent, but matrix_pid_dense doesn't even exist (yet)! Same for matrix_field_sparse and its counterpart, matrix_pid_sparse.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-11 16:00:57
+archive/issue_comments_012103.json:
+```json
+{
+    "body": "The file in question does not exist any more in Sage 3.2.2.alpha2, so I am closing this as wontfix:\n\n```\nsage-3.2.2.alpha2/devel/sage$ ls -al sage/matrix/matrix_dense*\n-rw-r--r-- 1 mabshoff 1090 264468 2008-12-10 06:41 sage/matrix/matrix_dense.c\n-rw-r--r-- 1 mabshoff 1090     66 2008-12-08 02:44 sage/matrix/matrix_dense.pxd\n-rw-r--r-- 1 mabshoff 1090  10782 2008-12-10 06:40 sage/matrix/matrix_dense.pyx\n```\n\nI also used find to locate the file elsewhere in the tree and it isn't there any more :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-11T16:00:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1910#issuecomment-12103",
+    "user": "mabshoff"
+}
+```
 
 The file in question does not exist any more in Sage 3.2.2.alpha2, so I am closing this as wontfix:
 
@@ -38,8 +74,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-11 16:00:57
+archive/issue_comments_012104.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-12-11T16:00:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1910#issuecomment-12104",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix

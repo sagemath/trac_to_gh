@@ -1,11 +1,21 @@
 # Issue 1054: add number fields documentation to the reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/1054
-
-Original creator: was
-
-Original creation time: 2007-11-01 20:03:28
-
+archive/issues_001054.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  rlm\n\nThe reference manual chapter on number fields only lists number fields and their elements as sections.  It should also list orders, class groups, etc.  I.e., because of code refactoring.\n\nThis is just a few lines added to the ref repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1054\n\n",
+    "created_at": "2007-11-01T20:03:28Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "add number fields documentation to the reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1054",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  rlm
@@ -14,23 +24,60 @@ The reference manual chapter on number fields only lists number fields and their
 
 This is just a few lines added to the ref repository.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1054
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-01-25 00:16:06
+archive/issue_comments_006412.json:
+```json
+{
+    "body": "Changing component from notebook to documentation.",
+    "created_at": "2008-01-25T00:16:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#issuecomment-6412",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from notebook to documentation.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-16 06:10:05
+archive/issue_comments_006413.json:
+```json
+{
+    "body": "Can this be closed now as fixed? The chapter [Algebraic Number Fields](http://www.sagemath.org/doc/reference/number_fields.html) in the reference manual contains sections on various topics on number fields.",
+    "created_at": "2010-01-16T06:10:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#issuecomment-6413",
+    "user": "mvngu"
+}
+```
 
 Can this be closed now as fixed? The chapter [Algebraic Number Fields](http://www.sagemath.org/doc/reference/number_fields.html) in the reference manual contains sections on various topics on number fields.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-18 19:03:24
+archive/issue_comments_006414.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-01-18T19:03:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1054#issuecomment-6414",
+    "user": "rlm"
+}
+```
 
 Resolution: worksforme

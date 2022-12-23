@@ -1,11 +1,21 @@
 # Issue 1804: Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption
 
-Issue created by migration from https://trac.sagemath.org/ticket/1804
-
-Original creator: was
-
-Original creation time: 2008-01-17 19:52:14
-
+archive/issues_001804.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis is LAME:\n\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F*F\nx^6 * y^4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1804\n\n",
+    "created_at": "2008-01-17T19:52:14Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1804",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 This is LAME:
@@ -20,10 +30,25 @@ x^6 * y^4
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1804
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-17 19:57:48
+archive/issue_comments_011402.json:
+```json
+{
+    "body": "Same comments apply to __invert__ in the file factorization.py.  \n\n```\nsage: R.<x,y> = FreeAlgebra(QQ, 2)\nsage: F = Factorization([(x,3), (y,2)]); F\nx^3 * y^2\nsage: F^(-1)\nx^-3 * y^-2\n\n```\n",
+    "created_at": "2008-01-17T19:57:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11402",
+    "user": "was"
+}
+```
 
 Same comments apply to __invert__ in the file factorization.py.  
 
@@ -38,27 +63,73 @@ x^-3 * y^-2
 
 
 
+
 ---
+
+archive/issue_comments_011403.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-20T00:35:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11403",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-21 02:04:22
+archive/issue_comments_011404.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-01-21T02:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11404",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:10:09
+archive/issue_comments_011405.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T02:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11405",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:10:09
+archive/issue_comments_011406.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T02:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1804#issuecomment-11406",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1

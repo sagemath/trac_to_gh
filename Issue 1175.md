@@ -1,11 +1,21 @@
 # Issue 1175: circular link in sage/local/lib/python2.5
 
-Issue created by migration from https://trac.sagemath.org/ticket/1175
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-15 08:27:09
-
+archive/issues_001175.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWhen building sage-2.8.12, there are two circular links in sage/local/lib/python2.5:\n\n```\nachille% pwd\n/net/achille/localdisk/zimmerma/sage-2.8.12/local/lib/python2.5\nachille% ls -l pyt*\nlrwxrwxrwx 1 zimmerma spaces 6 2007-11-14 09:53 python -> python\nlrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1175\n\n",
+    "created_at": "2007-11-15T08:27:09Z",
+    "labels": [
+        "distribution",
+        "minor",
+        "bug"
+    ],
+    "title": "circular link in sage/local/lib/python2.5",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1175",
+    "user": "zimmerma"
+}
+```
 Assignee: mabshoff
 
 When building sage-2.8.12, there are two circular links in sage/local/lib/python2.5:
@@ -19,10 +29,25 @@ lrwxrwxrwx 1 zimmerma spaces 9 2007-11-14 09:53 python2.5 -> python2.5
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1175
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-21 22:20:49
+archive/issue_comments_007265.json:
+```json
+{
+    "body": "I thought we did fix that a while ago. Kate did report at least a similar issue. I will look into this in this release cycle.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-21T22:20:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7265",
+    "user": "mabshoff"
+}
+```
 
 I thought we did fix that a while ago. Kate did report at least a similar issue. I will look into this in this release cycle.
 
@@ -31,9 +56,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-19 07:40:53
+archive/issue_comments_007266.json:
+```json
+{
+    "body": "Ok, while we fixed the issue in the python.spkg itself the same problem pops up when we install the mercurial.spkg. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/mercurial-0.9.5.p0.spkg\n\nfixes that issue and actually creates an hg repo inside the spkk as well as does some general cleanup. Another python based spkg might still recreate those links, so this might not be over yet.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-19T07:40:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7266",
+    "user": "mabshoff"
+}
+```
 
 Ok, while we fixed the issue in the python.spkg itself the same problem pops up when we install the mercurial.spkg. The spkg at
 
@@ -46,15 +82,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2007-12-19 19:08:01
+archive/issue_comments_007267.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-19T19:08:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7267",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2007-12-19 19:08:01
+archive/issue_comments_007268.json:
+```json
+{
+    "body": "Merged in Sage 2.9.1 alpha2",
+    "created_at": "2007-12-19T19:08:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7268",
+    "user": "rlm"
+}
+```
 
 Merged in Sage 2.9.1 alpha2

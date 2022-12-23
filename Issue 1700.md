@@ -1,17 +1,44 @@
 # Issue 1700: [with patch] Fix doctesting on some file systems
 
-Issue created by migration from https://trac.sagemath.org/ticket/1700
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-06 13:16:18
-
+archive/issues_001700.json:
+```json
+{
+    "body": "Assignee: failure\n\nThis is a patch by William which fixes doctesting on some unspecified file system. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1700\n\n",
+    "created_at": "2008-01-06T13:16:18Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] Fix doctesting on some file systems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1700",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 This is a patch by William which fixes doctesting on some unspecified file system. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1700
+
+
+
+
 
 ---
+
+archive/issue_comments_010776.json:
+```json
+{
+    "body": "Attachment\n\nThis is a post merge ticket for completeness. It works for me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-06T13:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1700#issuecomment-10776",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-06 13:17:34
+archive/issue_comments_010777.json:
+```json
+{
+    "body": "Merged in 2.9.3",
+    "created_at": "2008-01-06T13:17:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1700#issuecomment-10777",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-06 13:17:34
+archive/issue_comments_010778.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-06T13:17:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1700#issuecomment-10778",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

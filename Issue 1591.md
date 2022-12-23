@@ -1,11 +1,21 @@
 # Issue 1591: cygwin -- immediately terminate the build
 
-Issue created by migration from https://trac.sagemath.org/ticket/1591
-
-Original creator: was
-
-Original creation time: 2007-12-23 14:45:49
-
+archive/issues_001591.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nI thought we already wrote code so building sage on cygwin would *immediately* terminate the build with a \"it won't work\" error.  Same with gcc <= 3.3.  But\nwe keep getting emails like this on sage-support:\n\n```\nI just downloaded sage 2.9 source code tar from http://www.sagemath.org/dist/src/index.html\n\ndid tar xvf on it, then did make.\n\nI get this build error below.\nI am using cygwin\n\n$ uname -a\nCYGWIN_NT-5.1 computer-h20djr 1.5.24(0.156/4/2) 2007-01-31 10:57 i686\nCygwin\n\n$ gcc -v\ngcc version 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)\n\n$ python -v\nPython 2.5 (r25:51908, Mar 13 2007, 08:13:14)\n[GCC 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)] on cygwin\n\n---- part of log file where error occured ---------\n\n gcc -c -DHAVE_CONFIG_H -I. -I. -I.. -D__GMP_WITHIN_GMP -I.. -\nDOPERATION_dive_1\n-m32 -O2 -fomit-frame-pointer -mtune=pentium3 -march=pentium3 tmp-\ndive_1.s -DPIC\n -o .libs/dive_1.o\n/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../i686-pc-cygwin/bin/as:\nBFD 2.17.50\n 20060817 assertion fail /netrel/src/binutils-20060817-1/bfd/coff-\ni386.c:576\ntmp-dive_1.s: Assembler messages:\ntmp-dive_1.s:110: Error: cannot represent relocation type\nBFD_RELOC_386_GOTPC\nmake[4]: *** [dive_1.lo] Error 1\nmake[4]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src/mpn'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg/build/gmp-4.2.1.p12/src'\nError building GMP.\n\nreal    1m47.938s\nuser    4m16.002s\nsys     1m1.670s\nsage: An error occurred while installing gmp-4.2.1.p12\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/install.log.\nDescribe you\nr computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/spkg/build/\ngmp-4.2.1.p12 and\ntype 'make'.\nInstead type \"/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/sage -\nsh\"\nin order to set all environment variables correctly, then cd to\n/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/sage-2.9/spkg/build/\ngmp-4.2.1.p12\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/gmp-4.2.1.p12] Error 1\nmake[1]: Leaving directory `/cygdrive/e/nabbasi/data/CDROM/DVD11/SAGE/\nsage-2.9/s\npkg'\n\nreal    2m4.192s\nuser    4m25.386s\nsys     1m4.705s\n\n\nNasser\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1591\n\n",
+    "created_at": "2007-12-23T14:45:49Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin -- immediately terminate the build",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1591",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 I thought we already wrote code so building sage on cygwin would *immediately* terminate the build with a "it won't work" error.  Same with gcc <= 3.3.  But
@@ -93,10 +103,25 @@ Nasser
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1591
+
+
+
+
 
 ---
 
-Comment by was created at 2007-12-27 06:52:25
+archive/issue_comments_010128.json:
+```json
+{
+    "body": "From Mabshoff:\n\n```\n> I've created ticket #1591 to address this sort of thing happening:\n>\n>    http://trac.sagemath.org/sage_trac/ticket/1591\n>\n> I'm actually surprised, since I thought we already wrote code to prevent it.\n\nI just tested and Sage prints a message informing the user that it\nisn't supported, but then goes on happily :)\n```\n",
+    "created_at": "2007-12-27T06:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1591#issuecomment-10128",
+    "user": "was"
+}
+```
 
 From Mabshoff:
 
@@ -113,9 +138,20 @@ isn't supported, but then goes on happily :)
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-30 19:45:04
+archive/issue_comments_010129.json:
+```json
+{
+    "body": "Even if we terminate the build by default I would really like to bypass this by setting some magic env-variable to keep the port alive. The same should happen on Solaris.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-30T19:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1591#issuecomment-10129",
+    "user": "mabshoff"
+}
+```
 
 Even if we terminate the build by default I would really like to bypass this by setting some magic env-variable to keep the port alive. The same should happen on Solaris.
 
@@ -124,16 +160,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 15:21:21
+archive/issue_comments_010130.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-03T15:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1591#issuecomment-10130",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 15:21:21
+archive/issue_comments_010131.json:
+```json
+{
+    "body": "I added the following to `spkg/base/prereq-0.3-install`:\n\n```\nif [ \"$SAGE_PORT\" = \"\" ]; then\n   if [ `uname | sed -e 's/WIN.\\+/WIN/'` = \"CYGWIN\" ]; then\n      echo \"Building or using SAGE with Cygwin is absolutely definitely\"\n      echo \"not supported, and will definitely not work.  The only way\"\n      echo \"to run SAGE on Windows, is via VMware (or Virtual PC or \"\n      echo \"some other virtualization system such as andLinux).\"\n      echo \"NOTE: SAGE used to support Cygwin several months ago (around March\"\n      echo \"2007), so you may have seen some old documentation about this.\"\n      exit -1\n   fi\n   if [ `uname` = \"SunOS\" ]; then\n      echo \"Building or using Sage on Solaris is tricky and not supported\"\n      echo \"at the moment. It is possible, but you should be well aware that\"\n      echo \"some things do not work. To get past this message export the\"\n      echo \"variable \\$SAGE_PORT to something non-empty. Support for Solaris\"\n      echo \"is actively being worked on.\"\n      exit -1\n   fi\nfi\n```\n\nThe first check, i.e. the Cygwin one was already there, but was missing the `exit -1`.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-03T15:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1591#issuecomment-10131",
+    "user": "mabshoff"
+}
+```
 
 I added the following to `spkg/base/prereq-0.3-install`:
 

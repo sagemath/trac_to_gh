@@ -1,26 +1,62 @@
 # Issue 1347: display the path to the sage_notebook directory when starting the notebook server
 
-Issue created by migration from https://trac.sagemath.org/ticket/1347
-
-Original creator: jason
-
-Original creation time: 2007-12-01 07:11:22
-
+archive/issues_001347.json:
+```json
+{
+    "body": "Assignee: boothby\n\nIt would be nice to display the path to the sage_notebook directory when we start up the notebook server so that people can easily see where the notebooks are being saved.  I think it would be nice either inside the starred box listing the URL or right under that box.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1347\n\n",
+    "created_at": "2007-12-01T07:11:22Z",
+    "labels": [
+        "notebook",
+        "trivial",
+        "enhancement"
+    ],
+    "title": "display the path to the sage_notebook directory when starting the notebook server",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1347",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 It would be nice to display the path to the sage_notebook directory when we start up the notebook server so that people can easily see where the notebooks are being saved.  I think it would be nice either inside the starred box listing the URL or right under that box.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1347
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-12-02 05:18:54
+archive/issue_comments_008639.json:
+```json
+{
+    "body": "The patch on #1349 implemented this.",
+    "created_at": "2007-12-02T05:18:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1347#issuecomment-8639",
+    "user": "jason"
+}
+```
 
 The patch on #1349 implemented this.
 
 
+
 ---
 
-Comment by jason created at 2007-12-02 05:18:54
+archive/issue_comments_008640.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-02T05:18:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1347#issuecomment-8640",
+    "user": "jason"
+}
+```
 
 Resolution: fixed

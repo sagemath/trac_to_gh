@@ -1,11 +1,21 @@
 # Issue 969: cvxopt miscompiled on OSX ppc
 
-Issue created by migration from https://trac.sagemath.org/ticket/969
-
-Original creator: was
-
-Original creation time: 2007-10-22 15:16:01
-
+archive/issues_000969.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn 10/22/07, Hamptonio <hamptonio@gmail.com> wrote:\n> I had the following failure from \"make test\",  from devel/sage-main/\n> sage/numerical/test.py.  I'm guessing its from the convoluted history\n> of my fortran installs on that machine (a powerpc apple powerbook):\n\nYou're right.  We added some doctests in test.py to specifically\ntest that all the convex optimization code really got built.\nEvidently it didn't for you.  If you aren't doing convex optimization\n(via cvxopt) this won't affect you. \n\nBy the way, I am able to replicate exactly this problem on my powerpc mac test machine.\n\n> sage -t  devel/sage-main/sage/numerical/test.py\n> **********************************************************************\n> File \"test.py\", line 4:\n>     : from cvxopt.base import *\n> Exception raised:\n>     Traceback (most recent call last):\n>       File \"/Users/mh/sage-2.8.4.1/local/lib/python2.5/doctest.py\",\n> line 1212, in __run\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_0[0]>\", line 1, in <module>\n>         from cvxopt.base import *###line 4:\n>     : from cvxopt.base import *\n>     ImportError: dlopen(/Users/mh/sage-2.8.4.1/local/lib/python/site-\n> packages/cvxopt/base.so, 2): Symbol not found: __g95_ioparm\n>       Referenced from: /Users/mh/sage-2.8.4.1/local/lib/python/site-\n> packages/cvxopt/base.so\n>       Expected in: dynamic lookup\n> \n> **********************************************************************\n> File \"test.py\", line 5:\n>     : from cvxopt import umfpack\n> Exception raised:\n>     Traceback (most recent call last):\n>       File \"/Users/mh/sage-2.8.4.1/local/lib/python2.5/doctest.py\",\n> line 1212, in __run\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n>         from cvxopt import umfpack###line 5:\n>     : from cvxopt import umfpack\n>     ImportError: dlopen(/Users/mh/sage-2.8.4.1/local/lib/python/site-\n> packages/cvxopt/umfpack.so, 2): Symbol not found: __g95_st_write_done\n>       Referenced from: /Users/mh/sage-2.8.4.1/local/lib/python/site-\n> packages/cvxopt/umfpack.so\n>       Expected in: dynamic lookup\n> \n> **********************************************************************\n> 1 items had failures:\n>    2 of   8 in __main__.example_0\n> ***Test Failed*** 2 failures.\n> \n> On Oct 21, 3:03 pm, \"John Cremona\" <john.crem...@gmail.com> wrote:\n> > Successfully upgraded to 2.8.8.1 on linux (Kubuntu 7.04):\n> >\n> > sage --testall\n> > (...)\n> >\n> > All tests passed!\n> > Total time for all tests: 1978.6 seconds\n> >\n> > John Cremona\n> \n> \n> --~--~---------~--~----~------------~-------~--~----~\n> To post to this group, send email to sage-devel@googlegroups.com\n> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/sage-devel\n> URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/\n> -~----------~----~----~----~------~----~------~--~---\n> \n> \n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/969\n\n",
+    "created_at": "2007-10-22T15:16:01Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "cvxopt miscompiled on OSX ppc",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/969",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -92,10 +102,25 @@ http://wstein.org
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/969
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-27 00:13:28
+archive/issue_comments_005915.json:
+```json
+{
+    "body": "NOTE -- this is definitely *not* fixed yet.  With my clean sage-2.8.9 install\non my 32-bit debian test machine this happens upon typing \n\nfrom cvxopt import solvers\n\n\n\nSpecifically there's a bug report about this from lwd8700 at yahoo in sage-support. \n\nWilliam",
+    "created_at": "2007-10-27T00:13:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5915",
+    "user": "was"
+}
+```
 
 NOTE -- this is definitely *not* fixed yet.  With my clean sage-2.8.9 install
 on my 32-bit debian test machine this happens upon typing 
@@ -109,9 +134,20 @@ Specifically there's a bug report about this from lwd8700 at yahoo in sage-suppo
 William
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-28 12:06:31
+archive/issue_comments_005916.json:
+```json
+{
+    "body": "The issue has been fixed upstream:\n\n```\nWe recently became aware of the build-problems on OSX.  The fixes are\nincluded in the next release of\nCVXOPT (>0.9).\n\nJoachim\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-28T12:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5916",
+    "user": "mabshoff"
+}
+```
 
 The issue has been fixed upstream:
 
@@ -129,32 +165,76 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-29 05:36:50
+archive/issue_comments_005917.json:
+```json
+{
+    "body": "Josh Kantor has created an updated cvxopt that fixes these problems:\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.8.2.p3.spkg",
+    "created_at": "2007-10-29T05:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5917",
+    "user": "was"
+}
+```
 
 Josh Kantor has created an updated cvxopt that fixes these problems:
 
 http://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.8.2.p3.spkg
 
 
+
 ---
 
-Comment by was created at 2007-10-29 05:36:50
+archive/issue_comments_005918.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2007-10-29T05:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5918",
+    "user": "was"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:17:18
+archive/issue_comments_005919.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T10:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5919",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:17:18
+archive/issue_comments_005920.json:
+```json
+{
+    "body": "applied to 2.8.11.alpha0. I also updated the patch level to \"4\" and cleanup up a little in the spkg itself.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-01T10:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/969",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/969#issuecomment-5920",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.alpha0. I also updated the patch level to "4" and cleanup up a little in the spkg itself.
 

@@ -1,11 +1,21 @@
 # Issue 719: make pari.allocatemen() more clever
 
-Issue created by migration from https://trac.sagemath.org/ticket/719
-
-Original creator: mabshoff
-
-Original creation time: 2007-09-20 20:39:36
-
+archive/issues_000719.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nDoing the following \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: pari.allocatemem()\nDoubling the PARI stack.\nsage: pari.allocatemem()\nDoubling the PARI stack.\nsage: pari.allocatemem()\nDoubling the PARI stack.\nsage: pari.allocatemem()\nDoubling the PARI stack.\nsage:\n```\n\nleads to \n\n```\n==20507== 1,600,000,000 bytes in 1 blocks are still reachable in loss record 1,941 of 1,941\n==20507==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==20507==    by 0xAA4BA6A: __pyx_f_3gen_init_stack (gen.c:25163)\n==20507==    by 0xAA53894: __pyx_f_3gen_12PariInstance_ (gen.c:23106)\n==20507==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==20507==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==20507==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==20507==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==20507==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==20507==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==20507==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==20507==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==20507==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n```\n\nYou cannot get the memory back without restarting Sage. It also seems more than a little odd to start with 100,000,000 bytes. I would suggest something like 16MB (because that out to be enoughfor the casual user and if needed it would rapidly grown past the 100MB mark), double the amount of memory with each pari.allocatemen() up until you reach 0.5GB, and then increment by say 128MB. Bonus points for introducing an optional parameter to set the size for the libpari stack. Obviously documenting this behavior might also be a good idea.\n| SAGE Version 2.8.4.2, Release Date: 2007-09-13                     |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/719\n\n",
+    "created_at": "2007-09-20T20:39:36Z",
+    "labels": [
+        "memleak",
+        "major",
+        "enhancement"
+    ],
+    "title": "make pari.allocatemen() more clever",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/719",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Doing the following 
@@ -49,17 +59,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/719
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-21 01:48:46
+archive/issue_comments_004186.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2007-09-21T01:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/719#issuecomment-4186",
+    "user": "was"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by was created at 2007-09-21 01:48:46
+archive/issue_comments_004187.json:
+```json
+{
+    "body": "\n```\nno on #719.\n[18:40] <mabshoff_> ok\n[18:40] <william_stein> Lots of pari is unusable with < 100MB stack.\n[18:40] <william_stein> And it's a *serious* pain to have to do it randomly in the middle of computations.\n[18:40] <mabshoff_> really? That sucks.\n[18:40] <william_stein> PARI doesn't automatically double the stack.\n```\n",
+    "created_at": "2007-09-21T01:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/719#issuecomment-4187",
+    "user": "was"
+}
+```
 
 
 ```
@@ -73,22 +109,55 @@ no on #719.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-03 17:26:41
+archive/issue_comments_004188.json:
+```json
+{
+    "body": "Resolution changed from wontfix to ",
+    "created_at": "2007-10-03T17:26:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/719#issuecomment-4188",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from wontfix to 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-03 17:26:41
+archive/issue_comments_004189.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-10-03T17:26:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/719#issuecomment-4189",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-03 17:27:01
+archive/issue_comments_004190.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-03T17:27:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/719#issuecomment-4190",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

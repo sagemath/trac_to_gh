@@ -1,11 +1,21 @@
 # Issue 974: [with spkg] small memleak in nullspace.c in IML
 
-Issue created by migration from https://trac.sagemath.org/ticket/974
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-23 18:09:18
-
+archive/issues_000974.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWhen valgrinding doctest_matrix2.py the following pops up:\n\n```\n==4692== 24 bytes in 3 blocks are definitely lost in loss record 124 of 2,497\n==4692==    at 0x4A1BB35: malloc (vg_replace_malloc.c:207)\n==4692==    by 0x6161E17: __gmpz_init_set_ui (in /tmp/Work-mabshoff/sage-2.8.8/local/lib/libgmp.so.3.4.1)\n==4692==    by 0x12A95A43: nullspaceMP (nullspace.c:253)\n==4692==    by 0x1293CCA8: __pyx_f_py_20matrix_integer_dense_20Matrix_integer_dense__rational_kernel_iml (matrix_integer_den\nse.c:14391)\n==4692==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4692==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4692==    by 0x12DC1975: __pyx_f_py_21matrix_rational_dense_21Matrix_rational_dense_kernel (matrix_rational_dense.c:7921)\n==4692==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4692==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4692==    by 0x1139F1A2: __pyx_f_py_7matrix2_6Matrix_kernel_on (matrix2.c:6781)\n==4692==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==4692==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n```\n\nI fixed the issue in IML and \"-testall\" passes. The new IML spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/iml-1.0.1.p7.spkg\n\nBefore the patch:\n\n```\n==4692== LEAK SUMMARY:\n==4692==    definitely lost: 6,200 bytes in 147 blocks.\n==4692==    indirectly lost: 5,184 bytes in 156 blocks.\n==4692==      possibly lost: 377,206 bytes in 906 blocks.\n==4692==    still reachable: 37,402,075 bytes in 21,242 blocks.\n==4692==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter the patch:\n\n```\n==10896== LEAK SUMMARY:\n==10896==    definitely lost: 6,160 bytes in 142 blocks.\n==10896==    indirectly lost: 5,184 bytes in 156 blocks.\n==10896==      possibly lost: 376,725 bytes in 905 blocks.\n==10896==    still reachable: 37,402,500 bytes in 21,245 blocks.\n==10896==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/974\n\n",
+    "created_at": "2007-10-23T18:09:18Z",
+    "labels": [
+        "memleak",
+        "minor",
+        "bug"
+    ],
+    "title": "[with spkg] small memleak in nullspace.c in IML",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/974",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 When valgrinding doctest_matrix2.py the following pops up:
@@ -58,23 +68,60 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/974
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-23 18:10:05
+archive/issue_comments_005942.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-23T18:10:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/974#issuecomment-5942",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 19:42:15
+archive/issue_comments_005943.json:
+```json
+{
+    "body": "applied to 2.8.9.alpha0",
+    "created_at": "2007-10-23T19:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/974#issuecomment-5943",
+    "user": "malb"
+}
+```
 
 applied to 2.8.9.alpha0
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 19:42:19
+archive/issue_comments_005944.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-23T19:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/974#issuecomment-5944",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

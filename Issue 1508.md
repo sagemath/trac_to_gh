@@ -1,11 +1,21 @@
 # Issue 1508: axes_label in plot() broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/1508
-
-Original creator: was
-
-Original creation time: 2007-12-14 18:04:33
-
+archive/issues_001508.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
+    "created_at": "2007-12-14T18:04:33Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "axes_label in plot() broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1508",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -23,36 +33,99 @@ p.show(axes_label=['x-axis','y-axis'])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1508
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-19 15:17:38
+archive/issue_comments_009654.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-19T15:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9654",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_009655.json:
+```json
+{
+    "body": "Attachment\n\nfixes a mistake in const.tex",
+    "created_at": "2008-01-19T17:46:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9655",
+    "user": "was"
+}
+```
 
 Attachment
 
 fixes a mistake in const.tex
 
 
+
 ---
+
+archive/issue_comments_009656.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-19T17:50:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9656",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-20 23:53:33
+archive/issue_comments_009657.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-01-20T23:53:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9657",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 02:07:20
+archive/issue_comments_009658.json:
+```json
+{
+    "body": "I am having reject issues with this against Sage 2.10.1.alpha0\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T02:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9658",
+    "user": "mabshoff"
+}
+```
 
 I am having reject issues with this against Sage 2.10.1.alpha0
 
@@ -61,9 +134,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 03:17:47
+archive/issue_comments_009659.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1. The reject mentioned above was caused by interaction from #1859 - I resolved those manually.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T03:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9659",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1. The reject mentioned above was caused by interaction from #1859 - I resolved those manually.
 
@@ -72,8 +156,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 03:17:47
+archive/issue_comments_009660.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T03:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9660",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

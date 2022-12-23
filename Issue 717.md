@@ -1,22 +1,47 @@
 # Issue 717: sage -t timeout stuff works poorly
 
-Issue created by migration from https://trac.sagemath.org/ticket/717
-
-Original creator: was
-
-Original creation time: 2007-09-20 20:07:28
-
+archive/issues_000717.json:
+```json
+{
+    "body": "Assignee: failure\n\nIssues:\n1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.\n2. It should be easy for users to adjust the timeout, e.g., on slow systems.\n3. \"sage --long\" should automatically have a much longer timeout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/717\n\n",
+    "created_at": "2007-09-20T20:07:28Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "sage -t timeout stuff works poorly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/717",
+    "user": "was"
+}
+```
 Assignee: failure
 
 Issues:
-  1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.
-  2. It should be easy for users to adjust the timeout, e.g., on slow systems.
-  3. "sage --long" should automatically have a much longer timeout.
+1. I can't actually find anywhere in sage-doctest right now where the two alarm codes are actually used, so SAGE should never timeout.  Weird.
+2. It should be easy for users to adjust the timeout, e.g., on slow systems.
+3. "sage --long" should automatically have a much longer timeout.
+
+Issue created by migration from https://trac.sagemath.org/ticket/717
+
+
+
 
 
 ---
 
-Comment by mabshoff created at 2007-12-04 14:17:27
+archive/issue_comments_004172.json:
+```json
+{
+    "body": "This has annoyed me on regular occasions, so let's fix this.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-04T14:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4172",
+    "user": "mabshoff"
+}
+```
 
 This has annoyed me on regular occasions, so let's fix this.
 
@@ -25,9 +50,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 04:31:22
+archive/issue_comments_004173.json:
+```json
+{
+    "body": "The third part of the ticket, i.e. 'sage --long\" should automatically have a much longer timeout' is  now now #2029.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-02T04:31:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4173",
+    "user": "mabshoff"
+}
+```
 
 The third part of the ticket, i.e. 'sage --long" should automatically have a much longer timeout' is  now now #2029.
 
@@ -36,9 +72,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 05:20:54
+archive/issue_comments_004174.json:
+```json
+{
+    "body": "FYI, but this is probably orthogonal to the doctesting and more has to do with signal delivery.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T05:20:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4174",
+    "user": "mabshoff"
+}
+```
 
 FYI, but this is probably orthogonal to the doctesting and more has to do with signal delivery.
 
@@ -47,30 +94,76 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_004175.json:
+```json
+{
+    "body": "Attachment\n\nThis code enables timeouts.",
+    "created_at": "2008-12-05T06:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4175",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 This code enables timeouts.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-05 06:24:56
+archive/issue_comments_004176.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-05T06:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4176",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-05 06:24:56
+archive/issue_comments_004177.json:
+```json
+{
+    "body": "Changing assignee from failure to gfurnish.",
+    "created_at": "2008-12-05T06:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4177",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from failure to gfurnish.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 06:33:47
+archive/issue_comments_004178.json:
+```json
+{
+    "body": "Patch looks with one tiny exception:\n\n```\n[10:25pm] mab|ds9: one suggestions: raise the sleep period to 1 second: time.sleep(.1)\n[10:25pm] gfurnish: feel free to make the modification\n[10:25pm] mab|ds9: I think we can live with that.\n[10:25pm] mab|ds9: mk\n```\n\nI will move item (2) to its own ticket since it is not addressed here.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T06:33:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4178",
+    "user": "mabshoff"
+}
+```
 
 Patch looks with one tiny exception:
 
@@ -88,9 +181,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 07:38:35
+archive/issue_comments_004179.json:
+```json
+{
+    "body": "This works very nicely. Positive review. \n\n(2) has been moved to #4712.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T07:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4179",
+    "user": "mabshoff"
+}
+```
 
 This works very nicely. Positive review. 
 
@@ -101,15 +205,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 07:38:52
+archive/issue_comments_004180.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha0",
+    "created_at": "2008-12-05T07:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4180",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 07:38:52
+archive/issue_comments_004181.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-05T07:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/717#issuecomment-4181",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

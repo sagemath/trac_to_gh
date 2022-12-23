@@ -1,19 +1,29 @@
 # Issue 1181: polynomial/fraction field __hash__ re-write
 
-Issue created by migration from https://trac.sagemath.org/ticket/1181
-
-Original creator: jbmohler
-
-Original creation time: 2007-11-15 22:07:38
-
+archive/issues_001181.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThe attached patch has a number of goals.\n1.  Allow shared members of ZZ and ZZ[x] to be used interchangeably in a dictionary.\n2.  Replace ZZ in !#1 by QQ, IntegerModRing(p) and probably a bunch of other things.\n3.  Replace ZZ[x] in !#1 by ZZ[x,y,...]\n4.  Allow shared members of FractionFields and their base rings to be used interchangeably in a dictionary.\n5.  Make the __hash__ function faster in polynomial rings\n\nGoal !#5 was achieved very nicely for univariate poly rings, but __hash__ in QQ[x,y] was extremely fast in the original code.  Unfortunately, that very fast __hash__ violated all good things of the goals above.  It also wasn't asymptotically fast (think huge numerical coefficients).\n\nThe goals 1-4 above result in a fix for the subs method:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: (x/y).subs({x:1})\n1/y  # produced x/y in the old version\n```\n\n\nA bad thing about this patch is that the results of hash(x) changing reorders the output of things that come from a dictionary.  There is a number of doc-tests output changes which are only a matter of order in the list.  I think this is probably bad style in doc-tests and in real life.  At least some of those outputs have a very natural order (to the human mind if not mathematically).\n\nThe attached patch entirely supersedes #1075 and I'm going to go close it right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1181\n\n",
+    "created_at": "2007-11-15T22:07:38Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "polynomial/fraction field __hash__ re-write",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1181",
+    "user": "jbmohler"
+}
+```
 Assignee: somebody
 
 The attached patch has a number of goals.
- 1.  Allow shared members of ZZ and ZZ[x] to be used interchangeably in a dictionary.
- 2.  Replace ZZ in !#1 by QQ, IntegerModRing(p) and probably a bunch of other things.
- 3.  Replace ZZ[x] in !#1 by ZZ[x,y,...]
- 4.  Allow shared members of FractionFields and their base rings to be used interchangeably in a dictionary.
- 5.  Make the __hash__ function faster in polynomial rings
+1.  Allow shared members of ZZ and ZZ[x] to be used interchangeably in a dictionary.
+2.  Replace ZZ in !#1 by QQ, IntegerModRing(p) and probably a bunch of other things.
+3.  Replace ZZ[x] in !#1 by ZZ[x,y,...]
+4.  Allow shared members of FractionFields and their base rings to be used interchangeably in a dictionary.
+5.  Make the __hash__ function faster in polynomial rings
 
 Goal !#5 was achieved very nicely for univariate poly rings, but __hash__ in QQ[x,y] was extremely fast in the original code.  Unfortunately, that very fast __hash__ violated all good things of the goals above.  It also wasn't asymptotically fast (think huge numerical coefficients).
 
@@ -30,10 +40,25 @@ A bad thing about this patch is that the results of hash(x) changing reorders th
 
 The attached patch entirely supersedes #1075 and I'm going to go close it right now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1181
+
+
+
+
 
 ---
 
-Comment by jbmohler created at 2007-11-16 12:31:43
+archive/issue_comments_007289.json:
+```json
+{
+    "body": "Some benchmarks:\n\nOriginal:\n\n```\nsage: R.<x>=ZZ[]\nsage: one=R(1)\nsage: f=x^2+2*x+1\nsage: timeit hash(one)\n1000000 loops, best of 3: 1.03 \u00c2\u00b5s per loop\nsage: timeit hash(f)\n100000 loops, best of 3: 3.53 \u00c2\u00b5s per loop\nsage: timeit hash(x)\n100000 loops, best of 3: 2.91 \u00c2\u00b5s per loop\nsage: R.<x,y>=QQ[]\nsage: one=R(1)\nsage: f=x^2+2*y+1\nsage: timeit hash(one)\n1000000 loops, best of 3: 931 ns per loop\nsage: timeit hash(f)\n1000000 loops, best of 3: 1.86 \u00c2\u00b5s per loop\nsage: timeit hash(x)\n1000000 loops, best of 3: 486 ns per loop\n```\n\n\nPatched:\n\n```\nsage: # first the success\nsage: R.<x>=ZZ[]\nsage: one=R(1)\nsage: f=x^2+2*x+1\nsage: timeit hash(one)\n1000000 loops, best of 3: 1.04 \u00c2\u00b5s per loop\nsage: timeit hash(f)\n1000000 loops, best of 3: 1.98 \u00c2\u00b5s per loop\nsage: timeit hash(x)\n1000000 loops, best of 3: 1.4 \u00c2\u00b5s per loop\nsage: # second: the huge slowdown\nsage: R.<x,y>=QQ[]\nsage: one=R(1)\nsage: f=x^2+2*y+1\nsage: timeit hash(one)\n100000 loops, best of 3: 2.88 \u00c2\u00b5s per loop\nsage: timeit hash(f)\n100000 loops, best of 3: 6.31 \u00c2\u00b5s per loop\nsage: timeit hash(x)\n100000 loops, best of 3: 3.18 \u00c2\u00b5s per loop\n```\n\n\nI believe (but haven't verified too much) that the big problem is converting coefficients to the base ring from the singular poly.  This should probably be optimized for a whole bunch of reasons other than hashing, which will carry over to hashing.",
+    "created_at": "2007-11-16T12:31:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7289",
+    "user": "jbmohler"
+}
+```
 
 Some benchmarks:
 
@@ -90,34 +115,91 @@ sage: timeit hash(x)
 I believe (but haven't verified too much) that the big problem is converting coefficients to the base ring from the singular poly.  This should probably be optimized for a whole bunch of reasons other than hashing, which will carry over to hashing.
 
 
+
 ---
 
-Comment by jbmohler created at 2007-11-16 12:44:43
+archive/issue_comments_007290.json:
+```json
+{
+    "body": "the patch",
+    "created_at": "2007-11-16T12:44:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7290",
+    "user": "jbmohler"
+}
+```
 
 the patch
 
 
+
 ---
+
+archive/issue_comments_007291.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-16T12:45:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7291",
+    "user": "jbmohler"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-02 09:06:12
+archive/issue_comments_007292.json:
+```json
+{
+    "body": "I've looked at the code and tried it out and it is a great idea that works well. Despite multivariate hashes slowing down, they are still really quite fast, and the properties listed are much more important.",
+    "created_at": "2007-12-02T09:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7292",
+    "user": "robertwb"
+}
+```
 
 I've looked at the code and tried it out and it is a great idea that works well. Despite multivariate hashes slowing down, they are still really quite fast, and the properties listed are much more important.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-02 20:27:25
+archive/issue_comments_007293.json:
+```json
+{
+    "body": "Merged in 2.8.15.rc0.",
+    "created_at": "2007-12-02T20:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7293",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-02 20:27:25
+archive/issue_comments_007294.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-02T20:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1181#issuecomment-7294",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

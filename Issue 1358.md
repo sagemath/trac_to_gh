@@ -1,11 +1,21 @@
 # Issue 1358: update libtool's la files upon detection of a moved Sage install
 
-Issue created by migration from https://trac.sagemath.org/ticket/1358
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-02 02:01:04
-
+archive/issues_001358.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe following just happened to me on OSX 10.5.1:\n\n```\nMaking all in src\ng++ -DPACKAGE_NAME=\\\"libfplll\\\" -DPACKAGE_TARNAME=\\\"libfplll\\\" -DPACKAGE_VERSION=\\\"2.0.0\\\" -DPACKAGE_STRING=\\\"libfplll\\ 2.0.0\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"\\\" -DVERSION=\\\"\\\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSTDC_HEADERS=1 -DHAVE_LIBMPFR=1 -DHAVE_LIBGMP=1  -I. -I.    -I/Users/mabshoff/sage-2.8.14-moved/local/include/  -fPIC -I/Users/mabshoff/sage-2.8.14-moved/local/include/ -L/Users/mabshoff/sage-2.8.14-moved/local/lib -c main.cpp\n/bin/sh ../libtool --mode=link g++  -fPIC -I/Users/mabshoff/sage-2.8.14-moved/local/include/ -L/Users/mabshoff/sage-2.8.14-moved/local/lib  -o fplll  main.o  -lgmp -lmpfr\nmkdir .libs\nlibtool: link: warning: library `/Users/mabshoff/sage-2.8.14-moved/local/lib/libgmp.la' was moved.\nlibtool: link: warning: library `/Users/mabshoff/sage-2.8.14-moved/local/lib/libmpfr.la' was moved.\nlibtool: link: warning: library `/Users/mabshoff/sage-2.8.14-moved/local/lib/libgmp.la' was moved.\nlibtool: link: warning: library `/Users/mabshoff/sage-2.8.14-moved/local/lib/libmpfr.la' was moved.\nlibtool: link: cannot find the library `/Users/mabshoff/sage-2.8.14/local/lib/libgmp.la' or unhandled argument `/Users/mabshoff/sage-2.8.14/local/lib/libgmp.la'\nmake[3]: *** [fplll] Error 1\nmake[2]: *** [all-recursive] Error 1\nError building libfplll\n```\n\nThe fix is to correct the paths in the libtool files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1358\n\n",
+    "created_at": "2007-12-02T02:01:04Z",
+    "labels": [
+        "relocation",
+        "major",
+        "bug"
+    ],
+    "title": "update libtool's la files upon detection of a moved Sage install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1358",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The following just happened to me on OSX 10.5.1:
@@ -31,38 +41,97 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1358
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-03 05:15:23
+archive/issue_comments_008681.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-03T05:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8681",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:15:23
+archive/issue_comments_008682.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-06-03T05:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8682",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:15:23
+archive/issue_comments_008683.json:
+```json
+{
+    "body": "This is actually an issue that causes a lot of problems when updating an install that has been moved, i.e. installed directly or via some binary.",
+    "created_at": "2008-06-03T05:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8683",
+    "user": "mabshoff"
+}
+```
 
 This is actually an issue that causes a lot of problems when updating an install that has been moved, i.e. installed directly or via some binary.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:31:27
+archive/issue_comments_008684.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to wstein.",
+    "created_at": "2008-06-03T05:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8684",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from mabshoff to wstein.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:31:27
+archive/issue_comments_008685.json:
+```json
+{
+    "body": "This was fixed by William Stein a while back.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-03T05:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8685",
+    "user": "mabshoff"
+}
+```
 
 This was fixed by William Stein a while back.
 
@@ -71,22 +140,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:31:27
+archive/issue_comments_008686.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-06-03T05:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8686",
+    "user": "mabshoff"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:31:44
+archive/issue_comments_008687.json:
+```json
+{
+    "body": "Fixed prior to Sage 3.0.3.alpha1",
+    "created_at": "2008-06-03T05:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8687",
+    "user": "mabshoff"
+}
+```
 
 Fixed prior to Sage 3.0.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 05:31:44
+archive/issue_comments_008688.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-03T05:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1358#issuecomment-8688",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 933: Permanents of (0,1)-matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/933
-
-Original creator: jsp
-
-Original creation time: 2007-10-19 19:00:37
-
+archive/issues_000933.json:
+```json
+{
+    "body": "Assignee: was\n\nLet A = (a_{ij}) be an m x n (m <= n) (0,1)-matrix. We define a\nmatrix X = (x_{ij}) with independent indeterminates x_{ij}:\nx_{ij} = 0 iff a_{ij} = 0.\n\nSo x_{ij} only exists iff a_{ij} = 1.\n\n\nNow define a list of equations: (how do I format them properly here?)\n\n\\sum_{i=1}^{i=m} x_{ij} = 1 for j = 1, ..., n\n\n\\sum_{j=1}^{j=n} x_{ij} = 1 for i = 1, ..., m\n\nx_{ij}^2 = x_{ij} for i = 1, ..., m and j = 1, ..., n\n\n\nIt is easy to prove that the number of solutions to this equations is\nequal to the permanent of A.\n\nBased on a paper from Bernasconi, et al.: Computing Groebner Bases\nin the Boolean Setting with Applications to Counting (1997) (which\nrestricts itself to square matrices and a number of polynomials less than 255),\nwe can do the following:\n\n1) calculate a Groebner basis\n\n2) compute the number of solutions (the permanent)\n\nIf this could be done fast, it beats Ryser's algorithm (See the\narticle above).\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/933\n\n",
+    "created_at": "2007-10-19T19:00:37Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "Permanents of (0,1)-matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/933",
+    "user": "jsp"
+}
+```
 Assignee: was
 
 Let A = (a_{ij}) be an m x n (m <= n) (0,1)-matrix. We define a
@@ -41,19 +51,45 @@ article above).
 
 Jaap
 
+Issue created by migration from https://trac.sagemath.org/ticket/933
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-09-17 14:06:02
+archive/issue_comments_005699.json:
+```json
+{
+    "body": "> calculate a Groebner basis \n\nover which field?",
+    "created_at": "2008-09-17T14:06:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/933#issuecomment-5699",
+    "user": "malb"
+}
+```
 
 > calculate a Groebner basis 
 
 over which field?
 
 
+
 ---
 
-Comment by vdelecroix created at 2015-08-17 12:19:11
+archive/issue_comments_005700.json:
+```json
+{
+    "body": "Replying to [comment:3 malb]:\n> > calculate a Groebner basis \n> \n> over which field?\n\n`ZZ`. You want the `0-1` solutions and the `x = x^2` guarantees exactly that.",
+    "created_at": "2015-08-17T12:19:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/933#issuecomment-5700",
+    "user": "vdelecroix"
+}
+```
 
 Replying to [comment:3 malb]:
 > > calculate a Groebner basis 

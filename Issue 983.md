@@ -1,11 +1,21 @@
 # Issue 983: abs seems to be missing a proper latex method
 
-Issue created by migration from https://trac.sagemath.org/ticket/983
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-24 17:39:29
-
+archive/issues_000983.json:
+```json
+{
+    "body": "Assignee: somebody\n\nHello,\n\n```\n The problem seems to be the abs() command. Take any function like\n f(x)=2*abs(x) with a changing sign. Entering now latex(f) shows me as\n the result:\n x \\ {\\mapsto}\\ {2 \\cdot \\abs \\left( x \\right)}\n```\n\nreported by marko in sage-support.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/983\n\n",
+    "created_at": "2007-10-24T17:39:29Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "abs seems to be missing a proper latex method",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/983",
+    "user": "mabshoff"
+}
+```
 Assignee: somebody
 
 Hello,
@@ -23,16 +33,42 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/983
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-24 17:41:32
+archive/issue_comments_006016.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-10-24T17:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/983#issuecomment-6016",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-24 17:41:32
+archive/issue_comments_006017.json:
+```json
+{
+    "body": "mhansen was faster - see #982, so close this as a dupe.",
+    "created_at": "2007-10-24T17:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/983#issuecomment-6017",
+    "user": "mabshoff"
+}
+```
 
 mhansen was faster - see #982, so close this as a dupe.

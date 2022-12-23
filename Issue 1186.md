@@ -1,11 +1,21 @@
 # Issue 1186: Charpoly of a matrix of polynomials sometimes breaks
 
-Issue created by migration from https://trac.sagemath.org/ticket/1186
-
-Original creator: kedlaya
-
-Original creation time: 2007-11-16 13:31:17
-
+archive/issues_001186.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following:\n\n```\nP.<a,b,c> = PolynomialRing(Integers())\nu = MatrixSpace(P,3)([[0,0,a],[1,0,b],[0,1,c]])\nQ.<x> = PolynomialRing(P)\nu.charpoly('x')\n```\n\nreturns as intended:\n\n```\nx^3 + (-1*c)*x^2 + (-1*b)*x - a\n```\n\nbut the following code:\n\n```\nP.<a,b,c> = PolynomialRing(Rationals())\nu = MatrixSpace(P,3)([[0,0,a],[1,0,b],[0,1,c]])\nQ.<x> = PolynomialRing(P)\nu.charpoly('x')\n```\n\ndoes not, instead returning the traceback:\n\n```\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/kedlaya/<ipython console> in <module>()\n\n/home/kedlaya/matrix2.pyx in sage.matrix.matrix2.Matrix.charpoly()\n\n/home/kedlaya/matrix2.pyx in sage.matrix.matrix2.Matrix._charpoly_hessenberg()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    240         C = self.__polynomial_class\n    241         if absprec is None:\n--> 242             return C(self, x, check, is_gen, construct=construct)\n    243         else:\n    244             return C(self, x, check, is_gen, construct=construct, absprec = absprec)\n\n/home/kedlaya/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__()\n\n/home/kedlaya/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/rational_field.py in __call__(self, x, base)\n    180         if isinstance(x, sage.rings.rational.Rational):\n    181             return x\n--> 182         return sage.rings.rational.Rational(x, base)\n    183 \n    184     def construction(self):\n\n/home/kedlaya/rational.pyx in sage.rings.rational.Rational.__init__()\n\n/home/kedlaya/rational.pyx in sage.rings.rational.Rational.__set_value()\n\n/home/kedlaya/sage-complete/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.py in _rational_(self)\n    270         Z = integer_ring.IntegerRing()\n    271         try:\n--> 272             return Z(self.__numerator) / Z(self.__denominator)\n    273         except AttributeError:\n    274             pass\n\n/home/kedlaya/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: lift() takes exactly one argument (0 given)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1186\n\n",
+    "created_at": "2007-11-16T13:31:17Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Charpoly of a matrix of polynomials sometimes breaks",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1186",
+    "user": "kedlaya"
+}
+```
 Assignee: was
 
 The following:
@@ -79,17 +89,43 @@ does not, instead returning the traceback:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1186
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2007-11-17 18:11:28
+archive/issue_comments_007320.json:
+```json
+{
+    "body": "I tracked the bug down to the function _charpoly_hessenberg() in matrix2.pyx.  The problem occurs at the very end of the function, when we want to turn the list v of coefficients into the characteristic polynomial.  More precisely, the elements of v live in the fraction field of the polynomial ring P (this is a side effect of hessenbergizing the matrix), and the function was trying to make them into coefficients of a polynomial over P itself; this is where the error was coming up.  I changed this to get a polynomial over the fraction field of P.",
+    "created_at": "2007-11-17T18:11:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7320",
+    "user": "AlexGhitza"
+}
+```
 
 I tracked the bug down to the function _charpoly_hessenberg() in matrix2.pyx.  The problem occurs at the very end of the function, when we want to turn the list v of coefficients into the characteristic polynomial.  More precisely, the elements of v live in the fraction field of the polynomial ring P (this is a side effect of hessenbergizing the matrix), and the function was trying to make them into coefficients of a polynomial over P itself; this is where the error was coming up.  I changed this to get a polynomial over the fraction field of P.
 
 
+
 ---
 
-Comment by robertwb created at 2007-11-18 08:30:47
+archive/issue_comments_007321.json:
+```json
+{
+    "body": "Do not apply this patch. \n\nThough the operations take place in the fraction field, the coefficients all live in the original ring (proof: use the determinant form of charpoly) and this is why this line was there. \n\nThis should be fixed, but this is not the right fix.",
+    "created_at": "2007-11-18T08:30:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7321",
+    "user": "robertwb"
+}
+```
 
 Do not apply this patch. 
 
@@ -98,7 +134,20 @@ Though the operations take place in the fraction field, the coefficients all liv
 This should be fixed, but this is not the right fix.
 
 
+
 ---
+
+archive/issue_comments_007322.json:
+```json
+{
+    "body": "Attachment\n\nExcellent point.  I've done some more digging, and here's what I think is at the bottom of all this:\n\n\n```\nP.<a,b> = QQ[]\nQ.<x> = PolynomialRing(P)\nF = P.fraction_field()\nf=F(a)*x\nQ(f)\n```\n\n\nreturns\n\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    240         C = self.__polynomial_class\n    241         if absprec is None:\n--> 242             return C(self, x, check, is_gen, construct=construct)\n    243         else:\n    244             return C(self, x, check, is_gen, construct=construct, absprec = absprec)\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__()\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/rational_field.py in __call__(self, x, base)\n    180         if isinstance(x, sage.rings.rational.Rational):\n    181             return x\n--> 182         return sage.rings.rational.Rational(x, base)\n    183         \n    184     def construction(self):\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/rational.pyx in sage.rings.rational.Rational.__init__()\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/rational.pyx in sage.rings.rational.Rational.__set_value()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.py in _rational_(self)\n    270         Z = integer_ring.IntegerRing()\n    271         try:\n--> 272             return Z(self.__numerator) / Z(self.__denominator)\n    273         except AttributeError:\n    274             pass\n\n/opt/sage-2.8.12/devel/sage-alex/sage/matrix/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: lift() takes exactly one argument (0 given)\n```\n\n\nThe culprit is __call__ in multi_polynomial_libsingular.pyx, where the function tries a bunch of things and then, before giving up, tries to coerce a into QQ (which of course will not work).  Somehow our polynomial f is slipping through the cracks.  Note that this is a multivariable issue; the same thing works perfectly well over QQ[a].\n\nI don't understand enough about how __call__ works to fix this properly.  I did however notice that, in this situation, working with the string 'a' fixes the issue.  I'm replacing the old patch with a very simple one that does this, but someone with more experience with these things should take a look at it.",
+    "created_at": "2007-11-20T03:19:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7322",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -163,34 +212,91 @@ The culprit is __call__ in multi_polynomial_libsingular.pyx, where the function 
 I don't understand enough about how __call__ works to fix this properly.  I did however notice that, in this situation, working with the string 'a' fixes the issue.  I'm replacing the old patch with a very simple one that does this, but someone with more experience with these things should take a look at it.
 
 
+
 ---
 
-Comment by cwitty created at 2008-02-16 02:10:48
+archive/issue_comments_007323.json:
+```json
+{
+    "body": "The patch was changed after robertwb's review above, so somebody should look at the new patch.",
+    "created_at": "2008-02-16T02:10:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7323",
+    "user": "cwitty"
+}
+```
 
 The patch was changed after robertwb's review above, so somebody should look at the new patch.
 
 
+
 ---
+
+archive/issue_comments_007324.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-27T19:47:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7324",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-27 19:48:01
+archive/issue_comments_007325.json:
+```json
+{
+    "body": "Apply both patches.  Works for me against 2.10.3.alpha0.",
+    "created_at": "2008-02-27T19:48:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7325",
+    "user": "mhansen"
+}
+```
 
 Apply both patches.  Works for me against 2.10.3.alpha0.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-28 00:24:02
+archive/issue_comments_007326.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-28T00:24:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7326",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-28 00:24:02
+archive/issue_comments_007327.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc0",
+    "created_at": "2008-02-28T00:24:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1186#issuecomment-7327",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc0

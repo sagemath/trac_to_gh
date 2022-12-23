@@ -1,11 +1,21 @@
 # Issue 1470: upgrade maxima.spkg to 5.14.0
 
-Issue created by migration from https://trac.sagemath.org/ticket/1470
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-12 09:27:32
-
+archive/issues_001470.json:
+```json
+{
+    "body": "Assignee: was\n\nMaxima is currently at 5.14.rc1. Once it is release update the spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1470\n\n",
+    "created_at": "2007-12-12T09:27:32Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "upgrade maxima.spkg to 5.14.0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1470",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 Maxima is currently at 5.14.rc1. Once it is release update the spkg.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1470
+
+
+
+
 
 ---
 
-Comment by jmbr created at 2008-01-08 20:28:17
+archive/issue_comments_009451.json:
+```json
+{
+    "body": "Changing assignee from was to jmbr.",
+    "created_at": "2008-01-08T20:28:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9451",
+    "user": "jmbr"
+}
+```
 
 Changing assignee from was to jmbr.
 
 
+
 ---
 
-Comment by was created at 2008-03-10 03:18:12
+archive/issue_comments_009452.json:
+```json
+{
+    "body": "Here's another reason to do this:\n\n```\nfrom steve vonn:\n\nThe Maxima command 'mnewton' has a bug.\nThe problem may be solved by updating to the most recent build of Maxima.\n{{{\nsage: mnewton([x1+3*log(x1)-x2^2, 2*x1^2-x1*x2-5*x1+1], [x1, x2], [5, 5])\n[[x1=3.756834008012769,x2=2.779849592817897]]\n\nsage: mnewton([2*a^a-5],[a],[1])\n[[a=1.70927556786144]]\n\nsage: mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);\nTraceback (most recent call last):\n...\nTypeError: error evaluating \"mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);\":\nError executing code in Maxima\nCODE:\n mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);\nMaxima ERROR:\n\nUnable to convert 18.0*log(3)+0.5 to a complex double float\n#0: solve_by_lu(eqs=[h[1]*(18.0*log(3)+0.5)-0.5*h[2]+12.0,4.0*h[2]*log(2)+h[1]+2.0],vars=[h[1],h[2]],field=complexfield)\n#1: mnewton(funclist=[-v/u+2*3^u-5,2^v+u-4],varlist=[u,v],guesslist=[2,2])(mnewton.mac\nline 106)\n\nsage: build_info()$\nMaximaversion:5.13.0Maximabuilddate:18:511/18/2008hosttype:x86_64-unknown-linux-gnulisp-implementation-type:CLISP\nlisp-implementation-version:2.41(2006-10-13)(built3409699542)(memory3409699897)\n}}}\n\nThe build_info() command indicates Sage is using Maxima 5.13.\nI submitted the problem to Maxima Support and they said it works for\nMaxima 5.14.\nhttp://sourceforge.net/tracker/index.php?func=detail&atid=104933&aid=1909488&group_id=4933\n{{{\nDate: 2008-03-07 15:21\nSender: willisbl\nLogged In: YES\nuser_id=895922\nOriginator: NO\n\nIt works for me; maybe you have an old version.\n\n(%i2) mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);\n(%o2) [[u=1.066618389595407,v=1.552564766841786]]\n\n(%i8) build_info();\nMaxima version: 5.14.0\nMaxima build date: 21:46 12/27/2007\nhost type: i686-pc-mingw32\nlisp-implementation-type: GNU Common Lisp (GCL)\nlisp-implementation-version: GCL 2.6.8\n}}}\n\nPeace\n```\n",
+    "created_at": "2008-03-10T03:18:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9452",
+    "user": "was"
+}
+```
 
 Here's another reason to do this:
 
@@ -88,16 +124,38 @@ Peace
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 07:06:55
+archive/issue_comments_009453.json:
+```json
+{
+    "body": "Changing assignee from jmbr to mabshoff.",
+    "created_at": "2008-03-22T07:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9453",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from jmbr to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 07:06:55
+archive/issue_comments_009454.json:
+```json
+{
+    "body": "The updated SPKG at\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/maxima-5.14.0.spkg\n\ncontains Maxima 5.14.0. It builds fine, but we have a number of doctest failures:\n\n```\nsage -t -long devel/sage/sage/interfaces/maxima.py\n**********************************************************************\nFile \"maxima.py\", line 903:\n    sage: maxima.version()\nExpected:\n    '5.13.0'\nGot:\n    '5.14.0'\n**********************************************************************\n```\n\nThis one is trivial to fix :)\n\n```\nsage -t -long devel/sage/sage/combinat/combinat.py\n**********************************************************************\nFile \"combinat.py\", line 1446:\n    sage: hurwitz_zeta(1.1,1/2,50)\nExpected:\n    12.103813495683744469025853545548130581952676591199\nGot:\n    12.10381349568374531600056798197329044342041015625\n**********************************************************************\n```\n\nA numerically different result - somebody needs to check what is correct.\n\n```\nsage -t -long devel/sage/sage/calculus/tests.py\n**********************************************************************\nFile \"tests.py\", line 109:\n    sage: integrate(log(1-x^2)/x, x)\nExpected:\n    log(x)*log(1 - x^2) + polylog(2, 1 - x^2)/2\nGot:\n    1*log(x)*log(1 - x^2) - 1*(-2*-log(1 - x^2)/2*log(x) - 2*(log(x)*log(1 - x^2) + polylog(2, 1 - x^2)/2)/2)\n**********************************************************************\n```\n\nHmm, not sure what to make of this one.\n\n```\nsage -t -long devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2134:\n    sage: lim(-e^x/x, x = oo)\nExpected:\n    -Infinity\nGot:\n    +Infinity\n**********************************************************************\nFile \"calculus.py\", line 2148:\n    sage: forget(); assume(x<-2); lim(f, x=0, taylor=True)\nExpected:\n    und\nGot:\n    limit(log(log(x))/log(x), x, 0)\n**********************************************************************\n```\n\nMhh, did the parser change? \n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T07:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9454",
+    "user": "mabshoff"
+}
+```
 
 The updated SPKG at
 
@@ -173,16 +231,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 07:06:55
+archive/issue_comments_009455.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-22T07:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9455",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-22 21:22:13
+archive/issue_comments_009456.json:
+```json
+{
+    "body": "The integral with polylog should be the same:\n\n```\n(%i28) ratsimp(integrate(log(1-x^2)/x, x));\n(%o28) (2*log(x)*log(1-x^2)+li[2](1-x^2))/2\n```\n\n\nThe +/-Infinity one is a bug in Maxima.  I'm sending a note to the maxima list.\n\n```\n(%i15) limit( -%e^x/x, x, inf);\n(%o15)                                inf\n```\n\n\nThe doctest for the Hurwitz zeta is correct.  Maxima is doing some float - bigfloat trickery behind the scenes:\n\n```\n(%i29) bfhzeta(1.1b0,1/2,50);\n(%o29) 1.2103813495683754558667560862969910437753328504699b1\n(%i30) bfhzeta(1.1,1/2,50);\n(%o30) 1.210381349568374531600056798197329044342041015625b1\n```\n\n\nAll of the above examples were done with Maxima 5.14.0",
+    "created_at": "2008-03-22T21:22:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9456",
+    "user": "mhansen"
+}
+```
 
 The integral with polylog should be the same:
 
@@ -213,9 +293,20 @@ The doctest for the Hurwitz zeta is correct.  Maxima is doing some float - bigfl
 All of the above examples were done with Maxima 5.14.0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:42:43
+archive/issue_comments_009457.json:
+```json
+{
+    "body": "For Mike Hansen's email to the Maxima list see\n\nhttp://www.math.utexas.edu/pipermail/maxima/2008/010554.html\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T21:42:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9457",
+    "user": "mabshoff"
+}
+```
 
 For Mike Hansen's email to the Maxima list see
 
@@ -226,16 +317,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-20 17:07:30
+archive/issue_comments_009458.json:
+```json
+{
+    "body": "It looks like the issues with 5.14 have been fixed in 5.15.",
+    "created_at": "2008-04-20T17:07:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9458",
+    "user": "mhansen"
+}
+```
 
 It looks like the issues with 5.14 have been fixed in 5.15.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 09:02:28
+archive/issue_comments_009459.json:
+```json
+{
+    "body": "I will be rolling an updated 5.15.0.spkg for Sage 3.0.1.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-21T09:02:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9459",
+    "user": "mabshoff"
+}
+```
 
 I will be rolling an updated 5.15.0.spkg for Sage 3.0.1.
 
@@ -244,9 +357,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-18 22:56:05
+archive/issue_comments_009460.json:
+```json
+{
+    "body": "There is a new maxima spkg available at http://sage.math.washington.edu/home/gfurnish/spkg/maxima-5.15.0.spkg\n\nThe doctest errors are the following:\n\n```\n----------------------------------------------------------------------\nsage -t  devel/sage-dsage3/sage/calculus/predefined.py\n\t [5.9 s]\nsage -t  devel/sage-dsage3/sage/calculus/functions.py\n\t [7.7 s]\nsage -t  devel/sage-dsage3/sage/calculus/var.pyx\n\t [7.7 s]\nsage -t  devel/sage-dsage3/sage/calculus/test_sympy.py\n\t [9.6 s]\nsage -t  devel/sage-dsage3/sage/calculus/desolvers.py\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/desolvers.py\", line 134:\n    sage: desolve_laplace(de(f(x)),[\"x\",\"f\"])\nExpected:\n    \"x*%e^x*(?%at('diff(f(x),x,1),x=0))-f(0)*x*%e^x+f(0)*%e^x\"\nGot:\n    \"x*%e^x*('at('diff(f(x),x,1),x=0))-f(0)*x*%e^x+f(0)*%e^x\"\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/gfurnish/sage-3.0.3.rc0/tmp/.doctest_desolvers.py\n\n\t [9.9 s]\nsage -t  devel/sage-dsage3/sage/calculus/functional.py\n\t [15.1 s]\nsage -t  devel/sage-dsage3/sage/calculus/wester.py\n\t [17.0 s]\nsage -t  devel/sage-dsage3/sage/calculus/tests.py\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/tests.py\", line 198:\n    sage: f.nintegral(x, 0, 999)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[75]>\", line 1, in <module>\n        f.nintegral(x, Integer(0), Integer(999))###line 198:\n    sage: f.nintegral(x, 0, 999)\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2622, in nintegral\n        raise ValueError, \"Maxima (via quadpack) cannot compute the integral to that precision\"\n    ValueError: Maxima (via quadpack) cannot compute the integral to that precision\n**********************************************************************\n1 items had failures:\n   1 of  83 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/gfurnish/sage-3.0.3.rc0/tmp/.doctest_tests.py\n\n\t [17.3 s]\nsage -t  devel/sage-dsage3/sage/calculus/equations.py\n\t [32.9 s]\nsage -t  devel/sage-dsage3/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/calculus.py\", line 766:\n    sage: print f\nExpected:\n                                                 (sqrt(2)  I + sqrt(2)) x\n           sqrt( pi) ((sqrt(2)  I + sqrt(2)) erf(------------------------)\n                                                            2\n                                                       (sqrt(2)  I - sqrt(2)) x\n                          + (sqrt(2)  I - sqrt(2)) erf(------------------------))/8\n                                                                  2\nGot:\n    <BLANKLINE>\n                                                    (sqrt(2)  I + sqrt(2)) x\n             (sqrt( pi) ((sqrt(2)  I + sqrt(2)) erf(------------------------)\n                                                               2\n                                                      (sqrt(2)  I - sqrt(2)) x\n                         + (sqrt(2)  I - sqrt(2)) erf(------------------------)))/8\n                                                                 2\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/calculus.py\", line 2169:\n    sage: forget(); assume(x<-2); lim(f, x=0, taylor=True)\nExpected:\n    und\nGot:\n    limit(log(log(x))/log(x), x, 0)\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/calculus.py\", line 2442:\n    sage: print f.integral(x)\nExpected:\n          z                                         (sqrt(2)  I + sqrt(2)) x\n       x y  + sqrt( pi) ((sqrt(2)  I + sqrt(2)) erf(------------------------)\n                                                               2\n                                                   (sqrt(2)  I - sqrt(2)) x\n                      + (sqrt(2)  I - sqrt(2)) erf(------------------------))/8\n                                                              2\nGot:\n    <BLANKLINE>\n                z\n             x y  + (sqrt( pi) ((sqrt(2)  I + sqrt(2))\n         (sqrt(2)  I + sqrt(2)) x\n     erf(------------------------) + (sqrt(2)  I - sqrt(2))\n                    2\n         (sqrt(2)  I - sqrt(2)) x\n     erf(------------------------)))/8\n                    2\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/calculus.py\", line 2568:\n    sage: f.nintegral(x, 0, 1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_68[4]>\", line 1, in <module>\n        f.nintegral(x, Integer(0), Integer(1))###line 2568:\n    sage: f.nintegral(x, 0, 1)\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2622, in nintegral\n        raise ValueError, \"Maxima (via quadpack) cannot compute the integral to that precision\"\n    ValueError: Maxima (via quadpack) cannot compute the integral to that precision\n**********************************************************************\nFile \"/scratch/gfurnish/sage-3.0.3.rc0/tmp/calculus.py\", line 2596:\n    sage: f.nintegrate(x,0,1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_68[10]>\", line 1, in <module>\n        f.nintegrate(x,Integer(0),Integer(1))###line 2596:\n    sage: f.nintegrate(x,0,1)\n      File \"/scratch/gfurnish/sage-3.0.3.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2622, in nintegral\n        raise ValueError, \"Maxima (via quadpack) cannot compute the integral to that precision\"\n    ValueError: Maxima (via quadpack) cannot compute the integral to that precision\n**********************************************************************\n4 items had failures:\n   1 of   7 in __main__.example_23\n   1 of  23 in __main__.example_63\n   1 of  32 in __main__.example_67\n   2 of  15 in __main__.example_68\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /scratch/gfurnish/sage-3.0.3.rc0/tmp/.doctest_calculus.py\n```\n",
+    "created_at": "2008-06-18T22:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9460",
+    "user": "gfurnish"
+}
+```
 
 There is a new maxima spkg available at http://sage.math.washington.edu/home/gfurnish/spkg/maxima-5.15.0.spkg
 
@@ -388,9 +512,20 @@ For whitespace errors, see the file /scratch/gfurnish/sage-3.0.3.rc0/tmp/.doctes
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 07:02:38
+archive/issue_comments_009461.json:
+```json
+{
+    "body": "The second release candidate, i.e. 5.16.1 was just released.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-11T07:02:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9461",
+    "user": "mabshoff"
+}
+```
 
 The second release candidate, i.e. 5.16.1 was just released.
 
@@ -399,9 +534,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-21 23:02:07
+archive/issue_comments_009462.json:
+```json
+{
+    "body": "With Mike's patch applied there are three new failures:\n\n```\nsage -t  devel/sage/sage/functions/piecewise.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/piecewise.py\", line 512:\n    sage: f.critical_points()\nExpected:\n    [5.0, 12.000000000000171, 12.9999999999996, 14.000000000000229]\nGot:\n    [5.0, 11.99999999999975, 13.00000000000057, 13.99999999999967]\n**********************************************************************\n```\n\nAnd\n\n```\nsage -t  devel/sage/sage/combinat/combinat.py               \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/combinat.py\", line 1433:\n    sage: hurwitz_zeta(1.1,1/2,50)\nExpected:\n    12.103813495683744469025853545548130581952676591199\nGot:\n    12.10381349568374531600056798197329044342041015625\n**********************************************************************\n```\n\nAnd finally:\n\n```\nsage -t  devel/doc/const/const.tex                          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/const.py\", line 610:\n    : f\nExpected:\n    f(x)=x*%e^x*(?%at('diff(f(x),x,1),x=0))-f(0)*x*%e^x+f(0)*%e^x\nGot:\n    f(x)=x*%e^x*('at('diff(f(x),x,1),x=0))-f(0)*x*%e^x+f(0)*%e^x\n**********************************************************************\n```\n",
+    "created_at": "2008-08-21T23:02:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9462",
+    "user": "mabshoff"
+}
+```
 
 With Mike's patch applied there are three new failures:
 
@@ -447,7 +593,20 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_009463.json:
+```json
+{
+    "body": "Attachment\n\nThe new spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha0/maxima-5.16.2.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-21T23:30:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9463",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -460,16 +619,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-08-22 18:20:58
+archive/issue_comments_009464.json:
+```json
+{
+    "body": "+1 on the spkg",
+    "created_at": "2008-08-22T18:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9464",
+    "user": "mhansen"
+}
+```
 
 +1 on the spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-22 18:26:27
+archive/issue_comments_009465.json:
+```json
+{
+    "body": "Positive review on Mike's two patches.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-22T18:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9465",
+    "user": "mabshoff"
+}
+```
 
 Positive review on Mike's two patches.
 
@@ -478,15 +659,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-22 18:27:03
+archive/issue_comments_009466.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-22T18:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9466",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-22 18:27:03
+archive/issue_comments_009467.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha0",
+    "created_at": "2008-08-22T18:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9467",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha0

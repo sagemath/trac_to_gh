@@ -1,28 +1,64 @@
 # Issue 1077: DSage restarts two workers after timeout
 
-Issue created by migration from https://trac.sagemath.org/ticket/1077
-
-Original creator: jvoight
-
-Original creation time: 2007-11-03 17:07:55
-
+archive/issues_001077.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen a job times out, the worker restarts running two jobs.  This slows things down and is not natural.\n\nAnd when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1077\n\n",
+    "created_at": "2007-11-03T17:07:55Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "DSage restarts two workers after timeout",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1077",
+    "user": "jvoight"
+}
+```
 Assignee: was
 
 When a job times out, the worker restarts running two jobs.  This slows things down and is not natural.
 
 And when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1077
+
+
+
+
 
 ---
 
-Comment by yi created at 2007-11-03 17:33:42
+archive/issue_comments_006515.json:
+```json
+{
+    "body": "Changing assignee from was to yi.",
+    "created_at": "2007-11-03T17:33:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6515",
+    "user": "yi"
+}
+```
 
 Changing assignee from was to yi.
 
 
+
 ---
 
-Comment by yi created at 2007-11-08 05:38:20
+archive/issue_comments_006516.json:
+```json
+{
+    "body": "Could you please elaborate?  What do you mean it restarts running two jobs? Currently the job timing out counts as a failure and by default each job has a failure threshold of 3 (i.e. it will fail three times before being removed from the job queue).  Unfortunately there is no easy way to change that until now.  If you launch the server like this:\n\ndsage.server(job_failure_threshold=0), this means that each job will only fail once before it is removed from the queue.  Find the bundle here:\n\nhttp://sage.math.washington.edu/home/yqiang/dsage.hg\n\nPlease report back if this does not fix the problem for you.",
+    "created_at": "2007-11-08T05:38:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6516",
+    "user": "yi"
+}
+```
 
 Could you please elaborate?  What do you mean it restarts running two jobs? Currently the job timing out counts as a failure and by default each job has a failure threshold of 3 (i.e. it will fail three times before being removed from the job queue).  Unfortunately there is no easy way to change that until now.  If you launch the server like this:
 
@@ -33,9 +69,20 @@ http://sage.math.washington.edu/home/yqiang/dsage.hg
 Please report back if this does not fix the problem for you.
 
 
+
 ---
 
-Comment by jvoight created at 2007-11-08 05:45:18
+archive/issue_comments_006517.json:
+```json
+{
+    "body": "Here's an example output.  How can worker 0 be working on two jobs at once?  \n\n2007/11/07 22:28 -0700 [-] [Worker 0] Job COZkyk31Am failed!\n2007/11/07 22:28 -0700 [-] Traceback:\n        Traceback (most recent call last):\n          File \"<stdin>\", line 1, in <module>\n          File \"/home/jvoight/.sage/dsage/tmp_worker_files/COZkyk31Am/default_job.py\", line 8, in <module>\n            DSAGE_RESULT=enumerate_totallyreal_fields(Integer(9),Integer(28334269485),[Integer(70), Integer(1), -Integer(15), Integer(0), Integer(1)],return_seqs=True)\n          File \"/home/jvoight/sage/local/lib/python2.5/site-packages/sage/rings/number_field/totallyreal.py\", line 225, in enumerate_totallyreal_fields\n            [zk,d] = nf.nfbasis_d()\n          File \"/home/jvoight/sage/local/lib/python2.5/site-packages/sage/misc/misc.py\", line 1300, in __mysig\n            raise KeyboardInterrupt, \"computation timed out because alarm was set for %s seconds\"%__alarm_time\n        KeyboardInterrupt: computation timed out because alarm was set for 1800 seconds\n\n2007/11/07 22:28 -0700 [-] [Worker 0] Performing hard reset.\n2007/11/07 22:28 -0700 [-] [Worker: 0] Restarting...\n2007/11/07 22:28 -0700 [Broker,client] [Worker 0] Starting job kLm2hihd1N\n2007/11/07 22:28 -0700 [Broker,client] [Worker 0] Starting job jUtQDMnlOG",
+    "created_at": "2007-11-08T05:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6517",
+    "user": "jvoight"
+}
+```
 
 Here's an example output.  How can worker 0 be working on two jobs at once?  
 
@@ -57,25 +104,58 @@ Here's an example output.  How can worker 0 be working on two jobs at once?
 2007/11/07 22:28 -0700 [Broker,client] [Worker 0] Starting job jUtQDMnlOG
 
 
+
 ---
 
-Comment by yi created at 2007-11-12 01:03:58
+archive/issue_comments_006518.json:
+```json
+{
+    "body": "This is fixed.  Find the bundle here:\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg",
+    "created_at": "2007-11-12T01:03:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6518",
+    "user": "yi"
+}
+```
 
 This is fixed.  Find the bundle here:
 
 http://sage.math.washington.edu/home/yqiang/dsage_latest.hg
 
 
+
 ---
 
-Comment by yi created at 2007-11-12 01:06:55
+archive/issue_comments_006519.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-12T01:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6519",
+    "user": "yi"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-20 14:45:28
+archive/issue_comments_006520.json:
+```json
+{
+    "body": "Yi, could you please provide a patch or bundle once 2.8.13 is out. If I try the bundle above it complains about unknown parent and it is unclear to me whether to apply the other bundle first.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-20T14:45:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6520",
+    "user": "mabshoff"
+}
+```
 
 Yi, could you please provide a patch or bundle once 2.8.13 is out. If I try the bundle above it complains about unknown parent and it is unclear to me whether to apply the other bundle first.
 
@@ -84,9 +164,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by yi created at 2007-12-01 04:14:59
+archive/issue_comments_006521.json:
+```json
+{
+    "body": "I've uploaded\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nWhich is a bundle against 2.8.14.",
+    "created_at": "2007-12-01T04:14:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6521",
+    "user": "yi"
+}
+```
 
 I've uploaded
 
@@ -95,15 +186,37 @@ http://sage.math.washington.edu/home/yqiang/dsage_latest.hg
 Which is a bundle against 2.8.14.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 00:37:34
+archive/issue_comments_006522.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T00:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6522",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 00:37:34
+archive/issue_comments_006523.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T00:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6523",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.

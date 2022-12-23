@@ -1,11 +1,21 @@
 # Issue 650: serious modular forms bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/650
-
-Original creator: was
-
-Original creation time: 2007-09-13 18:47:19
-
+archive/issues_000650.json:
+```json
+{
+    "body": "Assignee: was or craigcitro\n\n\n```\nsage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()\nsage: d\n\n[\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field,\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field\n]\nsage: for a in d: print a.q_eigenform(10)\n....:\nq - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)\nq + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/650\n\n",
+    "created_at": "2007-09-13T18:47:19Z",
+    "labels": [
+        "modular forms",
+        "critical",
+        "bug"
+    ],
+    "title": "serious modular forms bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/650",
+    "user": "was"
+}
+```
 Assignee: was or craigcitro
 
 
@@ -24,43 +34,115 @@ q + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*al
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/650
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2007-09-13 23:07:43
+archive/issue_comments_003379.json:
+```json
+{
+    "body": "Added a patch that turns this into a NotImplementedError. The problem is that the code for computing newspaces of modular forms is written ... oddly. We're going to fix this in the near future, but this will at least stop giving wrong answers in the interim.",
+    "created_at": "2007-09-13T23:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3379",
+    "user": "craigcitro"
+}
+```
 
 Added a patch that turns this into a NotImplementedError. The problem is that the code for computing newspaces of modular forms is written ... oddly. We're going to fix this in the near future, but this will at least stop giving wrong answers in the interim.
 
 
+
 ---
 
-Comment by craigcitro created at 2007-10-02 00:38:50
+archive/issue_comments_003380.json:
+```json
+{
+    "body": "Changing assignee from was or craigcitro to craigcitro.",
+    "created_at": "2007-10-02T00:38:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3380",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from was or craigcitro to craigcitro.
 
 
+
 ---
 
-Comment by craigcitro created at 2007-10-02 00:38:50
+archive/issue_comments_003381.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-02T00:38:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3381",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by craigcitro created at 2007-10-12 21:58:49
+archive/issue_comments_003382.json:
+```json
+{
+    "body": "Actually, I discovered a second place where this needed to be turned into a NotImplementedError. I replaced the above bundle with a fix for both.",
+    "created_at": "2007-10-12T21:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3382",
+    "user": "craigcitro"
+}
+```
 
 Actually, I discovered a second place where this needed to be turned into a NotImplementedError. I replaced the above bundle with a fix for both.
 
 
+
 ---
+
+archive/issue_comments_003383.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-12T21:59:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3383",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-13 06:00:06
+archive/issue_comments_003384.json:
+```json
+{
+    "body": "\n```\n22:55 < cwitty_> #650: applies cleanly, but the doctests fail.  It's odd...unless Mercurial is screwing \n                 up the history somehow, it looks like the doctests never could have worked after this \n                 patch.\n22:57 < williamstein> I think the doctests were wrong.\n22:57 < williamstein> I.e., they claimed a result that was mathematically wrong.\n22:59 < cwitty_> Right.  But the patch comments out the doctest \"N = ...\", but leaves the next doctest \n                 alone, \"N.basis()\".  Why didn't he comment out that doctest too?\n22:59 < williamstein> It's a mistake on his part.\n```\n",
+    "created_at": "2007-10-13T06:00:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3384",
+    "user": "was"
+}
+```
 
 
 ```
@@ -76,20 +158,55 @@ Comment by was created at 2007-10-13 06:00:06
 
 
 
+
 ---
 
-Comment by craigcitro created at 2007-10-14 07:52:03
+archive/issue_comments_003385.json:
+```json
+{
+    "body": "As the comments above point out, I was too hasty in commenting out the other doctests, and didn't test it due to lack of time. I updated the patch to comment out the last three doctests I missed on the first run, and I'm about to upload it.",
+    "created_at": "2007-10-14T07:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3385",
+    "user": "craigcitro"
+}
+```
 
 As the comments above point out, I was too hasty in commenting out the other doctests, and didn't test it due to lack of time. I updated the patch to comment out the last three doctests I missed on the first run, and I'm about to upload it.
 
 
+
 ---
 
-Comment by was created at 2007-10-19 01:48:40
+archive/issue_comments_003386.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-19T01:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3386",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_003387.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-19T01:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3387",
+    "user": "was"
+}
+```
 
 Attachment

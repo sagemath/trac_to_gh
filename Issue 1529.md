@@ -1,30 +1,79 @@
 # Issue 1529: update install_scripts to also install R script.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1529
-
-Original creator: was
-
-Original creation time: 2007-12-16 00:54:26
-
+archive/issues_001529.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1529\n\n",
+    "created_at": "2007-12-16T00:54:26Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "update install_scripts to also install R script.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1529",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1529
+
+
+
+
 
 ---
+
+archive/issue_comments_009774.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-16T00:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1529#issuecomment-9774",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 03:08:03
+archive/issue_comments_009775.json:
+```json
+{
+    "body": "Merged in 2.9.rc3.",
+    "created_at": "2007-12-16T03:08:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1529#issuecomment-9775",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc3.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 03:08:03
+archive/issue_comments_009776.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T03:08:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1529#issuecomment-9776",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

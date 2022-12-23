@@ -1,11 +1,21 @@
 # Issue 1731: SAge mac app
 
-Issue created by migration from https://trac.sagemath.org/ticket/1731
-
-Original creator: was
-
-Original creation time: 2008-01-09 06:54:44
-
+archive/issues_001731.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nFrom NASA:\n\n\n```\nHi,\n\nThanks for Sage - it's awesome. I need to convince my coworkers to\nswitch from their proprietary programs to Sage.\n\nI've attached a little script that uses the Platypus program\n(http://www.sveinbjorn.org/software) to bundle the sage directory\ninto a clickable Mac application. It has some code to update the\nSAGE_ROOT variable so that things still work if a user drags the\nprogram around.\n\nMy code is public domain, so feel free to use it if you like it.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1731\n\n",
+    "created_at": "2008-01-09T06:54:44Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "SAge mac app",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1731",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 From NASA:
@@ -27,15 +37,43 @@ My code is public domain, so feel free to use it if you like it.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1731
+
+
+
+
 
 ---
+
+archive/issue_comments_010956.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-09T14:46:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10956",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-10 10:40:26
+archive/issue_comments_010957.json:
+```json
+{
+    "body": "Some more info from http://groups.google.com/group/sage-devel/t/c181f8ccde549cdd:\n\n```\n rpmuller@gmail.com     \t\nView profile\n\t More options Feb 9, 3:20 am\nFrom: \"rpmul...@gmail.com\" <rpmul...@gmail.com>\nDate: Fri, 8 Feb 2008 18:20:32 -0800 (PST)\nLocal: Sat, Feb 9 2008 3:20 am\nSubject: Mac-like application for Sage on Mac\nReply | Reply to author | Forward | Print | Individual message | Show original | Remove | Report this message | Find messages by this author\nI remember reading somewhere when I downloaded a version of Sage that\nthe program was soliciting help from mac-experts in making the binary\nversion of Sage a little more mac-like.\n\nI'm certainly not a mac expert. However, I got Sage working through a\nmac-like icon using the Platypus program (http://www.sveinbjorn.org/\nplatypus). There's a good article here (http://www.tuaw.com/2007/05/08/\nplatypus-create-mac-binaries-from-ruby-perl-shell-scripts-et/) about\nhow to use the program here. But it's kinda nice. Among other\nprograms, the Gimp.app program uses Sage for it's Mac application\nbundle.\n\nI created a shell script that looks like this:\n\n#!/bin/sh\ncat > startsage << EOF\nnotebook()\nEOF\n/Users/rmuller/Programs/sage-2.10/sage < sage\n\nand had Platypus run it, putting the output into a text window. This\nruns the notebook() function and the twisted server, and pops open the\nbrowser with the Sage notebook.\n\nThe drawback is that the script needs to know the path to my sage\ninstallation. I think that the workaround to this is to actually put\nthe entire Sage installation in the folder that Platypus creates for\nthe application. OS X applications on the Mac are actually folders\n(unix directories).\n\nDoes this sound like it would be useful to the Sage community if I\ncould get it working? \n```\n",
+    "created_at": "2008-02-10T10:40:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10957",
+    "user": "mabshoff"
+}
+```
 
 Some more info from http://groups.google.com/group/sage-devel/t/c181f8ccde549cdd:
 
@@ -84,9 +122,20 @@ could get it working?
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 23:36:02
+archive/issue_comments_010958.json:
+```json
+{
+    "body": "Please check out http://wiki.sagemath.org/SageMacApplication for more information on the whole \"Sage Application on OSX\" issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-15T23:36:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10958",
+    "user": "mabshoff"
+}
+```
 
 Please check out http://wiki.sagemath.org/SageMacApplication for more information on the whole "Sage Application on OSX" issue.
 
@@ -95,9 +144,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 06:27:42
+archive/issue_comments_010959.json:
+```json
+{
+    "body": "In https://groups.google.com/group/sage-support/t/9bff2799e1ae4885 Greg Landweber suggested:\n\n```\nYou don't need any fancy droplets or applets. You can just use the\nfollowing AppleScript to activate Sage (take this script and save it\nas an AppleScript application, then put it in the same directory as\nthe \"sage\" UNIX executable):\n\ntell application \"Finder\"\n        set myFolder to container of (path to me) as string\nend tell\n\ntell application \"Terminal\"\n        activate\n        do script (POSIX path of myFolder) & \"sage\"\nend tell\n\nIf on the other hand you want to start the notebook and don't need the\nterminal window in front, you can use the following AppleScript to\nopen a terminal window in the background and start Sage in notebook\nmode:\n\ntell application \"Finder\"\n        set myFolder to container of (path to me) as string\nend tell\n\ntell application \"Terminal\"\n        do script (POSIX path of myFolder) & \"sage --notebook\"\nend tell\n\nWhat else did you folks have in mind in terms of Mac OS X integration?\n\n-- Greg \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-30T06:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10959",
+    "user": "mabshoff"
+}
+```
 
 In https://groups.google.com/group/sage-support/t/9bff2799e1ae4885 Greg Landweber suggested:
 
@@ -140,23 +200,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-01-22 22:34:24
+archive/issue_comments_010960.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-22T22:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10960",
+    "user": "malb"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 03:20:23
+archive/issue_comments_010961.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-08T03:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10961",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 03:20:23
+archive/issue_comments_010962.json:
+```json
+{
+    "body": "Fixed via #4817. Improvement should be done on top of that codebase.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T03:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1731",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10962",
+    "user": "mabshoff"
+}
+```
 
 Fixed via #4817. Improvement should be done on top of that codebase.
 

@@ -1,11 +1,21 @@
 # Issue 1367: weird bug creating fractional ideal in relative number field
 
-Issue created by migration from https://trac.sagemath.org/ticket/1367
-
-Original creator: was
-
-Original creation time: 2007-12-02 07:52:55
-
+archive/issues_001367.json:
+```json
+{
+    "body": "Assignee: was\n\nI noticed this bug when thinking about implementing factorization of integers\nin a general relative number field (via the absolute field corresponding\nto it).  If this bug were fixed, then general factorization would be\ntrivial to implement, as suggested by the example below. \n\n\n```\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: I = A.factor_integer(3)[0][0]\nsage: from_A, to_A = A.structure()\nsage: G = [from_A(z) for z in I.gens()]; G\n[3, (-2*b - 1)*a + b - 1]\nsage: K.fractional_ideal(G)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/s/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/s/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/s/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/s/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/s/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in __repr__(self)\n    215 \n    216     def __repr__(self):\n--> 217         return \"Fractional ideal %s\"%self._repr_short()\n    218 \n    219     def _repr_short(self):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.py in _repr_short(self)\n    232         # makes things insanely slow in general.\n    233         # When I fix this, I *have* to also change the _latex_ method.\n--> 234         return '(%s)'%(', '.join([str(x) for x in self.gens_reduced()]))\n    235 \n    236     def __div__(self, other):\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py in gens_reduced(self)\n     84             S = L['x']\n     85             gens = L.pari_rnf().rnfidealtwoelt(self.pari_rhnf())\n---> 86             gens = [ L(R(x.lift().lift())) for x in gens ]\n     87             ## Make sure that gens[1] is in L, not K\n     88             Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __call__(self, x)\n   3321             return self.base_field()(x)\n   3322         \n-> 3323         return self._element_class(self, x)\n   3324 \n   3325     def _coerce_impl(self, x):\n\n/Users/was/s/devel/sage-main/sage/rings/number_field/number_field_element.pyx in sage.rings.number_field.number_field_element.NumberFieldElement.__init__()\n    231         num = f * den\n    232         for i from 0 <= i <= num.degree():\n--> 233             (<Integer>ZZ(num[i]))._to_ZZ(&coeff)\n    234             ZZX_SetCoeff( self.__numerator, i, coeff )\n    235 \n\n/Users/was/s/devel/sage-main/sage/rings/number_field/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Unable to coerce -b - 2 to an integer\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1367\n\n",
+    "created_at": "2007-12-02T07:52:55Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "weird bug creating fractional ideal in relative number field",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1367",
+    "user": "was"
+}
+```
 Assignee: was
 
 I noticed this bug when thinking about implementing factorization of integers
@@ -132,10 +142,25 @@ sage: K.fractional_ideal(G)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1367
+
+
+
+
 
 ---
 
-Comment by cremona created at 2008-02-18 12:08:58
+archive/issue_comments_008768.json:
+```json
+{
+    "body": "This might well be fixed by the patches posted for #1946.  Unfortunately I do not seem to be able to test that, owing to my complete incompetence in applying patches, even my own.  It would be a good idea if #1946 was cross-referenced to this one.\n\n In case this seems crazy:  fixing #1946 by adding lots of doctests to the code for Tate's algorithm over number fields revealed some minor bugs in its implementation, and fixing those revealed some bugs in the code for ideals and fractional ideals in number fields.  I fixed that (in late January, partly jointly with William) and at the same time -- I seem to remember -- fixed this thing about ideals in relative extensions.\n\n Both the patches  attached to #1946 are waiting review....",
+    "created_at": "2008-02-18T12:08:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8768",
+    "user": "cremona"
+}
+```
 
 This might well be fixed by the patches posted for #1946.  Unfortunately I do not seem to be able to test that, owing to my complete incompetence in applying patches, even my own.  It would be a good idea if #1946 was cross-referenced to this one.
 
@@ -144,16 +169,38 @@ This might well be fixed by the patches posted for #1946.  Unfortunately I do no
  Both the patches  attached to #1946 are waiting review....
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-25 01:00:54
+archive/issue_comments_008769.json:
+```json
+{
+    "body": "This is still broken in sage-3.0.",
+    "created_at": "2008-04-25T01:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8769",
+    "user": "AlexGhitza"
+}
+```
 
 This is still broken in sage-3.0.
 
 
+
 ---
 
-Comment by fwclarke created at 2008-07-18 17:57:05
+archive/issue_comments_008770.json:
+```json
+{
+    "body": "The problem is triggered at line 89 of `number_field_ideal_rel.py` (in 3.0.5):\n\n```\n            gens = [ L(R(x.lift().lift())) for x in gens ]\n```\n\nIn the case above , `L` is the field `K` and (when `x` is `gens[1]`) `R(x.lift().lift())` is the polynomial `(-b + 1)*x - b - 2` over the base field of `K`.   But the real difficulty is that `NumberFieldElement.__init__` doesn't work properly for relative fields; it ought to coerce a polynomial over the base field into the field, but doesn't.\n\nRather than trying to resolve the general problem with this coercion, it's easy to rewrite the above line 89, as in \nthe attached patch.  Then the following works:\n\n```\nsage: K.<a, b> = NumberField([x^2 + 1, x^2 + 2])\nsage: A = K.absolute_field('z')\nsage: from_A, to_A = A.structure()\nsage: abs_ideals = [f[0] for f in A.factor(3)]\nsage: rel_ideals = [K.ideal([from_A(y) for y in I.gens()]) for I in abs_ideals]\nsage: rel_ideals\n[Fractional ideal (3, a - 1), Fractional ideal (3, (-1)*a - 1)]\nsage: prod(rel_ideals)\nFractional ideal (3)\nsage: [J.is_principal() for J in rel_ideals]\n[True, True]\n```\n",
+    "created_at": "2008-07-18T17:57:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8770",
+    "user": "fwclarke"
+}
+```
 
 The problem is triggered at line 89 of `number_field_ideal_rel.py` (in 3.0.5):
 
@@ -182,14 +229,38 @@ sage: [J.is_principal() for J in rel_ideals]
 
 
 
+
 ---
+
+archive/issue_comments_008771.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-18T17:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8771",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-18 18:19:31
+archive/issue_comments_008772.json:
+```json
+{
+    "body": "Hi Francis, \n\nI changed the title slightly so our various sql queries pick it up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-18T18:19:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8772",
+    "user": "mabshoff"
+}
+```
 
 Hi Francis, 
 
@@ -200,9 +271,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by dmharvey created at 2008-07-18 18:54:35
+archive/issue_comments_008773.json:
+```json
+{
+    "body": "Hi,\n\nTwo things. First, the patch needs at least one doctest.\n\nSecond, something very fishy is going on. After applying this patch, I try out the example at the top of the definition of `NumberFieldFractionalIdeal_rel`, under the WARNING:\n\n\n```\nsage: K.<a> = NumberField([x^2 + 1, x^2 + 2]); K\nNumber Field in a0 with defining polynomial x^2 + 1 over its base field\nsage: i = K.ideal([a+1])\nsage: i\nFractional ideal (1)\n```\n\n\nIf `a+1` generates the unit ideal, it had better be a unit. But a+1 is really 1+i (the Gaussian integer), which is not a unit. Alternatively\n\n```\nsage: (a+1).norm()\n4\n```\n\nwhich is not +1 or -1.",
+    "created_at": "2008-07-18T18:54:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8773",
+    "user": "dmharvey"
+}
+```
 
 Hi,
 
@@ -230,9 +312,20 @@ sage: (a+1).norm()
 which is not +1 or -1.
 
 
+
 ---
 
-Comment by fwclarke created at 2008-07-18 23:30:49
+archive/issue_comments_008774.json:
+```json
+{
+    "body": "Continuing the calculation, we have\n\n```\nsage: i.gens()\n(a + 1,)\nsage: i.gens_reduced()\n(1,)\n```\n\nand `i.__repr__()` via `i._repr_short(self)` uses `i.gens_reduced()`\n\nThe problem is with lines 90\u201392 of `number_field_ideal_rel.py`\n\n```\n            ## Make sure that gens[1] is in L, not K\n            Lcoeff = [ L(x) for x in list(gens[1].polynomial()) ]\n            gens[1] = S.hom([L.gen()])(S(Lcoeff))\n```\n\nwhich seem totally wrong-headed.  In the case in question `gens` is `[2, (-b)*a]` (which is ok).  Then `(-b)*a` gets \nconverted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the *absolute* field, after which `x` is (in a most\nconvoluted way) replaced by `a`, giving (of course) `1` (which is not ok).\n\nThere must be a much simpler way to achieve the object of ensuring that the generator is an element of the relative field.",
+    "created_at": "2008-07-18T23:30:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8774",
+    "user": "fwclarke"
+}
+```
 
 Continuing the calculation, we have
 
@@ -254,33 +347,66 @@ The problem is with lines 90–92 of `number_field_ideal_rel.py`
 ```
 
 which seem totally wrong-headed.  In the case in question `gens` is `[2, (-b)*a]` (which is ok).  Then `(-b)*a` gets 
-converted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the _absolute_ field, after which `x` is (in a most
+converted to `1/2*x^2 + 3/2`, which is the polynomial representing it in the *absolute* field, after which `x` is (in a most
 convoluted way) replaced by `a`, giving (of course) `1` (which is not ok).
 
 There must be a much simpler way to achieve the object of ensuring that the generator is an element of the relative field.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-07-19 04:57:43
+archive/issue_comments_008775.json:
+```json
+{
+    "body": "Oh look, the patch is probably fine, but I go completely nuts every time I delve into any of the algebraic number theory stuff in Sage. I mean, why on earth is `NumberFieldFractionalIdeal` a subclass of `Ideal_generic`?? That's completely nuts. ***A fractional ideal is not an ideal.*** That's about as sensible as making `Rational` a subclass of `Integer`. Trying to patch this one line at a time is like trying to stop global warming with a toothpick.\n\nI suggest that you (1) report the above as a separate ticket, (2) add a doctest to your patch to at least illustrate the corrected behaviour, (3) \"correct\" the doctest under the WARNING so at least it doesn't fail when doctests are run, (4) do a full run of doctests to see what else \"breaks\", (5) replace \"Willia Stein\" by \"William Stein\" in the authors at the top of the file, and (6) find someone else game enough to review this patch.",
+    "created_at": "2008-07-19T04:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8775",
+    "user": "dmharvey"
+}
+```
 
 Oh look, the patch is probably fine, but I go completely nuts every time I delve into any of the algebraic number theory stuff in Sage. I mean, why on earth is `NumberFieldFractionalIdeal` a subclass of `Ideal_generic`?? That's completely nuts. ***A fractional ideal is not an ideal.*** That's about as sensible as making `Rational` a subclass of `Integer`. Trying to patch this one line at a time is like trying to stop global warming with a toothpick.
 
 I suggest that you (1) report the above as a separate ticket, (2) add a doctest to your patch to at least illustrate the corrected behaviour, (3) "correct" the doctest under the WARNING so at least it doesn't fail when doctests are run, (4) do a full run of doctests to see what else "breaks", (5) replace "Willia Stein" by "William Stein" in the authors at the top of the file, and (6) find someone else game enough to review this patch.
 
 
+
 ---
 
-Comment by cremona created at 2008-07-19 08:55:49
+archive/issue_comments_008776.json:
+```json
+{
+    "body": "I spent several evening 6 months ago on this chunk of code, trying to see how it was supposed to work and fixing what didn't.  It was not a very happy experience -- not helped by the fact that this was just about the first ever Sage development which I did.  On the other hand, I was helped a lot at the time by William.  Th eonly reason I got into that code at all was that I decided to add doctests to `ell_number_field.py` and found lots of things broken. \n\nAnyway, while I cannot guarantee to have time to review this properly soon, I'll do what I can.",
+    "created_at": "2008-07-19T08:55:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8776",
+    "user": "cremona"
+}
+```
 
 I spent several evening 6 months ago on this chunk of code, trying to see how it was supposed to work and fixing what didn't.  It was not a very happy experience -- not helped by the fact that this was just about the first ever Sage development which I did.  On the other hand, I was helped a lot at the time by William.  Th eonly reason I got into that code at all was that I decided to add doctests to `ell_number_field.py` and found lots of things broken. 
 
 Anyway, while I cannot guarantee to have time to review this properly soon, I'll do what I can.
 
 
+
 ---
 
-Comment by fwclarke created at 2008-07-19 09:21:26
+archive/issue_comments_008777.json:
+```json
+{
+    "body": "The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  For example, in\n\n```\n    def absolute_ideal(self):\n        \"\"\"\n        If this is an ideal in the extension L/K, return the ideal with\n        the same generators in the absolute field L/Q.\n        \"\"\"\n        try:\n            return self.__absolute_ideal\n        except AttributeError:\n            rnf = self.number_field().pari_rnf()\n            L = self.number_field().absolute_field('a')\n            R = L['x']\n            nf = L.pari_nf()\n            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n            self.__absolute_ideal = L.ideal(genlist)\n            return self.__absolute_ideal\n```\n\n(1) The generator of the absolute field is always called 'a'; it would be much better if the user could choose the name, and, even better, was also able to get the absolute ideal via something like `A = K.absolute_field('z'); A(J)`. (2) Neither `rnf` nor `nf` get used. (3) Since `x.polynomial()` is a rational polynomial, `L(R(x.polynomial()))` is the same as `L(x.polynomial())`. (4) In this context, `list(self.gens())`is no different from `self.gens()`.\n\nI've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.",
+    "created_at": "2008-07-19T09:21:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8777",
+    "user": "fwclarke"
+}
+```
 
 The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  For example, in
 
@@ -307,16 +433,38 @@ The more I look at `number_field_ideal_rel.py`, the more I notice needs doing.  
 I've come to the conclusion that a more serious rewrite (with some more testing doctests) is needed, for which I'm unlikely to have much time in the next few weeks.  My one-line patch was really only meant to point out where the defect lay.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-07-19 13:38:32
+archive/issue_comments_008778.json:
+```json
+{
+    "body": "I have made a new ticket #3680 to cover my general gripes about the algebraic number theory framework. But I don't have time to work on it now.",
+    "created_at": "2008-07-19T13:38:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8778",
+    "user": "dmharvey"
+}
+```
 
 I have made a new ticket #3680 to cover my general gripes about the algebraic number theory framework. But I don't have time to work on it now.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-24 09:39:56
+archive/issue_comments_008779.json:
+```json
+{
+    "body": "This relies on #5066.  Apply that first.\n\nThis DOES NOT address every issue with relative number fields, but it does help in the creation and coercion.  Significantly.\n\nPlenty of doctests, but tons of work left to be done.  The important part is that one can now create relative number field elements from relative polynomials self.base_ring()['x'] or from stacked polynomials QQ['base']['ext'].  Fixes all sorts of things.\n\nDon't forget to close #4869 and #4727 after this is merged.",
+    "created_at": "2009-01-24T09:39:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8779",
+    "user": "ncalexan"
+}
+```
 
 This relies on #5066.  Apply that first.
 
@@ -327,23 +475,58 @@ Plenty of doctests, but tons of work left to be done.  The important part is tha
 Don't forget to close #4869 and #4727 after this is merged.
 
 
+
 ---
+
+archive/issue_comments_008780.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T09:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8780",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-24 10:03:43
+archive/issue_comments_008781.json:
+```json
+{
+    "body": "Do not apply `sage-1367.patch`.\n\nThere may be doctests missing on some functions, but I can't fix this, document a ton of stuff, and doctest every untested function in one go.  This is very much a work in progress patch.",
+    "created_at": "2009-01-24T10:03:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8781",
+    "user": "ncalexan"
+}
+```
 
 Do not apply `sage-1367.patch`.
 
 There may be doctests missing on some functions, but I can't fix this, document a ton of stuff, and doctest every untested function in one go.  This is very much a work in progress patch.
 
 
+
 ---
 
-Comment by roed created at 2009-01-24 17:31:37
+archive/issue_comments_008782.json:
+```json
+{
+    "body": "There are a few things I want to discuss (probably at lunch).\n\nThe first is that I'm not completely convinced that the following example is the behavior we want:\n\nsage: K.<a> = NumberField(ZZ['x'].0^5 + 2, 'a') \nsage: L.<b> = K.extension(ZZ['x'].0^2 + 3*a, 'b') \nsage: u = QQ['u'].gen() \nsage: t = u.parent()['t'].gen()\n\nsage: L(u*5)\n5*b\n\nI guess if we're going to convert at all this makes the most sense, but I want to think about it a bit more.  I'm even less convinced of the following:\n\nsage: W.<w> = t.parent()[]\nsage: L(w*5)\n5*b\nsage: L(W(t))\n5*a\nsage: L(W(u))\nTypeError\n\nThe second issue is a naming one.  The function coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\nOverall, though, it looks quite good.",
+    "created_at": "2009-01-24T17:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8782",
+    "user": "roed"
+}
+```
 
 There are a few things I want to discuss (probably at lunch).
 
@@ -372,9 +555,20 @@ The second issue is a naming one.  The function coerce_non_number_field_element_
 Overall, though, it looks quite good.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-24 20:06:42
+archive/issue_comments_008783.json:
+```json
+{
+    "body": "The patch explains why the first behaviour is correct.  Do you want\n\n```\nsage: x = ZZ['x'].0\nsage: K.<a> = QuadraticField(5)\nsage: L.<b> = K.extension(x^2 - a)\nsage: L(x + 2) in L\nTrue\n```\n\nor\n\n```\nsage: L(x + 2) in K\nTrue\n```\n\n\nI think the first is *much* more desirable.\n\nYour second issue is a good point.  I should make sure you're either giving QQ['x'] (or something isomorphic) or QQ['base']['ext'] or base['ext'].  But that's hard at this time.\n\nAs for naming: make it a new ticket.  It's not worth shuffing a rename in with a reorganization in my opinion.",
+    "created_at": "2009-01-24T20:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8783",
+    "user": "ncalexan"
+}
+```
 
 The patch explains why the first behaviour is correct.  Do you want
 
@@ -401,9 +595,20 @@ Your second issue is a good point.  I should make sure you're either giving QQ['
 As for naming: make it a new ticket.  It's not worth shuffing a rename in with a reorganization in my opinion.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 04:10:53
+archive/issue_comments_008784.json:
+```json
+{
+    "body": "Nick, David: any chance to see some movement on this? I would like to get this in before it rots and potential issues can be addressed via followup tickets.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T04:10:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8784",
+    "user": "mabshoff"
+}
+```
 
 Nick, David: any chance to see some movement on this? I would like to get this in before it rots and potential issues can be addressed via followup tickets.
 
@@ -414,22 +619,44 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-29 05:00:17
+archive/issue_comments_008785.json:
+```json
+{
+    "body": "I think this should be applied and more tickets opened for any additional issues.\n\n* It's an improvement upon the old code and addresses 3 tickets.\n\n* It was never going to be the final say in this area.\n\n* I don't have time to work on it more, and neither does David Roe.",
+    "created_at": "2009-01-29T05:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8785",
+    "user": "ncalexan"
+}
+```
 
 I think this should be applied and more tickets opened for any additional issues.
 
- * It's an improvement upon the old code and addresses 3 tickets.
+* It's an improvement upon the old code and addresses 3 tickets.
 
- * It was never going to be the final say in this area.
+* It was never going to be the final say in this area.
 
- * I don't have time to work on it more, and neither does David Roe.
+* I don't have time to work on it more, and neither does David Roe.
+
 
 
 ---
 
-Comment by mabshoff created at 2009-01-29 05:03:07
+archive/issue_comments_008786.json:
+```json
+{
+    "body": "Replying to [comment:17 ncalexan]:\n> I think this should be applied and more tickets opened for any additional issues.\n> \n>  * It's an improvement upon the old code and addresses 3 tickets.\n> \n>  * It was never going to be the final say in this area.\n> \n>  * I don't have time to work on it more, and neither does David Roe.\n\nThanks Nick. Please open followup tickets and chance it to a positive review. I will then merge this ticket and its dependencies.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T05:03:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8786",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:17 ncalexan]:
 > I think this should be applied and more tickets opened for any additional issues.
@@ -447,21 +674,43 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-29 05:09:51
+archive/issue_comments_008787.json:
+```json
+{
+    "body": "Opened #5126 and #5127.",
+    "created_at": "2009-01-29T05:09:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8787",
+    "user": "ncalexan"
+}
+```
 
 Opened #5126 and #5127.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 05:34:09
+archive/issue_comments_008788.json:
+```json
+{
+    "body": "Ok, to make this patch apply I need to do two things:\n\n* change cannonical in this patch to canonical\n* apply the following patch\n\n```\ndiff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py\n--- a/sage/rings/number_field/number_field_ideal_rel.py Sun Jan 25 08:47:06 2009 +0100\n+++ b/sage/rings/number_field/number_field_ideal_rel.py Wed Jan 28 21:27:03 2009 -0800\n@@ -69,8 +69,11 @@\n         try:\n             return self.__absolute_ideal\n         except AttributeError:\n+            rnf = self.number_field().pari_rnf()\n             L = self.number_field().absolute_field('a')\n-            genlist = [L(x.polynomial()) for x in list(self.gens())]\n+            R = L['x']\n+            nf = L.pari_nf()\n+            genlist = [L(R(x.polynomial())) for x in list(self.gens())]\n             self.__absolute_ideal = L.ideal(genlist)\n             return self.__absolute_ideal\n```\n\ndue to \n\n```\nchangeset:   11444:4196cd54c996\nuser:        Robert Bradshaw <robertwb@math.washington.edu>\ndate:        Fri Jan 23 03:38:03 2009 -0800\nsummary:     Convert univariate polynomials to new coercion model.\n```\n\nThis changes\n\n```\ngenlist = [L(R(x.polynomial())) for x in list(self.gens())]\n```\n\nto \n\n```\ngenlist = [L(R(x.polynomial())) for x in self.gens()]\n```\n\nbut doctests do pass. \n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T05:34:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8788",
+    "user": "mabshoff"
+}
+```
 
 Ok, to make this patch apply I need to do two things:
 
- * change cannonical in this patch to canonical
- * apply the following patch
+* change cannonical in this patch to canonical
+* apply the following patch
 
 ```
 diff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py
@@ -509,21 +758,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 05:41:09
+archive/issue_comments_008789.json:
+```json
+{
+    "body": "This is Nick's patch with cannonical -> canonical fixed",
+    "created_at": "2009-01-29T05:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8789",
+    "user": "mabshoff"
+}
+```
 
 This is Nick's patch with cannonical -> canonical fixed
 
 
+
 ---
+
+archive/issue_comments_008790.json:
+```json
+{
+    "body": "Attachment\n\nThis patch is required due to #5069 to make Nick's patch apply",
+    "created_at": "2009-01-29T05:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8790",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 This patch is required due to #5069 to make Nick's patch apply
 
 
+
 ---
+
+archive/issue_comments_008791.json:
+```json
+{
+    "body": "Attachment\n\nMerged trac_1367-prebase.patch and trac_1367.2.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T05:42:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8791",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -534,16 +820,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 05:42:49
+archive/issue_comments_008792.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-29T05:42:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8792",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 05:43:57
+archive/issue_comments_008793.json:
+```json
+{
+    "body": "The issues David remarked about are now being handled via #5126 and #5127.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T05:43:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1367#issuecomment-8793",
+    "user": "mabshoff"
+}
+```
 
 The issues David remarked about are now being handled via #5126 and #5127.
 

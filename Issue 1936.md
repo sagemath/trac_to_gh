@@ -1,11 +1,21 @@
 # Issue 1936: r-2.6.1.p11: sage-check fails on OSX 10.5
 
-Issue created by migration from https://trac.sagemath.org/ticket/1936
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-26 10:41:50
-
+archive/issues_001936.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nOn bsd the following happens:\n\n```\n     missing link(s):  methods methods\n  zScript                           text    html    latex   example\n  zpackages                         text    html    latex   example\n  zutils                            text    html    latex\n  Signals                           text    html    latex\nmake[5]: *** [test-Examples-Base] Error 2\nmake[4]: *** [test-Examples] Error 2\nmake[3]: *** [test-all-basics] Error 1\nmake[2]: *** [check] Error 2\n*************************************\nError testing package ** r-2.6.1.p11 **\n*************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1936\n\n",
+    "created_at": "2008-01-26T10:41:50Z",
+    "labels": [
+        "packages",
+        "major",
+        "bug"
+    ],
+    "title": "r-2.6.1.p11: sage-check fails on OSX 10.5",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1936",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 On bsd the following happens:
@@ -30,17 +40,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1936
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-26 10:42:26
+archive/issue_comments_012281.json:
+```json
+{
+    "body": "Changing component from packages to sage-check.",
+    "created_at": "2008-01-26T10:42:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#issuecomment-12281",
+    "user": "mabshoff"
+}
+```
 
 Changing component from packages to sage-check.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-26 15:58:14
+archive/issue_comments_012282.json:
+```json
+{
+    "body": "The exact same issue happens on sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-26T15:58:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#issuecomment-12282",
+    "user": "mabshoff"
+}
+```
 
 The exact same issue happens on sage.math.
 
@@ -49,15 +85,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-02 07:01:46
+archive/issue_comments_012283.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-02-02T07:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#issuecomment-12283",
+    "user": "mvngu"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-02 07:01:46
+archive/issue_comments_012284.json:
+```json
+{
+    "body": "As of Sage 4.3.2 (see #6532), the R spkg has been upgraded to version 2.10.1. I'm closing this ticket as wontfix. If the testsuite of R 2.10.1 fails, one needs to open a ticket for that.",
+    "created_at": "2010-02-02T07:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1936#issuecomment-12284",
+    "user": "mvngu"
+}
+```
 
 As of Sage 4.3.2 (see #6532), the R spkg has been upgraded to version 2.10.1. I'm closing this ticket as wontfix. If the testsuite of R 2.10.1 fails, one needs to open a ticket for that.

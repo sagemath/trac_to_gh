@@ -1,11 +1,21 @@
 # Issue 785: standard smith normal form
 
-Issue created by migration from https://trac.sagemath.org/ticket/785
-
-Original creator: syazdani
-
-Original creation time: 2007-10-02 13:38:16
-
+archive/issues_000785.json:
+```json
+{
+    "body": "Assignee: syazdani\n\nKeywords: smith_form\n\nThe smith_form function for integer dense matrices are printed backward from the usual notation. This is because pari prints them backward.\n\nThe enclosed patch fixes this problem, by permuting the entries appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/785\n\n",
+    "created_at": "2007-10-02T13:38:16Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "standard smith normal form",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/785",
+    "user": "syazdani"
+}
+```
 Assignee: syazdani
 
 Keywords: smith_form
@@ -14,9 +24,24 @@ The smith_form function for integer dense matrices are printed backward from the
 
 The enclosed patch fixes this problem, by permuting the entries appropriately.
 
+Issue created by migration from https://trac.sagemath.org/ticket/785
+
+
+
+
 
 ---
 
-Comment by syazdani created at 2007-10-02 13:43:37
+archive/issue_comments_004710.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-10-02T13:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/785#issuecomment-4710",
+    "user": "syazdani"
+}
+```
 
 Resolution: duplicate

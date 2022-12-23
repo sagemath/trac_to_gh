@@ -1,11 +1,21 @@
 # Issue 725: memleak in initialization of diagonal Matrix_integer_dense objects
 
-Issue created by migration from https://trac.sagemath.org/ticket/725
-
-Original creator: burcin
-
-Original creation time: 2007-09-21 02:34:04
-
+archive/issues_000725.json:
+```json
+{
+    "body": "Assignee: was\n\nFor the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:\n\n\n```\n            self._zero_out_matrix()\n            j = 0\n            for i from 0 <= i < self._nrows:\n                mpz_init_set(self._entries[j], x.value)\n                j = j + self._nrows + 1\n            self._initialized = True\n```\n\n\nas the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.\n\nAttached patch fixes this.\n\nThe valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.\n\nIssue created by migration from https://trac.sagemath.org/ticket/725\n\n",
+    "created_at": "2007-09-21T02:34:04Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "memleak in initialization of diagonal Matrix_integer_dense objects",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/725",
+    "user": "burcin"
+}
+```
 Assignee: was
 
 For the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:
@@ -27,35 +37,96 @@ Attached patch fixes this.
 
 The valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.
 
+Issue created by migration from https://trac.sagemath.org/ticket/725
+
+
+
+
 
 ---
+
+archive/issue_comments_004227.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-21T02:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4227",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2007-09-21 02:36:24
+archive/issue_comments_004228.json:
+```json
+{
+    "body": "Changing assignee from was to burcin.",
+    "created_at": "2007-09-21T02:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4228",
+    "user": "burcin"
+}
+```
 
 Changing assignee from was to burcin.
 
 
+
 ---
 
-Comment by burcin created at 2007-09-21 02:36:24
+archive/issue_comments_004229.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-09-21T02:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4229",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:45:27
+archive/issue_comments_004230.json:
+```json
+{
+    "body": "great work!",
+    "created_at": "2007-09-21T02:45:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4230",
+    "user": "was"
+}
+```
 
 great work!
 
 
+
 ---
 
-Comment by was created at 2007-09-21 02:45:27
+archive/issue_comments_004231.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-21T02:45:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/725#issuecomment-4231",
+    "user": "was"
+}
+```
 
 Resolution: fixed

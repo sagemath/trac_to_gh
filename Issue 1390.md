@@ -1,11 +1,21 @@
 # Issue 1390: fix qbar doctest on 32 bit FC8 Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/1390
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-04 01:31:09
-
+archive/issues_001390.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nJaap reported the issue, the trivial attached patch fixes it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1390\n\n",
+    "created_at": "2007-12-04T01:31:09Z",
+    "labels": [
+        "doctest coverage",
+        "critical",
+        "bug"
+    ],
+    "title": "fix qbar doctest on 32 bit FC8 Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1390",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Jaap reported the issue, the trivial attached patch fixes it.
@@ -14,22 +24,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1390
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-04 01:31:25
+archive/issue_comments_008944.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-04T01:31:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1390",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1390#issuecomment-8944",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_008945.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-04T01:31:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1390",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1390#issuecomment-8945",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-04 14:28:26
+archive/issue_comments_008946.json:
+```json
+{
+    "body": "Merged in 2.8.15.final\n\nThis went it, but it looks like William forgot to close this.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-04T14:28:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1390",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1390#issuecomment-8946",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.final
 
@@ -40,8 +89,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-04 14:28:26
+archive/issue_comments_008947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-04T14:28:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1390",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1390#issuecomment-8947",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

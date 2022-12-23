@@ -1,33 +1,80 @@
 # Issue 1000: Sage does not have 10000 users yet.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1000
-
-Original creator: was
-
-Original creation time: 2007-10-25 16:48:05
-
+archive/issues_001000.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1000\n\n",
+    "created_at": "2007-10-25T16:48:05Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "Sage does not have 10000 users yet.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1000",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1000
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-25 16:50:15
+archive/issue_comments_006088.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to was.",
+    "created_at": "2007-10-25T16:50:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6088",
+    "user": "was"
+}
+```
 
 Changing assignee from mabshoff to was.
 
 
+
 ---
 
-Comment by was created at 2007-10-25 16:50:38
+archive/issue_comments_006089.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-25T16:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6089",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-12-10 17:29:52
+archive/issue_comments_006090.json:
+```json
+{
+    "body": "We've made major progress toward this ticket so far with:\n\nhttp://science.slashdot.org/article.pl?sid=07/12/08/1350258\n\nWe had nearly 5000 downloads this weekend.",
+    "created_at": "2007-12-10T17:29:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6090",
+    "user": "was"
+}
+```
 
 We've made major progress toward this ticket so far with:
 
@@ -36,23 +83,56 @@ http://science.slashdot.org/article.pl?sid=07/12/08/1350258
 We had nearly 5000 downloads this weekend.
 
 
+
 ---
 
-Comment by was created at 2008-01-09 06:16:42
+archive/issue_comments_006091.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-09T06:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6091",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2008-01-09 06:16:42
+archive/issue_comments_006092.json:
+```json
+{
+    "body": "I think we have 10000 users now based on downloads, etc.",
+    "created_at": "2008-01-09T06:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6092",
+    "user": "was"
+}
+```
 
 I think we have 10000 users now based on downloads, etc.
 
 
+
 ---
 
-Comment by was created at 2013-10-05 20:41:33
+archive/issue_comments_006093.json:
+```json
+{
+    "body": "I made this ticket in the first place, so I'm going to make it meaningful by defining \"number of users\" to be \"the number of unique *returning* visitors to sagemath.org per month\".   It's a well-defined quantity, and it's not just some sort of pure vanity metric, because to count, a user has to visit the site more than once (so temporary spikes due to news don't count).  The data from google analytics shows that sage has stayed above 10,000 users -- by that metric -- every month for the last year.   However, just barely! There were only 11,530 unique returning visitors in July, 2013. \n\nFor the record, the number of unique returning visitors per month for sagenb.org is between 3500 and 8000 over this same period.  \n\nFor https://cloud.sagemath.com, it's between 0 and 2856. \n\n(I hope having a description doesn't mess up the dev scripts!)",
+    "created_at": "2013-10-05T20:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6093",
+    "user": "was"
+}
+```
 
 I made this ticket in the first place, so I'm going to make it meaningful by defining "number of users" to be "the number of unique *returning* visitors to sagemath.org per month".   It's a well-defined quantity, and it's not just some sort of pure vanity metric, because to count, a user has to visit the site more than once (so temporary spikes due to news don't count).  The data from google analytics shows that sage has stayed above 10,000 users -- by that metric -- every month for the last year.   However, just barely! There were only 11,530 unique returning visitors in July, 2013. 
 
@@ -63,8 +143,19 @@ For https://cloud.sagemath.com, it's between 0 and 2856.
 (I hope having a description doesn't mess up the dev scripts!)
 
 
+
 ---
 
-Comment by vbraun created at 2013-10-05 20:57:50
+archive/issue_comments_006094.json:
+```json
+{
+    "body": "This ticket is used in the docs for the dev scripts, apologies for spamming... (under normal use the doctests of course do not modify trac tickets)",
+    "created_at": "2013-10-05T20:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1000",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6094",
+    "user": "vbraun"
+}
+```
 
 This ticket is used in the docs for the dev scripts, apologies for spamming... (under normal use the doctests of course do not modify trac tickets)

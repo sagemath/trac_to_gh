@@ -1,26 +1,62 @@
 # Issue 1627: update libgcrypt to 1.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/1627
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-29 04:40:24
-
+archive/issues_001627.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1627\n\n",
+    "created_at": "2007-12-29T04:40:24Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "update libgcrypt to 1.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1627",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1627
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-29 04:40:28
+archive/issue_comments_010370.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-29T04:40:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10370",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 23:33:34
+archive/issue_comments_010371.json:
+```json
+{
+    "body": "An updated spkg with OSX 64 bit build support can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha0/libgcrypt-1.4.0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-19T23:33:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10371",
+    "user": "mabshoff"
+}
+```
 
 An updated spkg with OSX 64 bit build support can be found at
 
@@ -31,8 +67,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-19 23:34:15
+archive/issue_comments_010372.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-19T23:34:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10372",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

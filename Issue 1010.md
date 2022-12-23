@@ -1,11 +1,21 @@
 # Issue 1010: upgrade gfan to version 0.3
 
-Issue created by migration from https://trac.sagemath.org/ticket/1010
-
-Original creator: was
-
-Original creation time: 2007-10-27 05:38:02
-
+archive/issues_001010.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nDear Mike and William,\n\nI am writing this email to let you know about the changes in the new\nGfan version 0.3.\nUnfortunately the improvements to Gfan introduce some compatibility\nproblems, but hopefully we will have less of these problems in the future.\nYou may simply ignore this mail if you are not interested in\ncompatibility issues now.\n\nSome of the changes are good:\n---------------------------------------\nThe user now has the option to be very specific about what polynomial\nring the computations should take place in. The first line of the input\ncan now be a polynomial ring. For example\nQ[x,y,t1,t2]\nor\nZ/7Z[a]\nThis change breaks compatibility in the following two ways:\n1) the output now typically contains the polynomial ring in its first\nline!!!!!\n2) the --modp option has been removed.\n\nChanges that affect how commands are logically combined:\n---------------------------------------------------------------------------\nThe major change is that when Gfan outputs polyhedral data it is done in\na Polymake compatible way. Thus the output is a Polymake file typically\ndescribing a polyhedral fan. Notice that the there is no official\nPolyhedral fan format in Polymake at the moment. The only other software\nthat uses this format is TrIm by Josephine Yu.\nWorking with polyhedral fans turns out to be much nicer when there is an\nappropriate format.\n\nHere are two examples:\n1) To compute a  Groebner cone from a marked reduced Groebner basis in\nthe old Gfan one would use gfan_groebnercone | gfan_facets , where\ngfan_groebner cone computes inequalities and gfan_facets removes\nredundant ones. In the new version the output of gfan_groebnercone is\neither a polyhedral cone or its face complex as a the polyhedral fan. In\nthe first case the facets can be read off directly from the output.\n2) To compute a weight vector for a reduced Groebner basis in the old\nGfan one would use gfan_weightvector . Now this is simply done by\ngfan_groebnercone .\n\nI don't know to what extend the above changes will affect your interfaces.\nI guess I could have kept Gfan backward compatible but that would have\nmeant that more ugly code would have to be maintained.\nI am pretty satisfied with the input/output format now.\nIf you wish to adjust your interfaces to Gfan and need help please let\nme know.\n\nBest regards,\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1010\n\n",
+    "created_at": "2007-10-27T05:38:02Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "upgrade gfan to version 0.3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1010",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -64,24 +74,61 @@ Best regards,
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1010
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2008-02-27 19:15:13
+archive/issue_comments_006165.json:
+```json
+{
+    "body": "Changing assignee from was to mhampton.",
+    "created_at": "2008-02-27T19:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6165",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from was to mhampton.
 
 
+
 ---
 
-Comment by mhampton created at 2008-02-27 19:15:13
+archive/issue_comments_006166.json:
+```json
+{
+    "body": "I'll try to do this.",
+    "created_at": "2008-02-27T19:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6166",
+    "user": "mhampton"
+}
+```
 
 I'll try to do this.
 
 
+
 ---
 
-Comment by mhampton created at 2008-02-29 10:27:10
+archive/issue_comments_006167.json:
+```json
+{
+    "body": "A preliminary spkg for gfan-0.3 can be found at:\n\nhttp://www.d.umn.edu/~mhampton/gfan-0.3.p1.spkg\n\nIts not ready for inclusion yet though.  I did not provide the debian package information, since I have no idea how to do that yet.  This compiles OK on OS X, 10.4.11, but should be tested on other platforms. \n\nI have not rewritten the interface to deal with Anders' changes in output, that is my next goal.",
+    "created_at": "2008-02-29T10:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6167",
+    "user": "mhampton"
+}
+```
 
 A preliminary spkg for gfan-0.3 can be found at:
 
@@ -92,48 +139,116 @@ Its not ready for inclusion yet though.  I did not provide the debian package in
 I have not rewritten the interface to deal with Anders' changes in output, that is my next goal.
 
 
+
 ---
 
-Comment by mhampton created at 2008-02-29 10:27:10
+archive/issue_comments_006168.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2008-02-29T10:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6168",
+    "user": "mhampton"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by cwitty created at 2008-03-14 02:08:13
+archive/issue_comments_006169.json:
+```json
+{
+    "body": "The spkg compiles and installes on my 32 bit x86 Debian testing box.  (I don't know how to test it, so I didn't do any tests.)\n\nThe spkg does have some OSX junk (.DS_Store, etc.)",
+    "created_at": "2008-03-14T02:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6169",
+    "user": "cwitty"
+}
+```
 
 The spkg compiles and installes on my 32 bit x86 Debian testing box.  (I don't know how to test it, so I didn't do any tests.)
 
 The spkg does have some OSX junk (.DS_Store, etc.)
 
 
+
 ---
 
-Comment by mhampton created at 2008-03-19 15:39:08
+archive/issue_comments_006170.json:
+```json
+{
+    "body": "Changing assignee from mhampton to mabshoff.",
+    "created_at": "2008-03-19T15:39:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6170",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from mhampton to mabshoff.
 
 
+
 ---
+
+archive/issue_comments_006171.json:
+```json
+{
+    "body": "Attachment\n\nI tried to remove the OS X junk referred to by cwitty.  I am also attaching a patch for sage/interfaces/gfan.py and sage/rings/polynomial/groebner_fan.py.  Some functionality has changed, some has been added: most notably the tropical intersection command and changes to the render method so that it uses Sage graphics.  Things remain to be done, but this now passes tests with gfan-0.3 and I am happy to respond to review comments.",
+    "created_at": "2008-03-19T15:39:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6171",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 I tried to remove the OS X junk referred to by cwitty.  I am also attaching a patch for sage/interfaces/gfan.py and sage/rings/polynomial/groebner_fan.py.  Some functionality has changed, some has been added: most notably the tropical intersection command and changes to the render method so that it uses Sage graphics.  Things remain to be done, but this now passes tests with gfan-0.3 and I am happy to respond to review comments.
 
 
+
 ---
 
-Comment by mhampton created at 2008-03-19 15:43:04
+archive/issue_comments_006172.json:
+```json
+{
+    "body": "Updated spkg is at:\n\nhttp://www.d.umn.edu/~mhampton/gfan-0.3.p2.spkg",
+    "created_at": "2008-03-19T15:43:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6172",
+    "user": "mhampton"
+}
+```
 
 Updated spkg is at:
 
 http://www.d.umn.edu/~mhampton/gfan-0.3.p2.spkg
 
 
+
 ---
 
-Comment by cwitty created at 2008-03-21 01:18:45
+archive/issue_comments_006173.json:
+```json
+{
+    "body": "The new spkg compiled and installed fine for me (it does still have two .DS_Store files, though).  With the above patch, tests pass in interfaces/gfan.py and rings/polynomial/groebner_fan.py .\n\nThis is 32-bit x86 Debian testing.\n\nI'm not marking this as a positive review because I haven't read the patch (and don't plan to).",
+    "created_at": "2008-03-21T01:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6173",
+    "user": "cwitty"
+}
+```
 
 The new spkg compiled and installed fine for me (it does still have two .DS_Store files, though).  With the above patch, tests pass in interfaces/gfan.py and rings/polynomial/groebner_fan.py .
 
@@ -142,69 +257,138 @@ This is 32-bit x86 Debian testing.
 I'm not marking this as a positive review because I haven't read the patch (and don't plan to).
 
 
+
 ---
 
-Comment by malb created at 2008-03-21 14:57:21
+archive/issue_comments_006174.json:
+```json
+{
+    "body": "The spkg installs fine in my 2.10.4 on Debian/testing AMD64. The patch applies cleanly. doctests pass for `sage.rings.polynomial.*`. \n\n**SPKG:**\n* Michael volunteered to take a deeper look\n* Carl reported the redundant `.DS_Store` files\n\n**Patch**\n* I haven't read the patch yet but I'm planing to so during Easter break.\n* I'm happy if somebody beats me to a review but I'll definitely have something in a couple of days.\n* Sorry for the delay.",
+    "created_at": "2008-03-21T14:57:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6174",
+    "user": "malb"
+}
+```
 
 The spkg installs fine in my 2.10.4 on Debian/testing AMD64. The patch applies cleanly. doctests pass for `sage.rings.polynomial.*`. 
 
-*SPKG:*
- * Michael volunteered to take a deeper look
- * Carl reported the redundant `.DS_Store` files
+**SPKG:**
+* Michael volunteered to take a deeper look
+* Carl reported the redundant `.DS_Store` files
 
-*Patch*
- * I haven't read the patch yet but I'm planing to so during Easter break.
- * I'm happy if somebody beats me to a review but I'll definitely have something in a couple of days.
- * Sorry for the delay.
+**Patch**
+* I haven't read the patch yet but I'm planing to so during Easter break.
+* I'm happy if somebody beats me to a review but I'll definitely have something in a couple of days.
+* Sorry for the delay.
+
 
 
 ---
 
-Comment by malb created at 2008-03-21 15:03:53
+archive/issue_comments_006175.json:
+```json
+{
+    "body": "Some quick remarks:\n* not all new methods/classes/functions have documentation and doctests\n* \"MH: I think this is now irrelevant since gfan can accept the original ring variables\" shouldn't that not just be checked to be sure?\n* \"Rewrote various functions to use gfan-0.3. This is still a work in progress, comments are appreciated on trac (ticket 1010) or sage-devel`@`googlegroups.com (or personally at hamptontio`@`gmail.com).\" please don't refer to the ticket, it will be closed (hopefully) soon.",
+    "created_at": "2008-03-21T15:03:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6175",
+    "user": "malb"
+}
+```
 
 Some quick remarks:
- * not all new methods/classes/functions have documentation and doctests
- * "MH: I think this is now irrelevant since gfan can accept the original ring variables" shouldn't that not just be checked to be sure?
- * "Rewrote various functions to use gfan-0.3. This is still a work in progress, comments are appreciated on trac (ticket 1010) or sage-devel`@`googlegroups.com (or personally at hamptontio`@`gmail.com)." please don't refer to the ticket, it will be closed (hopefully) soon.
+* not all new methods/classes/functions have documentation and doctests
+* "MH: I think this is now irrelevant since gfan can accept the original ring variables" shouldn't that not just be checked to be sure?
+* "Rewrote various functions to use gfan-0.3. This is still a work in progress, comments are appreciated on trac (ticket 1010) or sage-devel`@`googlegroups.com (or personally at hamptontio`@`gmail.com)." please don't refer to the ticket, it will be closed (hopefully) soon.
+
 
 
 ---
 
-Comment by malb created at 2008-03-22 14:30:11
+archive/issue_comments_006176.json:
+```json
+{
+    "body": "Some more comments (some repetitions):\n* \"MH: I think this is now irrelevant\" check this and remove the comment if appropriate \n* please drop the reference to ticket 1010, it will be closed hopefully soon\n* shouldn't `PolyhedralCone._repr_` be more specific about the object?\n* `PolyhedralCone` is undocumented\n* `PolyhedralFan` is almost undocumented\n* shouldn't `PolyhedralFan._repr_` be more specific about the object?\n* \"#should fix this so it handles allowed finite fields\", we used to support these, so it shouldn't be dropped\n* render talks about xfig but outputs a png\n* it might be a good ideal to compute the Gr\u00f6bner basis using Singular by default rather than leaving that to GFan. I bet it is much faster than GFan, but that could be another ticket.\n* btw. the docstring of Ideal.groebner_fan is pretty useless:\n\n```  \n  \"symmetry -- default: None; if not None, describes symmetries of the ideal\"\n```\n \n  how is the symmetry described?",
+    "created_at": "2008-03-22T14:30:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6176",
+    "user": "malb"
+}
+```
 
 Some more comments (some repetitions):
- * "MH: I think this is now irrelevant" check this and remove the comment if appropriate 
- * please drop the reference to ticket 1010, it will be closed hopefully soon
- * shouldn't `PolyhedralCone._repr_` be more specific about the object?
- * `PolyhedralCone` is undocumented
- * `PolyhedralFan` is almost undocumented
- * shouldn't `PolyhedralFan._repr_` be more specific about the object?
- * "#should fix this so it handles allowed finite fields", we used to support these, so it shouldn't be dropped
- * render talks about xfig but outputs a png
- * it might be a good ideal to compute the Gröbner basis using Singular by default rather than leaving that to GFan. I bet it is much faster than GFan, but that could be another ticket.
- * btw. the docstring of Ideal.groebner_fan is pretty useless:
+* "MH: I think this is now irrelevant" check this and remove the comment if appropriate 
+* please drop the reference to ticket 1010, it will be closed hopefully soon
+* shouldn't `PolyhedralCone._repr_` be more specific about the object?
+* `PolyhedralCone` is undocumented
+* `PolyhedralFan` is almost undocumented
+* shouldn't `PolyhedralFan._repr_` be more specific about the object?
+* "#should fix this so it handles allowed finite fields", we used to support these, so it shouldn't be dropped
+* render talks about xfig but outputs a png
+* it might be a good ideal to compute the Gröbner basis using Singular by default rather than leaving that to GFan. I bet it is much faster than GFan, but that could be another ticket.
+* btw. the docstring of Ideal.groebner_fan is pretty useless:
 
 ```  
   "symmetry -- default: None; if not None, describes symmetries of the ideal"
-}}} 
+```
+ 
   how is the symmetry described?
 
 
+
 ---
+
+archive/issue_comments_006177.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-25T02:01:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6177",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhampton created at 2008-03-25 02:02:12
+archive/issue_comments_006178.json:
+```json
+{
+    "body": "The attached patch addresses most of the comments.  Using Singular would be a big project, I will bring it up with Anders Jensen (author of gfan).  I have not fixed the docstring of Ideal.groebner_fan regarding symmetry; that needs some more work but it wasn't well implemented before anyway so I am not breaking anything that worked before, and this patch adds a lot of functionality.",
+    "created_at": "2008-03-25T02:02:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6178",
+    "user": "mhampton"
+}
+```
 
 The attached patch addresses most of the comments.  Using Singular would be a big project, I will bring it up with Anders Jensen (author of gfan).  I have not fixed the docstring of Ideal.groebner_fan regarding symmetry; that needs some more work but it wasn't well implemented before anyway so I am not breaking anything that worked before, and this patch adds a lot of functionality.
 
 
+
 ---
 
-Comment by malb created at 2008-03-25 13:39:40
+archive/issue_comments_006179.json:
+```json
+{
+    "body": "Replying to [comment:12 mhampton]:\n> The attached patch addresses most of the comments.  Using Singular would be a big project, I will bring it up with Anders Jensen (author of gfan). \n\nHi, sorry for not being precise about this. `MPolynomialIdeal.groebner_fan` has this signature:\n\n\n```\ndef groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\n\nMy proposal was to replace `is_groebner_basis` either by calling `I.basis_is_groebner` or by simply computing the Gr\u00f6bner basis is Sage before passing the generators to GFan. Also `verbose` should be replace with a `get_verbose` call. \n\nIn any case, this is directly related to this ticket (sorry for going OT) and I'll review the new patch soon-ish if noone beats me to it.",
+    "created_at": "2008-03-25T13:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6179",
+    "user": "malb"
+}
+```
 
 Replying to [comment:12 mhampton]:
 > The attached patch addresses most of the comments.  Using Singular would be a big project, I will bring it up with Anders Jensen (author of gfan). 
@@ -222,30 +406,69 @@ My proposal was to replace `is_groebner_basis` either by calling `I.basis_is_gro
 In any case, this is directly related to this ticket (sorry for going OT) and I'll review the new patch soon-ish if noone beats me to it.
 
 
+
 ---
+
+archive/issue_comments_006180.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-25T19:49:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6180",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_006181.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-25T19:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6181",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_006182.json:
+```json
+{
+    "body": "Attachment\n\nReview of the `post_review` patch:\n* The docstrings don't obey Sage's style conventions (indentation\n  etc.), I've attached a patch for that (`gfan_docstyle.patch`).\n* man newly introduced methods/functions still don't have any\n  documentation and no doctests. Sage now has a\n  nothing-new-without-doctests policy, so this needs to be addressed\n  before this can go in.\n* I've also attached `coverage_before.txt` and `coverage_after.txt`\n  with coverage information before and after the patch was applied.\n* I'm not sure if this is related to the rewrite:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gb = gf.reduced_groebner_bases()\n[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]\n\nsage: P = PolynomialRing(GF(127),11,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gf.reduced_groebner_bases()\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n...\n<type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.\n```\n\n* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.",
+    "created_at": "2008-03-25T19:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6182",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Review of the `post_review` patch:
- * The docstrings don't obey Sage's style conventions (indentation
-   etc.), I've attached a patch for that (`gfan_docstyle.patch`).
- * man newly introduced methods/functions still don't have any
-   documentation and no doctests. Sage now has a
-   nothing-new-without-doctests policy, so this needs to be addressed
-   before this can go in.
- * I've also attached `coverage_before.txt` and `coverage_after.txt`
-   with coverage information before and after the patch was applied.
- * I'm not sure if this is related to the rewrite:
+* The docstrings don't obey Sage's style conventions (indentation
+  etc.), I've attached a patch for that (`gfan_docstyle.patch`).
+* man newly introduced methods/functions still don't have any
+  documentation and no doctests. Sage now has a
+  nothing-new-without-doctests policy, so this needs to be addressed
+  before this can go in.
+* I've also attached `coverage_before.txt` and `coverage_after.txt`
+  with coverage information before and after the patch was applied.
+* I'm not sure if this is related to the rewrite:
 
 ```
 sage: P = PolynomialRing(GF(127),10,'x')
@@ -263,17 +486,41 @@ sage: gf.reduced_groebner_bases()
 <type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.
 ```
 
- * Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.
+* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.
+
 
 
 ---
 
-Comment by mhampton created at 2008-03-27 02:58:19
+archive/issue_comments_006183.json:
+```json
+{
+    "body": "patch against 2.10.4 addressing almost all review comments",
+    "created_at": "2008-03-27T02:58:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6183",
+    "user": "mhampton"
+}
+```
 
 patch against 2.10.4 addressing almost all review comments
 
 
+
 ---
+
+archive/issue_comments_006184.json:
+```json
+{
+    "body": "Attachment\n\nThe latest patch addresses almost all of the review comments.  Coverage is now 100%; the doctest on the \"interactive\" command is bogus because of the nature of the command.  Documentation and doctests should conform to Sage's style conventions - (btw where is this laid out precisely?).  More explanation has been added, although I'm sure more could be, but I feel that really anyone interested should read the gfan manual and maybe even Anders Jensen's thesis if they want serious explanation. \n\nI have also addressed the bug pointed out by Martin - this arises because gfan cannot handle variables whose names are prefixes of other variables, and the variables names are not remapped anymore.  So I raise an explicit error and explanation for that case.  This could be fixed, but I think it is acceptable for the moment.  \n\nI have working prototype code for 3D rendering of Groebner fans, but I would like this work included in Sage as soon as possible, and then I will prepare another enhancement ticket, probably for Sage-3.0.",
+    "created_at": "2008-03-27T03:07:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6184",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
@@ -284,20 +531,44 @@ I have also addressed the bug pointed out by Martin - this arises because gfan c
 I have working prototype code for 3D rendering of Groebner fans, but I would like this work included in Sage as soon as possible, and then I will prepare another enhancement ticket, probably for Sage-3.0.
 
 
+
 ---
 
-Comment by malb created at 2008-03-27 13:57:38
+archive/issue_comments_006185.json:
+```json
+{
+    "body": "some (whitespace) improvements for the docstrings in groebner_fan.py",
+    "created_at": "2008-03-27T13:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6185",
+    "user": "malb"
+}
+```
 
 some (whitespace) improvements for the docstrings in groebner_fan.py
 
 
+
 ---
+
+archive/issue_comments_006186.json:
+```json
+{
+    "body": "Attachment\n\n**Review of `trac_1010_post_review_2.patch`**:\n* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)\n* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:\n\n```\nFile \"tut.py\", line 2362:\n    : F.fvector()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_103[4]>\", line 1, in <module>\n        F.fvector()###line 2362:\n    : F.fvector()\n    AttributeError: 'GroebnerFan' object has no attribute 'fvector'\n```\n\n* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)\n* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.\n* **Good job mhampton**!",
+    "created_at": "2008-03-27T14:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6186",
+    "user": "malb"
+}
+```
 
 Attachment
 
-*Review of `trac_1010_post_review_2.patch`*:
- * as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)
- * I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:
+**Review of `trac_1010_post_review_2.patch`**:
+* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)
+* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:
 
 ```
 File "tut.py", line 2362:
@@ -312,14 +583,25 @@ Exception raised:
     AttributeError: 'GroebnerFan' object has no attribute 'fvector'
 ```
 
- * I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)
- * Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.
- * *Good job mhampton*!
+* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)
+* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.
+* **Good job mhampton**!
+
 
 
 ---
 
-Comment by mabshoff created at 2008-03-28 08:50:17
+archive/issue_comments_006187.json:
+```json
+{
+    "body": "Yeah, I agree with malb that this is a great job. But can somebody please delete all the no longer applicable patches? This ticket is getting really messy.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T08:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6187",
+    "user": "mabshoff"
+}
+```
 
 Yeah, I agree with malb that this is a great job. But can somebody please delete all the no longer applicable patches? This ticket is getting really messy.
 
@@ -328,9 +610,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 08:53:53
+archive/issue_comments_006188.json:
+```json
+{
+    "body": "I guess fixing the doctest failure in tut.tex might be as simple as the rename:\n\n```\n345\t \t    def fvector(self): \n \t697\t    def polyhedralfan(self): \n```\n\nIn case this is it I will merge the updated gfan.spkg and the associated patches in 2.11.alpha2. :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T08:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6188",
+    "user": "mabshoff"
+}
+```
 
 I guess fixing the doctest failure in tut.tex might be as simple as the rename:
 
@@ -346,19 +639,30 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 09:26:51
+archive/issue_comments_006189.json:
+```json
+{
+    "body": "ok, here we go. The updated spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/gfan-0.3.p3.spkg\n\nfixes various issues:\n* put the missing .hgignore back in\n* cleaned up the SPKG.txt\n* checked in missing changes\n* removed missed .DS_store in the dist directory\n\nIt builds fine on OSX and Linux.\n\nOne more thing: src is supposed to be a vanilla distribution of the original source tarball. So gfan-0.3.p4.spkg ought to fix that. But we can do that on a follow up ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T09:26:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6189",
+    "user": "mabshoff"
+}
+```
 
 ok, here we go. The updated spkg at
 
 http://sage.math.washington.edu/home/mabshoff/SPKG/gfan-0.3.p3.spkg
 
 fixes various issues:
- * put the missing .hgignore back in
- * cleaned up the SPKG.txt
- * checked in missing changes
- * removed missed .DS_store in the dist directory
+* put the missing .hgignore back in
+* cleaned up the SPKG.txt
+* checked in missing changes
+* removed missed .DS_store in the dist directory
 
 It builds fine on OSX and Linux.
 
@@ -369,21 +673,45 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 10:10:29
+archive/issue_comments_006190.json:
+```json
+{
+    "body": "This might be totally wrong, but we will see :)",
+    "created_at": "2008-03-28T10:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6190",
+    "user": "mabshoff"
+}
+```
 
 This might be totally wrong, but we will see :)
 
 
+
 ---
+
+archive/issue_comments_006191.json:
+```json
+{
+    "body": "Attachment\n\nMerged trac_1010_post_review_2.patch, gfan_docstrings.patch and trac_1010-tut.tex-doctest-fix.patch in Sage 2.11.alpha0. There are two potential issues left to fix:\n \n* What happened to fvector? polyhedralfan certainly has nothing to do with fvector - it just happens to be in the former location of fvector.\n* a clean Makefile in src in the gfan.spkg\n\nBoth the issues should be addressed in follow up tickets.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T10:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6191",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged trac_1010_post_review_2.patch, gfan_docstrings.patch and trac_1010-tut.tex-doctest-fix.patch in Sage 2.11.alpha0. There are two potential issues left to fix:
  
- * What happened to fvector? polyhedralfan certainly has nothing to do with fvector - it just happens to be in the former location of fvector.
- * a clean Makefile in src in the gfan.spkg
+* What happened to fvector? polyhedralfan certainly has nothing to do with fvector - it just happens to be in the former location of fvector.
+* a clean Makefile in src in the gfan.spkg
 
 Both the issues should be addressed in follow up tickets.
 
@@ -392,8 +720,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 10:13:49
+archive/issue_comments_006192.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-28T10:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6192",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

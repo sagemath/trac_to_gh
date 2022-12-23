@@ -1,11 +1,21 @@
 # Issue 860: dsage -- update to fix a bunch of "rough edges"
 
-Issue created by migration from https://trac.sagemath.org/ticket/860
-
-Original creator: was
-
-Original creation time: 2007-10-12 06:05:46
-
+archive/issues_000860.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nthe rough edges that William mentioned.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage_latest.hg\n\nThere is documentation on how to do this here:\n\nhttp://www.sagemath.org/doc/html/ref/module-sage.misc.hg.html\n\nLet me know if you need any help doing this. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/860\n\n",
+    "created_at": "2007-10-12T06:05:46Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "dsage -- update to fix a bunch of \"rough edges\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/860",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -22,17 +32,43 @@ Let me know if you need any help doing this.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/860
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-12 06:05:50
+archive/issue_comments_005321.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-12T06:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/860#issuecomment-5321",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-12 16:24:53
+archive/issue_comments_005322.json:
+```json
+{
+    "body": "Hmm, I don't see any patch. Did it get merged already?\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-12T16:24:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/860#issuecomment-5322",
+    "user": "mabshoff"
+}
+```
 
 Hmm, I don't see any patch. Did it get merged already?
 
@@ -41,8 +77,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-10-13 01:38:55
+archive/issue_comments_005323.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T01:38:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/860#issuecomment-5323",
+    "user": "was"
+}
+```
 
 Resolution: fixed

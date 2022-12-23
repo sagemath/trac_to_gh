@@ -1,11 +1,21 @@
 # Issue 1574: dependencies for non pyx files aren't properly tracked
 
-Issue created by migration from https://trac.sagemath.org/ticket/1574
-
-Original creator: mabshoff
-
-Original creation time: 2007-12-20 12:14:49
-
+archive/issues_001574.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro tornaria\n\nWhen applying a patch to a non `pyx|pxi|pxd` file (mwrank.cc in this case) and running `sage -b` odd things happen:\n\n```\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\n\nTouching a pyx file that the particular file depends upon (mwrank.pyx) in this case fixes the issue and everything is properly recompiled.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1574\n\n",
+    "created_at": "2007-12-20T12:14:49Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "dependencies for non pyx files aren't properly tracked",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1574",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 CC:  craigcitro tornaria
@@ -37,10 +47,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1574
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-26 09:07:46
+archive/issue_comments_010012.json:
+```json
+{
+    "body": "This one just bit me in the ass again:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.schemes.hyperelliptic_curves.hypellfrob' extension\nerror: unknown file type '.pyx' (from 'sage/schemes/hyperelliptic_curves/hypellfrob.pyx')\nsage: There was an error installing modified sage library code.\n\n\nreal    0m1.540s\nuser    0m1.124s\nsys     0m0.416s\n```\n\nAnybody willing to fix this? It seems that all that needs to be done is to add C/C++ files linked extensions to the list of dependencies to track.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T09:07:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1574#issuecomment-10012",
+    "user": "mabshoff"
+}
+```
 
 This one just bit me in the ass again:
 
@@ -74,22 +99,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 01:45:48
+archive/issue_comments_010013.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-02T01:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1574#issuecomment-10013",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 01:45:48
+archive/issue_comments_010014.json:
+```json
+{
+    "body": "This has been fixed in Sage 3.2/3.2.1 due to the work done by Craig Citro and Gonzalo Tornaria",
+    "created_at": "2008-12-02T01:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1574#issuecomment-10014",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed in Sage 3.2/3.2.1 due to the work done by Craig Citro and Gonzalo Tornaria
 
 
+
 ---
 
-Comment by craigcitro created at 2008-12-02 04:06:47
+archive/issue_comments_010015.json:
+```json
+{
+    "body": "And Robert Bradshaw. :)",
+    "created_at": "2008-12-02T04:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1574#issuecomment-10015",
+    "user": "craigcitro"
+}
+```
 
 And Robert Bradshaw. :)

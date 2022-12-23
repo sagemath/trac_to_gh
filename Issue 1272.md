@@ -1,11 +1,21 @@
 # Issue 1272: integrate PolyBoRi
 
-Issue created by migration from https://trac.sagemath.org/ticket/1272
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-25 18:33:04
-
+archive/issues_001272.json:
+```json
+{
+    "body": "Assignee: burcin\n\nThis has been a while in the making, but PolyBoRi has finally been released to the public.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1272\n\n",
+    "created_at": "2007-11-25T18:33:04Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "integrate PolyBoRi",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1272",
+    "user": "mabshoff"
+}
+```
 Assignee: burcin
 
 This has been a while in the making, but PolyBoRi has finally been released to the public.
@@ -14,10 +24,25 @@ Cheers,
 
 Michaek
 
+Issue created by migration from https://trac.sagemath.org/ticket/1272
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-16 00:12:57
+archive/issue_comments_007969.json:
+```json
+{
+    "body": "PolyBori was merged in 2.9. This ticket is somewhat of a dupe.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-16T00:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7969",
+    "user": "mabshoff"
+}
+```
 
 PolyBori was merged in 2.9. This ticket is somewhat of a dupe.
 
@@ -26,8 +51,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-16 00:12:57
+archive/issue_comments_007970.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-16T00:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7970",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

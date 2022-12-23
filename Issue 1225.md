@@ -1,11 +1,21 @@
 # Issue 1225: OSX 10.4 PPC: slight numerical noise in rings/polynomial/polynomial_element.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/1225
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-20 22:56:05
-
+archive/issues_001225.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\nsage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx**********************************************************************\nFile \"polynomial_element.pyx\", line 2314:\n    sage: f.roots(ring=CC)\nExpected:\n    [(1.00000000000000, 1), (-0.500000000000000 + 0.866025403784438*I,\n1), (-0.500000000000000 - 0.866025403784438*I, 1)]\nGot:\n    [(1.00000000000000, 1), (-0.500000000000000 + 0.866025403784439*I,\n1), (-0.500000000000000 - 0.866025403784439*I, 1)]\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2749:\n    sage: (x^3 - 1).complex_roots()\nExpected:\n    [1.00000000000000, -0.500000000000000 + 0.866025403784438*I,\n-0.500000000000000 - 0.866025403784438*I]\nGot:\n    [1.00000000000000, -0.500000000000000 + 0.866025403784439*I,\n-0.500000000000000 - 0.866025403784439*I]\n**********************************************************************\n2 items had failures:\n   1 of  88 in __main__.example_55\n   1 of  12 in __main__.example_57\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_polynomial_element.pyx\n         [27.8 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/polynomial/\npolynomial_element.pyx\nTotal time for all tests: 27.8 seconds\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$\n```\n\n\nI have a patch for this, so this issue should be resolved shortly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1225\n\n",
+    "created_at": "2007-11-20T22:56:05Z",
+    "labels": [
+        "doctest coverage",
+        "critical",
+        "bug"
+    ],
+    "title": "OSX 10.4 PPC: slight numerical noise in rings/polynomial/polynomial_element.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1225",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -57,17 +67,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1225
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-20 22:56:14
+archive/issue_comments_007626.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-20T22:56:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1225#issuecomment-7626",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-21 13:12:52
+archive/issue_comments_007627.json:
+```json
+{
+    "body": "My patch doesn't work, i.e. the \"..\" trick:\n\n```\n    sage: f.roots(ring=CC)\nExpected:\n    [(1.00000000000000, 1), (-0.500000000000000 + 0.866025403784438*I, 1), (-0.500000000000000 - 0.8660254037844..*I, 1)]\nGot:\n    [(1.00000000000000, 1), (-0.500000000000000 + 0.866025403784438*I, 1), (-0.500000000000000 - 0.866025403784438*I, 1)\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-21T13:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1225#issuecomment-7627",
+    "user": "mabshoff"
+}
+```
 
 My patch doesn't work, i.e. the ".." trick:
 
@@ -85,9 +121,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-21 13:18:20
+archive/issue_comments_007628.json:
+```json
+{
+    "body": "\n```\n[14:11] <mabshoff> Is there a special trick on how to use \"...\" in such a list?\n[14:14] <wstein2> Use ... rather than ..\n[14:14] <wstein2> It's *three* dots.\n```\n",
+    "created_at": "2007-11-21T13:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1225#issuecomment-7628",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -98,15 +145,37 @@ Comment by mabshoff created at 2007-11-21 13:18:20
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-21 13:18:32
+archive/issue_comments_007629.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-21T13:18:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1225#issuecomment-7629",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-21 13:18:32
+archive/issue_comments_007630.json:
+```json
+{
+    "body": "Merged in 2.8.13.rc2.",
+    "created_at": "2007-11-21T13:18:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1225#issuecomment-7630",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.13.rc2.

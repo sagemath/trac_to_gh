@@ -1,11 +1,21 @@
 # Issue 1502: calculus -- bug in argument ordering for formal functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/1502
-
-Original creator: was
-
-Original creation time: 2007-12-14 05:41:19
-
+archive/issues_001502.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is wrong:\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\n\nIt should be\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nNote that this works:\n\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
+    "created_at": "2007-12-14T05:41:19Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "calculus -- bug in argument ordering for formal functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1502",
+    "user": "was"
+}
+```
 Assignee: was
 
 This is wrong:
@@ -47,36 +57,97 @@ Gamma(2, 5)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1502
+
+
+
+
 
 ---
+
+archive/issue_comments_009627.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-14T06:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9627",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-14 06:42:52
+archive/issue_comments_009628.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-14T06:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9628",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-14 06:42:52
+archive/issue_comments_009629.json:
+```json
+{
+    "body": "Apply after #553 .",
+    "created_at": "2007-12-14T06:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9629",
+    "user": "mhansen"
+}
+```
 
 Apply after #553 .
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-14 06:42:52
+archive/issue_comments_009630.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-12-14T06:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9630",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:32:34
+archive/issue_comments_009631.json:
+```json
+{
+    "body": "Was reviewed this positively in IRC during BD7. \n\nCheers,\n\nMichael",
+    "created_at": "2007-12-15T11:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9631",
+    "user": "mabshoff"
+}
+```
 
 Was reviewed this positively in IRC during BD7. 
 
@@ -85,22 +156,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 11:33:01
+archive/issue_comments_009632.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T11:33:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9632",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 12:20:20
+archive/issue_comments_009633.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T12:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9633",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 12:20:20
+archive/issue_comments_009634.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T12:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9634",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.

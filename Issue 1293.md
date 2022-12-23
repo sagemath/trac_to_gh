@@ -1,11 +1,21 @@
 # Issue 1293: sage is too big!
 
-Issue created by migration from https://trac.sagemath.org/ticket/1293
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-27 17:40:01
-
+archive/issues_001293.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nI was told that SAGE did use less memory than Maple or Mathematica. I did check on sage.math.washington.edu:\n\n```\nzimmerma@sage:~$ du -s /usr/local/maple10\n388908  /usr/local/maple10\n\nzimmerma@sage:~$ du -s /usr/local/mathematica-5.2\n641016  /usr/local/mathematica-5.2\n\nsage:/tmp/zimmerma/sage-2.8.14> make install DESTDIR=/tmp/zimmerma/sage-2.8.14-\\\ninstall\nsage:/tmp/zimmerma/sage-2.8.14> du -s /tmp/zimmerma/sage-2.8.14-install\n1237280 /tmp/zimmerma/sage-2.8.14-install\n```\n\nI can understand that the SAGE developers need all the source and binaries installed, but I wish a minimal\nversion for the simple user that would use at most the same amount of memory than Maple or Mathematica,\nnot 2 times or 3 times more!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1293\n\n",
+    "created_at": "2007-11-27T17:40:01Z",
+    "labels": [
+        "distribution",
+        "major",
+        "enhancement"
+    ],
+    "title": "sage is too big!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1293",
+    "user": "zimmerma"
+}
+```
 Assignee: mabshoff
 
 I was told that SAGE did use less memory than Maple or Mathematica. I did check on sage.math.washington.edu:
@@ -27,10 +37,25 @@ I can understand that the SAGE developers need all the source and binaries insta
 version for the simple user that would use at most the same amount of memory than Maple or Mathematica,
 not 2 times or 3 times more!
 
+Issue created by migration from https://trac.sagemath.org/ticket/1293
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-27 18:24:52
+archive/issue_comments_008115.json:
+```json
+{
+    "body": "Well, your numbers are slighly inflated because \"make install\" is still experimental and copies fata not needed:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/size$ du -sch sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux\n802M    sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux\n```\n\nThe current 2.8.13 binary expands to 802 MB which is still too large, but somewhat smaller than the 1.2GB you had.\n\nBut it would be a good thing to slim down the installed Sage if it is possible.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-27T18:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8115",
+    "user": "mabshoff"
+}
+```
 
 Well, your numbers are slighly inflated because "make install" is still experimental and copies fata not needed:
 
@@ -48,21 +73,43 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2007-12-06 16:31:15
+archive/issue_comments_008116.json:
+```json
+{
+    "body": "Some numbers:\n\n* a fresh *2.8.13* is **804M** (binary release, i.e. `spkg` is basically empty)\n* after *strip*ing all executable files + `*.so` we are down to **655M**\n* if we - as an experiment only, this shouldn't be done in real lift because it breaks updates etc. - also remove `*.a` we are down to **536M**\n* of this **149M** are in `devel` and **344M** are in `local`",
+    "created_at": "2007-12-06T16:31:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8116",
+    "user": "malb"
+}
+```
 
 Some numbers:
 
- * a fresh _2.8.13_ is *804M* (binary release, i.e. `spkg` is basically empty)
- * after _strip_ing all executable files + `*.so` we are down to *655M*
- * if we - as an experiment only, this shouldn't be done in real lift because it breaks updates etc. - also remove `*.a` we are down to *536M*
- * of this *149M* are in `devel` and *344M* are in `local`
+* a fresh *2.8.13* is **804M** (binary release, i.e. `spkg` is basically empty)
+* after *strip*ing all executable files + `*.so` we are down to **655M**
+* if we - as an experiment only, this shouldn't be done in real lift because it breaks updates etc. - also remove `*.a` we are down to **536M**
+* of this **149M** are in `devel` and **344M** are in `local`
+
 
 
 ---
 
-Comment by zimmerma created at 2007-12-17 12:22:07
+archive/issue_comments_008117.json:
+```json
+{
+    "body": "Here are the brand new figures for sage-2.9 on a 64-bit computer (Opteron under Fedora7):\n\n```\nachille% du -s /usr/local/sage-2.9\n1517144 /usr/local/sage-2.9\n```\n\nIf the figures are comparable on sage.math (which I assume) this is 2.4 times larger than Mathematica and 3.9 times\nlarger than Maple.",
+    "created_at": "2007-12-17T12:22:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8117",
+    "user": "zimmerma"
+}
+```
 
 Here are the brand new figures for sage-2.9 on a 64-bit computer (Opteron under Fedora7):
 
@@ -75,23 +122,45 @@ If the figures are comparable on sage.math (which I assume) this is 2.4 times la
 larger than Maple.
 
 
+
 ---
 
-Comment by malb created at 2008-09-28 15:47:39
+archive/issue_comments_008118.json:
+```json
+{
+    "body": "Some new datapoints:\n* 3.1.3.alpha1 is **1.7GB** after compilation (64-bit Linux),\n* it is safe to delete all spkgs in `$SAGE_ROOT/spkgs/standard`,\n* it is safe to strip executables,\n* it is safe to strip shared libraries with `-g -R .comment -R .note`,\n* one may delete all of `$SAGE_ROOT/devel/sage/build` except for the `sage` subdirectory.\n\nThe result is **1.1GB** which is still massive. I'm building with `-Os` now to see how much of a difference that makes.",
+    "created_at": "2008-09-28T15:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8118",
+    "user": "malb"
+}
+```
 
 Some new datapoints:
- * 3.1.3.alpha1 is *1.7GB* after compilation (64-bit Linux),
- * it is safe to delete all spkgs in `$SAGE_ROOT/spkgs/standard`,
- * it is safe to strip executables,
- * it is safe to strip shared libraries with `-g -R .comment -R .note`,
- * one may delete all of `$SAGE_ROOT/devel/sage/build` except for the `sage` subdirectory.
+* 3.1.3.alpha1 is **1.7GB** after compilation (64-bit Linux),
+* it is safe to delete all spkgs in `$SAGE_ROOT/spkgs/standard`,
+* it is safe to strip executables,
+* it is safe to strip shared libraries with `-g -R .comment -R .note`,
+* one may delete all of `$SAGE_ROOT/devel/sage/build` except for the `sage` subdirectory.
 
-The result is *1.1GB* which is still massive. I'm building with `-Os` now to see how much of a difference that makes.
+The result is **1.1GB** which is still massive. I'm building with `-Os` now to see how much of a difference that makes.
+
 
 
 ---
 
-Comment by malb created at 2008-09-28 15:52:40
+archive/issue_comments_008119.json:
+```json
+{
+    "body": "I think this should also be safe in `$SAGE_ROOT/devel/sage/sage/`\n\n\n```\nfor f in `find -name \"*.pyx\"`; do echo $f | sed \"s/\\.pyx/\\.c/\" | xargs rm; done\n```\n\n\n\n```\nfor f in `find -name \"*.pyx\"`; do echo $f | sed \"s/\\.pyx/\\.cpp/\" | xargs rm; done\n```\n\n\nto delete all autogenerated `.c` and `.cpp` files.\n\nThis seems to free ~ 80MB",
+    "created_at": "2008-09-28T15:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8119",
+    "user": "malb"
+}
+```
 
 I think this should also be safe in `$SAGE_ROOT/devel/sage/sage/`
 
@@ -112,44 +181,110 @@ to delete all autogenerated `.c` and `.cpp` files.
 This seems to free ~ 80MB
 
 
----
-
-Comment by malb created at 2008-09-28 15:54:57
-
-Actually, the result is smaller than *1.1GB* as I forgot to strip the Sage extensions. The result including the add-on above is *978M* but still fully functional, I believe.
-
 
 ---
 
-Comment by zimmerma created at 2010-02-05 20:31:56
+archive/issue_comments_008120.json:
+```json
+{
+    "body": "Actually, the result is smaller than **1.1GB** as I forgot to strip the Sage extensions. The result including the add-on above is **978M** but still fully functional, I believe.",
+    "created_at": "2008-09-28T15:54:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8120",
+    "user": "malb"
+}
+```
+
+Actually, the result is smaller than **1.1GB** as I forgot to strip the Sage extensions. The result including the add-on above is **978M** but still fully functional, I believe.
+
+
+
+---
+
+archive/issue_comments_008121.json:
+```json
+{
+    "body": "I guess this issue won't be fixed, thus I close this ticket.",
+    "created_at": "2010-02-05T20:31:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8121",
+    "user": "zimmerma"
+}
+```
 
 I guess this issue won't be fixed, thus I close this ticket.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-05 20:31:56
+archive/issue_comments_008122.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-02-05T20:31:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8122",
+    "user": "zimmerma"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-05 21:13:19
+archive/issue_comments_008123.json:
+```json
+{
+    "body": "Resolution changed from wontfix to worksforme",
+    "created_at": "2010-02-05T21:13:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8123",
+    "user": "mvngu"
+}
+```
 
 Resolution changed from wontfix to worksforme
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-05 21:13:19
+archive/issue_comments_008124.json:
+```json
+{
+    "body": "Make sure you understand the procedure for closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for more information.",
+    "created_at": "2010-02-05T21:13:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8124",
+    "user": "mvngu"
+}
+```
 
 Make sure you understand the procedure for closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for more information.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-07 21:07:09
+archive/issue_comments_008125.json:
+```json
+{
+    "body": "Sorry I didn't know I wasn't allowed to close tickets!\nIt would be better to remove the \"closed\" button for \"normal\" users.",
+    "created_at": "2010-02-07T21:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1293",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8125",
+    "user": "zimmerma"
+}
+```
 
 Sorry I didn't know I wasn't allowed to close tickets!
 It would be better to remove the "closed" button for "normal" users.

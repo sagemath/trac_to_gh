@@ -1,11 +1,21 @@
 # Issue 1756: implement MPolynomialIdeal.hilbert_[series|polynomial]
 
-Issue created by migration from https://trac.sagemath.org/ticket/1756
-
-Original creator: malb
-
-Original creation time: 2008-01-11 18:34:12
-
+archive/issues_001756.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe result should be somewhat similar to what MAGMA has to offer\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text1128.htm\n\n. SINGULAR has support for Hilbert Series computation\n\n  http://www.singular.uni-kl.de/Manual/3-0-4/sing_212.htm\n\nwhich probably can be wrapped to provide the desired functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1756\n\n",
+    "created_at": "2008-01-11T18:34:12Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement MPolynomialIdeal.hilbert_[series|polynomial]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1756",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 The result should be somewhat similar to what MAGMA has to offer
@@ -18,10 +28,25 @@ The result should be somewhat similar to what MAGMA has to offer
 
 which probably can be wrapped to provide the desired functionality.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1756
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-11 18:40:06
+archive/issue_comments_011083.json:
+```json
+{
+    "body": "Singular's Hilbert series has overflow issues in certain situations. Let me digg out some email about a test case and report this to the Singular team.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-11T18:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1756#issuecomment-11083",
+    "user": "mabshoff"
+}
+```
 
 Singular's Hilbert series has overflow issues in certain situations. Let me digg out some email about a test case and report this to the Singular team.
 
@@ -30,15 +55,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-01-16 15:47:08
+archive/issue_comments_011084.json:
+```json
+{
+    "body": "See #1793 for a patch, copying mabshoff's comment over to that ticket now and closing this as dupe.",
+    "created_at": "2008-01-16T15:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1756#issuecomment-11084",
+    "user": "malb"
+}
+```
 
 See #1793 for a patch, copying mabshoff's comment over to that ticket now and closing this as dupe.
 
 
+
 ---
 
-Comment by malb created at 2008-01-16 15:47:08
+archive/issue_comments_011085.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-01-16T15:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1756#issuecomment-11085",
+    "user": "malb"
+}
+```
 
 Resolution: duplicate

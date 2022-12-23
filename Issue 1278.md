@@ -1,19 +1,44 @@
 # Issue 1278: make R an optional Sage package that builds on everything (in prep for making it non-optional)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1278
-
-Original creator: was
-
-Original creation time: 2007-11-26 06:47:31
-
+archive/issues_001278.json:
+```json
+{
+    "body": "Assignee: was\n\nSee emails on sage-devel for details.   I'll post specific notes about what has to be done below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1278\n\n",
+    "created_at": "2007-11-26T06:47:31Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "make R an optional Sage package that builds on everything (in prep for making it non-optional)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1278",
+    "user": "was"
+}
+```
 Assignee: was
 
 See emails on sage-devel for details.   I'll post specific notes about what has to be done below.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1278
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-26 06:47:44
+archive/issue_comments_008012.json:
+```json
+{
+    "body": "\n```\nBut, it doesn't look like my patch to rpy was applied:\n\nsage: rpy.r(2r)\n2.0\nsage: rpy.r(2)\n---------------------------------------------------------------------------\n<class 'rpy.RException'>                  Traceback (most recent call last)\n\n/home/mike/src/rpy-1.0-RC3/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/rpy.py in __call__(self, s)\n   297\n   298     def __call__(self, s):\n--> 299         return self.eval(self.parse(text=s))\n   300\n   301     def __help__(self, *arg, **kw):\n\n<class 'rpy.RException'>: cannot convert from type 'sage.rings.integer.Integer'\n\nThere should be an rpymodule.c in the patches/ directory in\nrpy-1.0-RC3 in my home directory on sage.math which makes it so that\nrpy will check for a _rpy_ method to convert a Sage object to an rpy\none.\n```\n",
+    "created_at": "2007-11-26T06:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1278#issuecomment-8012",
+    "user": "was"
+}
+```
 
 
 ```
@@ -44,15 +69,37 @@ one.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 04:11:57
+archive/issue_comments_008013.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-14T04:11:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1278#issuecomment-8013",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-14 04:11:57
+archive/issue_comments_008014.json:
+```json
+{
+    "body": "This happened a while ago.",
+    "created_at": "2007-12-14T04:11:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1278#issuecomment-8014",
+    "user": "mabshoff"
+}
+```
 
 This happened a while ago.

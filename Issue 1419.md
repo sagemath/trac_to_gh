@@ -1,11 +1,21 @@
 # Issue 1419: notebook java3d plotting requires Internet access
 
-Issue created by migration from https://trac.sagemath.org/ticket/1419
-
-Original creator: cwitty
-
-Original creation time: 2007-12-07 16:31:39
-
+archive/issues_001419.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nWhen my laptop is disconnected from the Internet, I can still run a local notebook on https://localhost:8000/ and access it with almost full functionality.  However, the java3d plotting fails.  In the Java console, I get a backtrace:\n\n```\njava.net.ConnectException: Network is unreachable\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)\n\tat java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)\n\tat java.net.Socket.connect(Socket.java:519)\n\tat sun.net.NetworkClient.doConnect(NetworkClient.java:155)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:388)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:500)\n\tat sun.net.www.http.HttpClient.<init>(HttpClient.java:233)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:306)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:318)\n\tat sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:792)\n\tat sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:733)\n\tat sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:658)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.processNativeJar(JNLPAppletLauncher.java:1527)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initResources(JNLPAppletLauncher.java:1342)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.initAndStartApplet(JNLPAppletLauncher.java:1246)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher.access$000(JNLPAppletLauncher.java:650)\n\tat org.jdesktop.applet.util.JNLPAppletLauncher$1.run(JNLPAppletLauncher.java:899)\nDec 7, 2007 8:11:30 AM org.jdesktop.applet.util.JNLPAppletLauncher displayError\nSEVERE: java.net.ConnectException: Network is unreachable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1419\n\n",
+    "created_at": "2007-12-07T16:31:39Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "notebook java3d plotting requires Internet access",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1419",
+    "user": "cwitty"
+}
+```
 Assignee: robertwb
 
 When my laptop is disconnected from the Internet, I can still run a local notebook on https://localhost:8000/ and access it with almost full functionality.  However, the java3d plotting fails.  In the Java console, I get a backtrace:
@@ -36,10 +46,25 @@ SEVERE: java.net.ConnectException: Network is unreachable
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1419
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-12-07 20:59:25
+archive/issue_comments_009155.json:
+```json
+{
+    "body": "More information:\n\nIf I'm in the middle of a notebook session, and then disconnect from the Internet, then plotting functionality continues to work.  To make it fail, I follow these steps:\n\n1) reload the page\n\n2) in the Java Console, press 'x' (\"clear classloader cache\")\n\n3) click on a \"Click for interactive view.\" java3d link.\n\n(I follow these steps whenever I change sage3d.jar, to make the changes take effect.)",
+    "created_at": "2007-12-07T20:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#issuecomment-9155",
+    "user": "cwitty"
+}
+```
 
 More information:
 
@@ -54,9 +79,20 @@ If I'm in the middle of a notebook session, and then disconnect from the Interne
 (I follow these steps whenever I change sage3d.jar, to make the changes take effect.)
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:47:57
+archive/issue_comments_009156.json:
+```json
+{
+    "body": "\n```\n13:47 < wstein-2813> re: 1419 -- that java3d plotting is completely different than jmol.\n13:47 < wstein-2813> I think it's deprecated, though robertwb might think differently.\n```\n",
+    "created_at": "2008-04-05T20:47:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#issuecomment-9156",
+    "user": "was"
+}
+```
 
 
 ```
@@ -66,22 +102,55 @@ Comment by was created at 2008-04-05 20:47:57
 
 
 
+
 ---
 
-Comment by robertwb created at 2008-04-06 07:22:42
+archive/issue_comments_009157.json:
+```json
+{
+    "body": "Yes, jmol is completely different from the java3d stuff. We can probably change this to won't fix, but I think we should leave the java3d stuff in there (as it is much faster for complicated scenes)",
+    "created_at": "2008-04-06T07:22:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#issuecomment-9157",
+    "user": "robertwb"
+}
+```
 
 Yes, jmol is completely different from the java3d stuff. We can probably change this to won't fix, but I think we should leave the java3d stuff in there (as it is much faster for complicated scenes)
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:38:04
+archive/issue_comments_009158.json:
+```json
+{
+    "body": "We're now using jmol for everything.",
+    "created_at": "2009-05-18T21:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#issuecomment-9158",
+    "user": "robertwb"
+}
+```
 
 We're now using jmol for everything.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:38:04
+archive/issue_comments_009159.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-05-18T21:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1419",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1419#issuecomment-9159",
+    "user": "robertwb"
+}
+```
 
 Resolution: wontfix

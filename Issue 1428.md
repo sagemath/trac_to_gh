@@ -1,11 +1,21 @@
 # Issue 1428: add SVD method to matrix_complex_double_dense
 
-Issue created by migration from https://trac.sagemath.org/ticket/1428
-
-Original creator: mhansen
-
-Original creation time: 2007-12-08 14:53:32
-
+archive/issues_001428.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  dfdeshom@gmail.com\n\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
+    "created_at": "2007-12-08T14:53:32Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "add SVD method to matrix_complex_double_dense",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1428",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 CC:  dfdeshom@gmail.com
@@ -28,42 +38,114 @@ Sander
 
 Basically all that needs to be done is to translate the real code over to the complex case.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1428
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-12-22 13:15:23
+archive/issue_comments_009203.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-22T13:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9203",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_009204.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-22T13:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9204",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-22 13:15:23
+archive/issue_comments_009205.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-12-22T13:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9205",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-01-15 01:57:24
+archive/issue_comments_009206.json:
+```json
+{
+    "body": "The patch looks great. I would suggest making an option that would just return S, instead of the tuple (U,S,V') since people that use this method tend to care more about S than anything else.",
+    "created_at": "2008-01-15T01:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9206",
+    "user": "dfdeshom"
+}
+```
 
 The patch looks great. I would suggest making an option that would just return S, instead of the tuple (U,S,V') since people that use this method tend to care more about S than anything else.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 03:01:03
+archive/issue_comments_009207.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T03:01:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9207",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 03:01:03
+archive/issue_comments_009208.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha3",
+    "created_at": "2008-01-15T03:01:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9208",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha3

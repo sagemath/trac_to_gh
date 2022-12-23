@@ -1,19 +1,44 @@
 # Issue 1011: [with patch] MagmaElement.__nonzero__
 
-Issue created by migration from https://trac.sagemath.org/ticket/1011
-
-Original creator: malb
-
-Original creation time: 2007-10-27 13:59:24
-
+archive/issues_001011.json:
+```json
+{
+    "body": "Assignee: malb\n\nThis used to not work: `bool(magma('true'))` with the attached tiny patch it does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1011\n\n",
+    "created_at": "2007-10-27T13:59:24Z",
+    "labels": [
+        "interfaces",
+        "trivial",
+        "enhancement"
+    ],
+    "title": "[with patch] MagmaElement.__nonzero__",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1011",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 This used to not work: `bool(magma('true'))` with the attached tiny patch it does.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1011
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-27 16:39:54
+archive/issue_comments_006193.json:
+```json
+{
+    "body": "Mmmh, any chance this is related to/also  fixes #845?\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-27T16:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#issuecomment-6193",
+    "user": "mabshoff"
+}
+```
 
 Mmmh, any chance this is related to/also  fixes #845?
 
@@ -22,9 +47,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-27 19:58:07
+archive/issue_comments_006194.json:
+```json
+{
+    "body": "Wouldn't that break `magma(25).is_zero()`?\n\n```\nsage: magma(25).is_zero()\nFalse\nsage: magma(25).bool()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n[... elided ...]\n<type 'exceptions.RuntimeError'>: Error evaluation Magma code.\nIN:_sage_[18] eq true;\nOUT:\n>> _sage_[18] eq true;\n              ^\nRuntime error in 'eq': Bad argument types\nArgument types given: RngIntElt, BoolElt\n```\n",
+    "created_at": "2007-10-27T19:58:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#issuecomment-6194",
+    "user": "cwitty"
+}
+```
 
 Wouldn't that break `magma(25).is_zero()`?
 
@@ -46,7 +82,20 @@ Argument types given: RngIntElt, BoolElt
 
 
 
+
 ---
+
+archive/issue_comments_006195.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:2 cwitty]:\n> Wouldn't that break `magma(25).is_zero()`?\n\nYou are right and thus I updated the patch:\n\n\n```\nsage: magma(9).is_zero()\nFalse\nsage: magma(0).is_zero()\nTrue\nsage: magma('false').bool()\nFalse\nsage: bool(magma(9).IsPrime())\nFalse\nsage: bool(magma(7).IsPrime())\nTrue\n```\n",
+    "created_at": "2007-10-30T16:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#issuecomment-6195",
+    "user": "malb"
+}
+```
 
 Attachment
 
@@ -71,15 +120,37 @@ True
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 09:41:09
+archive/issue_comments_006196.json:
+```json
+{
+    "body": "applied to 2.8.11.alpha0",
+    "created_at": "2007-11-01T09:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#issuecomment-6196",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 09:41:09
+archive/issue_comments_006197.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T09:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1011",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1011#issuecomment-6197",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

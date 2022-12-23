@@ -1,11 +1,21 @@
 # Issue 1840: Hill cipher addition to crypto package
 
-Issue created by migration from https://trac.sagemath.org/ticket/1840
-
-Original creator: kohel
-
-Original creation time: 2008-01-18 23:08:19
-
+archive/issues_001840.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nThis adds functionality for Hill ciphers as in the following example:\n\nsage: S = AlphabeticStrings()\nsage: E = HillCryptosystem(S,7)\nsage: E.random_key()\n\n[13  1 23  4 14 15  0]\n[11  4  4 12  0 23 14]\n[18  4 25 13 10  7 10]\n[ 9 14 13 11  1 12 10]\n[13  8 10 19 24 13 24]\n[ 8  7 12 12 25  2 10]\n[ 2  7  1 10 13 12  5]\nsage: e = E(E.random_key())\nsage: e\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: pt = S([ randint(0,25) for i in range(7*16) ])\nsage: pt\nQWTWCUQMBMTGDSGTHNJLBNDEXYWGJKHZGAPRFKMPGJDXDLYYGZVTXHLJIMOGKERMWCMOOJKHGCTXAOVIJCXBIGRSLVCBZAXJBCDAEHUZUGCEYCLA\nsage: e(pt)\nYBQWKZZLXQLKVACTPHEFPHAWYSSUKFVQJGJVGVNYWXDRYMYHXZIBOGJISSTQTOQYQPYNKIVPAQZNJDXJRNPKQUWYRRGRLGERSLXUAWAMXXGSQETD\nsage: c = e.inverse()\nsage: c(e(pt)) == pt\nTrue\nsage: e.key()\n\n[ 1  9  8 17 16  2 13]\n[11 12 12 24 12 25  2]\n[18 21 20  2 16  7 17]\n[17 17  8 19 14 23 19]\n[15 11 24  6  5  7  4]\n[17 20 18  6 16 13 13]\n[ 2 12 17  4 23  4  4]\nsage: type(e.key())\n<type 'sage.matrix.matrix_modn_dense.Matrix_modn_dense'>\nsage: type(e)\n<class 'sage.crypto.classical_cipher.HillCipher'>\nsage: A = e.key()\nsage: A.det()\n17\n\nIssue created by migration from https://trac.sagemath.org/ticket/1840\n\n",
+    "created_at": "2008-01-18T23:08:19Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Hill cipher addition to crypto package",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1840",
+    "user": "kohel"
+}
+```
 Assignee: cwitty
 
 This adds functionality for Hill ciphers as in the following example:
@@ -56,40 +66,114 @@ sage: A = e.key()
 sage: A.det()
 17
 
+Issue created by migration from https://trac.sagemath.org/ticket/1840
+
+
+
+
 
 ---
+
+archive/issue_comments_011655.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-18T23:09:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11655",
+    "user": "kohel"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-01-20 17:56:56
+archive/issue_comments_011656.json:
+```json
+{
+    "body": "Patch looks good and applies cleanly against 2.10. Only detail: It uses `__repr__` rather than `_repr_` (two instead of one underscore) but inherits from `SageObject`. All objects inheriting from `SageObject` are supposed to implement `_repr_`.",
+    "created_at": "2008-01-20T17:56:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11656",
+    "user": "malb"
+}
+```
 
 Patch looks good and applies cleanly against 2.10. Only detail: It uses `__repr__` rather than `_repr_` (two instead of one underscore) but inherits from `SageObject`. All objects inheriting from `SageObject` are supposed to implement `_repr_`.
 
 
+
 ---
+
+archive/issue_comments_011657.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-21T05:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11657",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-21 05:39:54
+archive/issue_comments_011658.json:
+```json
+{
+    "body": "Works for me, and I posted a second patch changing __repr__'s to _repr_.",
+    "created_at": "2008-01-21T05:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11658",
+    "user": "mhansen"
+}
+```
 
 Works for me, and I posted a second patch changing __repr__'s to _repr_.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 06:22:00
+archive/issue_comments_011659.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T06:22:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11659",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 06:22:00
+archive/issue_comments_011660.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T06:22:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1840#issuecomment-11660",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

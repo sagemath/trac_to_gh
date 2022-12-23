@@ -1,13 +1,27 @@
 # Issue 1802: unify possible finite field representations
 
-Issue created by migration from https://trac.sagemath.org/ticket/1802
-
-Original creator: malb
-
-Original creation time: 2008-01-17 19:15:18
-
+archive/issues_001802.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: usability\n\nIf Givaro implements the finite extension field then the parameter \"int\" or \"log\" changes the representation of elements. This doesn't work for larger fields and thus is ambiguous. So either the `repr=\"int\"` parameter should be dropped for Givaro or allowed for all other implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1802\n\n",
+    "created_at": "2008-01-17T19:15:18Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "unify possible finite field representations",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1802",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Keywords: usability
 
 If Givaro implements the finite extension field then the parameter "int" or "log" changes the representation of elements. This doesn't work for larger fields and thus is ambiguous. So either the `repr="int"` parameter should be dropped for Givaro or allowed for all other implementations.
+
+Issue created by migration from https://trac.sagemath.org/ticket/1802
+
+

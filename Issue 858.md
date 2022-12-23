@@ -1,11 +1,21 @@
 # Issue 858: add support for numpy arrays with integer entries
 
-Issue created by migration from https://trac.sagemath.org/ticket/858
-
-Original creator: mhansen
-
-Original creation time: 2007-10-12 04:51:54
-
+archive/issues_000858.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: numpy\n\n\n```\nsage: import numpy\nsage: a = numpy.array([[1,2],[3,4]],'int32')\nsage: matrix(a)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mhansen/sage/devel/sage-856/<ipython console> in <module>()\n\n/home/mhansen/sage/local/lib/python2.5/site-packages/sage/matrix/constructor.py in matrix(arg0, arg1, arg2, arg3, sparse)\n    399                     raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    400             else:\n--> 401                 raise TypeError(\"cannot convert numpy matrix to SAGE matrix\")\n    402 \n    403         else:\n\n<type 'exceptions.TypeError'>: cannot convert numpy matrix to SAGE matrix\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/858\n\n",
+    "created_at": "2007-10-12T04:51:54Z",
+    "labels": [
+        "numerical",
+        "major",
+        "enhancement"
+    ],
+    "title": "add support for numpy arrays with integer entries",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/858",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 Keywords: numpy
@@ -31,44 +41,118 @@ sage: matrix(a)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/858
+
+
+
+
 
 ---
+
+archive/issue_comments_005313.json:
+```json
+{
+    "body": "Attachment\n\npatch #1",
+    "created_at": "2007-10-12T05:44:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5313",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 patch #1
 
 
+
 ---
+
+archive/issue_comments_005314.json:
+```json
+{
+    "body": "Attachment\n\nadded doctest",
+    "created_at": "2007-10-12T05:46:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5314",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 added doctest
 
 
+
 ---
 
-Comment by mhansen created at 2007-10-12 05:47:01
+archive/issue_comments_005315.json:
+```json
+{
+    "body": "#859 should be applied before these two patches",
+    "created_at": "2007-10-12T05:47:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5315",
+    "user": "mhansen"
+}
+```
 
 #859 should be applied before these two patches
 
 
+
 ---
 
-Comment by mhansen created at 2007-10-12 05:47:01
+archive/issue_comments_005316.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-10-12T05:47:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5316",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-10-12 05:47:01
+archive/issue_comments_005317.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-12T05:47:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5317",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-10-13 08:02:04
+archive/issue_comments_005318.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-13T08:02:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/858#issuecomment-5318",
+    "user": "was"
+}
+```
 
 Resolution: fixed

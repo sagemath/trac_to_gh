@@ -1,11 +1,21 @@
 # Issue 1581: 3d graphics do not show all objects by default
 
-Issue created by migration from https://trac.sagemath.org/ticket/1581
-
-Original creator: jason
-
-Original creation time: 2007-12-21 08:58:06
-
+archive/issues_001581.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(.1).translate(1,2,3).show()\n```\n\n\ndoes not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1581\n\n",
+    "created_at": "2007-12-21T08:58:06Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "3d graphics do not show all objects by default",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1581",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -17,44 +27,116 @@ Sphere(.1).translate(1,2,3).show()
 
 does not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1581
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2007-12-30 10:55:31
+archive/issue_comments_010073.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2007-12-30T10:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10073",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-30 10:55:31
+archive/issue_comments_010074.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-30T10:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10074",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-30 10:56:30
+archive/issue_comments_010075.json:
+```json
+{
+    "body": "I've done a little bit of work on bounding boxes, this is what I think we should be using. (There are more sophisticated bounding methods, but I don't think we'll need them for out application.)",
+    "created_at": "2007-12-30T10:56:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10075",
+    "user": "robertwb"
+}
+```
 
 I've done a little bit of work on bounding boxes, this is what I think we should be using. (There are more sophisticated bounding methods, but I don't think we'll need them for out application.)
 
 
+
 ---
 
-Comment by was created at 2008-01-01 10:30:04
+archive/issue_comments_010076.json:
+```json
+{
+    "body": "This patch fixes the problem, plus does a *lot* of other work.  This is a snapshot --  it is not suitable for inclusion in the next version of Sage as is -- probably many 3d doctests still fail.",
+    "created_at": "2008-01-01T10:30:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10076",
+    "user": "was"
+}
+```
 
 This patch fixes the problem, plus does a *lot* of other work.  This is a snapshot --  it is not suitable for inclusion in the next version of Sage as is -- probably many 3d doctests still fail.
 
 
+
 ---
+
+archive/issue_comments_010077.json:
+```json
+{
+    "body": "Attachment\n\nThis has already been resolved included in Sage.",
+    "created_at": "2008-01-15T06:14:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10077",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 This has already been resolved included in Sage.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-15 06:14:01
+archive/issue_comments_010078.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T06:14:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10078",
+    "user": "robertwb"
+}
+```
 
 Resolution: fixed

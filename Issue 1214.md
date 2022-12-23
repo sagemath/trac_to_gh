@@ -1,11 +1,21 @@
 # Issue 1214: error in polynomial ideal membership testing
 
-Issue created by migration from https://trac.sagemath.org/ticket/1214
-
-Original creator: mhansen
-
-Original creation time: 2007-11-20 05:33:53
-
+archive/issues_001214.json:
+```json
+{
+    "body": "Assignee: malb\n\n\n```\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1214\n\n",
+    "created_at": "2007-11-20T05:33:53Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "error in polynomial ideal membership testing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1214",
+    "user": "mhansen"
+}
+```
 Assignee: malb
 
 
@@ -27,10 +37,25 @@ sage: x^2 in I
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1214
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-11-20 05:43:43
+archive/issue_comments_007537.json:
+```json
+{
+    "body": "\n```\nsage: P.<x> = PolynomialRing(QQ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'Polynomial_rational_dense' object has no attribute 'divides'\nsage: P.<x> = PolynomialRing(ZZ)\nsage: I = P.ideal(x^2-2)\nsage: x^2 in I\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/maple11/lib/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ideal.py in __contains__(self, x)\n    315         if self.gen().is_zero():\n    316             return x.is_zero()\n--> 317         return self.gen().divides(x)\n    318     \n    319     def __cmp__(self, other):\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_integer_dense_ntl' object has no attribute 'divides'\n```\n",
+    "created_at": "2007-11-20T05:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7537",
+    "user": "mhansen"
+}
+```
 
 
 ```
@@ -70,28 +95,74 @@ sage: x^2 in I
 
 
 
+
 ---
+
+archive/issue_comments_007538.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-11-20T05:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7538",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-20 05:51:05
+archive/issue_comments_007539.json:
+```json
+{
+    "body": "Changing assignee from malb to mhansen.",
+    "created_at": "2007-11-20T05:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7539",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from malb to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-20 05:51:05
+archive/issue_comments_007540.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-20T05:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7540",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-11-23 20:06:28
+archive/issue_comments_007541.json:
+```json
+{
+    "body": "This patch should be applied -- doctests are excellent and I think the divides() function is good.\n\nThere is a typo:\n\n```\n \t1624\t    def divides(self, x): \n \t1625\t        \"\"\" \n \t1626\t        Return True if self divides n. \n```\n\n\n$n$ should be $x$.",
+    "created_at": "2007-11-23T20:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7541",
+    "user": "ncalexan"
+}
+```
 
 This patch should be applied -- doctests are excellent and I think the divides() function is good.
 
@@ -107,15 +178,37 @@ There is a typo:
 $n$ should be $x$.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:47:33
+archive/issue_comments_007542.json:
+```json
+{
+    "body": "Merged in 2.8.15.alpha1 - I corrected the documentation as Nick suggested.",
+    "created_at": "2007-12-01T18:47:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7542",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.alpha1 - I corrected the documentation as Nick suggested.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-01 18:47:33
+archive/issue_comments_007543.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-01T18:47:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1214#issuecomment-7543",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

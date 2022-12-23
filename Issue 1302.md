@@ -1,11 +1,21 @@
 # Issue 1302: bug in laurent_series integration
 
-Issue created by migration from https://trac.sagemath.org/ticket/1302
-
-Original creator: was
-
-Original creation time: 2007-11-28 19:05:46
-
+archive/issues_001302.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nOn Nov 28, 2007 10:43 AM, Jennifer S. Balakrishnan <> wrote:\n> I'm trying to integrate a list of Laurent series, and it seems that\n> once the list has more than 4 elements, Sage gets upset:\n\nThe problem is:\n\nsage: A.<t> = LaurentSeriesRing(QQ)\nsage: (-2*t^(-4) + O(t^8)).integral()\nTraceback (most recent call last):\n...\nIndexError: list index out of range\n\nThis is because of  this code in rings/laurent_series_ring_element.pyx not\nbeing coded correctly around line 880:\n        if n < 0:\n            v = [a[i]/(n+i+1) for i in range(-1-n)] + [0]\n        else:\n            v = []\n        v += [a[i]/(n+i+1) for i in range(max(-n,0), len(a))]\n\ttry:\n\nSo you should fix that and submit a patch :-).\n\nWilliam\n\n\n\n> \n> sage: A.<t> = LaurentSeriesRing(QQ)\n> sage: B = [-2*t^4 + O(t^16), -2*t^2 + O(t^14), -2 + O(t^12), -2*t^-2 +\n> O(t^10), -2*t^-4 + O(t^8), -2*t^-6 + O(t^6)]\n> sage: for i in range(6):\n> ....:     B[i] = integral(B[i])\n> ....:\n> ---------------------------------------------------------------------------\n> <type 'exceptions.IndexError'>            Traceback (most recent call last)\n> \n> /home/jen/<ipython console> in <module>()\n> \n> /home/jen/sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux/local/lib/python2.5/site-packages/sage/misc/functional.py\n> in integral(x, *args, **kwds)\n>     449     \"\"\"\n>     450     if hasattr(x, 'integral'):\n> --> 451         return x.integral(*args, **kwds)\n>     452     else:\n>     453         from sage.calculus.calculus import SR\n> \n> /home/jen/laurent_series_ring_element.pyx in\n> sage.rings.laurent_series_ring_element.LaurentSeries.integral()\n> \n> <type 'exceptions.IndexError'>: list index out of range\n> sage: B\n> \n> [-2/5*t^5 + O(t^17),\n>  -2/3*t^3 + O(t^15),\n>  -2*t + O(t^13),\n>  2*t^-1 + O(t^11),\n>  -2*t^-4 + O(t^8),        <================== stopped integrating here\n>  -2*t^-6 + O(t^6)]\n> \n> What's going on?\n> \n> Jen\n> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1302\n\n",
+    "created_at": "2007-11-28T19:05:46Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in laurent_series integration",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1302",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -77,57 +87,151 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1302
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-26 03:14:15
+archive/issue_comments_008184.json:
+```json
+{
+    "body": "Certainly Bug Day material.",
+    "created_at": "2007-12-26T03:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8184",
+    "user": "mabshoff"
+}
+```
 
 Certainly Bug Day material.
 
 
+
 ---
 
-Comment by rishi created at 2008-01-02 22:38:19
+archive/issue_comments_008185.json:
+```json
+{
+    "body": "Changing assignee from somebody to rishi.",
+    "created_at": "2008-01-02T22:38:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8185",
+    "user": "rishi"
+}
+```
 
 Changing assignee from somebody to rishi.
 
 
+
 ---
 
-Comment by rishi created at 2008-01-02 22:38:19
+archive/issue_comments_008186.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-02T22:38:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8186",
+    "user": "rishi"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rishi created at 2008-01-03 01:30:43
+archive/issue_comments_008187.json:
+```json
+{
+    "body": "IndexError occurs when the highest power in the Laurent series is less than -2. The two lines in the patch add appropriate number of zero coefficients so that this does not happen. I consider this a bandaid solution, but at least it works.",
+    "created_at": "2008-01-03T01:30:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8187",
+    "user": "rishi"
+}
+```
 
 IndexError occurs when the highest power in the Laurent series is less than -2. The two lines in the patch add appropriate number of zero coefficients so that this does not happen. I consider this a bandaid solution, but at least it works.
 
 
+
 ---
+
+archive/issue_comments_008188.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-04T08:36:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8188",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rishi created at 2008-01-04 08:39:27
+archive/issue_comments_008189.json:
+```json
+{
+    "body": "I changed the patch. This is much better than previous solution.",
+    "created_at": "2008-01-04T08:39:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8189",
+    "user": "rishi"
+}
+```
 
 I changed the patch. This is much better than previous solution.
 
 
+
 ---
 
-Comment by robertwb created at 2008-01-04 22:14:43
+archive/issue_comments_008190.json:
+```json
+{
+    "body": "Yep, works great.",
+    "created_at": "2008-01-04T22:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8190",
+    "user": "robertwb"
+}
+```
 
 Yep, works great.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-04 22:26:26
+archive/issue_comments_008191.json:
+```json
+{
+    "body": "We should add doctests to verify that the patch works. I am still willing to merge this patch for 2.9.2, but then I would open a new ticket to add doctests to test this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-04T22:26:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8191",
+    "user": "mabshoff"
+}
+```
 
 We should add doctests to verify that the patch works. I am still willing to merge this patch for 2.9.2, but then I would open a new ticket to add doctests to test this.
 
@@ -136,20 +240,55 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_008192.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-05T02:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8192",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-05 02:32:16
+archive/issue_comments_008193.json:
+```json
+{
+    "body": "Merged in 2.9.2.rc1.",
+    "created_at": "2008-01-05T02:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8193",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.2.rc1.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-05 02:32:16
+archive/issue_comments_008194.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-05T02:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8194",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

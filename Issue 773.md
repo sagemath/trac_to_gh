@@ -1,11 +1,21 @@
 # Issue 773: SAGE drops . from path
 
-Issue created by migration from https://trac.sagemath.org/ticket/773
-
-Original creator: was
-
-Original creation time: 2007-10-01 19:05:57
-
+archive/issues_000773.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
+    "created_at": "2007-10-01T19:05:57Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "SAGE drops . from path",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/773",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -21,10 +31,25 @@ os.ensage: os.environ['PATH']
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/773
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-12-11 02:48:03
+archive/issue_comments_004616.json:
+```json
+{
+    "body": "I'm guessing this is caused by the following lines from expect.py...\n\n```\n# . in user's path causes *HUGE* trouble, e.g., pexpect will try to\n# run a directory name!\np = os.environ['PATH'].split(':')\nos.environ['PATH'] = ':'.join([v for v in p if v.strip() != '.'])\n```\n\n\nThese lines were added by William Stein:\n\n```\nchangeset:   2329:cccccf17fcd6\nuser:        William Stein <wstein@gmail.com>\ndate:        Thu Jan 11 14:10:46 2007 -0800\nsummary:     Make sure . is not in user's path.\n```\n",
+    "created_at": "2007-12-11T02:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4616",
+    "user": "cwitty"
+}
+```
 
 I'm guessing this is caused by the following lines from expect.py...
 
@@ -47,28 +72,74 @@ summary:     Make sure . is not in user's path.
 
 
 
+
 ---
+
+archive/issue_comments_004617.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-23T10:13:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4617",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-01-23 10:15:13
+archive/issue_comments_004618.json:
+```json
+{
+    "body": "The attached new spkg and deleting the code cwitty pointed out completely fixes this problem.",
+    "created_at": "2009-01-23T10:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4618",
+    "user": "was"
+}
+```
 
 The attached new spkg and deleting the code cwitty pointed out completely fixes this problem.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 14:56:31
+archive/issue_comments_004619.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-01-24T14:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4619",
+    "user": "rlm"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 17:54:11
+archive/issue_comments_004620.json:
+```json
+{
+    "body": "I did some further cleanups in SPKG.txt and also add .hgignore. The result is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha3/pexpect-2.0.p3.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-28T17:54:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4620",
+    "user": "mabshoff"
+}
+```
 
 I did some further cleanups in SPKG.txt and also add .hgignore. The result is at
 
@@ -79,9 +150,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 18:03:55
+archive/issue_comments_004621.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-28T18:03:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4621",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha3.
 
@@ -90,8 +172,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 18:03:55
+archive/issue_comments_004622.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-28T18:03:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/773",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/773#issuecomment-4622",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

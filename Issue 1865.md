@@ -1,11 +1,21 @@
 # Issue 1865: notebook -- after restart output of first evaluation is not displayed
 
-Issue created by migration from https://trac.sagemath.org/ticket/1865
-
-Original creator: was
-
-Original creation time: 2008-01-20 16:44:36
-
+archive/issues_001865.json:
+```json
+{
+    "body": "Assignee: boothby\n\nTry this in the notebook:\n\n1. Click restart worksheet in the action menu.\n\n2. Evaluate the contents of a cell.\n\nYou'll find nothing happens.   More precisely, the first cell does get evaluated (as you can see by assigning a variable there), but the output of this evaluation is never displayed in the notebook. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1865\n\n",
+    "created_at": "2008-01-20T16:44:36Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- after restart output of first evaluation is not displayed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1865",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Try this in the notebook:
@@ -16,39 +26,98 @@ Try this in the notebook:
 
 You'll find nothing happens.   More precisely, the first cell does get evaluated (as you can see by assigning a variable there), but the output of this evaluation is never displayed in the notebook. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1865
+
+
+
+
 
 ---
 
-Comment by boothby created at 2008-03-16 19:04:47
+archive/issue_comments_011811.json:
+```json
+{
+    "body": "I can't reproduce this.  Invalid?",
+    "created_at": "2008-03-16T19:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11811",
+    "user": "boothby"
+}
+```
 
 I can't reproduce this.  Invalid?
 
 
+
 ---
 
-Comment by was created at 2008-03-16 20:32:46
+archive/issue_comments_011812.json:
+```json
+{
+    "body": "> I can't reproduce this. Invalid?\n\nI reproduce this every day and it drives me nuts.  This is a serious problem.",
+    "created_at": "2008-03-16T20:32:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11812",
+    "user": "was"
+}
+```
 
 > I can't reproduce this. Invalid?
 
 I reproduce this every day and it drives me nuts.  This is a serious problem.
 
 
+
 ---
 
-Comment by boothby created at 2008-03-16 21:26:16
+archive/issue_comments_011813.json:
+```json
+{
+    "body": "Shoot.  What browser?",
+    "created_at": "2008-03-16T21:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11813",
+    "user": "boothby"
+}
+```
 
 Shoot.  What browser?
 
 
+
 ---
 
-Comment by was created at 2008-05-11 06:13:13
+archive/issue_comments_011814.json:
+```json
+{
+    "body": "I fixed this when doing all the work improving the javascript documentation a few weeks ago.",
+    "created_at": "2008-05-11T06:13:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11814",
+    "user": "was"
+}
+```
 
 I fixed this when doing all the work improving the javascript documentation a few weeks ago.
 
 
+
 ---
 
-Comment by was created at 2008-05-11 06:13:13
+archive/issue_comments_011815.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T06:13:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1865",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11815",
+    "user": "was"
+}
+```
 
 Resolution: fixed

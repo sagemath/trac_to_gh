@@ -1,11 +1,21 @@
 # Issue 770: Bad behaviour when Ctrl-C hit while running an expect interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/770
-
-Original creator: tornaria
-
-Original creation time: 2007-10-01 05:31:35
-
+archive/issues_000770.json:
+```json
+{
+    "body": "Assignee: was\n\nThere are two different types of bad behaviour, and which one occurs seems random.\n\nOne case is lost synchronization with the slave:\n\n```\nsage: gp.eval('factor(2^997-1)')\n[CTRL-C]\nInterrupting GP/PARI interpreter...\nInterrupting GP/PARI interpreter...\n---------------------------------------------------------------------------\n<type 'exceptions.KeyboardInterrupt'>     Traceback (most recent call last)\n...\n<type 'exceptions.KeyboardInterrupt'>: Ctrl-c pressed while running GP/PARI interpreter\nsage: gp.eval('factor(2^997-1)')\n[CTRL-C]\n'factor(2^997-1)'\nsage: gp.eval('factor(2^997-1)')\n[CTRL-C]\n''\n```\n\nAfter this third time, synchronization is regained.\n\nThe second type of bad behaviour is an apparent \"hang\"\n\n```\nsage: gp.eval('factor(2^997-1)')\n[CTRL-C]\nInterrupting GP/PARI interpreter...\nInterrupting GP/PARI interpreter...\n[loops until CTRL-C hit again]\n```\n\nThe traceback shows that expect is waiting for a prompt, so this is again a synchronization problem except some timing issues make it behave differently.\n\nIn both cases the problem is the same, namely `Expect._keyboard_interrupt()` is being called twice when it should only be called once.\n\nIn fact, there are two nested `try` blocks both catching `KeyboardInterrupt` and running `_keyboard_interrupt()`. Since the latter raises `KeyboardInterrupt`, it ends up executed twice.\n\nThe proposed solution is to remove the outer catch for `KeyboardInterrupt`, which happens in `expect.eval`, and leave this error handling to `expect._eval_line`.\n\nAmong all the derived classes of `Expect` in `sage/interfaces` directory, the only one that seems to redefine `Expect.eval` in a not \"default-to-base-class\" way is `Lisp` in `lisp.py`, which should also be fixed. AFAICT, the other classes should be ok, but note that I only tested `Gp` as above: *I didn't test `Lisp` class either with the allegedly broken code nor with the fix!!*\n\nThis issue is similar (but really unrelated) to #710.\n\nA patch is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/770\n\n",
+    "created_at": "2007-10-01T05:31:35Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Bad behaviour when Ctrl-C hit while running an expect interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/770",
+    "user": "tornaria"
+}
+```
 Assignee: was
 
 There are two different types of bad behaviour, and which one occurs seems random.
@@ -49,27 +59,66 @@ In fact, there are two nested `try` blocks both catching `KeyboardInterrupt` and
 
 The proposed solution is to remove the outer catch for `KeyboardInterrupt`, which happens in `expect.eval`, and leave this error handling to `expect._eval_line`.
 
-Among all the derived classes of `Expect` in `sage/interfaces` directory, the only one that seems to redefine `Expect.eval` in a not "default-to-base-class" way is `Lisp` in `lisp.py`, which should also be fixed. AFAICT, the other classes should be ok, but note that I only tested `Gp` as above: _I didn't test `Lisp` class either with the allegedly broken code nor with the fix!!_
+Among all the derived classes of `Expect` in `sage/interfaces` directory, the only one that seems to redefine `Expect.eval` in a not "default-to-base-class" way is `Lisp` in `lisp.py`, which should also be fixed. AFAICT, the other classes should be ok, but note that I only tested `Gp` as above: *I didn't test `Lisp` class either with the allegedly broken code nor with the fix!!*
 
 This issue is similar (but really unrelated) to #710.
 
 A patch is attached.
 
+Issue created by migration from https://trac.sagemath.org/ticket/770
+
+
+
+
 
 ---
 
-Comment by tornaria created at 2007-10-01 05:33:13
+archive/issue_comments_004577.json:
+```json
+{
+    "body": "Proposed patch to fix this issue",
+    "created_at": "2007-10-01T05:33:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/770",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/770#issuecomment-4577",
+    "user": "tornaria"
+}
+```
 
 Proposed patch to fix this issue
 
 
+
 ---
+
+archive/issue_comments_004578.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-01T11:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/770",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/770#issuecomment-4578",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-04 14:41:50
+archive/issue_comments_004579.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T14:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/770",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/770#issuecomment-4579",
+    "user": "was"
+}
+```
 
 Resolution: fixed

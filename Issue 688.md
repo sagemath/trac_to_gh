@@ -1,11 +1,21 @@
 # Issue 688: conversion to Singular for QuotientRingElements broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/688
-
-Original creator: malb
-
-Original creation time: 2007-09-18 13:09:54
-
+archive/issues_000688.json:
+```json
+{
+    "body": "Assignee: was\n\nConsider:\n\n\n```\nsage: P.<x,y>  = PolynomialRing(GF(2),2)\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: Q = P.quo(I)\nsage: Q._singular_()\n\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\nsage: Q(x)\nxbar\nsage: Q(x)._singular_()\n--------------------------------------------------------------\n<type 'exceptions.TypeError'> Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: Singular error:\n   ? `xbar` is undefined\n   ? error occurred in STDIN line 185: `def sage69=xbar;`\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/688\n\n",
+    "created_at": "2007-09-18T13:09:54Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "conversion to Singular for QuotientRingElements broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/688",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Consider:
@@ -37,57 +47,151 @@ sage: Q(x)._singular_()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/688
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-21 00:25:56
+archive/issue_comments_003580.json:
+```json
+{
+    "body": "Did this ever work?  Is this really a feature request?",
+    "created_at": "2007-09-21T00:25:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3580",
+    "user": "was"
+}
+```
 
 Did this ever work?  Is this really a feature request?
 
 
+
 ---
+
+archive/issue_comments_003581.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-20T21:45:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3581",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-10-20 21:46:03
+archive/issue_comments_003582.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-20T21:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3582",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2007-10-20 21:46:03
+archive/issue_comments_003583.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2007-10-20T21:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3583",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2007-10-20 21:46:03
+archive/issue_comments_003584.json:
+```json
+{
+    "body": "Fixed in attached patch.",
+    "created_at": "2007-10-20T21:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3584",
+    "user": "malb"
+}
+```
 
 Fixed in attached patch.
 
 
+
 ---
 
-Comment by was created at 2007-10-20 21:48:59
+archive/issue_comments_003585.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-20T21:48:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3585",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-10-20 21:52:46
+archive/issue_comments_003586.json:
+```json
+{
+    "body": "inst.tex.hg is a bundle against hg_sage.  You accidently did hg_sage.send('...') instead of\nhg_doc.send('...').  Please create a bundle against the docs.",
+    "created_at": "2007-10-20T21:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3586",
+    "user": "was"
+}
+```
 
 inst.tex.hg is a bundle against hg_sage.  You accidently did hg_sage.send('...') instead of
 hg_doc.send('...').  Please create a bundle against the docs.
 
 
+
 ---
 
-Comment by was created at 2007-10-20 21:52:59
+archive/issue_comments_003587.json:
+```json
+{
+    "body": "That comment was meant for a different ticket. Sorry.",
+    "created_at": "2007-10-20T21:52:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/688",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3587",
+    "user": "was"
+}
+```
 
 That comment was meant for a different ticket. Sorry.

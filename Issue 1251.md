@@ -1,11 +1,21 @@
 # Issue 1251: tutorial out of date
 
-Issue created by migration from https://trac.sagemath.org/ticket/1251
-
-Original creator: wdj
-
-Original creation time: 2007-11-23 22:54:56
-
+archive/issues_001251.json:
+```json
+{
+    "body": "Assignee: wdj\n\nThe tut.tex file needed a few updates and corrections. The patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut20071123.hg\nThe new latex file (which passes sage -t) is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut.tex\nI also tried to change the file copyright.tex (which is\nin the commontex subdirectory). I don't think the changes stuck, but\nthe revised version is at\nhttp://sage.math.washington.edu/home/wdj/patches/copyright.tex\n(The old one said \"See the end of this document for licensing\ninformation. However, those sections were commented out, so I just\ncopied some lines from the start of the wiki.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1251\n\n",
+    "created_at": "2007-11-23T22:54:56Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "tutorial out of date",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1251",
+    "user": "wdj"
+}
+```
 Assignee: wdj
 
 The tut.tex file needed a few updates and corrections. The patch is at
@@ -21,10 +31,25 @@ information. However, those sections were commented out, so I just
 copied some lines from the start of the wiki.)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1251
+
+
+
+
 
 ---
 
-Comment by was created at 2007-11-24 18:44:19
+archive/issue_comments_007831.json:
+```json
+{
+    "body": "Just apply the tut bundle http://sage.math.washington.edu/home/wdj/patches/tut20071123.hg \nthen manually place the copyright file in commontex (it is not\npart of the repo and shouldn't be for now).\n\nWilliam",
+    "created_at": "2007-11-24T18:44:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1251#issuecomment-7831",
+    "user": "was"
+}
+```
 
 Just apply the tut bundle http://sage.math.washington.edu/home/wdj/patches/tut20071123.hg 
 then manually place the copyright file in commontex (it is not
@@ -33,8 +58,19 @@ part of the repo and shouldn't be for now).
 William
 
 
+
 ---
 
-Comment by was created at 2007-11-25 04:55:56
+archive/issue_comments_007832.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-25T04:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1251#issuecomment-7832",
+    "user": "was"
+}
+```
 
 Resolution: fixed

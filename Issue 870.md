@@ -1,11 +1,21 @@
 # Issue 870: singular.spkg requires bison to build
 
-Issue created by migration from https://trac.sagemath.org/ticket/870
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-13 02:11:40
-
+archive/issues_000870.json:
+```json
+{
+    "body": "Assignee: malb\n\nSee http://groups.google.com/group/sage-forum/browse_thread/thread/6f56a3cc9f4a1598\n\nTo quote malb:\n\n```\nHi,\n\nSAGE 2.8.5 shipped a version of Singular where we got rid of the dependency of\nbison/flex ourselves. SAGE 2.8.6 removes this workaround because Singular\n3-0-3-1 handles this itself.\n\nHowever, it seems the Singular team forgot to take care of the factory\nlibrary. There are three ways to solve this issue for you:\n\n(a) Install bison for now\n\n(b) replace\n\n$(srcdir)/readcf.cc: readcf.y\n        $(BISON) $< -o $@; \\\n\nwith\n\n$(srcdir)/readcf.cc: readcf.y\n                @if test -r $@; then \\\n                        touch $@ ;\\\n                else \\\n                if test \"${BISON}\" = where-is-your-bison; then \\\n                        echo Error: no bison given, could not rebuilt\ngrammar.cc; \\\n                        exit 1; \\\n                fi; \\\n                $(BISON) $< -o $@; \\\n                fi\n\nin the singular spkg / factory/GNUmakefile.in or drop in the attached file.\nThis requires that you know a little about SAGE SPKGs.\n\n(c) wait until I got confirmation from the Singular team and provide an\nupdated SPKG. (I am BCC'ing Hans Sch\u00f6nemann from the Singular team with this\ne-mail)\n\nCheers,\nMartin \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/870\n\n",
+    "created_at": "2007-10-13T02:11:40Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "singular.spkg requires bison to build",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/870",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 See http://groups.google.com/group/sage-forum/browse_thread/thread/6f56a3cc9f4a1598
@@ -55,38 +65,99 @@ Martin
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/870
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-13 02:12:18
+archive/issue_comments_005364.json:
+```json
+{
+    "body": "malb's temporary solution",
+    "created_at": "2007-10-13T02:12:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/870#issuecomment-5364",
+    "user": "mabshoff"
+}
+```
 
 malb's temporary solution
 
 
+
 ---
+
+archive/issue_comments_005365.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-13T07:37:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/870#issuecomment-5365",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-10-20 18:32:10
+archive/issue_comments_005366.json:
+```json
+{
+    "body": "This is fixed in Singular 3-0-3-2 and an updated spkg can be found at\n http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071020.spkg",
+    "created_at": "2007-10-20T18:32:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/870#issuecomment-5366",
+    "user": "malb"
+}
+```
 
 This is fixed in Singular 3-0-3-2 and an updated spkg can be found at
  http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071020.spkg
 
 
+
 ---
 
-Comment by malb created at 2007-10-20 18:32:34
+archive/issue_comments_005367.json:
+```json
+{
+    "body": "This is fixed in Singular 3-0-3-2 and an updated spkg can be found at \n\nhttp://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071020.spkg",
+    "created_at": "2007-10-20T18:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/870#issuecomment-5367",
+    "user": "malb"
+}
+```
 
 This is fixed in Singular 3-0-3-2 and an updated spkg can be found at 
 
 http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071020.spkg
 
 
+
 ---
 
-Comment by was created at 2007-10-20 18:43:24
+archive/issue_comments_005368.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-20T18:43:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/870#issuecomment-5368",
+    "user": "was"
+}
+```
 
 Resolution: fixed

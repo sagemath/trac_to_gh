@@ -1,11 +1,21 @@
 # Issue 1305: incidence structures
 
-Issue created by migration from https://trac.sagemath.org/ticket/1305
-
-Original creator: jason
-
-Original creation time: 2007-11-28 19:50:39
-
+archive/issues_001305.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nOriginal from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.\n\n\n```\n>>> (d) Bipartite graphs: We will need to deal with some incidence structures,\n>>> and these can be encoded as bipartite graphs. We want to get the point\n>>> graphs and line graphs of incidence structures. If we have a procedure to\n>>> convert a graph G to an incidence structure of vertices and edges, then\n>>> the line graph of the incidence structure is the line graph of G.\n>> Do we have a way to represent and work with incidence structures in Sage\n>> natively?\n> Graphs and codes are implemented, but I don't think designs are.\n> Ultimately, there should be an incidence structure class which they\n> inherit from etc etc etc. Definitely a wishlist ticket, and likely a\n> good coding sprint idea for Sage Days 7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1305\n\n",
+    "created_at": "2007-11-28T19:50:39Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "incidence structures",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1305",
+    "user": "jason"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -28,10 +38,25 @@ Original from Chris Godsil's wishlist, with reply by Jason Grout and second repl
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1305
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-11-28 20:21:15
+archive/issue_comments_008211.json:
+```json
+{
+    "body": "Also from Chris Godsil (hrm, with :\n\n\n```\n>>> It would be very useful to be able to form incidence structures from\n>>> differ-\n>>> ence sets. Here the input would be a group G and some subsets S_1 , . .\n>>> . , S_m ;\n>>> the point set of the incidence structure would be G, and the blocks would\n>>> be the translates S^g_i for i = 1, . . . , m and g in G. Even just the\n>>> case G = Z^d_m\n>>> would be a good start.\n```\n",
+    "created_at": "2007-11-28T20:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1305",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8211",
+    "user": "jason"
+}
+```
 
 Also from Chris Godsil (hrm, with :
 
@@ -49,15 +74,37 @@ Also from Chris Godsil (hrm, with :
 
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-02 10:15:08
+archive/issue_comments_008212.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-12-02T10:15:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1305",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8212",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-02 10:15:08
+archive/issue_comments_008213.json:
+```json
+{
+    "body": "I think we can close this ticket as it is very vague.  Additionally, there is now a class for incidence structures which can be found at http://www.sagemath.org/hg/sage-main/file/5be1d5ad8339/sage/combinat/designs/incidence_structures.py .",
+    "created_at": "2008-12-02T10:15:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1305",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1305#issuecomment-8213",
+    "user": "mhansen"
+}
+```
 
 I think we can close this ticket as it is very vague.  Additionally, there is now a class for incidence structures which can be found at http://www.sagemath.org/hg/sage-main/file/5be1d5ad8339/sage/combinat/designs/incidence_structures.py .

@@ -1,11 +1,21 @@
 # Issue 1166: 2D terminal output is inconsistent and corrupted
 
-Issue created by migration from https://trac.sagemath.org/ticket/1166
-
-Original creator: zimmerma
-
-Original creation time: 2007-11-13 22:44:08
-
+archive/issues_001166.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: f = (exp(x)-1)/(exp(x/2)+1)\nsage: g = exp(x/2)-1\nsage: print f(10.0), g(10.0)\n                               147.4131591025766                               \\\n 147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1                                     \\\n  5\n                                     e  - 1\n```\n\n\nThe output of f(10.0), g(10.0) [with many spaces] seems inconsistent with that of 1, 2 [no spaces]. With f(10), g(10) the exponent 5 of g(10) wraps around the terminal line, and is thus\nnot properly aligned with e - 1. (all this in a 80-column xterm)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1166\n\n",
+    "created_at": "2007-11-13T22:44:08Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "2D terminal output is inconsistent and corrupted",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1166",
+    "user": "zimmerma"
+}
+```
 Assignee: was
 
 
@@ -31,10 +41,25 @@ sage: print f(10), g(10)
 The output of f(10.0), g(10.0) [with many spaces] seems inconsistent with that of 1, 2 [no spaces]. With f(10), g(10) the exponent 5 of g(10) wraps around the terminal line, and is thus
 not properly aligned with e - 1. (all this in a 80-column xterm)
 
+Issue created by migration from https://trac.sagemath.org/ticket/1166
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-18 23:17:37
+archive/issue_comments_007149.json:
+```json
+{
+    "body": "It looks like a newline at the end of the multi line expression of f(10) would fix the issue:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9, Release Date: 2007-12-16                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: f = (exp(x)-1)/(exp(x/2)+1)\nsage: g = exp(x/2)-1\nsage: print f(10.0), g(10.0)\n                               147.4131591025766                                147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1                                       5\n                                     e  - 1\nsage: print f(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1\nsage: print g(10)\n                                      5\n                                     e  - 1\nsage:\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-18T23:17:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7149",
+    "user": "mabshoff"
+}
+```
 
 It looks like a newline at the end of the multi line expression of f(10) would fix the issue:
 
@@ -74,14 +99,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_007150.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-21T11:38:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7150",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by zimmerma created at 2008-01-21 15:11:58
+archive/issue_comments_007151.json:
+```json
+{
+    "body": "[this is my first review, thus please take with care]\n\nI get with this patch applied in 2.10:\n\n```\nsage: f=(exp(x)-1)/(exp(x/2)+1)\nsage: g=exp(x/2)-1\nsage: print f(10.0), g(10.0)\n\n                               147.4131591025766 \n                               147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1 \n                                      5\n                                     e  - 1\n```\n\nThe output is much better, but I would expect:\n\n```\nsage: print f(10.0), g(10.0)\n\n                   147.4131591025766, 147.4131591025766\n```\n\nor\n\n```\nsage: print f(10.0), g(10.0)\n147.4131591025766 147.4131591025766\n```\n\nHowever, since this is an improvement, I give a positive review.",
+    "created_at": "2008-01-21T15:11:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7151",
+    "user": "zimmerma"
+}
+```
 
 [this is my first review, thus please take with care]
 
@@ -125,9 +174,20 @@ sage: print f(10.0), g(10.0)
 However, since this is an improvement, I give a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 22:57:13
+archive/issue_comments_007152.json:
+```json
+{
+    "body": "The potential solution to the adding an extra newlines in situations like\n\n```\nsage: print f(10.0), g(10.0)\n147.4131591025766 147.4131591025766\n```\n\nmight be that we need to check if the string returned from `f(10.0` contains a newline in which case we need to add the extra newline to separate the the two multiline outputs. If that is doable please open another ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-21T22:57:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7152",
+    "user": "mabshoff"
+}
+```
 
 The potential solution to the adding an extra newlines in situations like
 
@@ -143,15 +203,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 22:58:49
+archive/issue_comments_007153.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha1",
+    "created_at": "2008-01-21T22:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7153",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-21 22:58:49
+archive/issue_comments_007154.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-21T22:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7154",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

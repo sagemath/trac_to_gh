@@ -1,11 +1,21 @@
 # Issue 999: add optional sloccount script to sage-dist
 
-Issue created by migration from https://trac.sagemath.org/ticket/999
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-25 16:37:13
-
+archive/issues_000999.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nKeywords: sloccount sage-dist\n\nsloccount measures the total numbers of lines in a project and estimates the time as well as amount of money needed to create the project. It also creates nice html output - for an example see\n\nhttp://sage.math.washington.edu/home/mabshoff/2.8.9.rc1-sloccount.html\n\nIt would be nice to have an optional script that would automatically create the output for the whole sage project.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/999\n\n",
+    "created_at": "2007-10-25T16:37:13Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "add optional sloccount script to sage-dist",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/999",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Keywords: sloccount sage-dist
@@ -20,53 +30,134 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/999
+
+
+
+
 
 ---
 
-Comment by wdj created at 2007-10-25 16:51:30
+archive/issue_comments_006081.json:
+```json
+{
+    "body": "To include the GAP code which is written in GAP, you need to count the lines in the *.gi files\nas well. I don't know if you can exclude all lines beginning with a # or not (these would be\ncomments or documentation).",
+    "created_at": "2007-10-25T16:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6081",
+    "user": "wdj"
+}
+```
 
 To include the GAP code which is written in GAP, you need to count the lines in the *.gi files
 as well. I don't know if you can exclude all lines beginning with a # or not (these would be
 comments or documentation).
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-25 17:55:12
+archive/issue_comments_006082.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-25T17:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6082",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-03 02:18:58
+archive/issue_comments_006083.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-02-03T02:18:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6083",
+    "user": "mabshoff"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-13 12:27:05
+archive/issue_comments_006084.json:
+```json
+{
+    "body": "I don't think we need such a thing...",
+    "created_at": "2013-06-13T12:27:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6084",
+    "user": "jdemeyer"
+}
+```
 
 I don't think we need such a thing...
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-13 12:27:05
+archive/issue_comments_006085.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-06-13T12:27:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6085",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-13 12:27:11
+archive/issue_comments_006086.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-06-13T12:27:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6086",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-19 12:21:29
+archive/issue_comments_006087.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2013-06-19T12:21:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/999#issuecomment-6087",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: wontfix

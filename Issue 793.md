@@ -1,39 +1,99 @@
 # Issue 793: wrapper for hyperelliptic curve zeta functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/793
-
-Original creator: dmharvey
-
-Original creation time: 2007-10-02 19:32:58
-
+archive/issues_000793.json:
+```json
+{
+    "body": "Assignee: was\n\nEven though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/793\n\n",
+    "created_at": "2007-10-02T19:32:58Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "wrapper for hyperelliptic curve zeta functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/793",
+    "user": "dmharvey"
+}
+```
 Assignee: was
 
 Even though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/793
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2007-10-03 16:49:36
+archive/issue_comments_004765.json:
+```json
+{
+    "body": "see also #811",
+    "created_at": "2007-10-03T16:49:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4765",
+    "user": "dmharvey"
+}
+```
 
 see also #811
 
 
+
 ---
 
-Comment by kedlaya created at 2008-11-25 19:24:09
+archive/issue_comments_004766.json:
+```json
+{
+    "body": "See also #965. I've had several requests for this functionality, so it would be great if several of us could spend some time getting this ready for prime time.",
+    "created_at": "2008-11-25T19:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4766",
+    "user": "kedlaya"
+}
+```
 
 See also #965. I've had several requests for this functionality, so it would be great if several of us could spend some time getting this ready for prime time.
 
 
+
 ---
+
+archive/issue_comments_004767.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-17T19:17:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4767",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by dmharvey created at 2009-03-17 19:18:14
+archive/issue_comments_004768.json:
+```json
+{
+    "body": "Very basic wrapper attached. This is code by Nick Alexander and myself. Sample:\n\n\n```\nsage: R.<x> = PolynomialRing(GF(10007))\nsage: H = HyperellipticCurve(x^7 + x + 1)\nsage: time H.frobenius_polynomial()\nCPU times: user 1.62 s, sys: 0.01 s, total: 1.63 s\nWall time: 1.63 s\nx^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034\n```\n",
+    "created_at": "2009-03-17T19:18:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4768",
+    "user": "dmharvey"
+}
+```
 
 Very basic wrapper attached. This is code by Nick Alexander and myself. Sample:
 
@@ -49,18 +109,40 @@ x^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034
 
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-03-31 18:04:22
+archive/issue_comments_004769.json:
+```json
+{
+    "body": "Looks good to me.\n\nTested against Sage-3.4.1.alpha0.",
+    "created_at": "2009-03-31T18:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4769",
+    "user": "GeorgSWeber"
+}
+```
 
 Looks good to me.
 
 Tested against Sage-3.4.1.alpha0.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 21:41:43
+archive/issue_comments_004770.json:
+```json
+{
+    "body": "Several of the internal methods need doctests - the coverage of this patch is not even close to 100%.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T21:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4770",
+    "user": "mabshoff"
+}
+```
 
 Several of the internal methods need doctests - the coverage of this patch is not even close to 100%.
 
@@ -69,9 +151,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 22:54:46
+archive/issue_comments_004771.json:
+```json
+{
+    "body": "But at least the doctests that are there pass for me in my 3.4.1.rc0 merge tree.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T22:54:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4771",
+    "user": "mabshoff"
+}
+```
 
 But at least the doctests that are there pass for me in my 3.4.1.rc0 merge tree.
 
@@ -80,16 +173,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by dmharvey created at 2009-04-01 06:07:22
+archive/issue_comments_004772.json:
+```json
+{
+    "body": "Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?",
+    "created_at": "2009-04-01T06:07:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4772",
+    "user": "dmharvey"
+}
+```
 
 Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-01 06:18:23
+archive/issue_comments_004773.json:
+```json
+{
+    "body": "Replying to [comment:9 dmharvey]:\n> Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?\n\nTechnically yes, but I would not consider this the cleanest solution :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-01T06:18:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4773",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 dmharvey]:
 > Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?
@@ -101,16 +216,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by dmharvey created at 2009-04-01 08:10:07
+archive/issue_comments_004774.json:
+```json
+{
+    "body": "I consider them to be tested indirectly by the main function.",
+    "created_at": "2009-04-01T08:10:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4774",
+    "user": "dmharvey"
+}
+```
 
 I consider them to be tested indirectly by the main function.
 
 
+
 ---
 
-Comment by was created at 2009-04-01 12:50:33
+archive/issue_comments_004775.json:
+```json
+{
+    "body": "> I consider them to be tested indirectly by the main function. \n\nSo are you refusing to doctest your functions and expect this patch to sit in limbo into either somebody else does it for you or the policy of the sage project for the last two years changes?\n\n> Does this mean that if I combine all the functions into one megalithic \n> unreadable  function, it would pass review without writing any more doctests? \n\nNot from me. \n\n -- William",
+    "created_at": "2009-04-01T12:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4775",
+    "user": "was"
+}
+```
 
 > I consider them to be tested indirectly by the main function. 
 
@@ -124,16 +261,38 @@ Not from me.
  -- William
 
 
+
 ---
 
-Comment by dmharvey created at 2009-04-01 13:34:36
+archive/issue_comments_004776.json:
+```json
+{
+    "body": "I just noticed that the code does not take advantage of the symmetry of the zeta function and so uses a p-adic precision about twice as high as necessary. I withdraw the patch.",
+    "created_at": "2009-04-01T13:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4776",
+    "user": "dmharvey"
+}
+```
 
 I just noticed that the code does not take advantage of the symmetry of the zeta function and so uses a p-adic precision about twice as high as necessary. I withdraw the patch.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-04-01 18:35:26
+archive/issue_comments_004777.json:
+```json
+{
+    "body": "Unfortunate.\n\nThe code was excellently commented, in fact the comments of the internal functions were so good, it just slipped by me that the mandatory doctesting lines were missing. (Which IMHO are trivial to add in this patch.)\n\nAnd if it is difficult to find \"special\" doctests for internal functions, one always has the possibility to do (another slightly modified instance of) the \"outer\" computation as a test and write \"#implicit doctest\" as comment. This serves the intended purpose (and I strongly guess neither Michael, nor William, would object). All in all, another to-be-better-documented issue.\n\nWith regard to the p-adic precision, I'd say \"functionality first and optimizations later\" (the patch as-is is mathematically correct :-) ), but that's my own personal opinion.\n\nCheers,\ngsw",
+    "created_at": "2009-04-01T18:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4777",
+    "user": "GeorgSWeber"
+}
+```
 
 Unfortunate.
 
@@ -147,7 +306,20 @@ Cheers,
 gsw
 
 
+
 ---
+
+archive/issue_comments_004778.json:
+```json
+{
+    "body": "Attachment\n\nLet's try again. New patch should be applied on top of the old.\n\nGeorg: regarding the precision, I am preparing for a talk on Friday, and the slowdown caused by the p-adic precision overestimates actually made a big difference to the presentation.",
+    "created_at": "2009-04-01T19:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4778",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
@@ -156,9 +328,20 @@ Let's try again. New patch should be applied on top of the old.
 Georg: regarding the precision, I am preparing for a talk on Friday, and the slowdown caused by the p-adic precision overestimates actually made a big difference to the presentation.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-04-01 21:03:28
+archive/issue_comments_004779.json:
+```json
+{
+    "body": "SCORE devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py: 100% (6 of 6)\n\nLooks even better to me.\n\nAnd good luck for your presentation!\n\nCheers, gsw",
+    "created_at": "2009-04-01T21:03:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4779",
+    "user": "GeorgSWeber"
+}
+```
 
 SCORE devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py: 100% (6 of 6)
 
@@ -169,16 +352,38 @@ And good luck for your presentation!
 Cheers, gsw
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-01 23:54:00
+archive/issue_comments_004780.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-01T23:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4780",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-01 23:54:00
+archive/issue_comments_004781.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-01T23:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4781",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.4.1.rc0.
 

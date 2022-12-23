@@ -1,51 +1,133 @@
 # Issue 1536: jmol useable from notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/1536
-
-Original creator: robertwb
-
-Original creation time: 2007-12-16 10:09:18
-
+archive/issues_001536.json:
+```json
+{
+    "body": "Assignee: was\n\nDepends on #1516\n\nIssue created by migration from https://trac.sagemath.org/ticket/1536\n\n",
+    "created_at": "2007-12-16T10:09:18Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "jmol useable from notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1536",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 Depends on #1516
 
+Issue created by migration from https://trac.sagemath.org/ticket/1536
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2007-12-16 10:09:25
+archive/issue_comments_009806.json:
+```json
+{
+    "body": "Changing assignee from was to robertwb.",
+    "created_at": "2007-12-16T10:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9806",
+    "user": "robertwb"
+}
+```
 
 Changing assignee from was to robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2007-12-16 10:09:25
+archive/issue_comments_009807.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-16T10:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9807",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_009808.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-16T14:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9808",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-12-24 07:37:42
+archive/issue_comments_009809.json:
+```json
+{
+    "body": "Looks good to me.  Positive review.",
+    "created_at": "2007-12-24T07:37:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9809",
+    "user": "was"
+}
+```
 
 Looks good to me.  Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 16:23:48
+archive/issue_comments_009810.json:
+```json
+{
+    "body": "Merged in 2.9.2 via the bundle from #1665.",
+    "created_at": "2008-01-03T16:23:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9810",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.2 via the bundle from #1665.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-03 16:23:48
+archive/issue_comments_009811.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-03T16:23:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9811",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,19 +1,44 @@
 # Issue 990: no support for asinh/acosh etc. in symbolic expressions
 
-Issue created by migration from https://trac.sagemath.org/ticket/990
-
-Original creator: moretti
-
-Original creation time: 2007-10-25 01:17:12
-
+archive/issues_000990.json:
+```json
+{
+    "body": "Assignee: was\n\nAdd support for inverse hyperbolic functions in Sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/990\n\n",
+    "created_at": "2007-10-25T01:17:12Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "no support for asinh/acosh etc. in symbolic expressions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/990",
+    "user": "moretti"
+}
+```
 Assignee: was
 
 Add support for inverse hyperbolic functions in Sage
 
+Issue created by migration from https://trac.sagemath.org/ticket/990
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-11-30 23:32:43
+archive/issue_comments_006040.json:
+```json
+{
+    "body": "This was fixed in an earlier patch.\n\n\n```\nsage: asinh(I)\nI*pi/2\nsage: asinh(2.0)\n1.44363547517881\nsage: acosh(2.0)\n1.31695789692482\nsage: atanh(1.0)\n+infinity\nsage: atanh(0.2)\n0.202732554054082\n```\n",
+    "created_at": "2007-11-30T23:32:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6040",
+    "user": "mhansen"
+}
+```
 
 This was fixed in an earlier patch.
 
@@ -33,22 +58,55 @@ sage: atanh(0.2)
 
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 23:32:43
+archive/issue_comments_006041.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-11-30T23:32:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6041",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 23:32:43
+archive/issue_comments_006042.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-30T23:32:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6042",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-11-30 23:34:28
+archive/issue_comments_006043.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-30T23:34:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6043",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

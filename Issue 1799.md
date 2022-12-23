@@ -1,32 +1,81 @@
 # Issue 1799: [with patch, needs review] fix spelling errors in qqbar.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/1799
-
-Original creator: cwitty
-
-Original creation time: 2008-01-17 03:44:45
-
+archive/issues_001799.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nI confused \"principle\" and \"principal\".  The attached patch has the fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1799\n\n",
+    "created_at": "2008-01-17T03:44:45Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix spelling errors in qqbar.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1799",
+    "user": "cwitty"
+}
+```
 Assignee: cwitty
 
 I confused "principle" and "principal".  The attached patch has the fix.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1799
+
+
+
+
 
 ---
+
+archive/issue_comments_011381.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-01-17T05:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1799",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1799#issuecomment-11381",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-17 14:22:42
+archive/issue_comments_011382.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-17T14:22:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1799",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1799#issuecomment-11382",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-17 14:22:42
+archive/issue_comments_011383.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha5",
+    "created_at": "2008-01-17T14:22:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1799",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1799#issuecomment-11383",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha5

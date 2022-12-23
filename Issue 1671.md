@@ -1,11 +1,21 @@
 # Issue 1671: doctest: fix shapes.pyx fallout from #1666
 
-Issue created by migration from https://trac.sagemath.org/ticket/1671
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-03 17:26:58
-
+archive/issues_001671.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nDue to Robert's work (#1666) I get a bunch of doctest failures like the following:\n\n```\nsage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py  \n**********************************************************************\nFile \"cubegroup.py\", line 901:\n    sage: C.show3d()\nExpected nothing\nGot:\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n    0.00166666666667\n**********************************************************************\n```\n\nI tracked this down to a print statement in `shapes.pyx`. I uncommented that line which fixes this issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1671\n\n",
+    "created_at": "2008-01-03T17:26:58Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "doctest: fix shapes.pyx fallout from #1666",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1671",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Due to Robert's work (#1666) I get a bunch of doctest failures like the following:
@@ -38,15 +48,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1671
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-03 17:27:58
+archive/issue_comments_010610.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-03T17:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1671#issuecomment-10610",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_010611.json:
+```json
+{
+    "body": "Attachment\n\nApplied to 2.9.2.alpha0.",
+    "created_at": "2008-01-03T17:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1671",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1671#issuecomment-10611",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

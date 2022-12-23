@@ -1,11 +1,21 @@
 # Issue 1401: deprecate A[n] for n a matrix (easy to implement usability improvement)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1401
-
-Original creator: was
-
-Original creation time: 2007-12-04 23:57:36
-
+archive/issues_001401.json:
+```json
+{
+    "body": "Assignee: was\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\n\nInstead Sage should do this:\n\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
+    "created_at": "2007-12-04T23:57:36Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "deprecate A[n] for n a matrix (easy to implement usability improvement)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1401",
+    "user": "was"
+}
+```
 Assignee: was
 
 Sage currently works this way:
@@ -41,56 +51,152 @@ Where boom explains that one should use a.row(...) to get a row, or a[i,j] to ge
 
 This confuses the heck out of TONS of people!!!  (Not me, but others.)
 
+Issue created by migration from https://trac.sagemath.org/ticket/1401
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-12-06 21:17:00
+archive/issue_comments_009034.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-06T21:17:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9034",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 21:17:00
+archive/issue_comments_009035.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2007-12-06T21:17:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9035",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
+
+archive/issue_comments_009036.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-06T23:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9036",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 23:15:55
+archive/issue_comments_009037.json:
+```json
+{
+    "body": "Patch attached.",
+    "created_at": "2007-12-06T23:15:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9037",
+    "user": "mhansen"
+}
+```
 
 Patch attached.
 
 
+
 ---
 
-Comment by was created at 2007-12-15 12:57:15
+archive/issue_comments_009038.json:
+```json
+{
+    "body": "I just realized that a much better solution is to finish implementing immutable vectors and make the return of A[n] be an immutable row.  It accomplishes the same thing and is more usable.  So I did this.\n\nThat said, the above patch is fine -- using .row(...) all over in code is fine and faster.",
+    "created_at": "2007-12-15T12:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9038",
+    "user": "was"
+}
+```
 
 I just realized that a much better solution is to finish implementing immutable vectors and make the return of A[n] be an immutable row.  It accomplishes the same thing and is more usable.  So I did this.
 
 That said, the above patch is fine -- using .row(...) all over in code is fine and faster.
 
 
+
 ---
+
+archive/issue_comments_009039.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-12-15T12:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9039",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 13:32:06
+archive/issue_comments_009040.json:
+```json
+{
+    "body": "Merged in 2.9.rc0.",
+    "created_at": "2007-12-15T13:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9040",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.9.rc0.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-15 13:32:06
+archive/issue_comments_009041.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-15T13:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9041",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

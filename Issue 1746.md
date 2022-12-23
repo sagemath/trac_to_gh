@@ -1,11 +1,21 @@
 # Issue 1746: add p-norm as a method to vectors (probably very easy)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1746
-
-Original creator: was
-
-Original creation time: 2008-01-10 10:44:22
-
+archive/issues_001746.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
+    "created_at": "2008-01-10T10:44:22Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "add p-norm as a method to vectors (probably very easy)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1746",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -41,17 +51,43 @@ sage: pnorm(vector([a, b, c, d]), p)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1746
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-10 10:44:45
+archive/issue_comments_011024.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-01-10T10:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11024",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jkantor created at 2008-01-10 10:55:07
+archive/issue_comments_011025.json:
+```json
+{
+    "body": "for RDF and CDF vectors\n\n```\nfrom numpy import linalg\nv=vector(RDF,[1,2,3])\nlinalg.norm(v,5)\n```\n\n3.0773848853940629",
+    "created_at": "2008-01-10T10:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11025",
+    "user": "jkantor"
+}
+```
 
 for RDF and CDF vectors
 
@@ -64,37 +100,94 @@ linalg.norm(v,5)
 3.0773848853940629
 
 
+
 ---
 
-Comment by jkantor created at 2008-01-10 10:57:16
+archive/issue_comments_011026.json:
+```json
+{
+    "body": "In the above example it should be \n\n`linalg.norm(v.numpy(),5)`",
+    "created_at": "2008-01-10T10:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11026",
+    "user": "jkantor"
+}
+```
 
 In the above example it should be 
 
 `linalg.norm(v.numpy(),5)`
 
 
+
 ---
+
+archive/issue_comments_011027.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-10T15:05:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11027",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by schilly created at 2008-01-11 21:34:05
+archive/issue_comments_011028.json:
+```json
+{
+    "body": "does this also work for matrices? matrix norms are at least equally important!",
+    "created_at": "2008-01-11T21:34:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11028",
+    "user": "schilly"
+}
+```
 
 does this also work for matrices? matrix norms are at least equally important!
 
 
+
 ---
 
-Comment by was created at 2008-01-11 21:37:31
+archive/issue_comments_011029.json:
+```json
+{
+    "body": "What is the defn of matrix p-norms?  Is it the same?",
+    "created_at": "2008-01-11T21:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11029",
+    "user": "was"
+}
+```
 
 What is the defn of matrix p-norms?  Is it the same?
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-01-12 09:36:19
+archive/issue_comments_011030.json:
+```json
+{
+    "body": "I agree that matrix norms are important.  However, unlike the case of vectors, where the p-norm is rather universally agreed upon, there are a bunch of different definitions for norms on matrices, see\nhttp://en.wikipedia.org/wiki/Matrix_norm\nThere are at least 3 different things denoted as p-norm there.\n\nI think it's important for us to do this, but trickier than the vector case, so I've made it into track #1763.\n\nIn the meantime, it would be great if someone reviewed the current patch.",
+    "created_at": "2008-01-12T09:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11030",
+    "user": "AlexGhitza"
+}
+```
 
 I agree that matrix norms are important.  However, unlike the case of vectors, where the p-norm is rather universally agreed upon, there are a bunch of different definitions for norms on matrices, see
 http://en.wikipedia.org/wiki/Matrix_norm
@@ -105,15 +198,37 @@ I think it's important for us to do this, but trickier than the vector case, so 
 In the meantime, it would be great if someone reviewed the current patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-20 00:51:53
+archive/issue_comments_011031.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.alpha0",
+    "created_at": "2008-01-20T00:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11031",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-20 00:51:53
+archive/issue_comments_011032.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-20T00:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11032",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

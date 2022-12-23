@@ -1,11 +1,21 @@
 # Issue 1246: mpfi-1.3.4-rc3.p9 fails to build on x86_64 SuSE 10.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/1246
-
-Original creator: mabshoff
-
-Original creation time: 2007-11-23 12:38:25
-
+archive/issues_001246.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAlexander Dreyer reported:\n\n```\n****************************************************\nGCC Version\ngcc -v\nEs werden eingebaute Spezifikationen verwendet.\nZiel: x86_64-suse-linux\nKonfiguriert mit: ../configure --enable-threads=posix --prefix=/usr --\nwith-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/\nshare/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-\nlanguages=c,c++,objc,fortran,obj-c++,java,ada --enable-\nchecking=release --with-gxx-include-dir=/usr/include/c++/4.1.2 --\nenable-ssp --disable-libssp --disable-libgcj --with-slibdir=/lib64 --\nwith-system-zlib --enable-shared --enable-__cxa_atexit --enable-\nlibstdcxx-allocator=new --program-suffix= --enable-version-specific-\nruntime-libs --without-system-libunwind --with-cpu=generic --\nhost=x86_64-suse-linux\nThread-Modell: posix\ngcc-Version 4.1.2 20070115 (prerelease) (SUSE Linux)\n****************************************************\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking whether build environment is sane... yes\n/u/herc/dreyer/tmp/sage-2.8.13/spkg/build/mpfi-1.3.4-rc3.p9/src/\nmissing: Unknown `--run' option\nTry `/u/herc/dreyer/tmp/sage-2.8.13/spkg/build/mpfi-1.3.4-rc3.p9/src/\nmissing --help' for more information\nconfigure: WARNING: `missing' script is too old or missing\nchecking for a thread-safe mkdir -p... /bin/mkdir -p\nchecking for gawk... gawk\nchecking whether make sets $(MAKE)... yes\nchecking for gcc... gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc accepts -g... yes\nchecking for gcc option to accept ISO C89... none needed\nchecking for style of include used by make... GNU\nchecking dependency style of gcc... gcc3\nchecking for ranlib... ranlib\nchecking how to run the C preprocessor... gcc -E\nchecking for grep that handles long lines and -e... /usr/bin/grep\nchecking for egrep... /usr/bin/grep -E\nchecking for ANSI C header files... yes\nchecking for sys/types.h... yes\nchecking for sys/stat.h... yes\nchecking for stdlib.h... yes\nchecking for string.h... yes\nchecking for memory.h... yes\nchecking for strings.h... yes\nchecking for inttypes.h... yes\nchecking for stdint.h... yes\nchecking for unistd.h... yes\nchecking for string.h... (cached) yes\nchecking for gmp.h... yes\nchecking for valid GMP... yes\nchecking for mpfr.h... yes\nchecking for main in -lmpfr... yes\nchecking for main in -lgmp... no\nconfigure: error: Library GMP not found\nError configuring mpfi \n```\n\n\nSee also http://groups.google.com/group/sage-support/t/8e446357a1d15a8a\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1246\n\n",
+    "created_at": "2007-11-23T12:38:25Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "mpfi-1.3.4-rc3.p9 fails to build on x86_64 SuSE 10.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1246",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Alexander Dreyer reported:
@@ -81,17 +91,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1246
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-11-23 12:51:12
+archive/issue_comments_007808.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-11-23T12:51:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1246#issuecomment-7808",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-24 16:16:28
+archive/issue_comments_007809.json:
+```json
+{
+    "body": "Alexander Dreyer reports:\n\n```\nMeanwhile, I got sage compiled by changing the configure line in spkg-\ninstall of mpfi-1.3.4-rc3.p9 to\n./configure --prefix=\"$SAGE_LOCAL\" --with-mpfr-dir=\"$SAGE_LOCAL\"\nCFLAGS=\"-fPIC\"\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-24T16:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1246#issuecomment-7809",
+    "user": "mabshoff"
+}
+```
 
 Alexander Dreyer reports:
 
@@ -108,9 +144,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-24 17:53:24
+archive/issue_comments_007810.json:
+```json
+{
+    "body": "Ok, at \n\nhttp://sage.math.washington.edu/home/mabshoff/mpfi-1.3.4-rc3.p10.spkg\n\nyou can find an spkg that includes this fix.\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-24T17:53:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1246#issuecomment-7810",
+    "user": "mabshoff"
+}
+```
 
 Ok, at 
 
@@ -123,15 +170,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-25 07:53:06
+archive/issue_comments_007811.json:
+```json
+{
+    "body": "Merged in 2.8.14.rc2.",
+    "created_at": "2007-11-25T07:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1246#issuecomment-7811",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.14.rc2.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-25 07:53:06
+archive/issue_comments_007812.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-25T07:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1246#issuecomment-7812",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

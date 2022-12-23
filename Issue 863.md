@@ -1,25 +1,61 @@
 # Issue 863: trac -- make it not crash, or when it does, make it autorestart!!
 
-Issue created by migration from https://trac.sagemath.org/ticket/863
-
-Original creator: was
-
-Original creation time: 2007-10-12 19:04:35
-
+archive/issues_000863.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/863\n\n",
+    "created_at": "2007-10-12T19:04:35Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "trac -- make it not crash, or when it does, make it autorestart!!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/863",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/863
+
+
+
+
 
 ---
 
-Comment by was created at 2007-10-12 19:04:41
+archive/issue_comments_005329.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to packages.",
+    "created_at": "2007-10-12T19:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/863",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/863#issuecomment-5329",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to packages.
 
 
+
 ---
 
-Comment by was created at 2007-10-19 21:00:20
+archive/issue_comments_005330.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-19T21:00:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/863",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/863#issuecomment-5330",
+    "user": "was"
+}
+```
 
 Resolution: fixed

@@ -1,32 +1,81 @@
 # Issue 970: ntl.GF2E
 
-Issue created by migration from https://trac.sagemath.org/ticket/970
-
-Original creator: malb
-
-Original creation time: 2007-10-22 22:42:35
-
+archive/issues_000970.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThe attached patches implement a partial rewrite of ntl.GF2E to reflect the design decisions made for the ntl interface. \n\nThis patch depends on #966 to be applied.\n\nIssue created by migration from https://trac.sagemath.org/ticket/970\n\n",
+    "created_at": "2007-10-22T22:42:35Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "ntl.GF2E",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/970",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 The attached patches implement a partial rewrite of ntl.GF2E to reflect the design decisions made for the ntl interface. 
 
 This patch depends on #966 to be applied.
 
+Issue created by migration from https://trac.sagemath.org/ticket/970
+
+
+
+
 
 ---
+
+archive/issue_comments_005921.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-22T22:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5921",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 21:12:46
+archive/issue_comments_005922.json:
+```json
+{
+    "body": "applied to 2.8.9.alpha0",
+    "created_at": "2007-10-23T21:12:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5922",
+    "user": "malb"
+}
+```
 
 applied to 2.8.9.alpha0
 
 
+
 ---
 
-Comment by malb created at 2007-10-23 21:12:46
+archive/issue_comments_005923.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-23T21:12:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5923",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

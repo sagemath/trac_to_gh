@@ -1,11 +1,21 @@
 # Issue 1383: Modular Arithmetic Error
 
-Issue created by migration from https://trac.sagemath.org/ticket/1383
-
-Original creator: trixb4kidz
-
-Original creation time: 2007-12-03 17:32:25
-
+archive/issues_001383.json:
+```json
+{
+    "body": "Assignee: trixb4kidz\n\nI recently discovered that the following commands cause a segfault:\n\n\n```\nz = Mod(2, 256)\nz^8\n```\n\n\nI have already discovered a solution to this problem, which I will post shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1383\n\n",
+    "created_at": "2007-12-03T17:32:25Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Modular Arithmetic Error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1383",
+    "user": "trixb4kidz"
+}
+```
 Assignee: trixb4kidz
 
 I recently discovered that the following commands cause a segfault:
@@ -19,10 +29,25 @@ z^8
 
 I have already discovered a solution to this problem, which I will post shortly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1383
+
+
+
+
 
 ---
 
-Comment by trixb4kidz created at 2007-12-03 17:44:23
+archive/issue_comments_008878.json:
+```json
+{
+    "body": "I haven't figured out Mercurial yet, so I'll post the fix here.  I will officially submit a patch later today.\n\nThe bug is in the class `IntegerMod_gmp` in `sage/rings/integer_mod.pyx` .  The function `mod_pow_int` needs to be modified as follows:\n\n\n\n\n```\n\ncdef int_fast32_t mod_pow_int(int_fast32_t base, int_fast32_t exp, int_fast32_t n):\n    \"\"\"\n    Returns base^exp mod n\n    For use in IntegerMod_int\n    AUTHOR:\n      -- Robert Bradshaw\n    \"\"\"\n    cdef int_fast32_t prod, pow2\n    if exp <= 5:\n        if exp == 0: return 1\n        if exp == 1: return base\n        prod = base * base % n\n        if exp == 2: return prod\n        if exp == 3: return (prod * base) % n\n        if exp == 4: return (prod * prod) % n\n\n    pow2 = base\n    if exp % 2: prod = base\n    else: prod = 1\n    exp = exp >> 1\n    while(exp != 0):\n        pow2 = pow2 * pow2\n        if pow2 >= INTEGER_MOD_INT32_LIMIT: pow2 = pow2 % n\n        if exp % 2:\n            prod = prod * pow2\n\n            if prod >= INTEGER_MOD_INT32_LIMIT: prod = prod % n\n        exp = exp >> 1\n\n    #######################################################\n    #    THIS IS THE BUG.  THIS SHOULD READ prod >= n.    #\n    #######################################################\n    if prod > n:\n        prod = prod % n\n    return prod\n\n\n```\n",
+    "created_at": "2007-12-03T17:44:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1383#issuecomment-8878",
+    "user": "trixb4kidz"
+}
+```
 
 I haven't figured out Mercurial yet, so I'll post the fix here.  I will officially submit a patch later today.
 
@@ -74,9 +99,20 @@ cdef int_fast32_t mod_pow_int(int_fast32_t base, int_fast32_t exp, int_fast32_t 
 
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-03 19:55:39
+archive/issue_comments_008879.json:
+```json
+{
+    "body": "I applied the following patch and doctests pass:\n\n```\n# HG changeset patch\n# User mabshoff@sage.math.washington.edu\n# Date 1196711612 28800\n# Node ID 612d5a72a9e1a9c4eb90a0c746da5a358882b5a0\n# Parent  f6137fb146cb310be74c0ddb22faa3ee5eaa71a4\nFix modp arithmetic bug [fix by trixb4kidz], added doctest\n\ndiff -r f6137fb146cb -r 612d5a72a9e1 sage/rings/integer_mod.pyx\n--- a/sage/rings/integer_mod.pyx        Mon Dec 03 11:26:06 2007 -0800\n+++ b/sage/rings/integer_mod.pyx        Mon Dec 03 11:53:32 2007 -0800\n@@ -1836,6 +1836,12 @@ cdef int_fast32_t mod_pow_int(int_fast32\n     \"\"\"\n     Returns base^exp mod n\n     For use in IntegerMod_int\n+\n+    EXAMPLES:\n+       sage: z = Mod(2, 256)\n+       sage: z^8\n+       0\n+\n     AUTHOR:\n       -- Robert Bradshaw\n     \"\"\"\n@@ -1860,7 +1866,7 @@ cdef int_fast32_t mod_pow_int(int_fast32\n             if prod >= INTEGER_MOD_INT32_LIMIT: prod = prod % n\n         exp = exp >> 1\n\n-    if prod > n:\n+    if prod >= n:\n         prod = prod % n\n     return prod\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-03T19:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1383#issuecomment-8879",
+    "user": "mabshoff"
+}
+```
 
 I applied the following patch and doctests pass:
 
@@ -120,15 +156,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-03 19:58:41
+archive/issue_comments_008880.json:
+```json
+{
+    "body": "Merged in 2.8.15.rc1.",
+    "created_at": "2007-12-03T19:58:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1383#issuecomment-8880",
+    "user": "mabshoff"
+}
+```
 
 Merged in 2.8.15.rc1.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-03 19:58:41
+archive/issue_comments_008881.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-12-03T19:58:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1383#issuecomment-8881",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

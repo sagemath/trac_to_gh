@@ -1,11 +1,21 @@
 # Issue 1026: memleak in linbox's gmp++_int_io.C
 
-Issue created by migration from https://trac.sagemath.org/ticket/1026
-
-Original creator: mabshoff
-
-Original creation time: 2007-10-29 04:17:24
-
+archive/issues_001026.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nKeywords: LinBox\n\nOmega says:\n\n```\n==4541== Loss Record 193: Leaked 171 (0xAB) bytes in 32 blocks\n==4541==    at 0x1235298A: Integer::operator std::string() const (gmp++_int_io.C:53)\n==4541==    by 0x12237B33: std::vector<LinBox::GivPolynomial<Integer>*, std::allocator<LinBox::GivPolynomial<Integer>*> >& L\ninBox::GivPolynomialRing<LinBox::UnparametricField<Integer>, Dense>::factor<std::vector<LinBox::GivPolynomial<Integer>*, std\n::allocator<LinBox::GivPolynomial<Integer>*> > >(std::vector<LinBox::GivPolynomial<Integer>*, std::allocator<LinBox::GivPoly\nnomial<Integer>*> >, std::vector<unsigned long, std::allocator<unsigned long> >&, LinBox::GivPolynomial<Integer> const&) (gi\nvaro-polynomial.h:68)\n==4541==    by 0x12350688: LinBox::GivPolynomial<Integer>& LinBox::cia<LinBox::GivPolynomial<Integer>, LinBox::DenseMatrix<L\ninBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<Integer\n> > const&, LinBox::BlasEliminationTraits const&) (cia.h:54)\n==4541==    by 0x12350F77: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::DenseMat\nrix<LinBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::BlasEliminationTraits const&) (charpoly.h:188)\n==4541==    by 0x12350FB9: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::Unparame\ntricField<Integer>, LinBox::RingCategories::IntegerTag>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::Unparam\netricField<Integer> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::HybridSpecifier const&) (charpoly.h:127)\n==4541==    by 0x12350FED: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer>, LinBox::HybridSpecifier>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinB\nox::UnparametricField<Integer> > const&, LinBox::HybridSpecifier const&) (charpoly.h:81)\n==4541==    by 0x12351019: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer> >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&) (charpoly.h:94)\n==4541==    by 0x12237F4D: linbox_integer_dense_charpoly (linbox_wrap.cpp:309)\n==4541==    by 0x11FC85B9: __pyx_f_4sage_4libs_6linbox_6linbox_20Linbox_integer_dense__poly(_object*, _object*) (linbox.cpp:\n2972)\n==4541==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4541==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4541==    by 0x11FC73C2: __pyx_f_4sage_4libs_6linbox_6linbox_20Linbox_integer_dense_charpoly(_object*, _object*) (linbox.c\npp:2840)\n==4541==  Blocks allocated\n==4541==    at 0x4A1B674: operator new[](unsigned long) (vg_replace_malloc.c:271)\n==4541==    by 0x123528EA: Integer::operator std::string() const (gmp++_int_io.C:48)\n==4541==    by 0x12237B33: std::vector<LinBox::GivPolynomial<Integer>*, std::allocator<LinBox::GivPolynomial<Integer>*> >& L\ninBox::GivPolynomialRing<LinBox::UnparametricField<Integer>, Dense>::factor<std::vector<LinBox::GivPolynomial<Integer>*, std\n::allocator<LinBox::GivPolynomial<Integer>*> > >(std::vector<LinBox::GivPolynomial<Integer>*, std::allocator<LinBox::GivPoly\nnomial<Integer>*> >, std::vector<unsigned long, std::allocator<unsigned long> >&, LinBox::GivPolynomial<Integer> const&) (gi\nvaro-polynomial.h:68)\n==4541==    by 0x12350688: LinBox::GivPolynomial<Integer>& LinBox::cia<LinBox::GivPolynomial<Integer>, LinBox::DenseMatrix<L\ninBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<Integer\n> > const&, LinBox::BlasEliminationTraits const&) (cia.h:54)\n==4541==    by 0x12350F77: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::DenseMat\nrix<LinBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::BlasEliminationTraits const&) (charpoly.h:188)\n==4541==    by 0x12350FB9: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::Unparame\ntricField<Integer>, LinBox::RingCategories::IntegerTag>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::Unparam\netricField<Integer> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::HybridSpecifier const&) (charpoly.h:127)\n==4541==    by 0x12350FED: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer>, LinBox::HybridSpecifier>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinB\nox::UnparametricField<Integer> > const&, LinBox::HybridSpecifier const&) (charpoly.h:81)\n==4541==    by 0x12351019: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer> >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&) (charpoly.h:94)\n==4541==    by 0x12237F4D: linbox_integer_dense_charpoly (linbox_wrap.cpp:309)\n==4541==    by 0x11FC85B9: __pyx_f_4sage_4libs_6linbox_6linbox_20Linbox_integer_dense__poly(_object*, _object*) (linbox.cpp:\n2972)\n```\n\n\nI will post an updated LinBox.spkg with two small additional tweaks shortly.\n\nbefore the patch:\n\n```\n==15811== LEAK SUMMARY:\n==15811==    definitely lost: 406,088 bytes in 5,792 blocks.\n==15811==    indirectly lost: 415,504 bytes in 7,199 blocks.\n==15811==      possibly lost: 382,110 bytes in 1,198 blocks.\n==15811==    still reachable: 93,391,247 bytes in 1,343,745 blocks.\n==15811==         suppressed: 0 bytes in 0 blocks.\n```\n\nwith the patch:\n\n```\n==19741== LEAK SUMMARY:\n==19741==    definitely lost: 11,608 bytes in 352 blocks.\n==19741==    indirectly lost: 286,560 bytes in 390 blocks.\n==19741==      possibly lost: 463,342 bytes in 879 blocks.\n==19741==    still reachable: 71,109,048 bytes in 1,285,713 blocks.\n==19741==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1026\n\n",
+    "created_at": "2007-10-29T04:17:24Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "memleak in linbox's gmp++_int_io.C",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1026",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Keywords: LinBox
@@ -100,17 +110,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1026
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-29 04:17:45
+archive/issue_comments_006273.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-10-29T04:17:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1026",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1026#issuecomment-6273",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 04:37:40
+archive/issue_comments_006274.json:
+```json
+{
+    "body": "For the new spkg check out\n\nhttp://sage.math.washington.edu/home/mabshoff/linbox-20070915.p1.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T04:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1026",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1026#issuecomment-6274",
+    "user": "mabshoff"
+}
+```
 
 For the new spkg check out
 
@@ -121,15 +157,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:21:40
+archive/issue_comments_006275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-11-01T10:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1026",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1026#issuecomment-6275",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-01 10:21:40
+archive/issue_comments_006276.json:
+```json
+{
+    "body": "applied to 2.8.11.alpha0",
+    "created_at": "2007-11-01T10:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1026",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1026#issuecomment-6276",
+    "user": "mabshoff"
+}
+```
 
 applied to 2.8.11.alpha0

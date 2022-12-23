@@ -1,11 +1,21 @@
 # Issue 997: when installing sage and when installing sage binaries should do some sort of touch to avoid unecessary rebuilds
 
-Issue created by migration from https://trac.sagemath.org/ticket/997
-
-Original creator: was
-
-Original creation time: 2007-10-25 06:37:32
-
+archive/issues_000997.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nA command like\n\n```\nfind . -type f | xargs touch\n```\n\nwhich will touch all files (without spaces) in all subdirectories\nmay be useful.\n\nSorry this ticket is somewhat vague.  The point is mainly that\n\"sage -br\" causes rebuilding everything too often, e.g., after\nextracting a binary, or always if your machine has a huge clock skew, e..g, if your machine things it is a few days before the\ntimestamps on a release that you just downloaded or installed. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/997\n\n",
+    "created_at": "2007-10-25T06:37:32Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "when installing sage and when installing sage binaries should do some sort of touch to avoid unecessary rebuilds",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/997",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 A command like
@@ -24,17 +34,43 @@ timestamps on a release that you just downloaded or installed.
 
 William
 
+Issue created by migration from https://trac.sagemath.org/ticket/997
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-10-29 07:24:44
+archive/issue_comments_006071.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-10-29T07:24:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/997",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/997#issuecomment-6071",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2007-10-29 07:24:44
+archive/issue_comments_006072.json:
+```json
+{
+    "body": "\n```\n[08:19] <mabshoff> wstein: didn't you do something like #997?\n[08:19] <wstein> yes, but I had to revert what I did do, which was really dumb.\n[08:19] <wstein> You can close that as invalid.\n```\n\nCheers,\n\nMichael",
+    "created_at": "2007-10-29T07:24:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/997",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/997#issuecomment-6072",
+    "user": "mabshoff"
+}
+```
 
 
 ```

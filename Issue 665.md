@@ -1,11 +1,21 @@
 # Issue 665: notebook() failure under VMware Player
 
-Issue created by migration from https://trac.sagemath.org/ticket/665
-
-Original creator: jvoight
-
-Original creation time: 2007-09-16 04:32:43
-
+archive/issues_000665.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCan't get notebook() to run on my Windows XP machine under VMware Player.  I downloaded SAGE and VMware Player; at the sage prompt did an upgrade() (to 2.8.4.2, everything seemed to go swimmingly); then tried notebook() and it hangs at:\n\nGenerating SSL certificate for server...\nUsing certtool to generate key\ncerttool --generate-privkey --outfile /home/sage/.sage/dsage/cacert.pem\nGenerating a private key...\nGenerating a 1024 bit RSA private key...\n\nWhen I Ctrl-C twice, it streams by and the only part of the scrollback I can read is:\n\n    record = _fixed_getinnerframes(etb, context,self.tb_offset)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/IPython/ultraTB.py\", l\nine 124, in _fixed_getinnerframes\n    records  = inspect.getinnerframes(etb, context)\n  File \"/usr/local/sage/local/lib/python2.5/inspect.py\", line 877, in getinnerfr\names\n    framelist.append((tb.tb_frame,) + getframinfo(tb, context))\n  File \"/usr/local/sage/local/lib/python2.5/inspect.py\", line 837, in getframin\nfo\n    filename = getsourcefile(frame) or getfile(frame)\n  File \"/usr/local/sage/local/lib/python2.5/inspect.py\", line 393, in getsourcef\nile\n    if hasattr(getmodule(object, filename), '__loader__'):\n  File \"/usr/local/sage/local/lib/python2.5/inspect.py\", line 436, in getmodule\n    os.path.realpath(f)] = module.__name__\n  File \"/usr/local/sage/local/lib/python2.5/posixpath.py\", line 421, in realpath\n    if islink(component);\n  File \"/usr/local/sage/local/lib/python2.5/posixpath.py\", line 159, in islink\n    st = os.lstat(path)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/interfaces/get_si\ngs.py\", line 8, in my_sigint\n    raise KeyboardInterrupt\nKeyboardInterrupt\n\nUnfortunately, your original traceback can not be constructed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/665\n\n",
+    "created_at": "2007-09-16T04:32:43Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook() failure under VMware Player",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/665",
+    "user": "jvoight"
+}
+```
 Assignee: boothby
 
 Can't get notebook() to run on my Windows XP machine under VMware Player.  I downloaded SAGE and VMware Player; at the sage prompt did an upgrade() (to 2.8.4.2, everything seemed to go swimmingly); then tried notebook() and it hangs at:
@@ -46,24 +56,61 @@ Unfortunately, your original traceback can not be constructed.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/665
+
+
+
+
 
 ---
 
-Comment by was created at 2007-09-21 00:18:18
+archive/issue_comments_003451.json:
+```json
+{
+    "body": "Changing assignee from boothby to was.",
+    "created_at": "2007-09-21T00:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/665",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3451",
+    "user": "was"
+}
+```
 
 Changing assignee from boothby to was.
 
 
+
 ---
 
-Comment by was created at 2007-09-21 00:19:10
+archive/issue_comments_003452.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-21T00:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/665",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3452",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-09-21 00:19:10
+archive/issue_comments_003453.json:
+```json
+{
+    "body": "Start the SAGE console and type\n\n```\n  sage: notebook.setup()\n```\n",
+    "created_at": "2007-09-21T00:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/665",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3453",
+    "user": "was"
+}
+```
 
 Start the SAGE console and type
 

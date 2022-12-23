@@ -1,11 +1,21 @@
 # Issue 1778: plot() does not follow the same interval range conventions as plot3d()
 
-Issue created by migration from https://trac.sagemath.org/ticket/1778
-
-Original creator: moretti
-
-Original creation time: 2008-01-14 22:58:12
-
+archive/issues_001778.json:
+```json
+{
+    "body": "Assignee: moretti\n\nKeywords: plotting, plot3d, plot\n\nsage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))\n\nis valid, however, to do a 2d plot, you use the syntax\n\nsage: plot(x^2, x, -2, 2).\n\nI spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) syntax for 2d plotting and introduce a new preferred syntax:\n\nsage: plot(x^2, (x, -2, 2))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1778\n\n",
+    "created_at": "2008-01-14T22:58:12Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "plot() does not follow the same interval range conventions as plot3d()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1778",
+    "user": "moretti"
+}
+```
 Assignee: moretti
 
 Keywords: plotting, plot3d, plot
@@ -20,29 +30,81 @@ I spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) synt
 
 sage: plot(x^2, (x, -2, 2))
 
+Issue created by migration from https://trac.sagemath.org/ticket/1778
+
+
+
+
 
 ---
+
+archive/issue_comments_011254.json:
+```json
+{
+    "body": "Attachment\n\nIgnore the previous patch, it does not have all the required changes.",
+    "created_at": "2008-01-15T00:24:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11254",
+    "user": "moretti"
+}
+```
 
 Attachment
 
 Ignore the previous patch, it does not have all the required changes.
 
 
+
 ---
+
+archive/issue_comments_011255.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-15T00:24:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11255",
+    "user": "moretti"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by moretti created at 2008-01-15 00:34:49
+archive/issue_comments_011256.json:
+```json
+{
+    "body": "I implemented this in the attached. It makes both the old and new style of plot() syntax valid. However the documentation mentions that plot(x^2, (x, a, b)) is the preferred syntax. Please test it out.",
+    "created_at": "2008-01-15T00:34:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11256",
+    "user": "moretti"
+}
+```
 
 I implemented this in the attached. It makes both the old and new style of plot() syntax valid. However the documentation mentions that plot(x^2, (x, a, b)) is the preferred syntax. Please test it out.
 
 
+
 ---
 
-Comment by was created at 2008-01-15 05:52:20
+archive/issue_comments_011257.json:
+```json
+{
+    "body": "That this doesn't work anymore is definitely a bug:\n\n```\nsage: plot(sin(2), (x,0,10*pi))\nBOOM!\n```\n\n\nLikewise for \n\n```\nsage: plot(sin(2), 0,10*pi)\nBOOM\n```\n\n\nI'll try to fix this....",
+    "created_at": "2008-01-15T05:52:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11257",
+    "user": "was"
+}
+```
 
 That this doesn't work anymore is definitely a bug:
 
@@ -63,37 +125,94 @@ BOOM
 I'll try to fix this....
 
 
+
 ---
 
-Comment by was created at 2008-01-15 05:52:20
+archive/issue_comments_011258.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2008-01-15T05:52:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11258",
+    "user": "was"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by was created at 2008-01-15 05:55:38
+archive/issue_comments_011259.json:
+```json
+{
+    "body": "It turns out the `plot(sin(2), (x,0,10*pi))` problem above was a really genuine bug coming from an indentation mistake on line 624 (I will attach a patch fixing this and other issues).",
+    "created_at": "2008-01-15T05:55:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11259",
+    "user": "was"
+}
+```
 
 It turns out the `plot(sin(2), (x,0,10*pi))` problem above was a really genuine bug coming from an indentation mistake on line 624 (I will attach a patch fixing this and other issues).
 
 
+
 ---
+
+archive/issue_comments_011260.json:
+```json
+{
+    "body": "Attachment\n\napply the hg bundle that bobby posted, then apply this plain text patch which fixes one serious bug.",
+    "created_at": "2008-01-15T06:20:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11260",
+    "user": "was"
+}
+```
 
 Attachment
 
 apply the hg bundle that bobby posted, then apply this plain text patch which fixes one serious bug.
 
 
+
 ---
 
-Comment by was created at 2008-01-15 06:21:14
+archive/issue_comments_011261.json:
+```json
+{
+    "body": "Apply the plot.hg followed by trac-1778-referee.patch",
+    "created_at": "2008-01-15T06:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11261",
+    "user": "was"
+}
+```
 
 Apply the plot.hg followed by trac-1778-referee.patch
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 07:12:27
+archive/issue_comments_011262.json:
+```json
+{
+    "body": "I had to resolve some slight merge conflict with #1779 in `setup.py`.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-15T07:12:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11262",
+    "user": "mabshoff"
+}
+```
 
 I had to resolve some slight merge conflict with #1779 in `setup.py`.
 
@@ -102,15 +221,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 07:12:50
+archive/issue_comments_011263.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-15T07:12:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11263",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-15 07:12:50
+archive/issue_comments_011264.json:
+```json
+{
+    "body": "Merged in Sage 2.10.alpha3",
+    "created_at": "2008-01-15T07:12:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11264",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.alpha3

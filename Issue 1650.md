@@ -1,11 +1,21 @@
 # Issue 1650: eclib-20071231.p0.spkg: fix tsat test failure on sage.math
 
-Issue created by migration from https://trac.sagemath.org/ticket/1650
-
-Original creator: mabshoff
-
-Original creation time: 2008-01-01 00:04:05
-
+archive/issues_001650.json:
+```json
+{
+    "body": "Assignee: cremona\n\nWhen running `make check` for eclib-20071231.p0.spkg on sage.math it fails with exit code 134:\n\n```\n./tsat < tsat.in > t 2>/dev/null && diff t tsat.out\n/bin/sh: line 1: 13769 Aborted                 ./tsat <tsat.in >t 2>/dev/null\nmake[1]: *** [check] Error 134\n```\n\nIn detail:\n\n```\nverbose (0/1)?\nInput a curve: Curve [0,0,1,-7,36]\nenter number of points:\n  enter point 1 :\n  enter point 2 :\n  enter point 3 :\n  enter point 4 : 4 points entered.\nprime p to saturate at?\nSaturating at prime 11\nOriginal generators:\n[ [1:-6:1] [-30:21:8] [-3:5:1] [-2:6:1] ]\nFinished p-saturation for p =  11, points were saturated\nfatal error:\n   corrupted memory detected in _ntl_gblock_destroy\nexit...\nAborted\n```\n\nValgrind says:\n\n```\n\n[ [1:-6:1] [-30:21:8] [-3:5:1] [-2:6:1] ]\nFinished p-saturation for p =  11, points were saturated\n==13794== Invalid read of size 8\n==13794==    at 0x54A2E0C: NTL::vec_ZZ_p::~vec_ZZ_p() (in /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libntl.so)\n==13794==    by 0x5C22E0B: __cxa_finalize (in /lib/libc-2.3.6.so)\n==13794==    by 0x4B35782: (within /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libcurvesntl.so)\n==13794==    by 0x4C05E00: (within /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libcurvesntl.so)\n==13794==    by 0x5C22B8C: exit (in /lib/libc-2.3.6.so)\n==13794==    by 0x5C0D4D0: (below main) (in /lib/libc-2.3.6.so)\n==13794==  Address 0x66761e0 is 16 bytes inside a block of size 64 free'd\n==13794==    at 0x4A1B74A: free (vg_replace_malloc.c:320)\n==13794==    by 0x5C22B8C: exit (in /lib/libc-2.3.6.so)\n==13794==    by 0x5C0D4D0: (below main) (in /lib/libc-2.3.6.so)\n==13794==\n==13794== Invalid read of size 8\n==13794==    at 0x54A2D91: NTL::BlockDestroy(NTL::ZZ_p*, long) (in /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libntl.so)\n==13794==    by 0x54A2E14: NTL::vec_ZZ_p::~vec_ZZ_p() (in /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libntl.so)\n==13794==    by 0x5C22E0B: __cxa_finalize (in /lib/libc-2.3.6.so)\n==13794==    by 0x4B35782: (within /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libcurvesntl.so)\n==13794==    by 0x4C05E00: (within /tmp/Work-mabshoff/release-cycle/sage-2.9.1.1/local/lib/libcurvesntl.so)\n==13794==    by 0x5C22B8C: exit (in /lib/libc-2.3.6.so)\n==13794==    by 0x5C0D4D0: (below main) (in /lib/libc-2.3.6.so)\n==13794==  Address 0x66761f0 is 32 bytes inside a block of size 64 free'd\n==13794==    at 0x4A1B74A: free (vg_replace_malloc.c:320)\n==13794==    by 0x5C22B8C: exit (in /lib/libc-2.3.6.so)\n==13794==    by 0x5C0D4D0: (below main) (in /lib/libc-2.3.6.so)\n[SNIP]\n```\n\nThis points potentially to another issue in template.h. If I have some more time I will investigate later.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1650\n\n",
+    "created_at": "2008-01-01T00:04:05Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "eclib-20071231.p0.spkg: fix tsat test failure on sage.math",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1650",
+    "user": "mabshoff"
+}
+```
 Assignee: cremona
 
 When running `make check` for eclib-20071231.p0.spkg on sage.math it fails with exit code 134:
@@ -76,25 +86,62 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/1650
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-27 03:20:36
+archive/issue_comments_010498.json:
+```json
+{
+    "body": "The spkg at #1649 should fix this. But that needs to be verified.",
+    "created_at": "2008-01-27T03:20:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10498",
+    "user": "mabshoff"
+}
+```
 
 The spkg at #1649 should fix this. But that needs to be verified.
 
 
+
 ---
 
-Comment by was created at 2008-01-27 18:44:02
+archive/issue_comments_010499.json:
+```json
+{
+    "body": "New version that builds on OS X:\n http://sage.math.washington.edu/home/was/tmp/eclib-20071231.p2.spkg",
+    "created_at": "2008-01-27T18:44:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10499",
+    "user": "was"
+}
+```
 
 New version that builds on OS X:
  http://sage.math.washington.edu/home/was/tmp/eclib-20071231.p2.spkg
 
 
+
 ---
 
-Comment by was created at 2008-01-27 18:55:34
+archive/issue_comments_010500.json:
+```json
+{
+    "body": "New version that passes spkg-check on OS X as well:\n\nhttp://sage.math.washington.edu/home/was/tmp/eclib-20080127.spkg\n\nI upped the release version number, since Cremona and I made changes\ninside the src/ directory (which we dutifully checked in).",
+    "created_at": "2008-01-27T18:55:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10500",
+    "user": "was"
+}
+```
 
 New version that passes spkg-check on OS X as well:
 
@@ -104,9 +151,20 @@ I upped the release version number, since Cremona and I made changes
 inside the src/ directory (which we dutifully checked in).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 19:54:09
+archive/issue_comments_010501.json:
+```json
+{
+    "body": "The spkg fixes the issue and the check target now passes all test on sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-27T19:54:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10501",
+    "user": "mabshoff"
+}
+```
 
 The spkg fixes the issue and the check target now passes all test on sage.math.
 
@@ -115,15 +173,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 19:54:24
+archive/issue_comments_010502.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-27T19:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10502",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 19:54:24
+archive/issue_comments_010503.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc2",
+    "created_at": "2008-01-27T19:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1650#issuecomment-10503",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc2

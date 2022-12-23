@@ -1,11 +1,21 @@
 # Issue 806: matrix_integer_dense.elementary_divisors return a mutable object
 
-Issue created by migration from https://trac.sagemath.org/ticket/806
-
-Original creator: syazdani
-
-Original creation time: 2007-10-03 14:52:20
-
+archive/issues_000806.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following code causes incorrect output:\n\n```\nsage: M=random_matrix(ZZ,3,2)\n\nsage: M.elementary_divisors()\n [1, 1, 0]\n\nsage: edivs=M.elementary_divisors()\n\nsage: edivs.pop()\n 0\n\nsage: edivs\n [1, 1]\n\nsage: M.elementary_divisors()\n [1, 1]\n```\n\nThe problem seems to be elementary_divisors() caches the result, but returns a mutable object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/806\n\n",
+    "created_at": "2007-10-03T14:52:20Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "matrix_integer_dense.elementary_divisors return a mutable object",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/806",
+    "user": "syazdani"
+}
+```
 Assignee: was
 
 The following code causes incorrect output:
@@ -30,10 +40,25 @@ sage: M.elementary_divisors()
 
 The problem seems to be elementary_divisors() caches the result, but returns a mutable object.
 
+Issue created by migration from https://trac.sagemath.org/ticket/806
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-10-04 11:50:04
+archive/issue_comments_004870.json:
+```json
+{
+    "body": "Patch attached.\n\n\n```\nsage: M=random_matrix(ZZ,3,2)\nsage: \nsage: M.elementary_divisors()\n[1, 1, 0]\nsage: edivs = M.elementary_divisors()\nsage: edivs.pop()\n0\nsage: edivs\n[1, 1]\nsage: M.elementary_divisors()\n[1, 1, 0]\n```\n",
+    "created_at": "2007-10-04T11:50:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/806",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/806#issuecomment-4870",
+    "user": "mhansen"
+}
+```
 
 Patch attached.
 
@@ -54,13 +79,37 @@ sage: M.elementary_divisors()
 
 
 
+
 ---
+
+archive/issue_comments_004871.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-10-04T11:50:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/806",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/806#issuecomment-4871",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-10-04 18:53:43
+archive/issue_comments_004872.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-04T18:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/806",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/806#issuecomment-4872",
+    "user": "was"
+}
+```
 
 Resolution: fixed
