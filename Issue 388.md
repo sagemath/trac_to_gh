@@ -1,11 +1,21 @@
 # Issue 388: bug in modular symbol projection function
 
-Issue created by migration from https://trac.sagemath.org/ticket/388
-
-Original creator: was
-
-Original creation time: 2007-06-22 11:25:44
-
+archive/issues_000388.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:\n> Hi William,\n>\n> I found an odd thing:\n> -----------------------\n> S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\n>\n>         Modular Symbols subspace of dimension 3 of Modular Symbols space of\n>         dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\n>\n> p=S.projection()\n>\n>\n> S.basis()\n>\n>         ((1,33) - (1,37), (1,35), (1,49))\n>\n> for i in [0,1,2]: p(S.basis()[i])\n>\n>\n> (1,35)\n> (1,49)\n> 0\n> ------------------------------\n> Shouldn't the projection onto a subspace restricted to that subspace be\n> the identity?\n\nYes.  That's definitely a bug.  Thanks for finding it.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/388\n\n",
+    "created_at": "2007-06-22T11:25:44Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in modular symbol projection function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/388",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -41,10 +51,25 @@ Yes.  That's definitely a bug.  Thanks for finding it.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/388
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-28 11:47:05
+archive/issue_comments_001903.json:
+```json
+{
+    "body": "This is still an issue with Sage 2.8.2. Maybe it is something for the next bug day:\n\n```\n[mabshoff@m940 sage-2.8.2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2, Release Date: 2007-08-22                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\nModular Symbols subspace of dimension 3 of Modular Symbols space of dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\nsage: p=S.projection()\nsage: S.basis()\n((1,33) - (1,37), (1,35), (1,49))\nsage: for i in [0,1,2]: p(S.basis()[i])\n....:\n(1,35)\n(1,49)\n0\nsage:\n```\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-28T11:47:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1903",
+    "user": "mabshoff"
+}
+```
 
 This is still an issue with Sage 2.8.2. Maybe it is something for the next bug day:
 
@@ -72,9 +97,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2007-09-01 07:42:18
+archive/issue_comments_001904.json:
+```json
+{
+    "body": "This fixes the bug above. The problem was this: if M is the full space of modular symbols above, SS its cuspidal subspace, and S as above, then S is the 3rd component in the decomposition of M, but the second in the decomposition of SS. At some point, this led to an indexing problem, and the wrong rows of M.decomposition_matrix() were being used to create S.projection.\n\nI fixed this as follows: since M has already been decomposed to get S, I simply use (M.decomposition()).index(S) to find out what the appropriate index is. I could be convinced that there's a more elegant way to do this.\n\nI'm attaching the patch, but it's also available here:\n\nhttp://sage.math.washington.edu/home/citro/patches/ticket_388.hg\n\n-cc",
+    "created_at": "2007-09-01T07:42:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1904",
+    "user": "craigcitro"
+}
+```
 
 This fixes the bug above. The problem was this: if M is the full space of modular symbols above, SS its cuspidal subspace, and S as above, then S is the 3rd component in the decomposition of M, but the second in the decomposition of SS. At some point, this led to an indexing problem, and the wrong rows of M.decomposition_matrix() were being used to create S.projection.
 
@@ -87,21 +123,56 @@ http://sage.math.washington.edu/home/citro/patches/ticket_388.hg
 -cc
 
 
+
 ---
 
-Comment by craigcitro created at 2007-09-01 07:42:18
+archive/issue_comments_001905.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2007-09-01T07:42:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1905",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by was created at 2007-09-01 18:12:07
+archive/issue_comments_001906.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-01T18:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1906",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_001907.json:
+```json
+{
+    "body": "Attachment\n\nlooks good to me.",
+    "created_at": "2007-09-01T18:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1907",
+    "user": "was"
+}
+```
 
 Attachment
 

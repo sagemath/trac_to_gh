@@ -1,11 +1,21 @@
 # Issue 367: Text output from the notebook should indent after ... more.
 
-Issue created by migration from https://trac.sagemath.org/ticket/367
-
-Original creator: was
-
-Original creation time: 2007-05-17 23:14:09
-
+archive/issues_000367.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis text output is confusing!\n\n```\nsage: def sum_of_two_squares_naive(n): \n...    for i in range(int(sqrt(n))): \n...        if is_square(n \n\nIssue created by migration from https://trac.sagemath.org/ticket/367\n\n",
+    "created_at": "2007-05-17T23:14:09Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "bug"
+    ],
+    "title": "Text output from the notebook should indent after ... more.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/367",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 This text output is confusing!
@@ -15,9 +25,24 @@ sage: def sum_of_two_squares_naive(n):
 ...    for i in range(int(sqrt(n))): 
 ...        if is_square(n 
 
+Issue created by migration from https://trac.sagemath.org/ticket/367
+
+
+
+
 
 ---
 
-Comment by was created at 2007-05-18 15:42:54
+archive/issue_comments_001771.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-05-18T15:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/367#issuecomment-1771",
+    "user": "was"
+}
+```
 
 Resolution: fixed

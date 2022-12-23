@@ -1,11 +1,21 @@
 # Issue 304: another modular forms bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/304
-
-Original creator: was
-
-Original creation time: 2007-03-01 18:06:29
-
+archive/issues_000304.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: m = CuspForms(11*2^4,2); m.set_precision(13)\nsage: m.integral_basis()\n[\nq + O(q^13),\nq^2 + q^8 + O(q^13),\nq^3 + O(q^13),\nq^4 + O(q^13),\nq^5 + O(q^13),\nq^6 + 2*q^8 + O(q^13),\nq^7 + q^11 + O(q^13),\nq^8 + O(q^13),\nq^9 + O(q^13),\nq^10 + O(q^13),\nq^11 + O(q^13),\nq^12 + O(q^13),\n1 + O(q^13),\nq + 6*q^5 + 2*q^8 + 13*q^9 + O(q^13),\nq^2 + 4*q^6 + 6*q^10 + O(q^13),\nq^3 + 2*q^7 + O(q^13),\nq^4 + 4*q^12 + O(q^13),\n3*q^8 + O(q^13),\n2*q^11 + O(q^13)\n]\n```\n\n\nthere shouldn't be a series starting with 1.\n\nComputing everything to higher precision yields the right answer.  So ??\n\nIssue created by migration from https://trac.sagemath.org/ticket/304\n\n",
+    "created_at": "2007-03-01T18:06:29Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "another modular forms bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/304",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -40,16 +50,42 @@ there shouldn't be a series starting with 1.
 
 Computing everything to higher precision yields the right answer.  So ??
 
+Issue created by migration from https://trac.sagemath.org/ticket/304
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-19 01:00:46
+archive/issue_comments_001451.json:
+```json
+{
+    "body": "Fixed for sage-2.8.2",
+    "created_at": "2007-08-19T01:00:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/304#issuecomment-1451",
+    "user": "was"
+}
+```
 
 Fixed for sage-2.8.2
 
 
+
 ---
 
-Comment by was created at 2007-08-19 01:00:46
+archive/issue_comments_001452.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-19T01:00:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/304#issuecomment-1452",
+    "user": "was"
+}
+```
 
 Resolution: fixed

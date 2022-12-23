@@ -1,32 +1,81 @@
 # Issue 267: implement "sage -bt"
 
-Issue created by migration from https://trac.sagemath.org/ticket/267
-
-Original creator: dmharvey
-
-Original creation time: 2007-02-17 20:59:16
-
+archive/issues_000267.json:
+```json
+{
+    "body": "Assignee: was\n\n`sage -bt filename` could run a `sage -b` and then run doctests on the indicated file\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/267\n\n",
+    "created_at": "2007-02-17T20:59:16Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "implement \"sage -bt\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/267",
+    "user": "dmharvey"
+}
+```
 Assignee: was
 
 `sage -bt filename` could run a `sage -b` and then run doctests on the indicated file
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/267
+
+
+
+
 
 ---
+
+archive/issue_comments_001256.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-02-25T02:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/267#issuecomment-1256",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2007-02-25 02:48:25
+archive/issue_comments_001257.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-02-25T02:48:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/267#issuecomment-1257",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by ncalexan created at 2007-02-25 02:48:25
+archive/issue_comments_001258.json:
+```json
+{
+    "body": "Adds options \"-bt\" and \"-btnew\" for \"build current and test/test new\".\n\nAdds option \"-r clone\" for \"switch to and run clone\".\n\nChanges cloning so that \"-clone existing\" switches to \"existing\" clone.",
+    "created_at": "2007-02-25T02:48:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/267#issuecomment-1258",
+    "user": "ncalexan"
+}
+```
 
 Adds options "-bt" and "-btnew" for "build current and test/test new".
 

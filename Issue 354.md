@@ -1,11 +1,21 @@
 # Issue 354: Introspection broken for SageX'd files from notebook.
 
-Issue created by migration from https://trac.sagemath.org/ticket/354
-
-Original creator: boothby
-
-Original creation time: 2007-04-22 18:23:52
-
+archive/issues_000354.json:
+```json
+{
+    "body": "Assignee: boothby\n\nKeywords: introspection\n\nOffending code:\n\n\n```\nF = ZZ.quo(2*ZZ)\nR.<x> = F['x']\np = x^2-1\np.root_field?\n```\n\n\nTraceback:\n\n\n```\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/home/boothby/sage_notebook/worksheets/hw4/code/4.py\", line 4, in &lt;module&gt;\n    print _support_.docstring(\"p.root_field\", globals())\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/support.py\", line 131, in docstring\n    s += 'Definition:  %s\\n'%sageinspect.sage_getdef(obj, obj_name)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 264, in sage_getdef\n    spec = sage_getargspec(obj)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 246, in sage_getargspec\n    return _sage_getargspec_sagex(source)\n  File \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 200, in _sage_getargspec_sagex\n    raise ValueError, \"Could not parse sagex argspec\"\nValueError: Could not parse sagex argspec\n```\n\n\nThis is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/354\n\n",
+    "created_at": "2007-04-22T18:23:52Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Introspection broken for SageX'd files from notebook.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/354",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 Keywords: introspection
@@ -43,31 +53,79 @@ ValueError: Could not parse sagex argspec
 
 This is using a freshly upgraded SAGE.  Cannot reproduce on the public notebook.
 
+Issue created by migration from https://trac.sagemath.org/ticket/354
+
+
+
+
 
 ---
 
-Comment by boothby created at 2007-04-22 18:25:02
+archive/issue_comments_001713.json:
+```json
+{
+    "body": "Introspection works fine from the commandline.",
+    "created_at": "2007-04-22T18:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1713",
+    "user": "boothby"
+}
+```
 
 Introspection works fine from the commandline.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-06-27 05:54:13
+archive/issue_comments_001714.json:
+```json
+{
+    "body": "Changing assignee from boothby to ncalexan.",
+    "created_at": "2007-06-27T05:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1714",
+    "user": "ncalexan"
+}
+```
 
 Changing assignee from boothby to ncalexan.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-06-27 05:54:13
+archive/issue_comments_001715.json:
+```json
+{
+    "body": "Given the flux of the new notebook, and the fact that this works well for me, I'm going to close this.  If it can be duplicated with newer code, I'll address the issue.",
+    "created_at": "2007-06-27T05:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1715",
+    "user": "ncalexan"
+}
+```
 
 Given the flux of the new notebook, and the fact that this works well for me, I'm going to close this.  If it can be duplicated with newer code, I'll address the issue.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-29 15:21:25
+archive/issue_comments_001716.json:
+```json
+{
+    "body": "Works for me:\n\n```\n[mabshoff@m940 sage-2.8.3.alpha2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F = ZZ.quo(2*ZZ)\nsage: R.<x> = F['x']\nsage: p = x^2-1\nsage: p.root_field?\nsage:\nsage:   \n```\n\n\nRetagged for 2.9.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-29T15:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1716",
+    "user": "mabshoff"
+}
+```
 
 Works for me:
 
@@ -93,9 +151,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-31 22:09:50
+archive/issue_comments_001717.json:
+```json
+{
+    "body": "The problem is in the notebook, not the console application. So this is not resolved and should be fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-31T22:09:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1717",
+    "user": "mabshoff"
+}
+```
 
 The problem is in the notebook, not the console application. So this is not resolved and should be fixed.
 
@@ -104,8 +173,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2007-09-05 04:39:20
+archive/issue_comments_001718.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-05T04:39:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/354#issuecomment-1718",
+    "user": "was"
+}
+```
 
 Resolution: fixed

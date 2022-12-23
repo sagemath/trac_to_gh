@@ -1,11 +1,21 @@
 # Issue 353: public sage notebook robustness
 
-Issue created by migration from https://trac.sagemath.org/ticket/353
-
-Original creator: was
-
-Original creation time: 2007-04-20 15:05:22
-
+archive/issues_000353.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThanks.  It turns out that the chroot jail that runs the notebooks\nran out of disk space.  I've cleared off some files and now it works\nagain.  Interestingly, there are over 4000 worksheets at sagenb.org\nand an additional over 4000 worksheets at sagenb.com.  Some are\nweird things like index_asp.\n\nWe should make creating a new worksheet require clicking a button\nor something in addition to just typing in a new url.  Also, there should\nbe an easy way to dele\n\nIssue created by migration from https://trac.sagemath.org/ticket/353\n\n",
+    "created_at": "2007-04-20T15:05:22Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "public sage notebook robustness",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/353",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Thanks.  It turns out that the chroot jail that runs the notebooks
@@ -18,16 +28,42 @@ We should make creating a new worksheet require clicking a button
 or something in addition to just typing in a new url.  Also, there should
 be an easy way to dele
 
+Issue created by migration from https://trac.sagemath.org/ticket/353
+
+
+
+
 
 ---
 
-Comment by was created at 2007-04-20 15:05:34
+archive/issue_comments_001711.json:
+```json
+{
+    "body": "Changing assignee from boothby to was.",
+    "created_at": "2007-04-20T15:05:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/353#issuecomment-1711",
+    "user": "was"
+}
+```
 
 Changing assignee from boothby to was.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-18 10:15:35
+archive/issue_comments_001712.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-03-18T10:15:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/353#issuecomment-1712",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid

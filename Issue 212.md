@@ -1,11 +1,21 @@
 # Issue 212: gsl matrix multiply too slow -- ???
 
-Issue created by migration from https://trac.sagemath.org/ticket/212
-
-Original creator: was
-
-Original creation time: 2007-01-24 02:25:08
-
+archive/issues_000212.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: time n=m.numpy('f')\nCPU time: 2.97 s,  Wall time: 3.00 s\nsage: import numpy\nsage: time k=numpy.dot(n,n)\nCPU time: 0.20 s,  Wall time: 0.11 s\nsage: time z=m*m\nCPU time: 3.69 s,  Wall time: 3.79 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/212\n\n",
+    "created_at": "2007-01-24T02:25:08Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "gsl matrix multiply too slow -- ???",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/212",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -21,10 +31,25 @@ CPU time: 3.69 s,  Wall time: 3.79 s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/212
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-22 20:20:45
+archive/issue_comments_000953.json:
+```json
+{
+    "body": "The code snippet from above no longer works (maybe because numpy became part of Sage?):\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: time n=m.numpy('f')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/local/lib/python2.5/site-packages/IPython/iplib.py in ipmagic(self, arg_s)\n    962         else:\n    963             magic_args = self.var_expand(magic_args,1)\n--> 964             return fn(magic_args)\n    965\n    966     def ipalias(self,arg_s):\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/local/lib/python2.5/site-packages/IPython/Magic.py in magic_time(self, parameter_s)\n   1855         else:\n   1856             st = clk()\n-> 1857             exec code in glob\n   1858             end = clk()\n   1859             out = None\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<timed exec> in <module>()\n\n<type 'exceptions.TypeError'>: numpy() takes no arguments (1 given)\nsage: time z=m*m\nCPU times: user 6.69 s, sys: 0.01 s, total: 6.70 s\nWall time: 6.74\n```\n\nI would also assume that the bad performance is due to the GSL BLAS. I did submit an ATLAS package to William Stein about a week ago. It builds in about 10 minutes on a current MacBook and about 12 minutes on an Opteron 3000. So could we consider making ATLAS an optional package that forces rebuilds of all packages that depend on BLAS?\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-22T20:20:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-953",
+    "user": "mabshoff"
+}
+```
 
 The code snippet from above no longer works (maybe because numpy became part of Sage?):
 
@@ -65,9 +90,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-27 22:48:03
+archive/issue_comments_000954.json:
+```json
+{
+    "body": "See #1013 for the reason the test case no longer works.\n\nNote that in the test case, numpy is using single-precision floating-point and GSL is using double-precision floating-point.\n\nHere's a revised test case, that shows the timings I get on my laptop.  The timings are for numpy single-precision, numpy double-precision, and GSL double-precision, respectively.\n\n\n```\nsage: import numpy\nsage: time n = sage.matrix.matrix1.Matrix.numpy(m, 'f')\nCPU times: user 0.74 s, sys: 0.02 s, total: 0.76 s\nWall time: 0.76\nsage: time k = numpy.dot(n, n)\nCPU times: user 6.66 s, sys: 0.00 s, total: 6.66 s\nWall time: 6.66\nsage: time n = sage.matrix.matrix1.Matrix.numpy(m, 'd')\nCPU times: user 0.76 s, sys: 0.02 s, total: 0.78 s\nWall time: 0.79\nsage: time k = numpy.dot(n, n)\nCPU times: user 7.98 s, sys: 0.00 s, total: 7.98 s\nWall time: 8.14\nsage: time z=m*m\nCPU times: user 5.26 s, sys: 0.02 s, total: 5.28 s\nWall time: 5.38\n```\n",
+    "created_at": "2007-10-27T22:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-954",
+    "user": "cwitty"
+}
+```
 
 See #1013 for the reason the test case no longer works.
 
@@ -97,9 +133,20 @@ Wall time: 5.38
 
 
 
+
 ---
 
-Comment by was created at 2008-02-23 03:09:55
+archive/issue_comments_000955.json:
+```json
+{
+    "body": "This is no longer valid, especially in light of carl witty's comments above and us switching to using ATLAS (on sage.math):\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: n = m.numpy()\nsage: import numpy\nsage: time k =numpy.dot(n,n)\nCPU times: user 0.69 s, sys: 0.05 s, total: 0.74 s\nWall time: 0.79\nsage: time z = m*m\nCPU times: user 0.68 s, sys: 0.04 s, total: 0.72 s\nWall time: 0.72\n```\n",
+    "created_at": "2008-02-23T03:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-955",
+    "user": "was"
+}
+```
 
 This is no longer valid, especially in light of carl witty's comments above and us switching to using ATLAS (on sage.math):
 
@@ -117,8 +164,19 @@ Wall time: 0.72
 
 
 
+
 ---
 
-Comment by was created at 2008-02-23 03:09:55
+archive/issue_comments_000956.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-23T03:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-956",
+    "user": "was"
+}
+```
 
 Resolution: fixed

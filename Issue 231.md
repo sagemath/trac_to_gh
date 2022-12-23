@@ -1,11 +1,21 @@
 # Issue 231: inconsistent working directory
 
-Issue created by migration from https://trac.sagemath.org/ticket/231
-
-Original creator: nbruin
-
-Original creation time: 2007-01-29 19:26:02
-
+archive/issues_000231.json:
+```json
+{
+    "body": "Assignee: boothby\n\nBetween executing a cell for the first time and then reexecuting that cell, the \"current directory\" changes:\n\n```\n%sh\npwd\n```\n\nthe first time gives the \"home directory\"\n\n```\n/usr/local/sage/nobody\n```\n\nupon reexecution I get\n\n```\n/usr/local/sage/nobody/sage_notebook/worksheets/loaderror/cells/2\n```\n\ni.e., the cell directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/231\n\n",
+    "created_at": "2007-01-29T19:26:02Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "inconsistent working directory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/231",
+    "user": "nbruin"
+}
+```
 Assignee: boothby
 
 Between executing a cell for the first time and then reexecuting that cell, the "current directory" changes:
@@ -29,21 +39,60 @@ upon reexecution I get
 
 i.e., the cell directory.
 
+Issue created by migration from https://trac.sagemath.org/ticket/231
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-29 02:37:17
+archive/issue_comments_001025.json:
+```json
+{
+    "body": "this fixes the bug (and more)",
+    "created_at": "2007-08-29T02:37:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/231#issuecomment-1025",
+    "user": "was"
+}
+```
 
 this fixes the bug (and more)
 
 
+
 ---
+
+archive/issue_comments_001026.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-08-29T02:37:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/231#issuecomment-1026",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-08-29 02:37:55
+archive/issue_comments_001027.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-29T02:37:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/231#issuecomment-1027",
+    "user": "was"
+}
+```
 
 Resolution: fixed

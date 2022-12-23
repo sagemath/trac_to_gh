@@ -1,11 +1,21 @@
 # Issue 246: height of a notebook cell
 
-Issue created by migration from https://trac.sagemath.org/ticket/246
-
-Original creator: ifti
-
-Original creation time: 2007-02-06 17:45:31
-
+archive/issues_000246.json:
+```json
+{
+    "body": "Assignee: boothby\n\nWhen I paste a huge string into a notebook cell, the height of the cell\ndoesn't increase appropriately and scrolling through the string using\nmy cursor and maneuvering the tiny scroll bar are painful.\n\nI was wondering if there is any way to increase the height of cells in the\nSAGE notebook. If the answer is negative, it should be a todo.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/246\n\n",
+    "created_at": "2007-02-06T17:45:31Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "height of a notebook cell",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/246",
+    "user": "ifti"
+}
+```
 Assignee: boothby
 
 When I paste a huge string into a notebook cell, the height of the cell
@@ -16,10 +26,25 @@ I was wondering if there is any way to increase the height of cells in the
 SAGE notebook. If the answer is negative, it should be a todo.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/246
+
+
+
+
 
 ---
 
-Comment by TimothyClemans created at 2007-03-02 18:51:47
+archive/issue_comments_001086.json:
+```json
+{
+    "body": "It would be nice if I could type in the number of lines in the notebook of a cell text area. I'm finding that I want this now.\n\ncell.py\n\n```\n480 <textarea class=\"%s\" rows=%s cols=100000 columns=100000\n481 id = 'cell_input_%s'\n482 onKeyPress = 'return input_keypress(%s,event);'\n483 oninput = 'cell_input_resize(this);'\n484 onFocus = 'return cell_focus(%s)'\n485 onBlur = 'return cell_blur(%s)'\n486 >%s</textarea> \n```\n\n\nThere is a javascript app for this at http://www.peterbe.com/Changing-textarea-size.",
+    "created_at": "2007-03-02T18:51:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/246#issuecomment-1086",
+    "user": "TimothyClemans"
+}
+```
 
 It would be nice if I could type in the number of lines in the notebook of a cell text area. I'm finding that I want this now.
 
@@ -39,15 +64,37 @@ cell.py
 There is a javascript app for this at http://www.peterbe.com/Changing-textarea-size.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-15 07:25:26
+archive/issue_comments_001087.json:
+```json
+{
+    "body": "This ticket has been fixed based on the current behavior of the notebook since the cell doesn't scroll and instead wraps the text down to the next line.",
+    "created_at": "2008-04-15T07:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/246#issuecomment-1087",
+    "user": "mhansen"
+}
+```
 
 This ticket has been fixed based on the current behavior of the notebook since the cell doesn't scroll and instead wraps the text down to the next line.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-15 07:25:26
+archive/issue_comments_001088.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-15T07:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/246#issuecomment-1088",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

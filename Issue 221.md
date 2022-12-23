@@ -1,25 +1,61 @@
 # Issue 221: SageX: generic laurent series over arbitrary ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/221
-
-Original creator: was
-
-Original creation time: 2007-01-25 19:02:05
-
+archive/issues_000221.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/221\n\n",
+    "created_at": "2007-01-25T19:02:05Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "SageX: generic laurent series over arbitrary ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/221",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/221
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-11-14 08:44:11
+archive/issue_comments_000989.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T08:44:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/221#issuecomment-989",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-14 08:44:11
+archive/issue_comments_000990.json:
+```json
+{
+    "body": "I think this has already been done as evidenced by sage/rings/laurent_series*.pyx.  This was done around Sage 2.4.2 -- changeset 4157.",
+    "created_at": "2008-11-14T08:44:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/221#issuecomment-990",
+    "user": "mhansen"
+}
+```
 
 I think this has already been done as evidenced by sage/rings/laurent_series*.pyx.  This was done around Sage 2.4.2 -- changeset 4157.

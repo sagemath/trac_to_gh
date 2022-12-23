@@ -1,11 +1,21 @@
 # Issue 275: Maxtrix groups over RR don't get pushed off to GAP properly
 
-Issue created by migration from https://trac.sagemath.org/ticket/275
-
-Original creator: moretti
-
-Original creation time: 2007-02-21 20:34:05
-
+archive/issues_000275.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: matrix groups\n\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
+    "created_at": "2007-02-21T20:34:05Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "Maxtrix groups over RR don't get pushed off to GAP properly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/275",
+    "user": "moretti"
+}
+```
 Assignee: was
 
 Keywords: matrix groups
@@ -26,30 +36,78 @@ $sage17:=SL(2, Complex Field with 53 bits of precision);;
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/275
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-18 09:58:28
+archive/issue_comments_001308.json:
+```json
+{
+    "body": "NOTE -- Gap doesn't have a notion of floating point numbers -- so the correct behavior here is to give a good error message.",
+    "created_at": "2007-08-18T09:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1308",
+    "user": "was"
+}
+```
 
 NOTE -- Gap doesn't have a notion of floating point numbers -- so the correct behavior here is to give a good error message.
 
 
+
 ---
 
-Comment by was created at 2007-08-18 09:58:34
+archive/issue_comments_001309.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to interfaces.",
+    "created_at": "2007-08-18T09:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1309",
+    "user": "was"
+}
+```
 
 Changing component from algebraic geometry to interfaces.
 
 
+
 ---
 
-Comment by was created at 2007-08-18 20:25:25
+archive/issue_comments_001310.json:
+```json
+{
+    "body": "fixed for sage-2.8.2",
+    "created_at": "2007-08-18T20:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1310",
+    "user": "was"
+}
+```
 
 fixed for sage-2.8.2
 
 
+
 ---
 
-Comment by was created at 2007-08-18 20:25:25
+archive/issue_comments_001311.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-18T20:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1311",
+    "user": "was"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 252: Make number fields work when polynomial not integral or not monic.
 
-Issue created by migration from https://trac.sagemath.org/ticket/252
-
-Original creator: was
-
-Original creation time: 2007-02-08 17:49:51
-
+archive/issues_000252.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
+    "created_at": "2007-02-08T17:49:51Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "Make number fields work when polynomial not integral or not monic.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/252",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  katestange bouillaguet
@@ -23,17 +33,43 @@ gen.PariError:  (8)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/252
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2007-10-09 04:31:42
+archive/issue_comments_001105.json:
+```json
+{
+    "body": "You may find sage.rings.algebraic_real.clear_denominators() useful here.  (If so, the function should probably be moved to a more sensible place, and perhaps renamed.)",
+    "created_at": "2007-10-09T04:31:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1105",
+    "user": "cwitty"
+}
+```
 
 You may find sage.rings.algebraic_real.clear_denominators() useful here.  (If so, the function should probably be moved to a more sensible place, and perhaps renamed.)
 
 
+
 ---
 
-Comment by was created at 2007-10-21 01:59:03
+archive/issue_comments_001106.json:
+```json
+{
+    "body": "The example above works.  But other things don't:\n\n\n```\nsage: R.<x> = QQ[]\nsage: sage: L.<b> = NumberField(x^2-1/2)\nsage: sage: L.discriminant()\n8\nsage: L.ring_of_integers()\nboom\n```\n",
+    "created_at": "2007-10-21T01:59:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1106",
+    "user": "was"
+}
+```
 
 The example above works.  But other things don't:
 
@@ -49,9 +85,20 @@ boom
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 17:32:54
+archive/issue_comments_001107.json:
+```json
+{
+    "body": "Notice that #4041 is a duplicate of this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-04T17:32:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1107",
+    "user": "mabshoff"
+}
+```
 
 Notice that #4041 is a duplicate of this ticket.
 
@@ -60,23 +107,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:56:32
+archive/issue_comments_001108.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-20T19:56:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1108",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:56:32
+archive/issue_comments_001109.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-20T19:56:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1109",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by lftabera created at 2010-07-06 10:59:30
+archive/issue_comments_001110.json:
+```json
+{
+    "body": "Another example from #9408\n\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```\n",
+    "created_at": "2010-07-06T10:59:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1110",
+    "user": "lftabera"
+}
+```
 
 Another example from #9408
 
@@ -88,32 +168,76 @@ sage: L.<a,b> = QQ[i].relativize(1/2) #PariError
 
 
 
+
 ---
 
-Comment by katestange created at 2011-02-16 16:57:59
+archive/issue_comments_001111.json:
+```json
+{
+    "body": "At least the pari errors could be changed to \"not implemented\" messages in the meantime?  This is an error a new user may encounter.  It would help them to know immediately that the problem is all non-integral coefficients, so they can program around it, and to know that it is known to the developers.",
+    "created_at": "2011-02-16T16:57:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1111",
+    "user": "katestange"
+}
+```
 
 At least the pari errors could be changed to "not implemented" messages in the meantime?  This is an error a new user may encounter.  It would help them to know immediately that the problem is all non-integral coefficients, so they can program around it, and to know that it is known to the developers.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-09 11:03:44
+archive/issue_comments_001112.json:
+```json
+{
+    "body": "I agree that fixing this would be very nice, but also would require completely reworking the number field code.  I think it is feasible, but do we really want to put that much effort into this?",
+    "created_at": "2011-10-09T11:03:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1112",
+    "user": "jdemeyer"
+}
+```
 
 I agree that fixing this would be very nice, but also would require completely reworking the number field code.  I think it is feasible, but do we really want to put that much effort into this?
 
 
+
 ---
 
-Comment by lftabera created at 2011-10-09 12:35:33
+archive/issue_comments_001113.json:
+```json
+{
+    "body": "I, for myself would like to see this fixed. I would fix this myself if I had time...\n\nIn any case, current situation in Sage is not admissible. If we decide not to fix this then, should we allow to define number fields with nonintegral generators? This would also mean a lot of effort.",
+    "created_at": "2011-10-09T12:35:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1113",
+    "user": "lftabera"
+}
+```
 
 I, for myself would like to see this fixed. I would fix this myself if I had time...
 
 In any case, current situation in Sage is not admissible. If we decide not to fix this then, should we allow to define number fields with nonintegral generators? This would also mean a lot of effort.
 
 
+
 ---
 
-Comment by was created at 2011-10-09 16:00:54
+archive/issue_comments_001114.json:
+```json
+{
+    "body": "Replying to [comment:9 jdemeyer]:\n> I agree that fixing this would be very nice, but also would require \n> completely reworking the number field code.  I think it is feasible,\n> but do we really want to put that much effort into this?\n\nI don't know about \"we\", but it is a total no brainer that this has to get done eventually.   It is certainly easier than writing the number field code in the first place, which was hard, but not that hard.",
+    "created_at": "2011-10-09T16:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1114",
+    "user": "was"
+}
+```
 
 Replying to [comment:9 jdemeyer]:
 > I agree that fixing this would be very nice, but also would require 
@@ -123,23 +247,56 @@ Replying to [comment:9 jdemeyer]:
 I don't know about "we", but it is a total no brainer that this has to get done eventually.   It is certainly easier than writing the number field code in the first place, which was hard, but not that hard.
 
 
+
 ---
 
-Comment by Bouillaguet created at 2013-02-19 20:45:34
+archive/issue_comments_001115.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2013-02-19T20:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1115",
+    "user": "Bouillaguet"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by Bouillaguet created at 2013-02-19 20:45:34
+archive/issue_comments_001116.json:
+```json
+{
+    "body": "I just ran into this issue",
+    "created_at": "2013-02-19T20:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1116",
+    "user": "Bouillaguet"
+}
+```
 
 I just ran into this issue
 
 
+
 ---
 
-Comment by pbruin created at 2015-04-17 22:03:47
+archive/issue_comments_001117.json:
+```json
+{
+    "body": "In SageMath 6.7.beta1:\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\n8\nsage: L.ring_of_integers()\nMaximal Order in Number Field in b with defining polynomial x^2 - 1/2\n```\n\nHowever, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to **Q**[*x*]/(*f*) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.",
+    "created_at": "2015-04-17T22:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1117",
+    "user": "pbruin"
+}
+```
 
 In SageMath 6.7.beta1:
 
@@ -152,82 +309,203 @@ sage: L.ring_of_integers()
 Maximal Order in Number Field in b with defining polynomial x^2 - 1/2
 ```
 
-However, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to *Q*[_x_]/(_f_) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.
+However, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to **Q**[*x*]/(*f*) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.
+
 
 
 ---
 
-Comment by pbruin created at 2015-06-19 20:23:40
+archive/issue_comments_001118.json:
+```json
+{
+    "body": "This branch is work in progress; it does not solve #18243 yet, and there are probably other places where it should be checked that non-integral and/or non-monic polynomials are supported.",
+    "created_at": "2015-06-19T20:23:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1118",
+    "user": "pbruin"
+}
+```
 
 This branch is work in progress; it does not solve #18243 yet, and there are probably other places where it should be checked that non-integral and/or non-monic polynomials are supported.
 
 
+
 ---
 
-Comment by git created at 2015-06-22 20:40:20
+archive/issue_comments_001119.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2015-06-22T20:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1119",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2015-06-22 20:41:49
+archive/issue_comments_001120.json:
+```json
+{
+    "body": "The examples in #14164 and #18243 now work.  This is mostly finished, but it needs more doctests to show that number fields defined by non-monic and non-integral polynomials are supported.",
+    "created_at": "2015-06-22T20:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1120",
+    "user": "pbruin"
+}
+```
 
 The examples in #14164 and #18243 now work.  This is mostly finished, but it needs more doctests to show that number fields defined by non-monic and non-integral polynomials are supported.
 
 
+
 ---
 
-Comment by git created at 2015-06-24 10:03:58
+archive/issue_comments_001121.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2015-06-24T10:03:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1121",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2015-06-24 10:12:09
+archive/issue_comments_001122.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-06-24T10:12:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1122",
+    "user": "pbruin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by git created at 2015-07-03 09:47:56
+archive/issue_comments_001123.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2015-07-03T09:47:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1123",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-07-22 11:44:39
+archive/issue_comments_001124.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2015-07-22T11:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1124",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2015-07-22 11:47:17
+archive/issue_comments_001125.json:
+```json
+{
+    "body": "The above version fixes `composite_fields()` to correctly solve #14164 and #18243.",
+    "created_at": "2015-07-22T11:47:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1125",
+    "user": "pbruin"
+}
+```
 
 The above version fixes `composite_fields()` to correctly solve #14164 and #18243.
 
 
+
 ---
 
-Comment by git created at 2015-08-21 07:50:23
+archive/issue_comments_001126.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-08-21T07:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1126",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-22 22:02:40
+archive/issue_comments_001127.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2015-08-22T22:02:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1127",
+    "user": "kartikv"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-22 22:02:40
+archive/issue_comments_001128.json:
+```json
+{
+    "body": "Something weird seems to be going on with factoring. This is \"normal\" behavior for a number field.\n\n```\nsage: F.<a> = NumberField(x^3+x+1)\nsage: F(2).factor()\n2\nsage: F(3).factor()\n(a^2 + a + 2) * (-a + 1)\nsage: (a^2 + a + 2).factor()\na^2 + a + 2\nsage: F.factor(3)\n(Fractional ideal (a^2 + a + 2)) * (Fractional ideal (-a + 1))\nsage: (-a+1).factor()\n-a + 1\n```\n\n\nThis is not.\n\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: F(2).factor()\n(-47*a^2 + 21*a - 93/2) * (-1/2*a^2 + 1/2*a)^2 * (1/2*a^2 + 1/2*a)\nsage: F.factor(2)\n(Fractional ideal (-1/2*a^2 + 1/2*a))^2 * (Fractional ideal (1/2*a^2 + 1/2*a))\nsage: (-47*a^2 + 21*a - 93/2).norm()\n-8192\nsage: (-47*a^2 + 21*a - 93/2).factor()\n(3718815975/16384*a^2 - 1336872061/16384*a + 7884913157/32768) * (-1/2*a^2 + 1/2*a)^14 * (1/2*a^2 + 1/2*a)^-1\nsage: (1/2*a^2 + 1/2*a).factor()\n(13/512*a^2 - 11/512*a - 7/256) * (-1/2*a^2 + 1/2*a)^-4\n```\n\n\nSomehow, it's not controlling primes over the leading coefficient properly...",
+    "created_at": "2015-08-22T22:02:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1128",
+    "user": "kartikv"
+}
+```
 
 Something weird seems to be going on with factoring. This is "normal" behavior for a number field.
 
@@ -267,9 +545,20 @@ sage: (1/2*a^2 + 1/2*a).factor()
 Somehow, it's not controlling primes over the leading coefficient properly...
 
 
+
 ---
 
-Comment by pbruin created at 2015-08-24 13:29:02
+archive/issue_comments_001129.json:
+```json
+{
+    "body": "The underlying problem seems to be converting PARI ideals in Hilbert normal form to Sage ideals:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: Fp = F.pari_nf()\nsage: I = F.ideal(2)\nsage: Ip = I.pari_hnf()\nsage: fact = Fp.idealfactor(Ip)\nsage: Jp = fact[0, 0]\nsage: Fp.idealnorm(Jp)\n2\nsage: J = F.ideal(Jp)\nsage: J.norm()\n1/2             # should be 2, like Fp.idealnorm(Jp)\n```\n",
+    "created_at": "2015-08-24T13:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1129",
+    "user": "pbruin"
+}
+```
 
 The underlying problem seems to be converting PARI ideals in Hilbert normal form to Sage ideals:
 
@@ -289,9 +578,20 @@ sage: J.norm()
 
 
 
+
 ---
 
-Comment by pbruin created at 2015-08-24 16:41:03
+archive/issue_comments_001130.json:
+```json
+{
+    "body": "Actually the bug is in the conversion from PARI elements expressed on the integral basis:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: b = F.random_element()\nsage: F(F.pari_nf().nfalgtobasis(b)) == b\nFalse  # should be True\n```\n\nI'm working on a patch.",
+    "created_at": "2015-08-24T16:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1130",
+    "user": "pbruin"
+}
+```
 
 Actually the bug is in the conversion from PARI elements expressed on the integral basis:
 
@@ -305,80 +605,201 @@ False  # should be True
 I'm working on a patch.
 
 
+
 ---
 
-Comment by git created at 2015-08-24 17:16:42
+archive/issue_comments_001131.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-08-24T17:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1131",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2015-08-24 17:17:16
+archive/issue_comments_001132.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-08-24T17:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1132",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-24 17:53:43
+archive/issue_comments_001133.json:
+```json
+{
+    "body": "Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.",
+    "created_at": "2015-08-24T17:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1133",
+    "user": "kartikv"
+}
+```
 
 Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-24 17:53:43
+archive/issue_comments_001134.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2015-08-24T17:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1134",
+    "user": "kartikv"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2015-08-25 11:38:09
+archive/issue_comments_001135.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-08-25T11:38:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1135",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-08-25 11:40:47
+archive/issue_comments_001136.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2015-08-25T11:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1136",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2015-08-25 11:43:43
+archive/issue_comments_001137.json:
+```json
+{
+    "body": "Replying to [comment:33 kartikv]:\n> Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.\nThanks for your comments.  If you approve of the new examples you can set this to positive review (and remember to fill in your [real] name as reviewer).",
+    "created_at": "2015-08-25T11:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1137",
+    "user": "pbruin"
+}
+```
 
 Replying to [comment:33 kartikv]:
 > Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.
 Thanks for your comments.  If you approve of the new examples you can set this to positive review (and remember to fill in your [real] name as reviewer).
 
 
+
 ---
 
-Comment by pbruin created at 2015-08-25 11:43:43
+archive/issue_comments_001138.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-08-25T11:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1138",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-25 13:49:35
+archive/issue_comments_001139.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-08-25T13:49:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1139",
+    "user": "kartikv"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-25 13:49:35
+archive/issue_comments_001140.json:
+```json
+{
+    "body": "Perfect.",
+    "created_at": "2015-08-25T13:49:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1140",
+    "user": "kartikv"
+}
+```
 
 Perfect.
 
 
+
 ---
 
-Comment by vbraun created at 2015-08-26 03:00:18
+archive/issue_comments_001141.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-08-26T03:00:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/252#issuecomment-1141",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

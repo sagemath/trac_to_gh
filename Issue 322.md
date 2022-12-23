@@ -1,19 +1,44 @@
 # Issue 322: Have global code page for Notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/322
-
-Original creator: TimothyClemans
-
-Original creation time: 2007-03-15 09:20:37
-
+archive/issues_000322.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCreate a system for adding code to a notebook that can be executed by code in any cell in the worksheet. Before a chuck of code could become global the system would check it to make sure it does overwrite current SAGE functions, variables, and classes. Maybe the system could do that by executing the code and using the name space key in the various dictionaries to then see if a not found error is returned when name space called. It would be also be important for it to be easy to download a code package to be made global. I want this so I can make apps and use them from any cell in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/322\n\n",
+    "created_at": "2007-03-15T09:20:37Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Have global code page for Notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/322",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 Create a system for adding code to a notebook that can be executed by code in any cell in the worksheet. Before a chuck of code could become global the system would check it to make sure it does overwrite current SAGE functions, variables, and classes. Maybe the system could do that by executing the code and using the name space key in the various dictionaries to then see if a not found error is returned when name space called. It would be also be important for it to be easy to download a code package to be made global. I want this so I can make apps and use them from any cell in the notebook.
 
+Issue created by migration from https://trac.sagemath.org/ticket/322
+
+
+
+
 
 ---
 
-Comment by was created at 2007-03-21 22:46:42
+archive/issue_comments_001526.json:
+```json
+{
+    "body": "This functionality is already provided in the SAGE notebook by putting #auto somewhere\nin a cell.  Also, using %hideall one can even hide the global code.  \n\nIt's odd, because I've seen you use this functionality in your example sage notebook\napplications, so you know about it.  Hmm.",
+    "created_at": "2007-03-21T22:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1526",
+    "user": "was"
+}
+```
 
 This functionality is already provided in the SAGE notebook by putting #auto somewhere
 in a cell.  Also, using %hideall one can even hide the global code.  
@@ -22,50 +47,127 @@ It's odd, because I've seen you use this functionality in your example sage note
 applications, so you know about it.  Hmm.
 
 
+
 ---
 
-Comment by was created at 2007-03-21 22:46:42
+archive/issue_comments_001527.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-03-21T22:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1527",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-03-26 03:58:37
+archive/issue_comments_001528.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-03-26T03:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1528",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-03-26 03:58:37
+archive/issue_comments_001529.json:
+```json
+{
+    "body": "I said notebook not worksheet. I'm talking about writing a function or class in a global worksheet from I could use from anyother worksheet. #auto has nothing to do with global just writing a function in a cell makes that function global for the whole worksheet that the function is defined in.",
+    "created_at": "2007-03-26T03:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1529",
+    "user": "TimothyClemans"
+}
+```
 
 I said notebook not worksheet. I'm talking about writing a function or class in a global worksheet from I could use from anyother worksheet. #auto has nothing to do with global just writing a function in a cell makes that function global for the whole worksheet that the function is defined in.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-03-26 03:58:37
+archive/issue_comments_001530.json:
+```json
+{
+    "body": "Resolution changed from invalid to ",
+    "created_at": "2007-03-26T03:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1530",
+    "user": "TimothyClemans"
+}
+```
 
 Resolution changed from invalid to 
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 13:59:45
+archive/issue_comments_001531.json:
+```json
+{
+    "body": "See https://github.com/sagemath/sagenb/issues/263 where I suggest that the easiest thing to do is have a 'global' (per user) DATA directory just like there is the per-worksheet DATA directory.",
+    "created_at": "2014-11-20T13:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1531",
+    "user": "kcrisman"
+}
+```
 
 See https://github.com/sagemath/sagenb/issues/263 where I suggest that the easiest thing to do is have a 'global' (per user) DATA directory just like there is the per-worksheet DATA directory.
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_001532.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1532",
+    "user": "boothby"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_001533.json:
+```json
+{
+    "body": "Closing deprecated notebook tickets",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/322",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/322#issuecomment-1533",
+    "user": "boothby"
+}
+```
 
 Closing deprecated notebook tickets

@@ -1,11 +1,21 @@
 # Issue 368: {{{ }}} for worksheet text mode won't cut it.
 
-Issue created by migration from https://trac.sagemath.org/ticket/368
-
-Original creator: was
-
-Original creation time: 2007-05-18 16:12:13
-
+archive/issues_000368.json:
+```json
+{
+    "body": "Assignee: boothby\n\nTry this\n\n\n```\nvar('x a b')\nshow(solve(x^3 + c*x + b ==0, x)[0])\n```\n\n\nThen eval, click edit and save.\nIt doesn't work since the output of show\nhas }}} in it -- it's part of valid latex.\n\nWhat are we to do?\n\nIssue created by migration from https://trac.sagemath.org/ticket/368\n\n",
+    "created_at": "2007-05-18T16:12:13Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "{{{ }}} for worksheet text mode won't cut it.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/368",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Try this
@@ -23,17 +33,43 @@ has }}} in it -- it's part of valid latex.
 
 What are we to do?
 
+Issue created by migration from https://trac.sagemath.org/ticket/368
+
+
+
+
 
 ---
 
-Comment by was created at 2007-05-31 14:55:32
+archive/issue_comments_001772.json:
+```json
+{
+    "body": "Fixed by requiring }}} to have a newline before it.  That's hackish, but better than\nnothing.",
+    "created_at": "2007-05-31T14:55:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/368",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/368#issuecomment-1772",
+    "user": "was"
+}
+```
 
 Fixed by requiring }}} to have a newline before it.  That's hackish, but better than
 nothing.
 
 
+
 ---
 
-Comment by was created at 2007-05-31 14:55:32
+archive/issue_comments_001773.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-05-31T14:55:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/368",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/368#issuecomment-1773",
+    "user": "was"
+}
+```
 
 Resolution: fixed

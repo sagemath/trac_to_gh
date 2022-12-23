@@ -1,11 +1,21 @@
 # Issue 391: Bundle adding apropos to SAGE -- try `conductor**?' for an example.
 
-Issue created by migration from https://trac.sagemath.org/ticket/391
-
-Original creator: ncalexan
-
-Original creation time: 2007-06-27 05:31:26
-
+archive/issues_000391.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: apropos ipython search\n\nThis bundle adds an apropos command to SAGE -- try `conductor**?' for an example.\n\nThe implementation is in sage.misc.apropos.  Some code that needs to be fast is in sage.misc.apropos_internals, a Pyrex module.\n\nThis bundle addresses some annoyances with IPython's introspection module.\n\nSee the hg log for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/391\n\n",
+    "created_at": "2007-06-27T05:31:26Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Bundle adding apropos to SAGE -- try `conductor**?' for an example.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/391",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 Keywords: apropos ipython search
@@ -18,8 +28,25 @@ This bundle addresses some annoyances with IPython's introspection module.
 
 See the hg log for details.
 
+Issue created by migration from https://trac.sagemath.org/ticket/391
+
+
+
+
 
 ---
+
+archive/issue_comments_001915.json:
+```json
+{
+    "body": "Attachment\n\nSummary of bundle, in a nutshell:\n\nsage: conductor**?\nsage.all.mwrank_EllipticCurve.conductor Command: Return the conductor of this curve, computed using Cremona's implementation of Tate's algorithm.\nsage.databases.cremona.LargeCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.LargeCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.LargeCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.databases.cremona.MiniCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.MiniCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.MiniCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.modular.dirichlet.DirichletCharacter.conductor Command: Computes and returns the conductor of this character.\nsage.schemes.elliptic_curves.ell_rational_field.EllipticCurve_rational_field.conductor Command: Returns the conductor of the elliptic curve.\n\nLists all callable things (classes, functions, etc) that have\nconductor in the last part of their dotted name.\n\nThe bundle also contains several enhancements to IPython's\nintrospection.  For example:\n\nsage: ?y\nParent:\t\tSymbolic Ring :: <class 'sage.calculus.calculus.SymbolicExpressionRing_class'>\nType:\t\tSymbolicVariable\nBase Class:\t<class 'sage.calculus.calculus.SymbolicVariable'>\nString Form:\ty\nNamespace:\tInteractive\nDocstring:\n    <no docstring>\n\nDisplays y's parent, which is very helpful.\n\nsage: ?2\nParent:\t\tInteger Ring :: <type 'sage.rings.integer_ring.IntegerRing_class'>\nType:\t\tInteger\nBase Class:\t<type 'sage.rings.integer.Integer'>\nString Form:\t2\nDocstring:\n    <no docstring>\n\nInterrogating literals works, more or less.\n\nsage: ?factor(6)\nType:\t\tFactorization\nBase Class:\t<class 'sage.structure.factorization.Factorization'>\nString Form:\t2 * 3\nLength:\t\t2\nDocstring:\n    <no docstring>\n\nDoes what you'd expect, even if it will mangle iterators in strange\ncorner cases.",
+    "created_at": "2007-06-27T05:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1915",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
@@ -75,9 +102,20 @@ Does what you'd expect, even if it will mangle iterators in strange
 corner cases.
 
 
+
 ---
 
-Comment by was created at 2007-06-30 04:52:03
+archive/issue_comments_001916.json:
+```json
+{
+    "body": "Hi Nick,\n\n(1) I applied the patch and when I do \n\n   conductor**?\n\nI get a segfault that results from an infinite loop; at least\nfor me, this happens in the function given below, which recursively calls\nitself and gets in an infinite loop.   This happens for me on \n32-bit Linux on both SAGE-2.6 vanilla and my latest SAGE-2.7\ndevel tree. \n\n\n\n```\n  cdef propos_name(object obj, object hist, object names, object matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if PyDict_Contains(names, objid):\n         return <object>PyDict_GetItem(names, objid)\n     hist_record = <object>PyDict_GetItem(hist, objid)\n     parent_name = apropos_name(<object>PyTuple_GetItem(hist_record, 1), hist, names, matches)\n     name = parent_name + '.' + <object>PyTuple_GetItem(hist_record, 2)\n     PyList_Append(matches, (name, obj))\n     PyDict_SetItem(names, objid, name)\n     return name\n```\n\n\n\n2. The style of the above code surprises me.  The whole point of \nPyrex (and me choosing Pyrex for SAGE) is so that one never ever has\nto write code like that.  Do you really think it is actually \nsignificantly more readable or faster?   I personally find the \nfollowing, which is equivalent, more readable:\n\n  cdef propos_name(obj, hist, names, matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if objid in names:\n         return names[objid]\n     hist_record = hist[objid]\n     parent_name = apropos_name(hist_record[1], hist, names, matches)\n     name = parent_name + '.' + hist_record[2]\n     matches.append((name, obj))\n     names[objid] = name\n     return name\n\n\n -- William",
+    "created_at": "2007-06-30T04:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1916",
+    "user": "was"
+}
+```
 
 Hi Nick,
 
@@ -129,16 +167,38 @@ following, which is equivalent, more readable:
  -- William
 
 
+
 ---
 
-Comment by was created at 2007-11-18 04:02:00
+archive/issue_comments_001917.json:
+```json
+{
+    "body": "NOT ready -- Nick never addressed my comments from \"06/29/2007 09:52:03 PM\".  The code is unpleasant (in many ways) since it directly is written against the python/c api instead of using Cython as it should be used.  Also, I got that segfault (though I haven't retested this).",
+    "created_at": "2007-11-18T04:02:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1917",
+    "user": "was"
+}
+```
 
 NOT ready -- Nick never addressed my comments from "06/29/2007 09:52:03 PM".  The code is unpleasant (in many ways) since it directly is written against the python/c api instead of using Cython as it should be used.  Also, I got that segfault (though I haven't retested this).
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-19 23:01:45
+archive/issue_comments_001918.json:
+```json
+{
+    "body": "Nick said:\n\n```\nAt some point I will resubmit -- I'm just too busy right now.  I  \ndon't know what invalidate means but I'd appreciate it if the ticket  \n(and the patch!) stayed in TRAC. \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-19T23:01:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1918",
+    "user": "mabshoff"
+}
+```
 
 Nick said:
 
@@ -154,9 +214,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncalexan created at 2007-11-19 23:06:40
+archive/issue_comments_001919.json:
+```json
+{
+    "body": "Sorry William,\n\nYour comments are all valid.  Segfaults of course can't be applied :)\n\nThe unorthodox style (calling the C Python API directly) decreases the runtime by a large constant factor -- more than 10 times on my old machine.  I'll rewrite against Cython and not worry about that last constant factor.\n\nSoon :)\n\nNick",
+    "created_at": "2007-11-19T23:06:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1919",
+    "user": "ncalexan"
+}
+```
 
 Sorry William,
 
@@ -169,43 +240,109 @@ Soon :)
 Nick
 
 
+
 ---
 
-Comment by cwitty created at 2007-11-27 04:54:34
+archive/issue_comments_001920.json:
+```json
+{
+    "body": "Changing assignee from was to ncalexan.",
+    "created_at": "2007-11-27T04:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1920",
+    "user": "cwitty"
+}
+```
 
 Changing assignee from was to ncalexan.
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-21 22:31:21
+archive/issue_comments_001921.json:
+```json
+{
+    "body": "I think we can mark this as invalid / wontfix since I can't access the bundle.  For something similar, see the Python package \"grasp\".",
+    "created_at": "2013-07-21T22:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1921",
+    "user": "mhansen"
+}
+```
 
 I think we can mark this as invalid / wontfix since I can't access the bundle.  For something similar, see the Python package "grasp".
 
 
+
 ---
 
-Comment by chapoton created at 2018-04-02 12:54:36
+archive/issue_comments_001922.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2018-04-02T12:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1922",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2018-04-02 12:54:36
+archive/issue_comments_001923.json:
+```json
+{
+    "body": "Let us get rid of this very old ticket.",
+    "created_at": "2018-04-02T12:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1923",
+    "user": "chapoton"
+}
+```
 
 Let us get rid of this very old ticket.
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_001924.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1924",
+    "user": "vdelecroix"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_001925.json:
+```json
+{
+    "body": "closing positively reviewed duplicates",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/391",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1925",
+    "user": "vdelecroix"
+}
+```
 
 closing positively reviewed duplicates

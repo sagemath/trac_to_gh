@@ -1,11 +1,21 @@
 # Issue 401: list * integer works but integer * list doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/401
-
-Original creator: dmharvey
-
-Original creation time: 2007-07-10 00:16:34
-
+archive/issues_000401.json:
+```json
+{
+    "body": "Assignee: somebody\n\nIn SAGE 2.6, you can do list * integer but not integer * list. Either they should both work (more like python) or neither of them should work (for internal consistency).\n\n\n```\nsage: [3, 4, 5] * 2\n [3, 4, 5, 3, 4, 5]\n\nsage: 2 * [3, 4, 5]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/sage-2.6/<ipython console> in <module>()\n\n/home/dmharvey/sage-2.6/element.pyx in element.RingElement.__mul__()\n\n/home/dmharvey/sage-2.6/element.pyx in element.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'list'>'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/401\n\n",
+    "created_at": "2007-07-10T00:16:34Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "list * integer works but integer * list doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/401",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 In SAGE 2.6, you can do list * integer but not integer * list. Either they should both work (more like python) or neither of them should work (for internal consistency).
@@ -30,17 +40,43 @@ sage: 2 * [3, 4, 5]
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/401
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-24 13:05:57
+archive/issue_comments_001975.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2007-08-24T13:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/401#issuecomment-1975",
+    "user": "mabshoff"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-24 13:05:57
+archive/issue_comments_001976.json:
+```json
+{
+    "body": "Work's for me with Sage 2.8.2:\n\n```\nsage: [3,4,5]*3\n[3, 4, 5, 3, 4, 5, 3, 4, 5]\nsage: 3*[4,5,6]\n[4, 5, 6, 4, 5, 6, 4, 5, 6]\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-24T13:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/401",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/401#issuecomment-1976",
+    "user": "mabshoff"
+}
+```
 
 Work's for me with Sage 2.8.2:
 

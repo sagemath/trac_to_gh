@@ -1,49 +1,118 @@
 # Issue 338: In doc browser make hyper links to referenced code in SAGE library
 
-Issue created by migration from https://trac.sagemath.org/ticket/338
-
-Original creator: TimothyClemans
-
-Original creation time: 2007-03-31 17:42:35
-
+archive/issues_000338.json:
+```json
+{
+    "body": "Assignee: boothby\n\nFor example:\nOn page http://sagenb.com/doc_browser?/const/?node72.html, reference to sage/modular/dims.py would be a hyper link to the actual code.\nOn page http://sagenb.com/doc_browser?/prog/?node15.html, reference to SAGE_ROOT/devel/sage/sage/graphs/graph.py would be a hyper link to the actual code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/338\n\n",
+    "created_at": "2007-03-31T17:42:35Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "In doc browser make hyper links to referenced code in SAGE library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/338",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 For example:
 On page http://sagenb.com/doc_browser?/const/?node72.html, reference to sage/modular/dims.py would be a hyper link to the actual code.
 On page http://sagenb.com/doc_browser?/prog/?node15.html, reference to SAGE_ROOT/devel/sage/sage/graphs/graph.py would be a hyper link to the actual code.
 
+Issue created by migration from https://trac.sagemath.org/ticket/338
+
+
+
+
 
 ---
 
-Comment by TimothyClemans created at 2007-03-31 18:40:27
+archive/issue_comments_001658.json:
+```json
+{
+    "body": "Changing assignee from boothby to TimothyClemans.",
+    "created_at": "2007-03-31T18:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1658",
+    "user": "TimothyClemans"
+}
+```
 
 Changing assignee from boothby to TimothyClemans.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-03-31 18:40:27
+archive/issue_comments_001659.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-03-31T18:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1659",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by kini created at 2012-06-23 09:18:57
+archive/issue_comments_001660.json:
+```json
+{
+    "body": "The URLs in the ticket description don't exist.",
+    "created_at": "2012-06-23T09:18:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1660",
+    "user": "kini"
+}
+```
 
 The URLs in the ticket description don't exist.
 
 
+
 ---
 
-Comment by kini created at 2012-06-23 09:18:57
+archive/issue_comments_001661.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2012-06-23T09:18:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1661",
+    "user": "kini"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-29 20:48:29
+archive/issue_comments_001662.json:
+```json
+{
+    "body": "This can be closed.  Keshav, I think this is WELL before you were aware of Sage - it dates from the days when there was no login process of any kind, if I'm not mistaken.  Ah, those were the days ;-)\n\nAnyway, the real issue is that although within each piece of the Sage documentation it's easy to create hyperlinks, but not between different sets (e.g. the developer guide and the reference manual).  For instance, the first example is referring to [here](http://sagenb.org/doc/static/constructions/modular_forms.html?highlight=modular#genus-formulas).  But that has been discussed before, and this is too vague and outdated to be able to really doable.\n\nOr what do you think?  Could this ticket be repurposed to the actual problem, and is that worthwhile?",
+    "created_at": "2013-01-29T20:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1662",
+    "user": "kcrisman"
+}
+```
 
 This can be closed.  Keshav, I think this is WELL before you were aware of Sage - it dates from the days when there was no login process of any kind, if I'm not mistaken.  Ah, those were the days ;-)
 
@@ -52,22 +121,55 @@ Anyway, the real issue is that although within each piece of the Sage documentat
 Or what do you think?  Could this ticket be repurposed to the actual problem, and is that worthwhile?
 
 
+
 ---
 
-Comment by chapoton created at 2018-04-17 07:44:31
+archive/issue_comments_001663.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2018-04-17T07:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1663",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_001664.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1664",
+    "user": "vdelecroix"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_001665.json:
+```json
+{
+    "body": "closing positively reviewed duplicates",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/338#issuecomment-1665",
+    "user": "vdelecroix"
+}
+```
 
 closing positively reviewed duplicates

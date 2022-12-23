@@ -1,11 +1,21 @@
 # Issue 325: LLL for integer matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/325
-
-Original creator: nbruin
-
-Original creation time: 2007-03-21 00:54:16
-
+archive/issues_000325.json:
+```json
+{
+    "body": "Assignee: was\n\nCurrently, if you make an integer matrix:\n\n```\nA=Matrix(Integers(),3,3,[1,2,3,4,5,6,7,8,9])\n```\n\nthere seems no direct way to get an LLL reduced basis of its row or column space (whichever is appropriate for SAGE).\nThere is `ntl.mat_ZZ.LLL`, which may or may not be good. pari also has LLL implementations.\n\nIt's really worth it to have a good integer LLL easily accessible in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/325\n\n",
+    "created_at": "2007-03-21T00:54:16Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "LLL for integer matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/325",
+    "user": "nbruin"
+}
+```
 Assignee: was
 
 Currently, if you make an integer matrix:
@@ -19,10 +29,25 @@ There is `ntl.mat_ZZ.LLL`, which may or may not be good. pari also has LLL imple
 
 It's really worth it to have a good integer LLL easily accessible in SAGE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/325
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-06 23:11:09
+archive/issue_comments_001538.json:
+```json
+{
+    "body": "I believe this might also be available via IML.\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-06T23:11:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1538",
+    "user": "mabshoff"
+}
+```
 
 I believe this might also be available via IML.
 
@@ -31,13 +56,37 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_001539.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-09-20T23:29:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1539",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-09-20 23:29:16
+archive/issue_comments_001540.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-20T23:29:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1540",
+    "user": "was"
+}
+```
 
 Resolution: fixed

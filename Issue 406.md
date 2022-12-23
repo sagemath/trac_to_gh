@@ -1,11 +1,21 @@
 # Issue 406: notebook -- improve support for other system modes
 
-Issue created by migration from https://trac.sagemath.org/ticket/406
-
-Original creator: was
-
-Original creation time: 2007-07-27 03:01:47
-
+archive/issues_000406.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> Some other minor issues about using GAP within the notebook, under\n> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at\n> the top.  The following things don't work correctly:\n> \n> 0) If I type something that gives an error in GAP, the error\n> message is buried in a python exception/backtrace.\n> \n> 1) If I type \"?SymmetricGroup\" (which works within GAP), all I see\n> is\n> \n>    Help: Showing `Reference: SymmetricGroup'\n>    Page from 104\n> \n> It's similar with other \"?foo\" commands.\n> \n> 2) If I type \"SymmetricGroup?\" and hit tab, it shows me help about\n> sage's wrapped SymmetricGroup function.  I don't think this will\n> be helpful for functions not wrapped by sage.\n> \n> 3) When I try to use tab completion, it inserts \"gap.\" before the\n> command (and probably ignores functions not wrapper by sage).\n\nI am aware of each of these issues (which also happen with\nthe other interfaces).  They are *not* features in my mind, but\nbugs, and they need to be fixed by somebody (either me or\nsomebody else). \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/406\n\n",
+    "created_at": "2007-07-27T03:01:47Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook -- improve support for other system modes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/406",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -42,17 +52,43 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/406
+
+
+
+
 
 ---
 
-Comment by jdc created at 2007-07-27 16:46:15
+archive/issue_comments_001994.json:
+```json
+{
+    "body": "4) If I use GAP Print(...) commands in a short notebook entry, I see the output.  But if the entry is longer, I don't see the output.",
+    "created_at": "2007-07-27T16:46:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1994",
+    "user": "jdc"
+}
+```
 
 4) If I use GAP Print(...) commands in a short notebook entry, I see the output.  But if the entry is longer, I don't see the output.
 
 
+
 ---
 
-Comment by was created at 2008-05-10 21:27:18
+archive/issue_comments_001995.json:
+```json
+{
+    "body": "In order to focus this ticket, I've broken up each issue into separate\ntickets and made this ticket just issue 3 in the original description, which is below\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> Some other minor issues about using GAP within the notebook, under\n> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at\n> the top.  The following things don't work correctly:\n> \n> 0) If I type something that gives an error in GAP, the error\n> message is buried in a python exception/backtrace.\n> \n> 1) If I type \"?SymmetricGroup\" (which works within GAP), all I see\n> is\n> \n>    Help: Showing `Reference: SymmetricGroup'\n>    Page from 104\n> \n> It's similar with other \"?foo\" commands.\n> \n> 2) If I type \"SymmetricGroup?\" and hit tab, it shows me help about\n> sage's wrapped SymmetricGroup function.  I don't think this will\n> be helpful for functions not wrapped by sage.\n> \n> 3) When I try to use tab completion, it inserts \"gap.\" before the\n> command (and probably ignores functions not wrapper by sage).\n\nI am aware of each of these issues (which also happen with\nthe other interfaces).  They are *not* features in my mind, but\nbugs, and they need to be fixed by somebody (either me or\nsomebody else). \n\nWilliam\n```\n",
+    "created_at": "2008-05-10T21:27:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1995",
+    "user": "was"
+}
+```
 
 In order to focus this ticket, I've broken up each issue into separate
 tickets and made this ticket just issue 3 in the original description, which is below
@@ -91,73 +127,163 @@ William
 
 
 
+
 ---
+
+archive/issue_comments_001996.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-10T22:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1996",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-05-10 22:13:33
+archive/issue_comments_001997.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-05-10T22:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1997",
+    "user": "was"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by was created at 2008-05-10 22:13:33
+archive/issue_comments_001998.json:
+```json
+{
+    "body": "Changing type from enhancement to defect.",
+    "created_at": "2008-05-10T22:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1998",
+    "user": "was"
+}
+```
 
 Changing type from enhancement to defect.
 
 
+
 ---
 
-Comment by was created at 2008-05-10 22:13:33
+archive/issue_comments_001999.json:
+```json
+{
+    "body": "Trac #406:\n\n1. Fix the problem where hitting tab when switched into another worksheet\n   mode sticks system. at the front of each completion.  Similar fixes \n   for help via foo([tab key}] and source code via foo??[tab]. \n\n2. When switching systems, get rid of the very annoying \n   confirmation dialog.   (Just commented it out for now.)\n\n3. Fix *very serious* bug that prevented loading a worksheet that was set\n   to an optional mode.   In sage-3.0.1 loading a worksheet that is in\n   an optional mode (e.g., mathematica or maple or Magma, say) was\n   completely broken.  This patch fixes that problem. \n\nNOTE: This patch has no new tests illustrating that ift fixes\nanything, since we have no automated way of testing any of the\nabove right now.",
+    "created_at": "2008-05-10T22:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-1999",
+    "user": "was"
+}
+```
 
 Trac #406:
 
-    1. Fix the problem where hitting tab when switched into another worksheet
-       mode sticks system. at the front of each completion.  Similar fixes 
-       for help via foo([tab key}] and source code via foo??[tab]. 
+1. Fix the problem where hitting tab when switched into another worksheet
+   mode sticks system. at the front of each completion.  Similar fixes 
+   for help via foo([tab key}] and source code via foo??[tab]. 
 
-    2. When switching systems, get rid of the very annoying 
-       confirmation dialog.   (Just commented it out for now.)
+2. When switching systems, get rid of the very annoying 
+   confirmation dialog.   (Just commented it out for now.)
 
-    3. Fix *very serious* bug that prevented loading a worksheet that was set
-       to an optional mode.   In sage-3.0.1 loading a worksheet that is in
-       an optional mode (e.g., mathematica or maple or Magma, say) was
-       completely broken.  This patch fixes that problem. 
+3. Fix *very serious* bug that prevented loading a worksheet that was set
+   to an optional mode.   In sage-3.0.1 loading a worksheet that is in
+   an optional mode (e.g., mathematica or maple or Magma, say) was
+   completely broken.  This patch fixes that problem. 
 
 NOTE: This patch has no new tests illustrating that ift fixes
 anything, since we have no automated way of testing any of the
 above right now.
 
 
+
 ---
 
-Comment by nbruin created at 2008-05-11 00:06:42
+archive/issue_comments_002000.json:
+```json
+{
+    "body": "Patch works for me -- I have only tested that tab completion for magma is now useful.\nIn terms of refereeing the patch, I only understood the x[len(prepend):] bit and that seems plausible to me.",
+    "created_at": "2008-05-11T00:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-2000",
+    "user": "nbruin"
+}
+```
 
 Patch works for me -- I have only tested that tab completion for magma is now useful.
 In terms of refereeing the patch, I only understood the x[len(prepend):] bit and that seems plausible to me.
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-12 09:04:53
+archive/issue_comments_002001.json:
+```json
+{
+    "body": "This seems to fix the problem (part 3, that is, the others are #3152).  I tested it in R mode, latex mode, gap mode, and python mode.  All of these saved/reloaded OK, and were robust under switching between modes.  Command completion appears fixed in R and gap (btw it would be pretty cool to have latex command completion but I assume that would be a pain).  \nSince this is a second opinion I think it is time to give a full positive review and start merging it in.",
+    "created_at": "2008-05-12T09:04:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-2001",
+    "user": "mhampton"
+}
+```
 
 This seems to fix the problem (part 3, that is, the others are #3152).  I tested it in R mode, latex mode, gap mode, and python mode.  All of these saved/reloaded OK, and were robust under switching between modes.  Command completion appears fixed in R and gap (btw it would be pretty cool to have latex command completion but I assume that would be a pain).  
 Since this is a second opinion I think it is time to give a full positive review and start merging it in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-12 10:59:39
+archive/issue_comments_002002.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-12T10:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-2002",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-12 10:59:39
+archive/issue_comments_002003.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-12T10:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/406",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/406#issuecomment-2003",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

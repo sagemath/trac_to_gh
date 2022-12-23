@@ -1,11 +1,21 @@
 # Issue 316: bug in modular symbols projection (probably really in linear algebra)
 
-Issue created by migration from https://trac.sagemath.org/ticket/316
-
-Original creator: was
-
-Original creation time: 2007-03-11 05:26:38
-
+archive/issues_000316.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\n```\ne = EllipticCurve('34a')\n```\n\n\n\n```\nm = ModularSymbols(34); s = m.cuspidal_submodule()\n```\n\n\n\n```\nd = s.decomposition(7)\n```\n\n\n\n```\nd\n///\n[\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field,\nModular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n]\n```\n\n\n\n```\na = d[0]; a\n///\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n```\n\n\n\n```\npi = a.projection()\n```\n\n\n\n```\npi(m([0,oo]))\n///\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/316\n\n",
+    "created_at": "2007-03-11T05:26:38Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in modular symbols projection (probably really in linear algebra)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/316",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -67,23 +77,60 @@ SAGE will now terminate (sorry).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/316
+
+
+
+
 
 ---
 
-Comment by was created at 2007-03-11 05:26:53
+archive/issue_comments_001510.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-03-11T05:26:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1510",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2007-08-18 21:16:39
+archive/issue_comments_001511.json:
+```json
+{
+    "body": "This is totally fixed in sage-2.8.",
+    "created_at": "2007-08-18T21:16:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1511",
+    "user": "was"
+}
+```
 
 This is totally fixed in sage-2.8.
 
 
+
 ---
 
-Comment by was created at 2007-08-18 21:16:39
+archive/issue_comments_001512.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-18T21:16:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1512",
+    "user": "was"
+}
+```
 
 Resolution: fixed

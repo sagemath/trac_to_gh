@@ -1,34 +1,81 @@
 # Issue 314: raw-input in notebook compatible with command line
 
-Issue created by migration from https://trac.sagemath.org/ticket/314
-
-Original creator: TimothyClemans
-
-Original creation time: 2007-03-10 23:18:05
-
+archive/issues_000314.json:
+```json
+{
+    "body": "Assignee: boothby\n\nWhile this may just simply be impossible, it would be nice if I could create interactive programs in SAGE that worked both in the command line interface and the notebook interface. The purpose of this enhancement would be for games, quizzes, wizards, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/314\n\n",
+    "created_at": "2007-03-10T23:18:05Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "raw-input in notebook compatible with command line",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/314",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 While this may just simply be impossible, it would be nice if I could create interactive programs in SAGE that worked both in the command line interface and the notebook interface. The purpose of this enhancement would be for games, quizzes, wizards, etc.
 
+Issue created by migration from https://trac.sagemath.org/ticket/314
+
+
+
+
 
 ---
 
-Comment by was created at 2007-03-21 23:10:04
+archive/issue_comments_001505.json:
+```json
+{
+    "body": "This is a Python question not a SAGE question -- and yes there are billions of ways\nto create interactive Python programs.  From this point of view, SAGE is just a Python\nlibrary.",
+    "created_at": "2007-03-21T23:10:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/314#issuecomment-1505",
+    "user": "was"
+}
+```
 
 This is a Python question not a SAGE question -- and yes there are billions of ways
 to create interactive Python programs.  From this point of view, SAGE is just a Python
 library.
 
 
+
 ---
 
-Comment by was created at 2007-03-21 23:10:04
+archive/issue_comments_001506.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-03-21T23:10:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/314#issuecomment-1506",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by schilly created at 2011-03-21 15:27:05
+archive/issue_comments_001507.json:
+```json
+{
+    "body": "Just a note because it came up on sage-devel: In the notebook, one could use JavaScript's window.prompt() function to trigger input boxes just like Python's raw_input(). To make this working, this would require an round-trip to the client triggered by something in the input program. Therefore, enhancements on the client and server side of the notebook are necessary. I leave it as closed, if somebody has a plan how to do it for real feel free to open it.",
+    "created_at": "2011-03-21T15:27:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/314#issuecomment-1507",
+    "user": "schilly"
+}
+```
 
 Just a note because it came up on sage-devel: In the notebook, one could use JavaScript's window.prompt() function to trigger input boxes just like Python's raw_input(). To make this working, this would require an round-trip to the client triggered by something in the input program. Therefore, enhancements on the client and server side of the notebook are necessary. I leave it as closed, if somebody has a plan how to do it for real feel free to open it.

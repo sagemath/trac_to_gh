@@ -1,11 +1,21 @@
 # Issue 225: loading files and worksheets from urls
 
-Issue created by migration from https://trac.sagemath.org/ticket/225
-
-Original creator: was
-
-Original creation time: 2007-01-28 05:13:49
-
+archive/issues_000225.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn Sat, 27 Jan 2007 21:02:14 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:\n\n>\n> Could a system be added for loading code from a url \n\nYes. \n\n> and uploading\n> worksheets from urls?\n\nYes. \n\nGreat idea!  It wouldn't be hard either, since I just\nadded (for sage-1.9.1) a file remote_file.py with this\nfunction, which would make adding what you suggest\nquite easy.   This will have to wait until > sage-2.0 though.\nSo this is now trac # \n\ndef get_remote_file(filename, verbose=True):\n    \"\"\"\n    INPUT:\n        filename -- the URL of a file on the web, e.g.,\n             \"http://modular.math.washington.edu/myfile.txt\"\n        verbose -- whether to display download status\n    OUTPUT:\n        creates a file in the temp directory and returns the\n        absolute path to that file.\n    \"\"\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/225\n\n",
+    "created_at": "2007-01-28T05:13:49Z",
+    "labels": [
+        "user interface",
+        "major",
+        "enhancement"
+    ],
+    "title": "loading files and worksheets from urls",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/225",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -41,15 +51,43 @@ def get_remote_file(filename, verbose=True):
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/225
+
+
+
+
 
 ---
+
+archive/issue_comments_001003.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-08-23T06:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1003",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-08-23 06:01:35
+archive/issue_comments_001004.json:
+```json
+{
+    "body": "\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1187841524 25200\n# Node ID a1d6af5dbe318ece8a09838a6b27779dfe648439\n# Parent  969de27b13ba72b3033415ec1929a85d4d5ba57f\nMore work on trac #225.\n\ndiff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py\n--- a/sage/server/notebook/worksheet.py Wed Aug 22 20:56:36 2007 -0700\n+++ b/sage/server/notebook/worksheet.py Wed Aug 22 20:58:44 2007 -0700\n@@ -22,6 +22,8 @@ import traceback\n import traceback\n import time\n import crypt\n+\n+import sage.misc.remote_file as remote_file\n\n import bz2\n\n@@ -1775,6 +1777,8 @@ class Worksheet:\n         return [self.directory() + '/data/'] + [D + x for x in os.listdir(D)]\n\n     def hunt_file(self, filename):\n+        if filename.lower().startswith('http://'):\n+            filename = remote_file.get_remote_file(filename)\n         if not os.path.exists(filename):\n             fn = os.path.split(filename)[-1]\n             for D in self.load_path():\n```\n",
+    "created_at": "2007-08-23T06:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1004",
+    "user": "was"
+}
+```
 
 
 ```
@@ -85,16 +123,38 @@ diff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py
 
 
 
+
 ---
 
-Comment by was created at 2007-08-23 06:01:35
+archive/issue_comments_001005.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-23T06:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1005",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-23 06:23:06
+archive/issue_comments_001006.json:
+```json
+{
+    "body": "\n```\n[07:40] <mabshoff> What about #255 - I thing that works by now, too.\n[07:40] <mabshoff> Sorry, #225\n[07:40] <was_> That's how I always do it, actually.\n[07:41] <was_> #225 is only halfway done.\n[07:41] <was_> to finish, this need to work:\n[07:41] <mabshoff> okay. Should I target it for 2.9?\n[07:41] <was_> load \"http://sage.math.washington.edu/home/was/a.sage\"\n[07:41] <mabshoff> ok\n[07:41] <was_> I bet I can implement it in 5 minutes or less.  Whatch.\n[07:42] <mabshoff> Maybe I should ask you about more tickets :)\n[07:49] <was_> ok, done.\n[07:49] <mabshoff> :)\n[07:50] <mabshoff> I will quote in the ticket.\n[07:50] <was_> except i didn't get to test it from the notebook, since my local install is not done upgrading...\n[07:50] <was_> it took 7 minutes.\n[07:50] <mabshoff> I guess no cookie for you then :)\n[07:51] <was_> oh well.  i'll try harder next time.\n```\n\n\n:)",
+    "created_at": "2007-08-23T06:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/225",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1006",
+    "user": "mabshoff"
+}
+```
 
 
 ```

@@ -1,11 +1,21 @@
 # Issue 273: sage-location path extraction thrown off by extra "local"
 
-Issue created by migration from https://trac.sagemath.org/ticket/273
-
-Original creator: nbruin
-
-Original creation time: 2007-02-21 02:05:02
-
+archive/issues_000273.json:
+```json
+{
+    "body": "Assignee: was\n\nline 35 in sage-location tries to split off SAGE-ROOT by looking for the first occurrence of\n\"local/\" in the string. This fails if, for instance, sage is installed in\n\"/usr/local/sage/latestversion/...\"\n\nA fix that seems to work at present if to search for the last occurrence of \"local/\" instead:\n\n```\n           i = z.rfind('local/')\n```\n\n\nOne would have to check that no further \"local/\" can occur inside\n$SAGE_ROOT/local/\nin order for this criterion to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/273\n\n",
+    "created_at": "2007-02-21T02:05:02Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "sage-location path extraction thrown off by extra \"local\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/273",
+    "user": "nbruin"
+}
+```
 Assignee: was
 
 line 35 in sage-location tries to split off SAGE-ROOT by looking for the first occurrence of
@@ -23,16 +33,42 @@ One would have to check that no further "local/" can occur inside
 $SAGE_ROOT/local/
 in order for this criterion to work.
 
+Issue created by migration from https://trac.sagemath.org/ticket/273
+
+
+
+
 
 ---
 
-Comment by was created at 2007-02-24 03:06:52
+archive/issue_comments_001298.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-02-24T03:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1298",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-02-24 03:06:52
+archive/issue_comments_001299.json:
+```json
+{
+    "body": "Fixed for sage-2.2.",
+    "created_at": "2007-02-24T03:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1299",
+    "user": "was"
+}
+```
 
 Fixed for sage-2.2.

@@ -1,11 +1,21 @@
 # Issue 370: improve the documentation of show
 
-Issue created by migration from https://trac.sagemath.org/ticket/370
-
-Original creator: was
-
-Original creation time: 2007-05-19 04:56:48
-
+archive/issues_000370.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n> One suggestion I have arising from my problems is that the\n> documentation for the show command be improved.  It is a very\n> important function for most users.\n\nAgreed -- the documentation for show now is terrible.  It doesn't\neven mention that it can be used to show the typeset version of\nan object!\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/370\n\n",
+    "created_at": "2007-05-19T04:56:48Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "improve the documentation of show",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/370",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -22,10 +32,25 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/370
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-02-27 12:37:00
+archive/issue_comments_001776.json:
+```json
+{
+    "body": "What is the status of this?  Here is the current documentation when doing show?\n\n\n```\n        Show a graphics object x.\n    \n        OPTIONAL INPUT:\n            filename -- (default: None) string\n    \n        SOME OF THESE MAY APPLY:\n            dpi -- dots per inch\n            figsize -- [width, height] (same for square aspect)\n            axes -- (default: True)\n            fontsize -- positive integer\n            frame -- (default: False) draw a MATLAB-like frame around the image\n    \n        EXAMPLES:\n            sage: show(graphs(3))\n            sage: show(list(graphs(3)))\n\n```\n",
+    "created_at": "2008-02-27T12:37:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1776",
+    "user": "mhansen"
+}
+```
 
 What is the status of this?  Here is the current documentation when doing show?
 
@@ -51,16 +76,38 @@ What is the status of this?  Here is the current documentation when doing show?
 
 
 
+
 ---
 
-Comment by malb created at 2008-04-01 12:25:38
+archive/issue_comments_001777.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-01T12:25:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1777",
+    "user": "malb"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by malb created at 2008-04-01 12:25:38
+archive/issue_comments_001778.json:
+```json
+{
+    "body": "Unless the request is specified, I'm all for closing it.\n\n\n```\n[13:19] <mabshoff> malb: what is your take on #370 ?\n[13:19] <malb> it looks alright\n[13:20] <mabshoff> If you also think it should be closed as fixed please do so.\n```\n",
+    "created_at": "2008-04-01T12:25:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1778",
+    "user": "malb"
+}
+```
 
 Unless the request is specified, I'm all for closing it.
 

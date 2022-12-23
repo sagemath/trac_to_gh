@@ -1,34 +1,83 @@
 # Issue 415: ZZ.random_element(0)
 
-Issue created by migration from https://trac.sagemath.org/ticket/415
-
-Original creator: nbruin
-
-Original creation time: 2007-08-09 19:53:56
-
+archive/issues_000415.json:
+```json
+{
+    "body": "Assignee: somebody\n\nZZ.random_element(0)\n\nproduces an uncaught FPE and hence crashes sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/415\n\n",
+    "created_at": "2007-08-09T19:53:56Z",
+    "labels": [
+        "basic arithmetic",
+        "critical",
+        "bug"
+    ],
+    "title": "ZZ.random_element(0)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/415",
+    "user": "nbruin"
+}
+```
 Assignee: somebody
 
 ZZ.random_element(0)
 
 produces an uncaught FPE and hence crashes sage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/415
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-08-09 21:29:06
+archive/issue_comments_002048.json:
+```json
+{
+    "body": "hg patch",
+    "created_at": "2007-08-09T21:29:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2048",
+    "user": "malb"
+}
+```
 
 hg patch
 
 
+
 ---
+
+archive/issue_comments_002049.json:
+```json
+{
+    "body": "Attachment\n\nfixed in attached patch.",
+    "created_at": "2007-08-09T21:29:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2049",
+    "user": "malb"
+}
+```
 
 Attachment
 
 fixed in attached patch.
 
 
+
 ---
 
-Comment by malb created at 2007-08-09 21:29:57
+archive/issue_comments_002050.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-09T21:29:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/415#issuecomment-2050",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 303: modular forms bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/303
-
-Original creator: was
-
-Original creation time: 2007-03-01 17:58:02
-
+archive/issues_000303.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
+    "created_at": "2007-03-01T17:58:02Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "modular forms bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/303",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -18,16 +28,42 @@ ArithmeticError: basis vectors must be linearly independent.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/303
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-19 01:08:59
+archive/issue_comments_001449.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-19T01:08:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/303",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/303#issuecomment-1449",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-08-19 01:08:59
+archive/issue_comments_001450.json:
+```json
+{
+    "body": "Fixed for sage-2.8.2 (same fix as for #304).",
+    "created_at": "2007-08-19T01:08:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/303",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/303#issuecomment-1450",
+    "user": "was"
+}
+```
 
 Fixed for sage-2.8.2 (same fix as for #304).

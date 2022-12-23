@@ -1,19 +1,44 @@
 # Issue 420: SAGE's optional axiom package doesn't build on os x
 
-Issue created by migration from https://trac.sagemath.org/ticket/420
-
-Original creator: was
-
-Original creation time: 2007-08-10 20:20:28
-
+archive/issues_000420.json:
+```json
+{
+    "body": "Assignee: was\n\nThe title says it all. \n\nIssue created by migration from https://trac.sagemath.org/ticket/420\n\n",
+    "created_at": "2007-08-10T20:20:28Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "SAGE's optional axiom package doesn't build on os x",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/420",
+    "user": "was"
+}
+```
 Assignee: was
 
 The title says it all. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/420
+
+
+
+
 
 ---
 
-Comment by pdehaye created at 2007-08-13 08:37:28
+archive/issue_comments_002112.json:
+```json
+{
+    "body": "gcl hasn't been ported to intel macs yet.\nin short no one has created the file \naxiom4sage-0.1/lsp/gcl-2.6.8pre/h/intel-macosx.defs \n, and the file \naxiom4sage-0.1/lsp/gcl-2.6.8pre/h/powerpc-macosx.defs\nwon't do\n\nwhen trying to build, the problem appears when configure has no type to chose from.",
+    "created_at": "2007-08-13T08:37:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/420#issuecomment-2112",
+    "user": "pdehaye"
+}
+```
 
 gcl hasn't been ported to intel macs yet.
 in short no one has created the file 
@@ -25,17 +50,39 @@ won't do
 when trying to build, the problem appears when configure has no type to chose from.
 
 
+
 ---
 
-Comment by was created at 2007-08-18 23:36:52
+archive/issue_comments_002113.json:
+```json
+{
+    "body": "i fixed this on the plane to san diego.  now it works with the *new* aiom package that builds on CLISP.\n\nWilliam",
+    "created_at": "2007-08-18T23:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/420#issuecomment-2113",
+    "user": "was"
+}
+```
 
 i fixed this on the plane to san diego.  now it works with the *new* aiom package that builds on CLISP.
 
 William
 
 
+
 ---
 
-Comment by was created at 2007-08-18 23:36:52
+archive/issue_comments_002114.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-18T23:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/420#issuecomment-2114",
+    "user": "was"
+}
+```
 
 Resolution: fixed

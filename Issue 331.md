@@ -1,11 +1,21 @@
 # Issue 331: compiled implementation of dense univariate polynomial arithmetic
 
-Issue created by migration from https://trac.sagemath.org/ticket/331
-
-Original creator: dmharvey
-
-Original creation time: 2007-03-22 14:55:28
-
+archive/issues_000331.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  dmharvey@math.harvard.edu\n\nSAGE needs a compiled, well-optimised implementation of dense univariate polynomial arithmetic over a *generic* commutative base ring.\n\nThe current implementation is the python class `Polynomial_generic_dense` in `sage/rings/polynomial_element.py`.\n\nThe new implementation would probably use a python list to store the coefficients (maybe a C array? I'm not sure...), and would have optimised code for at least the following:\n\n* addition, subtraction\n* multiplication: classical algorithm, also karatsuba (but this should be optional, since it doesn't work well over certain base rings, especially where numerical stability is an issue)\n* division, at least when the base ring is a field (or for monic divisors), using classical, divide-and-conquer, possibly newton's method\n* polynomial evaluation\n* retrieval of coefficients and conversion to/from python lists\n* comparison, hashing\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/331\n\n",
+    "created_at": "2007-03-22T14:55:28Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "compiled implementation of dense univariate polynomial arithmetic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/331",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 CC:  dmharvey@math.harvard.edu
@@ -16,34 +26,71 @@ The current implementation is the python class `Polynomial_generic_dense` in `sa
 
 The new implementation would probably use a python list to store the coefficients (maybe a C array? I'm not sure...), and would have optimised code for at least the following:
 
- * addition, subtraction
- * multiplication: classical algorithm, also karatsuba (but this should be optional, since it doesn't work well over certain base rings, especially where numerical stability is an issue)
- * division, at least when the base ring is a field (or for monic divisors), using classical, divide-and-conquer, possibly newton's method
- * polynomial evaluation
- * retrieval of coefficients and conversion to/from python lists
- * comparison, hashing
+* addition, subtraction
+* multiplication: classical algorithm, also karatsuba (but this should be optional, since it doesn't work well over certain base rings, especially where numerical stability is an issue)
+* division, at least when the base ring is a field (or for monic divisors), using classical, divide-and-conquer, possibly newton's method
+* polynomial evaluation
+* retrieval of coefficients and conversion to/from python lists
+* comparison, hashing
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/331
+
+
 
 
 
 ---
 
-Comment by dmharvey created at 2007-08-28 19:02:44
+archive/issue_comments_001629.json:
+```json
+{
+    "body": "Some progress has been made on this: Robert Bradshaw moved the implementation of `Polynomial_generic_dense` into Cython (in `sage/rings/polynomial/polynomial_element.pyx`).\n\nRelated: I am planning to start work on an implementation of polynomials over Z that interfaces directly with NTL instead of going via the `ntl.pyx` objects, as soon as #411 is resolved.",
+    "created_at": "2007-08-28T19:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1629",
+    "user": "dmharvey"
+}
+```
 
 Some progress has been made on this: Robert Bradshaw moved the implementation of `Polynomial_generic_dense` into Cython (in `sage/rings/polynomial/polynomial_element.pyx`).
 
 Related: I am planning to start work on an implementation of polynomials over Z that interfaces directly with NTL instead of going via the `ntl.pyx` objects, as soon as #411 is resolved.
 
 
+
 ---
 
-Comment by dmharvey created at 2007-09-11 00:28:58
+archive/issue_comments_001630.json:
+```json
+{
+    "body": "related: #528",
+    "created_at": "2007-09-11T00:28:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1630",
+    "user": "dmharvey"
+}
+```
 
 related: #528
 
 
+
 ---
 
-Comment by mabshoff created at 2007-11-03 01:35:43
+archive/issue_comments_001631.json:
+```json
+{
+    "body": "Can this be closed with the NTL wrapper rewrite? If not what need to be done?\n\nCheers,\n\nMichael",
+    "created_at": "2007-11-03T01:35:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1631",
+    "user": "mabshoff"
+}
+```
 
 Can this be closed with the NTL wrapper rewrite? If not what need to be done?
 
@@ -52,9 +99,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-12 17:59:40
+archive/issue_comments_001632.json:
+```json
+{
+    "body": "What is the status of this?\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-12T17:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1632",
+    "user": "mabshoff"
+}
+```
 
 What is the status of this?
 
@@ -63,23 +121,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-23 19:36:06
+archive/issue_comments_001633.json:
+```json
+{
+    "body": "I believe this is implemented in lines 4000+ of http://hg.sagemath.org/sage-main/file/a175cdbeb408/sage/rings/polynomial/polynomial_element.pyx",
+    "created_at": "2008-09-23T19:36:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1633",
+    "user": "robertwb"
+}
+```
 
 I believe this is implemented in lines 4000+ of http://hg.sagemath.org/sage-main/file/a175cdbeb408/sage/rings/polynomial/polynomial_element.pyx
 
 
+
 ---
 
-Comment by dmharvey created at 2008-09-23 20:18:33
+archive/issue_comments_001634.json:
+```json
+{
+    "body": "Perhaps the title should be changed to \"compiled implementation of asymptotically fast dense univariate polynomial arithmetic\" :-)",
+    "created_at": "2008-09-23T20:18:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1634",
+    "user": "dmharvey"
+}
+```
 
 Perhaps the title should be changed to "compiled implementation of asymptotically fast dense univariate polynomial arithmetic" :-)
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-23 20:25:22
+archive/issue_comments_001635.json:
+```json
+{
+    "body": "We already have karatsuba, which leads to really bad bugs like\n\n\n```\nsage: R.<x> = RR[]\nsage: (x+1e20)^2\n1.00000000000000*x^2 + 1.00000000000000e40\n```\n\n\nfor inexact rings. I don't think there's anything for division yet though.",
+    "created_at": "2008-09-23T20:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1635",
+    "user": "robertwb"
+}
+```
 
 We already have karatsuba, which leads to really bad bugs like
 
@@ -94,9 +185,20 @@ sage: (x+1e20)^2
 for inexact rings. I don't think there's anything for division yet though.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-09-23 20:31:31
+archive/issue_comments_001636.json:
+```json
+{
+    "body": "For multiplication, Karatubsa has complexity n<sup>1.58</sup> in the degree; there exist algorithms with complexity n log(n) log(log(n)) over arbitrary (associative unital) rings. I think it's worth implementing this at some point.\n\nYes, we need division too. And we need a framework to deal with the very nasty bug you mentioned above. Basically Karatsuba should be disallowed by default for such rings, I don't see any other way around it. Perhaps the user should be able to call some interface for multiplication which uses karatsuba/etc on polynomials when the user knows in advance that the data is \"uniform\" enough to make the asymptotically fast algorithm accurate enough.\n\nI totally can't work on this right now.",
+    "created_at": "2008-09-23T20:31:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1636",
+    "user": "dmharvey"
+}
+```
 
 For multiplication, Karatubsa has complexity n<sup>1.58</sup> in the degree; there exist algorithms with complexity n log(n) log(log(n)) over arbitrary (associative unital) rings. I think it's worth implementing this at some point.
 
@@ -105,9 +207,20 @@ Yes, we need division too. And we need a framework to deal with the very nasty b
 I totally can't work on this right now.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-23 20:45:32
+archive/issue_comments_001637.json:
+```json
+{
+    "body": "Well, since this ticket is somewhat vague and there exists some code which at least implements parts of what is wanted I am closing this as fixed. Please open other, more specific tickets for things you want to do in this area.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-23T20:45:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1637",
+    "user": "mabshoff"
+}
+```
 
 Well, since this ticket is somewhat vague and there exists some code which at least implements parts of what is wanted I am closing this as fixed. Please open other, more specific tickets for things you want to do in this area.
 
@@ -116,8 +229,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-23 20:45:32
+archive/issue_comments_001638.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-23T20:45:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/331#issuecomment-1638",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

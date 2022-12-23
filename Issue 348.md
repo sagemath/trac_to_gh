@@ -1,11 +1,21 @@
 # Issue 348: R stats support in SAGE (??)
 
-Issue created by migration from https://trac.sagemath.org/ticket/348
-
-Original creator: was
-
-Original creation time: 2007-04-06 19:08:55
-
+archive/issues_000348.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nMy current bioinformatics textbook uses R for all its coding examples,\nand since I wanted to use python/biopython for my course, I tried to\ninstall the R-python interface.  As is often the case with such\nthings, it turned out to be far from self-contained, and I needed a\nwhole bunch of libraries I didn't have (this was on OS X 10.4).  Since\nI am impatient and low on time, I gave up after about 1/2 hour, since\nthere is a very nice R.app for OS X available already and I didn't\nhave any specific connection in mind.  However, it looks like I will\noften have statistics grad students in that course and they might use\nsuch an interface.  So I will give another vote in favor of getting R\ninto sage.  Currently I think sage should appeal to everyone in math\nexcept perhaps math ed and stats folks, and having R included would\nwin over the stats people.\n\n-Marshall Hampton\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/348\n\n",
+    "created_at": "2007-04-06T19:08:55Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "R stats support in SAGE (??)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/348",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -29,10 +39,25 @@ win over the stats people.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/348
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-12-04 14:24:21
+archive/issue_comments_001692.json:
+```json
+{
+    "body": "There now are an optional R.spkg and rpy.spkg that are supposed to become standard in this release.\n\nCheers,\n\nMichael",
+    "created_at": "2007-12-04T14:24:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/348#issuecomment-1692",
+    "user": "mabshoff"
+}
+```
 
 There now are an optional R.spkg and rpy.spkg that are supposed to become standard in this release.
 
@@ -41,15 +66,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-07 10:08:59
+archive/issue_comments_001693.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2007-12-07T10:08:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/348#issuecomment-1693",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2007-12-07 10:08:59
+archive/issue_comments_001694.json:
+```json
+{
+    "body": "Since was opened #1416 make this a dupe.",
+    "created_at": "2007-12-07T10:08:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/348",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/348#issuecomment-1694",
+    "user": "mabshoff"
+}
+```
 
 Since was opened #1416 make this a dupe.

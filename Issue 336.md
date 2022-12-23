@@ -1,19 +1,44 @@
 # Issue 336: Create an option to clear all cell output
 
-Issue created by migration from https://trac.sagemath.org/ticket/336
-
-Original creator: TimothyClemans
-
-Original creation time: 2007-03-27 18:20:31
-
+archive/issues_000336.json:
+```json
+{
+    "body": "Assignee: boothby\n\nI am homeschooled and doing programming in the notebook for credit. I would like to clear all of the output on my worksheets so I can print the code for the worksheet without the computer generated output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/336\n\n",
+    "created_at": "2007-03-27T18:20:31Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Create an option to clear all cell output",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/336",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 I am homeschooled and doing programming in the notebook for credit. I would like to clear all of the output on my worksheets so I can print the code for the worksheet without the computer generated output.
 
+Issue created by migration from https://trac.sagemath.org/ticket/336
+
+
+
+
 
 ---
 
-Comment by was created at 2008-05-10 19:54:36
+archive/issue_comments_001650.json:
+```json
+{
+    "body": "The attached patch does the following:\n\n```\nFix trac #336 -- \"delete all output\" for the Sage notebook worksheets.  Also:\n   1. Changed \"Revisions\" to \"Undo\" in the notebook, since it is clearer.\n   2. Added several new functions needed to implement #336 and fully documented\n      and doctested all of them.  This meant improving the functions that\n      support writing doctests for the notebook, and doctesting those \n      functions too.  Doctesting of the notebook is thus actually *greatly*\n      improved by this patch.\n   3. Made some fixes to doctests also so that parallel doctesting works.    \n      In particular, avoid clashes in temp notebook names. \n   4. Created a cell \"evaluated\" function to keep track of whether or not\n      cells have been evaluated.  I did this in order to non-hackishly \n      implement \"delete all output\".  It will also be very useful for other\n      tickets.   I added a lot of doctesting related to this too. \n   5. Added a worksheet function user_can_edit to double check that the\n      given user can edit the worksheet; this is used by the \"delete all output\" \n      code as a double check that invalid users can't delete all output. \n```\n\n\nTo test it do the following:\n1. apply the patch and build\n2. Make a worksheet and selected \"Action -> Delete all output\"\n3. Note that all output is gone.  Click refresh to see that the server got the message\n4. Doctest the sage/server/notebook directory.  It has a bunch of new doctests.\n5. Read over the patch itself to see how it's all implemented:\n       * some javascript to delete the output from the DOM\n       * some server-side python code to do the actual deleting\n       * some general server-side code to improving doctesting of the notebook.\n       * general doc improvements.",
+    "created_at": "2008-05-10T19:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1650",
+    "user": "was"
+}
+```
 
 The attached patch does the following:
 
@@ -38,25 +63,49 @@ Fix trac #336 -- "delete all output" for the Sage notebook worksheets.  Also:
 
 
 To test it do the following:
- 1. apply the patch and build
- 2. Make a worksheet and selected "Action -> Delete all output"
- 3. Note that all output is gone.  Click refresh to see that the server got the message
- 4. Doctest the sage/server/notebook directory.  It has a bunch of new doctests.
- 5. Read over the patch itself to see how it's all implemented:
-        * some javascript to delete the output from the DOM
-        * some server-side python code to do the actual deleting
-        * some general server-side code to improving doctesting of the notebook.
-        * general doc improvements.
+1. apply the patch and build
+2. Make a worksheet and selected "Action -> Delete all output"
+3. Note that all output is gone.  Click refresh to see that the server got the message
+4. Doctest the sage/server/notebook directory.  It has a bunch of new doctests.
+5. Read over the patch itself to see how it's all implemented:
+       * some javascript to delete the output from the DOM
+       * some server-side python code to do the actual deleting
+       * some general server-side code to improving doctesting of the notebook.
+       * general doc improvements.
+
 
 
 ---
+
+archive/issue_comments_001651.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-10T19:54:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1651",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-05-11 03:37:46
+archive/issue_comments_001652.json:
+```json
+{
+    "body": "One doctest failure\n\n\n```\nFile \"/home/tclemans/sage-3.0/tmp/notebook.py\", line 133:\n    sage: os.listdir('notebook-test')\nExpected:\n    ['backups', 'nb.sobj', 'objects', 'worksheets']\nGot:\n    ['worksheets', 'objects', 'backups', 'nb.sobj']\n```\n",
+    "created_at": "2008-05-11T03:37:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1652",
+    "user": "TimothyClemans"
+}
+```
 
 One doctest failure
 
@@ -72,22 +121,57 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_001653.json:
+```json
+{
+    "body": "Attachment\n\nPositive review with doctestfix patch. I didn't really do 5 except I did look at the doctest stuff.",
+    "created_at": "2008-05-11T04:02:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1653",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 Positive review with doctestfix patch. I didn't really do 5 except I did look at the doctest stuff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 07:25:47
+archive/issue_comments_001654.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T07:25:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1654",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 07:25:47
+archive/issue_comments_001655.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-11T07:25:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1655",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0

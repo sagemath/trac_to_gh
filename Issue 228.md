@@ -1,11 +1,21 @@
 # Issue 228: bug in sage notebook cell parser and promp stripping.
 
-Issue created by migration from https://trac.sagemath.org/ticket/228
-
-Original creator: was
-
-Original creation time: 2007-01-29 08:10:05
-
+archive/issues_000228.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nOn Sun, 28 Jan 2007 15:26:56 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:\n\n>\n> Just to show that something bad seems to be happening, I looked up the\n> source for prime_pi and copied it into a cell and changed the name to\n> epi. Well I added print epi(300) and got 0. I also added print \"Hello\"\n> and got nothing. In another cell I typed prime_pi(300) and got 62. So\n> I'm sure that there is a bug in SAGE notebook with docstrings in\n> personal code.\n\nYou're absolutely right.  This is a bug in the SAGE notebook, or rather,\nand unforseen \"feature\".  In the notebook if an input cell line starts\nwith either \"sage:\" or \">>>\", then the input is viewed as an example\nthat was likely pasted in, and *only* the lines that begin with sage:\nare evaluated.  (The parser that checks for this doesn't take into\naccount triple-quoted strings!)   Unfortunately this leads to the \nfollowing sort of stupid behavior:\n```\n\n\n\n```\ndef foo(x):\n    \"\"\"\n    EXAMPLES:\n        sage: 2+2\n        4\n    \"\"\" \n    return x\n///\n4\n```\n\n\n\n```\nfoo(5)\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server/sage_notebook/worksheets/_uniqued/code/13.py\", line 4, in <module>\n    exec compile(ur'foo(Integer(5))' + '\\n', '', 'single')\n  File \"/home/server/\", line 1, in <module>\n    \nNameError: name 'foo' is not defined\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/228\n\n",
+    "created_at": "2007-01-29T08:10:05Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "bug in sage notebook cell parser and promp stripping.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/228",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -59,44 +69,116 @@ NameError: name 'foo' is not defined
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/228
+
+
+
+
 
 ---
 
-Comment by TimothyClemans created at 2007-04-03 06:16:46
+archive/issue_comments_001013.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-04-03T06:16:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1013",
+    "user": "TimothyClemans"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-09-05 16:30:45
+archive/issue_comments_001014.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2007-09-05T16:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1014",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-09-05 16:30:45
+archive/issue_comments_001015.json:
+```json
+{
+    "body": "Reopen ticket because a patch wasn't created and approved.",
+    "created_at": "2007-09-05T16:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1015",
+    "user": "TimothyClemans"
+}
+```
 
 Reopen ticket because a patch wasn't created and approved.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2007-09-05 16:30:45
+archive/issue_comments_001016.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2007-09-05T16:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1016",
+    "user": "TimothyClemans"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
+
+archive/issue_comments_001017.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).",
+    "created_at": "2007-09-20T21:07:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1017",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 The attached patch addresses this issue by only considering input examples if it starts with a prompt (sage: or >>>).
 
 
+
 ---
 
-Comment by was created at 2007-09-20 22:24:59
+archive/issue_comments_001018.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-20T22:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/228",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/228#issuecomment-1018",
+    "user": "was"
+}
+```
 
 Resolution: fixed

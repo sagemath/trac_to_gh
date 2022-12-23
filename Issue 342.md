@@ -1,11 +1,21 @@
 # Issue 342: ComplexNumber constructor seg faults
 
-Issue created by migration from https://trac.sagemath.org/ticket/342
-
-Original creator: was
-
-Original creation time: 2007-04-01 14:47:38
-
+archive/issues_000342.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nFound by: Pablo De Napoli\n> Another problem that i've found is that calling ComplexNumber (for example\n> by)\n> \n> ComplexNumber(2,3)\n> \n> causes a segmentation fault.\n> (using sage-2.4.1.2)\n \nThat's definitely a bug.   It's now trac #342.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/342\n\n",
+    "created_at": "2007-04-01T14:47:38Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "ComplexNumber constructor seg faults",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/342",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -23,9 +33,24 @@ That's definitely a bug.   It's now trac #342.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/342
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2007-08-18 19:58:34
+archive/issue_comments_001673.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-18T19:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/342#issuecomment-1673",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
