@@ -1,6 +1,6 @@
 # Issue 1089: [with patch] graphs: update subgraph to handle a list of edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1089
 
 Original creator: jason
 

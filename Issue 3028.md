@@ -1,6 +1,6 @@
 # Issue 3028: Ideals in multivariate polynomial rings raise exceptions on comparison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3028
 
 Original creator: broune
 

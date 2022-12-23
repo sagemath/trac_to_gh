@@ -1,6 +1,6 @@
 # Issue 265: Coercion of maxima float with positive exponent to python float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/265
 
 Original creator: gvanuxem
 

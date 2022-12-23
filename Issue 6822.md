@@ -1,6 +1,6 @@
 # Issue 6822: "empty" .spkg files in binary builds confusing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6822
 
 Original creator: robertwb
 

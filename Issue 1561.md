@@ -1,6 +1,6 @@
 # Issue 1561: [with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1561
 
 Original creator: ncalexan
 

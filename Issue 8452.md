@@ -1,6 +1,6 @@
 # Issue 8452: Code check: Pickling of nested classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8452
 
 Original creator: mpatel
 

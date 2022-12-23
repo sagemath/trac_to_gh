@@ -1,6 +1,6 @@
 # Issue 7167: HP-UX issue, ECL fails to build properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7167
 
 Original creator: drkirkby
 
@@ -24,10 +24,10 @@ On a HP C3600, running HP-UX 11i, I got the following failure.
  /home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/install-sh -c -m 644 '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/include/gc_config_macros.h' '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/build/ecl//gc/gc_config_macros.h'
  /home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/install-sh -c -m 644 '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/include/gc_tiny_fl.h' '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/build/ecl//gc/gc_tiny_fl.h'
  /home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/install-sh -c -m 644 '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/gc/include/gc_version.h' '/home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/build/ecl//gc/gc_version.h'
-        sed -e 's,`@`ecldir\\`@`,/home/drkirkby/sage-4.1.2.rc0/local/lib/ecl-9.8.4/,g' < lsp/config.pre > lsp/config.lsp
-        sed -e 's,`@`ecldir\\`@`,"/home/drkirkby/sage-4.1.2.rc0/local/lib/ecl-9.8.4/",g' \
-            -e 's,`@`libdir\\`@`,"/home/drkirkby/sage-4.1.2.rc0/local/lib/",g' \
-            -e 's,`@`includedir\\`@`,"/home/drkirkby/sage-4.1.2.rc0/local/include/",g' < cmp/cmpdefs.pre > cmp/cmpdefs.lsp
+        sed -e 's,@ecldir\\@,/home/drkirkby/sage-4.1.2.rc0/local/lib/ecl-9.8.4/,g' < lsp/config.pre > lsp/config.lsp
+        sed -e 's,@ecldir\\@,"/home/drkirkby/sage-4.1.2.rc0/local/lib/ecl-9.8.4/",g' \
+            -e 's,@libdir\\@,"/home/drkirkby/sage-4.1.2.rc0/local/lib/",g' \
+            -e 's,@includedir\\@,"/home/drkirkby/sage-4.1.2.rc0/local/include/",g' < cmp/cmpdefs.pre > cmp/cmpdefs.lsp
         test -d c/ecl || mkdir c/ecl
         sed 's,__declspec(dllimport),,g' /home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/h/external.h > c/ecl/external.h
         cp /home/drkirkby/sage-4.1.2.rc0/spkg/build/ecl-9.8.4-20090913cvs.p1/src/src/h/*.h ecl/

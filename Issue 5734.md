@@ -1,6 +1,6 @@
 # Issue 5734: Bring doctests of modular/modsym/manin_symbols.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5734
 
 Original creator: cremona
 

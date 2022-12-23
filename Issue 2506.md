@@ -1,6 +1,6 @@
 # Issue 2506: Problem with inequality operator (!=) in graph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2506
 
 Original creator: rhinton
 

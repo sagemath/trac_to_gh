@@ -1,6 +1,6 @@
 # Issue 576: hard interrupting a Singular calculation does not kill Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/576
 
 Original creator: malb
 

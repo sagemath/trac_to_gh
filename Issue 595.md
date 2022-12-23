@@ -1,6 +1,6 @@
 # Issue 595: get lie to build on all standard machines -- specific problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/595
 
 Original creator: was
 

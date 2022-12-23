@@ -1,6 +1,6 @@
 # Issue 3533: [with patch, needs review] better number fields (mostly cyclotomic)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3533
 
 Original creator: fwclarke
 
@@ -422,7 +422,7 @@ Comment by mabshoff created at 2008-07-06 00:12:02
 I am seeing some trivial to fix numerical noise doctest failures:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t -long devel/sage/sage/modular/dirichlet.py # 5 doctests failed
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t -long devel/sage/sage/modular/dirichlet.py # 5 doctests failed
 sage -t -long devel/sage/sage/modular/dirichlet.py          **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/dirichlet.py", line 674:
     sage: e.gauss_sum_numerical()
@@ -472,7 +472,7 @@ The following tests failed:
 
 	sage -t -long devel/sage/sage/modular/dirichlet.py
 Total time for all tests: 3.4 seconds
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t -long devel/sage/sage/matrix/matrix_cyclo_dense.pyx # 3 doctests failed
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t -long devel/sage/sage/matrix/matrix_cyclo_dense.pyx # 3 doctests failed
 sage -t -long devel/sage/sage/matrix/matrix_cyclo_dense.pyx 
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/matrix_cyclo_dense.py", line 664:

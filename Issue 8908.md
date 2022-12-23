@@ -1,6 +1,6 @@
 # Issue 8908: Add the Young subgroup method to symmetric groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8908
 
 Original creator: jipilab
 

@@ -1,6 +1,6 @@
 # Issue 7884: Coercion for fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7884
 
 Original creator: robertwb
 

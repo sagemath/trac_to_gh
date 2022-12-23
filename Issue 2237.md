@@ -1,6 +1,6 @@
 # Issue 2237: plot options for turning off randomness in sampling x data and turning off adaptive plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2237
 
 Original creator: jason
 

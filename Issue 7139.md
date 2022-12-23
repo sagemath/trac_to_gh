@@ -1,6 +1,6 @@
 # Issue 7139: flint always building 32-bit on Solaris even when SAGE64="yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7139
 
 Original creator: drkirkby
 

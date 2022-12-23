@@ -1,6 +1,6 @@
 # Issue 1190: [with patch] fix spkg-check invocation when SAGE_CHECK is non-empty
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1190
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5125: Ideal.basis_is_groebner() may return wrong results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5125
 
 Original creator: malb
 

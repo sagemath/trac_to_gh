@@ -1,6 +1,6 @@
 # Issue 9309: Add an spkg-check file for the IML library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9309
 
 Original creator: drkirkby
 

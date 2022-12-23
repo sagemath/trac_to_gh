@@ -1,6 +1,6 @@
 # Issue 6905: real(0.0r) is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6905
 
 Original creator: nthiery
 

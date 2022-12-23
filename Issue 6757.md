@@ -1,6 +1,6 @@
 # Issue 6757: libgcrypt in Sage is GPL 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6757
 
 Original creator: drkirkby
 
@@ -52,12 +52,12 @@ The name of the .spkg file in Sage 4.1.1 is libgcrypt-1.4.3.p1.spkg I've made a 
 
 ```
 
-drkirkby`@`smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ ls -ld libgcrypt* 
+drkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ ls -ld libgcrypt* 
 -rw-r--r--   1 drkirkby other    2036701 Jul 31 22:45 libgcrypt-1.4.3.p1.spkg
 -rw-r--r--   1 drkirkby other    2115840 Aug 16 12:34 libgcrypt-1.4.3.p2.spkg
-drkirkby`@`smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ pwd
+drkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ pwd
 /export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/standard
-drkirkby`@`smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $
+drkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $
 
 
 ```

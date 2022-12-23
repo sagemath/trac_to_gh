@@ -1,6 +1,6 @@
 # Issue 3249: a bug in computing the inverse of the matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3249
 
 Original creator: pdenapo
 

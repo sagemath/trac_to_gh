@@ -1,6 +1,6 @@
 # Issue 1022: [with patch] Miscellaneous combinatorics updates / fixes / additions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1022
 
 Original creator: mhansen
 

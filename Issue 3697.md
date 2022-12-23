@@ -1,6 +1,6 @@
 # Issue 3697: [with patch, needs review] Adds is_primitive() method to polynomials over Finite Fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3697
 
 Original creator: TomDraper
 

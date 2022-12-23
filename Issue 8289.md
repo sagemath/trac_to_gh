@@ -1,6 +1,6 @@
 # Issue 8289: Clean up WordMorphism.__call__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8289
 
 Original creator: slabbe
 

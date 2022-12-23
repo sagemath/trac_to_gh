@@ -1,6 +1,6 @@
 # Issue 3346: [with patch; not ready for review] finance -- add a very very basic first little tiny amount of quantitative finance functionality to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3346
 
 Original creator: was
 

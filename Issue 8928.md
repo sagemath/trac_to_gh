@@ -1,6 +1,6 @@
 # Issue 8928: Infinite loop caused by Modules.ElementClass.__mul__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8928
 
 Original creator: mguaypaq
 
@@ -44,12 +44,12 @@ sage: class MyRing2(CombinatorialFreeModule):
 ....:     
 sage: x = MyRing1().basis()[Partition([2,1])]
 sage: x
-B[This is the Trac macro *2, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 1-macro)
+B[[2, 1]]
 sage: x*x
 0
 sage: y = MyRing2().basis()[Partition([2,1])]
 sage: y
-B[This is the Trac macro *2, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 1-macro)
+B[[2, 1]]
 sage: y*y
 | Sage Version 4.4, Release Date: 2010-04-24                         |
 | Type notebook() for the GUI, and license() for information.        |

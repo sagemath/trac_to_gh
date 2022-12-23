@@ -1,6 +1,6 @@
 # Issue 8214: add better error message when symbolic expressions are called
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8214
 
 Original creator: burcin
 
@@ -13,7 +13,7 @@ From sage-devel:
 
 ```
 On Sun, 7 Feb 2010 10:36:29 -0800 (PST)
-Gustav Delius <gustav.delius`@`gmail.com> wrote:
+Gustav Delius <gustav.delius@gmail.com> wrote:
 
 > I wonder whether it would be possible to give a better error message
 > when a user leaves out the multiplication operator in something like

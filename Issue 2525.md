@@ -1,6 +1,6 @@
 # Issue 2525: update Linbox to 1.1.5.rc3 upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2525
 
 Original creator: mabshoff
 

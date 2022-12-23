@@ -1,6 +1,6 @@
 # Issue 86: can't create points of an elliptic curve over p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/86
 
 Original creator: dmharvey
 
@@ -150,7 +150,7 @@ Fixed for sage-1.7:
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168640804 28800
 # Node ID 85b96a510e10e13d5e71aa12afb2a3f1a3564fb8
 # Parent  2a6823917a29813a484e00eea7b15f7c697269ab
@@ -159,7 +159,7 @@ Fix trac bug # 86: "can't create points of an elliptic curve over p-adics"
 diff -r 2a6823917a29 -r 85b96a510e10 sage/categories/morphism.py
 --- a/sage/categories/morphism.py       Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/categories/morphism.py       Fri Jan 12 14:26:44 2007 -0800
-`@``@` -112,7 +112,7 `@``@` class FormalCoercionMorphism(Morphism):
+@@ -112,7 +112,7 @@ class FormalCoercionMorphism(Morphism):
      def __init__(self, parent):
          Morphism.__init__(self, parent)
          try:
@@ -171,7 +171,7 @@ diff -r 2a6823917a29 -r 85b96a510e10 sage/categories/morphism.py
 diff -r 2a6823917a29 -r 85b96a510e10 sage/rings/multi_polynomial_element.py
 --- a/sage/rings/multi_polynomial_element.py    Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/rings/multi_polynomial_element.py    Fri Jan 12 14:26:44 2007 -0800
-`@``@` -105,7 +105,7 `@``@` class MPolynomial(CommutativeRingElement
+@@ -105,7 +105,7 @@ class MPolynomial(CommutativeRingElement
              K = self.parent().base_ring()
          y = K(0) 
          for (m,c) in self.element().dict().iteritems():  
@@ -183,7 +183,7 @@ diff -r 2a6823917a29 -r 85b96a510e10 sage/rings/multi_polynomial_element.py
 diff -r 2a6823917a29 -r 85b96a510e10 sage/schemes/elliptic_curves/ell_point.py
 --- a/sage/schemes/elliptic_curves/ell_point.py Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/schemes/elliptic_curves/ell_point.py Fri Jan 12 14:26:44 2007 -0800
-`@``@` -1,5 +1,14 `@``@`
+@@ -1,5 +1,14 @@
  """
  Points on elliptic curves
 +
@@ -205,7 +205,7 @@ rank4:~/grants was$ cd
 rank4:~ was$ cd d/sage/sage
 rank4:~/d/sage/sage was$ hg export tip
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168640804 28800
 # Node ID 85b96a510e10e13d5e71aa12afb2a3f1a3564fb8
 # Parent  2a6823917a29813a484e00eea7b15f7c697269ab
@@ -214,7 +214,7 @@ Fix trac bug # 86: "can't create points of an elliptic curve over p-adics"
 diff -r 2a6823917a29 -r 85b96a510e10 sage/categories/morphism.py
 --- a/sage/categories/morphism.py       Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/categories/morphism.py       Fri Jan 12 14:26:44 2007 -0800
-`@``@` -112,7 +112,7 `@``@` class FormalCoercionMorphism(Morphism):
+@@ -112,7 +112,7 @@ class FormalCoercionMorphism(Morphism):
      def __init__(self, parent):
          Morphism.__init__(self, parent)
          try:
@@ -226,7 +226,7 @@ diff -r 2a6823917a29 -r 85b96a510e10 sage/categories/morphism.py
 diff -r 2a6823917a29 -r 85b96a510e10 sage/rings/multi_polynomial_element.py
 --- a/sage/rings/multi_polynomial_element.py    Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/rings/multi_polynomial_element.py    Fri Jan 12 14:26:44 2007 -0800
-`@``@` -105,7 +105,7 `@``@` class MPolynomial(CommutativeRingElement
+@@ -105,7 +105,7 @@ class MPolynomial(CommutativeRingElement
              K = self.parent().base_ring()
          y = K(0) 
          for (m,c) in self.element().dict().iteritems():  
@@ -238,7 +238,7 @@ diff -r 2a6823917a29 -r 85b96a510e10 sage/rings/multi_polynomial_element.py
 diff -r 2a6823917a29 -r 85b96a510e10 sage/schemes/elliptic_curves/ell_point.py
 --- a/sage/schemes/elliptic_curves/ell_point.py Fri Jan 12 14:11:42 2007 -0800
 +++ b/sage/schemes/elliptic_curves/ell_point.py Fri Jan 12 14:26:44 2007 -0800
-`@``@` -1,5 +1,14 `@``@`
+@@ -1,5 +1,14 @@
  """
  Points on elliptic curves
 +

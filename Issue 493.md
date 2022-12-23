@@ -1,6 +1,6 @@
 # Issue 493: gcc 4.3: LinBox package has broken NTL and givaro test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/493
 
 Original creator: mabshoff
 

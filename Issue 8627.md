@@ -1,6 +1,6 @@
 # Issue 8627: cannot coerce p-adic capped-rel to capped-abs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8627
 
 Original creator: dmharvey
 

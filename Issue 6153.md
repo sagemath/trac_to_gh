@@ -1,6 +1,6 @@
 # Issue 6153: [with patch; needs review] fix repo -- incorrect delete of spkg-debian-maybe
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6153
 
 Original creator: was
 

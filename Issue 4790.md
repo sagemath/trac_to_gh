@@ -1,6 +1,6 @@
 # Issue 4790: sage -t does not take into account the current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4790
 
 Original creator: gfurnish
 

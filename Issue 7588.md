@@ -1,6 +1,6 @@
 # Issue 7588: Replace min_vertex_cut and min_edge_cut by LP formulation which does not use min_st_cut
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7588
 
 Original creator: ncohen
 

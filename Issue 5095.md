@@ -1,6 +1,6 @@
 # Issue 5095: [with patch, needs review] AJAX requests don't work from the worksheet listing page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5095
 
 Original creator: mhansen
 

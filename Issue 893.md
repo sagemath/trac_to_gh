@@ -1,6 +1,6 @@
 # Issue 893: 2.8.7-alpha0: doctest failure in const.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/893
 
 Original creator: cwitty
 

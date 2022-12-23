@@ -1,6 +1,6 @@
 # Issue 1198: scipy-20071020 fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1198
 
 Original creator: mabshoff
 

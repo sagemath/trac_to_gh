@@ -1,6 +1,6 @@
 # Issue 6737: change occurrences of "Pyrex" to "Cython"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6737
 
 Original creator: mvngu
 

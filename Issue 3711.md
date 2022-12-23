@@ -1,6 +1,6 @@
 # Issue 3711: notebook -- folder of worksheets not properly saved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3711
 
 Original creator: was
 
@@ -12,9 +12,9 @@ Assignee: boothby
 ```
 
 
-On Wed, Jul 23, 2008 at 1:35 AM, John H Palmieri <jhpalmieri64`@`gmail.com> wrote:
+On Wed, Jul 23, 2008 at 1:35 AM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
 >
-> On Jul 11, 3:21 pm, John H Palmieri <jhpalmier...`@`gmail.com> wrote:
+> On Jul 11, 3:21 pm, John H Palmieri <jhpalmier...@gmail.com> wrote:
 >> Since upgrading to Sage 3.0.4 on my intel Mac, when I enter the
 >> notebook, my Sage worksheet list shows all of the worksheets I've ever
 >> worked on.  If I mark some to be archived or some to be deleted, it

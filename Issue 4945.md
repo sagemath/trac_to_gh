@@ -1,6 +1,6 @@
 # Issue 4945: LaTeX for gp elements shouldn't use verbatim environment
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4945
 
 Original creator: malb
 

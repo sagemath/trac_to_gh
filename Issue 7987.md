@@ -1,6 +1,6 @@
 # Issue 7987: Most extensions don't need to be listed in module_list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7987
 
 Original creator: robertwb
 

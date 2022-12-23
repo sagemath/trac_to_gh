@@ -1,6 +1,6 @@
 # Issue 6448: darwin_utilities import issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6448
 
 Original creator: rlm
 

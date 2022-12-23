@@ -1,6 +1,6 @@
 # Issue 7857: Arithmetic operations in fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7857
 
 Original creator: spancratz
 

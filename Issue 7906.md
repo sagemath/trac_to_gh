@@ -1,6 +1,6 @@
 # Issue 7906: is_square() should be False for negative algebraic reals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7906
 
 Original creator: robertwb
 

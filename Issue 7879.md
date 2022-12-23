@@ -1,6 +1,6 @@
 # Issue 7879: Remove unnecessary signal handling for low prec mpfr operations.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7879
 
 Original creator: robertwb
 
@@ -140,10 +140,10 @@ sage: timeit("[a.sqrt() for a in L]", number=10000)
 
 sage: 
 Exiting Sage (CPU time 0m19.94s, Wall time 1m9.75s).
-robertwb`@`sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ hg qpush
+robertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ hg qpush
 applying 7879-RR-signal.patch
 now at: 7879-RR-signal.patch
-robertwb`@`sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ ../../sage -br
+robertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ ../../sage -br
 [...]
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

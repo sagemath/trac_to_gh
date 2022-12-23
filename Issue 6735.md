@@ -1,6 +1,6 @@
 # Issue 6735: spell-check all modules under sage/structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6735
 
 Original creator: mvngu
 

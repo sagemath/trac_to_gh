@@ -1,6 +1,6 @@
 # Issue 7510: Primes is missing is_finite.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7510
 
 Original creator: hivert
 

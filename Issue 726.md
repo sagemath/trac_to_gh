@@ -1,6 +1,6 @@
 # Issue 726: notebook worksheet area has horizontal scrollbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/726
 
 Original creator: mhansen
 

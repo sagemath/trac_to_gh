@@ -1,6 +1,6 @@
 # Issue 1916: notebook -- implement a way to turn off word wrap globally in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1916
 
 Original creator: was
 

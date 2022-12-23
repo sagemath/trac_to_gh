@@ -1,6 +1,6 @@
 # Issue 5147: make plot output file in DOCTEST_MODE changeable for sage-mode.el
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5147
 
 Original creator: ncalexan
 

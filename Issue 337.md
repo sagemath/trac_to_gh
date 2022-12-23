@@ -1,6 +1,6 @@
 # Issue 337: broken (?) discriminant of quaternion algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/337
 
 Original creator: AlexGhitza
 

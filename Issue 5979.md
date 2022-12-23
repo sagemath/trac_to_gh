@@ -1,6 +1,6 @@
 # Issue 5979: Parent: fixes broken (implicit) invariant between ._element_constructor and self._element_init_pass_parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5979
 
 Original creator: nthiery
 

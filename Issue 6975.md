@@ -1,6 +1,6 @@
 # Issue 6975: flint package fixed to work in cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6975
 
 Original creator: certik
 

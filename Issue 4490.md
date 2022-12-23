@@ -1,6 +1,6 @@
 # Issue 4490: notebook -- add a checkbox that enables/disables implicit multiplication
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4490
 
 Original creator: was
 

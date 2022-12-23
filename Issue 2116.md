@@ -1,6 +1,6 @@
 # Issue 2116: is package installed function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2116
 
 Original creator: jason
 

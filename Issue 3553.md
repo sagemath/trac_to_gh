@@ -1,6 +1,6 @@
 # Issue 3553: Update eclib to eclib-20080310.p4.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3553
 
 Original creator: mabshoff
 

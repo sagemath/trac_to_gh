@@ -1,6 +1,6 @@
 # Issue 722: GF(100) gives weird error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/722
 
 Original creator: dmharvey
 

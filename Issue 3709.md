@@ -1,6 +1,6 @@
 # Issue 3709: QuaternionAlgebraElement.sqrt()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3709
 
 Original creator: epotash
 

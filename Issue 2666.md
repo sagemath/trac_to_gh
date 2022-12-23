@@ -1,6 +1,6 @@
 # Issue 2666: ncalexan's enhancements to emacs sage mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2666
 
 Original creator: jason
 

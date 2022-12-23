@@ -1,6 +1,6 @@
 # Issue 8245: tutorial: typo in section "Euler’s Method for Systems of Differential Equations"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8245
 
 Original creator: mvngu
 

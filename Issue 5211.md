@@ -1,6 +1,6 @@
 # Issue 5211: add charset header to worksheet html header
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5211
 
 Original creator: ddrake
 

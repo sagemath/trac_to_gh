@@ -1,6 +1,6 @@
 # Issue 2063: sage -q is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2063
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4588: doctest -- get rid of the "feature" where docstrings with require, optional, and package all in them are automatically marked optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4588
 
 Original creator: was
 

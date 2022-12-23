@@ -1,6 +1,6 @@
 # Issue 8857: lcm over QQ[x] broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8857
 
 Original creator: burcin
 

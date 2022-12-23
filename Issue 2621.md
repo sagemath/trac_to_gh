@@ -1,6 +1,6 @@
 # Issue 2621: parallell doctest: concurrency problem when creating .doctest directories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2621
 
 Original creator: mabshoff
 

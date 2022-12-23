@@ -1,6 +1,6 @@
 # Issue 9943: categories for polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9944
 
 Original creator: robertwb
 

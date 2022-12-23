@@ -1,6 +1,6 @@
 # Issue 2485: Complete docstrings and doctests for schemes/elliptic_curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2485
 
 Original creator: cremona
 

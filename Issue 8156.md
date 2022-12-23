@@ -1,6 +1,6 @@
 # Issue 8156: [with code] new function readdata
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8156
 
 Original creator: zimmerma
 

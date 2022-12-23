@@ -1,6 +1,6 @@
 # Issue 7587: improve multi_polynomial_libsingular exponent method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7587
 
 Original creator: ylchapuy
 

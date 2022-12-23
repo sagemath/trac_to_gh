@@ -1,6 +1,6 @@
 # Issue 6216: make a sage.misc.profile module that makes hotshot and grof2dot and line_profiler easily used
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6216
 
 Original creator: ncalexan
 

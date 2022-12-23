@@ -1,6 +1,6 @@
 # Issue 9542: optimize znpoly arithmetic -- it's way, way too slow because of the polynomial template thingy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9542
 
 Original creator: was
 

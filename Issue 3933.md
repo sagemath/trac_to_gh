@@ -1,6 +1,6 @@
 # Issue 3933: Set iteration is broken over sets created with iterators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3933
 
 Original creator: anakha
 

@@ -1,6 +1,6 @@
 # Issue 8709: polyhedra level set doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8709
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5938: graph plotting -- ploting of graphs (networks) is somehow messed up/scaled wrong/cropped wrong since it doesn't work with graphics_array
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5938
 
 Original creator: was
 
@@ -80,7 +80,7 @@ Frickin' a.   Every single graph plot I try has the borders chopped off.  E.g.,
 ```
 sage: Q = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'], num_edges=['<=',5],min_degree=1)
 sage: Q.show(with_picture=True)
-[This is the Trac macro *hideous pain* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#hideous pain-macro)
+[[hideous pain]]
 ```
 
 

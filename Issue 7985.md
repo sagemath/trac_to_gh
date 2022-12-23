@@ -1,6 +1,6 @@
 # Issue 7985: fix doctest in base.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7985
 
 Original creator: wcauchois
 

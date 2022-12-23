@@ -1,6 +1,6 @@
 # Issue 1517: Make sure a minimum of space is available to build component
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1517
 
 Original creator: mabshoff
 

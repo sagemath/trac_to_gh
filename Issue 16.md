@@ -1,6 +1,6 @@
 # Issue 16: failures building optional packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/16
 
 Original creator: was
 

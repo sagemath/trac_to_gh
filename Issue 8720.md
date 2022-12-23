@@ -1,6 +1,6 @@
 # Issue 8720: CC and CDF do not display numeric 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8720
 
 Original creator: jason
 

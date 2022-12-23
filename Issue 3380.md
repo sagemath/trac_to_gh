@@ -1,6 +1,6 @@
 # Issue 3380: Fix large performance regression in ATLAS 3.8.0 and 3.8.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3380
 
 Original creator: mabshoff
 

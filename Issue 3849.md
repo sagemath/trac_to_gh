@@ -1,6 +1,6 @@
 # Issue 3849: notebook -- Internal Server Error given when input to File upload or Data attachment is invalid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3849
 
 Original creator: TimothyClemans
 

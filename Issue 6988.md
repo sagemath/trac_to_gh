@@ -1,6 +1,6 @@
 # Issue 6988: error building PDF version of reference manual on Sage 4.1.2.alpha2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6988
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5169: make it possible to set the default search path for the attach and load commands
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5169
 
 Original creator: was
 

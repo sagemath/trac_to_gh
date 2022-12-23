@@ -1,6 +1,6 @@
 # Issue 270: bug in permutation group arithmetic code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/270
 
 Original creator: was
 

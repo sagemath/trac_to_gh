@@ -1,6 +1,6 @@
 # Issue 1490: fix numerical noise doctest failure in numerical/test.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1490
 
 Original creator: mabshoff
 

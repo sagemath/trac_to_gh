@@ -1,6 +1,6 @@
 # Issue 7107: sage does not build on ppc os x 10.4 anymore, failing with mpfr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7107
 
 Original creator: was
 

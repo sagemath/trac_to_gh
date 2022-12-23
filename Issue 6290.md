@@ -1,6 +1,6 @@
 # Issue 6290: Allow latex_name=LaTeX keyword while defining symbolic function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6290
 
 Original creator: gmhossain
 

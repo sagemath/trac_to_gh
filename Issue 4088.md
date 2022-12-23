@@ -1,6 +1,6 @@
 # Issue 4088: notebook -- on list of published worksheets if no worksheets, everyone sees welcome message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4088
 
 Original creator: TimothyClemans
 

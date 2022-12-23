@@ -1,6 +1,6 @@
 # Issue 252: Make number fields work when polynomial not integral or not monic.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/252
 
 Original creator: was
 

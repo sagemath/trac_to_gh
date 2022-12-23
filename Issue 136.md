@@ -1,6 +1,6 @@
 # Issue 136: hide/show floods notebook with requests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/136
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 4887: [with patch, needs review] notebook -- make worksheet autosave inveral configurable from notebook settings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4887
 
 Original creator: TimothyClemans
 

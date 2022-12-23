@@ -1,6 +1,6 @@
 # Issue 1219: bug in eigenspaces over CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1219
 
 Original creator: wdj
 

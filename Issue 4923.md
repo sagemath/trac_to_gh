@@ -1,6 +1,6 @@
 # Issue 4923: convert sage.plot.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4923
 
 Original creator: mhansen
 

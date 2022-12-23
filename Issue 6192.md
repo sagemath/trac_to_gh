@@ -1,6 +1,6 @@
 # Issue 6192: numerical noise on x86 fedora core 8 (cicero on skynet)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6192
 
 Original creator: was
 

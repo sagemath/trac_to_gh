@@ -1,6 +1,6 @@
 # Issue 8024: Update prereq to check for Fortran compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8024
 
 Original creator: drkirkby
 

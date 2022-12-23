@@ -1,6 +1,6 @@
 # Issue 5665: Bug in ShrinkingGeneratorCipher
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5665
 
 Original creator: sbulygin
 

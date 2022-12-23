@@ -1,6 +1,6 @@
 # Issue 5662: Nasty hang (deadlock?) in maxima pexpect interface on core 2 quad
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5662
 
 Original creator: tornaria
 
@@ -236,7 +236,7 @@ taskset -c 0,2 expect -f maxima_expect > /dev/null
 diff -r 5c72dbb92d82 sage/interfaces/maxima.py
 --- a/sage/interfaces/maxima.py	Wed Mar 11 21:57:15 2009 -0700
 +++ b/sage/interfaces/maxima.py	Fri Apr 03 11:57:29 2009 -0300
-`@``@` -708,7 +708,14 `@``@`
+@@ -708,7 +708,14 @@
          if not wait_for_prompt:
              return
  

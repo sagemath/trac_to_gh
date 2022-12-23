@@ -1,6 +1,6 @@
 # Issue 2335: add documentation to the programming guide about _sage_src_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2335
 
 Original creator: mhansen
 

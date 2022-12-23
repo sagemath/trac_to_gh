@@ -1,6 +1,6 @@
 # Issue 352: error in matrix creation options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/352
 
 Original creator: was
 

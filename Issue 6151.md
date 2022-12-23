@@ -1,6 +1,6 @@
 # Issue 6151: fedora 10 64-bit -- tab completion causes segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6151
 
 Original creator: was
 
@@ -19,26 +19,26 @@ Comment by was created at 2009-05-28 17:57:31
 
 
 ```
-wstein`@`boxen:~$ ssh fedora64
+wstein@boxen:~$ ssh fedora64
 Last login: Thu May 14 07:31:14 2009 from host
 ls /space
-wstein`@`fedora64:~$ ls /space
+wstein@fedora64:~$ ls /space
 wstein  x
-wstein`@`fedora64:~$ cd /space/wstein/
-wstein`@`fedora64:/space/wstein$ ls
+wstein@fedora64:~$ cd /space/wstein/
+wstein@fedora64:/space/wstein$ ls
 farm  sage
-wstein`@`fedora64:/space/wstein$ cd sage
-wstein`@`fedora64:/space/wstein/sage$ ls
+wstein@fedora64:/space/wstein$ cd sage
+wstein@fedora64:/space/wstein/sage$ ls
 db  gap  init.sage  ipython  maxima_commandlist_cache.sobj  temp  valgrind
-wstein`@`fedora64:/space/wstein/sage$ cd ../farm
-wstein`@`fedora64:/space/wstein/farm$ ls
+wstein@fedora64:/space/wstein/sage$ cd ../farm
+wstein@fedora64:/space/wstein/farm$ ls
 sage-4.0.rc1
-wstein`@`fedora64:/space/wstein/farm$ cd sage-4.0.rc1/
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ls
+wstein@fedora64:/space/wstein/farm$ cd sage-4.0.rc1/
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ls
 0.png        devel        HISTORY.txt  local       sage       sage.png             spkg          tmp
 COPYING.txt  docs-0.html  install.log  makefile    sage0.png  sage-python          testlong.log  tmp.sws
 data         examples     ipython      README.txt  sage1.png  sage-README-osx.txt  test.sobj
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: Mod
@@ -53,8 +53,8 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 
-/space/wstein/farm/sage-4.0.rc1/local/bin/sage-sage: line 198: 15524 Segmentation fault      sage-ipython "$`@`" -i
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ----------------------------------------------------------------------
+/space/wstein/farm/sage-4.0.rc1/local/bin/sage-sage: line 198: 15524 Segmentation fault      sage-ipython "$@" -i
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ERROR: Internal Python error in the inspect module.
 Below is the traceback from this internal error.
@@ -106,32 +106,32 @@ It was left in the file named:
 If you can email this file to the developers, the information in it will help
 them in understanding and correcting the problem.
 
-You can mail it to: Ville Vainio at vivainio`@`gmail.com
+You can mail it to: Ville Vainio at vivainio@gmail.com
 with the subject 'IPython Crash Report'.
 
 If you want to do it now, the following command will work (under Unix):
-mail -s 'IPython Crash Report' vivainio`@`gmail.com < /scratch/wstein/sage/ipython/IPython_crash_report.txt
+mail -s 'IPython Crash Report' vivainio@gmail.com < /scratch/wstein/sage/ipython/IPython_crash_report.txt
 
 To ensure accurate tracking of this issue, please file a report about it at:
 http://projects.scipy.org/ipython/ipython/report
 
-Press enter to exit:wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ wstein`@`fedora64:/space/wstein/farm/sage-4.0.rcwstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$                                                                
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ls
+Press enter to exit:wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ wstein@fedora64:/space/wstein/farm/sage-4.0.rcwstein@fedora64:/space/wstein/farm/sage-4.0.rc1$                                                                
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ 
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ls
 0.png        devel        HISTORY.txt  local       sage       sage.png             spkg          tmp
 COPYING.txt  docs-0.html  install.log  makefile    sage0.png  sage-python          testlong.log  tmp.sws
 data         examples     ipython      README.txt  sage1.png  sage-README-osx.txt  test.sobj
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -python
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -python
 Python 2.5.2 (r252:60911, May 28 2009, 01:27:17) 
 [GCC 4.3.2 20081105 (Red Hat 4.3.2-7)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -ipython
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -ipython
 Python 2.5.2 (r252:60911, May 28 2009, 01:27:17) 
 Type "copyright", "credits" or "license" for more information.
 
@@ -143,7 +143,7 @@ object?   -> Details about 'object'. ?object also works, ?? prints more.
 
 In [1]: 
 Do you really want to exit ([y]/n)? y
-wstein`@`fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -gdb
+wstein@fedora64:/space/wstein/farm/sage-4.0.rc1$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /space/wstein/farm/sage-4.0.rc1/local/bin/sage-ipython

@@ -1,6 +1,6 @@
 # Issue 6068: Worksheet URLs - meaningful text vs numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6068
 
 Original creator: khorton
 

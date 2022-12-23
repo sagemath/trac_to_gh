@@ -1,6 +1,6 @@
 # Issue 2765: [with patch, needs review] bug in graph_isom, Hoffman-Singleton constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2765
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 130: problem with multiline history recall in IPython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/130
 
 Original creator: nbruin
 
@@ -48,7 +48,7 @@ Fixed
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169199334 28800
 # Node ID e89f3913fa979d38a32cbcbef9b4d0af56c5de16
 # Parent  cbda6c27c46e6e36c6c192550b172f79189ce974
@@ -57,7 +57,7 @@ Fix trac bug #130 -- multiline editing in Ipython/sage was broken.
 diff -r cbda6c27c46e -r e89f3913fa97 sage/misc/interpreter.py
 --- a/sage/misc/interpreter.py  Fri Jan 19 01:19:31 2007 -0800
 +++ b/sage/misc/interpreter.py  Fri Jan 19 01:35:34 2007 -0800
-`@``@` -152,7 +152,15 `@``@` def do_prefilter_paste(line, continuatio
+@@ -152,7 +152,15 @@ def do_prefilter_paste(line, continuatio
  def do_prefilter_paste(line, continuation):
      """
      Alternate prefilter for input.
@@ -74,7 +74,7 @@ diff -r cbda6c27c46e -r e89f3913fa97 sage/misc/interpreter.py
      global attached
  
      # This is so it's OK to have lots of blank space at the
-`@``@` -366,23 +374,34 `@``@` def process_file(name):
+@@ -366,23 +374,34 @@ def process_file(name):
      return name2
      
  

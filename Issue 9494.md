@@ -1,6 +1,6 @@
 # Issue 9494: Add a doctest to benchmark.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9494
 
 Original creator: demosd235
 
@@ -77,7 +77,7 @@ The patch looks good to me and passes doctests:
 
 ```
 
-bjones`@`sage:~/sage/sage-4.7.1/devel/sage$ ../../sage -t sage/tests/benchmark.py 
+bjones@sage:~/sage/sage-4.7.1/devel/sage$ ../../sage -t sage/tests/benchmark.py 
 sage -t  "devel/sage-9494/sage/tests/benchmark.py"          
 	 [8.6 s]
  
@@ -120,7 +120,7 @@ Actually, `mpoly_all()` needs work, since it is apparently unable to interrupt (
 On redhawk, where `/home` still isn't mounted, Mathematica is installed but fails to startup (prompting the user), such that I get:
 
 ```sh
-leif`@`redhawk:/$ time sage -c "from sage.tests.benchmark import mpoly_all; mpoly_all()" 
+leif@redhawk:/$ time sage -c "from sage.tests.benchmark import mpoly_all; mpoly_all()" 
 
 
 

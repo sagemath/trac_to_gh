@@ -1,6 +1,6 @@
 # Issue 4315: symbolic computing is terribly slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4315
 
 Original creator: zimmerma
 

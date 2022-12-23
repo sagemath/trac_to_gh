@@ -1,6 +1,6 @@
 # Issue 5699: notebook -- %r mode is completely broken (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5699
 
 Original creator: was
 

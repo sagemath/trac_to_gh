@@ -1,6 +1,6 @@
 # Issue 4116: 3.1.2.rc2 doctest failure: sage/interfaces/sage0.py (part II)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4116
 
 Original creator: AlexGhitza
 
@@ -12,7 +12,7 @@ Even with the patches at #4112, the following ends up happening on a 32-bit mach
 
 
 ```
-ghitza`@`artin:/opt/sage/devel/sage/sage/interfaces$ sage -t sage0.py
+ghitza@artin:/opt/sage/devel/sage/sage/interfaces$ sage -t sage0.py
 sage -t  3.1.2.rc2/devel/sage-main/sage/interfaces/sage0.py **********************************************************************
 File "/opt/sage/tmp/sage0.py", line 47:
     sage: a^3

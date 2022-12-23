@@ -1,6 +1,6 @@
 # Issue 8968: magma.Resultant() gives error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8968
 
 Original creator: mariah
 

@@ -1,6 +1,6 @@
 # Issue 3677: sage -t / sage -tp does not take into account the current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3677
 
 Original creator: mhansen
 

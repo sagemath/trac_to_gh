@@ -1,6 +1,6 @@
 # Issue 9053: Sage's new generic HNF doesn't quite work right wrt the free modules code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9053
 
 Original creator: was
 

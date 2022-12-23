@@ -1,6 +1,6 @@
 # Issue 4845: [with patch, needs review] sage 3.2.2 crashes on startup when init.sage present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4845
 
 Original creator: craigcitro
 

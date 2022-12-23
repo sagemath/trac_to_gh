@@ -1,6 +1,6 @@
 # Issue 9098: gap buillds 32-bit on OpenSolaris when SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9098
 
 Original creator: drkirkby
 
@@ -27,7 +27,7 @@ Although it builds, the binaries are 32-bit:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ find . -exec file {} \; | grep 32-bit
+drkirkby@hawk:~/sage-4.4.2$ find . -exec file {} \; | grep 32-bit
 ./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/objcftl.o:	ELF 32-bit LSB relocatable 80386 Version 1
 ./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/saveload.o:	ELF 32-bit LSB relocatable 80386 Version 1
 ./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/listoper.o:	ELF 32-bit LSB relocatable 80386 Version 1
@@ -82,7 +82,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing gap-4.4.12.p4.spkg
-kirkby`@`sage:~/sage-4.4.3$ uname -a
+kirkby@sage:~/sage-4.4.3$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 ```
 
@@ -109,7 +109,7 @@ Finished installing gap-4.4.12.p4.spkg
 We can see there is a 64-bit executable
 
 ```
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ find . -name gap
+drkirkby@hawk:~/sage-4.4.4.alpha0$ find . -name gap
 ./spkg/standard/gap-4.4.12.p4/patches/gap
 ./local/lib/gap-4.4.12/bin/i386-pc-solaris2.11-gcc/gap
 ./local/bin/gap
@@ -121,10 +121,10 @@ drkirkby`@`hawk:~/sage-4.4.4.alpha0$ find . -name gap
 Although I do not know how to call gap from Sage, the program runs at the command line and is at least able to calculate something. 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ ./local/bin/gap
+drkirkby@hawk:~/sage-4.4.4.alpha0$ ./local/bin/gap
 Set the environment variable SAGE_ROOT.
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ export SAGE_ROOT=.
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ ./local/bin/gap
+drkirkby@hawk:~/sage-4.4.4.alpha0$ export SAGE_ROOT=.
+drkirkby@hawk:~/sage-4.4.4.alpha0$ ./local/bin/gap
     
             #########           ######         ###########           ###  
          #############          ######         ############         ####  
@@ -176,10 +176,10 @@ rm: Cannot remove any directory in the path of the current working directory
 Again, gap can be seen to work, but this time in 32-bit mode.
 
 ```
-drkirkby`@`redstart:~/32/sage-4.4.3$ export SAGE_ROOT .
+drkirkby@redstart:~/32/sage-4.4.3$ export SAGE_ROOT .
 -bash: export: `.': not a valid identifier
-drkirkby`@`redstart:~/32/sage-4.4.3$ export SAGE_ROOT=.
-drkirkby`@`redstart:~/32/sage-4.4.3$ local/bin/gap
+drkirkby@redstart:~/32/sage-4.4.3$ export SAGE_ROOT=.
+drkirkby@redstart:~/32/sage-4.4.3$ local/bin/gap
     
             #########           ######         ###########           ###  
          #############          ######         ############         ####  
@@ -213,8 +213,8 @@ gap>
 Although little effort has been put into a 64-bit port to Solaris 10 on SPARC, changes made to build OpenSolaris x64 will usually benefit Solaris 10 on SPARC too. We can see gap builds 64-bit. 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.4.3$ export SAGE_ROOT=.
-drkirkby`@`redstart:~/32/sage-4.4.3$ local/bin/gap
+drkirkby@redstart:~/32/sage-4.4.3$ export SAGE_ROOT=.
+drkirkby@redstart:~/32/sage-4.4.3$ local/bin/gap
     
             #########           ######         ###########           ###  
          #############          ######         ############         ####  
@@ -254,11 +254,11 @@ We can see that the binary created is indeed 64-bit:
 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.4.3$ file ./local/bin/gap
+drkirkby@redstart:~/32/sage-4.4.3$ file ./local/bin/gap
 ./local/bin/gap:        executable shell script
-drkirkby`@`redstart:~/32/sage-4.4.3$ file ./local/lib/gap-4.4.12/bin/sparc-sun-solaris2.10-gcc/gap
+drkirkby@redstart:~/32/sage-4.4.3$ file ./local/lib/gap-4.4.12/bin/sparc-sun-solaris2.10-gcc/gap
 ./local/lib/gap-4.4.12/bin/sparc-sun-solaris2.10-gcc/gap:       ELF 64-bit MSB executable SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
-drkirkby`@`redstart:~/32/sage-4.4.3$ 
+drkirkby@redstart:~/32/sage-4.4.3$ 
 ```
 
 

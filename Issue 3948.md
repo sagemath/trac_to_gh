@@ -1,6 +1,6 @@
 # Issue 3948: [with spkg, needs review] Add 64 bit OSX build support for clisp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3948
 
 Original creator: mabshoff
 

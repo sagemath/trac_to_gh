@@ -1,6 +1,6 @@
 # Issue 4842: Fix performance regression in eisenstein_submodule.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4842
 
 Original creator: mabshoff
 

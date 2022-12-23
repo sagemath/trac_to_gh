@@ -1,6 +1,6 @@
 # Issue 6039: [with patch, needs review] Change name of pari's sum function when imported
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6039
 
 Original creator: craigcitro
 

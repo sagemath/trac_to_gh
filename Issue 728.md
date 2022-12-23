@@ -1,6 +1,6 @@
 # Issue 728: sage_inspect broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/728
 
 Original creator: malb
 

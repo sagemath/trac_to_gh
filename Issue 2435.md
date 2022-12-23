@@ -1,6 +1,6 @@
 # Issue 2435: Fix memory leak from #1337 workaround
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2435
 
 Original creator: robertwb
 

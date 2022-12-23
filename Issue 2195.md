@@ -1,6 +1,6 @@
 # Issue 2195: Givaro-related crash in finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2195
 
 Original creator: cwitty
 

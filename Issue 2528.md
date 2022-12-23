@@ -1,6 +1,6 @@
 # Issue 2528: File sage/modular/dims_doc.py should be removed soon
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2528
 
 Original creator: craigcitro
 

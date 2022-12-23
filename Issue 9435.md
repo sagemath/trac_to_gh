@@ -1,6 +1,6 @@
 # Issue 9435: sage-4.5.alpha3 fails on bsd.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9435
 
 Original creator: rlm
 
@@ -109,7 +109,7 @@ R builds OK for me on bsd.math. Then Sage completes the build.
 dumping object inventory... done
 build succeeded.
 Build finished.  The built documents can be found in /Users/kirkby/sage-4.5.alpha4/devel/sage/doc/output/html/fr/tutorial
-[kirkby`@`bsd sage-4.5.alpha4]$ make ptestlong
+[kirkby@bsd sage-4.5.alpha4]$ make ptestlong
 cd spkg && ./install all 2>&1 | tee -a ../install.log
 make[1]: Nothing to be done for `all'.
 

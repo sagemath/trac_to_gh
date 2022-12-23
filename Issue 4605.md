@@ -1,6 +1,6 @@
 # Issue 4605: Update Cython to 0.10.2 (latest stable upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4605
 
 Original creator: mabshoff
 

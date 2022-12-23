@@ -1,6 +1,6 @@
 # Issue 4643: build system uses leftover .so files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4643
 
 Original creator: craigcitro
 

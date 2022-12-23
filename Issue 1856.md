@@ -1,6 +1,6 @@
 # Issue 1856: 3d graphics -- bug in setting options via the show command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1856
 
 Original creator: was
 

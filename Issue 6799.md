@@ -1,6 +1,6 @@
 # Issue 6799: Speed up symbolic comparison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6799
 
 Original creator: gmhossain
 

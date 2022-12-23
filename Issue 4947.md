@@ -1,6 +1,6 @@
 # Issue 4947: worksheets with interact cells auto-launch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4947
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 3976: [with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3976
 
 Original creator: mhansen
 

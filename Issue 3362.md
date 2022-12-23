@@ -1,6 +1,6 @@
 # Issue 3362: lmul is broken for modules.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3362
 
 Original creator: gfurnish
 

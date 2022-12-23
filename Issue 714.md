@@ -1,6 +1,6 @@
 # Issue 714: The line(s) in interfaces/* like this are bad.  Should kill -9: print "WARNING: -- unable to kill %s. You may have to do so manually."%self
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/714
 
 Original creator: was
 

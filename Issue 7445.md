@@ -1,6 +1,6 @@
 # Issue 7445: Have jmol export a standalone html page with 3d applet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7445
 
 Original creator: mhampton
 

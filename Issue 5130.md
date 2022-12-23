@@ -1,6 +1,6 @@
 # Issue 5130: [with patch; not ready for review] create a prime_pi function that doesn't just compute len(prime_range(n))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5130
 
 Original creator: was
 

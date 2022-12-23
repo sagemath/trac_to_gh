@@ -1,6 +1,6 @@
 # Issue 7798: Text in Plots at any given Function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7798
 
 Original creator: slosoi
 

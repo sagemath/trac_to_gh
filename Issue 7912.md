@@ -1,6 +1,6 @@
 # Issue 7912: upgrade Python to 2.6.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7912
 
 Original creator: jhpalmieri
 

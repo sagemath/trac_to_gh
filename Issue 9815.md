@@ -1,6 +1,6 @@
 # Issue 9815: Elliptic Curves over RR or CC have wrong type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9816
 
 Original creator: cremona
 

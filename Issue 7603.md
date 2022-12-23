@@ -1,6 +1,6 @@
 # Issue 7603: add methods to query representation of symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7603
 
 Original creator: burcin
 

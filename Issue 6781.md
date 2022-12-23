@@ -1,6 +1,6 @@
 # Issue 6781: Library access to ecl
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6781
 
 Original creator: nbruin
 
@@ -62,10 +62,10 @@ sage: L
 sage: #rudimentary parsing of ECL constructs into python
 sage: L.python()
 
-[This is the Trac macro *<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >-macro),
- [This is the Trac macro *[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >-macro),
+[[<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >]],
+ [[[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >]],
    [<ECL: 1 >, [<ECL: 3 >, <ECL: NIL >]]],
-  [This is the Trac macro *[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >-macro),
+  [[[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >]],
     [<ECL: $X >, [<ECL: 3 >, <ECL: NIL >]]],
    <ECL: NIL >]]]
 ```

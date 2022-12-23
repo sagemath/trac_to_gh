@@ -1,6 +1,6 @@
 # Issue 600: sage -t --optional multi_polynomial_element.py takes *way* too  ram
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/600
 
 Original creator: was
 

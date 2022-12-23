@@ -1,6 +1,6 @@
 # Issue 9313: delete padic_height.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9313
 
 Original creator: wuthrich
 

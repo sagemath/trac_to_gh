@@ -1,6 +1,6 @@
 # Issue 7317: Importing and exporting different standard data types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7317
 
 Original creator: amhou
 

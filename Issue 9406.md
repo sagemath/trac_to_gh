@@ -1,6 +1,6 @@
 # Issue 9406: Multi-dimensional polynomial fit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9406
 
 Original creator: olazo
 

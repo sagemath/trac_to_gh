@@ -1,6 +1,6 @@
 # Issue 4585: "sage -upgrade" shall call the "sage-starts" script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4585
 
 Original creator: GeorgSWeber
 

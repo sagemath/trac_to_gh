@@ -1,6 +1,6 @@
 # Issue 2000: bug either in polynomial factorization or polynomial ring constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2000
 
 Original creator: was
 

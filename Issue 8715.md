@@ -1,6 +1,6 @@
 # Issue 8715: fortran-20100118 ignores SAGE_FORTRAN on Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8715
 
 Original creator: logix
 

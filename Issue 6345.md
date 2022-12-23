@@ -1,6 +1,6 @@
 # Issue 6345: load/attach do not recursively preparse files when run in interpreter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6345
 
 Original creator: ddrake
 
@@ -114,7 +114,7 @@ Comment by mvngu created at 2010-02-05 19:57:00
 Close as fixed by #7514:
 
 ```
-[mvngu`@`sage sage]$ ./sage
+[mvngu@sage sage]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

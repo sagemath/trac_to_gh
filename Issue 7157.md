@@ -1,6 +1,6 @@
 # Issue 7157: [with patch, needs review] neighbors_out/in instead of predecessor/successor in DiGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7157
 
 Original creator: ncohen
 

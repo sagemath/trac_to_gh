@@ -1,6 +1,6 @@
 # Issue 5415: wrong definition of multifactorial?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5415
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 3415: sage-3.0.3.alpha2 -- clean test of simple.py fails badly on osx ppc (fermat)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3415
 
 Original creator: was
 

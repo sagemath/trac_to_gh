@@ -1,6 +1,6 @@
 # Issue 5636: [with patch; needs review] jsmath is broken in sage-3.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5636
 
 Original creator: was
 

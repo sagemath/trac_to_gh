@@ -1,6 +1,6 @@
 # Issue 329: add md5sums for spkgs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/329
 
 Original creator: was
 
@@ -612,7 +612,7 @@ Some comments:
 diff --git a/sage-spkg b/sage-spkg
 --- a/sage-spkg
 +++ b/sage-spkg
-`@``@` -407,9 +419,14 `@``@` if [ $? -eq 0 ]; then
+@@ -407,9 +419,14 @@ if [ $? -eq 0 ]; then
              cd "$SAGE_PACKAGES/build/"
              rm -rf "$SAGE_PACKAGES/build/$PKG_NAME"
          fi
@@ -637,7 +637,7 @@ diff --git a/sage-spkg b/sage-spkg
 diff --git a/sage-add-integrity-check-to-spkg b/sage-add-integrity-check-to-spkg
 --- a/sage-add-integrity-check-to-spkg
 +++ b/sage-add-integrity-check-to-spkg
-`@``@` -30,7 +30,7 `@``@` fi
+@@ -30,7 +30,7 @@ fi
  tar tf $SPKGNAME.tar --exclude $SPKGNAME.cksum; } | \
  cksum | awk '{print $1, $2}' > $SPKGNAME.cksum
  
@@ -649,7 +649,7 @@ diff --git a/sage-add-integrity-check-to-spkg b/sage-add-integrity-check-to-spkg
 diff --git a/sage-spkg b/sage-spkg
 --- a/sage-spkg
 +++ b/sage-spkg
-`@``@` -247,7 +247,7 `@``@` then
+@@ -247,7 +247,7 @@ then
      exit 1
  elif [ $STATUS = 2 ]
  then
@@ -816,7 +816,7 @@ Given the workaround for OS X at the beginning of sage-pkg (see #2522), I would 
 diff --git a/sage-pkg b/sage-pkg
 --- a/sage-pkg
 +++ b/sage-pkg
-`@``@` -17,28 +17,18 `@``@` def tar_file(dir, no_compress=False):
+@@ -17,28 +17,18 @@ def tar_file(dir, no_compress=False):
          # workaround OS X issue -- see trac #2522
          COPYFILE_DISABLE = True
          os.environ['COPYFILE_DISABLE'] = 'true'
@@ -890,13 +890,13 @@ Common Options:
   -f <filename>  Location of archive (default /dev/st0)
   -v    Verbose
   -w    Interactive
-Create: bsdtar -c [options] [<file> | <dir> | `@`<archive> | -C <dir> ]
+Create: bsdtar -c [options] [<file> | <dir> | @<archive> | -C <dir> ]
   <file>, <dir>  add these items to archive
   -z, -j, -J, --lzma  Compress archive with gzip/bzip2/xz/lzma
   --format {ustar|pax|cpio|shar}  Select archive format
   --exclude <pattern>  Skip files that match pattern
   -C <dir>  Change to <dir> before processing remaining files
-  `@`<archive>  Add entries from <archive> to output
+  @<archive>  Add entries from <archive> to output
 List: bsdtar -t [options] [<patterns>]
   <patterns>  If specified, list only entries that match
 Extract: bsdtar -x [options] [<patterns>]

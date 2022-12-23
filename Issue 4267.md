@@ -1,6 +1,6 @@
 # Issue 4267: Make javascript packages spkgs instead of part of the extcode repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4267
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 7290: Dual method for linear programs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7290
 
 Original creator: ncohen
 

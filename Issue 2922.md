@@ -1,6 +1,6 @@
 # Issue 2922: scale function for plot_vector_field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2922
 
 Original creator: schilly
 

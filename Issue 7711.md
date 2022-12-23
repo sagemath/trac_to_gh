@@ -1,6 +1,6 @@
 # Issue 7711: integral() does not reduce coefficients in finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7711
 
 Original creator: zimmerma
 

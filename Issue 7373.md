@@ -1,6 +1,6 @@
 # Issue 7373: [with spkg; needs review] Disable assembly code in libgcrypt on Solaris x86 & rare platforms.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7373
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 123: make "current branch notification" nicer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/123
 
 Original creator: dmharvey
 

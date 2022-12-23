@@ -1,6 +1,6 @@
 # Issue 5178: [with patch; needs review] change LLL_gram to work with Gram matrices with not-necessarily integer entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5178
 
 Original creator: was
 

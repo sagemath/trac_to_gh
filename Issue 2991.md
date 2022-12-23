@@ -1,6 +1,6 @@
 # Issue 2991: dsage testdoc problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2991
 
 Original creator: was
 
@@ -13,7 +13,7 @@ allow for more possibilities in the output?
 
 
 ```
-sage`@`modular:~/build/sage-3.0.rc1$ ./sage -t devel/sage/sage/dsage/tests/testdoc.py
+sage@modular:~/build/sage-3.0.rc1$ ./sage -t devel/sage/sage/dsage/tests/testdoc.py
 sage -t  devel/sage/sage/dsage/tests/testdoc.py             **********************************************************************
 File "/home2/sage/build/sage-3.0.rc1/tmp/testdoc.py", line 46:
     sage: reactor.callFromThread(reactor.stop)
@@ -40,7 +40,7 @@ The following tests failed:
 
         sage -t  devel/sage/sage/dsage/tests/testdoc.py
 Total time for all tests: 20.0 seconds
-sage`@`modular:~/build/sage-3.0.rc1$ 
+sage@modular:~/build/sage-3.0.rc1$ 
 ```
 
 

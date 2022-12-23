@@ -1,6 +1,6 @@
 # Issue 3923: [with patch, not ready for review] notebook -- convert existing templates to Jinja templates
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3923
 
 Original creator: TimothyClemans
 

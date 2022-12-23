@@ -1,6 +1,6 @@
 # Issue 6376: serious bug in _maxima_init_ method for formal derivatives with new symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6376
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6040: Added Doctests for QuadraticForms methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6040
 
 Original creator: jonhanke
 

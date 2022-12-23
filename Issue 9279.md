@@ -1,6 +1,6 @@
 # Issue 9279: remove databases/tables.py since superseded by newer code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9279
 
 Original creator: AlexGhitza
 

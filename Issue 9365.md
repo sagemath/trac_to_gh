@@ -1,6 +1,6 @@
 # Issue 9365: sage-4.5.alpha0: R fails to build on OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9365
 
 Original creator: was
 

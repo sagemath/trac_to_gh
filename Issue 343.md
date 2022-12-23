@@ -1,6 +1,6 @@
 # Issue 343: inserting tab messes scrolls to top of cell input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/343
 
 Original creator: boothby
 

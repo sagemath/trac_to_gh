@@ -1,6 +1,6 @@
 # Issue 6845: bad ReST formatted docstring in #6819
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6845
 
 Original creator: mvngu
 

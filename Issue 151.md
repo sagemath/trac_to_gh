@@ -1,6 +1,6 @@
 # Issue 151: clisp.run being left running
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/151
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin`@`mac.com> wrote:
+On Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:
 > On Oct 25, 2006, at 12:50 PM, Kate Minola wrote:
 >> Running sage-1.4.1.2 on my x86_64-Linux system,
 >> if I run the following command:
@@ -71,7 +71,7 @@ Comment by was created at 2006-10-31 16:10:56
 
 
 ```
-On Tue, 31 Oct 2006 05:35:30 -0800, David Harvey <dmharvey`@`math.harvard.edu> wrote:
+On Tue, 31 Oct 2006 05:35:30 -0800, David Harvey <dmharvey@math.harvard.edu> wrote:
  
  
 This is getting out of control.
@@ -123,7 +123,7 @@ Comment by was created at 2006-11-06 08:25:12
 I just tested this:
 
 ```
-sawas`@`sage:~$ sage
+sawas@sage:~$ sage
 --------------------------------------------------------
 --------------------------------------------------------
 | SAGE Version 1.4.1.3, Build Date: 2006-10-20         |

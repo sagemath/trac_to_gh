@@ -1,6 +1,6 @@
 # Issue 2136: matrix visualize_structure is completely broken on osx (at least 10.5) -- why no doctest to catch this!?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2136
 
 Original creator: rlm
 

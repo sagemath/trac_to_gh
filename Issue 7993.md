@@ -1,6 +1,6 @@
 # Issue 7993: whitespace error in doctest causes A Mysterious Error.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7993
 
 Original creator: wjp
 
@@ -25,7 +25,7 @@ def foo():
 
 
 ```
-[wjp`@`issa sage-4.3.1.rc0]$ ./sage -t a.sage
+[wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage
 sage -t  "a.sage"                                           
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [2.4 s]
@@ -241,12 +241,12 @@ sage: hg_scripts.log()
 cd "/usr/local/sage-4.3.3/sage/local/bin" && hg log  | less
 changeset:   1449:0893591acc56
 tag:         tip
-user:        Willem Jan Palenstijn <wjp`@`usecode.org>
+user:        Willem Jan Palenstijn <wjp@usecode.org>
 date:        Wed Jan 20 10:52:15 2010 -0800
 summary:     #7993: clean up error handling in sage-doctest
 
 changeset:   1448:77ae8a697bba
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Sun Feb 21 17:22:49 2010 -0800
 summary:     4.3.3
 ...

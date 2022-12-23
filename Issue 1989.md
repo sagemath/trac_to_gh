@@ -1,6 +1,6 @@
 # Issue 1989: doctest fallout -- osx ppc 10.4 matrix index out of range
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1989
 
 Original creator: was
 

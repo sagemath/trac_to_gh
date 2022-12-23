@@ -1,6 +1,6 @@
 # Issue 564: memleak in matrix_integer_sparse_allocate_mpz_vector exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/564
 
 Original creator: mabshoff
 

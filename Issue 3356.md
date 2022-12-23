@@ -1,6 +1,6 @@
 # Issue 3356: [with patch; not ready for review] finance -- add randomization code; optimize some models; improve plotting code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3356
 
 Original creator: was
 
@@ -178,7 +178,7 @@ Comment by mabshoff created at 2008-07-06 19:48:07
 There are some doctest issues:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/finance/time_series.pyx # 3 doctests failed
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/finance/time_series.pyx # 3 doctests failed
 sage -t  devel/sage/sage/finance/time_series.pyx            
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py", line 525:
@@ -214,7 +214,7 @@ exit code: 1024
 And
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/matrix/matrix_space.py # 1 doctests failed
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/matrix/matrix_space.py # 1 doctests failed
 sage -t  devel/sage/sage/matrix/matrix_space.py  
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/matrix_space.py", line 653:

@@ -1,6 +1,6 @@
 # Issue 2742: add crystals to the main branch of Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2742
 
 Original creator: mhansen
 

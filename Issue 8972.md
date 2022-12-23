@@ -1,6 +1,6 @@
 # Issue 8972: Inversion and fraction fields for power series rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8972
 
 Original creator: SimonKing
 
@@ -82,7 +82,7 @@ Laurent Series Ring in x over Rational Field
 sage: F(x)
 x
 sage: ~F(x)
-/home/king/SAGE/sage-4.3.1/local/bin/sage-sage: line 206:  4437 Segmentation fault      sage-ipython "$`@`" -i
+/home/king/SAGE/sage-4.3.1/local/bin/sage-sage: line 206:  4437 Segmentation fault      sage-ipython "$@" -i
 ```
 
 
@@ -424,7 +424,7 @@ sage: timeit('q = (p^2).sqrt()')
 25 loops, best of 3: 13.6 ms per loop
 sage: timeit('q = (p^4).sqrt()')
 25 loops, best of 3: 14.5 ms per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')
 ERROR: An unexpected error occurred while tokenizing input
 The following traceback may be corrupted or invalid
@@ -452,7 +452,7 @@ sage: timeit('q = (p^2).sqrt()')
 25 loops, best of 3: 15.7 ms per loop
 sage: timeit('q = (p^4).sqrt()')
 25 loops, best of 3: 16.6 ms per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')
 25 loops, best of 3: 19.2 ms per loop
 sage: p = 9 - 33*t - 13*t^2 - 155*t^3 - 429*t^4 - 137*t^5 + 170*t^6 + 81*t^7 - 132*t^8 + 179*t^9
@@ -523,7 +523,7 @@ sage: timeit('q = (p^2).sqrt()')
 25 loops, best of 3: 13.5 ms per loop
 sage: timeit('q = (p^4).sqrt()')
 25 loops, best of 3: 14.5 ms per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')
 25 loops, best of 3: 16.4 ms per loop
 sage: p = 9 - 33*t - 13*t^2 - 155*t^3 - 429*t^4 - 137*t^5 + 170*t^6 + 81*t^7 - 132*t^8 + 179*t^9
@@ -1027,7 +1027,7 @@ sage: timeit('q = (p^2).sqrt()')
 625 loops, best of 3: 791 µs per loop
 sage: timeit('q = (p^4).sqrt()')
 625 loops, best of 3: 828 µs per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')
 <BOOM>
 sage: p = 9 - 33*t - 13*t^2 - 155*t^3 - 429*t^4 - 137*t^5 + 170*t^6 + 81*t^7 - 132*t^8 + 179*t^9
@@ -1079,7 +1079,7 @@ sage: timeit('q = (p^2).sqrt()')
 625 loops, best of 3: 962 µs per loop
 sage: timeit('q = (p^4).sqrt()')
 625 loops, best of 3: 1 ms per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')
 125 loops, best of 3: 2.39 ms per loop
 sage: p = 9 - 33*t - 13*t^2 - 155*t^3 - 429*t^4 - 137*t^5 + 170*t^6 + 81*t^7 - 132*t^8 + 179*t^9
@@ -1277,7 +1277,7 @@ sage: timeit('q = (p^2).sqrt()')
 625 loops, best of 3: 829 µs per loop
 sage: timeit('q = (p^4).sqrt()')
 625 loops, best of 3: 890 µs per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')    # bug
 ERROR: An unexpected error occurred while tokenizing input
 The following traceback may be corrupted or invalid
@@ -1329,7 +1329,7 @@ sage: timeit('q = (p^2).sqrt()')
 625 loops, best of 3: 872 µs per loop
 sage: timeit('q = (p^4).sqrt()')
 625 loops, best of 3: 932 µs per loop
-sage: PZ = ZZ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)
+sage: PZ = ZZ[['t']]
 sage: timeit('q = (PZ(p)^2).sqrt()')    # bug fixed
 125 loops, best of 3: 1.46 ms per loop
 sage: p = 9 - 33*t - 13*t^2 - 155*t^3 - 429*t^4 - 137*t^5 + 170*t^6 + 81*t^7 - 132*t^8 + 179*t^9

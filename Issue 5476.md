@@ -1,6 +1,6 @@
 # Issue 5476: dimension of jacobian of curves broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5476
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2358: phi(I) for phi a ring morphism and I an ideal should work (IMHO); it used to and now it doesn't because of new-ish arithmetic architecture stuff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2358
 
 Original creator: was
 

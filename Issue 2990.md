@@ -1,6 +1,6 @@
 # Issue 2990: sage-3.0.rc1: calculus/functions.py segfault on debian64 xeon vmware image
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2990
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Same problem every time.  This is new since rc0.
 
 
 ```
-was`@`debian64:~/build/sage-3.0.rc1$ ./sage -t --gdb devel/sage/sage/calculus/functions.py
+was@debian64:~/build/sage-3.0.rc1$ ./sage -t --gdb devel/sage/sage/calculus/functions.py
 sage -t --gdb devel/sage/sage/calculus/functions.py         ********************************************************************************
 Type r at the (gdb) prompt to run the doctests.
 Type bt if there is a crash to see a traceback.
@@ -70,7 +70,7 @@ If test the same file with verbose the problem vanishes.  I'm guessing it is a d
 The problem happens even if output isn't redirected:
 
 ```
-was`@`debian64:~/build/sage-3.0.rc1$ ./sage -python tmp/.doctest_functions.py 
+was@debian64:~/build/sage-3.0.rc1$ ./sage -python tmp/.doctest_functions.py 
 
 
 ------------------------------------------------------------
@@ -101,7 +101,7 @@ If I backout what is for me this
 
 ```
 # HG changeset patch
-# User Alexandru Ghitza <aghitza`@`alum.mit.edu>
+# User Alexandru Ghitza <aghitza@alum.mit.edu>
 # Date 1208737339 14400
 # Node ID e6249f4ffb3917dc2317eb0019654b8f0b486cb0
 # Parent  89932dbf4a767b51e2a538533f4a980079e8371e

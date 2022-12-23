@@ -1,6 +1,6 @@
 # Issue 5448: [with patch, not ready for review] rework save/show in plot, use Matplotlib's axes code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5448
 
 Original creator: mhansen
 

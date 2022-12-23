@@ -1,6 +1,6 @@
 # Issue 4579: [with patch, needs review] put mpz_longlong functions in c_lib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4579
 
 Original creator: robertwb
 

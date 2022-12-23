@@ -1,6 +1,6 @@
 # Issue 941: creating Z_p can take massive amounts of RAM.  Why?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/941
 
 Original creator: was
 

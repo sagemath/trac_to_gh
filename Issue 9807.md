@@ -1,6 +1,6 @@
 # Issue 9807: Upgrade numpy to 1.5b and scipy to 0.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9808
 
 Original creator: maldun
 
@@ -164,7 +164,7 @@ Actually  here is the full set up that you might find interesting:
 	# See progress in http://projects.scipy.org/scipy/numpy/ticket/573
 	# with the subtle difference that we don't want to break Darwin where
 	# -shared is not a valid linker argument
-	if [This is the Trac macro *${CHOST} != *-darwin* * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#${CHOST} != *-darwin* -macro) ; then
+	if [[ ${CHOST} != *-darwin* ]] ; then
 		append-ldflags -shared
 	fi
 
@@ -172,7 +172,7 @@ Actually  here is the full set up that you might find interesting:
 	# linking with cblas and lapack library will force
 	# autodetecting and linking to all available fortran compilers
 	use lapack || return
-	[This is the Trac macro *-z ${FC} * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-z ${FC} -macro) && FC=$(tc-getFC)
+	[[ -z ${FC} ]] && FC=$(tc-getFC)
 	# when fortran flags are set, pic is removed.
 	FFLAGS="${FFLAGS} -fPIC"
 	export NUMPY_FCONFIG="config_fc --noopt --noarch"
@@ -432,7 +432,7 @@ Here comes now a trickier one:
 ```
        sage -t -valgrind "devel/sage/sage/rings/polynomial/polynomial_element.pyx"
 Total time for all tests: 716.4 seconds
-maldun`@`zauberbuch:~/sage/sage-4.5.2$ sage -t  -valgrind "devel/sage/sage/rings/polynomial/real_roots.pyx
+maldun@zauberbuch:~/sage/sage-4.5.2$ sage -t  -valgrind "devel/sage/sage/rings/polynomial/real_roots.pyx
 > "
 ERROR: File ./devel/sage/sage/rings/polynomial/real_roots.pyx
  is missing
@@ -444,7 +444,7 @@ The following tests failed:
         ./devel/sage/sage/rings/polynomial/real_roots.pyx
  # File not found
 Total time for all tests: 0.0 seconds
-maldun`@`zauberbuch:~/sage/sage-4.5.2$ sage -t  -valgrind "devel/sage/sage/rings/polynomial/real_roots.pyx"
+maldun@zauberbuch:~/sage/sage-4.5.2$ sage -t  -valgrind "devel/sage/sage/rings/polynomial/real_roots.pyx"
 sage -t -valgrind "devel/sage/sage/rings/polynomial/real_roots.pyx"
 **********************************************************************
 File "/home/maldun/sage/sage-4.5.2/devel/sage/sage/rings/polynomial/real_roots.pyx", line 1819, in __main__.example_76
@@ -3117,7 +3117,7 @@ Here's a recursive grep for `isfinite` in `/usr/include` on my OpenSolaris machi
 
 
 ```
-drkirkby`@`hawk:~$ ggrep -R isfinite /usr/include
+drkirkby@hawk:~$ ggrep -R isfinite /usr/include
 /usr/include/python2.6/pyconfig.h:/* Define to 1 if you have the declaration of `isfinite', and to 0 if you
 /usr/include/python2.6/pymath.h:#define Py_IS_FINITE(X) isfinite(X)
 ggrep: warning: /usr/include/gphoto2/gphoto2: recursive directory loop
@@ -3323,7 +3323,7 @@ diff --git a/numpy/core/setup.py b/numpy/core/setup.py
 index ad8d5cb..f71ec10 100644
 --- a/numpy/core/setup.py
 +++ b/numpy/core/setup.py
-`@``@` -215,10 +215,13 `@``@` def check_ieee_macros(config):
+@@ -215,10 +215,13 @@ def check_ieee_macros(config):
      _macros = ["isnan", "isinf", "signbit", "isfinite"]
      if sys.version_info[:2] >= (2, 6):
          for f in _macros:
@@ -3393,7 +3393,7 @@ Well the Numpy now works, but Scipy is presenting a problem on OpenSolaris due t
 
 
 ```
-drkirkby`@`hawk:~$ echo $SAGE_FORTRAN
+drkirkby@hawk:~$ echo $SAGE_FORTRAN
 /usr/local/gcc-4.5.0-delayed/bin/gfortran
 ```
 
@@ -3830,7 +3830,7 @@ Dave: Is this the sort of change you had in mind?
 diff -r 1c2a7c8515fc spkg-install
 --- a/spkg-install	Tue Oct 05 22:35:34 2010 -0400
 +++ b/spkg-install	Wed Oct 06 15:07:58 2010 -0700
-`@``@` -37,11 +37,13 `@``@`
+@@ -37,11 +37,13 @@
      unset ATLAS
      unset BLAS
      unset LAPACK
@@ -3947,21 +3947,21 @@ then the three additional test failures caused by the Numpy/Scipy changes have a
 
 
 ```
-drkirkby`@`hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/doc/en/bordeaux_2008/introduction.rst
+drkirkby@hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/doc/en/bordeaux_2008/introduction.rst
 sage -t -long "devel/sage/doc/en/bordeaux_2008/introduction.rst"
 	 [3.1 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 3.1 seconds
-drkirkby`@`hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/sage/numerical/test.py
+drkirkby@hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/sage/numerical/test.py
 sage -t -long "devel/sage/sage/numerical/test.py"           
 	 [4.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 4.5 seconds
-drkirkby`@`hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/sage/plot/plot3d/list_plot3d.py
+drkirkby@hawk:~/new/sage-4.6.alpha2$ ./sage -t  -long devel/sage/sage/plot/plot3d/list_plot3d.py
 sage -t -long "devel/sage/sage/plot/plot3d/list_plot3d.py"  
 	 [3.1 s]
  
@@ -3996,7 +3996,7 @@ I've got no idea if this will solve it, but the sage_fortran script has in it:
 
 
 ```
-/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC $`@`
+/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC $@
 ```
 
 
@@ -4004,7 +4004,7 @@ but the bit at the end should be quoted:
 
 
 ```
-/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC "$`@`"
+/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC "$@"
 ```
 
 
@@ -4047,14 +4047,14 @@ Replying to [comment:224 drkirkby]:
 > 
 
 ```
-/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC $`@`
+/usr/local/gcc-4.5.0-delayed/bin/gfortran -fPIC $@
 ```
 
 
 On my Mac, it actually looks like this:
 
 ```/usr/bin/env bash
-$SAGE_LOCAL/bin/gfortran-64  -m64 "$`@`"
+$SAGE_LOCAL/bin/gfortran-64  -m64 "$@"
 ```
 
 So I don't need to add quotes -- they're already there.  And so this is not the cause of the problem.
@@ -4106,9 +4106,9 @@ That seems not to the be case. It's probably a good idea if they do, but it look
 
 
 ```
-drkirkby`@`hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f90 numpy-1.5.0.log | grep bin
-drkirkby`@`hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f95 numpy-1.5.0.log | grep bin
-drkirkby`@`hawk:~/new/sage-4.6.alpha2/spkg/logs$ 
+drkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f90 numpy-1.5.0.log | grep bin
+drkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ grep  f95 numpy-1.5.0.log | grep bin
+drkirkby@hawk:~/new/sage-4.6.alpha2/spkg/logs$ 
 ```
 
 
@@ -4132,7 +4132,7 @@ What puzzles me most is why it is now necessary do this in scipy_sandbox, despit
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.alpha1/spkg/logs$ grep f90 scipy_sandbox-20071020.p5.log
+drkirkby@hawk:~/sage-4.6.alpha1/spkg/logs$ grep f90 scipy_sandbox-20071020.p5.log
 Fortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops
 Fortran f90 compiler: sage_fortran -Wall -fno-second-underscore -fPIC -O3 -funroll-loops
 ```
@@ -4583,7 +4583,7 @@ If you grep through the scipy directory, I don't think you'll find "ppc64" anywh
 ```diff
 --- gnu.py.old	2010-08-21 22:08:35.000000000 -0700
 +++ gnu.py	2010-10-08 20:59:29.000000000 -0700
-`@``@` -254,7 +254,7 `@``@`
+@@ -254,7 +254,7 @@
          if not sys.platform == 'darwin':
              return []
          arch_flags = []
@@ -4782,17 +4782,17 @@ A few points.
 
 
 ```
-drkirkby`@`hawk:~$ echo 10.1.4  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 10.1.4  | sed 's/\([0-9]*\)\..*/\1/'
 10
-drkirkby`@`hawk:~$ echo 10.6.0  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 10.6.0  | sed 's/\([0-9]*\)\..*/\1/'
 10
-drkirkby`@`hawk:~$ echo 10.6.0  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 10.6.0  | sed 's/\([0-9]*\)\..*/\1/'
 10
-drkirkby`@`hawk:~$ echo 10.5.1  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 10.5.1  | sed 's/\([0-9]*\)\..*/\1/'
 10
-drkirkby`@`hawk:~$ echo 9.5.1  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 9.5.1  | sed 's/\([0-9]*\)\..*/\1/'
 9
-drkirkby`@`hawk:~$ echo 10.4.1  | sed 's/\([0-9]*\)\..*/\1/'
+drkirkby@hawk:~$ echo 10.4.1  | sed 's/\([0-9]*\)\..*/\1/'
 10
 ```
 
@@ -4804,17 +4804,17 @@ That looks to be taking only the major part, and so can't distinguish from 10.5 
 
 
 ```
-drkirkby`@`hawk:~$ echo 10.4.1
+drkirkby@hawk:~$ echo 10.4.1
 10.4.1
-drkirkby`@`hawk:~$ echo 10.4.1  | sed 's/\./ /g' 
+drkirkby@hawk:~$ echo 10.4.1  | sed 's/\./ /g' 
 10 4 1
-drkirkby`@`hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $1}'
+drkirkby@hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $1}'
 10
-drkirkby`@`hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $2}'
+drkirkby@hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $2}'
 4
-drkirkby`@`hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $3}'
+drkirkby@hawk:~$ echo 10.4.1  | sed 's/\./ /g' | awk '{print $3}'
 1
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ 
 ```
 
 
@@ -5043,16 +5043,16 @@ There's no reason a double -c should be a problem. There are numerous options th
 
 
 ```
-drkirkby`@`hawk:~$ touch foobar
-drkirkby`@`hawk:~$ ls -lrt | tail -1
+drkirkby@hawk:~$ touch foobar
+drkirkby@hawk:~$ ls -lrt | tail -1
 -rw-r--r--   1 drkirkby other          8 Oct 14 10:37 foobar
-drkirkby`@`hawk:~$ gcc -lm  test.c
-drkirkby`@`hawk:~$ ls -lrt | tail -1
+drkirkby@hawk:~$ gcc -lm  test.c
+drkirkby@hawk:~$ ls -lrt | tail -1
 -rwxr-xr-x   1 drkirkby staff       8316 Oct 14 10:38 a.out
-drkirkby`@`hawk:~$ gcc -lm -c -c test.c
-drkirkby`@`hawk:~$ ls -lrt | tail -1
+drkirkby@hawk:~$ gcc -lm -c -c test.c
+drkirkby@hawk:~$ ls -lrt | tail -1
 -rw-r--r--   1 drkirkby staff       1012 Oct 14 10:38 test.o
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ 
 ```
 
 

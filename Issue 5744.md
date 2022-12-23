@@ -1,6 +1,6 @@
 # Issue 5744: Solaris 10: use C99 mode to compile extensions instead of using clumsy extern declarations, properly work around _Complex_I problem in complex.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5744
 
 Original creator: mabshoff
 

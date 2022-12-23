@@ -1,6 +1,6 @@
 # Issue 9386: sage-native-execute leaves traces of sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9386
 
 Original creator: nbruin
 

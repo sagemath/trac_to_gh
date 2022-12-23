@@ -1,6 +1,6 @@
 # Issue 7423: plot3d can't handle log(0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7423
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 5008: Solaris/gcc 4.3.2: fix matplotlib build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5008
 
 Original creator: mabshoff
 

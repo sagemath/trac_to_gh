@@ -1,6 +1,6 @@
 # Issue 5697: Sage 3.4.1.rc1: Downgrade GAP to 4.4.10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5697
 
 Original creator: mabshoff
 

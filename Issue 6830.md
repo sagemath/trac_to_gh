@@ -1,6 +1,6 @@
 # Issue 6830: [with patch, needs review] Ideals of a Hecke Algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6830
 
 Original creator: wakep
 

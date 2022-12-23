@@ -1,6 +1,6 @@
 # Issue 506: add %timeit support to the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/506
 
 Original creator: was
 

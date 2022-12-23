@@ -1,6 +1,6 @@
 # Issue 1596: preparser hangs if line starts with ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1596
 
 Original creator: wjp
 

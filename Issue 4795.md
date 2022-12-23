@@ -1,6 +1,6 @@
 # Issue 4795: Modular forms over finite fields need work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4795
 
 Original creator: craigcitro
 

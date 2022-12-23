@@ -1,6 +1,6 @@
 # Issue 8160: add 'text' option to sphinxify
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8160
 
 Original creator: jhpalmieri
 

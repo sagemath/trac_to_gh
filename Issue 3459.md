@@ -1,6 +1,6 @@
 # Issue 3459: [with patch, needs review] incorrect coercion in number field ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3459
 
 Original creator: ncalexan
 

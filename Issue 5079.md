@@ -1,6 +1,6 @@
 # Issue 5079: overly greedy RealNumber handling in preparser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5079
 
 Original creator: boothby
 
@@ -55,7 +55,7 @@ Comment by mabshoff created at 2009-01-24 17:03:55
 This patch causes various test failures all seemingly of the type
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/server/notebook/twist.py
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/server/notebook/twist.py
 sage -t -long "devel/sage/sage/server/notebook/twist.py"    
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/server/notebook/twist.py", line 1459:
@@ -132,9 +132,9 @@ sage: search_src('strip_string_literals')
 misc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block 
 misc/preparser.py:def strip_string_literals(code, state=None):
 misc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals
-misc/preparser.py:        sage: s, literals, state = strip_string_literals(r*['a', "b", 'c', "d\""]*)
+misc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', "b", 'c', "d\""]''')
 misc/preparser.py:        sage: print strip_string_literals(r'-"\\\""-"\\"-')[0]
-misc/preparser.py:        sage: s, literals, state = strip_string_literals("[a, *b*, c, '']")
+misc/preparser.py:        sage: s, literals, state = strip_string_literals("[a, '''b''', c, '']")
 misc/preparser.py:        sage: s, literals, state = strip_string_literals("code '#' # ccc 't'"); s
 misc/preparser.py:        sage: s, literals, state = strip_string_literals('s = "some'); s
 misc/preparser.py:        sage: s, literals, state = strip_string_literals('thing" * 5', state); s

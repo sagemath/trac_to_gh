@@ -1,6 +1,6 @@
 # Issue 4510: Add references for Boyer's planarity code implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4510
 
 Original creator: jason
 

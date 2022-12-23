@@ -1,6 +1,6 @@
 # Issue 8807: Adding support for morphisms to the category framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8807
 
 Original creator: SimonKing
 
@@ -211,7 +211,7 @@ I applied this patch to sage-4.5, and ran "make ptestlong", and their are failur
 
 ```
 
-wstein`@`sage:~/build/sage-4.5.alphastein1$ ./sage -t  -long devel/sage/sage/matrix/misc.pyx
+wstein@sage:~/build/sage-4.5.alphastein1$ ./sage -t  -long devel/sage/sage/matrix/misc.pyx
 sage -t -long "devel/sage/sage/matrix/misc.pyx"
 **********************************************************************
 File "/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/matrix/misc.pyx", line 67:

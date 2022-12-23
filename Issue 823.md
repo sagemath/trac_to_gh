@@ -1,6 +1,6 @@
 # Issue 823: make atlas standard in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/823
 
 Original creator: was
 

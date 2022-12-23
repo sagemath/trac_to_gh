@@ -1,6 +1,6 @@
 # Issue 412: Renaming NTL C aliases to make them more futureproof
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/412
 
 Original creator: jbmohler
 

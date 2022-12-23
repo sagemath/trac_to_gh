@@ -1,6 +1,6 @@
 # Issue 7994: Upgrade sagenb to 0.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7994
 
 Original creator: timdumol
 

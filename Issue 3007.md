@@ -1,6 +1,6 @@
 # Issue 3007: gap.Factorization? is useless
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3007
 
 Original creator: was
 
@@ -18,9 +18,9 @@ Forwarded conversation
 Subject: [sage-support] Documentation with several entries
 ------------------------
 
-From: Hector Villafuerte <hectorvd`@`gmail.com>
+From: Hector Villafuerte <hectorvd@gmail.com>
 Date: Tue, Apr 22, 2008 at 5:12 PM
-To: sage-support`@`googlegroups.com
+To: sage-support@googlegroups.com
 
 
 
@@ -45,16 +45,16 @@ Thanks!
  Hector
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-support`@`googlegroups.com
-To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
+To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-support
 URLs: http://www.sagemath.org
 -~----------~----~----~----~------~----~------~--~---
 
 ----------
-From: William Stein <wstein`@`gmail.com>
+From: William Stein <wstein@gmail.com>
 Date: Wed, Apr 23, 2008 at 7:42 AM
-To: Steve Linton <sal`@`cs.st-and.ac.uk>
+To: Steve Linton <sal@cs.st-and.ac.uk>
 
 
 Any thoughts about how to disambiguate this sort of thing in the context
@@ -66,9 +66,9 @@ Associate Professor of Mathematics
 University of Washington
 http://wstein.org
 ----------
-From: Steve Linton <sal`@`cs.st-and.ac.uk>
+From: Steve Linton <sal@cs.st-and.ac.uk>
 Date: Wed, Apr 23, 2008 at 8:34 AM
-To: William Stein <wstein`@`gmail.com>
+To: William Stein <wstein@gmail.com>
 
 
 gap.2? might just work.

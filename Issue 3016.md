@@ -1,6 +1,6 @@
 # Issue 3016: [with patch, needs discussion ] javascript code editor spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3016
 
 Original creator: jason
 

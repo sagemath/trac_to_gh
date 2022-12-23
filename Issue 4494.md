@@ -1,6 +1,6 @@
 # Issue 4494: conjugate method returns error on ZZ matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4494
 
 Original creator: jason
 

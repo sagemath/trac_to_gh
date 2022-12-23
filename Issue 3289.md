@@ -1,6 +1,6 @@
 # Issue 3289: linear_code -- segfaults on ubuntu linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3289
 
 Original creator: was
 
@@ -136,7 +136,7 @@ Also, note that *sometimes* the crash happens on exit only:
 
 
 ```
-was`@`ubuntu:~/build/sage-3.0.2.rc0$ ./sage
+was@ubuntu:~/build/sage-3.0.2.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.2.rc0, Release Date: 2008-05-23                   |
@@ -205,8 +205,8 @@ b2c8f000-b2c98000 r-xp 00000000 08:01 541024     /home/was/build/sage-3.0.2.rc0/
 b2c98000-b2c9a000 rwxp 00008000 08:01 541024     /home/was/build/sage-3.0.2.rc0/devel/sage-main/build/sage/combinat/matrices/dancing_links.so
 b2c9a000-b2ca1000 r-xp 00000000 08:01 541077     /home/was/build/sage-3.0.2.rc0/devel/sage-main/build/sage/combinat/expnums.so
 b2ca1000-b2ca2000 rwxp 00007000 08:01 541077     /home/was/build/sage-3.0.2.rc0/devel/sage-main/build/sage/combinat/expnums.so
-b2ca/home/was/build/sage-3.0.2.rc0/local/bin/sage-sage: line 214: 29511 Aborted                 sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
-was`@`ubuntu:~/build/sage-3.0.2.rc0$ 
+b2ca/home/was/build/sage-3.0.2.rc0/local/bin/sage-sage: line 214: 29511 Aborted                 sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
+was@ubuntu:~/build/sage-3.0.2.rc0$ 
 
 ```
 

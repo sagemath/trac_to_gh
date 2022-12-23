@@ -1,6 +1,6 @@
 # Issue 9271: fix the "optional: needs CHomP" tags in sage/homology, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9271
 
 Original creator: jhpalmieri
 

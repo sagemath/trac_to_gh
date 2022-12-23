@@ -1,6 +1,6 @@
 # Issue 3843: typo in graphs: "edge_labels -- whether to print edgeedge labels. By default, False,                 but"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3843
 
 Original creator: was
 

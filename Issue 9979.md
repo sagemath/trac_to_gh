@@ -1,6 +1,6 @@
 # Issue 9979: Deprecate functionality of `PowerSeriesRing` which conflicts with construction of multivariate power series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9980
 
 Original creator: niles
 

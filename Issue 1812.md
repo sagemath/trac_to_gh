@@ -1,6 +1,6 @@
 # Issue 1812: [with patch] doctest coverage for finite_field_givaro up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1812
 
 Original creator: malb
 

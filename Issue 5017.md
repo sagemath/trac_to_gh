@@ -1,6 +1,6 @@
 # Issue 5017: graph.automorphism_group(translation=True) gives error in 3.2.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5017
 
 Original creator: jsp
 

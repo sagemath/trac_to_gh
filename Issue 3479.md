@@ -1,6 +1,6 @@
 # Issue 3479: [with patch, needs review] update dsage portion of tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3479
 
 Original creator: yi
 

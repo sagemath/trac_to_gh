@@ -1,6 +1,6 @@
 # Issue 2419: Gap interface and resultant destroy the Singular interface on some machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2419
 
 Original creator: SimonKing
 
@@ -159,7 +159,7 @@ Sorry, forgot the wikiformatting, so reposted:
 
 
 ```
-wdj`@`wooster:~/wdj/sagefiles/sage-2.10.3$ ./sage
+wdj@wooster:~/wdj/sagefiles/sage-2.10.3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.3, Release Date: 2008-03-11                      |
@@ -248,7 +248,7 @@ perhaps you noticed that i had found a version of the weird bug
 ticket #2419.
 
 That was for sage-2.10.2; but the problem has vanished for sage-2.10.3 --
-at least on sage.math, i am curious what will happen on my machine. [This is the Trac macro *it survives there* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#it survives there-macro)
+at least on sage.math, i am curious what will happen on my machine. [[it survives there]]
 
 Do you have any idea how the problem was fixed (or whom i should ask)?
 ```
@@ -566,7 +566,7 @@ Comment by mabshoff created at 2008-04-21 01:17:23
 Mmh, after merging this patch I see:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.rc1$ ./sage -t  devel/sage/sage/interfaces/expect.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.rc1$ ./sage -t  devel/sage/sage/interfaces/expect.py
 sage -t  devel/sage/sage/interfaces/expect.py               **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.rc1/tmp/expect.py", line 835:
     sage: singular('2+3')
@@ -642,7 +642,7 @@ The following tests failed:
 
         sage -t  devel/sage/sage/interfaces/expect.py
 Total time for all tests: 7.5 seconds
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.rc1$   
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.rc1$   
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 6496: functions numerator() and denominator() for multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6496
 
 Original creator: mvngu
 
@@ -56,7 +56,7 @@ diff -r 2e793d2a0e12 sage/rings/polynomial/multi_polynomial.pyx
 +++ b/sage/rings/polynomial/multi_polynomial.pyx        Thu Jul 09
 00:05:29
 2009 -0700
-`@``@` -980,6 +980,28 `@``@`
+@@ -980,6 +980,28 @@
          from sage.structure.factorization import Factorization
          return Factorization(v, unit)
 
@@ -122,7 +122,7 @@ In the univariate case there is a special case, the numerator of a polynomial wi
 diff -r ca1f31d6f6bf sage/rings/polynomial/multi_polynomial.pyx
 --- a/sage/rings/polynomial/multi_polynomial.pyx        Thu Jul 09 15:14:36 2009 -0700
 +++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Jul 15 20:51:20 2009 -0700
-`@``@` -980,8 +980,136 `@``@`
+@@ -980,8 +980,136 @@
          from sage.structure.factorization import Factorization
          return Factorization(v, unit)
 
@@ -269,7 +269,7 @@ diff -r ca1f31d6f6bf sage/rings/polynomial/multi_polynomial.pyx
 diff -r ca1f31d6f6bf sage/rings/polynomial/multi_polynomial_libsingular.pyx
 --- a/sage/rings/polynomial/multi_polynomial_libsingular.pyx    Thu Jul 09 15:14:36 2009 -0700
 +++ b/sage/rings/polynomial/multi_polynomial_libsingular.pyx    Wed Jul 15 20:51:20 2009 -0700
-`@``@` -4866,7 +4866,69 `@``@`
+@@ -4866,7 +4866,69 @@
              i.append( new_MP(self._parent, pDiff(self._poly, k)))
 
          return i

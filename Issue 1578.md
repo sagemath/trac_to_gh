@@ -1,6 +1,6 @@
 # Issue 1578: [with patch, with bundle] Make polynomial .diff() accept optional argument times for repeated differentiation.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1578
 
 Original creator: ncalexan
 

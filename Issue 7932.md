@@ -1,6 +1,6 @@
 # Issue 7932: _Complex_I undeclared - a new bug totally stops a Solaris 10 build.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7932
 
 Original creator: drkirkby
 
@@ -120,8 +120,8 @@ I've no idea why, but it does build and run as expected with the Sun Studio comp
 
 
 ```
-kirkby`@`t2:[~] $ /opt/SUNWspro/bin/cc  simple_complex.c
-kirkby`@`t2:[~] $ ./a.out
+kirkby@t2:[~] $ /opt/SUNWspro/bin/cc  simple_complex.c
+kirkby@t2:[~] $ ./a.out
 CYTHON_CCOMPLEX 1
 ```
 
@@ -130,8 +130,8 @@ and also on my Sun Sun Ultra 27 (Intel Xeon) with Sun Studio 12.1
 
 
 ```
-drkirkby`@`hawk:~$ /opt/sunstudio12.1/bin/cc simple_complex.c
-drkirkby`@`hawk:~$ ./a.out
+drkirkby@hawk:~$ /opt/sunstudio12.1/bin/cc simple_complex.c
+drkirkby@hawk:~$ ./a.out
 CYTHON_CCOMPLEX 1
 ```
 
@@ -140,7 +140,7 @@ but as you say, not on t2 if one uses 'gcc'. Nor does it build with gcc on my Su
 
 
 ```
-drkirkby`@`hawk:~$ gcc  simple_complex.c
+drkirkby@hawk:~$ gcc  simple_complex.c
 simple_complex.c: In function ‘__pyx_t_double_complex_from_parts’:
 simple_complex.c:20: error: ‘_Complex_I’ undeclared (first use in this function)
 simple_complex.c:20: error: (Each undeclared identifier is reported only once

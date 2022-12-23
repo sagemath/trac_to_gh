@@ -1,6 +1,6 @@
 # Issue 6978: [patch, needs review] fixes matplotlib to compile in cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6978
 
 Original creator: certik
 

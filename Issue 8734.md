@@ -1,6 +1,6 @@
 # Issue 8734: make sage variables unique in maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8734
 
 Original creator: jason
 

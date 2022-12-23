@@ -1,6 +1,6 @@
 # Issue 4874: performance issue for generic polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4874
 
 Original creator: was
 

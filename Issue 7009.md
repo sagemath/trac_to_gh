@@ -1,6 +1,6 @@
 # Issue 7009: Formatted output options for ciphertext
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7009
 
 Original creator: rbeezer
 

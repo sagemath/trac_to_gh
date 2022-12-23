@@ -1,6 +1,6 @@
 # Issue 9759: Possible numerical noise doctest failure in sage/matrix/matrix2.pyx on t2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9760
 
 Original creator: mpatel
 

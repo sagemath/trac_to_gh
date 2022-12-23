@@ -1,6 +1,6 @@
 # Issue 5809: schemes/generic/hypersurface.py is completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5809
 
 Original creator: AlexGhitza
 

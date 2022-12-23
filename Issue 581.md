@@ -1,6 +1,6 @@
 # Issue 581: apply LinBox's Changeset 2803 - this removes the workaround for #498 and fixes the problem itself
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/581
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 472: Drop dependencies on flex and bison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/472
 
 Original creator: jmbr
 

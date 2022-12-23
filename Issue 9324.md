@@ -1,6 +1,6 @@
 # Issue 9324: bug in Tate's algorithm over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9324
 
 Original creator: cremona
 

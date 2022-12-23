@@ -1,6 +1,6 @@
 # Issue 6340: var('x',ns=False)  -- should go boom but silently gives a new symbolic variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6340
 
 Original creator: was
 

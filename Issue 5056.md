@@ -1,6 +1,6 @@
 # Issue 5056: rename Ideal.reduced_basis to Ideal.interreduced_basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5056
 
 Original creator: malb
 

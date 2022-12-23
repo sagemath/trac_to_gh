@@ -1,6 +1,6 @@
 # Issue 7182: HP-UX failure of gfan-0.3.p4 but easier to ensure we have GNU make.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7182
 
 Original creator: drkirkby
 

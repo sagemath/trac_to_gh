@@ -1,6 +1,6 @@
 # Issue 2168: add native implementation for PartitionTuples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2168
 
 Original creator: mhansen
 

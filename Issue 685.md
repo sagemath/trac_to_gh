@@ -1,6 +1,6 @@
 # Issue 685: Make Eisenstein series code handle eisenstein series with character
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/685
 
 Original creator: craigcitro
 

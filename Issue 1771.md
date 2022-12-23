@@ -1,6 +1,6 @@
 # Issue 1771: latex bug with symbolics [with fix]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1771
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6035: [with patch, needs review] Don't draw vertical asympotes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6035
 
 Original creator: whuss
 

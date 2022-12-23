@@ -1,6 +1,6 @@
 # Issue 3039: [with patch; needs review] Improve auto-generated version numbers for Debian packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3039
 
 Original creator: tabbott
 

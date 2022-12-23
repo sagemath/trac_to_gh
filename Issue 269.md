@@ -1,6 +1,6 @@
 # Issue 269: add floordiv, mod, invert, pow to arithmetic architecture (at least in RingElement)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/269
 
 Original creator: dmharvey
 

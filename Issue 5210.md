@@ -1,6 +1,6 @@
 # Issue 5210: gmp-mpir-0.9.rc3: make check failure on various OSX boxen
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5210
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6139: [with patch, needs review] Fix S-Box calling when m != n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6139
 
 Original creator: malb
 

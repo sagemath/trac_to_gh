@@ -1,6 +1,6 @@
 # Issue 7221: Spanish doc #9 "Welcome to the Sage Tutorial!"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7221
 
 Original creator: Loufer
 

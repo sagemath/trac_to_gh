@@ -1,6 +1,6 @@
 # Issue 9337: Add toric divisors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9337
 
 Original creator: vbraun
 
@@ -921,7 +921,7 @@ I fixed the doctests, that was just a minor issue. Thanks for catching it!
 The divisor code already assumes at places that the divisor is reduced (we should probably call this "collected", but I'll stick with it for now), for example in the original code to extract the coefficient. In general I think allowing unreduced divisors is going to be a huge pitfall for future contributors as well as a performance impediment. If one really wanted non-reduced divisors then one needs a flag to remember whether one already did the reduction to avoid doing it over and over. On a final word of warning:
 
 ```
-sage: FormalSum([[1,2],[1,2]],reduce=False) == FormalSum([This is the Trac macro *2,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2,2-macro))
+sage: FormalSum([[1,2],[1,2]],reduce=False) == FormalSum([[2,2]])
 False
 ```
 

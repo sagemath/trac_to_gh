@@ -1,6 +1,6 @@
 # Issue 4020: fraction field doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4020
 
 Original creator: robertwb
 

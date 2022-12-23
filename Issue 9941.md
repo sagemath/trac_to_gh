@@ -1,6 +1,6 @@
 # Issue 9941: Fix CHomP-related doctest errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9942
 
 Original creator: jhpalmieri
 

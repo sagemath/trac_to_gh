@@ -1,6 +1,6 @@
 # Issue 489: Expose LiE functionality in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/489
 
 Original creator: mhansen
 
@@ -36,7 +36,7 @@ Comment by mabshoff created at 2007-08-24 17:00:35
 and it already has been build on neron. Just add -L${SAGE_LOCAL} -lncurses to the link flags, i.e. 
 
 ```
-mabshoff`@`neron LiE$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -L /extra/home/mabshoff/SAGE-build/sage-2.8.2.rc1/local/lib/ -lreadline -lcurses
+mabshoff@neron LiE$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -L /extra/home/mabshoff/SAGE-build/sage-2.8.2.rc1/local/lib/ -lreadline -lcurses
 ```
 
 
@@ -79,7 +79,7 @@ collect2: ld returned 1 exit status
 make[1]: *** [Lie.exe] Error 1
 make[1]: Leaving directory `/tmp/Work2/LiE'
 make: *** [all] Error 2
-[mabshoff`@`m940 LiE]$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lncurses
+[mabshoff@m940 LiE]$ gcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o gettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lncurses
 learn.o: In function `Learn':
 learn.c:(.text+0x59a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
 ```
@@ -97,7 +97,7 @@ Comment by mabshoff created at 2007-08-24 21:50:30
 And while we are at it some valgrinding can't hurt:
 
 ```
-[mabshoff`@`m940 LiE]$ valgrind --tool=memcheck --leak-resolution=high ./Lie.exe < progs/maxsub
+[mabshoff@m940 LiE]$ valgrind --tool=memcheck --leak-resolution=high ./Lie.exe < progs/maxsub
 ==22512== Memcheck, a memory error detector.
 ==22512== Copyright (C) 2002-2006, and GNU GPL'd, by Julian Seward et al.
 ==22512== Using LibVEX rev 1658, a library for dynamic binary translation.
@@ -110,10 +110,10 @@ New tree space with maximum number of nodes: 50000.
      type A
 ==22512== Syscall param write(buf) points to uninitialised byte(s)
 ==22512==    at 0x31058BFA60: __write_nocancel (in /lib64/libc-2.5.so)
-==22512==    by 0x31058686D2: _IO_file_write`@``@`GLIBC_2.2.5 (in /lib64/libc-2.5.so)
-==22512==    by 0x31058685E5: _IO_do_write`@``@`GLIBC_2.2.5 (in /lib64/libc-2.5.so)
-==22512==    by 0x310586971F: _IO_file_close_it`@``@`GLIBC_2.2.5 (in /lib64/libc-2.5.so)
-==22512==    by 0x310585E249: fclose`@``@`GLIBC_2.2.5 (in /lib64/libc-2.5.so)
+==22512==    by 0x31058686D2: _IO_file_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)
+==22512==    by 0x31058685E5: _IO_do_write@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)
+==22512==    by 0x310586971F: _IO_file_close_it@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)
+==22512==    by 0x310585E249: fclose@@GLIBC_2.2.5 (in /lib64/libc-2.5.so)
 ==22512==    by 0x40565C: Objectwrite (in /tmp/Work2/LiE/Lie.exe)
 ==22512==    by 0x41241E: vid_writestring_tex_grp_tex (in /tmp/Work2/LiE/Lie.exe)
 ==22512==    by 0x406325: eval_value (in /tmp/Work2/LiE/Lie.exe)

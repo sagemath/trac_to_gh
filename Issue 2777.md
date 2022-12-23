@@ -1,6 +1,6 @@
 # Issue 2777: '??' can't always find the source
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2777
 
 Original creator: justin
 

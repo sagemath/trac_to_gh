@@ -1,6 +1,6 @@
 # Issue 3704: diagonal_matrix does not accept vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3704
 
 Original creator: jkantor
 

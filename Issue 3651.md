@@ -1,6 +1,6 @@
 # Issue 3651: elliptic curves -- bug in L_ratio()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3651
 
 Original creator: cremona
 

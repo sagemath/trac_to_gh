@@ -1,6 +1,6 @@
 # Issue 9182: Jacobian of a Hyperelliptic curve doesn't coerces correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9182
 
 Original creator: aly.deines
 

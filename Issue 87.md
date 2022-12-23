@@ -1,6 +1,6 @@
 # Issue 87: multivariable FractionField vs MPolynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/87
 
 Original creator: jdc
 

@@ -1,6 +1,6 @@
 # Issue 9990: rubiks is failing to install proplerly on AIX as it's assuming the GNU install program.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9991
 
 Original creator: drkirkby
 

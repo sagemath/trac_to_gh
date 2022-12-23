@@ -1,6 +1,6 @@
 # Issue 1489: serious bug in calculus maxima parsing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1489
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Dec 13, 2007 9:53 AM, Matthias Hillenbrand <mailanhilli`@`googlemail.com> wrote:
+On Dec 13, 2007 9:53 AM, Matthias Hillenbrand <mailanhilli@googlemail.com> wrote:
 > 
 > Hello,
 > 

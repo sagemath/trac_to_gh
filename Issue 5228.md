@@ -1,6 +1,6 @@
 # Issue 5228: [with patch, needs review] make composite_fields and galois_closure return maps and preserve embeddings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5228
 
 Original creator: ncalexan
 

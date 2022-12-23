@@ -1,6 +1,6 @@
 # Issue 7809: region_plot does not respect the passed variable order
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7809
 
 Original creator: jason
 

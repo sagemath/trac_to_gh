@@ -1,6 +1,6 @@
 # Issue 744: graphs: returning graph to allow chaining
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/744
 
 Original creator: jason
 

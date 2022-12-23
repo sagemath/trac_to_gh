@@ -1,6 +1,6 @@
 # Issue 6942: jordan_form with transformation=true returns non-invertible transformation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6942
 
 Original creator: syazdani
 

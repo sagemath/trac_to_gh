@@ -1,6 +1,6 @@
 # Issue 660: allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/660
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1625: update ipython to 0.8.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1625
 
 Original creator: mabshoff
 

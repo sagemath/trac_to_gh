@@ -1,6 +1,6 @@
 # Issue 2731: GeneratorMatCode doesn't seem to be available in Debian's GAP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2731
 
 Original creator: tabbott
 

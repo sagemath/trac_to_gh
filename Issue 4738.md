@@ -1,6 +1,6 @@
 # Issue 4738: base_ring of orders in relative number fields is wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4738
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 3144: bug in calculus var command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3144
 
 Original creator: was
 
@@ -29,7 +29,7 @@ Comment by was created at 2008-05-09 16:37:00
 ```
 
 
-On Fri, May 9, 2008 at 9:28 AM, Marshall Hampton <hamptonio`@`gmail.com> wrote:
+On Fri, May 9, 2008 at 9:28 AM, Marshall Hampton <hamptonio@gmail.com> wrote:
 >
 > I'm not sure I agree that this is a bug.  After using the name "var"
 > in the loop, the value of var is y.  y is a symbolic variable, and

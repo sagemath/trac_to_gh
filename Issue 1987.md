@@ -1,6 +1,6 @@
 # Issue 1987: [with patch] unintuitive return values for "forall" and "exists"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1987
 
 Original creator: nbruin
 

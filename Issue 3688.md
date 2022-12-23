@@ -1,6 +1,6 @@
 # Issue 3688: trivial problems in the sage spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3688
 
 Original creator: tabbott
 

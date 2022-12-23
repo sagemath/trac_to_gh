@@ -1,6 +1,6 @@
 # Issue 5808: [with patch, needs review] fix most warnings when building the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5808
 
 Original creator: jhpalmieri
 

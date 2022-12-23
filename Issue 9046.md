@@ -1,6 +1,6 @@
 # Issue 9046: missing documentation and bug in collect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9046
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 4836: pari types getattr() function ugly and inefficient
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4836
 
 Original creator: cremona
 

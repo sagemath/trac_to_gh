@@ -1,6 +1,6 @@
 # Issue 5028: point2d? says point.options instead of point2d.options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5028
 
 Original creator: slabbe
 

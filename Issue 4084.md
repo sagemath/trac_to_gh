@@ -1,6 +1,6 @@
 # Issue 4084: plot(1/cos,-1,1) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4084
 
 Original creator: jwmerrill
 
@@ -31,7 +31,7 @@ Hi,
 this is fixed in 3.1.2.rc1-ish:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc1$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.2.rc0, Release Date: 2008-09-06                   |

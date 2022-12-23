@@ -1,6 +1,6 @@
 # Issue 9356: make SAGE_ATLAS_LIB work on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9356
 
 Original creator: jhpalmieri
 

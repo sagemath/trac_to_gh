@@ -1,6 +1,6 @@
 # Issue 4160: as of 2009-09-20 the polymake optional spkg fails to install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4160
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-server2`@`sage:~$ sage -i polynomial-2.2.p4
+server2@sage:~$ sage -i polynomial-2.2.p4
 Installing polynomial-2.2.p4
 Calling sage-spkg on polynomial-2.2.p4
 You must set the SAGE_ROOT environment variable or

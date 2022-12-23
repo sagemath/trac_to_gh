@@ -1,6 +1,6 @@
 # Issue 7722: is_strongly_connected function for digraphs !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7722
 
 Original creator: ncohen
 

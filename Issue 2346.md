@@ -1,6 +1,6 @@
 # Issue 2346: Sage needs a simple api for interaction with other applications
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2346
 
 Original creator: robertwb
 

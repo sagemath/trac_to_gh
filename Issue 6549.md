@@ -1,6 +1,6 @@
 # Issue 6549: reinstate some doctests in schemes/plane_curves/affine_curve.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6549
 
 Original creator: AlexGhitza
 
@@ -12,7 +12,7 @@ Some doctests in `schemes/plane_curves/affine_curve.py` are marked "not tested" 
 
 
 ```
-aghitza`@`192-168-1-2:~/opt/sage-4.1$ ./sage
+aghitza@192-168-1-2:~/opt/sage-4.1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: x, y = (GF(17)['x,y']).gens()
@@ -26,7 +26,7 @@ True
 sage: 
 Exiting SAGE (CPU time 0m0.23s, Wall time 1m59.83s).
 Exiting spawned Singular process.
-aghitza`@`192-168-1-2:~/opt/sage-4.1$ uname -a
+aghitza@192-168-1-2:~/opt/sage-4.1$ uname -a
 Darwin 192-168-1-2.tpgi.com.au 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386
 ```
 

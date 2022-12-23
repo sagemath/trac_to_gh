@@ -1,6 +1,6 @@
 # Issue 2423: notebook() opens up to the entire world by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2423
 
 Original creator: jason
 

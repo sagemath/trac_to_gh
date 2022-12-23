@@ -1,6 +1,6 @@
 # Issue 7674: fix bug in c_graph backends in_degree and out_degree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7674
 
 Original creator: rlm
 

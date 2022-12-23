@@ -1,6 +1,6 @@
 # Issue 5675: notebook with address="" option should set the address to something useful
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5675
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8606: floats in exponent do not propagate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8606
 
 Original creator: zimmerma
 

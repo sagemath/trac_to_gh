@@ -1,6 +1,6 @@
 # Issue 6797: doctest failure in sage/sage/groups/perm_gps/cubegroup.py due to upgrade to Maxima 5.19.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6797
 
 Original creator: drkirkby
 

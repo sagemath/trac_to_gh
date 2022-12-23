@@ -1,6 +1,6 @@
 # Issue 5068: change_ring fails for polynomials over finite fields in many cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5068
 
 Original creator: was
 

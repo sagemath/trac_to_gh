@@ -1,6 +1,6 @@
 # Issue 9320: Implement root numbers for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9320
 
 Original creator: arminstraub
 

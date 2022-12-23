@@ -1,6 +1,6 @@
 # Issue 9147: [with patch, needs review] Make sage able to compile/link with --as-needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9147
 
 Original creator: cschwan
 

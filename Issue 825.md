@@ -1,6 +1,6 @@
 # Issue 825: extending % to more sage types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/825
 
 Original creator: mhampton
 

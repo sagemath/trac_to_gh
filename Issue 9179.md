@@ -1,6 +1,6 @@
 # Issue 9179: Typo makes docs not perfect in plot/disk.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9179
 
 Original creator: kcrisman
 

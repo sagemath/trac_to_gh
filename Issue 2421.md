@@ -1,6 +1,6 @@
 # Issue 2421: .round(), .floor(), .ceil(), and .trunc() on RealNumber should have the same return type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2421
 
 Original creator: cwitty
 

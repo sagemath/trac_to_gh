@@ -1,6 +1,6 @@
 # Issue 1248: mwrank wrapper defect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1248
 
 Original creator: zimmerma
 

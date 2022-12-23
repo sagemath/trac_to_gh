@@ -1,6 +1,6 @@
 # Issue 8605: upgrade SageTeX spkg to 2.2.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8605
 
 Original creator: ddrake
 

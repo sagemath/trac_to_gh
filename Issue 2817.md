@@ -1,6 +1,6 @@
 # Issue 2817: specify options for parts of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2817
 
 Original creator: jason
 

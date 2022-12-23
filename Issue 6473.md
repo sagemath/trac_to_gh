@@ -1,6 +1,6 @@
 # Issue 6473: ideal.interreduced_basis hangs forever
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6473
 
 Original creator: broune
 

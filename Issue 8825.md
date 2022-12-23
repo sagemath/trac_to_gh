@@ -1,6 +1,6 @@
 # Issue 8825: Improve documentation for function norm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8825
 
 Original creator: johan
 

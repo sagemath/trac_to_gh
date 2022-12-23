@@ -1,6 +1,6 @@
 # Issue 6293: conjugacy_classes_representatives is missing in AbelianGroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6293
 
 Original creator: jlefebvre
 

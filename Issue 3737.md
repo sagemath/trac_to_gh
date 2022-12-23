@@ -1,6 +1,6 @@
 # Issue 3737: backslash in verbatim environment in tut.tex breaks doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3737
 
 Original creator: jhpalmieri
 

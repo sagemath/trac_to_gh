@@ -1,6 +1,6 @@
 # Issue 7279: issue with %sh in sagenb (notebook)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7279
 
 Original creator: was
 

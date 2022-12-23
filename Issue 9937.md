@@ -1,6 +1,6 @@
 # Issue 9937: GAP does not start if the path to the GAP workspace file contains more than 83 characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9938
 
 Original creator: saliola
 

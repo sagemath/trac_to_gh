@@ -1,6 +1,6 @@
 # Issue 803: Tests for what kind of an element something is should test the parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/803
 
 Original creator: roed
 

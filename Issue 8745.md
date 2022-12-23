@@ -1,6 +1,6 @@
 # Issue 8745: Steiner Triple Systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8745
 
 Original creator: ncohen
 

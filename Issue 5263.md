@@ -1,6 +1,6 @@
 # Issue 5263: publishing a worksheet displays the URL without the hostname
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5263
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9680: Don't greedily replace 'self' with classname in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9680
 
 Original creator: boothby
 

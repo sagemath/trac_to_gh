@@ -1,6 +1,6 @@
 # Issue 6270: [with patch, needs review] add some files from the plot directory to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6270
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5738: update MPIR to 1.0.0.rc8: --enable-gmplink -> --enable-gmpcompat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5738
 
 Original creator: mabshoff
 

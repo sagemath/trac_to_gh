@@ -1,6 +1,6 @@
 # Issue 1280: make Permutation(range(10)).random() fast instead of dog slow.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1280
 
 Original creator: was
 

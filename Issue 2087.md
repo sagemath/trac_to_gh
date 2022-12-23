@@ -1,6 +1,6 @@
 # Issue 2087: make the final output of "sage -i" more user friendly (easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2087
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7236: Partitions cleanup (box => cell + indentation fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7236
 
 Original creator: hivert
 

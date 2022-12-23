@@ -1,6 +1,6 @@
 # Issue 5180: [with patch, needs review] Improvements to congruence subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5180
 
 Original creator: davidloeffler
 

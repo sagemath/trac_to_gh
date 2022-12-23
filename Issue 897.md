@@ -1,6 +1,6 @@
 # Issue 897: number_of_partitions -- now broken on OS X PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/897
 
 Original creator: was
 

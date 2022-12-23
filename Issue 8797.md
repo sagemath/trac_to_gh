@@ -1,6 +1,6 @@
 # Issue 8797: add symbolic logic to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8797
 
 Original creator: mvngu
 

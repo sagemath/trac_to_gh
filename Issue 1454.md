@@ -1,6 +1,6 @@
 # Issue 1454: Change the prompt for sage -sh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1454
 
 Original creator: was
 

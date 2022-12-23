@@ -1,6 +1,6 @@
 # Issue 615: doctest errors in piecewise.py due to calling a constant function.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/615
 
 Original creator: mhansen
 

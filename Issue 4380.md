@@ -1,6 +1,6 @@
 # Issue 4380: Memory Leak in libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4380
 
 Original creator: SimonKing
 

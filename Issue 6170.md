@@ -1,6 +1,6 @@
 # Issue 6170: automate applying patches from a ticket and testing them
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6170
 
 Original creator: was
 
@@ -28,19 +28,19 @@ This could look like the following, though the first patch to this ticket should
 ```
 sage: hg_devel.test(6738)
 
-[This is the Trac macro *applying patches on trac ticket 6738 to the correct repos...* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#applying patches on trac ticket 6738 to the correct repos...-macro)
+[[applying patches on trac ticket 6738 to the correct repos...]]
 
-[This is the Trac macro *starting new sage process in os.system and doing "sage -br"* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#starting new sage process in os.system and doing "sage -br"-macro)
+[[starting new sage process in os.system and doing "sage -br"]]
 
-[This is the Trac macro *report any failures* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#report any failures-macro)
+[[report any failures]]
 
-[This is the Trac macro *run make ptestlong and report results* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#run make ptestlong and report results-macro)
+[[run make ptestlong and report results]]
 
-[This is the Trac macro *revert state of sage to exactly what it was before stuff applied* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#revert state of sage to exactly what it was before stuff applied-macro)
+[[revert state of sage to exactly what it was before stuff applied]]
 
 sage: hg_devel.apply(6738)
 
-[This is the Trac macro *apply everything from ticket 6738 to all relevant repos -- basically hg_devel.test without running tests, and without undoing at the end;  would also place all relevant downloaded patches in a directory -- this is what Michael always did manually with the patches/ directory* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#apply everything from ticket 6738 to all relevant repos -- basically hg_devel.test without running tests, and without undoing at the end;  would also place all relevant downloaded patches in a directory -- this is what Michael always did manually with the patches/ directory-macro)
+[[apply everything from ticket 6738 to all relevant repos -- basically hg_devel.test without running tests, and without undoing at the end;  would also place all relevant downloaded patches in a directory -- this is what Michael always did manually with the patches/ directory]]
 
 sage: hg_devel.needs_review()
 
@@ -52,12 +52,12 @@ sage: hg_devel.positive_review()
 
 sage: hg_devel.test_positive_review()
 
-[This is the Trac macro *would try hg_devel.test* that was inherited from the migration called with arguments (...) on every ticket with positive review and make a nice html )](https://trac.sagemath.org/wiki/WikiMacros#would try hg_devel.test-macro)
+[[would try hg_devel.test(...) on every ticket with positive review and make a nice html (and/or text) based report summarizing what happened]]
 
 
 sage: hg_devel.test_needs_review()
 
-[This is the Trac macro *would try hg_devel.test* that was inherited from the migration called with arguments (...) on every ticket that needs review and make a nice html )](https://trac.sagemath.org/wiki/WikiMacros#would try hg_devel.test-macro)
+[[would try hg_devel.test(...) on every ticket that needs review and make a nice html (and/or text) based report summarizing what happened.   This could probably quickly indicate that half the tickets "needs review" are broken or need a rebase -- it could easily take several hours to run.  This would be incredibly valuable, imho.]]
 
 
 

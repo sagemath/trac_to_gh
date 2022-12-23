@@ -1,6 +1,6 @@
 # Issue 321: execute button broken in some worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/321
 
 Original creator: TimothyClemans
 

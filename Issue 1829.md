@@ -1,6 +1,6 @@
 # Issue 1829: [with patch] small improvements for term ordering module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1829
 
 Original creator: malb
 

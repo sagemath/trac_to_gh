@@ -1,6 +1,6 @@
 # Issue 6087: graph automorphism group segfaults on invalid input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6087
 
 Original creator: jason
 

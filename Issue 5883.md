@@ -1,6 +1,6 @@
 # Issue 5883: integrate relevant functionality from modular/modsym/p1list.pyx into projective space code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5883
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 9032: no method numerical_approx for integers and rationals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9032
 
 Original creator: zimmerma
 
@@ -98,7 +98,7 @@ cd "/usr/local/sage/devel/sage" && hg status
 cd "/usr/local/sage/devel/sage" && hg status
 cd "/usr/local/sage/devel/sage" && hg import   "/tmp/trac_9032.patch"
 applying /tmp/trac_9032.patch
-abort: malformed patch a/sage/structure/element.pyx `@``@` -578,24 +580,26 `@``@`
+abort: malformed patch a/sage/structure/element.pyx @@ -578,24 +580,26 @@
 ```
 
 Paul

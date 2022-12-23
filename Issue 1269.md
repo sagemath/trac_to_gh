@@ -1,6 +1,6 @@
 # Issue 1269: [with patch] sage -t --omega does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1269
 
 Original creator: cwitty
 

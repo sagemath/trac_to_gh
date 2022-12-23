@@ -1,6 +1,6 @@
 # Issue 8995: @ sign in notebook username prevents TinyMCE from working
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8995
 
 Original creator: jason
 

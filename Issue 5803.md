@@ -1,6 +1,6 @@
 # Issue 5803: [with patch, needs review] Upgrade Cython to 0.11.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5803
 
 Original creator: robertwb
 

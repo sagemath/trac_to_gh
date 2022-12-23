@@ -1,6 +1,6 @@
 # Issue 1299: Make sure GSL uses atlas.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1299
 
 Original creator: jkantor
 

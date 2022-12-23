@@ -1,6 +1,6 @@
 # Issue 8106: Minor update on $SAGE_ROOT/README.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8106
 
 Original creator: GokhanSever
 

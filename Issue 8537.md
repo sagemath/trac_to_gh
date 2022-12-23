@@ -1,6 +1,6 @@
 # Issue 8537: Update Open MPI package to latest - Sage version is 3 years old!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8537
 
 Original creator: drkirkby
 

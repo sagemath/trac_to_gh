@@ -1,6 +1,6 @@
 # Issue 2060: Update PolyBoRi spkg to 0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2060
 
 Original creator: malb
 

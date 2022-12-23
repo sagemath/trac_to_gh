@@ -1,6 +1,6 @@
 # Issue 4178: dist_functions.py doctest timeout is too small
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4178
 
 Original creator: GeorgSWeber
 

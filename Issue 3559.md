@@ -1,6 +1,6 @@
 # Issue 3559: [with patch; needs review] sage timeup script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3559
 
 Original creator: was
 
@@ -70,7 +70,7 @@ Cheers,
 
 
                                Andrew
-                               dalke`@`dalkescientific.com
+                               dalke@dalkescientific.com
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 6553: fast slicing of sparse matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6553
 
 Original creator: jason
 

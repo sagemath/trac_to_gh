@@ -1,6 +1,6 @@
 # Issue 7084: Make assumption comparison work for GenericDeclarations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7084
 
 Original creator: kcrisman
 

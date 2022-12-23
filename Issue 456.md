@@ -1,6 +1,6 @@
 # Issue 456: TypeError: unable to coerce to a ComplexNumber
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/456
 
 Original creator: mhansen
 

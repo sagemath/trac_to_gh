@@ -1,6 +1,6 @@
 # Issue 7327: Make integrate accept a variable range as a tuple
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7327
 
 Original creator: jason
 

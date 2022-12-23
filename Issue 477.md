@@ -1,6 +1,6 @@
 # Issue 477: break up gnucryptolib.spkg into separate spkgs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/477
 
 Original creator: mabshoff
 

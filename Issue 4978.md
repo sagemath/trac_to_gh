@@ -1,6 +1,6 @@
 # Issue 4978: fix NTL tuning issue on Linux/ppc64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4978
 
 Original creator: mabshoff
 

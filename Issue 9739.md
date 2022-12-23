@@ -1,6 +1,6 @@
 # Issue 9739: Handle duplicate file basenames when testing multiple files in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9739
 
 Original creator: mpatel
 
@@ -121,10 +121,10 @@ How should I best apply this:
 
 
 ```
-drkirkby`@`hawk:~/2/sage-4.5.3.alpha2$ cd local/bin
-drkirkby`@`hawk:~/2/sage-4.5.3.alpha2/local/bin$ hg qimport  http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9739/trac_9739-unique_doctest_names.patch
+drkirkby@hawk:~/2/sage-4.5.3.alpha2$ cd local/bin
+drkirkby@hawk:~/2/sage-4.5.3.alpha2/local/bin$ hg qimport  http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9739/trac_9739-unique_doctest_names.patch
 adding trac_9739-unique_doctest_names.patch to series file
-drkirkby`@`hawk:~/2/sage-4.5.3.alpha2/local/bin$ hg push
+drkirkby@hawk:~/2/sage-4.5.3.alpha2/local/bin$ hg push
 abort: repository /space/rlm/sage-4.1.rc1/local/bin not found!
 ```
 
@@ -460,7 +460,7 @@ While we are at it, I have some more comments on `sage-ptest` I'll also post her
 diff --git a/sage-ptest b/sage-ptest
 --- a/sage-ptest
 +++ b/sage-ptest
-`@``@` -81,12 +81,18 `@``@`
+@@ -81,12 +81,18 @@
      Returns true if the file should not be tested
      """
      if not os.path.exists(F):
@@ -479,7 +479,7 @@ diff --git a/sage-ptest b/sage-ptest
          printmutex.release()
          return True
      filenm = os.path.split(F)[1]
-`@``@` -95,6 +101,7 `@``@`
+@@ -95,6 +101,7 @@
          return True
      if G.find(os.path.join('doc', 'output')) != -1:
          return True
@@ -487,7 +487,7 @@ diff --git a/sage-ptest b/sage-ptest
      if not (os.path.splitext(F)[1] in ['.py', '.pyx', '.tex', '.pxi', '.sage', '.rst']):
          return True
      return False
-`@``@` -115,6 +122,7 `@``@`
+@@ -115,6 +122,7 @@
      for i in range(0,numiteration):
          os.chdir(os.path.dirname(F))
          command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)
@@ -495,7 +495,7 @@ diff --git a/sage-ptest b/sage-ptest
          s = 'bash -c "%s %s > %s" ' % (command, filestr, outfile.name)
          try:
              t = time.time()
-`@``@` -161,10 +169,12 `@``@`
+@@ -161,10 +169,12 @@
          print sage_test_cmd(F[len(CUR)+1:])
      else:
          print abs(F)
@@ -508,7 +508,7 @@ diff --git a/sage-ptest b/sage-ptest
      time_dict[abs_sage_path(F)] = finished_time
      if XML_RESULTS:
          t = finished_time
-`@``@` -192,6 +202,7 `@``@`
+@@ -192,6 +202,7 @@
          """.strip() % locals())
          f.close()
      print "\t [%.1f s]"%(finished_time)
@@ -516,7 +516,7 @@ diff --git a/sage-ptest b/sage-ptest
  
  def infiles_cmp(a,b):
      """
-`@``@` -231,7 +242,14 `@``@`
+@@ -231,7 +242,14 @@
                  base, ext = os.path.splitext(F)
                  if not (ext in ['.sage', '.py', '.pyx', '.tex', '.pxi', '.rst']):
                      continue
@@ -532,7 +532,7 @@ diff --git a/sage-ptest b/sage-ptest
                      continue
                  appendstr = os.path.join(root,F)
                  if skip(appendstr):
-`@``@` -252,6 +270,9 `@``@`
+@@ -252,6 +270,9 @@
      argv = [X for X in argv if X[0] != '-']
  
      try: 
@@ -1522,7 +1522,7 @@ I don't think it's worth making a "v3" patch out of this.  Here's the difference
 diff --git a/sage-doctest b/sage-doctest
 --- a/sage-doctest
 +++ b/sage-doctest
-`@``@` -644,7 +644,7 `@``@` def test_file(file, library_code):
+@@ -644,7 +644,7 @@ def test_file(file, library_code):
  
          name = os.path.basename(file)
          name = name[:name.find(".")]
@@ -1534,7 +1534,7 @@ diff --git a/sage-doctest b/sage-doctest
 diff --git a/sage-ptest b/sage-ptest
 --- a/sage-ptest
 +++ b/sage-ptest
-`@``@` -295,7 +295,7 `@``@` for gr in range(0,numglobaliteration):
+@@ -295,7 +295,7 @@ for gr in range(0,numglobaliteration):
  
          infiles.append(os.path.join(sagenb_loc, 'sagenb'))
  
@@ -1543,7 +1543,7 @@ diff --git a/sage-ptest b/sage-ptest
  
      if numthreads == 0:
          # Set numthreads to be the number of processors, with a default
-`@``@` -430,7 +430,7 `@``@` for gr in range(0,numglobaliteration):
+@@ -430,7 +430,7 @@ for gr in range(0,numglobaliteration):
          # TODO (probably in sage-doctest): if tests were interrupted
          # but there were no failures in the interrupted files, delete
          # the temporary files, so that this directory is empty.

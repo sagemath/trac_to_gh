@@ -1,6 +1,6 @@
 # Issue 6366: lift method on elements of residue class field is broken / not implemented as it should be
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6366
 
 Original creator: was
 

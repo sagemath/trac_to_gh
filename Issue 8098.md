@@ -1,6 +1,6 @@
 # Issue 8098: solve_mod is horribly broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8098
 
 Original creator: was
 
@@ -158,7 +158,7 @@ Comment by zimmerma created at 2010-03-14 15:27:33
 I tried the doctests, but unfortunately one more test is Segfaulting wrt #7773:
 
 ```
-[zimmerma`@`coing sage]$ sage -t -verbose rings/polynomial/multi_polynomial_libsingular.pyx
+[zimmerma@coing sage]$ sage -t -verbose rings/polynomial/multi_polynomial_libsingular.pyx
 ...
 Trying:
     f(Integer(0),Integer(0),Integer(0))###line 1725:_sage_    >>> f(0,0,0)

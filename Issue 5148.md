@@ -1,6 +1,6 @@
 # Issue 5148: corrections to Andrey Novoseltsev's devmap entry
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5148
 
 Original creator: mvngu
 

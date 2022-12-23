@@ -1,6 +1,6 @@
 # Issue 5159: Add functionality to Galois groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5159
 
 Original creator: davidloeffler
 
@@ -116,7 +116,7 @@ Replying to [comment:7 davidloeffler]:
 
 
 ```
-john`@`ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch 
+john@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch 
 1679c1679
 < +            a
 ---
@@ -282,7 +282,7 @@ Comment by cremona created at 2009-03-30 11:00:37
 Oops:  on a 64-bit machine I get this:
 
 ```
-jec`@`host-57-44:~/sage-3.4/devel/sage-5159$ sage -t sage/rings/number_field/galois_group.py
+jec@host-57-44:~/sage-3.4/devel/sage-5159$ sage -t sage/rings/number_field/galois_group.py
 sage -t  "devel/sage-5159/sage/rings/number_field/galois_group.py"
 **********************************************************************
 File "/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py", line 343:

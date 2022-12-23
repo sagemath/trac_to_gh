@@ -1,6 +1,6 @@
 # Issue 6739: warning when importing sage within the sage build directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6739
 
 Original creator: was
 

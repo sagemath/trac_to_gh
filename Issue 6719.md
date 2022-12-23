@@ -1,6 +1,6 @@
 # Issue 6719: Doctest failure with elliptic_eu (incomplete elliptic integral of the second kind) on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6719
 
 Original creator: drkirkby
 

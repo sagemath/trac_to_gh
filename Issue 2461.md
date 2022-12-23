@@ -1,6 +1,6 @@
 # Issue 2461: vector norms should have a reasonable default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2461
 
 Original creator: robertwb
 

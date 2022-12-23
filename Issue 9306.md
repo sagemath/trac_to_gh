@@ -1,6 +1,6 @@
 # Issue 9306: round incoherent with ceil/floor on rational numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9306
 
 Original creator: zimmerma
 

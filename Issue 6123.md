@@ -1,6 +1,6 @@
 # Issue 6123: [with patch, needs review] expose partition refinement functions to Python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6123
 
 Original creator: rlm
 

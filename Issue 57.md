@@ -1,6 +1,6 @@
 # Issue 57: certain p-adic coercions insanely slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/57
 
 Original creator: dmharvey
 

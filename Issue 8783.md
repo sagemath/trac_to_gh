@@ -1,6 +1,6 @@
 # Issue 8783: frobby optional spkg doesn't build with newer GCC's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8783
 
 Original creator: was
 
@@ -196,18 +196,18 @@ I looked at this for 1 minute:
 There are some tmp ~ files laying around
 
 ```
-wstein`@`sage:~/tmp/frobby-0.7.6.p1$ ls
+wstein@sage:~/tmp/frobby-0.7.6.p1$ ls
 patches  spkg-check  spkg-install  spkg-install~  SPKG.txt  SPKG.txt~  src
-wstein`@`sage:~/tmp/frobby-0.7.6.p1$ rm *~
+wstein@sage:~/tmp/frobby-0.7.6.p1$ rm *~
 ```
 
 
 (2) The hg repo has lots of files that have been added but not checked in:
 
 ```
-wstein`@`sage:~/tmp/frobby-0.7.6.p1$ ls
+wstein@sage:~/tmp/frobby-0.7.6.p1$ ls
 patches  spkg-check  spkg-install  SPKG.txt  src
-wstein`@`sage:~/tmp/frobby-0.7.6.p1$ hg status
+wstein@sage:~/tmp/frobby-0.7.6.p1$ hg status
 M SPKG.txt
 M spkg-install
 A patches/Makefile
@@ -238,7 +238,7 @@ A patches/src/main.cpp
 A patches/src/main.cpp.patch
 A patches/src/randomDataGenerators.cpp
 A patches/src/randomDataGenerators.cpp.patch
-wstein`@`sage:~/tmp/frobby-0.7.6.p1$ 
+wstein@sage:~/tmp/frobby-0.7.6.p1$ 
 ```
 
 
@@ -267,7 +267,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing frobby-0.7.6.p1.spkg
-[wstein`@`eno sage-4.4.4]$ gcc -v
+[wstein@eno sage-4.4.4]$ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper
@@ -275,7 +275,7 @@ Target: x86_64-unknown-linux-gnu
 Configured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-core2-fc-gcc-4.4.3-rh/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-core2-fc-gcc-4.4.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-core2-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-core2-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-rh --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-core2-fc
 Thread model: posix
 gcc version 4.5.0 (GCC) 
-[wstein`@`eno sage-4.4.4]$ 
+[wstein@eno sage-4.4.4]$ 
 
 ```
 

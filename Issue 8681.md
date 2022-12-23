@@ -1,6 +1,6 @@
 # Issue 8681: implement matrix actions on binary quadratic forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8681
 
 Original creator: AlexGhitza
 

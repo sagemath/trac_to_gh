@@ -1,6 +1,6 @@
 # Issue 8343: email address marked as confirmed even after changing it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8343
 
 Original creator: ddrake
 

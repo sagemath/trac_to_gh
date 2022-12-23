@@ -1,6 +1,6 @@
 # Issue 377: major bug in number fields if defining poly has denoms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/377
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-swas`@`ubuntu:~$ sage
+swas@ubuntu:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.5.2-alpha, Release Date: 2007-05-20                 |
@@ -19,7 +19,7 @@ sage: G.<a> = NumberField(x^3 + 2/3*x + 1)
 sage: a^3 + a
 MulMod: bad args
 Aborted
-was`@`ubuntu:~$
+was@ubuntu:~$
 ```
 
 

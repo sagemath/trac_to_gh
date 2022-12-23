@@ -1,6 +1,6 @@
 # Issue 2652: notebook should let you evaluate cells without losing cursor position
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2652
 
 Original creator: cwitty
 

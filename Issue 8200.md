@@ -1,6 +1,6 @@
 # Issue 8200: ElementWrapper: doctests improvements to not abuse ZZ invariants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8200
 
 Original creator: nthiery
 

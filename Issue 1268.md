@@ -1,6 +1,6 @@
 # Issue 1268: [with spkg] new version of MPFI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1268
 
 Original creator: cwitty
 

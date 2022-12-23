@@ -1,6 +1,6 @@
 # Issue 7675: shortest_path in c_graph should have an optional flag distance=False to return only the distance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7675
 
 Original creator: ncohen
 

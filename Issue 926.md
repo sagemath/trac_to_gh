@@ -1,6 +1,6 @@
 # Issue 926: MPolynomial Iterator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/926
 
 Original creator: malb
 

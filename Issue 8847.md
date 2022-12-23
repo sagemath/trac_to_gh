@@ -1,6 +1,6 @@
 # Issue 8847: pynac.pyx use double precision special functions instead of long double
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8847
 
 Original creator: mhansen
 

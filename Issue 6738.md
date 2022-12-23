@@ -1,6 +1,6 @@
 # Issue 6738: typo in spkg-install for atlas spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6738
 
 Original creator: was
 

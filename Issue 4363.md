@@ -1,6 +1,6 @@
 # Issue 4363: Do not automatically evaluate interact cells in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4363
 
 Original creator: kcrisman
 

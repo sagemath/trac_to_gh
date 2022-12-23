@@ -1,6 +1,6 @@
 # Issue 1962: set_edge_label creates edges when multiple edges are allowed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1962
 
 Original creator: jason
 

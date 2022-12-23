@@ -1,6 +1,6 @@
 # Issue 1531: Sage 2.9.rc2: doctest failure sage/calculus/calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1531
 
 Original creator: mabshoff
 

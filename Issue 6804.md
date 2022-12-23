@@ -1,6 +1,6 @@
 # Issue 6804: Permutation.weak_excedences inconsistency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6804
 
 Original creator: schilly
 

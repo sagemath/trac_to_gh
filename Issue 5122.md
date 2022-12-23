@@ -1,6 +1,6 @@
 # Issue 5122: point -- plotting bug for point(Elliptic curve point)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5122
 
 Original creator: was
 

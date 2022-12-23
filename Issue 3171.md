@@ -1,6 +1,6 @@
 # Issue 3171: add 64 bit OSX build support to termcap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3171
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3717: implement _latex_ method for formal derivative function (in symbolic calculus)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3717
 
 Original creator: was
 

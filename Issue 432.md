@@ -1,6 +1,6 @@
 # Issue 432: finish implementing deleting the trash (emptying it) in the sage notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/432
 
 Original creator: was
 

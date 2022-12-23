@@ -1,6 +1,6 @@
 # Issue 422: hostname's with dashes (?) in them break SAGE interfaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/422
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3696: [with spkg, needs review] Fix gmp.spkg build issue on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3696
 
 Original creator: mabshoff
 

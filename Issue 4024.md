@@ -1,6 +1,6 @@
 # Issue 4024: [with spkg, needs review] upgrade M4RI to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4024
 
 Original creator: malb
 

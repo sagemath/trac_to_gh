@@ -1,6 +1,6 @@
 # Issue 4123: TOOLCHAIN_ENV script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4123
 
 Original creator: rlm
 

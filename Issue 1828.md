@@ -1,6 +1,6 @@
 # Issue 1828: add 3d graphics to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1828
 
 Original creator: was
 

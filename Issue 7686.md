@@ -1,6 +1,6 @@
 # Issue 7686: Remove all "AppleDouble encoded Macintosh files" from the Sage source distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7686
 
 Original creator: was
 

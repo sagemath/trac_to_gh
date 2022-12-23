@@ -1,6 +1,6 @@
 # Issue 5382: Update MPFR to 2.4.1 (security)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5382
 
 Original creator: mabshoff
 
@@ -31,7 +31,7 @@ Changes from version 2.4.0 to version 2.4.1:
   mpfr_inits, mpfr_inits2, mpfr_clears and MPFR_DECL_INIT have been
   in the public API since MPFR 2.4.0.
 
-You can send success and failure reports to <mpfr`@`loria.fr>, and give
+You can send success and failure reports to <mpfr@loria.fr>, and give
 us the canonical system name as returned by the config.guess script,
 the processor and compiler version, in order to complete the
 "Platforms Known to Support MPFR" section of the MPFR 2.4.1 web page.

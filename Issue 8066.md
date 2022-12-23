@@ -1,6 +1,6 @@
 # Issue 8066: New libgpg_error-1.6.p3.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8066
 
 Original creator: jsp
 
@@ -90,7 +90,7 @@ It would have been wiser to overwrite the patch file in this case I think.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/libgpg-error*
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgpg-error*
 local/lib/libgpg-error.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libgpg-error.la:	commands text
 local/lib/libgpg-error.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped

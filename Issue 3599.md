@@ -1,6 +1,6 @@
 # Issue 3599: Longer slider and labels on sliders
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3599
 
 Original creator: itolkov
 

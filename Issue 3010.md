@@ -1,6 +1,6 @@
 # Issue 3010: Numerical noise doctest failure in rings/complex_double.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3010
 
 Original creator: mabshoff
 

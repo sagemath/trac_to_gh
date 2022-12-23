@@ -1,6 +1,6 @@
 # Issue 9950: Missing package init file 'sage/tests/french_book/__init__.py'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9951
 
 Original creator: mpatel
 
@@ -48,14 +48,14 @@ Yeah, it is properly checked it, but exporting it gives
 
 ```
 # HG changeset patch
-# User Leif Leonhardy <not.really`@`online.de>
+# User Leif Leonhardy <not.really@online.de>
 # Date 1284952693 -7200
 # Node ID eb739c32247985cc9923bb8dbdebf1f7eb404666
 # Parent  81b3de2e81408620d6d68f022cd7d834880fa029
 #9951 Add (empty) sage/tests/french_book/__init__.py file to avoid warnings.
 
 # HG changeset patch
-# User Leif Leonhardy <not.really`@`online.de>
+# User Leif Leonhardy <not.really@online.de>
 # Date 1284953161 -7200
 # Node ID 87a65b1dbf4f7fc9dd0e468724924363e0d9072c
 # Parent  eb739c32247985cc9923bb8dbdebf1f7eb404666
@@ -64,7 +64,7 @@ Yeah, it is properly checked it, but exporting it gives
 diff -r eb739c322479 -r 87a65b1dbf4f sage/tests/french_book/__init__.py
 --- a/sage/tests/french_book/__init__.py	Mon Sep 20 05:18:13 2010 +0200
 +++ b/sage/tests/french_book/__init__.py	Mon Sep 20 05:26:01 2010 +0200
-`@``@` -0,0 +1,1 `@``@`
+@@ -0,0 +1,1 @@
 +# This comment is here so the file is non-empty (so Mercurial will check it in).
 ```
 

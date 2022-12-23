@@ -1,6 +1,6 @@
 # Issue 5032: dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5032
 
 Original creator: was
 

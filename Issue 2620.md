@@ -1,6 +1,6 @@
 # Issue 2620: [with patch, needs review] generator generator support for ideal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2620
 
 Original creator: malb
 

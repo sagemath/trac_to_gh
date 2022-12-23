@@ -1,6 +1,6 @@
 # Issue 4486: Clean up partitions_c.cc and partitions_c.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4486
 
 Original creator: craigcitro
 

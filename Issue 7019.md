@@ -1,6 +1,6 @@
 # Issue 7019: update biopython optional package to 1.52
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7019
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 6503: remove the pyprocessing spkg from sage, then sort out any fallout that results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6503
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7630: Require email confirmation before account activation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7630
 
 Original creator: jason
 

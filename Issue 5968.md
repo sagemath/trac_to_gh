@@ -1,6 +1,6 @@
 # Issue 5968: increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5968
 
 Original creator: was
 

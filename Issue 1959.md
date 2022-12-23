@@ -1,6 +1,6 @@
 # Issue 1959: [with spkg] Solaris 9 fixes for rubiks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1959
 
 Original creator: mabshoff
 

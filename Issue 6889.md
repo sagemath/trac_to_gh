@@ -1,6 +1,6 @@
 # Issue 6889: Algebra of multivariate polynomials invariant under the action of a permutation group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6889
 
 Original creator: nborie
 
@@ -23,11 +23,11 @@ This is a long run work but first implementation is comming in one or two months
 
 ```
 sage: mupad('package("Combinat")')                                    
-sage: G = mupad.Dom.PermutationGroup(3, [This is the Trac macro *[1,2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1,2,3-macro)])
+sage: G = mupad.Dom.PermutationGroup(3, [[[1,2,3]]])
 sage: I = mupad.Dom.PermutationGroupInvariantRing(mupad.Dom.Rational, G)
 sage: I
 
-Dom::PermutationGroupInvariantRing(Dom::Rational,Dom::PermutationGroup(3, [This is the Trac macro *[1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 2, 3-macro)]))
+Dom::PermutationGroupInvariantRing(Dom::Rational,Dom::PermutationGroup(3, [[[1, 2, 3]]]))
 
 sage: I.minimalGeneratingSet()
          3 = [o([1, 1, 1]), o([2, 0, 1])],

@@ -1,6 +1,6 @@
 # Issue 7247: sage-4.2.alpha0: mercurial doesn't build on OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7247
 
 Original creator: was
 

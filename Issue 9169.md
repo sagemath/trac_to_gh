@@ -1,6 +1,6 @@
 # Issue 9169: cygwin: a cachefunc.py doctest hangs seemingly forever
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9169
 
 Original creator: was
 
@@ -14,7 +14,7 @@ On Cygwin, the following test hangs:
 
 ```
 
-            sage: `@`cached_function
+            sage: @cached_function
             ... def oddprime_factors(n):
             ...     l = [p for p,e in factor(n) if p != 2]
             ...     return len(l)

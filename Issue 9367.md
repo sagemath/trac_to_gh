@@ -1,6 +1,6 @@
 # Issue 9367: S_unit return type is incorrect,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9367
 
 Original creator: syazdani
 

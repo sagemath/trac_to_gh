@@ -1,6 +1,6 @@
 # Issue 8341: detect_poles doesn't find a vertical asymptote where both sides go to infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8341
 
 Original creator: jason
 
@@ -36,7 +36,7 @@ This is the diff with my experiments, if someone is interested
 diff -r a1d167a37d52 sage/plot/plot.py
 --- a/sage/plot/plot.py Thu Feb 25 13:42:16 2010 -0600
 +++ b/sage/plot/plot.py Sat Mar 06 15:23:11 2010 +0100
-`@``@` -2698,17 +2698,16 `@``@`
+@@ -2698,17 +2698,16 @@
              x0, y0 = exclude_data[i]
              x1, y1 = exclude_data[i+1]
              # detect poles

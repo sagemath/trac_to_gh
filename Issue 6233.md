@@ -1,6 +1,6 @@
 # Issue 6233: remove the explain_picklejar function, since it is self contained and its test fails on all platforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6233
 
 Original creator: was
 

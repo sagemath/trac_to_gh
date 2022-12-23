@@ -1,6 +1,6 @@
 # Issue 2908: Polynomial gcd doesn't take coefficients into account
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2908
 
 Original creator: burcin
 

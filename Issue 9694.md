@@ -1,6 +1,6 @@
 # Issue 9694: Implement direct product of cyclic groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9694
 
 Original creator: rbeezer
 

@@ -1,6 +1,6 @@
 # Issue 737: inrange, better name for irange
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/737
 
 Original creator: jsp
 

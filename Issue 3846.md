@@ -1,6 +1,6 @@
 # Issue 3846: bug in the sage preparser -- vector(v)[3] = 5 slips by!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3846
 
 Original creator: was
 

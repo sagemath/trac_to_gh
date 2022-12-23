@@ -1,6 +1,6 @@
 # Issue 4242: Bugfix for dominates() method of partition.py (with patch; needs review)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4242
 
 Original creator: jbandlow
 

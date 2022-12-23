@@ -1,6 +1,6 @@
 # Issue 8919: documetation error in super_categories for Sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8919
 
 Original creator: wjlaffin
 

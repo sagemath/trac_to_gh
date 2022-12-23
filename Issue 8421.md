@@ -1,6 +1,6 @@
 # Issue 8421: Change BipartiteGraph .left and .right to sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8421
 
 Original creator: rhinton
 

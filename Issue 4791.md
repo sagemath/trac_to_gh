@@ -1,6 +1,6 @@
 # Issue 4791: [with patch, needs review] purge nodoctest.py from the Sage library tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4791
 
 Original creator: mabshoff
 

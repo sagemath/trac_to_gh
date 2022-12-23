@@ -1,6 +1,6 @@
 # Issue 8443: Active cell jumps to end of worksheet when evaluating a cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8443
 
 Original creator: mpatel
 
@@ -52,7 +52,7 @@ This patch looks good. It fixes the problem for me with the worksheet I attached
 
 ```
 sage: nb = sagenb.notebook.notebook.Notebook(tmp_dir()+'.sagenb')
-sage: nb.add_user('sage','sage','sage`@`sagemath.org',force=True)
+sage: nb.add_user('sage','sage','sage@sagemath.org',force=True)
 sage: W = nb.create_new_worksheet('Test trac #8443', 'sage')
 sage: W.edit_save("`\n1+1\n///\n`\n\n<p>a text cell</p>")
 sage: len(set(W.cell_id_list())) == 3
@@ -73,7 +73,7 @@ Yes, definitely.  I should have written a test.  I've tweaked your example a bit
 
 ```python
 sage: nb = sagenb.notebook.notebook.Notebook(tmp_dir() + '.sagenb')
-sage: nb.add_user('sage', 'sage', 'sage`@`sagemath.org', force=True)
+sage: nb.add_user('sage', 'sage', 'sage@sagemath.org', force=True)
 sage: W = nb.create_new_worksheet('Test trac #8443', 'sage')
 sage: W.edit_save('`\n1+1\n///\n`')
 sage: W.cell_id_list()

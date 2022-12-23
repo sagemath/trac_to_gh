@@ -1,6 +1,6 @@
 # Issue 5614: [with patch, not ready for review] add top-of-stack caching for fast_callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5614
 
 Original creator: cwitty
 

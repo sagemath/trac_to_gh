@@ -1,6 +1,6 @@
 # Issue 122: some minor issues with some build procedures in packages (noted by Mike Rubinstein)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/122
 
 Original creator: was
 
@@ -28,7 +28,7 @@ I got gmp to compile fine on my PowerBook G4 without it.
 You have:
  
            # I learned this from
-           # http://www.mail-archive.com/clamav-users`@`lists.clamav.net/msg22183.html
+           # http://www.mail-archive.com/clamav-users@lists.clamav.net/msg22183.html
            #  -- William Stein, 2006-04-06
            # It's perhaps weird that this is needed on the powerpc, but it is...
            SAGE_CONF_OPTS="--build=none-apple-darwin --enable-shared --disable-static"

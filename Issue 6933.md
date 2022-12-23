@@ -1,6 +1,6 @@
 # Issue 6933: readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6933
 
 Original creator: drkirkby
 

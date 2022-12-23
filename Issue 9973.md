@@ -1,6 +1,6 @@
 # Issue 9973: The current (rather old) version of GnuTLS fails to install on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9974
 
 Original creator: drkirkby
 

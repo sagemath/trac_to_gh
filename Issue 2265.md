@@ -1,6 +1,6 @@
 # Issue 2265: fix shortest_path_all_pairs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2265
 
 Original creator: rlm
 

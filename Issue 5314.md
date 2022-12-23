@@ -1,6 +1,6 @@
 # Issue 5314: [with patch, needs review] The empty permutations exists !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5314
 
 Original creator: hivert
 

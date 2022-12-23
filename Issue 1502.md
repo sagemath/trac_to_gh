@@ -1,6 +1,6 @@
 # Issue 1502: calculus -- bug in argument ordering for formal functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1502
 
 Original creator: was
 

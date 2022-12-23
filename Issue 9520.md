@@ -1,6 +1,6 @@
 # Issue 9520: scipy_sandbox does not exit if there are build failures, but spkg-install looks OK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9520
 
 Original creator: drkirkby
 

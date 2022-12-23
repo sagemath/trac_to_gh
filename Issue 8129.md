@@ -1,6 +1,6 @@
 # Issue 8129: Install jsMath image fonts in a fixed location
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8129
 
 Original creator: mpatel
 

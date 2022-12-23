@@ -1,6 +1,6 @@
 # Issue 4971: make get_memory_usage() return a float on all platforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4971
 
 Original creator: mabshoff
 

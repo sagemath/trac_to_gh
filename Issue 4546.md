@@ -1,6 +1,6 @@
 # Issue 4546: [with patch, needs review] redundant print in sage-doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4546
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 3219: spkg -- upgrad to gmp-4.2.2 while we wait for MPIR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3219
 
 Original creator: was
 

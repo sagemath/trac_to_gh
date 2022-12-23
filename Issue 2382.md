@@ -1,6 +1,6 @@
 # Issue 2382: sage-doctest broken by removal of temp files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2382
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 1486: singular-3-0-4-1-20071202 fails compilation on Slackware 12.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1486
 
 Original creator: mabshoff
 

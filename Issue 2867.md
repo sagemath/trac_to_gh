@@ -1,6 +1,6 @@
 # Issue 2867: [witch patch, needs review] allow load_files parameter in __call__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2867
 
 Original creator: yi
 

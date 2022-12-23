@@ -1,6 +1,6 @@
 # Issue 8082: correct point and line behavior with complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8082
 
 Original creator: vdelecroix
 

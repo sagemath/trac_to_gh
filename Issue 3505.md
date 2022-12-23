@@ -1,6 +1,6 @@
 # Issue 3505: change ints to Py_ssize_t in various pickling code in sage/matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3505
 
 Original creator: craigcitro
 

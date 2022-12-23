@@ -1,6 +1,6 @@
 # Issue 8667: New version of modular group cohomology spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8667
 
 Original creator: SimonKing
 
@@ -310,7 +310,7 @@ unset MAKE
 The doctest coverage is excellent:
 
 ```
-wstein`@`sage:~/build/referee/sage-4.5/spkg/build/p_group_cohomology-2.0/src/pGroupCohomology$ sage -coverage .
+wstein@sage:~/build/referee/sage-4.5/spkg/build/p_group_cohomology-2.0/src/pGroupCohomology$ sage -coverage .
 __init__.py: 100% (6 of 6)
 barcode.py: 100% (15 of 15)
 cochain.pyx: 95% (108 of 113)
@@ -469,7 +469,7 @@ I am referring here to sage.math.
 If I do `sage -optional` with the system wide Sage, I get
 
 ```
-SimonKing`@`sage:~$ sage -optional
+SimonKing@sage:~$ sage -optional
 Using SAGE Server http://www.sagemath.org//packages
 http://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list
 [Errno 13] Permission denied: '/usr/local/sage/tmp/list'

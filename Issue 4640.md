@@ -1,6 +1,6 @@
 # Issue 4640: Do not dot out the number of pickles in the pickle jar doctest in sage/structure/sage_object.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4640
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8354: ReST fixes based on Sage 4.3.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8354
 
 Original creator: jhpalmieri
 

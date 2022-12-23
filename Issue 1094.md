@@ -1,6 +1,6 @@
 # Issue 1094: small memleaks exposed by ntl_ZZ_pEX (from 2.8.12.alpha0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1094
 
 Original creator: mabshoff
 

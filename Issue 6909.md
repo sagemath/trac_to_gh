@@ -1,6 +1,6 @@
 # Issue 6909: [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6909
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 594: Teach the MAGMA interface how to handle GF(q) conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/594
 
 Original creator: malb
 

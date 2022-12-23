@@ -1,6 +1,6 @@
 # Issue 4095: Major bug in GF(109)['x', 'y']
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4095
 
 Original creator: mabshoff
 

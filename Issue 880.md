@@ -1,6 +1,6 @@
 # Issue 880: 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/880
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 1516: jmol spkg, use from notebook and command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1516
 
 Original creator: robertwb
 

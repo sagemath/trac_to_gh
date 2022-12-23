@@ -1,6 +1,6 @@
 # Issue 266: sloane functions -- get rid of any pre-initialization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/266
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 359: Consider adding dhtml javascript drawing functionality to the SAGE notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/359
 
 Original creator: was
 

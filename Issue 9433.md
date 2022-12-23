@@ -1,6 +1,6 @@
 # Issue 9433: Put more files under revision control.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9433
 
 Original creator: jhpalmieri
 
@@ -198,13 +198,13 @@ If I
 ```
 changeset:   1:0fea58e94942
 tag:         tip
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Fri Aug 06 21:40:23 2010 -0700
 summary:     Added tag 4.5.99 for changeset 4c1f4320f743
 
 changeset:   0:4c1f4320f743
 tag:         4.5.99
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Fri Aug 06 21:33:45 2010 -0700
 summary:     Initial Sage "root" repository
 ```
@@ -934,7 +934,7 @@ I also found the following corrections to be added to the part of the patch for 
 diff -r fa7bc24587ef sage-bdist
 --- a/sage-bdist	Fri Sep 24 19:13:24 2010 -0700
 +++ b/sage-bdist	Fri Nov 05 14:45:36 2010 -0700
-`@``@` -46,16 +46,15 `@``@`
+@@ -46,16 +46,15 @@
  if [ $? -ne 0 ]; then
      echo "Error copying Sage root repository."
      exit 1
@@ -953,7 +953,7 @@ diff -r fa7bc24587ef sage-bdist
  
  if [ -d devel/sage-main ]; then
     echo "Copying Sage library over"
-`@``@` -63,7 +62,6 `@``@`
+@@ -63,7 +62,6 @@
     cp -L $CP_OPT devel/sagenb-main "$TMP"/devel/sagenb-main
     cp -L $CP_OPT devel/sage-main "$TMP"/devel/sage-main
     cd "$TMP"/devel
@@ -1458,7 +1458,7 @@ I've changed the main ticket documentation accordingly.
 For reference, here is a list of files in the root repository:
 
 ```
-[vbraun`@`volker-two sage-4.6.1.vb2]$ hg st --all | grep -v '^I'
+[vbraun@volker-two sage-4.6.1.vb2]$ hg st --all | grep -v '^I'
 C .hgignore
 C .hgtags
 C COPYING.txt
@@ -1751,9 +1751,9 @@ The ipython directory is in the `sage_scripts` repository and `sage_scripts/spkg
 I'm not sure if the removal of the quotes has any deeper meaning. But right-hand-sides of variable assignments need not be quoted in shell script:
 
 ```
-[vbraun`@`volker-two ~]$ x="a b"
-[vbraun`@`volker-two ~]$ y=$x/c
-[vbraun`@`volker-two ~]$ echo $y
+[vbraun@volker-two ~]$ x="a b"
+[vbraun@volker-two ~]$ y=$x/c
+[vbraun@volker-two ~]$ echo $y
 a b/c
 ```
 
@@ -1978,7 +1978,7 @@ It seems that the `SAGE_ROOT` repository requires a very recent of Mercurial.  W
 $ hg --version
 Mercurial Distributed SCM (version 1.6.4)
 
-Copyright (C) 2005-2010 Matt Mackall <mpm`@`selenic.com> and others
+Copyright (C) 2005-2010 Matt Mackall <mpm@selenic.com> and others
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 $ hg commit
@@ -2176,7 +2176,7 @@ Upgrading sage-4.7.alpha0 -> sage-4.7.alpha1 fails because of uncommitted change
 HG: Enter commit message.  Lines beginning with 'HG:' are removed.
 HG: Leave message empty to abort commit.
 HG: --
-HG: user: Jeroen Demeyer <jdemeyer`@`cage.ugent.be>
+HG: user: Jeroen Demeyer <jdemeyer@cage.ugent.be>
 HG: branch 'default'
 HG: changed spkg/install
 HG: changed spkg/standard/deps
@@ -2189,7 +2189,7 @@ HG: changed spkg/standard/deps
 diff -r 1c44cedc9957 spkg/install
 --- a/spkg/install      Thu Feb 17 15:54:54 2011 +0000
 +++ b/spkg/install      Sun Feb 20 16:06:09 2011 +0100
-`@``@` -1,5 +1,7 `@``@`
+@@ -1,5 +1,7 @@
  #!/usr/bin/env bash
 
 +# TESTING PATCH
@@ -2197,7 +2197,7 @@ diff -r 1c44cedc9957 spkg/install
  ###############################################################################
  # Check if pipestatus already exists, otherwise
  # create it to allow upgrade from Sage <4.5.  This is a temporary fix.
-`@``@` -422,9 +424,6 `@``@`
+@@ -422,9 +424,6 @@
  TERMCAP=`$newest termcap`
  export TERMCAP
 
@@ -2333,8 +2333,8 @@ I've tried the update and it works beautifully.
 I think there is still one problem: If the user has no .hgrc (like many non-developers trying to upgrade), then mercurial will fail to commit with 
 
 ```
-[vbraun`@`volker-desktop sage-4.7.alpha0]$ mv ~/.hgrc ~/backup.hgrc
-[vbraun`@`volker-desktop sage-4.7.alpha0]$ hg commit -m "test"
+[vbraun@volker-desktop sage-4.7.alpha0]$ mv ~/.hgrc ~/backup.hgrc
+[vbraun@volker-desktop sage-4.7.alpha0]$ hg commit -m "test"
 abort: no username supplied (see "hg help config")
 ```
 

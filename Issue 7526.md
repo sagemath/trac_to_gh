@@ -1,6 +1,6 @@
 # Issue 7526: polynomial_template should avoid unnecessary coercions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7526
 
 Original creator: ylchapuy
 

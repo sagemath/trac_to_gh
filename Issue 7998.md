@@ -1,6 +1,6 @@
 # Issue 7998: Add William's Riemann Prime Counting Function code to Sage (EASY)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7998
 
 Original creator: kevin.stueve
 

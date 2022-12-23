@@ -1,6 +1,6 @@
 # Issue 1914: incorrect string escaping in preparser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1914
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 4633: fix additional "Fortran-style" names and a coercion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4633
 
 Original creator: bpage
 
@@ -14,11 +14,11 @@ In order to run the the comparison of integration results between FriCAS and Max
 
 
 ```
-wspage`@`debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff
+wspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff
 diff -r ed3f78f99d2a sage/interfaces/axiom.py
 --- a/sage/interfaces/axiom.py  Tue Nov 25 23:45:43 2008 -0500
 +++ b/sage/interfaces/axiom.py  Wed Nov 26 19:43:59 2008 -0500
-`@``@` -729,7 +729,10 `@``@`
+@@ -729,7 +729,10 @@
         s = P.eval('unparse(%s::InputForm)'%self._name)
         if 'translation error' in s or 'Cannot convert' in s:
             raise NotImplementedError
@@ -26,7 +26,7 @@ diff -r ed3f78f99d2a sage/interfaces/axiom.py
 +        s = multiple_replace({'\r\n':'', # fix stupid Fortran-ish
 +                              'DLOG(':'log(',
 +                              'DEXP(':'exp(',
-+                              '::(':_, ',Symbol)':_,
++                              '::(':'', ',Symbol)':'',
                               'DSIN(':'sin(',
                               'DCOS(':'cos(',
                               'DTAN(':'tan(',

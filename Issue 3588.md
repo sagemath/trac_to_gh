@@ -1,6 +1,6 @@
 # Issue 3588: Divison may involve lengthy calculations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3588
 
 Original creator: robertwb
 

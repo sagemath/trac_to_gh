@@ -1,6 +1,6 @@
 # Issue 7740: Spped up MixedIntegerLinearProgram
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7740
 
 Original creator: ncohen
 

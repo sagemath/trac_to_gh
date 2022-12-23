@@ -1,6 +1,6 @@
 # Issue 5930: switch from maxima to pynac for core symbolic manipulation system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5930
 
 Original creator: was
 
@@ -212,15 +212,15 @@ Comment by mabshoff created at 2009-05-19 20:59:29
 symbolics_final2.patch does not import:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ hg import symbolics_final1.patch
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ hg import symbolics_final1.patch
 applying symbolics_final1.patch
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ hg import symbolics_final2.patch
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ hg import symbolics_final2.patch
 applying symbolics_final2.patch
 patching file sage/symbolic/function.pyx
 Hunk #9 FAILED at 206
 1 out of 25 hunks FAILED -- saving rejects to file sage/symbolic/function.pyx.rej
 abort: patch failed to apply
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ less sage/symbolic/function.pyx.rej
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ less sage/symbolic/function.pyx.rej
 ```
 
 I have not touched the file that sees rejects since Mike pulled it last night, so please fix this :)
@@ -352,12 +352,12 @@ Comment by mabshoff created at 2009-05-20 13:57:49
 Hmm, this looks suspicious, but reverting it does not fix the problem:
 
 ```
-`@``@` -755,7 +755,7 `@``@`
+@@ -755,7 +755,7 @@
          if self._expect is None: return
          r = randrange(2147483647)
          s = marker + str(r+1)
--        cmd = *;sconcat("%s",(%s+1));\n*%(marker,r)
-+        cmd = *0;sconcat("%s",(%s+1));\n*%(marker,r)
+-        cmd = ''';sconcat("%s",(%s+1));\n'''%(marker,r)
++        cmd = '''0;sconcat("%s",(%s+1));\n'''%(marker,r)
          self._sendstr(cmd)
          try:
              self._expect_expr(timeout=0.5)
@@ -379,7 +379,7 @@ Hmm, another thing:
 ```
  cdef class Matrix_symbolic_dense(matrix_dense.Matrix_dense):
      r"""
-`@``@` -162,7 +161,7 `@``@`
+@@ -162,7 +161,7 @@
              sage: cmp(m,m)
              0
              sage: cmp(m,3)

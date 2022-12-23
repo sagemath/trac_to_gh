@@ -1,6 +1,6 @@
 # Issue 699: implement computation of twisted winding elements (a technical thing involving modular symbols)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/699
 
 Original creator: was
 

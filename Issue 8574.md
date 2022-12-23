@@ -1,6 +1,6 @@
 # Issue 8574: Length of a finite word defined by an iterator is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8574
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 5990: [with patch, needs review] developer's guide: more on .spkg files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5990
 
 Original creator: jhpalmieri
 

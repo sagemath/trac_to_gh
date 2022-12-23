@@ -1,6 +1,6 @@
 # Issue 3876: Add plotting to sigma function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3876
 
 Original creator: kcrisman
 

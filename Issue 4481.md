@@ -1,6 +1,6 @@
 # Issue 4481: Fix cached_function to accept functions without func_doc or func_name (with patch)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4481
 
 Original creator: nthiery
 

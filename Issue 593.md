@@ -1,6 +1,6 @@
 # Issue 593: MPolynomialIdeal.reduced_basis() doesn't behave as expected
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/593
 
 Original creator: malb
 

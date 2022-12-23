@@ -1,6 +1,6 @@
 # Issue 5029: Better diffs for trac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5029
 
 Original creator: robertwb
 

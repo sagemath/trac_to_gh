@@ -1,6 +1,6 @@
 # Issue 9014: Implement a repr_prod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9014
 
 Original creator: nborie
 

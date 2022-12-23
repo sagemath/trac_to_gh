@@ -1,6 +1,6 @@
 # Issue 3183: add 64 bit OSX build support to linbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3183
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6663: add new 4ti2 and glpk experimental packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6663
 
 Original creator: mhampton
 
@@ -80,9 +80,9 @@ http://sage.math.washington.edu/home/mvngu/patch/4ti2.p0.spkg
 Is there any special reason why the package is not under revision control?
 
 ```
-[mvngu`@`mod mvngu]$ tar -jxf 4ti2.p0.spkg 
-[mvngu`@`mod mvngu]$ cd 4ti2.p0/
-[mvngu`@`mod 4ti2.p0]$ hg st
+[mvngu@mod mvngu]$ tar -jxf 4ti2.p0.spkg 
+[mvngu@mod mvngu]$ cd 4ti2.p0/
+[mvngu@mod 4ti2.p0]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
 

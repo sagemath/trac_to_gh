@@ -1,6 +1,6 @@
 # Issue 5304: Sage 3.3.rc2: Fix documentation build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5304
 
 Original creator: mabshoff
 

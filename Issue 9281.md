@@ -1,6 +1,6 @@
 # Issue 9281: METATICKET - missing spkg-check files / OpenSolaris test results.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9281
 
 Original creator: drkirkby
 

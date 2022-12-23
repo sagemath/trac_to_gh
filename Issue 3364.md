@@ -1,6 +1,6 @@
 # Issue 3364: randstate interaction with GAP is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3364
 
 Original creator: cwitty
 
@@ -85,7 +85,7 @@ Comment by mabshoff created at 2008-06-09 07:25:57
 Patch looks good to me. I did not doctest the patch since I had some rejects after applying #3130:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 < trac_3364_randstate_fix_gap.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 < trac_3364_randstate_fix_gap.patch 
 patching file sage/groups/matrix_gps/orthogonal.py
 patching file sage/groups/matrix_gps/symplectic.py
 patching file sage/groups/matrix_gps/unitary.py

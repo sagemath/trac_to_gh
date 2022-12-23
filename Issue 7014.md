@@ -1,6 +1,6 @@
 # Issue 7014: Add a chat service to the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7014
 
 Original creator: mpatel
 

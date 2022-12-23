@@ -1,6 +1,6 @@
 # Issue 8127: Wraps string features into WordDatatypes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8127
 
 Original creator: vdelecroix
 
@@ -19,7 +19,7 @@ sage: sage: s = "ma maman est magique"
 sage: s.split(' ')
 ['ma', 'maman', 'est', 'magique']
 sage: s.split('ma')
-[_, ' ', _, 'n est ', 'gique']
+['', ' ', '', 'n est ', 'gique']
 ```
 
 

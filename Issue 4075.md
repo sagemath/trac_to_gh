@@ -1,6 +1,6 @@
 # Issue 4075: bug in BCHCode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4075
 
 Original creator: wdj
 

@@ -1,6 +1,6 @@
 # Issue 4882: ./sage -t sage/sage/rings/polynomial/multi_polynomial_ideal.py M2 failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4882
 
 Original creator: jsp
 

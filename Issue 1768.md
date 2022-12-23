@@ -1,6 +1,6 @@
 # Issue 1768: get emails from any trac change on a certain component
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1768
 
 Original creator: rlm
 

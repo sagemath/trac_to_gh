@@ -1,6 +1,6 @@
 # Issue 3789: [with patch, needs review] graphs(<tab>
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3789
 
 Original creator: rlm
 

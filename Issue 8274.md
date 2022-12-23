@@ -1,6 +1,6 @@
 # Issue 8274: R's spkg-install needs a good overhall.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8274
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 5898: Plot Field doc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5898
 
 Original creator: kcrisman
 
@@ -45,7 +45,7 @@ REFEREE REPORT
 That patch `plot_field-patch.patch` applies OK against Sage 3.4.2.alpha0. All doctests passed with options `-t -long`, and the coverage for `sage/plot/plot_field.py` is indeed 100% as claimed. However, when I ran the coverage on that file, I received this
 
 ```
-[mvngu`@`sage sage-3.4.2.alpha0]$ ./sage -coverage devel/sage-exp/sage/plot/plot_field.py 
+[mvngu@sage sage-3.4.2.alpha0]$ ./sage -coverage devel/sage-exp/sage/plot/plot_field.py 
 ----------------------------------------------------------------------
 devel/sage-exp/sage/plot/plot_field.py
 ERROR: Please define a s == loads(dumps(s)) doctest.

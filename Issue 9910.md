@@ -1,6 +1,6 @@
 # Issue 9910: Changing the LP formulation of feedback vertex/arc set to improve the speed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9911
 
 Original creator: ncohen
 

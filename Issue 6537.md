@@ -1,6 +1,6 @@
 # Issue 6537: [with patch, needs review] Memleak in C graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6537
 
 Original creator: rlm
 

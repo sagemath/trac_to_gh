@@ -1,6 +1,6 @@
 # Issue 9962: non-nef divisors can have sections, too
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9963
 
 Original creator: vbraun
 

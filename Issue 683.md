@@ -1,6 +1,6 @@
 # Issue 683: bug in "latex?" in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/683
 
 Original creator: was
 

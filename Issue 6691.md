@@ -1,6 +1,6 @@
 # Issue 6691: spell-check all modules under sage/combinat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6691
 
 Original creator: mvngu
 

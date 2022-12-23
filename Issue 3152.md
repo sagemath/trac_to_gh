@@ -1,6 +1,6 @@
 # Issue 3152: notebook -- improve gap-mode help interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3152
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On 7/26/07, Dan Christensen <jdc`@`uwo.ca> wrote:
+On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
 > Some other minor issues about using GAP within the notebook, under
 > 2.7.1.  I've put my entire worksheet in GAP mode using the menu at
 > the top.  The following things don't work correctly:

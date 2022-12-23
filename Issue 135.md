@@ -1,6 +1,6 @@
 # Issue 135: GMP patch: 64-bit MacPro
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/135
 
 Original creator: was
 

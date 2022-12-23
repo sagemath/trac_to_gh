@@ -1,6 +1,6 @@
 # Issue 6853: [with patch, needs review] Templating tag typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6853
 
 Original creator: mpatel
 

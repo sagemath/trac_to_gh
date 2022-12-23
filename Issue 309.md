@@ -1,6 +1,6 @@
 # Issue 309: rationals enumeration not  monotone in height.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/309
 
 Original creator: nbruin
 
@@ -212,7 +212,7 @@ Comment by mabshoff created at 2008-09-02 03:51:58
 With Alex's old patch I am actually seeing one doctest failure in interact:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4$ ./sage -t -long devel/sage/sage/server/notebook/interact.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4$ ./sage -t -long devel/sage/sage/server/notebook/interact.py
 sage -t -long devel/sage/sage/server/notebook/interact.py   
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4/tmp/interact.py", line 2556:

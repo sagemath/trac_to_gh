@@ -1,6 +1,6 @@
 # Issue 5131: regression in free modules -- who broke my __mul__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5131
 
 Original creator: was
 
@@ -13,7 +13,7 @@ If A is a free module and r a ring element then r*A and A*r used to work fine. B
 In the good ol days:
 
 ```
-wstein`@`sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage
+wstein@sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage
 [...]
 sage: A = ZZ^3
 sage: A

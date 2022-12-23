@@ -1,6 +1,6 @@
 # Issue 9023: ghmm is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9023
 
 Original creator: drkirkby
 

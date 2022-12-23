@@ -1,6 +1,6 @@
 # Issue 6207: roots of polynomial have incorrect parent when ring=R is specified
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6207
 
 Original creator: ncalexan
 

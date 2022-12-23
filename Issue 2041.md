@@ -1,6 +1,6 @@
 # Issue 2041: [with doc patch, needs review] tutorial: long lines in verbatim environments get cut off in pdf file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2041
 
 Original creator: AlexGhitza
 

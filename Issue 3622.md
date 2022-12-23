@@ -1,6 +1,6 @@
 # Issue 3622: numerical fast integration using fast float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3622
 
 Original creator: was
 

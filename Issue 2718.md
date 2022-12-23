@@ -1,6 +1,6 @@
 # Issue 2718: increase the default doctest timeout to 360 seconds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2718
 
 Original creator: was
 

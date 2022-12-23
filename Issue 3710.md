@@ -1,6 +1,6 @@
 # Issue 3710: Segfault in Tachyon on some latest GCC versions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3710
 
 Original creator: aginiewicz
 

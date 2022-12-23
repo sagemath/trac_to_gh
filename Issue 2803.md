@@ -1,6 +1,6 @@
 # Issue 2803: notebook -- the confirmation email after creating a new account is marked as spam
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2803
 
 Original creator: was
 

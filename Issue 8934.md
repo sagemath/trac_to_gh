@@ -1,6 +1,6 @@
 # Issue 8934: Trivial bug in computing faces of non-full-dimensional lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8934
 
 Original creator: novoselt
 
@@ -42,7 +42,7 @@ or the example will not be typeset correctly.
 A special case of non-full-dimensional polytopes is the zero-dimensional case. This one is also broken, but in a slightly different way:
 
 ```
-sage: p = LatticePolytope(matrix([This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro)))
+sage: p = LatticePolytope(matrix([[0]]))
 sage: p.poly_x("i", reduce_dimension=True)
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)

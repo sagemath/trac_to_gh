@@ -1,6 +1,6 @@
 # Issue 2837: [witch patch, needs review] use twisted-8.0.1's blockingCallFromThread
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2837
 
 Original creator: yi
 

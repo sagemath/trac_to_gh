@@ -1,6 +1,6 @@
 # Issue 106: maple (etc?) tab completion -- asking for a list of all completions gives a bad error message if maple isn't installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/106
 
 Original creator: was
 

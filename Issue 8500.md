@@ -1,6 +1,6 @@
 # Issue 8500: Add number_of_transitive_group function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8500
 
 Original creator: nborie
 

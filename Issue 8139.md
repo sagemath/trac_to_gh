@@ -1,6 +1,6 @@
 # Issue 8139: Can not compute (very) high power of WordMorphism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8139
 
 Original creator: vdelecroix
 

@@ -1,6 +1,6 @@
 # Issue 6164: Phan's Mini-AES for educational purposes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6164
 
 Original creator: mvngu
 

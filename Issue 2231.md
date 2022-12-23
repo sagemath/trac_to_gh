@@ -1,6 +1,6 @@
 # Issue 2231: sage-2.10.2-alpha1: doctest failure in partition_algebra.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2231
 
 Original creator: mhansen
 

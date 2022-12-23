@@ -1,6 +1,6 @@
 # Issue 1290: [with patch] add computationg of Rencontres numbers to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1290
 
 Original creator: was
 

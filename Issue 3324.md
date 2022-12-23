@@ -1,6 +1,6 @@
 # Issue 3324: [with patch, needs review] Matrix_mod2_dense to/from PNG routines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3324
 
 Original creator: malb
 

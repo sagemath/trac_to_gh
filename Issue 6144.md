@@ -1,6 +1,6 @@
 # Issue 6144: Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6144
 
 Original creator: mhansen
 

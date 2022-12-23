@@ -1,6 +1,6 @@
 # Issue 8005: powers of elements in a QuotientRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8005
 
 Original creator: wjp
 

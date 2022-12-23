@@ -1,6 +1,6 @@
 # Issue 5788: Fix MPIR build problem on OSX 10.4 exposed by linbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5788
 
 Original creator: mabshoff
 

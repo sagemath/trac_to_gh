@@ -1,6 +1,6 @@
 # Issue 5092: Primes()?? gets hung in len call
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5092
 
 Original creator: was
 

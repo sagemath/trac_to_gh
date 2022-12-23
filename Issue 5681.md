@@ -1,6 +1,6 @@
 # Issue 5681: [with patch; needs review] notebook -- worksheets open in new page/tab
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5681
 
 Original creator: was
 

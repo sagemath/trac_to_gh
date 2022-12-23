@@ -1,6 +1,6 @@
 # Issue 6616: [with patch] higher heegner points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6616
 
 Original creator: robertwb
 

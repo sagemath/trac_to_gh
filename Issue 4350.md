@@ -1,6 +1,6 @@
 # Issue 4350: matrix_window -- easy to segfault sage at command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4350
 
 Original creator: was
 

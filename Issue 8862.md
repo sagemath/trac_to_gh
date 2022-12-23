@@ -1,6 +1,6 @@
 # Issue 8862: failing resolution of a nonlinear system by solve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8862
 
 Original creator: casamayou
 
@@ -25,7 +25,7 @@ More, solve returns (0,0) which is not a critical point since f is not different
   sage: var('x y')
   sage: f(x,y) = (x^2 + y^2)^x
   sage: solve([diff(f(x,y), x), diff(f(x,y), y)], x, y)
-  [This is the Trac macro *x == 0, y == 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x == 0, y == 0-macro) 
+  [[x == 0, y == 0]] 
 ```
 
 
@@ -122,7 +122,7 @@ Distributed under the GNU Public License. See the file COPYING.
 Dedicated to the memory of William Schelter.
 The function bug_report() provides bug reporting information.
 (%i1) solve([(2*x^2/(x^2 + y^2) + log(x^2 + y^2))*(x^2 + y^2)^x,2*x*y*(x^2 + y^2)^(x - 1)],[x,y]);
-(%o1)                          [This is the Trac macro *x = 0, y = 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x = 0, y = 0-macro)
+(%o1)                          [[x = 0, y = 0]]
 ```
 
 So still present in 4.7.alpha1.

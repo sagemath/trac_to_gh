@@ -1,6 +1,6 @@
 # Issue 1758: Simon's variant of LLL reduction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1758
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 9174: cygwin: robert miller's 2-descent is completely broken on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9174
 
 Original creator: was
 

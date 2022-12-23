@@ -1,6 +1,6 @@
 # Issue 3029: [with patch; needs review] Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out of Debian packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3029
 
 Original creator: tabbott
 

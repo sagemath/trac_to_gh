@@ -1,6 +1,6 @@
 # Issue 959: errors building sage because singular gets confused by system-wide boost
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/959
 
 Original creator: was
 

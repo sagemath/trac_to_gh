@@ -1,6 +1,6 @@
 # Issue 5416: [with patch, needs review] miscellaneous documentation fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5416
 
 Original creator: cwitty
 
@@ -30,7 +30,7 @@ sage -docbuild all html
 I rebuilt the entire set of documentation because the patch touches files spanning the reference manual, the tutorial, the programming guide, and so on. Although the patch fixes a load of formatting issues and typos, I can still see (in the patch itself) that some typos are not fixed. I'm not saying that the patch introduces any new formatting issues or typos; just that it misses some that I can see in the patch itself. For example,  the patch has the following line to fix `sage/rings/polynomial/pbori.pyx`:
 
 ```
-`@``@` -1148,7 +1148,7 `@``@`
+@@ -1148,7 +1148,7 @@
      def _magma_init_(self, magma):
          r"""
          Return a a string which when evaluated with Magma returns a Magma
@@ -43,7 +43,7 @@ I rebuilt the entire set of documentation because the patch touches files spanni
 where one should note the line "Return a a string which". Another example concerning the file `sage/rings/real_mpfi.pyx` that the patch touches:
 
 ```
-`@``@` -3789,7 +3789,7 `@``@`
+@@ -3789,7 +3789,7 @@
  #              1.6449340668482264364724151666460251892    # 64-bit
  
  #         Note that the number of bits of precision in the constructor only

@@ -1,6 +1,6 @@
 # Issue 1998: animate -- completley broken in sage-2.10.*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1998
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-was`@`sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py
+was@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py
 sage -t -optional devel/sage-main/sage/plot/animate.py      **********************************************************************
 File "animate.py", line 47:
     sage: a.show()          # optional
@@ -121,7 +121,7 @@ Is this still an issue:
 
 
 ```
-mhansen`@`sage:~/sage-3.0.alpha2-sage.math-only-x86_64-Linux/devel/sage$ sage -t -optional sage/plot/animate.py
+mhansen@sage:~/sage-3.0.alpha2-sage.math-only-x86_64-Linux/devel/sage$ sage -t -optional sage/plot/animate.py
 sage -t -optional devel/sage-main/sage/plot/animate.py      
          [26.7 s]
  

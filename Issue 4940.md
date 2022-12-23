@@ -1,6 +1,6 @@
 # Issue 4940: dokchitser L-series at least for number fields claims a pole at zero, though the zeta function has a zero there
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4940
 
 Original creator: was
 

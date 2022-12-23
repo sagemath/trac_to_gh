@@ -1,6 +1,6 @@
 # Issue 4664: Move Cython dependency checking code into upstream Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4664
 
 Original creator: mabshoff
 

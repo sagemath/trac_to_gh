@@ -1,6 +1,6 @@
 # Issue 8006: Identation syntax errors fail silently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8006
 
 Original creator: acleone
 

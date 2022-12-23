@@ -1,6 +1,6 @@
 # Issue 186: ECM str concactenation error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/186
 
 Original creator: yi
 
@@ -66,7 +66,7 @@ Fixed for sage-1.6.
 ```
 rank4:~/d/sage/sage/interfaces was$ hg export 2315
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168366339 28800
 # Node ID 5e2621f3400050664fc52f68097a68a679bc5033
 # Parent  158dfcee989ef03bf0caa3b5fc26d54cd589f6e2
@@ -75,7 +75,7 @@ Fix trac #186.  Also, fixed the documentation for ecm.factor, which was very mis
 diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
 --- a/sage/interfaces/ecm.py    Tue Jan 09 08:33:17 2007 -0800
 +++ b/sage/interfaces/ecm.py    Tue Jan 09 10:12:19 2007 -0800
-`@``@` -11,7 +11,7 `@``@` import re
+@@ -11,7 +11,7 @@ import re
  import re
  from math import ceil, floor
  
@@ -84,7 +84,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
  from sage.misc.misc import verbose, get_verbose, tmp_filename
  
  import sage.misc.package
-`@``@` -94,7 +94,7 `@``@` class ECM:
+@@ -94,7 +94,7 @@ class ECM:
          return s
  
      def __call__(self, n, watch=False):
@@ -93,7 +93,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
          cmd = 'echo "%s" | %s'%(n, self.__cmd)
          if watch:
              t = tmp_filename()
-`@``@` -155,7 +155,7 `@``@` class ECM:
+@@ -155,7 +155,7 @@ class ECM:
          if not 'c' in kwds: kwds['c'] = 1000000000
          if not 'I' in kwds: kwds['I'] = 1
          if not factor_digits is None: 
@@ -102,7 +102,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
          kwds['one'] = ''
          kwds['cofdec'] = ''
          self.__cmd = self._ECM__startup_cmd(B1, None, kwds)
-`@``@` -178,17 +178,17 `@``@` class ECM:
+@@ -178,17 +178,17 @@ class ECM:
                      self.primality = [false]
                      return [n]
                  else:
@@ -123,7 +123,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
                          self.primality += [not child.match.groups()[1] is None]
                          child.kill(0)
                          return [p, q]
-`@``@` -203,33 +203,43 `@``@` class ECM:
+@@ -203,33 +203,43 @@ class ECM:
  
      def factor(self, n, factor_digits=None, B1=2000, **kwds):
          """
@@ -177,7 +177,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
          _primality = [self.primality[0], self.primality[1]]
          try:
              last_B1 = self.last_params['B1']
-`@``@` -260,7 +270,7 `@``@` class ECM:
+@@ -260,7 +270,7 @@ class ECM:
              The parameters for the most recent factorization.
              
          EXAMPLES: 
@@ -186,7 +186,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
              [197002597249, 1348959352853811313, 251951573867253012259144010843]
              sage: ecm.get_last_params()                 # random output
              {'poly': 'x^1', 'sigma': '1785694449', 'B1': '8885', 'B2': '1002846'}
-`@``@` -284,11 +294,11 `@``@` class ECM:
+@@ -284,11 +294,11 @@ class ECM:
          
              sage: n = next_prime(11^23)*next_prime(11^37)
                                  
@@ -201,7 +201,7 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
              GMP-ECM 6.0.1 [powered by GMP 4.2] [ECM]
  
              Input number is 304481639541418099574459496544854621998616257489887231115912293 (63 digits)
-`@``@` -349,4 +359,4 `@``@` class ECM:
+@@ -349,4 +359,4 @@ class ECM:
          print "Expected curves:", curve_count, "\tExpected time:", time
  
  # unique instance

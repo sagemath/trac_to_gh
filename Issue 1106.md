@@ -1,6 +1,6 @@
 # Issue 1106: speed up dense matrix comparison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1106
 
 Original creator: malb
 

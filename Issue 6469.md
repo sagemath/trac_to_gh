@@ -1,6 +1,6 @@
 # Issue 6469: sage-4.1.rc0: numerical noise in graph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6469
 
 Original creator: rlm
 

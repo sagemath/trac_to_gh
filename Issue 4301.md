@@ -1,6 +1,6 @@
 # Issue 4301: [with patch, needs review] lookup generic methods on category
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4301
 
 Original creator: robertwb
 

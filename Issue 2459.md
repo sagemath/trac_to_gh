@@ -1,6 +1,6 @@
 # Issue 2459: Fix GSL_DISABLE_DEPRECAED macro in setup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2459
 
 Original creator: mabshoff
 

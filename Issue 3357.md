@@ -1,6 +1,6 @@
 # Issue 3357: [with patch, needs review] Refactor pool code in integer.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3357
 
 Original creator: gfurnish
 
@@ -91,7 +91,7 @@ This fixes at least the build issue:
 ```
 --- a/setup.py  Sat May 24 16:03:19 2008 -0700
 +++ b/setup.py  Wed Jun 04 14:46:10 2008 -0700
-`@``@` -720,6 +720,9 `@``@` ext_modules = [ \
+@@ -720,6 +720,9 @@ ext_modules = [ \
      Extension('sage.rings.integer',
                sources = ['sage/ext/arith.pyx', 'sage/rings/integer.pyx'],
                libraries=['ntl', 'gmp']), \

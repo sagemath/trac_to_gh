@@ -1,6 +1,6 @@
 # Issue 6477: notebook -- improve UNICODE handling of truncated_name function in worksheet.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6477
 
 Original creator: was
 

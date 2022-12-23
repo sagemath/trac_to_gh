@@ -1,6 +1,6 @@
 # Issue 4156: [with patch, needs review] memleak in graph_isom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4156
 
 Original creator: rlm
 

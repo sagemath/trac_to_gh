@@ -1,6 +1,6 @@
 # Issue 8119: Rename change the hash value of some objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8119
 
 Original creator: hivert
 

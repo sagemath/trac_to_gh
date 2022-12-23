@@ -1,6 +1,6 @@
 # Issue 3432: MPolynomial_libsingular does not have a degrees method.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3432
 
 Original creator: mhansen
 

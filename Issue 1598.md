@@ -1,6 +1,6 @@
 # Issue 1598: [with patch] fix SIGSEGV in libSINGULAR interface on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1598
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7665: Make support for R graphics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7665
 
 Original creator: kcrisman
 

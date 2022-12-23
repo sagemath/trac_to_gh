@@ -1,6 +1,6 @@
 # Issue 9774: lcalc should make a .dll file on Cygwin instead of .so file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9775
 
 Original creator: mhansen
 

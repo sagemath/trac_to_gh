@@ -1,6 +1,6 @@
 # Issue 6849: port Sage to OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6849
 
 Original creator: was
 
@@ -46,7 +46,7 @@ Comment by was created at 2009-08-31 04:53:25
 Next failure is the Boehm GC:
 
 ```
- gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" "-DPACKAGE_STRING=\"gc 7.1\"" -DPACKAGE_BUGREPORT=\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEA
+ gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" "-DPACKAGE_STRING=\"gc 7.1\"" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEA
 DERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DH
 AVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PER
 MISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DL
@@ -58,7 +58,7 @@ o be defined
 make[3]: *** [mach_dep.lo] Error 1
 make[3]: *** Waiting for unfinished jobs....
  gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" "-DPACKAGE_STRING=\"gc 7.1\
-"" -DPACKAGE_BUGREPORT=\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -
+"" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -
 DVERSION=\"7.1\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEA
 DERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DH
 AVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PER
@@ -174,7 +174,7 @@ For instance, functions/other.py crashes Sage here:
 
 ```
 sage: f = factorial(x + factorial(x))
-/Applications/sage_builds/sage-4.1.2.alpha2/local/bin/sage-sage: line 199:   5554 Abort trap        sage-ipython "$`@`" -i
+/Applications/sage_builds/sage-4.1.2.alpha2/local/bin/sage-sage: line 199:   5554 Abort trap        sage-ipython "$@" -i
 ```
 
 `sage/symbolic/expression.pyx` crashes on the line `float(SR(RIF(Integer(2))))` with a similar message.  (I'm typing these on one computer while testing on another -- I'm not cut-and-pasting, so apologies for any typos.)

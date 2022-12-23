@@ -1,6 +1,6 @@
 # Issue 7883: Added some functionality to ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7883
 
 Original creator: robertwb
 

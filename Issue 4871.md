@@ -1,6 +1,6 @@
 # Issue 4871: latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4871
 
 Original creator: was
 

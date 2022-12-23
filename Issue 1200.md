@@ -1,6 +1,6 @@
 # Issue 1200: [with patch] replace \em into \emph everywhere
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1200
 
 Original creator: zimmerma
 

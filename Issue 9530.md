@@ -1,6 +1,6 @@
 # Issue 9530: Improve/fix readline workarounds for Arch Linux and openSuSE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9530
 
 Original creator: baechler
 

@@ -1,6 +1,6 @@
 # Issue 8253: search_src (etc.) bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8253
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5646: vectors over CDF allow a coercion from scalars
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5646
 
 Original creator: ncalexan
 

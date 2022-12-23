@@ -1,6 +1,6 @@
 # Issue 3344: small changes to documentation for erf, n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3344
 
 Original creator: jhpalmieri
 

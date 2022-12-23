@@ -1,6 +1,6 @@
 # Issue 6331: optional doctest failure -- magma interface slight problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6331
 
 Original creator: was
 

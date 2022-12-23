@@ -1,6 +1,6 @@
 # Issue 993: Pari's gp interpreter has built-in library search path, defeating Sage mechanisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/993
 
 Original creator: cwitty
 

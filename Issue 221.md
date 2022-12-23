@@ -1,6 +1,6 @@
 # Issue 221: SageX: generic laurent series over arbitrary ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/221
 
 Original creator: was
 

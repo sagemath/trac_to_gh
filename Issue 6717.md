@@ -1,6 +1,6 @@
 # Issue 6717: Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6717
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2389: linbox charpoly crashes on OS X 10.5-intel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2389
 
 Original creator: cpernet
 

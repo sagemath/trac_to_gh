@@ -1,6 +1,6 @@
 # Issue 7707: change picklejar doctest to be more robust
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7707
 
 Original creator: was
 

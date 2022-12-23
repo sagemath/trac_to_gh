@@ -1,6 +1,6 @@
 # Issue 7735: [with patch] incorrect sage exponentiation in interreduced_basis '^' vs '**'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7735
 
 Original creator: lftabera
 

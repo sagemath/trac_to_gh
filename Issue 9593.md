@@ -1,6 +1,6 @@
 # Issue 9593: spring layout does not converge on some graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9593
 
 Original creator: cwitty
 

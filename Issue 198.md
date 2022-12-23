@@ -1,6 +1,6 @@
 # Issue 198: Improve modular symbols and modular forms.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/198
 
 Original creator: was
 

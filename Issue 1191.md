@@ -1,6 +1,6 @@
 # Issue 1191: wrap pari's matsolvemodn for A.solve_right over Z/nZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1191
 
 Original creator: malb
 

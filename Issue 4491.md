@@ -1,6 +1,6 @@
 # Issue 4491: finance.TimeSeries from numpy array doesn't work correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4491
 
 Original creator: ghtdak
 

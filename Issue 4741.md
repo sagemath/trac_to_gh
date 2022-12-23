@@ -1,6 +1,6 @@
 # Issue 4741: [with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4741
 
 Original creator: cremona
 
@@ -103,7 +103,7 @@ Comment by mabshoff created at 2008-12-12 06:58:15
 Yep, same thing for me in my current 3.2.2.alpha2 merge tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage$ patch -p1 < trac-4741-fix2.patch\?format\=raw patching file sage/schemes/elliptic_curves/ell_point.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage$ patch -p1 < trac-4741-fix2.patch\?format\=raw patching file sage/schemes/elliptic_curves/ell_point.py
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 Hunk #1 FAILED at 4533.
 Hunk #2 succeeded at 4547 (offset 1 line).
@@ -127,12 +127,12 @@ The only changes post 3.2.1 to that file were:
 
 ```
 hangeset:   11145:614177b99fa2
-user:        John Cremona <john.cremona`@`gmail.com>
+user:        John Cremona <john.cremona@gmail.com>
 date:        Fri Dec 05 13:34:53 2008 +0000
 summary:     #4715 second patch
 
 changeset:   11144:84cee787fc0f
-user:        John Cremona <john.cremona`@`gmail.com>
+user:        John Cremona <john.cremona@gmail.com>
 date:        Fri Dec 05 11:58:48 2008 +0000
 summary:     #4715: tiny bug fix in KodairaSymbol + doctest
 ```
@@ -172,7 +172,7 @@ Comment by mabshoff created at 2008-12-12 17:04:15
 trac-4741-rebase.patch applies cleanly to my Sage 3.2.2.alpha2 merge tree. But I am seeing one doctest failure with -long on sage.math:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py", line 3338, in __main__.example_110
@@ -327,20 +327,20 @@ Comment by mabshoff created at 2008-12-14 08:35:29
 Yep, I am seeing the same issue as William:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_1_rebase.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_1_rebase.patch 
 patching file sage/schemes/elliptic_curves/ell_point.py
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 Hunk #1 succeeded at 4585 (offset 53 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_2_doctest.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_2_doctest.patch 
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 Hunk #1 succeeded at 4669 (offset 53 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_3_prec.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_3_prec.patch 
 patching file sage/schemes/elliptic_curves/ell_point.py
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_4_typos.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_4_typos.patch 
 patching file sage/schemes/elliptic_curves/ell_point.py
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 Hunk #1 succeeded at 4651 (offset 66 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 --dry-run < trac_4741_part_5_fix3.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 --dry-run < trac_4741_part_5_fix3.patch 
 patching file sage/schemes/elliptic_curves/ell_point.py
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 Hunk #1 FAILED at 485.

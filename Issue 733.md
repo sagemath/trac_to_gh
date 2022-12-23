@@ -1,6 +1,6 @@
 # Issue 733: generating docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/733
 
 Original creator: jason
 

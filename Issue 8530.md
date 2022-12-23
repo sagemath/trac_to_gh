@@ -1,6 +1,6 @@
 # Issue 8530: affine patches of projective curves should be affine curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8530
 
 Original creator: AlexGhitza
 

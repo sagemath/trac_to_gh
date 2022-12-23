@@ -1,6 +1,6 @@
 # Issue 6332: optional doctest failure -- jones number field database tests fail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6332
 
 Original creator: was
 

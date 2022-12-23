@@ -1,6 +1,6 @@
 # Issue 1422: add bibtex function to get the bibtex code for citing the sage components
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1422
 
 Original creator: mhansen
 

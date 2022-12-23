@@ -1,6 +1,6 @@
 # Issue 6479: desolve for 2nd order ODE with initial condition gives wrong answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6479
 
 Original creator: gmhossain
 

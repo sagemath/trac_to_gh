@@ -1,6 +1,6 @@
 # Issue 268: IntegerMod sqrt() doesn't work for non-prime moduli
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/268
 
 Original creator: dmharvey
 

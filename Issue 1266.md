@@ -1,6 +1,6 @@
 # Issue 1266: sage.functions.piecewise is missing from reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1266
 
 Original creator: cwitty
 

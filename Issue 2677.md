@@ -1,6 +1,6 @@
 # Issue 2677: sage 2.11.alpha1: doctest failures in real_double_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2677
 
 Original creator: dfdeshom
 

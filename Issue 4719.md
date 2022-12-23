@@ -1,6 +1,6 @@
 # Issue 4719: Doctests report mysterious errors instead of ordinary failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4719
 
 Original creator: davidloeffler
 

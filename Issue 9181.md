@@ -1,6 +1,6 @@
 # Issue 9181: Update dev-guide : __hash__ return a long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9181
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 133: Galois action
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/133
 
 Original creator: wdj
 

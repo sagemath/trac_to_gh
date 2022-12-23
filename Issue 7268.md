@@ -1,6 +1,6 @@
 # Issue 7268: GLPK : named constraints and variables, export functions ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7268
 
 Original creator: ncohen
 

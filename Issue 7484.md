@@ -1,6 +1,6 @@
 # Issue 7484: Sage does not build on stock Ubuntu 9.10 without installing gfortran and setting SAGE_FORTRAN(_LIB)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7484
 
 Original creator: jason
 
@@ -16,7 +16,7 @@ Here's a patch for README.txt to document this:
 ```
 --- README.txt.orig     2009-11-17 20:02:26.833640422 -0600
 +++ README.txt  2009-11-17 20:07:26.763327405 -0600
-`@``@` -47,6 +47,14 `@``@`
+@@ -47,6 +47,14 @@
       >= 10.4.x and certain Linux distributions are 100% supported.
       See below for a complete list.
   
@@ -31,7 +31,7 @@ Here's a patch for README.txt to document this:
     2. Extract the tarball:
            tar xvf sage-*.tar
  
-`@``@` -75,13 +83,6 `@``@`
+@@ -75,13 +83,6 @@
      Use Sage on Microsoft Windows via VMware.
      We do not always test on OS X 10.4, but Sage should work there fine.
  

@@ -1,6 +1,6 @@
 # Issue 7847: Emptying the trash in Firefox 3.5.6 displays a "Forbidden  No referer found. Forbidden." page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7847
 
 Original creator: mpatel
 

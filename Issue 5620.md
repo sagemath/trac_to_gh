@@ -1,6 +1,6 @@
 # Issue 5620: Digraph plotting bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5620
 
 Original creator: ekirkman
 

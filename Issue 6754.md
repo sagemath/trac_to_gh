@@ -1,6 +1,6 @@
 # Issue 6754: sage-4.1.1 -- numerical noise on OS X 10.5 PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6754
 
 Original creator: was
 

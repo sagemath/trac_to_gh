@@ -1,6 +1,6 @@
 # Issue 2807: line 26 of c_lib/src/interrupt.c is probably wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2807
 
 Original creator: dmharvey
 

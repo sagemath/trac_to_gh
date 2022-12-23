@@ -1,6 +1,6 @@
 # Issue 589: improve doctesting of sage-sage script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/589
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On 9/4/07, Jonathan Bober <jwbober`@`gmail.com> wrote:
+On 9/4/07, Jonathan Bober <jwbober@gmail.com> wrote:
 > My memory could be wrong, but I feel that this exact problem has
 > occurred before. (The problem of running scripts on the command line not
 > working -- not necessarily the exact same underlying cause for the

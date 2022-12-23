@@ -1,6 +1,6 @@
 # Issue 2462: Odd results when adding Laurent series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2462
 
 Original creator: ljpk
 

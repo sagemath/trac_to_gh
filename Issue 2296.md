@@ -1,6 +1,6 @@
 # Issue 2296: setup.py -- another issue with cython dependency checking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2296
 
 Original creator: was
 

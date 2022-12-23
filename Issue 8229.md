@@ -1,6 +1,6 @@
 # Issue 8229: gap_packages-4.4.12 updated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8229
 
 Original creator: dimpase
 

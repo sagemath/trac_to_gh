@@ -1,6 +1,6 @@
 # Issue 8577: Fix ETuple.eadd_p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8577
 
 Original creator: malb
 

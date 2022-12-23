@@ -1,6 +1,6 @@
 # Issue 1253: make sage compile on OSX 10.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1253
 
 Original creator: mabshoff
 

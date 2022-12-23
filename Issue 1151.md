@@ -1,6 +1,6 @@
 # Issue 1151: Bug in creating elements in multivariate quotient rings that cannot be coerced to singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1151
 
 Original creator: roed
 

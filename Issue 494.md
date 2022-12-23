@@ -1,6 +1,6 @@
 # Issue 494: local/bin/sage-env uses 'bashism'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/494
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Hello,
 local/bin/sage-env shipped with Sage 2.8.2 is officially a sh shell script. So it should run flawlessly with a tcsh. But
 
 ```
-[mabshoff`@`m940 sage-2.8.2]# /bin/tcsh local/bin/sage-env
+[mabshoff@m940 sage-2.8.2]# /bin/tcsh local/bin/sage-env
 SAVEDIR=/tmp/Work2/sage-2.8.2-gcc4.3/sage-2.8.2: Command not found.
 if: Expression Syntax.
 ```

@@ -1,6 +1,6 @@
 # Issue 844: dsage -- priority queues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/844
 
 Original creator: was
 

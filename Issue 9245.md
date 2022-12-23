@@ -1,6 +1,6 @@
 # Issue 9245: Add library of toric varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9245
 
 Original creator: vbraun
 

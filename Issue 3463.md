@@ -1,6 +1,6 @@
 # Issue 3463: notebook -- create a resource folder and move AnonymousToplevel to it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3463
 
 Original creator: TimothyClemans
 

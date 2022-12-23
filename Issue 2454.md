@@ -1,6 +1,6 @@
 # Issue 2454: [with patch, needs review] Start improving doctest coverage in modular/modsym/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2454
 
 Original creator: craigcitro
 

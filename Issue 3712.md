@@ -1,6 +1,6 @@
 # Issue 3712: clisp+nohup eats ones disc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3712
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9417: Tamagawa number calculated incorrectly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9417
 
 Original creator: arminstraub
 

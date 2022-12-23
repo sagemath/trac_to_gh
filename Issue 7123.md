@@ -1,6 +1,6 @@
 # Issue 7123: cryptanalysis of the shift cipher
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7123
 
 Original creator: mvngu
 
@@ -60,7 +60,7 @@ Replying to [comment:2 rbeezer]:
 Frequency distribution is already implemented for the following alphabets: `AlphabeticStrings`, `BinaryStrings`, `HexadecimalStrings`, `OctalStrings`, `Radix64Strings`. The relevant method is `frequency_distribution()` in the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`. Here is an example:
 
 ```
-[mvngu`@`sage sage-4.1.2.rc0-7123-shift]$ sage
+[mvngu@sage sage-4.1.2.rc0-7123-shift]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: A = AlphabeticStrings()
@@ -363,7 +363,7 @@ Comment by mvngu created at 2009-10-11 07:00:37
 22:11 < rbeezer> found the problem - you are decrypting/shifting too much
 22:12 < rbeezer> try this - change     AlphShifted = self.enciphering(key, Alph)
 22:12 < rbeezer> to  AlphShifted = self.enciphering(0, Alph)
-22:22 -!- homerj [n=homerj`@`207-255-12-114-dhcp.jst.pa.atlanticbb.net] has left #sage-devel ["Leaving"]
+22:22 -!- homerj [n=homerj@207-255-12-114-dhcp.jst.pa.atlanticbb.net] has left #sage-devel ["Leaving"]
 22:41 < rbeezer> mvngu: any luck?
 23:00 < mvngu> rbeezer: I'm not convinced about the change.
 23:01 < rbeezer> mvngu: Ideally, I think you want   RMk = [(OM[AlphShifted[StrAlph.index(e)]] - EA[e])**2 / EA[e] for e in StrAlph]
@@ -389,8 +389,8 @@ Comment by mvngu created at 2009-10-11 07:00:37
 23:14 < williamstein> There are also now 8949 sagenb.org users.
 23:15 < williamstein> Only 51 more to 9000.
 23:18 < mvngu> rbeezer: Your change certainly gives better results now. See my transcript at http://sage.math.washington.edu/home/mvngu/chi-square-rbeezer-hack.txt
-23:19 -!- wormsxulla [i=chatzill`@`unaffiliated/wormsxulla] has quit [Read error: 110 (Connection timed out)]
-23:19 -!- wormsxulla_ [i=chatzill`@`unaffiliated/wormsxulla] has joined #sage-devel
+23:19 -!- wormsxulla [i=chatzill@unaffiliated/wormsxulla] has quit [Read error: 110 (Connection timed out)]
+23:19 -!- wormsxulla_ [i=chatzill@unaffiliated/wormsxulla] has joined #sage-devel
 23:19 -!- wormsxulla_ is now known as wormsxulla
 23:19 < rbeezer> mvngu: that's what I was seeing
 23:19 < mvngu> rbeezer: Now for a text file...
@@ -428,7 +428,7 @@ Comment by mvngu created at 2009-10-12 05:49:22
                  like english
 22:45 < rbeezer> So maybe before FM you say it is for a "decrypted" or
                  "candidate decrypted" message
-22:46 -!- Serica [i=815dcecd`@`gateway/web/freenode/x-awudwwybpvbxuikl] has quit 
+22:46 -!- Serica [i=815dcecd@gateway/web/freenode/x-awudwwybpvbxuikl] has quit 
           [Ping timeout: 180 seconds]
 22:47 < mvngu> rbeezer: That sounds logical; I'll put it in now.
 22:47 < rbeezer> Or you can wait until I do a full review and take care of 

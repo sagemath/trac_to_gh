@@ -1,6 +1,6 @@
 # Issue 882: 2.8.7-alpha0: doctest failures due to RR->ZZ coercion patch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/882
 
 Original creator: cwitty
 

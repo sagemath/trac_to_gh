@@ -1,6 +1,6 @@
 # Issue 3746: segfault in dist_factor.py on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3746
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: yi
 
 
 ```
-wstein`@`iras:~/iras/build/sage-3.0.6.final>         ./sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py
+wstein@iras:~/iras/build/sage-3.0.6.final>         ./sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py
 sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.pysh: line 1: 17221 Segmentation fault      /home/wstein/iras/build/sage-3.0.6.final/local/bin/python /home/wstein/iras/build/sage-3.0.6.final/tmp/.doctest_dist_factor.py >/tmp/tmpKoKDAX 2>/tmp/tmpz35sr7
 [DSage] Closed connection to localhost
 
@@ -26,13 +26,13 @@ The following tests failed:
 
         sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py
 Total time for all tests: 25.0 seconds
-wstein`@`iras:~/iras/build/sage-3.0.6.final> 
+wstein@iras:~/iras/build/sage-3.0.6.final> 
 ```
 
 
 
 ```
-wstein`@`iras:~/iras/build/sage-3.0.6.final> uname -a
+wstein@iras:~/iras/build/sage-3.0.6.final> uname -a
 Linux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux
 
 cpuinfo:

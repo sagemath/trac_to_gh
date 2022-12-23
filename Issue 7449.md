@@ -1,6 +1,6 @@
 # Issue 7449: Some doc request hangs sage eating all memory.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7449
 
 Original creator: hivert
 

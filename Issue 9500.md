@@ -1,6 +1,6 @@
 # Issue 9500: implement inversion of elements in a (more) general quotient ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9500
 
 Original creator: was
 

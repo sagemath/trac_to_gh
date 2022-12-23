@@ -1,6 +1,6 @@
 # Issue 3925: Wrap Bernstein 's primegen
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3925
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 381: SAGE daemon mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/381
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On May 28, 5:11 pm, Marshall Hampton <hampto...`@`gmail.com> wrote:
+On May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:
 > This is more of a unixy process control question but I am applying it
 > to sage.
 >

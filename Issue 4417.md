@@ -1,6 +1,6 @@
 # Issue 4417: [with patch, needs review] fix steenrod algebra 'optional' doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4417
 
 Original creator: jhpalmieri
 

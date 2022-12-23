@@ -1,6 +1,6 @@
 # Issue 6497: [with patch, needs review] symbolic functions should understand numpy arrays
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6497
 
 Original creator: robertwb
 

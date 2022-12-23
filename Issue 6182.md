@@ -1,6 +1,6 @@
 # Issue 6182: notebook -- saving a worksheet with double quotes in the worksheet name fails with a weird error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6182
 
 Original creator: was
 

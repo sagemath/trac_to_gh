@@ -1,6 +1,6 @@
 # Issue 8956: Fix notebook help on auto-evaluation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8956
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 9919: Ease SageNB development by providing hg commands, and extracting packages to /devel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9920
 
 Original creator: timdumol
 

@@ -1,6 +1,6 @@
 # Issue 8992: Coercion of univariate quotient polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8992
 
 Original creator: SimonKing
 

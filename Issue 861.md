@@ -1,6 +1,6 @@
 # Issue 861: [with patch] magma.[get|set]_verbose
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/861
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 8843: fix c_lib on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8843
 
 Original creator: mhansen
 

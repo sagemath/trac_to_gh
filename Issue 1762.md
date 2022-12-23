@@ -1,6 +1,6 @@
 # Issue 1762: Create optional graphviz package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1762
 
 Original creator: boothby
 

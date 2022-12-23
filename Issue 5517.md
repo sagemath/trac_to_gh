@@ -1,6 +1,6 @@
 # Issue 5517: cvxopt-0.9.p7: build failure due to missing perl modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5517
 
 Original creator: tornaria
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 The error reported by `cvxopt-0.9.p7` is:
 
 ```
-Can't locate File/Copy.pm in `@`INC (`@`INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./spkg-install line 2.
+Can't locate File/Copy.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./spkg-install line 2.
 BEGIN failed--compilation aborted at ./spkg-install line 2.
 ```
 

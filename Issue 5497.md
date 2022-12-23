@@ -1,6 +1,6 @@
 # Issue 5497: notebook: make sure each worksheet can only run once
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5497
 
 Original creator: mabshoff
 

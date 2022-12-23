@@ -1,6 +1,6 @@
 # Issue 104: wiki() doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/104
 
 Original creator: justin
 
@@ -14,7 +14,7 @@ I've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAG
 ```
 ....
 Successfully installed moin-1.5.4.p0
-<justin`@`zippo-w:sage-1.4> sage
+<justin@zippo-w:sage-1.4> sage
 --------------------------------------------------------
 --------------------------------------------------------
 | SAGE Version 1.4, Build Date: 2006-10-01             |
@@ -127,7 +127,7 @@ the change yourself and see it work.  Here's the udiff:
  
 --- ../MoinMoin/util/filesys.py 2006-05-11 09:24:00.000000000 -0700
 +++ filesys.py  2006-10-16 08:42:18.000000000 -0700
-`@``@` -159,10 +159,12 `@``@`
+@@ -159,10 +159,12 @@
          """
          try:
              from Carbon import File

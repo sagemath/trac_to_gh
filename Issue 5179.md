@@ -1,6 +1,6 @@
 # Issue 5179: Delete __getslice__ from matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5179
 
 Original creator: jason
 

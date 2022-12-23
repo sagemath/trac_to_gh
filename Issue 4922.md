@@ -1,6 +1,6 @@
 # Issue 4922: convert sage.monoids.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4922
 
 Original creator: mhansen
 

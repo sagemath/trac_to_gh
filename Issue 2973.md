@@ -1,6 +1,6 @@
 # Issue 2973: RDF doctest failures on arch linux (gcc 4.3)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2973
 
 Original creator: was
 

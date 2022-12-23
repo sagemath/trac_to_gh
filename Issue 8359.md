@@ -1,6 +1,6 @@
 # Issue 8359: Coxeter groups as permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8359
 
 Original creator: nthiery
 

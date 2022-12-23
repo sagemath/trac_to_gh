@@ -1,6 +1,6 @@
 # Issue 7713: Use unicode strings for all text in the Sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7713
 
 Original creator: timdumol
 

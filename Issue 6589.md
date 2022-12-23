@@ -1,6 +1,6 @@
 # Issue 6589: bring doctest coverage for ring/laurent_series_ring.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6589
 
 Original creator: mhampton
 
@@ -41,7 +41,7 @@ Comment by tscrim created at 2013-02-05 18:02:55
 Also in `5.5.rc0`:
 
 ```
-travis`@`travis-virtualbox:~/sage-5.5.rc0/devel/sage/sage$ sage -coverage rings/laurent_series_ring.py 
+travis@travis-virtualbox:~/sage-5.5.rc0/devel/sage/sage$ sage -coverage rings/laurent_series_ring.py 
 ----------------------------------------------------------------------
 rings/laurent_series_ring.py
 SCORE rings/laurent_series_ring.py: 100% (25 of 25)

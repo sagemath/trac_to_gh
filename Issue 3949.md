@@ -1,6 +1,6 @@
 # Issue 3949: notebook -- move all HTML in twist.py to templates
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3949
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 5369: [with patch, needs review] Optimize transpose for matrix_integer_dense and matrix_rational_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5369
 
 Original creator: ylchapuy
 

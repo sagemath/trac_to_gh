@@ -1,6 +1,6 @@
 # Issue 4701: magma/sage interface -- coercion for single variable polynomials broken in some cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4701
 
 Original creator: was
 
@@ -51,7 +51,7 @@ Finite Field in a of size 3^5
 sage: a.Eltseq()
 [ 0, 1, 0, 0, 0 ]
 sage: a.Sage()
-GF(243, 'a'.replace('$.', 'x').replace('.', _), modulus=GF(3)['a'.replace('$.', 'x').replace('.', _)]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))
+GF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))
 ```
 
 

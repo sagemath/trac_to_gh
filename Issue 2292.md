@@ -1,6 +1,6 @@
 # Issue 2292: segfault in AbelianGroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2292
 
 Original creator: wdj
 
@@ -46,7 +46,7 @@ This is a more readable version:
 | Type notebook() for the GUI, and license() for information.        |
 sage: G.<a,b> = AbelianGroup(2)
 sage: a/b
-/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipyt on -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipyt on -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
 
 

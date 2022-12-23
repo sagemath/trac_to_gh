@@ -1,6 +1,6 @@
 # Issue 3730: Sage scripts ending with .py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3730
 
 Original creator: tabbott
 

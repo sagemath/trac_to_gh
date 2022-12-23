@@ -1,6 +1,6 @@
 # Issue 5196: installation manual needs to be updated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5196
 
 Original creator: cwitty
 

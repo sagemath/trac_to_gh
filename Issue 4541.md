@@ -1,6 +1,6 @@
 # Issue 4541: kschur functions don't properly convert to schur's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4541
 
 Original creator: jbandlow
 

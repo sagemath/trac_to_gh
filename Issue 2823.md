@@ -1,6 +1,6 @@
 # Issue 2823: notebook -- safari 3.1 introspection completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2823
 
 Original creator: was
 

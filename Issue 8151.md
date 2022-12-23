@@ -1,6 +1,6 @@
 # Issue 8151: wrong file permissions in lie-2.2.2.p3.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8151
 
 Original creator: dimpase
 

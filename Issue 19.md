@@ -1,6 +1,6 @@
 # Issue 19: viewing source code with ?? in a binary install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/19
 
 Original creator: was
 

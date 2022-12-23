@@ -1,6 +1,6 @@
 # Issue 4687: Points on  Elliptic Curve over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4687
 
 Original creator: rishi
 

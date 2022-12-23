@@ -1,6 +1,6 @@
 # Issue 2312: add support for braclets, necklaces, and Lyndon words, of a fixed length
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2312
 
 Original creator: mhansen
 

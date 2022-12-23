@@ -1,6 +1,6 @@
 # Issue 6028: get_memory_usage() sucks performance wise on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6028
 
 Original creator: mabshoff
 
@@ -58,17 +58,17 @@ I've created a ticket #8391 to call 'prstat' instead of 'top', despite the fact 
 
 
 ```
-drkirkby`@`kestrel:~$ /usr/sbin/psrinfo -v
+drkirkby@kestrel:~$ /usr/sbin/psrinfo -v
 Status of virtual processor 0 as of: 02/27/2010 19:22:41
   on-line since 02/27/2010 15:10:42.
   The sparcv9 processor operates at 500 MHz,
 	and has a sparcv9 floating point processor.
-drkirkby`@`kestrel:~$ time prstat -n 65000 1 1 > b
+drkirkby@kestrel:~$ time prstat -n 65000 1 1 > b
 
 real	0m0.085s
 user	0m0.027s
 sys	0m0.050s
-drkirkby`@`kestrel:~$ cat b
+drkirkby@kestrel:~$ cat b
    PID USERNAME  SIZE   RSS STATE  PRI NICE      TIME  CPU PROCESS/NLWP       
   2023 root     4800K 3424K run     20    0   0:18:51  37% qq10/1
   2044 root     6032K 5496K run      0   19   0:13:55  31% pgn-extract/1
@@ -131,7 +131,7 @@ The CPU time can't be measured (displayed as 0.00 s), but the wall time is 0.08s
 
 ```
 Exiting SAGE (CPU time 0m0.20s, Wall time 5m59.86s).
-drkirkby`@`redstart:~/fresh/sage-4.3.3$ ./sage
+drkirkby@redstart:~/fresh/sage-4.3.3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: time get_memory_usage()

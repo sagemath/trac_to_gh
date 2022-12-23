@@ -1,6 +1,6 @@
 # Issue 9999: GSL libary fails to install on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/10000
 
 Original creator: drkirkby
 

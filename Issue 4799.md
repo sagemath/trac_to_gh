@@ -1,6 +1,6 @@
 # Issue 4799: [with patch, positive review] Add mappded CombinatorialClasses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4799
 
 Original creator: mhansen
 

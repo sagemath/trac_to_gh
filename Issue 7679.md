@@ -1,6 +1,6 @@
 # Issue 7679: constructions doc: Python functional programming for mathematicians
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7679
 
 Original creator: mvngu
 

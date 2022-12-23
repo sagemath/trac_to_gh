@@ -1,6 +1,6 @@
 # Issue 8805: Bring doctest for sage/functions folder to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8805
 
 Original creator: kcrisman
 
@@ -49,7 +49,7 @@ Applying the patch [trac_8805-functions-dir-doctest.patch](http://trac.sagemath.
 
 
 ```sh
-[mvngu`@`sage sage-4.4.1.rc0-8805-functions]$ ./sage -b
+[mvngu@sage sage-4.4.1.rc0-8805-functions]$ ./sage -b
 sage: Building and installing modified Sage library files.
 
 

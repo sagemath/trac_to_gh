@@ -1,6 +1,6 @@
 # Issue 1684: Intelligent indentation when user presses "enter".
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1684
 
 Original creator: boothby
 

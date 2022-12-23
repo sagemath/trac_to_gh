@@ -1,6 +1,6 @@
 # Issue 9683: pretty_print clobbers _ (history)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9683
 
 Original creator: mguaypaq
 

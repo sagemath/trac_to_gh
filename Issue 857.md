@@ -1,6 +1,6 @@
 # Issue 857: update info about cython in license() output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/857
 
 Original creator: dmharvey
 

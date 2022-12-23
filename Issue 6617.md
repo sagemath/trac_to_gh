@@ -1,6 +1,6 @@
 # Issue 6617: remove stale SageTeX files from latex_embed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6617
 
 Original creator: ddrake
 

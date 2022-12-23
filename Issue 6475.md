@@ -1,6 +1,6 @@
 # Issue 6475: Notebook error page after deleting data file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6475
 
 Original creator: khorton
 

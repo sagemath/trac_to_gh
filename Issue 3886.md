@@ -1,6 +1,6 @@
 # Issue 3886: Plotting of digraphs is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3886
 
 Original creator: saliola
 

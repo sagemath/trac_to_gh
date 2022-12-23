@@ -1,6 +1,6 @@
 # Issue 5588: [with patch, needs review] developer's guide: more information about docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5588
 
 Original creator: jhpalmieri
 

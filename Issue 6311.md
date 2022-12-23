@@ -1,6 +1,6 @@
 # Issue 6311: optional doctest failure -- supersingular_j
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6311
 
 Original creator: was
 

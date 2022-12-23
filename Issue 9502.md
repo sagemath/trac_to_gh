@@ -1,6 +1,6 @@
 # Issue 9502: Basis parent bug in FreeModule
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9502
 
 Original creator: novoselt
 

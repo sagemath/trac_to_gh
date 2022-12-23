@@ -1,6 +1,6 @@
 # Issue 8335: Finite Field lattices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8335
 
 Original creator: roed
 

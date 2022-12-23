@@ -1,6 +1,6 @@
 # Issue 3792: fix Sage build when there is a broken systemwide freetype library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3792
 
 Original creator: certik
 

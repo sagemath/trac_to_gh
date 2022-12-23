@@ -1,6 +1,6 @@
 # Issue 9721: Problem upgrading from 4.5.2 to 4.5.3.alpha0 on OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9721
 
 Original creator: mpatel
 

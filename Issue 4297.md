@@ -1,6 +1,6 @@
 # Issue 4297: [with patch, needs review] make sage -cython work on .spyx and library files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4297
 
 Original creator: robertwb
 

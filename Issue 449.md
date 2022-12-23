@@ -1,6 +1,6 @@
 # Issue 449: lrank Solaris build fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/449
 
 Original creator: mabshoff
 

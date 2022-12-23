@@ -1,6 +1,6 @@
 # Issue 8525: mistake in docstring for R=Zp(3)'s R.plot method.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8525
 
 Original creator: was
 

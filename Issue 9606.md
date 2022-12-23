@@ -1,6 +1,6 @@
 # Issue 9606: local/bin/sage-sage assumes 'sh' is bash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9606
 
 Original creator: pjeremy
 
@@ -47,9 +47,9 @@ The relevant part of the script says
             # bash, but this is not guaranteed), so we don't set
             # SHELL_OPTS.
             if [ "$color_prompt" = yes ] ; then
-                PS1="$(tput rev)(sage-sh)$(tput sgr0) $USER`@``hostname -s`:\${PWD##*/}$ "
+                PS1="$(tput rev)(sage-sh)$(tput sgr0) $USER@`hostname -s`:\${PWD##*/}$ "
             else
-                PS1="(sage-sh) $USER`@``hostname -s`:\${PWD}$ "
+                PS1="(sage-sh) $USER@`hostname -s`:\${PWD}$ "
             fi
             export PS1
             ;;

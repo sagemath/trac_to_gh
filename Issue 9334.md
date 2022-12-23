@@ -1,6 +1,6 @@
 # Issue 9334: hilbert symbols!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9334
 
 Original creator: aly.deines
 

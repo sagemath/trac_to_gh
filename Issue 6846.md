@@ -1,6 +1,6 @@
 # Issue 6846: follow up to #6751: fix warnings when building reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6846
 
 Original creator: mvngu
 

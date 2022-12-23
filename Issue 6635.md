@@ -1,6 +1,6 @@
 # Issue 6635: implement more critical Hecke algebra functionality: index in saturation, discriminant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6635
 
 Original creator: was
 

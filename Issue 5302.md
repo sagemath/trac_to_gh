@@ -1,6 +1,6 @@
 # Issue 5302: Numerical noise in graph.py get_pos() and graph_plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5302
 
 Original creator: jsp
 
@@ -81,14 +81,14 @@ Ok, this patch looks stupid :-) but it works:
 | Type notebook() for the GUI, and license() for information.        |
 sage: 
 Exiting SAGE (CPU time 0m0.08s, Wall time 0m5.28s).
-[jaap`@`paix sage-3.3.alpha1]$ ./sage -t  "devel/sage/sage/graphs/graph_plot.py"
+[jaap@paix sage-3.3.alpha1]$ ./sage -t  "devel/sage/sage/graphs/graph_plot.py"
 sage -t  "devel/sage/sage/graphs/graph_plot.py"             
 	 [47.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 47.9 seconds
-[jaap`@`paix sage-3.3.alpha1]$ ./sage -t  "devel/sage/sage/graphs/graph.py"
+[jaap@paix sage-3.3.alpha1]$ ./sage -t  "devel/sage/sage/graphs/graph.py"
 sage -t  "devel/sage/sage/graphs/graph.py"                  
 	 [109.9 s]
  

@@ -1,6 +1,6 @@
 # Issue 842: SAGE's Singular build fails to factor simple polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/842
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 6577: Reference manual build errors in 4.1.1.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6577
 
 Original creator: davidloeffler
 

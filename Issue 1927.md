@@ -1,6 +1,6 @@
 # Issue 1927: dots in symbolic variable names should not be allowed, etc. (probably easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1927
 
 Original creator: was
 

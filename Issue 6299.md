@@ -1,6 +1,6 @@
 # Issue 6299: major scoping error introduced by refactoring dsage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6299
 
 Original creator: was
 

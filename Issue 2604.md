@@ -1,6 +1,6 @@
 # Issue 2604: plotting constant functions throws an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2604
 
 Original creator: jason
 

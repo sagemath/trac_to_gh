@@ -1,6 +1,6 @@
 # Issue 6370: notebook -- REST search of docs in live mode is completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6370
 
 Original creator: was
 

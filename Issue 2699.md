@@ -1,6 +1,6 @@
 # Issue 2699: scipy fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2699
 
 Original creator: schilly
 

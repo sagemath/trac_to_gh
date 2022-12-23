@@ -1,6 +1,6 @@
 # Issue 6072: Boundary space for GammaH fails to identify vanishing classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6072
 
 Original creator: davidloeffler
 

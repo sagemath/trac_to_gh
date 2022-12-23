@@ -1,6 +1,6 @@
 # Issue 1750: Sage 2.10.alpha1: leak in readline.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1750
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8917: Documentation in Magmas product_from_element_class_mul
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8917
 
 Original creator: warner
 

@@ -1,6 +1,6 @@
 # Issue 6644: [with patch, needs review] fix doctest error for lazy_attribute and abstract_method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6644
 
 Original creator: jhpalmieri
 

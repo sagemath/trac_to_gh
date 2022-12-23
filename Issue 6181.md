@@ -1,6 +1,6 @@
 # Issue 6181: The r-2.6.1.p22 spkg was created on OSX hence contains a bunch of crap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6181
 
 Original creator: was
 

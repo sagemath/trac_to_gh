@@ -1,6 +1,6 @@
 # Issue 2011: crap -- mpfi ships with two precompiled binaries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2011
 
 Original creator: was
 

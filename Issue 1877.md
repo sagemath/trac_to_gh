@@ -1,6 +1,6 @@
 # Issue 1877: same range variables -- bug in 3d plotting (probably very very very easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1877
 
 Original creator: was
 

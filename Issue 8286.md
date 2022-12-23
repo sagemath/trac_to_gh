@@ -1,6 +1,6 @@
 # Issue 8286: sparse_rows and sparse_columns are broken for 0xn, nx0 matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8286
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5807: dsage with @parallel doesn't work at all
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5807
 
 Original creator: was
 

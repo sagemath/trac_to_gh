@@ -1,6 +1,6 @@
 # Issue 3526: notebook -- change favicon to the new one seen at the new sagemath.org web site
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3526
 
 Original creator: TimothyClemans
 
@@ -48,7 +48,7 @@ This patch is basically empty since favicon.ico is binary and not in the patch:
 ```
 cat trac_3526_extcode-3526.patch 
 # HG changeset patch
-# User Timothy Clemans <timothy.clemans`@`gmail.com>
+# User Timothy Clemans <timothy.clemans@gmail.com>
 # Date 1214643704 25200
 # Node ID c6d839efcf8a7730a04e74399930ffab23651a5f
 # Parent  c3d96fbf0f19bf8b2c0c1c5188943ba54829f947

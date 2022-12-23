@@ -1,6 +1,6 @@
 # Issue 9033: Singular does not try to build 64-bit on OpenSolaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9033
 
 Original creator: drkirkby
 

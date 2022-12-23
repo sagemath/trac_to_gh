@@ -1,6 +1,6 @@
 # Issue 5452: Graph broken on a input of type dict of dicts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5452
 
 Original creator: slabbe
 

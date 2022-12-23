@@ -1,6 +1,6 @@
 # Issue 1472: [with optional spkg] gnuplotpy optional package doesn' t work with numpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1472
 
 Original creator: jkantor
 

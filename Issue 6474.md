@@ -1,6 +1,6 @@
 # Issue 6474: PDF version of the reference manual should build successfully
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6474
 
 Original creator: mvngu
 
@@ -20,7 +20,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64903 ...sto y[]`.  {^^Hf Bold face}.]`@`PYGaB['])
+l.64903 ...sto y[]`.  {^^Hf Bold face}.]@PYGaB['])
                                                   
 ? x
 ```

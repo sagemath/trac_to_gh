@@ -1,6 +1,6 @@
 # Issue 7440: optional valgrind spkg doesn't build with newer GCC's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7440
 
 Original creator: was
 
@@ -172,10 +172,10 @@ I do not believe this is a problem, since `uname -p` will only be called on Linu
 
 
 ```
-[timdumol`@`tim-pc sage]$ if [ -z "" ] && [ -z "`error`" ]; then echo "Success"; fi
+[timdumol@tim-pc sage]$ if [ -z "" ] && [ -z "`error`" ]; then echo "Success"; fi
 bash: error: command not found
 Success
-[timdumol`@`tim-pc sage]$ if [ -n "" ] && [ -z "`error`" ]; then echo "Success"; fi
+[timdumol@tim-pc sage]$ if [ -n "" ] && [ -z "`error`" ]; then echo "Success"; fi
 ```
 
 

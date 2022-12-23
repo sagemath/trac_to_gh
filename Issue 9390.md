@@ -1,6 +1,6 @@
 # Issue 9390: is_galois_relative() not always right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9390
 
 Original creator: arminstraub
 

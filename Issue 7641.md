@@ -1,6 +1,6 @@
 # Issue 7641: symbolic expression plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7641
 
 Original creator: jason
 

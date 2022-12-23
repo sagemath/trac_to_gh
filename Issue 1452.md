@@ -1,6 +1,6 @@
 # Issue 1452: GAP - id120.z file missing (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1452
 
 Original creator: rlm
 

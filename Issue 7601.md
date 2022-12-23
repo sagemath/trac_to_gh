@@ -1,6 +1,6 @@
 # Issue 7601: Graph.edge_connectivity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7601
 
 Original creator: ncohen
 

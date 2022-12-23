@@ -1,6 +1,6 @@
 # Issue 9015: typing `?` on the command line brings up IPython help
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9015
 
 Original creator: burcin
 
@@ -50,7 +50,7 @@ diff --git a/src/sage/repl/interpreter.py b/src/sage/repl/interpreter.py
 index dbbd683..e748b9e 100644
 --- a/src/sage/repl/interpreter.py
 +++ b/src/sage/repl/interpreter.py
-`@``@` -502,6 +502,7 `@``@` class SageCrashHandler(IPAppCrashHandler):
+@@ -502,6 +502,7 @@ class SageCrashHandler(IPAppCrashHandler):
  
  class SageTerminalApp(TerminalIPythonApp):
      name = u'Sage'

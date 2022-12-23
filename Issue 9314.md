@@ -1,6 +1,6 @@
 # Issue 9314: LaTeX representation of negative symbolic fractions still broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9314
 
 Original creator: damm
 
@@ -142,7 +142,7 @@ contains a fix for this. I want to keep this as easy to review as possible, so t
 diff --git a/ginac/mul.cpp b/ginac/mul.cpp
 --- a/ginac/mul.cpp
 +++ b/ginac/mul.cpp
-`@``@` -268,6 +268,10 `@``@`
+@@ -268,6 +268,10 @@
  			     }
  			} else {
  			     if (numer.is_equal(_ex1) || numer.is_equal(_ex_1)) {

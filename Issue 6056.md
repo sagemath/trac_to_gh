@@ -1,6 +1,6 @@
 # Issue 6056: HISTORY.txt for sage-4.0.alpha0 needs updating
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6056
 
 Original creator: drkirkby
 

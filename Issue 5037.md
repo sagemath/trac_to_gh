@@ -1,6 +1,6 @@
 # Issue 5037: Bug fixes and new functionalities for Words library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5037
 
 Original creator: slabbe
 

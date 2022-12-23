@@ -1,6 +1,6 @@
 # Issue 1727: truth value of inequalities not as expected
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1727
 
 Original creator: wjp
 

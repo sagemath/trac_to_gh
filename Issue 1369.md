@@ -1,6 +1,6 @@
 # Issue 1369: fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1369
 
 Original creator: was
 

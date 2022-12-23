@@ -1,6 +1,6 @@
 # Issue 7724: breadth/depth first search for c_graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7724
 
 Original creator: ncohen
 

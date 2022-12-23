@@ -1,6 +1,6 @@
 # Issue 9472: Remove (duplicate) BOOST and M4RI source trees from PolyBoRi spkg, some clean-up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9472
 
 Original creator: leif
 

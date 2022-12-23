@@ -1,6 +1,6 @@
 # Issue 7464: [with spkg; needs review] Remove '-v' option from 'cp' command (GNUism) in database_cremona_ellcurve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7464
 
 Original creator: drkirkby
 

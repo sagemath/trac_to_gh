@@ -1,6 +1,6 @@
 # Issue 6778: [with patch, needs review] Fix nfacets for non-reflexive lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6778
 
 Original creator: novoselt
 

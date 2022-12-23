@@ -1,6 +1,6 @@
 # Issue 9302: Heegner point_exact is wrong for 5077a with discriminant -7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9302
 
 Original creator: was
 

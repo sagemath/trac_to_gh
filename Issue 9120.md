@@ -1,6 +1,6 @@
 # Issue 9120: plot3d transformations don't respect variable names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9120
 
 Original creator: jason
 

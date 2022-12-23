@@ -1,6 +1,6 @@
 # Issue 8131: Catalan numbers are integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8131
 
 Original creator: fwclarke
 

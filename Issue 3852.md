@@ -1,6 +1,6 @@
 # Issue 3852: create or adapt or include a units package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3852
 
 Original creator: jason
 
@@ -78,7 +78,7 @@ FIRST REFEREE REPORT on trac_3852.patch:
 
 
 ```
-wstein`@`sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py 
+wstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py 
 ----------------------------------------------------------------------
 devel/sage/sage/symbolic/units.py
 ERROR: Please define a s == loads(dumps(s)) doctest.

@@ -1,6 +1,6 @@
 # Issue 781: Matrix from Matrix_integer_dense() blows up (Dup of 799 for formatting)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/781
 
 Original creator: justin
 
@@ -167,7 +167,7 @@ Comment by mabshoff created at 2007-10-23 23:47:58
 As is the code posted doesn't work:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.8$ ./sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.8.1, Release Date: 2007-10-21                     |
@@ -185,7 +185,7 @@ sage: sage: a = Matrix_integer_dense.new(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)
 If I call
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.8$ ./sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.8.1, Release Date: 2007-10-21                     |

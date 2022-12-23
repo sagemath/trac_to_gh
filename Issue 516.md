@@ -1,6 +1,6 @@
 # Issue 516: memory leak in libSINGULAR conversion routine
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/516
 
 Original creator: malb
 

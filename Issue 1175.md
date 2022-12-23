@@ -1,6 +1,6 @@
 # Issue 1175: circular link in sage/local/lib/python2.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1175
 
 Original creator: zimmerma
 

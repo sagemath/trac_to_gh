@@ -1,6 +1,6 @@
 # Issue 7646: preparsing file should start *after* the module docstring (factoring constants out messed things up)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7646
 
 Original creator: was
 

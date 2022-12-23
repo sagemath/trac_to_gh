@@ -1,6 +1,6 @@
 # Issue 1667: [with patch, needs review] coercion fixes for PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1667
 
 Original creator: burcin
 

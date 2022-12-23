@@ -1,6 +1,6 @@
 # Issue 7704: bug in sparse matrix det
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7704
 
 Original creator: was
 

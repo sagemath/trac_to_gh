@@ -1,6 +1,6 @@
 # Issue 2804: ssmod.py failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2804
 
 Original creator: gfurnish
 

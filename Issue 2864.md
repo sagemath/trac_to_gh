@@ -1,6 +1,6 @@
 # Issue 2864: Weyl groups are implemented in rootsystem.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2864
 
 Original creator: bump
 

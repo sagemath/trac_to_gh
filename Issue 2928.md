@@ -1,6 +1,6 @@
 # Issue 2928: another p-adic extension segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2928
 
 Original creator: robertwb
 
@@ -15,7 +15,7 @@ fatal error:
    internal error: can't grow this _ntl_gbigint
 exit...
 /Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort
-trap              python "$`@`"
+trap              python "$@"
 ```
 
 
@@ -31,7 +31,7 @@ Hi Robert,
 my alpha5 merge tree doesn't experience the problem:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha5$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha5$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.alpha4, Release Date: 2008-04-12                  |

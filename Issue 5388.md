@@ -1,6 +1,6 @@
 # Issue 5388: Remove hg_doc* in Sage 3.4 since it no longer works once the doc repo is gone
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5388
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4207: implement an is_close function for matrices and vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4207
 
 Original creator: jason
 

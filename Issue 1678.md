@@ -1,6 +1,6 @@
 # Issue 1678: docs -- tutorial: modification to the tutorial to address numerous gotcha's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1678
 
 Original creator: was
 
@@ -135,7 +135,7 @@ some uninteresting technical problems that have now been fixed).
 
  sage: len(quadratic_residues(232792560))
  /usr/local/sage-2.8.2/local/bin/sage-sage: line 182: 25097 Killed
-     sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+     sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 ----------------------------------------------------------------------
 ```
 

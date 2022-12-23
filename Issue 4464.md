@@ -1,6 +1,6 @@
 # Issue 4464: devel/sage/sage/combinat/root_system/weyl_characters.py test (too) long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4464
 
 Original creator: jsp
 

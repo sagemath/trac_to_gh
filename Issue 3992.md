@@ -1,6 +1,6 @@
 # Issue 3992: Sage 3.1.2.alpha2: three tests in sage/interfaces/octave.py need to be optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3992
 
 Original creator: mabshoff
 

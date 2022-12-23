@@ -1,6 +1,6 @@
 # Issue 1185: Coercion trouble
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1185
 
 Original creator: ifti
 

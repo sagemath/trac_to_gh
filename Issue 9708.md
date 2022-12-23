@@ -1,6 +1,6 @@
 # Issue 9708: mesh= option to plot3d is completely broken?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9708
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1307: [graphs] Strongly regular graph database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1307
 
 Original creator: jason
 

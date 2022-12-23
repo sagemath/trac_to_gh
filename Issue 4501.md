@@ -1,6 +1,6 @@
 # Issue 4501: preparser does not know about python notation for complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4501
 
 Original creator: jason
 

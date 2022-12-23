@@ -1,6 +1,6 @@
 # Issue 3727: bug report link in notebook for quick submitting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3727
 
 Original creator: schilly
 

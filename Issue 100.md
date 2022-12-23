@@ -1,6 +1,6 @@
 # Issue 100: sage doctest system -- when it tests a pyrex file it still describes it as a .py file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/100
 
 Original creator: was
 

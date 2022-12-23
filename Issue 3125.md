@@ -1,6 +1,6 @@
 # Issue 3125: chromatic_polynomial incorrectly blocks control-c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3125
 
 Original creator: was
 

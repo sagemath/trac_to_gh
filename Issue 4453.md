@@ -1,6 +1,6 @@
 # Issue 4453: elliptic curves -- heegner_index command gives nonsense when rank > 1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4453
 
 Original creator: was
 
@@ -80,9 +80,9 @@ Comment by mvngu created at 2010-02-13 05:59:54
 I get two hunk failures when applying [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) on top of Sage 4.3.3.alpha0:
 
 ```
-[mvngu`@`sage sage-main]$ pwd
+[mvngu@sage sage-main]$ pwd
 /dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4453/trac_4453.2.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4453/trac_4453.2.patch && hg qpush
 adding trac_4453.2.patch to series file
 applying trac_4453.2.patch
 patching file sage/schemes/elliptic_curves/heegner.py

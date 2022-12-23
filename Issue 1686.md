@@ -1,6 +1,6 @@
 # Issue 1686: arpack -- illegal instruction when built on Pentium 4 using gfortran
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1686
 
 Original creator: was
 

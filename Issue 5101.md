@@ -1,6 +1,6 @@
 # Issue 5101: [with patch, needs review] more types for sage_input: vectors, matrices, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5101
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 1940: Segmentation fault when comparing two empty ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1940
 
 Original creator: SimonKing
 

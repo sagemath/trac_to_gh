@@ -1,6 +1,6 @@
 # Issue 4703: inst.tex addition of Sage+tcl/tk [patch attached, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4703
 
 Original creator: wdj
 

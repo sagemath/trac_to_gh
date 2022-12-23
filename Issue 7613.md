@@ -1,6 +1,6 @@
 # Issue 7613: twin prime class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7613
 
 Original creator: kevin.stueve
 

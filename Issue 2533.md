@@ -1,6 +1,6 @@
 # Issue 2533: add "-p" flag to $CP for make install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2533
 
 Original creator: mabshoff
 

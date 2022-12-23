@@ -1,6 +1,6 @@
 # Issue 6823: [with patch, needs review] Kneser Graph in graph_generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6823
 
 Original creator: ncohen
 

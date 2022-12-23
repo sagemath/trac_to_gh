@@ -1,6 +1,6 @@
 # Issue 7036: rubiks ignroes CC and uses gcc even if CC is Sun compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7036
 
 Original creator: drkirkby
 

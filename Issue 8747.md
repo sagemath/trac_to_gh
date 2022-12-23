@@ -1,6 +1,6 @@
 # Issue 8747: Speedup testsuite using LazyFormat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8747
 
 Original creator: hivert
 

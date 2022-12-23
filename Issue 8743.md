@@ -1,6 +1,6 @@
 # Issue 8743: change_ring on a rational matrix may return self
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8743
 
 Original creator: jason
 

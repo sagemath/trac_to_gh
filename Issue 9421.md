@@ -1,6 +1,6 @@
 # Issue 9421: desolve mixes user parameters and integration constants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9421
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 1349: notebook -- to avoid massive confusion, make the default notebook location $HOME/.sage/notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1349
 
 Original creator: was
 

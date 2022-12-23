@@ -1,6 +1,6 @@
 # Issue 3446: notebook -- implement basic account recovery
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3446
 
 Original creator: TimothyClemans
 

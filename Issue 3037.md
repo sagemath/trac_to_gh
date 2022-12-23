@@ -1,6 +1,6 @@
 # Issue 3037: [with spkg, needs trivial review] cython-0.9.6.13.tip
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3037
 
 Original creator: gfurnish
 

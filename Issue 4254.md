@@ -1,6 +1,6 @@
 # Issue 4254: [with patch, needs review] better parameter parsing for mq.SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4254
 
 Original creator: malb
 
@@ -47,7 +47,7 @@ REFEREE REPORT:
 I tried to figure out how to apply the above patches in their confusing order, but I guess I failed or something. See below (last patch fails to apply).  Please clarify, and I'll referee this:
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 hgsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4254/sr_convenience.patch')
@@ -82,10 +82,10 @@ abort: patch failed to apply
 and 
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/crypto/mq/sr.py.rej
+was@sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/crypto/mq/sr.py.rej
 --- sr.py
 +++ sr.py
-`@``@` -284,8 +289,20 `@``@`
+@@ -284,8 +289,20 @@
              polybori = self._polybori
          except AttributeError:
              polybori = False

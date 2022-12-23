@@ -1,6 +1,6 @@
 # Issue 2986: [with patch - actually tuning tarball] add atlas pretuning for Pentium D / 64 bits (ARCH=P4D64SSE3)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2986
 
 Original creator: tornaria
 

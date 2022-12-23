@@ -1,6 +1,6 @@
 # Issue 3129: [with patch, needs review] The singular interface should not claim to support polynomial rings with no variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3129
 
 Original creator: broune
 

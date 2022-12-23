@@ -1,6 +1,6 @@
 # Issue 391: Bundle adding apropos to SAGE -- try `conductor**?' for an example.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/391
 
 Original creator: ncalexan
 

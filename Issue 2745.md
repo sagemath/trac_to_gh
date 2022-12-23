@@ -1,6 +1,6 @@
 # Issue 2745: upgrade twisted to 8.0.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2745
 
 Original creator: yi
 

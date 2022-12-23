@@ -1,6 +1,6 @@
 # Issue 6308: [with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6308
 
 Original creator: craigcitro
 

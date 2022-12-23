@@ -1,6 +1,6 @@
 # Issue 7229: jsmath-image-fonts spkg installs to wrong directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7229
 
 Original creator: jason
 

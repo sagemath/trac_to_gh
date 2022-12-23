@@ -1,6 +1,6 @@
 # Issue 3179: more 64 bit OSX libpng fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3179
 
 Original creator: mabshoff
 

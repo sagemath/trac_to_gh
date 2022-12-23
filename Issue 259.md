@@ -1,6 +1,6 @@
 # Issue 259: axiom bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/259
 
 Original creator: was
 

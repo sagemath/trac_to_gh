@@ -1,6 +1,6 @@
 # Issue 8074: corner cases in RealField and real numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8074
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 3946: Tidier BinaryQF reductions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3946
 
 Original creator: choldsworth
 

@@ -1,6 +1,6 @@
 # Issue 748: iml autohell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/748
 
 Original creator: was
 
@@ -163,43 +163,43 @@ diff --git a/repl/Makefile.am b/repl/Makefile.am
 index 4cf001b..7be2e86 100644
 --- a/repl/Makefile.am
 +++ b/repl/Makefile.am
-`@``@` -1,4 +1,4 `@``@`
+@@ -1,4 +1,4 @@
  noinst_LTLIBRARIES      = librepl.la
 -librepl_la_SOURCES   =
 +librepl_la_SOURCES   = dummy.c
- librepl_la_LIBADD    = `@`LTLIBOBJS`@`
+ librepl_la_LIBADD    = @LTLIBOBJS@
  
 diff --git a/repl/Makefile.in b/repl/Makefile.in
 index 5c65bfa..ba963ec 100644
 --- a/repl/Makefile.in
 +++ b/repl/Makefile.in
-`@``@` -51,7 +51,7 `@``@` CONFIG_HEADER = $(top_builddir)/config.h
+@@ -51,7 +51,7 @@ CONFIG_HEADER = $(top_builddir)/config.h
  CONFIG_CLEAN_FILES =
  LTLIBRARIES = $(noinst_LTLIBRARIES)
- librepl_la_DEPENDENCIES = `@`LTLIBOBJS`@`
+ librepl_la_DEPENDENCIES = @LTLIBOBJS@
 -am_librepl_la_OBJECTS =
 +am_librepl_la_OBJECTS = dummy.lo
  librepl_la_OBJECTS = $(am_librepl_la_OBJECTS)
  DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
  depcomp = $(SHELL) $(top_srcdir)/config/depcomp
-`@``@` -172,7 +172,7 `@``@` sharedstatedir = `@`sharedstatedir`@`
- sysconfdir = `@`sysconfdir`@`
- target_alias = `@`target_alias`@`
+@@ -172,7 +172,7 @@ sharedstatedir = @sharedstatedir@
+ sysconfdir = @sysconfdir@
+ target_alias = @target_alias@
  noinst_LTLIBRARIES = librepl.la
 -librepl_la_SOURCES = 
 +librepl_la_SOURCES = dummy.c
- librepl_la_LIBADD = `@`LTLIBOBJS`@`
+ librepl_la_LIBADD = @LTLIBOBJS@
  all: all-am
  
-`@``@` -226,6 +226,7 `@``@` distclean-compile:
+@@ -226,6 +226,7 @@ distclean-compile:
  	-rm -f *.tab.c
  
- `@`AMDEP_TRUE`@``@`am__include`@` `@`am__quote`@`$(DEPDIR)/realloc.Plo`@`am__quote`@`
-+`@`AMDEP_TRUE`@``@`am__include`@` `@`am__quote`@`./$(DEPDIR)/dummy.Plo`@`am__quote`@`
+ @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/realloc.Plo@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dummy.Plo@am__quote@
  
  .c.o:
- `@`am__fastdepCC_TRUE`@`	if $(COMPILE) -MT $`@` -MD -MP -MF "$(DEPDIR)/$*.Tpo" -c -o $`@` $<; \
-`@``@` -367,7 +368,7 `@``@` clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \
+ @am__fastdepCC_TRUE@	if $(COMPILE) -MT $@ -MD -MP -MF "$(DEPDIR)/$*.Tpo" -c -o $@ $<; \
+@@ -367,7 +368,7 @@ clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \
  	mostlyclean-am
  
  distclean: distclean-am
@@ -208,7 +208,7 @@ index 5c65bfa..ba963ec 100644
  	-rm -f Makefile
  distclean-am: clean-am distclean-compile distclean-generic \
  	distclean-libtool distclean-tags
-`@``@` -393,7 +394,7 `@``@` install-man:
+@@ -393,7 +394,7 @@ install-man:
  installcheck-am:
  
  maintainer-clean: maintainer-clean-am
@@ -222,13 +222,13 @@ new file mode 100644
 index 0000000..39e7442
 --- /dev/null
 +++ b/repl/dummy.c
-`@``@` -0,0 +1 `@``@`
+@@ -0,0 +1 @@
 +void dummy () { return; }
 diff --git a/src/Makefile.in b/src/Makefile.in
 index e9ca293..a1f5a81 100644
 --- a/src/Makefile.in
 +++ b/src/Makefile.in
-`@``@` -223,6 +223,7 `@``@` libiml_la_CFLAGS = $(AM_CFLAGS)
+@@ -223,6 +223,7 @@ libiml_la_CFLAGS = $(AM_CFLAGS)
  libiml_la_LIBADD = $(EXTERNLIB) \
  	 	   $(top_builddir)/repl/librepl.la
  
@@ -544,7 +544,7 @@ Applying the following changes:
 diff --git a/SPKG.txt b/SPKG.txt
 --- a/SPKG.txt
 +++ b/SPKG.txt
-`@``@` -32,21 +32,27 `@``@`
+@@ -32,21 +32,27 @@
 
  === Patches ===
 
@@ -585,11 +585,11 @@ diff --git a/patches/sage1.patch b/patches/sage1.patch
 deleted file mode 100644
 --- a/patches/sage1.patch
 +++ /dev/null
-`@``@` -1,80 +0,0 `@``@`
+@@ -1,80 +0,0 @@
 -diff -ruN b/src/RNSop.c a/src/RNSop.c
 ---- b/src/RNSop.c      2006-11-23 22:25:23.000000000 +0100
 -+++ a/src/RNSop.c      2013-06-10 23:05:18.872404179 +0200
--`@``@` -46,6 +46,7 `@``@`
+-@@ -46,6 +46,7 @@
 - 
 - 
 - #include "RNSop.h"
@@ -600,7 +600,7 @@ deleted file mode 100644
 -diff -ruN b/src/memalloc.c a/src/memalloc.c
 ---- b/src/memalloc.c   2006-11-23 22:25:23.000000000 +0100
 -+++ a/src/memalloc.c   2013-06-10 23:05:18.872404179 +0200
--`@``@` -48,13 +48,16 `@``@`
+-@@ -48,13 +48,16 @@
 - 
 - #include "error.h"
 - #include "common.h"
@@ -619,7 +619,7 @@ deleted file mode 100644
 -   return new;
 - }
 - 
--`@``@` -65,8 +68,10 `@``@`
+-@@ -65,8 +68,10 @@
 -   if (!p)
 -     return xmalloc(num);
 -   new = realloc(p, num);
@@ -632,7 +632,7 @@ deleted file mode 100644
 -   return new;
 - }
 - 
--`@``@` -76,8 +81,10 `@``@`
+-@@ -76,8 +81,10 @@
 - {
 - #if HAVE_CALLOC
 -   void * new = calloc(num, size);
@@ -648,7 +648,7 @@ deleted file mode 100644
 -diff -ruN iml-1.0.1-sage/src/tinyatlas.h src/src/tinyatlas.h
 ---- iml-1.0.1-sage/src/tinyatlas.h     1970-01-01 01:00:00.000000000 +0100
 -+++ src/src/tinyatlas.h        2007-03-01 04:11:42.000000000 +0100
--`@``@` -0,0 +1,17 `@``@`
+-@@ -0,0 +1,17 @@
 -+/* 
 -+Compute Y = alpha * X + beta * Y
 -+

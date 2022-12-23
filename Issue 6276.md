@@ -1,6 +1,6 @@
 # Issue 6276: atlas-3.8.3.p2 dumps core on Solaris 10 with gcc 4.4.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6276
 
 Original creator: drkirkby
 
@@ -14,9 +14,9 @@ Running on t2.math.washington.edu (a Sun T5240 running Solaris 10 update 4), the
 
 
 ```
-kirkby`@`t2:~/sage-4.0.1.alpha0$ uname -a
+kirkby@t2:~/sage-4.0.1.alpha0$ uname -a
 SunOS t2 5.10 Generic_127111-09 sun4v sparc SUNW,T5240
-kirkby`@`t2:~/sage-4.0.1.alpha0$ cat /etc/release
+kirkby@t2:~/sage-4.0.1.alpha0$ cat /etc/release
                        Solaris 10 8/07 s10s_u4wos_12b SPARC
            Copyright 2007 Sun Microsystems, Inc.  All Rights Reserved.
                         Use is subject to license terms.

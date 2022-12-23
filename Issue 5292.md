@@ -1,6 +1,6 @@
 # Issue 5292: Error in FractionField conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5292
 
 Original creator: robertwb
 

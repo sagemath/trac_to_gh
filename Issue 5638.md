@@ -1,6 +1,6 @@
 # Issue 5638: [with patch, needs review] deprecate jsmath from the command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5638
 
 Original creator: jhpalmieri
 

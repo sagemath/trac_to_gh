@@ -1,6 +1,6 @@
 # Issue 1363: complex intervals should have a sqrt() method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1363
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 9209: Sage build can go wrong if there is a python install in /usr/local.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9209
 
 Original creator: drkirkby
 

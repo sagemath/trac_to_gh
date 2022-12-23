@@ -1,6 +1,6 @@
 # Issue 2082: plot loops
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2082
 
 Original creator: rlm
 

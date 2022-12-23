@@ -1,6 +1,6 @@
 # Issue 7363: print symbolic fractions more naturally: print 2/(x+2) instead of 2 (1/(x+2))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7363
 
 Original creator: jason
 

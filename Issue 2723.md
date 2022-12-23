@@ -1,6 +1,6 @@
 # Issue 2723: [with patch] coercion error in monomial_quotient
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2723
 
 Original creator: jbmohler
 

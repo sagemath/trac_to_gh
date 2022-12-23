@@ -1,6 +1,6 @@
 # Issue 6090: plot(x^2, (x, -2, 2), fill=2) does not match documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6090
 
 Original creator: jason
 

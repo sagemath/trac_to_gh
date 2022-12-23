@@ -1,6 +1,6 @@
 # Issue 6837: Implementation of twisting modular forms by Dirichlet characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6837
 
 Original creator: ljpk
 

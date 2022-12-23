@@ -1,6 +1,6 @@
 # Issue 6611: [with spkg, needs review] rename networkx-0.99.p1-fake_really-0.36.p0.spkg to networkx-0.36.p0.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6611
 
 Original creator: mvngu
 

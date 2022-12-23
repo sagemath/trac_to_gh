@@ -1,6 +1,6 @@
 # Issue 1852: Configure R to use Atlas / other improvements to R package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1852
 
 Original creator: pdenapo
 
@@ -108,7 +108,7 @@ I read the new spkg-install, built this package on all our test machines, and ra
 
 
 ```
-was`@`debian32:~$ echo "import rpy; rpy.r('2+2')" | sage-2.10.1.alpha1/sage
+was@debian32:~$ echo "import rpy; rpy.r('2+2')" | sage-2.10.1.alpha1/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.1.alpha1, Release Date: 2008-01-21               |

@@ -1,6 +1,6 @@
 # Issue 688: conversion to Singular for QuotientRingElements broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/688
 
 Original creator: malb
 

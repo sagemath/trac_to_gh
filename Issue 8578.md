@@ -1,6 +1,6 @@
 # Issue 8578: method int_repr only works for small finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8578
 
 Original creator: mvngu
 

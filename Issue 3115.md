@@ -1,6 +1,6 @@
 # Issue 3115: scientific notation exponents should be multiples of 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3115
 
 Original creator: schilly
 

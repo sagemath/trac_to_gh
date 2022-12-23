@@ -1,6 +1,6 @@
 # Issue 2760: [with patch; needs review] Debian amd64 fixes for NTL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2760
 
 Original creator: tabbott
 

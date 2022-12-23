@@ -1,6 +1,6 @@
 # Issue 9927: vectors from numpy arrays don't always work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9928
 
 Original creator: jason
 

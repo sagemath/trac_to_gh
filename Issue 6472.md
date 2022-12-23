@@ -1,6 +1,6 @@
 # Issue 6472: ideal.groebner_basis gives incorrect answers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6472
 
 Original creator: broune
 

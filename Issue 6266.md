@@ -1,6 +1,6 @@
 # Issue 6266: Build problem of sqlite on Solaris 10 with gcc	4.4.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6266
 
 Original creator: drkirkby
 
@@ -15,18 +15,18 @@ The sqlite in Sage 4.0.1-alpha0 (sqlite-3.5.3.p3) fails to build on t2, which ru
 
 ```
 
-./.libs/libsqlite3.so: undefined reference to `write`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `pthread_create`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `fcntl`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `pthread_join`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `pthread_equal`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `close`@`SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `write@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `pthread_create@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `fcntl@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `pthread_join@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `pthread_equal@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `close@SUNW_0.9'
 ./.libs/libsqlite3.so: undefined reference to 
-`pthread_mutexattr_settype`@`SUNW_1.2'
-./.libs/libsqlite3.so: undefined reference to `read`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `sleep`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `pthread_self`@`SUNW_0.9'
-./.libs/libsqlite3.so: undefined reference to `fsync`@`SUNW_0.9'
+`pthread_mutexattr_settype@SUNW_1.2'
+./.libs/libsqlite3.so: undefined reference to `read@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `sleep@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `pthread_self@SUNW_0.9'
+./.libs/libsqlite3.so: undefined reference to `fsync@SUNW_0.9'
 ```
 
 I've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build fails with similar (but fewer) error messages to those in Sage, so I don't  believe updating to the latest sqlite will solve this. The error messages building the latest sqlite are:
@@ -34,10 +34,10 @@ I've downloaded both sqlite 3.5.3 and the latest (3.6.14.2) and find the build f
 
 ```
 
-./.libs/libsqlite3.so: undefined reference to `dlerror`@`SUNW_1.22'
-./.libs/libsqlite3.so: undefined reference to `dlopen`@`SUNW_1.22'
-./.libs/libsqlite3.so: undefined reference to `dlsym`@`SUNW_1.22'
-./.libs/libsqlite3.so: undefined reference to `dlclose`@`SUNW_1.22'
+./.libs/libsqlite3.so: undefined reference to `dlerror@SUNW_1.22'
+./.libs/libsqlite3.so: undefined reference to `dlopen@SUNW_1.22'
+./.libs/libsqlite3.so: undefined reference to `dlsym@SUNW_1.22'
+./.libs/libsqlite3.so: undefined reference to `dlclose@SUNW_1.22'
 
 ```
 
@@ -111,7 +111,7 @@ This looks good, but I do have a comment about SPKG.txt: the stars are for an it
  The bug fix is implemented by striping libpthread out of the 
  Makefile with sed. 
  
- Thanks are due to Nicolas Williams (Nicolas.Williams`@`sun.com)
+ Thanks are due to Nicolas Williams (Nicolas.Williams@sun.com)
  who made me aware libpthread was not necessary, as its functionality
  was moved to libc in Solaris 10, with libpthread
  only provided for backwards compatibility. 

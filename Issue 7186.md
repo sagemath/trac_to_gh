@@ -1,6 +1,6 @@
 # Issue 7186: maxima update #6699 introduced hard-coded paths, unable to start maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7186
 
 Original creator: GeorgSWeber
 
@@ -93,15 +93,15 @@ Comment by was created at 2009-10-11 17:41:09
 
 I was reading the ecl binaries and grepping around (I felt a bit like a "warez person" for a moment)... and found this in the binary:
 
-    ... ECLDIR^`@`Cannot find ECL's directory^...
+    ... ECLDIR^@Cannot find ECL's directory^...
 
 So I tried setting ECLDIR, and that fixes the problem.  Maybe we just broken setting it somewhere?   Or?
 
-wstein`@`sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ export ECLDIR=`pwd`
-wstein`@`sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ ecl
+wstein@sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ export ECLDIR=`pwd`
+wstein@sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ ecl
 [works]
 
-wstein`@`sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ sage
+wstein@sage:~/build/sage-4.1.2.rc1.alpha2.moved/local/lib/ecl-9.8.4$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

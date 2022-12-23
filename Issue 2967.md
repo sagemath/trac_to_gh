@@ -1,6 +1,6 @@
 # Issue 2967: Debian package lcalc spkg fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2967
 
 Original creator: tabbott
 

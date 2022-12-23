@@ -1,6 +1,6 @@
 # Issue 2455: [with patch, needs review] improve documentation for multivariate polynomial ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2455
 
 Original creator: malb
 

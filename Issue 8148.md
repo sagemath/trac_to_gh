@@ -1,6 +1,6 @@
 # Issue 8148: looking at the dual of a poset: IndexError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8148
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 4039: choose one name for  partial fraction decompositions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4039
 
 Original creator: jason
 

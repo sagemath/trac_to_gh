@@ -1,6 +1,6 @@
 # Issue 9778: Grotzsch graph and Mycielski graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9779
 
 Original creator: edward.scheinerman
 
@@ -144,7 +144,7 @@ I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject
 ```diff
 --- graph_generators.py
 +++ graph_generators.py
-`@``@` -196,6 +199,8 `@``@`
+@@ -196,6 +199,8 @@
  - Harald Schilly and Yann Laigle-Chapuy (2010-03-24): added Fibonacci Tree
  
  - Jason Grout (2010-06-04): cospectral_graphs

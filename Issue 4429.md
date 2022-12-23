@@ -1,6 +1,6 @@
 # Issue 4429: notebook -- wrong display of message " Please enable cookies and try again."
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4429
 
 Original creator: was
 

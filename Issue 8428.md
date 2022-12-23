@@ -1,6 +1,6 @@
 # Issue 8428: Problem with rational_points over plane curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8428
 
 Original creator: cturner
 

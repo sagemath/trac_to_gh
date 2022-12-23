@@ -1,6 +1,6 @@
 # Issue 8869: float(CDF(1)) should return 1.0, not throw an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8869
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 7408: Improve the speed of RSK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7408
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 2633: Notebook tweaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2633
 
 Original creator: dunfield
 

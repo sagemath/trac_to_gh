@@ -1,6 +1,6 @@
 # Issue 1761: Graphviz output for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1761
 
 Original creator: boothby
 

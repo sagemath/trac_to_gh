@@ -1,6 +1,6 @@
 # Issue 2502: [with patch, needs review] doctest coverage for finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2502
 
 Original creator: malb
 

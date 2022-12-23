@@ -1,6 +1,6 @@
 # Issue 7621: usability issues with MIP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7621
 
 Original creator: malb
 

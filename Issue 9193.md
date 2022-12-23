@@ -1,6 +1,6 @@
 # Issue 9193: Proveable computation of L-functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9193
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 7303: Nash-William theorem on orientation of graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7303
 
 Original creator: ncohen
 

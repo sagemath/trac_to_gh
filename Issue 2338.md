@@ -1,6 +1,6 @@
 # Issue 2338: [with patch, needs review] add p.lexLmDeg to PolyBoRi polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2338
 
 Original creator: malb
 

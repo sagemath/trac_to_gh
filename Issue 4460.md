@@ -1,6 +1,6 @@
 # Issue 4460: add link to PDF manuals in doc/html/index.html
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4460
 
 Original creator: schilly
 

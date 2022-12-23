@@ -1,6 +1,6 @@
 # Issue 5034: stupid output of sage -br:  "using n cpus"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5034
 
 Original creator: was
 

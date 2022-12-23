@@ -1,6 +1,6 @@
 # Issue 6294: lisp command in sage is now totally broken (because of ecl switch)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6294
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  awebb
 
 
 ```
-wstein`@`bsd:~/build/sage-4.0.2.alpha3$ ./sage
+wstein@bsd:~/build/sage-4.0.2.alpha3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: lisp.eval('(+ 2 3)')

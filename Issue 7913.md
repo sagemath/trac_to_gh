@@ -1,6 +1,6 @@
 # Issue 7913: extraneous output after deprecation warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7913
 
 Original creator: cremona
 
@@ -43,7 +43,7 @@ sqrt(3)
 
 
 ```
-sage: Polyhedron(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro)).union( Polyhedron(vertices=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)) )
+sage: Polyhedron(vertices=[[0]]).union( Polyhedron(vertices=[[1]]) )
 /home/mjo/src/sage-5.0.beta1/local/bin/sage-ipython:1: DeprecationWarning: (Since Sage Version 4.4.4) The function union is replaced by convex_hull.
   #!/usr/bin/env python
 A 1-dimensional polyhedron in QQ^1 defined as the convex hull of 2 vertices.

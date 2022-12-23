@@ -1,6 +1,6 @@
 # Issue 8798: Duplicate version of feedback_arc_set and feedback_vertex_set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8798
 
 Original creator: ncohen
 

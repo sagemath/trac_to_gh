@@ -1,6 +1,6 @@
 # Issue 3058: coercing a vector to symbolic entries doesn't work when the vector's parent has a user-defined basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3058
 
 Original creator: jason
 
@@ -12,7 +12,7 @@ The title is what I think is the real issue here:
 
 
 ```
-sage: a=(QQ3).subspace([This is the Trac macro *1,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,1-macro))
+sage: a=(QQ3).subspace([[1,0,1]])
 sage: b=a.basis()[0]
 sage: b/b.norm()
 ---------------------------------------------------------------------------
@@ -58,7 +58,7 @@ This seems fixed now (in 3.2.1).  However there are other similar issues, like:
 
 
 ```
-sage: a=(QQ^3).subspace([This is the Trac macro *1,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,1-macro))
+sage: a=(QQ^3).subspace([[1,0,1]])
 sage: b=a.basis()[0]
 sage: b/b.norm()
 (1/sqrt(2), 0, 1/sqrt(2))
@@ -118,7 +118,7 @@ This looks good with 4.0.1.rc1:
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
-sage: sage: a=(QQ^3).subspace([This is the Trac macro *1,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,1-macro))
+sage: sage: a=(QQ^3).subspace([[1,0,1]])
 sage: sage: b=a.basis()[0]
 sage: %time b/b.norm()
 CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s

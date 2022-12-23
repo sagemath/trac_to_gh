@@ -1,6 +1,6 @@
 # Issue 1496: notebook -- make it easy to link different worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1496
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  embray
 ```
 
 
-On Dec 13, 2007 12:31 PM, greg2k4 <greg2k4`@`mail.ru> wrote:
+On Dec 13, 2007 12:31 PM, greg2k4 <greg2k4@mail.ru> wrote:
 > 
 > Hi,
 > 

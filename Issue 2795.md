@@ -1,6 +1,6 @@
 # Issue 2795: [with patch,needs review] QuotientRing -> Magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2795
 
 Original creator: malb
 

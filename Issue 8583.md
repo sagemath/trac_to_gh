@@ -1,6 +1,6 @@
 # Issue 8583: Add guidelines for updating standard packages.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8583
 
 Original creator: drkirkby
 

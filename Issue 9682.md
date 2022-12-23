@@ -1,6 +1,6 @@
 # Issue 9682: fix a bug in message error in perfect mathings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9682
 
 Original creator: vferay
 

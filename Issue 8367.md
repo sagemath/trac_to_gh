@@ -1,6 +1,6 @@
 # Issue 8367: element_class of Subsets is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8367
 
 Original creator: giraudo
 

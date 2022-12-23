@@ -1,6 +1,6 @@
 # Issue 6567: function to test whether or not some integer is a primitive root modulo n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6567
 
 Original creator: mvngu
 

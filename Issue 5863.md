@@ -1,6 +1,6 @@
 # Issue 5863: [with patch, needs review] remove some files from sage/algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5863
 
 Original creator: jhpalmieri
 

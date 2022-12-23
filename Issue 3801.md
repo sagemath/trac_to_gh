@@ -1,6 +1,6 @@
 # Issue 3801: [with patch, needs review] Spring layout for posets!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3801
 
 Original creator: rlm
 

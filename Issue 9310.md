@@ -1,6 +1,6 @@
 # Issue 9310: sage-4.4.4.alpha1 blocker -- random doctest failure on menas (skynet)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9310
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  vbraun
 
 ```
 
-wstein`@`menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long "devel/sage/sage/groups/matrix_gps/matrix_group.py"
+wstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long "devel/sage/sage/groups/matrix_gps/matrix_group.py"
 sage -t -long "devel/sage/sage/groups/matrix_gps/matrix_group.py"
 **********************************************************************
 File "/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py", line 647:
@@ -73,9 +73,9 @@ Comment by was created at 2010-06-22 15:01:08
 
 ```
 
-wstein`@`menas:~/screen/menas/sage-4.4.4.alpha1> uname -a
+wstein@menas:~/screen/menas/sage-4.4.4.alpha1> uname -a
 Linux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux
-wstein`@`menas:~/screen/menas/sage-4.4.4.alpha1> cat /etc/issue
+wstein@menas:~/screen/menas/sage-4.4.4.alpha1> cat /etc/issue
 Welcome to openSUSE 11.1 - Kernel \r (\l).
 ```
 
@@ -88,7 +88,7 @@ Comment by was created at 2010-06-22 15:29:25
 Note -- In sage-4.4.1 on the same computer, the file doctests fine.  The only diff between the files is:
 
 ```
-wstein`@`menas:~/screen/menas/sage-4.4.1> diff devel/sage/sage/groups/matrix_gps/matrix_group.py ../sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py|more
+wstein@menas:~/screen/menas/sage-4.4.1> diff devel/sage/sage/groups/matrix_gps/matrix_group.py ../sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py|more
 330a331,351
 >     def is_abelian(self):
 >         r"""

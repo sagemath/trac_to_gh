@@ -1,6 +1,6 @@
 # Issue 2802: Sage 3.0.alpha1: sage/misc/inline_fortran.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2802
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3113: Major segfault related to modular symbols and pickling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3113
 
 Original creator: was
 
@@ -101,7 +101,7 @@ sage: ranks(11)
 11 0 1 False
 sage: ranks(11)
 *** glibc detected *** realloc(): invalid size: 0x00007fffef1a3ba0 ***
-/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin/sage-sage: line 214: 15662 Aborted                 sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin/sage-sage: line 214: 15662 Aborted                 sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 Poking around!
@@ -151,7 +151,7 @@ loaded pickled object
 foo
 bar
 *** glibc detected *** realloc(): invalid size: 0x00007fffa25d3f90 ***
-/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin/sage-sage: line 214: 12788 Aborted                 sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin/sage-sage: line 214: 12788 Aborted                 sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 wjp saw the following under valgrind:
@@ -307,7 +307,7 @@ Here's the diff that would do that:
 diff -r 0a4213d9da78 sage/modules/free_module.py
 --- a/sage/modules/free_module.py       Tue May 06 10:12:53 2008 -0700
 +++ b/sage/modules/free_module.py       Tue May 06 17:06:36 2008 -0700
-`@``@` -2784,6 +2784,8 `@``@` class FreeModule_ambient(FreeModule_gene
+@@ -2784,6 +2784,8 @@ class FreeModule_ambient(FreeModule_gene
          if not isinstance(other, FreeModule_generic):
              return cmp(type(self), type(other))
          if isinstance(other, FreeModule_ambient):
@@ -316,7 +316,7 @@ diff -r 0a4213d9da78 sage/modules/free_module.py
              c = cmp(self.rank(), other.rank())
              if c: return c
              c = cmp(self.base_ring(), other.base_ring())
-`@``@` -3344,6 +3346,8 `@``@` class FreeModule_submodule_with_basis_pi
+@@ -3344,6 +3346,8 @@ class FreeModule_submodule_with_basis_pi
              return 0
          if not isinstance(other, FreeModule_generic):
              return cmp(type(self), type(other))

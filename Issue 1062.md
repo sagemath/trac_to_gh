@@ -1,6 +1,6 @@
 # Issue 1062: gp interface help should use extended help text (from "??")
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1062
 
 Original creator: cwitty
 

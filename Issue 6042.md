@@ -1,6 +1,6 @@
 # Issue 6042: Bring doctests of modular/modsym/ambient.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6042
 
 Original creator: cremona
 
@@ -32,7 +32,7 @@ This is just sickening.  I must have spent over 10 hours in the last week docume
 
 
 ```
-john`@`ubuntu%sage -hg qpush
+john@ubuntu%sage -hg qpush
 applying trac_6042.patch
 patching file sage/modular/modsym/ambient.py
 Hunk #17 FAILED at 800

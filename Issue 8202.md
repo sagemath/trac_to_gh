@@ -1,6 +1,6 @@
 # Issue 8202: Allow raw HTML in jsMath's \hbox{}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8202
 
 Original creator: mpatel
 

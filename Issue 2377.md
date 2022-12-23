@@ -1,6 +1,6 @@
 # Issue 2377: [with patch, needs review] Bugfix for the new __copy__ method of SingularElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2377
 
 Original creator: SimonKing
 

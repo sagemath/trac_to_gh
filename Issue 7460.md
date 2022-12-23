@@ -1,6 +1,6 @@
 # Issue 7460: numerical noise on itanium (iras)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7460
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-wstein`@`iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
+wstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
 sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
 **********************************************************************
 File "/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst", line 137:
@@ -41,7 +41,7 @@ Comment by was created at 2009-11-14 18:11:55
 With the attached patch:
 
 ```
-wstein`@`iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
+wstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst"
 sage -t -long "devel/sage/doc/en/numerical_sage/cvxopt.rst" 
          [3.7 s]
  

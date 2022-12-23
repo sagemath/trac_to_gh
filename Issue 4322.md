@@ -1,6 +1,6 @@
 # Issue 4322: modular polynomials database is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4322
 
 Original creator: AlexGhitza
 

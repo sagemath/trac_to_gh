@@ -1,6 +1,6 @@
 # Issue 3807: [with patch, needs review] Fix gcc 4.3 issues in David Harvey Bernoulli modp code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3807
 
 Original creator: mabshoff
 

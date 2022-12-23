@@ -1,6 +1,6 @@
 # Issue 7214: Spanish doc #2 "Three Lectures about Explicit Methods in Number Theory Using Sage"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7214
 
 Original creator: Loufer
 

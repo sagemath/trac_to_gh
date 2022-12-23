@@ -1,6 +1,6 @@
 # Issue 3388: Fix gmp 4.2.2 speed regression on Core2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3388
 
 Original creator: mabshoff
 

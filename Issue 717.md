@@ -1,6 +1,6 @@
 # Issue 717: sage -t timeout stuff works poorly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/717
 
 Original creator: was
 

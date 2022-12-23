@@ -1,6 +1,6 @@
 # Issue 9223: improve doctest coverage of databases/cremona.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9223
 
 Original creator: AlexGhitza
 

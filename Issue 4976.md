@@ -1,6 +1,6 @@
 # Issue 4976: [with patch, needs review] fill option for plot, polar_plot and parametric_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4976
 
 Original creator: whuss
 

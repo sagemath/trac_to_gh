@@ -1,6 +1,6 @@
 # Issue 2143: [with patch, needs review] wrap scipy optimization routines and cvxopt linear programming, add gradient/hessian to calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2143
 
 Original creator: jkantor
 

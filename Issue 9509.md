@@ -1,6 +1,6 @@
 # Issue 9509: graphs() should give you graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9509
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 5864: Correctly inherit build environment in eclib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5864
 
 Original creator: pjeremy
 

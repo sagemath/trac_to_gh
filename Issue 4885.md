@@ -1,6 +1,6 @@
 # Issue 4885: fix fallout from sloppy review of 4535
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4885
 
 Original creator: was
 

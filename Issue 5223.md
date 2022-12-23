@@ -1,6 +1,6 @@
 # Issue 5223: [with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5223
 
 Original creator: was
 
@@ -49,7 +49,7 @@ Comment by mabshoff created at 2009-02-10 07:13:23
 This patch causes the following doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py
 sage -t -long "devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py", line 592:

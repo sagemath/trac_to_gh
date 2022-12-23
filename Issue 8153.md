@@ -1,6 +1,6 @@
 # Issue 8153: [with patch] typo in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8153
 
 Original creator: zimmerma
 

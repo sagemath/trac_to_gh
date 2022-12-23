@@ -1,6 +1,6 @@
 # Issue 6012: [with patch, needs review] allow use of pdflatex instead of latex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6012
 
 Original creator: jhpalmieri
 

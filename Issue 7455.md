@@ -1,6 +1,6 @@
 # Issue 7455: SageNB - Searching on Log page does not work.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7455
 
 Original creator: timdumol
 

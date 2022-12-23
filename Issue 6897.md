@@ -1,6 +1,6 @@
 # Issue 6897: Migrate Notebook to Django
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6897
 
 Original creator: timdumol
 

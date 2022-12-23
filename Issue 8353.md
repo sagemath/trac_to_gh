@@ -1,6 +1,6 @@
 # Issue 8353: Adding height() and width() functions to square grid paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8353
 
 Original creator: abmasse
 

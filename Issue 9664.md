@@ -1,6 +1,6 @@
 # Issue 9664: Graphical representation of fans
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9664
 
 Original creator: vbraun
 

@@ -1,6 +1,6 @@
 # Issue 9332: S_class_group() should return a group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9332
 
 Original creator: stankewicz
 

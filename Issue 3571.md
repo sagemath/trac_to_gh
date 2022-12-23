@@ -1,6 +1,6 @@
 # Issue 3571: ivalue field in integer_mod.pyx shouldn't be public
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3571
 
 Original creator: craigcitro
 

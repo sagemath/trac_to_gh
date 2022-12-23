@@ -1,6 +1,6 @@
 # Issue 5724: [with patch; needs review] get coverage of quotient_ring_element.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5724
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8670: Provide projections methods for word paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8670
 
 Original creator: slabbe
 

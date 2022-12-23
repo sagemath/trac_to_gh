@@ -1,6 +1,6 @@
 # Issue 3929: Merge the max-flow min-cut code from Scott Clifford and Jerin Schneider
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3929
 
 Original creator: jason
 

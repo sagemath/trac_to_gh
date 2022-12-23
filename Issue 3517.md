@@ -1,6 +1,6 @@
 # Issue 3517: "sage -upgrade" does not upgrade $SAGE_ROOT/sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3517
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3340: update givaro to 3.2.10 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3340
 
 Original creator: tabbott
 

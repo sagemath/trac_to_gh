@@ -1,6 +1,6 @@
 # Issue 2420: [with patch, needs review] Extending the gap interface to uni- and multivariate polynomial rings over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2420
 
 Original creator: SimonKing
 

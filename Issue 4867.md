@@ -1,6 +1,6 @@
 # Issue 4867: optional gcc-4.2.1.spkg doesn't build on sage.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4867
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6036: a bug in polynomial()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6036
 
 Original creator: klee
 

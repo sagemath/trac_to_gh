@@ -1,6 +1,6 @@
 # Issue 6771: speed up pynac --> polynomials conversion, since it is really slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6771
 
 Original creator: was
 

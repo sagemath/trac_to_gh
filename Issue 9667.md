@@ -1,6 +1,6 @@
 # Issue 9667: Use PARI's hash_GEN() for gen.__hash__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9667
 
 Original creator: jdemeyer
 

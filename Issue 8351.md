@@ -1,6 +1,6 @@
 # Issue 8351: ratpoints-2.1.3.p0 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8351
 
 Original creator: jsp
 

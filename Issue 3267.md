@@ -1,6 +1,6 @@
 # Issue 3267: Sage 3.0.2.alpha1: doctest failure in sage/server/support.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3267
 
 Original creator: mabshoff
 

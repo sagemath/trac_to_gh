@@ -1,6 +1,6 @@
 # Issue 8522: Optional package  libcocoa openmpi-1.1.4 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8522
 
 Original creator: drkirkby
 

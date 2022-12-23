@@ -1,6 +1,6 @@
 # Issue 2025: bug in applying functions to a symbolic matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2025
 
 Original creator: was
 

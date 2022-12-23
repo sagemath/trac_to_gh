@@ -1,6 +1,6 @@
 # Issue 5262: L-series attached to modular forms has a major bug in how it computes the sign of the functional equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5262
 
 Original creator: was
 

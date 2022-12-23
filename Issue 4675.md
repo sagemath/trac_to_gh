@@ -1,6 +1,6 @@
 # Issue 4675: Get Josh Kantor's "Numerical Computing with SAGE" into the Sage documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4675
 
 Original creator: mabshoff
 

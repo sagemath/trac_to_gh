@@ -1,6 +1,6 @@
 # Issue 4344: notebook -- template the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4344
 
 Original creator: TimothyClemans
 

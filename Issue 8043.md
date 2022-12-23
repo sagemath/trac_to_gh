@@ -1,6 +1,6 @@
 # Issue 8043: #7544 breaks #7355: "sage -i foo" does not automatically find the version number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8043
 
 Original creator: ddrake
 

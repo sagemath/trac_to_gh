@@ -1,6 +1,6 @@
 # Issue 2701: simple bug fixed for linear_codes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2701
 
 Original creator: wdj
 

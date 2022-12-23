@@ -1,6 +1,6 @@
 # Issue 4981: [with patch, needs review] clean up polynomial_ring.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4981
 
 Original creator: burcin
 
@@ -29,7 +29,7 @@ Comment by mabshoff created at 2009-01-19 03:28:43
 This patch causes the following trivial to fix doctest failure:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha0$ ./sage -t -long devel/sage/sage/calculus/calculus.py
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha0$ ./sage -t -long devel/sage/sage/calculus/calculus.py
 sage -t -long "devel/sage/sage/calculus/calculus.py"        
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py", line 1912:
@@ -80,7 +80,7 @@ Comment by mabshoff created at 2009-01-23 02:41:08
 Unfortunately this has been broken due to other merges, probably #4965:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha1/devel/sage$ patch -p1 < trac_4981_polynomial_ring.patch 
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1/devel/sage$ patch -p1 < trac_4981_polynomial_ring.patch 
 patching file sage/calculus/calculus.py
 patching file sage/misc/classgraph.py
 patching file sage/rings/polynomial/polynomial_ring.py

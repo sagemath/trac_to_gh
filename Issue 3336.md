@@ -1,6 +1,6 @@
 # Issue 3336: DyckWords(n) should use an iterator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3336
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 6377: exp(x) is broken at x=Infinity and x=-Infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6377
 
 Original creator: gmhossain
 

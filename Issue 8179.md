@@ -1,6 +1,6 @@
 # Issue 8179: configure Mercurial to ignore two binaries by cddlib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8179
 
 Original creator: mvngu
 
@@ -13,9 +13,9 @@ CC:  vbraun mhampton
 The package cddlib-094f.p?.spkg places two new binaries under the directory $SAGE_LOCAL/bin, in particular:
 
 ```
-[mvngu`@`mod bin]$ pwd
+[mvngu@mod bin]$ pwd
 /scratch/mvngu/release/sage-4.3.2.alpha1/local/bin
-[mvngu`@`mod bin]$ hg st
+[mvngu@mod bin]$ hg st
 ? cdd_both_reps
 ? cdd_both_reps_gmp
 ```

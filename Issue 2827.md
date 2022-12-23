@@ -1,6 +1,6 @@
 # Issue 2827: sage -notebook does not handle options passed to it correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2827
 
 Original creator: mhansen
 

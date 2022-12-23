@@ -1,6 +1,6 @@
 # Issue 6029: [with patch, needs review] bug in floor() for python types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6029
 
 Original creator: robertwb
 

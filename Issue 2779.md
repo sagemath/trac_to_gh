@@ -1,6 +1,6 @@
 # Issue 2779: Error message for notebook server already running is misleading
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2779
 
 Original creator: justin
 

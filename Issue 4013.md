@@ -1,6 +1,6 @@
 # Issue 4013: notebook -- first cell of a new worksheet should be apart of the class "cell_not_evaluated"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4013
 
 Original creator: TimothyClemans
 

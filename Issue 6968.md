@@ -1,6 +1,6 @@
 # Issue 6968: improve _vector_times_matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6968
 
 Original creator: ylchapuy
 

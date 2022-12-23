@@ -1,6 +1,6 @@
 # Issue 917: [with patch] Matrix.minors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/917
 
 Original creator: malb
 

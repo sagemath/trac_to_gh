@@ -1,6 +1,6 @@
 # Issue 1331: [with patch] 2.8.14/Solaris: fix complex_double doctest  - numerical noise
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1331
 
 Original creator: mabshoff
 

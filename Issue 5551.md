@@ -1,6 +1,6 @@
 # Issue 5551: Permutation from a pair of standard tableaux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5551
 
 Original creator: slabbe
 
@@ -202,7 +202,7 @@ Finally, my third remark is that you should raise a `ValueError` with a proper e
 
 
 ```
-sage: permutation.from_tableaux(Tableau([This is the Trac macro *1,2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3-macro)), Tableau([This is the Trac macro *1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2-macro)))
+sage: permutation.from_tableaux(Tableau([[1,2,3]]), Tableau([[1,2]]))
 ---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
 

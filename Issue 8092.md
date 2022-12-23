@@ -1,6 +1,6 @@
 # Issue 8092: init.sage not attached in worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8092
 
 Original creator: mpatel
 

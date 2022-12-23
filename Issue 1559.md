@@ -1,6 +1,6 @@
 # Issue 1559: repeated loading of cython file with home on NFS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1559
 
 Original creator: wjp
 

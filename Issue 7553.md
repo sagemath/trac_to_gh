@@ -1,6 +1,6 @@
 # Issue 7553: document exactly where SAGE_FORTRAN is used
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7553
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2949: change slightly the docstring for assume (utterly trivial)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2949
 
 Original creator: was
 

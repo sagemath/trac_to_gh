@@ -1,6 +1,6 @@
 # Issue 8676: document breadth-first and depth-first search methods of C graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8676
 
 Original creator: mvngu
 

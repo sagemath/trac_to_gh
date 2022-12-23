@@ -1,6 +1,6 @@
 # Issue 9698: Hamiltonian cycles in undirected graphs - backtracking algorithm.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9698
 
 Original creator: fidelbarrera
 

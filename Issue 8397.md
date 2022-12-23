@@ -1,6 +1,6 @@
 # Issue 8397: devel/sage/sage/graphs/graph_list.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8397
 
 Original creator: drkirkby
 

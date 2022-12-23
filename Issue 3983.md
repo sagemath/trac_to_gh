@@ -1,6 +1,6 @@
 # Issue 3983: [with patch, needs review] get coverage for sage/interfaces/sage0.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3983
 
 Original creator: mhansen
 

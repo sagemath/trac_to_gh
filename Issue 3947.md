@@ -1,6 +1,6 @@
 # Issue 3947: readline and ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3947
 
 Original creator: dphilp
 

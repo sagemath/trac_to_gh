@@ -1,6 +1,6 @@
 # Issue 920: integrate doesn't handle divergent case correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/920
 
 Original creator: jason
 

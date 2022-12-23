@@ -1,6 +1,6 @@
 # Issue 9225: Indicate progress and elapsed time when running multiple doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9225
 
 Original creator: mpatel
 

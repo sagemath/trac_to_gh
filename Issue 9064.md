@@ -1,6 +1,6 @@
 # Issue 9064: remove p-adic matrix directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9064
 
 Original creator: was
 
@@ -36,7 +36,7 @@ flat:matrix wstein$ hg export ip
 abort: unknown revision 'ip'!
 flat:matrix wstein$ hg export tip
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1281549848 25200
 # Node ID 029114d1f8a76cbd4d88b2a9a28fecadac170205
 # Parent  5b338f2e484f2065d3d30d47bc204d6e9ed13d12

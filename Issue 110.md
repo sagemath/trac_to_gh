@@ -1,6 +1,6 @@
 # Issue 110: srange should accept negative step value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/110
 
 Original creator: dmharvey
 

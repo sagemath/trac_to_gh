@@ -1,6 +1,6 @@
 # Issue 9266: bug in global_integral_model for Elliptic Curves over Number Fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9266
 
 Original creator: wuthrich
 

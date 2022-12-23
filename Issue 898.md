@@ -1,6 +1,6 @@
 # Issue 898: [with patch] ntl.GF2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/898
 
 Original creator: malb
 

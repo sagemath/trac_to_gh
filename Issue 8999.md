@@ -1,6 +1,6 @@
 # Issue 8999: sage-4.4.2 test "groups/matrix_gps/matrix_group.py" fails on x86_64-Linux-nehalem-fc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8999
 
 Original creator: mariah
 

@@ -1,6 +1,6 @@
 # Issue 1809: [with patch] refactoring to improve finite field reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1809
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 2320: sage -server, sage -worker, sage -dsage broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2320
 
 Original creator: yi
 

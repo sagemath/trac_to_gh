@@ -1,6 +1,6 @@
 # Issue 7056: Fix build issues so Sage builds with the Sun Studio Compiler suite.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7056
 
 Original creator: drkirkby
 

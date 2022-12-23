@@ -1,6 +1,6 @@
 # Issue 2172: sage -sdist loses debian build infrastructure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2172
 
 Original creator: mabshoff
 

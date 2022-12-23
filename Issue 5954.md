@@ -1,6 +1,6 @@
 # Issue 5954: Added documentation/doctests for all quadratic form genus symbol routines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5954
 
 Original creator: jonhanke
 

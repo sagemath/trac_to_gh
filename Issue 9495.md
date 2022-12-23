@@ -1,6 +1,6 @@
 # Issue 9495: Incomplete plot of EllipticCurve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9495
 
 Original creator: schilly
 

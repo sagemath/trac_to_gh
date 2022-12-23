@@ -1,6 +1,6 @@
 # Issue 1933: libgpg_error-1.6.spkg borken make install for parallel make
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1933
 
 Original creator: mabshoff
 

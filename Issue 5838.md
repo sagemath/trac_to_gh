@@ -1,6 +1,6 @@
 # Issue 5838: crash in Singular's polynomial gcd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5838
 
 Original creator: cwitty
 
@@ -31,7 +31,7 @@ sage: sage.structure.sage_object.unpickle_all(std)
 Successfully unpickled 483 objects.
 Failed to unpickle 0 objects.
 sage: sage.structure.sage_object.unpickle_all(std)
-/home/cwitty/sage-3.4.1.rc3/local/bin/sage-sage: line 198: 22270 Aborted                 sage-ipython "$`@`" -i
+/home/cwitty/sage-3.4.1.rc3/local/bin/sage-sage: line 198: 22270 Aborted                 sage-ipython "$@" -i
 ```
 
 
@@ -47,27 +47,27 @@ The first section of the backtrace is:
     s=0x7fc7bc97def1 "InvMod: inverse undefined") at tools.c:38
 #4  0x00007fc7bc88ebd9 in NTL::InvMod (a=<value optimized out>, n=244)
     at ZZ.c:351
-#5  0x00007fc7bc90545f in NTL::PlainRem (r=`@`0x7fffca29e230, a=`@`0x7fffca29e230, 
-    b=`@`0x6) at ../include/NTL/lzz_p.h:278
-#6  0x00007fc7bc9140bb in NTL::GCD (d=`@`0x7fffca29e360, 
-    u=<value optimized out>, v=`@`0x7fffca29e390) at lzz_pX1.c:558
-#7  0x00007fc7a963206a in gcd_poly_p (f=`@`0x7fffca29e9e0, g=`@`0x7fffca29e9d0)
+#5  0x00007fc7bc90545f in NTL::PlainRem (r=@0x7fffca29e230, a=@0x7fffca29e230, 
+    b=@0x6) at ../include/NTL/lzz_p.h:278
+#6  0x00007fc7bc9140bb in NTL::GCD (d=@0x7fffca29e360, 
+    u=<value optimized out>, v=@0x7fffca29e390) at lzz_pX1.c:558
+#7  0x00007fc7a963206a in gcd_poly_p (f=@0x7fffca29e9e0, g=@0x7fffca29e9d0)
     at /home/cwitty/sage-3.4.1.rc3/local/include/NTL/lzz_pX.h:696
-#8  0x00007fc7a9633835 in gcd_poly (f=<value optimized out>, g=`@`0x7fffca29ee50)
+#8  0x00007fc7a9633835 in gcd_poly (f=<value optimized out>, g=@0x7fffca29ee50)
     at cf_gcd.cc:538
-#9  0x00007fc7a963401e in gcd (f=`@`0x7fffca29ee60, g=`@`0x7fffca29ee50)
+#9  0x00007fc7a963401e in gcd (f=@0x7fffca29ee60, g=@0x7fffca29ee50)
     at cf_gcd.cc:776
-#10 0x00007fc7a9634601 in gcd_test_one (f=`@`0x7fffca29f3b0, g=`@`0x7fffca29f3c0, 
+#10 0x00007fc7a9634601 in gcd_test_one (f=@0x7fffca29f3b0, g=@0x7fffca29f3c0, 
     swap=true) at cf_gcd.cc:76
-#11 0x00007fc7a9631b70 in gcd_poly_p (f=`@`0x7fffca29f7b0, g=`@`0x7fffca29f7a0)
+#11 0x00007fc7a9631b70 in gcd_poly_p (f=@0x7fffca29f7b0, g=@0x7fffca29f7a0)
     at cf_gcd.cc:353
-#12 0x00007fc7a963373d in gcd_poly (f=<value optimized out>, g=`@`0x7fffca29fbb0)
+#12 0x00007fc7a963373d in gcd_poly (f=<value optimized out>, g=@0x7fffca29fbb0)
     at cf_gcd.cc:543
 #13 0x00007fc7a9635d89 in chinrem_gcd (FF=<value optimized out>, 
     GG=<value optimized out>) at cf_gcd.cc:1088
-#14 0x00007fc7a96337e1 in gcd_poly (f=<value optimized out>, g=`@`0x7fffca2a0560)
+#14 0x00007fc7a96337e1 in gcd_poly (f=<value optimized out>, g=@0x7fffca2a0560)
     at cf_gcd.cc:601
-#15 0x00007fc7a963401e in gcd (f=`@`0x7fffca2a0550, g=`@`0x7fffca2a0560)
+#15 0x00007fc7a963401e in gcd (f=@0x7fffca2a0550, g=@0x7fffca2a0560)
     at cf_gcd.cc:776
 #16 0x00007fc7a94a69f8 in singclap_gcd (f=0x7fc7a930b198, g=0x7fc7a930b058)
     at clapsing.cc:230

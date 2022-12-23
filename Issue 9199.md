@@ -1,6 +1,6 @@
 # Issue 9199: plot(..., fill=False) still turns on filling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9199
 
 Original creator: jason
 

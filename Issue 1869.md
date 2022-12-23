@@ -1,6 +1,6 @@
 # Issue 1869: Implement show(list(graphs(n))) et al
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1869
 
 Original creator: rlm
 

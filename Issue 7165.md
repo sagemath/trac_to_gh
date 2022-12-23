@@ -1,6 +1,6 @@
 # Issue 7165: an other bug in plot, real_part, imaginary_part and sqrt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7165
 
 Original creator: fmaltey
 

@@ -1,6 +1,6 @@
 # Issue 2085: [with patch, needs review] bug in graph_isom and binary_code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2085
 
 Original creator: rlm
 

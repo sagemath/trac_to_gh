@@ -1,6 +1,6 @@
 # Issue 3096: [with patch, needs review] Fix documentation rebuild issues for Sage 3.0.1.final
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3096
 
 Original creator: mabshoff
 

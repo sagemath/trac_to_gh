@@ -1,6 +1,6 @@
 # Issue 8084: fix "show" in the notebook for strings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8084
 
 Original creator: jhpalmieri
 

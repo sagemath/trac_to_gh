@@ -1,6 +1,6 @@
 # Issue 4751: if spkg/standard contains an extracted directory then "sage -upgrade" fails in multiple ways
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4751
 
 Original creator: was
 
@@ -14,7 +14,7 @@ Assignee: mabshoff
     if 'Placeholder spkg file' in open(F).readline():
 IOError: [Errno 21] Is a directory
 Error getting new packages!
-was`@`sage:~/build/sage-3.2.2.alpha0$ 
+was@sage:~/build/sage-3.2.2.alpha0$ 
 ```
 
 

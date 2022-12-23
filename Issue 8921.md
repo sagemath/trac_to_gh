@@ -1,6 +1,6 @@
 # Issue 8921: Extend cross product to 7d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8921
 
 Original creator: bwonderly
 

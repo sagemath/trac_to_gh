@@ -1,6 +1,6 @@
 # Issue 1058: the mwrank interface barfs on bad input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1058
 
 Original creator: moretti
 

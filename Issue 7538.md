@@ -1,6 +1,6 @@
 # Issue 7538: equality of posets is broken !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7538
 
 Original creator: hivert
 
@@ -19,7 +19,7 @@ sage: p1 = Posets(2)[0]; p2 = Posets(2)[1]
 sage: p1.cover_relations()
 []
 sage: p2.cover_relations()
-[This is the Trac macro *0, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1-macro)
+[[0, 1]]
 sage: p1 == p2
 True
 ```

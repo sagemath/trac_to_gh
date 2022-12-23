@@ -1,6 +1,6 @@
 # Issue 3003: Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3003
 
 Original creator: jbandlow
 

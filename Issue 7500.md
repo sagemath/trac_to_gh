@@ -1,6 +1,6 @@
 # Issue 7500: Escape & (ampersand) in uploaded/created data file names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7500
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 2902: notebook -- resize of cell should also fire on paste into the cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2902
 
 Original creator: was
 

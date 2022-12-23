@@ -1,6 +1,6 @@
 # Issue 1838: [with patch] comma in latex lists need a trailing space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1838
 
 Original creator: schilly
 

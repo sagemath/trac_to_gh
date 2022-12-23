@@ -1,6 +1,6 @@
 # Issue 7546: Update Mac OS X app and icon
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7546
 
 Original creator: iandrus
 

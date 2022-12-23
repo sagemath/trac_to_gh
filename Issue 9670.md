@@ -1,6 +1,6 @@
 # Issue 9670: Bring probability/random_variable.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9670
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 2031: serious preparser lameness involving time and comments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2031
 
 Original creator: was
 

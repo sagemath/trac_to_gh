@@ -1,6 +1,6 @@
 # Issue 6070: Get doctest coverage in sage/modular to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6070
 
 Original creator: davidloeffler
 

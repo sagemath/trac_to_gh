@@ -1,6 +1,6 @@
 # Issue 7368: Further work on isogenies and endomorphisms of elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7368
 
 Original creator: wuthrich
 

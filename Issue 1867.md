@@ -1,6 +1,6 @@
 # Issue 1867: suggested way to fix #1705 -- factoring multivariate polynomials over finite fields is broken in Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1867
 
 Original creator: was
 

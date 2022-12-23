@@ -1,6 +1,6 @@
 # Issue 7378: Subdivide edges in a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7378
 
 Original creator: ncohen
 

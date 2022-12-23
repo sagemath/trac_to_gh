@@ -1,6 +1,6 @@
 # Issue 3759: make testlong leaves all kinds of crap in SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3759
 
 Original creator: was
 

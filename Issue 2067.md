@@ -1,6 +1,6 @@
 # Issue 2067: tutorial 5.3 misformatting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2067
 
 Original creator: ljpk
 

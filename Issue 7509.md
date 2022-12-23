@@ -1,6 +1,6 @@
 # Issue 7509: notebook -- make it possible to debug Python code in the notebook, e.g., something like pdb that works in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7509
 
 Original creator: was
 
@@ -142,7 +142,7 @@ d1 = debug()
 at some point.
 
 ```
-`@`interact
+@interact
 def _(command=[None, 'up','down'], code=''):
     if command == 'up':
         d1.up()

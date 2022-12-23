@@ -1,6 +1,6 @@
 # Issue 4953: sage/misc/randstate.pyx doctest failure on menas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4953
 
 Original creator: mabshoff
 
@@ -57,7 +57,7 @@ Comment by mabshoff created at 2009-02-10 07:39:20
 This issue does no longer happen with the system gcc as well as gcc 4.3.3 with Sage 3.3.alpha6:
 
 ```
-mabshoff`@`menas:~/build-3.3.alpha6/sage-3.3.alpha6-menas-gcc433> ./sage -t -long devel/sage/sage/misc/randstate.pyx
+mabshoff@menas:~/build-3.3.alpha6/sage-3.3.alpha6-menas-gcc433> ./sage -t -long devel/sage/sage/misc/randstate.pyx
 sage -t -long "devel/sage/sage/misc/randstate.pyx"          
 	 [22.2 s]
 ```

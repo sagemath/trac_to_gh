@@ -1,6 +1,6 @@
 # Issue 2784: Doctests for rings/complex_number.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2784
 
 Original creator: cswiercz
 

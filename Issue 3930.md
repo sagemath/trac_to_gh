@@ -1,6 +1,6 @@
 # Issue 3930: Check to see if we should merge the bipartite matching code from Susan Massey
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3930
 
 Original creator: jason
 

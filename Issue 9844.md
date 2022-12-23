@@ -1,6 +1,6 @@
 # Issue 9844: lcalc doesn't build on cygwin due to missing time.h include
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9845
 
 Original creator: was
 

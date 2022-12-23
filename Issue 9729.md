@@ -1,6 +1,6 @@
 # Issue 9729: Moving the discrete fourier interact from wiki into the library.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9729
 
 Original creator: punchagan
 
@@ -75,7 +75,7 @@ def plot_bars(ls, lenght = 1):
 
 import scipy.fftpack as Fourier
 var('x')
-`@`interact
+@interact
 def discrete_fourier(f = input_box(default=sum([sin(k*x) for k in range(1,5,2)])), 
                      treshold = slider(0,0.1,0.01,0.01)):
     pbegin = -float(pi)
@@ -115,7 +115,7 @@ def plot_bars(ls, lenght = 1):
 
 import scipy.fftpack as Fourier
 var('x')
-`@`interact
+@interact
 def discrete_fourier(f = input_box(default=sum([sin(k*x) for k in range(1,5,2)])), 
                      treshold = slider(0,0.1,0.01,0.01)):
     pbegin = -float(pi)

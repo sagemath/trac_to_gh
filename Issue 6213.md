@@ -1,6 +1,6 @@
 # Issue 6213: easy addition of an alias to eta product (trivial ticket to deal with)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6213
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 58: wanted -- subsets of a set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/58
 
 Original creator: was
 
@@ -40,7 +40,7 @@ The patch below uses Mike's combinatorial stuff.
 diff -r 58095d7eaad0 sage/sets/set.py
 --- a/sage/sets/set.py  Thu Oct 25 00:59:26 2007 -0700
 +++ b/sage/sets/set.py  Thu Oct 25 16:21:12 2007 -0500
-`@``@` -472,6 +472,23 `@``@` class Set_object(Set_generic):
+@@ -472,6 +472,23 @@ class Set_object(Set_generic):
          """
          return self.__object
 

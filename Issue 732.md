@@ -1,6 +1,6 @@
 # Issue 732: graphs: enum changes behavior depending on boundary vertices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/732
 
 Original creator: jason
 

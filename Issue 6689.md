@@ -1,6 +1,6 @@
 # Issue 6689: spell-check all modules under sage/categories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6689
 
 Original creator: mvngu
 

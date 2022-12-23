@@ -1,6 +1,6 @@
 # Issue 3874: Moebius plot bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3874
 
 Original creator: kcrisman
 

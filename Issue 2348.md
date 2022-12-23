@@ -1,6 +1,6 @@
 # Issue 2348: MatrixGroup over CyclotomicField is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2348
 
 Original creator: SimonKing
 

@@ -1,6 +1,6 @@
 # Issue 8147: Add mercurial queues information to Developer Walkthrough
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8147
 
 Original creator: rbeezer
 

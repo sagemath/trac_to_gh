@@ -1,6 +1,6 @@
 # Issue 3666: pari(infinity) looks like it works, but it doesn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3666
 
 Original creator: cwitty
 

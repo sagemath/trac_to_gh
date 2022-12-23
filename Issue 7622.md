@@ -1,6 +1,6 @@
 # Issue 7622: Fix OSX plist copyright situation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7622
 
 Original creator: kcrisman
 
@@ -68,9 +68,9 @@ At least with Sage 4.3.rc0, it has a junk file which should be removed:
 
 
 ```
-[mvngu`@`sage extcode]$ pwd
+[mvngu@sage extcode]$ pwd
 /scratch/mvngu/build/sage-4.3.rc0/data/extcode
-[mvngu`@`sage extcode]$ hg st
+[mvngu@sage extcode]$ hg st
 ? sage/ext/.DS_Store.rej
 ```
 
@@ -79,8 +79,8 @@ So I removed that junk file as follows:
 
 
 ```
-[mvngu`@`sage extcode]$ rm -rf sage/ext/.DS_Store.rej
-[mvngu`@`sage extcode]$ hg st
+[mvngu@sage extcode]$ rm -rf sage/ext/.DS_Store.rej
+[mvngu@sage extcode]$ hg st
 <no output>
 ```
 

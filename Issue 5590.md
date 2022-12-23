@@ -1,6 +1,6 @@
 # Issue 5590: coercion between polynomial rings over extension fields and polynomial rings over the prime subfield
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5590
 
 Original creator: malb
 

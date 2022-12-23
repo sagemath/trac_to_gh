@@ -1,6 +1,6 @@
 # Issue 2603: implement solution_space_right and solution_space_left for solving under-determined linear systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2603
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 6349: graphs -- bug in DiGraph constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6349
 
 Original creator: was
 

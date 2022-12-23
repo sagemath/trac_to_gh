@@ -1,6 +1,6 @@
 # Issue 5866: Fix freetype build on systems where make is not GNU make.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5866
 
 Original creator: pjeremy
 

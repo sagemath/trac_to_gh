@@ -1,6 +1,6 @@
 # Issue 3635: If m is a matrix, then m.plot() should call matrix_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3635
 
 Original creator: jason
 

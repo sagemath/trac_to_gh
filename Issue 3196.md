@@ -1,6 +1,6 @@
 # Issue 3196: fix 64 bit OSX build support for R
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3196
 
 Original creator: mabshoff
 

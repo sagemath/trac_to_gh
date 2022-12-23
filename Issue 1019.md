@@ -1,6 +1,6 @@
 # Issue 1019: strange behavious in notebook with %octave
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1019
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1204: 2.8.13.alpha0: libs/cremona/constructor.py doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1204
 
 Original creator: mabshoff
 

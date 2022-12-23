@@ -1,6 +1,6 @@
 # Issue 6336: optional doctest failure -- constructions calculus tests hang forever
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6336
 
 Original creator: was
 

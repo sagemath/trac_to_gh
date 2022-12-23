@@ -1,6 +1,6 @@
 # Issue 5630: improve doctest coverage for schemes/generic/spec.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5630
 
 Original creator: AlexGhitza
 

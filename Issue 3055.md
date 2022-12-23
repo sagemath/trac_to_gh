@@ -1,6 +1,6 @@
 # Issue 3055: creating subgraph does not delete _pos entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3055
 
 Original creator: jason
 

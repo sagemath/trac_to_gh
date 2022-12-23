@@ -1,6 +1,6 @@
 # Issue 4810: qepcad-1.50 fails to build without tcsh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4810
 
 Original creator: mabshoff
 

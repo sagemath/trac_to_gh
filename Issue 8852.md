@@ -1,6 +1,6 @@
 # Issue 8852: minor doctest fix in fast_eval.pyx for Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8852
 
 Original creator: mhansen
 

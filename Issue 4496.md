@@ -1,6 +1,6 @@
 # Issue 4496: Plot doesn't allow variable outside tuple after lambda
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4496
 
 Original creator: kcrisman
 

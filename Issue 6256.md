@@ -1,6 +1,6 @@
 # Issue 6256: bug in symbolic arithmetic with exp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6256
 
 Original creator: burcin
 
@@ -45,7 +45,7 @@ Here is the fix for pynac:
 diff --git a/ginac/mul.cpp b/ginac/mul.cpp
 --- a/ginac/mul.cpp
 +++ b/ginac/mul.cpp
-`@``@` -1167,7 +1167,7 `@``@`
+@@ -1167,7 +1167,7 @@
         if (cmpval != 0) {
                 return cmpval;
         }

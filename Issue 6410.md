@@ -1,6 +1,6 @@
 # Issue 6410: optimize creation of diagonal matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6410
 
 Original creator: was
 
@@ -65,7 +65,7 @@ Comment by cremona created at 2009-06-28 15:21:35
 Sorry, Emmanuel, but you'll have to remove the accent from your name since the patch cannot be applied:
 
 ```
-john`@`ubuntu%sage -hg qpush
+john@ubuntu%sage -hg qpush
 applying diagonal_matrix.patch
 transaction abort!
 rollback completed

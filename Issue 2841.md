@@ -1,6 +1,6 @@
 # Issue 2841: maxima pukes on non-ascii filenames (terrible evil bug!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2841
 
 Original creator: was
 

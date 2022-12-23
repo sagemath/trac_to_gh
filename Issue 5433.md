@@ -1,6 +1,6 @@
 # Issue 5433: [with patch, needs review] LaTeX fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5433
 
 Original creator: jhpalmieri
 

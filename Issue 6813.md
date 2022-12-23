@@ -1,6 +1,6 @@
 # Issue 6813: [with patch, needs review] The whole world in a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6813
 
 Original creator: ncohen
 
@@ -107,7 +107,7 @@ On my machine
 On sagemath 
 
 ```
-ncohen`@`sage:~$ md5sum graph_world.sobj 
+ncohen@sage:~$ md5sum graph_world.sobj 
 438bc195a9486caebeb47442ff8b8d8c  graph_world.sobj
 ```
 

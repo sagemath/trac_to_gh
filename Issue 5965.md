@@ -1,6 +1,6 @@
 # Issue 5965: Check {{{/dev/pts}}} and {{{/dev/shm}}} requirement on linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5965
 
 Original creator: tornaria
 
@@ -270,7 +270,7 @@ diff --git a/configure.ac b/configure.ac
 index 78cc95febc..35763c77ac 100644
 --- a/configure.ac
 +++ b/configure.ac
-`@``@` -150,7 +150,21 `@``@` The Sage community would also appreciate any patches you s$
+@@ -150,7 +150,21 @@ The Sage community would also appreciate any patches you s$
 
  # The following are all supported platforms.
  *-*-freebsd*);;

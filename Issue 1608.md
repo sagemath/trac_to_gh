@@ -1,6 +1,6 @@
 # Issue 1608: jsmath fonts -- these should ship with Sage itself and be *vastly* easier to install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1608
 
 Original creator: was
 

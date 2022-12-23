@@ -1,6 +1,6 @@
 # Issue 9387: Add method for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9387
 
 Original creator: justin
 

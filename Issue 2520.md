@@ -1,6 +1,6 @@
 # Issue 2520: 2.10.4.a0: doctest failures in combinatorics after merging #2489
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2520
 
 Original creator: mabshoff
 
@@ -51,16 +51,16 @@ Got:
 File "tableau.py", line 1470:
     sage: SST.list()
 Expected:
-    [This is the Trac macro *[1, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 1-macro),
-     [This is the Trac macro *1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 2-macro),
-     [This is the Trac macro *1, 1, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 3-macro),
-     [This is the Trac macro *1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 2-macro),
-     [This is the Trac macro *1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 3-macro),
-     [This is the Trac macro *1, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 3, 3-macro),
-     [This is the Trac macro *2, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 2-macro),
-     [This is the Trac macro *2, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 3-macro),
-     [This is the Trac macro *2, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3, 3-macro),
-     [This is the Trac macro *3, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3, 3, 3-macro),
+    [[[1, 1, 1]],
+     [[1, 1, 2]],
+     [[1, 1, 3]],
+     [[1, 2, 2]],
+     [[1, 2, 3]],
+     [[1, 3, 3]],
+     [[2, 2, 2]],
+     [[2, 2, 3]],
+     [[2, 3, 3]],
+     [[3, 3, 3]],
      [[1, 1], [2]],
      [[1, 1], [3]],
      [[1, 2], [2]],
@@ -71,7 +71,7 @@ Expected:
      [[2, 3], [3]],
      [[1], [2], [3]]]
 Got:
-    [This is the Trac macro *[1, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 1-macro), [This is the Trac macro *1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 2-macro), [This is the Trac macro *1, 1, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 3-macro), [This is the Trac macro *1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 2-macro), [This is the Trac macro *1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 3-macro), [This is the Trac macro *1, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 3, 3-macro), [This is the Trac macro *2, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 2-macro), [This is the Trac macro *2, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 3-macro), [This is the Trac macro *2, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3, 3-macro), [This is the Trac macro *3, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3, 3, 3-macro), [[1, 1], [2, None]], [[1, 1], [3, None]], [[1, 2], [2, None]], [[1, 2], [3, None]], [[1, 3], [2, None]], [[1, 3], [3, None]], [[2, 2], [3, None]], [[2, 3], [3, None]], [[1], [2], [3]]]
+    [[[1, 1, 1]], [[1, 1, 2]], [[1, 1, 3]], [[1, 2, 2]], [[1, 2, 3]], [[1, 3, 3]], [[2, 2, 2]], [[2, 2, 3]], [[2, 3, 3]], [[3, 3, 3]], [[1, 1], [2, None]], [[1, 1], [3, None]], [[1, 2], [2, None]], [[1, 2], [3, None]], [[1, 3], [2, None]], [[1, 3], [3, None]], [[2, 2], [3, None]], [[2, 3], [3, None]], [[1], [2], [3]]]
 **********************************************************************
 File "tableau.py", line 1597:
     sage: all([sst in SST for sst in SST])
@@ -83,16 +83,16 @@ Got:
 File "tableau.py", line 1626:
     sage: SemistandardTableaux(3).list()
 Expected:
-    [This is the Trac macro *[1, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 1-macro),
-     [This is the Trac macro *1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 2-macro),
-     [This is the Trac macro *1, 1, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 3-macro),
-     [This is the Trac macro *1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 2-macro),
-     [This is the Trac macro *1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 3-macro),
-     [This is the Trac macro *1, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 3, 3-macro),
-     [This is the Trac macro *2, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 2-macro),
-     [This is the Trac macro *2, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 3-macro),
-     [This is the Trac macro *2, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3, 3-macro),
-     [This is the Trac macro *3, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3, 3, 3-macro),
+    [[[1, 1, 1]],
+     [[1, 1, 2]],
+     [[1, 1, 3]],
+     [[1, 2, 2]],
+     [[1, 2, 3]],
+     [[1, 3, 3]],
+     [[2, 2, 2]],
+     [[2, 2, 3]],
+     [[2, 3, 3]],
+     [[3, 3, 3]],
      [[1, 1], [2]],
      [[1, 1], [3]],
      [[1, 2], [2]],
@@ -103,7 +103,7 @@ Expected:
      [[2, 3], [3]],
      [[1], [2], [3]]]
 Got:
-    [This is the Trac macro *[1, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 1-macro), [This is the Trac macro *1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 2-macro), [This is the Trac macro *1, 1, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 3-macro), [This is the Trac macro *1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 2-macro), [This is the Trac macro *1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 3-macro), [This is the Trac macro *1, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 3, 3-macro), [This is the Trac macro *2, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 2-macro), [This is the Trac macro *2, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 2, 3-macro), [This is the Trac macro *2, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3, 3-macro), [This is the Trac macro *3, 3, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3, 3, 3-macro), [[1, 1], [2, None]], [[1, 1], [3, None]], [[1, 2], [2, None]], [[1, 2], [3, None]], [[1, 3], [2, None]], [[1, 3], [3, None]], [[2, 2], [3, None]], [[2, 3], [3, None]], [[1], [2], [3]]]
+    [[[1, 1, 1]], [[1, 1, 2]], [[1, 1, 3]], [[1, 2, 2]], [[1, 2, 3]], [[1, 3, 3]], [[2, 2, 2]], [[2, 2, 3]], [[2, 3, 3]], [[3, 3, 3]], [[1, 1], [2, None]], [[1, 1], [3, None]], [[1, 2], [2, None]], [[1, 2], [3, None]], [[1, 3], [2, None]], [[1, 3], [3, None]], [[2, 2], [3, None]], [[2, 3], [3, None]], [[1], [2], [3]]]
 **********************************************************************
 File "tableau.py", line 1677:
     sage: all([sst in SST for sst in SST])
@@ -157,16 +157,16 @@ Got:
 File "tableau.py", line 1843:
     sage: SemistandardTableaux(3, [2,1]).list()
 Expected:
-    [This is the Trac macro *[1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 2-macro), [[1, 1], [2]]]
+    [[[1, 1, 2]], [[1, 1], [2]]]
 Got:
-    [This is the Trac macro *[1, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 2-macro), [[1, 1], [2, None]]]
+    [[[1, 1, 2]], [[1, 1], [2, None]]]
 **********************************************************************
 File "tableau.py", line 1845:
     sage: SemistandardTableaux(4, [2,2]).list()
 Expected:
-    [This is the Trac macro *[1, 1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 2, 2-macro), [[1, 1, 2], [2]], [[1, 1], [2, 2]]]
+    [[[1, 1, 2, 2]], [[1, 1, 2], [2]], [[1, 1], [2, 2]]]
 Got:
-    [This is the Trac macro *[1, 1, 2, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 1, 2, 2-macro), [[1, 1, 2], [2, None, None]], [[1, 1], [2, 2]]]
+    [[[1, 1, 2, 2]], [[1, 1, 2], [2, None, None]], [[1, 1], [2, 2]]]
 **********************************************************************
 File "tableau.py", line 1869:
     sage: all([sst in SST for sst in SST])

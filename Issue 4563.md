@@ -1,6 +1,6 @@
 # Issue 4563: polar plot does not accept (t, 0, 2*pi) syntax for the interval
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4563
 
 Original creator: jason
 

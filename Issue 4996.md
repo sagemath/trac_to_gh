@@ -1,6 +1,6 @@
 # Issue 4996: OSX64: add proper libcsage build support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4996
 
 Original creator: mabshoff
 

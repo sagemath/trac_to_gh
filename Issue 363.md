@@ -1,6 +1,6 @@
 # Issue 363: maxima completion list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/363
 
 Original creator: was
 

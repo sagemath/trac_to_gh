@@ -1,6 +1,6 @@
 # Issue 5117: remove (or enhance an rename) the Polyhedron.union()) method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5117
 
 Original creator: sbarthelemy
 

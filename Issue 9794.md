@@ -1,6 +1,6 @@
 # Issue 9794: Make sure new plot syntax works with Sage polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9795
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 8463: Test failure of sage/homology/delta_complex.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8463
 
 Original creator: drkirkby
 

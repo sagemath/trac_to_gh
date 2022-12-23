@@ -1,6 +1,6 @@
 # Issue 2202: [with spkg; needs review] Debianize rubiks spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2202
 
 Original creator: tabbott
 

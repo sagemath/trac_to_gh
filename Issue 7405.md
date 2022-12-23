@@ -1,6 +1,6 @@
 # Issue 7405: Change the print of predefined words to the default behavior.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7405
 
 Original creator: slabbe
 

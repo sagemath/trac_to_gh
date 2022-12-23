@@ -1,6 +1,6 @@
 # Issue 9475: update M4RI to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9475
 
 Original creator: malb
 
@@ -461,15 +461,15 @@ I tried to reproduce your segmentation fault, but I can't.
 
 
 ```
-malb`@`sage:~/scratch_sage/sage-4.4$ ./sage -t -long devel/sage-main/sage/crypto/mq/mpolynomialsystem.py
+malb@sage:~/scratch_sage/sage-4.4$ ./sage -t -long devel/sage-main/sage/crypto/mq/mpolynomialsystem.py
 sage -t -long "devel/sage-main/sage/crypto/mq/mpolynomialsystem.py"
          [16.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 16.8 seconds
-malb`@`sage:~/scratch_sage/sage-4.4$ cd devel/sage
-malb`@`sage:~/scratch_sage/sage-4.4/devel/sage$ hg qap
+malb@sage:~/scratch_sage/sage-4.4$ cd devel/sage
+malb@sage:~/scratch_sage/sage-4.4/devel/sage$ hg qap
 m4ri_new_version.patch
 singular-3-1-1-4.patch
 
@@ -548,7 +548,7 @@ I executed these steps
 
 
 ```
-malb`@`geom:~/scratch_sage/SIGSEGV/sage-4.5.1$ ./sage -t -long devel/sage/sage/crypto/mq/mpolynomialsystem.py 
+malb@geom:~/scratch_sage/SIGSEGV/sage-4.5.1$ ./sage -t -long devel/sage/sage/crypto/mq/mpolynomialsystem.py 
 sage -t -long "devel/sage/sage/crypto/mq/mpolynomialsystem.py"
          [17.1 s]
  
@@ -773,9 +773,9 @@ Not 100%:
 ```patch
 --- m4ri_new_version.v2.patch.orig	2010-08-07 09:00:21.000000000 +0200
 +++ m4ri_new_version.v2.patch	2010-08-12 20:50:56.000000000 +0200
-`@``@` -1,14 +1,14 `@``@`
+@@ -1,14 +1,14 @@
  # HG changeset patch
- # User Martin Albrecht <malb`@`informatik.uni-bremen.de>
+ # User Martin Albrecht <malb@informatik.uni-bremen.de>
  # Date 1277764034 -3600
 -# Node ID 3365789479e6d70cb1930b2e97c7874cbd3310db
 -# Parent  ba36200d8a2f844179785580245fd95aa6401a51
@@ -788,21 +788,21 @@ Not 100%:
 +diff -r 0bb69a987892 -r 3b116dd35a84 module_list.py
 +--- a/module_list.py	Tue Aug 10 13:46:10 2010 +0100
  +++ b/module_list.py	Mon Jun 28 23:27:14 2010 +0100
--`@``@` -783,7 +783,7 `@``@`
-+`@``@` -807,7 +807,7 `@``@`
+-@@ -783,7 +783,7 @@
++@@ -807,7 +807,7 @@
       Extension('sage.matrix.matrix_mod2_dense',
                 sources = ['sage/matrix/matrix_mod2_dense.pyx'],
                 libraries = ['gmp','m4ri', 'gd', 'png12', 'z'],
-`@``@` -17,7 +17,7 `@``@`
+@@ -17,7 +17,7 @@
   
       Extension('sage.matrix.matrix_modn_dense',
                 sources = ['sage/matrix/matrix_modn_dense.pyx'],
--`@``@` -971,7 +971,7 `@``@`
-+`@``@` -995,7 +995,7 `@``@`
+-@@ -971,7 +971,7 @@
++@@ -995,7 +995,7 @@
       Extension('sage.modules.vector_mod2_dense',
                 sources = ['sage/modules/vector_mod2_dense.pyx'],
                 libraries = ['gmp','m4ri', 'png12', 'gd'],
-`@``@` -26,8 +26,8 `@``@`
+@@ -26,8 +26,8 @@
       
       Extension('sage.modules.vector_rational_dense',
                 sources = ['sage/modules/vector_rational_dense.pyx'],
@@ -811,9 +811,9 @@ Not 100%:
 +diff -r 0bb69a987892 -r 3b116dd35a84 sage/libs/m4ri.pxd
 +--- a/sage/libs/m4ri.pxd	Tue Aug 10 13:46:10 2010 +0100
  +++ b/sage/libs/m4ri.pxd	Mon Jun 28 23:27:14 2010 +0100
- `@``@` -141,6 +141,9 `@``@`
+ @@ -141,6 +141,9 @@
       # reduced row echelon form from upper triangular form
-`@``@` -60,8 +60,8 `@``@`
+@@ -60,8 +60,8 @@
   
       # reduced row echelon form using PLUQ factorization
       cdef long mzd_echelonize_pluq(mzd_t *A, int full)
@@ -822,14 +822,14 @@ Not 100%:
 +diff -r 0bb69a987892 -r 3b116dd35a84 sage/matrix/matrix_mod2_dense.pyx
 +--- a/sage/matrix/matrix_mod2_dense.pyx	Tue Aug 10 13:46:10 2010 +0100
  +++ b/sage/matrix/matrix_mod2_dense.pyx	Mon Jun 28 23:27:14 2010 +0100
- `@``@` -1010,15 +1010,16 `@``@`
+ @@ -1010,15 +1010,16 @@
       #    * Matrix windows -- only if you need strassen for that base
-`@``@` -116,7 +116,28 `@``@`
+@@ -116,7 +116,28 @@
                   k = 0
   
               _sig_on
--`@``@` -1681,7 +1691,7 `@``@`
-+`@``@` -1106,6 +1116,20 `@``@`
+-@@ -1681,7 +1691,7 @@
++@@ -1106,6 +1116,20 @@
 +             self.cache('rank', r)
 +             self.cache('pivots', self._pivots())
 + 
@@ -850,24 +850,24 @@ Not 100%:
 +         elif algorithm == 'linbox':
 + 
 +             #self._echelonize_linbox()
-+`@``@` -1681,7 +1705,7 `@``@`
++@@ -1681,7 +1705,7 @@
               sage: float(d)
               0.63184899999999999
               sage: A.density(approx=True)
-`@``@` -125,7 +146,7 `@``@`
+@@ -125,7 +146,7 @@
               sage: float(len(A.nonzero_positions())/1000^2)
               0.63184899999999999
           """
--`@``@` -1691,7 +1701,7 `@``@`
-+`@``@` -1691,18 +1715,18 `@``@`
+-@@ -1691,7 +1701,7 @@
++@@ -1691,18 +1715,18 @@
           else:
               return matrix_dense.Matrix_dense.density(self)
   
-`@``@` -134,7 +155,11 `@``@`
+@@ -134,7 +155,11 @@
           """
           Return the rank of this matrix.
   
--`@``@` -1702,7 +1712,7 `@``@`
+-@@ -1702,7 +1712,7 @@
 +-        On average 'lqup' should be faster than 'm4ri' and hence it is
 ++        On average 'pls' should be faster than 'm4ri' and hence it is
 +         the default choice. However, for small - i.e. quite few
@@ -876,48 +876,48 @@ Not 100%:
   
           INPUT:
   
-`@``@` -143,7 +168,7 `@``@`
+@@ -143,7 +168,7 @@
   
           EXAMPLE::
   
--`@``@` -1722,10 +1732,10 `@``@`
-+`@``@` -1722,10 +1746,10 `@``@`
+-@@ -1722,10 +1732,10 @@
++@@ -1722,10 +1746,10 @@
           cdef mzd_t *A = mzd_copy(NULL, self._entries)
           cdef mzp_t *P, *Q
   
-`@``@` -156,7 +181,7 `@``@`
+@@ -156,7 +181,7 @@
               mzp_free(P)
               mzp_free(Q)
           elif algorithm == 'm4ri':
--`@``@` -2060,9 +2070,9 `@``@`
-+`@``@` -2060,9 +2084,9 `@``@`
+-@@ -2060,9 +2070,9 @@
++@@ -2060,9 +2084,9 @@
       mzp_free(q)
       return B,P,Q
   
-`@``@` -168,7 +193,7 `@``@`
+@@ -168,7 +193,7 @@
   
       INPUT:
           A -- matrix
--`@``@` -2074,14 +2084,14 `@``@`
-+`@``@` -2074,14 +2098,14 `@``@`
+-@@ -2074,14 +2084,14 @@
++@@ -2074,14 +2098,14 @@
   
       EXAMPLE::
   
-`@``@` -185,7 +210,7 `@``@`
+@@ -185,7 +210,7 @@
           sage: LU
           [1 0 0 1]
           [1 1 0 0]
--`@``@` -2095,7 +2105,7 `@``@`
-+`@``@` -2095,7 +2119,7 `@``@`
+-@@ -2095,7 +2105,7 @@
++@@ -2095,7 +2119,7 @@
           [0, 1, 2, 3]
   
           sage: A = random_matrix(GF(2),1000,1000)
-`@``@` -194,7 +219,7 `@``@`
+@@ -194,7 +219,7 @@
           True
       """
       cdef Matrix_mod2_dense B = A.__copy__()
--`@``@` -2104,15 +2114,15 `@``@`
-+`@``@` -2104,15 +2128,15 `@``@`
+-@@ -2104,15 +2114,15 @@
++@@ -2104,15 +2128,15 @@
   
       if algorithm == 'standard':
           _sig_on

@@ -1,6 +1,6 @@
 # Issue 435: sage notebooks have hardcoded absolute paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/435
 
 Original creator: was
 

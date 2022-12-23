@@ -1,6 +1,6 @@
 # Issue 6531: Add generic ring classes to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6531
 
 Original creator: davidloeffler
 

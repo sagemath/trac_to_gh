@@ -1,6 +1,6 @@
 # Issue 113: singular's omalloc has a screwed up licensed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/113
 
 Original creator: was
 
@@ -25,7 +25,7 @@ As the thread you link to says, maybe there is a chance we could get around usin
  
 Ideas?  I don't know anything about the details of how it is used yet.
  
-On Fri, 06 Oct 2006 00:02:56 -0700, Martin Albrecht <malb`@`informatik.uni-bremen.de> wrote:
+On Fri, 06 Oct 2006 00:02:56 -0700, Martin Albrecht <malb@informatik.uni-bremen.de> wrote:
 I just stumbled across a discussion on some Debian mailinglist
  
   http://www.mail-archive.com/debian-mentors%40lists.debian.org/msg45988.html
@@ -56,7 +56,7 @@ of SINGULAR.
  
 If you wish to use this package outside of SINGULAR or to modify it in
 any way, please contact the author
-"Olaf Bachmann" <obachman`@`mathematik.uni-kl.de>.
+"Olaf Bachmann" <obachman@mathematik.uni-kl.de>.
 -----------------------------------------
  
 This sounds like if this is a problem for SAGE, or doesn't it?
@@ -67,7 +67,7 @@ Martin
 
 
 ```
-On Fri, 06 Oct 2006 06:50:29 -0700, David Joyner <wdjoyner`@`gmail.com> wrote:
+On Fri, 06 Oct 2006 06:50:29 -0700, David Joyner <wdjoyner@gmail.com> wrote:
  
  
 Could be, but we aren't using omalloc outside of singular (as far
@@ -114,13 +114,13 @@ This has been resolved:
 ```
 --------------------------------------
 From: "Olaf Bachmann" <ADDRESS DELETED>
-To: "William Stein" <wstein`@`gmail.com>
+To: "William Stein" <wstein@gmail.com>
 Received: by 10.78.157.6 with HTTP; Fri, 13 Oct 2006 01:03:49 -0700 (PDT)
 Subject: Re: omalloc
-Cc: singular`@`mathematik.uni-kl.de
+Cc: singular@mathematik.uni-kl.de
  
 Hi Wiliam,
-sure, use and/or modify omalloc, no problem. `@`Singular team: I hereby ask
+sure, use and/or modify omalloc, no problem. @Singular team: I hereby ask
 you to take away those special licensing restrictions of omalloc and to put
 it under the same license as Singular.
  

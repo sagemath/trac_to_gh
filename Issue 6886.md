@@ -1,6 +1,6 @@
 # Issue 6886: Elliptic curve isogeny checking can be expensive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6886
 
 Original creator: cremona
 

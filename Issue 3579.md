@@ -1,6 +1,6 @@
 # Issue 3579: bug in RandonGNP graph constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3579
 
 Original creator: was
 

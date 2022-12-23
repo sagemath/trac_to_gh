@@ -1,6 +1,6 @@
 # Issue 7725: Segmentation fault in coerce_actions.c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7725
 
 Original creator: bump
 

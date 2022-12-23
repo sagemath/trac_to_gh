@@ -1,6 +1,6 @@
 # Issue 937: If g is a graphics object then in doctest mode g.show() should save to a specific (always the same) temp file.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/937
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4360: [with patch, needs review] fraction field improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4360
 
 Original creator: burcin
 
@@ -47,7 +47,7 @@ REFEREE REPORT:
 Burcin, I didn't get far (against 3.2.1.alpha1).  Could you rebase again and let me know ASAP so I can referee?
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4360/01_fraction_field_element_class.patch')

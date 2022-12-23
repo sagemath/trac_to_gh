@@ -1,6 +1,6 @@
 # Issue 6662: [with patch, needs review] sampling from a general discrete probability distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6662
 
 Original creator: carlohamalainen
 

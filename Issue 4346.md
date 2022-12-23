@@ -1,6 +1,6 @@
 # Issue 4346: segmentation fault with set_block
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4346
 
 Original creator: zimmerma
 

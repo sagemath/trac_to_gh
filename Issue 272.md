@@ -1,6 +1,6 @@
 # Issue 272: Ctrl-D exits uncleanly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/272
 
 Original creator: nbruin
 

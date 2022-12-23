@@ -1,6 +1,6 @@
 # Issue 8856: Reinstate cached one in algebra_with_basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8856
 
 Original creator: hivert
 
@@ -15,7 +15,7 @@ Keywords: cached one_basis
 From `algebra_with_basis.py`:
 
 ```
-#`@`cached_method   # todo: reinstate once #5843 is fixed
+#@cached_method   # todo: reinstate once #5843 is fixed
 def one_from_one_basis(self):
     """
     Returns the one of the algebra, as per

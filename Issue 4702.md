@@ -1,6 +1,6 @@
 # Issue 4702: improve magma interface coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4702
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 7217: Spanish doc #5 "Integer Factorization"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7217
 
 Original creator: Loufer
 

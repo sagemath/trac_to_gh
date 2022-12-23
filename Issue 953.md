@@ -1,6 +1,6 @@
 # Issue 953: the axiom / sage interface is currently totally broken, at least on 64-bit linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/953
 
 Original creator: was
 
@@ -14,7 +14,7 @@ This is terrible.
 
 
 ```
-was`@`ubuntu:~/d/sage/sage/interfaces$ sage -t --optional axiom.py
+was@ubuntu:~/d/sage/sage/interfaces$ sage -t --optional axiom.py
 sage -t --optional axiom.py                                 **********************************************************************
 File "axiom.py", line 38:
     sage: axiom('3 * 5')                     # optional

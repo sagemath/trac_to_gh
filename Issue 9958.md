@@ -1,6 +1,6 @@
 # Issue 9958: Get Pari to stop starting automatically
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9959
 
 Original creator: kcrisman
 

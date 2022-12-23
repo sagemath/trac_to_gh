@@ -1,6 +1,6 @@
 # Issue 6484: sage.combinat.ranker improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6484
 
 Original creator: nthiery
 
@@ -162,7 +162,7 @@ So, let's see about speed with various implementations:
 ```
 sage: l = range(100);
 sage: d = { x:i for i,x in enumerate(l) }
-sage: `@`cached_function
+sage: @cached_function
 ....: def rank_cached(): pass
 sage: for i,x in enumerate(l):
 ....:     rank_cached.set_cache(i, x)

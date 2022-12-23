@@ -1,6 +1,6 @@
 # Issue 3475: [with patch, needs review] setup.py was missing jquery.form.js, upgrade to latest version of jquery (1.2.6) and jquery.form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3475
 
 Original creator: yi
 

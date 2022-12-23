@@ -1,6 +1,6 @@
 # Issue 254: p-adic precision drop in evaluating a polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/254
 
 Original creator: dmharvey
 

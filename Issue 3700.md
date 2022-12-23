@@ -1,6 +1,6 @@
 # Issue 3700: [with spkg, needs review] Solaris: Fix ntl build issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3700
 
 Original creator: mabshoff
 

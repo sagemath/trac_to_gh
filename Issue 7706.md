@@ -1,6 +1,6 @@
 # Issue 7706: palp (lattice polytopes): replace the pickle-based database of lattice polytopes by a non-pickle database format
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7706
 
 Original creator: was
 

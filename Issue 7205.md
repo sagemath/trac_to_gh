@@ -1,6 +1,6 @@
 # Issue 7205: fix the list of old sage releases website
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7205
 
 Original creator: was
 

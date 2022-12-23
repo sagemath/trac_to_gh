@@ -1,6 +1,6 @@
 # Issue 5592: cell insertion bar does not come up before a text cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5592
 
 Original creator: jason
 

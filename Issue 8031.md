@@ -1,6 +1,6 @@
 # Issue 8031: make graph_editor also available as a *method* on graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8031
 
 Original creator: was
 

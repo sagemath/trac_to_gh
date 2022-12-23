@@ -1,6 +1,6 @@
 # Issue 5593: [with patch; needs review or throwing away] CremonaDB.conductor_range does not give a Python style range
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5593
 
 Original creator: nbruin
 

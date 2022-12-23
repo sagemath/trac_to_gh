@@ -1,6 +1,6 @@
 # Issue 9968: Update extension code for mpmath-0.16
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9969
 
 Original creator: fredrik.johansson
 

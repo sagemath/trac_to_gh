@@ -1,6 +1,6 @@
 # Issue 2641: replace guava 3.1 by guava 3.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2641
 
 Original creator: wdj
 

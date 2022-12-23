@@ -1,6 +1,6 @@
 # Issue 1142: oddity with regular expressions and ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1142
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: was
 Reported by wjp: The following is an example from the python regular expression howto. It seems that ipython's preprocessing somehow gets in the way. This works perfectly fine with regular python:
 
 ```
-[wjp`@`issa sage-2.8.12]$ ./sage
+[wjp@issa sage-2.8.12]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.12, Release Date: 2007-11-06                      |

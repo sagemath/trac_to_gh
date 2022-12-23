@@ -1,6 +1,6 @@
 # Issue 6638: Implement a way to import default shortcuts, say from SymmetricFunctions(QQ)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6638
 
 Original creator: nthiery
 

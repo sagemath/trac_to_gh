@@ -1,6 +1,6 @@
 # Issue 5212: [with patch, needs review] bug with numbers in names in sage.structure.parent_gens.normalize_names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5212
 
 Original creator: ncalexan
 

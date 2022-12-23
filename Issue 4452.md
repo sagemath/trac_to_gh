@@ -1,6 +1,6 @@
 # Issue 4452: [with patch; needs review] optimize next_prime
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4452
 
 Original creator: was
 

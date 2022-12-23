@@ -1,6 +1,6 @@
 # Issue 2128: bug in random_prime (trivial to fix!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2128
 
 Original creator: was
 

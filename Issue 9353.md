@@ -1,6 +1,6 @@
 # Issue 9353: Sage mvrank.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9353
 
 Original creator: retry
 

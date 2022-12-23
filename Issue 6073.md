@@ -1,6 +1,6 @@
 # Issue 6073: Developer guide somewhat wrong about cython extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6073
 
 Original creator: mhampton
 

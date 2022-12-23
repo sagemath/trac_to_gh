@@ -1,6 +1,6 @@
 # Issue 7556: change default rounding behavior for QQ to
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7556
 
 Original creator: was
 

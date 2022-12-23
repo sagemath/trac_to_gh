@@ -1,6 +1,6 @@
 # Issue 1647: rewrite spkg chapter in the developer handbook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1647
 
 Original creator: mabshoff
 

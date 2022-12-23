@@ -1,6 +1,6 @@
 # Issue 1864: simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1864
 
 Original creator: was
 

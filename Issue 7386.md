@@ -1,6 +1,6 @@
 # Issue 7386: Docstrings for graphs_generators.CubeGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7386
 
 Original creator: ncohen
 

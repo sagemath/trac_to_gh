@@ -1,6 +1,6 @@
 # Issue 771: GF(p^n) vector() NotImplemented for p^n > 2^16
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/771
 
 Original creator: malb
 

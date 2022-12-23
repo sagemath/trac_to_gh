@@ -1,6 +1,6 @@
 # Issue 2129: implement "sage -t" for .pyx files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2129
 
 Original creator: was
 

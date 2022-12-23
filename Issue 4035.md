@@ -1,6 +1,6 @@
 # Issue 4035: [with patch, needs review] fix optional doctests for multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4035
 
 Original creator: malb
 
@@ -52,7 +52,7 @@ Comment by mabshoff created at 2008-10-26 21:39:02
 Unfortunately this patch has bitrotted:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 < trac_4035_m2_optional_doctests.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 < trac_4035_m2_optional_doctests.patch 
 patching file sage/rings/polynomial/multi_polynomial.pyx
 patching file sage/rings/polynomial/multi_polynomial_ideal.py
 Hunk #1 FAILED at 60.

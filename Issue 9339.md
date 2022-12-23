@@ -1,6 +1,6 @@
 # Issue 9339: Notebook fails to print result of last expression if there is a line break
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9339
 
 Original creator: nbruin
 

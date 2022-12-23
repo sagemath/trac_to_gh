@@ -1,6 +1,6 @@
 # Issue 6454: improve sbox linear and differences matrices computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6454
 
 Original creator: ylchapuy
 

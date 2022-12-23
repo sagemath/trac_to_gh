@@ -1,6 +1,6 @@
 # Issue 7961: Make recognition of runpath/develpath in editmodule more robust
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7961
 
 Original creator: nbruin
 

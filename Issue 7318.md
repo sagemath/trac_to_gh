@@ -1,6 +1,6 @@
 # Issue 7318: SageNB: Sphinxify erases doc/en/introspect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7318
 
 Original creator: mpatel
 

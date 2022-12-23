@@ -1,6 +1,6 @@
 # Issue 1457: Somewhere in a short computation: "BUG:  Rational.__pow__ called on a non-Rational"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1457
 
 Original creator: bober
 

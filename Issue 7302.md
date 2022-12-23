@@ -1,6 +1,6 @@
 # Issue 7302: Nowhere wero flow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7302
 
 Original creator: ncohen
 

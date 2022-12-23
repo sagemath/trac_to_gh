@@ -1,6 +1,6 @@
 # Issue 7960: QQbar should accept number field elements with embeddings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7960
 
 Original creator: robertwb
 

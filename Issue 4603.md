@@ -1,6 +1,6 @@
 # Issue 4603: trivial typos in files under sage/categories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4603
 
 Original creator: mvngu
 

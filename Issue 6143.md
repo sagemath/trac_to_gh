@@ -1,6 +1,6 @@
 # Issue 6143: Upgrade tinyMCE to 3.2.4.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6143
 
 Original creator: jason
 

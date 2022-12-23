@@ -1,6 +1,6 @@
 # Issue 8455: Update MPIR to 1.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8455
 
 Original creator: mhansen
 

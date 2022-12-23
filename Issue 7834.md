@@ -1,6 +1,6 @@
 # Issue 7834: Implement conjugate() for RealDoubleElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7834
 
 Original creator: dagss
 

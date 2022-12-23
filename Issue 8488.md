@@ -1,6 +1,6 @@
 # Issue 8488: Add support for @interact to the Sage library and module for a library of interacts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8488
 
 Original creator: was
 
@@ -192,7 +192,7 @@ I applied both patches to 4.3.5 and I'm getting doctest failures:
 sage -t  devel/sage/sage/interacts/library.py
 **********************************************************************
 File "/mnt/usb1/scratch/palmieri/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage-new/sage/interacts/library.py", line 18:
-    sage: `@`interacts.decorator.library_interact
+    sage: @interacts.decorator.library_interact
     def f(n=Integer(5)): print n
 Exception raised:
     Traceback (most recent call last):
@@ -203,8 +203,8 @@ Exception raised:
       File "/mnt/usb1/scratch/palmieri/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py", line 1172, in run_one_example
         compileflags, 1) in test.globs
       File "<doctest __main__.example_1[2]>", line 1, in <module>
-        `@`interacts.decorator.library_interact###line 18:
-    sage: `@`interacts.decorator.library_interact
+        @interacts.decorator.library_interact###line 18:
+    sage: @interacts.decorator.library_interact
     AttributeError: 'module' object has no attribute 'decorator'
 **********************************************************************
 File "/mnt/usb1/scratch/palmieri/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/devel/sage-new/sage/interacts/library.py", line 21:

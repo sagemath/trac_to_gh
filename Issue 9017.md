@@ -1,6 +1,6 @@
 # Issue 9017: Use lowercase i for latex symbolic sqrt(-1)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9017
 
 Original creator: robertwb
 

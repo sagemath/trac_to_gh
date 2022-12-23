@@ -1,6 +1,6 @@
 # Issue 8701: implement scalar-valued Siegel modular forms on Sp(4,Z)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8701
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 2364: animate .show() method is poorly documented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2364
 
 Original creator: cwitty
 

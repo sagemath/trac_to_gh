@@ -1,6 +1,6 @@
 # Issue 9886: slow coercion from integer ring to integer mod ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9887
 
 Original creator: dmharvey
 

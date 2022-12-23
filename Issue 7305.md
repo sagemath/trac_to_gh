@@ -1,6 +1,6 @@
 # Issue 7305: Implement the Higman-Sims graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7305
 
 Original creator: rbeezer
 

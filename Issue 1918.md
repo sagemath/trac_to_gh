@@ -1,6 +1,6 @@
 # Issue 1918: Matrices that are printed are not aligned
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1918
 
 Original creator: jason
 

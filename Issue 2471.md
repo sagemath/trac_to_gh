@@ -1,6 +1,6 @@
 # Issue 2471: [with patch; needs review] doctest failures in graph.py and factorization.py (caused by architecture dependence)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2471
 
 Original creator: was
 

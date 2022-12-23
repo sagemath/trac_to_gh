@@ -1,6 +1,6 @@
 # Issue 7370: fix FiniteFieldIterator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7370
 
 Original creator: malb
 

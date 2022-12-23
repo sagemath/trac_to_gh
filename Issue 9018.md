@@ -1,6 +1,6 @@
 # Issue 9018: Better latex for quadratic fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9018
 
 Original creator: robertwb
 

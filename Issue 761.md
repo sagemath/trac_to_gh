@@ -1,6 +1,6 @@
 # Issue 761: [patch] graphs: Lots of various doc changes and additional doc tests.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/761
 
 Original creator: jason
 
@@ -14,7 +14,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
 ```
 --- a/sage/graphs/graph.py	Fri Sep 28 14:43:22 2007 -0500
 +++ b/sage/graphs/graph.py	Fri Sep 28 15:22:25 2007 -0500
-`@``@` -241,6 +241,8 `@``@` class GenericGraph(SageObject):
+@@ -241,6 +241,8 @@ class GenericGraph(SageObject):
          settings for loops and multiedges, output the same vertex list (in order)
          and the same adjacency matrix.
          
@@ -23,7 +23,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          EXAMPLES:
              sage: G = graphs.EmptyGraph()
              sage: H = Graph()
-`@``@` -349,6 +351,9 `@``@` class GenericGraph(SageObject):
+@@ -349,6 +351,9 @@ class GenericGraph(SageObject):
  
      def _matrix_(self, R=None):
          """
@@ -33,7 +33,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          EXAMPLES:
              sage: G = graphs.CompleteBipartiteGraph(2,3)
              sage: m = matrix(G); m.parent()
-`@``@` -369,7 +374,7 `@``@` class GenericGraph(SageObject):
+@@ -369,7 +374,7 @@ class GenericGraph(SageObject):
  
      def networkx_graph(self):
          """
@@ -42,7 +42,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          
          EXAMPLE:
              sage: G = graphs.TetrahedralGraph()
-`@``@` -377,14 +382,6 `@``@` class GenericGraph(SageObject):
+@@ -377,14 +382,6 @@ class GenericGraph(SageObject):
              sage: type(N)
              <class 'networkx.xgraph.XGraph'>
  
@@ -57,7 +57,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          """
          return self._nxg.copy()
  
-`@``@` -396,9 +393,17 `@``@` class GenericGraph(SageObject):
+@@ -396,9 +393,17 @@ class GenericGraph(SageObject):
          self._nxg.info(vertex)
  
      def __get_pos__(self):
@@ -75,7 +75,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          self._pos = pos
  
      ### General properties
-`@``@` -536,13 +541,17 `@``@` class GenericGraph(SageObject):
+@@ -536,13 +541,17 @@ class GenericGraph(SageObject):
  
      def add_vertex(self, name=None):
          """
@@ -94,7 +94,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          EXAMPLES:
              sage: G = Graph(); G.add_vertex(); G
              Graph on 1 vertex
-`@``@` -562,6 +571,7 `@``@` class GenericGraph(SageObject):
+@@ -562,6 +571,7 @@ class GenericGraph(SageObject):
      def add_vertices(self, vertices):
          """
          Add vertices to the (di)graph from an iterable container of vertices.
@@ -102,7 +102,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          
          EXAMPLES:
              sage: d = {0: [1,4,5], 1: [2,6], 2: [3,7], 3: [4,8], 4: [9], 5: [7,8], 6: [8,9], 7: [9]}
-`@``@` -578,7 +588,8 `@``@` class GenericGraph(SageObject):
+@@ -578,7 +588,8 @@ class GenericGraph(SageObject):
  
      def delete_vertex(self, vertex):
          """
@@ -112,7 +112,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          
          EXAMPLES:
              sage: G = graphs.WheelGraph(9)
-`@``@` -587,6 +598,12 `@``@` class GenericGraph(SageObject):
+@@ -587,6 +598,12 @@ class GenericGraph(SageObject):
              sage: D = DiGraph({0:[1,2,3,4,5],1:[2],2:[3],3:[4],4:[5],5:[1]})
              sage: D.delete_vertex(0); D
              Digraph on 5 vertices
@@ -125,7 +125,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
  
          """
          self._nxg.delete_node(vertex)
-`@``@` -594,12 +611,18 `@``@` class GenericGraph(SageObject):
+@@ -594,12 +611,18 @@ class GenericGraph(SageObject):
      def delete_vertices(self, vertices):
          """
          Remove vertices from the (di)graph taken from an iterable container of
@@ -145,7 +145,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
  
          """
          self._nxg.delete_nodes_from(vertices)
-`@``@` -614,7 +637,14 `@``@` class GenericGraph(SageObject):
+@@ -614,7 +637,14 @@ class GenericGraph(SageObject):
          """
          Returns a list of all vertices in the external boundary of vertices1,
          intersected with vertices2. If vertices2 is None, then vertices2 is the
@@ -161,7 +161,7 @@ No new functionality should be added here.  Rather, here are lots of documentati
          
          EXAMPLE:
              sage: G = graphs.CubeGraph(4)
-`@``@` -933,8 +963,8 `@``@` class GenericGraph(SageObject):
+@@ -933,8 +963,8 @@ class GenericGraph(SageObject):
      
      def cliques(self):
          """

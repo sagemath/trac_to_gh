@@ -1,6 +1,6 @@
 # Issue 3837: Performance regression in sha.py due to #3674
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3837
 
 Original creator: mabshoff
 
@@ -39,7 +39,7 @@ The following seems to be the offending code: In trac_3674_sage-trac3674new.patc
 
 ```
 +++ b/sage/schemes/elliptic_curves/ell_point.py Thu Aug 07 22:02:56 2008 +0100
-`@``@` -54,7 +54,6 `@``@` AUTHORS:
+@@ -54,7 +54,6 @@ AUTHORS:
  #                  http://www.gnu.org/licenses/
  #*****************************************************************************
  
@@ -51,7 +51,7 @@ And then
 ```
 --- a/sage/schemes/elliptic_curves/ell_rational_field.py        Wed Jul 30 06:34:58 2008 -0700
 +++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Thu Aug 07 22:02:56 2008 +0100
-`@``@` -11,6 +11,8 `@``@` AUTHORS:
+@@ -11,6 +11,8 @@ AUTHORS:
     -- Christian Wuthrich (2007): added padic sha computation
     -- David Roe (2007-9): moved sha, l-series and p-adic functionality to separate files.
     -- John Cremona (2008-01)
@@ -60,7 +60,7 @@ And then
  """
  
  #*****************************************************************************
-`@``@` -55,7 +57,7 `@``@` import sage.databases.cremona
+@@ -55,7 +57,7 @@ import sage.databases.cremona
  import sage.databases.cremona
  from   sage.libs.pari.all import pari
  import sage.functions.transcendental as transcendental

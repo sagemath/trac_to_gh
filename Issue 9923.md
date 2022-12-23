@@ -1,6 +1,6 @@
 # Issue 9923: Doctest error in sage/geometry/polyhedra.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9924
 
 Original creator: mpatel
 

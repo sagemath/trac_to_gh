@@ -1,6 +1,6 @@
 # Issue 7039: zn_poly-0.9 uses gcc, irrespective of setting of CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7039
 
 Original creator: drkirkby
 

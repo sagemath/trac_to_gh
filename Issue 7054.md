@@ -1,6 +1,6 @@
 # Issue 7054: SageNB -- Minor aesthetic change in Upload or Create File
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7054
 
 Original creator: timdumol
 

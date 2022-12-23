@@ -1,6 +1,6 @@
 # Issue 1983: [with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1983
 
 Original creator: was
 

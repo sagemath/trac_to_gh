@@ -1,6 +1,6 @@
 # Issue 22: 32/64/32-bit building switch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/22
 
 Original creator: was
 
@@ -137,7 +137,7 @@ Comment by mabshoff created at 2009-01-16 17:50:15
 Unfortunately the trick William suggested does not work everywhere, i.e. even on the latest stable Debian release this happens:
 
 ```
-mabshoff`@`modular:~$ uname -p
+mabshoff@modular:~$ uname -p
 unknown
 ```
 

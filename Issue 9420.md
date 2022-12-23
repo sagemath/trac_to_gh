@@ -1,6 +1,6 @@
 # Issue 9420: SubgraphSearch class instead of a method, digraphs fixed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9420
 
 Original creator: ncohen
 

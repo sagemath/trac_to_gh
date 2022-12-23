@@ -1,6 +1,6 @@
 # Issue 1038: bad interaction between numpy and in-place operations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1038
 
 Original creator: cwitty
 

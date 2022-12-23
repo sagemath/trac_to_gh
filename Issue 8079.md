@@ -1,6 +1,6 @@
 # Issue 8079: Better documentation for patching spgk's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8079
 
 Original creator: vbraun
 

@@ -1,6 +1,6 @@
 # Issue 6857: [with patch, needs review] in automorphism_group, orbits=True does not translate vertices back
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6857
 
 Original creator: rlm
 

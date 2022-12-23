@@ -1,6 +1,6 @@
 # Issue 3075: notebook -- add a "test" option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3075
 
 Original creator: was
 

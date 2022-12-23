@@ -1,6 +1,6 @@
 # Issue 794: [with patch] MPolynomial_libsingular.jacob()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/794
 
 Original creator: malb
 

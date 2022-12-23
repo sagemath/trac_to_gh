@@ -1,6 +1,6 @@
 # Issue 9236: Bring doc coverage of misc/sage_timeit.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9236
 
 Original creator: slabbe
 

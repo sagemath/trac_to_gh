@@ -1,6 +1,6 @@
 # Issue 7688: remove byte-compiled files from the sage source distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7688
 
 Original creator: was
 

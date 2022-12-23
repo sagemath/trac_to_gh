@@ -1,6 +1,6 @@
 # Issue 9611: Truncated numbers on axes in plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9611
 
 Original creator: kcrisman
 

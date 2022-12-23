@@ -1,6 +1,6 @@
 # Issue 8062: New givaro-3.2.13rc2.p0.spkg works with Open Solaris 64 bit, SAGE64="yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8062
 
 Original creator: jsp
 
@@ -113,7 +113,7 @@ Positive review. All dynamic libraries are 64-bit. I don't know how one can dete
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/libgivaro*
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgivaro*
 local/lib/libgivaro.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libgivaro.la:	commands text
 local/lib/libgivaro.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped

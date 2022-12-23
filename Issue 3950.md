@@ -1,6 +1,6 @@
 # Issue 3950: notebook -- template(s) for generating worksheet listings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3950
 
 Original creator: TimothyClemans
 

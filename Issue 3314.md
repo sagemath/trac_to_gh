@@ -1,6 +1,6 @@
 # Issue 3314: dsage.setup() add_default_client broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3314
 
 Original creator: yi
 
@@ -69,7 +69,7 @@ Comment by mabshoff created at 2008-06-17 00:15:27
 Ok, the bug is the following *after* deleting the dsage directory in DOT_SAGE:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.3.rc0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.3.rc0, Release Date: 2008-06-16                   |

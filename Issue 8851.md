@@ -1,6 +1,6 @@
 # Issue 8851: the graphviz doctests use '\n' for newlines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8851
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 886: 2.8.7-alpha0: doctest failure in rings/integer_mod.pyx (expecting wrong type)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/886
 
 Original creator: cwitty
 

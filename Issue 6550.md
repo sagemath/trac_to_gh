@@ -1,6 +1,6 @@
 # Issue 6550: We need to be able to save itermediate files - particulary for ATLAS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6550
 
 Original creator: drkirkby
 
@@ -86,22 +86,22 @@ Also, I note from that script that the -m option is supposed to be used to save 
 I wrote a small script (see below) which sets the variable DELETE_TMP to 0 or 1 in exactly the same way as in the script inside $SAGE_ROOT/local/bin/sage-spkg However, the setting is done depending on the value of an environment variable.  (I've tried simpler version too, but whatever I try, I can't seem to get something that allows an environment variable to decide if temporary files are kept or not. 
 
 ```
-kirkby`@`t2:[~] $ ./testprog
+kirkby@t2:[~] $ ./testprog
 TMPVAR=1
 DELETE_TMP=1
 DELETE_TMP is one
-kirkby`@`t2:[~] $ export DELETE_TMP_FILES=0
-kirkby`@`t2:[~] $ ./testprog
+kirkby@t2:[~] $ export DELETE_TMP_FILES=0
+kirkby@t2:[~] $ ./testprog
 TMPVAR=0
 DELETE_TMP=0
 DELETE_TMP is zero
-kirkby`@`t2:[~] $ export DELETE_TMP_FILES=1
-kirkby`@`t2:[~] $ ./testprog
+kirkby@t2:[~] $ export DELETE_TMP_FILES=1
+kirkby@t2:[~] $ ./testprog
 TMPVAR=1
 DELETE_TMP=1
 DELETE_TMP is one
-kirkby`@`t2:[~] $ unset DELETE_TMP_FILES
-kirkby`@`t2:[~] $ ./testprog
+kirkby@t2:[~] $ unset DELETE_TMP_FILES
+kirkby@t2:[~] $ ./testprog
 TMPVAR=1
 DELETE_TMP=1
 DELETE_TMP is one
@@ -157,7 +157,7 @@ What happens with
 diff --git a/sage-spkg b/sage-spkg
 --- a/sage-spkg
 +++ b/sage-spkg
-`@``@` -84,6 +84,9 `@``@` if [ $1 = '-s' -o $1 = '-m' ]; then
+@@ -84,6 +84,9 @@ if [ $1 = '-s' -o $1 = '-m' ]; then
      DELETE_TMP=0
      shift
  fi

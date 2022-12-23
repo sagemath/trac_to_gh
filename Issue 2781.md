@@ -1,6 +1,6 @@
 # Issue 2781: bool() for SymbolicEquation should raise an error when it doesn't know the answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2781
 
 Original creator: jason
 

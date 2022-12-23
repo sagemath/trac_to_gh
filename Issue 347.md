@@ -1,6 +1,6 @@
 # Issue 347: Get Fernando and Gonzalo's quaternion algebra and related code into SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/347
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5644: make it so escape make the introspection window in the notebook disappear
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5644
 
 Original creator: was
 

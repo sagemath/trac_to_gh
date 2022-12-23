@@ -1,6 +1,6 @@
 # Issue 6514: Boolean function for cryptography
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6514
 
 Original creator: ylchapuy
 

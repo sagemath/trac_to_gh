@@ -1,6 +1,6 @@
 # Issue 5692: [with patch; needs review] fix some accents that prevent cloning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5692
 
 Original creator: was
 

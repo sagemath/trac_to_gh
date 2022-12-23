@@ -1,6 +1,6 @@
 # Issue 1777: jmol up/down metaphor confusing in the "View" right-click menu
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1777
 
 Original creator: jason
 

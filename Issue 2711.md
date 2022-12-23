@@ -1,6 +1,6 @@
 # Issue 2711: Implement inner product spaces and symplectic spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2711
 
 Original creator: ncalexan
 

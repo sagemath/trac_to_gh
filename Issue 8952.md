@@ -1,6 +1,6 @@
 # Issue 8952: Odd Girth
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8952
 
 Original creator: ncohen
 

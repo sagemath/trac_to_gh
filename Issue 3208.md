@@ -1,6 +1,6 @@
 # Issue 3208: [with patch, needs review] a bunch of small changes to the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3208
 
 Original creator: jhpalmieri
 

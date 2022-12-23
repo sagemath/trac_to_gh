@@ -1,6 +1,6 @@
 # Issue 4561: _fast_float_ for sin/cos, etc., in caculus.py is implemented stupidly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4561
 
 Original creator: was
 

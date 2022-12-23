@@ -1,6 +1,6 @@
 # Issue 7404: Display as much of a worksheet's title for which there's room
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7404
 
 Original creator: mpatel
 

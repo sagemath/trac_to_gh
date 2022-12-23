@@ -1,6 +1,6 @@
 # Issue 5500: add remark to tutorial to make defining functions at the command line much clearer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5500
 
 Original creator: was
 
@@ -79,7 +79,7 @@ REFEREE REPORT
 The patch *5500-tut.patch* mostly looks good: it applies OK against Sage 3.4, but with one doctest failure:
 
 ```
-[mvngu`@`sage ~]$ sage -t -long scratch/sage-3.4/devel/sage-5500/doc/en/tutorial/tour_help.rst
+[mvngu@sage ~]$ sage -t -long scratch/sage-3.4/devel/sage-5500/doc/en/tutorial/tour_help.rst
 sage -t -long "devel/sage-5500/doc/en/tutorial/tour_help.rst"
 Traceback (most recent call last):
   File "/home/mvngu/scratch/sage-3.4/tmp/tour_help.py", line 296, in <module>

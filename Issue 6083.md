@@ -1,6 +1,6 @@
 # Issue 6083: speedup integer division
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6083
 
 Original creator: robertwb
 

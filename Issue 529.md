@@ -1,6 +1,6 @@
 # Issue 529: Add hex printing for FiniteFieldElements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/529
 
 Original creator: malb
 

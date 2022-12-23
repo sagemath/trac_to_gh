@@ -1,6 +1,6 @@
 # Issue 9010: Upgrade biopython package to 1.54
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9010
 
 Original creator: mhampton
 

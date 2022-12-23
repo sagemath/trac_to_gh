@@ -1,6 +1,6 @@
 # Issue 7855: offline sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7855
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  jhpalmieri
 
 
 ```
-On Jan 6, 1:03 am, William Stein <wst...`@`gmail.com> wrote:
+On Jan 6, 1:03 am, William Stein <wst...@gmail.com> wrote:
 > Does anybody know how Google Gears or whatever does things like
 > offline gmail?
 

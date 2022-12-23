@@ -1,6 +1,6 @@
 # Issue 4060: Polyhedra don't handle real coordinates properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4060
 
 Original creator: mhampton
 

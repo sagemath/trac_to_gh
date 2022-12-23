@@ -1,6 +1,6 @@
 # Issue 3680: NumberFieldFractionalIdeal should not be a subclass of Ideal_generic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3680
 
 Original creator: dmharvey
 

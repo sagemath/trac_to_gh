@@ -1,6 +1,6 @@
 # Issue 3847: can't make vector of ints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3847
 
 Original creator: saliola
 

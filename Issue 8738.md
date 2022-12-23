@@ -1,6 +1,6 @@
 # Issue 8738: @interact matrix input control ignores label
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8738
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: jason, was
 Try this interact:
 
 ```
-`@`interact
+@interact
 def f(M = ("matrix ", random_matrix(QQ,3,4)), n=("an int", 5)):
     print "The echelon form of the above matrix is:"
     print M.echelon_form()
@@ -56,7 +56,7 @@ I have a comment about the design feature.  I notice from the code that this set
 
 
 ```
-`@`interact
+@interact
 def f(n=(2,[1,2,3,4,5])):
     print n
 ```
@@ -66,7 +66,7 @@ However, this does *not set the default, because the first spot is overloaded to
 
 
 ```
-`@`interact
+@interact
 def f(n=("b",["a","b","c"])):
     print n
 ```

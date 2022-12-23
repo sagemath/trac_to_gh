@@ -1,6 +1,6 @@
 # Issue 5963: 3.4.2.a0: prime_pi returns wrong results on some platforms for large input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5963
 
 Original creator: mabshoff
 
@@ -31,7 +31,7 @@ Comment by mabshoff created at 2009-05-03 00:17:51
 As discussed toward the end in https://groups.google.com/group/sage-devel/t/776d8e0a25735dca 
 
 ```
-On May 2, 3:52 pm, William Stein <wst...`@`gmail.com> wrote: 
+On May 2, 3:52 pm, William Stein <wst...@gmail.com> wrote: 
 <SNIP>
 > Andrew looked into this whole issue a while ago, and told me that the
 > prime_pi he implemented *should* only work up to about 2^40, and the

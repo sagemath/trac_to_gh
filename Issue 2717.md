@@ -1,6 +1,6 @@
 # Issue 2717: maxima expect interface synchronization not sufficiently robust
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2717
 
 Original creator: was
 

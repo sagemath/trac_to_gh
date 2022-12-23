@@ -1,6 +1,6 @@
 # Issue 8687: Weak SSL certificates in notebooks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8687
 
 Original creator: sneves
 

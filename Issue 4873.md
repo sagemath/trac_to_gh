@@ -1,6 +1,6 @@
 # Issue 4873: sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4873
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-wstein`@`sage:~$ /usr/local/bin/sage -optional
+wstein@sage:~$ /usr/local/bin/sage -optional
 Using SAGE Server http://www.sagemath.org//packages
 http://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list
 [Errno 13] Permission denied: '/usr/local/sage/tmp/list'

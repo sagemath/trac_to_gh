@@ -1,6 +1,6 @@
 # Issue 5161: [with patch, needs review] Remove outdated SHAREDFLAGS and Solaris specific injected flags from sage-env
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5161
 
 Original creator: mabshoff
 

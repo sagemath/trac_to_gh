@@ -1,6 +1,6 @@
 # Issue 1600: another weird coercion bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1600
 
 Original creator: dmharvey
 

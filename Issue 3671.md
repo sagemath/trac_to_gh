@@ -1,6 +1,6 @@
 # Issue 3671: ssmod.py doctest failures in Sage 3.0.4 or later
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3671
 
 Original creator: mabshoff
 

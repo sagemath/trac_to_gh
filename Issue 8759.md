@@ -1,6 +1,6 @@
 # Issue 8759: Make the Sass css_dir be /data instead of /data/sage/css so that other components can use Sass
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8759
 
 Original creator: acleone
 

@@ -1,6 +1,6 @@
 # Issue 4317: relocation after make install is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4317
 
 Original creator: zimmerma
 
@@ -56,7 +56,7 @@ Check out http://www.mail-archive.com/distutils-sig`@`python.org/msg05817.html
 Also note that easy-install.pth is used in a bunch of places
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ grep -r "easy-install.pth" *
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ grep -r "easy-install.pth" *
 install.log:Adding setuptools 0.6c8 to easy-install.pth file
 install.log:Adding SQLAlchemy 0.4.6 to easy-install.pth file
 install.log:Adding Jinja 1.2 to easy-install.pth file

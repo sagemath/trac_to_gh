@@ -1,6 +1,6 @@
 # Issue 2098: [with patch; needs review] rudimentary debian package build support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2098
 
 Original creator: tabbott
 

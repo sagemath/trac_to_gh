@@ -1,6 +1,6 @@
 # Issue 6896: update README.txt about GCC versions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6896
 
 Original creator: mvngu
 

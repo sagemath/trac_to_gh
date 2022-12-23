@@ -1,6 +1,6 @@
 # Issue 3780: [with patch, depends on #3324
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3780
 
 Original creator: malb
 

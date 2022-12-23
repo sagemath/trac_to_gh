@@ -1,6 +1,6 @@
 # Issue 2226: sage-2.10.2.alpha1 -- integral is now wrong (imho) for polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2226
 
 Original creator: was
 

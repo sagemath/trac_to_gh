@@ -1,6 +1,6 @@
 # Issue 8107: Fewer unnecessary imports from `sage.server.*`
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8107
 
 Original creator: mpatel
 

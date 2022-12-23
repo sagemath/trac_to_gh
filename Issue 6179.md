@@ -1,6 +1,6 @@
 # Issue 6179: html -- doctest failure in sage-4.0.1.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6179
 
 Original creator: was
 

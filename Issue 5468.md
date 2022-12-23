@@ -1,6 +1,6 @@
 # Issue 5468: matrix creation over laurent polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5468
 
 Original creator: wuthrich
 

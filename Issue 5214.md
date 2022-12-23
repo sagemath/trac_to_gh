@@ -1,6 +1,6 @@
 # Issue 5214: coercion to orders in relative number fields is not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5214
 
 Original creator: ncalexan
 

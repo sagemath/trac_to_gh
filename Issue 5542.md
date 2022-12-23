@@ -1,6 +1,6 @@
 # Issue 5542: more docstring fixes for permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5542
 
 Original creator: mvngu
 

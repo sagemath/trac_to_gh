@@ -1,6 +1,6 @@
 # Issue 2246: [with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2246
 
 Original creator: was
 

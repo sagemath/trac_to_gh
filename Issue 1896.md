@@ -1,6 +1,6 @@
 # Issue 1896: Gracefully handle 3d plotting when no java
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1896
 
 Original creator: robertwb
 
@@ -14,7 +14,7 @@ On Jan 23, 2008, at 9:47 AM, Simon King wrote:
 
 Dear Michael,
 
-On Jan 23, 11:22 am, mabshoff <Michael.Absh...`@`fsmath.mathematik.uni-
+On Jan 23, 11:22 am, mabshoff <Michael.Absh...@fsmath.mathematik.uni-
 dortmund.de> wrote:
 <snip>
 What is a JDK?

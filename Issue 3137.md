@@ -1,6 +1,6 @@
 # Issue 3137: view command in misc/latex.py -- fix to not hardcode xdvi command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3137
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Wed, May 7, 2008 at 12:26 PM, John H Palmieri <jhpalmieri64`@`gmail.com> wrote:
+On Wed, May 7, 2008 at 12:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
 >
 > A problem: on my linux box, if I use 'view' (not in a notebook), an
 > xdvi window appears then immediately disappears.  If I run view with

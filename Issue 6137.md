@@ -1,6 +1,6 @@
 # Issue 6137: Symmetric functions: refactoring, step I
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6137
 
 Original creator: nthiery
 

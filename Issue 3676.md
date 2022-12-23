@@ -1,6 +1,6 @@
 # Issue 3676: [with patch, needs review] Refactor graph isom code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3676
 
 Original creator: rlm
 
@@ -28,7 +28,7 @@ FYI, I got the following test failure:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
+wdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
 sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************
 File "/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py", line 170:
     sage: k.modulus()

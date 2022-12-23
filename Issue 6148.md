@@ -1,6 +1,6 @@
 # Issue 6148: functions involving ceil and floor are plotted incorrectly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6148
 
 Original creator: whuss
 

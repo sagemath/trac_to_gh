@@ -1,6 +1,6 @@
 # Issue 7249: switch the notebook's templating system to Jinja2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7249
 
 Original creator: ddrake
 

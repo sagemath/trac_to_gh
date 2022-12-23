@@ -1,6 +1,6 @@
 # Issue 8361: Add an __iter__ method for IntegerVectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8361
 
 Original creator: nborie
 

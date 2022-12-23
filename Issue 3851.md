@@ -1,6 +1,6 @@
 # Issue 3851: [with patch, needs review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3851
 
 Original creator: jhpalmieri
 

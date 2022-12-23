@@ -1,6 +1,6 @@
 # Issue 9663: Fast computation of Stirling numbers of 2nd kind
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9663
 
 Original creator: fredrik.johansson
 
@@ -75,8 +75,8 @@ Comment by was created at 2010-08-05 02:48:47
 Please explain the *massive* number of changes to module_list.py of the form:
 
 ```
-153	 	                [This is the Trac macro *blank looking line* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#blank looking line-macro)
- 	153	                [This is the Trac macro *another blank looking line* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#another blank looking line-macro)
+153	 	                [[blank looking line]]
+ 	153	                [[another blank looking line]]
 ```
 
 

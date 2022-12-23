@@ -1,6 +1,6 @@
 # Issue 9407: fixed fields for dirichlet characters and conductors and dirichlet characters for abelian fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9407
 
 Original creator: wuthrich
 

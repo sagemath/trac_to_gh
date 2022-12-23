@@ -1,6 +1,6 @@
 # Issue 4201: add .options and .reset to plot functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4201
 
 Original creator: mhansen
 

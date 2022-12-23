@@ -1,6 +1,6 @@
 # Issue 153: automated testing of the whole SAGE install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/153
 
 Original creator: was
 

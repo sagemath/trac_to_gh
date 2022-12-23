@@ -1,6 +1,6 @@
 # Issue 9544: Fix flintqs on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9544
 
 Original creator: pjeremy
 
@@ -44,7 +44,7 @@ The current spkg-install change being used in the port is
 ```diff
 --- flintqs-20070817.p6/spkg-install-orig	2012-04-08 00:46:21.000000000 +0000
 +++ flintqs-20070817.p6/spkg-install	2012-04-08 00:55:33.000000000 +0000
-`@``@` -7,6 +7,7 `@``@`
+@@ -7,6 +7,7 @@
  fi
  
  cp patches/lanczos.h  src/

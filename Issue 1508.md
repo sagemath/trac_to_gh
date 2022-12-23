@@ -1,6 +1,6 @@
 # Issue 1508: axes_label in plot() broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1508
 
 Original creator: was
 

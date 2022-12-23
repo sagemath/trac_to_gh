@@ -1,6 +1,6 @@
 # Issue 3284: [with patch, needs work, SEGFAULTs!] use weakref for PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3284
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 2813: Add keycodes to split / join cells.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2813
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 8965: decorate.py: clarify normalize_input, Parallel and parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8965
 
 Original creator: jdc
 

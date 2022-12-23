@@ -1,6 +1,6 @@
 # Issue 2134: arrows for digraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2134
 
 Original creator: rlm
 
@@ -68,7 +68,7 @@ Robert, the patch currently doesn't apply cleanly any more due to
 
 ```
 changeset:   8329:657c0727bbd2
-user:        Robert L. Miller <rlm`@`rlmiller.org>
+user:        Robert L. Miller <rlm@rlmiller.org>
 date:        Thu Feb 07 00:18:51 2008 -0800
 summary:     plot loops.
 ```

@@ -1,6 +1,6 @@
 # Issue 877: "sage -coverage" should not care about functions which are local to other functions/methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/877
 
 Original creator: cwitty
 

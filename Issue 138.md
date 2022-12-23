@@ -1,6 +1,6 @@
 # Issue 138: HTML reference documentation incorrect links
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/138
 
 Original creator: moretti
 

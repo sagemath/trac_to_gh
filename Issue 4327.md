@@ -1,6 +1,6 @@
 # Issue 4327: Root systems plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4327
 
 Original creator: nthiery
 
@@ -119,7 +119,7 @@ sage: sage.misc.lazy_import.lazy_import('sage.combinat.root_system', 'plot')
 sage: type(plot)
 sage.misc.lazy_import.LazyImport
 sage: plot
-/opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) "$SAGE_ROOT/spkg/bin/sage" "$`@`"
+/opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) "$SAGE_ROOT/spkg/bin/sage" "$@"
 Process SAGE exited abnormally with code 139
 ```
 
@@ -239,23 +239,23 @@ Here is the metadiff:
 diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch
 --- a/trac_4327-root_system_plot_refactor-nt.patch
 +++ b/trac_4327-root_system_plot_refactor-nt.patch
-`@``@` -1,5 +1,5 `@``@`
+@@ -1,5 +1,5 @@
  # HG changeset patch
 -# Parent aa718acb2dbac8faab463c994aa7f4052a546363
 +# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a
  #4327: Refactor and extend root systems plots
  
  diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst
-`@``@` -2569,7 +2569,7 `@``@` diff --git a/sage/combinat/root_system/t
+@@ -2569,7 +2569,7 @@ diff --git a/sage/combinat/root_system/t
   import ambient_space
   
   class AmbientSpace(ambient_space.AmbientSpace):
--`@``@` -135,13 +136,38 `@``@` class AmbientSpace(ambient_space.Ambient
-+`@``@` -135,13 +136,36 `@``@` class AmbientSpace(ambient_space.Ambient
+-@@ -135,13 +136,38 @@ class AmbientSpace(ambient_space.Ambient
++@@ -135,13 +136,36 @@ class AmbientSpace(ambient_space.Ambient
           given, returns (k, ... ,k), the k-th power of the
           determinant.
   
-`@``@` -2582,14 +2582,8 `@``@` diff --git a/sage/combinat/root_system/t
+@@ -2582,14 +2582,8 @@ diff --git a/sage/combinat/root_system/t
           """
           return self.sum(self.monomial(j)*k for j in range(self.n))
   
@@ -272,7 +272,7 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +
  +        sage: L = RootSystem(["A",2]).ambient_space()
  +        sage: e = L.basis()
-`@``@` -2604,6 +2598,10 `@``@` diff --git a/sage/combinat/root_system/t
+@@ -2604,6 +2598,10 @@ diff --git a/sage/combinat/root_system/t
  +        (2, 2, 3, 0)
  +        sage: L._plot_projection(l)
  +        (0, -1121/1189, 7/3)
@@ -283,12 +283,12 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +    """
  +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']
   
-`@``@` -2621,18 +2619,12 `@``@` diff --git a/sage/combinat/root_system/t
+@@ -2621,18 +2619,12 @@ diff --git a/sage/combinat/root_system/t
   class AmbientSpace(ambient_space.AmbientSpace):
       """
       EXAMPLES::
--`@``@` -82,6 +82,32 `@``@` class AmbientSpace(ambient_space.Ambient
-+`@``@` -82,6 +82,30 `@``@` class AmbientSpace(ambient_space.Ambient
+-@@ -82,6 +82,32 @@ class AmbientSpace(ambient_space.Ambient
++@@ -82,6 +82,30 @@ class AmbientSpace(ambient_space.Ambient
           return Family({ 1: self([1,0,-1]),
                           2: self([2,-1,-1])})
   
@@ -305,7 +305,7 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +
  +        sage: L = RootSystem(["G",2]).ambient_space()
  +        sage: e = L.basis()
-`@``@` -2647,6 +2639,10 `@``@` diff --git a/sage/combinat/root_system/t
+@@ -2647,6 +2639,10 @@ diff --git a/sage/combinat/root_system/t
  +        (2, 2, 3, 0)
  +        sage: L._plot_projection(l)
  +        (0, -1121/1189, 7/3)
@@ -316,14 +316,14 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +    """
  +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']
  +
-`@``@` -3011,3 +3007,15 `@``@` diff --git a/sage/combinat/root_system/w
+@@ -3011,3 +3007,15 @@ diff --git a/sage/combinat/root_system/w
  -            G.axes(False)
  -            return G
  -
 +diff --git a/sage/doctest/sources.py b/sage/doctest/sources.py
 +--- a/sage/doctest/sources.py
 ++++ b/sage/doctest/sources.py
-+`@``@` -675,6 +675,8 `@``@` class FileDocTestSource(DocTestSource):
++@@ -675,6 +675,8 @@ class FileDocTestSource(DocTestSource):
 +             There are 18 tests in sage/combinat/partition.py that are not being run
 +             There are 12 tests in sage/combinat/tableau.py that are not being run
 +             There are 15 tests in sage/combinat/root_system/cartan_type.py that are not being run
@@ -414,14 +414,14 @@ For the record, here is the diff between the two patches:
 diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch
 --- a/trac_4327-root_system_plot_refactor-nt.patch
 +++ b/trac_4327-root_system_plot_refactor-nt.patch
-`@``@` -1,5 +1,5 `@``@`
+@@ -1,5 +1,5 @@
  # HG changeset patch
 -# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a
 +# Parent 75e26170e32bcbb5f78e1784a1df985ecb71e1db
  #4327: Refactor and extend root systems plots
  
  diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst
-`@``@` -631,7 +631,7 `@``@` new file mode 100644
+@@ -631,7 +631,7 @@ new file mode 100644
  +lazy_import("sage.combinat.root_system.root_lattice_realizations", "RootLatticeRealizations")
  +
  +class PlotOptions:
@@ -430,16 +430,16 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +    A class for plotting options for root lattice realizations.
  +
  +    .. SEEALSO::
-`@``@` -740,7 +740,7 `@``@` new file mode 100644
+@@ -740,7 +740,7 @@ new file mode 100644
  +
- +    `@`cached_method
+ +    @cached_method
  +    def in_bounding_box(self, x):
 -+        """
 ++        r"""
  +        Return whether ``x`` is in the bounding box.
  +
  +        INPUT:
-`@``@` -763,7 +763,7 `@``@` new file mode 100644
+@@ -763,7 +763,7 @@ new file mode 100644
  +        return self.bounding_box.contains(self.projection(x))
  +
  +    def text(self, label, position):
@@ -448,7 +448,7 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +        Return text widget with label ``label`` at position ``position``
  +
  +        INPUT:
-`@``@` -851,7 +851,7 `@``@` new file mode 100644
+@@ -851,7 +851,7 @@ new file mode 100644
  +                return self._color("other")
  +
  +    def projection(self, v):
@@ -457,7 +457,7 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +        Return the projection of ``v``.
  +
  +        INPUT:
-`@``@` -880,7 +880,7 `@``@` new file mode 100644
+@@ -880,7 +880,7 @@ new file mode 100644
  +        return v
  +
  +    def intersection_at_level_1(self, x):
@@ -466,7 +466,7 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +        Return ``x`` scaled at the appropriate level, if level is set;
  +        otherwise return ``x``.
  +
-`@``@` -912,7 +912,7 `@``@` new file mode 100644
+@@ -912,7 +912,7 @@ new file mode 100644
  +            return x
  +
  +    def empty(self, *args):
@@ -475,16 +475,16 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
  +        Return an empty plot.
  +
  +        EXAMPLES::
-`@``@` -1255,7 +1255,7 `@``@` new file mode 100644
+@@ -1255,7 +1255,7 @@ new file mode 100644
  +
- +`@`cached_function
+ +@cached_function
  +def barycentric_projection_matrix(n, angle=0):
 -+    """
 ++    r"""
  +    Returns a family of `n+1` vectors evenly spaced in a real vector space of dimension `n`
  +
  +    Those vectors are of norm `1`, the scalar product between any two
-`@``@` -2339,7 +2339,7 `@``@` diff --git a/sage/combinat/root_system/r
+@@ -2339,7 +2339,7 @@ diff --git a/sage/combinat/root_system/r
  +
  +
  +        def plot_bounding_box(self, **options):

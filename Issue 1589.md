@@ -1,6 +1,6 @@
 # Issue 1589: jmol -- using via https is a pain in the butt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1589
 
 Original creator: was
 

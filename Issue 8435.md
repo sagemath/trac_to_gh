@@ -1,6 +1,6 @@
 # Issue 8435: SageNB 0.7.5.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8435
 
 Original creator: mpatel
 

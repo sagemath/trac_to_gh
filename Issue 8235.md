@@ -1,6 +1,6 @@
 # Issue 8235: fix another doctest in base.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8235
 
 Original creator: wcauchois
 

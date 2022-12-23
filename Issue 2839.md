@@ -1,6 +1,6 @@
 # Issue 2839: bug in conversion from symmetrica's longint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2839
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 1124: ModularSymbol.complement crashes on full subspaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1124
 
 Original creator: syazdani
 

@@ -1,6 +1,6 @@
 # Issue 661: Integrate Trac with SAGE Wiki
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/661
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7782: cliquer build fails on HP-UX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7782
 
 Original creator: drkirkby
 

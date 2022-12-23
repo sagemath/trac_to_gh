@@ -1,6 +1,6 @@
 # Issue 7835: Preparsing on server does not account for unicode text
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7835
 
 Original creator: timdumol
 

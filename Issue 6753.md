@@ -1,6 +1,6 @@
 # Issue 6753: sage-4.1.1 -- bug in integral_elements_in_box
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6753
 
 Original creator: was
 

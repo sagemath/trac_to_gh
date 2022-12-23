@@ -1,6 +1,6 @@
 # Issue 6536: Constructor in sage.rings.number_field.order.Order calls a method of the wrong class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6536
 
 Original creator: davidloeffler
 

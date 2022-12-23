@@ -1,6 +1,6 @@
 # Issue 1136: libsingular tends to segfault with polynomials over Q
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1136
 
 Original creator: moretti
 

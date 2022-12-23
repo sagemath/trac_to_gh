@@ -1,6 +1,6 @@
 # Issue 9918: Wrap wraps-decorator working around bug when used with non-function callables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9919
 
 Original creator: jsrn
 

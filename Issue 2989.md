@@ -1,6 +1,6 @@
 # Issue 2989: [with patch; needs review] notebook -- issue with how the notebook is run that breaks it sometimes; also fix a typo in pid.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2989
 
 Original creator: was
 

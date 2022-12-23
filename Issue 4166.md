@@ -1,6 +1,6 @@
 # Issue 4166: Separate resource for @interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4166
 
 Original creator: itolkov
 

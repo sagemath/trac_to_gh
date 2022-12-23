@@ -1,6 +1,6 @@
 # Issue 6715: spell-check all modules under sage/logic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6715
 
 Original creator: mvngu
 

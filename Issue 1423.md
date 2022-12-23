@@ -1,6 +1,6 @@
 # Issue 1423: bug/issue in python.eval from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1423
 
 Original creator: was
 

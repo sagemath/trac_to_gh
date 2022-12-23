@@ -1,6 +1,6 @@
 # Issue 238: create a  meataxe-2.4.3.spkg package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/238
 
 Original creator: was
 
@@ -45,7 +45,7 @@ real    0m5.384s
 user    0m3.320s
 sys     0m1.631s
 sage: An error occured while installing meataxe-2.4.3
-Please email William Stein <wstein`@`gmail.com> explaining the
+Please email William Stein <wstein@gmail.com> explaining the
 problem and send him the relevant part of
 of /Users/was/s/install.log.  Don't send the whole thing.
 If you want to try to fix the problem, yourself *don't* just cd to

@@ -1,6 +1,6 @@
 # Issue 9858: Doctest failures due to hard-coded line numbers in (doctests of) sage/rings/*.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9859
 
 Original creator: leif
 

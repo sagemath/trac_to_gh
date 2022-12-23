@@ -1,6 +1,6 @@
 # Issue 8178: zn_poly fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8178
 
 Original creator: jsp
 
@@ -36,7 +36,7 @@ The spkg can be found here:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libzn_poly*
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libzn_poly*
 local/lib/libzn_poly-0.9.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libzn_poly.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libzn_poly.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped

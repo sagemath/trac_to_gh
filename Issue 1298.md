@@ -1,6 +1,6 @@
 # Issue 1298: [with spkg] To build atlas on osx, we need to actual build lapack on osx.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1298
 
 Original creator: jkantor
 

@@ -1,6 +1,6 @@
 # Issue 1456: gaussian_binomial bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1456
 
 Original creator: wdj
 

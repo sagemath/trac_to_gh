@@ -1,6 +1,6 @@
 # Issue 8163: Upgrade to Cython 0.12.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8163
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 3522: [with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3522
 
 Original creator: jsp
 

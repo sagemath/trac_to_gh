@@ -1,6 +1,6 @@
 # Issue 393: Very strange behavior of QQ -> RealField() conversion.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/393
 
 Original creator: jonhanke
 
@@ -21,7 +21,7 @@ Here is the output of the attached routine, which essentially does the same thin
 
 
 ```
-jonhanke`@`[~/Documents/sage-2.6/devel/sage-qfdevel/sage/quadratic_forms]: sage -br
+jonhanke@[~/Documents/sage-2.6/devel/sage-qfdevel/sage/quadratic_forms]: sage -br
 
 ----------------------------------------------------------
 sage: Building and installing modified SAGE library files.

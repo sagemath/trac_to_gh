@@ -1,6 +1,6 @@
 # Issue 3827: finance.TimeSeries -- missng docstring input option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3827
 
 Original creator: cswiercz
 

@@ -1,6 +1,6 @@
 # Issue 9108: Mark long doctests in rings/polynomial/symmetric_ideal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9108
 
 Original creator: leif
 
@@ -62,14 +62,14 @@ Comment by cremona created at 2010-06-01 16:22:36
 Before applying the patch to 4.4.3.alpha0:
 
 ```
-jec`@`selmer%sage -t sage/rings/polynomial/symmetric_ideal.py 
+jec@selmer%sage -t sage/rings/polynomial/symmetric_ideal.py 
 sage -t  "sage/rings/polynomial/symmetric_ideal.py"         
 	 [110.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 110.8 seconds
-jec`@`selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py 
+jec@selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py 
 sage -t -long "sage/rings/polynomial/symmetric_ideal.py"    
 	 [109.8 s]
  
@@ -81,13 +81,13 @@ Total time for all tests: 109.8 seconds
 and after:
 
 ```
-jec`@`selmer%sage -t sage/rings/polynomial/symmetric_ideal.py sage -t  "sage/rings/polynomial/symmetric_ideal.py"         
+jec@selmer%sage -t sage/rings/polynomial/symmetric_ideal.py sage -t  "sage/rings/polynomial/symmetric_ideal.py"         
 	 [16.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 16.5 seconds
-jec`@`selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py sage -t -long "sage/rings/polynomial/symmetric_ideal.py"    
+jec@selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py sage -t -long "sage/rings/polynomial/symmetric_ideal.py"    
 	 [108.2 s]
  
 ----------------------------------------------------------------------

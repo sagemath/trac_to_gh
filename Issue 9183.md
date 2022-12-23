@@ -1,6 +1,6 @@
 # Issue 9183: creating an expect element can modify a previously created expect element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9183
 
 Original creator: saliola
 

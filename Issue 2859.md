@@ -1,6 +1,6 @@
 # Issue 2859: plotting the vector (0,0,-1) really plots (0,0,1)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2859
 
 Original creator: jason
 

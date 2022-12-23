@@ -1,6 +1,6 @@
 # Issue 3977: [with patch, needs review] get interfaces/octave.py up to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3977
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 8860: incoherent types for real numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8860
 
 Original creator: zimmerma
 

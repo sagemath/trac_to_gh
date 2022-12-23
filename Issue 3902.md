@@ -1,6 +1,6 @@
 # Issue 3902: %cython -- add an option #clibinclude that is like cinclude; otherwise linking in your own libraries is impossible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3902
 
 Original creator: was
 

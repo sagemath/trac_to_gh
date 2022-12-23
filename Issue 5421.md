@@ -1,6 +1,6 @@
 # Issue 5421: Speedup is_isomorphic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5421
 
 Original creator: rlm
 
@@ -55,7 +55,7 @@ Comment by mabshoff created at 2009-03-02 19:59:13
 Yep, the patch definitely needs a rebase:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 --dry-run < trac_5421.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 --dry-run < trac_5421.patch 
 patching file sage/graphs/graph.py
 Hunk #1 succeeded at 335 (offset 70 lines).
 Hunk #2 succeeded at 7587 (offset 664 lines).
@@ -99,7 +99,7 @@ Comment by mabshoff created at 2009-03-02 23:24:38
 One doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.alpha1$ ./sage -t -long devel/sage/sage/combinat/words/suffix_trees.py
+mabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1$ ./sage -t -long devel/sage/sage/combinat/words/suffix_trees.py
 sage -t -long "devel/sage/sage/combinat/words/suffix_trees.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.alpha1/devel/sage/sage/combinat/words/suffix_trees.py", line 1263:

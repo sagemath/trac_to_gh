@@ -1,6 +1,6 @@
 # Issue 7645: 'set -e' used inappropriately in python-2.6.2.p4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7645
 
 Original creator: drkirkby
 

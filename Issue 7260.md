@@ -1,6 +1,6 @@
 # Issue 7260: [with patch; needs review] Inverse mod number field ideals: deal with several remaining problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7260
 
 Original creator: fwclarke
 

@@ -1,6 +1,6 @@
 # Issue 3280: Sage 3.0.2.rc0: fix rebuild Sage documentation issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3280
 
 Original creator: mabshoff
 

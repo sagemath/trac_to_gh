@@ -1,6 +1,6 @@
 # Issue 3138: [with patch, needs review] Singular multivariate polynomial ring has redundant _repr_ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3138
 
 Original creator: broune
 

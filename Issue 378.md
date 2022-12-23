@@ -1,6 +1,6 @@
 # Issue 378: user-specified sage load path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/378
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  rossk
 
 
 ```
-Utpal Sarkar <doetoe`@`gmail.com> 	
+Utpal Sarkar <doetoe@gmail.com> 	
 to sage-support
 	
 show details

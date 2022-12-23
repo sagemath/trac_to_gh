@@ -1,6 +1,6 @@
 # Issue 1358: update libtool's la files upon detection of a moved Sage install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1358
 
 Original creator: mabshoff
 

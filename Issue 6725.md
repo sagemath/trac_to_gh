@@ -1,6 +1,6 @@
 # Issue 6725: spell-check all modules under sage/monoids
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6725
 
 Original creator: mvngu
 

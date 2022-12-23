@@ -1,6 +1,6 @@
 # Issue 4073: disable colors in sage0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4073
 
 Original creator: malb
 

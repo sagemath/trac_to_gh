@@ -1,6 +1,6 @@
 # Issue 9489: doctest doc/en/thematic_tutorials/group_theory.rst failure on 't2.math' (Solaris 10 SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9489
 
 Original creator: drkirkby
 

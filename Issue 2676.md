@@ -1,6 +1,6 @@
 # Issue 2676: [with patch, needs easy review] is_equitable: flatten flattens too much!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2676
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 3312: dsage.setup() -- very serious bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3312
 
 Original creator: was
 

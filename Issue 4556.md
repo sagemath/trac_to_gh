@@ -1,6 +1,6 @@
 # Issue 4556: [with patch, needs review] nth_root for finite fields: document the fact that 'extend' is not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4556
 
 Original creator: jhpalmieri
 

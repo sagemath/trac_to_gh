@@ -1,6 +1,6 @@
 # Issue 1281: update compilation failure message with uptodate instructions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1281
 
 Original creator: mabshoff
 

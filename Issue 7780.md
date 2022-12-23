@@ -1,6 +1,6 @@
 # Issue 7780: latex problems from underscores in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7780
 
 Original creator: cremona
 

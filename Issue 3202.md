@@ -1,6 +1,6 @@
 # Issue 3202: show() smashes multiplied numbers together so the product looks like a number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3202
 
 Original creator: jason
 

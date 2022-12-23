@@ -1,6 +1,6 @@
 # Issue 8237: Sage does not recognize Maxima's complex ininity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8237
 
 Original creator: robert.marik
 

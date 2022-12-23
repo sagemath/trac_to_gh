@@ -1,6 +1,6 @@
 # Issue 2785: The glitelib ticket
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2785
 
 Original creator: gfurnish
 

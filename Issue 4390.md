@@ -1,6 +1,6 @@
 # Issue 4390: elliptic curves: heegner_index command broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4390
 
 Original creator: was
 

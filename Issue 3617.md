@@ -1,6 +1,6 @@
 # Issue 3617: LarentPolynomial.__call__ is broken for Laurent polynomial's that have negative exponents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3617
 
 Original creator: mhansen
 

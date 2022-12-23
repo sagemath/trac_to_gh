@@ -1,6 +1,6 @@
 # Issue 1284: G.subgroup([...]) for G an abelian group has at least one lame property
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1284
 
 Original creator: was
 

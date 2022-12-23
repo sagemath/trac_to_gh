@@ -1,6 +1,6 @@
 # Issue 361: implement tate's algorithm over number fields.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/361
 
 Original creator: was
 

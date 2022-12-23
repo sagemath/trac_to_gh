@@ -1,6 +1,6 @@
 # Issue 1326: 2.8.14/Solaris: combinat/combinat.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1326
 
 Original creator: mabshoff
 

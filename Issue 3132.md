@@ -1,6 +1,6 @@
 # Issue 3132: [PATCH] Add computation of multinomial coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3132
 
 Original creator: gebner
 

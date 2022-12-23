@@ -1,6 +1,6 @@
 # Issue 4288: _magma_init_ bug elliptic curve points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4288
 
 Original creator: robertwb
 

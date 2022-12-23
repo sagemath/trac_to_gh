@@ -1,6 +1,6 @@
 # Issue 239: x^(3/4) rounding issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/239
 
 Original creator: was
 

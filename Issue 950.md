@@ -1,6 +1,6 @@
 # Issue 950: include guava in sage (in the gap package?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/950
 
 Original creator: was
 

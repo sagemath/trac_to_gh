@@ -1,6 +1,6 @@
 # Issue 5695: Sgae 3.4.1.rc1: doctest failure in combinat/words/words.py on 32 bit boxen
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5695
 
 Original creator: mabshoff
 

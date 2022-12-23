@@ -1,6 +1,6 @@
 # Issue 2365: [with patch, needs review] with sage -wthread, attach runs code in wrong thread on subsequent loads
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2365
 
 Original creator: cwitty
 

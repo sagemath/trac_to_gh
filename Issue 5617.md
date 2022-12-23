@@ -1,6 +1,6 @@
 # Issue 5617: Delete the reference to solve_linear
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5617
 
 Original creator: jason
 

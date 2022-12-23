@@ -1,6 +1,6 @@
 # Issue 1690: make  "shift enter" work with Safari on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1690
 
 Original creator: mabshoff
 

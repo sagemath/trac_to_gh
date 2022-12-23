@@ -1,6 +1,6 @@
 # Issue 2318: dsage needs to provide database versioning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2318
 
 Original creator: yi
 

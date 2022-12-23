@@ -1,6 +1,6 @@
 # Issue 7895: Flint says SIZE_MAX is undeclared on Solaris 8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7895
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1448: iterate over MatrixSpace
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1448
 
 Original creator: malb
 

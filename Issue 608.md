@@ -1,6 +1,6 @@
 # Issue 608: bug in mobius
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/608
 
 Original creator: was
 
@@ -19,7 +19,7 @@ spring -- I have code that relies on it)
 --
 Joel
 
-joel`@`friedrich ~$ sage
+joel@friedrich ~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.3.6, Release Date: 2007-09-06                     |
@@ -29,8 +29,8 @@ sage: moebius(x+2)
 
  ***   not an integer argument in an arithmetic function
 /home/joel/sage/local/bin/sage-sage: line 190: 18621 Aborted
-sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
-joel`@`friedrich ~$
+sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
+joel@friedrich ~$
 ```
 
 

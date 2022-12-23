@@ -1,6 +1,6 @@
 # Issue 6360: [with spkg, needs review] Change -O2 to -O0 in singular spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6360
 
 Original creator: craigcitro
 

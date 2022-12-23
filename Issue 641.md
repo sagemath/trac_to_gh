@@ -1,6 +1,6 @@
 # Issue 641: from sage.all import * for spyx files/cython notebook cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/641
 
 Original creator: robertwb
 

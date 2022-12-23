@@ -1,6 +1,6 @@
 # Issue 2164: add fast iterator for partitions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2164
 
 Original creator: mhansen
 

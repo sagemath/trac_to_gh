@@ -1,6 +1,6 @@
 # Issue 7193: os x 10.6 -- print warning about Sage being broken, so we can release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7193
 
 Original creator: was
 
@@ -64,7 +64,7 @@ if you use the python platform module, you can check specifically for 10.6:
 
 ```
 >>> platform.mac_ver()
-('10.6.1', (_, _, ''), 'i386')
+('10.6.1', ('', '', ''), 'i386')
 ```
 
 

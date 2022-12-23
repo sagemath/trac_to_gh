@@ -1,6 +1,6 @@
 # Issue 2660: copy work around stdint.h on Solaris 9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2660
 
 Original creator: mabshoff
 

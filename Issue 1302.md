@@ -1,6 +1,6 @@
 # Issue 1302: bug in laurent_series integration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1302
 
 Original creator: was
 

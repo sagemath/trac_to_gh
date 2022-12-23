@@ -1,6 +1,6 @@
 # Issue 5680: Use new bits from FLINT 1.2.4 (followup to #5240)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5680
 
 Original creator: mabshoff
 

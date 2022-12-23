@@ -1,6 +1,6 @@
 # Issue 3672: wrong hg repository url in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3672
 
 Original creator: schilly
 

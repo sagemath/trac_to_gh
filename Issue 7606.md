@@ -1,6 +1,6 @@
 # Issue 7606: images not picked up when making source releases of Sage 4.3.alpha0 and 4.3.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7606
 
 Original creator: mvngu
 
@@ -32,14 +32,14 @@ alpha0 tarball. A result is that one would not see the image files in
 devel/sage-main/doc/fr/a_tour_of_sage. You can fix the missing files
 problem as follows:
 
-[mvngu`@`sage sage-4.3.alpha0-7473-sphinx]$ cd devel/sage-main/
-[mvngu`@`sage sage-main]$ hg st
+[mvngu@sage sage-4.3.alpha0-7473-sphinx]$ cd devel/sage-main/
+[mvngu@sage sage-main]$ hg st
 ! doc/fr/a_tour_of_sage/eigen_plot.png
 ! doc/fr/a_tour_of_sage/sin_plot.png
-[mvngu`@`sage sage-main]$ hg revert -a
+[mvngu@sage sage-main]$ hg revert -a
 reverting doc/fr/a_tour_of_sage/eigen_plot.png
 reverting doc/fr/a_tour_of_sage/sin_plot.png
-[mvngu`@`sage sage-main]$ hg st
+[mvngu@sage sage-main]$ hg st
 <no output>
 ```
 
@@ -60,14 +60,14 @@ Comment by mvngu created at 2009-12-05 12:42:33
 Here are some steps to fix the problem with missing image files. On a freshly compiled Sage 4.3.alpha1 or a newly unpacked binary of that version, do a Mercurial revert to recover the deleted images:
 
 ```
-[mvngu`@`sage sage-4.3.alpha1-7606-images]$ cd devel/sage-main/
-[mvngu`@`sage sage-main]$ hg st
+[mvngu@sage sage-4.3.alpha1-7606-images]$ cd devel/sage-main/
+[mvngu@sage sage-main]$ hg st
 ! doc/fr/a_tour_of_sage/eigen_plot.png
 ! doc/fr/a_tour_of_sage/sin_plot.png
-[mvngu`@`sage sage-main]$ hg revert -a
+[mvngu@sage sage-main]$ hg revert -a
 reverting doc/fr/a_tour_of_sage/eigen_plot.png
 reverting doc/fr/a_tour_of_sage/sin_plot.png
-[mvngu`@`sage sage-main]$ hg st
+[mvngu@sage sage-main]$ hg st
 <no output>
 ```
 

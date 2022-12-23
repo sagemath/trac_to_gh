@@ -1,6 +1,6 @@
 # Issue 4545: better fix for mixing @parallel with numerical constant preparsing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4545
 
 Original creator: craigcitro
 

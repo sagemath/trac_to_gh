@@ -1,6 +1,6 @@
 # Issue 366: VMWare notebook breaks when network connection changes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/366
 
 Original creator: boothby
 

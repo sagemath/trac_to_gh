@@ -1,6 +1,6 @@
 # Issue 7267: Add a compact color picker to SageNB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7267
 
 Original creator: mpatel
 
@@ -45,7 +45,7 @@ The patch
 Here's a compact example:
 
 ```python
-`@`interact
+@interact
 def _(color=color_selector((1,0,1), label='', widget='jpicker', hide_box=True)):
     show(plot(x / (8/7 + sin(x)), (x, -50, 50), fill=True, fillcolor=color))
 ```

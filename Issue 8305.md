@@ -1,6 +1,6 @@
 # Issue 8305: Improve documentation of Monsky-Washnitzer code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8305
 
 Original creator: kedlaya
 

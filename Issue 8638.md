@@ -1,6 +1,6 @@
 # Issue 8638: iconv -- make with SAGE_CHECK="yes" fails on iconv with x86_64 ubuntu
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8638
 
 Original creator: was
 
@@ -85,7 +85,7 @@ real    0m2.142s
 user    0m1.950s
 sys     0m0.140s
 Error building Sage.
-wjlaffin`@`dellbees:~/_sage$
+wjlaffin@dellbees:~/_sage$
 ```
 
 

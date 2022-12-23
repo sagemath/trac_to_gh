@@ -1,6 +1,6 @@
 # Issue 6675: doctest failure in sage/sage/misc/sagedoc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6675
 
 Original creator: mvngu
 
@@ -21,7 +21,7 @@ Linux cartan 2.6.28-15-generic #48-Ubuntu SMP Wed Jul 29 08:53:35 UTC
 
 Running make test gave one failing doctest, which is repeatable:
 
-[ghitza`@`cartan sage-4.1.1.rc1]$ ./sage -t devel/sage/sage/misc/sagedoc.py
+[ghitza@cartan sage-4.1.1.rc1]$ ./sage -t devel/sage/sage/misc/sagedoc.py
 sage -t  "devel/sage/sage/misc/sagedoc.py"
 **********************************************************************
 File "/opt/sage-4.1.1.rc1/devel/sage/sage/misc/sagedoc.py", line 360:
@@ -58,7 +58,7 @@ The same problem occurs on
 
 
 ```
-Linux artin 2.6.30-ARCH #1 SMP PREEMPT Fri Jul 31 18:10:38 UTC 2009 i686 Intel(R) Core(TM)2 Duo CPU T9300 `@` 2.50GHz GenuineIntel GNU/Linux
+Linux artin 2.6.30-ARCH #1 SMP PREEMPT Fri Jul 31 18:10:38 UTC 2009 i686 Intel(R) Core(TM)2 Duo CPU T9300 @ 2.50GHz GenuineIntel GNU/Linux
 ```
 
 

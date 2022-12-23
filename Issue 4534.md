@@ -1,6 +1,6 @@
 # Issue 4534: Stupid error in odd_part
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4534
 
 Original creator: craigcitro
 

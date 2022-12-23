@@ -1,6 +1,6 @@
 # Issue 9572: SageNB 0.8.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9572
 
 Original creator: mpatel
 

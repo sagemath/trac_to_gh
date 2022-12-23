@@ -1,6 +1,6 @@
 # Issue 9928: polynomial ring over pAdics doesn't respect the sparse argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9929
 
 Original creator: ylchapuy
 

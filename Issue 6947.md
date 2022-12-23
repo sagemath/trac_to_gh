@@ -1,6 +1,6 @@
 # Issue 6947: [with patch, needs review] make complex_plot() work for for fast_callable functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6947
 
 Original creator: bober
 

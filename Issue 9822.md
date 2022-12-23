@@ -1,6 +1,6 @@
 # Issue 9822: desolve_system is broken for a system of one equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9823
 
 Original creator: rhinton
 

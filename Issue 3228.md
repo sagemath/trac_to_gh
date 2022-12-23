@@ -1,6 +1,6 @@
 # Issue 3228: [with patch; needs review] notebook -- Account Settings Page with auto save, better styling, etc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3228
 
 Original creator: TimothyClemans
 

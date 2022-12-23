@@ -1,6 +1,6 @@
 # Issue 3993: implicit multiplication doesn't work in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3993
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 7400: ElementWrapper does not copy the wrapped values when copied
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7400
 
 Original creator: hivert
 

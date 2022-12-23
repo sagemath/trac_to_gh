@@ -1,6 +1,6 @@
 # Issue 3069: notebook -- typeset checkbox doesn't work after save/reload
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3069
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: boothby
 ```
 
 
-On Wed, Apr 30, 2008 at 11:36 AM, John H Palmieri <jhpalmieri64`@`gmail.com> wrote:
+On Wed, Apr 30, 2008 at 11:36 AM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
 > 
 >  This is with Sage 3.0, Firefox 2.0.0.14, linux.
 >  

@@ -1,6 +1,6 @@
 # Issue 5952: Worksheet downloading blocks the entire server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5952
 
 Original creator: robertwb
 

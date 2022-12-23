@@ -1,6 +1,6 @@
 # Issue 9642: sage-maketest and sage-test-new should be able to run tests in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9642
 
 Original creator: mpatel
 

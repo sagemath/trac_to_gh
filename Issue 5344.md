@@ -1,6 +1,6 @@
 # Issue 5344: [with patch, needs review] Singular/omalloc "double free" problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5344
 
 Original creator: GeorgSWeber
 

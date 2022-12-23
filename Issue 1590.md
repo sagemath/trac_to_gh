@@ -1,6 +1,6 @@
 # Issue 1590: notebook -- change it so changes are saved even in cells that aren't evaluated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1590
 
 Original creator: was
 

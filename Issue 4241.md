@@ -1,6 +1,6 @@
 # Issue 4241: magma -- memory is never freed in the interface when MagmaElement's are deleted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4241
 
 Original creator: was
 

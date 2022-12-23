@@ -1,6 +1,6 @@
 # Issue 706: irange --- also add range that includes the endpoints by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/706
 
 Original creator: was
 

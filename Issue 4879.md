@@ -1,6 +1,6 @@
 # Issue 4879: [with spkg, needs review] Update FLINT to 1.0.21 (latest 1.0.x upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4879
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7870: dozens of failures in magma optional test suite on skynet (eno) with sage-4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7870
 
 Original creator: was
 
@@ -44,7 +44,7 @@ Attachment
 I tested again using the new magma V2.16-7 with sage-4.3.5. 
 
 ```
-[wstein`@`eno sage-4.3.5]$ magma
+[wstein@eno sage-4.3.5]$ magma
 Magma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]
 Type ? for help.  Type <Ctrl>-D to quit.
 ```
@@ -208,7 +208,7 @@ John,
 I think you should give my patch a positive review anyways.  The problem above is that in Magma V2.16-7, this works fine:
 
 ```
-[wstein`@`eno ~]$ magma
+[wstein@eno ~]$ magma
 Magma V2.16-7     Mon Apr 26 2010 22:51:34 on eno      [Seed = 294390646]
 Type ? for help.  Type <Ctrl>-D to quit.
 > R<x> := PolynomialRing(Integers());
@@ -535,7 +535,7 @@ I don't have Magma, but do have Mathematica, so I thought I'd try
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.2.rc1$ ./sage -t -only_optional=mathematica devel/sage/sage
+drkirkby@hawk:~/sage-4.6.2.rc1$ ./sage -t -only_optional=mathematica devel/sage/sage
 sage -t -only_optional=mathematica "devel/sage/sage/probability/all.py"
 	 [0.1 s]
 sage -t -only_optional=mathematica "devel/sage/sage/probability/__init__.py"

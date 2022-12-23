@@ -1,6 +1,6 @@
 # Issue 1757: implement Coppersmith's method for finding small roots of univariate polynomials modulo an integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1757
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 2920: gcc 4.3: fix rubiks.spkg build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2920
 
 Original creator: mabshoff
 

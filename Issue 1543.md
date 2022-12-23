@@ -1,6 +1,6 @@
 # Issue 1543: rpy build fails if "tail -1" doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1543
 
 Original creator: craigcitro
 

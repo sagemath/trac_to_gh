@@ -1,6 +1,6 @@
 # Issue 7174: ghmm redirects compiler warnings to /dev/null
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7174
 
 Original creator: drkirkby
 

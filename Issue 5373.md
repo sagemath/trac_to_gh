@@ -1,6 +1,6 @@
 # Issue 5373: [with patch, needs review] fix problem in builder.copytree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5373
 
 Original creator: mhansen
 

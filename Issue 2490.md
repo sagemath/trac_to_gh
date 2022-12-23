@@ -1,6 +1,6 @@
 # Issue 2490: Faster matrix_from_rows_and_columns
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2490
 
 Original creator: jsp
 

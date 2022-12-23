@@ -1,6 +1,6 @@
 # Issue 1402: 'mwrank' has termination issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1402
 
 Original creator: justin
 
@@ -151,7 +151,7 @@ For more details see the file mwrank.doc.
 For details of algorithms see the author's book.
 
 Please acknowledge use of this program in published work,
-and send problems to john.cremona`@`gmail.com.
+and send problems to john.cremona@gmail.com.
 
 Version compiled on Jan  4 2008 at 23:55:58 by GCC 4.3.0 20080104 [trunk revision 131325]
 using base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)

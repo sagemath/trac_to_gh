@@ -1,6 +1,6 @@
 # Issue 4941: pari list slicing is extremely slow -- make it much faster
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4941
 
 Original creator: was
 

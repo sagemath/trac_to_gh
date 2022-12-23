@@ -1,6 +1,6 @@
 # Issue 2521: Bug in gauss_sum_numerical in degenerate case (probably easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2521
 
 Original creator: was
 

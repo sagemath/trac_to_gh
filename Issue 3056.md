@@ -1,6 +1,6 @@
 # Issue 3056: bug with polynomials over power series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3056
 
 Original creator: kedlaya
 

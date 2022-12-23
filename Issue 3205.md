@@ -1,6 +1,6 @@
 # Issue 3205: when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3205
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 5374: [with patch, needs review] minor problem with ReST in misc/hg.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5374
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 2673: Upgrade mercurial to the 1.0 release.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2673
 
 Original creator: mabshoff
 

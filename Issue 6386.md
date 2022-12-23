@@ -1,6 +1,6 @@
 # Issue 6386: [with patch, needs review] Implement elliptic exponential
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6386
 
 Original creator: cremona
 

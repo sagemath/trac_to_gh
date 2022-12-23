@@ -1,6 +1,6 @@
 # Issue 8194: SageNB 0.8.x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8194
 
 Original creator: mpatel
 

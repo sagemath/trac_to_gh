@@ -1,6 +1,6 @@
 # Issue 7573: Sage crashes if insufficient data is provided for MIP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7573
 
 Original creator: malb
 

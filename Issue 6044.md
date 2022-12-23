@@ -1,6 +1,6 @@
 # Issue 6044: Enhanced reduction modulo ideals of number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6044
 
 Original creator: mtaranes
 

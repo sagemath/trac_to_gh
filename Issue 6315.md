@@ -1,6 +1,6 @@
 # Issue 6315: optional doctest failure -- caused by mistakes in lectures on number theory rst book
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6315
 
 Original creator: was
 

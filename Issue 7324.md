@@ -1,6 +1,6 @@
 # Issue 7324: improve order_from_multiple
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7324
 
 Original creator: ylchapuy
 

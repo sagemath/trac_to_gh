@@ -1,6 +1,6 @@
 # Issue 1223: doctest timeouts in sage/plot/plot.py on slow systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1223
 
 Original creator: mabshoff
 

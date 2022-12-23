@@ -1,6 +1,6 @@
 # Issue 6146: [with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that do *NOT* support readlink -f)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6146
 
 Original creator: was
 

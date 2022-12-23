@@ -1,6 +1,6 @@
 # Issue 8102: Simplify Sphinxify
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8102
 
 Original creator: mpatel
 

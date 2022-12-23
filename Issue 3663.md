@@ -1,6 +1,6 @@
 # Issue 3663: add support for affine crystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3663
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5268: General design and documentation for Combinatorial Classes.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5268
 
 Original creator: hivert
 

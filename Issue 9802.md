@@ -1,6 +1,6 @@
 # Issue 9802: Generalize and document the random_matrix constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9803
 
 Original creator: rbeezer
 

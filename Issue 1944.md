@@ -1,6 +1,6 @@
 # Issue 1944: subsections not honored in ref manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1944
 
 Original creator: jason
 

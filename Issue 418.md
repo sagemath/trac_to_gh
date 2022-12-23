@@ -1,6 +1,6 @@
 # Issue 418: Wrap MiniSAT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/418
 
 Original creator: malb
 
@@ -271,7 +271,7 @@ I fixed a few trivial things below, but there's more to be done:
 diff -r ef5eaff5d6cd module_list.py
 --- a/module_list.py    Fri Jun 29 17:04:34 2012 +0100
 +++ b/module_list.py    Sun Jul 01 23:40:53 2012 +0200
-`@``@` -1891,12 +1891,12 `@``@`
+@@ -1891,12 +1891,12 @@
      ext_modules.extend([
          Extension("sage.sat.solvers.cryptominisat.cryptominisat",
                    ["sage/sat/solvers/cryptominisat/cryptominisat.pyx"],
@@ -289,7 +289,7 @@ diff -r ef5eaff5d6cd module_list.py
 diff -r ef5eaff5d6cd sage/sat/solvers/cryptominisat/solverconf_helper.h
 --- a/sage/sat/solvers/cryptominisat/solverconf_helper.h        Fri Jun 29 17:04:34 2012 +0100
 +++ b/sage/sat/solvers/cryptominisat/solverconf_helper.h        Sun Jul 01 23:40:53 2012 +0200
-`@``@` -14,7 +14,7 `@``@`
+@@ -14,7 +14,7 @@
   *                  http://www.gnu.org/licenses/
   ****************************************************************************/
 

@@ -1,6 +1,6 @@
 # Issue 5629: refactor dimension() of schemes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5629
 
 Original creator: AlexGhitza
 

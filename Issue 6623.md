@@ -1,6 +1,6 @@
 # Issue 6623: Memory leak when calling binomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6623
 
 Original creator: hartke
 

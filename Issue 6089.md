@@ -1,6 +1,6 @@
 # Issue 6089: [with patch, needs review] view command: don't always use jsMath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6089
 
 Original creator: jhpalmieri
 

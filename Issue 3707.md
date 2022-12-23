@@ -1,6 +1,6 @@
 # Issue 3707: Make all common Sage classes convertible to SymPy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3707
 
 Original creator: certik
 
@@ -121,7 +121,7 @@ $ hg di
 diff -r 25553a0bd339 sage/calculus/calculus.py
 --- a/sage/calculus/calculus.py	Mon Aug 18 11:04:52 2008 +0100
 +++ b/sage/calculus/calculus.py	Tue Aug 19 15:18:50 2008 -0700
-`@``@` -5099,7 +5099,8 `@``@`
+@@ -5099,7 +5099,8 @@
  
          EXAMPLE:
              sage: x,y = var('x,y')

@@ -1,6 +1,6 @@
 # Issue 3121: @interact grid control
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3121
 
 Original creator: jason
 
@@ -14,7 +14,7 @@ With the patch, this is possible:
 
 
 ```
-`@`interact
+@interact
 def _(M=input_grid(3,3, default=identity_matrix(3).list(), input_type=MatrixSpace(RDF,3,3))):
     decomp = M.SVD()
     matrices=[latex(mat) for mat in [M,decomp[0],decomp[1],decomp[2].transpose()]]
@@ -40,9 +40,9 @@ With the updated patch, the following two examples work beautifully:
 
 ```
 
-`@`interact
-def _(v=input_grid(1,3,default=[This is the Trac macro *1,2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3-macro), to_value=lambda x: vector(flatten(x)), width=1),
-w=input_grid(1,3,default=[This is the Trac macro *1,0,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,3-macro), to_value=lambda x: vector(flatten(x)), width=1)):
+@interact
+def _(v=input_grid(1,3,default=[[1,2,3]], to_value=lambda x: vector(flatten(x)), width=1),
+w=input_grid(1,3,default=[[1,0,3]], to_value=lambda x: vector(flatten(x)), width=1)):
     print jsmath("%s \cdot %s = %s"%(latex(v), latex(w), latex(v*w)))
 
 
@@ -52,7 +52,7 @@ w=input_grid(1,3,default=[This is the Trac macro *1,0,3* that was inherited from
 
 
 ```
-`@`interact
+@interact
 def _(M=input_grid(3,3, default=identity_matrix(3).rows(), to_value=MatrixSpace(RDF,3,3))):
     decomp = M.SVD()
     matrices=[latex(mat) for mat in [M,decomp[0],decomp[1],decomp[2].transpose()]]
@@ -76,7 +76,7 @@ Some minor comments.
  * The docstring for input_grid? should have an example that gets me going using input_grid, i.e., that actually uses interact.  Here's a nice example
 
 ```
-`@`interact
+@interact
 def _(a = input_grid(2,2, default = [[1,7],[3,4]], label='M', width=10), 
       v = input_grid(2,1, default=[[1],[2]], label='v', width=10)):
     m = matrix(a); v = matrix(v)
@@ -140,7 +140,7 @@ Comment by was created at 2008-05-08 15:53:05
 I tried the example:
 
 ```
-`@`interact
+@interact
 def _(a = input_grid(2,2, default = [[1,7],[3,4]], label='M', width=10), 
       v = input_grid(2,1, default=[[1],[2]], label='v', width=10)):
     m = matrix(a); v = matrix(v)
@@ -210,7 +210,7 @@ I also added an is_Matrix check to the automatic controls, so something like:
 
 
 ```
-`@`interact
+@interact
 def _(A=matrix(3,3)):
     print A
 ```

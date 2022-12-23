@@ -1,6 +1,6 @@
 # Issue 567: ode_solver: display a user-friendly error message if the jacobian is not provided for the bsimp algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/567
 
 Original creator: pdenapo
 

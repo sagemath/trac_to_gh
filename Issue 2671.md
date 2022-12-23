@@ -1,6 +1,6 @@
 # Issue 2671: implement matrix/vector function similar to numpy's where or matlab's find
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2671
 
 Original creator: jason
 

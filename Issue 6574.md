@@ -1,6 +1,6 @@
 # Issue 6574: Type issue in is_quadratic_twist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6574
 
 Original creator: wuthrich
 

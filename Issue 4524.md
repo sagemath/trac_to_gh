@@ -1,6 +1,6 @@
 # Issue 4524: interact : incomplete default string in the input box
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4524
 
 Original creator: slabbe
 
@@ -15,7 +15,7 @@ The folowing example works well
 
 
 ```
-`@`interact
+@interact
 def _(a=input_box(default='interact is "cool"',type=str,label='Name:')):
     print a
 ```
@@ -25,7 +25,7 @@ and it puts *interact is "cool"* in the input box. But in the next one,
 
 
 ```
-`@`interact
+@interact
 def _(a=input_box(default="interact is 'cool'",type=str,label='Name:')):
     print a
 ```

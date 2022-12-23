@@ -1,6 +1,6 @@
 # Issue 1642: Fortran.spkg: search for common Fortran compiles if no binary is present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1642
 
 Original creator: mabshoff
 

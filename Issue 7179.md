@@ -1,6 +1,6 @@
 # Issue 7179: HP-UX sympow-1.018.1.p6 fail to find atoll(). Will atol() do?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7179
 
 Original creator: drkirkby
 

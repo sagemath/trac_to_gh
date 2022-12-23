@@ -1,6 +1,6 @@
 # Issue 6395: magma interface: make magma_colon_equals mode work in both command line and notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6395
 
 Original creator: was
 

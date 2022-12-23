@@ -1,6 +1,6 @@
 # Issue 180: -s option to sage issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/180
 
 Original creator: was
 

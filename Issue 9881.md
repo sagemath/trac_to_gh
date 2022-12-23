@@ -1,6 +1,6 @@
 # Issue 9881: slow random_element() for integer mod ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9882
 
 Original creator: dmharvey
 
@@ -144,7 +144,7 @@ diff --git a/src/sage/rings/finite_rings/integer_mod.pxd b/src/sage/rings/finite
 index 8067647..358c902 100644
 --- a/src/sage/rings/finite_rings/integer_mod.pxd
 +++ b/src/sage/rings/finite_rings/integer_mod.pxd
-`@``@` -17,6 +17,7 `@``@` cdef class IntegerMod_abstract(FiniteRingElement):
+@@ -17,6 +17,7 @@ cdef class IntegerMod_abstract(FiniteRingElement):
      cdef _new_c_from_long(self, long value)
      cdef void set_from_mpz(self, mpz_t value)
      cdef void set_from_long(self, long value)
@@ -156,12 +156,12 @@ diff --git a/src/sage/rings/finite_rings/integer_mod.pyx b/src/sage/rings/finite
 index a5d3209..bfb121a 100644
 --- a/src/sage/rings/finite_rings/integer_mod.pyx
 +++ b/src/sage/rings/finite_rings/integer_mod.pyx
-`@``@` -1,3 +1,4 `@``@`
+@@ -1,3 +1,4 @@
 +# cython: profile=True
  r"""
  Elements of `\ZZ/n\ZZ`
  
-`@``@` -69,6 +70,8 `@``@` TESTS::
+@@ -69,6 +70,8 @@ TESTS::
  
  include "sage/ext/interrupt.pxi"  # ctrl-c interrupt block support
  include "sage/ext/stdsage.pxi"
@@ -170,7 +170,7 @@ index a5d3209..bfb121a 100644
  
  from cpython.int cimport *
  from cpython.list cimport *
-`@``@` -185,6 +188,13 `@``@` def IntegerMod(parent, value):
+@@ -185,6 +188,13 @@ def IntegerMod(parent, value):
      else:
          return IntegerMod_gmp(parent, value)
  
@@ -184,7 +184,7 @@ index a5d3209..bfb121a 100644
  def is_IntegerMod(x):
      """
      Return ``True`` if and only if x is an integer modulo
-`@``@` -322,6 +332,9 `@``@` cdef class IntegerMod_abstract(FiniteRingElement):
+@@ -322,6 +332,9 @@ cdef class IntegerMod_abstract(FiniteRingElement):
      cdef void set_from_long(self, long value):
          raise NotImplementedError, "Must be defined in child class."
  
@@ -194,7 +194,7 @@ index a5d3209..bfb121a 100644
      def __abs__(self):
          """
          Raise an error message, since ``abs(x)`` makes no sense
-`@``@` -1706,6 +1719,9 `@``@` cdef class IntegerMod_gmp(IntegerMod_abstract):
+@@ -1706,6 +1719,9 @@ cdef class IntegerMod_gmp(IntegerMod_abstract):
          if value < 0 or mpz_cmp_si(self.__modulus.sageInteger.value, value) >= 0:
              mpz_mod(self.value, self.value, self.__modulus.sageInteger.value)
  
@@ -208,7 +208,7 @@ diff --git a/src/sage/rings/finite_rings/integer_mod_ring.py b/src/sage/rings/fi
 index 3ed643b..c11db8a 100644
 --- a/src/sage/rings/finite_rings/integer_mod_ring.py
 +++ b/src/sage/rings/finite_rings/integer_mod_ring.py
-`@``@` -1224,10 +1224,10 `@``@` class IntegerModRing_generic(quotient_ring.QuotientRing_generic):
+@@ -1224,10 +1224,10 @@ class IntegerModRing_generic(quotient_ring.QuotientRing_generic):
              sage: R.random_element()
              2
          """

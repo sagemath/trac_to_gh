@@ -1,6 +1,6 @@
 # Issue 3639: [witch patch, needs review] reenable dsage doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3639
 
 Original creator: yi
 

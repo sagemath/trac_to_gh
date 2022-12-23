@@ -1,6 +1,6 @@
 # Issue 808: construction of function fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/808
 
 Original creator: nbruin
 

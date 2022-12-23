@@ -1,6 +1,6 @@
 # Issue 1031: Add Py_ssize_t info to developer manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1031
 
 Original creator: robertwb
 

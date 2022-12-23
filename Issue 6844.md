@@ -1,6 +1,6 @@
 # Issue 6844: Clean up spkg-install for readline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6844
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 4696: coercion system doesn't expect pickled parents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4696
 
 Original creator: burcin
 

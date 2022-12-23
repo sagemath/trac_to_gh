@@ -1,6 +1,6 @@
 # Issue 6476: upgrade Singular to 3.1.0.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6476
 
 Original creator: rlm
 

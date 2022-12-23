@@ -1,6 +1,6 @@
 # Issue 7685: integer.pyx: factor docstring lies about output -- fix this
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7685
 
 Original creator: was
 

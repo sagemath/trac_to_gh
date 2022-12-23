@@ -1,6 +1,6 @@
 # Issue 9075: sage.structure.sage_object.unpickle_all improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9075
 
 Original creator: nthiery
 

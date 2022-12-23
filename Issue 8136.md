@@ -1,6 +1,6 @@
 # Issue 8136: fix ref manual issues in linear_code.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8136
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 424: GMP development code for fast GCD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/424
 
 Original creator: dmharvey
 

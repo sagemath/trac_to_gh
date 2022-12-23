@@ -1,6 +1,6 @@
 # Issue 9556: Dynamic attributes for symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9556
 
 Original creator: SimonKing
 

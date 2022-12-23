@@ -1,6 +1,6 @@
 # Issue 638: notebook improvement -- allow comment at beginning of text version of notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/638
 
 Original creator: was
 

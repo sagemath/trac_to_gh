@@ -1,6 +1,6 @@
 # Issue 9647: instructive example for mip.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9647
 
 Original creator: schilly
 

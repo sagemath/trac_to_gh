@@ -1,6 +1,6 @@
 # Issue 6775: Having an easy to use Disjoint Set data structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6775
 
 Original creator: slabbe
 
@@ -54,7 +54,7 @@ I just added a patch. I have two issues :
 
 
 ```
-slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-combinat/sage/sets$ sage
+slabbe@slabbe-laptop:~/sage-4.1/devel/sage-combinat/sage/sets$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: combinat
@@ -173,7 +173,7 @@ The patch trac_6775-with_dealloc-sl.patch puts back the dealloc. I now get a mys
 
 
 ```
-slabbe`@`pol:~/sage-4.2/devel/sage-combinat/sage/sets$ sage -t disjoint_set.pyx
+slabbe@pol:~/sage-4.2/devel/sage-combinat/sage/sets$ sage -t disjoint_set.pyx
 sage -t  "devel/sage-combinat/sage/sets/disjoint_set.pyx"   
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 	 [2.3 s]

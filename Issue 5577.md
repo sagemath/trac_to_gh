@@ -1,6 +1,6 @@
 # Issue 5577: [with patch, needs review] typo in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5577
 
 Original creator: jhpalmieri
 

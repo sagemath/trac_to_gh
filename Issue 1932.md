@@ -1,6 +1,6 @@
 # Issue 1932: weird hg bug?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1932
 
 Original creator: craigcitro
 

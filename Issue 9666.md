@@ -1,6 +1,6 @@
 # Issue 9666: Implement __hash__ for NumberFieldIdeal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9666
 
 Original creator: jdemeyer
 

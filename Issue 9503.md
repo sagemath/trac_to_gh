@@ -1,6 +1,6 @@
 # Issue 9503: FreeModule_submodule_with_basis_pid calls wrong constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9503
 
 Original creator: novoselt
 

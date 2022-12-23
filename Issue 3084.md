@@ -1,6 +1,6 @@
 # Issue 3084: Solve Sudoku faster!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3084
 
 Original creator: boothby
 

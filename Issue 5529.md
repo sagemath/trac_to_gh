@@ -1,6 +1,6 @@
 # Issue 5529: bring documentation of classical.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5529
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2624: parallel testing: sage -tp foo/bar/file.py is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2624
 
 Original creator: mabshoff
 
@@ -107,7 +107,7 @@ Comment by ddrake created at 2009-09-23 01:11:40
 With this patch, when I do something like "sage -tp fjfjfjfjfj", it doesn't tell me that I gave it a bad file:
 
 ```
-drake`@`klee:/var/tmp/sage-4.1.2.alpha2$ ./sage -tp fjfjfj 
+drake@klee:/var/tmp/sage-4.1.2.alpha2$ ./sage -tp fjfjfj 
 Global iterations: 1
 File iterations: 1
 Using cached timings to run longest doctests first.

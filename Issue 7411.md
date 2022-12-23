@@ -1,6 +1,6 @@
 # Issue 7411: improve the speed of inverse RSK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7411
 
 Original creator: ylchapuy
 

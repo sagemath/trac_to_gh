@@ -1,6 +1,6 @@
 # Issue 1133: issue with gap and large permutations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1133
 
 Original creator: was
 
@@ -86,10 +86,10 @@ Solution-ish:
 
 ```
 ---------- Forwarded message ----------
-From: Steve Linton <sal`@`cs.st-and.ac.uk>
+From: Steve Linton <sal@cs.st-and.ac.uk>
 Date: Nov 9, 2007 3:49 AM
 Subject: Re: Fwd: [sage-support] Issue with interface to Gap in 2.8.12
-To: David Joyner <wdjoyner`@`gmail.com>
+To: David Joyner <wdjoyner@gmail.com>
 
 
 Distinction between Print and View is the issue here. Viw truncates, Print
@@ -163,7 +163,7 @@ Comment by mabshoff created at 2008-04-01 17:47:26
 This works:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.11, Release Date: 2008-03-30                        |

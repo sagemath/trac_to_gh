@@ -1,6 +1,6 @@
 # Issue 633: spkg-[install|check] should verify that SAGE_LOCAL is defined
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/633
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Keywords: spkg-install, spkg-check
 When building spkgs manually by invoking spkg-install on the shell I oftern do not have sage-env sourced. Consequently odd things happen:
 
 ```
-[mabshoff`@`m940 mpfr-2.2.1.p1]$ ./spkg-install
+[mabshoff@m940 mpfr-2.2.1.p1]$ ./spkg-install
 ./spkg-install: line 16: [: =: unary operator expected
 ```
 

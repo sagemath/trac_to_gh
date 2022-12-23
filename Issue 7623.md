@@ -1,6 +1,6 @@
 # Issue 7623: Name OS X distributions automatically for PPC or Intel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7623
 
 Original creator: kcrisman
 

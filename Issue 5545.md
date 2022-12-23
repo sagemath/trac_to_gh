@@ -1,6 +1,6 @@
 # Issue 5545: bug in sage's Cython dependency tracker
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5545
 
 Original creator: cwitty
 
@@ -37,8 +37,8 @@ Comment by jdemeyer created at 2014-09-02 09:19:21
 worksforme:
 
 ```
-jdemeyer`@`tamiyo:/usr/local/src/sage-git$ touch src/sage/rings/real_mpfi.pxd
-jdemeyer`@`tamiyo:/usr/local/src/sage-git$ ./sage -b
+jdemeyer@tamiyo:/usr/local/src/sage-git$ touch src/sage/rings/real_mpfi.pxd
+jdemeyer@tamiyo:/usr/local/src/sage-git$ ./sage -b
 scons: `install' is up to date.
 Updating Cython code....
 Enabling Cython debugging support

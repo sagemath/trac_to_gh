@@ -1,6 +1,6 @@
 # Issue 8586: Integer overflow in vector_space_dimension()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8586
 
 Original creator: malb
 

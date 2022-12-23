@@ -1,6 +1,6 @@
 # Issue 3048: add generic LU decomposition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3048
 
 Original creator: mhansen
 

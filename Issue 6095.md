@@ -1,6 +1,6 @@
 # Issue 6095: implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6095
 
 Original creator: was
 

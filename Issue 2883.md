@@ -1,6 +1,6 @@
 # Issue 2883: notebook -- typing in safari is sluggish!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2883
 
 Original creator: boothby
 
@@ -23,7 +23,7 @@ Comment by was created at 2008-04-12 04:06:12
 This patch is impossible to apply.  It has this line in it
 
 ```
-`@``@` -790,6 +794,29 `@``@` function resize_all_cells() {
+@@ -790,6 +794,29 @@ function resize_all_cells() {
 ```
 
 which is the only mention of the resize_all_cells function.  So it
@@ -44,7 +44,7 @@ Comment by mabshoff created at 2008-04-13 00:37:01
 I am getting rejects against my merge tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha4/devel/sage$ patch -p1 --dry-run < trac_2883-resize-flood.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha4/devel/sage$ patch -p1 --dry-run < trac_2883-resize-flood.patch
 patching file sage/server/notebook/cell.py
 Hunk #1 FAILED at 646.
 1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/cell.py.rej

@@ -1,6 +1,6 @@
 # Issue 2933: calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2933
 
 Original creator: was
 

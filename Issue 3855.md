@@ -1,6 +1,6 @@
 # Issue 3855: point3d size default is too small to see
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3855
 
 Original creator: rlm
 

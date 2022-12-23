@@ -1,6 +1,6 @@
 # Issue 8610: fix caching bug in modular/modsym/element.pyx (very easy to review!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8610
 
 Original creator: was
 

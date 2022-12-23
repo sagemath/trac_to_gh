@@ -1,6 +1,6 @@
 # Issue 9938: Remove unnecessary .hgtags.orig, SConstruct.orig, and hgrc files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9939
 
 Original creator: mpatel
 

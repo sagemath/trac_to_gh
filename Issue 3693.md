@@ -1,6 +1,6 @@
 # Issue 3693: upgrade moinmoin to 1.7.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3693
 
 Original creator: was
 
@@ -354,7 +354,7 @@ Comment by was created at 2009-12-21 22:44:06
 1.  Notice the ? below; we need to add mointwisted.py to the hg repo in the spkg.
 
 ```
-wstein`@`sage:~/build/referee/sage-4.3.rc0/moin-1.9.0.p0$              hg status
+wstein@sage:~/build/referee/sage-4.3.rc0/moin-1.9.0.p0$              hg status
 M patches/wikiconfig.py
 M spkg-install
 ? patches/mointwisted.py
@@ -375,7 +375,7 @@ I.e.., I immediately got a prompt back.
 This is especially bad because once I exit sage the moin wiki is left running:
 
 ```
-wstein`@`sage:~/build/referee/sage-4.3.rc0$ ps ax |grep moin
+wstein@sage:~/build/referee/sage-4.3.rc0$ ps ax |grep moin
  4012 ?        Sl     0:00 python /scratch/wstein/build/referee/sage-4.3.rc0/local/bin/twistd moin -p 9000 -a 
  4021 pts/135  S+     0:00 grep moin
 ```

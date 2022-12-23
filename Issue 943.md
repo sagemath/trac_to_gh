@@ -1,6 +1,6 @@
 # Issue 943: echelon_form over ZZ (hermite form) -- add ntl as additional optional algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/943
 
 Original creator: was
 

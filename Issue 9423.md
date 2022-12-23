@@ -1,6 +1,6 @@
 # Issue 9423: Gap interface for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9423
 
 Original creator: SimonKing
 

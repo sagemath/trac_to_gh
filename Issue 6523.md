@@ -1,6 +1,6 @@
 # Issue 6523: .is_zero() method raises error for symbolic expression involving derivative
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6523
 
 Original creator: gmhossain
 

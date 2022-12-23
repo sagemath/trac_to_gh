@@ -1,6 +1,6 @@
 # Issue 9171: cygwin: some test failures in sagedoc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9171
 
 Original creator: was
 

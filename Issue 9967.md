@@ -1,6 +1,6 @@
 # Issue 9967: Stop Dancing Links polluting the global namespace
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9968
 
 Original creator: davidloeffler
 

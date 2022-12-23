@@ -1,6 +1,6 @@
 # Issue 3176: add 64 bit OSX build support to sqlite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3176
 
 Original creator: mabshoff
 

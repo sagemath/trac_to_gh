@@ -1,6 +1,6 @@
 # Issue 9343: upgrade pari to version 2.4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9343
 
 Original creator: was
 
@@ -1230,7 +1230,7 @@ and comparing it to the GMP libraries that were installed, the version numbers d
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5/local/lib$ ls -ld libgmp*
+drkirkby@hawk:~/sage-4.5/local/lib$ ls -ld libgmp*
 -rwxr-xr-x+  1 drkirkby staff        803 Jul 16 13:10 libgmp.la
 lrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so -> libgmp.so.3.4.6
 lrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so.3 -> libgmp.so.3.4.6
@@ -3471,14 +3471,14 @@ was the right thing to do after `hg qimport` of the library patches. So I could 
 
 
 ```
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch
 adding sagelib_9343_combined6.patch to series file
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch
 adding sagelib_9343-heegner_ell_ratioanal.patch to series file
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch
 adding 9343_jd_review.patch to series file
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a
 applying 9343_jd_review.patch
 patching file sage/interfaces/gp.py
 Hunk #1 FAILED at 599
@@ -3522,7 +3522,7 @@ Hunk #1 FAILED at 0
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh 9343_jd_review.patch
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
+drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
 ```
 
 
@@ -3641,9 +3641,9 @@ Replying to [comment:224 cremona]:
 However, this needs cleaning up:
 
 ```
-jec`@`selmer%pwd
+jec@selmer%pwd
 /storage/jec/sage-4.6.prealpha0/devel/sage
-jec`@`selmer%hg status
+jec@selmer%hg status
 ! sage/schemes/elliptic_curves/gp_cremona.py
 ```
 
@@ -3658,9 +3658,9 @@ Replying to [comment:225 cremona]:
 > However, this needs cleaning up:
 
 ```
-jec`@`selmer%pwd
+jec@selmer%pwd
 /storage/jec/sage-4.6.prealpha0/devel/sage
-jec`@`selmer%hg status
+jec@selmer%hg status
 ! sage/schemes/elliptic_curves/gp_cremona.py
 ```
 
@@ -3695,7 +3695,7 @@ hg qpush -a}}
 Looking for help on that:
 
 {{{
-drkirkby`@`hawk:~$ hg qpush -h
+drkirkby@hawk:~$ hg qpush -h
 hg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]
 
 push the next patch onto the stack
@@ -4151,7 +4151,7 @@ After applying Jeroen's patch
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.prealpha0$ ./sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py
+drkirkby@hawk:~/sage-4.6.prealpha0$ ./sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py
 sage -t -long "devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py"
 	 [30.1 s]
  
@@ -4852,14 +4852,14 @@ Of particular note here is is point that [that in a suitably complex system ther
 
 
 ```
-32 drkirkby`@`redstart:[~/src] $ uname -a
+32 drkirkby@redstart:[~/src] $ uname -a
 SunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000
-32 drkirkby`@`redstart:[~/src] $ cat /etc/release
+32 drkirkby@redstart:[~/src] $ cat /etc/release
                          Solaris 10 3/05 s10_74L2a SPARC
            Copyright 2005 Sun Microsystems, Inc.  All Rights Reserved.
                         Use is subject to license terms.
                             Assembled 22 January 2005
-32 drkirkby`@`redstart:[~/src] $ ./Configure
+32 drkirkby@redstart:[~/src] $ ./Configure
 Configuring pari-2.4.3 (DEVELOPMENT VERSION) [ development svn-12577 ]
 Checking echo to see how to suppress newlines...
 ...using \c
@@ -4918,7 +4918,7 @@ Default is dynamic executable and shared library
 Extracting examples/Makefile.solaris-sparcv9
 Extracting Osolaris-sparcv9/Makefile
 ./Configure: test: argument expected
-32 drkirkby`@`redstart:[~/src] $ 
+32 drkirkby@redstart:[~/src] $ 
 ```
 
 
@@ -5784,7 +5784,7 @@ Replying to [comment:336 cremona]:
 
 
 ```
-leif`@`quadriga:~/Sage/sage-4.6.prealpha3-with-mpir-2.1.1$ ./sage -gp
+leif@quadriga:~/Sage/sage-4.6.prealpha3-with-mpir-2.1.1$ ./sage -gp
                       GP/PARI CALCULATOR Version 2.4.3 (development svn-12577)
                     amd64 running linux (x86-64/GMP-5.0.1 kernel) 64-bit version
                      compiled: Aug 27 2010, gcc-4.4.3 (Ubuntu 4.4.3-4ubuntu5) 

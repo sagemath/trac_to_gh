@@ -1,6 +1,6 @@
 # Issue 5397: SmallGroups library can't be used in Sage-3.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5397
 
 Original creator: SimonKing
 

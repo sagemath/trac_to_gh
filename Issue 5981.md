@@ -1,6 +1,6 @@
 # Issue 5981: Sage 3.4.2: prime_pi() broken on 32 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5981
 
 Original creator: mabshoff
 
@@ -14,7 +14,7 @@ This patch fixes the problem:
 diff -r 8713e0a599f3 sage/functions/prime_pi.pyx
 --- a/sage/functions/prime_pi.pyx	Sun May 03 23:10:56 2009 -0700
 +++ b/sage/functions/prime_pi.pyx	Mon May 04 12:44:03 2009 -0400
-`@``@` -171,7 +171,7 `@``@`
+@@ -171,7 +171,7 @@
              raise ValueError, "mem_mult must be positive"
          if x < 2:
              return 0

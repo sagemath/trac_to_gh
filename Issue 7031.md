@@ -1,6 +1,6 @@
 # Issue 7031: singular believes the Sun C++ compiler is broken.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7031
 
 Original creator: drkirkby
 

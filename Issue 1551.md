@@ -1,6 +1,6 @@
 # Issue 1551: Make is_subgraph function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1551
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 2704: bug in lcm(a,b) for a,b polynomials in QQ[] if a is constant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2704
 
 Original creator: cremona
 

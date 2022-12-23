@@ -1,6 +1,6 @@
 # Issue 5852: [with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5852
 
 Original creator: tornaria
 
@@ -76,7 +76,7 @@ Patching `$SAGE_ROOT/sage` with this:
 ```
 --- sage-3.4/sage.orig	2009-04-22 01:45:48.000000000 -0300
 +++ sage-3.4/sage	2009-04-22 09:37:27.000000000 -0300
-`@``@` -14,6 +14,7 `@``@`
+@@ -14,6 +14,7 @@
  fi
  
  if [ "$SAGE_ROOT" = "....." ];  then
@@ -191,8 +191,8 @@ ub243101:s wstein$ echo $?
 1
 
 Linux:
-wstein`@`boxen:~/sage$ readlink -n sage
-wstein`@`boxen:~/sage$ echo $?
+wstein@boxen:~/sage$ readlink -n sage
+wstein@boxen:~/sage$ echo $?
 1
 ```
 
@@ -243,10 +243,10 @@ Following my example above, here's an example where `-f` is needed:
 
 ```
 ~/sandbox$ ln -s sage2 sage3
-tornaria`@`bip:~/sandbox$ readlink -n sage3
-sage2tornaria`@`bip:~/sandbox$ readlink sage3
+tornaria@bip:~/sandbox$ readlink -n sage3
+sage2tornaria@bip:~/sandbox$ readlink sage3
 sage2
-tornaria`@`bip:~/sandbox$ readlink -f sage3
+tornaria@bip:~/sandbox$ readlink -f sage3
 /home/tornaria/sandbox/sage1
 ```
 
@@ -664,7 +664,7 @@ Yes, it works.
 You are right that `/bin/pwd` does not always support `-P`, even on sage.math:
 
 ```
-jdemeyer`@`sage:~$ /bin/pwd -P
+jdemeyer@sage:~$ /bin/pwd -P
 /bin/pwd: invalid option -- P
 Try `/bin/pwd --help' for more information.
 ```

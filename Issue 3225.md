@@ -1,6 +1,6 @@
 # Issue 3225: add 64 bit OSX build support for cddlib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3225
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9775: Cygwin: GLPK extension module needs to be more explicit in its linking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9776
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 8116: cython fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set to -m64 globally
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8116
 
 Original creator: jsp
 

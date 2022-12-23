@@ -1,6 +1,6 @@
 # Issue 4404: notebook -- split "Download to a file" into two menu options, one without revision history
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4404
 
 Original creator: was
 

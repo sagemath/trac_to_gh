@@ -1,6 +1,6 @@
 # Issue 8057: New boehm-gc-7.1.p3.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8057
 
 Original creator: jsp
 

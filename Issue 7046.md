@@ -1,6 +1,6 @@
 # Issue 7046: Singular fails to build on OS X 10.6 with case sensitive file system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7046
 
 Original creator: iandrus
 

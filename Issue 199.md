@@ -1,6 +1,6 @@
 # Issue 199: ling long sent some congruence subgroup code -- put in sage.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/199
 
 Original creator: was
 

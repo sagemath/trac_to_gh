@@ -1,6 +1,6 @@
 # Issue 5306: More number field ideal utilities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5306
 
 Original creator: cremona
 

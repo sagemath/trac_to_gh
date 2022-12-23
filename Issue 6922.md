@@ -1,6 +1,6 @@
 # Issue 6922: Matrix term ordering
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6922
 
 Original creator: klee
 

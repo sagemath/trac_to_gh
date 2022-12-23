@@ -1,6 +1,6 @@
 # Issue 3682: notebook -- on sagenb.org worksheets 22 days and older are blank
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3682
 
 Original creator: TimothyClemans
 

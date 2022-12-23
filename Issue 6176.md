@@ -1,6 +1,6 @@
 # Issue 6176: ReSTify modules in sage/numerical and put them in reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6176
 
 Original creator: mvngu
 

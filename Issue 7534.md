@@ -1,6 +1,6 @@
 # Issue 7534: Add a deprecation message at the top of most sage.server.* files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7534
 
 Original creator: mpatel
 

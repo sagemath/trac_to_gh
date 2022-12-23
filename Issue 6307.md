@@ -1,6 +1,6 @@
 # Issue 6307: Move javascript out of python-land
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6307
 
 Original creator: boothby
 
@@ -88,7 +88,7 @@ Comment by mvngu created at 2009-07-22 17:16:30
 This ticket results in a corrupt repository. After merging this ticket in Sage 4.1.1.alpha0, I created a source distribution with `sage -sdist 4.1.1.alpha0`. Now compile that source distribution, then cd to `SAGE_ROOT/devel/sage-main` and do:
 
 ```
-[mvngu`@`sage sage-main]$ hg st
+[mvngu@sage sage-main]$ hg st
 ! sage/server/notebook/templates/async_lib.js
 ! sage/server/notebook/templates/jmol_lib.js
 ! sage/server/notebook/templates/notebook_lib.js

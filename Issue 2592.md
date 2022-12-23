@@ -1,6 +1,6 @@
 # Issue 2592: NTL abort in Integers(125)[]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2592
 
 Original creator: jbmohler
 
@@ -14,7 +14,7 @@ This NTL abort should be handled with a python exception:
 sage: R.<x> = Integers(125)[]
 sage: (3*x).quo_rem(5*x)
 InvMod: inverse undefined
-/home/joel/sage/local/bin/sage-sage: line 214: 31177 Aborted                 sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/home/joel/sage/local/bin/sage-sage: line 214: 31177 Aborted                 sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 
@@ -42,7 +42,7 @@ Program received signal SIGABRT, Aborted.
 #1  0x00002abddcbcd84e in abort () from /lib/libc.so.6
 #2  0x00002abddddab097 in NTL::Error (s=<value optimized out>) at tools.c:14
 #3  0x00002abdddcfeee9 in NTL::InvMod (a=<value optimized out>, n=125) at ZZ.c:351
-#4  0x00002abdddd716c6 in NTL::PlainDivRem (q=`@`0x2abdf2106950, r=`@`0x2abdf21069c0, a=`@`0x2abdefb18720, b=`@`0xffffffffffffffff)
+#4  0x00002abdddd716c6 in NTL::PlainDivRem (q=@0x2abdf2106950, r=@0x2abdf21069c0, a=@0x2abdefb18720, b=@0xffffffffffffffff)
     at ../include/NTL/lzz_p.h:278
 #5  0x00002abde75b842e in __pyx_pf_4sage_5rings_10polynomial_25polynomial_modn_dense_ntl_28Polynomial_dense_modn_ntl_zz_quo_rem (__pyx_v_self=0x2abdefb186e0, __pyx_v_right=0x2abdf21068a0) at sage/rings/polynomial/polynomial_modn_dense_ntl.cpp:7456
 #6  0x0000000000484a96 in PyEval_EvalFrameEx (f=0x14d00c0, throwflag=<value optimized out>) at Python/ceval.c:3552

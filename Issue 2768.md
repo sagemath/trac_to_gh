@@ -1,6 +1,6 @@
 # Issue 2768: add comparison operators to the fast_float mechanism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2768
 
 Original creator: jason
 

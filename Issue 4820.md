@@ -1,6 +1,6 @@
 # Issue 4820: Type inconsistency in rational points on elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4820
 
 Original creator: cremona
 

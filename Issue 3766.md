@@ -1,6 +1,6 @@
 # Issue 3766: move sage_fortran from fortran spkg to sage_scripts spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3766
 
 Original creator: tabbott
 

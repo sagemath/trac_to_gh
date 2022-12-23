@@ -1,6 +1,6 @@
 # Issue 2683: [with patch, needs review]  Add initial support of k-Schur functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2683
 
 Original creator: mhansen
 

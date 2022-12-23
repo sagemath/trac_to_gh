@@ -1,6 +1,6 @@
 # Issue 5877: calling a group character is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5877
 
 Original creator: saliola
 

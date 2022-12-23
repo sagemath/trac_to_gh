@@ -1,6 +1,6 @@
 # Issue 4839: update desolve_laplace like #4285 did for desolve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4839
 
 Original creator: jason
 

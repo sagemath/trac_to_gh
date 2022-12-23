@@ -1,6 +1,6 @@
 # Issue 6224: sage startup takes way to long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6224
 
 Original creator: robertwb
 

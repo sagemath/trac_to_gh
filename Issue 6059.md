@@ -1,6 +1,6 @@
 # Issue 6059: speed regresion in hilbert_symbol after #5834
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6059
 
 Original creator: tornaria
 

@@ -1,6 +1,6 @@
 # Issue 5936: result of graph query should be iterable -- make more pythonic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5936
 
 Original creator: was
 

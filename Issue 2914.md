@@ -1,6 +1,6 @@
 # Issue 2914: integers are immutable but set_str breaks that -- having this function is a *major* bug.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2914
 
 Original creator: was
 

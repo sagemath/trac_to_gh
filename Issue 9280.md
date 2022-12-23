@@ -1,6 +1,6 @@
 # Issue 9280: implement an example of a graded algebra with basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9280
 
 Original creator: jhpalmieri
 

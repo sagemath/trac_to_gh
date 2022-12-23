@@ -1,6 +1,6 @@
 # Issue 6150: numerical noise issues in 4.0.rc1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6150
 
 Original creator: mhansen
 

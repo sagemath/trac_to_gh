@@ -1,6 +1,6 @@
 # Issue 8665: __future__ imports not respected in notebook %python mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8665
 
 Original creator: robertwb
 

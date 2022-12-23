@@ -1,6 +1,6 @@
 # Issue 5922: doctesting sage tree does not work when SAGE_ROOT is a symbolic link
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5922
 
 Original creator: was
 
@@ -12,15 +12,15 @@ If you make a symbolic link to SAGE_ROOT, then doctesting will not work at all:
 
 
 ```
-wstein`@`bsd:~$ ln -s build/sage-3.4.1 xyz
-wstein`@`bsd:~$ cd xyz
-wstein`@`bsd:~/xyz$ ls
+wstein@bsd:~$ ln -s build/sage-3.4.1 xyz
+wstein@bsd:~$ cd xyz
+wstein@bsd:~/xyz$ ls
 0.png			devel			ipython			sage-python		test.sobj
 COPYING.txt		dist			local			sage.png		testlong.log
 HISTORY.txt		docs-0.html		makefile		sage0.png		tmp
 README.txt		examples		sage			sage1.png		tmp.sws
 data			install.log		sage-README-osx.txt	spkg
-wstein`@`bsd:~/xyz$ ./sage -t devel/sage/sage/plot/plot3d/parametric_plot3d.py 
+wstein@bsd:~/xyz$ ./sage -t devel/sage/sage/plot/plot3d/parametric_plot3d.py 
 sage -t  "devel/sage/sage/plot/plot3d/parametric_plot3d.py" 
   File "./parametric_plot3d.py", line 18
     from devel/sage/sage/plot/plot3d/parametric_plot3d import *

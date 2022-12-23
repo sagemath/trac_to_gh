@@ -1,6 +1,6 @@
 # Issue 2505: [with patch, needs review] Sage has no Wronskian function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2505
 
 Original creator: ddrake
 

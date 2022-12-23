@@ -1,6 +1,6 @@
 # Issue 8170: character_table() missing for matrix groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8170
 
 Original creator: dimpase
 

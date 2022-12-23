@@ -1,6 +1,6 @@
 # Issue 7648: notebook: issue with indentation of first line being wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7648
 
 Original creator: was
 

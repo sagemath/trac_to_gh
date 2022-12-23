@@ -1,6 +1,6 @@
 # Issue 4792: Sage 3.2.1+valgrind is completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4792
 
 Original creator: mabshoff
 
@@ -13,13 +13,13 @@ CC:  mhansen
 Notice the following:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: P.<x,y>=ZZ[]
 sage: 
 Exiting SAGE (CPU time 0m0.08s, Wall time 0m4.42s).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -valgrind
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -valgrind
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sage-ipython
@@ -59,7 +59,7 @@ Comment by mabshoff created at 2008-12-14 10:11:43
 The same applies to Sage+gdb. Note:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -gdb
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sage-ipython
@@ -89,7 +89,7 @@ SyntaxError: invalid syntax
 sage: 
 
 Program exited normally.
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: P.<x,z>=ZZ[]
@@ -111,7 +111,7 @@ Comment by mabshoff created at 2008-12-14 14:22:59
 Ok, here is some more info: The problem stems from the way we change initialization of ipython:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0$ ./sage -gdb
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/mabshoff/release-cycle/sage-3.2.2.rc0/local/bin/sage-ipython

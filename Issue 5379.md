@@ -1,6 +1,6 @@
 # Issue 5379: html conversion problems with live version of tutorial (ReST version)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5379
 
 Original creator: jhpalmieri
 

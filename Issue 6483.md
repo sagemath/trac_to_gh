@@ -1,6 +1,6 @@
 # Issue 6483: jsmath font broken in Firefox 3.5 on Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6483
 
 Original creator: mpatel
 

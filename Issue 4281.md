@@ -1,6 +1,6 @@
 # Issue 4281: [with patch, needs review] elliptic curve doctest coverage (part 4)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4281
 
 Original creator: zimmerma
 

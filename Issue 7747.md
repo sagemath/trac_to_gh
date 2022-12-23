@@ -1,6 +1,6 @@
 # Issue 7747: miscellaneous documentation fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7747
 
 Original creator: jhpalmieri
 

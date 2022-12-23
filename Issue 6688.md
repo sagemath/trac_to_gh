@@ -1,6 +1,6 @@
 # Issue 6688: spell-check all modules under sage/calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6688
 
 Original creator: mvngu
 

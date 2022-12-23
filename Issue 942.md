@@ -1,6 +1,6 @@
 # Issue 942: still reachable memory in pow_computer's cache
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/942
 
 Original creator: mabshoff
 

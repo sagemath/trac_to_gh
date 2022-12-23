@@ -1,6 +1,6 @@
 # Issue 5234: doctest failure in devel/sage/sage/rings/real_lazy.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5234
 
 Original creator: wjp
 

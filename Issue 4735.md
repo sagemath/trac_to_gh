@@ -1,6 +1,6 @@
 # Issue 4735: Make e^X try calling X.exp() before trying to coerce X to the symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4735
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 6878: [with patch, needs review] allow the exclusion of points from the plot range
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6878
 
 Original creator: whuss
 

@@ -1,6 +1,6 @@
 # Issue 3543: Unify jquery libraries in devel/sage and data/extcode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3543
 
 Original creator: mabshoff
 

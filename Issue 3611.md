@@ -1,6 +1,6 @@
 # Issue 3611: sympow: make it use $CC instead of cc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3611
 
 Original creator: mabshoff
 

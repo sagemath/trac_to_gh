@@ -1,6 +1,6 @@
 # Issue 2355: Write a clearer submatrix implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2355
 
 Original creator: dfdeshom
 
@@ -395,7 +395,7 @@ Testing seems to hang on
 ```
 sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx
 [1]+  Stopped                 ./sage -t devel/sage-main/sage/matrix/
-[jaap`@`paix sage-2.10.4.rc0]$ 
+[jaap@paix sage-2.10.4.rc0]$ 
 
 ```
 

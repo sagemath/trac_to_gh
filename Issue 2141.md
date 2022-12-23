@@ -1,6 +1,6 @@
 # Issue 2141: Access to file list on notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2141
 
 Original creator: robertwb
 

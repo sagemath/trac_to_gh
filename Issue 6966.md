@@ -1,6 +1,6 @@
 # Issue 6966: Shimura subgroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6966
 
 Original creator: syazdani
 

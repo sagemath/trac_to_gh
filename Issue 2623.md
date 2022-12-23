@@ -1,6 +1,6 @@
 # Issue 2623: 2.11.alpha0: repo consistency issue with sage/schemes/hyperelliptic_curves/hypellfrob/README
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2623
 
 Original creator: mabshoff
 

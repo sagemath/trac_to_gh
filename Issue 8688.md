@@ -1,6 +1,6 @@
 # Issue 8688: extra parenthesis when typesetting fractions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8688
 
 Original creator: burcin
 

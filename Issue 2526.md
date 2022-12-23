@@ -1,6 +1,6 @@
 # Issue 2526: switch charpoly mod p back to linbox as default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2526
 
 Original creator: mabshoff
 

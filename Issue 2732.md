@@ -1,6 +1,6 @@
 # Issue 2732: cython in Debian build doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2732
 
 Original creator: tabbott
 

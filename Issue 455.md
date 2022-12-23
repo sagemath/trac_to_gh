@@ -1,6 +1,6 @@
 # Issue 455: scipy picks /usr/local/lib/libfftw3.a instead of $SAGE_LIB/libfftw3.a
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/455
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6807: bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6807
 
 Original creator: hartke
 

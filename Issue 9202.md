@@ -1,6 +1,6 @@
 # Issue 9202: update matplotlib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9202
 
 Original creator: jason
 

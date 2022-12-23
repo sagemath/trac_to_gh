@@ -1,6 +1,6 @@
 # Issue 1764: the url in the trac emails is wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1764
 
 Original creator: was
 

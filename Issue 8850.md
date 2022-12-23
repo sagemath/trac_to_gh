@@ -1,6 +1,6 @@
 # Issue 8850: Cython should link against BLAS instead of ATLAS on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8850
 
 Original creator: mhansen
 

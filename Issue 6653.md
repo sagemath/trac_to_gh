@@ -1,6 +1,6 @@
 # Issue 6653: Add --no-pdf-links option for doc/html/index.html builder.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6653
 
 Original creator: mpatel
 

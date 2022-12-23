@@ -1,6 +1,6 @@
 # Issue 4203: Make a suboption decorator to complement #4201
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4203
 
 Original creator: jason
 
@@ -13,7 +13,7 @@ CC:  anakha
 
 ```
 [17:06] <mhansen> Yeah -- suboption should take a prefix, defaults, and then return something like an arrow_options dict.
-[17:07] <mhansen> `@`suboption('arrow', color='red', line='+')
+[17:07] <mhansen> @suboption('arrow', color='red', line='+')
 [17:07] <jason-> okay, yeah, even better.
 [17:07] <mhansen> And that would pick up things like arrow_color='blue'.
 [17:07] <jason-> then I don't have to type the dictionary explicitly
@@ -33,8 +33,8 @@ Use case:
 
 
 ```
-`@`suboption('arrow', color='red', line_style='+')
-`@`options(vertices=True, edge_labels=True)
+@suboption('arrow', color='red', line_style='+')
+@options(vertices=True, edge_labels=True)
 def plot_graph():
     draw vertices
     for each edge:
@@ -78,7 +78,7 @@ I got this with a quick test.
 
 
 ```
-sage: `@`suboptions('test')
+sage: @suboptions('test')
 def f(**kwds):
 ....:     print kwds
 ....:     

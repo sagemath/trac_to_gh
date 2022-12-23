@@ -1,6 +1,6 @@
 # Issue 7821: readline-6.0.p1 fails on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7821
 
 Original creator: pjeremy
 

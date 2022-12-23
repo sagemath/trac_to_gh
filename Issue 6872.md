@@ -1,6 +1,6 @@
 # Issue 6872: #6596 follow-up: typo in docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6872
 
 Original creator: mvngu
 

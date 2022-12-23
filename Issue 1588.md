@@ -1,6 +1,6 @@
 # Issue 1588: after #1566, new errors in converting symbolic compositions to polynomials are exposed.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1588
 
 Original creator: mhansen
 
@@ -156,7 +156,7 @@ Comment by mabshoff created at 2008-12-02 01:49:43
 This now throws a not implemented error in Sage 3.2.1.rc1:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.1.final$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.final$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: sqrt(2).polynomial(RQDF)

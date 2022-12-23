@@ -1,6 +1,6 @@
 # Issue 1593: m4ri -- the documentation of the echelon command only lists 1 algorithm but >= 2 algorithms are supported
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1593
 
 Original creator: was
 

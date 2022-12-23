@@ -1,6 +1,6 @@
 # Issue 3397: [with patch, needs review] Steenrod algebra calculations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3397
 
 Original creator: jhpalmieri
 
@@ -167,7 +167,7 @@ will get converted by latex to a single nasty line I think.
 
 ```
 ...
-#       Copyright (C) 2008 William Stein <wstein`@`gmail.com>
+#       Copyright (C) 2008 William Stein <wstein@gmail.com>
 ```
 
 

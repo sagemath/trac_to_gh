@@ -1,6 +1,6 @@
 # Issue 7585: Fast function field arithmatic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7585
 
 Original creator: robertwb
 

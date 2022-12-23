@@ -1,6 +1,6 @@
 # Issue 7547: improve has_multiple_edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7547
 
 Original creator: ylchapuy
 

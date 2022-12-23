@@ -1,6 +1,6 @@
 # Issue 147: libgd build breaks on sage-1.4.1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/147
 
 Original creator: justin
 

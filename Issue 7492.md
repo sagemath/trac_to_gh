@@ -1,6 +1,6 @@
 # Issue 7492: Decomposition of a doubly stochastic matrix as a convex sum of permutations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7492
 
 Original creator: ncohen
 

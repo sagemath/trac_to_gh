@@ -1,6 +1,6 @@
 # Issue 4268: SQLDatabase, et al. should use SQLAlchemy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4268
 
 Original creator: ekirkman
 

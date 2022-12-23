@@ -1,6 +1,6 @@
 # Issue 799: tachyon bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/799
 
 Original creator: was
 

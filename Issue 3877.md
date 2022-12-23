@@ -1,6 +1,6 @@
 # Issue 3877: fix arrow so that they scale properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3877
 
 Original creator: mhansen
 

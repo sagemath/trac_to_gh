@@ -1,6 +1,6 @@
 # Issue 8555: Unexpected behaviour of symbolic zero.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8555
 
 Original creator: lfousse
 

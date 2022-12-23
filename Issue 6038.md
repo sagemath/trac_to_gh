@@ -1,6 +1,6 @@
 # Issue 6038: add implicit_plot3d to the reference manual (and maybe an example in the tutorial)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6038
 
 Original creator: was
 

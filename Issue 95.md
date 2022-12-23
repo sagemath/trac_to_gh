@@ -1,6 +1,6 @@
 # Issue 95: _gap_init_ bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/95
 
 Original creator: wdj
 
@@ -114,7 +114,7 @@ when I tested the example:
 ```
 
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168641553 28800
 # Node ID e7e66d37ff7a6bc0c31efa693c0dcd5be1c6d048
 # Parent  85b96a510e10e13d5e71aa12afb2a3f1a3564fb8
@@ -123,7 +123,7 @@ Fix bug in matrix hessenberg form.
 diff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx
 --- a/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:26:44 2007 -0800
 +++ b/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:39:13 2007 -0800
-`@``@` -48,6 +48,19 `@``@` EXAMPLES:
+@@ -48,6 +48,19 @@ EXAMPLES:
      sage: b.echelonize(); b
      [ 1  0 36]
      [ 0  1  2]
@@ -143,7 +143,7 @@ diff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx
  """
  
  include "../ext/interrupt.pxi"
-`@``@` -419,8 +432,8 `@``@` cdef class Matrix_modn_dense(matrix_dens
+@@ -419,8 +432,8 @@ cdef class Matrix_modn_dense(matrix_dens
                   t = h[i][m-1]
                   t_inv = ai.c_inverse_mod_int(t,p)
                   if i > m:

@@ -1,6 +1,6 @@
 # Issue 8039: [with spkg, needs review] ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8039
 
 Original creator: jsp
 

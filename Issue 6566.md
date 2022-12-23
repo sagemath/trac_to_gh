@@ -1,6 +1,6 @@
 # Issue 6566: method key_space() for classical cryptosystems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6566
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4768: magma -- speed up conversion of integer, rational and modn matrices from sage to magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4768
 
 Original creator: was
 

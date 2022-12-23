@@ -1,6 +1,6 @@
 # Issue 1743: implausibly old time stamp in optional package gap_packages-4.4.10_2.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1743
 
 Original creator: mabshoff
 
@@ -29,8 +29,8 @@ Comment by mabshoff created at 2008-01-11 21:02:37
 Fix in gap_packages-4.4.10_3.spkg - already in the optional repo:
 
 ```
-sage`@`modular:~/www/packages/optional$ tar xf gap_packages-4.4.10_3.spkg
-sage`@`modular:~/www/packages/optional$ 
+sage@modular:~/www/packages/optional$ tar xf gap_packages-4.4.10_3.spkg
+sage@modular:~/www/packages/optional$ 
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 7926: Bring coverage of monsky_washnitzer up to 50%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7926
 
 Original creator: robertwb
 

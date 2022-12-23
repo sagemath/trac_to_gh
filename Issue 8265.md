@@ -1,6 +1,6 @@
 # Issue 8265: LaTeX-friendly Unicode characters in underscored methods' docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8265
 
 Original creator: mpatel
 

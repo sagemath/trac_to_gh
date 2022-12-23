@@ -1,6 +1,6 @@
 # Issue 787: quotient spaces of vector spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/787
 
 Original creator: nbruin
 
@@ -114,7 +114,7 @@ Almost done:
 
 
 ```
-was_: sage: R = QQ^3; S = R.span([This is the Trac macro *1,2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3-macro))
+was_: sage: R = QQ^3; S = R.span([[1,2,3]])
 [10:14am] was_: sage: w = R.quotient(S)
 [10:14am] was_: sage: w = R / S
 [10:14am] was_: But the last goes boom.

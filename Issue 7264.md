@@ -1,6 +1,6 @@
 # Issue 7264: segfault while substituting powers of exp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7264
 
 Original creator: burcin
 
@@ -11,7 +11,7 @@ Assignee: burcin
 
 ```
 On Wed, 21 Oct 2009 19:49:58 -0700 (PDT)
-Ichnich <warmbau`@`web.de> wrote:
+Ichnich <warmbau@web.de> wrote:
 
 > Hi,
 > 
@@ -39,7 +39,7 @@ sage: model_exp = exp(I)**a*(b)
 sage: sol1_l={b: 5.0, a: 1.1}
 sage: model_exp.subs(sol1_l)
 /home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916
-Segmentation fault      sage-ipython "$`@`" -i
+Segmentation fault      sage-ipython "$@" -i
 ```
 
 
@@ -59,7 +59,7 @@ sage: var('a,b,c,I')
 sage: model_exp=exp(I)**a*(b)
 sage: sol1_l={b: 5.0, a: 1.1}
 sage: model_exp.subs(sol1_l)
-/home/grout/sage/local/bin/sage-sage: line 203: 23853 Segmentation fault      sage-ipython "$`@`" -i
+/home/grout/sage/local/bin/sage-sage: line 203: 23853 Segmentation fault      sage-ipython "$@" -i
 ```
 
 

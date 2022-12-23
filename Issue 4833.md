@@ -1,6 +1,6 @@
 # Issue 4833: sage -upgrade should complain when queues are used and patches are applied
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4833
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8727: New SageNB release 0.8.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8727
 
 Original creator: timdumol
 

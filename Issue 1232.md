@@ -1,6 +1,6 @@
 # Issue 1232: bug in modular symbols over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1232
 
 Original creator: AlexGhitza
 

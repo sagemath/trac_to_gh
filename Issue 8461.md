@@ -1,6 +1,6 @@
 # Issue 8461: Numerical noise in /sage/sage/plot/colors.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8461
 
 Original creator: drkirkby
 

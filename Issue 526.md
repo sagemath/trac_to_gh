@@ -1,6 +1,6 @@
 # Issue 526: better support for parallel make
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/526
 
 Original creator: dmharvey
 

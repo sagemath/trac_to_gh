@@ -1,6 +1,6 @@
 # Issue 2629: Bottom of page problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2629
 
 Original creator: dunfield
 

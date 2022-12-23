@@ -1,6 +1,6 @@
 # Issue 2054: prun is not preparsed -- potentially very confusing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2054
 
 Original creator: was
 
@@ -44,7 +44,7 @@ Reply
 	
 Hi William,
 
-On Feb 5, 2008 7:46 AM, William Stein <wstein`@`gmail.com> wrote:
+On Feb 5, 2008 7:46 AM, William Stein <wstein@gmail.com> wrote:
 > Fernando,
 >
 > Any hints about how I could make the argument to %prun get preparsed?

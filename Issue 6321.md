@@ -1,6 +1,6 @@
 # Issue 6321: optional doctest failure -- sympow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6321
 
 Original creator: was
 

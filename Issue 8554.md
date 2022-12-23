@@ -1,6 +1,6 @@
 # Issue 8554: Failed RealNumber conversion from str in base 16.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8554
 
 Original creator: lfousse
 

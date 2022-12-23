@@ -1,6 +1,6 @@
 # Issue 2336: hermite -- this function in sage is broken in more ways than it has lines of code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2336
 
 Original creator: was
 

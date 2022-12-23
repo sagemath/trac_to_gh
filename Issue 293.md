@@ -1,6 +1,6 @@
 # Issue 293: nasty memory leak in FAST_SEQ_UNSAFE macro
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/293
 
 Original creator: dmharvey
 

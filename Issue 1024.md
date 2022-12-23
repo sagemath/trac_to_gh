@@ -1,6 +1,6 @@
 # Issue 1024: small memleak in matrix_rational_sparse_mpq_vector_set_entry
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1024
 
 Original creator: mabshoff
 

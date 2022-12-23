@@ -1,6 +1,6 @@
 # Issue 1906: [with patch, needs review] eisenstein_series_qexp does not pay attention to the field parameter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1906
 
 Original creator: AlexGhitza
 

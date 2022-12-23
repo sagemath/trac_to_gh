@@ -1,6 +1,6 @@
 # Issue 778: Finite Field __call__ doesn't accept polynomials over F_p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/778
 
 Original creator: roed
 

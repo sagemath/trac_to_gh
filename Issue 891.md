@@ -1,6 +1,6 @@
 # Issue 891: [with patch] symmetrica needs to have its deallocation routine called upon exit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/891
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5626: when %latex goes bad in the notebook, it doesn't display the debug/error log anymore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5626
 
 Original creator: was
 
@@ -108,14 +108,14 @@ Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
 File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
-\c`@`part=\count79
-\c`@`section=\count80
-\c`@`subsection=\count81
-\c`@`subsubsection=\count82
-\c`@`paragraph=\count83
-\c`@`subparagraph=\count84
-\c`@`figure=\count85
-\c`@`table=\count86
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102

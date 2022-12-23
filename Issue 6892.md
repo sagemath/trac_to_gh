@@ -1,6 +1,6 @@
 # Issue 6892: [with patch, needs review] change dollar signs to backticks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6892
 
 Original creator: jhpalmieri
 

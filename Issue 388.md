@@ -1,6 +1,6 @@
 # Issue 388: bug in modular symbol projection function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/388
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On 6/21/07, Mak Trifkovic <mak`@`math.uvic.ca> wrote:
+On 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:
 > Hi William,
 >
 > I found an odd thing:
@@ -49,7 +49,7 @@ Comment by mabshoff created at 2007-08-28 11:47:05
 This is still an issue with Sage 2.8.2. Maybe it is something for the next bug day:
 
 ```
-[mabshoff`@`m940 sage-2.8.2]$ ./sage
+[mabshoff@m940 sage-2.8.2]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.2, Release Date: 2007-08-22                       |

@@ -1,6 +1,6 @@
 # Issue 3732: calculus -- some examples of sage integration failing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3732
 
 Original creator: was
 

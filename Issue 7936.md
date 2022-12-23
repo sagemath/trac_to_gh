@@ -1,6 +1,6 @@
 # Issue 7936: Calculus constructions mix explicit calls to maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7936
 
 Original creator: robertwb
 
@@ -81,12 +81,12 @@ Attachment
 Here are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:
 
 ```
-[mvngu`@`boxen examples]$ pwd
+[mvngu@boxen examples]$ pwd
 /dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples
-[mvngu`@`boxen examples]$ hg st
+[mvngu@boxen examples]$ hg st
 ? .hgtags.orig
-[mvngu`@`boxen examples]$ rm .hgtags.orig 
-[mvngu`@`boxen examples]$ hg st
+[mvngu@boxen examples]$ rm .hgtags.orig 
+[mvngu@boxen examples]$ hg st
 ```
 
 
@@ -186,12 +186,12 @@ I think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/
 Without the attachment [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) applied to the repository `examples/calculus`, I get an error when loading the file `desolvers.sage`:
 
 ```
-[mvngu`@`mod calculus]$ pwd
+[mvngu@mod calculus]$ pwd
 /dev/shm/mvngu/sage-4.3.2.alpha1-sage.math/examples/calculus
-[mvngu`@`mod calculus]$ ls
+[mvngu@mod calculus]$ ls
 desolvers.py    eulers_method.sage  newton_raphson.sage
 desolvers.sage  field_plot2d.sage   README.txt
-[mvngu`@`mod calculus]$ ../../sage
+[mvngu@mod calculus]$ ../../sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -210,11 +210,11 @@ SyntaxError: invalid syntax
 Now apply the patch [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) to the repository `examples/calculus` to resolve this syntax error:
 
 ```
-[mvngu`@`mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush
+[mvngu@mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush
 adding trac_7936-desolvers.patch to series file
 applying trac_7936-desolvers.patch
 now at: trac_7936-desolvers.patch
-[mvngu`@`mod calculus]$ ../../sage
+[mvngu@mod calculus]$ ../../sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

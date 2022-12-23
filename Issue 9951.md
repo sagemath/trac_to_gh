@@ -1,6 +1,6 @@
 # Issue 9951: make SAGE_CHECK work with SAGE_ATLAS_LIB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9952
 
 Original creator: jhpalmieri
 
@@ -103,7 +103,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing atlas-3.8.3.p16.spkg
-drkirkby`@`hawk:~/sage-4.6.alpha1$ 
+drkirkby@hawk:~/sage-4.6.alpha1$ 
 ```
 
 

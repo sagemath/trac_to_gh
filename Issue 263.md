@@ -1,6 +1,6 @@
 # Issue 263: CyclomicField elements do not pickle
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/263
 
 Original creator: jbmohler
 

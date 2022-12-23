@@ -1,6 +1,6 @@
 # Issue 3538: [with patch; not ready for review] create a sage <--> Ruby interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3538
 
 Original creator: was
 

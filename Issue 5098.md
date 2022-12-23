@@ -1,6 +1,6 @@
 # Issue 5098: [with patch, needs review] Pollard rho algorithm for generic discrete logarithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5098
 
 Original creator: ylchapuy
 
@@ -338,11 +338,11 @@ Here's some irc chatter about the "%s"%base exception business. There are perhap
 23:46 < wstein> They can be "silent killers" :-)
 23:46 < mabs> wstein: can an opinion on the broken combinat pickles?
 23:47 < mabs> can -> got
-23:48 < wstein> wstein`@`sage:/space/wstein/sage-3.3.rc0$ ./sage -grep "raise" "%s" |wc -l
+23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep "raise" "%s" |wc -l
 23:48 < wstein> 6750
 23:48 < mabs> *OUCH*
 23:48 < wstein> It's not always bad.
-23:48 < wstein> wstein`@`sage:/space/wstein/sage-3.3.rc0$ ./sage -grep "raise" "%s" |wc -l
+23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep "raise" "%s" |wc -l
 23:48 < wstein> Oops.
 23:49 < wstein> sage: search_src("raise","%s") # also shows them.
 23:49 < wstein> It's only the ones that have elements that could easily be large in the exception that

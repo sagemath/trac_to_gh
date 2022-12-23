@@ -1,6 +1,6 @@
 # Issue 7072: scipy 0.7.p2 has a GNUism, sending GNU flags to the Sun compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7072
 
 Original creator: drkirkby
 

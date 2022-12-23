@@ -1,6 +1,6 @@
 # Issue 8637: typo in sagenb/data/sage/html/worksheet_listing.html, line 117
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8637
 
 Original creator: ddrake
 
@@ -29,7 +29,7 @@ The patch, in case it gets taken down, is:
 ```
 --- a/sagenb/data/sage/html/worksheet_listing.html      2010-04-01 10:39:58.000000000 +1300
 +++ b/sagenb/data/sage/html/worksheet_listing.html      2010-04-01 10:47:49.000000000 +1300
-`@``@` -114,7 +114,7 `@``@`
+@@ -114,7 +114,7 @@
              </td>
 
              <td>

@@ -1,6 +1,6 @@
 # Issue 7793: zorder not implemented in disk
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7793
 
 Original creator: kcrisman
 

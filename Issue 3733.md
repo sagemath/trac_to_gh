@@ -1,6 +1,6 @@
 # Issue 3733: notebook -- add something to reference manual about user-customizable css (easy ticket)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3733
 
 Original creator: was
 
@@ -19,7 +19,7 @@ Will this be placed in the manual or the Wiki?
 regards
 john perry
 
-On May 27, 9:57 am, "William Stein" <wst...`@`gmail.com> wrote:
+On May 27, 9:57 am, "William Stein" <wst...@gmail.com> wrote:
 > Hi,
 >
 > I've always wondered why nobody creates nice stylized "skins", etc.

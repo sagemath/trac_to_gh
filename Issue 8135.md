@@ -1,6 +1,6 @@
 # Issue 8135: prime_pi approximation involving zeta zeros
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8135
 
 Original creator: kevin.stueve
 

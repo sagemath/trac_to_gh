@@ -1,6 +1,6 @@
 # Issue 7765: In sage-4.3, the command "sage -bdist" is broken on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7765
 
 Original creator: was
 

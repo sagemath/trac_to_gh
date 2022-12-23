@@ -1,6 +1,6 @@
 # Issue 4685: Add "South America", "Asia" and "Australia" links to the DevMap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4685
 
 Original creator: mabshoff
 

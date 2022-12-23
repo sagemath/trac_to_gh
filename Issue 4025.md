@@ -1,6 +1,6 @@
 # Issue 4025: Sage 3.1.2.alpha3: benchmark.py runs Maple tests that should be optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4025
 
 Original creator: mabshoff
 
@@ -45,7 +45,7 @@ line 1261, in __init__
               (a) create a file called maple (in your PATH), with the 
 following contents: 
                  #!/bin/sh 
-/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $`@` 
+/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ 
               (b) Save the file. 
               (c) Make the file executable. 
                     chmod +x maple 
@@ -85,7 +85,7 @@ line 1261, in __init__
               (a) create a file called maple (in your PATH), with the 
 following contents: 
                  #!/bin/sh 
-/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $`@` 
+/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ 
               (b) Save the file. 
               (c) Make the file executable. 
                     chmod +x maple 
@@ -137,7 +137,7 @@ line 1261, in __init__
               (a) create a file called maple (in your PATH), with the 
 following contents: 
                  #!/bin/sh 
-/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $`@` 
+/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ 
               (b) Save the file. 
               (c) Make the file executable. 
                     chmod +x maple 
@@ -182,7 +182,7 @@ This did better (the unpatched sage failed 5 tests in benchmark) but still faile
 
 ```
 
-wdj`@`hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py
+wdj@hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py
 sage -t  devel/sage/sage/tests/benchmark.py                 **********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.alpha3/tmp/benchmark.py", line 332:
     sage: isinstance(B.maple()[1], float)
@@ -215,7 +215,7 @@ Exception raised:
           * APPLE OS X:
               (a) create a file called maple (in your PATH), with the following contents:
                  #!/bin/sh
-                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $`@`
+                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@
               (b) Save the file.
               (c) Make the file executable.
                     chmod +x maple
@@ -256,7 +256,7 @@ Exception raised:
           * APPLE OS X:
               (a) create a file called maple (in your PATH), with the following contents:
                  #!/bin/sh
-                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $`@`
+                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@
               (b) Save the file.
               (c) Make the file executable.
                     chmod +x maple
@@ -305,7 +305,7 @@ This second patch worked perfectly.
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py
+wdj@hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py
 sage -t  devel/sage/sage/tests/benchmark.py
          [6.8 s]
 

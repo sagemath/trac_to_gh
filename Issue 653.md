@@ -1,6 +1,6 @@
 # Issue 653: Need LLL-optimize from pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/653
 
 Original creator: jvoight
 

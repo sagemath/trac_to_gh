@@ -1,6 +1,6 @@
 # Issue 2888: matrix slicing fails in degenerate cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2888
 
 Original creator: AlexGhitza
 

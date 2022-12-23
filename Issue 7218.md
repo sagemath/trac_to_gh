@@ -1,6 +1,6 @@
 # Issue 7218: Spanish doc #6 "Half Integral Weight Forms"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7218
 
 Original creator: Loufer
 

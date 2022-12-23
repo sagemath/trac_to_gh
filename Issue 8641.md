@@ -1,6 +1,6 @@
 # Issue 8641: "sage -t" should exit with nonzero exit code if doctests fail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8641
 
 Original creator: ddrake
 

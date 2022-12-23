@@ -1,6 +1,6 @@
 # Issue 9293: Better expose GAP's character tables from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9293
 
 Original creator: nthiery
 

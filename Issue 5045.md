@@ -1,6 +1,6 @@
 # Issue 5045: sage's "make check" should check that the sage build flags (in sage-flags.txt) are right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5045
 
 Original creator: was
 

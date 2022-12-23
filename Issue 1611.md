@@ -1,6 +1,6 @@
 # Issue 1611: polybori should use the m4ri library from libm4ri spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1611
 
 Original creator: burcin
 

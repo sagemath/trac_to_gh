@@ -1,6 +1,6 @@
 # Issue 2120: maple -- the interface is completely broken in Sage-2.10.1 with Maple 11.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2120
 
 Original creator: was
 
@@ -769,7 +769,7 @@ I tried today, and
    * maple 12 on linux, fails totally:
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: maple('2+3')

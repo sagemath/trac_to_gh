@@ -1,6 +1,6 @@
 # Issue 6390: Implement elliptic logarithms (complex case)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6390
 
 Original creator: cremona
 
@@ -106,7 +106,7 @@ The following change fixes this, but I can't vouch for its advisability.
 ```
 --- a/sage/schemes/elliptic_curves/heegner.py	Sat Mar 20 15:52:55 2010 +0000
 +++ b/sage/schemes/elliptic_curves/heegner.py	Tue Mar 23 08:39:11 2010 -0700
-`@``@` -4165,7 +4165,7 `@``@`
+@@ -4165,7 +4165,7 @@
          # etc" mentioned in Watkins' article... which involves local
          # heights.
          E = self.curve()  # over Q

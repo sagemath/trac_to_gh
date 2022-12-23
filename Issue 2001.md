@@ -1,6 +1,6 @@
 # Issue 2001: --long doctests -- seven files have doctst failures in sage-2.10.rc3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2001
 
 Original creator: was
 

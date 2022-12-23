@@ -1,6 +1,6 @@
 # Issue 3776: [with patch, needs review] cookies don't work for admin users
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3776
 
 Original creator: TimothyClemans
 

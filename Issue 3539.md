@@ -1,6 +1,6 @@
 # Issue 3539: bug in DirichletGroup -- bad code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3539
 
 Original creator: was
 

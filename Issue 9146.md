@@ -1,6 +1,6 @@
 # Issue 9146: cygwin: gd doesn't correctly link in libpng with sage-4.4.3.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9146
 
 Original creator: was
 

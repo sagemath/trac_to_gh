@@ -1,6 +1,6 @@
 # Issue 1033: new biopython optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1033
 
 Original creator: mhampton
 

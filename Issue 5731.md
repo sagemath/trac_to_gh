@@ -1,6 +1,6 @@
 # Issue 5731: Update NTL to 5.5 release (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5731
 
 Original creator: mabshoff
 

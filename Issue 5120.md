@@ -1,6 +1,6 @@
 # Issue 5120: abstract class for unique representation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5120
 
 Original creator: nthiery
 

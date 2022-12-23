@@ -1,6 +1,6 @@
 # Issue 1333: [with trivial patch] fix a major inefficiency in floating point square root computation in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1333
 
 Original creator: was
 

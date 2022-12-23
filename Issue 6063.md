@@ -1,6 +1,6 @@
 # Issue 6063: x^2 for x over QQ is really frickin' slow compared to over ZZ (nearly factor of 100!!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6063
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: R.<x> = ZZ[]

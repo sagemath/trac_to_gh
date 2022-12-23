@@ -1,6 +1,6 @@
 # Issue 8262: developer's guide: document the variable SAGE_CHECK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8262
 
 Original creator: mvngu
 

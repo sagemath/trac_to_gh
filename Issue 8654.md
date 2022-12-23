@@ -1,6 +1,6 @@
 # Issue 8654: add "sage -sqlite3" command line option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8654
 
 Original creator: was
 
@@ -98,14 +98,14 @@ Could do some bikeshedding here:
  * The following
 
 ```sh
-    some_program "$`@`"
+    some_program "$@"
     exit $?
 ```
 
    should be just
 
 ```sh
-    exec some_program "$`@`"
+    exec some_program "$@"
 ```
 
    (perhaps followed by `exit $?` if we want to go triple-safe).

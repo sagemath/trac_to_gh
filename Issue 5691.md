@@ -1,6 +1,6 @@
 # Issue 5691: Fix the OSX specific dylib build problem for FLINT 1.2.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5691
 
 Original creator: mabshoff
 

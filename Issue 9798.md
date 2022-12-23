@@ -1,6 +1,6 @@
 # Issue 9798: Running "make" in SAGE_ROOT returns the wrong exit code, leading to all kinds of confusion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9799
 
 Original creator: was
 
@@ -244,7 +244,7 @@ I changed one more "#" to "`@`#": without the "`@`", `make test` print this poss
 It reads better as a comment, with no evaluation of the variable:
 
 ```
-     `@`# $(TESTPRELIMS) (also) puts sage-maketest into the path
+     @# $(TESTPRELIMS) (also) puts sage-maketest into the path
 ```
 
 
@@ -334,8 +334,8 @@ About the comments: I think it more common to put them outside the make rules, s
 
 ```
 build:  $(PIPE)
-    `@`# Note that (currently) "tee" will be run in the directory cd'ed to 
-    `@`# in pipestatus' first argument, i.e. "spkg/":  
+    @# Note that (currently) "tee" will be run in the directory cd'ed to 
+    @# in pipestatus' first argument, i.e. "spkg/":  
     $(PIPE) "cd spkg && ./install all 2>&1" "tee -a ../install.log" 
 ```
 
@@ -382,8 +382,8 @@ I agree on adding `$(PIPE)`, saves some characters (the comment) anyway. ;-)
 
 ```
 build:  $(PIPE)
-    `@`# Note that (currently) "tee" will be run in the directory cd'ed to 
-    `@`# in pipestatus' first argument, i.e. "spkg/":  
+    @# Note that (currently) "tee" will be run in the directory cd'ed to 
+    @# in pipestatus' first argument, i.e. "spkg/":  
     $(PIPE) "cd spkg && ./install all 2>&1" "tee -a ../install.log" 
 ```
 
@@ -447,7 +447,7 @@ Replying to [comment:24 leif]:
 Would using, e.g.,
 
 ```
-        `@`echo '  ACTION  ' $`@`; command that does the action
+        @echo '  ACTION  ' $@; command that does the action
 ```
 
 in `Makefile` and `deps` and replacing "pipestatus/tee" with ">>" in `deps` help?  Is there any way to keep recording a big, multiplexed log in the background, if we still want it?
@@ -464,7 +464,7 @@ Replying to [comment:26 mpatel]:
 > Would using, e.g.,
 
 ```
-        `@`echo '  ACTION  ' $`@`; command that does the action
+        @echo '  ACTION  ' $@; command that does the action
 ```
 
 > in `Makefile` and `deps` and replacing "pipestatus/tee" with ">>" in `deps` help?  Is there any way to keep recording a big, multiplexed log in the background, if we still want it?

@@ -1,6 +1,6 @@
 # Issue 9560: Symbolic expressions don't do arithmetic with bools nicely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9560
 
 Original creator: fredrik.johansson
 

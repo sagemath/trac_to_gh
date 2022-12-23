@@ -1,6 +1,6 @@
 # Issue 9195: Recognition of split graphs (5 lines)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9195
 
 Original creator: ncohen
 

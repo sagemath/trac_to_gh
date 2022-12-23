@@ -1,6 +1,6 @@
 # Issue 4321: wrong Unix permissions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4321
 
 Original creator: zimmerma
 

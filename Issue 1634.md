@@ -1,6 +1,6 @@
 # Issue 1634: update zodb to 3.7.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1634
 
 Original creator: mabshoff
 

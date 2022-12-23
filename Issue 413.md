@@ -1,6 +1,6 @@
 # Issue 413: saving non-evaluated cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/413
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On 8/6/07, Ted Kosan <ted.kosan`@`gmail.com> wrote:
+On 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:
 > I am in the process of developing a standard format that typical
 > students can follow when using the Sage notebook.  Part of this
 > pattern consists of creating cells which contain only comments, like

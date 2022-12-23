@@ -1,6 +1,6 @@
 # Issue 3218: fix 64 bit OSX build support for mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3218
 
 Original creator: mabshoff
 

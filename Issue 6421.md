@@ -1,6 +1,6 @@
 # Issue 6421: make a symbolic arctan2 function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6421
 
 Original creator: burcin
 
@@ -11,7 +11,7 @@ From sage-devel:
 
 ```
 > On Thu, Jun 25, 2009 at 11:31 PM, Nick
-> Alexander<ncalexander`@`gmail.com> wrote:
+> Alexander<ncalexander@gmail.com> wrote:
 > >
 > > Can someone verify that this is a bug?  Any hope a fix?  (This is
 > > with sage-4.0.2 on sage.math.)

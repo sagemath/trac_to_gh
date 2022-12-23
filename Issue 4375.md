@@ -1,6 +1,6 @@
 # Issue 4375: [with patch, needs review] building reference manual in 3.2.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4375
 
 Original creator: jhpalmieri
 

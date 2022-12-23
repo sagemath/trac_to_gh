@@ -1,6 +1,6 @@
 # Issue 3551: magma_version command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3551
 
 Original creator: ljpk
 

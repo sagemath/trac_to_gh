@@ -1,6 +1,6 @@
 # Issue 2014: crap -- matplotlib contains an annoying OS X temp file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2014
 
 Original creator: was
 

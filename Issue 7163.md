@@ -1,6 +1,6 @@
 # Issue 7163: right kernel does not respect sparse=True
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7163
 
 Original creator: mhansen
 

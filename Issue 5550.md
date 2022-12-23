@@ -1,6 +1,6 @@
 # Issue 5550: .../doc/output/html/en/index.html should include "/index.html" in links
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5550
 
 Original creator: cwitty
 

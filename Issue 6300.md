@@ -1,6 +1,6 @@
 # Issue 6300: doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6300
 
 Original creator: was
 

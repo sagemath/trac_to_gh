@@ -1,6 +1,6 @@
 # Issue 6005: [with patch, needs review] real and imaginary parts for quadratic number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6005
 
 Original creator: robertwb
 

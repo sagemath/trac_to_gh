@@ -1,6 +1,6 @@
 # Issue 8155: add sig_on/sig_off to sage.schemes.elliptic_curves.descent_two_isogeny
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8155
 
 Original creator: rlm
 

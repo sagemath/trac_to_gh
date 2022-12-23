@@ -1,6 +1,6 @@
 # Issue 327: add perl 5.8 dependency for sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/327
 
 Original creator: was
 

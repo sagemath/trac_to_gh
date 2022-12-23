@@ -1,6 +1,6 @@
 # Issue 6298: create an experimental libcocoa spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6298
 
 Original creator: was
 

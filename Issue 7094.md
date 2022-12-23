@@ -1,6 +1,6 @@
 # Issue 7094: some doctest leaves the file " my_general_distribution_plot.png" in SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7094
 
 Original creator: was
 

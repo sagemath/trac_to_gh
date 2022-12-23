@@ -1,6 +1,6 @@
 # Issue 4238: option to create local .so file for .spyx modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4238
 
 Original creator: robertwb
 

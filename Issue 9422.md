@@ -1,6 +1,6 @@
 # Issue 9422: Slightly improving is_forest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9422
 
 Original creator: ncohen
 
@@ -41,8 +41,8 @@ g = graphs.RandomGNP(300,.1)
 g = g.subgraph(edges=g.min_spanning_tree())
 g.delete_edges([e for e in g.edges() if random()<.5])
 sage: g.sparse6_string()
-':~?Ck_O?gF?MAo?_??W`@`_AC?D`G?oE_I`@`GU?EE??`s`@`GCa??gb?[CWQa[BW?ak?wp`@`AEGt?m`@`GE_IM_?_A?g?`Y`@`WA_aOoAcSDHH?QAgGc{CwI`AEgPdS?HW?QCWC_IVOCeCCXc`@`yAW`@`e_Axn?U[_DfOAhu?M]?\\fgDX}`@`y_??`e?Ga_m`o?ggIG`@``EGGY_AcOBhK?IT?Ye?I_uAGNhwCwRiC?WGiO?Yf?A?g?ikEIl?]AGAjC`@`Ir`@`alOJ_YAwJ_AAGAk?AgF_I?W`@`\
-kW?g`@`kk`@`JL?QroN_A?zX?U?WFlw`@`WAmG`@`GD`q`@`Zf?M{?G_y{oa_Q|oO_E~?IoC`@`KGBfA_`@`osEw`@`p??wF_BD?L_rE_?poCk]?NGoCqW?[h?aAWE'
+':~?Ck_O?gF?MAo?_??W@_AC?D`G?oE_I@GU?EE??`s@GCa??gb?[CWQa[BW?ak?wp@AEGt?m@GE_IM_?_A?g?`Y@WA_aOoAcSDHH?QAgGc{CwI`AEgPdS?HW?QCWC_IVOCeCCXc@yAW@e_Axn?U[_DfOAhu?M]?\\fgDX}@y_??`e?Ga_m`o?ggIG@`EGGY_AcOBhK?IT?Ye?I_uAGNhwCwRiC?WGiO?Yf?A?g?ikEIl?]AGAjC@Ir@alOJ_YAwJ_AAGAk?AgF_I?W@\
+kW?g@kk@JL?QroN_A?zX?U?WFlw@WAmG@GD`q@Zf?M{?G_y{oa_Q|oO_E~?IoC@KGBfA_@osEw@p??wF_BD?L_rE_?poCk]?NGoCqW?[h?aAWE'
 ```
 
 

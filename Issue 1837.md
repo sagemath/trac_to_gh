@@ -1,6 +1,6 @@
 # Issue 1837: [with patch] pass through options from groebner_basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1837
 
 Original creator: malb
 

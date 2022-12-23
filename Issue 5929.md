@@ -1,6 +1,6 @@
 # Issue 5929: switch from clisp to ecl
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5929
 
 Original creator: was
 

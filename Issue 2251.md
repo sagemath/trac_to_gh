@@ -1,6 +1,6 @@
 # Issue 2251: sage 2.10.2.rc0: rings/number_field/number_field.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2251
 
 Original creator: mabshoff
 

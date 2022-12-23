@@ -1,6 +1,6 @@
 # Issue 2736: [with patch, needs review] fix for dsage doctest failures in sage-2.11.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2736
 
 Original creator: yi
 

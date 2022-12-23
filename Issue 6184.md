@@ -1,6 +1,6 @@
 # Issue 6184: mesh=True and dots=True don't work for 3D plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6184
 
 Original creator: wcauchois
 

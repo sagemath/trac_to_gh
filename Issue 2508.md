@@ -1,6 +1,6 @@
 # Issue 2508: Probkem converting a Laurent Series from pari to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2508
 
 Original creator: cremona
 

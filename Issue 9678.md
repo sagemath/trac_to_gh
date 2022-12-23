@@ -1,6 +1,6 @@
 # Issue 9678: Rewrite interrupt handling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9678
 
 Original creator: jdemeyer
 
@@ -108,7 +108,7 @@ I'm not sure who is to blame here, could be something with the virtual machine. 
 The only thing thats special about SIGILL that comes to mind is that it might not be automatically be reset to SIG_DFL upon entrance. But I don't see how that could cause this. Here is my testcase:
 
 ```
-[vbraun`@`localhost ~]$ sage -gdb
+[vbraun@localhost ~]$ sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -217,7 +217,7 @@ Comment by jdemeyer created at 2011-02-20 14:48:28
 In any case, based on your trace, it looks like everything is working correctly.  I see the following:
 
 ```
---- SIGILL (Illegal instruction) `@` 0 (0) ---
+--- SIGILL (Illegal instruction) @ 0 (0) ---
 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
 write(2, "Traceback (most recent call last"..., 35) = 35
 write(2, "  File \"/home/vbraun/Sage/sage/l"..., 74) = 74

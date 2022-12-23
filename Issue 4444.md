@@ -1,6 +1,6 @@
 # Issue 4444: Remove duplicate source names in setup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4444
 
 Original creator: craigcitro
 

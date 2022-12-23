@@ -1,6 +1,6 @@
 # Issue 9548: Sage does not support infinities with complex direction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9548
 
 Original creator: fredrik.johansson
 

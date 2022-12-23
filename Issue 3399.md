@@ -1,6 +1,6 @@
 # Issue 3399: [with patch, needs review] sage build scripts should be moved to devel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3399
 
 Original creator: gfurnish
 

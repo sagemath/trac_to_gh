@@ -1,6 +1,6 @@
 # Issue 227: sagex: should use NULL instead of 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/227
 
 Original creator: was
 
@@ -41,7 +41,7 @@ do would be to preserve it.
  
 Thanks.
  
-On 1/26/07, Greg Ewing <greg.ewing`@`canterbury.ac.nz> wrote:
+On 1/26/07, Greg Ewing <greg.ewing@canterbury.ac.nz> wrote:
 > Adapted Cat wrote:
 > > Even though NULL is a reserved word in Pyrex, the generated C
 > > code uses 0.
@@ -65,7 +65,7 @@ On 1/26/07, Greg Ewing <greg.ewing`@`canterbury.ac.nz> wrote:
  
 _______________________________________________
 Pyrex mailing list
-Pyrex`@`lists.copyleft.no
+Pyrex@lists.copyleft.no
 http://lists.copyleft.no/mailman/listinfo/pyrex
 ```
 

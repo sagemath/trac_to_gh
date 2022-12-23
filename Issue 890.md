@@ -1,6 +1,6 @@
 # Issue 890: 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/ec_database.py (database lookup failures)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/890
 
 Original creator: cwitty
 

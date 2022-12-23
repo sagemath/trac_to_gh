@@ -1,6 +1,6 @@
 # Issue 5880: [with patch; needs review] notebook -- greatly reduce the number of actions that trigger taking a snapshot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5880
 
 Original creator: was
 

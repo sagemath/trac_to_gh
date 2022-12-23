@@ -1,6 +1,6 @@
 # Issue 4348: magma interface -- get doctest coverage to 100% (only _ private methods left to test at this point)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4348
 
 Original creator: was
 

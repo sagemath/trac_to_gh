@@ -1,6 +1,6 @@
 # Issue 2614: [with patch, needs review] MPolynomial coefficient/polynomial_coefficient merging
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2614
 
 Original creator: jbmohler
 

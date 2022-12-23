@@ -1,6 +1,6 @@
 # Issue 2032: bug in bundle script for sage hg repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2032
 
 Original creator: was
 

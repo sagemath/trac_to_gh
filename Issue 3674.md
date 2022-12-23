@@ -1,6 +1,6 @@
 # Issue 3674: Implement integral point finding for elliptic curves over Q
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3674
 
 Original creator: cremona
 

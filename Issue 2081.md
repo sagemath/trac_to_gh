@@ -1,6 +1,6 @@
 # Issue 2081: Add .coefficients() and .exponents() to univariate polynomials and power series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2081
 
 Original creator: jbandlow
 

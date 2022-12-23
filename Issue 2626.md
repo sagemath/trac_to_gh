@@ -1,6 +1,6 @@
 # Issue 2626: useless __list__ methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2626
 
 Original creator: cwitty
 

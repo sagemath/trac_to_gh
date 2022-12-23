@@ -1,6 +1,6 @@
 # Issue 2272: subgroups of abelian groups have various problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2272
 
 Original creator: AlexGhitza
 

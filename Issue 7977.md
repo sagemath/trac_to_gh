@@ -1,6 +1,6 @@
 # Issue 7977: explain how to use the MATH block and automatic numbering with hash-dot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7977
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2563: Fix outstanding doc issues for 2.10.4.final
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2563
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 112: get rid of "gap_reset_workspace"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/112
 
 Original creator: was
 

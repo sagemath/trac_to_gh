@@ -1,6 +1,6 @@
 # Issue 8302: cubical complexes, delta complexes, and more
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8302
 
 Original creator: jhpalmieri
 
@@ -117,7 +117,7 @@ Comment by mvngu created at 2010-03-02 11:29:29
 I got the following doctest failures after applying [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch) to Sage 4.3.3:
 
 ```sh
-[mvngu`@`sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/structure/sage_object.pyx
+[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/structure/sage_object.pyx
 sage -t -long "devel/sage-main/sage/structure/sage_object.pyx"
 **********************************************************************
 File "/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/structure/sage_object.pyx", line 1001:
@@ -149,7 +149,7 @@ For whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sage_ob
 I don't know how to explain the above failure. Also note the following failure directly resulting from [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch):
 
 ```sh
-[mvngu`@`sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/interfaces/chomp.py
+[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/interfaces/chomp.py
 sage -t -long "devel/sage-main/sage/interfaces/chomp.py"    
 **********************************************************************
 File "/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/interfaces/chomp.py", line 564:
@@ -184,7 +184,7 @@ I think the failure results from a missing "# optional" comment on line 564 of t
 diff -r 0fa662e0a843 sage/interfaces/chomp.py
 --- a/sage/interfaces/chomp.py
 +++ b/sage/interfaces/chomp.py
-`@``@` -561,7 +561,7 `@``@`
+@@ -561,7 +561,7 @@
          sage: C2 = delta_complexes.Sphere(2).chain_complex()
          sage: homchain(C2, generators=True)[2]  # optional: need CHomP
          (Z, [(1, -1)])

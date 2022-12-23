@@ -1,6 +1,6 @@
 # Issue 5089: [with patch, needs review] add kernel method for sparse integer matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5089
 
 Original creator: jhpalmieri
 

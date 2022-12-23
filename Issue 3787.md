@@ -1,6 +1,6 @@
 # Issue 3787: make ATLAS use extended cpuid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3787
 
 Original creator: mabshoff
 

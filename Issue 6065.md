@@ -1,6 +1,6 @@
 # Issue 6065: [with patch, needs review] implement some missing trig methods on RealIntervalFieldElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6065
 
 Original creator: cwitty
 

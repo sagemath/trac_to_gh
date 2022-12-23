@@ -1,6 +1,6 @@
 # Issue 3964: projective space homs do not check arguments sufficiently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3964
 
 Original creator: cremona
 

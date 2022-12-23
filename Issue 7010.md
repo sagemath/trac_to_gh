@@ -1,6 +1,6 @@
 # Issue 7010: sanity check key value of the shift cryptosystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7010
 
 Original creator: mvngu
 

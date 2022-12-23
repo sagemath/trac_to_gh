@@ -1,6 +1,6 @@
 # Issue 6135: #4073 is not fixed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6135
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 7433: notebook: changing title of worksheet changes title of corresponding published worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7433
 
 Original creator: was
 

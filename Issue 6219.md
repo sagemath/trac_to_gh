@@ -1,6 +1,6 @@
 # Issue 6219: [with spkg, needs review] Fix the silly fpmz.c typo in the flint spkg.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6219
 
 Original creator: mhansen
 

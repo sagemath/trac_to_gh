@@ -1,6 +1,6 @@
 # Issue 2858: parametric_plot3d doesn't like "-u"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2858
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 5087: purge "cannonical" typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5087
 
 Original creator: AlexGhitza
 

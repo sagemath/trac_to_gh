@@ -1,6 +1,6 @@
 # Issue 9594: Spring layout for graphs is currently random across platforms: mark the doctest accordingly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9594
 
 Original creator: leif
 

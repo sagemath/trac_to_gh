@@ -1,6 +1,6 @@
 # Issue 4306: bug in supersingular module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4306
 
 Original creator: was
 

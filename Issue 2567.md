@@ -1,6 +1,6 @@
 # Issue 2567: remove limitation on computing digits of pi using mpfr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2567
 
 Original creator: was
 
@@ -100,9 +100,9 @@ Comment by zimmerma created at 2009-02-06 07:47:55
 I am curious. Can you give real timings? Here is what I get on sage.math:
 
 ```
-zimmerma`@`sage:~/mpfr-2.4.0/tests$ pwd
+zimmerma@sage:~/mpfr-2.4.0/tests$ pwd
 /home/zimmerma/mpfr-2.4.0/tests
-zimmerma`@`sage:~/mpfr-2.4.0/tests$ time ./tconst_pi 332192809 0 0
+zimmerma@sage:~/mpfr-2.4.0/tests$ time ./tconst_pi 332192809 0 0
 
 real    42m21.420s
 user    41m55.500s
@@ -404,7 +404,7 @@ Comment by zimmerma created at 2011-12-18 19:13:01
 Mike, there is a test that fails:
 
 ```
-[zimmerma`@`coing sage]$ sage -t  devel/sage-2567/sage/misc/explain_pickle.py
+[zimmerma@coing sage]$ sage -t  devel/sage-2567/sage/misc/explain_pickle.py
 sage -t  "devel/sage-2567/sage/misc/explain_pickle.py"      
 **********************************************************************
 File "/usr/local/sage-4.7.2/sage/devel/sage-2567/sage/misc/explain_pickle.py", line 210:
@@ -412,11 +412,11 @@ File "/usr/local/sage-4.7.2/sage/devel/sage-2567/sage/misc/explain_pickle.py", l
 Expected:
     from sage.rings.real_mpfr import __create__RealNumber_version0
     from sage.rings.real_mpfr import __create__RealField_version0
-    __create__RealNumber_version0(__create__RealField_version0(53r, False, 'RNDN'), '3.4gvml245kc0`@`0', 32r)
+    __create__RealNumber_version0(__create__RealField_version0(53r, False, 'RNDN'), '3.4gvml245kc0@0', 32r)
 Got:
     from sage.rings.real_mpfr import __create__RealNumber_version0
     from sage.rings.real_mpfr import __create__RealField_version0
-    __create__RealNumber_version0(__create__RealField_version0(long(53), False, 'RNDN'), '3.4gvml245kc0`@`0', 32r)
+    __create__RealNumber_version0(__create__RealField_version0(long(53), False, 'RNDN'), '3.4gvml245kc0@0', 32r)
 **********************************************************************
 1 items had failures:
    1 of  14 in __main__.example_1

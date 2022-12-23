@@ -1,6 +1,6 @@
 # Issue 2498: PARI's is_irreducible being used inappropriately
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2498
 
 Original creator: dmharvey
 

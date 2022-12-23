@@ -1,6 +1,6 @@
 # Issue 3555: [with patch; needs review] notebook -- fix bug where it saved the notebook every tie it checked for idle worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3555
 
 Original creator: was
 

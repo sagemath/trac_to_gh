@@ -1,6 +1,6 @@
 # Issue 9954: Rational(3)%Rational(-1) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9955
 
 Original creator: schilly
 

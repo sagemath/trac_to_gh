@@ -1,6 +1,6 @@
 # Issue 8071: Trivial kernel of a matrix over non-fields are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8071
 
 Original creator: rbeezer
 

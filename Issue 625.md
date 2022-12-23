@@ -1,6 +1,6 @@
 # Issue 625: check for system gfortran, g95 or g77 when no binary is available
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/625
 
 Original creator: mabshoff
 

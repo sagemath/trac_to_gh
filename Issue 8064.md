@@ -1,6 +1,6 @@
 # Issue 8064: New iml-1.0.1.p12.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8064
 
 Original creator: jsp
 

@@ -1,6 +1,6 @@
 # Issue 5714: Mod-2 matrix output does not show subdivisions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5714
 
 Original creator: justin
 

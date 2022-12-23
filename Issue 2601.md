@@ -1,6 +1,6 @@
 # Issue 2601: problem with change_ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2601
 
 Original creator: mhampton
 

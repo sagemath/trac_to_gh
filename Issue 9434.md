@@ -1,6 +1,6 @@
 # Issue 9434: Stop greping for a non-existent sage-banner
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9434
 
 Original creator: drkirkby
 
@@ -14,14 +14,14 @@ In install.log, we often see:
 
 
 ```
-drkirkby`@`hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log
+drkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log
 grep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner
 grep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner
 grep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner
 grep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner
 sage_scripts-4.5.alpha3/.hg/store/data/sage-banner.i
 sage_scripts-4.5.alpha3/sage-banner
-drkirkby`@`hawk:~/f/sage-4.5.alpha3$ 
+drkirkby@hawk:~/f/sage-4.5.alpha3$ 
 ```
 
 
@@ -131,7 +131,7 @@ sed -n "/[Vv]ersion/s/ *| *//gp" $SAGE_LOCAL/bin/sage-banner
 Note that the original version gives two lines for non-finals; it does *not* remove the vertical bars (nor the whitespace) because the pipe symbol is "superfluously" escaped: :)
 
 ```sh
-leif64`@`portland:~/Sage/sage-4.5.alpha4-serial$ ./sage -v
+leif64@portland:~/Sage/sage-4.5.alpha4-serial$ ./sage -v
 * Warning: this is a prerelease version, and it may be unstable.     *
 ```
 
@@ -788,7 +788,7 @@ I think that might be the problem.  I thought we tested this with upgrades, but 
 diff -r 6e07658dbbd6 -r b35cea7f82c9 sage-sdist
 --- a/sage-sdist
 +++ b/sage-sdist
-`@``@` -58,6 +58,9 `@``@` cp -LRp Makefile *.txt *.sage sage ipyth
+@@ -58,6 +58,9 @@ cp -LRp Makefile *.txt *.sage sage ipyth
  STD=standard
  mkdir $TMP/$PKGDIR
  mkdir $TMP/$PKGDIR/$STD
@@ -801,7 +801,7 @@ diff -r 6e07658dbbd6 -r b35cea7f82c9 sage-sdist
 diff -r 6e07658dbbd6 -r b35cea7f82c9 sage-update
 --- a/sage-update
 +++ b/sage-update
-`@``@` -351,11 +351,16 `@``@` def do_update():
+@@ -351,11 +351,16 @@ def do_update():
          version_file.close()
      else:
          old_version = ""

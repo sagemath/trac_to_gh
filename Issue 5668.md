@@ -1,6 +1,6 @@
 # Issue 5668: notebook optimization -- when saving state sometimes the sage public notebook server (after running for a long time) takes a *huge* amount of RAM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5668
 
 Original creator: was
 

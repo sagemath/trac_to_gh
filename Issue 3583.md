@@ -1,6 +1,6 @@
 # Issue 3583: randomness in some worksheet doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3583
 
 Original creator: was
 

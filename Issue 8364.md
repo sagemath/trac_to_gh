@@ -1,6 +1,6 @@
 # Issue 8364: Make Cbc support multithread. Other LP solvers too if available
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8364
 
 Original creator: ncohen
 
@@ -50,7 +50,7 @@ Comment by mvngu created at 2010-03-03 04:07:31
 With Sage 4.3.3, I have the following patch queue:
 
 ```sh
-[mvngu`@`sage sage-main]$ hg qapplied
+[mvngu@sage sage-main]$ hg qapplied
 trac_7671.patch
 trac_7854.patch
 trac_7966.patch
@@ -62,7 +62,7 @@ trac_8331-bipartite-dict-initializer.patch
 Now when applying [http://trac.sagemath.org/sage_trac/attachment/ticket/8364/trac_8364.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8364/trac_8364.patch), I got a hunk failure:
 
 ```sh
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush
 adding trac_8364.patch to series file
 applying trac_8364.patch
 patching file sage/graphs/generic_graph.py
@@ -72,10 +72,10 @@ Hunk #26 succeeded at 4249 with fuzz 1 (offset 48 lines).
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8364.patch
-[mvngu`@`sage sage-main]$ cat sage/graphs/generic_graph.py.rej
+[mvngu@sage sage-main]$ cat sage/graphs/generic_graph.py.rej
 --- generic_graph.py
 +++ generic_graph.py
-`@``@` -4032,13 +4064,13 `@``@`
+@@ -4032,13 +4064,13 @@
          p.set_integer(b)
  
          if value_only:

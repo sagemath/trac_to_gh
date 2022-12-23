@@ -1,6 +1,6 @@
 # Issue 6809: abstract_methods_of_class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6809
 
 Original creator: nthiery
 

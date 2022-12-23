@@ -1,6 +1,6 @@
 # Issue 6576: Use JSON package for simple server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6576
 
 Original creator: robertwb
 

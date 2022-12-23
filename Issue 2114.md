@@ -1,6 +1,6 @@
 # Issue 2114: get gf2x into Sage!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2114
 
 Original creator: was
 
@@ -71,10 +71,10 @@ show details 2:53 PM (5 hours ago) [gf2x-20070214.tar.gz]
 Reply
 	
 	
-	from	Emmanuel Thomé <Emmanuel.Thome`@`normalesup.org>
-to	wstein`@`gmail.com,
-cc	Paul Zimmermann <Paul.Zimmermann`@`loria.fr>,
-Pierrick Gaudry <gaudry`@`lix.polytechnique.fr>,
+	from	Emmanuel Thomé <Emmanuel.Thome@normalesup.org>
+to	wstein@gmail.com,
+cc	Paul Zimmermann <Paul.Zimmermann@loria.fr>,
+Pierrick Gaudry <gaudry@lix.polytechnique.fr>,
 date	Thu, Feb 14, 2008 at 2:53 PM
 subject	gf2x package
 	
@@ -338,7 +338,7 @@ The following patch will avoid this problem (or detect it earlier). It is agains
 ```
 --- toom.c      (revision 148)
 +++ toom.c      (working copy)
-`@``@` -1,6 +1,6 `@``@`
+@@ -1,6 +1,6 @@
  /* This file is part of the gf2x library.
  
 -   Copyright 2007, 2008, 2009
@@ -346,7 +346,7 @@ The following patch will avoid this problem (or detect it earlier). It is agains
     Richard Brent, Pierrick Gaudry, Emmanuel Thome', Paul Zimmermann
  
     This program is free software; you can redistribute it and/or modify it
-`@``@` -53,6 +53,9 `@``@`
+@@ -53,6 +53,9 @@
      if (n < GF2X_MUL_TOOMW_THRESHOLD)
         return GF2X_SELECT_KARA;                // KarMul
  
@@ -405,7 +405,7 @@ http://boxen.math.washington.edu/home/leif/Sage/spkgs/ntl-5.5.2.p2.spkg
 diff --git a/.hgtags b/.hgtags
 --- a/.hgtags
 +++ b/.hgtags
-`@``@` -1,3 +1,4 `@``@`
+@@ -1,3 +1,4 @@
  73d22601a79e226c590bb93cc842391e9e8f8d11 ntl-5.5.2
  5cf2d2f43b4d9cf1fc3cf8e9bb54efc58ccf2b4f ntl-5.5.2.p0
  c7af41e56a64bdef778ee579beda9d54943105fe ntl-5.5.2.p1
@@ -413,7 +413,7 @@ diff --git a/.hgtags b/.hgtags
 diff --git a/SPKG.txt b/SPKG.txt
 --- a/SPKG.txt
 +++ b/SPKG.txt
-`@``@` -18,6 +18,7 `@``@`
+@@ -18,6 +18,7 @@
  
  == Dependencies ==
   * gmp
@@ -421,7 +421,7 @@ diff --git a/SPKG.txt b/SPKG.txt
  
  == Special Update/Build Instructions ==
   * We need to modfiy new.h to accomodate Singular
-`@``@` -34,6 +35,9 `@``@`
+@@ -34,6 +35,9 @@
  
  == Changelog ==
  
@@ -434,7 +434,7 @@ diff --git a/SPKG.txt b/SPKG.txt
 diff --git a/spkg-install b/spkg-install
 --- a/spkg-install
 +++ b/spkg-install
-`@``@` -86,7 +86,7 `@``@`
+@@ -86,7 +86,7 @@
          CC="$CC" CFLAGS="$CFLAGS $SHAREDFLAGS" \
          CXX="$CXX" CXXFLAGS="$CXXFLAGS $SHAREDFLAGS" \
          LDFLAGS="$LDFLAGS" LIBTOOL_LINK_FLAGS="$LIBTOOL_LINK_FLAGS" \
@@ -625,7 +625,7 @@ ok, here is the change I did upstream:
 ```
 --- gf2x.c	(revision 150)
 +++ gf2x.c	(working copy)
-`@``@` -79,7 +79,7 `@``@`
+@@ -79,7 +79,7 @@
  
  void gf2x_mul_pool_init(gf2x_mul_pool_t p)
  {

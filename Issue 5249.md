@@ -1,6 +1,6 @@
 # Issue 5249: implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5249
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 1720: [with spkg] update numpy to 1.0.4, also fix silent build problems with gfortran
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1720
 
 Original creator: jkantor
 

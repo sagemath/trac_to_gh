@@ -1,6 +1,6 @@
 # Issue 7888: Do not pass comment lines to Macaulay2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7888
 
 Original creator: novoselt
 

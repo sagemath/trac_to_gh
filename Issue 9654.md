@@ -1,6 +1,6 @@
 # Issue 9654: implicit_plot does not accept color or rgbcolor as keywords
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9654
 
 Original creator: olazo
 
@@ -130,7 +130,7 @@ The error in `plot.py` appears to arise from this line:
 
 
 ```
-`@`rename_keyword(color='rgbcolor')
+@rename_keyword(color='rgbcolor')
 ```
 
 

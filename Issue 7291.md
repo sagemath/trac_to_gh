@@ -1,6 +1,6 @@
 # Issue 7291: Max Cut
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7291
 
 Original creator: ncohen
 

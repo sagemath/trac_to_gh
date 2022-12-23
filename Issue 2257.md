@@ -1,6 +1,6 @@
 # Issue 2257: [with patch, needs review] re-fix doctest failures for 2.10.2.rc0 in sage/rings/number_field/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2257
 
 Original creator: craigcitro
 

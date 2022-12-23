@@ -1,6 +1,6 @@
 # Issue 8717: Precision problem in E2 for Tate Curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8717
 
 Original creator: roed
 

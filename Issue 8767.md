@@ -1,6 +1,6 @@
 # Issue 8767: libpng -- sage-4.4 fails to build on itanium with GCC-4.5.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8767
 
 Original creator: was
 
@@ -40,9 +40,9 @@ More machine info:
 
 ```
 gcc version 4.5.0 (GCC)
-wstein`@`iras:~/screen/iras> uname -a
+wstein@iras:~/screen/iras> uname -a
 Linux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux
-wstein`@`iras:~/screen/iras> cat /etc/issue
+wstein@iras:~/screen/iras> cat /etc/issue
 
 Welcome to SUSE Linux Enterprise Server 10 SP1 (ia64) - Kernel \r (\l).
 ```
@@ -65,7 +65,7 @@ The hg log ends
 ```
 changeset:   13:ae01944f408c
 tag:         tip
-user:        Jaap Spies <jaapspies`@`gmail.com>
+user:        Jaap Spies <jaapspies@gmail.com>
 date:        Thu Feb 04 19:32:51 2010 +0100
 summary:     Corrected stupid typo I thought I had corrected earlier.
 
@@ -82,9 +82,9 @@ Comment by was created at 2010-04-26 17:44:39
 Same problem on x86_64 linux:
 
 ```
-wstein`@`menas:~/screen/menas> uname -a
+wstein@menas:~/screen/menas> uname -a
 Linux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux
-wstein`@`menas:~/screen/menas> cat /etc/issue
+wstein@menas:~/screen/menas> cat /etc/issue
 Welcome to openSUSE 11.1 - Kernel \r (\l).
 ```
 

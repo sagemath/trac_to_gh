@@ -1,6 +1,6 @@
 # Issue 8246: Carmichael lambda function for the Blum-Blum-Shub pseudorandom bit generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8246
 
 Original creator: mvngu
 

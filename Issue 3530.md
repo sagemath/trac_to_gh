@@ -1,6 +1,6 @@
 # Issue 3530: [with patch, needs review] documentation for clib, cinclude pragmas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3530
 
 Original creator: malb
 

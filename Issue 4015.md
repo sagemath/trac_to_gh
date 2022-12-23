@@ -1,6 +1,6 @@
 # Issue 4015: [with patch, needs review] add docs to tests/benchmark.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4015
 
 Original creator: rlm
 

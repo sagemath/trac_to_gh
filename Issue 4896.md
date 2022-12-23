@@ -1,6 +1,6 @@
 # Issue 4896: fill in missing magma --> sage conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4896
 
 Original creator: was
 

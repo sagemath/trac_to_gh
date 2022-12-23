@@ -1,6 +1,6 @@
 # Issue 8462: Numerical noise in /sage/sage/plot/colors.py on Solairs SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8462
 
 Original creator: drkirkby
 
@@ -40,7 +40,7 @@ The Mercurial patch I am about to attach fixes this. Tested on a Sun Blade 1000 
 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.3.4.alpha0$ ./sage -t  "devel/sage/sage/plot/colors.py"
+drkirkby@redstart:~/32/sage-4.3.4.alpha0$ ./sage -t  "devel/sage/sage/plot/colors.py"
 sage -t  "devel/sage/sage/plot/colors.py"                   
          [13.2 s]
  

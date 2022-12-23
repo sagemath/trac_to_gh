@@ -1,6 +1,6 @@
 # Issue 7596: QQ.number_field() does not behave like any other NumberField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7596
 
 Original creator: rlm
 

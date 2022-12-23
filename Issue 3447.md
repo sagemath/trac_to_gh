@@ -1,6 +1,6 @@
 # Issue 3447: sage -t foo gives wrong path to the file foo in the output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3447
 
 Original creator: was
 

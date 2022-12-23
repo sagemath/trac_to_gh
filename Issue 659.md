@@ -1,6 +1,6 @@
 # Issue 659: ZeroInversions for 0^(-1) [with patch]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/659
 
 Original creator: malb
 

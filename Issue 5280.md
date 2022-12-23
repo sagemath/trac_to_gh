@@ -1,6 +1,6 @@
 # Issue 5280: problem with a subposet coming from an order_filter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5280
 
 Original creator: jhpalmieri
 

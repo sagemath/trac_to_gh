@@ -1,6 +1,6 @@
 # Issue 4159: sage -bdist fails on osx 10.5 ppc with libpng errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4159
 
 Original creator: was
 

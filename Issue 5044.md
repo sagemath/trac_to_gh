@@ -1,6 +1,6 @@
 # Issue 5044: on some systems mwrank dumps core and crashes on exit when run under pexpect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5044
 
 Original creator: was
 

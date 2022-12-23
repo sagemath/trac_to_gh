@@ -1,6 +1,6 @@
 # Issue 1871: wiki -- pressing control-c just starts another copy running
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1871
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 The wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:
 
 ```
-was`@`sage:~/tmp$ sage
+was@sage:~/tmp$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10, Release Date: 2008-01-18                        |

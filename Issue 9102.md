@@ -1,6 +1,6 @@
 # Issue 9102: Docstring improvements for strong generating systems of permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9102
 
 Original creator: rbeezer
 

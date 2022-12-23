@@ -1,6 +1,6 @@
 # Issue 7234: [with patch, needs work] Unit groups for finite fields (and more generally)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7234
 
 Original creator: fwclarke
 

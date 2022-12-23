@@ -1,6 +1,6 @@
 # Issue 5647: Random testing improvement (follow up to #5318)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5647
 
 Original creator: nthiery
 

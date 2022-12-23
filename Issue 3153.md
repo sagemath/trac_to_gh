@@ -1,6 +1,6 @@
 # Issue 3153: make finite_field_ntl_gf2e use randstate framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3153
 
 Original creator: cwitty
 

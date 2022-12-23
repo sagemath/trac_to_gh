@@ -1,6 +1,6 @@
 # Issue 6525: Enabling some GraphLatex options that were hard coded.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6525
 
 Original creator: fidelbarrera
 

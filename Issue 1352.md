@@ -1,6 +1,6 @@
 # Issue 1352: [with patch] doctest error in 2.8.15.alpha0 polynomial_element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1352
 
 Original creator: mhansen
 

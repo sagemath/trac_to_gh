@@ -1,6 +1,6 @@
 # Issue 1554: calculus -- issues with calling symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1554
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Dec 17, 2007 5:32 AM, Joel B. Mohler <joel`@`kiwistrawberry.us> wrote:
+On Dec 17, 2007 5:32 AM, Joel B. Mohler <joel@kiwistrawberry.us> wrote:
 > 
 > Hi,
 > 
@@ -89,8 +89,8 @@ summer -- it was really striking how often this happened.
 > Joel
 > 
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-devel`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-devel@googlegroups.com
+> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-devel
 > URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
 > -~----------~----~----~----~------~----~------~--~---

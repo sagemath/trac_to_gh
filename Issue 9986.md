@@ -1,6 +1,6 @@
 # Issue 9986: Shared readline library uses a .so extension on AIX when it should be .a
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9987
 
 Original creator: drkirkby
 

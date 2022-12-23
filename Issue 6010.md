@@ -1,6 +1,6 @@
 # Issue 6010: [with patch, needs review] implement various invariants for genus 2 hyperelliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6010
 
 Original creator: ncalexan
 

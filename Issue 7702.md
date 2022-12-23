@@ -1,6 +1,6 @@
 # Issue 7702: Handle interrupts better in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7702
 
 Original creator: boothby
 

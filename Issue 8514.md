@@ -1,6 +1,6 @@
 # Issue 8514: Optional database_gap-4.4.12 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8514
 
 Original creator: drkirkby
 
@@ -98,7 +98,7 @@ No, this does not work:
 
 
 ```
-drkirkby`@`redstart:~/sage-4.3.4.alpha1$ ./sage -i http://sage.math.washington.edu/home/dima/packages/database_gap-4.4.12.p1.spkg
+drkirkby@redstart:~/sage-4.3.4.alpha1$ ./sage -i http://sage.math.washington.edu/home/dima/packages/database_gap-4.4.12.p1.spkg
 
 <snip all downloading and most extracting> 
 

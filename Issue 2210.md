@@ -1,6 +1,6 @@
 # Issue 2210: make checkversion.pl complain about old XCode releases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2210
 
 Original creator: mabshoff
 

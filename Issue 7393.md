@@ -1,6 +1,6 @@
 # Issue 7393: Update ECL to the latest version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7393
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 3595: the matplotlibrc file is missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3595
 
 Original creator: was
 

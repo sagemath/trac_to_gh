@@ -1,6 +1,6 @@
 # Issue 1443: cannot define function variables?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1443
 
 Original creator: zimmerma
 

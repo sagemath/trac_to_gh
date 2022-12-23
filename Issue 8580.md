@@ -1,6 +1,6 @@
 # Issue 8580: Bug in coercing into a 0-dimensional qotient vector space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8580
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-wstein`@`boxen:~$ /usr/local/bin/sage
+wstein@boxen:~$ /usr/local/bin/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: V = GF(2)^3

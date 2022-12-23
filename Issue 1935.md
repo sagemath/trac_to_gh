@@ -1,6 +1,6 @@
 # Issue 1935: [with patch, needs review] legendre_symbol currently quite slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1935
 
 Original creator: craigcitro
 

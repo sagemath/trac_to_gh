@@ -1,6 +1,6 @@
 # Issue 4560: SR and containment broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4560
 
 Original creator: robertwb
 

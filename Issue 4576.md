@@ -1,6 +1,6 @@
 # Issue 4576: biopython optional package upgrade to 1.49beta
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4576
 
 Original creator: mhampton
 
@@ -80,7 +80,7 @@ Here are some simple things to do:
 ```
 Search for nucleotide records of Salvia divinorum (sage of the seers):
 from Bio import Entrez, SeqIO
-Entrez.email = "hamptonio`@`gmail.com" # Always tell NCBI who you are 
+Entrez.email = "hamptonio@gmail.com" # Always tell NCBI who you are 
 handle = Entrez.esearch(db="Nucleotide", term="salvia divinorum") 
 record = Entrez.read(handle)
 record["IdList"]
@@ -93,7 +93,7 @@ Take the first record found above and get its GenBank file, parse it, and read t
 
 ```
 from Bio import Entrez, SeqIO
-Entrez.email = "hamptonio`@`gmail.com" # Always tell NCBI who you are 
+Entrez.email = "hamptonio@gmail.com" # Always tell NCBI who you are 
 handle = Entrez.efetch(db="nucleotide", id="113715469", rettype="genbank") 
 rec = SeqIO.parse(handle,'genbank')
 x = rec.next()
@@ -150,7 +150,7 @@ python run_tests.py
 4. However the test suite itself fails 5 tests.  Can you comment on this?
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1/biopython-1.49b/biopython/Tests$ python run_tests.py
+was@sage:~/build/sage-3.2.1.alpha1/biopython-1.49b/biopython/Tests$ python run_tests.py
 test_Ace ... ok
 test_AlignIO ... ok
 test_BioSQL ... skipping. Enter your settings in Tests/setup_BioSQL.py (not important if you do not plan to use BioSQL).

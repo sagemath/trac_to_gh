@@ -1,6 +1,6 @@
 # Issue 7562: Another (new?) binomial bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7562
 
 Original creator: kcrisman
 

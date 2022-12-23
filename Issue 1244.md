@@ -1,6 +1,6 @@
 # Issue 1244: update flint to r1075, add spkg-check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1244
 
 Original creator: mabshoff
 

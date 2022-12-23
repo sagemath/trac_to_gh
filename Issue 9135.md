@@ -1,6 +1,6 @@
 # Issue 9135: sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9135
 
 Original creator: was
 
@@ -97,7 +97,7 @@ This change was caused by Mike Hansens changeset 154, which was part of getting 
 
 varro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ ../../../../../sage -hg history Makefile.am 
 changeset:   154:f92b57e5f035
-user:        Mike Hansen <mhansen`@`gmail.com>
+user:        Mike Hansen <mhansen@gmail.com>
 date:        Thu May 06 05:44:44 2010 +0200
 summary:     Add Python related autoconf macros.
 
@@ -116,7 +116,7 @@ sage subshell$ hg diff Makefile.am -r 153
 diff -r ceb75efa62b7 ginac/Makefile.am
 --- a/ginac/Makefile.am Sat Mar 13 15:37:21 2010 -0800
 +++ b/ginac/Makefile.am Fri Jun 04 11:03:50 2010 -0400
-`@``@` -1,7 +1,8 `@``@`
+@@ -1,7 +1,8 @@
  ## Process this file with automake to produce Makefile.in
  
 +INCLUDES = $(PYTHON_INCLUDES) -fPIC
@@ -126,7 +126,7 @@ diff -r ceb75efa62b7 ginac/Makefile.am
    constant.cpp ex.cpp expair.cpp expairseq.cpp exprseq.cpp \
    fail.cpp fderivative.cpp function.cpp idx.cpp indexed.cpp inifcns.cpp \
    inifcns_trans.cpp inifcns_gamma.cpp inifcns_nstdsums.cpp \
-`@``@` -10,9 +11,10 `@``@`
+@@ -10,9 +11,10 @@
    pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \
    utils.cpp wildcard.cpp \
    remember.h tostring.h utils.h compiler.h

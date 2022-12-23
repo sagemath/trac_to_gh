@@ -1,6 +1,6 @@
 # Issue 9567: Networkx-1.1 spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9567
 
 Original creator: bedwards
 

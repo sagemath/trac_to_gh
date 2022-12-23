@@ -1,6 +1,6 @@
 # Issue 5494: Make it so that non-Sage notebook modes can display typeste output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5494
 
 Original creator: mhansen
 

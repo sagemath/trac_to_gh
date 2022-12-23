@@ -1,6 +1,6 @@
 # Issue 6412: [with patch, needs review] Getting Singular's cputime does not work with negative argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6412
 
 Original creator: SimonKing
 

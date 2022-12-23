@@ -1,6 +1,6 @@
 # Issue 9888: A new module implementing Monomial Algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9889
 
 Original creator: quimey
 

@@ -1,6 +1,6 @@
 # Issue 9628: Live tutorial docs missing some equations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9628
 
 Original creator: mikexstudios
 

@@ -1,6 +1,6 @@
 # Issue 8907: build Python as a shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8907
 
 Original creator: mhansen
 

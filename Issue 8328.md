@@ -1,6 +1,6 @@
 # Issue 8328: clisp rather than ecl mentioned on web page.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8328
 
 Original creator: drkirkby
 

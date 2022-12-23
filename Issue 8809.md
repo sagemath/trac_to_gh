@@ -1,6 +1,6 @@
 # Issue 8809: change local/bin/sage_fortran script to respect the SAGE_FORTRAN variable, if it is set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8809
 
 Original creator: was
 
@@ -13,7 +13,7 @@ When building binaries that include fortran, etc., it would give developers and 
 ```
 !/bin/sh
 
-/usr/bin/gfortran -fPIC $`@`
+/usr/bin/gfortran -fPIC $@
 ```
 
 to
@@ -22,9 +22,9 @@ to
 !/bin/sh
 
 if [ x"$SAGE_FORTRAN" != x ]; then
-     "$SAGE_FORTRAN" -fPIC $`@`
+     "$SAGE_FORTRAN" -fPIC $@
 else
-     /usr/bin/gfortran -fPIC $`@`
+     /usr/bin/gfortran -fPIC $@
 fi
 ```
 

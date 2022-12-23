@@ -1,6 +1,6 @@
 # Issue 2342: [with patch, needs easy review] digraphs show axes...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2342
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7554: bug in multivariate polynomial factorization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7554
 
 Original creator: was
 

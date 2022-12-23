@@ -1,6 +1,6 @@
 # Issue 9676: Random Tree constructor for graphs section
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9676
 
 Original creator: edward.scheinerman
 

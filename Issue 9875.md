@@ -1,6 +1,6 @@
 # Issue 9875: Building PARI/GP with SAGE_CHECK=yes fails on rnfkummer on a PPC Mac OS X 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9876
 
 Original creator: jdemeyer
 
@@ -195,7 +195,7 @@ which is
 $ diff -Nau pari-2.4.3.svn-12577.p5/src/config/get_dlcflags pari-2.4.3.svn-12577.p6/src/config/get_dlcflags 
 --- pari-2.4.3.svn-12577.p5/src/config/get_dlcflags	2010-09-06 21:26:42.000000000 +0200
 +++ pari-2.4.3.svn-12577.p6/src/config/get_dlcflags	2010-09-10 23:29:12.000000000 +0200
-`@``@` -2,6 +2,10 `@``@`
+@@ -2,6 +2,10 @@
  if test -n "$__gnuc__"; then
    case $osname in
      cygwin|mingw) DLCFLAGS=;;

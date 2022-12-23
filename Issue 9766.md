@@ -1,6 +1,6 @@
 # Issue 9766: Cliquer has no spkg-check file, but there is a small test suite with the program
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9767
 
 Original creator: drkirkby
 
@@ -14,10 +14,10 @@ There's a test suite which can be run easily - see below.
 
 
 ```
-drkirkby`@`hawk:~/cliquer-1.2.p6/src$ make testcases
+drkirkby@hawk:~/cliquer-1.2.p6/src$ make testcases
 gcc -Wall -O3 -fomit-frame-pointer -funroll-loops   -c -o testcases.o testcases.c
 gcc  -o testcases testcases.o cliquer.o graph.o reorder.o
-drkirkby`@`hawk:~/cliquer-1.2.p6/src$ ./testcases
+drkirkby@hawk:~/cliquer-1.2.p6/src$ ./testcases
 
 Running testcases:  ELEMENTSIZE=32, sizeof(setelement)=4  (OK)
 
@@ -50,7 +50,7 @@ Testing weighted large: all min 60 weighted cliques...OK
 Testing weighted large: all 60...64 weighted maximal cliques...OK
 
 Testing re-entrance...OK
-drkirkby`@`hawk:~/cliquer-1.2.p6/src$ 
+drkirkby@hawk:~/cliquer-1.2.p6/src$ 
 ```
 
 

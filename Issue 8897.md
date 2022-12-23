@@ -1,6 +1,6 @@
 # Issue 8897: units.mass.pound to units.mass.drachma broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8897
 
 Original creator: schilly
 

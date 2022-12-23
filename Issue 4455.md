@@ -1,6 +1,6 @@
 # Issue 4455: [with patch, positive review] bug in Coxeter matrix for type G2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4455
 
 Original creator: mhansen
 

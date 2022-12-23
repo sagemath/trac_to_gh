@@ -1,6 +1,6 @@
 # Issue 5919: [with patch, needs review] bug in conversion of polys over GF(2,e) from NTL to singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5919
 
 Original creator: cremona
 

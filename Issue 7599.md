@@ -1,6 +1,6 @@
 # Issue 7599: vertex_cut and edge_cut ( minimum s-t cut )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7599
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 5477: Make R.quotient_ring(I) normalize generator in the univariate case (easy to fix!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5477
 
 Original creator: was
 

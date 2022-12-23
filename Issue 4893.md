@@ -1,6 +1,6 @@
 # Issue 4893: srange docstring is misleading
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4893
 
 Original creator: cremona
 

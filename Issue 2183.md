@@ -1,6 +1,6 @@
 # Issue 2183: scipy and special functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2183
 
 Original creator: wdj
 

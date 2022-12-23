@@ -1,6 +1,6 @@
 # Issue 840: [with patch] new real root isolation algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/840
 
 Original creator: cwitty
 

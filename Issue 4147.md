@@ -1,6 +1,6 @@
 # Issue 4147: Upgrade to linbox-1.1.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4147
 
 Original creator: cpernet
 

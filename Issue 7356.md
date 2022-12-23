@@ -1,6 +1,6 @@
 # Issue 7356: fixed latex representation for floats
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7356
 
 Original creator: robert.marik
 

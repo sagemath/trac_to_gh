@@ -1,6 +1,6 @@
 # Issue 1912: Displaying a list of graphic objects prints what appears to be an empty list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1912
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9917: triangulate point configurations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9918
 
 Original creator: vbraun
 

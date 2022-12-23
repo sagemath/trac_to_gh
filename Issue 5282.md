@@ -1,6 +1,6 @@
 # Issue 5282: In %python mode in the notebook, tracebacks are not properly reported
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5282
 
 Original creator: wasI
 

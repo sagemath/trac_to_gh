@@ -1,6 +1,6 @@
 # Issue 282: Add matrix() class to FiniteFields and FiniteField extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/282
 
 Original creator: ncalexan
 

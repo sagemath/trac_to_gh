@@ -1,6 +1,6 @@
 # Issue 838: doctest runner should share SAGE initialization using fork()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/838
 
 Original creator: cwitty
 

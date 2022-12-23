@@ -1,6 +1,6 @@
 # Issue 3605: ell_finite_field.py: libSingular - "Use of uninitialised value of size 8"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3605
 
 Original creator: mabshoff
 

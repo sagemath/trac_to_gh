@@ -1,6 +1,6 @@
 # Issue 6186: two probably-easy-to-fix scope bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6186
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8164: automatic rainbow coloring of multiple plot lines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8164
 
 Original creator: jason
 

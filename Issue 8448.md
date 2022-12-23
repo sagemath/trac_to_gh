@@ -1,6 +1,6 @@
 # Issue 8448: doc/common/builder.py doctests write files in Sage tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8448
 
 Original creator: rhinton
 

@@ -1,6 +1,6 @@
 # Issue 7259: Revert Sets().category() from Sets() to Objects()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7259
 
 Original creator: nthiery
 

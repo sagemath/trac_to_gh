@@ -1,6 +1,6 @@
 # Issue 2630: Python API for sage-ptest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2630
 
 Original creator: gfurnish
 

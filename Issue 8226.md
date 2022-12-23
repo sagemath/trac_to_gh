@@ -1,6 +1,6 @@
 # Issue 8226: Elementary divisors for non PIDs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8226
 
 Original creator: mraum
 

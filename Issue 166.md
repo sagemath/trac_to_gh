@@ -1,6 +1,6 @@
 # Issue 166: incorrect wrapping for modular arithmetic negation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/166
 
 Original creator: dmharvey
 

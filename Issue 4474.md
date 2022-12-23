@@ -1,6 +1,6 @@
 # Issue 4474: A hack in preparsing files is dangerous/confusing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4474
 
 Original creator: was
 

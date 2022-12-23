@@ -1,6 +1,6 @@
 # Issue 3001: sage ignores custom environment variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3001
 
 Original creator: dfdeshom
 
@@ -15,7 +15,7 @@ In sage-spkg "gcc -v" is used, instead of "${CC-gcc} -v". Easy fix:
 ---------------------------------------------------------------
 --- a/sage-spkg Mon Apr 21 01:43:53 2008 -0700
 +++ b/sage-spkg Tue Apr 22 12:37:48 2008 -0300
-`@``@` -241,8 +241,8 `@``@`
+@@ -241,8 +241,8 @@
 
  echo "****************************************************"
  echo "GCC Version"

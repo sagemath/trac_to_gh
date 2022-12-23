@@ -1,6 +1,6 @@
 # Issue 5059: [with patch, needs review] Fix a bunch of broken pickles
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5059
 
 Original creator: craigcitro
 

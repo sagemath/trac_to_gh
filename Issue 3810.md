@@ -1,6 +1,6 @@
 # Issue 3810: make abelian group list/iter and classgroup list/iter more modern
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3810
 
 Original creator: ncalexan
 

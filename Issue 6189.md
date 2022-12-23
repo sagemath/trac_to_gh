@@ -1,6 +1,6 @@
 # Issue 6189: 'integrate' produces incorrect answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6189
 
 Original creator: emchristiansen
 

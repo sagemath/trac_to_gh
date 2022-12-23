@@ -1,6 +1,6 @@
 # Issue 7541: LexBFS and is_chordal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7541
 
 Original creator: ncohen
 

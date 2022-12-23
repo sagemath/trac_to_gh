@@ -1,6 +1,6 @@
 # Issue 6396: primes_of_degree_one is broken for relative extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6396
 
 Original creator: davidloeffler
 

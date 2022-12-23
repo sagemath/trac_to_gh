@@ -1,6 +1,6 @@
 # Issue 8142: Unexpected notebook behavior when readline init file is non empty
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8142
 
 Original creator: mmeulien
 

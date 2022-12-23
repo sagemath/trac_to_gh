@@ -1,6 +1,6 @@
 # Issue 8699: allow doctest coverage script to handle triple single quotes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8699
 
 Original creator: mvngu
 
@@ -33,22 +33,22 @@ The two patches on this ticket provide documentation for the doctest coverage sc
 
 
 ```sh
-[mvngu`@`sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-before.log
-[mvngu`@`sage sage-4.4.alpha0-8699-quotes]$ cd local/bin/
-[mvngu`@`sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-documentation.patch && hg qpush 
+[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-before.log
+[mvngu@sage sage-4.4.alpha0-8699-quotes]$ cd local/bin/
+[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-documentation.patch && hg qpush 
 adding trac_8699-documentation.patch to series file
 applying trac_8699-documentation.patch
 now at: trac_8699-documentation.patch
-[mvngu`@`sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-single-quotes.patch && hg qpush 
+[mvngu@sage bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8699/trac_8699-single-quotes.patch && hg qpush 
 adding trac_8699-single-quotes.patch to series file
 applying trac_8699-single-quotes.patch
 now at: trac_8699-single-quotes.patch
-[mvngu`@`sage bin]$ cd ../..
-[mvngu`@`sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-after.log
-[mvngu`@`sage sage-4.4.alpha0-8699-quotes]$ diff -Naur coverage-before.log coverage-after.log 
+[mvngu@sage bin]$ cd ../..
+[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverageall > coverage-after.log
+[mvngu@sage sage-4.4.alpha0-8699-quotes]$ diff -Naur coverage-before.log coverage-after.log 
 --- coverage-before.log	2010-04-17 03:37:50.663727239 -0700
 +++ coverage-after.log	2010-04-17 03:38:45.181442502 -0700
-`@``@` -381,7 +381,7 `@``@`
+@@ -381,7 +381,7 @@
  geometry/polytope.py: 27% (6 of 22)
  geometry/polyhedra.py: 100% (186 of 186)
  graphs/graph_bundle.py: 100% (5 of 5)
@@ -57,7 +57,7 @@ now at: trac_8699-single-quotes.patch
  graphs/planarity.pyx: 100% (1 of 1)
  graphs/graph_latex.py: 100% (10 of 10)
  graphs/schnyder.py: 100% (8 of 8)
-`@``@` -1185,6 +1185,6 `@``@`
+@@ -1185,6 +1185,6 @@
  
  Overall weighted coverage score:  81.6%
  Total number of functions:  25377
@@ -110,11 +110,11 @@ Replying to [comment:6 timdumol]:
 I don't think I understand your test case. Say I put your test case in a module, e.g. devel/sage-main/sage/graphs/graph_generators.py:
 
 ```diff
-[mvngu`@`sage sage-main]$ hg diff
+[mvngu@sage sage-main]$ hg diff
 diff --git a/sage/graphs/graph_generators.py b/sage/graphs/graph_generators.py
 --- a/sage/graphs/graph_generators.py
 +++ b/sage/graphs/graph_generators.py
-`@``@` -168,6 +168,17 `@``@`
+@@ -168,6 +168,17 @@
  from   math import sin, cos, pi
  from sage.misc.randstate import current_randstate
  
@@ -139,7 +139,7 @@ Running the doctest coverage script over this modified module reported the follo
 
 
 ```sh
-[mvngu`@`sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverage devel/sage-main/sage/graphs/graph_generators.py 
+[mvngu@sage sage-4.4.alpha0-8699-quotes]$ ./sage -coverage devel/sage-main/sage/graphs/graph_generators.py 
 ----------------------------------------------------------------------
 devel/sage-main/sage/graphs/graph_generators.py
 ERROR: Please add a `TestSuite(s).run()` doctest.
@@ -226,7 +226,7 @@ Comment by tscrim created at 2013-02-06 12:55:17
 This seems to be fixed by #14061:
 
 ```
-travis`@`travis-virtualbox:~/sage-5.7.beta3/devel/sage-reviews/sage$ sage -coverage test_8699.py 
+travis@travis-virtualbox:~/sage-5.7.beta3/devel/sage-reviews/sage$ sage -coverage test_8699.py 
 ----------------------------------------------------------------------
 test_8699.py
 SCORE test_8699.py: 0% (0 of 4)

@@ -1,6 +1,6 @@
 # Issue 815: doctesting is broken on .sage files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/815
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 8012: spurious argument in RIF documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8012
 
 Original creator: robertwb
 

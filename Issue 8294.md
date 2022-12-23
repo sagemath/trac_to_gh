@@ -1,6 +1,6 @@
 # Issue 8294: Copy is broken on 2x2 integer matrix (mutability is not set)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8294
 
 Original creator: hivert
 

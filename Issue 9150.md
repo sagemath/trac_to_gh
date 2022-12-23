@@ -1,6 +1,6 @@
 # Issue 9150: add colorbars to density plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9150
 
 Original creator: jason
 

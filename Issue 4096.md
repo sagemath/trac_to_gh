@@ -1,6 +1,6 @@
 # Issue 4096: pari precision interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4096
 
 Original creator: cremona
 

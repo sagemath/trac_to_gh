@@ -1,6 +1,6 @@
 # Issue 770: Bad behaviour when Ctrl-C hit while running an expect interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/770
 
 Original creator: tornaria
 

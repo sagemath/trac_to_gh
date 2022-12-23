@@ -1,6 +1,6 @@
 # Issue 8944: 32 vs. 64 bit issues in matrix1.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8944
 
 Original creator: mvngu
 

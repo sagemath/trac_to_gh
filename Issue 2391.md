@@ -1,6 +1,6 @@
 # Issue 2391: module docstring bug running filename.sage from the command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2391
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Thu, Feb 28, 2008 at 9:36 AM, Kate <kate01123`@`gmail.com> wrote:
+On Thu, Feb 28, 2008 at 9:36 AM, Kate <kate01123@gmail.com> wrote:
 > 
 >  What gives with the following session below?
 >  More specifically, what happens to the file docstring

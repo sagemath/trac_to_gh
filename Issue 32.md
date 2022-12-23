@@ -1,6 +1,6 @@
 # Issue 32: missing coercion functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/32
 
 Original creator: was
 
@@ -33,7 +33,7 @@ This was easy to add
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169204832 28800
 # Node ID 4c0bbf3706fad3a37607129c520366de1b20e452
 # Parent  061691096b76580a55a655e654aa046f2071ebc4
@@ -42,7 +42,7 @@ fix trac #32 -- a missing coercin.
 diff -r 061691096b76 -r 4c0bbf3706fa sage/rings/multi_polynomial_ring.py
 --- a/sage/rings/multi_polynomial_ring.py       Fri Jan 19 02:58:30 2007 -0800
 +++ b/sage/rings/multi_polynomial_ring.py       Fri Jan 19 03:07:12 2007 -0800
-`@``@` -407,7 +407,14 `@``@` class MPolynomialRing_polydict( MPolynom
+@@ -407,7 +407,14 @@ class MPolynomialRing_polydict( MPolynom
  
          Coerce works and gets the right parent. 
              sage: parent(S2._coerce_(S.0)) is S2
@@ -58,7 +58,7 @@ diff -r 061691096b76 -r 4c0bbf3706fa sage/rings/multi_polynomial_ring.py
          """
          if isinstance(x, multi_polynomial_element.MPolynomial_polydict):
              P = x.parent()
-`@``@` -415,13 +422,19 `@``@` class MPolynomialRing_polydict( MPolynom
+@@ -415,13 +422,19 @@ class MPolynomialRing_polydict( MPolynom
                  return x
              elif P == self:
                  return multi_polynomial_element.MPolynomial_polydict(self, x.element().dict())

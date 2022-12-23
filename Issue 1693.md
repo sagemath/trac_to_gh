@@ -1,6 +1,6 @@
 # Issue 1693: jmol stubles over browser caching
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1693
 
 Original creator: schilly
 

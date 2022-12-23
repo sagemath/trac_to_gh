@@ -1,6 +1,6 @@
 # Issue 9956: Parametric Surfaces don't load well
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9957
 
 Original creator: kcrisman
 

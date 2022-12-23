@@ -1,6 +1,6 @@
 # Issue 6398: shorten long doctests in sage/schemes/elliptic_curves/sha_tate.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6398
 
 Original creator: rlm
 

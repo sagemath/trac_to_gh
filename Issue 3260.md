@@ -1,6 +1,6 @@
 # Issue 3260: Make #optional usable at a higher level
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3260
 
 Original creator: broune
 

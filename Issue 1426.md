@@ -1,6 +1,6 @@
 # Issue 1426: new trac view: tickets ***reported by*** given user
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1426
 
 Original creator: zimmerma
 

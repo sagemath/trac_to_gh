@@ -1,6 +1,6 @@
 # Issue 9528: #8306 completely breaks "sage -upgrade"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9528
 
 Original creator: was
 

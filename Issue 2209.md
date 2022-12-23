@@ -1,6 +1,6 @@
 # Issue 2209: gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2209
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9761: Update zn_poly's SPKG.txt to indicate it depends on Python.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9762
 
 Original creator: drkirkby
 

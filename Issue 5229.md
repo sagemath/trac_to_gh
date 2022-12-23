@@ -1,6 +1,6 @@
 # Issue 5229: [with patch, needs review] Jmol axes in the wrong place
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5229
 
 Original creator: jason
 

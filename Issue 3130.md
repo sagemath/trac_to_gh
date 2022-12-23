@@ -1,6 +1,6 @@
 # Issue 3130: permgps: added normal_subgroups and fixed image and kernel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3130
 
 Original creator: wdj
 
@@ -356,7 +356,7 @@ Comment by mabshoff created at 2008-06-04 21:22:12
 9670.patch no longer merges cleanly because of the following hunk:
 
 ```
-`@``@` -402,21 +372,6 `@``@` class PermutationGroup_generic(group.Fin
+@@ -402,21 +372,6 @@ class PermutationGroup_generic(group.Fin
                  return PermutationGroupElement(x._gap_(), self, check = False)
          raise TypeError, "no implicit coercion of element into permutation group"
 
@@ -412,7 +412,7 @@ I'm trying to rebase but don't know how to merge. When I try to apply the old pa
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.0.3.alpha1$ ./sage
+wdj@hera:~/sagefiles/sage-3.0.3.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: permgp
@@ -439,7 +439,7 @@ The methods in file permgroup.py.rej make no sense to me:
 ```
 --- permgroup.py
 +++ permgroup.py
-`@``@` -61,7 +61,8 `@``@` AUTHOR:
+@@ -61,7 +61,8 @@ AUTHOR:
      - William Stein (2007-07): put is_isomorphic back (and make it better)
      - David Joyner (2007-08): fixed bugs in composition_series, upper/lower_central_series, 
                                derived_series,
@@ -449,7 +449,7 @@ The methods in file permgroup.py.rej make no sense to me:
   
  REFERENCES:
      Cameron, P., Permutation Groups. New York: Cambridge University Press, 1999.
-`@``@` -1289,171 +1367,6 `@``@` class PermutationGroup_generic(group.Fin
+@@ -1289,171 +1367,6 @@ class PermutationGroup_generic(group.Fin
          from permgroup_morphism import PermutationGroupMorphism_im_gens
          return PermutationGroupMorphism_im_gens(self, right, srcs, dsts)
  
@@ -621,7 +621,7 @@ The methods in file permgroup.py.rej make no sense to me:
      ######################  Boolean tests #####################
      
      def is_abelian(self):
-`@``@` -1704,54 +1617,6 `@``@` class PermutationGroup_generic(group.Fin
+@@ -1704,54 +1617,6 @@ class PermutationGroup_generic(group.Fin
          ans = self._gap_().IsTransitive()
          return ans.bool()
      

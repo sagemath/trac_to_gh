@@ -1,6 +1,6 @@
 # Issue 6075: dsage is not yet entirely optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6075
 
 Original creator: ncalexan
 

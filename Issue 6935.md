@@ -1,6 +1,6 @@
 # Issue 6935: Improve documentation for plots with new axis code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6935
 
 Original creator: kcrisman
 

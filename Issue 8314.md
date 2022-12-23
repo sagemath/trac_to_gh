@@ -1,6 +1,6 @@
 # Issue 8314: numerical noise in sage/misc/functional.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8314
 
 Original creator: mvngu
 

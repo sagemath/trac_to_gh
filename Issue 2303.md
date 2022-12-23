@@ -1,6 +1,6 @@
 # Issue 2303: bessel_I(1,1,"scipy") segfaults with gcc 4.2.3 on Linux x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2303
 
 Original creator: mabshoff
 
@@ -31,7 +31,7 @@ The offending line seems to be
 sage: bessel_I(1,1,"scipy")
 /home/kate/sage/sage-2.10.2-x86-Linux/local/bin/sage-sage: line 212:
 3484 Illegal instruction     sage-ipython -c "$SAGE_STARTUP_COMMAND;"
-"$`@`"
+"$@"
 
 Kate 
 ```
@@ -191,21 +191,21 @@ Comment by mabshoff created at 2008-07-11 18:25:33
 With the new spkg the following three doctests that used to segfault all due to illegal instruction now pass:
 
 ```
-[mabshoff`@`cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/plot/plot3d/list_plot3d.py
+[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/plot/plot3d/list_plot3d.py
 sage -t  devel/sage/sage/plot/plot3d/list_plot3d.py         
 	 [6.3 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 6.3 seconds
-[mabshoff`@`cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/finance/time_series.pyx
+[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/finance/time_series.pyx
 sage -t  devel/sage/sage/finance/time_series.pyx            
 	 [15.1 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 15.1 seconds
-[mabshoff`@`cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t devel/sage/sage/functions/special.py 
+[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t devel/sage/sage/functions/special.py 
 sage -t  devel/sage/sage/functions/special.py               
 	 [8.2 s]
  

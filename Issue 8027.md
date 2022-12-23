@@ -1,6 +1,6 @@
 # Issue 8027: change the wiki(...) command to store data in $HOME/.sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8027
 
 Original creator: was
 
@@ -19,11 +19,11 @@ When I wrote the wiki and trac command, there was no .sage/* folder, and the SAg
 
 
 ```
-sage`@`sagemath:~/wiki/sage$ ls
+sage@sagemath:~/wiki/sage$ ls
 nohup.err  nohup.out  sage_wiki  start
-sage`@`sagemath:~/wiki/sage$ more start
+sage@sagemath:~/wiki/sage$ more start
 ulimit -v 2000000; nohup echo "wiki(port=9001, address='')" | sage-new  > nohup.out 2>nohup.err &
-sage`@`sagemath:~/wiki/sage$
+sage@sagemath:~/wiki/sage$
 ```
 
 

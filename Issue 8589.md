@@ -1,6 +1,6 @@
 # Issue 8589: New feature : Hopf algebra structure on group algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8589
 
 Original creator: vferay
 

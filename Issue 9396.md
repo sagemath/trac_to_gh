@@ -1,6 +1,6 @@
 # Issue 9396: statistical package r fails to run, missing libicuuc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9396
 
 Original creator: mariah
 

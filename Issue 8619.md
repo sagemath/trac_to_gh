@@ -1,6 +1,6 @@
 # Issue 8619: add check for SELinux to sage prereq script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8619
 
 Original creator: was
 

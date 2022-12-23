@@ -1,6 +1,6 @@
 # Issue 7444: Broken: searching published worksheets after publishing a worksheet for the first time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7444
 
 Original creator: mpatel
 

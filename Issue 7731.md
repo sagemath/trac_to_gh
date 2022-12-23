@@ -1,6 +1,6 @@
 # Issue 7731: knoboo --> codenode optional spkg transition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7731
 
 Original creator: was
 

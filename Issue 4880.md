@@ -1,6 +1,6 @@
 # Issue 4880: [with spkg, needs review] Improved experimental spkg vtk-5.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4880
 
 Original creator: jsp
 

@@ -1,6 +1,6 @@
 # Issue 3915: [with patch, needs review] PolyBoRi interface improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3915
 
 Original creator: malb
 
@@ -202,7 +202,7 @@ Comment by mabshoff created at 2008-08-28 10:59:54
 I am seeing slight merge issues with my current alpha2 tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3915_pbori_improvements.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3915_pbori_improvements.patch
 patching file sage/rings/polynomial/multi_polynomial_ideal.py
 Hunk #1 FAILED at 391.
 Hunk #2 succeeded at 1948 (offset 47 lines).

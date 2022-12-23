@@ -1,6 +1,6 @@
 # Issue 1205: 2.8.13.alpha1: modular/modform/numerical.py with new numpy/scipy from #1198
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1205
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: failure
 
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py
+mabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py
 sage -t  devel/sage-main/sage/modular/modform/numerical.py  **********************************************************************
 File "numerical.py", line 53:
     sage: n.ap(2)

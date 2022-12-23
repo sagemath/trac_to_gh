@@ -1,6 +1,6 @@
 # Issue 3859: Line's corner_cutoff is poorly documented, and buggy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3859
 
 Original creator: mclean
 

@@ -1,6 +1,6 @@
 # Issue 6322: optional doctest failure -- another mistake in bordeaux lectures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6322
 
 Original creator: was
 

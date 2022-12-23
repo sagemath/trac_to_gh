@@ -1,6 +1,6 @@
 # Issue 6394: Fix fallout from removal of graph_isom in 4.1.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6394
 
 Original creator: rlm
 

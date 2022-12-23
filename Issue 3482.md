@@ -1,6 +1,6 @@
 # Issue 3482: create a pickle jar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3482
 
 Original creator: was
 

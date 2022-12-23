@@ -1,6 +1,6 @@
 # Issue 3094: [with patch; needs review] Update to SAGE Debian packaging
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3094
 
 Original creator: tabbott
 

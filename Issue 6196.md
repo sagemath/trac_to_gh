@@ -1,6 +1,6 @@
 # Issue 6196: mpmath support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6196
 
 Original creator: fredrik.johansson
 

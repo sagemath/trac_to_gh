@@ -1,6 +1,6 @@
 # Issue 2618: [with patch, needs review] documentation for QuotientRingElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2618
 
 Original creator: malb
 

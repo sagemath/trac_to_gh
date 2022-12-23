@@ -1,6 +1,6 @@
 # Issue 1275: [with bundle] implementation of QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1275
 
 Original creator: cwitty
 
@@ -103,7 +103,7 @@ changeset:   7420:b06f58879bb3
 tag:         tip
 parent:      7419:dc8dedef562f
 parent:      7405:ce4aa966e4c1
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Tue Nov 27 05:59:30 2007 -0800
 summary:     merge
 

@@ -1,6 +1,6 @@
 # Issue 1513: FLINT install uses make -B, which isn't an option on (slightly) older make versions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1513
 
 Original creator: craigcitro
 

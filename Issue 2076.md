@@ -1,6 +1,6 @@
 # Issue 2076: Inconsistent coloring of plotted points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2076
 
 Original creator: jmitchell
 

@@ -1,6 +1,6 @@
 # Issue 1379: "What is Sage" interactive javascript webpage app
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1379
 
 Original creator: TimothyClemans
 

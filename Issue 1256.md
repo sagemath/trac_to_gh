@@ -1,6 +1,6 @@
 # Issue 1256: mwrank*.spkg now redundant, included in cremona*.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1256
 
 Original creator: cremona
 

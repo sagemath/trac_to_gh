@@ -1,6 +1,6 @@
 # Issue 176: sagex -- add support for the "//" --> floordiv operator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/176
 
 Original creator: was
 

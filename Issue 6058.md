@@ -1,6 +1,6 @@
 # Issue 6058: Add basic statistics functionality at the top level
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6058
 
 Original creator: mhampton
 

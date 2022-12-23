@@ -1,6 +1,6 @@
 # Issue 2416: jmol error on FF3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2416
 
 Original creator: edrex
 

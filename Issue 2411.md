@@ -1,6 +1,6 @@
 # Issue 2411: Missing references in Sage tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2411
 
 Original creator: rhinton
 

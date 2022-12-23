@@ -1,6 +1,6 @@
 # Issue 2228: sage-2.10.2.alpha1 -- fractional ideal doctest failure -- output is equivalent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2228
 
 Original creator: was
 

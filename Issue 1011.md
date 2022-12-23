@@ -1,6 +1,6 @@
 # Issue 1011: [with patch] MagmaElement.__nonzero__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1011
 
 Original creator: malb
 

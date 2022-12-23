@@ -1,6 +1,6 @@
 # Issue 3026: multivariate polynomial ring with no variables do not print properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3026
 
 Original creator: broune
 

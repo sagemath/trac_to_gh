@@ -1,6 +1,6 @@
 # Issue 3806: improvements to plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3806
 
 Original creator: mhansen
 
@@ -43,7 +43,7 @@ Comment by mabshoff created at 2008-08-12 02:08:19
 The following test fails:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
 sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/ell_point.py", line 392:

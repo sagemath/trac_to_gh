@@ -1,6 +1,6 @@
 # Issue 7246: digraph.DeBruijn in graph_generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7246
 
 Original creator: ncohen
 

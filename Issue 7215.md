@@ -1,6 +1,6 @@
 # Issue 7215: Spanish doc #3 "Introduction"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7215
 
 Original creator: Loufer
 

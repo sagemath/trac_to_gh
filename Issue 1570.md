@@ -1,6 +1,6 @@
 # Issue 1570: typo in sage/rings/number_field/number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1570
 
 Original creator: mabshoff
 
@@ -15,7 +15,7 @@ Reported by Francis Clarke
 2007 -0800
 +++ b/sage/rings/number_field/number_field.py   Wed Dec 19 18:54:54
 2007 +0000
-`@``@` -751,7 +751,7 `@``@` class NumberField_generic(number_field_b
+@@ -751,7 +751,7 @@ class NumberField_generic(number_field_b
 
          You can also view a number field as having a different
          generator by just chosing the input to generate the

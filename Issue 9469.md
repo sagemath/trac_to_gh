@@ -1,6 +1,6 @@
 # Issue 9469: Category membership, without arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9469
 
 Original creator: nthiery
 
@@ -116,7 +116,7 @@ fold it into this patch:
 diff --git a/sage/categories/category.py b/sage/categories/category.py
 --- a/sage/categories/category.py
 +++ b/sage/categories/category.py
-`@``@` -627,8 +627,19 `@``@` class Category(UniqueRepresentation, Sag
+@@ -627,8 +627,19 @@ class Category(UniqueRepresentation, Sag
  
              sage: F in Algebras
              False

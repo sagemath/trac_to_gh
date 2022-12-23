@@ -1,6 +1,6 @@
 # Issue 7872: Adding coordinate transformations to plot3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7872
 
 Original creator: olazo
 

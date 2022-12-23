@@ -1,6 +1,6 @@
 # Issue 9363: load bug when last line of file begins with #
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9363
 
 Original creator: mariah
 

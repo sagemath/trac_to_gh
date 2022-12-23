@@ -1,6 +1,6 @@
 # Issue 8409: Fix build and doctest issues for Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8409
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 4529: Implement plots with logarithmic scale
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4529
 
 Original creator: ronanpaixao
 

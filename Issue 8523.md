@@ -1,6 +1,6 @@
 # Issue 8523: Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8523
 
 Original creator: drkirkby
 
@@ -124,7 +124,7 @@ So here is the diff:
 ```
 --- a/spkg-install      Sat Mar 27 03:34:21 2010 -0700
 +++ b/spkg-install      Sat Mar 27 04:26:40 2010 -0700
-`@``@` -25,13 +25,10 `@``@`
+@@ -25,13 +25,10 @@
     exit 1
  fi
  
@@ -339,7 +339,7 @@ Sure, I do talk about 1.2 (and I was baffled by what you wrote). And 1.2 is brok
 For instance, one compiled from source on boxen.math 
 
 ```
-dima`@`boxen:~/sage/sage-4.3.4/spkg/standard$ ls database_g*
+dima@boxen:~/sage/sage-4.3.4/spkg/standard$ ls database_g*
 database_gap-4.4.12.p0.spkg
 ```
 

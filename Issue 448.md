@@ -1,6 +1,6 @@
 # Issue 448: add spkg-check to all packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/448
 
 Original creator: mabshoff
 

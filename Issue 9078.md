@@ -1,6 +1,6 @@
 # Issue 9078: random element in fraction fields broken, division by zero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9078
 
 Original creator: ralle
 

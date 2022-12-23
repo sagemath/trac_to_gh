@@ -1,6 +1,6 @@
 # Issue 7126: Doc sidebar broken by Sphinx 0.6.3 JS compression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7126
 
 Original creator: timdumol
 

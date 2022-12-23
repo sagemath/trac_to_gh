@@ -1,6 +1,6 @@
 # Issue 8685: evaluation of Monsky-Washnitzer objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8685
 
 Original creator: jen
 

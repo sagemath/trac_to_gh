@@ -1,6 +1,6 @@
 # Issue 1921: add random_element to groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1921
 
 Original creator: wdj
 

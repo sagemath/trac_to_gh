@@ -1,6 +1,6 @@
 # Issue 3791: ATLAS.spkg: add Altivec errata support for Linux PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3791
 
 Original creator: mabshoff
 

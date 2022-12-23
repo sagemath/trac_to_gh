@@ -1,6 +1,6 @@
 # Issue 1410: fix leftover issues from removal of mwrank.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1410
 
 Original creator: mabshoff
 

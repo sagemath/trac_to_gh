@@ -1,6 +1,6 @@
 # Issue 7559: replace all the deprecation warning using deprecated_function_alias whenever possible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7559
 
 Original creator: hivert
 

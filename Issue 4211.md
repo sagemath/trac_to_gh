@@ -1,6 +1,6 @@
 # Issue 4211: new optional spkg: guppy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4211
 
 Original creator: mabshoff
 
@@ -21,7 +21,7 @@ Michael
 A sample session:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.3.alpha1, Release Date: 2008-09-24                |

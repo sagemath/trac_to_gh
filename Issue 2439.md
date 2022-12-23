@@ -1,6 +1,6 @@
 # Issue 2439: ZZ.random_element() crashes Sage with probability 2^-31
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2439
 
 Original creator: cwitty
 

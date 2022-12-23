@@ -1,6 +1,6 @@
 # Issue 7243: bashisms in extcode-4.1.2/pari/dokchitser/testall
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7243
 
 Original creator: tabbott
 

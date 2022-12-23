@@ -1,6 +1,6 @@
 # Issue 3334: [with patch, needs review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3334
 
 Original creator: malb
 

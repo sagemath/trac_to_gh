@@ -1,6 +1,6 @@
 # Issue 8723: Change to return type of E.multiplcation_by_m(m,True)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8723
 
 Original creator: cremona
 
@@ -230,9 +230,9 @@ Writing objects: 100% (30/30), 4.47 KiB, done.
 Total 30 (delta 20), reused 4 (delta 4)
 remote: FATAL: W refs/heads/master sage cremona DENIED by fallthru
 remote: error: hook declined to update refs/heads/master
-To ssh://git`@`trac.sagemath.org:2222/sage.git
+To ssh://git@trac.sagemath.org:2222/sage.git
  ! [remote rejected] master -> master (hook declined)
-error: failed to push some refs to 'ssh://git`@`trac.sagemath.org:2222/sage.git'
+error: failed to push some refs to 'ssh://git@trac.sagemath.org:2222/sage.git'
 ```
 
 

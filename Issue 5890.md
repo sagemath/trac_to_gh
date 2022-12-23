@@ -1,6 +1,6 @@
 # Issue 5890: clean up schemes/elliptic_curves/ell_generic.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5890
 
 Original creator: AlexGhitza
 

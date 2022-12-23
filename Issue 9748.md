@@ -1,6 +1,6 @@
 # Issue 9748: Change our filling to use matplotlib's filling capabilities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9748
 
 Original creator: jason
 

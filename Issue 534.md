@@ -1,6 +1,6 @@
 # Issue 534: matrix_modn_sparse_Matrix_modn_sparse leak (from modular/ssmod/ssmod.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/534
 
 Original creator: mabshoff
 

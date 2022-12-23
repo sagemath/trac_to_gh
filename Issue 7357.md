@@ -1,6 +1,6 @@
 # Issue 7357: Add non-offset logarithmic integral, Li
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7357
 
 Original creator: myurko
 

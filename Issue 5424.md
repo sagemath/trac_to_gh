@@ -1,6 +1,6 @@
 # Issue 5424: Move infinity to new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5424
 
 Original creator: robertwb
 

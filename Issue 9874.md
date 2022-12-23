@@ -1,6 +1,6 @@
 # Issue 9874: Can't upload from a notebook link, only from a .sws file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9875
 
 Original creator: kcrisman
 

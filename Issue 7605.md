@@ -1,6 +1,6 @@
 # Issue 7605: Graph.vertex_connectivity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7605
 
 Original creator: ncohen
 

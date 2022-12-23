@@ -1,6 +1,6 @@
 # Issue 7938: 'term' and 'monomial' are inconsistently used in some Category and combinat code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7938
 
 Original creator: jbandlow
 

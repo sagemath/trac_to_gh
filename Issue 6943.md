@@ -1,6 +1,6 @@
 # Issue 6943: Make @parallel work for callable objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6943
 
 Original creator: boothby
 
@@ -14,8 +14,8 @@ The following should work:
 
 
 ```
-`@`parallel
-`@`cached_function
+@parallel
+@cached_function
 def foo(x):
     return x+1
 ```

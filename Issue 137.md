@@ -1,6 +1,6 @@
 # Issue 137: notebook %form widget maker
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/137
 
 Original creator: boothby
 

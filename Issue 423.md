@@ -1,6 +1,6 @@
 # Issue 423: command line help() --> modules fails for *some* people
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/423
 
 Original creator: was
 

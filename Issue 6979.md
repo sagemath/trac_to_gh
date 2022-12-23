@@ -1,6 +1,6 @@
 # Issue 6979: improve sparse matrix/vector product
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6979
 
 Original creator: ylchapuy
 

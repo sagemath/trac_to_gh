@@ -1,6 +1,6 @@
 # Issue 3752: gap.eval -- oddity in parsing multiline input and comments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3752
 
 Original creator: was
 

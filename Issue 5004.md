@@ -1,6 +1,6 @@
 # Issue 5004: bug in latexing of powers of negative numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5004
 
 Original creator: was
 
@@ -76,7 +76,7 @@ I doctested the whole tree and nothing breaks:
 All tests passed!
 Timings have been updated.
 Total time for all tests: 145.9 seconds    
-wstein`@`sage:/space/sage-3.2.3$ 
+wstein@sage:/space/sage-3.2.3$ 
 ```
 
 

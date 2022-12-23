@@ -1,6 +1,6 @@
 # Issue 9517: PolynomialRing() returns Multivariate polynomial rings when you would expect univariate ones
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9517
 
 Original creator: mderickx
 

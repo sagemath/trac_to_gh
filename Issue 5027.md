@@ -1,6 +1,6 @@
 # Issue 5027: doctest failure for rings/polynomial/toy_d_basis.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5027
 
 Original creator: mhampton
 
@@ -71,7 +71,7 @@ sage -t  "devel/sage/sage/rings/polynomial/toy_d_basis.py"
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 9.5 seconds
-[jaap`@`paix sage-3.3.alpha4]$ 
+[jaap@paix sage-3.3.alpha4]$ 
 
 ```
 

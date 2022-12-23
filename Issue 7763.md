@@ -1,6 +1,6 @@
 # Issue 7763: make nintegrate/nintegral top-level functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7763
 
 Original creator: jason
 

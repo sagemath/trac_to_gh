@@ -1,6 +1,6 @@
 # Issue 1327: 2.8.14/Solaris: scipy import error - fortran compiler related
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1327
 
 Original creator: mabshoff
 

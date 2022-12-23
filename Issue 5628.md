@@ -1,6 +1,6 @@
 # Issue 5628: a little sage-flags.txt issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5628
 
 Original creator: was
 
@@ -66,7 +66,7 @@ I have an alternative fix:
 diff -r 804879ae0134 sage-location
 --- a/sage-location     Thu Mar 26 16:43:48 2009 -0700
 +++ b/sage-location     Sat Mar 28 22:32:50 2009 -0700
-`@``@` -77,7 +77,7 `@``@`
+@@ -77,7 +77,7 @@
      if not os.path.exists(flags_file): return
      # We check that the processor flags of the original build are a
      # subset of the new machine.  If not, we print a massive warning.

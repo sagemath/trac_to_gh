@@ -1,6 +1,6 @@
 # Issue 3155: notebook postdata and behaviour of archive, delete and stop buttons
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3155
 
 Original creator: nbruin
 

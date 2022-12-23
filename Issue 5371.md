@@ -1,6 +1,6 @@
 # Issue 5371: change autosave defaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5371
 
 Original creator: mhampton
 
@@ -51,7 +51,7 @@ Comment by was created at 2009-04-12 08:10:23
 
 
 ```
-^[[Awstein`@`sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -tp 30 devel/sage/sage/server
+^[[Awstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -tp 30 devel/sage/sage/server
 Global iterations: 1
 File iterations: 1
 Using cached timings to run longest doctests first.

@@ -1,6 +1,6 @@
 # Issue 2972: libSingular related segfault in laurent_polynomial_ring.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2972
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: malb
 Running of what will be 3.0.rc0 shortly on sage.math leads to:
 
 ```
-mabshoff`@`sage:sage-3.0.rc0$ ./sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py
+mabshoff@sage:sage-3.0.rc0$ ./sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py
 sage -t -gdb -long devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py
 ********************************************************************************
 Type r at the (gdb) prompt to run the doctests.
@@ -112,7 +112,7 @@ Comment by was created at 2008-04-21 02:06:51
 Interestingly, this seems to *only* crash if you redirect standout out to a file:
 
 ```
-was`@`sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py > a
+was@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py > a
 Segmentation fault
 ```
 
@@ -120,7 +120,7 @@ Segmentation fault
 but
 
 ```
-was`@`sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py
+was@sage:~/build/sage-3.0.rc0/devel/sage/sage/rings/polynomial$ /home/was/build/sage-3.0.rc0/local/bin/python /home/was/build/sage-3.0.rc0/tmp/.doctest_laurent_polynomial_ring.py
 [no seg fault]
 ```
 

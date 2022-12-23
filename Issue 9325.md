@@ -1,6 +1,6 @@
 # Issue 9325: Bugs concerning coding comments and docstrings in sage-preparse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9325
 
 Original creator: dpoetzsch
 

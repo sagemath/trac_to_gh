@@ -1,6 +1,6 @@
 # Issue 3194: ix 64 bit OSX build support for singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3194
 
 Original creator: mabshoff
 

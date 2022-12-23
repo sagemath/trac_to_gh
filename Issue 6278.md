@@ -1,6 +1,6 @@
 # Issue 6278: linbox-1.1.6 fails to build in sage 4.0.1 with Solaris and gcc 4.4.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6278
 
 Original creator: drkirkby
 

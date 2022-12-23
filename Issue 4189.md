@@ -1,6 +1,6 @@
 # Issue 4189: hmm documentation buglet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4189
 
 Original creator: mabshoff
 

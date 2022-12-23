@@ -1,6 +1,6 @@
 # Issue 7750: search_doc: print warning if some Sage docs are missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7750
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5311: Update to ATLAS 3.8.3 (latest upstream release)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5311
 
 Original creator: mabshoff
 

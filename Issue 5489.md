@@ -1,6 +1,6 @@
 # Issue 5489: add a non library level interface to 4ti2 to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5489
 
 Original creator: mhansen
 

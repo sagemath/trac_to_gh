@@ -1,6 +1,6 @@
 # Issue 5815: [with patch, needs review] Disable TinyMCE in the live documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5815
 
 Original creator: mpatel
 

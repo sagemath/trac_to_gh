@@ -1,6 +1,6 @@
 # Issue 8073: deprecation version number should say "After version ..."
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8073
 
 Original creator: jason
 

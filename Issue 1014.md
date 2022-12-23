@@ -1,6 +1,6 @@
 # Issue 1014: there should be an Integer.number_of_digits() function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1014
 
 Original creator: bober
 

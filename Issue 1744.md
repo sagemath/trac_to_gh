@@ -1,6 +1,6 @@
 # Issue 1744: FLINT 1.05 "make check" failure on Linux/Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1744
 
 Original creator: mabshoff
 

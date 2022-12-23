@@ -1,6 +1,6 @@
 # Issue 7120: [with patch, needs review] document Sphinx/reST markup for INPUT/OUTPUT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7120
 
 Original creator: jhpalmieri
 

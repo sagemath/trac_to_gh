@@ -1,6 +1,6 @@
 # Issue 1971: notebook/jsmath -- make an optional spkg with the image fonts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1971
 
 Original creator: was
 

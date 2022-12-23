@@ -1,6 +1,6 @@
 # Issue 9328: implement matrix term orderings for libsingular polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9328
 
 Original creator: malb
 

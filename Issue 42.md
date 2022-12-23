@@ -1,6 +1,6 @@
 # Issue 42: Calling GAP commands via gap("command") reacts badly sometimes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/42
 
 Original creator: was
 

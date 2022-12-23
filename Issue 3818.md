@@ -1,6 +1,6 @@
 # Issue 3818: COPYING.txt doesn't mention jmol but it shold
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3818
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4083: sage.finance - Options pricing implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4083
 
 Original creator: cswiercz
 

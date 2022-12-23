@@ -1,6 +1,6 @@
 # Issue 4831: More number field ideal utilities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4831
 
 Original creator: cremona
 

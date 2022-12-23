@@ -1,6 +1,6 @@
 # Issue 3537: [with patch, needs review] sage-env breaks makefile RM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3537
 
 Original creator: gfurnish
 
@@ -222,7 +222,7 @@ Comment by vbraun created at 2010-12-26 19:16:57
 For the record:
 
 ```
-[vbraun`@`volker-desktop spkg-unpacked]$ grep '\$RM' */*
+[vbraun@volker-desktop spkg-unpacked]$ grep '\$RM' */*
 gap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace
 mercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.
 sage_scripts-4.6.1.alpha3.p0/sage-env:if [ "$RM" = "" ]; then
@@ -241,7 +241,7 @@ Replying to [comment:13 vbraun]:
 > For the record:
 
 ```sh
-[vbraun`@`volker-desktop spkg-unpacked]$ grep '\$RM' */*
+[vbraun@volker-desktop spkg-unpacked]$ grep '\$RM' */*
 ```
 
 
@@ -256,14 +256,14 @@ Comment by vbraun created at 2010-12-26 22:51:26
 
 
 ```
-[vbraun`@`volker-desktop spkg-unpacked]$ grep '\$.RM' */*
+[vbraun@volker-desktop spkg-unpacked]$ grep '\$.RM' */*
 singular-3-1-1-4.p3/install-sh:rmprog="${RMPROG-rm}"
 ```
 
 and
 
 ```
-[vbraun`@`volker-desktop spkg-unpacked]$ grep '\$.*RM' */*
+[vbraun@volker-desktop spkg-unpacked]$ grep '\$.*RM' */*
 gap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace
 mercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.
 sage_scripts-4.6.1.alpha3.p0/sage-check-64:		case $CONFIRM in

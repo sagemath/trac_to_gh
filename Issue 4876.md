@@ -1,6 +1,6 @@
 # Issue 4876: replace the two kash3 optional spkg's by a single optional spkg that works on both Linux and OS X, and gives a graceful message on other systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4876
 
 Original creator: was
 

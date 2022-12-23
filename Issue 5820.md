@@ -1,6 +1,6 @@
 # Issue 5820: bug in comparison of ring morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5820
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 2738: [with patch, positive review] LaTeX description environment in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2738
 
 Original creator: malb
 

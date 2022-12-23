@@ -1,6 +1,6 @@
 # Issue 4326: Root systems improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4326
 
 Original creator: nthiery
 
@@ -75,7 +75,7 @@ the last changeset is this one:
 ```
 changeset:   1520:188022ff52b9
 tag:         tip
-user:        Nicolas M. Thiery <nthiery`@`users.sf.net>
+user:        Nicolas M. Thiery <nthiery@users.sf.net>
 date:        Tue Jul 21 01:13:42 2009 +0200
 summary:     Update
 ```

@@ -1,6 +1,6 @@
 # Issue 3268: Fix GAP interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3268
 
 Original creator: rlm
 

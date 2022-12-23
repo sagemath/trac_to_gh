@@ -1,6 +1,6 @@
 # Issue 5295: Make Maxima not read global config files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5295
 
 Original creator: mabshoff
 
@@ -125,18 +125,18 @@ Comment by mvngu created at 2010-01-18 03:39:54
 Here's how to replicate the errors with Sage 4.3.1.rc0. Create a hidden directory in your home directory called ".maxima":
 
 ```
-[mvngu`@`mod ~]$ pwd
+[mvngu@mod ~]$ pwd
 /home/mvngu
-[mvngu`@`mod ~]$ mkdir .maxima
-[mvngu`@`mod ~]$ cd .maxima/
-[mvngu`@`mod .maxima]$ pwd
+[mvngu@mod ~]$ mkdir .maxima
+[mvngu@mod ~]$ cd .maxima/
+[mvngu@mod .maxima]$ pwd
 /home/mvngu/.maxima
 ```
 
 Under the hidden directory ".maxima", create the Maxima initialization file "maxima-init.mac" with some initialization code:
 
 ```
-[mvngu`@`mod .maxima]$ cat maxima-init.mac 
+[mvngu@mod .maxima]$ cat maxima-init.mac 
 set_plot_option([gnuplot_term, aqua]);
 set_plot_option([gnuplot_pipes_term, aqua]);
 ```
@@ -144,9 +144,9 @@ set_plot_option([gnuplot_pipes_term, aqua]);
 Now load the version of Maxima that is shipped with Sage. This should result in some errors thrown by Maxima:
 
 ```
-[mvngu`@`mod sage-4.3.1.rc0-5295-maxima]$ pwd
+[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ pwd
 /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima
-[mvngu`@`mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima
+[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas"
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas"
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp"
@@ -168,7 +168,7 @@ To enable the Lisp debugger set *debugger-hook* to nil.
 I might be missing something here. But after applying [bug5295.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5295/bug5295.patch), I still received the same error:
 
 ```
-[mvngu`@`mod sage-4.3.1.rc0-5295-maxima]$ ./sage -b
+[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -195,7 +195,7 @@ Writing /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packa
 real	0m1.409s
 user	0m1.050s
 sys	0m0.360s
-[mvngu`@`mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima
+[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas"
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas"
 ;;; Loading #P"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp"
@@ -217,7 +217,7 @@ To enable the Lisp debugger set *debugger-hook* to nil.
 It also failed when I loaded Maxima from within a Sage session:
 
 ```
-[mvngu`@`mod sage-4.3.1.rc0-5295-maxima]$ ./sage
+[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

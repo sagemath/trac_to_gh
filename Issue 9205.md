@@ -1,6 +1,6 @@
 # Issue 9205: Discrete logs to composite bases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9205
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 7850: spherical plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7850
 
 Original creator: olazo
 

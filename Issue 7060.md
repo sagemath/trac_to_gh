@@ -1,6 +1,6 @@
 # Issue 7060: notebook -- templating patch introduces numerous bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7060
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 193: implement E.b2() etc for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/193
 
 Original creator: dmharvey
 
@@ -28,7 +28,7 @@ Implemented for sage-1.7.
 ```
 
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168898653 28800
 # Node ID 75cdec5df871b9e727c740e0f86564463d2a309b
 # Parent  337295b604b3a69a052aeb12cb913b11caf0238d
@@ -37,7 +37,7 @@ Implemented Trac #193 -- b2,b4,b6,b8 for elliptic curves.
 diff -r 337295b604b3 -r 75cdec5df871 sage/schemes/elliptic_curves/ell_generic.py
 --- a/sage/schemes/elliptic_curves/ell_generic.py       Mon Jan 15 13:04:26 2007 -0800
 +++ b/sage/schemes/elliptic_curves/ell_generic.py       Mon Jan 15 14:04:13 2007 -0800
-`@``@` -366,6 +366,18 `@``@` class EllipticCurve_generic(plane_curve.
+@@ -366,6 +366,18 @@ class EllipticCurve_generic(plane_curve.
              sage: E.b_invariants()
              (0, -8, 0, -16)
  
@@ -56,7 +56,7 @@ diff -r 337295b604b3 -r 75cdec5df871 sage/schemes/elliptic_curves/ell_generic.py
          ALGORITHM: These are simple functions of the a invariants.
  
          AUTHOR: William Stein, 2005-04-25
-`@``@` -379,6 +391,54 `@``@` class EllipticCurve_generic(plane_curve.
+@@ -379,6 +391,54 @@ class EllipticCurve_generic(plane_curve.
                                    a3**2 + 4*a6, \
                                    a1**2 * a6 + 4*a2*a6 - a1*a3*a4 + a2*a3**2 - a4**2
              return self.__b_invariants
@@ -111,7 +111,7 @@ diff -r 337295b604b3 -r 75cdec5df871 sage/schemes/elliptic_curves/ell_generic.py
  
      def c_invariants(self):
          """
-`@``@` -489,10 +549,6 `@``@` class EllipticCurve_generic(plane_curve.
+@@ -489,10 +549,6 @@ class EllipticCurve_generic(plane_curve.
          """
          return self.__ainvs[4]
  

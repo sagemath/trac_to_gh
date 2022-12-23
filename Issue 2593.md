@@ -1,6 +1,6 @@
 # Issue 2593: [with patch, needs review] Sage chokes on utf-8 in .sage files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2593
 
 Original creator: malb
 

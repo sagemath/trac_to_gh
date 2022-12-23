@@ -1,6 +1,6 @@
 # Issue 1102: [with patch] Bounded norm ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1102
 
 Original creator: rlm
 

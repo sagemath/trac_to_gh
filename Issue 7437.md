@@ -1,6 +1,6 @@
 # Issue 7437: the optional gnuplotpy-1.7.p3 spkg doesn't build at all since with switched to python-2.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7437
 
 Original creator: was
 

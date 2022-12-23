@@ -1,6 +1,6 @@
 # Issue 2783: notebook -- ocassional "crap" in output like this   print "\x01r\x01e580"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2783
 
 Original creator: was
 

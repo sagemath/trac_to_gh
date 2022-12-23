@@ -1,6 +1,6 @@
 # Issue 4218: Extensions of Finite Fields don't work well
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4218
 
 Original creator: justin
 

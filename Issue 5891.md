@@ -1,6 +1,6 @@
 # Issue 5891: Categories for the working mathematics programmer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5891
 
 Original creator: nthiery
 

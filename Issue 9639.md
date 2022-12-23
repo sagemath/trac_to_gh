@@ -1,6 +1,6 @@
 # Issue 9639: Endpoint markers for interact sliders
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9639
 
 Original creator: kcrisman
 

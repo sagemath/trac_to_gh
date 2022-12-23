@@ -1,6 +1,6 @@
 # Issue 4747: [with patch; needs review] add custom hash function for cusps.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4747
 
 Original creator: was
 

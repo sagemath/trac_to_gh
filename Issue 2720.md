@@ -1,6 +1,6 @@
 # Issue 2720: Sage 2.11.alpha2: fix documentation build issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2720
 
 Original creator: mabshoff
 

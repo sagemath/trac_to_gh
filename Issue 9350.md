@@ -1,6 +1,6 @@
 # Issue 9350: Python max flow method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9350
 
 Original creator: ncohen
 

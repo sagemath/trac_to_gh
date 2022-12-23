@@ -1,6 +1,6 @@
 # Issue 3515: Finance builds incorrectly with pbuild
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3515
 
 Original creator: ghtdak
 

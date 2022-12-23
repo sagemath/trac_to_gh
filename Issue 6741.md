@@ -1,6 +1,6 @@
 # Issue 6741: pil interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6741
 
 Original creator: wdj
 

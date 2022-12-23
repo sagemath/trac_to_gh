@@ -1,6 +1,6 @@
 # Issue 6647: Permutation Group improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6647
 
 Original creator: nborie
 
@@ -105,14 +105,14 @@ We just work with in special branch with a special mercurial queue I think... (t
 
 
 ```
-nicolas`@`Lancelot:/opt/sage/devel/sage-combinat$ hg qtop
+nicolas@Lancelot:/opt/sage/devel/sage-combinat$ hg qtop
 trac_6647_permutationgroup_improvement.patch
-nicolas`@`Lancelot:/opt/sage/devel/sage-combinat$ hg qpop
+nicolas@Lancelot:/opt/sage/devel/sage-combinat$ hg qpop
 Now at: trac_6620.patch
-nicolas`@`Lancelot:/opt/sage/devel/sage-combinat$ hg qpush
+nicolas@Lancelot:/opt/sage/devel/sage-combinat$ hg qpush
 applying trac_6647_permutationgroup_improvement.patch
 Now at: trac_6647_permutationgroup_improvement.patch
-nicolas`@`Lancelot:/opt/sage/devel/sage-combinat$ sage -b
+nicolas@Lancelot:/opt/sage/devel/sage-combinat$ sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -139,7 +139,7 @@ Writing /opt/sage/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info
 real	0m1.391s
 user	0m1.132s
 sys	0m0.252s
-nicolas`@`Lancelot:/opt/sage/devel/sage-combinat$ 
+nicolas@Lancelot:/opt/sage/devel/sage-combinat$ 
 ```
 
 
@@ -179,14 +179,14 @@ Comment by nborie created at 2009-08-13 15:10:12
 I installed a new sage 4.1 and applyed only #6620 and #6647... It seems to work for me.
 
 ```
-nicolas`@`Lancelot:~/sage_standard$ ./sage -t devel/sage-main/sage/groups/perm_gps/permgroup.py
+nicolas@Lancelot:~/sage_standard$ ./sage -t devel/sage-main/sage/groups/perm_gps/permgroup.py
 sage -t  "devel/sage-main/sage/groups/perm_gps/permgroup.py"
 	 [5.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 5.0 seconds
-nicolas`@`Lancelot:~/sage_standard$ 
+nicolas@Lancelot:~/sage_standard$ 
 ```
 
 I must disturb the combinat guys too because the combinat wiki don't say how to interface from combinat patches to trac patches. If someone can tell me how it would normally work...

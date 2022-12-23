@@ -1,6 +1,6 @@
 # Issue 8581: Implement an uniform set for index infinite variable algebraic structure, implement polynomial ring in infinite set of indeterminate with categories, implement the Schubert base ring in y1, y2, y3, ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8581
 
 Original creator: nborie
 

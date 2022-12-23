@@ -1,6 +1,6 @@
 # Issue 3457: Install sqlalchemy_migrate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3457
 
 Original creator: boothby
 

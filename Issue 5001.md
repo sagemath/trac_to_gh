@@ -1,6 +1,6 @@
 # Issue 5001: kernels of integer matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5001
 
 Original creator: jhpalmieri
 

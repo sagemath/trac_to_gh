@@ -1,6 +1,6 @@
 # Issue 7109: polyhedra bugs with linearities, rewrite proposal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7109
 
 Original creator: vbraun
 
@@ -21,9 +21,9 @@ The Polyhedron class is an interface to cdd, but does not correctly map some of 
 It is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:
 
 ```
-  sage: vert_to_ieq(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).linearities()
-  [This is the Trac macro *0, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1-macro)
-  sage: Polyhedron(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).linearities() 
+  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()
+  [[0, 1]]
+  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() 
   []
 ```
 
@@ -43,15 +43,15 @@ If one really wants to use Polyhedron as a container for only H-representation o
 cdd sometimes omits the origin as a vertex:
 
 ```
-  sage: Polyhedron(ieqs=[This is the Trac macro *0, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1-macro)).vertices()
+  sage: Polyhedron(ieqs=[[0, 1]]).vertices()
   []
 ```
 
 cdd also sometimes adds a "inequality at infininty"; Contrary to the output below, the half-line has only one face
 
 ```
-  sage: Polyhedron(vertices=[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro), rays=[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)).facial_incidences()
-  [This is the Trac macro *0, [0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [0-macro), [1, [1]]]
+  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()
+  [[0, [0]], [1, [1]]]
 ```
 
 Given equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)
@@ -568,13 +568,13 @@ Now the cddlib-094f.spkg update: in the sage home directory, do
 
 
 ```
-[vbraun`@`volker-two sage]$ ls
+[vbraun@volker-two sage]$ ls
 COPYING.txt  data  devel  examples  install.log  ipython  local  makefile  README.txt  sage  sage-README-osx.txt  spkg
-[vbraun`@`volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg
+[vbraun@volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg
 [...]
-[vbraun`@`volker-two sage]$ ./sage -f cddlib-094f.spkg 
+[vbraun@volker-two sage]$ ./sage -f cddlib-094f.spkg 
 [...]
-[vbraun`@`volker-two sage]$ ./sage -br
+[vbraun@volker-two sage]$ ./sage -br
 ```
 
 
@@ -630,7 +630,7 @@ The new spkg has a few minor issues:
 
 
 ```
-[ghitza`@`artin cddlib-094f-p2]$ hg status
+[ghitza@artin cddlib-094f-p2]$ hg status
 M spkg-install
 ? .DS_Store
 ? patches/cdd_both_reps-make.patch
@@ -777,16 +777,16 @@ Comment by mvngu created at 2010-01-25 04:27:45
 Unfortunately, this ticket conflicts with #7535. I merged #7535 at about 8 hours before the current ticket was positively reviewed. So after merging the patches at #7535, merging the patch [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch) results in a long hunk failure:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush
 adding trac_7535-errors-raise.patch to series file
 applying trac_7535-errors-raise.patch
 now at: trac_7535-errors-raise.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush
 adding trac_7535-part2.patch to series file
 applying trac_7535-part2.patch
 now at: trac_7535-part2.patch
-[mvngu`@`sage sage-main]$ 
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush
+[mvngu@sage sage-main]$ 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush
 adding trac_7109_mh2.patch to series file
 applying trac_7109_mh2.patch
 patching file sage/geometry/polyhedra.py

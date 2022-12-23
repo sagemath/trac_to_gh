@@ -1,6 +1,6 @@
 # Issue 5858: Octave library linking problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5858
 
 Original creator: mhampton
 

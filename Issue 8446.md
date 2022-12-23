@@ -1,6 +1,6 @@
 # Issue 8446: avoid 0^0 in Selmer groups of number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8446
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 8417: improve CubeGraph and HyperStarGraph generation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8417
 
 Original creator: ylchapuy
 

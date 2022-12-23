@@ -1,6 +1,6 @@
 # Issue 3034: [with patches; needs review] improved cleaning code for Debian packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3034
 
 Original creator: tabbott
 

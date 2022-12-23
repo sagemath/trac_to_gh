@@ -1,6 +1,6 @@
 # Issue 8284: IntervalGraph generator and a bug in is_chordal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8284
 
 Original creator: ncohen
 

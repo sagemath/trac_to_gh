@@ -1,6 +1,6 @@
 # Issue 8352: twisted-8.2.0.p1 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8352
 
 Original creator: jsp
 

@@ -1,6 +1,6 @@
 # Issue 27: Move the function dual_eigenvector in sage/hecke/module.py to
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/27
 
 Original creator: was
 

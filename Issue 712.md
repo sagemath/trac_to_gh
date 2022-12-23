@@ -1,6 +1,6 @@
 # Issue 712: SAGE/Maxima is sometimes unable to solve a linear system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/712
 
 Original creator: janwil
 

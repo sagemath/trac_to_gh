@@ -1,6 +1,6 @@
 # Issue 8392: Check when defining a permutation by one-line notation (list of int)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8392
 
 Original creator: nborie
 

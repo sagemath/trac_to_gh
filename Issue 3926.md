@@ -1,6 +1,6 @@
 # Issue 3926: [with spkg, needs review] fix Macaulay2 building
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3926
 
 Original creator: malb
 

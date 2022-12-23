@@ -1,6 +1,6 @@
 # Issue 4021: [with patch, needs review] MPolynomial_libsingular over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4021
 
 Original creator: malb
 

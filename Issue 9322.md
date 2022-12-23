@@ -1,6 +1,6 @@
 # Issue 9322: bug in simon_two_descent for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9322
 
 Original creator: cremona
 
@@ -34,7 +34,7 @@ Comment by cremona created at 2010-06-24 03:02:59
 
 ```
 
-john`@`ubuntu%sage -gp
+john@ubuntu%sage -gp
                   GP/PARI CALCULATOR Version 2.3.5 (released)
 ...
 
@@ -44,7 +44,7 @@ john`@`ubuntu%sage -gp
 ? e=ellinit([2-w,18+3*w,209+9*w,2581+175*w,852-55*w]);
 ? bnfellrank(bnf,e)
 courbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)
-points triviaux sur la courbe = [This is the Trac macro *1, 1, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 0-macro)
+points triviaux sur la courbe = [[1, 1, 0]]
 #S(E/K)[2]    = 4
 #E(K)/2E(K)  >= 1
 #III(E/K)[2] <= 4
@@ -138,7 +138,7 @@ Running under gp directly:
 ? a = Mod(y,K.pol);
 ? bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852])
 courbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)
-points triviaux sur la courbe = [This is the Trac macro *1, 1, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 0-macro)
+points triviaux sur la courbe = [[1, 1, 0]]
 #S(E/K)[2]    = 4
 #E(K)/2E(K)  >= 2
 #III(E/K)[2] <= 2
@@ -147,8 +147,8 @@ rang(E/K)    >= 1
 #E(K)/2E(K)  = 4
 #III(E/K)[2] = 1
 rang(E/K)    = 2
-listpointsmwr = [This is the Trac macro *Mod* that was inherited from the migration called with arguments (-35/4*y - 186, y^2 - y - 232), Mod)](https://trac.sagemath.org/wiki/WikiMacros#Mod-macro)
-%71 = [2, 2, [This is the Trac macro *Mod* that was inherited from the migration called with arguments (-35/16*y - 93/2, y^2 - y - 232), Mod)](https://trac.sagemath.org/wiki/WikiMacros#Mod-macro)]
+listpointsmwr = [[Mod(-35/4*y - 186, y^2 - y - 232), Mod(-21/8*y - 37, y^2 - y - 232)]]
+%71 = [2, 2, [[Mod(-35/16*y - 93/2, y^2 - y - 232), Mod(-1727/64*y - 2531/8, y^2 - y - 232)]]]
 ```
 
 we get instant success.  Also with the gp2c-compiled version.  So it is *not* an upstream problem,and one which should be solvable within Sage.

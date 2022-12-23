@@ -1,6 +1,6 @@
 # Issue 7581: use prCopyR to coerce multivariate polynomials in the simple case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7581
 
 Original creator: malb
 
@@ -235,7 +235,7 @@ It simply does not work.
 sage: hg_sage.log()
 changeset:   13375:44f70d431d43
 tag:         tip
-user:        Mike Hansen <mhansen`@`gmail.com>
+user:        Mike Hansen <mhansen@gmail.com>
 date:        Sat Nov 21 03:45:06 2009 -0800
 summary:     4.3.alpha0
 ...

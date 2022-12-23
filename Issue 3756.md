@@ -1,6 +1,6 @@
 # Issue 3756: [with patch; needs review] finance -- fix a bug in fractional brownian motion random walks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3756
 
 Original creator: was
 

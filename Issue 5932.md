@@ -1,6 +1,6 @@
 # Issue 5932: graphs.RandomRegular(3,10) often returns a graph on 0 vertices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5932
 
 Original creator: was
 

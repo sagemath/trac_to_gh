@@ -1,6 +1,6 @@
 # Issue 7775: Wrong url in numerical.mip
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7775
 
 Original creator: ncohen
 

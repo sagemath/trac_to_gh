@@ -1,6 +1,6 @@
 # Issue 5940: graph theory -- bug in is_circular_planar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5940
 
 Original creator: was
 

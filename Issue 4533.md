@@ -1,6 +1,6 @@
 # Issue 4533: divisors function slow for integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4533
 
 Original creator: robertwb
 

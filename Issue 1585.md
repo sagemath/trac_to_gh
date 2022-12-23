@@ -1,6 +1,6 @@
 # Issue 1585: fix file permissions in guava
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1585
 
 Original creator: rlm
 

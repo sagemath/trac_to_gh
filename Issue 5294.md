@@ -1,6 +1,6 @@
 # Issue 5294: Pickle Jar documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5294
 
 Original creator: hivert
 
@@ -45,7 +45,7 @@ in it and is not properly wrapped with sig_on(), sig_off(). You might
 want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate.
 ------------------------------------------------------------------------
-/usr/local/src/sage/sage-5.3/spkg/bin/sage: line 335: 73974 Abort trap: 6           sage-ipython "$`@`" -i
+/usr/local/src/sage/sage-5.3/spkg/bin/sage: line 335: 73974 Abort trap: 6           sage-ipython "$@" -i
 ```
 
 Can anyone confirm whether this is a bug or known issue? Either way, is there a way around this? 

@@ -1,6 +1,6 @@
 # Issue 1485: wrapper for invariant_ring and invariant_algebra_reynolds in Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1485
 
 Original creator: wdj
 

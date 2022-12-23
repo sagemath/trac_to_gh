@@ -1,6 +1,6 @@
 # Issue 81: directory paths hardcoded into .pyc installed files. (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/81
 
 Original creator: was
 

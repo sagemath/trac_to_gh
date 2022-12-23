@@ -1,6 +1,6 @@
 # Issue 1039: [with patch] Dokchitser L-series of number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1039
 
 Original creator: jen
 

@@ -1,6 +1,6 @@
 # Issue 7192: Translation of "A Tour Of Sage" to Spanish
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7192
 
 Original creator: Loufer
 

@@ -1,6 +1,6 @@
 # Issue 9846: Handle a preset R_PROFILE variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9847
 
 Original creator: mpatel
 

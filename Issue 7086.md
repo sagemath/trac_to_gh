@@ -1,6 +1,6 @@
 # Issue 7086: vanilla hg vs. "sage -hg"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7086
 
 Original creator: hemmecke
 

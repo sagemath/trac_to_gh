@@ -1,6 +1,6 @@
 # Issue 5674: [with patch, needs review] Enhanced handling of elliptic curve twists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5674
 
 Original creator: cremona
 

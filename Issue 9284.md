@@ -1,6 +1,6 @@
 # Issue 9284: Locales switching in web UI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9284
 
 Original creator: q10
 

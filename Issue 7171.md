@@ -1,6 +1,6 @@
 # Issue 7171: HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7171
 
 Original creator: drkirkby
 

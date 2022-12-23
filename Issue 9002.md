@@ -1,6 +1,6 @@
 # Issue 9002: Noise on PPC Mac in parametric_surface.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9002
 
 Original creator: kcrisman
 
@@ -122,7 +122,7 @@ sage -t  "devel/sage/sage/plot/plot3d/parametric_surface.pyx"
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 11.3 seconds
-kirkby`@`sage:~/sage-4.4.3$ uname -a
+kirkby@sage:~/sage-4.4.3$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 ```
 
@@ -130,7 +130,7 @@ Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 20
 ## 'redstart' Solaris 10 with Sun UltraSPARC III+ processors
 
 ```
-drkirkby`@`redstart:~/sage-4.4.4.alpha1$ ./sage -t  "devel/sage/sage/plot/plot3d/parametric_surface.pyx"
+drkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  "devel/sage/sage/plot/plot3d/parametric_surface.pyx"
 sage -t  "devel/sage/sage/plot/plot3d/parametric_surface.pyx"
 	 [33.6 s]
  
@@ -241,9 +241,9 @@ Replying to [comment:12 drkirkby]:
 Thinking about that more, that more, your point is valid, as that is not a full name. I can understand someone not wanting their full email address. Just in case the person does not know the format, a .hgrc which adds a name and email address would be:
 
 ```
-drkirkby`@`hawk:~$ cat .hgrc
+drkirkby@hawk:~$ cat .hgrc
 [ui]
-username = Forename Surname <your.address`@`yoursite.com>
+username = Forename Surname <your.address@yoursite.com>
 
 [extensions]
 # Enable the Mercurial queue extension.

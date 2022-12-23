@@ -1,6 +1,6 @@
 # Issue 9178: attrcall: add missing hash function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9178
 
 Original creator: nthiery
 

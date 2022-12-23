@@ -1,6 +1,6 @@
 # Issue 3259: [with patch; needs review] shared library versioning for flint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3259
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 9660: Obtaining the string representation of a number field ideal takes too long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9660
 
 Original creator: jdemeyer
 

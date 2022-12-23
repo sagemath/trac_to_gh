@@ -1,6 +1,6 @@
 # Issue 8168: Keyword option to keep reset() from detaching all attached files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8168
 
 Original creator: mpatel
 

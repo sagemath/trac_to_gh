@@ -1,6 +1,6 @@
 # Issue 7322: SageNB: Upgrade jsMath to 3.6c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7322
 
 Original creator: mpatel
 

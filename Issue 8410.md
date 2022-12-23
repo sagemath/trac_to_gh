@@ -1,6 +1,6 @@
 # Issue 8410: Improve robustness of @parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8410
 
 Original creator: boothby
 
@@ -15,7 +15,7 @@ Run the following:
 
 ```
 
-`@`parallel(4)
+@parallel(4)
 def sleeper(x):
     sleep(x)
 

@@ -1,6 +1,6 @@
 # Issue 3221: libSingular segfaults Sage on startup on OSX 64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3221
 
 Original creator: mabshoff
 

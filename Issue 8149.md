@@ -1,6 +1,6 @@
 # Issue 8149: files with space in their names do not load properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8149
 
 Original creator: rkirov
 

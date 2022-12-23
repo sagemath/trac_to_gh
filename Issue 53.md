@@ -1,6 +1,6 @@
 # Issue 53: p-adic log is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/53
 
 Original creator: dmharvey
 

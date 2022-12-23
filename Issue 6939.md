@@ -1,6 +1,6 @@
 # Issue 6939: [with patch, needs review] Make scrollbars appear on cell output when the output is too wide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6939
 
 Original creator: jason
 

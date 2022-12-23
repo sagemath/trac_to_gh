@@ -1,6 +1,6 @@
 # Issue 2659: Elliptic curve cardinality sometimes Rational with bad consequences for efficiency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2659
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 1707: add Carlo Hamalainen latin square stuff to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1707
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 884: 2.8.7-alpha0: doctest failure in rings/residue_field.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/884
 
 Original creator: cwitty
 

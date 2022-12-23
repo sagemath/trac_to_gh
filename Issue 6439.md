@@ -1,6 +1,6 @@
 # Issue 6439: doctests beginning with Sage: are silently ignored
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6439
 
 Original creator: broune
 

@@ -1,6 +1,6 @@
 # Issue 6997: minor typo in Constructions documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6997
 
 Original creator: mvngu
 
@@ -18,11 +18,11 @@ Constructions documentation says to send corrections
 to sage-devel.
 
 # HG changeset patch
-# User Mariah Lenox <mariah.le...`@`gmail.com>
+# User Mariah Lenox <mariah.le...@gmail.com>
 # Date 1253652415 14400
 # Node ID bd65499b09ca9c88108908a609648850433dda8a
 # Parent  40fe66e6c2b07677706fd983a6be6f3eb86060c5
-user: Mariah Lenox <mariah.le...`@`gmail.com>
+user: Mariah Lenox <mariah.le...@gmail.com>
 branch 'default'
 changed doc/en/constructions/interface_issues.rst
 
@@ -32,7 +32,7 @@ interface_issues.rst
 2009 -0400
 +++ b/doc/en/constructions/interface_issues.rst Tue Sep 22 16:46:55
 2009 -0400
-`@``@` -549,7 +549,7 `@``@`
+@@ -549,7 +549,7 @@
  some of the GAP databases have to be added separately, and
  Singular. Adding Singular was not easy, due to the difficulty of
  compiling Singular from source. Version 0.9 was released in
@@ -41,7 +41,7 @@ interface_issues.rst
  0.9.34 (definitely by version 0.10.0), Maxima and clisp were
  included with Sage. Version 0.10.0 was released January 12, 2006.
  The release of Sage 1.0 was made early February, 2006. As of
-`@``@` -559,4 +559,4 `@``@`
+@@ -559,4 +559,4 @@
  such as assistance in compiling on various OS's. Generally code
  authors are acknowledged in the AUTHOR section of the Python
  docstring of their file and the credits section of the Sage

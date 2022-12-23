@@ -1,6 +1,6 @@
 # Issue 580: bug in cubegroup (group action)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/580
 
 Original creator: wdj
 

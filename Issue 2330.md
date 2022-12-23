@@ -1,6 +1,6 @@
 # Issue 2330: modforms -- implement computation of weight 1 forms in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2330
 
 Original creator: was
 

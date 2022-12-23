@@ -1,6 +1,6 @@
 # Issue 3959: [with patch bundle] General group algebras class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3959
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 4498: The argument function does not work with variables.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4498
 
 Original creator: TimothyClemans
 

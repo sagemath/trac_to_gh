@@ -1,6 +1,6 @@
 # Issue 6254: include mpmath 0.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6254
 
 Original creator: mhansen
 

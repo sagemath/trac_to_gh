@@ -1,6 +1,6 @@
 # Issue 1237: E.torsion_order() fails on curves with big coefficients !!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1237
 
 Original creator: was
 
@@ -85,7 +85,7 @@ AttributeError: 'EllipticCurve_rational_field' object has no attribute '_Ellipti
 >     858             (8, 8)
 >     859         """
 > --> 860         if self.torsion_order() % 2 == 0:
->     861             raise ArithmeticError, "curve must not have rational 2-torsion\nThe *only* reason for this is that I haven't finished implementing the wrapper\nin this case.  It wouldn't be too difficult.\nPerhaps you could do it?!  Email me (wstein`@`gmail.com)."
+>     861             raise ArithmeticError, "curve must not have rational 2-torsion\nThe *only* reason for this is that I haven't finished implementing the wrapper\nin this case.  It wouldn't be too difficult.\nPerhaps you could do it?!  Email me (wstein@gmail.com)."
 >     862         F = self.integral_weierstrass_model()
 > 
 > /usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in torsion_order(self)

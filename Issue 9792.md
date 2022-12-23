@@ -1,6 +1,6 @@
 # Issue 9792: Make plot1d function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9793
 
 Original creator: kcrisman
 

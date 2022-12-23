@@ -1,6 +1,6 @@
 # Issue 7471: update the patches in the mpir spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7471
 
 Original creator: was
 
@@ -15,7 +15,7 @@ Assignee: tbd
 >>
 >> Solved???
 >>
->> jasonmoxham`@`debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess
+>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess
 >> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/config.guess
 >> 660c660
 >> < i?86-*-*|x86_64-*-*|amd64-*-*)
@@ -27,7 +27,7 @@ Assignee: tbd
 >> ---
 >>>   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s
 >> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy
->> jasonmoxham`@`debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c
+>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c
 >> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/mpn/x86/fat/fat.c
 >> 141d140
 >> <   __MPN(divrem_euclidean_qr_2_init),
@@ -99,8 +99,8 @@ Comment by was created at 2009-11-18 17:21:00
 I just tested this on the "debian32" virtual machine and it works:
 
 ```
-wstein`@`debian5-32:/tmp/wstein/farm/sage-4.2.1$ export SAGE_FAT_BINARY="yes"
-wstein`@`debian5-32:/tmp/wstein/farm/sage-4.2.1$ sage -f http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg spkg/standard/pari-2.3.3.p5.spkg 
+wstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ export SAGE_FAT_BINARY="yes"
+wstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ sage -f http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg spkg/standard/pari-2.3.3.p5.spkg 
 ...
 checking if the assembler knows about SSE2 instructions... yes
 using ABI="32"

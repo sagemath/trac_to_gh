@@ -1,6 +1,6 @@
 # Issue 775: filename misreported in tracebacks for .pyx files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/775
 
 Original creator: nbruin
 
@@ -16,7 +16,7 @@ sage: os.system("pwd")
 0
 sage: sage.misc.sageinspect.sage_getfile(matrix)
 '/usr/local/sage/default/local/lib/python2.5/site-packages/sage/matrix/constructor.py'
-sage: M=matrix([This is the Trac macro *1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1-macro))
+sage: M=matrix([[1,1]])
 sage: M*M
 ---------------------------------------------------------------------------
 <type 'exceptions.TypeError'>             Traceback (most recent call last)

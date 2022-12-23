@@ -1,6 +1,6 @@
 # Issue 6243: add support for arbitrary parents in pynac's evalf
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6243
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 7762: `conf.py` for Sage documentation hardcodes sagenb path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7762
 
 Original creator: timdumol
 

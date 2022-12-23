@@ -1,6 +1,6 @@
 # Issue 1283: Update coercion model API
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1283
 
 Original creator: robertwb
 

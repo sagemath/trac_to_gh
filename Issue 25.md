@@ -1,6 +1,6 @@
 # Issue 25: make sage_eval only take strings as input.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/25
 
 Original creator: was
 

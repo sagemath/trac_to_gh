@@ -1,6 +1,6 @@
 # Issue 2586: latex products need to be space separated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2586
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 7206: doctest failure in groups/perm_gps/permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7206
 
 Original creator: ddrake
 
@@ -11,7 +11,7 @@ Assignee: joyner
 With 4.1.2.rc2, I have one doctest failure on Ubuntu 9.04 amd64:
 
 ```
-drake`@`sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/permgroup.py
+drake@sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/permgroup.py
   sage -t  "devel/sage/sage/groups/perm_gps/permgroup.py"    
   **********************************************************************
   File "/home/drake/s/sage-4.1.2.rc2/devel/sage/sage/groups/perm_gps/permgroup.py", line 1114:
@@ -47,7 +47,7 @@ Hy Dan,
 With 4.1.1 and sage-combinat queue applied (the patch come from here : #6647), I have
 
 ```
-nicolas`@`nicolas-laptop:/opt/sage/devel/sage-combinat$ sage -t sage/groups/perm_gps/permgroup.py 
+nicolas@nicolas-laptop:/opt/sage/devel/sage-combinat$ sage -t sage/groups/perm_gps/permgroup.py 
 sage -t  "devel/sage-combinat/sage/groups/perm_gps/permgroup.py"
 	 [5.4 s]
  

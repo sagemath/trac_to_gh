@@ -1,6 +1,6 @@
 # Issue 6222: typos in super-increasing code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6222
 
 Original creator: mvngu
 

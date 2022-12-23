@@ -1,6 +1,6 @@
 # Issue 5303: Sage 3.3.rc2: numerical noise in sage/schemes/elliptic_curves/sha_tate.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5303
 
 Original creator: mabshoff
 

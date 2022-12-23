@@ -1,6 +1,6 @@
 # Issue 503: 0^0 -- error or 1; and other exponentiation optimizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/503
 
 Original creator: was
 

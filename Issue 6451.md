@@ -1,6 +1,6 @@
 # Issue 6451: Fint uses a non-portable option to 'cp' which fails on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6451
 
 Original creator: drkirkby
 
@@ -24,9 +24,9 @@ But the flint package indicates it was installed. However, when I tried to build
 Deleting old FLINT
 Installing new library file
 cp: illegal option -- a
-Usage: cp [-f] [-i] [-p] [-`@`] f1 f2
-        cp [-f] [-i] [-p] [-`@`] f1 ... fn d1
-        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-`@`] d1 ... dn-1 dn
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+        cp [-f] [-i] [-p] [-@] f1 ... fn d1
+        cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 ```
 
 

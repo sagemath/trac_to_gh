@@ -1,6 +1,6 @@
 # Issue 964: incorporate drew sutherland's smalljac into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/964
 
 Original creator: was
 

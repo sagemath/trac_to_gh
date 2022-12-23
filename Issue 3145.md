@@ -1,6 +1,6 @@
 # Issue 3145: documentation and defaults for the 'view' function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3145
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 8680: untabify Sage again, and make it stick
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8680
 
 Original creator: jhpalmieri
 

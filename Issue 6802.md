@@ -1,6 +1,6 @@
 # Issue 6802: define a real variable with var()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6802
 
 Original creator: mvngu
 

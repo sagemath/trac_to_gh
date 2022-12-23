@@ -1,6 +1,6 @@
 # Issue 3720: stupid bug in elliptic curves caused by refactoring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3720
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4764: Error in computing compliment of modular symbol space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4764
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 801: [with patch] graphs: Latexify module-level documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/801
 
 Original creator: jason
 
@@ -16,7 +16,7 @@ This patch puts the module-level documentation into latex.
 ```
 --- a/sage/graphs/graph.py	Mon Oct 01 15:06:55 2007 -0500
 +++ b/sage/graphs/graph.py	Wed Oct 03 02:18:24 2007 -0500
-`@``@` -1,5 +1,7 `@``@` r"""
+@@ -1,5 +1,7 @@ r"""
  r"""
  Graph Theory
 +
@@ -24,7 +24,7 @@ This patch puts the module-level documentation into latex.
  
  AUTHOR:
      -- Robert L. Miller (2006-10-22): initial version
-`@``@` -26,14 +28,9 `@``@` AUTHOR:
+@@ -26,14 +28,9 @@ AUTHOR:
      -- Bobby Moretti (2007-08-12): fixed up plotting of graphs with
         edge colors differentiated by label
  
@@ -42,7 +42,7 @@ This patch puts the module-level documentation into latex.
              
              SAGE graphs are actually NetworkX graphs, wrapped in a SAGE class.
              In fact, any graph can produce its underlying NetworkX graph. For example,
-`@``@` -51,40 +48,48 `@``@` TUTORIAL:
+@@ -51,40 +48,48 @@ TUTORIAL:
  
              Each dictionary key is a vertex label, and each key in the following
              dictionary is a neighbor of that vertex. In undirected graphs, there
@@ -103,7 +103,7 @@ This patch puts the module-level documentation into latex.
                  sage: M
                  [0 1 0 0 1 1 0 0 0 0]
                  [1 0 1 0 0 0 1 0 0 0]
-`@``@` -100,10 +105,15 `@``@` TUTORIAL:
+@@ -100,10 +105,15 @@ TUTORIAL:
                  Graph on 10 vertices
                  sage: G.plot().save('sage.png')    # or G.show()
                  
@@ -121,7 +121,7 @@ This patch puts the module-level documentation into latex.
                  sage: M
                  [-1  0  0  0  1  0  0  0  0  0 -1  0  0  0  0]
                  [ 1 -1  0  0  0  0  0  0  0  0  0 -1  0  0  0]
-`@``@` -118,14 +128,16 `@``@` TUTORIAL:
+@@ -118,14 +128,16 @@ TUTORIAL:
                  sage: G = Graph(M); G
                  Graph on 10 vertices
                  sage: G.plot().save('sage.png')    # or G.show()
@@ -141,7 +141,7 @@ This patch puts the module-level documentation into latex.
          can see how people usually visualize these graphs.
          
              sage: G = graphs.PetersenGraph()
-`@``@` -153,7 +165,7 `@``@` TUTORIAL:
+@@ -153,7 +165,7 @@ TUTORIAL:
              sage: L = G.get_list(num_vertices=7, diameter=5)
              sage.: graphs_list.show_graphs(L)
          
@@ -150,7 +150,7 @@ This patch puts the module-level documentation into latex.
          
          Each vertex can have any hashable object as a label. These are things like
          strings, numbers, and tuples. Each edge is given a default label of \var{None}, but
-`@``@` -171,7 +183,8 `@``@` TUTORIAL:
+@@ -171,7 +183,8 @@ TUTORIAL:
          However, if one wants to define a dictionary, with the same keys and arbitrary objects
          for entries, one can make that association:
          
@@ -160,7 +160,7 @@ This patch puts the module-level documentation into latex.
              sage: d[2]
              Moebius-Kantor Graph: Graph on 16 vertices
              sage: T = graphs.TetrahedralGraph()
-`@``@` -181,7 +194,7 `@``@` TUTORIAL:
+@@ -181,7 +194,7 @@ TUTORIAL:
              sage: T.obj(1)
              Flower Snark: Graph on 20 vertices
          
@@ -169,7 +169,7 @@ This patch puts the module-level documentation into latex.
          
          There is a database available for searching for graphs that satisfy a certain set
          of parameters, including number of vertices and edges, density, maximum and minimum
-`@``@` -190,28 +203,27 `@``@` TUTORIAL:
+@@ -190,28 +203,27 @@ TUTORIAL:
          
              sage.: graphs_query.
          

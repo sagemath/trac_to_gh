@@ -1,6 +1,6 @@
 # Issue 9259: Wrong markup on the documentation of CombinatorialClass.map
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9259
 
 Original creator: hivert
 

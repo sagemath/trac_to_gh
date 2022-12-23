@@ -1,6 +1,6 @@
 # Issue 5857: E.list() for E an elliptic curve over a finite field is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5857
 
 Original creator: was
 

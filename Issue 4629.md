@@ -1,6 +1,6 @@
 # Issue 4629: build: "sage -upgrade URL" will install all *newer* spkg's from the given URL, which can also be a local directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4629
 
 Original creator: was
 

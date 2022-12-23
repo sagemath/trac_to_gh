@@ -1,6 +1,6 @@
 # Issue 6405: Typesetting of imaginary 'I' in new Symbolics is not proper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6405
 
 Original creator: gmhossain
 

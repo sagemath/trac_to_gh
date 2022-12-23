@@ -1,6 +1,6 @@
 # Issue 201: mwrank crashing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/201
 
 Original creator: dmharvey
 
@@ -101,7 +101,7 @@ For more details see the file mwrank.doc.
 For details of algorithms see the author's book.
 
 Please acknowledge use of this program in published work, 
-and send problems to John.Cremona`@`nottingham.ac.uk.
+and send problems to John.Cremona@nottingham.ac.uk.
 
 Version compiled on Dec  8 2006 at 12:52:17 by GCC 4.0.1 (Apple Computer, Inc. build 5247)
 using base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)
@@ -157,7 +157,7 @@ Comment by was created at 2007-08-17 14:34:32
 
 
 ```
-On 8/17/07, John Cremona <john.cremona`@`gmail.com> wrote:
+On 8/17/07, John Cremona <john.cremona@gmail.com> wrote:
 > It's a simple precision problem -- even running mwrank with precision
 > 20 ("-p20") sorts it.  This happens in the code to find the real roots
 > of a real cubic, and it's the classical problem where subtracting two

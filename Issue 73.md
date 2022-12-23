@@ -1,6 +1,6 @@
 # Issue 73: "sage -gdb" broken on OS X.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/73
 
 Original creator: was
 
@@ -61,7 +61,7 @@ sha:~/d/sage was$ hg diff
 diff -r 97f9271f8637 sage/all.py
 --- a/sage/all.py       Fri Sep 22 19:44:53 2006 -0700
 +++ b/sage/all.py       Sat Sep 30 11:17:39 2006 -0700
-`@``@` -32,9 +32,13 `@``@` if sys.version_info[:2] < (2, 4):
+@@ -32,9 +32,13 @@ if sys.version_info[:2] < (2, 4):
      sys.exit(1)
  
  try:

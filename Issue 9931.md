@@ -1,6 +1,6 @@
 # Issue 9931: Make PyWavelets an experimental package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9932
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 729: graphs: Implement __eq__ and __neq__ rather than __cmp__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/729
 
 Original creator: jason
 

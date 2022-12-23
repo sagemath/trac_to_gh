@@ -1,6 +1,6 @@
 # Issue 6747: Improve plotting of trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6747
 
 Original creator: boothby
 

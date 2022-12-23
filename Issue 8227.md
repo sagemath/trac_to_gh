@@ -1,6 +1,6 @@
 # Issue 8227: Improving iterated palindromic closure computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8227
 
 Original creator: abmasse
 

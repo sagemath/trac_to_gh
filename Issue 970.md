@@ -1,6 +1,6 @@
 # Issue 970: ntl.GF2E
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/970
 
 Original creator: malb
 

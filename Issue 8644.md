@@ -1,6 +1,6 @@
 # Issue 8644: update pynac to 0.1.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8644
 
 Original creator: burcin
 

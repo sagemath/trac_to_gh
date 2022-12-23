@@ -1,6 +1,6 @@
 # Issue 9860: Improving the Graph Theory table of contents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9861
 
 Original creator: ncohen
 

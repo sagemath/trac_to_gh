@@ -1,6 +1,6 @@
 # Issue 8273: Enumeration of cycles in directed graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8273
 
 Original creator: abmasse
 

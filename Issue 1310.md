@@ -1,6 +1,6 @@
 # Issue 1310: [graphs] calculate max independent set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1310
 
 Original creator: jason
 

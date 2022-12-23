@@ -1,6 +1,6 @@
 # Issue 4587: [with patch, needs review] Installation of the latest version of a package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4587
 
 Original creator: SimonKing
 

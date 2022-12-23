@@ -1,6 +1,6 @@
 # Issue 8608: Add a list of available decorators to documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8608
 
 Original creator: novoselt
 

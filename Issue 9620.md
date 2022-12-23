@@ -1,6 +1,6 @@
 # Issue 9620: conflicting branch cut conventions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9620
 
 Original creator: rbk
 

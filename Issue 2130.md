@@ -1,6 +1,6 @@
 # Issue 2130: Question about list( FACTORS) command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2130
 
 Original creator: gmoose05
 

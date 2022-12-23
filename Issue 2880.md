@@ -1,6 +1,6 @@
 # Issue 2880: Special code for elliptic curve cardinality for j=0 and j=1728
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2880
 
 Original creator: cremona
 

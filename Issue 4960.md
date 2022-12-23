@@ -1,6 +1,6 @@
 # Issue 4960: issue with user account creation in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4960
 
 Original creator: was
 

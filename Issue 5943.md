@@ -1,6 +1,6 @@
 # Issue 5943: Sage 3.4.2.a0: prime_pi(2^50) segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5943
 
 Original creator: mabshoff
 
@@ -24,7 +24,7 @@ Comment by mabshoff created at 2009-04-29 22:48:16
 Hmm, the back trace looks pretty bad:
 
 ```
-mabshoff`@`sage:~$ sage -gdb
+mabshoff@sage:~$ sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /usr/local/sage/local/bin/sage-ipython

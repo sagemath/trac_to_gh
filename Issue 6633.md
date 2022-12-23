@@ -1,6 +1,6 @@
 # Issue 6633: optimize computation of matrices of Hecke operators on modular symbols spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6633
 
 Original creator: was
 

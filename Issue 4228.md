@@ -1,6 +1,6 @@
 # Issue 4228: eclib-20080310.p6.spkg is broken with 'export MAKE="make -j4"'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4228
 
 Original creator: mabshoff
 

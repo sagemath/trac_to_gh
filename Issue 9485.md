@@ -1,6 +1,6 @@
 # Issue 9485: Fix strongly_connected_components_digraph to actually do something
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9485
 
 Original creator: nthiery
 

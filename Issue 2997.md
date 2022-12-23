@@ -1,6 +1,6 @@
 # Issue 2997: [with patch; needs review] notebook -- change current directory before running notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2997
 
 Original creator: was
 

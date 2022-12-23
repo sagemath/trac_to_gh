@@ -1,6 +1,6 @@
 # Issue 2171: [with patch; needs review] followup to #2169 -- (magma/sage interface) some further optimizations and fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2171
 
 Original creator: was
 
@@ -40,7 +40,7 @@ I get a reject with http://sagetrac.org/sage_trac/attachment/ticket/2171/sage-tr
 ```
 --- expect.py
 +++ expect.py
-`@``@` -860,10 +860,15 `@``@` If this all works, you can then make cal
+@@ -860,10 +860,15 @@ If this all works, you can then make cal
          return self.eval(var)
  
      def get_using_file(self, var):

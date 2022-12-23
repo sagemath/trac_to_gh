@@ -1,6 +1,6 @@
 # Issue 8016: graph_editor(p) should work for p a poset
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8016
 
 Original creator: rlm
 

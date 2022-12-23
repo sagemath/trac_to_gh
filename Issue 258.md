@@ -1,6 +1,6 @@
 # Issue 258: gp2c -- integrate into SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/258
 
 Original creator: was
 

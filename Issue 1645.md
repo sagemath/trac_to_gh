@@ -1,6 +1,6 @@
 # Issue 1645: erf doesn't evaluate with intervals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1645
 
 Original creator: schilly
 

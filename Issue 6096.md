@@ -1,6 +1,6 @@
 # Issue 6096: [with patch, needs review] Fix subtle bug in partition refinement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6096
 
 Original creator: rlm
 
@@ -17,7 +17,7 @@ This patch includes a module which gives an extremely simple example of using th
 diff -r feb2d962bf2b -r f5d696c216ff sage/groups/perm_gps/partn_ref/double_coset.pyx
 --- a/sage/groups/perm_gps/partn_ref/double_coset.pyx	Mon May 18 12:46:23 2009 -0700
 +++ b/sage/groups/perm_gps/partn_ref/double_coset.pyx	Wed May 20 14:59:09 2009 -0700
-`@``@` -540,7 +540,7 `@``@`
+@@ -540,7 +540,7 @@
          if not possible:
              possible = 1
              i = current_ps.depth

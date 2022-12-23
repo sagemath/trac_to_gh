@@ -1,6 +1,6 @@
 # Issue 5522: [with patch; needs work] Fix segfault if libsingular.so can't be found
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5522
 
 Original creator: tabbott
 

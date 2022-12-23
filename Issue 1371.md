@@ -1,6 +1,6 @@
 # Issue 1371: hg_sage.pull/push() to non-default server with multiple branches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1371
 
 Original creator: jonhanke
 

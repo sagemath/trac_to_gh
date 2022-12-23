@@ -1,6 +1,6 @@
 # Issue 6558: Be more selective in patching ATLAS on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6558
 
 Original creator: drkirkby
 
@@ -83,7 +83,7 @@ The patch is based on the fact that python's os.uname() prints the architecture,
 Here's the output of os.uname() on 't2', which is a Sun T5240 the T2+ processors.
 
 ```
-kirkby`@`t2:[~] $ python
+kirkby@t2:[~] $ python
 Python 2.4.4 (#1, Jan 10 2007, 01:25:01) [C] on sunos5
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
@@ -95,7 +95,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 and here is is on an older machine, a Sun Blade 2000 with UltraSPARC III Cu CPU's, which are the older sun4u architecture. 
 
 ```
-drkirkby`@`kestrel:[~] $ python
+drkirkby@kestrel:[~] $ python
 Python 2.4.4 (#1, Jan 10 2007, 01:25:01) [C] on sunos5
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
@@ -126,7 +126,7 @@ http://sage.math.washington.edu/home/kirkby/Solaris-fixes/atlas-3.8.3.p6/atlas-3
 I see some junk:
 
 ```
-[mvngu`@`sage atlas-3.8.3.p6]$ hg st
+[mvngu@sage atlas-3.8.3.p6]$ hg st
 M SPKG.txt
 M spkg-install
 ? patches/mmsearch-with-temp-Solaris-fix.c

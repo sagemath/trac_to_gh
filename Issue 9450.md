@@ -1,6 +1,6 @@
 # Issue 9450: Implement a factor() function for NumberFieldElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9450
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 7273: PIL spkg uses libraries it must not use
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7273
 
 Original creator: GeorgSWeber
 

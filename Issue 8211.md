@@ -1,6 +1,6 @@
 # Issue 8211: bug in multiplication of polynomials over RR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8211
 
 Original creator: dimpase
 

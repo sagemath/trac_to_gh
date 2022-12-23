@@ -1,6 +1,6 @@
 # Issue 6917: [with patch] Minkowsky sum sould work with polyhedra and not only with polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6917
 
 Original creator: sbarthelemy
 

@@ -1,6 +1,6 @@
 # Issue 599: sage -valgrind log file is placed in bad location.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/599
 
 Original creator: was
 

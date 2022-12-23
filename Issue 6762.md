@@ -1,6 +1,6 @@
 # Issue 6762: [with patch, needs review] add __contains__ to quaternion algebra ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6762
 
 Original creator: robertwb
 

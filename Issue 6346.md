@@ -1,6 +1,6 @@
 # Issue 6346: sage-4.0.2.rc2 build test problem on ppc os x 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6346
 
 Original creator: was
 

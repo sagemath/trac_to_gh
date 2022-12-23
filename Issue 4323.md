@@ -1,6 +1,6 @@
 # Issue 4323: sage-coverage expects doctests for closures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4323
 
 Original creator: robertwb
 

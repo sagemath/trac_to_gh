@@ -1,6 +1,6 @@
 # Issue 7684: Create a doctest that runs only on sage.math and ensures that startuptime is < 1.5 second.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7684
 
 Original creator: was
 

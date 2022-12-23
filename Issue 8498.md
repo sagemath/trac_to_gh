@@ -1,6 +1,6 @@
 # Issue 8498: bug in has_good_reduction for a point on an elliptic curve over a number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8498
 
 Original creator: wuthrich
 

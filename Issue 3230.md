@@ -1,6 +1,6 @@
 # Issue 3230: [with patch; needs review] cygwin -- new givaro spkg that works around stupidity in cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3230
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9864: Unable to start singular because the command 'Singular -t --ticks-per-sec 1000' failed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9865
 
 Original creator: mpatel
 

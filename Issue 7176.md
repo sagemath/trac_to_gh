@@ -1,6 +1,6 @@
 # Issue 7176: sage-4.1.2.rc0 scripts should exit as soon as it can't find gmp.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7176
 
 Original creator: drkirkby
 

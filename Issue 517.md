@@ -1,6 +1,6 @@
 # Issue 517: abelian_group_element / dual_abelian_group_element classes need rewrite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/517
 
 Original creator: boothby
 

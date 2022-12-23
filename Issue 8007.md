@@ -1,6 +1,6 @@
 # Issue 8007: Speed up generation of random number field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8007
 
 Original creator: craigcitro
 

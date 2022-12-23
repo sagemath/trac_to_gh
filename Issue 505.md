@@ -1,6 +1,6 @@
 # Issue 505: memleak in matrix_mod2_dense.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/505
 
 Original creator: mabshoff
 

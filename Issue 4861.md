@@ -1,6 +1,6 @@
 # Issue 4861: Update FLINT to 1.0.20 (latest 1.0.x upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4861
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9021: gdmodule not building on OpenSolaris x64.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9021
 
 Original creator: drkirkby
 
@@ -19,7 +19,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local

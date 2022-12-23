@@ -1,6 +1,6 @@
 # Issue 7342: installing kash3-2008-07-31 spkg fails on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7342
 
 Original creator: was
 

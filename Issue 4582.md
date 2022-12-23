@@ -1,6 +1,6 @@
 # Issue 4582: use Singular's capabilities for computing over fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4582
 
 Original creator: malb
 

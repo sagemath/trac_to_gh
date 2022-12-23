@@ -1,6 +1,6 @@
 # Issue 1798: 3d graphics -- add to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1798
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7203: prereq-0.4 does not exit if CC is not gcc, but CXX is g++
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7203
 
 Original creator: drkirkby
 

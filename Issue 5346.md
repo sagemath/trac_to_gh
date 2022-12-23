@@ -1,6 +1,6 @@
 # Issue 5346: Sage 3.3: schemes/elliptic_curves/ell_rational_field.py fails to doctest with optional database installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5346
 
 Original creator: mabshoff
 

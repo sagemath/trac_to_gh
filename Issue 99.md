@@ -1,6 +1,6 @@
 # Issue 99: Need to get rid of "Integer(0)"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/99
 
 Original creator: justin
 
@@ -193,7 +193,7 @@ I then fixed it in minutes.
 ```
 sha:~ was$ more Desktop/1780.patch 
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1162773046 28800
 # Node ID c5bbdfb6168859a83462b061784673d6e4f7e4cc
 # Parent  9bd772e2980bd58f8025568f9451e75452b30b84
@@ -204,7 +204,7 @@ Fixed bug in preparser where it got confused by comments.
 diff -r 9bd772e2980b -r c5bbdfb61688 sage/misc/preparser.py
 --- a/sage/misc/preparser.py    Sun Nov 05 10:34:40 2006 -0800
 +++ b/sage/misc/preparser.py    Sun Nov 05 16:30:46 2006 -0800
-`@``@` -311,6 +311,12 `@``@` def preparse(line, reset=True, do_time=F
+@@ -311,6 +311,12 @@ def preparse(line, reset=True, do_time=F
                                            or line[i-1] == ')'))):
              in_number = True
              num_start = i

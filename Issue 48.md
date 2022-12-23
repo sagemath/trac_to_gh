@@ -1,6 +1,6 @@
 # Issue 48: spkg-install for singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/48
 
 Original creator: anonymous
 

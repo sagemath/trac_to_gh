@@ -1,6 +1,6 @@
 # Issue 7124: affine cipher and its cryptanalysis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7124
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5123: add univariate polynomial xgcd over GF(p) to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5123
 
 Original creator: was
 

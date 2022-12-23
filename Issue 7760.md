@@ -1,6 +1,6 @@
 # Issue 7760: sage -merge fails silently when applying patches with rejects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7760
 
 Original creator: mhansen
 

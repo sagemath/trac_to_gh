@@ -1,6 +1,6 @@
 # Issue 6592: minimize_constrained only takes lambda functions as constraints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6592
 
 Original creator: rlm
 

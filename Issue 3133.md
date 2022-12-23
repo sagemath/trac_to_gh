@@ -1,6 +1,6 @@
 # Issue 3133: allow parametric_plot and parametric_plot3d to take a vector as input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3133
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  kcrisman jason
 ```
 
 
-On Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake`@`mathsci.kaist.ac.kr> wrote:
+On Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:
 > I'm teaching ODEs right now and I'd like to plot the usual sort of
 >  solution to a 2-by-2 linear DE system, but the following doesn't work:
 >  

@@ -1,6 +1,6 @@
 # Issue 4465: zero-length errors give division error instead of just drawing a point.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4465
 
 Original creator: jason
 

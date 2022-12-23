@@ -1,6 +1,6 @@
 # Issue 8836: sagenb doctest issue discovered on t2.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8836
 
 Original creator: was
 

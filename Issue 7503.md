@@ -1,6 +1,6 @@
 # Issue 7503: M4RI source code needs looking at, as lint finds some issues.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7503
 
 Original creator: drkirkby
 

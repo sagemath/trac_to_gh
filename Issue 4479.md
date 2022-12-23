@@ -1,6 +1,6 @@
 # Issue 4479: sage/logic/logic.py contains a trivial typo: " varaiable"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4479
 
 Original creator: was
 

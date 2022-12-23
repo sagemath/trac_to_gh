@@ -1,6 +1,6 @@
 # Issue 1285: implement substitution of subexpression  in calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1285
 
 Original creator: certik
 

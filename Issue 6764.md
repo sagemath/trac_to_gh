@@ -1,6 +1,6 @@
 # Issue 6764: [with patch, needs review]  Independent Set of Reresentatives (uses Linear Programming)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6764
 
 Original creator: ncohen
 

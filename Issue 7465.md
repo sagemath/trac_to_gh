@@ -1,6 +1,6 @@
 # Issue 7465: %fortran in the notebook (and fortran.eval on command line) is completely broken on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7465
 
 Original creator: was
 

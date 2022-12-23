@@ -1,6 +1,6 @@
 # Issue 9381: libm4ri not respecting SAGE_FAT_BINARY
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9381
 
 Original creator: mariah
 

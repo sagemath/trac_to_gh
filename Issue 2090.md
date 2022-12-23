@@ -1,6 +1,6 @@
 # Issue 2090: basic univariate polynomial efficiency issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2090
 
 Original creator: was
 

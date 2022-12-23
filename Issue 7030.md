@@ -1,6 +1,6 @@
 # Issue 7030: quaddouble-2.2.p9 believe Sun's C++ compiler is broken.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7030
 
 Original creator: drkirkby
 

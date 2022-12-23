@@ -1,6 +1,6 @@
 # Issue 3427: [with patch; needs review] remove ntl library from sage_object build dependency in setup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3427
 
 Original creator: was
 

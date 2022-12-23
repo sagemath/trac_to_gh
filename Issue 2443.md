@@ -1,6 +1,6 @@
 # Issue 2443: [with patch, needs review] add LaTeX macros like \Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2443
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 3496: charpoly for 0 dimensional matrices is broken/wrong most places
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3496
 
 Original creator: craigcitro
 

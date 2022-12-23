@@ -1,6 +1,6 @@
 # Issue 2846: [with patch] no need for bitset.h with new Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2846
 
 Original creator: robertwb
 

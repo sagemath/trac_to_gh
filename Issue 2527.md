@@ -1,6 +1,6 @@
 # Issue 2527: get doctests for congroup.py and congroup_element.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2527
 
 Original creator: was
 

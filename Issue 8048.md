@@ -1,6 +1,6 @@
 # Issue 8048: command to gather build report on a platform/hardware combination
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8048
 
 Original creator: mvngu
 
@@ -179,11 +179,11 @@ I had a look at this and have a few comments.
  * I would show the output of the following three commands:
 
 ```
-drkirkby`@`hawk:~$ command -v gcc
+drkirkby@hawk:~$ command -v gcc
 /usr/local/gcc-4.4.4-multilib/bin/gcc
-drkirkby`@`hawk:~$ command -v g++
+drkirkby@hawk:~$ command -v g++
 /usr/local/gcc-4.4.4-multilib/bin/g++
-drkirkby`@`hawk:~$ command -v gfortran
+drkirkby@hawk:~$ command -v gfortran
 /usr/local/gcc-4.4.4-multilib/bin/gfortran
 ```
 
@@ -289,7 +289,7 @@ On Solaris or OpenSolaris:
 
 
 ```
-kirkby`@`t2:[~] $  /usr/sbin/psrinfo -p
+kirkby@t2:[~] $  /usr/sbin/psrinfo -p
 2
 ```
 
@@ -327,8 +327,8 @@ It looks like on Solaris,
 
 
 ```
-kirkby`@`t2:[~] $ netstat -an | grep LISTEN | awk '{print $1}' | grep ^*.8000
-kirkby`@`t2:[~] $ 
+kirkby@t2:[~] $ netstat -an | grep LISTEN | awk '{print $1}' | grep ^*.8000
+kirkby@t2:[~] $ 
 ```
 
 
@@ -425,7 +425,7 @@ We should be able to get all the parameters that gcc was configured with
 
 
 ```
-drkirkby`@`hawk:~$ gcc -v
+drkirkby@hawk:~$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: /export/home/drkirkby/gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4-multilib --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.4.4-multilib --with-mpfr=/usr/local/gcc-4.4.4-multilib --disable-nls --enable-checking=release --enable-werror=no --enable-multilib --with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld

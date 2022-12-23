@@ -1,6 +1,6 @@
 # Issue 8270: 'make check' on exits with 0 on a failure.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8270
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 8661: add lpsolve spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8661
 
 Original creator: jason
 

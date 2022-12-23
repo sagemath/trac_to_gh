@@ -1,6 +1,6 @@
 # Issue 8923: CompleteMultipartiteGraph generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8923
 
 Original creator: ncohen
 

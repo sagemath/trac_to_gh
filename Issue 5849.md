@@ -1,6 +1,6 @@
 # Issue 5849: Update MPIR to 1.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5849
 
 Original creator: mabshoff
 

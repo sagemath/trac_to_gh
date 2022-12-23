@@ -1,6 +1,6 @@
 # Issue 1749: [with patch] FC7/x86: rings/polynomial/polynomial_element.pyx numerical noise doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1749
 
 Original creator: mabshoff
 

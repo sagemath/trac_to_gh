@@ -1,6 +1,6 @@
 # Issue 853: Add a pslq implementation to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/853
 
 Original creator: was
 
@@ -53,8 +53,8 @@ I've attached the code/paper that was attached to the following email.
 
 
 ```
-agnes.jany`@`googlemail.com>
-to	wstein`@`gmail.com
+agnes.jany@googlemail.com>
+to	wstein@gmail.com
 date	Mon, Aug 10, 2009 at 2:16 PM
 subject	PSLQ implementation
 mailed-by	googlemail.com
@@ -243,7 +243,7 @@ Compiling with the -Wall -pedantic options I get:
 
 
 ```
-drkirkby`@`hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c 
+drkirkby@hawk:/tmp/pslq-1.0/src$ gcc -Wall -pedantic -c pslq-1.0.c 
 pslq-1.0.c: In function ‘print_column’:
 pslq-1.0.c:175: warning: format ‘%u’ expects type ‘unsigned int’, but argument 2 has type ‘long unsigned int’
 pslq-1.0.c: In function ‘print_relation’:

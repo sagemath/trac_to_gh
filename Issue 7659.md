@@ -1,6 +1,6 @@
 # Issue 7659: fix tests in documentation after pynac printing changes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7659
 
 Original creator: burcin
 

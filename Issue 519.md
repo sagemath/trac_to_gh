@@ -1,6 +1,6 @@
 # Issue 519: memory leak: many states passed to gmp_randinit_mt are leaked (2.5kb each)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/519
 
 Original creator: mabshoff
 

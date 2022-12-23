@@ -1,6 +1,6 @@
 # Issue 6330: optional doctest failure -- constructions number fields doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6330
 
 Original creator: was
 

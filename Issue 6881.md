@@ -1,6 +1,6 @@
 # Issue 6881: Conics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6881
 
 Original creator: victor
 

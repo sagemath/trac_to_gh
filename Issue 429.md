@@ -1,6 +1,6 @@
 # Issue 429: cannot create empty sparse matrix over reals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/429
 
 Original creator: malb
 

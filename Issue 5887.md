@@ -1,6 +1,6 @@
 # Issue 5887: major bug in images of homorphisms of R-modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5887
 
 Original creator: was
 
@@ -45,7 +45,7 @@ Comment by was created at 2009-04-24 06:51:30
 There is one doctest failure (in the whole tree), so this isn't ready for review yet:
 
 ```
-wstein`@`sage:~/build/sage-3.4.1$ ./sage -t --long devel/sage/sage/modular/abvar/morphism.py
+wstein@sage:~/build/sage-3.4.1$ ./sage -t --long devel/sage/sage/modular/abvar/morphism.py
 sage -t --long "devel/sage/sage/modular/abvar/morphism.py"  
 **********************************************************************
 File "/scratch/wstein/build/sage-3.4.1/devel/sage/sage/modular/abvar/morphism.py", line 433:
@@ -115,7 +115,7 @@ Is this supposed to apply cleanly to sage-3.4.2.alpha0?  I can't seem to be able
 
 
 ```
-[aghitza`@`cartan sage]$ hg qpush
+[aghitza@cartan sage]$ hg qpush
 applying trac_5887.patch
 patching file sage/modules/matrix_morphism.py
 Hunk #12 FAILED at 555

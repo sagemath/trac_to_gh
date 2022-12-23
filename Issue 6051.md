@@ -1,6 +1,6 @@
 # Issue 6051: [with patch, needs some work] Enable Singular's coefficient rings which are not fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6051
 
 Original creator: malb
 
@@ -60,7 +60,7 @@ Against 4.0.1:
 
 
 ```
-ncalexan`@`sage:~/releases/sage-4.0.2.alpha0/devel/sage-main/sage$ sage -hg import ~/releases/trac_6051-singular-3_1_0-rings.patch 
+ncalexan@sage:~/releases/sage-4.0.2.alpha0/devel/sage-main/sage$ sage -hg import ~/releases/trac_6051-singular-3_1_0-rings.patch 
 applying /home/ncalexan/releases/trac_6051-singular-3_1_0-rings.patch
 patching file doc/en/reference/polynomial_rings.rst
 Hunk #2 FAILED at 13

@@ -1,6 +1,6 @@
 # Issue 4736: The doctesting doesn't always report segfaults properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4736
 
 Original creator: mabshoff
 

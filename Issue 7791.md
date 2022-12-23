@@ -1,6 +1,6 @@
 # Issue 7791: upgrade numpy to 1.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7791
 
 Original creator: jason
 

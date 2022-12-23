@@ -1,6 +1,6 @@
 # Issue 8832: CombinatorialFreeModule doesn't properly coerce scalar during action
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8832
 
 Original creator: hivert
 

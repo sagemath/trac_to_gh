@@ -1,6 +1,6 @@
 # Issue 9047: Make sure there aren't unneeded/untracked files on spkg creation.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9047
 
 Original creator: robertwb
 

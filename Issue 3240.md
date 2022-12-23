@@ -1,6 +1,6 @@
 # Issue 3240: notebook -- implement page dedicated to worksheet publishing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3240
 
 Original creator: TimothyClemans
 

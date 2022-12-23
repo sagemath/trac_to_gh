@@ -1,6 +1,6 @@
 # Issue 2288: tutorial -- fix some typos (easy)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2288
 
 Original creator: was
 
@@ -19,10 +19,10 @@ longer an acronym.
 
 
 ---------- Forwarded message ----------
-From: Mihai Cipu <cipu`@`math.u-strasbg.fr>
+From: Mihai Cipu <cipu@math.u-strasbg.fr>
 Date: Sat, Feb 23, 2008 at 4:03 AM
 Subject: SAGE Tutorial Release 2008.01.18
-To: wstein`@`gmail.com
+To: wstein@gmail.com
 
 
 Dear William,

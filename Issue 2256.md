@@ -1,6 +1,6 @@
 # Issue 2256: matrix inverse over CC raises ZeroDivisionError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2256
 
 Original creator: ncalexan
 

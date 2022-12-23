@@ -1,6 +1,6 @@
 # Issue 7937: Add SASS files to MANIFEST.in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7937
 
 Original creator: mpatel
 

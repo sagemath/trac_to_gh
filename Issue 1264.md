@@ -1,6 +1,6 @@
 # Issue 1264: upgrade to newest version of ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1264
 
 Original creator: was
 
@@ -68,7 +68,7 @@ show details Oct 15
 Reply
 	
 	
-On 10/15/07, maxj <max_corvallis`@`yahoo.com> wrote:
+On 10/15/07, maxj <max_corvallis@yahoo.com> wrote:
 >
 > I am attempting the default installation of sage-2.8.6-PowerMacintosh-
 > Darwin, but Sage exits immediately with error:
@@ -91,8 +91,8 @@ William
 >
 >
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-support`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-support@googlegroups.com
+> To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-support
 > URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
 > -~----------~----~----~----~------~----~------~--~---
@@ -127,14 +127,14 @@ Does this ring any bells to you?
 - Show quoted text -
 
 ---------- Forwarded message ----------
-From: maxj <max_corvallis`@`yahoo.com>
+From: maxj <max_corvallis@yahoo.com>
 Date: Oct 16, 2007 8:32 AM
 Subject: [sage-support] Re: install problem with pickleshare
-To: sage-support <sage-support`@`googlegroups.com>
+To: sage-support <sage-support@googlegroups.com>
 
 
 
-On Oct 16, 12:06 am, "William Stein" <wst...`@`gmail.com> wrote:
+On Oct 16, 12:06 am, "William Stein" <wst...@gmail.com> wrote:
 
 > Please post very precise details about your computer, version of OS X,
 > output of "gcc -v" (from the command line), and the exact error message
@@ -191,9 +191,9 @@ Thanks, Max
 
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-support`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
 To unsubscribe from this group, send email to
-sage-support-unsubscribe`@`googlegroups.com
+sage-support-unsubscribe@googlegroups.com
 For more options, visit this group at
 http://groups.google.com/group/sage-support
 URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
@@ -230,13 +230,13 @@ Reply
 	
 	
 ---------- Forwarded message ----------
-From: Brian Granger <ellisonbg.net`@`gmail.com>
+From: Brian Granger <ellisonbg.net@gmail.com>
 Date: Oct 17, 2007 8:18 PM
 Subject: Re: [IPython-dev] Fwd: [sage-support] Re: install problem
 with pickleshare
-To: Fernando Perez <Fernando.Perez`@`colorado.edu>
+To: Fernando Perez <Fernando.Perez@colorado.edu>
 - Show quoted text -
-Cc: William Stein <wstein`@`gmail.com>, ipython-dev`@`scipy.org
+Cc: William Stein <wstein@gmail.com>, ipython-dev@scipy.org
 
 
 This is really odd.  pickleshare.py is in the Extensions subfolder of
@@ -247,7 +247,7 @@ problem.  Ville knows most about this module, any thoughts?
 
 Brian
 
-On 10/17/07, Fernando Perez <Fernando.Perez`@`colorado.edu> wrote:
+On 10/17/07, Fernando Perez <Fernando.Perez@colorado.edu> wrote:
 > Hey folks,
 >
 > if anyone can help William with this, I'd be very grateful.  This
@@ -259,23 +259,23 @@ On 10/17/07, Fernando Perez <Fernando.Perez`@`colorado.edu> wrote:
 > f
 >
 > ---------- Forwarded message ----------
-> From: William Stein <wstein`@`gmail.com>
+> From: William Stein <wstein@gmail.com>
 > Date: Oct 16, 2007 5:12 PM
 > Subject: Fwd: [sage-support] Re: install problem with pickleshare
-> To: Fernando Perez <Fernando.Perez`@`colorado.edu>
+> To: Fernando Perez <Fernando.Perez@colorado.edu>
 >
 >
 > Does this ring any bells to you?
 >
 > ---------- Forwarded message ----------
-> From: maxj <max_corvallis`@`yahoo.com>
+> From: maxj <max_corvallis@yahoo.com>
 > Date: Oct 16, 2007 8:32 AM
 > Subject: [sage-support] Re: install problem with pickleshare
-> To: sage-support <sage-support`@`googlegroups.com>
+> To: sage-support <sage-support@googlegroups.com>
 >
 >
 >
-> On Oct 16, 12:06 am, "William Stein" <wst...`@`gmail.com> wrote:
+> On Oct 16, 12:06 am, "William Stein" <wst...@gmail.com> wrote:
 >
 > > Please post very precise details about your computer, version of OS X,
 > > output of "gcc -v" (from the command line), and the exact error message
@@ -333,9 +333,9 @@ On 10/17/07, Fernando Perez <Fernando.Perez`@`colorado.edu> wrote:
 >
 >
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-support`@`googlegroups.com
+> To post to this group, send email to sage-support@googlegroups.com
 > To unsubscribe from this group, send email to
-> sage-support-unsubscribe`@`googlegroups.com
+> sage-support-unsubscribe@googlegroups.com
 > For more options, visit this group at
 > http://groups.google.com/group/sage-support
 > URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
@@ -350,7 +350,7 @@ On 10/17/07, Fernando Perez <Fernando.Perez`@`colorado.edu> wrote:
 > http://wstein.org
 > _______________________________________________
 > IPython-dev mailing list
-> IPython-dev`@`scipy.org
+> IPython-dev@scipy.org
 > http://lists.ipython.scipy.org/mailman/listinfo/ipython-dev
 >
 
@@ -384,8 +384,8 @@ Reply
 	
 	
 - Show quoted text -
-On Nov 24, 2007 8:29 PM, Fernando Perez <fperez.net`@`gmail.com> wrote:
-> On Oct 17, 2007 11:47 PM, Ville M. Vainio <vivainio`@`gmail.com> wrote:
+On Nov 24, 2007 8:29 PM, Fernando Perez <fperez.net@gmail.com> wrote:
+> On Oct 17, 2007 11:47 PM, Ville M. Vainio <vivainio@gmail.com> wrote:
 > > Perhaps this is due to sys.path not containing Extensions yet for some
 > > reason (I'm not aware why this is not a problem on my box).
 > >
@@ -443,10 +443,10 @@ show details 11:24 PM (0 minutes ago)
 Reply
 	
 	
-On Nov 24, 2007 11:22 PM, William Stein <wstein`@`gmail.com> wrote:
+On Nov 24, 2007 11:22 PM, William Stein <wstein@gmail.com> wrote:
 >
-> On Nov 24, 2007 8:29 PM, Fernando Perez <fperez.net`@`gmail.com> wrote:
-> > On Oct 17, 2007 11:47 PM, Ville M. Vainio <vivainio`@`gmail.com> wrote:
+> On Nov 24, 2007 8:29 PM, Fernando Perez <fperez.net@gmail.com> wrote:
+> > On Oct 17, 2007 11:47 PM, Ville M. Vainio <vivainio@gmail.com> wrote:
 > > > Perhaps this is due to sys.path not containing Extensions yet for some
 > > > reason (I'm not aware why this is not a problem on my box).
 > > >

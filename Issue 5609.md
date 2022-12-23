@@ -1,6 +1,6 @@
 # Issue 5609: [with patch, needs review] some functions for BooleanPolynomialIdeal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5609
 
 Original creator: malb
 

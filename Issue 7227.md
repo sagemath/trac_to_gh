@@ -1,6 +1,6 @@
 # Issue 7227: Improving factor complexity of words functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7227
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 7609: numerical noise in doctests after pynac update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7609
 
 Original creator: burcin
 

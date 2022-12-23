@@ -1,6 +1,6 @@
 # Issue 375: biopython spkg installer hangs in SAGE 2.5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/375
 
 Original creator: Jondice
 

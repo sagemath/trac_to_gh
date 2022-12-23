@@ -1,6 +1,6 @@
 # Issue 3596: can't build tut.tex; latex errors in ref.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3596
 
 Original creator: was
 

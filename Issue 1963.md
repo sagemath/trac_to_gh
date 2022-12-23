@@ -1,6 +1,6 @@
 # Issue 1963: unramified and eisenstein extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1963
 
 Original creator: roed
 
@@ -48,9 +48,7 @@ src/ntl_wrap.cpp:1136: error: reference to ‘negate’ is ambiguous
 ```
 
 I will poke around a little more and update this if I find anything useful.
-|||                            
-|||----------------------------
-|||| /tmp/padics.py~base.ns4Mgb
+||||||| /tmp/padics.py~base.ns4Mgb
 Cheers,
 
 Michael

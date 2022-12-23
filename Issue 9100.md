@@ -1,6 +1,6 @@
 # Issue 9100: scipy is probably building part 32-bit on OpenSolaris x64 when SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9100
 
 Original creator: drkirkby
 
@@ -21,7 +21,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -38,7 +38,7 @@ This is odd, as some temporary files created during the build are clearly 32-bit
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2/spkg/build$ find . -exec file {} \; | grep 32-bit
+drkirkby@hawk:~/sage-4.4.2/spkg/build$ find . -exec file {} \; | grep 32-bit
 ./sage-4.4.2/c_lib/src/convert.pic.o:	ELF 32-bit LSB relocatable 80386 Version 1
 ./scipy-0.7.p4/src/build/temp.solaris-2.11-i86pc-2.6/scipy/special/mach/r1mach.o:	ELF 32-bit LSB relocatable 80386 Version 1
 ./scipy-0.7.p4/src/build/temp.solaris-2.11-i86pc-2.6/scipy/special/mach/i1mach.o:	ELF 32-bit LSB relocatable 80386 Version 1

@@ -1,6 +1,6 @@
 # Issue 5507: fix sage-sage script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5507
 
 Original creator: dangrayson
 
@@ -64,9 +64,9 @@ Comment by mvngu created at 2010-02-02 06:55:11
 With Sage 4.3.2.alpha1, I get:
 
 ```
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage -version
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage -version
 * Warning: this is a prerelease version, and it may be unstable.     *
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage -sh -c -c "echo hi there"
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage -sh -c -c "echo hi there"
 | Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
@@ -76,7 +76,7 @@ Bypassing shell configuration files ...
 
 hi there
 Exited Sage subshell.
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage -sh -c "echo hi there"
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage -sh -c "echo hi there"
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything

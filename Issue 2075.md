@@ -1,6 +1,6 @@
 # Issue 2075: very serious bug in modules over QQ[x] -- they shouldn't "work" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2075
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9800: Linear programming construction doc fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9801
 
 Original creator: rhinton
 

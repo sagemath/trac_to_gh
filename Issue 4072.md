@@ -1,6 +1,6 @@
 # Issue 4072: Fix issue in trait_names in the sage0 interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4072
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 6534: Jacobi sums are calculated in a ridiculously roundabout fashion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6534
 
 Original creator: davidloeffler
 

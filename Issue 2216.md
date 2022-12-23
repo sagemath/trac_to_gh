@@ -1,6 +1,6 @@
 # Issue 2216: Creating an order in a number field --> infinite loop?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2216
 
 Original creator: craigcitro
 

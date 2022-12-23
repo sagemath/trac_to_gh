@@ -1,6 +1,6 @@
 # Issue 9630: Python ints should have a conversion to Maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9630
 
 Original creator: kcrisman
 

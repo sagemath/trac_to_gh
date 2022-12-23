@@ -1,6 +1,6 @@
 # Issue 6810: improve doctest coverage in schemes/homset.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6810
 
 Original creator: AlexGhitza
 

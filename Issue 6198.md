@@ -1,6 +1,6 @@
 # Issue 6198: stop Sage from trying to download spkg/standard/README.txt on upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6198
 
 Original creator: mhansen
 

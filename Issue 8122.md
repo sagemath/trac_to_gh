@@ -1,6 +1,6 @@
 # Issue 8122: Sage patches added directly to symmetica source
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8122
 
 Original creator: drkirkby
 

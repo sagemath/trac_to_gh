@@ -1,6 +1,6 @@
 # Issue 9914: fixes for NZMATH/Sage interoperation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9915
 
 Original creator: cwitty
 

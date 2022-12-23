@@ -1,6 +1,6 @@
 # Issue 4544: comparison of CDF (or any inexact) elements needs work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4544
 
 Original creator: craigcitro
 

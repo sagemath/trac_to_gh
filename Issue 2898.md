@@ -1,6 +1,6 @@
 # Issue 2898: Coerce float and RDF to Integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2898
 
 Original creator: jason
 

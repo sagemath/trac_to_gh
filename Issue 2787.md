@@ -1,6 +1,6 @@
 # Issue 2787: make the interface to integrate() like the (new consistent) interface to diff()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2787
 
 Original creator: jason
 

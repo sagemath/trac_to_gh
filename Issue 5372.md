@@ -1,6 +1,6 @@
 # Issue 5372: [with patch, needs review] Fix mwrank doctest in 3.4.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5372
 
 Original creator: mhansen
 

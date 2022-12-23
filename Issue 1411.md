@@ -1,6 +1,6 @@
 # Issue 1411: [with patch] Update the README.txt file included in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1411
 
 Original creator: was
 

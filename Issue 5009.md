@@ -1,6 +1,6 @@
 # Issue 5009: elementary_divisors for integer matrices: fix doc string
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5009
 
 Original creator: jhpalmieri
 

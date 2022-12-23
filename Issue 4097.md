@@ -1,6 +1,6 @@
 # Issue 4097: [with patch, needs review] matrix automorphism groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4097
 
 Original creator: rlm
 
@@ -29,7 +29,7 @@ Robert, which I guess is the same as the one attached to this ticket):
 
 
 ```
-wdj`@`tinah:~/sagefiles/sage-3.1.2.rc1$ ./sage -t  devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
+wdj@tinah:~/sagefiles/sage-3.1.2.rc1$ ./sage -t  devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
 sage -t  devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx**********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.rc1/tmp/refinement_matrices.py", line 5:
     sage: import sage.groups.perm_gps.partn_ref.refinement_matrices
@@ -120,14 +120,14 @@ Exception raised:
     NameError: name 'M' is not defined
 **********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.rc1/tmp/refinement_matrices.py", line 124:
-    sage: M = MatrixStruct(matrix(GF(3),[This is the Trac macro *0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2-macro)))
+    sage: M = MatrixStruct(matrix(GF(3),[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2]]))
 Exception raised:
     Traceback (most recent call last):
       File "/home/wdj/sagefiles/sage-3.1.2.rc1/local/lib/python2.5/doctest.py", line 1228, in __run
         compileflags, 1) in test.globs
       File "<doctest __main__.example_1[9]>", line 1, in <module>
-        M = MatrixStruct(matrix(GF(Integer(3)),[This is the Trac macro *Integer* that was inherited from the migration called with arguments (0),Integer)](https://trac.sagemath.org/wiki/WikiMacros#Integer-macro)))###line 124:
-    sage: M = MatrixStruct(matrix(GF(3),[This is the Trac macro *0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2-macro)))
+        M = MatrixStruct(matrix(GF(Integer(3)),[[Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(0),Integer(1),Integer(2)]]))###line 124:
+    sage: M = MatrixStruct(matrix(GF(3),[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2]]))
     NameError: name 'MatrixStruct' is not defined
 **********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.rc1/tmp/refinement_matrices.py", line 125:

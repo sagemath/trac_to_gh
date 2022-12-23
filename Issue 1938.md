@@ -1,6 +1,6 @@
 # Issue 1938: Fast (double) function evaluation for plotting, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1938
 
 Original creator: robertwb
 

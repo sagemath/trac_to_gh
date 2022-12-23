@@ -1,6 +1,6 @@
 # Issue 371: implement sage -t -gdb foo.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/371
 
 Original creator: was
 

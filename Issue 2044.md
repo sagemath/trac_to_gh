@@ -1,6 +1,6 @@
 # Issue 2044: make sage -upgrade work with caching proxy servers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2044
 
 Original creator: mabshoff
 

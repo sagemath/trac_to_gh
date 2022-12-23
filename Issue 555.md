@@ -1,6 +1,6 @@
 # Issue 555: c_lib SConscript doesn't always copy new libcsage.dylib on a sage -b
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/555
 
 Original creator: craigcitro
 

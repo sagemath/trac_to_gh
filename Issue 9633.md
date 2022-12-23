@@ -1,6 +1,6 @@
 # Issue 9633: binomial does not accept float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9633
 
 Original creator: Henryk.Trappmann
 

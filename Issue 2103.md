@@ -1,6 +1,6 @@
 # Issue 2103: equivalence classes of cusps for congruence subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2103
 
 Original creator: AlexGhitza
 

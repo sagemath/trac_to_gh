@@ -1,6 +1,6 @@
 # Issue 4284: modular symbols -- applying Hecke operator on cuspidal subspace broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4284
 
 Original creator: was
 

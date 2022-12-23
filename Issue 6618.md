@@ -1,6 +1,6 @@
 # Issue 6618: Follow up on #6591: make tightpage work even in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6618
 
 Original creator: nthiery
 
@@ -166,7 +166,7 @@ On my OS X machine, running doctests opens up an external viewer for PDF files. 
 diff --git a/sage/misc/latex.py b/sage/misc/latex.py
 --- a/sage/misc/latex.py
 +++ b/sage/misc/latex.py
-`@``@` -2048,17 +2048,6 `@``@` def view(objects, title='SAGE', debug=Fa
+@@ -2048,17 +2048,6 @@ def view(objects, title='SAGE', debug=Fa
          <html><span class="math">\newcommand{\Bold}[1]{\mathbf{#1}}x 2</span></html>
          sage: sage.misc.latex.EMBEDDED_MODE = False
  

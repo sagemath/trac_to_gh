@@ -1,6 +1,6 @@
 # Issue 6287: sage -lisp should run ECL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6287
 
 Original creator: was
 

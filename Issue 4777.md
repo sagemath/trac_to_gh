@@ -1,6 +1,6 @@
 # Issue 4777: Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4777
 
 Original creator: was
 

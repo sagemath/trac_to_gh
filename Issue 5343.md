@@ -1,6 +1,6 @@
 # Issue 5343: trac login redirects to the front page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5343
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 4041: Implementing non-monic number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4041
 
 Original creator: mabshoff
 

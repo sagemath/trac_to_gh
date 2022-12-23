@@ -1,6 +1,6 @@
 # Issue 6570: indexing a matrix with a non-integer should return an IndexError, not a TypeError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6570
 
 Original creator: jason
 

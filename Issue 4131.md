@@ -1,6 +1,6 @@
 # Issue 4131: [with patch, needs review] unbreak sage-clone
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4131
 
 Original creator: mabshoff
 
@@ -42,7 +42,7 @@ I'm confused:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.2.rc4$ ./sage
+wdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.2.rc4, Release Date: 2008-09-15                   |

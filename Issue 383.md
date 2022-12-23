@@ -1,6 +1,6 @@
 # Issue 383: quo_rem in the polynomial rings does not use canonical coercion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/383
 
 Original creator: jbmohler
 
@@ -83,14 +83,14 @@ The following tests failed:
 Total time for all tests: 192.3 seconds
 
 [1]+  Done                    ./sage -tp 10 devel/sage/sage/rings > 383.out
-wstein`@`boxen:~/build/sage-4.3.1.rc0$ pwd
+wstein@boxen:~/build/sage-4.3.1.rc0$ pwd
 /home/wstein/build/sage-4.3.1.rc0
-wstein`@`boxen:~/build/sage-4.3.1.rc0$ ls
+wstein@boxen:~/build/sage-4.3.1.rc0$ ls
 383.out   6207.out~    data   dist      install.log  local     README.txt  sage-python          spkg      tmp
 6207.out  COPYING.txt  devel  examples  ipython      makefile  sage        sage-README-osx.txt  test.log
-wstein`@`boxen:~/build/sage-4.3.1.rc0$ pwd
+wstein@boxen:~/build/sage-4.3.1.rc0$ pwd
 /home/wstein/build/sage-4.3.1.rc0
-wstein`@`boxen:~/build/sage-4.3.1.rc0$
+wstein@boxen:~/build/sage-4.3.1.rc0$
 ```
 
 
@@ -135,7 +135,7 @@ The following tests failed:
         sage -t  devel/sage/sage/modular/cusps.py # 1 doctests failed
 ----------------------------------------------------------------------
 Total time for all tests: 478.6 seconds
-wstein`@`boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$
+wstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$
 ```
 
 

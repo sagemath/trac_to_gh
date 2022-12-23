@@ -1,6 +1,6 @@
 # Issue 7544: downloading packages with sage-spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7544
 
 Original creator: mvngu
 
@@ -97,7 +97,7 @@ Unfortunately, this patch breaks the functionality introduced at #7355. That tic
 For example, if you try `sage -i vtk`, you'll see that it searches and finds that version 5.0.2 is the current version -- but then goes and tries to download a bare "vtk.spkg":
 
 ```
-drake`@`klee:/opt/sage$ sage -i vtk
+drake@klee:/opt/sage$ sage -i vtk
 Installing vtk
 Calling sage-spkg on vtk
 Warning: Attempted to overwrite SAGE_ROOT environment variable

@@ -1,6 +1,6 @@
 # Issue 9267: Update the charge statistic on words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9267
 
 Original creator: jbandlow
 

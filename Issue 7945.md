@@ -1,6 +1,6 @@
 # Issue 7945: Class groups of number fields: an_element() not in self
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7945
 
 Original creator: nthiery
 

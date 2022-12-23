@@ -1,6 +1,6 @@
 # Issue 983: abs seems to be missing a proper latex method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/983
 
 Original creator: mabshoff
 

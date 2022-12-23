@@ -1,6 +1,6 @@
 # Issue 4607: double backslash not properly handled in latex mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4607
 
 Original creator: schilly
 

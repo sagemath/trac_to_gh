@@ -1,6 +1,6 @@
 # Issue 6702: Sage will not build in 64-bit mode on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6702
 
 Original creator: drkirkby
 

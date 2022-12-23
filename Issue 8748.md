@@ -1,6 +1,6 @@
 # Issue 8748: Linear Arboricity, Acyclic edge coloring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8748
 
 Original creator: ncohen
 

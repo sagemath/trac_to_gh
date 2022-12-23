@@ -1,6 +1,6 @@
 # Issue 5341: jsmath broken on wiki
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5341
 
 Original creator: burcin
 

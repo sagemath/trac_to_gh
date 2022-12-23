@@ -1,6 +1,6 @@
 # Issue 7382: MonskyWashnitzer segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7382
 
 Original creator: jen
 

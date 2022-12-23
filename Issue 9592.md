@@ -1,6 +1,6 @@
 # Issue 9592: Upgrade lcalc to pari 2.4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9592
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 8764: the full Data Encryption Standard (DES)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8764
 
 Original creator: mvngu
 

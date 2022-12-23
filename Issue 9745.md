@@ -1,6 +1,6 @@
 # Issue 9745: Pickling of FFELT (finite field element) PARI/GP elements broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9745
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 1403: mwrank: crash upon exit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1403
 
 Original creator: mabshoff
 

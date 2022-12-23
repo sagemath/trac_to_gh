@@ -1,6 +1,6 @@
 # Issue 9596: is_totally_positive should give proven output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9596
 
 Original creator: mstreng
 

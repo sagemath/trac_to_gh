@@ -1,6 +1,6 @@
 # Issue 2488: unused/broken hanke and pari pxy files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2488
 
 Original creator: gfurnish
 

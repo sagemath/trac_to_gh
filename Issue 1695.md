@@ -1,6 +1,6 @@
 # Issue 1695: on osx 10.4 missing libintl.3.dylib in 2.9.2 dmg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1695
 
 Original creator: jkantor
 

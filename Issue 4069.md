@@ -1,6 +1,6 @@
 # Issue 4069: support "application shortcut" in chrome and gears
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4069
 
 Original creator: schilly
 
@@ -79,7 +79,7 @@ Comment by mabshoff created at 2008-12-07 11:46:58
 Now that #3950 is in this one can go in, but we need a rebase:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4069_shortcut_sage.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4069_shortcut_sage.patch 
 patching file sage/server/notebook/notebook.py
 Hunk #2 FAILED at 1319.
 Hunk #3 succeeded at 1324 (offset -44 lines).

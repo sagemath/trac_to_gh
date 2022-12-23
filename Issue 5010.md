@@ -1,6 +1,6 @@
 # Issue 5010: [with patch, needs review] Solaris 10: rings/real_double.pyx doctests failure: nan vs. NaN
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5010
 
 Original creator: mabshoff
 

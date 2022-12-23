@@ -1,6 +1,6 @@
 # Issue 5745: improve doctest coverage for schemes/generic/projective_space.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5745
 
 Original creator: AlexGhitza
 

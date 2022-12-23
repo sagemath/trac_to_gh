@@ -1,6 +1,6 @@
 # Issue 4006: [with patch, needs review] Remove unused code in sage/libs/pari/functional.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4006
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 6563: [with patch; needs review] Singular fails to install header files, since it fails to find install-sh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6563
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1770: Make fast pari <--> p-adic conversions for fixedmod and capped-abs types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1770
 
 Original creator: craigcitro
 

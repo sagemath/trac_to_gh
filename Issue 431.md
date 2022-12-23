@@ -1,6 +1,6 @@
 # Issue 431: dsage server hangs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/431
 
 Original creator: rlm
 
@@ -40,7 +40,7 @@ Comment by rlm created at 2007-09-20 23:42:07
 ```
 Reproduction steps ( takes about 6 hours ... )
 
-rlmill`@`sage:~/sage-2.8.4.1$ ./sage
+rlmill@sage:~/sage-2.8.4.1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.4.2.1, Release Date: 2007-09-20                   |

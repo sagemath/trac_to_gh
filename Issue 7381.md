@@ -1,6 +1,6 @@
 # Issue 7381: Coercion of HyperellipticCurve over pAdicField to an extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7381
 
 Original creator: jen
 

@@ -1,6 +1,6 @@
 # Issue 4850: bug in power_mod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4850
 
 Original creator: was
 

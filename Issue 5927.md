@@ -1,6 +1,6 @@
 # Issue 5927: [with patch; needs review] singular prompt problem on solaris sparc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5927
 
 Original creator: was
 
@@ -92,7 +92,7 @@ sage: singular.eval("intvec G = 4,4,4,0,0,0;")
 With the patch applied:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: singular.eval("intvec G = 4,4,4,0,0,0;")

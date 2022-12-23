@@ -1,6 +1,6 @@
 # Issue 2643: [with patch; needs review] Fix Debian Sections
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2643
 
 Original creator: tabbott
 

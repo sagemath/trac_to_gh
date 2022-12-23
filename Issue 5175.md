@@ -1,6 +1,6 @@
 # Issue 5175: [bug] Bug computing Bessel function J0(0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5175
 
 Original creator: pdenapo
 

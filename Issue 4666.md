@@ -1,6 +1,6 @@
 # Issue 4666: Make -bdist use canonical binary names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4666
 
 Original creator: mabshoff
 
@@ -27,9 +27,9 @@ would yield
 This info can be extracted on Linux via lsb_release
 
 ```
-[mabshoff`@`eno ~]$ lsb_release -i -s
+[mabshoff@eno ~]$ lsb_release -i -s
 Fedora
-[mabshoff`@`eno ~]$ lsb_release -r -s
+[mabshoff@eno ~]$ lsb_release -r -s
 9
 ```
 

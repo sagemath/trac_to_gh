@@ -1,6 +1,6 @@
 # Issue 8656: face_lattice does not seem to work for unbounded polyhedra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8656
 
 Original creator: novoselt
 

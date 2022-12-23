@@ -1,6 +1,6 @@
 # Issue 2662: simplify_full function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2662
 
 Original creator: jason
 

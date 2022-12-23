@@ -1,6 +1,6 @@
 # Issue 3623: Factory and pickling framework (part of coercion branch)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3623
 
 Original creator: robertwb
 
@@ -82,7 +82,7 @@ Hi Robert,
 This bitrotted again.  Sorry!
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3623/3623-factory-1.patch')

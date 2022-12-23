@@ -1,6 +1,6 @@
 # Issue 1544: Rich Morin's SAGE Tutorial nits #2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1544
 
 Original creator: mabshoff
 

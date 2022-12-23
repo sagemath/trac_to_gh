@@ -1,6 +1,6 @@
 # Issue 2860: easy-to-fix bug in html.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2860
 
 Original creator: was
 

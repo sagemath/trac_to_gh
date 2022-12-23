@@ -1,6 +1,6 @@
 # Issue 3464: notebook server error on sage.math (port detection problem)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3464
 
 Original creator: craigcitro
 
@@ -56,7 +56,7 @@ es/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/internet.py", line 1
 2008-06-18 14:33:23-0700 [-]     raise CannotListenError, (self.interface, self.port, le)
 2008-06-18 14:33:23-0700 [-] twisted.internet.error.CannotListenError: Couldn't listen on sage.math.washington.edu:8000: (98, 'Address already in use').
 xprop:  unable to open display ''
-usage:  xprop [-options ...] [This is the Trac macro *format [dformat* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#format [dformat-macro) atom] ...
+usage:  xprop [-options ...] [[format [dformat]] atom] ...
 
 where options include:
     -grammar                       print out full grammar for command line

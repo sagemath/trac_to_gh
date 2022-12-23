@@ -1,6 +1,6 @@
 # Issue 7981: animate ignores options to show that are passed up from the plot command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7981
 
 Original creator: jason
 

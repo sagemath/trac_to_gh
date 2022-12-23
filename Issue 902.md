@@ -1,6 +1,6 @@
 # Issue 902: implement computation of minpoly of symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/902
 
 Original creator: was
 

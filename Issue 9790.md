@@ -1,6 +1,6 @@
 # Issue 9790: Fix documentation for weave in the "numerical_sage" document
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9791
 
 Original creator: mhansen
 

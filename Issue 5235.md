@@ -1,6 +1,6 @@
 # Issue 5235: Detect when Sage is build on AFS and issue a warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5235
 
 Original creator: mabshoff
 
@@ -50,7 +50,7 @@ Gedaliah responded to my question:
 
 This will work unless somebody very foolishly changed the afs mount 
 point to something other that /afs. 
-[This is the Trac macro *$* that was inherited from the migration called with arguments (pwd )](https://trac.sagemath.org/wiki/WikiMacros#$-macro) && echo "we are in afs" 
+[[ $(pwd | cut -d'/' -f2) = 'afs' ]] && echo "we are in afs" 
 ```
 
 

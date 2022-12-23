@@ -1,6 +1,6 @@
 # Issue 3226: add 64 bit OSX build support for gfan
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3226
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9648: New feature: ModulesWithBasis allows module_morphism's to a wider class of codomains
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9648
 
 Original creator: stumpc5
 

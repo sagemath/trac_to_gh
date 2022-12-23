@@ -1,6 +1,6 @@
 # Issue 8242: Fix duplicate citation warnings when building the French-language tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8242
 
 Original creator: mpatel
 
@@ -133,13 +133,13 @@ Comment by mvngu created at 2010-03-01 21:23:43
 The attachment [trac_8242_duplicate_citations.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8242/trac_8242_duplicate_citations.patch) conflicts with ticket #8037, in particular the patch [trac_8037_sagetex_french_tutorial.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch) on that ticket. Here's the hunk failure resulting from first applying #8037, followed by the first patch on #8242:
 
 ```
-[mvngu`@`sage sage-main]$ pwd
+[mvngu@sage sage-main]$ pwd
 /dev/shm/mvngu/sandbox/sage-4.3.3-8242/devel/sage-main
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch && hg qpush
 adding trac_8037_sagetex_french_tutorial.2.patch to series file
 applying trac_8037_sagetex_french_tutorial.2.patch
 now at: trac_8037_sagetex_french_tutorial.2.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8242/trac_8242_duplicate_citations.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8242/trac_8242_duplicate_citations.patch && hg qpush
 adding trac_8242_duplicate_citations.patch to series file
 applying trac_8242_duplicate_citations.patch
 patching file doc/fr/tutorial/introduction.rst
@@ -148,10 +148,10 @@ Hunk #1 FAILED at 62
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8242_duplicate_citations.patch
-[mvngu`@`sage sage-main]$ cat doc/fr/tutorial/introduction.rst.rej
+[mvngu@sage sage-main]$ cat doc/fr/tutorial/introduction.rst.rej
 --- introduction.rst
 +++ introduction.rst
-`@``@` -63,7 +63,7 `@``@`
+@@ -63,7 +63,7 @@
  
  Des instructions pour installer Sage sur votre ordinateur sont
  disponibles dans le guide d'installation (*Installation Guide*), dans

@@ -1,6 +1,6 @@
 # Issue 8504: AbelianGroup.exponent() uses GAP (slow)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8504
 
 Original creator: robertwb
 

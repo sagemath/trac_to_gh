@@ -1,6 +1,6 @@
 # Issue 3554: [with patch, needs review] improve M2 pexpect interface.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3554
 
 Original creator: mhansen
 

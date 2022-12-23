@@ -1,6 +1,6 @@
 # Issue 5902: [with patch, needs review] Try SAGE_ROOT as base of argument to "sage -t"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5902
 
 Original creator: tabbott
 

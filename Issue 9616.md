@@ -1,6 +1,6 @@
 # Issue 9616: segfault / NFS problems with parallel/decorate.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9616
 
 Original creator: ddrake
 

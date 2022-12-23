@@ -1,6 +1,6 @@
 # Issue 558: memleak in integer_fast_tp_dealloc exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/558
 
 Original creator: mabshoff
 

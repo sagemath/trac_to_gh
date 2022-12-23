@@ -1,6 +1,6 @@
 # Issue 6610: Compiler environment variables should be consistent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6610
 
 Original creator: ghtdak
 

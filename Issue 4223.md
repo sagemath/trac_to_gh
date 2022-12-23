@@ -1,6 +1,6 @@
 # Issue 4223: upgrade fpLLL to newest upstream release (3.0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4223
 
 Original creator: malb
 
@@ -200,7 +200,7 @@ Comment by mabshoff created at 2009-05-07 08:27:36
 Hmmm, gen_ajtai() seems to be `#random` now, but low and behold, sooner or later we are hitting a divide by zero in libfplll:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.2.alpha0$ ./sage -gdb
+mabshoff@sage:/scratch/mabshoff/sage-3.4.2.alpha0$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-ipython

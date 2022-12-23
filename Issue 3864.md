@@ -1,6 +1,6 @@
 # Issue 3864: [with patch, needs review] Bug exposed by p-adic matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3864
 
 Original creator: craigcitro
 

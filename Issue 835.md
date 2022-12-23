@@ -1,6 +1,6 @@
 # Issue 835: cannot coerce real numbers to Integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/835
 
 Original creator: dmharvey
 

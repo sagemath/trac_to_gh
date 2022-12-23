@@ -1,6 +1,6 @@
 # Issue 5907: [with patch; needs review] incorrect fast_float evaluation of constant polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5907
 
 Original creator: tornaria
 

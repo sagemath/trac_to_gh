@@ -1,6 +1,6 @@
 # Issue 7952: broken binomial sum (fixed in maxima)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7952
 
 Original creator: burcin
 
@@ -18,7 +18,7 @@ http://groups.google.com/group/sage-devel/t/c7a742292f424b04
 
 
 ```
-On Jan 10, 6:15 pm, Harald Schilly <harald.schi...`@`gmail.com> wrote:
+On Jan 10, 6:15 pm, Harald Schilly <harald.schi...@gmail.com> wrote:
 > Hi, I got this from the report a problem link:
 >
 > Typing (in the inotebook)

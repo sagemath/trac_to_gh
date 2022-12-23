@@ -1,6 +1,6 @@
 # Issue 4032: [with spkg, needs review] Add x86 Solaris build support for libSingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4032
 
 Original creator: mabshoff
 

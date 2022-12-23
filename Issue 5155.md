@@ -1,6 +1,6 @@
 # Issue 5155: Sage 3.3.a3: fix doctests that want write access to $SAGE_LOCAL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5155
 
 Original creator: mabshoff
 
@@ -183,7 +183,7 @@ With Sage 4.7.2.alpha2, I see problems with qepcad and sympow.  I think the qepc
 diff --git a/sage/interfaces/qepcad.py b/sage/interfaces/qepcad.py
 --- a/sage/interfaces/qepcad.py
 +++ b/sage/interfaces/qepcad.py
-`@``@` -636,14 +636,14 `@``@` def _rewrite_qepcadrc():
+@@ -636,14 +636,14 @@ def _rewrite_qepcadrc():
      EXAMPLES:
          sage: from sage.interfaces.qepcad import _rewrite_qepcadrc
          sage: _rewrite_qepcadrc()

@@ -1,6 +1,6 @@
 # Issue 4877: [with spkg; needs review] update optional spkg to newest version of pyopenssl and get spkg into proper format
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4877
 
 Original creator: was
 

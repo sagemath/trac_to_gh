@@ -1,6 +1,6 @@
 # Issue 5893: Norm Form for Number Fields and Orders
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5893
 
 Original creator: roed
 

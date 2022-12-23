@@ -1,6 +1,6 @@
 # Issue 6022: [with patch, needs review] latex.py: if dvipng fails, use dvips and convert instead
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6022
 
 Original creator: jhpalmieri
 

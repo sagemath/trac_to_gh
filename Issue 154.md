@@ -1,6 +1,6 @@
 # Issue 154: gfan -- something wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/154
 
 Original creator: was
 

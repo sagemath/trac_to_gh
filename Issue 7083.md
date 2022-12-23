@@ -1,6 +1,6 @@
 # Issue 7083: Improve a few special functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7083
 
 Original creator: kcrisman
 

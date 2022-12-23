@@ -1,6 +1,6 @@
 # Issue 1017: [with (partial) patch] add an option to solve to return a list of dictionaries instead of a list of lists of equations.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1017
 
 Original creator: jason
 

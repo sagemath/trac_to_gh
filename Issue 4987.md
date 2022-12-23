@@ -1,6 +1,6 @@
 # Issue 4987: [with spkg, not ready for review] Upgrade to Cython 0.11
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4987
 
 Original creator: robertwb
 
@@ -871,7 +871,7 @@ sage:
 Exiting SAGE (CPU time 0m0.07s, Wall time 2m13.31s).
 Exception exceptions.AssertionError in  ignored
 Exception exceptions.AssertionError in  ignored
-Exception exceptions.AssertionError in /Users/robert/sage/sage-cython/local/bin/sage-sage: line 587: 16443 Bus error               sage-ipython "$`@`" -i
+Exception exceptions.AssertionError in /Users/robert/sage/sage-cython/local/bin/sage-sage: line 587: 16443 Bus error               sage-ipython "$@" -i
 ```
 
 

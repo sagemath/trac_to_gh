@@ -1,6 +1,6 @@
 # Issue 1016: [with patch] add max_level argument to flatten
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1016
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4475: create a native Sage implementation of Dokchitser's L-functions algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4475
 
 Original creator: was
 

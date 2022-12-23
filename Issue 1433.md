@@ -1,6 +1,6 @@
 # Issue 1433: Fix some documentation typos pointed out by Rich Morin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1433
 
 Original creator: was
 

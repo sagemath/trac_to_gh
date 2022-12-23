@@ -1,6 +1,6 @@
 # Issue 8804: Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8804
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 4420: [with patch, needs review] sort Gröbner bases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4420
 
 Original creator: malb
 

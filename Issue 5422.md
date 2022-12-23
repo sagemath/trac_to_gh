@@ -1,6 +1,6 @@
 # Issue 5422: [with patch, needs review] Quadratic forms polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5422
 
 Original creator: aly.deines
 

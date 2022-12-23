@@ -1,6 +1,6 @@
 # Issue 159: bessel function bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/159
 
 Original creator: wdj
 
@@ -38,7 +38,7 @@ According to the docs (that wdj wrote) PARI and Maxima define the bessel_J funct
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168648166 28800
 # Node ID 4ee645ba1eb61c95dbc383f05e8ea09da8682b7a
 # Parent  c7164849d131e768a44b8c02da9bde74bed9f801
@@ -47,7 +47,7 @@ addressed ticket #159 -- inconsistent bessel_j by documenting behavior.
 diff -r c7164849d131 -r 4ee645ba1eb6 sage/functions/special.py
 --- a/sage/functions/special.py Fri Jan 12 16:17:20 2007 -0800
 +++ b/sage/functions/special.py Fri Jan 12 16:29:26 2007 -0800
-`@``@` -419,9 +419,12 `@``@` def bessel_I(nu,z,alg = "pari",prec=53):
+@@ -419,9 +419,12 @@ def bessel_I(nu,z,alg = "pari",prec=53):
          
  def bessel_J(nu,z,alg="pari",prec=53):
      r"""
@@ -61,7 +61,7 @@ diff -r c7164849d131 -r 4ee645ba1eb6 sage/functions/special.py
  
      \begin{verbatim}
      Defn:
-`@``@` -459,6 +462,12 `@``@` def bessel_J(nu,z,alg="pari",prec=53):
+@@ -459,6 +462,12 @@ def bessel_J(nu,z,alg="pari",prec=53):
          0.719622018527510801
          sage: bessel_J(0,1)    # last few digits are random
          0.765197686557966605

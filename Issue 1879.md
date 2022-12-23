@@ -1,6 +1,6 @@
 # Issue 1879: notebook -- registering redirects to annoying url
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1879
 
 Original creator: was
 

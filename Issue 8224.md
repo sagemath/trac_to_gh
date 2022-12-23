@@ -1,6 +1,6 @@
 # Issue 8224: help(w) is broken for infinite word w defined by a callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8224
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 9004: __cmp__ in sage/sets/set.py doesn't do what it's supposed to do.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9004
 
 Original creator: fbissey
 

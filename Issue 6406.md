@@ -1,6 +1,6 @@
 # Issue 6406: fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6406
 
 Original creator: wuthrich
 

@@ -1,6 +1,6 @@
 # Issue 9029: sympow is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9029
 
 Original creator: drkirkby
 
@@ -50,7 +50,7 @@ Then checking one of the generated files,
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
+drkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
 ./local/lib/sympow/sympow:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
 ```
 
@@ -111,7 +111,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing sympow-1.018.1.p7.spkg
-drkirkby`@`hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
+drkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
 ./local/lib/sympow/sympow:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 ```
 
@@ -120,7 +120,7 @@ The binary is now 64-bit, not 32-bit as before.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
+drkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow
 ./local/lib/sympow/sympow:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 ```
 

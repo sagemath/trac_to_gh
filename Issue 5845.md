@@ -1,6 +1,6 @@
 # Issue 5845: Fix precision bug in hilbert_class_polynomial()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5845
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 4425: sqrt(4) returns a SymbolicComposition instead of the number 2!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4425
 
 Original creator: was
 

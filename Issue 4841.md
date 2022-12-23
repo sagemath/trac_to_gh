@@ -1,6 +1,6 @@
 # Issue 4841: Update Maxima to 5.17.x (new upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4841
 
 Original creator: mabshoff
 

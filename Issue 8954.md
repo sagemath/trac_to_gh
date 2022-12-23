@@ -1,6 +1,6 @@
 # Issue 8954: Implementation of the affine nilTemperley Lieb algebra of type A
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8954
 
 Original creator: aschilling
 

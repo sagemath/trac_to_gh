@@ -1,6 +1,6 @@
 # Issue 7946: Spec(...) does not specify its category
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7946
 
 Original creator: nthiery
 

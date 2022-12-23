@@ -1,6 +1,6 @@
 # Issue 7006: [with patch; needs review] os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7006
 
 Original creator: was
 

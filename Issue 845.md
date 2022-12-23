@@ -1,6 +1,6 @@
 # Issue 845: Can't pass boolean as parameter to Magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/845
 
 Original creator: jvoight
 

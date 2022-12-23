@@ -1,6 +1,6 @@
 # Issue 9000: sage notebook: change default interact color selector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9000
 
 Original creator: was
 

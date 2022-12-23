@@ -1,6 +1,6 @@
 # Issue 9752: sorting of number field elements is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9752
 
 Original creator: was
 

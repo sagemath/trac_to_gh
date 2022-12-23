@@ -1,6 +1,6 @@
 # Issue 5601: predefine colors in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5601
 
 Original creator: jason
 

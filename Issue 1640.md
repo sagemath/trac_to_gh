@@ -1,6 +1,6 @@
 # Issue 1640: missing documentation Elliptic Curve - heegner_discriminants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1640
 
 Original creator: schilly
 

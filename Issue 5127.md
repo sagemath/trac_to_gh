@@ -1,6 +1,6 @@
 # Issue 5127: relative number fields have bad names for internal coercion routines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5127
 
 Original creator: ncalexan
 

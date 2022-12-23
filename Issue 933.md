@@ -1,6 +1,6 @@
 # Issue 933: Permanents of (0,1)-matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/933
 
 Original creator: jsp
 

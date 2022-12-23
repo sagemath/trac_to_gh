@@ -1,6 +1,6 @@
 # Issue 5575: bug in span
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5575
 
 Original creator: was
 

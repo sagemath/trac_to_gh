@@ -1,6 +1,6 @@
 # Issue 3760: sage -t -long ell_finite_field.py fails with an out of memory error on 32-bit intel os x.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3760
 
 Original creator: was
 

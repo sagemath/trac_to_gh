@@ -1,6 +1,6 @@
 # Issue 8986: Add support for convex rational polyhedral cones
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8986
 
 Original creator: novoselt
 

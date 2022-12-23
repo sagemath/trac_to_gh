@@ -1,6 +1,6 @@
 # Issue 1767: Add SAGE_ATLAS_LIB, SAGE_ATLAS_TARGZ flags to allow use of external atlas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1767
 
 Original creator: jkantor
 

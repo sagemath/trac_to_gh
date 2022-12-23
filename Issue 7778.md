@@ -1,6 +1,6 @@
 # Issue 7778: Update jsMath-image-fonts install path detection
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7778
 
 Original creator: mpatel
 
@@ -32,9 +32,9 @@ I've CC'd Dr. Kirkby, because I see
 
 ```sh
 $ checkbashisms -x -f spkg-install
-possible bashism in spkg-install line 36 (bash arrays, ${name[0|*|`@`]}):
-for DIR in ${CANDIDATES[`@`]}; do
-possible bashism in spkg-install line 44 (bash arrays, ${name[0|*|`@`]}):
+possible bashism in spkg-install line 36 (bash arrays, ${name[0|*|@]}):
+for DIR in ${CANDIDATES[@]}; do
+possible bashism in spkg-install line 44 (bash arrays, ${name[0|*|@]}):
     echo "${CANDIDATES[*]}"
 ```
 
@@ -91,7 +91,7 @@ where sagenb is a symlink to sagenb-0.5-*egg/sagenb, and this did work.
 Notice that:
 
 ```
-root`@`boxen:/usr/local/sage/local/lib/python/site-packages/sagenb/data/jsmath/fonts# python
+root@boxen:/usr/local/sage/local/lib/python/site-packages/sagenb/data/jsmath/fonts# python
 Python 2.5.2 (r252:60911, Jul 22 2009, 15:33:10) 
 [GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.

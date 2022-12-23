@@ -1,6 +1,6 @@
 # Issue 4642: Limit sage-flags.txt to vector math flags
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4642
 
 Original creator: mabshoff
 

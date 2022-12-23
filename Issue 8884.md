@@ -1,6 +1,6 @@
 # Issue 8884: Inefficiency in isogeny_class function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8884
 
 Original creator: kimi
 

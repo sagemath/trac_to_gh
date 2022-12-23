@@ -1,6 +1,6 @@
 # Issue 5678: LaTeX typesetting for two letters phi and Phi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5678
 
 Original creator: gmhossain
 

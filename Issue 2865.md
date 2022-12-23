@@ -1,6 +1,6 @@
 # Issue 2865: PolyBori fails to build on OSX 10.4 intel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2865
 
 Original creator: jkantor
 

@@ -1,6 +1,6 @@
 # Issue 7608: update Networkx to version 1.0rc1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7608
 
 Original creator: ylchapuy
 
@@ -682,7 +682,7 @@ The patch [trac_7608_networkx-1.0.1_fixes.patch](http://trac.sagemath.org/sage_t
  #        cdef object XG = G._backend._nxg                                      
  #                                                                              
 # HG changeset patch
-# User Gregory McWhirter <gmcwhirt`@`uci.edu>
+# User Gregory McWhirter <gmcwhirt@uci.edu>
 # Date 1264709924 28800
 # Node ID 69b48b5bff7c07dfa3013a1572cd7926d17a601c
 # Parent  6a8cf386950323e52babe883811d4bffddb54a74
@@ -691,7 +691,7 @@ Applying -bugs patch
 diff -r 6a8cf3869503 -r 69b48b5bff7c sage/graphs/base/graph_backends.py         
 --- a/sage/graphs/base/graph_backends.py        Thu Jan 28 12:14:56 2010 -0800  
 +++ b/sage/graphs/base/graph_backends.py        Thu Jan 28 12:18:44 2010 -0800  
-`@``@` -603,7 +603,7 `@``@`
+@@ -603,7 +603,7 @@
                          self._nxg.remove_edge(u,v,k)                           
                          break                                                  
              else:                                                              
@@ -701,7 +701,7 @@ diff -r 6a8cf3869503 -r 69b48b5bff7c sage/graphs/base/graph_backends.py
          except KeyError:                                                       
              pass                                                               
 # HG changeset patch
-# User Gregory McWhirter <gmcwhirt`@`uci.edu>
+# User Gregory McWhirter <gmcwhirt@uci.edu>
 # Date 1264739634 28800
 # Node ID 6216ab27b8110fad4803f298cafb60535b9ff273
 # Parent  69b48b5bff7c07dfa3013a1572cd7926d17a601c
@@ -710,7 +710,7 @@ Trac 7608 accomodate upgrade to networkx-1.0.1
 diff -r 69b48b5bff7c -r 6216ab27b811 sage/graphs/base/graph_backends.py         
 --- a/sage/graphs/base/graph_backends.py        Thu Jan 28 12:18:44 2010 -0800  
 +++ b/sage/graphs/base/graph_backends.py        Thu Jan 28 20:33:54 2010 -0800  
-`@``@` -32,12 +32,12 `@``@`
+@@ -32,12 +32,12 @@
          """                                                                    
          Add an edge (u,v) to self, with label l.  If directed is True, this is
          interpreted as an arc from u to v.                                     
@@ -731,7 +731,7 @@ Doing so would make it easier to review.
 Applying [trac_7608_networkx-1.0.1_fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7608/trac_7608_networkx-1.0.1_fixes.patch) to Sage 4.3.3 results in a hunk failure:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7608/trac_7608_networkx-1.0.1_fixes.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7608/trac_7608_networkx-1.0.1_fixes.patch && hg qpush
 adding trac_7608_networkx-1.0.1_fixes.patch to series file
 applying trac_7608_networkx-1.0.1_fixes.patch
 patching file sage/graphs/generic_graph.py
@@ -742,10 +742,10 @@ Hunk #346 succeeded at 10231 with fuzz 1 (offset -1 lines).
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_7608_networkx-1.0.1_fixes.patch
-[mvngu`@`sage sage-main]$ cat sage/graphs/generic_graph.py.rej
+[mvngu@sage sage-main]$ cat sage/graphs/generic_graph.py.rej
 --- generic_graph.py
 +++ generic_graph.py
-`@``@` -8750,9 +8758,9 `@``@`
+@@ -8750,9 +8758,9 @@
          """
          Logic for coloring by label (factored out from plot() for use in 3d
          plots, etc)

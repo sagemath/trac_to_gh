@@ -1,6 +1,6 @@
 # Issue 5756: improve coverage of rings/morphism.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5756
 
 Original creator: was
 

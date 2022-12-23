@@ -1,6 +1,6 @@
 # Issue 3931: Should we merge the dependency relation graph code by Scot Terry
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3931
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 3739: notebook -- new user default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3739
 
 Original creator: was
 

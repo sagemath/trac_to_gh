@@ -1,6 +1,6 @@
 # Issue 2127: Mod n determinant and LinBox/FFPACK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2127
 
 Original creator: cpernet
 
@@ -102,7 +102,7 @@ Comment by mabshoff created at 2008-02-17 01:14:37
 With linboxdet.1.patch applied I am seeing doctest failures like
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx
 sage -t  devel/sage-main/sage/matrix/matrix_modn_dense.pyx  dd = 1
 **********************************************************************
 File "matrix_modn_dense.pyx", line 61:

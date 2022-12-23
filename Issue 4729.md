@@ -1,6 +1,6 @@
 # Issue 4729: fix gnuplot execution issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4729
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5772: notebook -- typo in twist.py causes Internal Server Error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5772
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3041: optimization setting in LinBox.spkg is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3041
 
 Original creator: mabshoff
 

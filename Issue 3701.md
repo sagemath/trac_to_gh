@@ -1,6 +1,6 @@
 # Issue 3701: [with spkg, needs review] Solaris: fix polybori build due to bashism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3701
 
 Original creator: mabshoff
 

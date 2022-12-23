@@ -1,6 +1,6 @@
 # Issue 4779: [with patch; not ready for review] make function for creating random rings and running automated testing on them
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4779
 
 Original creator: was
 

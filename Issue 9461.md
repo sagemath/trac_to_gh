@@ -1,6 +1,6 @@
 # Issue 9461: Doctest failures with sage -t -randorder=X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9461
 
 Original creator: mpatel
 

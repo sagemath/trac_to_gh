@@ -1,6 +1,6 @@
 # Issue 1036: optional macaulay2 package does not install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1036
 
 Original creator: malb
 

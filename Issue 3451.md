@@ -1,6 +1,6 @@
 # Issue 3451: inaccurate error message in scheme morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3451
 
 Original creator: moretti
 

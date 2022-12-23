@@ -1,6 +1,6 @@
 # Issue 7313: Very bad thing in the behaviour of search_doc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7313
 
 Original creator: ncohen
 

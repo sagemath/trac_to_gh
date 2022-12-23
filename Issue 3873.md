@@ -1,6 +1,6 @@
 # Issue 3873: Doctest should test for warnings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3873
 
 Original creator: jason
 

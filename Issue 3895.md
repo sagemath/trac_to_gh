@@ -1,6 +1,6 @@
 # Issue 3895: sage-notebook-insecure ImportError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3895
 
 Original creator: rlm
 

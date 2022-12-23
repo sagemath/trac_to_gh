@@ -1,6 +1,6 @@
 # Issue 9192: Tab-completion misses some elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9192
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 8978: Sage doesn't build on (64bit) OpenSuse 11.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8978
 
 Original creator: GeorgSWeber
 

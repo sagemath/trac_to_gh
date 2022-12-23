@@ -1,6 +1,6 @@
 # Issue 4457: tutorial: add find_root()  to "2.4.1 Solving Equations"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4457
 
 Original creator: dhbradshaw
 

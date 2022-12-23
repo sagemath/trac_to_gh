@@ -1,6 +1,6 @@
 # Issue 4939: massive performance regression to primes_first_n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4939
 
 Original creator: was
 
@@ -27,7 +27,7 @@ In fact, the above is now way way slower than doing leave_pari=False!  So the do
 On sage.math it is not very fast, and also uses 1.5GB RAM, which is a major problem for doctesting this on my build farm, where some machines have only 1GB RAM.  Also, I don't think it is reasonable to require 1.5GB RAM for standard doctests.
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: time v = primes_first_n(10^6,leave_pari=True)
@@ -42,7 +42,7 @@ sage: get_memory_usage()
 For comparison:
 
 ```
-wstein`@`sage:~/sage/devel/sage/sage/rings$ sage
+wstein@sage:~/sage/devel/sage/sage/rings$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: time v = primes_first_n(10^6, leave_pari=False)

@@ -1,6 +1,6 @@
 # Issue 2870: [with patch, needs review] Various files poorly import calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2870
 
 Original creator: gfurnish
 

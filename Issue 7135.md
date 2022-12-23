@@ -1,6 +1,6 @@
 # Issue 7135: python always building 32-bit on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7135
 
 Original creator: drkirkby
 

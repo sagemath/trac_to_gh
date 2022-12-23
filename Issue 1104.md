@@ -1,6 +1,6 @@
 # Issue 1104: Ideal() should check arguments better
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1104
 
 Original creator: ncalexan
 

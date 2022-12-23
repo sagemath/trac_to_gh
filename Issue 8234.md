@@ -1,6 +1,6 @@
 # Issue 8234: Data file deletion in notebook throws errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8234
 
 Original creator: rbeezer
 

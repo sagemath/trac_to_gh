@@ -1,6 +1,6 @@
 # Issue 9575: Grundy coloring of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9575
 
 Original creator: ncohen
 

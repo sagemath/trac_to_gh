@@ -1,6 +1,6 @@
 # Issue 8796: clean up documentation of logic/propcalc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8796
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 7772: resolve 15 warnings when building the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7772
 
 Original creator: mvngu
 

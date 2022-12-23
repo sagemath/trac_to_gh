@@ -1,6 +1,6 @@
 # Issue 2579: Inconsistency in integer quotient
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2579
 
 Original creator: rishi
 

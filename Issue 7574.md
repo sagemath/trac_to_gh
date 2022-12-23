@@ -1,6 +1,6 @@
 # Issue 7574: clean up of MIP interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7574
 
 Original creator: malb
 

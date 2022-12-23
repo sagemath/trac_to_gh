@@ -1,6 +1,6 @@
 # Issue 976: fpLLL fast early reduction segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/976
 
 Original creator: malb
 
@@ -36,8 +36,8 @@ RuntimeError: BUG: fast early reduction segfaults
 0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3
 (gdb) bt
 #0  0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3
-#1  0x00002b139820d63c in fast_early_red<__mpz_struct [1], double>::BabaiCall (this=0x1f310f0, alpha=<value optimized out>, zeros=-1, kappamax=2, var_k=<value optimized out>, ztmp=`@`0x7fff3036c7d0,
-    newvec=`@`0x7fff3036c7ec, newvecmax=`@`0x7fff3036c7e8, n=10) at /usr/local/sage-2.8.1/local//include/fplll/nr.cpp:237
+#1  0x00002b139820d63c in fast_early_red<__mpz_struct [1], double>::BabaiCall (this=0x1f310f0, alpha=<value optimized out>, zeros=-1, kappamax=2, var_k=<value optimized out>, ztmp=@0x7fff3036c7d0,
+    newvec=@0x7fff3036c7ec, newvecmax=@0x7fff3036c7e8, n=10) at /usr/local/sage-2.8.1/local//include/fplll/nr.cpp:237
 #2  0x00002b139821c65d in fast<__mpz_struct [1], double>::LLL (this=0x1f310f0) at /usr/local/sage-2.8.1/local//include/fplll/fast.cpp:591
 #3  0x00002b139820b4ec in __pyx_f_py_5fplll_6FP_LLL_fast_early_red (__pyx_v_self=0x2b80d90, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/libs/fplll/fplll.cpp:1642
 ```

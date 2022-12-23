@@ -1,6 +1,6 @@
 # Issue 68: notebook/worksheets -- be able to edit them as plain text, just like one can edit a wiki page as plain text.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/68
 
 Original creator: was
 

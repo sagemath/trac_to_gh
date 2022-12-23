@@ -1,6 +1,6 @@
 # Issue 2006: crap -- gap contains a binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2006
 
 Original creator: was
 

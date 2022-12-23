@@ -1,6 +1,6 @@
 # Issue 9229: Bring doctests for databases/cremona.py up to 100% (from  42% (17 of 40) )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9229
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 4754: Merge minimum rank code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4754
 
 Original creator: jason
 

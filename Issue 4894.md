@@ -1,6 +1,6 @@
 # Issue 4894: [with patch; needs review] save_session -- bug when saving %cython functions, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4894
 
 Original creator: was
 

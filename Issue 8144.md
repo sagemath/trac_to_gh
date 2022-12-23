@@ -1,6 +1,6 @@
 # Issue 8144: SageTeX is not actually installed under SAGE_LOCAL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8144
 
 Original creator: mvngu
 

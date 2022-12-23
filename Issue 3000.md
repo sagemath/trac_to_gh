@@ -1,6 +1,6 @@
 # Issue 3000: Some packages don't respect the CXX environment variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3000
 
 Original creator: dfdeshom
 

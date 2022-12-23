@@ -1,6 +1,6 @@
 # Issue 4554: notebook -- make a resend email confirmation link on account settings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4554
 
 Original creator: TimothyClemans
 

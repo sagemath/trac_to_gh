@@ -1,6 +1,6 @@
 # Issue 2007: crap -- the R spkg contains precompiled java files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2007
 
 Original creator: was
 

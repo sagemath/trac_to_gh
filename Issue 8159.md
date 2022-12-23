@@ -1,6 +1,6 @@
 # Issue 8159: Updated Cython backend for mpmath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8159
 
 Original creator: fredrik.johansson
 
@@ -155,11 +155,11 @@ Comment by mvngu created at 2010-03-02 13:57:09
 Harald's mpmath spkg has some changes that are not yet checked in:
 
 ```sh
-[mvngu`@`sage mpmath-0.14]$ hg diff
+[mvngu@sage mpmath-0.14]$ hg diff
 diff -r fa9536e74343 SPKG.txt
 --- a/SPKG.txt
 +++ b/SPKG.txt
-`@``@` -21,6 +21,9 `@``@`
+@@ -21,6 +21,9 @@
  
  == Changelog ==
  

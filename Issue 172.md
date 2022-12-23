@@ -1,6 +1,6 @@
 # Issue 172: memory leak in pyrex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/172
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Thu, 30 Nov 2006 08:49:48 -0800, Igor Khavkine <igor.kh`@`gmail.com> wrote:
+On Thu, 30 Nov 2006 08:49:48 -0800, Igor Khavkine <igor.kh@gmail.com> wrote:
 
 > I've recently run into the following bug in Pyrex's code generation.
 > Consider the following .pyx file:
@@ -187,7 +187,7 @@ Comment by was created at 2006-12-01 01:12:41
 
 
 ```
-On 11/30/06, Greg Ewing <greg.ewing`@`canterbury.ac.nz> wrote:
+On 11/30/06, Greg Ewing <greg.ewing@canterbury.ac.nz> wrote:
 > Igor Khavkine wrote:
 >  
 > > cdef void leak (void *obj):

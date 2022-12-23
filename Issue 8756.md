@@ -1,6 +1,6 @@
 # Issue 8756: random segfault in planarity.pyx test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8756
 
 Original creator: was
 
@@ -12,13 +12,13 @@ CC:  jason boothby mvngu ncohen leif
 
 
 ```
-wstein`@`ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep "long" "devel/sage/sage/graphs/planarity.pyx"
+wstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep "long" "devel/sage/sage/graphs/planarity.pyx"
         sage: import networkx.generators.atlas  # long time
         sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time
         sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time
         sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time
         sage: a == b # long time
-wstein`@`ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep "long" "devel/sage/sage/graphs/planarity.pyx" | ./sage
+wstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep "long" "devel/sage/sage/graphs/planarity.pyx" | ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -62,7 +62,7 @@ Comment by cremona created at 2010-04-25 20:40:32
 This may be relevant data:  I am doing a long test of everything in a fresh build of 4.4.rc0 (the non-long passed ok) on 32-bit ubuntu.  After more than 10 hours this has not yet finished, and currently running are
 
 ```
-john`@`ubuntu%ps ux | grep sage
+john@ubuntu%ps ux | grep sage
 john      4886  0.0  0.1   5136  3452 pts/1    S+   17:37   0:00 python /home/john/sage-current/local/bin/sage-cleaner
 john      5352  0.0  0.0   4296  1504 pts/1    S+   10:49   0:00 bash /home/john/bin/sage -t -long sage-4.4.rc0/devel/
 john      5355  0.0  0.0   4400  1632 pts/1    S+   10:49   0:00 bash /home/john/sage-current/local/bin/sage-sage -t -long sage-4.4.rc0/devel/

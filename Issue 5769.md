@@ -1,6 +1,6 @@
 # Issue 5769: power series are accidentally *mutable* (really dangerous)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5769
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-wstein`@`sage:~/build/sage-3.4.1.rc2$ ./sage
+wstein@sage:~/build/sage-3.4.1.rc2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: ref2

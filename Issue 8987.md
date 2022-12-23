@@ -1,6 +1,6 @@
 # Issue 8987: Add support for rational polyhedral fans
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8987
 
 Original creator: novoselt
 

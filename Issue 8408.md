@@ -1,6 +1,6 @@
 # Issue 8408: Update sqlite to 3.6.22 (the latest version)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8408
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 6755: sage-4.1.1 -- twist.py tests are seriously broken on OS X 10.5 PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6755
 
 Original creator: was
 

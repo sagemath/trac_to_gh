@@ -1,6 +1,6 @@
 # Issue 5471: loads(dumps()) does not seem to work as wanted for Symbolic Variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5471
 
 Original creator: GeorgSWeber
 

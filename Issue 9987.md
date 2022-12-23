@@ -1,6 +1,6 @@
 # Issue 9987: zlib 1.2.5 installs zlib library with a .so extension on AIX when it should be .a
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9988
 
 Original creator: drkirkby
 

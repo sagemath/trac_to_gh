@@ -1,6 +1,6 @@
 # Issue 9069: weak popov form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9069
 
 Original creator: cjh
 

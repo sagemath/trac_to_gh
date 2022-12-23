@@ -1,6 +1,6 @@
 # Issue 4271: [with patch, needs review] improve coverage test of ell_generic.py to 100%, and fix typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4271
 
 Original creator: zimmerma
 

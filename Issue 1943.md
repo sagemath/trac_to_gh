@@ -1,6 +1,6 @@
 # Issue 1943: Sage 2.10.1.rc0: rpy fails to build on OSX 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1943
 
 Original creator: mabshoff
 

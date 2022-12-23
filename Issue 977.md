@@ -1,6 +1,6 @@
 # Issue 977: Schubert polynomials send 1 -> wrong polynomial ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/977
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7424: inconsistency between constructors SL and PSL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7424
 
 Original creator: AlexGhitza
 
@@ -12,7 +12,7 @@ Probably because these are implemented as different classes (matrix group versus
 
 
 ```
-[ghitza`@`artin ~]$ sage
+[ghitza@artin ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: SL(2, 7)

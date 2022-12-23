@@ -1,6 +1,6 @@
 # Issue 4639: bad memory leak with exponentiation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4639
 
 Original creator: bober
 
@@ -16,7 +16,7 @@ Also, I believe that these examples had no problems in sage 3.0.2.
 
 
 ```
-bober`@`bober:~/math/tests$ sage
+bober@bober:~/math/tests$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2, Release Date: 2008-11-20                         |

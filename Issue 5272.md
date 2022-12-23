@@ -1,6 +1,6 @@
 # Issue 5272: [with patch, needs review] extend sage_input to work with RIF, CIF, AA, and QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5272
 
 Original creator: cwitty
 

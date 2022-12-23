@@ -1,6 +1,6 @@
 # Issue 9653: 3d plots show axis in a non-conventional orientation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9653
 
 Original creator: olazo
 

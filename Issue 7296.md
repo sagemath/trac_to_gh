@@ -1,6 +1,6 @@
 # Issue 7296: set_aspect_ratio fails with a type error for asymptote
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7296
 
 Original creator: fmaltey
 

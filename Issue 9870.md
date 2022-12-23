@@ -1,6 +1,6 @@
 # Issue 9870: Update Cliquer to 1.21 and get the library buiilding properly on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9871
 
 Original creator: drkirkby
 
@@ -82,10 +82,10 @@ Note, since the old Makefile was not under revision control, the patches look a 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.3/spkg/standard$ diff -u cliquer-1.2.p6/patch/Makefile cliquer-1.21/patches/Makefile
+drkirkby@hawk:~/sage-4.5.3/spkg/standard$ diff -u cliquer-1.2.p6/patch/Makefile cliquer-1.21/patches/Makefile
 --- cliquer-1.2.p6/patch/Makefile	Tue Feb 16 04:26:55 2010
 +++ cliquer-1.21/patches/Makefile	Wed Sep  8 02:42:06 2010
-`@``@` -66,4 +66,4 `@``@`
+@@ -66,4 +66,4 @@
  	cp * "`date "+backup-%Y-%m-%d-%H-%M"`"  2>/dev/null || true
  
  test: testcases
@@ -100,8 +100,8 @@ With the change in the compiler options, there are no text relocations which wer
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.3$ elfdump -d local/lib/libcliquer.so | grep TEXTREL
-drkirkby`@`hawk:~/sage-4.5.3$ 
+drkirkby@hawk:~/sage-4.5.3$ elfdump -d local/lib/libcliquer.so | grep TEXTREL
+drkirkby@hawk:~/sage-4.5.3$ 
 ```
 
 
@@ -392,8 +392,8 @@ I'm marking for needing review. This just changes the compiler flags for Solaris
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.alpha0/local/lib$ elfdump -d libcliquer.so | grep TEXTREL
-drkirkby`@`hawk:~/sage-4.6.alpha0/local/lib$ 
+drkirkby@hawk:~/sage-4.6.alpha0/local/lib$ elfdump -d libcliquer.so | grep TEXTREL
+drkirkby@hawk:~/sage-4.6.alpha0/local/lib$ 
 ```
 
 
@@ -401,10 +401,10 @@ This constrasts with one of the libraries that does still have this problem, whi
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.alpha0/local/lib$ elfdump -d libecl*.so | grep TEXTREL
+drkirkby@hawk:~/sage-4.6.alpha0/local/lib$ elfdump -d libecl*.so | grep TEXTREL
       [24]  TEXTREL           0                   
       [33]  FLAGS             0x4                 [ TEXTREL ]
-drkirkby`@`hawk:~/sage-4.6.alpha0/local/lib$ 
+drkirkby@hawk:~/sage-4.6.alpha0/local/lib$ 
 ```
 
 
@@ -737,7 +737,7 @@ Whilst it can do simple computations, it fails pretty soon. Even exiting causes 
 
 
 ```
-kirkby`@`t2:32 ~/t2/64/sage-4.5.3.alpha1$ ./sage
+kirkby@t2:32 ~/t2/64/sage-4.5.3.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -752,7 +752,7 @@ sage: factorial(12)
 sage: quit
 Exiting Sage (CPU time 0m0.47s, Wall time 0m24.05s).
 Exiting spawned Gap process.
-/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha1/local/bin/sage-sage: line 206:  6732 Segmentation Fault      (core dumped) sage-ipython "$`@`" -i
+/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha1/local/bin/sage-sage: line 206:  6732 Segmentation Fault      (core dumped) sage-ipython "$@" -i
 ```
 
 | Sage Version 4.5.3.alpha1, Release Date: 2010-08-14                |
@@ -793,14 +793,14 @@ On 32-bit OpenSolaris this is passing tests, and having no text relocation issue
 
 ```
 sage: /export/home/drkirkby/sage-4.5.3/http://boxen.math.washington.edu/home/kirkby/patches/cliquer-1.2.p7.spkg is already installed
-drkirkby`@`hawk:~/sage-4.5.3$ ./sage -t devel/sage/sage/graphs/cliquer.pyx
+drkirkby@hawk:~/sage-4.5.3$ ./sage -t devel/sage/sage/graphs/cliquer.pyx
 sage -t  "devel/sage/sage/graphs/cliquer.pyx"               
 	 [5.2 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 5.2 seconds
-drkirkby`@`hawk:~/sage-4.5.3$ elfdump -d local/lib/libcliquer.so | grep TEXTREL
+drkirkby@hawk:~/sage-4.5.3$ elfdump -d local/lib/libcliquer.so | grep TEXTREL
 ```
 
 

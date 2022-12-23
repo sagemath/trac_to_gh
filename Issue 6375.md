@@ -1,6 +1,6 @@
 # Issue 6375: Run sage once as part of install process to generate sage-flags.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6375
 
 Original creator: craigcitro
 

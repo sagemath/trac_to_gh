@@ -1,6 +1,6 @@
 # Issue 651: [with patch] memory leak in gmp_globals.c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/651
 
 Original creator: mabshoff
 

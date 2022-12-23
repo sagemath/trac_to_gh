@@ -1,6 +1,6 @@
 # Issue 6235: set MPLCONFIGDIR environment variable when Sage starts up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6235
 
 Original creator: was
 

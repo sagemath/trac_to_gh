@@ -1,6 +1,6 @@
 # Issue 4597: setup.py dependency checker does not invalidate cache correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4597
 
 Original creator: cwitty
 

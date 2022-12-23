@@ -1,6 +1,6 @@
 # Issue 6130: README about documentation is outdated.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6130
 
 Original creator: malb
 

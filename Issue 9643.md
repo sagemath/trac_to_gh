@@ -1,6 +1,6 @@
 # Issue 9643: Force ECL to disable assembly code on Solaris 10 as it does on OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9643
 
 Original creator: drkirkby
 
@@ -20,7 +20,7 @@ These conditions were checked, by testing the output of `uname -rsm`, which was:
 
 
 ```
-drkirkby`@`hawk:~$ uname -rsm
+drkirkby@hawk:~$ uname -rsm
 SunOS 5.11 i86pc
 ```
 
@@ -31,7 +31,7 @@ John Palmieri has discovered ECL fails to build on Solaris 10 with the x64 proce
 
 
 ```
-drkirkby`@`hawk:~$ uname -sm
+drkirkby@hawk:~$ uname -sm
 SunOS i86pc
 ```
 
@@ -80,23 +80,23 @@ Just to make it clear, on any Solaris 10 or OpenSolaris machine, with an Intel/A
  * On my Sun Ultra 27 running OpenSolaris
 
 ```
-drkirkby`@`hawk:~$ uname -m
+drkirkby@hawk:~$ uname -m
 i86pc
-drkirkby`@`hawk:~$ uname -sm
+drkirkby@hawk:~$ uname -sm
 SunOS i86pc
-drkirkby`@`hawk:~$ uname -rsm
+drkirkby@hawk:~$ uname -rsm
 SunOS 5.11 i86pc
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ 
 ```
 
  * On fulvia on skynet:
 
 ```
-64 drkirkby`@`fulvia:[~] $ uname -m
+64 drkirkby@fulvia:[~] $ uname -m
 i86pc
-64 drkirkby`@`fulvia:[~] $ uname -sm
+64 drkirkby@fulvia:[~] $ uname -sm
 SunOS i86pc
-64 drkirkby`@`fulvia:[~] $ uname -rsm
+64 drkirkby@fulvia:[~] $ uname -rsm
 SunOS 5.10 i86pc
 ```
 

@@ -1,6 +1,6 @@
 # Issue 1542: R package doesn't notice if rpy fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1542
 
 Original creator: craigcitro
 

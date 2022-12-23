@@ -1,6 +1,6 @@
 # Issue 7456: developer guide: discuss proper ReST markup for citations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7456
 
 Original creator: AlexGhitza
 

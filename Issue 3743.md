@@ -1,6 +1,6 @@
 # Issue 3743: notebook -- allow admin user to view any worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3743
 
 Original creator: TimothyClemans
 

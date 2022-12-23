@@ -1,6 +1,6 @@
 # Issue 7813: No empty links at docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7813
 
 Original creator: slosoi
 

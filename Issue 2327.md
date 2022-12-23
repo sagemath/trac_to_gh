@@ -1,6 +1,6 @@
 # Issue 2327: libgcrypt can't find libgpg-error headers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2327
 
 Original creator: mabshoff
 

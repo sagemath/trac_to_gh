@@ -1,6 +1,6 @@
 # Issue 4253: polybori interface: equality operator for navigators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4253
 
 Original creator: PolyBoRi
 

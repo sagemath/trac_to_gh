@@ -1,6 +1,6 @@
 # Issue 8799: Bring doctests for mwrank.pyx up to 100% (from 3%)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8799
 
 Original creator: cremona
 
@@ -84,7 +84,7 @@ With the patch [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_tr
 
 
 ```
-[mvngu`@`sage sage-4.4.2.alpha0-8799-mwrank-doctest]$ ./sage -t -long devel/sage-main/sage/libs/mwrank/mwrank.pyx
+[mvngu@sage sage-4.4.2.alpha0-8799-mwrank-doctest]$ ./sage -t -long devel/sage-main/sage/libs/mwrank/mwrank.pyx
 sage -t -long "devel/sage-main/sage/libs/mwrank/mwrank.pyx" 
 **********************************************************************
 File "/dev/shm/mvngu/sandbox/sage-4.4.2.alpha0-8799-mwrank-doctest/devel/sage-main/sage/libs/mwrank/mwrank.pyx", line 428:

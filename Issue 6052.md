@@ -1,6 +1,6 @@
 # Issue 6052: partial_fraction_decomposition is broken for irreducible denominators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6052
 
 Original creator: tornaria
 

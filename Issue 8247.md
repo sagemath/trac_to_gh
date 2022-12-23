@@ -1,6 +1,6 @@
 # Issue 8247: Remove package GLPK 3.9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8247
 
 Original creator: ncohen
 

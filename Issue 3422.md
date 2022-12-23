@@ -1,6 +1,6 @@
 # Issue 3422: Minor typo in docs for zeta_zeros()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3422
 
 Original creator: mabshoff
 

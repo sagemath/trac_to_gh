@@ -1,6 +1,6 @@
 # Issue 7150: Wrong substitution implementation for fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7150
 
 Original creator: novoselt
 

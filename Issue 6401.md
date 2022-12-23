@@ -1,6 +1,6 @@
 # Issue 6401: Typesettings of real() and imag() are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6401
 
 Original creator: gmhossain
 

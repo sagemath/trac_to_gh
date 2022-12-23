@@ -1,6 +1,6 @@
 # Issue 8901: negative integers in IntegerVectors()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8901
 
 Original creator: ecurry
 

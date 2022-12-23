@@ -1,6 +1,6 @@
 # Issue 1172: change the watkins license in SAGE_ROOT/COPYING
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1172
 
 Original creator: was
 

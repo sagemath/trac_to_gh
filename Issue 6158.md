@@ -1,6 +1,6 @@
 # Issue 6158: upgrading sphix problem: any upgrade to sage-4.0 ends this way
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6158
 
 Original creator: was
 
@@ -87,7 +87,7 @@ These changes should do it:
 ```
 --- install_old	2009-05-31 12:40:34.000000000 -0700
 +++ install	2009-05-31 12:40:37.000000000 -0700
-`@``@` -356,6 +356,11 `@``@`
+@@ -356,6 +356,11 @@
  # NOW do the actual build
  
  time make -f standard/deps $1

@@ -1,6 +1,6 @@
 # Issue 730: graphs: fickle equality testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/730
 
 Original creator: jason
 
@@ -60,7 +60,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
 ```
 --- a/sage/graphs/graph.py	Fri Sep 28 15:21:56 2007 -0500
 +++ b/sage/graphs/graph.py	Fri Sep 28 15:34:18 2007 -0500
-`@``@` -275,7 +275,9 `@``@` class GenericGraph(SageObject):
+@@ -275,7 +275,9 @@ class GenericGraph(SageObject):
          else:
              if self.multiple_edges() != other.multiple_edges():
                  return 1
@@ -71,7 +71,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
              return 1
          comp = enum(self) - enum(other)
          if comp < 0:
-`@``@` -777,12 +779,17 `@``@` class GenericGraph(SageObject):
+@@ -777,12 +779,17 @@ class GenericGraph(SageObject):
          """
          return self._nxg.prepare_nbunch(vertices)
  
@@ -95,7 +95,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
          bdy_verts = []
          int_verts = []
          for v in self.vertex_iterator():
-`@``@` -790,7 +797,7 `@``@` class GenericGraph(SageObject):
+@@ -790,7 +797,7 @@ class GenericGraph(SageObject):
                  bdy_verts.append(v)
              else:
                  int_verts.append(v)
@@ -104,7 +104,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
  
      def relabel(self, perm, inplace=True, quick=False):
          r"""
-`@``@` -2327,7 +2334,7 `@``@` class GenericGraph(SageObject):
+@@ -2327,7 +2334,7 @@ class GenericGraph(SageObject):
          elif layout == 'circular':
              from math import sin, cos, pi
              n = self.order()
@@ -113,7 +113,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
              pos = {}
              for i in range(n):
                  x = float(cos((pi/2) + ((2*pi)/n)*i))
-`@``@` -3466,7 +3473,7 `@``@` class Graph(GenericGraph):
+@@ -3466,7 +3473,7 @@ class Graph(GenericGraph):
  
          """
          n = len(self._nxg.adj)
@@ -122,7 +122,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
          D = {}
          for e in self.edge_iterator():
              i,j,l = e
-`@``@` -3509,7 +3516,7 `@``@` class Graph(GenericGraph):
+@@ -3509,7 +3516,7 @@ class Graph(GenericGraph):
          from sage.matrix.constructor import matrix
          from copy import copy
          n = len(self._nxg.adj)
@@ -131,7 +131,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
          d = [0]*n
          cols = []
          for i, j, l in self.edge_iterator():
-`@``@` -3904,7 +3911,7 `@``@` class Graph(GenericGraph):
+@@ -3904,7 +3911,7 @@ class Graph(GenericGraph):
          if n > 262143:
              raise ValueError, 'sparse6 format supports graphs on 0 to 262143 vertices only.'
          else:
@@ -140,7 +140,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
              n = len(vertices)
              edges = self.edges(labels=False)
              for i in range(len(edges)): # replace edge labels with natural numbers (by index in vertices)
-`@``@` -4340,7 +4347,7 `@``@` class Graph(GenericGraph):
+@@ -4340,7 +4347,7 @@ class Graph(GenericGraph):
              from sage.graphs.graph_isom import search_tree, perm_group_elt
              from sage.groups.perm_gps.permgroup import PermutationGroup
              if partition is None:
@@ -149,7 +149,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
              if translation:
                  a,b = search_tree(self, partition, dict=True, lab=False, dig=self.loops(), verbosity=verbosity)
              else:
-`@``@` -5398,7 +5405,7 `@``@` class DiGraph(GenericGraph):
+@@ -5398,7 +5405,7 @@ class DiGraph(GenericGraph):
  
          """
          n = len(self._nxg.adj)
@@ -158,7 +158,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
          D = {}
          for i,j,l in self.edge_iterator():
              i = verts.index(i)
-`@``@` -5428,7 +5435,7 `@``@` class DiGraph(GenericGraph):
+@@ -5428,7 +5435,7 @@ class DiGraph(GenericGraph):
          from sage.matrix.constructor import matrix
          from copy import copy
          n = len(self._nxg.adj)
@@ -167,7 +167,7 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
          d = [0]*n
          cols = []
          for i, j, l in self.edge_iterator():
-`@``@` -5715,7 +5722,7 `@``@` class DiGraph(GenericGraph):
+@@ -5715,7 +5722,7 @@ class DiGraph(GenericGraph):
              from sage.graphs.graph_isom import search_tree, perm_group_elt
              from sage.groups.perm_gps.permgroup import PermutationGroup
              if partition is None:

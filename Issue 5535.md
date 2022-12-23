@@ -1,6 +1,6 @@
 # Issue 5535: is_primitive is computes integer prime factorization on every call
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5535
 
 Original creator: rhinton
 

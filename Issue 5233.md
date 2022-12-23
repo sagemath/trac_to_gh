@@ -1,6 +1,6 @@
 # Issue 5233: [with patch, needs review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5233
 
 Original creator: mhansen
 

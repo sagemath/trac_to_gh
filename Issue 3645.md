@@ -1,6 +1,6 @@
 # Issue 3645: tutorial: make documentation for .n() more prominent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3645
 
 Original creator: jhpalmieri
 

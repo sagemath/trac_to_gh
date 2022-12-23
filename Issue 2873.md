@@ -1,6 +1,6 @@
 # Issue 2873: Customize JMOL menu
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2873
 
 Original creator: jason
 

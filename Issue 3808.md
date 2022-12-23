@@ -1,6 +1,6 @@
 # Issue 3808: bug in Hom constructor for finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3808
 
 Original creator: was
 

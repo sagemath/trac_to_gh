@@ -1,6 +1,6 @@
 # Issue 132: maxima -- implement special arithmetic for MaximaFunction class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/132
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  mhansen
 
 
 ```
-On Sun, 15 Oct 2006 04:20:55 -0700, Tang Hai Tuan Minh <phohongtuyet`@`gmail.com> wrote:
+On Sun, 15 Oct 2006 04:20:55 -0700, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:
 
 > Hello,
 >

@@ -1,6 +1,6 @@
 # Issue 7744: STL Export -- Allows for 3d printing of surfaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7744
 
 Original creator: colah
 

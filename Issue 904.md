@@ -1,6 +1,6 @@
 # Issue 904: [with patch] graphs: clique-testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/904
 
 Original creator: jason
 

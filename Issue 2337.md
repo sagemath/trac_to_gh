@@ -1,6 +1,6 @@
 # Issue 2337: [with patch; needs review] fix typo in save_session
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2337
 
 Original creator: was
 

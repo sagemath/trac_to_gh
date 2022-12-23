@@ -1,6 +1,6 @@
 # Issue 5948: Coleman integrals of df*f
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5948
 
 Original creator: jen
 
@@ -180,7 +180,7 @@ Comment by mabshoff created at 2009-05-22 14:06:17
 With this patch applied to my 4.0.rc1 merge tree I get one failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-4.0.rc1/devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py", line 2647:

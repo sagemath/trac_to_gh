@@ -1,6 +1,6 @@
 # Issue 90: SAGE build process -- immediately quite if GCC < 3 installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/90
 
 Original creator: was
 

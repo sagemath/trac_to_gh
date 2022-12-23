@@ -1,6 +1,6 @@
 # Issue 1465: the maple interface is broken in some configurations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1465
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1540: lapack.spkg: remove elf binaries from src/INSTALL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1540
 
 Original creator: mabshoff
 

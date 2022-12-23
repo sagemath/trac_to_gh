@@ -1,6 +1,6 @@
 # Issue 1390: fix qbar doctest on 32 bit FC8 Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1390
 
 Original creator: mabshoff
 

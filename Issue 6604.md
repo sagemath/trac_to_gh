@@ -1,6 +1,6 @@
 # Issue 6604: Polish the use of iterators in C graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6604
 
 Original creator: rlm
 

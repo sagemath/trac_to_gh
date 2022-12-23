@@ -1,6 +1,6 @@
 # Issue 5338: Sage 3.2.2: speed regression/infite loop for "K.<b> = QQ[a]"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5338
 
 Original creator: mabshoff
 

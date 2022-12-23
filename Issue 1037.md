@@ -1,6 +1,6 @@
 # Issue 1037: arithmetic with Schubert polynomials includes extra fixed points in the permutations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1037
 
 Original creator: mhansen
 

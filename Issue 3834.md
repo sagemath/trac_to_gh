@@ -1,6 +1,6 @@
 # Issue 3834: notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3834
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8949: symbolic functions dont work with numpy.int32
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8949
 
 Original creator: whuss
 

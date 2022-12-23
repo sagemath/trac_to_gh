@@ -1,6 +1,6 @@
 # Issue 598: implement substitute for monoids
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/598
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On 9/5/07, Joel B. Mohler <joel`@`kiwistrawberry.us> wrote:
+On 9/5/07, Joel B. Mohler <joel@kiwistrawberry.us> wrote:
 \> Yes, so I found FreeMonoid after sending my first e-mail and was testing it
 > out.  I think I may have found something that is not implemented:
 > 

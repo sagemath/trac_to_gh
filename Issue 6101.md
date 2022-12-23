@@ -1,6 +1,6 @@
 # Issue 6101: computation of induced morphism on homology and cohomology of simplicial complex morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6101
 
 Original creator: bantieau
 
@@ -301,7 +301,7 @@ diff --git a/src/sage/homology/simplicial_complex.py b/src/sage/homology/simplic
 index 8d00cd6..366c1db 100644
 --- a/src/sage/homology/simplicial_complex.py
 +++ b/src/sage/homology/simplicial_complex.py
-`@``@` -1077,6 +1077,21 `@``@` class SimplicialComplex(Parent, GenericCellComplex):
+@@ -1077,6 +1077,21 @@ class SimplicialComplex(Parent, GenericCellComplex):
          """
          return self._vertex_set
  

@@ -1,6 +1,6 @@
 # Issue 9121: sage-4.4.3.alpha1: set.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9121
 
 Original creator: was
 

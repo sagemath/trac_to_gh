@@ -1,6 +1,6 @@
 # Issue 7115: building cliquer Cython extension fails on OS X 10.4 PPC (with cliquer-1.2.p0.spkg)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7115
 
 Original creator: was
 

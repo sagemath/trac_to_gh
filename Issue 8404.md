@@ -1,6 +1,6 @@
 # Issue 8404: Computing a H-minor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8404
 
 Original creator: ncohen
 

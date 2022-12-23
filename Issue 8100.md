@@ -1,6 +1,6 @@
 # Issue 8100: running the notebook should not change the working directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8100
 
 Original creator: jhpalmieri
 

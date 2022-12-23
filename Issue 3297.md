@@ -1,6 +1,6 @@
 # Issue 3297: Make ccdlib produce a shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3297
 
 Original creator: fbissey
 

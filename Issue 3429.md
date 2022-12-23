@@ -1,6 +1,6 @@
 # Issue 3429: New linbox 1.1.6 spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3429
 
 Original creator: cpernet
 

@@ -1,6 +1,6 @@
 # Issue 8219: show(...) is now broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8219
 
 Original creator: was
 

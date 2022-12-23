@@ -1,6 +1,6 @@
 # Issue 8307: gfan-0.4plu keeps getting upgraded
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8307
 
 Original creator: mpatel
 

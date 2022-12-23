@@ -1,6 +1,6 @@
 # Issue 7328: latex doesn't handle python floats correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7328
 
 Original creator: jason
 

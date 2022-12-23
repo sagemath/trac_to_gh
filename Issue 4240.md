@@ -1,6 +1,6 @@
 # Issue 4240: magma -- increase doctest coverage of magma.py from current 17% to 100%.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4240
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4732: TypeError in converting from SR matrix to RR, but *only* in doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4732
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4014: remove sage/plot/graph.py from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4014
 
 Original creator: mhansen
 

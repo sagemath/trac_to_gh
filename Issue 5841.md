@@ -1,6 +1,6 @@
 # Issue 5841: reenable interface/lisp.py doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5841
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4499: Fix latex for sech and csch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4499
 
 Original creator: mhansen
 

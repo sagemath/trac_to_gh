@@ -1,6 +1,6 @@
 # Issue 9977: Add a test for the maths library in the 'prereq' script.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9978
 
 Original creator: drkirkby
 

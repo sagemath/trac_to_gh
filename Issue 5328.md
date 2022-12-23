@@ -1,6 +1,6 @@
 # Issue 5328: Make the ATLAS rebuild on tolerance incremental (followup to #1641)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5328
 
 Original creator: mabshoff
 

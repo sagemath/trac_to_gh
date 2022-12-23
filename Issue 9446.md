@@ -1,6 +1,6 @@
 # Issue 9446: misc/trace.py doctest failure on t2 (solaris)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9446
 
 Original creator: jhpalmieri
 
@@ -112,14 +112,14 @@ This is odd:
 
 
 ```
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4] $ ./sage -t  -long devel/sage/sage/misc/trace.py
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4] $ ./sage -t  -long devel/sage/sage/misc/trace.py
 sage -t -long "devel/sage/sage/misc/trace.py"               
 	 [29.7 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 29.7 seconds
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4] $ 
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4] $ 
 ```
 
 

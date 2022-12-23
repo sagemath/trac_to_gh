@@ -1,6 +1,6 @@
 # Issue 421: notebook printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/421
 
 Original creator: was
 

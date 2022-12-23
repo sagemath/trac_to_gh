@@ -1,6 +1,6 @@
 # Issue 1911: [with patch; needs review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1911
 
 Original creator: was
 

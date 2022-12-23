@@ -1,6 +1,6 @@
 # Issue 751: algebraic number theory -- a bunch of minor updates needed for Stein's book
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/751
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1614: cleanup setup.py in sage.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1614
 
 Original creator: mabshoff
 

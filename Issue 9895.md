@@ -1,6 +1,6 @@
 # Issue 9895: upgrading from 4.5.3 to 4.6.alpha0 fails on OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9896
 
 Original creator: jhpalmieri
 
@@ -1430,12 +1430,12 @@ if [ "$1" = '-upgrade' -o "$1" = "--upgrade" ]; then
     # Running again (with the script replaced) then fixes the problem.
     # Run from a temporary copy of sage-sage
     shift
-    sage-upgrade "$`@`"
+    sage-upgrade "$@"
     if [ $? = 2 ]; then   # this exit codes means the user elected not to do the upgrade at all.
         exit $?
     fi
     echo "Double checking that all packages have been installed."
-    sage-upgrade "$`@`"
+    sage-upgrade "$@"
     exit $?
 fi
 ```
@@ -1613,17 +1613,17 @@ Replying to [comment:91 jdemeyer]:
 Well, `spkg/install` and `spkg/standard/deps` are current again, but you've checked the (also current) `install` in (s.t. it's now in the Sage scripts repo, and also ends up in `$SAGE_ROOT/local/bin` where the scripts repo of the installation lives):
 
 ```sh
-leif`@`quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ hg log -v install     
+leif@quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ hg log -v install     
 changeset:   1582:876225f0dec8
 tag:         4.6.upgradetest_alpha1
-user:        Jeroen Demeyer <jdemeyer`@`cage.ugent.be>
+user:        Jeroen Demeyer <jdemeyer@cage.ugent.be>
 date:        Sat Sep 25 11:32:06 2010 +0200
 files:       install
 description:
 #9896: new spkg/install
 
 
-leif`@`quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ 
+leif@quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ 
 ```
 
 (The file should be in `.hgignore`.)
@@ -1884,7 +1884,7 @@ Exception occurred:
 KeyError: 'linear_programming'
 The full traceback has been saved in /tmp/sphinx-err-BbYhGC.log, if you want to report the issue to the author.
 Please also report this if it was a user error, so that a better error message can be provided next time.
-Send reports to sphinx-dev`@`googlegroups.com. Thanks!
+Send reports to sphinx-dev@googlegroups.com. Thanks!
 Build finished.  The built documents can be found in /home/leif/Sage/sage-4.5.3-for-v2b-upgraded/devel/sage/doc/output/html/en/constructions
 ...
 ```
@@ -2019,7 +2019,7 @@ Here's a diff between v2b and v3:
 ```diff
 --- trac_9896-SAGE_ROOT__spkg__standard__deps.v2b	2010-09-27 18:50:32.000000000 +0200
 +++ trac_9896-SAGE_ROOT__spkg__standard__deps.v3	2010-10-18 14:57:44.000000000 +0200
-`@``@` -21,9 +21,7 `@``@`
+@@ -21,9 +21,7 @@
  # Rather than making *all* standard packages depend on SAGE_SCRIPTS (which
  # triggers the rebuild of *every* package on an upgrade), add SAGE_SCRIPTS
  # to the dependencies of only those packages that rely on them.
@@ -2030,7 +2030,7 @@ Here's a diff between v2b and v3:
  # - The Sage library, $(SAGE)
  # - sagetex, but this in turn depends on $(SAGE)
  
-`@``@` -368,15 +366,10 `@``@`
+@@ -368,15 +366,10 @@
  $(INST)/$(MAXIMA): $(BASE) $(INST)/$(ECL)
  	$(INSTALL) "$(SAGE_SPKG) $(MAXIMA) 2>&1" "tee -a $(SAGE_LOGS)/$(MAXIMA).log"
  
@@ -2671,7 +2671,7 @@ $ ls -rtl local/lib/*.la
 The only difference between the broken one and the working one is that the two linbox files have been updated more recently in the working one, presumably when the linbox spkg was installed.  There are plenty of .la files with the wrong path in the working version.  The output from the working version:
 
 ```
--rwxr-xr-x`@` 1 palmieri  admin   779 Feb 23  2008 local/lib/libgfortran.la*
+-rwxr-xr-x@ 1 palmieri  admin   779 Feb 23  2008 local/lib/libgfortran.la*
 -rwxr-xr-x  1 palmieri  admin   975 Sep 24 08:23 local/lib/libpng12.la*
 -rwxr-xr-x  1 palmieri  admin   832 Sep 24 08:24 local/lib/libgc.la*
 -rwxr-xr-x  1 palmieri  admin   902 Sep 24 08:24 local/lib/libcord.la*
@@ -2906,7 +2906,8 @@ Comment by drkirkby created at 2010-10-28 08:25:12
 
 Given the number of things that look to be needed to update this, it would be good if one could create a small shell script, something like
 
-{{{#!/bin/sh
+
+```/bin/sh
 cd devel/sage
 hg qimport /patch/to/raw-patch1
 hg qpush
@@ -2947,7 +2948,7 @@ Perhaps in setup.py, we should use os.path.realpath?  For example,
 diff -r cdc586ffbdfd setup.py
 --- a/setup.py  Mon Sep 13 00:52:40 2010 -0700
 +++ b/setup.py  Wed Nov 03 12:46:51 2010 -0700
-`@``@` -391,7 +391,7 `@``@`
+@@ -391,7 +391,7 @@
                      self.debug_print(
                        "Library dir found in dynamic linker command: " +
                        "\"%s\"" % libdir)

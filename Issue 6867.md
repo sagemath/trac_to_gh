@@ -1,6 +1,6 @@
 # Issue 6867: [with SPKG, needs review] GLPK ( compatible with the symbolics from MIP )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6867
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 6511: merge script: syntax error when doing "sage -merge <ticket-number>"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6511
 
 Original creator: mvngu
 

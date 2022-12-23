@@ -1,6 +1,6 @@
 # Issue 7752: RAM is not free after deleting a worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7752
 
 Original creator: pang
 

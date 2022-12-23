@@ -1,6 +1,6 @@
 # Issue 2480: problem parsing arguments to NumberField.order()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2480
 
 Original creator: ncalexan
 

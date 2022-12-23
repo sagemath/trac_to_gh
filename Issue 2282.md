@@ -1,6 +1,6 @@
 # Issue 2282: [with link to spkg, needs review] readline currently not building dynamic library on Mac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2282
 
 Original creator: craigcitro
 

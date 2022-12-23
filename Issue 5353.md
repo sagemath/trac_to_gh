@@ -1,6 +1,6 @@
 # Issue 5353: add xgcd for polynomial over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5353
 
 Original creator: mhansen
 

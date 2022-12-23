@@ -1,6 +1,6 @@
 # Issue 723: Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/723
 
 Original creator: was
 
@@ -66,9 +66,9 @@ Comment by was created at 2007-09-21 19:46:53
 David Kohel had by far the most interesting response on sage-devel to this ticket:
 
 ```
-David Kohel <drkohel`@`gmail.com> 		 hide details	 6:00 am (6 hours ago) 
-	reply-to		sage-devel`@`googlegroups.com	 
-	to		sage-devel <sage-devel`@`googlegroups.com>	 
+David Kohel <drkohel@gmail.com> 		 hide details	 6:00 am (6 hours ago) 
+	reply-to		sage-devel@googlegroups.com	 
+	to		sage-devel <sage-devel@googlegroups.com>	 
 	date		Sep 21, 2007 6:00 AM	 
 	subject		[sage-devel] Re: LLL	 
 	mailed-by		googlegroups.com	 

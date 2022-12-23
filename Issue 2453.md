@@ -1,6 +1,6 @@
 # Issue 2453: linbox related segfaults in modular/modsym/space.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2453
 
 Original creator: mabshoff
 
@@ -96,7 +96,7 @@ Indeed, directly from the command line we have:
 ```
 sage: for _ in xrange(10^3): a = matrix(GF(5),2,2,[1,0,0,1]).charpoly(algorithm='linbox')
 ....: 
-/home/was/build/sage-2.10.3.rc3/local/bin/sage-sage: line 214: 25825 Segmentation fault      sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/home/was/build/sage-2.10.3.rc3/local/bin/sage-sage: line 214: 25825 Segmentation fault      sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 
@@ -129,31 +129,31 @@ Program received signal SIGSEGV, Segmentation fault.
    from /home/was/build/sage-2.10.3.rc3/local/lib/libgmp.so.3
 #2  0x00002b0fc30d4328 in __gmpz_get_str ()
    from /home/was/build/sage-2.10.3.rc3/local/lib/libgmp.so.3
-#3  0x00002b0fd2ce4b04 in Integer::print (this=0x7fffe8549ae0, o=`@`0x2b0fd2cb8a00)
+#3  0x00002b0fd2ce4b04 in Integer::print (this=0x7fffe8549ae0, o=@0x2b0fd2cb8a00)
     at gmp++_int_io.C:37
-#4  0x00002b0fd2b0248b in operator<< (o=`@`0x2b0fd2cb8a00, a=`@`0x7fffe8549ae0)
+#4  0x00002b0fd2b0248b in operator<< (o=@0x2b0fd2cb8a00, a=@0x7fffe8549ae0)
     at /home/was/build/sage-2.10.3.rc3/local/include/gmp++/gmp++_int.inl:311
-#5  0x00002b0fd2b3c375 in ModularRandIter (this=0x7fffe8549ad0, F=`@`0x7fffe8d47470, 
-    size=`@`0x7fffe8549b80, seed=`@`0x7fffe8549b70)
+#5  0x00002b0fd2b3c375 in ModularRandIter (this=0x7fffe8549ad0, F=@0x7fffe8d47470, 
+    size=@0x7fffe8549b80, seed=@0x7fffe8549b70)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/randiter/modular.h:94
-#6  0x00002b0fd2b419ca in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe8549f60, N=1, A=0x233cf60, lda=1, c=30)
+#6  0x00002b0fd2b419ca in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe8549f60, N=1, A=0x233cf60, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:44
-#7  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe854a3a0, N=1, A=0x233cac0, lda=1, c=30)
+#7  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe854a3a0, N=1, A=0x233cac0, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:1---Type ---Typ-----Type <r---Type <return> -----------Type <return> to continue, or q <return> to quit---
 87
-#8  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe854a7e0, N=1, A=0x233c620, lda=1, c=30)
+#8  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe854a7e0, N=1, A=0x233c620, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:187
-#9  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe854ac20, N=1, A=0x233c180, lda=1, c=30)
+#9  0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe854ac20, N=1, A=0x233c180, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:187
-#10 0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe854b060, N=1, A=0x233bce0, lda=1, c=30)
+#10 0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe854b060, N=1, A=0x233bce0, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:187
-#11 0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=`@`0x7fffe8d47470, 
-    frobeniusForm=`@`0x7fffe854b4a0, N=1, A=0x233b840, lda=1, c=30)
+#11 0x00002b0fd2b42b2e in LinBox::FFPACK::CharpolyArithProg<LinBox::Modular<double>, LinBox::GivPolynomial<double, std::allocator<double> > > (F=@0x7fffe8d47470, 
+    frobeniusForm=@0x7fffe854b4a0, N=1, A=0x233b840, lda=1, c=30)
     at /home/was/build/sage-2.10.3.rc3/local/include/linbox/ffpack/ffpack_frobenius.inl:187
 ... etc. all the same.
 ```

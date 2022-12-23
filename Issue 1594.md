@@ -1,6 +1,6 @@
 # Issue 1594: libm4ri -- in library mode it doesn't work at all on osx -- lots of segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1594
 
 Original creator: was
 

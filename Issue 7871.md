@@ -1,6 +1,6 @@
 # Issue 7871: Mis-specified background color for interacts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7871
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 4140: "Naughty" libraries that get called in by sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4140
 
 Original creator: dphilp
 

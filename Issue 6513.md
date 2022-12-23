@@ -1,6 +1,6 @@
 # Issue 6513: Cythonize sage/numerical/knapsack.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6513
 
 Original creator: mvngu
 

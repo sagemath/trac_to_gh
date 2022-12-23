@@ -1,6 +1,6 @@
 # Issue 241: mod bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/241
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1220: ModularSymbols(GammaH)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1220
 
 Original creator: ifti
 
@@ -186,7 +186,7 @@ Comment by mabshoff created at 2008-08-11 16:12:19
 It applies to 3.1.alpha1 with some slight fuzz:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2/devel/sage$ patch -p1 < trac_1220.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2/devel/sage$ patch -p1 < trac_1220.patch 
 patching file sage/modular/congroup.py
 patching file sage/modular/congroup_element.py
 patching file sage/modular/dims.py
@@ -215,7 +215,7 @@ Comment by mabshoff created at 2008-08-11 16:28:38
 I am seeing two doctest failures:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage -t -long devel/sage/sage/modular/congroup.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage -t -long devel/sage/sage/modular/congroup.py
 sage -t -long devel/sage/sage/modular/congroup.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/congroup.py", line 103:

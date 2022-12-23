@@ -1,6 +1,6 @@
 # Issue 7418: %maxima cells are partially broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7418
 
 Original creator: whuss
 

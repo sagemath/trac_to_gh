@@ -1,6 +1,6 @@
 # Issue 7957: problems with real_part function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7957
 
 Original creator: burcin
 
@@ -17,7 +17,7 @@ http://groups.google.com/group/sage-devel/t/56519182d53e9cf8
 
 ```
 On Tue, 5 Jan 2010 04:35:27 -0800 (PST)
-Håkan Granath <hakan.granath`@`googlemail.com> wrote:
+Håkan Granath <hakan.granath@googlemail.com> wrote:
 
 > Hi,
 > 
@@ -115,11 +115,11 @@ Comment by mvngu created at 2010-01-18 02:14:15
 Does [trac_7957-pynac_exceptions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7957/trac_7957-pynac_exceptions.patch) depend on anything? I'm getting 3 hunk failures when applying this to Sage 4.3.1.rc0:
 
 ```
-[mvngu`@`mod sage-main]$ pwd
+[mvngu@mod sage-main]$ pwd
 /dev/shm/mvngu/sage-4.3.1.rc0-7957/devel/sage-main
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7957/trac_7957-pynac_exceptions.patch
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7957/trac_7957-pynac_exceptions.patch
 adding trac_7957-pynac_exceptions.patch to series file
-[mvngu`@`mod sage-main]$ hg qpush
+[mvngu@mod sage-main]$ hg qpush
 applying trac_7957-pynac_exceptions.patch
 patching file sage/symbolic/pynac.pyx
 Hunk #31 succeeded at 1538 with fuzz 2 (offset -33 lines).
@@ -130,10 +130,10 @@ Hunk #34 FAILED at 1668
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_7957-pynac_exceptions.patch
-[mvngu`@`mod sage-main]$ cat sage/symbolic/pynac.pyx.rej
+[mvngu@mod sage-main]$ cat sage/symbolic/pynac.pyx.rej
 --- pynac.pyx
 +++ pynac.pyx
-`@``@` -1603,7 +1604,7 `@``@`
+@@ -1603,7 +1604,7 @@
      """
      return py_li(x, n, parent)
  
@@ -142,7 +142,7 @@ errors during apply, please fix and refresh trac_7957-pynac_exceptions.patch
      """
      EXAMPLES::
  
-`@``@` -1637,7 +1638,7 `@``@`
+@@ -1637,7 +1638,7 @@
      """
      return py_psi(x)
  
@@ -151,7 +151,7 @@ errors during apply, please fix and refresh trac_7957-pynac_exceptions.patch
      """
      EXAMPLES::
  
-`@``@` -1668,14 +1669,14 `@``@`
+@@ -1668,14 +1669,14 @@
  ##################################################################
  # Not yet implemented
  ##################################################################

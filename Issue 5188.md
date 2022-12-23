@@ -1,6 +1,6 @@
 # Issue 5188: squaring some factorizations has a bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5188
 
 Original creator: was
 
@@ -32,7 +32,7 @@ Some discussion in email:
 ```
 
 
-On Thu, Feb 5, 2009 at 1:39 AM, Willem Jan Palenstijn <wjp`@`usecode.org> wrote:
+On Thu, Feb 5, 2009 at 1:39 AM, Willem Jan Palenstijn <wjp@usecode.org> wrote:
 >
 >
 > Hi all,

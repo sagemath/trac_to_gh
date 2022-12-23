@@ -1,6 +1,6 @@
 # Issue 2960: remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2960
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3829: wester.py disagrees with Wester!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3829
 
 Original creator: rlm
 

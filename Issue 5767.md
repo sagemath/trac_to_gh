@@ -1,6 +1,6 @@
 # Issue 5767: Bring coverage of plot3d/base.pyx up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5767
 
 Original creator: robertwb
 

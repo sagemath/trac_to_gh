@@ -1,6 +1,6 @@
 # Issue 5187: fix optional magma doctests that changed in magma-2.15
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5187
 
 Original creator: was
 

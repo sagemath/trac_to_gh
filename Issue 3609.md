@@ -1,6 +1,6 @@
 # Issue 3609: Update eclib to eclib-20080310.p5.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3609
 
 Original creator: mabshoff
 

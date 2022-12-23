@@ -1,6 +1,6 @@
 # Issue 310: Debian testing version of mercurial refers to plugin not included in SAGE mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/310
 
 Original creator: cwitty
 

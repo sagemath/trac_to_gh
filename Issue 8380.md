@@ -1,6 +1,6 @@
 # Issue 8380: Implement an interface to GAP3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8380
 
 Original creator: saliola
 

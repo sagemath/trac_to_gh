@@ -1,6 +1,6 @@
 # Issue 2901: rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2901
 
 Original creator: was
 

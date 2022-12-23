@@ -1,6 +1,6 @@
 # Issue 9984: Freetype fails to build on AIX - looks as though it does not find Sage's zlib header files.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9985
 
 Original creator: drkirkby
 

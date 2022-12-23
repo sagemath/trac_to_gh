@@ -1,6 +1,6 @@
 # Issue 2115: add native python implementation of multiset combinations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2115
 
 Original creator: mhansen
 

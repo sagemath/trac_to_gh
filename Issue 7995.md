@@ -1,6 +1,6 @@
 # Issue 7995: sage-test doesn't handle all of sage-doctest's return values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7995
 
 Original creator: wjp
 
@@ -229,7 +229,7 @@ print 'finished with %s, err: %s' % (F, err)
 and here's what I get:
 
 ```
-drake`@`sagenb:~/s/sage-4.3.5$ ./sage -t devel/sage/sage/combinat/t*.py
+drake@sagenb:~/s/sage-4.3.5$ ./sage -t devel/sage/sage/combinat/t*.py
 sage -t  "devel/sage/sage/combinat/tableau.py"              
 ^CKeyboardInterrupt -- interrupted after 2.3 seconds!
 finished with devel/sage/sage/combinat/tableau.py, err: 2

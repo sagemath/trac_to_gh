@@ -1,6 +1,6 @@
 # Issue 8180: sh: kpsewhich: not found reported on 4.3.0.1.alpha3 on Solaris 10.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8180
 
 Original creator: drkirkby
 
@@ -23,7 +23,7 @@ But these are the only patches applied between a version which did not generate 
 ```
 Upon loading this alpha3, it now shows that kpsewhich is not found:
 
-[mvngu`@`t2 sage-4.3.0.1.alpha3-32-bit-t2.math-gcc]$ ./sage
+[mvngu@t2 sage-4.3.0.1.alpha3-32-bit-t2.math-gcc]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

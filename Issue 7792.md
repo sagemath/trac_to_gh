@@ -1,6 +1,6 @@
 # Issue 7792: Improved docs and added Width and Height at /interfaces/povray.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7792
 
 Original creator: slosoi
 

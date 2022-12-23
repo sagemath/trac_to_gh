@@ -1,6 +1,6 @@
 # Issue 6247: sage -optional tries to write to SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6247
 
 Original creator: burcin
 

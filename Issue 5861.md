@@ -1,6 +1,6 @@
 # Issue 5861: [with patch, needs review] Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5861
 
 Original creator: mabshoff
 

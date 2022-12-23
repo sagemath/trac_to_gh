@@ -1,6 +1,6 @@
 # Issue 7038: ratpoints 2.1.2.p2 ignores CC and uses gcc whatever
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7038
 
 Original creator: drkirkby
 

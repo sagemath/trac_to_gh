@@ -1,6 +1,6 @@
 # Issue 4133: sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4133
 
 Original creator: mabshoff
 

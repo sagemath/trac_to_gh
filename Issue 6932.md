@@ -1,6 +1,6 @@
 # Issue 6932: jordan_form with transformation=true fails on a 1x1 matrix.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6932
 
 Original creator: syazdani
 

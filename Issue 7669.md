@@ -1,6 +1,6 @@
 # Issue 7669: Translate Mathematica, Maple, Matlab code into Sage code automatically
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7669
 
 Original creator: kcrisman
 

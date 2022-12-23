@@ -1,6 +1,6 @@
 # Issue 6142: [with patch, needs review] fix issues with assumptions() doctest due to architecture dependant hashing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6142
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 6141: [with patch, needs review] simplicial complexes: change 'facets' from an attribute to a method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6141
 
 Original creator: jhpalmieri
 

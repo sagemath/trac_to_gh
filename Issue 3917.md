@@ -1,6 +1,6 @@
 # Issue 3917: make %html (and other text-cell indicators) imply %hide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3917
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 6251: LogoutResource in sage/server/simple/twist.py doesn't really log you out
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6251
 
 Original creator: ddrake
 

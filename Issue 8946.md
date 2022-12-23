@@ -1,6 +1,6 @@
 # Issue 8946: Sage 4.4.2.alpha0: doctest failures in calculus/riemann.pyx due to #8479
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8946
 
 Original creator: mvngu
 

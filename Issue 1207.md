@@ -1,6 +1,6 @@
 # Issue 1207: [with patch] allow ctrl-c in Gröbner basis computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1207
 
 Original creator: malb
 

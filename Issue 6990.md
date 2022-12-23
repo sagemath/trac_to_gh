@@ -1,6 +1,6 @@
 # Issue 6990: readline tab completion has an extra space appended
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6990
 
 Original creator: jason
 

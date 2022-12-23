@@ -1,6 +1,6 @@
 # Issue 4778: [with patch, needs review] Creates Scilab pexpect interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4778
 
 Original creator: ronanpaixao
 
@@ -33,7 +33,7 @@ Had to install matio
 
 
 ```
-[jaap`@`paix scilab-5.0.3]$ bin/scilab -nogui
+[jaap@paix scilab-5.0.3]$ bin/scilab -nogui
 Warning: Localization issue: Error while binding the domain from /home/jaap/downloads/scilab-5.0.3/../locale/ or /home/jaap/downloads/scilab-5.0.3/locale/: Switch to the default language (English).
         ___________________________________________        
                        scilab-5.0.3

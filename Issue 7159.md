@@ -1,6 +1,6 @@
 # Issue 7159: [with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7159
 
 Original creator: ncohen
 

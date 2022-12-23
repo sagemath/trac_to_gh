@@ -1,6 +1,6 @@
 # Issue 5435: [with patch, needs review] sage-ptest "Using cached timings." message could be better
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5435
 
 Original creator: cwitty
 

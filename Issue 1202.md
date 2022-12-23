@@ -1,6 +1,6 @@
 # Issue 1202: sqlite-3.5.2.p1.spkg segfaults sage/databases/database.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1202
 
 Original creator: mabshoff
 

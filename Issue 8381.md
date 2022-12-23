@@ -1,6 +1,6 @@
 # Issue 8381: typo in documentation of rational_reconstruction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8381
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 8640: Add BipartiteGraph to the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8640
 
 Original creator: ncohen
 

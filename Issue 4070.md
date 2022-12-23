@@ -1,6 +1,6 @@
 # Issue 4070: [with spkg, patch: needs review] fix polybori-0.5.rc1 build issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4070
 
 Original creator: mabshoff
 

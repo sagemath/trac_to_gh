@@ -1,6 +1,6 @@
 # Issue 8465: move the document "Python Functional Programming for Mathematicians" to the classification "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8465
 
 Original creator: mvngu
 

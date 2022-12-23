@@ -1,6 +1,6 @@
 # Issue 5598: allow post-creation (pre-use) declaration of coercions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5598
 
 Original creator: robertwb
 

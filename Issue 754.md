@@ -1,6 +1,6 @@
 # Issue 754: get SAGE to build on DSL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/754
 
 Original creator: mhansen
 

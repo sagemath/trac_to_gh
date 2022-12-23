@@ -1,6 +1,6 @@
 # Issue 8339: Message of the day for notebook server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8339
 
 Original creator: cremona
 

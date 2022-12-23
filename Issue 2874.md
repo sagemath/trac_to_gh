@@ -1,6 +1,6 @@
 # Issue 2874: add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2874
 
 Original creator: bump
 

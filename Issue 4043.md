@@ -1,6 +1,6 @@
 # Issue 4043: [with patch, needs review] Sage 3.1.2.alpha4: numerical noise in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4043
 
 Original creator: mabshoff
 

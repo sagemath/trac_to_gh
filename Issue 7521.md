@@ -1,6 +1,6 @@
 # Issue 7521: typo in optional doctest for R interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7521
 
 Original creator: kcrisman
 

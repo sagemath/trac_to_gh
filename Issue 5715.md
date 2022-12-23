@@ -1,6 +1,6 @@
 # Issue 5715: [with patch, needs review] show subdivisions for matrices over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5715
 
 Original creator: jhpalmieri
 

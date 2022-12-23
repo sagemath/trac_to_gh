@@ -1,6 +1,6 @@
 # Issue 1249: [with patch] fixes bug in graph plotting with partitions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1249
 
 Original creator: rlm
 

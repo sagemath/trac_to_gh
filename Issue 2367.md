@@ -1,6 +1,6 @@
 # Issue 2367: [with patch, needs review] Extend invariant_generators to the case of Matrix Groups over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2367
 
 Original creator: SimonKing
 
@@ -52,7 +52,7 @@ The patches (first 2348 then this one) applied cleanly and the above code ran. H
 
 
 ```
-wdj`@`wooster:~/wdj/sagefiles/sage-2.10.3.rc0$ ./sage -t "/home/wdj/wdj/sagefiles/sage-2.10.3.rc0/devel/sage-matgp3/sage/groups/matrix_gps/matrix_group_element.py"
+wdj@wooster:~/wdj/sagefiles/sage-2.10.3.rc0$ ./sage -t "/home/wdj/wdj/sagefiles/sage-2.10.3.rc0/devel/sage-matgp3/sage/groups/matrix_gps/matrix_group_element.py"
 sage -t  devel/sage-matgp3/sage/groups/matrix_gps/matrix_group_element.py**********************************************************************
 File "matrix_group_element.py", line 122:
     sage: g._gap_init_()

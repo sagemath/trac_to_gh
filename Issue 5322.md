@@ -1,6 +1,6 @@
 # Issue 5322: Sage 3.3.rc2: mandriva 32/64 bit fails with mysterious error 139 in make
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5322
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7839: Failure to coerce q^(-1) into its own LaurentPolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7839
 
 Original creator: bump
 

@@ -1,6 +1,6 @@
 # Issue 8499: partial_fraction_decomposition does not work over algebraic extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8499
 
 Original creator: zimmerma
 

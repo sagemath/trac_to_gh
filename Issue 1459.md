@@ -1,6 +1,6 @@
 # Issue 1459: [with patch] make notebook ?? behavior like command line behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1459
 
 Original creator: mhansen
 

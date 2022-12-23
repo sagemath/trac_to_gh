@@ -1,6 +1,6 @@
 # Issue 5251: preparser bug in parsing the backslash "solve right" notation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5251
 
 Original creator: was
 

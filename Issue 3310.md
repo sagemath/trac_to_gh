@@ -1,6 +1,6 @@
 # Issue 3310: sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3310
 
 Original creator: cremona
 

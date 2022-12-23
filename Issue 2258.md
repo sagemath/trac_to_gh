@@ -1,6 +1,6 @@
 # Issue 2258: put dsage documentation into the main sage documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2258
 
 Original creator: yi
 

@@ -1,6 +1,6 @@
 # Issue 9476: Upgrade eclib to version 20100711
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9476
 
 Original creator: cremona
 

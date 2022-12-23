@@ -1,6 +1,6 @@
 # Issue 6237: repeated roots with roots(CDF, multiplicities=False)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6237
 
 Original creator: ncalexan
 

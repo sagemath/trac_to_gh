@@ -1,6 +1,6 @@
 # Issue 2809: G2 fundamental weights were the negative of what they should be.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2809
 
 Original creator: bump
 
@@ -17,7 +17,7 @@ In combinat/root_system.py, the fundamental weights for the various root systems
 diff -r 80b506b8e07c sage/combinat/root_system.py
 --- a/sage/combinat/root_system.py	Tue Apr 01 19:18:55 2008 -0700
 +++ b/sage/combinat/root_system.py	Sat Apr 05 08:40:46 2008 -0700
-`@``@` -788,11 +788,11 `@``@` class AmbientLattice_g(AmbientLattice_ge
+@@ -788,11 +788,11 @@ class AmbientLattice_g(AmbientLattice_ge
          """
          EXAMPLES:
              sage: CartanType(['G',2]).root_system().ambient_lattice().fundamental_weights()

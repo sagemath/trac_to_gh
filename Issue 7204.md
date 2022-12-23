@@ -1,6 +1,6 @@
 # Issue 7204: issue building sage docs since notebook moved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7204
 
 Original creator: was
 
@@ -31,7 +31,7 @@ CC:  jhpalmieri
 > to report the issue to the author.
 > Please also report this if it was a user error, so that a better error
 > message can be provided next time.
-> Send reports to sphinx-dev`@`googlegroups.com. Thanks!
+> Send reports to sphinx-dev@googlegroups.com. Thanks!
 > Build finished.  The built documents can be found in /Applications/
 > sage_builds/sage-4.1.2.rc2-64-bit/devel/sage/doc/output/html/en/
 > developer

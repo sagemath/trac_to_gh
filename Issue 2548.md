@@ -1,6 +1,6 @@
 # Issue 2548: more flexible syntax for defining callable function ring elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2548
 
 Original creator: edrex
 

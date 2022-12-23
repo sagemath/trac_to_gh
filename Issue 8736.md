@@ -1,6 +1,6 @@
 # Issue 8736: Bug in computing radical of univariate polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8736
 
 Original creator: johanbosman
 

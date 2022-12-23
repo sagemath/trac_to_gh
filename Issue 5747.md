@@ -1,6 +1,6 @@
 # Issue 5747: improve doctest coverage for schemes/generic/ambient_space.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5747
 
 Original creator: AlexGhitza
 

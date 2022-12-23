@@ -1,6 +1,6 @@
 # Issue 171: bug in power series hom constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/171
 
 Original creator: was
 
@@ -21,7 +21,7 @@ TypeError: images do not define a valid homomorphism
 ----
 
 
-On Thu, 30 Nov 2006 03:59:21 -0800, James Cranch <jdc41`@`cam.ac.uk> wrote:
+On Thu, 30 Nov 2006 03:59:21 -0800, James Cranch <jdc41@cam.ac.uk> wrote:
 
 > Dear William,
 >
@@ -34,7 +34,7 @@ What login name would you like?
 >
 > The routine "PowerSeriesRing_generic._is_valid_homomorphism_" in  
 > power_series_ring.py seems to be coded incorrectly: there are often  
-> valid ring homomorphisms out of R[This is the Trac macro *x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x-macro) sending x to 0 (say, from R[This is the Trac macro *x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x-macro)  
+> valid ring homomorphisms out of R[[x]] sending x to 0 (say, from R[[x]]  
 > to R itself), and these aren't recognised.
 
 You're right -- That's definitely a bug. 
@@ -88,7 +88,7 @@ Fixed for sage-1.7
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168652611 28800
 # Node ID 86ad31ae2e4abe1ce83b5f6cb0ee9a2dc263a1c8
 # Parent  931f47e34e11519acdd0b2bb8ae0c811c252e13f
@@ -97,7 +97,7 @@ Fix trac bug #171: power series ring homomorphism creation.
 diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/homset.py
 --- a/sage/rings/homset.py      Fri Jan 12 17:33:06 2007 -0800
 +++ b/sage/rings/homset.py      Fri Jan 12 17:43:31 2007 -0800
-`@``@` -47,7 +47,7 `@``@` class RingHomset_generic(HomsetWithBase)
+@@ -47,7 +47,7 @@ class RingHomset_generic(HomsetWithBase)
          try:
              return morphism.RingHomomorphism_im_gens(self, im_gens, check=check)
          except (NotImplementedError, ValueError), err:
@@ -109,7 +109,7 @@ diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/homset.py
 diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/power_series_ring.py
 --- a/sage/rings/power_series_ring.py   Fri Jan 12 17:33:06 2007 -0800
 +++ b/sage/rings/power_series_ring.py   Fri Jan 12 17:43:31 2007 -0800
-`@``@` -289,11 +289,27 `@``@` class PowerSeriesRing_generic(commutativ
+@@ -289,11 +289,27 @@ class PowerSeriesRing_generic(commutativ
          
  
      def _is_valid_homomorphism_(self, codomain, im_gens):
@@ -145,7 +145,7 @@ diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/power_series_ring.py
 diff -r 931f47e34e11 -r 86ad31ae2e4a sage/rings/power_series_ring_element.py
 --- a/sage/rings/power_series_ring_element.py   Fri Jan 12 17:33:06 2007 -0800
 +++ b/sage/rings/power_series_ring_element.py   Fri Jan 12 17:43:31 2007 -0800
-`@``@` -754,7 +754,8 `@``@` class PowerSeries_generic_dense(PowerSer
+@@ -754,7 +754,8 @@ class PowerSeries_generic_dense(PowerSer
      def __call__(self, x):
          try:
              if x.parent() is self.parent():

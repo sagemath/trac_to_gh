@@ -1,6 +1,6 @@
 # Issue 7964: axis labels in weird scientific notation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7964
 
 Original creator: jason
 

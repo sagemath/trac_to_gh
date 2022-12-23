@@ -1,6 +1,6 @@
 # Issue 6528: PolyBoRi ignores CXX and passes Sun flags to GNU C compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6528
 
 Original creator: drkirkby
 

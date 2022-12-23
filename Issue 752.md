@@ -1,6 +1,6 @@
 # Issue 752: jacobians not wrapped for singular multi-polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/752
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 6964: implement computation of Dirichlet character of irreducible cuspidal modular symbols space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6964
 
 Original creator: was
 

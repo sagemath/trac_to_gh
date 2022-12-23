@@ -1,6 +1,6 @@
 # Issue 229: make it so all objects pickled now can be loaded in all future versions of SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/229
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1318: [graphs] calculate eigenspaces of the graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1318
 
 Original creator: jason
 

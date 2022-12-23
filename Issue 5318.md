@@ -1,6 +1,6 @@
 # Issue 5318: ideas for improving random testers (like #4779)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5318
 
 Original creator: cwitty
 

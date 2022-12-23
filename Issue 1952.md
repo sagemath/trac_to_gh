@@ -1,6 +1,6 @@
 # Issue 1952: Follow up to #1940: Ideal comparison improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1952
 
 Original creator: mabshoff
 

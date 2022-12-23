@@ -1,6 +1,6 @@
 # Issue 6508: make installing extcode depend on mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6508
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: mabshoff
 ```
 
 
-On Fri, Jul 10, 2009 at 8:08 AM, Jan Groenewald<jan`@`aims.ac.za> wrote:
+On Fri, Jul 10, 2009 at 8:08 AM, Jan Groenewald<jan@aims.ac.za> wrote:
 >
 > Hi
 >
@@ -76,7 +76,7 @@ On Fri, Jul 10, 2009 at 8:08 AM, Jan Groenewald<jan`@`aims.ac.za> wrote:
 > sys     0m0.112s
 > Error building Sage.
 > Error installing Sage!
-> 1 root`@`hamerkop:/usr/local/src/sage-4.0#
+> 1 root@hamerkop:/usr/local/src/sage-4.0#
 >
 >
 > I guess this means only half my installation is upgraded and it is a bit b0rked now?

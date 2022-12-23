@@ -1,6 +1,6 @@
 # Issue 7597: segfault in libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7597
 
 Original creator: was
 

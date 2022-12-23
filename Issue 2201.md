@@ -1,6 +1,6 @@
 # Issue 2201: [with patch, needs review] doctest failure on 2.10.2.alpha0: number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2201
 
 Original creator: craigcitro
 
@@ -14,7 +14,7 @@ Jaap reported the following doctest failure on sage-devel:
 
 
 ```
-jaap`@`paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py
+jaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py
 sage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************
 File "number_field.py", line 2087:
     sage: F.reduced_basis()
@@ -72,7 +72,7 @@ Just applied the patch by hand and it works:
 
 ```
 
-[jaap`@`paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py
+[jaap@paix sage-2.10.2.alpha0]$ ./sage -t  devel/sage-main/sage/rings/number_field/number_field.py
 sage -t  devel/sage-main/sage/rings/number_field/number_field.py
          [21.3 s]
  

@@ -1,6 +1,6 @@
 # Issue 9679: update README-vmware.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9679
 
 Original creator: AlexGhitza
 

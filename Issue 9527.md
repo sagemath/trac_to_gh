@@ -1,6 +1,6 @@
 # Issue 9527: improve "sage -sh" prompt so it doesn't confuse everybody
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9527
 
 Original creator: was
 

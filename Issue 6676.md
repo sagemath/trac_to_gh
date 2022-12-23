@@ -1,6 +1,6 @@
 # Issue 6676: DeprecationWarning on twisted after starting notebook().
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6676
 
 Original creator: drkirkby
 

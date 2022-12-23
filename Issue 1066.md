@@ -1,6 +1,6 @@
 # Issue 1066: moin moin wiki in sage -- 2 updates needs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1066
 
 Original creator: was
 

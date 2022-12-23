@@ -1,6 +1,6 @@
 # Issue 7092: build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7092
 
 Original creator: jsp
 
@@ -38,7 +38,7 @@ We see this with gcc-4.4,1:
 
 
 ```
-[jaap`@`paix sage-4.1.2.rc0]$ gcc -v
+[jaap@paix sage-4.1.2.rc0]$ gcc -v
 Using built-in specs.
 Target: i586-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i586 --build=i586-redhat-linux

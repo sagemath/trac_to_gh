@@ -1,6 +1,6 @@
 # Issue 1557: notebook -- usability improvement after uploading file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1557
 
 Original creator: was
 

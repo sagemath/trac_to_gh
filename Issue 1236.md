@@ -1,6 +1,6 @@
 # Issue 1236: tate pairings on elliptic curves -- add to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1236
 
 Original creator: was
 
@@ -56,7 +56,7 @@ show details 8:35 AM (1 minute ago)
 Reply
 	
 	
-On Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej`@`certik.cz> wrote:
+On Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej@certik.cz> wrote:
 >
 > > I think in the long-run Sage will have to completely implement its own solve
 > > function, which is better than Maxima's.  Thoughts from Ondrej-sympy would be

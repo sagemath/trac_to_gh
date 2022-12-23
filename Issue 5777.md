@@ -1,6 +1,6 @@
 # Issue 5777: [with package and patches, needs review] update to pynac 0.1.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5777
 
 Original creator: burcin
 

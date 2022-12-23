@@ -1,6 +1,6 @@
 # Issue 592: fix the documentation coverage of rings/number_fields/number_field_ideal.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/592
 
 Original creator: was
 

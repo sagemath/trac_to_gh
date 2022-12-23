@@ -1,6 +1,6 @@
 # Issue 1008: dumb mistake in setup.py -- touching has adverse consequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1008
 
 Original creator: was
 

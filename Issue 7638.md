@@ -1,6 +1,6 @@
 # Issue 7638: [with patch, needs review] Cannot create big matrix on 64-bit system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7638
 
 Original creator: dagss
 

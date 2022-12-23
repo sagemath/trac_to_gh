@@ -1,6 +1,6 @@
 # Issue 2478: [with patch, needs review] chromatic polynomial revisited
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2478
 
 Original creator: rlm
 

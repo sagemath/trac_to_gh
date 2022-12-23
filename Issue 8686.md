@@ -1,6 +1,6 @@
 # Issue 8686: gettext related bug in _ (history)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8686
 
 Original creator: logix
 

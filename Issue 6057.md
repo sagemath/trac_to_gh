@@ -1,6 +1,6 @@
 # Issue 6057: Add a file Solaris.txt / SOLARIS.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6057
 
 Original creator: drkirkby
 

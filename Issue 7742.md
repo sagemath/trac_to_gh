@@ -1,6 +1,6 @@
 # Issue 7742: add a compose function to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7742
 
 Original creator: was
 

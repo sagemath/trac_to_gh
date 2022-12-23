@@ -1,6 +1,6 @@
 # Issue 4965: [with patch, needs work] Z/nZ[x] via FLINT's zmod_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4965
 
 Original creator: malb
 
@@ -516,7 +516,7 @@ Comment by malb created at 2009-01-15 16:33:56
 
 
 ```
-malb`@`sage:~/sage-3.2.2/devel/sage$ sage -tp 10 --long sage/
+malb@sage:~/sage-3.2.2/devel/sage$ sage -tp 10 --long sage/
 ...
 All tests passed!
 ```

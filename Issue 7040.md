@@ -1,6 +1,6 @@
 # Issue 7040: Code actually in Sage (not other project) ignores CC and uses gcc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7040
 
 Original creator: drkirkby
 

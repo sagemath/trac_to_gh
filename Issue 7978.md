@@ -1,6 +1,6 @@
 # Issue 7978: The file sage/combinat/affine.py contains lots of 'tab' characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7978
 
 Original creator: jbandlow
 

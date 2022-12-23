@@ -1,6 +1,6 @@
 # Issue 8356: python is configured with an unreconised option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8356
 
 Original creator: drkirkby
 

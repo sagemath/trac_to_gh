@@ -1,6 +1,6 @@
 # Issue 768: Open a method source in the editor of your choice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/768
 
 Original creator: nbruin
 

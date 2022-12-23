@@ -1,6 +1,6 @@
 # Issue 2372: [with patch, needs review] speedup to matrix_from_rows_and_columns
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2372
 
 Original creator: dfdeshom
 

@@ -1,6 +1,6 @@
 # Issue 8094: shortcuts for matrix transpose, complex conjugate, ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8094
 
 Original creator: schilly
 

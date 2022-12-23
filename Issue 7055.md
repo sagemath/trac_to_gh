@@ -1,6 +1,6 @@
 # Issue 7055: Fix 32-bit versus 64-bit in pbori.pyx doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7055
 
 Original creator: GeorgSWeber
 
@@ -76,7 +76,7 @@ sage -t  "devel/sage/sage/rings/polynomial/pbori.pyx"
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 15.3 seconds
-[jaap`@`paix sage-4.1.2.alpha4]$ 
+[jaap@paix sage-4.1.2.alpha4]$ 
 
 ```
 

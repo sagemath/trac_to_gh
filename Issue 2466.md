@@ -1,6 +1,6 @@
 # Issue 2466: 2.10.3: doctest failure in const.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2466
 
 Original creator: mabshoff
 

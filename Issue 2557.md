@@ -1,6 +1,6 @@
 # Issue 2557: dsage unit tests fail on linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2557
 
 Original creator: yi
 

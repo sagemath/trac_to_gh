@@ -1,6 +1,6 @@
 # Issue 3300: [with patch; needs review] ntl soname for Debian package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3300
 
 Original creator: tabbott
 

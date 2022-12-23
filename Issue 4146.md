@@ -1,6 +1,6 @@
 # Issue 4146: rgbcolor bug bites pdfs, casting to int solves it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4146
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 3283: [with patch, needs review] fix some memholes in PolyBoRi interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3283
 
 Original creator: malb
 

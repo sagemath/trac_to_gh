@@ -1,6 +1,6 @@
 # Issue 7739: Improvements to AGM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7739
 
 Original creator: robertwb
 

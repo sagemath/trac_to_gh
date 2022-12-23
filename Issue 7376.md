@@ -1,6 +1,6 @@
 # Issue 7376: searching published worksheets does not work to just search for username
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7376
 
 Original creator: jason
 
@@ -30,7 +30,7 @@ It seems this will work:
 diff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py
 --- a/sagenb/notebook/worksheet.py
 +++ b/sagenb/notebook/worksheet.py
-`@``@` -1973,7 +1973,7 `@``@` class Worksheet(object):
+@@ -1973,7 +1973,7 @@ class Worksheet(object):
          """
          # Load the worksheet data file from disk.
          filename = self.worksheet_html_filename()

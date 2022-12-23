@@ -1,6 +1,6 @@
 # Issue 2204: Integrate Karim Belabas's HNF bug fix for pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2204
 
 Original creator: mabshoff
 
@@ -12,10 +12,10 @@ Reported by William via the pari bug tracker:
 
 ```
 ---------- Forwarded message ----------
-From: Karim Belabas <Karim.Belabas`@`math.u-bordeaux1.fr>
+From: Karim Belabas <Karim.Belabas@math.u-bordeaux1.fr>
 Date: Feb 18, 2008 2:49 AM
 Subject: Re: Bug#741: Fwd: bug in PARI's mathnf function
-To: William Stein <wstein`@`gmail.com>, 741-close`@`pari.math.u-bordeaux.fr
+To: William Stein <wstein@gmail.com>, 741-close@pari.math.u-bordeaux.fr
 
 
 * William Stein [2008-02-16 23:47]:

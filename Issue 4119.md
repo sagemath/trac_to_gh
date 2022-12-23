@@ -1,6 +1,6 @@
 # Issue 4119: [with patch, needs review] doctests + fixes for SymbolicData interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4119
 
 Original creator: malb
 

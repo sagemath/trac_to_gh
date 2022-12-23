@@ -1,6 +1,6 @@
 # Issue 7244: Implement dicyclic groups as permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7244
 
 Original creator: rbeezer
 

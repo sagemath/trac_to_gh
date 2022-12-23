@@ -1,6 +1,6 @@
 # Issue 67: axiom -- write interfaces/axiom.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/67
 
 Original creator: was
 

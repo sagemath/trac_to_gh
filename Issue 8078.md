@@ -1,6 +1,6 @@
 # Issue 8078: Fix algsys in Maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8078
 
 Original creator: robert.marik
 
@@ -16,7 +16,7 @@ Sage with patch #7325 fails to solve some simple ineqaulitites
 
 ```
 sage: solve(x^4+2>0,x)
-[This is the Trac macro *x > -* that was inherited from the migration called with arguments (-1)^)](https://trac.sagemath.org/wiki/WikiMacros#x > --macro)
+[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]
 ```
 
 This should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).

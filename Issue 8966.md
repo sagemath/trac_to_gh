@@ -1,6 +1,6 @@
 # Issue 8966: Polynomial reduce causes segmentation fault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8966
 
 Original creator: mariah
 

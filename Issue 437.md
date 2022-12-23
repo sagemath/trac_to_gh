@@ -1,6 +1,6 @@
 # Issue 437: sage-2.8.1 -- notebook(secure=True) seems broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/437
 
 Original creator: was
 

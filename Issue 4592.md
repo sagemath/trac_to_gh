@@ -1,6 +1,6 @@
 # Issue 4592: new setup.py dependency checking does not handle Cython built-in pxd files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4592
 
 Original creator: cwitty
 

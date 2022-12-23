@@ -1,6 +1,6 @@
 # Issue 9564: libsingular exponentiation can not be interrupted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9564
 
 Original creator: SimonKing
 

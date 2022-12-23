@@ -1,6 +1,6 @@
 # Issue 6620: add a method to the Gap class to access elements of records
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6620
 
 Original creator: saliola
 

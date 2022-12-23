@@ -1,6 +1,6 @@
 # Issue 1178: flint in 2.8.12 fails on Solaris 10: u_int16_t undefined
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1178
 
 Original creator: mabshoff
 

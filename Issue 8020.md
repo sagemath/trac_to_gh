@@ -1,6 +1,6 @@
 # Issue 8020: python-2.6.4.p4 spkg *totally breaks* itanium support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8020
 
 Original creator: was
 

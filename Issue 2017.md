@@ -1,6 +1,6 @@
 # Issue 2017: crap -- singular includes surfex as a precompiled binary.  Remove it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2017
 
 Original creator: was
 

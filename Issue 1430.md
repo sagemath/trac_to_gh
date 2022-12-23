@@ -1,6 +1,6 @@
 # Issue 1430: [with spkg] sparse eigenvalues and splines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1430
 
 Original creator: jkantor
 

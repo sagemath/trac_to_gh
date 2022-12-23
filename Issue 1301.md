@@ -1,6 +1,6 @@
 # Issue 1301: nauty interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1301
 
 Original creator: jason
 

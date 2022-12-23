@@ -1,6 +1,6 @@
 # Issue 4239: [with patch, needs review] fix for problems with zero kernel and images
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4239
 
 Original creator: fwclarke
 

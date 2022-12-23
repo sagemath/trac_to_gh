@@ -1,6 +1,6 @@
 # Issue 6467: all primitive roots modulo n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6467
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 8389: Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8389
 
 Original creator: mmezzarobba
 

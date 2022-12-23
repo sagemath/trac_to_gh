@@ -1,6 +1,6 @@
 # Issue 531: strcpy issue in multi_polynomial_libsingular (from matrix/strassen.pyx) (another one ;))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/531
 
 Original creator: mabshoff
 

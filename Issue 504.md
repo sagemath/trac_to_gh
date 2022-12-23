@@ -1,6 +1,6 @@
 # Issue 504: make lie interface more robust
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/504
 
 Original creator: was
 

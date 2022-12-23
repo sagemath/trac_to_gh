@@ -1,6 +1,6 @@
 # Issue 2903: [with spkg + patch, needs review] make NTL error messages propagate to RuntimeError messages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2903
 
 Original creator: dmharvey
 

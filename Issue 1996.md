@@ -1,6 +1,6 @@
 # Issue 1996: [with patch, needs review] doctest failure on 2.10.1.rc3: libecm.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1996
 
 Original creator: craigcitro
 

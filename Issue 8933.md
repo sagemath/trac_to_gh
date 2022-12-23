@@ -1,6 +1,6 @@
 # Issue 8933: Add submodule and quotient in ModuleWithBasis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8933
 
 Original creator: hivert
 

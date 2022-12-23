@@ -1,6 +1,6 @@
 # Issue 324: NTL builds in 32-bit mode on G5 powerpc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/324
 
 Original creator: dmharvey
 

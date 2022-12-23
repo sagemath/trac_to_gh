@@ -1,6 +1,6 @@
 # Issue 8945: Cremona labels messed up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8945
 
 Original creator: davidloeffler
 

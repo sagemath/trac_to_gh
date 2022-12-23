@@ -1,6 +1,6 @@
 # Issue 256: auto cells not evaluated on restart
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/256
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 9726: An educational RSA crpytosystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9726
 
 Original creator: gauravluthra
 

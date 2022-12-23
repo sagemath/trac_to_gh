@@ -1,6 +1,6 @@
 # Issue 9789: corrections and ideas for enhancements of the Sage tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9790
 
 Original creator: phil
 

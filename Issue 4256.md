@@ -1,6 +1,6 @@
 # Issue 4256: [with patch, needs review] polyhedral improvements: Schlegel diagrams, standard 4d polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4256
 
 Original creator: mhampton
 
@@ -58,7 +58,7 @@ The ambient_dim function overwrites the content self._dim thus making dim() retu
 
 
 ```
-sage: p = Polyhedron(vertices = [This is the Trac macro *0,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0,1-macro))
+sage: p = Polyhedron(vertices = [[0,0,1]])
 sage: p.dim()
 0
 sage: p.ambiant_dim()

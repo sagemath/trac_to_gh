@@ -1,6 +1,6 @@
 # Issue 507: Bad error message when running a script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/507
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4525: [with patch, needs review] LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points())
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4525
 
 Original creator: cremona
 
@@ -176,7 +176,7 @@ OK, this looks good, but it introduces a *BUG*:
 We have in sage-3.2 released:
 
 ```
-was`@`sage:~/www/talks$ sage
+was@sage:~/www/talks$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2, Release Date: 2008-11-20                         |

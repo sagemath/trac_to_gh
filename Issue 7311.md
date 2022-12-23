@@ -1,6 +1,6 @@
 # Issue 7311: Change min/max arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7311
 
 Original creator: ncohen
 

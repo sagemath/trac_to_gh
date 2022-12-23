@@ -1,6 +1,6 @@
 # Issue 6292: Converting elements in AbelianGroup to gap element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6292
 
 Original creator: jlefebvre
 

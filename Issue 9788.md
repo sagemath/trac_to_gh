@@ -1,6 +1,6 @@
 # Issue 9788: Add support for degree bounds of Groebner bases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9789
 
 Original creator: mhansen
 

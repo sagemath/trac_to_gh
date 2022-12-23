@@ -1,6 +1,6 @@
 # Issue 1100: polynomial roots() method can return rational roots for polynomials over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1100
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 5160: Change name of misc/sagex_ds.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5160
 
 Original creator: kcrisman
 

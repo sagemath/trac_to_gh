@@ -1,6 +1,6 @@
 # Issue 2821: get rid of anything "about this document" sections of any sage docs that say "send email to stein"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2821
 
 Original creator: was
 

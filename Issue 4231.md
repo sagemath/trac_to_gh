@@ -1,6 +1,6 @@
 # Issue 4231: magma -- long input too verbose in some cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4231
 
 Original creator: was
 

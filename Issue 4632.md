@@ -1,6 +1,6 @@
 # Issue 4632: .roots(ring=QQbar) fails for polynomials with enormous (rational) coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4632
 
 Original creator: cwitty
 

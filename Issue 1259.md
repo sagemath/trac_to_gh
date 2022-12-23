@@ -1,6 +1,6 @@
 # Issue 1259: readline miscompiles on OSX 10.5.[1]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1259
 
 Original creator: mabshoff
 

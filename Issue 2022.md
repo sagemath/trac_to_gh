@@ -1,6 +1,6 @@
 # Issue 2022: [with patch] bug with load and loads when data is not compressed during save
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2022
 
 Original creator: was
 

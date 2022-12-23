@@ -1,6 +1,6 @@
 # Issue 1845: [with patch, spkg] list_plot3d should be able to accept lists of points in arbitrary positions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1845
 
 Original creator: jkantor
 

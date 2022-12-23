@@ -1,6 +1,6 @@
 # Issue 7862: singular creates some 32-bit and some 64-bit objects on Open Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7862
 
 Original creator: drkirkby
 

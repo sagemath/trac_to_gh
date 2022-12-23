@@ -1,6 +1,6 @@
 # Issue 2179: [with patch] implementation mpoly factoring with coefficients in ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2179
 
 Original creator: jbmohler
 

@@ -1,6 +1,6 @@
 # Issue 2805: Add maximal parameter to Graph genus computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2805
 
 Original creator: ekirkman
 

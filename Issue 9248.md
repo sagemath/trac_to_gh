@@ -1,6 +1,6 @@
 # Issue 9248: docstring for factorial doesn't say that it accepts non-integer, non-symbolic input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9248
 
 Original creator: ddrake
 

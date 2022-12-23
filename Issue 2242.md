@@ -1,6 +1,6 @@
 # Issue 2242: optional nauty package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2242
 
 Original creator: jason
 

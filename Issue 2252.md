@@ -1,6 +1,6 @@
 # Issue 2252: sage 2.10.2.rc0: rings/number_field/number_field_ideal.py failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2252
 
 Original creator: mabshoff
 

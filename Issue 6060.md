@@ -1,6 +1,6 @@
 # Issue 6060: divmod fails when one argument is Integer and the other is a Python int
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6060
 
 Original creator: fredrik.johansson
 

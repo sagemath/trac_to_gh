@@ -1,6 +1,6 @@
 # Issue 8454: notebook() docstring for accounts is wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8454
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 8099: pari fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8099
 
 Original creator: jsp
 
@@ -135,7 +135,7 @@ Building for architecture: ix86 running solaris (x86-64/GMP kernel) 64-bit versi
 The dynamic libraries are 64-bit:
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$  file local/lib/libpari*
+drkirkby@hawk:~/sage-4.3.1$  file local/lib/libpari*
 local/lib/libpari.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libpari-gmp.so.2:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libpari-gmp.so.2.3.3:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped

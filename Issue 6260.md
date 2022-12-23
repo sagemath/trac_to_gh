@@ -1,6 +1,6 @@
 # Issue 6260: sage -startuptime is totally broken in sage-4.0.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6260
 
 Original creator: was
 

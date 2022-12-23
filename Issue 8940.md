@@ -1,6 +1,6 @@
 # Issue 8940: doctest failures in sagedoc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8940
 
 Original creator: mvngu
 

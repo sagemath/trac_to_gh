@@ -1,6 +1,6 @@
 # Issue 5455: gap-4.4.12 -- broken on iras (itanium Linux)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5455
 
 Original creator: was
 

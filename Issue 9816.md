@@ -1,6 +1,6 @@
 # Issue 9816: blas uses non-POSIX option -p to uname. This causes problems on HP-UX.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9817
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9614: "-sdist" should complain or fail when run in a "-bdist" copy of Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9614
 
 Original creator: ddrake
 

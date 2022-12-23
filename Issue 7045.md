@@ -1,6 +1,6 @@
 # Issue 7045: [with spkg; needs review] update libgcrypt to the latest version 1.4.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7045
 
 Original creator: drkirkby
 

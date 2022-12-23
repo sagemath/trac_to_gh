@@ -1,6 +1,6 @@
 # Issue 2912: M4RI should be built with -O3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2912
 
 Original creator: malb
 

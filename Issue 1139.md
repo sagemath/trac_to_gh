@@ -1,6 +1,6 @@
 # Issue 1139: nintegral fails for large precision (version 2.8.12)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1139
 
 Original creator: zimmerma
 

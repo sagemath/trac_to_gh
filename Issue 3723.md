@@ -1,6 +1,6 @@
 # Issue 3723: alarm doesn't work with the factor command on os x (but control c does)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3723
 
 Original creator: was
 

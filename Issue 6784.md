@@ -1,6 +1,6 @@
 # Issue 6784: Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6784
 
 Original creator: drkirkby
 

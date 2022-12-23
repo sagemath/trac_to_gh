@@ -1,6 +1,6 @@
 # Issue 2642: doctest failure in polynomial_modn_dense_ntl.pyx: .small_roots()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2642
 
 Original creator: cwitty
 

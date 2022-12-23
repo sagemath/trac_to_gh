@@ -1,6 +1,6 @@
 # Issue 6027: get_memory_usage() sucks performance wise on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6027
 
 Original creator: mabshoff
 

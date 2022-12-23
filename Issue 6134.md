@@ -1,6 +1,6 @@
 # Issue 6134: [with patch, needs review] Fix SR coercion issue with numpy.float128
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6134
 
 Original creator: mhansen
 

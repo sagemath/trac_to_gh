@@ -1,6 +1,6 @@
 # Issue 1672: 2.9.2.alpha0: #1666 related plot3d doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1672
 
 Original creator: mabshoff
 

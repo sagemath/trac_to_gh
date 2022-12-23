@@ -1,6 +1,6 @@
 # Issue 3944: replace "sage -upgrade" by "sage -expert_upgrade" and upgrade() by "expert_upgrade()"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3944
 
 Original creator: was
 

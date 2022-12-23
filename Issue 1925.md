@@ -1,6 +1,6 @@
 # Issue 1925: unifying [plotobject].show() interface + tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1925
 
 Original creator: schilly
 

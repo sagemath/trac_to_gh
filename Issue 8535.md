@@ -1,6 +1,6 @@
 # Issue 8535: Various interval field improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8535
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 4117: number_field_* leaks caused by gen.pyx's type(gen self)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4117
 
 Original creator: mabshoff
 

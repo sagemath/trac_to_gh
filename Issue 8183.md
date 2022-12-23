@@ -1,6 +1,6 @@
 # Issue 8183: French PDF tutorial and tour don't build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8183
 
 Original creator: mpatel
 

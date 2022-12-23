@@ -1,6 +1,6 @@
 # Issue 1681: serious bug when raising complex(0,1) to the power of the Sage integer 2.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1681
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8475: Pickling of _python_object_alphabet is broken.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8475
 
 Original creator: hivert
 

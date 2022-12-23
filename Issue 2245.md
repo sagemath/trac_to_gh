@@ -1,6 +1,6 @@
 # Issue 2245: abvar -- increase the doctest coverage to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2245
 
 Original creator: was
 

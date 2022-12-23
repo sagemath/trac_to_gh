@@ -1,6 +1,6 @@
 # Issue 469: Integrate the PolyBoRi framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/469
 
 Original creator: malb
 
@@ -35,7 +35,7 @@ Alexander Dreyer did comment on the build time of PolyBoRi:
 
 ```
 The essential part of PolyBoRi (using the built-ininterface) can be
-built in about 3 minutes on a Intel(R) Xeon(R) CPU5148  `@` 2.33GHz
+built in about 3 minutes on a Intel(R) Xeon(R) CPU5148  @ 2.33GHz
 (using one cpu only). I'll try to find the corresponding scons
 commands for the spkg and the Sage-wrapper and give to to Burcin.
 

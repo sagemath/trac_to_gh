@@ -1,6 +1,6 @@
 # Issue 7695: naming of the variable in subfields of cyclotomic fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7695
 
 Original creator: wuthrich
 

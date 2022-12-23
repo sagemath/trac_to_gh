@@ -1,6 +1,6 @@
 # Issue 2460: some issues with factorization.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2460
 
 Original creator: was
 

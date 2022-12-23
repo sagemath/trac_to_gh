@@ -1,6 +1,6 @@
 # Issue 9619: b-coloring of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9619
 
 Original creator: lsampaio
 

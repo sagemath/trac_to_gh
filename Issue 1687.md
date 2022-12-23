@@ -1,6 +1,6 @@
 # Issue 1687: makefile program -- "make distclean" doesn't delete test.log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1687
 
 Original creator: was
 

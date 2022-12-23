@@ -1,6 +1,6 @@
 # Issue 115: study alternatives to PyType_IsSubtype
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/115
 
 Original creator: dmharvey
 

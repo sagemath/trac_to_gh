@@ -1,6 +1,6 @@
 # Issue 899: minor error in inst.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/899
 
 Original creator: wdj
 

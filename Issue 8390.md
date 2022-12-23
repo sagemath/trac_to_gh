@@ -1,6 +1,6 @@
 # Issue 8390: Find all roots of a trigonometric equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8390
 
 Original creator: olazo
 
@@ -55,7 +55,7 @@ For our equation, solve command in Maxima gives only one solution pi/6 (and prob
 
 
 ```
-[marik`@`um-bc107 /opt/sage]$ ./sage
+[marik@um-bc107 /opt/sage]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: eq = sin(2*x-pi/6) == 1/2
@@ -89,7 +89,7 @@ temporary patch:
 diff -r 799f70320d89 sage/symbolic/expression.pyx
 --- a/sage/symbolic/expression.pyx      Thu Feb 11 09:03:17 2010 -0800
 +++ b/sage/symbolic/expression.pyx      Sun Feb 28 16:16:33 2010 +0100
-`@``@` -6501,7 +6501,7 `@``@`
+@@ -6501,7 +6501,7 @@
          # solutions being returned.                            #
          ########################################################
          if to_poly_solve and not multiplicities:
@@ -104,7 +104,7 @@ diff -r 799f70320d89 sage/symbolic/expression.pyx
 allows this
 
 ```
-[marik`@`taxus ../sage-4.3.3.alpha0]$ ./sage
+[marik@taxus ../sage-4.3.3.alpha0]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

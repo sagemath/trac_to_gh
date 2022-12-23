@@ -1,6 +1,6 @@
 # Issue 4056: tab completion does not work in Google Chrome
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4056
 
 Original creator: ddrake
 

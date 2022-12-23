@@ -1,6 +1,6 @@
 # Issue 4385: Sage 3.1.4: optional doctest failure in sage/rings/polynomial/multi_polynomial.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4385
 
 Original creator: mabshoff
 

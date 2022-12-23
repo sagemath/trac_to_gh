@@ -1,6 +1,6 @@
 # Issue 7897: Macaulay2 interface update/improvement for version 1.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7897
 
 Original creator: novoselt
 

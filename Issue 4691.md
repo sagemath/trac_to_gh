@@ -1,6 +1,6 @@
 # Issue 4691: Minor docstring change for timeout on notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4691
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 6409: srange inconsistent when including endpoints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6409
 
 Original creator: malb
 

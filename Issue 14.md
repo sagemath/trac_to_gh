@@ -1,6 +1,6 @@
 # Issue 14: SAGE notebook freeze's firefox windows client when jsmath enabled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/14
 
 Original creator: was
 

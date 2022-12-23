@@ -1,6 +1,6 @@
 # Issue 249: possible optimization opportunity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/249
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4967: [with patch] Trouble with .gaprc file when compiling from source
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4967
 
 Original creator: mmeulien
 

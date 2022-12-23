@@ -1,6 +1,6 @@
 # Issue 9813: Improve creation time for p-adic elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9814
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 5376: [with patch, needs review] minor problems with ReST in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5376
 
 Original creator: jhpalmieri
 

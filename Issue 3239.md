@@ -1,6 +1,6 @@
 # Issue 3239: [with patch; needs review] cygwin polybori -- add Cygwin build support for polybori
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3239
 
 Original creator: was
 

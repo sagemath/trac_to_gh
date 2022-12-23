@@ -1,6 +1,6 @@
 # Issue 7496: symbolic variable names should be valid identifiers, or ridiculousness follows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7496
 
 Original creator: was
 

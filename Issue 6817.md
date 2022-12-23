@@ -1,6 +1,6 @@
 # Issue 6817: [with SPKG, needs review] GLPK for Sage, new version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6817
 
 Original creator: ncohen
 

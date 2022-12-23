@@ -1,6 +1,6 @@
 # Issue 3109: elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3109
 
 Original creator: was
 

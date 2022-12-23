@@ -1,6 +1,6 @@
 # Issue 9468: Extend ClasscallMetaclass to allow for membership testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9468
 
 Original creator: nthiery
 
@@ -31,7 +31,7 @@ From the doc:
             sage: from sage.misc.classcall_metaclass import ClasscallMetaclass
             sage: class Foo(object):
             ...       __metaclass__ = ClasscallMetaclass
-            ...       `@`staticmethod
+            ...       @staticmethod
             ...       def __classcontains__(cls, x):
             ...           return x == 1
             sage: 1 in Foo

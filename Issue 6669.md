@@ -1,6 +1,6 @@
 # Issue 6669: Homomorphisms from matrix groups don't have to have matrix groups as codomain
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6669
 
 Original creator: mraum
 

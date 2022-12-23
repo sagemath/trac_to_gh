@@ -1,6 +1,6 @@
 # Issue 8213: [meta] the "Sage developer trac" banner should link to trac.sagemath.org, not sagemath.org
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8213
 
 Original creator: ddrake
 

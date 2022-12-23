@@ -1,6 +1,6 @@
 # Issue 119: Polynomail abstract class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/119
 
 Original creator: burhanud
 
@@ -135,7 +135,7 @@ Solution: Polynomial should not be called by user code (for efficiency reasons) 
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168655204 28800
 # Node ID e02fb8a03726a1143fbe6a3919c38b8f55d7389e
 # Parent  86ad31ae2e4abe1ce83b5f6cb0ee9a2dc263a1c8
@@ -144,7 +144,7 @@ Address trac #119 -- Polynomial(blah)
 diff -r 86ad31ae2e4a -r e02fb8a03726 sage/groups/perm_gps/permgroup_element.py
 --- a/sage/groups/perm_gps/permgroup_element.py Fri Jan 12 17:43:31 2007 -0800
 +++ b/sage/groups/perm_gps/permgroup_element.py Fri Jan 12 18:26:44 2007 -0800
-`@``@` -47,7 +47,7 `@``@` import sage.structure.element as element
+@@ -47,7 +47,7 @@ import sage.structure.element as element
  import sage.structure.element as element
  import sage.groups.group as group
  
@@ -153,7 +153,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/groups/perm_gps/permgroup_element.py
  from sage.matrix.all     import MatrixSpace
  from sage.interfaces.all import gap, is_GapElement, is_ExpectElement
  
-`@``@` -353,7 +353,7 `@``@` class PermutationGroupElement(element.Mu
+@@ -353,7 +353,7 @@ class PermutationGroupElement(element.Mu
              sage: (f*sigma)*tau
              u^2 + z^2 - y^2 + 2*x^2            
          """
@@ -165,7 +165,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/groups/perm_gps/permgroup_element.py
 diff -r 86ad31ae2e4a -r e02fb8a03726 sage/rings/all.py
 --- a/sage/rings/all.py Fri Jan 12 17:43:31 2007 -0800
 +++ b/sage/rings/all.py Fri Jan 12 18:26:44 2007 -0800
-`@``@` -92,7 +92,7 `@``@` from complex_double import ComplexDouble
+@@ -92,7 +92,7 @@ from complex_double import ComplexDouble
  
  # Univariate Polynomial Rings
  from polynomial_ring import PolynomialRing, polygen, polygens, is_PolynomialRing
@@ -177,7 +177,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/rings/all.py
 diff -r 86ad31ae2e4a -r e02fb8a03726 sage/rings/number_field/number_field.py
 --- a/sage/rings/number_field/number_field.py   Fri Jan 12 17:43:31 2007 -0800
 +++ b/sage/rings/number_field/number_field.py   Fri Jan 12 18:26:44 2007 -0800
-`@``@` -216,7 +216,7 `@``@` class NumberField_generic(field.Field):
+@@ -216,7 +216,7 @@ class NumberField_generic(field.Field):
              sage: k.<a> = NumberField(f)
              sage: v = k.complex_embeddings()
              sage: [phi(k.0^2) for phi in v]
@@ -189,7 +189,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/rings/number_field/number_field.py
 diff -r 86ad31ae2e4a -r e02fb8a03726 sage/schemes/elliptic_curves/monsky_washnitzer.py
 --- a/sage/schemes/elliptic_curves/monsky_washnitzer.py Fri Jan 12 17:43:31 2007 -0800
 +++ b/sage/schemes/elliptic_curves/monsky_washnitzer.py Fri Jan 12 18:26:44 2007 -0800
-`@``@` -33,7 +33,7 `@``@` AUTHORS:
+@@ -33,7 +33,7 @@ AUTHORS:
  #*****************************************************************************
  
  
@@ -198,7 +198,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/schemes/elliptic_curves/monsky_washnit
  from sage.matrix.all import matrix
  from sage.rings.ring import CommutativeAlgebra
  from sage.structure.element import CommutativeAlgebraElement
-`@``@` -111,7 +111,7 `@``@` class SpecialCubicQuotientRing(Commutati
+@@ -111,7 +111,7 @@ class SpecialCubicQuotientRing(Commutati
          Q -- a polynomial of the form Q(x) = x^3 + ax + b, where a, b
               belong to a ring in which 2, 3 are invertible.
      """
@@ -210,7 +210,7 @@ diff -r 86ad31ae2e4a -r e02fb8a03726 sage/schemes/elliptic_curves/monsky_washnit
 diff -r 86ad31ae2e4a -r e02fb8a03726 sage/schemes/hyperelliptic_curves/constructor.py
 --- a/sage/schemes/hyperelliptic_curves/constructor.py  Fri Jan 12 17:43:31 2007 -0800
 +++ b/sage/schemes/hyperelliptic_curves/constructor.py  Fri Jan 12 18:26:44 2007 -0800
-`@``@` -17,14 +17,14 `@``@` from hyperelliptic_g2_finite_field impor
+@@ -17,14 +17,14 @@ from hyperelliptic_g2_finite_field impor
  from hyperelliptic_g2_finite_field import HyperellipticCurve_g2_finite_field
  from hyperelliptic_g2_rational_field import HyperellipticCurve_g2_rational_field
  

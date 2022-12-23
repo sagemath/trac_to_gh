@@ -1,6 +1,6 @@
 # Issue 4537: inverse_mod for number field ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4537
 
 Original creator: davidloeffler
 

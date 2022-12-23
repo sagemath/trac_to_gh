@@ -1,6 +1,6 @@
 # Issue 543: include Chris Gorecki's very basic symbolic logic functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/543
 
 Original creator: was
 

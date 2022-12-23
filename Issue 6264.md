@@ -1,6 +1,6 @@
 # Issue 6264: ReST bug introduced by #5452 (missing '::' before a sage block)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6264
 
 Original creator: slabbe
 

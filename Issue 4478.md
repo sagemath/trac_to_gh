@@ -1,6 +1,6 @@
 # Issue 4478: delete spkg-debian-maybe
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4478
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: tabbott
 How can this file be serious?
 
 ```
-wstein`@`one:~/devel/sage$ more spkg-debian-maybe
+wstein@one:~/devel/sage$ more spkg-debian-maybe
 #!/bin/sh -x
 BUILD_ROOT=../../../
 mv dist/debian $BUILD_ROOT

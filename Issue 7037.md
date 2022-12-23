@@ -1,6 +1,6 @@
 # Issue 7037: libm4ri thinks the C compiler is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7037
 
 Original creator: drkirkby
 
@@ -64,7 +64,7 @@ Sorry must go now.
 
 
 ```
-drkirkby`@`swan:[~/sage-4.2] $ egrep "checking whether we are using the GNU C compiler|checking whether the C compiler works|checking for gcc|checking for C compiler default output file" install.log
+drkirkby@swan:[~/sage-4.2] $ egrep "checking whether we are using the GNU C compiler|checking whether the C compiler works|checking for gcc|checking for C compiler default output file" install.log
 checking for gcc... /opt/xxxsunstudio12.1/bin/cc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes

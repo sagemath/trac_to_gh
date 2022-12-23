@@ -1,6 +1,6 @@
 # Issue 3227: add 64 bit OSX build support for tachyon
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3227
 
 Original creator: mabshoff
 

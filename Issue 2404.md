@@ -1,6 +1,6 @@
 # Issue 2404: subs_expr claims to take a dictionary, but doesn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2404
 
 Original creator: ddrake
 

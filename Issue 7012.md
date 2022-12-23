@@ -1,6 +1,6 @@
 # Issue 7012: clean up sage/numerical/mip.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7012
 
 Original creator: mvngu
 
@@ -210,7 +210,7 @@ Attachment
 Applying the patch `trac_7012.patch` results in a hunk failure:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush
 adding trac_7012.patch to series file
 applying trac_7012.patch
 patching file sage/numerical/knapsack.py
@@ -224,10 +224,10 @@ Errors during apply, please fix and refresh trac_7012.patch
 The hunk in question is:
 
 ```
-[mvngu`@`sage sage-main]$ cat sage/numerical/knapsack.py.rej
+[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej
 --- knapsack.py
 +++ knapsack.py
-`@``@` -641,16 +641,16 `@``@`
+@@ -641,16 +641,16 @@
      if reals:
          seq=[(x,1) for x in seq]
  
@@ -342,7 +342,7 @@ I applied patches against Sage 4.2.alpha0 in the following order:
 These two patches touch modules under `sage/numerical`. All doctests under this directory pass with the two patches. Doctesting the whole Sage library results in the following failure:
 
 ```
-[mvngu`@`sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx
+[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx
 sage -t -long "devel/sage-main/sage/modules/vector_real_double_dense.pyx"
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [3.1 s]

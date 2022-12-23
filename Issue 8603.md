@@ -1,6 +1,6 @@
 # Issue 8603: Partial sums are off for Fourier series of piecewise functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8603
 
 Original creator: novoselt
 
@@ -13,7 +13,7 @@ CC:  wdj jason jondo kcrisman vbraun slelievre mkoeppe eviatarbach rws novoselt
 Doing
 
 ```
-f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (-pi, pi), x)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+f = Piecewise([[(-pi, pi), x]])
 print f.fourier_series_partial_sum(2, pi)
 print f.fourier_series_partial_sum(3, pi)
 ```
@@ -43,7 +43,7 @@ This is still true, and syntax is also deprecated.
 
 ```
 
-sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (-pi, pi), x)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = Piecewise([[(-pi, pi), x]])
 sage: print f.fourier_series_partial_sum(2, pi)
 /Applications/MathApps/sage/local/lib/python2.6/site-packages/sage/functions/piecewise.py:1095: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)
   a0 = self.fourier_series_cosine_coefficient(0,L)
@@ -184,7 +184,7 @@ This is fixed by #23672.
 Regarding the example in the ticket description, in Sage 8.1.beta4, we have now
 
 ```
-sage: f = piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (-pi, pi), x)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = piecewise([[(-pi, pi), x]])
 sage: f.fourier_series_partial_sum(2, pi)
 -sin(2*x) + 2*sin(x)
 ```

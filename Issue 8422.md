@@ -1,6 +1,6 @@
 # Issue 8422: ChainPoset in broken for small input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8422
 
 Original creator: hivert
 

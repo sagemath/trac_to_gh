@@ -1,6 +1,6 @@
 # Issue 5245: treat truncated HTML intelligently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5245
 
 Original creator: schilly
 

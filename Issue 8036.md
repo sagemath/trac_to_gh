@@ -1,6 +1,6 @@
 # Issue 8036: Sage 4.3.1 reference manual: PDF version failed to build due to non-ASCII characters in docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8036
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5823: Update clisp to 2.47 and introduce noreadline mode dynammically for clisp and maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5823
 
 Original creator: mabshoff
 
@@ -61,7 +61,7 @@ Comment by tornaria created at 2009-04-19 14:06:52
 The `clisp-noreadline` script looks ok. The `maxima-noreadline` script, however, has a path issue:
 
 ```
-tornaria`@`sage2:~/sage-3.4$ SAGE_ROOT=~/sage-3.4 local/bin/maxima-noreadline 
+tornaria@sage2:~/sage-3.4$ SAGE_ROOT=~/sage-3.4 local/bin/maxima-noreadline 
 local/bin/maxima-noreadline: line 3: maxima: command not found
 ```
 
@@ -69,7 +69,7 @@ Maybe the `maxima-noreadline` script should be changed by
 
 ```/bin/sh
 SAGE_CLISP_DISABLE_READLINE_HACK="yes"; export SAGE_CLISP_DISABLE_READLINE_HACK
-"$SAGE_ROOT/maxima" "$`@`"
+"$SAGE_ROOT/maxima" "$@"
 ```
 
 
@@ -86,7 +86,7 @@ Actually, shouldn't the scripts be something like:
 
 ```/bin/sh
 SAGE_CLISP_DISABLE_READLINE_HACK="yes"; export SAGE_CLISP_DISABLE_READLINE_HACK
-exec "$SAGE_ROOT/maxima" "$`@`"
+exec "$SAGE_ROOT/maxima" "$@"
 ```
 
 i.e. use `exec` so that we can avoid the (unnecessary) fork?
@@ -114,17 +114,17 @@ Comment by mabshoff created at 2009-04-19 15:21:09
 To be more precise about --disable-readline:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ ./sage -sh
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ which clisp
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ which clisp
 /scratch/mabshoff/sage-3.4.1.rc4/local/bin/clisp
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ which maxima
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ which maxima
 /scratch/mabshoff/sage-3.4.1.rc4/local/bin/maxima
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ clisp
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ clisp
   i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
   I I I I I I I      8     8   8           8     8     o  8    8
   I  \ `+' /  I      8         8           8     8        8    8
@@ -145,17 +145,17 @@ Type :h and hit Enter for context help.
 
 [1]> 
 Bye.
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ clisp --disable-readline
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ clisp --disable-readline
 GNU CLISP: invalid argument: '--disable-readline'
 GNU CLISP: use '-h' for help
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ maxima
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ maxima
 Maxima 5.16.3 http://maxima.sourceforge.net
 Using Lisp CLISP 2.46 (2008-07-02)
 Distributed under the GNU Public License. See the file COPYING.
 Dedicated to the memory of William Schelter.
 The function bug_report() provides bug reporting information.
 (%i1) 
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc4$ maxima --disable-readline
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc4$ maxima --disable-readline
 Maxima 5.16.3 http://maxima.sourceforge.net
 Using Lisp CLISP 2.46 (2008-07-02)
 Distributed under the GNU Public License. See the file COPYING.
@@ -212,7 +212,7 @@ Here's the patch to `maxima.in` (maxima script) to support `--disable-readline` 
 $ cat maxima-5.16.3.p1/patches/maxima.in.patch
 --- src/src/maxima.in   2008-08-10 10:41:15.000000000 -0700
 +++ patches/maxima.in   2009-04-05 21:40:50.009173050 -0700
-`@``@` -76,6 +76,7 `@``@`
+@@ -76,6 +76,7 @@
  arg9=$9
  while [ -n "$1" ]; do
      case $1 in 
@@ -231,7 +231,7 @@ $ cat clisp-2.46.p9/patches/clisp.sh
 case $1 in
     --disable-readline ) export SAGE_CLISP_DISABLE_READLINE_HACK=1 ; shift ;;
 esac
-exec "$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" "$`@`"
+exec "$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" "$@"
 ```
 
 

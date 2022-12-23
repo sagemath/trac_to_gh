@@ -1,6 +1,6 @@
 # Issue 9953: f_vector outputs an extra top-dimensional cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9954
 
 Original creator: schilly
 

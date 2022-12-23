@@ -1,6 +1,6 @@
 # Issue 1163: assume seems to have some undesired side-effects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1163
 
 Original creator: zimmerma
 

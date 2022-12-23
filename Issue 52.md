@@ -1,6 +1,6 @@
 # Issue 52: O(5) prints as "0"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/52
 
 Original creator: dmharvey
 

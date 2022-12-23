@@ -1,6 +1,6 @@
 # Issue 4990: [with code, needs work] Add code to compute Hilber class polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4990
 
 Original creator: mabshoff
 

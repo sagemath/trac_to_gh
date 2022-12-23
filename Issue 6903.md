@@ -1,6 +1,6 @@
 # Issue 6903: Function Word currently prevent the inheritance of Words_over_OrderedAlphabet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6903
 
 Original creator: slabbe
 

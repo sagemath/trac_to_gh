@@ -1,6 +1,6 @@
 # Issue 7371: rename quotient_group() to quotient() in groups/perm_gps/permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7371
 
 Original creator: AlexGhitza
 

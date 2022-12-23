@@ -1,6 +1,6 @@
 # Issue 6217: [with patch, needs review] fix issues with sorting in formal_sum
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6217
 
 Original creator: mhansen
 

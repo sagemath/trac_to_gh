@@ -1,6 +1,6 @@
 # Issue 2281: elliptic_curve_finite_field: order caching problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2281
 
 Original creator: cremona
 

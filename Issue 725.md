@@ -1,6 +1,6 @@
 # Issue 725: memleak in initialization of diagonal Matrix_integer_dense objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/725
 
 Original creator: burcin
 

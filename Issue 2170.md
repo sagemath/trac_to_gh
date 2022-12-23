@@ -1,6 +1,6 @@
 # Issue 2170: sage's integer.pyx digits function sucks in the base 10 case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2170
 
 Original creator: was
 

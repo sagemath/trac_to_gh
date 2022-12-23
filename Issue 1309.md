@@ -1,6 +1,6 @@
 # Issue 1309: [graphs] generate trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1309
 
 Original creator: jason
 

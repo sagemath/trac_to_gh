@@ -1,6 +1,6 @@
 # Issue 762: Elliptic curve L-series bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/762
 
 Original creator: was
 

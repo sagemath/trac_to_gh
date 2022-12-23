@@ -1,6 +1,6 @@
 # Issue 1086: Enumeration of totally real fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1086
 
 Original creator: jvoight
 

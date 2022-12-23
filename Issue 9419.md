@@ -1,6 +1,6 @@
 # Issue 9419: Update Developers Guide to state how patches should be made.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9419
 
 Original creator: drkirkby
 
@@ -436,7 +436,7 @@ diff -u src/configure src-patched/configure > patches/configure.patch
 ----
 Otherwise, here are things that need to be reviewed that I don't feel comfortable doing, though I'm sure they are right.
  * the argument about `diff -u` versus `diff -Naur`
- * the `[This is the Trac macro *-z "$SAGE_LOCAL" * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-z "$SAGE_LOCAL" -macro)` change 
+ * the `[[ -z "$SAGE_LOCAL" ]]` change 
  * Changing to `--` instead of `-` for options to commands, like `sage --pkg`.
  * `cp -pR`
  * `patch -p1 <"$patch"` versus `patch -p1 < "$patch"` (the latter is probably just my imagination, but I know that shell script cares about spaces at times) and in general verifying that that is the correct syntax, though I'm sure it is based on seeing various of Leif's spkgs
@@ -523,7 +523,7 @@ I also did a _lot_ of reading of man pages and searches, and the shell stuff che
 Last question (but positive review!) - why
 
 ```
-[This is the Trac macro *-z "$SAGE_LOCAL" * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-z "$SAGE_LOCAL" -macro)
+[[ -z "$SAGE_LOCAL" ]]
 ```
 
 and not 

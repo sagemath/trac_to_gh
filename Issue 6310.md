@@ -1,6 +1,6 @@
 # Issue 6310: optional doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6310
 
 Original creator: was
 

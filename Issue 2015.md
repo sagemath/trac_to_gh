@@ -1,6 +1,6 @@
 # Issue 2015: crap -- twisted contains a bunch of ._ osx crap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2015
 
 Original creator: was
 

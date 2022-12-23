@@ -1,6 +1,6 @@
 # Issue 2895: [with patch, needs review] add support for Laurent polynomials in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2895
 
 Original creator: mhansen
 

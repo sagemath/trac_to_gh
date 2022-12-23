@@ -1,6 +1,6 @@
 # Issue 7557: conversion of complex numbers in symbolic expressions to maxima broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7557
 
 Original creator: burcin
 
@@ -144,12 +144,12 @@ Am I testing this correctly? I don't see any change:
 
 
 ```
-0 jan`@`osprey:~/sage/sage-5.4/devel$hg qpush 
+0 jan@osprey:~/sage/sage-5.4/devel$hg qpush 
 applying trac_7557-maxima_complex_number_conversion.patch
 now at: trac_7557-maxima_complex_number_conversion.patch
-0 jan`@`osprey:~/sage/sage-5.4/devel$hg qapplied
+0 jan@osprey:~/sage/sage-5.4/devel$hg qapplied
 trac_7557-maxima_complex_number_conversion.patch
-0 jan`@`osprey:~/sage/sage-5.4/devel$mysage -b complexbug
+0 jan@osprey:~/sage/sage-5.4/devel$mysage -b complexbug
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -176,7 +176,7 @@ Writing /home/jan/sage/sage-5.4/local/lib/python2.7/site-packages/sage-0.0.0-py2
 real	0m1.531s
 user	0m1.112s
 sys	0m0.240s
-0 jan`@`osprey:~/sage/sage-5.4/devel$mysage
+0 jan@osprey:~/sage/sage-5.4/devel$mysage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ^[[ALoading Sage library. Current Mercurial branch is: complexbug

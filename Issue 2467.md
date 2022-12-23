@@ -1,6 +1,6 @@
 # Issue 2467: sage-2.10.3: failures in tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2467
 
 Original creator: was
 

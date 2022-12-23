@@ -1,6 +1,6 @@
 # Issue 7531: Python interface to M4RI's LQUP function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7531
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7338: Singular fails to build on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7338
 
 Original creator: mhansen
 
@@ -17,9 +17,9 @@ It fails with
   Info: resolving vtable for std::basic_ofstream<char, std::char_traits<char> > by linking to __imp___ZTVSt14basic_ofstreamIcSt11char_traitsIcEE (auto-import/usr/lib/gcc/i686-pc-cygwin/4.3.2/../../../../i686-pc-cygwin/bin/ld: warning: auto-importing has been activated without --enable-auto-import specified on the command line.
   This should work unless it involves constant data structures referencing symbols from auto-imported DLLs.Warning: .drectve `-defaultlib:uuid.lib ' unrecognized
   Warning: .drectve `-defaultlib:uuid.lib ' unrecognized
-  Cannot export ??_C`@`_00A`@`?$AA`@`: symbol not found
-  Cannot export ?pHtmlHelpA`@``@`3P6GPAUHWND__`@``@`PAU1`@`PBDIK`@`ZA: symbol not found
-  Cannot export ?pHtmlHelpW`@``@`3P6GPAUHWND__`@``@`PAU1`@`PBGIK`@`ZA: symbol not found
+  Cannot export ??_C@_00A@?$AA@: symbol not found
+  Cannot export ?pHtmlHelpA@@3P6GPAUHWND__@@PAU1@PBDIK@ZA: symbol not found
+  Cannot export ?pHtmlHelpW@@3P6GPAUHWND__@@PAU1@PBGIK@ZA: symbol not found
   collect2: ld returned 1 exit status
   )
   make[3]: *** [libsingular] Error 1
@@ -105,7 +105,7 @@ Comment by was created at 2010-02-14 21:32:09
 OK, with the above fix rolled into the new spkg at http://sage.math.washington.edu/home/wstein/ports/cygwin/singular-3-1-0-4-20100214.spkg this now builds fine on Cygwin, and 
 
 ```
-wstein`@`winxp ~/build/sage-4.3.3.alpha0
+wstein@winxp ~/build/sage-4.3.3.alpha0
 $ ./sage -singular
 // ** Could not get Singular.
 // ** Either set environment variable SINGULAR_EXECUTABLE to Singular,

@@ -1,6 +1,6 @@
 # Issue 4711: fix ptest race condition: "file not found"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4711
 
 Original creator: mabshoff
 

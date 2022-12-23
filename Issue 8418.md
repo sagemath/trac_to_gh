@@ -1,6 +1,6 @@
 # Issue 8418: Reduced Rauzy graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8418
 
 Original creator: jleroy
 

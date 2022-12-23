@@ -1,6 +1,6 @@
 # Issue 8467: move the document "Linear Programming in Sage" to "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8467
 
 Original creator: mvngu
 

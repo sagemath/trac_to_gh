@@ -1,6 +1,6 @@
 # Issue 8240: cannot coerce p-adic field into residue field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8240
 
 Original creator: dmharvey
 

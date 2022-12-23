@@ -1,6 +1,6 @@
 # Issue 403: polymake deadlocks from popen3 call
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/403
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 9457: power series comparison should use padded_list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9457
 
 Original creator: niles
 

@@ -1,6 +1,6 @@
 # Issue 1105: [with patch] static memory leak in libSingular interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1105
 
 Original creator: malb
 

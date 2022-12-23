@@ -1,6 +1,6 @@
 # Issue 3510: sage charpoly woefully slower than Mma's for small integer matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3510
 
 Original creator: jason
 
@@ -16,7 +16,7 @@ This timing difference ought to be fixed...
 ```
 sage: mathematica("time[expr_, reps_] := Timing[Do[ClearSystemCache[]; expr;, >
 Null
-sage: mathematica("time[expr_, reps_] := Timing[Do[ClearSystemCache[]; expr;, {reps}]][This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)/reps")                                                              
+sage: mathematica("time[expr_, reps_] := Timing[Do[ClearSystemCache[]; expr;, {reps}]][[1]]/reps")                                                              
 Null
 sage: mathematica("SetAttributes[time, HoldFirst]")                                                                                              
 Null

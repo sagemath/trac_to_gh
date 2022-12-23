@@ -1,6 +1,6 @@
 # Issue 8030: Strong generating system work only for transitive group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8030
 
 Original creator: nborie
 
@@ -16,7 +16,7 @@ The method from Gap work only for transitive group.
 
 
 ```
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (3,4))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(3,4)]])
 sage: G.strong_generating_system()
 [[()], [()], [()], [()]]
 sage: G.strong_generating_system(base_of_group=[3,1,2,4])

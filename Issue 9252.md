@@ -1,6 +1,6 @@
 # Issue 9252: documentation errors in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9252
 
 Original creator: wjlaffin
 

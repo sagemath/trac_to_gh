@@ -1,6 +1,6 @@
 # Issue 7880: Category of sets with partial maps.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7880
 
 Original creator: robertwb
 

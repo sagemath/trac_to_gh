@@ -1,6 +1,6 @@
 # Issue 1468: notebook -- create a global option so that word wrap is on or off by default always
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1468
 
 Original creator: was
 

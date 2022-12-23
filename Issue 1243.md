@@ -1,6 +1,6 @@
 # Issue 1243: Minor spelling mistakes in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1243
 
 Original creator: ljpk
 

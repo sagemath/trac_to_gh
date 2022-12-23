@@ -1,6 +1,6 @@
 # Issue 3636: Text control, no label
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3636
 
 Original creator: itolkov
 
@@ -12,7 +12,7 @@ Allows adding text among the controls:
 
 
 ```
-`@`interact
+@interact
 def _(t1=text_control("Factors an integer."), n="1"):
     print factor(Integer(n))
 ```

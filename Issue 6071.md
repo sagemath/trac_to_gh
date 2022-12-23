@@ -1,6 +1,6 @@
 # Issue 6071: Weight 1 Eisenstein series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6071
 
 Original creator: davidloeffler
 

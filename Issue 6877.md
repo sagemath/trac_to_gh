@@ -1,6 +1,6 @@
 # Issue 6877: Boolean function for crypto, small bugfixes and improvement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6877
 
 Original creator: ylchapuy
 

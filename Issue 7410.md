@@ -1,6 +1,6 @@
 # Issue 7410: Strings sometimes truncated in notebook mode.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7410
 
 Original creator: AJonsson
 
@@ -20,8 +20,8 @@ print G.graph6_string()
 We expect this to print the same string two times, but when this code is evaluated in the notebook, this is what is printed:
 
 ```
-QhCGGC`@`_A?c`@`C`@`A?__GC`@`?OC?_G
-QhCGGC`@`_A?c`@`C`@`A?__GC`@`?OC?
+QhCGGC@_A?c@C@A?__GC@?OC?_G
+QhCGGC@_A?c@C@A?__GC@?OC?
 ```
 
 The former is the correct answer, the latter removes the last two characters for some reason.

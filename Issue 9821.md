@@ -1,6 +1,6 @@
 # Issue 9821: Cookies are still causing problems in SageNB (Safari)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9822
 
 Original creator: timdumol
 

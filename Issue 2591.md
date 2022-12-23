@@ -1,6 +1,6 @@
 # Issue 2591: too much printing on sage -br
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2591
 
 Original creator: craigcitro
 

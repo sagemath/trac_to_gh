@@ -1,6 +1,6 @@
 # Issue 1505: make M4RI a shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1505
 
 Original creator: malb
 

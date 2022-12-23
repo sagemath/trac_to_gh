@@ -1,6 +1,6 @@
 # Issue 7787: Use a javascript minifier instead of a packer for sagenb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7787
 
 Original creator: timdumol
 

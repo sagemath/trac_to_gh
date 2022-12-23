@@ -1,6 +1,6 @@
 # Issue 5488: optional polymake package fails to build on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5488
 
 Original creator: was
 
@@ -36,7 +36,7 @@ in order to set all environment variables correctly, then cd to
 /Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5
 (When you are done debugging, you can type "exit" to leave the
 subshell.)
-was`@`bsd:~/build/sage-3.4.rc0$ 
+was@bsd:~/build/sage-3.4.rc0$ 
 ```
 
 
@@ -90,7 +90,7 @@ Comment by benjaminfjones created at 2012-05-26 05:40:58
 On a system where `config.h` can be found, polymake still fails to build:
 
 ```
-jonesbe`@`sage:~/sage/sage-5.0$ ./sage -f tmp/polymake-2.2.p6.spkg Calling sage-spkg on 'tmp/polymake-2.2.p6.spkg'polymake-2.2.p6====================================================Extracting package /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg-rw-r--r-- 1 jonesbe jonesbe 1502253 May 26 00:30 /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg
+jonesbe@sage:~/sage/sage-5.0$ ./sage -f tmp/polymake-2.2.p6.spkg Calling sage-spkg on 'tmp/polymake-2.2.p6.spkg'polymake-2.2.p6====================================================Extracting package /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg-rw-r--r-- 1 jonesbe jonesbe 1502253 May 26 00:30 /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg
 Finished extraction
 ****************************************************
 Host system:

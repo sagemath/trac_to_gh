@@ -1,6 +1,6 @@
 # Issue 8695: UniqueRepresentations implements __eq__ but not __ne__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8695
 
 Original creator: hivert
 

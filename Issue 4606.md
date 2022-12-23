@@ -1,6 +1,6 @@
 # Issue 4606: elliptic curves -- implement gross-Zagier L-functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4606
 
 Original creator: robertwb
 

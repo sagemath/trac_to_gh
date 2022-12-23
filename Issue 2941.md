@@ -1,6 +1,6 @@
 # Issue 2941: sympy spkg updated + a test patch for Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2941
 
 Original creator: certik
 
@@ -99,7 +99,7 @@ The patch got screwed up, so again:
 diff -r 029e5541f507 -r 2111fce6f538 spkg-install
 --- a/spkg-install	Wed Apr 16 11:28:19 2008 +0200
 +++ b/spkg-install	Wed Apr 16 13:44:47 2008 +0200
-`@``@` -1,4 +1,14 `@``@`
+@@ -1,4 +1,14 @@
  #!/bin/sh
 +
 +# We need to delete the old path, so that there are no leftovers from the

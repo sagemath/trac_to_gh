@@ -1,6 +1,6 @@
 # Issue 8055: Add the jCarousel plug-in and set up a Sage showcase for the login page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8055
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 8816: Bug in CPS_height_bound
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8816
 
 Original creator: robertwb
 

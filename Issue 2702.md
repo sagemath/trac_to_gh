@@ -1,6 +1,6 @@
 # Issue 2702: [with patch, needs review] multi_polynomial_libsingular coverage almost 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2702
 
 Original creator: malb
 

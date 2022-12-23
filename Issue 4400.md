@@ -1,6 +1,6 @@
 # Issue 4400: Sage 3.1.4: magma related doctest failures in sage/interfaces/magma.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4400
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: was
 This is a strange one:
 
 ```
-mabshoff`@`iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/interfaces/magma.py
+mabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/interfaces/magma.py
 sage -t -long -optional devel/sage/sage/interfaces/magma.py 
 **********************************************************************
 File "/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/magma.py", line 1390:

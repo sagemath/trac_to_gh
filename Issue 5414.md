@@ -1,6 +1,6 @@
 # Issue 5414: notebook help: the live documentation list are broken after the doc removal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5414
 
 Original creator: mabshoff
 

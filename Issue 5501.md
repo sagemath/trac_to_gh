@@ -1,6 +1,6 @@
 # Issue 5501: pickling high-precision intervals is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5501
 
 Original creator: boothby
 
@@ -35,7 +35,7 @@ lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
-lalalalalalalalalalalalalalalalalalalalalalalalalalalal0`@`-1 .. 
+lalalalalalalalalalalalalalalalalalalalalalalalalalalal0@-1 .. 
 a.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
@@ -47,7 +47,7 @@ lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
 lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala
-lalalalalalalalalalalalalalalalalalalalalalalalalalalg`@`-1]', 32))
+lalalalalalalalalalalalalalalalalalalalalalalalalalalg@-1]', 32))
 invalid data stream
 invalid load key, 'x'.
 Unable to load pickled data.

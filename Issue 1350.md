@@ -1,6 +1,6 @@
 # Issue 1350: sage-2.8.15.alpha0 doctest error in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1350
 
 Original creator: mhansen
 

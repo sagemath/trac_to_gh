@@ -1,6 +1,6 @@
 # Issue 8576: Categories for QQ, CC, RR and friends
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8576
 
 Original creator: nthiery
 

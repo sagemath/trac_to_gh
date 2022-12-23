@@ -1,6 +1,6 @@
 # Issue 2597: [with patch, needs review] Add reduced adjacency matrix and alist file format support to BipartiteGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2597
 
 Original creator: rhinton
 

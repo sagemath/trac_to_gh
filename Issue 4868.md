@@ -1,6 +1,6 @@
 # Issue 4868: optional polymake spkg quickly fails to build on sage.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4868
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6612: sage-update selects a suiteable mirror
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6612
 
 Original creator: schilly
 
@@ -46,7 +46,7 @@ Attachment
 I received the following errors after patching `SAGE_ROOT/local/bin/sage-update` and doing an upgrade. Maybe this ticket would have to wait for Sage 4.1.2 :-(
 
 ```
-[mvngu`@`darkstar sage-4.0]$ ./sage -upgrade
+[mvngu@darkstar sage-4.0]$ ./sage -upgrade
 Testing mirrors ...
 Exception in thread Thread-3:
 Traceback (most recent call last):
@@ -537,7 +537,7 @@ SyntaxError: invalid syntax
 The upgraded version doesn't even start properly:
 
 ```
-[mvngu`@`darkstar sage]$ ./sage -br main
+[mvngu@darkstar sage]$ ./sage -br main
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.

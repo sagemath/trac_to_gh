@@ -1,6 +1,6 @@
 # Issue 2856: [with patch, needs review] PyLint unused variable cleanup for sage.rings.polynomial 2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2856
 
 Original creator: malb
 

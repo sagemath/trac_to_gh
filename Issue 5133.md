@@ -1,6 +1,6 @@
 # Issue 5133: improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5133
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-wstein`@`sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx
+wstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx
 ----------------------------------------------------------------------
 multi_modular.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
@@ -38,7 +38,7 @@ Missing doctests:
 
 ----------------------------------------------------------------------
 
-wstein`@`sage:~/build/sage-3.2.3/devel/sage/sage/ext$ 
+wstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ 
 ```
 
 
@@ -190,9 +190,9 @@ Attachment
 I got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:
 
 ```
-[mvngu`@`sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch
+[mvngu@sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch
 adding trac_5133-multi_modular_tests-take2.patch to series file
-[mvngu`@`sage sage-exp]$ hg qpush -a
+[mvngu@sage sage-exp]$ hg qpush -a
 applying trac_5133-multi_modular_tests-take2.patch
 patching file sage/rings/arith.py
 Hunk #2 FAILED at 914
@@ -207,7 +207,7 @@ Here's the hunk that failed:
 ```
 --- arith.py                                                                    
 +++ arith.py                                                                    
-`@``@` -915,6 +915,9 `@``@`
+@@ -915,6 +915,9 @@
         the function uses a pseudo-primality test, which is much faster for     
         really big numbers but does not provide a proof of primality. If        
         None, uses the global default (see sage.structure.proof)                

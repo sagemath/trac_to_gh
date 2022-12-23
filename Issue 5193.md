@@ -1,6 +1,6 @@
 # Issue 5193: [with patch, needs review] maximum allowed matrix size is too big
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5193
 
 Original creator: cwitty
 

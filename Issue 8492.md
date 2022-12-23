@@ -1,6 +1,6 @@
 # Issue 8492: Sage 4.3.4.alpha1: docbuild warnings in HTML version of reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8492
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5309: mark some doctests in misc/package.py #optional - internet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5309
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8124: Selmer groups for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8124
 
 Original creator: rlm
 

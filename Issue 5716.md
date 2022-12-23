@@ -1,6 +1,6 @@
 # Issue 5716: lifting a subdivided matrix should preserve the subdivision, but doesn't.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5716
 
 Original creator: was
 

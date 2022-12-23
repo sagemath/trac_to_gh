@@ -1,6 +1,6 @@
 # Issue 9077: change sqrt to that it obeys the Lithinuania standard: sqrt(x) is x^3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9077
 
 Original creator: was
 

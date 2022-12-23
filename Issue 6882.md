@@ -1,6 +1,6 @@
 # Issue 6882: bug in conversion of "i" from Maxima to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6882
 
 Original creator: was
 
@@ -49,7 +49,7 @@ As another consequence, solving of ode y'=c*x is not correct, the free variable 
 Yuri Karadzhov
 
 ```
-[marik`@`um-bc107 /opt/sage-4.3.4]$ ./sage
+[marik@um-bc107 /opt/sage-4.3.4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: from sage.calculus.calculus import symbolic_expression_from_maxima_string

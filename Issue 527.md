@@ -1,6 +1,6 @@
 # Issue 527: gap -- gap_reset_workspace()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/527
 
 Original creator: was
 

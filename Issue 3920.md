@@ -1,6 +1,6 @@
 # Issue 3920: [with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3920
 
 Original creator: malb
 

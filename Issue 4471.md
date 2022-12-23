@@ -1,6 +1,6 @@
 # Issue 4471: name worksheet when creating a new worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4471
 
 Original creator: mrubinst
 

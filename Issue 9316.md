@@ -1,6 +1,6 @@
 # Issue 9316: Spurious (?) "# File not found" error at end of doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9316
 
 Original creator: was
 
@@ -72,9 +72,9 @@ However, BSD.py is completing well within the time I've set as SAGE_TIMEOUT and 
 
 
 ```
-drkirkby`@`redstart:~$ echo $SAGE_TIMEOUT_LONG
+drkirkby@redstart:~$ echo $SAGE_TIMEOUT_LONG
 10000
-drkirkby`@`redstart:~$ echo $SAGE_TIMEOUT     
+drkirkby@redstart:~$ echo $SAGE_TIMEOUT     
 1000
 ```
 
@@ -83,7 +83,7 @@ But BSD.py is taking 205 seconds
 
 
 ```
-drkirkby`@`redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py
+drkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/BSD.py"
          [205.5 s]
  

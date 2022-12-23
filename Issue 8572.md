@@ -1,6 +1,6 @@
 # Issue 8572: Doc of poset appear as void if called from the console.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8572
 
 Original creator: hivert
 

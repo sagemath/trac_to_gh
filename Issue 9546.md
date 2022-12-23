@@ -1,6 +1,6 @@
 # Issue 9546: bounded outdegree orientation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9546
 
 Original creator: ncohen
 

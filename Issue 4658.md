@@ -1,6 +1,6 @@
 # Issue 4658: magma -- get rid of redundant caching: just have _magma_init_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4658
 
 Original creator: was
 

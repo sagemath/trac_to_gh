@@ -1,6 +1,6 @@
 # Issue 5825: sage -i $FOO.spkg should abort cleanly when write permissions are lacking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5825
 
 Original creator: mabshoff
 

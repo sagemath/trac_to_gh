@@ -1,6 +1,6 @@
 # Issue 4865: dvipng optional spkg fails to build on sage.math (our main devel machine)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4865
 
 Original creator: was
 
@@ -46,7 +46,7 @@ subshell.)
 I installed  libkpathsea-dev in order to get as far as the above:
 
 ```
-root`@`sage:/usr/local/sage# apt-get install libkpathsea-dev
+root@sage:/usr/local/sage# apt-get install libkpathsea-dev
 ```
 
 

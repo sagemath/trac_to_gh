@@ -1,6 +1,6 @@
 # Issue 4100: comparison with None extraordinarily slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4100
 
 Original creator: robertwb
 
@@ -64,7 +64,7 @@ Comment by mabshoff created at 2008-09-19 02:57:29
 This patch causes a doctest failure in gen.pyx:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/libs/pari/gen.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/libs/pari/gen.pyx
 sage -t -long devel/sage/sage/libs/pari/gen.pyx             
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/gen.py", line 689:

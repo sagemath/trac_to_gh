@@ -1,6 +1,6 @@
 # Issue 5555: [with patch, not ready for review] make some TeX macros available to docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5555
 
 Original creator: jhpalmieri
 

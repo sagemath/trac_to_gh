@@ -1,6 +1,6 @@
 # Issue 7082: SageNB -- WorksheetProcess is an old-style class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7082
 
 Original creator: timdumol
 

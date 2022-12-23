@@ -1,6 +1,6 @@
 # Issue 2425: [with patch; needs review] In multipolynomials, the function jacob() should be called gradient()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2425
 
 Original creator: jbandlow
 

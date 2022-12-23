@@ -1,6 +1,6 @@
 # Issue 9504: Add support for toric sublattices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9504
 
 Original creator: novoselt
 

@@ -1,6 +1,6 @@
 # Issue 8299: coercion and the bool type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8299
 
 Original creator: robertwb
 

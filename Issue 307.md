@@ -1,6 +1,6 @@
 # Issue 307: vector/vector multiplication should return a scalar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/307
 
 Original creator: dfdeshom
 

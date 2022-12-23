@@ -1,6 +1,6 @@
 # Issue 1013: Matrix_real_double_dense overrides parent numpy() method with less-functional version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1013
 
 Original creator: cwitty
 

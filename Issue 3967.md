@@ -1,6 +1,6 @@
 # Issue 3967: Totallyreal "just print" feature added
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3967
 
 Original creator: jvoight
 

@@ -1,6 +1,6 @@
 # Issue 9213: Bring doc coverage of combinat/posets/elements.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9213
 
 Original creator: slabbe
 

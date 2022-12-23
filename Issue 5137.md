@@ -1,6 +1,6 @@
 # Issue 5137: [with patch, needs review] create variables 's' only once in sr if multiple plaintexts are considered
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5137
 
 Original creator: malb
 

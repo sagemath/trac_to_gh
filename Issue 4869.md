@@ -1,6 +1,6 @@
 # Issue 4869: make element of relative number field from polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4869
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 1538: upgrades of sage_scripts can confuse bash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1538
 
 Original creator: cwitty
 

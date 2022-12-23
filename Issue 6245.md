@@ -1,6 +1,6 @@
 # Issue 6245: make a custom infix operator decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6245
 
 Original creator: jason
 
@@ -53,7 +53,7 @@ And several examples (doctests?) are:
 
 ```
 # This emul operator returns the element-wise product of two lists...
-`@`infix_operator
+@infix_operator
 def emul(a,b):
     return [i*j for i,j in zip(a,b)] 
         	
@@ -63,7 +63,7 @@ b=[3,4,5]
 # Returns [3,8,15]
 a *emul* b 
         	
-`@`infix_operator
+@infix_operator
 def hadamard_product(a, b):
    if a.nrows()!=b.nrows() or a.ncols()!=b.ncols():
        raise ValueError, "Matrices must have the same dimensions in a Hadamard product"
@@ -88,7 +88,7 @@ Here are some examples:
 ```
 sage: from sage.misc.misc import infix_operator
 sage: # A post-fix operator
-sage: `@`infix_operator('or')
+sage: @infix_operator('or')
 sage: def pipe(a,b):
 ...       return b(a)
 ...
@@ -99,7 +99,7 @@ cos(x)
 3.14159265358979
 -1.00000000000000
 sage: # an infix dot product
-sage: `@`infix_operator('multiply')
+sage: @infix_operator('multiply')
 sage: def dot(a,b):
 ...       return a.dot_product(b)
 ...       
@@ -107,7 +107,7 @@ sage: def dot(a,b):
 sage: vector([1,2]) *dot* vector([2,4])
 10
 sage: # an infix sum
-sage: `@`infix_operator('add')
+sage: @infix_operator('add')
 sage: def esum(a,b):
 ...       return [i+j for i,j in zip(a,b)]
 ...

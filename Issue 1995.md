@@ -1,6 +1,6 @@
 # Issue 1995: load/attach spyx file --several confusing issues.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1995
 
 Original creator: was
 

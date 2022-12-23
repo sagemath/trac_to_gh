@@ -1,6 +1,6 @@
 # Issue 5394: [with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5394
 
 Original creator: mhansen
 

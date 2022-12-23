@@ -1,6 +1,6 @@
 # Issue 4520: segfault in cyclotomic matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4520
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 2537: a.frac() should return x-x.floor()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2537
 
 Original creator: rishi
 

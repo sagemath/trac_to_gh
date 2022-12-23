@@ -1,6 +1,6 @@
 # Issue 5521: fix serious bug in pickling the rational numbers and the magma interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5521
 
 Original creator: was
 
@@ -12,7 +12,7 @@ After converting QQ to Magma it suddenly stops pickling!
 
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: loads(dumps(QQ))

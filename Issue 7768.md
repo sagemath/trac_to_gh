@@ -1,6 +1,6 @@
 # Issue 7768: PDF version of reference manual fails to build in Sage 4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7768
 
 Original creator: mvngu
 

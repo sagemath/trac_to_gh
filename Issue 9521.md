@@ -1,6 +1,6 @@
 # Issue 9521: Cliquer: Move test commands from spkg-install to spkg-check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9521
 
 Original creator: mpatel
 

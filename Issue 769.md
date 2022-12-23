@@ -1,6 +1,6 @@
 # Issue 769: Matrix_mod2_dense._echelon_strassen gives fals results sometimes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/769
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 2931: [with spkg, needs review] gcc 4.3: fix linbox.spkg compilation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2931
 
 Original creator: mabshoff
 

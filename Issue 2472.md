@@ -1,6 +1,6 @@
 # Issue 2472: what parent should floor return?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2472
 
 Original creator: ncalexan
 

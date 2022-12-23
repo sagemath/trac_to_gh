@@ -1,6 +1,6 @@
 # Issue 8134: Escape $s in notebook keybindings docstring, config.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8134
 
 Original creator: mpatel
 

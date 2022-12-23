@@ -1,6 +1,6 @@
 # Issue 7976: Extends __classcall__ to control inheritance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7976
 
 Original creator: hivert
 

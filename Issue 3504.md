@@ -1,6 +1,6 @@
 # Issue 3504: sage sometimes leaves matlab processes that eat 100% cpu time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3504
 
 Original creator: cwitty
 
@@ -13,7 +13,7 @@ I've found a way to somewhat reproducibly leave a matlab process eating 100% cpu
 I log on to sage.math, start Sage, and run the following commands:
 
 ```
-sage: m = matlab(matrix(RR, [This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)))
+sage: m = matlab(matrix(RR, [[1]]))
 sage: m.det()
 ```
 

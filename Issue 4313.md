@@ -1,6 +1,6 @@
 # Issue 4313: Add some functionality to matrices in eclib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4313
 
 Original creator: cremona
 

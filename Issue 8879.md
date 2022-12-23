@@ -1,6 +1,6 @@
 # Issue 8879: Bad indentation in hyperelliptic curve file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8879
 
 Original creator: kcrisman
 

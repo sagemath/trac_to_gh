@@ -1,6 +1,6 @@
 # Issue 3702: Improve exporting 3d plots as X3D
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3702
 
 Original creator: nbruin
 

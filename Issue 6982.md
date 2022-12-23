@@ -1,6 +1,6 @@
 # Issue 6982: cygwin port: atlas and linbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6982
 
 Original creator: was
 

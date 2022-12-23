@@ -1,6 +1,6 @@
 # Issue 3638: Vector equality coercion problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3638
 
 Original creator: jbmohler
 

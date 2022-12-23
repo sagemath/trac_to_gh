@@ -1,6 +1,6 @@
 # Issue 8217: make 4ti2 an optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8217
 
 Original creator: mhampton
 

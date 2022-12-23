@@ -1,6 +1,6 @@
 # Issue 2068: zlib -- not picking up the right zlib when building libpng
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2068
 
 Original creator: was
 

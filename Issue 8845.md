@@ -1,6 +1,6 @@
 # Issue 8845: fix install_package in Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8845
 
 Original creator: mhansen
 

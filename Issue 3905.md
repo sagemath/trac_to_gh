@@ -1,6 +1,6 @@
 # Issue 3905: [with patch, needs review] revision of programming guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3905
 
 Original creator: jhpalmieri
 

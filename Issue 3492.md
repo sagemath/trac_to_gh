@@ -1,6 +1,6 @@
 # Issue 3492: [with patch, needs review] listing finite field embeddings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3492
 
 Original creator: fwclarke
 

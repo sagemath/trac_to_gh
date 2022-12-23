@@ -1,6 +1,6 @@
 # Issue 1260: clean up spkg-install for FLINT [flint-0.9-r1075.px]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1260
 
 Original creator: mabshoff
 

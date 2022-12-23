@@ -1,6 +1,6 @@
 # Issue 9264: Apply ALL relevent fixes to ECL 10.4.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9264
 
 Original creator: drkirkby
 
@@ -120,14 +120,14 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing maxima-5.20.1.p1.spkg
-drkirkby`@`redstart:~/sage-4.4.4.alpha1$ 
+drkirkby@redstart:~/sage-4.4.4.alpha1$ 
 }}}
 
- == Testing on OpenSolaris x64 06/2009 64-bit mode. ==
+ == Testing on !OpenSolaris x64 06/2009 64-bit mode. ==
     * Sun Ultra 27
     * 2 x 3.33 GHz quad core Intel Xeon MHz
     * 12 GB RAM
-    * OpenSolaris 06/2009 (Last release of OpenSolaris, updated to build 134)
+    * !OpenSolaris 06/2009 (Last release of !OpenSolaris, updated to build 134)
     * gcc 4.4.4 (uses Sun linker and GNU assembler) 
     * Sage 4.4.4.alpha1
 
@@ -144,7 +144,7 @@ sys	0m7.531s
 Successfully installed ecl-10.4.1
 }}}
 
-Maxima 5.20.1.p1 will *not* build on this platform, but such a problem is not related to this ticket, and appears it might be an incorrect flag given in the source (-Wl,-G instead of -shared). This is documented at #9099
+Maxima 5.20.1.p1 will '''not''' build on this platform, but such a problem is not related to this ticket, and appears it might be an incorrect flag given in the source (-Wl,-G instead of -shared). This is documented at #9099
 
 ## Testing on sage.math (Linux), 64-bit.
 {{{

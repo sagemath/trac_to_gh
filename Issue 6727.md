@@ -1,6 +1,6 @@
 # Issue 6727: spell-check all modules under sage/plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6727
 
 Original creator: mvngu
 

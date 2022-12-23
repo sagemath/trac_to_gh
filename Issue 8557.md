@@ -1,6 +1,6 @@
 # Issue 8557: is_singular method for projective plane curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8557
 
 Original creator: cturner
 

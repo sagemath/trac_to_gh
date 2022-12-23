@@ -1,6 +1,6 @@
 # Issue 6740: upgrade mpmath to 0.13
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6740
 
 Original creator: mvngu
 

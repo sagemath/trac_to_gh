@@ -1,6 +1,6 @@
 # Issue 2576: preserve docstrings of decorated methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2576
 
 Original creator: was
 

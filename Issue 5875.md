@@ -1,6 +1,6 @@
 # Issue 5875: [with patch, needs review] Support tachyon on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5875
 
 Original creator: pjeremy
 

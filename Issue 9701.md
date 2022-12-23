@@ -1,6 +1,6 @@
 # Issue 9701: NumberFieldElement should have a conversion to float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9701
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 7057: cliquer-1.2 ignores CC and uses gcc instead of Sun compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7057
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 6840: Fix documentation for Sage Notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6840
 
 Original creator: timdumol
 
@@ -135,7 +135,7 @@ Comment by mvngu created at 2009-08-31 12:52:56
 The patch `trac_6840-notebook-documentation-v4.patch` applies OK against 4.1.1, but with one fuzz:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v4.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v4.patch && hg qpush
 adding trac_6840-notebook-documentation-v4.patch to series file
 applying trac_6840-notebook-documentation-v4.patch
 patching file sage/server/notebook/config.py
@@ -228,7 +228,7 @@ Comment by mvngu created at 2009-09-01 04:20:04
 The patch `trac_6840-notebook-documentation-v6.patch` applies OK, but with fuzz:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v6.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6840/trac_6840-notebook-documentation-v6.patch && hg qpush
 adding trac_6840-notebook-documentation-v6.patch to series file
 applying trac_6840-notebook-documentation-v6.patch
 patching file sage/server/notebook/config.py

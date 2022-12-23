@@ -1,6 +1,6 @@
 # Issue 8729: simple integral using trig functions gives wrong answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8729
 
 Original creator: jason
 

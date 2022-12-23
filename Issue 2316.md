@@ -1,6 +1,6 @@
 # Issue 2316: dsage.start_all() can leave zombie workers around
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2316
 
 Original creator: yi
 

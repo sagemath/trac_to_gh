@@ -1,6 +1,6 @@
 # Issue 3057: MPolynomialRing_generic type-checks to determine commutativity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3057
 
 Original creator: boothby
 

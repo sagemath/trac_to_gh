@@ -1,6 +1,6 @@
 # Issue 4993: OSX 64 bit: add 64 bit build support for r
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4993
 
 Original creator: mabshoff
 

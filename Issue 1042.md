@@ -1,6 +1,6 @@
 # Issue 1042: reset() doesn't do what's claimed -- in particular the symbolic x is gone after doing reset() but shouldn't be
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1042
 
 Original creator: was
 
@@ -56,7 +56,7 @@ G never the key 'sage_mode' so none of the custom imports in all_cmdline and all
 
 ```
 {'__nonzero__': <function __nonzero__ at 0x2b4a6a257b90>, '_iii': '', 
-'__': _, '_i': _,
+'__': '', '_i': '',
  '_i1': u'reset()\n',
  '__IP': <IPython.iplib.InteractiveShell object at 0x2b4a6aa0e790>,
  '_ii': '', '__builtins__': <module '__builtin__' (built-in)>,

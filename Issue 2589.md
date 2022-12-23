@@ -1,6 +1,6 @@
 # Issue 2589: Notebook improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2589
 
 Original creator: dunfield
 

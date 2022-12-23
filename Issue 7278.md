@@ -1,6 +1,6 @@
 # Issue 7278: eval strings are not escaped
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7278
 
 Original creator: jason
 
@@ -26,7 +26,7 @@ CC:  was mhansen
 > > test to close of string\u0027\u0027\u0027,
 > > \u0027/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6\u0027)
 > >  File "", line 1
-> >   print _support_.syseval(sh, ur**echo test to close of string''',
+> >   print _support_.syseval(sh, ur''''''echo test to close of string''',
 > > '/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6')
 > >                                          ^
 > > SyntaxError: invalid syntax

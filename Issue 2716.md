@@ -1,6 +1,6 @@
 # Issue 2716: convex hulls and polyhedral functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2716
 
 Original creator: mhampton
 

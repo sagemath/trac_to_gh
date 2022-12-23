@@ -1,6 +1,6 @@
 # Issue 862: [with patch] memory leak: Matrix_modn_sparse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/862
 
 Original creator: mabshoff
 

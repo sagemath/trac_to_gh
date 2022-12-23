@@ -1,6 +1,6 @@
 # Issue 1862: implement at least some sort of useful rudimentary implicit 2d plotting function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1862
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3033: equations.py segfaults without --incref-local-binop cython flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3033
 
 Original creator: gfurnish
 

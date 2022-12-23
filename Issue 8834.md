@@ -1,6 +1,6 @@
 # Issue 8834: make R png graphics doctests optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8834
 
 Original creator: was
 
@@ -78,21 +78,21 @@ Comment by was created at 2010-05-01 19:01:39
 How to test:
 
 ```
-wstein`@`sage:~/build/release/4.4.1/sage-4.4.1.rc0$ ./sage -t devel/sage/sage/interfaces/r.py 
+wstein@sage:~/build/release/4.4.1/sage-4.4.1.rc0$ ./sage -t devel/sage/sage/interfaces/r.py 
 sage -t  "devel/sage/sage/interfaces/r.py"                  
          [4.2 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 4.2 seconds
-wstein`@`sage:~/build/release/4.4.1/sage-4.4.1.rc0$ ./sage -t --only_optional=rgraphics devel/sage/sage/interfaces/r.py 
+wstein@sage:~/build/release/4.4.1/sage-4.4.1.rc0$ ./sage -t --only_optional=rgraphics devel/sage/sage/interfaces/r.py 
 sage -t --only_optional=rgraphics "devel/sage/sage/interfaces/r.py"
          [3.3 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 3.3 seconds
-wstein`@`sage:~/build/release/4.4.1/sage-4.4.1.rc0$ 
+wstein@sage:~/build/release/4.4.1/sage-4.4.1.rc0$ 
 ```
 
 
@@ -111,7 +111,7 @@ Comment by mvngu created at 2010-05-02 23:49:38
 Doctests pass on bsd.math (Mac OS X 10.6) with the option:
 
 ```
-[mvngu`@`bsd sage-4.4.1.rc0]$ ./sage -t -long devel/sage-main/sage/interfaces/r.py
+[mvngu@bsd sage-4.4.1.rc0]$ ./sage -t -long devel/sage-main/sage/interfaces/r.py
 ```
 
 But doctests would fail with:

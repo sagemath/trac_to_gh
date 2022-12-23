@@ -1,6 +1,6 @@
 # Issue 8318: overlap_partion of a word should return an instance disjoint set data structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8318
 
 Original creator: slabbe
 

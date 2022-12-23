@@ -1,6 +1,6 @@
 # Issue 8651: binomial(n,k) evaluates to zero when 0 is subsituted for k
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8651
 
 Original creator: rhinton
 

@@ -1,6 +1,6 @@
 # Issue 9632: System-dependent term order for printed expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9632
 
 Original creator: mpatel
 

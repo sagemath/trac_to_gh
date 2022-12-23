@@ -1,6 +1,6 @@
 # Issue 847: rewrite the symbolic calculus package to do evaluation / simplification without recursion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/847
 
 Original creator: was
 
@@ -69,8 +69,8 @@ better.
 
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-support`@`googlegroups.com
-To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
+To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-support
 URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
 -~----------~----~----~----~------~----~------~--~---
@@ -145,7 +145,7 @@ Mike
 - Hide quoted text -
 
 
-On 10/10/07, kcrisman <kcrisman`@`gmail.com> wrote:
+On 10/10/07, kcrisman <kcrisman@gmail.com> wrote:
 >
 > Answer: apparently SAGE/Python can't handle numbers bigger than it.
 >
@@ -205,8 +205,8 @@ On 10/10/07, kcrisman <kcrisman`@`gmail.com> wrote:
 >
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-support`@`googlegroups.com
-To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
+To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-support
 URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
 -~----------~----~----~----~------~----~------~--~---

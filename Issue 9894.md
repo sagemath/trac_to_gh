@@ -1,6 +1,6 @@
 # Issue 9894: Doctest error raised by os.fork in sage/parallel/decorate.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9895
 
 Original creator: mpatel
 

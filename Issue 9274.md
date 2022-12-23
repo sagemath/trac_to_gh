@@ -1,6 +1,6 @@
 # Issue 9274: do some cleanup of the deps file, as suggested by Carl Hansen
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9274
 
 Original creator: was
 

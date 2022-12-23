@@ -1,6 +1,6 @@
 # Issue 8719: convert RDF/CDF matrices to numpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8719
 
 Original creator: jason
 

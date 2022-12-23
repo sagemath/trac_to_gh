@@ -1,6 +1,6 @@
 # Issue 4243: [with spkg, needs review] pynac package version bump to 0.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4243
 
 Original creator: burcin
 

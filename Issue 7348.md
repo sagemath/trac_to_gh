@@ -1,6 +1,6 @@
 # Issue 7348: speed up computation of multiplicative orders of finite field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7348
 
 Original creator: fwclarke
 

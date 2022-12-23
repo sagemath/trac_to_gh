@@ -1,6 +1,6 @@
 # Issue 2806: Sage 3.0.a2: numerical noise in sage/misc/prandom.py doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2806
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8628: confusing defaults for p-adic precision types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8628
 
 Original creator: dmharvey
 

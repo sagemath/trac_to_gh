@@ -1,6 +1,6 @@
 # Issue 5015: Horrible bug in old (and new) symbolic calculus: f(x)=1; f*e --> BOOM!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5015
 
 Original creator: was
 

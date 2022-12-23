@@ -1,6 +1,6 @@
 # Issue 7647: notebook: provide an option to worksheet download so that only the text (no graphics, etc.) of a worksheet is included in the sws
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7647
 
 Original creator: was
 

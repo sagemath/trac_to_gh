@@ -1,6 +1,6 @@
 # Issue 6190: Fix documentation in sage/combinat/backtrack.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6190
 
 Original creator: rbeezer
 

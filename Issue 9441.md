@@ -1,6 +1,6 @@
 # Issue 9441: Atkin-Lehner operators for Cremona modular symbols
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9441
 
 Original creator: cremona
 

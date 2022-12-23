@@ -1,6 +1,6 @@
 # Issue 2161: [with patch] some speed improvements for mpolynomials over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2161
 
 Original creator: jbmohler
 

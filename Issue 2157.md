@@ -1,6 +1,6 @@
 # Issue 2157: Implement graph plotting directly in MatPlotLib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2157
 
 Original creator: robertwb
 

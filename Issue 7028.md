@@ -1,6 +1,6 @@
 # Issue 7028: matplotlib 0.99.0 tries to use C compiler for C++ code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7028
 
 Original creator: drkirkby
 

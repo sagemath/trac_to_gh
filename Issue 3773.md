@@ -1,6 +1,6 @@
 # Issue 3773: hidden markov models -- part 2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3773
 
 Original creator: was
 

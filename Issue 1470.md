@@ -1,6 +1,6 @@
 # Issue 1470: upgrade maxima.spkg to 5.14.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1470
 
 Original creator: mabshoff
 
@@ -35,10 +35,10 @@ The Maxima command 'mnewton' has a bug.
 The problem may be solved by updating to the most recent build of Maxima.
 {{{
 sage: mnewton([x1+3*log(x1)-x2^2, 2*x1^2-x1*x2-5*x1+1], [x1, x2], [5, 5])
-[This is the Trac macro *x1=3.756834008012769,x2=2.779849592817897* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x1=3.756834008012769,x2=2.779849592817897-macro)
+[[x1=3.756834008012769,x2=2.779849592817897]]
 
 sage: mnewton([2*a^a-5],[a],[1])
-[This is the Trac macro *a=1.70927556786144* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a=1.70927556786144-macro)
+[[a=1.70927556786144]]
 
 sage: mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);
 Traceback (most recent call last):
@@ -73,7 +73,7 @@ Originator: NO
 It works for me; maybe you have an old version.
 
 (%i2) mnewton([2*3^u-v/u-5, u+2^v-4], [u, v], [2, 2]);
-(%o2) [This is the Trac macro *u=1.066618389595407,v=1.552564766841786* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#u=1.066618389595407,v=1.552564766841786-macro)
+(%o2) [[u=1.066618389595407,v=1.552564766841786]]
 
 (%i8) build_info();
 Maxima version: 5.14.0

@@ -1,6 +1,6 @@
 # Issue 9095: Elliptic curve over function field heights
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9095
 
 Original creator: robertwb
 

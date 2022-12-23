@@ -1,6 +1,6 @@
 # Issue 3154: notebook -- spurious u0027's output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3154
 
 Original creator: was
 
@@ -71,14 +71,14 @@ The second patch causes two SageNB doctest failures:
 File "/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py", line 3695:
     sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)
 Expected:
-    (True, u"print _support_.syseval(gap, ur*SymmetricGroup(5)*, '...')")
+    (True, u"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')")
 Got:
     (True, u"print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')")
 **********************************************************************
 File "/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/worksheet.py", line 3721:
     sage: W.check_for_system_switching(c1.cleaned_input_text(), c1)
 Expected:
-    (True, u"print _support_.syseval(gap, ur*SymmetricGroup(5)*, '...')")
+    (True, u"print _support_.syseval(gap, ur'''SymmetricGroup(5)''', '...')")
 Got:
     (True, "print _support_.syseval(gap, u'SymmetricGroup(5)', '/home/.sage/temp/chopin/5101/dir_2.sagenb/home/sage/0/cells/1')")
 

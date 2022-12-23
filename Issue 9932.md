@@ -1,6 +1,6 @@
 # Issue 9932: BooleanPolynomialRing not recognizing leading term of elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9933
 
 Original creator: mariah
 

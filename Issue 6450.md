@@ -1,6 +1,6 @@
 # Issue 6450: add generic group functions to the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6450
 
 Original creator: ylchapuy
 

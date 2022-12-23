@@ -1,6 +1,6 @@
 # Issue 5562: coercion error with vectors and polynomial rings with 1 variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5562
 
 Original creator: ncalexan
 

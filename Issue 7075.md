@@ -1,6 +1,6 @@
 # Issue 7075: Two last figure saves to wrong place
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7075
 
 Original creator: kcrisman
 

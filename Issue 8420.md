@@ -1,6 +1,6 @@
 # Issue 8420: [work in progress] new feature : class of perfect matching
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8420
 
 Original creator: vferay
 

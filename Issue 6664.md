@@ -1,6 +1,6 @@
 # Issue 6664: [with patch, needs review] Skip nested classes in docs by Sphinx v0.6.x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6664
 
 Original creator: mpatel
 

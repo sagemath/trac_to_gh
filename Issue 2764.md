@@ -1,6 +1,6 @@
 # Issue 2764: apply Minh Nguyen's patches to hg_doc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2764
 
 Original creator: mhansen
 

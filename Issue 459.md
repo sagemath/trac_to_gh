@@ -1,6 +1,6 @@
 # Issue 459: TypeError: unsupported operand parent(s) for '*': 'Polynomial Ring in u, v over Integer Ring'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/459
 
 Original creator: mhansen
 

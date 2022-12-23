@@ -1,6 +1,6 @@
 # Issue 3315: parametric plot should accept a function that returns a tuple
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3315
 
 Original creator: mhampton
 

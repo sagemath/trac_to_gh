@@ -1,6 +1,6 @@
 # Issue 7636: add decorator to make functions symbolic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7636
 
 Original creator: burcin
 
@@ -16,7 +16,7 @@ Example:
 
 
 ```
-`@`sage.symbolic.function.symbolic
+@sage.symbolic.function.symbolic
 def my_func(x, n):
      if x < 0: return 0
      else: return exp(-1/x^n)

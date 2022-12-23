@@ -1,6 +1,6 @@
 # Issue 9231: bring tachyon interface code to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9231
 
 Original creator: mhampton
 

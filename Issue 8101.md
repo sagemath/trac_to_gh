@@ -1,6 +1,6 @@
 # Issue 8101: ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8101
 
 Original creator: jsp
 
@@ -41,7 +41,7 @@ Positive review. All shared libraries are indeed 64-bit now.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/lib*ntl*
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*
 local/lib/libntl-5.4.2.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libntl.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libntl.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped

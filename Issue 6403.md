@@ -1,6 +1,6 @@
 # Issue 6403: Custom definitions for latex style
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6403
 
 Original creator: schymans
 

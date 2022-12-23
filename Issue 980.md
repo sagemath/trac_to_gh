@@ -1,6 +1,6 @@
 # Issue 980: random_element() for multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/980
 
 Original creator: dfdeshom
 

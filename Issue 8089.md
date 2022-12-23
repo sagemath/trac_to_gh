@@ -1,6 +1,6 @@
 # Issue 8089: ecl 9.10.2-20091105cvs.p1 faiils to build on Open Solaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8089
 
 Original creator: drkirkby
 

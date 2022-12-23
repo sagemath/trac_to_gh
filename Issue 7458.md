@@ -1,6 +1,6 @@
 # Issue 7458: [with patch, needs review] Sylvester matrix for polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7458
 
 Original creator: carlohamalainen
 

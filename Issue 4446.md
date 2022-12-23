@@ -1,6 +1,6 @@
 # Issue 4446: [with patch, needs work] New module complex_mpc using lib mpc for complex multiprecision arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4446
 
 Original creator: thevenyp
 
@@ -78,7 +78,7 @@ However, there is a policy of 100% doctest for all new code.  The coverage is no
 
 
 ```
-[ghitza`@`artin sage]$ sage -coverage rings/complex_mpc.pyx
+[ghitza@artin sage]$ sage -coverage rings/complex_mpc.pyx
 ----------------------------------------------------------------------
 rings/complex_mpc.pyx
 SCORE rings/complex_mpc.pyx: 68% (46 of 67)

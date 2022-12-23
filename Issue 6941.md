@@ -1,6 +1,6 @@
 # Issue 6941: GCD, XGCD for polynomial rings with templating
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6941
 
 Original creator: spancratz
 

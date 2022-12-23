@@ -1,6 +1,6 @@
 # Issue 8019: graphics_array messes up dimensions of plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8019
 
 Original creator: pdehaye
 

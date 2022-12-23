@@ -1,6 +1,6 @@
 # Issue 9539: segfault after memory exhausted using GF(9001)((x))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9539
 
 Original creator: fchyzak
 

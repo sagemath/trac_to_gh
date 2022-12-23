@@ -1,6 +1,6 @@
 # Issue 2577: improving diagonal_matrix and vector (iterable) input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2577
 
 Original creator: ncalexan
 

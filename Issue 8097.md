@@ -1,6 +1,6 @@
 # Issue 8097: termcap fails to build in Open Solaris x64 as 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8097
 
 Original creator: jsp
 
@@ -156,11 +156,11 @@ Chacking static libraries:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ ar -x local/lib/libtermcap.a 
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ ls
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ ar -x local/lib/libtermcap.a 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ ls
 COPYING.txt  install.log  local     README.txt	sage-python	     spkg	tmp	  version.o
 data	     ipython	  makefile  sage	sage-README-osx.txt  termcap.o	tparam.o
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ file *.o
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file *.o
 termcap.o:	ELF 64-bit LSB relocatable AMD64 Version 1
 tparam.o:	ELF 64-bit LSB relocatable AMD64 Version 1
 version.o:	ELF 64-bit LSB relocatable AMD64 Version 1

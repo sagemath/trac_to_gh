@@ -1,6 +1,6 @@
 # Issue 5475: make it so ipython isn't imported when one does "sage -python"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5475
 
 Original creator: was
 

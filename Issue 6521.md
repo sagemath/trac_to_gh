@@ -1,6 +1,6 @@
 # Issue 6521: replace .copy() with .__copy__() in matrix/matrix0.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6521
 
 Original creator: AlexGhitza
 

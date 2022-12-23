@@ -1,6 +1,6 @@
 # Issue 7714: bug in matrix rank over multivariate polynomial ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7714
 
 Original creator: was
 

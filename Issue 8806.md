@@ -1,6 +1,6 @@
 # Issue 8806: update the README.txt in sage-4.4.1 to reflect improved platform and compiler support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8806
 
 Original creator: was
 
@@ -48,7 +48,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
 ```diff
 --- README-4.4.txt	2010-05-03 00:08:47.229709868 -0700
 +++ README-4.4.1.txt	2010-05-03 00:07:29.129236453 -0700
-`@``@` -5,8 +5,8 `@``@`
+@@ -5,8 +5,8 @@
  
      ./sage
  
@@ -59,7 +59,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
  
  ---------------------------------------------------------------------------
-`@``@` -17,7 +17,7 `@``@`
+@@ -17,7 +17,7 @@
            Magma, Maple, Mathematica, and Matlab"
  
      Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010
@@ -68,7 +68,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
      Distributed under the terms of the GNU General Public License (GPL)
  
-`@``@` -27,7 +27,7 `@``@`
+@@ -27,7 +27,7 @@
  
           http://groups.google.com/group/sage-support
  
@@ -77,7 +77,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
      one of the websites above for a list. In many cases, documentation
      for modules and functions list the authors.
  
-`@``@` -40,7 +40,7 `@``@`
+@@ -40,7 +40,7 @@
  The following steps briefly outline the process of building Sage from
  source. See below for more detailed instructions.
  
@@ -86,7 +86,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
     Linux (install these using your package manager):
  
-`@``@` -89,41 +89,38 `@``@`
+@@ -89,41 +89,38 @@
  Building of Sage from source is regularly tested on (minimal installs
  of) the following platforms:
  
@@ -149,7 +149,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
  There is some effort to port Sage to FreeBSD and HP-UX. We like all of
  the above operating systems, but just haven't had the time to make
-`@``@` -138,11 +135,10 `@``@`
+@@ -138,11 +135,10 @@
  FORTRAN
  -------
  
@@ -165,7 +165,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
      export SAGE_FORTRAN=/exact/path/to/gfortran
      export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so
-`@``@` -163,15 +159,15 `@``@`
+@@ -163,15 +159,15 @@
  --------------
  
  Sage has significant components written in the following languages:
@@ -185,7 +185,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
  2. Linux: Install GCC, g++, m4, ranlib, and make. The build should
     work fine on openSUSE, Fedora, Ubuntu, etc. If it doesn't, we want
-`@``@` -256,22 +252,10 `@``@`
+@@ -256,22 +252,10 @@
  SUPPORTED COMPILERS
  -------------------
  
@@ -212,7 +212,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
  
  RELOCATION
-`@``@` -308,10 +292,9 `@``@`
+@@ -308,10 +292,9 @@
     installed by typing "sage -bdist x.y.z". The result is placed in
     the SAGE_ROOT/dist directory.
  
@@ -226,7 +226,7 @@ Here's the diff between the README.txt in Sage 4.4 and the one in Sage 4.4.1:
  
         export SAGE_FAT_BINARY="yes"
         make
-`@``@` -322,10 +305,8 `@``@`
+@@ -322,10 +305,8 @@
  ----------------------------
  
  All software included with Sage is copyright by the respective authors

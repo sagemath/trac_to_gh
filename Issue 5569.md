@@ -1,6 +1,6 @@
 # Issue 5569: [with patch, needs review] weil restriction of scalars
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5569
 
 Original creator: malb
 

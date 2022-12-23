@@ -1,6 +1,6 @@
 # Issue 7407: Fix building of binary distribution so it works on Solaris. Make name of .tar.gz file sensible too.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7407
 
 Original creator: drkirkby
 
@@ -28,18 +28,18 @@ Here is the result of trying to build a binary distribution on a Sun Netra T1, r
 
 
 ```
-drkirkby`@`kestrel:~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC
+drkirkby@kestrel:~/sage-4.2$ ./sage -bdist 4.2-Solaris-10-SPARC
 Sage works!
 Copying files over to tmp directory
 cp: illegal option -- a
-Usage: cp [-f] [-i] [-p] [-`@`] f1 f2
-       cp [-f] [-i] [-p] [-`@`] f1 ... fn d1
-       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-`@`] d1 ... dn-1 dn
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+       cp [-f] [-i] [-p] [-@] f1 ... fn d1
+       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 Copying Sage library over
 cp: illegal option -- a
-Usage: cp [-f] [-i] [-p] [-`@`] f1 f2
-       cp [-f] [-i] [-p] [-`@`] f1 ... fn d1
-       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-`@`] d1 ... dn-1 dn
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+       cp [-f] [-i] [-p] [-@] f1 ... fn d1
+       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 /export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 60: cd: sage: No such file or directory
 /export/home/drkirkby/sage-4.2/local/bin/sage-bdist: line 63: cd: /export/home/drkirkby/sage-4.2/tmp/sage-4.2-Solaris-10-SPARC-sun4u-SunOS/local/lib/python/site-packages: No such file or directory
 Making empty spkg's
@@ -154,8 +154,8 @@ So the binary for t2 is about the same as the one for sage.math (which was produ
 When I used the new method on sage.math today, I got a binary more or less the same size as with the old method.  Same on the mac: the "dmg" file with the new method is about the same size:
 
 ```
-  -rw-r--r--`@`  1 palmieri  palmieri  420294832 May 20 08:23 sage-4.4.2-OSX-64bit-10.6-i386-Darwin.dmg
-  -rw-r--r--`@`  1 palmieri  admin     417800348 Jun  9 12:03 sage-TESTING-i386-Darwin.dmg
+  -rw-r--r--@  1 palmieri  palmieri  420294832 May 20 08:23 sage-4.4.2-OSX-64bit-10.6-i386-Darwin.dmg
+  -rw-r--r--@  1 palmieri  admin     417800348 Jun  9 12:03 sage-TESTING-i386-Darwin.dmg
 ```
 
 (The "TESTING" version was based on 4.4.3.alpha3, not 4.4.2, for what that's worth.)
@@ -185,7 +185,7 @@ It applied cleanly:
 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.4.3$ time ./sage -bdist Solaris10_release_3_05_for_sun4u_or_sun4v
+drkirkby@redstart:~/32/sage-4.4.3$ time ./sage -bdist Solaris10_release_3_05_for_sun4u_or_sun4v
 Sage works!
 Copying files over to tmp directory
 ```

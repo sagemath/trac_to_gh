@@ -1,6 +1,6 @@
 # Issue 8158: efficiency problem with polynomials (SymbolicRing vs PolynomialRing)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8158
 
 Original creator: zimmerma
 

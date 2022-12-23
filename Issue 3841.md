@@ -1,6 +1,6 @@
 # Issue 3841: [with patch, not ready for review] Use singular for calculus by default.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3841
 
 Original creator: gfurnish
 
@@ -188,7 +188,7 @@ EXAMPLES:
     sage: mor = NamedConvertMap(SR, QQ['t'], '_polynomial_')
     sage: mor(x^2/4+1)
     1/4*t^2 + 1
-    sage: mor = NamedConvertMap(SR, GF(7)[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro), '_polynomial_')
+    sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')
     sage: mor(x^2/4+1)
     1 + 2*t^2
 """

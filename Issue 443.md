@@ -1,6 +1,6 @@
 # Issue 443: libSingular: Source and destination overlap in strcpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/443
 
 Original creator: mabshoff
 

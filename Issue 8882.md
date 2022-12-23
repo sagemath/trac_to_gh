@@ -1,6 +1,6 @@
 # Issue 8882: Cleanup Combinatorial Free module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8882
 
 Original creator: hivert
 

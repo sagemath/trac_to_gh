@@ -1,6 +1,6 @@
 # Issue 4800: [with patch, positive review] Add a strongly connected components method to graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4800
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5901: [with patch, needs review] Avoid permission denied error message when testing with non-writeable sage install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5901
 
 Original creator: tabbott
 

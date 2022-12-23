@@ -1,6 +1,6 @@
 # Issue 6714: spell-check all modules under sage/libs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6714
 
 Original creator: mvngu
 

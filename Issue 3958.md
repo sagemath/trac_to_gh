@@ -1,6 +1,6 @@
 # Issue 3958: interact gives "unterminated string literal" in the browser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3958
 
 Original creator: jason
 
@@ -12,7 +12,7 @@ try:
 
 
 ```
-`@`interact
+@interact
 def _(a=range_slider(-1,1),b=range_slider(-1,1),c=slider(-1,1),d=slider(-1,1)):
     pass
 ```

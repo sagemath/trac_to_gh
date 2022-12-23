@@ -1,6 +1,6 @@
 # Issue 9455: Dimensions of eigenspaces for the Atkin-Lehner operator acting on modular forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9455
 
 Original creator: ljpk
 

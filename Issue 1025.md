@@ -1,6 +1,6 @@
 # Issue 1025: [with patch] error converting symmetric functions into a dual basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1025
 
 Original creator: mhansen
 

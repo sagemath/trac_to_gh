@@ -1,6 +1,6 @@
 # Issue 4386: Sage 3.1.4: optional doctest failure in sage/rings/number_field/totallyreal_phc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4386
 
 Original creator: mabshoff
 
@@ -190,7 +190,7 @@ Comment by mabshoff created at 2008-10-31 05:26:02
 Positive review. With both patches applied the issue is resolved:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -optional -long devel/sage/sage/rings/number_field/totallyreal_phc.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -optional -long devel/sage/sage/rings/number_field/totallyreal_phc.py
 sage -t -optional -long devel/sage/sage/rings/number_field/totallyreal_phc.py
 	 [2.4 s]
  

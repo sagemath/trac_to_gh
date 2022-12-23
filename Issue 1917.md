@@ -1,6 +1,6 @@
 # Issue 1917: [with patch; needs EASY review] linbox -- get rid of crazy OS X charpoly workaround, since linbox isn't broken anymore (also that workaround was buggy when minpoly != charpoly)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1917
 
 Original creator: was
 

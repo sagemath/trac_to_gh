@@ -1,6 +1,6 @@
 # Issue 6716: elliptic_e(0.5, 0.1) test failure on Solaris SPARC (error about 0.04%)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6716
 
 Original creator: drkirkby
 

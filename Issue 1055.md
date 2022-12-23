@@ -1,6 +1,6 @@
 # Issue 1055: Don't factor discriminant for quadratic number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1055
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 2315: Union of Graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2315
 
 Original creator: vgermrk
 

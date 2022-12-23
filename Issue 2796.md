@@ -1,6 +1,6 @@
 # Issue 2796: Integer digits/ndigit disagree on default base
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2796
 
 Original creator: jbmohler
 
@@ -85,7 +85,7 @@ Comment by mabshoff created at 2008-11-14 05:22:16
 The two patches here cause the following failures:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage -t -long devel/sage/sage/symbolic/expression.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage -t -long devel/sage/sage/symbolic/expression.pyx
 sage -t -long devel/sage/sage/symbolic/expression.pyx       
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.rc1/devel/sage/sage/symbolic/expression.pyx", line 1269:

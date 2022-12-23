@@ -1,6 +1,6 @@
 # Issue 9012: singular_decomposition fails on non-interreduced Gröbner basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9012
 
 Original creator: mmezzarobba
 

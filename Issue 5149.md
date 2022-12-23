@@ -1,6 +1,6 @@
 # Issue 5149: [with patch; needs review] Cremona database -- fix a bug in handling of 990h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5149
 
 Original creator: was
 

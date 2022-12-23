@@ -1,6 +1,6 @@
 # Issue 3377: [with patch, needs review] torsion for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3377
 
 Original creator: wuthrich
 
@@ -249,7 +249,7 @@ Comment by mabshoff created at 2008-09-03 07:20:20
 I am seeing two doctest failures on 3.1.2.alpha4+three merged patches:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
 sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_point.py", line 946:
@@ -264,7 +264,7 @@ Got:
 And some numerical noise it seems:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
 sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_number_field.py", line 1123:

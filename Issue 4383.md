@@ -1,6 +1,6 @@
 # Issue 4383: composition_series() returns no generators for trivial subgroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4383
 
 Original creator: rbeezer
 

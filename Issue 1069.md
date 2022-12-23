@@ -1,6 +1,6 @@
 # Issue 1069: find a way to savely enable inplace optimizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1069
 
 Original creator: mabshoff
 

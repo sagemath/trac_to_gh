@@ -1,6 +1,6 @@
 # Issue 5215: [with patch, needs review] Remove ipython1-20070130.spkg from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5215
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4141: OS X: R pulls in libraries from fink
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4141
 
 Original creator: dphilp
 

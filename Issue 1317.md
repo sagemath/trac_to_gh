@@ -1,6 +1,6 @@
 # Issue 1317: [graphs] calculate edge and vertex cut-sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1317
 
 Original creator: jason
 

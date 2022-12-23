@@ -1,6 +1,6 @@
 # Issue 4285: [with patch, needs review] update desolver interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4285
 
 Original creator: robertwb
 
@@ -90,7 +90,7 @@ This is a newly built clone of 3.1.3.rc0:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.3.rc0$ ./sage
+wdj@hera:~/sagefiles/sage-3.1.3.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: desolve

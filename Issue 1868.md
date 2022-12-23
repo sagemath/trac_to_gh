@@ -1,6 +1,6 @@
 # Issue 1868: New mayavi2 package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1868
 
 Original creator: jsp
 

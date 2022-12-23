@@ -1,6 +1,6 @@
 # Issue 9016: make morphisms hashable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9016
 
 Original creator: burcin
 

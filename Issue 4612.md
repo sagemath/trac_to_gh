@@ -1,6 +1,6 @@
 # Issue 4612: [with patch, needs review] is_perfect_power for rationals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4612
 
 Original creator: robertwb
 

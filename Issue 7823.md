@@ -1,6 +1,6 @@
 # Issue 7823: libgcrypt-1.4.4.p1 references incorrect shared library on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7823
 
 Original creator: pjeremy
 

@@ -1,6 +1,6 @@
 # Issue 4907: convert sage.crypto.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4907
 
 Original creator: mhansen
 

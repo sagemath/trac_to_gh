@@ -1,6 +1,6 @@
 # Issue 7577: move multivariate polynomials over RR to libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7577
 
 Original creator: malb
 

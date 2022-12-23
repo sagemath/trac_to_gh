@@ -1,6 +1,6 @@
 # Issue 3435: physically delete GSL BLAS so that nothing can link against it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3435
 
 Original creator: mhansen
 

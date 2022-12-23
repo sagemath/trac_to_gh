@@ -1,6 +1,6 @@
 # Issue 385: implement at for symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/385
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  jason burcin was mhansen
 
 
 ```
-On 6/7/07, Randy LeVeque <rjl`@`amath.washington.edu> wrote:
+On 6/7/07, Randy LeVeque <rjl@amath.washington.edu> wrote:
 > By the way, I'm just trying to figure out how sage does Taylor series.
 > Maybe you can pass this on to whoever the best person is to chat with about
 > this...

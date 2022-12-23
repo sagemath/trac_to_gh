@@ -1,6 +1,6 @@
 # Issue 8372: split up incidence_matrix() over graph.py and digraph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8372
 
 Original creator: mvngu
 

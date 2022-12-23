@@ -1,6 +1,6 @@
 # Issue 2317: possible job starvation of dsage server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2317
 
 Original creator: yi
 

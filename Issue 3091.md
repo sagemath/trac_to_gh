@@ -1,6 +1,6 @@
 # Issue 3091: help() should give Sage help, not Python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3091
 
 Original creator: gnprice
 

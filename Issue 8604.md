@@ -1,6 +1,6 @@
 # Issue 8604: Add a class for factor-enumerable words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8604
 
 Original creator: slabbe
 

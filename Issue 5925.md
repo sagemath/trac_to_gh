@@ -1,6 +1,6 @@
 # Issue 5925: [with patch, needs review] Improve speed of CombinatorialAlgebra.multiply()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5925
 
 Original creator: jdc
 

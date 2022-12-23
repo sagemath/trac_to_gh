@@ -1,6 +1,6 @@
 # Issue 8900: Implement multiparameter overloaded functions, with explicit registration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8900
 
 Original creator: nthiery
 

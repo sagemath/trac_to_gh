@@ -1,6 +1,6 @@
 # Issue 30: left multiplication of scalar times vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/30
 
 Original creator: was
 

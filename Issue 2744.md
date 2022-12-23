@@ -1,6 +1,6 @@
 # Issue 2744: make symbolicequations deal with logical combinations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2744
 
 Original creator: jason
 

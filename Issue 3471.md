@@ -1,6 +1,6 @@
 # Issue 3471: [with patch, needs review] Backends for compiled graph structures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3471
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 5834: Improvements to quadratic_forms/extras/py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5834
 
 Original creator: cremona
 

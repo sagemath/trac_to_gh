@@ -1,6 +1,6 @@
 # Issue 9599: re-merge #1396 and insure that Sage starts on t2.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9599
 
 Original creator: ddrake
 

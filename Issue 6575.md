@@ -1,6 +1,6 @@
 # Issue 6575: notebook bug in do_sage_extension_preparsing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6575
 
 Original creator: was
 

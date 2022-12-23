@@ -1,6 +1,6 @@
 # Issue 6159: Implement real_part for CDF and CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6159
 
 Original creator: jason
 

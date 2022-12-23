@@ -1,6 +1,6 @@
 # Issue 913: real_roots code fails if polynomial obviously has no roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/913
 
 Original creator: cwitty
 

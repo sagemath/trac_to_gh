@@ -1,6 +1,6 @@
 # Issue 9132: .rej should not be in .hgignore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9132
 
 Original creator: was
 

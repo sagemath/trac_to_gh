@@ -1,6 +1,6 @@
 # Issue 2184: [with patch, needs easy review] readjust xmin...ymax for plotting digraphs with arrows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2184
 
 Original creator: rlm
 

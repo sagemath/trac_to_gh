@@ -1,6 +1,6 @@
 # Issue 1604: more locale problems with python exposed by matplotlib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1604
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2240: Docstrings and Doctests: calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2240
 
 Original creator: cswiercz
 
@@ -77,17 +77,17 @@ Comment by mabshoff created at 2008-02-26 05:28:49
 No dice, i.e. rejects for all patches:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8311-2.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8311-2.patch
 patching file sage/calculus/calculus.py
 Hunk #1 FAILED at 4409.
 1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej
 patching file sage/misc/hg.py
 Hunk #1 succeeded at 169 (offset 32 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8312.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8312.patch
 patching file sage/calculus/calculus.py
 Hunk #1 FAILED at 437.
 1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8313.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8313.patch
 patching file sage/calculus/calculus.py
 Hunk #1 FAILED at 449.
 Hunk #2 FAILED at 2545.

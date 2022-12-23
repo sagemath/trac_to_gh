@@ -1,6 +1,6 @@
 # Issue 5960: fix bug in documentation of find_minimum_on_interval
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5960
 
 Original creator: was
 

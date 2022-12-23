@@ -1,6 +1,6 @@
 # Issue 1804: Factorization.__mul__ assumes that the primes in the factorization commute, which may not be a valid assumption
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1804
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2477: 3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2477
 
 Original creator: was
 

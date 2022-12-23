@@ -1,6 +1,6 @@
 # Issue 4648: sparse linear algebra: nonzero_positions is slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4648
 
 Original creator: boothby
 

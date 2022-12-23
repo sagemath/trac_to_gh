@@ -1,6 +1,6 @@
 # Issue 4699: should be even more easier to change how many threads used for "make ptest" and friends
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4699
 
 Original creator: ddrake
 

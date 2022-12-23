@@ -1,6 +1,6 @@
 # Issue 9045: is_isomorphic bug (two generalized quadrangles over GF(5))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9045
 
 Original creator: rlm
 

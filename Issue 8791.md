@@ -1,6 +1,6 @@
 # Issue 8791: improve doctest coverage of libs/mpmath/ext_main.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8791
 
 Original creator: mvngu
 
@@ -13,7 +13,7 @@ CC:  fredrik.johansson schilly
 As the subject says. As of Sage 4.4, the doctest coverage of `sage/libs/mpmath/ext_main.pyx` is:
 
 ```
-[mvngu`@`sage mpmath]$ sage -coverage ext_main.pyx 
+[mvngu@sage mpmath]$ sage -coverage ext_main.pyx 
 ----------------------------------------------------------------------
 ext_main.pyx
 ERROR: Please add a `TestSuite(s).run()` doctest.

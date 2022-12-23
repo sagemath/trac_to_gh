@@ -1,6 +1,6 @@
 # Issue 1692: Make doc target force to use local sage instead of sage in $PATH
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1692
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1095: [with patch] silly annoyance in sage -coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1095
 
 Original creator: craigcitro
 

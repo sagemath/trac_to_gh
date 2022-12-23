@@ -1,6 +1,6 @@
 # Issue 2822: Invalid read in libgroebner.so [picked up by valgrinding catalogue.py]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2822
 
 Original creator: mabshoff
 

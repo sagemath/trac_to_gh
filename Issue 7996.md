@@ -1,6 +1,6 @@
 # Issue 7996: Invisible Text With Dark Theme (White on White Text)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7996
 
 Original creator: acleone
 

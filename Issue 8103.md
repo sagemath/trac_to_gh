@@ -1,6 +1,6 @@
 # Issue 8103: Published worksheets aren't inert
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8103
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 1800: bug with RealIntervalField / MPFI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1800
 
 Original creator: mhansen
 

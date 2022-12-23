@@ -1,6 +1,6 @@
 # Issue 9052: Hasse invariant for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9052
 
 Original creator: voloch
 

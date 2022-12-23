@@ -1,6 +1,6 @@
 # Issue 6834: upgrade Valgrind to version 3.5.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6834
 
 Original creator: mvngu
 

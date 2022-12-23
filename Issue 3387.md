@@ -1,6 +1,6 @@
 # Issue 3387: unacceptably slow conversion of rationals from pari to Rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3387
 
 Original creator: dmharvey
 

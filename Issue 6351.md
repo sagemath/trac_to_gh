@@ -1,6 +1,6 @@
 # Issue 6351: [with patch, needs review] typo in Graph.plot docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6351
 
 Original creator: rlm
 

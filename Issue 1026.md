@@ -1,6 +1,6 @@
 # Issue 1026: memleak in linbox's gmp++_int_io.C
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1026
 
 Original creator: mabshoff
 

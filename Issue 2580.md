@@ -1,6 +1,6 @@
 # Issue 2580: [with patch, needs review] Implement backends for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2580
 
 Original creator: rlm
 

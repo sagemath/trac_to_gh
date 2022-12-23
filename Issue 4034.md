@@ -1,6 +1,6 @@
 # Issue 4034: [with spkg, needs review] Fix rubiks.spkg build on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4034
 
 Original creator: mabshoff
 

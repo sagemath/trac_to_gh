@@ -1,6 +1,6 @@
 # Issue 2656: "sage -hg" does not handle quoting correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2656
 
 Original creator: cwitty
 
@@ -30,16 +30,16 @@ Comment by mabshoff created at 2008-04-13 19:03:49
 We need to escape the '"' (and probably some other characters):
 
 ```
-[mabshoff`@`localhost ~]$ ./foo.bash commit -m "This is my great new code."
+[mabshoff@localhost ~]$ ./foo.bash commit -m "This is my great new code."
 commit -m This is my great new code.
-[mabshoff`@`localhost ~]$ ./foo.bash commit -m \"This is my great new code.\"
+[mabshoff@localhost ~]$ ./foo.bash commit -m \"This is my great new code.\"
 commit -m "This is my great new code."
 ```
 
 where foo.bash is
 
 ```/bin/bash
-echo "$`@`"
+echo "$@"
 ```
 
 

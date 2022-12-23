@@ -1,6 +1,6 @@
 # Issue 2825: notebook -- document js.py some more
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2825
 
 Original creator: was
 

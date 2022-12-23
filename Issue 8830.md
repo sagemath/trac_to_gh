@@ -1,6 +1,6 @@
 # Issue 8830: polybori-0.6.4.spkg causes crashes on exit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8830
 
 Original creator: wjp
 

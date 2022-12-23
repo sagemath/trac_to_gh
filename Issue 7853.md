@@ -1,6 +1,6 @@
 # Issue 7853: block_and_cut_vertices is inconsistent when graph has one vertex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7853
 
 Original creator: jason
 

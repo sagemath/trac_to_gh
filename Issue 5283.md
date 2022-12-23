@@ -1,6 +1,6 @@
 # Issue 5283: problem with posets: iterating the subposet construction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5283
 
 Original creator: jhpalmieri
 

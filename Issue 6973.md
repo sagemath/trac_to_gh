@@ -1,6 +1,6 @@
 # Issue 6973: SVG or other vector graphics editor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6973
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 9735: Numerical noise on sage/stats/hmm/chmm.pyx on both Solaris x86 and OpenSolaris x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9735
 
 Original creator: drkirkby
 
@@ -153,7 +153,7 @@ Prior to adding your patch I got a failure recorded in ptestlong.log, as noted i
 
 
 ```
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx
+drkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx
 sage -t -long "devel/sage/sage/stats/hmm/chmm.pyx"          
 	 [11.1 s]
  

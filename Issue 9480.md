@@ -1,6 +1,6 @@
 # Issue 9480: Sage mixes Infinity and +Infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9480
 
 Original creator: zimmerma
 

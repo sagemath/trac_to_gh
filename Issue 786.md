@@ -1,6 +1,6 @@
 # Issue 786: standard smith normal form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/786
 
 Original creator: syazdani
 

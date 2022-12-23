@@ -1,6 +1,6 @@
 # Issue 7746: Blum-Goldwasser probabilistic encryption
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7746
 
 Original creator: mvngu
 

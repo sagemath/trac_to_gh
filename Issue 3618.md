@@ -1,6 +1,6 @@
 # Issue 3618: Bump Maxima dues to new clisp release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3618
 
 Original creator: mabshoff
 

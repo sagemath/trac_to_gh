@@ -1,6 +1,6 @@
 # Issue 3984: Sage 3.1.2.alpha1 - Linux Itanium - segfaults in chmm.pyx and hmm.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3984
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ CC:  bober
 On Iras:
 
 ```
-mabshoff`@`iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/chmm.pyx
+mabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/chmm.pyx
 sage -t -long devel/sage/sage/stats/hmm/chmm.pyx            
 
 ------------------------------------------------------------
@@ -36,7 +36,7 @@ The following tests failed:
 
         sage -t -long devel/sage/sage/stats/hmm/chmm.pyx
 Total time for all tests: 4.4 seconds
-mabshoff`@`iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/hmm.pyx
+mabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/hmm.pyx
 sage -t -long devel/sage/sage/stats/hmm/hmm.pyx             
 
 ------------------------------------------------------------
@@ -59,7 +59,7 @@ The following tests failed:
 
         sage -t -long devel/sage/sage/stats/hmm/hmm.pyx
 Total time for all tests: 3.0 seconds
-mabshoff`@`iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> 
+mabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> 
 ```
 
 

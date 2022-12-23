@@ -1,6 +1,6 @@
 # Issue 1335: [with patch] 2.8.14/Linux PPC: lcalc doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1335
 
 Original creator: mabshoff
 

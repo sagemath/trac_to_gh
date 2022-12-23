@@ -1,6 +1,6 @@
 # Issue 9700: Export check_edge_label from sparse_graph.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9700
 
 Original creator: rhinton
 

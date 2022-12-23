@@ -1,6 +1,6 @@
 # Issue 5637: [with patch, needs review] allow \[ and \] to delimit math in %html blocks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5637
 
 Original creator: jhpalmieri
 

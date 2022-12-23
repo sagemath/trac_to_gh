@@ -1,6 +1,6 @@
 # Issue 8342: Efficient Arbitrary Sequence Generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8342
 
 Original creator: colah
 

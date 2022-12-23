@@ -1,6 +1,6 @@
 # Issue 2712: Add 'scalar_part()' and other methods for quaternion elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2712
 
 Original creator: justin
 

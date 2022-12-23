@@ -1,6 +1,6 @@
 # Issue 9189: libgcrypt fails to build on Fedora 13
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9189
 
 Original creator: jsp
 
@@ -97,7 +97,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing libgcrypt-1.4.4.p3.spkg
-[jaap`@`paix sage-4.4.3]$ 
+[jaap@paix sage-4.4.3]$ 
 
 ```
 

@@ -1,6 +1,6 @@
 # Issue 470: libpari doesn't deallocate its 100,000,000 byte stack
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/470
 
 Original creator: mabshoff
 

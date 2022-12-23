@@ -1,6 +1,6 @@
 # Issue 7100: rounding error in QuadraticForm.vectors_by_length()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7100
 
 Original creator: tornaria
 

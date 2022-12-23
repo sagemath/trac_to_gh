@@ -1,6 +1,6 @@
 # Issue 7091: sqlachemy test suite fails when building with SAGE_CHECK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7091
 
 Original creator: davidloeffler
 

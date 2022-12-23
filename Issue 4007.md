@@ -1,6 +1,6 @@
 # Issue 4007: OSX 10.4/5: build libpng.dylib again
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4007
 
 Original creator: mabshoff
 

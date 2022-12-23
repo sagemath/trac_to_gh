@@ -1,6 +1,6 @@
 # Issue 6314: optional doctest failure -- many failures in linear_codes related to wtdist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6314
 
 Original creator: was
 

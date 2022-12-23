@@ -1,6 +1,6 @@
 # Issue 8820: elliptic_exponential broken for curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8820
 
 Original creator: robertwb
 
@@ -271,7 +271,7 @@ OK, I'm not sure what the issues were there but the new patch applies fine after
 
 ```
 ...
-# User Jeroen Demeyer <jdemeyer`@`cage.ugent.be>
+# User Jeroen Demeyer <jdemeyer@cage.ugent.be>
 ...
 [mq]: 8820_rebase_after_9931
 ```

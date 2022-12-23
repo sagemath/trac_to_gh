@@ -1,6 +1,6 @@
 # Issue 2560: serious inefficiency in order of points on elliptic curvews over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2560
 
 Original creator: cremona
 

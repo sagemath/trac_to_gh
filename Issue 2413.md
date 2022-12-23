@@ -1,6 +1,6 @@
 # Issue 2413: Correction in "How to use the Sage Notebook"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2413
 
 Original creator: hfvillafuerte
 

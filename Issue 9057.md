@@ -1,6 +1,6 @@
 # Issue 9057: Supporting elliptic curves over function fields and their L-functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9057
 
 Original creator: salmanhb
 

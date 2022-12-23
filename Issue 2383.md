@@ -1,6 +1,6 @@
 # Issue 2383: memory leak when converting between GMP-based types and numpy types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2383
 
 Original creator: craigcitro
 

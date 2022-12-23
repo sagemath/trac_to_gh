@@ -1,6 +1,6 @@
 # Issue 8382: missing previous_probable_prime (companion to next_probable_prime)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8382
 
 Original creator: zimmerma
 

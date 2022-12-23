@@ -1,6 +1,6 @@
 # Issue 160: partitions -- sage dies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/160
 
 Original creator: was
 
@@ -23,7 +23,7 @@ On Oct 28, 2006, at 12:28 , David Joyner wrote:
 > sage: time  P = partitions_set(range(n),3)
 > /home/wdj/sagefiles/sage-1.4.1/local/bin/sage-sage: line 163: 22761
 > Killed                  sage-ipython -c "$SAGE_STARTUP_COMMAND;" $*
-> wdj`@`wooster:~/sagefiles/sage-1.4.1>
+> wdj@wooster:~/sagefiles/sage-1.4.1>
  
 Looks like a Gap or Python runaway problem.  On Mac OS X, SAGE  
 doesn't die, but I get this:

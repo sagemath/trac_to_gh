@@ -1,6 +1,6 @@
 # Issue 7421: Weaker precondition for registering a new coercion.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7421
 
 Original creator: nthiery
 

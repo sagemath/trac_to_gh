@@ -1,6 +1,6 @@
 # Issue 169: slice assignment not implemented for PARI C library interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/169
 
 Original creator: was
 
@@ -155,7 +155,7 @@ Comment by mabshoff created at 2008-11-14 05:33:50
 Indeed:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2.rc0, Release Date: 2008-11-10                     |

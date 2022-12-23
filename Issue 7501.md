@@ -1,6 +1,6 @@
 # Issue 7501: notebook -- include codemirror in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7501
 
 Original creator: was
 

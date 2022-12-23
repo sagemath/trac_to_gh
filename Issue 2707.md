@@ -1,6 +1,6 @@
 # Issue 2707: [with patch, needs review] clean and better document is_totally_real(), add is_totally_imaginary() to NumberField_generic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2707
 
 Original creator: ncalexan
 

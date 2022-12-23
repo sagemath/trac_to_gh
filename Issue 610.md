@@ -1,6 +1,6 @@
 # Issue 610: padics have no doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/610
 
 Original creator: boothby
 

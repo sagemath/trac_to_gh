@@ -1,6 +1,6 @@
 # Issue 3506: I can't build m4ri on the vmware image unless I replace the ctypedef int bit by just an int in the two places it is used.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3506
 
 Original creator: was
 
@@ -46,7 +46,7 @@ Fix attached.   This may have to do with a C namespace clash for some compilers.
 the vmware sage image we have:
 
 ```
-root`@`sage:/usr/local/sage# gcc -v
+root@sage:/usr/local/sage# gcc -v
 Using built-in specs.
 Target: i486-linux-gnu
 Configured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release i486-linux-gnu

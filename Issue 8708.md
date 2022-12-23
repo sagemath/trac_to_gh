@@ -1,6 +1,6 @@
 # Issue 8708: allow doctest script to handle docstrings with triple single quotes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8708
 
 Original creator: mvngu
 
@@ -86,7 +86,7 @@ Oh, you're right.  I'm replacing my patch with a new one, the difference being
 diff --git a/sage-doctest b/sage-doctest
 --- a/sage-doctest
 +++ b/sage-doctest
-`@``@` -452,8 +452,10 `@``@` def change_warning_output(file):
+@@ -452,8 +452,10 @@ def change_warning_output(file):
              tmpfiles.append(os.path.join(SAGE_TESTDIR, name + '.pyc'))
  
      # Prefix/suffix for all doctests replacing the starting/ending """
@@ -99,7 +99,7 @@ diff --git a/sage-doctest b/sage-doctest
  
      n = 0
      # Now extract the docstring by using a regular expression search
-`@``@` -499,7 +501,10 `@``@` def change_warning_output(file):
+@@ -499,7 +501,10 @@ def change_warning_output(file):
              name = "example"
              s += "def %s_%s():"%(name,n_str)
              n += 1
@@ -187,7 +187,7 @@ The part needing review:
 diff --git a/sage-doctest b/sage-doctest
 --- a/sage-doctest
 +++ b/sage-doctest
-`@``@` -510,7 +510,7 `@``@` def check_with_tolerance(expected, actua
+@@ -510,7 +510,7 @@ def check_with_tolerance(expected, actua
  
          elif ext in ['.py', '.sage']:
  
@@ -196,7 +196,7 @@ diff --git a/sage-doctest b/sage-doctest
              target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base'
  
              if ext == '.sage':
-`@``@` -528,9 +528,9 `@``@` def check_with_tolerance(expected, actua
+@@ -528,9 +528,9 @@ def check_with_tolerance(expected, actua
                  # TODO: instead of copying the file, add its source
                  # directory to PYTHONPATH.  We would also have to
                  # import from 'name' instead of 'target_name'.
@@ -229,7 +229,7 @@ Sorry, here's a new version.  The relevant changes:
 diff --git a/sage-doctest b/sage-doctest
 --- a/sage-doctest
 +++ b/sage-doctest
-`@``@` -510,8 +510,9 `@``@` def check_with_tolerance(expected, actua
+@@ -510,8 +510,9 @@ def check_with_tolerance(expected, actua
  
          elif ext in ['.py', '.sage']:
  
@@ -241,7 +241,7 @@ diff --git a/sage-doctest b/sage-doctest
  
              if ext == '.sage':
                  # TODO: preparse "<file>.sage" with a Sage library call
-`@``@` -528,7 +529,7 `@``@` def check_with_tolerance(expected, actua
+@@ -528,7 +529,7 @@ def check_with_tolerance(expected, actua
                  # TODO: instead of copying the file, add its source
                  # directory to PYTHONPATH.  We would also have to
                  # import from 'name' instead of 'target_name'.
@@ -506,7 +506,7 @@ For the sagenb problem, this patch seems to fix things:
 diff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py
 --- a/sagenb/notebook/worksheet.py
 +++ b/sagenb/notebook/worksheet.py
-`@``@` -3881,15 +3881,7 `@``@` except (KeyError, IOError):
+@@ -3881,15 +3881,7 @@ except (KeyError, IOError):
              C.delete_output()
  
  

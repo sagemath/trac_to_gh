@@ -1,6 +1,6 @@
 # Issue 8259: Conversion from symmetric polynomials to basis of monomial symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8259
 
 Original creator: aschilling
 

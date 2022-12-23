@@ -1,6 +1,6 @@
 # Issue 3197: fix 64 bit OSX build support for m4ri
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3197
 
 Original creator: mabshoff
 

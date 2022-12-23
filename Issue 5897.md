@@ -1,6 +1,6 @@
 # Issue 5897: add some javascript to make jsmath happier (very easy ticket to close, probably)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5897
 
 Original creator: was
 

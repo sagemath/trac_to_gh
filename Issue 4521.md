@@ -1,6 +1,6 @@
 # Issue 4521: Trivial permutation group enumeration bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4521
 
 Original creator: kohel
 

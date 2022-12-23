@@ -1,6 +1,6 @@
 # Issue 3074: [with spkg] Cyton 0.9.6.14 released
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3074
 
 Original creator: robertwb
 

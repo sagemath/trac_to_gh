@@ -1,6 +1,6 @@
 # Issue 690: VMware sage doesn't allow creation of files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/690
 
 Original creator: jvoight
 

@@ -1,6 +1,6 @@
 # Issue 2354: bug in matrix_real_double_dense  (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2354
 
 Original creator: was
 

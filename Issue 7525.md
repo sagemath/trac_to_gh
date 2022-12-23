@@ -1,6 +1,6 @@
 # Issue 7525: developer's guide: add information about editing python files in the sage library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7525
 
 Original creator: jhpalmieri
 

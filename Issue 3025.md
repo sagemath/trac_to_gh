@@ -1,6 +1,6 @@
 # Issue 3025: Sparse vector spaces don't cast on assignment.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3025
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 3980: Find_root bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3980
 
 Original creator: kcrisman
 

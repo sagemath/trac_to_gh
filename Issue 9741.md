@@ -1,6 +1,6 @@
 # Issue 9741: Sorting vertices of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9741
 
 Original creator: rbeezer
 

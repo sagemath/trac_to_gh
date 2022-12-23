@@ -1,6 +1,6 @@
 # Issue 5711: [with patch, needs review] Enhanced Typesetting of Symbolic Functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5711
 
 Original creator: gmhossain
 

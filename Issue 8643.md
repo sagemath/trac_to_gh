@@ -1,6 +1,6 @@
 # Issue 8643: The inverse of a morphism have the wrong domain and codomain
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8643
 
 Original creator: boussica
 

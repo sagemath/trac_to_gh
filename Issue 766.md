@@ -1,6 +1,6 @@
 # Issue 766: Duplicate method in structure/formal_sum.py:FormalSums_generic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/766
 
 Original creator: justin
 

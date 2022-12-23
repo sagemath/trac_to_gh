@@ -1,6 +1,6 @@
 # Issue 8113: gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8113
 
 Original creator: jsp
 
@@ -44,7 +44,7 @@ The spkg is here:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so
 lib/libgd.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 
 ```
@@ -75,9 +75,9 @@ The files are indeed 64-bit now
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/bin/annotate
+drkirkby@hawk:~/sage-4.3.1$ file local/bin/annotate
 local/bin/annotate:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0
 local/lib/libgd.so.2.0.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
 

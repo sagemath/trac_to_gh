@@ -1,6 +1,6 @@
 # Issue 1436: FLINT 1.01 doesn't pass test suite on OSX 10.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1436
 
 Original creator: mabshoff
 

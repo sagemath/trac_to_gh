@@ -1,6 +1,6 @@
 # Issue 4958: MPolynomialIdeal.reduced_basis?? returns decorator source
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4958
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4061: coercion from torsion subgroup of elliptic curve to elliptic curve is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4061
 
 Original creator: was
 

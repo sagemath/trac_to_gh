@@ -1,6 +1,6 @@
 # Issue 9622: Check SPKGs more vigorously for common problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9622
 
 Original creator: mpatel
 

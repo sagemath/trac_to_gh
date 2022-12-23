@@ -1,6 +1,6 @@
 # Issue 2815: docstring errors in coding/pbori
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2815
 
 Original creator: wdj
 

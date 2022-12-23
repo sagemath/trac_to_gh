@@ -1,6 +1,6 @@
 # Issue 3419: [with patch, needs review] 100% coverage for sage.coding.binary_code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3419
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 8810: Implementation of Stanley symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8810
 
 Original creator: aschilling
 

@@ -1,6 +1,6 @@
 # Issue 2328: many docstrings in combinat functions are unhelpful, outdated, or wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2328
 
 Original creator: ddrake
 

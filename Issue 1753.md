@@ -1,6 +1,6 @@
 # Issue 1753: install_scripts() conflict with make install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1753
 
 Original creator: pgrinber
 

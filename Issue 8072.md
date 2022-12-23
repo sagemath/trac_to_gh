@@ -1,6 +1,6 @@
 # Issue 8072: Kernels of matrices over integral domains are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8072
 
 Original creator: rbeezer
 

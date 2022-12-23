@@ -1,6 +1,6 @@
 # Issue 5467: The sage/macaulay2 interface doesn't work at all on large input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5467
 
 Original creator: was
 

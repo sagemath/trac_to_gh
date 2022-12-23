@@ -1,6 +1,6 @@
 # Issue 5905: [with patch, needs review (trivial)] minor fix to ReST markup in ell_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5905
 
 Original creator: cremona
 

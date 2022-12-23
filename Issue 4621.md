@@ -1,6 +1,6 @@
 # Issue 4621: '2' not in QQbar -- canonical embedding of subfields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4621
 
 Original creator: SimonKing
 

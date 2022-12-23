@@ -1,6 +1,6 @@
 # Issue 2314: Coercion Rewrite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2314
 
 Original creator: roed
 

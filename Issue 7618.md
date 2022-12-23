@@ -1,6 +1,6 @@
 # Issue 7618: notebook -- make it easy to configure keyboard shortcuts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7618
 
 Original creator: was
 

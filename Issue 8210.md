@@ -1,6 +1,6 @@
 # Issue 8210: Problem in Displaying Graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8210
 
 Original creator: pong
 

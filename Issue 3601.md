@@ -1,6 +1,6 @@
 # Issue 3601: Reimplementation of tensor products
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3601
 
 Original creator: aschilling
 

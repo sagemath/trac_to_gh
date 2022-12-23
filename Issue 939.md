@@ -1,6 +1,6 @@
 # Issue 939: segfault in graph_isom.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/939
 
 Original creator: was
 

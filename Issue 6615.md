@@ -1,6 +1,6 @@
 # Issue 6615: Small bug in Graph.plot()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6615
 
 Original creator: ncohen
 

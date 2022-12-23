@@ -1,6 +1,6 @@
 # Issue 1811: command line detach -- completely missing from Sage!?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1811
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Jan 17, 2008 12:08 AM, Dan Drake <dr.dan.drake`@`gmail.com> wrote:
+On Jan 17, 2008 12:08 AM, Dan Drake <dr.dan.drake@gmail.com> wrote:
 > Hello,
 > 
 > I'd like to unattach a file that is currently attached. The

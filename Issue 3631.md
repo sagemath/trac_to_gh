@@ -1,6 +1,6 @@
 # Issue 3631: pbuild broken by binary *.pyc files in extcode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3631
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 6171: [with patch, needs review] make 'prec' work with sqrt more of the time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6171
 
 Original creator: jhpalmieri
 

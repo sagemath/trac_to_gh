@@ -1,6 +1,6 @@
 # Issue 3748: bug in integers modulo n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3748
 
 Original creator: zimmerma
 

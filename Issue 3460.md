@@ -1,6 +1,6 @@
 # Issue 3460: [with patch, needs review] add power_basis() to number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3460
 
 Original creator: ncalexan
 

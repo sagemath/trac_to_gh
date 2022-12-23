@@ -1,6 +1,6 @@
 # Issue 2536: get rid of SageObject.db and SageObject.version everywhere -- these turned out to "not catch on"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2536
 
 Original creator: was
 

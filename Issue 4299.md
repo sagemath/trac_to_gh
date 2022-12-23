@@ -1,6 +1,6 @@
 # Issue 4299: sha bound totally busted for rank 0 curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4299
 
 Original creator: was
 

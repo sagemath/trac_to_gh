@@ -1,6 +1,6 @@
 # Issue 3552: sage notebook -- worksheet.py -- bring coverage up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3552
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Bring the doctest coverage for worksheet.py up to 100%. Currently (in 3.0.3) cov
 
 
 ```
-was`@`sage:~/d/sage/server/notebook$ sage -coverage worksheet.py
+was@sage:~/d/sage/server/notebook$ sage -coverage worksheet.py
 ----------------------------------------------------------------------
 worksheet.py
 SCORE worksheet.py: 3% (6 of 193)

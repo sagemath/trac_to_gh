@@ -1,6 +1,6 @@
 # Issue 7655: notebook: make it so worksheets can be organized into a tree structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7655
 
 Original creator: was
 

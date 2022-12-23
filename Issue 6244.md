@@ -1,6 +1,6 @@
 # Issue 6244: conjugate() in sage-4.0 is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6244
 
 Original creator: gmhossain
 

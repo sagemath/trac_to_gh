@@ -1,6 +1,6 @@
 # Issue 9341: K.S_units doesn't check for repeated entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9341
 
 Original creator: syazdani
 

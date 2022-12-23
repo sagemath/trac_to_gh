@@ -1,6 +1,6 @@
 # Issue 719: make pari.allocatemen() more clever
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/719
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7461: partition_refinement.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7461
 
 Original creator: was
 
@@ -11,10 +11,10 @@ Assignee: mhansen
 I have witnessed this on many 32-bit linux machines:
 
 ```
-[wstein`@`flavius sage-4.2.1.rc0]$ ./sage -t --long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
+[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 sage -t --long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 
-[This is the Trac macro *times out after 1800 seconds* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#times out after 1800 seconds-macro)
+[[times out after 1800 seconds]]
 
 ^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!
          [1387.2 s]
@@ -62,7 +62,7 @@ Comment by rlm created at 2009-11-18 18:45:21
 On my virtual machine, 32-bit Ubuntu with non-verbose doctests:
 
 ```
-rlmill`@`rlm32ubu:~/sage-4.2.1-linux-Ubuntu_9.10-i686-Linux$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
+rlmill@rlm32ubu:~/sage-4.2.1-linux-Ubuntu_9.10-i686-Linux$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
 init.sage does not exist ... creating
 sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 	 [228.4 s]
@@ -105,7 +105,7 @@ I'm noticing other strange behavior here too. To debug, I had the code writing t
 
 
 ```
-wstein`@`centos53-32:/tmp/wstein/farm/sage-4.2.1$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
+wstein@centos53-32:/tmp/wstein/farm/sage-4.2.1$ ./sage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx
 sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 KeyboardInterrupt -- interrupted after 3.99422097206 seconds!
 	 [4.5 s]

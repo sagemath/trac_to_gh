@@ -1,6 +1,6 @@
 # Issue 8456: lazy import improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8456
 
 Original creator: robertwb
 
@@ -278,7 +278,7 @@ Are you sure that's right?
 
 
 ```
-rlmill`@`fermat:~/sage-4.6.1.alpha2/devel/sage-main$ hg qpush
+rlmill@fermat:~/sage-4.6.1.alpha2/devel/sage-main$ hg qpush
 applying 8456-lazy-import-cython-rebase-4.6.patch
 unable to find 'sage/misc/lazy_import.pyx' for patching
 8 out of 8 hunks FAILED -- saving rejects to file sage/misc/lazy_import.pyx.rej

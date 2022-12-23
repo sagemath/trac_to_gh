@@ -1,6 +1,6 @@
 # Issue 3921: calculus -- solve(..., constant) should complain by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3921
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 812: add Pollack/Stevens overconvergent modular symbols code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/812
 
 Original creator: craigcitro
 

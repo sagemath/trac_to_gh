@@ -1,6 +1,6 @@
 # Issue 784: quotient spaces of vector spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/784
 
 Original creator: nbruin
 

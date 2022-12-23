@@ -1,6 +1,6 @@
 # Issue 5549: ?? help in notebook is broken for functions defined in C
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5549
 
 Original creator: cwitty
 

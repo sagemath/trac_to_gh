@@ -1,6 +1,6 @@
 # Issue 9410: EC.local_data() can't handle extensions of number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9410
 
 Original creator: arminstraub
 

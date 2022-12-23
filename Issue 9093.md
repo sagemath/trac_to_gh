@@ -1,6 +1,6 @@
 # Issue 9093: is_square broken for constant polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9093
 
 Original creator: robertwb
 

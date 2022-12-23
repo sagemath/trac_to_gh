@@ -1,6 +1,6 @@
 # Issue 7633: sagenb -- add "Save/ Cancel" buttons to the top of the display too for notebook settings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7633
 
 Original creator: was
 

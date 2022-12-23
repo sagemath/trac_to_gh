@@ -1,6 +1,6 @@
 # Issue 6393: Jacobi sums incorrect when exactly one chacater is trivial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6393
 
 Original creator: wdj
 

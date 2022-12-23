@@ -1,6 +1,6 @@
 # Issue 851: [with patch] graphs: line_graph function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/851
 
 Original creator: jason
 

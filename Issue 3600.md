@@ -1,6 +1,6 @@
 # Issue 3600: [with patch, needs review] implement process pool for dsage workers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3600
 
 Original creator: yi
 

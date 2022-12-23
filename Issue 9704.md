@@ -1,6 +1,6 @@
 # Issue 9704: refactor "trace" -- make trace command call trace method on input if available
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9704
 
 Original creator: was
 

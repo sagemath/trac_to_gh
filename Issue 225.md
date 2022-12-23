@@ -1,6 +1,6 @@
 # Issue 225: loading files and worksheets from urls
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/225
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Sat, 27 Jan 2007 21:02:14 -0800, Timothy Clemans <timothy.clemans`@`gmail.com> wrote:
+On Sat, 27 Jan 2007 21:02:14 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:
 
 >
 > Could a system be added for loading code from a url 
@@ -54,7 +54,7 @@ Comment by was created at 2007-08-23 06:01:35
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1187841524 25200
 # Node ID a1d6af5dbe318ece8a09838a6b27779dfe648439
 # Parent  969de27b13ba72b3033415ec1929a85d4d5ba57f
@@ -63,7 +63,7 @@ More work on trac #225.
 diff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py
 --- a/sage/server/notebook/worksheet.py Wed Aug 22 20:56:36 2007 -0700
 +++ b/sage/server/notebook/worksheet.py Wed Aug 22 20:58:44 2007 -0700
-`@``@` -22,6 +22,8 `@``@` import traceback
+@@ -22,6 +22,8 @@ import traceback
  import traceback
  import time
  import crypt
@@ -72,7 +72,7 @@ diff -r 969de27b13ba -r a1d6af5dbe31 sage/server/notebook/worksheet.py
 
  import bz2
 
-`@``@` -1775,6 +1777,8 `@``@` class Worksheet:
+@@ -1775,6 +1777,8 @@ class Worksheet:
          return [self.directory() + '/data/'] + [D + x for x in os.listdir(D)]
 
      def hunt_file(self, filename):

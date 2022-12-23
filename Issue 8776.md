@@ -1,6 +1,6 @@
 # Issue 8776: notebook: sage notebook undo doesn't really work, due to not enough (=no) automatic snapshots, or other bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8776
 
 Original creator: was
 
@@ -71,7 +71,7 @@ cd "/home/uname/Programs/sage-test/devel/sage" && hg import   "/home/uname/Downl
 applying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch
 internal patcher failed
 please report details to http://mercurial.selenic.com/bts/
-or mercurial`@`selenic.com
+or mercurial@selenic.com
 /home/uname/Programs/sage-test/local/bin/patch: **** Only garbage was found in the patch input.
 abort: patch command failed: exited with status 512
 ```

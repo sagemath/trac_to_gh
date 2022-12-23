@@ -1,6 +1,6 @@
 # Issue 1399: Problems with arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1399
 
 Original creator: ljpk
 

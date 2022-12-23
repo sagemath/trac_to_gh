@@ -1,6 +1,6 @@
 # Issue 6824: cdef in timeseries.pyx follows use of variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6824
 
 Original creator: jason
 

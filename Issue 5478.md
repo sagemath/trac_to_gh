@@ -1,6 +1,6 @@
 # Issue 5478: RestrictedPartitions is very slow and a huge memory hog
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5478
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 8846: fix partitions in Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8846
 
 Original creator: mhansen
 

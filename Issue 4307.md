@@ -1,6 +1,6 @@
 # Issue 4307: bad error message in SupersingularModule constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4307
 
 Original creator: was
 

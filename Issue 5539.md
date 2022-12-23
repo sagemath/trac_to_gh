@@ -1,6 +1,6 @@
 # Issue 5539: "sage -docbuild" could use a better error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5539
 
 Original creator: robertwb
 

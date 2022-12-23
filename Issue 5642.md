@@ -1,6 +1,6 @@
 # Issue 5642: Overconvergent modular forms for genus 0 primes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5642
 
 Original creator: davidloeffler
 

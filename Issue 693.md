@@ -1,6 +1,6 @@
 # Issue 693: Script to spawn a browser / start notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/693
 
 Original creator: boothby
 

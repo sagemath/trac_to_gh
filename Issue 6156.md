@@ -1,6 +1,6 @@
 # Issue 6156: gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6156
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9311: Add an spkg-check file for ratpoints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9311
 
 Original creator: drkirkby
 

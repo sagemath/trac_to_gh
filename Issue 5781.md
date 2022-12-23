@@ -1,6 +1,6 @@
 # Issue 5781: [with patch, need review] The empty standard tableau exists ! :-)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5781
 
 Original creator: hivert
 

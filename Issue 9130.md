@@ -1,6 +1,6 @@
 # Issue 9130: Access to beta function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9130
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 7417: disturbing notebook resource limit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7417
 
 Original creator: was
 

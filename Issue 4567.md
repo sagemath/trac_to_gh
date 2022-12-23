@@ -1,6 +1,6 @@
 # Issue 4567: Create Sage 3.2 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4567
 
 Original creator: mabshoff
 

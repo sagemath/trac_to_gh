@@ -1,6 +1,6 @@
 # Issue 1951: reducation map modulo a number field prime ideal still not 100% done
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1951
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 188: Python's builtin round function is funny since it always coerces to float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/188
 
 Original creator: was
 
@@ -61,7 +61,7 @@ Fixed
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169751099 28800
 # Node ID 07471d5dfebfbed422959b60efed67f10ddb028c
 # Parent  8faeaa5cc7cbc2f90c980a2011c354ba5479f615
@@ -70,7 +70,7 @@ Trac #188 -- wrap builtin round in RDF.
 diff -r 8faeaa5cc7cb -r 07471d5dfebf sage/misc/functional.py
 --- a/sage/misc/functional.py   Thu Jan 25 10:32:04 2007 -0800
 +++ b/sage/misc/functional.py   Thu Jan 25 10:51:39 2007 -0800
-`@``@` -30,7 +30,10 `@``@` import sage.interfaces.expect
+@@ -30,7 +30,10 @@ import sage.interfaces.expect
  import sage.interfaces.expect
  
  from sage.rings.complex_double import CDF
@@ -82,7 +82,7 @@ diff -r 8faeaa5cc7cb -r 07471d5dfebf sage/misc/functional.py
  
  ##############################################################################
  # There are many functions on elements of a ring, which mathematicians
-`@``@` -759,6 +762,26 `@``@` def regulator(x):
+@@ -759,6 +762,26 @@ def regulator(x):
      """
      return x.regulator()
  
@@ -112,7 +112,7 @@ diff -r 8faeaa5cc7cb -r 07471d5dfebf sage/misc/functional.py
 diff -r 8faeaa5cc7cb -r 07471d5dfebf sage/rings/number_field/number_field_ideal.py
 --- a/sage/rings/number_field/number_field_ideal.py     Thu Jan 25 10:32:04 2007 -0800
 +++ b/sage/rings/number_field/number_field_ideal.py     Thu Jan 25 10:51:39 2007 -0800
-`@``@` -538,7 +538,7 `@``@` class NumberFieldIdeal_rel(NumberFieldId
+@@ -538,7 +538,7 @@ class NumberFieldIdeal_rel(NumberFieldId
          Compute the relative norm of this extension L/K as an ideal of K.
  
          EXAMPLE:

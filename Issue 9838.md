@@ -1,6 +1,6 @@
 # Issue 9838: Add dual cone computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9839
 
 Original creator: novoselt
 

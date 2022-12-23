@@ -1,6 +1,6 @@
 # Issue 1972: programming guide -- fix a confusing typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1972
 
 Original creator: was
 

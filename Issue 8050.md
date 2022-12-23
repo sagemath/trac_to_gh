@@ -1,6 +1,6 @@
 # Issue 8050: fix SPKG.txt in cddlib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8050
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 5020: auto-cells do not automaticall evaluate (or at least update)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5020
 
 Original creator: mhansen
 

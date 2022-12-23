@@ -1,6 +1,6 @@
 # Issue 4112: 3.1.2.rc2 doctest failure: sage/interfaces/sage0.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4112
 
 Original creator: craigcitro
 

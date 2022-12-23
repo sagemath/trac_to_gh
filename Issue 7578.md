@@ -1,6 +1,6 @@
 # Issue 7578: Slowness of InfinitePolynomialRing basic arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7578
 
 Original creator: SimonKing
 

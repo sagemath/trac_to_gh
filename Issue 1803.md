@@ -1,6 +1,6 @@
 # Issue 1803: Add HISTORY.txt to $SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1803
 
 Original creator: mabshoff
 

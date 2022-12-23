@@ -1,6 +1,6 @@
 # Issue 2674: Bug in modforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2674
 
 Original creator: justin
 

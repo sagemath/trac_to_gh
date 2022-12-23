@@ -1,6 +1,6 @@
 # Issue 8205: sagenb -- the url for published worksheets that's displayed right after publishing is still wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8205
 
 Original creator: was
 

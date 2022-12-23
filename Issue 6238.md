@@ -1,6 +1,6 @@
 # Issue 6238: possible failure in is_planar(set_embedding=True, set_pos=False)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6238
 
 Original creator: ncalexan
 

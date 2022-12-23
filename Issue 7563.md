@@ -1,6 +1,6 @@
 # Issue 7563: Interval Graphs : recognition and interval representation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7563
 
 Original creator: ncohen
 

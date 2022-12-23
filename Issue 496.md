@@ -1,6 +1,6 @@
 # Issue 496: In several places the generic powering and n*x code is stupid.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/496
 
 Original creator: was
 

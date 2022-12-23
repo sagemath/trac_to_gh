@@ -1,6 +1,6 @@
 # Issue 4392: smallest_integer() is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4392
 
 Original creator: cremona
 

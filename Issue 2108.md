@@ -1,6 +1,6 @@
 # Issue 2108: atlas tuning info for intel prescott cpus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2108
 
 Original creator: burcin
 

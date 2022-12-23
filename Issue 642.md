@@ -1,6 +1,6 @@
 # Issue 642: update to GMP-ECM-6.1.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/642
 
 Original creator: mabshoff
 

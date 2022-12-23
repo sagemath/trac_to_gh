@@ -1,6 +1,6 @@
 # Issue 1882: new phcpack spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1882
 
 Original creator: mhampton
 
@@ -109,7 +109,7 @@ The patch includes a syntax error, which I fixed like this:
 ```
 --- a/sage/interfaces/phc.py    Tue Feb 26 18:36:37 2008 -0600
 +++ b/sage/interfaces/phc.py    Thu Mar 13 18:34:51 2008 -0700
-`@``@` -274,7 +274,7 `@``@` class PHC:
+@@ -274,7 +274,7 @@ class PHC:
          child_phc.expect('results')
          dots = child_phc.read()
          if verbose:

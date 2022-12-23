@@ -1,6 +1,6 @@
 # Issue 1346: fpLLL doctests don't test fpLLL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1346
 
 Original creator: cwitty
 

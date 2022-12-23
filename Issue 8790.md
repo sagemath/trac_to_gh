@@ -1,6 +1,6 @@
 # Issue 8790: improve doctest coverage of logic/logic.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8790
 
 Original creator: mvngu
 
@@ -13,7 +13,7 @@ CC:  rws
 As the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:
 
 ```
-[mvngu`@`sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py 
+[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py 
 ----------------------------------------------------------------------
 devel/sage-main/sage/logic/logic.py
 ERROR: Please add a `TestSuite(s).run()` doctest.

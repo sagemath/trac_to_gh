@@ -1,6 +1,6 @@
 # Issue 8838: make "arrow()" take 3d vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8838
 
 Original creator: jason
 

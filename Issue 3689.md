@@ -1,6 +1,6 @@
 # Issue 3689: trivial problems in the examples spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3689
 
 Original creator: tabbott
 

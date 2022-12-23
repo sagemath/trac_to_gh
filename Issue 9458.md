@@ -1,6 +1,6 @@
 # Issue 9458: Bug with variable names in solve()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9458
 
 Original creator: tastalian
 

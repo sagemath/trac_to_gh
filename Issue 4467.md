@@ -1,6 +1,6 @@
 # Issue 4467: clean up or delete the (unused?) hanke extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4467
 
 Original creator: mabshoff
 

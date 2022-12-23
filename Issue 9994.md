@@ -1,6 +1,6 @@
 # Issue 9994: Python reports compiler is broken on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9995
 
 Original creator: drkirkby
 

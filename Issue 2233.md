@@ -1,6 +1,6 @@
 # Issue 2233: [with patch] "valuation too large" in padics on 64bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2233
 
 Original creator: wjp
 

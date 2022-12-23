@@ -1,6 +1,6 @@
 # Issue 6780: Stability improvement for lattice_polytope
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6780
 
 Original creator: novoselt
 

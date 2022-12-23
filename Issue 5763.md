@@ -1,6 +1,6 @@
 # Issue 5763: [with patch, needs review] pynac -- add _polynomial_ conversion constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5763
 
 Original creator: ncalexan
 

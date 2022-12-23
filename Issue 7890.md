@@ -1,6 +1,6 @@
 # Issue 7890: [new] Improve conversion of GAP objects into sage objects.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7890
 
 Original creator: jlopez
 

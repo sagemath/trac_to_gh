@@ -1,6 +1,6 @@
 # Issue 7911: scilab interface is missing in the notebook dropdown menu
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7911
 
 Original creator: olazo
 

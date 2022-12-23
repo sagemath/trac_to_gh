@@ -1,6 +1,6 @@
 # Issue 1043: constructing number field with check=False doesn't behave as it should
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1043
 
 Original creator: was
 

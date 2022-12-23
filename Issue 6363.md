@@ -1,6 +1,6 @@
 # Issue 6363: [with patch, needs review] Display Sage version on notebook login page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6363
 
 Original creator: mpatel
 

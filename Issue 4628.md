@@ -1,6 +1,6 @@
 # Issue 4628: [with patch; needs review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4628
 
 Original creator: was
 

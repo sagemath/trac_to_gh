@@ -1,6 +1,6 @@
 # Issue 8311: elliptic curve random point hangs when group is trivial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8311
 
 Original creator: cremona
 

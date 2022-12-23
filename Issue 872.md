@@ -1,6 +1,6 @@
 # Issue 872: singular fails factorization over a numberfield
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/872
 
 Original creator: mabshoff
 
@@ -15,7 +15,7 @@ See also http://www.singular.uni-kl.de/forum/viewtopic.php?t=1639
 But since it was reported by a Sage user it is worth tracking here:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.6/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high ./Singular-3-0-3
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.6/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high ./Singular-3-0-3
 ==25414== Memcheck, a memory error detector.
 ==25414== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
 ==25414== Using LibVEX rev 1788, a library for dynamic binary translation.

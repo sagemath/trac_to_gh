@@ -1,6 +1,6 @@
 # Issue 3685: make damned sure that "import sage.all" doesn't import ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3685
 
 Original creator: was
 
@@ -31,8 +31,8 @@ Here is how Ondrej Certik verifies that sage.all was importing ipython in sage-3
 I don't want to have anything in common with ipython, but sage invokes
 it on import sage.all, as can be checked easily:
 
-ondra`@`fuji:~/ext/sage$ . local/bin/sage-env
-ondra`@`fuji:~/ext/sage$ python
+ondra@fuji:~/ext/sage$ . local/bin/sage-env
+ondra@fuji:~/ext/sage$ python
 Python 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)
 [GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
@@ -44,7 +44,7 @@ Then apply this patch:
 --- /tmp/genutils.py    2008-07-20 16:33:15.000000000 +0200
 +++ local/lib/python2.5/site-packages/IPython/genutils.py       2008-07-20
 16:33:26.553433732 +0200
-`@``@` -54,6 +54,7 `@``@`
+@@ -54,6 +54,7 @@
         if not hasattr(stream,'write') or not hasattr(stream,'flush'):
             stream = fallback
         self.stream = stream
@@ -56,7 +56,7 @@ Then apply this patch:
 
 and:
 
-ondra`@`fuji:~/ext/sage$ python
+ondra@fuji:~/ext/sage$ python
 Python 2.5.2 (r252:60911, Jul 11 2008, 05:28:36)
 [GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.

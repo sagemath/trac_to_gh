@@ -1,6 +1,6 @@
 # Issue 6562: [with patch, needs review] Unicode support in TextCells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6562
 
 Original creator: mora
 

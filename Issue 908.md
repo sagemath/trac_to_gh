@@ -1,6 +1,6 @@
 # Issue 908: paru/gen.c causes internal compiler error on OpenSuSE 10.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/908
 
 Original creator: wdj
 

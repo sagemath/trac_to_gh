@@ -1,6 +1,6 @@
 # Issue 9079: fix bug in singular polynomial interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9079
 
 Original creator: was
 

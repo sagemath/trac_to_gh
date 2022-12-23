@@ -1,6 +1,6 @@
 # Issue 5377: weird output for trivial class group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5377
 
 Original creator: dmharvey
 

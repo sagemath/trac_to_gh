@@ -1,6 +1,6 @@
 # Issue 951: evaluating polynomial over Z/nZ produces incorrect type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/951
 
 Original creator: dmharvey
 

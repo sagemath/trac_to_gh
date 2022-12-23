@@ -1,6 +1,6 @@
 # Issue 8085: 1d line plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8085
 
 Original creator: jason
 

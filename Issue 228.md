@@ -1,6 +1,6 @@
 # Issue 228: bug in sage notebook cell parser and promp stripping.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/228
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On Sun, 28 Jan 2007 15:26:56 -0800, Timothy Clemans <timothy.clemans`@`gmail.com> wrote:
+On Sun, 28 Jan 2007 15:26:56 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:
 
 >
 > Just to show that something bad seems to be happening, I looked up the

@@ -1,6 +1,6 @@
 # Issue 4878: [with patch; needs review] Add a density_plot() function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4878
 
 Original creator: abergeron
 

@@ -1,6 +1,6 @@
 # Issue 536: off by one in NZL::vec_ZZ::SetLength(long) (from modular/dirichlet.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/536
 
 Original creator: mabshoff
 

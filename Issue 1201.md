@@ -1,6 +1,6 @@
 # Issue 1201: add gramm-schmidt to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1201
 
 Original creator: was
 

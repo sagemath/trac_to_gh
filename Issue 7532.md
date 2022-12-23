@@ -1,6 +1,6 @@
 # Issue 7532: "return NotImplementedError" in ring.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7532
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: AlexGhitza
 
 
 ```
-On Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64`@`gmail.com> wrote:
+On Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:
 > In ring.pyx, there is code like this:
 >
 >        if proof:
@@ -388,7 +388,7 @@ Comment by mvngu created at 2010-01-23 17:45:58
 First I applied patches at #7535 to Sage 4.3.1, then I applied [trac_7532-rings.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7532/trac_7532-rings.patch). Running doctest on the full Sage library results in the following failure:
 
 ```
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py"
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py", line 4027:

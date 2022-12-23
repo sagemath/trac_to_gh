@@ -1,6 +1,6 @@
 # Issue 6423: Sage not always understanding i=sqrt(-1)  - Maxima bug proably
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6423
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 4410: [with patch, needs review] Map.__pow__ should return identity for power 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4410
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 8344: Factor constant polynomials over QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8344
 
 Original creator: boothby
 
@@ -10,7 +10,7 @@ Assignee: AlexGhitza
 
 
 ```
-boothby`@`sage:~$ sage
+boothby@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: f = QQbar['x'](1)

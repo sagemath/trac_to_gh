@@ -1,6 +1,6 @@
 # Issue 2375: Sage 2.10.3.rc1: graph_isom.py doctest failure in PermutationGroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2375
 
 Original creator: mabshoff
 

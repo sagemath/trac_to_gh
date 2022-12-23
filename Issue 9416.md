@@ -1,6 +1,6 @@
 # Issue 9416: elliptic curve E.__call__ is not fully equivalent to E.point, specifically for check flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9416
 
 Original creator: rkirov
 

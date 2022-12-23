@@ -1,6 +1,6 @@
 # Issue 765: Ctrl-C unresponsive in rational_points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/765
 
 Original creator: nbruin
 

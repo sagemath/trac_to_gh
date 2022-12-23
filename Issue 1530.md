@@ -1,6 +1,6 @@
 # Issue 1530: [with patch] building tut.tex is currently broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1530
 
 Original creator: was
 

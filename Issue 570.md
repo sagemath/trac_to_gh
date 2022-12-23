@@ -1,6 +1,6 @@
 # Issue 570: rubik.solve doesn't work (sage -t --long groups/perm_gps/cubegroup.py  fails.)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/570
 
 Original creator: was
 
@@ -59,7 +59,7 @@ Fixed the docstring and now all tests pass:
 
 
 ```
-wdj`@`wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-cube/sage/groups/perm_gps/cubegroup.py"
+wdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-cube/sage/groups/perm_gps/cubegroup.py"
 sage -t --long devel/sage-cube/sage/groups/perm_gps/cubegroup.py
          [31.1 s]
 

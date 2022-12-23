@@ -1,6 +1,6 @@
 # Issue 5704: Implementation of finding elliptic curves with prescribed reduction over QQ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5704
 
 Original creator: cremona
 

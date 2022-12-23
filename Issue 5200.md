@@ -1,6 +1,6 @@
 # Issue 5200: [with patch, needs review] subsets and subwords bug fix + improvements.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5200
 
 Original creator: hivert
 

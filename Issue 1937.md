@@ -1,6 +1,6 @@
 # Issue 1937: fix LLL documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1937
 
 Original creator: malb
 

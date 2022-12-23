@@ -1,6 +1,6 @@
 # Issue 8728: Incorrect integral from Maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8728
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 7352: Update prereq to version 0.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7352
 
 Original creator: drkirkby
 

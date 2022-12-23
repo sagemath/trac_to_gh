@@ -1,6 +1,6 @@
 # Issue 9573: Error building the PDF reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9573
 
 Original creator: mpatel
 
@@ -21,7 +21,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 373276--373277
 ! Undefined control sequence.
 \u-default-1065 #1->\CYRSHCH
 
-l.373945 ...`@`PYGaB["]`@`PYGaB[Щ`@`_45]`@`PYGaB["]`@`rb[])
+l.373945 ...@PYGaB["]@PYGaB[Щ@_45]@PYGaB["]@rb[])
 
 ?
 ```

@@ -1,6 +1,6 @@
 # Issue 553: calling of symbolic expressions is sometimes ridiculous
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/553
 
 Original creator: was
 

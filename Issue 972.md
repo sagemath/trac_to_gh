@@ -1,6 +1,6 @@
 # Issue 972: SAGE 2.8.8.1 blows up building cddlib if libgmp is in /usr/local/lib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/972
 
 Original creator: justin
 

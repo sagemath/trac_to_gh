@@ -1,6 +1,6 @@
 # Issue 2434: [with patch, easy review] fix doctest in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2434
 
 Original creator: rlm
 

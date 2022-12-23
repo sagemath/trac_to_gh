@@ -1,6 +1,6 @@
 # Issue 2187: [with patch, needs review] improve refman autogeneration; add and rewrite much reference manual text
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2187
 
 Original creator: cwitty
 

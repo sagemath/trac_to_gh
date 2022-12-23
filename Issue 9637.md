@@ -1,6 +1,6 @@
 # Issue 9637: SAGETEX does not show a dependancy of BASE in spkg/standard/deps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9637
 
 Original creator: drkirkby
 

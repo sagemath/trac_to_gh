@@ -1,6 +1,6 @@
 # Issue 8655: Fix graph genus (broken on multigraphs?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8655
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 9186: Update R's spkg-install for building multiple spkgs in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9186
 
 Original creator: mpatel
 

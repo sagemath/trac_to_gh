@@ -1,6 +1,6 @@
 # Issue 4641: [with patch, needs review] "-notebook" commandline option should take trailing options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4641
 
 Original creator: klee
 

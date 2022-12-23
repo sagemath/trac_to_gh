@@ -1,6 +1,6 @@
 # Issue 4715: Small bug in KodairaSymbol
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4715
 
 Original creator: cremona
 

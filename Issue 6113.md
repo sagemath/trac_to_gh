@@ -1,6 +1,6 @@
 # Issue 6113: segfault in division_points and factoring torsion_polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6113
 
 Original creator: ncalexan
 

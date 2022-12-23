@@ -1,6 +1,6 @@
 # Issue 3708: something screwy in the reference manual -- coding theory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3708
 
 Original creator: was
 

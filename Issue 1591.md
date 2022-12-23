@@ -1,6 +1,6 @@
 # Issue 1591: cygwin -- immediately terminate the build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1591
 
 Original creator: was
 

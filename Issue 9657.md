@@ -1,6 +1,6 @@
 # Issue 9657: cvxopt 0.9 does not compile on Solaris with gcc 4.5 or later.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9657
 
 Original creator: drkirkby
 
@@ -16,7 +16,7 @@ Here's an example with OpenSolaris with gcc 4.5.0, though the same problem occur
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.1$ ./sage -f cvxopt-0.9.p8
+drkirkby@hawk:~/sage-4.5.1$ ./sage -f cvxopt-0.9.p8
 
 <snip>
 

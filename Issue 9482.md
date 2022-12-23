@@ -1,6 +1,6 @@
 # Issue 9482: implicit_plot3d gives "Out of memory allocating triangulation" when plotting an empty surface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9482
 
 Original creator: cwitty
 

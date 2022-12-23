@@ -1,6 +1,6 @@
 # Issue 7280: [with spkg; needs review] new version of sagenb for sage-4.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7280
 
 Original creator: was
 

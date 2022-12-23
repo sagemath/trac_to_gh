@@ -1,6 +1,6 @@
 # Issue 6357: make sage -t worksheet.sws work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6357
 
 Original creator: ncalexan
 

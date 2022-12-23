@@ -1,6 +1,6 @@
 # Issue 9438: IntegerMod_int.log has side-effect in Pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9438
 
 Original creator: SimonKing
 

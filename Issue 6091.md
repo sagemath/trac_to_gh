@@ -1,6 +1,6 @@
 # Issue 6091: [with patch, needs review] syntax extended for subfields of number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6091
 
 Original creator: fwclarke
 

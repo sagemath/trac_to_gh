@@ -1,6 +1,6 @@
 # Issue 8753: get pynac to build with gcc-4.5.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8753
 
 Original creator: was
 

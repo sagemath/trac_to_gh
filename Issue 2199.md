@@ -1,6 +1,6 @@
 # Issue 2199: [with patch; needs review] Copyright files for Debian packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2199
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 5830: [with patch, not ready for review] reducible root system fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5830
 
 Original creator: bump
 

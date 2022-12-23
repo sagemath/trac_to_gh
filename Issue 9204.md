@@ -1,6 +1,6 @@
 # Issue 9204: %hide weirdness
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9204
 
 Original creator: malb
 

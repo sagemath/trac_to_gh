@@ -1,6 +1,6 @@
 # Issue 1148: valuation doesn't work for rational numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1148
 
 Original creator: dmharvey
 

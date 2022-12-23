@@ -1,6 +1,6 @@
 # Issue 351: issue running cremona's abelian_group command and memory usage in gp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/351
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 809: [with patch] class_graph fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/809
 
 Original creator: malb
 

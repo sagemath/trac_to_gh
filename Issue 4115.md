@@ -1,6 +1,6 @@
 # Issue 4115: [with patch, not ready for review] Double coset problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4115
 
 Original creator: rlm
 
@@ -21,7 +21,7 @@ I know I'm missing something but could you tell me why this fails?
 
 
 ```
-wdj`@`tinah:~/sagefiles/sage-3.1.2.rc1$ ./sage
+wdj@tinah:~/sagefiles/sage-3.1.2.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: dbl-coset
@@ -49,7 +49,7 @@ Comment by mabshoff created at 2008-09-15 12:51:41
 You need a more current release. rc4 will do fine, not sure about rc3 since some patches in that area went into rc4 IIRC:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/devel/sage$ patch -p1 --dry-run < ~/trac_4115-double-cosets.patch\?format\=raw 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/devel/sage$ patch -p1 --dry-run < ~/trac_4115-double-cosets.patch\?format\=raw 
 patching file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pxd
 patching file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pyx
 patching file sage/groups/perm_gps/partn_ref/data_structures_pxd.pxi
@@ -90,7 +90,7 @@ With this patch applied to 3.1.2.rc3, I got several failures including this one:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.2.rc3$ ./sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi
+wdj@hera:~/sagefiles/sage-3.1.2.rc3$ ./sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi
 sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi**********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.rc3/tmp/data_structures_pyx.py", line 7:
     sage: import sage.groups.perm_gps.partn_ref.data_structures
@@ -141,7 +141,7 @@ Please see /home/wdj/sagefiles/sage-3.1.2.rc4/tmp/test.log for the complete log 
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.2.rc4$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi
+wdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi
 sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi**********************************************************************
 File "/home/wdj/sagefiles/sage-3.1.2.rc4/tmp/data_structures_pyx.py", line 7:
     sage: import sage.groups.perm_gps.partn_ref.data_structures

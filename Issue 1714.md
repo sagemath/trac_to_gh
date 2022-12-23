@@ -1,6 +1,6 @@
 # Issue 1714: [with patch, needs review] allow keyword arguments for remote sage methods (sage0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1714
 
 Original creator: malb
 

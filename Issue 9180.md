@@ -1,6 +1,6 @@
 # Issue 9180: Absolute interval arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9180
 
 Original creator: robertwb
 

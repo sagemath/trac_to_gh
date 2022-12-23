@@ -1,6 +1,6 @@
 # Issue 4002: raise coverage of sage.graphs to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4002
 
 Original creator: rlm
 

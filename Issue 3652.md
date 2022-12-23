@@ -1,6 +1,6 @@
 # Issue 3652: [with patch, needs review] FreeModule(ZZ, 2000).random_element() is far slower than it should be
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3652
 
 Original creator: cwitty
 

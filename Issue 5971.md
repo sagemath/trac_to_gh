@@ -1,6 +1,6 @@
 # Issue 5971: fix dumb error message when modding out by 0: Mod(10,0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5971
 
 Original creator: was
 

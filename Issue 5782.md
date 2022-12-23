@@ -1,6 +1,6 @@
 # Issue 5782: Failure of __pow__ in RDF for noninteger powers of  zero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5782
 
 Original creator: kbaker
 

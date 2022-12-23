@@ -1,6 +1,6 @@
 # Issue 7825: pari-2.3.3.p5 compilation fails on FreeBSD/amd64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7825
 
 Original creator: pjeremy
 

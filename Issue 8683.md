@@ -1,6 +1,6 @@
 # Issue 8683: add randstate to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8683
 
 Original creator: mvngu
 

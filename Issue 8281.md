@@ -1,6 +1,6 @@
 # Issue 8281: coercion problem breaks hecke_operator_on_basis over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8281
 
 Original creator: AlexGhitza
 

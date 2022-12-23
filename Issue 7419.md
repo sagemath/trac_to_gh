@@ -1,6 +1,6 @@
 # Issue 7419: implicit_plot ignores the z-range
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7419
 
 Original creator: jason
 

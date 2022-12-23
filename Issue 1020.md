@@ -1,6 +1,6 @@
 # Issue 1020: squash warning from decl.pxi emitted by cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1020
 
 Original creator: mabshoff
 

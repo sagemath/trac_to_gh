@@ -1,6 +1,6 @@
 # Issue 8778: remove jinja(1) from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8778
 
 Original creator: mhansen
 

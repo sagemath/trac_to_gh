@@ -1,6 +1,6 @@
 # Issue 5429: Change the QuadraticForm base_ring to only define the equivalence, but not the ring for coefficients/values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5429
 
 Original creator: jonhanke
 

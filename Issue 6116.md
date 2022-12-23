@@ -1,6 +1,6 @@
 # Issue 6116: error in real literal -> RIF conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6116
 
 Original creator: robertwb
 

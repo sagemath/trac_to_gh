@@ -1,6 +1,6 @@
 # Issue 811: get Andrew Sutherland's insanely fast hyperelliptic curve pointing into SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/811
 
 Original creator: dmharvey
 

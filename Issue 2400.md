@@ -1,6 +1,6 @@
 # Issue 2400: maxima automatically simplifies floats to rationals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2400
 
 Original creator: jason
 

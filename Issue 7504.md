@@ -1,6 +1,6 @@
 # Issue 7504: Magma booleans don't evaluate correctly in boolean contexts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7504
 
 Original creator: kedlaya
 

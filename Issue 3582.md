@@ -1,6 +1,6 @@
 # Issue 3582: clisp 2.46 cannot deal with parllel make
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3582
 
 Original creator: mabshoff
 

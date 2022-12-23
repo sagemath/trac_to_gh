@@ -1,6 +1,6 @@
 # Issue 6535: add environ variables to "sage -pkg" script so don't get OS X metatfiles
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6535
 
 Original creator: was
 

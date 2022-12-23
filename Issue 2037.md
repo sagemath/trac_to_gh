@@ -1,6 +1,6 @@
 # Issue 2037: out-of-date tutorial section on errors and exceptions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2037
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 4324: [with patch, needs review] fix storage of GBs for PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4324
 
 Original creator: malb
 

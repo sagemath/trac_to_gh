@@ -1,6 +1,6 @@
 # Issue 6609: GNUism in lcalc-20080205.p2 passing GNU flags directly to the Sun assembler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6609
 
 Original creator: drkirkby
 

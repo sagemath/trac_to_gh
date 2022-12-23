@@ -1,6 +1,6 @@
 # Issue 5766: improve coverage of structure/formal_sum.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5766
 
 Original creator: was
 

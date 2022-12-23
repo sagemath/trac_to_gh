@@ -1,6 +1,6 @@
 # Issue 6296: linbox minpoly over small finite fields is TOTALLY BROKEN
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6296
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy`@`gmail.com> wrote:
+On Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:
 >
 > ----------------------------------------------------------------------
 > | Sage Version 4.0.1, Release Date: 2009-06-06                       |

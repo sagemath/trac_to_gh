@@ -1,6 +1,6 @@
 # Issue 7802: Mention that RNDN is the "ties toward even" version in RealField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7802
 
 Original creator: jason
 

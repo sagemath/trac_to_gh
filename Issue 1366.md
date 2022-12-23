@@ -1,6 +1,6 @@
 # Issue 1366: speed up "sage -br" -- make it cache the dependency diagram instead of computing it every time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1366
 
 Original creator: was
 
@@ -131,7 +131,7 @@ Comment by cwitty created at 2008-02-08 04:55:40
 The same testcase still fails (but in a different way now).  When I touch sage/rings/mpfi.pxi, and then run "sage -b", it now dumps me into a debugger.  Then, when I press Ctrl-D to exit the debugger, I get a backtrace.
 
 ```
-cwitty`@`magnetar:~/sage-2.10.1$ ./sage -b
+cwitty@magnetar:~/sage-2.10.1$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified SAGE library files.

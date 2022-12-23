@@ -1,6 +1,6 @@
 # Issue 1078: DSage cannot find Cpu_time.sobj
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1078
 
 Original creator: jvoight
 

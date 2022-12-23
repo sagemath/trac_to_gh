@@ -1,6 +1,6 @@
 # Issue 1730: Sage does not have 100,000 users yet.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1730
 
 Original creator: was
 

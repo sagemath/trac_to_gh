@@ -1,6 +1,6 @@
 # Issue 439: Interace with remote programs allowing for as many hops as needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/439
 
 Original creator: pdehaye
 

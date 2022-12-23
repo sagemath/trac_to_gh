@@ -1,6 +1,6 @@
 # Issue 3975: Small mistake in the new plot() code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3975
 
 Original creator: anakha
 

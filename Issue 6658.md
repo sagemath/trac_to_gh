@@ -1,6 +1,6 @@
 # Issue 6658: digits() claims it defaults to base 2, but it defaults to base 10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6658
 
 Original creator: ddrake
 

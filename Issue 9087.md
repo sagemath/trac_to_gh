@@ -1,6 +1,6 @@
 # Issue 9087: implement supersingular/ordinary testing for elliptic curves over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9087
 
 Original creator: cremona
 

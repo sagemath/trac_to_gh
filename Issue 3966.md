@@ -1,6 +1,6 @@
 # Issue 3966: The ode cython example gives errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3966
 
 Original creator: jason
 

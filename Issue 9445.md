@@ -1,6 +1,6 @@
 # Issue 9445: GalRep.non_surjective_primes() returns unexpected errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9445
 
 Original creator: justin
 

@@ -1,6 +1,6 @@
 # Issue 4577: [with patch, needs review] simple interface to scipy.optimize.leastsq
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4577
 
 Original creator: whuss
 

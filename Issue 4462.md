@@ -1,6 +1,6 @@
 # Issue 4462: contour_plot defaults changed to fill, affects implicit_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4462
 
 Original creator: john_perry
 
@@ -53,13 +53,13 @@ Attachment
 The fix is easy: change line 2926 of site-packages/sage/plot/plot.py, which currently reads
 
 ```
-`@`options(contours=(0,0))
+@options(contours=(0,0))
 ```
 
 to
 
 ```
-`@`options(contours=(0,0),fill=False)
+@options(contours=(0,0),fill=False)
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 1073: right after "sage -pkg" creates a package, print out some useful information
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1073
 
 Original creator: was
 

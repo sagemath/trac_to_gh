@@ -1,6 +1,6 @@
 # Issue 9803: Remove unnecessary dependy for cliquer in spkg/standard/deps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9804
 
 Original creator: drkirkby
 

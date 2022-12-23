@@ -1,6 +1,6 @@
 # Issue 8533: browse thematic tutorials from command line and within notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8533
 
 Original creator: mvngu
 

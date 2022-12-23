@@ -1,6 +1,6 @@
 # Issue 7854: speed up edge_connectivity in easy cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7854
 
 Original creator: ncohen
 

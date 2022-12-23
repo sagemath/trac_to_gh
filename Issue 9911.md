@@ -1,6 +1,6 @@
 # Issue 9911: extraneous argument in deprecation in #7154
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9912
 
 Original creator: jason
 
@@ -14,7 +14,7 @@ In #7154, the rename_keyword deprecation decorator has an extra argument.  Right
 
 
 ```
-`@`rename_keyword(deprecated='Sage 4.6', deprecated_option='thickness', thickness='width') 
+@rename_keyword(deprecated='Sage 4.6', deprecated_option='thickness', thickness='width') 
 ```
 
 
@@ -22,7 +22,7 @@ but should just be
 
 
 ```
-`@`rename_keyword(deprecated='Sage 4.6', thickness='width') 
+@rename_keyword(deprecated='Sage 4.6', thickness='width') 
 ```
 
 

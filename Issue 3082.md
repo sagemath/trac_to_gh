@@ -1,6 +1,6 @@
 # Issue 3082: sage-3.0.1.alpha1: a twist.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3082
 
 Original creator: was
 

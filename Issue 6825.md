@@ -1,6 +1,6 @@
 # Issue 6825: intermittent failure in vector_real_double_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6825
 
 Original creator: mvngu
 
@@ -90,7 +90,7 @@ Comment by mvngu created at 2009-10-21 22:06:23
 Now I get a mysterious error in Sage 4.2.alpha0:
 
 ```
-[mvngu`@`sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx
+[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx
 sage -t -long "devel/sage-main/sage/modules/vector_real_double_dense.pyx"
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [3.1 s]

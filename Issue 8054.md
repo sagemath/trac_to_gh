@@ -1,6 +1,6 @@
 # Issue 8054: roots(algorithm='numpy') does not work in arbitrary precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8054
 
 Original creator: zimmerma
 

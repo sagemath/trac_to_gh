@@ -1,6 +1,6 @@
 # Issue 5221: default cmap for contour plot makes last contour line invisible when fill=False
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5221
 
 Original creator: jason
 

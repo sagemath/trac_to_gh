@@ -1,6 +1,6 @@
 # Issue 3049: combinatorics -- lame overflow with Compositions(n).count() (very easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3049
 
 Original creator: was
 

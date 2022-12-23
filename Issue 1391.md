@@ -1,6 +1,6 @@
 # Issue 1391: bug in unit part of factorizations of multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1391
 
 Original creator: was
 

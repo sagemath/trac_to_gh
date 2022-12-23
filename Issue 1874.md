@@ -1,6 +1,6 @@
 # Issue 1874: [with patch, needs review] implement bipartite graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1874
 
 Original creator: rlm
 

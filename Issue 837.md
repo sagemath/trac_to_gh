@@ -1,6 +1,6 @@
 # Issue 837: RealNumber should have abs method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/837
 
 Original creator: dmharvey
 

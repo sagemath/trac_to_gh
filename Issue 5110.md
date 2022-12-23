@@ -1,6 +1,6 @@
 # Issue 5110: rewrite diagonal_matrix to be more general
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5110
 
 Original creator: jason
 

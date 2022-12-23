@@ -1,6 +1,6 @@
 # Issue 181: Recursive load makes symbol?? display the wrong File: information
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/181
 
 Original creator: ncalexan
 

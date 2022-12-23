@@ -1,6 +1,6 @@
 # Issue 9268: Notebook Server replies to Plot3d-Data-Request with Status 301
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9268
 
 Original creator: ManDay
 

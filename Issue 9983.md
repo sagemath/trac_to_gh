@@ -1,6 +1,6 @@
 # Issue 9983: ECM fails to build on AIX 5.3 - A warning about linking a static library against a shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9984
 
 Original creator: drkirkby
 

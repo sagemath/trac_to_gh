@@ -1,6 +1,6 @@
 # Issue 85: p-adic coercion incorrect for negative numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/85
 
 Original creator: dmharvey
 

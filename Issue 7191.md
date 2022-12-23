@@ -1,6 +1,6 @@
 # Issue 7191: is_primitive() for a Dirichlet character doesn't work when base ring is CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7191
 
 Original creator: bober
 
@@ -35,7 +35,7 @@ KeyError                                  Traceback (most recent call last)
    1162         """
 -> 1163         return (self.conductor() == self.modulus())
    1164 
-   1165     `@`cached_method
+   1165     @cached_method
 
 /home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)
     240             return cache[key]
@@ -105,7 +105,7 @@ KeyError                                  Traceback (most recent call last)
    1162         """
 -> 1163         return (self.conductor() == self.modulus())
    1164 
-   1165     `@`cached_method
+   1165     @cached_method
 
 /home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)
     240             return cache[key]

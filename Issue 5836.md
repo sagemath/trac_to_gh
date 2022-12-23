@@ -1,6 +1,6 @@
 # Issue 5836: Make show() immediately show an image in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5836
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 2988: notebook -- issues with the CSS for the print display
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2988
 
 Original creator: was
 
@@ -27,7 +27,7 @@ Comment by mabshoff created at 2008-04-22 03:53:03
 It doesn't apply cleanly against rc1:
 
 ```
-sage`@`modular:~/build/sage-3.0.rc1/devel/sage$ hg import /home2/mabshoff/trac_2988.patch
+sage@modular:~/build/sage-3.0.rc1/devel/sage$ hg import /home2/mabshoff/trac_2988.patch
 applying /home2/mabshoff/trac_2988.patch
 patching file sage/server/notebook/cell.py
 Hunk #1 FAILED at 645

@@ -1,6 +1,6 @@
 # Issue 1293: sage is too big!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1293
 
 Original creator: zimmerma
 
@@ -11,10 +11,10 @@ Assignee: mabshoff
 I was told that SAGE did use less memory than Maple or Mathematica. I did check on sage.math.washington.edu:
 
 ```
-zimmerma`@`sage:~$ du -s /usr/local/maple10
+zimmerma@sage:~$ du -s /usr/local/maple10
 388908  /usr/local/maple10
 
-zimmerma`@`sage:~$ du -s /usr/local/mathematica-5.2
+zimmerma@sage:~$ du -s /usr/local/mathematica-5.2
 641016  /usr/local/mathematica-5.2
 
 sage:/tmp/zimmerma/sage-2.8.14> make install DESTDIR=/tmp/zimmerma/sage-2.8.14-\
@@ -35,7 +35,7 @@ Comment by mabshoff created at 2007-11-27 18:24:52
 Well, your numbers are slighly inflated because "make install" is still experimental and copies fata not needed:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/size$ du -sch sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux
+mabshoff@sage:/tmp/Work-mabshoff/size$ du -sch sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux
 802M    sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux
 ```
 

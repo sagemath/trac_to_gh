@@ -1,6 +1,6 @@
 # Issue 1439: (EASY) make install_package('...') through the notebook far less verbose
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1439
 
 Original creator: was
 
@@ -14,7 +14,7 @@ Background:
 
 
 ```
-On Dec 9, 2007 1:00 PM, root <daly`@`axiom-developer.org> wrote:
+On Dec 9, 2007 1:00 PM, root <daly@axiom-developer.org> wrote:
 > >The main plus of this packaging for sage is that it builds from
 > >source quickly (in a few minutes) using precompiled clisp files.
 > 

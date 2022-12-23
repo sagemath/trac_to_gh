@@ -1,6 +1,6 @@
 # Issue 3861: automatic line smoothing shouldn't be automatic, or should at least be documented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3861
 
 Original creator: mclean
 

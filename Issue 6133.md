@@ -1,6 +1,6 @@
 # Issue 6133: [with patch, needs review] remove pbuild files in devel/sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6133
 
 Original creator: craigcitro
 

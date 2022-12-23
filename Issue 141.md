@@ -1,6 +1,6 @@
 # Issue 141: sage -ldist -- needs to be updated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/141
 
 Original creator: was
 

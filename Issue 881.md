@@ -1,6 +1,6 @@
 # Issue 881: new notebook bug -- saving a worksheet gets rid of all the html between cells?!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/881
 
 Original creator: was
 

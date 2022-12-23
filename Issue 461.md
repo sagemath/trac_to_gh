@@ -1,6 +1,6 @@
 # Issue 461: ModularForms(*,*).new_subspace() bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/461
 
 Original creator: burhanud
 

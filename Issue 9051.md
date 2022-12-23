@@ -1,6 +1,6 @@
 # Issue 9051: Fast function field arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9051
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 4427: [with patch, needs review] use RTLD symbols instead of constants in init_singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4427
 
 Original creator: malb
 

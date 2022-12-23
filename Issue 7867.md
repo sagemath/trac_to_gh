@@ -1,6 +1,6 @@
 # Issue 7867: GCC reports incorrect flags compiling descent_two_isogeny.c on Solaris 10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7867
 
 Original creator: drkirkby
 

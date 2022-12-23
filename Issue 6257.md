@@ -1,6 +1,6 @@
 # Issue 6257: Minor plot doc issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6257
 
 Original creator: kcrisman
 

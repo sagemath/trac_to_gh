@@ -1,6 +1,6 @@
 # Issue 185: Firefox + Xorg (Linux) take way too much cputime while waiting for results from the notebook server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/185
 
 Original creator: malb
 

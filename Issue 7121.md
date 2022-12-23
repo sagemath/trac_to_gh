@@ -1,6 +1,6 @@
 # Issue 7121: Make it possible to build Sage but not documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7121
 
 Original creator: kcrisman
 

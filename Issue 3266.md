@@ -1,6 +1,6 @@
 # Issue 3266: Sage 3.0.2.alpha1: doctest failure in sage/server/simple/twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3266
 
 Original creator: mabshoff
 

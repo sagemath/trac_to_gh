@@ -1,6 +1,6 @@
 # Issue 4805: S_integral points failure (possible p-adic precision problem)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4805
 
 Original creator: cremona
 

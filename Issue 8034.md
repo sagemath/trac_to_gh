@@ -1,6 +1,6 @@
 # Issue 8034: A Tour of Sage: error building PDF version, French
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8034
 
 Original creator: mvngu
 
@@ -22,7 +22,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \newcommand\at{`@`}
+l.39 \newcommand\at{@}
                       
 ?
 ```

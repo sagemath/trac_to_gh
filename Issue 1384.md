@@ -1,6 +1,6 @@
 # Issue 1384: 2.8.15.rc0: fix numerical doctest fallout on PCC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1384
 
 Original creator: mabshoff
 

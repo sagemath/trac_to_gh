@@ -1,6 +1,6 @@
 # Issue 244: linbox into SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/244
 
 Original creator: was
 

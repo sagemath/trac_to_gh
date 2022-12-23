@@ -1,6 +1,6 @@
 # Issue 7201: overflow: auto CSS on code cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7201
 
 Original creator: jason
 

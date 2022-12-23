@@ -1,6 +1,6 @@
 # Issue 5273: [with patch, needs review] change error message for integer matrices which are too large
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5273
 
 Original creator: jhpalmieri
 
@@ -41,7 +41,7 @@ Comment by mabshoff created at 2009-02-15 06:27:53
 This ticket fails to import for me:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5273.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5273.patch 
 patching file sage/matrix/matrix_space.py
 Hunk #1 FAILED at 197.
 Hunk #2 FAILED at 215.

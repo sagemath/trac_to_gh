@@ -1,6 +1,6 @@
 # Issue 3193: fix 64 bit OSX build support for twisted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3193
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 2665: error in coercion between CIF and SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2665
 
 Original creator: ncalexan
 

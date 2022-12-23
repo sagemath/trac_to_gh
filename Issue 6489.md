@@ -1,6 +1,6 @@
 # Issue 6489: [with patch, work in progress ...] Allow Sage to call R (statistics)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6489
 
 Original creator: sjanke
 

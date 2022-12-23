@@ -1,6 +1,6 @@
 # Issue 7483: notebook: weird pointless line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7483
 
 Original creator: was
 

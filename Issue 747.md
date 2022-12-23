@@ -1,6 +1,6 @@
 # Issue 747: flint build problem on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/747
 
 Original creator: was
 

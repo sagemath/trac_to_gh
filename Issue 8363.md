@@ -1,6 +1,6 @@
 # Issue 8363: cddlib-094f.p4 has a useless check for mpir which breaks on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8363
 
 Original creator: drkirkby
 

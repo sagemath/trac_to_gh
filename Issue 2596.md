@@ -1,6 +1,6 @@
 # Issue 2596: Sage 2.11.alpha0: sage/plot/plot.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2596
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Assignee: failure
 sage -t -long devel/sage/sage/plot/plot.py
 ----------------------------------------------------------------------
 Total time for all tests: 965.6 seconds
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
 sage -t -long devel/sage-main/sage/plot/plot.py
 **********************************************************************
 File "plot.py", line 3860:

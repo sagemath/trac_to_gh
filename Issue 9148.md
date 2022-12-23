@@ -1,6 +1,6 @@
 # Issue 9148: [with patch, needs review] Fix deprecated sha module usage in wiki2html.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9148
 
 Original creator: cschwan
 

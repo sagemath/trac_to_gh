@@ -1,6 +1,6 @@
 # Issue 6267: Same typesetting for two different variables:
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6267
 
 Original creator: gmhossain
 

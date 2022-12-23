@@ -1,6 +1,6 @@
 # Issue 4367: plot gamma bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4367
 
 Original creator: jvoight
 

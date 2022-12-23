@@ -1,6 +1,6 @@
 # Issue 8260: valuation of zero is wrong for Qq
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8260
 
 Original creator: dmharvey
 

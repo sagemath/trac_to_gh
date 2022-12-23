@@ -1,6 +1,6 @@
 # Issue 3784: add support for SAGE_PYTHONPATH
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3784
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: cwitty
 
 ```
 >
-> > On Aug 6, 9:33 am, Rupert <rupert.n...`@`gmail.com> wrote:
+> > On Aug 6, 9:33 am, Rupert <rupert.n...@gmail.com> wrote:
 > >> Hello there,
 >
 > > Hi Rupert,

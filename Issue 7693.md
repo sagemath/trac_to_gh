@@ -1,6 +1,6 @@
 # Issue 7693: the lrs SPKG.txt is not very useful.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7693
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  wstein
 The lrs SPKG.txt is just:
 
 ```
-wstein`@`boxen:/tmp/wstein/lrs-4.2b.p0$ more SPKG.txt
+wstein@boxen:/tmp/wstein/lrs-4.2b.p0$ more SPKG.txt
 * 2008-05-15 (Marshall Hampton)
 *initial build
 1. Deleted McGill-specific build stuff from makefile

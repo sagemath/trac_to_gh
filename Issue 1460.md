@@ -1,6 +1,6 @@
 # Issue 1460: bug in float( ... ) conversion in calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1460
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Dec 11, 2007 8:39 AM, Joel B. Mohler <joel`@`kiwistrawberry.us> wrote:
+On Dec 11, 2007 8:39 AM, Joel B. Mohler <joel@kiwistrawberry.us> wrote:
 >
 > Hi,
 >

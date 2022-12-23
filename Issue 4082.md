@@ -1,6 +1,6 @@
 # Issue 4082: [with patch, needs review] Sage 3.1.2.rc0: numerical noise on OSX/Intel in schemes/elliptic_curves/ell_number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4082
 
 Original creator: mabshoff
 

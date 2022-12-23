@@ -1,6 +1,6 @@
 # Issue 955: Singular interface (and possibly others) can lose synchronization due to GC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/955
 
 Original creator: cwitty
 

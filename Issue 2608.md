@@ -1,6 +1,6 @@
 # Issue 2608: Sequence(ZZ) should fail gracefully
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2608
 
 Original creator: dfdeshom
 
@@ -37,7 +37,7 @@ KeyboardInterrupt
 
 Unfortunately, your original traceback can not be constructed.
 
-dfdeshom`@`sage:~/custom/sage/devel/sage-2577$
+dfdeshom@sage:~/custom/sage/devel/sage-2577$
 
 ```
 

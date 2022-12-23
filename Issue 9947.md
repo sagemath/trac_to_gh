@@ -1,6 +1,6 @@
 # Issue 9947: Conversion of p-adic to gp is buggy because of "+Infinity" exponent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9948
 
 Original creator: jdemeyer
 

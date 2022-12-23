@@ -1,6 +1,6 @@
 # Issue 3046: version option returning clone branch name
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3046
 
 Original creator: wdj
 

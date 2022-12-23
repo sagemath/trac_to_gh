@@ -1,6 +1,6 @@
 # Issue 4807: bug in exponential integral
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4807
 
 Original creator: wdj
 

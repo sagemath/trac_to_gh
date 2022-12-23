@@ -1,6 +1,6 @@
 # Issue 8730: cddlib makefile looks for gmp in /usr/local, should be $SAGE_LOCAL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8730
 
 Original creator: vbraun
 

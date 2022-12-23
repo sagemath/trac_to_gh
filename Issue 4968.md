@@ -1,6 +1,6 @@
 # Issue 4968: switch Matrix_modn_dense from ints to CPU longs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4968
 
 Original creator: malb
 

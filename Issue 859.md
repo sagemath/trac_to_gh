@@ -1,6 +1,6 @@
 # Issue 859: Cannot coerce numpy integral types to ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/859
 
 Original creator: cwitty
 

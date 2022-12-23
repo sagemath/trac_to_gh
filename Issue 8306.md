@@ -1,6 +1,6 @@
 # Issue 8306: Parallel inter/intra-spkg builds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8306
 
 Original creator: mpatel
 
@@ -266,7 +266,7 @@ Comment by mpatel created at 2010-03-01 16:53:23
 Oops.  I just mean that I've set up [ccache](http://ccache.samba.org/) and compiled Sage twice, say.  Stats from t2:
 
 ```
-mpatel`@`t2 ~$ ccache -s
+mpatel@t2 ~$ ccache -s
 cache directory                     /home/mpatel/.ccache
 cache hit                          34598
 cache miss                         23288
@@ -288,7 +288,7 @@ max cache size                       5.0 Gbytes
 (I think it'll be faster in `/scratch`, but I don't know by how much.)  From sage.math:
 
 ```
-mpatel`@`sage ~$ ccache -s
+mpatel@sage ~$ ccache -s
 cache directory                     /scratch/mpatel/.ccache
 cache hit                         371602
 cache miss                         61435

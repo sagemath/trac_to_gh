@@ -1,6 +1,6 @@
 # Issue 5128: matplotlib Graphics() wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5128
 
 Original creator: jason
 

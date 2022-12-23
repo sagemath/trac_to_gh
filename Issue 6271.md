@@ -1,6 +1,6 @@
 # Issue 6271: upgrade to mpir-1.3.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6271
 
 Original creator: ncalexan
 

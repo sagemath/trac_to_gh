@@ -1,6 +1,6 @@
 # Issue 9318: Fix S-Box CNF generation for non permutations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9318
 
 Original creator: malb
 

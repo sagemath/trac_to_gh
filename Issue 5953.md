@@ -1,6 +1,6 @@
 # Issue 5953: sage/modular/modform/vm_basis.py is missing verbatim areas for doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5953
 
 Original creator: mabshoff
 

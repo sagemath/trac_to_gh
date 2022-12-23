@@ -1,6 +1,6 @@
 # Issue 3793: Some elliptic curve doctests fail when the optional database is installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3793
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 5525: fix bug in intersection of ZZ-modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5525
 
 Original creator: was
 
@@ -10,11 +10,11 @@ Assignee: malb
 
 
 ```
-sage: A = (QQ^1).span([This is the Trac macro *1/3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1/3-macro),ZZ); A
+sage: A = (QQ^1).span([[1/3]],ZZ); A
 Free module of degree 1 and rank 1 over Integer Ring
 Echelon basis matrix:
 [1/3]
-sage: B = (QQ^1).span([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro),ZZ); B
+sage: B = (QQ^1).span([[1]],ZZ); B
 Free module of degree 1 and rank 1 over Integer Ring
 Echelon basis matrix:
 [1]

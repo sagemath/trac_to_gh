@@ -1,6 +1,6 @@
 # Issue 4636: improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4636
 
 Original creator: ncalexan
 

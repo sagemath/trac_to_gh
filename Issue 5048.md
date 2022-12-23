@@ -1,6 +1,6 @@
 # Issue 5048: congruence subgroups are not integrated into the coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5048
 
 Original creator: ncalexan
 

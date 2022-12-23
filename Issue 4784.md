@@ -1,6 +1,6 @@
 # Issue 4784: [with patch, needs review] trivial ref manual fix for 3.2.2.alpha2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4784
 
 Original creator: jhpalmieri
 

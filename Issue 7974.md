@@ -1,6 +1,6 @@
 # Issue 7974: hg_sage.diff() silently appends
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7974
 
 Original creator: gaer
 

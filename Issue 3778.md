@@ -1,6 +1,6 @@
 # Issue 3778: [with patch, do not review] part 1 of new configuration system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3778
 
 Original creator: TimothyClemans
 

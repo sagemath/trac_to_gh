@@ -1,6 +1,6 @@
 # Issue 1855: [with 1-line patch; needs review] trivial but visibly very painful bug in plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1855
 
 Original creator: was
 

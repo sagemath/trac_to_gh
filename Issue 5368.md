@@ -1,6 +1,6 @@
 # Issue 5368: plot3d is broken when variables not given
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5368
 
 Original creator: was
 

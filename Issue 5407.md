@@ -1,6 +1,6 @@
 # Issue 5407: fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5407
 
 Original creator: was
 
@@ -29,7 +29,7 @@ Comment by mabshoff created at 2009-03-01 06:20:29
 One doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.alpha1$ ./sage -t -long devel/sage/sage/modules/free_module.py
+mabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1$ ./sage -t -long devel/sage/sage/modules/free_module.py
 sage -t -long "devel/sage/sage/modules/free_module.py"      
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.alpha1/devel/sage/sage/modules/free_module.py", line 1438:

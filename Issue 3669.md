@@ -1,6 +1,6 @@
 # Issue 3669: [with patch; needs review] improve multiple_of_order command for torsion subgroups of modular abelian varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3669
 
 Original creator: was
 

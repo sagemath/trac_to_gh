@@ -1,6 +1,6 @@
 # Issue 7650: Fix sagenb doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7650
 
 Original creator: mpatel
 

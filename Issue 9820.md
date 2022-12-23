@@ -1,6 +1,6 @@
 # Issue 9820: problems with infinite polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9821
 
 Original creator: fwclarke
 

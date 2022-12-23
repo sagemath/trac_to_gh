@@ -1,6 +1,6 @@
 # Issue 5454: [with patch, needs review] Add coercion documentation to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5454
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 2951: checkbox is not defined in interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2951
 
 Original creator: mhampton
 

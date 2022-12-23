@@ -1,6 +1,6 @@
 # Issue 1890: Sage 2.10.1.alpha2: interfaces/libecm.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1890
 
 Original creator: mabshoff
 

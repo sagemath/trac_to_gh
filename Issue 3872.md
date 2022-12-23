@@ -1,6 +1,6 @@
 # Issue 3872: calculus -- incorporate ginac into without cln
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3872
 
 Original creator: was
 

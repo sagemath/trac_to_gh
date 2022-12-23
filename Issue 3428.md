@@ -1,6 +1,6 @@
 # Issue 3428: [with patch, needs review] univariate polynomial quo_rem 0 trouble
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3428
 
 Original creator: burcin
 

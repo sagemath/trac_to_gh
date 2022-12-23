@@ -1,6 +1,6 @@
 # Issue 6931: implement faster computation of data about intersection of abelian varieties attached to modular symbols spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6931
 
 Original creator: was
 

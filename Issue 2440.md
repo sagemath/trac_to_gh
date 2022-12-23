@@ -1,6 +1,6 @@
 # Issue 2440: Doctests for rings/quotient_ring.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2440
 
 Original creator: cswiercz
 

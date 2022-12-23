@@ -1,6 +1,6 @@
 # Issue 3648: [with patch, needs review] complex(pari(...)) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3648
 
 Original creator: cwitty
 

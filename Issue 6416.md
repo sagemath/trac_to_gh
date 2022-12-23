@@ -1,6 +1,6 @@
 # Issue 6416: [with spkg and patch, needs review] Frobby for monomial ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6416
 
 Original creator: broune
 

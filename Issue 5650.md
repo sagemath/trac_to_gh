@@ -1,6 +1,6 @@
 # Issue 5650: speed up gamma_inc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5650
 
 Original creator: ncalexan
 

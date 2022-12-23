@@ -1,6 +1,6 @@
 # Issue 3257: Pbuild ignores gcc specific default settings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3257
 
 Original creator: gfurnish
 

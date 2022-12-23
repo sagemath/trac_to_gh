@@ -1,6 +1,6 @@
 # Issue 548: hg_scripts should merge repository on upgrade/install instead of overwriting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/548
 
 Original creator: was
 

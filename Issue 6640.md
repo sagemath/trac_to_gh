@@ -1,6 +1,6 @@
 # Issue 6640: Fix typo in combinat.partitions.conjugate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6640
 
 Original creator: hivert
 

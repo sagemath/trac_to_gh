@@ -1,6 +1,6 @@
 # Issue 350: bug in rational_points on hyperelliptic curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/350
 
 Original creator: was
 

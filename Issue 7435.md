@@ -1,6 +1,6 @@
 # Issue 7435: notebook: help screen talks about DIR variable, which was removed from the notebook a while ago
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7435
 
 Original creator: was
 

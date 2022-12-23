@@ -1,6 +1,6 @@
 # Issue 4843: Fix readline related build problems on OpenSUSE 11.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4843
 
 Original creator: mabshoff
 

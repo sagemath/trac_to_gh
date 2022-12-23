@@ -1,6 +1,6 @@
 # Issue 1429: spelling error in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1429
 
 Original creator: was
 

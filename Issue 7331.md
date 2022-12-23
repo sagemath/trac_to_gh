@@ -1,6 +1,6 @@
 # Issue 7331: Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7331
 
 Original creator: wuthrich
 

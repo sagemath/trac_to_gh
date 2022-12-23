@@ -1,6 +1,6 @@
 # Issue 5754: docstrings for all the interactive_constructors functions are *all* now completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5754
 
 Original creator: was
 
@@ -58,7 +58,7 @@ The code looks great.  But it fails doctests on a clean 3.4.1.rc2 install on sag
 ----------------------------------------------------------------------
 sage: 
 Exiting SAGE (CPU time 0m0.03s, Wall time 0m0.79s).
-wstein`@`sage:~/build/sage-3.4.1.rc2$ ./sage -t devel/sage/sage/misc/sagedoc.py
+wstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t devel/sage/sage/misc/sagedoc.py
 sage -t  "devel/sage/sage/misc/sagedoc.py"                  
 **********************************************************************
 File "/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/misc/sagedoc.py", line 366:
@@ -107,7 +107,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/misc/sagedoc.py"
 Total time for all tests: 16.4 seconds
-wstein`@`sage:~/build/sage-3.4.1.rc2$ 
+wstein@sage:~/build/sage-3.4.1.rc2$ 
 ```
 
 

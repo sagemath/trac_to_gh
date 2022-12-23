@@ -1,6 +1,6 @@
 # Issue 3233: [with patch; needs review] cygwin -- make linbox work with cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3233
 
 Original creator: was
 

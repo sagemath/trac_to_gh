@@ -1,6 +1,6 @@
 # Issue 4335: Labelling of newforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4335
 
 Original creator: ljpk
 
@@ -107,7 +107,7 @@ Comment by mabshoff created at 2008-10-26 02:49:54
 Unfortunately other patches mandate a rebase of this patch:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4335.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4335.patch 
 patching file sage/modular/modform/space.py
 Hunk #1 FAILED at 1571.
 1 out of 1 hunk FAILED -- saving rejects to file sage/modular/modform/space.py.rej

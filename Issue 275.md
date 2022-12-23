@@ -1,6 +1,6 @@
 # Issue 275: Maxtrix groups over RR don't get pushed off to GAP properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/275
 
 Original creator: moretti
 

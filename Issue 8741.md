@@ -1,6 +1,6 @@
 # Issue 8741: Upgrade Twisted to 10.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8741
 
 Original creator: timdumol
 

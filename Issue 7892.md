@@ -1,6 +1,6 @@
 # Issue 7892: Python fails to build hashlib module on Solaris 8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7892
 
 Original creator: drkirkby
 

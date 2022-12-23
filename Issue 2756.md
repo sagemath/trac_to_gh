@@ -1,6 +1,6 @@
 # Issue 2756: [with patch; needs review] Debianize GAP spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2756
 
 Original creator: tabbott
 

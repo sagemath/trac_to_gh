@@ -1,6 +1,6 @@
 # Issue 2862: [with patch, needs review] Sage 3.0.alpha2: fix tex problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2862
 
 Original creator: mabshoff
 

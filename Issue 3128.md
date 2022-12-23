@@ -1,6 +1,6 @@
 # Issue 3128: PolynomialRing's behaviour does not match docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3128
 
 Original creator: broune
 

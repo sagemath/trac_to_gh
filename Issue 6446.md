@@ -1,6 +1,6 @@
 # Issue 6446: memory issue from #6394
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6446
 
 Original creator: rlm
 

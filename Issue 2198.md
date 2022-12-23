@@ -1,6 +1,6 @@
 # Issue 2198: Build R with --with-recommended-packages enabled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2198
 
 Original creator: mabshoff
 

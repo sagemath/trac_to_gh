@@ -1,6 +1,6 @@
 # Issue 6946: Duplicated mpmath <-> sympy/mpmath and delaunay <-> matplotlib/delaunay
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6946
 
 Original creator: pcpa
 
@@ -77,7 +77,7 @@ Changing status from new to needs_review.
 
 Comment by vdelecroix created at 2015-04-24 21:43:17
 
-But it is still mentioned in the sympy documentation [http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy](http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy)(http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy). Weird!
+But it is still mentioned in the sympy documentation [http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy](http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy). Weird!
 
 
 ---

@@ -1,6 +1,6 @@
 # Issue 9799: doctutils fails to run test suite when SAGE_CHECK=yes. Missing spkg-check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9800
 
 Original creator: drkirkby
 

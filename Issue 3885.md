@@ -1,6 +1,6 @@
 # Issue 3885: [with patch, needs review and discussion] Bug in free module __call__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3885
 
 Original creator: craigcitro
 
@@ -13,7 +13,7 @@ Salman Butt ran into the following bug:
 
 ```
 sage: V = QQ**2
-sage: W = V.subspace([This is the Trac macro *1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2-macro))
+sage: W = V.subspace([[1,2]])
 sage: W([2,1])
 (2, 1)
 ```
@@ -24,7 +24,7 @@ Fix is attached, but the fact that you can still do the following is possibly wo
 
 ```
 sage: V = QQ**2
-sage: W = V.subspace([This is the Trac macro *1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2-macro))
+sage: W = V.subspace([[1,2]])
 sage: W([2,1], check=False) in W
 True
 ```

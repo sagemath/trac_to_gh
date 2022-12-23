@@ -1,6 +1,6 @@
 # Issue 5265: Link the matrix_mod2_dense extension against png12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5265
 
 Original creator: mabshoff
 

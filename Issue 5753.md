@@ -1,6 +1,6 @@
 # Issue 5753: [with patch and package, needs review] update to pynac 0.1.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5753
 
 Original creator: burcin
 

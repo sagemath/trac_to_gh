@@ -1,6 +1,6 @@
 # Issue 9066: Improve documentation in shapes2.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9066
 
 Original creator: kcrisman
 

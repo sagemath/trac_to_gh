@@ -1,6 +1,6 @@
 # Issue 1041: latex representation of fractional ideals in a number field is totally stupid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1041
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2980: itanium (RHEL 5) -- weyl_group.py is broken on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2980
 
 Original creator: was
 

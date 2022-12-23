@@ -1,6 +1,6 @@
 # Issue 7637: Default dictionary in MixedIntegerLinearProgram
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7637
 
 Original creator: ncohen
 

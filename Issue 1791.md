@@ -1,6 +1,6 @@
 # Issue 1791: Sage 2.10.alpha3: numerical noise doctest failure with gcc 4.2.2/x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1791
 
 Original creator: mabshoff
 

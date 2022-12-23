@@ -1,6 +1,6 @@
 # Issue 8878: Use Dijkstra to discover shortest coercion path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8878
 
 Original creator: nthiery
 

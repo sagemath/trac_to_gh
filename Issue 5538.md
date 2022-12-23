@@ -1,6 +1,6 @@
 # Issue 5538: Family does not copy it's input.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5538
 
 Original creator: hivert
 

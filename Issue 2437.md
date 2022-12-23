@@ -1,6 +1,6 @@
 # Issue 2437: update eclib.spkg to eclib-20080304.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2437
 
 Original creator: mabshoff
 

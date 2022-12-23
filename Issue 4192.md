@@ -1,6 +1,6 @@
 # Issue 4192: is_Blah functions: deprecate and then remove them from top level imports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4192
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 7653: Ensure that C++ libraries linked are ISO standard with commerical compilers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7653
 
 Original creator: drkirkby
 

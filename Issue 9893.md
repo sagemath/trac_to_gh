@@ -1,6 +1,6 @@
 # Issue 9893: Group cohomology spkg, version 2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9894
 
 Original creator: SimonKing
 
@@ -537,7 +537,7 @@ RuntimeError: Singular error:
    ? cannot open `help.cnf`
 Singular for ppcMac-darwin version 3-1-1 (3114-2010090802)  Sep  8 2010 02:24:06
 with
-        factory(`@`(#) factoryVersion = 3.1.1),libfac(3.1.1,Feb 2010),
+        factory(@(#) factoryVersion = 3.1.1),libfac(3.1.1,Feb 2010),
         GMP(4.2),NTL(5.4.2),32bit,static readline,Plural,DBM,
         dynamic modules,OM_NDEBUG,random=1284424481
         CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -DppcMac_darwin -DHAVE_CONFIG_H,
@@ -730,7 +730,9 @@ Comment by kcrisman created at 2010-09-14 08:32:58
 > ['y^3', 'x*y^2', 'x^2*y', 'x^3']
 > }}}
 Well:
-{{{----------------------------------------------------------------------
+
+```
+----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: R = singular.ring(0,'(x,y)','dp')
 sage: I = singular.maxideal(3)
@@ -738,7 +740,8 @@ sage: singular.eval('print(%s)'%I.name()).split(',\n')
 ['y^3', 'x*y^2', 'x^2*y', 'x^3']
 sage: [t.strip() for t in singular.eval('print(%s)'%I.name()).split(',')]
 ['y^3', 'x*y^2', 'x^2*y', 'x^3']
-}}}
+```
+
 But:
 
 ```

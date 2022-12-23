@@ -1,6 +1,6 @@
 # Issue 9853: make networkx compatibel with numpy-1.4.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9854
 
 Original creator: maldun
 

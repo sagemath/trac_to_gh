@@ -1,6 +1,6 @@
 # Issue 37: preparser doesn't parse hex input:
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/37
 
 Original creator: was
 

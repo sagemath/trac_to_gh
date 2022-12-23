@@ -1,6 +1,6 @@
 # Issue 7972: show_identifiers is broken in the notebook; needs to not include globals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7972
 
 Original creator: was
 
@@ -53,7 +53,7 @@ PS: >... That said: The above reference is just meant as some background info...
 	
 Jan 16 (1 day ago)
 William Stein	
-2010/1/16 Shing Hing Man <matmsh`@`yahoo.com>: Use show_identifiers and reset: ...
+2010/1/16 Shing Hing Man <matmsh@yahoo.com>: Use show_identifiers and reset: ...
 	
 Jan 16 (1 day ago)
 Shing Hing Man	
@@ -68,8 +68,8 @@ Felix Lawrence
 	
 show details 9:16 PM (56 minutes ago)
 	
-On Jan 17, 11:35 am, William Stein <wst...`@`gmail.com> wrote:
-> 2010/1/16 Shing Hing Man <mat...`@`yahoo.com>:
+On Jan 17, 11:35 am, William Stein <wst...@gmail.com> wrote:
+> 2010/1/16 Shing Hing Man <mat...@yahoo.com>:
 >
 > > Hi,
 > >   In a Sage session (within notebook or command console) ,  how to
@@ -100,8 +100,8 @@ Cheers,
 Felix
 
 --
-To post to this group, send email to sage-support`@`googlegroups.com
-To unsubscribe from this group, send email to sage-support+unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
+To unsubscribe from this group, send email to sage-support+unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-support
 URL: http://www.sagemath.org
 
@@ -147,7 +147,7 @@ show details 9:27 PM (45 minutes ago)
 Hi Felix,
 |
 On Mon, Jan 18, 2010 at 4:16 PM, Felix Lawrence
-<felix`@`physics.usyd.edu.au> wrote:
+<felix@physics.usyd.edu.au> wrote:
 
 <SNIP>
 

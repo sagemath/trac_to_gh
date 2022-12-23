@@ -1,6 +1,6 @@
 # Issue 9930: Implement conversion from EllipticCurvePoint to PARI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9931
 
 Original creator: jdemeyer
 

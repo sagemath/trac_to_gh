@@ -1,6 +1,6 @@
 # Issue 6518: [with patch, needs review] doctest script uses deprecated signature for showwarning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6518
 
 Original creator: burcin
 

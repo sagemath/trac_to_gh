@@ -1,6 +1,6 @@
 # Issue 3117: bug in quotient polynomial rings when using funny term order
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3117
 
 Original creator: was
 

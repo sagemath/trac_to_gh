@@ -1,6 +1,6 @@
 # Issue 5014: matrix rank should call echelon_form over *fraction field*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5014
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  mjo
 
 ```
 
-On Sun, Jan 18, 2009 at 6:49 AM, Paul Zimmermann <Paul.Zimmermann`@`loria.fr> wrote:
+On Sun, Jan 18, 2009 at 6:49 AM, Paul Zimmermann <Paul.Zimmermann@loria.fr> wrote:
 >       Hi,
 >
 > I hit the following:

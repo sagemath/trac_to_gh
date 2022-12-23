@@ -1,6 +1,6 @@
 # Issue 5670: documentation for isogeny_class in EllipticCurve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5670
 
 Original creator: victor
 

@@ -1,6 +1,6 @@
 # Issue 1779: setup.py computes the cache of some irrelevent files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1779
 
 Original creator: moretti
 

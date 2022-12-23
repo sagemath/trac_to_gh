@@ -1,6 +1,6 @@
 # Issue 4723: Infinite precision increase finding roots over QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4723
 
 Original creator: ncalexan
 
@@ -144,7 +144,7 @@ Note that I had to apply the following patch to quiet some numerical noise on sa
 diff -r 364557890854 sage/rings/polynomial/complex_roots.py
 --- a/sage/rings/polynomial/complex_roots.py	Sat Jan 17 13:54:17 2009 -0800
 +++ b/sage/rings/polynomial/complex_roots.py	Sun Jan 18 08:24:19 2009 -0800
-`@``@` -268,7 +268,7 `@``@`
+@@ -268,7 +268,7 @@
          sage: complex_roots(x^5 - x - 1)
          [(1.167303978261419?, 1), (0.181232444469876? + 1.083954101317711?*I, 1), (0.181232444469876? - 1.083954101317711?*I, 1), (-0.764884433600585? + 0.352471546031727?*I, 1), (-0.764884433600585? - 0.352471546031727?*I, 1)]
          sage: complex_roots(x^2 + 27*x + 181)

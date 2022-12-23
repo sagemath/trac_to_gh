@@ -1,6 +1,6 @@
 # Issue 3613: symbolic equations are not passed to Maple correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3613
 
 Original creator: mhansen
 

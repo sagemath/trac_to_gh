@@ -1,6 +1,6 @@
 # Issue 4997: OSX64/Cygwin: fix memory.so import issue during doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4997
 
 Original creator: mabshoff
 
@@ -29,7 +29,7 @@ The fix is to link the first library to be imported against libcsage:
 ```
 --- a/module_list.py    Mon Jan 05 23:03:45 2009 -0800
 +++ b/module_list.py    Tue Jan 06 17:13:03 2009 -0800
-`@``@` -854,7 +854,7 `@``@`
+@@ -854,7 +854,7 @@
  
      Extension('sage.rings.memory',
                sources = ['sage/rings/memory.pyx'],

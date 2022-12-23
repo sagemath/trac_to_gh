@@ -1,6 +1,6 @@
 # Issue 9699: Barycentric embedding for planar graphs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9699
 
 Original creator: fidelbarrera
 

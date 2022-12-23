@@ -1,6 +1,6 @@
 # Issue 2669: letting matrix __setindex__ function allow setting multiple entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2669
 
 Original creator: jason
 

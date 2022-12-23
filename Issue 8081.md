@@ -1,6 +1,6 @@
 # Issue 8081: documentation bug on new gale_ryser_theorem()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8081
 
 Original creator: mvngu
 

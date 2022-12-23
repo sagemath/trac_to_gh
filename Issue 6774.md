@@ -1,6 +1,6 @@
 # Issue 6774: [with patch, needs review] tour Graph Theory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6774
 
 Original creator: ncohen
 

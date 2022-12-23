@@ -1,6 +1,6 @@
 # Issue 2326: compiled sparse and dense graph datastructures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2326
 
 Original creator: rlm
 

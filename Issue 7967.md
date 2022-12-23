@@ -1,6 +1,6 @@
 # Issue 7967: DeprecationWarning for popen3 in hg_sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7967
 
 Original creator: wjp
 

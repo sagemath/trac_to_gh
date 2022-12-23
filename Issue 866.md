@@ -1,6 +1,6 @@
 # Issue 866: [with patch] big NTL patch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/866
 
 Original creator: craigcitro
 

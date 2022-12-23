@@ -1,6 +1,6 @@
 # Issue 6554: [with patch, needs review] plotting sparse matrices converts the matrix to a dense matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6554
 
 Original creator: jason
 

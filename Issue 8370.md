@@ -1,6 +1,6 @@
 # Issue 8370: Add tour_functions to the French tutorial (cf. #5463)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8370
 
 Original creator: mmezzarobba
 

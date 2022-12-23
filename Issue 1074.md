@@ -1,6 +1,6 @@
 # Issue 1074: Singular segfault with monitor("testfile.txt","io");
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1074
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: malb
 
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.9/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high --trace-children=ye
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.9/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high --trace-children=ye
 s ./singular
 ==24485== Memcheck, a memory error detector.
 ==24485== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
@@ -126,7 +126,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Conditional jump or move depends on uninitialised value(s)
 ==24486==    at 0x4A1D3D3: mempcpy (mc_replace_strmem.c:77)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -140,7 +140,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Conditional jump or move depends on uninitialised value(s)
 ==24486==    at 0x4A1D470: mempcpy (mc_replace_strmem.c:80)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -154,7 +154,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Conditional jump or move depends on uninitialised value(s)
 ==24486==    at 0x4A1D3E9: mempcpy (mc_replace_strmem.c:676)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -168,7 +168,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Conditional jump or move depends on uninitialised value(s)
 ==24486==    at 0x4A1D436: mempcpy (mc_replace_strmem.c:676)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -182,7 +182,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Conditional jump or move depends on uninitialised value(s)
 ==24486==    at 0x4A1D490: mempcpy (mc_replace_strmem.c:676)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -196,7 +196,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Use of uninitialised value of size 8
 ==24486==    at 0x4A1D4A0: mempcpy (mc_replace_strmem.c:676)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)
@@ -210,7 +210,7 @@ division complete==24486== Conditional jump or move depends on uninitialised val
 ==24486==
 ==24486== Use of uninitialised value of size 8
 ==24486==    at 0x4A1D4AD: mempcpy (mc_replace_strmem.c:676)
-==24486==    by 0x57BACB6: _IO_file_xsputn`@``@`GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
+==24486==    by 0x57BACB6: _IO_file_xsputn@@GLIBC_2.2.5 (in /lib/libc-2.3.6.so)
 ==24486==    by 0x57978C2: vfprintf (in /lib/libc-2.3.6.so)
 ==24486==    by 0x4D835C: Print (febase.cc:1134)
 ==24486==    by 0x4B4883: sleftv::Print(sleftv*, int) (subexpr.cc:144)

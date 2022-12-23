@@ -1,6 +1,6 @@
 # Issue 4125: Build breaks entirely or pulls in non-standard libraries with fink and macports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4125
 
 Original creator: dphilp
 

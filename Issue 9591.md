@@ -1,6 +1,6 @@
 # Issue 9591: Upgrade genus2reduction to pari 2.4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9591
 
 Original creator: jdemeyer
 
@@ -89,7 +89,7 @@ But this fails to build on OpenSolaris 32-bit, despite the previous version work
 
 
 ```
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg
+drkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg
 Installing http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg
 Calling sage-spkg on http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg
 Warning: Attempted to overwrite SAGE_ROOT environment variable

@@ -1,6 +1,6 @@
 # Issue 7029: Sun C++ compiler does not accept  pynac C++ code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7029
 
 Original creator: drkirkby
 

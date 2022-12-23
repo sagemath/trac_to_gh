@@ -1,6 +1,6 @@
 # Issue 1064: applying permutation is coded in a way that behaves badly when input isn't an "expected type"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1064
 
 Original creator: was
 

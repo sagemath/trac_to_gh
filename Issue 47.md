@@ -1,6 +1,6 @@
 # Issue 47: make it easy to turn off preparser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/47
 
 Original creator: anonymous
 

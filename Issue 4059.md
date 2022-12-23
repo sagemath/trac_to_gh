@@ -1,6 +1,6 @@
 # Issue 4059: libm4ri configure is seriously broken on anything not x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4059
 
 Original creator: anakha
 

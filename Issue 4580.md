@@ -1,6 +1,6 @@
 # Issue 4580: [with patch, needs review] move mpfr declarations to a pxd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4580
 
 Original creator: robertwb
 

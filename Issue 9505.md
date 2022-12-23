@@ -1,6 +1,6 @@
 # Issue 9505: coeff(f,x*y) does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9505
 
 Original creator: zimmerma
 

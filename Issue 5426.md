@@ -1,6 +1,6 @@
 # Issue 5426: Move finite fields to new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5426
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 7973: Documentation for submitting a patch is overly confusing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7973
 
 Original creator: gaer
 
@@ -76,7 +76,7 @@ Attachment
 You're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):
 
 ```
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush
 adding 13639.patch to series file
 applying 13639.patch
 patching file doc/en/developer/producing_patches.rst

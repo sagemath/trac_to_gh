@@ -1,6 +1,6 @@
 # Issue 8203: misc doc fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8203
 
 Original creator: jhpalmieri
 
@@ -19,13 +19,13 @@ Comment by mvngu created at 2010-02-07 04:06:50
 The attachment [trac_8203-doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8203/trac_8203-doc.patch) conflicts with the patch at #8190: 
 
 ```
-[mvngu`@`sage sage-main]$ pwd
+[mvngu@sage sage-main]$ pwd
 /dev/shm/mvngu/sage-4.3.2-sage.math/devel/sage-main
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8190/trac_8190-docbuild.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8190/trac_8190-docbuild.patch && hg qpush
 adding trac_8190-docbuild.patch to series file
 applying trac_8190-docbuild.patch
 now at: trac_8190-docbuild.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8203/trac_8203-doc.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8203/trac_8203-doc.patch && hg qpush
 adding trac_8203-doc.patch to series file
 applying trac_8203-doc.patch
 patching file sage/gsl/ode.pyx

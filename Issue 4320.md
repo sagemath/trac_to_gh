@@ -1,6 +1,6 @@
 # Issue 4320: linear codes improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4320
 
 Original creator: wdj
 
@@ -132,7 +132,7 @@ This patch also has this property for 3.1.4 (ie, patch applies cleanly, sage -te
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.4$ ./sage -testall       
+wdj@hera:~/sagefiles/sage-3.1.4$ ./sage -testall       
 
 <snip>
 
@@ -143,7 +143,7 @@ The following tests failed:
         sage -t  devel/sage/sage/coding/linear_code.py
 Total time for all tests: 5448.1 seconds
 Please see /home/wdj/sagefiles/sage-3.1.4/tmp/test.log for the complete log from this test.
-wdj`@`hera:~/sagefiles/sage-3.1.4$ ./sage -t  devel/sage/sage/coding/linear_code.py
+wdj@hera:~/sagefiles/sage-3.1.4$ ./sage -t  devel/sage/sage/coding/linear_code.py
 sage -t  devel/sage/sage/coding/linear_code.py
          [17.8 s]
 

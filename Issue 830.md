@@ -1,6 +1,6 @@
 # Issue 830: SAGE does not install 'gphelp' for extended PARI/GP help
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/830
 
 Original creator: justin
 

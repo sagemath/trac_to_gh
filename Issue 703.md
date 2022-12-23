@@ -1,6 +1,6 @@
 # Issue 703: fixes to the programming guide from jaap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/703
 
 Original creator: was
 

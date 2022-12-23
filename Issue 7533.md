@@ -1,6 +1,6 @@
 # Issue 7533: Implement distance graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7533
 
 Original creator: rbeezer
 

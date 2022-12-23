@@ -1,6 +1,6 @@
 # Issue 2915: bug in symbolic integration or "stupid bug in the sage/maxima interface"?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2915
 
 Original creator: was
 

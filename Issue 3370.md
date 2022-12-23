@@ -1,6 +1,6 @@
 # Issue 3370: [with patch, needs review] converting strings to ZZ[x,y] fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3370
 
 Original creator: burcin
 

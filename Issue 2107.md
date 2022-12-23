@@ -1,6 +1,6 @@
 # Issue 2107: serious malloc problem triggered by Hecke operator computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2107
 
 Original creator: was
 

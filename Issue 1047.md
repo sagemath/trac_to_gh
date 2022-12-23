@@ -1,6 +1,6 @@
 # Issue 1047: graphs: Create the "visitor" concept in Boost
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1047
 
 Original creator: jason
 

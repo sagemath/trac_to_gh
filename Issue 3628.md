@@ -1,6 +1,6 @@
 # Issue 3628: [with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3628
 
 Original creator: was
 
@@ -23,9 +23,9 @@ http://sage.math.washington.edu/home/was/patches/clisp-2.46.p3.spkg
 does this
 
 ```
-sage`@`modular:~/build/sage-3.0.4.rc2/spkg/standard/clisp-2.46.p2$ hg export tip
+sage@modular:~/build/sage-3.0.4.rc2/spkg/standard/clisp-2.46.p2$ hg export tip
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1215650285 25200
 # Node ID 894ef09f7493ecb498cfabae78c94ccadf74e50c
 # Parent  3fb5fefd13e4d8acf4eff5c963397554f9df2574
@@ -34,7 +34,7 @@ Add -prefix to with-readline option; get rid of stupid fallback.
 diff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install
 --- a/spkg-install      Mon Jul 07 19:51:11 2008 -0400
 +++ b/spkg-install      Wed Jul 09 17:38:05 2008 -0700
-`@``@` -26,12 +26,7 `@``@` cd src/
+@@ -26,12 +26,7 @@ cd src/
 
  unset CPPFLAGS   # do this; since otherwise build will fail if CPPFLAGS was se
 

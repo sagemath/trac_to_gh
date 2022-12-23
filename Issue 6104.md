@@ -1,6 +1,6 @@
 # Issue 6104: [with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6104
 
 Original creator: mabshoff
 

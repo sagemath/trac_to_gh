@@ -1,6 +1,6 @@
 # Issue 3408: [with spkg] Cython 0.9.8 released
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3408
 
 Original creator: robertwb
 
@@ -63,7 +63,7 @@ Comment by mabshoff created at 2008-06-13 03:28:17
 I am getting slight rejects here:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 --dry-run < trac_3408-cython-0.9.8.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 --dry-run < trac_3408-cython-0.9.8.patch 
 patching file sage/ext/interactive_constructors_c.pyx
 Hunk #1 FAILED at 24.
 1 out of 2 hunks FAILED -- saving rejects to file sage/ext/interactive_constructors_c.pyx.rej

@@ -1,6 +1,6 @@
 # Issue 9255: Minor tweaks to parallel decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9255
 
 Original creator: rlm
 

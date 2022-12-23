@@ -1,6 +1,6 @@
 # Issue 5934: [with spkg; needs review] networkx -- fix bad spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5934
 
 Original creator: was
 

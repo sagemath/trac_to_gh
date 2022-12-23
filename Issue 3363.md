@@ -1,6 +1,6 @@
 # Issue 3363: Use Applescript to start Sage on OSX (step 4-6 from README)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3363
 
 Original creator: mabshoff
 

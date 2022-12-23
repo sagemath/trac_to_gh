@@ -1,6 +1,6 @@
 # Issue 8327: Implement the universal cyclotomic field, using Zumbroich basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8327
 
 Original creator: nthiery
 
@@ -571,7 +571,7 @@ The new patch does not apply, because of the hunk
 ```
 --- all.py
 +++ all.py
-`@``@` -1,3 +1,5 `@``@`
+@@ -1,3 +1,5 @@
 +from sage.misc.lazy_import import lazy_import
 +
  from category import    is_Category, Category, HomCategory

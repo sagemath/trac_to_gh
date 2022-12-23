@@ -1,6 +1,6 @@
 # Issue 4806: broken real number exponent preparsing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4806
 
 Original creator: dmharvey
 

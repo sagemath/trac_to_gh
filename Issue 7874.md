@@ -1,6 +1,6 @@
 # Issue 7874: Typeset labels for interact controls
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7874
 
 Original creator: mpatel
 
@@ -13,7 +13,7 @@ CC:  rbeezer
 Can we typeset the labels of interact controls
 
 ```python
-`@`interact
+@interact
 def test(x=slider(-2,2,1, label='$x^2$')):
     print "Doing nothing in an interact"
 ```

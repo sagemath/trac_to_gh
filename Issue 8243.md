@@ -1,6 +1,6 @@
 # Issue 8243: Annoying warnings when building the HTML reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8243
 
 Original creator: mpatel
 

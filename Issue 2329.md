@@ -1,6 +1,6 @@
 # Issue 2329: [with patch, needs review] add interface to Pari's rnfisnorm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2329
 
 Original creator: craigcitro
 

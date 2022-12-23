@@ -1,6 +1,6 @@
 # Issue 7366: fix GF(4,'a').list()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7366
 
 Original creator: malb
 

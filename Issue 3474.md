@@ -1,6 +1,6 @@
 # Issue 3474: Request for improvement in plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3474
 
 Original creator: craigcitro
 

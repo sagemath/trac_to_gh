@@ -1,6 +1,6 @@
 # Issue 5690: Update MPIR to 1.0.0.rc7 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5690
 
 Original creator: mabshoff
 

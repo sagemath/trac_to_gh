@@ -1,6 +1,6 @@
 # Issue 5653: [with patch, needs work] display docstrings in the notebook using html and jsMath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5653
 
 Original creator: jhpalmieri
 
@@ -676,37 +676,37 @@ It looks like this file was touched a lot in the last few weeks:
 
 
 ```
-grout`@`tiny:~/sage/devel/sage/sage/misc$ hg log -d -30 sagedoc.py
+grout@tiny:~/sage/devel/sage/sage/misc$ hg log -d -30 sagedoc.py
 changeset:   12667:e40ab81e2c6d
 tag:         qtip
 tag:         docstring.6.patch
 tag:         tip
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Sat Jun 20 09:07:16 2009 -0700
 summary:     #5653, pretty docstrings
 
 changeset:   12653:3534c8c4de50
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Tue Jul 07 07:52:02 2009 -0700
 summary:     fix for ref manual
 
 changeset:   12616:0df4e2e58e79
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Mon Jun 29 17:14:16 2009 -0700
 summary:     add 1 to line numbers
 
 changeset:   12615:50be675c81f1
-user:        Dan Drake <drake`@`kaist.edu>
+user:        Dan Drake <drake@kaist.edu>
 date:        Sun Jun 28 22:17:17 2009 -0700
 summary:     [mq]: trac_6429_line_numbers.patch
 
 changeset:   12614:6d776eac44c9
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Sun Jun 28 21:29:54 2009 -0700
 summary:     try to make search_src etc. less OS dependent
 
 changeset:   12603:96d0f059d528
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Thu Jun 25 17:13:23 2009 -0700
 summary:     ref manual fixes
 ```

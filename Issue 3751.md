@@ -1,6 +1,6 @@
 # Issue 3751: Type of output returned by QuadraticField(-1).class_number()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3751
 
 Original creator: ljpk
 

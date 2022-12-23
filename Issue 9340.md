@@ -1,6 +1,6 @@
 # Issue 9340: update Developer's Guide to require spkg-check for each standard spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9340
 
 Original creator: mvngu
 

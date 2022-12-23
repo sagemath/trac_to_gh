@@ -1,6 +1,6 @@
 # Issue 9460: Many Maxima-related doctest failures on sage.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9460
 
 Original creator: mpatel
 
@@ -155,7 +155,7 @@ includes
 ```diff
 --- sage-4.5.alpha4-j20-env/local/bin/maxima    2010-07-08 02:40:13.000000000 -0700
 +++ sage-4.5.alpha4-j20/local/bin/maxima        2010-07-08 01:11:55.000000000 -0700
-`@``@` -9,10 +9,10 `@``@` setup_vars() {
+@@ -9,10 +9,10 @@ setup_vars() {
    if [ -z "$MAXIMA_VERSION" ]; then
      MAXIMA_VERSION=5.20.1
    fi
@@ -410,7 +410,7 @@ Given Maxima has a library interface, should Maxima not be built before the Sage
 
 
 ```
-kirkby`@`sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep "maxima|sage-4.5.alpha4"
+kirkby@sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep "maxima|sage-4.5.alpha4"
 -rw-r--r-- 1 kirkby kirkby 265 2010-07-09 08:41 sage-4.5.alpha4
 -rw-r--r-- 1 kirkby kirkby 266 2010-07-09 08:51 maxima-5.20.1.p1
 ```

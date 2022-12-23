@@ -1,6 +1,6 @@
 # Issue 1781: preparser bug involving backslash-to-continue line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1781
 
 Original creator: was
 

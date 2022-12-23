@@ -1,6 +1,6 @@
 # Issue 1991: PSage -- (parallel sage): every time you create a new psage object, the first view shows it as not finished, but it is!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1991
 
 Original creator: was
 

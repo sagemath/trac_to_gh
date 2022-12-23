@@ -1,6 +1,6 @@
 # Issue 2105: Constructor for ntl.GF2X polynomials does not take Polynomials over  GF(2) as advertised by docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2105
 
 Original creator: malb
 

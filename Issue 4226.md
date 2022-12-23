@@ -1,6 +1,6 @@
 # Issue 4226: [with patch, needs reivew] Real Lazy Field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4226
 
 Original creator: robertwb
 

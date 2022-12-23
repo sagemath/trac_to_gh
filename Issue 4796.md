@@ -1,6 +1,6 @@
 # Issue 4796: Remove bugs.py in sage/modular/modform
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4796
 
 Original creator: craigcitro
 

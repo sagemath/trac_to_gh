@@ -1,6 +1,6 @@
 # Issue 4236: magma -- boolean ring conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4236
 
 Original creator: was
 

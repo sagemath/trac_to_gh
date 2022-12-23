@@ -1,6 +1,6 @@
 # Issue 818: Convert of prod to Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/818
 
 Original creator: jbmohler
 

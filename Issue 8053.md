@@ -1,6 +1,6 @@
 # Issue 8053: graph editor minor bugs and improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8053
 
 Original creator: rkirov
 

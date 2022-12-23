@@ -1,6 +1,6 @@
 # Issue 1500: solve_mod -- implement solving modulo n in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1500
 
 Original creator: was
 

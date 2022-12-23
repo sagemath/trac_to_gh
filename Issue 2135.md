@@ -1,6 +1,6 @@
 # Issue 2135: [with patch, needs easy review] allow for specifying initial position in spring layout
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2135
 
 Original creator: rlm
 

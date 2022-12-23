@@ -1,6 +1,6 @@
 # Issue 6014: hexads in S(5,6,12) and mathematical blackjack
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6014
 
 Original creator: wdj
 

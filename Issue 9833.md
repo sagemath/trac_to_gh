@@ -1,6 +1,6 @@
 # Issue 9833: LaTeX representation of fractions still broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9834
 
 Original creator: robert.marik
 

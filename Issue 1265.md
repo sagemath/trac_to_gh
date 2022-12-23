@@ -1,6 +1,6 @@
 # Issue 1265: [with patch] documentation typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1265
 
 Original creator: zimmerma
 

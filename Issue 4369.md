@@ -1,6 +1,6 @@
 # Issue 4369: [with patch, needs review] completed reference
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4369
 
 Original creator: zimmerma
 

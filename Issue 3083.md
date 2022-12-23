@@ -1,6 +1,6 @@
 # Issue 3083: Print does not include documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3083
 
 Original creator: rlm
 

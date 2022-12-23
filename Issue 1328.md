@@ -1,6 +1,6 @@
 # Issue 1328: 2.8.14/Solaris: partitions_c.h compile fix - unclean
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1328
 
 Original creator: mabshoff
 

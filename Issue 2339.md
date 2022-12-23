@@ -1,6 +1,6 @@
 # Issue 2339: xmin/xmax now broken in plot()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2339
 
 Original creator: bober
 

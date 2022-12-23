@@ -1,6 +1,6 @@
 # Issue 216: optional_packages misparses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/216
 
 Original creator: nbruin
 
@@ -31,7 +31,7 @@ I've made the code more robust for sage > 1.8.2.1
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169735785 28800
 # Node ID 9839fc0f4341de039cb16097a9d1b70f89a2ba9b
 # Parent  5b7c4027bc1e4f035ae4d8be69efc256721258a3
@@ -40,7 +40,7 @@ trac #216 -- make optional_packages() command more robust.
 diff -r 5b7c4027bc1e -r 9839fc0f4341 sage/misc/package.py
 --- a/sage/misc/package.py      Thu Jan 25 06:25:41 2007 -0800
 +++ b/sage/misc/package.py      Thu Jan 25 06:36:25 2007 -0800
-`@``@` -73,9 +73,16 `@``@` def optional_packages():
+@@ -73,9 +73,16 @@ def optional_packages():
          upgrade -- upgrade to latest version of core packages
                     (optional packages are not automatically upgraded).
      """

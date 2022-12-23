@@ -1,6 +1,6 @@
 # Issue 8739: Addition of Kolakoski word
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8739
 
 Original creator: abmasse
 

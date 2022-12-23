@@ -1,6 +1,6 @@
 # Issue 4290: stopgap function to turn plane curves of genus one into elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4290
 
 Original creator: ljpk
 

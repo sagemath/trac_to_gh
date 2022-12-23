@@ -1,6 +1,6 @@
 # Issue 4162: Upgrade trac to 0.11
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4162
 
 Original creator: jason
 

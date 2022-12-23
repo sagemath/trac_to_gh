@@ -1,6 +1,6 @@
 # Issue 8712: Use `optparse` in sage -merge for increased usability.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8712
 
 Original creator: timdumol
 

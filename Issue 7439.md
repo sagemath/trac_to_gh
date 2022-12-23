@@ -1,6 +1,6 @@
 # Issue 7439: optional spkg nauty-24b7.p1  fails to build with sage-4.2.1 and ubuntu 9.10 (gcc-4.4.1)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7439
 
 Original creator: was
 

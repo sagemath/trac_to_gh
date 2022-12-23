@@ -1,6 +1,6 @@
 # Issue 3683: meataxe interface [with patch, not ready for review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3683
 
 Original creator: wdj
 

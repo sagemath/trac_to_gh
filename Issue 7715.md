@@ -1,6 +1,6 @@
 # Issue 7715: implement vectors mod 2 as M4RI matrices with one row
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7715
 
 Original creator: malb
 

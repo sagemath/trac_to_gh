@@ -1,6 +1,6 @@
 # Issue 5329: [with patch; needs review] sage-3.3.rc3 -- latex mistake
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5329
 
 Original creator: was
 

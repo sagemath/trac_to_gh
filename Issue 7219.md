@@ -1,6 +1,6 @@
 # Issue 7219: Spanish doc #7 "Generators for Rings of Modular Forms"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7219
 
 Original creator: Loufer
 

@@ -1,6 +1,6 @@
 # Issue 6895: Detect discontinuities when plotting the ceil function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6895
 
 Original creator: nbonifas
 

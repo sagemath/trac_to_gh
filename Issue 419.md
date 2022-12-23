@@ -1,6 +1,6 @@
 # Issue 419: row reduction for matrices over multivariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/419
 
 Original creator: malb
 

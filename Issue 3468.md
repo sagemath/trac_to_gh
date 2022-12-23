@@ -1,6 +1,6 @@
 # Issue 3468: Add Sage to the Groebner Bases Implementations database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3468
 
 Original creator: malb
 

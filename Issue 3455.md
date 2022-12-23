@@ -1,6 +1,6 @@
 # Issue 3455: notebook -- after registration give user login box with congratulations message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3455
 
 Original creator: TimothyClemans
 

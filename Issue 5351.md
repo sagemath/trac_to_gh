@@ -1,6 +1,6 @@
 # Issue 5351: Sage 3.3 broke the update of  easy-install.pth
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5351
 
 Original creator: mabshoff
 

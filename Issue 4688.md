@@ -1,6 +1,6 @@
 # Issue 4688: wrap pari functions idealstar and ideallog
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4688
 
 Original creator: cremona
 

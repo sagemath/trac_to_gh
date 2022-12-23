@@ -1,6 +1,6 @@
 # Issue 7940: real_mpfr: fix docstring so ref manual builds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7940
 
 Original creator: jhpalmieri
 

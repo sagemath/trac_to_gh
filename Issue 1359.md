@@ -1,6 +1,6 @@
 # Issue 1359: implement cyclotomic norm residues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1359
 
 Original creator: was
 

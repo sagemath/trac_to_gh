@@ -1,6 +1,6 @@
 # Issue 8033: add a README.txt for the graph_editor, to encourage development
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8033
 
 Original creator: was
 

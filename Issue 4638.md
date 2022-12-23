@@ -1,6 +1,6 @@
 # Issue 4638: Sage 3.2->3.2.a2 upgrade failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4638
 
 Original creator: mabshoff
 
@@ -44,7 +44,7 @@ Then sage-3.2.1.alpha0.spkg as well as the doc.spkg are missing. Deleting the Cy
 But make is unhappy:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.final$ make
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.final$ make
 cd spkg && ./install all 2>&1 | tee -a ../install.log
 /bin/ls: doc-*.spkg: No such file or directory
 /bin/ls: examples-*.spkg: No such file or directory

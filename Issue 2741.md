@@ -1,6 +1,6 @@
 # Issue 2741: Implement mesh lines in 3d plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2741
 
 Original creator: jason
 

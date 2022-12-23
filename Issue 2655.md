@@ -1,6 +1,6 @@
 # Issue 2655: [with patch, needs review] Cython circular cdef imports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2655
 
 Original creator: gfurnish
 

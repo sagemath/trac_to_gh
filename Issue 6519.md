@@ -1,6 +1,6 @@
 # Issue 6519: improve the words library code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6519
 
 Original creator: saliola
 
@@ -321,7 +321,7 @@ I applied the latest `trac_6519-words_ng.patch` on a clean version of sage-4.1. 
 
 
 ```
-slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  "devel/sage/sage/structure/sage_object.pyx"
+slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  "devel/sage/sage/structure/sage_object.pyx"
 sage -t  "devel/sage/sage/structure/sage_object.pyx"        
 	 [4.9 s]
  
@@ -335,7 +335,7 @@ I also run sage -t -long on all the sage tree and the only tests that failed are
 
 
 ```
-slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
+slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
 sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"    
 **********************************************************************
 File "/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py", line 549:
@@ -367,7 +367,7 @@ The following tests failed:
 
 	sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
 Total time for all tests: 4.5 seconds
-slabbe`@`slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ 
+slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ 
 ```
 
 

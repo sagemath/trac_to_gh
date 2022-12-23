@@ -1,6 +1,6 @@
 # Issue 2918: make scipy use umfpack
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2918
 
 Original creator: jkantor
 

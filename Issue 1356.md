@@ -1,6 +1,6 @@
 # Issue 1356: [with patch] fix bug when taking abs() of exactly known QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1356
 
 Original creator: cwitty
 

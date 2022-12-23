@@ -1,6 +1,6 @@
 # Issue 2047: [with patch] new fast float evaluation framework does not work with multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2047
 
 Original creator: cwitty
 

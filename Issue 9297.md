@@ -1,6 +1,6 @@
 # Issue 9297: Test failures of Python (2.6.4.p9) on Solaris 10 SPARC (32-bit)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9297
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 6367: polygon2d -- several issues: typo in docs, shouldn't have been renamed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6367
 
 Original creator: was
 

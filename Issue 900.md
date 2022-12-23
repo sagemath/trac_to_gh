@@ -1,6 +1,6 @@
 # Issue 900: both squarefree_decomposition() and square_free_decomposition() methods exist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/900
 
 Original creator: cwitty
 

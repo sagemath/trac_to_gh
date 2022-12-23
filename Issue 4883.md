@@ -1,6 +1,6 @@
 # Issue 4883: possible memory leak in sage.matrix.matrix_integer_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4883
 
 Original creator: burcin
 

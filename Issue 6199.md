@@ -1,6 +1,6 @@
 # Issue 6199: Integer * int is slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6199
 
 Original creator: fredrik.johansson
 

@@ -1,6 +1,6 @@
 # Issue 4473: [with patch; needs review] loading file.sage that has a line "load foo.py" is broken due to a missing import
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4473
 
 Original creator: was
 

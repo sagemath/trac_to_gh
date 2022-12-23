@@ -1,6 +1,6 @@
 # Issue 6965: preventing repository corruption with MANIFEST.in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6965
 
 Original creator: mvngu
 

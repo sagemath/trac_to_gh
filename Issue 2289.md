@@ -1,6 +1,6 @@
 # Issue 2289: [with doc patch, needs review] make the constructions document prettier and more consistent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2289
 
 Original creator: AlexGhitza
 

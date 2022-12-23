@@ -1,6 +1,6 @@
 # Issue 3572: optimize sage startup time by not importing any modules that import linbox by default.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3572
 
 Original creator: was
 
@@ -62,7 +62,7 @@ Comment by mabshoff created at 2008-07-07 04:21:53
 With this patch applied against 3.0.4.alpha2 I get one doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ ./sage -t -long devel/sage/sage/misc/session.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ ./sage -t -long devel/sage/sage/misc/session.pyx
 sage -t -long devel/sage/sage/misc/session.pyx              
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/session.py", line 212:

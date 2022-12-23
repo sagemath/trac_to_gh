@@ -1,6 +1,6 @@
 # Issue 121: untangle circular imports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/121
 
 Original creator: dmharvey
 

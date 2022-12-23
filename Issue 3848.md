@@ -1,6 +1,6 @@
 # Issue 3848: [with patch, needs instant review] Better documentation for discriminant function for modular abelian varieties' endomorphism ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3848
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 4835: pari starts up without inititializing enough primes?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4835
 
 Original creator: cremona
 

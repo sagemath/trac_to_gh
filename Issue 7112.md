@@ -1,6 +1,6 @@
 # Issue 7112: os x 10.5 powerpc -- there are many many doctest failures all over
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7112
 
 Original creator: was
 

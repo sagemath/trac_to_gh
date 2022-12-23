@@ -1,6 +1,6 @@
 # Issue 6085: [with patch, not ready] Finish full implementation of c_graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6085
 
 Original creator: rlm
 
@@ -143,7 +143,7 @@ The following tests failed:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.0.1.alpha0$ ./sage -t  "devel/sage/doc/en/constructions/graph_theory.rst"
+wdj@hera:~/sagefiles/sage-4.0.1.alpha0$ ./sage -t  "devel/sage/doc/en/constructions/graph_theory.rst"
 sage -t  "devel/sage/doc/en/constructions/graph_theory.rst"                                          
 **********************************************************************                               
 File "/home/wdj/sagefiles/sage-4.0.1.alpha0/devel/sage/doc/en/constructions/graph_theory.rst", line 31:

@@ -1,6 +1,6 @@
 # Issue 1135: Error in preparsing generators, QuadraticField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1135
 
 Original creator: ncalexan
 

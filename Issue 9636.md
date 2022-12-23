@@ -1,6 +1,6 @@
 # Issue 9636: Catch output from PARI in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9636
 
 Original creator: jdemeyer
 

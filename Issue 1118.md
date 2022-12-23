@@ -1,6 +1,6 @@
 # Issue 1118: cputime should include the cpu times of all subprocesses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1118
 
 Original creator: malb
 

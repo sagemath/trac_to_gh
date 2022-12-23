@@ -1,6 +1,6 @@
 # Issue 9686: Polish documentation for canonical label
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9686
 
 Original creator: rlm
 
@@ -35,7 +35,7 @@ Comment by mvngu created at 2010-08-04 19:58:54
 With Sage 4.5.2.rc1 and the patch [attachment:trac_9686.patch], building the reference manual produces the following warning:
 
 ```sh
-[mvngu`@`sage sage-4.5.2.rc1]$ ./sage -docbuild reference html
+[mvngu@sage sage-4.5.2.rc1]$ ./sage -docbuild reference html
 sphinx-build -b html -d /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/output/doctrees/en/reference    /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/en/reference /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/output/html/en/reference
 Running Sphinx v0.6.3
 loading pickled environment... done

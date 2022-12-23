@@ -1,6 +1,6 @@
 # Issue 28: weird power series behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/28
 
 Original creator: was
 

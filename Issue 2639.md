@@ -1,6 +1,6 @@
 # Issue 2639: ZZ(QQbar(0)) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2639
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 3341: fix minor issue with creating skew partitions by dividng partitions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3341
 
 Original creator: mhansen
 

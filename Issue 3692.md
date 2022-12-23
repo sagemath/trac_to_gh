@@ -1,6 +1,6 @@
 # Issue 3692: notebook -- issue with quotes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3692
 
 Original creator: was
 
@@ -33,7 +33,7 @@ Tom Boothby:
 
 Either this is a python bug, "user error", or a feature request.  I don't think this is a problem with the notebook.
 
-boothby`@`eight:~$ sage -python
+boothby@eight:~$ sage -python
 Python 2.5.1 (r251:54863, Nov  9 2007, 07:54:29)
 [GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.

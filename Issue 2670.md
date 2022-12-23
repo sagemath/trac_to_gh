@@ -1,6 +1,6 @@
 # Issue 2670: matrix cmp expr should return a matrix with True/False entries from mapping the test to the entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2670
 
 Original creator: jason
 

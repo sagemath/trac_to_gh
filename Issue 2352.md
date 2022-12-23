@@ -1,6 +1,6 @@
 # Issue 2352: univariate homogenize is not the same as multivariate homogenize
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2352
 
 Original creator: ncalexan
 

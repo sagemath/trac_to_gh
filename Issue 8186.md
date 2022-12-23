@@ -1,6 +1,6 @@
 # Issue 8186: iterated_right_palindromic_closure of a finite word should return a finite word
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8186
 
 Original creator: slabbe
 

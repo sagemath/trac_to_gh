@@ -1,6 +1,6 @@
 # Issue 4615: [with spkg, needs review] Make boehm_gc a standard spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4615
 
 Original creator: mabshoff
 

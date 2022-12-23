@@ -1,6 +1,6 @@
 # Issue 8368: add colorbar option to contour_plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8368
 
 Original creator: jason
 

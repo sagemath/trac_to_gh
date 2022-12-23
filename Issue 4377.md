@@ -1,6 +1,6 @@
 # Issue 4377: Building the Sage library with parallel make is broken on OSX 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4377
 
 Original creator: mabshoff
 

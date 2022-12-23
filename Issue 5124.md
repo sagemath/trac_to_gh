@@ -1,6 +1,6 @@
 # Issue 5124: xmin ignored when plotting elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5124
 
 Original creator: was
 

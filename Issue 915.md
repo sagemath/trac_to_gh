@@ -1,6 +1,6 @@
 # Issue 915: Make LinBox used PID_Integer instead of using old header as workaround
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/915
 
 Original creator: mabshoff
 

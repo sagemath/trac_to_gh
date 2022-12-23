@@ -1,6 +1,6 @@
 # Issue 6568: Migrate Notebook to Jinja
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6568
 
 Original creator: timdumol
 
@@ -41,20 +41,20 @@ Comment by mvngu created at 2009-07-20 19:04:27
 timdumol: There should be a proper username on the patch. At the moment I see this
 
 ```
-# User deadlyx`@`localhost.localdomain
+# User deadlyx@localhost.localdomain
 ```
 
 The username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:
 
 ```
-# User Full Name <email`@`somewhere.com>
+# User Full Name <email@somewhere.com>
 ```
 
 You can set a proper username in the file `~/.hgrc` with something like
 
 ```
 [ui]
-username = Full Name <email`@`somewhere.com>
+username = Full Name <email@somewhere.com>
 ```
 
 I say "should", not "must". If you don't want to, then at least fill in the "Author(s):" field with your full name. That way, it makes it easy to credit you.
@@ -100,7 +100,7 @@ I get 8 rejects when trying to apply the first patch to a 100% clean build of sa
 
 
 ```
-wstein`@`sage:~/build/sage-4.1$ ./sage
+wstein@sage:~/build/sage-4.1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: ref3

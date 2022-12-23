@@ -1,6 +1,6 @@
 # Issue 2020: change an error message when running a certain command and the elliptic curve database is too small
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2020
 
 Original creator: was
 
@@ -12,7 +12,7 @@ In the session below the command fails because the optional LARGE Cremona ellipt
 
 
 ```
-sage`@`modular:~$ build/sage-2.10.1.rc3/sage
+sage@modular:~$ build/sage-2.10.1.rc3/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.1.rc3, Release Date: 2008-01-30                  |

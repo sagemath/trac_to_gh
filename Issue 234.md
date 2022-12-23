@@ -1,6 +1,6 @@
 # Issue 234: Lie -- create a SAGE wrapper for computing with lie groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/234
 
 Original creator: was
 

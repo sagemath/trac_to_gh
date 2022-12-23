@@ -1,6 +1,6 @@
 # Issue 4480: [with patch, needs review] cython dependancy checking is too slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4480
 
 Original creator: robertwb
 
@@ -123,7 +123,7 @@ In addition to mabshoff's fix at #4500, I think we should add the following:
 diff -r c543000d6447 setup.py
 --- a/setup.py  Thu Nov 13 05:32:07 2008 -0800
 +++ b/setup.py  Thu Nov 13 16:26:41 2008 -0800
-`@``@` -13,11 +13,11 `@``@`
+@@ -13,11 +13,11 @@
  else:
      sdist = False
  

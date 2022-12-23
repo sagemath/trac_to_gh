@@ -1,6 +1,6 @@
 # Issue 1936: r-2.6.1.p11: sage-check fails on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1936
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3593: dsage-interfaces -- error decompressing data
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3593
 
 Original creator: was
 

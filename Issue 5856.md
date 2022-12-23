@@ -1,6 +1,6 @@
 # Issue 5856: elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5856
 
 Original creator: was
 

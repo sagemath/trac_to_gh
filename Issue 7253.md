@@ -1,6 +1,6 @@
 # Issue 7253: inefficient polynomial powering for positive characteristic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7253
 
 Original creator: robertwb
 

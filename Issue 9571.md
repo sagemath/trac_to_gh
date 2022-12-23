@@ -1,6 +1,6 @@
 # Issue 9571: Sphinx Warning: Missing title for sage.misc.exceptions after #9249
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9571
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 1141: Number Field elements arithmetic speed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1141
 
 Original creator: jbmohler
 

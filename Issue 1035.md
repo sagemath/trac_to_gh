@@ -1,6 +1,6 @@
 # Issue 1035: update Givaro to version 3.2.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1035
 
 Original creator: malb
 

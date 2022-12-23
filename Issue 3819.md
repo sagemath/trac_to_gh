@@ -1,6 +1,6 @@
 # Issue 3819: Sage 3.1.alpha1> time_series.pyx numerical noise doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3819
 
 Original creator: mabshoff
 

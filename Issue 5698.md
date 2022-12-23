@@ -1,6 +1,6 @@
 # Issue 5698: Sage 3.4.1.rc1: doctest failure in schemes/elliptic_curves/monsky_washnitzer.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5698
 
 Original creator: mabshoff
 
@@ -130,7 +130,7 @@ This is an "aliasing problem".
 
 
 ```
-wstein`@`sage:/scratch/mabshoff/sage-3.4.1.rc1$ ./sage
+wstein@sage:/scratch/mabshoff/sage-3.4.1.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: R.<t> = Zmod(next_prime(8000^3))[]

@@ -1,6 +1,6 @@
 # Issue 6645: make sure bdist of sage-4.1.1 works before release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6645
 
 Original creator: was
 
@@ -103,7 +103,7 @@ It should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROO
 ```
 --- install.orig        2009-08-05 08:28:30.099076846 -0700
 +++ install     2009-08-05 07:35:39.097918589 -0700
-`@``@` -373,8 +373,8 `@``@` if [ $? -ne 0 ]; then
+@@ -373,8 +373,8 @@ if [ $? -ne 0 ]; then
  fi
  
  #Build the documentation

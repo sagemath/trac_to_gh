@@ -1,6 +1,6 @@
 # Issue 2531: pretty-print issue in fractions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2531
 
 Original creator: zimmerma
 

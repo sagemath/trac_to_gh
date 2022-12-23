@@ -1,6 +1,6 @@
 # Issue 4441: [with patch, needs review] fixes to the doc repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4441
 
 Original creator: GeorgSWeber
 
@@ -42,14 +42,14 @@ I wanted 4370-sage_library.patch - the attached patch also need to change since 
 And by the way: my doc repo does not need any fixes:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg status
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg verify
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg status
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg verify
 checking changesets
 checking manifests
 crosschecking files in changesets and manifests
 checking files
 149 files, 683 changesets, 964 total revisions
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$
 ```
 
 

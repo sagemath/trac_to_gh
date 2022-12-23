@@ -1,6 +1,6 @@
 # Issue 4217: notebook -- formatting of cells  beginning with "%hide %html" is not saved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4217
 
 Original creator: mabshoff
 

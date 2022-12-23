@@ -1,6 +1,6 @@
 # Issue 1711: SIGSEGV in PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1711
 
 Original creator: malb
 
@@ -23,7 +23,7 @@ Backtrace:
 
 
 ```
-#0  0x00002b62d02c9277 in std::deque<polybori::CCuddNavigator, std::allocator<polybori::CCuddNavigator> >::operator= (this=0x3073ba8, __x=`@`0x7fffedfa4268) at /usr/include/c++/4.2/bits/stl_algobase.h:283
+#0  0x00002b62d02c9277 in std::deque<polybori::CCuddNavigator, std::allocator<polybori::CCuddNavigator> >::operator= (this=0x3073ba8, __x=@0x7fffedfa4268) at /usr/include/c++/4.2/bits/stl_algobase.h:283
 #1  0x00002b62d02ab7f8 in __pyx_pf_4sage_5rings_10polynomial_5pbori_8BooleSet___iter__ (__pyx_v_self=0x30d08d0) at /home/malb/SAGE/local/include/polybori/CTermStack.h:196
 #2  0x000000000041914f in PyObject_GetIter (o=0x30d08d0) at Objects/abstract.c:2350
 #3  0x00000000004382a5 in listextend (self=0x30d95f0, b=0x7fffedfa4268) at Objects/listobject.c:776

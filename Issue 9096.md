@@ -1,6 +1,6 @@
 # Issue 9096: Fixes wrong sphinx markup :cls:
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9096
 
 Original creator: hivert
 

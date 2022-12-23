@@ -1,6 +1,6 @@
 # Issue 191: prime table / database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/191
 
 Original creator: was
 

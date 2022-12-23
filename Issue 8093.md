@@ -1,6 +1,6 @@
 # Issue 8093: Adding of prefixes and palindrome prefixes iterators to the Words library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8093
 
 Original creator: abmasse
 

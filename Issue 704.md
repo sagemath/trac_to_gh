@@ -1,6 +1,6 @@
 # Issue 704: create a global proof option, which integrates "proof = False" and "proof = True" in a much better way
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/704
 
 Original creator: was
 

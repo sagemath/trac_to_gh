@@ -1,6 +1,6 @@
 # Issue 222: field mutability issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/222
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8248: Small improvement in checking for elliptic curve isogenies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8248
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 850: graphs: create graph by specifying vertices and a function giving adjacencies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/850
 
 Original creator: jason
 

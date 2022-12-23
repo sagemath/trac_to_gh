@@ -1,6 +1,6 @@
 # Issue 6316: optional doctest failure -- surf tests fail since surf isn't included in sage anymore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6316
 
 Original creator: was
 

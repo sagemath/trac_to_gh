@@ -1,6 +1,6 @@
 # Issue 9797: Accelerate Polyhedron constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9798
 
 Original creator: vbraun
 
@@ -632,7 +632,7 @@ mark2 is still testing, but it shows one failure so far:
 sage -t  -long devel/sage/sage/rings/polynomial/groebner_fan.py
 **********************************************************************
 File "/home/palmieri/mark2/sage-4.6.alpha2/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1043:
-    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro))
+    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [[1,-1,-1,-1,-1]])
 Exception raised:
     Traceback (most recent call last):
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1231, in run_one_test
@@ -642,8 +642,8 @@ Exception raised:
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/bin/ncadoctest.py", line 1172, in run_one_example
         compileflags, 1) in test.globs
       File "<doctest __main__.example_40[7]>", line 1, in <module>
-        cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *Integer* that was inherited from the migration called with arguments (1),-Integer)](https://trac.sagemath.org/wiki/WikiMacros#Integer-macro))###line 1043:
-    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro))
+        cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [[Integer(1),-Integer(1),-Integer(1),-Integer(1),-Integer(1)]])###line 1043:
+    sage: cone_data = Polyhedron(ieqs = g_cone_ieqs, eqns = [[1,-1,-1,-1,-1]])
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 1536, in __init__
         if self.ambient_dim() < len(Polyhedron._render_method):
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 2629, in ambient_dim
@@ -694,7 +694,7 @@ Exception raised:
         three_d = gf.render3d()###line 1083:
     sage: three_d = gf.render3d()
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py", line 1106, in render3d
-        cone_info = [Polyhedron(ieqs = q, eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro)) for q in g_cones_ieqs]
+        cone_info = [Polyhedron(ieqs = q, eqns = [[1,-1,-1,-1,-1]]) for q in g_cones_ieqs]
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 1536, in __init__
         if self.ambient_dim() < len(Polyhedron._render_method):
       File "/home/palmieri/mark2/sage-4.6.alpha2/local/lib/python/site-packages/sage/geometry/polyhedra.py", line 2629, in ambient_dim
@@ -756,7 +756,7 @@ Here's fulvia:
 
 ```
 sage: Polyhedron(ieqs = [[0, 0, 0, 0, 1], [0, 0, 0, 2, -1], [0, 0, 2, -1, 0],
-....:  [0, 2, -1, 0, 0]], eqns = [This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro), verbose = True)
+....:  [0, 2, -1, 0, 0]], eqns = [[1,-1,-1,-1,-1]], verbose = True)
 H-representation
 linearity 1 1
 begin

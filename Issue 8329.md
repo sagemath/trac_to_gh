@@ -1,6 +1,6 @@
 # Issue 8329: Missing copy() method in BipartiteGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8329
 
 Original creator: rhinton
 

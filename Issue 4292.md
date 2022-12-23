@@ -1,6 +1,6 @@
 # Issue 4292: [with patch; needs trivial review] graphics_array -- stupid bug introduced by somebody cleaning up the code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4292
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 If you do
 
 ```
-   graphics_array([This is the Trac macro *plot* that was inherited from the migration called with arguments (sin))](https://trac.sagemath.org/wiki/WikiMacros#plot-macro)).show(axes=False)
+   graphics_array([[plot(sin)]]).show(axes=False)
 ```
 
 the axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. 

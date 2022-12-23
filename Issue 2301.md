@@ -1,6 +1,6 @@
 # Issue 2301: Bug in sage_flattened_str_list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2301
 
 Original creator: SimonKing
 
@@ -297,7 +297,7 @@ No dice:
 ```
 sage$ hg import sage_structured_str_list.2.patch
 applying sage_structured_str_list.2.patch
-abort: malformed patch sage/interfaces/singular.py `@``@` -1089,20 +1089,39 `@``@` class SingularElement(ExpectElement):
+abort: malformed patch sage/interfaces/singular.py @@ -1089,20 +1089,39 @@ class SingularElement(ExpectElement):
 ```
 
 Can you repost the patches and delete all the old ones?

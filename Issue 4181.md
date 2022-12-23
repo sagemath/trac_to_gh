@@ -1,6 +1,6 @@
 # Issue 4181: Mysterious error somewhat related to 16-Bit signed integers on Mac OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4181
 
 Original creator: GeorgSWeber
 

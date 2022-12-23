@@ -1,6 +1,6 @@
 # Issue 3777: notebook -- issue parsing out <script> tags
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3777
 
 Original creator: was
 

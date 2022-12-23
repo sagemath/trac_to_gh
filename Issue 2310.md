@@ -1,6 +1,6 @@
 # Issue 2310: [with patch; needs review] bug attaching files in files that are attached
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2310
 
 Original creator: was
 

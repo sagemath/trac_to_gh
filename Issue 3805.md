@@ -1,6 +1,6 @@
 # Issue 3805: sage gets basic arithmetic with sqrt(3) wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3805
 
 Original creator: was
 

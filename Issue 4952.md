@@ -1,6 +1,6 @@
 # Issue 4952: modulus issue in sage/rings/finite_field_ntl_gf2e.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4952
 
 Original creator: mabshoff
 
@@ -56,7 +56,7 @@ Comment by mabshoff created at 2009-02-10 07:37:19
 The issue has been fixed (or at least no longer happens) with Sage 3.3.alpha6 with the system gcc as well as gcc 4.3.3:
 
 ```
-mabshoff`@`menas:~/build-3.3.alpha6/sage-3.3.alpha6-menas-gcc433> ./sage -t -long devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
+mabshoff@menas:~/build-3.3.alpha6/sage-3.3.alpha6-menas-gcc433> ./sage -t -long devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
 sage -t -long "devel/sage/sage/rings/finite_field_ntl_gf2e.pyx"
 	 [5.2 s]
 ```

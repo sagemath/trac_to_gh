@@ -1,6 +1,6 @@
 # Issue 6803: Implement symbolic Kronecker delta and also make current signum (sgn) symbolic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6803
 
 Original creator: gmhossain
 

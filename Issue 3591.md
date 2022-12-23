@@ -1,6 +1,6 @@
 # Issue 3591: notebook -- remove notebook.save()  from Logout
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3591
 
 Original creator: TimothyClemans
 

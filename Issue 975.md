@@ -1,6 +1,6 @@
 # Issue 975: Library incompatibilities when launching external applications
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/975
 
 Original creator: bober
 
@@ -64,7 +64,7 @@ comment from Fernando Perez
 
 ```
  
-On 11/2/07, William Stein <wstein`@`gmail.com> wrote:
+On 11/2/07, William Stein <wstein@gmail.com> wrote:
  
 > Ah, that's very very nice.  OK, I would really like
 > to see that implemented.   Maybe Fernando Perez could
@@ -157,7 +157,7 @@ For now, if you put this in your SAGE_ROOT/local/bin/ it will be a work-around:
 #!/bin/sh
 unset LD_LIBRARY_PATH
 unset DYLD_LIBRARY_PATH
-/usr/bin/emacs $`@`
+/usr/bin/emacs $@
 
    (3) make it executable:
         chmod +x SAGE_ROOT/local/bin/emacs

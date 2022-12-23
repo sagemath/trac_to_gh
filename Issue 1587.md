@@ -1,6 +1,6 @@
 # Issue 1587: M.kernel() gives the kernel when M acts on row vectors from the right.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1587
 
 Original creator: mhansen
 

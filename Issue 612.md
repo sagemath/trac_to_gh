@@ -1,6 +1,6 @@
 # Issue 612: Finite field homomorphisms can't be applied
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/612
 
 Original creator: craigcitro
 

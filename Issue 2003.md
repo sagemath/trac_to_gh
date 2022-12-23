@@ -1,6 +1,6 @@
 # Issue 2003: gnutls configure script finds local copy of guile when it shouldn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2003
 
 Original creator: justin
 

@@ -1,6 +1,6 @@
 # Issue 2919: [with patch, needs review] gcc 4.3: compilation issues in partitions_c.cc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2919
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4739: [with patch, not ready for review] Add support for additive abelian groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4739
 
 Original creator: cremona
 

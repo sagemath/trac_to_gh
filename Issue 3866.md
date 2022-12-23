@@ -1,6 +1,6 @@
 # Issue 3866: Create a 2d locator interact widget
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3866
 
 Original creator: jason
 
@@ -14,7 +14,7 @@ An example:
 
 
 ```
-`@`interact
+@interact
 def _(pos=locator(3)):
     print pos
 ```

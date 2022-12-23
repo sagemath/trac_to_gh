@@ -1,6 +1,6 @@
 # Issue 2886: change an error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2886
 
 Original creator: was
 
@@ -25,11 +25,11 @@ It was left in the file named:
 If you can email this file to the developers, the information in it will help
 them in understanding and correcting the problem.
 
-You can mail it to: William Stein at wstein`@`gmail.com
+You can mail it to: William Stein at wstein@gmail.com
 with the subject 'SAGE Crash Report'.
 
 If you want to do it now, the following command will work (under Unix):
-mail -s 'SAGE Crash Report' wstein`@`gmail.com < /Users/was/.sage/ipython/SAGE_crash_report.txt
+mail -s 'SAGE Crash Report' wstein@gmail.com < /Users/was/.sage/ipython/SAGE_crash_report.txt
 
 To ensure accurate tracking of this issue, please file a report about it at:
 http://www.sagemath.org:9002/sage_trac

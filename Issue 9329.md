@@ -1,6 +1,6 @@
 # Issue 9329: Make it easy to access expression tree of a symbolic expression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9329
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 6505: [with patch, needs review] Sage banner: include warning if a prerelease
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6505
 
 Original creator: jhpalmieri
 
@@ -81,7 +81,7 @@ Also, doing an sdist leaves behind a zombie tree: it looks like it's there, but 
 I do notice that when I try to emulate the `sage-sdist` script and run the line that sets the banner, this happens. This is from a "`sage -sh`" shell:
 
 ```
-rake`@`sage.math:/scratch/drake/sage-4.1.rc1/local/bin$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./python
+rake@sage.math:/scratch/drake/sage-4.1.rc1/local/bin$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/scratch/drake/sage-4.1.rc1/local/lib/python2.6/site-packages/sage/misc/banner.py", line 95, in banner

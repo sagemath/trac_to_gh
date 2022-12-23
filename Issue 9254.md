@@ -1,6 +1,6 @@
 # Issue 9254: A collection of little improvements to BSD.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9254
 
 Original creator: rlm
 

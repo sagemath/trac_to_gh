@@ -1,6 +1,6 @@
 # Issue 8058: New ecm-6.2.1.p2.spkg now wokrs with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8058
 
 Original creator: jsp
 

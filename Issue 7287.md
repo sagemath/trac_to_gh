@@ -1,6 +1,6 @@
 # Issue 7287: [needs review] Update Maxima spkg to build ECL library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7287
 
 Original creator: nbruin
 
@@ -338,7 +338,7 @@ I have built Sage 4.3.alpha0 from scratch with that package. The compilation pro
 After the build and doctests, you could run ECL and using Maxima as a library. Do either "./sage -ecl" or from a Sage command line session, do "!ecl":
 
 ```
-[mvngu`@`sage sage-4.3.alpha0-maxima]$ ./sage -ecl
+[mvngu@sage sage-4.3.alpha0-maxima]$ ./sage -ecl
 ECL (Embeddable Common-Lisp) 9.10.2
 Copyright (C) 1984 Taiichi Yuasa and Masami Hagiya
 Copyright (C) 1993 Giuseppe Attardi

@@ -1,6 +1,6 @@
 # Issue 3503: pickling certain modular forms segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3503
 
 Original creator: mabshoff
 
@@ -174,7 +174,7 @@ ok, the following makes the above case work, but it is not the real fix:
 diff -r 718f333c3aba sage/matrix/matrix_integer_dense.pyx
 --- a/sage/matrix/matrix_integer_dense.pyx	Mon Jun 23 06:15:23 2008 -0700
 +++ b/sage/matrix/matrix_integer_dense.pyx	Tue Jun 24 14:16:26 2008 -0700
-`@``@` -439,7 +439,7 `@``@` cdef class Matrix_integer_dense(matrix_d
+@@ -439,7 +439,7 @@ cdef class Matrix_integer_dense(matrix_d
          if self._nrows == 0 or self._ncols == 0:
              data = ''
          else:

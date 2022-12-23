@@ -1,6 +1,6 @@
 # Issue 9049: v4.4.1 bug in variety() over finite field extensions of Q?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9049
 
 Original creator: cynthia_vinzant
 

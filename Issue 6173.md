@@ -1,6 +1,6 @@
 # Issue 6173: atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6173
 
 Original creator: was
 

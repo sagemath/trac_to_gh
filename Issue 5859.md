@@ -1,6 +1,6 @@
 # Issue 5859: sage -coverageall fails on directories with zero tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5859
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1277: two further flint spkg problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1277
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Nov 25, 2007 9:52 PM, Bill Hart <goodwillhart`@`googlemail.com> wrote:
+On Nov 25, 2007 9:52 PM, Bill Hart <goodwillhart@googlemail.com> wrote:
 > 
 > This is a compiler bug which we've seen before. On Itanium the build
 > should not be using the -funroll-loops flag.

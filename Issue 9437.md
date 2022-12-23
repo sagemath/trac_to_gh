@@ -1,6 +1,6 @@
 # Issue 9437: special linear group over finite rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9437
 
 Original creator: vdelecroix
 

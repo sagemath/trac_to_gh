@@ -1,6 +1,6 @@
 # Issue 664: rings of integers of number fields as a data type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/664
 
 Original creator: was
 

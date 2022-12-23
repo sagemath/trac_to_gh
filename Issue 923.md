@@ -1,6 +1,6 @@
 # Issue 923: change all "sage.:"'s to "sage: blah # not tested"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/923
 
 Original creator: was
 

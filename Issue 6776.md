@@ -1,6 +1,6 @@
 # Issue 6776: [with patch, needs review] plot3d improvement for lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6776
 
 Original creator: novoselt
 

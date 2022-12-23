@@ -1,6 +1,6 @@
 # Issue 5526: get rid of including sse4_1 in local/lib/sage-flags.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5526
 
 Original creator: was
 

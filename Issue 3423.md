@@ -1,6 +1,6 @@
 # Issue 3423: Make Pari error messages more informative
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3423
 
 Original creator: ncalexan
 

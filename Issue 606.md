@@ -1,6 +1,6 @@
 # Issue 606: add notebook support for loading of spyx and pyx files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/606
 
 Original creator: mhansen
 
@@ -75,7 +75,7 @@ This is a good spyx file to test:
 
 
 ```
-was`@`ubuntu:~$ more a.spyx
+was@ubuntu:~$ more a.spyx
 def foo(int n):
     return n*n
 ```

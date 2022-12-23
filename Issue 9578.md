@@ -1,6 +1,6 @@
 # Issue 9578: Add even more customization of ticks in plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9578
 
 Original creator: kcrisman
 

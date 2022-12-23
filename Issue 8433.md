@@ -1,6 +1,6 @@
 # Issue 8433: plot3d for tachyon hangs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8433
 
 Original creator: robert.marik
 

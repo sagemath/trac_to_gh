@@ -1,6 +1,6 @@
 # Issue 7891: spkg's for PyQt4 and QScintilla2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7891
 
 Original creator: a.serrano
 

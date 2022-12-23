@@ -1,6 +1,6 @@
 # Issue 6353: change cookies structure to support multiple notebook logins at different ports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6353
 
 Original creator: boothby
 

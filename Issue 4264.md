@@ -1,6 +1,6 @@
 # Issue 4264: change E.a_invariants() for an elliptic curve to return a tuple
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4264
 
 Original creator: was
 

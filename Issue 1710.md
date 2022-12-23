@@ -1,6 +1,6 @@
 # Issue 1710: switch default location of trac server away from http://www.sagemath.org:9002/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1710
 
 Original creator: malb
 

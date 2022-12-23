@@ -1,6 +1,6 @@
 # Issue 6993: [with package, needs review] update pynac to 0.1.9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6993
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 5078: bug in factoring out constant literal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5078
 
 Original creator: was
 

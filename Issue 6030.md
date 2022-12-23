@@ -1,6 +1,6 @@
 # Issue 6030: Bring plot/circle.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6030
 
 Original creator: kcrisman
 
@@ -46,7 +46,7 @@ Comment by mvngu created at 2009-05-13 03:59:00
 Some doctest failures:
 
 ```
-[mvngu`@`sage sage-3.4.2]$ ./sage -t -long devel/sage-6030/sage/plot/circle.py 
+[mvngu@sage sage-3.4.2]$ ./sage -t -long devel/sage-6030/sage/plot/circle.py 
 sage -t -long "devel/sage-6030/sage/plot/circle.py"         
 **********************************************************************
 File "/scratch/mvngu/sage-3.4.2/devel/sage-6030/sage/plot/circle.py", line 150:

@@ -1,6 +1,6 @@
 # Issue 7619: Pickling support for finite word defined by callable and iterable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7619
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 1372: 2.8.15.alpha2: dokchitser.py doctest failure (numerical noise)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1372
 
 Original creator: mabshoff
 

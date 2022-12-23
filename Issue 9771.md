@@ -1,6 +1,6 @@
 # Issue 9771: unify doctest commands, especially for 'long' and 'parallel' options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9772
 
 Original creator: niles
 

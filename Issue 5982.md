@@ -1,6 +1,6 @@
 # Issue 5982: Can't construct fraction field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5982
 
 Original creator: jmbr
 
@@ -168,7 +168,7 @@ Comment by was created at 2009-07-21 04:51:47
 Positive review modulo fixing this one trivial change to a doctest:
 
 ```
-wstein`@`sage:~/build/sage-4.1$ ./sage -t  devel/sage/sage/rings/quotient_ring.py
+wstein@sage:~/build/sage-4.1$ ./sage -t  devel/sage/sage/rings/quotient_ring.py
 sage -t  "devel/sage/sage/rings/quotient_ring.py"           
 **********************************************************************
 File "/scratch/wstein/build/sage-4.1/devel/sage/sage/rings/quotient_ring.py", line 442:
@@ -209,7 +209,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/rings/quotient_ring.py"
 Total time for all tests: 1.8 seconds
-wstein`@`sage:~/build/sage-4.1$ 
+wstein@sage:~/build/sage-4.1$ 
 ```
 
 

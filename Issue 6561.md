@@ -1,6 +1,6 @@
 # Issue 6561: Trivial bug with cartesian product of an empty list of iterators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6561
 
 Original creator: davidloeffler
 

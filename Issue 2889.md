@@ -1,6 +1,6 @@
 # Issue 2889: notebook -- huge output cells crash firefox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2889
 
 Original creator: was
 

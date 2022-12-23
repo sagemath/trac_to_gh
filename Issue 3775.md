@@ -1,6 +1,6 @@
 # Issue 3775: sage -maxima broken on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3775
 
 Original creator: mabshoff
 

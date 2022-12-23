@@ -1,6 +1,6 @@
 # Issue 4145: [with patch, needs review] linear codes list function is slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4145
 
 Original creator: rlm
 

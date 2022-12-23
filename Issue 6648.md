@@ -1,6 +1,6 @@
 # Issue 6648: [with patch, needs review] adds riemann mapping and complex interpolation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6648
 
 Original creator: evanandel
 
@@ -234,7 +234,7 @@ However, sage -testall failed again, this time on an amd64 ubuntu 9.04 machine:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/calculus/interpolators.pyx"
+wdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/calculus/interpolators.pyx"
 sage -t  "devel/sage/sage/calculus/interpolators.pyx"                                          
 **********************************************************************                         
 File "/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/calculus/interpolators.pyx", line 89:
@@ -344,7 +344,7 @@ This patch needs work:
 
 
 ```
-malb`@`sage:~/sage-4.1/devel$ sage -coverage sage/sage/calculus/interpolators.pyx
+malb@sage:~/sage-4.1/devel$ sage -coverage sage/sage/calculus/interpolators.pyx
 ----------------------------------------------------------------------
 sage/sage/calculus/interpolators.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
@@ -361,7 +361,7 @@ Missing documentation:
 
 
 ```
-malb`@`sage:~/sage-4.1/devel$ sage -coverage sage/sage/calculus/riemann.pyx
+malb@sage:~/sage-4.1/devel$ sage -coverage sage/sage/calculus/riemann.pyx
 ----------------------------------------------------------------------
 sage/sage/calculus/riemann.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
@@ -466,7 +466,7 @@ I assume that patches should be merged in this order:
 These patches apply OK against Sage 4.1.1, with `12660.patch` resulting in some fuzz:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6648/12660.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6648/12660.patch && hg qpush
 adding 12660.patch to series file
 applying 12660.patch
 patching file module_list.py
@@ -510,14 +510,14 @@ build succeeded, 17 warnings.
 Two crucial doctests are missing:
 
 ```
-[mvngu`@`sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/calculus/interpolators.pyx
+[mvngu@sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/calculus/interpolators.pyx
 ----------------------------------------------------------------------
 devel/sage-main/sage/calculus/interpolators.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
 SCORE devel/sage-main/sage/calculus/interpolators.pyx: 100% (8 of 8)
 ----------------------------------------------------------------------
 
-[mvngu`@`sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/calculus/riemann.pyx
+[mvngu@sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/calculus/riemann.pyx
 ----------------------------------------------------------------------
 devel/sage-main/sage/calculus/riemann.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.

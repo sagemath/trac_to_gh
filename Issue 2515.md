@@ -1,6 +1,6 @@
 # Issue 2515: ExtendedRationalField not so extended
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2515
 
 Original creator: edrex
 

@@ -1,6 +1,6 @@
 # Issue 779: Matrix from Matrix_integer_dense() blows up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/779
 
 Original creator: justin
 

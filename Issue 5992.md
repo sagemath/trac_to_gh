@@ -1,6 +1,6 @@
 # Issue 5992: [with spkg, needs review] Set stack size in Maxima.spkg to 32kb for clisp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5992
 
 Original creator: mabshoff
 

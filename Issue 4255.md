@@ -1,6 +1,6 @@
 # Issue 4255: WYSIWYG in-place editing of text cells (using tinyMCE and jEditable)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4255
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8840: about  CSRF attacks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8840
 
 Original creator: aliajouz
 

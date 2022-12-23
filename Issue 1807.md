@@ -1,6 +1,6 @@
 # Issue 1807: fix combinatorics section of the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1807
 
 Original creator: mhansen
 

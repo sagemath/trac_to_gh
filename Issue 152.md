@@ -1,6 +1,6 @@
 # Issue 152: errors with building givaro on RHEL 64-bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/152
 
 Original creator: was
 
@@ -11,52 +11,52 @@ Assignee: was
 
 ```
 X-Gmail-Received: a5eccaa1e1cc40ab40a82f0fa02754a4078e0da6
-Delivered-To: wstein`@`gmail.com
+Delivered-To: wstein@gmail.com
 Received: by 10.67.22.12 with SMTP id z12cs205108ugi;
         Wed, 25 Oct 2006 10:16:25 -0700 (PDT)
 Received: by 10.70.91.16 with SMTP id o16mr1455182wxb;
         Wed, 25 Oct 2006 10:16:25 -0700 (PDT)
-Return-Path: <grbounce-CbSScAUAAADjaquLOqNz6IZE8tY0BxJ7=wstein=gmail.com`@`googlegroups.com>
+Return-Path: <grbounce-CbSScAUAAADjaquLOqNz6IZE8tY0BxJ7=wstein=gmail.com@googlegroups.com>
 Received: from wr-out-0304.google.com (wr-out-0708.google.com [64.233.184.241])
         by mx.google.com with ESMTP id i38si3547753wxd.2006.10.25.10.16.24;
         Wed, 25 Oct 2006 10:16:25 -0700 (PDT)
-Received-SPF: pass (google.com: domain of grbounce-CbSScAUAAADjaquLOqNz6IZE8tY0BxJ7=wstein=gmail.com`@`googlegroups.com designates 64.233.184.241 as permitted sender)
+Received-SPF: pass (google.com: domain of grbounce-CbSScAUAAADjaquLOqNz6IZE8tY0BxJ7=wstein=gmail.com@googlegroups.com designates 64.233.184.241 as permitted sender)
 DomainKey-Status: bad (test mode)
 Received: by wr-out-0304.google.com with SMTP id 63so1664wra
-        for <wstein`@`gmail.com>; Wed, 25 Oct 2006 10:16:24 -0700 (PDT)
+        for <wstein@gmail.com>; Wed, 25 Oct 2006 10:16:24 -0700 (PDT)
 Received: by 10.35.85.1 with SMTP id n1mr2238179pyl;
         Wed, 25 Oct 2006 10:15:58 -0700 (PDT)
 Received: by 10.11.8.19 with SMTP id 19gr62cwh;
 	Wed, 25 Oct 2006 10:15:58 -0700 (PDT)
-X-Sender: kate01123`@`gmail.com
-X-Apparently-To: sage-support`@`googlegroups.com
+X-Sender: kate01123@gmail.com
+X-Apparently-To: sage-support@googlegroups.com
 Received: by 10.36.33.2 with SMTP id g2mr689282nzg; Wed, 25 Oct 2006 10:15:57 -0700 (PDT)
-Return-Path: <kate01123`@`gmail.com>
+Return-Path: <kate01123@gmail.com>
 Received: from wx-out-0506.google.com (wx-out-0506.google.com [66.249.82.232]) by mx.google.com with ESMTP id h71si222978nzf.2006.10.25.10.15.56; Wed, 25 Oct 2006 10:15:57 -0700 (PDT)
-Received-SPF: pass (google.com: domain of kate01123`@`gmail.com designates 66.249.82.232 as permitted sender)
+Received-SPF: pass (google.com: domain of kate01123@gmail.com designates 66.249.82.232 as permitted sender)
 DomainKey-Status: good (test mode)
-Received: by wx-out-0506.google.com with SMTP id i29so186255wxd for <sage-support`@`googlegroups.com>; Wed, 25 Oct 2006 10:15:56 -0700 (PDT)
+Received: by wx-out-0506.google.com with SMTP id i29so186255wxd for <sage-support@googlegroups.com>; Wed, 25 Oct 2006 10:15:56 -0700 (PDT)
 DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws; s=beta; d=gmail.com; h=received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition; b=eImJgvQ4IGKD6TjJRM4nrynYb0kjrc8hvXum43gBSj2V6ZlRpvqG0ELvfbNg4IMOgtRpwWXzZxUyQ4VaemgsQpSYPl+2rGiBcEz0ldAfz/arg4fcRS0dg65o7iFc6n2Xdr2Vs7RlqnFOYB7xQYi4Cs3uvC59W08c0sks2Cv0cfw=
 Received: by 10.70.29.2 with SMTP id c2mr1371954wxc; Wed, 25 Oct 2006 10:15:56 -0700 (PDT)
 Received: by 10.70.74.9 with HTTP; Wed, 25 Oct 2006 10:15:56 -0700 (PDT)
-Message-ID: <9c27041b0610251015q2c0c0249ifffb07f52f99654e`@`mail.gmail.com>
+Message-ID: <9c27041b0610251015q2c0c0249ifffb07f52f99654e@mail.gmail.com>
 Date: Wed, 25 Oct 2006 13:15:56 -0400
-From: "Kate Minola" <kate01123`@`gmail.com>
-To: sage-support`@`googlegroups.com
+From: "Kate Minola" <kate01123@gmail.com>
+To: sage-support@googlegroups.com
 Subject: [sage-support] givaro build problem and fix
 Mime-Version: 1.0
 Content-Type: text/plain
-Reply-To: sage-support`@`googlegroups.com
-Sender: sage-support`@`googlegroups.com
+Reply-To: sage-support@googlegroups.com
+Sender: sage-support@googlegroups.com
 Precedence: bulk
 X-Google-Loop: groups
-Mailing-List: list sage-support`@`googlegroups.com;
-	contact sage-support-owner`@`googlegroups.com
+Mailing-List: list sage-support@googlegroups.com;
+	contact sage-support-owner@googlegroups.com
 List-Id: <sage-support.googlegroups.com>
-List-Post: <mailto:sage-support`@`googlegroups.com>
-List-Help: <mailto:sage-support-help`@`googlegroups.com>
+List-Post: <mailto:sage-support@googlegroups.com>
+List-Help: <mailto:sage-support-help@googlegroups.com>
 List-Unsubscribe: <http://googlegroups.com/group/sage-support/subscribe>,
-	<mailto:sage-support-unsubscribe`@`googlegroups.com>
+	<mailto:sage-support-unsubscribe@googlegroups.com>
 
 
 When I build sage-1.4.1.2 on my x86_64-Linux machine (Red

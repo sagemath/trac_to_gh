@@ -1,6 +1,6 @@
 # Issue 3436: random_matrix() with prescribed density buggy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3436
 
 Original creator: rpw
 

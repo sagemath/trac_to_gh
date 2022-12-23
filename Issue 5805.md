@@ -1,6 +1,6 @@
 # Issue 5805: numerical noise in "devel/sage/sage/modular/dirichlet.py"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5805
 
 Original creator: jsp
 

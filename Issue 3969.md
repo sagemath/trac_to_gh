@@ -1,6 +1,6 @@
 # Issue 3969: Matrix_mod2_dense hashs follow-up (see #3724)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3969
 
 Original creator: malb
 

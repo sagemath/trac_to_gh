@@ -1,6 +1,6 @@
 # Issue 7677: sage-4.3.rc0: powerpc g5 doctest blockers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7677
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 750: permutation group element (dict method, acting on lists)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/750
 
 Original creator: jason
 

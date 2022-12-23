@@ -1,6 +1,6 @@
 # Issue 7372: Fix iterator for finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7372
 
 Original creator: rbeezer
 

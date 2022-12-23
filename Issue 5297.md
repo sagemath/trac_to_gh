@@ -1,6 +1,6 @@
 # Issue 5297: [with patch, needs review] sparse vectors and free module elements: pairwise_product is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5297
 
 Original creator: jhpalmieri
 

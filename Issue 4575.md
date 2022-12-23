@@ -1,6 +1,6 @@
 # Issue 4575: [with patch, needs review] Option to show nestet lists as html tables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4575
 
 Original creator: whuss
 
@@ -468,7 +468,7 @@ The first picture is produced by:
 ```
 sage: functions = [sin(x), cos(x), tan(x), acos(x)]
 sage: t = [[f, taylor(f, x, 0, 10)] for f in functions]
-sage: html.table([This is the Trac macro *Function", "Series* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#Function", "Series-macro) + t, header = True)
+sage: html.table([["Function", "Series"]] + t, header = True)
 ```
 
 
@@ -506,7 +506,7 @@ Also, you can try
 
 
 ```
-html.table([This is the Trac macro *Graph", "Vertices", "Edges* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#Graph", "Vertices", "Edges-macro) + [(g.plot(), g.order(), g.size()) for g in graphs(3)], header=True)
+html.table([["Graph", "Vertices", "Edges"]] + [(g.plot(), g.order(), g.size()) for g in graphs(3)], header=True)
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 9197: If latex() causes an error or doesn't work, we should just default to repr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9197
 
 Original creator: kcrisman
 

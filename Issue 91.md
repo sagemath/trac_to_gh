@@ -1,6 +1,6 @@
 # Issue 91: gcd for polynomials over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/91
 
 Original creator: jdc
 

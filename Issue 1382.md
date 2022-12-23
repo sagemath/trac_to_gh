@@ -1,6 +1,6 @@
 # Issue 1382: conversion of sage matrices to mathematica is just completely totally broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1382
 
 Original creator: was
 

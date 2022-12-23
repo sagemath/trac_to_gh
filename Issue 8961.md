@@ -1,6 +1,6 @@
 # Issue 8961: zope.testbrowser is included in sagenb but is no longer required
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8961
 
 Original creator: timdumol
 

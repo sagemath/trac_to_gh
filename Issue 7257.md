@@ -1,6 +1,6 @@
 # Issue 7257: spike_functions has numerical noise on powerpc (followup to #6891)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7257
 
 Original creator: was
 

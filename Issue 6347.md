@@ -1,6 +1,6 @@
 # Issue 6347: use faster 2^m^ implementation up to 2^62^ on 64-bit systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6347
 
 Original creator: malb
 

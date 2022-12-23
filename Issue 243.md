@@ -1,6 +1,6 @@
 # Issue 243: two permutation group bugs: __contains__ hangs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/243
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4793: Update lcalc to the new upstream 1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4793
 
 Original creator: mabshoff
 
@@ -227,7 +227,7 @@ yields that changeset 22 added all the FORTRAN stuff you're complaining about:
 
 ```
 changeset:   22:c7e7606b574d
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Tue Sep 15 07:41:31 2009 -0700
 summary:     trac #6609: don't pass GNU flags directly to the Sun assembler
 ```

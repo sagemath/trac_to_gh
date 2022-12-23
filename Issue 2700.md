@@ -1,6 +1,6 @@
 # Issue 2700: scaling y-axis of plots to fit the data
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2700
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4855: make the ecm pexpect interface use files for large transfers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4855
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 2708: add support for nonsymmetric Macdonald polynomials in type A via HHL formula
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2708
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 7615: Fix arctan2 documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7615
 
 Original creator: kcrisman
 

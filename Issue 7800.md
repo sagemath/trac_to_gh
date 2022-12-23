@@ -1,6 +1,6 @@
 # Issue 7800: dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7800
 
 Original creator: was
 
@@ -13,11 +13,11 @@ Keywords: notebook secure dsage
 For some mysterious reason somebody disabled use of openssl with dsage to create certificates. This new spkg fixes this problem. The actual patch is a simple 1-liner: 
 
 ```
-wstein`@`boxen:~/build/referee/sage-4.3/spkg/standard/dsage-1.0.1.p0/src/dsage/scripts$ hg diff
+wstein@boxen:~/build/referee/sage-4.3/spkg/standard/dsage-1.0.1.p0/src/dsage/scripts$ hg diff
 diff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py
 --- a/dsage/scripts/dsage_setup.py
 +++ b/dsage/scripts/dsage_setup.py
-`@``@` -174,7 +174,7 `@``@`
+@@ -174,7 +174,7 @@
      print DELIMITER
      print "Generating SSL certificate for server..."
      
@@ -102,7 +102,7 @@ Comment by mvngu created at 2010-01-05 22:47:14
 Can you check in all existing changes?
 
 ```
-[mvngu`@`boxen dsage-1.0.1.p1]$ hg st
+[mvngu@boxen dsage-1.0.1.p1]$ hg st
 M SPKG.txt
 ```
 

@@ -1,6 +1,6 @@
 # Issue 796: Yet another fix for c_lib/scons stuff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/796
 
 Original creator: craigcitro
 

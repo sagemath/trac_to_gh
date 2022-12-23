@@ -1,6 +1,6 @@
 # Issue 3342: bizarre source code introspection output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3342
 
 Original creator: was
 

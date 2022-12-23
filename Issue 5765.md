@@ -1,6 +1,6 @@
 # Issue 5765: improve doctest coverage for schemes/generic/algebraic_scheme.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5765
 
 Original creator: AlexGhitza
 

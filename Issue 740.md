@@ -1,6 +1,6 @@
 # Issue 740: Implement standard transformations for elliptic curves & points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/740
 
 Original creator: cremona
 
@@ -50,7 +50,7 @@ Elliptic curve isomorphism code only works when the characteristic is not 2 or 3
 
 
 ```
-jec`@`fermat%sage
+jec@fermat%sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.9.3, Release Date: 2008-01-05                       |
@@ -105,7 +105,7 @@ Comment by cremona created at 2008-01-10 09:27:05
 It's also broken for characteristics >3:
 
 ```
-jec`@`fermat%sage
+jec@fermat%sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.9.3, Release Date: 2008-01-05                       |

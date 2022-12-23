@@ -1,6 +1,6 @@
 # Issue 7856: update matplotlib hack for OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7856
 
 Original creator: was
 

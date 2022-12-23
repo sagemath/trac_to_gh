@@ -1,6 +1,6 @@
 # Issue 1380: subs in the MPolynomial_libsingular insists on taking things to QQ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1380
 
 Original creator: jbmohler
 

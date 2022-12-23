@@ -1,6 +1,6 @@
 # Issue 5207: remove unnecessary use of symbolics in doctests in weierstrass_morphism.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5207
 
 Original creator: AlexGhitza
 

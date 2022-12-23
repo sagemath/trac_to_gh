@@ -1,6 +1,6 @@
 # Issue 9296: Add lattice computations for convex polyhedral cones
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9296
 
 Original creator: vbraun
 

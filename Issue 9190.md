@@ -1,6 +1,6 @@
 # Issue 9190: plot options reset does not reset the options dictionary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9190
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 7065: lcalc fails - Sun Studio compiler does not accept code. (I'm not surprised)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7065
 
 Original creator: drkirkby
 

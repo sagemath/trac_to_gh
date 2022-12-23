@@ -1,6 +1,6 @@
 # Issue 3974: [with patch, needs review] renaming of integral_weierstrass_model to integral_short_weierstrass_model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3974
 
 Original creator: wuthrich
 

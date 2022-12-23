@@ -1,6 +1,6 @@
 # Issue 1603: upgrade pari to 2.3.3, which was recently released
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1603
 
 Original creator: was
 

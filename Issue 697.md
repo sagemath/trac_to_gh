@@ -1,6 +1,6 @@
 # Issue 697: NTL rewrite (splitting ntl.pyx down into each class)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/697
 
 Original creator: jbmohler
 
@@ -32,7 +32,7 @@ The following must be manually merged in because ntl.pyx was deleted:
 ```
 --- a/sage/libs/ntl/ntl.pyx	Wed Aug 29 19:08:56 2007 -0700
 +++ b/sage/libs/ntl/ntl.pyx	Thu Sep 20 00:11:17 2007 -0400
-`@``@` -35,6 +35,9 `@``@` from sage.rings.integer_ring cimport Int
+@@ -35,6 +35,9 @@ from sage.rings.integer_ring cimport Int
  
  ZZ_sage = IntegerRing()
  
@@ -42,7 +42,7 @@ The following must be manually merged in because ntl.pyx was deleted:
  
  ##############################################################################
  # ZZ: Arbitrary precision integers
-`@``@` -726,7 +729,7 `@``@` cdef class ntl_ZZX:
+@@ -726,7 +729,7 @@ cdef class ntl_ZZX:
          g = self.gcd(other)
          return (self*other).quo_rem(g)[0]
  
@@ -51,7 +51,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          """
          If self and other are coprime over the rationals, return r, s,
          t such that r = s*self + t*other.  Otherwise return 0.  This
-`@``@` -738,7 +741,8 `@``@` cdef class ntl_ZZX:
+@@ -738,7 +741,8 @@ cdef class ntl_ZZX:
          function computes s and t such that: a*s + b*t = r; otherwise
          s and t are both 0.  If proof = False (*not* the default),
          then resultant computation may use a randomized strategy that
@@ -61,7 +61,7 @@ The following must be manually merged in because ntl.pyx was deleted:
  
          EXAMPLES:
              sage: f = ntl.ZZX([1,2,3]) * ntl.ZZX([4,5])**2
-`@``@` -752,6 +756,7 `@``@` cdef class ntl_ZZX:
+@@ -752,6 +756,7 @@ cdef class ntl_ZZX:
              sage: f.xgcd(g)
              (169, [-13], [13])
          """
@@ -69,7 +69,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          cdef ZZX_c *s, *t
          cdef ZZ_c *r 
          _sig_on
-`@``@` -1012,10 +1017,11 `@``@` cdef class ntl_ZZX:
+@@ -1012,10 +1017,11 @@ cdef class ntl_ZZX:
          t = ZZX_trace_list(self.x)
          return eval(string(t).replace(' ', ','))
  
@@ -83,7 +83,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          randomized strategy that errors with probability no more than
          $2^{-80}$.
  
-`@``@` -1028,15 +1034,18 `@``@` cdef class ntl_ZZX:
+@@ -1028,15 +1034,18 @@ cdef class ntl_ZZX:
              1345873
          """
          # NOTES: Within a factor of 2 in speed compared to MAGMA.
@@ -104,7 +104,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          with probability no more than $2^{-80}$.
  
  
-`@``@` -1050,17 +1059,20 `@``@` cdef class ntl_ZZX:
+@@ -1050,17 +1059,20 @@ cdef class ntl_ZZX:
              sage: f.charpoly_mod(mod)
              [-8846 -594 -60 14 1]
          """
@@ -127,7 +127,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          may use a randomized strategy that errors with probability no
          more than $2^{-80}$.
          EXAMPLES:
-`@``@` -1070,6 +1082,7 `@``@` cdef class ntl_ZZX:
+@@ -1070,6 +1082,7 @@ cdef class ntl_ZZX:
              sage: f.discriminant(proof=False)
              -339
          """
@@ -135,7 +135,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          _sig_on
          return make_ZZ(ZZX_discriminant(self.x, proof))
  
-`@``@` -1077,11 +1090,13 `@``@` cdef class ntl_ZZX:
+@@ -1077,11 +1090,13 @@ cdef class ntl_ZZX:
      #    _sig_on
      #    return make_ZZ(ZZX_polyeval(self.x, a.x))
  
@@ -151,7 +151,7 @@ The following must be manually merged in because ntl.pyx was deleted:
          may use a randomized strategy that errors with probability no
          more than $2^{-80}$.
  
-`@``@` -1092,6 +1107,7 `@``@` cdef class ntl_ZZX:
+@@ -1092,6 +1107,7 @@ cdef class ntl_ZZX:
              [-8846 -594 -60 14 1]
  
          """

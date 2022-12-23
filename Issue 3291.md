@@ -1,6 +1,6 @@
 # Issue 3291: [with patch, needs review] pbuild doesn't properly compile mwrank.so on some systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3291
 
 Original creator: gfurnish
 

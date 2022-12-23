@@ -1,6 +1,6 @@
 # Issue 4345: Make a system for default variable names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4345
 
 Original creator: craigcitro
 

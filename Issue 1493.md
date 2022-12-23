@@ -1,6 +1,6 @@
 # Issue 1493: polybori doesn't free m4ri data on exit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1493
 
 Original creator: burcin
 

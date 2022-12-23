@@ -1,6 +1,6 @@
 # Issue 3721: [with patch; needs review] Use SAGE_TESTDIR for dsage unit tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3721
 
 Original creator: tabbott
 

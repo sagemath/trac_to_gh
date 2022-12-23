@@ -1,6 +1,6 @@
 # Issue 2284: CallableSymbolicExpression._latex_() has some odd behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2284
 
 Original creator: moretti
 

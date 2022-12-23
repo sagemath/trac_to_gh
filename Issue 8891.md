@@ -1,6 +1,6 @@
 # Issue 8891: sage -t doesn't accept . as current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8891
 
 Original creator: wjlaffin
 
@@ -39,18 +39,18 @@ Comment by mpatel created at 2010-06-12 08:56:50
 Without the patch, I get, e.g.,
 
 ```sh
-mpatel`@`sage monoids$ sage -t .
+mpatel@sage monoids$ sage -t .
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 0.0 seconds
-mpatel`@`sage monoids$ 
+mpatel@sage monoids$ 
 ```
 
 With the patch, I get
 
 ```sh
-mpatel`@`sage monoids$ sage -t .
+mpatel@sage monoids$ sage -t .
 sage -t  "./string_monoid_element.py"                       
          [2.1 s]
 [...]

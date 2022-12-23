@@ -1,6 +1,6 @@
 # Issue 686: write MPolynomial_libsingular over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/686
 
 Original creator: malb
 
@@ -158,7 +158,7 @@ Comment by mabshoff created at 2008-08-30 01:12:37
 My guess would be Sage 3.1.2.alpha2. A lot of fixes in that area went into 3.1.2.X:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < mpolynomial_libsingular_qqa.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < mpolynomial_libsingular_qqa.patch 
 patching file sage/libs/singular/singular-cdefs.pxi
 patching file sage/libs/singular/singular.pxd
 patching file sage/libs/singular/singular.pyx
@@ -301,7 +301,7 @@ Hi malb,
 when I merge this patch the sr.py doctest goes from 650 to over 1100 seconds:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t -long devel//sage/sage/crypto/mq/sr.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t -long devel//sage/sage/crypto/mq/sr.py
 sage -t -long devel/sage/sage/crypto/mq/sr.py
          [1116.7 s]
 ```

@@ -1,6 +1,6 @@
 # Issue 7907: Bug in characteristic 2 isogenies of degree >3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7907
 
 Original creator: cremona
 

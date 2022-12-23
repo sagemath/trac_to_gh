@@ -1,6 +1,6 @@
 # Issue 1524: fix various issues with #1239
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1524
 
 Original creator: was
 

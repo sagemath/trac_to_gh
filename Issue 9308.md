@@ -1,6 +1,6 @@
 # Issue 9308: Add an spkg-check file for GnuTLS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9308
 
 Original creator: drkirkby
 

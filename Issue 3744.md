@@ -1,6 +1,6 @@
 # Issue 3744: Coercion between isomorphic parents should result in an element of the left operand's parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3744
 
 Original creator: robertwb
 

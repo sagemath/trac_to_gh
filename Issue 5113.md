@@ -1,6 +1,6 @@
 # Issue 5113: [with patch, needs review] elliptic curve construction from weierstrass equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5113
 
 Original creator: robertwb
 

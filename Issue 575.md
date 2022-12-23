@@ -1,6 +1,6 @@
 # Issue 575: make building SAGE on cygwin stop fast and clean
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/575
 
 Original creator: was
 

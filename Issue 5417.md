@@ -1,6 +1,6 @@
 # Issue 5417: Fix some more deepcopy issues (followup to #5403)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5417
 
 Original creator: mabshoff
 

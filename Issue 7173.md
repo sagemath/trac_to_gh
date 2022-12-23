@@ -1,6 +1,6 @@
 # Issue 7173: zn_poly does not handle the case of missing gmp.h very elegantly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7173
 
 Original creator: drkirkby
 

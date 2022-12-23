@@ -1,6 +1,6 @@
 # Issue 3043: The SPKG.txt  of the gfan spkg does not specify license exactly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3043
 
 Original creator: broune
 

@@ -1,6 +1,6 @@
 # Issue 6509: sum of four squares function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6509
 
 Original creator: mhampton
 

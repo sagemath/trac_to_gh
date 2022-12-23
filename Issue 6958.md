@@ -1,6 +1,6 @@
 # Issue 6958: [with patch, not ready] prove_BSD function for elliptic curves over QQ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6958
 
 Original creator: rlm
 
@@ -125,7 +125,7 @@ Comment by mvngu created at 2009-09-24 15:26:10
 The patch `trac_6958-typos_followup.patch` results in a hunk failure:
 
 ```
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6958/trac_6958-typos_followup.patch && hg qpush
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6958/trac_6958-typos_followup.patch && hg qpush
 adding trac_6958-typos_followup.patch to series file
 applying trac_6958-typos_followup.patch
 patching file sage/schemes/elliptic_curves/ell_rational_field.py

@@ -1,6 +1,6 @@
 # Issue 415: ZZ.random_element(0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/415
 
 Original creator: nbruin
 

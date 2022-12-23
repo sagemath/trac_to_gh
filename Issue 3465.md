@@ -1,6 +1,6 @@
 # Issue 3465: Number Field base rings for NumberFieldTower
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3465
 
 Original creator: roed
 

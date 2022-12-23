@@ -1,6 +1,6 @@
 # Issue 6708: spell-check all modules under sage/groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6708
 
 Original creator: mvngu
 

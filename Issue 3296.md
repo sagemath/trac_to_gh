@@ -1,6 +1,6 @@
 # Issue 3296: polymake spkg needs "CDDLIB_VERSION='094b.p2" in spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3296
 
 Original creator: mhampton
 

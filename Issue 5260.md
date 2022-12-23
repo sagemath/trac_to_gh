@@ -1,6 +1,6 @@
 # Issue 5260: document the requirement for a compiler better for f2py/weave/ctypes and error out with a sensible error message when no compiler is present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5260
 
 Original creator: mabshoff
 

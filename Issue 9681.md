@@ -1,6 +1,6 @@
 # Issue 9681: Missing dependancy in spkg/standard/deps for zn_poly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9681
 
 Original creator: drkirkby
 

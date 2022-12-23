@@ -1,6 +1,6 @@
 # Issue 2019: problem with gap_packages-4.4.10_3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2019
 
 Original creator: wdj
 

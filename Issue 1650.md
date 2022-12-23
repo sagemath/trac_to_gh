@@ -1,6 +1,6 @@
 # Issue 1650: eclib-20071231.p0.spkg: fix tsat test failure on sage.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1650
 
 Original creator: mabshoff
 

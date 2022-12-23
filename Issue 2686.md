@@ -1,6 +1,6 @@
 # Issue 2686: graph generators - new additions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2686
 
 Original creator: rlm
 

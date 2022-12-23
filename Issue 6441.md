@@ -1,6 +1,6 @@
 # Issue 6441: [with patch, needs review] Charpoly (plus adjoint and det)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6441
 
 Original creator: spancratz
 
@@ -752,7 +752,7 @@ Comment by mvngu created at 2009-09-02 05:36:33
 I'm getting two hunk rejections when applying `trac_6441_a_rings.3.patch`:
 
 ```
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6441/trac_6441_a_rings.3.patch && hg qpush
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6441/trac_6441_a_rings.3.patch && hg qpush
 adding trac_6441_a_rings.3.patch to series file
 applying trac_6441_a_rings.3.patch
 patching file sage/rings/ring.pyx

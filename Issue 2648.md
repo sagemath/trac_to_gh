@@ -1,6 +1,6 @@
 # Issue 2648: bug in octave version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2648
 
 Original creator: was
 

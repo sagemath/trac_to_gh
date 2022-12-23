@@ -1,6 +1,6 @@
 # Issue 6736: spell-check all modules under sage/symbolic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6736
 
 Original creator: mvngu
 

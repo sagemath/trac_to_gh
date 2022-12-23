@@ -1,6 +1,6 @@
 # Issue 5835: deleting a file from the DATA directory gives an error page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5835
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 2826: notebook -- in safari, pressing enter after showing the list of completions doesn't work.  You have to click.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2826
 
 Original creator: was
 

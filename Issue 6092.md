@@ -1,6 +1,6 @@
 # Issue 6092: make subfield/relativize accept multiple elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6092
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 3614: pbuild broken by finance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3614
 
 Original creator: gfurnish
 

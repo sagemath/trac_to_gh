@@ -1,6 +1,6 @@
 # Issue 6167: [with patch; needs review] add the very useful sloane sequence A000008 (ways of making change for n cents)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6167
 
 Original creator: was
 

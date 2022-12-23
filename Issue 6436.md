@@ -1,6 +1,6 @@
 # Issue 6436: ideal([]) gives unhelpful error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6436
 
 Original creator: broune
 

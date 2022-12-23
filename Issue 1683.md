@@ -1,6 +1,6 @@
 # Issue 1683: sage -t cubegroup.py & stops instead of running in background
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1683
 
 Original creator: wjp
 

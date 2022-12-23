@@ -1,6 +1,6 @@
 # Issue 4109: The complement of a graph shows as the original graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4109
 
 Original creator: jason
 

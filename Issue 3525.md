@@ -1,6 +1,6 @@
 # Issue 3525: notebook -- new welcome page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3525
 
 Original creator: TimothyClemans
 
@@ -90,7 +90,7 @@ tight...
 greetings Harald
 
 
-On Sat, Jun 28, 2008 at 08:38, William Stein <wstein`@`gmail.com> wrote:
+On Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:
 > What do you think of
 >
 > http://timothyclemans.com/nb_homepage/

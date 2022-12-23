@@ -1,6 +1,6 @@
 # Issue 5365: graphplot arrowheads are hidden in multi-edge digraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5365
 
 Original creator: ekirkman
 

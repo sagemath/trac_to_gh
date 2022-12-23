@@ -1,6 +1,6 @@
 # Issue 7042: notebook: remove .pyc files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7042
 
 Original creator: certik
 

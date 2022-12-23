@@ -1,6 +1,6 @@
 # Issue 7068: gfan 0.3.p4 Shows numerous missing header files with Sun compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7068
 
 Original creator: drkirkby
 

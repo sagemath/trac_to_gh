@@ -1,6 +1,6 @@
 # Issue 9091: check_file() in latex.py spits out warnings every time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9091
 
 Original creator: rbeezer
 

@@ -1,6 +1,6 @@
 # Issue 2977: [with patch, needs review] wronskian is broken on constants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2977
 
 Original creator: AlexGhitza
 

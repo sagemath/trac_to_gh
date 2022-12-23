@@ -1,6 +1,6 @@
 # Issue 7866: zn_poly on Open Solaris reports  #error Not nails-safe yet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7866
 
 Original creator: drkirkby
 

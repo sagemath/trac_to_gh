@@ -1,6 +1,6 @@
 # Issue 3637: [with patch, needs review] jacobi sums implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3637
 
 Original creator: ekirkman
 

@@ -1,6 +1,6 @@
 # Issue 8785: avoid subtle interaction between importing multiprocessing and twisted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8785
 
 Original creator: was
 

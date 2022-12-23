@@ -1,6 +1,6 @@
 # Issue 4130: #4125 does not work on OS X 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4130
 
 Original creator: rlm
 

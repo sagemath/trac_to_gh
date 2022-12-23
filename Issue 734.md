@@ -1,6 +1,6 @@
 # Issue 734: combinatorics problems on fedora core 7 with sage-2.8.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/734
 
 Original creator: was
 
@@ -26,7 +26,7 @@ CC:  sage-combinat
 >          sage -t  devel/sage-main/sage/combinat/skew_tableau.py
 >          sage -t  devel/sage-main/sage/combinat/ribbon.py
 > Total time for all tests: 1838.3 seconds
-> [jaap`@`paix sage-2.8.5]$
+> [jaap@paix sage-2.8.5]$
 
 This is from mike Hansen's new combinatorics code, I think.
 I *am* able to replicate this on my Fedora Core machine,

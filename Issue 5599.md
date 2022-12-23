@@ -1,6 +1,6 @@
 # Issue 5599: density_plot not centered correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5599
 
 Original creator: robertwb
 

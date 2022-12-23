@@ -1,6 +1,6 @@
 # Issue 9286: Add an spkg-check file for boehm_gc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9286
 
 Original creator: drkirkby
 

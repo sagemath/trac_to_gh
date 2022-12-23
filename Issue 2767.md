@@ -1,6 +1,6 @@
 # Issue 2767: error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2767
 
 Original creator: ncalexan
 

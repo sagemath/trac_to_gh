@@ -1,6 +1,6 @@
 # Issue 6868: [with SPKG, needs review] Coin-OR CBC ( compatible with the symbolics from MIP )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6868
 
 Original creator: ncohen
 

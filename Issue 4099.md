@@ -1,6 +1,6 @@
 # Issue 4099: Fix documentation for point2d, line2d, ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4099
 
 Original creator: anakha
 

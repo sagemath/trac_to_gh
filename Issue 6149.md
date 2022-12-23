@@ -1,6 +1,6 @@
 # Issue 6149: Fix ReST glitches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6149
 
 Original creator: davidloeffler
 

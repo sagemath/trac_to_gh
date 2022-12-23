@@ -1,6 +1,6 @@
 # Issue 2583: Sage 2.11.a0: doctest failure in plot.py due to #2580
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2583
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Assignee: rlm
 sage -t -long devel/sage/sage/plot/plot.py
 ----------------------------------------------------------------------
 Total time for all tests: 965.6 seconds
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
 sage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************
 File "plot.py", line 3860:
     sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)
@@ -93,7 +93,7 @@ Comment by mabshoff created at 2008-03-19 10:13:22
 But it causes a new doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
 sage -t -long devel/sage-main/sage/plot/plot.py             File "plot.py", line 3513:
     sage: plot(x^(1/3), (x,-1,1))
 Expected nothing

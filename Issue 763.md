@@ -1,6 +1,6 @@
 # Issue 763: serious bug latexing p-adic L-series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/763
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8828: Lower height bound for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8828
 
 Original creator: robertwb
 

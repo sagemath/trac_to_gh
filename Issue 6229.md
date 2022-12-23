@@ -1,6 +1,6 @@
 # Issue 6229: efficiency in Lagrange polynomial interpolation (easy fix...)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6229
 
 Original creator: ylchapuy
 

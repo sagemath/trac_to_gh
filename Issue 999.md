@@ -1,6 +1,6 @@
 # Issue 999: add optional sloccount script to sage-dist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/999
 
 Original creator: mabshoff
 

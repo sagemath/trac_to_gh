@@ -1,6 +1,6 @@
 # Issue 4785: Failure of tests in sage/schemes/elliptic_curves/ell_generic.py due to non installed magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4785
 
 Original creator: jsp
 

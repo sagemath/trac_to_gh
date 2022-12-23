@@ -1,6 +1,6 @@
 # Issue 9551: Sage can try to write outside $SAGE_ROOT - potentially screwing a system up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9551
 
 Original creator: drkirkby
 

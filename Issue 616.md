@@ -1,6 +1,6 @@
 # Issue 616: sage -coverage improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/616
 
 Original creator: craigcitro
 

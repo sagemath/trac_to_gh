@@ -1,6 +1,6 @@
 # Issue 1597: put jmol in spkg/install and spkg/standard/deps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1597
 
 Original creator: rlm
 

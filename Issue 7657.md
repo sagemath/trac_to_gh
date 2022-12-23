@@ -1,6 +1,6 @@
 # Issue 7657: notebook -- traceback involving "_before_preparse" in sagenb.org log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7657
 
 Original creator: was
 
@@ -79,7 +79,7 @@ self.sage().execute(input, os.path.abspath(self.data_directory()))
 So if a worksheet cell is updated in `sagenb/flask_version/worksheet.py` and 
 
 ```
-`@`worksheet_command('cell_update')
+@worksheet_command('cell_update')
 def worksheet_cell_update(worksheet):
     <stuff>
     worksheet.check_comp()

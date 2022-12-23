@@ -1,6 +1,6 @@
 # Issue 6929: Docs in functional and a few ring methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6929
 
 Original creator: kcrisman
 

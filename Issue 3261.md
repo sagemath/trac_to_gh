@@ -1,6 +1,6 @@
 # Issue 3261: #auto does not always seem to work if not in first cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3261
 
 Original creator: mhampton
 

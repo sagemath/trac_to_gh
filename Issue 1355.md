@@ -1,6 +1,6 @@
 # Issue 1355: OSX 10.4: numerical noise doctest failures in rings/polynomial/[complex_roots.py|polynomial_element.pyx]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1355
 
 Original creator: mabshoff
 

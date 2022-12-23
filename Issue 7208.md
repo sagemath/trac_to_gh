@@ -1,6 +1,6 @@
 # Issue 7208: Refactorisation of families
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7208
 
 Original creator: nthiery
 

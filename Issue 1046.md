@@ -1,6 +1,6 @@
 # Issue 1046: speed regression in mq.SR.polynomial_system()  due to new coercion code?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1046
 
 Original creator: malb
 
@@ -183,7 +183,7 @@ Comment by mabshoff created at 2008-10-17 20:30:48
 It improves the doctest run from 1100 seconds to
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0$ ./sage -t -long devel/sage/sage/crypto/mq/sr.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0$ ./sage -t -long devel/sage/sage/crypto/mq/sr.py
 sage -t -long devel/sage/sage/crypto/mq/sr.py                
 	 [684.8 s]
 ```

@@ -1,6 +1,6 @@
 # Issue 9765: Cliquer - Update Upstream contact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9766
 
 Original creator: ncohen
 
@@ -394,7 +394,7 @@ It looks like there was a SConstript file at one point in time:
 
 
 ```
-drkirkby`@`hawk:/tmp/cliquer-1.2.p6/.hg$ ggrep -r SCons *
+drkirkby@hawk:/tmp/cliquer-1.2.p6/.hg$ ggrep -r SCons *
 store/fncache:data/SConstruct.i
 ```
 
@@ -477,7 +477,7 @@ Sure. I don't know how that got there. It has a date in 2032 too - only 22 years
 
 
 ```
-drkirkby`@`hawk:/tmp/cliquer-1.2.p6$ ls -l ,
+drkirkby@hawk:/tmp/cliquer-1.2.p6$ ls -l ,
 -rw-r--r--   1 drkirkby staff       2032 Aug 31 01:15 ,
 ```
 

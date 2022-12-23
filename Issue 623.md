@@ -1,6 +1,6 @@
 # Issue 623: New Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/623
 
 Original creator: robertwb
 

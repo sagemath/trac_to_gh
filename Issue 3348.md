@@ -1,6 +1,6 @@
 # Issue 3348: Coercion problem: creating vectors from a mix of python and symbolic types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3348
 
 Original creator: dunfield
 

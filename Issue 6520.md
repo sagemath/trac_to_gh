@@ -1,6 +1,6 @@
 # Issue 6520: [with patch, needs work] Implement cached_function with weakref cache
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6520
 
 Original creator: nthiery
 

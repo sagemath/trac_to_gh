@@ -1,6 +1,6 @@
 # Issue 716: graph functions to_undirected and to_directed forget the loops and multiple edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/716
 
 Original creator: jason
 

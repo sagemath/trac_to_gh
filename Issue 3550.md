@@ -1,6 +1,6 @@
 # Issue 3550: notebook -- make saving and loading state of the notebook vastly faster and scale better
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3550
 
 Original creator: was
 

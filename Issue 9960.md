@@ -1,6 +1,6 @@
 # Issue 9960: Allow assumptions on the dependent variable in desolve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9961
 
 Original creator: robert.marik
 

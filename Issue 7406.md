@@ -1,6 +1,6 @@
 # Issue 7406: bug in conversion powers in to LaTeX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7406
 
 Original creator: robert.marik
 

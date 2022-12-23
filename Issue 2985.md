@@ -1,6 +1,6 @@
 # Issue 2985: ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2985
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-[wstein`@`cleo sage-3.0.rc0]$ ./sage -t --long devel/sage/sage/interfaces/rubik.py
+[wstein@cleo sage-3.0.rc0]$ ./sage -t --long devel/sage/sage/interfaces/rubik.py
 sage -t --long devel/sage/sage/interfaces/rubik.py          **********************************************************************
 File "/home/wstein/sage-3.0.rc0/tmp/rubik.py", line 132:
     sage: solver = OptimalSolver() # long time

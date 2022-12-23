@@ -1,6 +1,6 @@
 # Issue 8004: region_plot does not handle lambda functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8004
 
 Original creator: jason
 

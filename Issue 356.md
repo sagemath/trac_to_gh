@@ -1,6 +1,6 @@
 # Issue 356: add a general number field sieve to SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/356
 
 Original creator: was
 

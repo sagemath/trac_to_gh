@@ -1,6 +1,6 @@
 # Issue 7962: Add link to download all worksheets as a zip file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7962
 
 Original creator: timdumol
 

@@ -1,6 +1,6 @@
 # Issue 9810: sage exits with 0, even if it is unable to install a package.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9811
 
 Original creator: drkirkby
 
@@ -14,7 +14,7 @@ I wanted to do some testing of Sage in a loop and would check the return code to
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package
+drkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package
 Force installing some-non-existant-package
 Calling sage-spkg on some-non-existant-package
 Warning: Attempted to overwrite SAGE_ROOT environment variable
@@ -42,9 +42,9 @@ http://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> som
 * packages or check the package name.
 **********************************************************************
 sage: Failed to download package some-non-existant-package from http://www.sagemath.org/
-drkirkby`@`hawk:~/sage-4.5.2$ $?
+drkirkby@hawk:~/sage-4.5.2$ $?
 bash: 0: command not found
-drkirkby`@`hawk:~/sage-4.5.2$ 
+drkirkby@hawk:~/sage-4.5.2$ 
 ```
 
 
@@ -52,9 +52,9 @@ In contrast, if I try this with a well written command like `ls`
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2$ ls some-non-existant-package
+drkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package
 some-non-existant-package: No such file or directory
-drkirkby`@`hawk:~/sage-4.5.2$ $?
+drkirkby@hawk:~/sage-4.5.2$ $?
 bash: 2: command not found
 ```
 
@@ -72,11 +72,11 @@ Replying to [ticket:9811 drkirkby]:
 > 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package
+drkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package
 ...
-drkirkby`@`hawk:~/sage-4.5.2$ $?
+drkirkby@hawk:~/sage-4.5.2$ $?
 bash: 0: command not found
-drkirkby`@`hawk:~/sage-4.5.2$ 
+drkirkby@hawk:~/sage-4.5.2$ 
 ```
 
 
@@ -89,7 +89,7 @@ Well, you did `sage -f ...` ...
 A well written command like `rm` exits with a zero status if you use `-f`:
 
 ```sh
-leif`@`quadriga:~/Sage/spkgs/mpir-2.1.1$ rm -f non-existent-package ; echo $?
+leif@quadriga:~/Sage/spkgs/mpir-2.1.1$ rm -f non-existent-package ; echo $?
 0
 ```
 
@@ -146,7 +146,7 @@ install() {
    if [ ! -d "$SAGE_LOGS" ]; then
        mkdir -p "$SAGE_LOGS"
    fi
-   for PKG in "$`@`"
+   for PKG in "$@"
    do
        echo "Calling sage-spkg on $PKG"
        PKG_NAME=`echo "$PKG" | sed -e "s/\.spkg$//"`
@@ -170,14 +170,14 @@ install() {
 ...
 if [ "$1" = '-i' ]; then
    shift
-   echo "Installing $`@`"
-   install " " "$`@`"
+   echo "Installing $@"
+   install " " "$@"
 fi
 
 if [ "$1" = '-f' ]; then
    shift
-   echo "Force installing $`@`"
-   install -f "$`@`"
+   echo "Force installing $@"
+   install -f "$@"
 fi
 ...
 ```

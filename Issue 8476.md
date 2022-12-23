@@ -1,6 +1,6 @@
 # Issue 8476: return the correct class instance in MPolynomialSystem.__copy__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8476
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1575: plotting -- fix vector plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1575
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4037: [with trivial patch, needs review] list_of_first_n() broken in interact.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4037
 
 Original creator: AlexGhitza
 

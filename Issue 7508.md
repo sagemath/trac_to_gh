@@ -1,6 +1,6 @@
 # Issue 7508: hash collisions for derivatives of symbolic functions - act 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7508
 
 Original creator: burcin
 

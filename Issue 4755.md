@@ -1,6 +1,6 @@
 # Issue 4755: CremonaDatabase().number_of_curves() should work when the optional database isn't installed.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4755
 
 Original creator: mhansen
 

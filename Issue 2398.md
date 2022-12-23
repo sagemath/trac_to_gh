@@ -1,6 +1,6 @@
 # Issue 2398: free modules over ZZ -- major bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2398
 
 Original creator: was
 

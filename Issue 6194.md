@@ -1,6 +1,6 @@
 # Issue 6194: [with patch, needs review] fixes for sage.symbolic.pynac.py_mod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6194
 
 Original creator: burcin
 

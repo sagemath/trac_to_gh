@@ -1,6 +1,6 @@
 # Issue 7476: Edge-disjoint spanning trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7476
 
 Original creator: ncohen
 

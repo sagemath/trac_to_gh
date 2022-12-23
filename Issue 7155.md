@@ -1,6 +1,6 @@
 # Issue 7155: Allow solving of inequalities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7155
 
 Original creator: kcrisman
 

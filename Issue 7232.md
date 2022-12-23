@@ -1,6 +1,6 @@
 # Issue 7232: fix tachyon segfault introduced by #6542
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7232
 
 Original creator: was
 
@@ -22,7 +22,7 @@ Comment by was created at 2009-10-16 03:41:51
 ```
 
 
-On Thu, Oct 15, 2009 at 7:59 PM, Elliott <elliottbrossard`@`gmail.com> wrote:
+On Thu, Oct 15, 2009 at 7:59 PM, Elliott <elliottbrossard@gmail.com> wrote:
 >
 > Hello, I was going to use sagenb.org today to verify a plot for my
 > math homework, but I kept getting segmentation faults for some odd
@@ -157,7 +157,7 @@ Interestingly, it segfaults _after_ having read the whole input file (and also w
 
 (sage-sh) $ tachyon tachyon-example.dat +V -numthreads 1 -format PNG -o tachyon-example.png
 Tachyon Parallel/Multiprocessor Ray Tracer   Version 0.98.9   
-Copyright 1994-2010,    John E. Stone <john.stone`@`gmail.com> 
+Copyright 1994-2010,    John E. Stone <john.stone@gmail.com> 
 ------------------------------------------------------------ 
 Scene Parsing Time:     0.0052 seconds
 CPU Information:
@@ -222,7 +222,7 @@ Just built Sage 5.8.rc0 on a Linux x86 box (Pentium4 Prescott, GCC 4.7.2), and t
 
 ```
 Tachyon Parallel/Multiprocessor Ray Tracer   Version 0.98.9
-Copyright 1994-2010,    John E. Stone <john.stone`@`gmail.com>
+Copyright 1994-2010,    John E. Stone <john.stone@gmail.com>
 ------------------------------------------------------------
 Scene Parsing Time:     0.0002 seconds
 Scene contains 1 objects.

@@ -1,6 +1,6 @@
 # Issue 7245: sage -merge misses positively reviewed tickets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7245
 
 Original creator: mhansen
 

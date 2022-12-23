@@ -1,6 +1,6 @@
 # Issue 7586: develoers' guide: document features of attach, load, iload, ed, %ed, %edit, edit()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7586
 
 Original creator: mvngu
 

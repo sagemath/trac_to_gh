@@ -1,6 +1,6 @@
 # Issue 1081: [patch attached] update the deps file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1081
 
 Original creator: was
 

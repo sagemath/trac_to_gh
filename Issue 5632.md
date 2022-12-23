@@ -1,6 +1,6 @@
 # Issue 5632: [with spkg; needs review] doc fixes for quaternion algebra element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5632
 
 Original creator: jhpalmieri
 

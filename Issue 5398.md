@@ -1,6 +1,6 @@
 # Issue 5398: clone is broken in Sage 3.4.alpha0 due to non-7 bit ASCII characters in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5398
 
 Original creator: mabshoff
 

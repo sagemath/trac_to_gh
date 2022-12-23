@@ -1,6 +1,6 @@
 # Issue 985: sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/985
 
 Original creator: cwitty
 

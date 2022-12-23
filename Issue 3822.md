@@ -1,6 +1,6 @@
 # Issue 3822: Interact - slider breaks defaulting on too many values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3822
 
 Original creator: itolkov
 
@@ -40,7 +40,7 @@ It is still broken since you didn't deal with the case when the input is a list 
 E.g.,
 
 ```
-`@`interact
+@interact
 def _(n=range_slider([1..10000])):
     print n
 ```
@@ -79,7 +79,7 @@ Good job.  Note that this still breaks things.  But still this patch needs to go
 
 
 ```
-`@`interact
+@interact
 def _(n=[1..10^5]):
     print n
 ```

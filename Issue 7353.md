@@ -1,6 +1,6 @@
 # Issue 7353: French documentation should use Sphinx's French localization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7353
 
 Original creator: ddrake
 

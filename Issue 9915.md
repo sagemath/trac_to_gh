@@ -1,6 +1,6 @@
 # Issue 9915: Change Shafarevich-Tate in BSD.py (also fixes doctests)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9916
 
 Original creator: leif
 

@@ -1,6 +1,6 @@
 # Issue 8495: Regression: Many mathematica doctests fail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8495
 
 Original creator: flawrence
 
@@ -352,7 +352,7 @@ Total time for all tests: 5.2 seconds
 
 
 ```
-drkirkby`@`hawk:~$ math
+drkirkby@hawk:~$ math
 Mathematica 7.0 for Sun Solaris x86 (64-bit)
 Copyright 1988-2009 Wolfram Research, Inc.
 

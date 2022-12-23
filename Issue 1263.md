@@ -1,6 +1,6 @@
 # Issue 1263: change pari C library error handler (instead of overriding exit() with abort())
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1263
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8185: numerical noise + crash on sage/calculus/functional.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8185
 
 Original creator: drkirkby
 
@@ -43,7 +43,7 @@ This in itself looks easy to fix.
 
 
 ```
-drkirkby`@`swan:[~/sage-4.3.0.1] $ ./sage -t  "devel/sage-main/build/sage/calculus/functional.py"
+drkirkby@swan:[~/sage-4.3.0.1] $ ./sage -t  "devel/sage-main/build/sage/calculus/functional.py"
 sage -t  "devel/sage-main/build/sage/calculus/functional.py"
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [3.1 s]
@@ -77,7 +77,7 @@ Here's a Mercurial patch, which fixes the issue
 
 
 ```
-drkirkby`@`kestrel:~/sage-4.3.0.1$ ./sage -t devel/sage-main/build/sage/calculus/functional.py
+drkirkby@kestrel:~/sage-4.3.0.1$ ./sage -t devel/sage-main/build/sage/calculus/functional.py
 sage -t  "devel/sage-main/build/sage/calculus/functional.py"
          [65.0 s]
  

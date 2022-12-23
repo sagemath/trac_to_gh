@@ -1,6 +1,6 @@
 # Issue 3679: Range Slider Control
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3679
 
 Original creator: itolkov
 
@@ -52,7 +52,7 @@ REFEREE REPORT:
  * I tried one example -- see http://sage.math.washington.edu/home/was/patches/3679.png and the displayed positions were different than the values of the variable when I first pressed shift enter.  Dragging the slider fixed this.
 
 ```
-`@`interact
+@interact
 def _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):
     print t1
     show(plot(sin,t1[0], t1[1]),xmin=t1[0])

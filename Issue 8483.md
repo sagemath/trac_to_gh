@@ -1,6 +1,6 @@
 # Issue 8483: Multiplication faster than squaring?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8483
 
 Original creator: malb
 

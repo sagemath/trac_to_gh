@@ -1,6 +1,6 @@
 # Issue 6902: log(x) is typeset as \ln x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6902
 
 Original creator: burcin
 

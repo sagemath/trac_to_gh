@@ -1,6 +1,6 @@
 # Issue 9348: Building pari with -O1 rather than -O3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9348
 
 Original creator: robertwb
 

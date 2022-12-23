@@ -1,6 +1,6 @@
 # Issue 9382: atlas not respecting SAGE_FAT_BINARY on i686 systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9382
 
 Original creator: mariah
 
@@ -202,7 +202,7 @@ Example (a 64 bit Gentoo machine):
 mira: ~ > uname -m
 x86_64
 mira: ~ > uname -p
-Intel(R) Xeon(R) CPU X3220 `@` 2.40GHz
+Intel(R) Xeon(R) CPU X3220 @ 2.40GHz
 ```
 
 

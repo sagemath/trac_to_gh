@@ -1,6 +1,6 @@
 # Issue 9791: kernel and inverse_image of (polynomial) ring maps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9792
 
 Original creator: vbraun
 

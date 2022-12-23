@@ -1,6 +1,6 @@
 # Issue 4512: [with patch, needs review] sage path-related troubles
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4512
 
 Original creator: craigcitro
 
@@ -12,17 +12,17 @@ Unfortunately, it seems that `sage -sh` doesn't ask the shell to avoid processin
 
 
 ```
-[craigcitro`@`sharma ~/new-three-two]  $ ./sage -version
+[craigcitro@sharma ~/new-three-two]  $ ./sage -version
 Sage Version 3.2.rc0, Release Date: 2008-11-10
-[craigcitro`@`sharma ~/new-three-two]  $ ./sage -sh
+[craigcitro@sharma ~/new-three-two]  $ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-[craigcitro`@`sharma ~/new-three-two]  $ sage -version
+[craigcitro@sharma ~/new-three-two]  $ sage -version
 SAGE Version 3.1.4, Release Date: 2008-10-16
-[craigcitro`@`sharma ~/new-three-two]  $ which sage
+[craigcitro@sharma ~/new-three-two]  $ which sage
 /usr/local/bin/sage
 ```
 

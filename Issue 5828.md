@@ -1,6 +1,6 @@
 # Issue 5828: number fields -- serious bug in coercion to a relative extension of degree 1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5828
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  robertwb mstreng
 ```
 
 
-On Sun, Apr 19, 2009 at 10:16 AM, Utpal Sarkar <doetoe`@`gmail.com> wrote:
+On Sun, Apr 19, 2009 at 10:16 AM, Utpal Sarkar <doetoe@gmail.com> wrote:
 >
 > Hi,
 >

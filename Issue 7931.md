@@ -1,6 +1,6 @@
 # Issue 7931: Improved nth root for finite fields and integer_mods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7931
 
 Original creator: roed
 

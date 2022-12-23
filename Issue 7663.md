@@ -1,6 +1,6 @@
 # Issue 7663: notebook -- synchronization code surprises printing of certain characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7663
 
 Original creator: was
 

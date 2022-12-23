@@ -1,6 +1,6 @@
 # Issue 4309: Kerberos authentification for SAGE notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4309
 
 Original creator: kkilger
 

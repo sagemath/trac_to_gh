@@ -1,6 +1,6 @@
 # Issue 2840: notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2840
 
 Original creator: was
 
@@ -66,7 +66,7 @@ Comment by mabshoff created at 2008-04-07 18:31:05
 Ok, applying against my tree has some rejects:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 --dry-run < trac_2840.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 --dry-run < trac_2840.patch
 patching file sage/server/notebook/cell.py
 patching file sage/server/notebook/config.py
 patching file sage/server/notebook/css.py

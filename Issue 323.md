@@ -1,6 +1,6 @@
 # Issue 323: make and upgrade fails on Ubuntu Edgy (6.10)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/323
 
 Original creator: malb
 

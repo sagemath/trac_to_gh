@@ -1,6 +1,6 @@
 # Issue 9037: pynac fails to build on 64-bit OpenSolaris x64.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9037
 
 Original creator: drkirkby
 

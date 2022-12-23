@@ -1,6 +1,6 @@
 # Issue 7431: @interact and %hide don't play nice together
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7431
 
 Original creator: kcrisman
 
@@ -13,7 +13,7 @@ CC:  jason
 
 ```
 %hide 
-`@`interact 
+@interact 
 def _(n=2): 
     f(x,y)=x^n 
     show(plot(f,(x,0,1))) 

@@ -1,6 +1,6 @@
 # Issue 7820: upgrade gfan to latest release (0.4plus)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7820
 
 Original creator: AlexGhitza
 
@@ -56,9 +56,9 @@ Got:
 File "/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 138:
     sage: _cone_parse(tstr.fan_dict['CONES'])
 Expected:
-    {1: [[0], [1], [3], [2], [4]], 2: [This is the Trac macro *2, 4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 4-macro)}
+    {1: [[0], [1], [3], [2], [4]], 2: [[2, 4]]}
 Got:
-    {1: [[0], [1], [2], [3], [4]], 2: [This is the Trac macro *2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3-macro)}
+    {1: [[0], [1], [2], [3], [4]], 2: [[2, 3]]}
 **********************************************************************
 File "/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 824:
     sage: pf.rays()
@@ -89,9 +89,9 @@ Exception raised:
 File "/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py", line 1294:
     sage: pf.rays()
 Expected:
-    [This is the Trac macro *-1, 0, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-1, 0, 0-macro)
+    [[-1, 0, 0]]
 Got:
-    [This is the Trac macro *-2, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-2, 1, 1-macro)
+    [[-2, 1, 1]]
 **********************************************************************
 7 items had failures:
    1 of   7 in __main__.example_11

@@ -1,6 +1,6 @@
 # Issue 8787: upgrade the openssl optional spkg to version 1.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8787
 
 Original creator: was
 

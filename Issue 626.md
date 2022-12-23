@@ -1,6 +1,6 @@
 # Issue 626: error building libcsage.so on some machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/626
 
 Original creator: was
 

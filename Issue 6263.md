@@ -1,6 +1,6 @@
 # Issue 6263: Add __cmp__ method to ClassFunctions (group characters)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6263
 
 Original creator: saliola
 

@@ -1,6 +1,6 @@
 # Issue 5917: Failing conversions for multipolynomial rings over fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5917
 
 Original creator: SimonKing
 

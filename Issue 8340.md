@@ -1,6 +1,6 @@
 # Issue 8340: add a lift method to elements of the residue class field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8340
 
 Original creator: was
 

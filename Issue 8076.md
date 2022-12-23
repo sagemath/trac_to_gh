@@ -1,6 +1,6 @@
 # Issue 8076: gap-4.4.12.p2 - please test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8076
 
 Original creator: dimpase
 
@@ -30,11 +30,11 @@ It builds fine, and Gap seems to work.   The major workspaces issue seems gone. 
 The repo needs to have its changed checked in:
 
 ```
-wstein`@`iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2> ../sage -hg status
+wstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2> ../sage -hg status
 M .hgignore
 M SPKG.txt
 ? patches/saveload.patch
-wstein`@`iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2>
+wstein@iras:~/screen/iras/sage-4.3.1/gap-4.4.12.p2>
 ```
 
 
@@ -45,7 +45,7 @@ The changes to the spkg look fine.  I'm guess I'm OK with the comment "(not usin
 I give this a positive review, subject to the other doctests in the core Sage library being fixed to reflect the new package update, e.g., things like
 
 ```
-wstein`@`iras:~/screen/iras/sage-4.3.1> ./sage -t devel/sage/sage/interfaces/gap.py 
+wstein@iras:~/screen/iras/sage-4.3.1> ./sage -t devel/sage/sage/interfaces/gap.py 
 sage -t  "devel/sage/sage/interfaces/gap.py"                                      
 **********************************************************************
 File "/home/wstein/screen/iras/sage-4.3.1/devel/sage/sage/interfaces/gap.py", line 821:
@@ -170,7 +170,7 @@ Comment by mvngu created at 2010-02-13 06:30:07
 Something is wrong with the package [gap-4.4.12.p2.spkg](http://www1.spms.ntu.edu.sg/~dima/tmp/gap-4.4.12.p2.spkg). First, all changes are not checked in:
 
 ```
-[mvngu`@`sage gap-4.4.12.p2]$ hg st
+[mvngu@sage gap-4.4.12.p2]$ hg st
 M .hgignore
 M SPKG.txt
 ```
@@ -178,7 +178,7 @@ M SPKG.txt
 Second, the directory `patches/` must be under revision control, so the file `.hgignore` must not contain the line `patches/`:
 
 ```
-[mvngu`@`sage gap-4.4.12.p2]$ cat .hgignore 
+[mvngu@sage gap-4.4.12.p2]$ cat .hgignore 
 src/
 patches/
 ```
@@ -186,9 +186,9 @@ patches/
 Third, I can't check anything in:
 
 ```
-[mvngu`@`sage gap-4.4.12.p2]$ hg ci
+[mvngu@sage gap-4.4.12.p2]$ hg ci
 <enter-commit-message>
-abort: data/.hgignore.i`@`bc8f0f49e4a4: no node!
+abort: data/.hgignore.i@bc8f0f49e4a4: no node!
 ```
 
 Am I using the correct version of the spkg to be updated?

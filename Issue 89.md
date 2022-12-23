@@ -1,6 +1,6 @@
 # Issue 89: another p-adic division bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/89
 
 Original creator: dmharvey
 

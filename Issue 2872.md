@@ -1,6 +1,6 @@
 # Issue 2872: 3d graphics can't be saved to a file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2872
 
 Original creator: was
 

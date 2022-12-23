@@ -1,6 +1,6 @@
 # Issue 3972: 3.1.2.alpha1: numerical noise in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3972
 
 Original creator: mabshoff
 

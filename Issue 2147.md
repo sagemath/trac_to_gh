@@ -1,6 +1,6 @@
 # Issue 2147: Make default cyclotomic polynomial be defined over ZZ.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2147
 
 Original creator: ncalexan
 

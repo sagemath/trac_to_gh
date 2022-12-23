@@ -1,6 +1,6 @@
 # Issue 6378: make sage -merge more user-friendly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6378
 
 Original creator: boothby
 
@@ -184,7 +184,7 @@ The patch to the main Sage respository is unneeded now, as it's been fixed alrea
 
 
 ```
-sage -merge -a -e timdumol`@`gmail.com
+sage -merge -a -e timdumol@gmail.com
 ```
 
 

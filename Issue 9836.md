@@ -1,6 +1,6 @@
 # Issue 9836: New PARI and new MPIR don't combine
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9837
 
 Original creator: jdemeyer
 

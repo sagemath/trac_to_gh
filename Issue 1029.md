@@ -1,6 +1,6 @@
 # Issue 1029: update flint in sage again
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1029
 
 Original creator: was
 

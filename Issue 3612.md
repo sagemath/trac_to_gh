@@ -1,6 +1,6 @@
 # Issue 3612: add linkable tracebacks in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3612
 
 Original creator: mhansen
 

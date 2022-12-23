@@ -1,6 +1,6 @@
 # Issue 4672: plot functions do not work with ?? because they are wrapped in @options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4672
 
 Original creator: jason
 
@@ -18,7 +18,7 @@ Namespace:	Interactive
 File:		/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py
 Definition:	bar_chart(*args, **kwds)
 Source:
-        `@`wraps(func)
+        @wraps(func)
         def wrapper(*args, **kwds):
             options = copy(wrapper.options)
             if self.original_opts:

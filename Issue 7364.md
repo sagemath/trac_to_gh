@@ -1,6 +1,6 @@
 # Issue 7364: Implement eulerian orientation of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7364
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 7282: port jinja to install on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7282
 
 Original creator: was
 

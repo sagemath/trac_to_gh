@@ -1,6 +1,6 @@
 # Issue 1738: [with patch] fraction field __pow__ doesn't handle negative exp. elegantly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1738
 
 Original creator: jbmohler
 

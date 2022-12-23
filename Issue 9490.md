@@ -1,6 +1,6 @@
 # Issue 9490: Doctest failure of sage/sage/libs/galrep/wrapper.pyx on t2.math (Solaris 10 SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9490
 
 Original creator: drkirkby
 
@@ -158,13 +158,13 @@ Using sage-4.5.1 on a Sun Blade 1000 (dual 900 MHz UltraSPARC III+, 2 GB RAM), I
 All tests passed!
 Total time for all tests: 24542.2 seconds
 
-drkirkby`@`redstart:~/sage-4.5.1$ uname -a
+drkirkby@redstart:~/sage-4.5.1$ uname -a
 SunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000
-drkirkby`@`redstart:~/sage-4.5.1$ cat /etc/release
+drkirkby@redstart:~/sage-4.5.1$ cat /etc/release
                          Solaris 10 3/05 s10_74L2a SPARC
            Copyright 2005 Sun Microsystems, Inc.  All Rights Reserved.
                         Use is subject to license terms.
                             Assembled 22 January 2005
-drkirkby`@`redstart:~/sage-4.5.1$ 
+drkirkby@redstart:~/sage-4.5.1$ 
 ```
 

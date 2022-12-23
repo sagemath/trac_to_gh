@@ -1,6 +1,6 @@
 # Issue 4492: block_matrix reacts inconsistently with 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4492
 
 Original creator: jbmohler
 

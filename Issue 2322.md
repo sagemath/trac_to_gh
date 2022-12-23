@@ -1,6 +1,6 @@
 # Issue 2322: [with patch] dsage patch for 2.10.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2322
 
 Original creator: yi
 

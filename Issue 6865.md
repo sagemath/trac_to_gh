@@ -1,6 +1,6 @@
 # Issue 6865: Use templates for CSS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6865
 
 Original creator: timdumol
 

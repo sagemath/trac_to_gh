@@ -1,6 +1,6 @@
 # Issue 9107: Nested class name mangling can be wrong in case of double nesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9107
 
 Original creator: hivert
 
@@ -222,7 +222,7 @@ Aha, here is an example:
 The docstring of `sage.categories.algebras_with_basis.AlgebrasWithBasis.CartesianProducts.ParentMethods.one_from_cartesian_product_of_one_basis` is as follows:
 
 ```
-            `@`cached_method   # todo: reinstate once #5843 is fixed
+            @cached_method   # todo: reinstate once #5843 is fixed
             def one_from_cartesian_product_of_one_basis(self):
                 """
                 Returns the one of this cartesian product of algebras, as per ``Monoids.ParentMethods.one``

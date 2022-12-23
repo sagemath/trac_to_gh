@@ -1,6 +1,6 @@
 # Issue 4502: numerical noise in matrix_double_dense on intel mac os X 10.5: inverting a singular matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4502
 
 Original creator: jhpalmieri
 
@@ -199,7 +199,7 @@ With
 diff -r 50c6651a1286 sage/matrix/matrix_double_dense.pyx
 --- a/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 08:58:27 2008 -0800
 +++ b/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 13:49:26 2008 -0800
-`@``@` -441,7 +441,7 `@``@`
+@@ -441,7 +441,7 @@
              
              sage: A.determinant() < 10e-12
              True

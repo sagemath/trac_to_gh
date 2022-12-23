@@ -1,6 +1,6 @@
 # Issue 9246: explain the definition of characteristic polynomial for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9246
 
 Original creator: mvngu
 

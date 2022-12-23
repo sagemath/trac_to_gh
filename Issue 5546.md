@@ -1,6 +1,6 @@
 # Issue 5546: jacobian fails for pynac expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5546
 
 Original creator: burcin
 

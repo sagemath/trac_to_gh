@@ -1,6 +1,6 @@
 # Issue 5083: Colormap updating?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5083
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 1474: gap -- port to Itanium Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1474
 
 Original creator: was
 

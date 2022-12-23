@@ -1,6 +1,6 @@
 # Issue 3024: notebook -- parses tracebacks in the output of docstrings of help command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3024
 
 Original creator: was
 

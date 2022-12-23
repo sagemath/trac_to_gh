@@ -1,6 +1,6 @@
 # Issue 5237: qsieve hangs on some machines when doctesting book_stein_ent.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5237
 
 Original creator: mabshoff
 

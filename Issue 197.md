@@ -1,6 +1,6 @@
 # Issue 197: improve export/import capabilities of the SAGE notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/197
 
 Original creator: was
 

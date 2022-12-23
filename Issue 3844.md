@@ -1,6 +1,6 @@
 # Issue 3844: notebook -- worksheet should call sys.path.append(DATA) when being initalized
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3844
 
 Original creator: was
 

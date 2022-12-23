@@ -1,6 +1,6 @@
 # Issue 3421: [with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3421
 
 Original creator: malb
 

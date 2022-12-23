@@ -1,6 +1,6 @@
 # Issue 1676: memleak and unused variable in pAdicCappedAbsoluteElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1676
 
 Original creator: wjp
 

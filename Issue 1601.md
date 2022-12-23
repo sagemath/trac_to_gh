@@ -1,6 +1,6 @@
 # Issue 1601: issue with noclobber and building sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1601
 
 Original creator: was
 

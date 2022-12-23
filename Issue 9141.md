@@ -1,6 +1,6 @@
 # Issue 9141: find cospectral graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9141
 
 Original creator: jason
 

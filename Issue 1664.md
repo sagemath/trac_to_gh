@@ -1,6 +1,6 @@
 # Issue 1664: [with spkg] new version of jmol
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1664
 
 Original creator: robertwb
 

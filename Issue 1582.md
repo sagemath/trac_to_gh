@@ -1,6 +1,6 @@
 # Issue 1582: 2.9.1.alph2: doctest failure in sage/graphs/graph.py with x86 Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1582
 
 Original creator: mabshoff
 

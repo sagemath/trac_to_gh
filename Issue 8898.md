@@ -1,6 +1,6 @@
 # Issue 8898: some files in sage-4.4.{0,1} have dos line ending instead of a unix line ending
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8898
 
 Original creator: fbissey
 

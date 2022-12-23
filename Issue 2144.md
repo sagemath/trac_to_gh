@@ -1,6 +1,6 @@
 # Issue 2144: hex constants do not work as expected
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2144
 
 Original creator: rpw
 

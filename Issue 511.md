@@ -1,6 +1,6 @@
 # Issue 511: memory leak: ntl wrapper leaks in __repr__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/511
 
 Original creator: mabshoff
 

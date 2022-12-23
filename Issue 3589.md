@@ -1,6 +1,6 @@
 # Issue 3589: numerical noise -- number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3589
 
 Original creator: was
 

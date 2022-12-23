@@ -1,6 +1,6 @@
 # Issue 1697: two polynomial_modn_dense_ntl.pyx memleaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1697
 
 Original creator: wjp
 

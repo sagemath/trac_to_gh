@@ -1,6 +1,6 @@
 # Issue 7188: GNUism in $SAGE_ROOT/spkg/install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7188
 
 Original creator: drkirkby
 

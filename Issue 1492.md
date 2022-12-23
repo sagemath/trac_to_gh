@@ -1,6 +1,6 @@
 # Issue 1492: sqlite-3.5.3.p1.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1492
 
 Original creator: yi
 

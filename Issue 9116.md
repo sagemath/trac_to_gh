@@ -1,6 +1,6 @@
 # Issue 9116: sage-4.4.3.alpha1 fails to build on OS X due to png library issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9116
 
 Original creator: was
 

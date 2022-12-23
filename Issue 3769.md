@@ -1,6 +1,6 @@
 # Issue 3769: dsage gets installed to SAGE_ROOT/usr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3769
 
 Original creator: tabbott
 

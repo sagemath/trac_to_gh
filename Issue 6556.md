@@ -1,6 +1,6 @@
 # Issue 6556: notebook: document keyboard shortcuts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6556
 
 Original creator: mvngu
 

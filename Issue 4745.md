@@ -1,6 +1,6 @@
 # Issue 4745: [with patch, needs review] Dsage performance is poor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4745
 
 Original creator: gfurnish
 

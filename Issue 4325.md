@@ -1,6 +1,6 @@
 # Issue 4325: CC() fails on Mathematica output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4325
 
 Original creator: ddrake
 

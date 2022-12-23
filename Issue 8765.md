@@ -1,6 +1,6 @@
 # Issue 8765: Huffman Encoding
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8765
 
 Original creator: ncohen
 

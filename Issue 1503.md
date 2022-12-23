@@ -1,6 +1,6 @@
 # Issue 1503: [with patch] calculus -- formal function calls don't coerce correctly to Mathematica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1503
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9035: add degree argument to univariate polynomial reverse() method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9035
 
 Original creator: burcin
 

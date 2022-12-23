@@ -1,6 +1,6 @@
 # Issue 8287: The _check used for creation of words makes it slower
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8287
 
 Original creator: slabbe
 

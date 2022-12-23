@@ -1,6 +1,6 @@
 # Issue 5054: add support for doctesting worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5054
 
 Original creator: mhansen
 

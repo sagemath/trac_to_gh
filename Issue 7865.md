@@ -1,6 +1,6 @@
 # Issue 7865: R  - WARNING: cannot run mixed C/Fortran code (then exits)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7865
 
 Original creator: drkirkby
 

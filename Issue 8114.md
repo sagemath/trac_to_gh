@@ -1,6 +1,6 @@
 # Issue 8114: doctest failure in `sage/libs/cremona/newforms.pyx` on 32-bit machines from #8042
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8114
 
 Original creator: craigcitro
 
@@ -33,7 +33,7 @@ With this patch applied, on 32-bit linux we have:
 
 
 ```
-wstein`@`ubuntu32:/tmp/wstein/farm/sage-4.3.2.alpha0$         sage -t  -long "devel/sage/sage/libs/cremona/newforms.pyx"                                                                                        
+wstein@ubuntu32:/tmp/wstein/farm/sage-4.3.2.alpha0$         sage -t  -long "devel/sage/sage/libs/cremona/newforms.pyx"                                                                                        
 
 sage -t -long "devel/sage/sage/libs/cremona/newforms.pyx"   
 

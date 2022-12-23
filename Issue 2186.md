@@ -1,6 +1,6 @@
 # Issue 2186: [with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2186
 
 Original creator: rlm
 

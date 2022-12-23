@@ -1,6 +1,6 @@
 # Issue 4616: cosine_series_coefficient hangs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4616
 
 Original creator: wdj
 
@@ -13,7 +13,7 @@ This is a method of the Piecewise class (which I use almost on a daily basis in 
 
 ```
 sage: f1 = lambda x: x*(pi-x)
-sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (0,pi),f1)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = Piecewise([[(0,pi),f1]])
 sage: f.cosine_series_coefficient(0,pi)
                                                
 ```
@@ -46,11 +46,11 @@ Comment by mabshoff created at 2008-12-04 17:06:38
 Yes, #4693 fixes the bug:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: f1 = lambda x: x*(pi-x)
-sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (0,pi),f1)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = Piecewise([[(0,pi),f1]])
 sage: f.cosine_series_coefficient(0,pi)
 pi^2/3
 sage: 
@@ -110,7 +110,7 @@ I can read the docstring and check in Sage that it is correct. (I did not try to
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: f1 = lambda x: x*(pi-x)
-sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (0,pi),f1)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = Piecewise([[(0,pi),f1]])
 sage: f.cosine_series_coefficient(0,pi)
 pi^2/3
 | Sage Version 3.2.3, Release Date: 2009-01-05                       |

@@ -1,6 +1,6 @@
 # Issue 6551: fix ugliness in printing of multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6551
 
 Original creator: AlexGhitza
 

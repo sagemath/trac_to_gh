@@ -1,6 +1,6 @@
 # Issue 9689: Numerical noise on devel/sage-main/sage/symbolic/expression.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9689
 
 Original creator: drkirkby
 

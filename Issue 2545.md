@@ -1,6 +1,6 @@
 # Issue 2545: [with patch, needs review] FractionFieldElement lacks derivative method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2545
 
 Original creator: burcin
 

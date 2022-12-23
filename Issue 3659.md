@@ -1,6 +1,6 @@
 # Issue 3659: [with spkg and patches, needs review] Upgrade IPython to 0.8.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3659
 
 Original creator: mhansen
 

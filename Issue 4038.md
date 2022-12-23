@@ -1,6 +1,6 @@
 # Issue 4038: Problem in factor() and roots() for p-adic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4038
 
 Original creator: cremona
 

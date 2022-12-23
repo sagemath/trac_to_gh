@@ -1,6 +1,6 @@
 # Issue 7696: zlib -- source spkg contains precompiled binary crap (.obj files)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7696
 
 Original creator: was
 

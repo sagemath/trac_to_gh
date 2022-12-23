@@ -1,6 +1,6 @@
 # Issue 7122: plot real part and imaginary part of function sqrt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7122
 
 Original creator: fmaltey
 

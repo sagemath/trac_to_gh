@@ -1,6 +1,6 @@
 # Issue 637: notebook improvement --
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/637
 
 Original creator: was
 

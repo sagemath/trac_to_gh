@@ -1,6 +1,6 @@
 # Issue 7519: Allowing the choice of word datatype for images under WordMorphism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7519
 
 Original creator: slabbe
 

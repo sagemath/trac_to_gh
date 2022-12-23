@@ -1,6 +1,6 @@
 # Issue 7023: Upgrade to Cython 0.11.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7023
 
 Original creator: robertwb
 

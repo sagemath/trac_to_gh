@@ -1,6 +1,6 @@
 # Issue 9711: sagenb notebook -- error when downloading worksheets in some cases involving non-ASCII characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9711
 
 Original creator: was
 

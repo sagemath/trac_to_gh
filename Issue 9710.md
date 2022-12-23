@@ -1,6 +1,6 @@
 # Issue 9710: Assumptions not passed to differential equation solver
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9710
 
 Original creator: kedlaya
 
@@ -71,7 +71,7 @@ with #9961:
 
 
 ```
-marik`@`um-bc107:/opt/sage$ ./sage
+marik@um-bc107:/opt/sage$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: x=var('x'); f=function('f',x); k=var('k'); assume(k>0)
@@ -88,7 +88,7 @@ Comment by robert.marik created at 2010-09-21 20:20:01
 In fact, #9835 is sufficient to solve this problem. The patch #9961 which is on the top of #9835 is not necessary. For the problem from the description we have with #9835:
 
 ```
-marik`@`um-bc107:/opt/sage$ ./sage
+marik@um-bc107:/opt/sage$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: x = var('x')

@@ -1,6 +1,6 @@
 # Issue 5129: numerical noise in roots calculus/calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5129
 
 Original creator: jsp
 
@@ -10,7 +10,7 @@ Assignee: burcin
 
 
 ```
-[jaap`@`peace sage-3.3.alpha0]$ ./sage -t "devel/sage/sage/calculus/calculus.py"
+[jaap@peace sage-3.3.alpha0]$ ./sage -t "devel/sage/sage/calculus/calculus.py"
 sage -t  "devel/sage/sage/calculus/calculus.py"
 **********************************************************************
 File "/home/jaap/Download/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py",
@@ -119,7 +119,7 @@ On Fedora 9, 32 bits:
 
 
 ```
-[jaap`@`paix sage-3.3.alpha3]$ ./sage -t "devel/sage/sage/calculus/calculus.py"
+[jaap@paix sage-3.3.alpha3]$ ./sage -t "devel/sage/sage/calculus/calculus.py"
 sage -t  "devel/sage/sage/calculus/calculus.py"             
 	 [171.4 s]
  

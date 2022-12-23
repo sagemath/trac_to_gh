@@ -1,6 +1,6 @@
 # Issue 4129: [with patch, needs review] add support for ntl.mat_GF2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4129
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1134: optimize creating elements of orders and number fields by coercing in lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1134
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff`@`fsmath.mathematik.uni-dortmund.de> wrote:
+On Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:
 [...]
 > > Woah!  Can someone explain to me the various calls above?  I'd think
 > > this should take epsilon time to coerce the elements of the sequence.

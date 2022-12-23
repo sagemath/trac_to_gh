@@ -1,6 +1,6 @@
 # Issue 4819: [with spkg, needs review] update Cython to 0.10.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4819
 
 Original creator: robertwb
 

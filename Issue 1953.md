@@ -1,6 +1,6 @@
 # Issue 1953: [with patch] fix problems found by Jason while reviewing #1945
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1953
 
 Original creator: cwitty
 

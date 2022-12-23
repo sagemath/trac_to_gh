@@ -1,6 +1,6 @@
 # Issue 3741: notebook -- the files for the revision history of a worksheet *do* get published
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3741
 
 Original creator: was
 

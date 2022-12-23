@@ -1,6 +1,6 @@
 # Issue 4744: [with patch, needs review] congruence number for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4744
 
 Original creator: robertwb
 

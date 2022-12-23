@@ -1,6 +1,6 @@
 # Issue 6348: gap4.4.10->gap4.4.12 revisited
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6348
 
 Original creator: wdj
 
@@ -210,7 +210,7 @@ AttributeError                            Traceback (most recent call last)
     591             while True:
 --> 592                 x = E.expect_list(self._compiled_full_pattern)
     593                 current_outputs.append(E.before)
-    594                 if x == 0:   # `@`p
+    594                 if x == 0:   # @p
 
 /space/rlm/sage-4.1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __getattr__(self, attrname)
    1309     def __getattr__(self, attrname):
@@ -323,7 +323,7 @@ I get:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.rc0$ ./sage
+wdj@hera:~/sagefiles/sage-4.1.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: gap

@@ -1,6 +1,6 @@
 # Issue 3619: notebook -- record date & time each user logs in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3619
 
 Original creator: TimothyClemans
 

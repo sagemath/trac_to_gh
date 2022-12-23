@@ -1,6 +1,6 @@
 # Issue 2229: sage-2.10.2.alpha1 -- breakage in new totally_rel.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2229
 
 Original creator: was
 

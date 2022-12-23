@@ -1,6 +1,6 @@
 # Issue 8969: problems with maxima inequalities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8969
 
 Original creator: dsm
 
@@ -128,7 +128,7 @@ True
 sage: sefms("x # 3") == SR(x != 3) 
 True
 sage:  solve([2*x==3, x != 5], x)
-[This is the Trac macro *x == * that was inherited from the migration called with arguments (3/2), )](https://trac.sagemath.org/wiki/WikiMacros#x == -macro)
+[[x == (3/2), (-7/2) != 0]]
 ```
 
 

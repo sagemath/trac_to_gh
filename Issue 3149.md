@@ -1,6 +1,6 @@
 # Issue 3149: [with patch, needs review] off-by-one error in real_roots on AA coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3149
 
 Original creator: cwitty
 

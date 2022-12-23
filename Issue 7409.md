@@ -1,6 +1,6 @@
 # Issue 7409: Partitions(n).random_element() is extremely slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7409
 
 Original creator: hivert
 

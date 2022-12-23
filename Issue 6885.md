@@ -1,6 +1,6 @@
 # Issue 6885: Excessive nesting in PDF reference manual, possibly from ring.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6885
 
 Original creator: mpatel
 

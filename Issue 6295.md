@@ -1,6 +1,6 @@
 # Issue 6295: [with patch, needs review] build runs sphinx-build even on failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6295
 
 Original creator: burcin
 
@@ -18,7 +18,7 @@ This patch to spkg/install fixes the problem:
 ```
 --- install.old 2009-06-12 08:46:55.000000000 +0200
 +++ install     2009-06-15 11:47:02.000000000 +0200
-`@``@` -357,6 +357,11 `@``@`
+@@ -357,6 +357,11 @@
  
  time make -f standard/deps $1
  

@@ -1,6 +1,6 @@
 # Issue 1833: [with patch; needs review] plot3d and parametric_plot3d can be very slow on some inputs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1833
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2371: tut.tex failures for 2.10.3.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2371
 
 Original creator: wdj
 

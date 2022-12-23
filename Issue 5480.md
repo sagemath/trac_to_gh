@@ -1,6 +1,6 @@
 # Issue 5480: R.quotient_by_principal_ideal() is self-contradictory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5480
 
 Original creator: justin
 

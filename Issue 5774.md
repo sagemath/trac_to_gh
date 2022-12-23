@@ -1,6 +1,6 @@
 # Issue 5774: running "make" on a -bdisted binary is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5774
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 To reproduce this build Sage, bdist, unpack the binary in a new place and run *make*':
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc3$ make
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ make
 cd spkg && ./install all 2>&1 | tee -a ../install.log
 /bin/ls: cannot access bzip2-*-install: No such file or directory
 /bin/ls: cannot access dir-*-install: No such file or directory

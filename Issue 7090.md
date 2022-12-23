@@ -1,6 +1,6 @@
 # Issue 7090: R test suite fails when building with SAGE_CHECK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7090
 
 Original creator: davidloeffler
 

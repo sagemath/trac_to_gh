@@ -1,6 +1,6 @@
 # Issue 3243: [with patch; needs review] cygwin -- get it to work on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3243
 
 Original creator: was
 

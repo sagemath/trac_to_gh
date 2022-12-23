@@ -1,6 +1,6 @@
 # Issue 6603: [with SPKG, need review] COIN-OR / CBC for SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6603
 
 Original creator: ncohen
 

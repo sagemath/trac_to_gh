@@ -1,6 +1,6 @@
 # Issue 2861: scripts do not exit with correct exit code when sys.exit() is used
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2861
 
 Original creator: ddrake
 

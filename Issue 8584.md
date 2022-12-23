@@ -1,6 +1,6 @@
 # Issue 8584: implement latex'ing of Dirichlet characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8584
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2559: issue with roots() over Algebraic Real field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2559
 
 Original creator: ncalexan
 

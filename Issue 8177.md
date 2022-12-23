@@ -1,6 +1,6 @@
 # Issue 8177: element_wrapper.py: Sage 4.3.2.alpha1 segfault on Mac OS X 10.6.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8177
 
 Original creator: mvngu
 
@@ -46,7 +46,7 @@ Comment by was created at 2010-02-04 12:22:02
 Here is a complete self-contained session that illustrates the problem:
 
 ```
-wstein`@`bsd:~/build/sage-4.3.2.rc0$ ./sage
+wstein@bsd:~/build/sage-4.3.2.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -70,7 +70,7 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 
-wstein`@`bsd:~/build/sage-4.3.2.rc0$
+wstein@bsd:~/build/sage-4.3.2.rc0$
 ```
 
 

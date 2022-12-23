@@ -1,6 +1,6 @@
 # Issue 5216: Update bzip2 to 1.0.5 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5216
 
 Original creator: mabshoff
 

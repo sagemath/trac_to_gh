@@ -1,6 +1,6 @@
 # Issue 8385: Add hostname, date and time to test.log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8385
 
 Original creator: drkirkby
 

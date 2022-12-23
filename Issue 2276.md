@@ -1,6 +1,6 @@
 # Issue 2276: M.divides(N) gives an error if M and N are monomials in R.<x,y> = PolynomialRing(QQ); ok for R.<x>
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2276
 
 Original creator: jxxcarlson
 

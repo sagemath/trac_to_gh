@@ -1,6 +1,6 @@
 # Issue 3236: [with patch; needs review] cygwin -- quaddouble -- get it to work with cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3236
 
 Original creator: was
 

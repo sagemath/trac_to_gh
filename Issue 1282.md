@@ -1,6 +1,6 @@
 # Issue 1282: make flint.spkg depend on python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1282
 
 Original creator: mabshoff
 

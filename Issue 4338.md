@@ -1,6 +1,6 @@
 # Issue 4338: optimize computation of victor_miller basis and use this for level 1 modular forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4338
 
 Original creator: was
 

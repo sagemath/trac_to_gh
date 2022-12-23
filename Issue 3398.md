@@ -1,6 +1,6 @@
 # Issue 3398: make "sage -c" load init.sage on startup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3398
 
 Original creator: was
 

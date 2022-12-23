@@ -1,6 +1,6 @@
 # Issue 7022: os x -- 10.6 -- generated the matplotlib font cache crashes sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7022
 
 Original creator: was
 
@@ -18,7 +18,7 @@ flat:~ wstein$ sage
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: parallel
 sage: import pylab
-/Users/wstein/sage/build/64bit/sage/local/bin/sage-sage: line 199: 58213 Abort trap              sage-ipython "$`@`" -i
+/Users/wstein/sage/build/64bit/sage/local/bin/sage-sage: line 199: 58213 Abort trap              sage-ipython "$@" -i
 | Sage Version 4.1.1, Release Date: 2009-08-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 flat:.matplotlib wstein$ mv fontList.cache.XXX fontList.cache
@@ -63,7 +63,7 @@ Here is the problem narrowed down more:
 
 ```
 sage: import ft2font; ft2font.FT2Font('/Library/Fonts/NISC18030.ttf')
-/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 65960 Abort trap              sage-ipython "$`@`" -i
+/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 65960 Abort trap              sage-ipython "$@" -i
 ```
 
 

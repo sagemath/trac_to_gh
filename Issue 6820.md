@@ -1,6 +1,6 @@
 # Issue 6820: [with patch, needs review] browse sage docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6820
 
 Original creator: jhpalmieri
 

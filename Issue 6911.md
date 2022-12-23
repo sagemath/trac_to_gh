@@ -1,6 +1,6 @@
 # Issue 6911: Faster basis of a Hecke algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6911
 
 Original creator: robertwb
 

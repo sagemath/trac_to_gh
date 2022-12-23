@@ -1,6 +1,6 @@
 # Issue 9718: iconv fails to build on Solaris 10 x86 64-bit - host fulvia
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9718
 
 Original creator: drkirkby
 
@@ -34,8 +34,8 @@ I've built iconv both 32-bit and 64-bit on several machines OK.
 |Sun Blade 1000|Solaris 10 03/2005|SPARC|redstart (mine)|4.4.4|64-bit|OK||
 |Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|32-bit|??||
 |Sun Fire X4540|OpenSolaris 11/2008|x86|disk.math|4.3.2|64-bit|*Fail*|#9405, but old tools|
-|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia@skynet|4.5.1|32-bit|OK||
-|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia@skynet|4.5.1|64-bit|*Fail*|This ticket|
+|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|32-bit|OK||
+|Dell Optiplex 755 |Solaris 10 update 5 05/2008|x86|fulvia`@`skynet|4.5.1|64-bit|*Fail*|This ticket|
 |Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|32-bit|OK||
 |Sun Ultra 27|OpenSolaris 06/2009|x86|hawk (mine)|4.5.1|64-bit|OK||
 With only two failures, it's to sure of any pattern, though so far. 

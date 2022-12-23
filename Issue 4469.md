@@ -1,6 +1,6 @@
 # Issue 4469: Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4469
 
 Original creator: mabshoff
 

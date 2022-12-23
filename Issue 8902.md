@@ -1,6 +1,6 @@
 # Issue 8902: Subsets element construction is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8902
 
 Original creator: hivert
 

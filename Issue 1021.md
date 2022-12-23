@@ -1,6 +1,6 @@
 # Issue 1021: real_roots sometimes returns incorrect roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1021
 
 Original creator: cwitty
 

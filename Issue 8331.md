@@ -1,6 +1,6 @@
 # Issue 8331: BipartiteGraph constructor does not create partitions for dict inputs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8331
 
 Original creator: rhinton
 

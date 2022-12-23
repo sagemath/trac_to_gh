@@ -1,6 +1,6 @@
 # Issue 7552: Update the Twisted package to 9.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7552
 
 Original creator: timdumol
 
@@ -62,7 +62,7 @@ Comment by was created at 2009-12-21 22:16:29
 1. Typing "hg status" gives:
 
 ```
-wstein`@`sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status
+wstein@sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status
 ! patches/keys.py
 ! patches/sob.py
 ```

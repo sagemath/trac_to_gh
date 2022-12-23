@@ -1,6 +1,6 @@
 # Issue 1434: [with spkg] cut sandbox directory out of scipy spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1434
 
 Original creator: jkantor
 

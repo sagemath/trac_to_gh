@@ -1,6 +1,6 @@
 # Issue 3120: documenting the bernoulli() algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3120
 
 Original creator: jason
 

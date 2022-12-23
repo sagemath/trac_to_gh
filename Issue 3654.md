@@ -1,6 +1,6 @@
 # Issue 3654: [with patch, needs review] Deprecation warning function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3654
 
 Original creator: jason
 

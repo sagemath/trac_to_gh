@@ -1,6 +1,6 @@
 # Issue 2678: modform -- a missing canonical coercion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2678
 
 Original creator: was
 

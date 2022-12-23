@@ -1,6 +1,6 @@
 # Issue 2445: algebras module lacks many docstrings and tests (score 15.7%)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2445
 
 Original creator: cremona
 

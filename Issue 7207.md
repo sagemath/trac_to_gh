@@ -1,6 +1,6 @@
 # Issue 7207: from __future__ import <anything> results in a Syntax Error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7207
 
 Original creator: timdumol
 

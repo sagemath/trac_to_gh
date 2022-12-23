@@ -1,6 +1,6 @@
 # Issue 3952: make plot() and parametric_plot() use fast_float on their functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3952
 
 Original creator: jason
 

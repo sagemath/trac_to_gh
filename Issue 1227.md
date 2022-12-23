@@ -1,6 +1,6 @@
 # Issue 1227: 2.8.13.rc1: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1227
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: malb
 With Linux x86, FC7 we get:
 
 ```
-[jaap`@`paix sage-2.8.13.rc1]$ ./sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py
+[jaap@paix sage-2.8.13.rc1]$ ./sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py
 sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py**********************************************************************
 File "multi_polynomial_ideal.py", line 376:
      sage: GB.triangular_decomposition('singular:triangLfak')

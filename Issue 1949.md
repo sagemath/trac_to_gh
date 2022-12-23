@@ -1,6 +1,6 @@
 # Issue 1949: rewrite the mwrank interface to get rid of wrap.* and use C++
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1949
 
 Original creator: was
 

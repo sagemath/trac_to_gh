@@ -1,6 +1,6 @@
 # Issue 3779: inconsistency for variables method, leads to errors in differentiation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3779
 
 Original creator: robertwb
 

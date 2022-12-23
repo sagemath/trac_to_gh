@@ -1,6 +1,6 @@
 # Issue 8614: Optimize creation of modular symbols spaces by speeding up quotienting out by 2-term relations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8614
 
 Original creator: was
 

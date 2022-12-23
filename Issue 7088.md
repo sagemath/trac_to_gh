@@ -1,6 +1,6 @@
 # Issue 7088: factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7088
 
 Original creator: was
 

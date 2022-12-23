@@ -1,6 +1,6 @@
 # Issue 4620: setup.py: if the cythonization fails then next "sage -b" starts to build extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4620
 
 Original creator: mabshoff
 

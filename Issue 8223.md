@@ -1,6 +1,6 @@
 # Issue 8223: tab completion broken for many parent objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8223
 
 Original creator: was
 

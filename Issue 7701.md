@@ -1,6 +1,6 @@
 # Issue 7701: update the openmpi spkg to the latest version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7701
 
 Original creator: was
 

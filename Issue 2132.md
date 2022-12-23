@@ -1,6 +1,6 @@
 # Issue 2132: If plot.show() is called with a very large figsize, a segfault occurs. (And what are the units on figsize, anyway?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2132
 
 Original creator: bober
 
@@ -18,14 +18,14 @@ sage: P = plot(sin(x))
 sage: P.show(figsize=[200,200])
 terminate called after throwing an instance of 'std::bad_alloc'
   what():  std::bad_alloc
-/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
-bober`@`bober:~/sage/misc$ 
+/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
+bober@bober:~/sage/misc$ 
 ```
 
 
 
 ```
-bober`@`bober:~/sage/misc$ sage
+bober@bober:~/sage/misc$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: graph_embeddings

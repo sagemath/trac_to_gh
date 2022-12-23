@@ -1,6 +1,6 @@
 # Issue 9948: Add major index (generating polynomial) for the category of finite permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9949
 
 Original creator: nborie
 
@@ -18,7 +18,7 @@ In the spirit of factorization of the code, add a method major_index for parents
 ```
 sage: DihedralGroup(5).major_index()
 q^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1
-sage: PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2,3,4,5))](https://trac.sagemath.org/wiki/WikiMacros#-macro)).major_index()
+sage: PermutationGroup([[(1,2,3,4,5)]]).major_index()
 q^4 + q^3 + q^2 + q + 1
 sage: SymmetricGroup(3).major_index()
 q^3 + 2*q^2 + 2*q + 1

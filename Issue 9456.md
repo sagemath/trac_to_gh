@@ -1,6 +1,6 @@
 # Issue 9456: zlib should be a prerequisite for libpng
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9456
 
 Original creator: jhpalmieri
 

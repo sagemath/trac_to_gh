@@ -1,6 +1,6 @@
 # Issue 6690: spell-check all modules under sage/coding
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6690
 
 Original creator: mvngu
 

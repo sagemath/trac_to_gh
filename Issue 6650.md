@@ -1,6 +1,6 @@
 # Issue 6650: semicolon does not hide output in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6650
 
 Original creator: hemmecke
 
@@ -52,7 +52,7 @@ Comment by was created at 2010-01-19 09:46:14
 ```
 Hi William,
 
-On Mon, Jan 18, 2010 at 11:52 PM, William Stein <wstein`@`gmail.com> wrote:
+On Mon, Jan 18, 2010 at 11:52 PM, William Stein <wstein@gmail.com> wrote:
 >
 > SO, now I think this is a bug in *IPython*, not the sage notebook.
 > What do you think?

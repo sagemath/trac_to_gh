@@ -1,6 +1,6 @@
 # Issue 8187: improve equality tests for words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8187
 
 Original creator: slabbe
 

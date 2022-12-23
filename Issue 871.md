@@ -1,6 +1,6 @@
 # Issue 871: [with patch] graphs: circulant graph creating function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/871
 
 Original creator: jason
 

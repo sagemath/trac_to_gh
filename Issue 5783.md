@@ -1,6 +1,6 @@
 # Issue 5783: [with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5783
 
 Original creator: nthiery
 

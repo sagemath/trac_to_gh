@@ -1,6 +1,6 @@
 # Issue 3299: memleak in PolyBoRi interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3299
 
 Original creator: malb
 

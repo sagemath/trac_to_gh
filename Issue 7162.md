@@ -1,6 +1,6 @@
 # Issue 7162: maybe remove linking xpm into gd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7162
 
 Original creator: was
 

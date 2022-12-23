@@ -1,6 +1,6 @@
 # Issue 7989: Minpoly doesn't work for all matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7989
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8941: _latex_ and origin for lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8941
 
 Original creator: novoselt
 

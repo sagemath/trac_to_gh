@@ -1,6 +1,6 @@
 # Issue 5994: singular.version() yields an error when first called, has no doctest, and has a strange output imo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5994
 
 Original creator: SimonKing
 
@@ -53,7 +53,7 @@ RuntimeError: Singular error:
    ? cannot open `help.cnf`
 Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08
 with
-        factory(`@`(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),
+        factory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),
         GMP(4.2),NTL(5.4.2),static readline,Plural,DBM,
         namespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325
         CC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,
@@ -83,7 +83,7 @@ Thirdly, if it is called again, it kind of works:
 
 ```
 sage: singular.version()
-'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n\tfactory(`@`(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :\tSingular-3-0-4\nSearchPath:\t/usr/local/sage/local/LIB\nSingular  :\t/usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :\t/usr/local/sage/local/bin\nRootDir   :\t/usr/local/sage/local\nDefaultDir:\t/usr/local/sage/local\nInfoFile  :\t\nIdxFile   :\t\nHtmlDir   :\t\nManualUrl :\thttp://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\t\nPath      :\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\t\nAvailable HelpBrowsers: dummy, emacs, \nCurrent HelpBrowser: dummy '
+'Singular for x86_64-Linux version 3-0-4 (3044-2009031122)  Mar 11 2009 22:29:08\nwith\n\tfactory(@(#) factoryVersion = 3.0.4),libfac(3.0.4,Mar 2008),\n\tGMP(4.2),NTL(5.4.2),static readline,Plural,DBM,\n\tnamespaces,dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1241602325\n\tCC= gcc -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H,\n\tCXX= g++ -O3 -g -fPIC -pipe -DNDEBUG -DOM_NDEBUG -Dx86_64_Linux -DHAVE_CONFIG_H (4.2.4 (Ubuntu 4.2.4-1ubuntu3))\nargv[0]   :\tSingular-3-0-4\nSearchPath:\t/usr/local/sage/local/LIB\nSingular  :\t/usr/local/sage/local/bin/Singular-3-0-4\nBinDir    :\t/usr/local/sage/local/bin\nRootDir   :\t/usr/local/sage/local\nDefaultDir:\t/usr/local/sage/local\nInfoFile  :\t\nIdxFile   :\t\nHtmlDir   :\t\nManualUrl :\thttp://www.singular.uni-kl.de/Manual/3-0-4\nExDir     :\t\nPath      :\t/usr/local/sage/local/bin:/usr/local/sage/local/polymake/bin:/usr/local/sage:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\nEmacsDir  :\t\nAvailable HelpBrowsers: dummy, emacs, \nCurrent HelpBrowser: dummy '
 ```
 
 

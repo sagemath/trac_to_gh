@@ -1,6 +1,6 @@
 # Issue 997: when installing sage and when installing sage binaries should do some sort of touch to avoid unecessary rebuilds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/997
 
 Original creator: was
 

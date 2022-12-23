@@ -1,6 +1,6 @@
 # Issue 3263: [with patch, needs review] typo in lseries_ell.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3263
 
 Original creator: craigcitro
 

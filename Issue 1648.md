@@ -1,6 +1,6 @@
 # Issue 1648: add chapter in developer's handbook about bug handling via trac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1648
 
 Original creator: mabshoff
 

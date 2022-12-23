@@ -1,6 +1,6 @@
 # Issue 2530: interact bug -- drop down menu default doesn't show default value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2530
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-`@`interact
+@interact
 def _(f = (33,[1..100])):
     pass
 ```

@@ -1,6 +1,6 @@
 # Issue 538: remove code duplication between sage/ext and c_lib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/538
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 4680: [with diff, needs new spkg] matplotlib configuration finds system-wide files on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4680
 
 Original creator: craigcitro
 

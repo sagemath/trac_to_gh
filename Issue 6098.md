@@ -1,6 +1,6 @@
 # Issue 6098: 3d bezier path plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6098
 
 Original creator: ekirkman
 

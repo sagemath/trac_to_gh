@@ -1,6 +1,6 @@
 # Issue 5222: wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5222
 
 Original creator: was
 

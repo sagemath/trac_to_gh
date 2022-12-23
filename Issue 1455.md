@@ -1,6 +1,6 @@
 # Issue 1455: 2.9.alpha4: numerical noise doctest failure on OSX 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1455
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4107: [with patch, needs review] trivial typos in tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4107
 
 Original creator: GeorgSWeber
 

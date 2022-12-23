@@ -1,6 +1,6 @@
 # Issue 6671: [with patch, needs review] Speed of Victor Miller basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6671
 
 Original creator: mraum
 
@@ -68,7 +68,7 @@ Comment by mvngu created at 2009-08-04 06:18:21
 Martin: The patch should contain your username so it can be identified as your contribution. Your username should follow the convention:
 
 ```
-Full Name <your-email`@`somewhere.com>
+Full Name <your-email@somewhere.com>
 ```
 
 You can set your username in your Mercurial configuration file `~/.hgrc`. Furthermore, the patch must have a meaningful commit message. Again, one convention to follow is:

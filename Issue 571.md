@@ -1,6 +1,6 @@
 # Issue 571: weird simon_two_descent doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/571
 
 Original creator: was
 
@@ -23,7 +23,7 @@ by that.
 
 
 ```
-was`@`ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py
+was@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py
 sage -t  ell_rational_field.py                               **********************************************************************
 File "ell_rational_field.py", line 905:
     sage: r, s, G = E.simon_two_descent(); r,s

@@ -1,6 +1,6 @@
 # Issue 8167: Use LaTeX-friendly Unicode characters in SageNB docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8167
 
 Original creator: mpatel
 

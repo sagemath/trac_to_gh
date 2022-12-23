@@ -1,6 +1,6 @@
 # Issue 4771: notebook -- get rid of these debug log messages I put in: "Dumping ..."
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4771
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9685: constructor for the all ones matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9685
 
 Original creator: rlm
 

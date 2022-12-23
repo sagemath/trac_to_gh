@@ -1,6 +1,6 @@
 # Issue 4396: create a "sage -develupgrade" command, that upgrades to the latest devel version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4396
 
 Original creator: was
 

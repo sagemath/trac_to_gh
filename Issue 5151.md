@@ -1,6 +1,6 @@
 # Issue 5151: linear codes decoding algorithms in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5151
 
 Original creator: wdj
 
@@ -39,7 +39,7 @@ Some suggestions:
 
 ```
 # HG changeset patch
-# User David Joyner <wdjoyner`@`gmail.com>
+# User David Joyner <wdjoyner@gmail.com>
 # Date 1233523816 18000
 # Node ID d5554b7ab8b14d7b369a200284355d135f319271
 # Parent  d949d3b0e84312be26ede6df676eece1bac738f0

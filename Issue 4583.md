@@ -1,6 +1,6 @@
 # Issue 4583: implement "sage -t --only-optional"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4583
 
 Original creator: was
 

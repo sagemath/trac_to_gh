@@ -1,6 +1,6 @@
 # Issue 2831: plot taking a very, very long time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2831
 
 Original creator: jsp
 

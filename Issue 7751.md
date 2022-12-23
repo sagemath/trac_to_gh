@@ -1,6 +1,6 @@
 # Issue 7751: Kazhdan-Lusztig polynomials, Bruhat order, and related features [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7751
 
 Original creator: bump
 
@@ -161,7 +161,7 @@ The reject:
 ```diff
 --- weyl_group.py
 +++ weyl_group.py
-`@``@` -138,6 +146,7 `@``@`
+@@ -138,6 +146,7 @@
          self.n = lattice.dimension() # Really needed?
          # MatrixGroup_gens takes plain matrices as input. So we can't do:
          #MatrixGroup_gens.__init__(self, list(self.simple_reflections()))
@@ -169,7 +169,7 @@ The reject:
          MatrixGroup_gens.__init__(self, [self.morphism_matrix(self.lattice().si
 mple_reflection(i)) for i in self.index_set()])
  
-     `@`cached_method
+     @cached_method
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 5914: default edge color is *invisible*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5914
 
 Original creator: rlm
 

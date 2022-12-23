@@ -1,6 +1,6 @@
 # Issue 6466: Implement functional derivative and Euler-Lagrange equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6466
 
 Original creator: gmhossain
 

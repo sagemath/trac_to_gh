@@ -1,6 +1,6 @@
 # Issue 210: discrete log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/210
 
 Original creator: was
 
@@ -40,7 +40,7 @@ on this until probably a day from now...
   -- William
  
  
-On Mon, 22 Jan 2007 21:51:52 -0800, David R. Kohel <kohel`@`maths.usyd.edu.au> wrote:
+On Mon, 22 Jan 2007 21:51:52 -0800, David R. Kohel <kohel@maths.usyd.edu.au> wrote:
  
 > Hi William, David,
 >  

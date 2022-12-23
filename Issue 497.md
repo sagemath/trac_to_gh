@@ -1,6 +1,6 @@
 # Issue 497: add minpoly command to finite field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/497
 
 Original creator: was
 

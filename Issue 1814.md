@@ -1,6 +1,6 @@
 # Issue 1814: [with patch] doctstrings for stream_cipher.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1814
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 2667: transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2667
 
 Original creator: jason
 

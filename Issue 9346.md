@@ -1,6 +1,6 @@
 # Issue 9346: sage_fortran no longer works for 32-bit builds on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9346
 
 Original creator: drkirkby
 
@@ -86,12 +86,12 @@ We can see that local/lib/libgfortran.so points to where my 32-bit libgfortran l
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha0$ ls -l local/lib/libgfortran.so
+drkirkby@hawk:~/sage-4.5.alpha0$ ls -l local/lib/libgfortran.so
 lrwxrwxrwx   1 drkirkby staff         48 Jun 27 12:18 local/lib/libgfortran.so -> /usr/local/gcc-4.4.4-multilib/lib/libgfortran.so
-drkirkby`@`hawk:~/sage-4.5.alpha0$ cat local/bin/sage_fortran
+drkirkby@hawk:~/sage-4.5.alpha0$ cat local/bin/sage_fortran
 #!/bin/sh 
 
-/usr/local/gcc-4.4.4-multilib/bin/gfortran -fPIC $`@`
+/usr/local/gcc-4.4.4-multilib/bin/gfortran -fPIC $@
 ```
 
 
@@ -101,15 +101,15 @@ So I'm happy that will work in a 32-bit environment, but I also know you have te
 To restore back to a 64-bit environment:
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha0$ touch local/lib/sage-64.txt
-drkirkby`@`hawk:~/sage-4.5.alpha0$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.4-multilib/lib/amd64/libgfortran.so
-drkirkby`@`hawk:~/sage-4.5.alpha0$ export SAGE64=yes
+drkirkby@hawk:~/sage-4.5.alpha0$ touch local/lib/sage-64.txt
+drkirkby@hawk:~/sage-4.5.alpha0$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.4-multilib/lib/amd64/libgfortran.so
+drkirkby@hawk:~/sage-4.5.alpha0$ export SAGE64=yes
 ```
 
 Then I could test the package
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha0$ ./sage -f fortran-20100626
+drkirkby@hawk:~/sage-4.5.alpha0$ ./sage -f fortran-20100626
 Force installing fortran-20100626
 Calling sage-spkg on fortran-20100626
 <SNIP>
@@ -147,12 +147,12 @@ With the package installed, I could check the library created by the package now
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha0$ ls -l local/lib/libgfortran.so
+drkirkby@hawk:~/sage-4.5.alpha0$ ls -l local/lib/libgfortran.so
 lrwxrwxrwx   1 drkirkby staff         54 Jun 27 12:22 local/lib/libgfortran.so -> /usr/local/gcc-4.4.4-multilib/lib/amd64/libgfortran.so
-drkirkby`@`hawk:~/sage-4.5.alpha0$ cat local/bin/sage_fortran
+drkirkby@hawk:~/sage-4.5.alpha0$ cat local/bin/sage_fortran
 #!/bin/sh 
 
-/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $`@`
+/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@
 ```
 
 

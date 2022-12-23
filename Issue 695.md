@@ -1,6 +1,6 @@
 # Issue 695: SAGE's multivariate gcd sucks over QQ and/or ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/695
 
 Original creator: was
 

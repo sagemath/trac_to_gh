@@ -1,6 +1,6 @@
 # Issue 5996: Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5996
 
 Original creator: jrasch
 

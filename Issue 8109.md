@@ -1,6 +1,6 @@
 # Issue 8109: wrap NTL's lzz_pE and lzz_pEX and use them
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8109
 
 Original creator: ylchapuy
 

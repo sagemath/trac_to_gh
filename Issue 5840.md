@@ -1,6 +1,6 @@
 # Issue 5840: update SageTeX spkg to version 2.0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5840
 
 Original creator: ddrake
 

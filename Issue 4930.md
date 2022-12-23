@@ -1,6 +1,6 @@
 # Issue 4930: [with spkg, needs review] 3.2.3.final: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4930
 
 Original creator: mabshoff
 
@@ -30,7 +30,7 @@ fixes the issue. The only "real" difference is this:
 ```
 --- a/spkg-install      Thu Jan 01 21:06:49 2009 -0800
 +++ b/spkg-install      Fri Jan 02 19:29:51 2009 -0800
-`@``@` -73,7 +73,7 `@``@`
+@@ -73,7 +73,7 @@
  cp patches/probe_comp.c src/CONFIG/src/probe_comp.c
  # add dynamic libs make install targets
  echo Updating Make.top

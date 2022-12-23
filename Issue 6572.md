@@ -1,6 +1,6 @@
 # Issue 6572: tutorial: put double colon on its own line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6572
 
 Original creator: mvngu
 

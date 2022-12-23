@@ -1,6 +1,6 @@
 # Issue 8434: sage -g uses user's PYTHONPATH
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8434
 
 Original creator: PolyBoRi
 

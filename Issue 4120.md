@@ -1,6 +1,6 @@
 # Issue 4120: New code for binary quadratic forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4120
 
 Original creator: justin
 

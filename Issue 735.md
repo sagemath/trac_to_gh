@@ -1,6 +1,6 @@
 # Issue 735: issues with server timing out worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/735
 
 Original creator: was
 

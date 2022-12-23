@@ -1,6 +1,6 @@
 # Issue 8979: spelling mistake in sage/gsl/ode.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8979
 
 Original creator: Moredread
 

@@ -1,6 +1,6 @@
 # Issue 5241: Matrix Group sometimes assumes base ring is a field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5241
 
 Original creator: kcrisman
 

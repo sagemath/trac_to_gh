@@ -1,6 +1,6 @@
 # Issue 6814: jordan_form transformation lack of precision sage 4.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6814
 
 Original creator: Henryk.Trappmann
 

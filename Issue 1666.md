@@ -1,6 +1,6 @@
 # Issue 1666: jmol cylinders should use the draw command (rather than be triangulated as a pmesh)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1666
 
 Original creator: robertwb
 

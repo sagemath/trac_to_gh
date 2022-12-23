@@ -1,6 +1,6 @@
 # Issue 7882: Macaulay2 interface breaks on examples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7882
 
 Original creator: novoselt
 

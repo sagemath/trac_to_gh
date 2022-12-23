@@ -1,6 +1,6 @@
 # Issue 6103: cohomology of simplicial complexes with finite coefficients as modules over steenrod algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6103
 
 Original creator: bantieau
 

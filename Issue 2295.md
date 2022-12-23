@@ -1,6 +1,6 @@
 # Issue 2295: [with patch, needs review] build cache check fails on paths containing symlinks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2295
 
 Original creator: burcin
 

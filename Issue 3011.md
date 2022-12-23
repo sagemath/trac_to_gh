@@ -1,6 +1,6 @@
 # Issue 3011: Set R_HOMES properly so rpy works with an existing R installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3011
 
 Original creator: mabshoff
 

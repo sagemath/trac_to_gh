@@ -1,6 +1,6 @@
 # Issue 158: missing sage-make_relative's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/158
 
 Original creator: was
 

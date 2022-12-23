@@ -1,6 +1,6 @@
 # Issue 8527: libcocoa-0.9930 indicates its sucessfully installed when it has not.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8527
 
 Original creator: drkirkby
 

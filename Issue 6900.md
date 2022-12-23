@@ -1,6 +1,6 @@
 # Issue 6900: Sage pexpect problems - suggestion to use upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6900
 
 Original creator: pcpa
 

@@ -1,6 +1,6 @@
 # Issue 3245: [with patch, needs review] provide coefficient and coefficients methods for symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3245
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 9139: PIDs are Noetherian
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9139
 
 Original creator: roed
 

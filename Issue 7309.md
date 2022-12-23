@@ -1,6 +1,6 @@
 # Issue 7309: SageNB -- Restructure /javascript/ to have /javascript/sage/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7309
 
 Original creator: timdumol
 

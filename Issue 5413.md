@@ -1,6 +1,6 @@
 # Issue 5413: [with patch, needs review] deprecate substitution via __call__ w/ unnamed arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5413
 
 Original creator: cwitty
 
@@ -78,7 +78,7 @@ I understand that this might require a new syntax to construct Piecewise objects
 or
 
 ```
-    sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (-1,1),1/2+x-x^3 + y)](https://trac.sagemath.org/wiki/WikiMacros#-macro),[x,y])
+    sage: f = Piecewise([[(-1,1),1/2+x-x^3 + y]],[x,y])
 ```
 
 

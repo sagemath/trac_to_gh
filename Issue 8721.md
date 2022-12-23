@@ -1,6 +1,6 @@
 # Issue 8721: Residue fields for relative number fields broken (again)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8721
 
 Original creator: davidloeffler
 

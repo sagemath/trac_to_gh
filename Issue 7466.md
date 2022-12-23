@@ -1,6 +1,6 @@
 # Issue 7466: 21 warnings when building the HTML version of the reference manual, Sage 4.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7466
 
 Original creator: mvngu
 
@@ -88,7 +88,7 @@ Comment by mvngu created at 2009-12-05 14:52:30
 On Sage 4.3.alpha1, I first deleted the `output/` directory and then proceeded to rebuild the HTML version of the reference manual:
 
 ```
-[mvngu`@`sage sage-4.3.alpha1-7466-reference]$ rm -rf devel/sage-main/doc/output/
+[mvngu@sage sage-4.3.alpha1-7466-reference]$ rm -rf devel/sage-main/doc/output/
 ./sage -docbuild reference html
 ```
 

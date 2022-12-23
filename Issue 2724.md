@@ -1,6 +1,6 @@
 # Issue 2724: Graph.show3D should have default aspect ratio of [1,1,1]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2724
 
 Original creator: jason
 

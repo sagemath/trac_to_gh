@@ -1,6 +1,6 @@
 # Issue 5989: [with patch, needs review] typo in sage-sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5989
 
 Original creator: jhpalmieri
 

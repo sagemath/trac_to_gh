@@ -1,6 +1,6 @@
 # Issue 2693: Sage should have generic resultant implementation for multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2693
 
 Original creator: cwitty
 

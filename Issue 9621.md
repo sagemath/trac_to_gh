@@ -1,6 +1,6 @@
 # Issue 9621: Fix GAP interface problem in sylow_subgroup method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9621
 
 Original creator: SimonKing
 

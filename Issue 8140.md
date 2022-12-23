@@ -1,6 +1,6 @@
 # Issue 8140: words.CharacteristicSturmianWord does not do what it says
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8140
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 7709: Graph constructor : Graph(edges=[ ... ] )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7709
 
 Original creator: ncohen
 

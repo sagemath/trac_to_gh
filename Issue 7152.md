@@ -1,6 +1,6 @@
 # Issue 7152: Segmentation fault with monomials()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7152
 
 Original creator: mraum
 

@@ -1,6 +1,6 @@
 # Issue 4931: [with patch, needs review] Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4931
 
 Original creator: mabshoff
 

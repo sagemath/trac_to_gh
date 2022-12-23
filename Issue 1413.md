@@ -1,6 +1,6 @@
 # Issue 1413: added _sig_on/_sig_off to mpolynomial_libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1413
 
 Original creator: jbmohler
 

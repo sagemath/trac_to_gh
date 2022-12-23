@@ -1,6 +1,6 @@
 # Issue 1511: Export 3d objects in jmol format
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1511
 
 Original creator: robertwb
 

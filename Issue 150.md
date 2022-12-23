@@ -1,6 +1,6 @@
 # Issue 150: if foo is a pyrex function then foo?? should give the source code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/150
 
 Original creator: was
 

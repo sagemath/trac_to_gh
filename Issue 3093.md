@@ -1,6 +1,6 @@
 # Issue 3093: [with patch; needs review] Debian lcalc package missing -DINCLUDE_PARI flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3093
 
 Original creator: tabbott
 

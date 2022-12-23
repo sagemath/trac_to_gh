@@ -1,6 +1,6 @@
 # Issue 5162: [with spkg, needs review] atlas.spkg: Fix mistake introduced in atlas-3.8.2.p1 and actually correct the bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5162
 
 Original creator: mabshoff
 

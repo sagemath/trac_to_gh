@@ -1,6 +1,6 @@
 # Issue 9554: Doctest failure in SageNB's sageinspect.py with #8988
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9554
 
 Original creator: mpatel
 
@@ -89,7 +89,7 @@ Comment by leif created at 2010-07-22 16:07:54
 P.S.:
 
 ```sh
-leif`@`portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
+leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 ? sagenb/sagenb.po
 ```
 

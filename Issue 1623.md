@@ -1,6 +1,6 @@
 # Issue 1623: update gsl to 1.10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1623
 
 Original creator: mabshoff
 

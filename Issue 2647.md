@@ -1,6 +1,6 @@
 # Issue 2647: [with spkg; needs review] Fixed Debian support for linbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2647
 
 Original creator: tabbott
 

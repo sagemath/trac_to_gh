@@ -1,6 +1,6 @@
 # Issue 6334: optional doctest failure -- broken finance doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6334
 
 Original creator: was
 

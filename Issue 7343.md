@@ -1,6 +1,6 @@
 # Issue 7343: SageNB -- Add a Selenium test suite.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7343
 
 Original creator: timdumol
 
@@ -280,7 +280,7 @@ Note: I did need to make one change to FL's redirect handling code:
 ```diff
 --- trunk/src/funkload/FunkLoadTestCase.py      2009-11-11 02:31:27.000000000 -0800
 +++ funkload/src/funkload/FunkLoadTestCase.py   2009-10-14 14:51:19.000000000 -0700
-`@``@` -277,6 +277,9 `@``@` class FunkLoadTestCase(unittest.TestCase
+@@ -277,6 +277,9 @@ class FunkLoadTestCase(unittest.TestCase
              thread_sleep()              # give a chance to other threads
              while response.code in (301, 302, 303, 307) and max_redirect_count:
                  # Figure the location - which may be relative

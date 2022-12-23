@@ -1,6 +1,6 @@
 # Issue 1659: Add a complex128 method for conversion of symbolic (and other?) expressions to numpy's 128-bit complex type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1659
 
 Original creator: was
 

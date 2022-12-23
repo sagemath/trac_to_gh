@@ -1,6 +1,6 @@
 # Issue 7561: Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7561
 
 Original creator: ncohen
 

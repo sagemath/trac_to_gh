@@ -1,6 +1,6 @@
 # Issue 9965: remove texttt from html.table output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9966
 
 Original creator: jason
 

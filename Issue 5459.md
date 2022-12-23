@@ -1,6 +1,6 @@
 # Issue 5459: Notebook and worksheet autosave intervals, excessive snapshots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5459
 
 Original creator: rbeezer
 

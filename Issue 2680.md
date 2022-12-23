@@ -1,6 +1,6 @@
 # Issue 2680: Modular forms for Gamma1(N) have wrong Sturm bound
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2680
 
 Original creator: craigcitro
 

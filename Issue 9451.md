@@ -1,6 +1,6 @@
 # Issue 9451: [with patch, needs work] sieve of atkin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9451
 
 Original creator: ohanar
 

@@ -1,6 +1,6 @@
 # Issue 7043: ntl 5.4.2.p9 passes -fPIC to Sun linker with SunStudio
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7043
 
 Original creator: drkirkby
 

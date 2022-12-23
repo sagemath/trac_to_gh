@@ -1,6 +1,6 @@
 # Issue 5286: python 2.5.4 breaks -sdist due to missing .hg repo in the sage-3.3.rc1.spkg (followup to #5218)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5286
 
 Original creator: mabshoff
 

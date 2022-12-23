@@ -1,6 +1,6 @@
 # Issue 9005: Derangements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9005
 
 Original creator: amca01
 

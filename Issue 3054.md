@@ -1,6 +1,6 @@
 # Issue 3054: copying a graph doesn't copy _pos or _boundary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3054
 
 Original creator: jason
 

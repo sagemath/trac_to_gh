@@ -1,6 +1,6 @@
 # Issue 1393: is_integral_domain crappy output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1393
 
 Original creator: rlm
 

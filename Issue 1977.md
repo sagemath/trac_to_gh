@@ -1,6 +1,6 @@
 # Issue 1977: valgrind 3.3.0 no longer appends $PID per default to the logs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1977
 
 Original creator: mabshoff
 

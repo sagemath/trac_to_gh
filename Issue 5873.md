@@ -1,6 +1,6 @@
 # Issue 5873: [with patch, needs review] Fix matplotlib build on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5873
 
 Original creator: pjeremy
 

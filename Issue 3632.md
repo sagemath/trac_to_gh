@@ -1,6 +1,6 @@
 # Issue 3632: [with patch, needs review] small bug in p-adic heights
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3632
 
 Original creator: wuthrich
 

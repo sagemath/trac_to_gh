@@ -1,6 +1,6 @@
 # Issue 3330: multivariate polynomial GCD should work over more base rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3330
 
 Original creator: cwitty
 

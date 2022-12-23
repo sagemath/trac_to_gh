@@ -1,6 +1,6 @@
 # Issue 2703: make _fast_float_ work on inequality testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2703
 
 Original creator: jason
 

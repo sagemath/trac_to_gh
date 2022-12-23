@@ -1,6 +1,6 @@
 # Issue 6694: [with patch, needs review] Live reference manual worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6694
 
 Original creator: mpatel
 

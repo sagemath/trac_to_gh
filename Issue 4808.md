@@ -1,6 +1,6 @@
 # Issue 4808: [with patch, needs work] Move HTML for Worksheets to template
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4808
 
 Original creator: TimothyClemans
 

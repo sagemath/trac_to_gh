@@ -1,6 +1,6 @@
 # Issue 8951: Clear /tmp/ECL* after building ECL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8951
 
 Original creator: drkirkby
 
@@ -104,7 +104,7 @@ real	2m20.869s
 user	1m47.690s
 sys	0m23.480s
 Successfully installed ecl-10.4.1
-kirkby`@`sage:~/sage-4.4.2.alpha0$ uname -a
+kirkby@sage:~/sage-4.4.2.alpha0$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 ```
 

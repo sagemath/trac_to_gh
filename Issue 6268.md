@@ -1,6 +1,6 @@
 # Issue 6268: Typesetting of sec(x), csc(x), cot(x) are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6268
 
 Original creator: gmhossain
 
@@ -21,7 +21,7 @@ Comment by mvngu created at 2009-06-12 19:22:17
 
 
 ```
-[mvngu`@`sage sage-4.0.1]$ sage
+[mvngu@sage sage-4.0.1]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: # the following work as expected

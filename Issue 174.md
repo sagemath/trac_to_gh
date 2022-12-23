@@ -1,6 +1,6 @@
 # Issue 174: all existing open source Hermite Normal Form implementations totally SUCK.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/174
 
 Original creator: was
 

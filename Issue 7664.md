@@ -1,6 +1,6 @@
 # Issue 7664: Make sure latex doesn't do weird things with R output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7664
 
 Original creator: kcrisman
 

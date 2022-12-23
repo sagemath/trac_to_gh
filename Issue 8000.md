@@ -1,6 +1,6 @@
 # Issue 8000: Add # -*- coding: utf-8 -*- to the top of all SageNB .py files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8000
 
 Original creator: mpatel
 

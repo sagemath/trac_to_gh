@@ -1,6 +1,6 @@
 # Issue 888: 2.8.7-alpha0: doctest failure in dsage/tests/testdoc.py (requires previous dsage setup)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/888
 
 Original creator: cwitty
 

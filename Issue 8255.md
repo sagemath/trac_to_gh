@@ -1,6 +1,6 @@
 # Issue 8255: update SageTeX spkg to 2.2.3.p0 to fix spkg-check script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8255
 
 Original creator: ddrake
 
@@ -87,7 +87,7 @@ I had something like this in mind:
 diff -r 2d39ee3a7530 -r e739e330a66a spkg-check
 --- a/spkg-check
 +++ b/spkg-check
-`@``@` -29,8 +29,7 `@``@`
+@@ -29,8 +29,7 @@
      fi
  }
  

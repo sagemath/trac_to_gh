@@ -1,6 +1,6 @@
 # Issue 9086: LaTeX representation of negative symbolic fractions broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9086
 
 Original creator: leif
 

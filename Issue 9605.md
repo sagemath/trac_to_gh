@@ -1,6 +1,6 @@
 # Issue 9605: Caching latex preamble setup for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9605
 
 Original creator: rbeezer
 

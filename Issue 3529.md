@@ -1,6 +1,6 @@
 # Issue 3529: ATLAS.spkg: reapply the PowerPC detection fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3529
 
 Original creator: mabshoff
 

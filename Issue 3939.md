@@ -1,6 +1,6 @@
 # Issue 3939: [with patch, needs review] copyright notice in integer.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3939
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 5949: memory leak expose by elliptic curve code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5949
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9635: symbolic sum gives wrong answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9635
 
 Original creator: Henryk.Trappmann
 

@@ -1,6 +1,6 @@
 # Issue 4994: OSX 64 bit: add 64 bit build support for ghmm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4994
 
 Original creator: mabshoff
 

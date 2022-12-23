@@ -1,6 +1,6 @@
 # Issue 7627: Settings page (for converted notebook?) gives errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7627
 
 Original creator: jason
 

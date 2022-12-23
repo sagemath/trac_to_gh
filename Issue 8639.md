@@ -1,6 +1,6 @@
 # Issue 8639: Bug when defining a MIPVariable's  type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8639
 
 Original creator: ncohen
 

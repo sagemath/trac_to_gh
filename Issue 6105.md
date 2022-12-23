@@ -1,6 +1,6 @@
 # Issue 6105: [with patch, need review] Additions and changes in Group Algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6105
 
 Original creator: jlefebvre
 

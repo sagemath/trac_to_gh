@@ -1,6 +1,6 @@
 # Issue 4051: [with patch; needs review] Use of tar -j in sage-pkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4051
 
 Original creator: anakha
 

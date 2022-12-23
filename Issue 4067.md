@@ -1,6 +1,6 @@
 # Issue 4067: [with patch, needs review] hmm.pyx and ghmm.pyx valgrind issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4067
 
 Original creator: mabshoff
 

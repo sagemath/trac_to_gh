@@ -1,6 +1,6 @@
 # Issue 4158: system dependent doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4158
 
 Original creator: was
 
@@ -57,13 +57,13 @@ For whitespace errors, see the file /home/wstein/cicero/build/sage-3.1.2/tmp/.do
 Cicero is:
 
 ```
-[wstein`@`cicero sage-3.1.2]$ cat /etc/issue
+[wstein@cicero sage-3.1.2]$ cat /etc/issue
 Fedora release 8 (Werewolf)
 Kernel \r on an \m
 
-[wstein`@`cicero sage-3.1.2]$ uname -a
+[wstein@cicero sage-3.1.2]$ uname -a
 Linux cicero 2.6.25.9-40.fc8 #1 SMP Fri Jun 27 16:25:53 EDT 2008 i686 i686 i386 GNU/Linux
-[wstein`@`cicero sage-3.1.2]$ 
+[wstein@cicero sage-3.1.2]$ 
 ```
 
 

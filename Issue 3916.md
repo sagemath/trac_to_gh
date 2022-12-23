@@ -1,6 +1,6 @@
 # Issue 3916: Make a %wiki cell mode for the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3916
 
 Original creator: jason
 

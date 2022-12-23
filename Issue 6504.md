@@ -1,6 +1,6 @@
 # Issue 6504: Add doctests to toy_buchberger to get it to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6504
 
 Original creator: mhampton
 

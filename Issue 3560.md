@@ -1,6 +1,6 @@
 # Issue 3560: optimize import of gnutls_socket_ssl.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3560
 
 Original creator: was
 

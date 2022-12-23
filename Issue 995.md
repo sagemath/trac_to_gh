@@ -1,6 +1,6 @@
 # Issue 995: Generalize polynomial .roots() method by adding optional ring= parameter for result ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/995
 
 Original creator: cwitty
 

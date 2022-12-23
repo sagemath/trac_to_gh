@@ -1,6 +1,6 @@
 # Issue 6540: [with patch, needs review] g.add_edge((u,v), label=l) syntax unsupported for C graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6540
 
 Original creator: rlm
 

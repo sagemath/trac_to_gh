@@ -1,6 +1,6 @@
 # Issue 2117: problems with "...?starup_token=..." URL in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2117
 
 Original creator: nbruin
 

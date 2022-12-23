@@ -1,6 +1,6 @@
 # Issue 5641: plotting of matrices with 0 rows or columns is broken in multiple ways
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5641
 
 Original creator: was
 

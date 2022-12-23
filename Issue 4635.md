@@ -1,6 +1,6 @@
 # Issue 4635: Sage 3.2.1.a1: numerical noise in sage/plot/plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4635
 
 Original creator: mabshoff
 

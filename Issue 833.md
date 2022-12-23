@@ -1,6 +1,6 @@
 # Issue 833: new coercion model segfault (??)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/833
 
 Original creator: was
 
@@ -263,7 +263,7 @@ Comment by mabshoff created at 2007-10-14 00:14:57
 Something else that is off:
 
 ```
-[mabshoff`@`localhost sage-2.8.7-alpha0]$ ./sage
+[mabshoff@localhost sage-2.8.7-alpha0]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.7-alpha0, Release Date: 2007-10-13                |
@@ -421,7 +421,7 @@ PyObject_Malloc (nbytes=34) at Objects/obmalloc.c:747
 (gdb)
 (gdb) quit
 The program is running.  Exit anyway? (y or n) y
-[mabshoff`@`localhost sage-2.8.7-alpha0]$                                                               
+[mabshoff@localhost sage-2.8.7-alpha0]$                                                               
 ```
 
 

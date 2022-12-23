@@ -1,6 +1,6 @@
 # Issue 492: gcc 4.3: fix ntl_wrap.cc in sage_c_lib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/492
 
 Original creator: mabshoff
 

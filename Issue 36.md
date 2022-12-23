@@ -1,6 +1,6 @@
 # Issue 36: Bug in display2d for maxima interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/36
 
 Original creator: was
 

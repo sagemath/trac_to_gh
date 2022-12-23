@@ -1,6 +1,6 @@
 # Issue 5392: relative number field subfield method -- unclear documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5392
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 6188: [with patch, needs review] Add more files in sage/rings/number_field to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6188
 
 Original creator: davidloeffler
 

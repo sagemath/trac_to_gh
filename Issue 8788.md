@@ -1,6 +1,6 @@
 # Issue 8788: segfault in Sage-4.4 built using GCC-4.5.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8788
 
 Original creator: was
 

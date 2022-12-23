@@ -1,6 +1,6 @@
 # Issue 7436: frobby optional spkg doesn't build on a lot of machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7436
 
 Original creator: was
 

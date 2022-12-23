@@ -1,6 +1,6 @@
 # Issue 5757: [with patch, needs review] change nodoctest directive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5757
 
 Original creator: jhpalmieri
 

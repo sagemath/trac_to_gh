@@ -1,6 +1,6 @@
 # Issue 255: hilarious bug in p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/255
 
 Original creator: dmharvey
 

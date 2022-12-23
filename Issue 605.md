@@ -1,6 +1,6 @@
 # Issue 605: GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/605
 
 Original creator: was
 

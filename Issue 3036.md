@@ -1,6 +1,6 @@
 # Issue 3036: [with patch; needs review] SAGE_TESTDIR broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3036
 
 Original creator: tabbott
 

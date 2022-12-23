@@ -1,6 +1,6 @@
 # Issue 178: Sage()._get() does not return the correct result in some instances
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/178
 
 Original creator: yi
 

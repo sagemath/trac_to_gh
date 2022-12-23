@@ -1,6 +1,6 @@
 # Issue 247: bug in __contains__ for polynomial rings over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/247
 
 Original creator: William Stein
 

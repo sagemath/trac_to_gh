@@ -1,6 +1,6 @@
 # Issue 1107: [with patch] add minkowski bound function for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1107
 
 Original creator: was
 
@@ -25,7 +25,7 @@ Comment by mabshoff created at 2007-11-19 21:24:29
 The patch no longer applies cleanly:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/devel/sage$ hg import minkowski.patch
+mabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/devel/sage$ hg import minkowski.patch
 applying minkowski.patch
 patching file sage/rings/rational_field.py
 Hunk #1 succeeded at 298 with fuzz 2 (offset 23 lines).

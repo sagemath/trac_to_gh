@@ -1,6 +1,6 @@
 # Issue 2074: PermutationGroupElement constructor bug.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2074
 
 Original creator: boothby
 

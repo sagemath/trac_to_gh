@@ -1,6 +1,6 @@
 # Issue 7033: libfplll can't find _gmpz_init in -lgmp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7033
 
 Original creator: drkirkby
 

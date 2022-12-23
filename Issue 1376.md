@@ -1,6 +1,6 @@
 # Issue 1376: 2.8.15.rc0: sage/calculus/calculus.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1376
 
 Original creator: mabshoff
 

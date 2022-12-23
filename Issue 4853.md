@@ -1,6 +1,6 @@
 # Issue 4853: Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4853
 
 Original creator: mabshoff
 

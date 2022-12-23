@@ -1,6 +1,6 @@
 # Issue 3893: random_element methods should all accept *args and **kwds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3893
 
 Original creator: malb
 

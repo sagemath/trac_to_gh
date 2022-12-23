@@ -1,6 +1,6 @@
 # Issue 829: edit() always puts the editor into the background
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/829
 
 Original creator: justin
 

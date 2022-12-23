@@ -1,6 +1,6 @@
 # Issue 6478: [with patch, needs review] Make sage -combinat work without touching .hgrc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6478
 
 Original creator: nthiery
 

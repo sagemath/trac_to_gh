@@ -1,6 +1,6 @@
 # Issue 4485: notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4485
 
 Original creator: was
 

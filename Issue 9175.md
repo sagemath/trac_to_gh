@@ -1,6 +1,6 @@
 # Issue 9175: cygwin: pari's sea.gp program just segfaults on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9175
 
 Original creator: was
 

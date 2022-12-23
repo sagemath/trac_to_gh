@@ -1,6 +1,6 @@
 # Issue 4904: convert sage.categories.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4904
 
 Original creator: mhansen
 

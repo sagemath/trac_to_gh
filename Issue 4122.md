@@ -1,6 +1,6 @@
 # Issue 4122: python debug mode, add sleep(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4122
 
 Original creator: rlm
 

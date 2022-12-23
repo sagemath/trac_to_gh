@@ -1,6 +1,6 @@
 # Issue 5257: Clicking on "Log" in the notebook (bringing you to the /history page) gives errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5257
 
 Original creator: jason
 
@@ -95,7 +95,7 @@ Comment by mabshoff created at 2009-02-16 08:36:44
 The patch looks good, but it needs to be rebased against 3.3.rc1 once it is out:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5257.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5257.patch 
 patching file sage/server/notebook/notebook.py
 Reversed (or previously applied) patch detected!  Assume -R? [n] Y
 Apply anyway? [n] Y

@@ -1,6 +1,6 @@
 # Issue 3020: Finite Fields of characteristic 2 slow to construct
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3020
 
 Original creator: cremona
 

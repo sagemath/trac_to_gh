@@ -1,6 +1,6 @@
 # Issue 205: prime_range cast problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/205
 
 Original creator: was
 

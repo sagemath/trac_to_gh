@@ -1,6 +1,6 @@
 # Issue 2753: [with patch, needs review] new "randstate" framework for a global Sage random number seed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2753
 
 Original creator: cwitty
 

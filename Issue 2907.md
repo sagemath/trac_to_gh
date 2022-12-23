@@ -1,6 +1,6 @@
 # Issue 2907: polynomials lack content method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2907
 
 Original creator: burcin
 

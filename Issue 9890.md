@@ -1,6 +1,6 @@
 # Issue 9890: substitute goes too far: (5-e^x).substitute(x=log(x)) -> 5-log(x)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9891
 
 Original creator: burcin
 

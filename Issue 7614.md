@@ -1,6 +1,6 @@
 # Issue 7614: change plot to use fast_callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7614
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh`@`gmail.com> wrote:
+On Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh@gmail.com> wrote:
 > Thanks for the reply. But no. The problem is not due to the fact that
 > the function has a singularity. Indeed.
 >
@@ -46,7 +46,7 @@ In fact, SAge *should* be using fast_callable, not fast_float.  This works just 
 
 s = 20*log(abs((1+I*x)^4),10)
 plot(fast_callable(s,vars=[x]), (x,0,3))
-[This is the Trac macro *nice picture as output* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#nice picture as output-macro)
+[[nice picture as output]]
 
 Many, many thanks for your bug report.  It is bug reports from users like you that really helps Sage to be a first-rate mathematical software system. 
 
@@ -60,7 +60,7 @@ Comment by mvngu created at 2009-12-07 00:17:52
 From this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/19de9e09ff948cbc) thread:
 
 ```
-On Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh`@`gmail.com> wrote:
+On Sun, Dec 6, 2009 at 4:51 PM, Michel <vdbergh@gmail.com> wrote:
 > Thanks for the reply. But no. The problem is not due to the fact that
 > the function has a singularity. Indeed.
 >
@@ -95,7 +95,7 @@ just fine if you force it manually:
 
 s = 20*log(abs((1+I*x)^4),10)
 plot(fast_callable(s,vars=[x]), (x,0,3))
-[This is the Trac macro *nice picture as output* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#nice picture as output-macro)
+[[nice picture as output]]
 
 Many, many thanks for your bug report.  It is bug reports from users like
 you that really helps Sage to be a first-rate mathematical software system.

@@ -1,6 +1,6 @@
 # Issue 6356: Implement sage -t notebook.sws
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6356
 
 Original creator: nthiery
 

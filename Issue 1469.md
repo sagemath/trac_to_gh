@@ -1,6 +1,6 @@
 # Issue 1469: sage-doctest should import the namespace of the file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1469
 
 Original creator: burcin
 

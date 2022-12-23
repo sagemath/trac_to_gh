@@ -1,6 +1,6 @@
 # Issue 4731: Repeated computation involving Maxima is getting slower and slower
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4731
 
 Original creator: SimonKing
 

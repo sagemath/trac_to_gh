@@ -1,6 +1,6 @@
 # Issue 3706: segfault in matrix2.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3706
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 On the debian64 vmware image we have a segfault when doctesting matrix2.pyx:
 
 ```
-was`@`debian64:~/build/sage-3.0.6.rc0$ ./sage -t devel/sage/sage/matrix/matrix2.pyx 
+was@debian64:~/build/sage-3.0.6.rc0$ ./sage -t devel/sage/sage/matrix/matrix2.pyx 
 sage -t  devel/sage/sage/matrix/matrix2.pyx                 
 
 ------------------------------------------------------------
@@ -34,7 +34,7 @@ The following tests failed:
 
         sage -t  devel/sage/sage/matrix/matrix2.pyx
 Total time for all tests: 15.6 seconds
-was`@`debian64:~/build/sage-3.0.6.rc0$ 
+was@debian64:~/build/sage-3.0.6.rc0$ 
 ```
 
 
@@ -42,7 +42,7 @@ Here's the gdb output.  The segfault doesn't get hit when doing --verbose.
 
 
 ```
-was`@`debian64:~/build/sage-3.0.6.rc0$ ./sage -t --gdb devel/sage/sage/matrix/matrix2.pyx
+was@debian64:~/build/sage-3.0.6.rc0$ ./sage -t --gdb devel/sage/sage/matrix/matrix2.pyx
 sage -t --gdb devel/sage/sage/matrix/matrix2.pyx            ********************************************************************************
 Type r at the (gdb) prompt to run the doctests.
 Type bt if there is a crash to see a traceback.

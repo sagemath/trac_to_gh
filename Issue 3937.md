@@ -1,6 +1,6 @@
 # Issue 3937: notebook -- move HTML for account settings page to Jinja template
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3937
 
 Original creator: TimothyClemans
 

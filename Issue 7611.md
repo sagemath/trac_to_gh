@@ -1,6 +1,6 @@
 # Issue 7611: Minor ReST improvements for the notebook object documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7611
 
 Original creator: timdumol
 

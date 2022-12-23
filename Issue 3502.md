@@ -1,6 +1,6 @@
 # Issue 3502: modular symbols -- implement apply_sparse, which is needed for fast eigenvalue computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3502
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5582: Coercion from float to QQ is missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5582
 
 Original creator: jbandlow
 
@@ -87,12 +87,12 @@ Comment by mabshoff created at 2009-05-21 01:05:13
 These apply with quite some offset, so let's hope for the best:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-float-QQ.patch
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-float-QQ.patch
 patching file sage/rings/rational.pyx
 Hunk #1 succeeded at 65 (offset 4 lines).
 Hunk #2 succeeded at 298 (offset 135 lines).
 Hunk #3 succeeded at 492 (offset 151 lines).
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-QQfloat2.patch 
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-QQfloat2.patch 
 patching file sage/rings/rational.pyx
 Hunk #1 succeeded at 1816 (offset 191 lines).
 ```

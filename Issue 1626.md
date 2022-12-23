@@ -1,6 +1,6 @@
 # Issue 1626: update lcalc to 20070902
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1626
 
 Original creator: mabshoff
 

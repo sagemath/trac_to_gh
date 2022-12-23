@@ -1,6 +1,6 @@
 # Issue 8724: Notebook redirects use wrong HTTP Status Code (301 Moved Permanently)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8724
 
 Original creator: timdumol
 

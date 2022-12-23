@@ -1,6 +1,6 @@
 # Issue 5134: Polyhedron: conversion from V-form to H-form fails if no extreme point is given
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5134
 
 Original creator: sbarthelemy
 
@@ -14,13 +14,13 @@ Let's consider the first diagonal in `R^2` as a polyhedron. It has one extreme p
 It can be defined in sage in V-form and converted to H-form as shown
 
 ```
-sage: p1v1r = Polyhedron([This is the Trac macro *0,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0-macro),[This is the Trac macro *1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1-macro))
+sage: p1v1r = Polyhedron([[0,0]],[[1,1]])
 sage: p1v1r
 A Polyhedron with 1 vertex with 1 rays.
 sage: p1v1r.ieqs()
 [[1, 0, 0], [0, 1, 0]]
 sage: p1v1r.linearities()
-[This is the Trac macro *0, -1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, -1, 1-macro)
+[[0, -1, 1]]
 ```
 
 
@@ -37,7 +37,7 @@ p1v1r = { (x,y) such that
 Sage also allows us to define the polyhedron without the vertex
 
 ```
-sage: p0v1r = Polyhedron([], [This is the Trac macro *1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1-macro))        
+sage: p0v1r = Polyhedron([], [[1,1]])        
 sage: p0v1r
 A Polyhedron with 1 vertex.
 sage: p0v1r.ieqs()                      

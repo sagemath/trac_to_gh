@@ -1,6 +1,6 @@
 # Issue 1040: bug in new ring extension constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1040
 
 Original creator: was
 

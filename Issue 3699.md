@@ -1,6 +1,6 @@
 # Issue 3699: rewrite free_module.py to use basis matrices everywhere
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3699
 
 Original creator: mhansen
 

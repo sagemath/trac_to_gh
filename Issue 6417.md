@@ -1,6 +1,6 @@
 # Issue 6417: Unicode in LaTeX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6417
 
 Original creator: mora
 

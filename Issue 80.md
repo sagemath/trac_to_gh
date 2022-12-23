@@ -1,6 +1,6 @@
 # Issue 80: Clarify: version.py versus sage-version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/80
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Sat, 23 Sep 2006 07:55:20 -0700, David Joyner <wdjoyner`@`gmail.com> wrote:
+On Sat, 23 Sep 2006 07:55:20 -0700, David Joyner <wdjoyner@gmail.com> wrote:
 
 >> To try it out in the latest SAGE (1.3.7.3.3 and not earlier!),
 >> type (from <SAGE_ROOT>/deve/sage)
@@ -21,7 +21,7 @@ On Sat, 23 Sep 2006 07:55:20 -0700, David Joyner <wdjoyner`@`gmail.com> wrote:
 >>
 >>
 >
-> wdj`@`wooster:~/sagefiles/sage-1.2.0/devel/sage$ ../../sage -hg update
+> wdj@wooster:~/sagefiles/sage-1.2.0/devel/sage$ ../../sage -hg update
 > remote changed .hgtags which local deleted
 > (k)eep or (d)elete?   k
 > remote changed export which local deleted

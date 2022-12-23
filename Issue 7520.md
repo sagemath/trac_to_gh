@@ -1,6 +1,6 @@
 # Issue 7520: Improving word construction and datatype handling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7520
 
 Original creator: slabbe
 

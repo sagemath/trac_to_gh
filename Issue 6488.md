@@ -1,6 +1,6 @@
 # Issue 6488: "sage -docbuild -help" doesn't mention the --jsmath option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6488
 
 Original creator: rlm
 

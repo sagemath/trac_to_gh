@@ -1,6 +1,6 @@
 # Issue 563: memleak in LinBox::MatrixHom::BlasBlackboxMAP exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/563
 
 Original creator: mabshoff
 

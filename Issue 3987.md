@@ -1,6 +1,6 @@
 # Issue 3987: [with patch; needs review] interfaces -- add algorithm='magma' for polynomial factor and galois_group commands
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3987
 
 Original creator: was
 

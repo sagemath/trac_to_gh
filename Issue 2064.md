@@ -1,6 +1,6 @@
 # Issue 2064: foo?? doesn't know about cpdef from the command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2064
 
 Original creator: craigcitro
 

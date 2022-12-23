@@ -1,6 +1,6 @@
 # Issue 7570: default : list_plot of empty lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7570
 
 Original creator: chapoton
 

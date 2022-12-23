@@ -1,6 +1,6 @@
 # Issue 3157: [with patch, needs trivial review] Executable target for pbuild
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3157
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 4269: add code to help detect which systems are used in performing a computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4269
 
 Original creator: mhansen
 

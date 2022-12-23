@@ -1,6 +1,6 @@
 # Issue 3894: [with patch, needs review] in tutorial, live version, triple dots are not visible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3894
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 2790: very annoying output of new "sage -tp"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2790
 
 Original creator: was
 

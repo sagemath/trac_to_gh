@@ -1,6 +1,6 @@
 # Issue 7350: notebook (sagenb); implement a more secure multi-computer server model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7350
 
 Original creator: was
 

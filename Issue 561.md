@@ -1,6 +1,6 @@
 # Issue 561: memleak in MultiModularBasis_base__extend_moduli_to_height_c exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/561
 
 Original creator: mabshoff
 

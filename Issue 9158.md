@@ -1,6 +1,6 @@
 # Issue 9158: (modular decomposition) Improvement to subgraph search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9158
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 4926: convert sage.schemes.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4926
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 2297: Tensor product of matrices [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2297
 
 Original creator: SimonKing
 

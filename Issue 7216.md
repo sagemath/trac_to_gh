@@ -1,6 +1,6 @@
 # Issue 7216: Spanish doc #4 "Number Fields"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7216
 
 Original creator: Loufer
 

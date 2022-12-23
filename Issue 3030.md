@@ -1,6 +1,6 @@
 # Issue 3030: Trivial cython patch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3030
 
 Original creator: gfurnish
 

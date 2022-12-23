@@ -1,6 +1,6 @@
 # Issue 6928: Upgrade the Trac spkg to 0.11.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6928
 
 Original creator: mpatel
 

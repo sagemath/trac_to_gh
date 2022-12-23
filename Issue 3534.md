@@ -1,6 +1,6 @@
 # Issue 3534: plot -- fix circle example in the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3534
 
 Original creator: was
 

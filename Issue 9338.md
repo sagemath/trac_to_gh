@@ -1,6 +1,6 @@
 # Issue 9338: upgrade PyCrypto to upstream 2.1.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9338
 
 Original creator: mvngu
 

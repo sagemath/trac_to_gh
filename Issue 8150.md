@@ -1,6 +1,6 @@
 # Issue 8150: various fixes in sage/groups/ and sage/interfaces needed for GAP 4.4.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8150
 
 Original creator: dimpase
 
@@ -91,7 +91,7 @@ This would mean a redesign. It is doable, I suppose, but I do not know the reaso
 well, this is not working, at least not presently:
 
 {{{
-dima`@`boxen:~/sage$ ./sage
+dima@boxen:~/sage$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -228,7 +228,7 @@ the last one:
 
 
 ```
-dima`@`boxen:~/sage$ ./sage -t -long devel/sage/sage/structure/element_wrapper.py 
+dima@boxen:~/sage$ ./sage -t -long devel/sage/sage/structure/element_wrapper.py 
 sage -t -long "devel/sage/sage/structure/element_wrapper.py"
 	 [4.7 s]
  

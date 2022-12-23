@@ -1,6 +1,6 @@
 # Issue 4770: [with patch, needs review] implement maxima.cputime()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4770
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4786: fix some bugs / typos in the solve function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4786
 
 Original creator: was
 
@@ -78,14 +78,14 @@ File "/opt/sage/devel/sage-main/sage/calculus/equations.py", line 1392:
 Expected:
     [x == 0]
 Got:
-    [This is the Trac macro *x == 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x == 0-macro)
+    [[x == 0]]
 **********************************************************************
 File "/opt/sage/devel/sage-main/sage/calculus/equations.py", line 1394:
     sage: solve([1.00000000000000*x^3 == 0], x)
 Expected:
     [x == 0]
 Got:
-    [This is the Trac macro *x == 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x == 0-macro)
+    [[x == 0]]
 ```
 
 

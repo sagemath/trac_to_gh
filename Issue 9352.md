@@ -1,6 +1,6 @@
 # Issue 9352: givaro spkg: trivial typo in spkg-check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9352
 
 Original creator: jhpalmieri
 

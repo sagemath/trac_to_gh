@@ -1,6 +1,6 @@
 # Issue 5915: Sage LiveCD 3.4 does not boot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5915
 
 Original creator: stankewicz
 

@@ -1,6 +1,6 @@
 # Issue 622: SAGE's factor function is not provably correct
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/622
 
 Original creator: was
 
@@ -15,7 +15,7 @@ to True.
 
 
 ```
-On 9/7/07, Bill Hart <goodwillhart`@`googlemail.com> wrote:
+On 9/7/07, Bill Hart <goodwillhart@googlemail.com> wrote:
 >
 
 >

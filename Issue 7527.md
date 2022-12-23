@@ -1,6 +1,6 @@
 # Issue 7527: include graph_coloring in the reference manual.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7527
 
 Original creator: ncohen
 
@@ -55,9 +55,9 @@ Attachment
 The patch `trac_7527.patch` doesn't apply cleanly on top of Sage 4.3.alpha1:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7527/trac_7527.patch
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7527/trac_7527.patch
 adding trac_7527.patch to series file
-[mvngu`@`sage sage-main]$ hg qpush
+[mvngu@sage sage-main]$ hg qpush
 applying trac_7527.patch
 patching file sage/graphs/graph_coloring.py
 Hunk #3 FAILED at 143
@@ -72,10 +72,10 @@ errors during apply, please fix and refresh trac_7527.patch
 The rejected hunk is
 
 ```
-[mvngu`@`sage ~]$ cat graph_coloring.py.rej 
+[mvngu@sage ~]$ cat graph_coloring.py.rej 
 --- graph_coloring.py
 +++ graph_coloring.py
-`@``@` -142,11 +144,12 `@``@`
+@@ -142,11 +144,12 @@
          raise RuntimeError, "Too much recursion!  Graph coloring failed."
  
  def first_coloring(G,n=0):

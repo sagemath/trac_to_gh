@@ -1,6 +1,6 @@
 # Issue 3184: broken p-adic getslice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3184
 
 Original creator: dmharvey
 

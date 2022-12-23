@@ -1,6 +1,6 @@
 # Issue 1345: I is sometimes wrapped in SymbolicConstant, sometimes not
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1345
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 2218: assuming an expression is not equal to zero doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2218
 
 Original creator: mhansen
 

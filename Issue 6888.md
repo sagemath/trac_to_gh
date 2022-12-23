@@ -1,6 +1,6 @@
 # Issue 6888: sage-env complain about bad SAGE_ROOT environment variable with no reason
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6888
 
 Original creator: sbarthelemy
 

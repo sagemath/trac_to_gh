@@ -1,6 +1,6 @@
 # Issue 9304: trac #8218 (finite_rings) broke all my pickles!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9304
 
 Original creator: was
 

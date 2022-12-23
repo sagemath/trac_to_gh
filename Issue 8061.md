@@ -1,6 +1,6 @@
 # Issue 8061: New genus2reduction spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8061
 
 Original creator: jsp
 

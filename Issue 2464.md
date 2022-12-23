@@ -1,6 +1,6 @@
 # Issue 2464: slight change to coverage script to avoid functions named "_"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2464
 
 Original creator: was
 

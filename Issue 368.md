@@ -1,6 +1,6 @@
 # Issue 368: {{{ }}} for worksheet text mode won't cut it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/368
 
 Original creator: was
 

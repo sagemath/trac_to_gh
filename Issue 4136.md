@@ -1,6 +1,6 @@
 # Issue 4136: [with patch, needs review] enable tail reduction when reducing multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4136
 
 Original creator: malb
 
@@ -73,7 +73,7 @@ Comment by mabshoff created at 2008-10-20 11:53:20
 Mhhh, what are the patch dependencies here?
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0/devel/sage$ patch -p1  < trac_4136_tail_reduce.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0/devel/sage$ patch -p1  < trac_4136_tail_reduce.patch 
 patching file sage/rings/polynomial/multi_polynomial_element.py
 Hunk #1 FAILED at 1485.
 Hunk #2 FAILED at 1511.

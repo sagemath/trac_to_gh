@@ -1,6 +1,6 @@
 # Issue 6815: Restarting worksheet doesn't enable typesetting even when "Typeset" box is checked
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6815
 
 Original creator: gmhossain
 

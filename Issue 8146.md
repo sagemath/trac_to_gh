@@ -1,6 +1,6 @@
 # Issue 8146: building HTML version of French tutorial is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8146
 
 Original creator: mvngu
 
@@ -24,7 +24,7 @@ Exception occurred:
 NameError: name 'latex_preamble' is not defined
 The full traceback has been saved in /tmp/sphinx-err-6XQBIT.log, if you want to report the issue to the author.
 Please also report this if it was a user error, so that a better error message can be provided next time.
-Send reports to sphinx-dev`@`googlegroups.com. Thanks!
+Send reports to sphinx-dev@googlegroups.com. Thanks!
 Build finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial
 ```
 

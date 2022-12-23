@@ -1,6 +1,6 @@
 # Issue 6024: ecl->clisp switch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6024
 
 Original creator: mabshoff
 

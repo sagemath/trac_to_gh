@@ -1,6 +1,6 @@
 # Issue 9076: plot Arc of circle and ellipse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9076
 
 Original creator: vdelecroix
 

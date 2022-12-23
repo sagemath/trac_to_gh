@@ -1,6 +1,6 @@
 # Issue 9301: Modified check_edge_label in the sparse graph backend to consider equals the same objects rather than objects with the same contents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9301
 
 Original creator: comick
 

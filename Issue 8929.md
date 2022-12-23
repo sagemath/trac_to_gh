@@ -1,6 +1,6 @@
 # Issue 8929: add new methods to permgroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8929
 
 Original creator: jasonbhill
 

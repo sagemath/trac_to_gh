@@ -1,6 +1,6 @@
 # Issue 4371: Add support for lazy attributes via a decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4371
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 7916: change conjugate(X) to try X.conjugate()  [[this is easy!!]]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7916
 
 Original creator: was
 
@@ -82,11 +82,11 @@ Comment by mvngu created at 2010-01-18 02:20:38
 Does [trac_7916-same_name_method.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7916/trac_7916-same_name_method.patch) depend on anything? I got one hunk failure when applying [trac_7916-same_name_method.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7916/trac_7916-same_name_method.patch) on top of Sage 4.3.1.rc0:
 
 ```
-[mvngu`@`mod sage-main]$ pwd
+[mvngu@mod sage-main]$ pwd
 /dev/shm/mvngu/sage-4.3.1.rc0-7916/devel/sage-main
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7916/trac_7916-same_name_method.patch
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7916/trac_7916-same_name_method.patch
 adding trac_7916-same_name_method.patch to series file
-[mvngu`@`mod sage-main]$ hg qpush
+[mvngu@mod sage-main]$ hg qpush
 applying trac_7916-same_name_method.patch
 patching file sage/symbolic/function.pyx
 Hunk #1 FAILED at 550
@@ -94,10 +94,10 @@ Hunk #1 FAILED at 550
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_7916-same_name_method.patch
-[mvngu`@`mod sage-main]$ cat sage/symbolic/function.pyx.rej
+[mvngu@mod sage-main]$ cat sage/symbolic/function.pyx.rej
 --- function.pyx
 +++ function.pyx
-`@``@` -551,10 +551,30 `@``@`
+@@ -551,10 +551,30 @@
              # we should never end up here
              raise ValueError, "cannot read pickle"
  

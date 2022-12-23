@@ -1,6 +1,6 @@
 # Issue 587: bug in floating point complex number creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/587
 
 Original creator: was
 

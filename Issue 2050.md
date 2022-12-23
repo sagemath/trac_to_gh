@@ -1,6 +1,6 @@
 # Issue 2050: disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2050
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8266: Improve documentation for word objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8266
 
 Original creator: slabbe
 

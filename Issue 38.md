@@ -1,6 +1,6 @@
 # Issue 38: bug in notebook (too much text clipped)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/38
 
 Original creator: was
 

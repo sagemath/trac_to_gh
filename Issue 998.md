@@ -1,6 +1,6 @@
 # Issue 998: segmentation fault doctesting crypto/mq/sr.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/998
 
 Original creator: was
 

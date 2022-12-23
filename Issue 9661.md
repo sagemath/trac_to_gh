@@ -1,6 +1,6 @@
 # Issue 9661: pari(string) and gp(string) always returns a value, even when it should not
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9661
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 1504: [with trivial doctest patch] plotting -- add an example
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1504
 
 Original creator: was
 

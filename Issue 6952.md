@@ -1,6 +1,6 @@
 # Issue 6952: follow-up to #6774: fix warnings and stylistic niceties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6952
 
 Original creator: mvngu
 

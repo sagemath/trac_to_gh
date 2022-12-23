@@ -1,6 +1,6 @@
 # Issue 7380: Replace Graph.vertices() by Graph.vertex_iterator when possible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7380
 
 Original creator: ncohen
 

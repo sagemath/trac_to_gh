@@ -1,6 +1,6 @@
 # Issue 4412: [with patch, needs review] extend the local information function for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4412
 
 Original creator: cremona
 
@@ -59,7 +59,7 @@ Applies and all elliptic_curve tests pass.  I had to slightly rebase the typo fi
 ```
 All tests passed!
 Total time for all tests: 67.1 seconds
-was`@`sage:~/build/sage-3.2.1.alpha1$ 
+was@sage:~/build/sage-3.2.1.alpha1$ 
 ```
 
 

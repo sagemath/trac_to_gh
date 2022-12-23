@@ -1,6 +1,6 @@
 # Issue 2473: [with patch, needs review] BipartiteGraph.__init__ does not properly initialize for some inputs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2473
 
 Original creator: rhinton
 

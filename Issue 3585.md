@@ -1,6 +1,6 @@
 # Issue 3585: time_series -- lots of numerical noise in the doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3585
 
 Original creator: was
 

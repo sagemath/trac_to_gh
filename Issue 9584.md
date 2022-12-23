@@ -1,6 +1,6 @@
 # Issue 9584: Some graph-related doctest failures and timeouts with 4.5.2.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9584
 
 Original creator: mpatel
 
@@ -121,7 +121,7 @@ ok
 Trying:
     graphs.PetersenGraph().blocks_and_cut_vertices()###line 3117:_sage_    >>> graphs.PetersenGraph().blocks_and_cut_vertices()
 Expecting:
-    ([This is the Trac macro *6, 4, 9, 7, 5, 8, 3, 2, 1, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#6, 4, 9, 7, 5, 8, 3, 2, 1, 0-macro), [])
+    ([[6, 4, 9, 7, 5, 8, 3, 2, 1, 0]], [])
 ok
 Trying:
     graphs.PathGraph(Integer(6)).blocks_and_cut_vertices()###line 3119:_sage_    >>> graphs.PathGraph(6).blocks_and_cut_vertices()
@@ -253,7 +253,7 @@ real	30m1.590s
 user	0m1.912s
 sys	0m0.536s
 ^C
-leif`@`californication:~/sage-4.5.2.alpha0-j6$ 
+leif@californication:~/sage-4.5.2.alpha0-j6$ 
 ```
 
 (Note that again I don't get a shell prompt, and `python`, `gap` and `sage-cleaner` are still "running", only `python .../.doctest_generic_graph.py` consumes CPU time. I've decreased `SAGE_TIMEOUT_LONG` to half an hour, the shown tests take much shorter, about 55 seconds.)
@@ -304,7 +304,7 @@ real	15m1.016s
 user	0m1.084s
 sys	0m0.360s
 ^C
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ 
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ 
 ```
 
 I simply forgot it was the same; the shown tests take roughly 2 minutes and a few seconds.
@@ -609,7 +609,7 @@ I applied this patch on cleo and on iras:
 diff -r af5f40a73eda sage/graphs/generic_graph.py
 --- a/sage/graphs/generic_graph.py      Wed Jul 21 20:13:55 2010 -0700
 +++ b/sage/graphs/generic_graph.py      Sun Jul 25 01:50:04 2010 -0400
-`@``@` -3424,14 +3424,6 `@``@`
+@@ -3424,14 +3424,6 @@
          By Edmond's theorem, a graph which is `k`-connected always has `k` edge-disjoint
          arborescences, regardless of the root we pick::
  
@@ -753,7 +753,7 @@ So are you suggesting this patch?  It seems to work for me.
 diff -r af5f40a73eda sage/graphs/generic_graph.py
 --- a/sage/graphs/generic_graph.py      Wed Jul 21 20:13:55 2010 -0700
 +++ b/sage/graphs/generic_graph.py      Sun Jul 25 10:53:22 2010 -0400
-`@``@` -3424,13 +3424,17 `@``@`
+@@ -3424,13 +3424,17 @@
          By Edmond's theorem, a graph which is `k`-connected always has `k` edge-disjoint
          arborescences, regardless of the root we pick::
 
@@ -795,7 +795,7 @@ The following works _for me_:
 diff --git a/sage/graphs/generic_graph.py b/sage/graphs/generic_graph.py
 --- a/sage/graphs/generic_graph.py
 +++ b/sage/graphs/generic_graph.py
-`@``@` -3424,7 +3424,7 `@``@`
+@@ -3424,7 +3424,7 @@
          By Edmond's theorem, a graph which is `k`-connected always has `k` edge-disjoint
          arborescences, regardless of the root we pick::
  
@@ -811,7 +811,7 @@ So I've simply changed the size of the random graph, not the doctest in principl
 With the above change (and the patch at #9594), all doctests pass in reasonable time:
 
 ```sh
-leif`@`californication:~/sage-4.5.2.alpha0-j6$ time ./sage -t devel/sage/sage/graphs/      
+leif@californication:~/sage-4.5.2.alpha0-j6$ time ./sage -t devel/sage/sage/graphs/      
 sage -t  "devel/sage/sage/graphs/digraph_generators.py"     
 	 [13.8 s]
 sage -t  "devel/sage/sage/graphs/cliquer.pyx"               
@@ -842,7 +842,7 @@ Total time for all tests: 383.5 seconds
 real	6m23.599s
 user	6m2.251s
 sys	0m18.253s
-leif`@`californication:~/sage-4.5.2.alpha0-j6$ time ./sage -t -long devel/sage/sage/graphs/
+leif@californication:~/sage-4.5.2.alpha0-j6$ time ./sage -t -long devel/sage/sage/graphs/
 sage -t -long "devel/sage/sage/graphs/digraph_generators.py"
 	 [22.5 s]
 sage -t -long "devel/sage/sage/graphs/cliquer.pyx"          

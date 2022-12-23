@@ -1,6 +1,6 @@
 # Issue 4693: [with patch, needs review] cleanup work in sage/functions/piecewise.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4693
 
 Original creator: mhansen
 

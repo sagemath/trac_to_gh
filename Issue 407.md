@@ -1,6 +1,6 @@
 # Issue 407: improve how gap workspace caching works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/407
 
 Original creator: was
 
@@ -10,9 +10,9 @@ Assignee: was
 
 
 ```
-On 7/26/07, Dan Christensen <jdc`@`uwo.ca> wrote:
+On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
 > 
-> "David Joyner" <wdjoyner`@`gmail.com> writes:
+> "David Joyner" <wdjoyner@gmail.com> writes:
 > 
 > > Could you please try gap_reset_workspace() and then restart SAGE
 > > and see if the examples start?

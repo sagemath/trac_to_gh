@@ -1,6 +1,6 @@
 # Issue 4009: [with spkg, needs review] OSX 10.4/5: build R without the aqua support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4009
 
 Original creator: mabshoff
 

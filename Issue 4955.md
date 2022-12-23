@@ -1,6 +1,6 @@
 # Issue 4955: Magma needs write access to $SAGE_ROOT/data/excode/magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4955
 
 Original creator: malb
 

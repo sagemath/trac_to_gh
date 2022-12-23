@@ -1,6 +1,6 @@
 # Issue 2982: Itanium (RHEL 5) -- weird problem in code_construction.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2982
 
 Original creator: was
 

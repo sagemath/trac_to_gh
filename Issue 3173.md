@@ -1,6 +1,6 @@
 # Issue 3173: add 64 bit OSX build support to eclib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3173
 
 Original creator: mabshoff
 

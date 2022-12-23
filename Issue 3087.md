@@ -1,6 +1,6 @@
 # Issue 3087: [with patch; needs review] Stupid mistakes in Debian palp copyright files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3087
 
 Original creator: tabbott
 

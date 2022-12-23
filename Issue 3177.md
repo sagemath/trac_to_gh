@@ -1,6 +1,6 @@
 # Issue 3177: fix 64 bit OSX build support for python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3177
 
 Original creator: mabshoff
 

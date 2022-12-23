@@ -1,6 +1,6 @@
 # Issue 8126: fix typo in doc of circle
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8126
 
 Original creator: robert.marik
 

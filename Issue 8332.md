@@ -1,6 +1,6 @@
 # Issue 8332: Changes FiniteField_givaro to Python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8332
 
 Original creator: roed
 

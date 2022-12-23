@@ -1,6 +1,6 @@
 # Issue 4098: "T1 =  M1.hecke_operator(13^9)" blows up on 32 bit builds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4098
 
 Original creator: mabshoff
 

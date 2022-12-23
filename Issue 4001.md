@@ -1,6 +1,6 @@
 # Issue 4001: [with patch, needs review] ZZ['x'].gen()^(2^20) should work but doesn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4001
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 556: ntl re-wrapping in sage-2.8.3 broke sage on itanium linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/556
 
 Original creator: was
 

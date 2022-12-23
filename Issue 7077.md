@@ -1,6 +1,6 @@
 # Issue 7077: variables() inconsistently returns a list or tuple
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7077
 
 Original creator: jason
 

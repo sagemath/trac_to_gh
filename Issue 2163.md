@@ -1,6 +1,6 @@
 # Issue 2163: .show?? pops up the graphics item as well as the help page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2163
 
 Original creator: jason
 

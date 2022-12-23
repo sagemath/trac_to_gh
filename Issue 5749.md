@@ -1,6 +1,6 @@
 # Issue 5749: [with patch, needs review] Bring coverage of sage/rings/power_series_poly.pyx to 100%.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5749
 
 Original creator: craigcitro
 

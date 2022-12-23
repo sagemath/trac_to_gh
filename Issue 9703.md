@@ -1,6 +1,6 @@
 # Issue 9703: Doctest failures caused by non-working sympow on Solaris x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9703
 
 Original creator: drkirkby
 
@@ -206,60 +206,60 @@ A note to reviewers (mainly aimed at Leif!) I know there are 1001 things wrong w
 ## Test results a Sun Ultra 27 running OpenSolaris 06/2009 (Originally SYMPOW failed all tests on this workstation)
 
 ```
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ uname -a
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ uname -a
 SunOS hawk 5.11 snv_134 i86pc i386 i86pc
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ cat /etc/release
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ cat /etc/release
                        OpenSolaris Development snv_134 X86
            Copyright 2010 Sun Microsystems, Inc.  All Rights Reserved.
                         Use is subject to license terms.
                              Assembled 01 March 2010
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
 sage -t -long "devel/sage/sage/modular/abvar/abvar.py"      
 	 [27.4 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 27.5 seconds
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
 sage -t -long "devel/sage/sage/lfunctions/sympow.py"        
 	 [5.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 5.8 seconds
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 	 [212.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 212.8 seconds
-drkirkby`@`hawk:~/32/sage-4.5.3.alpha1$ 
+drkirkby@hawk:~/32/sage-4.5.3.alpha1$ 
 ```
 
 ## Test results on Ubunta Linux (sage.math)
 
 ```
-kirkby`@`sage:~/sage-4.5.alpha4$ uname -a
+kirkby@sage:~/sage-4.5.alpha4$ uname -a
 Linux sage.math.washington.edu 2.6.24-28-server #1 SMP Sat Jul 31 18:41:35 UTC 2010 x86_64 GNU/Linux
-kirkby`@`sage:~/sage-4.5.alpha4$ cat /etc/issue
+kirkby@sage:~/sage-4.5.alpha4$ cat /etc/issue
 Ubuntu 8.04.4 LTS \n \l
 
-kirkby`@`sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
+kirkby@sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
 sage -t -long "devel/sage/sage/modular/abvar/abvar.py"      
 	 [34.1 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 34.1 seconds
-kirkby`@`sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
+kirkby@sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
 sage -t -long "devel/sage/sage/lfunctions/sympow.py"        
 	 [9.1 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 9.1 seconds
-kirkby`@`sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+kirkby@sage:~/sage-4.5.alpha4$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 	 [170.5 s]
  
@@ -272,23 +272,23 @@ Total time for all tests: 170.6 seconds
  == Test results on OS X (bsd.math) ==
 
 ```
-[kirkby`@`bsd sage-4.5.rc1]$ uname -a
+[kirkby@bsd sage-4.5.rc1]$ uname -a
 Darwin bsd.local 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin
-[kirkby`@`bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
+[kirkby@bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
 sage -t -long "devel/sage/sage/modular/abvar/abvar.py"      
 	 [40.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 40.5 seconds
-[kirkby`@`bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
+[kirkby@bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
 sage -t -long "devel/sage/sage/lfunctions/sympow.py"        
 	 [7.6 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 7.7 seconds
-[kirkby`@`bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+[kirkby@bsd sage-4.5.rc1]$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 	 [184.0 s]
  
@@ -301,29 +301,29 @@ Total time for all tests: 184.0 seconds
  == Test results on a Sun T5240 SPARC running Solaris 10 update 7 (t2.math) ==
 
 ```
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ uname -a
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ uname -a
 SunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ cat /etc/release
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ cat /etc/release
                        Solaris 10 5/09 s10s_u7wos_08 SPARC
            Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.
                         Use is subject to license terms.
                              Assembled 30 March 2009
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ 
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ 
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/modular/abvar/abvar.py
 sage -t -long "devel/sage/sage/modular/abvar/abvar.py"      
          [321.2 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 321.5 seconds
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/lfunctions/sympow.py
 sage -t -long "devel/sage/sage/lfunctions/sympow.py"        
          [89.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 89.2 seconds
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+kirkby@t2:32 ~/t2/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
          [3219.6 s]
  

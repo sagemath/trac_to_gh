@@ -1,6 +1,6 @@
 # Issue 6851: hashes for derivatives of symbolic functions still collide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6851
 
 Original creator: burcin
 

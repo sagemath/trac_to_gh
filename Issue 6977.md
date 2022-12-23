@@ -1,6 +1,6 @@
 # Issue 6977: Implement __len__ to add support for MuPAD objects as Python containers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6977
 
 Original creator: nthiery
 

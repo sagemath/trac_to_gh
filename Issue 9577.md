@@ -1,6 +1,6 @@
 # Issue 9577: chinese translation of the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9577
 
 Original creator: schilly
 

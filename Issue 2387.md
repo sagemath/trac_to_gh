@@ -1,6 +1,6 @@
 # Issue 2387: Create a _sage_init_ function for all objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2387
 
 Original creator: jason
 

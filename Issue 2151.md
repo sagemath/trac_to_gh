@@ -1,6 +1,6 @@
 # Issue 2151: Error in quotient ring loaded from a file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2151
 
 Original creator: SimonKing
 

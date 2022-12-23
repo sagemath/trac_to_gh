@@ -1,6 +1,6 @@
 # Issue 2615: wish: compute the jordan basis together with the jordan canonical form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2615
 
 Original creator: pdenapo
 

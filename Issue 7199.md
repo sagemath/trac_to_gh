@@ -1,6 +1,6 @@
 # Issue 7199: inefficiency of creation of sparse matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7199
 
 Original creator: zimmerma
 

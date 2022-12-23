@@ -1,6 +1,6 @@
 # Issue 5737: pynac interface improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5737
 
 Original creator: burcin
 

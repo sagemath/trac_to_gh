@@ -1,6 +1,6 @@
 # Issue 9832: fatal relocation error with Cliquer library on 64-bit Solaris and OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9833
 
 Original creator: drkirkby
 
@@ -14,7 +14,7 @@ If a 64-bit version of Sage is built on OpenSolaris, Sage reports an error as so
 
 
 ```
-drkirkby`@`hawk:~$ 64/sage-4.5.3.alpha2/sage
+drkirkby@hawk:~$ 64/sage-4.5.3.alpha2/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -46,10 +46,10 @@ But in a 64-bit builds of Sage on both OpenSolaris x64 and Solaris 10 on SPARC, 
 
 
 ```
-drkirkby`@`hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep TEXTREL
+drkirkby@hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep TEXTREL
       [17]  TEXTREL           0                   
       [25]  FLAGS             0x4                 [ TEXTREL ]
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ 
 ```
 
 
@@ -130,7 +130,7 @@ Instead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage 
 ```diff
 --- cliquer-1.2.p6/src/Makefile	2010-02-16 05:26:57.000000000 +0100
 +++ cliquer-1.2.p6/patch/Makefile	2010-02-16 05:26:55.000000000 +0100
-`@``@` -1,14 +1,29 `@``@`
+@@ -1,14 +1,29 @@
  
  ##### Configurable options:
  
@@ -162,11 +162,11 @@ Instead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage 
  
  # GCC w/ debugging:
  #CFLAGS=-Wall -g -DINLINE=
-`@``@` -36,8 +51,7 `@``@`
- 	$(CC) $(LDFLAGS) -o $`@` testcases.o cliquer.o graph.o reorder.o
+@@ -36,8 +51,7 @@
+ 	$(CC) $(LDFLAGS) -o $@ testcases.o cliquer.o graph.o reorder.o
  
  cl: cl.o cliquer.o graph.o reorder.o
--	$(CC) $(LDFLAGS) -o $`@` cl.o cliquer.o graph.o reorder.o
+-	$(CC) $(LDFLAGS) -o $@ cl.o cliquer.o graph.o reorder.o
 -
 +	$(CC) $(LDFLAGS) $(SAGESOFLAGS) -o libcliquer.so cl.o cliquer.o graph.o reorder.o
  

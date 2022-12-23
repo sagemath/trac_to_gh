@@ -1,6 +1,6 @@
 # Issue 9974: Update GnuTLS  and clean up the package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9975
 
 Original creator: drkirkby
 
@@ -254,7 +254,7 @@ vex amd64->IR: unhandled instruction bytes: 0x66 0xF 0x38 0x25 0xCA 0x48
 FAIL: dn2
 ...
 2 of 44 tests failed
-Please report to bug-gnutls`@`gnu.org
+Please report to bug-gnutls@gnu.org
 ...
 make: *** [check-recursive] Error 1
 An error occurred while testing GnuTLS

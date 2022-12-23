@@ -1,6 +1,6 @@
 # Issue 8014: Make `EllipticCurveIsogeny` objects faster to create via lazy evaluation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8014
 
 Original creator: craigcitro
 

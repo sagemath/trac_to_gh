@@ -1,6 +1,6 @@
 # Issue 4759: add branch option to sage -upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4759
 
 Original creator: robertwb
 

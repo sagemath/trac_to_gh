@@ -1,6 +1,6 @@
 # Issue 6325: optional doctest failure -- linear algebra constructions.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6325
 
 Original creator: was
 

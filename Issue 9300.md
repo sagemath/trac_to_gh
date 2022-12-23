@@ -1,6 +1,6 @@
 # Issue 9300: update french version of tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9300
 
 Original creator: jhpalmieri
 

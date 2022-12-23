@@ -1,6 +1,6 @@
 # Issue 3393: fix typo in documentation related to sage_search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3393
 
 Original creator: was
 

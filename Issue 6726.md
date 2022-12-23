@@ -1,6 +1,6 @@
 # Issue 6726: spell-check all modules under sage/numerical
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6726
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 7942: latex(I) should be the string "i" not "I"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7942
 
 Original creator: was
 

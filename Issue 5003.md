@@ -1,6 +1,6 @@
 # Issue 5003: [with patch, needs review] equality testing in graphs should check "weighted" property
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5003
 
 Original creator: rlm
 

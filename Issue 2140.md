@@ -1,6 +1,6 @@
 # Issue 2140: [with bundle, needs review] enhance search_src and add search_def for easier source navigating.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2140
 
 Original creator: ncalexan
 

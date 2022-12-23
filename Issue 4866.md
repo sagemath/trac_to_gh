@@ -1,6 +1,6 @@
 # Issue 4866: hermes optional spkg totally broken in multiple ways
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4866
 
 Original creator: was
 

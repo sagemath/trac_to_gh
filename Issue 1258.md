@@ -1,6 +1,6 @@
 # Issue 1258: additions and changes to linear_codes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1258
 
 Original creator: wdj
 

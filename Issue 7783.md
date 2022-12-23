@@ -1,6 +1,6 @@
 # Issue 7783: 3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7783
 
 Original creator: was
 
@@ -25,7 +25,7 @@ Actually, all command line 3d graphics are broken in sage-4.3.   I just tried on
 
 
 ```
-wstein`@`ubuntu910-64:/tmp/wstein/farm/sage-4.3$ ./sage
+wstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: !sage-native-execute local/bin/jmol

@@ -1,6 +1,6 @@
 # Issue 4171: SR + long broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4171
 
 Original creator: was
 

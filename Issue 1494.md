@@ -1,6 +1,6 @@
 # Issue 1494: bug coercing from maximal order of cyclotomic field into cyclotomic field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1494
 
 Original creator: was
 

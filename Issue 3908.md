@@ -1,6 +1,6 @@
 # Issue 3908: [with patch, needs review] fix major memory leak in fast_float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3908
 
 Original creator: cwitty
 

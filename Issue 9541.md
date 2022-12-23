@@ -1,6 +1,6 @@
 # Issue 9541: optimize number field arithmetic using flint and singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9541
 
 Original creator: was
 

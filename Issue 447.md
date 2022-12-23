@@ -1,6 +1,6 @@
 # Issue 447: documentation for mpfr round in SAGE sucks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/447
 
 Original creator: was
 

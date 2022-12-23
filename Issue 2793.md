@@ -1,6 +1,6 @@
 # Issue 2793: Bug in the sage preparser!  "\"Yes,\" he said."
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2793
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5277: tachyon.spkg: link against libpng12 instead of libpng
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5277
 
 Original creator: mabshoff
 

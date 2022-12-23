@@ -1,6 +1,6 @@
 # Issue 1574: dependencies for non pyx files aren't properly tracked
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1574
 
 Original creator: mabshoff
 
@@ -45,7 +45,7 @@ Comment by mabshoff created at 2008-09-26 09:07:46
 This one just bit me in the ass again:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -b
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified SAGE library files.

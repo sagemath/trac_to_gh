@@ -1,6 +1,6 @@
 # Issue 9871: PolyBoRi incorrectly reports a GNU linker is used with gcc and produces libraries with text relocations.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9872
 
 Original creator: drkirkby
 
@@ -26,7 +26,7 @@ A problem exists in that the link-editor thinks the library contains code which 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL
+drkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL
       [25]  TEXTREL           0                   
       [34]  FLAGS             0x4                 [ TEXTREL ]
 ```
@@ -36,7 +36,7 @@ and, what I assume is part of PolyBoRi as the version number is identical.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL
+drkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL
       [25]  TEXTREL           0                   
       [34]  FLAGS             0x4                 [ TEXTREL ]
 ```
@@ -79,10 +79,10 @@ However, whilst not OpenSolaris on x86, the issue with text relocations is seen 
 
 
 ```
-kirkby`@`t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL
+kirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL
       [19]  TEXTREL           0                   
       [27]  FLAGS             0x4                 [ TEXTREL ]
-kirkby`@`t2:64 ~/t2/32$ 
+kirkby@t2:64 ~/t2/32$ 
 ```
 
 
@@ -142,7 +142,7 @@ as that's the latest version I have that's fully working. It passed all doc test
 As you will see, it has the issue. 
 
 ```
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0/local/lib/libpolybori-0.6.4.so | grep TEXTREL
+kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0/local/lib/libpolybori-0.6.4.so | grep TEXTREL
       [19]  TEXTREL           0                   
       [27]  FLAGS             0x4                 [ TEXTREL ]
 ```

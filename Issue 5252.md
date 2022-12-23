@@ -1,6 +1,6 @@
 # Issue 5252: elliptic curves: P.height() lies about its precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5252
 
 Original creator: AlexGhitza
 

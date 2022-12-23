@@ -1,6 +1,6 @@
 # Issue 7728: Make matrix factorizations immutable and cached
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7728
 
 Original creator: dagss
 

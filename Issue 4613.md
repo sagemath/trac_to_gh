@@ -1,6 +1,6 @@
 # Issue 4613: [with patch, needs review] doctests for big-o
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4613
 
 Original creator: robertwb
 

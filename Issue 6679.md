@@ -1,6 +1,6 @@
 # Issue 6679: [with patch, needs review] Vertex Coloring, Edge Coloring (uses Linear Programming)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6679
 
 Original creator: ncohen
 

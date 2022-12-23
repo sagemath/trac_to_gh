@@ -1,6 +1,6 @@
 # Issue 3762: remove quaddouble from sage -- not used, source of pain, mpfr is better
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3762
 
 Original creator: was
 
@@ -85,7 +85,7 @@ The following tests failed:
         sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed
 ----------------------------------------------------------------------
 Total time for all tests: 164.0 seconds
-wstein`@`sage:/scratch/wstein/sage-3.3.alpha1$  
+wstein@sage:/scratch/wstein/sage-3.3.alpha1$  
 ```
 
 

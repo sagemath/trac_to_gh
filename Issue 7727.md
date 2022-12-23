@@ -1,6 +1,6 @@
 # Issue 7727: optimized_representation fails,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7727
 
 Original creator: syazdani
 

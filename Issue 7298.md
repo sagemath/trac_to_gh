@@ -1,6 +1,6 @@
 # Issue 7298: use html5 video tag for animations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7298
 
 Original creator: whuss
 

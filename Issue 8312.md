@@ -1,6 +1,6 @@
 # Issue 8312: speed up random_matrix creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8312
 
 Original creator: schilly
 

@@ -1,6 +1,6 @@
 # Issue 3401: extend li to work with complex input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3401
 
 Original creator: was
 

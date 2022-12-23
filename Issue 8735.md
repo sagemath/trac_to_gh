@@ -1,6 +1,6 @@
 # Issue 8735: Renamed size to cardinality in poset
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8735
 
 Original creator: hivert
 

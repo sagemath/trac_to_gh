@@ -1,6 +1,6 @@
 # Issue 9481: random_element fails for power series over real field, has inaccurate docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9481
 
 Original creator: niles
 

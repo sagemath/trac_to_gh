@@ -1,6 +1,6 @@
 # Issue 3065: empty matrices: frobenius() throws  RuntimeError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3065
 
 Original creator: dfdeshom
 

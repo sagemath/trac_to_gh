@@ -1,6 +1,6 @@
 # Issue 560: memleak in LinBox::GivPolynomial exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/560
 
 Original creator: mabshoff
 

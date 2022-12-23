@@ -1,6 +1,6 @@
 # Issue 8478: Programming tutorial page seems incorrect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8478
 
 Original creator: lesshaste
 

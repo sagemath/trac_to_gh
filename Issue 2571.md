@@ -1,6 +1,6 @@
 # Issue 2571: problem with copy() on sage.rings.integer_mod.IntegerMod_gmp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2571
 
 Original creator: dfdeshom
 

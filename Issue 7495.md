@@ -1,6 +1,6 @@
 # Issue 7495: notebook: get rid of all possible "internal server errors" when doing "Data --> Upload or attach file"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7495
 
 Original creator: was
 

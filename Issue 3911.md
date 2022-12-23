@@ -1,6 +1,6 @@
 # Issue 3911: come up with a good framework for citing stuff in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3911
 
 Original creator: malb
 

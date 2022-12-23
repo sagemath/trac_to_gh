@@ -1,6 +1,6 @@
 # Issue 6453: MPFR test failures in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6453
 
 Original creator: drkirkby
 
@@ -263,7 +263,7 @@ On t2, gcc was configured as:
 
 
 ```
-kirkby`@`t2:[~] $ gcc -v
+kirkby@t2:[~] $ gcc -v
 Using built-in specs.
 Target: sparc-sun-solaris2.10
 Configured with: /home/kirkby/gcc-4.4.0/configure CC=/usr/sfw/bin/gcc --prefix=/usr/local/gcc-4.4.0-sun-linker --without-gnu-as --without-gnu-ld --with-as=/usr/ccs/bin/as --with-ld=/usr/ccs/bin/ld --enable-languages=c,c++,fortran --with-mpfr-lib=/usr/local/lib --with-mpfr-include=/usr/local/include --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --with-libiconv-prefix=/usr/lib/iconv
@@ -347,7 +347,7 @@ This is a compiler bug. See http://websympa.loria.fr/wwsympa/arc/mpfr/2009-07/ms
 A possible fix is the following:
 
 ```
-zimmerma`@`t2:/tmp/mpfr-2.4.1$ diff mpn_exp.c.orig mpn_exp.c
+zimmerma@t2:/tmp/mpfr-2.4.1$ diff mpn_exp.c.orig mpn_exp.c
 74c74
 <   MPN_ZERO (a, n - 1);
 ---
@@ -554,10 +554,10 @@ Notice how it differs from that on my own machine ? Here's the output from 'unam
 First 't2'
 
 ```
-kirkby`@`t2:[~] $ uname -a
+kirkby@t2:[~] $ uname -a
 uname -a
 SunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240
-kirkby`@`t2:[~] $ arch -k
+kirkby@t2:[~] $ arch -k
 arch -k
 sun4v
 ```
@@ -565,9 +565,9 @@ sun4v
 now my home machine 'kestrel', which is actually a Blade 2000, not a Blade 1000 as the output says. The two machines share the same motherboard. 
 
 ```
-drkirkby`@`kestrel:[~] $ arch -k
+drkirkby@kestrel:[~] $ arch -k
 sun4u
-drkirkby`@`kestrel:[~] $ uname -a
+drkirkby@kestrel:[~] $ uname -a
 SunOS kestrel 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000
 ```
 
@@ -608,12 +608,12 @@ It also dumps core with the Sun compiler.
 
 
 ```
-kirkby`@`t2:[~] $ /opt/SUNWspro/bin/cc check4.c
-kirkby`@`t2:[~] $ ./a.out
+kirkby@t2:[~] $ /opt/SUNWspro/bin/cc check4.c
+kirkby@t2:[~] $ ./a.out
 n=0
 n=1
 Abort (core dumped)
-kirkby`@`t2:[~] $ cat check4.c
+kirkby@t2:[~] $ cat check4.c
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

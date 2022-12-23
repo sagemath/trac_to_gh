@@ -1,6 +1,6 @@
 # Issue 8546: add section on deprecating functions to developer's guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8546
 
 Original creator: ddrake
 

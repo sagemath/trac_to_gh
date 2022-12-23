@@ -1,6 +1,6 @@
 # Issue 6048: [with patch, needs review] fix non-ASCII character in mpolynomialsystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6048
 
 Original creator: jhpalmieri
 

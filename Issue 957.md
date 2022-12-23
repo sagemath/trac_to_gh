@@ -1,6 +1,6 @@
 # Issue 957: scipy is misbuilt on os x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/957
 
 Original creator: was
 

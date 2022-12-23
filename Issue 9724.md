@@ -1,6 +1,6 @@
 # Issue 9724: Sage allows creation of variables with empty name
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9724
 
 Original creator: logix
 

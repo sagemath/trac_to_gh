@@ -1,6 +1,6 @@
 # Issue 7441: notebook: make it possible to upload from the url of a published worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7441
 
 Original creator: was
 

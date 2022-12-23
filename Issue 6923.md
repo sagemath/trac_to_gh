@@ -1,6 +1,6 @@
 # Issue 6923: Matrix numerical approximation converts complex to real
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6923
 
 Original creator: Henryk.Trappmann
 

@@ -1,6 +1,6 @@
 # Issue 8208: Click "No" actually publishes a worksheet in SageNB 0.7.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8208
 
 Original creator: mpatel
 

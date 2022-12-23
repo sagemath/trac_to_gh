@@ -1,6 +1,6 @@
 # Issue 5361: problems in the sage.rings conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5361
 
 Original creator: cwitty
 

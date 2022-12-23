@@ -1,6 +1,6 @@
 # Issue 4395: Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4395
 
 Original creator: mabshoff
 

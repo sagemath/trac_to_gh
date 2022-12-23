@@ -1,6 +1,6 @@
 # Issue 5661: implement numerical_diff and generalize numerical_integral
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5661
 
 Original creator: ncalexan
 

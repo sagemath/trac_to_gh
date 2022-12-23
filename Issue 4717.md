@@ -1,6 +1,6 @@
 # Issue 4717: [with patch, needs review] matrix_plot should also accept numpy arrays
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4717
 
 Original creator: whuss
 

@@ -1,6 +1,6 @@
 # Issue 3566: dsage -- get rid of uuid import
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3566
 
 Original creator: was
 

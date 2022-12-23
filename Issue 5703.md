@@ -1,6 +1,6 @@
 # Issue 5703: [with patch; needs review] notebook -- fix major bug introduced by #5687
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5703
 
 Original creator: was
 

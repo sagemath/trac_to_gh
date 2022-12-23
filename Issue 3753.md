@@ -1,6 +1,6 @@
 # Issue 3753: notebook -- change the default for nb.save('...')
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3753
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1395: notebook(directory="foo/") misbehaves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1395
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7903: mixing a non-GNU Fortran compiler with GCC is not detected very early
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7903
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2628: Literate notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2628
 
 Original creator: dunfield
 

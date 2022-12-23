@@ -1,6 +1,6 @@
 # Issue 8959: interact layouts with arbitrary html
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8959
 
 Original creator: jason
 
@@ -30,7 +30,7 @@ Okay, the attached patch lets you specify controls on each side, as well as the 
 ```
 
 var('x')
-`@`interact(layout=dict(top=[['f'],['r','plot_points']], bottom=[['color','thickness'],['adaptive_recursion','adaptive_tolerance']], left=[['gridlines'],['fill'],['frame'],['axes']], right=[This is the Trac macro *'linestyle'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'linestyle'-macro)))
+@interact(layout=dict(top=[['f'],['r','plot_points']], bottom=[['color','thickness'],['adaptive_recursion','adaptive_tolerance']], left=[['gridlines'],['fill'],['frame'],['axes']], right=[['linestyle']]))
 def plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)), 
                  color=color_selector(widget='colorpicker'),
                  thickness=(3,(1..10)),

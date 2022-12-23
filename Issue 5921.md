@@ -1,6 +1,6 @@
 # Issue 5921: factoring integer polynomials does not factor the content
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5921
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 8429: Split word.py file into 4 files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8429
 
 Original creator: slabbe
 

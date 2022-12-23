@@ -1,6 +1,6 @@
 # Issue 8510: conjugacy_class(es)_representatives
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8510
 
 Original creator: bump
 

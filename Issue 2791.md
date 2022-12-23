@@ -1,6 +1,6 @@
 # Issue 2791: [with patch; needs review] Build symmetrica with -fPIC on Debian
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2791
 
 Original creator: tabbott
 

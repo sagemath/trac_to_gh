@@ -1,6 +1,6 @@
 # Issue 6242: *long* birds_other.rst doctest fails with mysterious error repeatedly on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6242
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-wstein`@`bsd:~/build/sage-4.0.1$ ./sage -t -long "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
+wstein@bsd:~/build/sage-4.0.1$ ./sage -t -long "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
 sage -t -long "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [44.5 s]
@@ -22,14 +22,14 @@ The following tests failed:
 
         sage -t -long "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
 
-wstein`@`bsd:~/build/sage-4.0.1$ ./sage -t  "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
+wstein@bsd:~/build/sage-4.0.1$ ./sage -t  "devel/sage/doc/en/bordeaux_2008/birds_other.rst"
 sage -t  "devel/sage/doc/en/bordeaux_2008/birds_other.rst"  
          [39.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 39.5 seconds
-wstein`@`bsd:~/build/sage-4.0.1$ 
+wstein@bsd:~/build/sage-4.0.1$ 
 
 ```
 

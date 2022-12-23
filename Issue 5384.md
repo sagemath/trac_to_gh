@@ -1,6 +1,6 @@
 # Issue 5384: pynac symbolics gives very wrong simplifications for simple expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5384
 
 Original creator: cwitty
 
@@ -46,7 +46,7 @@ To make the review easier, here is the patch for pynac
 diff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp
 --- a/ginac/expairseq.cpp
 +++ b/ginac/expairseq.cpp
-`@``@` -510,13 +510,6 `@``@`
+@@ -510,13 +510,6 @@
  	if (seq.size() != o.seq.size())
  		return (seq.size()<o.seq.size()) ? -1 : 1;
  
@@ -60,7 +60,7 @@ diff --git a/ginac/expairseq.cpp b/ginac/expairseq.cpp
  #if EXPAIRSEQ_USE_HASHTAB
  	GINAC_ASSERT(hashtabsize==o.hashtabsize);
  	if (hashtabsize==0) {
-`@``@` -534,6 +527,11 `@``@`
+@@ -534,6 +527,11 @@
  		GINAC_ASSERT(cit1==last1);
  		GINAC_ASSERT(cit2==last2);
  	

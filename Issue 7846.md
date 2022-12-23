@@ -1,6 +1,6 @@
 # Issue 7846: Missing triple-secret ___code___.py files when copying a worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7846
 
 Original creator: mpatel
 

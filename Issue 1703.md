@@ -1,6 +1,6 @@
 # Issue 1703: memleak in Singular: one mpz is leaked in longrat.cc triggered by linear_code.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1703
 
 Original creator: mabshoff
 
@@ -82,7 +82,7 @@ The actual line change is:
 ```
 --- longrat.cc.orig     2007-12-02 07:05:25.000000000 -0800
 +++ longrat.cc  2008-01-07 03:17:40.000000000 -0800
-`@``@` -1171,6 +1171,7 `@``@`
+@@ -1171,6 +1171,7 @@
 #endif
                omFreeBin((ADDRESS)x, rnumber_bin);
                x=INT_TO_SR(ui);

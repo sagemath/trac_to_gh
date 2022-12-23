@@ -1,6 +1,6 @@
 # Issue 4418: typos in files under crypto/mq
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4418
 
 Original creator: mvngu
 

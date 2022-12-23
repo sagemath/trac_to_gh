@@ -1,6 +1,6 @@
 # Issue 7308: cliquer's spkg-install does not work on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7308
 
 Original creator: mhansen
 
@@ -45,7 +45,7 @@ if [ -n "$SAGE_FORTRAN_LIB" ] && [ ! -e "$SAGE_FORTRAN_LIB" ]; then
     exit 1
 fi
 }}} 
-since code in the recent _prereq-0.4_ (#7021) script checks this, so the above code is redundant. 
+since code in the recent ''prereq-0.4'' (#7021) script checks this, so the above code is redundant. 
 
  * There is no need to have the following line
 
@@ -55,7 +55,7 @@ It should instead be replaced by
 
    ` if [ "x$SAGE64" = "xyes" ]; then `
 
-since some earlier code in the _prereq-0.3_ script written by William only allows SAGE64 to be unset, or set to _yes_ or _no_. It is not possible to set it to _1_, so there is no point testing if it is _1_. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)
+since some earlier code in the ''prereq-0.3'' script written by William only allows SAGE64 to be unset, or set to ''yes'' or ''no''. It is not possible to set it to ''1'', so there is no point testing if it is ''1''. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)
 
  * There is no need to have 
   {{{
@@ -65,7 +65,7 @@ since some earlier code in the _prereq-0.3_ script written by William only allow
         exit 1
     else
    }}}
-since the recent _prereq-0.4_ update will exit for *all* unsupported platforms unless SAGE_PORT is set to 'yes'.
+since the recent ''prereq-0.4'' update will exit for '''all''' unsupported platforms unless SAGE_PORT is set to 'yes'.
 
 
 ---

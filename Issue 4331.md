@@ -1,6 +1,6 @@
 # Issue 4331: sage-vmware image - add keyboard reconfigure option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4331
 
 Original creator: was
 

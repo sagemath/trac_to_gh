@@ -1,6 +1,6 @@
 # Issue 9940: faster multinomial_coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9941
 
 Original creator: pernici
 

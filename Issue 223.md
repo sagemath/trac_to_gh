@@ -1,6 +1,6 @@
 # Issue 223: problem plotting piecewise defined functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/223
 
 Original creator: was
 

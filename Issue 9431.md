@@ -1,6 +1,6 @@
 # Issue 9431: opencdk spkg should add $SAGE_LOCAL/lib to LDFLAGS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9431
 
 Original creator: rlm
 
@@ -24,8 +24,8 @@ Some relevant lines in the build log:
 /bin/sh ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -no-install  -o t-stream t-stream.o ../src/libopencdk.la -lgcrypt -lz
 
 gcc -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -o t-stream t-stream.o  ../src/.libs/libopencdk.so /usr/lib64/libgcrypt.so -lz -Wl,--rpath -Wl,/data2/wpalenst/sage-4.4.4/spkg/build/opencdk-0.6.6.p4/src/src/.libs -Wl,--rpath -Wl,/data2/wpalenst/sage-4.4.4/local/lib
-../src/.libs/libopencdk.so: undefined reference to `gcry_cipher_setkey`@`GCRYPT_1.2'
-../src/.libs/libopencdk.so: undefined reference to `gcry_cipher_setiv`@`GCRYPT_1.2'
+../src/.libs/libopencdk.so: undefined reference to `gcry_cipher_setkey@GCRYPT_1.2'
+../src/.libs/libopencdk.so: undefined reference to `gcry_cipher_setiv@GCRYPT_1.2'
 ```
 
 

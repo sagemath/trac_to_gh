@@ -1,6 +1,6 @@
 # Issue 2319: change dsage docstrings to match rest of sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2319
 
 Original creator: yi
 

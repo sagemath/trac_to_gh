@@ -1,6 +1,6 @@
 # Issue 5012: Solaris 10/x86: Numerical noise in sage/rings/qqbar.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5012
 
 Original creator: mabshoff
 

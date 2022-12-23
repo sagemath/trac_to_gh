@@ -1,6 +1,6 @@
 # Issue 4403: Fix "Install from Source Code" section in "Sage Installation Guide"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4403
 
 Original creator: mabshoff
 

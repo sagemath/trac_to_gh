@@ -1,6 +1,6 @@
 # Issue 6273: Improve random_element for number field orders and ideals (easy)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6273
 
 Original creator: davidloeffler
 

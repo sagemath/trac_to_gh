@@ -1,6 +1,6 @@
 # Issue 2761: [with patch; needs review] Debian amd64 fixes for tachyon
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2761
 
 Original creator: tabbott
 

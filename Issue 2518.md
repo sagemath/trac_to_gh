@@ -1,6 +1,6 @@
 # Issue 2518: improve the SAGE_ROOT/local/bin/sage-cleaner script so that it kills those damn lisp.run processes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2518
 
 Original creator: was
 

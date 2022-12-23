@@ -1,6 +1,6 @@
 # Issue 3078: [with patch; needs review] sage's spkg-install doesn't return failure if build failed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3078
 
 Original creator: wjp
 

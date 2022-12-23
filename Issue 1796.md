@@ -1,6 +1,6 @@
 # Issue 1796: initial entry of Admin password
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1796
 
 Original creator: pgrinber
 

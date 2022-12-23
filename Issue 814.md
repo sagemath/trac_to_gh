@@ -1,6 +1,6 @@
 # Issue 814: bug in number field printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/814
 
 Original creator: craigcitro
 

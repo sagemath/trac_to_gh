@@ -1,6 +1,6 @@
 # Issue 5051: tracebacks involving cython (etc.) seriously broken in sage-3.3.alpha0 (probably caused by ipython)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5051
 
 Original creator: was
 
@@ -12,7 +12,7 @@ For example, a clean build of sage-3.3.alpha0 or sage-3.2 on sage.math:
 
 
 ```
-wstein`@`sage:/space/wstein/build/sage-3.3.alpha0$ ./sage
+wstein@sage:/space/wstein/build/sage-3.3.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: 1/0
@@ -82,7 +82,7 @@ Comment by was created at 2009-01-23 00:08:30
 I was wrong.  The tracebacks never showed the code:
 
 ```
-wstein`@`sage:/disk/scratch/mabshoff-sage-releases$ sage-2.10/sage
+wstein@sage:/disk/scratch/mabshoff-sage-releases$ sage-2.10/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10, Release Date: 2008-01-18                        |

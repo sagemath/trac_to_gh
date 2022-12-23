@@ -1,6 +1,6 @@
 # Issue 2944: [with patch, needs review] add E2 parameter to padic_height_via_multiply
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2944
 
 Original creator: dmharvey
 

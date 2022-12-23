@@ -1,6 +1,6 @@
 # Issue 2192: [with patch, needs review] various Dirichlet character fixes/improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2192
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 5076: bug with (coercion in?) p-adic extension fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5076
 
 Original creator: jen
 

@@ -1,6 +1,6 @@
 # Issue 3722: notebook -- public notebook server worksheets say "(running)" forever, but presumably they are timed out
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3722
 
 Original creator: was
 

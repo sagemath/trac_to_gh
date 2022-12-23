@@ -1,6 +1,6 @@
 # Issue 7617: include sagetex as a standard spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7617
 
 Original creator: was
 

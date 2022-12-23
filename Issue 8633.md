@@ -1,6 +1,6 @@
 # Issue 8633: remove more instances of 'texttt' from jsmath output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8633
 
 Original creator: jhpalmieri
 

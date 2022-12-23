@@ -1,6 +1,6 @@
 # Issue 9444: Fix "rm: Cannot remove any directory in the path of the current working directory" on t2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9444
 
 Original creator: mpatel
 

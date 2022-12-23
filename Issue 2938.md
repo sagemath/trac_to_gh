@@ -1,6 +1,6 @@
 # Issue 2938: ModularSymbols(GammaH(81, [10])).decomposition(); ModularSymbols(GammaH(8, [3])).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2938
 
 Original creator: burhanud
 

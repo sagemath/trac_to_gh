@@ -1,6 +1,6 @@
 # Issue 5419: moving fraction field to new coercion broke old pickles
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5419
 
 Original creator: craigcitro
 

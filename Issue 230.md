@@ -1,6 +1,6 @@
 # Issue 230: Notebook "load" or "attach" does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/230
 
 Original creator: nbruin
 

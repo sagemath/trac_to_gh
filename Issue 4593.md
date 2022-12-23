@@ -1,6 +1,6 @@
 # Issue 4593: do not uncinditionally use M2 for Gbasis computations over ZZ if it is installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4593
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: malb
 This is a left over from #4589: The doctest below from sage/rings/polynomial/multi_polynomial_ideal.py changes depending on whether M2 is installed or not since the GBasis computation uses the optional M2 if it is installed. But the interface should offer an option what code is used since results should not vary depending on optional spkg
 
 ```
-`@``@` -164,7 +166,7 `@``@`
+@@ -164,7 +166,7 @@
 
          sage: I.change_ring(P.change_ring( IntegerModRing(2*7) )).groebner_basis()
          verbose 0 (...: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.

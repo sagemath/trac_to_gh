@@ -1,6 +1,6 @@
 # Issue 1969: ipython -- update to svn to get this new %hist functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1969
 
 Original creator: was
 

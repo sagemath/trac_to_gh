@@ -1,6 +1,6 @@
 # Issue 8903: update pynac to 0.2.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8903
 
 Original creator: burcin
 

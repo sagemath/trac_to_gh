@@ -1,6 +1,6 @@
 # Issue 2450: [with patch] a few doctests for matrix_integer_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2450
 
 Original creator: dmharvey
 

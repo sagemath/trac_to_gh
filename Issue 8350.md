@@ -1,6 +1,6 @@
 # Issue 8350: BipartiteGraph override add_vertex() and add_vertices()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8350
 
 Original creator: rhinton
 

@@ -1,6 +1,6 @@
 # Issue 3820: notebook -- sometimes published worksheets are listed as being published by pub.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3820
 
 Original creator: was
 

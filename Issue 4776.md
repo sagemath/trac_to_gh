@@ -1,6 +1,6 @@
 # Issue 4776: random element of multivariate polynomial ring in one variable is totally broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4776
 
 Original creator: was
 

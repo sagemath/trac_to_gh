@@ -1,6 +1,6 @@
 # Issue 9787: The coordinates appearing in the output of variety(L) should be easier to access
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9788
 
 Original creator: mmezzarobba
 

@@ -1,6 +1,6 @@
 # Issue 6163: pynac -- segfault probably caused by cmp somehow and using intervals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6163
 
 Original creator: was
 
@@ -19,7 +19,7 @@ sage: theta1,theta2=var('theta1,theta2'); theta1.subs(theta1=1,theta2=0)
 
 
 ```
-wstein`@`sage:~/build/sage-4.0.rc1$ ./sage -gdb
+wstein@sage:~/build/sage-4.0.rc1$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/wstein/build/sage-4.0.rc1/local/bin/sage-ipython
@@ -92,7 +92,7 @@ Shorter snippet:
 sage: var('theta1,theta2')
 var('theta1,theta2')
 sage: (theta1 == theta2).test_relation()
-/home/burcin/sage/sage-4.0.rc1/local/bin/sage-sage: line 198:  8823 Segmentation fault      sage-ipython "$`@`" -i
+/home/burcin/sage/sage-4.0.rc1/local/bin/sage-sage: line 198:  8823 Segmentation fault      sage-ipython "$@" -i
 ```
 
 

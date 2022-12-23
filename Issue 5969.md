@@ -1,6 +1,6 @@
 # Issue 5969: implement computation of rational cuspidal subgroups of modular abelian varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5969
 
 Original creator: was
 

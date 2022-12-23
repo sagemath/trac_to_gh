@@ -1,6 +1,6 @@
 # Issue 793: wrapper for hyperelliptic curve zeta functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/793
 
 Original creator: dmharvey
 

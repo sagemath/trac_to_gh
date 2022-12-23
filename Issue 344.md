@@ -1,6 +1,6 @@
 # Issue 344: pari compare fails for some finite field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/344
 
 Original creator: malb
 

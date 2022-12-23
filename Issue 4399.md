@@ -1,6 +1,6 @@
 # Issue 4399: Sage 3.1.4: magma related optional doctest failure in sage/matrix/matrix1.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4399
 
 Original creator: mabshoff
 

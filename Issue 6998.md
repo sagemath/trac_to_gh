@@ -1,6 +1,6 @@
 # Issue 6998: wrong error for powerseries sqrt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6998
 
 Original creator: robertwb
 

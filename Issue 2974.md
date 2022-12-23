@@ -1,6 +1,6 @@
 # Issue 2974: interfaces/r.py doctest failures on many linux machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2974
 
 Original creator: was
 

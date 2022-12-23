@@ -1,6 +1,6 @@
 # Issue 3013: bug in integrate (found during a talk!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3013
 
 Original creator: was
 
@@ -67,7 +67,7 @@ Comment by mabshoff created at 2008-08-22 21:46:47
 This now works:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.1, Release Date: 2008-08-17                       |

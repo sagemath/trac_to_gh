@@ -1,6 +1,6 @@
 # Issue 6319: optional doctest failure -- mistake in constructions guide wrt maxima interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6319
 
 Original creator: was
 

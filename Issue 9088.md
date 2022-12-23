@@ -1,6 +1,6 @@
 # Issue 9088: line3d does not take a tuple of points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9088
 
 Original creator: jason
 

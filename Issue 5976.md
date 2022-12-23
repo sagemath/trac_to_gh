@@ -1,6 +1,6 @@
 # Issue 5976: [with patch; needs work] Add an Elliptic Curve Isogeny object
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5976
 
 Original creator: shumow
 
@@ -567,9 +567,9 @@ Replying to [comment:24 cremona]:
 PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?
 
 ```
-masgaj`@`host-56-150%sage -hg qimport ~/isogeny_v2.patch
+masgaj@host-56-150%sage -hg qimport ~/isogeny_v2.patch
 adding isogeny_v2.patch to series file
-masgaj`@`host-56-150%sage -hg qpush
+masgaj@host-56-150%sage -hg qpush
 applying isogeny_v2.patch
 patching file doc/en/reference/plane_curves.rst
 Hunk #1 succeeded at 33 with fuzz 2 (offset 12 lines).

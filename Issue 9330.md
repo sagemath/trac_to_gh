@@ -1,6 +1,6 @@
 # Issue 9330: Documentation for sha_tate.py not quite looking right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9330
 
 Original creator: kcrisman
 

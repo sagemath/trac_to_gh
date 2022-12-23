@@ -1,6 +1,6 @@
 # Issue 3439: [with patch, easy review] 20% --> 100% coverage for graph_isom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3439
 
 Original creator: rlm
 

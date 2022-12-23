@@ -1,6 +1,6 @@
 # Issue 3527: Build python with "-O2" instead of "-O3" on Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3527
 
 Original creator: mabshoff
 

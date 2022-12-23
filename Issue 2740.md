@@ -1,6 +1,6 @@
 # Issue 2740: Downloading and uploading folders of worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2740
 
 Original creator: jason
 

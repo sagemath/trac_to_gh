@@ -1,6 +1,6 @@
 # Issue 2374: sage-ptest must run in $SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2374
 
 Original creator: gfurnish
 

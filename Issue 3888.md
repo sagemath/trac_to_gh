@@ -1,6 +1,6 @@
 # Issue 3888: [with trivial patch, needs 'review'] trivial indentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3888
 
 Original creator: malb
 

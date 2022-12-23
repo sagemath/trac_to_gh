@@ -1,6 +1,6 @@
 # Issue 9907: maxima sum returns hypergeometric function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9908
 
 Original creator: schilly
 

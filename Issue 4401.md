@@ -1,6 +1,6 @@
 # Issue 4401: Sage 3.1.4: magma related optional doctest failure in sage/crypto/mq/mpolynomialsystem.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4401
 
 Original creator: mabshoff
 

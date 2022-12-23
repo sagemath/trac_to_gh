@@ -1,6 +1,6 @@
 # Issue 6692: spell-check all modules under sage/crypto
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6692
 
 Original creator: mvngu
 

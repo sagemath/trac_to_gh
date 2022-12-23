@@ -1,6 +1,6 @@
 # Issue 5496: fix bugs in is_prime  (EASY)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5496
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2758: [with patch, needs review] iml and linbox updates for Debian gfortran transition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2758
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 547: hg_doc should merge repository on upgrade/install instead of overwriting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/547
 
 Original creator: was
 

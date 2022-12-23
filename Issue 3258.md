@@ -1,6 +1,6 @@
 # Issue 3258: notebook -- implement portal for admins
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3258
 
 Original creator: TimothyClemans
 

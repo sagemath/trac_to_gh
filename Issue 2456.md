@@ -1,6 +1,6 @@
 # Issue 2456: matrix_symbolic_dense doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2456
 
 Original creator: gfurnish
 

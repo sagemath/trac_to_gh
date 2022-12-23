@@ -1,6 +1,6 @@
 # Issue 5904: [with patch, needs review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5904
 
 Original creator: AlexGhitza
 

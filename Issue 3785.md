@@ -1,6 +1,6 @@
 # Issue 3785: upgrade atlas in sage to version 3.8.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3785
 
 Original creator: was
 

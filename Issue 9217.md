@@ -1,6 +1,6 @@
 # Issue 9217: Taylor expansion of gamma functions is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9217
 
 Original creator: tomc
 

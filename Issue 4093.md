@@ -1,6 +1,6 @@
 # Issue 4093: [with patch, needs review] fix numerical fuzz in period_lattice for 3.1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4093
 
 Original creator: cremona
 

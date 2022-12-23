@@ -1,6 +1,6 @@
 # Issue 4433: [with patch, needs review] Replace factorial with a symbolic version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4433
 
 Original creator: whuss
 

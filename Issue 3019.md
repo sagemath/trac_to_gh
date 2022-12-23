@@ -1,6 +1,6 @@
 # Issue 3019: Integrate Frobby into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3019
 
 Original creator: broune
 

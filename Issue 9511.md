@@ -1,6 +1,6 @@
 # Issue 9511: Suggestion to upgrade givaro 3.3.1 and 3.3.2 [with patch]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9511
 
 Original creator: pcpa
 
@@ -251,7 +251,7 @@ Comment by vbraun created at 2012-06-21 15:19:32
 I'm getting testing failures on sage-5.1.beta5 (this worked fine on beta3, but the `cholesky()` method is new in beta5):
 
 ```
-[vbraun`@`volker-desktop matrix]$ sage -t sage/matrix/matrix2.pyx
+[vbraun@volker-desktop matrix]$ sage -t sage/matrix/matrix2.pyx
 sage -t  "devel/sage-main/sage/matrix/matrix2.pyx"          
 **********************************************************************
 File "/home/vbraun/opt/sage-5.1.beta5/devel/sage-main/sage/matrix/matrix2.pyx", line 9813:
@@ -304,7 +304,7 @@ PASS: test-conversion
 PASS: test-ratrecon
 =============================================
 1 of 12 tests failed
-Please report to Jean-Guillaume.Dumas`@`imag.fr
+Please report to Jean-Guillaume.Dumas@imag.fr
 =============================================
 make[3]: *** [check-TESTS] Error 1
 make[3]: Leaving directory `/home/vbraun/opt/mark/sage-5.1.beta3/spkg/build/givaro-3.7.0/src/tests'

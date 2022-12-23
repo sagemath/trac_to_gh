@@ -1,6 +1,6 @@
 # Issue 9804: save_session is completely broken in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9805
 
 Original creator: was
 

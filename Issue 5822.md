@@ -1,6 +1,6 @@
 # Issue 5822: cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's "Arithmetic on Modular Curves"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5822
 
 Original creator: was
 

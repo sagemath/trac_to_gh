@@ -1,6 +1,6 @@
 # Issue 4539: [with patch, needs work] plural wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4539
 
 Original creator: burcin
 

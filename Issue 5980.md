@@ -1,6 +1,6 @@
 # Issue 5980: In sage-3.4.2.final on 32 bits there is a failure in prime_pi()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5980
 
 Original creator: jsp
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 
 ```
 
-On May 4, 9:07 am, Jaap Spies <j.sp...`@`hccnet.nl> wrote:
+On May 4, 9:07 am, Jaap Spies <j.sp...@hccnet.nl> wrote:
 > > mabshoff wrote:
 >> > > Hello folks,
 

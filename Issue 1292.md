@@ -1,6 +1,6 @@
 # Issue 1292: bug in polynomial root finding mod n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1292
 
 Original creator: was
 

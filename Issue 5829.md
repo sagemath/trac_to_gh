@@ -1,6 +1,6 @@
 # Issue 5829: copyright on standard documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5829
 
 Original creator: mvngu
 

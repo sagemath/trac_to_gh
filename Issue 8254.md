@@ -1,6 +1,6 @@
 # Issue 8254: sage takes way too long to startup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8254
 
 Original creator: was
 

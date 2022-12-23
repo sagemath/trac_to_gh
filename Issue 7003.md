@@ -1,6 +1,6 @@
 # Issue 7003: [with spkg, needs review] update jmol
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7003
 
 Original creator: jason
 

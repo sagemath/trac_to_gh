@@ -1,6 +1,6 @@
 # Issue 3209: summing graphics elements takes way to long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3209
 
 Original creator: robertwb
 

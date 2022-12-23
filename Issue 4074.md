@@ -1,6 +1,6 @@
 # Issue 4074: [with spkg, needs review] the notebook is totally broken in secure mode with the new twisted spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4074
 
 Original creator: mhansen
 

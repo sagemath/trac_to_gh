@@ -1,6 +1,6 @@
 # Issue 1250: [with patch] multivariate polynomial factorization -- control-c to cancel out doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1250
 
 Original creator: was
 

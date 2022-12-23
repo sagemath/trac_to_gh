@@ -1,6 +1,6 @@
 # Issue 8161: use Sphinx to produce docstrings from the command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8161
 
 Original creator: jhpalmieri
 

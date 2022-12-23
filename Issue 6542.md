@@ -1,6 +1,6 @@
 # Issue 6542: tachyon ouput seems broken in sage-4.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6542
 
 Original creator: mhampton
 

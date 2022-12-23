@@ -1,6 +1,6 @@
 # Issue 7254: sagenb notebook: automatic worksheet refreshing and synchronization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7254
 
 Original creator: was
 
@@ -230,7 +230,7 @@ flat:sagenb wstein$ hg diff
 diff -r 5f1705b928fc sagenb/data/sage/js/notebook_lib.js
 --- a/sagenb/data/sage/js/notebook_lib.js	Fri Oct 23 18:06:28 2009 -0700
 +++ b/sagenb/data/sage/js/notebook_lib.js	Sat Oct 24 18:48:46 2009 -0700
-`@``@` -554,7 +554,7 `@``@`
+@@ -554,7 +554,7 @@
      var X, y, z, s;
      if (status == 'success') {
           X = response_text.split(SEP);
@@ -239,7 +239,7 @@ diff -r 5f1705b928fc sagenb/data/sage/js/notebook_lib.js
           /* Now we replace the HTML for every cell *except* the active cell
              by the contents of X[1]. */
         //   y = get_element("worksheet_cell_list");
-`@``@` -1678,7 +1678,7 `@``@`
+@@ -1678,7 +1678,7 @@
          server_down();
      } else {
          server_up();
@@ -248,7 +248,7 @@ diff -r 5f1705b928fc sagenb/data/sage/js/notebook_lib.js
               /* force a refresh of just the cells in the body */
  	    refresh_cell_list();
          }
-`@``@` -2570,7 +2570,7 `@``@`
+@@ -2570,7 +2570,7 @@
          a string
      */
      if (cmd == 'eval' || cmd == 'new_cell_before') {

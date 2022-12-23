@@ -1,6 +1,6 @@
 # Issue 232: assert statement does not work in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/232
 
 Original creator: yi
 

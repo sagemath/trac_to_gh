@@ -1,6 +1,6 @@
 # Issue 3073: allow variable width text input_box in interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3073
 
 Original creator: mhampton
 

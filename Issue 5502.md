@@ -1,6 +1,6 @@
 # Issue 5502: implement ascii art output for Dynkin diagrams
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5502
 
 Original creator: AlexGhitza
 

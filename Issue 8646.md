@@ -1,6 +1,6 @@
 # Issue 8646: Windows 7 Virtual Box Install Fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8646
 
 Original creator: SevenThunders
 

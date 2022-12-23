@@ -1,6 +1,6 @@
 # Issue 9869: Clean up Cliquer's Makefile and spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9870
 
 Original creator: drkirkby
 

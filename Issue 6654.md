@@ -1,6 +1,6 @@
 # Issue 6654: [with patch, needs review] new features in group algebra category
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6654
 
 Original creator: vferay
 

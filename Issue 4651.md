@@ -1,6 +1,6 @@
 # Issue 4651: re-enable caching of cython dependencies during build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4651
 
 Original creator: craigcitro
 

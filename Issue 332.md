@@ -1,6 +1,6 @@
 # Issue 332: Slideshow starts with 0?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/332
 
 Original creator: TimothyClemans
 

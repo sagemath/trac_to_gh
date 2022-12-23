@@ -1,6 +1,6 @@
 # Issue 401: list * integer works but integer * list doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/401
 
 Original creator: dmharvey
 

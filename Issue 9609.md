@@ -1,6 +1,6 @@
 # Issue 9609: Remove unnecessary files from spkg/standard
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9609
 
 Original creator: mpatel
 

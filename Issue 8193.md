@@ -1,6 +1,6 @@
 # Issue 8193: Enumeration of points on plane curves over finite fields is very inefficient
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8193
 
 Original creator: cremona
 

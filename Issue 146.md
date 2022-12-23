@@ -1,6 +1,6 @@
 # Issue 146: Soya build breaks on sage-1.4.1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/146
 
 Original creator: justin
 

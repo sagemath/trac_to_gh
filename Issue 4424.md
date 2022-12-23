@@ -1,6 +1,6 @@
 # Issue 4424: magma -- make sure .m files have their precompiled versions shiped with Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4424
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Sun, Nov 2, 2008 at 7:38 AM, Kevin Buzzard <k.buzzard`@`imperial.ac.uk> wrote:
+On Sun, Nov 2, 2008 at 7:38 AM, Kevin Buzzard <k.buzzard@imperial.ac.uk> wrote:
 > I'm still unclear about the philosophy of permissions.
 >
 > I downloaded sage 3.1.4 source and compiled from source. As root. Into

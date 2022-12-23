@@ -1,6 +1,6 @@
 # Issue 5290: Sage 3.3.rc1: Sage fails to start due to dangling missed import in plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5290
 
 Original creator: mabshoff
 

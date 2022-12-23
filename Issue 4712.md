@@ -1,6 +1,6 @@
 # Issue 4712: Make the doctest timeouts in Sage easily adjustable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4712
 
 Original creator: mabshoff
 

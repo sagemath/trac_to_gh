@@ -1,6 +1,6 @@
 # Issue 6118: integer shifting slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6118
 
 Original creator: robertwb
 
@@ -208,7 +208,7 @@ Comment by mvngu created at 2009-09-08 10:27:12
 I got some hunk failures when applying `trac-6118-pt2.patch`:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6118/trac-6118-pt2.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6118/trac-6118-pt2.patch && hg qpush
 adding trac-6118-pt2.patch to series file
 applying trac-6118-pt2.patch
 patching file sage/rings/integer.pxd

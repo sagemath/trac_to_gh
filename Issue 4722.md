@@ -1,6 +1,6 @@
 # Issue 4722: BUG - number field K.hilbert_class_polynomial() is a *lie*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4722
 
 Original creator: was
 

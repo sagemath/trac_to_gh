@@ -1,6 +1,6 @@
 # Issue 2418: pari polroots gives division by zero sometimes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2418
 
 Original creator: cwitty
 

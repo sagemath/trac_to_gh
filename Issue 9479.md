@@ -1,6 +1,6 @@
 # Issue 9479: wrong license in readline SPKG.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9479
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 9372: implement regulator function for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9372
 
 Original creator: cremona
 

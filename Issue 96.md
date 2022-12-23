@@ -1,6 +1,6 @@
 # Issue 96: time command doesn't work in .sage files !?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/96
 
 Original creator: was
 
@@ -60,7 +60,7 @@ Fixed.
 ```
 
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169206024 28800
 # Node ID 8833f0a4a8e04425abe51cd6bb2f74530cbc81e1
 # Parent  854831432a611d7c3591506c59037c5c22b08897
@@ -69,7 +69,7 @@ Fix trac #96 -- time works for scripts.
 diff -r 854831432a61 -r 8833f0a4a8e0 sage/misc/interpreter.py
 --- a/sage/misc/interpreter.py  Fri Jan 19 03:20:10 2007 -0800
 +++ b/sage/misc/interpreter.py  Fri Jan 19 03:27:04 2007 -0800
-`@``@` -363,7 +363,7 `@``@` def process_file(name):
+@@ -363,7 +363,7 @@ def process_file(name):
      name2 = "%s/%s.py"%(dir,name[:name.find('.')])
      os.chdir(dir)
      contents = open(name).read()
@@ -81,7 +81,7 @@ diff -r 854831432a61 -r 8833f0a4a8e0 sage/misc/interpreter.py
 diff -r 854831432a61 -r 8833f0a4a8e0 sage/server/notebook/worksheet.py
 --- a/sage/server/notebook/worksheet.py Fri Jan 19 03:20:10 2007 -0800
 +++ b/sage/server/notebook/worksheet.py Fri Jan 19 03:27:04 2007 -0800
-`@``@` -849,7 +849,7 `@``@` class Worksheet:
+@@ -849,7 +849,7 @@ class Worksheet:
          return t
  
      def preparse(self, s):

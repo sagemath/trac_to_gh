@@ -1,6 +1,6 @@
 # Issue 114: trac -- totally broken for Python 2.5 as of now
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/114
 
 Original creator: was
 

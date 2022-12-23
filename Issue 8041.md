@@ -1,6 +1,6 @@
 # Issue 8041: docstring for XGCD has Sphinx errors "Unknown control sequence '\*'" in sage-4.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8041
 
 Original creator: was
 

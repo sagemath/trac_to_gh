@@ -1,6 +1,6 @@
 # Issue 7415: improve cycle decomposition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7415
 
 Original creator: ylchapuy
 

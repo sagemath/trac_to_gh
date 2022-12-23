@@ -1,6 +1,6 @@
 # Issue 7607: add uncommitted files to the script repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7607
 
 Original creator: mvngu
 

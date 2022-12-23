@@ -1,6 +1,6 @@
 # Issue 5736: Improve doctest coverage for sage/modular/hecke
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5736
 
 Original creator: davidloeffler
 
@@ -18,7 +18,7 @@ Comment by mabshoff created at 2009-04-10 23:49:51
 This patch does cause one doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc2$ ./sage -t -long devel/sage/sage/tests/book_stein_modform.py
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc2$ ./sage -t -long devel/sage/sage/tests/book_stein_modform.py
 sage -t -long "devel/sage/sage/tests/book_stein_modform.py" 
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/tests/book_stein_modform.py", line 205:
@@ -274,7 +274,7 @@ The following tests failed:
 	sage -t -long devel/sage/sage/modular/hecke/module.py # 14 doctests failed
 ----------------------------------------------------------------------
 Total time for all tests: 387.7 seconds
-wstein`@`sage:~/build/sage-3.4.2.alpha0$ 
+wstein@sage:~/build/sage-3.4.2.alpha0$ 
 ```
 
 
@@ -391,7 +391,7 @@ The following tests failed:
         sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed
 ----------------------------------------------------------------------
 Total time for all tests: 312.6 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$ 
+wstein@sage:~/build/sage-3.4.2.rc0$ 
 ```
 
 
@@ -449,37 +449,37 @@ William's testing tree seems to be a clone from a tree that has the following pa
 ```
 changeset:   12151:e0257aa492ab
 tag:         tip
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 22:56:24 2009 -0700
 summary:     trac #5968 -- part 2 -- increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
 
 changeset:   12150:673cc9b82a7d
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 22:46:52 2009 -0700
 summary:     trac 5968 -- increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
 
 changeset:   12149:901f4946fd7e
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 02:15:34 2009 -0700
 summary:     trac #5882 -- part 4 -- mop up some issues with overzealous changes to matrix_morphism.
 
 changeset:   12148:312499531bcb
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 01:31:38 2009 -0700
 summary:     trac #5882 -- part 3 of "implement general package for finitely generated not-necessarily free R-modules"
 
 changeset:   12147:82b9ade5605a
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 01:48:24 2009 -0700
 summary:     trac #5882 (part 2) -- implement general package for finitely generated not-necessarily free R-modules
 
 changeset:   12146:6023d9680d5e
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Thu Apr 30 13:30:21 2009 -0700
 summary:     trac #5882 -- part 1 of implementation of finitely generated modules over a PID
 
 changeset:   12145:9ee83eda286e
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 02 01:38:52 2009 -0700
 summary:     trac #5887 -- major bugs in morphisms of R-modules (rebased against 3.4.2.rc0)
 ```
@@ -502,16 +502,16 @@ Comment by mabshoff created at 2009-05-04 01:36:19
 Indeed, this was exactly caused by this issue mentioned above:
 
 ```
-wstein`@`sage:~/build/sage-3.4.2.rc0$ ./sage -sh
+wstein@sage:~/build/sage-3.4.2.rc0$ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-wstein`@`sage:~/build/sage-3.4.2.rc0$ cd devel/sage
-wstein`@`sage:~/build/sage-3.4.2.rc0/devel/sage$ touch sage/modular/modsym/modular_symbols.py
-wstein`@`sage:~/build/sage-3.4.2.rc0/devel/sage$ cd ../..
-wstein`@`sage:~/build/sage-3.4.2.rc0$ ./sage -b
+wstein@sage:~/build/sage-3.4.2.rc0$ cd devel/sage
+wstein@sage:~/build/sage-3.4.2.rc0/devel/sage$ touch sage/modular/modsym/modular_symbols.py
+wstein@sage:~/build/sage-3.4.2.rc0/devel/sage$ cd ../..
+wstein@sage:~/build/sage-3.4.2.rc0$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -540,34 +540,34 @@ Writing /scratch/wstein/build/sage-3.4.2.rc0/local/lib/python2.5/site-packages/s
 real	0m1.006s
 user	0m0.810s
 sys	0m0.190s
-wstein`@`sage:~/build/sage-3.4.2.rc0$        sage -t -long devel/sage/sage/modular/modsym/ambient.py # 4 doctests failed
+wstein@sage:~/build/sage-3.4.2.rc0$        sage -t -long devel/sage/sage/modular/modsym/ambient.py # 4 doctests failed
 sage -t -long "devel/sage/sage/modular/modsym/ambient.py"   
 	 [5.8 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 5.8 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/tests/book_stein_modform.py # 3 doctests failedsage -t -long "devel/sage/sage/tests/book_stein_modform.py" 
+wstein@sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/tests/book_stein_modform.py # 3 doctests failedsage -t -long "devel/sage/sage/tests/book_stein_modform.py" 
 	 [3.3 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 3.3 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/modular/modsym/manin_symbols.py # 1 doctests failed
+wstein@sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/sage/modular/modsym/manin_symbols.py # 1 doctests failed
 sage -t -long "devel/sage/sage/modular/modsym/manin_symbols.py"
 	 [1.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1.5 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed
+wstein@sage:~/build/sage-3.4.2.rc0$         sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed
 sage -t -long "devel/sage/doc/en/bordeaux_2008/modular_symbols.rst"
 	 [1.1 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1.1 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$ 
+wstein@sage:~/build/sage-3.4.2.rc0$ 
 ```
 
 

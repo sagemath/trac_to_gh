@@ -1,6 +1,6 @@
 # Issue 3080: testdoc.py hangs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3080
 
 Original creator: gfurnish
 

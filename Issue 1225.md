@@ -1,6 +1,6 @@
 # Issue 1225: OSX 10.4 PPC: slight numerical noise in rings/polynomial/polynomial_element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1225
 
 Original creator: mabshoff
 

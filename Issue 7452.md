@@ -1,6 +1,6 @@
 # Issue 7452: Make it easier to diagnose build problems by allowing copy-paste
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7452
 
 Original creator: iandrus
 

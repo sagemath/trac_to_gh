@@ -1,6 +1,6 @@
 # Issue 3353: bug in MatrixGroup iterator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3353
 
 Original creator: wdj
 

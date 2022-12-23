@@ -1,6 +1,6 @@
 # Issue 7733: Graph(g) and DiGraph(g) do not keep the embedding !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7733
 
 Original creator: ncohen
 

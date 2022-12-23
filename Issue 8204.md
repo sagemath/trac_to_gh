@@ -1,6 +1,6 @@
 # Issue 8204: when upgrading sage, cddlib spkg goes interactive due to some errors in it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8204
 
 Original creator: was
 

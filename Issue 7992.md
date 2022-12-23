@@ -1,6 +1,6 @@
 # Issue 7992: typo in sage/libs/mwrank/interface.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7992
 
 Original creator: rlm
 

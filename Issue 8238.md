@@ -1,6 +1,6 @@
 # Issue 8238: heegner_index_bound may be incorrect for curves with rational torsion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8238
 
 Original creator: rlm
 

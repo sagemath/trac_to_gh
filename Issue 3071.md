@@ -1,6 +1,6 @@
 # Issue 3071: Using pbuild does not create site-packages sage symlink
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3071
 
 Original creator: gfurnish
 

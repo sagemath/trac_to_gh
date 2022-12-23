@@ -1,6 +1,6 @@
 # Issue 5586: [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5586
 
 Original creator: malb
 
@@ -93,7 +93,7 @@ OK, I applied the patches against Sage 3.4 in this order:
 But I got doctest failure:
 
 ```
-[mvngu`@`sage sage-3.4]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py 
+[mvngu@sage sage-3.4]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py 
 sage -t -long "devel/sage-5586/sage/crypto/mq/sr.py"        
 **********************************************************************
 File "/home/mvngu/sage-3.4/devel/sage-5586/sage/crypto/mq/sr.py", line 2002:
@@ -156,7 +156,7 @@ Again, I see timed out errors. With Sage 3.4, I applied patches in this order:
 Doctesting gave me this:
 
 ```
-[mvngu`@`sage sage-3.4-sage.math-only-x86_64-Linux]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py 
+[mvngu@sage sage-3.4-sage.math-only-x86_64-Linux]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py 
 sage -t -long "devel/sage-5586/sage/crypto/mq/sr.py"        
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***
@@ -182,7 +182,7 @@ As for Sage 3.4.1.alph0, I applied patches in this order:
 Doctesting gave me timed out errors as well:
 
 ```
-[mvngu`@`sage sage-3.4.1.alpha0-sage.math-only-x86_64-Linux]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py
+[mvngu@sage sage-3.4.1.alpha0-sage.math-only-x86_64-Linux]$ ./sage -t -long devel/sage-5586/sage/crypto/mq/sr.py
 sage -t -long "devel/sage-5586/sage/crypto/mq/sr.py"        
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***

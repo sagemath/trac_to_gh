@@ -1,6 +1,6 @@
 # Issue 9128: Sphinx should be aware of all.py to find its links
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9128
 
 Original creator: hivert
 
@@ -76,7 +76,7 @@ Comment by novoselt created at 2010-06-07 02:14:02
 I have just upgraded an installation of sage-4.4.2 to 4.4.3, applied this patch, set SAGE_DOC_WARN_DANGLING_LINKS to 1, and then got the following error:
 
 ```
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -docbuild reference html
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -docbuild reference html
 sphinx-build -b html -d /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/doctrees/en/reference    /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/en/reference /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/html/en/reference
 Running Sphinx v0.6.3
 loading pickled environment... done
@@ -95,9 +95,9 @@ Exception occurred:
 KeyError: None
 The full traceback has been saved in /tmp/sphinx-err-Unu279.log, if you want to report the issue to the author.
 Please also report this if it was a user error, so that a better error message can be provided next time.
-Send reports to sphinx-dev`@`googlegroups.com. Thanks!
+Send reports to sphinx-dev@googlegroups.com. Thanks!
 Build finished.  The built documents can be found in /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/html/en/reference
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$
 ```
 
 Then I removed this patch, built documentation successfully, pushed this and some other patches and now it seems to work fine. Perhaps it was an unreproducible glitch unrelated to the patch. In general it seems to work as expected and showed me a couple of mistakes in my modules.
@@ -157,7 +157,7 @@ Exception occurred:
 KeyError: u'sage.categories.examples.algebras_with_basis'
 The full traceback has been saved in /tmp/sphinx-err-rFQQUv.log, if you want to report the issue to the author.
 Please also report this if it was a user error, so that a better error message can be provided next time.
-Send reports to sphinx-dev`@`googlegroups.com. Thanks!
+Send reports to sphinx-dev@googlegroups.com. Thanks!
 Build finished.  The built documents can be found in /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/html/en/reference
 ```
 
@@ -386,16 +386,16 @@ Comment by novoselt created at 2010-12-16 16:15:37
 I guess it was expected: these patches do not work anymore in Sage-4.6.1.alpha3 due to Sphinx upgrade. On a fresh installation I got
 
 ```
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ hg qapplied
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ hg qpush
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ hg qapplied
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ hg qpush
 applying trac_9128-sphinx_links_all-fh.patch
 now at: trac_9128-sphinx_links_all-fh.patch
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ hg qpush
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ hg qpush
 applying trac_9128-intersphinx_python_database-fh.patch
 now at: trac_9128-intersphinx_python_database-fh.patch
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -b
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -b
 ...
-novoselt`@`sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -docbuild reference html
+novoselt@sage:/scratch/novoselt/sage/devel/sage-main$ ../../sage -docbuild reference html
 sphinx-build -b html -d /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/doctrees/en/reference    /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/en/reference /mnt/usb1/scratch/novoselt/sage/devel/sage/doc/output/html/en/reference
 Running Sphinx v1.0.4
 loading pickled environment... done
@@ -444,14 +444,14 @@ Hi Florent,
 I have enjoyed using your patch in the past and I am going to start using it again but so far it does not apply to sage-4.7.rc0:
 
 ```
-novoselt`@`tx2-LM:~/sage/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9128/trac_9128-intersphinx_python_database-fh.patch
+novoselt@tx2-LM:~/sage/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9128/trac_9128-intersphinx_python_database-fh.patch
 adding trac_9128-intersphinx_python_database-fh.patch to series file
-novoselt`@`tx2-LM:~/sage/devel/sage-main$ hg qpush
+novoselt@tx2-LM:~/sage/devel/sage-main$ hg qpush
 applying trac_9128-intersphinx_python_database-fh.patch
 now at: trac_9128-intersphinx_python_database-fh.patch
-novoselt`@`tx2-LM:~/sage/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9128/trac_9128-sphinx_links_all-fh.patch
+novoselt@tx2-LM:~/sage/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9128/trac_9128-sphinx_links_all-fh.patch
 adding trac_9128-sphinx_links_all-fh.patch to series file
-novoselt`@`tx2-LM:~/sage/devel/sage-main$ hg qpush
+novoselt@tx2-LM:~/sage/devel/sage-main$ hg qpush
 applying trac_9128-sphinx_links_all-fh.patch
 patching file doc/common/conf.py
 Hunk #2 FAILED at 19
@@ -460,7 +460,7 @@ Hunk #3 succeeded at 97 with fuzz 2 (offset -7 lines).
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_9128-sphinx_links_all-fh.patch
-novoselt`@`tx2-LM:~/sage/devel/sage-main$ 
+novoselt@tx2-LM:~/sage/devel/sage-main$ 
 ```
 
 This is on a just built installation without any other patches.
@@ -603,7 +603,7 @@ I just added the following diff which should resolve many more dependance to pyt
 diff --git a/doc/common/conf.py b/doc/common/conf.py
 --- a/doc/common/conf.py
 +++ b/doc/common/conf.py
-`@``@` -490,6 +490,11 `@``@` def call_intersphinx(app, env, node, con
+@@ -490,6 +490,11 @@ def call_intersphinx(app, env, node, con
          debug_inf(app, "---- Intersphinx: %s not Found"%node['reftarget'])
      return res
  
@@ -615,7 +615,7 @@ diff --git a/doc/common/conf.py b/doc/common/conf.py
  
  def find_sage_dangling_links(app, env, node, contnode):
      """
-`@``@` -507,9 +512,9 `@``@` def find_sage_dangling_links(app, env, n
+@@ -507,9 +512,9 @@ def find_sage_dangling_links(app, env, n
  
      debug_inf(app, "Searching %s from %s"%(reftarget, doc))
  
@@ -720,8 +720,8 @@ Unfortunately, this breaks the pdf reference manual:
 
 ```
 ! TeX capacity exceeded, sorry [main memory size=1500000].
-<argument> ...\endcsname \current`@`color {0.40,0.40
-                                                  ,0.40}\set`@`color
+<argument> ...\endcsname \current@color {0.40,0.40
+                                                  ,0.40}\set@color
 l.47055 ...1}\PYG{o}{/}\PYG{l+m+mf}{0.1}\PYG{p}{)}
 
 !  ==> Fatal error occurred, no output PDF file produced!

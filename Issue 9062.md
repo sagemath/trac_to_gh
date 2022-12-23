@@ -1,6 +1,6 @@
 # Issue 9062: Add support for toric lattices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9062
 
 Original creator: novoselt
 

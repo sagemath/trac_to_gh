@@ -1,6 +1,6 @@
 # Issue 3962: Error in converting vector to SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3962
 
 Original creator: jason
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-sage: a=(QQ^3).subspace([This is the Trac macro *1,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,0,1-macro))
+sage: a=(QQ^3).subspace([[1,0,1]])
 sage: b=a.basis()[0]
 sage: b.change_ring(SR)
 ---------------------------------------------------------------------------
@@ -95,7 +95,7 @@ Comment by mabshoff created at 2008-08-29 06:28:47
 This patch causes a doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2$ ./sage -t -long devel/sage/sage/structure/element.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2$ ./sage -t -long devel/sage/sage/structure/element.pyx
 sage -t -long devel/sage/sage/structure/element.pyx         
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/element.py", line 1458:

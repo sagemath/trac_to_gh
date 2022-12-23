@@ -1,6 +1,6 @@
 # Issue 2230: sage-2.10.2.alpha1 -- linear algebra hash not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2230
 
 Original creator: was
 

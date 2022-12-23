@@ -1,6 +1,6 @@
 # Issue 2514: additions to coding modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2514
 
 Original creator: wdj
 
@@ -53,7 +53,7 @@ Comment by rlm created at 2008-03-15 23:25:38
 Oops,
 
 ```
-sage: C = LinearCode(Matrix(GF(2),[This is the Trac macro *0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,1-macro)))
+sage: C = LinearCode(Matrix(GF(2),[[0,1]]))
 sage: C.permutation_automorphism_group()
 *BOOM*
 ```

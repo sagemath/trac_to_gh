@@ -1,6 +1,6 @@
 # Issue 8298: GLPK 4.42 + error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8298
 
 Original creator: ncohen
 

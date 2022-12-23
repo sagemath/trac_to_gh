@@ -1,6 +1,6 @@
 # Issue 9256: Put Set in the category Sets()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9256
 
 Original creator: hivert
 

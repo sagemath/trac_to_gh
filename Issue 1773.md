@@ -1,6 +1,6 @@
 # Issue 1773: piecewise functions and integration / arithmetic do not play well together
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1773
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6262: notebook takes 5-10 minutes to quit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6262
 
 Original creator: mhampton
 

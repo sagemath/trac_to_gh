@@ -1,6 +1,6 @@
 # Issue 7767: PARI thinks C compiler is broken on Open Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7767
 
 Original creator: drkirkby
 

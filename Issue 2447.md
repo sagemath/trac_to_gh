@@ -1,6 +1,6 @@
 # Issue 2447: lfunctions modules scores low on doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2447
 
 Original creator: cremona
 

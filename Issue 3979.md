@@ -1,6 +1,6 @@
 # Issue 3979: Power series composition messes up precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3979
 
 Original creator: kedlaya
 

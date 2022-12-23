@@ -1,6 +1,6 @@
 # Issue 2493: Updated experimental vtk spkg (vtk-5.0.4.spkg)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2493
 
 Original creator: jsp
 

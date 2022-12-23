@@ -1,6 +1,6 @@
 # Issue 2267: [with patch, needs review] Sage 2.10.2: fix latex errors when generating the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2267
 
 Original creator: mabshoff
 

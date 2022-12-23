@@ -1,6 +1,6 @@
 # Issue 7070: tachyon 0.98beta.p9 ignores CC and uses gcc. Also uses -O6 which might be dangerous.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7070
 
 Original creator: drkirkby
 

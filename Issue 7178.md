@@ -1,6 +1,6 @@
 # Issue 7178: HP-UX  lcalc does not build. Also fails on Solaris with Sun compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7178
 
 Original creator: drkirkby
 

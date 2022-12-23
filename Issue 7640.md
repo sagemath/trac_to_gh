@@ -1,6 +1,6 @@
 # Issue 7640: shortest_path should not use NetworkX if the underlying graph is a c_graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7640
 
 Original creator: rlm
 

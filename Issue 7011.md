@@ -1,6 +1,6 @@
 # Issue 7011: fiddle with the number of threads automatically used for parallel testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7011
 
 Original creator: ddrake
 

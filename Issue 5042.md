@@ -1,6 +1,6 @@
 # Issue 5042: notebook -- implement folders
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5042
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 9398: Sage meddles with soft rlimits
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9398
 
 Original creator: nbruin
 

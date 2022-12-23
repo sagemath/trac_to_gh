@@ -1,6 +1,6 @@
 # Issue 5814: %prun doesn't work in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5814
 
 Original creator: rlm
 

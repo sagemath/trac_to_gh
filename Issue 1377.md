@@ -1,6 +1,6 @@
 # Issue 1377: [with patch] technically incorrect code in integer_mod.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1377
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 1973: native partition_associated function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1973
 
 Original creator: jason
 

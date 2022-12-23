@@ -1,6 +1,6 @@
 # Issue 8288: Depth/Breadth improvement for SearchForest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8288
 
 Original creator: nborie
 
@@ -87,7 +87,7 @@ Discussed on trac: there is an algorithmic problem:
 Here is my tests example:
 
 ```
-    I = SearchForest([This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro), lambda l: (l+[i] for i in range(l[-1])))
+    I = SearchForest([[3]], lambda l: (l+[i] for i in range(l[-1])))
 ```
 
 Do you have an easy father function for this tree ?

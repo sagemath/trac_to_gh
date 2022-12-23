@@ -1,6 +1,6 @@
 # Issue 6546: Fully implement edge thickness in plots of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6546
 
 Original creator: rbeezer
 

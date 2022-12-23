@@ -1,6 +1,6 @@
 # Issue 5693: sloane_sequence -- very confusing error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5693
 
 Original creator: was
 

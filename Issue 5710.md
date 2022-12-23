@@ -1,6 +1,6 @@
 # Issue 5710: [with patch; needs review] solaris -- fix "is monic" issue with NTL in number_field_element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5710
 
 Original creator: was
 

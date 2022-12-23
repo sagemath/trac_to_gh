@@ -1,6 +1,6 @@
 # Issue 2350: The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2350
 
 Original creator: jason
 

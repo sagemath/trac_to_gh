@@ -1,6 +1,6 @@
 # Issue 491: gcc 4.3: fix givaro build due to ::memcpy failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/491
 
 Original creator: mabshoff
 

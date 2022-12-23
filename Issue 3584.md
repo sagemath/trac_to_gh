@@ -1,6 +1,6 @@
 # Issue 3584: cython.py -- randomness in doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3584
 
 Original creator: was
 

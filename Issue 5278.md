@@ -1,6 +1,6 @@
 # Issue 5278: On modern fedora 64 installs, sage exists frequently when omalloc things there is no memory left
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5278
 
 Original creator: was
 
@@ -177,7 +177,7 @@ The reason is that the memory is already allocated, to hold a shared library.  E
 
 ```
 23475 open("/scratch/wstein/sage-3.3.rc0/local/lib/python2.5/lib-dynload/grp.so", O_RDONLY) = 9
-23475 read(9, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\f\0\0\0\0\0\0`@`"..., 832) = 832
+23475 read(9, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\f\0\0\0\0\0\0@"..., 832) = 832
 23475 fstat(9, {st_mode=S_IFREG|0755, st_size=24578, ...}) = 0
 23475 mmap(NULL, 2104704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 9, 0) = 0x22e2000
 23475 mprotect(0x22e4000, 2093056, PROT_NONE) = 0
@@ -277,7 +277,7 @@ Total time for all tests: 3130.8 seconds
 on the FC 10 box where it all blew up:
 
 ```
-wstein`@`fedora64:/scratch/wstein/sage-3.3.rc0$ uname -a
+wstein@fedora64:/scratch/wstein/sage-3.3.rc0$ uname -a
 Linux fedora64 2.6.27.12-170.2.5.fc10.x86_64 #1 SMP Wed Jan 21 01:33:24 EST 2009 x86_64 x86_64 x86_64 GNU/Linux
 ```
 

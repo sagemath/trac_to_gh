@@ -1,6 +1,6 @@
 # Issue 8133: changing the string representation of Dirichlet charachters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8133
 
 Original creator: wuthrich
 

@@ -1,6 +1,6 @@
 # Issue 568: sage -t --long coding/code_constructions.py times out after several *hours*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/568
 
 Original creator: was
 
@@ -55,7 +55,7 @@ sage.:. C.minimum_distance()  ## long time -- very time consuming
 and then the following was the result of sage -t:
 
 ```
-wdj`@`wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage/sage/coding/code_constructions.py"
+wdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage/sage/coding/code_constructions.py"
 sage -t --long devel/sage-main/sage/coding/code_constructions.py
          [11.6 s]
 
@@ -78,7 +78,7 @@ I fixed the docstring to that sage -t --long doesn't time out.
 
 ```
 
- wdj`@`wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-coding/sage/coding/code_constructions.py"
+ wdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-coding/sage/coding/code_constructions.py"
 sage -t --long devel/sage-coding/sage/coding/code_constructions.py
          [12.4 s]
 

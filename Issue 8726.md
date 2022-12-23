@@ -1,6 +1,6 @@
 # Issue 8726: opening two copies of a worksheet causes jumping
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8726
 
 Original creator: jason
 

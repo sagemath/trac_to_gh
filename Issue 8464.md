@@ -1,6 +1,6 @@
 # Issue 8464: add FAQ to standard documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8464
 
 Original creator: mvngu
 
@@ -195,7 +195,7 @@ After applying all three patches to Sage 4.4.2.rc0, running doctests resulted in
 
 
 ```
-[mvngu`@`sage sage-4.4.2.rc0]$ ./sage -t -long devel/sage-main/doc/en/faq/faq-usage.rstsage -t -long "devel/sage-main/doc/en/faq/faq-usage.rst"    
+[mvngu@sage sage-4.4.2.rc0]$ ./sage -t -long devel/sage-main/doc/en/faq/faq-usage.rstsage -t -long "devel/sage-main/doc/en/faq/faq-usage.rst"    
 **********************************************************************
 File "/dev/shm/mvngu/release/sage-4.4.2.rc0/devel/sage-main/doc/en/faq/faq-usage.rst", line 134:
     sage: load("simple.py")

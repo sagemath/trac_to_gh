@@ -1,6 +1,6 @@
 # Issue 6388: Logarithm function log(x) is partially broken for x <= 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6388
 
 Original creator: gmhossain
 

@@ -1,6 +1,6 @@
 # Issue 4347: generalized bernoulli numbers -- massively optimize
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4347
 
 Original creator: was
 
@@ -83,7 +83,7 @@ For example:
 
 
 ```
-[ghitza`@`artin sage]$ sage -t modular/modform/eisenstein_submodule.py 
+[ghitza@artin sage]$ sage -t modular/modform/eisenstein_submodule.py 
 sage -t  3.1.4/devel/sage-main/sage/modular/modform/eisenstein_submodule.py
 **********************************************************************
 File "/opt/sage/tmp/eisenstein_submodule.py", line 263:

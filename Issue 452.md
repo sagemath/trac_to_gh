@@ -1,6 +1,6 @@
 # Issue 452: multi_polynomial_libsingular.c doesn't compile on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/452
 
 Original creator: mabshoff
 

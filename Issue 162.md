@@ -1,6 +1,6 @@
 # Issue 162: Integer.exact_log causes segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/162
 
 Original creator: dmharvey
 
@@ -44,7 +44,7 @@ Interesting, MAGMA seg faults on exactly the same sort of computation, and of co
 
 
 ```
-was`@`sage:~$ magma
+was@sage:~$ magma
 Magma V2.13-5     Fri Jan 12 2007 17:05:25 on sage     [Seed = 853493552]
 Type ? for help.  Type <Ctrl>-D to quit.
 > x := 3**10000000;
@@ -73,25 +73,25 @@ Comment by was created at 2007-08-16 10:06:26
 This is a basic mpfr problem.  Any super-high precision arithmetic breaks with SAGE or Magma:
 
 ```
-was`@`ubuntu:~$ magma
+was@ubuntu:~$ magma
 Magma V2.13-10    Thu Aug 16 2007 02:54:37 on ubuntu   [Seed = 3360329821]
 Type ? for help.  Type <Ctrl>-D to quit.
 > R := RealField(31699256);
 > y := R!3;
 > z := y*y;
 Segmentation fault
-was`@`ubuntu:~$    
+was@ubuntu:~$    
 
 Same on 64-bit:
 
-was`@`sage:~$ magma
+was@sage:~$ magma
 Magma V2.13-5     Thu Aug 16 2007 02:56:05 on sage     [Seed = 4101418455]
 Type ? for help.  Type <Ctrl>-D to quit.
 > R := RealField(31699256);
 > y := R!3;
 > z := y*y;
 Segmentation fault
-was`@`sage:~$   
+was@sage:~$   
 ```
 
 

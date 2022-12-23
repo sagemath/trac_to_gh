@@ -1,6 +1,6 @@
 # Issue 9525: Installation of cvxopt will always report succesful, even if it fails.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9525
 
 Original creator: drkirkby
 

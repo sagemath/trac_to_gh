@@ -1,6 +1,6 @@
 # Issue 9234: Bring doc coverage of plot/plot3d/texture.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9234
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 577: add MPolynomialRing.long_repr method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/577
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1843: [with patch; needs review] cputime for gp interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1843
 
 Original creator: was
 

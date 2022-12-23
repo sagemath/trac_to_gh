@@ -1,6 +1,6 @@
 # Issue 2910: bug in Integer(string)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2910
 
 Original creator: was
 

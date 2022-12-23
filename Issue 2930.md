@@ -1,6 +1,6 @@
 # Issue 2930: CDF is slow, fix it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2930
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 8216: Make David Perkinson's sandpile 2.0 module an optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8216
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 8613: __dir__() / tab completion returns nonexistent attributes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8613
 
 Original creator: mmezzarobba
 

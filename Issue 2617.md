@@ -1,6 +1,6 @@
 # Issue 2617: solve() can return undefined points as "solutions"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2617
 
 Original creator: cwitty
 
@@ -175,7 +175,7 @@ I've been looking at several old tickets, all involving solving equations. One w
 
 Comment by kcrisman created at 2016-11-28 15:50:20
 
-We definitely have that method and it is still in Maxima.  Looks like it moved to [https://sourceforge.net/p/maxima/code/ci/master/tree/share/to_poly_solve/](https://sourceforge.net/p/maxima/code/ci/master/tree/share/to_poly_solve/)(https://sourceforge.net/p/maxima/code/ci/master/tree/share/to_poly_solve/).
+We definitely have that method and it is still in Maxima.  Looks like it moved to [https://sourceforge.net/p/maxima/code/ci/master/tree/share/to_poly_solve/](https://sourceforge.net/p/maxima/code/ci/master/tree/share/to_poly_solve/).
 
 However, `find_root` is explicitly supposed to be a numerical solver, while `solve` is supposed to be an exact solver.  Because `to_poly_solve` sometimes returns numerical answers in rare situations, there could be some overlap.  Also, `to_poly_solve` is not what we want for all solving, because it changes some other things and of course might take longer for simple ones.  It has a specific purpose, but that is not a general purpose.
 

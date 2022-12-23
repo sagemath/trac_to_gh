@@ -1,6 +1,6 @@
 # Issue 2540: dsage doctest fails in 2.10.4.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2540
 
 Original creator: yi
 

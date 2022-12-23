@@ -1,6 +1,6 @@
 # Issue 3272: [with patch, needs review] Bug in sparse polynomials over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3272
 
 Original creator: craigcitro
 

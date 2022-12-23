@@ -1,6 +1,6 @@
 # Issue 7292: Max Vertex/Edge disjoint st-paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7292
 
 Original creator: ncohen
 

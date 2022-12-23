@@ -1,6 +1,6 @@
 # Issue 6049: [with patch, needs review] bitset complement zeroes out last word if the bitset is a multiple of the word size
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6049
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 1357: the polynomial .roots() method should work with ring=QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1357
 
 Original creator: cwitty
 

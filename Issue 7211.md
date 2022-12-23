@@ -1,6 +1,6 @@
 # Issue 7211: Improve implicit plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7211
 
 Original creator: kcrisman
 

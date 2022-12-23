@@ -1,6 +1,6 @@
 # Issue 3982: [with patch, needs review] Pipe stdout to /dev/null to help sage_timeit with "print" statements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3982
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 9378: Russian translation of the Sage tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9378
 
 Original creator: mvngu
 

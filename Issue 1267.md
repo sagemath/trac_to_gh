@@ -1,6 +1,6 @@
 # Issue 1267: documentation for piecewise does not show up in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1267
 
 Original creator: cwitty
 

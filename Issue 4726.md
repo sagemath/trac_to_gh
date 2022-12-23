@@ -1,6 +1,6 @@
 # Issue 4726: Creating homomorphisms of relative number fields seems totally broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4726
 
 Original creator: was
 

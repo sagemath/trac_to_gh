@@ -1,6 +1,6 @@
 # Issue 4511: sage-combinat script won't work with two digit version numbers (for example: 3.2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4511
 
 Original creator: saliola
 

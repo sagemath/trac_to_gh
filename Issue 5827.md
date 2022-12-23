@@ -1,6 +1,6 @@
 # Issue 5827: crypto: subset sum problem for super-increasing sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5827
 
 Original creator: mvngu
 

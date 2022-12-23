@@ -1,6 +1,6 @@
 # Issue 2650: matrix() constructor with empty dictionary returns non-empty matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2650
 
 Original creator: rhinton
 

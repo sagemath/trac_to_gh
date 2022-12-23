@@ -1,6 +1,6 @@
 # Issue 1605: conversion of sage vectors to magma vectors not implemented.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1605
 
 Original creator: was
 

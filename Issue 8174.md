@@ -1,6 +1,6 @@
 # Issue 8174: maxima_methods wrapper for symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8174
 
 Original creator: burcin
 

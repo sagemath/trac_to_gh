@@ -1,6 +1,6 @@
 # Issue 8594: allow printing of floating point numbers with locale-dependent decimal separators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8594
 
 Original creator: ddrake
 

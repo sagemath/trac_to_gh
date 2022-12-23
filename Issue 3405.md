@@ -1,6 +1,6 @@
 # Issue 3405: [with spkg, needs review] update Singular SPKG to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3405
 
 Original creator: malb
 

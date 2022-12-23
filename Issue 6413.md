@@ -1,6 +1,6 @@
 # Issue 6413: Retrieving the multiplication-by-p isogeny on elliptic curves over fields of characteristic p fails.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6413
 
 Original creator: hlaw
 

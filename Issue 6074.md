@@ -1,6 +1,6 @@
 # Issue 6074: Planar graph generation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6074
 
 Original creator: rlm
 

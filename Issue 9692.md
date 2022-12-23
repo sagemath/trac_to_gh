@@ -1,6 +1,6 @@
 # Issue 9692: Doctest failure of sage/symbolic/expression.pyx on Solaris 10 x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9692
 
 Original creator: drkirkby
 

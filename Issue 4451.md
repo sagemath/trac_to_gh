@@ -1,6 +1,6 @@
 # Issue 4451: notebook - cursor keys do not navigate around text cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4451
 
 Original creator: jason
 

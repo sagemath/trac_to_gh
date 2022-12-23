@@ -1,6 +1,6 @@
 # Issue 1615: mpfi -- build is seriously broken on at least one system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1615
 
 Original creator: was
 

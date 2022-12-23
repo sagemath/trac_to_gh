@@ -1,6 +1,6 @@
 # Issue 3005: mobabar -- failure to compute endomorphism ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3005
 
 Original creator: was
 

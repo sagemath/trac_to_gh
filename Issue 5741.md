@@ -1,6 +1,6 @@
 # Issue 5741: Detect Atom CPUs as Core2 in the ATLAS detection script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5741
 
 Original creator: mabshoff
 
@@ -59,7 +59,7 @@ This is basically the fix to make ATLAS detect an Atom as a Core2. There is 32 a
 diff -r 0de046c62166 patches/archinfo_x86.c
 --- a/patches/archinfo_x86.c	Sat Feb 21 00:57:22 2009 -0800
 +++ b/patches/archinfo_x86.c	Fri Apr 17 19:09:51 2009 -0700
-`@``@` -301,6 +301,7 `@``@`
+@@ -301,6 +301,7 @@
           break;
        case 15:
        case 23:

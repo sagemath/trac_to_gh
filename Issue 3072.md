@@ -1,6 +1,6 @@
 # Issue 3072: sage -i numeric-24.2 (and all other experimental packages) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3072
 
 Original creator: was
 

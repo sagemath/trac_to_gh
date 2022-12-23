@@ -1,6 +1,6 @@
 # Issue 572: in sage-env make sure we do not append ":"  LD_WHATEVER
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/572
 
 Original creator: mabshoff
 

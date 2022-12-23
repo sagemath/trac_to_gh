@@ -1,6 +1,6 @@
 # Issue 6362: [with spkg, needs review] Singular and GCC 4.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6362
 
 Original creator: aginiewicz
 

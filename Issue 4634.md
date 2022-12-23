@@ -1,6 +1,6 @@
 # Issue 4634: Sage 3.2.1.a1: numerical noise in sage/schemes/ elliptic_curves/ell_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4634
 
 Original creator: mabshoff
 

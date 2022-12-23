@@ -1,6 +1,6 @@
 # Issue 7325: Sage cannot solve inequalities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7325
 
 Original creator: robert.marik
 
@@ -197,7 +197,7 @@ Comment by mvngu created at 2009-12-03 01:52:16
 With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:
 
 ```
-[mvngu`@`sage sage-4.3.alpha0-maxima]$ ./sage -t -long devel/sage-main/sage/symbolic/relation.py 
+[mvngu@sage sage-4.3.alpha0-maxima]$ ./sage -t -long devel/sage-main/sage/symbolic/relation.py 
 sage -t -long "devel/sage-main/sage/symbolic/relation.py"   
 **********************************************************************
 File "/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py", line 152:
@@ -484,7 +484,7 @@ Just for the record: the problem related to inequality
 
 ```
 sage:(x^4+2>0).solve(x)
-[This is the Trac macro *x > -* that was inherited from the migration called with arguments (-1)^)](https://trac.sagemath.org/wiki/WikiMacros#x > --macro)
+[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]
 ```
 
 is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).

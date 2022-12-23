@@ -1,6 +1,6 @@
 # Issue 7565: README.txt: enhance instructions on installing binary distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7565
 
 Original creator: mvngu
 

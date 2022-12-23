@@ -1,6 +1,6 @@
 # Issue 7365: Petersen's 2-factor theorem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7365
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 7535: Errors should be raised, not returned.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7535
 
 Original creator: SimonKing
 

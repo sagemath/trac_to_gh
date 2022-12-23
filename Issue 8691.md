@@ -1,6 +1,6 @@
 # Issue 8691: Implement Plain Change algorithm in cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8691
 
 Original creator: boothby
 

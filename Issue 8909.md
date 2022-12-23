@@ -1,6 +1,6 @@
 # Issue 8909: Coercion from Gap to cyclotomic fields; usage of GAP to improve computation of invariant rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8909
 
 Original creator: SimonKing
 

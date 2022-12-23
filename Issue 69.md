@@ -1,6 +1,6 @@
 # Issue 69: ell_rational_field doctest takes way too long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/69
 
 Original creator: dmharvey
 

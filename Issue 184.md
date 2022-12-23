@@ -1,6 +1,6 @@
 # Issue 184: negation of RealDouble broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/184
 
 Original creator: boothby
 

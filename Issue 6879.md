@@ -1,6 +1,6 @@
 # Issue 6879: Elliptic curve constructor does not check if the base is a field properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6879
 
 Original creator: cremona
 

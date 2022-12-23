@@ -1,6 +1,6 @@
 # Issue 8376: improve documentation for RealField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8376
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 7008: consolidate in plotting all extraction of variables, ranges, and fast_float setup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7008
 
 Original creator: jason
 

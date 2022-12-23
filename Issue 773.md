@@ -1,6 +1,6 @@
 # Issue 773: SAGE drops . from path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/773
 
 Original creator: was
 
@@ -10,8 +10,8 @@ Assignee: was
 
 
 ```
-was`@`ubuntu:~/sd5/ant$ export PATH=.:$PATH
-was`@`ubuntu:~/sd5/ant$ sage
+was@ubuntu:~/sd5/ant$ export PATH=.:$PATH
+was@ubuntu:~/sd5/ant$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |
@@ -40,7 +40,7 @@ These lines were added by William Stein:
 
 ```
 changeset:   2329:cccccf17fcd6
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Thu Jan 11 14:10:46 2007 -0800
 summary:     Make sure . is not in user's path.
 ```

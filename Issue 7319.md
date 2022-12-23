@@ -1,6 +1,6 @@
 # Issue 7319: gdmodule requires libiconv on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7319
 
 Original creator: mhansen
 

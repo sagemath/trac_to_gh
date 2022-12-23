@@ -1,6 +1,6 @@
 # Issue 3372: expand on (x+y)^n fails for non-commutative (x,y) [new symbolics]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3372
 
 Original creator: cwitty
 

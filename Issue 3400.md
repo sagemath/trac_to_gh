@@ -1,6 +1,6 @@
 # Issue 3400: Elements of GL(n,R) should coerce properly to matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3400
 
 Original creator: rlm
 
@@ -14,7 +14,7 @@ For example:
 
 
 ```
-sage: M = Matrix(GF(2), [This is the Trac macro *1,1,1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1,1,1-macro))
+sage: M = Matrix(GF(2), [[1,1,1,1]])
 sage: G = GL(4,2)
 sage: N = G.0
 sage: M

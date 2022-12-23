@@ -1,6 +1,6 @@
 # Issue 9690: explain differences between standard, optional, and experimental packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9690
 
 Original creator: mvngu
 

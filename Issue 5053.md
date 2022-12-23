@@ -1,6 +1,6 @@
 # Issue 5053: If the hostname of the computer has a "-" in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5053
 
 Original creator: was
 

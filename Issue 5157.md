@@ -1,6 +1,6 @@
 # Issue 5157: if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5157
 
 Original creator: was
 
@@ -12,7 +12,7 @@ This has been driving me nuts for a while.  If you do
 
 ```
 sage: EllipticCurve(997).gens(use_database=False)
-[This is the Trac macro *press control-c* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#press control-c-macro)
+[[press control-c]]
 sage: EllipticCurve([1,3]).gens(use_database=False)
 Traceback (most recent call last):
 ...

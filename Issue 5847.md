@@ -1,6 +1,6 @@
 # Issue 5847: Update GMP-ECM to 6.2.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5847
 
 Original creator: mabshoff
 
@@ -59,7 +59,7 @@ On Wednesday 02 June 2010 02:59:21 Bill Hart wrote:
 >
 > Bill.
 >
-> On 2 June 2010 02:54, Jason Moxham <jason`@`njkfrudils.plus.com> wrote:
+> On 2 June 2010 02:54, Jason Moxham <jason@njkfrudils.plus.com> wrote:
 > > I had forgotten about this , gmp-ecm-6.2.1 is 2 years old , what is it
 > > doing in sage ? :) , they fixed it in a later release , perhaps about a
 > > year ago
@@ -67,7 +67,7 @@ On Wednesday 02 June 2010 02:59:21 Bill Hart wrote:
 > > Jason
 > >
 > > On Wednesday 02 June 2010 02:46:58 Bill Hart wrote:
-> >> On 2 June 2010 02:40, William Stein <wstein`@`gmail.com> wrote:
+> >> On 2 June 2010 02:40, William Stein <wstein@gmail.com> wrote:
 > >> > Hi,
 > >> >
 > >> > Building Sage fails with GMP-ECM, as before.   Yes, I know this is
@@ -481,7 +481,7 @@ The patch is the following:
 ```
 --- configure.in        (revision 1515)
 +++ configure.in        (revision 1516)
-`@``@` -195,7 +195,7 `@``@`
+@@ -195,7 +195,7 @@
  # asm_redc enabled by default for x86_64 and 64 bit PowerPC
  if test "x$enable_asm_redc" = x; then
    case $host in
@@ -490,7 +490,7 @@ The patch is the following:
      *) enable_asm_redc=no;;
    esac
  fi
-`@``@` -203,8 +203,18 `@``@`
+@@ -203,8 +203,18 @@
  if test "x$enable_asm_redc" = xyes; then
    case $host in
      pentium4-*-* | pentium3-*-* | viac7-*-* | i786-*-*) ASMPATH=pentium4;;
@@ -511,9 +511,9 @@ The patch is the following:
      powerpc64-*-linux*)
                           ECM_INCLUDE([<"$srcdir"/powerpc64/powerpc-defs.m4>])
                           ASMPATH=powerpc64;;
-`@``@` -213,7 +223,9 `@``@`
+@@ -213,7 +223,9 @@
                           ASMPATH=athlon;;
-     *) AC_MSG_ERROR([This is the Trac macro *asm redc not available on this machine $host* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#asm redc not available on this machine $host-macro));;
+     *) AC_MSG_ERROR([[asm redc not available on this machine $host]]);;
    esac
 +fi
  
@@ -719,25 +719,25 @@ I remember adding 6.3 to the sage-on-gentoo tree for GMP-5
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
-  08 Sep 2010; François Bissey <f.r.bissey`@`massey.ac.nz> metadata.xml:
+  08 Sep 2010; François Bissey <f.r.bissey@massey.ac.nz> metadata.xml:
   fix metadata
 
-  03 Aug 2010; Christopher Schwan <cschwan`@`students.uni-mainz.de>
+  03 Aug 2010; Christopher Schwan <cschwan@students.uni-mainz.de>
   -ecm-6.2.3.ebuild, -ecm-6.3.ebuild:
   Removed old versions
 
 *ecm-6.3-r1 (23 Jul 2010)
 
-  23 Jul 2010; Christopher Schwan <cschwan`@`students.uni-mainz.de>
+  23 Jul 2010; Christopher Schwan <cschwan@students.uni-mainz.de>
   +ecm-6.3-r1.ebuild:
   Migrated to autotools-utils.eclass
 
-  08 Jul 2010; François Bissey <f.r.bissey`@`massey.ac.nz> ecm-6.3.ebuild:
+  08 Jul 2010; François Bissey <f.r.bissey@massey.ac.nz> ecm-6.3.ebuild:
   Hopefully fixed for gmp-5
 
 *ecm-6.3 (07 Jul 2010)
 
-  07 Jul 2010; François Bissey <f.r.bissey`@`massey.ac.nz> +ecm-6.3.ebuild:
+  07 Jul 2010; François Bissey <f.r.bissey@massey.ac.nz> +ecm-6.3.ebuild:
   Version bump. Hopefully helpfull with gmp-5.
 ```
 
@@ -1027,9 +1027,9 @@ Replying to [comment:40 jdemeyer]:
 
 ```
 $ /usr/libexec/gcc/powerpc-apple-darwin9/4.2.1/ld -v
-`@`(#)PROGRAM:ld  PROJECT:ld64-85.2.1
+@(#)PROGRAM:ld  PROJECT:ld64-85.2.1
 $ ld -v
-`@`(#)PROGRAM:ld  PROJECT:ld64-85.2.1
+@(#)PROGRAM:ld  PROJECT:ld64-85.2.1
 $ which ld
 /usr/bin/ld
 ```
@@ -1375,7 +1375,7 @@ Replying to [comment:24 zimmerma]:
 I wish I could. The patch is against configure.in. But I cannot make autotools work on the package, neither on any local machine, nor on boxen (where autoreconf is version 2.61):
 
 ```
-dima`@`boxen:/tmp/ecm-6.3.p0/src$ autoreconf -i
+dima@boxen:/tmp/ecm-6.3.p0/src$ autoreconf -i
 Remember to add `AC_PROG_LIBTOOL' to `configure.in'.
 libtoolize: `config.guess' exists: use `--force' to overwrite
 libtoolize: `config.sub' exists: use `--force' to overwrite
@@ -1384,7 +1384,7 @@ configure.in:185: error: possibly undefined macro: AC_OPENMP
       If this token and others are legitimate, please use m4_pattern_allow.
       See the Autoconf documentation.
 autoreconf: /usr/bin/autoconf failed with exit status: 1
-dima`@`boxen:/tmp/ecm-6.3.p0/src$ 
+dima@boxen:/tmp/ecm-6.3.p0/src$ 
 ```
 
  sorry...
@@ -2308,7 +2308,7 @@ If the above works, you could then patch `module_list.py`:
 diff --git a/module_list.py b/module_list.py
 --- a/module_list.py
 +++ b/module_list.py
-`@``@` -561,6 +561,7 `@``@`
+@@ -561,6 +561,7 @@
      Extension('sage.libs.libecm',
                sources = ['sage/libs/libecm.pyx'],
                libraries = ['ecm', 'gmp'],
@@ -2344,7 +2344,7 @@ Hmmm, apparently the patch should read:
 diff --git a/module_list.py b/module_list.py
 --- a/module_list.py
 +++ b/module_list.py
-`@``@` -561,6 +561,7 `@``@`
+@@ -561,6 +561,7 @@
      Extension('sage.libs.libecm',
                sources = ['sage/libs/libecm.pyx'],
                libraries = ['ecm', 'gmp'],

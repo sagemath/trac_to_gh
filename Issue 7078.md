@@ -1,6 +1,6 @@
 # Issue 7078: SageNB -- Introspection does not format output properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7078
 
 Original creator: timdumol
 

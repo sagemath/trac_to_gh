@@ -1,6 +1,6 @@
 # Issue 4551: notebook -- implement Notebook Settings page with email system on/off setting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4551
 
 Original creator: TimothyClemans
 

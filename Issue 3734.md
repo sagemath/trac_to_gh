@@ -1,6 +1,6 @@
 # Issue 3734: inverse() fails for 0 by 0 matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3734
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 6927: extend CachedFunction to handle disk-cache
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6927
 
 Original creator: boothby
 
@@ -41,7 +41,7 @@ via a partial function evaluation object (which is also somewhere in Python -- s
 [4:33pm] williamstein:
 Pickling would of course only be an issue if you generalize this to methods of a class.
 [4:33pm] williamstein:
-Oh, it could also be a problem if you say combine this with `@`parallel and multiprocessing.
+Oh, it could also be a problem if you say combine this with @parallel and multiprocessing.
 [4:33pm] williamstein:
 Have you tried that?
 [4:34pm] williamstein:
@@ -65,7 +65,7 @@ Comment by was created at 2009-09-19 09:31:53
 I tried to apply this to a clean 4.1.2.alpha1 and got nowhere:
 
 ```
-wstein`@`sage:~/build/sage-4.1.2.alpha1$ ./sage
+wstein@sage:~/build/sage-4.1.2.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -120,7 +120,7 @@ I'm not sure if this problem is local to this patch, but running:
 
 
 ```
-`@`cached_function
+@cached_function
 def oddprime_factors(n):
      l = [p for p,e in factor(n) if p != 2]
      return len(l)
@@ -262,7 +262,7 @@ Comment by mpatel created at 2010-02-03 05:48:21
 V2 of the combined patch is an attempt to work around an absolute import problem with `sage -startuptime`.  Diff of the diffs:
 
 ```diff
-`@``@` -639,7 +639,7 `@``@` diff --git a/sage/parallel/multiprocessi
+@@ -639,7 +639,7 @@ diff --git a/sage/parallel/multiprocessi
  -from processing import Pool
  +from __future__ import absolute_import
  +
@@ -271,13 +271,13 @@ V2 of the combined patch is an attempt to work around an absolute import problem
   from functools import partial
   from sage.misc.fpickle import pickle_function, call_pickled_function
  -import ncpus
-`@``@` -647,8 +647,12 `@``@` diff --git a/sage/parallel/multiprocessi
+@@ -647,8 +647,12 @@ diff --git a/sage/parallel/multiprocessi
   
   def pyprocessing(processes=0):
       """
--`@``@` -62,7 +64,7 `@``@` def parallel_iter(processes, f, inputs):
+-@@ -62,7 +64,7 @@ def parallel_iter(processes, f, inputs):
 -     p = Pool(processes)
-+`@``@` -59,10 +61,10 `@``@` def parallel_iter(processes, f, inputs):
++@@ -59,10 +61,10 @@ def parallel_iter(processes, f, inputs):
 +         [(((2,), {}), 4), (((3,), {}), 6)]
 +     """
 +     if processes == 0: processes = ncpus.ncpus()

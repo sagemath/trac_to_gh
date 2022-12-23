@@ -1,6 +1,6 @@
 # Issue 7943: move docbuild commands to their own targets in SAGE_ROOT/makefile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7943
 
 Original creator: mvngu
 
@@ -234,10 +234,10 @@ Comment by mvngu created at 2010-03-04 03:02:48
 A comparison of the file `install` on this ticket and the corresponding file in Sage 4.3.4.alpha0 shows this:
 
 ```
-[mvngu`@`sage spkg]$ diff -Naur install.orig install
+[mvngu@sage spkg]$ diff -Naur install.orig install
 --- install.orig	2010-03-03 10:45:48.991436483 -0800
 +++ install	2010-02-21 14:51:11.000000000 -0800
-`@``@` -131,6 +131,9 `@``@`
+@@ -131,6 +131,9 @@
  PIL=`$newest pil`
  export PIL
  
@@ -247,7 +247,7 @@ A comparison of the file `install` on this ticket and the corresponding file in 
  LIBM4RI=`$newest libm4ri`
  export LIBM4RI
  
-`@``@` -364,14 +367,6 `@``@`
+@@ -364,14 +367,6 @@
      exit 1
  fi
  
@@ -262,7 +262,7 @@ A comparison of the file `install` on this ticket and the corresponding file in 
  if [ "$1" = "all" -a $? = 0 ]; then
      echo "To install gap, gp, singular, etc., scripts"
      echo "in a standard bin directory, start sage and"
-`@``@` -379,5 +374,8 `@``@`
+@@ -379,5 +374,8 @@
      echo "   sage: install_scripts('/usr/local/bin')"
      echo "at the Sage command prompt."
      echo ""

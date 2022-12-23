@@ -1,6 +1,6 @@
 # Issue 9162: cygwin:
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9162
 
 Original creator: was
 

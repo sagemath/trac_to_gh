@@ -1,6 +1,6 @@
 # Issue 7687: Remove leonconv binary from gap spkg (guava pkg).
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7687
 
 Original creator: was
 
@@ -12,7 +12,7 @@ We ship a Linux *binary* `leonconv` with every copy of Sage.  This is bad and a 
 
 
 ```
-wstein`@`sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ls -lh
+wstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ls -lh
 total 36K
 drwxr-xr-x 2 wstein wstein 4.0K 2008-03-31 03:55 ctjhai
 -rw-r--r-- 1 wstein wstein  147 2008-03-17 14:40 defs.h
@@ -20,7 +20,7 @@ drwxr-xr-x 4 wstein wstein 4.0K 2008-03-31 03:55 leon
 -rwxr-xr-x 1 wstein wstein  15K 2008-03-17 14:40 leonconv
 -rw-r--r-- 1 wstein wstein 4.0K 2008-03-17 14:40 leonconv.c
 -rwxr-xr-x 1 wstein wstein  262 2008-03-17 14:44 Makefile
-wstein`@`sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ./leonconv
+wstein@sage:~/build/sage-4.3.rc0/spkg/standard/gap-4.4.10.p12/src/pkg/guava3.4/src$ ./leonconv
 Error, usage: leonconv <switch> <inputfile> <outputfile>
 ```
 

@@ -1,6 +1,6 @@
 # Issue 6699: [with spkg; needs review] Update to Maxima 5.19.0 (particularly important for Solaris support).
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6699
 
 Original creator: drkirkby
 
@@ -73,7 +73,7 @@ File "/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py", lin
 Expected:
     [[[0,4],[3,1]],[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3],[1,2,3,4]]
 Got:
-    [[[0,4],[3,1]],[[[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3]],[This is the Trac macro *1,2,3,4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3,4-macro)]]
+    [[[0,4],[3,1]],[[[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3]],[[1,2,3,4]]]]
 **********************************************************************
 File "/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py", line 275:
     sage: maxima("laplace(diff(x(t),t),t,s)")

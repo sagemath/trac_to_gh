@@ -1,6 +1,6 @@
 # Issue 4168: native mpfr polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4168
 
 Original creator: robertwb
 

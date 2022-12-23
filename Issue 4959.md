@@ -1,6 +1,6 @@
 # Issue 4959: r's install_packages is broken in many variants of sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4959
 
 Original creator: was
 

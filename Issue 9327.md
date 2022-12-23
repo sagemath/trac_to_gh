@@ -1,6 +1,6 @@
 # Issue 9327: Bugs in the Simple Sage Server API of sagenb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9327
 
 Original creator: dpoetzsch
 

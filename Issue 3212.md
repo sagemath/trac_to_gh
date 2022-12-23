@@ -1,6 +1,6 @@
 # Issue 3212: Improving rescaling of matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3212
 
 Original creator: kcrisman
 

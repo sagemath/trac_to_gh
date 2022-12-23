@@ -1,6 +1,6 @@
 # Issue 4944: speed regression in finding roots over number fields when an embedding is specified
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4944
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 5126: error coercing stacked polynomial rings to relative number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5126
 
 Original creator: ncalexan
 

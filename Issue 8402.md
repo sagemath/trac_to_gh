@@ -1,6 +1,6 @@
 # Issue 8402: Sanity check for Parent and Elemet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8402
 
 Original creator: hivert
 

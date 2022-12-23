@@ -1,6 +1,6 @@
 # Issue 7310: Use modal dialogs instead of javascript prompts for the rename prompt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7310
 
 Original creator: timdumol
 

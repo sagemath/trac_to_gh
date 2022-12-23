@@ -1,6 +1,6 @@
 # Issue 2333: [easy to implement] hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch') should be made to work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2333
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Wed, Feb 27, 2008 at 8:32 AM, Simon King <king`@`mathematik.uni-jena.de> wrote:
+On Wed, Feb 27, 2008 at 8:32 AM, Simon King <king@mathematik.uni-jena.de> wrote:
 > 
 >  Dear team,
 >  

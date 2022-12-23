@@ -1,6 +1,6 @@
 # Issue 6203: numerical noise on sparc solaris (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6203
 
 Original creator: was
 

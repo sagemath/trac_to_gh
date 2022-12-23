@@ -1,6 +1,6 @@
 # Issue 705: Make vtk an easy-to-install optional sage package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/705
 
 Original creator: was
 

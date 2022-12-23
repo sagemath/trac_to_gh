@@ -1,6 +1,6 @@
 # Issue 1705: factorization of polynomials over non-prime finite fields is TOTALLY BROKEN in Sage (and Singular?!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1705
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2778: SymbolicFormula class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2778
 
 Original creator: jason
 

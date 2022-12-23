@@ -1,6 +1,6 @@
 # Issue 8120: UniqueRepresentation and hash value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8120
 
 Original creator: hivert
 
@@ -242,7 +242,7 @@ diff --git a/sage/structure/unique_representation.py b/sage/structure/unique_rep
 ation.py
 --- a/sage/structure/unique_representation.py
 +++ b/sage/structure/unique_representation.py
-`@``@` -483,7 +483,9 `@``@` class UniqueRepresentation:
+@@ -483,7 +483,9 @@ class UniqueRepresentation:
              sage: x = UniqueRepresentation()
              sage: y = UniqueRepresentation()
              sage: hash(x) # random

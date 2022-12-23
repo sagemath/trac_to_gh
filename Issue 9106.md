@@ -1,6 +1,6 @@
 # Issue 9106: Wrong sphinx markup in UniqueRepresentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9106
 
 Original creator: hivert
 

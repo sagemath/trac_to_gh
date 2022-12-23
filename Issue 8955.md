@@ -1,6 +1,6 @@
 # Issue 8955: random_matrix(GF(2),2,1) always returns all 1 matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8955
 
 Original creator: malb
 

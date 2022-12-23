@@ -1,6 +1,6 @@
 # Issue 1441: latex(x1) -> x_1 might cause problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1441
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 4538: write a python script that runs a subprocess and kills it after a while
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4538
 
 Original creator: was
 

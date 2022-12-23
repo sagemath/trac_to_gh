@@ -1,6 +1,6 @@
 # Issue 5403: fix "from ... import *" in class QuadraticForm (cf #4470)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5403
 
 Original creator: tornaria
 

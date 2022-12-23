@@ -1,6 +1,6 @@
 # Issue 8813: symbolic expression -- doctest failure in sage-4.4.1.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8813
 
 Original creator: was
 

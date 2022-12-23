@@ -1,6 +1,6 @@
 # Issue 6856: cancel button in notebook user settings not working
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6856
 
 Original creator: wjp
 

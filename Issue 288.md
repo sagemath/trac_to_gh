@@ -1,6 +1,6 @@
 # Issue 288: new version of sagex with Robert B's many many enhancements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/288
 
 Original creator: was
 

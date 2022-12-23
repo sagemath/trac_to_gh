@@ -1,6 +1,6 @@
 # Issue 3804: implement a preview button for "edit"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3804
 
 Original creator: rlm
 

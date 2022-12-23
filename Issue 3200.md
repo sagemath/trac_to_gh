@@ -1,6 +1,6 @@
 # Issue 3200: fix 64 bit OSX build support for genus2reduction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3200
 
 Original creator: mabshoff
 

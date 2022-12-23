@@ -1,6 +1,6 @@
 # Issue 6801: weird bug in magma.eval
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6801
 
 Original creator: was
 

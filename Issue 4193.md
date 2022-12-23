@@ -1,6 +1,6 @@
 # Issue 4193: Coercion between relative and absolute number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4193
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 5998: add fxsr to cpuflags.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5998
 
 Original creator: was
 

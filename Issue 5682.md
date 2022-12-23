@@ -1,6 +1,6 @@
 # Issue 5682: Quotient for univariate Laurent polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5682
 
 Original creator: kedlaya
 

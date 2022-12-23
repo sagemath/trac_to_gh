@@ -1,6 +1,6 @@
 # Issue 1211: NTL crash in polynomial remainder over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1211
 
 Original creator: ncalexan
 
@@ -15,7 +15,7 @@ Keywords: ntl polynomial remainder ZZ crash segfault
 sage: x = ZZ['x'].0
 sage: x^2 % (2*x - 1)
 DivRem: quotient not defined over ZZ
-/Users/ncalexan/sage/local/bin/sage-sage: line 218: 28251 Abort trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/Users/ncalexan/sage/local/bin/sage-sage: line 218: 28251 Abort trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 
 Process SAGE exited abnormally with code 134
 ```

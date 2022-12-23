@@ -1,6 +1,6 @@
 # Issue 8553: Minor bugs in solve() if dictionary result requested
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8553
 
 Original creator: leif
 

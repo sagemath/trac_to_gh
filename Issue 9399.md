@@ -1,6 +1,6 @@
 # Issue 9399: Remove Sun-specific junk in rings/finite_rings/stdint.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9399
 
 Original creator: drkirkby
 

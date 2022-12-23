@@ -1,6 +1,6 @@
 # Issue 9618: Slight improvement to vertex_coloring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9618
 
 Original creator: ncohen
 

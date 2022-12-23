@@ -1,6 +1,6 @@
 # Issue 9897: Clean up and add functions to sage/libs/pari/decl.pxi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9898
 
 Original creator: jdemeyer
 

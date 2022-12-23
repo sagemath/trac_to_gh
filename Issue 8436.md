@@ -1,6 +1,6 @@
 # Issue 8436: Automatic LaTeX output is broken in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8436
 
 Original creator: novoselt
 

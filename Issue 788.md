@@ -1,6 +1,6 @@
 # Issue 788: a doctest change: random low order bits
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/788
 
 Original creator: was
 

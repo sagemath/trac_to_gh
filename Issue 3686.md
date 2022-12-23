@@ -1,6 +1,6 @@
 # Issue 3686: trivial problems in extcode.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3686
 
 Original creator: tabbott
 

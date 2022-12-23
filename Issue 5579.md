@@ -1,6 +1,6 @@
 # Issue 5579: preparsing error in recursive load of .sage files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5579
 
 Original creator: was
 

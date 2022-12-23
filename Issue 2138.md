@@ -1,6 +1,6 @@
 # Issue 2138: bugs in word_problem for AbelianGroupElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2138
 
 Original creator: wdj
 

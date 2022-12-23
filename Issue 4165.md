@@ -1,6 +1,6 @@
 # Issue 4165: Doctest for lisp.py blows chunks on (some) Mac OS X systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4165
 
 Original creator: justin
 

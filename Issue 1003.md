@@ -1,6 +1,6 @@
 # Issue 1003: [with patch] GF(2^n) elements powering overflow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1003
 
 Original creator: malb
 

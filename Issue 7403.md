@@ -1,6 +1,6 @@
 # Issue 7403: adds FiniteEnumeratedSet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7403
 
 Original creator: nthiery
 
@@ -60,7 +60,7 @@ I'm re-uploading a patch with the following folded in
 diff --git a/sage/sets/finite_enumerated_set.py b/sage/sets/finite_enumerated_set.py
 --- a/sage/sets/finite_enumerated_set.py
 +++ b/sage/sets/finite_enumerated_set.py
-`@``@` -123,8 +123,13 `@``@` class FiniteEnumeratedSet(UniqueRepresen
+@@ -123,8 +123,13 @@ class FiniteEnumeratedSet(UniqueRepresen
              sage: S = FiniteEnumeratedSet([1,2,3])
              sage: repr(S)
              '{1, 2, 3}'

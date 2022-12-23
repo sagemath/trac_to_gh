@@ -1,6 +1,6 @@
 # Issue 5623: 5x speedup in all_graph_colorings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5623
 
 Original creator: carlohamalainen
 

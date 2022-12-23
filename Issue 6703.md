@@ -1,6 +1,6 @@
 # Issue 6703: Sage will not build with Sun compilers on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6703
 
 Original creator: drkirkby
 

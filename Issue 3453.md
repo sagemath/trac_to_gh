@@ -1,6 +1,6 @@
 # Issue 3453: [with patch, needs review] add function pickling to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3453
 
 Original creator: yi
 

@@ -1,6 +1,6 @@
 # Issue 7459: sage virtualbox -- install imagemagick
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7459
 
 Original creator: was
 

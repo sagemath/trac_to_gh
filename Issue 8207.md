@@ -1,6 +1,6 @@
 # Issue 8207: Factoring a constant generic multivariate polynomial broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8207
 
 Original creator: wjp
 

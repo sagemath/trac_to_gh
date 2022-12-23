@@ -1,6 +1,6 @@
 # Issue 8067: New linbox-1.1.6.p3.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8067
 
 Original creator: jsp
 

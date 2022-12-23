@@ -1,6 +1,6 @@
 # Issue 6507: [with patch, needs review] doc sidebar toggle
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6507
 
 Original creator: mpatel
 

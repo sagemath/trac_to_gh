@@ -1,6 +1,6 @@
 # Issue 6641: switch the poset antichains method to use GenericBacktracker and add antichains_iterator.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6641
 
 Original creator: saliola
 

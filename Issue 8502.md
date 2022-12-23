@@ -1,6 +1,6 @@
 # Issue 8502: evaluating multivariate polynomials yields non-constant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8502
 
 Original creator: cremona
 

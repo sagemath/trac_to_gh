@@ -1,6 +1,6 @@
 # Issue 6569: sparse integer matrix doesn't raise an error on non-integer index
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6569
 
 Original creator: jason
 

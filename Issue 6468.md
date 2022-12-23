@@ -1,6 +1,6 @@
 # Issue 6468: FiniteField_prime_modn.__call__ should raise an error, rather than return an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6468
 
 Original creator: SimonKing
 

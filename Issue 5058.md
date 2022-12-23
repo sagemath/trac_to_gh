@@ -1,6 +1,6 @@
 # Issue 5058: sage -f and sage -i is broken for local files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5058
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7886: [with patch, needs work] Implement conjugacy classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7886
 
 Original creator: jlopez
 
@@ -317,7 +317,7 @@ If you look at the beginning of the patch, you have the following:
 
 ```
 # HG changeset patch
-# User Javier LÃ³pez PeÃ±a <vengoroso`@`gmail.com>
+# User Javier LÃ³pez PeÃ±a <vengoroso@gmail.com>
 # Date 1360004753 0
 # Node ID 2782ba59f14a8dafdb44e05a67972e5a9d4db0cf
 # Parent  fa8decac55338225dc33568ad600c261fc777b4c

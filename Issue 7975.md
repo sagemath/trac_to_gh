@@ -1,6 +1,6 @@
 # Issue 7975: remove dsage from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7975
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8075: Enhance sage/eclib interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8075
 
 Original creator: cremona
 

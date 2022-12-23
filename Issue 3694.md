@@ -1,6 +1,6 @@
 # Issue 3694: Update FLINT to the 1.0.13 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3694
 
 Original creator: mabshoff
 

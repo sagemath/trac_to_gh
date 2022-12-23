@@ -1,6 +1,6 @@
 # Issue 5514: implement exclusions for parametric 3d plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5514
 
 Original creator: wcauchois
 

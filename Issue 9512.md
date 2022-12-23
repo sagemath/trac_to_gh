@@ -1,6 +1,6 @@
 # Issue 9512: Sage Source Editor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9512
 
 Original creator: acleone
 

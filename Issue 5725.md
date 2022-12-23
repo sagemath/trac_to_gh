@@ -1,6 +1,6 @@
 # Issue 5725: [with patch; needs review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5725
 
 Original creator: was
 

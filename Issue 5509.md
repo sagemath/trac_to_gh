@@ -1,6 +1,6 @@
 # Issue 5509: Make a parametric_plot.pyx docstring a raw string because of a \times in it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5509
 
 Original creator: jason
 

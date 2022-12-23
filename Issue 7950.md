@@ -1,6 +1,6 @@
 # Issue 7950: factoring broken in 0 variable polynomial ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7950
 
 Original creator: burcin
 

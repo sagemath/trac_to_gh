@@ -1,6 +1,6 @@
 # Issue 7228: [with patch, need review] Generalized Petersen graph generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7228
 
 Original creator: AJonsson
 

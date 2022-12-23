@@ -1,6 +1,6 @@
 # Issue 9781: Enhanced fans fail for complicated cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9782
 
 Original creator: vbraun
 

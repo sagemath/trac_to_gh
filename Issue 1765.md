@@ -1,6 +1,6 @@
 # Issue 1765: allow list of variables as second input to solve command (very easy to implement)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1765
 
 Original creator: was
 

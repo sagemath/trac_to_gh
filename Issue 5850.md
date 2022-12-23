@@ -1,6 +1,6 @@
 # Issue 5850: add Creative Commons license to French tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5850
 
 Original creator: ddrake
 

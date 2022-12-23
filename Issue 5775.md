@@ -1,6 +1,6 @@
 # Issue 5775: Building the documentation after -bdisting is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5775
 
 Original creator: mabshoff
 

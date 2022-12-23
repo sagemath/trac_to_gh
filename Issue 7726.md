@@ -1,6 +1,6 @@
 # Issue 7726: Upgrade biopython package to 1.53
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7726
 
 Original creator: mhampton
 

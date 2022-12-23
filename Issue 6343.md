@@ -1,6 +1,6 @@
 # Issue 6343: Adds SageObject.check() generic testing framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6343
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 6948: powers of exp are over simplified
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6948
 
 Original creator: burcin
 

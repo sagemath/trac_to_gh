@@ -1,6 +1,6 @@
 # Issue 9641: Race condition with sage -tp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9641
 
 Original creator: robertwb
 

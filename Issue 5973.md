@@ -1,6 +1,6 @@
 # Issue 5973: Fix spkg-check target for FLINT on OSX 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5973
 
 Original creator: mabshoff
 

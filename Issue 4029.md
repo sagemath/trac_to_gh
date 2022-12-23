@@ -1,6 +1,6 @@
 # Issue 4029: sage-env kills the shell when called from "wrong" directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4029
 
 Original creator: dphilp
 

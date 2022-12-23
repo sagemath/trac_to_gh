@@ -1,6 +1,6 @@
 # Issue 8912: documentation error in pseudo_order for finite monoid element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8912
 
 Original creator: saliola
 

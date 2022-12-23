@@ -1,6 +1,6 @@
 # Issue 9402: Extend dokchitser L-function package in Elliptic Curves to Number Fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9402
 
 Original creator: adam
 

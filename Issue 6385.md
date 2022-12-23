@@ -1,6 +1,6 @@
 # Issue 6385: Python relative import messes up Sage command line arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6385
 
 Original creator: rlm
 

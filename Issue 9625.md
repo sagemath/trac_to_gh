@@ -1,6 +1,6 @@
 # Issue 9625: solve hangs on a small algebraic system with 4 equations in 4 unknowns
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9625
 
 Original creator: zimmerma
 

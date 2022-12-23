@@ -1,6 +1,6 @@
 # Issue 1834: General linear group over ZZ hangs in __call__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1834
 
 Original creator: kohel
 

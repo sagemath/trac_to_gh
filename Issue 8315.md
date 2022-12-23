@@ -1,6 +1,6 @@
 # Issue 8315: Reference manual layout: toggles, sidebar links
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8315
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 8026: If possible -- update prereq to require gfortran when installing on any OS except OS X.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8026
 
 Original creator: was
 

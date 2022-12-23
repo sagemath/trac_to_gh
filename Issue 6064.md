@@ -1,6 +1,6 @@
 # Issue 6064: allow rationals in kronecker_symbol and legendre_symbol
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6064
 
 Original creator: tornaria
 

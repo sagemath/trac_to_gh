@@ -1,6 +1,6 @@
 # Issue 8425: BipartiteGraph add_edge allows bipartite property to be violated.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8425
 
 Original creator: rhinton
 

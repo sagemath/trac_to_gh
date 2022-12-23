@@ -1,6 +1,6 @@
 # Issue 7450: implement is_prime() for ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7450
 
 Original creator: AlexGhitza
 

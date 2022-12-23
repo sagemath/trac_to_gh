@@ -1,6 +1,6 @@
 # Issue 5624: matrices cache their hash, which causes subtle bugs when moving objects between 32/64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5624
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7667: clickable interact creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7667
 
 Original creator: kcrisman
 

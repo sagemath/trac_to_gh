@@ -1,6 +1,6 @@
 # Issue 5908: [with patch; needs review] fix issues/bugs with load/attach
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5908
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5790: Updating some quirks in partition.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5790
 
 Original creator: andrew.mathas
 

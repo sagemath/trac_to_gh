@@ -1,6 +1,6 @@
 # Issue 202: Elliptic curve point multiplication bug.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/202
 
 Original creator: was
 

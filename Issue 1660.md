@@ -1,6 +1,6 @@
 # Issue 1660: maxima interface bug caused by bad use of file when evaluating large input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1660
 
 Original creator: was
 
@@ -16,7 +16,7 @@ Assignee: was
 >
 
 This is it:
-lwdrob`@`lwdrob-comp:~/Disertatie$ sage
+lwdrob@lwdrob-comp:~/Disertatie$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.9.1, Release Date: 2007-12-24                       |

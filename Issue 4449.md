@@ -1,6 +1,6 @@
 # Issue 4449: sage-combinat install script doesn't work with 3.2.alpha2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4449
 
 Original creator: saliola
 

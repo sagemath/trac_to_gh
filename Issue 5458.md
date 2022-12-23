@@ -1,6 +1,6 @@
 # Issue 5458: Refactor set partitions with a single entry points in global name space for the various cartan types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5458
 
 Original creator: nthiery
 

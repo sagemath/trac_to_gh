@@ -1,6 +1,6 @@
 # Issue 6681: cliquer doesn't work in 64-bit OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6681
 
 Original creator: jhpalmieri
 

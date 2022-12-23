@@ -1,6 +1,6 @@
 # Issue 4062: Problems with Eisenstein series code?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4062
 
 Original creator: craigcitro
 

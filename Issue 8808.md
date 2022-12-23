@@ -1,6 +1,6 @@
 # Issue 8808: upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8808
 
 Original creator: was
 

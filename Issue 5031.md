@@ -1,6 +1,6 @@
 # Issue 5031: get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving a "gem"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5031
 
 Original creator: was
 

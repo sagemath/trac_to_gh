@@ -1,6 +1,6 @@
 # Issue 6906: [with spkg, needs review] update Mercurial to version 1.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6906
 
 Original creator: jhpalmieri
 

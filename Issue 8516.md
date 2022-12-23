@@ -1,6 +1,6 @@
 # Issue 8516: Optional package ginv-1.9-20080723 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8516
 
 Original creator: drkirkby
 

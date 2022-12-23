@@ -1,6 +1,6 @@
 # Issue 6282: document SAGE_CHECK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6282
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9750: Document that PARI no longer assumes more than GRH
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9750
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 8814: Remove redundant checks for elliptic curve group structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8814
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 9677: Sage Sets don't implement genuine comparison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9677
 
 Original creator: rlm
 

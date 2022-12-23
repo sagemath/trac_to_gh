@@ -1,6 +1,6 @@
 # Issue 7925: solveGLPK and solve_coin need doctests !!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7925
 
 Original creator: ncohen
 

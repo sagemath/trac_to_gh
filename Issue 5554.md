@@ -1,6 +1,6 @@
 # Issue 5554: implement cholesky_decomposition for matrices other than RDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5554
 
 Original creator: ncalexan
 

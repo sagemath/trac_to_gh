@@ -1,6 +1,6 @@
 # Issue 3365: [with patch; needs review] add a %c mode to the notebook (like %fortran)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3365
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8271: iconv dumps core running make check on Solaris (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8271
 
 Original creator: drkirkby
 

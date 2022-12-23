@@ -1,6 +1,6 @@
 # Issue 5537: [with patch, not ready for review] bug in __cmp__ in permgroup_element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5537
 
 Original creator: jhpalmieri
 

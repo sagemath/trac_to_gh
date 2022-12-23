@@ -1,6 +1,6 @@
 # Issue 545: polish the new symbolic logic code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/545
 
 Original creator: was
 
@@ -988,7 +988,7 @@ Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/dev
 
 
 ```
-was`@`sage:~/build/sage-3.2.rc1/devel/sage$ ls
+was@sage:~/build/sage-3.2.rc1/devel/sage$ ls
 booleval.py     build     c_lib    install         MANIFEST.in      PKG-INFO     README.txt    sage-push          spkg-delauto
 boolformula.py  build.py  clib.py  logicparser.py  module_list.py   propcalc.py  sage          setup.py           spkg-dist
 boolopt.py      bundle    export   logictable.py   module_list.pyc  pull         sagebuild.py  spkg-debian-maybe  spkg-install
@@ -1088,7 +1088,7 @@ Comment by mabshoff created at 2009-01-23 01:45:18
 Reopened: The coverage of this code *sucks*:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/
 booleval.py: 100% (3 of 3)
 boolformula.py: 93% (30 of 32)
 boolopt.py: 0% (0 of 55)

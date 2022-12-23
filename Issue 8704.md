@@ -1,6 +1,6 @@
 # Issue 8704: Improve the _repr_ of IntegerRange
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8704
 
 Original creator: hivert
 

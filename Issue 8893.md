@@ -1,6 +1,6 @@
 # Issue 8893: disjoint rooted paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8893
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 9359: Get number field coverage up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9359
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 935: remove no longer present files from the sage repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/935
 
 Original creator: mabshoff
 

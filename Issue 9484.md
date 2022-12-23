@@ -1,6 +1,6 @@
 # Issue 9484: add demos for implicit_plot3d that show how to do CSG (constructive solid geometry)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9484
 
 Original creator: cwitty
 

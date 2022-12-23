@@ -1,6 +1,6 @@
 # Issue 8616: Symbolic type checking and expression parcing module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8616
 
 Original creator: yuri.k
 

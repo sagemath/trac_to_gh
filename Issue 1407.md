@@ -1,6 +1,6 @@
 # Issue 1407: deciding that generators don't generate an order in some extensions can be way way too slow.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1407
 
 Original creator: was
 

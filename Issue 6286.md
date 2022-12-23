@@ -1,6 +1,6 @@
 # Issue 6286: Inconsistence typesettings of PrimitiveFunctions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6286
 
 Original creator: gmhossain
 

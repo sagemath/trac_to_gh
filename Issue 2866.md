@@ -1,6 +1,6 @@
 # Issue 2866: [with patch, needs review] use tempfile.NamedTemporaryFile for unit tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2866
 
 Original creator: yi
 

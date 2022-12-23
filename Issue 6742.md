@@ -1,6 +1,6 @@
 # Issue 6742: Stylesheets are not always loaded in Chrome
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6742
 
 Original creator: mpatel
 

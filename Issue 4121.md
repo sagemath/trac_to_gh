@@ -1,6 +1,6 @@
 # Issue 4121: [with patch, needs review] correct the translation for automorphism groups of graphs with edge labels
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4121
 
 Original creator: rlm
 

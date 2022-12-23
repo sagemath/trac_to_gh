@@ -1,6 +1,6 @@
 # Issue 1696: osx 10.4 2.9.2 instructions don't work.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1696
 
 Original creator: jkantor
 

@@ -1,6 +1,6 @@
 # Issue 3134: binomial doesn't take big integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3134
 
 Original creator: gebner
 

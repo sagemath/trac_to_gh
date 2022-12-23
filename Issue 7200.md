@@ -1,6 +1,6 @@
 # Issue 7200: Fixing longest increasing subsequence (permutation method)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7200
 
 Original creator: vferay
 

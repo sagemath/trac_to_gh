@@ -1,6 +1,6 @@
 # Issue 2181: pari 2.3.3 on osx -- gets build without readline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2181
 
 Original creator: was
 

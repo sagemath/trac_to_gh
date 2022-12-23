@@ -1,6 +1,6 @@
 # Issue 7811: Worksheet list CSS: Account for special characters in login names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7811
 
 Original creator: mpatel
 
@@ -14,7 +14,7 @@ We need to account for this difference
 
 ```
 $ grep compile twist.py template.py
-twist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|`@`]*')
+twist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|@]*')
 template.py:css_illegal_re = re.compile(r'[^-A-Za-z_0-9]')
 ```
 

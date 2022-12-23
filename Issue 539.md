@@ -1,6 +1,6 @@
 # Issue 539: Integer.__int__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/539
 
 Original creator: dmharvey
 

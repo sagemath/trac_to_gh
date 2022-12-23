@@ -1,6 +1,6 @@
 # Issue 5375: [with patch, needs review] minor problems with ReST in geometry/lattice_polytope.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5375
 
 Original creator: jhpalmieri
 

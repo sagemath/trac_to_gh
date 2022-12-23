@@ -1,6 +1,6 @@
 # Issue 6185: [with patch, needs review] Add SBox -> CNF Conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6185
 
 Original creator: malb
 

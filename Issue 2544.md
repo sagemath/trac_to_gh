@@ -1,6 +1,6 @@
 # Issue 2544: modabvar -- rewrite of modular abelian varieties rewrite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2544
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 948: very slow factorization over a numberfield in a 2-variable ring [singular related]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/948
 
 Original creator: mabshoff
 

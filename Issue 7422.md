@@ -1,6 +1,6 @@
 # Issue 7422: New Incidence Structure and Block Design constructions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7422
 
 Original creator: brett
 

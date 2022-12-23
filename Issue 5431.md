@@ -1,6 +1,6 @@
 # Issue 5431: Command line parser fails on hex values with 'e'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5431
 
 Original creator: rhinton
 

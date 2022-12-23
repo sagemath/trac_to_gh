@@ -1,6 +1,6 @@
 # Issue 4381: sage -wthread not passed correctly to ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4381
 
 Original creator: jsp
 
@@ -17,7 +17,7 @@ See the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/s
 
 
 ```
-[jaap`@`paix bin]$ diff sage-sage ../../../sage-3.1.2/local/bin/sage-sage
+[jaap@paix bin]$ diff sage-sage ../../../sage-3.1.2/local/bin/sage-sage
 51d50
 <     echo "  -combinat <...> -- run sage-combinat patch management script"
 188a188,203
@@ -41,22 +41,22 @@ See the changes from sage-3.1.2 to sage-3.1.3 in the file $SAGE_ROOT/local/bin/s
 > SAGE_STARTUP_COMMAND="$SAGE_STARTUP_COMMAND"";_=sage.misc.interpreter.load_startup_file(\"$SAGE_STARTUP_FILE\")"
 > export SAGE_STARTUP_COMMAND
 200c217
-<     sage-ipython "$`@`" -i
+<     sage-ipython "$@" -i
 ---
->     sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+>     sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 251,257d267
 < if [ $1 = '-combinat' -o $1 = '--combinat' ]; then
 <     cd "$CUR"
 <     shift
-<     sage-combinat "$`@`"
+<     sage-combinat "$@"
 <     exit $?
 < fi
 < 
 514c524
-<    sage-ipython  $LOGOPT -rcfile="$IPYTHONRC" -i -c "$SAGE_STARTUP_COMMAND" "$`@`" 
+<    sage-ipython  $LOGOPT -rcfile="$IPYTHONRC" -i -c "$SAGE_STARTUP_COMMAND" "$@" 
 ---
->    sage-ipython  $LOGOPT -rcfile="$IPYTHONRC" -c "$SAGE_STARTUP_COMMAND" "$`@`"
-[jaap`@`paix bin]$ 
+>    sage-ipython  $LOGOPT -rcfile="$IPYTHONRC" -c "$SAGE_STARTUP_COMMAND" "$@"
+[jaap@paix bin]$ 
 
 
 ```
@@ -113,7 +113,7 @@ After applying the patch to sage-3.2.1.alpha0:
 
 ```
  mhansen: after installing wxPython in sage-3.2.1.alph0 I get:
-<jaap> [jaap`@`paix sage-3.2.1.alpha0]$ ./sage -wthread
+<jaap> [jaap@paix sage-3.2.1.alpha0]$ ./sage -wthread
 <jaap> ----------------------------------------------------------------------
 <jaap> | Sage Version 3.2.1.alpha0, Release Date: 2008-11-23                |
 <jaap> | Type notebook() for the GUI, and license() for information.        |

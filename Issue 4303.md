@@ -1,6 +1,6 @@
 # Issue 4303: Plotting: points(list_of_points, rgbcolor=c) gives strangely colored results with exactly 3 points.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4303
 
 Original creator: jbandlow
 
@@ -46,7 +46,7 @@ class GraphicPrimitiveFactory_from_point_list(GraphicPrimitiveFactory):
             and len(points) > 0 \
             and not isinstance(points[0], (list,tuple))):
             try:
-                points = [This is the Trac macro *float* that was inherited from the migration called with arguments (z) for z in points)](https://trac.sagemath.org/wiki/WikiMacros#float-macro)
+                points = [[float(z) for z in points]]
             except TypeError:
                 pass
 

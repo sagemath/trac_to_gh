@@ -1,6 +1,6 @@
 # Issue 2270: glib spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2270
 
 Original creator: gfurnish
 
@@ -196,7 +196,7 @@ sage: An error occurred while installing glib-2.14.0.p0
 OK, so I do:
 
 ```
-was`@`sage:~/build/sage-2.10.3.alpha0$ sudo apt-get install pkg-config
+was@sage:~/build/sage-2.10.3.alpha0$ sudo apt-get install pkg-config
 ```
 
 

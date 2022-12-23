@@ -1,6 +1,6 @@
 # Issue 3374: some symbolic values cannot be printed [new symbolics]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3374
 
 Original creator: cwitty
 

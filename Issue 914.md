@@ -1,6 +1,6 @@
 # Issue 914: NTL wrapper build fails on Ubuntu 7.10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/914
 
 Original creator: mhansen
 
@@ -30,7 +30,7 @@ ERROR: There was an error building c_lib.
 
 
 Here is the ouput of g++ -v
-mike`@`mike-laptop:/opt/sage$ g++ -v
+mike@mike-laptop:/opt/sage$ g++ -v
 Using built-in specs.
 Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.1.3 --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release x86_64-linux-gnu

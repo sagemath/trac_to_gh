@@ -1,6 +1,6 @@
 # Issue 5884: OpenSuse 11/x86-64: doctest failure in groups/perm_gps/permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5884
 
 Original creator: mabshoff
 

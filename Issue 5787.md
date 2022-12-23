@@ -1,6 +1,6 @@
 # Issue 5787: [with patch, needs review] Improve doctest coverage for sage/modular/hecke (continued)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5787
 
 Original creator: davidloeffler
 

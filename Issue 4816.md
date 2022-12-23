@@ -1,6 +1,6 @@
 # Issue 4816: Test failure in ell_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4816
 
 Original creator: justin
 

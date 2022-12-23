@@ -1,6 +1,6 @@
 # Issue 8487: Use use_grobner in to_poly_solve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8487
 
 Original creator: robert.marik
 

@@ -1,6 +1,6 @@
 # Issue 3536: jmol -- update the spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3536
 
 Original creator: was
 

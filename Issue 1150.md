@@ -1,6 +1,6 @@
 # Issue 1150: update documentation from GMP-ECM 6.0.1 to 6.1.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1150
 
 Original creator: zimmerma
 

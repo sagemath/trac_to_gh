@@ -1,6 +1,6 @@
 # Issue 8481: lift doesn't work for vector space homomorphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8481
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 5289: gdmodule fails to build on Linux/Solaris systems without a system wide libpng
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5289
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6456: Upgrade cvxopt in sage from 0.9 to 1.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6456
 
 Original creator: was
 
@@ -258,9 +258,9 @@ Use the following settings.
 
 
 ```
-kirkby`@`t2:[~] $ echo $PATH
+kirkby@t2:[~] $ echo $PATH
 /usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin
-kirkby`@`t2:[~] $ echo $LD_LIBRARY_PATH
+kirkby@t2:[~] $ echo $LD_LIBRARY_PATH
 /usr/local/gcc-4.4.1-sun-linker/lib:=/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9:/usr/local/lib
 ```
 
@@ -804,10 +804,10 @@ The second patch, patches/cvxopt.h differs from src/src/C/cvxopt.h by very littl
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/cvxopt.h patches/cvxopt.h
+drkirkby@hawk:~/sage-4.5.2.alpha0/spkg/optional/cvxopt-1.1.2$ diff -u src/src/C/cvxopt.h patches/cvxopt.h
 --- src/src/C/cvxopt.h	Mon Jul 26 11:16:09 2010
 +++ patches/cvxopt.h	Mon Jul 26 10:58:48 2010
-`@``@` -26,7 +26,14 `@``@`
+@@ -26,7 +26,14 @@
  /* ANSI99 complex is disabled during build of CHOLMOD */
  
  #ifndef NO_ANSI99_COMPLEX
@@ -1435,7 +1435,7 @@ and btw, covsel also works and looks like this:
 
 
 ```
-harri`@`stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ sage -python covsel
+harri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ sage -python covsel
 500 rows/columns, 1741 nonzeros
 
 Newton decrement squared: 5.01869e+08
@@ -1448,7 +1448,7 @@ Newton decrement squared: 5.25935e-03
 Newton decrement squared: 6.89978e-08
 Newton decrement squared: 1.34440e-17
 number of iterations:  9
-harri`@`stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ echo "$?"
+harri@stdbox:~/Downloads/cvxopt-1.1.2/src/examples/doc/chap7$ echo "$?"
 0
 ```
 
@@ -1931,7 +1931,7 @@ this should suffice and cure this particular headache.
 ```
 --- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300
 +++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700
-`@``@` -61,7 +61,7 `@``@`
+@@ -61,7 +61,7 @@
  typedef struct {
    PyObject_HEAD
    void *buffer;          /* in column-major-mode array of type 'id' */
@@ -1969,7 +1969,7 @@ Replying to [comment:80 dimpase]:
 ```
  --- a/patches/cvxopt.h  Mon Jul 26 18:45:42 2010 +0300
  +++ b/patches/cvxopt.h  Thu Jul 29 09:12:21 2010 -0700
- `@``@` -61,7 +61,7 `@``@`
+ @@ -61,7 +61,7 @@
   typedef struct {
     PyObject_HEAD
     void *buffer;          /* in column-major-mode array of type 'id' */
@@ -3617,7 +3617,7 @@ Why the hell do the operating systems do this. Solaris is just as bad.
 This is Solaris 10
 
 ```
-kirkby`@`t2:64 ~$ uname -r
+kirkby@t2:64 ~$ uname -r
 5.10
 ```
 
@@ -3635,7 +3635,7 @@ AIX lpar5 1 6 00C6B7C04C00
 Linux is no better 
 
 ```
-kirkby`@`sage:~$ uname -r
+kirkby@sage:~$ uname -r
 2.6.24-28-server
 ```
 

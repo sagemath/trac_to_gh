@@ -1,6 +1,6 @@
 # Issue 3936: Throw exceptions on nonsensical comparisons?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3936
 
 Original creator: nbruin
 

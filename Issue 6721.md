@@ -1,6 +1,6 @@
 # Issue 6721: spell-check all modules under sage/media
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6721
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 1449: very serious (but trivial to fix) notebook bug: shift-enter doesn't work on macs; it's shift-return!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1449
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: boothby
 ```
 
 
-On Dec 10, 2007 6:08 AM, G. Edgar <edgar`@`math.ohio-state.edu> wrote:
+On Dec 10, 2007 6:08 AM, G. Edgar <edgar@math.ohio-state.edu> wrote:
 > 
 > It says to use "shift enter" to evaluate an input cell.
 > But it seems this is wrong on Mac, and one should use "shift return".

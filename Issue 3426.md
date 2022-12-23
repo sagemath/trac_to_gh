@@ -1,6 +1,6 @@
 # Issue 3426: bessel_K function is broken (with patch, needs review)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3426
 
 Original creator: bober
 

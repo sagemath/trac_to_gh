@@ -1,6 +1,6 @@
 # Issue 6302: [with patch; needs review] make openopt an optional spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6302
 
 Original creator: was
 

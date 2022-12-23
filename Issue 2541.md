@@ -1,6 +1,6 @@
 # Issue 2541: [with patch, needs review] Fixes bugs in binary_codes.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2541
 
 Original creator: rlm
 

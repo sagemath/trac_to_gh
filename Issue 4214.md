@@ -1,6 +1,6 @@
 # Issue 4214: elliptic_logarithm gives inaccurate answers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4214
 
 Original creator: AlexGhitza
 

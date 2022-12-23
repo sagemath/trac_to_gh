@@ -1,6 +1,6 @@
 # Issue 9474: Revert ECL back to ecl-10.2.1 and apply patches for Solaris 10 and OpenSolaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9474
 
 Original creator: drkirkby
 
@@ -131,7 +131,7 @@ I appreciate that. But all 3 options are POSIX, and as you say it does not break
 Here's the output on my Sony Vaio laptop (OpenSolaris 2009.06 snv_111b)
 
 ```
-drkirkby`@`laptop:~$ uname -rsm
+drkirkby@laptop:~$ uname -rsm
 SunOS 5.11 i86pc
 ```
 
@@ -147,7 +147,7 @@ SunOS 5.11 i86pc
 and my Sun Ultra 27 (OpenSolaris 2009.06, upgraded to snv_134)
 
 ```
-drkirkby`@`hawk:~$ uname -rsm
+drkirkby@hawk:~$ uname -rsm
 SunOS 5.11 i86pc
 ```
 
@@ -349,7 +349,7 @@ John's successful tests would appear to have been built with `ecl-10.2.1.p1.spkg
 
 
 ```
-kirkby`@`t2:[/scratch/palmieri/sage-4.5.rc0/spkg/standard] $ ls -l ecl-*
+kirkby@t2:[/scratch/palmieri/sage-4.5.rc0/spkg/standard] $ ls -l ecl-*
 -rw-r--r--   1 palmieri 1005     4850369 Jul 12 13:31 ecl-10.2.1.p1.spkg
 -rw-r--r--   1 palmieri 1005     4820179 Jul 11 12:12 ecl-10.2.1.spkg
 ```

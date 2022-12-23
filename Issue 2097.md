@@ -1,6 +1,6 @@
 # Issue 2097: aspect_ratio option to show() for function plots does not work correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2097
 
 Original creator: moretti
 

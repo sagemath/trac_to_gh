@@ -1,6 +1,6 @@
 # Issue 9995: Flint is installing shared library with .so extension on AIX - it should be .a on AIX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9996
 
 Original creator: drkirkby
 

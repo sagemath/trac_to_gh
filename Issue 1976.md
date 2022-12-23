@@ -1,6 +1,6 @@
 # Issue 1976: [with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1976
 
 Original creator: was
 

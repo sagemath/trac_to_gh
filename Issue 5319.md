@@ -1,6 +1,6 @@
 # Issue 5319: Fix location of source in the Sage's installation manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5319
 
 Original creator: mabshoff
 

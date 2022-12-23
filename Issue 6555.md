@@ -1,6 +1,6 @@
 # Issue 6555: Twisted produces deprecation warning about using md5 module in Python 2.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6555
 
 Original creator: jason
 

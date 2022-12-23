@@ -1,6 +1,6 @@
 # Issue 6368: shift-tab in the notebook should go back 4 spaces instead of going to the previous input cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6368
 
 Original creator: was
 

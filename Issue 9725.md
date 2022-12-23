@@ -1,6 +1,6 @@
 # Issue 9725: German Translation of the Tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9725
 
 Original creator: phil
 
@@ -459,7 +459,7 @@ I also ran make ptestlong after adding the directory of the german tutorial the 
 
 
 ```
-phil`@`phil-lt:~/Applications/sage-4.7.rc4$ make ptestlong
+phil@phil-lt:~/Applications/sage-4.7.rc4$ make ptestlong
 ...
 All tests passed!
 Total time for all tests: 3914.3 seconds

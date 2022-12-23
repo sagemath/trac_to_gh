@@ -1,6 +1,6 @@
 # Issue 8635: Typos in DisjointUnionEnumeratedSets.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8635
 
 Original creator: hivert
 

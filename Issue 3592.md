@@ -1,6 +1,6 @@
 # Issue 3592: please update sympy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3592
 
 Original creator: certik
 

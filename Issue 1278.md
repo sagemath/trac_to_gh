@@ -1,6 +1,6 @@
 # Issue 1278: make R an optional Sage package that builds on everything (in prep for making it non-optional)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1278
 
 Original creator: was
 

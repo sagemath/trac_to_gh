@@ -1,6 +1,6 @@
 # Issue 5895: Limit number of worksheet snapshots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5895
 
 Original creator: rbeezer
 

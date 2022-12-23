@@ -1,6 +1,6 @@
 # Issue 6792: 11 doctest failures in devel/sage/doc/fr/tutorial/interfaces.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6792
 
 Original creator: drkirkby
 
@@ -65,14 +65,14 @@ File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/fr/tutorial/interface
 Expected:
     [[[0,4],[3,1]],[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3],[1,2,3,4]]
 Got:
-    [[[0,4],[3,1]],[[[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3]],[This is the Trac macro *1,2,3,4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3,4-macro)]]
+    [[[0,4],[3,1]],[[[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3]],[[1,2,3,4]]]]
 **********************************************************************
 File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/fr/tutorial/interfaces.rst", line 295:
     sage: eigA
 Expected:
     [[[-2,-1,1],[1,1,1]],[0,0,1],[0,1,3],[1,1/2,5/6]]
 Got:
-    [[[-2,-1,1],[1,1,1]],[This is the Trac macro *[0,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[0,0,1-macro),[This is the Trac macro *0,1,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,1,3-macro),[This is the Trac macro *1,1/2,5/6* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1/2,5/6-macro)]]
+    [[[-2,-1,1],[1,1,1]],[[[0,0,1]],[[0,1,3]],[[1,1/2,5/6]]]]
 **********************************************************************
 File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/fr/tutorial/interfaces.rst", line 297:
     sage: v1 = V(sage_eval(repr(eigA[1]))); lambda1 = eigA[0][0][0]

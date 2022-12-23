@@ -1,6 +1,6 @@
 # Issue 4202: latex derivatives of symbolic functions nicely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4202
 
 Original creator: jason
 

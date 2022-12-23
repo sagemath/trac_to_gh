@@ -1,6 +1,6 @@
 # Issue 947: Cython reload produces ln errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/947
 
 Original creator: jvoight
 

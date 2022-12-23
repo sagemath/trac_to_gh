@@ -1,6 +1,6 @@
 # Issue 9526: implement some general improvements to modular abelian varieties, needed for my research
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9526
 
 Original creator: was
 

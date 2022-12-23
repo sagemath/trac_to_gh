@@ -1,6 +1,6 @@
 # Issue 3210: [with patch, needs review] plotting Z_p as a fractal image
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3210
 
 Original creator: robertwb
 

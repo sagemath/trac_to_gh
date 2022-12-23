@@ -1,6 +1,6 @@
 # Issue 1742: [with spkg] Build ntl with debug info
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1742
 
 Original creator: mabshoff
 

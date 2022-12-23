@@ -1,6 +1,6 @@
 # Issue 3978: Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3978
 
 Original creator: mabshoff
 
@@ -64,7 +64,7 @@ On Fedora 9, 32 bits I get:
 
 
 ```
-jaap`@`paix sage-3.1.2.alpha1]$ ./sage -t  devel/sage/sage/stats/hmm/chmm.pyx
+jaap@paix sage-3.1.2.alpha1]$ ./sage -t  devel/sage/sage/stats/hmm/chmm.pyx
 sage -t  devel/sage/sage/stats/hmm/chmm.pyx                 **********************************************************************
 File "/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py", line 392:
     sage: m

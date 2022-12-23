@@ -1,6 +1,6 @@
 # Issue 9123: implement Schur algebras using AlgebrasWithBasis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9123
 
 Original creator: hthomas
 

@@ -1,6 +1,6 @@
 # Issue 245: a bunch of random notebook improvement ideas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/245
 
 Original creator: was
 

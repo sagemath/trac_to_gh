@@ -1,6 +1,6 @@
 # Issue 522: singular build issues on a mac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/522
 
 Original creator: craigcitro
 

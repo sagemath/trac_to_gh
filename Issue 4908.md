@@ -1,6 +1,6 @@
 # Issue 4908: convert sage.databases.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4908
 
 Original creator: mhansen
 

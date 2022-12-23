@@ -1,6 +1,6 @@
 # Issue 6338: make sage -sdist and -bdist take an existing tag name and verify that the tag name is valid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6338
 
 Original creator: ncalexan
 

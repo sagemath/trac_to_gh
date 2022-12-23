@@ -1,6 +1,6 @@
 # Issue 4054: [with patch, needs review] shorten doctesting in graph_generators.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4054
 
 Original creator: rlm
 

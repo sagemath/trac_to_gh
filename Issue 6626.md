@@ -1,6 +1,6 @@
 # Issue 6626: can't upgrade to cliquer-1.2.p0 since package name is missing from file deps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6626
 
 Original creator: mvngu
 

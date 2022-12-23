@@ -1,6 +1,6 @@
 # Issue 4106: error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4106
 
 Original creator: was
 

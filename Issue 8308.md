@@ -1,6 +1,6 @@
 # Issue 8308: Make M.entries() an alias for M.list() when M is a matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8308
 
 Original creator: jason
 

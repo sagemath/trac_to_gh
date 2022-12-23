@@ -1,6 +1,6 @@
 # Issue 3557: Preparser bug: doctest failes when "..." is first expected output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3557
 
 Original creator: mabshoff
 

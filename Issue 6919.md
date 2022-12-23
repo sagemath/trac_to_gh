@@ -1,6 +1,6 @@
 # Issue 6919: basic arithmetic using FLINT is broken (very serious!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6919
 
 Original creator: was
 
@@ -61,7 +61,7 @@ Comment by burcin created at 2009-09-16 13:19:27
 
 
 ```
-Bill Hart <goodwillhart`@`googlemail.com> wrote:
+Bill Hart <goodwillhart@googlemail.com> wrote:
 <snip>
 > It was caused by a bug in the FLINT FFT (the first ever found). I
 > tracked the bug down to a specific piece of code and David Harvey has

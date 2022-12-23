@@ -1,6 +1,6 @@
 # Issue 2165: MPolynomialRing(BooleanPolynomial) not as general as it should be
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2165
 
 Original creator: ncalexan
 

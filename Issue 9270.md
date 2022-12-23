@@ -1,6 +1,6 @@
 # Issue 9270: document the "-only-optional" flag for doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9270
 
 Original creator: jhpalmieri
 

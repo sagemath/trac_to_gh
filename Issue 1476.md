@@ -1,6 +1,6 @@
 # Issue 1476: R -- enable installation of optional packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1476
 
 Original creator: was
 
@@ -67,7 +67,7 @@ functions from (from R console, Sage console and notebook), just auto-
 compl. worked for those functions after they were called for the first
 time not before...
 
-On Dec 12, 2007 2:35 AM, Marshall Hampton <hamptonio`@`gmail.com> wrote:
+On Dec 12, 2007 2:35 AM, Marshall Hampton <hamptonio@gmail.com> wrote:
 >
 > Hi,
 >

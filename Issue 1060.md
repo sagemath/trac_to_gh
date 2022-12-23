@@ -1,6 +1,6 @@
 # Issue 1060: fix flintqs compile on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1060
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8317: Protecting special names against assignation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8317
 
 Original creator: olazo
 

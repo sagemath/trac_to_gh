@@ -1,6 +1,6 @@
 # Issue 8023: doctest in combinat/words/morphism.py creates a file "test.sobj" not in a temporary directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8023
 
 Original creator: jhpalmieri
 

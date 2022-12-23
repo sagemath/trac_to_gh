@@ -1,6 +1,6 @@
 # Issue 5094: Delete/Change SageX references to Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5094
 
 Original creator: kcrisman
 

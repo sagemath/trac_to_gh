@@ -1,6 +1,6 @@
 # Issue 860: dsage -- update to fix a bunch of "rough edges"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/860
 
 Original creator: was
 

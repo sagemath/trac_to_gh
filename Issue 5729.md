@@ -1,6 +1,6 @@
 # Issue 5729: Cleanup of crystal code: cartan_type now a method rather than attribute
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5729
 
 Original creator: aschilling
 

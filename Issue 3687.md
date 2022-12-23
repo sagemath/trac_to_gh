@@ -1,6 +1,6 @@
 # Issue 3687: trivial problems in the sage_scripts spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3687
 
 Original creator: tabbott
 

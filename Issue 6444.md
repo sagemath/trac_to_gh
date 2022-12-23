@@ -1,6 +1,6 @@
 # Issue 6444: test, since a report of server not working was posted.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6444
 
 Original creator: drkirkby
 

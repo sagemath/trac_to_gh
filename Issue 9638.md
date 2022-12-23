@@ -1,6 +1,6 @@
 # Issue 9638: Interact sliders should be able to have negative step size
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9638
 
 Original creator: kcrisman
 
@@ -11,7 +11,7 @@ Assignee: itolkov, jason
 Stepping backwards on sliders.  Currently, 
 
 ```
-`@`interact 
+@interact 
 def _(n=slider(100,0,-1,1)): 
     print n 
 ```
@@ -36,13 +36,13 @@ Comment by jdemeyer created at 2017-03-21 11:23:44
 This also fails in Jupyter:
 
 ```
-`@`interact 
+@interact 
 def _(n=slider(100,0,-1,1)): 
     print n
 ---------------------------------------------------------------------------
 TraitError                                Traceback (most recent call last)
 <ipython-input-1-155f54a47ddc> in <module>()
-      1 `@`interact
+      1 @interact
 ----> 2 def _(n=slider(Integer(100),Integer(0),-Integer(1),Integer(1))):
       3     print n
 
@@ -72,7 +72,7 @@ TraitError                                Traceback (most recent call last)
      98             kwargs['step'] = step
 ---> 99         super(_BoundedInt, self).__init__(**kwargs)
     100 
-    101     `@`validate('value')
+    101     @validate('value')
 
 /usr/local/src/sage-git/local/lib/python2.7/site-packages/ipywidgets/widgets/widget_int.pyc in __init__(self, value, **kwargs)
      78         if value is not None:

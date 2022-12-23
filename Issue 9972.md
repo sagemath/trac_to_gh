@@ -1,6 +1,6 @@
 # Issue 9972: Remove empty directory data/extcode/pari/SEA
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9973
 
 Original creator: jdemeyer
 

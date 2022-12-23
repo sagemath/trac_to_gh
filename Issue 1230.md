@@ -1,6 +1,6 @@
 # Issue 1230: Quit worksheet behaviour
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1230
 
 Original creator: nbruin
 

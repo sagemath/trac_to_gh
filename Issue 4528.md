@@ -1,6 +1,6 @@
 # Issue 4528: [with patch, needs review] Implement Krull dimension for orders in number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4528
 
 Original creator: cremona
 

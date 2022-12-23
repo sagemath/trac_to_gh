@@ -1,6 +1,6 @@
 # Issue 2834: [with patch, needs review] PyLint import cleanup for sage.rings.polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2834
 
 Original creator: malb
 

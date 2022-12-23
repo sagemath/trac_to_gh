@@ -1,6 +1,6 @@
 # Issue 9550: Upgrading 4.4.4 binary --> 4.5.1 fails on opencdk
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9550
 
 Original creator: rlm
 

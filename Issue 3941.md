@@ -1,6 +1,6 @@
 # Issue 3941: threading diff over lists to give the jacobian
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3941
 
 Original creator: jason
 

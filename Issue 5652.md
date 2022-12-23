@@ -1,6 +1,6 @@
 # Issue 5652: powermod is slower than Integer.power_mod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5652
 
 Original creator: bober
 

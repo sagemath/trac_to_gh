@@ -1,6 +1,6 @@
 # Issue 8915: improve documentation on combinat.dyck_words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8915
 
 Original creator: zabrocki
 

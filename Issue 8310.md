@@ -1,6 +1,6 @@
 # Issue 8310: bad ReST formatting in kazhdan_lusztig.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8310
 
 Original creator: mvngu
 

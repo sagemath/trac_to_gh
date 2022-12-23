@@ -1,6 +1,6 @@
 # Issue 8388: pickle the paths of Rauzy diagrams
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8388
 
 Original creator: vdelecroix
 

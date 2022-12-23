@@ -1,6 +1,6 @@
 # Issue 6465: Derivative D acts wrongly on symbolic integration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6465
 
 Original creator: gmhossain
 

@@ -1,6 +1,6 @@
 # Issue 6602: [with SPKG, need review] GLPK for SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6602
 
 Original creator: ncohen
 

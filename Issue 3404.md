@@ -1,6 +1,6 @@
 # Issue 3404: graph.automorphism_group returns permutations with the wrong number of elements.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3404
 
 Original creator: jason
 

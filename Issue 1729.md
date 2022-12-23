@@ -1,6 +1,6 @@
 # Issue 1729: disable password prompt on initial startup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1729
 
 Original creator: robertwb
 

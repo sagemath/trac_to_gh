@@ -1,6 +1,6 @@
 # Issue 217: optimize matrix permanents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/217
 
 Original creator: was
 
@@ -143,7 +143,7 @@ Comment by was created at 2007-10-29 14:30:21
 
 
 ```
-On 10/29/07, Jaap Spies <j.spies`@`hccnet.nl> wrote:
+On 10/29/07, Jaap Spies <j.spies@hccnet.nl> wrote:
 > > Now, instead if the code working like it used to, there will be an overflow,
 > > and one will get total nonsense.
 > >

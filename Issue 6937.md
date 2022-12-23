@@ -1,6 +1,6 @@
 # Issue 6937: Fixed cached_function to handle defaults better.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6937
 
 Original creator: boothby
 
@@ -14,7 +14,7 @@ We expect the following example to take about 10 seconds:
 
 
 ```
-sage: `@`cached_function
+sage: @cached_function
 sage: def foo(x = 5):
 ...       print "computing foo(%s)"%x
 ...       sleep(10)

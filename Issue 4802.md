@@ -1,6 +1,6 @@
 # Issue 4802: [with patch, positive review] Add an on the fly ranker to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4802
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5735: delete extended rationals and integers completely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5735
 
 Original creator: was
 
@@ -65,7 +65,7 @@ Comment by mabshoff created at 2009-04-12 20:23:44
 Hmm, this patch fails to apply:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import 5735-remove-extended-QQ-ZZ.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import 5735-remove-extended-QQ-ZZ.patch 
 applying 5735-remove-extended-QQ-ZZ.patch
 patching file sage/rings/extended_rational_field.py
 Hunk #1 FAILED at 0

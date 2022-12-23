@@ -1,6 +1,6 @@
 # Issue 8769: linbox fails on Fedora Core 12 x86_64 with gcc-4.5.0, due to "Givaro not good enough" error.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8769
 
 Original creator: was
 
@@ -52,17 +52,17 @@ real    0m0.026s
 user    0m0.011s
 sys     0m0.017s
 make: *** [testlong] Error 1
-[wstein`@`flavius flavius]$ eer_print_info':
+[wstein@flavius flavius]$ eer_print_info':
 > /home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/serv.c:489: undefined reference to nutls_x509_crt_print'
 -bash: eer_print_info:
 /home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/serv.c:489: undefined reference to nutls_x509_crt_print: No such file or directory
-[wstein`@`flavius flavius]$ uname -a
+[wstein@flavius flavius]$ uname -a
 Linux flavius 2.6.31.12-174.2.19.fc12.x86_64 #1 SMP Thu Feb 11 07:07:16 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux
-[wstein`@`flavius flavius]$ cat /etc/issue
+[wstein@flavius flavius]$ cat /etc/issue
 Fedora release 12 (Constantine)
 Kernel \r on an \m (\l)
 
-[wstein`@`flavius flavius]$ gcc -v
+[wstein@flavius flavius]$ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-k8-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper
@@ -70,11 +70,11 @@ Target: x86_64-unknown-linux-gnu
 Configured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/x86_64-Linux-k8-fc-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-k8-fc-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-k8-gcc-4.2.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-k8-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-k8-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3 --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-k8-fc
 Thread model: posix
 gcc version 4.5.0 (GCC)
-[wstein`@`flavius flavius]$     
+[wstein@flavius flavius]$     
 
 YET Givaro is installed!
 
-[wstein`@`flavius sage-4.4]$ ls spkg/installed/givaro-3.2.13rc2.p0
+[wstein@flavius sage-4.4]$ ls spkg/installed/givaro-3.2.13rc2.p0
 spkg/installed/givaro-3.2.13rc2.p0
 
 ```

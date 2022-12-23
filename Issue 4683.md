@@ -1,6 +1,6 @@
 # Issue 4683: memory leak when performing the calculation CDF(I)^2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4683
 
 Original creator: ggrafendorfer
 
@@ -12,7 +12,7 @@ Using sage 3.2 (compiled from sources) on a 32-bit Core Duo machine running Debi
 when performing
 
 ```
-georg`@`HILBERT:~/Daten/Sync/Phd/Code/sde$ sage
+georg@HILBERT:~/Daten/Sync/Phd/Code/sde$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2, Release Date: 2008-11-20                         |

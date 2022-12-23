@@ -1,6 +1,6 @@
 # Issue 5581: Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5581
 
 Original creator: mhampton
 

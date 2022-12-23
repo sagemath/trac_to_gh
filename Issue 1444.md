@@ -1,6 +1,6 @@
 # Issue 1444: [with patch] some serious hard-coding issues that break all binary installs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1444
 
 Original creator: was
 

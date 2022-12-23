@@ -1,6 +1,6 @@
 # Issue 7652: Adds Linear Programming to the Constructions document
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7652
 
 Original creator: ncohen
 
@@ -93,7 +93,7 @@ Attachment
 New reviewer patch attached, which needs some reviewing. Note that the patch `trac_7652.patch` results in the following doctest failures:
 
 ```
-[mvngu`@`sage sage-4.3.alpha1-7652-linear]$ ./sage -t -long devel/sage-main/doc/en/constructions/linear_programming.rst 
+[mvngu@sage sage-4.3.alpha1-7652-linear]$ ./sage -t -long devel/sage-main/doc/en/constructions/linear_programming.rst 
 sage -t -long "devel/sage-main/doc/en/constructions/linear_programming.rst"
 **********************************************************************
 File "/scratch/mvngu/sandbox/sage-4.3.alpha1-7652-linear/devel/sage-main/doc/en/constructions/linear_programming.rst", line 112:

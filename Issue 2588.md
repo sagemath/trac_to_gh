@@ -1,6 +1,6 @@
 # Issue 2588: [with patch, needs review] documentation and tests for sage.schemes.hyperelliptic_curves.jacobian_morphism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2588
 
 Original creator: ncalexan
 

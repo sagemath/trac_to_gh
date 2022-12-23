@@ -1,6 +1,6 @@
 # Issue 2078: programming guide: section "quick Mercurial tutorial for Sage" is wrong/misleading
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2078
 
 Original creator: AlexGhitza
 

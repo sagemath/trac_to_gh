@@ -1,6 +1,6 @@
 # Issue 6995: plotting specific contour lines should shade values above/below the extreme contour values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6995
 
 Original creator: jason
 

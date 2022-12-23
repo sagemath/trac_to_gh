@@ -1,6 +1,6 @@
 # Issue 5335: [with patch, needs review] Create Sage 3.3 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5335
 
 Original creator: mabshoff
 

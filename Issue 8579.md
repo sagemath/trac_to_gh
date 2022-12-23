@@ -1,6 +1,6 @@
 # Issue 8579: Add the categories of magmas and additive magmas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8579
 
 Original creator: nthiery
 

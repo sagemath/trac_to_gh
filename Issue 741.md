@@ -1,6 +1,6 @@
 # Issue 741: sage -bdist: after doing this in sage-2.8.5, the dsage unit tests don't run for the resulting binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/741
 
 Original creator: was
 

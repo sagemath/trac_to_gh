@@ -1,6 +1,6 @@
 # Issue 7803: DeprecationWarning: the sets module is deprecated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7803
 
 Original creator: cschwan
 
@@ -44,9 +44,9 @@ I cannot apply this patch, I get the following:
 
 
 ```
-novoselt`@`sage:/scratch/novoselt/sage-4.3.5/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7803/sage-4.3-fix-deprecation-warning.patch
+novoselt@sage:/scratch/novoselt/sage-4.3.5/devel/sage-main$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7803/sage-4.3-fix-deprecation-warning.patch
 adding sage-4.3-fix-deprecation-warning.patch to series file
-novoselt`@`sage:/scratch/novoselt/sage-4.3.5/devel/sage-main$ hg qpush
+novoselt@sage:/scratch/novoselt/sage-4.3.5/devel/sage-main$ hg qpush
 applying sage-4.3-fix-deprecation-warning.patch
 unable to find 'combinat/matrices/latin.py' for patching
 3 out of 3 hunks FAILED -- saving rejects to file combinat/matrices/latin.py.rej

@@ -1,6 +1,6 @@
 # Issue 196: sage signal handler -- ctrl-c interrupt, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/196
 
 Original creator: was
 

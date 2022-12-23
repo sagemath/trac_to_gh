@@ -1,6 +1,6 @@
 # Issue 4844: Disable DSage doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4844
 
 Original creator: mabshoff
 

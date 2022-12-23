@@ -1,6 +1,6 @@
 # Issue 5393: pycrypto 2.0.1: integrate fix for http://www.securityfocus.com/bid/33674/info (security)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5393
 
 Original creator: mabshoff
 

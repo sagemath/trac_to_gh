@@ -1,6 +1,6 @@
 # Issue 3002: A lot of  spkgs check for fortran even if they don't need it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3002
 
 Original creator: dfdeshom
 

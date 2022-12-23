@@ -1,6 +1,6 @@
 # Issue 3123: blacklist "gcc version 4.1.0 (SUSE Linux)"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3123
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5789: create sagelite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5789
 
 Original creator: was
 

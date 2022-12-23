@@ -1,6 +1,6 @@
 # Issue 9436: zodb3 causes downloads during installation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9436
 
 Original creator: timdumol
 

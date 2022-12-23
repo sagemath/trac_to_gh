@@ -1,6 +1,6 @@
 # Issue 4962: sage/modules/vector_modn_sparse_c.pxi: init_c_vector_modint leaks leak memory in case of OverflowError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4962
 
 Original creator: mabshoff
 

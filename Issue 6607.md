@@ -1,6 +1,6 @@
 # Issue 6607: Quadratics in GF(2^m)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6607
 
 Original creator: wakep
 

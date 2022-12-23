@@ -1,6 +1,6 @@
 # Issue 7175: HP-UX failure to build of pyprocessing 0.52.p0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7175
 
 Original creator: drkirkby
 

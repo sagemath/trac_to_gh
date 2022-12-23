@@ -1,6 +1,6 @@
 # Issue 1479: Fix doctest failure fallout from #1296
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1479
 
 Original creator: mabshoff
 

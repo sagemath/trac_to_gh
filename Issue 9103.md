@@ -1,6 +1,6 @@
 # Issue 9103: ATLAS  has modifications to upstream source
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9103
 
 Original creator: drkirkby
 
@@ -17,12 +17,12 @@ I don't know for sure who is guilty here, but I've suspicion it might be me, as 
 
 ```
 changeset:   53:41de1efe8559
-user:        Robert Miller <rlm`@`rlmiller.org>
+user:        Robert Miller <rlm@rlmiller.org>
 date:        Thu Jul 02 14:13:54 2009 -0700
 summary:     Checked in drkirkby's changes
 
 changeset:   52:3acaaff52099
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Tue Jun 02 14:30:03 2009 -0700
 summary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)
 ```

@@ -1,6 +1,6 @@
 # Issue 7516: bug in pickling quotient module over pid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7516
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4246: bug in coercing symbolic expressions to polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4246
 
 Original creator: AlexGhitza
 
@@ -57,7 +57,7 @@ Comment by mabshoff created at 2008-10-07 20:59:20
 This patch breaks two doctests in coerce_maps.pyx:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -t -long devel/sage/sage/structure/coerce_maps.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -t -long devel/sage/sage/structure/coerce_maps.pyx
 sage -t -long devel/sage/sage/structure/coerce_maps.pyx     
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/tmp/coerce_maps.py", line 110:

@@ -1,6 +1,6 @@
 # Issue 4625: improve pth power map for finite fields of characteristic p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4625
 
 Original creator: jhpalmieri
 

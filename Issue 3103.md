@@ -1,6 +1,6 @@
 # Issue 3103: coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3103
 
 Original creator: ncalexan
 

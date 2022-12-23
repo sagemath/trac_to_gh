@@ -1,6 +1,6 @@
 # Issue 2299: [with patch, needs review] add zero_matrix constructor.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2299
 
 Original creator: ncalexan
 

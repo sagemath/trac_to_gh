@@ -1,6 +1,6 @@
 # Issue 1651: bug in decode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1651
 
 Original creator: wdj
 

@@ -1,6 +1,6 @@
 # Issue 5824: Move DSage to its own spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5824
 
 Original creator: mabshoff
 

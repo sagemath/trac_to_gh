@@ -1,6 +1,6 @@
 # Issue 5570: determinants of matrices over Z/nZ with n composite are dog slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5570
 
 Original creator: was
 

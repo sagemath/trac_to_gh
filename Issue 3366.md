@@ -1,6 +1,6 @@
 # Issue 3366: improve subs/subsitute inheritance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3366
 
 Original creator: malb
 

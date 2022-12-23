@@ -1,6 +1,6 @@
 # Issue 5465: render3d for groebner fans is totally broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5465
 
 Original creator: was
 
@@ -24,7 +24,7 @@ UnboundLocalError                         Traceback (most recent call last)
 /Users/wstein/build/sage-3.4.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.pyc in render3d(self, verbose)
    1067         g_cones_ieqs = [self._cone_to_ieq(q) for q in g_cones_facets]
    1068         # Now the cones are intersected with a plane:
--> 1069         cone_info = [ieq_to_vert(q,linearities=[This is the Trac macro *1,-1,-1,-1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,-1,-1,-1,-1-macro)) for q in g_cones_ieqs]
+-> 1069         cone_info = [ieq_to_vert(q,linearities=[[1,-1,-1,-1,-1]]) for q in g_cones_ieqs]
    1070 	if verbose:
    1071 	    for x in cone_info:
 

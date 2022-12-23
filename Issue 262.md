@@ -1,6 +1,6 @@
 # Issue 262: extend point counting on elliptic curves to non-prime finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/262
 
 Original creator: was
 

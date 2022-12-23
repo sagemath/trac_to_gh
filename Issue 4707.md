@@ -1,6 +1,6 @@
 # Issue 4707: magma/sage interface -- another trivial easy-to-fix failure hopefully
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4707
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1875: increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1875
 
 Original creator: was
 

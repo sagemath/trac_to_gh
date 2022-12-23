@@ -1,6 +1,6 @@
 # Issue 4618: Request for Puiseux series in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4618
 
 Original creator: ljpk
 

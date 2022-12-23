@@ -1,6 +1,6 @@
 # Issue 6614: Remove jsMath from version control in the Sage library.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6614
 
 Original creator: mpatel
 

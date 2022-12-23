@@ -1,6 +1,6 @@
 # Issue 7265: typo in symbolic/expression.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7265
 
 Original creator: AlexGhitza
 

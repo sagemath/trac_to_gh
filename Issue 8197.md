@@ -1,6 +1,6 @@
 # Issue 8197: Documenting check=True/False parameters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8197
 
 Original creator: cremona
 

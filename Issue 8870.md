@@ -1,6 +1,6 @@
 # Issue 8870: Multiflow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8870
 
 Original creator: ncohen
 

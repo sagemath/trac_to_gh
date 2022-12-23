@@ -1,6 +1,6 @@
 # Issue 7051: latex issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7051
 
 Original creator: jhpalmieri
 

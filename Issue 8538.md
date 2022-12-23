@@ -1,6 +1,6 @@
 # Issue 8538: Update mpi4py (MPI for Python) to the latest version (1.2.1)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8538
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9163: cygwin: output of a subtle test in expect.py differs slightly on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9163
 
 Original creator: was
 

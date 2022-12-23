@@ -1,6 +1,6 @@
 # Issue 271: defining classes in the notebook with examples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/271
 
 Original creator: nbruin
 

@@ -1,6 +1,6 @@
 # Issue 4705: Make in-line wysiwyg editor for text cells using TinyMCE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4705
 
 Original creator: jason
 

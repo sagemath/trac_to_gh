@@ -1,6 +1,6 @@
 # Issue 3351: update SAGE_ROOT/COPYING.txt to clarify situation wrt Maxima license
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3351
 
 Original creator: was
 

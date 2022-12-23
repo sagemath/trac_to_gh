@@ -1,6 +1,6 @@
 # Issue 1224: OSX 10.4 PPC failure in sage/rings/finite_field_ntl_gf2e.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1224
 
 Original creator: mabshoff
 

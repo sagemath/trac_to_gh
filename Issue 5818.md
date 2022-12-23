@@ -1,6 +1,6 @@
 # Issue 5818: Make it possible to pass a CPU parameter to MPIR (useful for builds in KVM)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5818
 
 Original creator: mabshoff
 

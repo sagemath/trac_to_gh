@@ -1,6 +1,6 @@
 # Issue 3742: [with spkg, needs review] Fortran.spkg: Detect the location of gfortran properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3742
 
 Original creator: mabshoff
 

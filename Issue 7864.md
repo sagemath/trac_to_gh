@@ -1,6 +1,6 @@
 # Issue 7864: libfplll tries to link 64-bit objects to 32-bit libstdc++.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7864
 
 Original creator: drkirkby
 
@@ -135,7 +135,7 @@ Here is the output you requested.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1$ grep compiler_lib_search_path= src/libtool
+drkirkby@hawk:~/sage-4.5.alpha0/spkg/build/libfplll-3.0.12.p1$ grep compiler_lib_search_path= src/libtool
 compiler_lib_search_path=""
 compiler_lib_search_path="-L/export/home/drkirkby/sage-4.5.alpha0/local/lib -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64 -L/lib/amd64 -L/usr/lib/amd64 -L/export/home/drkirkby/sage-4.5.alpha0/local/lib -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4 -L/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../.."
 compiler_lib_search_path=""
@@ -235,7 +235,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing libfplll-3.0.12.p1.spkg
-drkirkby`@`hawk:~/sage-4.5.alpha0$ 
+drkirkby@hawk:~/sage-4.5.alpha0$ 
 ```
 
 
@@ -300,7 +300,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing libfplll-3.0.12.p1.spkg
-kirkby`@`t2:[~/sage-4.5.alpha0] $ echo $SAGE_CHECK
+kirkby@t2:[~/sage-4.5.alpha0] $ echo $SAGE_CHECK
 ```
 
 
@@ -364,7 +364,7 @@ First the 32-bit.
 
 
 ```
-drkirkby`@`hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m32 -print-search-dirs
+drkirkby@hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m32 -print-search-dirs
 install: /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/
 programs: =/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/:/usr/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/libexec/gcc/i386-pc-solaris2.11/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/:/usr/ccs/bin/i386-pc-solaris2.11/4.4.4/:/usr/ccs/bin/
 libraries: =/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../:/lib/i386-pc-solaris2.11/4.4.4/:/lib/:/usr/lib/i386-pc-solaris2.11/4.4.4/:/usr/lib/
@@ -375,7 +375,7 @@ Now, the 64-bit:
 
 
 ```
-drkirkby`@`hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m64 -print-search-dirs
+drkirkby@hawk:~$ /usr/local/gcc-4.4.4-multilib/bin/gcc -m64 -print-search-dirs
 install: /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/
 programs: =/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/libexec/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/:/usr/libexec/gcc/i386-pc-solaris2.11/4.4.4/:/usr/libexec/gcc/i386-pc-solaris2.11/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/bin/:/usr/ccs/bin/i386-pc-solaris2.11/4.4.4/:/usr/ccs/bin/
 libraries: =/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/:/lib/i386-pc-solaris2.11/4.4.4/amd64/:/lib/amd64/:/usr/lib/i386-pc-solaris2.11/4.4.4/amd64/:/usr/lib/amd64/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/lib/gcc/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../../i386-pc-solaris2.11/lib/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../i386-pc-solaris2.11/4.4.4/:/usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../:/lib/i386-pc-solaris2.11/4.4.4/:/lib/:/usr/lib/i386-pc-solaris2.11/4.4.4/:/usr/lib/
@@ -447,9 +447,9 @@ Yes, I think so. I just checked to make sure the correct library is there
 
 
 ```
-drkirkby`@`hawk:~$ file /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/libstdc++.so
+drkirkby@hawk:~$ file /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/libstdc++.so
 /usr/local/gcc-4.4.4-multilib/lib/gcc/i386-pc-solaris2.11/4.4.4/../../../amd64/libstdc++.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ 
 ```
 
 
@@ -613,9 +613,9 @@ Here are some test results. I've tested on Solaris 10, OpenSolaris and OS X.
  * SAGE64 exported to "yes"
 
 ```
-drkirkby`@`hawk:~/sage-4.5.rc0$ export SAGE64=yes
-drkirkby`@`hawk:~/sage-4.5.rc0$ cd ..^C
-drkirkby`@`hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
+drkirkby@hawk:~/sage-4.5.rc0$ export SAGE64=yes
+drkirkby@hawk:~/sage-4.5.rc0$ cd ..^C
+drkirkby@hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
 Force installing libfplll-3.0.12.p1
 Calling sage-spkg on libfplll-3.0.12.p1
 Warning: Attempted to overwrite SAGE_ROOT environment variable
@@ -639,7 +639,7 @@ Successfully installed libfplll-3.0.12.p1
 An inspection of the shared libraries shows they are 64-bit. 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.rc0$ file local/lib/libfpll*
+drkirkby@hawk:~/sage-4.5.rc0$ file local/lib/libfpll*
 local/lib/libfplll.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libfplll.la:	commands text
 local/lib/libfplll.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
@@ -663,9 +663,9 @@ Since I already had a 64-bit build, a quick test was done to fool the Sage build
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.rc0$ rm local/lib/sage-64.txt
-drkirkby`@`hawk:~/sage-4.5.rc0$ unset SAGE64
-drkirkby`@`hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
+drkirkby@hawk:~/sage-4.5.rc0$ rm local/lib/sage-64.txt
+drkirkby@hawk:~/sage-4.5.rc0$ unset SAGE64
+drkirkby@hawk:~/sage-4.5.rc0$ ./sage -f libfplll-3.0.12.p1
 <SNIP>
 ld: fatal: file /export/home/drkirkby/sage-4.5.rc0/local/lib/libmpfr.so: wrong ELF class: ELFCLASS64
 ld: fatal: file processing errors. No output written to generate
@@ -694,7 +694,7 @@ The failure to link to the 64-bit GMP library is to be expected. The fact the -m
  * SAGE64 exported to "yes"
 
 ```
-kirkby`@`t2:[~/64/sage-4.5.rc0] $ ./sage -f libfplll-3.0.12.p1
+kirkby@t2:[~/64/sage-4.5.rc0] $ ./sage -f libfplll-3.0.12.p1
 <SNIP>
 real    4m17.508s
 user    5m32.027s
@@ -711,13 +711,13 @@ Finished installing libfplll-3.0.12.p1.spkg
 An inspection of the libraries shows they are 64-bit, as expected. 
 
 ```
-kirkby`@`t2:[~/64/sage-4.5.rc0] $ file local/lib/libfplll*
+kirkby@t2:[~/64/sage-4.5.rc0] $ file local/lib/libfplll*
 local/lib/libfplll.a:   current ar archive, not a dynamic executable or shared object
 local/lib/libfplll.la:  commands text
 local/lib/libfplll.so:  ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
 local/lib/libfplll.so.0:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
 local/lib/libfplll.so.0.1.0:    ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
-kirkby`@`t2:[~/64/sage-4.5.rc0] $ 
+kirkby@t2:[~/64/sage-4.5.rc0] $ 
 ```
 
 
@@ -732,7 +732,7 @@ kirkby`@`t2:[~/64/sage-4.5.rc0] $
 
 
 ```
-drkirkby`@`swan:~/sage-4.4.4$ ./sage -f libfplll-3.0.12.p1
+drkirkby@swan:~/sage-4.4.4$ ./sage -f libfplll-3.0.12.p1
 <SNIP>
 real    2m33.007s
 user    2m40.012s
@@ -744,7 +744,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing libfplll-3.0.12.p1.spkg
-drkirkby`@`swan:~/sage-4.4.4$ file local/lib/libfplll*
+drkirkby@swan:~/sage-4.4.4$ file local/lib/libfplll*
 local/lib/libfplll.a:   current ar archive, not a dynamic executable or shared object
 local/lib/libfplll.la:  commands text
 local/lib/libfplll.so:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
@@ -756,7 +756,7 @@ local/lib/libfplll.so.0.1.0:    ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1
 Sage at least works, though I do not know what doc tests would prove that libfplll was working. But I think it's a safe assumption that libfplll would have built ok. 
 
 ```
-drkirkby`@`swan:~/sage-4.4.4$ ./sage
+drkirkby@swan:~/sage-4.4.4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: 1+1
@@ -772,7 +772,7 @@ sage:
 Again, libfplll builds ok. 
 
 ```
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -f libfplll-3.0.12.p1
+[kirkby@bsd sage-4.5.rc0]$ ./sage -f libfplll-3.0.12.p1
 <SNIP>
 make[1]: Nothing to be done for `check-am'.
 

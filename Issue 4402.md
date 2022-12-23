@@ -1,6 +1,6 @@
 # Issue 4402: Sage 3.1.4: magma related optional doctest failure in tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4402
 
 Original creator: mabshoff
 

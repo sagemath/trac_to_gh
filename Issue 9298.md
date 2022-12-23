@@ -1,6 +1,6 @@
 # Issue 9298: Memory leak in libsingular polynomial evaluation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9298
 
 Original creator: robertwb
 

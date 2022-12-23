@@ -1,6 +1,6 @@
 # Issue 8507: all flag ignored for GF(107)(0).sqrt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8507
 
 Original creator: robertwb
 

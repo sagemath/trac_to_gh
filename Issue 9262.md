@@ -1,6 +1,6 @@
 # Issue 9262: Conversion from ReST markup to online text
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9262
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 1440: Inconsistency in subs and substitute for univariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1440
 
 Original creator: was
 

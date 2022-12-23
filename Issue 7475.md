@@ -1,6 +1,6 @@
 # Issue 7475: bug pickling ZZ.residue_field's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7475
 
 Original creator: was
 

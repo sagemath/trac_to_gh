@@ -1,6 +1,6 @@
 # Issue 2470: dsage docs in tutorial -- can't tex them
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2470
 
 Original creator: was
 

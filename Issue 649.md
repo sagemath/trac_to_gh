@@ -1,6 +1,6 @@
 # Issue 649: symbolic matrices need simplify_* methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/649
 
 Original creator: robertwb
 

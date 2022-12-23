@@ -1,6 +1,6 @@
 # Issue 2260: Upgrade ATLAS to 3.8.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2260
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5090: upgrade numpy to 1.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5090
 
 Original creator: jason
 

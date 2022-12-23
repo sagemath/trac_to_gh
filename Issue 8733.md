@@ -1,6 +1,6 @@
 # Issue 8733: clean up documentation of c_graph.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8733
 
 Original creator: mvngu
 

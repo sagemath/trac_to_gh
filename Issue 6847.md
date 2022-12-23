@@ -1,6 +1,6 @@
 # Issue 6847: Auto-generate and insert images into the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6847
 
 Original creator: mpatel
 

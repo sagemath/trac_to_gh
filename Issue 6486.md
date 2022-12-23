@@ -1,6 +1,6 @@
 # Issue 6486: minimum distance of all 0 code raised mysterious error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6486
 
 Original creator: wdj
 
@@ -12,7 +12,7 @@ This should return a more useful error message:
 
 
 ```
-sage: G = matrix(GF(2),[This is the Trac macro *0,0,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0,0-macro))
+sage: G = matrix(GF(2),[[0,0,0]])
 sage: C = LinearCode(G)
 sage: C.list()
 [(0, 0, 0)]

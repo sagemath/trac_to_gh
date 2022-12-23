@@ -1,6 +1,6 @@
 # Issue 3812: add apply_morphism to ideal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3812
 
 Original creator: ncalexan
 

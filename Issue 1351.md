@@ -1,6 +1,6 @@
 # Issue 1351: notebook -- for person users admin is usually the only user -- in such cases fill it in as the default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1351
 
 Original creator: was
 

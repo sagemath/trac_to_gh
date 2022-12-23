@@ -1,6 +1,6 @@
 # Issue 1213: strange unused file sage/plot/mpl_wrapper.py should be fixed or deleted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1213
 
 Original creator: cwitty
 

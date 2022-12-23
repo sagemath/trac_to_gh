@@ -1,6 +1,6 @@
 # Issue 5171: Bugs in the Graph constructor when input an adjacency matrix.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5171
 
 Original creator: was
 

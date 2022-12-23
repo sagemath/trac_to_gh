@@ -1,6 +1,6 @@
 # Issue 2695: ensure that we have sufficient amounts of RAM to build Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2695
 
 Original creator: mabshoff
 

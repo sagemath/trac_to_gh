@@ -1,6 +1,6 @@
 # Issue 7141: `math_parse` parses $'s in <script> tags
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7141
 
 Original creator: timdumol
 

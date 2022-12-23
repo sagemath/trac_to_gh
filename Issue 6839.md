@@ -1,6 +1,6 @@
 # Issue 6839: Implementation of crystal of letters for type E7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6839
 
 Original creator: aschilling
 
@@ -62,7 +62,7 @@ The following docstring causes warnings when building the reference manual:
 1288	 
 1289	    sage: C = CrystalOfLetters(['E',7]) 
 1290	    sage: C.module_generators 
-1291	    [This is the Trac macro *7* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#7-macro) 
+1291	    [[7]] 
 1292	    sage: C.list() 
 1293	    [[7], [-7, 6], [-6, 5], [-5, 4], [-4, 2, 3], [-2, 3], [-3, 1, 2], [-1, 
 1294	    2], [-3, -2, 1, 4], [-1, -2, 4], [-4, 1, 5], [-4, -1, 3, 5], [-3, 5], 

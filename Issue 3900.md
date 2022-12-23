@@ -1,6 +1,6 @@
 # Issue 3900: make testing an official pickle jar a part of "make check"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3900
 
 Original creator: was
 
@@ -102,7 +102,7 @@ Now I put in the correct file and all's well
 
 
 ```
-[jaap`@`paix sage-3.2.rc1]$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
+[jaap@paix sage-3.2.rc1]$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
 sage -t  devel/sage/sage/structure/sage_object.pyx          
 	 [6.6 s]
  

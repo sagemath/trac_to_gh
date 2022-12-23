@@ -1,6 +1,6 @@
 # Issue 370: improve the documentation of show
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/370
 
 Original creator: was
 

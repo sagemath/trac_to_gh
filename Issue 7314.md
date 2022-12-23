@@ -1,6 +1,6 @@
 # Issue 7314: Average distance, Wiener Index, Szeged index
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7314
 
 Original creator: ncohen
 

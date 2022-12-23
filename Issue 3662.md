@@ -1,6 +1,6 @@
 # Issue 3662: separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3662
 
 Original creator: mhansen
 

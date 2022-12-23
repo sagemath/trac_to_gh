@@ -1,6 +1,6 @@
 # Issue 960: reconsider how floating point values are printed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/960
 
 Original creator: was
 

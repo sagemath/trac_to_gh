@@ -1,6 +1,6 @@
 # Issue 2167: Echelon form of symbolic matrices does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2167
 
 Original creator: moretti
 

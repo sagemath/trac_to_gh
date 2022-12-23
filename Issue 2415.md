@@ -1,6 +1,6 @@
 # Issue 2415: update NTL to 5.4.2 (bugfix release)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2415
 
 Original creator: dmharvey
 

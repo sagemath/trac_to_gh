@@ -1,6 +1,6 @@
 # Issue 3647: [with spkg, needs review] remove "- static-libgcc" from lcalc's CFLAGS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3647
 
 Original creator: mabshoff
 

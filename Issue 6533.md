@@ -1,6 +1,6 @@
 # Issue 6533: sage >= 4.1.rc1 doesn't build on cleo (ia64-Linux-rhel5)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6533
 
 Original creator: was
 

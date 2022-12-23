@@ -1,6 +1,6 @@
 # Issue 6766: faster powers of factorizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6766
 
 Original creator: fwclarke
 

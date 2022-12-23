@@ -1,6 +1,6 @@
 # Issue 9001: optional package database_cremona_ellcurve-20071019.p0.spkg causes test failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9001
 
 Original creator: mariah
 

@@ -1,6 +1,6 @@
 # Issue 2957: Singular multivariate polynomials are buggy on exponent overflow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2957
 
 Original creator: cwitty
 

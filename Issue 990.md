@@ -1,6 +1,6 @@
 # Issue 990: no support for asinh/acosh etc. in symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/990
 
 Original creator: moretti
 

@@ -1,6 +1,6 @@
 # Issue 8373: finite fields constructed with non-primitive defining polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8373
 
 Original creator: rkirov
 

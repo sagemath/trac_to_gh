@@ -1,6 +1,6 @@
 # Issue 925: valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/925
 
 Original creator: cwitty
 

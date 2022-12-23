@@ -1,6 +1,6 @@
 # Issue 2155: [with patch; needs review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2155
 
 Original creator: was
 

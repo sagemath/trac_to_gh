@@ -1,6 +1,6 @@
 # Issue 9145: Expand math symbols available in documentation, remove doc/common/macros.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9145
 
 Original creator: rbeezer
 

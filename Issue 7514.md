@@ -1,6 +1,6 @@
 # Issue 7514: rewrite load and attach
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7514
 
 Original creator: was
 

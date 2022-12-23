@@ -1,6 +1,6 @@
 # Issue 2080: notebook -- create eval_asap cells; fix bug in checkbox functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2080
 
 Original creator: was
 

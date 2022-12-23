@@ -1,6 +1,6 @@
 # Issue 2275: [with patch, needs review] get sloane_functions.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2275
 
 Original creator: mhansen
 

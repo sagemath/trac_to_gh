@@ -1,6 +1,6 @@
 # Issue 3564: [with patch; needs review] optimize sage startup: don't import sympy by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3564
 
 Original creator: was
 

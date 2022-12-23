@@ -1,6 +1,6 @@
 # Issue 5945: fastify factorization of inferior integers with flint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5945
 
 Original creator: boothby
 

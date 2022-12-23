@@ -1,6 +1,6 @@
 # Issue 3821: bernmm shouldn't depend on pyport.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3821
 
 Original creator: dmharvey
 

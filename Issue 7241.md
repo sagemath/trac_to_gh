@@ -1,6 +1,6 @@
 # Issue 7241: sage -upgrade will try to redownload spkg's that are already present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7241
 
 Original creator: mhansen
 

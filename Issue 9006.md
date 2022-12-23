@@ -1,6 +1,6 @@
 # Issue 9006: Segfault evaluating large degree polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9006
 
 Original creator: johanbosman
 

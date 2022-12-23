@@ -1,6 +1,6 @@
 # Issue 7551: Remove all Fortran binary compilers except OS X.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7551
 
 Original creator: drkirkby
 

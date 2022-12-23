@@ -1,6 +1,6 @@
 # Issue 9859: Port changes in PARI 2.3.5.p4 (#9722) to current 2.4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9860
 
 Original creator: leif
 
@@ -103,7 +103,7 @@ I've done:
  
 
 ```
-drkirkby`@`hawk:~/5/sage-4.5.3.alpha2$ ./sage -b
+drkirkby@hawk:~/5/sage-4.5.3.alpha2$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -129,7 +129,7 @@ Writing /export/home/drkirkby/5/sage-4.5.3.alpha2/local/lib/python2.6/site-packa
 real	0m8.727s
 user	0m1.339s
 sys	0m0.727s
-drkirkby`@`hawk:~/5/sage-4.5.3.alpha2$ make ptestlong
+drkirkby@hawk:~/5/sage-4.5.3.alpha2$ make ptestlong
 cd spkg && ./install all 2>&1 | tee -a ../install.log
 make[1]: Entering directory `/export/home/drkirkby/5/sage-4.5.3.alpha2/spkg'
 make[1]: Nothing to be done for `all'.

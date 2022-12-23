@@ -1,6 +1,6 @@
 # Issue 5813: Update GSL to 1.112 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5813
 
 Original creator: mabshoff
 

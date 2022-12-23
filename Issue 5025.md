@@ -1,6 +1,6 @@
 # Issue 5025: tinymce issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5025
 
 Original creator: jason
 

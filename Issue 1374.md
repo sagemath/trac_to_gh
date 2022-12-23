@@ -1,6 +1,6 @@
 # Issue 1374: segfault in coercion with matrices and ints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1374
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 583: major bug in polynomial creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/583
 
 Original creator: was
 

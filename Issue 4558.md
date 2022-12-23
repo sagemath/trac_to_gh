@@ -1,6 +1,6 @@
 # Issue 4558: please update to sympy-0.6.3.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4558
 
 Original creator: certik
 

@@ -1,6 +1,6 @@
 # Issue 2894: notebook -- cache elements to improve the speed of get_cell()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2894
 
 Original creator: boothby
 

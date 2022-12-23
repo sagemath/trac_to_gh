@@ -1,6 +1,6 @@
 # Issue 1948: K.factor_integer needs a name change, since now it does much more
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1948
 
 Original creator: was
 

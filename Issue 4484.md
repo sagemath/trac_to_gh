@@ -1,6 +1,6 @@
 # Issue 4484: make a platform_quirks.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4484
 
 Original creator: craigcitro
 

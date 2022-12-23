@@ -1,6 +1,6 @@
 # Issue 8355: Fix hsv_to_rgb to take all 3 arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8355
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 5097: doctest failures in 3.3.alpha2 due to lack of #optional tag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5097
 
 Original creator: AlexGhitza
 

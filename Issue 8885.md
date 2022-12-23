@@ -1,6 +1,6 @@
 # Issue 8885: deprecated_functions_alias and sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8885
 
 Original creator: hivert
 

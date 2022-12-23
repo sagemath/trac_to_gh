@@ -1,6 +1,6 @@
 # Issue 9515: make an optional spkg for PyCryptoPlus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9515
 
 Original creator: malb
 

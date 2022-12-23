@@ -1,6 +1,6 @@
 # Issue 6976: [with patch; needs review] numpy package fixed to work in cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6976
 
 Original creator: certik
 

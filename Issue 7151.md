@@ -1,6 +1,6 @@
 # Issue 7151: Add the quaternion group to the named permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7151
 
 Original creator: rbeezer
 

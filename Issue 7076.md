@@ -1,6 +1,6 @@
 # Issue 7076: SageNB -- Do ReST introspection on a `worksheet_process`
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7076
 
 Original creator: timdumol
 

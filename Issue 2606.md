@@ -1,6 +1,6 @@
 # Issue 2606: command line option to kill a background notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2606
 
 Original creator: nbruin
 

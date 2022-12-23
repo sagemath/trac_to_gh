@@ -1,6 +1,6 @@
 # Issue 7979: pari-2.3.3 sometimes ignores --graphic=none build option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7979
 
 Original creator: wjp
 

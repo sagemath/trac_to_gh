@@ -1,6 +1,6 @@
 # Issue 3675: upgrade to valgrind 3.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3675
 
 Original creator: rlm
 

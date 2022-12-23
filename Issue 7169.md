@@ -1,6 +1,6 @@
 # Issue 7169: HP-UX PolyBoRi 0.6.3-20090827  fail to build on HP-UX 11i
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7169
 
 Original creator: drkirkby
 

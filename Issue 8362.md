@@ -1,6 +1,6 @@
 # Issue 8362: Fix typo in documentation of Disjoint Union of Enumerated Sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8362
 
 Original creator: slabbe
 

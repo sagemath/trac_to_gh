@@ -1,6 +1,6 @@
 # Issue 8570: Allow "marker" option to be passed to matplotlib on list_plot() and point()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8570
 
 Original creator: ronanpaixao
 

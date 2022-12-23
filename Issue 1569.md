@@ -1,6 +1,6 @@
 # Issue 1569: solve() fails if one list element is True
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1569
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 2981: Itanium (RHEL 5) -- error parsing gap output because of unaligned access kernel warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2981
 
 Original creator: was
 

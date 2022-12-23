@@ -1,6 +1,6 @@
 # Issue 6710: Numerous build issues on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6710
 
 Original creator: drkirkby
 

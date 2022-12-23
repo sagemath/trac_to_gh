@@ -1,6 +1,6 @@
 # Issue 3845: notebook -- improve the datafile editing window
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3845
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9719: Add ellipse and arc bounding box examples to interact library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9719
 
 Original creator: kcrisman
 

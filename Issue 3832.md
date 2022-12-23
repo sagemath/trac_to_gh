@@ -1,6 +1,6 @@
 # Issue 3832: [with spkg, needs review] add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3832
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8659: another broken square root simplification
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8659
 
 Original creator: burcin
 
@@ -15,7 +15,7 @@ Reported by Alex Raichev on sage-support:
 
 ```
 On Wed, 7 Apr 2010 16:56:01 -0700 (PDT)
-Alex Raichev <tortoise.said`@`gmail.com> wrote:
+Alex Raichev <tortoise.said@gmail.com> wrote:
 
 > What the?
 > 

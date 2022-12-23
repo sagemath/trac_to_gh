@@ -1,6 +1,6 @@
 # Issue 8337: factorization of multivariate polynomials is terribly slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8337
 
 Original creator: zimmerma
 

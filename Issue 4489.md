@@ -1,6 +1,6 @@
 # Issue 4489: weird introspection question, specifically with certain objects in cython files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4489
 
 Original creator: craigcitro
 

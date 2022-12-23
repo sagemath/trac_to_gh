@@ -1,6 +1,6 @@
 # Issue 5055: Trivial but fatal typo in interact documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5055
 
 Original creator: kcrisman
 
@@ -11,7 +11,7 @@ Assignee: itolkov
 About halfway through the documentation of interact, there is this example:
 
 ```
-sage: `@`interact
+sage: @interact
 ... def _(title=["A Plot Demo", "Something silly", "something tricky" , a=input_box(sin(x*sin(x*sin(x))), 'function'),
 ...     clr = Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):
 ...     html('<h1 align=center>%s</h1>'%title)

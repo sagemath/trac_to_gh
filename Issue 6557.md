@@ -1,6 +1,6 @@
 # Issue 6557: fix bug in number field caching
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6557
 
 Original creator: was
 

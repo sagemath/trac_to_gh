@@ -1,6 +1,6 @@
 # Issue 3306: [with patch; needs review] shared library for symmetrica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3306
 
 Original creator: tabbott
 

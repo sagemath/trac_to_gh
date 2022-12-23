@@ -1,6 +1,6 @@
 # Issue 3953: notebook -- make it so foo?? in the notebook shows the source code syntax highlighted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3953
 
 Original creator: was
 

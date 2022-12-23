@@ -1,6 +1,6 @@
 # Issue 8761: sage notebook: make a new interact control (like selector) that really works like a button
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8761
 
 Original creator: was
 
@@ -19,7 +19,7 @@ When the interact triggers calling of the function, if this is triggered by a bu
 
 
 ```
-`@`interact
+@interact
 def f(X = button(['Ok', 'Cancel', "Continue"])):
     print X
 ```

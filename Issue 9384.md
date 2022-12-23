@@ -1,6 +1,6 @@
 # Issue 9384: descend_to method for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9384
 
 Original creator: ebeyerstedt
 

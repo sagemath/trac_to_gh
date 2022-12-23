@@ -1,6 +1,6 @@
 # Issue 4028: doctest and improve sage/interfaces/axiom.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4028
 
 Original creator: mhansen
 
@@ -59,9 +59,9 @@ Comment by mabshoff created at 2008-09-01 03:57:15
 It is all William's fault:
 
 ```
-mabshoff`@`sage:/usr/local/bin$ pwd
+mabshoff@sage:/usr/local/bin$ pwd
 /usr/local/bin
-mabshoff`@`sage:/usr/local/bin$ cat axiom 
+mabshoff@sage:/usr/local/bin$ cat axiom 
 #!/bin/sh
 sage -axiom $*
 ```

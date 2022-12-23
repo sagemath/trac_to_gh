@@ -1,6 +1,6 @@
 # Issue 8611: speed up cached_function and cached_method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8611
 
 Original creator: jason
 
@@ -24,12 +24,12 @@ BEFORE PATCH:
 sage: def g(i=15):
 ...       return sum(range(2**i))
 ...
-sage: `@`cached_function
+sage: @cached_function
 sage: def cached_g(i=15):
 ...       return sum(range(2**i))
 ...
 sage: class A:
-...       `@`cached_method
+...       @cached_method
 ...       def decorator_cache(self, i=15):
 ...           return sum(range(2**i))
 ...       def fast_cache(self, i=15):
@@ -61,12 +61,12 @@ AFTER PATCH
 sage: def g(i=15):
 ...       return sum(range(2**i))
 ...
-sage: `@`cached_function
+sage: @cached_function
 sage: def cached_g(i=15):
 ...       return sum(range(2**i))
 ...
 sage: class A:
-...       `@`cached_method
+...       @cached_method
 ...       def decorator_cache(self, i=15):
 ...           return sum(range(2**i))
 ...       def fast_cache(self, i=15):
@@ -333,10 +333,10 @@ sage: class Foo:
 ....:             self._parent=self
 ....:         else:
 ....:             self._parent=P
-....:     `@`cached_method
+....:     @cached_method
 ....:     def bar(self,m,n=3):
 ....:         return m^n
-....:     `@`cached_in_parent_method
+....:     @cached_in_parent_method
 ....:     def barP(self,m,n=3):
 ....:         return m^n
 ....:     def parent(self):
@@ -446,7 +446,7 @@ Here is the effect of using a shortpath:
 
 ```
 sage: class BAR:
-....:     `@`cached_method
+....:     @cached_method
 ....:     def bar(self,m=2,n=3):
 ....:         return m^n
 ....:
@@ -501,7 +501,7 @@ I forgot to provide a comparison against an explicitly coded cache:
 
 ```
 sage: class Foo:
-....:     `@`cached_method
+....:     @cached_method
 ....:     def decorator_bar(self, n=15):
 ....:         return sum(range(2**n))
 ....:     def manual_bar(self, n=15):
@@ -551,10 +551,10 @@ Setting:
 
 ```
 sage: class A:
-....:     `@`cached_method
+....:     @cached_method
 ....:     def bar(self,x):
 ....:         return x
-....:     `@`cached_in_parent_method
+....:     @cached_in_parent_method
 ....:     def barP(self,x):
 ....:         return x
 ....:     def parent(self):

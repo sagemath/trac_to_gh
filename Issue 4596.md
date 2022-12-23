@@ -1,6 +1,6 @@
 # Issue 4596: [with patch, needs review] delete sha.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4596
 
 Original creator: craigcitro
 

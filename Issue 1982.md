@@ -1,6 +1,6 @@
 # Issue 1982: [with patch that needs to be integrated into spkg] workaround the billions of problems with matplotlib and locales on _real world_ computers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1982
 
 Original creator: was
 
@@ -16,9 +16,9 @@ Forwarded conversation
 Subject: [sage-support] problems with p.show()
 ------------------------
 
-From: Reineke <the_legendary_reineke_Fuchs`@`web.de>
+From: Reineke <the_legendary_reineke_Fuchs@web.de>
 Date: Jan 29, 2008 3:57 AM
-To: sage-support <sage-support`@`googlegroups.com>
+To: sage-support <sage-support@googlegroups.com>
 
 
 
@@ -63,16 +63,16 @@ Cheers
 Matthias
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-support`@`googlegroups.com
-To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-support@googlegroups.com
+To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-support
 URLs: http://www.sagemath.org
 -~----------~----~----~----~------~----~------~--~---
 
 ----------
-From: William Stein <wstein`@`gmail.com>
+From: William Stein <wstein@gmail.com>
 Date: Jan 29, 2008 4:48 AM
-To: sage-support`@`googlegroups.com
+To: sage-support@googlegroups.com
 
 
 Could you try carefully replacing  the file
@@ -87,9 +87,9 @@ Thanks for reporting this issue with running Sage!
 
  - William
 ----------
-From: Reineke <the_legendary_reineke_Fuchs`@`web.de>
+From: Reineke <the_legendary_reineke_Fuchs@web.de>
 Date: Jan 30, 2008 4:18 AM
-To: sage-support <sage-support`@`googlegroups.com>
+To: sage-support <sage-support@googlegroups.com>
 
 
 
@@ -105,7 +105,7 @@ Matthias
 
 
 
-On Jan 29, 10:48 am, "William Stein" <wst...`@`gmail.com> wrote:
+On Jan 29, 10:48 am, "William Stein" <wst...@gmail.com> wrote:
 >  cbook.py
 > 37KDownload
 

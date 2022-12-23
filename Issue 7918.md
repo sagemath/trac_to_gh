@@ -1,6 +1,6 @@
 # Issue 7918: log(float(_)) is really slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7918
 
 Original creator: bober
 

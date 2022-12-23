@@ -1,6 +1,6 @@
 # Issue 4946: readline on opensuse11 64-bit still doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4946
 
 Original creator: was
 
@@ -44,7 +44,7 @@ Traceback (most recent call last):
 ImportError: No module named sage.all
 Sage failed to startup.
 make: *** [check] Error 1
-wstein`@`opensuse64:~/build/opensuse64$ 
+wstein@opensuse64:~/build/opensuse64$ 
 ```
 
 

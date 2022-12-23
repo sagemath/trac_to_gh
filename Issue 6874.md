@@ -1,6 +1,6 @@
 # Issue 6874: #4135 follow-up: fix typos and docbuild warnings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6874
 
 Original creator: mvngu
 

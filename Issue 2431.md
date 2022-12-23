@@ -1,6 +1,6 @@
 # Issue 2431: [optional spkg] polymake-2.2.p3.spkg fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2431
 
 Original creator: mhampton
 

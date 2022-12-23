@@ -1,6 +1,6 @@
 # Issue 4064: pari precision issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4064
 
 Original creator: AlexGhitza
 

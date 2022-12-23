@@ -1,6 +1,6 @@
 # Issue 9842: modular/overconvergent/weightspace.py uses Maxima because of symbolic variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9843
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 4937: bug in _p_primary_torsion_basis() for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4937
 
 Original creator: cremona
 

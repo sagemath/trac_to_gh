@@ -1,6 +1,6 @@
 # Issue 3170: add 64 bit OSX build support to readline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3170
 
 Original creator: mabshoff
 

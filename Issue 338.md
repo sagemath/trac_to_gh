@@ -1,6 +1,6 @@
 # Issue 338: In doc browser make hyper links to referenced code in SAGE library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/338
 
 Original creator: TimothyClemans
 

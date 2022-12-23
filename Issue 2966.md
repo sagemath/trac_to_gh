@@ -1,6 +1,6 @@
 # Issue 2966: Debian Singular spkg upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2966
 
 Original creator: tabbott
 

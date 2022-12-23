@@ -1,6 +1,6 @@
 # Issue 4104: Create plot_slope_field function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4104
 
 Original creator: jason
 
@@ -31,7 +31,7 @@ It refused to apply for me:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.1.2.alpha4$ ./sage
+wdj@hera:~/sagefiles/sage-3.1.2.alpha4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: plot-slope

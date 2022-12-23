@@ -1,6 +1,6 @@
 # Issue 9830: Strange behaviour of Permutation(list) when list contains 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9831
 
 Original creator: mmezzarobba
 

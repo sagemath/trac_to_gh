@@ -1,6 +1,6 @@
 # Issue 8401: doctest devel/sage/sage/graphs/graph_database.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8401
 
 Original creator: drkirkby
 

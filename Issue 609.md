@@ -1,6 +1,6 @@
 # Issue 609: make lie part a standard SAGE package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/609
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6452: codes over rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6452
 
 Original creator: wdj
 

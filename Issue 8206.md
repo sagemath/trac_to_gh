@@ -1,6 +1,6 @@
 # Issue 8206: Add information on hg qnew to Developer Walk-through
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8206
 
 Original creator: rbeezer
 

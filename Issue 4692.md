@@ -1,6 +1,6 @@
 # Issue 4692: embeddings not implemented for relative number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4692
 
 Original creator: robertwb
 

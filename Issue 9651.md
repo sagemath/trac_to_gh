@@ -1,6 +1,6 @@
 # Issue 9651: Addition on CombinatorialFreeModule directly on dictionaries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9651
 
 Original creator: stumpc5
 

@@ -1,6 +1,6 @@
 # Issue 5248: edge_colors does not work on loops
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5248
 
 Original creator: mhampton
 

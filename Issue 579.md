@@ -1,6 +1,6 @@
 # Issue 579: pass additional *args and **kwds for GF to finite field implementations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/579
 
 Original creator: malb
 

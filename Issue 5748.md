@@ -1,6 +1,6 @@
 # Issue 5748: Sage 3.4.1.rc2: isinf() related doctest failure in sage/rings/infinity.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5748
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7909: Replace $MKDIR with 'mkdir' in sage-spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7909
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 5208: Differing behavior for matrix left_kernel vs. right_kernel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5208
 
 Original creator: rbeezer
 
@@ -123,7 +123,7 @@ Comment by mabshoff created at 2009-02-09 07:39:04
 This patch needs a rebase:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc0/devel/sage$ patch -p1 < trac_5208_kernels.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc0/devel/sage$ patch -p1 < trac_5208_kernels.patch 
 patching file sage/matrix/matrix2.pyx
 Hunk #1 succeeded at 1420 with fuzz 2.
 Hunk #2 FAILED at 1503.

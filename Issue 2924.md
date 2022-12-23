@@ -1,6 +1,6 @@
 # Issue 2924: programming guide section on style is terrible!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2924
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7369: Split graph.py into several files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7369
 
 Original creator: ncohen
 

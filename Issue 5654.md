@@ -1,6 +1,6 @@
 # Issue 5654: [with patch, needs review] Boundary/interior points of vertices were computed wrong.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5654
 
 Original creator: novoselt
 

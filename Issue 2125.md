@@ -1,6 +1,6 @@
 # Issue 2125: bober's name is spelled wrong (with patch) (ready for review)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2125
 
 Original creator: bober
 

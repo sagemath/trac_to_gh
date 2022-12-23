@@ -1,6 +1,6 @@
 # Issue 7470: SageNB -- Minor docstring fixes for `js.py`
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7470
 
 Original creator: timdumol
 

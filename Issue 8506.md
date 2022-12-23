@@ -1,6 +1,6 @@
 # Issue 8506: Inefficient hash for homsets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8506
 
 Original creator: robertwb
 

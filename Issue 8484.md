@@ -1,6 +1,6 @@
 # Issue 8484: incremental improvements to prove_BSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8484
 
 Original creator: rlm
 

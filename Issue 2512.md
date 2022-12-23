@@ -1,6 +1,6 @@
 # Issue 2512: implement condition number for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2512
 
 Original creator: schilly
 

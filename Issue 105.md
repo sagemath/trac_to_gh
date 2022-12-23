@@ -1,6 +1,6 @@
 # Issue 105: notebook: save everything to an html tarball
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/105
 
 Original creator: was
 

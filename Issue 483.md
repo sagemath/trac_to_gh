@@ -1,6 +1,6 @@
 # Issue 483: follow up to #439 (remote interface with as many hops)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/483
 
 Original creator: pdehaye
 

@@ -1,6 +1,6 @@
 # Issue 5892: Do not give workaround instructions when SIMD instructions aren't compatible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5892
 
 Original creator: mabshoff
 

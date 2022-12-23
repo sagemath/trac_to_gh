@@ -1,6 +1,6 @@
 # Issue 3914: error in parsing maxima output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3914
 
 Original creator: jason
 

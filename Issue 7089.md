@@ -1,6 +1,6 @@
 # Issue 7089: refactor SAGE_ROOT/makefile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7089
 
 Original creator: ddrake
 

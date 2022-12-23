@@ -1,6 +1,6 @@
 # Issue 7612: SageNB -- Add 'record_logins' to server configuration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7612
 
 Original creator: timdumol
 

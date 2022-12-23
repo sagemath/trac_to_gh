@@ -1,6 +1,6 @@
 # Issue 6013: rewrite number field relativize to be much faster
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6013
 
 Original creator: ncalexan
 

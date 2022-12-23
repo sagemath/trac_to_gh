@@ -1,6 +1,6 @@
 # Issue 5250: But in multiplicative_generator function for Z/NZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5250
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2645: arrow3d is sometimes too long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2645
 
 Original creator: jason
 

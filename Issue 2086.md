@@ -1,6 +1,6 @@
 # Issue 2086: iPython bug? Python decorators don't play nicely with docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2086
 
 Original creator: malb
 

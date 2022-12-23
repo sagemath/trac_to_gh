@@ -1,6 +1,6 @@
 # Issue 4798: Update Cython to 0.10.3 (latest stable upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4798
 
 Original creator: mabshoff
 

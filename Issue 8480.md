@@ -1,6 +1,6 @@
 # Issue 8480: stylistic clean-ups on web page of standard documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8480
 
 Original creator: mvngu
 

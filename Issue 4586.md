@@ -1,6 +1,6 @@
 # Issue 4586: delete sage/rings/number_field/todo.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4586
 
 Original creator: mabshoff
 

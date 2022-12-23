@@ -1,6 +1,6 @@
 # Issue 6904: change ring broken over QQ and GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6904
 
 Original creator: was
 
@@ -83,7 +83,7 @@ Amazingly, this is still broken in Sage-4.5.alpha4!
 
 ```
 
-wstein`@`sage:~/build/sage-4.5.alpha4$ ./sage
+wstein@sage:~/build/sage-4.5.alpha4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

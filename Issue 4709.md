@@ -1,6 +1,6 @@
 # Issue 4709: [with patch; needs review] sage/magma hyperelliptic curve conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4709
 
 Original creator: was
 

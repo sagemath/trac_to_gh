@@ -1,6 +1,6 @@
 # Issue 7579: notebook -- autosave needs to save a snapshot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7579
 
 Original creator: was
 

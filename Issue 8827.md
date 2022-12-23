@@ -1,6 +1,6 @@
 # Issue 8827: Cache heights of points on elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8827
 
 Original creator: robertwb
 

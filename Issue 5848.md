@@ -1,6 +1,6 @@
 # Issue 5848: [with patch, needs review] untabify Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5848
 
 Original creator: jhpalmieri
 

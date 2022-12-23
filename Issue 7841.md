@@ -1,6 +1,6 @@
 # Issue 7841: Use NTL's ZZ_pEX for polynomial arithmetic over extension fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7841
 
 Original creator: ylchapuy
 
@@ -120,7 +120,7 @@ Replying to [comment:4 ylchapuy]:
 That makes my comments rather frustrating, I'm sure -- sorry about that.  I see that sage/libs/ntl has a good covereage score:
 
 ```
-john`@`ubuntu%sage -coverage ~/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl | grep SCORE
+john@ubuntu%sage -coverage ~/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl | grep SCORE
 SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_mat_ZZ.pyx: 86% (31 of 36)
 SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_ZZ_pEX.pyx: 97% (44 of 45)
 SCORE /home/john/sage-4.3.1.alpha1/devel/sage-main/sage/libs/ntl/ntl_GF2.pyx: 92% (13 of 14)

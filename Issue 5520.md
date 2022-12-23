@@ -1,6 +1,6 @@
 # Issue 5520: implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5520
 
 Original creator: was
 
@@ -261,7 +261,7 @@ Here's an implementation of the suggestion above:
 diff -r e8e97f260027 sage/modular/quatalg/brandt.py
 --- a/sage/modular/quatalg/brandt.py	Thu Mar 26 12:34:13 2009 -0700
 +++ b/sage/modular/quatalg/brandt.py	Thu Mar 26 20:06:25 2009 -0700
-`@``@` -936,7 +936,7 `@``@`
+@@ -936,7 +936,7 @@
          K = self.base_ring()
          return matrix(K, [[K(B[i][j][n]) for i in range(m)] for j in range(m)], sparse=sparse)
  
@@ -270,7 +270,7 @@ diff -r e8e97f260027 sage/modular/quatalg/brandt.py
          """
          Return sorted tuple of representatives for the equivalence
          classes of right ideals in self.
-`@``@` -962,9 +962,11 `@``@`
+@@ -962,9 +962,11 @@
          I = R.unit_ideal()
          I = R.right_ideal([4*x for x in I.basis()])
  
@@ -283,7 +283,7 @@ diff -r e8e97f260027 sage/modular/quatalg/brandt.py
          new_ideals = [I]
  
          newly_computed_ideals = []
-`@``@` -976,13 +978,19 `@``@`
+@@ -976,13 +978,19 @@
                  L = self.cyclic_supermodules(I, p)
                  for J in L:
                      is_new = True
@@ -377,7 +377,7 @@ Here's a similar patch for `BrandtModule._compute_hecke_matrix_directly()`:
 diff -r e8e97f260027 sage/modular/quatalg/brandt.py
 --- a/sage/modular/quatalg/brandt.py    Thu Mar 26 12:34:13 2009 -0700
 +++ b/sage/modular/quatalg/brandt.py    Thu Mar 26 22:09:42 2009 -0700
-`@``@` -822,7 +822,7 `@``@`
+@@ -822,7 +822,7 @@
          """
          return self._compute_hecke_matrix_brandt(n, sparse=sparse)
  
@@ -386,7 +386,7 @@ diff -r e8e97f260027 sage/modular/quatalg/brandt.py
          """
          Given an integer n coprime to the level, return the matrix of
          the n-th Hecke operator on self, computed on our fixed basis
-`@``@` -881,17 +881,27 `@``@`
+@@ -881,17 +881,27 @@
          # of ideals modulo equivalence -- we always provably check
          # equivalence if the theta series are the same up to this
          # bound.
@@ -670,8 +670,8 @@ WAIT -- I tested your trac_5520-rebase-ref1.patch and
 ```
 sage: d = BrandtModule(17,19).decomposition()
   ***   division by zero
-/scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython "$`@`" -i
-wstein`@`sage:/scratch/wstein/build/sage-3.4.1.alpha0$ 
+/scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython "$@" -i
+wstein@sage:/scratch/wstein/build/sage-3.4.1.alpha0$ 
 ```
 
 

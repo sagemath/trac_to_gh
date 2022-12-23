@@ -1,6 +1,6 @@
 # Issue 7332: Escape css id's and classes in templates
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7332
 
 Original creator: timdumol
 

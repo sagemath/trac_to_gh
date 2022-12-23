@@ -1,6 +1,6 @@
 # Issue 4665: sage/misc/cython.py creates file sage/misc/hello.spyx in tree while doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4665
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7905: Sun Studio 12 64-bit mode on Solaris.  libgpg-error creates 32-bit binaries.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7905
 
 Original creator: drkirkby
 

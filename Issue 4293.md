@@ -1,6 +1,6 @@
 # Issue 4293: reload(sage.combinat.crystals)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4293
 
 Original creator: nthiery
 

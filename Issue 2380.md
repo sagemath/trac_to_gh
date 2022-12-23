@@ -1,6 +1,6 @@
 # Issue 2380: make plot give an array of plots when passed an "array" option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2380
 
 Original creator: jason
 

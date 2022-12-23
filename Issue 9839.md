@@ -1,6 +1,6 @@
 # Issue 9839: link-editor thinks ECL library contains non-pic code on *all* 64-bit Solaris/OpenSolaris releases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9840
 
 Original creator: drkirkby
 
@@ -35,8 +35,8 @@ I built the latest ECL snapshot outside of Sage, and run the suggested command o
 
 
 ```
-drkirkby`@`hawk:/tmp/ecl$ ./configure 
-drkirkby`@`hawk:/tmp/ecl$ make
+drkirkby@hawk:/tmp/ecl$ ./configure 
+drkirkby@hawk:/tmp/ecl$ make
 ```
 
 
@@ -44,7 +44,7 @@ then the all important:
 
 
 ```
-drkirkby`@`hawk:/tmp/ecl$ elfdump -d ./build/libecl.so |  fgrep TEXTREL
+drkirkby@hawk:/tmp/ecl$ elfdump -d ./build/libecl.so |  fgrep TEXTREL
       [23]  TEXTREL           0
       [31]  FLAGS             0x4                 [ TEXTREL ]
 

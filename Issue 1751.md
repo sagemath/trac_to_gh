@@ -1,6 +1,6 @@
 # Issue 1751: Notebook revision information leakage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1751
 
 Original creator: nbruin
 

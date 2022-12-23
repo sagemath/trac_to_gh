@@ -1,6 +1,6 @@
 # Issue 2385: [with patch, needs review] Multivariate Polynomial coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2385
 
 Original creator: jbmohler
 

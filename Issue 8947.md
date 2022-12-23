@@ -1,6 +1,6 @@
 # Issue 8947: pretty printing of vectors over callable symbolic rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8947
 
 Original creator: jason
 

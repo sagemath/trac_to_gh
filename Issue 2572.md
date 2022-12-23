@@ -1,6 +1,6 @@
 # Issue 2572: imag() not defined for Algebraic Real Field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2572
 
 Original creator: ncalexan
 

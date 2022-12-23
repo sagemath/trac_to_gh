@@ -1,6 +1,6 @@
 # Issue 5625: group cohomology -- bad error messages; should indicate an optional package is needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5625
 
 Original creator: was
 

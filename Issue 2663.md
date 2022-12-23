@@ -1,6 +1,6 @@
 # Issue 2663: dpkg-shlibdeps errors for various Debian packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2663
 
 Original creator: tabbott
 

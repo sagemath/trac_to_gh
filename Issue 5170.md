@@ -1,6 +1,6 @@
 # Issue 5170: Get rid of the tooltip for Tinymce saying to doubleclick---it's annoying after a while.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5170
 
 Original creator: jason
 

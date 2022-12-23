@@ -1,6 +1,6 @@
 # Issue 192: polynomial arithmetic bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/192
 
 Original creator: was
 
@@ -19,7 +19,7 @@ sage: S.<xbar> = R.quo(x^5 - x + 1)
 sage: (5*xbar + 1).lift() % 5
 ZZ_p: division by non-invertible element
 /Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 10371 Abort
-trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
  
 Nick
 ```

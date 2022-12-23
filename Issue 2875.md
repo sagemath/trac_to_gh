@@ -1,6 +1,6 @@
 # Issue 2875: notebook -- save_session is completely broken in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2875
 
 Original creator: was
 

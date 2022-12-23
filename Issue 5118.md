@@ -1,6 +1,6 @@
 # Issue 5118: [with patch, needs review] Improve elliptic curve printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5118
 
 Original creator: rlm
 

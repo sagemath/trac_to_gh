@@ -1,6 +1,6 @@
 # Issue 5712: notebook -- Get rid of the stupid "unable to immediately interrupt computation" alert that drives me nuts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5712
 
 Original creator: was
 

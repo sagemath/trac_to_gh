@@ -1,6 +1,6 @@
 # Issue 5812: option zorder has no effect for point() and polygon()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5812
 
 Original creator: whuss
 

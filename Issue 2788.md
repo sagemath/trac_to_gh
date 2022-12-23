@@ -1,6 +1,6 @@
 # Issue 2788: [with patch, needs review] update hypellfrob to 2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2788
 
 Original creator: dmharvey
 

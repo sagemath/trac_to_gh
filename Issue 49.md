@@ -1,6 +1,6 @@
 # Issue 49: possible bug with p-adic number constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/49
 
 Original creator: dmharvey
 

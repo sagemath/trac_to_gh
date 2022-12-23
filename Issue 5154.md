@@ -1,6 +1,6 @@
 # Issue 5154: bug in modular composition over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5154
 
 Original creator: malb
 

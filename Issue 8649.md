@@ -1,6 +1,6 @@
 # Issue 8649: to_tableau method broken for crystals of type B
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8649
 
 Original creator: aschilling
 

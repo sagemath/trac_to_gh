@@ -1,6 +1,6 @@
 # Issue 4428: [with patch, needs review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4428
 
 Original creator: craigcitro
 

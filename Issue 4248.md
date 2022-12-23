@@ -1,6 +1,6 @@
 # Issue 4248: aspect_ratio is buggy in plot3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4248
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 2978: Rstats -- make it build with png support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2978
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 426: notebook -- interactive documentation doesn't interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/426
 
 Original creator: was
 

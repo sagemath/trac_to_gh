@@ -1,6 +1,6 @@
 # Issue 3817: notebook -- completel broken in sage-3.1.alpha1 -- one can't even log in.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3817
 
 Original creator: was
 

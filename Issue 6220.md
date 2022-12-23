@@ -1,6 +1,6 @@
 # Issue 6220: create symbolic arg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6220
 
 Original creator: robertwb
 

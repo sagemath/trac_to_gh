@@ -1,6 +1,6 @@
 # Issue 2721: parallel doctest not robust against filesystem issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2721
 
 Original creator: cwitty
 
@@ -11,7 +11,7 @@ Assignee: failure
 I ran a parallel doctest while I was editing a file in Emacs.  Evidently Emacs creates strange symlinks that point to nowhere as a file locking mechanism:
 
 ```
-lrwxrwxrwx 1 cwitty cwitty     46 2008-03-29 09:11 .#randstate.pyx -> cwitty`@`magnetar.newtonlabs.com.3701:1202495200
+lrwxrwxrwx 1 cwitty cwitty     46 2008-03-29 09:11 .#randstate.pyx -> cwitty@magnetar.newtonlabs.com.3701:1202495200
 ```
 
 

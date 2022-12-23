@@ -1,6 +1,6 @@
 # Issue 9364: add is_symmetric in BooleanFunction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9364
 
 Original creator: ylchapuy
 

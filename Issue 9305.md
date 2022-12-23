@@ -1,6 +1,6 @@
 # Issue 9305: Add an spkg-check file for R (statistics package)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9305
 
 Original creator: drkirkby
 

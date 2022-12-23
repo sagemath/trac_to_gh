@@ -1,6 +1,6 @@
 # Issue 9155: G.list() can be modified
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9155
 
 Original creator: robertwb
 

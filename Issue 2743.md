@@ -1,6 +1,6 @@
 # Issue 2743: make symbolic equalities and inequalities callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2743
 
 Original creator: jason
 

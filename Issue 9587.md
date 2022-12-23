@@ -1,6 +1,6 @@
 # Issue 9587: Conference Scheduler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9587
 
 Original creator: schilly
 

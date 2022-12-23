@@ -1,6 +1,6 @@
 # Issue 5571: fast_callable improvements (followup for #5093)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5571
 
 Original creator: robertwb
 

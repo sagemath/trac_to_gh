@@ -1,6 +1,6 @@
 # Issue 1663: scipy build fails in tr_TR locale
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1663
 
 Original creator: burcin
 

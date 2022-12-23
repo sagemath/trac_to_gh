@@ -1,6 +1,6 @@
 # Issue 8432: make iconv a prerequisite for building gd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8432
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4016: [with patch, needs review] improve doctests to schemes/generic/scheme.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4016
 
 Original creator: AlexGhitza
 

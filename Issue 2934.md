@@ -1,6 +1,6 @@
 # Issue 2934: doctesting files outside of sage repo is completely broken!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2934
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: failure
 ```
 
 
-On Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <jbandlow`@`gmail.com> wrote:
+On Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <jbandlow@gmail.com> wrote:
 > 
 >  Hello all,
 >  

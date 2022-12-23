@@ -1,6 +1,6 @@
 # Issue 3321: Matrix.visualize_structure is too dark/messed up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3321
 
 Original creator: malb
 

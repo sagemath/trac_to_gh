@@ -1,6 +1,6 @@
 # Issue 6687: spell-check all modules under sage/algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6687
 
 Original creator: mvngu
 

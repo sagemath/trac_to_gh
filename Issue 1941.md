@@ -1,6 +1,6 @@
 # Issue 1941: Finish bipartite graph implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1941
 
 Original creator: rlm
 

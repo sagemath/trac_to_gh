@@ -1,6 +1,6 @@
 # Issue 1652: length of DAGs with loops calculation runs infinite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1652
 
 Original creator: schilly
 

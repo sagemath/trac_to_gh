@@ -1,6 +1,6 @@
 # Issue 9360: Sage 4.4.4 numerical noise in mwrank.pyx on 32-bit cicero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9360
 
 Original creator: was
 

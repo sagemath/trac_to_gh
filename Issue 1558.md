@@ -1,6 +1,6 @@
 # Issue 1558: [with patch] more NTL wrapping, coefficient access and factoring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1558
 
 Original creator: jbmohler
 

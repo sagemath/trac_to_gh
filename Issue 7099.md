@@ -1,6 +1,6 @@
 # Issue 7099: serious incomplete gamma function precision bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7099
 
 Original creator: was
 

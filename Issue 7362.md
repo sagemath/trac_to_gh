@@ -1,6 +1,6 @@
 # Issue 7362: Make worksheet auto-sync and collaborative editing smarter and more granular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7362
 
 Original creator: mpatel
 

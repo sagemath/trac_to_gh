@@ -1,6 +1,6 @@
 # Issue 2594: [with patch, needs review] MPolynomial_polydict __floordiv__ wrong arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2594
 
 Original creator: jbmohler
 

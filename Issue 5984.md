@@ -1,6 +1,6 @@
 # Issue 5984: cmp related doctest failure in sage/modular/arithgroup/arithgroup_perm.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5984
 
 Original creator: mabshoff
 

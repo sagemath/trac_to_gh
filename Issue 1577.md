@@ -1,6 +1,6 @@
 # Issue 1577: .coefficients() and .monomials() differ in order in multivariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1577
 
 Original creator: ncalexan
 

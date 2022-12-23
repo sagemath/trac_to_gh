@@ -1,6 +1,6 @@
 # Issue 7885: Tate's algorithm for function fields.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7885
 
 Original creator: robertwb
 

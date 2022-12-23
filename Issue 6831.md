@@ -1,6 +1,6 @@
 # Issue 6831: [with patch, needs review] No more maximal dimension requirement for lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6831
 
 Original creator: novoselt
 

@@ -1,6 +1,6 @@
 # Issue 4624: Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4624
 
 Original creator: mabshoff
 

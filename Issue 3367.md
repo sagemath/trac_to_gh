@@ -1,6 +1,6 @@
 # Issue 3367: rename CachedFunction to cached_function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3367
 
 Original creator: malb
 

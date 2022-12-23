@@ -1,6 +1,6 @@
 # Issue 1848: Elliptic curve Sha an documentation misleading about proof
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1848
 
 Original creator: was
 

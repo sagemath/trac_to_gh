@@ -1,6 +1,6 @@
 # Issue 2052: PolyBoRi wrapper incomplete
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2052
 
 Original creator: malb
 

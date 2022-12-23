@@ -1,6 +1,6 @@
 # Issue 5707: plus signs missing in typesetting of modular symbols
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5707
 
 Original creator: was
 

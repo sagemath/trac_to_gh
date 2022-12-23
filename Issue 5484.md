@@ -1,6 +1,6 @@
 # Issue 5484: improve quotients of univariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5484
 
 Original creator: AlexGhitza
 

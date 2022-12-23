@@ -1,6 +1,6 @@
 # Issue 8338: Add Fourier transforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8338
 
 Original creator: olazo
 

@@ -1,6 +1,6 @@
 # Issue 485: SAGElite -- release a first version of SAGE Lite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/485
 
 Original creator: was
 

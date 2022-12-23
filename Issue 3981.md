@@ -1,6 +1,6 @@
 # Issue 3981: finance.TimeSeries - Add candlestick plot method.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3981
 
 Original creator: cswiercz
 

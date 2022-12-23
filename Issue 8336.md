@@ -1,6 +1,6 @@
 # Issue 8336: round(x) <> x.round() for x in RealField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8336
 
 Original creator: zimmerma
 

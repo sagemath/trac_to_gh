@@ -1,6 +1,6 @@
 # Issue 40: preparser issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/40
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-To: "Kyle Schalm" <kschalm`@`math.utexas.edu>, sage-devel`@`lists.sourceforge.net
+To: "Kyle Schalm" <kschalm@math.utexas.edu>, sage-devel@lists.sourceforge.net
 Subject: Re: [SAGEdev] long string parsing bug in 1.3.2.2
 
 The SAGE pre-parser currently works on single lines only -- it doesn't
@@ -61,7 +61,7 @@ Now fixed:
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169354692 28800
 # Node ID 9b38891949ca0db4e3df5592611a741f8b58568d
 # Parent  19cc21de721be8ea5985cf1319582e1ab7dc2820
@@ -70,7 +70,7 @@ Finally fixed multiline preparser issue for command line.
 diff -r 19cc21de721b -r 9b38891949ca sage/misc/interpreter.py
 --- a/sage/misc/interpreter.py  Fri Jan 19 22:49:10 2007 -0800
 +++ b/sage/misc/interpreter.py  Sat Jan 20 20:44:52 2007 -0800
-`@``@` -248,7 +248,7 `@``@` def do_prefilter_paste(line, continuatio
+@@ -248,7 +248,7 @@ def do_prefilter_paste(line, continuatio
                      ipmagic(L)
                  L = ''
              else:
@@ -79,7 +79,7 @@ diff -r 19cc21de721b -r 9b38891949ca sage/misc/interpreter.py
              __IPYTHON__.input_hist.append(L)
              __IPYTHON__.push(L)
          log.offset += 1
-`@``@` -343,7 +343,7 `@``@` def do_prefilter_paste(line, continuatio
+@@ -343,7 +343,7 @@ def do_prefilter_paste(line, continuatio
          else:
              raise ImportError, "Attaching of '%s' not implemented (load .py, .spyx, and .sage files)"%name
      if len(line) > 0:

@@ -1,6 +1,6 @@
 # Issue 7515: Improved deprecation and renaming of function and methods.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7515
 
 Original creator: hivert
 

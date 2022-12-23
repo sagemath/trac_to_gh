@@ -1,6 +1,6 @@
 # Issue 4725: bug in number field conjugate function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4725
 
 Original creator: was
 

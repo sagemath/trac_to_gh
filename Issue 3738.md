@@ -1,6 +1,6 @@
 # Issue 3738: new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3738
 
 Original creator: robertwb
 
@@ -194,7 +194,7 @@ Comment by mabshoff created at 2008-08-13 22:37:14
 With the patch applied I am seeing two doctest failures:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ sage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ sage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py
 sage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/steenrod_algebra_element.py", line 218:
@@ -559,7 +559,7 @@ We need the following fix to make doctests pass with the patches applied:
 ```
 --- a/sage/structure/parent.pyx Wed Aug 13 18:50:14 2008 -0700
 +++ b/sage/structure/parent.pyx Thu Aug 14 15:03:16 2008 -0700
-`@``@` -16,6 +16,8 `@``@`
+@@ -16,6 +16,8 @@
  cimport element
  cimport sage.categories.morphism as morphism
  cimport sage.categories.map as map

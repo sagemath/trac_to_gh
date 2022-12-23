@@ -1,6 +1,6 @@
 # Issue 3182: fix 64 bit OSX build support for givaro
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3182
 
 Original creator: mabshoff
 

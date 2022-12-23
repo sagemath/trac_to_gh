@@ -1,6 +1,6 @@
 # Issue 118: Tab completion is too noisy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/118
 
 Original creator: justin
 
@@ -63,8 +63,8 @@ Justin,
 See below, regarding tab completion.  
 
 ------- Forwarded message -------
-From: "Fernando Perez" <Fernando.Perez`@`colorado.edu>
-To: "William Stein" <wstein`@`gmail.com>
+From: "Fernando Perez" <Fernando.Perez@colorado.edu>
+To: "William Stein" <wstein@gmail.com>
 Cc:
 Subject: Re: ipython huge traceback
 Date: Sun, 15 Oct 2006 19:16:32 -0700

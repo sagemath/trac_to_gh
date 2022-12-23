@@ -1,6 +1,6 @@
 # Issue 33: notebook -- paste into worksheet problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/33
 
 Original creator: was
 

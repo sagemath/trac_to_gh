@@ -1,6 +1,6 @@
 # Issue 8863: unify graphics options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8863
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8684: clean up graph theory documentation in the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8684
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 3800: Problem with Cusp constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3800
 
 Original creator: craigcitro
 

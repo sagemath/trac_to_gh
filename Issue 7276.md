@@ -1,6 +1,6 @@
 # Issue 7276: Fix PPC issues in totallyreal_rel.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7276
 
 Original creator: kcrisman
 

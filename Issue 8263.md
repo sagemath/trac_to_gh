@@ -1,6 +1,6 @@
 # Issue 8263: Document ALL environment variables used by Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8263
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 6500: Improve reference manual coverage for polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6500
 
 Original creator: davidloeffler
 

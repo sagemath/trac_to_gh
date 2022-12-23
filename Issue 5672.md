@@ -1,6 +1,6 @@
 # Issue 5672: [with spkg, needs review] Update MPIR to 1.0.rc5 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5672
 
 Original creator: mabshoff
 

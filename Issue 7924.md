@@ -1,6 +1,6 @@
 # Issue 7924: Notebook trims trailing underscores from output.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7924
 
 Original creator: robertwb
 

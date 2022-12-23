@@ -1,6 +1,6 @@
 # Issue 4448: easy-to-fix (?) bug in interact with matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4448
 
 Original creator: was
 
@@ -11,8 +11,8 @@ Assignee: itolkov
 Try this interact in the notebook:
 
 ```
-`@`interact
-def f(n=matrix([This is the Trac macro *pi^2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#pi^2-macro))):
+@interact
+def f(n=matrix([[pi^2]])):
     print n
 ```
 

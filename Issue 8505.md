@@ -1,6 +1,6 @@
 # Issue 8505: random points on elliptic curve misses half the group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8505
 
 Original creator: robertwb
 
@@ -39,7 +39,7 @@ Comment by cremona created at 2010-03-12 16:27:04
 I tested all sage/schemes/elliptic_curves with -long and had one failure:
 
 ```
-jec`@`selmer%sage -t -long "sage/schemes/elliptic_curves/ell_finite_field.py"
+jec@selmer%sage -t -long "sage/schemes/elliptic_curves/ell_finite_field.py"
 **********************************************************************
 File "/storage/jec/sage-4.3.4.alpha1/devel/sage-tests/sage/schemes/elliptic_curves/ell_finite_field.py", line 1269:
     sage: E.gens()

@@ -1,6 +1,6 @@
 # Issue 2562: [with partial patch] few issues in calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2562
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 9744: implicit_plot fill option fills entire plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9744
 
 Original creator: jason
 
@@ -288,7 +288,7 @@ The `if options.pop('fill'):` is okay because of the `@`options decorator before
 
 
 ```
-`@`options(plot_points=150, contours=(0,0), fill=False, cmap=["blue"])
+@options(plot_points=150, contours=(0,0), fill=False, cmap=["blue"])
 ```
 
 

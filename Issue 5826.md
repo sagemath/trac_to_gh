@@ -1,6 +1,6 @@
 # Issue 5826: add nodoctest to sagedoc.py and sageinspect.py to work around #5806
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5826
 
 Original creator: ddrake
 

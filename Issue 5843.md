@@ -1,6 +1,6 @@
 # Issue 5843: race condition in cached_method (should not be shared between instances)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5843
 
 Original creator: nthiery
 
@@ -19,7 +19,7 @@ class bla:
     def __init__(self, value):
         self.value = value
     #
-    `@`cached_method
+    @cached_method
     def f(self, x):
         return self.value
 ```
@@ -120,7 +120,7 @@ class bla:
     def __init__(self, value):
         self.value = value
     #
-    `@`cached_method
+    @cached_method
     def f(self, x):
         return self.value
 ```

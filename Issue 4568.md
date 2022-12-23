@@ -1,6 +1,6 @@
 # Issue 4568: Dangerous doc test of save_session
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4568
 
 Original creator: SimonKing
 

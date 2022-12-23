@@ -1,6 +1,6 @@
 # Issue 3112: [with patch, needs review] Generate self-orthogonal binary codes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3112
 
 Original creator: rlm
 
@@ -334,7 +334,7 @@ Comment by mabshoff created at 2008-05-22 20:36:09
 Oops, the patch no longer applies cleanly:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/devel/sage$ patch -p1 < trac_3112-socodes.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/devel/sage$ patch -p1 < trac_3112-socodes.patch
 patching file sage/coding/all.py
 patching file sage/coding/binary_code.pxd
 patching file sage/coding/binary_code.pyx

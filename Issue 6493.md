@@ -1,6 +1,6 @@
 # Issue 6493: new scipy-0.7.p2 spkg is broken on 64-bit OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6493
 
 Original creator: was
 
@@ -62,7 +62,7 @@ real    39m40.718s
 user    34m27.276s
 sys     4m20.496s
 Error building Sage.
-wstein`@`bsd:~/build/64bit/sage-4.1.rc1$ 
+wstein@bsd:~/build/64bit/sage-4.1.rc1$ 
 ```
 
 

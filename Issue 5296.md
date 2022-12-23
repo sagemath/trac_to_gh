@@ -1,6 +1,6 @@
 # Issue 5296: Update the OS X Readme
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5296
 
 Original creator: GeorgSWeber
 

@@ -1,6 +1,6 @@
 # Issue 8694: Improve schemes printing and LaTeXing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8694
 
 Original creator: novoselt
 

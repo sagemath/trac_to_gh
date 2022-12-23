@@ -1,6 +1,6 @@
 # Issue 3995: [with patch, needs review] improve and doctest the MuPAD interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3995
 
 Original creator: mhansen
 

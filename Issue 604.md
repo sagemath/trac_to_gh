@@ -1,6 +1,6 @@
 # Issue 604: Number field element memory leak
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/604
 
 Original creator: jbmohler
 

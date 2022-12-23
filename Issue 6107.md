@@ -1,6 +1,6 @@
 # Issue 6107: [with patch, needs review] misc. fixes for symbolics for 4.0.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6107
 
 Original creator: mhansen
 

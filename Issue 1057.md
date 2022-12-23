@@ -1,6 +1,6 @@
 # Issue 1057: Order elements do not have Z as a (proper) basering
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1057
 
 Original creator: robertwb
 

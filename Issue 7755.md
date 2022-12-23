@@ -1,6 +1,6 @@
 # Issue 7755: Auto-detect SageNB install path when building documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7755
 
 Original creator: mpatel
 

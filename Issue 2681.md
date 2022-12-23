@@ -1,6 +1,6 @@
 # Issue 2681: [with patch, needs review] improve doctest coverage in libs/pari/gen.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2681
 
 Original creator: AlexGhitza
 

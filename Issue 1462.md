@@ -1,6 +1,6 @@
 # Issue 1462: speed up "sage -b" -- don't do anything cython stuff if no .pyx, .pxd, or .pxi file changes (not a dupe!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1462
 
 Original creator: was
 

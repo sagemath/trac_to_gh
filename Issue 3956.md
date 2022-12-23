@@ -1,6 +1,6 @@
 # Issue 3956: Fast hash for matrices over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3956
 
 Original creator: SimonKing
 

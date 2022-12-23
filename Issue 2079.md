@@ -1,6 +1,6 @@
 # Issue 2079: /= does not work for univariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2079
 
 Original creator: mhansen
 

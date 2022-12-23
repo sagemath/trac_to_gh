@@ -1,6 +1,6 @@
 # Issue 7102: R.py doctest fails for non-english locale
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7102
 
 Original creator: GeorgSWeber
 

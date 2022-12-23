@@ -1,6 +1,6 @@
 # Issue 5610: [with patch, not ready for review?] LaTeX customization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5610
 
 Original creator: jhpalmieri
 
@@ -199,10 +199,10 @@ I'm ready to give this a positive review with a rebased part2 patch and if the l
 ```
 EXAMPLES:
 
-\begin{Verbatim}[commandchars=`@`\[\]]
-`@`PYGaO[sage: ]`@`PYGbd[from] `@`PYGaV[sage.misc.latex] `@`PYGbd[import] list`@`_function
-`@`PYGaO[sage: ]list`@`_function(`@`lb[]`@`PYGaw[1],`@`PYGaw[2],`@`PYGaw[3]`@`rb[])
-`@`PYGaa['\left`@`lb[]1, ]
+\begin{Verbatim}[commandchars=@\[\]]
+@PYGaO[sage: ]@PYGbd[from] @PYGaV[sage.misc.latex] @PYGbd[import] list@_function
+@PYGaO[sage: ]list@_function(@lb[]@PYGaw[1],@PYGaw[2],@PYGaw[3]@rb[])
+@PYGaa['\left@lb[]1, ]
 \end{Verbatim}
 \end{quote}
 

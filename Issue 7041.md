@@ -1,6 +1,6 @@
 # Issue 7041: GAP purposely unsets CC which screws up Sun Studio build.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7041
 
 Original creator: drkirkby
 

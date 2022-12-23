@@ -1,6 +1,6 @@
 # Issue 911: hash() on Graph objects changes as the object is mutated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/911
 
 Original creator: cwitty
 
@@ -40,7 +40,7 @@ Here's a patch:
 diff -r 36489d2c9a2e sage/graphs/graph.py
 --- a/sage/graphs/graph.py      Tue Oct 16 09:50:59 2007 -0500
 +++ b/sage/graphs/graph.py      Wed Oct 17 10:19:53 2007 -0500
-`@``@` -359,6 +359,20 `@``@` class GenericGraph(SageObject):
+@@ -359,6 +359,20 @@ class GenericGraph(SageObject):
              return self._nxg.name
          else:
              return repr(self)

@@ -1,6 +1,6 @@
 # Issue 4283: [with proto-patch]A Speed-up Patch for NTL's ZZXFactoring.c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4283
 
 Original creator: anovocin
 

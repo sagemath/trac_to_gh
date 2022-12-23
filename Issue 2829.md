@@ -1,6 +1,6 @@
 # Issue 2829: [with patch, needs review] PyLint cleanup of crypto.mq.sr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2829
 
 Original creator: malb
 

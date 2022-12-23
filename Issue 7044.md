@@ -1,6 +1,6 @@
 # Issue 7044: eclib 20080310.p7 has code Sun's C++ compiler does not understand.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7044
 
 Original creator: drkirkby
 

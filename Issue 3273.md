@@ -1,6 +1,6 @@
 # Issue 3273: extend isqrt to work for Python int's in addition to Sage integers and objects with an isqrt method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3273
 
 Original creator: was
 

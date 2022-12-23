@@ -1,6 +1,6 @@
 # Issue 5918: bring doctest coverage for posets to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5918
 
 Original creator: saliola
 

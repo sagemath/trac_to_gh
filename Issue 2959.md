@@ -1,6 +1,6 @@
 # Issue 2959: bug in DirichletGroup over a finite base ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2959
 
 Original creator: wdj
 

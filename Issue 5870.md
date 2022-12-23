@@ -1,6 +1,6 @@
 # Issue 5870: Detect blas and atlas libraries for linbox on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5870
 
 Original creator: pjeremy
 

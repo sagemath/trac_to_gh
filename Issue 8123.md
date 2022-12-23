@@ -1,6 +1,6 @@
 # Issue 8123: Notebook inclusion of SVG files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8123
 
 Original creator: nbruin
 

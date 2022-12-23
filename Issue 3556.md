@@ -1,6 +1,6 @@
 # Issue 3556: [with patch, needs review] Bug in IntegerModRing(n) for very large n
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3556
 
 Original creator: craigcitro
 

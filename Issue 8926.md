@@ -1,6 +1,6 @@
 # Issue 8926: Family cannot completely handle a class as an argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8926
 
 Original creator: saliola
 

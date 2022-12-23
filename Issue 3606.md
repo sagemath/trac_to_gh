@@ -1,6 +1,6 @@
 # Issue 3606: totallyreal_data.py: "Use of uninitialised value of size 8"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3606
 
 Original creator: mabshoff
 

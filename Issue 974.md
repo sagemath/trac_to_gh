@@ -1,6 +1,6 @@
 # Issue 974: [with spkg] small memleak in nullspace.c in IML
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/974
 
 Original creator: mabshoff
 

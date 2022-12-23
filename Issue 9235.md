@@ -1,6 +1,6 @@
 # Issue 9235: Doctest coverage for sage.categories.homset
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9235
 
 Original creator: SimonKing
 

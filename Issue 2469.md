@@ -1,6 +1,6 @@
 # Issue 2469: fix readline extra space issue in sage (ipython)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2469
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
->  > On Mon, Mar 10, 2008 at 1:27 PM, Nikos Apostolakis <nikos.ap`@`gmail.com> wrote:
+>  > On Mon, Mar 10, 2008 at 1:27 PM, Nikos Apostolakis <nikos.ap@gmail.com> wrote:
 >  >  >
 >  >  >  Hello group,
 >  >  >

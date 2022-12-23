@@ -1,6 +1,6 @@
 # Issue 9401: pari(n).isprime(1) does not give the primality certificate to the user
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9401
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 1156: Functions lost in massive combinatorics reorganization?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1156
 
 Original creator: robertwb
 

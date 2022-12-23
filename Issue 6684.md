@@ -1,6 +1,6 @@
 # Issue 6684: warnings when building reference manual in Sage 4.1.1.rc2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6684
 
 Original creator: mvngu
 

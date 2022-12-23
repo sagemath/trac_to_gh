@@ -1,6 +1,6 @@
 # Issue 3570: more import improvements to db.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3570
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5819: make sage -coverage require a loads/dumps test for each class defined in a file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5819
 
 Original creator: AlexGhitza
 

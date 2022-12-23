@@ -1,6 +1,6 @@
 # Issue 1519: hg problem -- This should work but doesn't: sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1519
 
 Original creator: was
 

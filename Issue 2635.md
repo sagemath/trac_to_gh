@@ -1,6 +1,6 @@
 # Issue 2635: MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2635
 
 Original creator: was
 
@@ -20,7 +20,7 @@ Comment by was created at 2008-03-21 19:10:48
 
 ```
 
-On Fri, Mar 21, 2008 at 11:22 AM, Marshall Hampton <hamptonio`@`gmail.com> wrote:
+On Fri, Mar 21, 2008 at 11:22 AM, Marshall Hampton <hamptonio@gmail.com> wrote:
 > 
 >  If I kill my notebook session, and then restart, it seems that often
 >  the "+" character has been stripped from my worksheets.  However, this

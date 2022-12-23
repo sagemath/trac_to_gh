@@ -1,6 +1,6 @@
 # Issue 2410: parametric_plot and constants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2410
 
 Original creator: jbmohler
 

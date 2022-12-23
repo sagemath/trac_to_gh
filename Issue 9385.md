@@ -1,6 +1,6 @@
 # Issue 9385: Building ATLAS goes into an infinite loop
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9385
 
 Original creator: olazo
 
@@ -56,9 +56,9 @@ Try something like:
 
 
 ```
-drkirkby`@`hawk:~/clean$ cd sage-4.5.alpha0/spkg/standard
-drkirkby`@`hawk:~/clean/sage-4.5.alpha0/spkg/standard$ tar xfj atlas-3.8.3.p12.spkg
-drkirkby`@`hawk:~/clean/sage-4.5.alpha0/spkg/standard$ cat atlas-3.8.3.p12/SPKG.txt
+drkirkby@hawk:~/clean$ cd sage-4.5.alpha0/spkg/standard
+drkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ tar xfj atlas-3.8.3.p12.spkg
+drkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ cat atlas-3.8.3.p12/SPKG.txt
 ```
 
 
@@ -282,10 +282,10 @@ Yes, I mean the complete install.log. Just wait until it loops once. Upload it s
 The fastest way is to start a new shell with a different locale like this:
 
 ```
-[vbraun`@`volker-desktop ~]$ date
+[vbraun@volker-desktop ~]$ date
 2010年  7月  3日 土曜日 18:00:03 IST
-[vbraun`@`volker-desktop ~]$ LANG=en_US bash
-[vbraun`@`volker-desktop ~]$ date
+[vbraun@volker-desktop ~]$ LANG=en_US bash
+[vbraun@volker-desktop ~]$ date
 Sat Jul  3 18:00:14 IST 2010
 ```
 
@@ -910,7 +910,7 @@ are hanging at the ATLAS build.
 Just looking at the install.log for example ATLAS was trying over 600 times to compile fc.c
 
 ```
-[chris`@`thinkpad sage-4.7.1]$ cat install.log | grep -c "sage-4.7.1/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/fc.c"
+[chris@thinkpad sage-4.7.1]$ cat install.log | grep -c "sage-4.7.1/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/fc.c"
 648
 ```
 

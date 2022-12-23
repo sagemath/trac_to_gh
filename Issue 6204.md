@@ -1,6 +1,6 @@
 # Issue 6204: make norms for degree 1 relative number fields work; add doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6204
 
 Original creator: ncalexan
 
@@ -44,7 +44,7 @@ Hold it, this fails doctests under 4.0.1:
 
 
 ```
-david`@`groke:~/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field> sage -t number_field_ideal_rel.py
+david@groke:~/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field> sage -t number_field_ideal_rel.py
 sage -t  "devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py"                           
 **********************************************************************                                    
 File "/home/david/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py", line 361:

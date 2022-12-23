@@ -1,6 +1,6 @@
 # Issue 1789: standalone Sage scripts don't work on Linux -- they work fine on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1789
 
 Original creator: was
 

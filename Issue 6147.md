@@ -1,6 +1,6 @@
 # Issue 6147: [with patch, needs review] Make sage -sync-build smarter.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6147
 
 Original creator: craigcitro
 

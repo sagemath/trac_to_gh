@@ -1,6 +1,6 @@
 # Issue 9059: some shortcuts for "is_H-free" tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9059
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 9806: merge_vertices behavior in a graph with loops
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9807
 
 Original creator: tobiasljohnson
 

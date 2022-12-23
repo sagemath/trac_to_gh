@@ -1,6 +1,6 @@
 # Issue 56: fundamental speed issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/56
 
 Original creator: was
 
@@ -13,7 +13,7 @@ We're not sure what to make of this yet:
 
 ```
 MAGMA:
-was`@`sage:~$ magma
+was@sage:~$ magma
 Magma V2.12-20    Wed Sep 13 2006 16:02:30 on sage     [Seed = 4122492641]
 Type ? for help.  Type <Ctrl>-D to quit.
 > two := 2;

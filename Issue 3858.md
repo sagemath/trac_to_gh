@@ -1,6 +1,6 @@
 # Issue 3858: [with patch, needs review] 3.1alpha: fix issues with the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3858
 
 Original creator: jhpalmieri
 

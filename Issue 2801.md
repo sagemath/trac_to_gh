@@ -1,6 +1,6 @@
 # Issue 2801: add a get_page function which supports https via GNUTLS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2801
 
 Original creator: mhansen
 

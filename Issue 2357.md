@@ -1,6 +1,6 @@
 # Issue 2357: make FLINT the default for ZZ['x']
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2357
 
 Original creator: mhansen
 

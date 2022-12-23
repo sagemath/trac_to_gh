@@ -1,6 +1,6 @@
 # Issue 3052: mercurial --> plain text --> mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3052
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3633: [witch patch, needs review] use commands.getoutput in hostinfo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3633
 
 Original creator: yi
 

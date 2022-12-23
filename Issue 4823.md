@@ -1,6 +1,6 @@
 # Issue 4823: [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4823
 
 Original creator: robertwb
 

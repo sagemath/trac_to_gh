@@ -1,6 +1,6 @@
 # Issue 3287: [with patch; needs review] worksheet.py -- doctest failure blocking a release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3287
 
 Original creator: was
 

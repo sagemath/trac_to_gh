@@ -1,6 +1,6 @@
 # Issue 5005: polynomial_template __init__ from list horribly innefficient
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5005
 
 Original creator: robertwb
 

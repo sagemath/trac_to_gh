@@ -1,6 +1,6 @@
 # Issue 8629: test ticket; please ignore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8629
 
 Original creator: mvngu
 

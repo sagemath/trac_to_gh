@@ -1,6 +1,6 @@
 # Issue 4848: [with patch, needs review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4848
 
 Original creator: mabshoff
 
@@ -27,14 +27,14 @@ The file is also from 2005 and hasn't been touched for ages:
 
 ```
 changeset:   1097:e9c1649fcc14
-user:        wstein`@`gmail.com
+user:        wstein@gmail.com
 date:        Fri Sep 01 02:31:25 2006 +0000
-summary:     [project `@` wstein`@`ucsd.edu --> wstein`@`gmail.com (hundreds of changes)]
+summary:     [project @ wstein@ucsd.edu --> wstein@gmail.com (hundreds of changes)]
 
 changeset:   0:039f6310c6fe
-user:        tornaria`@`math.utexas.edu
+user:        tornaria@math.utexas.edu
 date:        Sat Feb 11 01:13:08 2006 +0000
-summary:     [project `@` original sage-0.10.12]
+summary:     [project @ original sage-0.10.12]
 ```
 
 

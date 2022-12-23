@@ -1,6 +1,6 @@
 # Issue 1199: cvxopt fix [with spkg]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1199
 
 Original creator: jkantor
 

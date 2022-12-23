@@ -1,6 +1,6 @@
 # Issue 1685: restructuring symmetric functions and misc. combinatorics updates.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1685
 
 Original creator: mhansen
 

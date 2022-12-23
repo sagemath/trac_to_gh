@@ -1,6 +1,6 @@
 # Issue 9055: Moving/cleaning enumeration functions for points on schemes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9055
 
 Original creator: cturner
 

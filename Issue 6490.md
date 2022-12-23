@@ -1,6 +1,6 @@
 # Issue 6490: upgrade lisp ecl to version 9.6.2 which has been released
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6490
 
 Original creator: was
 

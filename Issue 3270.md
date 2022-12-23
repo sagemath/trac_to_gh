@@ -1,6 +1,6 @@
 # Issue 3270: [with patch, easy review] trivial 100x speedup in coding theory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3270
 
 Original creator: rlm
 

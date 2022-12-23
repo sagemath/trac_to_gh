@@ -1,6 +1,6 @@
 # Issue 2381: plot_vector_field can't plot arbitrary vector fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2381
 
 Original creator: edrex
 

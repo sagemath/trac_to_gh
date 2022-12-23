@@ -1,6 +1,6 @@
 # Issue 6379: #2513 made R.py doctest fail for non-english locale
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6379
 
 Original creator: GeorgSWeber
 

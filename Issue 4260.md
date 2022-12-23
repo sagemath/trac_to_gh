@@ -1,6 +1,6 @@
 # Issue 4260: use LinBox as native matrix representation for dense matrices over GF(p)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4260
 
 Original creator: malb
 

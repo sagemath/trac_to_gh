@@ -1,6 +1,6 @@
 # Issue 5186: mpir build-time CPU detection fails in kvm/qemu amd64 virtual machine
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5186
 
 Original creator: wjp
 
@@ -12,9 +12,9 @@ When building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual 
 
 
 ```
-[root`@`localhost src]# bash config.guess
+[root@localhost src]# bash config.guess
 athlon-unknown-linux-gnu
-[root`@`localhost src]# bash configfsf.guess
+[root@localhost src]# bash configfsf.guess
 x86_64-unknown-linux-gnu
 ```
 
@@ -59,9 +59,9 @@ power management:
 and
 
 ```
-[root`@`localhost src]# bash config.guess
+[root@localhost src]# bash config.guess
 athlon-unknown-linux-gnu
-[root`@`localhost src]# bash configfsf.guess
+[root@localhost src]# bash configfsf.guess
 x86_64-unknown-linux-gnu
 ```
 

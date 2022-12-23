@@ -1,6 +1,6 @@
 # Issue 6031: [with spkg, needs review] ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6031
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4863: bug in install_package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4863
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3524: Buildbot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3524
 
 Original creator: ghtdak
 

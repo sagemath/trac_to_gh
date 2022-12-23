@@ -1,6 +1,6 @@
 # Issue 1802: unify possible finite field representations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1802
 
 Original creator: malb
 

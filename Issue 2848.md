@@ -1,6 +1,6 @@
 # Issue 2848: numerical noise in sage/misc/prandom.py on MacIntel OSX 10.5/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2848
 
 Original creator: mabshoff
 

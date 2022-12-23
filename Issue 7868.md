@@ -1,6 +1,6 @@
 # Issue 7868: Factoring in fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7868
 
 Original creator: spancratz
 

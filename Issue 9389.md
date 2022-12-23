@@ -1,6 +1,6 @@
 # Issue 9389: sage crashing when computing local_data() for an EC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9389
 
 Original creator: arminstraub
 
@@ -81,7 +81,7 @@ verbose 1 (629: ell_local_data.py, <lambda>) mod-p multiply of 1 x 2 matrix by 2
 verbose 1 (629: ell_local_data.py, <lambda>) mod-p multiply of 1 x 2 matrix by 2 x 2 matrix modulo 3
 verbose 1 (568: ell_local_data.py, _tate) Analyzing roots of cubic T^3 + 7/18*a^3 + 3/4*a^2 + 1/18*a + 1/2*T^2 + 0*T + 23/36*a^3 + a^2 + 1/18*a + 1, case 1 (time = 2.285651)
 verbose 1 (568: ell_local_data.py, _tate) Distinct roots (time = 2.285651)
-/usr/local/sage/local/bin/sage-sage: line 206:  6216 Aborted                 sage-ipython "$`@`" -i
+/usr/local/sage/local/bin/sage-sage: line 206:  6216 Aborted                 sage-ipython "$@" -i
 ```
 
 
@@ -97,7 +97,7 @@ sage: K.<a> = NumberField(x^4-32*x^2+324)
 sage: I = K.ideal(3, 1/24*a^3 - 1/4*a^2 - 7/12*a + 3)
 sage: R = PolynomialRing(I.residue_field(), 'x')
 sage: R([23/36*a^3 + a^2 + 1/18*a + 1, 0, 7/18*a^3 + 3/4*a^2 + 1/18*a + 1/2, 1]) # boom!
-/storage/masiao/sage-4.5.alpha1/local/bin/sage-sage: line 206: 14086 Aborted                 sage-ipython "$`@`" -i
+/storage/masiao/sage-4.5.alpha1/local/bin/sage-sage: line 206: 14086 Aborted                 sage-ipython "$@" -i
 ```
 
 
@@ -155,7 +155,7 @@ sage: R = PolynomialRing(K.ring_of_integers().residue_field(K.ideal(2)), 'x')
 sage: R
 Univariate Polynomial Ring in x over Residue field in abar of Fractional ideal (2)
 sage: R([1/2*a])
-/home/jec/sage-current/local/bin/sage-sage: line 217: 15900 Aborted                 sage-ipython "$`@`" -i
+/home/jec/sage-current/local/bin/sage-sage: line 217: 15900 Aborted                 sage-ipython "$@" -i
 ```
 
 Now of course a/2 cannot be pushed into the residue field, as this (perfectly correct) behaviour shows:
@@ -223,7 +223,7 @@ In fact, after disabling the buggy ylchapuy code as follows, the original ellipt
 diff -r b5dab6864f35 sage/rings/polynomial/polynomial_ring.py
 --- a/sage/rings/polynomial/polynomial_ring.py  Sat Sep 04 21:40:16 2010 -0700
 +++ b/sage/rings/polynomial/polynomial_ring.py  Wed Oct 27 15:50:43 2010 -0700
-`@``@` -1222,7 +1222,8 `@``@`
+@@ -1222,7 +1222,8 @@
          """
          if implementation is None: implementation="NTL"
          from sage.rings.finite_rings.finite_field_base import is_FiniteField
@@ -312,7 +312,7 @@ as a simple workaround, this solves the problem:
 diff -r 1b5dc2667b48 sage/rings/polynomial/polynomial_ring.py
 --- a/sage/rings/polynomial/polynomial_ring.py  Sat Oct 23 15:07:20 2010 +0200
 +++ b/sage/rings/polynomial/polynomial_ring.py  Thu Oct 28 15:53:58 2010 +0200
-`@``@` -1222,7 +1222,7 `@``@`
+@@ -1222,7 +1222,7 @@
          """
          if implementation is None: implementation="NTL"
          from sage.rings.finite_rings.finite_field_base import is_FiniteField

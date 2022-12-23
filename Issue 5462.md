@@ -1,6 +1,6 @@
 # Issue 5462: [in progress] Add support for Clawpack to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5462
 
 Original creator: cswiercz
 

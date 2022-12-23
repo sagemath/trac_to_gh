@@ -1,6 +1,6 @@
 # Issue 7560: len(t_span) > 2 case creates len(t_span) -  1 solutions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7560
 
 Original creator: adavid
 

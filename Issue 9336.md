@@ -1,6 +1,6 @@
 # Issue 9336: Improve doctest coverage for sage/rings/number_field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9336
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 7513: Update Mercurial to 1.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7513
 
 Original creator: mhansen
 
@@ -135,10 +135,10 @@ Finished installing mercurial-1.6.4.p0.spkg
 real	0m2.384s
 user	0m1.960s
 sys	0m0.430s
-leif`@`quadriga:~/Sage/sage-4.6$ ./sage -hg --version
+leif@quadriga:~/Sage/sage-4.6$ ./sage -hg --version
 Mercurial Distributed SCM (version 1.3.1)
 
-Copyright (C) 2005-2009 Matt Mackall <mpm`@`selenic.com> and others
+Copyright (C) 2005-2009 Matt Mackall <mpm@selenic.com> and others
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```

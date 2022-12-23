@@ -1,6 +1,6 @@
 # Issue 9971: Add toric lattice morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9972
 
 Original creator: novoselt
 

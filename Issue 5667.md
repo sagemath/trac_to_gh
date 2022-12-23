@@ -1,6 +1,6 @@
 # Issue 5667: matrix modified when operation should be rolled back
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5667
 
 Original creator: jason
 

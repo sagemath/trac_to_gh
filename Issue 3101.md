@@ -1,6 +1,6 @@
 # Issue 3101: pbuild: mwrank.so needs to be build as a C++ extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3101
 
 Original creator: mabshoff
 

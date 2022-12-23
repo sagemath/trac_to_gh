@@ -1,6 +1,6 @@
 # Issue 1421: [with patch] finer control in ECM interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1421
 
 Original creator: zimmerma
 

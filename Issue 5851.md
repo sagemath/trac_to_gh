@@ -1,6 +1,6 @@
 # Issue 5851: [with patch, needs review] Convert 3 more elliptic curves files to ReST and add to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5851
 
 Original creator: cremona
 

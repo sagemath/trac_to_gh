@@ -1,6 +1,6 @@
 # Issue 2775: multivariate factoring over some rings gives incorrect results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2775
 
 Original creator: dmharvey
 

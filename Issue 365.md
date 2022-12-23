@@ -1,6 +1,6 @@
 # Issue 365: very serious infinite loop in coercion somewhere
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/365
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On 5/17/07, Prof. J. E. Cremona <john.cremona`@`nottingham.ac.uk> wrote:
+On 5/17/07, Prof. J. E. Cremona <john.cremona@nottingham.ac.uk> wrote:
 > 
 > Problem:  when executing the following, the last line takes forever and
 > had to be killed:
@@ -77,7 +77,7 @@ This is fixed now.  It was a problem in the __call__ method of polynomial ring.
 
 
 ```
-`@``@` -156,6 +163,8 `@``@` class PolynomialRing_general(sage.algebr
+@@ -156,6 +163,8 @@ class PolynomialRing_general(sage.algebr
          C = self.__polynomial_class
          if isinstance(x, C) and x.parent() is self:
              return x

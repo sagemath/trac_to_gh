@@ -1,6 +1,6 @@
 # Issue 9673: Referring to flag for doc-testing only changed files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9673
 
 Original creator: jsrn
 

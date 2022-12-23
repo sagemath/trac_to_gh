@@ -1,6 +1,6 @@
 # Issue 8513: Including documentation in the reference manual for some files related to graph theory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8513
 
 Original creator: abmasse
 

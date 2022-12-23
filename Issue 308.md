@@ -1,6 +1,6 @@
 # Issue 308: log_html() crashes because of an undefined variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/308
 
 Original creator: dfdeshom
 

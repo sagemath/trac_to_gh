@@ -1,6 +1,6 @@
 # Issue 3207: upgrade jsmath to version 3.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3207
 
 Original creator: jason
 

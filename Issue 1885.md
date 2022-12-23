@@ -1,6 +1,6 @@
 # Issue 1885: add atlas pretuning for AMD Athlon MP processors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1885
 
 Original creator: was
 

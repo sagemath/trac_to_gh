@@ -1,6 +1,6 @@
 # Issue 929: wrap fpLLL-2.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/929
 
 Original creator: malb
 

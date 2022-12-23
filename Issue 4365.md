@@ -1,6 +1,6 @@
 # Issue 4365: typo in license()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4365
 
 Original creator: was
 

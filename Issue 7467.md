@@ -1,6 +1,6 @@
 # Issue 7467: Make SageNB use `setuptools` instead of `distutils`
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7467
 
 Original creator: timdumol
 

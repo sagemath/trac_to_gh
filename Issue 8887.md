@@ -1,6 +1,6 @@
 # Issue 8887: Monoids().ParentMethods.prod doctest is ill formated.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8887
 
 Original creator: hivert
 

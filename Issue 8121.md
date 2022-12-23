@@ -1,6 +1,6 @@
 # Issue 8121: preparsing of "time" special command inconsistent in company of parenthesis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8121
 
 Original creator: was
 

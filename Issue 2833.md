@@ -1,6 +1,6 @@
 # Issue 2833: Linbox build failure on OSX 10.4 intel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2833
 
 Original creator: jkantor
 

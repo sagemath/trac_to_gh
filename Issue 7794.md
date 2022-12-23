@@ -1,6 +1,6 @@
 # Issue 7794: PolynomialRing_integral_domain ignores Ctrl-C and segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7794
 
 Original creator: SimonKing
 

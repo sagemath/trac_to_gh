@@ -1,6 +1,6 @@
 # Issue 5606: complex color plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5606
 
 Original creator: robertwb
 
@@ -167,7 +167,7 @@ abort: patch failed to apply
 sage: hg_sage.log()
 changeset:   11933:470a0a0e9a2c
 tag:         tip
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Sun Apr 05 23:49:53 2009 -0700
 summary:     3.4.1.rc1
 

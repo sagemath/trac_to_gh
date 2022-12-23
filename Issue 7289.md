@@ -1,6 +1,6 @@
 # Issue 7289: Multiway cut
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7289
 
 Original creator: ncohen
 

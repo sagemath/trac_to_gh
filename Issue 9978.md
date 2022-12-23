@@ -1,6 +1,6 @@
 # Issue 9978: Cliquer fails to install on AIX 5.3 as getopt.h does not exist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9979
 
 Original creator: drkirkby
 

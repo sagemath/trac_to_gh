@@ -1,6 +1,6 @@
 # Issue 9828: Implement implicitly multiplied output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9829
 
 Original creator: mpatel
 

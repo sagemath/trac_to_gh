@@ -1,6 +1,6 @@
 # Issue 4859: basic covering design module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4859
 
 Original creator: dgordon
 

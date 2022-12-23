@@ -1,6 +1,6 @@
 # Issue 1083: Bug in degree 0 number fields; manifests itself in element.matrix(), .trace(), .norm(), etc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1083
 
 Original creator: ncalexan
 

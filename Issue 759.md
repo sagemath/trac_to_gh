@@ -1,6 +1,6 @@
 # Issue 759: [patch] graphs: density returns incorrect result for directed graphs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/759
 
 Original creator: jason
 
@@ -14,7 +14,7 @@ Keywords: graphs
 ```
 --- a/sage/graphs/graph.py      Fri Sep 28 10:30:09 2007 -0500
 +++ b/sage/graphs/graph.py      Fri Sep 28 13:48:53 2007 -0500
-`@``@` -451,7 +451,7 `@``@` class GenericGraph(SageObject):
+@@ -451,7 +451,7 @@ class GenericGraph(SageObject):
              Looped digraph on 0 vertices
 
          """
@@ -23,7 +23,7 @@ Keywords: graphs
              if new:
                  self._nxg.allow_selfloops()
              else:
-`@``@` -467,12 +467,18 `@``@` class GenericGraph(SageObject):
+@@ -467,12 +467,18 @@ class GenericGraph(SageObject):
              sage: d = {0: [1,4,5], 1: [2,6], 2: [3,7], 3: [4,8], 4: [9], 5: [7, 8], 6: [8,9], 7: [9]}
              sage: G = Graph(d); G.density()
              1/3

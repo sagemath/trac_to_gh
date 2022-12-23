@@ -1,6 +1,6 @@
 # Issue 7757: Upgrade to notebook spkg to sagenb-0.4.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7757
 
 Original creator: was
 

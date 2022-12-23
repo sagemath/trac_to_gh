@@ -1,6 +1,6 @@
 # Issue 5776: sage-location ought to rewrite loads of files in $SAGE_LOCAL/bin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5776
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ CC:  leif
 The following is from a 3.4.1.rc3 build that was -bdisted from 3.4.1.rc2. There are *loads* of files that still have 3.4.1.rc2 in various config files:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc3/local/bin$ grep -r "sage-3.4.1.rc2" *  | grep --invert-match Binary
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/local/bin$ grep -r "sage-3.4.1.rc2" *  | grep --invert-match Binary
 freetype-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local
 freetype-config:    major=`grep define /scratch/mabshoff/sage-3.4.1.rc2/local/include/freetype2/freetype/freetype.h \
 freetype-config:    minor=`grep define /scratch/mabshoff/sage-3.4.1.rc2/local/include/freetype2/freetype/freetype.h \

@@ -1,6 +1,6 @@
 # Issue 5997: deprecate the "order" method on elements of rings.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5997
 
 Original creator: was
 

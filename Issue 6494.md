@@ -1,6 +1,6 @@
 # Issue 6494: sage should *never* ever import numpy by default on startup.  Yet again it does!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6494
 
 Original creator: was
 

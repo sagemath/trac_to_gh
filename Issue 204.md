@@ -1,6 +1,6 @@
 # Issue 204: bug in real number comparison or coercion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/204
 
 Original creator: was
 

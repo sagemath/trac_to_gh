@@ -1,6 +1,6 @@
 # Issue 4224: small error in new question-mark interval printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4224
 
 Original creator: cwitty
 

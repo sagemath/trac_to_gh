@@ -1,6 +1,6 @@
 # Issue 7756: Extra, unwanted text inserted in cells by shift-enter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7756
 
 Original creator: mpatel
 

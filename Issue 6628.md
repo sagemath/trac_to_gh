@@ -1,6 +1,6 @@
 # Issue 6628: [with patch, needs review] Singular functions via libSingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6628
 
 Original creator: malb
 

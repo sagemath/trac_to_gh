@@ -1,6 +1,6 @@
 # Issue 6407: Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6407
 
 Original creator: hlaw
 

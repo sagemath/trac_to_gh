@@ -1,6 +1,6 @@
 # Issue 1464: [with patch] binary code canonical labels & automorphism group generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1464
 
 Original creator: rlm
 
@@ -42,7 +42,7 @@ All tests passed!
 
 
 ```
-[jaap`@`paix sage-2.9.alpha5]$ ./sage -t devel/sage/sage/graphs*
+[jaap@paix sage-2.9.alpha5]$ ./sage -t devel/sage/sage/graphs*
 sage -t  devel/sage-main/sage/graphs/print_graphs.py        
          [1.5 s]
 sage -t  devel/sage-main/sage/graphs/graph_database.py      
@@ -99,8 +99,8 @@ Comment by was created at 2007-12-15 23:37:42
 Do this after applying the bundle:
 
 ```
-was`@`sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg rm binary_code_backup.pyx 
-was`@`sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg ci
+was@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg rm binary_code_backup.pyx 
+was@sage:~/build/sage-2.9.rc0/devel/sage/sage/coding$ hg ci
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 8460: doctest failure sagenb-0.7.5.1-py2.6.egg/sagenb/misc/sageinspect.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8460
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 3758: crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3758
 
 Original creator: was
 
@@ -13,7 +13,7 @@ Assignee: tbd
 
 =====================================================
 
-[was`@`localhost ~]$ cat /etc/issue
+[was@localhost ~]$ cat /etc/issue
 RHEL5 -- StartCom Enterprise Linux AS release 5.0.0 (Kishuf)
 Kernel \r on an \m
 
@@ -22,7 +22,7 @@ Total time for all tests: 4047.3 seconds
 
 Because of lack of RAM:
 
-[was`@`localhost ~]$ free
+[was@localhost ~]$ free
              total       used       free     shared    buffers     cached
 Mem:        255704     223072      32632          0      35608     140592
 Swap:       524280      41776     482504
@@ -37,7 +37,7 @@ On the Ubuntu LTS 64-bit Sage install with 1GB RAM exactly one failure:
 
         sage -t -long devel/sage/sage/crypto/mq/sr.py
 
-was`@`SAGE64VPC:~$ free
+was@SAGE64VPC:~$ free
              total       used       free     shared    buffers     cached
 Mem:       1028380     576408     451972          0     101512     196976
 
@@ -53,7 +53,7 @@ Comment by was created at 2008-08-05 05:34:23
 Here's what it looks like:
 
 ```
-[was`@`localhost sage-3.1.alpha0]$ ./sage -t --long devel/sage/sage/crypto/mq/sr.py
+[was@localhost sage-3.1.alpha0]$ ./sage -t --long devel/sage/sage/crypto/mq/sr.py
 sage -t --long devel/sage/sage/crypto/mq/sr.py              sh: line 1: 28053 Killed                  /home/was/build/sage-3.1.alpha0/local/bin/python /home/was/build/sage-3.1.alpha0/tmp/.doctest_sr.py >/tmp/tmp6Q-Tzr 2>/tmp/tmpNd2IJH
 
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
@@ -66,7 +66,7 @@ The following tests failed:
 
 	sage -t --long devel/sage/sage/crypto/mq/sr.py
 Total time for all tests: 134.8 seconds
-[was`@`localhost sage-3.1.alpha0]$ 
+[was@localhost sage-3.1.alpha0]$ 
 ```
 
 

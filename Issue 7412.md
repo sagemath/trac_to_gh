@@ -1,6 +1,6 @@
 # Issue 7412: from_lehmer_code modifies its argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7412
 
 Original creator: ylchapuy
 

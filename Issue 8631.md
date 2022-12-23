@@ -1,6 +1,6 @@
 # Issue 8631: Make a graph-input interact control
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8631
 
 Original creator: rbeezer
 

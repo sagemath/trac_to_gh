@@ -1,6 +1,6 @@
 # Issue 6218: small changes to jacobian_morphism to make hyperelliptic curve arithmetic faster
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6218
 
 Original creator: ncalexan
 

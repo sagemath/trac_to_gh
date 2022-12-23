@@ -1,6 +1,6 @@
 # Issue 1239: Wrap Simon's new gp two descent code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1239
 
 Original creator: robertwb
 

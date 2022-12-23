@@ -1,6 +1,6 @@
 # Issue 1735: do not mark a spkg as installed if sage-check fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1735
 
 Original creator: mabshoff
 

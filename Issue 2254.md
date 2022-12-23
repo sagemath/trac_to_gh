@@ -1,6 +1,6 @@
 # Issue 2254: Upgrade linbox and givaro spkg to upstream
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2254
 
 Original creator: cpernet
 
@@ -46,7 +46,7 @@ When I apply the linbox spkg, it makes sage crash very badly on exiting due to a
 
 ```
 
-[pernet`@`john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage -gdb
+[pernet@john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-gdb-pythonstartup
@@ -136,14 +136,14 @@ The output of a standard session (without gdb) is
 
 
 ```
-[pernet`@`john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage
+[pernet@john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |
 | Type notebook() for the GUI, and license() for information.        |
 sage: exit
 Exiting SAGE (CPU time 0m0.01s, Wall time 0m1.39s).
-/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-sage: line 212: 27121 Erreur de segmentation  (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-sage: line 212: 27121 Erreur de segmentation  (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 
 ```
 

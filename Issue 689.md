@@ -1,6 +1,6 @@
 # Issue 689: modifying preparse.py to benefit from the Python standard tokenize module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/689
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On 9/18/07, Joel B. Mohler <joel`@`kiwistrawberry.us> wrote:
+On 9/18/07, Joel B. Mohler <joel@kiwistrawberry.us> wrote:
 
     I don't have a strong opinion about the original proposition ... although I
     have spent the last week being thoroughly vexed by python being zero-based

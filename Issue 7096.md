@@ -1,6 +1,6 @@
 # Issue 7096: bug in dual isogeny computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7096
 
 Original creator: cremona
 

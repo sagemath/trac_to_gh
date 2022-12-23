@@ -1,6 +1,6 @@
 # Issue 7071: palp-1.1.p1 ignores CC variable and uses gcc, so fails with Sun Studio.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7071
 
 Original creator: drkirkby
 

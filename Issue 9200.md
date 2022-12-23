@@ -1,6 +1,6 @@
 # Issue 9200: Add left and right directions to limits
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9200
 
 Original creator: DanaErnst
 

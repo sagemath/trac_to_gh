@@ -1,6 +1,6 @@
 # Issue 4509: doctests for planarity code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4509
 
 Original creator: jason
 
@@ -358,7 +358,7 @@ Comment by boothby created at 2010-01-18 05:58:38
 Works for me and valgrinds clean: 
 
 ```
-boothby`@`sage:/scratch/boothby/sage-4.3$ ./sage -valgrind
+boothby@sage:/scratch/boothby/sage-4.3$ ./sage -valgrind
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /mnt/usb1/scratch/boothby/sage-4.3/local/bin/sage-ipython
@@ -486,7 +486,7 @@ Comment by mvngu created at 2010-01-23 23:44:54
 I got a hunk failure when applying [long-doctest-segfault.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4509/long-doctest-segfault.patch) to Sage 4.3.1:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4509/long-doctest-segfault.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4509/long-doctest-segfault.patch && hg qpush
 adding long-doctest-segfault.patch to series file
 applying long-doctest-segfault.patch
 patching file sage/graphs/planarity.pyx
@@ -495,10 +495,10 @@ Hunk #1 FAILED at 40
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh long-doctest-segfault.patch
-[mvngu`@`sage sage-main]$ cat sage/graphs/planarity.pyx.rej
+[mvngu@sage sage-main]$ cat sage/graphs/planarity.pyx.rej
 --- planarity.pyx
 +++ planarity.pyx
-`@``@` -41,12 +41,23 `@``@`
+@@ -41,12 +41,23 @@
          (see g.get_embedding())
          circular -- if True, test for circular planarity
 
@@ -508,7 +508,7 @@ errors during apply, please fix and refresh long-doctest-segfault.patch
          sage: from sage.graphs.planarity import is_planar
          sage: is_planar(G)
          True
-         sage: Graph('`@`').is_planar()
+         sage: Graph('@').is_planar()
 +        True
 +
 +    TESTS:

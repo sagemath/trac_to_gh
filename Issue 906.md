@@ -1,6 +1,6 @@
 # Issue 906: bugs in special.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/906
 
 Original creator: wdj
 

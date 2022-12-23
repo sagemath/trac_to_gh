@@ -1,6 +1,6 @@
 # Issue 2983: Itanium (RHEL 5) -- singular interface problems in matrix_group.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2983
 
 Original creator: was
 
@@ -95,7 +95,7 @@ http://www.sagemath.org/hg/sage-main/file/cc1e12a492fc/sage/groups/matrix_gps/ma
 
 
 ```
-wdj`@`wooster:~/wdj/sagefiles/sage-3.0.rc0$ ./sage -t devel/sage/sage/groups/matrix_gps/matrix_group.py
+wdj@wooster:~/wdj/sagefiles/sage-3.0.rc0$ ./sage -t devel/sage/sage/groups/matrix_gps/matrix_group.py
 sage -t  0/devel/sage/sage/groups/matrix_gps/matrix_group.py
          [42.7 s]
 

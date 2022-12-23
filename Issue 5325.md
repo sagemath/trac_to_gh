@@ -1,6 +1,6 @@
 # Issue 5325: Make an optional spkg for basemap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5325
 
 Original creator: jason
 

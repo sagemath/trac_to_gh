@@ -1,6 +1,6 @@
 # Issue 3541: graph multiedge plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3541
 
 Original creator: ekirkman
 
@@ -112,7 +112,7 @@ Comment by mabshoff created at 2009-02-14 13:16:41
 There is one doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc1$ ./sage -t -long devel/sage/sage/combinat/crystals/crystals.py
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc1$ ./sage -t -long devel/sage/sage/combinat/crystals/crystals.py
 sage -t -long "devel/sage/sage/combinat/crystals/crystals.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/combinat/crystals/crystals.py", line 553:

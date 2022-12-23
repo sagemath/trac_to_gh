@@ -1,6 +1,6 @@
 # Issue 1000: Sage does not have 10000 users yet.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1000
 
 Original creator: was
 

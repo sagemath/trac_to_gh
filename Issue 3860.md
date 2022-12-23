@@ -1,6 +1,6 @@
 # Issue 3860: itanium -- can't build mercurial extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3860
 
 Original creator: was
 

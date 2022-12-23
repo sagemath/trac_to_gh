@@ -1,6 +1,6 @@
 # Issue 8973: surf does not build (gcc 4.4.4)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8973
 
 Original creator: mmezzarobba
 
@@ -17,7 +17,7 @@ The experimental spkg "surf-1.1" does not build with gcc-4.4.4. The following pa
 diff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc
 --- a/surf/draw/SurfaceCalc.cc  2004-11-08 11:00:43.000000000 +0100
 +++ b/surf-1.1/surf/draw/SurfaceCalc.cc 2010-05-15 17:48:38.663596876 +0200
-`@``@` -38,6 +38,7 `@``@`
+@@ -38,6 +38,7 @@
  #include <IO.h>
  
  #include <math.h>
@@ -28,7 +28,7 @@ diff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc
 diff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExtension.cc
 --- a/surf/image-formats/ByExtension.cc 2003-04-14 17:12:37.000000000 +0200
 +++ b/surf-1.1/surf/image-formats/ByExtension.cc        2010-05-15 17:47:47.707096842 +0200
-`@``@` -26,7 +26,8 `@``@`
+@@ -26,7 +26,8 @@
  
  #include <AvailableImageFormats.h>
  
@@ -38,7 +38,7 @@ diff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExt
  
  namespace ImageFormats {
  
-`@``@` -87,7 +88,7 `@``@`
+@@ -87,7 +88,7 @@
                 }
  
                 // just look for "*.extension"
@@ -50,7 +50,7 @@ diff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExt
 diff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc
 --- a/surf/misc/IO.cc   2006-02-12 14:36:26.000000000 +0100
 +++ b/surf-1.1/surf/misc/IO.cc  2010-05-15 17:49:12.939096803 +0200
-`@``@` -27,6 +27,8 `@``@`
+@@ -27,6 +27,8 @@
  
  #include <errno.h>
  
@@ -62,7 +62,7 @@ diff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc
 diff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc
 --- a/surf/src/init_parser.cc   2002-06-09 15:29:17.000000000 +0200
 +++ b/surf-1.1/surf/src/init_parser.cc  2010-05-15 17:45:32.318586702 +0200
-`@``@` -32,8 +32,8 `@``@`
+@@ -32,8 +32,8 @@
  #include <monomarith.h>
  #include <AvailableImageFormats.h>
  

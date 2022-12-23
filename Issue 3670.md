@@ -1,6 +1,6 @@
 # Issue 3670: symbolic equation should be merged into symbolic opeartors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3670
 
 Original creator: gfurnish
 

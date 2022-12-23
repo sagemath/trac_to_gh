@@ -1,6 +1,6 @@
 # Issue 8022: ref manual for 4.3.1: fix warning about misc/attach.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8022
 
 Original creator: jhpalmieri
 

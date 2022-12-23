@@ -1,6 +1,6 @@
 # Issue 2279: numerical noise? doctest failure in sage.rings.number_field.totallyreal.__selberg_zograf_bound with 2.10.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2279
 
 Original creator: cremona
 
@@ -39,7 +39,7 @@ The following tests failed:
 OS info:
 
 ```
-jec`@`host-57-71%uname -a
+jec@host-57-71%uname -a
 Linux host-57-71 2.6.18.8-0.3-default #1 SMP Tue Apr 17 08:42:35 UTC 2007 x86_64 x86_64 x86_64 GNU/Linux
 ```
 

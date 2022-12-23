@@ -1,6 +1,6 @@
 # Issue 6427: Fix doctest failures in sage-4.1.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6427
 
 Original creator: boothby
 
@@ -61,14 +61,14 @@ Comment by mvngu created at 2010-02-02 06:16:15
 This is fixed in Sage 4.3.2.alpha1:
 
 ```
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage -t -long devel/sage/doc/fr/tutorial/programming.rst
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage -t -long devel/sage/doc/fr/tutorial/programming.rst
 sage -t -long "devel/sage/doc/fr/tutorial/programming.rst"  
 	 [4.7 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 4.7 seconds
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage -t -long devel/sage/sage/misc/darwin_utilities.pyx
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage -t -long devel/sage/sage/misc/darwin_utilities.pyx
 sage -t -long "devel/sage/sage/misc/darwin_utilities.pyx"   
 	 [4.0 s]
  

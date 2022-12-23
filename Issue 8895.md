@@ -1,6 +1,6 @@
 # Issue 8895: symbolic unit conversion function should ignore non-unit symbolic variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8895
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5844: [with patch, needs review] Improvement of {{{PermutationGroup_generic.has_element()}}} and {{{is_subgroup}}}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5844
 
 Original creator: SimonKing
 

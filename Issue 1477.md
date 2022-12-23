@@ -1,6 +1,6 @@
 # Issue 1477: notebook -- make it unicode aware
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1477
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: boothby
 ```
 
 
-On Dec 12, 2007 7:48 AM, greg2k4`@`mail.ru <greg2k4`@`mail.ru> wrote:
+On Dec 12, 2007 7:48 AM, greg2k4@mail.ru <greg2k4@mail.ru> wrote:
 > 
 > Hi all,
 > 

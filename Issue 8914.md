@@ -1,6 +1,6 @@
 # Issue 8914: categories/sets_cat.py in an_element docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8914
 
 Original creator: wjlaffin
 

@@ -1,6 +1,6 @@
 # Issue 9879: Segfault in PyNaC 0.2.0.p4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9880
 
 Original creator: jpflori
 

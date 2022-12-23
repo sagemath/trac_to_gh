@@ -1,6 +1,6 @@
 # Issue 6693: spell-check all modules under sage/databases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6693
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 3360: Upgarde sympow to the 1.019 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3360
 
 Original creator: mabshoff
 

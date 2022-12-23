@@ -1,6 +1,6 @@
 # Issue 4426: Do not hard code RTLD_GLOBAL as 256 for libSingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4426
 
 Original creator: mabshoff
 

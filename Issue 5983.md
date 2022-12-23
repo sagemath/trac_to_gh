@@ -1,6 +1,6 @@
 # Issue 5983: cmp related doctest failure in sage/schemes/jacobians/abstract_jacobian.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5983
 
 Original creator: mabshoff
 

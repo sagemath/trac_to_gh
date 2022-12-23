@@ -1,6 +1,6 @@
 # Issue 1480: [with patch] implement P.show() for mathematica elements -- nice mathematica graphics in the sage notebook!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1480
 
 Original creator: was
 
@@ -13,7 +13,7 @@ As the summary says.  Inspired by this email
 ```
 
 
-On Dec 12, 2007 10:07 AM, carlosap <carlosap78`@`gmail.com> wrote:
+On Dec 12, 2007 10:07 AM, carlosap <carlosap78@gmail.com> wrote:
 > 
 > I typed mathematica.NIntegrate[x^2,{x,1,0}]
 > 

@@ -1,6 +1,6 @@
 # Issue 1942: Sage 2.10.1.rc0: sage0.cputime()  broken on 32 bit FC7/8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1942
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 Jaap reports the following on 32 bit FC7/8 with Sage 2.10.1.rc0:
 
 ```
-[jaap`@`paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py
+[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py
 sage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************
 File "sage0.py", line 143:
      sage: _= sage0.cputime()     # random output
@@ -91,7 +91,7 @@ Attachment
 > > 
 
 Exiting SAGE (CPU time 0m0.00s, Wall time 0m8.03s).
-[jaap`@`paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log
+[jaap@paix sage-2.10.1.rc0]$ ./sage -t  devel/sage-main/sage/interfaces/sage0.py 2>&1 | tee -a test_sage0.log
 sage -t  devel/sage-main/sage/interfaces/sage0.py           **********************************************************************
 File "sage0.py", line 143:
      sage: _= sage0.cputime()     # random output
@@ -120,7 +120,7 @@ The following tests failed:
 
          sage -t  devel/sage-main/sage/interfaces/sage0.py
 Total time for all tests: 7.0 seconds
-[jaap`@`paix sage-2.10.1.rc0]$
+[jaap@paix sage-2.10.1.rc0]$
 
 ```
 

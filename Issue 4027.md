@@ -1,6 +1,6 @@
 # Issue 4027: Sage 3.1.2.alpha3: matrix_mod2_dense.pyx doctest failure on 32 bits
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4027
 
 Original creator: mabshoff
 

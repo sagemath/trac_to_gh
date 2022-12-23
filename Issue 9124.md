@@ -1,6 +1,6 @@
 # Issue 9124: h-vectors for simplicial complexes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9124
 
 Original creator: jhpalmieri
 

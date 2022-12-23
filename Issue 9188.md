@@ -1,6 +1,6 @@
 # Issue 9188: lattice_polytope.facet_normal bug with polytopes of less that full dimension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9188
 
 Original creator: vbraun
 

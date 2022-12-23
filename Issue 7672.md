@@ -1,6 +1,6 @@
 # Issue 7672: topological_sort in c_graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7672
 
 Original creator: ncohen
 

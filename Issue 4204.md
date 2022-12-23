@@ -1,6 +1,6 @@
 # Issue 4204: add short section on using screen to the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4204
 
 Original creator: AlexGhitza
 

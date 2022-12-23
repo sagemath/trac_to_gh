@@ -1,6 +1,6 @@
 # Issue 684: NTL integers do not coerce to SAGE integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/684
 
 Original creator: dmharvey
 
@@ -78,7 +78,7 @@ Comment by mabshoff created at 2007-10-18 10:03:42
 This seems to work now:
 
 ```
-mabshoff`@`sage:~$ sage
+mabshoff@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.7, Release Date: 2007-10-15                       |

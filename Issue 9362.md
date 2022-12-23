@@ -1,6 +1,6 @@
 # Issue 9362: Invalidate None as a vertex label.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9362
 
 Original creator: boothby
 

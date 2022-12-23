@@ -1,6 +1,6 @@
 # Issue 7270: numerical.MIP : named constraints and variables, methods, structure, etc ...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7270
 
 Original creator: ncohen
 

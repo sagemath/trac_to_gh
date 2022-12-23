@@ -1,6 +1,6 @@
 # Issue 6548: Improve tasteful ticks documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6548
 
 Original creator: kcrisman
 

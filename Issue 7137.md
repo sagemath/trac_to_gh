@@ -1,6 +1,6 @@
 # Issue 7137: always building 32-bit on Solaris even when SAGE64="yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7137
 
 Original creator: drkirkby
 
@@ -18,7 +18,7 @@ Using
 Looking at the directory $SAGE_HOME/local/bin, we can see that _ratpoint_ is being built as 32-bit binary, despite the fact that SAGE64 was set to "yes"
 
 ```
-drkirkby`@`swan:[~/sage/gcc64-sage-4.1.2.rc0/local/bin] $ file ratpoint
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/bin] $ file ratpoint
 ratpoint:       ELF 32-bit MSB executable SPARC32PLUS Version 1, V8+ Required, dynamically linked, stripped
 ```
 

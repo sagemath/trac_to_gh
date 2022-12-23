@@ -1,6 +1,6 @@
 # Issue 5052: preparser does not respect leading space in front of "load foo.sage"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5052
 
 Original creator: ddrake
 

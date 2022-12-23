@@ -1,6 +1,6 @@
 # Issue 5136: sage-3.3.alpha3 gets stuck computing the ring of integers of a relative number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5136
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 4622: Bug in variety()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4622
 
 Original creator: SimonKing
 

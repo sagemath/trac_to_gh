@@ -1,6 +1,6 @@
 # Issue 6805: [with patch, needs review] Integrality check in LatticePolytope
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6805
 
 Original creator: novoselt
 

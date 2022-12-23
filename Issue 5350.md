@@ -1,6 +1,6 @@
 # Issue 5350: [with patch, needs review] sage-clone should use hard links for the build directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5350
 
 Original creator: burcin
 
@@ -16,7 +16,7 @@ Attached patch to the scripts repository changes the sage-clone script to hard l
 
 
 ```
-burcin`@`karr ~/sage/sage-3.3/devel $ du -sh sage-*
+burcin@karr ~/sage/sage-3.3/devel $ du -sh sage-*
 593M    sage-hl
 125M    sage-hl1
 557M    sage-main

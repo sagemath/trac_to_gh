@@ -1,6 +1,6 @@
 # Issue 2323: updated tutorial to include dsage section
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2323
 
 Original creator: yi
 

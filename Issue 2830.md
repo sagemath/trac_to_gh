@@ -1,6 +1,6 @@
 # Issue 2830: ace-5.0.spkg fails to install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2830
 
 Original creator: dunfield
 

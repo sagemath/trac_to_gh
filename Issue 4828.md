@@ -1,6 +1,6 @@
 # Issue 4828: [with patch, needs review] Sage 3.2.2.rc2: Fix documentation build issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4828
 
 Original creator: mabshoff
 

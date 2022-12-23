@@ -1,6 +1,6 @@
 # Issue 8154: Enhencement for crystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8154
 
 Original creator: aschilling
 

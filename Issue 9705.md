@@ -1,6 +1,6 @@
 # Issue 9705: trouble with long lines in notebook magma mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9705
 
 Original creator: nbruin
 

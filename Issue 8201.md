@@ -1,6 +1,6 @@
 # Issue 8201: Fortran not found on Linux if gfortran not present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8201
 
 Original creator: mraum
 
@@ -112,9 +112,9 @@ But most linux distros do not have a program called /bin/sh. Rather /bin/sh is s
 
 
 ```
-kirkby`@`sage:~$ ls -l /bin/sh
+kirkby@sage:~$ ls -l /bin/sh
 lrwxrwxrwx 1 root root 4 2010-02-02 13:49 /bin/sh -> dash
-kirkby`@`sage:~$ ls -l /bin/dash
+kirkby@sage:~$ ls -l /bin/dash
 -rwxr-xr-x 1 root root 100856 2009-03-09 06:18 /bin/dash
 ```
 

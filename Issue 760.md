@@ -1,6 +1,6 @@
 # Issue 760: [patch] graphs: a small change to subgraphs allow it to default to the original graph.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/760
 
 Original creator: jason
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 --- a/sage/graphs/graph.py      Fri Sep 28 14:05:12 2007 -0500
 +++ b/sage/graphs/graph.py      Fri Sep 28 14:35:19 2007 -0500
-`@``@` -3974,7 +3974,7 `@``@` class Graph(GenericGraph):
+@@ -3974,7 +3974,7 @@ class Graph(GenericGraph):
          """
          self._nxg.add_path(vertices)
 
@@ -21,7 +21,7 @@ Assignee: was
          """
          Returns the subgraph induced by the given vertices.
 
-`@``@` -3983,7 +3983,7 `@``@` class Graph(GenericGraph):
+@@ -3983,7 +3983,7 @@ class Graph(GenericGraph):
          and edges from the current graph. This will modify the graph, and re-
          turn itself.
          vertices -- Vertices can be a single vertex or an iterable container
@@ -30,7 +30,7 @@ Assignee: was
          create_using -- Can be an existing graph object or a call to a graph
          object, such as create_using=DiGraph(). Must be a NetworkX object.
 
-`@``@` -3998,6 +3998,8 `@``@` class Graph(GenericGraph):
+@@ -3998,6 +3998,8 @@ class Graph(GenericGraph):
              sage: G
              Subgraph of (Complete graph): Graph on 3 vertices
              sage: G is K
@@ -39,7 +39,7 @@ Assignee: was
              True
 
          """
-`@``@` -5424,7 +5426,7 `@``@` class DiGraph(GenericGraph):
+@@ -5424,7 +5426,7 @@ class DiGraph(GenericGraph):
          G = DiGraph(NXG)
          return G
 
@@ -48,7 +48,7 @@ Assignee: was
          """
          Returns the subgraph induced by the given vertices.
 
-`@``@` -5433,7 +5435,7 `@``@` class DiGraph(GenericGraph):
+@@ -5433,7 +5435,7 @@ class DiGraph(GenericGraph):
          and edges from the current graph. This will modify the graph, and re-
          turn itself.
          vertices -- Vertices can be a single vertex or an iterable container

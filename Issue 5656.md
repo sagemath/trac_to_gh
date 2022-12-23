@@ -1,6 +1,6 @@
 # Issue 5656: add hint to lift() function to docstring of groebner_basis()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5656
 
 Original creator: malb
 

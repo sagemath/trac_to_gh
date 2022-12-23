@@ -1,6 +1,6 @@
 # Issue 8540: ** BLOCKER ** very simple basic sqrt simplification totally broken bad
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8540
 
 Original creator: was
 

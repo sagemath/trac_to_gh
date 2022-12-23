@@ -1,6 +1,6 @@
 # Issue 1826: cdefs.pxi and stdsage.pxi were missing some function declarations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1826
 
 Original creator: robertwb
 

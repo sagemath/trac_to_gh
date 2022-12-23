@@ -1,6 +1,6 @@
 # Issue 5483: [with preliminary patch; not ready for review; request comments] Add explain_pickle module; allow overriding class lookup for unpickling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5483
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 8750: numerical noise on solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8750
 
 Original creator: jhpalmieri
 

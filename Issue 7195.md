@@ -1,6 +1,6 @@
 # Issue 7195: [with spkg, needs review] Cohomology rings of finite p-groups: new version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7195
 
 Original creator: SimonKing
 

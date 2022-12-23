@@ -1,6 +1,6 @@
 # Issue 5882: implement general package for finitely generated not-necessarily free R-modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5882
 
 Original creator: was
 
@@ -70,7 +70,7 @@ With these patches and dependencies installed, make ptestlong:
 All tests passed!
 Timings have been updated.
 Total time for all tests: 331.9 seconds
-wstein`@`sage:~/build/sage-3.4.2.rc0$ 
+wstein@sage:~/build/sage-3.4.2.rc0$ 
 ```
 
 
@@ -476,8 +476,8 @@ Another bug:
 
 ```
 sage: A = ZZ**1
-sage: Q3 = A / A.span([This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro))
-sage: Q6 = A / A.span([This is the Trac macro *6* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#6-macro))
+sage: Q3 = A / A.span([[3]])
+sage: Q6 = A / A.span([[6]])
 sage: Q6.is_submodule(Q3)
 True
 ```

@@ -1,6 +1,6 @@
 # Issue 5040: Bug in NTL's ./configure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5040
 
 Original creator: was
 

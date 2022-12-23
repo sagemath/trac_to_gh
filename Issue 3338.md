@@ -1,6 +1,6 @@
 # Issue 3338: gfan tarball is not clean upstream
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3338
 
 Original creator: tabbott
 

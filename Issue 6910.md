@@ -1,6 +1,6 @@
 # Issue 6910: Singular should not build its version of NTL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6910
 
 Original creator: pcpa
 

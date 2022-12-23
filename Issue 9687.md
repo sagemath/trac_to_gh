@@ -1,6 +1,6 @@
 # Issue 9687: Update citation info for Tower of Hanoi graph generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9687
 
 Original creator: rbeezer
 

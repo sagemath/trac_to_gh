@@ -1,6 +1,6 @@
 # Issue 9901: base_extend() not implemented in MPolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9902
 
 Original creator: vbraun
 

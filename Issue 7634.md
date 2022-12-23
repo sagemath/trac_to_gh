@@ -1,6 +1,6 @@
 # Issue 7634: switch default Sage graphs over to c_graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7634
 
 Original creator: rlm
 

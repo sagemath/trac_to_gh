@@ -1,6 +1,6 @@
 # Issue 499: n() is undefined for rational numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/499
 
 Original creator: mabshoff
 

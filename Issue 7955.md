@@ -1,6 +1,6 @@
 # Issue 7955: printing unevaluated integrals, limits, etc. broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7955
 
 Original creator: burcin
 
@@ -15,7 +15,7 @@ http://groups.google.com/group/sage-devel/t/592ce36b210c2fbe
 
 ```
 On Mon, 11 Jan 2010 23:58:54 -0800 (PST)
-"marik`@`mendelu.cz" <marik`@`mendelu.cz> wrote:
+"marik@mendelu.cz" <marik@mendelu.cz> wrote:
 
 > Dear sage-devel
 > 

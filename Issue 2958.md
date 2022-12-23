@@ -1,6 +1,6 @@
 # Issue 2958: twist.py -- doctest failures in sage-3.0.alpha6 on some test machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2958
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1965: renable of caching for loading or attaching spyx files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1965
 
 Original creator: was
 

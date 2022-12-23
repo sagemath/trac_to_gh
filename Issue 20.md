@@ -1,6 +1,6 @@
 # Issue 20: coercion issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/20
 
 Original creator: was
 

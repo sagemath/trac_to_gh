@@ -1,6 +1,6 @@
 # Issue 8117: zodb3 fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8117
 
 Original creator: jsp
 
@@ -27,7 +27,7 @@ Added spkg.
 
 ```
 local/lib/python2.6/site-packages/ZODB/winlock.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ 
 
 
 ```

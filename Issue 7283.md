@@ -1,6 +1,6 @@
 # Issue 7283: typo in reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7283
 
 Original creator: robertwb
 

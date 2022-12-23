@@ -1,6 +1,6 @@
 # Issue 9351: deps for sagetex with SAGE_CHECK='yes'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9351
 
 Original creator: jhpalmieri
 
@@ -80,8 +80,8 @@ There is no reference to gap anywhere in the Sagetex source files
 
 
 ```
-drkirkby`@`hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ ggrep -Ri gap *
-drkirkby`@`hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ 
+drkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ ggrep -Ri gap *
+drkirkby@hawk:~/SAGE-4.5.alpha1/spkg/standard/sagetex-2.2.5$ 
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 1633: update sympy to 0.5.9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1633
 
 Original creator: mabshoff
 

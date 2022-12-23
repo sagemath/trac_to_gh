@@ -1,6 +1,6 @@
 # Issue 8295: Documentation for Kazhdan-Lusztig polynomials and Iwahori Hecke algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8295
 
 Original creator: bump
 

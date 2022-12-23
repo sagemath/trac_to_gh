@@ -1,6 +1,6 @@
 # Issue 7007: generator of RR['t'] has a float attached
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7007
 
 Original creator: jason
 

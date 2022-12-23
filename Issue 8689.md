@@ -1,6 +1,6 @@
 # Issue 8689: sage notebook: add mention of cell:// for referencing data to notebook help page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8689
 
 Original creator: was
 

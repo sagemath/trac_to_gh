@@ -1,6 +1,6 @@
 # Issue 5591: alt-enter makes new input cell *after* the following text cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5591
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 3540: [with patch, needs review] Augment messes up the ncols for flat matrices.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3540
 
 Original creator: rlm
 

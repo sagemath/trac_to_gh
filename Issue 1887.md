@@ -1,6 +1,6 @@
 # Issue 1887: [with patch, needs review] graph isomorphism for multiple edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1887
 
 Original creator: rlm
 

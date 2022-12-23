@@ -1,6 +1,6 @@
 # Issue 4847: [with patch, needs review] Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4847
 
 Original creator: mabshoff
 

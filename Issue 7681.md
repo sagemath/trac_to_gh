@@ -1,6 +1,6 @@
 # Issue 7681: R pexpect interface seems to keep data around
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7681
 
 Original creator: kcrisman
 

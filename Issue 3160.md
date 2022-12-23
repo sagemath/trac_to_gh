@@ -1,6 +1,6 @@
 # Issue 3160: change is_planar for graphs to return bool
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3160
 
 Original creator: was
 
@@ -14,7 +14,7 @@ Assignee: rlm
 return anything but a bool :)
 - Hide quoted text -
 
-On Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster`@`gmail.com> wrote:
+On Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster@gmail.com> wrote:
 >
 >>  On the other hand, that Jerin was confused maybe strongly suggests
 >>  you might want to change the is_planar function to return True or

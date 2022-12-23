@@ -1,6 +1,6 @@
 # Issue 6327: optional doctest failure -- failure using pari C library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6327
 
 Original creator: was
 

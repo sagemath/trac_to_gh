@@ -1,6 +1,6 @@
 # Issue 8479: [with patch, needs review] numpy support for more basic functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8479
 
 Original creator: whuss
 

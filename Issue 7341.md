@@ -1,6 +1,6 @@
 # Issue 7341: major tab completion issue in notebook (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7341
 
 Original creator: was
 

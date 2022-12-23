@@ -1,6 +1,6 @@
 # Issue 756: modify how foo.derivative(...) works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/756
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On 9/26/07, David Joyner <wdjoyner`@`gmail.com> wrote:
+On 9/26/07, David Joyner <wdjoyner@gmail.com> wrote:
 > I'm not sure if this is a bug or not but just in case,
 > here is the way diff is behaving for me.
 >

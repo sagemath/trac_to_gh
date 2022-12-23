@@ -1,6 +1,6 @@
 # Issue 4653: Merge sage-words code into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4653
 
 Original creator: saliola
 
@@ -271,7 +271,7 @@ all that needs rebasing is the first hunk from permutation.py. This is my attemp
 ```
 --- a/sage/combinat/permutation.py	Sun Dec 14 22:48:15 2008 -0800
 +++ b/sage/combinat/permutation.py	Mon Dec 15 10:58:10 2008 -0800
-`@``@` -213,7 +213,8 `@``@`
+@@ -213,7 +213,8 @@
              raise ValueError, "cannot convert l (= %s) to a Permutation"%l
  
      # otherwise, it gets processed by CombinatorialObject's __init__.

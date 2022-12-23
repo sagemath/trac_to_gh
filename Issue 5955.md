@@ -1,6 +1,6 @@
 # Issue 5955: Sage 3.4.2.rc0: Set stacksize for clisp.spkg to 32kb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5955
 
 Original creator: mabshoff
 

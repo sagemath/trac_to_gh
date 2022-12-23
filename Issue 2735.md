@@ -1,6 +1,6 @@
 # Issue 2735: [with patch; needs review] minor eclib build system improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2735
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 680: Solaris 9: fix partition import problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/680
 
 Original creator: mabshoff
 

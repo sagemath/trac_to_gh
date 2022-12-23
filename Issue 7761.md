@@ -1,6 +1,6 @@
 # Issue 7761: Python 2.6.2.p4 faills to build on Open Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7761
 
 Original creator: drkirkby
 
@@ -133,7 +133,7 @@ Comment by drkirkby created at 2010-01-03 02:13:50
 That is very odd. I just used OpenSSL's default location, which is /usr/local/ssl. Python knows to look there. I manged to get the following all built now in 64-bit mode.  
 
 ```
-drkirkby`@`hawk:~/sage-4.3/spkg/installed$ ls
+drkirkby@hawk:~/sage-4.3/spkg/installed$ ls
 bzip2-1.0.5             libgcrypt-1.4.4.p1      python-2.6.2.p5
 cliquer-1.2.p2          libgpg_error-1.6.p3     readline-6.0.p1
 conway_polynomials-0.2  libpng-1.2.35.p0        sage_scripts-4.3
@@ -162,7 +162,7 @@ $ make
 I've got several gcc's on here, but just noticed the one which got this far was *not* using the GNU asssembler as I advised, but all Sun tools. Note the configure option '--with-build-time-tools=/usr/ccs/bin' Perhaps the GCC bugs are sorted out in 4.4.2 which allow it to work with the Sun assembler. 
 
 ```
-drkirkby`@`hawk:~$ gcc -v
+drkirkby@hawk:~$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ./configure --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -226,7 +226,7 @@ The following has allowed me to build python with 'hashlib' support. Try buildin
 If all else fails, I can make some tarbals of my gcc and binutils binaries, upload them, then you try those. Then we would have *exactly* the same build tools. But I don't believe such drastic measures should be necessary, but if they are helpful, I can do it. 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ gcc -v
+drkirkby@hawk:~/sage-4.3.1.alpha1$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -359,7 +359,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing python-2.6.2.p5.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha1$ 
+jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ 
 
 
 ```
@@ -381,7 +381,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing python-2.6.2.p5.spkg
-[jaap`@`vrede sage-4.3.1.alpha1]$ 
+[jaap@vrede sage-4.3.1.alpha1]$ 
 
 ```
 

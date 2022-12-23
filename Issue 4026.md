@@ -1,6 +1,6 @@
 # Issue 4026: [with spkg, needs review] Move Macaulay2  to latest upstream
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4026
 
 Original creator: gfurnish
 

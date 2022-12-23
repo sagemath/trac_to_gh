@@ -1,6 +1,6 @@
 # Issue 5487: Content function for tableaux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5487
 
 Original creator: andrew.mathas
 
@@ -22,7 +22,7 @@ Simple patch adding a content function for tableaux to tableau.py.
 diff -r c6382e76a5e5 sage/combinat/tableau.py
 --- a/sage/combinat/tableau.py  Thu Mar 12 01:07:21 2009 +1100
 +++ b/sage/combinat/tableau.py  Thu Mar 12 01:07:52 2009 +1100
-`@``@` -480,6 +480,21 `@``@`
+@@ -480,6 +480,21 @@
              s += [ (i,j) for j in range(len(self[i])) ]
          return s
  

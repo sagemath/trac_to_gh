@@ -1,6 +1,6 @@
 # Issue 6842: [with patch, needs review] ordinal_str giving wrong answers for 111, 112, 113
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6842
 
 Original creator: SimonKing
 

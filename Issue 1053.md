@@ -1,6 +1,6 @@
 # Issue 1053: Cython 0.9.6.8b
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1053
 
 Original creator: robertwb
 

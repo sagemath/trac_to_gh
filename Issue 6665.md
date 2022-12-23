@@ -1,6 +1,6 @@
 # Issue 6665: Expanding the 'zero' symmetric function in variables crashes symmetrica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6665
 
 Original creator: jbandlow
 

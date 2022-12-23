@@ -1,6 +1,6 @@
 # Issue 333: Notebook monitor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/333
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 8269: cygwin: maxima does not build on cygwin due to ECL bug.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8269
 
 Original creator: was
 

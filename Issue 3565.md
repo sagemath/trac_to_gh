@@ -1,6 +1,6 @@
 # Issue 3565: worksheet.py -- increase doctest coverage to 50%.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3565
 
 Original creator: was
 

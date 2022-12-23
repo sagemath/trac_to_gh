@@ -1,6 +1,6 @@
 # Issue 6512: [with patch, needs review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6512
 
 Original creator: mpatel
 
@@ -72,7 +72,7 @@ I've attached a javascript file that should do the preprocessing that you need. 
 
 Davide
 
-On Jul 13, 2009, at 11:34 PM, jason-sage`@`creativetrax.com wrote:
+On Jul 13, 2009, at 11:34 PM, jason-sage@creativetrax.com wrote:
 
 > Davide P. Cervone wrote:
 >> Jason:

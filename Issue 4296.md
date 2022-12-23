@@ -1,6 +1,6 @@
 # Issue 4296: univariate polynomial power ignores 2nd argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4296
 
 Original creator: zimmerma
 

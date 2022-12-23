@@ -1,6 +1,6 @@
 # Issue 2786: [with spkg] update zn_poly to 0.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2786
 
 Original creator: dmharvey
 

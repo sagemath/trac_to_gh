@@ -1,6 +1,6 @@
 # Issue 1568: [with patch] hypellfrob -- faster zeta functions for hyperelliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1568
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 1217: libfplll error codes - leftover from #1188
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1217
 
 Original creator: mabshoff
 

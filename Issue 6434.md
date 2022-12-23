@@ -1,6 +1,6 @@
 # Issue 6434: [with patch, needs review] make a latex.py doctest more robust
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6434
 
 Original creator: jhpalmieri
 

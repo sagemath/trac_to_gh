@@ -1,6 +1,6 @@
 # Issue 5300: do #5291 -- don't save too many snapshots -- more efficiently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5300
 
 Original creator: was
 

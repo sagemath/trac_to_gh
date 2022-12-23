@@ -1,6 +1,6 @@
 # Issue 6595: 'modified sage library code' fails at c_lib if /opt/SUNWspro/bin/CC can be found. (SCons issue)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6595
 
 Original creator: drkirkby
 
@@ -126,13 +126,13 @@ Using 't2' set the following environment up before starting to build sage.
 
 
 ```
-kirkby`@`t2:[~] $ echo $SAGE_FORTRAN_LIB
+kirkby@t2:[~] $ echo $SAGE_FORTRAN_LIB
 /usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so
-kirkby`@`t2:[~] $ echo $SAGE_FORTRAN
+kirkby@t2:[~] $ echo $SAGE_FORTRAN
 /usr/local/gcc-4.4.1-sun-linker/bin/gfortran
-kirkby`@`t2:[~] $ echo $LD_LIBRARY_PATH
+kirkby@t2:[~] $ echo $LD_LIBRARY_PATH
 /usr/local/gcc-4.4.1-sun-linker/lib:/usr/local/lib
-kirkby`@`t2:[~] $ echo $PATH
+kirkby@t2:[~] $ echo $PATH
 /usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin
 ```
 
@@ -141,9 +141,9 @@ note, if you try to run the Sun C or C++ compilers, you will find they do *not* 
 
 
 ```
-kirkby`@`t2:[~] $ cc
+kirkby@t2:[~] $ cc
 -bash: cc: command not found
-kirkby`@`t2:[~] $ CC
+kirkby@t2:[~] $ CC
 -bash: CC: command not found
 ```
 

@@ -1,6 +1,6 @@
 # Issue 5064: Steenrod algebras are non-unique
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5064
 
 Original creator: boothby
 

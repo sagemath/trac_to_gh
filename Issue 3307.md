@@ -1,6 +1,6 @@
 # Issue 3307: [with patch; needs review] Move genus2reduction to /usr/lib for Debian package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3307
 
 Original creator: tabbott
 

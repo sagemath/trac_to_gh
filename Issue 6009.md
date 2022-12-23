@@ -1,6 +1,6 @@
 # Issue 6009: Bring plot/text.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6009
 
 Original creator: kcrisman
 

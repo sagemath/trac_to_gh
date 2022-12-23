@@ -1,6 +1,6 @@
 # Issue 3653: Better random complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3653
 
 Original creator: novoselt
 

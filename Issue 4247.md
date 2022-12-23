@@ -1,6 +1,6 @@
 # Issue 4247: plotting -- bug in text and pdf export
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4247
 
 Original creator: was
 

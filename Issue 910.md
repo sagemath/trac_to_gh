@@ -1,6 +1,6 @@
 # Issue 910: [with bundle][tested by ekirkman] Circulant Graph Constructor Docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/910
 
 Original creator: ekirkman
 

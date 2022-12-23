@@ -1,6 +1,6 @@
 # Issue 9518: Add an spkg-check file for Pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9518
 
 Original creator: drkirkby
 
@@ -116,7 +116,7 @@ I leave you to sort that out!
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ head  spkg-install
+drkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ head  spkg-install
 B1;2000;0c#!/bin/sh
 ###########################################
 ## PARI
@@ -127,7 +127,7 @@ TOP=`pwd`
 # As of PARI 2.3.3, the compiler flag -fPIC is not added on Solaris, but it
 # needs to be if using gcc. I assume the equivalent will be needed on 
 # other compilers. 
-drkirkby`@`hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ 
+drkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ 
 ```
 
 

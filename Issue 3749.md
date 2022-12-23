@@ -1,6 +1,6 @@
 # Issue 3749: Request for a method "is_cyclic" for groups in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3749
 
 Original creator: ljpk
 

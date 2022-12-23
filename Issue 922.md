@@ -1,6 +1,6 @@
 # Issue 922: bug in prime_powers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/922
 
 Original creator: was
 

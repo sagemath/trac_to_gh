@@ -1,6 +1,6 @@
 # Issue 5916: [with patch, needs review] show mathematica expression using jsmath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5916
 
 Original creator: whuss
 

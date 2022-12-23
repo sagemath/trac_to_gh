@@ -1,6 +1,6 @@
 # Issue 3607: graph_isom.py: "Conditional jump or move depends on uninitialised value(s)"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3607
 
 Original creator: mabshoff
 
@@ -92,7 +92,7 @@ Got:
 But with the patch applied it still fails:
 
 ```
-mabshoff`@`iras:~/sage-3.0.4.alpha2-SLES10-4.3.1> ./sage -t -long devel/sage-main/sage/graphs/graph_isom.pyx
+mabshoff@iras:~/sage-3.0.4.alpha2-SLES10-4.3.1> ./sage -t -long devel/sage-main/sage/graphs/graph_isom.pyx
 sage -t -long devel/sage-main/sage/graphs/graph_isom.pyx    **********************************************************************
 File "/home/mabshoff/sage-3.0.4.alpha2-SLES10-4.3.1/tmp/graph_isom.py", line 1383:
     sage: Y0.is_isomorphic(Y1)

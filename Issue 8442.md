@@ -1,6 +1,6 @@
 # Issue 8442: Lie Methods and Related Combinatorics (tutorial)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8442
 
 Original creator: bump
 

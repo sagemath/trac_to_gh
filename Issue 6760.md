@@ -1,6 +1,6 @@
 # Issue 6760: error in quaternion algebra ideal basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6760
 
 Original creator: robertwb
 

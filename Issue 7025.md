@@ -1,6 +1,6 @@
 # Issue 7025: givaro 3.2.13rc2 says GMP is not installed, even though MPIR is.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7025
 
 Original creator: drkirkby
 

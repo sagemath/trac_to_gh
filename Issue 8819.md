@@ -1,6 +1,6 @@
 # Issue 8819: warnings in building documentation of Sage 4.4.1.alpha2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8819
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4409: ellipsis_range throws exception
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4409
 
 Original creator: robertwb
 

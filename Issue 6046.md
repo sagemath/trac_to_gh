@@ -1,6 +1,6 @@
 # Issue 6046: [with patch, needs review] Implement local and global heights for number field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6046
 
 Original creator: cremona
 

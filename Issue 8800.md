@@ -1,6 +1,6 @@
 # Issue 8800: Doctest coverage of categories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8800
 
 Original creator: SimonKing
 
@@ -905,7 +905,7 @@ The following tests failed:
 
 	sage -t  "sage/groups/perm_gps/permgroup.py"
 Total time for all tests: 7.9 seconds
-john`@`John-laptop%sage -t  "sage/rings/number_field/number_field.py"
+john@John-laptop%sage -t  "sage/rings/number_field/number_field.py"
 sage -t  "sage/rings/number_field/number_field.py"          
 Exception RuntimeError: 'maximum recursion depth exceeded in __subclasscheck__' in <type 'exceptions.TypeError'> ignored
 Exception RuntimeError: 'maximum recursion depth exceeded in __subclasscheck__' in <type 'exceptions.TypeError'> ignored
@@ -1455,7 +1455,7 @@ What is the reason for the following change?
 diff -r f71dd979f978 -r 7097db76160e sage/rings/rational_field.py
 --- a/sage/rings/rational_field.py	Fri Dec 10 14:50:18 2010 +0100
 +++ b/sage/rings/rational_field.py	Wed Jul 21 14:25:41 2010 +0100
-`@``@` -253,7 +253,7 `@``@`
+@@ -253,7 +253,7 @@
          import integer_ring
          return FractionField(), integer_ring.ZZ
          

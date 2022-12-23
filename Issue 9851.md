@@ -1,6 +1,6 @@
 # Issue 9851: Error in edge_cut
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9852
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 3724: [with patch, depends on other ticket] faster hashs for Matrix_mod2_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3724
 
 Original creator: malb
 

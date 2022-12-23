@@ -1,6 +1,6 @@
 # Issue 7027: f2c ignores CC and uses gcc anyway
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7027
 
 Original creator: drkirkby
 
@@ -102,7 +102,7 @@ Why do we need both `patches/libf2c.makefile` and `patches/libf2c.makefile.patch
 $ diff -u src/libf2c/makefile patches/libf2c.makefile
 --- src/libf2c/makefile	2007-08-14 21:26:15.000000000 -0400
 +++ patches/libf2c.makefile	2012-02-10 04:31:00.000000000 -0500
-`@``@` -70,10 +70,10 `@``@`
+@@ -70,10 +70,10 @@
  ### If your system lacks ranlib, you don't need it; see README.
  
  f77vers.o: f77vers.c
@@ -123,7 +123,7 @@ $ diff -u src/libf2c/makefile patches/libf2c.makefile
 $ cat patches/libf2c.makefile.patch 
 --- libf2c.makefile.orig	2009-01-20 00:22:57.000000000 -0800
 +++ libf2c.makefile	2009-01-20 00:22:25.000000000 -0800
-`@``@` -70,10 +70,10 `@``@`
+@@ -70,10 +70,10 @@
  ### If your system lacks ranlib, you don't need it; see README.
  
  f77vers.o: f77vers.c

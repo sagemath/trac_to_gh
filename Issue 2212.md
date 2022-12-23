@@ -1,6 +1,6 @@
 # Issue 2212: degree sequence documentation [with bundle, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2212
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 8935: update README.txt to reflect support for Mac OS X 10.4.x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8935
 
 Original creator: mvngu
 
@@ -34,10 +34,10 @@ Attachment
 Here's a diff between the README.txt in Sage 4.4.1 and the updated README.txt on this ticket:
 
 ```diff
-[mvngu`@`sage sage-4.4.1-8917-magmas]$ diff -Naur README.txt.old README.txt.new 
+[mvngu@sage sage-4.4.1-8917-magmas]$ diff -Naur README.txt.old README.txt.new 
 --- README.txt.old	2010-05-08 17:40:09.761167033 -0700
 +++ README.txt.new	2010-05-08 17:44:01.730958793 -0700
-`@``@` -95,14 +95,13 `@``@`
+@@ -95,14 +95,13 @@
    x86_64           64-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),
                                     Fedora, openSUSE, Mandriva, Arch
    IA-64 Itanium 2  64-bit Linux -- Red Hat, SUSE

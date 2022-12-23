@@ -1,6 +1,6 @@
 # Issue 7485: make fortran a prerequisite on all platforms except OS X.  Remove g95 binaries from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7485
 
 Original creator: was
 
@@ -40,21 +40,21 @@ Comment by mvngu created at 2010-01-18 12:10:19
 The new Fortran spkg cuts about 7 MB. The Fortran spkg in Sage 4.3.1.rc0 is about 40MB:
 
 ```
-mvngu`@`mod standard]$ du -hs fortran-20071120.p9.spkg 
+mvngu@mod standard]$ du -hs fortran-20071120.p9.spkg 
 40M     fortran-20071120.p9.spkg
 ```
 
 while the new spkg is about 33 MB:
 
 ```
-[mvngu`@`mod fortran]$ du -hs fortran-20100117.spkg 
+[mvngu@mod fortran]$ du -hs fortran-20100117.spkg 
 33M	fortran-20100117.spkg
 ```
 
 That should be good news for mirroring and downloading the source distribution. Just a trivial nit-pick. The file `spkg-install` has changes that are not yet checked in:
 
 ```
-[mvngu`@`mod fortran-20100117]$ hg st
+[mvngu@mod fortran-20100117]$ hg st
 M spkg-install
 ```
 
@@ -97,7 +97,7 @@ Comment by mvngu created at 2010-01-19 18:23:33
 Looks good. On Linux and Solaris machines (mod.math, rosemary.math, t2.math), only the script `sage_fortran` is installed under `SAGE_LOCAL/bin`. This is in contrast to the previous behaviour, which was to install Linux Fortran binaries regardless of whether the Linux system already had a system-wide Fortran compiler. On OS X machine (bsd.math), `sage_fortran` and OS X specific Fortran binaries are installed under `SAGE_LOCAL/bin` as expected. I tested [fortran-20100118.spkg](http://wstein.org/home/wstein/patches/fortran-20100118.spkg) with Sage 4.3.1.rc1 on mod.math, rosemary.math, and bsd.math. Doctesting resulted in the following known failure as reported on [sage-devel](http://groups.google.com/group/sage-devel/msg/7c9e8c5a006e4f9f):
 
 ```
-[mvngu`@`boxen sage-4.3.1.rc1]$ ./sage -t -long devel/sage-main/sage/misc/sagedoc.py 
+[mvngu@boxen sage-4.3.1.rc1]$ ./sage -t -long devel/sage-main/sage/misc/sagedoc.py 
 sage -t -long "devel/sage-main/sage/misc/sagedoc.py"        
 **********************************************************************
 File "/dev/shm/mvngu/sage-4.3.1.rc1/devel/sage-main/sage/misc/sagedoc.py", line 365:

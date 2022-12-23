@@ -1,6 +1,6 @@
 # Issue 2208: implement is_field for rings of integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2208
 
 Original creator: was
 

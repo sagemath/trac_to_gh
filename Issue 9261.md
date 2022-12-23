@@ -1,6 +1,6 @@
 # Issue 9261: RealIntervalField: enable option style='bracket'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9261
 
 Original creator: zimmerma
 

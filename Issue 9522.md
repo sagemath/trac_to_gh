@@ -1,6 +1,6 @@
 # Issue 9522: MPIR: Don't check SAGE_CHECK in spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9522
 
 Original creator: mpatel
 

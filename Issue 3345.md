@@ -1,6 +1,6 @@
 # Issue 3345: trace no longer works in 3.0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3345
 
 Original creator: fwclarke
 

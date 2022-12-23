@@ -1,6 +1,6 @@
 # Issue 3815: plot3d segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3815
 
 Original creator: wdj
 

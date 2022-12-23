@@ -1,6 +1,6 @@
 # Issue 330: Simple Statistics/Benchmark Support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/330
 
 Original creator: malb
 

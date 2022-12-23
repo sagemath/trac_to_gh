@@ -1,6 +1,6 @@
 # Issue 5933: Bring primes.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5933
 
 Original creator: kcrisman
 

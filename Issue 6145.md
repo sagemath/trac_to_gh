@@ -1,6 +1,6 @@
 # Issue 6145: upgrade mpir to 1.1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6145
 
 Original creator: was
 

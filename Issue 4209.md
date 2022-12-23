@@ -1,6 +1,6 @@
 # Issue 4209: [with spkg, needs review] upgrade maxima.spkg to 5.16.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4209
 
 Original creator: mabshoff
 

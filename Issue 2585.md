@@ -1,6 +1,6 @@
 # Issue 2585: [with-patch] padic bugfix - check=False in constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2585
 
 Original creator: roed
 

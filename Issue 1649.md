@@ -1,6 +1,6 @@
 # Issue 1649: Updated eclib.spkg to  eclib-20071231.p0.spkg  or later
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1649
 
 Original creator: mabshoff
 

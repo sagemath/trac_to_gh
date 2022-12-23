@@ -1,6 +1,6 @@
 # Issue 1776: symbolic function preparser bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1776
 
 Original creator: was
 

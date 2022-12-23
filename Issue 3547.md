@@ -1,6 +1,6 @@
 # Issue 3547: create a polygon3d function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3547
 
 Original creator: mhansen
 

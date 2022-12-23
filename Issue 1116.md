@@ -1,6 +1,6 @@
 # Issue 1116: sage -sdist recreates certain empty files in local/bin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1116
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status
 ? sage-cleaner.orig
 ? sage-clone.orig
 ? sage-lo

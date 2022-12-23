@@ -1,6 +1,6 @@
 # Issue 9011: the numpy SVD decomposition docstring is wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9011
 
 Original creator: was
 

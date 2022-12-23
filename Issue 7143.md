@@ -1,6 +1,6 @@
 # Issue 7143: We must check if the version of 'make' found is gnu 'make'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7143
 
 Original creator: drkirkby
 

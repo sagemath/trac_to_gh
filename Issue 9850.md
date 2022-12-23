@@ -1,6 +1,6 @@
 # Issue 9850: sage -pkg may hang if there are many uncommitted changes in the package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9851
 
 Original creator: SimonKing
 

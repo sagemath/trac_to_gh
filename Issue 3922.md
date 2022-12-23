@@ -1,6 +1,6 @@
 # Issue 3922: [with patch, needs review] Make nice arrows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3922
 
 Original creator: jason
 

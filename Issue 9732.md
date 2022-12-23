@@ -1,6 +1,6 @@
 # Issue 9732: don't delete interact output when auto_update=False
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9732
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 6704: spell-check all modules under sage/graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6704
 
 Original creator: mvngu
 

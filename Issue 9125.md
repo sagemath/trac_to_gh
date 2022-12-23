@@ -1,6 +1,6 @@
 # Issue 9125: more examples of simplicial complexes: RP^n, CP^2, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9125
 
 Original creator: jhpalmieri
 

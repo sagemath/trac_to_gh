@@ -1,6 +1,6 @@
 # Issue 8374: Numerical noise in devel/sage/sage/symbolic/constants_c.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8374
 
 Original creator: drkirkby
 
@@ -41,15 +41,15 @@ The attached patch fixes these two failures.
 
 
 ```
-kirkby`@`redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/constants_c.p
+kirkby@redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/constants_c.p
 sage -t  "devel/sage/sage/symbolic/constants_c.pyx"
          [65.4 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 65.4 seconds
-drkirkby`@`redstart:~/sage-4.3.3$
-yxkirkby`@`redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/constants_c.py
+drkirkby@redstart:~/sage-4.3.3$
+yxkirkby@redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/constants_c.py
 sage -t  "devel/sage/sage/symbolic/constants_c.pyx"
          [77.5 s]
 

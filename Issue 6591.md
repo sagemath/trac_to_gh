@@ -1,6 +1,6 @@
 # Issue 6591: Implement view(object, viewer='pdf') and view(object, tightpage = True)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6591
 
 Original creator: nthiery
 

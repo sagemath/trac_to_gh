@@ -1,6 +1,6 @@
 # Issue 9818: Add a default gcd and lcm methods for fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9819
 
 Original creator: lftabera
 

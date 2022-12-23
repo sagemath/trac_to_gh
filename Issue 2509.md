@@ -1,6 +1,6 @@
 # Issue 2509: [with patch, needs review] showstopper in xgcd(f, 0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2509
 
 Original creator: ncalexan
 

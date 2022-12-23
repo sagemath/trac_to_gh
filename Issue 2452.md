@@ -1,6 +1,6 @@
 # Issue 2452: heaviside step function needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2452
 
 Original creator: gfurnish
 
@@ -489,7 +489,7 @@ The second patch needs to be rebased. The following hunk fails, applying to my 4
 ```
 --- random_tests.py
 +++ random_tests.py
-`@``@` -202,12 +202,11 `@``@`
+@@ -202,12 +202,11 @@
 
          sage: from sage.symbolic.random_tests import *
          sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)

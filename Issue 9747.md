@@ -1,6 +1,6 @@
 # Issue 9747: assigment to 1x1 submatrices specified by slices fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9747
 
 Original creator: phil
 

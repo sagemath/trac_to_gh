@@ -1,6 +1,6 @@
 # Issue 2911: [with patch, needs easy review] Use "$@" instead of "$*" in sage-* local/bin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2911
 
 Original creator: mabshoff
 

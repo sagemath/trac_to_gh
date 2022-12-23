@@ -1,6 +1,6 @@
 # Issue 8130: UnicodeDecodeError (etc.) with view from the command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8130
 
 Original creator: jhpalmieri
 

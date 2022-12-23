@@ -1,6 +1,6 @@
 # Issue 8597: point(vector((2,3,4))) is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8597
 
 Original creator: slabbe
 
@@ -36,7 +36,7 @@ Traceback (most recent call last):
     301         from sage.plot.plot3d.shapes2 import point3d
 --> 302         return point3d(points, **kwds)
     303 
-    304 `@`rename_keyword(color='rgbcolor')
+    304 @rename_keyword(color='rgbcolor')
 
 /Users/slabbe/Applications/sage-4.3.4/local/lib/python2.6/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)
     712         return Point(v, size, **kwds)

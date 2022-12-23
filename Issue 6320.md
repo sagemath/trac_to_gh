@@ -1,6 +1,6 @@
 # Issue 6320: optional doctest failure -- combinat crystal code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6320
 
 Original creator: was
 
@@ -13,9 +13,9 @@ CC:  tscrim
 I have dot2tex installed but this doctest in combinat still fails:
 
 ```
-wstein`@`sage:~/build/sage-4.0.2.alpha3$ which dot2tex
+wstein@sage:~/build/sage-4.0.2.alpha3$ which dot2tex
 /usr/bin/dot2tex
-wstein`@`sage:~/build/sage-4.0.2.alpha3$ ./sage -t -long --optional devel/sage/sage/combinat/crystals/crystals.py
+wstein@sage:~/build/sage-4.0.2.alpha3$ ./sage -t -long --optional devel/sage/sage/combinat/crystals/crystals.py
 sage -t -long --optional "devel/sage/sage/combinat/crystals/crystals.py"
 
 **********************************************************************
@@ -56,7 +56,7 @@ The following tests failed:
 
         sage -t -long --optional "devel/sage/sage/combinat/crystals/crystals.py"
 Total time for all tests: 7.2 seconds
-wstein`@`sage:~/build/sage-4.0.2.alpha3$ 
+wstein@sage:~/build/sage-4.0.2.alpha3$ 
 
 
 ```

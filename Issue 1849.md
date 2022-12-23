@@ -1,6 +1,6 @@
 # Issue 1849: bug in elementary_divisors for abelian groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1849
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: joyner
 ```
 
 
-On Jan 19, 2008 8:00 AM, John Cremona <john.cremona`@`gmail.com> wrote:
+On Jan 19, 2008 8:00 AM, John Cremona <john.cremona@gmail.com> wrote:
 > 
 > Either this is a bug or I have been teaching students the wrong thing for years:
 > 

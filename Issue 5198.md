@@ -1,6 +1,6 @@
 # Issue 5198: apply_map skips zeroes in sparse vectors and matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5198
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 9307: delete GHMM standard spkg from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9307
 
 Original creator: was
 

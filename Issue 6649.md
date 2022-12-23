@@ -1,6 +1,6 @@
 # Issue 6649: doctest failure in decorate.py (on OS X only)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6649
 
 Original creator: GeorgSWeber
 
@@ -15,7 +15,7 @@ sage -t -long "devel/sage/sage/parallel/decorate.py"
 **********************************************************************
 File "/Users/Shared/sage/sage-4.1.1.alpha1/devel/sage/sage/parallel/
 decorate.py", line 64:
-    sage: `@`parallel()
+    sage: @parallel()
     def f(N): return N**Integer(2)
 Expected nothing
 Got:
@@ -153,12 +153,12 @@ Comment by mvngu created at 2009-08-02 23:25:47
 To be extra safe, apply the patch `trac_6649_doctest.patch` to a fresh clone of the main repository, rebuild the clone and run it. Then execute the following from the Sage command line:
 
 ```
-sage: `@`parallel()
+sage: @parallel()
 ....: def f(N): return N^2
 ....: 
 sage: v = list(f([1,2,4])); v.sort(); v
 [(((1,), {}), 1), (((2,), {}), 4), (((4,), {}), 16)]
-sage: `@`parallel('reference')
+sage: @parallel('reference')
 ....: def f(N): return N^2
 ....: 
 sage: v = list(f([1,2,4])); v.sort(); v
@@ -179,12 +179,12 @@ What I got agrees with what you said should happen:
 
 ```
 Loading Sage library. Current Mercurial branch is: 6649
-sage: `@`parallel()
+sage: @parallel()
 ....: def f(N): return N^2
 ....: 
 sage: v = list(f([1,2,4])); v.sort(); v
 [(((1,), {}), 1), (((2,), {}), 4), (((4,), {}), 16)]
-sage: `@`parallel('reference')
+sage: @parallel('reference')
 ....: def f(N): return N^2
 ....: 
 sage: v = list(f([1,2,4])); v.sort(); v

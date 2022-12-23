@@ -1,6 +1,6 @@
 # Issue 1354: [with patch] Solaris modp 64 bit fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1354
 
 Original creator: mabshoff
 

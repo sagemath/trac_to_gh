@@ -1,6 +1,6 @@
 # Issue 4617: Create a `test-dummy.spkg`
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4617
 
 Original creator: SimonKing
 

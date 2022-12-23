@@ -1,6 +1,6 @@
 # Issue 6124: Bug in galois_group of a p-adic field extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6124
 
 Original creator: jlefebvre
 

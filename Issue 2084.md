@@ -1,6 +1,6 @@
 # Issue 2084: default 20/40 in padics factory hard coded everywhere
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2084
 
 Original creator: robertwb
 

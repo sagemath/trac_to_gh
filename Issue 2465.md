@@ -1,6 +1,6 @@
 # Issue 2465: 2.10.3 doctest failure in groebner_fan.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2465
 
 Original creator: mabshoff
 

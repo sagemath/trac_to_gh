@@ -1,6 +1,6 @@
 # Issue 6786: 4 doctest failures in sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6786
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1931: sage.spkg need to depend on ecm.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1931
 
 Original creator: mabshoff
 

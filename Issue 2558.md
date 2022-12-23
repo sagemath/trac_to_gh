@@ -1,6 +1,6 @@
 # Issue 2558: dsage unit tests fail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2558
 
 Original creator: yi
 

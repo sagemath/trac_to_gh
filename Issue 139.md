@@ -1,6 +1,6 @@
 # Issue 139: automatic dependency checking for pyrex files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/139
 
 Original creator: was
 

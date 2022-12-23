@@ -1,6 +1,6 @@
 # Issue 1945: [with patch] improve reference manual formatting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1945
 
 Original creator: cwitty
 

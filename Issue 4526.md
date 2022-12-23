@@ -1,6 +1,6 @@
 # Issue 4526: Can't multiply symmetric functions by 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4526
 
 Original creator: jbandlow
 

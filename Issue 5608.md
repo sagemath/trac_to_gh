@@ -1,6 +1,6 @@
 # Issue 5608: Mertens' constant is named wrongly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5608
 
 Original creator: fredrik.johansson
 

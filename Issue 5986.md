@@ -1,6 +1,6 @@
 # Issue 5986: [with patch, needs review] Workaround mishandled nested classes in Python and cPickle
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5986
 
 Original creator: nthiery
 

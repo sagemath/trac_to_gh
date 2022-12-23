@@ -1,6 +1,6 @@
 # Issue 9187: Update ECL's spkg-install for building multiple spkgs in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9187
 
 Original creator: mpatel
 
@@ -455,7 +455,7 @@ Comment by leif created at 2010-07-13 19:58:55
 For a 4.5 final, we should remove the unnecessary baggage, though (as `SPKG.txt` instructs, btw):
 
 ```
-leif`@`portland:~/Sage/spkgs/ecl-10.2.1.p1$ du -ch src/msvc/ src/contrib/encodings/
+leif@portland:~/Sage/spkgs/ecl-10.2.1.p1$ du -ch src/msvc/ src/contrib/encodings/
 16K	src/msvc/ecl
 8.0K	src/msvc/gc
 8.0K	src/msvc/gmp/mpz
@@ -495,7 +495,7 @@ leif`@`portland:~/Sage/spkgs/ecl-10.2.1.p1$ du -ch src/msvc/ src/contrib/encodin
 5.3M	src/msvc/
 544K	src/contrib/encodings/
 5.8M	total
-leif`@`portland:~/Sage/spkgs/ecl-10.2.1.p1$ tar cj src/msvc/ src/contrib/encodings/ | wc -c
+leif@portland:~/Sage/spkgs/ecl-10.2.1.p1$ tar cj src/msvc/ src/contrib/encodings/ | wc -c
 859300
 ```
 

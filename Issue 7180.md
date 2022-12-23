@@ -1,6 +1,6 @@
 # Issue 7180: HP-UX cddlib-094f checks for gmp.h, then igores the fact it can't find it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7180
 
 Original creator: drkirkby
 

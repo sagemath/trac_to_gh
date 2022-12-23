@@ -1,6 +1,6 @@
 # Issue 1898: Sage 2.10: numerical doctest failure for polynomial_element.pyx on Linux/Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1898
 
 Original creator: mabshoff
 

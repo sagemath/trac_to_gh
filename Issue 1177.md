@@ -1,6 +1,6 @@
 # Issue 1177: update mpfr.spkg to lates 3.2.0-p4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1177
 
 Original creator: mabshoff
 

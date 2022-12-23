@@ -1,6 +1,6 @@
 # Issue 668: Solaris 10: calculus/calculus.py doctests failure (numerical)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/668
 
 Original creator: mabshoff
 

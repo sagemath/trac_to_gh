@@ -1,6 +1,6 @@
 # Issue 5023: typo in calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5023
 
 Original creator: zimmerma
 
@@ -44,7 +44,7 @@ But still
 
 
 ```
-[jaap`@`paix sage-3.3.alpha4]$ ./sage
+[jaap@paix sage-3.3.alpha4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.3.alpha5, Release Date: 2009-02-03                  |

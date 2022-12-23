@@ -1,6 +1,6 @@
 # Issue 88: start writing "How To Make Pyrex FAST"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/88
 
 Original creator: dmharvey
 

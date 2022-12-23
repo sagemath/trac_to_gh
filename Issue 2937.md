@@ -1,6 +1,6 @@
 # Issue 2937: defects in polyhedra, 3d-gfan rendering
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2937
 
 Original creator: mhampton
 

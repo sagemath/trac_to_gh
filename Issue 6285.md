@@ -1,6 +1,6 @@
 # Issue 6285: Wrong description of arcsin function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6285
 
 Original creator: gmhossain
 

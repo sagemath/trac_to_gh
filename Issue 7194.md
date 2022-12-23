@@ -1,6 +1,6 @@
 # Issue 7194: extended singular functions interface, needs work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7194
 
 Original creator: PolyBoRi
 

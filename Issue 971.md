@@ -1,6 +1,6 @@
 # Issue 971: update the sympy package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/971
 
 Original creator: was
 
@@ -69,7 +69,7 @@ print f._sage_()
 
 it will produce the following output (I put the code above into example.sage):
 
-ondra`@`fuji:~/ext/sage-2.8.7-debian32-i686-Linux$ ./sage example.sage
+ondra@fuji:~/ext/sage-2.8.7-debian32-i686-Linux$ ./sage example.sage
 0.5.5-svn
 SAGE:
                                       1

@@ -1,6 +1,6 @@
 # Issue 6560: docstring formatting issue from ticket #6332
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6560
 
 Original creator: mvngu
 

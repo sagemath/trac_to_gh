@@ -1,6 +1,6 @@
 # Issue 5799: [with patch, needs review] jsMath, favicon, and logo for live, static, and offline docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5799
 
 Original creator: mpatel
 
@@ -205,7 +205,7 @@ rm: cannot remove `doc-*.spkg': No such file or directory
 diff -r f307132d9d7c sage/version.py
 --- a/sage/version.py   Thu Jul 02 11:52:36 2009 +0200
 +++ b/sage/version.py   Sat Jul 04 12:58:13 2009 -0700
-`@``@` -1,2 +1,2 `@``@`
+@@ -1,2 +1,2 @@
  """nodoctests"""
 -version='4.1.alpha3'; date='2009-07-02'
 +version='4.1.rc0'; date='2009-07-04'

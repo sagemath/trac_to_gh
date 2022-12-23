@@ -1,6 +1,6 @@
 # Issue 8438: Construction of a skew partition from its row and column lengths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8438
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 7858: Declare KEY_* binding variables explicitly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7858
 
 Original creator: mpatel
 

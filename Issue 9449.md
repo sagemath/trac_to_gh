@@ -1,6 +1,6 @@
 # Issue 9449: The summary printed after running doctests is inaccurate.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9449
 
 Original creator: drkirkby
 
@@ -118,19 +118,19 @@ I was unable to apply the last patch cleanly - the first two were ok.
 
 
 ```
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch
 adding trac_8641-doctest_exit_codes.3.patch to series file
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
 applying trac_8641-doctest_exit_codes.3.patch
 now at: trac_8641-doctest_exit_codes.3.patch
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9243/trac_9243.patch
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9243/trac_9243.patch
 adding trac_9243.patch to series file
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
 applying trac_9243.patch
 now at: trac_9243.patch
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9316/scripts9316_timeout_rebased.patch
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9316/scripts9316_timeout_rebased.patch
 adding scripts9316_timeout_rebased.patch to series file
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush
 applying scripts9316_timeout_rebased.patch
 patching file sage-doctest
 Hunk #1 FAILED at 18
@@ -138,26 +138,26 @@ Hunk #1 FAILED at 18
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh scripts9316_timeout_rebased.patch
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg status
-kirkby`@`t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg log | more
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg status
+kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg log | more
 changeset:   1541:6510dc91cc05
 tag:         scripts9316_timeout_rebased.patch
 tag:         qtip
 tag:         tip
-user:        Willem Jan Palenstijn <wpalenst`@`math.leidenuniv.nl>
+user:        Willem Jan Palenstijn <wpalenst@math.leidenuniv.nl>
 date:        Tue Jul 06 22:58:13 2010 +0200
 summary:     #9316: Add exit code 64 for time out to doctests
 
 changeset:   1540:6e69aa36dd4d
 tag:         trac_9243.patch
-user:        Dan Drake <drake`@`kaist.edu>
+user:        Dan Drake <drake@kaist.edu>
 date:        Wed Jun 16 13:48:32 2010 +0900
 summary:     trac 9243: sage-doctest should use powers of 2 for return codes
 
 changeset:   1539:08d8519d03dc
 tag:         trac_8641-doctest_exit_codes.3.patch
 tag:         qbase
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Wed Jun 16 00:06:03 2010 -0700
 summary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palmieri
 ```

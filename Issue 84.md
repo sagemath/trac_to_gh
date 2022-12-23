@@ -1,6 +1,6 @@
 # Issue 84: E.torsion_subgroup()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/84
 
 Original creator: burhanud
 
@@ -14,12 +14,12 @@ E.torsion_subgroup() returns an abstract group. There is no way to get hold of t
 ```
 ---------- Forwarded message ----------
 Date: Mon, 25 Sep 2006 08:00:43 -0400
-From: David Harvey <dmharvey`@`math.harvard.edu>
+From: David Harvey <dmharvey@math.harvard.edu>
 Reply-To: bug reports and users' support questions
-    <sage-support`@`lists.sourceforge.net>
+    <sage-support@lists.sourceforge.net>
 To: bug reports and users' support questions
-    <sage-support`@`lists.sourceforge.net>
-Cc: Iftikhar Burhanuddin <burhanud`@`usc.edu>
+    <sage-support@lists.sourceforge.net>
+Cc: Iftikhar Burhanuddin <burhanud@usc.edu>
 Subject: Re: [SAGEsupport] E(Q) torsion
 
 

@@ -1,6 +1,6 @@
 # Issue 4601: [with patch; needs review] optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4601
 
 Original creator: was
 

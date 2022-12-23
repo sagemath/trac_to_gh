@@ -1,6 +1,6 @@
 # Issue 1291: solving recurrences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1291
 
 Original creator: was
 

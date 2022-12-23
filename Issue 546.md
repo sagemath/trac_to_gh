@@ -1,6 +1,6 @@
 # Issue 546: hg_extcode should merge repository on upgrade/install instead of overwriting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/546
 
 Original creator: was
 

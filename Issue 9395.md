@@ -1,6 +1,6 @@
 # Issue 9395: new doctest for french book about Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9395
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 2160: leftovers from python to cython translation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2160
 
 Original creator: jsp
 

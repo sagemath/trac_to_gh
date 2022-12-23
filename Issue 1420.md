@@ -1,6 +1,6 @@
 # Issue 1420: [trivial to fix!] documentation typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1420
 
 Original creator: was
 

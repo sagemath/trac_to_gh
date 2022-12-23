@@ -1,6 +1,6 @@
 # Issue 1772: bug somewhere in the symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1772
 
 Original creator: was
 

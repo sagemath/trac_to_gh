@@ -1,6 +1,6 @@
 # Issue 5951: [with patch, needs review] fix a few minor issues with the reference manual in 3.4.2.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5951
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 6860: dimensions of modular forms spaces for Gamma(N) is busted / not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6860
 
 Original creator: was
 

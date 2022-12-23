@@ -1,6 +1,6 @@
 # Issue 9312: Fix GLPK spkg for SAGE64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9312
 
 Original creator: rlm
 
@@ -342,7 +342,7 @@ I've not tried building Sage from scratch using this deps file - just tried that
 
 
 ```
-drkirkby`@`hawk:~/SAGE-4.5.alpha1$ ./sage -f glpk-4.44
+drkirkby@hawk:~/SAGE-4.5.alpha1$ ./sage -f glpk-4.44
 Force installing glpk-4.44
 Calling sage-spkg on glpk-4.44
 Warning: Attempted to overwrite SAGE_ROOT environment variable
@@ -437,7 +437,7 @@ Here's the MD5 checksums of the two files. I'm just going to overwrite these on 
 
 
 ```
-drkirkby`@`hawk:~$ digest -a md5 deps deps.diff
+drkirkby@hawk:~$ digest -a md5 deps deps.diff
 (deps) = 8ddc6b0fcc9445ba566fa647451d871c
 (deps.diff) = 5e9a409b2ec49f00039802b20a28d7cd
 ```

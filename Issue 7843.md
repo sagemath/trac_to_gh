@@ -1,6 +1,6 @@
 # Issue 7843: os.path.listdir should be os.listdir
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7843
 
 Original creator: mpatel
 

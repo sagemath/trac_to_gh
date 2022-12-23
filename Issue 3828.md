@@ -1,6 +1,6 @@
 # Issue 3828: Upgrade to linbox-1.1.6rc1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3828
 
 Original creator: cpernet
 

@@ -1,6 +1,6 @@
 # Issue 667: Fix DSage on Solaris 10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/667
 
 Original creator: mabshoff
 

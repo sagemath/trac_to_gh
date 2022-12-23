@@ -1,6 +1,6 @@
 # Issue 7148: [with patch, needs review] tutorial: try to clarify the 'rings' section
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7148
 
 Original creator: jhpalmieri
 

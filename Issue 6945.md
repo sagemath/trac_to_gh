@@ -1,6 +1,6 @@
 # Issue 6945: [with spkg; needs review] Update readline to version 6.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6945
 
 Original creator: drkirkby
 

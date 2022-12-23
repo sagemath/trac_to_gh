@@ -1,6 +1,6 @@
 # Issue 5972: [with patch; needs review] segfault in degenerate matrix multiply
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5972
 
 Original creator: was
 
@@ -12,7 +12,7 @@ OUCH:
 
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 matrix(QQ,2,0)sage: matrix(QQ,2,0)*matrix(QQ,0,2)

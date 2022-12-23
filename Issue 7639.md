@@ -1,6 +1,6 @@
 # Issue 7639: notebook -- change "address" option to "interface" in notebook(...) command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7639
 
 Original creator: was
 

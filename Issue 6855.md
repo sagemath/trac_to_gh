@@ -1,6 +1,6 @@
 # Issue 6855: [with patch, needs work] Enable interacts in published worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6855
 
 Original creator: mpatel
 

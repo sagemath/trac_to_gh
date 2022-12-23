@@ -1,6 +1,6 @@
 # Issue 8157: why the bit limit of 2^24 in RealField?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8157
 
 Original creator: zimmerma
 

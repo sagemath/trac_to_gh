@@ -1,6 +1,6 @@
 # Issue 8198: p-adic precision in vector multiplication
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8198
 
 Original creator: wuthrich
 

@@ -1,6 +1,6 @@
 # Issue 3882: explain in the programming guide why spkg source patches should be applied by copying entire files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3882
 
 Original creator: jason
 

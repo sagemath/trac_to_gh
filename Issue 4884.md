@@ -1,6 +1,6 @@
 # Issue 4884: Make colormap handling better
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4884
 
 Original creator: abergeron
 
@@ -39,7 +39,7 @@ However, after the patch is applied, using 3.2.2 on an amd64 ubuntu 8.10 machine
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-3.2.2$ ./sage -t /home/wdj/sagefiles/sage-3.2.2/devel/sage-density_plot/sage/plot/matrix_plot.py 
+wdj@hera:~/sagefiles/sage-3.2.2$ ./sage -t /home/wdj/sagefiles/sage-3.2.2/devel/sage-density_plot/sage/plot/matrix_plot.py 
 sage -t  "devel/sage-density_plot/sage/plot/matrix_plot.py"                                                                
 **********************************************************************                                                     
 File "/home/wdj/sagefiles/sage-3.2.2/devel/sage-density_plot/sage/plot/matrix_plot.py", line 114:                          

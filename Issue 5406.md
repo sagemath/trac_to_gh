@@ -1,6 +1,6 @@
 # Issue 5406: [with patch, needs review] Remove the doc repo from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5406
 
 Original creator: mabshoff
 

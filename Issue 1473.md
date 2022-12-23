@@ -1,6 +1,6 @@
 # Issue 1473: Java3D usable from command line as well as notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1473
 
 Original creator: robertwb
 

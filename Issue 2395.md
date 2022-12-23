@@ -1,6 +1,6 @@
 # Issue 2395: [with patch, needs review] New features for number fields (gap interface, matrix groups)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2395
 
 Original creator: SimonKing
 

@@ -1,6 +1,6 @@
 # Issue 6701: prereq-0.3.tar has many issues and needs updating.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6701
 
 Original creator: drkirkby
 

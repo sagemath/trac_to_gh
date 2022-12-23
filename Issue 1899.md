@@ -1,6 +1,6 @@
 # Issue 1899: Calling graphs with a matrix and loops=True blows up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1899
 
 Original creator: jason
 

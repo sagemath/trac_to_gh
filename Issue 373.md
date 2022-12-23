@@ -1,6 +1,6 @@
 # Issue 373: pi coercion issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/373
 
 Original creator: moretti
 
@@ -73,9 +73,9 @@ Comment by was created at 2007-05-23 04:40:25
 OK, fixed.
 
 ```
-was`@`ubuntu:~/d/sage/sage/functions$ hg export 4574
+was@ubuntu:~/d/sage/sage/functions$ hg export 4574
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1179895122 25200
 # Node ID 3d5ff8c3011e00f4cd45615429c05416fa52646d
 # Parent  6219a384a063254b7da5c5ec53736e9899e8e980
@@ -84,7 +84,7 @@ Symbolics: fixed issue with constant comparisons.
 diff -r 6219a384a063 -r 3d5ff8c3011e sage/functions/constants.py
 --- a/sage/functions/constants.py       Tue May 22 15:24:49 2007 -0700
 +++ b/sage/functions/constants.py       Tue May 22 21:38:42 2007 -0700
-`@``@` -351,6 +351,32 `@``@` class Constant(Function):
+@@ -351,6 +351,32 @@ class Constant(Function):
          """
          return False
 

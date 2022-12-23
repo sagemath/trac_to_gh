@@ -1,6 +1,6 @@
 # Issue 682: make it easier to load/save worksheets in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/682
 
 Original creator: was
 

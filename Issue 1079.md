@@ -1,6 +1,6 @@
 # Issue 1079: DSage improper get_worker_count
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1079
 
 Original creator: jvoight
 

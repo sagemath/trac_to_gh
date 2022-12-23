@@ -1,6 +1,6 @@
 # Issue 6463: Residue fields broken for relative extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6463
 
 Original creator: davidloeffler
 

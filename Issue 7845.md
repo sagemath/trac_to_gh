@@ -1,6 +1,6 @@
 # Issue 7845: Failed browse_sage_doc doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7845
 
 Original creator: mpatel
 

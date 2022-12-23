@@ -1,6 +1,6 @@
 # Issue 2028: Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2028
 
 Original creator: jason
 

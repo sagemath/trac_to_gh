@@ -1,6 +1,6 @@
 # Issue 9392: Broken docstring in binpacking method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9392
 
 Original creator: ncohen
 

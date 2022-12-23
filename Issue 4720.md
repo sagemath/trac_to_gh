@@ -1,6 +1,6 @@
 # Issue 4720: Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4720
 
 Original creator: jsp
 

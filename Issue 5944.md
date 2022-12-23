@@ -1,6 +1,6 @@
 # Issue 5944: fix a nasty pynac bug in exp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5944
 
 Original creator: was
 

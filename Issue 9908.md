@@ -1,6 +1,6 @@
 # Issue 9908: Clarify how to invite and remove collaborators in sharing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9909
 
 Original creator: kcrisman
 

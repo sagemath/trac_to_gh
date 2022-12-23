@@ -1,6 +1,6 @@
 # Issue 4803: improvements to the polyhedra module documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4803
 
 Original creator: sbarthelemy
 

@@ -1,6 +1,6 @@
 # Issue 9326: Add cohomology of toric varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9326
 
 Original creator: vbraun
 

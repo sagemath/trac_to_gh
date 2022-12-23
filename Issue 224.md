@@ -1,6 +1,6 @@
 # Issue 224: doc browser -- doesn't parse "notebook input notation"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/224
 
 Original creator: was
 

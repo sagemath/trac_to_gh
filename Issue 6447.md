@@ -1,6 +1,6 @@
 # Issue 6447: Add a <canvas> renderer for 3D plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6447
 
 Original creator: wcauchois
 
@@ -117,7 +117,7 @@ Yes, the patch applied fine but then I got this (amd64, ubuntu 9.04):
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.rc0$ ./sage -t  "devel/sage/sage/plot/plot3d/implicit_plot3d.py"
+wdj@hera:~/sagefiles/sage-4.1.rc0$ ./sage -t  "devel/sage/sage/plot/plot3d/implicit_plot3d.py"
 sage -t  "devel/sage/sage/plot/plot3d/implicit_plot3d.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***

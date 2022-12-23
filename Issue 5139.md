@@ -1,6 +1,6 @@
 # Issue 5139: add computation of Bach bound of number fields to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5139
 
 Original creator: was
 

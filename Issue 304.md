@@ -1,6 +1,6 @@
 # Issue 304: another modular forms bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/304
 
 Original creator: was
 

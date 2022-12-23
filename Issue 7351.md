@@ -1,6 +1,6 @@
 # Issue 7351: optimize import of singular.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7351
 
 Original creator: was
 

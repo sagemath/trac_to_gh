@@ -1,6 +1,6 @@
 # Issue 9226: README.txt says " Sage builds with GCC >= 3.x" but it does NOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9226
 
 Original creator: drkirkby
 

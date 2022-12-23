@@ -1,6 +1,6 @@
 # Issue 6950: computing algebraic immunity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6950
 
 Original creator: ylchapuy
 

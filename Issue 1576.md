@@ -1,6 +1,6 @@
 # Issue 1576: implicit multiplication -- sage needs to have *some* way to do this (even if not by default)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1576
 
 Original creator: was
 

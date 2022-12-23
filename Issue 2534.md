@@ -1,6 +1,6 @@
 # Issue 2534: Sage does not handle Symmetrica's large integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2534
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 9658: mpz_clear->mpq_clear (typo)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9658
 
 Original creator: jason
 

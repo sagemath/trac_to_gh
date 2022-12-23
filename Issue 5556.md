@@ -1,6 +1,6 @@
 # Issue 5556: symbolic gamma function and symbolic log function are incoherent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5556
 
 Original creator: ncalexan
 

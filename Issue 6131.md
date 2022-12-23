@@ -1,6 +1,6 @@
 # Issue 6131: cmp for number field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6131
 
 Original creator: robertwb
 

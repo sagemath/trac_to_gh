@@ -1,6 +1,6 @@
 # Issue 5320: update Sphinx to 0.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5320
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 6835: Inconsistent types for degree of finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6835
 
 Original creator: cremona
 

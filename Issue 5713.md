@@ -1,6 +1,6 @@
 # Issue 5713: multigraph plotting bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5713
 
 Original creator: was
 

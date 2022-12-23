@@ -1,6 +1,6 @@
 # Issue 1872: serious bug in pickling elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1872
 
 Original creator: was
 

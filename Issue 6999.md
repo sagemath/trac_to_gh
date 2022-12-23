@@ -1,6 +1,6 @@
 # Issue 6999: [with patch, needs review] doctest failures on 32-bit systems due to #4948 patches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6999
 
 Original creator: flawrence
 

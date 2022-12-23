@@ -1,6 +1,6 @@
 # Issue 1286: fix maxima floating point precision handling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1286
 
 Original creator: was
 

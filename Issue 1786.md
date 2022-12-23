@@ -1,6 +1,6 @@
 # Issue 1786: coercion error with fraction field of multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1786
 
 Original creator: mhansen
 

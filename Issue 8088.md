@@ -1,6 +1,6 @@
 # Issue 8088: sage library 4.3.1 failing to build on Open Solaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8088
 
 Original creator: drkirkby
 

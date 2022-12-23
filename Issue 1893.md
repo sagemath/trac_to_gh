@@ -1,6 +1,6 @@
 # Issue 1893: Added graphical plotting to discrete random variables.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1893
 
 Original creator: kohel
 
@@ -61,7 +61,7 @@ summary:     Added plotting function for graphical display of a discrete random 
 diff --git a/sage/probability/random_variable.py b/sage/probability/random_variable.py
 --- a/sage/probability/random_variable.py
 +++ b/sage/probability/random_variable.py
-`@``@` -21,6 +21,7 `@``@` from sage.structure.parent_base import P
+@@ -21,6 +21,7 @@ from sage.structure.parent_base import P
  from sage.misc.functional import sqrt, log
  from sage.rings.all import RealField, RationalField
  from sage.sets.set import Set
@@ -69,7 +69,7 @@ diff --git a/sage/probability/random_variable.py b/sage/probability/random_varia
  
  ################################################################################
  ################################################################################
-`@``@` -265,6 +266,25 `@``@` class DiscreteRandomVariable(RandomVaria
+@@ -265,6 +266,25 @@ class DiscreteRandomVariable(RandomVaria
                 "Correlation not defined if standard deviations are not both nonzero."
         return cov/(sigX*sigY)
  

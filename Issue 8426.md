@@ -1,6 +1,6 @@
 # Issue 8426: polynomial * constant does not work if constant is a numpy type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8426
 
 Original creator: jason
 

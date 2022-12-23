@@ -1,6 +1,6 @@
 # Issue 3141: [with patch, needs review] Doctest coverage 100% for crypto.mq.mpolynomialsystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3141
 
 Original creator: malb
 
@@ -23,7 +23,7 @@ Comment by mabshoff created at 2008-06-23 04:04:15
 On sage.math I see a reproducible segfault:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha0$ ./sage -t -long devel/sage/sage/matrix/matrix2.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha0$ ./sage -t -long devel/sage/sage/matrix/matrix2.pyx
 sage -t -long devel/sage/sage/matrix/matrix2.pyx            
 
 ------------------------------------------------------------

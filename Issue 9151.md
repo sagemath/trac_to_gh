@@ -1,6 +1,6 @@
 # Issue 9151: build multithreaded version of ATLAS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9151
 
 Original creator: kilian
 

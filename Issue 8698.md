@@ -1,6 +1,6 @@
 # Issue 8698: German translation of the document "A Tour of Sage"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8698
 
 Original creator: mvngu
 

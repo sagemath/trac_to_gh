@@ -1,6 +1,6 @@
 # Issue 4645: in setup.py module_list.py is hidden with no comment.  VERY CONFUSING
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4645
 
 Original creator: was
 

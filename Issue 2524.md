@@ -1,6 +1,6 @@
 # Issue 2524: update givaro.spkg to the 3.2.10.rc3 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2524
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1870: somehow we completely broke the moinmoin wiki stuff included in Sage on OS X.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1870
 
 Original creator: was
 
@@ -321,11 +321,11 @@ When I wrote the wiki and trac command, there was no .sage/* folder, and the SAg
 
 
 ```
-sage`@`sagemath:~/wiki/sage$ ls
+sage@sagemath:~/wiki/sage$ ls
 nohup.err  nohup.out  sage_wiki  start
-sage`@`sagemath:~/wiki/sage$ more start
+sage@sagemath:~/wiki/sage$ more start
 ulimit -v 2000000; nohup echo "wiki(port=9001, address='')" | sage-new  > nohup.out 2>nohup.err &
-sage`@`sagemath:~/wiki/sage$
+sage@sagemath:~/wiki/sage$
 ```
 
 

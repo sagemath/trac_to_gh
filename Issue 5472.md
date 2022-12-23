@@ -1,6 +1,6 @@
 # Issue 5472: [with patch, needs review] typo in developer's guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5472
 
 Original creator: jhpalmieri
 

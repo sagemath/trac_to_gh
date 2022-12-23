@@ -1,6 +1,6 @@
 # Issue 9612: revise functional_programming.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9612
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 6652: should not have algebra structure on streams
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6652
 
 Original creator: hemmecke
 

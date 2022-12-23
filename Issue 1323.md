@@ -1,6 +1,6 @@
 # Issue 1323: generate all subspaces of a vector space/projective space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1323
 
 Original creator: jason
 

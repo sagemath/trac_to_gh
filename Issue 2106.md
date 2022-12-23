@@ -1,6 +1,6 @@
 # Issue 2106: Implement univariate polynomials over GF(2) via ntl.GF2X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2106
 
 Original creator: malb
 

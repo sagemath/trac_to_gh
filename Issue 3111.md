@@ -1,6 +1,6 @@
 # Issue 3111: sage's new baby-step giant step evidently needs additional polish
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3111
 
 Original creator: was
 

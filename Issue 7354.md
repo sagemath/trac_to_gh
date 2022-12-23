@@ -1,6 +1,6 @@
 # Issue 7354: use jsmath to render revisions of worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7354
 
 Original creator: jason
 

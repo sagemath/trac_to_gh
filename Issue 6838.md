@@ -1,6 +1,6 @@
 # Issue 6838: error creating matrices over GF(2) from elements of QQ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6838
 
 Original creator: ncalexan
 

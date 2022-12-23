@@ -1,6 +1,6 @@
 # Issue 8598: Add graphical output to operation tables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8598
 
 Original creator: rbeezer
 
@@ -111,7 +111,7 @@ you can push your branch, whose name should have the correct prefix, `u/gh-Bruno
 
 
 ```shell
-$ git remote add trac git`@`trac.sagemath.org:sage.git
+$ git remote add trac git@trac.sagemath.org:sage.git
 $ git checkout -b u/gh-Bruno-TT/ticket_8598 # or something like this
 $ git puch trac HEAD
 ```

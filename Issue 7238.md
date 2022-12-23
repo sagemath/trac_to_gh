@@ -1,6 +1,6 @@
 # Issue 7238: sagenb notebook: insert new cell *above* text cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7238
 
 Original creator: was
 

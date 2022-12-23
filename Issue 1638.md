@@ -1,6 +1,6 @@
 # Issue 1638: FreeBSD: change "/bin/bash" to "/usr/bin/env bash"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1638
 
 Original creator: mabshoff
 

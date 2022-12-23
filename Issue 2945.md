@@ -1,6 +1,6 @@
 # Issue 2945: [with spkg, needs review] gcc 4.3: libfplll needs small fix to compile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2945
 
 Original creator: mabshoff
 

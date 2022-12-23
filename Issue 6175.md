@@ -1,6 +1,6 @@
 # Issue 6175: [with patch, needs review] change Sage Group to Sage Development Team
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6175
 
 Original creator: jhpalmieri
 

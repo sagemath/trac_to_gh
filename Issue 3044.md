@@ -1,6 +1,6 @@
 # Issue 3044: phcpack improvements: path tracking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3044
 
 Original creator: mhampton
 

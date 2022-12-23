@@ -1,6 +1,6 @@
 # Issue 5181: [with patch, needs review] arith.py: some docstrings with backslashes in them don't start with r"""
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5181
 
 Original creator: jhpalmieri
 

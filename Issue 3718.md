@@ -1,6 +1,6 @@
 # Issue 3718: calculus -- sage treats limits involving floor and ceil completely wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3718
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3126: [with patch, needs review] Cython annotation has unicode errors (e.g. from the notebook)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3126
 
 Original creator: robertwb
 

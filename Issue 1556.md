@@ -1,6 +1,6 @@
 # Issue 1556: [with patch] improve readability of unknown username error page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1556
 
 Original creator: yi
 
@@ -39,8 +39,8 @@ Comment by was created at 2007-12-21 06:08:36
 
 ```
 - Hide quoted text -
-On Dec 20, 2007 10:57 PM, William Stein <wstein`@`gmail.com> wrote:
-> On Dec 20, 2007 6:24 PM, Robert Miller <rlmillster`@`gmail.com> wrote:
+On Dec 20, 2007 10:57 PM, William Stein <wstein@gmail.com> wrote:
+> On Dec 20, 2007 6:24 PM, Robert Miller <rlmillster@gmail.com> wrote:
 > >
 > > As pointed out by Michael Abshoff, it seems like an information leak
 > > to list all the usernames on a notebook when you fail to use a valid

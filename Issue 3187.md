@@ -1,6 +1,6 @@
 # Issue 3187: fix 64 bit OSX build support for matplotli
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3187
 
 Original creator: mabshoff
 

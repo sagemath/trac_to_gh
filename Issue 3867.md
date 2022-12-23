@@ -1,6 +1,6 @@
 # Issue 3867: sage-3.1.alpha2: graph.py numerical noise
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3867
 
 Original creator: was
 

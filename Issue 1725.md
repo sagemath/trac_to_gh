@@ -1,6 +1,6 @@
 # Issue 1725: Experimental package for wxPython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1725
 
 Original creator: jsp
 

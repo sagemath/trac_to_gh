@@ -1,6 +1,6 @@
 # Issue 1051: pari/gp extended help stops working when sage tree is moved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1051
 
 Original creator: cwitty
 

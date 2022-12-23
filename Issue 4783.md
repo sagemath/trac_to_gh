@@ -1,6 +1,6 @@
 # Issue 4783: [with patch; needs review] email -- create an "email" command, so users can easily notify themselves when their sage programs have completed some task
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4783
 
 Original creator: was
 

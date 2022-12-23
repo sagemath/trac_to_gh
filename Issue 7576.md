@@ -1,6 +1,6 @@
 # Issue 7576: improvements to the prove_BSD function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7576
 
 Original creator: rlm
 

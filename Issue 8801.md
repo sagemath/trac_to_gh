@@ -1,6 +1,6 @@
 # Issue 8801: implement the projective dual of a plane curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8801
 
 Original creator: AlexGhitza
 

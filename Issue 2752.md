@@ -1,6 +1,6 @@
 # Issue 2752: Speedup for  all_paths()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2752
 
 Original creator: vgermrk
 

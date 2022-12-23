@@ -1,6 +1,6 @@
 # Issue 203: more elliptic curve n*P problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/203
 
 Original creator: was
 

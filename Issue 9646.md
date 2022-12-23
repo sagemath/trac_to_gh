@@ -1,6 +1,6 @@
 # Issue 9646: Incorrect calculation of elliptic curve formal group law
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9646
 
 Original creator: hlaw
 

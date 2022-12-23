@@ -1,6 +1,6 @@
 # Issue 7398: Improved mantra to find whether an object is iterable (and get an iterator out it)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7398
 
 Original creator: nthiery
 

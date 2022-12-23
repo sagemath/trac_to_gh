@@ -1,6 +1,6 @@
 # Issue 986: sage-2.8.9.rc1: order of .variety() depends on architecture in multi_polynomial_ideal.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/986
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 502: pexpect -- optimize; maybe update to newest version?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/502
 
 Original creator: was
 
@@ -144,8 +144,8 @@ def get(self, var, use_file=False):
     if use_file == 'dropdrive':
         E = self._expect
         E.sendline('Print(%s);' % var)
-        E.bounded_expect(('`@`ngap> `@`i', 9))
-        return ''.join(E.before.split('`@`J`@`n')[1:])
+        E.bounded_expect(('@ngap> @i', 9))
+        return ''.join(E.before.split('@J@n')[1:])
     if use_file:
         if os.path.exists(tmp):
             os.unlink(tmp)
@@ -164,7 +164,7 @@ Patch
 
 --- /tmp/pexpect-2.1/pexpect.py	2006-05-31 23:07:48.000000000 -0400
 +++ pexpect.py	2007-08-30 22:01:19.000000000 -0400
- -620,6 +620,36 `@``@`
+ -620,6 +620,36 @@
          # and blocked on some platforms. TCSADRAIN is probably ideal if it worked.
          termios.tcsetattr(self.child_fd, termios.TCSANOW, new)
      
@@ -201,7 +201,7 @@ Patch
      def read_nonblocking (self, size = 1, timeout = -1):
          """This reads at most size characters from the child application.
          It includes a timeout. If the read does not complete within the
- -1148,6 +1178,184 `@``@`
+ -1148,6 +1178,184 @@
              self.match_index = None
              raise
  
@@ -223,7 +223,7 @@ Patch
 +
 +        Sample usage:
 +
-+        E.bounded_expect([('`@`ngap> `@`i', 9), ('>>> ', 4), EOF])
++        E.bounded_expect([('@ngap> @i', 9), ('>>> ', 4), EOF])
 +
 +        In the interests of performace, regular patterns are not
 +        allowed.

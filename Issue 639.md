@@ -1,6 +1,6 @@
 # Issue 639: run tests in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/639
 
 Original creator: dmharvey
 

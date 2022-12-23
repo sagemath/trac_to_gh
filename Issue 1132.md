@@ -1,6 +1,6 @@
 # Issue 1132: error inverting matrix over RQDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1132
 
 Original creator: mhansen
 

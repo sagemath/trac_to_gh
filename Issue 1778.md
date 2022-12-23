@@ -1,6 +1,6 @@
 # Issue 1778: plot() does not follow the same interval range conventions as plot3d()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1778
 
 Original creator: moretti
 

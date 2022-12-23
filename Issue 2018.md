@@ -1,6 +1,6 @@
 # Issue 2018: crap -- scipy sandbox has a bunch of .svn directories.  Delete them
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2018
 
 Original creator: was
 

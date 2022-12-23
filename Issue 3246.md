@@ -1,6 +1,6 @@
 # Issue 3246: [with patch; needs review] cygwin -- fix broken gsl.ode setup.py code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3246
 
 Original creator: was
 

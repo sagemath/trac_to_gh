@@ -1,6 +1,6 @@
 # Issue 9617: Broken export of LP files....
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9617
 
 Original creator: ncohen
 
@@ -329,7 +329,7 @@ ok
 Trying:
     g.dig6_string()###line 3432:_sage_    >>> g.dig6_string()
 Expecting:
-    ']SgO??BsCQ_a?_ZEbOOJW`@`_glO_CZ`WkGQCQxD_]bOaVa`@`AQtGQROOwwGkG?_SKECgKe?QH`cf`@``@`B`@`IOSQEhAO?GQ`@`MbmvGAAOOeG_[E?F?LoOo?O`@`GomMoQoWEdICAS`@`G`@`W`@`j?oCY`@`U_HeWCPG`@`SZI'
+    ']SgO??BsCQ_a?_ZEbOOJW@_glO_CZ`WkGQCQxD_]bOaVa@AQtGQROOwwGkG?_SKECgKe?QH`cf@@B@IOSQEhAO?GQ@MbmvGAAOOeG_[E?F?LoOo?O@GomMoQoWEdICAS@G@W@j?oCY@U_HeWCPG@SZI'
 ok
 Trying:
     k = Integer(g.edge_connectivity()) ; k###line 3434:_sage_    >>> k = Integer(g.edge_connectivity()) ; k

@@ -1,6 +1,6 @@
 # Issue 4518: progress indicator for "sage -br"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4518
 
 Original creator: was
 

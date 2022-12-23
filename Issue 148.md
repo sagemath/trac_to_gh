@@ -1,6 +1,6 @@
 # Issue 148: links in HTML version don't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/148
 
 Original creator: boothby
 

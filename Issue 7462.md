@@ -1,6 +1,6 @@
 # Issue 7462: magma interface -- huge number of doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7462
 
 Original creator: was
 

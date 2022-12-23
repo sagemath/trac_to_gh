@@ -1,6 +1,6 @@
 # Issue 5888: quadratic forms added a stupid/broken new function to sage for random integer.  Remove!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5888
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  cremona
 ```
 
 
-On Thu, Apr 23, 2009 at 11:51 PM, Bill Hart <goodwillhart`@`googlemail.com> wrote:
+On Thu, Apr 23, 2009 at 11:51 PM, Bill Hart <goodwillhart@googlemail.com> wrote:
 > Yeah, the random_int_upto function looks broken.
 > random_int_upto(2^100) is always divisible by 2^47. Not very random.
 

@@ -1,6 +1,6 @@
 # Issue 9933: Toric divisor class -> divisor lift should be integral
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9934
 
 Original creator: vbraun
 

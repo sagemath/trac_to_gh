@@ -1,6 +1,6 @@
 # Issue 8192: Update PolyBoRi to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8192
 
 Original creator: malb
 
@@ -72,9 +72,9 @@ Comment by jhpalmieri created at 2010-04-19 21:53:57
 Do you know why the spkg is so small?
 
 ```
-palmieri`@`sage:~$ ls -l /home/dreyer/spkg/polybori-0.6.4.spkg 
+palmieri@sage:~$ ls -l /home/dreyer/spkg/polybori-0.6.4.spkg 
 ... 2040576 2010-03-12 06:13 /home/dreyer/spkg/polybori-0.6.4.spkg
-palmieri`@`sage:~$ ls -l /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg 
+palmieri@sage:~$ ls -l /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg 
 ... 6825939 2010-02-11 08:56 /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg
 ```
 
@@ -312,7 +312,7 @@ From the diff of the changes (of an earlier version of the package in Alexander 
 diff --git a/patches/SConstruct b/patches/SConstruct
 --- a/patches/SConstruct
 +++ b/patches/SConstruct
-`@``@` -561,7 +581,7 `@``@`
+@@ -561,7 +581,7 @@
  gb_src = [GBPath('src', source) for source in gb_src]
  if not(external_m4ri):
     gb_src += m4ri
@@ -332,7 +332,7 @@ BTW, this also looks suspect to me:
 diff --git a/patches/SConstruct b/patches/SConstruct
 --- a/patches/SConstruct
 +++ b/patches/SConstruct
-`@``@` -327,7 +350,7 `@``@`
+@@ -327,7 +350,7 @@
  Help(opts.GenerateHelpText(env))
  
  have_l2h = have_t4h = False
@@ -461,10 +461,10 @@ I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `S
 
 
 ```diff
-[mvngu`@`sage mvngu]$ diff -Naur polybori-0.6.3-20091028/spkg-install polybori-0.6.4.p0/spkg-install 
+[mvngu@sage mvngu]$ diff -Naur polybori-0.6.3-20091028/spkg-install polybori-0.6.4.p0/spkg-install 
 --- polybori-0.6.3-20091028/spkg-install	2009-05-17 10:31:16.000000000 -0700
 +++ polybori-0.6.4.p0/spkg-install	2010-04-29 07:10:46.000000000 -0700
-`@``@` -6,14 +6,14 `@``@`
+@@ -6,14 +6,14 @@
     exit 1
  fi
  
@@ -482,7 +482,7 @@ I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `S
  BOOSTDIR=boost_1_34_1.cropped
  
  patch() 
-`@``@` -26,9 +26,6 `@``@`
+@@ -26,9 +26,6 @@
  
      cp patches/SConstruct src/${PBDIR}/SConstruct
      cp patches/PyPolyBoRi.py src/${PBDIR}/pyroot/polybori
@@ -492,7 +492,7 @@ I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `S
  }
  
  
-`@``@` -68,7 +65,7 `@``@`
+@@ -68,7 +65,7 @@
  
  remove_dylib()
  {
@@ -501,7 +501,7 @@ I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `S
      if [ `uname` = "Darwin" ]; then
          rm -f $SAGE_LOCAL/lib/libpolybori.dylib
          rm -f $SAGE_LOCAL/lib/libpboriCudd.dylib
-`@``@` -101,9 +98,3 `@``@`
+@@ -101,9 +98,3 @@
  echo "Removing dynamic libraries..."
  remove_dylib
  echo "Done removing dynamic libraries."
@@ -522,7 +522,7 @@ The latter spkg restores the command "remove_dynlib". I then built Sage 4.4.1.al
 
 
 ```sh
-[mvngu`@`sage sage-4.4.1.alpha2]$ ./sage -t -long local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py
+[mvngu@sage sage-4.4.1.alpha2]$ ./sage -t -long local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py
 sage -t -long "local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py"
 **********************************************************************
 File "/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py", line 109:

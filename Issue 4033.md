@@ -1,6 +1,6 @@
 # Issue 4033: [with spkg, needs review] disabled libiconv on Solaris for the r.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4033
 
 Original creator: mabshoff
 

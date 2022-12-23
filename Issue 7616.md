@@ -1,6 +1,6 @@
 # Issue 7616: fix bug in trivial number field extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7616
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 5191: coercion issue of tanh(2) into QQbar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5191
 
 Original creator: mabshoff
 

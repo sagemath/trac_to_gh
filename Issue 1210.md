@@ -1,6 +1,6 @@
 # Issue 1210: Cannot create distinct polynomial rings over p-adic rings with different print_modes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1210
 
 Original creator: ncalexan
 

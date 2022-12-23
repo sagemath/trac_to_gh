@@ -1,6 +1,6 @@
 # Issue 5345: Optimize transpose for dense matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5345
 
 Original creator: rbeezer
 
@@ -275,7 +275,7 @@ Replying to [comment:11 mvngu]:
 It was on my laptop:
 
 ```
-Intel(R) Core(TM)2 Duo CPU     T5450  `@` 1.66GHz
+Intel(R) Core(TM)2 Duo CPU     T5450  @ 1.66GHz
 MemTotal:      2066004 kB
 Linux my-laptop 2.6.24-23-generic #1 SMP Thu Feb 5 15:00:25 UTC 2009 i686 GNU/Linux
 ```

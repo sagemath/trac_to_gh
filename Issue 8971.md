@@ -1,6 +1,6 @@
 # Issue 8971: problem installing CBC with CPLEX support on osx 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8971
 
 Original creator: jason
 

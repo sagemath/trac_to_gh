@@ -1,6 +1,6 @@
 # Issue 4825: extract worksheets embedded in pdf files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4825
 
 Original creator: jason
 

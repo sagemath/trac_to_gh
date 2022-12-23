@@ -1,6 +1,6 @@
 # Issue 7990: A new build failure on Solaris 10 SPARC.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7990
 
 Original creator: drkirkby
 

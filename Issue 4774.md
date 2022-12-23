@@ -1,6 +1,6 @@
 # Issue 4774: Upgrade matplotlib to 0.98.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4774
 
 Original creator: jason
 
@@ -172,7 +172,7 @@ Comment by mabshoff created at 2009-02-06 01:09:58
 This spkg is twice as large as the previous:
 
 ```
--rw-r--r--`@` 1 michaelabshoff  staff  4845513 Feb  2 17:28 matplotlib-0.98.3.p5.spkg
+-rw-r--r--@ 1 michaelabshoff  staff  4845513 Feb  2 17:28 matplotlib-0.98.3.p5.spkg
 -rw-r--r--  1 michaelabshoff  staff  8833439 Feb  5 16:52 matplotlib-svn6821.spkg
 ```
 

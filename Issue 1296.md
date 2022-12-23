@@ -1,6 +1,6 @@
 # Issue 1296: Fast permutation arithmatic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1296
 
 Original creator: robertwb
 

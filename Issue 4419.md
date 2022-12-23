@@ -1,6 +1,6 @@
 # Issue 4419: [with patch, needs review] conversion of Permutations to GAP not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4419
 
 Original creator: mhansen
 

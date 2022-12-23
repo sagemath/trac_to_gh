@@ -1,6 +1,6 @@
 # Issue 5733: bug in 3d plotting of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5733
 
 Original creator: was
 

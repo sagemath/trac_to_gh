@@ -1,6 +1,6 @@
 # Issue 4368: Create a function which gets an attributed from an object and calls it with specified arguments and keywords
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4368
 
 Original creator: mhansen
 

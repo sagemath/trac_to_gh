@@ -1,6 +1,6 @@
 # Issue 1001: "Use of uninitialised value of size 4" in pari.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1001
 
 Original creator: mabshoff
 

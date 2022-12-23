@@ -1,6 +1,6 @@
 # Issue 2005: The .sage directory -- adjust permissions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2005
 
 Original creator: was
 

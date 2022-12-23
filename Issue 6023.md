@@ -1,6 +1,6 @@
 # Issue 6023: Bring plot/polygon.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6023
 
 Original creator: kcrisman
 

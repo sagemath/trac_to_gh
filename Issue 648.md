@@ -1,6 +1,6 @@
 # Issue 648: memory leak: matrix_integer_dense leaks private gmp_randinit_mt(state)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/648
 
 Original creator: mabshoff
 

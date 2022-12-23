@@ -1,6 +1,6 @@
 # Issue 841: hash() on algebraic reals is not stable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/841
 
 Original creator: cwitty
 

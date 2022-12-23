@@ -1,6 +1,6 @@
 # Issue 6643: vector function changes the ring of a vector for ZZ when possible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6643
 
 Original creator: slabbe
 

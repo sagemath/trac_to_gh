@@ -1,6 +1,6 @@
 # Issue 5102: eisenstein_series_qexp broken over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5102
 
 Original creator: AlexGhitza
 

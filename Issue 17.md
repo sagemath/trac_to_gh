@@ -1,6 +1,6 @@
 # Issue 17: Inconsistent files generated when loading .sage files.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/17
 
 Original creator: was
 

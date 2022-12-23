@@ -1,6 +1,6 @@
 # Issue 5400: parser error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5400
 
 Original creator: jason
 
@@ -304,7 +304,7 @@ Close as fixed:
 
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: RR(CC(-1))

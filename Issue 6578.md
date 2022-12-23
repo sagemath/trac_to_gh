@@ -1,6 +1,6 @@
 # Issue 6578: fast subgraphs by building the graph instead of deleting things
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6578
 
 Original creator: jason
 

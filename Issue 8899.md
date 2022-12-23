@@ -1,6 +1,6 @@
 # Issue 8899: Implement non commutative symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8899
 
 Original creator: nthiery
 

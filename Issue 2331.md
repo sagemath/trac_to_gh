@@ -1,6 +1,6 @@
 # Issue 2331: Polynomial_singular_repr is pretty messed up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2331
 
 Original creator: malb
 

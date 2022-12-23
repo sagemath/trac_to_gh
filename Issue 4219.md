@@ -1,6 +1,6 @@
 # Issue 4219: MacOSX: work around java detection hang in r due to "Mac OS X 10.5 Update 2"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4219
 
 Original creator: mabshoff
 

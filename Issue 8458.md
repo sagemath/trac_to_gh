@@ -1,6 +1,6 @@
 # Issue 8458: iterator for graphs() doesn't return independent graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8458
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5924: Proposed new method for the OverconvergentModularForms class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5924
 
 Original creator: ljpk
 

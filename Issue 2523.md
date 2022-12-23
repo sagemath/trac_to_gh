@@ -1,6 +1,6 @@
 # Issue 2523: bug in modular symbols for GammaH subgroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2523
 
 Original creator: was
 

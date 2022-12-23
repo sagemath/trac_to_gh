@@ -1,6 +1,6 @@
 # Issue 4906: convert sage.combinat.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4906
 
 Original creator: mhansen
 
@@ -130,7 +130,7 @@ In the wordmorphism file, was the following change wanted?
              sage: WordMorphism('a->ab,b-')
              Traceback (most recent call last):
              ...
-`@``@` -63,38 +72,50 `@``@`
+@@ -63,38 +72,50 @@
              Traceback (most recent call last):
              ...
              ValueError: The second and third characters must be '->' (not '-]')

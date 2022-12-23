@@ -1,6 +1,6 @@
 # Issue 2638: complex QQbar expressions exceed maximum recursion depth when exact computation is triggered
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2638
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 2332: notebook -- the evaluate link doesn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2332
 
 Original creator: was
 

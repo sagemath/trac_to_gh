@@ -1,6 +1,6 @@
 # Issue 2206: Factorizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2206
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 5784: [with patch, needs review] CSS typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5784
 
 Original creator: mpatel
 

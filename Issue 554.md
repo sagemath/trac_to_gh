@@ -1,6 +1,6 @@
 # Issue 554: the calculus roots command is totally stupid.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/554
 
 Original creator: was
 

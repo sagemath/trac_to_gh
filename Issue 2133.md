@@ -1,6 +1,6 @@
 # Issue 2133: running dimension_modular_forms on weight 0 should return 1 (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2133
 
 Original creator: AlexGhitza
 

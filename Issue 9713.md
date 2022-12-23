@@ -1,6 +1,6 @@
 # Issue 9713: Add toric Chow group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9713
 
 Original creator: vbraun
 
@@ -693,7 +693,7 @@ No, when I apply `trac_9713_fix_fg_pid.patch`, one out of 17 hunks fails, namely
 ```
 --- fgp_module.py
 +++ fgp_module.py
-`@``@` -539,7 +578,8 `@``@`
+@@ -539,7 +578,8 @@
          """
          return other.is_submodule(self)
 
@@ -718,7 +718,7 @@ Works for me, which sage version are you trying to apply it to?
 
 ```
 /home/vbraun/opt/sage-4.6.1.rc0/devel/sage
-[vbraun`@`volker-desktop sage]$ hg qpush -a
+[vbraun@volker-desktop sage]$ hg qpush -a
 applying trac_9972_add_cone_embedding.patch
 applying trac_9972_improve_element_constructors.patch
 applying trac_9972_remove_enhanced_cones_and_fans.patch
@@ -756,11 +756,11 @@ Comment by vbraun created at 2010-12-24 20:27:24
 No the `__call__` in `FGP_Module` is at line 542. Maybe you forgot to revert something in your sage library?
 
 ```
-[vbraun`@`volker-desktop sage]$ hg qpop -a
+[vbraun@volker-desktop sage]$ hg qpop -a
 no patches applied
-[vbraun`@`volker-desktop sage]$ head -542 sage/modules/fg_pid/fgp_module.py | tail -1
+[vbraun@volker-desktop sage]$ head -542 sage/modules/fg_pid/fgp_module.py | tail -1
     def __call__(self, x, check=True):
-[vbraun`@`volker-desktop sage]$ 
+[vbraun@volker-desktop sage]$ 
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 5173: Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5173
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1512: write sage --> open_office converter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1512
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 William Stein wrote:
-> On Dec 14, 2007 9:28 AM, Ted Kosan <ted.kosan`@`gmail.com> wrote:
+> On Dec 14, 2007 9:28 AM, Ted Kosan <ted.kosan@gmail.com> wrote:
 >> Jason wrote:
 >>
 >>> What about writing an openoffice function that converts an expression to

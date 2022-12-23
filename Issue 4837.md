@@ -1,6 +1,6 @@
 # Issue 4837: implement random_element for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4837
 
 Original creator: AlexGhitza
 

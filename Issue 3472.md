@@ -1,6 +1,6 @@
 # Issue 3472: Running sage from a non-existent directory pretends to work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3472
 
 Original creator: craigcitro
 

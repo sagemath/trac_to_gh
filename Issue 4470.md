@@ -1,6 +1,6 @@
 # Issue 4470: Merge Jon Hanke's qudratic forms code into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4470
 
 Original creator: mabshoff
 

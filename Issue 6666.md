@@ -1,6 +1,6 @@
 # Issue 6666: [with patch] implement analytic modular symbols algorithm and cusp transformation matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6666
 
 Original creator: was
 

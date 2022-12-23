@@ -1,6 +1,6 @@
 # Issue 5412: bug in edit and set_edit_template
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5412
 
 Original creator: was
 

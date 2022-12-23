@@ -1,6 +1,6 @@
 # Issue 6195: [with patch, needs review] in symbolic Expression.math() return a dictionary with matched values of wildcards
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6195
 
 Original creator: burcin
 

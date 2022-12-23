@@ -1,6 +1,6 @@
 # Issue 9240: applying full_simplify() to gamma functions causes an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9240
 
 Original creator: tomc
 

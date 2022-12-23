@@ -1,6 +1,6 @@
 # Issue 3413: [with patch; needs review] sage-3.0.3.alpha2 -- endianess issue with time_series doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3413
 
 Original creator: was
 

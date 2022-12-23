@@ -1,6 +1,6 @@
 # Issue 3454: notebook -- email input box has to be filled in before the other input boxes are processed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3454
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 9837: Bugfix in WeylCharacterRing __call__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9838
 
 Original creator: bump
 

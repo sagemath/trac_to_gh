@@ -1,6 +1,6 @@
 # Issue 4065: plot3d takes "forever" to plot x^2*y
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4065
 
 Original creator: jwmerrill
 

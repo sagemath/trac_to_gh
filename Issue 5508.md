@@ -1,6 +1,6 @@
 # Issue 5508: [with patch, needs review] Improvements for relative number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5508
 
 Original creator: fwclarke
 

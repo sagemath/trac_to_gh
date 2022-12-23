@@ -1,6 +1,6 @@
 # Issue 5238: remove qsieve.spkg and replace it by mpQS (part of FLINT)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5238
 
 Original creator: mabshoff
 
@@ -57,12 +57,12 @@ Close as fixed:
 
 
 ```
-[mvngu`@`sage flint-1.5.0.p4]$ pwd
+[mvngu@sage flint-1.5.0.p4]$ pwd
 /dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/flint-1.5.0.p4
-[mvngu`@`sage flint-1.5.0.p4]$ find src/ | grep 'mpQS'
+[mvngu@sage flint-1.5.0.p4]$ find src/ | grep 'mpQS'
 src/QS/mpQS.h
 src/QS/mpQS.c
-[mvngu`@`sage flint-1.5.0.p4]$ find src/ | grep 'qsieve'
+[mvngu@sage flint-1.5.0.p4]$ find src/ | grep 'qsieve'
 <no-output>
 ```
 

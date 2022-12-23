@@ -1,6 +1,6 @@
 # Issue 3498: make numpy the backend for matrices over CDF and RDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3498
 
 Original creator: jason
 
@@ -627,7 +627,7 @@ Comment by mabshoff created at 2008-11-05 18:13:31
 The patch needs to be rebased - likely due to #799. 3.2.alpha2 should be out shortly, so I would suggest using that.
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/sage$ patch -p1 < trac_3498_part_1_numpy-RDF-CDF.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/sage$ patch -p1 < trac_3498_part_1_numpy-RDF-CDF.patch 
 patching file sage/ext/numpy.pxd
 patching file sage/matrix/change_ring.pyx
 patching file sage/matrix/constructor.py

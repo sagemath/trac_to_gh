@@ -1,6 +1,6 @@
 # Issue 3313: Add code to lift SL2(Z/NZ) to SL2(Z) (and for m not equal 2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3313
 
 Original creator: ncalexan
 

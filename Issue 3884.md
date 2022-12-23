@@ -1,6 +1,6 @@
 # Issue 3884: change banner in "sage -advanced"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3884
 
 Original creator: was
 
@@ -59,7 +59,7 @@ Comment by mabshoff created at 2008-08-22 23:40:51
 With the patch we now get (better formatting):
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.1$ ./sage -h
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.1$ ./sage -h
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
  Optional arguments:

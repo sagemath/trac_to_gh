@@ -1,6 +1,6 @@
 # Issue 1624: update jsmath to 3.4f
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1624
 
 Original creator: mabshoff
 

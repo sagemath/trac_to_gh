@@ -1,6 +1,6 @@
 # Issue 3919: Selector - do not inset a lone button
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3919
 
 Original creator: itolkov
 

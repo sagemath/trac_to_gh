@@ -1,6 +1,6 @@
 # Issue 2487: unused/broken p-adic morphism.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2487
 
 Original creator: gfurnish
 

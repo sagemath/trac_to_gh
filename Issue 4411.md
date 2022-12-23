@@ -1,6 +1,6 @@
 # Issue 4411: phc breaks on one-variable problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4411
 
 Original creator: mhampton
 
@@ -202,7 +202,7 @@ Comment by vbraun created at 2012-10-23 19:59:48
 I get the following doctest error on Sage-5.4.rc1, perhaps it has something to do with #13579?
 
 ```
-[vbraun`@`volker-desktop hg]$ sage -t -only-optional=phc --verbose devel/sage-main/sage/interfaces/phc.py
+[vbraun@volker-desktop hg]$ sage -t -only-optional=phc --verbose devel/sage-main/sage/interfaces/phc.py
 sage -t -only-optional=phc --verbose "devel/sage-main/sage/interfaces/phc.py"
 Trying:
     set_random_seed(0L)

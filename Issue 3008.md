@@ -1,6 +1,6 @@
 # Issue 3008: first cell in notebook is undeletable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3008
 
 Original creator: mhampton
 

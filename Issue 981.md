@@ -1,6 +1,6 @@
 # Issue 981: bug in the method conjugacy_classes_subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/981
 
 Original creator: wdj
 

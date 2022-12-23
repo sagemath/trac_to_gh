@@ -1,6 +1,6 @@
 # Issue 5285: Dyck Paths documentation problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5285
 
 Original creator: jbandlow
 

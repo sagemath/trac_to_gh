@@ -1,6 +1,6 @@
 # Issue 7790: Setting a default max/min bound when calling MixedIntegerLinearProgram.new_variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7790
 
 Original creator: ncohen
 

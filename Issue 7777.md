@@ -1,6 +1,6 @@
 # Issue 7777: Implement SymmetricFunctions(QQ).inject_shorthands()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7777
 
 Original creator: nthiery
 

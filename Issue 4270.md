@@ -1,6 +1,6 @@
 # Issue 4270: Add sage-combinat script and sage-combinat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4270
 
 Original creator: nthiery
 

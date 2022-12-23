@@ -1,6 +1,6 @@
 # Issue 5701: Remove Guava from standard Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5701
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 530: gmpz leak in Matrix_integer_dense__solve_iml (from matrix/strassen.pyx)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/530
 
 Original creator: mabshoff
 

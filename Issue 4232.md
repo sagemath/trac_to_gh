@@ -1,6 +1,6 @@
 # Issue 4232: #249 causes bug in importing large lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4232
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8842: sage notebook interacts: format exceptions nicely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8842
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  chapoton
 ```
 If I write a function in a cell of a notebook like:
 
-`@`interact
+@interact
 def foo(a = input_box(default=0, type=Integer)):
     # do something here
     pass

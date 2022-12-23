@@ -1,6 +1,6 @@
 # Issue 7074: cvxopt-0.9.p8 sends GNU options to Sun Fortran compiler and has bad C code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7074
 
 Original creator: drkirkby
 

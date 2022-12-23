@@ -1,6 +1,6 @@
 # Issue 2008: crap -- cython contains a stupid OSX file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2008
 
 Original creator: was
 

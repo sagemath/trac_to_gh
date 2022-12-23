@@ -1,6 +1,6 @@
 # Issue 7486: implement automatic definition of undefined variables in the Sage command line (ipython)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7486
 
 Original creator: was
 
@@ -76,7 +76,7 @@ in case anyone wants to take this further for Sage:
 ### modified file 'IPython/Shell.py'
 --- IPython/Shell.py    2009-04-14 20:12:02 +0000
 +++ IPython/Shell.py    2009-11-18 09:03:01 +0000
-`@``@` -1230,7 +1230,7 `@``@`
+@@ -1230,7 +1230,7 @@
 
 
  # This is the one which should be called by external code.
@@ -85,7 +85,7 @@ in case anyone wants to take this further for Sage:
     """Return a running shell instance, dealing with threading options.
 
     This is a factory function which will instantiate the proper IPython shell
-`@``@` -1238,7 +1238,7 `@``@`
+@@ -1238,7 +1238,7 @@
     different GUI toolkits require different thread handling details."""
 
     shell = _select_shell(sys.argv)

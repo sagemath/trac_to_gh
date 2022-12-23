@@ -1,6 +1,6 @@
 # Issue 6907: implicit_plot reports deprecation warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6907
 
 Original creator: john_perry
 

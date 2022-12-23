@@ -1,6 +1,6 @@
 # Issue 1616: Change asin to arcsin, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1616
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Dec 25, 2007 9:18 AM, David Joyner <wdjoyner`@`gmail.com> wrote:
+On Dec 25, 2007 9:18 AM, David Joyner <wdjoyner@gmail.com> wrote:
 >
 > Hi:
 >

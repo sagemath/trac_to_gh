@@ -1,6 +1,6 @@
 # Issue 9764: matrix2.pyx: replace "x < 1e-15" by "abs(x) < 1e-15"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9765
 
 Original creator: jhpalmieri
 

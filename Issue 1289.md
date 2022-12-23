@@ -1,6 +1,6 @@
 # Issue 1289: serious problems with how ceil and floor are computed symbolically
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1289
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6579: Error building 'modified sage library code' when including paripriv.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6579
 
 Original creator: drkirkby
 

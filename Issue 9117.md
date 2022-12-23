@@ -1,6 +1,6 @@
 # Issue 9117: allow Hill cipher to encrypt as MP or PM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9117
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 3899: massive unpickle problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3899
 
 Original creator: was
 

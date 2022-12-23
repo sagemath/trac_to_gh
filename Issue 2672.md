@@ -1,6 +1,6 @@
 # Issue 2672: Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2672
 
 Original creator: mabshoff
 

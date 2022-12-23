@@ -1,6 +1,6 @@
 # Issue 8383: should sigma(x) produce an error?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8383
 
 Original creator: zimmerma
 

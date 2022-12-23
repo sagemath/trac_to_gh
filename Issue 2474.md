@@ -1,6 +1,6 @@
 # Issue 2474: RealIntervalField should have a round method (maybe ComplexIntervalField should too)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2474
 
 Original creator: ncalexan
 

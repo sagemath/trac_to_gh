@@ -1,6 +1,6 @@
 # Issue 2214: DSage and memory leaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2214
 
 Original creator: robertwb
 

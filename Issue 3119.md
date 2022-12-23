@@ -1,6 +1,6 @@
 # Issue 3119: elliptic curves -- implement gens function for non-integral models
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3119
 
 Original creator: was
 
@@ -245,7 +245,7 @@ Comment by cremona created at 2008-06-20 20:33:29
 I applied all 4 patches to a fresh install of 3.0.3.rc0, which I believe is the same as 3.0.3.  I did not apply the eclib patch which I assumed had been already applied to 3.0.3 (if Michael reads this could he confirm?).  And there were no problems:
 
 ```
-john`@`ubuntu%sage -t /home/john/sage-3.0.3.rc0/devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py 
+john@ubuntu%sage -t /home/john/sage-3.0.3.rc0/devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py 
 sage -t  devel/sage-3119/sage/schemes/elliptic_curves/ell_rational_field.py
 	 [112.5 s]
 }}} 

@@ -1,6 +1,6 @@
 # Issue 466: -b is actually not an option for hg_sage.merge()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/466
 
 Original creator: pdehaye
 

@@ -1,6 +1,6 @@
 # Issue 7881: Make polynomials respect the _gcd framework so that they can use coercion in gcds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7881
 
 Original creator: robertwb
 

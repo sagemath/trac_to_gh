@@ -1,6 +1,6 @@
 # Issue 7502: lazy import module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7502
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 7999: SyntaxError when loading Sage 4.3.1.rc1 due to non-ASCII character
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7999
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5060: setup.py dependency checking detects unexpected dependencies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5060
 
 Original creator: sbarthelemy
 

@@ -1,6 +1,6 @@
 # Issue 5298: hg_sage.apply($URL) broken due to swith to trac 0.11.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5298
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7000: Move Sphinx-ify on-the-fly code to another module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7000
 
 Original creator: mpatel
 

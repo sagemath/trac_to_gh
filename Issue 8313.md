@@ -1,6 +1,6 @@
 # Issue 8313: Misplaced "`" in linear code construction documentation.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8313
 
 Original creator: hivert
 

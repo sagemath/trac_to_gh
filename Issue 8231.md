@@ -1,6 +1,6 @@
 # Issue 8231: Place cursor in new input cell in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8231
 
 Original creator: schymans
 

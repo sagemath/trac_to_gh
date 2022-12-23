@@ -1,6 +1,6 @@
 # Issue 4827: [with patch, needs review] add L-BFGS-B bound constraint solver to minimize_constraint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4827
 
 Original creator: schilly
 

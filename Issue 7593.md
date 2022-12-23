@@ -1,6 +1,6 @@
 # Issue 7593: Matching using LP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7593
 
 Original creator: ncohen
 
@@ -91,7 +91,7 @@ sage -t -optional "devel/sage/sage/graphs/graph.py
 gave rise to (in particular) the following failure
 
 ```
-wdj`@`wdj-virtualbox:~/sagefiles/sage-4.3.rc0$ ./sage -t -optional "devel/sage/sage/graphs/graph.py"
+wdj@wdj-virtualbox:~/sagefiles/sage-4.3.rc0$ ./sage -t -optional "devel/sage/sage/graphs/graph.py"
 sage -t -optional "devel/sage/sage/graphs/graph.py"         
 sh: kpsewhich: not found
 sh: kpsewhich: not found

@@ -1,6 +1,6 @@
 # Issue 5474: [with patch, needs review] delimiters for LaTeX representation of matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5474
 
 Original creator: jhpalmieri
 

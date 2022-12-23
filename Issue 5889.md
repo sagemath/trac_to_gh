@@ -1,6 +1,6 @@
 # Issue 5889: [with patch, needs review] random simplicial complexes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5889
 
 Original creator: jhpalmieri
 

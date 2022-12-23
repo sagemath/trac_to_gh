@@ -1,6 +1,6 @@
 # Issue 4077: notebook - ReactorNotRunning error consistently seen in sage-3.1.2.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4077
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 709: Add doctests to ensure that  scipy and cvxopt build correctly on all platforms.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/709
 
 Original creator: jkantor
 

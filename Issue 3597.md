@@ -1,6 +1,6 @@
 # Issue 3597: building sage on opensuse x86_64 fails with readline detection error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3597
 
 Original creator: was
 

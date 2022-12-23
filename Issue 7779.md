@@ -1,6 +1,6 @@
 # Issue 7779: typo in comment of Sage script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7779
 
 Original creator: mvngu
 

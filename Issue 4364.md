@@ -1,6 +1,6 @@
 # Issue 4364: major bug in singular polynomial GCD (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4364
 
 Original creator: was
 
@@ -38,9 +38,9 @@ big") at tools.c:38
 maxroot=25) at lzz_p.c:15
 #6  0xb79a280e in zz_pContext (this=0xbfa40744, p=1073741827,
 maxroot=25) at lzz_p.c:157
-#7  0xb47649c5 in gcd_poly_p (f=`@`0xbfa40908, g=`@`0xbfa40904) at cf_gcd.cc:852
-#8  0xb47660b8 in gcd_poly (f=`@`0xbfa40b4c, g=`@`0xbfa40b50) at cf_gcd.cc:538
-#9  0xb4766ca3 in gcd (f=`@`0xbfa40b4c, g=`@`0xbfa40b50) at cf_gcd.cc:776
+#7  0xb47649c5 in gcd_poly_p (f=@0xbfa40908, g=@0xbfa40904) at cf_gcd.cc:852
+#8  0xb47660b8 in gcd_poly (f=@0xbfa40b4c, g=@0xbfa40b50) at cf_gcd.cc:538
+#9  0xb4766ca3 in gcd (f=@0xbfa40b4c, g=@0xbfa40b50) at cf_gcd.cc:776
 #10 0xb45dd1f1 in singclap_gcd (f=0xb445e220, g=0xb445e324) at clapsing.cc:230
 #11 0xb4849286 in
 __pyx_pf_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular_gcd

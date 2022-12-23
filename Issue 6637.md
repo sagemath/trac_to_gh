@@ -1,6 +1,6 @@
 # Issue 6637: Follow up on #6000: standardize the interface to TransitiveIdeal and friends
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6637
 
 Original creator: nthiery
 

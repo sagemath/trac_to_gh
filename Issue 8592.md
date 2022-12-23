@@ -1,6 +1,6 @@
 # Issue 8592: logstart and load don't work as said in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8592
 
 Original creator: mmeulien
 

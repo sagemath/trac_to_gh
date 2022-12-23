@@ -1,6 +1,6 @@
 # Issue 6128: [with patch; needs review] Bug - sage-cleaner failed due to NULLs in spawned-processes files written by cleaner.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6128
 
 Original creator: was
 
@@ -31,7 +31,7 @@ Patch:
 (against 4.0rc0)
 
 # HG changeset patch
-# User Anthony David <adavid`@`adavid.com.au>
+# User Anthony David <adavid@adavid.com.au>
 # Date 1243176398 -36000
 # Node ID 958178a11b9e809788f1eda0cc29107c456a1bbe
 # Parent  b25ac645ae77e49db250243280eab38c2431937a
@@ -41,7 +41,7 @@ cleaner
 diff -r b25ac645ae77 -r 958178a11b9e sage/interfaces/cleaner.py
 --- a/sage/interfaces/cleaner.py Thu May 21 07:10:11 2009 -0700
 +++ b/sage/interfaces/cleaner.py Mon May 25 00:46:38 2009 +1000
-`@``@` -28,6 +28,8 `@``@`
+@@ -28,6 +28,8 @@
             return
         o = open(F,'w')
     o.write('%s %s\n'%(pid, cmd))
@@ -87,7 +87,7 @@ defining the problem
 Bug:
 
 
-anthonyd`@`carbonate:~/sage-4.0.rc0$ ./sage
+anthonyd@carbonate:~/sage-4.0.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 starting the cleaner
@@ -166,7 +166,7 @@ Tested OK on i686 Debian 5.0
 
 ```
 # HG changeset patch
-# User Anthony David <adavid`@`adavid.com.au>
+# User Anthony David <adavid@adavid.com.au>
 # Date 1243893998 -36000
 # Node ID 82f9583a45eee9dae4ec4c8cde865e96c392396c
 # Parent  fd89fee664d87b20ab77bb6e248d9a71c17affe4
@@ -175,7 +175,7 @@ Improve write assurance of spawned_processes files by cleaner
 diff -r fd89fee664d8 -r 82f9583a45ee sage/interfaces/cleaner.py
 --- a/sage/interfaces/cleaner.py	Fri May 29 21:41:28 2009 -0700
 +++ b/sage/interfaces/cleaner.py	Tue Jun 02 08:06:38 2009 +1000
-`@``@` -28,6 +28,8 `@``@`
+@@ -28,6 +28,8 @@
              return
          o = open(F,'w')
      o.write('%s %s\n'%(pid, cmd))

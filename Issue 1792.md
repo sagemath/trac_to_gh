@@ -1,6 +1,6 @@
 # Issue 1792: Make Install problem with DESTDIR/sage script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1792
 
 Original creator: pgrinber
 

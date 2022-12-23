@@ -1,6 +1,6 @@
 # Issue 7250: cached_function broken for builtin functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7250
 
 Original creator: nthiery
 

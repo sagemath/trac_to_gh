@@ -1,6 +1,6 @@
 # Issue 4549: New method horizontal_border_strip using new IntegerListsLex combinatorial class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4549
 
 Original creator: nthiery
 

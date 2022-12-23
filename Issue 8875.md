@@ -1,6 +1,6 @@
 # Issue 8875: Problem with Set created from iterator.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8875
 
 Original creator: mrobado
 

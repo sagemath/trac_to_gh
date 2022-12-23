@@ -1,6 +1,6 @@
 # Issue 7131: libcliquer always builds 32-bit libraries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7131
 
 Original creator: drkirkby
 
@@ -51,9 +51,9 @@ At some point this must have been fixed:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ find . -name 'libcl*'
+drkirkby@hawk:~/sage-4.4.4.alpha0$ find . -name 'libcl*'
 ./local/lib/libcliquer.so
-drkirkby`@`hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so
+drkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so
 ./local/lib/libcliquer.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
 

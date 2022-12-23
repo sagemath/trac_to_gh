@@ -1,6 +1,6 @@
 # Issue 1671: doctest: fix shapes.pyx fallout from #1666
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1671
 
 Original creator: mabshoff
 

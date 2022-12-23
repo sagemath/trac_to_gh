@@ -1,6 +1,6 @@
 # Issue 7443: List all categories in the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7443
 
 Original creator: nthiery
 

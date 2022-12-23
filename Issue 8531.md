@@ -1,6 +1,6 @@
 # Issue 8531: Optional package  ace-5.0.p0 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8531
 
 Original creator: drkirkby
 

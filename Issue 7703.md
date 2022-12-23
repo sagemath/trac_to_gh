@@ -1,6 +1,6 @@
 # Issue 7703: S-units, S-class groups, and selmer groups of etale algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7703
 
 Original creator: rlm
 

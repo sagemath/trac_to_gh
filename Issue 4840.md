@@ -1,6 +1,6 @@
 # Issue 4840: FLINT: call the stack cleanup function at exit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4840
 
 Original creator: mabshoff
 
@@ -73,7 +73,7 @@ Comment by mabshoff created at 2009-01-24 14:09:05
 This patch does not apply to my tree? I am also curious why this is a git style patch considering that the history is messed up anyway with git style patches:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha2/devel/sage$ hg import trac_4840-flint_free.patch 
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2/devel/sage$ hg import trac_4840-flint_free.patch 
 applying trac_4840-flint_free.patch
 unable to find 'sage/libs/flint/flint.pxi' for patching
 1 out of 1 hunks FAILED -- saving rejects to file sage/libs/flint/flint.pxi.rej

@@ -1,6 +1,6 @@
 # Issue 7052: Chromatic polynomial calculated incorrectly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7052
 
 Original creator: AJonsson
 

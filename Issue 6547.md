@@ -1,6 +1,6 @@
 # Issue 6547: deprecate the use of all.py instead of __init__.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6547
 
 Original creator: malb
 
@@ -27,11 +27,11 @@ One thing that we need to watch out for is importing an object into `foo/__init_
 
 
 ```
-mike`@`mike-laptop:~/src/test_init$ ls foo
+mike@mike-laptop:~/src/test_init$ ls foo
 bar.py  bar.pyc  __init__.py  __init__.pyc
-mike`@`mike-laptop:~/src/test_init$ cat foo/__init__.py
+mike@mike-laptop:~/src/test_init$ cat foo/__init__.py
 from bar import bar
-mike`@`mike-laptop:~/src/test_init$ cat foo/bar.py
+mike@mike-laptop:~/src/test_init$ cat foo/bar.py
 bar = 200
 ```
 

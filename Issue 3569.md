@@ -1,6 +1,6 @@
 # Issue 3569: optimize import of sage.dsage.interface.dsage_interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3569
 
 Original creator: was
 

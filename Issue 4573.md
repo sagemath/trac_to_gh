@@ -1,6 +1,6 @@
 # Issue 4573: Permutation not callable, but PermutationGroupElement is.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4573
 
 Original creator: saliola
 

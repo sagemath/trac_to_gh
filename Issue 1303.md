@@ -1,6 +1,6 @@
 # Issue 1303: Cayley graph class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1303
 
 Original creator: jason
 
@@ -63,10 +63,10 @@ This is a short conversation about ticket #1303 I had with Robert Miller, who co
 Nathann
 
 ---------- Forwarded message ----------
-From: Robert Miller <rlm`@`rlmiller.org>
+From: Robert Miller <rlm@rlmiller.org>
 Date: 2009/9/2
 Subject: Re: Cayley Graphs in Sage
-To: Nathann Cohen <nathann.cohen`@`gmail.com>
+To: Nathann Cohen <nathann.cohen@gmail.com>
 
 
 Nathann,
@@ -76,7 +76,7 @@ essentially happy with what we already have. Cayley graphs are more of
 a way of constructing graphs than an object on their own, i.e. a
 *constructor,* which is what we already have.
 
-On Sat, Aug 22, 2009 at 9:34 AM, Nathann Cohen<nathann.cohen`@`gmail.com> wrote:
+On Sat, Aug 22, 2009 at 9:34 AM, Nathann Cohen<nathann.cohen@gmail.com> wrote:
 > Hello !!!
 >
 > I am contacting you about the following ticket :

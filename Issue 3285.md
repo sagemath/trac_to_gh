@@ -1,6 +1,6 @@
 # Issue 3285: segfault in binary_code.pyx on 32-bit linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3285
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: rlm
 
 
 ```
-was`@`ubuntu:~/build/sage-3.0.2.rc0$ ./sage -t --gdb devel/sage/sage/coding/binary_code.pyx
+was@ubuntu:~/build/sage-3.0.2.rc0$ ./sage -t --gdb devel/sage/sage/coding/binary_code.pyx
 sage -t --gdb devel/sage/sage/coding/binary_code.pyx        ********************************************************************************
 Type r at the (gdb) prompt to run the doctests.
 Type bt if there is a crash to see a traceback.

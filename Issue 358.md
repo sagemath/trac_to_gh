@@ -1,6 +1,6 @@
 # Issue 358: padic_height_pairing_matrix computes too many heights
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/358
 
 Original creator: dmharvey
 

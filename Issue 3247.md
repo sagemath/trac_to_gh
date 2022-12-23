@@ -1,6 +1,6 @@
 # Issue 3247: [with patch, needs review] add skew and generalized Hall-Littlewood creation operators to symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3247
 
 Original creator: mhansen
 

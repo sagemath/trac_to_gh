@@ -1,6 +1,6 @@
 # Issue 2713: [with patch, needs review] sage-doctest applies backslash handling to expected outputs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2713
 
 Original creator: cwitty
 

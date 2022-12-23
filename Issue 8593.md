@@ -1,6 +1,6 @@
 # Issue 8593: Add Lehmer code of Permutation as an infinite enumerated set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8593
 
 Original creator: nborie
 

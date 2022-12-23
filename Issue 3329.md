@@ -1,6 +1,6 @@
 # Issue 3329: attempting to convert relative number field elements to Singular should fail quickly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3329
 
 Original creator: cwitty
 

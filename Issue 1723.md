@@ -1,6 +1,6 @@
 # Issue 1723: better image support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1723
 
 Original creator: boothby
 

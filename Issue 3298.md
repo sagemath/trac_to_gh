@@ -1,6 +1,6 @@
 # Issue 3298: Cython warnings for PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3298
 
 Original creator: malb
 

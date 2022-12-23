@@ -1,6 +1,6 @@
 # Issue 6371: implement Riemann theta functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6371
 
 Original creator: ncalexan
 

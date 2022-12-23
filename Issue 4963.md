@@ -1,6 +1,6 @@
 # Issue 4963: Make a screen-full of whitespace at the bottom of the notebook cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4963
 
 Original creator: jason
 

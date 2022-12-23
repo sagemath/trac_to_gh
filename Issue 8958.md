@@ -1,6 +1,6 @@
 # Issue 8958: Extend/clarify/normalize the conventions for Python/Cython docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8958
 
 Original creator: leif
 

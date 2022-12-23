@@ -1,6 +1,6 @@
 # Issue 1787: Apply row-major GEMM major ATLAS errata to codebase
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1787
 
 Original creator: mabshoff
 

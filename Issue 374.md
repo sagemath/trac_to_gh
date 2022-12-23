@@ -1,6 +1,6 @@
 # Issue 374: Bug in factorization of polynomial over number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/374
 
 Original creator: was
 

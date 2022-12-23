@@ -1,6 +1,6 @@
 # Issue 5293: tab-completion menu creates two copies of the choice made
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5293
 
 Original creator: mhampton
 

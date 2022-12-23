@@ -1,6 +1,6 @@
 # Issue 5596: [with patch, needs review] refactor coercion to catch fewer exceptions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5596
 
 Original creator: robertwb
 
@@ -25,7 +25,7 @@ cd "/home/mvngu/scratch/sage-3.4/devel/sage" && hg status
 cd "/home/mvngu/scratch/sage-3.4/devel/sage" && hg status
 cd "/home/mvngu/scratch/sage-3.4/devel/sage" && hg import   "/home/mvngu/patch/5596/5596-coerce-exceptions.patch"
 applying /home/mvngu/patch/5596/5596-coerce-exceptions.patch
-abort: malformed patch a/sage/structure/parent_old.pyx `@``@` -602,39 +496,4 `@``@`
+abort: malformed patch a/sage/structure/parent_old.pyx @@ -602,39 +496,4 @@
 ```
 
 
@@ -42,7 +42,7 @@ patching file sage/rings/infinity.py
 Hunk #1 FAILED at 87
 Hunk #2 FAILED at 100
 2 out of 2 hunks FAILED -- saving rejects to file sage/rings/infinity.py.rej
-abort: malformed patch a/sage/structure/parent_old.pyx `@``@` -602,39 +496,4 `@``@`
+abort: malformed patch a/sage/structure/parent_old.pyx @@ -602,39 +496,4 @@
 
 ```
 

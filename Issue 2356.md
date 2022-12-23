@@ -1,6 +1,6 @@
 # Issue 2356: Bug in discrete_log_generic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2356
 
 Original creator: cremona
 

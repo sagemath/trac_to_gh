@@ -1,6 +1,6 @@
 # Issue 8990: update MPIR 1.2.2 license information as requested by upstream
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8990
 
 Original creator: GeorgSWeber
 
@@ -13,7 +13,7 @@ As description, let me just post the diff of the new SPKG.txt of the new mpir-1.
 ```
 --- a/SPKG.txt  Tue Jan 05 20:49:53 2010 +0000
 +++ b/SPKG.txt  Tue May 18 23:35:30 2010 +0200
-`@``@` -4,13 +4,14 `@``@`
+@@ -4,13 +4,14 @@
  
  MPIR is an open source multiprecision integer library derived from
  version 4.2.1 of the GMP (GNU Multi Precision) project (which was
@@ -30,7 +30,7 @@ As description, let me just post the diff of the new SPKG.txt of the new mpir-1.
  
  == SPKG Maintainers ==
  
-`@``@` -26,6 +27,20 `@``@`
+@@ -26,6 +27,20 @@
  
  == Changelog == 
  

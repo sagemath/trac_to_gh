@@ -1,6 +1,6 @@
 # Issue 2432: Add support for Macdonald polynomials, LLT polynomials, Jack polynomials, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2432
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5287: [with patch, needs review] improve mq.SR usability and performance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5287
 
 Original creator: malb
 
@@ -77,7 +77,7 @@ outputs a *million page* exception!
  * I'm glad you're fixing your email address. However, even after this patch there are at least 30 other places in the sage core library with your old address:
 
 ```
-sage: search_src('malb`@`informatik.uni-bremen.de')
+sage: search_src('malb@informatik.uni-bremen.de')
 over 30 lines output
 ```
 

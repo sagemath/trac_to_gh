@@ -1,6 +1,6 @@
 # Issue 9154: boehm_gc (still, still) fails to build on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9154
 
 Original creator: was
 

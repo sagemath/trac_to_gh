@@ -1,6 +1,6 @@
 # Issue 7095: os x 10.6 port -- numerous mysterious errors caused by weird "abort trap" issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7095
 
 Original creator: was
 
@@ -12,7 +12,7 @@ After testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 
 
 
 ```
-wstein`@`bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l
+wstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l
       12
 ```
 
@@ -57,7 +57,7 @@ Program received signal SIGABRT, Aborted.
 #6  0x000000010742c4cb in ~auto_ptr [inlined] () at new_allocator.h:123
 #7  0x000000010742c4cb in ~vector [inlined] () at new_allocator.h:593
 #8  0x000000010742c4cb in ~_Vector_base [inlined] () at /usr/include/c++/4.2.1/memory:259
-#9  0x000000010742c4cb in GiNaC::container<std::vector>::subs (this=0x10b010e70, m=`@`0x7fff5fbfbdb0, options=0) at new_allocator.h:271
+#9  0x000000010742c4cb in GiNaC::container<std::vector>::subs (this=0x10b010e70, m=@0x7fff5fbfbdb0, options=0) at new_allocator.h:271
 #10 0x00000001077b5923 in GiNaC::ex::subs () at /Users/was/build/sage-4.1.2.rc0/local/include/pynac/ex.h:827
 #11 0x00000001077b5923 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=0x10b1a9638, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=0x10b059480) at ex.h:13728
 #12 0x0000000100006fd2 in PyObject_Call (func=0x10b18ca28, arg=0x10b1b0c50, kw=0x0) at Objects/abstract.c:2492
@@ -101,7 +101,7 @@ sage: sinh(x).subs({x: 2.2})
 sage: sinh(x).subs({x: RIF(2.2)})
 4.457105170535895?
 sage: sinh(x).subs({x: CIF(2.2)})
-/Users/mafwc/sage-4.1.2.rc0/local/bin/sage-sage: line 202:  2260 Abort trap              sage-ipython "$`@`" -i
+/Users/mafwc/sage-4.1.2.rc0/local/bin/sage-sage: line 202:  2260 Abort trap              sage-ipython "$@" -i
 ```
 
 and similarly for cosh, tanh and several other hyperbolic functions.  But
@@ -192,9 +192,9 @@ No, the problem isn't CIF, since:
 
 ```
 sage: factorial(CC(1.0))
-^P/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67490 Abort trap              sage-ipython "$`@`" -i
+^P/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67490 Abort trap              sage-ipython "$@" -i
 sage: factorial(CDF(1.0))
-/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67569 Abort trap              sage-ipython "$`@`" -i
+/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67569 Abort trap              sage-ipython "$@" -i
 
 ```
 
@@ -321,7 +321,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> plt.plot([1,2,3])
 [<matplotlib.lines.Line2D object at 0x101eb2490>]
 >>> plt.savefig('a.pdf')
-/Applications/sage/local/bin/sage-sage: line 356: 62648 Abort trap              python "$`@`"
+/Applications/sage/local/bin/sage-sage: line 356: 62648 Abort trap              python "$@"
 ```
 
 This seems interesting; does it help to have a failure coming from pure Python?
@@ -412,7 +412,7 @@ cd "/Users/was/build/gcc/gcc-4.4.2/sage-4.3/devel/sage" && hg diff  | less
 diff -r 21efb0b3fc47 sage/all.py
 --- a/sage/all.py       Thu Dec 24 09:44:02 2009 -0800
 +++ b/sage/all.py       Tue Jan 05 11:44:26 2010 -0800
-`@``@` -41,7 +41,7 `@``@`
+@@ -41,7 +41,7 @@
  #Import twisted.persisted.styles in order to allow things like
  #modules to be pickles
  
@@ -436,7 +436,7 @@ sage: factorial(CDF(1.0))
 sage: sinh(x).subs({x:CIF(2.2)})
                                                                          
 /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 24620 Abort trap              sage-
-ipython "$`@`" -i       
+ipython "$@" -i       
 ```
 
 
@@ -456,7 +456,7 @@ Program received signal SIGABRT, Aborted.
 #5  0x000000010733a072 in GiNaC::ex::construct_from_basic ()                                              
 #6  0x0000000107393ce6 in GiNaC::function::thiscontainer ()                                               
 #7  0x000000010730f24f in GiNaC::container<std::vector>::subs (this=<value temporarily unavailable, due to
- optimizations>, m=`@`0x7fff5fbfd270, options=0) at container.h:591                                         
+ optimizations>, m=@0x7fff5fbfd270, options=0) at container.h:591                                         
 #8  0x0000000107661b70 in GiNaC::ptr<GiNaC::basic>::operator= () at ex.h:827                              
 #9  operator= [inlined] () at /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/include/pynac/ptr.h:75        
 #10 0x0000000107661b70 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=<val
@@ -472,7 +472,7 @@ Also:
 ```
 sage: plot(sin)                                                                                           
 /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 25006 Abort trap              sage-
-ipython "$`@`" -i 
+ipython "$@" -i 
 ```
 
 
@@ -507,7 +507,7 @@ sage: sys.maxint
 9223372036854775807
 sage: sage: sinh(x).subs({x:CIF(2.2)})
 /Applications/sage_builds/sage-4.3.1.alpha0-llvm/local/bin/sage-sage: line 206: 89942 Abort trap
-sage-ipython "$`@`" -i
+sage-ipython "$@" -i
 ```
 
 
@@ -677,17 +677,17 @@ I think the issue is $HOME/.matplotlib, which has a font cache.  On bsd.math if 
 ```
 sage: plot(sin)                                                                                           
 /Users/was/build/sage-4.3.1.alpha0/local/bin/sage-sage: line 206: 80224 Abort trap              sage-ipyth
-on "$`@`" -i                                                                                                
-wstein`@`bsd:~/build/sage-4.3.1.alpha0$ 
+on "$@" -i                                                                                                
+wstein@bsd:~/build/sage-4.3.1.alpha0$ 
 ```
 
 
 If I put the font cache file back then plotting works fine again:
 
 ```
-wstein`@`bsd:~/build/sage-4.3.1.alpha0$ rm -rf ~/.matplotlib
-wstein`@`bsd:~/build/sage-4.3.1.alpha0$ mv ~/.matplotlib-x ~/.matplotlib
-wstein`@`bsd:~/build/sage-4.3.1.alpha0$ ./sage
+wstein@bsd:~/build/sage-4.3.1.alpha0$ rm -rf ~/.matplotlib
+wstein@bsd:~/build/sage-4.3.1.alpha0$ mv ~/.matplotlib-x ~/.matplotlib
+wstein@bsd:~/build/sage-4.3.1.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

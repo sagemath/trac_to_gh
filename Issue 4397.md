@@ -1,6 +1,6 @@
 # Issue 4397: Sage 3.1.4: optional doctest failure in sage/rings/number_field/number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4397
 
 Original creator: mabshoff
 
@@ -113,7 +113,7 @@ Comment by mabshoff created at 2008-10-30 23:59:31
 I think the solution here are the two extcode patches that were missing from #2171. With those two patches applied and the database_gap.spkg installed I get
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -long -optional devel/sage/sage/rings/number_field/number_field.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -long -optional devel/sage/sage/rings/number_field/number_field.py
 sage -t -long -optional devel/sage/sage/rings/number_field/number_field.py
   ***   Warning: large Minkowski bound: certification will be VERY long.
   ***   Warning: large Minkowski bound: certification will be VERY long.

@@ -1,6 +1,6 @@
 # Issue 3392: upgrade matplotlib to 0.98.0 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3392
 
 Original creator: mabshoff
 

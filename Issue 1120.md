@@ -1,6 +1,6 @@
 # Issue 1120: [with patch] speed up point counting for elliptic curves over GF(p^n) if coefficients are in GF(p)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1120
 
 Original creator: malb
 
@@ -57,7 +57,7 @@ Merged in 2.8.13.alpha1
 Applied with slight fuzz:
 
 ```
-mabshoff`@`sage:$hg import ell_finite_field_order.patch
+mabshoff@sage:$hg import ell_finite_field_order.patch
 applying ell_finite_field_order.patch
 patching file sage/schemes/elliptic_curves/ell_finite_field.py
 Hunk #4 succeeded at 330 with fuzz 1 (offset 0 lines).

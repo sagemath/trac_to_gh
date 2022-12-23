@@ -1,6 +1,6 @@
 # Issue 9131: sage-4.4.3.alpha2: OS X 10.4 PPC -- readline fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9131
 
 Original creator: was
 

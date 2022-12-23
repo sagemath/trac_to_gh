@@ -1,6 +1,6 @@
 # Issue 2298: [with patch, needs review] implement a way to compute a number field containing given algebraic numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2298
 
 Original creator: cwitty
 

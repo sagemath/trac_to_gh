@@ -1,6 +1,6 @@
 # Issue 360: Port Cremona's implementation of elliptic curve height bounds to SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/360
 
 Original creator: was
 

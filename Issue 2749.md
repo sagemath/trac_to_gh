@@ -1,6 +1,6 @@
 # Issue 2749: [with spkg, not ready for review] Upgrade to FLINT-1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2749
 
 Original creator: boothby
 

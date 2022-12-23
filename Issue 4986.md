@@ -1,6 +1,6 @@
 # Issue 4986: import audit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4986
 
 Original creator: robertwb
 

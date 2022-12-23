@@ -1,6 +1,6 @@
 # Issue 1785: bug in creating points on elliptic curves over extension fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1785
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  alexghitza
 ```
 
 
-On Jan 15, 2008 10:25 AM, John Cremona <john.cremona`@`gmail.com> wrote:
+On Jan 15, 2008 10:25 AM, John Cremona <john.cremona@gmail.com> wrote:
 > 
 > I like Robert's suggestion.  If the user wants n independent generic
 > points, construct a large enough field (transcendence degree n) to

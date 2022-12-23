@@ -1,6 +1,6 @@
 # Issue 3188: add 64 bit OSX build support to mpfi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3188
 
 Original creator: mabshoff
 

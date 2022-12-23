@@ -1,6 +1,6 @@
 # Issue 7081: sage -c "..." runs from the local/bin/ directory.  ugh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7081
 
 Original creator: was
 

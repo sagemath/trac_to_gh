@@ -1,6 +1,6 @@
 # Issue 4445: is_isomorphic throws an error when the graph is compared to itself
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4445
 
 Original creator: jason
 

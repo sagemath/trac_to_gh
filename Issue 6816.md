@@ -1,6 +1,6 @@
 # Issue 6816: sage/maxima hang when doing an indefinite integral
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6816
 
 Original creator: was
 

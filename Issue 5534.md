@@ -1,6 +1,6 @@
 # Issue 5534: sage.combinat.subword.smallest_positions modifying its input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5534
 
 Original creator: nthiery
 

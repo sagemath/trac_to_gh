@@ -1,6 +1,6 @@
 # Issue 727: find rational points on ternary quadratic forms -- volunteer needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/727
 
 Original creator: was
 
@@ -12,9 +12,9 @@ CC:  ncalexan justin mstreng rlm pbruin
 
 
 ```
-John Cremona <john.cremona`@`gmail.com> 		 hide details	 1:37 am (2 minutes ago) 
-	reply-to		sage-support`@`googlegroups.com	 
-	to		sage-support`@`googlegroups.com	 
+John Cremona <john.cremona@gmail.com> 		 hide details	 1:37 am (2 minutes ago) 
+	reply-to		sage-support@googlegroups.com	 
+	to		sage-support@googlegroups.com	 
 	date		Sep 21, 2007 1:37 AM	 
 	subject		[sage-support] Re: rational solutions to a bivariate polynomial	 
 	mailed-by		googlegroups.com	 

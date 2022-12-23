@@ -1,6 +1,6 @@
 # Issue 4668: libSingular's header have too tight permissions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4668
 
 Original creator: mabshoff
 

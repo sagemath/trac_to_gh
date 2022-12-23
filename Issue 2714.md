@@ -1,6 +1,6 @@
 # Issue 2714: [with patch, needs review] many interfaces have gp-specific code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2714
 
 Original creator: cwitty
 

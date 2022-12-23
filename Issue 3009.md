@@ -1,6 +1,6 @@
 # Issue 3009: remove spaces after continuation characters "\"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3009
 
 Original creator: mabshoff
 

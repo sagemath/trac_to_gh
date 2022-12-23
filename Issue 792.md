@@ -1,6 +1,6 @@
 # Issue 792: Problem creating element in module over QQ[x]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/792
 
 Original creator: justin
 

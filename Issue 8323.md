@@ -1,6 +1,6 @@
 # Issue 8323: The variable "name" is predefined in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8323
 
 Original creator: roed
 

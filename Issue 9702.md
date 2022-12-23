@@ -1,6 +1,6 @@
 # Issue 9702: Matching polynomials for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9702
 
 Original creator: rlm
 

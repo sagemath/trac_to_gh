@@ -1,6 +1,6 @@
 # Issue 8225: %time now hugely broken in sagenb-0.7.4 (sage-4.3.2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8225
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti`@`gmail.com> wrote:
+On Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:
 > Dear all,
 >
 > Cells starting with "%time" stopped working with 4.3.2.  (It works

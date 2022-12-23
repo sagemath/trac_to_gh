@@ -1,6 +1,6 @@
 # Issue 7147: Change settings for INCLUDE_MPFR_PATCH from "1"  or "0" to "yes" or "no"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7147
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 3378: [with patch, needs review] graphs.nauty_geng fails due to missing imports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3378
 
 Original creator: mhansen
 

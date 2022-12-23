@@ -1,6 +1,6 @@
 # Issue 5301: In sage-3.3.rc2, doing sage -t -long "devel/sage/sage/plot/plot.py" causing a matplotlib GUI window to popup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5301
 
 Original creator: was
 

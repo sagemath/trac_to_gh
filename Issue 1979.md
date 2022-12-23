@@ -1,6 +1,6 @@
 # Issue 1979: doctest fall out from #740 in tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1979
 
 Original creator: mabshoff
 

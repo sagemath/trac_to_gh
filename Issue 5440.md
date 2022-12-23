@@ -1,6 +1,6 @@
 # Issue 5440: Failure to restart %magma in notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5440
 
 Original creator: kohel
 

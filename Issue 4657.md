@@ -1,6 +1,6 @@
 # Issue 4657: OSXL: gnuplot doesn't start due to dreaded libpng conflict
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4657
 
 Original creator: mabshoff
 

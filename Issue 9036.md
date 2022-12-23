@@ -1,6 +1,6 @@
 # Issue 9036: Graph.canonical_label(certify=True, edge_labels=True) returns a name error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9036
 
 Original creator: stumpc5
 

@@ -1,6 +1,6 @@
 # Issue 3244: [with patch, needs review] add support for inner plethysms of symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3244
 
 Original creator: mhansen
 

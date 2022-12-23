@@ -1,6 +1,6 @@
 # Issue 992: Need an extra "sage -b" after an upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/992
 
 Original creator: was
 

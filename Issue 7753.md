@@ -1,6 +1,6 @@
 # Issue 7753: Coxeter groups: more Bruhat and weak order features
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7753
 
 Original creator: nthiery
 

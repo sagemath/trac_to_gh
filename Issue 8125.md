@@ -1,6 +1,6 @@
 # Issue 8125: problem with "text"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8125
 
 Original creator: jhpalmieri
 

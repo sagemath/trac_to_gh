@@ -1,6 +1,6 @@
 # Issue 5011: [with patch, needs review] Solaris: fix get_memory_usage() to use top
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5011
 
 Original creator: mabshoff
 

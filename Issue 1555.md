@@ -1,6 +1,6 @@
 # Issue 1555: [with patch] typos in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1555
 
 Original creator: was
 

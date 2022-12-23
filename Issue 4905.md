@@ -1,6 +1,6 @@
 # Issue 4905: convert sage.coding.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4905
 
 Original creator: mhansen
 

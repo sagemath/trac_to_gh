@@ -1,6 +1,6 @@
 # Issue 1092: small memleaks exposed by ntl_ZZ_pE (from 2.8.12.alpha0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1092
 
 Original creator: mabshoff
 

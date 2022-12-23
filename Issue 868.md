@@ -1,6 +1,6 @@
 # Issue 868: [with patch] graphs: upgrade networkx to 0.35.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/868
 
 Original creator: jason
 

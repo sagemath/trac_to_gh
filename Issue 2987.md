@@ -1,6 +1,6 @@
 # Issue 2987: [with patch; needs review] Debian build support for zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2987
 
 Original creator: tabbott
 

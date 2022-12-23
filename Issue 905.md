@@ -1,6 +1,6 @@
 # Issue 905: update the version of ipython included in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/905
 
 Original creator: was
 

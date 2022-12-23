@@ -1,6 +1,6 @@
 # Issue 8191: Add iconv need for Solaris, and possibly Cygwin too.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8191
 
 Original creator: drkirkby
 
@@ -302,7 +302,7 @@ Attachment
 The iconv spkg installs a binary called "iconv" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:
 
 ```
-[mvngu`@`sage bin]$ hg st
+[mvngu@sage bin]$ hg st
 ? iconv
 ```
 

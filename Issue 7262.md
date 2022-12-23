@@ -1,6 +1,6 @@
 # Issue 7262: Have multiplcation_by_m() return an EllipticCurveIsogeny object
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7262
 
 Original creator: wuthrich
 

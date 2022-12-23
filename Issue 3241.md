@@ -1,6 +1,6 @@
 # Issue 3241: [with patch; needs review] cygwin -- new rubiks spkg that builds on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3241
 
 Original creator: was
 

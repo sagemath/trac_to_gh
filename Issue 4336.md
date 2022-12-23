@@ -1,6 +1,6 @@
 # Issue 4336: [with suggested solution] Bug in handling attached pyx-files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4336
 
 Original creator: SimonKing
 

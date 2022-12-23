@@ -1,6 +1,6 @@
 # Issue 9684: Make use of _tidy_model() optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9684
 
 Original creator: arminstraub
 

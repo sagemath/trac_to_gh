@@ -1,6 +1,6 @@
 # Issue 1361: reimplement graph generation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1361
 
 Original creator: rlm
 

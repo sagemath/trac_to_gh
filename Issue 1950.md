@@ -1,6 +1,6 @@
 # Issue 1950: When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1950
 
 Original creator: was
 

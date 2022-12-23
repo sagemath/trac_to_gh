@@ -1,6 +1,6 @@
 # Issue 3199: fix 64 bit OSX build support for zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3199
 
 Original creator: mabshoff
 

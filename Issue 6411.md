@@ -1,6 +1,6 @@
 # Issue 6411: sdist makes sage unable to run without building
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6411
 
 Original creator: rlm
 

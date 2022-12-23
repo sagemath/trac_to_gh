@@ -1,6 +1,6 @@
 # Issue 6227: Remove python_* files in ext directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6227
 
 Original creator: was
 

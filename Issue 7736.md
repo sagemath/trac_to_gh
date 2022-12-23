@@ -1,6 +1,6 @@
 # Issue 7736: factor returns a reducible factor,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7736
 
 Original creator: syazdani
 

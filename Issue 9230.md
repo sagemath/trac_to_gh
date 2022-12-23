@@ -1,6 +1,6 @@
 # Issue 9230: Broken docstrings in Travelling Salesman Problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9230
 
 Original creator: ncohen
 

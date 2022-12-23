@@ -1,6 +1,6 @@
 # Issue 163: plot hypergeometric_U fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/163
 
 Original creator: wdj
 
@@ -39,7 +39,7 @@ Comment by mabshoff created at 2007-08-28 18:43:41
 With Sage 2.8.2 I get:
 
 ```
-[mabshoff`@`m940 sage-2.8.2]$ ./sage
+[mabshoff@m940 sage-2.8.2]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.2, Release Date: 2007-08-22                       |

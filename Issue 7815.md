@@ -1,6 +1,6 @@
 # Issue 7815: Flint fails to build 64-bit on Open Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7815
 
 Original creator: drkirkby
 

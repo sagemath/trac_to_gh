@@ -1,6 +1,6 @@
 # Issue 4423: [with patch, needs review] document branch cut for Ei
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4423
 
 Original creator: jhpalmieri
 

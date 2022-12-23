@@ -1,6 +1,6 @@
 # Issue 5156: implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5156
 
 Original creator: was
 

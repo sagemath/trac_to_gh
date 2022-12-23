@@ -1,6 +1,6 @@
 # Issue 2876: sage/server/notebook/twist.py doctest fails when dsage certificates are not present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2876
 
 Original creator: yi
 

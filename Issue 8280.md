@@ -1,6 +1,6 @@
 # Issue 8280: cygwin: zn_poly shared library named incorrectly on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8280
 
 Original creator: was
 
@@ -12,7 +12,7 @@ When trying to build sage on cygwin, I had to do this:
 
 
 ```
-wstein`@`winxp ~/build/sage-4.3.3.alpha0/local/lib
+wstein@winxp ~/build/sage-4.3.3.alpha0/local/lib
 $ ln -s libzn_poly.so libzn_poly.dll
 ```
 

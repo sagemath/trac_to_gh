@@ -1,6 +1,6 @@
 # Issue 5230: implement boundary_style parameter for parametric 3d plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5230
 
 Original creator: was
 
@@ -83,7 +83,7 @@ Attachment
 This needs to be rebased, as mentioned in the comment:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 < trac_5230_boundary-style.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.4.alpha1/devel/sage$ patch -p1 < trac_5230_boundary-style.patch 
 patching file sage/plot/plot3d/parametric_plot3d.py
 Hunk #1 succeeded at 10 with fuzz 2 (offset 1 line).
 Hunk #2 FAILED at 39.

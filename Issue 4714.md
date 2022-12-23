@@ -1,6 +1,6 @@
 # Issue 4714: use easy/load.js when loading jsmath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4714
 
 Original creator: jason
 

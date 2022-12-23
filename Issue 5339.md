@@ -1,6 +1,6 @@
 # Issue 5339: update README.txt to reflect what platforms we currently supporting building sage with
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5339
 
 Original creator: was
 

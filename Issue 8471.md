@@ -1,6 +1,6 @@
 # Issue 8471: Upgrade or patch pexpect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8471
 
 Original creator: saliola
 

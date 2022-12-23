@@ -1,6 +1,6 @@
 # Issue 9058: Compute cores to improve subgraph_search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9058
 
 Original creator: ncohen
 

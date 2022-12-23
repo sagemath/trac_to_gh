@@ -1,6 +1,6 @@
 # Issue 3434: notebook -- implementin MAX_OUTPUT handling in cell.py for interact.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3434
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: boothby
 Try this in the notebook
 
 ```
-`@`interact
+@interact
 def test(a=1):
     print 2^a
 ```

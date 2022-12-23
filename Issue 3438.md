@@ -1,6 +1,6 @@
 # Issue 3438: [upstream] GAP is broken with non-trivial CC in env
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3438
 
 Original creator: mabshoff
 

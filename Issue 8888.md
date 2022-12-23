@@ -1,6 +1,6 @@
 # Issue 8888: Returns the frontier of a partition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8888
 
 Original creator: hivert
 

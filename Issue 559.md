@@ -1,6 +1,6 @@
 # Issue 559: memleak in multi_modular_MultiModularBasis_base exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/559
 
 Original creator: mabshoff
 

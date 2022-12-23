@@ -1,6 +1,6 @@
 # Issue 1823: [with patch] RDF/CDF coverage, consistent hashing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1823
 
 Original creator: robertwb
 

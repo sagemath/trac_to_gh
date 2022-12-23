@@ -1,6 +1,6 @@
 # Issue 7110: [with patch, needs review] SageNB -- Port #4046, #6459, #6694, #6865, #6939
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7110
 
 Original creator: mpatel
 

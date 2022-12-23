@@ -1,6 +1,6 @@
 # Issue 2034: {{{__floordiv__}}} should be part of coercion modell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2034
 
 Original creator: malb
 

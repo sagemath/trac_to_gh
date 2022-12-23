@@ -1,6 +1,6 @@
 # Issue 61: hanke -- disturbing matrix constructor issue involving rows versus columns
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/61
 
 Original creator: was
 

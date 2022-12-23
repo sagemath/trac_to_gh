@@ -1,6 +1,6 @@
 # Issue 7528: Orientation of a graph with bounded out-degree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7528
 
 Original creator: ncohen
 

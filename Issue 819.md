@@ -1,6 +1,6 @@
 # Issue 819: linenumbers in python inspect are 0-based
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/819
 
 Original creator: nbruin
 

@@ -1,6 +1,6 @@
 # Issue 8585: PermutationGroup and SymmetricGroup on the empty set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8585
 
 Original creator: hivert
 

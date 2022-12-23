@@ -1,6 +1,6 @@
 # Issue 5197: notebook -- render worksheet list now totally broken on sagenb.org by somebody naming a worksheet with a character u'\xa7'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5197
 
 Original creator: was
 

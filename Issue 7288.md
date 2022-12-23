@@ -1,6 +1,6 @@
 # Issue 7288: Gomory-Hu Trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7288
 
 Original creator: ncohen
 

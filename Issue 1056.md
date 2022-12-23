@@ -1,6 +1,6 @@
 # Issue 1056: Fix Givaro 3.2.6 build problem on MacOS X 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1056
 
 Original creator: mabshoff
 

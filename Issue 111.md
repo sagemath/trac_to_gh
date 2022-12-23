@@ -1,6 +1,6 @@
 # Issue 111: def copy -- they should all be def __copy__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/111
 
 Original creator: was
 

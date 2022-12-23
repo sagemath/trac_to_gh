@@ -1,6 +1,6 @@
 # Issue 2996: lite webpage broken under Konqueror
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2996
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 6938: sage-README-osx.txt is non-sensical for a source distribution.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6938
 
 Original creator: drkirkby
 

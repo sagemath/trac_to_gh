@@ -1,6 +1,6 @@
 # Issue 2574: problem with Abelian groups and trivial elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2574
 
 Original creator: ncalexan
 

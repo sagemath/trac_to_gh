@@ -1,6 +1,6 @@
 # Issue 3932: Should we merge the "generate size n trees in linear time" code from  	  Ryan Dingman
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3932
 
 Original creator: jason
 

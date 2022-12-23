@@ -1,6 +1,6 @@
 # Issue 7600: Vertex cover
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7600
 
 Original creator: ncohen
 

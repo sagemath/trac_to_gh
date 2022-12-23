@@ -1,6 +1,6 @@
 # Issue 658: print the random seed use to initialize the rng, add ability to set seed via command line parameter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/658
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5633: [with patch, needs review] add pix to the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5633
 
 Original creator: jhpalmieri
 

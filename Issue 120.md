@@ -1,6 +1,6 @@
 # Issue 120: abs for elements of CyclotomicField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/120
 
 Original creator: wdj
 
@@ -43,7 +43,7 @@ Fixed
 ```
 rank4:~/d/sage/sage/rings/number_field was$ hg export 2286
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168195848 28800
 # Node ID e6383f221f932db108f7507c91c1d79c6978671f
 # Parent  01a95c126cbc373b9538f51dc19f32d42419dac6
@@ -52,7 +52,7 @@ Fix trac 120 -- abs for number field elements wasn't defined.
 diff -r 01a95c126cbc -r e6383f221f93 sage/rings/number_field/number_field_element.py
 --- a/sage/rings/number_field/number_field_element.py   Sun Jan 07 10:17:49 2007 -0800
 +++ b/sage/rings/number_field/number_field_element.py   Sun Jan 07 10:50:48 2007 -0800
-`@``@` -151,6 +151,38 `@``@` class NumberFieldElement(field_element.F
+@@ -151,6 +151,38 @@ class NumberFieldElement(field_element.F
  
      def __cmp__(self, other):
          return cmp(self.__element, other.__element)

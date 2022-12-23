@@ -1,6 +1,6 @@
 # Issue 2373: relicense the javascript part of the sage notebook bsd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2373
 
 Original creator: was
 
@@ -18,7 +18,7 @@ You have my permission to change the licenses to BSD - all changes are completel
 
 
 ```
-boothby`@`u.washington.edu to me, Alex
+boothby@u.washington.edu to me, Alex
 	
 You have my permission to change the license on anything I've contributed to the notebook, to whatever suits you.
 ```
@@ -47,11 +47,11 @@ Well, as far as I know this patch hasn't been posted or merged. Unless it is par
 
 ```
 ###########################################################################
-#       Copyright (C) 2006 William Stein <wstein`@`gmail.com>
-#                     2006 Tom Boothby <boothby`@`u.washington.edu>
+#       Copyright (C) 2006 William Stein <wstein@gmail.com>
+#                     2006 Tom Boothby <boothby@u.washington.edu>
 #
 #   Released under the *modified* BSD license.
-#     Tom wrote in email to me at wstein`@`gmail.com on March 2, 2008: "You have my permission
+#     Tom wrote in email to me at wstein@gmail.com on March 2, 2008: "You have my permission
 #     to change the license on anything I've contributed to the notebook, to whatever suits you."
 #
 ###########################################################################

@@ -1,6 +1,6 @@
 # Issue 979: printing error with small reals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/979
 
 Original creator: mhansen
 

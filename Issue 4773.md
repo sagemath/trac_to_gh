@@ -1,6 +1,6 @@
 # Issue 4773: determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4773
 
 Original creator: was
 

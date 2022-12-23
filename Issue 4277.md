@@ -1,6 +1,6 @@
 # Issue 4277: [with patch, needs review] improve doctest coverage of ell_point.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4277
 
 Original creator: zimmerma
 

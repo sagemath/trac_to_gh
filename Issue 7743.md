@@ -1,6 +1,6 @@
 # Issue 7743: Piecewise integration fixes [with patch; needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7743
 
 Original creator: pbutler
 

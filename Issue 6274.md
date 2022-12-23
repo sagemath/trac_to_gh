@@ -1,6 +1,6 @@
 # Issue 6274: fix formatting of files under sage/plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6274
 
 Original creator: mvngu
 

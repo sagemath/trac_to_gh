@@ -1,6 +1,6 @@
 # Issue 4163: tut -- improve factorial / valuation example
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4163
 
 Original creator: was
 

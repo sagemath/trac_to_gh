@@ -1,6 +1,6 @@
 # Issue 9579: Raise an exception when arguments to add_constraint are not admissible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9579
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 5108: Add infinite planes to Sage 3d graphics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5108
 
 Original creator: jason
 

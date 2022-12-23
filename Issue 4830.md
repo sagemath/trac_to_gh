@@ -1,6 +1,6 @@
 # Issue 4830: [with patch, needs review] remove duplicate code lines in real_mpfr.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4830
 
 Original creator: schilly
 

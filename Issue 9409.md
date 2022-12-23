@@ -1,6 +1,6 @@
 # Issue 9409: Bug in elliptic curves method .count_points() over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9409
 
 Original creator: adam
 

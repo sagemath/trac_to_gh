@@ -1,6 +1,6 @@
 # Issue 6983: completely separate the sage notebook from the core sage library as a new spkg called "sagenb-4.1.2.spkg"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6983
 
 Original creator: was
 

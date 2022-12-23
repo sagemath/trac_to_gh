@@ -1,6 +1,6 @@
 # Issue 627: fix pari build on PPC 32bit Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/627
 
 Original creator: mabshoff
 

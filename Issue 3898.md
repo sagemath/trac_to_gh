@@ -1,6 +1,6 @@
 # Issue 3898: Make an optional, self contained gcc 4.3.1.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3898
 
 Original creator: mabshoff
 

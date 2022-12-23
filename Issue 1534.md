@@ -1,6 +1,6 @@
 # Issue 1534: Purge java3d from extcode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1534
 
 Original creator: robertwb
 

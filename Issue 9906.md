@@ -1,6 +1,6 @@
 # Issue 9906: Move generally usable decorators from plot.misc to misc.decorators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9907
 
 Original creator: jsrn
 
@@ -101,7 +101,7 @@ Rob Beezer posted the following problem with the current patch for Trac #6094, b
 
 
 ```
-rob`@`wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
+rob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
 sage -t  "devel/sage/sage/structure/sage_object.pyx"        
 **********************************************************************
 File "/sage/dev/devel/sage/sage/structure/sage_object.pyx", line 1001:

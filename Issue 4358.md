@@ -1,6 +1,6 @@
 # Issue 4358: Sage spawn too many gp processes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4358
 
 Original creator: anakha
 
@@ -60,7 +60,7 @@ I first suspected an unnecessary line of code in `Lseries_ell.dokchitser()`, but
 ```diff
 --- a/sage/schemes/elliptic_curves/lseries_ell.py
 +++ b/sage/schemes/elliptic_curves/lseries_ell.py
-`@``@` -132,7 +132,6 `@``@`
+@@ -132,7 +132,6 @@
                         eps = self.__E.root_number(),
                         poles = [],
                         prec = prec)

@@ -1,6 +1,6 @@
 # Issue 4278: [with patch, needs review] Old parent's don't correctly handle coerce maps from Python's native types.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4278
 
 Original creator: mhansen
 
@@ -276,7 +276,7 @@ Comment by mabshoff created at 2008-10-26 00:07:01
 This patch causes a segfault in
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py
 sage -t -long devel/sage/sage/modular/modsym/ambient.py     
 
 ------------------------------------------------------------

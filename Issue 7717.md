@@ -1,6 +1,6 @@
 # Issue 7717: sage -coverage enhancement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7717
 
 Original creator: roed
 

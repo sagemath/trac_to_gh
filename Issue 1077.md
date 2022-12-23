@@ -1,6 +1,6 @@
 # Issue 1077: DSage restarts two workers after timeout
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1077
 
 Original creator: jvoight
 

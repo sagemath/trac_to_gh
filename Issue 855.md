@@ -1,6 +1,6 @@
 # Issue 855: lists of optional and experimental packages should have descriptions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/855
 
 Original creator: cwitty
 
@@ -143,7 +143,7 @@ Comment by was created at 2009-12-18 04:03:41
 This should be done by automatically extracting the first line from the Description section of the SPKG.txt, if it is there. Use a line like this:
 
 ```
-sage`@`sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt
+sage@sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt
 ```
 
 or better yet, write a Python script using the tarfile module. 

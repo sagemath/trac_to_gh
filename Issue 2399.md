@@ -1,6 +1,6 @@
 # Issue 2399: allow utf8 characters in the notebook cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2399
 
 Original creator: jason
 
@@ -135,7 +135,7 @@ ipython on 32-bit ubuntu 7.10 also gives the same error message as sage when giv
 
 
 ```
-jason`@`littleone:~$ ipython
+jason@littleone:~$ ipython
 Python 2.5.1 (r251:54863, Oct  5 2007, 13:36:32) 
 Type "copyright", "credits" or "license" for more information.
 
@@ -166,7 +166,7 @@ and
 
 
 ```
-jason`@`littleone:~$ sage
+jason@littleone:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.2, Release Date: 2008-02-22                      |

@@ -1,6 +1,6 @@
 # Issue 7941: sage -tp N should store times when some files fail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7941
 
 Original creator: rlm
 

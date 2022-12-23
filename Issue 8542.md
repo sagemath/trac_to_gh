@@ -1,6 +1,6 @@
 # Issue 8542: Pynac does not build a DLL on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8542
 
 Original creator: mhansen
 
@@ -30,7 +30,7 @@ It basically comes down to adding the following changes
 diff -r 1cf1634d68b0 configure.ac
 --- a/configure.ac	Sun Mar 14 20:20:48 2010 -0800
 +++ b/configure.ac	Mon Mar 15 00:15:49 2010 -0800
-`@``@` -71,6 +71,7 `@``@`
+@@ -71,6 +71,7 @@
  AC_PROG_CXXCPP
  AC_PROG_INSTALL
  AM_PROG_LIBTOOL
@@ -41,7 +41,7 @@ diff -r 1cf1634d68b0 configure.ac
 diff -r 1cf1634d68b0 ginac/Makefile.am
 --- a/ginac/Makefile.am	Sun Mar 14 20:20:48 2010 -0800
 +++ b/ginac/Makefile.am	Mon Mar 15 00:15:49 2010 -0800
-`@``@` -10,7 +10,7 `@``@`
+@@ -10,7 +10,7 @@
    pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \
    utils.cpp wildcard.cpp \
    remember.h tostring.h utils.h compiler.h

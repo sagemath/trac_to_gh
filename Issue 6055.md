@@ -1,6 +1,6 @@
 # Issue 6055: Top level README.txt is wrong reguarding Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6055
 
 Original creator: drkirkby
 

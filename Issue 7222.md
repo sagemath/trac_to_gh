@@ -1,6 +1,6 @@
 # Issue 7222: Spanish doc #10 "Getting Help"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7222
 
 Original creator: Loufer
 

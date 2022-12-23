@@ -1,6 +1,6 @@
 # Issue 5206: attach command doesn't handle carriage returns correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5206
 
 Original creator: mhampton
 

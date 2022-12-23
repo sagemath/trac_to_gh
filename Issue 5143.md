@@ -1,6 +1,6 @@
 # Issue 5143: shift-enter should save and exit tinyMCE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5143
 
 Original creator: jason
 

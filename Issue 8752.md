@@ -1,6 +1,6 @@
 # Issue 8752: Can't evaluate numerically symbolic expression resulting from integral().
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8752
 
 Original creator: lfousse
 

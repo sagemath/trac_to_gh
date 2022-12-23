@@ -1,6 +1,6 @@
 # Issue 1747: [with patch, needs review] speed improvement for mq.SR.polynomial_system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1747
 
 Original creator: malb
 

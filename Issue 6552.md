@@ -1,6 +1,6 @@
 # Issue 6552: bug in depth-first searching
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6552
 
 Original creator: jason
 

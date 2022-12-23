@@ -1,6 +1,6 @@
 # Issue 3642: Append R's lib directory to LD_LIBRARY_PATH in sage-env
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3642
 
 Original creator: mabshoff
 

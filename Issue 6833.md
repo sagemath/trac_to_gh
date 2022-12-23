@@ -1,6 +1,6 @@
 # Issue 6833: use hg for worksheet history
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6833
 
 Original creator: malb
 

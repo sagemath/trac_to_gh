@@ -1,6 +1,6 @@
 # Issue 821: K.fractional_ideal(...)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/821
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Change K.ideal to K.fractional_ideal for number fields.
 
 
 ```
-On 10/3/07, Soroosh Yazdani <syazdani`@`math.berkeley.edu> wrote:
+On 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:
 > 
 > I think what you're saying makes sense. Maybe introduce a method
 > fractionalideal, specific to number fields?

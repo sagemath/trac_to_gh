@@ -1,6 +1,6 @@
 # Issue 5574: taking symbolic powers should coerce objects to symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5574
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 3567: optimize startup of sage -- don't import global transaction module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3567
 
 Original creator: was
 

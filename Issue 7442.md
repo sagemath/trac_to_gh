@@ -1,6 +1,6 @@
 # Issue 7442: Update scipy to the latest version (0.7.1)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7442
 
 Original creator: mhansen
 
@@ -55,7 +55,7 @@ Comment by mvngu created at 2010-01-24 23:48:08
 The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg) contains some changes not yet checked in:
 
 ```
-[mvngu`@`sage scipy-0.7.1]$ hg status
+[mvngu@sage scipy-0.7.1]$ hg status
 ? .copy_patches.pl.swp
 ? patches/setup.py.special.orig
 ```

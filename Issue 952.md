@@ -1,6 +1,6 @@
 # Issue 952: update gap_packages package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/952
 
 Original creator: was
 

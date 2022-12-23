@@ -1,6 +1,6 @@
 # Issue 7953: Curve printing only shows first defining equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7953
 
 Original creator: wjp
 

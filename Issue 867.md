@@ -1,6 +1,6 @@
 # Issue 867: [with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/867
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 6624: remove json function from server/simple/twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6624
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 5121: major bug in plot command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5121
 
 Original creator: was
 

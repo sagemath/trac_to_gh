@@ -1,6 +1,6 @@
 # Issue 5202: [with spkg, needs review] update MPFR to 2.4.0 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5202
 
 Original creator: mabshoff
 

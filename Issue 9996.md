@@ -1,6 +1,6 @@
 # Issue 9996: Tachyon does not even try to build on AIX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9997
 
 Original creator: drkirkby
 

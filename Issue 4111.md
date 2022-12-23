@@ -1,6 +1,6 @@
 # Issue 4111: [with patch, needs review] move QQ to new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4111
 
 Original creator: robertwb
 

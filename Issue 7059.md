@@ -1,6 +1,6 @@
 # Issue 7059: [with patch, needs review] Stop Sage tests from saving things to hard drive -- really!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7059
 
 Original creator: jhpalmieri
 

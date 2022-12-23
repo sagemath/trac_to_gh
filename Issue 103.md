@@ -1,6 +1,6 @@
 # Issue 103: sage -br  --- improve dependency checking (don't just check for changed .pyx files).
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/103
 
 Original creator: was
 

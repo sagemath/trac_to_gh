@@ -1,6 +1,6 @@
 # Issue 4522: [with patch, needs review] polynomial interface improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4522
 
 Original creator: burcin
 

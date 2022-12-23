@@ -1,6 +1,6 @@
 # Issue 462: make a public cython repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/462
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On 8/19/07, Robert Bradshaw <robertwb`@`math.washington.edu> wrote:
+On 8/19/07, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > ...up at http://sage.math.washington.edu/home/robertwb/sagex/
 > 
 > Should we set up a public repo. (that at least people can pull from)

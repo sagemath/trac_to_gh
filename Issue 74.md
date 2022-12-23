@@ -1,6 +1,6 @@
 # Issue 74: switch to mercurial source control manager.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/74
 
 Original creator: was
 

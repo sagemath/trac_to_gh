@@ -1,6 +1,6 @@
 # Issue 4507: compile warning for planarity code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4507
 
 Original creator: jason
 

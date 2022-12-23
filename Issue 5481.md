@@ -1,6 +1,6 @@
 # Issue 5481: devel/doc/output/* should be filtered from the list of files to doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5481
 
 Original creator: mabshoff
 

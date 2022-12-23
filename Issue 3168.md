@@ -1,6 +1,6 @@
 # Issue 3168: Source introspection does not work for outside Cython extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3168
 
 Original creator: dunfield
 

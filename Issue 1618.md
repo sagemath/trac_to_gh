@@ -1,6 +1,6 @@
 # Issue 1618: Make SCons use the GNU compiler even when Intel's compilers are present
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1618
 
 Original creator: mabshoff
 

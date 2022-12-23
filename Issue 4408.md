@@ -1,6 +1,6 @@
 # Issue 4408: magma interface -- change _magma_init_ to take non-optional magma argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4408
 
 Original creator: was
 

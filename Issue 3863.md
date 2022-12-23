@@ -1,6 +1,6 @@
 # Issue 3863: numerical integration of x^2.7 * e^(-2.4*x) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3863
 
 Original creator: ddrake
 

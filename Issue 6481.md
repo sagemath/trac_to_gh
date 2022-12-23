@@ -1,6 +1,6 @@
 # Issue 6481: g.subs({x:1,y:2}) should walk through x,y sorted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6481
 
 Original creator: malb
 

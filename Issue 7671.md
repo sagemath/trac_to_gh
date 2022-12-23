@@ -1,6 +1,6 @@
 # Issue 7671: strongly_connected_components in c_graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7671
 
 Original creator: ncohen
 

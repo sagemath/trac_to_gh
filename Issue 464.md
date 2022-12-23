@@ -1,6 +1,6 @@
 # Issue 464: add valgrind support to sage-doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/464
 
 Original creator: mabshoff
 

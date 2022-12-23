@@ -1,6 +1,6 @@
 # Issue 1096: [with patch] real_roots may give wrong answers on non-squarefree polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1096
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 514: memory leak in  _solve_iml(self, Matrix_integer_dense B, right=True)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/514
 
 Original creator: mabshoff
 
@@ -99,7 +99,7 @@ The following patch fixes the issue:
 diff -r c6efa3a2146a sage/matrix/matrix_integer_dense.pyx
 --- a/sage/matrix/matrix_integer_dense.pyx      Wed Aug 29 00:26:58 2007 -0700
 +++ b/sage/matrix/matrix_integer_dense.pyx      Wed Aug 29 21:25:49 2007 +0200
-`@``@` -1885,6 +1885,7 `@``@` cdef class Matrix_integer_dense(matrix_d
+@@ -1885,6 +1885,7 @@ cdef class Matrix_integer_dense(matrix_d
          for i from 0 <= i < n*m:
              mpz_init_set(M._entries[i], mp_N[i])
              mpz_clear(mp_N[i])

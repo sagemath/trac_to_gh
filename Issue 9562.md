@@ -1,6 +1,6 @@
 # Issue 9562: Add M4RIE to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9562
 
 Original creator: malb
 
@@ -368,7 +368,7 @@ Comment by malb created at 2010-08-10 13:50:27
 
 
 ```
-malb`@`t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx 
+malb@t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx 
 
 sage -t  "devel/sage/sage/matrix/matrix_mod2_dense.pyx"     
 
@@ -380,7 +380,7 @@ All tests passed!
 
 Total time for all tests: 92.8 seconds
 
-malb`@`t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2e_dense.pyx 
+malb@t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2e_dense.pyx 
 
 sage -t  "devel/sage/sage/matrix/matrix_mod2e_dense.pyx"    
 
@@ -490,7 +490,7 @@ Replying to [comment:26 mvngu]:
 What I mean is this:
 
 ```
-[mvngu`@`sage libm4ri-20100817]$ hg st
+[mvngu@sage libm4ri-20100817]$ hg st
 ? m4ri/.hgtags
 ? m4ri/AUTHORS
 ? m4ri/COPYING

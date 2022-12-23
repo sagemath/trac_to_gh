@@ -1,6 +1,6 @@
 # Issue 2776: [with patch, needs review] simplify BooleanPolynomialRing constructor for enduser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2776
 
 Original creator: malb
 

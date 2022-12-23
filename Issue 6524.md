@@ -1,6 +1,6 @@
 # Issue 6524: Ratio of two symbolic expressions involving derivative does not simplify
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6524
 
 Original creator: gmhossain
 

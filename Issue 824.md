@@ -1,6 +1,6 @@
 # Issue 824: update linbox package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/824
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7745: Update Maxima to 5.20.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7745
 
 Original creator: kcrisman
 

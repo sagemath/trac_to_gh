@@ -1,6 +1,6 @@
 # Issue 3660: add documentation to the reference manual for crystals and Weyl groups / characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3660
 
 Original creator: mhansen
 

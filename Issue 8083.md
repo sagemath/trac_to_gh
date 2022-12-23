@@ -1,6 +1,6 @@
 # Issue 8083: fix accents in LaTeX output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8083
 
 Original creator: robert.marik
 

@@ -1,6 +1,6 @@
 # Issue 676: Solaris 10: fix python build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/676
 
 Original creator: mabshoff
 

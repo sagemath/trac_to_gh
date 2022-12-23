@@ -1,6 +1,6 @@
 # Issue 6826: [with patch, needs review] magma_free interface is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6826
 
 Original creator: ncalexan
 

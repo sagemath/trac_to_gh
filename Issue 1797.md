@@ -1,6 +1,6 @@
 # Issue 1797: [with patch] add another doctest for expansion of elementary symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1797
 
 Original creator: mhansen
 

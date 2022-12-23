@@ -1,6 +1,6 @@
 # Issue 215: Pari comparison with None crashes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/215
 
 Original creator: kedlaya
 
@@ -27,7 +27,7 @@ fixed for sage > 1.8.2.1
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169737969 28800
 # Node ID 77fad05c682bd6d4d76524f689941195f82778e6
 # Parent  9839fc0f4341de039cb16097a9d1b70f89a2ba9b
@@ -36,7 +36,7 @@ Fix trac issue #215 -- pari(2.5) > None caused crash.
 diff -r 9839fc0f4341 -r 77fad05c682b sage/libs/pari/gen.pxd
 --- a/sage/libs/pari/gen.pxd    Thu Jan 25 06:36:25 2007 -0800
 +++ b/sage/libs/pari/gen.pxd    Thu Jan 25 07:12:49 2007 -0800
-`@``@` -12,7 +12,6 `@``@` cdef class gen:
+@@ -12,7 +12,6 @@ cdef class gen:
      cdef GEN _deepcopy_to_python_heap(self, GEN x, pari_sp* address)
      cdef int get_var(self, v)    
  
@@ -47,7 +47,7 @@ diff -r 9839fc0f4341 -r 77fad05c682b sage/libs/pari/gen.pxd
 diff -r 9839fc0f4341 -r 77fad05c682b sage/libs/pari/gen.pyx
 --- a/sage/libs/pari/gen.pyx    Thu Jan 25 06:36:25 2007 -0800
 +++ b/sage/libs/pari/gen.pyx    Thu Jan 25 07:12:49 2007 -0800
-`@``@` -451,28 +451,44 `@``@` cdef class gen:
+@@ -451,28 +451,44 @@ cdef class gen:
          
  
      ###########################################

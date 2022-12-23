@@ -1,6 +1,6 @@
 # Issue 3678: Fractional powers for polynomial variables bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3678
 
 Original creator: wdj
 

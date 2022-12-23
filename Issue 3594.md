@@ -1,6 +1,6 @@
 # Issue 3594: lisp -- impossible to run command line!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3594
 
 Original creator: was
 
@@ -12,11 +12,11 @@ The upgrade of clisp to 2.46 seriously broke something
 
 
 ```
-age`@`modular:~/build/sage-3.0.4.alpha2$ ./sage -lisp
+age@modular:~/build/sage-3.0.4.alpha2$ ./sage -lisp
 /home2/sage/build/sage-3.0.4.alpha2/local/bin/clisp.bin: /home2/sage/build/sage-3.0.4.alpha2/local/lib/clisp/base/lisp.run: Nosuch file or directory
-sage`@`modular:~/build/sage-3.0.4.alpha2$ ./sage -clisp
+sage@modular:~/build/sage-3.0.4.alpha2$ ./sage -clisp
 /home2/sage/build/sage-3.0.4.alpha2/local/bin/clisp.bin: /home2/sage/build/sage-3.0.4.alpha2/local/lib/clisp/base/lisp.run: Nosuch file or directory
-sage`@`modular:~/build/sage-3.0.4.alpha2$ ./sage
+sage@modular:~/build/sage-3.0.4.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.4.alpha2, Release Date: 2008-07-06                |
@@ -65,7 +65,7 @@ Comment by mabshoff created at 2008-07-07 23:30:00
 It now actually works:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.rc0-$ ./sage -clisp
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.rc0-$ ./sage -clisp
   i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
   I I I I I I I      8     8   8           8     8     o  8    8
   I  \ `+' /  I      8         8           8     8        8    8
@@ -86,7 +86,7 @@ Type :h and hit Enter for context help.
 
 [1]> (quit)
 Bye.
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.4.rc0-$ ./sage -lisp
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.rc0-$ ./sage -lisp
   i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
   I I I I I I I      8     8   8           8     8     o  8    8
   I  \ `+' /  I      8         8           8     8        8    8

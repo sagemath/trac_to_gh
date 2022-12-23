@@ -1,6 +1,6 @@
 # Issue 804: Matrix should not inherit from AlgebraElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/804
 
 Original creator: roed
 

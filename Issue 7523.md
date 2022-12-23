@@ -1,6 +1,6 @@
 # Issue 7523: Lightweight Wrapper for Rpy2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7523
 
 Original creator: amhou
 

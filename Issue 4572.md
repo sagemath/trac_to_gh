@@ -1,6 +1,6 @@
 # Issue 4572: [with patch, needs review] maxima output has misleading precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4572
 
 Original creator: robertwb
 

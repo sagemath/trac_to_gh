@@ -1,6 +1,6 @@
 # Issue 482: ideals for improving the SAGE tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/482
 
 Original creator: was
 

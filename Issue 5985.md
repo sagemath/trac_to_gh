@@ -1,6 +1,6 @@
 # Issue 5985: cPickle: adds support for class pickling customizing  and for nested classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5985
 
 Original creator: nthiery
 

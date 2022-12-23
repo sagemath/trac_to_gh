@@ -1,6 +1,6 @@
 # Issue 5723: sage new symbolics/pynac misbehave when evaluating with CDF elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5723
 
 Original creator: ncalexan
 

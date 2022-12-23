@@ -1,6 +1,6 @@
 # Issue 1564: 3d graphics -- misc improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1564
 
 Original creator: was
 

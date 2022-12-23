@@ -1,6 +1,6 @@
 # Issue 5019: sage -gdb is broken on OSX when using branches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5019
 
 Original creator: mabshoff
 

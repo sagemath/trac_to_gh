@@ -1,6 +1,6 @@
 # Issue 7788: followup patch to #5396
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7788
 
 Original creator: rishi
 

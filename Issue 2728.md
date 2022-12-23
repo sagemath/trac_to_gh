@@ -1,6 +1,6 @@
 # Issue 2728: doctest failures for maxima in Debian packaged sage 2.10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2728
 
 Original creator: tabbott
 

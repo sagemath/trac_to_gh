@@ -1,6 +1,6 @@
 # Issue 5548: fix that _hnf_mod segfaults sage completely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5548
 
 Original creator: was
 

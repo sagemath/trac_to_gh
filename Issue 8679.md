@@ -1,6 +1,6 @@
 # Issue 8679: conventions for spkg names, rewriting sage-spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8679
 
 Original creator: jhpalmieri
 

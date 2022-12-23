@@ -1,6 +1,6 @@
 # Issue 6581: Groebner basis not working over symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6581
 
 Original creator: rhinton
 

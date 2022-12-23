@@ -1,6 +1,6 @@
 # Issue 2733: PARI in Debian has the mathnf bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2733
 
 Original creator: tabbott
 

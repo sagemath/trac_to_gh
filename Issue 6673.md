@@ -1,6 +1,6 @@
 # Issue 6673: [with patch, needs review] Set up jsMath extensions, macros, etc., for the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6673
 
 Original creator: mpatel
 

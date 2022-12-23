@@ -1,6 +1,6 @@
 # Issue 6102: cohomology ring of simplicial complexes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6102
 
 Original creator: bantieau
 
@@ -193,7 +193,7 @@ That's helpful. The change
 ```diff
 --- Dropbox/prog/sage/Math/Simplicial/homotopies/AT_model.py	2015-09-23 10:44:42.000000000 -0700
 +++ Desktop/AT_model.py	2015-10-08 14:14:33.000000000 -0700
-`@``@` -233,7 +233,7 `@``@`
+@@ -233,7 +233,7 @@
                  pi_cols.append(zero_vector)
                  for c_j_idx, c_j in enumerate(old_cells):
                      # eta_ij = <u, pi(c_j)>:

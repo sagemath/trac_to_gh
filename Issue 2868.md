@@ -1,6 +1,6 @@
 # Issue 2868: Weight revision for fastcrystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2868
 
 Original creator: bump
 

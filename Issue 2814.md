@@ -1,6 +1,6 @@
 # Issue 2814: sage-3.0-alpha1 on ppc -- new randstate code doesn't work right at all
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2814
 
 Original creator: was
 

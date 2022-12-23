@@ -1,6 +1,6 @@
 # Issue 9691: Make another Trac search box or button
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9691
 
 Original creator: kcrisman
 

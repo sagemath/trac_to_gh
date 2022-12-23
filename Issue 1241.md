@@ -1,6 +1,6 @@
 # Issue 1241: absolute symbolic links left in "make install"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1241
 
 Original creator: zimmerma
 

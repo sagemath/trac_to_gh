@@ -1,6 +1,6 @@
 # Issue 4289: EllipticCurve behaviour
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4289
 
 Original creator: ljpk
 

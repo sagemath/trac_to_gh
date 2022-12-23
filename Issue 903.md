@@ -1,6 +1,6 @@
 # Issue 903: charpoly of matrices over number fields is ridiculously slow right now (easy fixes exist)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/903
 
 Original creator: was
 

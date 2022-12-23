@@ -1,6 +1,6 @@
 # Issue 9161: update nzmath optional package to 1.0 and post about this to NMBRTHY
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9161
 
 Original creator: was
 

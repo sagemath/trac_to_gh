@@ -1,6 +1,6 @@
 # Issue 4179: [with patch, needs review] ell_finite_field.py "long" doctest fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4179
 
 Original creator: GeorgSWeber
 

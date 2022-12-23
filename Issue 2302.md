@@ -1,6 +1,6 @@
 # Issue 2302: Add a 64 bit glibc 2.3 based binary of Sage to the default build platforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2302
 
 Original creator: mabshoff
 

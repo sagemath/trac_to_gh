@@ -1,6 +1,6 @@
 # Issue 7730: hessenberg_form hangs (or is *very* slow)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7730
 
 Original creator: spancratz
 

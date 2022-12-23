@@ -1,6 +1,6 @@
 # Issue 1628: update Moinmoin to 1.5.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1628
 
 Original creator: mabshoff
 

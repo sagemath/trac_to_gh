@@ -1,6 +1,6 @@
 # Issue 8394: plot/plot3d/tri_plot.py is at 0% coverage: get it to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8394
 
 Original creator: mhampton
 

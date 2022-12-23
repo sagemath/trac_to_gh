@@ -1,6 +1,6 @@
 # Issue 783: dilog is lame
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/783
 
 Original creator: was
 
@@ -50,7 +50,7 @@ Comment by was created at 2007-10-02 13:26:45
 
 
 ```
-Vincent Lefevre <vincent`@`vinc17.org> 	
+Vincent Lefevre <vincent@vinc17.org> 	
 to pari-dev
 	
 show details
@@ -98,7 +98,7 @@ The hunk
 diff -r 631bb7b11fe9 -r 2829ba5e615e sage/functions/all.py
 --- a/sage/functions/all.py     Tue Apr 15 04:19:13 2008 -0700
 +++ b/sage/functions/all.py     Sat Apr 19 10:33:01 2008 -0400
-`@``@` -16,7 +16,7 `@``@` from special    import (bessel_I, bessel
+@@ -16,7 +16,7 @@ from special    import (bessel_I, bessel
                          spherical_bessel_J, spherical_bessel_Y,
                          spherical_hankel1, spherical_hankel2,
                          spherical_harmonic, jacobi,

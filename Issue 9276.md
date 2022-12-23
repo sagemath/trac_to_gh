@@ -1,6 +1,6 @@
 # Issue 9276: sage notebook: jsmath image fonts -- optional package -- breakage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9276
 
 Original creator: was
 
@@ -21,7 +21,7 @@ Subject: [sage-support] jsmath image fonts
 
 From: marik
 Date: Fri, May 28, 2010 at 11:56 PM
-To: sage-support <sage-support`@`googlegroups.com>
+To: sage-support <sage-support@googlegroups.com>
 
 
 Dear all
@@ -37,7 +37,7 @@ Robert
 ----------
 From: marik
 Date: Mon, May 31, 2010 at 12:43 PM
-To: sage-support <sage-support`@`googlegroups.com>
+To: sage-support <sage-support@googlegroups.com>
 
 
 I copied png files manualy to the correct place and still get no image
@@ -46,9 +46,9 @@ fonts in Sage notebook. Any idea? Many thanks,
 Robert
 
 ----------
-From: William Stein <wstein`@`gmail.com>
+From: William Stein <wstein@gmail.com>
 Date: Mon, May 31, 2010 at 12:44 PM
-To: sage-notebook <sage-notebook`@`googlegroups.com>
+To: sage-notebook <sage-notebook@googlegroups.com>
 
 
 --
@@ -56,9 +56,9 @@ William Stein
 
 
 ----------
-From: marik`@`
+From: marik@
 Date: Fri, Jun 11, 2010 at 8:44 AM
-To: sage-notebook <sage-notebook`@`googlegroups.com>
+To: sage-notebook <sage-notebook@googlegroups.com>
 
 
 Solved:

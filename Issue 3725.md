@@ -1,6 +1,6 @@
 # Issue 3725: [with patch, needs trivial review] tiny doc improvement for mq.SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3725
 
 Original creator: malb
 

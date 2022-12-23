@@ -1,6 +1,6 @@
 # Issue 296: don't create old doc directories when upgrading SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/296
 
 Original creator: was
 

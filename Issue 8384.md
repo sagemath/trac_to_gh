@@ -1,6 +1,6 @@
 # Issue 8384: incoherent web pages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8384
 
 Original creator: zimmerma
 

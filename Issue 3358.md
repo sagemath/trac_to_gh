@@ -1,6 +1,6 @@
 # Issue 3358: Improve the building of eclib (shared/static objects) [with patch needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3358
 
 Original creator: fbissey
 

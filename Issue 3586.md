@@ -1,6 +1,6 @@
 # Issue 3586: twist.py -- doctest doesn't work on some machines due to ports not being open-able
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3586
 
 Original creator: was
 

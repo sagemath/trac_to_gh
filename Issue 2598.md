@@ -1,6 +1,6 @@
 # Issue 2598: [with patch, needs review] allow ZZ element to be constructed from GF(2) list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2598
 
 Original creator: malb
 

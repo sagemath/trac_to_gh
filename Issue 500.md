@@ -1,6 +1,6 @@
 # Issue 500: upgrade maxima to version 5.13.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/500
 
 Original creator: was
 

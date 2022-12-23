@@ -1,6 +1,6 @@
 # Issue 9210: pkg-config prefix statements in SAGE_LOCAL/lib/pkg-config not changed upon Sage move
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9210
 
 Original creator: jason
 
@@ -88,7 +88,7 @@ Something has gone wrong here though. The installation worked fine before it was
 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.4.3$ ./sage -bdist 4.4.3-ax                                                 
+drkirkby@redstart:~/32/sage-4.4.3$ ./sage -bdist 4.4.3-ax                                                 
 Sage works!
 Copying files over to tmp directory
 local/lib/python2.6/python2.6: failed to get acl entries
@@ -663,7 +663,7 @@ $ cd /tmp/sage-4.5.3.alpha2/local/lib/pkgconfig
 
 
 ```
-drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby *
+drkirkby@hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby *
 bdw-gc.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
 freetype2.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
 gnutls-extra.pc:prefix=/export/home/drkirkby/9/sage-4.5.3.alpha2/local
@@ -695,9 +695,9 @@ Now lets see how many of those files have "tmp" in them.
 
 
 ```
-drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby * | grep tmp
+drkirkby@hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ grep drkirkby * | grep tmp
 gsl.pc:Cflags: -I/export/home/drkirkby/9/sage-4.5.3.alpha2/local/includeSAGE_ROOT=/tmp/sage-4.5.3.alpha2
-drkirkby`@`hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ 
+drkirkby@hawk:/tmp/sage-4.5.3.alpha2/local/lib/pkgconfig$ 
 ```
 
 
@@ -865,7 +865,7 @@ Comment by jason created at 2010-10-15 00:35:47
 Apparently I don't remember the right wiki syntax.  Here are the 5 steps again:
 
  1. Download and build Sage (important; it must be a fresh build from source).
- 1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)(http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
+ 1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
  1. Delete the file SAGE_ROOT/local/lib/sage-current-location.txt, if it exists
  1. Now run Sage, then exit (this updates the sage-current-location and  pkgconfig files appropriately).  Check to make sure that  sage-current-location.txt is now created, and that each pkgconfig file  starts with a line "SAGE_ROOT=" (followed by the build directory)
  1. Move the sage directory and run Sage again. The  SAGE_ROOT/local/lib/sage-current-location.txt should be updated, and the  pkgconfig files in SAGE_ROOT/local/lib/pkgconfig/ should also be  updated to the new path (you can check the freetype2.pc file, for  example, to see the new sage directory is listed there in the SAGE_ROOT  variable).
@@ -875,7 +875,7 @@ Apparently I don't remember the right wiki syntax.  Here are the 5 steps again:
 
 Comment by kcrisman created at 2010-10-15 02:02:09
 
->  1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)(http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
+>  1. Apply the patch at the ticket to the scripts repository (in SAGE_ROOT/local/bin):[http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch](http://trac.sagemath.org/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch)
 
 The link is wrong but the text is right; http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9210/trac-9210-rewrite-sage-location.patch
 
@@ -1051,9 +1051,9 @@ I got some warnings about unable to save ACLs. Now when I run the doctests, seve
 
 
 ```
-drkirkby`@`hawk:/tmp/9210/sage-4.6.alpha3$ pwd
+drkirkby@hawk:/tmp/9210/sage-4.6.alpha3$ pwd
 /tmp/9210/sage-4.6.alpha3
-drkirkby`@`hawk:/tmp/9210/sage-4.6.alpha3$ grep drkirkby local/bin/maxima
+drkirkby@hawk:/tmp/9210/sage-4.6.alpha3$ grep drkirkby local/bin/maxima
   prefix=`unixize "/export/home/drkirkby/9210/sage-4.6.alpha3/local"`
   top_srcdir=`unixize "/export/home/drkirkby"`
 ```

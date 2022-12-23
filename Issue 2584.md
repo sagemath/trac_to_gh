@@ -1,6 +1,6 @@
 # Issue 2584: printing bug with show()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2584
 
 Original creator: craigcitro
 

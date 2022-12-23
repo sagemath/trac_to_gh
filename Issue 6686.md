@@ -1,6 +1,6 @@
 # Issue 6686: [with patch, needs review] Missing closing </center> tag in notebook help page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6686
 
 Original creator: mpatel
 

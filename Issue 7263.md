@@ -1,6 +1,6 @@
 # Issue 7263: sage-4.2: jmol plotting on the command line is completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7263
 
 Original creator: was
 
@@ -52,7 +52,7 @@ after this patch:
 diff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx
 --- a/sage/plot/plot3d/base.pyx	Fri May 15 06:48:50 2009 -0500
 +++ b/sage/plot/plot3d/base.pyx	Wed Oct 21 21:06:46 2009 -0500
-`@``@` -1064,7 +1064,7 `@``@`
+@@ -1064,7 +1064,7 @@
              f.write(self.mtl_str())
              f.close()
              ext = "obj"
@@ -61,7 +61,7 @@ diff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx
  
          if DOCTEST_MODE or viewer=='jmol':
              # Temporary hack: encode the desired applet size in the end of the filename:
-`@``@` -1082,7 +1082,7 `@``@`
+@@ -1082,7 +1082,7 @@
  
              T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)
              T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)
@@ -119,7 +119,7 @@ else
   echo Jmol.jar not found
   exit
 fi
-$command -Xmx512m -jar $jarpath $`@`
+$command -Xmx512m -jar $jarpath $@
 ```
 
 

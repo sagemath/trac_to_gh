@@ -1,6 +1,6 @@
 # Issue 2734: SAGE Debian doctest errors whose cause I don't understand
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2734
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 790: rational reconstruction failing for p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/790
 
 Original creator: dmharvey
 

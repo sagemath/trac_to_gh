@@ -1,6 +1,6 @@
 # Issue 6559: Real domain for symbolic variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6559
 
 Original creator: gmhossain
 
@@ -430,7 +430,7 @@ Comment by rossk created at 2010-02-13 12:13:56
 The hg qgoto didnt work. (And if its easier at any stage to blow away the pynac clone and start again, feel free to suggest that). 
 
 ```
-rossk`@`sage:/scratch/rossk/sage-4.3.3.alpha0-sage.math.washington.edu-x86_64-Linux/devel/sage-pynac$ hg qgoto trac_6465-chain_rule.take2.patch
+rossk@sage:/scratch/rossk/sage-4.3.3.alpha0-sage.math.washington.edu-x86_64-Linux/devel/sage-pynac$ hg qgoto trac_6465-chain_rule.take2.patch
 applying trac_7822-py_log.take2.patch
 applying trac_6961-psi.rebased.patch
 applying trac_7876-pynac_print.take2.patch

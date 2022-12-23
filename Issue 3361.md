@@ -1,6 +1,6 @@
 # Issue 3361: fricas install problem.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3361
 
 Original creator: wdj
 

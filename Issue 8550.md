@@ -1,6 +1,6 @@
 # Issue 8550: Infinite matrix groups over QQ fail for is_finite()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8550
 
 Original creator: rbeezer
 

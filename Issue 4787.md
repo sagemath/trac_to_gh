@@ -1,6 +1,6 @@
 # Issue 4787: Race condition in sage-doctest folder creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4787
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 9227: units.length.millimeter missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9227
 
 Original creator: schilly
 

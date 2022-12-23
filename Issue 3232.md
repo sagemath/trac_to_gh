@@ -1,6 +1,6 @@
 # Issue 3232: wrap NTL's BKZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3232
 
 Original creator: malb
 

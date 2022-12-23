@@ -1,6 +1,6 @@
 # Issue 5595: [with patch, needs review] minor dependancy checking glitch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5595
 
 Original creator: robertwb
 

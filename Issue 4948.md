@@ -1,6 +1,6 @@
 # Issue 4948: implement the transfer of Mathematica lists back to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4948
 
 Original creator: mabshoff
 

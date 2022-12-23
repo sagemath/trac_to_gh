@@ -1,6 +1,6 @@
 # Issue 9206: faster finite field creation with proof=False, done right (via proof architecture)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9206
 
 Original creator: was
 

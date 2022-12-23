@@ -1,6 +1,6 @@
 # Issue 4590: sage/interfaces/phc.py writes tmp files into cwd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4590
 
 Original creator: mabshoff
 

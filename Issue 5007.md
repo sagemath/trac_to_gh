@@ -1,6 +1,6 @@
 # Issue 5007: [with patch, needs review] sage-native-execute uses bashism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5007
 
 Original creator: mabshoff
 

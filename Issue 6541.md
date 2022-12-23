@@ -1,6 +1,6 @@
 # Issue 6541: [with patch, needs review] functions numerator and denominator for univariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6541
 
 Original creator: lftabera
 
@@ -54,7 +54,7 @@ A patch with the feature
 diff -r ca1f31d6f6bf sage/rings/polynomial/polynomial_element.pyx
 --- a/sage/rings/polynomial/polynomial_element.pyx      Thu Jul 09 15:14:36 2009 -0700
 +++ b/sage/rings/polynomial/polynomial_element.pyx      Wed Jul 15 20:25:10 2009 -0700
-`@``@` -1954,9 +1954,15 `@``@`
+@@ -1954,9 +1954,15 @@
 
      def denominator(self):
          """
@@ -73,7 +73,7 @@ diff -r ca1f31d6f6bf sage/rings/polynomial/polynomial_element.pyx
 
          .. warning::
 
-`@``@` -1997,19 +2003,91 `@``@`
+@@ -1997,19 +2003,91 @@
              sage: f = x + RR('0.3'); f
              1.00000000000000*x + 0.300000000000000
              sage: f.denominator()

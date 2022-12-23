@@ -1,6 +1,6 @@
 # Issue 2755: [with patch, needs review] lattice_polytope.py update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2755
 
 Original creator: novoselt
 

@@ -1,6 +1,6 @@
 # Issue 3339: tachyon spkg is not clean upstream
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3339
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 6341: implement Mestre's algorithm for constructing genus 2 hyperelliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6341
 
 Original creator: ncalexan
 

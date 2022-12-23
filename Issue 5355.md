@@ -1,6 +1,6 @@
 # Issue 5355: QQbar should have a coercion from number fields with embedding
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5355
 
 Original creator: cwitty
 

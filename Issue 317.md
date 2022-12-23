@@ -1,6 +1,6 @@
 # Issue 317: Integer.__pow__ is broken for large exponents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/317
 
 Original creator: dmharvey
 
@@ -36,7 +36,7 @@ Fixed for sage-2.4
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1174518201 25200
 # Node ID 4181b9b6dfab32ec0d7382b58d29ffaf3486bfd9
 # Parent  7ffbc455086b1fdce659c26b3e702a7bd4be4ba7
@@ -45,7 +45,7 @@ Fix track # 317 -- bug in powering over the integers.
 diff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx
 --- a/sage/rings/integer.pyx    Wed Mar 21 15:50:24 2007 -0700
 +++ b/sage/rings/integer.pyx    Wed Mar 21 16:03:21 2007 -0700
-`@``@` -121,6 +121,8 `@``@` cdef set_from_int(Integer self, int othe
+@@ -121,6 +121,8 @@ cdef set_from_int(Integer self, int othe
 
  cdef public mpz_t* get_value(Integer self):
      return &self.value
@@ -54,7 +54,7 @@ diff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx
 
  # This crashes SAGE:
  #  s = 2003^100300000
-`@``@` -658,6 +660,13 `@``@` cdef class Integer(sage.structure.elemen
+@@ -658,6 +660,13 @@ cdef class Integer(sage.structure.elemen
              9536.7431640625
              sage: 'sage'^3
              'sagesagesage'
@@ -68,7 +68,7 @@ diff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx
          """
          cdef Integer _self, _n
          cdef unsigned int _nval
-`@``@` -672,6 +681,8 `@``@` cdef class Integer(sage.structure.elemen
+@@ -672,6 +681,8 @@ cdef class Integer(sage.structure.elemen
              raise TypeError, "exponent (=%s) must be an integer.\nCoerce your numbers to real or complex numbers first."%n
          if _n < 0:
              return Integer(1)/(self**(-_n))
@@ -77,7 +77,7 @@ diff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx
          _self = integer(self)
          cdef Integer x
          x = Integer()
-`@``@` -1010,23 +1021,23 `@``@` cdef class Integer(sage.structure.elemen
+@@ -1010,23 +1021,23 @@ cdef class Integer(sage.structure.elemen
              0
              sage: z.powermodm_ui(2, 14)
              2

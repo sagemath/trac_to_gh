@@ -1,6 +1,6 @@
 # Issue 207: log in waaay slower than python's math.log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/207
 
 Original creator: dmharvey
 

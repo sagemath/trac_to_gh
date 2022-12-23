@@ -1,6 +1,6 @@
 # Issue 9892: Make PARI *not* catch signals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9893
 
 Original creator: jdemeyer
 

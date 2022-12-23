@@ -1,6 +1,6 @@
 # Issue 2613: Moving "all_paths()" to "GenericGraph"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2613
 
 Original creator: vgermrk
 

@@ -1,6 +1,6 @@
 # Issue 7660: arithmetic with inequalities confusing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7660
 
 Original creator: burcin
 
@@ -20,7 +20,7 @@ Arithmetic with inequalities can be confusing, since Sage does nothing to keep t
 
 ```
 On Thu, 10 Dec 2009 00:37:10 -0800 (PST)
-"marik`@`mendelu.cz" <marik`@`mendelu.cz> wrote:
+"marik@mendelu.cz" <marik@mendelu.cz> wrote:
 
 > sage: f = x + 3 < y - 2
 > sage: f*(-1)
@@ -33,7 +33,7 @@ It seems MMA doesn't apply any automatic simplification in this case:
 
 ```
 On Thu, 10 Dec 2009 09:54:36 -0800
-William Stein <wstein`@`gmail.com> wrote:
+William Stein <wstein@gmail.com> wrote:
 
 > Mathematica does something weird and formal:
 > 
@@ -48,7 +48,7 @@ Maple acts more intuitively, though the way ``formal products`` are printed leav
 
 ```
 On Thu, 10 Dec 2009 14:15:53 -0800
-William Stein <wstein`@`gmail.com> wrote:
+William Stein <wstein@gmail.com> wrote:
 
 > Here is what Maple does:
 > 
@@ -280,7 +280,7 @@ sage1 : solve_rat_ineq(sage0)
 _tmp_ : sage1
 kill(sage1)
 kill(sage0)
-[This is the Trac macro *x < 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x < 1-macro)
+[[x < 1]]
 ```
 
 After:

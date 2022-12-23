@@ -1,6 +1,6 @@
 # Issue 4172: exception in timeit permanetly disables gc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4172
 
 Original creator: anakha
 

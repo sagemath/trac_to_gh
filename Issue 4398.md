@@ -1,6 +1,6 @@
 # Issue 4398: Sage 3.1.4: magma related optional doctest failure in sage/sage/modules/free_module.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4398
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-mabshoff`@`iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/modules/free_module.py
+mabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/modules/free_module.py
 sage -t -long -optional devel/sage/sage/modules/free_module.py
 **********************************************************************
 File "/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/free_module.py", line 1554:

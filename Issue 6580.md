@@ -1,6 +1,6 @@
 # Issue 6580: ratpoints -- this must be fixed to build with gcc-3.4.x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6580
 
 Original creator: was
 

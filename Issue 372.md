@@ -1,6 +1,6 @@
 # Issue 372: singular interface memory leaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/372
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: michel v
 
 
 ```
-On 5/20/07, Michel <michel.vandenbergh`@`uhasselt.be> wrote:
+On 5/20/07, Michel <michel.vandenbergh@uhasselt.be> wrote:
 >
 > While doing "singular.interact()" I see that lots and lots
 > of variables (named: sage*) are being defined in the singular

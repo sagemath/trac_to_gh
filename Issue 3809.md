@@ -1,6 +1,6 @@
 # Issue 3809: reorder checks for creating a number field; prevents some silly errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3809
 
 Original creator: ncalexan
 

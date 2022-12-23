@@ -1,6 +1,6 @@
 # Issue 3302: python_gnutls fails to upgrade on OSX in case Sage was moved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3302
 
 Original creator: mabshoff
 

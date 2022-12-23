@@ -1,6 +1,6 @@
 # Issue 3957: notebook -- major bug in opening notebooks and plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3957
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: boothby
 ```
 
 
-On Tue, Aug 26, 2008 at 4:53 AM, Stan Schymanski <schymans`@`gmail.com> wrote:
+On Tue, Aug 26, 2008 at 4:53 AM, Stan Schymanski <schymans@gmail.com> wrote:
 >
 > Dear all,
 >

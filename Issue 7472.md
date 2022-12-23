@@ -1,6 +1,6 @@
 # Issue 7472: Taylor polynomial in two variables does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7472
 
 Original creator: robert.marik
 

@@ -1,6 +1,6 @@
 # Issue 5597: [with patch, needs review] rename coercion action methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5597
 
 Original creator: robertwb
 

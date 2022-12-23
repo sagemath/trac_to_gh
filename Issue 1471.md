@@ -1,6 +1,6 @@
 # Issue 1471: moving a sage install breaks clisp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1471
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 Moving a Sage install breaks clisp. I moved `sage-2.9.alpha5` to `sage-2.9.alpha5-vg` and it broke clisp:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp
+mabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5-vg$ clisp
 clisp: /tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha5/local/lib/clisp/base/lisp.run: No such file or directory
 ```
 

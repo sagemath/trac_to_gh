@@ -1,6 +1,6 @@
 # Issue 9723: Sage will not start on 64-bit Solaris 10 - looks like related to M4RI upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9723
 
 Original creator: drkirkby
 
@@ -52,7 +52,7 @@ However, the build fails to start at all on `t2.math.washington.edu`, whereas a 
 
 
 ```
-kirkby`@`t2:64 ~/t2/64/sage-4.5.3.alpha0$ ./sage
+kirkby@t2:64 ~/t2/64/sage-4.5.3.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

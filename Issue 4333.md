@@ -1,6 +1,6 @@
 # Issue 4333: bernoulli_python doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4333
 
 Original creator: mhampton
 

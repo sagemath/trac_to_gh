@@ -1,6 +1,6 @@
 # Issue 7826: [with spkg] mpfi ignores SAGE64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7826
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2940: symbolic equation arithmetic is to restrictive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2940
 
 Original creator: robertwb
 

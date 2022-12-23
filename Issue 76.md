@@ -1,6 +1,6 @@
 # Issue 76: No doc for 'attach'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/76
 
 Original creator: Justin Walker (justin@mac.com)
 
@@ -29,7 +29,7 @@ hg repository, and here's the standard unifieid diff patch below...
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1158972475 25200
 # Node ID 6c5558645b6c76646cbc8edac64d12617ed36535
 # Parent dd4a75ae77f673d39f3371fe3339966bfdd2287e
@@ -41,7 +41,7 @@ the documentation for load.
 
 --- a/sage/ext/sage_object.pyx	Fri Sep 22 14:13:45 2006 -0700
 +++ b/sage/ext/sage_object.pyx	Fri Sep 22 17:47:55 2006 -0700
-`@``@` -445,6 +445,13 `@``@` def load(filename, compress=True, verbos
+@@ -445,6 +445,13 @@ def load(filename, compress=True, verbos
      Load \sage object from the file with name filename, which will
      have an .sobj extension added if it doesn't have one.
  
@@ -57,7 +57,7 @@ the documentation for load.
  
 --- a/sage/misc/all.py	Fri Sep 22 14:13:45 2006 -0700
 +++ b/sage/misc/all.py	Fri Sep 22 17:47:55 2006 -0700
-`@``@` -6,6 +6,8 `@``@` from misc import (alarm, srange, xsrange
+@@ -6,6 +6,8 @@ from misc import (alarm, srange, xsrange
                    repr_lincomb, tmp_dir, tmp_filename,
                    DOT_SAGE, SAGE_ROOT, SAGE_URL, SAGE_DB, SAGE_TMP,
                    is_32_bit, is_64_bit, newton_method_sizes)
@@ -68,7 +68,7 @@ the documentation for load.
  
 --- /dev/null	Thu Jan 01 00:00:00 1970 +0000
 +++ b/sage/misc/attach.py	Fri Sep 22 17:47:55 2006 -0700
-`@``@` -0,0 +1,41 `@``@`
+@@ -0,0 +1,41 @@
 +class Attach:
 +    r"""
 +    Attach a file to a running instance of SAGE.

@@ -1,6 +1,6 @@
 # Issue 4439: Sage 3.2.a2: make three doctests from #788 random again
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4439
 
 Original creator: mabshoff
 

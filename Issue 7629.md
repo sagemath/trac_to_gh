@@ -1,6 +1,6 @@
 # Issue 7629: Make it possible to restrict the domains of email addresses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7629
 
 Original creator: jason
 

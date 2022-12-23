@@ -1,6 +1,6 @@
 # Issue 6430: Cython problem with hashing Laurent series elements over CDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6430
 
 Original creator: ncalexan
 
@@ -14,9 +14,9 @@ Keywords: hash Laurent series
 
 
 ```
-sage: hash(1/CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro).gen())
+sage: hash(1/CDF[['t']].gen())
 -2
-sage: hash(1/CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro).gen()^2)
+sage: hash(1/CDF[['t']].gen()^2)
 ---------------------------------------------------------------------------
 SystemError                               Traceback (most recent call last)
 

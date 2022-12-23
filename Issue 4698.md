@@ -1,6 +1,6 @@
 # Issue 4698: [with patch, needs review] a single make_element function for pickling is hard to maintain
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4698
 
 Original creator: burcin
 

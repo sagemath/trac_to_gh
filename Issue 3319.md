@@ -1,6 +1,6 @@
 # Issue 3319: expose/wrap ntl.mat_GF2 for completeness
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3319
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7896: make a worksheet and save it on sagenb.org: it doesn't have a .sws extension anymore!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7896
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8669: interrupting download in sage-spkg should delete the spkg file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8669
 
 Original creator: jhpalmieri
 

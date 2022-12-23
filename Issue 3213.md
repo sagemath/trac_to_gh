@@ -1,6 +1,6 @@
 # Issue 3213: notebook -- Account Settings page for changing password and e-mail address
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3213
 
 Original creator: TimothyClemans
 

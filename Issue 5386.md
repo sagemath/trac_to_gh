@@ -1,6 +1,6 @@
 # Issue 5386: [with patch, needs review] simplicial complexes and their homology
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5386
 
 Original creator: jhpalmieri
 
@@ -46,7 +46,7 @@ Comment by was created at 2009-04-12 08:00:13
 Some things changed in sage-3.4.1.rc2, so this needs to be fixed (this is purely due to bitrot, not your fault):
 
 ```
-wstein`@`sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -t  devel/sage/sage/homology/simplicial_complex.py
+wstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage -t  devel/sage/sage/homology/simplicial_complex.py
 sage -t  "devel/sage/sage/homology/simplicial_complex.py"   
 **********************************************************************
 File "/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage/sage/homology/simplicial_complex.py", line 863:

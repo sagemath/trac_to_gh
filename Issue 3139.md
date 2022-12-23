@@ -1,6 +1,6 @@
 # Issue 3139: typos in notebook tutorial in typesetting of sage_notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3139
 
 Original creator: was
 

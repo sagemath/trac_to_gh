@@ -1,6 +1,6 @@
 # Issue 8065: irreducible_characters() and word_problem() should sort their output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8065
 
 Original creator: AlexGhitza
 

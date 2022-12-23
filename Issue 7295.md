@@ -1,6 +1,6 @@
 # Issue 7295: typo in ecm spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7295
 
 Original creator: fbissey
 

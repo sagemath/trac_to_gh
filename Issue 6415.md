@@ -1,6 +1,6 @@
 # Issue 6415: "sage -t foo.pyx" should not by default dynamically build foo.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6415
 
 Original creator: GeorgSWeber
 

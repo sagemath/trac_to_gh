@@ -1,6 +1,6 @@
 # Issue 8486: Xelatex and Sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8486
 
 Original creator: klee
 

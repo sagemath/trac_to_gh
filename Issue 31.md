@@ -1,6 +1,6 @@
 # Issue 31: modular forms -- missing q_eigenform functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/31
 
 Original creator: was
 

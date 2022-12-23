@@ -1,6 +1,6 @@
 # Issue 2954: [with spkg. needs review] ATLAS 3.8.1: Fix Itanium 2 detection on Itanium/gcc compiler flags on RHEL5/Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2954
 
 Original creator: mabshoff
 

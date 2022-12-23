@@ -1,6 +1,6 @@
 # Issue 9959: require SAGE_CHECK to be "yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9960
 
 Original creator: jhpalmieri
 
@@ -179,7 +179,7 @@ fi
 
 sage() {
     sage_setup
-    sage-ipython "$`@`" -i
+    sage-ipython "$@" -i
 }
 
 if [ $# -eq 0 ]; then

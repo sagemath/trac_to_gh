@@ -1,6 +1,6 @@
 # Issue 6660: Error in chromatic_number() and coloring() in the Graph class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6660
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 8647: bump maxima artificially so upgrades aren't *all* broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8647
 
 Original creator: was
 

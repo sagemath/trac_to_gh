@@ -1,6 +1,6 @@
 # Issue 4934: matrix1.pyx refernece related doctest crash on cicero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4934
 
 Original creator: mabshoff
 
@@ -94,7 +94,7 @@ static void __pyx_tp_dealloc_4sage_6matrix_21matrix_symbolic_dense_Matrix_symbol
 Running it all by itself is clean:
 
 ```
-[mabshoff`@`cicero sage-3.2.3.final-cicero]$ ./sage -valgrind
+[mabshoff@cicero sage-3.2.3.final-cicero]$ ./sage -valgrind
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /home/mabshoff/build-3.2.3.final/sage-3.2.3.final-cicero/local/bin/sage-ipython
@@ -136,7 +136,7 @@ Exiting spawned Maxima process.
 3.2.3.alpha0 with 
 
 ```
-[mabshoff`@`cicero sage-3.2.3.alpha0-cicero-gcc432]$ gcc -v
+[mabshoff@cicero sage-3.2.3.alpha0-cicero-gcc432]$ gcc -v
 Using built-in specs.
 Target: i686-pc-linux-gnu
 Configured with: /usr/local/gcc-4.3.2/src/gcc-4.3.2/configure 
@@ -151,7 +151,7 @@ gcc version 4.3.2 (GCC)
 works fine. But 3.2.3.rc0 with 
 
 ```
-[mabshoff`@`cicero sage-3.2.3.alpha0-cicero-gcc432]$ gcc -v
+[mabshoff@cicero sage-3.2.3.alpha0-cicero-gcc432]$ gcc -v
 Using built-in specs.
 Target: i386-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man 

@@ -1,6 +1,6 @@
 # Issue 8095: is_primitive of WordMorphism is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8095
 
 Original creator: slabbe
 

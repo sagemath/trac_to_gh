@@ -1,6 +1,6 @@
 # Issue 2092: Add jpeg support to gd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2092
 
 Original creator: boothby
 

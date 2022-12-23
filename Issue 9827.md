@@ -1,6 +1,6 @@
 # Issue 9827: Upgrade to Cython 0.13
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9828
 
 Original creator: mpatel
 

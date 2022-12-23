@@ -1,6 +1,6 @@
 # Issue 6221: typos in Lagrange interpolation polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6221
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 3604: zlib: Conditional jump or move depends on uninitialised value(s)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3604
 
 Original creator: mabshoff
 

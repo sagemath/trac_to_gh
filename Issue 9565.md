@@ -1,6 +1,6 @@
 # Issue 9565: One-line improvement for #9537
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9565
 
 Original creator: spancratz
 

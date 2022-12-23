@@ -1,6 +1,6 @@
 # Issue 8501: find_root evaluates by plugging an equation into the function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8501
 
 Original creator: jason
 

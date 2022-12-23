@@ -1,6 +1,6 @@
 # Issue 8811: Translation for elements of a root lattice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8811
 
 Original creator: aschilling
 

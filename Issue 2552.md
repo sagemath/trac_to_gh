@@ -1,6 +1,6 @@
 # Issue 2552: fix problems in the combinat reference manual caused by #2432
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2552
 
 Original creator: mhansen
 

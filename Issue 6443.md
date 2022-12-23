@@ -1,6 +1,6 @@
 # Issue 6443: A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6443
 
 Original creator: drkirkby
 
@@ -200,7 +200,7 @@ Replying to [comment:3 drkirkby]:
 After uncompressing `ntl-5.4.2.p9.spkg`, I see two junk files:
 
 ```
-[mvngu`@`sage ntl-5.4.2.p9]$ hg st
+[mvngu@sage ntl-5.4.2.p9]$ hg st
 M SPKG.txt
 M patches/mfile
 M patches/mfile.patch

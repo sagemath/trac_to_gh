@@ -1,6 +1,6 @@
 # Issue 2581: extend solve_right to all cases; implement solve_left
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2581
 
 Original creator: was
 

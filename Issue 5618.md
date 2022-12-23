@@ -1,6 +1,6 @@
 # Issue 5618: Cyclotomic field elements are not convert to Gap correctly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5618
 
 Original creator: saliola
 

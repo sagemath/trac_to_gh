@@ -1,6 +1,6 @@
 # Issue 9944: partial_fraction_decomposition broken for FpT elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9945
 
 Original creator: robertwb
 

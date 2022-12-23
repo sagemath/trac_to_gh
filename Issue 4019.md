@@ -1,6 +1,6 @@
 # Issue 4019: [with patch, needs review] numerator and denominator for QQ[x]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4019
 
 Original creator: robertwb
 

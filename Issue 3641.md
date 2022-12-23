@@ -1,6 +1,6 @@
 # Issue 3641: [with spkg, needs review] new Singular upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3641
 
 Original creator: malb
 

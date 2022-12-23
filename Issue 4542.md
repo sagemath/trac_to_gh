@@ -1,6 +1,6 @@
 # Issue 4542: polyhedra bug fix and improvments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4542
 
 Original creator: mhampton
 

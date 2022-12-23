@@ -1,6 +1,6 @@
 # Issue 8906: Optional package for gap3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8906
 
 Original creator: mrobado
 

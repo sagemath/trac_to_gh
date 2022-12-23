@@ -1,6 +1,6 @@
 # Issue 6352: gap_packages upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6352
 
 Original creator: wdj
 

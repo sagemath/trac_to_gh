@@ -1,6 +1,6 @@
 # Issue 8957: Word problem broken for matrix groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8957
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 566: gmpz leak in gmp.pxi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/566
 
 Original creator: mabshoff
 
@@ -116,7 +116,7 @@ So you should pull the lates (hg_sage.pull()), then edit gmp.pxi to re-enable
 this patch, then build, then do this many times:
 
 ```
-sage`@`modular:~/d/sage/sage/modular/modsym$ sage -t space.py
+sage@modular:~/d/sage/sage/modular/modsym$ sage -t space.py
 ```
 
 

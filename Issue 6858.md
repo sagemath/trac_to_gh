@@ -1,6 +1,6 @@
 # Issue 6858: [with patch, needs review] Cayley graph connecting set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6858
 
 Original creator: rlm
 

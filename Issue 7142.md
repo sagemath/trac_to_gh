@@ -1,6 +1,6 @@
 # Issue 7142: We must check if the version of 'tar' found is gnu tar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7142
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1958: [with patch, needs review] fix problems with ANSI codes in sage0.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1958
 
 Original creator: craigcitro
 

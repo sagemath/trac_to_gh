@@ -1,6 +1,6 @@
 # Issue 8837: the symmetrica Sage library cython code doesn't build on OS X 10.4 PowerPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8837
 
 Original creator: was
 

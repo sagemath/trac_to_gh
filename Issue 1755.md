@@ -1,6 +1,6 @@
 # Issue 1755: Hook block matrices into matrix(...) command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1755
 
 Original creator: robertwb
 

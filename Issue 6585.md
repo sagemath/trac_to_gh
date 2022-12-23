@@ -1,6 +1,6 @@
 # Issue 6585: [with patch, needs review] trivial change to a few docstrings in partition.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6585
 
 Original creator: jhpalmieri
 

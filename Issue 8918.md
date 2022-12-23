@@ -1,6 +1,6 @@
 # Issue 8918: Strange behavior for Permutation()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8918
 
 Original creator: lvendramin
 

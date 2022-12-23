@@ -1,6 +1,6 @@
 # Issue 6565: substitution cryptosystems: converting a key from alphabetic to numerical values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6565
 
 Original creator: mvngu
 

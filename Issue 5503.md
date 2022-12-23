@@ -1,6 +1,6 @@
 # Issue 5503: "cmp" method failing on objects in the pickle jar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5503
 
 Original creator: nbruin
 

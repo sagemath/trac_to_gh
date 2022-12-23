@@ -1,6 +1,6 @@
 # Issue 7414: improve {from,to}_inversion_vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7414
 
 Original creator: ylchapuy
 

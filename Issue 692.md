@@ -1,6 +1,6 @@
 # Issue 692: add form capabilities to sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/692
 
 Original creator: was
 
@@ -40,8 +40,8 @@ would actually be pretty easy to implement for a developer.
 > 
 > --~--~---------~--~----~------------~-------~--~----~
 > You received this message because you are subscribed to the Google Groups "sage-newbie" group.
-> To post to this group, send email to sage-newbie`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-newbie-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-newbie@googlegroups.com
+> To unsubscribe from this group, send email to sage-newbie-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-newbie?hl=en
 > -~----------~----~----~----~------~----~------~--~---
 > 

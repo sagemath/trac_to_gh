@@ -1,6 +1,6 @@
 # Issue 3951: Make a "Tickets in which I have participated" report
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3951
 
 Original creator: jason
 

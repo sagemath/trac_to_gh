@@ -1,6 +1,6 @@
 # Issue 8663: expect-2.0 no longer available for download
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8663
 
 Original creator: mehrunes_dagon
 

@@ -1,6 +1,6 @@
 # Issue 206: Graphic.append() does not update xmin, xmax etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/206
 
 Original creator: dmharvey
 

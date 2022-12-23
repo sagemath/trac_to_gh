@@ -1,6 +1,6 @@
 # Issue 8011: Add sagenb.notebook.tutorial into the ReST documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8011
 
 Original creator: timdumol
 

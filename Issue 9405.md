@@ -1,6 +1,6 @@
 # Issue 9405: iconv fails to build on OpenSolaris 2008.11 x64  (disk.math)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9405
 
 Original creator: drkirkby
 

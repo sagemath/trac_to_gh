@@ -1,6 +1,6 @@
 # Issue 5505: README.txt should mention "copy $SAGE_ROOT/sage to /usr/local/bin and edit"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5505
 
 Original creator: cwitty
 

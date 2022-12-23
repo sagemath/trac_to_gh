@@ -1,6 +1,6 @@
 # Issue 1506: ntl spkg -- dumb intentional error during the build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1506
 
 Original creator: was
 

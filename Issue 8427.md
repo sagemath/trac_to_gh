@@ -1,6 +1,6 @@
 # Issue 8427: notebook fortran mode does not work with blank first line (or subroutine starting on first line)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8427
 
 Original creator: jason
 

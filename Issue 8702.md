@@ -1,6 +1,6 @@
 # Issue 8702: Datastructure for objects with prototype (clone) design pattern.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8702
 
 Original creator: hivert
 

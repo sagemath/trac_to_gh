@@ -1,6 +1,6 @@
 # Issue 4678: hg_sage.commit() Error on OS X 10.5.5. Conflict in libPng.dylib?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4678
 
 Original creator: tjlahey
 

@@ -1,6 +1,6 @@
 # Issue 6629: Implement the abstract ring of multivariate polynomials, with several bases (Schur schubert, ...)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6629
 
 Original creator: nthiery
 

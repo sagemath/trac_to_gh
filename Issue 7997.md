@@ -1,6 +1,6 @@
 # Issue 7997: Use ast to replace display hook hack
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7997
 
 Original creator: acleone
 

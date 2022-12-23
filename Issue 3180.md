@@ -1,6 +1,6 @@
 # Issue 3180: add 64 bit OSX build support to gdmodule-0.56.p4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3180
 
 Original creator: mabshoff
 

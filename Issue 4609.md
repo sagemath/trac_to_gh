@@ -1,6 +1,6 @@
 # Issue 4609: Sage 3.2.1.a1: Make two optional magma doctests also depend on database_gap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4609
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 2205: new spkg -- sqlalchemy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2205
 
 Original creator: yi
 

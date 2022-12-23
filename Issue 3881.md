@@ -1,6 +1,6 @@
 # Issue 3881: [with patch, needs review] Quiet three MPolynomialRing deprecation warnings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3881
 
 Original creator: mabshoff
 

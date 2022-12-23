@@ -1,6 +1,6 @@
 # Issue 4308: mpc spackage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4308
 
 Original creator: thevenyp
 

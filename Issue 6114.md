@@ -1,6 +1,6 @@
 # Issue 6114: symbolics -- fix removal of constants.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6114
 
 Original creator: was
 

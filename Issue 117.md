@@ -1,6 +1,6 @@
 # Issue 117: Trac: Can't view tickets I created
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/117
 
 Original creator: justin
 

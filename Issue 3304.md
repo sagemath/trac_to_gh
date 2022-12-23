@@ -1,6 +1,6 @@
 # Issue 3304: [with patch; needs review] Make cddlib Debian package use shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3304
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 9780: Typo in book_stein_ent.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9781
 
 Original creator: jdemeyer
 

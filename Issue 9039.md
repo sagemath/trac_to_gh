@@ -1,6 +1,6 @@
 # Issue 9039: major error in E.sha().bound_kato() for E an elliptic curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9039
 
 Original creator: rlm
 

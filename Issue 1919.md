@@ -1,6 +1,6 @@
 # Issue 1919: improve base fields of DualAbelainGroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1919
 
 Original creator: wdj
 

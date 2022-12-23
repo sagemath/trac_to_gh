@@ -1,6 +1,6 @@
 # Issue 1187: bug in G.conjugacy_classes_subgroups()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1187
 
 Original creator: was
 

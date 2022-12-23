@@ -1,6 +1,6 @@
 # Issue 8599: Allow size as an argument for point2d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8599
 
 Original creator: slabbe
 

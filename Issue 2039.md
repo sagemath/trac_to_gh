@@ -1,6 +1,6 @@
 # Issue 2039: add sage version const
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2039
 
 Original creator: benjamin.peterson
 

@@ -1,6 +1,6 @@
 # Issue 1955: bug in vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1955
 
 Original creator: was
 

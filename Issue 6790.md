@@ -1,6 +1,6 @@
 # Issue 6790: 12 doctest failures in devel/sage/sage/server/simple/twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6790
 
 Original creator: drkirkby
 

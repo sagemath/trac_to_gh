@@ -1,6 +1,6 @@
 # Issue 4190: division of number field order elements doesn't check for membership
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4190
 
 Original creator: davidloeffler
 

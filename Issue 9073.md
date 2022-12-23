@@ -1,6 +1,6 @@
 # Issue 9073: Handle multigraphs better in planarity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9073
 
 Original creator: boothby
 

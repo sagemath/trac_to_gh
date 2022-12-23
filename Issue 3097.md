@@ -1,6 +1,6 @@
 # Issue 3097: pbuild: make sure the files from setup.py's scripts section are copied
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3097
 
 Original creator: mabshoff
 

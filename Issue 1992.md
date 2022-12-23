@@ -1,6 +1,6 @@
 # Issue 1992: Loading and attaching spyx/pyx files -- automatic compilation and nsf locking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1992
 
 Original creator: was
 

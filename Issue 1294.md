@@ -1,6 +1,6 @@
 # Issue 1294: v.n() function blows up when v is a vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1294
 
 Original creator: jason
 

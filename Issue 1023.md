@@ -1,6 +1,6 @@
 # Issue 1023: add basic omega support to sage-sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1023
 
 Original creator: mabshoff
 

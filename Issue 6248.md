@@ -1,6 +1,6 @@
 # Issue 6248: remove executable bits from sage-README-osx.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6248
 
 Original creator: ddrake
 

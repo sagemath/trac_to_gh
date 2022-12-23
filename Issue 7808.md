@@ -1,6 +1,6 @@
 # Issue 7808: Plots seem to be shifted up and to the left by one pixel or so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7808
 
 Original creator: jason
 
@@ -47,7 +47,7 @@ Here's an even better illustration. Try changing the dpi:
 
 
 ```
-`@`interact
+@interact
 def show_shift(dpi=(50,150,1)):
     # 50 dpi = shifted left
     # 70 dpi = shifted up
@@ -73,7 +73,7 @@ One more iteration, this time with the option to see the frame:
 
 
 ```
-`@`interact
+@interact
 def show_shift(dpi=(50,150,1),frame=False):
     # 50 dpi = shifted left
     # 70 dpi = shifted up

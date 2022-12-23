@@ -1,6 +1,6 @@
 # Issue 7237: sagenb: when printing output shown twice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7237
 
 Original creator: was
 

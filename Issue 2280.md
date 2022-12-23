@@ -1,6 +1,6 @@
 # Issue 2280: DistributedFactor doesn't return an instance of sage.structure.factorization.Factorization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2280
 
 Original creator: TimothyClemans
 

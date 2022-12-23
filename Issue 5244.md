@@ -1,6 +1,6 @@
 # Issue 5244: is_unit is mostly not implemented for symbolic ring.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5244
 
 Original creator: hivert
 

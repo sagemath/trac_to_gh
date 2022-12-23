@@ -1,6 +1,6 @@
 # Issue 320: RealField.is_field() is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/320
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 2719: bitset is completely broken on os x 10.4 G5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2719
 
 Original creator: was
 

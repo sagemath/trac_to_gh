@@ -1,6 +1,6 @@
 # Issue 1482: xgcd suboptimal output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1482
 
 Original creator: nbruin
 

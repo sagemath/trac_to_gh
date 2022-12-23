@@ -1,6 +1,6 @@
 # Issue 1389: Citation instructions for Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1389
 
 Original creator: jason
 
@@ -17,7 +17,7 @@ William Stein writes:
 
 Yes to every single one of your questions.
 
-On Dec 3, 2007 1:29 PM, Jason Grout <jason-sage`@`creativetrax.com> wrote:
+On Dec 3, 2007 1:29 PM, Jason Grout <jason-sage@creativetrax.com> wrote:
 > >
 > > I'm citing Sage in a paper I'm writing.  After searching (using the
 > > search function at sagemath.org) and clicking around lots of places, I
@@ -868,7 +868,7 @@ The patch `1389-scripts.patch` looks good to me. However, when I applied `1389-s
 diff -r 76339a4ccc14 -r f9dd774a1f61 sage-banner
 --- a/sage-banner	Thu Oct 16 03:43:22 2008 -0700
 +++ b/sage-banner	Mon Oct 20 16:36:06 2008 -0700
-`@``@` -1,4 +1,4 `@``@`
+@@ -1,4 +1,4 @@
  ----------------------------------------------------------------------
 -| SAGE Version 3.1.4, Release Date: 2008-10-16                       |
 +| Sage Version 3.1.4, Release Date: 2008-10-16                       |

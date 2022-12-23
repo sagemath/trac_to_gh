@@ -1,6 +1,6 @@
 # Issue 6584: Use pari to do ideal intersections
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6584
 
 Original creator: fwclarke
 

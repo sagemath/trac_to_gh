@@ -1,6 +1,6 @@
 # Issue 4291: [with patch, needs review] Fix problem with IPython and init.sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4291
 
 Original creator: mhansen
 

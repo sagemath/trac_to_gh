@@ -1,6 +1,6 @@
 # Issue 8894: topological minor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8894
 
 Original creator: ncohen
 

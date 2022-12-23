@@ -1,6 +1,6 @@
 # Issue 3910: [with patch,  needs review] adjust interval printing: precise integers print as integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3910
 
 Original creator: cwitty
 

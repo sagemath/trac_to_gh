@@ -1,6 +1,6 @@
 # Issue 707: Database for Knuth's Power Tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/707
 
 Original creator: boothby
 
@@ -43,6 +43,6 @@ def knuth_tree(levels):
                     tree[i + m] = m
                     newleaves.append(i + m)
         leaves = newleaves
-    return DiGraph([This is the Trac macro *i, tree[i* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#i, tree[i-macro) for i in tree if not i == 1])
+    return DiGraph([[i, tree[i]] for i in tree if not i == 1])
 ```
 

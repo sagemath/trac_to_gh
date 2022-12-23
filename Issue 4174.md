@@ -1,6 +1,6 @@
 # Issue 4174: Do not run "make install" in python.spkg in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4174
 
 Original creator: mabshoff
 

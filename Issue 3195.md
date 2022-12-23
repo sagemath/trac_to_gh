@@ -1,6 +1,6 @@
 # Issue 3195: add 64 bit OSX build support for polybori
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3195
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5869: Fix libgpg-error shared library name on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5869
 
 Original creator: pjeremy
 

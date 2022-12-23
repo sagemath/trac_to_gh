@@ -1,6 +1,6 @@
 # Issue 9031: algebraic_dependency with algorithm=fpLLL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9031
 
 Original creator: zimmerma
 

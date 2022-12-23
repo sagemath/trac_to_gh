@@ -1,6 +1,6 @@
 # Issue 7592: Flow method using LP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7592
 
 Original creator: ncohen
 

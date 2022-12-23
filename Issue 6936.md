@@ -1,6 +1,6 @@
 # Issue 6936: [with patch, needs review] Implement generic testing from #6343 for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6936
 
 Original creator: jason
 
@@ -185,7 +185,7 @@ Comment by mvngu created at 2009-09-26 07:50:26
 With `trac-6936-matrix-generic-doctesting-minpoly.patch`, I got a hunk failure:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6936/trac-6936-matrix-generic-doctesting-minpoly.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6936/trac-6936-matrix-generic-doctesting-minpoly.patch && hg qpush
 adding trac-6936-matrix-generic-doctesting-minpoly.patch to series file
 applying trac-6936-matrix-generic-doctesting-minpoly.patch
 patching file sage/matrix/matrix2.pyx
@@ -199,10 +199,10 @@ Errors during apply, please fix and refresh trac-6936-matrix-generic-doctesting-
 The hunk in question is
 
 ```
-[mvngu`@`sage sage-main]$ cat sage/matrix/matrix2.pyx.rej
+[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej
 --- matrix2.pyx
 +++ matrix2.pyx
-`@``@` -1190,6 +1191,22 `@``@`
+@@ -1190,6 +1191,22 @@
          return mp
      
  

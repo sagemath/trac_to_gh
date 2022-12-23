@@ -1,6 +1,6 @@
 # Issue 7948: fix docstring processing errors in 4.3.1.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7948
 
 Original creator: cremona
 

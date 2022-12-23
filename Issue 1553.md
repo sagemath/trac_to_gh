@@ -1,6 +1,6 @@
 # Issue 1553: Investigate PolyBoRi on 64-bit RHEL5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1553
 
 Original creator: rlm
 

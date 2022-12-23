@@ -1,6 +1,6 @@
 # Issue 1522: more 2.9-alpha7 ppc osx prebuilt problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1522
 
 Original creator: craigcitro
 

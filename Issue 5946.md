@@ -1,6 +1,6 @@
 # Issue 5946: bug in content for p-adic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5946
 
 Original creator: AlexGhitza
 

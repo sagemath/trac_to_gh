@@ -1,6 +1,6 @@
 # Issue 8345: cannot convert symbolic functions back from maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8345
 
 Original creator: burcin
 
@@ -15,7 +15,7 @@ From sage-devel:
 
 ```
 On Mon, 22 Feb 2010 07:02:21 -0800 (PST)
-Håkan Granath <hakan.granath`@`googlemail.com> wrote:
+Håkan Granath <hakan.granath@googlemail.com> wrote:
 
 > Typesetting conjugates of variables (that has been passed to
 > Maxima and back?) is strange. In e.g. Sage 4.2 this did not

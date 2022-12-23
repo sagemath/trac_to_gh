@@ -1,6 +1,6 @@
 # Issue 1063: [with patch] "sage -sh" should run $SHELL with Sage environment variables set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1063
 
 Original creator: cwitty
 
@@ -11,11 +11,11 @@ Assignee: was
 After the patch, this works:
 
 ```
-cwitty`@`magnetar:~/sage$ ./sage -sh
+cwitty@magnetar:~/sage$ ./sage -sh
 Starting subshell with Sage environment variables set:
-cwitty`@`magnetar:~/sage$ echo $SAGE_LOCAL
+cwitty@magnetar:~/sage$ echo $SAGE_LOCAL
 /home/cwitty/sage/local
-cwitty`@`magnetar:~/sage$ exit
+cwitty@magnetar:~/sage$ exit
 exit
 Exited Sage subshell.
 ```

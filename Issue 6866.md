@@ -1,6 +1,6 @@
 # Issue 6866: Latex typos in orthogonal_polys.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6866
 
 Original creator: hgranath
 

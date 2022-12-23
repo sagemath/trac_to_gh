@@ -1,6 +1,6 @@
 # Issue 7355: Allow sage -i/-f to install packages without stating version number.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7355
 
 Original creator: timdumol
 

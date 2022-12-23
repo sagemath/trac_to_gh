@@ -1,6 +1,6 @@
 # Issue 8512: database_stein_watkins_mini uses 'cp -v' which fails on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8512
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9627: converting from symbolic ring to int is broken,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9627
 
 Original creator: syazdani
 

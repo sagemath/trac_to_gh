@@ -1,6 +1,6 @@
 # Issue 1255: bug in permutation_automorphism_group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1255
 
 Original creator: wdj
 

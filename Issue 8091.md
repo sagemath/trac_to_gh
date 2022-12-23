@@ -1,6 +1,6 @@
 # Issue 8091: sympow builds 32-bit mode on Open Solaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8091
 
 Original creator: drkirkby
 
@@ -76,7 +76,7 @@ Tachyon builds as a 32 bit executable too. But runs as well.
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0/local$  find . -exec file {} \; | grep "ELF 32"
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$  find . -exec file {} \; | grep "ELF 32"
 ./bin/tachyon:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, stripped
 ./bin/size222:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available
 ./bin/class.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
@@ -87,7 +87,7 @@ jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0/local$  find . -exec file {} \;
 ./lib/omalloc.o:	ELF 32-bit LSB relocatable 80386 Version 1
 ./lib/sympow/sympow:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
 ./lib/omalloc_debug.o:	ELF 32-bit LSB relocatable 80386 Version 1
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ 
 
 
 ```

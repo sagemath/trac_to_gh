@@ -1,6 +1,6 @@
 # Issue 8497: bug in simplify_rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8497
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 7251: Allow for Integer(3, parent = MyParent)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7251
 
 Original creator: nthiery
 

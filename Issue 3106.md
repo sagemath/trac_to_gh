@@ -1,6 +1,6 @@
 # Issue 3106: Add an "image" link for a screenshot of the JMOL applet in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3106
 
 Original creator: jason
 

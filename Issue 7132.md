@@ -1,6 +1,6 @@
 # Issue 7132: mpir-1.2.p7 fails to build as CXXFLAGS has no 64-bit option on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7132
 
 Original creator: drkirkby
 

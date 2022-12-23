@@ -1,6 +1,6 @@
 # Issue 6025: Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6025
 
 Original creator: mabshoff
 

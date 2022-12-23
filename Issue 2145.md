@@ -1,6 +1,6 @@
 # Issue 2145: doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2145
 
 Original creator: was
 

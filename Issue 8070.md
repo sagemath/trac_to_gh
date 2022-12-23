@@ -1,6 +1,6 @@
 # Issue 8070: New  pycrypto-2.0.1.p5.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8070
 
 Original creator: jsp
 
@@ -29,7 +29,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing pycrypto-2.0.1.p5.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3.1$ 
+jaap@opensolaris:~/Downloads/sage-4.3.1$ 
 
 ```
 
@@ -115,7 +115,7 @@ and using 'file' in the directory, I can indeed see the binaries are now 64-bit.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/*
+drkirkby@hawk:~/sage-4.3.1$ file /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/*
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/AES.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/ARC2.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/ARC4.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
@@ -128,7 +128,7 @@ drkirkby`@`hawk:~/sage-4.3.1$ file /export/home/drkirkby/sage-4.3.1/local/lib/py
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/__init__.pyc:	data
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/RC5.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/XOR.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
-drkirkby`@`hawk:~/sage-4.3.1$ 
+drkirkby@hawk:~/sage-4.3.1$ 
 ```
 
 

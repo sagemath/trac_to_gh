@@ -1,6 +1,6 @@
 # Issue 8822: Bug in Family constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8822
 
 Original creator: jbandlow
 

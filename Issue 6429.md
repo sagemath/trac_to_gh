@@ -1,6 +1,6 @@
 # Issue 6429: [with patch; needs review] sagedoc: make search_src and friends less OS dependent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6429
 
 Original creator: jhpalmieri
 

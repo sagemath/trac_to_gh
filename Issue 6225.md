@@ -1,6 +1,6 @@
 # Issue 6225: [with patch, needs review] add link to irc in notebook help page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6225
 
 Original creator: schilly
 

@@ -1,6 +1,6 @@
 # Issue 6876: plotting prime_pi and nth_prime fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6876
 
 Original creator: whuss
 

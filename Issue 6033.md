@@ -1,6 +1,6 @@
 # Issue 6033: Bring plot/disk.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6033
 
 Original creator: kcrisman
 

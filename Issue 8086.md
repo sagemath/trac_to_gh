@@ -1,6 +1,6 @@
 # Issue 8086: numpy fails to build on Open Solaris x64 - 32 / 64-bit mixup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8086
 
 Original creator: drkirkby
 
@@ -165,7 +165,7 @@ Is this bit of code in the patch right? It looks wrong to me:
 
 ```
 echo "#! /usr/bin/env bash" > gcc 
-echo "`which gcc` -m64 " | sed 's/$/\$`@`/' >> fake_gcc 
+echo "`which gcc` -m64 " | sed 's/$/\$@/' >> fake_gcc 
 ```
 
 
@@ -176,7 +176,7 @@ i.e.
 
 ```
 echo "#! /usr/bin/env bash" > $SAGE_LOCAL/bin/gcc
-echo "`which gcc` -m64 " | sed 's/$/\$`@`/' >> $SAGE_LOCAL/bin/gcc 
+echo "`which gcc` -m64 " | sed 's/$/\$@/' >> $SAGE_LOCAL/bin/gcc 
 ```
 
 
@@ -184,7 +184,7 @@ Also, why use 'sed'? If I understand your intentions correctly,
 
 
 ```
-echo "`which gcc` -m64 \$`@`"
+echo "`which gcc` -m64 \$@"
 ```
 
 
@@ -194,8 +194,8 @@ I would also add that 'which' is not a POSIX command, whereas 'command -v' gives
 
 
 ```
-drkirkby`@`hawk:~$ echo "`command -v gcc` -m64 \$`@`" 
-/usr/local/gcc-4.4.4/bin/gcc -m64 $`@`
+drkirkby@hawk:~$ echo "`command -v gcc` -m64 \$@" 
+/usr/local/gcc-4.4.4/bin/gcc -m64 $@
 ```
 
 

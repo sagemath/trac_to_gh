@@ -1,6 +1,6 @@
 # Issue 328: maximafunction bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/328
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 
 ```
 
-	Gregory Vanuxem <g.vanuxem`@`wanadoo.fr> 	
+	Gregory Vanuxem <g.vanuxem@wanadoo.fr> 	
 to SAGE-Devel
 	
 show details
@@ -87,7 +87,7 @@ Fixed for sage-2.4:
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1174532177 25200
 # Node ID 722fce5223fdc8bde9f0365993458a6893bc60b5
 # Parent  d49a5c6e928f2ae350f8de0b4c4d63b2da6c938e
@@ -96,7 +96,7 @@ Fix trac # 328 -- weirdness with maxima function definition.
 diff -r d49a5c6e928f -r 722fce5223fd sage/interfaces/maxima.py
 --- a/sage/interfaces/maxima.py Wed Mar 21 18:25:59 2007 -0700
 +++ b/sage/interfaces/maxima.py Wed Mar 21 19:56:17 2007 -0700
-`@``@` -326,7 +326,17 `@``@` is much less robust, and is not recommen
+@@ -326,7 +326,17 @@ is much less robust, and is not recommen
  is much less robust, and is not recommended.}
 
      sage: t = '"%s"'%10^10000   # ten thousand character string.
@@ -115,7 +115,7 @@ diff -r d49a5c6e928f -r 722fce5223fd sage/interfaces/maxima.py
  """
 
  #*****************************************************************************
-`@``@` -650,6 +660,8 `@``@` class Maxima(Expect):
+@@ -650,6 +660,8 @@ class Maxima(Expect):
              0.90929742682568171
              sage: loads(t.dumps())
              gamma(x)*sin(x)
@@ -124,7 +124,7 @@ diff -r d49a5c6e928f -r 722fce5223fd sage/interfaces/maxima.py
          """
          name = self._next_var_name()
          defn = str(defn)
-`@``@` -678,14 +690,17 `@``@` class Maxima(Expect):
+@@ -678,14 +690,17 @@ class Maxima(Expect):
          s = self._eval_line('%s'%var)
          return s
 

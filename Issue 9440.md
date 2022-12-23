@@ -1,6 +1,6 @@
 # Issue 9440: document more environment variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9440
 
 Original creator: jhpalmieri
 

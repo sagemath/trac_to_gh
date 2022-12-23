@@ -1,6 +1,6 @@
 # Issue 3425: [with patch; needs review] setup.py -- change the description, author, author_email.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3425
 
 Original creator: was
 

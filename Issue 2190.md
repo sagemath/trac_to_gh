@@ -1,6 +1,6 @@
 # Issue 2190: implement a ZZ-module saturation algorithm: this is the key thing needed to compute kernels over ZZ, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2190
 
 Original creator: was
 
@@ -62,7 +62,7 @@ and a very typical one for my research would look like this:
 sage: a = random_matrix(ZZ, 100,300)
 sage: w = a.row_space()
 sage: time s = w.saturation()
-[This is the Trac macro *[waited many many minutes --- no answer* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[waited many many minutes --- no answer-macro)]
+[[[waited many many minutes --- no answer]]]
 sage: a = random_matrix(ZZ, 100,300)
 sage: m = magma(a)
 sage: magma.eval('time c := Saturation(%s);'%m.name())

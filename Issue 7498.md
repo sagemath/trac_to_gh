@@ -1,6 +1,6 @@
 # Issue 7498: Do *not* import matplotlib at sage startup.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7498
 
 Original creator: robertwb
 

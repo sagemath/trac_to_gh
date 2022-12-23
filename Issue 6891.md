@@ -1,6 +1,6 @@
 # Issue 6891: Bring functions.spike_functions.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6891
 
 Original creator: kcrisman
 

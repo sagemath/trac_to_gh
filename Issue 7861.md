@@ -1,6 +1,6 @@
 # Issue 7861: pynac-0.1.10 not building with Open Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7861
 
 Original creator: drkirkby
 
@@ -221,14 +221,14 @@ On a SPARC system, the 'amd64' would be replaced by 'sparcv9'. The exact directo
 On a SPARC
 
 ```
-drkirkby`@`kestrel:~$ isainfo -n
+drkirkby@kestrel:~$ isainfo -n
 sparcv9
 ```
 
 On a Xeon
 
 ```
-drkirkby`@`hawk:~$ isainfo -n
+drkirkby@hawk:~$ isainfo -n
 amd64
 ```
 

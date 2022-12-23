@@ -1,6 +1,6 @@
 # Issue 1880: Sage 2.10: qqbar numerical doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1880
 
 Original creator: mabshoff
 

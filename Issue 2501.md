@@ -1,6 +1,6 @@
 # Issue 2501: [with patch, needs review] SBox class for Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2501
 
 Original creator: malb
 

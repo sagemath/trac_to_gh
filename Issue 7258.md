@@ -1,6 +1,6 @@
 # Issue 7258: sagenb notebook: fix "When saving a worksheet, the default filename has "..." in it. "; also change some menu items related to loading and saving worksheets to be clearer.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7258
 
 Original creator: was
 

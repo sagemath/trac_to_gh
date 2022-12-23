@@ -1,6 +1,6 @@
 # Issue 1993: dsage -- bugs bugs bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1993
 
 Original creator: was
 

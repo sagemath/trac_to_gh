@@ -1,6 +1,6 @@
 # Issue 4354: loading a file with spaces in the filename doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4354
 
 Original creator: anakha
 
@@ -54,7 +54,7 @@ Be aware that if you copied the sage script somewhere (like /usr/local/bin) for 
 needs to be replaced by
 
 ```
-"$SAGE_ROOT/local/bin/sage-sage" "$`@`"
+"$SAGE_ROOT/local/bin/sage-sage" "$@"
 ```
 
 

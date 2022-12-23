@@ -1,6 +1,6 @@
 # Issue 6117: graph plotting with show ignores keyword 'talk'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6117
 
 Original creator: ekirkman
 

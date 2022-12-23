@@ -1,6 +1,6 @@
 # Issue 3714: add quotes to paramteres passed in lisp and clisp scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3714
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5987: fix a few more bad comparison doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5987
 
 Original creator: AlexGhitza
 

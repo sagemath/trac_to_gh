@@ -1,6 +1,6 @@
 # Issue 5184: nonzero_positions is broken for sparse vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5184
 
 Original creator: jhpalmieri
 

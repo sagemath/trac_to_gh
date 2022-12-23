@@ -1,6 +1,6 @@
 # Issue 776: kernel of linear homomorphism fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/776
 
 Original creator: nbruin
 

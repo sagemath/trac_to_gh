@@ -1,6 +1,6 @@
 # Issue 3295: misspelled "parrallel" in graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3295
 
 Original creator: mhampton
 

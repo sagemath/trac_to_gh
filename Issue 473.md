@@ -1,6 +1,6 @@
 # Issue 473: make the -valgrind target more flexible, add massif support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/473
 
 Original creator: mabshoff
 

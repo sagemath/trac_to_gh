@@ -1,6 +1,6 @@
 # Issue 3085: [with patch, needs *really* easy review] identity matrix docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3085
 
 Original creator: jason
 

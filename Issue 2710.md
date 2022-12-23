@@ -1,6 +1,6 @@
 # Issue 2710: bug -- !singular doesn't work anymore on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2710
 
 Original creator: was
 

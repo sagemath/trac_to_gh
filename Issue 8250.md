@@ -1,6 +1,6 @@
 # Issue 8250: Extend ClasscallMetaclass to allow for binding behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8250
 
 Original creator: nthiery
 
@@ -26,7 +26,7 @@ with a binding behavior, as if it was a method of Foo: namely for
             sage: class Foo:
             ...       class Bar(object):
             ...           __metaclass__ = ClasscallMetaclass
-            ...           `@`staticmethod
+            ...           @staticmethod
             ...           def __classget__(cls, instance, owner):
             ...               print "calling __classget__"
             ...               if instance is None:

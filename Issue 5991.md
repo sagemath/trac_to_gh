@@ -1,6 +1,6 @@
 # Issue 5991: Add as tandard constructor for dynamic classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5991
 
 Original creator: nthiery
 

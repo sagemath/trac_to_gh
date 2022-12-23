@@ -1,6 +1,6 @@
 # Issue 8754: sagenb -- add "how to test" directions to the sagenb README.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8754
 
 Original creator: was
 

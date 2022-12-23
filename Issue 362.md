@@ -1,6 +1,6 @@
 # Issue 362: str --> basestring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/362
 
 Original creator: was
 

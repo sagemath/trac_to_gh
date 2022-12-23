@@ -1,6 +1,6 @@
 # Issue 8817: Rplot001.png left around when doctesting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8817
 
 Original creator: was
 

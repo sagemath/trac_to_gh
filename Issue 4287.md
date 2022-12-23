@@ -1,6 +1,6 @@
 # Issue 4287: [with patch, needs review] improve elliptic curve doctest (part 5)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4287
 
 Original creator: zimmerma
 

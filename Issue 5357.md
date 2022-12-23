@@ -1,6 +1,6 @@
 # Issue 5357: typos in library file; Sage 3.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5357
 
 Original creator: mvngu
 

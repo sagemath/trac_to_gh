@@ -1,6 +1,6 @@
 # Issue 1712: SIGSEGV in PolyBoRi's cmp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1712
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 5512: CombinatorialSpeciesStructures with different labels are equal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5512
 
 Original creator: saliola
 

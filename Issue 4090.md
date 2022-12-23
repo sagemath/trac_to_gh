@@ -1,6 +1,6 @@
 # Issue 4090: polybori-0.5rc1.p4 fails to build on OSX 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4090
 
 Original creator: mabshoff
 

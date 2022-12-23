@@ -1,6 +1,6 @@
 # Issue 3535: notebook -- A "getting started" worksheet for new users
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3535
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 7252: [with patch, needs review] fix spkg/install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7252
 
 Original creator: jhpalmieri
 

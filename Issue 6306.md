@@ -1,6 +1,6 @@
 # Issue 6306: [with patch, needs review] fix some reference manual issues for 4.0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6306
 
 Original creator: jhpalmieri
 

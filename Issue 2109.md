@@ -1,6 +1,6 @@
 # Issue 2109: the maxima interface doesn't recognize a syntax error (and then hangs)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2109
 
 Original creator: mhansen
 

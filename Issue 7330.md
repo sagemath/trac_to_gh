@@ -1,6 +1,6 @@
 # Issue 7330: notebook download to a file broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7330
 
 Original creator: robertwb
 

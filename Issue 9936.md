@@ -1,6 +1,6 @@
 # Issue 9936: PARI real precision is broken in many ways
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9937
 
 Original creator: jdemeyer
 

@@ -1,6 +1,6 @@
 # Issue 4610: "sage -tp X"L Move certain long doctests to the start of the list of files to test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4610
 
 Original creator: mabshoff
 

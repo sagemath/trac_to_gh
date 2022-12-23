@@ -1,6 +1,6 @@
 # Issue 6121: use metaclasses to support nested class pickling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6121
 
 Original creator: robertwb
 

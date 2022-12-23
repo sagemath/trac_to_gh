@@ -1,6 +1,6 @@
 # Issue 5082: remove power_mod method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5082
 
 Original creator: burcin
 

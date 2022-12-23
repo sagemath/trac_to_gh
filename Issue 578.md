@@ -1,6 +1,6 @@
 # Issue 578: Fix typo in GF constructor and elem_cache
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/578
 
 Original creator: malb
 

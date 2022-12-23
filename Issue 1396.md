@@ -1,6 +1,6 @@
 # Issue 1396: Ideal.groebner_basis should accept keyword arguments for strategy parameters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1396
 
 Original creator: malb
 
@@ -248,7 +248,7 @@ Earlier tickets in the queue include #6922 and #9499.  Since `sage/libs/singular
 ```diff
 --- singular-cdefs.pxi
 +++ singular-cdefs.pxi
-`@``@` -995,8 +994,6 `@``@`
+@@ -995,8 +994,6 @@
      poly *prCopyR_NoSort(poly *p, ring *r, ring *dest_r)
      poly *prCopyR(poly *p, ring *r, ring *dest_r)
  

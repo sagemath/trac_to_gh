@@ -1,6 +1,6 @@
 # Issue 1450: update the error message for using maple / mathmatica from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1450
 
 Original creator: was
 

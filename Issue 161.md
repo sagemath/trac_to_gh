@@ -1,6 +1,6 @@
 # Issue 161: segfaults not picked up in doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/161
 
 Original creator: dmharvey
 
@@ -35,7 +35,7 @@ This will be in SAGE-1.5:
 ```
 sha:~/s/local/bin was$ hg export 92
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1162797238 28800
 # Node ID c89bcbe0a11a94137dc3581a75c9158cd39b44fb
 # Parent  edcb018e5a26dc2ae56cc87efdf891c56c09b94d
@@ -44,7 +44,7 @@ Beefed up the doctesting in various ways to address Trac bug #161 (doctest silen
 diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest
 --- a/sage-doctest      Fri Nov 03 06:54:40 2006 -0800
 +++ b/sage-doctest      Sun Nov 05 23:13:58 2006 -0800
-`@``@` -301,6 +301,9 `@``@` def test_file(file):
+@@ -301,6 +301,9 @@ def test_file(file):
          if 'Failed' in s or 'Error' in s:
              delete_tmpfiles()
              sys.exit(1)
@@ -57,7 +57,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest
 diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
 --- a/sage-doctest_tex  Fri Nov 03 06:54:40 2006 -0800
 +++ b/sage-doctest_tex  Sun Nov 05 23:13:58 2006 -0800
-`@``@` -155,7 +155,7 `@``@` def no_escapes(x):
+@@ -155,7 +155,7 @@ def no_escapes(x):
          k = j + x[j:].find(chr(109))
          x = x[:j] + x[k+1:]
  
@@ -66,7 +66,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
      global E
      
      if verbose:
-`@``@` -195,7 +195,7 `@``@` def test_session(S, verbose=False):
+@@ -195,7 +195,7 @@ def test_session(S, verbose=False):
              i += 1
              
              
@@ -75,7 +75,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
      global ERRORS
      name = os.path.basename(file)
      name = name[:name.find(".")]
-`@``@` -205,7 +205,7 `@``@` def test_file(file, start, stop):
+@@ -205,7 +205,7 @@ def test_file(file, start, stop):
  
          sessions = extract_python_doc(file)
      else:
@@ -84,7 +84,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
          return 0
      i = 0
      for S in sessions:
-`@``@` -213,7 +213,7 `@``@` def test_file(file, start, stop):
+@@ -213,7 +213,7 @@ def test_file(file, start, stop):
          try:
              if i >= start:
                  print "Example %s (line %s)"%(i,S[0][0])                        
@@ -93,7 +93,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
          except pexpect.TIMEOUT:
              print "Example %s (line %s)"%(i,S[0][0])                        
              print "TIMEOUT!!"
-`@``@` -233,15 +233,21 `@``@` def test_file(file, start, stop):
+@@ -233,15 +233,21 @@ def test_file(file, start, stop):
          if stop != 0 and i > stop:
              break
      return 0
@@ -118,7 +118,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
          file = sys.argv[1]
          start = 0
          stop  = 0
-`@``@` -250,9 +256,21 `@``@` if __name__ ==  '__main__':
+@@ -250,9 +256,21 @@ if __name__ ==  '__main__':
          if len(sys.argv) > 3:
              stop = int(sys.argv[3])
          initialize_sage()
@@ -144,7 +144,7 @@ diff -r edcb018e5a26 -r c89bcbe0a11a sage-doctest_tex
 diff -r edcb018e5a26 -r c89bcbe0a11a sage-test
 --- a/sage-test Fri Nov 03 06:54:40 2006 -0800
 +++ b/sage-test Sun Nov 05 23:13:58 2006 -0800
-`@``@` -79,8 +79,8 `@``@` def test_file(F):
+@@ -79,8 +79,8 @@ def test_file(F):
              F = file        
  
      base, ext = os.path.splitext(F)

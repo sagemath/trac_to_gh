@@ -1,6 +1,6 @@
 # Issue 2877: security risk -- several constructors use eval to parse input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2877
 
 Original creator: robertwb
 
@@ -280,7 +280,7 @@ Sorry for late comment, but how about this?
 ```diff
 --- a/src/sage/rings/complex_mpfr.pyx
 +++ b/src/sage/rings/complex_mpfr.pyx
-`@``@` -504,7 +504,7 `@``@` class ComplexField_class(sage.rings.abc.ComplexField):
+@@ -504,7 +504,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):
              sage: CC('hello')
              Traceback (most recent call last):
              ...
@@ -289,7 +289,7 @@ Sorry for late comment, but how about this?
          """
          if not isinstance(x, (RealNumber, tuple)):
              if isinstance(x, ComplexDoubleElement):
-`@``@` -516,7 +516,7 `@``@` class ComplexField_class(sage.rings.abc.ComplexField):
+@@ -516,7 +516,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):
                  x = x.replace('E', 'e')
                  allowed = '+-.*0123456789Ie'
                  if not all(letter in allowed for letter in x):

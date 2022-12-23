@@ -1,6 +1,6 @@
 # Issue 5705: [with patch, needs review] homogenize() does not respect the rule that parents are unique
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5705
 
 Original creator: malb
 

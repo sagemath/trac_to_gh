@@ -1,6 +1,6 @@
 # Issue 6994: [with spkg, needs review] upgrade matplotlib to 0.99.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6994
 
 Original creator: jason
 

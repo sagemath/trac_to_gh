@@ -1,6 +1,6 @@
 # Issue 8493: Complex conjugation in Galois groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8493
 
 Original creator: davidloeffler
 

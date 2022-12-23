@@ -1,6 +1,6 @@
 # Issue 9344: matrix constructor does not honor nrows if given a method to generate the entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9344
 
 Original creator: lftabera
 

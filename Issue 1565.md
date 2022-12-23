@@ -1,6 +1,6 @@
 # Issue 1565: RealDoubleField documentation missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1565
 
 Original creator: phatsphere
 
@@ -41,7 +41,7 @@ Comment by mabshoff created at 2007-12-19 11:04:24
 I cannot reproduce this with either Sage 2.9.1.alpha1 compiled from source as well as 2.9 on sage.math:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.9.1.alpha1$ ./sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.9.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.9.1.alpha1, Release Date: 2007-12-18                |
@@ -63,7 +63,7 @@ def RealDoubleField():
     return _RDF
 sage:
 Exiting SAGE (CPU time 0m0.02s, Wall time 0m38.13s).
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.9.1.alpha1$ sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.9.1.alpha1$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.9, Release Date: 2007-12-16                         |

@@ -1,6 +1,6 @@
 # Issue 3935: ode_solver __init__ method ignores many parameters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3935
 
 Original creator: jwmerrill
 

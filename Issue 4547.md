@@ -1,6 +1,6 @@
 # Issue 4547: The Sage Notebook doesn't specify the Content-Type header in its responses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4547
 
 Original creator: mhansen
 

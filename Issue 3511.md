@@ -1,6 +1,6 @@
 # Issue 3511: make laplacian_matrix a synonym for kirchoff_matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3511
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 1689: document SAGE_FORTRAN_LIB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1689
 
 Original creator: mabshoff
 

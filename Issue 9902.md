@@ -1,6 +1,6 @@
 # Issue 9902: is_prime should document proof flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9903
 
 Original creator: dmharvey
 

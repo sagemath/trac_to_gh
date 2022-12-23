@@ -1,6 +1,6 @@
 # Issue 4932: fix solve_left_LU for matrix_double_dense, which was totally broken forever (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4932
 
 Original creator: was
 

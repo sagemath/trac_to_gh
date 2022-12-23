@@ -1,6 +1,6 @@
 # Issue 7505: Add scripts which check C and C++ compilers, and report what they are.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7505
 
 Original creator: drkirkby
 
@@ -37,15 +37,15 @@ Obviously a reviewer can test these scripts on any platforms they have access to
  * On a Sun Blade 2000 SPARC box, with Sun Studio 12.1
 
 ```
-drkirkby`@`swan:[~] $ uname -a
+drkirkby@swan:[~] $ uname -a
 SunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000
-drkirkby`@`swan:[~] $ echo $CC
+drkirkby@swan:[~] $ echo $CC
 /opt/xxxsunstudio12.1/bin/cc
-drkirkby`@`swan:[~] $ echo $CXX
+drkirkby@swan:[~] $ echo $CXX
 /opt/xxxsunstudio12.1/bin/CC
-drkirkby`@`swan:[~] $ ./testcc
+drkirkby@swan:[~] $ ./testcc
 Sun_on_Solaris
-drkirkby`@`swan:[~] $ ./testcxx
+drkirkby@swan:[~] $ ./testcxx
 Sun_on_Solaris
 ```
 
@@ -53,11 +53,11 @@ Sun_on_Solaris
  *  On the same Sun Blade 2000, but with CC and CXX set to gcc and g++
 
 ```
-drkirkby`@`swan:[~] $ export CC=gcc
-drkirkby`@`swan:[~] $ export CXX=g++
-drkirkby`@`swan:[~] $ ./testcc 
+drkirkby@swan:[~] $ export CC=gcc
+drkirkby@swan:[~] $ export CXX=g++
+drkirkby@swan:[~] $ ./testcc 
 GNU
-drkirkby`@`swan:[~] $ ./testcxx
+drkirkby@swan:[~] $ ./testcxx
 GNU
 ```
 
@@ -130,11 +130,11 @@ HP_on_HPUX
  * On a linux machine (sage.math.washington.edu), with the variable CC and CXX not set. In this case, the exit code is 1, not 0. 
 
 ```
-kirkby`@`sage:~$ unset CC
-kirkby`@`sage:~$ unset CXX
-kirkby`@`sage:~$ ./testcc
+kirkby@sage:~$ unset CC
+kirkby@sage:~$ unset CXX
+kirkby@sage:~$ ./testcc
 Sorry, you should define the environment variable CC
-kirkby`@`sage:~$ ./testcxx
+kirkby@sage:~$ ./testcxx
 Sorry, you should define the environment variable CXX
 ```
 
@@ -142,13 +142,13 @@ Sorry, you should define the environment variable CXX
  * On the same Linux machine, but with CC and CXX set to locations of GNU compilers. In one case an absolute path is given, in the other case it is not 
 
 ```
-kirkby`@`sage:~$ uname -a
+kirkby@sage:~$ uname -a
 Linux sage.math.washington.edu 2.6.24-23-server #1 SMP Wed Apr 1 22:14:30 UTC 2009 x86_64 GNU/Linux
-kirkby`@`sage:~$ export CC=/usr/bin/gcc
-kirkby`@`sage:~$ export CXX=g++
-kirkby`@`sage:~$ ./testcc
+kirkby@sage:~$ export CC=/usr/bin/gcc
+kirkby@sage:~$ export CXX=g++
+kirkby@sage:~$ ./testcc
 GNU
-kirkby`@`sage:~$ ./testcxx
+kirkby@sage:~$ ./testcxx
 GNU
 ```
 
@@ -156,13 +156,13 @@ GNU
  * On an Apple (bsd.math.washington.edu) running OS X 
 
 ```
-[kirkby`@`bsd ~]$ uname -a
+[kirkby@bsd ~]$ uname -a
 Darwin bsd.local 10.2.0 Darwin Kernel Version 10.2.0: Tue Nov  3 10:37:10 PST 2009; root:xnu-1486.2.11~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin
-[kirkby`@`bsd ~]$ export CC=gcc
-[kirkby`@`bsd ~]$ export CXX=g++
-[kirkby`@`bsd ~]$ ./testcc
+[kirkby@bsd ~]$ export CC=gcc
+[kirkby@bsd ~]$ export CXX=g++
+[kirkby@bsd ~]$ ./testcc
 GNU
-[kirkby`@`bsd ~]$ ./testcxx
+[kirkby@bsd ~]$ ./testcxx
 GNU
 ```
 
@@ -1279,9 +1279,9 @@ In each case, the test scripts work as claimed. We can say that the scripts have
 The patch `trac_7505-test-scripts.patch` needs to be applied to `SAGE_ROOT/spkg/base`. But note that with Sage 4.3 some files under `SAGE_ROOT/spkg/base` are not yet managed by revision control:
 
 ```
-[mvngu`@`boxen base]$ pwd
+[mvngu@boxen base]$ pwd
 /dev/shm/mvngu/sage-4.3/spkg/base
-[mvngu`@`boxen base]$ hg st
+[mvngu@boxen base]$ hg st
 M sage-env
 M sage-spkg
 ! prereq-0.3-install
@@ -1292,8 +1292,8 @@ M sage-spkg
 The file `prereq-0.3-install` is now superseded by `prereq-0.5-install` so `prereq-0.3-install` can be removed as follows:
 
 ```
-[mvngu`@`boxen base]$ hg remove prereq-0.3-install
-[mvngu`@`boxen base]$ hg st
+[mvngu@boxen base]$ hg remove prereq-0.3-install
+[mvngu@boxen base]$ hg st
 M sage-env
 M sage-spkg
 R prereq-0.3-install
@@ -1304,8 +1304,8 @@ R prereq-0.3-install
 Also, the file `prereq-0.5-install` needs to be checked in with:
 
 ```
-[mvngu`@`boxen base]$ hg add prereq-0.5-install
-[mvngu`@`boxen base]$ hg st
+[mvngu@boxen base]$ hg add prereq-0.5-install
+[mvngu@boxen base]$ hg st
 M sage-env
 M sage-spkg
 A prereq-0.5-install

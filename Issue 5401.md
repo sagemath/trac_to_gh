@@ -1,6 +1,6 @@
 # Issue 5401: Fix the permission issues with the CC field after the trac 0.10.3 -> 0.11.3 update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5401
 
 Original creator: mabshoff
 

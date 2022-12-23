@@ -1,6 +1,6 @@
 # Issue 4809: the installation guide and constructions guide should be CC licensed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4809
 
 Original creator: ddrake
 

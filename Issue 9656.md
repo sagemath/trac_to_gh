@@ -1,6 +1,6 @@
 # Issue 9656: Code blocks in the notebook's interactive help get code overlaping it'self
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9656
 
 Original creator: olazo
 

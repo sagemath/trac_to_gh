@@ -1,6 +1,6 @@
 # Issue 124: Fix string comma errors with DihedralGroup(n) where n = 1,2 or 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/124
 
 Original creator: moretti
 

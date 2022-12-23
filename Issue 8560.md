@@ -1,6 +1,6 @@
 # Issue 8560: magma interface should be changed to use sage-native-execute
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8560
 
 Original creator: klee
 

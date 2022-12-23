@@ -1,6 +1,6 @@
 # Issue 1682: Turn on implicit multiplication per default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1682
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 852: Singular's Factorisation crashes under OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/852
 
 Original creator: malb
 
@@ -359,7 +359,7 @@ Comment by mabshoff created at 2007-10-12 02:47:30
 Well, with the new NTL spkg I got the following doctest failure:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.6$ ./sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.6$ ./sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py
 sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py**********************************************************************
 File "multi_polynomial_ideal.py", line 541:
     sage: I.minimal_associated_primes ()

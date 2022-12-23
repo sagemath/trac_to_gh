@@ -1,6 +1,6 @@
 # Issue 6678: new experimental package for pynifti and dependencies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6678
 
 Original creator: mhampton
 

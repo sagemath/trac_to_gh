@@ -1,6 +1,6 @@
 # Issue 7818: Update sage-env
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7818
 
 Original creator: drkirkby
 
@@ -182,7 +182,7 @@ It's good to hear it builds fine. I don't envisage anything that it does should 
 I just re-checked the permissions on the file when I created the ticket and they were executable. I don't know if there was anything I should have done which I did not. 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env
+drkirkby@hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env
 -rwxr-xr-x   1 drkirkby staff      20018 Jan  6 18:53 sage-env
 ```
 
@@ -234,7 +234,7 @@ to the spkg/installed after a make -k
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3$ ls -lt spkg/installed/
+jaap@opensolaris:~/Downloads/sage-4.3$ ls -lt spkg/installed/
 total 61
 -rw-r--r-- 1 jaap staff 219 2010-01-07 15:59 pil-1.1.6.p2
 -rw-r--r-- 1 jaap staff 226 2010-01-07 15:58 flintqs-20070817.p4
@@ -380,7 +380,7 @@ This changes make sense.
 
 
 ```
-[jaap`@`vrede sage-4.3.1.alpha1]$ diff local/bin/sage-env ../sage-env
+[jaap@vrede sage-4.3.1.alpha1]$ diff local/bin/sage-env ../sage-env
 452a453,456
 > if [ "$MV" = "" ]; then
 >     MV="mv"  && export MV
@@ -408,7 +408,7 @@ This changes make sense.
 >     TOUCH="touch"  && export TOUCH
 > fi
 > 
-[jaap`@`vrede sage-4.3.1.alpha1]$ 
+[jaap@vrede sage-4.3.1.alpha1]$ 
 
 ```
 

@@ -1,6 +1,6 @@
 # Issue 427: backslash infix operator does not print properly in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/427
 
 Original creator: nbruin
 

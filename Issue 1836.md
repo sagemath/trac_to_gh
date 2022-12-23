@@ -1,6 +1,6 @@
 # Issue 1836: [with patch] return reduced Groebner bases by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1836
 
 Original creator: malb
 

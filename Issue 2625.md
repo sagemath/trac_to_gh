@@ -1,6 +1,6 @@
 # Issue 2625: [with patch, needs review] BooleanPolynomial to Singular conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2625
 
 Original creator: malb
 

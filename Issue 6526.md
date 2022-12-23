@@ -1,6 +1,6 @@
 # Issue 6526: remove naive suffix trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6526
 
 Original creator: rlm
 

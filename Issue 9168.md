@@ -1,6 +1,6 @@
 # Issue 9168: cygwin: ratpoints does not work correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9168
 
 Original creator: was
 

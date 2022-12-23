@@ -1,6 +1,6 @@
 # Issue 250: strange display of nested rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/250
 
 Original creator: was
 

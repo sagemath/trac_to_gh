@@ -1,6 +1,6 @@
 # Issue 6228: Wrong multiplicities when solving a univariate polynomial equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6228
 
 Original creator: SimonKing
 

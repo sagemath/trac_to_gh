@@ -1,6 +1,6 @@
 # Issue 1453: [with patch, positive review] fix cython dependency computation for new files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1453
 
 Original creator: mabshoff
 

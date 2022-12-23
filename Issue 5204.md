@@ -1,6 +1,6 @@
 # Issue 5204: simon_two_descent -- bug in the interface when number field has variable name 'x'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5204
 
 Original creator: was
 
@@ -212,7 +212,7 @@ parisize = 4000000, primelimit = 500000
 ? a = Mod(y,K.pol);
 ? bnfellrank(K, [0,0,0,0,-3697884*a - 24248647]);
 courbe elliptique : Y^2 = x^3 + Mod(-3697884*y - 24248647, y^2 - 43)
-points triviaux sur la courbe = [This is the Trac macro *1, 1, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1, 0-macro)
+points triviaux sur la courbe = [[1, 1, 0]]
   ***   array index (1) out of allowed range [none]:
   ***   ...iv,r=nfsqrt(nf,norm(zc))[1];if(DEBUGLEVEL_ell
                                     ^--------------------

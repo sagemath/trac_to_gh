@@ -1,6 +1,6 @@
 # Issue 1412: creating directory in notebook cell #x makes evaluation of cell #x hang
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1412
 
 Original creator: boothby
 

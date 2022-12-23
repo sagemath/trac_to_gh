@@ -1,6 +1,6 @@
 # Issue 6438: Upgrade to Cython 0.11.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6438
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 2351: sagenb.org SSL certificate is expired
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2351
 
 Original creator: jason
 

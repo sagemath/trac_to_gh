@@ -1,6 +1,6 @@
 # Issue 9557: fundamental domains for subgroups of PSL(2,ZZ)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9557
 
 Original creator: vdelecroix
 

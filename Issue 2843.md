@@ -1,6 +1,6 @@
 # Issue 2843: p-adic extension  segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2843
 
 Original creator: jen
 
@@ -28,7 +28,7 @@ sage: for f in F :
 ....:     integrals1.append(I)
 ....: 
 FFTRep: inconsistent use
-/home/jen/sage-2.10.2.alpha1/local/bin/sage-sage: line 212:  7357 Aborted                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/home/jen/sage-2.10.2.alpha1/local/bin/sage-sage: line 212:  7357 Aborted                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
 
 

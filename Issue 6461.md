@@ -1,6 +1,6 @@
 # Issue 6461: Schaefer's Simplified Data Encryption Standard for educational purposes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6461
 
 Original creator: mvngu
 

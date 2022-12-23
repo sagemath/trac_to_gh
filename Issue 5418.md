@@ -1,6 +1,6 @@
 # Issue 5418: Get the coverage of the Jon Hanke's qf code to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5418
 
 Original creator: mabshoff
 

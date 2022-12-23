@@ -1,6 +1,6 @@
 # Issue 912: create a new spkg for numpy version 1.0.3.1 and TEST
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/912
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9184: Gamma function for intervals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9184
 
 Original creator: robertwb
 

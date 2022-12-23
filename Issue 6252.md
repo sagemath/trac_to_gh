@@ -1,6 +1,6 @@
 # Issue 6252: Add 11 people to the development map
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6252
 
 Original creator: mvngu
 

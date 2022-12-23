@@ -1,6 +1,6 @@
 # Issue 1527: we really really need a doctest with "import rpy" in it, to make sure r is working at all in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1527
 
 Original creator: was
 

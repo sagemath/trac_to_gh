@@ -1,6 +1,6 @@
 # Issue 4890: get rid of nauty's stupid interactive license agreement in the optional spkg install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4890
 
 Original creator: was
 

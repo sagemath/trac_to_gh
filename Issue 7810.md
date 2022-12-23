@@ -1,6 +1,6 @@
 # Issue 7810: bug in fast_callable (reducing empty sequence)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7810
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 7138: freetype always builds 32-bit libraries on Solaris, even when SAGE64="yes"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7138
 
 Original creator: drkirkby
 

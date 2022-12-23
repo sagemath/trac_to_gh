@@ -1,6 +1,6 @@
 # Issue 5717: subdivide and matrices mod 2 -- printing broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5717
 
 Original creator: was
 

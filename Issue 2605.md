@@ -1,6 +1,6 @@
 # Issue 2605: Notebook tab-backspace-(shift enter) gives bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2605
 
 Original creator: jvoight
 

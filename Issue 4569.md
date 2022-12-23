@@ -1,6 +1,6 @@
 # Issue 4569: problems with the Permutation constructor function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4569
 
 Original creator: saliola
 

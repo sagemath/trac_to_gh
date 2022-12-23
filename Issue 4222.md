@@ -1,6 +1,6 @@
 # Issue 4222: Building R fails due to problem with readline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4222
 
 Original creator: SimonKing
 

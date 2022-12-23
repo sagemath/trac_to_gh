@@ -1,6 +1,6 @@
 # Issue 9507: if spkg-install is a Python script, first check that SAGE_LOCAL/bin/python exists.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9507
 
 Original creator: was
 
@@ -119,7 +119,7 @@ Perhaps in addition to a slightly modified version of William's patch, put that 
 ```sh
 #!/usr/bin/env bash
 
-echo python $`@` ":"
+echo python $@ ":"
 
 echo "Error: Sage's Python has not yet been installed!"
 echo "       This is most probably due to incorrect dependencies in the Makefiles."

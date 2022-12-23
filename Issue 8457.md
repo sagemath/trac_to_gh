@@ -1,6 +1,6 @@
 # Issue 8457: Yet more annoying warnings when building the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8457
 
 Original creator: mpatel
 

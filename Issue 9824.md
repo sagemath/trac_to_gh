@@ -1,6 +1,6 @@
 # Issue 9824: desolve_system unable to interpret Maxima's temporary variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9825
 
 Original creator: rhinton
 

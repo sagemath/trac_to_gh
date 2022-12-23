@@ -1,6 +1,6 @@
 # Issue 3518: modular symbols -- fix a bug in factorization of modular symbols spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3518
 
 Original creator: was
 

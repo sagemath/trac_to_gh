@@ -1,6 +1,6 @@
 # Issue 5568: [with patch, needs review] a few latex methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5568
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 6021: Implement period lattices for elliptic curves over CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6021
 
 Original creator: cremona
 

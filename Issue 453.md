@@ -1,6 +1,6 @@
 # Issue 453: singuname.sh support for Nexenta OS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/453
 
 Original creator: mabshoff
 

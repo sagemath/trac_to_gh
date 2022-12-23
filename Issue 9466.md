@@ -1,6 +1,6 @@
 # Issue 9466: square root with all=True should not return ValueError but empty list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9466
 
 Original creator: mstreng
 

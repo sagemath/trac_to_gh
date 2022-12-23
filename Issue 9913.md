@@ -1,6 +1,6 @@
 # Issue 9913: Remove unused libraries from extension modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9914
 
 Original creator: leif
 
@@ -307,7 +307,7 @@ The modules you are removing "-lpari" from are actually linked against pari, so 
 The following have been built with this patch applied:
 
 ```
-(sage-sh) jdemeyer`@`boxen:lib.linux-x86_64-2.7$ ldd sage/libs/mwrank/mwrank.so
+(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/mwrank/mwrank.so
         linux-vdso.so.1 =>  (0x00007ffff6dfd000)
         libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007febee7b5000)
         libcurvesntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcurvesntl.so (0x00007febee49a000)
@@ -332,7 +332,7 @@ The following have been built with this patch applied:
 
 
 ```
-(sage-sh) jdemeyer`@`boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/homspace.so
+(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/homspace.so
         linux-vdso.so.1 =>  (0x00007fff8adfd000)
         libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fa382917000)
         libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fa3826b8000)
@@ -356,7 +356,7 @@ The following have been built with this patch applied:
 
 
 ```
-(sage-sh) jdemeyer`@`boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/newforms.so
+(sage-sh) jdemeyer@boxen:lib.linux-x86_64-2.7$ ldd sage/libs/cremona/newforms.so
         linux-vdso.so.1 =>  (0x00007fff60bfd000)
         libcsage.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libcsage.so (0x00007fcc585fb000)
         libg0nntl.so => /padic/scratch/jdemeyer/merger/sage-5.0.beta14/local/lib/libg0nntl.so (0x00007fcc5839c000)

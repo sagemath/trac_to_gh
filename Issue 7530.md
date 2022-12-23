@@ -1,6 +1,6 @@
 # Issue 7530: corrects simple Laurent-polynomial bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7530
 
 Original creator: fwclarke
 

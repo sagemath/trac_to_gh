@@ -1,6 +1,6 @@
 # Issue 9465: Update to FriCAS 1.1.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9465
 
 Original creator: hemmecke
 

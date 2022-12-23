@@ -1,6 +1,6 @@
 # Issue 4517: magma <--> sage (3.2) conversion failure case -- nested multivariate polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4517
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Converted a nested multivariate polynomial to Magma fails miserably:
 
 
 ```
-was`@`sage:~/build/sage-3.2.rc0$ ./sage
+was@sage:~/build/sage-3.2.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2.rc0, Release Date: 2008-11-10                     |

@@ -1,6 +1,6 @@
 # Issue 8439: maxima interface hangs gcl and/or clisp backends
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8439
 
 Original creator: pcpa
 

@@ -1,6 +1,6 @@
 # Issue 7016: Bizarre results when taking the mod of a p-adic number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7016
 
 Original creator: jonhanke
 

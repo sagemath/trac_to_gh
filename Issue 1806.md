@@ -1,6 +1,6 @@
 # Issue 1806: bump various spkgs due to Sage 2.10 upgrade (ucs4 related)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1806
 
 Original creator: mabshoff
 

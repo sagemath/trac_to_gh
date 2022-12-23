@@ -1,6 +1,6 @@
 # Issue 6912: parametric regions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6912
 
 Original creator: jason
 
@@ -38,14 +38,14 @@ ValueError                                Traceback (most recent call last)
     492             options.update(kwds)
 --> 493             return func(*args, **options)
     494 
-    495         #Add the options specified by `@`options to the signature of the wrapped
+    495         #Add the options specified by @options to the signature of the wrapped
 
 /home/chapoton/sage3/local/lib/python3.7/site-packages/sage/plot/plot.py in parametric_plot(funcs, *args, **kwargs)
    2623         return sage.plot.plot3d.parametric_plot3d.parametric_plot3d(funcs, *args, **kwargs)
    2624     else:
 -> 2625         raise ValueError("the number of functions and the number of variable ranges is not a supported combination for a 2d or 3d parametric plots")
    2626 
-   2627 `@`options(aspect_ratio=1.0)
+   2627 @options(aspect_ratio=1.0)
 
 ValueError: the number of functions and the number of variable ranges is not a supported combination for a 2d or 3d parametric plots
 ```

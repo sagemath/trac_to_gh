@@ -1,6 +1,6 @@
 # Issue 6026: python.spkg: ctypes fails to build on 64 bit OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6026
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9366: fix SBox __init__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9366
 
 Original creator: ylchapuy
 

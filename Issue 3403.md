@@ -1,6 +1,6 @@
 # Issue 3403: [with patch; needs review] get doctest coverage for rational up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3403
 
 Original creator: was
 

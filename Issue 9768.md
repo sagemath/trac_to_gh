@@ -1,6 +1,6 @@
 # Issue 9768: Coercon problems to symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9769
 
 Original creator: maldun
 

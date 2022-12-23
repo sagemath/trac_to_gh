@@ -1,6 +1,6 @@
 # Issue 8393: bring plot3d.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8393
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 9247: A collection of little improvements to elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9247
 
 Original creator: rlm
 

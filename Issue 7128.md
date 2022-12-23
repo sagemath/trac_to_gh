@@ -1,6 +1,6 @@
 # Issue 7128: zlib-1.2.3.p4 always builds 32-bit binaries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7128
 
 Original creator: drkirkby
 

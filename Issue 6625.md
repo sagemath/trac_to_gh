@@ -1,6 +1,6 @@
 # Issue 6625: manually removing executable bits doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6625
 
 Original creator: mvngu
 
@@ -11,9 +11,9 @@ Assignee: cwitty
 This is a follow up to #3687. Apparently, the issue of executable bits pop up again after they had been manually removed. That is, manually remove the executable bits of sage-banner, sage-gdb-commands, sage-maxima.lisp, and sage-verify-pyc. Then create a source distribution and you see those executable bits restored:
 
 ```
-[mvngu`@`sage bin]$ pwd
+[mvngu@sage bin]$ pwd
 /home/mvngu/release/sage-4.1.1.alpha1/local/bin
-[mvngu`@`sage bin]$ hg st
+[mvngu@sage bin]$ hg st
 M sage-README-osx.txt
 M sage-banner
 M sage-gdb-commands
@@ -58,11 +58,11 @@ Comment by mvngu created at 2010-01-19 17:28:33
 The attachment [scripts_6625_no_x_bit.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6625/scripts_6625_no_x_bit.patch) fails to apply against Sage 4.3.1.rc1:
 
 ```
-[mvngu`@`mod bin]$ pwd
+[mvngu@mod bin]$ pwd
 /dev/shm/mvngu/sage-4.3.1.rc1/local/bin
-[mvngu`@`mod bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6625/scripts_6625_no_x_bit.patch
+[mvngu@mod bin]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6625/scripts_6625_no_x_bit.patch
 adding scripts_6625_no_x_bit.patch to series file
-[mvngu`@`mod bin]$ hg qpush
+[mvngu@mod bin]$ hg qpush
 applying scripts_6625_no_x_bit.patch
 patching file sage-make_devel_packages
 Hunk #1 FAILED at 135
@@ -70,10 +70,10 @@ Hunk #1 FAILED at 135
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh scripts_6625_no_x_bit.patch
-[mvngu`@`mod bin]$ cat sage-make_devel_packages.rej 
+[mvngu@mod bin]$ cat sage-make_devel_packages.rej 
 --- sage-make_devel_packages
 +++ sage-make_devel_packages
-`@``@` -136,6 +136,8 `@``@`
+@@ -136,6 +136,8 @@
  rm -rf $SCRIPTS
  mkdir $SCRIPTS
  chmod +x sage-*

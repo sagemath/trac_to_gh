@@ -1,6 +1,6 @@
 # Issue 4372: [with patch] Repair to totallyreal_dsage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4372
 
 Original creator: jvoight
 
@@ -87,10 +87,10 @@ Hunk #1 FAILED at 296
 abort: patch failed to apply
 ---
 
-was`@`sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/rings/number_field/totallyreal_dsage.py.rej 
+was@sage:~/build/sage-3.2.1.alpha1$ more devel/sage/sage/rings/number_field/totallyreal_dsage.py.rej 
 --- totallyreal_dsage.py
 +++ totallyreal_dsage.py
-`@``@` -297,7 +297,7 `@``@`
+@@ -297,7 +297,7 @@
 
                      # Add the timings.
                      self.cputime += job[1].cpu_time
@@ -136,7 +136,7 @@ Expecting:
 I delete ~/.sage/dsage and try again.  Doctesting finishes with some errors:
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage -t devel/sage/sage/rings/number_field/totallyreal_dsage.py
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage -t devel/sage/sage/rings/number_field/totallyreal_dsage.py
 sage -t  devel/sage/sage/rings/number_field/totallyreal_dsage.pyGoing into testing mode...
 Adding testing client...
 2008-11-28 18:12:33-0800 [-] Log opened.

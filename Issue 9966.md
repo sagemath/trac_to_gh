@@ -1,6 +1,6 @@
 # Issue 9966: Allow concurrent running/testing of multiple sage branches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9967
 
 Original creator: robertwb
 
@@ -225,7 +225,7 @@ Comment by ddrake created at 2010-10-23 05:05:52
 Here's an interesting doctest failure. My branches look like this:
 
 ```
-drake`@`sagenb:~/s/sage-4.6.alpha3$ ls devel/
+drake@sagenb:~/s/sage-4.6.alpha3$ ls devel/
 total 20
 drwxr-xr-x 2 drake drake 4096 2010-10-10 01:40 old/
 lrwxrwxrwx 1 drake drake    8 2010-10-23 12:43 sage -> sage-foo/
@@ -240,7 +240,7 @@ drwxr-xr-x 8 drake drake 4096 2010-10-10 01:32 sagenb-main/
 And when I run -testall, I get this:
 
 ```
-drake`@`sagenb:~/s/sage-4.6.alpha3$ minnesota_nice ./sage -testall
+drake@sagenb:~/s/sage-4.6.alpha3$ minnesota_nice ./sage -testall
 Testing of examples currently not implemented.
 sage -t  -force_lib "devel/sage/doc/common/builder.py"
 **********************************************************************
@@ -304,7 +304,7 @@ env SAGE_BRANCH=main ./sage -b
 Nothing related to doc/common/builder.py showed up, but I decided to try a test anyway:
 
 ```
-drake`@`sagenb:~/s/sage-4.6.alpha3$ env SAGE_BRANCH=main ./sage -testall
+drake@sagenb:~/s/sage-4.6.alpha3$ env SAGE_BRANCH=main ./sage -testall
 Testing of examples currently not implemented.
 sage -t  -force_lib "devel/sage/doc/common/builder.py"
 **********************************************************************
@@ -321,9 +321,9 @@ Got:
 The patch has been applied, but the test still failed. So I tried changing the symlink:
 
 ```
-drake`@`sagenb:~/s/sage-4.6.alpha3$ ./sage -b main
+drake@sagenb:~/s/sage-4.6.alpha3$ ./sage -b main
   (usual output, no mention of builder.py)
-drake`@`sagenb:~/s/sage-4.6.alpha3$ ./sage -testall
+drake@sagenb:~/s/sage-4.6.alpha3$ ./sage -testall
 Testing of examples currently not implemented.
 sage -t  -force_lib "devel/sage/doc/common/builder.py"
          [5.9 s]
@@ -333,7 +333,7 @@ sage -t  -force_lib "devel/sage/doc/common/builder.py"
 Okay, so things worked when the symlink is set as usual. I tried testing another branch, which should fail, since the patch hasn't been applied there:
 
 ```
-drake`@`sagenb:~/s/sage-4.6.alpha3$ env SAGE_BRANCH=foo ./sage -testall
+drake@sagenb:~/s/sage-4.6.alpha3$ env SAGE_BRANCH=foo ./sage -testall
 Testing of examples currently not implemented.
 sage -t  -force_lib "devel/sage/doc/common/builder.py"
          [2.4 s]
@@ -345,7 +345,7 @@ The sage-foo branch definitely doesn't have the doctest patch applied, so someth
 I think the culprit is sage-maketest, which features:
 
 ```
-"$SAGE_ROOT"/sage -t -sagenb "$`@`" "$SAGE_ROOT"/devel/sage/doc/common "$SAGE_ROOT"/devel/sage/doc/en "$SAGE_ROOT"/devel/sage/doc/fr  "$SAGE_ROOT"/devel/sage/sage 2>&1 | tee -a "$SAGE_TEST_LOG"
+"$SAGE_ROOT"/sage -t -sagenb "$@" "$SAGE_ROOT"/devel/sage/doc/common "$SAGE_ROOT"/devel/sage/doc/en "$SAGE_ROOT"/devel/sage/doc/fr  "$SAGE_ROOT"/devel/sage/sage 2>&1 | tee -a "$SAGE_TEST_LOG"
 ```
 
 so that's ignoring the branch.

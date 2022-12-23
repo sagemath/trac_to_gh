@@ -1,6 +1,6 @@
 # Issue 1926: [with patch, needs review] fixes for the maple interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1926
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 2368: Compiling Atlas on Powerbook G4, Tuning Information
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2368
 
 Original creator: rishi
 

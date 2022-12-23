@@ -1,6 +1,6 @@
 # Issue 4513: Action of MatrixGroup on a MPolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4513
 
 Original creator: SimonKing
 

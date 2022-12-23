@@ -1,6 +1,6 @@
 # Issue 3906: symbolic plotting bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3906
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 8032: block matrix doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8032
 
 Original creator: robertwb
 

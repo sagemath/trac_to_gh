@@ -1,6 +1,6 @@
 # Issue 8371: Error building pyprocessing on Solaris SPARC after changes to python.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8371
 
 Original creator: drkirkby
 

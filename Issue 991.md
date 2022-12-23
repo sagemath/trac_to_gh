@@ -1,6 +1,6 @@
 # Issue 991: problem in interaction with Singular subprocesses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/991
 
 Original creator: cwitty
 
@@ -13,7 +13,7 @@ Note that the problem does not occur if the "T = ..." line is omitted.
 
 
 ```
-cwitty`@`comet:~/sage-2.8.9.rc1$ ./sage
+cwitty@comet:~/sage-2.8.9.rc1$ ./sage
 
 sage: K.<w> = GF(27)
 sage: P.<x, y> = PolynomialRing(K, 2, order='lex')

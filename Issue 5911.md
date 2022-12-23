@@ -1,6 +1,6 @@
 # Issue 5911: greatly improve the documentation one gets from Graph?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5911
 
 Original creator: was
 

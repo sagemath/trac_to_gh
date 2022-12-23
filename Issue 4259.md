@@ -1,6 +1,6 @@
 # Issue 4259: use Modular<float> instead of Modular<double> for small primes in LinBox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4259
 
 Original creator: malb
 

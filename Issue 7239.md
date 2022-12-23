@@ -1,6 +1,6 @@
 # Issue 7239: factorization of Cunningham numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7239
 
 Original creator: ylchapuy
 

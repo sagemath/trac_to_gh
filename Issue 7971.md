@@ -1,6 +1,6 @@
 # Issue 7971: Change all occurrences of "method" to "algorithm" in coding/code_bounds.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7971
 
 Original creator: rbeezer
 

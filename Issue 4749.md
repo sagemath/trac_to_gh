@@ -1,6 +1,6 @@
 # Issue 4749: improve coercion of points between elliptic curves and reduction of points mod p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4749
 
 Original creator: was
 

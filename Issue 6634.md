@@ -1,6 +1,6 @@
 # Issue 6634: biopython 1.49b broken with python-2.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6634
 
 Original creator: mhampton
 
@@ -70,9 +70,9 @@ Comment by mvngu created at 2009-09-02 09:03:37
 Is there a reason why biopython-1.51.spkg is not under revision control?
 
 ```
-[mvngu`@`mod mvngu]$ tar -jxf biopython-1.51.spkg 
-[mvngu`@`mod mvngu]$ cd biopython-1.51/
-[mvngu`@`mod biopython-1.51]$ hg st
+[mvngu@mod mvngu]$ tar -jxf biopython-1.51.spkg 
+[mvngu@mod mvngu]$ cd biopython-1.51/
+[mvngu@mod biopython-1.51]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
 

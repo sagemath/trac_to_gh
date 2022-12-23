@@ -1,6 +1,6 @@
 # Issue 5409: rewrite quaternion algebras -- the current implementation isn't sufficiently good
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5409
 
 Original creator: was
 
@@ -80,7 +80,7 @@ The fix is two one-liners on top of part6
 diff -r 311c05f56282 sage/rings/arith.py
 --- a/sage/rings/arith.py       Mon Mar 02 04:52:16 2009 -0500
 +++ b/sage/rings/arith.py       Mon Mar 02 10:20:29 2009 -0800
-`@``@` -3964,6 +3964,7 `@``@`
+@@ -3964,6 +3964,7 @@
      1, mod 4, and such that, at most, the only square dividing it is
      4.
      """
@@ -91,7 +91,7 @@ diff -r 311c05f56282 sage/rings/arith.py
 diff -r 311c05f56282 sage/rings/ring.pyx
 --- a/sage/rings/ring.pyx       Mon Mar 02 04:52:16 2009 -0500
 +++ b/sage/rings/ring.pyx       Mon Mar 02 10:20:29 2009 -0800
-`@``@` -735,7 +735,7 `@``@`
+@@ -735,7 +735,7 @@
              sage: ZpCA(7).is_commutative()
              True
              sage: A = QuaternionAlgebra(QQ, -1, -3, names=('i','j','k')); A
@@ -335,7 +335,7 @@ Ok, this fixes the first problem:
 diff -r c0c80b6d1261 sage/algebras/quaternion_algebra_element.pyx
 --- a/sage/algebras/quaternion_algebra_element.pyx      Wed Mar 04 11:54:38 2009 -0800
 +++ b/sage/algebras/quaternion_algebra_element.pyx      Tue Mar 10 11:51:54 2009 -0700
-`@``@` -320,6 +320,7 `@``@`
+@@ -320,6 +320,7 @@
              sage: type(theta)
              <type 'sage.algebras.quaternion_algebra_element.QuaternionAlgebraElement_rational_field'>
              sage: 1/Q(0)

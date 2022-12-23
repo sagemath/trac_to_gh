@@ -1,6 +1,6 @@
 # Issue 7673: implement Dijkstra's algorithm for C graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7673
 
 Original creator: rlm
 

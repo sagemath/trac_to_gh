@@ -1,6 +1,6 @@
 # Issue 6333: optional doctest failure -- scilab interface is really really broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6333
 
 Original creator: was
 
@@ -292,7 +292,7 @@ and it goes on for *hundreds* of pages.
 And I do have scilab installed
 
 ```
-wstein`@`sage:~/build/sage-4.0.2.alpha3$ sage
+wstein@sage:~/build/sage-4.0.2.alpha3$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: scilab.version()

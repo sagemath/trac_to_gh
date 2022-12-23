@@ -1,6 +1,6 @@
 # Issue 671: Solaris 10: interfaces/singular.py doctests failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/671
 
 Original creator: mabshoff
 

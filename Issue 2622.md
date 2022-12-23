@@ -1,6 +1,6 @@
 # Issue 2622: [with patches, need review] add PolyBoRi to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2622
 
 Original creator: malb
 

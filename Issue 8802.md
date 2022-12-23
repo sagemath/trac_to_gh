@@ -1,6 +1,6 @@
 # Issue 8802: sqrt() for QQbar and AA should have a parameter "all"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8802
 
 Original creator: cremona
 

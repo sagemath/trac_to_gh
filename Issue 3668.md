@@ -1,6 +1,6 @@
 # Issue 3668: Functionality of "Set"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3668
 
 Original creator: ljpk
 
@@ -21,7 +21,7 @@ is perfectly OK.
 
 Also, it would be nice if Set allowed one to use lists, so
 
-`Set([This is the Trac macro *2,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2,3-macro))`
+`Set([[2,3]])`
 
 worked, rather than giving the error message ``TypeError: list objects are unhashable''.
 

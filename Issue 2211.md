@@ -1,6 +1,6 @@
 # Issue 2211: [with patch, needs review] another segfault issue in graph_isom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2211
 
 Original creator: rlm
 

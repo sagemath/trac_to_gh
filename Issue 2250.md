@@ -1,6 +1,6 @@
 # Issue 2250: sage 2.10.2.rc0: elliptic_curves/monsky_washnitzer.py doctest failure with -long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2250
 
 Original creator: mabshoff
 
@@ -104,7 +104,7 @@ This works fine:
 
 
 ```
-was`@`sage:~/build/sage-2.10.2.alpha2$ ./sage -t -long devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py
+was@sage:~/build/sage-2.10.2.alpha2$ ./sage -t -long devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py
 sage -t -long devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py
 Raising timeout to 1800 seconds due to '-long' option
 

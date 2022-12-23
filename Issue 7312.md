@@ -1,6 +1,6 @@
 # Issue 7312: Add a function .st (meaning "such that" )which is an alias to .add_constraint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7312
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 6661: Misleading warning message of  _expect_expr() at KeyboardInterrupt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6661
 
 Original creator: SimonKing
 

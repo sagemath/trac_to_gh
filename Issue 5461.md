@@ -1,6 +1,6 @@
 # Issue 5461: make -bdist build OSX app only on demand
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5461
 
 Original creator: mabshoff
 

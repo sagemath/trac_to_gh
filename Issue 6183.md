@@ -1,6 +1,6 @@
 # Issue 6183: Quaternion algebra latexification
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6183
 
 Original creator: robertwb
 

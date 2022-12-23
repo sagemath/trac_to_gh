@@ -1,6 +1,6 @@
 # Issue 2433: [patches coming soon] Refactor graph code; prepare for backend migration; miscellaneous small things from Waterloo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2433
 
 Original creator: rlm
 

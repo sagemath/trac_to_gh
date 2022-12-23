@@ -1,6 +1,6 @@
 # Issue 3281: libecm fails to pbuild
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3281
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 6041: update NetworkX to version 0.99
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6041
 
 Original creator: mvngu
 
@@ -84,7 +84,7 @@ Here's a diff of the changes to `sage/graphs/base/graph_backends.py`:
 diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
 --- a/sage/graphs/base/graph_backends.py	Sat May 16 09:46:59 2009 -0700
 +++ b/sage/graphs/base/graph_backends.py	Tue May 19 23:47:29 2009 -0700
-`@``@` -499,13 +499,12 `@``@`
+@@ -499,13 +499,12 @@
          """
          if N is None:
              import networkx
@@ -101,7 +101,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          
          INPUT:
              u,v:      vertices
-`@``@` -514,11 +513,11 `@``@`
+@@ -514,11 +513,11 @@
          
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -115,7 +115,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          Add a sequence of edges to self.  If directed is True, these are
          interpreted as arcs.
-`@``@` -529,7 +528,7 `@``@`
+@@ -529,7 +528,7 @@
          
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -124,7 +124,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          for e in edges:
              try:
-`@``@` -537,7 +536,7 `@``@`
+@@ -537,7 +536,7 @@
              except:
                  u,v = e
                  l = None
@@ -133,7 +133,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
  
      def add_vertex(self, name):
          """
-`@``@` -589,7 +588,7 `@``@`
+@@ -589,7 +588,7 @@
          """
          return self._nxg.degree(v)
  
@@ -142,7 +142,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          Deletes the edge (u,v) with label l.
  
-`@``@` -600,9 +599,10 `@``@`
+@@ -600,9 +599,10 @@
          
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -155,7 +155,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
  
      def del_vertex(self, v):
          """
-`@``@` -649,16 +649,16 `@``@`
+@@ -649,16 +649,16 @@
          
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -176,7 +176,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
  
          INPUT:
              u,v: vertex labels
-`@``@` -669,10 +669,19 `@``@`
+@@ -669,10 +669,19 @@
          
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -198,7 +198,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
  
      def has_vertex(self, v):
          """
-`@``@` -781,8 +790,9 `@``@`
+@@ -781,8 +790,9 @@
              
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
@@ -209,7 +209,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          return self._nxg.neighbors_iter(v)
  
-`@``@` -802,7 +812,7 `@``@`
+@@ -802,7 +812,7 @@
              sage: G.iterator_in_nbrs(0)
              Traceback (most recent call last):
              ...
@@ -218,7 +218,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          return self._nxg.predecessors_iter(v)
  
-`@``@` -822,7 +832,7 `@``@`
+@@ -822,7 +832,7 @@
              sage: G.iterator_out_nbrs(0)
              Traceback (most recent call last):
              ...
@@ -227,7 +227,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
          """
          return self._nxg.successors_iter(v)
  
-`@``@` -839,49 +849,9 `@``@`
+@@ -839,49 +849,9 @@
          DOCTEST:
              sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()
              sage: G.iterator_verts(0)
@@ -279,7 +279,7 @@ diff -r 21c6c829ea32 sage/graphs/base/graph_backends.py
  
      def name(self, new):
          """
-`@``@` -969,39 +939,24 `@``@`
+@@ -969,39 +939,24 @@
                  newd[perm[v]] = newtempd
              self._nxg.adj = newd
  

@@ -1,6 +1,6 @@
 # Issue 4543: sage -sh fails to start
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4543
 
 Original creator: burcin
 
@@ -14,7 +14,7 @@ With 3.2.rc1, I get this:
 
 
 ```
-burcin`@`karr ~/sage/sage-3.2.rc1 $ ./sage -sh
+burcin@karr ~/sage/sage-3.2.rc1 $ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
@@ -30,7 +30,7 @@ On my system `basename` does not accept a parameter `-a`.
 
 
 ```
-burcin`@`karr ~/sage/sage-3.2.rc1 $ basename --version
+burcin@karr ~/sage/sage-3.2.rc1 $ basename --version
 basename (GNU coreutils) 6.10
 Copyright (C) 2008 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>

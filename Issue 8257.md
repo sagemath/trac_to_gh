@@ -1,6 +1,6 @@
 # Issue 8257: cygwin: gd-2.0.35.p4 fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8257
 
 Original creator: was
 

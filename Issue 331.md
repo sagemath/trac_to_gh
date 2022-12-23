@@ -1,6 +1,6 @@
 # Issue 331: compiled implementation of dense univariate polynomial arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/331
 
 Original creator: dmharvey
 

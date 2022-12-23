@@ -1,6 +1,6 @@
 # Issue 6744: [with patch, needs review] install script stores start time of build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6744
 
 Original creator: schilly
 

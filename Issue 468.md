@@ -1,6 +1,6 @@
 # Issue 468: quaddouble wrapper sets fpu precision to 53 bits for entire sage session
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/468
 
 Original creator: bober
 

@@ -1,6 +1,6 @@
 # Issue 8615: sage notebook: in chrome creating a new worksheet just returns the last opened worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8615
 
 Original creator: was
 

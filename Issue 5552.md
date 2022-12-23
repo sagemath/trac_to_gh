@@ -1,6 +1,6 @@
 # Issue 5552: plot_slope_field typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5552
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 5063: major reworking of plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5063
 
 Original creator: mhansen
 

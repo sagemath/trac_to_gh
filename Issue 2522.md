@@ -1,6 +1,6 @@
 # Issue 2522: modify "sage -pkg" to not include OSX junk in spkgs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2522
 
 Original creator: cwitty
 

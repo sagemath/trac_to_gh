@@ -1,6 +1,6 @@
 # Issue 7374: wrong docstring for is_isomorphic() in permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7374
 
 Original creator: AlexGhitza
 

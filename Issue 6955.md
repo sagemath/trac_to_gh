@@ -1,6 +1,6 @@
 # Issue 6955: update simon denis pari-scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6955
 
 Original creator: wuthrich
 

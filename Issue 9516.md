@@ -1,6 +1,6 @@
 # Issue 9516: numerical noise in sage-4.5.rc1 on PowerPC OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9516
 
 Original creator: was
 

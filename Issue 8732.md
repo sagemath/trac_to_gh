@@ -1,6 +1,6 @@
 # Issue 8732: bug in new HMM code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8732
 
 Original creator: was
 

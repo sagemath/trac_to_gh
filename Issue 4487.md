@@ -1,6 +1,6 @@
 # Issue 4487: add method to evaluate characters of permutation and matrix groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4487
 
 Original creator: wdj
 
@@ -245,7 +245,7 @@ Comment by mabshoff created at 2008-11-21 09:36:09
 This patch does not pass doctests with 3.2:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/groups/class_function.py 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/groups/class_function.py 
 sage -t -long devel/sage/sage/groups/class_function.py      
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/groups/class_function.py", line 335:

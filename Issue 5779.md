@@ -1,6 +1,6 @@
 # Issue 5779: _fast_floats_'s pow returns garbage for non-integral powers left of zero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5779
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ CC:  cwitty
 I thought we had fixed this via fast_callable, but it is still there:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: f=x^(1/3)

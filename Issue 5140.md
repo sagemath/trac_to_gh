@@ -1,6 +1,6 @@
 # Issue 5140: is_irreducible() reports units as irreducible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5140
 
 Original creator: lars.fischer
 

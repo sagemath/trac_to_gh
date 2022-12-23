@@ -1,6 +1,6 @@
 # Issue 9265: Remove `CombinatorialClass` from sage.combinat.tableau
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9265
 
 Original creator: jbandlow
 

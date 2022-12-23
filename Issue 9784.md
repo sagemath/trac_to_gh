@@ -1,6 +1,6 @@
 # Issue 9784: Simple Server API - wrong cell results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9785
 
 Original creator: dpoetzsch
 

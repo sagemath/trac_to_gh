@@ -1,6 +1,6 @@
 # Issue 1526: conversion from gap matrix over finite field to sage matrix is VERY VERY VERY slow -- but robust.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1526
 
 Original creator: was
 

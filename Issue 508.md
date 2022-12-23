@@ -1,6 +1,6 @@
 # Issue 508: problem with "sage -c"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/508
 
 Original creator: was
 

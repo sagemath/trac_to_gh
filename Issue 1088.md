@@ -1,6 +1,6 @@
 # Issue 1088: [with patch] graphs: minimum spanning tree function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1088
 
 Original creator: jason
 

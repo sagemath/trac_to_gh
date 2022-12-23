@@ -1,6 +1,6 @@
 # Issue 5567: [with patch, needs review] bug in region_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5567
 
 Original creator: whuss
 

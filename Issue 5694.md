@@ -1,6 +1,6 @@
 # Issue 5694: [with patch; needs review] _ for previous output is completely broken in the notebook due to the preparser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5694
 
 Original creator: was
 

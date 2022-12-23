@@ -1,6 +1,6 @@
 # Issue 8835: mark some latex doctests optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8835
 
 Original creator: was
 

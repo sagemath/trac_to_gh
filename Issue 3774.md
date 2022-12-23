@@ -1,6 +1,6 @@
 # Issue 3774: __radd__ doesn't work when left hand side is an Element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3774
 
 Original creator: robertwb
 

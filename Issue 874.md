@@ -1,6 +1,6 @@
 # Issue 874: Implement Jordan and Rational Canonical Form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/874
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 5804: Solaris 10/Sparc: number_of_partitions(100000) is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5804
 
 Original creator: mabshoff
 

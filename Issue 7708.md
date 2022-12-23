@@ -1,6 +1,6 @@
 # Issue 7708: upgrade openopt spkg to 0.27
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7708
 
 Original creator: schilly
 

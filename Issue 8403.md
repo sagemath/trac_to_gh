@@ -1,6 +1,6 @@
 # Issue 8403: Steiner Tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8403
 
 Original creator: ncohen
 

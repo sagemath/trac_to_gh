@@ -1,6 +1,6 @@
 # Issue 4681: General Smith normal form implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4681
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 7654: Conversion bug in MPolynomialRing_libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7654
 
 Original creator: SimonKing
 

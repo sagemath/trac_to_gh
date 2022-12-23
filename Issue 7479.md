@@ -1,6 +1,6 @@
 # Issue 7479: sage fails to integrate identity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7479
 
 Original creator: ggrafendorfer
 

@@ -1,6 +1,6 @@
 # Issue 3549: change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3549
 
 Original creator: was
 

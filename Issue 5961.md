@@ -1,6 +1,6 @@
 # Issue 5961: Document potential interference issues with ~/.pydistutils.cfg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5961
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7189: French translation: A Tour of Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7189
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 6080: Add utility methods to Integer (needed for mpmath)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6080
 
 Original creator: fredrik.johansson
 

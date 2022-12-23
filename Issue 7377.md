@@ -1,6 +1,6 @@
 # Issue 7377: Symbolic Ring to Maxima via EclObject
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7377
 
 Original creator: nbruin
 
@@ -1063,7 +1063,7 @@ Wrong number of arguments to gamma_incomplete
  -- an error. To debug this try: debugmode(true);
 
 Error in format: Unknown format directive.
-  Wrong number of arguments to ~:`@`M
+  Wrong number of arguments to ~:@M
                                   ^
 while processing indirect format string:
   ~?
@@ -2548,7 +2548,7 @@ That's not what I meant Jean-Pierre. The current split_and_refactor patch starts
 diff -r a928dca2950b -r b766df9c3439 sage/interfaces/expect.py
 --- a/sage/interfaces/expect.py	Fri Feb 04 14:19:57 2011 -0800
 +++ b/sage/interfaces/expect.py	Mon Feb 14 14:06:15 2011 +0100
-`@``@` -42,6 +42,8 `@``@`
+@@ -42,6 +42,8 @@
  import time
 ```
 
@@ -2559,7 +2559,7 @@ and some patching is done to that file. Then later in the same patch file file w
 diff -r b766df9c3439 -r fba59ed64da6 sage/interfaces/expect.py
 --- a/sage/interfaces/expect.py	Mon Feb 14 14:06:15 2011 +0100
 +++ b/sage/interfaces/expect.py	Wed Feb 16 16:38:39 2011 +0100
-`@``@` -489,12 +489,6 `@``@`
+@@ -489,12 +489,6 @@
          except Exception, msg:
 ```
 

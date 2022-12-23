@@ -1,6 +1,6 @@
 # Issue 2040: 2d graphics -- problems with axes_labels options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2040
 
 Original creator: was
 

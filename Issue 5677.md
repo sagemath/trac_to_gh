@@ -1,6 +1,6 @@
 # Issue 5677: Underscore for repeating output clobbered by symbolic variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5677
 
 Original creator: rbeezer
 

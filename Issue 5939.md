@@ -1,6 +1,6 @@
 # Issue 5939: typo in g.automorphism_group documentation, for g a graph; also partition parameter isn't tested anywhere in the docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5939
 
 Original creator: was
 

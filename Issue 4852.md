@@ -1,6 +1,6 @@
 # Issue 4852: graph plotting using @option and @suboption
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4852
 
 Original creator: jason
 

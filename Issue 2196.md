@@ -1,6 +1,6 @@
 # Issue 2196: Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2196
 
 Original creator: cremona
 

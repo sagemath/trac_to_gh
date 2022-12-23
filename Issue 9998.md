@@ -1,6 +1,6 @@
 # Issue 9998: Status of AIX port of Sage.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9999
 
 Original creator: drkirkby
 

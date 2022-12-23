@@ -1,6 +1,6 @@
 # Issue 1907: matrix nullity returns wrong value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1907
 
 Original creator: AlexGhitza
 

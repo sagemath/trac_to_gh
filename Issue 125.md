@@ -1,6 +1,6 @@
 # Issue 125: maxima doctest freezes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/125
 
 Original creator: dmharvey
 

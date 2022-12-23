@@ -1,6 +1,6 @@
 # Issue 701: port srange to Cython for speed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/701
 
 Original creator: malb
 

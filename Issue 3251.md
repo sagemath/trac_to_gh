@@ -1,6 +1,6 @@
 # Issue 3251: plot level is really weird -- points, etc., are difficult to control whether they are above or below other plot elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3251
 
 Original creator: was
 
@@ -12,9 +12,9 @@ CC:  jason kcrisman
 
 
 ```
-On Sat, May 10, 2008 at 9:35 AM, Hector Villafuerte <hectorvd`@`gmail.com> wrote:
+On Sat, May 10, 2008 at 9:35 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:
 >
-> On Sat, May 10, 2008 at 9:14 AM, louie <loufervillegas`@`hotmail.com> wrote:
+> On Sat, May 10, 2008 at 9:14 AM, louie <loufervillegas@hotmail.com> wrote:
 >>
 >> I made a custom polar grid based on circles and lines and then plotted
 >> some points but the points appeared behind the grid. I tried the

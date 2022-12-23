@@ -1,6 +1,6 @@
 # Issue 2885: make a knoboo optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2885
 
 Original creator: was
 

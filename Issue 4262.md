@@ -1,6 +1,6 @@
 # Issue 4262: Elliptic curve a_invariants command returns a list reference (BAD!!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4262
 
 Original creator: was
 

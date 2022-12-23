@@ -1,6 +1,6 @@
 # Issue 6593: WordMorphism: doctest failure in Fedora
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6593
 
 Original creator: slabbe
 
@@ -75,7 +75,7 @@ After applying the patch in Fedora 11, 32 bit:
 
 
 ```
-[jaap`@`paix sage-4.1.1.alpha0]$ ./sage -t "devel/sage/sage/combinat/words/morphism.py"
+[jaap@paix sage-4.1.1.alpha0]$ ./sage -t "devel/sage/sage/combinat/words/morphism.py"
 sage -t  "devel/sage/sage/combinat/words/morphism.py"       
 	 [4.9 s]
  

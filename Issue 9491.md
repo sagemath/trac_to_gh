@@ -1,6 +1,6 @@
 # Issue 9491: contour plot does not handle transparency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9491
 
 Original creator: jason
 

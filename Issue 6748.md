@@ -1,6 +1,6 @@
 # Issue 6748: [with patch, needs review] Adds Graph.Cliquer to the reference
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6748
 
 Original creator: ncohen
 

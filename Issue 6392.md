@@ -1,6 +1,6 @@
 # Issue 6392: modular abelian quotient -- something goes wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6392
 
 Original creator: was
 

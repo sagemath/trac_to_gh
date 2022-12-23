@@ -1,6 +1,6 @@
 # Issue 1288: misformating of some of the reference manual in live version; also out of date
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1288
 
 Original creator: was
 

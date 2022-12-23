@@ -1,6 +1,6 @@
 # Issue 3904: add 64 bit OSX support for R
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3904
 
 Original creator: mabshoff
 

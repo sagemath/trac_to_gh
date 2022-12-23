@@ -1,6 +1,6 @@
 # Issue 7144: desolve does not use contrib_ode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7144
 
 Original creator: robert.marik
 

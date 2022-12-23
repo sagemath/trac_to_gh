@@ -1,6 +1,6 @@
 # Issue 3127: abelian groups (are lame?) -- bug in comparison of subgroups with group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3127
 
 Original creator: was
 

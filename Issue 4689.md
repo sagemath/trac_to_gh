@@ -1,6 +1,6 @@
 # Issue 4689: Documentation documenting the wrong thing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4689
 
 Original creator: ljpk
 
@@ -87,7 +87,7 @@ Comment by mabshoff created at 2008-12-04 17:35:16
 With #4672 appplied:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: E=EllipticCurve([1,0])

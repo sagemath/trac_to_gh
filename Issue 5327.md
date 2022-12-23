@@ -1,6 +1,6 @@
 # Issue 5327: multiple edge plots use symbolic computations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5327
 
 Original creator: rlm
 

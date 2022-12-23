@@ -1,6 +1,6 @@
 # Issue 7658: installation guide still refers to VMWare, not VirtualBox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7658
 
 Original creator: ddrake
 

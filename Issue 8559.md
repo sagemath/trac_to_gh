@@ -1,6 +1,6 @@
 # Issue 8559: add Playfair cipher as a classical cryptosystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8559
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 5810: Sage 3.4.1.rc3: Fedora 10/64 - unable to start Maxima issue in shapes.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5810
 
 Original creator: mabshoff
 

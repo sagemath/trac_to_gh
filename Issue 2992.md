@@ -1,6 +1,6 @@
 # Issue 2992: notebook -- help(foo) in the notebook should not word wrap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2992
 
 Original creator: was
 

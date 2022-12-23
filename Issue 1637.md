@@ -1,6 +1,6 @@
 # Issue 1637: Update to mpfr 2.3.1 - fix small issues in the spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1637
 
 Original creator: mabshoff
 
@@ -28,14 +28,14 @@ Changes from version 2.3.0 to version 2.3.1:
 - Bug fixes; see <http://www.mpfr.org/mpfr-2.3.0/#bugs>.
 - Improved MPFR manual.
 
-Please send success and failure reports to <mpfr`@`loria.fr>.
+Please send success and failure reports to <mpfr@loria.fr>.
 
 If no problems are found, MPFR 2.3.1 should be released around
 2008-01-12.
 
 Happy New Year,
 
--- Vincent Lefèvre <vincent`@`vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) 
+-- Vincent Lefèvre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) 
 ```
 
 Paul Zimmermann also suggested:

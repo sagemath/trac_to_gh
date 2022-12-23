@@ -1,6 +1,6 @@
 # Issue 5367: bug in composition of power series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5367
 
 Original creator: AlexGhitza
 

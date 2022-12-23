@@ -1,6 +1,6 @@
 # Issue 9333: the kash optional spkg doesn't work at all on OS X due to mistake in use of tar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9333
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9137: Infinite konqueror windows when opening notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9137
 
 Original creator: ryan
 

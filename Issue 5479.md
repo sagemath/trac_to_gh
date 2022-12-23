@@ -1,6 +1,6 @@
 # Issue 5479: schemes/generic/spec.py: Spec.__call__ is basically not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5479
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 9221: update matplotlib to svn and clean out the patches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9221
 
 Original creator: jason
 
@@ -272,7 +272,7 @@ It's not so easy to test the upstream source code directly, as there are depende
 
 
 ```
-kirkby`@`t2:32 ~/matplotlib-1.0.0$ python setup.py build
+kirkby@t2:32 ~/matplotlib-1.0.0$ python setup.py build
 basedirlist is: ['/usr/local']
 ============================================================================
 BUILDING MATPLOTLIB
@@ -324,7 +324,7 @@ BTW, it perfectly possible on Solaris to have both `stdlib.h` and `unistd.h` inc
 
 
 ```
-drkirkby`@`hawk:~$ cat test.c
+drkirkby@hawk:~$ cat test.c
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -334,8 +334,8 @@ int main() {
    exit(0);
 }
 
-drkirkby`@`hawk:~$ gcc -Wall test.c
-drkirkby`@`hawk:~$ ./a.out
+drkirkby@hawk:~$ gcc -Wall test.c
+drkirkby@hawk:~$ ./a.out
 Hello world
 ```
 
@@ -414,7 +414,7 @@ One can see what gets defined with any combination of C and header files by pre-
 
 
 ```
-drkirkby`@`laptop:~$ gcc -dM -E - </dev/null  
+drkirkby@laptop:~$ gcc -dM -E - </dev/null  
 #define __DBL_MIN_EXP__ (-1021)
 #define __FLT_MIN__ 1.17549435e-38F
 #define __CHAR_BIT__ 8
@@ -430,7 +430,7 @@ For the case of a test file where both unistd.h and stdlib.h are defined, we see
 
 
 ```
-drkirkby`@`laptop:~$ gcc -dM -E  test.c | grep XPG
+drkirkby@laptop:~$ gcc -dM -E  test.c | grep XPG
 #define _XOPEN_XPG3 
 #define _XOPEN_XPG4 
 ```

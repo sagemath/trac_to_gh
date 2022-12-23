@@ -1,6 +1,6 @@
 # Issue 7594: Dominating set and Independent dominating Set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7594
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 7108: Sage 4.1.2.rc0 doctest failures on 32-bit Fedora 9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7108
 
 Original creator: mvngu
 

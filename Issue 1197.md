@@ -1,6 +1,6 @@
 # Issue 1197: [with patch] add cremona's modular symbols program g0n to sage and add wrapper supprot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1197
 
 Original creator: was
 

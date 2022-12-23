@@ -1,6 +1,6 @@
 # Issue 2340: Docstrings and doctests for rings/ring.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2340
 
 Original creator: cswiercz
 

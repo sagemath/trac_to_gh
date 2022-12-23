@@ -1,6 +1,6 @@
 # Issue 4304: [with patch, needs review] split up NTL's decl.pxi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4304
 
 Original creator: malb
 

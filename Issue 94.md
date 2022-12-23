@@ -1,6 +1,6 @@
 # Issue 94: mercurial -- need easy way to safely link directly to source browser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/94
 
 Original creator: was
 

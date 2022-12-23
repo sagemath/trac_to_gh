@@ -1,6 +1,6 @@
 # Issue 8304: Remove stray factors of 2 in Coleman integration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8304
 
 Original creator: kedlaya
 

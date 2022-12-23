@@ -1,6 +1,6 @@
 # Issue 5660: count_points(1) for elliptic curves over finite fields is stupid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5660
 
 Original creator: was
 

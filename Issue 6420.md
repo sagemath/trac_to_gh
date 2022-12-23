@@ -1,6 +1,6 @@
 # Issue 6420: Maxima integration error with 1/x^3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6420
 
 Original creator: mora
 
@@ -33,7 +33,7 @@ Maxima 5.18.1: it's ok
 An example for wrong result:
 
 ```
-petya`@`desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima
+petya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima
 Maxima 5.16.3 http://maxima.sourceforge.net
 Using Lisp ECL 9.4.1
 Distributed under the GNU Public License. See the file COPYING.

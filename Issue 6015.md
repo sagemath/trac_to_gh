@@ -1,6 +1,6 @@
 # Issue 6015: bring doctest coverage of set.py to 96%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6015
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 3719: bug in group cohomology
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3719
 
 Original creator: wdj
 

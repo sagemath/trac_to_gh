@@ -1,6 +1,6 @@
 # Issue 446: in latest version of the notebook interactive documenation doesn't "interact" at all.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/446
 
 Original creator: was
 

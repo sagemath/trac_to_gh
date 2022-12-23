@@ -1,6 +1,6 @@
 # Issue 8722: S-units sometimes broken and sometimes just plain wrong for relative fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8722
 
 Original creator: davidloeffler
 

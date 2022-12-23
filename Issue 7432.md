@@ -1,6 +1,6 @@
 # Issue 7432: Missing ` ` in hecke/module.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7432
 
 Original creator: hivert
 

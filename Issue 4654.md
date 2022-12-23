@@ -1,6 +1,6 @@
 # Issue 4654: [with patch, needs review] for 'sage -testall': put sage version in test log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4654
 
 Original creator: jhpalmieri
 

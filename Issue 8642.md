@@ -1,6 +1,6 @@
 # Issue 8642: port detection for the notebook does not work in Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8642
 
 Original creator: mhansen
 

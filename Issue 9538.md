@@ -1,6 +1,6 @@
 # Issue 9538: internal side effect in roots?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9538
 
 Original creator: zimmerma
 
@@ -92,7 +92,7 @@ In particular, Robert Dodier's suggestion to apply this patch to maxima:
 -0000       1.4
 +++ share/contrib/Zeilberger/testZeilberger.mac 15 Jan 2010 19:10:53
 -0000
-`@``@` -110,3 +110,8 `@``@`
+@@ -110,3 +110,8 @@
 
  FULL_TEST : append(GOSPER_TEST,EASY_TEST,
                     HARD_TEST,EXTREME_TEST);

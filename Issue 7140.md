@@ -1,6 +1,6 @@
 # Issue 7140: HP-UX port of Sage - issues arrising from such an attempt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7140
 
 Original creator: drkirkby
 

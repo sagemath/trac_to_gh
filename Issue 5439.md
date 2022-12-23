@@ -1,6 +1,6 @@
 # Issue 5439: Cleanup quirks and weirdnesses in sage.combinat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5439
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 9926: non-squarefree Hecke operators on BrandtModule
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9927
 
 Original creator: AlexGhitza
 

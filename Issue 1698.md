@@ -1,6 +1,6 @@
 # Issue 1698: PolyBoRi doesn't work at all on Itanium Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1698
 
 Original creator: was
 

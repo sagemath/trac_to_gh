@@ -1,6 +1,6 @@
 # Issue 2725: [with patch, needs review] MPolynomial_polydict doc-tests and some refactoring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2725
 
 Original creator: jbmohler
 

@@ -1,6 +1,6 @@
 # Issue 8960: doctest coverage for real_mpfr.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8960
 
 Original creator: jason
 

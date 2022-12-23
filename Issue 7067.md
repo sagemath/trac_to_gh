@@ -1,6 +1,6 @@
 # Issue 7067: cddlib 094f fails to build with Sun Studio - fabs() unresolved. Probably needs -lm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7067
 
 Original creator: drkirkby
 

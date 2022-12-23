@@ -1,6 +1,6 @@
 # Issue 490: gcc 4.3: fix gmp.h problem with "using std::FILE"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/490
 
 Original creator: mabshoff
 

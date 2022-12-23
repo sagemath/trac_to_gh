@@ -1,6 +1,6 @@
 # Issue 2408: MPolynomial_libsingular.factor does not set units
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2408
 
 Original creator: burcin
 

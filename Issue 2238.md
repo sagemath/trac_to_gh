@@ -1,6 +1,6 @@
 # Issue 2238: [with trivial patch, needs review] doctest failure in sage 2.10.2.alpha1: const.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2238
 
 Original creator: AlexGhitza
 

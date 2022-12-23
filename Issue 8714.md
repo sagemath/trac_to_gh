@@ -1,6 +1,6 @@
 # Issue 8714: add Bellman-Ford algorithm for shortest paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8714
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2112: __contains__ sometimes fails with SR elements due to == returning an equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2112
 
 Original creator: mhansen
 

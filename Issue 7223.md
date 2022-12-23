@@ -1,6 +1,6 @@
 # Issue 7223: Spanish doc #11 "Assignment, Equality, and Arithmetic"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7223
 
 Original creator: Loufer
 

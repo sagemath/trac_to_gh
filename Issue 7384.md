@@ -1,6 +1,6 @@
 # Issue 7384: SageNB -- Fix Sphinxify doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7384
 
 Original creator: timdumol
 

@@ -1,6 +1,6 @@
 # Issue 8431: Rauzy fractal (discrete planes and broken lines)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8431
 
 Original creator: vdelecroix
 
@@ -1002,7 +1002,7 @@ labo [~/Applications/sage/devel/sage-t8431/sage/combinat]
  $ cat e_one_star.py.rej 
 --- e_one_star.py
 +++ e_one_star.py
-`@``@` -1230,49 +1338,6 `@``@`
+@@ -1230,49 +1338,6 @@
                  X[letter].append((v, k))
          return X
  
@@ -1066,7 +1066,7 @@ Well, that's very strange: I just compiled 4.6, made a fresh clone, and I could 
 
 
 ```
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qseries
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qseries
 trac_8431_e_one_star.patch
 trac_8431_review-sl.patch
 trac_8431_might_be_final_tj.patch
@@ -1075,16 +1075,16 @@ trac_8431_sigma_type_fix.patch
 trac_8431-wordmorphism-sl.patch
 trac_8431-smallfixes-tj.patch
 trac_8431-alphaset-tj.patch
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qtop
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qtop
 trac_8431-alphaset-tj.patch
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop
 now at: trac_8431-smallfixes-tj.patch
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop
 now at: trac_8431-wordmorphism-sl.patch
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush
 applying trac_8431-smallfixes-tj.patch
 now at: trac_8431-smallfixes-tj.patch
-timo`@`ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush
+timo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush
 applying trac_8431-alphaset-tj.patch
 now at: trac_8431-alphaset-tj.patch
 ```

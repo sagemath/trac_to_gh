@@ -1,6 +1,6 @@
 # Issue 5627: Trivial typo in quadratic_nonresidue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5627
 
 Original creator: kcrisman
 

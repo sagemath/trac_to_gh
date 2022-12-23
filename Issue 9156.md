@@ -1,6 +1,6 @@
 # Issue 9156: Add real() and imag() methods to Integer and Rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9156
 
 Original creator: robertwb
 

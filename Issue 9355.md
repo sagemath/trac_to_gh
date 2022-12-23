@@ -1,6 +1,6 @@
 # Issue 9355: 100% coverage for quadratic_forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9355
 
 Original creator: annahaensch
 

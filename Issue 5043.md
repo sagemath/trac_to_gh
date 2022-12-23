@@ -1,6 +1,6 @@
 # Issue 5043: gap_console help broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5043
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp`@`reed.edu> wrote:
+On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:
 >
 > I will be teaching abstract algebra this semester and want to
 > introduce my students to Sage and GAP.  I have installed
@@ -90,7 +90,7 @@ Steve
 
 On 21 Jan 2009, at 06:39, William Stein wrote:
 
-    On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp`@`reed.edu> wrote:
+    On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:
 
 
         I will be teaching abstract algebra this semester and want to

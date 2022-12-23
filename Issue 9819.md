@@ -1,6 +1,6 @@
 # Issue 9819: text browsers can't log in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9820
 
 Original creator: jason
 

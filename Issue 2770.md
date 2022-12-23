@@ -1,6 +1,6 @@
 # Issue 2770: plot_region function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2770
 
 Original creator: jason
 

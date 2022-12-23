@@ -1,6 +1,6 @@
 # Issue 5153: bug in simon_two_descent  for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5153
 
 Original creator: was
 

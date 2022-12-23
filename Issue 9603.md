@@ -1,6 +1,6 @@
 # Issue 9603: Force iconv to build on HP-UX in addition to Solaris and Cygwin.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9603
 
 Original creator: drkirkby
 
@@ -846,7 +846,7 @@ now. Mike Hansen has said it OK on Cygwin:
 
 ```
 On Fri, Aug 27, 2010 at 3:21 AM, Dr. David Kirkby
-<david.kirkby`@`onetel.net> wrote:
+<david.kirkby@onetel.net> wrote:
 > > http://boxen.math.washington.edu/home/kirkby/patches/iconv-1.13.1.p3.spkg
 > >
 > > I don't believe there will be any issues with Cygwin, but it would be nice
@@ -1134,7 +1134,7 @@ Replying to [comment:45 leif]:
 ```
 changeset:   11:7ffde08f86a0
 tag:         tip
-user:        Leif Leonhardy <not.really`@`online.de>
+user:        Leif Leonhardy <not.really@online.de>
 date:        Wed Sep 08 19:39:14 2010 +0200
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1142,7 +1142,7 @@ description:
 
 
 changeset:   10:e5178b991bd2
-user:        Leif Leonhardy <not.really`@`online.de>
+user:        Leif Leonhardy <not.really@online.de>
 date:        Wed Sep 08 17:58:58 2010 +0200
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1150,7 +1150,7 @@ description:
 
 
 changeset:   9:ceb9cde565c1
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Wed Sep 08 14:18:58 2010 +0200
 files:       SPKG.txt spkg-install
 description:
@@ -1158,7 +1158,7 @@ description:
 
 
 changeset:   8:db6e4a8c74d8
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Thu Aug 26 23:36:08 2010 +0100
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1166,7 +1166,7 @@ description:
 
 
 changeset:   7:c91f30ba571d
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Tue Aug 10 20:47:59 2010 +0100
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1174,7 +1174,7 @@ description:
 
 
 changeset:   6:745799a814dd
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Wed Jul 28 01:35:01 2010 +0100
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1182,7 +1182,7 @@ description:
 
 
 changeset:   5:3fe4fc14de91
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Tue Jul 27 10:36:47 2010 +0100
 files:       spkg-install
 description:
@@ -1190,7 +1190,7 @@ description:
 
 
 changeset:   4:31960cb87501
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Mon Jul 26 14:36:15 2010 +0100
 files:       SPKG.txt spkg-check spkg-install
 description:
@@ -1198,7 +1198,7 @@ description:
 
 
 changeset:   3:32e7f7a36cea
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Wed Mar 31 18:35:42 2010 -0700
 files:       SPKG.txt spkg-check
 description:

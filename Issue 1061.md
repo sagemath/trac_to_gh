@@ -1,6 +1,6 @@
 # Issue 1061: fix python compile on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1061
 
 Original creator: mabshoff
 

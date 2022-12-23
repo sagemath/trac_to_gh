@@ -1,6 +1,6 @@
 # Issue 2532: [with-patch] padic bugfix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2532
 
 Original creator: roed
 

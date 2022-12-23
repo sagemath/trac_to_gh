@@ -1,6 +1,6 @@
 # Issue 8892: Many doctests fails since the update of NetworkX !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8892
 
 Original creator: ncohen
 

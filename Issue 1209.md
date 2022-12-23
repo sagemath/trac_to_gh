@@ -1,6 +1,6 @@
 # Issue 1209: make it so maple.gcd?? shows source code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1209
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Nov 19, 2007 8:29 AM, Jason Grout <jason-sage`@`creativetrax.com> wrote:
+On Nov 19, 2007 8:29 AM, Jason Grout <jason-sage@creativetrax.com> wrote:
 > 
 > William Stein wrote:
 > 

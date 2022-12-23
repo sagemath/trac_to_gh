@@ -1,6 +1,6 @@
 # Issue 5039: Create a class for SetPartition (with no s)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5039
 
 Original creator: slabbe
 

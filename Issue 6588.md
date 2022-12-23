@@ -1,6 +1,6 @@
 # Issue 6588: Root systems: categorification
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6588
 
 Original creator: nthiery
 
@@ -916,7 +916,7 @@ Thanks Jeroen for the report. This should be fixed with the upcoming patch. The 
 diff --git a/sage/combinat/root_system/dynkin_diagram.py b/sage/combinat/root_system/dynkin_diagram.py
 --- a/sage/combinat/root_system/dynkin_diagram.py
 +++ b/sage/combinat/root_system/dynkin_diagram.py
-`@``@` -165,8 +165,8 `@``@` class DynkinDiagram_class(DiGraph, Carta
+@@ -165,8 +165,8 @@ class DynkinDiagram_class(DiGraph, Carta
          EXAMPLES::
  
              sage: hash(CartanType(['A',3]).dynkin_diagram()) # indirect doctest

@@ -1,6 +1,6 @@
 # Issue 5088: [with patch, needs review] use Pohlig-Hellman for generic discrete logarithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5088
 
 Original creator: ylchapuy
 

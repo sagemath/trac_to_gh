@@ -1,6 +1,6 @@
 # Issue 2800: (trivial to fix): %lisp mode in the notebook doesn't work -- remove it from the menu at the top
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2800
 
 Original creator: was
 

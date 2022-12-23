@@ -1,6 +1,6 @@
 # Issue 5865: Add SAGE_SIMD_FLAG="SSE2" README.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5865
 
 Original creator: was
 

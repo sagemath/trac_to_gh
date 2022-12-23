@@ -1,6 +1,6 @@
 # Issue 6598: Change the sage build system to use "set -e" so that if any error occurs in spkg-install then the build immediately terminates with an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6598
 
 Original creator: was
 

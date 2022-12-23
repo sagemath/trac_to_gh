@@ -1,6 +1,6 @@
 # Issue 2998: sage ignores some environment variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2998
 
 Original creator: dfdeshom
 
@@ -29,7 +29,7 @@ Easy fix:
 ---------------------------------------------------------------
 --- a/sage-spkg Mon Apr 21 01:43:53 2008 -0700
 +++ b/sage-spkg Tue Apr 22 12:37:48 2008 -0300
-`@``@` -241,8 +241,8 `@``@`
+@@ -241,8 +241,8 @@
 
  echo "****************************************************"
  echo "GCC Version"

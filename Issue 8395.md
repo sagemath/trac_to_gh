@@ -1,6 +1,6 @@
 # Issue 8395: degree() reports the degree of a self-loop vertex as contributing 1 to total degree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8395
 
 Original creator: mvngu
 
@@ -13,7 +13,7 @@ CC:  jason ncohen
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):
 
 ```
-[mvngu`@`sage mvngu]$ sage
+[mvngu@sage mvngu]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: G = Graph({1:[1]}); G

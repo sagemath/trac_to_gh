@@ -1,6 +1,6 @@
 # Issue 4151: [with patch, needs review] implementation of Dickman's function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4151
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 1126: building of fplll is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1126
 
 Original creator: was
 

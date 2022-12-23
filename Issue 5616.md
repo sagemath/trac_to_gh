@@ -1,6 +1,6 @@
 # Issue 5616: speed regression with fast_callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5616
 
 Original creator: robertwb
 

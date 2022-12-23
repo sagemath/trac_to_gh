@@ -1,6 +1,6 @@
 # Issue 5490: Easter!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5490
 
 Original creator: psinis
 

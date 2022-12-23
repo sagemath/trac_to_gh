@@ -1,6 +1,6 @@
 # Issue 6659: cores() is broken for some digraphs, and is *way* too slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6659
 
 Original creator: jason
 

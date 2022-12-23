@@ -1,6 +1,6 @@
 # Issue 8316: Remove the Jinja (not Jinja2) package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8316
 
 Original creator: mpatel
 

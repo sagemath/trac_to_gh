@@ -1,6 +1,6 @@
 # Issue 9992: Singular fails to build on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9993
 
 Original creator: drkirkby
 

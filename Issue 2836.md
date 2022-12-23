@@ -1,6 +1,6 @@
 # Issue 2836: [with patch, needs review] twisted.conch.ssh deprecated functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2836
 
 Original creator: yi
 

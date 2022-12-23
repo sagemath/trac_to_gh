@@ -1,6 +1,6 @@
 # Issue 9253: A collection of little improvements to heegner.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9253
 
 Original creator: rlm
 

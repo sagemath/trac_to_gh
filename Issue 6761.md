@@ -1,6 +1,6 @@
 # Issue 6761: solve_left on a vector returns a matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6761
 
 Original creator: robertwb
 

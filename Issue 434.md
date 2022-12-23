@@ -1,6 +1,6 @@
 # Issue 434: bug in mwrank interface -- something doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/434
 
 Original creator: was
 
@@ -48,7 +48,7 @@ Fix (I can't attach files right now)
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1187832852 25200
 # Node ID 34d1ed88836b44c399cbf2aecd4cbb9ce67ece60
 # Parent  7df7b573320b12540b9d8ba75e73354e3b993b48
@@ -57,7 +57,7 @@ Fix trac #434 -- but in mwrank interface.
 diff -r 7df7b573320b -r 34d1ed88836b sage/libs/mwrank/interface.py
 --- a/sage/libs/mwrank/interface.py     Wed Aug 22 17:50:17 2007 -0700
 +++ b/sage/libs/mwrank/interface.py     Wed Aug 22 18:34:12 2007 -0700
-`@``@` -25,9 +25,14 `@``@` def set_precision(n):
+@@ -25,9 +25,14 @@ def set_precision(n):
 
      INPUT:
          n -- long

@@ -1,6 +1,6 @@
 # Issue 4914: convert sage.groups.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4914
 
 Original creator: mhansen
 

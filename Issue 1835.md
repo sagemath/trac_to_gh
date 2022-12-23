@@ -1,6 +1,6 @@
 # Issue 1835: [with patch] some minor changes to the documentation of basis_is_groebner
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1835
 
 Original creator: malb
 

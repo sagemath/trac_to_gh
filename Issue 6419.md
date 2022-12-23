@@ -1,6 +1,6 @@
 # Issue 6419: [with patch, needs review] fix ref manual warnings for sage.misc.misc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6419
 
 Original creator: jhpalmieri
 

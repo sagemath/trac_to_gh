@@ -1,6 +1,6 @@
 # Issue 3100: coercion errors from SymbolicRing to various fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3100
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 6700: spell-check all modules under sage/geometry
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6700
 
 Original creator: mvngu
 

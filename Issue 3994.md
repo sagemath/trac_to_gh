@@ -1,6 +1,6 @@
 # Issue 3994: Cython crashes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3994
 
 Original creator: malb
 

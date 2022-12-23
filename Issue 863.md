@@ -1,6 +1,6 @@
 # Issue 863: trac -- make it not crash, or when it does, make it autorestart!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/863
 
 Original creator: was
 

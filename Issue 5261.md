@@ -1,6 +1,6 @@
 # Issue 5261: Straigten out some annoyances with the OSX Sage.app bundle
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5261
 
 Original creator: mabshoff
 

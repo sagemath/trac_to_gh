@@ -1,6 +1,6 @@
 # Issue 7346: notebook -- needless vertical scroll bars on output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7346
 
 Original creator: was
 

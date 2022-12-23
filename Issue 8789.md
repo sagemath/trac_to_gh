@@ -1,6 +1,6 @@
 # Issue 8789: Improve doctest coverage of modules/free_module_element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8789
 
 Original creator: was
 
@@ -51,11 +51,11 @@ The second patch doesn't apply when applied on top of the first one:
 
 
 ```sh
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789.patch && hg qpush 
 adding trac_8789.patch to series file
 applying trac_8789.patch
 now at: trac_8789.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789_part2.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789_part2.patch && hg qpush 
 adding trac_8789_part2.patch to series file
 applying trac_8789_part2.patch
 patching file sage/modules/free_module_element.pyx

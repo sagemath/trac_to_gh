@@ -1,6 +1,6 @@
 # Issue 7434: notebook: new modal jquery dialog boxes are covered by jmol 3d graphics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7434
 
 Original creator: was
 

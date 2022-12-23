@@ -1,6 +1,6 @@
 # Issue 9607: Doctest failure in latex.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9607
 
 Original creator: mpatel
 

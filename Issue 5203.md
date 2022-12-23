@@ -1,6 +1,6 @@
 # Issue 5203: [with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5203
 
 Original creator: mabshoff
 

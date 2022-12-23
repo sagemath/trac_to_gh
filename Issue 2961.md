@@ -1,6 +1,6 @@
 # Issue 2961: [with patch; needs review] add doctest for alarm function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2961
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3880: Bad behavior of arrows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3880
 
 Original creator: itolkov
 

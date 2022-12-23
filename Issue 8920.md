@@ -1,6 +1,6 @@
 # Issue 8920: Factor code between words's alphabets and sets/enumerated sets/ordered sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8920
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 1458: Ipython bug -- the tracebacks in the sage command line list all absolute paths to Cython files totally incorrectly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1458
 
 Original creator: was
 

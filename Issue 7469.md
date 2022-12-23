@@ -1,6 +1,6 @@
 # Issue 7469: SageNB - Add new tests regarding publishing and editing published worksheets.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7469
 
 Original creator: timdumol
 

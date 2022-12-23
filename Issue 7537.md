@@ -1,6 +1,6 @@
 # Issue 7537: list(SR('c').iterator()) is empty
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7537
 
 Original creator: malb
 
@@ -41,13 +41,13 @@ In[1]:= T=x+1
 Out[1]= 1 + x
 In[2]:= T
 Out[2]= 1 + x
-In[3]:= T[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)
+In[3]:= T[[1]]
 Out[3]= 1
 In[4]:= X
 Out[4]= X
-In[5]:= X[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)
-Part::partd: Part specification X[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro) is longer than depth of object.
-Out[5]= X[This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)
+In[5]:= X[[1]]
+Part::partd: Part specification X[[1]] is longer than depth of object.
+Out[5]= X[[1]]
 ```
 
 

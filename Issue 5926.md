@@ -1,6 +1,6 @@
 # Issue 5926: [with patch; needs review] solaris top sometimes fails due to race condition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5926
 
 Original creator: was
 

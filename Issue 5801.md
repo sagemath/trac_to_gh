@@ -1,6 +1,6 @@
 # Issue 5801: Delete sage/server/notebook/{test.txt|todo.txt} and move their content to documentation trac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5801
 
 Original creator: mabshoff
 

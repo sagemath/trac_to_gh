@@ -1,6 +1,6 @@
 # Issue 1483: animate -- polish the animate command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1483
 
 Original creator: was
 

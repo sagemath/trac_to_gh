@@ -1,6 +1,6 @@
 # Issue 420: SAGE's optional axiom package doesn't build on os x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/420
 
 Original creator: was
 

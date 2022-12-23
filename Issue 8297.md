@@ -1,6 +1,6 @@
 # Issue 8297: extra parenthesis when typesetting QQ arguments to symbolic functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8297
 
 Original creator: burcin
 
@@ -15,7 +15,7 @@ From sage-devel:
 
 ```
 On Wed, 17 Feb 2010 23:16:13 -0800 (PST)
-Håkan Granath <hakan.granath`@`googlemail.com> wrote:
+Håkan Granath <hakan.granath@googlemail.com> wrote:
 
 > A minor inconvenience is the extra set of parentheses that appear
 > when typesetting QQ elements as arguments of functions, e.g.

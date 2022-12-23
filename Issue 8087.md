@@ -1,6 +1,6 @@
 # Issue 8087: jinja2 fails to build on Open Solaris x64 (
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8087
 
 Original creator: drkirkby
 

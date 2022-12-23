@@ -1,6 +1,6 @@
 # Issue 9873: add a function for the derivative of ceil and floor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9874
 
 Original creator: burcin
 

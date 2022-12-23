@@ -1,6 +1,6 @@
 # Issue 3665: add initial species code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3665
 
 Original creator: mhansen
 

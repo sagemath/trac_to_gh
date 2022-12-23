@@ -1,6 +1,6 @@
 # Issue 5564: [with patch, needs review] fix character encoding problems in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5564
 
 Original creator: mhansen
 

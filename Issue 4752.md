@@ -1,6 +1,6 @@
 # Issue 4752: list_plot3d crashes sage with some exact input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4752
 
 Original creator: mhampton
 

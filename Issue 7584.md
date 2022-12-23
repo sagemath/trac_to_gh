@@ -1,6 +1,6 @@
 # Issue 7584: Pari spkg: remove junk file pari-2.3.3.p5.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7584
 
 Original creator: schilly
 

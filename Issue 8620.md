@@ -1,6 +1,6 @@
 # Issue 8620: Rogue minus sign in sage.modular.modsym.ambient.diamond_bracket_operator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8620
 
 Original creator: davidloeffler
 

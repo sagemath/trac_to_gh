@@ -1,6 +1,6 @@
 # Issue 8970: conversion of integer mods to Gap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8970
 
 Original creator: davidloeffler
 

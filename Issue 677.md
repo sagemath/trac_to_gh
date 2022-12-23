@@ -1,6 +1,6 @@
 # Issue 677: add doctest option to check if result and expected result are numerically close
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/677
 
 Original creator: mabshoff
 

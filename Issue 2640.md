@@ -1,6 +1,6 @@
 # Issue 2640: add sage-edu to list of mailing lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2640
 
 Original creator: was
 

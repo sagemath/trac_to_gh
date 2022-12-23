@@ -1,6 +1,6 @@
 # Issue 7661: maxima interface gives precedence to function dictionary instead of local variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7661
 
 Original creator: burcin
 
@@ -19,7 +19,7 @@ http://groups.google.com/group/sage-devel/t/c89582242c83a349
 
 ```
 On Fri, 11 Dec 2009 13:46:31 +0100
-Nathann Cohen <nathann.cohen`@`gmail.com> wrote:
+Nathann Cohen <nathann.cohen@gmail.com> wrote:
 
 > sage: var('delta k')
 > sage: m1=2*delta**2 + 2**2*delta*k
@@ -58,7 +58,7 @@ Comment by was created at 2010-01-30 23:28:06
 People run into this all the time, evidently:
 
 ```
-[15:21] --> SageWWW has joined this channel (~SageWWW`@`64.241.37.140).
+[15:21] --> SageWWW has joined this channel (~SageWWW@64.241.37.140).
 [15:23] <SageWWW> hey guys.  what do you think about http://pastebin.ca/1772520
 [15:24] <SageWWW> d = var('delta'), so now d is a reference to a sage.symbolic.expression.Expression
 [15:25] <SageWWW> but when we try to add it to something else, it thinks its a sage.functions.generalized.FunctionDiracDelta

@@ -1,6 +1,6 @@
 # Issue 1713: [with patch] fix SageElement._sage_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1713
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 864: Asymptotically slow pari <--> python long conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/864
 
 Original creator: craigcitro
 

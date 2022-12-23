@@ -1,6 +1,6 @@
 # Issue 6498: Compilation of ratpoints in sage-4.1.rc1 fails on 64-bit Gentoo Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6498
 
 Original creator: saliola
 
@@ -14,7 +14,7 @@ sage-4.1.rc1 doesn't compile on 64-bit Gentoo linux:
 ****************************************************
 Host system
 uname -a:
-Linux massena 2.6.23-gentoo-r6 #1 SMP Wed Feb 6 21:49:58 CET 2008 x86_64 Intel(R) Xeon(R) CPU           X5365  `@` 3.00GHz GenuineIntel GNU/Linux
+Linux massena 2.6.23-gentoo-r6 #1 SMP Wed Feb 6 21:49:58 CET 2008 x86_64 Intel(R) Xeon(R) CPU           X5365  @ 3.00GHz GenuineIntel GNU/Linux
 ****************************************************
 ****************************************************
 GCC Version

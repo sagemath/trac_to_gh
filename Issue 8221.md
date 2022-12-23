@@ -1,6 +1,6 @@
 # Issue 8221: blank space at bottom of worksheet missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8221
 
 Original creator: jason
 

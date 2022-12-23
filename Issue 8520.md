@@ -1,6 +1,6 @@
 # Issue 8520: Optional package gap_packages-4.4.12_2  fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8520
 
 Original creator: drkirkby
 

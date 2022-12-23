@@ -1,6 +1,6 @@
 # Issue 465: LinBox: reenable Strassen-Winograd optimization test on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/465
 
 Original creator: mabshoff
 
@@ -47,7 +47,7 @@ Comment by mabshoff created at 2007-08-21 16:10:07
 At http://sage.math.washington.edu/home/mabshoff/linbox-20070814.p1.spkg is an updated LinBox spkg. Changes:
 
 ```
-mabshoff`@`neron standard$ less linbox-20070814.p1/SPKG.txt
+mabshoff@neron standard$ less linbox-20070814.p1/SPKG.txt
 *20070821:
 
 - reenable tuning test

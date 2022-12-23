@@ -1,6 +1,6 @@
 # Issue 9549: InfinitePolynomialRing_sparse.is_field lacks `proof=...` option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9549
 
 Original creator: mmezzarobba
 

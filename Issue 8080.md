@@ -1,6 +1,6 @@
 # Issue 8080: installation guide: require Fortran as a pre-requisite for compiling Sage on Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8080
 
 Original creator: mvngu
 

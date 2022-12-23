@@ -1,6 +1,6 @@
 # Issue 9872: Create Mac Application that people love to use
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9873
 
 Original creator: iandrus
 
@@ -164,8 +164,8 @@ I just applied both patches and tried building with the SAGE_APP_BUNDLE=yes, and
 
 
 ```
-grout`@`tiny:~/sage/dist% export SAGE_APP_BUNDLE=yes
-grout`@`tiny:~/sage/dist% sage -bdist 4.4.2-app     
+grout@tiny:~/sage/dist% export SAGE_APP_BUNDLE=yes
+grout@tiny:~/sage/dist% sage -bdist 4.4.2-app     
 Sage works!
 Copying files over to tmp directory
 cp: *.sage: No such file or directory
@@ -1996,13 +1996,13 @@ And running hg on that file gives me
 
 ```
 changeset:   992:e83ef403be0d
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Fri Oct 31 14:25:18 2008 -0700
 summary:     Update README
 
 changeset:   837:ee5ea120914a
 tag:         3.0.2.alpha0
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 10 16:21:08 2008 -0700
 summary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()
 ```
@@ -2096,13 +2096,13 @@ The tilde is a common means of indicating a backup file.  It should be something
 
 ```
 changeset:   992:e83ef403be0d
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Fri Oct 31 14:25:18 2008 -0700
 summary:     Update README
 
 changeset:   837:ee5ea120914a
 tag:         3.0.2.alpha0
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat May 10 16:21:08 2008 -0700
 summary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()
 ```
@@ -2114,7 +2114,7 @@ I was very confused by this for a long time, but I finally tracked it down to
 ```
 $ hg log -r 1370
 changeset:   1370:80bc1e909378
-user:        Mike Hansen <mhansen`@`gmail.com>
+user:        Mike Hansen <mhansen@gmail.com>
 date:        Thu Nov 12 20:55:24 2009 -0800
 summary:     Remove the sage-README-osx.txt file from the scripts repo.
 ```

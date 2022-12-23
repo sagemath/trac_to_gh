@@ -1,6 +1,6 @@
 # Issue 4187: Fix compilation problem for libfplll.spkg on Solaris 10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4187
 
 Original creator: mabshoff
 

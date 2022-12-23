@@ -1,6 +1,6 @@
 # Issue 5420: imag(complex(0,1)) gives TypeError (easy)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5420
 
 Original creator: jason
 

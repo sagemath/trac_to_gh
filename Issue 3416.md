@@ -1,6 +1,6 @@
 # Issue 3416: Weierstrass form for cubics [with patch, with negative review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3416
 
 Original creator: moretti
 
@@ -1216,7 +1216,7 @@ Comment by cremona created at 2013-06-26 16:56:33
 Sorry, I had assumed that the problem would be reproducible.  This is with 5.11.beta3 on which I had done nothing at all before adding the three patches:
 
 ```
-jec`@`fermat%../../sage -t sage/schemes/elliptic_curves/jacobian.py 
+jec@fermat%../../sage -t sage/schemes/elliptic_curves/jacobian.py 
 Running doctests with ID 2013-06-26-17-52-06-6d628e14.
 Doctesting 1 file.
 sage -t sage/schemes/elliptic_curves/jacobian.py

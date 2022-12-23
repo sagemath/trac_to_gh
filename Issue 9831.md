@@ -1,6 +1,6 @@
 # Issue 9831: Invalid HTML in data/sage/html/login.html
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9832
 
 Original creator: timdumol
 

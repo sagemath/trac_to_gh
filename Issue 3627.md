@@ -1,6 +1,6 @@
 # Issue 3627: illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3627
 
 Original creator: was
 
@@ -105,7 +105,7 @@ timpani% ./sage
 | SAGE Version 3.0.4.rc1, Release Date: 2008-07-08                   |
 | Type notebook() for the GUI, and license() for information.        |
 sage: ModularSymbols(24,8).eisenstein_submodule()
-/u/was/sage-3.0.4.rc1/local/bin/sage-sage: line 216: 18591 Illegal instruction     sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/u/was/sage-3.0.4.rc1/local/bin/sage-sage: line 216: 18591 Illegal instruction     sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 
@@ -212,7 +212,7 @@ Bill Hart and I figured this out:
 ```
 
 
-On Wed, Jul 9, 2008 at 3:01 PM, Bill Hart <goodwillhart`@`googlemail.com> wrote:
+On Wed, Jul 9, 2008 at 3:01 PM, Bill Hart <goodwillhart@googlemail.com> wrote:
 > Another thing to try is to put -march=pentium4 -mtune=pentium4 when
 > you compile flint.
 >

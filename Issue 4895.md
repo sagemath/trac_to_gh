@@ -1,6 +1,6 @@
 # Issue 4895: bug in pattern avoiding permutations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4895
 
 Original creator: jbandlow
 

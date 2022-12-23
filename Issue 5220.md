@@ -1,6 +1,6 @@
 # Issue 5220: Weird or non-appearance of default in input_box in interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5220
 
 Original creator: kcrisman
 
@@ -14,7 +14,7 @@ From sage-support:
 ```
 On sagenb.org, try making an interact with an input box explicitly 
 defined, e.g. 
-`@`interact 
+@interact 
 def plotfunction(f=input_box(x^2)): 
     P=plot(f,0,1) 
     show(P) 
@@ -98,7 +98,7 @@ See the mailing list discussion at http://groups.google.com/group/sage-support/b
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box('x^2')):
      print f 
 ```
@@ -108,7 +108,7 @@ used to make an input box with x^2 in it.  Now it literally puts the string 'x^2
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box(x^2)):
      print f 
 ```
@@ -118,7 +118,7 @@ or even
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=x^2):
      print f 
 ```
@@ -133,7 +133,7 @@ P.S. I can see why having
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box('x^2')):
      print f 
 ```
@@ -142,7 +142,7 @@ def plotfunction(f=input_box('x^2')):
 produce x^2 in the input box would be good too, though.  There are lots of types in Sage for which repr does not give you back a string that can be used to reconstruct the object.  For example, I believe that after the patch, 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box(RIF(3.2,3.4))):
      print f 
 ```
@@ -152,7 +152,7 @@ will produce an input box that has "3.3?" in it (without quotation marks).  Of c
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box('RIF(3.2,3.4)')):
      print f 
 ```
@@ -162,7 +162,7 @@ to produce an input box with "RIF(3.2,3.4)" (without quotation marks) in it.  Th
 
 
 ```
-`@`interact
+@interact
 def plotfunction(f=input_box("'my string'")):
      print f 
 ```

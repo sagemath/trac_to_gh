@@ -1,6 +1,6 @@
 # Issue 2879: [with patch, needs review] Bug fix in totallyreal_rel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2879
 
 Original creator: jvoight
 

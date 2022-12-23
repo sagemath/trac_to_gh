@@ -1,6 +1,6 @@
 # Issue 2519: Add support for posets, semi-lattices, etc. to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2519
 
 Original creator: saliola
 
@@ -125,12 +125,12 @@ With both patches applied the doctests pass. Two comments:
 ```
 changeset:   9746:0f14afe7ba00
 tag:         tip
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Thu May 22 16:52:19 2008 -0700
 summary:     Apply patch by Peter Jipsen and Franco Saliola: Add support for posets, semi-lattices, etc
 
 changeset:   9745:0716b13a9e12
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Thu May 22 16:52:08 2008 -0700
 summary:     Apply patch by Peter Jipsen and Franco Saliola: Add support for posets, semi-lattices, etc.
 ```

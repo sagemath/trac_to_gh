@@ -1,6 +1,6 @@
 # Issue 3695: factor?? improved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3695
 
 Original creator: certik
 

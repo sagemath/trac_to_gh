@@ -1,6 +1,6 @@
 # Issue 3562: Do not doctest pbuild files in devel/sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3562
 
 Original creator: mabshoff
 

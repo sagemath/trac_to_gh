@@ -1,6 +1,6 @@
 # Issue 6573: fix docstring from #5651
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6573
 
 Original creator: mvngu
 

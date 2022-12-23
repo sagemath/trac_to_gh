@@ -1,6 +1,6 @@
 # Issue 3887: [with patch, needs review] Bug in determinant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3887
 
 Original creator: craigcitro
 

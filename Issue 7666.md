@@ -1,6 +1,6 @@
 # Issue 7666: Alphanumeric cell IDs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7666
 
 Original creator: mpatel
 
@@ -311,7 +311,7 @@ I've rebased the patch on a new patch queue, but since the reject is just some e
 ```
 --- notebook_lib.js
 +++ notebook_lib.js
-`@``@` -4376,10 +4676,10 `@``@` function decode64(input) {
+@@ -4376,10 +4676,10 @@ function decode64(input) {
      return output;
  }
  

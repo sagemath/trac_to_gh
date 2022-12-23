@@ -1,6 +1,6 @@
 # Issue 8365: Reorganize slightly the outline of the documentation of Polynomial Rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8365
 
 Original creator: mmezzarobba
 

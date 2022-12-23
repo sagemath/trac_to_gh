@@ -1,6 +1,6 @@
 # Issue 9570: Wrong LP solver ordering
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9570
 
 Original creator: ncohen
 

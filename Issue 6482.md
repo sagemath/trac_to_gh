@@ -1,6 +1,6 @@
 # Issue 6482: multivariate polynomial substitution has a design flaw
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6482
 
 Original creator: was
 

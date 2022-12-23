@@ -1,6 +1,6 @@
 # Issue 4476: [with patch, spkg; needs review] Update to Cython 0.10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4476
 
 Original creator: robertwb
 

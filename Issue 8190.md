@@ -1,6 +1,6 @@
 # Issue 8190: decrease the number of docbuild warnings to 147
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8190
 
 Original creator: mvngu
 

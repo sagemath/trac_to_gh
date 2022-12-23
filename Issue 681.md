@@ -1,6 +1,6 @@
 # Issue 681: new MQ submodule for sage.crypto [with patch]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/681
 
 Original creator: malb
 

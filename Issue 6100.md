@@ -1,6 +1,6 @@
 # Issue 6100: give a basis for homology and cohomology of chain complexes in terms of given generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6100
 
 Original creator: bantieau
 

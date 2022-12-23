@@ -1,6 +1,6 @@
 # Issue 3587: calculus -- implement symbolic summation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3587
 
 Original creator: was
 
@@ -314,7 +314,7 @@ Comment by was created at 2009-09-13 01:15:20
 Fix this one broken doctest and this gets a positive review from me:
 
 ```python
-wstein`@`sage:~/build/sage-4.1.2.alpha1$ ./sage -t devel/sage/sage/misc/functional.py 
+wstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t devel/sage/sage/misc/functional.py 
 sage -t  "devel/sage/sage/misc/functional.py"               
 **********************************************************************
 File "/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/misc/functional.py", line 442:
@@ -346,7 +346,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/misc/functional.py"
 Total time for all tests: 8.3 seconds
-wstein`@`sage:~/build/sage-4.1.2.alpha1$ 
+wstein@sage:~/build/sage-4.1.2.alpha1$ 
 ```
 
 

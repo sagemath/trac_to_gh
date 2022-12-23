@@ -1,6 +1,6 @@
 # Issue 2178: latex2html does not like $+$
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2178
 
 Original creator: cwitty
 

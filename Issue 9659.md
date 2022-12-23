@@ -1,6 +1,6 @@
 # Issue 9659: EK.regulator_of_points() doctest error in ell_number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9659
 
 Original creator: mpatel
 

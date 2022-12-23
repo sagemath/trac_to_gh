@@ -1,6 +1,6 @@
 # Issue 4300: [with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4300
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4265: [with patch, needs review] EllipticCurve.a_invariants should return a tuple rather than a list
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4265
 
 Original creator: malb
 

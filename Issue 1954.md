@@ -1,6 +1,6 @@
 # Issue 1954: sage/modules/free_module_element.pyx computing abs(vector(...))
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1954
 
 Original creator: mhansen
 

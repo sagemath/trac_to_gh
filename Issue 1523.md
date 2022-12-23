@@ -1,6 +1,6 @@
 # Issue 1523: rewrite the mathematica/maple <---> sage interfaces for osx to be much easier to use for the "lay person"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1523
 
 Original creator: was
 

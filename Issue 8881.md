@@ -1,6 +1,6 @@
 # Issue 8881: Functorial constructions in categories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8881
 
 Original creator: hivert
 

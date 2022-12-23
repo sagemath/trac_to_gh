@@ -1,6 +1,6 @@
 # Issue 2463: Linbox static commentator make sage crash on PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2463
 
 Original creator: cpernet
 

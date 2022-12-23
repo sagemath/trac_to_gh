@@ -1,6 +1,6 @@
 # Issue 3991: [with patch, needs review] Matrix_mod2_dense.__hash__ 32-bit doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3991
 
 Original creator: malb
 

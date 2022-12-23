@@ -1,6 +1,6 @@
 # Issue 7805: MixedIntegerLinearProgram.show should use the variables' and constraints' names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7805
 
 Original creator: ncohen
 

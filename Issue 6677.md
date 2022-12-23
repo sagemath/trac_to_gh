@@ -1,6 +1,6 @@
 # Issue 6677: [with patch, needs review] Sequence doesn't know how to typeset itself
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6677
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 357: the help() function modules lister doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/357
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-Ted Kosan <ted.kosan`@`gmail.com> 	
+Ted Kosan <ted.kosan@gmail.com> 	
 to sage-support
 	
 show details
@@ -68,7 +68,7 @@ Please wait a moment while I gather a list of all available modules...
    1647 You are now leaving help and returning to the Python interpreter.
 
 /home/tkosan/download/sage/sage-2.4-i686-Linux/local/lib/python/pydoc.py in interact(self)
-   1661             request = strip(replace(request, '"', _, "'", _))
+   1661             request = strip(replace(request, '"', '', "'", ''))
    1662             if lower(request) in ('q', 'quit'): break
 -> 1663             self.help(request)
    1664

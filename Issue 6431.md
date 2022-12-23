@@ -1,6 +1,6 @@
 # Issue 6431: no call method from Laurent series into Power series ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6431
 
 Original creator: ncalexan
 
@@ -14,7 +14,7 @@ Keywords: Laurent series power series call method
 
 
 ```
-sage: CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)( ~(~CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro).gen()^2) )
+sage: CDF[['t']]( ~(~CDF[['t']].gen()^2) )
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 

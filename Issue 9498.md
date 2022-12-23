@@ -1,6 +1,6 @@
 # Issue 9498: The function _factor_over_nonprime_finite_field is wrong in Sage, so remove it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9498
 
 Original creator: was
 

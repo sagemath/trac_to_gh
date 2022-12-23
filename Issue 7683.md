@@ -1,6 +1,6 @@
 # Issue 7683: sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7683
 
 Original creator: was
 

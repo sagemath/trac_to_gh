@@ -1,6 +1,6 @@
 # Issue 2343: [with patch, needs review] for zero-dimensional ideals, allow computation of varieties over arbitrary fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2343
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 481: sagemath.org Optional Packages out of date
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/481
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 2715: sage -coverage currently counts functions that are defined in doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2715
 
 Original creator: mhansen
 

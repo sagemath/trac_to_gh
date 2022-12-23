@@ -1,6 +1,6 @@
 # Issue 3684: linear algebra -- optimize computation of kernel for matrices over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3684
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Sat, Jul 19, 2008 at 11:49 PM, Simon King <king`@`mathematik.uni-jena.de> wrote:
+On Sat, Jul 19, 2008 at 11:49 PM, Simon King <king@mathematik.uni-jena.de> wrote:
 >
 > Dear Sage team,
 >

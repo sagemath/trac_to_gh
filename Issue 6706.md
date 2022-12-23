@@ -1,6 +1,6 @@
 # Issue 6706: MPIR can try to unsuccessfully link in gmp on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6706
 
 Original creator: drkirkby
 

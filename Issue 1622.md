@@ -1,6 +1,6 @@
 # Issue 1622: update gnutls to 2.2.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1622
 
 Original creator: mabshoff
 

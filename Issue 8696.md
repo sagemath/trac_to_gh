@@ -1,6 +1,6 @@
 # Issue 8696: Add infrastructure for character rings of semigroups / groups / algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8696
 
 Original creator: nthiery
 

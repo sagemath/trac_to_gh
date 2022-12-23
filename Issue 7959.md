@@ -1,6 +1,6 @@
 # Issue 7959: the docstring for the associated_primes method on multivariate polynomial ideals is wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7959
 
 Original creator: was
 
@@ -12,8 +12,8 @@ The docstring for associated_primes claims it returns a list of pairs (I,P), but
 
 
 ```
-    `@`require_field
-    `@`redSB
+    @require_field
+    @redSB
     def associated_primes(self, algorithm='sy'):
         r"""
         Return a list of primary ideals (and their associated primes) such

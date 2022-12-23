@@ -1,6 +1,6 @@
 # Issue 7849: MPRI issue with Sun Studio and --enable-cxx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7849
 
 Original creator: drkirkby
 
@@ -109,7 +109,7 @@ http://boxen.math.washington.edu/home/kirkby/portability/mpir-1.2.2.p0/
 
 ```
 
-drkirkby`@`hawk:~/sage-4.3.1.alpha0$ ./sage -f mpir-1.2.2
+drkirkby@hawk:~/sage-4.3.1.alpha0$ ./sage -f mpir-1.2.2
 
 <SNIP> 
 
@@ -150,7 +150,7 @@ Error building MPIR.
 *Here's the result ofter the fix*
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1.alpha0$ ./sage -f mpir-1.2.2.p0
+drkirkby@hawk:~/sage-4.3.1.alpha0$ ./sage -f mpir-1.2.2.p0
 <SNIP>
 +-------------------------------------------------------------+
 +-------------------------------------------------------------+

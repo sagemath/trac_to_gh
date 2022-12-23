@@ -1,6 +1,6 @@
 # Issue 2923: gcc 4.3: matplotlib build fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2923
 
 Original creator: mabshoff
 

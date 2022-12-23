@@ -1,6 +1,6 @@
 # Issue 7764: mhansen's 4.3.rc1 merge tree may have got ahead of wstein's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7764
 
 Original creator: was
 

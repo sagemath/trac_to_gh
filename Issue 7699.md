@@ -1,6 +1,6 @@
 # Issue 7699: Delete OS X metadata in lcalc spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7699
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2390: numerical noise in devel/sage-main/sage/structure/factorization.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2390
 
 Original creator: jsp
 
@@ -11,7 +11,7 @@ Assignee: cwitty
 
 
 ```
-[jaap`@`paix sage-2.10.3.rc1]$ ./sage -t  devel/sage-main/sage/structure/factorization.py
+[jaap@paix sage-2.10.3.rc1]$ ./sage -t  devel/sage-main/sage/structure/factorization.py
 sage -t  devel/sage-main/sage/structure/factorization.py    **********************************************************************
 File ".doctest_factorization.py", line 479, in __main__.example_17
 Failed example:
@@ -35,7 +35,7 @@ The following tests failed:
 
         sage -t  devel/sage-main/sage/structure/factorization.py
 Total time for all tests: 2.7 seconds
-[jaap`@`paix sage-2.10.3.rc1]$ 
+[jaap@paix sage-2.10.3.rc1]$ 
 
 ```
 

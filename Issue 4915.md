@@ -1,6 +1,6 @@
 # Issue 4915: convert sage.interfaces.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4915
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 2542: [with patch, needs review] implement right_kernel() and right_nullity() for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2542
 
 Original creator: AlexGhitza
 

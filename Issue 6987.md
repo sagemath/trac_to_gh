@@ -1,6 +1,6 @@
 # Issue 6987: reorganize section on producing patches with Mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6987
 
 Original creator: mvngu
 

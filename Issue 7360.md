@@ -1,6 +1,6 @@
 # Issue 7360: isomorphism_type_info_simple_group returns an exception instead of raising it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7360
 
 Original creator: AlexGhitza
 

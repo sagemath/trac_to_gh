@@ -1,6 +1,6 @@
 # Issue 5798: _singular_() for matrices doesn't always work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5798
 
 Original creator: ddrake
 

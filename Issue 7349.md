@@ -1,6 +1,6 @@
 # Issue 7349: SageNB -- Include fixes from #6848 (introspection)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7349
 
 Original creator: timdumol
 

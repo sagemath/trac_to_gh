@@ -1,6 +1,6 @@
 # Issue 8046: Add matrix/matrix_double_dense.py to documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8046
 
 Original creator: rbeezer
 

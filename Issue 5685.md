@@ -1,6 +1,6 @@
 # Issue 5685: enhanced nth_root in ZZ and QQ and related utilities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5685
 
 Original creator: cremona
 

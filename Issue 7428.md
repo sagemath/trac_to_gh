@@ -1,6 +1,6 @@
 # Issue 7428: worksheets listed on published list only after they are republished, but not after initial publication
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7428
 
 Original creator: jason
 

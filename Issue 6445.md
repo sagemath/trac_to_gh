@@ -1,6 +1,6 @@
 # Issue 6445: pari 2.3.3.p0 problem on 't2' but not my home machine (similar setups!!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6445
 
 Original creator: drkirkby
 

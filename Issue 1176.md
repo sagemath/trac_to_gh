@@ -1,6 +1,6 @@
 # Issue 1176: [with patch] \em -> \emph in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1176
 
 Original creator: zimmerma
 

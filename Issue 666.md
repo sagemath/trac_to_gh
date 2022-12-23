@@ -1,6 +1,6 @@
 # Issue 666: add spacing in latex output of matrices for increasing readbility
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/666
 
 Original creator: pdenapo
 

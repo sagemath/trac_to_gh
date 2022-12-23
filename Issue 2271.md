@@ -1,6 +1,6 @@
 # Issue 2271: Include Antti Ajanki's DLX library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2271
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 2424: [with patch, needs review] small roots method for polynomials mod N (N composite)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2424
 
 Original creator: malb
 

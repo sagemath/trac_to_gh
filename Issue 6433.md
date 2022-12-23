@@ -1,6 +1,6 @@
 # Issue 6433: [with patch, needs review] fix %html
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6433
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 322: Have global code page for Notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/322
 
 Original creator: TimothyClemans
 

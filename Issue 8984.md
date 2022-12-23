@@ -1,6 +1,6 @@
 # Issue 8984: Implementation of the Lenart--Postnikov alcove path crystal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8984
 
 Original creator: brant.c.jones
 

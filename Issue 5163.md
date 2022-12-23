@@ -1,6 +1,6 @@
 # Issue 5163: jsmath extensions for published webpages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5163
 
 Original creator: jason
 

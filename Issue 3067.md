@@ -1,6 +1,6 @@
 # Issue 3067: matrices:  numeric_array() is missing an import
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3067
 
 Original creator: dfdeshom
 

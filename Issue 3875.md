@@ -1,6 +1,6 @@
 # Issue 3875: matrix/matrix_cyclo_dense.pyx segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3875
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-jec`@`host-57-29%./sage -t  devel/sage/sage/matrix/matrix_cyclo_dense.pyx 
+jec@host-57-29%./sage -t  devel/sage/sage/matrix/matrix_cyclo_dense.pyx 
 sage -t  devel/sage/sage/matrix/matrix_cyclo_dense.pyx      sh: line 
 1: 16845 Segmentation fault 
 /home/jec/sage-3.1.rc0/local/bin/python 

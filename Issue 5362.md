@@ -1,6 +1,6 @@
 # Issue 5362: [with patch, needs review] bug in transpose for matrix_double_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5362
 
 Original creator: ylchapuy
 

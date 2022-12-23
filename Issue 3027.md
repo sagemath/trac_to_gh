@@ -1,6 +1,6 @@
 # Issue 3027: [with patches; needs review] Debian lintian fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3027
 
 Original creator: tabbott
 

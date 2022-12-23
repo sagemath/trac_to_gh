@@ -1,6 +1,6 @@
 # Issue 442: RDF roots() function gives imprecise results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/442
 
 Original creator: rlm
 

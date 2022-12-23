@@ -1,6 +1,6 @@
 # Issue 7842: Let attrcall objects accept further arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7842
 
 Original creator: nthiery
 

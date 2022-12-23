@@ -1,6 +1,6 @@
 # Issue 9644: Make Sage run even when $SAGE_ROOT contains spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9644
 
 Original creator: mpatel
 
@@ -76,7 +76,7 @@ After applying
 diff --git a/sage-sage b/sage-sage
 --- a/sage-sage
 +++ b/sage-sage
-`@``@` -127,7 +127,7 `@``@` usage_advanced() {
+@@ -127,7 +127,7 @@ usage_advanced() {
      exit 1
  }
  
@@ -212,12 +212,12 @@ Comment by leif created at 2010-07-30 04:42:51
 With the attached patch I get:
 
 ```sh
-leif`@`portland:~/Sage /sage-4.5.2.alpha0-j12$ ./sage
+leif@portland:~/Sage /sage-4.5.2.alpha0-j12$ ./sage
 Error: The path to the Sage directory ($SAGE_ROOT) MUST NOT contain spaces.
 It is currently "/home/leif/Sage /sage-4.5.2.alpha0-j12".
 You must correct this by moving Sage (or renaming some directories) first.
 Exiting now...
-leif`@`portland:~/Sage /sage-4.5.2.alpha0-j12$ 
+leif@portland:~/Sage /sage-4.5.2.alpha0-j12$ 
 ```
 
 (Note the spaces in the path, I simply renamed a component of the path to my Sage directories.)
@@ -532,7 +532,7 @@ The `/bin/sh: [`](../tree/master/`) is quite a common error. We should not solve
 Here my default shell is `bash`, so `source` exists as a built in shell command. 
 
 ```
-kirkby`@`t2:64 ~$ source
+kirkby@t2:64 ~$ source
 -bash: source: filename argument required
 source: usage: source filename [arguments]
 ```
@@ -542,7 +542,7 @@ Now change my shell to /bin/sh
 
 
 ```
-kirkby`@`t2:64 ~$ sh
+kirkby@t2:64 ~$ sh
 $ source
 source: not found
 $ 

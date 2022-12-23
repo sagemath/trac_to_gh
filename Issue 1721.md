@@ -1,6 +1,6 @@
 # Issue 1721: Introduse SYSTEM_ATLAS to skip tuning of ATLAS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1721
 
 Original creator: mabshoff
 
@@ -27,7 +27,7 @@ $ pwd
 $ diff -u archinfo_x86.c.orig archinfo_x86.c
 --- archinfo_x86.c.orig 2008-01-09 23:43:59.000000000 +0100
 +++ archinfo_x86.c      2008-01-09 23:44:11.000000000 +0100
-`@``@` -281,6 +281,7 `@``@`
+@@ -281,6 +281,7 @@
        case  9:
        case 13:
           iret = IntPM;

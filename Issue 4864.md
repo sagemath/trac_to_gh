@@ -1,6 +1,6 @@
 # Issue 4864: graphviz optional spkg is broken on our main devel machine (sage.math)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4864
 
 Original creator: was
 
@@ -68,7 +68,7 @@ Comment by was created at 2008-12-24 05:34:08
 I tried 
 
 ```
-root`@`sage:/usr/local/sage# apt-get install libpango1.0-dev
+root@sage:/usr/local/sage# apt-get install libpango1.0-dev
 ```
 
 then ...
@@ -96,7 +96,7 @@ sage: An error occurred while installing graphviz-2.16.1.p0
 Next I tried:
 
 ```
-root`@`sage:/usr/local/sage# apt-get install libperl-dev
+root@sage:/usr/local/sage# apt-get install libperl-dev
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 5240: Updayte FLINT to 1.1.1 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5240
 
 Original creator: mabshoff
 
@@ -131,7 +131,7 @@ Finished extraction
 ****************************************************
 Host system
 uname -a:
-Linux karr 2.6.28-tuxonice #1 SMP PREEMPT Tue Jan 13 08:45:33 CET 2009 x86_64 Intel(R) Core(TM)2 Duo CPU T9300 `@` 2.50GHz GenuineIntel GNU/Linux
+Linux karr 2.6.28-tuxonice #1 SMP PREEMPT Tue Jan 13 08:45:33 CET 2009 x86_64 Intel(R) Core(TM)2 Duo CPU T9300 @ 2.50GHz GenuineIntel GNU/Linux
 ****************************************************
 ****************************************************
 GCC Version

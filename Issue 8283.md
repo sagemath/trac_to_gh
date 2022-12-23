@@ -1,6 +1,6 @@
 # Issue 8283: A better Carmichael lambda function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8283
 
 Original creator: wdj
 

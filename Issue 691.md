@@ -1,6 +1,6 @@
 # Issue 691: .coefficients() for EisensteinSeries does not return requested coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/691
 
 Original creator: mhansen
 

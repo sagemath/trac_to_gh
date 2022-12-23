@@ -1,6 +1,6 @@
 # Issue 8037: add sagetex to the french tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8037
 
 Original creator: jhpalmieri
 

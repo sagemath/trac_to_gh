@@ -1,6 +1,6 @@
 # Issue 8145: Joe Culberson's graph programs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8145
 
 Original creator: mvngu
 

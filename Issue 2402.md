@@ -1,6 +1,6 @@
 # Issue 2402: there should be a hg_examples mercurial wrapper for the examples repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2402
 
 Original creator: cwitty
 

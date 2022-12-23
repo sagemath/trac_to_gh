@@ -1,6 +1,6 @@
 # Issue 698: SAGE graph library compared to Mathematica Combinatorica package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/698
 
 Original creator: jason
 

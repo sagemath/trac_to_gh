@@ -1,6 +1,6 @@
 # Issue 4748: pass to quotient ring for exp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4748
 
 Original creator: robertwb
 

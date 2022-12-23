@@ -1,6 +1,6 @@
 # Issue 9583: Unhandled SIGSEGV with 4.5.2.alpha0 on t2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9583
 
 Original creator: mpatel
 
@@ -126,7 +126,7 @@ Here we can see what line  causes the problem, though I expect it is auto genera
 
 
 ```
-drkirkby`@`redstart:~/32/sage-4.5.2.alpha0$ ./sage -gdb
+drkirkby@redstart:~/32/sage-4.5.2.alpha0$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

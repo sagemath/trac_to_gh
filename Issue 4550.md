@@ -1,6 +1,6 @@
 # Issue 4550: notebook -- removed unused NotebookSettings and UserSetting related code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4550
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 8652: load uses "strip" on non-strings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8652
 
 Original creator: was
 

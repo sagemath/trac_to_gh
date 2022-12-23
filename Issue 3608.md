@@ -1,6 +1,6 @@
 # Issue 3608: optimize.py: "Invalid read of size 8"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3608
 
 Original creator: mabshoff
 

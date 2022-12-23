@@ -1,6 +1,6 @@
 # Issue 7662: Chordal Graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7662
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 6718: spell-check all modules under sage/matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6718
 
 Original creator: mvngu
 

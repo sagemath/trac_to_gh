@@ -1,6 +1,6 @@
 # Issue 4079: notebook -- redirect to login page when user not logged in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4079
 
 Original creator: TimothyClemans
 

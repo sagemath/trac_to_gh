@@ -1,6 +1,6 @@
 # Issue 9173: cygwin: BSD.py tests behave differently on cygwin, so need to be written to reflect that
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9173
 
 Original creator: was
 

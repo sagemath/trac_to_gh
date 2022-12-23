@@ -1,6 +1,6 @@
 # Issue 6705: ATLAS has no tuning parameters for sun4v machines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6705
 
 Original creator: drkirkby
 

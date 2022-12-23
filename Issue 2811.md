@@ -1,6 +1,6 @@
 # Issue 2811: make check is broken due to #2746
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2811
 
 Original creator: mabshoff
 

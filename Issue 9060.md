@@ -1,6 +1,6 @@
 # Issue 9060: break symmetries in subgraph search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9060
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 274: memory leak --- Polynomial arithmetic over finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/274
 
 Original creator: ifti
 

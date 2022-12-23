@@ -1,6 +1,6 @@
 # Issue 1364: 2.8.15.alpha2: sage/modules/quotient_module.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1364
 
 Original creator: mabshoff
 

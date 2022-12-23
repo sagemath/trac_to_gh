@@ -1,6 +1,6 @@
 # Issue 4213: Bug in Permutations(n, k)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4213
 
 Original creator: anakha
 

@@ -1,6 +1,6 @@
 # Issue 5993: rewrite numerical_approx (the n function) to use interval arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5993
 
 Original creator: was
 
@@ -13,7 +13,7 @@ This email snippet pretty much describes the issue:
 ```
 
 
-On Tue, May 5, 2009 at 11:16 PM, Henryk Trappmann <bo198214`@`googlemail.com> wrote:
+On Tue, May 5, 2009 at 11:16 PM, Henryk Trappmann <bo198214@googlemail.com> wrote:
 >
 > Ah now I see, you mean though it displays 1/384 it is internally still
 > the above sum, which is computed when evaluated with n.

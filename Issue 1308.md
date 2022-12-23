@@ -1,6 +1,6 @@
 # Issue 1308: [graphs] Gordon Royle's graph data in a database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1308
 
 Original creator: jason
 

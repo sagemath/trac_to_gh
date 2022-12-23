@@ -1,6 +1,6 @@
 # Issue 5305: Datepicker for Interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5305
 
 Original creator: schilly
 

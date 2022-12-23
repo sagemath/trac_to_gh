@@ -1,6 +1,6 @@
 # Issue 7064: fix warnings when building reference manual in Sage 4.1.2.alpha4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7064
 
 Original creator: mvngu
 

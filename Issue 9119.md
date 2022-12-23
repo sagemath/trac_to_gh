@@ -1,6 +1,6 @@
 # Issue 9119: Cython variables used then later declared
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9119
 
 Original creator: jason
 

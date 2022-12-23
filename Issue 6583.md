@@ -1,6 +1,6 @@
 # Issue 6583: Implement two descent over QQ natively in Sage using ratpoints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6583
 
 Original creator: rlm
 
@@ -85,7 +85,7 @@ Comment by was created at 2009-09-22 14:43:20
 Applying the patch and doing "sage -t" yields some failures, probably because you assume the large cremona database is installed, but it isn't:
 
 ```
-wstein`@`sage:~/build/sage-4.1.2.alpha1$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx
+wstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx
 sage -t  "devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx"
 **********************************************************************
 File "/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx", line 1093:
@@ -163,7 +163,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx"
 Total time for all tests: 3.4 seconds
-wstein`@`sage:~/build/sage-4.1.2.alpha1$ 
+wstein@sage:~/build/sage-4.1.2.alpha1$ 
 ```
 
 

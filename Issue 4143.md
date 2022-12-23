@@ -1,6 +1,6 @@
 # Issue 4143: injvar() docstring should be the same as inject_variables()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4143
 
 Original creator: schilly
 

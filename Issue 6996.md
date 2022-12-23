@@ -1,6 +1,6 @@
 # Issue 6996: turn off axes in new contour plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6996
 
 Original creator: jason
 

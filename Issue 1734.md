@@ -1,6 +1,6 @@
 # Issue 1734: [with patch] variable jmol translucency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1734
 
 Original creator: robertwb
 

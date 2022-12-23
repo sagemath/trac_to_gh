@@ -1,6 +1,6 @@
 # Issue 2569: Add XOR to preparser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2569
 
 Original creator: vgermrk
 

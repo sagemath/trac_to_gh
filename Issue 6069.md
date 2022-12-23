@@ -1,6 +1,6 @@
 # Issue 6069: Blank notebook page when loading URL for published sheet that is AWOL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6069
 
 Original creator: khorton
 

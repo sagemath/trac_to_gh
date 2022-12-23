@@ -1,6 +1,6 @@
 # Issue 6713: spell-check all modules under sage/lfunctions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6713
 
 Original creator: mvngu
 

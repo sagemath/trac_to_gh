@@ -1,6 +1,6 @@
 # Issue 9443: infinite polynomial ring is_integral_domain and is_field omit optional argument 'proof'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9443
 
 Original creator: niles
 
@@ -147,7 +147,7 @@ The reject file's contents:
 ```diff
 --- infinite_polynomial_ring.py
 +++ infinite_polynomial_ring.py
-`@``@` -1037,10 +1037,17 `@``@`
+@@ -1037,10 +1037,17 @@
          """
          return False
  

@@ -1,6 +1,6 @@
 # Issue 212: gsl matrix multiply too slow -- ???
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/212
 
 Original creator: was
 

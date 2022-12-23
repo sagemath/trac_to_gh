@@ -1,6 +1,6 @@
 # Issue 8261: cygwin: mpfr fails 1 test in its test suite on windows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8261
 
 Original creator: was
 

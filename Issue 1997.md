@@ -1,6 +1,6 @@
 # Issue 1997: magma interface -- interrupting restarts magma way way too aggressively
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1997
 
 Original creator: was
 

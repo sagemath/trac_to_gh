@@ -1,6 +1,6 @@
 # Issue 290: Converting Pari multivariate polynomials  to MPolynomials doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/290
 
 Original creator: malb
 

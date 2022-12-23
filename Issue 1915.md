@@ -1,6 +1,6 @@
 # Issue 1915: infinity doesn't behave well
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1915
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 6050: Dynkin diagram ascii art for reducible Cartan types (with patch, needs review)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6050
 
 Original creator: bump
 

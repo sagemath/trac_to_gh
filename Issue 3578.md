@@ -1,6 +1,6 @@
 # Issue 3578: Highlighting selected button in selector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3578
 
 Original creator: itolkov
 

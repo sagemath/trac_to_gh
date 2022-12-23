@@ -1,6 +1,6 @@
 # Issue 4667: [with first patch, not ready for review] quadratic twists for p-adic L-functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4667
 
 Original creator: wuthrich
 

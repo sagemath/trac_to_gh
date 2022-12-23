@@ -1,6 +1,6 @@
 # Issue 6223: Remove ext/python_*.pxi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6223
 
 Original creator: robertwb
 

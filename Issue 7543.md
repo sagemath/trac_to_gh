@@ -1,6 +1,6 @@
 # Issue 7543: Add S-adiques to the word generator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7543
 
 Original creator: slabbe
 

@@ -1,6 +1,6 @@
 # Issue 9459: Implement a generic radical() function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9459
 
 Original creator: jdemeyer
 

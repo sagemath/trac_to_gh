@@ -1,6 +1,6 @@
 # Issue 711: control-c and singular interface -- it doesn't quit singular for real.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/711
 
 Original creator: was
 

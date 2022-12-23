@@ -1,6 +1,6 @@
 # Issue 7230: [with spkg, needs review] Switch from setuptools to Distribute
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7230
 
 Original creator: craigcitro
 

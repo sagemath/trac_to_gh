@@ -1,6 +1,6 @@
 # Issue 6047: Disable threading for boehm_gc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6047
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 896: remove obsolte comment in matrix_modn_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/896
 
 Original creator: mabshoff
 

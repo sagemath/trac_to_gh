@@ -1,6 +1,6 @@
 # Issue 6082: [with patch, needs review] realloc called too often for Integer construction/deconstruction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6082
 
 Original creator: robertwb
 

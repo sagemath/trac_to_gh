@@ -1,6 +1,6 @@
 # Issue 8989: Add support for Fano toric varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8989
 
 Original creator: novoselt
 

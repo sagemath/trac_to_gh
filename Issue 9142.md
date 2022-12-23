@@ -1,6 +1,6 @@
 # Issue 9142: construct "fuzzy ball" graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9142
 
 Original creator: jason
 

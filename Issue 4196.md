@@ -1,6 +1,6 @@
 # Issue 4196: write a new coercion section for the developer's/programmer's guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4196
 
 Original creator: jhpalmieri
 

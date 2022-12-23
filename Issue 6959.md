@@ -1,6 +1,6 @@
 # Issue 6959: modular forms -- add aplist and anlist for newforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6959
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1631: update quaddouble to 2.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1631
 
 Original creator: mabshoff
 

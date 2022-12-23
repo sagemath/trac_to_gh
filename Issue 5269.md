@@ -1,6 +1,6 @@
 # Issue 5269: coordinate ring of an affine patch on a hyperelliptic curve is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5269
 
 Original creator: AlexGhitza
 

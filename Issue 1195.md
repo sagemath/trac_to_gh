@@ -1,6 +1,6 @@
 # Issue 1195: The "len" function for lists and sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1195
 
 Original creator: ljpk
 

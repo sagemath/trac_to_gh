@@ -1,6 +1,6 @@
 # Issue 3105: [with patch, needs review]  new  _latex_  and modified  __repr__  for elements of relative number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3105
 
 Original creator: mabshoff
 

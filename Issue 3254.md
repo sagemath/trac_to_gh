@@ -1,6 +1,6 @@
 # Issue 3254: [with patch, needs review] improvements and doctests for CachedFunction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3254
 
 Original creator: mhansen
 

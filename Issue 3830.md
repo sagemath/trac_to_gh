@@ -1,6 +1,6 @@
 # Issue 3830: plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3830
 
 Original creator: was
 

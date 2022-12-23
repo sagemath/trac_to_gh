@@ -1,6 +1,6 @@
 # Issue 9403: preimage method in NumberFieldHomomorphism_im_gens
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9403
 
 Original creator: jeremywest
 

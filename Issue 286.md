@@ -1,6 +1,6 @@
 # Issue 286: First version of symbolic calculus module integrated into SAGE.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/286
 
 Original creator: was
 

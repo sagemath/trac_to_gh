@@ -1,6 +1,6 @@
 # Issue 7966: Giving some punch to distance computations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7966
 
 Original creator: ncohen
 
@@ -27,7 +27,7 @@ sage: %timeit g.szeged_index()
 sage: %timeit g.eccentricity()
 10 loops, best of 3: 189 ms per loop
 sage: g.sparse6_string()
-':q_OW_CCBb?WcOL`@``@``_{CGDB`@`pCGIF```@`[WQK_`?w_QIDoo_WSJEBWGOKIDbG?CZ?`@``@`Owwb?`@`?o_SOMba`@`X?bA`@``OpKhBB`@`p?kX`@`Caq`@`YAACAphWn`@`B`@`po{j?`@``?o_]QIeGOWMGDCqheEDB`@`pXMAEBa`@`GscYLoo__QJEBaxcvBECAPWqYNQ`gwgTKERX}?`@``@``@``@`Gg[QHdBXt`@`?BAa`@`WmYNGWo[OLFCQhqCLFCRPky]POow_SLGCRHw}ca`@`_w_SLHCq`_u[OGg?GEDBAP_{iUJeBiYKGCbPp_qYMFbyLIea``WoYMFcA`SkXMGS[?MIFCahgw\\NP`Ww]VLfSskYMHDApcs[NHSy`R?A`@`pOkWMGcb`@`oy]TjGGKOJIEBh|QjUOox?mWLEryHIh___WOaRIDr`@`cu[MhTauCCBa`@`Gk]PHdax_w]NhCq\\Sm'
+':q_OW_CCBb?WcOL@@`_{CGDB@pCGIF``@[WQK_`?w_QIDoo_WSJEBWGOKIDbG?CZ?@@Owwb?@?o_SOMba@X?bA@`OpKhBB@p?kX@Caq@YAACAphWn@B@po{j?@`?o_]QIeGOWMGDCqheEDB@pXMAEBa@GscYLoo__QJEBaxcvBECAPWqYNQ`gwgTKERX}?@@@@Gg[QHdBXt@?BAa@WmYNGWo[OLFCQhqCLFCRPky]POow_SLGCRHw}ca@_w_SLHCq`_u[OGg?GEDBAP_{iUJeBiYKGCbPp_qYMFbyLIea``WoYMFcA`SkXMGS[?MIFCahgw\\NP`Ww]VLfSskYMHDApcs[NHSy`R?A@pOkWMGcb@oy]TjGGKOJIEBh|QjUOox?mWLEryHIh___WOaRIDr@cu[MhTauCCBa@Gk]PHdax_w]NhCq\\Sm'
 ```
 
 
@@ -157,7 +157,7 @@ Attachment
 with the new patch `c_graph.pyx` works again:
 
 ```
-[zimmerma`@`coing sage]$ sage -t  graphs/base/c_graph.pyx
+[zimmerma@coing sage]$ sage -t  graphs/base/c_graph.pyx
 sage -t  "devel/sage-7966/sage/graphs/base/c_graph.pyx"     
          [2.5 s]
  

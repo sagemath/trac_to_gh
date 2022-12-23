@@ -1,6 +1,6 @@
 # Issue 2962: modify .name() method for ExpectElements to allow renaming
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2962
 
 Original creator: mhansen
 

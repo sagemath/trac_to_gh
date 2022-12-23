@@ -1,6 +1,6 @@
 # Issue 1438: GNUTLS fails to build on RHEL 4 (texinfo related)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1438
 
 Original creator: mabshoff
 
@@ -34,10 +34,10 @@ rm -rf $backupdir; exit $rc
 /afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//signatures.texi:15: Unknown command `euro'.
 /afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//signatures.texi:15: Misplaced {.
 /afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//signatures.texi:15: Misplaced }.
-/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:174: warning: unlikely character [ in `@`var.
-/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:174: warning: unlikely character ] in `@`var.
-/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:347: warning: unlikely character [ in `@`var.
-/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:347: warning: unlikely character ] in `@`var.
+/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:174: warning: unlikely character [ in @var.
+/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:174: warning: unlikely character ] in @var.
+/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:347: warning: unlikely character [ in @var.
+/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc//pgp-api.texi:347: warning: unlikely character ] in @var.
 makeinfo: Removing output file `gnutls.info' due to errors; use --force to preserve.
 make[5]: *** [gnutls.info] Error 1
 make[5]: Leaving directory `/afs/kth.se/misc/hacks/sys/vol/i386_linux6/sage/sage-2.8.15/spkg/build/gnutls-1.6.3/src/doc'

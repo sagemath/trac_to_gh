@@ -1,6 +1,6 @@
 # Issue 2089: major finite field printing (?) bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2089
 
 Original creator: was
 

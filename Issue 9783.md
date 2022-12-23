@@ -1,6 +1,6 @@
 # Issue 9783: list_plot should accept dictionaries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9784
 
 Original creator: ddrake
 

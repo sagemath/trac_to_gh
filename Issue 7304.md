@@ -1,6 +1,6 @@
 # Issue 7304: [With patch, needs review] Contract edge in graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7304
 
 Original creator: AJonsson
 

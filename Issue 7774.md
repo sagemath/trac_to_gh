@@ -1,6 +1,6 @@
 # Issue 7774: notebook: after performing "evaluate all" behauviour of  creating new cells changes.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7774
 
 Original creator: ggrafendorfer
 

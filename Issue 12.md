@@ -1,6 +1,6 @@
 # Issue 12: confusing behaviour of pAdicField with series_print == False
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/12
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 4341: [with patch, needs review] Optimisations + corrections to latin.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4341
 
 Original creator: carlohamalainen
 

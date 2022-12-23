@@ -1,6 +1,6 @@
 # Issue 5172: Sage 3.3.a5: more numerical noise in sage/calculus/calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5172
 
 Original creator: mabshoff
 
@@ -57,7 +57,7 @@ sage -t  "devel/sage/sage/calculus/calculus.py"
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 276.2 seconds
-[jaap`@`paix sage-3.3.alpha4]$ 
+[jaap@paix sage-3.3.alpha4]$ 
 
 ```
 

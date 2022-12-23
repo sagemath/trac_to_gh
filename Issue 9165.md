@@ -1,6 +1,6 @@
 # Issue 9165: cygwin: lcalc does not work for elliptic curves on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9165
 
 Original creator: was
 

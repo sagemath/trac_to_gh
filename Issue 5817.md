@@ -1,6 +1,6 @@
 # Issue 5817: Update FLINT to 1.2.5 (latest upstream release)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5817
 
 Original creator: mabshoff
 
@@ -44,7 +44,7 @@ While I am at it: Please also add this fix to make the check target work on OSX,
 diff -r fc2eb24f71a2 spkg-check
 --- a/spkg-check        Thu Apr 09 00:29:11 2009 -0400
 +++ b/spkg-check        Mon Apr 20 00:04:56 2009 -0700
-`@``@` -17,6 +17,11 `@``@`
+@@ -17,6 +17,11 @@
     FLINT_TUNE=" -fPIC -funroll-loops  "
  fi
  

@@ -1,6 +1,6 @@
 # Issue 9388: Fix rubiks makefile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9388
 
 Original creator: justin
 

@@ -1,6 +1,6 @@
 # Issue 7133: pari-2.3.3 always builds 32-bit libraries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7133
 
 Original creator: drkirkby
 
@@ -20,7 +20,7 @@ We can see that _pari_ is building 32-bit libraries, despite the fact SAGE64 was
 
 
 ```
-drkirkby`@`swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *pari*
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *pari*
 libpari-gmp.so.2:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
 libpari-gmp.so.2.3.3:   ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
 libpari.a:      current ar archive, not a dynamic executable or shared object

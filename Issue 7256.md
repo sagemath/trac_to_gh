@@ -1,6 +1,6 @@
 # Issue 7256: reset() needs to be improved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7256
 
 Original creator: mhampton
 

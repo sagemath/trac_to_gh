@@ -1,6 +1,6 @@
 # Issue 8858: 4.4.1 accessing internet during compilation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8858
 
 Original creator: was
 

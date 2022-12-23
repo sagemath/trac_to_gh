@@ -1,6 +1,6 @@
 # Issue 9563: Remove the English-language tutorial's Makefile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9563
 
 Original creator: mpatel
 

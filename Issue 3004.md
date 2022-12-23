@@ -1,6 +1,6 @@
 # Issue 3004: bug in coercion edge case -- probably easy to fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3004
 
 Original creator: was
 
@@ -35,7 +35,7 @@ Comment by mabshoff created at 2008-10-28 16:34:10
 This has been fixed by the new coercion system:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |

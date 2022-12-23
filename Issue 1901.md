@@ -1,6 +1,6 @@
 # Issue 1901: mistake in the documentation for gens for Finite field pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1901
 
 Original creator: was
 

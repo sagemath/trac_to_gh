@@ -1,6 +1,6 @@
 # Issue 2942: notebook -- new command line options: sage -n and sage -nb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2942
 
 Original creator: was
 

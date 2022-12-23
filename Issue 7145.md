@@ -1,6 +1,6 @@
 # Issue 7145: [with patch, needs review] Interval exchange transformations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7145
 
 Original creator: vdelecroix
 
@@ -365,7 +365,7 @@ The documentation and doctest coverage is very good (96%) but not perfect :
 
 
 ```
-slabbe`@`pol:~/sage-4.2/devel/sage-combinat/sage/combinat/iet$ sage -coverage .
+slabbe@pol:~/sage-4.2/devel/sage-combinat/sage/combinat/iet$ sage -coverage .
 constructors.py: 75% (6 of 8)
 iet.py: 100% (23 of 23)
 labelled.py: 95% (57 of 60)

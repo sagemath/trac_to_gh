@@ -1,6 +1,6 @@
 # Issue 9811: Sorting bug in fan subdivision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9812
 
 Original creator: novoselt
 

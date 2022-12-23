@@ -1,6 +1,6 @@
 # Issue 8777: unify the definitions and semantics for elliptic curve and abelian variety torsion subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8777
 
 Original creator: was
 

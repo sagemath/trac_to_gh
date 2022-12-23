@@ -1,6 +1,6 @@
 # Issue 5758: weird "hello" bug in homset coerce!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5758
 
 Original creator: was
 
@@ -14,7 +14,7 @@ With a 100% clean sage-3.4.1.rc2:
 
 
 ```
-wstein`@`sage:~/build/sage-3.4.1.rc2$ ./sage
+wstein@sage:~/build/sage-3.4.1.rc2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: ref

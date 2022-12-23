@@ -1,6 +1,6 @@
 # Issue 8521: Optional package  libcocoa-0.9930 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8521
 
 Original creator: drkirkby
 

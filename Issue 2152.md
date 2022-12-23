@@ -1,6 +1,6 @@
 # Issue 2152: ticket: multivariate polynomial factorization over GF(p) in "three free world" is a total frickin' *EMBARRASSMENT*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2152
 
 Original creator: was
 

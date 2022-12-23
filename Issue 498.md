@@ -1,6 +1,6 @@
 # Issue 498: Error in <IntegerMatrix.det()>
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/498
 
 Original creator: nbruin
 

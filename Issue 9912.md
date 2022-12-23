@@ -1,6 +1,6 @@
 # Issue 9912: n() returns symbolic expression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9913
 
 Original creator: zimmerma
 

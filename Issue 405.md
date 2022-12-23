@@ -1,6 +1,6 @@
 # Issue 405: add setting of rows or columns to a matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/405
 
 Original creator: was
 
@@ -10,8 +10,8 @@ Assignee: was
 
 
 ```
-On 7/26/07, David Joyner <wdjoyner`@`gmail.com> wrote:
-> On 7/26/07, mak <mak`@`math.uvic.ca> wrote:
+On 7/26/07, David Joyner <wdjoyner@gmail.com> wrote:
+> On 7/26/07, mak <mak@math.uvic.ca> wrote:
 > > 1.  How do I change the entire row or column of a matrix at once?  In
 > > pari, I could do e.g. a=[1,2,3;4,5,6], and then put a[1,]=[0,0,0],
 > > which would give a=[0,0,0;4,5,6].  What's the sage equivalent?

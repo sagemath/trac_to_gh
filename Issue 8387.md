@@ -1,6 +1,6 @@
 # Issue 8387: help (notebook) examples use deprecated usage.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8387
 
 Original creator: drkirkby
 
@@ -31,7 +31,7 @@ Then the second and fourth examples use 'address'.
 ```
  |         notebook(address='', secure=True)
 
- |         notebook(address='', server_pool=['sage1`@`localhost'],
+ |         notebook(address='', server_pool=['sage1@localhost'],
  |         ulimit='-v 500000', accounts=True)
 
 ```
@@ -107,7 +107,7 @@ I see you have changed one bit to
 
 
 ```
-notebook(interface='', server_pool=['sage1`@`localhost'], 
+notebook(interface='', server_pool=['sage1@localhost'], 
 ```
 
 
@@ -115,7 +115,7 @@ Does the server_pool bit actually work? It certainly does not for me. I find the
 
 
 ```
-server_pool=['sage1`@`localhost']
+server_pool=['sage1@localhost']
 
 n.notebook('sage_notebook', port=8000, accounts=True, address='',
          server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',
@@ -148,7 +148,7 @@ My god, I did manage to make a few mistakes in that lot!! I should have re-read 
 ```
 import sagenb.notebook.notebook_object as n
 
-server_pool=['sage1`@`localhost']
+server_pool=['sage1@localhost']
 
 n.notebook('sage_notebook', port=8000, accounts=True, address='',
          server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',
@@ -159,7 +159,7 @@ n.notebook('sage_notebook', port=8000, accounts=True, address='',
 works, but specifying a server pool at the Sage prompt with something like: 
 
 {{{
-notebook(interface='', server_pool=['sage1`@`localhost'], 
+notebook(interface='', server_pool=['sage1@localhost'], 
 }}}
 
 does not work for me. It might be a Solaris specific issue of course. 

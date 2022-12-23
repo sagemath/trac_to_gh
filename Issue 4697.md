@@ -1,6 +1,6 @@
 # Issue 4697: change integration error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4697
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Fix the following instance by a trivial change to raising an exception.  This ca
 
 
 ```
-On Dec 4, 3:07 pm, "William Stein" <wst...`@`gmail.com> wrote:
+On Dec 4, 3:07 pm, "William Stein" <wst...@gmail.com> wrote:
 > Do you think it would be better if instead of
 >
 > sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)

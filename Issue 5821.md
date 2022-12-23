@@ -1,6 +1,6 @@
 # Issue 5821: preparser incorrectly handles backslash operator inside strings (sometimes)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5821
 
 Original creator: cwitty
 

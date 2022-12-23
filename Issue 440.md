@@ -1,6 +1,6 @@
 # Issue 440: Integer.__index__() currently goes via a python long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/440
 
 Original creator: dmharvey
 

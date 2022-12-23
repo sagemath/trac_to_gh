@@ -1,6 +1,6 @@
 # Issue 586: remove merge-conflict lines from sage-sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/586
 
 Original creator: malb
 

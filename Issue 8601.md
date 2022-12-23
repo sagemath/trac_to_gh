@@ -1,6 +1,6 @@
 # Issue 8601: Bug in vector reduction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8601
 
 Original creator: robertwb
 
@@ -104,7 +104,7 @@ Here is a patch which fixes the issue.  I don't have time to formalize it and up
 diff -r c04df7b7f023 sage/modules/vector_mod2_dense.pyx
 --- a/sage/modules/vector_mod2_dense.pyx	Thu Mar 18 01:56:14 2010 -0500
 +++ b/sage/modules/vector_mod2_dense.pyx	Wed Mar 24 20:12:27 2010 -0500
-`@``@` -137,6 +137,8 `@``@`
+@@ -137,6 +137,8 @@
              (0, 0, 1)
              sage: VS((0,0,GF(2)(1)))
              (0, 0, 1)
@@ -113,7 +113,7 @@ diff -r c04df7b7f023 sage/modules/vector_mod2_dense.pyx
          """
          cdef Py_ssize_t i
          cdef int xi
-`@``@` -146,7 +148,8 `@``@`
+@@ -146,7 +148,8 @@
              for i from 0 <= i < self._degree:
                  if PY_TYPE_CHECK(x[i],IntegerMod_int) or PY_TYPE_CHECK(x[i],int) or PY_TYPE_CHECK(x[i],Integer):
                      xi = x[i]

@@ -1,6 +1,6 @@
 # Issue 1635: Singular.spkg relatated: lib->LIB link issue on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1635
 
 Original creator: mabshoff
 

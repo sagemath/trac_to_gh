@@ -1,6 +1,6 @@
 # Issue 4316: notebook: '%html $x<y$' doesn't work right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4316
 
 Original creator: jhpalmieri
 

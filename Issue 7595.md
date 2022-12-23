@@ -1,6 +1,6 @@
 # Issue 7595: Chinese Remainder Theorem for polynomials over a field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7595
 
 Original creator: rlm
 

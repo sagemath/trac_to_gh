@@ -1,6 +1,6 @@
 # Issue 8013: add libSingular interface to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8013
 
 Original creator: malb
 

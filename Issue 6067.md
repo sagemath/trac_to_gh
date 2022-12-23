@@ -1,6 +1,6 @@
 # Issue 6067: Published worksheet URL stability
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6067
 
 Original creator: khorton
 

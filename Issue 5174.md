@@ -1,6 +1,6 @@
 # Issue 5174: _repr_ for large matrices should indicate how to see the entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5174
 
 Original creator: jason
 

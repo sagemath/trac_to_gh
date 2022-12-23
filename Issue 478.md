@@ -1,6 +1,6 @@
 # Issue 478: completely eliminate the dependence of sage on openssl
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/478
 
 Original creator: was
 

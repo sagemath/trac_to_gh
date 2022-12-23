@@ -1,6 +1,6 @@
 # Issue 4329: class numbers of non-maximal orders -- should return NotImplementedError for now
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4329
 
 Original creator: was
 

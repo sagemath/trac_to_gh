@@ -1,6 +1,6 @@
 # Issue 3630: [with spkg, needs review] twisted 8.1.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3630
 
 Original creator: yi
 

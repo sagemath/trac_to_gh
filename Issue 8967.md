@@ -1,6 +1,6 @@
 # Issue 8967: Make extensions of general rings work in the same way as they do for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8967
 
 Original creator: fwclarke
 

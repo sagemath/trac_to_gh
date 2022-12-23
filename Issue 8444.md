@@ -1,6 +1,6 @@
 # Issue 8444: Memleak in conversion for univariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8444
 
 Original creator: SimonKing
 

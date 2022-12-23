@@ -1,6 +1,6 @@
 # Issue 2221: Silent failure of sage-env
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2221
 
 Original creator: gfurnish
 

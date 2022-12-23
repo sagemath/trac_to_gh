@@ -1,6 +1,6 @@
 # Issue 7013: prime_pi and nth_prime
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7013
 
 Original creator: kevin.stueve
 
@@ -629,10 +629,10 @@ incredibly valuable!
 Sincerely,
 Kevin Stueve
 
-"The equation 13 [http://mathworld.wolfram.com/RiemannPrimeCountingFunction.html](http://mathworld.wolfram.com/RiemannPrimeCountingFunction.html)
+"The equation 13 [http://mathworld.wolfram.com/RiemannPrimeCountingFunction.html]
 you mentioned is PROBABLY wrong: check Andrey V. Kulsha'
 post of 11/18/2008 entitled "On the explicit formula for the Prime-counting
-function pi(x)" on the NMBRTHRY`@`LISTSERV.NODAK.EDU list. To me, it seems
+function pi(x)" on the NMBRTHRY@LISTSERV.NODAK.EDU list. To me, it seems
 far better to compress the pi(x) data using simply pi(x)=li(x)-e(x). Instead
 of storing pi(x) you would store the (positive) value of e(x) rounded to the
 nearest integer. Note that li(x) can be computed easily and that e(x) should
@@ -1120,7 +1120,7 @@ Such _fixed-size_ header can easily be [partially] skipped if the program does n
 We could even use this convention for text files, and start each file with a zero-terminated short ASCII string, s.t. 
 
 ```
-user`@`machine~/somewhere$ head some_file_of_unknown_format
+user@machine~/somewhere$ head some_file_of_unknown_format
 ```
 
 gives a machine- *and* human-understandable brief description (at least of its type and file format version).

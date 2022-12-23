@@ -1,6 +1,6 @@
 # Issue 213: moin moin wiki -- twisted-ify
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/213
 
 Original creator: was
 

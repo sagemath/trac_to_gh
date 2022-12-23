@@ -1,6 +1,6 @@
 # Issue 5364: unused maxima builtin functions for matrices over SR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5364
 
 Original creator: ylchapuy
 

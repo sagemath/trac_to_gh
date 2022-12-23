@@ -1,6 +1,6 @@
 # Issue 5750: [with patch, needs review] Bring coverage of sage/matrix/matrix_integer_2x2.pyx to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5750
 
 Original creator: craigcitro
 

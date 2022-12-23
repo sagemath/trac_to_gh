@@ -1,6 +1,6 @@
 # Issue 7321: numpy fails to build on cygwin due to not using the correct fortran compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7321
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 128: possible clash for EllipticCurve(j-invariant) signature
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/128
 
 Original creator: nbruin
 

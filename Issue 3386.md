@@ -1,6 +1,6 @@
 # Issue 3386: zn_poly test code is still being run
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3386
 
 Original creator: dmharvey
 

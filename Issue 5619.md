@@ -1,6 +1,6 @@
 # Issue 5619: doctests for error messages in groebner_fan.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5619
 
 Original creator: mvngu
 

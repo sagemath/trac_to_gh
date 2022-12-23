@@ -1,6 +1,6 @@
 # Issue 384: latex formatting issues with symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/384
 
 Original creator: jbmohler
 

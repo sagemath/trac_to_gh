@@ -1,6 +1,6 @@
 # Issue 1111: Symbolic equation expand left and right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1111
 
 Original creator: robertwb
 

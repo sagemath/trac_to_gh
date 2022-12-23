@@ -1,6 +1,6 @@
 # Issue 1076: some notebook css/javascript bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1076
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On 11/2/07, Nick Alexander <ncalexander`@`gmail.com> wrote:
+On 11/2/07, Nick Alexander <ncalexander@gmail.com> wrote:
 >
 > In the notebook, if you click at left for a traceback, the whole
 > traceback disappears.  Repeating brings it back, then a third click

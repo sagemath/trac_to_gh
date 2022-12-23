@@ -1,6 +1,6 @@
 # Issue 6426: ECHIDNA (Elliptic Curves and Higher Dimensional Analogues)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6426
 
 Original creator: kohel
 

@@ -1,6 +1,6 @@
 # Issue 8774: gap-4.4.12.p0 is full of *CRAP*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8774
 
 Original creator: was
 
@@ -49,7 +49,7 @@ Comment by was created at 2010-04-26 23:52:56
 
 
 ```
-wstein`@`boxen:/tmp$ wget ftp://ftp.gap-system.org/pub/gap/gap44/tar.bz2/gap4r4p12.tar.bz2
+wstein@boxen:/tmp$ wget ftp://ftp.gap-system.org/pub/gap/gap44/tar.bz2/gap4r4p12.tar.bz2
 --16:48:48--  ftp://ftp.gap-system.org/pub/gap/gap44/tar.bz2/gap4r4p12.tar.bz2
            => `gap4r4p12.tar.bz2'
 Resolving ftp.gap-system.org... 138.251.192.244
@@ -64,7 +64,7 @@ Length: 47,715,810 (46M) (unauthoritative)
 
 16:52:19 (224.11 KB/s) - `gap4r4p12.tar.bz2' saved [47715810]
 
-wstein`@`boxen:/tmp$ tar jxvf gap4r4p12.tar.bz2
+wstein@boxen:/tmp$ tar jxvf gap4r4p12.tar.bz2
 gap4r4/
 gap4r4/etc/
 gap4r4/etc/GPL

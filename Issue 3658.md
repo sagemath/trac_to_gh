@@ -1,6 +1,6 @@
 # Issue 3658: A PARI bug results in an unreliable prime_pi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3658
 
 Original creator: fwclarke
 

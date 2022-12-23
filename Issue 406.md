@@ -1,6 +1,6 @@
 # Issue 406: notebook -- improve support for other system modes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/406
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On 7/26/07, Dan Christensen <jdc`@`uwo.ca> wrote:
+On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
 > Some other minor issues about using GAP within the notebook, under
 > 2.7.1.  I've put my entire worksheet in GAP mode using the menu at
 > the top.  The following things don't work correctly:
@@ -58,7 +58,7 @@ In order to focus this ticket, I've broken up each issue into separate
 tickets and made this ticket just issue 3 in the original description, which is below
 
 ```
-On 7/26/07, Dan Christensen <jdc`@`uwo.ca> wrote:
+On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
 > Some other minor issues about using GAP within the notebook, under
 > 2.7.1.  I've put my entire worksheet in GAP mode using the menu at
 > the top.  The following things don't work correctly:

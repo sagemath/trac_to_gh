@@ -1,6 +1,6 @@
 # Issue 3835: Make an algebraic closure function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3835
 
 Original creator: jason
 

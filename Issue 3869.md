@@ -1,6 +1,6 @@
 # Issue 3869: CremonaDatabase functions iter() and isogeny_classes() sort keys wrongly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3869
 
 Original creator: cremona
 

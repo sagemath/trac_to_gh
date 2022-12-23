@@ -1,6 +1,6 @@
 # Issue 5022: Solaris 10: update libgcrypt to 1.4.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5022
 
 Original creator: mabshoff
 

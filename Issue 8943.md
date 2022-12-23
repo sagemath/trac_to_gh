@@ -1,6 +1,6 @@
 # Issue 8943: RuntimeError with series
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8943
 
 Original creator: casamayou
 

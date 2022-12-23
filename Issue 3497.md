@@ -1,6 +1,6 @@
 # Issue 3497: [with patch, needs review] ignore git
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3497
 
 Original creator: ghtdak
 

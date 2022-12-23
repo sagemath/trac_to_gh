@@ -1,6 +1,6 @@
 # Issue 1677: trivial-to-fix mistake in the rubiks spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1677
 
 Original creator: was
 
@@ -12,7 +12,7 @@ There is a pre-built OS X binary of cube in the rubiks spkg
 
 ```
 globals.c    makefile     prntsol.c   setcube.c  sizekoc1.c  trans
-was`@`newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ ls -lh
+was@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ ls -lh
 total 196K
 -rwxr-xr-x 1 was was  38K 2007-09-12 03:28 cube
 -rw-r--r-- 1 was was  13K 2007-09-12 03:28 cube.c
@@ -38,7 +38,7 @@ total 196K
 -rw-r--r-- 1 was was 3.0K 2007-09-12 03:28 sizesquare.c
 -rw-r--r-- 1 was was 5.7K 2007-09-12 03:28 TABLE
 drwxr-xr-x 2 was was 4.0K 2007-09-12 03:28 trans
-was`@`newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ file cube
+was@newserver:~/sage/spkg/standard/rubiks-20070912/src/dik$ file cube
 cube: Mach-O executable i386
 ```
 

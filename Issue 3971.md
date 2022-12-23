@@ -1,6 +1,6 @@
 # Issue 3971: [with patch; needs review] hidden markov models -- implement nsteps and log_likelihood_cutoff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3971
 
 Original creator: was
 

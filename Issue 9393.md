@@ -1,6 +1,6 @@
 # Issue 9393: symbolic sum cannot handle python ints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9393
 
 Original creator: burcin
 

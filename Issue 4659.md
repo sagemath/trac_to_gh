@@ -1,6 +1,6 @@
 # Issue 4659: remove an extra 'cdef class Integer' line from integer.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4659
 
 Original creator: jhpalmieri
 

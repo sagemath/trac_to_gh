@@ -1,6 +1,6 @@
 # Issue 1756: implement MPolynomialIdeal.hilbert_[series|polynomial]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1756
 
 Original creator: malb
 

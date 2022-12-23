@@ -1,6 +1,6 @@
 # Issue 2955: GFortran autodection on Linux/Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2955
 
 Original creator: mabshoff
 

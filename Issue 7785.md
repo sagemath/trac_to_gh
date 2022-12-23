@@ -1,6 +1,6 @@
 # Issue 7785: notebook -- include version >= 0.4.9 in sage-4.3.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7785
 
 Original creator: was
 

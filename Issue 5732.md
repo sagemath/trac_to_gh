@@ -1,6 +1,6 @@
 # Issue 5732: digits,exact_log,ndigits speed overhaul
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5732
 
 Original creator: jbmohler
 

@@ -1,6 +1,6 @@
 # Issue 9772: Abelian groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9773
 
 Original creator: rbeezer
 

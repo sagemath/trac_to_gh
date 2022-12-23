@@ -1,6 +1,6 @@
 # Issue 5473: create extra pickle jar for old format pickles (followup of #4640)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5473
 
 Original creator: mabshoff
 

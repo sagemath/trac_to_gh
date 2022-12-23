@@ -1,6 +1,6 @@
 # Issue 2053: creating symbolic matrices is insanely slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2053
 
 Original creator: was
 

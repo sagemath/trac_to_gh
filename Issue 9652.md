@@ -1,6 +1,6 @@
 # Issue 9652: Unnecesary and buggy code in arith.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9652
 
 Original creator: mderickx
 
@@ -59,7 +59,7 @@ While you are at it, I found that the function doesn't handle the valuation attr
 
 
 ```
-x = QQ[This is the Trac macro *'x'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'x'-macro).gen()
+x = QQ[['x']].gen()
 valuation(x^2, x)
 TypeError: valuation() takes no arguments (1 given)
 valuation(x^2)
@@ -244,7 +244,7 @@ In the EXAMPLES block, you could add
 sage: y = QQ['y'].gen()
 sage: valuation(y^3, y)
 3
-sage: x = QQ[This is the Trac macro *'x'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'x'-macro).gen()
+sage: x = QQ[['x']].gen()
 sage: valuation(x^2)
 2
 ```
@@ -271,11 +271,11 @@ I didn't do anything with the "For the main code, why not !do:" suggestion since
 
 ```
 
-sage: valuation(graphs.PetersenGraph())
+sage: valuation(graphs.!PetersenGraph())
 
 ---------------------------------------------------------------------------
 
-AttributeError                            Traceback (most recent call last)
+!AttributeError                            Traceback (most recent call last)
 
 /Users/maarten/<ipython console> in <module>()
 
@@ -291,7 +291,7 @@ AttributeError                            Traceback (most recent c
 
     604 def prime_powers(start, stop=None):
 
-AttributeError: 'Graph' object has no attribute 'valuation'
+!AttributeError: 'Graph' object has no attribute 'valuation'
 
 sage: 
 

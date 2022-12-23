@@ -1,6 +1,6 @@
 # Issue 9866: getting rid of endianness-dependent behaviour in GAP random sources
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9867
 
 Original creator: dimpase
 

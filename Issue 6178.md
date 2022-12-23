@@ -1,6 +1,6 @@
 # Issue 6178: Hermite normal form over PID's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6178
 
 Original creator: davidloeffler
 

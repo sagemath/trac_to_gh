@@ -1,6 +1,6 @@
 # Issue 5041: make it so the magma .sig files in extcode don't get written there by magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5041
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3303: [with patch; needs review] Add shared library to tachyon Debian package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3303
 
 Original creator: tabbott
 

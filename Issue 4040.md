@@ -1,6 +1,6 @@
 # Issue 4040: Update biopython optional package to 1.47
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4040
 
 Original creator: mhampton
 

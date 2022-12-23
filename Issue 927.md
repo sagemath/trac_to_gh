@@ -1,6 +1,6 @@
 # Issue 927: [with patch] MPolynomialSystem.coefficient_matrix should create sparse matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/927
 
 Original creator: malb
 

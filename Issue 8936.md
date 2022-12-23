@@ -1,6 +1,6 @@
 # Issue 8936: Expose facet inequalities for lattice polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8936
 
 Original creator: novoselt
 

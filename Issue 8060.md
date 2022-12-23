@@ -1,6 +1,6 @@
 # Issue 8060: New f2c-20070816.p2.spkg now works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8060
 
 Original creator: jsp
 

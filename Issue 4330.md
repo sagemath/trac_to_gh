@@ -1,6 +1,6 @@
 # Issue 4330: interfaces function_call(...) function is a total MESS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4330
 
 Original creator: was
 

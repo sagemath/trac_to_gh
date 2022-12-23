@@ -1,6 +1,6 @@
 # Issue 6636: Simplification of factorials and binomial coefficients is not very good
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6636
 
 Original creator: jbandlow
 

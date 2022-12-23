@@ -1,6 +1,6 @@
 # Issue 1030: [with patch] MPolynomial_libsingular mutates with call to factor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1030
 
 Original creator: jbmohler
 

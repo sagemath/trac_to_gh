@@ -1,6 +1,6 @@
 # Issue 8489: New `sageexample` environment for sagetex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8489
 
 Original creator: nthiery
 

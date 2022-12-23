@@ -1,6 +1,6 @@
 # Issue 3507: fix major efficiency/performance bug in sparse linear algebra matrix multiply
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3507
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6328: optional doctest failure -- bugs in the graph theory section of constructions guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6328
 
 Original creator: was
 

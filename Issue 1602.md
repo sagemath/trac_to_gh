@@ -1,6 +1,6 @@
 # Issue 1602: latex2html or other problem with html version of Section 2.10.3 "Euler's Method" of tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1602
 
 Original creator: was
 

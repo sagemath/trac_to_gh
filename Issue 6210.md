@@ -1,6 +1,6 @@
 # Issue 6210: docs for the property option of graphs() should include a pointer to the docs for the augment parameter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6210
 
 Original creator: jason
 

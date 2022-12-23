@@ -1,6 +1,6 @@
 # Issue 7489: Integrate GeoGebra into SageNB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7489
 
 Original creator: mpatel
 

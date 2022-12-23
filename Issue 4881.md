@@ -1,6 +1,6 @@
 # Issue 4881: [with spkgs, needs review] Experimental spkg for ETS-3.1.1 (including Chaco and Mayavi2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4881
 
 Original creator: jsp
 
@@ -130,10 +130,10 @@ On sage.math:
 
 
 ```
-jsp`@`sage:~/sage/sage$ glxinfo
+jsp@sage:~/sage/sage$ glxinfo
 The program 'glxinfo' is currently not installed.  To run 'glxinfo' please ask your administrator to install the package 'mesa-utils'
 -bash: glxinfo: command not found
-jsp`@`sage:~/sage/sage$ 
+jsp@sage:~/sage/sage$ 
 
 ```
 
@@ -174,21 +174,21 @@ Comment by was created at 2008-12-30 18:01:57
 I tried to test whether or not this is the case, since right now sage.math is the un-imaginable opengl without glxinfo.  But when I tried I get that mayavi2 doesn't work at all even installed even after successfully installing all the spkg's in your distro.  But it doesn't look like this has anything to do with glxinfo:
 
 ```
-wstein`@`sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*ets*
+wstein@sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*ets*
 -rw-r--r-- 1 root root 260 2008-12-28 22:51 /usr/local/sage/spkg/installed/ets-3.1.1
-wstein`@`sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*vtk*
+wstein@sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*vtk*
 -rw-r--r-- 1 root root 258 2008-12-28 22:28 /usr/local/sage/spkg/installed/vtk-5.2
-wstein`@`sage:~/tmp/ETS$ sage -sh
+wstein@sage:~/tmp/ETS$ sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-wstein`@`sage:~/tmp/ETS$ !which mayavi2
+wstein@sage:~/tmp/ETS$ !which mayavi2
 which sage mayavi2
 /usr/local/sage/sage
 /usr/local/sage/local/bin/mayavi2
-wstein`@`sage:~/tmp/ETS$ !mayavi2
+wstein@sage:~/tmp/ETS$ !mayavi2
 mayavi2
 Traceback (most recent call last):
   File "/usr/local/sage/local/bin/mayavi2", line 5, in <module>
@@ -247,11 +247,11 @@ I need a proper X display:
 
 
 ```
-jsp`@`sage:~/sage/sage$ ./sage -wthread
+jsp@sage:~/sage/sage$ ./sage -wthread
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: Unable to access the X Display, is $DISPLAY set properly?
-jsp`@`sage:~/sage/sage$ 
+jsp@sage:~/sage/sage$ 
 | Sage Version 3.2.1, Release Date: 2008-12-01                       |
 | Type notebook() for the GUI, and license() for information.        |
 ```
@@ -296,14 +296,14 @@ Did you test that?
 
 ```
 /usr/bin/X11/xauth:  creating new authority file /home/jsp/.Xauthority
-jsp`@`sage:~$ startx
+jsp@sage:~$ startx
 
 X: cannot stat /etc/X11/X (No such file or directory), aborting.
 giving up.
 xinit:  No such file or directory (errno 2):  unable to connect to X server
 xinit:  No such process (errno 3):  Server error.
 Couldnt get a file descriptor referring to the console
-jsp`@`sage:~$ 
+jsp@sage:~$ 
 
 
 Jaap
@@ -346,13 +346,13 @@ The use of ssh enables a secure connection from a local X server to a remote app
 
     * Run ssh to establish a connection with the remote site.
 
-           localname `@` localhost $ ssh -q -X -l loginname remotehost.domain
+           localname @ localhost $ ssh -q -X -l loginname remotehost.domain
            Password:
            .....
 
     * Run X application commands on the remote site.
 
-           loginname `@` remotehost $ ./sage -wthread &
+           loginname @ remotehost $ ./sage -wthread &
 
 This method allows the display of the remote X client output as if it were locally connected through a local UNIX domain socket. 
 ```
@@ -493,13 +493,13 @@ I hope that it would be possible to use from sage.math via X11 forwarding, but t
 
 
 ```
-jason`@`sage:~$ sage -sh
+jason@sage:~$ sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-jason`@`sage:~$ mayavi2 
+jason@sage:~$ mayavi2 
 Traceback (most recent call last):
   File "/usr/local/sage/local/bin/mayavi2", line 5, in <module>
     from pkg_resources import load_entry_point

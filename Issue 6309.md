@@ -1,6 +1,6 @@
 # Issue 6309: miscellaneous additions to simplicial complex class; clique complex method for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6309
 
 Original creator: bantieau
 

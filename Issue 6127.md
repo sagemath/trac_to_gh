@@ -1,6 +1,6 @@
 # Issue 6127: [with patch; needs review] fix trivial typo in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6127
 
 Original creator: was
 

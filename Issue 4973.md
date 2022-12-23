@@ -1,6 +1,6 @@
 # Issue 4973: rewrite the function __getitem__ in matrix0.pyx to not explicitly use the python/C api
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4973
 
 Original creator: mabshoff
 

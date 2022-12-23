@@ -1,6 +1,6 @@
 # Issue 3513: modular symbols -- remove the compute_dual option to decomposition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3513
 
 Original creator: was
 

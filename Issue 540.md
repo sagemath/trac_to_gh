@@ -1,6 +1,6 @@
 # Issue 540: 3d: move all .jar files to an optional package;
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/540
 
 Original creator: was
 

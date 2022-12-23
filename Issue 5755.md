@@ -1,6 +1,6 @@
 # Issue 5755: error converting symbolic expression to polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5755
 
 Original creator: ncalexan
 

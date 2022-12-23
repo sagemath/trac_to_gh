@@ -1,6 +1,6 @@
 # Issue 8953: Perfect graph recognition algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8953
 
 Original creator: ncohen
 

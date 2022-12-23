@@ -1,6 +1,6 @@
 # Issue 9829: SageNB: Bad Request. Maximum length of 102400 bytes exceeded.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9830
 
 Original creator: mpatel
 
@@ -68,12 +68,12 @@ class PostableResource(Resource):
     """
     A L{Resource} capable of handling the POST request method.
 
-    `@`cvar maxMem: maximum memory used during the parsing of the data.
-    `@`type maxMem: C{int}
-    `@`cvar maxFields: maximum number of form fields allowed.
-    `@`type maxFields: C{int}
-    `@`cvar maxSize: maximum size of the whole post allowed.
-    `@`type maxSize: C{int}
+    @cvar maxMem: maximum memory used during the parsing of the data.
+    @type maxMem: C{int}
+    @cvar maxFields: maximum number of form fields allowed.
+    @type maxFields: C{int}
+    @cvar maxSize: maximum size of the whole post allowed.
+    @type maxSize: C{int}
     """
     maxMem = 100 * 1024
     maxFields = 1024

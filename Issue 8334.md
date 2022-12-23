@@ -1,6 +1,6 @@
 # Issue 8334: Improvements to residue fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8334
 
 Original creator: roed
 

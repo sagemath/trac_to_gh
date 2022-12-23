@@ -1,6 +1,6 @@
 # Issue 2113: twisted.web2 should be gzip compressing things it sends out to the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2113
 
 Original creator: jason
 
@@ -103,7 +103,7 @@ That said, I'm confused as to what/where gzip.py.patch comes from.  Evidently mh
 3. The patch fails to apply, but almost applies:
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 hg_sage.applsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2113/gzip.patch')

@@ -1,6 +1,6 @@
 # Issue 6449: Additive abelian groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6449
 
 Original creator: davidloeffler
 
@@ -249,20 +249,20 @@ Comment by davidloeffler created at 2010-07-01 12:53:57
 I made a completely fresh clone. Here's what happened:
 
 ```
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel$ cd sage-abgp/
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-1a-abgps.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-2-homology.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-3-elliptic.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-review.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-doctest_fix.patch                             
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel$ cd sage-abgp/
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-1a-abgps.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-2-homology.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-3-elliptic.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-review.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-doctest_fix.patch                             
 adding trac_6449-1a-abgps.patch to series file                                                                
 adding trac_6449-2-homology.patch to series file                                                              
 adding trac_6449-3-elliptic.patch to series file                                                              
 adding trac_6449-review.patch to series file                                                                  
 adding trac_6449-doctest_fix.patch to series file                                                             
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
 applying trac_6449-1a-abgps.patch                                                                             
 now at: trac_6449-1a-abgps.patch                                                                              
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
 applying trac_6449-2-homology.patch                                                                           
 now at: trac_6449-2-homology.patch                                                                            
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               
 applying trac_6449-3-elliptic.patch                                                                           
 patching file sage/schemes/elliptic_curves/ell_finite_field.py                                                
 Hunk #3 FAILED at 1205                                                                                        
@@ -277,8 +277,8 @@ Hunk #2 FAILED at 611
 patch failed, unable to continue (try -v)                                                                     
 patch failed, rejects left in working dir                                                                     
 errors during apply, please fix and refresh trac_6449-3-elliptic.patch                                        
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                  
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                  
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush
 applying trac_6449-review.patch                                                
 patching file sage/schemes/elliptic_curves/ell_finite_field.py                 
 Hunk #1 FAILED at 1418                                                         
@@ -287,13 +287,13 @@ Hunk #2 FAILED at 1444
 patch failed, unable to continue (try -v)                                                             
 patch failed, rejects left in working dir                                                             
 errors during apply, please fix and refresh trac_6449-review.patch                                    
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                                                                                                           
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpushapplying trac_6449-doctest_fix.patch                                           
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                                                                                                           
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpushapplying trac_6449-doctest_fix.patch                                           
 now at: trac_6449-doctest_fix.patch                                            
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                                                                                                           
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name "*.rej" | xargs rm; mysage -hg qrefresh                                                                                                           
 rm: missing operand                                                                                           
 Try `rm --help' for more information.                                                                         
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -b; mysage -tp 16 sage/schemes/elliptic_curves/                                                                                                       
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -b; mysage -tp 16 sage/schemes/elliptic_curves/                                                                                                       
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -432,7 +432,7 @@ The following tests failed:
 ----------------------------------------------------------------------
 Timings have been updated.
 Total time for all tests: 109.3 seconds
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$
 ```
 
 
@@ -493,31 +493,31 @@ Comment by cremona created at 2010-07-01 16:17:18
 Well:   on my newly built 4.5.alpha1 and in a new clone:
 
 ```
-jec`@`selmer%pwd
+jec@selmer%pwd
 /home/jec/storage/sage-4.5.alpha1
-jec`@`selmer%cd devel/sage-6449/
-jec`@`selmer%hg qinit
-jec`@`selmer%hg qimp ~/trac_6449-1a-abgps.patch 
+jec@selmer%cd devel/sage-6449/
+jec@selmer%hg qinit
+jec@selmer%hg qimp ~/trac_6449-1a-abgps.patch 
 adding trac_6449-1a-abgps.patch to series file
-jec`@`selmer%hg qpush
+jec@selmer%hg qpush
 applying trac_6449-1a-abgps.patch
 now at: trac_6449-1a-abgps.patch
-jec`@`selmer%hg qimp ~/trac_6449-2-homology.patch 
+jec@selmer%hg qimp ~/trac_6449-2-homology.patch 
 adding trac_6449-2-homology.patch to series file
-jec`@`selmer%hg qpush
+jec@selmer%hg qpush
 applying trac_6449-2-homology.patch
 now at: trac_6449-2-homology.patch
-jec`@`selmer%hg qimp ~/trac_6449-3-elliptic.patch 
+jec@selmer%hg qimp ~/trac_6449-3-elliptic.patch 
 adding trac_6449-3-elliptic.patch to series file
-jec`@`selmer%hg qpush
+jec@selmer%hg qpush
 applying trac_6449-3-elliptic.patch
 now at: trac_6449-3-elliptic.patch
-jec`@`selmer%hg qimp ~/trac_6449-review.patch 
+jec@selmer%hg qimp ~/trac_6449-review.patch 
 adding trac_6449-review.patch to series file
-jec`@`selmer%hg qpush
+jec@selmer%hg qpush
 applying trac_6449-review.patch
 now at: trac_6449-review.patch
-jec`@`selmer%sage -b
+jec@selmer%sage -b
 ```
 
 which I am now testing.  Then I'll try again with the new folded patch!
@@ -643,16 +643,16 @@ trac_6449_ones_that_got_away.patch
 
 
 ```
-david`@`rockhopper:~> ssh selmer.warwick.ac.uk
+david@rockhopper:~> ssh selmer.warwick.ac.uk
 [...]                           
 Last login: Fri Jul  2 09:42:07 2010 from 92.17.192.129
-masiao`@`selmer:~$ cd /storage/masiao/sage-4.5.alpha1/
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -b main
+masiao@selmer:~$ cd /storage/masiao/sage-4.5.alpha1/
+masiao@selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -b main
 [...]
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -clone abgps
+masiao@selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -clone abgps
 [...]
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1$ cd devel/sage-abgps
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9287/trac_9287.coverage_for_elliptic_curves_part1.patch \
+masiao@selmer:/storage/masiao/sage-4.5.alpha1$ cd devel/sage-abgps
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9287/trac_9287.coverage_for_elliptic_curves_part1.patch \
 http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9287/trac_9287.coverage_for_elliptic_curves_part2.patch \
 http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449_everything.patch \
 http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8680/trac_8680-untabify-4.5.alpha1.patch \
@@ -664,7 +664,7 @@ adding trac_6449_everything.patch to series file
 adding trac_8680-untabify-4.5.alpha1.patch to series file                                                     
 adding trac_8680-tinyfix.patch to series file                                                                 
 adding trac_6449_ones_that_got_away.patch to series file                                                      
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qpush -a
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qpush -a
 applying trac_9287.coverage_for_elliptic_curves_part1.patch                            
 applying trac_9287.coverage_for_elliptic_curves_part2.patch                            
 applying trac_6449_everything.patch                                                    
@@ -672,9 +672,9 @@ applying trac_8680-untabify-4.5.alpha1.patch
 applying trac_8680-tinyfix.patch                                                       
 applying trac_6449_ones_that_got_away.patch                                            
 now at: trac_6449_ones_that_got_away.patch                                             
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ export MAKE="make -j16"; ../../sage -b
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ export MAKE="make -j16"; ../../sage -b
 [builds with no errors]
-masiao`@`selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$
+masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$
 ```
 
 

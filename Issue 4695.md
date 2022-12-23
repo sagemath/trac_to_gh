@@ -1,6 +1,6 @@
 # Issue 4695: [with patch, needs review] add support for pari's rnfidealdown
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4695
 
 Original creator: ncalexan
 
@@ -31,7 +31,7 @@ Also, a bunch of doctests fail on x86_64 linux (sage.math), and these all have t
 
 
 ```
-was`@`sage:~/build/sage-3.2.1.rc1$ ./sage -tp 12 devel/sage/sage/rings/
+was@sage:~/build/sage-3.2.1.rc1$ ./sage -tp 12 devel/sage/sage/rings/
 Global iterations: 1
 File iterations: 1
 TeX files: 0
@@ -116,7 +116,7 @@ Doctesting the updated patch on sage.math:  (I haven't tested the whole tree)
 
 
 ```
-ncalexan`@`sage:~/sage/devel/sage-nca$ ~/sage/sage -tp 6 sage/rings/number_field/* 
+ncalexan@sage:~/sage/devel/sage-nca$ ~/sage/sage -tp 6 sage/rings/number_field/* 
 Global iterations: 1
 File iterations: 1
 TeX files: 0
@@ -166,7 +166,7 @@ Timings have been updated.
 Total time for all tests: 45.6 seconds
 
 
-ncalexan`@`sage:~/sage/devel/sage-nca$ ~/sage/sage -tp 6 sage/libs/pari/*
+ncalexan@sage:~/sage/devel/sage-nca$ ~/sage/sage -tp 6 sage/libs/pari/*
 Global iterations: 1
 File iterations: 1
 TeX files: 0
@@ -192,7 +192,7 @@ sage -t  3.2.2.alpha0-x86_64-Linux/devel/sage-nca/sage/libs/pari/gen.pyx
 All tests passed!
 Timings have been updated.
 Total time for all tests: 5.4 seconds
-ncalexan`@`sage:~/sage/devel/sage-nca$
+ncalexan@sage:~/sage/devel/sage-nca$
 ```
 
 

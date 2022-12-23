@@ -1,6 +1,6 @@
 # Issue 8889: multidim'l enumeration over variable length tuples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8889
 
 Original creator: ecurry
 

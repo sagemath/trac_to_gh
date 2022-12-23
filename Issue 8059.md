@@ -1,6 +1,6 @@
 # Issue 8059: update Singular SPKG to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8059
 
 Original creator: malb
 
@@ -198,7 +198,7 @@ Unless I am looking at the wrong SPKG, you forgot to take `dist/` out of version
 
 
 ```
-[ghitza`@`cartan singular-3-1-0-9-20100125]$ hg status
+[ghitza@cartan singular-3-1-0-9-20100125]$ hg status
 ! dist/debian/changelog
 ! dist/debian/compat
 ! dist/debian/control
@@ -311,15 +311,15 @@ If CFLAGS and friends are set tight. Building on Open Solaris fails on
 ```
 gcc -g -pg -O3 -I. -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -O2 -g -m64 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -DHAVE_CONFIG_H -c omBinPage.c -o omBinPage.op
 /var/tmp//ccciayz2.s: Assembler messages:
-/var/tmp//ccciayz2.s:31: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:110: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:183: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:270: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:477: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:805: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:1240: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:1718: Error: junk ``@`' after expression
-/var/tmp//ccciayz2.s:2041: Error: junk ``@`' after expression
+/var/tmp//ccciayz2.s:31: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:110: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:183: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:270: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:477: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:805: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:1240: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:1718: Error: junk `@' after expression
+/var/tmp//ccciayz2.s:2041: Error: junk `@' after expression
 make[2]: *** [omBinPage.op] Error 1
 make[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.2.alpha0/spkg/build/singular-3-1-0-9-20100125/src/omalloc'
 make[1]: *** [install] Error 1
@@ -748,7 +748,7 @@ It will be corrected in the next release.
 Gert-Martin
 
 
-2010/3/8 Martin Albrecht <malb`@`informatik.uni-bremen.de>:
+2010/3/8 Martin Albrecht <malb@informatik.uni-bremen.de>:
 > Hi,
 >
 > the following output is wrong in 3-1-1-0 and was correct in the previous
@@ -810,10 +810,10 @@ genus(i) or genus(i,1); I a 1-dimensional ideal
 In the example the ideal defines a surface.
 Gert-Martin
 
-2010/3/9  <owner-singular-team`@`mathematik.uni-kl.de>:
+2010/3/9  <owner-singular-team@mathematik.uni-kl.de>:
 > #212: wrong computation of genus / error when calling genus
 > --------------------------------------------------------------+-------------
->  Reporter:  Martin Albrecht <malb`@`…                           |       Owner:  somebody
+>  Reporter:  Martin Albrecht <malb@…                           |       Owner:  somebody
 >     Type:  defect                                            |      Status:  new
 >  Priority:  minor                                             |   Milestone:  Releases 3-1-1 and higher
 > Component:  singular-libs                                     |     Version:  3-1-1
@@ -1313,7 +1313,7 @@ Comment by drkirkby created at 2010-07-15 17:29:25
 On a Sun Ultra 27 (3.33 GHz, quad core, 8 threads), running OpenSolaris:
 
 ```
-drkirkby`@`hawk:~/sage-4.5.rc0$ echo $MAKE
+drkirkby@hawk:~/sage-4.5.rc0$ echo $MAKE
 make -j12
 ```
 
@@ -1458,7 +1458,7 @@ REFEREE REPORT:
 There are a bunch of .cvsignore files all over:
 
 ```
-wstein`@`sage:~/build/sage-4.5.alphastein1/singular-3-1-1-4/src$ hg status|grep "\!"|grep cvsignore
+wstein@sage:~/build/sage-4.5.alphastein1/singular-3-1-1-4/src$ hg status|grep "\!"|grep cvsignore
 ! IntegerProgramming/.cvsignore
 ! Singular/.cvsignore
 ! doc/.cvsignore

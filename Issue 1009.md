@@ -1,6 +1,6 @@
 # Issue 1009: incredibly slow caching of ntl context objects.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1009
 
 Original creator: was
 

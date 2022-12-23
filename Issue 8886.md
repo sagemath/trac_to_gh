@@ -1,6 +1,6 @@
 # Issue 8886: tutorial on Python object and classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8886
 
 Original creator: mvngu
 
@@ -163,7 +163,7 @@ New new patch is updated it should be reviewed. The diff from the preceding patc
 ```
 1.1 --- a/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 09:50:46 2011 +0200 
 1.2 +++ b/trac_8886-objects-classes_tutorial-fh-jhp.patch Wed Aug 31 11:37:04 2011 +0200 
-1.3 `@``@` -890,7 +890,7 `@``@` 
+1.3 @@ -890,7 +890,7 @@ 
 1.4 +This tutorial is an introduction to object-oriented programming in Python and 
 1.5 +Sage. It requires basic knowledge about imperative/procedural programming (the 
 1.6 +most common programming style) -- that is, conditional instructions, loops, 

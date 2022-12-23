@@ -1,6 +1,6 @@
 # Issue 7670: notebook -- evidently only the first 6 characters are significant???
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7670
 
 Original creator: was
 

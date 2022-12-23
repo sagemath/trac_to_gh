@@ -1,6 +1,6 @@
 # Issue 3256: [with patch; needs review] soname and correct -fPIC handling for zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3256
 
 Original creator: tabbott
 

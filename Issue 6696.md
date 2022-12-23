@@ -1,6 +1,6 @@
 # Issue 6696: spell-check all modules under sage/finance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6696
 
 Original creator: mvngu
 

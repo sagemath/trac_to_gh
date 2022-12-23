@@ -1,6 +1,6 @@
 # Issue 6201: CC() raises exception instead of returning 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6201
 
 Original creator: fredrik.johansson
 

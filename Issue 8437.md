@@ -1,6 +1,6 @@
 # Issue 8437: wrong unix rights/permissions of some files after make dist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8437
 
 Original creator: zimmerma
 

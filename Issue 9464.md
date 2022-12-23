@@ -1,6 +1,6 @@
 # Issue 9464: R depends on Fortran, but has no such dependancy in spkg/standard/deps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9464
 
 Original creator: drkirkby
 
@@ -23,7 +23,7 @@ Note, there is no Fortran dependency listed, yet R does have Fortran files:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'
+drkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'
 r-2.10.1.p2/src/src/library/stats/src/stxwx.f
 r-2.10.1.p2/src/src/library/stats/src/sgram.f
 r-2.10.1.p2/src/src/library/stats/src/bsplvd.f

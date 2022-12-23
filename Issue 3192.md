@@ -1,6 +1,6 @@
 # Issue 3192: fix 64 bit OSX build support for python_gnutls
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3192
 
 Original creator: mabshoff
 

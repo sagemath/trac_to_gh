@@ -1,6 +1,6 @@
 # Issue 6435: misformatted docstrings in sage.misc.abstract_method (easy fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6435
 
 Original creator: davidloeffler
 

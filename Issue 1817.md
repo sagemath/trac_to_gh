@@ -1,6 +1,6 @@
 # Issue 1817: [with patch] crypto.mq.sr doctest coverage at 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1817
 
 Original creator: malb
 

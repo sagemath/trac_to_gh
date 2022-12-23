@@ -1,6 +1,6 @@
 # Issue 1344: make it crystal clear that one should use tar not some .app to extract sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1344
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6972: update the r spkg in sage to 2.9.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6972
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1437: FLINT 1.01.spkg: spkg-check broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1437
 
 Original creator: mabshoff
 

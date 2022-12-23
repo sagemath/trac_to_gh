@@ -1,6 +1,6 @@
 # Issue 5288: cython gray code iterator for k-combinations of a set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5288
 
 Original creator: dgordon
 

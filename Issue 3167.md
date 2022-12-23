@@ -1,6 +1,6 @@
 # Issue 3167: notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3167
 
 Original creator: was
 

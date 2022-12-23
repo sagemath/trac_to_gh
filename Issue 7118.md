@@ -1,6 +1,6 @@
 # Issue 7118: remove quaddouble from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7118
 
 Original creator: was
 

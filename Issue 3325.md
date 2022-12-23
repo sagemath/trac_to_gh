@@ -1,6 +1,6 @@
 # Issue 3325: [with patch, needs review] small error in argument to dvipng in latex.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3325
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 3223: notebook -- it is now broken on the iphone
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3223
 
 Original creator: was
 

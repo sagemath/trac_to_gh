@@ -1,6 +1,6 @@
 # Issue 4430: optimize new worksheet startup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4430
 
 Original creator: robertwb
 

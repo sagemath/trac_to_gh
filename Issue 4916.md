@@ -1,6 +1,6 @@
 # Issue 4916: convert sage.lfunctions.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4916
 
 Original creator: mhansen
 

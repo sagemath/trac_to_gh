@@ -1,6 +1,6 @@
 # Issue 8874: Matrices are missing a is_skew_symmetric method.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8874
 
 Original creator: mhansen
 

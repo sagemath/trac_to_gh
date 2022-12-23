@@ -1,6 +1,6 @@
 # Issue 5655: [with patch, needs review] Improved enumeration of vertices and 0-dimensional faces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5655
 
 Original creator: novoselt
 

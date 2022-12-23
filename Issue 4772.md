@@ -1,6 +1,6 @@
 # Issue 4772: make determinants of matrices over GF(2) way faster
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4772
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 This is sad:
 
 ```
-was`@`sage:~/build/sage-3.2.2.alpha0$ ./sage
+was@sage:~/build/sage-3.2.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: w = random_matrix(GF(2),100)

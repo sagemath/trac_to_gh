@@ -1,6 +1,6 @@
 # Issue 5594: better error message for list_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5594
 
 Original creator: jason
 

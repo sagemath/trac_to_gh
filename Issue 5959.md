@@ -1,6 +1,6 @@
 # Issue 5959: Better doctest for __cmp__ in primes.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5959
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 4644: No new prompt when doing a ./sage -sh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4644
 
 Original creator: jsp
 
@@ -12,7 +12,7 @@ We used to have:
 
 
 ```
-[jaap`@`paix sage-3.1.1]$ ./sage -sh
+[jaap@paix sage-3.1.1]$ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
@@ -21,7 +21,7 @@ with other copies of Sage!
 Sage subshell$ exit
 exit
 Exited Sage subshell.
-[jaap`@`paix sage-3.1.1]$ 
+[jaap@paix sage-3.1.1]$ 
 
 ```
 
@@ -30,13 +30,13 @@ But in sage-3.2:
 
 
 ```
-[jaap`@`paix sage-3.2]$ ./sage -sh
+[jaap@paix sage-3.2]$ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything
 with other copies of Sage!
 
-[jaap`@`paix sage-3.2]$ 
+[jaap@paix sage-3.2]$ 
 
 ```
 
@@ -80,14 +80,14 @@ We now have the trouble of finding out which shell we use!
 
 ```
 Exited Sage subshell.
-[jaap`@`paix sage-3.2.1.rc0]$ vi local/bin/sage-sage
-[jaap`@`paix sage-3.2.1.rc0]$ ./sage -sh
+[jaap@paix sage-3.2.1.rc0]$ vi local/bin/sage-sage
+[jaap@paix sage-3.2.1.rc0]$ ./sage -sh
 /usr/bin/env: bash -x: No such file or directory
-[jaap`@`paix sage-3.2.1.rc0]$ which bash
+[jaap@paix sage-3.2.1.rc0]$ which bash
 /bin/bash
-[jaap`@`paix sage-3.2.1.rc0]$ local/bin/sage-sage
+[jaap@paix sage-3.2.1.rc0]$ local/bin/sage-sage
 /usr/bin/env: bash -x: No such file or directory
-[jaap`@`paix sage-3.2.1.rc0]$ 
+[jaap@paix sage-3.2.1.rc0]$ 
 
 ```
 

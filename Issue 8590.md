@@ -1,6 +1,6 @@
 # Issue 8590: `A` still using old coercion framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8590
 
 Original creator: vferay
 

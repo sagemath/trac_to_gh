@@ -1,6 +1,6 @@
 # Issue 5281: Update tachyon to Version 0.98.1 (latest upstream)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5281
 
 Original creator: mabshoff
 
@@ -227,7 +227,7 @@ Comment by leif created at 2010-09-21 21:08:44
 Yes.
 
 ```sh
-leif`@`quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src
+leif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src
 16K	src/src/CVS
 680K	src/src
 16K	src/msvc/CVS
@@ -460,17 +460,17 @@ To me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit bi
 
 
 ```
-kirkby`@`sage:~$ cat test.c
+kirkby@sage:~$ cat test.c
 #include <stdio.h>
 
 int main() {
 printf("ddd");
 }
-kirkby`@`sage:~$ gcc test.c
-kirkby`@`sage:~$ file a.out
+kirkby@sage:~$ gcc test.c
+kirkby@sage:~$ file a.out
 a.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped
-kirkby`@`sage:~$ gcc -m32 test.c
-kirkby`@`sage:~$ file a.out
+kirkby@sage:~$ gcc -m32 test.c
+kirkby@sage:~$ file a.out
 a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped
 ```
 
@@ -564,10 +564,10 @@ I don't know how _typical_ that is, but it's certainly not the case on sage.math
 
 
 ```
-kirkby`@`sage:~$  echo "int main(){return 0;}" > foo.c && gcc -m32 foo.c
-kirkby`@`sage:~$ file a.out
+kirkby@sage:~$  echo "int main(){return 0;}" > foo.c && gcc -m32 foo.c
+kirkby@sage:~$ file a.out
 a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped
-kirkby`@`sage:~$ 
+kirkby@sage:~$ 
 ```
 
 

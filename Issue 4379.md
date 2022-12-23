@@ -1,6 +1,6 @@
 # Issue 4379: [with patch, needs review] typo in tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4379
 
 Original creator: jhpalmieri
 

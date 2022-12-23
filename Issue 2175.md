@@ -1,6 +1,6 @@
 # Issue 2175: genus2reduction makefile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2175
 
 Original creator: tabbott
 

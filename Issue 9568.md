@@ -1,6 +1,6 @@
 # Issue 9568: Update IML to the newest upstream release, and improve spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9568
 
 Original creator: drkirkby
 
@@ -148,14 +148,14 @@ Finished installing iml-1.0.3.p0.spkg
 real	4m30.801s
 user	0m8.209s
 sys	0m3.896s
-leif`@`portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx
+leif@portland:~/Sage/sage-4.5$ ./sage -t devel/sage/sage/matrix/matrix_integer_dense.pyx
 sage -t  "devel/sage/sage/matrix/matrix_integer_dense.pyx"  
 	 [5.5 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 5.5 seconds
-leif`@`portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx
+leif@portland:~/Sage/sage-4.5$ ./sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx
 sage -t -long "devel/sage/sage/matrix/matrix_integer_dense.pyx"
 	 [18.6 s]
  

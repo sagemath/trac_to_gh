@@ -1,6 +1,6 @@
 # Issue 9510: gfan fails to build on skynet machines eno, taurus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9510
 
 Original creator: jhpalmieri
 

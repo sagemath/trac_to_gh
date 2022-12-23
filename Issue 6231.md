@@ -1,6 +1,6 @@
 # Issue 6231: Solving a system of equations ignores multiplicities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6231
 
 Original creator: SimonKing
 

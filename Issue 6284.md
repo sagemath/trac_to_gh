@@ -1,6 +1,6 @@
 # Issue 6284: fix the numerous broken optional magma doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6284
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: tbd
 
 
 ```
-wstein`@`sage:~/build/sage-4.0.2.alpha3$  ./sage -tp 30 --only_optional=magma devel/sage/sage/
+wstein@sage:~/build/sage-4.0.2.alpha3$  ./sage -tp 30 --only_optional=magma devel/sage/sage/
 ...
 
         sage -t --only_optional=magma devel/sage/sage/symbolic/expression.pyx # 1 doctests failed

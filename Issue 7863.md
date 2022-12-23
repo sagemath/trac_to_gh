@@ -1,6 +1,6 @@
 # Issue 7863: Remove lint from auxiliary JS files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7863
 
 Original creator: mpatel
 

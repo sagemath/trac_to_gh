@@ -1,6 +1,6 @@
 # Issue 8360: Add an interface to Jean-Eric Pin's Semigroupe package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8360
 
 Original creator: nthiery
 

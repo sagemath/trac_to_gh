@@ -1,6 +1,6 @@
 # Issue 7111: timeout when doctesting partition refinement code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7111
 
 Original creator: was
 
@@ -31,7 +31,7 @@ Comment by was created at 2009-10-07 12:22:28
 After deleting the line causing the timeout, I found a *bug* in partition refinement by testing on Centos32!
 
 ```
-wstein`@`centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx 
+wstein@centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx 
 init.sage does not exist ... creating
 sage -t  "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 **********************************************************************
@@ -77,7 +77,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
 Total time for all tests: 8.0 seconds
-wstein`@`centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ 
+wstein@centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ 
 ```
 
 

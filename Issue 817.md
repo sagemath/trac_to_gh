@@ -1,6 +1,6 @@
 # Issue 817: O(3^(-2)) is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/817
 
 Original creator: was
 

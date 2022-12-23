@@ -1,6 +1,6 @@
 # Issue 9991: Python scripts try to run before Python is built.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9992
 
 Original creator: drkirkby
 

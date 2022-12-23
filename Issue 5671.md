@@ -1,6 +1,6 @@
 # Issue 5671: Create a spkg for minisat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5671
 
 Original creator: boothby
 

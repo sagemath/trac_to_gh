@@ -1,6 +1,6 @@
 # Issue 182: Integers(7).multiplicative_generator() no longer works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/182
 
 Original creator: dmharvey
 
@@ -31,7 +31,7 @@ fixed for sage-1.6
 ```
 rank4:~/d/sage/sage/rings was$ hg export 2316     
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168367697 28800
 # Node ID 9ed3822169452626abd38e84da465d133b40ea2b
 # Parent  5e2621f3400050664fc52f68097a68a679bc5033
@@ -40,7 +40,7 @@ Fixed trac bug #182 (added some useful functionality for Z/nZ)
 diff -r 5e2621f34000 -r 9ed382216945 sage/rings/integer_mod_ring.py
 --- a/sage/rings/integer_mod_ring.py    Tue Jan 09 10:12:19 2007 -0800
 +++ b/sage/rings/integer_mod_ring.py    Tue Jan 09 10:34:57 2007 -0800
-`@``@` -248,7 +248,113 `@``@` class IntegerModRing_generic(quotient_ri
+@@ -248,7 +248,113 @@ class IntegerModRing_generic(quotient_ri
              True
          """
          return self.order().is_prime()

@@ -1,6 +1,6 @@
 # Issue 2810: Use new generic code in elliptic_curve_finite_field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2810
 
 Original creator: cremona
 

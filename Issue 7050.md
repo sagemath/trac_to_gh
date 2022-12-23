@@ -1,6 +1,6 @@
 # Issue 7050: Make plotting single polar points or lines easy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7050
 
 Original creator: kcrisman
 

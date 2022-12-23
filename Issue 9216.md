@@ -1,6 +1,6 @@
 # Issue 9216: Bring doc coverage of groups/group.pyx to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9216
 
 Original creator: slabbe
 

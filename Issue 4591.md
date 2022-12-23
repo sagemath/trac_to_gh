@@ -1,6 +1,6 @@
 # Issue 4591: magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4591
 
 Original creator: was
 
@@ -62,7 +62,7 @@ Comment by mabshoff created at 2008-11-23 08:05:46
 Unfortunately there are slight reject issues:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_4591_sage-4591.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_4591_sage-4591.patch 
 patching file sage/interfaces/magma.py
 Hunk #1 FAILED at 744.
 1 out of 1 hunk FAILED -- saving rejects to file sage/interfaces/magma.py.rej

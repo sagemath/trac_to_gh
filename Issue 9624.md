@@ -1,6 +1,6 @@
 # Issue 9624: Numerical noise in lcalc_Lfunction.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9624
 
 Original creator: rishi
 

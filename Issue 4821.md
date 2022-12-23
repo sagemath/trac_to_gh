@@ -1,6 +1,6 @@
 # Issue 4821: Experimental scilab-5.0.3.spkg [with spkg, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4821
 
 Original creator: jsp
 
@@ -59,7 +59,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing scilab-5.0.3.spkg
-[jaap`@`paix sage-3.2.2.alpha0]$
+[jaap@paix sage-3.2.2.alpha0]$
 [...]
 sage: scilab.console()
 graphics module not found.

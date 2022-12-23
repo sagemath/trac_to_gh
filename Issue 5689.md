@@ -1,6 +1,6 @@
 # Issue 5689: hitting control c while computing pi results in wrong answers later
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5689
 
 Original creator: was
 

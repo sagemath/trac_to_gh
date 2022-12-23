@@ -1,6 +1,6 @@
 # Issue 1863: implement f.change_ring(R) for f a multivariate polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1863
 
 Original creator: was
 

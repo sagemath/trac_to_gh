@@ -1,6 +1,6 @@
 # Issue 9368: sage_fortran ignores SAGE64 except on Solaris/OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9368
 
 Original creator: drkirkby
 
@@ -49,7 +49,7 @@ Comment by jhpalmieri created at 2010-06-29 15:58:12
 The change makes sense to me, but I'm not sure I can referee it properly: I don't have any problem with fortran on my Mac OS X box.  This is OS X 10.6 on a 64-bit machine.  No matter how I set SAGE64, the file sage_fortran always says
 
 ```/bin/bash
-gfortran -m64 "$`@`"
+gfortran -m64 "$@"
 ```
 
 In fact, the lines which get changed by the patch occur in the function `install_SAGE_FORTRAN`, which should only get run if the environment variable `SAGE_FORTRAN` is set.  I don't know why anyone on OS X should set this.
@@ -338,10 +338,10 @@ I realise I was mistaken here. Justin is almost certainly right when he says the
 when in fact there is more to it. This is how it looks on my screen - it is easy to see that this could be confusing. 
 
 {{{
-drkirkby`@`hawk:~/sage-4.5.rc0$ cat local/bin/sage_fortran
+drkirkby@hawk:~/sage-4.5.rc0$ cat local/bin/sage_fortran
 #!/bin/sh 
 
-/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $`@`drkirkby`@`hawk:~/sage-4.5.rc0$ 
+/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@drkirkby@hawk:~/sage-4.5.rc0$ 
 }}}
 
 

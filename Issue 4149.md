@@ -1,6 +1,6 @@
 # Issue 4149: [with patch, needs review] make every field a fraction field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4149
 
 Original creator: jhpalmieri
 

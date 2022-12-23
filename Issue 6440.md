@@ -1,6 +1,6 @@
 # Issue 6440: hg_sage.serve() is broken in 4.1.alpha1 (mainly on Mac?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6440
 
 Original creator: jhpalmieri
 

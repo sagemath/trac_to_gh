@@ -1,6 +1,6 @@
 # Issue 6400: Followup on abstract method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6400
 
 Original creator: robertwb
 

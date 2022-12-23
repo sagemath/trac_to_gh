@@ -1,6 +1,6 @@
 # Issue 6487: Plethysm with the zero symmetric function causes a segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6487
 
 Original creator: saliola
 

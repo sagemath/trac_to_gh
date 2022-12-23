@@ -1,6 +1,6 @@
 # Issue 318: History page for notebook should have a notebook style mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/318
 
 Original creator: TimothyClemans
 

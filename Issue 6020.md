@@ -1,6 +1,6 @@
 # Issue 6020: bug in delta_qexp over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6020
 
 Original creator: AlexGhitza
 

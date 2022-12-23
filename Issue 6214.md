@@ -1,6 +1,6 @@
 # Issue 6214: Polyhedra compute incorrect dimension when defined through inequalities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6214
 
 Original creator: mhampton
 
@@ -121,7 +121,7 @@ The original example also works as it should:
 
 ```
 sage: positive_coords = Polyhedron(ieqs=[[0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1]])
-sage: P = Polyhedron(ieqs=positive_coords.inequalities() + [[0,0,1,-1,-1,1,0], [0,0,-1,1,-1,1,0]], eqns=[This is the Trac macro *-31,1,1,1,1,1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-31,1,1,1,1,1,1-macro))
+sage: P = Polyhedron(ieqs=positive_coords.inequalities() + [[0,0,1,-1,-1,1,0], [0,0,-1,1,-1,1,0]], eqns=[[-31,1,1,1,1,1,1]])
 sage: P
 A 5-dimensional polyhedron in QQ^6 defined as the convex hull of 7 vertices.
 sage: P.dim()

@@ -1,6 +1,6 @@
 # Issue 4052: [with patch; needs review] readline spkg doesn't build under OpenBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4052
 
 Original creator: anakha
 

@@ -1,6 +1,6 @@
 # Issue 6613: patch from #6393 should also demonstrate that bug is fixed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6613
 
 Original creator: mvngu
 

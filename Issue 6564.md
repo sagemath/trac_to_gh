@@ -1,6 +1,6 @@
 # Issue 6564: ecl will not build on Solaris - looks like make exiting when it tries to delete non-existant file.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6564
 
 Original creator: drkirkby
 

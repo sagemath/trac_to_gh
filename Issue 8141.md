@@ -1,6 +1,6 @@
 # Issue 8141: Update font stacks, sans-serif and monospace, for SageNB pages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8141
 
 Original creator: mpatel
 

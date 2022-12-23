@@ -1,6 +1,6 @@
 # Issue 2759: [with patch; needs review] SAGE debian/ directory updates
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2759
 
 Original creator: tabbott
 

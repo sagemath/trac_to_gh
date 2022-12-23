@@ -1,6 +1,6 @@
 # Issue 4018: casting of non t_INT pari integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4018
 
 Original creator: robertwb
 

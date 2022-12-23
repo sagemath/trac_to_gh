@@ -1,6 +1,6 @@
 # Issue 8762: the sparse=True flag is horribly broken for GF(p)[x]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8762
 
 Original creator: was
 

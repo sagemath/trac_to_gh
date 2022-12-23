@@ -1,6 +1,6 @@
 # Issue 4652: [with code, needs testing] make distutils compile Cython extensions in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4652
 
 Original creator: craigcitro
 
@@ -56,7 +56,7 @@ Here's the diff of what you did:
 ```
 --- build_ext.py.orig	2008-11-29 10:32:57.000000000 -0800
 +++ build_ext.py	2008-11-29 03:38:35.000000000 -0800
-`@``@` -409,13 +409,57 `@``@`
+@@ -409,13 +409,57 @@
      # get_outputs ()
  
      def build_extensions(self):
@@ -117,7 +117,7 @@ Here's the diff of what you did:
          sources = ext.sources
          if sources is None or type(sources) not in (ListType, TupleType):
              raise DistutilsSetupError, \
-`@``@` -443,9 +487,16 `@``@`
+@@ -443,9 +487,16 @@
          depends = sources + ext.depends
          if not (self.force or newer_group(depends, ext_filename, 'newer')):
              log.debug("skipping '%s' extension (up-to-date)", ext.name)
@@ -135,7 +135,7 @@ Here's the diff of what you did:
  
          # First, scan the sources for SWIG definition files (.i), run
          # SWIG on 'em to create .c files, and modify the sources list
-`@``@` -715,3 +766,23 `@``@`
+@@ -715,3 +766,23 @@
                  return ext.libraries
  
  # class build_ext

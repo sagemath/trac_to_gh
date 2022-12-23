@@ -1,6 +1,6 @@
 # Issue 3973: [with patch, needs review] short_weierstrass_model in characteristic 2 and 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3973
 
 Original creator: wuthrich
 

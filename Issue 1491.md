@@ -1,6 +1,6 @@
 # Issue 1491: [with patch] improve conversion from interface to sage objects (i.e., the dot sage method)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1491
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Dec 13, 2007 11:54 AM, Timothy Clemans <timothy.clemans`@`gmail.com> wrote:
+On Dec 13, 2007 11:54 AM, Timothy Clemans <timothy.clemans@gmail.com> wrote:
 > 
 > I'm getting
 > 

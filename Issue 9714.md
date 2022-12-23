@@ -1,6 +1,6 @@
 # Issue 9714: Graph(..., format='incidence_matrix') doesn't work with graphs that have loops, but G.incidence_matrix() does.  So?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9714
 
 Original creator: was
 

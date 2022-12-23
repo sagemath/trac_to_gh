@@ -1,6 +1,6 @@
 # Issue 2227: sage-2.10.2.alpha1 -- doctest broken in sageinspect.py because I added a new option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2227
 
 Original creator: was
 

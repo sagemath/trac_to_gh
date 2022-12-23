@@ -1,6 +1,6 @@
 # Issue 3337: Upgrade gap-guava to new 3.5 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3337
 
 Original creator: tabbott
 
@@ -51,7 +51,7 @@ Comment by mabshoff created at 2008-12-18 21:14:52
 Nuke tomlib:
 
 ```
-mabshoff`@`sage:~/gap-4.4.12.p1/src$ du -sch pkg/*
+mabshoff@sage:~/gap-4.4.12.p1/src$ du -sch pkg/*
 84K	pkg/Browse
 28K	pkg/edim
 12M	pkg/guava3.9
@@ -227,11 +227,11 @@ Comment by mabshoff created at 2008-12-21 00:56:24
 David:
 
 ```
-mabshoff`@`sage:/scratch/release-cycle$ tar xjf gap-4.4.12.p1.spkg 
-mabshoff`@`sage:/scratch/release-cycle$ cd gap-4.4.12.p1
-mabshoff`@`sage:/scratch/release-cycle/gap-4.4.12.p1$ pwd
+mabshoff@sage:/scratch/release-cycle$ tar xjf gap-4.4.12.p1.spkg 
+mabshoff@sage:/scratch/release-cycle$ cd gap-4.4.12.p1
+mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ pwd
 /scratch/release-cycle/gap-4.4.12.p1
-mabshoff`@`sage:/scratch/release-cycle/gap-4.4.12.p1$ hg stat
+mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ hg stat
 M spkg-install
 ? patch
 ```
@@ -250,7 +250,7 @@ Comment by mabshoff created at 2008-12-21 00:58:58
 Re binaries:
 
 ```
-mabshoff`@`sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name "*.so"
+mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name "*.so"
 ./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so
 ./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so
 ./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so
@@ -288,13 +288,13 @@ I ran
 
 
 ```
-wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ pwd
+wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ pwd
 /home/wdj/sagefiles/sagestuff/gap-4.4.12
-wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ hg stat
+wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg stat
 M SPKG.txt
 M spkg-install
 ? patch
-wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ ls
+wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ ls
 dist  patch  patches  spkg-debian  spkg-install  SPKG.txt  src
 ```
 
@@ -330,7 +330,7 @@ I read both "hg help commit" and "hg help" and don't see how the information the
 
 
 ```
-wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
+wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
 abort: export requires at least one changeset
 }}
 Obviously that is the wrong idea but it at least follows the process I am used to using for Sage code patches. If hg is to be used to create the new GAP spkg then obviously (a) I have to learn a lot more and (b) it isn't clear to me how to proceed. For example, is "hg remove" to be used for every file deleted from the old spkg and "hg add" to be used for every file/dir added to the new spkg?
@@ -357,7 +357,7 @@ I still get
 
 
 ```
-wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
+wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
 abort: export requires at least one changeset
 
 

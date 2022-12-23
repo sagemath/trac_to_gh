@@ -1,6 +1,6 @@
 # Issue 6642: problem with solve (from the tutorial)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6642
 
 Original creator: jhpalmieri
 

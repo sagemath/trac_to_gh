@@ -1,6 +1,6 @@
 # Issue 9299: Test failures of Python (2.6.4.p9) on OpenSolaris x64 (64-bit)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9299
 
 Original creator: drkirkby
 

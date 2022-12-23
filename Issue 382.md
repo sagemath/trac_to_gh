@@ -1,6 +1,6 @@
 # Issue 382: Unitialized variable in error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/382
 
 Original creator: justin
 

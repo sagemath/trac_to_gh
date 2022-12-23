@@ -1,6 +1,6 @@
 # Issue 5958: [with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5958
 
 Original creator: malb
 

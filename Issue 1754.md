@@ -1,6 +1,6 @@
 # Issue 1754: gnutls self signed certificates do not work with firefox 3 (pre-beta 3)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1754
 
 Original creator: yi
 

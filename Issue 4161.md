@@ -1,6 +1,6 @@
 # Issue 4161: [with spkg, needs review] GAP doesn't compile with CXX='ccache g++'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4161
 
 Original creator: mabshoff
 

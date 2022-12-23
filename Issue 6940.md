@@ -1,6 +1,6 @@
 # Issue 6940: put the css into a .css file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6940
 
 Original creator: jason
 

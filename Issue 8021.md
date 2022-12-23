@@ -1,6 +1,6 @@
 # Issue 8021: ref manual for 4.3.1: error when building (Undefined control sequence \cross)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8021
 
 Original creator: jhpalmieri
 

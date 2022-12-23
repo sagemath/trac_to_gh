@@ -1,6 +1,6 @@
 # Issue 7719: Improvements to complex AGM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7719
 
 Original creator: cremona
 

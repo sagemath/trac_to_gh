@@ -1,6 +1,6 @@
 # Issue 5499: Wrong precision when creating p-adic field element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5499
 
 Original creator: kedlaya
 

@@ -1,6 +1,6 @@
 # Issue 994: ntl_GF2X class has very strange __int__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/994
 
 Original creator: cwitty
 

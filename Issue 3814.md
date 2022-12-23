@@ -1,6 +1,6 @@
 # Issue 3814: [with patch, needs quick review] Bug introduced in trac #3800 fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3814
 
 Original creator: craigcitro
 

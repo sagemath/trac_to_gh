@@ -1,6 +1,6 @@
 # Issue 2692: [with patch; needs review] bug displaying list of published worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2692
 
 Original creator: was
 

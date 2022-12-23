@@ -1,6 +1,6 @@
 # Issue 1145: high-level strategy for integer factorization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1145
 
 Original creator: zimmerma
 
@@ -32,7 +32,7 @@ Comments from some experts:
 
 ```
 
-On 12/11/2007, Robert Bradshaw <robertwb`@`math.washington.edu> wrote:
+On 12/11/2007, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > I don't have much expertise in the area, but it looks like a sound
 > proposal to me. The trial division bound seems a bit low (and perhaps
 > should be adjusted for the size of the input). Is this similar to
@@ -41,7 +41,7 @@ On 12/11/2007, Robert Bradshaw <robertwb`@`math.washington.edu> wrote:
 >
 > - Robert
 >
-Bill Hart <goodwillhart`@`googlemail.com>
+Bill Hart <goodwillhart@googlemail.com>
 	
 	
 This proposal is absolutely correct. It is *exactly* what I would do,

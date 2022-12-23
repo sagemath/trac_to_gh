@@ -1,6 +1,6 @@
 # Issue 4144: [with patch, needs review] allow finite field elements in SBox constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4144
 
 Original creator: malb
 

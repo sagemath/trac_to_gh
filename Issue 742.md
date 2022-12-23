@@ -1,6 +1,6 @@
 # Issue 742: notebook timeout -- should be easy to set from command line and not timeout by *default*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/742
 
 Original creator: was
 

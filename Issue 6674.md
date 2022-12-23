@@ -1,6 +1,6 @@
 # Issue 6674: only use ASCII characters in patches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6674
 
 Original creator: mvngu
 
@@ -138,7 +138,7 @@ Here are the steps to see the warnings caused by patches or library files with n
  1. Extract the resulting binary and run it with `./sage`. You would see something similar to:
 
 ```
-[mvngu`@`sage sage-4.1.1.rc0-sage.math-x86_64-Linux]$ ./sage
+[mvngu@sage sage-4.1.1.rc0-sage.math-x86_64-Linux]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

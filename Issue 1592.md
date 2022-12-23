@@ -1,6 +1,6 @@
 # Issue 1592: jmol -- misc small changes; added minimal 3d parametric plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1592
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2426: inst.tex claims that OSX 10.5 is not supported
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2426
 
 Original creator: cwitty
 

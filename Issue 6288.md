@@ -1,6 +1,6 @@
 # Issue 6288: %lisp mode on the command line doesn't work.  why?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6288
 
 Original creator: was
 

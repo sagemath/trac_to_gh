@@ -1,6 +1,6 @@
 # Issue 7712: error in polynomial substitution with interval coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7712
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 9215: Bring doc coverage of plot/animate.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9215
 
 Original creator: slabbe
 

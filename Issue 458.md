@@ -1,6 +1,6 @@
 # Issue 458: plot.py: NameError: name 'p1' is not defined
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/458
 
 Original creator: mhansen
 

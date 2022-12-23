@@ -1,6 +1,6 @@
 # Issue 7589: bug in coercion and cyclotomic fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7589
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 4152: parametric_plot should take the variable range as (var, min, max) like plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4152
 
 Original creator: jason
 

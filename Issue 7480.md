@@ -1,6 +1,6 @@
 # Issue 7480: SageNB -- Move inline and <head> javascript from the templates to separate files (worksheet.js), etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7480
 
 Original creator: timdumol
 

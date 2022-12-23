@@ -1,6 +1,6 @@
 # Issue 9375: more documentation & doctests for BalancedTree, BarbellGraph, BubbleSortGraph, BullGraph, ChvatalGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9375
 
 Original creator: mvngu
 

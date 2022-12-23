@@ -1,6 +1,6 @@
 # Issue 8552: replace os.system calls in latex.py with appropriate replacements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8552
 
 Original creator: ddrake
 

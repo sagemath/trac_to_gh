@@ -1,6 +1,6 @@
 # Issue 5909: symbolics -- x.subs_expr({}) hangs sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5909
 
 Original creator: mabshoff
 
@@ -77,7 +77,7 @@ Comment by mabshoff created at 2009-05-20 23:50:09
 Fixed via the new symbolics at #5930:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.rc0$ ./sage
+mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: x.subs_expr({x:1})

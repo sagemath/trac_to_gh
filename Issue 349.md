@@ -1,6 +1,6 @@
 # Issue 349: Tab completion on Sage() object does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/349
 
 Original creator: yi
 

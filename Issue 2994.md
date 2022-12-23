@@ -1,6 +1,6 @@
 # Issue 2994: polybori.spkg: fix permission issue of the headers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2994
 
 Original creator: mabshoff
 
@@ -130,8 +130,8 @@ Comment by mabshoff created at 2008-04-22 04:25:27
 With the new spkg the permission issues are gone, i.e.
 
 ```
-mabshoff`@`modular:~$ cp -r /home2/sage/build/sage-3.0.rc1/local/ .
-mabshoff`@`modular:~$
+mabshoff@modular:~$ cp -r /home2/sage/build/sage-3.0.rc1/local/ .
+mabshoff@modular:~$
 ```
 
 The spkg is at

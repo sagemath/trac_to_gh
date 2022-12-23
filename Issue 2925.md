@@ -1,6 +1,6 @@
 # Issue 2925: [with spkg, needs review] gcc 4.3: givaro-3.2.10.rc3 is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2925
 
 Original creator: mabshoff
 

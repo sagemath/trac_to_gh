@@ -1,6 +1,6 @@
 # Issue 305: weird pickling bug in padics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/305
 
 Original creator: dmharvey
 

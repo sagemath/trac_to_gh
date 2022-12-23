@@ -1,6 +1,6 @@
 # Issue 1691: [with patch] old bug in pari.gen __setitem__ code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1691
 
 Original creator: craigcitro
 

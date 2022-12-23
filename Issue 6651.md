@@ -1,6 +1,6 @@
 # Issue 6651: Cannot create cell before text cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6651
 
 Original creator: hemmecke
 

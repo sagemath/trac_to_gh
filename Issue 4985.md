@@ -1,6 +1,6 @@
 # Issue 4985: Expand documentation for list_plot to point out the utility of zip
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4985
 
 Original creator: jason
 

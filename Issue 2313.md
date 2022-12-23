@@ -1,6 +1,6 @@
 # Issue 2313: old spkg's -- delete to save space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2313
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: mabshoff
 ```
 
 
-On Mon, Feb 25, 2008 at 9:40 PM, Jonathan Bober <jwbober`@`gmail.com> wrote:
+On Mon, Feb 25, 2008 at 9:40 PM, Jonathan Bober <jwbober@gmail.com> wrote:
 > 
 >  An old sage directory that I have that's been upgraded only a few times
 >  has an spkg directory that's got more than 850 megs. This was only
@@ -32,7 +32,7 @@ and rebuild all of Sage from scratch.
 If you use the following script you can shrink all the files to be empty, and everything
 will work fine:
 
-login`@`sage:~$ more /usr/local/bin/shrink 
+login@sage:~$ more /usr/local/bin/shrink 
 #!/usr/bin/env python
 
 import os

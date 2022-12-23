@@ -1,6 +1,6 @@
 # Issue 2730: matplotlib in Debian is (probably) too old
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2730
 
 Original creator: tabbott
 

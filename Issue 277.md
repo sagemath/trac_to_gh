@@ -1,6 +1,6 @@
 # Issue 277: Add generic_discrete_logarithm and order computation using Pollard's rho algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/277
 
 Original creator: ncalexan
 

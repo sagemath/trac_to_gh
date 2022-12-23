@@ -1,6 +1,6 @@
 # Issue 6587: Improve doc of partitions.conjugate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6587
 
 Original creator: nthiery
 

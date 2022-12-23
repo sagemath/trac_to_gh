@@ -1,6 +1,6 @@
 # Issue 3913: order function not defined for ideal classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3913
 
 Original creator: cremona
 

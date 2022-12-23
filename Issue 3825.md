@@ -1,6 +1,6 @@
 # Issue 3825: 2d-plots has no functionality for grid lines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3825
 
 Original creator: saliola
 
@@ -182,7 +182,7 @@ Comment by mabshoff created at 2008-08-15 06:21:14
 Unfortunately this patch needs to be rebased against 3.1.rc0:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.rc0/devel/sage$ patch -p1 < trac_3813-anakha-adaptive-plot-v3.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.rc0/devel/sage$ patch -p1 < trac_3813-anakha-adaptive-plot-v3.patch 
 patching file sage/plot/plot.py
 Hunk #1 succeeded at 3449 (offset 35 lines).
 Hunk #2 succeeded at 3504 (offset 35 lines).

@@ -1,6 +1,6 @@
 # Issue 8181: cannot coerce residue field back to p-adic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8181
 
 Original creator: dmharvey
 

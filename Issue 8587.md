@@ -1,6 +1,6 @@
 # Issue 8587: get rid of annoying warning in vector_space_dimension()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8587
 
 Original creator: malb
 

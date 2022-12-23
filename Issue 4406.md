@@ -1,6 +1,6 @@
 # Issue 4406: make polynomail truncation cpdef method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4406
 
 Original creator: robertwb
 

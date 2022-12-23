@@ -1,6 +1,6 @@
 # Issue 6729: notebook -- bug when input contains uniform leading space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6729
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  timdumol
 ```
 
 
-On Mon, Aug 10, 2009 at 8:43 AM, Kiran Kedlaya <kskedl`@`gmail.com> wrote:
+On Mon, Aug 10, 2009 at 8:43 AM, Kiran Kedlaya <kskedl@gmail.com> wrote:
 
 
     What would you expect from the following input into the notebook?
@@ -132,7 +132,7 @@ I'm surprised this doesn't set u to 5.  It might have something to do with the "
 >>> exec compile(ur'u=2+2\u000a  u=3+3', '','single')
 >>> print u
 4
->>> exec compile(ur'u=10\u000a  u=3+*fr%Acn `@`#!^2n2azzz3', '','single')
+>>> exec compile(ur'u=10\u000a  u=3+*fr%Acn @#!^2n2azzz3', '','single')
 >>> print u
 10
  

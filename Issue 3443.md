@@ -1,6 +1,6 @@
 # Issue 3443: notebook -- confirmation e-mail sent even when username already taken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3443
 
 Original creator: TimothyClemans
 

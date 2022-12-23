@@ -1,6 +1,6 @@
 # Issue 164: doctests dependence thing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/164
 
 Original creator: dmharvey
 

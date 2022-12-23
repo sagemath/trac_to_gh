@@ -1,6 +1,6 @@
 # Issue 3066: empty matrices: gram_schmidt() throws a NameError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3066
 
 Original creator: dfdeshom
 

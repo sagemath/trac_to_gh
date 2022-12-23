@@ -1,6 +1,6 @@
 # Issue 6783: Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6783
 
 Original creator: drkirkby
 
@@ -33,21 +33,21 @@ File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/line
 Expected:
     [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[1,(sqrt(3)*%i+1)/4],[1,-(sqrt(3)*%i-1)/4]]
 Got:
-    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[This is the Trac macro *[1,* that was inherited from the migration called with arguments (sqrt)](https://trac.sagemath.org/wiki/WikiMacros#[1,-macro),[This is the Trac macro *1,-* that was inherited from the migration called with arguments (sqrt)](https://trac.sagemath.org/wiki/WikiMacros#1,--macro)]]
+    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[[[1,(sqrt(3)*%i+1)/4]],[[1,-(sqrt(3)*%i-1)/4]]]]
 **********************************************************************
 File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst", line 291:
     sage: A.eigenvectors()
 Expected:
     [[[2,11],[1,2]],[0,0,1],[0,1,1/3]]
 Got:
-    [[[2,11],[1,2]],[This is the Trac macro *[0,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[0,0,1-macro),[This is the Trac macro *0,1,1/3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,1,1/3-macro)]]
+    [[[2,11],[1,2]],[[[0,0,1]],[[0,1,1/3]]]]
 **********************************************************************
 File "/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst", line 294:
     sage: A.eigenvectors()
 Expected:
      [[[-1,2],[2,1]],[0,1,-1],[0,0,1]]
 Got:
-    [[[-1,2],[2,1]],[This is the Trac macro *[0,1,-1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[0,1,-1-macro),[This is the Trac macro *0,0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0,1-macro)]]
+    [[[-1,2],[2,1]],[[[0,1,-1]],[[0,0,1]]]]
 **********************************************************************
 2 items had failures:
    1 of   5 in __main__.example_11

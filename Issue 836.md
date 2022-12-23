@@ -1,6 +1,6 @@
 # Issue 836: L-series dokchitser -- infinite recursion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/836
 
 Original creator: was
 

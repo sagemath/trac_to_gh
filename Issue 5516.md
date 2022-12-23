@@ -1,6 +1,6 @@
 # Issue 5516: gmp-mpir-0.9: build failure inside kvm 64 bit virtual machine
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5516
 
 Original creator: tornaria
 

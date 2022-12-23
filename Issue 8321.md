@@ -1,6 +1,6 @@
 # Issue 8321: numerical integration with arbitrary precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8321
 
 Original creator: burcin
 

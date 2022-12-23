@@ -1,6 +1,6 @@
 # Issue 8942: failing calculation with limit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8942
 
 Original creator: casamayou
 

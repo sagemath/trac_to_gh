@@ -1,6 +1,6 @@
 # Issue 211: speed up polynomial root finding
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/211
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On Tue, 23 Jan 2007 14:09:56 -0800, Kiran S. Kedlaya <kedlaya`@`mit.edu> wrote:
+On Tue, 23 Jan 2007 14:09:56 -0800, Kiran S. Kedlaya <kedlaya@mit.edu> wrote:
  
 > Here's a benchmark I just tried, which annoys me.
 >  

@@ -1,6 +1,6 @@
 # Issue 2448: [with patch, needs review] add docstrings, clean code in quadratic_forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2448
 
 Original creator: ncalexan
 

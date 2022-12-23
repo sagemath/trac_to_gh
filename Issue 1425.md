@@ -1,6 +1,6 @@
 # Issue 1425: wrong automatic simplification of pow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1425
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 3629: givaro-3.2.11 installs its own libgmpxx.{so,a}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3629
 
 Original creator: fbissey
 

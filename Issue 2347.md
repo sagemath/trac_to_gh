@@ -1,6 +1,6 @@
 # Issue 2347: Symbolic parsing uses eval()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2347
 
 Original creator: robertwb
 

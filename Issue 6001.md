@@ -1,6 +1,6 @@
 # Issue 6001: [with patch, needs work] tear out docstrings in the notebook into a new window
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6001
 
 Original creator: mpatel
 

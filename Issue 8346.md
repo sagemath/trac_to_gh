@@ -1,6 +1,6 @@
 # Issue 8346: sagenb: notebook feature request "rename a data file"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8346
 
 Original creator: was
 

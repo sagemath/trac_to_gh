@@ -1,6 +1,6 @@
 # Issue 471: requested features for trac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/471
 
 Original creator: mabshoff
 

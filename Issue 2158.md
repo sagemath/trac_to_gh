@@ -1,6 +1,6 @@
 # Issue 2158: Fix some typos in matrix/matrix2.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2158
 
 Original creator: jsp
 

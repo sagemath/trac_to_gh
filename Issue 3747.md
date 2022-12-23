@@ -1,6 +1,6 @@
 # Issue 3747: incorrect power in modular arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3747
 
 Original creator: dmharvey
 

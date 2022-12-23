@@ -1,6 +1,6 @@
 # Issue 2194: Elliptic curves over QQbar: point creation fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2194
 
 Original creator: cremona
 

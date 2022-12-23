@@ -1,6 +1,6 @@
 # Issue 9776: include more rings in random testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9777
 
 Original creator: niles
 

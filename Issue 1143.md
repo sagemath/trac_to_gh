@@ -1,6 +1,6 @@
 # Issue 1143: [with patch] improve nintegrate documentation in response to Paul Zimmerman's talk
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1143
 
 Original creator: was
 

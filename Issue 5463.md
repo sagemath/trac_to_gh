@@ -1,6 +1,6 @@
 # Issue 5463: [with patch, needs review] new section for tutorial about functions vs. expressions, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5463
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 4838: implement plotting of complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4838
 
 Original creator: AlexGhitza
 

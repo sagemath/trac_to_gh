@@ -1,6 +1,6 @@
 # Issue 9589: Doctest failures in nfactor_enumerable_word.py on 32-bit Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9589
 
 Original creator: mpatel
 
@@ -137,7 +137,7 @@ Comment by leif created at 2010-07-24 15:28:36
 
 
 ```sh
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ time ../../sage -t -long sage/combinat/words/
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ time ../../sage -t -long sage/combinat/words/
 sage -t -long "devel/sage-9590/sage/combinat/words/alphabet.py"
 	 [3.2 s]
 sage -t -long "devel/sage-9590/sage/combinat/words/__init__.py"
@@ -184,7 +184,7 @@ Total time for all tests: 105.0 seconds
 real	1m45.120s
 user	1m34.414s
 sys	0m9.101s
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ hg log | head -n 16
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ hg log | head -n 16
 changeset:   14743:474058a85f79
 tag:         tip
 user:        Alexandre Blondin Masse < alexandre.blondin.masse at gmail.com>
@@ -192,16 +192,16 @@ date:        Sat Jul 24 09:59:44 2010 -0400
 summary:     #9589 Doctest failure correction in nfactor_enumerable_word.py
 
 changeset:   14742:ebb1e171e138
-user:        Andrey Novoseltsev <novoselt`@`gmail.com>
+user:        Andrey Novoseltsev <novoselt@gmail.com>
 date:        Fri Jul 23 23:09:59 2010 -0600
 summary:     Trac 9590: Doctest failures in cone and toric_lattice_element.
 
 changeset:   14741:af5f40a73eda
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Wed Jul 21 20:13:55 2010 -0700
 summary:     4.5.2.alpha0
 
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ 
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ 
 ```
 
 (This is on Ubuntu 9.04 x86.)

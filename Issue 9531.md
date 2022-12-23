@@ -1,6 +1,6 @@
 # Issue 9531: spkg-check for gsl does not cause an exit on errors.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9531
 
 Original creator: drkirkby
 

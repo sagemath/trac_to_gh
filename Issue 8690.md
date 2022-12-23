@@ -1,6 +1,6 @@
 # Issue 8690: sage -pkg should add checksums as in #329
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8690
 
 Original creator: ddrake
 

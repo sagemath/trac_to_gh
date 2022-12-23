@@ -1,6 +1,6 @@
 # Issue 1857: examples of parametric surfaces in 3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1857
 
 Original creator: wdj
 

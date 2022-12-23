@@ -1,6 +1,6 @@
 # Issue 7454: Make comparison of character tables sensible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7454
 
 Original creator: kcrisman
 

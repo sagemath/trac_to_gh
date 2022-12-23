@@ -1,6 +1,6 @@
 # Issue 9448: make it clearer not to edit sources in site-packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9448
 
 Original creator: wjp
 

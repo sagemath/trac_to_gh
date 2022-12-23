@@ -1,6 +1,6 @@
 # Issue 3765: make it so "sage -br" does the cythonization in parallel using pyprocessing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3765
 
 Original creator: was
 

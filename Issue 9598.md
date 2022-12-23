@@ -1,6 +1,6 @@
 # Issue 9598: Make cvxopt be able to use GLPK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9598
 
 Original creator: dunfield
 
@@ -269,7 +269,7 @@ You do have access to a Solaris machine. In fact, you have a created a directory
 
 
 ```
-kirkby`@`t2:[/scratch] $ ls /scratch
+kirkby@t2:[/scratch] $ ls /scratch
 dima      dreyer    gray      juanjo2   mpatel    ncohen    rishi     sergey    wstein
 drake     ghitza    jason     mhansen   mvngu     palmieri  scons     sking
 ```

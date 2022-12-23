@@ -1,6 +1,6 @@
 # Issue 1922: change and update lprint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1922
 
 Original creator: jason
 

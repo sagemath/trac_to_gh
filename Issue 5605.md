@@ -1,6 +1,6 @@
 # Issue 5605: Construct Color objects using hsl and hsv values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5605
 
 Original creator: jason
 
@@ -79,7 +79,7 @@ Close as fixed:
 
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: Color(0.5, 1.0, 1, space='hsv')

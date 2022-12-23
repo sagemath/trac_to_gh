@@ -1,6 +1,6 @@
 # Issue 6532: R packages installation problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6532
 
 Original creator: wdj
 
@@ -35,13 +35,13 @@ sage: hg_sage.apply("http://www.sagetrac.org/sage_trac/raw-attachment/ticket/637
 <applying the above patch>
 sage: exit
 Exiting SAGE (CPU time 0m0.09s, Wall time 0m18.86s).
-[mvngu`@`sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main
+[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main
 <now install cluster>
 sage: r.install_packages("cluster")
 <now restart Sage>
 sage: exit
 Exiting SAGE (CPU time 0m0.50s, Wall time 0m22.15s).
-[mvngu`@`sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main
+[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main
 <now import the package cluster>
 sage: r.library("cluster")
 ---------------------------------------------------------------------------
@@ -102,7 +102,7 @@ I just modified the R spkg-install thusly:
 diff -r b73bca59a75a spkg-install 
 --- a/spkg-install      Sun Sep 20 18:25:26 2009 -0700 
 +++ b/spkg-install      Mon Nov 23 20:35:29 2009 -0600 
-`@``@` -77,19 +77,17 `@``@` 
+@@ -77,19 +77,17 @@ 
   CFLAGS="-I$SAGE_LOCAL/include -L$SAGE_LOCAL/lib/ "$CFLAGS; export CFLAGS 
   LDFLAGS="-L$SAGE_LOCAL/lib/ "$LDFLAGS; export LDFLAGS 
 -# do not build recommended packages for now, for speed. 

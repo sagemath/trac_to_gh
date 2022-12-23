@@ -1,6 +1,6 @@
 # Issue 9709: Crypto lattice basis generator (update)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9709
 
 Original creator: rlindner
 

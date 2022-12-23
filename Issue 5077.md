@@ -1,6 +1,6 @@
 # Issue 5077: bug in fibonacci function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5077
 
 Original creator: was
 

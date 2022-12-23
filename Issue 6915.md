@@ -1,6 +1,6 @@
 # Issue 6915: Getting rays from a polytope fails.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6915
 
 Original creator: sbarthelemy
 

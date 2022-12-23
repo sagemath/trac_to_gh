@@ -1,6 +1,6 @@
 # Issue 62: (sparse) boolean matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/62
 
 Original creator: malb
 

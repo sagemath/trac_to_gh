@@ -1,6 +1,6 @@
 # Issue 4071: Fix issues in the lisp interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4071
 
 Original creator: mhansen
 

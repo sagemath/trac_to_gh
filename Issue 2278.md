@@ -1,6 +1,6 @@
 # Issue 2278: notebook -- when uploading a new worksheet be sure to set the permissions on any directories that are created to be readable by all
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2278
 
 Original creator: was
 
@@ -20,9 +20,9 @@ Regards,
 Andy
 
 
-On Feb 22, 9:45 am, "William Stein" <wst...`@`gmail.com> wrote:
+On Feb 22, 9:45 am, "William Stein" <wst...@gmail.com> wrote:
 - Hide quoted text -
-> On Thu, Feb 21, 2008 at 9:09 PM, AprèsTech <andyunr...`@`gmail.com> wrote:
+> On Thu, Feb 21, 2008 at 9:09 PM, AprèsTech <andyunr...@gmail.com> wrote:
 >
 > >  Hello,
 >

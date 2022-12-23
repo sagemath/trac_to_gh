@@ -1,6 +1,6 @@
 # Issue 2906: notebook -- there is a "sagetex" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2906
 
 Original creator: was
 

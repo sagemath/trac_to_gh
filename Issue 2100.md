@@ -1,6 +1,6 @@
 # Issue 2100: sensible defaults for aspect ratio
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2100
 
 Original creator: jason
 
@@ -60,8 +60,8 @@ Interestingly, from the above list, it seems like the golden ratio is only used 
 
 Comment by jason created at 2010-09-29 22:00:12
 
-|                                 |                               |                                                                                                              |             |
-|---------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------|-------------|
+|                                 |                               |                                                                                                                                                         |             |
+|---------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Matplotlib aspect ratio setting | Matplotlib adjustable setting | Mathematica [AspectRatio](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AAspectRatio) setting | Explanation |
 | 'auto' | doesn't seem to matter | Full | Make the current data limits fill the available sized box |
 | 'equal' or 1 | 'box' | Automatic | Make each pixel be square (aspect ratio 1) |

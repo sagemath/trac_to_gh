@@ -1,6 +1,6 @@
 # Issue 8166: Expose max_weight_matching from NetworkX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8166
 
 Original creator: ncohen
 

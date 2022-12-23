@@ -1,6 +1,6 @@
 # Issue 8636: iconv -- put the "do not build check" in the right place
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8636
 
 Original creator: was
 

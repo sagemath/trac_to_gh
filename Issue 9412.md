@@ -1,6 +1,6 @@
 # Issue 9412: some random crap coming from zodb *sometimes*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9412
 
 Original creator: rlm
 
@@ -71,7 +71,7 @@ On My Ultra 27, these are the order packages are built (ignore R and Maxima, as 
 
 
 ```
-drkirkby`@`hawk:~/SAGE-4.5.alpha1/spkg$ ls -Etr installed
+drkirkby@hawk:~/SAGE-4.5.alpha1/spkg$ ls -Etr installed
 total 187
 -rw-r--r--   1 drkirkby staff          0 2010-07-02 10:52:57.158697583 +0100 dir-0.1
 -rw-r--r--   1 drkirkby staff        146 2010-07-02 10:52:57.529261285 +0100 fortran-20100629

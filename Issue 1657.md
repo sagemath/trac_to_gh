@@ -1,6 +1,6 @@
 # Issue 1657: make a build-from-source version of jmol spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1657
 
 Original creator: was
 
@@ -12,7 +12,7 @@ This is very important.
 
 
 ```
-On Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb`@`math.washington.edu> wrote:
+On Jan 2, 2008 11:23 AM, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > In principle, all one would need is javac (and the java runtime
 > binaries). If they're going to be using java at all, they'll have that.
 >

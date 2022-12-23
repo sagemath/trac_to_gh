@@ -1,6 +1,6 @@
 # Issue 4376: Implement conversion of power series over more rings (e.g. GF(p)) to pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4376
 
 Original creator: cremona
 

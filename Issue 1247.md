@@ -1,6 +1,6 @@
 # Issue 1247: cremona-20071116.p0.spkg fails to build on Arch linux, 32bit linux, gcc-4.2.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1247
 
 Original creator: mabshoff
 

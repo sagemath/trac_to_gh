@@ -1,6 +1,6 @@
 # Issue 6000: Sets enumerated by exploring a search space with a (lazy) tree or graph structure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6000
 
 Original creator: nthiery
 

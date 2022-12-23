@@ -1,6 +1,6 @@
 # Issue 6066: constructing Sage graphs is slow compared to NetworkX graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6066
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6934: Fix eigenvectors (and a lot of other stuff) for symbolic matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6934
 
 Original creator: kcrisman
 

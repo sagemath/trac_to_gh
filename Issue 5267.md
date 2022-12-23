@@ -1,6 +1,6 @@
 # Issue 5267: bug in plotting the zero locus of an ideal in an mpoly ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5267
 
 Original creator: AlexGhitza
 

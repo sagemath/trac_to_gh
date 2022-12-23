@@ -1,6 +1,6 @@
 # Issue 3031: [with patch] Add zeta_function method for schemes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3031
 
 Original creator: kedlaya
 

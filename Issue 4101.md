@@ -1,6 +1,6 @@
 # Issue 4101: [with spkg, needs review] cpdef horribly broken in last Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4101
 
 Original creator: robertwb
 

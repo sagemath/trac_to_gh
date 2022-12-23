@@ -1,6 +1,6 @@
 # Issue 3382: Compute Newton polytopes without polymake
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3382
 
 Original creator: mhampton
 

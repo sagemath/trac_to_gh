@@ -1,6 +1,6 @@
 # Issue 7197: basic statistics functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7197
 
 Original creator: amhou
 

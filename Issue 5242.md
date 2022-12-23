@@ -1,6 +1,6 @@
 # Issue 5242: [with patch, needs review] generic_power can now handle semi-groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5242
 
 Original creator: hivert
 

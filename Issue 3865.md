@@ -1,6 +1,6 @@
 # Issue 3865: Bug in conversion from gp elements to p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3865
 
 Original creator: craigcitro
 

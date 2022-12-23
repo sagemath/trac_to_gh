@@ -1,6 +1,6 @@
 # Issue 2269: Many classes abuse has_coerce_map
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2269
 
 Original creator: gfurnish
 

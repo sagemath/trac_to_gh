@@ -1,6 +1,6 @@
 # Issue 5195: Multivariate factorization raises NotImplementedError in sage-3.3.alpha3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5195
 
 Original creator: SimonKing
 

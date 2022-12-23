@@ -1,6 +1,6 @@
 # Issue 9955: latex(-1/2 * polynom) broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9956
 
 Original creator: schilly
 

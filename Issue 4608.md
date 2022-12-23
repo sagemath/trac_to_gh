@@ -1,6 +1,6 @@
 # Issue 4608: roots method broken for root system lattices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4608
 
 Original creator: saliola
 
@@ -91,7 +91,7 @@ Comment by mvngu created at 2010-04-30 16:11:42
 It works now:
 
 ```sh
-[mvngu`@`sage graphs]$ sage
+[mvngu@sage graphs]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: R = RootSystem(['A',2])

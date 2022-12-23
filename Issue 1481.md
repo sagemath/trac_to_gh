@@ -1,6 +1,6 @@
 # Issue 1481: showing a matrix plot blows up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1481
 
 Original creator: jason
 

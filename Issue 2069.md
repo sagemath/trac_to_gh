@@ -1,6 +1,6 @@
 # Issue 2069: change copyright year on http://sagemath.org/pub.html (trivial)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2069
 
 Original creator: AlexGhitza
 

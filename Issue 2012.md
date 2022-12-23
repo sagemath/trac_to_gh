@@ -1,6 +1,6 @@
 # Issue 2012: crap -- jmol contains some os x files that shouldn't be there
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2012
 
 Original creator: was
 

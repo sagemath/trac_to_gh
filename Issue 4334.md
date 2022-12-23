@@ -1,6 +1,6 @@
 # Issue 4334: [with spkg, needs review] Updated experimental Mayavi2 spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4334
 
 Original creator: jsp
 
@@ -62,7 +62,7 @@ Just to move this toward being optional (not experimental), some comments.
 1. The spkg-install is
 
 ```
-was`@`sage:~/tmp/mayavi_2.2.1$ more spkg-install 
+was@sage:~/tmp/mayavi_2.2.1$ more spkg-install 
 #!/bin/sh
 
 sage -i wxPython-2.8.7.1
@@ -93,7 +93,7 @@ Just see any SPKG.txt that is standard for the right format.
 3. spkg-install and SPKG.txt should be in an .hg repo:
 
 ```
-was`@`sage:~/tmp/mayavi_2.2.1$ ls -a
+was@sage:~/tmp/mayavi_2.2.1$ ls -a
 .  ..  spkg-install  SPKG.txt  src
 ```
 

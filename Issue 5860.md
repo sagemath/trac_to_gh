@@ -1,6 +1,6 @@
 # Issue 5860: delete sage/catalogue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5860
 
 Original creator: was
 

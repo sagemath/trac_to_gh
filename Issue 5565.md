@@ -1,6 +1,6 @@
 # Issue 5565: sage crashes because of too small stacksize
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5565
 
 Original creator: zimmerma
 
@@ -28,7 +28,7 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 
-/usr/local/sage-3.4-core2/sage/local/bin/sage-sage: line 197:   816 Segmentation fault      sage-ipython "$`@`" -i
+/usr/local/sage-3.4-core2/sage/local/bin/sage-sage: line 197:   816 Segmentation fault      sage-ipython "$@" -i
 ```
 
 In addition there is a typo in the above error message, where

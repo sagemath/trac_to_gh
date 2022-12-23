@@ -1,6 +1,6 @@
 # Issue 1297: [with spkg] make numpy use atlas by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1297
 
 Original creator: jkantor
 

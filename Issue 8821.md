@@ -1,6 +1,6 @@
 # Issue 8821: Adding a section on coercion to the tutorial (guided tour)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8821
 
 Original creator: SimonKing
 

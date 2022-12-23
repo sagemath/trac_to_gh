@@ -1,6 +1,6 @@
 # Issue 1801: [with spkg] Update cython package to 0.9.6.11
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1801
 
 Original creator: robertwb
 

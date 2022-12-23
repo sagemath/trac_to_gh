@@ -1,6 +1,6 @@
 # Issue 1214: error in polynomial ideal membership testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1214
 
 Original creator: mhansen
 

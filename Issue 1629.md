@@ -1,6 +1,6 @@
 # Issue 1629: update numpy to 1.0.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1629
 
 Original creator: mabshoff
 

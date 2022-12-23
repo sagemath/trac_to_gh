@@ -1,6 +1,6 @@
 # Issue 8519: Add a set of Positive Integer with categories (and factor the code with NonNegativeInteger)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8519
 
 Original creator: nborie
 

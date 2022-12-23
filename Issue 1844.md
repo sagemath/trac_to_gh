@@ -1,6 +1,6 @@
 # Issue 1844: [with bundle] Get doctest coverage in sage/modular/modform up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1844
 
 Original creator: craigcitro
 

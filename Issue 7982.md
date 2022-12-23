@@ -1,6 +1,6 @@
 # Issue 7982: sage_fortran on Open Solaris 64 bit is the wrong thing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7982
 
 Original creator: jsp
 
@@ -28,10 +28,10 @@ For now I went for 2) and edited the file by hand.
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran 
+jaap@opensolaris:~/Downloads/sage-4.3.1.rc0$ cat local/bin/sage_fortran 
 #!/bin/sh 
 
-/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $`@`
+/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/bin/gfortran -m64 -fPIC $@
 
 ```
 
@@ -105,16 +105,16 @@ First, I delete any library, and set SAGE_FORTRAN_LIB correctly:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ rm local/lib/libgfortran.so
+drkirkby@hawk:~/sage-4.3.1$ rm local/lib/libgfortran.so
 rm: local/lib/libgfortran.so: No such file or directory
-drkirkby`@`hawk:~/sage-4.3.1$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libgfortran.so
+drkirkby@hawk:~/sage-4.3.1$ export SAGE_FORTRAN_LIB=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker/lib/amd64/libgfortran.so
 ```
 
 
 Now install the package
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ ./sage -f fortran-20100118.p0
+drkirkby@hawk:~/sage-4.3.1$ ./sage -f fortran-20100118.p0
 Force installing fortran-20100118.p0
 Calling sage-spkg on fortran-20100118.p0
 <SNIP>
@@ -132,7 +132,7 @@ It claims to have built, yet there is still a 32-bit library copied.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/libgfortran.so
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgfortran.so
 local/lib/libgfortran.so:	ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped
 ```
 
@@ -140,11 +140,11 @@ There is no 64-bit version in any of the subdirectories either, though it needs 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/64/libgfortran.so
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/64/libgfortran.so
 local/lib/64/libgfortran.so:	cannot open: No such file or directory
-drkirkby`@`hawk:~/sage-4.3.1$ file local/lib/amd64/libgfortran.so
+drkirkby@hawk:~/sage-4.3.1$ file local/lib/amd64/libgfortran.so
 local/lib/amd64/libgfortran.so:	cannot open: No such file or directory
-drkirkby`@`hawk:~/sage-4.3.1$ 
+drkirkby@hawk:~/sage-4.3.1$ 
 ```
 
 
@@ -179,10 +179,10 @@ Made a new spkg:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran 
+jaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran 
 #!/bin/sh 
 
-/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $`@`
+/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@
 
 ```
 
@@ -305,9 +305,9 @@ The following seems to work
 
 ```python
     if OS == "sunos" and os.environ.get("SAGE64") == "yes":
-            f.write("%s -m64 -fPIC $`@`"%name)
+            f.write("%s -m64 -fPIC $@"%name)
     else:
-        f.write("%s -fPIC $`@`"%name)
+        f.write("%s -fPIC $@"%name)
 
 ```
 
@@ -325,7 +325,7 @@ drkirkby`@`hawk:~/2/sage-4.5.alpha0$ cat local/bin/sage_fortran
 
 ```/bin/sh 
 
-/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $`@`
+/usr/local/gcc-4.4.4-multilib/bin/gfortran -m64 -fPIC $@
 ```
 
 

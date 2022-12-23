@@ -1,6 +1,6 @@
 # Issue 2203: Integrate concorde in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2203
 
 Original creator: jason
 
@@ -352,26 +352,26 @@ I got a hunk failure when applying the patch on top of #8364 and #8166 in that o
 
 
 ```
-[mvngu`@`sage sage-main]$ hg tip
+[mvngu@sage sage-main]$ hg tip
 changeset:   14321:1451c00a8d44
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Wed May 19 00:55:29 2010 -0700
 summary:     4.4.2
 
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush 
 adding trac_8364.patch to series file
 applying trac_8364.patch
 now at: trac_8364.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364-reviewer.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364-reviewer.patch && hg qpush 
 adding trac_8364-reviewer.patch to series file
 applying trac_8364-reviewer.patch
 now at: trac_8364-reviewer.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8166/trac_8166-rebase.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8166/trac_8166-rebase.patch && hg qpush 
 adding trac_8166-rebase.patch to series file
 applying trac_8166-rebase.patch
 now at: trac_8166-rebase.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/2203/trac_2203.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/2203/trac_2203.patch && hg qpush 
 adding trac_2203.patch to series file
 applying trac_2203.patch
 patching file sage/graphs/generic_graph.py

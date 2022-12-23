@@ -1,6 +1,6 @@
 # Issue 6680: [with patch, needs review]  (uses Linear Programming)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6680
 
 Original creator: ncohen
 

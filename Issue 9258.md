@@ -1,6 +1,6 @@
 # Issue 9258: problem with converting FriCAS domains to Sage objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9258
 
 Original creator: awebb
 

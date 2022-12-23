@@ -1,6 +1,6 @@
 # Issue 6773: Freetype hides warning messages by sending output to /dev/null
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6773
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 3316: Fix a bug and improve documentation in jordan_form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3316
 
 Original creator: pdenapo
 

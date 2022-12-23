@@ -1,6 +1,6 @@
 # Issue 3488: typos in sage-clone script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3488
 
 Original creator: dmharvey
 

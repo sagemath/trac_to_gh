@@ -1,6 +1,6 @@
 # Issue 6261: Add multiplicative order for matrices over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6261
 
 Original creator: ylchapuy
 

@@ -1,6 +1,6 @@
 # Issue 1084: invalid use of ring notation gives bizarre post-preparser syntax error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1084
 
 Original creator: cwitty
 

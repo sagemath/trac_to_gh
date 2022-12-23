@@ -1,6 +1,6 @@
 # Issue 5105: behaviour of the norm function in the p-adic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5105
 
 Original creator: ljpk
 

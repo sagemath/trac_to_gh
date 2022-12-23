@@ -1,6 +1,6 @@
 # Issue 9715: Failing doctest in even_hole_free
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9715
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 9260: missing pointer in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9260
 
 Original creator: zimmerma
 

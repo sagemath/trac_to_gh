@@ -1,6 +1,6 @@
 # Issue 2274: guava->python, 1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2274
 
 Original creator: wdj
 

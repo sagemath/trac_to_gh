@@ -1,6 +1,6 @@
 # Issue 5913: implement graph coloring in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5913
 
 Original creator: was
 

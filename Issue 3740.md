@@ -1,6 +1,6 @@
 # Issue 3740: sage-3.0.6 blocker -- pickle jar -- exactly one failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3740
 
 Original creator: was
 
@@ -57,7 +57,7 @@ Presumably the same bug:
 ```
 sage: C = CrystalOfLetters(['A',3])
 sage: v = C.list()[0]
-sage: T = TensorProductOfCrystals(C, C, generators=[This is the Trac macro *v,v* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#v,v-macro))
+sage: T = TensorProductOfCrystals(C, C, generators=[[v,v]])
 sage: T == loads(dumps(T))
 ```
 
@@ -77,17 +77,17 @@ This is no longer valid
 ----------------------------------------------------------------------
 sage: sage: C = CrystalOfLetters(['A',3])
 sage: sage: v = C.list()[0]
-sage: sage: T = TensorProductOfCrystals(C, C, generators=[This is the Trac macro *v,v* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#v,v-macro))
+sage: sage: T = TensorProductOfCrystals(C, C, generators=[[v,v]])
 sage: sage: T == loads(dumps(T))
 True
 sage: sage: C = CrystalOfLetters(['A',3])
 sage: sage: v = C.list()[0]
-sage: sage: T = TensorProductOfCrystals(C, C, generators=[This is the Trac macro *v,v* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#v,v-macro))
+sage: sage: T = TensorProductOfCrystals(C, C, generators=[[v,v]])
 sage: sage: T == loads(dumps(T))
 True
 sage: sage: C = CrystalOfLetters(['A',3])
 sage: sage: v = C.list()[0]
-sage: sage: T = TensorProductOfCrystals(C, C, generators=[This is the Trac macro *v,v* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#v,v-macro))
+sage: sage: T = TensorProductOfCrystals(C, C, generators=[[v,v]])
 sage: sage: T == loads(dumps(T))
 True
 ```

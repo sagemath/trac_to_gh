@@ -1,6 +1,6 @@
 # Issue 4788: [with patch, needs review] Dsage doctest fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4788
 
 Original creator: gfurnish
 

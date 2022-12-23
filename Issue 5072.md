@@ -1,6 +1,6 @@
 # Issue 5072: segfault in libsingular gcd when base rings aren't identical
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5072
 
 Original creator: was
 

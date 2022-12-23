@@ -1,6 +1,6 @@
 # Issue 4200: Update numpy to 1.2.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4200
 
 Original creator: jason
 

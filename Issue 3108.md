@@ -1,6 +1,6 @@
 # Issue 3108: implement additive_order for elliptic curve points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3108
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1886: [with patch - actually tuning tarball] add atlas pretuning for AMD Athlon MP processors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1886
 
 Original creator: was
 

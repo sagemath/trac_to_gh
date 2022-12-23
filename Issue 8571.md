@@ -1,6 +1,6 @@
 # Issue 8571: Fix the documentation of abstract methods.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8571
 
 Original creator: hivert
 

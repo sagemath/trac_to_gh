@@ -1,6 +1,6 @@
 # Issue 399: PHCpack interface improvement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/399
 
 Original creator: mhampton
 

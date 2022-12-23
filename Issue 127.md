@@ -1,6 +1,6 @@
 # Issue 127: opera -- percent characters get mangled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/127
 
 Original creator: was
 
@@ -17,11 +17,11 @@ of percents by opera that is causing trouble.  We'll add
 this bug to the bug tracker, so it'll be a high priority to fix.
 
 
-On 10/13/06, Tang Hai Tuan Minh <phohongtuyet`@`gmail.com> wrote:
+On 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:
 > On Friday 13 October 2006 12:29, William Stein wrote:
 > > On Fri, 13 Oct 2006 07:08:26 -0700, Tang Hai Tuan Minh
 > >
-> > <phohongtuyet`@`gmail.com> wrote:
+> > <phohongtuyet@gmail.com> wrote:
 > > > Hi,
 > > >
 > > > It seems like all the commands that started with the % escape character

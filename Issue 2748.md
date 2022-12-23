@@ -1,6 +1,6 @@
 # Issue 2748: Permutation constructor does not accept lists of tuples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2748
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 9335: linear independence of points on an elliptic curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9335
 
 Original creator: jen
 

@@ -1,6 +1,6 @@
 # Issue 8348: find_root only works in fixed (double) precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8348
 
 Original creator: zimmerma
 

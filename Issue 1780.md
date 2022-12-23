@@ -1,6 +1,6 @@
 # Issue 1780: [with spkg] add 64 bit MacIntel build support to mpfr, fix stack smashing issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1780
 
 Original creator: mabshoff
 

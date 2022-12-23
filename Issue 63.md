@@ -1,6 +1,6 @@
 # Issue 63: in safari notebook, tab key inserts tab AND moves to next cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/63
 
 Original creator: dmharvey
 

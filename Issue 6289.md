@@ -1,6 +1,6 @@
 # Issue 6289: [with patch, needs review] minor ref manual issue with calculus stuff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6289
 
 Original creator: jhpalmieri
 

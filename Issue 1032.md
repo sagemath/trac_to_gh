@@ -1,6 +1,6 @@
 # Issue 1032: [with patch] Latex'ing variable names is more robust and consistent.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1032
 
 Original creator: jbmohler
 

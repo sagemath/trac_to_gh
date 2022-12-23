@@ -1,6 +1,6 @@
 # Issue 3450: notebook -- move HTML code for registration page to template
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3450
 
 Original creator: TimothyClemans
 

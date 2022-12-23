@@ -1,6 +1,6 @@
 # Issue 7329: Make integration of vectors work (component-wise)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7329
 
 Original creator: jason
 

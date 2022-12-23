@@ -1,6 +1,6 @@
 # Issue 2287: error installing rubiks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2287
 
 Original creator: yi
 

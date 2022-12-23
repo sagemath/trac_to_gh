@@ -1,6 +1,6 @@
 # Issue 6657: EllipticCurve(..., j=...) shouldn't ignore field argument if given.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6657
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8108: Expand the Sage Developer Guide for newcomers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8108
 
 Original creator: rbeezer
 

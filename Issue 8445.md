@@ -1,6 +1,6 @@
 # Issue 8445: sh: kpsewhich: not found -  Sage 4.3.4.alpha0 on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8445
 
 Original creator: drkirkby
 

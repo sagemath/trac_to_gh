@@ -1,6 +1,6 @@
 # Issue 1704: [with patch] replace _DivPolyContext by _multiply_point
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1704
 
 Original creator: dmharvey
 

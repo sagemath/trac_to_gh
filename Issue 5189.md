@@ -1,6 +1,6 @@
 # Issue 5189: notebook -- now possible to delete all computation cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5189
 
 Original creator: TimothyClemans
 

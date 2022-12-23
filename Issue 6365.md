@@ -1,6 +1,6 @@
 # Issue 6365: bug in constructing extensions of finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6365
 
 Original creator: was
 

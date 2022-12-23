@@ -1,6 +1,6 @@
 # Issue 5334: libgcrypt.spkg: Disable padlock again unconditionally
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5334
 
 Original creator: mabshoff
 

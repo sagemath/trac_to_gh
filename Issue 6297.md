@@ -1,6 +1,6 @@
 # Issue 6297: fix LaTeX formatting in sage/schemes/elliptic_curves/period_lattice.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6297
 
 Original creator: mvngu
 

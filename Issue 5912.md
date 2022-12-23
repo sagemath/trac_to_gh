@@ -1,6 +1,6 @@
 # Issue 5912: %fortran mode is broken in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5912
 
 Original creator: was
 

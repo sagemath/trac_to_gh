@@ -1,6 +1,6 @@
 # Issue 8831: fail to build PDF version of reference manual in Sage 4.4.1.alpha2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8831
 
 Original creator: mvngu
 

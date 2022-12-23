@@ -1,6 +1,6 @@
 # Issue 1876: minor typo in reference manual section 8.1.1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1876
 
 Original creator: bober
 

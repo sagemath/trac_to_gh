@@ -1,6 +1,6 @@
 # Issue 7066: sympow ignores CC and uses gcc even when CC is set to Sun's compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7066
 
 Original creator: drkirkby
 

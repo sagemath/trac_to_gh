@@ -1,6 +1,6 @@
 # Issue 772: Interface to QEPCAD for quantifier elimination and solving systems of inequalities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/772
 
 Original creator: jason
 
@@ -418,7 +418,7 @@ Comment by mabshoff created at 2008-08-22 18:37:00
 Even for experimental this spkg is not ready:
 
 ```
-mabshoff`@`sage:~/foo/qepcad-1.50$ hg status
+mabshoff@sage:~/foo/qepcad-1.50$ hg status
 ! patches/cached/AFUPHIBRI.c.19
 ! patches/cached/AFUPHIBRI.c.19.filename
 ! patches/cached/ANHI.c.20

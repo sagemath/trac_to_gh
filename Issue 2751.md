@@ -1,6 +1,6 @@
 # Issue 2751: [with patch, needs review] multivariate polynomials i_homogeneous
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2751
 
 Original creator: malb
 
@@ -86,9 +86,9 @@ Comment by mabshoff created at 2008-04-04 17:06:18
 The do apply cleanly [the second patch with slight offsets] to my tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous.patch
 patching file sage/rings/polynomial/multi_polynomial.pyx
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous_addon.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous_addon.patch
 patching file sage/rings/polynomial/multi_polynomial.pyx
 patching file sage/rings/polynomial/pbori.pyx
 Hunk #1 succeeded at 1432 (offset -120 lines).

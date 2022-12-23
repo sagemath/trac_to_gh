@@ -1,6 +1,6 @@
 # Issue 2219: docs for root_field should say the polynomial needs to be irreducible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2219
 
 Original creator: jason
 

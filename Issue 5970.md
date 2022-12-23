@@ -1,6 +1,6 @@
 # Issue 5970: [with patch, needs review] Weak references in Polynomial Ring cache
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5970
 
 Original creator: SimonKing
 

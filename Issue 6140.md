@@ -1,6 +1,6 @@
 # Issue 6140: Upgrade numpy to 1.3.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6140
 
 Original creator: jason
 

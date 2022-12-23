@@ -1,6 +1,6 @@
 # Issue 6890: No help for is_SymbolicVariable ?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6890
 
 Original creator: kcrisman
 

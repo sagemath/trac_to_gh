@@ -1,6 +1,6 @@
 # Issue 2235: doctest issue -- combining # long and # 32-bit / # 64-bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2235
 
 Original creator: craigcitro
 

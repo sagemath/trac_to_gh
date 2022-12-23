@@ -1,6 +1,6 @@
 # Issue 71: Secret transation of .sage to .py causes confusion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/71
 
 Original creator: Justin Walker (justin@mac.com)
 

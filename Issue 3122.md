@@ -1,6 +1,6 @@
 # Issue 3122: after make install, sage tries to write in /usr/local
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3122
 
 Original creator: zimmerma
 
@@ -12,7 +12,7 @@ I compiled sage-3.0 on the machines of my lab, and installed it under /usr/local
 I am the Unix owner of the files under /usr/local/sage-3.0. When I run sage myself, it is ok. However, when other people in my lab run it, they get:
 
 ```
-< bissogae`@`hector:~$ sage
+< bissogae@hector:~$ sage
 < ----------------------------------------------------------------------
 < | SAGE Version 3.0, Release Date: 2008-04-23                         |
 < | Type notebook() for the GUI, and license() for information.        |

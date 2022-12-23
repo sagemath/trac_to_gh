@@ -1,6 +1,6 @@
 # Issue 8326: Sphinx warnings about posets and poset_example
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8326
 
 Original creator: mpatel
 

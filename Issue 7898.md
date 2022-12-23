@@ -1,6 +1,6 @@
 # Issue 7898: Change common variables to names in singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7898
 
 Original creator: drkirkby
 
@@ -99,7 +99,7 @@ Comment by rlm created at 2010-01-14 06:36:28
 Sage did not start after building this spkg on boxen:
 
 ```
-rlmill`@`boxen:/scratch/rlm/sage-4.3.1.rc0/devel/sage-main$ ../../sage
+rlmill@boxen:/scratch/rlm/sage-4.3.1.rc0/devel/sage-main$ ../../sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

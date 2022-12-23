@@ -1,6 +1,6 @@
 # Issue 8768: gnutls-2.2.1.p5 doesn't build on Solaris 10 x86 (fulvia) with GCC-4.5.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8768
 
 Original creator: was
 
@@ -193,7 +193,7 @@ For the record, this is how gcc 4.4.4 was configured by me:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2/spkg$ gcc -v
+drkirkby@hawk:~/sage-4.4.2/spkg$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -241,7 +241,7 @@ the problem has gone away. Note, the default compiler on fulvia is not configure
 
 
 ```
-64 drkirkby`@`fulvia:[~/fulvia/32/sage-4.5.1] $ gcc -v
+64 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-SunOS-core2-sun-ld/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper
@@ -256,8 +256,8 @@ An inspection of the log shows gnutls installed OK.
 
 
 ```
-64 drkirkby`@`fulvia:[~/fulvia/32/sage-4.5.1] $ tail -30  spkg/logs/gnutls-2.2.1.p5.log
-  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en`@`quot.header en`@`boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+64 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ tail -30  spkg/logs/gnutls-2.2.1.p5.log
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
     ../build-aux/install-sh -c -m 644 ./$file \
 		    /home/drkirkby/fulvia/32/sage-4.5.1/local/share/gettext/po/$file; \
   done; \

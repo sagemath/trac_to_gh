@@ -1,6 +1,6 @@
 # Issue 4599: sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing "#optional"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4599
 
 Original creator: mabshoff
 
@@ -55,7 +55,7 @@ The patch worked for me:
 
 
 ```
-[jaap`@`paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+[jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 	 [86.9 s]
  

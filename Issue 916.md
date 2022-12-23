@@ -1,6 +1,6 @@
 # Issue 916: [with patch] remove structure.sequence._combinations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/916
 
 Original creator: malb
 

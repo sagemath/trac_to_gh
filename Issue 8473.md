@@ -1,6 +1,6 @@
 # Issue 8473: Make .sws files clickable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8473
 
 Original creator: olazo
 
@@ -157,7 +157,7 @@ Comment by kcrisman created at 2011-03-25 03:09:58
 This doesn't even work - it asks for a password:
 
 ```
-notebook(r*/Users/.../MAT338Day1-2011.sws*,require_login=False)
+notebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)
 ```
 
 while `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.

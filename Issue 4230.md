@@ -1,6 +1,6 @@
 # Issue 4230: implement arbitrary precision Bessel Y function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4230
 
 Original creator: AlexGhitza
 

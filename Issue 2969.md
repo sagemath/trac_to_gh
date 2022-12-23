@@ -1,6 +1,6 @@
 # Issue 2969: [with patches; needs review] Autocomputing Debian package version numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2969
 
 Original creator: tabbott
 

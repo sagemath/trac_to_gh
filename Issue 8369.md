@@ -1,6 +1,6 @@
 # Issue 8369: sagenb: notebook mistake in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8369
 
 Original creator: was
 

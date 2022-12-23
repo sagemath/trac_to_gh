@@ -1,6 +1,6 @@
 # Issue 1052: implement more functionality for class groups of number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1052
 
 Original creator: was
 

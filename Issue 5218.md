@@ -1,6 +1,6 @@
 # Issue 5218: Update Pyhton to 2.5.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5218
 
 Original creator: mabshoff
 
@@ -139,7 +139,7 @@ Note:
 The patch that fixes this sdist issue is:
 
 ```
-wstein`@`sage:~/tmp/python-2.5.4.p0$ diff src/Lib/distutils/command/sdist.py patches/sdist.py
+wstein@sage:~/tmp/python-2.5.4.p0$ diff src/Lib/distutils/command/sdist.py patches/sdist.py
 350c350
 <           * any RCS, CVS, .svn, .hg, .git, .bzr, _darcs directories
 ---
@@ -170,7 +170,7 @@ Comment by was created at 2009-05-29 13:36:46
 This looks suspicous:
 
 ```
-wstein`@`sage:~/tmp/python-2.5.4.p1$ hg status
+wstein@sage:~/tmp/python-2.5.4.p1$ hg status
 ? patches/posixmodule.c.patch.rej
 ```
 

@@ -1,6 +1,6 @@
 # Issue 8563: R interpreter starts (seemingly) without reason
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8563
 
 Original creator: rishi
 

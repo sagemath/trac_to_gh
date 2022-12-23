@@ -1,6 +1,6 @@
 # Issue 291: strange printing of -1 in multivariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/291
 
 Original creator: ncalexan
 

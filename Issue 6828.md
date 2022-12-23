@@ -1,6 +1,6 @@
 # Issue 6828: [with patch, needs review] Random Bipartite Graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6828
 
 Original creator: ncohen
 

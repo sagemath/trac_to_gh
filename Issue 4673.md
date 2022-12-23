@@ -1,6 +1,6 @@
 # Issue 4673: Introduce generic pools just like for the Integer class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4673
 
 Original creator: mabshoff
 

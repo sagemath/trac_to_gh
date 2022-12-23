@@ -1,6 +1,6 @@
 # Issue 9535: elliptic curves modular symbols should call eclib by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9535
 
 Original creator: rlm
 

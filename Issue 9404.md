@@ -1,6 +1,6 @@
 # Issue 9404: Assembler reports  junk buidling Singular on OpenSolaris x64 (disk.math)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9404
 
 Original creator: drkirkby
 
@@ -49,15 +49,15 @@ gcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/incl
 gcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -c omalloc_debug.c -o omalloc_debug.o
 gcc -m64 -g -pg -O3 -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -c omBinPage.c -o omBinPage.op
 /var/tmp//cc1HaW.a.s: Assembler messages:
-/var/tmp//cc1HaW.a.s:26: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:101: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:170: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:268: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:482: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:824: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:1254: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:1730: Error: junk ``@`' after expression
-/var/tmp//cc1HaW.a.s:2031: Error: junk ``@`' after expression
+/var/tmp//cc1HaW.a.s:26: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:101: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:170: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:268: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:482: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:824: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:1254: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:1730: Error: junk `@' after expression
+/var/tmp//cc1HaW.a.s:2031: Error: junk `@' after expression
 make[4]: *** [omBinPage.op] Error 1
 make[4]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/singular-3.1.0.4.p8/src/omalloc'
 make[3]: *** [install] Error 1

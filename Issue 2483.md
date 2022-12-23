@@ -1,6 +1,6 @@
 # Issue 2483: [with updated spkg] Currently R help does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2483
 
 Original creator: jkantor
 

@@ -1,6 +1,6 @@
 # Issue 9808: Graph.num_edges() gives wrong answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9809
 
 Original creator: tobiasljohnson
 

@@ -1,6 +1,6 @@
 # Issue 3643: re-enable dsage/testdoc.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3643
 
 Original creator: was
 

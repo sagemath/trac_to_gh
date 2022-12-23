@@ -1,6 +1,6 @@
 # Issue 8249: sagenb: notebook cookies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8249
 
 Original creator: was
 

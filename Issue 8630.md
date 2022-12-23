@@ -1,6 +1,6 @@
 # Issue 8630: Cusp forms constructor ignores the character and returns enormous space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8630
 
 Original creator: davidloeffler
 

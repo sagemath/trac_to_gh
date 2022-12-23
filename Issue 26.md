@@ -1,6 +1,6 @@
 # Issue 26: add docs to eigenvectors function.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/26
 
 Original creator: was
 

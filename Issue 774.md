@@ -1,6 +1,6 @@
 # Issue 774: [with patch] graphs: change "node" to "vertex"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/774
 
 Original creator: jason
 
@@ -18,7 +18,7 @@ Note: This will break backward compatibility, as it changes function names.
 ```
 --- a/sage/graphs/graph.py	Fri Sep 28 15:34:07 2007 -0500
 +++ b/sage/graphs/graph.py	Mon Oct 01 14:42:14 2007 -0500
-`@``@` -156,9 +156,9 `@``@` TUTORIAL:
+@@ -156,9 +156,9 @@ TUTORIAL:
          3. Labels
          
          Each vertex can have any hashable object as a label. These are things like
@@ -31,7 +31,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          Note that vertex labels themselves cannot be mutable items:
          
-`@``@` -389,7 +389,7 `@``@` class GenericGraph(SageObject):
+@@ -389,7 +389,7 @@ class GenericGraph(SageObject):
  
      def networkx_info(self, vertex=None):
          """
@@ -40,7 +40,7 @@ Note: This will break backward compatibility, as it changes function names.
  
          """
          self._nxg.info(vertex)
-`@``@` -1008,7 +1008,7 `@``@` class GenericGraph(SageObject):
+@@ -1008,7 +1008,7 @@ class GenericGraph(SageObject):
          
      def cliques_get_max_clique_graph(self, **kwds):
          """
@@ -49,7 +49,7 @@ Note: This will break backward compatibility, as it changes function names.
          and edges between maximal cliques with common members in
          the original graph.
          
-`@``@` -1041,9 +1041,9 `@``@` class GenericGraph(SageObject):
+@@ -1041,9 +1041,9 @@ class GenericGraph(SageObject):
      def cliques_get_clique_bipartite(self, **kwds):
          """
          Returns a bipartite graph constructed such that cliques are the
@@ -62,7 +62,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          Currently only implemented for undirected graphs.  Use to_undirected
          to convert a digraph to an undirected graph.  (See examples below).
-`@``@` -1108,63 +1108,63 `@``@` class GenericGraph(SageObject):
+@@ -1108,63 +1108,63 @@ class GenericGraph(SageObject):
              import networkx.cliques
              return networkx.cliques.graph_clique_number(self._nxg, cliques)
          
@@ -142,7 +142,7 @@ Note: This will break backward compatibility, as it changes function names.
              -- cliques - list of cliques (if already computed)
              
          EXAMPLES:
-`@``@` -1179,7 +1179,7 `@``@` class GenericGraph(SageObject):
+@@ -1179,7 +1179,7 @@ class GenericGraph(SageObject):
              sage: F = graphs.Grid2dGraph(2,3)
              sage: F.cliques_number_of(with_labels=True)
              {(0, 1): 3, (1, 2): 2, (0, 0): 2, (1, 1): 3, (1, 0): 2, (0, 2): 2}
@@ -151,7 +151,7 @@ Note: This will break backward compatibility, as it changes function names.
              [3, 2]
              sage: D = DiGraph({0:[1,2,3], 1:[2], 3:[0,1]})
              sage.: D.show(figsize=[2,2])
-`@``@` -1196,73 +1196,73 `@``@` class GenericGraph(SageObject):
+@@ -1196,73 +1196,73 @@ class GenericGraph(SageObject):
              raise TypeError('Function defined for undirected graphs only.  See documentation.')
          else:
              import networkx.cliques
@@ -183,13 +183,13 @@ Note: This will break backward compatibility, as it changes function names.
              sage: C = Graph('DJ{')
 -            sage: C.cliques_containing_node()
 +            sage: C.cliques_containing_vertex()
-             [This is the Trac macro *[4, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[4, 0-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [[4, 1, 2, 3], [4, 0]]]
+             [[[4, 0]], [[4, 1, 2, 3]], [[4, 1, 2, 3]], [[4, 1, 2, 3]], [[4, 1, 2, 3], [4, 0]]]
              sage: E = C.cliques()
              sage: E
              [[4, 1, 2, 3], [4, 0]]
 -            sage: C.cliques_containing_node(cliques=E)
 +            sage: C.cliques_containing_vertex(cliques=E)
-             [This is the Trac macro *[4, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[4, 0-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [This is the Trac macro *4, 1, 2, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 1, 2, 3-macro), [[4, 1, 2, 3], [4, 0]]]
+             [[[4, 0]], [[4, 1, 2, 3]], [[4, 1, 2, 3]], [[4, 1, 2, 3]], [[4, 1, 2, 3], [4, 0]]]
              sage: F = graphs.Grid2dGraph(2,3)
 -            sage: F.cliques_containing_node(with_labels=True)
 +            sage: F.cliques_containing_vertex(with_labels=True)
@@ -208,7 +208,7 @@ Note: This will break backward compatibility, as it changes function names.
              sage.: D.show(figsize=[2,2])
 -            sage: D.cliques_containing_node()
 +            sage: D.cliques_containing_vertex()
-             [[[0, 1, 2], [0, 1, 3]], [[0, 1, 2], [0, 1, 3]], [This is the Trac macro *0, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1, 2-macro), [This is the Trac macro *0, 1, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1, 3-macro)]
+             [[[0, 1, 2], [0, 1, 3]], [[0, 1, 2], [0, 1, 3]], [[0, 1, 2]], [[0, 1, 3]]]
          """
          if (self.is_directed()):
              raise TypeError('Function defined for undirected graphs only.  See documentation.')
@@ -245,7 +245,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          REFERENCE:
              [1] Aric Hagberg, Dan Schult and Pieter Swart. NetworkX
-`@``@` -1287,7 +1287,7 `@``@` class GenericGraph(SageObject):
+@@ -1287,7 +1287,7 @@ class GenericGraph(SageObject):
          The clustering coefficient of a graph is the fraction of
          possible triangles that are triangles,
          c_i = triangles_i / (k_i*(k_i-1)/2)
@@ -254,7 +254,7 @@ Note: This will break backward compatibility, as it changes function names.
          the whole graph is the average of the c_i.  Transitivity is
          the fraction of all possible triangles which are triangles,
          T = 3*triangles/triads, [1].
-`@``@` -1306,27 +1306,27 `@``@` class GenericGraph(SageObject):
+@@ -1306,27 +1306,27 @@ class GenericGraph(SageObject):
          
      def clustering_coeff(self, nbunch=None, with_labels=False, weights=False):
          r"""
@@ -288,7 +288,7 @@ Note: This will break backward compatibility, as it changes function names.
                  
          REFERENCE:
              [1] Aric Hagberg, Dan Schult and Pieter Swart. NetworkX
-`@``@` -2399,10 +2399,10 `@``@` class GenericGraph(SageObject):
+@@ -2399,10 +2399,10 @@ class GenericGraph(SageObject):
                  matplotlib, and each entry is a list of edges.
              partition -- a partition of the vertex set. if specified, plot will show each cell in a different
                  color. vertex_colors takes precedence.
@@ -302,7 +302,7 @@ Note: This will break backward compatibility, as it changes function names.
              iterations -- how many iterations of the spring layout algorithm to
                  go through, if applicable
              color_by_label -- if True, color edges by their labels
-`@``@` -3312,14 +3312,14 `@``@` class Graph(GenericGraph):
+@@ -3312,14 +3312,14 @@ class Graph(GenericGraph):
      def centrality_betweenness(self, normalized=True):
          r"""
          Returns the betweenness centrality (fraction of number of shortest 
@@ -321,7 +321,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          INPUT:
              normalized -- boolean (default True) - if set to False, result
-`@``@` -3348,16 +3348,16 `@``@` class Graph(GenericGraph):
+@@ -3348,16 +3348,16 @@ class Graph(GenericGraph):
          
      def centrality_degree(self, v=False):
          r"""
@@ -345,7 +345,7 @@ Note: This will break backward compatibility, as it changes function names.
              
          EXAMPLES:
              sage: (graphs.ChvatalGraph()).centrality_degree()
-`@``@` -3376,19 +3376,19 `@``@` class Graph(GenericGraph):
+@@ -3376,19 +3376,19 @@ class Graph(GenericGraph):
              
      def centrality_closeness(self, v=False):
          r"""
@@ -371,7 +371,7 @@ Note: This will break backward compatibility, as it changes function names.
              
          REFERENCE:
              [1] Stephen P Borgatti. (1995). Centrality and AIDS. [Online]
-`@``@` -3609,9 +3609,9 `@``@` class Graph(GenericGraph):
+@@ -3609,9 +3609,9 @@ class Graph(GenericGraph):
          """
          Returns True if a graph with boundary is circular planar, and
          False otherwise.  A graph (with nonempty boundary) is circular
@@ -383,7 +383,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          Note -- This function assumes that the graph has nonempty 
                  boundary.  (Circular Planarity has no definition for 
-`@``@` -3663,17 +3663,17 `@``@` class Graph(GenericGraph):
+@@ -3663,17 +3663,17 @@ class Graph(GenericGraph):
              extra=extra+1
          graph.add_vertex(extra)
  
@@ -406,7 +406,7 @@ Note: This will break backward compatibility, as it changes function names.
          if not ordered:
              part.append(graph.neighbors(extra))
  
-`@``@` -3727,8 +3727,8 `@``@` class Graph(GenericGraph):
+@@ -3727,8 +3727,8 @@ class Graph(GenericGraph):
          
          # Construct a list of all rotation systems for graph
          part = []
@@ -417,7 +417,7 @@ Note: This will break backward compatibility, as it changes function names.
  
          all_perms = []
          for p in CyclicPermutationsOfPartition(part):
-`@``@` -3745,11 +3745,11 `@``@` class Graph(GenericGraph):
+@@ -3745,11 +3745,11 @@ class Graph(GenericGraph):
      def interior_paths(self, start, end):
          """
          Returns an exhaustive list of paths (also lists) through
@@ -431,7 +431,7 @@ Note: This will break backward compatibility, as it changes function names.
          
          INPUT:
              start -- the vertex of the graph to search for paths from
-`@``@` -3803,9 +3803,9 `@``@` class Graph(GenericGraph):
+@@ -3803,9 +3803,9 @@ class Graph(GenericGraph):
              [[1, 6, 8, 5, 7, 9, 4], [1, 6, 9, 4]]
          """
          H = self.copy()
@@ -444,7 +444,7 @@ Note: This will break backward compatibility, as it changes function names.
          return H.all_paths(start, end)
  
      def all_paths(self, start, end):
-`@``@` -6086,12 +6086,12 `@``@` def paths_helper(start, end, G, all_path
+@@ -6086,12 +6086,12 @@ def paths_helper(start, end, G, all_path
      """
      The recursive helper for path finding calls.  (i.e.: all_paths
      and interior_paths).  Spawns potential path for each unvisited
@@ -460,7 +460,7 @@ Note: This will break backward compatibility, as it changes function names.
          all_paths -- the list (should initially be empty) to append
                       all successful paths to
          p -- the current path to update (via appending a vertex)
-`@``@` -6102,7 +6102,7 `@``@` def paths_helper(start, end, G, all_path
+@@ -6102,7 +6102,7 @@ def paths_helper(start, end, G, all_path
          p = [start]
  
      plist = []
@@ -483,7 +483,7 @@ I missed several places.  This patch is meant to be applied after the patch abov
 ```
 --- a/sage/graphs/graph.py	Fri Sep 28 15:34:07 2007 -0500
 +++ b/sage/graphs/graph.py	Mon Oct 01 14:42:14 2007 -0500
-`@``@` -1356,7 +1356,7 `@``@`
+@@ -1356,7 +1356,7 @@
          The clustering coefficient of a graph is the fraction of
          possible triangles that are triangles,
          c_i = triangles_i / (k_i*(k_i-1)/2)
@@ -492,7 +492,7 @@ I missed several places.  This patch is meant to be applied after the patch abov
          the whole graph is the average of the c_i.  Transitivity is
          the fraction of all possible triangles which are triangles,
          T = 3*triangles/triads, [1].
-`@``@` -1395,7 +1395,7 `@``@`
+@@ -1395,7 +1395,7 @@
 
          INPUT:
              -- with_labels - default False returns list as described above.
@@ -501,7 +501,7 @@ I missed several places.  This patch is meant to be applied after the patch abov
 
          REFERENCE:
              [1] K-core. Wikipedia. (2007). [Online] Available:
-`@``@` -2254,9 +2254,9 `@``@`
+@@ -2254,9 +2254,9 @@
                  matplotlib, and each entry is a list of edges.
              partition -- a partition of the vertex set. if specified, plot will show each cell in a di
 fferent

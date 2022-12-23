@@ -1,6 +1,6 @@
 # Issue 297: polymake -- create a build package for the optional SAGE package polymake-2.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/297
 
 Original creator: was
 

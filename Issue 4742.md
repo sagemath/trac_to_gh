@@ -1,6 +1,6 @@
 # Issue 4742: Wrap Pari's generalised Smith form (when it is fixed)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4742
 
 Original creator: davidloeffler
 

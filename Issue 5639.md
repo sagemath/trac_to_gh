@@ -1,6 +1,6 @@
 # Issue 5639: minpoly of symbolic matrices is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5639
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9063: wrong type for denominator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9063
 
 Original creator: cjh
 

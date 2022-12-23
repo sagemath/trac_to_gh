@@ -1,6 +1,6 @@
 # Issue 4913: convert sage.graphs.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4913
 
 Original creator: mhansen
 

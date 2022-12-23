@@ -1,6 +1,6 @@
 # Issue 3142: [with patch, needs review] MPolynomialIdeal.homogenize bugfix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3142
 
 Original creator: malb
 

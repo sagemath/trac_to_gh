@@ -1,6 +1,6 @@
 # Issue 3390: update numpy to the 1.1.0 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3390
 
 Original creator: mabshoff
 

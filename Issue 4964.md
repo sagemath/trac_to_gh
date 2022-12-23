@@ -1,6 +1,6 @@
 # Issue 4964: Add Weil pairing to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4964
 
 Original creator: dmhansen
 

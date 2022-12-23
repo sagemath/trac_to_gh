@@ -1,6 +1,6 @@
 # Issue 9080: add F-distribution support for RealDistribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9080
 
 Original creator: klee
 

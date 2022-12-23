@@ -1,6 +1,6 @@
 # Issue 2897: [with new spkg] GAP: replace guava 3.4 by new and improved guava 3.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2897
 
 Original creator: wdj
 

@@ -1,6 +1,6 @@
 # Issue 4983: replace subdivisions attribute for matrices with a function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4983
 
 Original creator: was
 

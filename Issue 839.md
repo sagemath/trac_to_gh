@@ -1,6 +1,6 @@
 # Issue 839: write pexpect interface to R
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/839
 
 Original creator: mhansen
 

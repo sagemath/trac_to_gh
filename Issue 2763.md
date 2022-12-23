@@ -1,6 +1,6 @@
 # Issue 2763: [with patch; needs review] Debian amd64 fixes for rubiks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2763
 
 Original creator: tabbott
 

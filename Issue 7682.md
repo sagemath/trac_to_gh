@@ -1,6 +1,6 @@
 # Issue 7682: Customize printing of real numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7682
 
 Original creator: jason
 
@@ -258,7 +258,7 @@ I removed a bunch of fixes unrelated to the printing option change and put them 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 init2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~(mpfr_prec_t)0)>>1))
-/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython "$`@`" -i
+/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython "$@" -i
 | Sage Version 4.4.1, Release Date: 2010-05-02                       |
 | Type notebook() for the GUI, and license() for information.        |
 ```

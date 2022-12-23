@@ -1,6 +1,6 @@
 # Issue 9430: Update SageNB to version 0.8.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9430
 
 Original creator: timdumol
 
@@ -50,7 +50,7 @@ Doctest error preview (`ptestlong` still running):
 sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py
 **********************************************************************
 File "/home/leif/sage-4.5.alpha4/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py", line 2205:
-    sage: `@`interact
+    sage: @interact
     def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):
         show(factor(x**n - Integer(1)))
 Exception raised:

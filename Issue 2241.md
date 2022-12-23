@@ -1,6 +1,6 @@
 # Issue 2241: Leak in totallyreal_rel.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2241
 
 Original creator: mabshoff
 

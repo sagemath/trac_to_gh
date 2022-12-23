@@ -1,6 +1,6 @@
 # Issue 678: Solaris 10: fix scipy compiler selection
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/678
 
 Original creator: mabshoff
 

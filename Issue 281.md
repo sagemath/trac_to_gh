@@ -1,6 +1,6 @@
 # Issue 281: Errors in matrix for extensions of NumberFields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/281
 
 Original creator: ncalexan
 
@@ -71,7 +71,7 @@ Comment by mabshoff created at 2007-10-21 13:55:55
 It works with Sage 2.8.8:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.8$ sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.8, Release Date: 2007-10-20                       |

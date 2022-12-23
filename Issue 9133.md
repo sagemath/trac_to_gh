@@ -1,6 +1,6 @@
 # Issue 9133: sage-4.4.3.alpha2: pynac build failure on an itanium box (easy autoconf issue)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9133
 
 Original creator: was
 
@@ -70,7 +70,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing pynac-0.2.0.p2.spkg
-wstein`@`iras:~/screen/iras/sage-4.4.3.alpha2>  
+wstein@iras:~/screen/iras/sage-4.4.3.alpha2>  
 ```
 
 

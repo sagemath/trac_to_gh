@@ -1,6 +1,6 @@
 # Issue 632: bug in command line time function and something -- very weird
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/632
 
 Original creator: was
 

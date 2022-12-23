@@ -1,6 +1,6 @@
 # Issue 2705: random_matrix with sparse=True is very slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2705
 
 Original creator: dfdeshom
 

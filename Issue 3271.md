@@ -1,6 +1,6 @@
 # Issue 3271: inject and MPolynomialRing  -- the inject_on command doesn't support MPolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3271
 
 Original creator: was
 

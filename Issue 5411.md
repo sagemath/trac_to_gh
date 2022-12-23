@@ -1,6 +1,6 @@
 # Issue 5411: QuadraticForm: implement clifford_invariant and replace hasse_conductor with clifford_conductor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5411
 
 Original creator: tornaria
 

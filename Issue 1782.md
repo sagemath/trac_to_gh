@@ -1,6 +1,6 @@
 # Issue 1782: doctests for multi_polynomial_ideal.py not reproducible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1782
 
 Original creator: ncalexan
 

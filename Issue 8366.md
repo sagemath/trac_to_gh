@@ -1,6 +1,6 @@
 # Issue 8366: make contour plot labels and linestyles work when fill=True
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8366
 
 Original creator: jason
 

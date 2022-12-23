@@ -1,6 +1,6 @@
 # Issue 9315: Basic pickling bug in finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9315
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  cremona
 
 ```
 
-wstein`@`redhawk:~/db/modsym-2010$ sage modp.sage 
+wstein@redhawk:~/db/modsym-2010$ sage modp.sage 
 data/000000/gamma0-aplist-mod2-000002-0008-10000.sobj
 data/000000/gamma0-aplist-mod2-000003-0004-10000.sobj
 data/000000/gamma0-aplist-mod2-000077-0002-10000.sobj
@@ -31,7 +31,7 @@ Traceback (most recent call last):
   File "sage_object.pyx", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)
   File "finite_field_base.pyx", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)
 TypeError: 'NoneType' object is unsubscriptable
-wstein`@`redhawk:~/db/modsym-2010$ 
+wstein@redhawk:~/db/modsym-2010$ 
 ```
 
 
@@ -72,7 +72,7 @@ There is a function in finite_field_base.pyx that tries to pickle.  It has docte
 However, _factory_data is not defined anywhere else in the source code:
 
 ```
-wstein`@`redhawk:~/build/sage-4.4.4.alpha1/devel/sage/sage/rings/finite_rings$ grep _factory_data *.pyx *.pxd
+wstein@redhawk:~/build/sage-4.4.4.alpha1/devel/sage/sage/rings/finite_rings$ grep _factory_data *.pyx *.pxd
  *.py                                                                                                      
 finite_field_base.pyx:        return self._factory_data[0].reduce_data(self)
 ```

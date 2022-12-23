@@ -1,6 +1,6 @@
 # Issue 9027: Explain Sage and tex interactions in the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9027
 
 Original creator: rbeezer
 

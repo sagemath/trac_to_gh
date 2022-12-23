@@ -1,6 +1,6 @@
 # Issue 4169: [with spkg and patch, needs review] zn_poly 0.9 and hypellfrob 2.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4169
 
 Original creator: dmharvey
 

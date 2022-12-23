@@ -1,6 +1,6 @@
 # Issue 9244: Number field class group improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9244
 
 Original creator: davidloeffler
 

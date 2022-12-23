@@ -1,6 +1,6 @@
 # Issue 3150: Memory leak in combinat/matrices/dancing_links.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3150
 
 Original creator: carlohamalainen
 
@@ -44,10 +44,10 @@ As another test I ran the following Sage program and watched the memory usage in
 ```
 from sage.combinat.matrices.dancing_links import dlx_solver
 
-rows = [This is the Trac macro *0,1,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,1,2-macro)
-rows+= [This is the Trac macro *0,2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,2-macro)
-rows+= [This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)
-rows+= [This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro)
+rows = [[0,1,2]]
+rows+= [[0,2]]
+rows+= [[1]]
+rows+= [[3]]
 
 for _ in range(10000000):
     x = sage.combinat.matrices.dancing_links.dlx_solver(rows) 

@@ -1,6 +1,6 @@
 # Issue 3602: weird bug in group.pyx -- something about latexing a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3602
 
 Original creator: was
 

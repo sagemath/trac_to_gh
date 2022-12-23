@@ -1,6 +1,6 @@
 # Issue 6404: Typeseting for conjugate() of symbolic function is inadequate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6404
 
 Original creator: gmhossain
 

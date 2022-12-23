@@ -1,6 +1,6 @@
 # Issue 6864: Stop Sage tests from saving things to hard drive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6864
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 6491: [with spkg, needs review] Modular Cohomology Rings of Finite p-Groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6491
 
 Original creator: SimonKing
 
@@ -773,8 +773,8 @@ I should also say that your SPKG.txt file has merely the generic blurb
 ```
 ## License
 
-Copyright (C) 2009 Simon A. King  <simon.king`@`uni-jena.de> and
-                   David J. Green <david.green`@`uni-jena.de>
+Copyright (C) 2009 Simon A. King  <simon.king@uni-jena.de> and
+                   David J. Green <david.green@uni-jena.de>
 
 Distributed under the terms of the GNU General Public License (GPL)
 

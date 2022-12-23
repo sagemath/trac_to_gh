@@ -1,6 +1,6 @@
 # Issue 3494: var --> name
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3494
 
 Original creator: craigcitro
 

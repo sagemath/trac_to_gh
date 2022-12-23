@@ -1,6 +1,6 @@
 # Issue 8296: tab completion broken in emacs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8296
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 4008: [with spkg, needs review] OSX 10.4/5: build python without the OSX specific extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4008
 
 Original creator: mabshoff
 

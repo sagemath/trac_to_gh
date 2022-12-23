@@ -1,6 +1,6 @@
 # Issue 50: install guide -- add more about colinux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/50
 
 Original creator: was
 

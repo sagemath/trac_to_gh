@@ -1,6 +1,6 @@
 # Issue 1501: [with spkg] cvxopt compatible with default atlas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1501
 
 Original creator: jkantor
 

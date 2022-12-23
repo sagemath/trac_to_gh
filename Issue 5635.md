@@ -1,6 +1,6 @@
 # Issue 5635: plot method on lattice polytopes gives something ridiculous
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5635
 
 Original creator: was
 

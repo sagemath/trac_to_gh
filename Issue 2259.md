@@ -1,6 +1,6 @@
 # Issue 2259: [with-patch] Fix doctest in pow_computer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2259
 
 Original creator: roed
 

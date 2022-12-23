@@ -1,6 +1,6 @@
 # Issue 6129: Ammend docstring in ode.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6129
 
 Original creator: adavid
 
@@ -13,7 +13,7 @@ Keywords: ode docstring
 
 ```
 # HG changeset patch
-# User Anthony David <adavid`@`adavid.com.au>
+# User Anthony David <adavid@adavid.com.au>
 # Date 1243305447 -36000
 # Node ID 894f488ddccd3411fdd0736b455f27e2d8272099
 # Parent  958178a11b9e809788f1eda0cc29107c456a1bbe
@@ -22,7 +22,7 @@ ammend EXAMPLE comment in sage/gsl/ode.pyx to match doctest function g_1
 diff -r 958178a11b9e -r 894f488ddccd sage/gsl/ode.pyx
 --- a/sage/gsl/ode.pyx	Mon May 25 00:46:38 2009 +1000
 +++ b/sage/gsl/ode.pyx	Tue May 26 12:37:27 2009 +1000
-`@``@` -213,7 +213,7 `@``@`
+@@ -213,7 +213,7 @@
  
           Lets try a system
  

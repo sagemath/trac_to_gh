@@ -1,6 +1,6 @@
 # Issue 1967: fix matplotlib local-related bugs once and for all (?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1967
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4155: [with patch, needs review] Speed up totally real field enumeration code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4155
 
 Original creator: craigcitro
 
@@ -105,7 +105,7 @@ Comment by mabshoff created at 2008-09-20 23:03:27
 The patch that Craig posted applies cleanly against 3.1.2 as well as my current 3.1.3.alpha1 merge tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha1/devel/sage$ patch -p1 --dry-run < trac-4155.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha1/devel/sage$ patch -p1 --dry-run < trac-4155.patch 
 patching file sage/libs/pari/gen.pxd
 patching file sage/libs/pari/gen.pyx
 Hunk #1 succeeded at 4933 (offset 23 lines).
@@ -117,7 +117,7 @@ patching file sage/rings/number_field/totallyreal_data.pyx
 patching file sage/rings/number_field/totallyreal_rel.py
 patching file setup.py
 Hunk #1 succeeded at 955 (offset 12 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2/devel/sage$ patch -p1 --dry-run < trac-4155.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2/devel/sage$ patch -p1 --dry-run < trac-4155.patch 
 patching file sage/libs/pari/gen.pxd
 patching file sage/libs/pari/gen.pyx
 Hunk #1 succeeded at 4933 (offset 23 lines).

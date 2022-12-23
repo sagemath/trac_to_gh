@@ -1,6 +1,6 @@
 # Issue 4086: [with spkg, needs review] Fix polybori-0.5rc.p3.spkg build issue from vanilla tarball
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4086
 
 Original creator: mabshoff
 

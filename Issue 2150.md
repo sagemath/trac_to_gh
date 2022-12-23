@@ -1,6 +1,6 @@
 # Issue 2150: vmware sage image -- switch to using optimal 7zip compression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2150
 
 Original creator: was
 

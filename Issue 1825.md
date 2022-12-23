@@ -1,6 +1,6 @@
 # Issue 1825: rewrite the script in devel/doc/ref so that anybody can add new auto-generated files to the reference manual via hg.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1825
 
 Original creator: was
 

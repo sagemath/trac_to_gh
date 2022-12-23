@@ -1,6 +1,6 @@
 # Issue 9552: cython.pyx references the old sage notebook code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9552
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 533: matrix_rational_sparse_allocate_mpq_vector leak (from modular/ssmod/ssmod.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/533
 
 Original creator: mabshoff
 

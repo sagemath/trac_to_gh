@@ -1,6 +1,6 @@
 # Issue 5999: faster recognise if there is no discrete log
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5999
 
 Original creator: gerrob
 

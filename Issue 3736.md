@@ -1,6 +1,6 @@
 # Issue 3736: pairwise_product fails for vectors over CDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3736
 
 Original creator: mhansen
 

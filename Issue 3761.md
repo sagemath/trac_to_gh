@@ -1,6 +1,6 @@
 # Issue 3761: don't allow a sage binary to run if the processor instruction set doesn't support everything that was on the machine where sage was built
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3761
 
 Original creator: was
 
@@ -15,7 +15,7 @@ Having this in sage-support nearly *every day* is getting really old:
 i get to install sage in my xubuntu (ubuntu with xfce) but when i try
 to do a simple plot, i get this error message
 
-xinelo`@`chacal:~/packages/sage-3.0.5-i686-Linux$ ./sage
+xinelo@chacal:~/packages/sage-3.0.5-i686-Linux$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 The SAGE install tree may have moved.
@@ -38,7 +38,7 @@ does the "The SAGE install tree may have moved." stuff is run,
 Sage also does this:
 
 ```
-sage`@`modular:~$ cat /proc/cpuinfo |grep flags|tail -1
+sage@modular:~$ cat /proc/cpuinfo |grep flags|tail -1
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext lm 3dnowext 3dnow up
 ```
 
@@ -195,7 +195,7 @@ Comment by mabshoff created at 2008-11-11 20:53:47
 Mhh:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1/local/bin$ patch -p1 < scripts-3761.patch\?format\=raw 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1/local/bin$ patch -p1 < scripts-3761.patch\?format\=raw 
 patching file sage-location
 Hunk #1 FAILED at 2.
 Hunk #2 FAILED at 130.

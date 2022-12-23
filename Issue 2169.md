@@ -1,6 +1,6 @@
 # Issue 2169: [with patch; needs review] magma <--> sage conversions: first step to more systematic conversions back and forth
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2169
 
 Original creator: was
 

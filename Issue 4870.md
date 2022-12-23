@@ -1,6 +1,6 @@
 # Issue 4870: Sage 3.2.3: turn off FLINT test suite in the final build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4870
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5881: __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5881
 
 Original creator: mabshoff
 

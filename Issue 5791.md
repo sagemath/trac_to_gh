@@ -1,6 +1,6 @@
 # Issue 5791: Allow custom packages to be injected or %latex and the Sage latex mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5791
 
 Original creator: mabshoff
 

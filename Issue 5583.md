@@ -1,6 +1,6 @@
 # Issue 5583: coercion bug in perm groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5583
 
 Original creator: robertwb
 

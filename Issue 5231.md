@@ -1,6 +1,6 @@
 # Issue 5231: [with patch, needs review] make relative number fields lazy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5231
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 6115: make symbolic matrices use pynac symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6115
 
 Original creator: jason
 
@@ -82,7 +82,7 @@ TypeError                                 Traceback (most recent call last)
    3440         """
    3441         from sage.misc.flatten import flatten
 -> 3442         evecs = self.eigenvectors_left()
-   3443         D = sage.matrix.constructor.diagonal_matrix(flatten([This is the Trac macro *e[0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#e[0-macro)*e[2] for e in evecs]))
+   3443         D = sage.matrix.constructor.diagonal_matrix(flatten([[e[0]]*e[2] for e in evecs]))
    3444         rows = []
 
 /home/grout/download/sage-sage-4.0.alpha0.5/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenvectors_left (sage/matrix/matrix2.c:20199)()

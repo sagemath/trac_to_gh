@@ -1,6 +1,6 @@
 # Issue 5506: symbolic vectors class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5506
 
 Original creator: jason
 

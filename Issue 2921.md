@@ -1,6 +1,6 @@
 # Issue 2921: gcc 4.3: Fix flintqs.spkg build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2921
 
 Original creator: mabshoff
 

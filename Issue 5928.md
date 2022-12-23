@@ -1,6 +1,6 @@
 # Issue 5928: multiplication of factorisations should coerce factors into a common universe
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5928
 
 Original creator: AlexGhitza
 

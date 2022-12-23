@@ -1,6 +1,6 @@
 # Issue 7734: edge_coloring ( and possibly vertex_coloring ) loop forever when GLPK is not installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7734
 
 Original creator: ncohen
 

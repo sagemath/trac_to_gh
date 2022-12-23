@@ -1,6 +1,6 @@
 # Issue 3305: [with patch; needs review] man page for lcalc Debian package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3305
 
 Original creator: tabbott
 

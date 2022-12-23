@@ -1,6 +1,6 @@
 # Issue 1160: *major* bug in using the sage notebook as a maxima notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1160
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Nov 12, 2007 10:20 PM, Moreira <fjm`@`fc.up.pt> wrote:
+On Nov 12, 2007 10:20 PM, Moreira <fjm@fc.up.pt> wrote:
 > After changing system to Maxima in a worksheet, evaluations of cells
 > do not appear. If I write "3+1" in a cell and press SHIFT+ENTER the
 > green bar remains. If I interrupt the computation (option in drop down

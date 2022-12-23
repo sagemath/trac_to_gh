@@ -1,6 +1,6 @@
 # Issue 149: failure in E.sha_an()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/149
 
 Original creator: was
 
@@ -79,7 +79,7 @@ Fixed
 ```
 rank4:~/d/sage was$ hg export tip
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169434711 28800
 # Node ID 3ca3f4250d3073970959522a8e6a4b651d441594
 # Parent  5b995af189989c3e0e6af0b4942fb296cdca5749
@@ -88,7 +88,7 @@ Fix trac #149 -- E.sha_an() issue -- just needed to minimize curve first.
 diff -r 5b995af18998 -r 3ca3f4250d30 sage/schemes/elliptic_curves/ell_rational_field.py
 --- a/sage/schemes/elliptic_curves/ell_rational_field.py        Sun Jan 21 18:25:46 2007 -0800
 +++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Sun Jan 21 18:58:31 2007 -0800
-`@``@` -1341,15 +1341,30 `@``@` class EllipticCurve_rational_field(Ellip
+@@ -1341,15 +1341,30 @@ class EllipticCurve_rational_field(Ellip
  
      def omega(self):
          """
@@ -122,7 +122,7 @@ diff -r 5b995af18998 -r 3ca3f4250d30 sage/schemes/elliptic_curves/ell_rational_f
          """
          return self.period_lattice()[0] * self.real_components()
  
-`@``@` -2541,6 +2556,11 `@``@` class EllipticCurve_rational_field(Ellip
+@@ -2541,6 +2556,11 @@ class EllipticCurve_rational_field(Ellip
              sage: E.sha_an()
              4
  
@@ -134,7 +134,7 @@ diff -r 5b995af18998 -r 3ca3f4250d30 sage/schemes/elliptic_curves/ell_rational_f
          """
  #            sage: e = EllipticCurve([1, 0, 0, -19491080, -33122512122])   # 15834T2
  #            sage: e.sha_an()                          # takes a long time (way too long!!)
-`@``@` -2552,14 +2572,17 `@``@` class EllipticCurve_rational_field(Ellip
+@@ -2552,14 +2572,17 @@ class EllipticCurve_rational_field(Ellip
                  self.__sha_an = int(round(float(self.database_curve().db_extra[4])))
                  return self.__sha_an
              except RuntimeError, AttributeError:
@@ -157,7 +157,7 @@ diff -r 5b995af18998 -r 3ca3f4250d30 sage/schemes/elliptic_curves/ell_rational_f
              try:
                  Sha = Z(Sha)
              except ValueError:
-`@``@` -2568,18 +2591,20 `@``@` class EllipticCurve_rational_field(Ellip
+@@ -2568,18 +2591,20 @@ class EllipticCurve_rational_field(Ellip
              if not arith.is_square(Sha):
                  raise RuntimeError, \
                        "There is a bug in sha_an, since the computed conjectural order of Sha is %s, which is not a square."%Sha
@@ -183,7 +183,7 @@ diff -r 5b995af18998 -r 3ca3f4250d30 sage/schemes/elliptic_curves/ell_rational_f
              try:
                  Sha = Z(Sha)
              except ValueError:
-`@``@` -2588,6 +2613,7 `@``@` class EllipticCurve_rational_field(Ellip
+@@ -2588,6 +2613,7 @@ class EllipticCurve_rational_field(Ellip
              if not arith.is_square(Sha):
                  raise RuntimeError, \
                        "There is a bug in sha_an, since the computed conjectural order of Sha is %s, which is not a square."%Sha

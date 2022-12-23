@@ -1,6 +1,6 @@
 # Issue 1467: make it possible to upload/download worksheets as plain text
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1467
 
 Original creator: was
 

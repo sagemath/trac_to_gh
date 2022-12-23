@@ -1,6 +1,6 @@
 # Issue 7429: pari is misbuilt on OS X using xcode 3.2.1, making sage be mostly broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7429
 
 Original creator: was
 

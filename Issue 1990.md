@@ -1,6 +1,6 @@
 # Issue 1990: ZZ.random_element() -- never returns 0 and typos/nonsense in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1990
 
 Original creator: was
 

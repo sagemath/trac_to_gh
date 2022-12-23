@@ -1,6 +1,6 @@
 # Issue 7643: composite_fields does not play nice with QuadraticFields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7643
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 5956: image dimensions for show() are in inches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5956
 
 Original creator: mvngu
 
@@ -21,7 +21,7 @@ As discussed at this [sage-devel thread](http://groups.google.com/group/sage-dev
 which can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: q = var("q")

@@ -1,6 +1,6 @@
 # Issue 2156: [with spkg, needs review] Cython 0.9.6.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2156
 
 Original creator: robertwb
 
@@ -32,7 +32,7 @@ Two things
  * A `sage -ba` works fine on sage.math, but upon startup I get:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.1, Release Date: 2008-02-02                      |

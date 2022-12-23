@@ -1,6 +1,6 @@
 # Issue 7024: Flint ignores CC and CXX.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7024
 
 Original creator: drkirkby
 

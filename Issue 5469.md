@@ -1,6 +1,6 @@
 # Issue 5469: sage -clone ...  should copy the sage/doc/output directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5469
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 4956: html accents in the notebook aren't saved properly on second load
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4956
 
 Original creator: mabshoff
 

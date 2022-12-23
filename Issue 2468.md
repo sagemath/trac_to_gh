@@ -1,6 +1,6 @@
 # Issue 2468: inverting a non-invertible matrix over RDF returns weird results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2468
 
 Original creator: AlexGhitza
 

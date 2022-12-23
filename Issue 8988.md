@@ -1,6 +1,6 @@
 # Issue 8988: Add support for toric varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8988
 
 Original creator: novoselt
 

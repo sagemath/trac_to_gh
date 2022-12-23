@@ -1,6 +1,6 @@
 # Issue 5358: major bug in missing import of escape in twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5358
 
 Original creator: was
 

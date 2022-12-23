@@ -1,6 +1,6 @@
 # Issue 9237: create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9237
 
 Original creator: was
 

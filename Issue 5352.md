@@ -1,6 +1,6 @@
 # Issue 5352: the valgrind log files in sage-doctest are written to $HOME/.sage instead of $DOT_SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5352
 
 Original creator: mabshoff
 

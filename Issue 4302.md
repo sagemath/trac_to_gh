@@ -1,6 +1,6 @@
 # Issue 4302: [challenge] improve modular composition in GF(2)[x]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4302
 
 Original creator: zimmerma
 
@@ -430,20 +430,20 @@ Hi, I started from a vanilla 3.1.3 as follows
 
 
 ```
-malb`@`road:~/SAGE/devel/sage$ hg qinit
-malb`@`road:~/SAGE/devel/sage$ hg qimport ntl_decl_refactor.patch
+malb@road:~/SAGE/devel/sage$ hg qinit
+malb@road:~/SAGE/devel/sage$ hg qimport ntl_decl_refactor.patch
 adding ntl_decl_refactor.patch to series file
-malb`@`road:~/SAGE/devel/sage$ hg qpush
+malb@road:~/SAGE/devel/sage$ hg qpush
 applying ntl_decl_refactor.patch
 patching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx
 Hunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).
 Now at: ntl_decl_refactor.patch
-malb`@`road:~/SAGE/devel/sage$ hg qimport polynomial_gf2x.patch
+malb@road:~/SAGE/devel/sage$ hg qimport polynomial_gf2x.patch
 adding polynomial_gf2x.patch to series file
-malb`@`road:~/SAGE/devel/sage$ hg qpush
+malb@road:~/SAGE/devel/sage$ hg qpush
 applying polynomial_gf2x.patch
 Now at: polynomial_gf2x.patch
-malb`@`road:~/SAGE/devel/sage$ sage -b
+malb@road:~/SAGE/devel/sage$ sage -b
 ```
 
 
@@ -489,7 +489,7 @@ use "hg help" for the full list of commands or "hg -v" for details
 achille% hg --version
 Mercurial Distributed SCM (version 1.0.2)
 
-Copyright (C) 2005-2008 Matt Mackall <mpm`@`selenic.com> and others
+Copyright (C) 2005-2008 Matt Mackall <mpm@selenic.com> and others
 This is free software; see the source for copying conditions. There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
@@ -520,9 +520,9 @@ Or, this should be equivalent:
 
 
 ```
-malb`@`road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch
-malb`@`road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch
-malb`@`road:~/SAGE/devel/sage$ sage -b
+malb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch
+malb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch
+malb@road:~/SAGE/devel/sage$ sage -b
 ```
 
 

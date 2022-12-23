@@ -1,6 +1,6 @@
 # Issue 8841: os x 10.4 -- sage-4.4.1 doesn't start up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8841
 
 Original creator: was
 

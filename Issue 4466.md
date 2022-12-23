@@ -1,6 +1,6 @@
 # Issue 4466: fix det in linbox case to fail if proof=False isn't also set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4466
 
 Original creator: was
 
@@ -13,7 +13,7 @@ See below:
 ```
 
 
-On Fri, Nov 7, 2008 at 4:26 PM, Clement Pernet <clement.pernet`@`gmail.com> wrote:
+On Fri, Nov 7, 2008 at 4:26 PM, Clement Pernet <clement.pernet@gmail.com> wrote:
 > Hi all,
 >
 > After checking, the default algorithm called in LinBox for det over Z

@@ -1,6 +1,6 @@
 # Issue 2747: [with patch; needs review] SAGE doctest import errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2747
 
 Original creator: tabbott
 

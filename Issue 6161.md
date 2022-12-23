@@ -1,6 +1,6 @@
 # Issue 6161: Polynomial rings have no coercion map to themselves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6161
 
 Original creator: SimonKing
 

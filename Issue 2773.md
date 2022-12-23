@@ -1,6 +1,6 @@
 # Issue 2773: [with patch, needs review] conversion from PolyBoRi to Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2773
 
 Original creator: malb
 

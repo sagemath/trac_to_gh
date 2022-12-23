@@ -1,6 +1,6 @@
 # Issue 4818: bug in list_plot3d -- invalid index?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4818
 
 Original creator: was
 

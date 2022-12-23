@@ -1,6 +1,6 @@
 # Issue 4690: [with patch; needs review] Sage hangs on derivative of piecewise function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4690
 
 Original creator: pbutler
 
@@ -12,7 +12,7 @@ Derivatives of piecewise functions where some piece uses multiplication causes S
 
 
 ```
-Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (0,1), x * 2)](https://trac.sagemath.org/wiki/WikiMacros#-macro)).derivative()
+Piecewise([[(0,1), x * 2]]).derivative()
 ```
 
 

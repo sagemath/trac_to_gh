@@ -1,6 +1,6 @@
 # Issue 8792: clean up documentation of logic/booleval.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8792
 
 Original creator: mvngu
 
@@ -65,29 +65,29 @@ Could you try again? Here is how I applied the relevant patches:
 
 
 ```sh
-[mvngu`@`sage sage-main]$ pwd
+[mvngu@sage sage-main]$ pwd
 /dev/shm/mvngu/sandbox/sage-4.4.2-8792-booleval/devel/sage-main
-[mvngu`@`sage sage-main]$ hg tip
+[mvngu@sage sage-main]$ hg tip
 changeset:   14321:1451c00a8d44
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Wed May 19 00:55:29 2010 -0700
 summary:     4.4.2
 
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush 
 adding trac_8796-propcalc-clean-ups.patch to series file
 applying trac_8796-propcalc-clean-ups.patch
 now at: trac_8796-propcalc-clean-ups.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush 
 adding trac_8792-booleval-clean-ups.patch to series file
 applying trac_8792-booleval-clean-ups.patch
 now at: trac_8792-booleval-clean-ups.patch
-[mvngu`@`sage sage-main]$ hg tip
+[mvngu@sage sage-main]$ hg tip
 changeset:   14323:a91966275ff3
 tag:         qtip
 tag:         trac_8792-booleval-clean-ups.patch
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Sun May 02 20:59:37 2010 -0700
 summary:     #8792: clean up documentation of logic/booleval.py
 ```
@@ -106,7 +106,7 @@ Hmmmm... I'm really sorry but ...
 ~/.Sage/devel/sage-doc$ hg tip
 changeset:   14321:1451c00a8d44
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Wed May 19 00:55:29 2010 -0700
 summary:     4.4.2
 
@@ -128,7 +128,7 @@ changeset:   14323:fd8399a20ce0
 tag:         qtip
 tag:         trac_8792-booleval-clean-ups.patch
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Sun May 02 20:59:37 2010 -0700
 summary:     #8792: clean up documentation of logic/booleval.py
 ```

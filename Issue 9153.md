@@ -1,6 +1,6 @@
 # Issue 9153: set z-limits for 3d plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9153
 
 Original creator: jason
 

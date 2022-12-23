@@ -1,6 +1,6 @@
 # Issue 9269: clean up #optional tags in sage/graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9269
 
 Original creator: rlm
 

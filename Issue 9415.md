@@ -1,6 +1,6 @@
 # Issue 9415: sorting points on elliptic curves over number fields silently fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9415
 
 Original creator: rkirov
 

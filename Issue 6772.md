@@ -1,6 +1,6 @@
 # Issue 6772: increase default ecl memory limits for maxima+ecl in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6772
 
 Original creator: was
 
@@ -33,7 +33,7 @@ And the response from the main ECL guy:
 
 
 ```
-On Mon, Aug 17, 2009 at 10:57 AM, William Stein<wstein`@`gmail.com> wrote:
+On Mon, Aug 17, 2009 at 10:57 AM, William Stein<wstein@gmail.com> wrote:
 > Note that Sage's Maxima uses ECL.  So the basic question is, how can
 > we increase the memory that Maxima + ECL can use?
 

@@ -1,6 +1,6 @@
 # Issue 5284: Set sage-flags.txt up to SSE2 only when building Sage in SSE2 only mode/remove SSSE3 and SSE4 flags (followup to #5219)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5284
 
 Original creator: mabshoff
 

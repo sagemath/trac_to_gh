@@ -1,6 +1,6 @@
 # Issue 7718: Segfault in coercion code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7718
 
 Original creator: roed
 

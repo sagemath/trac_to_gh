@@ -1,6 +1,6 @@
 # Issue 5486: [with patch, needs review] fix bug in variety() for MPolynomialIdeals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5486
 
 Original creator: malb
 

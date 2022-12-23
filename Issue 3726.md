@@ -1,6 +1,6 @@
 # Issue 3726: stats/finance -- add support for hidden markov models to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3726
 
 Original creator: was
 

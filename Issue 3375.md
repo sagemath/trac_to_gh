@@ -1,6 +1,6 @@
 # Issue 3375: Fix building ntl on Solaris with make and ld [with patch needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3375
 
 Original creator: fbissey
 

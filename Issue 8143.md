@@ -1,6 +1,6 @@
 # Issue 8143: Efficient Gram-Schmidt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8143
 
 Original creator: rlindner
 

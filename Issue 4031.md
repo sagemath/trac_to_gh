@@ -1,6 +1,6 @@
 # Issue 4031: Callable symbolic expressions should allow keyword args
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4031
 
 Original creator: jwmerrill
 

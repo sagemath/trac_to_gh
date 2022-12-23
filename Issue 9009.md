@@ -1,6 +1,6 @@
 # Issue 9009: Mercurial is not building 64-bit with OpenSolaris with SAGE64=yes.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9009
 
 Original creator: drkirkby
 

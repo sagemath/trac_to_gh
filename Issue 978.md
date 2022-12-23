@@ -1,6 +1,6 @@
 # Issue 978: bug in Sequence __str__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/978
 
 Original creator: was
 

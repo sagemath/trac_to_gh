@@ -1,6 +1,6 @@
 # Issue 5615: [with patch, not ready for review] use labels-as-values for fast_callable under gcc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5615
 
 Original creator: cwitty
 

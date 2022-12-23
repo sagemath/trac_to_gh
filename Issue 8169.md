@@ -1,6 +1,6 @@
 # Issue 8169: include TOPCOM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8169
 
 Original creator: vbraun
 

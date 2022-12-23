@@ -1,6 +1,6 @@
 # Issue 7555: Fix Cayley tables, add operation tables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7555
 
 Original creator: rbeezer
 

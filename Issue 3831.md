@@ -1,6 +1,6 @@
 # Issue 3831: [with spkg, needs review] add experimental boost-1.34-1.spkg to the repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3831
 
 Original creator: mabshoff
 

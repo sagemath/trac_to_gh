@@ -1,6 +1,6 @@
 # Issue 2971: One method of creating a Laurent poly ring doesn't give access to the variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2971
 
 Original creator: bump
 

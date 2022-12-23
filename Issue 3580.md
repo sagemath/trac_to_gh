@@ -1,6 +1,6 @@
 # Issue 3580: ensure that numpy is not imported on startup.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3580
 
 Original creator: was
 

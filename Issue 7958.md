@@ -1,6 +1,6 @@
 # Issue 7958: Conversion of rationals into the fraction field of integer polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7958
 
 Original creator: spancratz
 

@@ -1,6 +1,6 @@
 # Issue 8025: artificially bump the version number of the scipy and scipy_sandbox spkg's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8025
 
 Original creator: was
 

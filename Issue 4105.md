@@ -1,6 +1,6 @@
 # Issue 4105: multiplication of permutations in distinct subgroups sometimes doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4105
 
 Original creator: was
 

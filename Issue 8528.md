@@ -1,6 +1,6 @@
 # Issue 8528: type in an exception
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8528
 
 Original creator: ylchapuy
 

@@ -1,6 +1,6 @@
 # Issue 1586: preparser.py doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1586
 
 Original creator: rlm
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-rlmill`@`sage:~/release/sage-2.9.1.alpha3$ ./sage -t  devel/sage-main/sage/misc/preparser.py
+rlmill@sage:~/release/sage-2.9.1.alpha3$ ./sage -t  devel/sage-main/sage/misc/preparser.py
 sage -t  devel/sage-main/sage/misc/preparser.py             **********************************************************************
 File "preparser.py", line 472:
     sage: preparse("ZZ.<x> = ZZ['x']")   
@@ -60,7 +60,7 @@ The following tests failed:
 
         sage -t  devel/sage-main/sage/misc/preparser.py
 Total time for all tests: 2.7 seconds
-rlmill`@`sage:~/release/sage-2.9.1.alpha3$ 
+rlmill@sage:~/release/sage-2.9.1.alpha3$ 
 ```
 
 

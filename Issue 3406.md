@@ -1,6 +1,6 @@
 # Issue 3406: [with patch, needs review] improve TermOrder class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3406
 
 Original creator: malb
 

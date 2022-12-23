@@ -1,6 +1,6 @@
 # Issue 5587: input of hexadecimal integers is corrupted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5587
 
 Original creator: zimmerma
 

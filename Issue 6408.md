@@ -1,6 +1,6 @@
 # Issue 6408: notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6408
 
 Original creator: was
 

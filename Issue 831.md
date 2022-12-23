@@ -1,6 +1,6 @@
 # Issue 831: [with patch] hg_sage.export('tip')
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/831
 
 Original creator: malb
 

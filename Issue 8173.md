@@ -1,6 +1,6 @@
 # Issue 8173: segfault in singular resultant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8173
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 6281: [with patch; needs review] enable parallel make for rubiks spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6281
 
 Original creator: was
 

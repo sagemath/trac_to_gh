@@ -1,6 +1,6 @@
 # Issue 3907: plot correctly up to asymptotes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3907
 
 Original creator: kcrisman
 

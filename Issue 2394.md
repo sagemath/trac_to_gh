@@ -1,6 +1,6 @@
 # Issue 2394: Wrap Cremona's newforms class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2394
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 5658: Efficiency improvement in generic order_from_multiple()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5658
 
 Original creator: cremona
 

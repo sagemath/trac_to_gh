@@ -1,6 +1,6 @@
 # Issue 6437: polybori assumes the linker is the GNU one, so breaks if Sun linker is used.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6437
 
 Original creator: drkirkby
 
@@ -143,7 +143,7 @@ Replying to [comment:1 drkirkby]:
 After uncompressing polybori-0.5rc.p9.spkg, I see a junk file:
 
 ```
-[mvngu`@`sage polybori-0.5rc.p9]$ hg st
+[mvngu@sage polybori-0.5rc.p9]$ hg st
 M SPKG.txt
 M patches/SConstruct
 M patches/custom.py

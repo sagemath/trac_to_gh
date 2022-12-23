@@ -1,6 +1,6 @@
 # Issue 1813: [with patch] misc enhancements for ref.pdf
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1813
 
 Original creator: malb
 

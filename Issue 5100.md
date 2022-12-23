@@ -1,6 +1,6 @@
 # Issue 5100: worksheets: can't empty the trash (safari only?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5100
 
 Original creator: jhpalmieri
 

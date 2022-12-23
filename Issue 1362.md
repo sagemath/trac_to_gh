@@ -1,6 +1,6 @@
 # Issue 1362: edge labeled graph isomorphism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1362
 
 Original creator: rlm
 

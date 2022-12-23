@@ -1,6 +1,6 @@
 # Issue 9738: Stealth core dump from testing sage/interfaces/genus2reduction.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9738
 
 Original creator: mpatel
 

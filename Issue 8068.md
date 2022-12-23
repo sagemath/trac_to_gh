@@ -1,6 +1,6 @@
 # Issue 8068: New mpfr-2.4.1.p1.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8068
 
 Original creator: jsp
 

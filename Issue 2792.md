@@ -1,6 +1,6 @@
 # Issue 2792: [with patch, needs review] remove workaround for non-existing Cython bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2792
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1466: improve the "click to the left" aspect of the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1466
 
 Original creator: was
 

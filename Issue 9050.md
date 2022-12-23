@@ -1,6 +1,6 @@
 # Issue 9050: libntl.dll should be libntl.dll.a on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9050
 
 Original creator: mhansen
 

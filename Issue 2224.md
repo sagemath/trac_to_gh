@@ -1,6 +1,6 @@
 # Issue 2224: sage-2.10.2.alpha1 -- strange show doctest bug in group.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2224
 
 Original creator: was
 

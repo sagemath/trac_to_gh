@@ -1,6 +1,6 @@
 # Issue 9097: c_lib in Sage library fails to build on OpenSolaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9097
 
 Original creator: drkirkby
 
@@ -21,7 +21,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -140,7 +140,7 @@ attachment form):
 ```
 --- SConstruct.orig	2010-05-26 12:13:50.000000000 +1200
 +++ SConstruct	2010-07-01 13:28:53.605754354 +1200
-`@``@` -105,15 +105,15 `@``@`
+@@ -105,15 +105,15 @@
  ## The other two options control the way the linker creates a namespace
  ## for the dynamic library; check the man page for ld on a mac to see
  ## the details.
@@ -248,9 +248,9 @@ I've tested this on OS X, and it works fine:
 
 
 ```
-[kirkby`@`bsd sage-4.5.alpha1]$ uname -a 
+[kirkby@bsd sage-4.5.alpha1]$ uname -a 
 Darwin bsd.local 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin
-[kirkby`@`bsd sage-4.5.alpha1]$ ./sage
+[kirkby@bsd sage-4.5.alpha1]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -262,7 +262,7 @@ sage: 1+1
 2
 sage: Quit
 Exiting Sage (CPU time 0m0.04s, Wall time 0m4.44s).
-[kirkby`@`bsd sage-4.5.alpha1]$ 
+[kirkby@bsd sage-4.5.alpha1]$ 
 ```
 
 | Sage Version 4.5.alpha1, Release Date: 2010-06-29                  |

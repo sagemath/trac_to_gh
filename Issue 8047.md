@@ -1,6 +1,6 @@
 # Issue 8047: Sage 4.3.1 has both lapack-20071123.p0.spkg and lapack-20071123.p1.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8047
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 1978: update python-gnutls
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1978
 
 Original creator: yi
 

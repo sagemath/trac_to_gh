@@ -1,6 +1,6 @@
 # Issue 4679: Spelling errors in documentation for sage.rings.polynomial.polynomial_element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4679
 
 Original creator: tjlahey
 

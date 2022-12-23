@@ -1,6 +1,6 @@
 # Issue 6045: [with patch, needs review] Computation of Heegner points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6045
 
 Original creator: robertwb
 

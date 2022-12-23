@@ -1,6 +1,6 @@
 # Issue 3131: README.txt: update recommendations for dev work with binaries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3131
 
 Original creator: mabshoff
 

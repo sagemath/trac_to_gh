@@ -1,6 +1,6 @@
 # Issue 5399: FinanceDate class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5399
 
 Original creator: psinis
 

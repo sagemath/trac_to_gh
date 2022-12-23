@@ -1,6 +1,6 @@
 # Issue 4483: Add coefficient_field() method to ModularSymbols/ModularForms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4483
 
 Original creator: jonhanke
 

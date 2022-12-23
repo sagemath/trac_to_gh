@@ -1,6 +1,6 @@
 # Issue 8450: contour_plot chokes on function which involves imaginary numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8450
 
 Original creator: jason
 

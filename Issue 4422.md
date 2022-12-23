@@ -1,6 +1,6 @@
 # Issue 4422: create new optional sympow_data.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4422
 
 Original creator: mabshoff
 

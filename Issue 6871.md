@@ -1,6 +1,6 @@
 # Issue 6871: temporary passwords aren't temporary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6871
 
 Original creator: ddrake
 

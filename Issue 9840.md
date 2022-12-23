@@ -1,6 +1,6 @@
 # Issue 9840: Make Qhull an optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9841
 
 Original creator: mhampton
 

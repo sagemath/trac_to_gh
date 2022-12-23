@@ -1,6 +1,6 @@
 # Issue 8230: strange behaviour
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8230
 
 Original creator: zimmerma
 

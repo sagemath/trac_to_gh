@@ -1,6 +1,6 @@
 # Issue 7085: fix this laurent series coercion bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7085
 
 Original creator: was
 

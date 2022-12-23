@@ -1,6 +1,6 @@
 # Issue 4649: sparse linear algebra: implement matrix multiplication
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4649
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 7468: SageNB - Include `zope.testbrowser` and its dependencies in the SageNB package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7468
 
 Original creator: timdumol
 

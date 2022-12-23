@@ -1,6 +1,6 @@
 # Issue 1235: bug solving equations using maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1235
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Nov 20, 2007 12:28 PM, Ted Kosan <ted.kosan`@`gmail.com> wrote:
+On Nov 20, 2007 12:28 PM, Ted Kosan <ted.kosan@gmail.com> wrote:
 > Does anyone have any thoughts on why the solve() function this program
 > returns an empty list?:
 > 
@@ -86,7 +86,7 @@ show details 8:35 AM (1 minute ago)
 Reply
 	
 	
-On Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej`@`certik.cz> wrote:
+On Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej@certik.cz> wrote:
 >
 > > I think in the long-run Sage will have to completely implement its own solve
 > > function, which is better than Maxima's.  Thoughts from Ondrej-sympy would be

@@ -1,6 +1,6 @@
 # Issue 2595: rubiks and polymake both have a cube binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2595
 
 Original creator: mabshoff
 

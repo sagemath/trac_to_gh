@@ -1,6 +1,6 @@
 # Issue 3512: [with spkg, needs review] upgrade to sqlalchemy 0.4.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3512
 
 Original creator: yi
 

@@ -1,6 +1,6 @@
 # Issue 1108: mysterious sfa doctest failure on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1108
 
 Original creator: mabshoff
 

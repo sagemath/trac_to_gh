@@ -1,6 +1,6 @@
 # Issue 4382: [with patch; needs review] notebook -- use sage-native-execute for ssh'ing for remote pexpect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4382
 
 Original creator: was
 

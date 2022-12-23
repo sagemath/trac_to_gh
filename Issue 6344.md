@@ -1,6 +1,6 @@
 # Issue 6344: Typesetting partial derivatives in new Symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6344
 
 Original creator: gmhossain
 

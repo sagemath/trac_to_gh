@@ -1,6 +1,6 @@
 # Issue 5073: [with spkg, needs review] Update IPython to 0.9.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5073
 
 Original creator: mhansen
 

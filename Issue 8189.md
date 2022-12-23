@@ -1,6 +1,6 @@
 # Issue 8189: hg.py: fix some docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8189
 
 Original creator: jhpalmieri
 
@@ -11,7 +11,7 @@ Assignee: mvngu
 In hg.py, strings like `ssh://[user`@`]host[:port]/[path]` appear in docstrings, and Sphinx turns them into active links in the html documentation (which are obviously broken), and Sphinx produces warnings when producing the latex/pdf documentation:
 
 ```
-.../devel/sage/doc/en/reference/sage/misc/hg.rst:: WARNING: unusable reference target found: ssh://[user`@`]host[:port]/[path
+.../devel/sage/doc/en/reference/sage/misc/hg.rst:: WARNING: unusable reference target found: ssh://[user@]host[:port]/[path
 ```
 
 This patch puts these links into double backquotes, fixing both of these issues.

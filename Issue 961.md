@@ -1,6 +1,6 @@
 # Issue 961: sage -standard fails without write permission to $SAGE_LOCAL/tmp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/961
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Hello,
 I am not sure if this qualifies as a bug, but by storing the list in ~/.sage the following should work even if the user doesn't have write permission below $SAGE_LOCAL:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.8$ sage -standard
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage -standard
 Using SAGE Server http://www.sagemath.org//packages
 http://www.sagemath.org//packages/standard/list --> /home/was/s/tmp/list
 [Errno 13] Permission denied: '/home/was/s/tmp/list'

@@ -1,6 +1,6 @@
 # Issue 9588: Extend is_prime_power to negative exponents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9588
 
 Original creator: arminstraub
 

@@ -1,6 +1,6 @@
 # Issue 6418: [with patch; needs review] ref manual fixes for 4.1.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6418
 
 Original creator: jhpalmieri
 

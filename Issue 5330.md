@@ -1,6 +1,6 @@
 # Issue 5330: Move the docs over to the main repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5330
 
 Original creator: mhansen
 

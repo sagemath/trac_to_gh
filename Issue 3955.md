@@ -1,6 +1,6 @@
 # Issue 3955: make find_minimum_on_interval use _fast_float_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3955
 
 Original creator: was
 
@@ -12,11 +12,11 @@ Assignee: tbd
 ```
 
 
-On Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans`@`gmail.com> wrote:
+On Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:
 >
 > Dear William,
 >
-> On Aug 25, 6:48 pm, "William Stein" <wst...`@`gmail.com> wrote:
+> On Aug 25, 6:48 pm, "William Stein" <wst...@gmail.com> wrote:
 >
 >> If you call _fast_float_ as illustrated below on your functions, find_* will
 >> work, and also be much much faster:

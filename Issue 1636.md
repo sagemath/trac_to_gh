@@ -1,6 +1,6 @@
 # Issue 1636: jmol 3d graphics -- make 3d output dynamically resizable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1636
 
 Original creator: was
 

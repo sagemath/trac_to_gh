@@ -1,6 +1,6 @@
 # Issue 5802: use tuples rather than copying lists for immutable data
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5802
 
 Original creator: robertwb
 

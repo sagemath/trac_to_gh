@@ -1,6 +1,6 @@
 # Issue 9273: doctest elliptic_curves/BSD.py reports "file not found"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9273
 
 Original creator: drkirkby
 

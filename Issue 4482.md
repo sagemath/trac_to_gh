@@ -1,6 +1,6 @@
 # Issue 4482: Sage 3.2.rc0: optional Magma doctest failure in devel/sage/sage/rings/polynomial/pbori.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4482
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9361: Maxima timeout when creating tab completion list on Mac PPC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9361
 
 Original creator: kcrisman
 

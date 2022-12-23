@@ -1,6 +1,6 @@
 # Issue 9524: Nasty bug with polynomial arithmetic and NTL contexts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9524
 
 Original creator: craigcitro
 

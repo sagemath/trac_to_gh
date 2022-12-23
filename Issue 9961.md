@@ -1,6 +1,6 @@
 # Issue 9961: vector plot should have optional "start" argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9962
 
 Original creator: jason
 

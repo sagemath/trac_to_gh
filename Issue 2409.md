@@ -1,6 +1,6 @@
 # Issue 2409: plot'ting constants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2409
 
 Original creator: jbmohler
 

@@ -1,6 +1,6 @@
 # Issue 7392: RDF/CDF matrices should call scipy for rank
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7392
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9208: Add PKG_CONFIG_PATH to sage-env so problems like matplotlib link properly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9208
 
 Original creator: drkirkby
 

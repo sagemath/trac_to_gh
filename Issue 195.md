@@ -1,6 +1,6 @@
 # Issue 195: Can't compile spyx files with hyphens in names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/195
 
 Original creator: kedlaya
 
@@ -30,7 +30,7 @@ fixed
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169203338 28800
 # Node ID 08b37570702281f7b6208e4df5871cc07c19250b
 # Parent  405159b758a0c2d6c4b4e0836e25ae1753fb88d8
@@ -39,7 +39,7 @@ Trac #195 -- fix bug that Kiran Kedlaya reported that spyx files with funny file
 diff -r 405159b758a0 -r 08b375707022 sage/misc/sagex.py
 --- a/sage/misc/sagex.py        Fri Jan 19 02:31:01 2007 -0800
 +++ b/sage/misc/sagex.py        Fri Jan 19 02:42:18 2007 -0800
-`@``@` -106,7 +106,8 `@``@` def sagex(filename, verbose=False, compi
+@@ -106,7 +106,8 @@ def sagex(filename, verbose=False, compi
      if filename[-5:] != '.spyx':
          print "File (=%s) must have extension .spyx"%filename
  
@@ -49,7 +49,7 @@ diff -r 405159b758a0 -r 08b375707022 sage/misc/sagex.py
  
      build_dir = '%s/%s'%(SPYX_TMP, base)
      if os.path.exists(build_dir):
-`@``@` -151,8 +152,8 `@``@` def sagex(filename, verbose=False, compi
+@@ -151,8 +152,8 @@ def sagex(filename, verbose=False, compi
      # increment the sequence number so will use a different one next time.
      sequence_number[base] += 1
  
@@ -60,7 +60,7 @@ diff -r 405159b758a0 -r 08b375707022 sage/misc/sagex.py
      
      pyx = '%s/%s.pyx'%(build_dir, name)
      open(pyx,'w').write(F)
-`@``@` -334,3 +335,23 `@``@` def f(%s):
+@@ -334,3 +335,23 @@ def f(%s):
                                           create_local_c_file=False)
      return d['f']
      

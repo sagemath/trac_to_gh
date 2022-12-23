@@ -1,6 +1,6 @@
 # Issue 7399: fix ugliness for default graph plot3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7399
 
 Original creator: robertwb
 

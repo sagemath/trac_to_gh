@@ -1,6 +1,6 @@
 # Issue 5310: addition to Sage for Msieve factoring program
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5310
 
 Original creator: jblakeslee
 
@@ -201,7 +201,7 @@ in order to set all environment variables correctly, then cd to
 /scratch/wstein/build/sage-3.4.1.rc2-ref2/spkg/build/msieve-1.39
 (When you are done debugging, you can type "exit" to leave the
 subshell.)
-wstein`@`sage:~/build/sage-3.4.1.rc2-ref2$ 
+wstein@sage:~/build/sage-3.4.1.rc2-ref2$ 
 ```
 
 
@@ -353,7 +353,7 @@ That link, which you posted 19 months ago, is not valid
 
 
 ```
-drkirkby`@`hawk:~/sage-4.7.alpha5/spkg/standard$ wget http://309codesign.com/code/msieve-1.39.spkg
+drkirkby@hawk:~/sage-4.7.alpha5/spkg/standard$ wget http://309codesign.com/code/msieve-1.39.spkg
 --2011-04-27 21:55:45--  http://309codesign.com/code/msieve-1.39.spkg
 Resolving 309codesign.com (309codesign.com)... 74.220.215.62
 Connecting to 309codesign.com (309codesign.com)|74.220.215.62|:80... connected.
@@ -585,7 +585,7 @@ So it produces:
 
 
 ```
-drkirkby`@`hawk:~$ uname -m
+drkirkby@hawk:~$ uname -m
 i86pc
 ```
 
@@ -699,7 +699,7 @@ I managed to build the git branch, but I failed to install the upstream package
 (renamed to msieve-1.49.tar.gz as mentioned in the description above):
 
 ```
-zimmerma`@`barbecue:/localdisk/tmp/sage-6.7$ ./sage -i /tmp/msieve-1.49.tar.gz 
+zimmerma@barbecue:/localdisk/tmp/sage-6.7$ ./sage -i /tmp/msieve-1.49.tar.gz 
 msieve-1.49.tar.gz
 ====================================================
 Extracting package /tmp/msieve-1.49.tar.gz

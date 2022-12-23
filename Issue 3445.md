@@ -1,6 +1,6 @@
 # Issue 3445: notebook -- finish implementing e-mail confirmation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3445
 
 Original creator: TimothyClemans
 

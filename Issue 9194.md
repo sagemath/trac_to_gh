@@ -1,6 +1,6 @@
 # Issue 9194: Expose and extend the thematic tutorial on symmetric functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9194
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 7754: Weyl group optimizations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7754
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 9848: Multivariable limits
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9849
 
 Original creator: kcrisman
 

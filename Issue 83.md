@@ -1,6 +1,6 @@
 # Issue 83: Docstring bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/83
 
 Original creator: burhanud
 
@@ -12,7 +12,7 @@ After typing QQ? followed the enter key, sage command line seems to be in edit m
 
 
 ```
-burhanud`@`sage:~/sha5$ sage
+burhanud@sage:~/sha5$ sage
 --------------------------------------------------------
 --------------------------------------------------------
 | SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |
@@ -55,7 +55,7 @@ object? -> Details about 'object'. ?object also works, ?? prints more.
 In [1]: import sage.all
 
 In [2]: sage.all.QQ?
-[This is the Trac macro *hangs* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#hangs-macro)
+[[hangs]]
 ```
 
 

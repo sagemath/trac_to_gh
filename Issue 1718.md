@@ -1,6 +1,6 @@
 # Issue 1718: bug in parametric_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1718
 
 Original creator: wdj
 

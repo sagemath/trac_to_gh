@@ -1,6 +1,6 @@
 # Issue 1655: [with spkg] jmol -- upgrade to new version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1655
 
 Original creator: was
 

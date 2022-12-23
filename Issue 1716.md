@@ -1,6 +1,6 @@
 # Issue 1716: [with patch] add function log1p in mpfr interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1716
 
 Original creator: zimmerma
 

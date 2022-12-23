@@ -1,6 +1,6 @@
 # Issue 9152: Update extension code for mpmath-0.15
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9152
 
 Original creator: fredrik.johansson
 
@@ -170,17 +170,17 @@ Comment by leif created at 2010-06-26 17:25:30
 ```
 changeset:   14535:97280db338bf
 tag:         tip
-user:        Fredrik Johansson <fredrik.johansson`@`gmail.com>
+user:        Fredrik Johansson <fredrik.johansson@gmail.com>
 date:        Thu Jun 10 02:23:59 2010 +0200
 summary:     fix wrapped mpmath functions to retain __name__ attribute
 
 changeset:   14534:ebf36c5d4051
-user:        Fredrik Johansson <fredrik.johansson`@`gmail.com>
+user:        Fredrik Johansson <fredrik.johansson@gmail.com>
 date:        Sat Jun 05 19:25:42 2010 +0200
 summary:     update mpmath extension module for mpmath 0.15 compatibility
 
 changeset:   14533:5c14ca9acdd3
-user:        Robert Miller <rlm`@`rlmiller.org>
+user:        Robert Miller <rlm@rlmiller.org>
 date:        Fri Jun 25 05:11:33 2010 -0700
 summary:     4.5.alpha0
 ```
@@ -196,7 +196,7 @@ Total time for all tests: 2147.1 seconds
 real	36m19.732s
 user	80m12.569s
 sys	6m45.373s
-leif`@`quadriga:~/sage-4.5.alpha0/devel/sage-9152$ 
+leif@quadriga:~/sage-4.5.alpha0/devel/sage-9152$ 
 ```
 
 

@@ -1,6 +1,6 @@
 # Issue 4557: cos._fast_float_ returns math.sin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4557
 
 Original creator: jason
 

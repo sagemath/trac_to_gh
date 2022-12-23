@@ -1,6 +1,6 @@
 # Issue 6077: simplicial complex method for polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6077
 
 Original creator: mhampton
 

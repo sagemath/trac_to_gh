@@ -1,6 +1,6 @@
 # Issue 6255: update doc system to latex sphinx and improve build system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6255
 
 Original creator: ncalexan
 
@@ -46,7 +46,7 @@ I made an attempt to have parallel doc build. It seems that I have it for the **
 diff --git a/builders/__init__.py b/builders/__init__.py
 --- a/builders/__init__.py
 +++ b/builders/__init__.py
-`@``@` -286,14 +286,27 `@``@` class Builder(object):
+@@ -286,14 +286,27 @@ class Builder(object):
          # write target files
          warnings = []
          self.env.set_warnfunc(lambda *args: warnings.append(args))

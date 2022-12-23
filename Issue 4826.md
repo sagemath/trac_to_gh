@@ -1,6 +1,6 @@
 # Issue 4826: change return type of G.cusps() for G a congruence subgroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4826
 
 Original creator: craigcitro
 

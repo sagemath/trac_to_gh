@@ -1,6 +1,6 @@
 # Issue 7359: Methods for degenerated graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7359
 
 Original creator: ncohen
 

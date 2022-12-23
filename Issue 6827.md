@@ -1,6 +1,6 @@
 # Issue 6827: [with patch, needs review] probability distributions doctests + general discrete distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6827
 
 Original creator: carlohamalainen
 

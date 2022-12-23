@@ -1,6 +1,6 @@
 # Issue 4312: major @interact (hence pyprocessing) new bug in 3.1.3, still in 3.1.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4312
 
 Original creator: was
 
@@ -11,8 +11,8 @@ Assignee: cwitty
 In 3.1.2 this worked fine. It's totally broken in 3.1.4.
 
 ```
-sage`@`modular:~/build/sage-3.1.4$ more a.sage
-`@`parallel(8)
+sage@modular:~/build/sage-3.1.4$ more a.sage
+@parallel(8)
 def f(p):
     print p
     t = cputime()
@@ -27,7 +27,7 @@ def f(p):
 
 
 
-sage`@`modular:~/build/sage-3.1.4$ ./sage
+sage@modular:~/build/sage-3.1.4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.4, Release Date: 2008-10-16                       |

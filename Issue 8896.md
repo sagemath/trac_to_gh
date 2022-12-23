@@ -1,6 +1,6 @@
 # Issue 8896: 0.0000000000000000000000000000 is parsed completely differently than 1.0000000000000000000000000000 for no good reason
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8896
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6697: spell-check all modules under sage/functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6697
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 8991: Adjust developer walkthrough for two changes to mercurial queues syntax
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8991
 
 Original creator: rbeezer
 

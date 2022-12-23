@@ -1,6 +1,6 @@
 # Issue 346: Notebook input cell focus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/346
 
 Original creator: nbruin
 

@@ -1,6 +1,6 @@
 # Issue 1866: bug in doctesting -- long time not respected in some contexts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1866
 
 Original creator: was
 

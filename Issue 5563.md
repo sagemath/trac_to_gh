@@ -1,6 +1,6 @@
 # Issue 5563: [with patch, needs review] Doctest failure in devel/sage/doc/en/bordeaux_2008/modular_....rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5563
 
 Original creator: GeorgSWeber
 

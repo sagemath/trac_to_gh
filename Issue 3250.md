@@ -1,6 +1,6 @@
 # Issue 3250: Parent does not have a cdef class default hash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3250
 
 Original creator: gfurnish
 

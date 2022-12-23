@@ -1,6 +1,6 @@
 # Issue 5718: notebook -- %hide works fine in the worksheet but shows up when printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5718
 
 Original creator: was
 

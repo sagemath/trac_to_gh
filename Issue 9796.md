@@ -1,6 +1,6 @@
 # Issue 9796: sagenb: Add a beep() command to the sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9797
 
 Original creator: was
 

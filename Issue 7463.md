@@ -1,6 +1,6 @@
 # Issue 7463: document memory management for the magma interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7463
 
 Original creator: was
 

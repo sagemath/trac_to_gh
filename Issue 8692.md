@@ -1,6 +1,6 @@
 # Issue 8692: inconsistencies in axes_pad and arrow plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8692
 
 Original creator: jason
 

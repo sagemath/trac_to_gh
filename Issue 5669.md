@@ -1,6 +1,6 @@
 # Issue 5669: [with patch, needs review] New algorithm for Max Clique in Graph class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5669
 
 Original creator: ncohen
 

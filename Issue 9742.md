@@ -1,6 +1,6 @@
 # Issue 9742: Sorting edges of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9742
 
 Original creator: rbeezer
 

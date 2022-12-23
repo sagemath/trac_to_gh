@@ -1,6 +1,6 @@
 # Issue 376: finite field homomorphisms don't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/376
 
 Original creator: was
 

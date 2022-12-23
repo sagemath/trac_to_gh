@@ -1,6 +1,6 @@
 # Issue 4746: Bug in srange
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4746
 
 Original creator: vgermrk
 
@@ -73,7 +73,7 @@ Comment by was created at 2008-12-10 00:41:15
 
 
 ```
-On Tue, Dec 9, 2008 at 4:25 PM, Robert Bradshaw <robertwb`@`math.washington.edu> wrote:
+On Tue, Dec 9, 2008 at 4:25 PM, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 >
 > On Dec 9, 2008, at 2:00 AM, Jason Grout wrote:
 >

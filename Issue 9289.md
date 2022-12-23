@@ -1,6 +1,6 @@
 # Issue 9289: Implement Puiseux polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9289
 
 Original creator: nthiery
 

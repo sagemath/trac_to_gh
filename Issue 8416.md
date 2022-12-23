@@ -1,6 +1,6 @@
 # Issue 8416: long doctest elliptic_curves/ell_modular_symbols.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8416
 
 Original creator: drkirkby
 
@@ -53,7 +53,7 @@ so the problem went away. I wont request the ticket is closed yet, until it has 
 
 
 ```
-drkirkby`@`redstart:~/fresh/sage-4.3.3$ ./sage -t  -long "devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py"
+drkirkby@redstart:~/fresh/sage-4.3.3$ ./sage -t  -long "devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py"
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py"
 	 [190.8 s]
 

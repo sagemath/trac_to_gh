@@ -1,6 +1,6 @@
 # Issue 7923: signed int overflow in givaro elements' __pow__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7923
 
 Original creator: roed
 

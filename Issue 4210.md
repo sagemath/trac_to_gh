@@ -1,6 +1,6 @@
 # Issue 4210: [with spkg, needs review] Remove some deprecation warnings from numpy-1.2.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4210
 
 Original creator: mabshoff
 

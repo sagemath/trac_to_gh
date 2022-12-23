@@ -1,6 +1,6 @@
 # Issue 231: inconsistent working directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/231
 
 Original creator: nbruin
 

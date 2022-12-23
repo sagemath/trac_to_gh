@@ -1,6 +1,6 @@
 # Issue 7840: include sagenb-0.4.9 in sage-4.3.1.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7840
 
 Original creator: was
 

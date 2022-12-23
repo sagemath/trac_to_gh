@@ -1,6 +1,6 @@
 # Issue 7340: cayley_table has a syntax error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7340
 
 Original creator: jason
 
@@ -194,7 +194,7 @@ Comment by mvngu created at 2010-05-11 20:13:09
 Close as fixed by #7555:
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: T = SymmetricGroup(6).cayley_table().table()

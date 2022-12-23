@@ -1,6 +1,6 @@
 # Issue 2891: inline_fortran -- completely rewrite to not save a global variable and *not* got hacked into various global structures all over
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2891
 
 Original creator: was
 
@@ -69,7 +69,7 @@ If you care, the `inline_fortran` stuff was added in Sage by
 
 ```
 commit d46359f9384268204bd687e2a7aaded15938399d
-Author: William Stein <wstein`@`gmail.com>
+Author: William Stein <wstein@gmail.com>
 Date:   Tue Jun 26 16:37:36 2007 -0700
 
     (Josh Kantor and W Stein) Add support for %fortran in the notebook.

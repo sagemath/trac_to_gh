@@ -1,6 +1,6 @@
 # Issue 6622: substitution of a dict into a symbolic expression modifies the dict
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6622
 
 Original creator: was
 

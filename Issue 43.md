@@ -1,6 +1,6 @@
 # Issue 43: gap boolean values don't coerce back
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/43
 
 Original creator: was
 
@@ -63,7 +63,7 @@ Comment by was created at 2007-01-12 22:12:37
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168639902 28800
 # Node ID 2a6823917a29813a484e00eea7b15f7c697269ab
 # Parent  4fe8209d82ae7980fd8ebc80db390f9265512cf6
@@ -72,7 +72,7 @@ Fix trac bug # 43
 diff -r 4fe8209d82ae -r 2a6823917a29 sage/interfaces/expect.py
 --- a/sage/interfaces/expect.py Fri Jan 12 13:30:02 2007 -0800
 +++ b/sage/interfaces/expect.py Fri Jan 12 14:11:42 2007 -0800
-`@``@` -871,6 +871,9 `@``@` class ExpectElement(RingElement):
+@@ -871,6 +871,9 @@ class ExpectElement(RingElement):
          cmd = '%s %s %s'%(self._name, P._equality_symbol(), t)
          return P.eval(cmd) == t
  
@@ -85,7 +85,7 @@ diff -r 4fe8209d82ae -r 2a6823917a29 sage/interfaces/expect.py
 diff -r 4fe8209d82ae -r 2a6823917a29 sage/interfaces/gap.py
 --- a/sage/interfaces/gap.py    Fri Jan 12 13:30:02 2007 -0800
 +++ b/sage/interfaces/gap.py    Fri Jan 12 14:11:42 2007 -0800
-`@``@` -566,9 +566,28 `@``@` class GapElement(ExpectElement):
+@@ -566,9 +566,28 @@ class GapElement(ExpectElement):
          return s
  
      def __len__(self):

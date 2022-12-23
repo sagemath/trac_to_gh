@@ -1,6 +1,6 @@
 # Issue 2503: Sage 2.10.4.alpha4: doctest failout in sage/misc/functional.py from #2421
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2503
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7766: Upgrade optional spkg valgrind to valgrind-3.6.0.svn
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7766
 
 Original creator: jsp
 
@@ -317,7 +317,7 @@ Comment by jpflori created at 2012-02-24 12:02:59
 
 I've made the mentioned changes and some minor other changes. I've also updated the descr/license in the SPKG file.
 
-The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg)(http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) 
+The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) 
 
 Ivan: If you don't mind, it may be a good idea to add yourself as a maintainer?
 
@@ -331,7 +331,7 @@ Comment by iandrus created at 2012-02-24 15:22:17
 Replying to [comment:26 jpflori]:
 > I've made the mentioned changes and some minor other changes. I've also updated the descr/license in the SPKG file.
 > 
-> The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg)(http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) 
+> The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) 
 
 FWIW I had to add `.fr` to the server to get the spkg.
 

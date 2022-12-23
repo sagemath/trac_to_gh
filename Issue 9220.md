@@ -1,6 +1,6 @@
 # Issue 9220: Upredictable parent for polynomial evaluation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9220
 
 Original creator: nbruin
 

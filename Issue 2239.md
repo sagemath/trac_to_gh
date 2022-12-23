@@ -1,6 +1,6 @@
 # Issue 2239: Leak in totallyreal.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2239
 
 Original creator: mabshoff
 

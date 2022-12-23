@@ -1,6 +1,6 @@
 # Issue 5470: Update Cython entry in Developer's Guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5470
 
 Original creator: cswiercz
 
@@ -41,9 +41,9 @@ Comment by mabshoff created at 2009-03-10 20:55:19
 Yes, it is under version control:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.rc2/devel/sage$ hg log doc/en/developer/coding_in_other.rst
+mabshoff@sage:/scratch/mabshoff/sage-3.4.rc2/devel/sage$ hg log doc/en/developer/coding_in_other.rst
 changeset:   11689:d83194742483
-user:        Mike Hansen <mhansen`@`gmail.com>
+user:        Mike Hansen <mhansen@gmail.com>
 date:        Tue Feb 24 09:13:12 2009 -0800
 summary:     Added the documentation to the main repository.
 ```

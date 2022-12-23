@@ -1,6 +1,6 @@
 # Issue 6234: make parallel GCC'ing of Sage library not experimental
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6234
 
 Original creator: was
 

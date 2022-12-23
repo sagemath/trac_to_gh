@@ -1,6 +1,6 @@
 # Issue 3238: [with patch; needs review] libfpll spkg -- update to work with cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3238
 
 Original creator: was
 

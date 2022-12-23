@@ -1,6 +1,6 @@
 # Issue 552: come up with a better way of deciding whether or not the SAGE install has moved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/552
 
 Original creator: was
 

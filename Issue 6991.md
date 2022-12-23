@@ -1,6 +1,6 @@
 # Issue 6991: lattice polytope nfacets method broken for non-reflexive polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6991
 
 Original creator: mhampton
 

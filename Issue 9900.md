@@ -1,6 +1,6 @@
 # Issue 9900: update pynac to 0.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9901
 
 Original creator: burcin
 

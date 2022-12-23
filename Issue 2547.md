@@ -1,6 +1,6 @@
 # Issue 2547: Implement gradient(), hessian() for callable function rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2547
 
 Original creator: edrex
 

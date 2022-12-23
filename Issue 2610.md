@@ -1,6 +1,6 @@
 # Issue 2610: emacs -- fix typo in sagemath.org website
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2610
 
 Original creator: was
 

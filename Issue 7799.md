@@ -1,6 +1,6 @@
 # Issue 7799: install_scripts should not install M2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7799
 
 Original creator: novoselt
 

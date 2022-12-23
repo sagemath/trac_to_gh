@@ -1,6 +1,6 @@
 # Issue 5449: Implement @cache_method with cache stored in the parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5449
 
 Original creator: nthiery
 

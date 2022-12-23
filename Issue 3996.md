@@ -1,6 +1,6 @@
 # Issue 3996: [with patch, needs review] doctest the Singular interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3996
 
 Original creator: mhansen
 
@@ -35,7 +35,7 @@ Comment by mabshoff created at 2008-08-29 22:37:57
 Unfortunately against my current alpha3 merge tree (the only relevant patch here over alpha2 is probably #3988):
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < trac_3996.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < trac_3996.patch 
 patching file sage/interfaces/singular.py
 Hunk #13 succeeded at 1010 with fuzz 2.
 Hunk #14 succeeded at 1106 (offset 44 lines).

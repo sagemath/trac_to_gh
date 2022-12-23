@@ -1,6 +1,6 @@
 # Issue 5405: [with patch, needs review] create a decorator for adding default keyword arguments to a function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5405
 
 Original creator: mhansen
 
@@ -59,7 +59,7 @@ def partial_dec(*args, **kwds):
         return partial(f,*args,**kwds)
     return p
     
-`@`partial_dec(b=2)
+@partial_dec(b=2)
 def f(a,b):
     return 10*a+b
 
@@ -78,7 +78,7 @@ Actually I meant something like this:
 ```
 from functools import partial
 
-`@`partial(partial, b=4)
+@partial(partial, b=4)
 def f(a,b):
     return 10*a + b
 
@@ -104,7 +104,7 @@ So now can you use `@`wraps or something so that g? works correctly below?
 ```
 from functools import partial, wraps
 
-`@`partial(partial, b=4)
+@partial(partial, b=4)
 def g(a,b):
     """Docs"""
     return 10*a + b
@@ -125,7 +125,7 @@ This works, but it certainly isn't obvious:
 
 from functools import partial, wraps
 
-`@`partial(lambda x: wraps(x)(partial(partial, b = 4))(x))
+@partial(lambda x: wraps(x)(partial(partial, b = 4))(x))
 def g(a,b):
     """Docs"""
     return 10*a + b
@@ -145,7 +145,7 @@ and at that point, I'd say
 
 
 ```
-`@`default_keywords...
+@default_keywords...
 def g...
 
 ```
@@ -171,7 +171,7 @@ So we've agreed that we should create a `partial` decorator that allows somethin
 ```
 from sage.misc.decorators (or wherever) import partial
 
-`@`partial(*args, **kwds) # Same as calling partial(g, *args, **kwds) and wrapping with `@`wraps
+@partial(*args, **kwds) # Same as calling partial(g, *args, **kwds) and wrapping with @wraps
 def g(a,b):
    ...
 

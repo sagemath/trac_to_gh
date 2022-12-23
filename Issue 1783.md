@@ -1,6 +1,6 @@
 # Issue 1783: fix latex errors with fraction field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1783
 
 Original creator: mhansen
 

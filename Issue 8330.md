@@ -1,6 +1,6 @@
 # Issue 8330: BipartiteGraph needs to hook delete_vertex() and delete_vertices()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8330
 
 Original creator: rhinton
 

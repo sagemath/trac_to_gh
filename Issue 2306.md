@@ -1,6 +1,6 @@
 # Issue 2306: Tab completion in the command-line mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2306
 
 Original creator: ljpk
 

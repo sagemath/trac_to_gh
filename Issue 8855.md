@@ -1,6 +1,6 @@
 # Issue 8855: sage-env needs to be updated for Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8855
 
 Original creator: mhansen
 

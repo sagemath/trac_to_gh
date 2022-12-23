@@ -1,6 +1,6 @@
 # Issue 6317: optional doctest failure -- maple interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6317
 
 Original creator: was
 

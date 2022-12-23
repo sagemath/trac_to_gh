@@ -1,6 +1,6 @@
 # Issue 3783: cached_method could use some improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3783
 
 Original creator: mhansen
 

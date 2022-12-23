@@ -1,6 +1,6 @@
 # Issue 9101: linbox reports "ERROR: BLAS not found!" on 64-bit SPARC build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9101
 
 Original creator: drkirkby
 

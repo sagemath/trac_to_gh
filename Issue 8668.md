@@ -1,6 +1,6 @@
 # Issue 8668: 5.0 press release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8668
 
 Original creator: schilly
 

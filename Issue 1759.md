@@ -1,6 +1,6 @@
 # Issue 1759: Various files still mention GPL V2 [only]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1759
 
 Original creator: mabshoff
 

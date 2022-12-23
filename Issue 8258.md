@@ -1,6 +1,6 @@
 # Issue 8258: get "make documentation" relocation-safe
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8258
 
 Original creator: GeorgSWeber
 

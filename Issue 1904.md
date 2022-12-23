@@ -1,6 +1,6 @@
 # Issue 1904: elliptic curves -- many period lattice functions just don't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1904
 
 Original creator: was
 

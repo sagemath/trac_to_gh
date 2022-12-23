@@ -1,6 +1,6 @@
 # Issue 9143: Speed up graph generation using Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9143
 
 Original creator: jason
 

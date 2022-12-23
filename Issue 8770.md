@@ -1,6 +1,6 @@
 # Issue 8770: gfan fails to build on Fedora Core 12 wtih GCC-4.5.0 (lena)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8770
 
 Original creator: was
 
@@ -28,7 +28,7 @@ sage: An error occurred while installing gfan-0.4plus
 About the machine:
 
 ```
-[wstein`@`lena sage-4.4]$ gcc -v
+[wstein@lena sage-4.4]$ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-k10-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper
@@ -36,9 +36,9 @@ Target: x86_64-unknown-linux-gnu
 Configured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-k10-fc-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-k10-fc-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-k10-gcc-4.2.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-k10-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-k10-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3 --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-k10-fc
 Thread model: posix
 gcc version 4.5.0 (GCC)
-[wstein`@`lena sage-4.4]$ uname -a
+[wstein@lena sage-4.4]$ uname -a
 Linux lena 2.6.31.12-174.2.19.fc12.x86_64 #1 SMP Thu Feb 11 07:07:16 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux
-[wstein`@`lena sage-4.4]$ cat /etc/issue
+[wstein@lena sage-4.4]$ cat /etc/issue
 Fedora release 12 (Constantine)
 Kernel \r on an \m (\l)
                           

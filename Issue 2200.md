@@ -1,6 +1,6 @@
 # Issue 2200: copyright documentation for various spkgs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2200
 
 Original creator: tabbott
 
@@ -65,8 +65,8 @@ Comment by was created at 2008-02-17 22:15:29
 Regarding genus2reduction, i should probably get a clear copyright license statement from Qing Liu, who said to me only
 
 ```
-From Qing.Liu`@`math.u-bordeaux1.fr Sat Jul 16 23:33:18 2005
-Return-path: <Qing.Liu`@`math.u-bordeaux1.fr>
+From Qing.Liu@math.u-bordeaux1.fr Sat Jul 16 23:33:18 2005
+Return-path: <Qing.Liu@math.u-bordeaux1.fr>
 
 Hi William,
 

@@ -1,6 +1,6 @@
 # Issue 7819: RealInterval(+infinity,+infinity).is_int() blows up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7819
 
 Original creator: rlm
 

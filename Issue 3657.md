@@ -1,6 +1,6 @@
 # Issue 3657: [with patch against 3.0.5, needs review] Documentation for latin squares, DLXCPP; minor fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3657
 
 Original creator: carlohamalainen
 

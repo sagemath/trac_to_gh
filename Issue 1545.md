@@ -1,6 +1,6 @@
 # Issue 1545: gmp 4.2.2: add #include <cstdio> in gmp.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1545
 
 Original creator: mabshoff
 

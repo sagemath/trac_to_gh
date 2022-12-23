@@ -1,6 +1,6 @@
 # Issue 2905: Various speedups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2905
 
 Original creator: gfurnish
 

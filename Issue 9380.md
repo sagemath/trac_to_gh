@@ -1,6 +1,6 @@
 # Issue 9380: Kaehler and Mori cones for toric varieties
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9380
 
 Original creator: novoselt
 

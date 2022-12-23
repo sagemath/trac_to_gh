@@ -1,6 +1,6 @@
 # Issue 1550: use libecm instead of pexpect+ecm binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1550
 
 Original creator: zimmerma
 

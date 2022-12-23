@@ -1,6 +1,6 @@
 # Issue 7920: Common numerical matrix base class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7920
 
 Original creator: dagss
 

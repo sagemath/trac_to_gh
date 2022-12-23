@@ -1,6 +1,6 @@
 # Issue 5910: move logic module boolopt.py to another enhancement ticket
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5910
 
 Original creator: mvngu
 

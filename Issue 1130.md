@@ -1,6 +1,6 @@
 # Issue 1130: [with patch] point counting for elliptic curves over non-prime finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1130
 
 Original creator: malb
 

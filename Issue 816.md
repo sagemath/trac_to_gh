@@ -1,6 +1,6 @@
 # Issue 816: [with patch] Commutative Algebra assorted functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/816
 
 Original creator: malb
 

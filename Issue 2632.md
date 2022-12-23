@@ -1,6 +1,6 @@
 # Issue 2632: Inflexibility of browser window size and resolution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2632
 
 Original creator: dunfield
 

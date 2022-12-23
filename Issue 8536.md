@@ -1,6 +1,6 @@
 # Issue 8536: Change SAGE" to "Sage" in output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8536
 
 Original creator: cremona
 

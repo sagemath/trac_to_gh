@@ -1,6 +1,6 @@
 # Issue 4943: make sage -tp run sage -t when only one file is specified
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4943
 
 Original creator: ncalexan
 

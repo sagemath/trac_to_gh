@@ -1,6 +1,6 @@
 # Issue 9786: lagrange_polynomial(algorithm='divided_difference') fails over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9787
 
 Original creator: mmezzarobba
 
@@ -262,7 +262,7 @@ When making the change
 ```diff
 --- a/src/sage/rings/polynomial/polynomial_ring.py
 +++ b/src/sage/rings/polynomial/polynomial_ring.py
-`@``@` -1698,7 +1698,7 `@``@` class PolynomialRing_field(PolynomialRing_integral_domain,
+@@ -1698,7 +1698,7 @@ class PolynomialRing_field(PolynomialRing_integral_domain,
             MATLAB*.  3rd edition, Prentice-Hall, 1999.
  
          """
@@ -271,7 +271,7 @@ When making the change
          points = map(lambda x: map(to_base_ring, x), points)
          n = len(points)
          F = [[points[i][1]] for i in xrange(n)]
-`@``@` -1859,12 +1859,7 `@``@` class PolynomialRing_field(PolynomialRing_integral_domain,
+@@ -1859,12 +1859,7 @@ class PolynomialRing_field(PolynomialRing_integral_domain,
             8th edition, Thomson Brooks/Cole, 2005.
  
          """

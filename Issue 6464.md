@@ -1,6 +1,6 @@
 # Issue 6464: notebook: Unicode in notebook worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6464
 
 Original creator: mvngu
 

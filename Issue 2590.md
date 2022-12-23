@@ -1,6 +1,6 @@
 # Issue 2590: plotting a line with no points throws a nonsensical error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2590
 
 Original creator: jason
 
@@ -32,7 +32,7 @@ Comment by mabshoff created at 2008-03-19 10:13:36
 If I apply those two patches I get an additional doctest failure besides the one caused by #2583:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py
 sage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************
 File "plot.py", line 3466:
     sage: p[0][1][0]

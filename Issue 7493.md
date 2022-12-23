@@ -1,6 +1,6 @@
 # Issue 7493: Implement sage -t --time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7493
 
 Original creator: nthiery
 

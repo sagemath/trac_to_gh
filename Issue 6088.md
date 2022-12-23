@@ -1,6 +1,6 @@
 # Issue 6088: LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6088
 
 Original creator: nthiery
 

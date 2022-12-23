@@ -1,6 +1,6 @@
 # Issue 2027: PolyBoRi.spkg: add one line patch to fix memleak
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2027
 
 Original creator: mabshoff
 

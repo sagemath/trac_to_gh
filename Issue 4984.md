@@ -1,6 +1,6 @@
 # Issue 4984: Clean up __getitem__ for matrices once Cython is smarter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4984
 
 Original creator: craigcitro
 

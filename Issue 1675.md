@@ -1,6 +1,6 @@
 # Issue 1675: memleak in pAdicCappedRelativeElement._set_from_Rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1675
 
 Original creator: wjp
 

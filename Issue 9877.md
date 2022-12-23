@@ -1,6 +1,6 @@
 # Issue 9877: symbolic zeta(1) should return unsigned infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9878
 
 Original creator: burcin
 

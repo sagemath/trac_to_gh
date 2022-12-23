@@ -1,6 +1,6 @@
 # Issue 5811: Sage 3.4.1.rc3: Fedora 10/64 - type_reducible.py doctest failure due to '__cmp__"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5811
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6869: [with patch, needs work] LP and MIP Solvers in Sage ( with symbolics )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6869
 
 Original creator: ncohen
 
@@ -39,7 +39,7 @@ Comment by mvngu created at 2009-09-09 12:17:09
 The module `sage/numerical/mip.pyx` should have 100% doctest coverage, given that it's being added to the Sage library:
 
 ```
-[mvngu`@`sage numerical]$ sage -coverage mip.pyx 
+[mvngu@sage numerical]$ sage -coverage mip.pyx 
 ----------------------------------------------------------------------
 mip.pyx
 ERROR: Please define a s == loads(dumps(s)) doctest.
@@ -174,7 +174,7 @@ I then applies glpk and reran sage -testall. All tests passes sage -testall exce
 
 ```
 
-wdj`@`tinah:~/sagefiles/sage-4.1.2.alpha0$ ./sage -t  "devel/sage/sage/server/notebook/cell.py"
+wdj@tinah:~/sagefiles/sage-4.1.2.alpha0$ ./sage -t  "devel/sage/sage/server/notebook/cell.py"
 sage -t  "devel/sage/sage/server/notebook/cell.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***

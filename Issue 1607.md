@@ -1,6 +1,6 @@
 # Issue 1607: kernel -- A.right_kernel and A.left_kernel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1607
 
 Original creator: was
 

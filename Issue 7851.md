@@ -1,6 +1,6 @@
 # Issue 7851: libz igoresSAGE64 other than on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7851
 
 Original creator: drkirkby
 
@@ -83,7 +83,7 @@ This problem is not as simple as I first thought. Using the zlib source code, wi
 
 
 ```
-drkirkby`@`swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $  ./configure --shared
+drkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $  ./configure --shared
 Checking for shared library support...
 Building shared library libz.so.1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.
 Checking for unistd.h... Yes.
@@ -99,7 +99,7 @@ Trying to build in 64-bit mode, the shared library is not built.
 
 
 ```
-drkirkby`@`swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $ CFLAGS=-m64  ./configure --shared
+drkirkby@swan:[~/sage-4.3.1.alpha1/spkg/standard/zlib-1.2.3.p5/src] $ CFLAGS=-m64  ./configure --shared
 Checking for shared library support...
 No shared library support; try without defining CC and CFLAGS
 Building static library libz.a version 1.2.3 with /usr/local/gcc-4.4.1-sun-linker/bin/gcc.

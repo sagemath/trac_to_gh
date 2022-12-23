@@ -1,6 +1,6 @@
 # Issue 6985: complex_plot needs to use fast_callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6985
 
 Original creator: jason
 

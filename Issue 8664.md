@@ -1,6 +1,6 @@
 # Issue 8664: upgrade sage's mpir spkg to version 2.0.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8664
 
 Original creator: was
 
@@ -629,7 +629,7 @@ Or did I misunderstand you? (As mentioned in a comment above, the hint to rerun 
 diff --git a/spkg-install b/spkg-install
 --- a/spkg-install
 +++ b/spkg-install
-`@``@` -123,18 +123,6 `@``@`
+@@ -123,18 +123,6 @@
      $MAKE
      if [ $? -ne 0 ]; then
          echo "Error building MPIR."
@@ -648,7 +648,7 @@ diff --git a/spkg-install b/spkg-install
          exit 1
      fi 
  
-`@``@` -146,6 +134,18 `@``@`
+@@ -146,6 +134,18 @@
      if [ $? -ne 0 ]; then
          if [ "$UNAME" != "CYGWIN" ]; then  # On Cygwin an error is not fatal.
              echo "Error installing MPIR."
@@ -2065,9 +2065,9 @@ The only single thing that has changed there is that the one-line patch to `modu
 ```patch
 --- ../patches/trac_5847-module_list-fix_execstack-sagelib.patch	2011-06-02 21:38:51.000000000 +0200
 +++ ../patches/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch	2011-07-20 07:08:13.000000000 +0200
-`@``@` -1,22 +1,24 `@``@`
+@@ -1,22 +1,24 @@
  # HG changeset patch
- # User Leif Leonhardy <not.really`@`online.de>
+ # User Leif Leonhardy <not.really@online.de>
 -# Date 1307043111 -7200
 -# Node ID e7b1b631a38756bb37aa5edc7a0e31ff10eaa86a
 -# Parent  fb00ec75853019eb9799fd863b193fe82ee97c74
@@ -2082,13 +2082,13 @@ The only single thing that has changed there is that the one-line patch to `modu
 -diff -r fb00ec758530 -r e7b1b631a387 module_list.py
 ---- a/module_list.py	Wed May 11 22:39:05 2011 +0000
 -+++ b/module_list.py	Thu Jun 02 21:31:51 2011 +0200
--`@``@` -561,6 +561,8 `@``@`
+-@@ -561,6 +561,8 @@
 +(Rebased patch for Sage 4.7.1.alpha4 / #11377)
 +
 +diff -r 8532a2ad1e55 -r 556a3825c961 module_list.py
 +--- a/module_list.py	Sun Jul 03 14:23:12 2011 +0000
 ++++ b/module_list.py	Tue Jul 05 12:50:32 2011 +0200
-+`@``@` -568,6 +568,8 `@``@`
++@@ -568,6 +568,8 @@
       Extension('sage.libs.libecm',
                 sources = ['sage/libs/libecm.pyx'],
                 libraries = ['ecm', 'gmp'],

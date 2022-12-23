@@ -1,6 +1,6 @@
 # Issue 3520: bug in integrating sqrt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3520
 
 Original creator: wdj
 

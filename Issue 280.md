@@ -1,6 +1,6 @@
 # Issue 280: Extensions should coerce defining polynomials into base fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/280
 
 Original creator: ncalexan
 

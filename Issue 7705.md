@@ -1,6 +1,6 @@
 # Issue 7705: graphs: replace the worldmap sobj by some code (or something else that is transparent)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7705
 
 Original creator: was
 

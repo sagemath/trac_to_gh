@@ -1,6 +1,6 @@
 # Issue 5444: elipses + float = boom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5444
 
 Original creator: boothby
 

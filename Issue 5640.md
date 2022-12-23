@@ -1,6 +1,6 @@
 # Issue 5640: no way to figure out list of colormaps from matrix plot's docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5640
 
 Original creator: was
 

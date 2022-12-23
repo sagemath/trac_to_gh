@@ -1,6 +1,6 @@
 # Issue 1495: ATLAS fails to compile on FC7 32 bit with multiple cores
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1495
 
 Original creator: jsp
 

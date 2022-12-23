@@ -1,6 +1,6 @@
 # Issue 9115: smart summing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9115
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 6253: [with patch, needs review] Constant functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6253
 
 Original creator: nthiery
 

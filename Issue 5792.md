@@ -1,6 +1,6 @@
 # Issue 5792: Dirichlet character bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5792
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 7758: doctest failure on OS X 10.5 intel due to randomization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7758
 
 Original creator: was
 

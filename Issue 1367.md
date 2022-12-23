@@ -1,6 +1,6 @@
 # Issue 1367: weird bug creating fractional ideal in relative number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1367
 
 Original creator: was
 
@@ -467,7 +467,7 @@ Ok, to make this patch apply I need to do two things:
 diff -r ec9f29930e81 sage/rings/number_field/number_field_ideal_rel.py
 --- a/sage/rings/number_field/number_field_ideal_rel.py Sun Jan 25 08:47:06 2009 +0100
 +++ b/sage/rings/number_field/number_field_ideal_rel.py Wed Jan 28 21:27:03 2009 -0800
-`@``@` -69,8 +69,11 `@``@`
+@@ -69,8 +69,11 @@
          try:
              return self.__absolute_ideal
          except AttributeError:
@@ -485,7 +485,7 @@ due to
 
 ```
 changeset:   11444:4196cd54c996
-user:        Robert Bradshaw <robertwb`@`math.washington.edu>
+user:        Robert Bradshaw <robertwb@math.washington.edu>
 date:        Fri Jan 23 03:38:03 2009 -0800
 summary:     Convert univariate polynomials to new coercion model.
 ```

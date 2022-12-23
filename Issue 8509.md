@@ -1,6 +1,6 @@
 # Issue 8509: Ilegal 'grep -o' causes problems installing optional packages on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8509
 
 Original creator: drkirkby
 

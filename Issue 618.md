@@ -1,6 +1,6 @@
 # Issue 618: doctest errors in rings/polynomial/polynomial_element.pyx due to new substitute code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/618
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 155: bug in factor over RR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/155
 
 Original creator: wdj
 
@@ -41,7 +41,7 @@ Fixed.
 ```
 
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168647440 28800
 # Node ID c7164849d131e768a44b8c02da9bde74bed9f801
 # Parent  e7e66d37ff7a6bc0c31efa693c0dcd5be1c6d048
@@ -50,7 +50,7 @@ Fix trac #155 and related issues (poly factoring over RR and CC).
 diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pxd
 --- a/sage/rings/complex_number.pxd     Fri Jan 12 14:39:13 2007 -0800
 +++ b/sage/rings/complex_number.pxd     Fri Jan 12 16:17:20 2007 -0800
-`@``@` -2,10 +2,9 `@``@` include 'mpfr.pxi'
+@@ -2,10 +2,9 @@ include 'mpfr.pxi'
  include 'mpfr.pxi'
  
  cimport sage.structure.element
@@ -65,7 +65,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pxd
 diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pyx
 --- a/sage/rings/complex_number.pyx     Fri Jan 12 14:39:13 2007 -0800
 +++ b/sage/rings/complex_number.pyx     Fri Jan 12 16:17:20 2007 -0800
-`@``@` -17,7 +17,7 `@``@` import math
+@@ -17,7 +17,7 @@ import math
  import math
  import operator
  
@@ -74,7 +74,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pyx
  
  import complex_field
  import real_field
-`@``@` -39,7 +39,7 `@``@` def is_ComplexNumber(x):
+@@ -39,7 +39,7 @@ def is_ComplexNumber(x):
  def is_ComplexNumber(x):
      return isinstance(x, ComplexNumber)
  
@@ -83,7 +83,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pyx
      """
      A complex number.
  
-`@``@` -65,7 +65,7 `@``@` cdef class ComplexNumber(sage.structure.
+@@ -65,7 +65,7 @@ cdef class ComplexNumber(sage.structure.
      
      def __init__(self, parent, real, imag=None):
          cdef real_mpfr.RealNumber rr, ii
@@ -92,7 +92,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pyx
          self._prec = self._parent._prec
          self._multiplicative_order = None
  
-`@``@` -101,7 +101,7 `@``@` cdef class ComplexNumber(sage.structure.
+@@ -101,7 +101,7 @@ cdef class ComplexNumber(sage.structure.
      
      def  __dealloc__(self):
          mpfr_clear(self.__re)
@@ -104,7 +104,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/complex_number.pyx
 diff -r e7e66d37ff7a -r c7164849d131 sage/rings/polynomial_element.py
 --- a/sage/rings/polynomial_element.py  Fri Jan 12 14:39:13 2007 -0800
 +++ b/sage/rings/polynomial_element.py  Fri Jan 12 16:17:20 2007 -0800
-`@``@` -952,6 +952,22 `@``@` class Polynomial(commutative_algebra_ele
+@@ -952,6 +952,22 @@ class Polynomial(commutative_algebra_ele
              sage: f = x^0
              sage: f.factor()
              1
@@ -127,7 +127,7 @@ diff -r e7e66d37ff7a -r c7164849d131 sage/rings/polynomial_element.py
          """
  
          # PERFORMANCE NOTE:
-`@``@` -972,10 +988,13 `@``@` class Polynomial(commutative_algebra_ele
+@@ -972,10 +988,13 @@ class Polynomial(commutative_algebra_ele
          
          from sage.rings.number_field.all import is_NumberField
          

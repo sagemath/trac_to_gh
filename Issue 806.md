@@ -1,6 +1,6 @@
 # Issue 806: matrix_integer_dense.elementary_divisors return a mutable object
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/806
 
 Original creator: syazdani
 

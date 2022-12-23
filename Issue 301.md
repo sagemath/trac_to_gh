@@ -1,6 +1,6 @@
 # Issue 301: Create some functions for notebook history.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/301
 
 Original creator: TimothyClemans
 

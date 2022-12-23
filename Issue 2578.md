@@ -1,6 +1,6 @@
 # Issue 2578: bug in bernoulli_polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2578
 
 Original creator: was
 

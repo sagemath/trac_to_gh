@@ -1,6 +1,6 @@
 # Issue 7873: Fix 'gap' to remove usage of '$RM' and replace wth 'rm'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7873
 
 Original creator: drkirkby
 

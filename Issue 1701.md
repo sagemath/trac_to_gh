@@ -1,6 +1,6 @@
 # Issue 1701: attempt to clean up currRing if deallocated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1701
 
 Original creator: malb
 

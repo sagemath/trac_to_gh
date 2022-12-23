@@ -1,6 +1,6 @@
 # Issue 6442: Random(?) index error with determinant method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6442
 
 Original creator: spancratz
 
@@ -139,7 +139,7 @@ Comment by zimmerma created at 2012-01-10 10:27:36
 I tried the attached patch on top of 4.7.2 but the problem with the initial matrix still exists:
 
 ```
-[zimmerma`@`coing tmp]$ sage
+[zimmerma@coing tmp]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: 6442

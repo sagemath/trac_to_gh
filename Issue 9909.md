@@ -1,6 +1,6 @@
 # Issue 9909: Longest path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9910
 
 Original creator: ncohen
 

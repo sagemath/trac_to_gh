@@ -1,6 +1,6 @@
 # Issue 4519: [with patch, needs review] problem with build code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4519
 
 Original creator: craigcitro
 

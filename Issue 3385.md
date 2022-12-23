@@ -1,6 +1,6 @@
 # Issue 3385: plot_vector_field does not deal with aspect ratios correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3385
 
 Original creator: ddrake
 

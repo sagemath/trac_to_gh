@@ -1,6 +1,6 @@
 # Issue 3467: [with patch, needs review] implements @parallel decorator using dsage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3467
 
 Original creator: yi
 

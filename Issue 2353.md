@@ -1,6 +1,6 @@
 # Issue 2353: MPolynomialRing should be deprecated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2353
 
 Original creator: burcin
 
@@ -78,7 +78,7 @@ attachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MP
     Sage. Please use PolynomialRing instead.
 
     If you have questions regarding this function and it's replacement,
-    please send your comments to sage-support`@`googlegroups.com.
+    please send your comments to sage-support@googlegroups.com.
 ```
 
 
@@ -101,7 +101,7 @@ The were some small problems with the doc patch:
 ```
 --- a/tut/tut.tex       Sun May 04 11:23:15 2008 -0700
 +++ b/tut/tut.tex       Sun May 11 04:01:36 2008 +0200
-`@``@` -947,12 +947,10 `@``@` in one of two ways.
+@@ -947,12 +947,10 @@ in one of two ways.
  \index{polynomial!ring of multivariate}
 
  \begin{verbatim}

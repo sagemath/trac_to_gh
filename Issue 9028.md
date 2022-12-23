@@ -1,6 +1,6 @@
 # Issue 9028: Basic Stats - Standard Deviation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9028
 
 Original creator: amhou
 

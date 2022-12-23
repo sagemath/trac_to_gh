@@ -1,6 +1,6 @@
 # Issue 6157: [with patch, needs review] enhance implicit_plot3d documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6157
 
 Original creator: jason
 

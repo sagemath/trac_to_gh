@@ -1,6 +1,6 @@
 # Issue 7375: upgrade M4RI to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7375
 
 Original creator: malb
 
@@ -107,11 +107,11 @@ Here is what the script gives as output on both Sun and GNU compilers on a Sun w
 
 
 ```
-drkirkby`@`swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc
-drkirkby`@`swan:[~] $ ./testcc
+drkirkby@swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc
+drkirkby@swan:[~] $ ./testcc
 Sun_on_Solaris
-drkirkby`@`swan:[~] $ export CC=gcc
-drkirkby`@`swan:[~] $ ./testcc
+drkirkby@swan:[~] $ export CC=gcc
+drkirkby@swan:[~] $ ./testcc
 GNU
 ```
 

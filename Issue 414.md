@@ -1,6 +1,6 @@
 # Issue 414: Attaching .pyx doesn't work anymore (only .spyx)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/414
 
 Original creator: malb
 

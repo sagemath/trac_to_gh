@@ -1,6 +1,6 @@
 # Issue 7769: delete some rst files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7769
 
 Original creator: jhpalmieri
 

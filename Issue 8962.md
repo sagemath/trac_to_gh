@@ -1,6 +1,6 @@
 # Issue 8962: Change realfield latex representation to include precision/rounding information
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8962
 
 Original creator: jason
 

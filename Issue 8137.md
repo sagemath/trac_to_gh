@@ -1,6 +1,6 @@
 # Issue 8137: Thomas R. Nicely's Hardy-Littlewood logarithmic integral approximations to counts of prime constellations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8137
 
 Original creator: kevin.stueve
 

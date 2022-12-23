@@ -1,6 +1,6 @@
 # Issue 9536: python setup.py picks prefix from ~/.pydistutils.cfg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9536
 
 Original creator: AlexanderDreyer
 

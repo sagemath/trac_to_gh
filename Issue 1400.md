@@ -1,6 +1,6 @@
 # Issue 1400: QuadraticFields and ClassGroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1400
 
 Original creator: ljpk
 

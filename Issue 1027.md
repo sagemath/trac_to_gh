@@ -1,6 +1,6 @@
 # Issue 1027: problems with extcode spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1027
 
 Original creator: cwitty
 
@@ -17,7 +17,7 @@ There are a couple of problems with the extcode spkg:
 This shows both problems (the '!' means the file is missing):
 
 ```
-cwitty`@`comet:~/spkg/extcode-2.8.10$ hg status
+cwitty@comet:~/spkg/extcode-2.8.10$ hg status
 ! .hgignore
 ! .hgtags
 ? extcode-2006-12-11.hg

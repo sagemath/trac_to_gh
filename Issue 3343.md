@@ -1,6 +1,6 @@
 # Issue 3343: arguments, documentation to ln function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3343
 
 Original creator: jhpalmieri
 

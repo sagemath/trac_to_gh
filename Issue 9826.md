@@ -1,6 +1,6 @@
 # Issue 9826: Intermittent doctest failure in sage/interfaces/psage.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9827
 
 Original creator: mpatel
 

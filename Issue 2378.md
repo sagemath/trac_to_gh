@@ -1,6 +1,6 @@
 # Issue 2378: graph animations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2378
 
 Original creator: jason
 

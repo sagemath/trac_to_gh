@@ -1,6 +1,6 @@
 # Issue 7320: search_src and friends are case-sensitive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7320
 
 Original creator: jhpalmieri
 

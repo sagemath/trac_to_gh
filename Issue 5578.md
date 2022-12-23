@@ -1,6 +1,6 @@
 # Issue 5578: [with patch, needs review] elliptic curve local data cache ignores proof flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5578
 
 Original creator: robertwb
 

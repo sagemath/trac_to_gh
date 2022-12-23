@@ -1,6 +1,6 @@
 # Issue 6779: [with patch, needs review] positive_integer_relations bug in lattice_polytope
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6779
 
 Original creator: novoselt
 

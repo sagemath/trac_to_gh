@@ -1,6 +1,6 @@
 # Issue 2073: calculus -- get doctest coverage up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2073
 
 Original creator: was
 

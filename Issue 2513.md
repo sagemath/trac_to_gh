@@ -1,6 +1,6 @@
 # Issue 2513: Weird printing issues with cython, caused by LANG environment variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2513
 
 Original creator: craigcitro
 

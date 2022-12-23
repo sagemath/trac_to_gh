@@ -1,6 +1,6 @@
 # Issue 1034: clean up 'revlex' term ordering mess
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1034
 
 Original creator: malb
 

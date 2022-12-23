@@ -1,6 +1,6 @@
 # Issue 9201: Add missing R modules and make `spkg-check` pass on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9201
 
 Original creator: mpatel
 
@@ -57,9 +57,9 @@ I'm puzzled why libgcc_s.so.1 is not found. I would expect a failure to find tha
 
 
 ```
-kirkby`@`t2:[~] $ ls -l  /usr/local/gcc-4.4.1-sun-linker/lib/libgcc_s.so.1
+kirkby@t2:[~] $ ls -l  /usr/local/gcc-4.4.1-sun-linker/lib/libgcc_s.so.1
 -rw-r--r--   1 nobody   nobody    259816 Aug  3  2009 /usr/local/gcc-4.4.1-sun-linker/lib/libgcc_s.so.1
-kirkby`@`t2:[~] $ echo $LD_LIBRARY_PATH
+kirkby@t2:[~] $ echo $LD_LIBRARY_PATH
 /usr/local/gcc-4.4.1-sun-linker/lib:/usr/local/gcc-4.4.1-sun-linker/lib/sparcv9:/usr/local/lib
 ```
 
@@ -212,9 +212,9 @@ where
 
 
 ```
-kirkby`@`t2:[~/sage-4.4.3] $ echo $LD_LIBRARY_PATH
+kirkby@t2:[~/sage-4.4.3] $ echo $LD_LIBRARY_PATH
 /usr/local/gcc-4.4.1-sun-linker/lib:/usr/local/lib
-kirkby`@`t2:[~/sage-4.4.3] $ 
+kirkby@t2:[~/sage-4.4.3] $ 
 ```
 
 

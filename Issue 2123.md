@@ -1,6 +1,6 @@
 # Issue 2123: bug in modular symbols setting sign on subspace
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2123
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 5340: NTL "context"s can be restored at the wrong time, leading to randomly-wrong answers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5340
 
 Original creator: cwitty
 

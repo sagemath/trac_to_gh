@@ -1,6 +1,6 @@
 # Issue 6967: @parallel -- dramatically improve by rewriting with fork directly, using files, timeouts, controlling interfaces, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6967
 
 Original creator: was
 

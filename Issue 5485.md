@@ -1,6 +1,6 @@
 # Issue 5485: issue with dimension of ideals in polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5485
 
 Original creator: AlexGhitza
 

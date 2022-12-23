@@ -1,6 +1,6 @@
 # Issue 9278: remove databases/kohel.py since it is not used and broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9278
 
 Original creator: AlexGhitza
 

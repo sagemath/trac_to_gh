@@ -1,6 +1,6 @@
 # Issue 1775: clicking on 'search worksheets' can log you out.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1775
 
 Original creator: bill.p
 

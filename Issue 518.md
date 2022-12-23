@@ -1,6 +1,6 @@
 # Issue 518: fix the indentation in monsky_washnitzer.py to be *FOUR* spaces not two.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/518
 
 Original creator: was
 

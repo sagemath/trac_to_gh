@@ -1,6 +1,6 @@
 # Issue 2737: add balanced_sum to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2737
 
 Original creator: mhansen
 

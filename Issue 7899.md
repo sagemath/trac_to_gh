@@ -1,6 +1,6 @@
 # Issue 7899: Remove variable names like $LN, $MKDIR etc in ntl
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7899
 
 Original creator: drkirkby
 

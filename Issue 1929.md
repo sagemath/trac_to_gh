@@ -1,6 +1,6 @@
 # Issue 1929: add more examples to qqbar.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1929
 
 Original creator: cwitty
 

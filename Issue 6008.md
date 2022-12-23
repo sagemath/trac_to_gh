@@ -1,6 +1,6 @@
 # Issue 6008: Improved efficiency  of elliptic curve torsion computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6008
 
 Original creator: cremona
 

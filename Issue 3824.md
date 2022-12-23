@@ -1,6 +1,6 @@
 # Issue 3824: [with patch, needs review] notebook -- clicking sign out needs to resource not found page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3824
 
 Original creator: TimothyClemans
 

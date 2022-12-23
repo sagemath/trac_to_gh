@@ -1,6 +1,6 @@
 # Issue 1699: [with spkg] Fix matplotlib compilation on Linux/Itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1699
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8948: add thin space between vector entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8948
 
 Original creator: jason
 

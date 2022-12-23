@@ -1,6 +1,6 @@
 # Issue 8413: Add "Unknown" truth value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8413
 
 Original creator: hivert
 

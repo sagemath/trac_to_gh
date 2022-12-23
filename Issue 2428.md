@@ -1,6 +1,6 @@
 # Issue 2428: Sage CLI crashes on unicode input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2428
 
 Original creator: burcin
 

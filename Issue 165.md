@@ -1,6 +1,6 @@
 # Issue 165: pyrex weakref -- implement pyrex weakref support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/165
 
 Original creator: was
 

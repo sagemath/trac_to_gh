@@ -1,6 +1,6 @@
 # Issue 3402: Digraph.incoming_edges forgets labels
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3402
 
 Original creator: bump
 

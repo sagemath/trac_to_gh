@@ -1,6 +1,6 @@
 # Issue 7919: Doctest in sage/misc/test_class_pickling.py doesn't test anything
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7919
 
 Original creator: craigcitro
 

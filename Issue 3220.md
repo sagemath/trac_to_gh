@@ -1,6 +1,6 @@
 # Issue 3220: [with patch; needs review] readline -- fix a couple of issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3220
 
 Original creator: was
 

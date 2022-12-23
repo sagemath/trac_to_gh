@@ -1,6 +1,6 @@
 # Issue 9920: nose testing suite as an optional spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9921
 
 Original creator: jason
 
@@ -309,7 +309,7 @@ I do get something weird, hopefully unrelated to nose itself, but instead relate
 
 ```
 
-kcrisman`@`sage:~/sage-5.1.beta1-boxen-x86_64-Linux$ ./sage -c 'import matplotlib; matplotlib.test()'
+kcrisman@sage:~/sage-5.1.beta1-boxen-x86_64-Linux$ ./sage -c 'import matplotlib; matplotlib.test()'
 ======================================================================
 ERROR: Failure: OSError (No such file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/import matplotlib; matplotlib.test())
 ----------------------------------------------------------------------

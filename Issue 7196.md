@@ -1,6 +1,6 @@
 # Issue 7196: SageNB: Reorganize the JS/Java/CSS/HTML "data" directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7196
 
 Original creator: mpatel
 

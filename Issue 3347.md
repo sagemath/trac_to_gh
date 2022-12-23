@@ -1,6 +1,6 @@
 # Issue 3347: [with patches, needs review] lots of changes to the tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3347
 
 Original creator: jhpalmieri
 

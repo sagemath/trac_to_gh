@@ -1,6 +1,6 @@
 # Issue 3772: Gnuplot.py uses IPython/Python 2.6 keyword with
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3772
 
 Original creator: Jondice
 

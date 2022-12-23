@@ -1,6 +1,6 @@
 # Issue 8758: Add a top-level /data with static.File(DATA) that serves files from the data directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8758
 
 Original creator: acleone
 

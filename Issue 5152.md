@@ -1,6 +1,6 @@
 # Issue 5152: order of abelian group element is a rational number, but should be an integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5152
 
 Original creator: was
 

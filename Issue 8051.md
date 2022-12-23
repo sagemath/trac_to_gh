@@ -1,6 +1,6 @@
 # Issue 8051: SageNB 0.7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8051
 
 Original creator: mpatel
 
@@ -97,14 +97,14 @@ Comment by mvngu created at 2010-01-31 23:25:37
 I don't understand why the spkg is not managed by Mercurial:
 
 ```
-[mvngu`@`mod sagenb-0.7.2]$ hg st
+[mvngu@mod sagenb-0.7.2]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
 
 The file `spkg-install` should have its executable bits on:
 
 ```
-[mvngu`@`mod sagenb-0.7.2]$ ls -g spkg-install
+[mvngu@mod sagenb-0.7.2]$ ls -g spkg-install
 -rw-r--r-- 1 mvngu 348 2010-01-30 16:37 spkg-install
 ```
 
@@ -233,9 +233,9 @@ Comment by robert.marik created at 2010-02-02 18:49:36
 Installs fine, works fine with jsmath image fonts, tests paseed, cannot check the rest, since I have probably old hg in my Debian Linux
 
 ```
-sage`@`um-bc107:~/sagenb-0.7.2/src/sagenb$ hg log
+sage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg log
 abort: requirement 'fncache' not supported!
-sage`@`um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status
+sage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status
 abort: requirement 'fncache' not supported!
 ```
 
@@ -290,9 +290,9 @@ Comment by robert.marik created at 2010-02-05 08:34:36
 Thanks for the update. But now I have too many sage notebooks
 
 ```
-[marik`@`um-bc107 ../lib/python/site-packages]$ pwd
+[marik@um-bc107 ../lib/python/site-packages]$ pwd
 /opt/sage/local/lib/python/site-packages
-[marik`@`um-bc107 ../lib/python/site-packages]$ ls -ld sagenb*
+[marik@um-bc107 ../lib/python/site-packages]$ ls -ld sagenb*
 drwxr-xr-x 4 marik marik 4096  1. úno 17.16 sagenb-0.6-py2.6.egg
 drwxr-xr-x 4 marik marik 4096  2. úno 19.33 sagenb-0.7.2-py2.6.egg
 drwxr-xr-x 4 marik marik 4096  5. úno 09.13 sagenb-0.7.4-py2.6.egg

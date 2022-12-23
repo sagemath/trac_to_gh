@@ -1,6 +1,6 @@
 # Issue 597: Why are single-argument arithmetic functions in the coercion model?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/597
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 6544: remove graph_isom.pxd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6544
 
 Original creator: rlm
 

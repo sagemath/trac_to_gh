@@ -1,6 +1,6 @@
 # Issue 1431: basic plotting: add support for setting the location and labels of all tick marks on the x and y axes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1431
 
 Original creator: was
 

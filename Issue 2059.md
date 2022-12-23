@@ -1,6 +1,6 @@
 # Issue 2059: bug in polybori -- lexLmDeg -- no such attribute
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2059
 
 Original creator: was
 

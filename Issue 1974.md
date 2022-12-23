@@ -1,6 +1,6 @@
 # Issue 1974: notebook -- when changing the title of a worksheet, the javascript should change the document title (via DOM or at worst forced reload)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1974
 
 Original creator: was
 

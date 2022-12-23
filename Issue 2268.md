@@ -1,6 +1,6 @@
 # Issue 2268: has_coerce_map_from_c performance improvements (patch included)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2268
 
 Original creator: gfurnish
 

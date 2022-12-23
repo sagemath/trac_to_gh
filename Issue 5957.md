@@ -1,6 +1,6 @@
 # Issue 5957: 3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5957
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3799: degree sequence should not be a single integer in graph_database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3799
 
 Original creator: rlm
 

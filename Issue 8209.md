@@ -1,6 +1,6 @@
 # Issue 8209: make docstring processing available for introspection, and fix mathtt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8209
 
 Original creator: jhpalmieri
 

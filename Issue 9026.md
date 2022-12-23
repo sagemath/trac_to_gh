@@ -1,6 +1,6 @@
 # Issue 9026: Issues preventing 64-bit builds on various flavors of Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9026
 
 Original creator: drkirkby
 

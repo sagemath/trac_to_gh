@@ -1,6 +1,6 @@
 # Issue 367: Text output from the notebook should indent after ... more.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/367
 
 Original creator: was
 

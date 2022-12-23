@@ -1,6 +1,6 @@
 # Issue 5878: Add support for constructing irreducible matrix representations of the symmetric group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5878
 
 Original creator: saliola
 
@@ -38,7 +38,7 @@ Comment by mvngu created at 2009-05-19 05:57:15
 Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:
 
 ```
-[mvngu`@`sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py
+[mvngu@sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py
 <LOTS_OF_BOOM!>
 ```
 

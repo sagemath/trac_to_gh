@@ -1,6 +1,6 @@
 # Issue 5540: search_doc produces incorrect URLs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5540
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 5256: [with patch, needs review] coherent handling of trivial matrices (depend on #5244, #5242).
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5256
 
 Original creator: hivert
 

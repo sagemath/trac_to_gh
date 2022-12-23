@@ -1,6 +1,6 @@
 # Issue 8771: Sage-4.4 + GCC-4.5.0 -- sage fails to startup due to libzn_poly missing symbol issue (ZNP_mpn_mulmid_fallback_thresh)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8771
 
 Original creator: was
 
@@ -11,13 +11,13 @@ Assignee: GeorgSWeber
 The machine
 
 ```
-[wstein`@`lena sage-4.4]$ uname -a
+[wstein@lena sage-4.4]$ uname -a
 Linux lena 2.6.31.12-174.2.19.fc12.x86_64 #1 SMP Thu Feb 11 07:07:16 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux
-[wstein`@`lena sage-4.4]$ cat /etc/issue
+[wstein@lena sage-4.4]$ cat /etc/issue
 Fedora release 12 (Constantine)
 Kernel \r on an \m (\l)
 
-[wstein`@`lena sage-4.4]$ gcc -v
+[wstein@lena sage-4.4]$ gcc -v
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-k10-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper

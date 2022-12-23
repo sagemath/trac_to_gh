@@ -1,6 +1,6 @@
 # Issue 7015: [with patch; needs review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7015
 
 Original creator: was
 

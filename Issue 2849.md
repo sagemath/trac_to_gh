@@ -1,6 +1,6 @@
 # Issue 2849: Bug in elliptic curve cardinality for j=0 in char. 3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2849
 
 Original creator: cremona
 

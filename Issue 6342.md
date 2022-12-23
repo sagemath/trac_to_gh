@@ -1,6 +1,6 @@
 # Issue 6342: notebook -- fix that the slideshow mode in the notebook utterly completely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6342
 
 Original creator: was
 

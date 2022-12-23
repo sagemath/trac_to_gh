@@ -1,6 +1,6 @@
 # Issue 9232: jmol on commandline broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9232
 
 Original creator: vbraun
 
@@ -138,8 +138,8 @@ Comment by vbraun created at 2010-07-15 04:59:25
 I did a
 
 ```
-[vbraun`@`localhost sage]$ rm ./spkg/optional/Jmol_for_SageNoteBook-1.1.spkg
-[vbraun`@`localhost sage]$ ./sage -f http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.spkg
+[vbraun@localhost sage]$ rm ./spkg/optional/Jmol_for_SageNoteBook-1.1.spkg
+[vbraun@localhost sage]$ ./sage -f http://www.uwosh.edu/faculty_staff/gutow/Jmol_for_SageNoteBook-1.1.spkg
 ```
 
 and it re-downloaded the Jmol spkg. Still fails with the same error message.
@@ -212,7 +212,7 @@ I saved the `sys.path` within `sage-pypkg-location`, and it reads:
 But sage install zlib in
 
 ```
-[vbraun`@`volker-two sage-4.5.alpha1]$ find | grep zlib.so
+[vbraun@volker-two sage-4.5.alpha1]$ find | grep zlib.so
 ./local/lib/python2.6/lib-dynload/zlib.so
 ```
 

@@ -1,6 +1,6 @@
 # Issue 8674: Comparison of combinatorial class of words with word paths is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8674
 
 Original creator: slabbe
 

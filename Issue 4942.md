@@ -1,6 +1,6 @@
 # Issue 4942: find_root() is broken when interval borders cannot be evaluated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4942
 
 Original creator: mabshoff
 

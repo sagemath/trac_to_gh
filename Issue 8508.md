@@ -1,6 +1,6 @@
 # Issue 8508: max is broken on symbolic input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8508
 
 Original creator: zimmerma
 

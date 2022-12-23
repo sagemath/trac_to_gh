@@ -1,6 +1,6 @@
 # Issue 4150: [with patch, needs review and testing] migrate graphs to new refinement code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4150
 
 Original creator: rlm
 

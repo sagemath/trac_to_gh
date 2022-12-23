@@ -1,6 +1,6 @@
 # Issue 702: Ellipsis range notation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/702
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 3850: Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3850
 
 Original creator: mabshoff
 

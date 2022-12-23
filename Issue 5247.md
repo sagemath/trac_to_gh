@@ -1,6 +1,6 @@
 # Issue 5247: cuspform_lseries() computing sign of functional equation incorrectly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5247
 
 Original creator: mabshoff
 

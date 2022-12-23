@@ -1,6 +1,6 @@
 # Issue 3335: update ipython to 0.8.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3335
 
 Original creator: mabshoff
 

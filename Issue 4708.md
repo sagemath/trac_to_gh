@@ -1,6 +1,6 @@
 # Issue 4708: sage -tp doesn't test absolute file names nor does it ignore non-existent files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4708
 
 Original creator: ncalexan
 

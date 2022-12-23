@@ -1,6 +1,6 @@
 # Issue 6767: typo in totallyreal_rel.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6767
 
 Original creator: fwclarke
 

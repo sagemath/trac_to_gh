@@ -1,6 +1,6 @@
 # Issue 9878: allow preventing automatic evaluation of symbolic expressions (hold)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9879
 
 Original creator: burcin
 

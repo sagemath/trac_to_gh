@@ -1,6 +1,6 @@
 # Issue 2769: matplotlib produces invalid PDFs with axes=False
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2769
 
 Original creator: ddrake
 
@@ -24,7 +24,7 @@ the second file is not valid; if you use it in a LaTeX document, it makes the te
 
 
 ```
-drake`@`sansu5:~$ pdf2ps withoutaxes.pdf 
+drake@sansu5:~$ pdf2ps withoutaxes.pdf 
    **** Warning: File has imbalanced q/Q operators (too many q's)
 
    **** This file had errors that were repaired or ignored.

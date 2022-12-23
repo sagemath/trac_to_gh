@@ -1,6 +1,6 @@
 # Issue 4295: delete mercurial-howto.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4295
 
 Original creator: mabshoff
 

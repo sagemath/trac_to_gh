@@ -1,6 +1,6 @@
 # Issue 6605: sage -docbuild DOC FORMAT should do better error checking on DOC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6605
 
 Original creator: jhpalmieri
 
@@ -68,7 +68,7 @@ Comment by mvngu created at 2009-07-26 23:32:54
 The patch applies but with fuzz:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6605/trac_6605-docbuild-check.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6605/trac_6605-docbuild-check.patch && hg qpush
 adding trac_6605-docbuild-check.patch to series file
 applying trac_6605-docbuild-check.patch
 patching file doc/common/builder.py
@@ -97,7 +97,7 @@ sage -bdist <version>
 After that, upgrade a previous release to this new release and rebuild the documentation. You then get this error message:
 
 ```
-[mvngu`@`sage sage-4.1.1.alpha1-test-x86_64-Linux]$ ./sage -docbuild tutorial htmlTraceback (most recent call last):
+[mvngu@sage sage-4.1.1.alpha1-test-x86_64-Linux]$ ./sage -docbuild tutorial htmlTraceback (most recent call last):
   File "/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py", line 673, in <module>
     getattr(get_builder(name), type)()
   File "/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py", line 616, in get_builder

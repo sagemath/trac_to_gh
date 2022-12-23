@@ -1,6 +1,6 @@
 # Issue 3014: ZZ.random_element -- corrupted docstring (easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3014
 
 Original creator: was
 

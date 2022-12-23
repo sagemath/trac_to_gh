@@ -1,6 +1,6 @@
 # Issue 2249: [with patch; needs review] comments to indicate in docstrings that log is not finished in some cases for p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2249
 
 Original creator: was
 

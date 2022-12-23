@@ -1,6 +1,6 @@
 # Issue 6819: multinomial to accept lists as argument too
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6819
 
 Original creator: rishi
 

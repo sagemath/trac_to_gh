@@ -1,6 +1,6 @@
 # Issue 9471: include matplotlib html5 canvas rendering to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9471
 
 Original creator: was
 

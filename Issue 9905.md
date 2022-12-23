@@ -1,6 +1,6 @@
 # Issue 9905: Move the RPy package outside of the R package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9906
 
 Original creator: mpatel
 
@@ -454,7 +454,7 @@ There is also some general cleanup that could happen; for example:
 diff --git a/spkg-install b/spkg-install
 --- a/spkg-install
 +++ b/spkg-install
-`@``@` -67,15 +67,6 `@``@` if [ "$UNAME" = "SunOS" ]; then
+@@ -67,15 +67,6 @@ if [ "$UNAME" = "SunOS" ]; then
      SUN_FLAGS="--without-ICU"; export SUN_FLAGS
  fi
  
@@ -470,7 +470,7 @@ diff --git a/spkg-install b/spkg-install
  cd src
  
  # Apply patches.  See SPKG.txt for information about what each patch
-`@``@` -131,6 +122,15 `@``@` if [ $? -ne 0 ]; then
+@@ -131,6 +122,15 @@ if [ $? -ne 0 ]; then
      exit 1
  fi
  
@@ -486,7 +486,7 @@ diff --git a/spkg-install b/spkg-install
  # Disable parallel make install, which is supposedly broken
  $MAKE -j1 vignettes  # Needed for help system
  $MAKE -j1 install
-`@``@` -168,7 +168,7 `@``@` if [ $? -ne 0 ] || [ ! -f "$SAGE_ROOT"/s
+@@ -168,7 +168,7 @@ if [ $? -ne 0 ] || [ ! -f "$SAGE_ROOT"/s
  fi
  
  if [ "$UNAME" = "Darwin" ]; then

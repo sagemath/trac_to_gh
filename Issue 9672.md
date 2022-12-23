@@ -1,6 +1,6 @@
 # Issue 9672: Improve performance of Graph.genus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9672
 
 Original creator: boothby
 

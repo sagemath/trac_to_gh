@@ -1,6 +1,6 @@
 # Issue 6759: [with spkg; needs review] Update sqlite to latest release - needed for Sun's compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6759
 
 Original creator: drkirkby
 
@@ -704,7 +704,7 @@ Here's the effect of the old Makefile.in "patch":
 ```
 --- src/Makefile.in	2007-11-24 00:05:48.000000000 +0900
 +++ patches/Makefile.in	2008-05-17 03:36:19.000000000 +0900
-`@``@` -570,11 +570,12 `@``@`
+@@ -570,11 +570,12 @@
  		libtclsqlite3.la $(LIBTCL)
  
  

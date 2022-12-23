@@ -1,6 +1,6 @@
 # Issue 5166: Sage 3.3.a4: sage/symbolic/function.pyx doctest failure on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5166
 
 Original creator: mabshoff
 

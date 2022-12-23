@@ -1,6 +1,6 @@
 # Issue 834: performance issue -- echelon strassen mod p -- Sage is better than linbox on my computer., so why use linbox by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/834
 
 Original creator: was
 

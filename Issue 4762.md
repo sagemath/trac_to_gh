@@ -1,6 +1,6 @@
 # Issue 4762: Odd error message for congruence subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4762
 
 Original creator: ljpk
 

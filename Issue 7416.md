@@ -1,6 +1,6 @@
 # Issue 7416: Create a 'man page'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7416
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1805: improve doctest coverage for structure/factorization.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1805
 
 Original creator: was
 
@@ -18,7 +18,7 @@ Comment by was created at 2008-01-17 20:00:24
 Before:
 
 ```
-sage`@`modular:~/d/sage/sage/structure$ sage -coverage factorization.py 
+sage@modular:~/d/sage/sage/structure$ sage -coverage factorization.py 
 ----------------------------------------------------------------------
 factorization.py
 SCORE factorization.py: 28% (6 of 21)

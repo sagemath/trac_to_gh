@@ -1,6 +1,6 @@
 # Issue 7018: Looking for trees with search_doc("tree") is a bad idea
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7018
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 2449: interact -- interactive functions in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2449
 
 Original creator: was
 
@@ -63,7 +63,7 @@ Comment by was created at 2008-03-10 06:12:55
 Here's an example that makes use of several of the different available widgets:
 
 ```
-`@`interact
+@interact
 def _(title=["A Plot Demo", "Something silly", "something tricky"], a=input_box(sin(x*sin(x*sin(x))), 'function'),
       clr=Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):
      html('<h1 align=center>%s</h1>'%title)
@@ -108,7 +108,7 @@ Here is my attempt at being able to show what you are coloring in a plot:
 
 
 ```
-`@`interact
+@interact
 def _(item=['Polygon', 'Points'],c=Color('red')):
     pts = [(0.65438363916925979, 0.85150056342598845), (0.70937855184366272,
 0.029131148388535144), (0.85031921177678882, 0.85521222531849894),

@@ -1,6 +1,6 @@
 # Issue 1731: SAge mac app
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1731
 
 Original creator: was
 
@@ -40,10 +40,10 @@ Comment by mabshoff created at 2008-02-10 10:40:26
 Some more info from http://groups.google.com/group/sage-devel/t/c181f8ccde549cdd:
 
 ```
- rpmuller`@`gmail.com     	
+ rpmuller@gmail.com     	
 View profile
 	 More options Feb 9, 3:20 am
-From: "rpmul...`@`gmail.com" <rpmul...`@`gmail.com>
+From: "rpmul...@gmail.com" <rpmul...@gmail.com>
 Date: Fri, 8 Feb 2008 18:20:32 -0800 (PST)
 Local: Sat, Feb 9 2008 3:20 am
 Subject: Mac-like application for Sage on Mac

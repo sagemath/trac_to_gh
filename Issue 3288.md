@@ -1,6 +1,6 @@
 # Issue 3288: linear_code -- memory errors in doctests -- need to be marked #long or otherwise fixed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3288
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8930: Deprecate EnumeratedSet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8930
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 9291: Constructing a root system / coxeter group from a pair of matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9291
 
 Original creator: nthiery
 

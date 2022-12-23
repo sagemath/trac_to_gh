@@ -1,6 +1,6 @@
 # Issue 102: RSS on wiki "recent changes" page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/102
 
 Original creator: dmharvey
 

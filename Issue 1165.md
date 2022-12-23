@@ -1,6 +1,6 @@
 # Issue 1165: [with patch] fixed typo in wester.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1165
 
 Original creator: zimmerma
 

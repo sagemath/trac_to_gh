@@ -1,6 +1,6 @@
 # Issue 4237: magma -- finite field matrix conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4237
 
 Original creator: was
 
@@ -397,7 +397,7 @@ Now the time is totally dominated by the time Magma spends in the function Strin
 I tried the 2*10^4 example.  With the new code, Sage does create a 5GB string in memory, then writes it to a 763MB file:
 
 ```
-was`@`sage:~/.sage/temp/sage/22977/interface$ ls -lh
+was@sage:~/.sage/temp/sage/22977/interface$ ls -lh
 total 764M
 -rw-r--r-- 1 was was 763M 2008-12-12 11:12 tmp22977
 ```
@@ -436,7 +436,7 @@ patch2 doesn't apply against my 3.2.1. Hunk:
 ```
 --- matrix_mod2_dense.pyx
 +++ matrix_mod2_dense.pyx
-`@``@` -1136,7 +1136,7 `@``@`
+@@ -1136,7 +1136,7 @@
          EXAMPLE:
              sage: A = random_matrix(GF(2),3,3)
              sage: A._magma_init_(magma)                             # optional - magma

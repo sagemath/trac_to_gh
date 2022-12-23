@@ -1,6 +1,6 @@
 # Issue 4999: Solaris 10/Sparc: numerical noise doctest failure in sage/gsl/integration.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4999
 
 Original creator: mabshoff
 

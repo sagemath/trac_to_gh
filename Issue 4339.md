@@ -1,6 +1,6 @@
 # Issue 4339: modular forms -- incorporate Nils Skoruppa's code for computing generators for the ring of modular forms of given level
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4339
 
 Original creator: was
 

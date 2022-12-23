@@ -1,6 +1,6 @@
 # Issue 2361: Substitution without specifying variables should raise exception in case of ambiguity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2361
 
 Original creator: parombouts
 

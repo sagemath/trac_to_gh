@@ -1,6 +1,6 @@
 # Issue 2166: [with patch] Sage 2.10.2.alpha0: matrix/matrix_symbolic_dense.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2166
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3442: is_normal for permutation groups gives wrong answer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3442
 
 Original creator: wjp
 

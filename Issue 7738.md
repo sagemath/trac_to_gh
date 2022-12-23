@@ -1,6 +1,6 @@
 # Issue 7738: remove Michael Abshoff as maintainer of any of spkg's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7738
 
 Original creator: was
 

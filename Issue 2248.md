@@ -1,6 +1,6 @@
 # Issue 2248: [with patch, needs trivial review] sage-2.10.2.alpha2: multi_polynomial.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2248
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1010: upgrade gfan to version 0.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1010
 
 Original creator: was
 
@@ -252,7 +252,7 @@ sage: P = PolynomialRing(GF(127),10,'x')
 sage: I = sage.rings.ideal.FieldIdeal(P)
 sage: gf = I.groebner_fan()
 sage: gb = gf.reduced_groebner_bases()
-[This is the Trac macro *x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0-macro)
+[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]
 
 sage: P = PolynomialRing(GF(127),11,'x')
 sage: I = sage.rings.ideal.FieldIdeal(P)

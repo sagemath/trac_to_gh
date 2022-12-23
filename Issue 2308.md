@@ -1,6 +1,6 @@
 # Issue 2308: remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2308
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4536: Various number field order and ideal utilities
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4536
 
 Original creator: cremona
 

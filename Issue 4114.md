@@ -1,6 +1,6 @@
 # Issue 4114: [with patch, needs review] hang in lisp.py on OS X 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4114
 
 Original creator: mhansen
 
@@ -17,7 +17,7 @@ sage -t -long devel/sage/sage/interfaces/lie.py
         [5.5 s]
 sage -t -long devel/sage/sage/interfaces/lisp.py
 
-^Z [This is the Trac macro *10 hours later!* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#10 hours later!-macro)
+^Z [[10 hours later!]]
 [1]+  Stopped                 ./bb
 clement-pernets-imac-g5:~ was$
 ```

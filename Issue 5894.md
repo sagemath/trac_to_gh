@@ -1,6 +1,6 @@
 # Issue 5894: spkg/install shoud use #!/usr/bin/env bash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5894
 
 Original creator: mabshoff
 

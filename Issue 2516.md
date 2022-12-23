@@ -1,6 +1,6 @@
 # Issue 2516: generalized hypergeometric functions should be implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2516
 
 Original creator: ddrake
 

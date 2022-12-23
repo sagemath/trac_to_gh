@@ -1,6 +1,6 @@
 # Issue 7869: cylindrical plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7869
 
 Original creator: olazo
 

@@ -1,6 +1,6 @@
 # Issue 5544: multipolynomial __call__ not consistant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5544
 
 Original creator: robertwb
 

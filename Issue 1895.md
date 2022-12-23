@@ -1,6 +1,6 @@
 # Issue 1895: [with patch, needs review] deal with passed through keyword arguments for Gröbner basis computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1895
 
 Original creator: malb
 

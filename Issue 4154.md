@@ -1,6 +1,6 @@
 # Issue 4154: setting defaults for show options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4154
 
 Original creator: jason
 

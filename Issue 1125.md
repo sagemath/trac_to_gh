@@ -1,6 +1,6 @@
 # Issue 1125: cvxopt fix completely breaks building Sage with gfortran
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1125
 
 Original creator: was
 

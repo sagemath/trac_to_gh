@@ -1,6 +1,6 @@
 # Issue 7058: linbox reports "using frickin' slow GSL C-blas" if building with Sun Studio compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7058
 
 Original creator: drkirkby
 

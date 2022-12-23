@@ -1,6 +1,6 @@
 # Issue 487: problem with the is_principal method for fractional ideals in a number field.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/487
 
 Original creator: mabshoff
 

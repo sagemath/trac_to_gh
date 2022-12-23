@@ -1,6 +1,6 @@
 # Issue 6756: Implement ``diff`` format symbolic derivative in new symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6756
 
 Original creator: gmhossain
 

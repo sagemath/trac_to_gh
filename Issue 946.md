@@ -1,6 +1,6 @@
 # Issue 946: hang when doctesting calculus.py on some systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/946
 
 Original creator: was
 

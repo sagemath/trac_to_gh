@@ -1,6 +1,6 @@
 # Issue 3532: [With SPKG, needs review] gdbm spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3532
 
 Original creator: gfurnish
 

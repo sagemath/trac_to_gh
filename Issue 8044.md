@@ -1,6 +1,6 @@
 # Issue 8044: Categories for finite (permutation) groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8044
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 3301: Fix POSIX issues in gmp's spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3301
 
 Original creator: mabshoff
 

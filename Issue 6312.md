@@ -1,6 +1,6 @@
 # Issue 6312: optional doctest failure -- galois_group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6312
 
 Original creator: was
 

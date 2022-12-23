@@ -1,6 +1,6 @@
 # Issue 3528: test_gcc_version.pl claims that gcc 4.3 is not a valid compiler to build FLINT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3528
 
 Original creator: mabshoff
 

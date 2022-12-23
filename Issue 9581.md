@@ -1,6 +1,6 @@
 # Issue 9581: edge_incident bug in generic_graph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9581
 
 Original creator: vdelecroix
 

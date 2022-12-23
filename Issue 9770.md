@@ -1,6 +1,6 @@
 # Issue 9770: update instructions for reviewers, especially for new developers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9771
 
 Original creator: niles
 

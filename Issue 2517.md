@@ -1,6 +1,6 @@
 # Issue 2517: ignore bad values in plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2517
 
 Original creator: jason
 

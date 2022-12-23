@@ -1,6 +1,6 @@
 # Issue 5071: [with patch, needs review] unit of least precision for RR and RDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5071
 
 Original creator: robertwb
 

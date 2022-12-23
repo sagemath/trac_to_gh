@@ -1,6 +1,6 @@
 # Issue 1546: Update FLINT.spkg to 1.03 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1546
 
 Original creator: mabshoff
 

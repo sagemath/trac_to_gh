@@ -1,6 +1,6 @@
 # Issue 8534: Optional packages that fail to install on Solaris 10 (SPARC) on sage-4.3.4.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8534
 
 Original creator: drkirkby
 

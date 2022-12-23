@@ -1,6 +1,6 @@
 # Issue 5719: [with patch, needs review] Corrected a bad deprecation message.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5719
 
 Original creator: hivert
 

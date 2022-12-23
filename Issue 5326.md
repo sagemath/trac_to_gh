@@ -1,6 +1,6 @@
 # Issue 5326: support weighted term orderings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5326
 
 Original creator: malb
 

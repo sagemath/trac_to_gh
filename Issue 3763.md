@@ -1,6 +1,6 @@
 # Issue 3763: [with patch, needs review] add conversions from AA/QQbar to standard types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3763
 
 Original creator: cwitty
 

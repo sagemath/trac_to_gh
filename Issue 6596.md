@@ -1,6 +1,6 @@
 # Issue 6596: [with patch, needs review] Singular refactoring and Groebner Strategy objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6596
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 7700: Mysterious binary in sage-4.3.rc0/data/extcode/sage/ext/mac-app
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7700
 
 Original creator: was
 

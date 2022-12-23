@@ -1,6 +1,6 @@
 # Issue 7185: bug in FFT object in Sage -- segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7185
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: cwitty
 
 
 ```
-wstein`@`sage:~/build/sage-4.1.2.rc1.alpha3$ ./sage -gdb
+wstein@sage:~/build/sage-4.1.2.rc1.alpha3$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

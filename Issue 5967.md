@@ -1,6 +1,6 @@
 # Issue 5967: ElementWrapper: A class for wrapping Sage or Python objects as Sage elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5967
 
 Original creator: nthiery
 

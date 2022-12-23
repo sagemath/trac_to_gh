@@ -1,6 +1,6 @@
 # Issue 4936: massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4936
 
 Original creator: was
 
@@ -12,9 +12,9 @@ It is *always* safe to delete anything in ~/.sage/gap, since it will get autorec
 
 
 ```
-wstein`@`sage:~/.sage/gap$ ls -1 |wc -l
+wstein@sage:~/.sage/gap$ ls -1 |wc -l
 90
-wstein`@`sage:~/.sage/gap$ du -sch .
+wstein@sage:~/.sage/gap$ du -sch .
 1.3G	.
 1.3G	total
 ```

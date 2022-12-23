@@ -1,6 +1,6 @@
 # Issue 1528: make "sage -R" run R.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1528
 
 Original creator: was
 

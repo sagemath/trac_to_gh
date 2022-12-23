@@ -1,6 +1,6 @@
 # Issue 4849: add functionality for computing Heegner points to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4849
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7177: gap does not find getopt.h. getopt() defined in stdlib.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7177
 
 Original creator: drkirkby
 

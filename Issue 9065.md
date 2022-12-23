@@ -1,6 +1,6 @@
 # Issue 9065: Add support for facade parents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9065
 
 Original creator: nborie
 

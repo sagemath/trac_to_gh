@@ -1,6 +1,6 @@
 # Issue 5645: error in axis plotting with large values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5645
 
 Original creator: robertwb
 
@@ -81,7 +81,7 @@ Attachment
 This has been fixed in Sage 4.1.2.alpha4. Closing this ticket as fixed by #5448:
 
 ```
-[mvngu`@`darkstar sage-4.1.2.alpha4]$ ./sage -br main
+[mvngu@darkstar sage-4.1.2.alpha4]$ ./sage -br main
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.

@@ -1,6 +1,6 @@
 # Issue 1129: is_irreducible()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1129
 
 Original creator: jvoight
 

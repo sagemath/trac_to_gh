@@ -1,6 +1,6 @@
 # Issue 2602: plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2602
 
 Original creator: jason
 

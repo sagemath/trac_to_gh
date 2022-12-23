@@ -1,6 +1,6 @@
 # Issue 3461: write a construction for permutation groups so that the coercion system can find a common parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3461
 
 Original creator: mhansen
 
@@ -12,9 +12,9 @@ This happens in the coercion branch:
 
 
 ```
-sage: P1 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro)); P1
+sage: P1 = PermutationGroup([[(1,2)]]); P1
 Permutation Group with generators [(1,2)]
-sage: P2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,3))](https://trac.sagemath.org/wiki/WikiMacros#-macro)); P2
+sage: P2 = PermutationGroup([[(1,3)]]); P2
 Permutation Group with generators [(1,3)]
 sage: p1 = P1.gen(); p2 = P2.gen()
 sage: p1*p2

@@ -1,6 +1,6 @@
 # Issue 109: inconsistent return type for generic powering or something
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/109
 
 Original creator: dmharvey
 

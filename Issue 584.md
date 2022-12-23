@@ -1,6 +1,6 @@
 # Issue 584: More PARI NumberField functionality requested
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/584
 
 Original creator: craigcitro
 

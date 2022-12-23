@@ -1,6 +1,6 @@
 # Issue 4760: [with patch, needs review] dsage_interface doctests broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4760
 
 Original creator: gfurnish
 

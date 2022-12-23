@@ -1,6 +1,6 @@
 # Issue 2637: Patch so that a user can choose encodings in sage scripts.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2637
 
 Original creator: lars.fischer
 

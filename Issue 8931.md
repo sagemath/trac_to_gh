@@ -1,6 +1,6 @@
 # Issue 8931: desolve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8931
 
 Original creator: descopau
 
@@ -127,7 +127,7 @@ Comment by robert.marik created at 2010-09-21 20:15:38
 with #9835
 
 ```
-marik`@`um-bc107:/opt/sage$ ./sage
+marik@um-bc107:/opt/sage$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: x=var('x'); f=function('f',x); k=var('k'); assume(k>0)

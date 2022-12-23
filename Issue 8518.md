@@ -1,6 +1,6 @@
 # Issue 8518: Optional package extra_docs-20070208 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8518
 
 Original creator: drkirkby
 

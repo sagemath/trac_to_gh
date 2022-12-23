@@ -1,6 +1,6 @@
 # Issue 6627: lyndon and standard factorization of words is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6627
 
 Original creator: saliola
 

@@ -1,6 +1,6 @@
 # Issue 746: graphs: graph name is not reset using clear()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/746
 
 Original creator: jason
 
@@ -69,7 +69,7 @@ Let's try that again:
 ```
 --- a/sage/graphs/graph.py      Wed Sep 26 09:37:18 2007 -0700
 +++ b/sage/graphs/graph.py      Fri Sep 28 13:46:41 2007 -0500
-`@``@` -684,10 +684,34 `@``@` class GenericGraph(SageObject):
+@@ -684,10 +684,34 @@ class GenericGraph(SageObject):
 
      def clear(self):
          """

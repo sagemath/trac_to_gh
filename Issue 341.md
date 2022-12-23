@@ -1,6 +1,6 @@
 # Issue 341: multiplicative order inconsistency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/341
 
 Original creator: was
 

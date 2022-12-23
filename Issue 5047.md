@@ -1,6 +1,6 @@
 # Issue 5047: comparing complex i raises error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5047
 
 Original creator: burcin
 

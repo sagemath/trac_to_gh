@@ -1,6 +1,6 @@
 # Issue 9109: Fast cython class for maps between finite sets.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9109
 
 Original creator: hivert
 
@@ -102,7 +102,7 @@ following wrong ReST markup:
 diff --git a/sage/sets/finite_set_map_cy.pyx b/sage/sets/finite_set_map_cy.pyx
 --- a/sage/sets/finite_set_map_cy.pyx
 +++ b/sage/sets/finite_set_map_cy.pyx
-`@``@` -86,7 +86,7 `@``@` cpdef fibers(f, domain):
+@@ -86,7 +86,7 @@ cpdef fibers(f, domain):
          {1: {1}}
  
      .. seealso:: :func:`fibers_args` if one needs to pass extra

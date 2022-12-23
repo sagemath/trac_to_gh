@@ -1,7 +1,7 @@
 # Issue 3035: calculus/equations.py
 segfault with new cython & -ba
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3035
 
 Original creator: gfurnish
 

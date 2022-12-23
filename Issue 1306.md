@@ -1,6 +1,6 @@
 # Issue 1306: [graphs] Bundles of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1306
 
 Original creator: jason
 

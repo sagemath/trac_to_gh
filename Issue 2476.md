@@ -1,6 +1,6 @@
 # Issue 2476: 3d plotting -- easy to fix bug?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2476
 
 Original creator: was
 

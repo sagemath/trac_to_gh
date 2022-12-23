@@ -1,6 +1,6 @@
 # Issue 4102: Make special functions behave like PrimitiveFunction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4102
 
 Original creator: jwmerrill
 
@@ -778,7 +778,7 @@ There is something strange going on. Here is sage-5.9.beta2 with the three patch
 
 
 ```
-[bjones`@`cabbage:devel/sage]% ../../sage
+[bjones@cabbage:devel/sage]% ../../sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -801,7 +801,7 @@ Now doctesting `sage/functions/bessel.py` with sage in the exact same state:
 
 
 ```
-[bjones`@`cabbage:devel/sage]% ../../sage -t sage/functions/bessel.py                
+[bjones@cabbage:devel/sage]% ../../sage -t sage/functions/bessel.py                
 Running doctests with ID 2013-04-01-21-31-17-4bc246be.
 Doctesting 1 file.
 sage -t sage/functions/bessel.py

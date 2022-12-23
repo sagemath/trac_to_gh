@@ -1,6 +1,6 @@
 # Issue 9809: Heisenbug in RationalPolyhedralCone.facets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9810
 
 Original creator: vbraun
 

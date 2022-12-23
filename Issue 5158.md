@@ -1,6 +1,6 @@
 # Issue 5158: [with patch, needs review] bug in symbolic factorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5158
 
 Original creator: whuss
 

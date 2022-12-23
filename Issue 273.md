@@ -1,6 +1,6 @@
 # Issue 273: sage-location path extraction thrown off by extra "local"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/273
 
 Original creator: nbruin
 

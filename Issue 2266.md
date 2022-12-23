@@ -1,6 +1,6 @@
 # Issue 2266: give shortest_paths an optional endpoint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2266
 
 Original creator: rlm
 

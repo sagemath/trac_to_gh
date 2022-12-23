@@ -1,6 +1,6 @@
 # Issue 6002: parametric_plot3d appears not to give the correct axes values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6002
 
 Original creator: wcauchois
 

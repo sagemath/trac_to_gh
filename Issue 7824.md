@@ -1,6 +1,6 @@
 # Issue 7824: cliquer-1.2.p2 - add FreeBSD support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7824
 
 Original creator: pjeremy
 

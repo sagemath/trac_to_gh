@@ -1,6 +1,6 @@
 # Issue 7980: Move 'Category with concrete representation' code into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7980
 
 Original creator: jbandlow
 

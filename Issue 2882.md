@@ -1,6 +1,6 @@
 # Issue 2882: resize cells on window resize
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2882
 
 Original creator: boothby
 

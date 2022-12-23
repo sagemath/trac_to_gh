@@ -1,6 +1,6 @@
 # Issue 2696: octave -- implement handling of multiple return values of functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2696
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 
 ```
 
-On Mon, Mar 24, 2008 at 8:26 AM, Michael <michael.delamaza`@`gmail.com> wrote:
+On Mon, Mar 24, 2008 at 8:26 AM, Michael <michael.delamaza@gmail.com> wrote:
 > 
 >  What is the recommended way to handle Octave functions with multiple
 >  return values in Sage?

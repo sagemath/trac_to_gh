@@ -1,6 +1,6 @@
 # Issue 4311: added documentation for tensor products of crystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4311
 
 Original creator: aschilling
 

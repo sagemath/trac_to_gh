@@ -1,6 +1,6 @@
 # Issue 6119: implement taylor series without maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6119
 
 Original creator: robertwb
 

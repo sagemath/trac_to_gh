@@ -1,6 +1,6 @@
 # Issue 6277: sage -tp a.py a.py will test a.py twice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6277
 
 Original creator: ncalexan
 

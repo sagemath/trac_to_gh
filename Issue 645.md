@@ -1,6 +1,6 @@
 # Issue 645: multi-argument call for symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/645
 
 Original creator: robertwb
 

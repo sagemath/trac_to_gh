@@ -1,6 +1,6 @@
 # Issue 1956: implement multivariate power series arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1956
 
 Original creator: was
 
@@ -415,9 +415,9 @@ PS:
 It would be nice if the double square bracket notation would work in the multivariate case:
 
 ```
-sage: QQ[This is the Trac macro *'x'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'x'-macro)
+sage: QQ[['x']]
 Power Series Ring in x over Rational Field
-sage: QQ[This is the Trac macro *'x','y'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'x','y'-macro)
+sage: QQ[['x','y']]
 ---------------------------------------------------------------------------
 NotImplementedError                       Traceback (most recent call last)
 
@@ -494,7 +494,7 @@ Indeed; I have found that my installation of sage fails some long doctests even 
 Also, I had some time to kill so I've added support for the double bracket method, and this is included in the documentation.
 
 ```
-sage: ZZ[This is the Trac macro *'s,t,u'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'s,t,u'-macro)
+sage: ZZ[['s,t,u']]
 Multivariate Power Series Ring in s, t, u over Integer Ring
 ```
 

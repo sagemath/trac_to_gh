@@ -1,6 +1,6 @@
 # Issue 5872: [with patch, needs review] Explicitly pass -fPIC into ntl shared object build.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5872
 
 Original creator: pjeremy
 

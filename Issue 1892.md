@@ -1,6 +1,6 @@
 # Issue 1892: notebook -- uploading a data file should give some help about the DATA variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1892
 
 Original creator: was
 

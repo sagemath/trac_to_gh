@@ -1,6 +1,6 @@
 # Issue 6177: [with patch, needs work] Update PolyBoRi to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6177
 
 Original creator: malb
 
@@ -489,11 +489,11 @@ Changes had to be made to the earlier PolyBoRi code to allow this to build with 
 Here you can see CC and CXX are not set
 
 ```
-drkirkby`@`smudge:[~/sage/sage-4.1.1] $ echo $CC
+drkirkby@smudge:[~/sage/sage-4.1.1] $ echo $CC
 
-drkirkby`@`smudge:[~/sage/sage-4.1.1] $ echo $CXX
+drkirkby@smudge:[~/sage/sage-4.1.1] $ echo $CXX
 
-drkirkby`@`smudge:[~/sage/sage-4.1.1] $
+drkirkby@smudge:[~/sage/sage-4.1.1] $
 ```
 
 

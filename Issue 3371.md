@@ -1,6 +1,6 @@
 # Issue 3371: bug in uniformiSer for p-adic rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3371
 
 Original creator: wuthrich
 

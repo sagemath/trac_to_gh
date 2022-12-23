@@ -1,6 +1,6 @@
 # Issue 7620: Inconsistent ordering when composing functors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7620
 
 Original creator: SimonKing
 

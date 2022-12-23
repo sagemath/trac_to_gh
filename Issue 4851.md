@@ -1,6 +1,6 @@
 # Issue 4851: infinite recursion with encoding entities for worksheet titles with apostrophes, etc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4851
 
 Original creator: ddrake
 

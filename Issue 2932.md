@@ -1,6 +1,6 @@
 # Issue 2932: matrix.is_invertible() has inconsisten behavior over CDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2932
 
 Original creator: dfdeshom
 

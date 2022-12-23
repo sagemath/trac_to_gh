@@ -1,6 +1,6 @@
 # Issue 1245: Error coercing multivariate polynomial rings with one variable into composite integer rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1245
 
 Original creator: ncalexan
 

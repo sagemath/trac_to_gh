@@ -1,6 +1,6 @@
 # Issue 6924: Restriction and Tensor Products for Supercharacters of $U_n(2)$
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6924
 
 Original creator: slewis
 

@@ -1,6 +1,6 @@
 # Issue 1392: factors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1392
 
 Original creator: was
 

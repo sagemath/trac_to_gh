@@ -1,6 +1,6 @@
 # Issue 1365: golden_ratio._algebraic_() should synthesize the value
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1365
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 6821: add empty_species.py to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6821
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 9068: remove redundant sgn function from quadratic_forms/extras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9068
 
 Original creator: cremona
 

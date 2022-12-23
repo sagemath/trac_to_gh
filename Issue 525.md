@@ -1,6 +1,6 @@
 # Issue 525: Get Pete Chvany's build notes into the SAGE docs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/525
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2871: matrix: M[range(2,-1,-1),:] returns junk
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2871
 
 Original creator: dfdeshom
 

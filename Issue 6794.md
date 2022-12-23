@@ -1,6 +1,6 @@
 # Issue 6794: doctest failure in sage/sage/interfaces/rubik.py due to upgrade to Maxima 5.19.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6794
 
 Original creator: drkirkby
 

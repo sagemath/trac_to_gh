@@ -1,6 +1,6 @@
 # Issue 9277: Flint's spkg-check file does not work on 64-bit (SAGE64 only works on OS X)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9277
 
 Original creator: drkirkby
 

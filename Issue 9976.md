@@ -1,6 +1,6 @@
 # Issue 9976: Implement complex multiplication for points of CM elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9977
 
 Original creator: davidloeffler
 

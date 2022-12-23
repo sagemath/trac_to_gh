@@ -1,6 +1,6 @@
 # Issue 7678: shorten very long doctests in rings/arith.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7678
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 7069: tachyon-0.98beta.p9 ignores CC and uses gcc, so can't build with Sun Studio.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7069
 
 Original creator: drkirkby
 

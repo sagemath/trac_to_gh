@@ -1,6 +1,6 @@
 # Issue 5879: [with patch, needs review] Added crystal of letters for type E
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5879
 
 Original creator: aschilling
 

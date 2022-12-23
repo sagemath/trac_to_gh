@@ -1,6 +1,6 @@
 # Issue 2072: Remove _neg_c_impl and _invert_c_impl from some classes.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2072
 
 Original creator: robertwb
 

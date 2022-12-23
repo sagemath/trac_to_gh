@@ -1,6 +1,6 @@
 # Issue 8998: galois_action on cusps has a bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8998
 
 Original creator: was
 

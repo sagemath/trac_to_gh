@@ -1,6 +1,6 @@
 # Issue 1746: add p-norm as a method to vectors (probably very easy)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1746
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Jan 10, 2008 12:17 AM, vgermrk <vgermrk`@`googlemail.com> wrote:
+On Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:
 > 
 > [Sorry for asking so much "Is there a ... function in Sage?" -
 > Questions.]

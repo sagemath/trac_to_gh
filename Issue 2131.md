@@ -1,6 +1,6 @@
 # Issue 2131: disable "padlock" support in libgcrypt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2131
 
 Original creator: cwitty
 

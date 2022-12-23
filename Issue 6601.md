@@ -1,6 +1,6 @@
 # Issue 6601: Crash loading rings.polynomial.pbori
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6601
 
 Original creator: stankewicz
 

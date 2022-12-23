@@ -1,6 +1,6 @@
 # Issue 1189: update sympy to 0.5.7, patch to make SymPy and SAGE work nicely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1189
 
 Original creator: certik
 

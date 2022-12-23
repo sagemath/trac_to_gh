@@ -1,6 +1,6 @@
 # Issue 624: Inplace operators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/624
 
 Original creator: robertwb
 

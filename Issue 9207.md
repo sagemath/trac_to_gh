@@ -1,6 +1,6 @@
 # Issue 9207: random_element does not work for BooleanPolynomialRing of degree 1 or 2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9207
 
 Original creator: mariah
 

@@ -1,6 +1,6 @@
 # Issue 865: several small memory leak in multi_modular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/865
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5806: failing test "devel/sage/sage/misc/sagedoc.py"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5806
 
 Original creator: jsp
 
@@ -116,7 +116,7 @@ It seems that the offending changeset is:
 
 ```
 changeset:   11994:e4066f66cdd2
-user:        J. H. Palmieri <palmieri`@`math.washington.edu>
+user:        J. H. Palmieri <palmieri@math.washington.edu>
 date:        Sat Apr 11 10:30:03 2009 -0700
 summary:     fix for #5754 plus doctests
 ```
@@ -163,7 +163,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/misc/sagedoc.py"
 Total time for all tests: 0.2 seconds
-masgaj`@`host-56-150%./sage -t  /home/masgaj/local/sage-3.4.1.rc3/devel/sage/sage/misc/sagedoc.py
+masgaj@host-56-150%./sage -t  /home/masgaj/local/sage-3.4.1.rc3/devel/sage/sage/misc/sagedoc.py
 sage -t  "devel/sage/sage/misc/sagedoc.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***

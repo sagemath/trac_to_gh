@@ -1,6 +1,6 @@
 # Issue 4574: add notebook_object.py docs to the reference manual, and possibly a short survey about that to notebook help (top letter)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4574
 
 Original creator: was
 
@@ -14,9 +14,9 @@ CC:  mvngu
 ```
 
 
-On Thu, Nov 20, 2008 at 6:30 PM, seberino`@`spawar.navy.mil <seberino`@`spawar.navy.mil> wrote:
+On Thu, Nov 20, 2008 at 6:30 PM, seberino@spawar.navy.mil <seberino@spawar.navy.mil> wrote:
 >
-> On Nov 20, 1:05 pm, "William Stein" <wst...`@`gmail.com> wrote:
+> On Nov 20, 1:05 pm, "William Stein" <wst...@gmail.com> wrote:
 >> Type notebook? and read the docs.  If that isn't enough please please
 >> do ask here again.
 >

@@ -1,6 +1,6 @@
 # Issue 708: performance issue -- Magma is way faster at testing some polynomials for irreducibility
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/708
 
 Original creator: was
 

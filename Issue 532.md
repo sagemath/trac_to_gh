@@ -1,6 +1,6 @@
 # Issue 532: mkfr leak in RealField (from matrix/strassen.pyx)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/532
 
 Original creator: mabshoff
 

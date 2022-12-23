@@ -1,6 +1,6 @@
 # Issue 488: python on itanium -- fix readline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/488
 
 Original creator: was
 

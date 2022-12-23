@@ -1,6 +1,6 @@
 # Issue 7255: sagenb notebook: reset() causes the worksheet to stop working.  fix this.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7255
 
 Original creator: was
 

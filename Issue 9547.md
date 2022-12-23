@@ -1,6 +1,6 @@
 # Issue 9547: x * Infinity assumes that x is positive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9547
 
 Original creator: fredrik.johansson
 

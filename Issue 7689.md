@@ -1,6 +1,6 @@
 # Issue 7689: cd spkg/; ./install scripts --- this results in an annoying (but harmless error message); get rid of it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7689
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1824: *huge* memory leak in PolyBoRi wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1824
 
 Original creator: mabshoff
 

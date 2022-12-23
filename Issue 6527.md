@@ -1,6 +1,6 @@
 # Issue 6527: finish implementing set_circular_planar for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6527
 
 Original creator: rlm
 

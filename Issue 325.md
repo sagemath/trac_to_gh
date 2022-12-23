@@ -1,6 +1,6 @@
 # Issue 325: LLL for integer matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/325
 
 Original creator: nbruin
 

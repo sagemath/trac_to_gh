@@ -1,6 +1,6 @@
 # Issue 2729: [with patch] tiny jmol spheres have holes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2729
 
 Original creator: robertwb
 

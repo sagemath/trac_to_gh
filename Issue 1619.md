@@ -1,6 +1,6 @@
 # Issue 1619: update cddlib to 0.94d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1619
 
 Original creator: mabshoff
 

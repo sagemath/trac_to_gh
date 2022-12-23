@@ -1,6 +1,6 @@
 # Issue 3466: make optional package for pyprocessing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3466
 
 Original creator: mhansen
 

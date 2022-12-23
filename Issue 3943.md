@@ -1,6 +1,6 @@
 # Issue 3943: pydesign patch [not ready for review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3943
 
 Original creator: wdj
 
@@ -220,7 +220,7 @@ Modules:
  
 __version__     = '0.7' 
 _revision       = '$Id: __init__.py 274 2004-11-18 13:13:10Z peter $' 
-_author         = 'Peter Dobcsanyi <peter`@`designtheory.org>, David Joyner <wdjoyner`@`gmail.com>' 
+_author         = 'Peter Dobcsanyi <peter@designtheory.org>, David Joyner <wdjoyner@gmail.com>' 
 	 
 License = ''' 
 Copyright (c) 2004, 2008 Peter Dobcsanyi, David Joyner. 

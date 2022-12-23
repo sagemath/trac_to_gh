@@ -1,6 +1,6 @@
 # Issue 4450: notebook -- cursor down in last cell wraps around cell, instead of just staying at bottom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4450
 
 Original creator: was
 

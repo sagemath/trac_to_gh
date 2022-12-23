@@ -1,6 +1,6 @@
 # Issue 6962: [with patch, needs review] Feedback vertex set, Feedback arc set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6962
 
 Original creator: ncohen
 

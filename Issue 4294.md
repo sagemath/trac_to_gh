@@ -1,6 +1,6 @@
 # Issue 4294: sage -t under %pdb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4294
 
 Original creator: nthiery
 

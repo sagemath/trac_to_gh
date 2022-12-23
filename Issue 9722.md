@@ -1,6 +1,6 @@
 # Issue 9722: PARI/GP build error on Fedora 13
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9722
 
 Original creator: mpatel
 
@@ -352,8 +352,8 @@ Replying to [comment:3 ggrafendorfer]:
 ```
 ...
 gcc  -o gp-dyn -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -Wl,--export-dynamic  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotfltk.o  -L"/scratch/sage-4.5.3.alpha0/spkg/build/pari-2.3.5.p2/src/Olinux-x86_64" -L/scratch/sage-4.5.3.alpha0/local/lib -lreadline -L/scratch/sage-4.5.3.alpha0/local/lib/ -ltermcap -L/scratch/sage-4.5.3.alpha0/local/lib -lpari -L"/usr/local"/lib -lfltk  -ldl -lm -L/scratch/sage-4.5.3.alpha0/local/lib -lgmp
-/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0`@``@`CXXABI_1.3'
-/usr/bin/ld: note: '__gxx_personality_v0`@``@`CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line
+/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0@@CXXABI_1.3'
+/usr/bin/ld: note: '__gxx_personality_v0@@CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line
 /usr/lib64//libstdc++.so.6: could not read symbols: Invalid operation
 collect2: ld returned 1 exit status
 ...
@@ -748,7 +748,7 @@ Comment by leif created at 2010-08-19 10:50:08
 Georg, could you please check your environment settings?
 
 ```sh
-user`@`host$ printenv | grep fltk
+user@host$ printenv | grep fltk
 ```
 
 
@@ -800,11 +800,11 @@ Replying to [comment:25 ggrafendorfer]:
 > 
 
 ```sh
-ggeorg`@`maschke% printenv | grep fltk
-ggeorg`@`maschke% rpm -qa | grep fltk
+ggeorg@maschke% printenv | grep fltk
+ggeorg@maschke% rpm -qa | grep fltk
 fltk-devel-1.1.10-1.fc13.x86_64
 fltk-1.1.10-1.fc13.x86_64
-ggeorg`@`maschke% 
+ggeorg@maschke% 
 ```
 
 
@@ -1260,8 +1260,8 @@ Comment by leif created at 2010-08-23 14:29:03
 
 
 ```sh
-[leif`@`quadriga tmp]$ cd pari-2.3.5.p4/src/
-[leif`@`quadriga src]$ ./Configure --help
+[leif@quadriga tmp]$ cd pari-2.3.5.p4/src/
+[leif@quadriga src]$ ./Configure --help
 Configuring pari-2.3.5 (STABLE) 
 Usage: Configure [-ask|-help|-g|-pg] [ --load <filename> ] [ --prefix=<dir> ]
 

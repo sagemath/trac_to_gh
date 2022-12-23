@@ -1,6 +1,6 @@
 # Issue 764: PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/764
 
 Original creator: mhansen
 

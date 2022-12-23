@@ -1,6 +1,6 @@
 # Issue 982: abs(x) returns incorrect LaTex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/982
 
 Original creator: mhansen
 

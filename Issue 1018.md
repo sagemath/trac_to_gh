@@ -1,6 +1,6 @@
 # Issue 1018: Change prod() to used balanced tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1018
 
 Original creator: robertwb
 

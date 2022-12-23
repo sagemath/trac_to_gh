@@ -1,6 +1,6 @@
 # Issue 5428: Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5428
 
 Original creator: jsp
 
@@ -144,7 +144,7 @@ I don't think the patch will do:
 On sage.math, 64 bits:
 
 ```
-jsp`@`sage:/scratch/jsp/sage-3.4.alpha0$ ./sage
+jsp@sage:/scratch/jsp/sage-3.4.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]
@@ -158,7 +158,7 @@ On Fedora 9, 32 bits:
 
 
 ```
-[jaap`@`paix sage-3.4.alpha0]$ ./sage
+[jaap@paix sage-3.4.alpha0]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.4.rc0, Release Date: 2009-03-02                     |
@@ -245,7 +245,7 @@ Untested, very old, possibly no-longer-applies patch chunk:
 ```
 --- a/sage/modular/modsym/relation_matrix.py	Sat Mar 29 12:28:22 2008 -0700
 +++ b/sage/modular/modsym/relation_matrix.py	Sun Mar 30 07:09:50 2008 -0700
-`@``@` -391,7 +391,8 `@``@` def sparse_2term_quotient(rels, n, F):
+@@ -391,7 +391,8 @@ def sparse_2term_quotient(rels, n, F):
      ZERO = F(0)
      coef = [ONE for i in xrange(n)] 
      related_to_me = [[] for i in xrange(n)]
@@ -326,7 +326,7 @@ The following tests failed:
 	sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 Total time for all tests: 2885.1 seconds
 Please see /scratch/jsp/sage-3.4.alpha0/tmp/test.log for the complete log from this test.
-jsp`@`sage:/scratch/jsp/sage-3.4.alpha0$ 
+jsp@sage:/scratch/jsp/sage-3.4.alpha0$ 
 ```
 
 

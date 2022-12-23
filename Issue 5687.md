@@ -1,6 +1,6 @@
 # Issue 5687: [with patch; needs review] notebook -- only save snapshot when worksheet.txt has changed.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5687
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5086: Improve performance of is_in_string
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5086
 
 Original creator: malb
 

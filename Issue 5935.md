@@ -1,6 +1,6 @@
 # Issue 5935: graph theory docs -- sage: graphs_query.[tab]             # not tested
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5935
 
 Original creator: was
 

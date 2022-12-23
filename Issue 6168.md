@@ -1,6 +1,6 @@
 # Issue 6168: FLINT wrapper not reducing coefficients properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6168
 
 Original creator: dmharvey
 

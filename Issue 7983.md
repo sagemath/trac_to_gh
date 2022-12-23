@@ -1,6 +1,6 @@
 # Issue 7983: Notion of descent/major index in tableau.py is not mathematically standard
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7983
 
 Original creator: jbandlow
 

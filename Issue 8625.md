@@ -1,6 +1,6 @@
 # Issue 8625: plot_scalar_field (a scalar version of plot_vector_field)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8625
 
 Original creator: olazo
 

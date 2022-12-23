@@ -1,6 +1,6 @@
 # Issue 8165: title cuts off on worksheet upload
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8165
 
 Original creator: jason
 

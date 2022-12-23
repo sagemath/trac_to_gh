@@ -1,6 +1,6 @@
 # Issue 3216: notebook -- doctests for user.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3216
 
 Original creator: TimothyClemans
 
@@ -78,14 +78,14 @@ Exception raised:
     AttributeError: UserConfiguration instance has no attribute 'get_email'
 **********************************************************************
 File "/Users/was/build/build/sage-3.0.1/tmp/user.py", line 106:
-    sage: user.set_email('bob`@`ilovepizza.gov')
+    sage: user.set_email('bob@ilovepizza.gov')
 Exception raised:
     Traceback (most recent call last):
       File "/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py", line 1228, in __run
         compileflags, 1) in test.globs
       File "<doctest __main__.example_7[4]>", line 1, in <module>
-        user.set_email('bob`@`ilovepizza.gov')###line 106:
-    sage: user.set_email('bob`@`ilovepizza.gov')
+        user.set_email('bob@ilovepizza.gov')###line 106:
+    sage: user.set_email('bob@ilovepizza.gov')
     AttributeError: UserConfiguration instance has no attribute 'set_email'
 **********************************************************************
 File "/Users/was/build/build/sage-3.0.1/tmp/user.py", line 107:

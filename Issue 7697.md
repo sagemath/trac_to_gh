@@ -1,6 +1,6 @@
 # Issue 7697: Delete OS X meta-crap from gfan-0.3.p4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7697
 
 Original creator: was
 

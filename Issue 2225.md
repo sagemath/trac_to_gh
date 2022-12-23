@@ -1,6 +1,6 @@
 # Issue 2225: sage-2.10.2.alpha1 -- genus2reduction is now completely broken (maybe caused by new spkg with makefile?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2225
 
 Original creator: was
 

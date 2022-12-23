@@ -1,6 +1,6 @@
 # Issue 8621: New functions in lcalc wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8621
 
 Original creator: rishi
 

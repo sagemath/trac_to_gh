@@ -1,6 +1,6 @@
 # Issue 5794: [with patch, needs review] G2 branching rules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5794
 
 Original creator: bump
 
@@ -344,7 +344,7 @@ Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these chang
 
 
 ```
-[ghitza`@`sage root_system]$ sd -t -long weyl_characters.py 
+[ghitza@sage root_system]$ sd -t -long weyl_characters.py 
 sage -t -long "devel/sage-main/sage/combinat/root_system/weyl_characters.py"
          [242.2 s]
 ```

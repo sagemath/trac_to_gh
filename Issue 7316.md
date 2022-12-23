@@ -1,6 +1,6 @@
 # Issue 7316: notebook: default values for variables are printed incorrectly in docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7316
 
 Original creator: jhpalmieri
 

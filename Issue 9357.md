@@ -1,6 +1,6 @@
 # Issue 9357: Unhandled SIGFPE: in number_field_element_quadratic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9357
 
 Original creator: lftabera
 

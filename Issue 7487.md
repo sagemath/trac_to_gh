@@ -1,6 +1,6 @@
 # Issue 7487: Random Interval Graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7487
 
 Original creator: ncohen
 

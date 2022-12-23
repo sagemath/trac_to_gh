@@ -1,6 +1,6 @@
 # Issue 949: "sage -f" fails to install packages when given an absolute path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/949
 
 Original creator: cwitty
 
@@ -11,7 +11,7 @@ Assignee: was
 When you run this command:
 
 ```
-cwitty`@`magnetar:~/my-sage$ ~/sage/sage -f ~/spkg/mercurial-0.9.5.spkg 
+cwitty@magnetar:~/my-sage$ ~/sage/sage -f ~/spkg/mercurial-0.9.5.spkg 
 ```
 
 

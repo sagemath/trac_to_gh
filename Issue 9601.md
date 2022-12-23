@@ -1,6 +1,6 @@
 # Issue 9601: Fix cvxopt on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9601
 
 Original creator: pjeremy
 

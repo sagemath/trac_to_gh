@@ -1,6 +1,6 @@
 # Issue 8569: Standardize the title in the categories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8569
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 3062: implement __oct__ special method for the integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3062
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6796: doctest failure in sage/sage/interfaces/psage.py due to upgrade to Maxima 5.19.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6796
 
 Original creator: drkirkby
 

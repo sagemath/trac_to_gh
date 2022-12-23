@@ -1,6 +1,6 @@
 # Issue 3754: Would it be possible to add some functionality to sage.rings.number_field.galois_group.GaloisGroup?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3754
 
 Original creator: ljpk
 

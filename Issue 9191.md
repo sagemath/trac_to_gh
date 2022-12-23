@@ -1,6 +1,6 @@
 # Issue 9191: Running pyx files from the command line doesn't work anymore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9191
 
 Original creator: was
 

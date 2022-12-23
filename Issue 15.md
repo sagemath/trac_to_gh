@@ -1,6 +1,6 @@
 # Issue 15: sin(integer) precision issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/15
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1238: update the cremona spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1238
 
 Original creator: was
 

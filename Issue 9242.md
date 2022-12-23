@@ -1,6 +1,6 @@
 # Issue 9242: Add docstrings and tests for sage/rings/ideal_monoid.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9242
 
 Original creator: davidloeffler
 

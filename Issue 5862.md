@@ -1,6 +1,6 @@
 # Issue 5862: os x libsingular -- sage/libsingular segfaults on first creation of a ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5862
 
 Original creator: was
 
@@ -192,7 +192,7 @@ the hg repository of the spkg posted is unclean, "hg diff" gives:
 diff -r aff77485c3e8 patches/src.Singular.Makefile.in
 --- a/patches/src.Singular.Makefile.in  Mon May 11 11:27:30 2009 -0700
 +++ b/patches/src.Singular.Makefile.in  Mon May 11 23:25:18 2009 +0200
-`@``@` -101,7 +101,7 `@``@`
+@@ -101,7 +101,7 @@
  #
  # Handle libSINGULAR stuff
  #

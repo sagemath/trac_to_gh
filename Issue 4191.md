@@ -1,6 +1,6 @@
 # Issue 4191: Update eclib to eclib-20080310.p6.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4191
 
 Original creator: cremona
 

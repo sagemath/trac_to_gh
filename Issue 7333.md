@@ -1,6 +1,6 @@
 # Issue 7333: CBC spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7333
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 8028: Improvements to element_wrapper
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8028
 
 Original creator: nthiery
 

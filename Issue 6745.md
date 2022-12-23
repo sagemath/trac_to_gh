@@ -1,6 +1,6 @@
 # Issue 6745: quaternion algebras -- add computation of left and right orders associated to ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6745
 
 Original creator: was
 

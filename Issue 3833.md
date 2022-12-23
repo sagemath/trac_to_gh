@@ -1,6 +1,6 @@
 # Issue 3833: [with patch; needs review] calculus -- fix bug in hashing of symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3833
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6200: Use mpmath to compute constants
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6200
 
 Original creator: fredrik.johansson
 

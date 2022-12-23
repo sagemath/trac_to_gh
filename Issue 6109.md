@@ -1,6 +1,6 @@
 # Issue 6109: Bring documentation for QQbar up to 100% and add to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6109
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 3332: Switch pbuild to -O2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3332
 
 Original creator: gfurnish
 

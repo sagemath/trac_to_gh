@@ -1,6 +1,6 @@
 # Issue 3690: trivial problems in the doc spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3690
 
 Original creator: tabbott
 

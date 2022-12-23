@@ -1,6 +1,6 @@
 # Issue 9845: misspelled word in parallel help function info
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9846
 
 Original creator: negas
 

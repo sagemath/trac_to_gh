@@ -1,6 +1,6 @@
 # Issue 3211: rref function for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3211
 
 Original creator: jason
 
@@ -25,7 +25,7 @@ Comment by was created at 2008-05-15 14:02:44
                 returns the echelon form.
 06:41 < jason-> Thoughts?
 06:41 < jason-> (except, of course, the function would be lower-cased: m.rref() )
-06:43 -!- mhampton [n=hampton`@`75-163-23-225.dlth.qwest.net] has quit []
+06:43 -!- mhampton [n=hampton@75-163-23-225.dlth.qwest.net] has quit []
 06:56 < wstein> jason- ICK!
 06:56 < wstein> Are you serious?
 06:56 < jason-> wow, I didn't expect such a huge negative reaction

@@ -1,6 +1,6 @@
 # Issue 4235: [with patch, needs review] typos in and enhancement to installation guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4235
 
 Original creator: mvngu
 

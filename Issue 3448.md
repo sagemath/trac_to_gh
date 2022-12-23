@@ -1,6 +1,6 @@
 # Issue 3448: Preparser handles (ellipses in) triple quotes incorrectly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3448
 
 Original creator: rlm
 

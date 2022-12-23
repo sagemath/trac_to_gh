@@ -1,6 +1,6 @@
 # Issue 6191: atlas -- make it so SAGE_FAT_BINARY only used on x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6191
 
 Original creator: was
 

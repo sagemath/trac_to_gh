@@ -1,6 +1,6 @@
 # Issue 6630: The empty species exists !!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6630
 
 Original creator: hivert
 
@@ -69,7 +69,7 @@ Comment by mvngu created at 2009-08-25 00:19:36
 And here is another reason why this ticket needs work: the docstring coverage is not 100%:
 
 ```
-[mvngu`@`sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/combinat/species/empty_species.py 
+[mvngu@sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/combinat/species/empty_species.py 
 ----------------------------------------------------------------------
 devel/sage-main/sage/combinat/species/empty_species.py
 SCORE devel/sage-main/sage/combinat/species/empty_species.py: 83% (5 of 6)

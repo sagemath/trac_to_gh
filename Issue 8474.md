@@ -1,6 +1,6 @@
 # Issue 8474: Detect whether a program is in the path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8474
 
 Original creator: jhpalmieri
 
@@ -202,9 +202,9 @@ If the command is found on Solaris 10, then the output is exactly the same as on
 On Solaris 10 (SPARC processor):
 
 ```
-drkirkby`@`redstart:~$ command -v ls
+drkirkby@redstart:~$ command -v ls
 /usr/bin/ls
-drkirkby`@`redstart:~$ command -v fdsfdgddgt
+drkirkby@redstart:~$ command -v fdsfdgddgt
 -bash: command: fdsfdgddgt: not found
 ```
 
@@ -223,30 +223,30 @@ On OpenSolaris (Intel Xeon processor):
 
 
 ```
-drkirkby`@`hawk:~$ command -v ls
+drkirkby@hawk:~$ command -v ls
 /usr/bin/ls
-drkirkby`@`hawk:~$ command -v klsddshfsd
-drkirkby`@`hawk:~$ 
+drkirkby@hawk:~$ command -v klsddshfsd
+drkirkby@hawk:~$ 
 ```
 
 
 On OS X (Intel processor of some sort):
 
 ```
-[kirkby`@`bsd ~]$ command -v ls
+[kirkby@bsd ~]$ command -v ls
 /bin/ls
-[kirkby`@`bsd ~]$ command -v reererer
-[kirkby`@`bsd ~]$ 
+[kirkby@bsd ~]$ command -v reererer
+[kirkby@bsd ~]$ 
 ```
 
 
 On Linux (Intel processor of some sort)
 
 ```
-kirkby`@`sage:~$ command -v ls
+kirkby@sage:~$ command -v ls
 /bin/ls
-kirkby`@`sage:~$ command -v fdlkskld
-kirkby`@`sage:~$ 
+kirkby@sage:~$ command -v fdlkskld
+kirkby@sage:~$ 
 ```
 
 
@@ -320,9 +320,9 @@ Note that on t2 from the command-line
 
 
 ```
-mhansen`@`t2:~$ which asdfasdfasfdsfsadf
+mhansen@t2:~$ which asdfasdfasfdsfsadf
 no asdfasdfasfdsfsadf in /scratch/mhansen/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin
-mhansen`@`t2:~$ echo $?
+mhansen@t2:~$ echo $?
 0
 ```
 

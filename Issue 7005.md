@@ -1,6 +1,6 @@
 # Issue 7005: [with patch; needs review] singular -- port to cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7005
 
 Original creator: was
 

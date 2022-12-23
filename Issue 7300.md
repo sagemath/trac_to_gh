@@ -1,6 +1,6 @@
 # Issue 7300: Display tight constraints
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7300
 
 Original creator: ncohen
 

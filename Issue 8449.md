@@ -1,6 +1,6 @@
 # Issue 8449: real_part? has an unescaped \r
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8449
 
 Original creator: jason
 

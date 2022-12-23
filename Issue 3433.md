@@ -1,6 +1,6 @@
 # Issue 3433: notebook -- change it so worksheet text is *not* stored in the notebook/worksheet objects when pickling and unpickling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3433
 
 Original creator: was
 

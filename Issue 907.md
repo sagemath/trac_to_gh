@@ -1,6 +1,6 @@
 # Issue 907: [with patch] fix small memory leak in modn_sparse_lift
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/907
 
 Original creator: mabshoff
 

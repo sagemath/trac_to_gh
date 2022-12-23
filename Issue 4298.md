@@ -1,6 +1,6 @@
 # Issue 4298: [with patch, needs trivial review] fix typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4298
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 7275: [with patch, needs review] numerical noise in tutorial/tour_algebra.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7275
 
 Original creator: jhpalmieri
 

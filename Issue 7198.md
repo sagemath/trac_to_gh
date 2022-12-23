@@ -1,6 +1,6 @@
 # Issue 7198: Free Algebra Iteration, needs review
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7198
 
 Original creator: PolyBoRi
 

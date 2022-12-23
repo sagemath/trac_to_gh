@@ -1,6 +1,6 @@
 # Issue 5066: [with patch, needs review] break out relative number fields into separate file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5066
 
 Original creator: ncalexan
 

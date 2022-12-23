@@ -1,6 +1,6 @@
 # Issue 3960: "edit this" on published worksheets doesn't work anymore in 3.1.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3960
 
 Original creator: nbruin
 

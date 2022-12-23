@@ -1,6 +1,6 @@
 # Issue 7387: gnutls not building on OpenSolaris (x86)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7387
 
 Original creator: drkirkby
 
@@ -151,7 +151,7 @@ rm: cannot remove directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing gnutls-2.2.1.p5.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha0$ 
+jaap@opensolaris:~/Downloads/sage-4.3.1.alpha0$ 
 
 ```
 

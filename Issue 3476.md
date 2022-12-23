@@ -1,6 +1,6 @@
 # Issue 3476: [with patch, needs review] save timeit information with sage -t -timeit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3476
 
 Original creator: ncalexan
 
@@ -82,7 +82,7 @@ There is a reject apllying Nick's first patch:
 ```
 --- sage-doctest
 +++ sage-doctest
-`@``@` -218,8 +241,8 `@``@` def extract_doc(file_name, module):
+@@ -218,8 +241,8 @@ def extract_doc(file_name, module):
              doc = doc_preparse(F[i:j+3])
          except SyntaxError:
              doc = F[i:j+3]

@@ -1,6 +1,6 @@
 # Issue 720: Auto-authenticate on first login
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/720
 
 Original creator: robertwb
 

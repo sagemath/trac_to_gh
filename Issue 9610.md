@@ -1,6 +1,6 @@
 # Issue 9610: int(finite field element) should only work when it is in the prime subfield
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9610
 
 Original creator: rlm
 

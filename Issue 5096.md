@@ -1,6 +1,6 @@
 # Issue 5096: implement beautiful printing support for pynac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5096
 
 Original creator: was
 

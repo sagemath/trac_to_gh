@@ -1,6 +1,6 @@
 # Issue 9823: desolve_system ignores initial conditions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9824
 
 Original creator: rhinton
 

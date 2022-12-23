@@ -1,6 +1,6 @@
 # Issue 6516: Latex packages needed for latex versions of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6516
 
 Original creator: rbeezer
 

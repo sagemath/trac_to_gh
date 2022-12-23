@@ -1,6 +1,6 @@
 # Issue 588: Symmetrica spkg for SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/588
 
 Original creator: mhansen
 

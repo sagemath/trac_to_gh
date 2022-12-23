@@ -1,6 +1,6 @@
 # Issue 5740: typo in docstring for taylor series (really easy!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5740
 
 Original creator: was
 

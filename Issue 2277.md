@@ -1,6 +1,6 @@
 # Issue 2277: Write a guide on DSP using SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2277
 
 Original creator: hfvillafuerte
 

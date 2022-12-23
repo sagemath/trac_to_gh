@@ -1,6 +1,6 @@
 # Issue 5613: [with patch; needs review] fix url to sage hg server; hg_sage.bundle(...)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5613
 
 Original creator: was
 

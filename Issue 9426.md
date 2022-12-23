@@ -1,6 +1,6 @@
 # Issue 9426: Docbuilder ignores return code from subprocess.call()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9426
 
 Original creator: leif
 

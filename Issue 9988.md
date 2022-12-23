@@ -1,6 +1,6 @@
 # Issue 9988: easier access to operands of a symbolic expression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9989
 
 Original creator: burcin
 

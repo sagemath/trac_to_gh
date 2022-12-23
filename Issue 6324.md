@@ -1,6 +1,6 @@
 # Issue 6324: optional doctest failure -- sloane functions and gap database
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6324
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5796: document bitsets and make interface consistent with python sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5796
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9218: add a finance chapter to the sage reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9218
 
 Original creator: was
 

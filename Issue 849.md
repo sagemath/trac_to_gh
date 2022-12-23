@@ -1,6 +1,6 @@
 # Issue 849: Cython 0.9.6.7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/849
 
 Original creator: robertwb
 

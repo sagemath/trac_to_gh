@@ -1,6 +1,6 @@
 # Issue 5225: unhandled case in converting to polynomial ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5225
 
 Original creator: cwitty
 

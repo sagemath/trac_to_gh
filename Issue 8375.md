@@ -1,6 +1,6 @@
 # Issue 8375: Numerical noise in devel/sage/sage/symbolic/pynac.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8375
 
 Original creator: drkirkby
 
@@ -53,15 +53,15 @@ The attached patch fixes this. It also has some notes showing
 
 
 ```
-drkirkby`@`redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/pynac.pyx
+drkirkby@redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/pynac.pyx
 sage -t  "devel/sage/sage/symbolic/pynac.pyx"
          [156.7 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 156.7 seconds
-sage/sage/symbolic/pynac.pyx.3$ drkirkby`@`redstart:~/sage-4.3.3$ ./sage -t devel/
--bash: drkirkby`@`redstart:~/sage-4.3.3$: No such file or directory
+sage/sage/symbolic/pynac.pyx.3$ drkirkby@redstart:~/sage-4.3.3$ ./sage -t devel/
+-bash: drkirkby@redstart:~/sage-4.3.3$: No such file or directory
 sage -t  "devel/sage/sage/symbolic/pynac.pyx"
          [156.7 s]
 

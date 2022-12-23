@@ -1,6 +1,6 @@
 # Issue 116: notebook doctest -- should be able to doctest a worksheet, so we can distribute worksheets with SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/116
 
 Original creator: was
 

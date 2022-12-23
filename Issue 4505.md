@@ -1,6 +1,6 @@
 # Issue 4505: Boyer's planarity code mishandles graphs with no edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4505
 
 Original creator: jason
 

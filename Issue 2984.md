@@ -1,6 +1,6 @@
 # Issue 2984: ITANIUM (RHEL 5) -- turn off all unaligned access messages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2984
 
 Original creator: was
 

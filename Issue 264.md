@@ -1,6 +1,6 @@
 # Issue 264: Coercion of axiom Float to python float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/264
 
 Original creator: gvanuxem
 

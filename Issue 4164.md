@@ -1,6 +1,6 @@
 # Issue 4164: [with patch, needs review] Make triangulated_facial_incidences() work in all cases (and decomment render_solid())
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4164
 
 Original creator: anakha
 
@@ -82,7 +82,7 @@ First of all let me say thanks for working on this.  There are some problems wit
 sage: p_oct = Polyhedron(vertices = [[0,1],[0,2],[1,0],[2,0],[3,1],[3,2],[1,3],[2,3]])
 sage: p_oct.triangulated_facial_incidences()
 
-[This is the Trac macro *0, [3, 4, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [3, 4, 3-macro),
+[[0, [3, 4, 3]],
  [1, [2, 3, 2]],
  [2, [0, 2, 0]],
  [3, [0, 1, 0]],

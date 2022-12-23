@@ -1,6 +1,6 @@
 # Issue 1988: doctest fallout -- osx ppc 10.4 overflow error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1988
 
 Original creator: was
 

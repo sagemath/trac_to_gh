@@ -1,6 +1,6 @@
 # Issue 2283: the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2283
 
 Original creator: was
 

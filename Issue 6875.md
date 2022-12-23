@@ -1,6 +1,6 @@
 # Issue 6875: [with patch, needs review] fill option is broken for polar_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6875
 
 Original creator: whuss
 

@@ -1,6 +1,6 @@
 # Issue 8824: Make it so that numpy datatypes are integrated into the coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8824
 
 Original creator: jason
 

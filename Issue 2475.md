@@ -1,6 +1,6 @@
 # Issue 2475: doctest -- get coverage of modular/dims.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2475
 
 Original creator: was
 

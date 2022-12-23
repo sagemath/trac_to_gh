@@ -1,6 +1,6 @@
 # Issue 2442: [with patch; needs review] Clone Mathematica's Differences function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2442
 
 Original creator: TimothyClemans
 

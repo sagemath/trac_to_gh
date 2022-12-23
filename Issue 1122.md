@@ -1,6 +1,6 @@
 # Issue 1122: error in libsingular -> givaro conversion for finite extension fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1122
 
 Original creator: malb
 

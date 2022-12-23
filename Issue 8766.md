@@ -1,6 +1,6 @@
 # Issue 8766: document the _iadd_ and _imul_ special integer.pyx methods, which mutate self
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8766
 
 Original creator: was
 

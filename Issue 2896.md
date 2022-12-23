@@ -1,6 +1,6 @@
 # Issue 2896: Notebook can't handle publishing of Umlauts (UTF-8)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2896
 
 Original creator: malb
 

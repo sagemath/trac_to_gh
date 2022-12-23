@@ -1,6 +1,6 @@
 # Issue 2359: notebook -- make it so when you send a kill signal to the notebook server it saves state
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2359
 
 Original creator: was
 

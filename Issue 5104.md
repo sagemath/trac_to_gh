@@ -1,6 +1,6 @@
 # Issue 5104: setup.py dependency checking issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5104
 
 Original creator: craigcitro
 

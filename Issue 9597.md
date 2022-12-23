@@ -1,6 +1,6 @@
 # Issue 9597: Crap in pari-2.3.5.p1's spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9597
 
 Original creator: leif
 
@@ -18,18 +18,18 @@ From `#sage-devel`:
 
 
 ```sh
-leif`@`portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head
+leif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head
 diff -r d622871cde08 -r eb10b79a288a spkg-install
 --- a/spkg-install	Fri Mar 05 22:12:34 2010 -0800
 +++ b/spkg-install	Tue Apr 27 09:04:49 2010 -0700
-`@``@` -1,4 +1,4 `@``@`
+@@ -1,4 +1,4 @@
 -#!/bin/sh
 +B1;2000;0c#!/bin/sh
  ###########################################
  ## PARI
  ###########################################
-`@``@` -163,7 +163,11 `@``@`
-leif`@`portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  
+@@ -163,7 +163,11 @@
+leif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  
 20: B1;2000;0c#!/bin/sh
 ```
 

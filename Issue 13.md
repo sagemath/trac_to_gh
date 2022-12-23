@@ -1,6 +1,6 @@
 # Issue 13: p-adic integers class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/13
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6350: [with spkg, needs review] update M4RI to newest upstream release (20090617)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6350
 
 Original creator: malb
 

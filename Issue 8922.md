@@ -1,6 +1,6 @@
 # Issue 8922: induced subgraph search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8922
 
 Original creator: ncohen
 

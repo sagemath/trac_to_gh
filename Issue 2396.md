@@ -1,6 +1,6 @@
 # Issue 2396: add support for matrix numpy-style indexing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2396
 
 Original creator: dfdeshom
 
@@ -54,7 +54,7 @@ Comment by mvngu created at 2009-10-01 05:46:11
 This has been fixed in Sage 4.1.2.alpha4:
 
 ```
-[mvngu`@`sage sage-4.1.2.alpha4-sage.math]$ ./sage
+[mvngu@sage sage-4.1.2.alpha4-sage.math]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

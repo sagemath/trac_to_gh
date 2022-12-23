@@ -1,6 +1,6 @@
 # Issue 2273: matrix exponentials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2273
 
 Original creator: AlexGhitza
 

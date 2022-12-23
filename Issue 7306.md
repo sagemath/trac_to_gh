@@ -1,6 +1,6 @@
 # Issue 7306: Documentation fix for Generalized Petersen graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7306
 
 Original creator: rbeezer
 

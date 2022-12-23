@@ -1,6 +1,6 @@
 # Issue 3147: "Quit Worksheet" in notebook doesn't seem to work anymore
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3147
 
 Original creator: nbruin
 

@@ -1,6 +1,6 @@
 # Issue 4602: typos in files under sage/catalogue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4602
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4080: [with patch, needs review] Symbol clash between global M4RI and PolyBoRi's M4RI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4080
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 9007: iconv not building properly on OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9007
 
 Original creator: drkirkby
 

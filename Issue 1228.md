@@ -1,6 +1,6 @@
 # Issue 1228: 2.8.13.rc1: sage/rings/arith.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1228
 
 Original creator: mabshoff
 

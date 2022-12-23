@@ -1,6 +1,6 @@
 # Issue 2661: sage cannot compute floor / ceil of log(8)/log(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2661
 
 Original creator: mhansen
 

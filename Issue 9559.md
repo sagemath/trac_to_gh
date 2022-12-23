@@ -1,6 +1,6 @@
 # Issue 9559: *generalized* canonical generation in Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9559
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 3735: Interact - header Javascript code executes on update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3735
 
 Original creator: itolkov
 
@@ -12,7 +12,7 @@ Here is an illustration (requires #3636):
 
 
 ```
-`@`interact
+@interact
 def _(t=text_control("n = <span id='n'>0</span>\
         <script>n=parseInt($('#n').text()); $('#n').text(1+n);</script>"),
     l=["Increment"]

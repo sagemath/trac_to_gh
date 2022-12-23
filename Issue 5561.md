@@ -1,6 +1,6 @@
 # Issue 5561: is_primitive does not belong in Polynomial because its definition varies
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5561
 
 Original creator: rhinton
 

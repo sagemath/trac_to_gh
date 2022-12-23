@@ -1,6 +1,6 @@
 # Issue 5527: more improvements to Sphinx documentation of sr.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5527
 
 Original creator: mvngu
 

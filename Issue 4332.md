@@ -1,6 +1,6 @@
 # Issue 4332: notebook() docstring needs improvement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4332
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 9782: Add additive groups to the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9783
 
 Original creator: rbeezer
 

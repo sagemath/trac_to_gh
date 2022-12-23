@@ -1,6 +1,6 @@
 # Issue 797: timeit doesn't recognize [1..10] syntax
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/797
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 3276: [with patch] more generic assumptions in calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3276
 
 Original creator: robertwb
 

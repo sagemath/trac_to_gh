@@ -1,6 +1,6 @@
 # Issue 3060: biopython optional package update (to 1.45)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3060
 
 Original creator: mhampton
 

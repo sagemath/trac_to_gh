@@ -1,6 +1,6 @@
 # Issue 5024: [with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5024
 
 Original creator: mabshoff
 

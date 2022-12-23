@@ -1,6 +1,6 @@
 # Issue 7956: constructing a scheme morphism to an affine curve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7956
 
 Original creator: wjp
 

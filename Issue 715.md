@@ -1,6 +1,6 @@
 # Issue 715: Parents probably not reclaimed due to too much caching
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/715
 
 Original creator: robertwb
 
@@ -1445,7 +1445,7 @@ I find (based on sage-4.8.alpha3):
 With patch
 
 ```
-king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
+king@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
 trac_12149.3.patch
 9138_flat.patch
 trac11900_category_speedup_combined.patch
@@ -1453,7 +1453,7 @@ trac11900_category_speedup_combined.patch
 trac_11115_docfix.patch
 trac715_two_tripledicts.patch
 trac715_weak_action.patch
-king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
+king@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
 ...
 ----------------------------------------------------------------------
 All tests passed!
@@ -1479,13 +1479,13 @@ sage -t  "devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py"
 Now, the same without the two patches from here:
 
 ```
-king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
+king@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ hg qapplied 
 trac_12149.3.patch
 9138_flat.patch
 trac11900_category_speedup_combined.patch
 11115_flat.patch
 trac_11115_docfix.patch
-king`@`mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
+king@mpc622:/mnt/local/king/SAGE/rebase/sage-4.8.alpha3/devel/sage$ ../../sage -t sage/schemes/
 ...
 ----------------------------------------------------------------------
 All tests passed!
@@ -2931,7 +2931,7 @@ in it and is not properly wrapped with sig_on(), sig_off(). You might
 want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate.
 ------------------------------------------------------------------------
-/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/spkg/bin/sage: line 464: 16347 Segmentation fault      python "$`@`"
+/home/jdemeyer/silius/sage-5.0.beta12-gcc-32/spkg/bin/sage: line 464: 16347 Segmentation fault      python "$@"
 
 
 ---
@@ -3440,7 +3440,7 @@ Too bad. I tried to add the following to the old patch:
 diff --git a/sage/structure/coerce_dict.pxd b/sage/structure/coerce_dict.pxd
 --- a/sage/structure/coerce_dict.pxd
 +++ b/sage/structure/coerce_dict.pxd
-`@``@` -1,6 +1,7 `@``@`
+@@ -1,6 +1,7 @@
  cdef class TripleDict:
      cdef Py_ssize_t _size
      cdef buckets
@@ -3451,7 +3451,7 @@ diff --git a/sage/structure/coerce_dict.pxd b/sage/structure/coerce_dict.pxd
 diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
 --- a/sage/structure/coerce_dict.pyx
 +++ b/sage/structure/coerce_dict.pyx
-`@``@` -18,8 +18,6 `@``@`
+@@ -18,8 +18,6 @@
  # removing dead references from the cache
  ############################################
  
@@ -3460,7 +3460,7 @@ diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
  cdef class TripleDictEraser:
      """
      Erases items from a :class:`TripleDict` when a weak reference becomes
-`@``@` -108,8 +106,10 `@``@`
+@@ -108,8 +106,10 @@
                  del bucket[i:i+4]
                  self.D._size -= 1
                  break
@@ -3473,7 +3473,7 @@ diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
  
  cdef class TripleDict:
      """
-`@``@` -432,22 +432,24 `@``@`
+@@ -432,22 +432,24 @@
          PyList_Append(bucket, h3)
          PyList_Append(bucket, value)
          try:
@@ -4290,7 +4290,7 @@ Comment by SimonKing created at 2012-09-06 09:09:01
 If the test is
 
 ```
-            sage: `@`cached_function
+            sage: @cached_function
             ... def oddprime_factors(n):
             ...     l = [p for p,e in factor(n) if p != 2]
             ...     return len(l)
@@ -4407,7 +4407,7 @@ class Foo:
 
         EXAMPLES::
 
-            sage: `@`cached_function
+            sage: @cached_function
             ... def oddprime_factors(n):
             ...     l = [p for p,e in factor(n) if p != 2]
             ...     return len(l)
@@ -4454,7 +4454,7 @@ Comment by SimonKing created at 2012-09-06 15:51:38
 Yes, it even works (i.e. reproduces the error) interactively, provided one runs "sage -gdb"!
 
 ```
-sage: `@`cached_function
+sage: @cached_function
 ....: def oddprime_factors(n):
 ....:     l = [p for p,e in factor(n) if p != 2]
 ....:     return len(l)
@@ -4900,7 +4900,7 @@ Attachment
 With [attachment:cachefunc_94107.py], I get:
 
 ```
-(sage-sh) SimonKing`@`bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
+(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
 
 ------------------------------------------------------------------------
 Unhandled SIGSEGV: A segmentation fault occurred in Sage.
@@ -4918,12 +4918,12 @@ So, that looks much more expressive than what sage -t reports!
 However, setting ulimit -c unlimited did not result in a dumped core:
 
 ```
-(sage-sh) SimonKing`@`bsd:sage$ ulimit -c unlimited
-(sage-sh) SimonKing`@`bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
+(sage-sh) SimonKing@bsd:sage$ ulimit -c unlimited
+(sage-sh) SimonKing@bsd:sage$ python -t ~/SAGE/work/signal11/cachefunc_94107.py 
 ...
 Segmentation fault
-(sage-sh) SimonKing`@`bsd:sage$ ls /cores/
-(sage-sh) SimonKing`@`bsd:sage$ 
+(sage-sh) SimonKing@bsd:sage$ ls /cores/
+(sage-sh) SimonKing@bsd:sage$ 
 ```
 
 
@@ -4974,7 +4974,7 @@ So, up to here, it more or less looks normal. But when I press Ctrl-D to leave t
 
 ```
 Exiting Sage (CPU time 0m0.70s, Wall time 0m30.10s).
-/scratch/sking/sage-5.4.beta0/spkg/bin/sage: line 336: 97357 Segmentation fault      sage-ipython "$`@`" -i
+/scratch/sking/sage-5.4.beta0/spkg/bin/sage: line 336: 97357 Segmentation fault      sage-ipython "$@" -i
 ```
 
 The "Exiting Sage ..." is printed at the beginning of sage.all.quit_sage. Hence, it now seems that (again) leaving Sage is the problem.
@@ -5335,7 +5335,7 @@ Here is the change that I applied:
 diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
 --- a/sage/structure/coerce_dict.pyx
 +++ b/sage/structure/coerce_dict.pyx
-`@``@` -33,7 +33,7 `@``@`
+@@ -33,7 +33,7 @@
  include "../ext/python_list.pxi"
  
  from weakref import KeyedRef
@@ -5344,7 +5344,7 @@ diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
  ############################################
  # The following code is responsible for
  # removing dead references from the cache
-`@``@` -120,14 +120,21 `@``@`
+@@ -120,14 +120,21 @@
          cdef size_t h = (k1 + 13*k2 ^ 503*k3)
          cdef list bucket = <object>PyList_GET_ITEM(self.D.buckets, h % PyList_GET_SIZE(self.D.buckets))
          cdef int i
@@ -5366,7 +5366,7 @@ diff --git a/sage/structure/coerce_dict.pyx b/sage/structure/coerce_dict.pyx
              self.D._refcache.__delitem__((k1,k2,k3))
          except KeyError:
              pass
-`@``@` -451,6 +458,10 `@``@`
+@@ -451,6 +458,10 @@
          self.set(k1, k2, k3, value)
  
      cdef set(self, object k1, object k2, object k3, value):
@@ -5630,7 +5630,7 @@ trac_11521_callback.patch
 and still, under gdb:
 
 ```
-sage: `@`cached_function
+sage: @cached_function
 ....: def oddprime_factors(n):
 ....:     l = [p for p,e in factor(n) if p != 2]
 ....:     return len(l)
@@ -5689,7 +5689,7 @@ Comment by SimonKing created at 2012-09-11 15:56:06
 When running sage-5.2.rc0 with patches on `OpenSuse` under gdb, I get the following:
 
 ```
-sage: `@`cached_function
+sage: @cached_function
 ....: def oddprime_factors(n):
 ....:     l = [p for p,e in factor(n) if p != 2]
 ....:     return len(l)
@@ -5719,7 +5719,7 @@ Replying to [comment:304 SimonKing]:
 Or perhaps not:
 
 ```
-simon`@`linux-sqwp:~/SAGE/prerelease/sage-5.2.rc0/devel/sage> gdb
+simon@linux-sqwp:~/SAGE/prerelease/sage-5.2.rc0/devel/sage> gdb
 GNU gdb (GDB) SUSE (7.3-41.1.2)
 Copyright (C) 2011 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>

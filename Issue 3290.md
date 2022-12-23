@@ -1,6 +1,6 @@
 # Issue 3290: Integrate ATLAS 3.8.1 Errate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3290
 
 Original creator: mabshoff
 

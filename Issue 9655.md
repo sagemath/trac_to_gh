@@ -1,6 +1,6 @@
 # Issue 9655: Add an example ploting spherical harmonics to spherical_plot3d's docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9655
 
 Original creator: olazo
 
@@ -71,7 +71,7 @@ You should use the Mercurial configuration file `~/.hgrc`. Here's a template for
 ```sh
 [ui]
 editor = /usr/bin/vim
-username = Carl Friedrich Gauss <cfgauss`@`uni-goettingen.de>
+username = Carl Friedrich Gauss <cfgauss@uni-goettingen.de>
 
 [extensions]
 # Enable the Mercurial queues extension.

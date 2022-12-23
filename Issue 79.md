@@ -1,6 +1,6 @@
 # Issue 79: Create a framework for numerical computation in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/79
 
 Original creator: was
 

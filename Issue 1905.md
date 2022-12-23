@@ -1,6 +1,6 @@
 # Issue 1905: elliptic curves -- both E.Lseries and E.L_series are defined.  Just define one of them, say E.Lseries. (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1905
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7517: improve documentation of xgcd command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7517
 
 Original creator: was
 

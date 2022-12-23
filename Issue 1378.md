@@ -1,6 +1,6 @@
 # Issue 1378: add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1378
 
 Original creator: was
 

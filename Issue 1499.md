@@ -1,6 +1,6 @@
 # Issue 1499: fix import issues related to ATLAS BLAS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1499
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 At least on sage.math Sage fails to start up when doing import all. The following doctest failure illustrates the problem:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha7$ ./sage -t  devel/sage-main/sage/numerical/test.py
+mabshoff@sage:/tmp/Work-mabshoff/release-cycles-2.9/sage-2.9.alpha7$ ./sage -t  devel/sage-main/sage/numerical/test.py
 sage -t  devel/sage-main/sage/numerical/test.py             Traceback (most recent call last):
   File ".doctest_test.py", line 1, in <module>
     from sage.all_cmdline import *;

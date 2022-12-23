@@ -1,6 +1,6 @@
 # Issue 5342: subscriptions broken on wiki
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5342
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 3102: debugging output in p-adics with print mode "digits"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3102
 
 Original creator: dmharvey
 

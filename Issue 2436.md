@@ -1,6 +1,6 @@
 # Issue 2436: Canabalize useful glib algorithms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2436
 
 Original creator: gfurnish
 

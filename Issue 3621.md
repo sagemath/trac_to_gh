@@ -1,6 +1,6 @@
 # Issue 3621: [with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3621
 
 Original creator: cswiercz
 
@@ -525,7 +525,7 @@ Something's up with the first patch -- the file *SAGE_ROOT/examples/finance/AAPL
 
 
 ```
-boothby`@`eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py
+boothby@eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py
 sage -t  devel/sage/sage/finance/stock.py                   **********************************************************************
 File "/home/boothby/sage-3.1.2.rc1/tmp/stock.py", line 417:
     sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')

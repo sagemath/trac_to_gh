@@ -1,6 +1,6 @@
 # Issue 9303: dumb (easy-to-fix) mistake in sage notebook js.py file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9303
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2334: $SAGE_LOCAL/include/eclib has wrong permissions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2334
 
 Original creator: malb
 
@@ -26,7 +26,7 @@ It boils down to a stupid thinko in spkg-install:
 diff -r 06dc1250f0ad spkg-install
 --- a/spkg-install      Sat Feb 09 12:45:02 2008 -0800
 +++ b/spkg-install      Sat Mar 08 22:49:06 2008 -0800
-`@``@` -88,5 +88,5 `@``@` strip "$SAGE_LOCAL"/bin/tconic"$EXE_NAME
+@@ -88,5 +88,5 @@ strip "$SAGE_LOCAL"/bin/tconic"$EXE_NAME
  strip "$SAGE_LOCAL"/bin/tconic"$EXE_NAME"
 
  cd "$SAGE_LOCAL"/include

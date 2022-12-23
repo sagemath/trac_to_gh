@@ -1,6 +1,6 @@
 # Issue 6707: Sage will try to build on compilers known to be too old.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6707
 
 Original creator: drkirkby
 

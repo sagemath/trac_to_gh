@@ -1,6 +1,6 @@
 # Issue 4901: bug in elliptic logarithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4901
 
 Original creator: cremona
 

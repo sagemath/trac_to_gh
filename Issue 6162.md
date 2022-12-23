@@ -1,6 +1,6 @@
 # Issue 6162: plot_histogram improvments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6162
 
 Original creator: wdj
 

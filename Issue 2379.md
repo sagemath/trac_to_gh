@@ -1,6 +1,6 @@
 # Issue 2379: Merge sage-ptest into sage-test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2379
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 1257: [with patch] multi_polynomial_libsingular.pyx "random" segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1257
 
 Original creator: cwitty
 

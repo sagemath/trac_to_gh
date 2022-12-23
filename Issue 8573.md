@@ -1,6 +1,6 @@
 # Issue 8573: prod(primes(190)).divisors() crashes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8573
 
 Original creator: asdjughewou9474388
 

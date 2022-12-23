@@ -1,6 +1,6 @@
 # Issue 8544: Factor  polynomials over QQbar and AA
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8544
 
 Original creator: cremona
 

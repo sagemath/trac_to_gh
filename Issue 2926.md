@@ -1,6 +1,6 @@
 # Issue 2926: Minilistic change password page for notebook user
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2926
 
 Original creator: TimothyClemans
 

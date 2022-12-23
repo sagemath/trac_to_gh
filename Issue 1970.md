@@ -1,6 +1,6 @@
 # Issue 1970: [with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1970
 
 Original creator: was
 

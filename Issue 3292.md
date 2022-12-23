@@ -1,6 +1,6 @@
 # Issue 3292: [with patch, needs review] conversion of FractionFieldElements to magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3292
 
 Original creator: burcin
 

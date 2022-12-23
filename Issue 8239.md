@@ -1,6 +1,6 @@
 # Issue 8239: misleading teichmuller behaviour
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8239
 
 Original creator: dmharvey
 

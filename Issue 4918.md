@@ -1,6 +1,6 @@
 # Issue 4918: convert sage.matrix.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4918
 
 Original creator: mhansen
 

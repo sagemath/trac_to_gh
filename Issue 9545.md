@@ -1,6 +1,6 @@
 # Issue 9545: Fix flintqs on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9545
 
 Original creator: pjeremy
 

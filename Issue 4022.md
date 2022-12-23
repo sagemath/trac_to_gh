@@ -1,6 +1,6 @@
 # Issue 4022: [with patch, needs review] Gröbner bases over Z and Z/nZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4022
 
 Original creator: malb
 

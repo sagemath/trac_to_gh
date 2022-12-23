@@ -1,6 +1,6 @@
 # Issue 3077: pbuild does not return properly on failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3077
 
 Original creator: gfurnish
 

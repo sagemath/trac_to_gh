@@ -1,6 +1,6 @@
 # Issue 4677: Plotting lambda functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4677
 
 Original creator: kcrisman
 

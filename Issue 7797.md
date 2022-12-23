@@ -1,6 +1,6 @@
 # Issue 7797: basic interface to letterplace from singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7797
 
 Original creator: burcin
 
@@ -1408,7 +1408,7 @@ Hans Schönemann has tested it. He used Singular-3-1-5, or in more detail:
 ```
 Singular for SunOS-5 version 3-1-5 (3150)  Aug 27 2012 19:23:52
 with
-        factory(`@`(#) factoryVersion = 3.1.5),libfac(3.1.5,July 2012),
+        factory(@(#) factoryVersion = 3.1.5),libfac(3.1.5,July 2012),
         GMP(4.2),NTL(5.5.2),64bit,static readline,Plural,DBM,
         dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1346170574
         CC= gcc -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H,
@@ -1790,7 +1790,7 @@ I have changed the "big" patch. The diff of the two patch versions is:
 ```diff
 --- trac7797-full_letterplace_wrapper_combined.patch    2012-11-09 11:15:19.355793326 +0100
 +++ trac7797-full_letterplace_wrapper_combined.patch        2012-09-02 09:00:20.000000000 +0200
-`@``@` -2176,7 +2176,7 `@``@`
+@@ -2176,7 +2176,7 @@
  +            sage: p.reduce(I)
  +            y*y*y - y*y*z + y*z*y - y*z*z
  +            sage: G = F._reductor_(I.gens(),3); G

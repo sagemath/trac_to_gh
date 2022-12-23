@@ -1,6 +1,6 @@
 # Issue 1560: Bug in introspection: line3d?? results in lame output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1560
 
 Original creator: was
 

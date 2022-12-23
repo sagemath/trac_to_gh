@@ -1,6 +1,6 @@
 # Issue 8775: Bug in conjugate of symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8775
 
 Original creator: kcrisman
 

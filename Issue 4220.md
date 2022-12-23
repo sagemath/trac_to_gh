@@ -1,6 +1,6 @@
 # Issue 4220: include Sphinx, Docutils, Jinja, and Pygments in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4220
 
 Original creator: mhansen
 

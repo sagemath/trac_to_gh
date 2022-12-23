@@ -1,6 +1,6 @@
 # Issue 646: plot3d error on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/646
 
 Original creator: robertwb
 
@@ -11,10 +11,10 @@ Assignee: was
 
 ```
 ---------- Forwarded message ----------
-From: Kate Minola <kate01123`@`gmail.com>
+From: Kate Minola <kate01123@gmail.com>
 Date: Sep 12, 2007 7:27 AM
 Subject: [sage-support] sage-2.8.4.1 build report
-To: sage-support`@`googlegroups.com
+To: sage-support@googlegroups.com
 
 
 

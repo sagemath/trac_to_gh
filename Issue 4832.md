@@ -1,6 +1,6 @@
 # Issue 4832: [with patch, needs review] prevent search_src and search_doc from printing the sage banner
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4832
 
 Original creator: jhpalmieri
 

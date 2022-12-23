@@ -1,6 +1,6 @@
 # Issue 3090: first maxima use after restart returns zero, or fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3090
 
 Original creator: gnprice
 

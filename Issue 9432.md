@@ -1,6 +1,6 @@
 # Issue 9432: remove remaining # optional - GLPK tags on doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9432
 
 Original creator: rlm
 

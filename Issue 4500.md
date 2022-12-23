@@ -1,6 +1,6 @@
 # Issue 4500: cython files missing from build directory after install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4500
 
 Original creator: craigcitro
 
@@ -261,7 +261,7 @@ This patch fixes the issue for me:
 diff -r c543000d6447 setup.py
 --- a/setup.py	Thu Nov 13 05:32:07 2008 -0800
 +++ b/setup.py	Thu Nov 13 09:43:33 2008 -0800
-`@``@` -241,7 +241,10 `@``@`
+@@ -241,7 +241,10 @@
          Look up the last modified time of a file, with caching. 
          """
          if filename not in self._timestamps:

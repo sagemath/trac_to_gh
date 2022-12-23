@@ -1,6 +1,6 @@
 # Issue 6765: [with patch, needs review] Linear Programming in Tutorial's Tour !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6765
 
 Original creator: ncohen
 

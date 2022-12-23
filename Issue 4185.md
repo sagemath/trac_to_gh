@@ -1,6 +1,6 @@
 # Issue 4185: [with spkg, needs review] remove GNUisms from spkg-install of the jmol.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4185
 
 Original creator: mabshoff
 

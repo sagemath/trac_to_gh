@@ -1,6 +1,6 @@
 # Issue 436: http to https redirect for secure notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/436
 
 Original creator: nbruin
 

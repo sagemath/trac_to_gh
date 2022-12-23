@@ -1,6 +1,6 @@
 # Issue 3755: [with patch; needs review] finance -- improve implementation of hurst exponent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3755
 
 Original creator: was
 

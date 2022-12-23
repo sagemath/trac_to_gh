@@ -1,6 +1,6 @@
 # Issue 1724: Creating ModularForms from q-expansions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1724
 
 Original creator: ljpk
 

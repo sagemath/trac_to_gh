@@ -1,6 +1,6 @@
 # Issue 6880: docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6880
 
 Original creator: was
 

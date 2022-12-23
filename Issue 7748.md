@@ -1,6 +1,6 @@
 # Issue 7748: Make incomplete gamma function symbolic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7748
 
 Original creator: kcrisman
 

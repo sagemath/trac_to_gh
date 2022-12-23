@@ -1,6 +1,6 @@
 # Issue 5977: Implement sage -clean-residues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5977
 
 Original creator: nthiery
 

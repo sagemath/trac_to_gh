@@ -1,6 +1,6 @@
 # Issue 7361: implement is_regular() for a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7361
 
 Original creator: AlexGhitza
 

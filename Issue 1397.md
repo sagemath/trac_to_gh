@@ -1,6 +1,6 @@
 # Issue 1397: "sage -upgrade" should print release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1397
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 5021: [with patch, needs review] add some jsMath extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5021
 
 Original creator: jhpalmieri
 

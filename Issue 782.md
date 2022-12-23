@@ -1,6 +1,6 @@
 # Issue 782: sage -testall should support ctrl-C
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/782
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 460: AttributeError: 'Graphics' object has no attribute 'append'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/460
 
 Original creator: mhansen
 

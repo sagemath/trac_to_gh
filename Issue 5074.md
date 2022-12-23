@@ -1,6 +1,6 @@
 # Issue 5074: singular factorization over GF(p) need not be a complete factorization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5074
 
 Original creator: was
 

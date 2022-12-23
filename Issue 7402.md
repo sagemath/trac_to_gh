@@ -1,6 +1,6 @@
 # Issue 7402: SageNB -- Use `pkg_resources` to locate `DATA` directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7402
 
 Original creator: timdumol
 

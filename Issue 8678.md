@@ -1,6 +1,6 @@
 # Issue 8678: Improvements for morphisms of ModulesWithBasis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8678
 
 Original creator: nthiery
 

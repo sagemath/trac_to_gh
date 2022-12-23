@@ -1,6 +1,6 @@
 # Issue 8588: list(SL(2,2)) is inconsistent with SL(2,2).list()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8588
 
 Original creator: nthiery
 

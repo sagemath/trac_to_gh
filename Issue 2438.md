@@ -1,6 +1,6 @@
 # Issue 2438: [with patch, positive review] get the reference manual to build again
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2438
 
 Original creator: malb
 

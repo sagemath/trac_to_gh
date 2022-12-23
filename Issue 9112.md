@@ -1,6 +1,6 @@
 # Issue 9112: adding maximum entry option to SemistandardTableaux()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9112
 
 Original creator: QuantumKing
 

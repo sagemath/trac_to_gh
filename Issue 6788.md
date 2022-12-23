@@ -1,6 +1,6 @@
 # Issue 6788: 1 doctest timed out in devel/sage/sage/symbolic/assumptions.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6788
 
 Original creator: drkirkby
 
@@ -93,7 +93,7 @@ sorry for not replying earlier, but I did not see the request. The .spkg for Max
 This does fix the problem. 
 
 
-kirkby`@`t2:[~/sage-4.3] $ ./sage -t  "devel/sage/sage/symbolic/assumptions.py"
+kirkby@t2:[~/sage-4.3] $ ./sage -t  "devel/sage/sage/symbolic/assumptions.py"
 sage -t  "devel/sage/sage/symbolic/assumptions.py"          
          [60.8 s]
  

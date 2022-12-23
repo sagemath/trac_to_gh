@@ -1,6 +1,6 @@
 # Issue 590: document extended_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/590
 
 Original creator: was
 

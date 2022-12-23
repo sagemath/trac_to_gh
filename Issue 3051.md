@@ -1,6 +1,6 @@
 # Issue 3051: Weyl Characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3051
 
 Original creator: bump
 
@@ -291,7 +291,7 @@ The following tests failed:
         sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx
 Total time for all tests: 5283.6 seconds
 Please see /home/wdj/wdj/sagefiles/sage-3.0.1/tmp/test.log for the complete log from this test.
-wdj`@`wooster:~/wdj/sagefiles/sage-3.0.1$ ./sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx
+wdj@wooster:~/wdj/sagefiles/sage-3.0.1$ ./sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx
 sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx
          [4.8 s]
 
@@ -406,7 +406,7 @@ Really, or someone should look at this instead of me but to help out a little, I
 
 
 ```
-wdj`@`wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage
+wdj@wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.2.alpha1, Release Date: 2008-05-11                |

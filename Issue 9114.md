@@ -1,6 +1,6 @@
 # Issue 9114: Improve documentation of infinite polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9114
 
 Original creator: SimonKing
 

@@ -1,6 +1,6 @@
 # Issue 4811: doctesting line numbers in report are now completely broken.  They were fine ins age-3.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4811
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 Try breaking any doctest and you get stuff like this:
 
 ```
-was`@`sage:~/build/sage-3.2.2.alpha2$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx
+was@sage:~/build/sage-3.2.2.alpha2$ ./sage -t devel/sage/sage/matrix/matrix_modn_dense.pyx
 sage -t  "devel/sage/sage/matrix/matrix_modn_dense.pyx"     
 **********************************************************************
 File "/home/was/build/sage-3.2.2.alpha2/devel/sage/sage/matrix/matrix_modn_dense.pyx", line 276, in __main__.example_6
@@ -24,7 +24,7 @@ Failed example:
 Notice the line 276 there.   In the old sage:
 
 ```
-was`@`sage:~/d/sage/matrix$ sage -t matrix_modn_dense.pyx
+was@sage:~/d/sage/matrix$ sage -t matrix_modn_dense.pyx
 sage -t  "devel/sage-main/sage/matrix/matrix_modn_dense.pyx"**********************************************************************
 File "/home/was/s/devel/sage-main/sage/matrix/matrix_modn_dense.pyx", line 554:
     sage: m

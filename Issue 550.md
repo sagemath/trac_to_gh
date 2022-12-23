@@ -1,6 +1,6 @@
 # Issue 550: bernoulli_mod_p_single
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/550
 
 Original creator: dmharvey
 

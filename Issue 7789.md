@@ -1,6 +1,6 @@
 # Issue 7789: Improve the arguments for the default type of a variable in MixedIntegerLinearProgram
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7789
 
 Original creator: ncohen
 

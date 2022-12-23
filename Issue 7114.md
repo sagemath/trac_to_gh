@@ -1,6 +1,6 @@
 # Issue 7114: cryptanalysis of classical ciphers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7114
 
 Original creator: mvngu
 

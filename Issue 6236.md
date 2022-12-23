@@ -1,6 +1,6 @@
 # Issue 6236: find the dual graph of a planar graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6236
 
 Original creator: jason
 

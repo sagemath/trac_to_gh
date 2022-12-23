@@ -1,6 +1,6 @@
 # Issue 173: mathematica raises matrices / QQ to large powers much more quickly than SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/173
 
 Original creator: was
 

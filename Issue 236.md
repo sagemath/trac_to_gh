@@ -1,6 +1,6 @@
 # Issue 236: attaching spyx files from the notebook doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/236
 
 Original creator: malb
 

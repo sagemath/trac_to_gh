@@ -1,6 +1,6 @@
 # Issue 8562: Categories for IntegerMod rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8562
 
 Original creator: nthiery
 

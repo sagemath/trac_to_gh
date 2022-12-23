@@ -1,6 +1,6 @@
 # Issue 2051: [with doc patch, needs review] added documentation for parameters of groebner_basis method of boolean ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2051
 
 Original creator: malb
 

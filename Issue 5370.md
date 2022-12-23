@@ -1,6 +1,6 @@
 # Issue 5370: [with patch, needs review] copy for matrix_double_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5370
 
 Original creator: ylchapuy
 

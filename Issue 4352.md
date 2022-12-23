@@ -1,6 +1,6 @@
 # Issue 4352: add support for weight vectors to gran/groebner_fan
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4352
 
 Original creator: mhampton
 
@@ -58,7 +58,7 @@ REVIEW:
 patch applies and passes test.  Code raises major red flag!!
 
 ```
-	        ans = eval(ans.replace('{',_).replace('}',_).replace('\n','')) 
+	        ans = eval(ans.replace('{','').replace('}','').replace('\n','')) 
 ```
 
 

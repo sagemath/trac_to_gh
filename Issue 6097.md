@@ -1,6 +1,6 @@
 # Issue 6097: Implements a mantra for declaring abstract methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6097
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 2142: product of two subdivided matrices should yield a subdivided matrix if it makes sense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2142
 
 Original creator: jason
 

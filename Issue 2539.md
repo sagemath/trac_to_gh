@@ -1,6 +1,6 @@
 # Issue 2539: Sage 2.10.4.rc0: dsage/dist_functions/dist_factor.py timeout issue with -long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2539
 
 Original creator: mabshoff
 

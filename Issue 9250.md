@@ -1,6 +1,6 @@
 # Issue 9250: Bug in crystal code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9250
 
 Original creator: aschilling
 

@@ -1,6 +1,6 @@
 # Issue 5036: [with patch; needs review] get doctest coverage of matrix_generic_dense.pyx up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5036
 
 Original creator: was
 

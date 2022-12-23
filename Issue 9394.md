@@ -1,6 +1,6 @@
 # Issue 9394: latex representation of negative coefficients broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9394
 
 Original creator: burcin
 

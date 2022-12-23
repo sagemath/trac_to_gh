@@ -1,6 +1,6 @@
 # Issue 6782: Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/calculus.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6782
 
 Original creator: drkirkby
 

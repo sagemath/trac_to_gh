@@ -1,6 +1,6 @@
 # Issue 7388: upgrade ratpoints to 2.1.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7388
 
 Original creator: rlm
 
@@ -30,7 +30,7 @@ Comment by was created at 2009-12-09 01:01:22
 You seem to have left in a directory src-2.1.2 for no reason:
 
 ```
-wstein`@`sage:~/build/sage-4.3.alpha1/spkg/optional/ratpoints-2.1.3$ ls
+wstein@sage:~/build/sage-4.3.alpha1/spkg/optional/ratpoints-2.1.3$ ls
 spkg-install  SPKG.txt  src  src-2.1.2
 ```
 

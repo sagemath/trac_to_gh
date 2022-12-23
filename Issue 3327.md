@@ -1,6 +1,6 @@
 # Issue 3327: missing .divides() implementation for FieldElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3327
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 1028: add omega support for sage-test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1028
 
 Original creator: mabshoff
 

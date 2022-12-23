@@ -1,6 +1,6 @@
 # Issue 9038: Typeset: Wrong charset for Greek characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9038
 
 Original creator: jan
 

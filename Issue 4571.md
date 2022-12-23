@@ -1,6 +1,6 @@
 # Issue 4571: merge sage's numpy.pxd with the cython numpy.pxd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4571
 
 Original creator: jason
 
@@ -119,7 +119,7 @@ Replying to [comment:4 dagss]:
 The patch `4571-more-fixes.patch` doesn't contain a commit message and your username is not on the patch. Your username should follow the format:
 
 ```
-Full Name <email`@`somewhere.com>
+Full Name <email@somewhere.com>
 ```
 
 The username makes it easy to identify the patch, when it is committed, as your contribution.
@@ -135,7 +135,7 @@ With both patches applied in the following order:
 I see the following build failure:
 
 ```
-[mvngu`@`sage sage-4.1.1.alpha0]$ ./sage -br main
+[mvngu@sage sage-4.1.1.alpha0]$ ./sage -br main
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.

@@ -1,6 +1,6 @@
 # Issue 1966: [with spkgs,patch ] inline_fortran broke on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1966
 
 Original creator: jkantor
 

@@ -1,6 +1,6 @@
 # Issue 6758: visibility.c in libgcrypt attempts to return value from void function.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6758
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 279: Add test a range of revisions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/279
 
 Original creator: ncalexan
 

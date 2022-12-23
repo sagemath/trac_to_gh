@@ -1,6 +1,6 @@
 # Issue 4046: add support for Google's new browser to the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4046
 
 Original creator: malb
 

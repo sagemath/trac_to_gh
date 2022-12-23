@@ -1,6 +1,6 @@
 # Issue 4508: Update John Boyer's planarity code to the BSD version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4508
 
 Original creator: mabshoff
 

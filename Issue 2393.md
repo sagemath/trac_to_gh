@@ -1,6 +1,6 @@
 # Issue 2393: the version of mercurial shipped with sage does not include the queue extension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2393
 
 Original creator: mhansen
 

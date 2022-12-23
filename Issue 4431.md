@@ -1,6 +1,6 @@
 # Issue 4431: [with patch, needs review] conversion of maxima matrices to sage matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4431
 
 Original creator: whuss
 

@@ -1,6 +1,6 @@
 # Issue 4127: Python scripts to search for libraries that get wrongly called in
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4127
 
 Original creator: dphilp
 

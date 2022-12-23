@@ -1,6 +1,6 @@
 # Issue 1252: 2.8.13: gmp related build problems on OSX 10.4.11, 10.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1252
 
 Original creator: mabshoff
 

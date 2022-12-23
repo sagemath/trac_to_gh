@@ -1,6 +1,6 @@
 # Issue 8924: Comparison between Sage and mpmath numbers is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8924
 
 Original creator: fredrik.johansson
 

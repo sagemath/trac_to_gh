@@ -1,6 +1,6 @@
 # Issue 8812: notebook doctest failure in sage-4.4.1.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8812
 
 Original creator: was
 
@@ -12,7 +12,7 @@ CC:  acleone
 
 
 ```
-wstein`@`sage:~/build/release/4.4.1/sage-4.4.1.alpha1$ ./sage -t  -long "local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/twist.py"
+wstein@sage:~/build/release/4.4.1/sage-4.4.1.alpha1$ ./sage -t  -long "local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/twist.py"
 sage -t -long "local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/twist.py"
  **********************************************************************
 File "/mnt/usb1/scratch/wstein/build/release/4.4.1/sage-4.4.1.alpha1/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/twist.py", line 1696:

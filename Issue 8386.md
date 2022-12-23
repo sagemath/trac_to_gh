@@ -1,6 +1,6 @@
 # Issue 8386: iet alphabet bug and rebased datatype
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8386
 
 Original creator: vdelecroix
 

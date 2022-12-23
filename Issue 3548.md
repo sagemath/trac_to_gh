@@ -1,6 +1,6 @@
 # Issue 3548: bug in Permutation creation from a string
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3548
 
 Original creator: was
 

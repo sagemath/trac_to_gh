@@ -1,6 +1,6 @@
 # Issue 7224: Spanish doc #12 "A Guided Tour"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7224
 
 Original creator: Loufer
 

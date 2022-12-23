@@ -1,6 +1,6 @@
 # Issue 8218: Finite Field move
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8218
 
 Original creator: roed
 

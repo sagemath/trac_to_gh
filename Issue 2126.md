@@ -1,6 +1,6 @@
 # Issue 2126: [with patch, needs review] small fixes to eisenstein_series_qexp()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2126
 
 Original creator: AlexGhitza
 

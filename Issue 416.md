@@ -1,6 +1,6 @@
 # Issue 416: Faster GF(2^n) arithmetic for n >= 16
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/416
 
 Original creator: malb
 

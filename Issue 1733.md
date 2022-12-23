@@ -1,6 +1,6 @@
 # Issue 1733: notebook bug -- %foo (or anything else) in a cell by itself (with nothing else in the cell) does not give an error but it *should*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1733
 
 Original creator: was
 

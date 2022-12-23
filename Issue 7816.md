@@ -1,6 +1,6 @@
 # Issue 7816: gd fails to build on Open Solaris - missing header file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7816
 
 Original creator: drkirkby
 

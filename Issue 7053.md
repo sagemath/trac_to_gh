@@ -1,6 +1,6 @@
 # Issue 7053: SageNB fails to display uploaded files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7053
 
 Original creator: timdumol
 

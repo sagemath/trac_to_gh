@@ -1,6 +1,6 @@
 # Issue 6539: MPIR determines linker is GNU when it's Sun on OpenSolaris - x86 NOT Sparc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6539
 
 Original creator: drkirkby
 

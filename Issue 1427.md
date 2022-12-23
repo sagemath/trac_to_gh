@@ -1,6 +1,6 @@
 # Issue 1427: [with spkg  ] rpy doesn't build on osx 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1427
 
 Original creator: jkantor
 

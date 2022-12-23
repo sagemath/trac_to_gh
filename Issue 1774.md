@@ -1,6 +1,6 @@
 # Issue 1774: potential very serious problems with SEA and PARI-2.3.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1774
 
 Original creator: was
 

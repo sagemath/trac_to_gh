@@ -1,6 +1,6 @@
 # Issue 5323: "./sage -t" gives misleading error message when doctesting non-existing file with absolute patch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5323
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ CC:  mjo
 The `./` should not be here:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py 
 ERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing
 ```
 

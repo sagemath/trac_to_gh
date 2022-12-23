@@ -1,6 +1,6 @@
 # Issue 5906: "libpng error: Image width or height is zero in IHDR" when plotting CompleteGraph(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5906
 
 Original creator: mabshoff
 

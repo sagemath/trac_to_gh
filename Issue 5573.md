@@ -1,6 +1,6 @@
 # Issue 5573: genus2reduction interface has at least two problems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5573
 
 Original creator: was
 

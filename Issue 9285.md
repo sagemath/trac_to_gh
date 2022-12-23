@@ -1,6 +1,6 @@
 # Issue 9285: Challenge: iterating through E8 in 5 minutes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9285
 
 Original creator: nthiery
 

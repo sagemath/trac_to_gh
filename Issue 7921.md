@@ -1,6 +1,6 @@
 # Issue 7921: Categories for extension types via __getattr___
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7921
 
 Original creator: nthiery
 

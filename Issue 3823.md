@@ -1,6 +1,6 @@
 # Issue 3823: Interact - get rid of default height
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3823
 
 Original creator: itolkov
 
@@ -39,7 +39,7 @@ Comment by mabshoff created at 2008-08-27 21:39:47
 This does not apply cleanly any more, but should be trivial to rebase:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3823_sage.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3823_sage.patch 
 patching file sage/server/notebook/interact.py
 Hunk #1 FAILED at 1397.
 1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej

@@ -1,6 +1,6 @@
 # Issue 7628: Error on account creation still creates (half of) an account
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7628
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 1360: Investigate long time graph_isom case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1360
 
 Original creator: rlm
 

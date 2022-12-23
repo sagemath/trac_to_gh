@@ -1,6 +1,6 @@
 # Issue 2550: [with trivial patch, needs review] remove UTF-8 garbage from SBox file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2550
 
 Original creator: malb
 

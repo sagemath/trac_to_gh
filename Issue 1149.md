@@ -1,6 +1,6 @@
 # Issue 1149: documentation: example output does not agree with 2.8.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1149
 
 Original creator: zimmerma
 

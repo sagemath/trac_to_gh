@@ -1,6 +1,6 @@
 # Issue 6672: Elliptic curve isogeny coercion of output to codomain curve takes too long
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6672
 
 Original creator: shumow
 

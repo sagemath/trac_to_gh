@@ -1,6 +1,6 @@
 # Issue 5359: Block matrix viewing is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5359
 
 Original creator: kcrisman
 
@@ -13,10 +13,10 @@ From sage-support:
 Viewing block matrices "nicely" seems to be difficult in Sage. 
 
 ```
-sage: A=matrix([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)) 
-sage: B=matrix([This is the Trac macro *2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2-macro)) 
-sage: C=matrix([This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro)) 
-sage: D=matrix([This is the Trac macro *4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4-macro)) 
+sage: A=matrix([[1]]) 
+sage: B=matrix([[2]]) 
+sage: C=matrix([[3]]) 
+sage: D=matrix([[4]]) 
 sage: BM=block_matrix([A,B,C,D]) 
 sage: BM 
 [1|2] 
@@ -37,10 +37,10 @@ Okay, let's try the notebook:
 
 
 ```
-A=matrix([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro)) 
-B=matrix([This is the Trac macro *2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2-macro)) 
-C=matrix([This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro)) 
-D=matrix([This is the Trac macro *4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4-macro)) 
+A=matrix([[1]]) 
+B=matrix([[2]]) 
+C=matrix([[3]]) 
+D=matrix([[4]]) 
 
 BM=block_matrix([A,B,C,D]);BM 
 

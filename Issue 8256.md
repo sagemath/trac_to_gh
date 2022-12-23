@@ -1,6 +1,6 @@
 # Issue 8256: The documentation of Misc is a mess
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8256
 
 Original creator: hivert
 

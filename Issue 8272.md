@@ -1,6 +1,6 @@
 # Issue 8272: R's spkg-install tries to disable iconv, but it is *essential* for R.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8272
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9257: remove misc/darcs.py in Sage 5.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9257
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2056: 3d graphics examples [with patch; needs easy review] include two very nice examples from Peter Jipsen in the sage docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2056
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5049: show(mathematica('2/3')) doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5049
 
 Original creator: was
 

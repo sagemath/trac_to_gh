@@ -1,6 +1,6 @@
 # Issue 3634: minpoly still slow for elements of finte fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3634
 
 Original creator: robertwb
 

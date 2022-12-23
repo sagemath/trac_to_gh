@@ -1,6 +1,6 @@
 # Issue 4961: sage/modules/vector_modn_sparse_c.pxi: allocate_c_vector_modint can leak memory in case of failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4961
 
 Original creator: mabshoff
 

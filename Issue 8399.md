@@ -1,6 +1,6 @@
 # Issue 8399: doctest devel/sage/sage/graphs/graph.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8399
 
 Original creator: drkirkby
 

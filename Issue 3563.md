@@ -1,6 +1,6 @@
 # Issue 3563: sage/misc/cython.py: make "def atlas()" deal with the Accelerate Framework on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3563
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8760: change sage notebook to use HTML5 doctype, and also change the email part of registration form to actually use something from html5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8760
 
 Original creator: was
 

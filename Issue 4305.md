@@ -1,6 +1,6 @@
 # Issue 4305: [with patch, needs review] move finite fields into their own directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4305
 
 Original creator: robertwb
 

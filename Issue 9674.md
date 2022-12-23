@@ -1,6 +1,6 @@
 # Issue 9674: Please revert sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9674
 
 Original creator: nmouha
 

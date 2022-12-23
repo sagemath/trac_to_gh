@@ -1,6 +1,6 @@
 # Issue 1319: [graphs] calculate the characteristic polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1319
 
 Original creator: jason
 

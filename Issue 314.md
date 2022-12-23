@@ -1,6 +1,6 @@
 # Issue 314: raw-input in notebook compatible with command line
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/314
 
 Original creator: TimothyClemans
 

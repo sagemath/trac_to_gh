@@ -1,6 +1,6 @@
 # Issue 7915: Improve TAB-completion in Macaulay2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7915
 
 Original creator: novoselt
 

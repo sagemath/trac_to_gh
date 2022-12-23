@@ -1,6 +1,6 @@
 # Issue 1113: Delete a file to fix an example involving the sage latex mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1113
 
 Original creator: was
 

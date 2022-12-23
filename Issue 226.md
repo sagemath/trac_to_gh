@@ -1,6 +1,6 @@
 # Issue 226: sagex enum issue and solution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/226
 
 Original creator: was
 
@@ -34,7 +34,7 @@ With 0.9.5 it gives the following error:
  
 _______________________________________________
 Pyrex mailing list
-Pyrex`@`lists.copyleft.no
+Pyrex@lists.copyleft.no
 http://lists.copyleft.no/mailman/listinfo/pyrex
 --------
 
@@ -49,7 +49,7 @@ tell if it is the correct solution.
 05:21:03.000000000 +0100
 +++ Pyrex-0.9.5-enumcmpfix/Pyrex/Compiler/ExprNodes.py  2007-01-28
 16:14:45.366599915 +0100
-`@``@` -2594,6 +2594,8 `@``@`
+@@ -2594,6 +2594,8 @@
          elif (type1.is_numeric and type2.is_numeric
                  and op not in ('is', 'is_not')):
              return 1
@@ -62,7 +62,7 @@ tell if it is the correct solution.
  
 _______________________________________________
 Pyrex mailing list
-Pyrex`@`lists.copyleft.no
+Pyrex@lists.copyleft.no
 http://lists.copyleft.no/mailman/listinfo/pyrex
 ```
 

@@ -1,6 +1,6 @@
 # Issue 2750: Implement GF(p^n) as relative extension of GF(p^d)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2750
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4044: [with patch, needs review] create AES equation systems for PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4044
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 8711: fix warnings when building the ref manual (4.4.alpha0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8711
 
 Original creator: jhpalmieri
 

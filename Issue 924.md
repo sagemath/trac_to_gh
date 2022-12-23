@@ -1,6 +1,6 @@
 # Issue 924: the matplotlib spkg patches break underlying functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/924
 
 Original creator: cwitty
 

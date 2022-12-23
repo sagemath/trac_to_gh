@@ -1,6 +1,6 @@
 # Issue 7716: sage -coverage enhancement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7716
 
 Original creator: roed
 
@@ -102,7 +102,7 @@ Comment by was created at 2009-12-31 16:46:36
 Fails to apply to sage-4.3:
 
 ```
-wstein`@`boxen:~/build/referee/sage-4.3/local/bin$ hgimport http://trac.sagemath.org/sage_trac/attachment/ticket/7716/7716_coverage.patch
+wstein@boxen:~/build/referee/sage-4.3/local/bin$ hgimport http://trac.sagemath.org/sage_trac/attachment/ticket/7716/7716_coverage.patch
 --08:41:18--  http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7716/7716_coverage.patch
            => `7716_coverage.patch'
 Resolving trac.sagemath.org... 128.208.160.197
@@ -135,7 +135,7 @@ Maybe the patch is broken/corrupt?  It starts
 
 ```
 # HG changeset patch
-# User David Roe <roed`@`math.harvard.edu>
+# User David Roe <roed@math.harvard.edu>
 # Date 1261014209 18000
 # Node ID da454b36cda7a92a4cbee40317e86f970a04dd8e
 # Parent  e4aff87d1aa188834f14c6f4643beff69879512f
@@ -149,7 +149,7 @@ then line 604 is suddenly:
 
 ```
 # HG changeset patch
-# User David Roe <roed`@`math.harvard.edu>
+# User David Roe <roed@math.harvard.edu>
 # Date 1261014209 18000
 # Node ID e5314d3c2ba2b0ec34d8226ee80db4526a8a5678
 # Parent  2c17a7cee6e7b76fe67053f34c20ed7c6c33d7cb

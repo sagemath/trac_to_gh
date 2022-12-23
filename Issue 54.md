@@ -1,6 +1,6 @@
 # Issue 54: guaranteed correct result for log(integer, integer)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/54
 
 Original creator: dmharvey
 

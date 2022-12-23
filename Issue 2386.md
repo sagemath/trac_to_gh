@@ -1,6 +1,6 @@
 # Issue 2386: copy and pasting matrices doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2386
 
 Original creator: jason
 

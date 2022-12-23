@@ -1,6 +1,6 @@
 # Issue 7604: Bug in continued fractions module (contfrac).  Patch attached
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7604
 
 Original creator: solevillar
 

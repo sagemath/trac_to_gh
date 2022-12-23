@@ -1,6 +1,6 @@
 # Issue 613: combinat/sloane_functions.py:  ArithmeticError: 0^0 is undefined
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/613
 
 Original creator: mhansen
 

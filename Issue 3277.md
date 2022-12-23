@@ -1,6 +1,6 @@
 # Issue 3277: context for calculus assumptions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3277
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 4815: list_plot3d is broken (segfaults, zero division errors)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4815
 
 Original creator: was
 

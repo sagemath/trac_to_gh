@@ -1,6 +1,6 @@
 # Issue 4660: mark  inline fortran and inline cython examples optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4660
 
 Original creator: was
 

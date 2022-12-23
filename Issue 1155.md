@@ -1,6 +1,6 @@
 # Issue 1155: PermutationGroup coercion bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1155
 
 Original creator: wdj
 
@@ -32,7 +32,7 @@ But to make a permutation group out of this element I have to enclose
 the x in two sets of brackets:
 
 ```
-sage: PermutationGroup([This is the Trac macro *x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x-macro))
+sage: PermutationGroup([[x]])
 Permutation Group with generators [(1,2)(3,7)(4,6)(5,8)]
 ```
 
@@ -78,7 +78,7 @@ sage:
 sage: x = gap.Image(niso, a)
 sage: x
 (1,2)(3,7)(4,6)(5,8)
-sage: PermutationGroup([This is the Trac macro *x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x-macro))
+sage: PermutationGroup([[x]])
 Permutation Group with generators [(1,2)(3,7)(4,6)(5,8)]
 sage:
 sage: PermutationGroup([x])

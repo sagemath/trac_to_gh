@@ -1,6 +1,6 @@
 # Issue 3059: notebook -- rewrite notebook(...) function to *not* use SSL by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3059
 
 Original creator: was
 

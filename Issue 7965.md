@@ -1,6 +1,6 @@
 # Issue 7965: quo_rem attribute error (probably easy to fix?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7965
 
 Original creator: was
 

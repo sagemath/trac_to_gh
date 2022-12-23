@@ -1,6 +1,6 @@
 # Issue 5696: Update libpng to 1.2.35
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5696
 
 Original creator: mabshoff
 

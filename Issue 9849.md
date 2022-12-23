@@ -1,6 +1,6 @@
 # Issue 9849: make style of documentation consistent with sagemath.org
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9850
 
 Original creator: niles
 

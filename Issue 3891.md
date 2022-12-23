@@ -1,6 +1,6 @@
 # Issue 3891: polynomial sqrt method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3891
 
 Original creator: jbmohler
 

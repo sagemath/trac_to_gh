@@ -1,6 +1,6 @@
 # Issue 6495: Break up the PDF reference manual into smaller pieces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6495
 
 Original creator: mpatel
 
@@ -54,8 +54,8 @@ On the `\ZZ` in `arithgroup.tex`:  It seems the problem stems from `\`@`title` i
       % generating document info in the PDF file.                               
       \def\\{, }
       \pdfinfo{
-        /Author (\`@`author)
-        /Title (\`@`title)
+        /Author (\@author)
+        /Title (\@title)
       }
       \endgroup
     \fi
@@ -268,7 +268,7 @@ Here's a new version; the only difference is this change to SAGE_ROOT/devel/sage
 diff --git a/spkg-dist b/spkg-dist
 --- a/spkg-dist
 +++ b/spkg-dist
-`@``@` -38,15 +38,23 `@``@` fi
+@@ -38,15 +38,23 @@ fi
  
  # Remove the .cython_hash file, since including this in the bdist will
  # completely break "sage -br". 
@@ -1005,7 +1005,7 @@ I got two doctest failures (after applying your patch), which can be fixed with 
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -200,7 +200,7 `@``@` class DocBuilder(object):
+@@ -200,7 +200,7 @@ class DocBuilder(object):
              sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder
              sage: b = builder.DocBuilder('tutorial')
              sage: b._output_formats()
@@ -1014,7 +1014,7 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
  
          """
          #Go through all the attributes of self and check to
-`@``@` -859,7 +859,7 `@``@` class ReferenceSubBuilder(DocBuilder):
+@@ -859,7 +859,7 @@ class ReferenceSubBuilder(DocBuilder):
  
              sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder
              sage: import builder
@@ -1094,7 +1094,7 @@ As far as handling ctrl-c, I found [this question](http://stackoverflow.com/ques
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -415,7 +415,7 `@``@` class ReferenceBuilder(AllBuilder):
+@@ -415,7 +415,7 @@ class ReferenceBuilder(AllBuilder):
              for doc in self.get_all_documents(refdir):
                  pool.apply_async(build_ref_doc,
                                   (doc, lang, format,
@@ -1579,7 +1579,7 @@ and then everything is rebuilt again. I propose this change, which seems to fix 
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -300,7 +300,7 `@``@` class AllBuilder(object):
+@@ -300,7 +300,7 @@ class AllBuilder(object):
          logger.warning("Building reference manual, second pass.\n")
          ALLSPHINXOPTS = ALLSPHINXOPTS.replace(
              'multidoc_first_pass=1', 'multidoc_first_pass=0')
@@ -2128,7 +2128,7 @@ Comment by jhpalmieri created at 2013-01-25 06:22:59
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -391,7 +391,7 `@``@` class WebsiteBuilder(DocBuilder):
+@@ -391,7 +391,7 @@ class WebsiteBuilder(DocBuilder):
                      redirect_filename = os.path.join(reference_dir, shorter_path, filename)
  
                      # the number of levels up we need to use in the relative url
@@ -2435,7 +2435,7 @@ For the other problem, this patch fixes it for me:
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -274,7 +274,7 `@``@` class AllBuilder(object):
+@@ -274,7 +274,7 @@ class AllBuilder(object):
          global ALLSPHINXOPTS
          ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'
          for document in refs:
@@ -2452,7 +2452,7 @@ Or perhaps we should use this one:
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -274,7 +274,10 `@``@` class AllBuilder(object):
+@@ -274,7 +274,10 @@ class AllBuilder(object):
          global ALLSPHINXOPTS
          ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'
          for document in refs:
@@ -2478,7 +2478,7 @@ By the way, the new version of the script doesn't work on OS X, because OS X use
 ```diff
 --- a/trac_6495-script.sh	2013-01-27 03:44:32.000000000 -0800
 +++ b/trac_6495-script.sh	2013-01-28 10:53:39.000000000 -0800
-`@``@` -16,9 +16,9 `@``@`
+@@ -16,9 +16,9 @@
  do
      hg rename $f.rst $f/index.rst
      # delete lines of the form ".. _ch:blah"
@@ -2490,7 +2490,7 @@ By the way, the new version of the script doesn't work on OS X, because OS X use
      cat >$f/conf.py <<EOF
  # -*- coding: utf-8 -*-
  # This file is execfile()d with the current directory set to its
-`@``@` -47,7 +47,7 `@``@`
+@@ -47,7 +47,7 @@
  cp cmd/conf.py combinat/conf.py
  hg add combinat/conf.py
  # in combinat/index.rst: change "../sage/combinat/blah" to "sage/combinat/blah"
@@ -2832,7 +2832,7 @@ Maybe just removing one line from `useless_chatter` would address my last point:
 diff --git a/doc/common/custom-sphinx-build.py b/doc/common/custom-sphinx-build.py
 --- a/doc/common/custom-sphinx-build.py
 +++ b/doc/common/custom-sphinx-build.py
-`@``@` -31,7 +31,6 `@``@`
+@@ -31,7 +31,6 @@
      re.compile('^Compiling a sub-document'),
      re.compile('^updating environment: 0 added, 0 changed, 0 removed'),
      re.compile('^looking for now-outdated files... none found'),
@@ -2879,7 +2879,7 @@ I rebased the patches to 5.7.beta3. The only change of substance: in the "part2"
 diff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py
 --- a/sage/graphs/graph_plot.py
 +++ b/sage/graphs/graph_plot.py
-`@``@` -106,7 +106,7 `@``@`
+@@ -106,7 +106,7 @@
        settings from ``DEFAULT_SHOW_OPTIONS`` only affects ``G.show()``.
  
      * In order to define a default value permanently, you can add a couple of

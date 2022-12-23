@@ -1,6 +1,6 @@
 # Issue 8757: Use SQLAlchemy for storage in SageNB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8757
 
 Original creator: timdumol
 

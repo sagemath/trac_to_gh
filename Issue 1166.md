@@ -1,6 +1,6 @@
 # Issue 1166: 2D terminal output is inconsistent and corrupted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1166
 
 Original creator: zimmerma
 

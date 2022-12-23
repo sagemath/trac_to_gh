@@ -1,6 +1,6 @@
 # Issue 901: minor addition to prog.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/901
 
 Original creator: wdj
 

@@ -1,6 +1,6 @@
 # Issue 3294: linear code bug: minimum_distance breaks over "large" fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3294
 
 Original creator: wdj
 

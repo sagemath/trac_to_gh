@@ -1,6 +1,6 @@
 # Issue 3143: [with patch, needs review] remove references to /home/was
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3143
 
 Original creator: malb
 

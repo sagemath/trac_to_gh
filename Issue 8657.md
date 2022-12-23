@@ -1,6 +1,6 @@
 # Issue 8657: libgcrypt spkg has incorrect DSO linking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8657
 
 Original creator: vbraun
 

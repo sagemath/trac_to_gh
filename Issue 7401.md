@@ -1,6 +1,6 @@
 # Issue 7401: Derivative at a point is not translated into Maxima
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7401
 
 Original creator: robert.marik
 

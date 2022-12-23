@@ -1,6 +1,6 @@
 # Issue 2083: [with patch, needs review] Make number_field .galois_closure require a name and .galois_conjugates take an explicit field.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2083
 
 Original creator: ncalexan
 

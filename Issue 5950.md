@@ -1,6 +1,6 @@
 # Issue 5950: OSX: Add check code so that x86 and ppc builds print sane error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5950
 
 Original creator: mabshoff
 

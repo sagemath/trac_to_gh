@@ -1,6 +1,6 @@
 # Issue 1643: Fortran.spkg: If SAGE_FORTRAN is set do not copy the binary to sage_fortran.bin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1643
 
 Original creator: mabshoff
 

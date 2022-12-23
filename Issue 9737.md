@@ -1,6 +1,6 @@
 # Issue 9737: Moved interact to view an induced subgraph from wiki to library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9737
 
 Original creator: punchagan
 

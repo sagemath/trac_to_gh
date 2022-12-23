@@ -1,6 +1,6 @@
 # Issue 1858: plot.py coverage is crap -- get it to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1858
 
 Original creator: was
 

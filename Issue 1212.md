@@ -1,6 +1,6 @@
 # Issue 1212: make gfortran mandatory on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1212
 
 Original creator: mabshoff
 

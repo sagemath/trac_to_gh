@@ -1,6 +1,6 @@
 # Issue 6517: [with SPKG, needs review] FriCAS 1.0.7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6517
 
 Original creator: awebb
 
@@ -101,7 +101,7 @@ http://sage.math.washington.edu/home/mvngu/patch/fricas-1.0.7.p0.spkg
 I install it as in the following transcript, but received "configure: error: Unable to determine Lisp flavor":
 
 ```
-[mvngu`@`sage sage-4.1.1.alpha0]$ ./sage -f /home/mvngu/patch/fricas-1.0.7.p0.spkg
+[mvngu@sage sage-4.1.1.alpha0]$ ./sage -f /home/mvngu/patch/fricas-1.0.7.p0.spkg
 <insall-messages>
 axiom_build_bindir = /scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0/build-dir/build/x86_64-unknown-linux/bin
 checking Lisp implementation... ECL (Embeddable Common-Lisp) 9.4.1

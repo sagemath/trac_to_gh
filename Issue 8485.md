@@ -1,6 +1,6 @@
 # Issue 8485: port Jeechul Woo's gp script for 3-isogeny descent to Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8485
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 6862: Mixing of different domains for symbolic variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6862
 
 Original creator: gmhossain
 

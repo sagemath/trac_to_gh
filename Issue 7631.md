@@ -1,6 +1,6 @@
 # Issue 7631: notebook -- republishing a worksheet doesn't update the displayed title
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7631
 
 Original creator: was
 

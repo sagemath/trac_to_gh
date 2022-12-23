@@ -1,6 +1,6 @@
 # Issue 6240: singular interface failure on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6240
 
 Original creator: was
 
@@ -12,7 +12,7 @@ I see the following test failure every time on *iras* (SUSE Itanium on skynet). 
 
 ```
 
-wstein`@`iras:~/build/iras/sage-4.0.1> ./sage -t  "devel/sage/doc/en/constructions/polynomials.rst"
+wstein@iras:~/build/iras/sage-4.0.1> ./sage -t  "devel/sage/doc/en/constructions/polynomials.rst"
 sage -t  "devel/sage/doc/en/constructions/polynomials.rst"  
 **********************************************************************
 File "/home/wstein/build/iras/sage-4.0.1/devel/sage/doc/en/constructions/polynomials.rst", line 322:
@@ -54,7 +54,7 @@ The following tests failed:
 
         sage -t  "devel/sage/doc/en/constructions/polynomials.rst"
 Total time for all tests: 5.3 seconds
-wstein`@`iras:~/build/iras/sage-4.0.1> cat /etc/issue
+wstein@iras:~/build/iras/sage-4.0.1> cat /etc/issue
 
 Welcome to SUSE Linux Enterprise Server 10 SP1 (ia64) - Kernel \r (\l).
 
@@ -69,7 +69,7 @@ Comment by was created at 2009-06-07 13:33:39
 There is also one other related failure on that box:
 
 ```
-wstein`@`iras:~/build/iras/sage-4.0.1> ./sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
+wstein@iras:~/build/iras/sage-4.0.1> ./sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 **********************************************************************
 File "/home/wstein/build/iras/sage-4.0.1/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py", line 1262:

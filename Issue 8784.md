@@ -1,6 +1,6 @@
 # Issue 8784: remove quit_sage() command from all.py top level
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8784
 
 Original creator: was
 
@@ -11,15 +11,15 @@ Assignee: jason
 It is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function "quit_sage()" available at the sage: prompt by default that does not quit sage, is dumb. 
 
 ```
-wstein`@`boxen:~/build/sage-4.4$ ./sage
+wstein@boxen:~/build/sage-4.4$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: quit_sage()
 Exiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).
 sage: quit
 Exiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).
-/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython "$`@`" -i
-wstein`@`boxen:~/build/sage-4.4$            
+/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython "$@" -i
+wstein@boxen:~/build/sage-4.4$            
 ```
 
 | Sage Version 4.4, Release Date: 2010-04-24                         |

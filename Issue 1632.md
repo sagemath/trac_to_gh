@@ -1,6 +1,6 @@
 # Issue 1632: update sqlite to 3.5.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1632
 
 Original creator: mabshoff
 

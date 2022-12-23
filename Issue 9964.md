@@ -1,6 +1,6 @@
 # Issue 9964: Make SYMPOW not write to files under global Sage installations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9965
 
 Original creator: mpatel
 

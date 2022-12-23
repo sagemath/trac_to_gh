@@ -1,6 +1,6 @@
 # Issue 6812: Enumerate integer list up to the action of a Permutation Group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6812
 
 Original creator: nborie
 
@@ -282,7 +282,7 @@ I didn't know we can add pyx file in the doctree, I will add it. I will also add
 
 ```
 sage: from sage.combinat.enumeration_mod_permgroup import is_canonical
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2,3,4,5,6))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2,3,4,5,6)]])
 sage: sgs = [map(lambda x: Permutation(x), trans) for trans in G.strong_generating_system()]
 sage: is_canonical(sgs, ['c','b','a','b','b','a'])
 True
@@ -297,7 +297,7 @@ I think that examples in cdef functions aren't required just because one cannot 
 For the behavior of list(), I think it is ok. The category framework do the job:
 
 ```
-sage: I = IntegerVectorsModPermutationGroup(PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2,3,4))](https://trac.sagemath.org/wiki/WikiMacros#-macro)))
+sage: I = IntegerVectorsModPermutationGroup(PermutationGroup([[(1,2,3,4)]]))
 sage: list(I)
 ...
 NotImplementedError: infinite list
@@ -379,14 +379,14 @@ I am very sorry but it needs a STRONG REVIEW OF ENGLISH. My flyspell is well con
 
 
 ```
-nicolas`@`lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/integer_vectors_mod_permgroup.py -optional -long
+nicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/integer_vectors_mod_permgroup.py -optional -long
 sage -t -optional -long "devel/sage-combinat/sage/combinat/integer_vectors_mod_permgroup.py"
 	 [10.3 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 10.3 seconds
-nicolas`@`lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/enumeration_mod_permgroup.pyx -optional -long
+nicolas@lancelot:/opt/sage/devel/sage-combinat$ sage -t sage/combinat/enumeration_mod_permgroup.pyx -optional -long
 sage -t -optional -long "devel/sage-combinat/sage/combinat/enumeration_mod_permgroup.pyx"
 	 [38.5 s]
  
@@ -436,25 +436,25 @@ Ok, it depends on #10335
 
 ```
 la pile de patchs est maintenant vide
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ hg qpush
+nicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush
 application de trac_10334-permgroup_cleanup-rebase-mh.patch
 actuellement à : trac_10334-permgroup_cleanup-rebase-mh.patch
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ hg qpush
+nicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush
 application de trac_10335-permgroup_domain-mh.patch
 actuellement à : trac_10335-permgroup_domain-mh.patch
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ hg qpush
+nicolas@lancelot:/opt/sage/devel/sage-review$ hg qpush
 application de trac_6812_integer_vectors_mod_permgroup.patch
 actuellement à : trac_6812_integer_vectors_mod_permgroup.patch
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ sage -b
+nicolas@lancelot:/opt/sage/devel/sage-review$ sage -b
 ...
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/enumeration_mod_permgroup.pyx 
+nicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/enumeration_mod_permgroup.pyx 
 sage -t  "devel/sage-review/sage/combinat/enumeration_mod_permgroup.pyx"
 	 [14.3 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 14.3 seconds
-nicolas`@`lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/integer_vectors_mod_permgroup.py 
+nicolas@lancelot:/opt/sage/devel/sage-review$ sage -t sage/combinat/integer_vectors_mod_permgroup.py 
 sage -t  "devel/sage-review/sage/combinat/integer_vectors_mod_permgroup.py"
 	 [5.7 s]
  

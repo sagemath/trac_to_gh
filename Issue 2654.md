@@ -1,6 +1,6 @@
 # Issue 2654: Cyclotomic polynomials -- suggested improvement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2654
 
 Original creator: cremona
 
@@ -249,7 +249,7 @@ CPU times: user 0.70 s, sys: 0.54 s, total: 1.24 s
 Wall time: 1.24
 sage: time f=cyclotomic_polynomial(2^27)
 excessive length in vector::SetLength
-/home/jec/sage-2.11/local/bin/sage-sage: line 214: 30105 Aborted                 (core dumped) sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/home/jec/sage-2.11/local/bin/sage-sage: line 214: 30105 Aborted                 (core dumped) sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 | SAGE Version 2.11, Release Date: 2008-03-30                        |
@@ -267,7 +267,7 @@ The SetLength crash is an NTL issue (NTL has a limit on how large polynomials ca
 ```
 sage: ZZ['x']({2^30: 1})
 overflow in SetCoeff
-/Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/Users/robert/sage/current/local/bin/sage-sage: line 222: 13929 Abort trap              sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 

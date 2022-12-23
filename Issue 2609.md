@@ -1,6 +1,6 @@
 # Issue 2609: [with patch, needs review] generators for congruence subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2609
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 3484: [with patch, needs review] extend sage_eval (in preparation for sage_input)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3484
 
 Original creator: cwitty
 
@@ -62,7 +62,7 @@ REFEREE DISCUSSION (irc log):
 22:40 < cwitty> Thanks!
 22:40 < wstein-3764> OK, i just wanted to check with you.
 22:40 < wstein-3764> I'm not that worried about something just accidently working...
-22:43 -!- mabshoff [n=michaela`@`wclient1.irmacs.sfu.ca] has quit [Read error: 104 (Connection reset by peer)]
+22:43 -!- mabshoff [n=michaela@wclient1.irmacs.sfu.ca] has quit [Read error: 104 (Connection reset by peer)]
 22:46 < wstein-3764> cwitty -- this sets of an alarm bell for me:
 22:46 < wstein-3764> raise SyntaxError, "%s\nError using SAGE to evaluate '%s'"%(msg, cmd_seq if len(cmds) else source) 
 22:46 < wstein-3764> Here's why -- many many times I've been bit by error messages that innocently
@@ -87,7 +87,7 @@ REFEREE DISCUSSION (irc log):
 22:52 < wstein-3764> or the source.
 22:52 < cwitty> If that's what Python does, then probably msg is already "invalid syntax", so we could just skip the whole 
                 try/except.
-22:53 -!- mabshoff [n=michaela`@`wclient1.irmacs.sfu.ca] has joined #sage-devel
+22:53 -!- mabshoff [n=michaela@wclient1.irmacs.sfu.ca] has joined #sage-devel
 22:53 < wstein-3764> good point!
 22:54 < wstein-3764> can you actually do this and put in a doctest to illustrate it, so I can referee #3485?
 22:54 < cwitty> You added that try/except in July 2006.

@@ -1,6 +1,6 @@
 # Issue 3373: ZZ division gives wrong sym_parent [new symbolics]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3373
 
 Original creator: cwitty
 

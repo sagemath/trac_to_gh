@@ -1,6 +1,6 @@
 # Issue 8182: Camino browser crashed when notebook started using Mac OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8182
 
 Original creator: jhelffrich
 

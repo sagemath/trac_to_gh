@@ -1,6 +1,6 @@
 # Issue 6373: AA and QQbar have no is_square method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6373
 
 Original creator: ncalexan
 

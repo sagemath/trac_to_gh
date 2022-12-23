@@ -1,6 +1,6 @@
 # Issue 8056: symbolic expressions involving rational functions with numerator 1 cannot be converted to fast callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8056
 
 Original creator: burcin
 

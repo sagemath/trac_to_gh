@@ -1,6 +1,6 @@
 # Issue 4969: upgrade mercurial to version 1.0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4969
 
 Original creator: AlexGhitza
 

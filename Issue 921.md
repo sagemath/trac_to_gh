@@ -1,6 +1,6 @@
 # Issue 921: Exception error for divergent integral looks bad
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/921
 
 Original creator: jason
 

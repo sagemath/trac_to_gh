@@ -1,6 +1,6 @@
 # Issue 319: can't divide matrix over QQ by a rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/319
 
 Original creator: dmharvey
 

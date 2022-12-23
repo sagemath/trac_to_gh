@@ -1,6 +1,6 @@
 # Issue 7927: Extend coleman integration to handle Weierstrass points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7927
 
 Original creator: robertwb
 

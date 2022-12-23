@@ -1,6 +1,6 @@
 # Issue 7048: ATLAS ignores CC variable, then dumps core when trying to build with Sun Studio on  Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7048
 
 Original creator: drkirkby
 

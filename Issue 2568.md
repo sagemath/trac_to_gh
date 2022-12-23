@@ -1,6 +1,6 @@
 # Issue 2568: dokchitser port, work in progress
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2568
 
 Original creator: jen
 

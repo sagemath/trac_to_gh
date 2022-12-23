@@ -1,6 +1,6 @@
 # Issue 6326: optional doctest failure -- all quadratic forms tests that involve " # optional -- souvigner"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6326
 
 Original creator: was
 

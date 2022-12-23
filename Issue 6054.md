@@ -1,6 +1,6 @@
 # Issue 6054: [with patch, needs review] fix display2d with ecl on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6054
 
 Original creator: mhansen
 
@@ -70,12 +70,12 @@ Thanks. Great patch. But the semicolon removal in the patch
 ```
 --- a/sage/interfaces/maxima.py Fri May 15 18:39:25 2009 -0700
 +++ b/sage/interfaces/maxima.py Sat May 16 23:30:51 2009 -0700
-`@``@` -755,7 +755,7 `@``@`
+@@ -755,7 +755,7 @@
          if self._expect is None: return
          r = randrange(2147483647)
          s = marker + str(r+1)
--        cmd = *;sconcat("%s",(%s+1));\n*%(marker,r)
-+        cmd = *sconcat("%s",(%s+1));\n*%(marker,r)
+-        cmd = ''';sconcat("%s",(%s+1));\n'''%(marker,r)
++        cmd = '''sconcat("%s",(%s+1));\n'''%(marker,r)
          self._sendstr(cmd)
          try:
              self._expect_expr(timeout=0.5)

@@ -1,6 +1,6 @@
 # Issue 3795: increase coverage of sage/server/notebook/cell.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3795
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 60: notebook cuts output of latex view
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/60
 
 Original creator: wdj
 

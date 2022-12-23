@@ -1,6 +1,6 @@
 # Issue 5142: [with patch, needs review] speed up elementary_divisors for sparse integer matrices?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5142
 
 Original creator: jhpalmieri
 

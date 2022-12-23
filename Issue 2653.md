@@ -1,6 +1,6 @@
 # Issue 2653: norm and trace of elements of orders are Rational not Integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2653
 
 Original creator: cremona
 

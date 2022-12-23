@@ -1,6 +1,6 @@
 # Issue 3757: [with preliminary patch, needs review] change printing for intervals (and AA/QQbar)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3757
 
 Original creator: cwitty
 

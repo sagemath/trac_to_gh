@@ -1,6 +1,6 @@
 # Issue 9985: MPFI fails to build on AIX 5.3 - appears not to know .a is the extension for shared libraries on AIX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9986
 
 Original creator: drkirkby
 

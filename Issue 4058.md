@@ -1,6 +1,6 @@
 # Issue 4058: [with patch, needs review] move integer ring to the new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4058
 
 Original creator: robertwb
 

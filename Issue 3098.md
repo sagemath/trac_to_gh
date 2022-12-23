@@ -1,6 +1,6 @@
 # Issue 3098: doctest failure in devel/sage/sage/rings/ring.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3098
 
 Original creator: wjp
 

@@ -1,6 +1,6 @@
 # Issue 8358: improved documentation of number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8358
 
 Original creator: zimmerma
 

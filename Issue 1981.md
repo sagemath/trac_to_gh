@@ -1,6 +1,6 @@
 # Issue 1981: NTL fails to build with DEB_BUILD_HARDENING=1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1981
 
 Original creator: malb
 

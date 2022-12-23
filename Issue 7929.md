@@ -1,6 +1,6 @@
 # Issue 7929: Pickling fails for some residue fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7929
 
 Original creator: nthiery
 

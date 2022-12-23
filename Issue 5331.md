@@ -1,6 +1,6 @@
 # Issue 5331: [with patch, needs review] update sage_scripts to deal with the new documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5331
 
 Original creator: mhansen
 

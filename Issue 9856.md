@@ -1,6 +1,6 @@
 # Issue 9856: Upgrade biopython to version 1.55 (released Augest 31, 2010)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9857
 
 Original creator: mhampton
 

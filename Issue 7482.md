@@ -1,6 +1,6 @@
 # Issue 7482: provide a mode so that undeclared variables magically spring into existence and object oriented notation is not necessary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7482
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7723: Sparse matrices for double fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7723
 
 Original creator: dagss
 
@@ -100,7 +100,7 @@ This causes a bunch of doctest failures:
 
 
 ```
-wstein`@`sage:~/build/referee/sage-4.3.rc0$         sage -t  devel/sage/sage/matrix/matrix_integer_2x2.pyx # 5 doctests failed
+wstein@sage:~/build/referee/sage-4.3.rc0$         sage -t  devel/sage/sage/matrix/matrix_integer_2x2.pyx # 5 doctests failed
 sage -t  "devel/sage/sage/matrix/matrix_integer_2x2.pyx"    
 **********************************************************************
 File "/scratch/wstein/build/referee/sage-4.3.rc0/devel/sage/sage/matrix/matrix_integer_2x2.pyx", line 266:

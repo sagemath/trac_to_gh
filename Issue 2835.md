@@ -1,6 +1,6 @@
 # Issue 2835: [with patch, needs review] primes_of_degree_one iterator for NumberField_generic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2835
 
 Original creator: ncalexan
 

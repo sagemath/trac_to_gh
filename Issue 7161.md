@@ -1,6 +1,6 @@
 # Issue 7161: html fragments at special locations in notebook pages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7161
 
 Original creator: schilly
 

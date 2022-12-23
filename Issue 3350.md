@@ -1,6 +1,6 @@
 # Issue 3350: plot_vector_field error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3350
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 9470: Switch toric varieties to enhanced fans
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9470
 
 Original creator: novoselt
 

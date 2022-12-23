@@ -1,6 +1,6 @@
 # Issue 9921: Add release notes to SAGE_ROOT
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9922
 
 Original creator: jhpalmieri
 

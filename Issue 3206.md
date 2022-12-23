@@ -1,6 +1,6 @@
 # Issue 3206: sage -i http://url.of.an.spkg doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3206
 
 Original creator: was
 

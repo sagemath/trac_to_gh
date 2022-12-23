@@ -1,6 +1,6 @@
 # Issue 2887: notebook -- greatly optimize by implementing a cached version of get_element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2887
 
 Original creator: was
 

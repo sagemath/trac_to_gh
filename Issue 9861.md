@@ -1,6 +1,6 @@
 # Issue 9861: Reimplementation of IntervalGraph to handle repeated vertices.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9862
 
 Original creator: edward.scheinerman
 

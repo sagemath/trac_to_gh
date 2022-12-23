@@ -1,6 +1,6 @@
 # Issue 7105: change search_doc and search_src so the links are opened in a new tab/window
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7105
 
 Original creator: was
 

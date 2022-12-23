@@ -1,6 +1,6 @@
 # Issue 8042: problem with modular symbols in eclib
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8042
 
 Original creator: wuthrich
 
@@ -44,7 +44,7 @@ The easiest fix is just to switch the type of the constructor in `sage/libs/crem
 diff -r 868098cc41e9 sage/libs/cremona/defs.pxi
 --- a/sage/libs/cremona/defs.pxi        Sat Jan 23 00:06:24 2010 -0800
 +++ b/sage/libs/cremona/defs.pxi        Sat Jan 23 00:18:48 2010 -0800
-`@``@` -1,7 +1,7 `@``@`
+@@ -1,7 +1,7 @@
  cdef extern from "eclib/interface.h":
      ctypedef struct bigint:  #eclib uses NTL in Sage -- we call Cremona's "bigint" ZZ_c.
          pass

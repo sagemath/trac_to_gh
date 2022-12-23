@@ -1,6 +1,6 @@
 # Issue 2406: Typo in Sage tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2406
 
 Original creator: rhinton
 

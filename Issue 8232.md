@@ -1,6 +1,6 @@
 # Issue 8232: cmp function for words is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8232
 
 Original creator: slabbe
 

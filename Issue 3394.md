@@ -1,6 +1,6 @@
 # Issue 3394: [with patch, needs review] pbuild emacs fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3394
 
 Original creator: gfurnish
 

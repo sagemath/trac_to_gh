@@ -1,6 +1,6 @@
 # Issue 8111: gcd of rationals is trouble
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8111
 
 Original creator: pdehaye
 

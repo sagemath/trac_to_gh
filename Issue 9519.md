@@ -1,6 +1,6 @@
 # Issue 9519: scipy does not exit if there are build failures, but spkg-install looks OK
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9519
 
 Original creator: drkirkby
 

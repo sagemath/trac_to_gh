@@ -1,6 +1,6 @@
 # Issue 6166: [with patch, needs review] strip 'nodetex' from the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6166
 
 Original creator: jhpalmieri
 

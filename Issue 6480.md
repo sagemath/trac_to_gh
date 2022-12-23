@@ -1,6 +1,6 @@
 # Issue 6480: .subs_expr() method doesn't work for argument of D derivative operator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6480
 
 Original creator: gmhossain
 
@@ -117,8 +117,8 @@ TypeError: derivative() got an unexpected keyword argument 'hold'
 sage: diff(f(x),x)
 diff(f(x), x)
 sage: _._dbgprinttree()
-fderivative f `@`0x34a8c00, hash=0x1023d75fb40091, flags=0xb, nops=1, params=0
-    x (symbol) `@`0x2895f10, serial=7, hash=0xe3706ef, flags=0xf, domain=0, iflags=0000000000000000
+fderivative f @0x34a8c00, hash=0x1023d75fb40091, flags=0xb, nops=1, params=0
+    x (symbol) @0x2895f10, serial=7, hash=0xe3706ef, flags=0xf, domain=0, iflags=0000000000000000
     =====
 sage: diff(f(x),x)
 diff(f(x), x)

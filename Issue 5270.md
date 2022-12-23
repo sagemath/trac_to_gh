@@ -1,6 +1,6 @@
 # Issue 5270: [with patch, needs review] implement plotting of affine and projective algebraic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5270
 
 Original creator: AlexGhitza
 

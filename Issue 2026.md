@@ -1,6 +1,6 @@
 # Issue 2026: matrix.eigenspaces doctest description is misleading
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2026
 
 Original creator: jason
 

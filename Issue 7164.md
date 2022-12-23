@@ -1,6 +1,6 @@
 # Issue 7164: readline-6.0 fails to build on HP-UX 11i (PA-RISC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7164
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2698: [with patch, needs review] Small improvements to integer lcm, gcd on lists and a new xlcm function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2698
 
 Original creator: cremona
 

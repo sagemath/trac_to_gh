@@ -1,6 +1,6 @@
 # Issue 8440: Removal of pyprocessing causing problems as _multiprocessing not building on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8440
 
 Original creator: drkirkby
 
@@ -166,7 +166,7 @@ Comment by mvngu created at 2010-03-05 04:03:12
 The updated package [python-2.6.4.p7.spkg](http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p7/python-2.6.4.p7.spkg) needs a minor clean up:
 
 ```
-[mvngu`@`sage python-2.6.4.p7]$ hg status
+[mvngu@sage python-2.6.4.p7]$ hg status
 ? patches/locale.pyc
 ```
 
@@ -192,9 +192,9 @@ If you look at this location, you might find the package, but I'm totally confus
 
 
 ```
-kirkby`@`t2:[/home/kirkby/portability/python-2.6.4.p7] $ ls 
+kirkby@t2:[/home/kirkby/portability/python-2.6.4.p7] $ ls 
 python-2.6.4.p7       python-2.6.4.p7.spkg
-kirkby`@`t2:[/home/kirkby/portability/python-2.6.4.p7] $ 
+kirkby@t2:[/home/kirkby/portability/python-2.6.4.p7] $ 
 ```
 
 
@@ -220,9 +220,9 @@ I still can't understand why you see this odd file, as I don't:
 
 
 ```
-kirkby`@`sage:~/portability/python-2.6.4.p7/python-2.6.4.p7$ ls patches/locale.pyc
+kirkby@sage:~/portability/python-2.6.4.p7/python-2.6.4.p7$ ls patches/locale.pyc
 ls: cannot access patches/locale.pyc: No such file or directory
-kirkby`@`sage:~/portability/python-2.6.4.p7/python-2.6.4.p7$ hg status
+kirkby@sage:~/portability/python-2.6.4.p7/python-2.6.4.p7$ hg status
 
 ```
 

@@ -1,6 +1,6 @@
 # Issue 4600: followup issue on sage -only_optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4600
 
 Original creator: was
 
@@ -39,7 +39,7 @@ Comment by was created at 2008-11-24 05:34:19
 For the referee -- here is a file, and me verifying that the -only_optional and -optional options work correctly.   I don't think this can go into the actual doctest framework for Sage.   However, that isn't really needed since the actual optional doctests in actual code passing is test enough (stuff like below gets or will be used all over in the doctest framework). 
 
 ```
-wstein`@`ubuntu:~/sage/tmp$ more a.py
+wstein@ubuntu:~/sage/tmp$ more a.py
 """
 sage: x = 5
 sage: y = x + 2 # optional - gap
@@ -48,7 +48,7 @@ sage: y         # optional - gap
 sage: 2 + 3     # optional - magma
 5
 """
-wstein`@`ubuntu:~/sage/tmp$ sage -t -only_optional=gap a.py
+wstein@ubuntu:~/sage/tmp$ sage -t -only_optional=gap a.py
 sage -t -only_optional=gap tmp/a.py                         **********************************************************************
 File "/home/wstein/sage/tmp/a.py", line 4:
     : y         # optional - gap
@@ -70,21 +70,21 @@ The following tests failed:
 
 	sage -t -only_optional=gap tmp/a.py
 Total time for all tests: 1.6 seconds
-wstein`@`ubuntu:~/sage/tmp$ sage -t a.py
+wstein@ubuntu:~/sage/tmp$ sage -t a.py
 sage -t  tmp/a.py                                           
 	 [1.6 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1.6 seconds
-wstein`@`ubuntu:~/sage/tmp$ sage -t -only_optional=magma a.py
+wstein@ubuntu:~/sage/tmp$ sage -t -only_optional=magma a.py
 sage -t -only_optional=magma tmp/a.py                       
 	 [1.6 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1.6 seconds
-wstein`@`ubuntu:~/sage/tmp$ sage -t -only_optional=magma,gap a.py
+wstein@ubuntu:~/sage/tmp$ sage -t -only_optional=magma,gap a.py
 sage -t -only_optional=magma,gap tmp/a.py                   **********************************************************************
 File "/home/wstein/sage/tmp/a.py", line 4:
     : y         # optional - gap
@@ -106,7 +106,7 @@ The following tests failed:
 
 	sage -t -only_optional=magma,gap tmp/a.py
 Total time for all tests: 1.7 seconds
-wstein`@`ubuntu:~/sage/tmp$ sage -t -optional a.py
+wstein@ubuntu:~/sage/tmp$ sage -t -optional a.py
 sage -t -optional tmp/a.py                                  **********************************************************************
 File "/home/wstein/sage/tmp/a.py", line 4:
     : y         # optional - gap
@@ -128,7 +128,7 @@ The following tests failed:
 
 	sage -t -optional tmp/a.py
 Total time for all tests: 1.7 seconds
-wstein`@`ubuntu:~/sage/tmp$ 
+wstein@ubuntu:~/sage/tmp$ 
 ```
 
 

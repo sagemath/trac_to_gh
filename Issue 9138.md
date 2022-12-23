@@ -1,6 +1,6 @@
 # Issue 9138: Introspection is failing on polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9138
 
 Original creator: jbandlow
 
@@ -2202,7 +2202,7 @@ I tested against sage-4.7.2.alpha1 . I didn't add any dependancys because their 
 
 
 ```
-mderickx`@`sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha1/devel/sage$ ../../sage -t --long sage/rings/polynomial/pbori.pyx
+mderickx@sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha1/devel/sage$ ../../sage -t --long sage/rings/polynomial/pbori.pyx
 sage -t --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
 **********************************************************************
 File "/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha1/devel/sage-main/sage/rings/polynomial/pbori.pyx", line 843:
@@ -2265,17 +2265,17 @@ A little sanity check that #11316 was really merged in 4.7.2.alpha1
 
 
 ```
-mderickx`@`sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha1/devel/sage$ ../../sage -hg log sage/rings/polynomial/pbori.pyx |head -n 20
+mderickx@sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha1/devel/sage$ ../../sage -hg log sage/rings/polynomial/pbori.pyx |head -n 20
 changeset:   15995:f3369d315c96
 tag:         qtip
 tag:         tip
 tag:         trac9138_categories_for_more_rings.patch
-user:        Simon King <simon.king`@`uni-jena.de>
+user:        Simon King <simon.king@uni-jena.de>
 date:        Sun Apr 24 15:28:28 2011 +0200
 summary:     #9138: Provide the category framework for quotient rings and free algebras.
 
 changeset:   15990:cf06a8bb75f4
-user:        Kwankyu Lee <ekwankyu`@`gmail.com>
+user:        Kwankyu Lee <ekwankyu@gmail.com>
 date:        Tue May 10 16:58:20 2011 +0900
 summary:     Trac #11316: #11316: added weighted degree term orders
 
@@ -2362,7 +2362,7 @@ After having made this clean build (located in /mnt/usb1/scratch/mderickx/sage-4
 
 
 ```
-mderickx`@`sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha2$ ./sage -t --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
+mderickx@sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha2$ ./sage -t --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
 sage -t --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
 	 [7.0 s]
  
@@ -2374,7 +2374,7 @@ Total time for all tests: 7.0 seconds
 Then I qimported and applied your two patches and did
 
 ```
-mderickx`@`sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha2/devel/sage$ ../../sage -bt --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
+mderickx@sage:/mnt/usb1/scratch/mderickx/sage-4.7.2.alpha2/devel/sage$ ../../sage -bt --long "devel/sage-main/sage/rings/polynomial/pbori.pyx"
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -2491,7 +2491,7 @@ The problem was a misprint. I use the letter j where it should be the number zer
 I updated the patch, and with it, I find
 
 ```
-SimonKing`@`sage:~/SAGE/sage-4.7.2.alpha2-sage.math.washington.edu-x86_64-Linux$ ./sage -t devel/sage/sage/rings/polynomial/pbori.pyx
+SimonKing@sage:~/SAGE/sage-4.7.2.alpha2-sage.math.washington.edu-x86_64-Linux$ ./sage -t devel/sage/sage/rings/polynomial/pbori.pyx
 sage -t  "devel/sage/sage/rings/polynomial/pbori.pyx"       
          [6.0 s]
  

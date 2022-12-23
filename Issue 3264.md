@@ -1,6 +1,6 @@
 # Issue 3264: Upgrade PolyBoRi to 0.4 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3264
 
 Original creator: mabshoff
 
@@ -255,7 +255,7 @@ Comment by malb created at 2008-07-22 13:05:58
 Since the current spkg for 0.5 is broken, I won't provide the fix just now:
 
 ```
-malb`@`road:/tmp/polybori-0.5rc$ ./spkg-install
+malb@road:/tmp/polybori-0.5rc$ ./spkg-install
 ./spkg-install: line 15: [: =: unary operator expected
 cp: accessing `src/polybori-0.3/SConstruct': Not a directory
 cp: accessing `src/polybori-0.3/pyroot/polybori': Not a directory
@@ -403,17 +403,17 @@ There are some changes from the polybori-0.3.1.pX spkgs that need to be ported f
 ```
 changeset:   16:35ca591c94cd
 tag:         tip
-user:        mabshoff`@`bsd.local
+user:        mabshoff@bsd.local
 date:        Tue Aug 19 16:26:33 2008 -0700
 summary:     polybori-0.3.1.p5: Add 64 bit OSX support
 
 changeset:   15:fa58118566ad
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Mon Jul 21 14:49:07 2008 -0700
 summary:     polybori-0.3.1.p4: Use /usr/bin/env bash as shebang
 
 changeset:   14:181f8b612d1b
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Sun May 18 06:45:23 2008 -0700
 summary:     Add diffs for all changed files to the repo
 ```

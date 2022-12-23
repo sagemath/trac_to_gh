@@ -1,6 +1,6 @@
 # Issue 9224: Unify sage-test and sage-ptest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9224
 
 Original creator: mpatel
 
@@ -159,7 +159,7 @@ I have some more comments (here just on `sage-ptest`) I'll post inline also here
 diff --git a/sage-ptest b/sage-ptest
 --- a/sage-ptest
 +++ b/sage-ptest
-`@``@` -81,12 +81,18 `@``@`
+@@ -81,12 +81,18 @@
      Returns true if the file should not be tested
      """
      if not os.path.exists(F):
@@ -178,7 +178,7 @@ diff --git a/sage-ptest b/sage-ptest
          printmutex.release()
          return True
      filenm = os.path.split(F)[1]
-`@``@` -95,6 +101,7 `@``@`
+@@ -95,6 +101,7 @@
          return True
      if G.find(os.path.join('doc', 'output')) != -1:
          return True
@@ -186,7 +186,7 @@ diff --git a/sage-ptest b/sage-ptest
      if not (os.path.splitext(F)[1] in ['.py', '.pyx', '.tex', '.pxi', '.sage', '.rst']):
          return True
      return False
-`@``@` -115,6 +122,7 `@``@`
+@@ -115,6 +122,7 @@
      for i in range(0,numiteration):
          os.chdir(os.path.dirname(F))
          command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)
@@ -194,7 +194,7 @@ diff --git a/sage-ptest b/sage-ptest
          s = 'bash -c "%s %s > %s" ' % (command, filestr, outfile.name)
          try:
              t = time.time()
-`@``@` -161,10 +169,12 `@``@`
+@@ -161,10 +169,12 @@
          print sage_test_cmd(F[len(CUR)+1:])
      else:
          print abs(F)
@@ -207,7 +207,7 @@ diff --git a/sage-ptest b/sage-ptest
      time_dict[abs_sage_path(F)] = finished_time
      if XML_RESULTS:
          t = finished_time
-`@``@` -192,6 +202,7 `@``@`
+@@ -192,6 +202,7 @@
          """.strip() % locals())
          f.close()
      print "\t [%.1f s]"%(finished_time)
@@ -215,7 +215,7 @@ diff --git a/sage-ptest b/sage-ptest
  
  def infiles_cmp(a,b):
      """
-`@``@` -231,7 +242,14 `@``@`
+@@ -231,7 +242,14 @@
                  base, ext = os.path.splitext(F)
                  if not (ext in ['.sage', '.py', '.pyx', '.tex', '.pxi', '.rst']):
                      continue
@@ -231,7 +231,7 @@ diff --git a/sage-ptest b/sage-ptest
                      continue
                  appendstr = os.path.join(root,F)
                  if skip(appendstr):
-`@``@` -252,6 +270,9 `@``@`
+@@ -252,6 +270,9 @@
      argv = [X for X in argv if X[0] != '-']
  
      try: 

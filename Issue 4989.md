@@ -1,6 +1,6 @@
 # Issue 4989: Delete the section "4 Running the SAGE Notebook Securely" from the sage install guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4989
 
 Original creator: was
 

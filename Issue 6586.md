@@ -1,6 +1,6 @@
 # Issue 6586: [with spkg; needs review] update Sphinx to version 0.6.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6586
 
 Original creator: jhpalmieri
 
@@ -41,7 +41,7 @@ and applied the patch at #6585. When doing
 I got the following errors:
 
 ```
-mvngu`@`sage sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux]$ ./sage -docbuild reference html
+mvngu@sage sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux]$ ./sage -docbuild reference html
 Traceback (most recent call last):
   File "/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py", line 667, in <module>
     getattr(get_builder(name), type)()
@@ -81,7 +81,7 @@ In particular, the following sections from that source file:
 line:2233
 
 ```
-sage: p = loads('x\x9c\x85\x8e\xbd\xaa\xc2`@`\x10\x85\x89\xff.>\xc4\x94\xda\x04\x15|\x04\xb1\xb1\x90\x0b[\x87I\x18\x935\xc9\xae\xb33\xda\t\xd7\xc2\xf76"biw\x0e\x9c\x9f\xef\xbfW\x08\x96\x94\x16\xa1\xcd\x9dGM\xcf\x18\xd5\xa9\x0b\xde\x1c>Jv\x91PIt\xbf\xcd|m8Y\xdc\xb9w\xe3\xfe\xdc&\xf5\xbb\x1d\x9d/%u^\xa9\xa4hZ\xac)\xfb\x18\x1e\xd8d\xfd\xf8\xe3\xa1\x1df\x1e[\xe2\x91\xdd|\x97!\x1ca\xb5\x84\n\xaf\xdd\x02\xbc\xbe\x05\x1a\x12\x01\xad\xd0C\x88`@`|\xc1\x064\xc0\x9a\xc7v\x16\xf2\x13\x15\x9a\x15\r\x8a\xf0\xe47\xf9;ixj\x13_u \xd8\x81\x98K\x9e>\x01\x13iVH')
+sage: p = loads('x\x9c\x85\x8e\xbd\xaa\xc2@\x10\x85\x89\xff.>\xc4\x94\xda\x04\x15|\x04\xb1\xb1\x90\x0b[\x87I\x18\x935\xc9\xae\xb33\xda\t\xd7\xc2\xf76"biw\x0e\x9c\x9f\xef\xbfW\x08\x96\x94\x16\xa1\xcd\x9dGM\xcf\x18\xd5\xa9\x0b\xde\x1c>Jv\x91PIt\xbf\xcd|m8Y\xdc\xb9w\xe3\xfe\xdc&\xf5\xbb\x1d\x9d/%u^\xa9\xa4hZ\xac)\xfb\x18\x1e\xd8d\xfd\xf8\xe3\xa1\x1df\x1e[\xe2\x91\xdd|\x97!\x1ca\xb5\x84\n\xaf\xdd\x02\xbc\xbe\x05\x1a\x12\x01\xad\xd0C\x88@|\xc1\x064\xc0\x9a\xc7v\x16\xf2\x13\x15\x9a\x15\r\x8a\xf0\xe47\xf9;ixj\x13_u \xd8\x81\x98K\x9e>\x01\x13iVH')
 ```
 
 
@@ -89,7 +89,7 @@ sage: p = loads('x\x9c\x85\x8e\xbd\xaa\xc2`@`\x10\x85\x89\xff.>\xc4\x94\xda\x04\
 line:2294
 
 ```
-sage: p = loads('x\x9c\x85\x8e\xbd\x0e\x820\x14\x85\x03\x8a?\x8d\x0f\xd1Q\x97\x06y\x07\xe3\xaa&\x9d\xc9\xa5\xb9\x96\n\xb4^Z\xdcLt\xf0\xbd\xc5 qt;\'9?\xdf#V\x1e4\n\xe5\x9a\xc2X\x08\xe2\nm0\xc18\xcb\x0e\xa3\xf2\xfb\x16!\xa0\x0f\xbbcn+F\xd1\xe6I\xf1\x9d&k\x19UC\xbb5V{al`@`\x8d-k\xa0\xc2|44\x95Q\xf6:Q"\x93\xdcB\x834\x93\xe9o\x99\xbb3\xdf\xa6\xbc\x84[\xbf\xc0\xf5\xf7\x87\x7f 8R\x075\x0f\x8eg4\x97+W\\P\x85\\\xd5\xe0=-\xfeC\x0fIFK\x19\xd9\xb2g\x80\x9e\x81u\x85x\x03w\x0eT\xb1')
+sage: p = loads('x\x9c\x85\x8e\xbd\x0e\x820\x14\x85\x03\x8a?\x8d\x0f\xd1Q\x97\x06y\x07\xe3\xaa&\x9d\xc9\xa5\xb9\x96\n\xb4^Z\xdcLt\xf0\xbd\xc5 qt;\'9?\xdf#V\x1e4\n\xe5\x9a\xc2X\x08\xe2\nm0\xc18\xcb\x0e\xa3\xf2\xfb\x16!\xa0\x0f\xbbcn+F\xd1\xe6I\xf1\x9d&k\x19UC\xbb5V{al@\x8d-k\xa0\xc2|44\x95Q\xf6:Q"\x93\xdcB\x834\x93\xe9o\x99\xbb3\xdf\xa6\xbc\x84[\xbf\xc0\xf5\xf7\x87\x7f 8R\x075\x0f\x8eg4\x97+W\\P\x85\\\xd5\xe0=-\xfeC\x0fIFK\x19\xd9\xb2g\x80\x9e\x81u\x85x\x03w\x0eT\xb1')
 ```
 
 
@@ -97,7 +97,7 @@ sage: p = loads('x\x9c\x85\x8e\xbd\x0e\x820\x14\x85\x03\x8a?\x8d\x0f\xd1Q\x97\x0
 line:2839
 
 ```
-sage: dmp = 'x\x9ck`J.NLO\xd5K\xce\xcfM\xca\xccK,\xd1+H,*\xc9,\xc9\xcc\xcf\xe3\n\x80\xb1\x8a\xe3\x93\x81DIQbf^I1W!\xa3fc!Sm!\xb3F(7\x92x!Km!k(GnbE<\xc8\x88B6\x88\xb9E\x99y\xe9\xc5z`@`\x05\xa9\xe9\xa9E\\\xb9\x89\xd9\xa9\xf10N!{(\xa3QkP!Gq(c^\x06\x90c\x0c\xe4p\x96&\xe9\x01\x00\xc2\xe53\xfd'
+sage: dmp = 'x\x9ck`J.NLO\xd5K\xce\xcfM\xca\xccK,\xd1+H,*\xc9,\xc9\xcc\xcf\xe3\n\x80\xb1\x8a\xe3\x93\x81DIQbf^I1W!\xa3fc!Sm!\xb3F(7\x92x!Km!k(GnbE<\xc8\x88B6\x88\xb9E\x99y\xe9\xc5z@\x05\xa9\xe9\xa9E\\\xb9\x89\xd9\xa9\xf10N!{(\xa3QkP!Gq(c^\x06\x90c\x0c\xe4p\x96&\xe9\x01\x00\xc2\xe53\xfd'
 ```
 
 When these lines are removed, the HTML version of the reference manual builds OK. So a possible fix for line 2233 is to replace everything in the TEST block starting from that line by:
@@ -192,7 +192,7 @@ Still, resource use is high, because there is a *lot* of caching going on.  We c
 ```
 --- __init__.py.orig    2009-08-01 09:58:27.303927239 -0700
 +++ __init__.py 2009-08-01 11:35:17.477865562 -0700
-`@``@` -120,10 +120,11 `@``@` class PycodeError(Exception):
+@@ -120,10 +120,11 @@ class PycodeError(Exception):
              res += ' (exception was: %r)' % self.args[1]
          return res
  
@@ -204,7 +204,7 @@ Still, resource use is high, because there is a *lot* of caching going on.  We c
 +#    cache = {}
 +    cache = weakref.WeakValueDictionary()
  
-     `@`classmethod
+     @classmethod
      def for_string(cls, string, modname, srcname='<string>'):
 ```
 
@@ -595,7 +595,7 @@ I'm not at all sure what you people are doing here, so perhaps I should have kep
 and now 
 
 ```
-john`@`ubuntu%sage -docbuild reference html
+john@ubuntu%sage -docbuild reference html
 Traceback (most recent call last):
   File "/home/john/sage-4.1.1/devel/sage/doc/common/builder.py", line 667, in <module>
     getattr(get_builder(name), type)()
@@ -704,7 +704,7 @@ I updated `spkg/install` and `spkg/standard/deps`, replaced the old Sphinx spkg 
 There's a failed test:
 
 ```python
-mpatel`@`sage sage-200$ ./sage -t devel/sage/sage/misc/trace.py 
+mpatel@sage sage-200$ ./sage -t devel/sage/sage/misc/trace.py 
 sage -t  "devel/sage/sage/misc/trace.py"                    
 **********************************************************************
 File "/scratch/mpatel/source/sage-200/devel/sage/sage/misc/trace.py", line 61:
@@ -764,7 +764,7 @@ Patching Sphinx 0.6.3 should fix this and perhaps also a similar problem reporte
 ```diff
 --- sphinx/themes/basic/layout.html.orig        2009-10-04 17:07:16.000000000 -0700
 +++ sphinx/themes/basic/layout.html     2009-10-04 17:07:28.000000000 -0700
-`@``@` -81,7 +81,7 `@``@`
+@@ -81,7 +81,7 @@
                {{ _('Enter search terms or a module, class or function name.') }}
                </p>
            </div>

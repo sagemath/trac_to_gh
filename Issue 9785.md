@@ -1,6 +1,6 @@
 # Issue 9785: Subsets(list, submultiset=True): wrong output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9786
 
 Original creator: mmezzarobba
 

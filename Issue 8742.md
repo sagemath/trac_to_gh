@@ -1,6 +1,6 @@
 # Issue 8742: Lazy format strings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8742
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 6369: the sage cleaner should kill all notebook servers if sage that spawned them is killed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6369
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4740: Fix memory leak in finite field coercion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4740
 
 Original creator: mabshoff
 

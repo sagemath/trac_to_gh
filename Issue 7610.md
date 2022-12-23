@@ -1,6 +1,6 @@
 # Issue 7610: `readline-6.0` causes "undefined symbol: PC" errors on Arch Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7610
 
 Original creator: timdumol
 

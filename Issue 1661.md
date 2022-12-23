@@ -1,6 +1,6 @@
 # Issue 1661: click-to-evaluate button
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1661
 
 Original creator: boothby
 

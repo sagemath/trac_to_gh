@@ -1,6 +1,6 @@
 # Issue 9949: Change Brian package from experimental to optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9950
 
 Original creator: uri
 

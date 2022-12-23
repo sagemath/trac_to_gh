@@ -1,6 +1,6 @@
 # Issue 679: print statistics about the number of failed doctests and exact nature of failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/679
 
 Original creator: mabshoff
 
@@ -88,7 +88,7 @@ Comment by mabshoff created at 2008-03-21 00:52:24
 After the patch some small trouble left:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha1$ ./sage -tp 1 -long devel/sage/sage/plot/plot.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha1$ ./sage -tp 1 -long devel/sage/sage/plot/plot.py
 Global iterations: 1
 File iterations: 1
 TeX files: 0

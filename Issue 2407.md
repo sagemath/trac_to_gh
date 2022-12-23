@@ -1,6 +1,6 @@
 # Issue 2407: Notebook fails without explanation when cookies are disabled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2407
 
 Original creator: rhinton
 

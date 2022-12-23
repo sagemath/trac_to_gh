@@ -1,6 +1,6 @@
 # Issue 1404: [with patch] bug in %latex feature in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1404
 
 Original creator: was
 
@@ -45,7 +45,7 @@ The following would seem to solve the problem:
 diff -r 7110a20969c8 sage/misc/latex.py
 --- a/sage/misc/latex.py        Mon Dec 03 22:27:57 2007 -0800
 +++ b/sage/misc/latex.py        Tue Dec 04 22:11:15 2007 +0000
-`@``@` -203,7 +203,7 `@``@` class Latex:
+@@ -203,7 +203,7 @@ class Latex:
         if self.__slide:
             O.write('\n\n\\end{document}')
         else:

@@ -1,6 +1,6 @@
 # Issue 3411: [with patch; needs review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3411
 
 Original creator: was
 

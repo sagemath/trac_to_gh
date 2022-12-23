@@ -1,6 +1,6 @@
 # Issue 70: WANTED: unsafe pyrex typecasts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/70
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 1428: add SVD method to matrix_complex_double_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1428
 
 Original creator: mhansen
 

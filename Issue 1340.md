@@ -1,6 +1,6 @@
 # Issue 1340: %cython seriously broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1340
 
 Original creator: malb
 

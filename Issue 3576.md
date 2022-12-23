@@ -1,6 +1,6 @@
 # Issue 3576: stupid bug in RDF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3576
 
 Original creator: was
 

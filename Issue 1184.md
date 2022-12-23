@@ -1,6 +1,6 @@
 # Issue 1184: OSX: moving sage breaks recompile of libcsage (--rpath issue)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1184
 
 Original creator: mabshoff
 

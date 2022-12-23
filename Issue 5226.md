@@ -1,6 +1,6 @@
 # Issue 5226: convert sage.structure.* to ReST
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5226
 
 Original creator: robertwb
 

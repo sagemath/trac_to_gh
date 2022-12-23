@@ -1,6 +1,6 @@
 # Issue 5543: [with patch, needs review] RealIntervalField parents are not unique
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5543
 
 Original creator: cwitty
 

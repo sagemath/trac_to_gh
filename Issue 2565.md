@@ -1,6 +1,6 @@
 # Issue 2565: logging is extremely broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2565
 
 Original creator: ddrake
 
@@ -123,7 +123,7 @@ Comment by mabshoff created at 2008-03-27 07:50:05
 Both issues have been addressed:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |
@@ -133,7 +133,7 @@ Now logging to /home/mabshoff/.sage/log/log-2008-03-27-004430/sagelog.txt
 Text Logger
 sage:
 Exiting SAGE (CPU time 0m0.01s, Wall time 0m7.41s).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |

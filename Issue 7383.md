@@ -1,6 +1,6 @@
 # Issue 7383: make curved arrows in 3d vector field plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7383
 
 Original creator: jason
 

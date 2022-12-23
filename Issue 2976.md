@@ -1,6 +1,6 @@
 # Issue 2976: get rid of /home/jec/sage-3.0.rc0/tmp/test-dsage.log error at the end of tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2976
 
 Original creator: was
 

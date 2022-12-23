@@ -1,6 +1,6 @@
 # Issue 6789: 2 doctest failures in devel/sage/sage/symbolic/expression.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6789
 
 Original creator: drkirkby
 

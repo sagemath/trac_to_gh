@@ -1,6 +1,6 @@
 # Issue 4447: graph attributes (_boundary, _pos, etc.) are not updated properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4447
 
 Original creator: jason
 

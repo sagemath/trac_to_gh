@@ -1,6 +1,6 @@
 # Issue 8112: flint fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8112
 
 Original creator: jsp
 
@@ -25,7 +25,7 @@ Here is an spkg:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libflint.so 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libflint.so 
 local/lib/libflint.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 
 ```
@@ -288,8 +288,8 @@ Your fix resolves the issues we have, and is unlikely to break anything (see bel
 
 
 ```
-drkirkby`@`redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ grep CFLAGS spkg-install
-drkirkby`@`redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ 
+drkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ grep CFLAGS spkg-install
+drkirkby@redstart:~/fresh/sage-4.3.3/spkg/standard/flint-1.5.0.p4$ 
 ```
 
 

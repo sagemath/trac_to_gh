@@ -1,6 +1,6 @@
 # Issue 894: small ntl memory leaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/894
 
 Original creator: mabshoff
 

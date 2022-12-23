@@ -1,6 +1,6 @@
 # Issue 4434: [with patch; needs review] hgmerge massively broken on os x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4434
 
 Original creator: was
 

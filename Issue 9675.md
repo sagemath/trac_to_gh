@@ -1,6 +1,6 @@
 # Issue 9675: New package: Brian, a simulator for spiking neural networks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9675
 
 Original creator: uri
 

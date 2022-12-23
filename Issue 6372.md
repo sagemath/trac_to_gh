@@ -1,6 +1,6 @@
 # Issue 6372: Move a few 3d plot files into plot3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6372
 
 Original creator: kcrisman
 

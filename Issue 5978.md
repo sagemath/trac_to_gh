@@ -1,6 +1,6 @@
 # Issue 5978: Can't construct the quotient of an univariate polynomial ring by it's zero ideal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5978
 
 Original creator: jmbr
 

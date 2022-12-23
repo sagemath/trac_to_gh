@@ -1,6 +1,6 @@
 # Issue 4700: Move existing javascript packages in extcode to their own spkg packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4700
 
 Original creator: jason
 

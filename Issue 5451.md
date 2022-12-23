@@ -1,6 +1,6 @@
 # Issue 5451: Bug in addition of rational functions over a finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5451
 
 Original creator: cremona
 

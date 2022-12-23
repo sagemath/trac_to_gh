@@ -1,6 +1,6 @@
 # Issue 8233: concatenation of words should preserve the data type represention when possible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8233
 
 Original creator: slabbe
 

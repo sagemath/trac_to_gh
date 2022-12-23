@@ -1,6 +1,6 @@
 # Issue 1313: [graphs] calculate chromatic polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1313
 
 Original creator: jason
 

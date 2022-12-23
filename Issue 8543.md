@@ -1,6 +1,6 @@
 # Issue 8543: EmptySet is Back !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8543
 
 Original creator: hivert
 

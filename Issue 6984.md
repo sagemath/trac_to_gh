@@ -1,6 +1,6 @@
 # Issue 6984: cygwin port: make lapack into a dummy spkg that requires systemwide lapack
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6984
 
 Original creator: was
 

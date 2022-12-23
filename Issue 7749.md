@@ -1,6 +1,6 @@
 # Issue 7749: Add names.gz to the Sloane OEIS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7749
 
 Original creator: ssivek
 

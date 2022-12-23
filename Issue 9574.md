@@ -1,6 +1,6 @@
 # Issue 9574: Ignore zope-testrunner in the scripts repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9574
 
 Original creator: mpatel
 
@@ -28,7 +28,7 @@ Comment by ddrake created at 2010-07-22 06:34:45
 On OS X, I also see:
 
 ```
-drake`@`bsd:~/sage-4.5.2.alpha0/local/bin$ hg stat
+drake@bsd:~/sage-4.5.2.alpha0/local/bin$ hg stat
 ? gfortran
 ? gfortran-4.0
 ? gfortran-4.2

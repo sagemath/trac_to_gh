@@ -1,6 +1,6 @@
 # Issue 486: number_of_partitions() could be faster.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/486
 
 Original creator: bober
 

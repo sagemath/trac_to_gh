@@ -1,6 +1,6 @@
 # Issue 2706: [with patch] Fast bitset implimentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2706
 
 Original creator: robertwb
 

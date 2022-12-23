@@ -1,6 +1,6 @@
 # Issue 9424: numerical evaluation of symbolic sums
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9424
 
 Original creator: burcin
 
@@ -220,7 +220,7 @@ This is a proof of concept-patch that works, but only with bare sums. I guess th
 diff --git a/src/sage/symbolic/expression.pyx b/src/sage/symbolic/expression.pyx
 --- a/src/sage/symbolic/expression.pyx
 +++ b/src/sage/symbolic/expression.pyx
-`@``@` -4847,6 +4847,19 `@``@` cdef class Expression(CommutativeRingElement):
+@@ -4847,6 +4847,19 @@ cdef class Expression(CommutativeRingElement):
              sage: all(len(str(e.n(digits=k)))-1 >= k for k in ks)
              True
  
@@ -240,7 +240,7 @@ diff --git a/src/sage/symbolic/expression.pyx b/src/sage/symbolic/expression.pyx
          """
          if prec is None:
              if digits is None:
-`@``@` -4865,11 +4878,16 `@``@` cdef class Expression(CommutativeRingElement):
+@@ -4865,11 +4878,16 @@ cdef class Expression(CommutativeRingElement):
              x = self._convert(kwds)
  
          # we have to consider constants as well, since infinity is a constant

@@ -1,6 +1,6 @@
 # Issue 3745: calculus -- bug in solve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3745
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: gfurnish
 
 
 ```
-On Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio`@`gmail.com> wrote:
+On Tue, Jul 29, 2008 at 6:05 PM, jamlatino <medrano.antonio@gmail.com> wrote:
 >
 > While working on the video tutorial for Sage I tried the following
 > equation:

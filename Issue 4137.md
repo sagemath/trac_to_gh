@@ -1,6 +1,6 @@
 # Issue 4137: [with patch, positive review] add doctests for user_type() in avatar.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4137
 
 Original creator: mabshoff
 

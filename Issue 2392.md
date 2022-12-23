@@ -1,6 +1,6 @@
 # Issue 2392: [with patch, needs review] generic univariate polynomial has no discriminant function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2392
 
 Original creator: ncalexan
 

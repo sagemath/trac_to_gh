@@ -1,6 +1,6 @@
 # Issue 2794: [with patch, needs review] PolyBoRi to Magma conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2794
 
 Original creator: malb
 

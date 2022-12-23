@@ -1,6 +1,6 @@
 # Issue 5337: update French to tutorial to reflect the fact that "I in CC" works in tour_rings.rst
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5337
 
 Original creator: mhansen
 

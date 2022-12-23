@@ -1,6 +1,6 @@
 # Issue 4173: [with spkg, needs review] Solaris: fix cddlib build problem on Solaris x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4173
 
 Original creator: mabshoff
 

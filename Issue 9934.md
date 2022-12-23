@@ -1,6 +1,6 @@
 # Issue 9934: Make a symbolic mod function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9935
 
 Original creator: jason
 

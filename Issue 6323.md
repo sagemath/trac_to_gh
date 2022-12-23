@@ -1,6 +1,6 @@
 # Issue 6323: optional doctest failure -- problem in species code (easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6323
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9177: cddlib has hard-coded gmp path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9177
 
 Original creator: vbraun
 
@@ -49,11 +49,11 @@ popd
 
 
 ```
-kirkby`@`t2:[~/sage-4.4.3/spkg/optional/cddlib-094f.p7/patches] $ cp -a src-Makefile.am x
+kirkby@t2:[~/sage-4.4.3/spkg/optional/cddlib-094f.p7/patches] $ cp -a src-Makefile.am x
 cp: illegal option -- a
-Usage: cp [-f] [-i] [-p] [-`@`] f1 f2
-       cp [-f] [-i] [-p] [-`@`] f1 ... fn d1
-       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-`@`] d1 ... dn-1 dn
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+       cp [-f] [-i] [-p] [-@] f1 ... fn d1
+       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 
 ```
 

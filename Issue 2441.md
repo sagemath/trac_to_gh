@@ -1,6 +1,6 @@
 # Issue 2441: [with patch, easy review] fix typo in chromatic number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2441
 
 Original creator: rlm
 

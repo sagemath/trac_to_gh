@@ -1,6 +1,6 @@
 # Issue 3703: [with patch, needs review] bug in set_edge_label
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3703
 
 Original creator: rlm
 

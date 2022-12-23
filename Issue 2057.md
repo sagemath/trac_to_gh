@@ -1,6 +1,6 @@
 # Issue 2057: followup to #1983 -- 0^0 for 0 a rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2057
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9728: Moving the Linear transformations interact from wiki into the library.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9728
 
 Original creator: punchagan
 
@@ -60,7 +60,7 @@ I want to propose some changes to this interact:
 So how about using the following code instead:
 
 ```
-`@`interact 
+@interact 
 def linear_transformation(
     theta = slider(0, 2*pi, .1), 
     r     = slider(0.1,  2, .1, default=1),

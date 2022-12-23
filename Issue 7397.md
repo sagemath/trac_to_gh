@@ -1,6 +1,6 @@
 # Issue 7397: Updated Primes to the category system.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7397
 
 Original creator: hivert
 

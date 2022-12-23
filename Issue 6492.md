@@ -1,6 +1,6 @@
 # Issue 6492: ratpoints -- new spkg is totally completely broken on OS X 64-bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6492
 
 Original creator: was
 
@@ -205,7 +205,7 @@ real    8m8.519s
 user    5m29.564s
 sys     2m6.462s
 Error building Sage.
-wstein`@`bsd:~/build/64bit/sage-4.1.rc1$ 
+wstein@bsd:~/build/64bit/sage-4.1.rc1$ 
 ```
 
 

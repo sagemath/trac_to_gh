@@ -1,6 +1,6 @@
 # Issue 4351: bugs in abelian variety homspace computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4351
 
 Original creator: was
 

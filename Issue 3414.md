@@ -1,6 +1,6 @@
 # Issue 3414: sage-3.0.3.alpha2 -- massive dsage "testdoc.py" failures on osx ppc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3414
 
 Original creator: was
 

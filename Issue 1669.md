@@ -1,6 +1,6 @@
 # Issue 1669: remove bogus recommendation to set SAGE_ATLAS when numpy fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1669
 
 Original creator: mabshoff
 

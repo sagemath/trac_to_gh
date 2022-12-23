@@ -1,6 +1,6 @@
 # Issue 4540: Symmetrica segfault converting Schur functions to k-Schurs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4540
 
 Original creator: jbandlow
 

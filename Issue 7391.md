@@ -1,6 +1,6 @@
 # Issue 7391: Warn the user of incorrect results when an approximate ill-conditioned matrix is used
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7391
 
 Original creator: jason
 

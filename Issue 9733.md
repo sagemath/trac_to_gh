@@ -1,6 +1,6 @@
 # Issue 9733: Parallel build of Singular 3-1-1-4-package fails in rare case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9733
 
 Original creator: AlexanderDreyer
 

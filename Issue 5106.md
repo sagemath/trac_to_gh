@@ -1,6 +1,6 @@
 # Issue 5106: preparse bug with time and generator assignment naming
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5106
 
 Original creator: was
 
@@ -78,7 +78,7 @@ Comment by mabshoff created at 2009-02-14 01:52:25
 Hmm, I have the dependency applies, but the patch does not apply:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5106-preparse-gens.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5106-preparse-gens.patch 
 patching file sage/misc/preparser.py
 Hunk #7 FAILED at 739.
 Hunk #8 FAILED at 825.
@@ -141,7 +141,7 @@ Hi Robert,
 this patch is either not the right one or something else went wrong since it does not apply:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < 5106-preparse-gens.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < 5106-preparse-gens.patch 
 patching file sage/misc/preparser.py
 Hunk #7 FAILED at 739.
 Hunk #8 FAILED at 825.

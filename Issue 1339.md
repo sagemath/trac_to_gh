@@ -1,6 +1,6 @@
 # Issue 1339: Solaris: number of partitions broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1339
 
 Original creator: mabshoff
 

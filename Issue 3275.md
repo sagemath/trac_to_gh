@@ -1,6 +1,6 @@
 # Issue 3275: [with patch, needs review] Make SL2Z distinct
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3275
 
 Original creator: craigcitro
 

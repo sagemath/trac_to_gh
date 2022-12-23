@@ -1,6 +1,6 @@
 # Issue 9847: 'sage -advanced' does not mention the '-R' flag, which starts the R interpreter
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9848
 
 Original creator: mpatel
 

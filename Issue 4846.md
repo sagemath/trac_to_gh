@@ -1,6 +1,6 @@
 # Issue 4846: Doctesting should create an empty init.sage if it doesn't exist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4846
 
 Original creator: mabshoff
 

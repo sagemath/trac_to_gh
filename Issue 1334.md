@@ -1,6 +1,6 @@
 # Issue 1334: Constant polynomial can't be converted to rational
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1334
 
 Original creator: robertwb
 

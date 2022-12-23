@@ -1,6 +1,6 @@
 # Issue 5684: [with patch, needs review] Taking negative powers of Laurent polynomial throws exception
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5684
 
 Original creator: wjp
 

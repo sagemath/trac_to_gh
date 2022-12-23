@@ -1,6 +1,6 @@
 # Issue 1488: [with easy patch] fix output of symbolic vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1488
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On Dec 13, 2007 9:39 AM, pgdoyle <petergrantdoyle`@`gmail.com> wrote:
+On Dec 13, 2007 9:39 AM, pgdoyle <petergrantdoyle@gmail.com> wrote:
 > 
 > The vector v2 doesn't display properly in the attached Sage output.
 > Or rather, the free module element v2.

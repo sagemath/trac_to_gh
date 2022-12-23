@@ -1,6 +1,6 @@
 # Issue 4750: make it so sage -t foo.sage pulls in the preparsed version of all the code in foo.sage before doctesting foo.py; make it so "sage -t foo.py" has an option to pull in all code from foo.py before doctesting it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4750
 
 Original creator: was
 

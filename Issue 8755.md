@@ -1,6 +1,6 @@
 # Issue 8755: modify sagenb-*/src/sagenb/spkg-dist to produce valid spkg's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8755
 
 Original creator: was
 

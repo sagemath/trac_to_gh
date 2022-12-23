@@ -1,6 +1,6 @@
 # Issue 1535: jmol meshes are always smoothed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1535
 
 Original creator: robertwb
 

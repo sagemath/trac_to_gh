@@ -1,6 +1,6 @@
 # Issue 4004: [with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4004
 
 Original creator: mhansen
 

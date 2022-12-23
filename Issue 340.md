@@ -1,6 +1,6 @@
 # Issue 340: error in sageinspect: ode_solver?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/340
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: was
 ```
 
 
-On 4/1/07, Joshua Kantor <kantor.jm`@`gmail.com> wrote:
+On 4/1/07, Joshua Kantor <kantor.jm@gmail.com> wrote:
 > I just installed a new version of sage and 
 > ode_solver?  fails with the same errors as in his message. Did something
 > change 

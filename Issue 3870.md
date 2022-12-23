@@ -1,6 +1,6 @@
 # Issue 3870: bug in find_root
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3870
 
 Original creator: was
 

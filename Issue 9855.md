@@ -1,6 +1,6 @@
 # Issue 9855: improve `augment` method for sparse matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9856
 
 Original creator: ylchapuy
 

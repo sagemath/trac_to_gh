@@ -1,6 +1,6 @@
 # Issue 8963: Make tableau row_stabilizer return group of perms involving all elements of the tableau
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8963
 
 Original creator: jdc
 

@@ -1,6 +1,6 @@
 # Issue 1641: Make ATLAS restart build on tolerance error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1641
 
 Original creator: mabshoff
 

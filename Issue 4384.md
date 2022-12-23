@@ -1,6 +1,6 @@
 # Issue 4384: Axes computation for constant function causes division by zero
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4384
 
 Original creator: rbeezer
 
@@ -148,7 +148,7 @@ Comment by mvngu created at 2009-09-29 16:17:34
 I can confirm this has been fixed:
 
 ```
-[mvngu`@`darkstar sage-4.1.2.alpha4]$ ./sage
+[mvngu@darkstar sage-4.1.2.alpha4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

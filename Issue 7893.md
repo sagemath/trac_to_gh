@@ -1,6 +1,6 @@
 # Issue 7893: Sage server launching script
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7893
 
 Original creator: klee
 
@@ -33,7 +33,7 @@ I revised the script according Donald Alan Morrison's comments: 
 
 1) The stop_server function does not do error checking to ensure that 
  the pid contained in the pid file actually corresponds to a server 
- process: [http://trac.sagemath.org/sage_trac/attachment/ticket/7893/sage-server](http://trac.sagemath.org/sage_trac/attachment/ticket/7893/sage-server)(http://www.google.com/url?sa=D&q=http://trac.sagemath.org/sage_trac/attachment/ticket/7893/sage-server&usg=AFQjCNFolyoFiY1P1jjri5DIL9m7ZUsTrg) 
+ process: [http://trac.sagemath.org/sage_trac/attachment/ticket/7893/sage-server](http://www.google.com/url?sa=D&q=http://trac.sagemath.org/sage_trac/attachment/ticket/7893/sage-server&usg=AFQjCNFolyoFiY1P1jjri5DIL9m7ZUsTrg) 
 
 
 30      def stop_server(): 

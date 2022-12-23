@@ -1,6 +1,6 @@
 # Issue 4261: sympow Configure fails to handle aliases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4261
 
 Original creator: wjp
 
@@ -100,7 +100,7 @@ in fact do just what Mark suggests below.
 
 William
 
-On Thu, Nov 27, 2008 at 9:57 PM, Mark Watkins <watkins`@`maths.usyd.edu.au> wrote:
+On Thu, Nov 27, 2008 at 9:57 PM, Mark Watkins <watkins@maths.usyd.edu.au> wrote:
 > William Stein wrote:
 >> Do you guy's have any comments on this:
 >>    http://trac.sagemath.org/sage_trac/ticket/4261
@@ -118,7 +118,7 @@ On Thu, Nov 27, 2008 at 9:57 PM, Mark Watkins <watkins`@`maths.usyd.edu.au> wrot
 >
 > ===
 > Mark Watkins
-> watkins`@`maths.usyd.edu.au
+> watkins@maths.usyd.edu.au
 >
 
 

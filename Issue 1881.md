@@ -1,6 +1,6 @@
 # Issue 1881: Sage 2.10.1.alpha0: tut.tex doctes failure with factorize()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1881
 
 Original creator: mabshoff
 

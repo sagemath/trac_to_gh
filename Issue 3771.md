@@ -1,6 +1,6 @@
 # Issue 3771: [with patch; needs review] make it so typing "sage -br" for new binary sage installs doesn't require rebuilding everything
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3771
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6957: $SAGE_DATA/extcode/javascript/jsmath appears to be the same as $SAGE_LOCAL/notebook/javascript/jsmath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6957
 
 Original creator: pcpa
 

@@ -1,6 +1,6 @@
 # Issue 9534: add base method for permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9534
 
 Original creator: jasonbhill
 

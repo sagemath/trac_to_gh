@@ -1,6 +1,6 @@
 # Issue 8564: fix atan2() conversions between Sage and SymPy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8564
 
 Original creator: certik
 

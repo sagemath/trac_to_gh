@@ -1,6 +1,6 @@
 # Issue 3485: [with patch, request comments, not ready for review] new sage_input function gives a sequence of commands to reproduce sage values
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3485
 
 Original creator: cwitty
 

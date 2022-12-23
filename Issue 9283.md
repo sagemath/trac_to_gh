@@ -1,6 +1,6 @@
 # Issue 9283: sage notebook error when opening default page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9283
 
 Original creator: retry
 

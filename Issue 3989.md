@@ -1,6 +1,6 @@
 # Issue 3989: [with spkg, needs review] autotools issues with gd-2.0.35
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3989
 
 Original creator: mabshoff
 

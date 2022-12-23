@@ -1,6 +1,6 @@
 # Issue 9508: ATLAS is not building shared libraries properly on Solaris 10 and OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9508
 
 Original creator: drkirkby
 
@@ -93,7 +93,7 @@ The ATLAS log is too long to show, but summary information is provided. This inc
 *First the build.*
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2.alpha1$ ./sage -f atlas-3.8.3.p13
+drkirkby@hawk:~/sage-4.5.2.alpha1$ ./sage -f atlas-3.8.3.p13
 chmod 0644 /export/home/drkirkby/sage-4.5.2.alpha1/local/lib/libptcblas.a /export/home/drkirkby/sage-4.5.2.alpha1/local/lib/libptf77blas.a
 chmod: WARNING: can't access /export/home/drkirkby/sage-4.5.2.alpha1/local/lib/libptcblas.a
 chmod: WARNING: can't access /export/home/drkirkby/sage-4.5.2.alpha1/local/lib/libptf77blas.a
@@ -189,7 +189,7 @@ It can also be seen that the shared libraries are 64-bit, as they should be:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.2.alpha1/local/lib$ file libcblas.so  libf77blas.so liblapack.so libatlas.so libf77blas.a liblapack.a libcblas.a libatlas.a
+drkirkby@hawk:~/sage-4.5.2.alpha1/local/lib$ file libcblas.so  libf77blas.so liblapack.so libatlas.so libf77blas.a liblapack.a libcblas.a libatlas.a
 libcblas.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 libf77blas.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 liblapack.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
@@ -220,7 +220,7 @@ Only the start and end of the build are shown. Had ATLAS failed to build, the te
 
 
 ```
-32 drkirkby`@`fulvia:[~/fulvia/32/sage-4.5.1] $ ./sage -f atlas-3.8.3.p13
+32 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ ./sage -f atlas-3.8.3.p13
 Force installing atlas-3.8.3.p13
 Calling sage-spkg on atlas-3.8.3.p13
 Warning: Attempted to overwrite SAGE_ROOT environment variable
@@ -253,7 +253,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing atlas-3.8.3.p13.spkg
-32 drkirkby`@`fulvia:[~/fulvia/32/sage-4.5.1] $ 
+32 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ 
 ```
 
 
@@ -272,7 +272,7 @@ Comment by drkirkby created at 2010-07-29 21:56:56
 Again, the full log is not shown, but the end is . 
 
 ```
-64 drkirkby`@`fulvia:[~/fulvia/64/sage-4.5.1] $ ./sage -f atlas-3.8.3.p13
+64 drkirkby@fulvia:[~/fulvia/64/sage-4.5.1] $ ./sage -f atlas-3.8.3.p13
 
 <snip> 
 
@@ -301,7 +301,7 @@ rm: Cannot remove any directory in the path of the current working directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing atlas-3.8.3.p13.spkg
-64 drkirkby`@`fulvia:[~/fulvia/64/sage-4.5.1] 
+64 drkirkby@fulvia:[~/fulvia/64/sage-4.5.1] 
 ```
 
 
@@ -309,7 +309,7 @@ We can see the libraries are indeed 32-bit:
 
 
 ```
-as.arkirkby`@`fulvia:[~/fulvia/32/sage-4.5.1/local/lib] $ file libcblas.so libf77blas.so liblapack.so libatlas.so libf77blas.a liblapack.a libcblas.a libatl 
+as.arkirkby@fulvia:[~/fulvia/32/sage-4.5.1/local/lib] $ file libcblas.so libf77blas.so liblapack.so libatlas.so libf77blas.a liblapack.a libcblas.a libatl 
 libcblas.so:	ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped, no debugging information available
 libf77blas.so:	ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped, no debugging information available
 liblapack.so:	ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped, no debugging information available

@@ -1,6 +1,6 @@
 # Issue 4721: [with patch; needs review] Indefinite integration for piecewise functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4721
 
 Original creator: pbutler
 
@@ -276,7 +276,7 @@ yet you have the definite integral
 ```
 
             sage: f1(x) = e^(-abs(x))
-            sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (-infinity, infinity), f1)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+            sage: f = Piecewise([[(-infinity, infinity), f1]])
             sage: f.integral(definite=True)
             2
 ```
@@ -286,7 +286,7 @@ Could you explain this please? I think maybe you meant to say
 
 ```
 sage: f.integral()
-Piecewise defined function with 1 parts, [This is the Trac macro ** that was inherited from the migration called with arguments (-Infinity, +Infinity), -integrate)](https://trac.sagemath.org/wiki/WikiMacros#-macro)
+Piecewise defined function with 1 parts, [[(-Infinity, +Infinity), -integrate(e^(-abs(x)), x, x, +Infinity)]]
 ```
 
 If so, could you add this example and comment to the docstring please?
@@ -447,14 +447,14 @@ The following tests failed:
 	sage -t  "devel/sage/sage/rings/qqbar.py"
 Total time for all tests: 5392.0 seconds
 Please see /home/paul/sage/tmp/test.log for the complete log from this test.
-paul`@`wildcard:~/sage$ ./sage -t "devel/sage/sage/rings/qqbar.py"
+paul@wildcard:~/sage$ ./sage -t "devel/sage/sage/rings/qqbar.py"
 sage -t  "devel/sage/sage/rings/qqbar.py"                   
 	 [27.4 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 27.4 seconds
-paul`@`wildcard:~/sage$ 
+paul@wildcard:~/sage$ 
 ```
 
 

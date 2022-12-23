@@ -1,6 +1,6 @@
 # Issue 8547: implement hidden markov models in Cython from scratch (so can remove the GHMM standard package from Sage)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8547
 
 Original creator: was
 

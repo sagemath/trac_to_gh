@@ -1,6 +1,6 @@
 # Issue 988: [with bundle] Add back in "bg" option for edit_module.edit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/988
 
 Original creator: nbruin
 

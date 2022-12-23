@@ -1,6 +1,6 @@
 # Issue 7692: update the sloane OEIS database to the latest version; it is a little out of date.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7692
 
 Original creator: was
 

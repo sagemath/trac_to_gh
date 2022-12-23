@@ -1,6 +1,6 @@
 # Issue 7963: Downloading multiple worksheets does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7963
 
 Original creator: jason
 
@@ -34,7 +34,7 @@ I think this is a matter of
 ```diff
 --- a/sagenb/data/sage/js/notebook_lib.js
 +++ b/sagenb/data/sage/js/notebook_lib.js
-`@``@` -1515,7 +1515,7 `@``@` function download_worksheets_button() {
+@@ -1515,7 +1515,7 @@ function download_worksheets_button() {
      /*
      Downloads the set of checked worksheets as a zip file.
      */

@@ -1,6 +1,6 @@
 # Issue 9044: Use mpmath for the erf() function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9044
 
 Original creator: rbeezer
 
@@ -14,7 +14,7 @@ Appears the current erf() function is limited to 53-bit accuracy, while using mp
 
 
 ```
-[09:55] --> E1ephant has joined this channel (~E1ephant`@`e1ephant.broker.freenet6.net).
+[09:55] --> E1ephant has joined this channel (~E1ephant@e1ephant.broker.freenet6.net).
 [09:55] <E1ephant> hi =)
 [09:57] <E1ephant> could you tell me please something? after integrating: integrate( (2/sqrt(2*pi)) * exp(-x^2/2), x, 0, 2)  a have erf(sqrt(2))
 [09:57] <E1ephant> how can i calculate than that value numerically?

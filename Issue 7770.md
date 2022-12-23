@@ -1,6 +1,6 @@
 # Issue 7770: Implement Tower of Hanoi graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7770
 
 Original creator: rbeezer
 

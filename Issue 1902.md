@@ -1,6 +1,6 @@
 # Issue 1902: mistake in the documentation for gens for Finite field givaro
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1902
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5312: command line -- bug in preparser and "time"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5312
 
 Original creator: was
 
@@ -14,7 +14,7 @@ There is a weird interaction between time and preparser, almost as if input to t
 
 
 ```
-wstein`@`sage:~/build/sage-3.3.rc1$ ./sage
+wstein@sage:~/build/sage-3.3.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: k = 3r

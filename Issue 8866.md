@@ -1,6 +1,6 @@
 # Issue 8866: preparse vector-valued functions and derivatives
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8866
 
 Original creator: jason
 
@@ -103,7 +103,7 @@ I'm running tests right now.  In the meantime, could this be less ugly?  I reali
 
 
 ```
-sage: d=matrix(SR, [This is the Trac macro *4, 4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#4, 4-macro))
+sage: d=matrix(SR, [[4, 4]])
 sage: d(3)
 /sage/dev/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)
   exec code_obj in self.user_global_ns, self.user_ns

@@ -1,6 +1,6 @@
 # Issue 1080: inconsistent doctest failure in sage/misc/sage_eval.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1080
 
 Original creator: cwitty
 

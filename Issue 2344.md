@@ -1,6 +1,6 @@
 # Issue 2344: python -- upgrade to version 2.5.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2344
 
 Original creator: was
 
@@ -43,16 +43,16 @@ Comment by mabshoff created at 2008-03-26 10:33:09
 Ahh, after fearing that this could be another one of the WORST SPKG EVER all of our patches apply cleanly to 2.5.2:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../readline-Itanium-fix.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../readline-Itanium-fix.patch
 patching file Modules/readline.c
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../Sage-help-fix.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../Sage-help-fix.patch
 patching file Lib/pkgutil.py
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../local.py-fixes.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../local.py-fixes.patch
 patching file Lib/locale.py
 Hunk #1 succeeded at 28 (offset 2 lines).
 Hunk #2 succeeded at 489 (offset 2 lines).
 Hunk #3 succeeded at 513 (offset 2 lines).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../ctypes__init__.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2/spkg/standard/python-2.5.2/src-patched$ patch -p1 --dry-run < ../ctypes__init__.patch
 patching file Lib/ctypes/__init__.py
 ```
 

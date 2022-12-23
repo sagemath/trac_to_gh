@@ -1,6 +1,6 @@
 # Issue 6062: [with patch; needs review] QQ method is_padic_square fails when argument is python int
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6062
 
 Original creator: tornaria
 

@@ -1,6 +1,6 @@
 # Issue 9478: LaTeX error for iterated polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9478
 
 Original creator: novoselt
 

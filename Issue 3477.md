@@ -1,6 +1,6 @@
 # Issue 3477: clisp spkg-install has bad hard-coded error message
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3477
 
 Original creator: cwitty
 

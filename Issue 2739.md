@@ -1,6 +1,6 @@
 # Issue 2739: Sage web site lacking a clear 'About Sage' page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2739
 
 Original creator: jsp
 

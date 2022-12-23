@@ -1,6 +1,6 @@
 # Issue 6829: Implement Manin symbols over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6829
 
 Original creator: cremona
 

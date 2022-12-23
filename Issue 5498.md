@@ -1,6 +1,6 @@
 # Issue 5498: [with patch; needs review] fix weird weird bug in maxima.py and garbage collection (technical 3.4.rc2 issues)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5498
 
 Original creator: was
 

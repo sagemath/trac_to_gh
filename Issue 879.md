@@ -1,6 +1,6 @@
 # Issue 879: "sage -testall" should summarize all failures at the end of the run
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/879
 
 Original creator: cwitty
 

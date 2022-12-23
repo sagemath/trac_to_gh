@@ -1,6 +1,6 @@
 # Issue 8861: sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8861
 
 Original creator: GeorgSWeber
 
@@ -162,7 +162,7 @@ I checked the spkg I posted, and I don't see any problem.
 
 ```
 
-timdumol`@`tim-pc sagenb-0.8]$ ls src/
+timdumol@tim-pc sagenb-0.8]$ ls src/
 sagenb/                    zope.i18nmessageid-3.5.2.zip
 ClientForm-0.2.10.tar.gz   zope.interface-3.6.1.tar.gz
 mechanize-0.1.11.tar.gz    zope.schema-3.6.3.zip
@@ -206,10 +206,10 @@ A trivial point. When uncompressed, Tim's updated spkg has this name:
 
 
 ```sh
-[mvngu`@`sage sagenb]$ ls
+[mvngu@sage sagenb]$ ls
 sagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg
-[mvngu`@`sage sagenb]$ tar -jxf sagenb-0.8.p2.spkg
-[mvngu`@`sage sagenb]$ ls
+[mvngu@sage sagenb]$ tar -jxf sagenb-0.8.p2.spkg
+[mvngu@sage sagenb]$ ls
 sagenb-0.7.2.spkg    sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg
 sagenb-0.7.5.1.spkg  sagenb-0.8
 ```

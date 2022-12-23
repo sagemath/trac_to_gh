@@ -1,6 +1,6 @@
 # Issue 9228: Bring doctests for interfaces/mwrank.py up to 100% (from 20% (2 of 10)  )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9228
 
 Original creator: cremona
 

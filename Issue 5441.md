@@ -1,6 +1,6 @@
 # Issue 5441: preparser_ipython edit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5441
 
 Original creator: kohel
 

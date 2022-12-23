@@ -1,6 +1,6 @@
 # Issue 2878: notebook -- cython .c and .html links should open in new links (use target="_new"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2878
 
 Original creator: was
 

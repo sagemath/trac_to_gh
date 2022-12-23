@@ -1,6 +1,6 @@
 # Issue 1923: Make an obvious checkbox or menu to switch on pretty printing in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1923
 
 Original creator: jason
 

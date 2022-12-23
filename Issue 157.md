@@ -1,6 +1,6 @@
 # Issue 157: Integers(2**31)(5) hangs on 32-bit  (fine on 64-bit, but something else is probably broken there)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/157
 
 Original creator: was
 
@@ -93,7 +93,7 @@ bash-2.05b$ ./sage
 Thanks for the great work on SAGE, it is now my CAS of choice.
 Nick Alexander
  
-PS.  A question: how does `@`func_persist work, meaning where does it get
+PS.  A question: how does @func_persist work, meaning where does it get
 translated and into what code.  Is this mechanism general and used
 elsewhere?
  }}}

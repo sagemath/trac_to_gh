@@ -1,6 +1,6 @@
 # Issue 8558: Make gcd use pari for univariate polynomial rings over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8558
 
 Original creator: lftabera
 

@@ -1,6 +1,6 @@
 # Issue 4257: [with patch, needs review] support for Singular's  'intmat' and 'intvec'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4257
 
 Original creator: malb
 

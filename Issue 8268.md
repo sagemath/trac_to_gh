@@ -1,6 +1,6 @@
 # Issue 8268: Improve speed of Christoffel word construction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8268
 
 Original creator: slabbe
 

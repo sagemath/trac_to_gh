@@ -1,6 +1,6 @@
 # Issue 108: inconsistent return type for binomial function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/108
 
 Original creator: dmharvey
 

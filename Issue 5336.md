@@ -1,6 +1,6 @@
 # Issue 5336: make the live documentation in the notebook work with Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5336
 
 Original creator: mhansen
 

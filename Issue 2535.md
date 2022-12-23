@@ -1,6 +1,6 @@
 # Issue 2535: Problem with cuspidal_subspace and new_subspace for modular symbols
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2535
 
 Original creator: craigcitro
 
@@ -109,7 +109,7 @@ Negative review, since the code doesn't work on the example given below:
 17:47 < wstein-2535> craigcitro -- what happens with this new code when the submodule we're trying to get the
 17:47 < wstein-2535> dual of has both * eigenvalues?
 17:48 < wstein-2535> I think this new code might just break then.
-17:48 -!- roed_ [n=roed`@`c-98-216-48-4.hsd1.ma.comcast.net] has quit []
+17:48 -!- roed_ [n=roed@c-98-216-48-4.hsd1.ma.comcast.net] has quit []
 17:48 < craigcitro> ah, you're saying i want an 'else' clause in the 'star' case.
 17:48 < wstein-2535>  At a minimum.
 17:49 < wstein-2535> And also you *have* to use star in that case.

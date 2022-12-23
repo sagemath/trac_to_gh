@@ -1,6 +1,6 @@
 # Issue 6956: cannot differentiate cotangent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6956
 
 Original creator: burcin
 
@@ -13,7 +13,7 @@ From sage-support:
 
 ```
 On Fri, 18 Sep 2009 13:15:46 -0500
-Jason Grout <jason-sage`@`creativetrax.com> wrote:
+Jason Grout <jason-sage@creativetrax.com> wrote:
 
 > On alpha.sagenb.org, I get the following:
 > 

@@ -1,6 +1,6 @@
 # Issue 3508: gmp-4.2.2.spkg is severly broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3508
 
 Original creator: mabshoff
 

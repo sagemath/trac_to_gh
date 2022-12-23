@@ -1,6 +1,6 @@
 # Issue 2191: [with spkg] Debianize gfan spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2191
 
 Original creator: tabbott
 

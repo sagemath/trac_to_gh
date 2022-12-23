@@ -1,6 +1,6 @@
 # Issue 3927: Factorization class has no division implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3927
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 7299: show() regression: Picture cropped too much
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7299
 
 Original creator: AJonsson
 

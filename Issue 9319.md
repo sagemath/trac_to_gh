@@ -1,6 +1,6 @@
 # Issue 9319: extend and improve "sage -merge"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9319
 
 Original creator: jhpalmieri
 

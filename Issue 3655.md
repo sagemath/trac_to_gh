@@ -1,6 +1,6 @@
 # Issue 3655: left multiplication in piecewise does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3655
 
 Original creator: wdj
 
@@ -13,7 +13,7 @@ This was reported by C Boncelet.
 
 ```
 sage: x = PolynomialRing(QQ,'x').gen()
-sage: f = Piecewise([This is the Trac macro ** that was inherited from the migration called with arguments (0,1),1*x^0)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: f = Piecewise([[(0,1),1*x^0]])
 sage: r = f*2
 sage: r = 2*f
 ---------------------------------------------------------------------------
@@ -39,7 +39,7 @@ sage: f.__rmul__ = f.__mul__
 sage: r = f*2
 sage: r = 2*f
 sage: r
-Piecewise defined function with 1 parts, [This is the Trac macro ** that was inherited from the migration called with arguments (0, 1), 2)](https://trac.sagemath.org/wiki/WikiMacros#-macro)
+Piecewise defined function with 1 parts, [[(0, 1), 2]]
 ```
 
 

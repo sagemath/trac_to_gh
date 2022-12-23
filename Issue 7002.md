@@ -1,6 +1,6 @@
 # Issue 7002: Notebook documentation says to use "#auto", but should be "%auto"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7002
 
 Original creator: jason
 

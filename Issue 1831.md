@@ -1,6 +1,6 @@
 # Issue 1831: [with patch] 3d docs: add more examples of parametric plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1831
 
 Original creator: was
 

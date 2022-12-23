@@ -1,6 +1,6 @@
 # Issue 1045: [with patch] graphs: add eulerian testing and circuit-finding
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1045
 
 Original creator: jason
 

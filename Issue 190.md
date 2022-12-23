@@ -1,6 +1,6 @@
 # Issue 190: fractional matrix indices are allowed ?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/190
 
 Original creator: was
 
@@ -112,8 +112,8 @@ Conclusion: call __index__
 [10:34] <william> dmharvey -- are you looking at #190?
 [10:34] <dmharvey> #190: do matrix subclasses generally override the getitem/setitme methods?
 [10:34] <william> one bad thing is:  return self.row(int(key))
-[10:35] <mabshoff> [mabshoff`@`m940 sage-2.8.1]$ cython regression.pyx
-[10:35] <mabshoff> [mabshoff`@`m940 sage-2.8.1]$
+[10:35] <mabshoff> [mabshoff@m940 sage-2.8.1]$ cython regression.pyx
+[10:35] <mabshoff> [mabshoff@m940 sage-2.8.1]$
 [10:35] <william> no, they enver do.
 [10:35] <mabshoff> That is without the patch.
 [10:35] <dmharvey> ok
@@ -145,7 +145,7 @@ Conclusion: call __index__
 [10:40] <mabshoff> cython regressioin.pyx works.
 [10:40] <william> hg repository; for other things, I'll put them in /home/was/bug/
 [10:41] <william> oh -- and post verbosely to trac!
-[10:41] --> ncalexan has joined this channel (n=user`@`d207-216-25-207.bchsia.telus.net).
+[10:41] --> ncalexan has joined this channel (n=user@d207-216-25-207.bchsia.telus.net).
 [10:41] <william> hi nick.
 [10:41] <william> where you at?
 [10:41] <ncalexan> Hi folks... I can't stay long, relaxing with the family, but thought I'd see how things were.
@@ -157,7 +157,7 @@ Conclusion: call __index__
 [10:42] <william> nick, if a is a matrix, and n = QQ(5), should a[n,n] be an error or not?
 [10:42] <dmharvey> #190: my preference is to allow only int/long/Integer
 [10:42] <dmharvey> hi nick
-[10:42] --> paulolivier_sage has joined this channel (i=8143024e`@`gateway/web/cgi-irc/ircatwork.com/x-f7a7e0b894111559).
+[10:42] --> paulolivier_sage has joined this channel (i=8143024e@gateway/web/cgi-irc/ircatwork.com/x-f7a7e0b894111559).
 [10:42] <william> wait!
 [10:42] <-- paulolivier_sage has left this server (Client Quit).
 [10:42] <william> we should do whatever python lists do, shouldn't we?
@@ -166,7 +166,7 @@ Conclusion: call __index__
 [10:43] <dmharvey> sure
 [10:43] <ncalexan> That probably means calling __int__ or something similar, no?
 [10:43] <william> python lists have an __index__ protocol as of python 2.5.
-[10:43] --> pauloliviersage has joined this channel (i=8143024e`@`gateway/web/cgi-irc/ircatwork.com/x-539b7d4cf887a650).
+[10:43] --> pauloliviersage has joined this channel (i=8143024e@gateway/web/cgi-irc/ircatwork.com/x-539b7d4cf887a650).
 [10:43] <william> NO.
 [10:43] <ncalexan> Yeah, I think we best stick with that then.
 [10:43] <ncalexan> ?

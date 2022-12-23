@@ -1,6 +1,6 @@
 # Issue 2529: [with patch, needs review] slightly more preparation for backend switch in graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2529
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7345: New libtiff package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7345
 
 Original creator: timdumol
 

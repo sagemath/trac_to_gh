@@ -1,6 +1,6 @@
 # Issue 4801: [with patch, positive review] Add a flag when starting MuPAD so that it can tell when it's being run from Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4801
 
 Original creator: mhansen
 

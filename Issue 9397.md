@@ -1,6 +1,6 @@
 # Issue 9397: Resolve corrupted patches to permit Singular to build on Solaris x86/x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9397
 
 Original creator: drkirkby
 
@@ -54,7 +54,7 @@ patch()
 }
 }}}
 
-Removing the target `ix86-SunOS` would stop any build on Solaris or OpenSolaris with x86/x64 hardware, but would not affect SPARC builds at all. 
+Removing the target `ix86-SunOS` would stop any build on Solaris or !OpenSolaris with x86/x64 hardware, but would not affect SPARC builds at all. 
 
 ## Problem No. 2 Compiler flag -m64 not propagating properly throughout the Singular build process
 

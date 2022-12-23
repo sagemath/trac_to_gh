@@ -1,6 +1,6 @@
 # Issue 3146: (latex(a\v), a) gives an error about calling something with too many arguments.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3146
 
 Original creator: jason
 
@@ -24,7 +24,7 @@ You see this parsing in the error from:
 
 
 ```
-`@`interact
+@interact
 def _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):
     html('$$%s %s = %s$$'%(latex(a), latex(a\v), latex(v)))
 ```

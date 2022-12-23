@@ -1,6 +1,6 @@
 # Issue 1507: [with patch] plotting -- document how to use pylab / matlab style plotting from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1507
 
 Original creator: was
 

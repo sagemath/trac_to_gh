@@ -1,6 +1,6 @@
 # Issue 1830: sage-current-location.txt not unpdated on "make install"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1830
 
 Original creator: pgrinber
 

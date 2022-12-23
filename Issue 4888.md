@@ -1,6 +1,6 @@
 # Issue 4888: laplacian_matrix() broken for DiGraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4888
 
 Original creator: mabshoff
 

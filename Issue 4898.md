@@ -1,6 +1,6 @@
 # Issue 4898: [with patch; needs review] Add style and labels to contour_plot()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4898
 
 Original creator: abergeron
 
@@ -51,7 +51,7 @@ I tried applying it to 3.3rc0:
 
 
 ```
-jason`@`sage:~$ patch contour_plot.py < trac_4898.patch 
+jason@sage:~$ patch contour_plot.py < trac_4898.patch 
 patching file contour_plot.py
 Hunk #2 FAILED at 53.
 Hunk #3 FAILED at 75.
@@ -111,7 +111,7 @@ Unfortunately, it still needs more rebasing.  Here is the result of applying it 
 
 
 ```
-jason`@`sage:~/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage$ hg qpush
+jason@sage:~/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage$ hg qpush
 applying trac_4898-contour-labels-rebase.patch
 patching file sage/plot/contour_plot.py
 Hunk #11 succeeded at 517 with fuzz 1 (offset 3 lines).

@@ -1,6 +1,6 @@
 # Issue 8319: elliptic curve canonical height bug for non-minimal models
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8319
 
 Original creator: cremona
 

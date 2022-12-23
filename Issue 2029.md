@@ -1,6 +1,6 @@
 # Issue 2029: adjust TIMEOUT for long and valgrinded doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2029
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: failure
 
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.1.rc4$ ./sage -t -valgrind -long devel/sage/sage/calculus/calculus.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.1.rc4$ ./sage -t -valgrind -long devel/sage/sage/calculus/calculus.py
 sage -t -valgrind -long devel/sage-main/sage/calculus/calculus.py
 Raising timeout to 1800 seconds due to '-long' option
 

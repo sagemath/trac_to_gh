@@ -1,6 +1,6 @@
 # Issue 8981: Adding support for param attribute of GSL ode solver
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8981
 
 Original creator: Moredread
 

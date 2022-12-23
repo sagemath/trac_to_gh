@@ -1,6 +1,6 @@
 # Issue 674: Solaris 10: sympow is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/674
 
 Original creator: mabshoff
 
@@ -69,7 +69,7 @@ I'm not getting any doctest failures with the name _sympow_ in them. I know noth
 
 
 ```
-kirkby`@`t2:[~/sage-4.3] $ ./sage -sh
+kirkby@t2:[~/sage-4.3] $ ./sage -sh
 
 Starting subshell with Sage environment variables set.
 Be sure to exit when you are done and do not do anything

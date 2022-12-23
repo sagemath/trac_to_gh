@@ -1,6 +1,6 @@
 # Issue 8290: Support HDF5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8290
 
 Original creator: magawake
 

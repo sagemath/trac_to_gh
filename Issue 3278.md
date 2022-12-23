@@ -1,6 +1,6 @@
 # Issue 3278: [with patch, needs review] update the crystal iterator to use the new backtracking code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3278
 
 Original creator: mhansen
 

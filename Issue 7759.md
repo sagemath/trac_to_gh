@@ -1,6 +1,6 @@
 # Issue 7759: Add a 'README.Solaris' file to the root of Sage directory.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7759
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 5771: %latex should issue a warning if latex isn't installed on the system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5771
 
 Original creator: mabshoff
 
@@ -13,11 +13,11 @@ CC:  rbeezer
 Right now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:
 
 ```
-mabshoff`@`sagenb:~$ latex
+mabshoff@sagenb:~$ latex
 The program 'latex' is currently not installed.  You can install it by typing:
 sudo apt-get install texlive-latex-base
 -bash: latex: command not found
-mabshoff`@`sagenb:~$ echo $?
+mabshoff@sagenb:~$ echo $?
 127
 ```
 

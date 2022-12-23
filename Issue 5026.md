@@ -1,6 +1,6 @@
 # Issue 5026: numerical noise doctest failure in rings/polynomial/complex_roots.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5026
 
 Original creator: mhampton
 

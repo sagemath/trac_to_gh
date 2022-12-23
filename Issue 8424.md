@@ -1,6 +1,6 @@
 # Issue 8424: bounding box calculation doesn't handle NaN or infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8424
 
 Original creator: jason
 

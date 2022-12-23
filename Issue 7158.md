@@ -1,6 +1,6 @@
 # Issue 7158: SageNB -- Set up challenge-response, such as a CAPTCHA, for account registration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7158
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 1521: rebuilding ntl_GF2.pyx fails spectecularly on OSX 10.4 with moved install/binary install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1521
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5974: [with patch; needs review] the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5974
 
 Original creator: was
 
@@ -68,7 +68,7 @@ I ran a fulldoctest cycle with this patch applied and found yet another serious 
 
 
 ```
-wstein`@`sage:~$ sage
+wstein@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: K.<zeta6>=CyclotomicField(6); matrix(K,1,2) * matrix(K,2,[0, 1, 0, -2*zeta6, 0, 0, 1, -2*zeta6 + 1])

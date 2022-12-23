@@ -1,6 +1,6 @@
 # Issue 6599: hidden markov models are completely broken on OS X 64-bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6599
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: tbd
 
 
 ```
-was`@`bsd:~/build/64bit/sage-4.1.rc1$ ./sage
+was@bsd:~/build/64bit/sage-4.1.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: A  = [[0.5,0.5],[0.5,0.5]]

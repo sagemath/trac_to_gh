@@ -1,6 +1,6 @@
 # Issue 8749: BSD: doctest failures on solaris (t2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8749
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 2154: Infinite memory allocation bug in PermutationGroupElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2154
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 2893: [with patch; needs review] notebook -- make it explicitly clear which systems are optional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2893
 
 Original creator: was
 

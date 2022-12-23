@@ -1,6 +1,6 @@
 # Issue 9462: warning in matrix_modn_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9462
 
 Original creator: wjp
 

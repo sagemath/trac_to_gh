@@ -1,6 +1,6 @@
 # Issue 289: 3d plotting java applet that can be included in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/289
 
 Original creator: was
 

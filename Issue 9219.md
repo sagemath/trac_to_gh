@@ -1,6 +1,6 @@
 # Issue 9219: add a statistics chapter to the sage reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9219
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5213: [with patch, needs review] make charpoly/minpoly of number field elements use matrix()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5213
 
 Original creator: ncalexan
 
@@ -216,8 +216,8 @@ I hope the output is fairly self-explanatory (the times are in seconds).  The ab
 
 
 ```
-[ghitza`@`artin 5213]$ uname -a
-Linux artin 2.6.28-ARCH #1 SMP PREEMPT Sun Feb 8 10:13:45 UTC 2009 i686 Intel(R) Core(TM)2 Duo CPU T9300 `@` 2.50GHz GenuineIntel GNU/Linux
+[ghitza@artin 5213]$ uname -a
+Linux artin 2.6.28-ARCH #1 SMP PREEMPT Sun Feb 8 10:13:45 UTC 2009 i686 Intel(R) Core(TM)2 Duo CPU T9300 @ 2.50GHz GenuineIntel GNU/Linux
 ```
 
 

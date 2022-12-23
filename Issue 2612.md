@@ -1,6 +1,6 @@
 # Issue 2612: String to Integer Conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2612
 
 Original creator: vgermrk
 

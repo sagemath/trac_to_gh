@@ -1,6 +1,6 @@
 # Issue 9249: Wrong answer in is_hamiltonian if no LP solver available
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9249
 
 Original creator: ncohen
 

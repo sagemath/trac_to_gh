@@ -1,6 +1,6 @@
 # Issue 7506: NotebookObject documentation is out of date
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7506
 
 Original creator: mhampton
 

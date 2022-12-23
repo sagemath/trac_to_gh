@@ -1,6 +1,6 @@
 # Issue 621: memory still reachable in matrix_integer_dense_Matrix_integer_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/621
 
 Original creator: mabshoff
 
@@ -108,7 +108,7 @@ Comment by mabshoff created at 2007-11-03 14:07:39
 It looks like the ModularSymbols_clear_cache() does nothing:
 
 ```
-mabshoff`@`sage:~$ sage
+mabshoff@sage:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.11, Release Date: 2007-11-02                      |

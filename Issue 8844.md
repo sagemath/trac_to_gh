@@ -1,6 +1,6 @@
 # Issue 8844: add missing libraries to module_list for Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8844
 
 Original creator: mhansen
 

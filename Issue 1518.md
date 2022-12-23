@@ -1,6 +1,6 @@
 # Issue 1518: [with trivial patch] cache computing order of elliptic curve over finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1518
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 287: optimize integer creation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/287
 
 Original creator: was
 

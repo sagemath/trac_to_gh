@@ -1,6 +1,6 @@
 # Issue 846: Split cdefs.pxi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/846
 
 Original creator: robertwb
 

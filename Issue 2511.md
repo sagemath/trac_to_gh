@@ -1,6 +1,6 @@
 # Issue 2511: fix mistake in the animate docs (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2511
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On Thu, Mar 13, 2008 at 11:41 AM, Hector Villafuerte <hectorvd`@`gmail.com> wrote:
+On Thu, Mar 13, 2008 at 11:41 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:
 > 
 >  Hi,
 >  the docstring for animate gives the following example:

@@ -1,6 +1,6 @@
 # Issue 2174: [bug day?] upgrade -- make upgrade() so that when run in the notebook it is not very verbose
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2174
 
 Original creator: was
 

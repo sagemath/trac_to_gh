@@ -1,6 +1,6 @@
 # Issue 9543: Enable cephes on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9543
 
 Original creator: pjeremy
 
@@ -91,7 +91,7 @@ My solution was to slightly modify pjeremy's patch so that it creates a library 
 ```
 --- cephes-2.8	2012-04-14 01:39:13.000000000 +0000
 +++ cephes-2.8	2012-04-14 01:38:51.000000000 +0000
-`@``@` -1273,11 +1273,11 `@``@`
+@@ -1273,11 +1273,11 @@
  +# Intermediate (ar) libraries
  +LIBS=c9x-complex/libmc.a double/libmd.a ldouble/libml.a single/libmf.a
  +
@@ -106,7 +106,7 @@ My solution was to slightly modify pjeremy's patch so that it creates a library 
  +
  +check:
  +	cd c9x-complex && ${MAKE} "CC=${CC}" check
-`@``@` -1291,7 +1291,7 `@``@`
+@@ -1291,7 +1291,7 @@
  +#	TBD
  +
  +clean:
@@ -115,14 +115,14 @@ My solution was to slightly modify pjeremy's patch so that it creates a library 
  +	cd c9x-complex && ${MAKE} clean
  +	cd double && ${MAKE} clean
  +	cd ldouble && ${MAKE} clean
-`@``@` -1300,8 +1300,8 `@``@`
+@@ -1300,8 +1300,8 @@
  +# FreeBSD includes some but not all of the C99 maths functions.  Build
  +# a "new" libm.so that uses cephes functions to replace the missing ones
  +# (listed in syms.wanted) and then fallback to the base libm.so
 -+libm.so: ${LIBS} syms.wanted
--+	${LD} -shared -o $`@` $$(sed 's/^/-u /' syms.wanted) -L/usr/lib -lc -lm \
+-+	${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib -lc -lm \
 ++libm_complex.so: ${LIBS} syms.wanted
-++	${LD} -shared -o $`@` $$(sed 's/^/-u /' syms.wanted) -L/usr/lib \
+++	${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib \
  +	   ${LIBS} -lgcc
  +
  +# List of symbols defined in the FreeBSD base libc.so and libm.so
@@ -137,7 +137,7 @@ Then I put a script in $SAGE_ROOT/local/bin called "cc" which is a wrapper aroun
 # Intersperse a "-lm_complex" before "-lm".
 
 n=0
-for i in "$`@`"; do
+for i in "$@"; do
   if [ "x$i" = "x-lm" ]; then
     arg[$n]="-lm_complex"
     n=$((n+1))
@@ -156,9 +156,9 @@ done
 # the dynamic libraries.
 
 if [ $n = 1 -a "x${arg[0]}" = "x-v" ]; then
-  exec /usr/local/bin/gcc46 "${arg[`@`]}"
+  exec /usr/local/bin/gcc46 "${arg[@]}"
 else
-  exec /usr/local/bin/gcc46 -Wl,-rpath=$SAGE_ROOT/local/lib  -Wl,-rpath=/usr/local/lib/gcc46 "${arg[`@`]}"
+  exec /usr/local/bin/gcc46 -Wl,-rpath=$SAGE_ROOT/local/lib  -Wl,-rpath=/usr/local/lib/gcc46 "${arg[@]}"
 fi
 ```
 
@@ -339,7 +339,7 @@ Extracting package /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standar
 Finished extraction
 ****************************************************
 Host system:
-FreeBSD wilberforce 8.3-STABLE FreeBSD 8.3-STABLE #0: Wed Jan  2 15:53:46 CST 2013     root`@`wilberforce:/usr/obj/usr/src/sys/GENERIC  amd64
+FreeBSD wilberforce 8.3-STABLE FreeBSD 8.3-STABLE #0: Wed Jan  2 15:53:46 CST 2013     root@wilberforce:/usr/obj/usr/src/sys/GENERIC  amd64
 ****************************************************
 C compiler: gcc
 C compiler version:

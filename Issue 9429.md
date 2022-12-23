@@ -1,6 +1,6 @@
 # Issue 9429: Undesirable behaviour when deriving from QuotientRingElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9429
 
 Original creator: vbraun
 

@@ -1,6 +1,6 @@
 # Issue 2510: Sage 2.10.4.a0: sage/graphs/graph_generators.py doctest failure related to #2473
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2510
 
 Original creator: mabshoff
 

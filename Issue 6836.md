@@ -1,6 +1,6 @@
 # Issue 6836: The Sturm bound for modular forms gives the wrong result sometimes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6836
 
 Original creator: ljpk
 

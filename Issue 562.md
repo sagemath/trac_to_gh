@@ -1,6 +1,6 @@
 # Issue 562: memleak in Matrix_integer_dense__zero_out_matrix exposed by ModularSymbols(n,sign=1).decomposition()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/562
 
 Original creator: mabshoff
 

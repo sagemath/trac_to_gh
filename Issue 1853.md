@@ -1,6 +1,6 @@
 # Issue 1853: update libgpg_error to 1.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1853
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 1065: sage -sdist nukes libcsage.so
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1065
 
 Original creator: mabshoff
 
@@ -32,7 +32,7 @@ The following tests failed:
 
         sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py
 Total time for all tests: 0.1 seconds
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -b
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -b
 
 ----------------------------------------------------------
 sage: Building and installing modified SAGE library files.
@@ -74,7 +74,7 @@ Writing /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib/python2.5/site-packages/
 real    0m13.298s
 user    0m8.865s
 sys     0m2.356s
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py
 sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py
 **********************************************************************
 File "permgroup_element.py", line 323:
@@ -97,7 +97,7 @@ The following tests failed:
 
         sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py
 Total time for all tests: 3.0 seconds
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$                    
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$                    
 ```
 
 

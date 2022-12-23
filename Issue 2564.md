@@ -1,6 +1,6 @@
 # Issue 2564: Sage 2.10.4.rc0: fix numerical noise doctest failure in numerical/optimize.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2564
 
 Original creator: mabshoff
 

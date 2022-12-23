@@ -1,6 +1,6 @@
 # Issue 2497: crash in polynomial remainder
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2497
 
 Original creator: dmharvey
 
@@ -14,7 +14,7 @@ sage: R.<x> = PolynomialRing(Integers(4))
 sage: f = x^2 + 3
 sage: f % 2
 InvMod: inverse undefined
-/Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+/Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
 
 

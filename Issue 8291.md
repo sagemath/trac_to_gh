@@ -1,6 +1,6 @@
 # Issue 8291: eisenstein_series_qexp ridiculously bad  over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8291
 
 Original creator: AlexGhitza
 
@@ -22,7 +22,7 @@ OverflowError                             Traceback (most recent call last)
 
 /home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/eis_series.pyc in eisenstein_series_qexp(k, prec, K, var, integral)
     105     val[0] = a0
-    106     R = K[This is the Trac macro *var* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#var-macro)
+    106     R = K[[var]]
 --> 107     return R(val, prec=prec, check=False)
     108 
     109 ######################################################################

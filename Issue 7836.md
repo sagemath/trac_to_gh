@@ -1,6 +1,6 @@
 # Issue 7836: Clean up the CRT_* functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7836
 
 Original creator: mhansen
 

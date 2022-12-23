@@ -1,6 +1,6 @@
 # Issue 7293: Matrix of constraints as an input to MixedIntegerLinearProgram
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7293
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 4342: Add legends to plot.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4342
 
 Original creator: anakha
 
@@ -263,7 +263,7 @@ Hi Arnaud,
 after applying #4878 and #4884 to my Sage 3.3.alpha0 merge tree I am seeing rejects with trac_4342_v3.2.patch:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_4342_v3.2.patch 
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_4342_v3.2.patch 
 patching file sage/plot/arrow.py
 patching file sage/plot/bar_chart.py
 patching file sage/plot/circle.py
@@ -631,7 +631,7 @@ Here is an example from contour_plot.py for using suboption:
 
 
 ```
-`@`suboptions('label', fontsize=9, colors='blue', inline=None, inline_spacing=3, fmt="%1.2f")
+@suboptions('label', fontsize=9, colors='blue', inline=None, inline_spacing=3, fmt="%1.2f")
 ```
 
 

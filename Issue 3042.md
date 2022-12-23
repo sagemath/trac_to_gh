@@ -1,6 +1,6 @@
 # Issue 3042: [with patch; do not review yet] cyclolinalg -- make a new type for cyclotomic linear algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3042
 
 Original creator: was
 
@@ -187,9 +187,7 @@ Arrg, death to bundles!:
 ```
 
 The fix is obvious in this case since the reject was cause by a fix by malb. 
-|||                              
-|||------------------------------
-|||| /tmp/matrix0.pyx~base.rLNaqj
+||||||| /tmp/matrix0.pyx~base.rLNaqj
 Cheers,
 
 Michael
@@ -261,66 +259,66 @@ So, something finishy going on here. This is 3.0.3.alpha1 + the three patches Ro
 ```
 changeset:   9818:7817fe6a0d6e
 tag:         tip
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Mon Jun 02 00:55:24 2008 -0700
 summary:     Fix for multimodular echelon over cyclotomic fields (trac #3042).
 
 changeset:   9817:806d207778c7
-user:        Robert Bradshaw <robertwb`@`math.washington.edu>
+user:        Robert Bradshaw <robertwb@math.washington.edu>
 date:        Wed May 14 17:59:14 2008 -0700
 summary:     Clarifying example of reduction matrix.
 
 changeset:   9816:7ddb4a791455
 parent:      9806:0af1c676d9e5
 parent:      9815:8783f32b83b7
-user:        mabshoff`@`sage.math.washington.edu
+user:        mabshoff@sage.math.washington.edu
 date:        Thu Jun 05 22:15:16 2008 -0700
 summary:     Merge previous bundle
 
 changeset:   9815:8783f32b83b7
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Sat May 10 03:14:26 2008 -0700
 summary:     Clean up cyclo linalg for submission/review.
 
 changeset:   9814:aef7e4acdb60
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Mon May 05 10:11:25 2008 -0700
 summary:     Trac #3042  -- bring doctest coverage for matrix cyclo dense up to 100%
 
 changeset:   9813:1c24dad1f78d
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Mon May 05 04:50:47 2008 -0700
 summary:     cyclo lin alg -- speeding up echelon form snapshot
 
 changeset:   9812:a516cca10e1a
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Thu May 01 22:25:12 2008 -0700
 summary:     Some code cleanup.  Implement first FAST mul method for matrices over cyclotomic fields; result is quite good a
 lready.
 
 changeset:   9811:6a118d331705
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Thu May 01 03:07:52 2008 -0700
 summary:     Working on cyclotomic linear algebra ...
 
 changeset:   9810:0c692edc3b07
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Wed Apr 30 17:33:59 2008 -0700
 summary:     Current working state of cyclo-linalg.
 
 changeset:   9809:65bba2b67f19
-user:        Craig Citro <craigcitro`@`gmail.com>
+user:        Craig Citro <craigcitro@gmail.com>
 date:        Mon Apr 28 05:17:28 2008 -0700
 summary:     Working on cyclolinalg
 
 changeset:   9808:a8772459a254
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sun Apr 27 16:35:36 2008 -0700
 summary:     cyclotomic linear algebra -- part 2 -- implement first version of class along with fast multimodular charpoly.
 
 changeset:   9807:f503079549c5
 parent:      9669:23d0e6b6a675
-user:        William Stein <wstein`@`gmail.com>
+user:        William Stein <wstein@gmail.com>
 date:        Sat Apr 26 23:53:59 2008 -0700
 summary:     cyclotomic linear algebra -- very initial demo type.
 ```

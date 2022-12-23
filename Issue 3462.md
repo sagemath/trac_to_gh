@@ -1,6 +1,6 @@
 # Issue 3462: modular symbols -- fix use_cache not being properly respected
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3462
 
 Original creator: was
 

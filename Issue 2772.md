@@ -1,6 +1,6 @@
 # Issue 2772: Update Singular to 3-0-4-2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2772
 
 Original creator: malb
 

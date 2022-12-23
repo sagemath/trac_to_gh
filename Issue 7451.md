@@ -1,6 +1,6 @@
 # Issue 7451: Setting SAGE_FAT_BINARY causes internal compiler error building pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7451
 
 Original creator: was
 

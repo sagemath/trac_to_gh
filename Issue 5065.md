@@ -1,6 +1,6 @@
 # Issue 5065: elliptic curve torsion subgroup doesn't know it's identity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5065
 
 Original creator: boothby
 

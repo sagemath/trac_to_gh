@@ -1,6 +1,6 @@
 # Issue 9493: Remove extra baggage from ECL 10.2.1.p1 (again)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9493
 
 Original creator: leif
 
@@ -61,7 +61,7 @@ Minimal patch to `configure` to allow `rm -r src/src/gmp`:
 ```patch
 --- src/src/configure	2010-02-13 20:04:32.000000000 +0100
 +++ patches/src.src.configure	2010-07-14 01:29:39.000000000 +0200
-`@``@` -1987,7 +1987,7 `@``@`
+@@ -1987,7 +1987,7 @@
  
  
  ac_aux_dir=
@@ -88,7 +88,7 @@ Modified `spkg-install` to allow removal of GMP (suggestion):
 ```patch
 --- ecl-stripped-v1/ecl-10.2.1.p2/spkg-install	2010-07-12 05:22:11.000000000 +0200
 +++ ecl-stripped-v2/ecl-10.2.1.p2/spkg-install	2010-07-14 02:21:22.000000000 +0200
-`@``@` -154,6 +154,15 `@``@`
+@@ -154,6 +154,15 @@
  # We clear MAKEFLAGS to fix building multiple spkgs in parallel on OS X.
  export MAKEFLAGS=
  
@@ -104,7 +104,7 @@ Modified `spkg-install` to allow removal of GMP (suggestion):
  set +e
  
  cd src
-`@``@` -165,9 +174,9 `@``@`
+@@ -165,9 +174,9 @@
     # 1) OpenSolaris (SunOS 5.11)
     # 2) Intel or AMD CPU 
     # 3) 64-bit build

@@ -1,6 +1,6 @@
 # Issue 8414: lattice -> space in weyl_groups.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8414
 
 Original creator: bump
 

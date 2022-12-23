@@ -1,6 +1,6 @@
 # Issue 2255: matrix transpose does not maintain subdivision information
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2255
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 7833: r-2.9.2 - fix compilation on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7833
 
 Original creator: pjeremy
 

@@ -1,6 +1,6 @@
 # Issue 4030: Vectors of callable things should be callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4030
 
 Original creator: jwmerrill
 

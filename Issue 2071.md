@@ -1,6 +1,6 @@
 # Issue 2071: SymbolicExpression conjugate() method assumes variables are real
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2071
 
 Original creator: cwitty
 

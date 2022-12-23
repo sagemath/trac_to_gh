@@ -1,6 +1,6 @@
 # Issue 4637: bug/stupid design of padic_printing.sep print mode stuff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4637
 
 Original creator: was
 

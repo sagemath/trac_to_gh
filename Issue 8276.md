@@ -1,6 +1,6 @@
 # Issue 8276: The one of MatrixSpace can be changed !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8276
 
 Original creator: hivert
 
@@ -159,7 +159,7 @@ Comment by hivert created at 2010-02-20 13:59:49
 Oups ! I just realize I forgot to reupload `trac_8276-fix_zero_matrix_creation-fh.patch` after a last minor change. Many apologies if you started to review ! For info here is the changelog between the two last version of the patch
 
 ```
-    2.31 `@``@` -85,6 +85,8 `@``@`
+    2.31 @@ -85,6 +85,8 @@
     2.32               []
     2.33  +            sage: mat.is_mutable()
     2.34  +            False
@@ -168,7 +168,7 @@ Oups ! I just realize I forgot to reupload `trac_8276-fix_zero_matrix_creation-f
     2.37           """
     2.38  -        try:
     2.39  -            z = self.__zero_matrix
-    2.40 `@``@` -98,6 +100,8 `@``@`
+    2.40 @@ -98,6 +100,8 @@
     2.41  +        res.set_immutable()
     2.42  +        return res
     2.43  +

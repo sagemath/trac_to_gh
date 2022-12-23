@@ -1,6 +1,6 @@
 # Issue 8309: speedup prime range
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8309
 
 Original creator: robertwb
 

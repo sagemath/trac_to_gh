@@ -1,6 +1,6 @@
 # Issue 9349: Change binary .spkg placeholders into actual tar files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9349
 
 Original creator: robertwb
 

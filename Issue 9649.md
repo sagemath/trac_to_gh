@@ -1,6 +1,6 @@
 # Issue 9649: c_lib/include/interrupt.h: rename FOO_H
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9649
 
 Original creator: jdemeyer
 

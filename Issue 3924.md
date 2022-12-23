@@ -1,6 +1,6 @@
 # Issue 3924: making sage on os x build, when python is built as a framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3924
 
 Original creator: dphilp
 

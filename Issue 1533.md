@@ -1,6 +1,6 @@
 # Issue 1533: Finish converting java3d to an spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1533
 
 Original creator: robertwb
 

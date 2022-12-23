@@ -1,6 +1,6 @@
 # Issue 5941: transitive_close returns a graph with the same name even though it is a totally different graph!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5941
 
 Original creator: was
 

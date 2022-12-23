@@ -1,6 +1,6 @@
 # Issue 7004: [with patch] Refactor the graph layout code, and add interface with graphviz for acyclic layout
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7004
 
 Original creator: nthiery
 
@@ -177,7 +177,7 @@ AttributeError                            Traceback (most recent call last)
 
 /Users/rlmill/sage-4.3.2/local/lib/python2.6/site-packages/sage/graphs/digraph.pyc in layout_acyclic_dummy(self, heights, **options)
    1482             levels = [sorted(z) for z in levels]
-   1483             heights = dict([This is the Trac macro *i, levels[i* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#i, levels[i-macro) for i in range(len(levels))])
+   1483             heights = dict([[i, levels[i]] for i in range(len(levels))])
 -> 1484         return self.layout_graded(heights = heights, **options)
    1485 
    1486     def level_sets(self):
@@ -227,7 +227,7 @@ The following adjustment seems to improve the situation a bit, but I'm really no
 ```
 --- a/sage/graphs/generic_graph.py	Thu Feb 11 15:36:58 2010 +0100
 +++ b/sage/graphs/generic_graph.py	Thu Feb 11 07:39:46 2010 -0800
-`@``@` -9058,6 +9058,8 `@``@`
+@@ -9058,6 +9058,8 @@
              # We restore back the original height.
              for x in self.vertices():
                  newpos[x][dim-1] = pos[x][dim-1]

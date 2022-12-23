@@ -1,6 +1,6 @@
 # Issue 1170: Behaviour of the order function for infinite groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1170
 
 Original creator: ljpk
 

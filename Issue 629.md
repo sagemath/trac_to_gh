@@ -1,6 +1,6 @@
 # Issue 629: Fix DSage on PPC Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/629
 
 Original creator: mabshoff
 
@@ -150,7 +150,7 @@ Comment by mabshoff created at 2007-09-17 05:55:08
 sys.platform output:
 
 ```
-[mabshoff`@`localhost sage-2.8.4.1]$ ./local/bin/python
+[mabshoff@localhost sage-2.8.4.1]$ ./local/bin/python
 Python 2.5.1 (r251:54863, Sep  9 2007, 19:19:35)
 [GCC 4.1.2 20070502 (Red Hat 4.1.2-12)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.

@@ -1,6 +1,6 @@
 # Issue 2042: [with patch, needs review] change is_simplified to has_been_simplified in calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2042
 
 Original creator: AlexGhitza
 

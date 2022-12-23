@@ -1,6 +1,6 @@
 # Issue 8976: squarefree_part() fails on Python types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8976
 
 Original creator: leif
 

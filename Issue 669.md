@@ -1,6 +1,6 @@
 # Issue 669: Solaris 10: functions/constants.py doctests failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/669
 
 Original creator: mabshoff
 

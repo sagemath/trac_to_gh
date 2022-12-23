@@ -1,6 +1,6 @@
 # Issue 9025: PALP is building 32-bit on OpenSolaris - probably other platforms too.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9025
 
 Original creator: drkirkby
 
@@ -14,7 +14,7 @@ Attempting a 64-bit build of Sage on OpenSolaris I noticed several files are bui
 
 
 ```
-rkirkby`@`hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32
+rkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32
 local/bin/class.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
 local/bin/cws.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
 local/bin/nef.x:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped
@@ -47,7 +47,7 @@ Now the files build 64-bit:
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/*.x
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x
 local/bin/class.x:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
 local/bin/cws.x:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
 local/bin/nef.x:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped

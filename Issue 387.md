@@ -1,6 +1,6 @@
 # Issue 387: Inconsistencies with IntegerMod subtypes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/387
 
 Original creator: nbruin
 

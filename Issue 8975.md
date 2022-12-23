@@ -1,6 +1,6 @@
 # Issue 8975: Methods missing for reducible root systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8975
 
 Original creator: Bruce
 

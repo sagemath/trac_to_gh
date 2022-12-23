@@ -1,6 +1,6 @@
 # Issue 7781: Update prereq to version 0.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7781
 
 Original creator: drkirkby
 
@@ -156,9 +156,9 @@ Comment by mvngu created at 2010-01-05 04:18:08
 As of Sage 4.3, some files are not propertly under revision control:
 
 ```
-[mvngu`@`boxen base]$ pwd
+[mvngu@boxen base]$ pwd
 /scratch/mvngu/sage-src/sage-4.3-7781/spkg/base
-[mvngu`@`boxen base]$ hg st
+[mvngu@boxen base]$ hg st
 M sage-env
 M sage-spkg
 ! prereq-0.3-install

@@ -1,6 +1,6 @@
 # Issue 9371: Implement E.two_torsion_rank() over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9371
 
 Original creator: weigandt
 

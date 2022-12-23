@@ -1,6 +1,6 @@
 # Issue 4661: clean up module_list.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4661
 
 Original creator: craigcitro
 

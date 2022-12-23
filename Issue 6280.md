@@ -1,6 +1,6 @@
 # Issue 6280: the R r-2.6.1.p22.spkg spkg is full of OS X crap ._ files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6280
 
 Original creator: was
 

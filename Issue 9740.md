@@ -1,6 +1,6 @@
 # Issue 9740: matrix plot is upside down and should wrap more matplotlib options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9740
 
 Original creator: jason
 

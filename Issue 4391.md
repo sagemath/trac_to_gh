@@ -1,6 +1,6 @@
 # Issue 4391: [with patch, needs review] Sage 3.1.4: optional doctest failure in sage/schemes/elliptic_curves/ell_finite_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4391
 
 Original creator: mabshoff
 

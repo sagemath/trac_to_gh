@@ -1,6 +1,6 @@
 # Issue 2627: Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2627
 
 Original creator: ddrake
 

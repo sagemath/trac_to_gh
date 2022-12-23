@@ -1,6 +1,6 @@
 # Issue 4928: Create Sage 3.2.3 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4928
 
 Original creator: mabshoff
 

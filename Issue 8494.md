@@ -1,6 +1,6 @@
 # Issue 8494: docstring f or digits() should mention its inverse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8494
 
 Original creator: ddrake
 

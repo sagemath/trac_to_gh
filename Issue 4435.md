@@ -1,6 +1,6 @@
 # Issue 4435: %latex -- don't use \usepackage{fullpage}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4435
 
 Original creator: was
 
@@ -12,9 +12,9 @@ Assignee: cwitty
 ```
 
 
-On Mon, Nov 3, 2008 at 7:57 PM, William Stein <wstein`@`gmail.com> wrote:
+On Mon, Nov 3, 2008 at 7:57 PM, William Stein <wstein@gmail.com> wrote:
 >
-> On Mon, Nov 3, 2008 at 5:23 PM, Matthew J <matdjj`@`gmail.com> wrote:
+> On Mon, Nov 3, 2008 at 5:23 PM, Matthew J <matdjj@gmail.com> wrote:
 >>
 >> If anyone else comes across this problem and installing gs and
 >> imagemagick does not solve it, I also had to install tetex-extra.
@@ -155,7 +155,7 @@ It seems to not apply cleanly to 3.4.1.rc2.
 
 
 ```
-wstein`@`sage:~/build/sage-3.4.1.rc2-ref2$ ./sage
+wstein@sage:~/build/sage-3.4.1.rc2-ref2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 hg_ssage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4435/4435.patch')

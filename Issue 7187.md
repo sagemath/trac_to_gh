@@ -1,6 +1,6 @@
 # Issue 7187: update optional package Gnuplot.py to 1.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7187
 
 Original creator: awebb
 

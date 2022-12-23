@@ -1,6 +1,6 @@
 # Issue 945: preparser should ignore "    ....:" when it ignores "sage:"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/945
 
 Original creator: cwitty
 

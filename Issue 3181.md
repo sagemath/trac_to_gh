@@ -1,6 +1,6 @@
 # Issue 3181: add 64 bit OSX build support to iml
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3181
 
 Original creator: mabshoff
 

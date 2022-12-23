@@ -1,6 +1,6 @@
 # Issue 7166: HP-UX issue. numpy does not understand PA-RISC CPU
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7166
 
 Original creator: drkirkby
 

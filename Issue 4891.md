@@ -1,6 +1,6 @@
 # Issue 4891: make a command that installs all optional spkg's and reports the ones that don't work.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4891
 
 Original creator: was
 

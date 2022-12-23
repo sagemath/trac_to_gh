@@ -1,6 +1,6 @@
 # Issue 2414: there should be a conversion from X.fraction_field() to X (esp. for multivariate polynomials)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2414
 
 Original creator: cwitty
 

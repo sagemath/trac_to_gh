@@ -1,6 +1,6 @@
 # Issue 8407: word paths isometries + improve construction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8407
 
 Original creator: slabbe
 

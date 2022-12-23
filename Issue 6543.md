@@ -1,6 +1,6 @@
 # Issue 6543: improve doctests for tachyon
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6543
 
 Original creator: mhampton
 
@@ -48,7 +48,7 @@ Comment by mvngu created at 2009-08-12 07:20:02
 I got a hunk rejection on Sage 4.1.1.rc2:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6543/trac_6543_tachyon_doctests.4-1.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6543/trac_6543_tachyon_doctests.4-1.patch && hg qpush
 adding trac_6543_tachyon_doctests.4-1.patch to series file
 applying trac_6543_tachyon_doctests.4-1.patch
 patching file sage/plot/plot3d/tachyon.py
@@ -64,7 +64,7 @@ The relevant hunk is:
 ```
 --- tachyon.py                                                                  
 +++ tachyon.py                                                                  
-`@``@` -985,6 +1369,22 `@``@`
+@@ -985,6 +1369,22 @@
                                                                                 
          return False                                                           
                                                                                 

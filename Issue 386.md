@@ -1,6 +1,6 @@
 # Issue 386: Enhance "attach <file>" in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/386
 
 Original creator: nbruin
 

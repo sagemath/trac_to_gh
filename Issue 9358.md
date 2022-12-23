@@ -1,6 +1,6 @@
 # Issue 9358: zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9358
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 7545: Gaussian Integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7545
 
 Original creator: wuthrich
 

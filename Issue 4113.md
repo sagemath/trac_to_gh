@@ -1,6 +1,6 @@
 # Issue 4113: [with patch, needs review] Doctest failure in free_module.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4113
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 8398: doctest devel/sage/sage/graphs/generic_graph.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8398
 
 Original creator: drkirkby
 

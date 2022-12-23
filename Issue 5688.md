@@ -1,6 +1,6 @@
 # Issue 5688: update to sympy 0.6.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5688
 
 Original creator: certik
 

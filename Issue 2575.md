@@ -1,6 +1,6 @@
 # Issue 2575: GAP doesn't compile with CC='ccache gcc'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2575
 
 Original creator: schilly
 

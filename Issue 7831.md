@@ -1,6 +1,6 @@
 # Issue 7831: numpy-1.3.0.p2 fixes for FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7831
 
 Original creator: pjeremy
 

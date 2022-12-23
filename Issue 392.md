@@ -1,6 +1,6 @@
 # Issue 392: round() ignores the innate precision of a real number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/392
 
 Original creator: jonhanke
 

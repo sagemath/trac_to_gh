@@ -1,6 +1,6 @@
 # Issue 4671: [with patch; needs review] sage-3.2.1 startup time: it sucks again
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4671
 
 Original creator: was
 

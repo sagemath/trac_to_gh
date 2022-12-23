@@ -1,6 +1,6 @@
 # Issue 9600: Fix atlas/liblapack.so linkage on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9600
 
 Original creator: pjeremy
 
@@ -80,7 +80,7 @@ This is very likely not the right way to fix this. I don't have the time to try 
 
 
 ```
-[wjp`@`eno sage-4.5.2.rc0]$ ./sage -python
+[wjp@eno sage-4.5.2.rc0]$ ./sage -python
 Python 2.6.4 (r264:75706, Aug  1 2010, 12:24:29) 
 [GCC 4.5.0] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
@@ -89,10 +89,10 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ImportError: /home/wjp/eno/sage-4.5.2.rc0/local/lib/liblapack.so: undefined symbol: __powidf2
 >>> 
-[wjp`@`eno sage-4.5.2.rc0]$ cd local/lib
-[wjp`@`eno lib]$ gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive
-[wjp`@`eno lib]$ cd ../..
-[wjp`@`eno sage-4.5.2.rc0]$ ./sage -python                                        Python 2.6.4 (r264:75706, Aug  1 2010, 12:24:29) 
+[wjp@eno sage-4.5.2.rc0]$ cd local/lib
+[wjp@eno lib]$ gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive
+[wjp@eno lib]$ cd ../..
+[wjp@eno sage-4.5.2.rc0]$ ./sage -python                                        Python 2.6.4 (r264:75706, Aug  1 2010, 12:24:29) 
 [GCC 4.5.0] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import cvxopt.base
@@ -194,7 +194,7 @@ This is what I get.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.5.1/local/lib$ ./static2shared.sh
+drkirkby@hawk:~/sage-4.5.1/local/lib$ ./static2shared.sh
 
 Change to the directory $SAGE_LOCAL/lib before running this script
 it's only a test for now.
@@ -358,7 +358,7 @@ compile options: '-c'
 gcc: _configtest.c
 gcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest
 ATLAS version 3.8.3 built by peter on Mon 26 Jul 2010 17:37:42 EST:
-   UNAME    : FreeBSD server.vk2pj.dyndns.org 8.1-PRERELEASE FreeBSD 8.1-PRERELEASE #5: Thu Jul 15 05:43:01 EST 2010     root`@`server.vk2pj.dyndns.org:/var/obj/usr/src/sys/server  amd64
+   UNAME    : FreeBSD server.vk2pj.dyndns.org 8.1-PRERELEASE FreeBSD 8.1-PRERELEASE #5: Thu Jul 15 05:43:01 EST 2010     root@server.vk2pj.dyndns.org:/var/obj/usr/src/sys/server  amd64
    INSTFLG  : -1 0 -a 1
    ARCHDEFS : -DATL_OS_FreeBSD -DATL_ARCH_HAMMER -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_3DNow -DATL_USE64BITS -DATL_GAS_x8664
    F2CDEFS  : -DAdd_ -DF77_INTEGER=int -DStringSunStyle

@@ -1,6 +1,6 @@
 # Issue 789: Can't create a submodule over a QQ[x]-module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/789
 
 Original creator: justin
 

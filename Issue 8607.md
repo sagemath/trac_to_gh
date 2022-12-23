@@ -1,6 +1,6 @@
 # Issue 8607: add deprecation option to the plot option rename decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8607
 
 Original creator: jason
 

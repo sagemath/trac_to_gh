@@ -1,6 +1,6 @@
 # Issue 294: slowness in mpfr_root
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/294
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 6160: Segmentation Fault with Multivariate Polynomial Ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6160
 
 Original creator: stankewicz
 

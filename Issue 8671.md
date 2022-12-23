@@ -1,6 +1,6 @@
 # Issue 8671: FieldElement.quo_rem broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8671
 
 Original creator: burcin
 

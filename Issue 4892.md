@@ -1,6 +1,6 @@
 # Issue 4892: Changing precision of a Complex can convert it to a real
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4892
 
 Original creator: cremona
 
@@ -71,7 +71,7 @@ Comment by mabshoff created at 2009-01-25 02:13:22
 This patch causes the following doctest failure:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/modules/vector_double_dense.pyx
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/modules/vector_double_dense.pyx
 sage -t -long "devel/sage/sage/modules/vector_double_dense.pyx"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/modules/vector_double_dense.pyx", line 531:

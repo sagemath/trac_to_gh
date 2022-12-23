@@ -1,6 +1,6 @@
 # Issue 3918: notebook -- MAJOR BUG involving uploading file from URL
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3918
 
 Original creator: was
 

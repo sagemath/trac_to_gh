@@ -1,6 +1,6 @@
 # Issue 5316: some elements of NumberField_quadratic are NumberFieldElement_absolute --> segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5316
 
 Original creator: cwitty
 

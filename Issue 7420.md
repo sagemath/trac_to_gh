@@ -1,6 +1,6 @@
 # Issue 7420: Fix uncaught infinite loop in coercion discovery
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7420
 
 Original creator: nthiery
 

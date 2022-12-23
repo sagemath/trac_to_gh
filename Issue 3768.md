@@ -1,6 +1,6 @@
 # Issue 3768: move jsmath into its own spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3768
 
 Original creator: tabbott
 

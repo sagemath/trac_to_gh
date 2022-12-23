@@ -1,6 +1,6 @@
 # Issue 7073: scipy_sandbox 20071020.p4 has a GNUism, sending GNU flags to the Sun compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7073
 
 Original creator: drkirkby
 

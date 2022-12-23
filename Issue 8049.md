@@ -1,6 +1,6 @@
 # Issue 8049: libgfortran *must* get shipped with the Sage binaries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8049
 
 Original creator: was
 
@@ -27,7 +27,7 @@ Not good, since most Linux installs won't have libgfortran.  If I then reinstall
 
 cp /usr/lib/libgfortran.so.3.0.0 local/lib/libgfortran.so.3
 
-wstein`@`ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage
+wstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: import scipy.linalg
@@ -69,7 +69,7 @@ On Solaris, in 64-bit mode, it will be in a subdirectory too
 
 
 ```
-drkirkby`@`hawk:~$ find /usr/local -name libgfortran.so
+drkirkby@hawk:~$ find /usr/local -name libgfortran.so
 /usr/local/gcc-4.3.4/lib/amd64/libgfortran.so
 /usr/local/gcc-4.3.4/lib/libgfortran.so
 /usr/local/gcc-4.5-20100114/lib/amd64/libgfortran.so

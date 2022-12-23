@@ -1,6 +1,6 @@
 # Issue 758: Use NTL directly in Z/nZ polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/758
 
 Original creator: robertwb
 
@@ -67,7 +67,7 @@ Comment by mabshoff created at 2007-10-21 14:10:17
 It seems that this still could be applicable, even though it is somewhat faster (NTL rewrite, coercion?)
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/sage-2.8.8$ sage
+mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.8, Release Date: 2007-10-20                       |

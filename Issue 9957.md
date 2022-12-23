@@ -1,6 +1,6 @@
 # Issue 9957: Upgrade python to 2.7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9958
 
 Original creator: mhampton
 
@@ -1782,7 +1782,7 @@ make: *** [testlong] Error 128
 real	439m23.357s
 user	393m40.644s
 sys	31m7.485s
-leif`@`californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1$ 
+leif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1$ 
 ```
 
 (The tail of the log. More to come later.)
@@ -1935,7 +1935,7 @@ Comment by leif created at 2011-08-29 07:09:55
 Waaaaaah!
 
 ```
-leif`@`californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage-9958-11339$ ../../sage -hg import -v ~/Sage/patches/trac_11339_refcount_singular_polynomials.patch 
+leif@californication:~/Sage/sage-4.7.2.alpha2-gcc-4.5.1/devel/sage-9958-11339$ ../../sage -hg import -v ~/Sage/patches/trac_11339_refcount_singular_polynomials.patch 
 applying /home/leif/Sage/patches/trac_11339_refcount_singular_polynomials.patch
 patching file sage/rings/polynomial/multi_polynomial_libsingular.pxd
 patching file sage/rings/polynomial/multi_polynomial_libsingular.pyx
@@ -1967,7 +1967,7 @@ I'm sure the polyhedra.py patch was needed at one time but it now (?) appears th
 
 ```
 
-`@``@` -4946,7 +4946,7 `@``@`
+@@ -4946,7 +4946,7 @@
          sage: proj = ProjectionFuncStereographic([1.1,1.1,1.1])
          sage: ppoints = [proj(vector(x)) for x in cube]
          sage: ppoints[0]
@@ -2607,7 +2607,7 @@ Indeed, there've been *a lot of* changes inbetween:
 diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
 --- python-2.7.1/spkg-install	2011-05-20 05:41:41.000000000 +0200
 +++ python-2.6.4.p11/spkg-install	2011-07-05 10:46:40.000000000 +0200
-`@``@` -5,50 +5,127 `@``@`
+@@ -5,50 +5,127 @@
  
  CUR=`pwd`
  
@@ -2753,7 +2753,7 @@ diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
  # We are setting LDFLAGS and CPPFLAGS so that we pick up Sage's readline
  LDFLAGS="-L$SAGE_LOCAL/lib $LDFLAGS"
  export LDFLAGS
-`@``@` -62,6 +139,23 `@``@`
+@@ -62,6 +139,23 @@
      EXTRAFLAGS="--without-pymalloc"; export EXTRAFLAGS
  fi
  
@@ -2777,7 +2777,7 @@ diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
  cd src
  
  touch Include/*
-`@``@` -93,27 +187,30 `@``@`
+@@ -93,27 +187,30 @@
              --enable-unicode=ucs4
          fi
      else
@@ -2812,7 +2812,7 @@ diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
          exit 1
      fi
  }
-`@``@` -122,27 +219,28 `@``@`
+@@ -122,27 +219,28 @@
  # informative error message. This is helps in determining why the
  # configuration, compilation or installation failed. So put this before the
  # build() function.
@@ -2849,7 +2849,7 @@ diff -Nu python-2.7.1/spkg-install python-2.6.4.p11/spkg-install
  echo "Sleeping for three seconds before testing python"
  sleep 3
  
-`@``@` -150,12 +248,28 `@``@`
+@@ -150,12 +248,28 @@
  # All these modules are important and if any one 
  # fails to build, Sage will not work. 
  
@@ -3223,10 +3223,10 @@ Comment by fbissey created at 2011-11-26 20:51:59
 I may try something more subtle first. Makefile.pre.in has
 
 ```
-SVNVERSION=	`@`SVNVERSION`@`
-HGVERSION=	`@`HGVERSION`@`
-HGTAG=		`@`HGTAG`@`
-HGBRANCH=	`@`HGBRANCH`@`
+SVNVERSION=	@SVNVERSION@
+HGVERSION=	@HGVERSION@
+HGTAG=		@HGTAG@
+HGBRANCH=	@HGBRANCH@
 ```
 
 and
@@ -3237,7 +3237,7 @@ and
 	      -DHGVERSION="\"`LC_ALL=C $(HGVERSION)`\"" \
 	      -DHGTAG="\"`LC_ALL=C $(HGTAG)`\"" \
 	      -DHGBRANCH="\"`LC_ALL=C $(HGBRANCH)`\"" \
-	      -o $`@` $(srcdir)/Modules/getbuildinfo.c
+	      -o $@ $(srcdir)/Modules/getbuildinfo.c
 ```
 
 later so exporting HG* to something like /bin/true on non-windows OS would presumably solve the problem. But just patching to pass empty strings in the later would probably be safe everywhere.
@@ -4101,7 +4101,7 @@ OK Jeroen, that's a boring task for someone most of them are of the form:
 diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
 --- a/sage/misc/sage_unittest.py
 +++ b/sage/misc/sage_unittest.py
-`@``@` -201,12 +201,12 `@``@`
+@@ -201,12 +201,12 @@
              Failure in _test_b:
              Traceback (most recent call last):
                ...
@@ -4116,7 +4116,7 @@ diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
              ------------------------------------------------------------
              Failure in _test_pickling:
              Traceback (most recent call last):
-`@``@` -220,14 +220,14 `@``@`
+@@ -220,14 +220,14 @@
              running ._test_b() . . . fail
              Traceback (most recent call last):
                ...
@@ -4133,7 +4133,7 @@ diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
              ------------------------------------------------------------
              running ._test_not_implemented_methods() . . . pass
              running ._test_pickling() . . . fail
-`@``@` -249,7 +249,7 `@``@`
+@@ -249,7 +249,7 @@
                File ..., in _test_b
                  def _test_b(self, tester): tester.fail()
                ...
@@ -4142,7 +4142,7 @@ diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
  
          In conjonction with ``%pdb on``, this allows for the debbuger
          to jump directly to the first failure location.
-`@``@` -311,7 +311,7 `@``@`
+@@ -311,7 +311,7 @@
          sage: tester.assert_(1 == 0)
          Traceback (most recent call last):
          ...
@@ -4156,7 +4156,7 @@ diff --git a/sage/misc/sage_unittest.py b/sage/misc/sage_unittest.py
 and other numerical noise niceties cutting one digit and sometimes the rounding makes a lot of digits disappear (and it looks better actually), for example in plot/colors.py
 
 ```
-`@``@` -290,23 +290,23 `@``@`
+@@ -290,23 +290,23 @@
  
          sage: from sage.plot.colors import rgbcolor
          sage: rgbcolor(Color(0.25, 0.4, 0.9))

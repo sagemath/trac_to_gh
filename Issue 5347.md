@@ -1,6 +1,6 @@
 # Issue 5347: divides() may fail for 1 on the rhs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5347
 
 Original creator: malb
 

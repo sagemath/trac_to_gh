@@ -1,6 +1,6 @@
 # Issue 7934: Cannot import sage.matrix.all in isolation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7934
 
 Original creator: dagss
 

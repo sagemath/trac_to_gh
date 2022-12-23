@@ -1,6 +1,6 @@
 # Issue 655: Wrap LinBox's Sparse Matrix Echelonizer over Finite Fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/655
 
 Original creator: malb
 

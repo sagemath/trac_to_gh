@@ -1,6 +1,6 @@
 # Issue 9903: ATLAS fails to build on OpenSolaris if SAGE_FAT_BINARY=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9904
 
 Original creator: drkirkby
 

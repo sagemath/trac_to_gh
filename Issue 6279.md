@@ -1,6 +1,6 @@
 # Issue 6279: spkg-check fails for the R spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6279
 
 Original creator: was
 

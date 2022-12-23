@@ -1,6 +1,6 @@
 # Issue 1763: implement norms for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1763
 
 Original creator: AlexGhitza
 

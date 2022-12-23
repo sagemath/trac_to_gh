@@ -1,6 +1,6 @@
 # Issue 9042: Cython fails to build in OpenSolaris x64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9042
 
 Original creator: drkirkby
 
@@ -21,7 +21,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -46,7 +46,7 @@ It should be noted that python builds as a 64-bit application. There is no need 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/python
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/python
 local/bin/python:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
 ```
 
@@ -159,7 +159,7 @@ Thank you. That revised package solves the problem, though I can't see what you 
 Also, there is an unwanted file. 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status
+drkirkby@hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status
 ? spkg-install~
 ```
 
@@ -253,7 +253,7 @@ New package posted (same place). FYI
 
 ```
 # HG changeset patch
-# User Robert Bradshaw <robertwb`@`math.washington.edu>
+# User Robert Bradshaw <robertwb@math.washington.edu>
 # Date 1274775281 25200
 # Node ID 9be0b02f70c56491e84f45c2dd113f267c6c4ed6
 # Parent  241ae2ebd744e682efb62a11effceb1f7f0e2bb2
@@ -262,7 +262,7 @@ The -m64 flag is needed in OPT to build distutils extensions.
 diff -r 241ae2ebd744 -r 9be0b02f70c5 spkg-install
 --- a/spkg-install	Thu Mar 04 18:25:19 2010 -0800
 +++ b/spkg-install	Tue May 25 01:14:41 2010 -0700
-`@``@` -147,7 +147,7 `@``@`
+@@ -147,7 +147,7 @@
      elif [ `uname` = "SunOS" ]; then
          if [ "x$SAGE64" = xyes ]; then
              echo "64 bit Open Solaris build enabled"
@@ -279,7 +279,7 @@ and
 
 ```
 # HG changeset patch
-# User Robert Bradshaw <robertwb`@`math.washington.edu>
+# User Robert Bradshaw <robertwb@math.washington.edu>
 # Date 1274775421 25200
 # Node ID 81a7be63099e031ff2c0bbe4fb20f4f4f8988e0b
 # Parent  9be0b02f70c56491e84f45c2dd113f267c6c4ed6
@@ -288,7 +288,7 @@ Make sure distutils builtin modules work before trying hashlib.
 diff -r 9be0b02f70c5 -r 81a7be63099e spkg-install
 --- a/spkg-install	Tue May 25 01:14:41 2010 -0700
 +++ b/spkg-install	Tue May 25 01:17:01 2010 -0700
-`@``@` -208,6 +208,16 `@``@`
+@@ -208,6 +208,16 @@
  echo "Sleeping for three seconds before testing python"
  sleep 3
  

@@ -1,6 +1,6 @@
 # Issue 1581: 3d graphics do not show all objects by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1581
 
 Original creator: jason
 

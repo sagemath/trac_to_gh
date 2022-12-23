@@ -1,6 +1,6 @@
 # Issue 4706: fix race condition between doctest creation and running
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4706
 
 Original creator: mabshoff
 

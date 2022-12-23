@@ -1,6 +1,6 @@
 # Issue 537: leak in _ntl_gsetlength (from modular/dirichlet.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/537
 
 Original creator: mabshoff
 

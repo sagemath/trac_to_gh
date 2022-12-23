@@ -1,6 +1,6 @@
 # Issue 8803: Bring doctest for plot/axes.py to 100% or remove it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8803
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 4212: [with patch, needs review] Invalid read of size 8 in totallyreal.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4212
 
 Original creator: mabshoff
 
@@ -110,7 +110,7 @@ This is perplexing considering that we are having a degree six polynomial. *But*
 ```
 --- a/sage/rings/number_field/totallyreal_data.pyx	Sun Sep 21 20:50:32 2008 -0700
 +++ b/sage/rings/number_field/totallyreal_data.pyx	Sun Sep 28 00:41:17 2008 -0700
-`@``@` -326,6 +326,10 `@``@`
+@@ -326,6 +326,10 @@
          
          fcoeff = [ int(coeffs[i]) for i in range(7) ]
          rts = numpy.roots(fcoeff)

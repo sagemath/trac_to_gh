@@ -1,6 +1,6 @@
 # Issue 3110: [with patch, needs review] rare pbuild dependency bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3110
 
 Original creator: gfurnish
 

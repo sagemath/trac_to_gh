@@ -1,6 +1,6 @@
 # Issue 9623: interacts for high school level
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9623
 
 Original creator: schilly
 

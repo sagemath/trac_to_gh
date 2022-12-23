@@ -1,6 +1,6 @@
 # Issue 6854: Something weird in the implementation of InfinitePolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6854
 
 Original creator: ncohen
 

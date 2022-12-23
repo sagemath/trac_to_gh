@@ -1,6 +1,6 @@
 # Issue 3015: introspecting Cryto.DES using DES?? should throw an error message instead of displaying binary junk
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3015
 
 Original creator: yi
 

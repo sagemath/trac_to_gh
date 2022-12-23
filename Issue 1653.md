@@ -1,6 +1,6 @@
 # Issue 1653: Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1653
 
 Original creator: was
 

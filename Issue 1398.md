@@ -1,6 +1,6 @@
 # Issue 1398: Functions on integers which are not object-oriented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1398
 
 Original creator: ljpk
 

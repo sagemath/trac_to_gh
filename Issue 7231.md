@@ -1,6 +1,6 @@
 # Issue 7231: cryptanalysis of the Vigenere cipher
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7231
 
 Original creator: mvngu
 

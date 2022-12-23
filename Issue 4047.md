@@ -1,6 +1,6 @@
 # Issue 4047: [with patch, needs review] automorphism groups/canonical labels for hypergraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4047
 
 Original creator: rlm
 

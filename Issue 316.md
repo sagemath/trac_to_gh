@@ -1,6 +1,6 @@
 # Issue 316: bug in modular symbols projection (probably really in linear algebra)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/316
 
 Original creator: was
 

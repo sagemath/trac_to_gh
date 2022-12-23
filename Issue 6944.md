@@ -1,6 +1,6 @@
 # Issue 6944: typos in some installation scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6944
 
 Original creator: mvngu
 

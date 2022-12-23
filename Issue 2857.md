@@ -1,6 +1,6 @@
 # Issue 2857: numerical_approx for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2857
 
 Original creator: roed
 

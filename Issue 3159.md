@@ -1,6 +1,6 @@
 # Issue 3159: [with patch; needs review] Patch adding soname to ntl shared library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3159
 
 Original creator: tabbott
 

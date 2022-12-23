@@ -1,6 +1,6 @@
 # Issue 1665: [with bundle] zip related jmol files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1665
 
 Original creator: robertwb
 

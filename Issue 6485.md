@@ -1,6 +1,6 @@
 # Issue 6485: [with patch, needs review] broken links from website index to tutorial, constructions, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6485
 
 Original creator: mpatel
 

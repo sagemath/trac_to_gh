@@ -1,6 +1,6 @@
 # Issue 8423: fractals: add code to plot julia sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8423
 
 Original creator: was
 
@@ -85,7 +85,7 @@ def fern_orbit(n):
     EXAMPLE:
        sage: show(points(fern_orbit(10000),pointsize=1),axes=False)
     """
-    traj = [This is the Trac macro *0,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,0-macro)
+    traj = [[0,0]]
     for i in range(n):
         nt = fern(traj[-1][0],traj[-1][1])
         traj.append(nt)

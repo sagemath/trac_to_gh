@@ -1,6 +1,6 @@
 # Issue 7507: can't forget some assumptions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7507
 
 Original creator: burcin
 

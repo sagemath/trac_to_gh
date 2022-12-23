@@ -1,6 +1,6 @@
 # Issue 4000: Implement QQ['x'] via Flint ZZ['x'] + denominator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4000
 
 Original creator: malb
 
@@ -393,7 +393,7 @@ sage: f = P.random_element(2000)
 ...
 __celement_den_fit_limbs
 Error: division by zero!
-/scratch/malb/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 12195 Aborted                 sage-ipython "$`@`" -i
+/scratch/malb/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 12195 Aborted                 sage-ipython "$@" -i
 ```
 
 
@@ -912,7 +912,7 @@ sage: R.<x> = QQ[]
 sage: S.<a> = R.quotient(3*x^3 + 3/2*x -1/3)
 sage: 3 * a^3 + S.modulus()
 Error: unable to alloc/realloc memory
-/home/ghitza/sage-devel/local/bin/sage-sage: line 206: 13092 Aborted                 (core dumped) sage-ipython "$`@`" -i
+/home/ghitza/sage-devel/local/bin/sage-sage: line 206: 13092 Aborted                 (core dumped) sage-ipython "$@" -i
 ```
 
 
@@ -1020,7 +1020,7 @@ sage: sage: R.<x> = QQ[]
 sage: sage: f = 3/2*x - 1/3
 sage: sage: %time _ = f % f
 Error: unable to alloc/realloc memory
-/opt/sage-4.3.1-archlinux-32bit-i686-Linux/local/bin/sage-sage: line 206: 17772 Aborted                 (core dumped) sage-ipython "$`@`" -i
+/opt/sage-4.3.1-archlinux-32bit-i686-Linux/local/bin/sage-sage: line 206: 17772 Aborted                 (core dumped) sage-ipython "$@" -i
 ```
 
 
@@ -2134,7 +2134,7 @@ There are at least two ways to fix this, either in the Sage library:
 diff --git a/sage/libs/pari/gen.pyx b/sage/libs/pari/gen.pyx
 --- a/sage/libs/pari/gen.pyx
 +++ b/sage/libs/pari/gen.pyx
-`@``@` -7025,7 +7025,7 `@``@`
+@@ -7025,7 +7025,7 @@
          t0GEN(y)
          t1GEN(p)
          _sig_on
@@ -2151,7 +2151,7 @@ or "upstream" / in the PARI 2.4.3.svn-12577.* spkg (e.g. in #9876's `.p6`, too):
 diff --git a/src/src/modules/Hensel.c b/src/src/modules/Hensel.c
 --- a/src/src/modules/Hensel.c
 +++ b/src/src/modules/Hensel.c
-`@``@` -394,6 +394,7 `@``@`
+@@ -394,6 +394,7 @@
    if (N < 1) pari_err(talker, "not a positive exponent in polhensellift");
  
    l = lg(L); L = leafcopy(L);
@@ -2552,7 +2552,7 @@ Applying [attachment:trac4000_0.patch] to 4.6.alpha2, I get a failed "hunk":
 ```diff
 --- polynomial_ring.py
 +++ polynomial_ring.py
-`@``@` -1220,28 +1220,34 `@``@`
+@@ -1220,28 +1220,34 @@
              sage: type(R.gen())
              <class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_generic_dense_field'>
          """

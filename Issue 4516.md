@@ -1,6 +1,6 @@
 # Issue 4516: make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4516
 
 Original creator: was
 

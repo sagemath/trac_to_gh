@@ -1,6 +1,6 @@
 # Issue 3624: cookbook documentation chapter: coding theory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3624
 
 Original creator: wdj
 
@@ -189,8 +189,8 @@ l.14519 \end{gather}
                     
 ? 
 ! Emergency stop.
-\math`@`cr`@``@``@` ...`@` \`@`ne \add`@`amps \maxfields`@` \omit 
-                                                  \kern -\alignsep`@` \iftag`@` ...
+\math@cr@@@ ...@ \@ne \add@amps \maxfields@ \omit 
+                                                  \kern -\alignsep@ \iftag@ ...
 l.14519 \end{gather}
                     
 !  ==> Fatal error occurred, no output PDF file produced!

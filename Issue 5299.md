@@ -1,6 +1,6 @@
 # Issue 5299: add functions for Mercurial queues to the hg_sage interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5299
 
 Original creator: mhansen
 

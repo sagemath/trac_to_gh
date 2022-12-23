@@ -1,6 +1,6 @@
 # Issue 3698: [with patch; needs review] add multinomial_coefficients and binomial_coefficients to sage.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3698
 
 Original creator: was
 

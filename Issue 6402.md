@@ -1,6 +1,6 @@
 # Issue 6402: Fix bugs + improve documentation for overconvergent modular forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6402
 
 Original creator: davidloeffler
 

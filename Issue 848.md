@@ -1,6 +1,6 @@
 # Issue 848: Using strings for infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/848
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 8595: Fixed point of word morphism is broken on some tuple input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8595
 
 Original creator: slabbe
 

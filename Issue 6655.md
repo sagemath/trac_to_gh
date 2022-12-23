@@ -1,6 +1,6 @@
 # Issue 6655: Clean up and new feature in partition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6655
 
 Original creator: numata
 

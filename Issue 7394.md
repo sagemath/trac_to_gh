@@ -1,6 +1,6 @@
 # Issue 7394: sqrt(e) causes segfaults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7394
 
 Original creator: edrex
 
@@ -29,7 +29,7 @@ Pynac gets into an infinite recursion with these lines:
 
 
 ```
-#141 0x00007ff794d21de6 in GiNaC::ex::construct_from_basic (other=`@`0x7fff450abfe6) at ex.cpp:312
+#141 0x00007ff794d21de6 in GiNaC::ex::construct_from_basic (other=@0x7fff450abfe6) at ex.cpp:312
 #142 0x00007ff794dc7405 in GiNaC::mul::eval (this=0x57772f0, level=<value optimized out>) at ex.h:267
 ```
 

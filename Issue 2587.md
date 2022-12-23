@@ -1,6 +1,6 @@
 # Issue 2587: [with 2-line patch, needs review] subgroup of a permutation group is so slow it's silly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2587
 
 Original creator: rlm
 

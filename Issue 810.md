@@ -1,6 +1,6 @@
 # Issue 810: [with patch] gens_reduced for general ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/810
 
 Original creator: dmharvey
 

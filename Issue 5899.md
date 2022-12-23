@@ -1,6 +1,6 @@
 # Issue 5899: [with patch, needs review] Update Debian build support for Sage spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5899
 
 Original creator: tabbott
 

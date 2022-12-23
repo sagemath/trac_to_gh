@@ -1,6 +1,6 @@
 # Issue 7499: tutorial: add concluding section at end of guided tour
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7499
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 6873: *huge* bug in multivariate polynomial substitution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6873
 
 Original creator: was
 

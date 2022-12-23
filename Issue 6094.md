@@ -1,6 +1,6 @@
 # Issue 6094: Change all occurrences of "method" to "algorithm"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6094
 
 Original creator: rlm
 
@@ -187,7 +187,7 @@ Comment by was created at 2010-01-18 21:56:50
 I wonder if it could be done with a decorator?
 
 ```
-`@`deprecate_method
+@deprecate_method
 def f(..., method="foo"):
     ...
 
@@ -279,7 +279,7 @@ Third looks like something is pickling the two decorators and once they get move
 
 
 ```
-rob`@`wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
+rob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx
 sage -t  "devel/sage/sage/structure/sage_object.pyx"        
 **********************************************************************
 File "/sage/dev/devel/sage/sage/structure/sage_object.pyx", line 1001:

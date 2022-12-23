@@ -1,6 +1,6 @@
 # Issue 6594: doctest issue in "r.py" (follow-up to #6379)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6594
 
 Original creator: GeorgSWeber
 

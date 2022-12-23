@@ -1,6 +1,6 @@
 # Issue 2137: implement loading of pyx files when loading .sage files (probably relatively easy; in sage/misc/*)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2137
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  mvngu
 ```
 
 
-On Feb 9, 2008 7:58 PM, mb <bestvina`@`gmail.com> wrote:
+On Feb 9, 2008 7:58 PM, mb <bestvina@gmail.com> wrote:
 > 
 > Hello,
 > 
@@ -38,7 +38,7 @@ On Feb 9, 2008 7:58 PM, mb <bestvina`@`gmail.com> wrote:
 > 
 > Then I get:
 > 
-> mb`@`hvar:~$ sage main.sage
+> mb@hvar:~$ sage main.sage
 > Traceback (most recent call last):
 >   File "main.py", line 4, in <module>
 >     print f(Integer(3))
@@ -105,15 +105,15 @@ Comment by mvngu created at 2010-02-15 06:50:53
 Closing this ticket as fixed:
 
 ```
-[mvngu`@`sage sage-4.3.3.alpha0]$ cat test.pyx
+[mvngu@sage sage-4.3.3.alpha0]$ cat test.pyx
 def f(int n):
     return n
-[mvngu`@`sage sage-4.3.3.alpha0]$ cat main.sage
+[mvngu@sage sage-4.3.3.alpha0]$ cat main.sage
 load("test.pyx")
 print f(3)
-[mvngu`@`sage sage-4.3.3.alpha0]$ ./sage -version
+[mvngu@sage sage-4.3.3.alpha0]$ ./sage -version
 * Warning: this is a prerelease version, and it may be unstable.     *
-[mvngu`@`sage sage-4.3.3.alpha0]$ ./sage main.sage
+[mvngu@sage sage-4.3.3.alpha0]$ ./sage main.sage
 Compiling test.pyx...
 3
 ```

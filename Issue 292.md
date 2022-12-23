@@ -1,6 +1,6 @@
 # Issue 292: Problems with stacked polynomial rings and vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/292
 
 Original creator: ncalexan
 

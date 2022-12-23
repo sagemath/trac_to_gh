@@ -1,6 +1,6 @@
 # Issue 4063: properly escape the titles of worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4063
 
 Original creator: jason
 

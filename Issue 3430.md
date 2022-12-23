@@ -1,6 +1,6 @@
 # Issue 3430: 3.0.3.rc0: doctest failure in server/notebook/interact.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3430
 
 Original creator: mabshoff
 

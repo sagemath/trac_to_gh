@@ -1,6 +1,6 @@
 # Issue 883: 2.8.7-alpha0:doctest failure: sloane_functions.py assumes that ZZ(3.0) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/883
 
 Original creator: cwitty
 

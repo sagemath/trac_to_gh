@@ -1,6 +1,6 @@
 # Issue 8549: Add a cycle enumerator for Permutation Group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8549
 
 Original creator: nborie
 

@@ -1,6 +1,6 @@
 # Issue 4766: parallel? is lame and incomplete
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4766
 
 Original creator: was
 
@@ -46,11 +46,11 @@ Docstring:
             Create a parallel iterator decorator object.
     
             EXAMPLES:
-                sage: `@`parallel()
+                sage: @parallel()
                 ... def f(N): return N^2
                 sage: v = list(f([1,2,4])); v.sort(); v
                 [(((1,), {}), 1), (((2,), {}), 4), (((4,), {}), 16)]
-                sage: `@`parallel('reference')
+                sage: @parallel('reference')
                 ... def f(N): return N^2
 ```
 

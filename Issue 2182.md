@@ -1,6 +1,6 @@
 # Issue 2182: undefined symbol: gzopen64 when starting the notebook()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2182
 
 Original creator: mabshoff
 

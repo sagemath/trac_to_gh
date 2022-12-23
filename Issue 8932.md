@@ -1,6 +1,6 @@
 # Issue 8932: Shortest circuit in digraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8932
 
 Original creator: ncohen
 

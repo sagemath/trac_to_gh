@@ -1,6 +1,6 @@
 # Issue 9615: doctest failures with lcalc functions in 4.5.2.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9615
 
 Original creator: ddrake
 

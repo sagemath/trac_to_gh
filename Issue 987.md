@@ -1,6 +1,6 @@
 # Issue 987: integrate(1/sqrt(9+x^2)) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/987
 
 Original creator: mhansen
 

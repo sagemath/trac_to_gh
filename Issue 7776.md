@@ -1,6 +1,6 @@
 # Issue 7776: Implements sage.misc.misc.inject_variable(name, value)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7776
 
 Original creator: nthiery
 

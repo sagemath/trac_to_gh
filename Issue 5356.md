@@ -1,6 +1,6 @@
 # Issue 5356: 100r returns a Sage integer in the notebook (but commandline works fine)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5356
 
 Original creator: jason
 

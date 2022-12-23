@@ -1,6 +1,6 @@
 # Issue 3379: error in plotting 3d polytopes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3379
 
 Original creator: mhansen
 

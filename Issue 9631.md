@@ -1,6 +1,6 @@
 # Issue 9631: Remerge #9501 after resolving NFS and/or doctest problems with @fork
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9631
 
 Original creator: mpatel
 
@@ -174,17 +174,17 @@ Replying to [comment:8 was]:
 ```diff
 --- trac_9631-fork_decorator.4.patch.orig	2011-08-15 05:19:25.000000000 +0200
 +++ trac_9631-fork_decorator.4.patch	2011-08-15 06:10:11.000000000 +0200
-`@``@` -17,7 +17,7 `@``@`
+@@ -17,7 +17,7 @@
  +++ b/sage/parallel/decorate.py
- `@``@` -15,19 +15,17 `@``@`
+ @@ -15,19 +15,17 @@
       r"""
 -     Convert a to a pair (args, kwds) using some rules:
 +     Convert ``a`` to a pair ``(args, kwds)`` using some rules:
   
  -        * if already of that form, leave that way.
  -        * if a is a tuple make (a,{})
-`@``@` -44,7 +44,7 `@``@`
- `@``@` -53,9 +51,14 `@``@`
+@@ -44,7 +44,7 @@
+ @@ -53,9 +51,14 @@
   class Parallel:
       r"""
 -     Create parallel decorated function.
@@ -192,16 +192,16 @@ Replying to [comment:8 was]:
  -
       """
       def __init__(self, p_iter = 'fork', ncpus=None, **kwds):
-`@``@` -56,7 +56,7 `@``@`
+@@ -56,7 +56,7 @@
  +        """
           # The default p_iter is currently the reference implementation.
           # This may change.
 -         self.p_iter = None
 +         self.p_iter = None # ??? = p_iter, which defaults to 'fork', not the sequ. ref. impl.
- `@``@` -81,19 +84,16 `@``@`
+ @@ -81,19 +84,16 @@
   
       def __call__(self, f):
-`@``@` -67,8 +67,8 `@``@`
+@@ -67,8 +67,8 @@
  -        in possibly random order. Here x is replaced by its
  +        Create a function that wraps ``f`` and that when called with a
  +        list of inputs returns an iterator over pairs ``(x, f(x))`` in
@@ -212,7 +212,7 @@ Replying to [comment:8 was]:
   
           INPUT:
  -
-`@``@` -102,7 +102,7 `@``@`
+@@ -102,7 +102,7 @@
  +         The parallel subprocesses will not have access to data
  +         created in pexpect interfaces.  This behavior with respect to
  +         pexpect interfaces is very important to keep in mind when
@@ -221,7 +221,7 @@ Replying to [comment:8 was]:
  +         of this decorator.
  +
       INPUT:
-`@``@` -114,24 +114,24 `@``@`
+@@ -114,24 +114,24 @@
  +            - ``fork``            -- (default) use a new forked process for each input
  +            - ``multiprocessing`` -- use multiprocessing library
  +            - ``reference``       -- use a fake serial reference implementation
@@ -241,8 +241,8 @@ Replying to [comment:8 was]:
   
 -     We create a simple decoration for a simple function. The number
 +     We create a simple decoration for a simple function.  The number
- `@``@` -148,7 +166,6 `@``@`
-          sage: `@`parallel(2)
+ @@ -148,7 +166,6 @@
+          sage: @parallel(2)
           ... def f(n): return n*n
   
  -
@@ -250,17 +250,17 @@ Replying to [comment:8 was]:
 +     We create a decorator that uses three subprocesses, and times out
       individual processes after 10 seconds::
   
- `@``@` -174,3 +191,152 `@``@`
-`@``@` -144,7 +144,7 `@``@`
+ @@ -174,3 +191,152 @@
+@@ -144,7 +144,7 @@
  +
  +###################################################################
- +# The `@`fork decorator -- evaluate a function with no side effects
+ +# The @fork decorator -- evaluate a function with no side effects
 -+# in memory, so the only side effects are on disk.
 ++# in memory, so the only side effects (if any) are on disk.
  +#
  +# We have both a function and a class below, so that the decorator
  +# can be used with or without options:
-`@``@` -158,13 +158,13 `@``@`
+@@ -158,13 +158,13 @@
  +
  +class Fork:
  +    """
@@ -277,7 +277,7 @@ Replying to [comment:8 was]:
  +         - ``verbose`` -- (default: ``False``) whether to print
  +           anything about what the decorator does (e.g., killing
  +           subprocesses)
-`@``@` -182,9 +182,11 `@``@`
+@@ -182,9 +182,11 @@
  +    def __call__(self, f):
  +        """
  +        INPUT:
@@ -289,7 +289,7 @@ Replying to [comment:8 was]:
  +         - A decorated function.
  +
  +        EXAMPLES::
-`@``@` -206,30 +208,30 `@``@`
+@@ -206,30 +208,30 @@
  +    """
  +    Decorate a function so that when called it runs in a forked
  +    subprocess.  This means that it won't have any in-memory
@@ -328,8 +328,8 @@ Replying to [comment:8 was]:
 ++    changed::
  +    
  +        sage: a = 5
- +        sage: `@`fork
-`@``@` -242,7 +244,7 `@``@`
+ +        sage: @fork
+@@ -242,7 +244,7 @@
  +        sage: a
  +        5
  +
@@ -337,8 +337,8 @@ Replying to [comment:8 was]:
 ++    We use ``fork`` to make sure that the function terminates after one
  +    second, no matter what::
  +    
- +        sage: `@`fork(timeout=1, verbose=True)
-`@``@` -253,7 +255,7 `@``@`
+ +        sage: @fork(timeout=1, verbose=True)
+@@ -253,7 +255,7 @@
  +        Killing subprocess ... with input ((10000000,), {'m': 5}) which took too long
  +        'NO DATA (timed out)'
  +
@@ -347,7 +347,7 @@ Replying to [comment:8 was]:
  +    forked functions (they get their own new pexpect interfaces!)::
  +    
  +        sage: gp.eval('a = 5')
-`@``@` -305,14 +307,14 `@``@`
+@@ -305,14 +307,14 @@
  -            - ``timeout`` -- (float) time in seconds until a subprocess is automatically killed
  -            - ``verbose`` -- whether to print anything about what the iterator does (e.g., killing subprocesses)
  +            - ``ncpus`` -- the maximal number of simultaneous
@@ -365,9 +365,9 @@ Replying to [comment:8 was]:
   
           EXAMPLES::
   
-`@``@` -326,7 +328,7 `@``@`
+@@ -326,7 +328,7 @@
           """
- `@``@` -206,7 +213,8 `@``@`
+ @@ -206,7 +213,8 @@
   
 -             # The expect interfaces (and objects defined in them) are
 +             # The pexpect interfaces (and objects defined in them) are

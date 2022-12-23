@@ -1,6 +1,6 @@
 # Issue 8320: Make HTML doc headers and footers more compact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8320
 
 Original creator: mpatel
 

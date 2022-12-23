@@ -1,6 +1,6 @@
 # Issue 2757: [with patch; needs review] Debianize scipy_sandbox package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2757
 
 Original creator: tabbott
 

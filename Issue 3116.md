@@ -1,6 +1,6 @@
 # Issue 3116: 1x1 symbolic matrices don't work right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3116
 
 Original creator: cwitty
 

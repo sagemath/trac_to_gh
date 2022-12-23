@@ -1,6 +1,6 @@
 # Issue 2952: LaurentPolynomialRing coercion error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2952
 
 Original creator: mhansen
 

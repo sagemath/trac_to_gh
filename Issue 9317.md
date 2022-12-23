@@ -1,6 +1,6 @@
 # Issue 9317: prime_to_S_part, is_S_unit, is_S_integral
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9317
 
 Original creator: aly.deines
 

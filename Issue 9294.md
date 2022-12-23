@@ -1,6 +1,6 @@
 # Issue 9294: wrong usage of except
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9294
 
 Original creator: hemmecke
 

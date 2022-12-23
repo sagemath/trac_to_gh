@@ -1,6 +1,6 @@
 # Issue 1913: poles of gamma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1913
 
 Original creator: burcin
 

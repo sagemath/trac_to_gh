@@ -1,6 +1,6 @@
 # Issue 7001: Sage's GAP interface not properly leaving GAP's break loop
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7001
 
 Original creator: SimonKing
 

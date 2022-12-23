@@ -1,6 +1,6 @@
 # Issue 5773: notebook -- uploading a corrupted worksheet (sws file) results in blank screen (no useful error message)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5773
 
 Original creator: was
 
@@ -41,7 +41,7 @@ This is already fixed. Try:
 
 ```
 
-$ echo '!`@`#rsfdsagarbage' > foo.sws
+$ echo '!@#rsfdsagarbage' > foo.sws
 
 ```
 

@@ -1,6 +1,6 @@
 # Issue 9288: Implement complex reflection groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9288
 
 Original creator: nthiery
 

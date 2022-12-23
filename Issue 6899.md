@@ -1,6 +1,6 @@
 # Issue 6899: weird bug taking float of real part of a symbolic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6899
 
 Original creator: was
 

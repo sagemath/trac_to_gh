@@ -1,6 +1,6 @@
 # Issue 7566: cryptography: verbose keyword for brute_force() method in shift/affine cryptosystems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7566
 
 Original creator: mvngu
 

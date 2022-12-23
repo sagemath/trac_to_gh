@@ -1,6 +1,6 @@
 # Issue 8511: docstring fix for symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8511
 
 Original creator: jhpalmieri
 
@@ -75,7 +75,7 @@ The patch [trac_8511-unexpected-indentation.patch](http://trac.sagemath.org/sage
 diff -r 29c870e0a9e4 -r 8851bfe046d1 sage/symbolic/expression.pyx
 --- a/sage/symbolic/expression.pyx	Mon Mar 08 20:51:26 2010 -0800
 +++ b/sage/symbolic/expression.pyx	Fri Mar 12 15:12:47 2010 -0800
-`@``@` -3151,7 +3151,8 `@``@`
+@@ -3151,7 +3151,8 @@
              sage: t.subs({a:b, b:c})
              (x + y)^3 + b^2 + c^2
  

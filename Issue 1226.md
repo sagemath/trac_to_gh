@@ -1,6 +1,6 @@
 # Issue 1226: cremona/homspace doctest prints "transposing ..."
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1226
 
 Original creator: mabshoff
 

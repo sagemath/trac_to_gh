@@ -1,6 +1,6 @@
 # Issue 2444: [with patch, needs review] add UTF-8 support to sage -t
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2444
 
 Original creator: malb
 

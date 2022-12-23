@@ -1,6 +1,6 @@
 # Issue 892: sage -t doesn't test .pxi files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/892
 
 Original creator: mhansen
 

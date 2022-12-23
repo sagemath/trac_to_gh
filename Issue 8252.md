@@ -1,6 +1,6 @@
 # Issue 8252: names parameter in optimized_representation is tweaked,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8252
 
 Original creator: syazdani
 

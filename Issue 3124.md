@@ -1,6 +1,6 @@
 # Issue 3124: bug in solve_mod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3124
 
 Original creator: was
 

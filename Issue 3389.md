@@ -1,6 +1,6 @@
 # Issue 3389: CartesianProduct infinite sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3389
 
 Original creator: PolyBoRi
 

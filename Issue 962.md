@@ -1,6 +1,6 @@
 # Issue 962: automatic precision extension for long decimal literals does very strange things
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/962
 
 Original creator: cwitty
 

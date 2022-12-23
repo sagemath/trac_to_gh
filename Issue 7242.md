@@ -1,6 +1,6 @@
 # Issue 7242: Convert sage to use the new standard libary multiprocessing module rather than processing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7242
 
 Original creator: tabbott
 

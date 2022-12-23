@@ -1,6 +1,6 @@
 # Issue 5728: limit option is misdocumented in n=100; n.factor?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5728
 
 Original creator: was
 

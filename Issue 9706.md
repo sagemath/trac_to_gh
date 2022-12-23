@@ -1,6 +1,6 @@
 # Issue 9706: New Version of orthogonal Polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9706
 
 Original creator: maldun
 
@@ -944,18 +944,18 @@ Comment by jdemeyer created at 2013-12-03 17:18:56
 I would also like to point out that PARI is faster at evaluating Chebyshev polynomials:
 
 ```
-sage: timeit(*chebyshev_T(10^5,2)*)
+sage: timeit('''chebyshev_T(10^5,2)''')
 5 loops, best of 3: 270 ms per loop
-sage: timeit(*pari('polchebyshev (10^5,1,2)')*)
+sage: timeit('''pari('polchebyshev (10^5,1,2)')''')
 625 loops, best of 3: 447 µs per loop
 ```
 
 
 
 ```
-sage: timeit(*chebyshev_T(10^5, Mod(2,1009))*)
+sage: timeit('''chebyshev_T(10^5, Mod(2,1009))''')
 5 loops, best of 3: 208 ms per loop
-sage: timeit(*pari('polchebyshev(10^5, 1, Mod(2,1009))')*)
+sage: timeit('''pari('polchebyshev(10^5, 1, Mod(2,1009))')''')
 625 loops, best of 3: 11.5 µs per loop
 ```
 
@@ -985,7 +985,7 @@ The "Clenshaw method" uses a very naive method of evaluating the recursion which
 Even this is totally feasible:
 
 ```
-sage: timeit(*pari('polchebyshev(10^10, 1, Mod(2,1009))')*)
+sage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')
 625 loops, best of 3: 16.3 µs per loop
 ```
 
@@ -1789,14 +1789,14 @@ NoConvergence                             Traceback (most recent call last)
     445         return x * 0
 --> 446     return ctx.hyp2f1(-n,n,(1,2),(1-x)/2, **kwargs)
     447 
-    448 `@`defun_wrapped
+    448 @defun_wrapped
 
 /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyp2f1(ctx, a, b, c, z, **kwargs)
-    248 `@`defun
+    248 @defun
     249 def hyp2f1(ctx,a,b,c,z,**kwargs):
 --> 250     return ctx.hyper([a,b],[c],z,**kwargs)
     251 
-    252 `@`defun
+    252 @defun
 
 /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyper(ctx, a_s, b_s, z, **kwargs)
     223         elif q == 0: return ctx._hyp1f0(a_s[0][0], z)

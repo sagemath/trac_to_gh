@@ -1,6 +1,6 @@
 # Issue 3889: extend parameter for number field sqrt method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3889
 
 Original creator: jbmohler
 
@@ -405,7 +405,7 @@ diff --git a/src/sage/matrix/matrix2.pyx b/src/sage/matrix/matrix2.pyx
 index 5e190ea..7ce4196 100644
 --- a/src/sage/matrix/matrix2.pyx
 +++ b/src/sage/matrix/matrix2.pyx
-`@``@` -10136,7 +10136,7 `@``@` cdef class Matrix(Matrix1):
+@@ -10136,7 +10136,7 @@ cdef class Matrix(Matrix1):
              hip = v.hermitian_inner_product(v)
              if hip != 0:
                  try:

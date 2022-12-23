@@ -1,6 +1,6 @@
 # Issue 7567: Fix typo in sage -advanced help text
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7567
 
 Original creator: wcauchois
 

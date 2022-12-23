@@ -1,6 +1,6 @@
 # Issue 3172: add 64 bit OSX build support to prereq and bzip2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3172
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7729: Iwahori Hecke algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7729
 
 Original creator: bump
 

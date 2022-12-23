@@ -1,6 +1,6 @@
 # Issue 3107: Triangulation doesn't automatically happen for x3d output of 3d objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3107
 
 Original creator: robertwb
 

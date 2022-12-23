@@ -1,6 +1,6 @@
 # Issue 3076: spkg-debian in extcode spkg not executable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3076
 
 Original creator: tabbott
 

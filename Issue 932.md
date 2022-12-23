@@ -1,6 +1,6 @@
 # Issue 932: upgrade lcalc in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/932
 
 Original creator: was
 

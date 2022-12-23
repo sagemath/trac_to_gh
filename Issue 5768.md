@@ -1,6 +1,6 @@
 # Issue 5768: improve coverage of generators.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5768
 
 Original creator: was
 
@@ -33,7 +33,7 @@ This file was evidently 100% part of this changeset:
 ```
 changeset:   10231:8dea97c4b4f0
 parent:      10067:717c10d9cd4a
-user:        David Roe <roed`@`math.harvard.edu>
+user:        David Roe <roed@math.harvard.edu>
 date:        Tue Jul 29 01:24:30 2008 -0700
 summary:     generators object
 ```

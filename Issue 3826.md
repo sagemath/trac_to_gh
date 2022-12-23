@@ -1,6 +1,6 @@
 # Issue 3826: Empty string in interact prints \x00
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3826
 
 Original creator: slabbe
 
@@ -18,7 +18,7 @@ Write
 
 
 ```
-`@`interact
+@interact
 def f(a=input_box(default='aaa',type=str,label='Your name :')):
     print a
     print [1,2,3,a]

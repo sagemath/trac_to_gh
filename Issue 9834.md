@@ -1,6 +1,6 @@
 # Issue 9834: Make desolve more informative when solving BVP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9835
 
 Original creator: robert.marik
 
@@ -88,7 +88,7 @@ Thanks, I will update the patch as time permits.
 The equation from sage-support still fails, since Maxima fails to solve it.  Anyway. Sage and Maxima now know that n is integer.
 
 ```
-marik`@`um-bc107:/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux$ ./sage --maxima
+marik@um-bc107:/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux$ ./sage --maxima
 ;;; Loading #P"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/defsys tem.fas"
 ;;; Loading #P"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/cmp.fa s"
 ;;; Loading #P"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/sysfun .lsp"

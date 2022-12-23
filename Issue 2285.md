@@ -1,6 +1,6 @@
 # Issue 2285: add "--trace-children=yes" back for memcheck in sage-doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2285
 
 Original creator: mabshoff
 

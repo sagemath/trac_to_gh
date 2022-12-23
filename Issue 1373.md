@@ -1,6 +1,6 @@
 # Issue 1373: 2.8.15.alpha2: quotient_module.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1373
 
 Original creator: cwitty
 

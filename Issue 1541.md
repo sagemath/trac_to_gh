@@ -1,6 +1,6 @@
 # Issue 1541: [with patch] improve PolyBoRi integration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1541
 
 Original creator: malb
 

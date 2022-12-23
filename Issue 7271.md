@@ -1,6 +1,6 @@
 # Issue 7271: some small polybori interface fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7271
 
 Original creator: malb
 

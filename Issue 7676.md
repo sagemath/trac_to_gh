@@ -1,6 +1,6 @@
 # Issue 7676: shortest_path_all pairs in Cython through Floyd Warshall
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7676
 
 Original creator: ncohen
 

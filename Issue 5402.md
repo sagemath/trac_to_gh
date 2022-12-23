@@ -1,6 +1,6 @@
 # Issue 5402: Sparse determinants are slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5402
 
 Original creator: jbandlow
 

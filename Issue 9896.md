@@ -1,6 +1,6 @@
 # Issue 9896: pari-2.4.3.svn-12577 fails to build on itanium with gcc 4.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9897
 
 Original creator: jhpalmieri
 

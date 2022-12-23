@@ -1,6 +1,6 @@
 # Issue 1579: memleak in GSL's ComplexDoubleVector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1579
 
 Original creator: mabshoff
 

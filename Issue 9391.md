@@ -1,6 +1,6 @@
 # Issue 9391: kolyvagin_cohomology_class() method differs from doc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9391
 
 Original creator: justin
 

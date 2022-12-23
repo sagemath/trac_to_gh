@@ -1,6 +1,6 @@
 # Issue 3519: Update clisp to 2.45 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3519
 
 Original creator: mabshoff
 

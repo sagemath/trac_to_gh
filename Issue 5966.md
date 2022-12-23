@@ -1,6 +1,6 @@
 # Issue 5966: sage/sets/primes.py: change doctest so that we check for Primes being != to x^2+x
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5966
 
 Original creator: mabshoff
 

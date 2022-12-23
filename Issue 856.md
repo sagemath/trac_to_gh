@@ -1,6 +1,6 @@
 # Issue 856: strange behaviour when converting a numpy matrix to a sage one
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/856
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 4468: assertion error when (some) bad color map given
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4468
 
 Original creator: slabbe
 

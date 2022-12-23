@@ -1,6 +1,6 @@
 # Issue 1475: notebook -- lprint() -- make an option so lprint is done automatically
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1475
 
 Original creator: was
 

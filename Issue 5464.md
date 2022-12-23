@@ -1,6 +1,6 @@
 # Issue 5464: installing Sage should build the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5464
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 3318: improve 64 bit osx python 2.5.2 build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3318
 
 Original creator: mabshoff
 

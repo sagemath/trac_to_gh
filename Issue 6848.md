@@ -1,6 +1,6 @@
 # Issue 6848: [with patch, needs review] "Definition:" messed up in notebook and command line in cython code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6848
 
 Original creator: jhpalmieri
 

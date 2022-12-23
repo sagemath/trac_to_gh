@@ -1,6 +1,6 @@
 # Issue 6920: irreducible components function is stupid in case of projective space
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6920
 
 Original creator: was
 

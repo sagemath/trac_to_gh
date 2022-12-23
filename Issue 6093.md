@@ -1,6 +1,6 @@
 # Issue 6093: [with patch, needs review] module to read ext_rep format of combinatorial designs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6093
 
 Original creator: carlohamalainen
 
@@ -44,7 +44,7 @@ Also, I get the following test failure:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.0.rc1$ ./sage -t  "devel/sage/sage/combinat/designs/ext_rep.py"                                                                                       
+wdj@hera:~/sagefiles/sage-4.0.rc1$ ./sage -t  "devel/sage/sage/combinat/designs/ext_rep.py"                                                                                       
 sage -t  "devel/sage/sage/combinat/designs/ext_rep.py"                                   
 **********************************************************************                   
 File "/home/wdj/sagefiles/sage-4.0.rc1/devel/sage/sage/combinat/designs/ext_rep.py", line 464:                                                                                    

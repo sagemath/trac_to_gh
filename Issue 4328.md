@@ -1,6 +1,6 @@
 # Issue 4328: bug in roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4328
 
 Original creator: zimmerma
 
@@ -40,7 +40,7 @@ Comment by mabshoff created at 2008-10-20 12:06:45
 It works with my current 3.2.alpha0 merge tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.4, Release Date: 2008-10-16                       |

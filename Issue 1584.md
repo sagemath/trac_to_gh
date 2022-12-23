@@ -1,6 +1,6 @@
 # Issue 1584: calculus.py doctest failure on Fermat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1584
 
 Original creator: rlm
 

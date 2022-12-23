@@ -1,6 +1,6 @@
 # Issue 7281: numerical noise issue on fedora32 for 4.2.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7281
 
 Original creator: mhansen
 

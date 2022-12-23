@@ -1,6 +1,6 @@
 # Issue 6722: spell-check all modules under sage/misc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6722
 
 Original creator: mvngu
 

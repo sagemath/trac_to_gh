@@ -1,6 +1,6 @@
 # Issue 5219: Build ATLAS on dist mode with SSE2 only
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5219
 
 Original creator: mabshoff
 

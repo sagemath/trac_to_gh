@@ -1,6 +1,6 @@
 # Issue 9140: construct the normalized laplacian matrix for a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9140
 
 Original creator: jason
 

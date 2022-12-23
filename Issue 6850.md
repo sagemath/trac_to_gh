@@ -1,6 +1,6 @@
 # Issue 6850: follow-up to #6531: really add ring.pyx to reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6850
 
 Original creator: mvngu
 

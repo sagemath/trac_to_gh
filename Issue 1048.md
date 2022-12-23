@@ -1,6 +1,6 @@
 # Issue 1048: graphs: Create filtered views of graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1048
 
 Original creator: jason
 

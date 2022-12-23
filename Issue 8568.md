@@ -1,6 +1,6 @@
 # Issue 8568: can not simplify derivative of erf
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8568
 
 Original creator: gmcmanus
 

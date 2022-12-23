@@ -1,6 +1,6 @@
 # Issue 5391: [with patch, needs review]  Update sage-combinat script to use combinat.sagemath.org/patches/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5391
 
 Original creator: mhansen
 

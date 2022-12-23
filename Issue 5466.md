@@ -1,6 +1,6 @@
 # Issue 5466: [with patch, needs review] Make symbolic variables unpickle uniquely
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5466
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 8015: Unify code for cusps over Q and number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8015
 
 Original creator: craigcitro
 

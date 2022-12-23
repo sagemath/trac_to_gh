@@ -1,6 +1,6 @@
 # Issue 4378: 3.2.alpha1: -sdist does not copy html from template directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4378
 
 Original creator: mabshoff
 

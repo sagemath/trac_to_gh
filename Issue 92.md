@@ -1,6 +1,6 @@
 # Issue 92: Complex embeddings for non-cyclotomic number fields?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/92
 
 Original creator: was
 

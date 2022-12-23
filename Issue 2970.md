@@ -1,6 +1,6 @@
 # Issue 2970: Permissions on spkg-debian scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2970
 
 Original creator: tabbott
 

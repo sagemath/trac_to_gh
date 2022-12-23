@@ -1,6 +1,6 @@
 # Issue 7771: fix R restart in interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7771
 
 Original creator: kcrisman
 
@@ -25,7 +25,7 @@ Comment by mvngu created at 2010-02-03 06:29:27
 As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:
 
 ```
-[mvngu`@`mod sage-4.3.2.alpha1]$ ./sage
+[mvngu@mod sage-4.3.2.alpha1]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************
@@ -226,7 +226,7 @@ I have attached a reviewer patch that does only that. With both patches, I now g
 
 
 ```sh
-[mvngu`@`sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py 
+[mvngu@sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py 
 sage -t -long -optional "devel/sage-main/sage/interfaces/r.py"
 
 <output-trancated>

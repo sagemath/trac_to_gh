@@ -1,6 +1,6 @@
 # Issue 7049: [with SPKG, needs review] GLPK, just minor changes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7049
 
 Original creator: ncohen
 

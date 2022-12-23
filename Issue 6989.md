@@ -1,6 +1,6 @@
 # Issue 6989: line3d can modify its argument type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6989
 
 Original creator: mhampton
 

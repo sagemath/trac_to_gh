@@ -1,6 +1,6 @@
 # Issue 5923: Handling of magma and pari input in ModularForms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5923
 
 Original creator: ljpk
 

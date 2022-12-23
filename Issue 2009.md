@@ -1,6 +1,6 @@
 # Issue 2009: crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2009
 
 Original creator: was
 

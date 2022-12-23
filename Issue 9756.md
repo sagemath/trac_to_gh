@@ -1,6 +1,6 @@
 # Issue 9756: Document SAGE_TUNE_pari in Sage installation guide.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9756
 
 Original creator: drkirkby
 

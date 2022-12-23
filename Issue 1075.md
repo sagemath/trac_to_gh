@@ -1,6 +1,6 @@
 # Issue 1075: [with patch] sync'ing hashes for fraction fields and rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1075
 
 Original creator: jbmohler
 

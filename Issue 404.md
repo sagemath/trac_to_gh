@@ -1,6 +1,6 @@
 # Issue 404: Can't create PSL(n,q) for q a prime power
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/404
 
 Original creator: justin
 

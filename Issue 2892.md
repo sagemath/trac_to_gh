@@ -1,6 +1,6 @@
 # Issue 2892: notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2892
 
 Original creator: was
 

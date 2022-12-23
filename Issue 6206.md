@@ -1,6 +1,6 @@
 # Issue 6206: move algebraic_closure method from RLF to LazyField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6206
 
 Original creator: ncalexan
 

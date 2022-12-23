@@ -1,6 +1,6 @@
 # Issue 2709: add a prime_above() function to NumberField_generic for finding prime ideals above other ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2709
 
 Original creator: ncalexan
 

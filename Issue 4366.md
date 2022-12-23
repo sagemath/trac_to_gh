@@ -1,6 +1,6 @@
 # Issue 4366: sys.path is searched ("stat"ed) for *.pyx-files insanely often
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4366
 
 Original creator: GeorgSWeber
 
@@ -209,7 +209,7 @@ Comment by mabshoff created at 2008-10-28 12:48:14
 With RobertWB's patch applied I am seeing one easy to fix doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage -t -long devel/sage/sage/structure/coerce.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage -t -long devel/sage/sage/structure/coerce.pyx
 sage -t -long devel/sage/sage/structure/coerce.pyx          
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/coerce.py", line 331:

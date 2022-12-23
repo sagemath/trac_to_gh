@@ -1,6 +1,6 @@
 # Issue 3816: [with patch; needs review] notebook -- SyntaxWarning in twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3816
 
 Original creator: was
 

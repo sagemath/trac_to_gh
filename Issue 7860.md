@@ -1,6 +1,6 @@
 # Issue 7860: sage_fortran builds 32-bit exuctabes when SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7860
 
 Original creator: drkirkby
 
@@ -27,11 +27,11 @@ sage_fortran -fPIC  -c sgesv.f -o sgesv.o
 sage_fortran -fPIC  -c sgesvd.f -o sgesvd.o
 ^Cmake: *** [all] Interrupt
 
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ find . -name sgerfs.o
+drkirkby@hawk:~/sage-4.3.1.alpha1$ find . -name sgerfs.o
 ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ file ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o
+drkirkby@hawk:~/sage-4.3.1.alpha1$ file ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o
 ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o:	ELF 32-bit LSB relocatable 80386 Version 1
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ echo $SAGE64
+drkirkby@hawk:~/sage-4.3.1.alpha1$ echo $SAGE64
 yes
 ```
 
@@ -47,7 +47,7 @@ Not so strange if you have:
 
 ```/bin/sh
 
-/usr/bin/gfortran -fPIC $`@`
+/usr/bin/gfortran -fPIC $@
 
 ```
 

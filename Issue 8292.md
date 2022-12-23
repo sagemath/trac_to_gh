@@ -1,6 +1,6 @@
 # Issue 8292: improvements to eisenstein_series_qexp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8292
 
 Original creator: AlexGhitza
 

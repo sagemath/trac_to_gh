@@ -1,6 +1,6 @@
 # Issue 4340: Speed up Victor Miller basis code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4340
 
 Original creator: craigcitro
 

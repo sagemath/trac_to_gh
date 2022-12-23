@@ -1,6 +1,6 @@
 # Issue 6769: Documentation for vector() does not match behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6769
 
 Original creator: rbeezer
 

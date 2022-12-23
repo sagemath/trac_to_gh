@@ -1,6 +1,6 @@
 # Issue 1975: elliptic curve method -- one should trivially be able to implement a toy version, but can't anymore, which sucks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1975
 
 Original creator: was
 

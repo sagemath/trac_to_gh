@@ -1,6 +1,6 @@
 # Issue 5333: pynac.spkg: Delete old pynac libray during spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5333
 
 Original creator: mabshoff
 

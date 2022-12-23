@@ -1,6 +1,6 @@
 # Issue 8556: simple server API broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8556
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8916: documentation error in cardinality for Enumerated Sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8916
 
 Original creator: imarquez
 

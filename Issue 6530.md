@@ -1,6 +1,6 @@
 # Issue 6530: methods not shown in documentation search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6530
 
 Original creator: gpannwitz
 

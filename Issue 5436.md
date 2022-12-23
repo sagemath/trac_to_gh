@@ -1,6 +1,6 @@
 # Issue 5436: more miscellaneous typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5436
 
 Original creator: mvngu
 

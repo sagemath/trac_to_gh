@@ -1,6 +1,6 @@
 # Issue 4822: Tweak to the error message for EllipticCurve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4822
 
 Original creator: ljpk
 

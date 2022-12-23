@@ -1,6 +1,6 @@
 # Issue 1498: notebook -- bug in keeping track of date of last edit of worksheets maybe
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1498
 
 Original creator: was
 

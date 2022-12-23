@@ -1,6 +1,6 @@
 # Issue 425: Squash warning cause by using "-Wstrict-prototypes" in cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/425
 
 Original creator: mabshoff
 

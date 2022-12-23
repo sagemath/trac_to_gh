@@ -1,6 +1,6 @@
 # Issue 7572: Memleak in GLPK interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7572
 
 Original creator: malb
 

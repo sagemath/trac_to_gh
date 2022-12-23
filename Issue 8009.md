@@ -1,6 +1,6 @@
 # Issue 8009: plot_vector_field does not take a color option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8009
 
 Original creator: jason
 

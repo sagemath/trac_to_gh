@@ -1,6 +1,6 @@
 # Issue 1980: flint fails to build with -fstack-protector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1980
 
 Original creator: malb
 

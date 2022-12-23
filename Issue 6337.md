@@ -1,6 +1,6 @@
 # Issue 6337: bug in jorder form over symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6337
 
 Original creator: was
 

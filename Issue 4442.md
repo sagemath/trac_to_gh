@@ -1,6 +1,6 @@
 # Issue 4442: [with patch, needs review] fix documetation build issue with congroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4442
 
 Original creator: GeorgSWeber
 

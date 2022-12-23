@@ -1,6 +1,6 @@
 # Issue 4862: two trivial-to-fix issues with the macaulay2 spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4862
 
 Original creator: was
 
@@ -60,8 +60,8 @@ http://sage.math.washington.edu/home/mabshoff/macaulay2-1.1-r7221.p0.spkg
 fixes the issue:
 
 ```
-mabshoff`@`sage:/scratch/release-cycle/junk/sage-3.2.2$ export MAKE="make -j8"
-mabshoff`@`sage:/scratch/release-cycle/junk/sage-3.2.2$ ./sage -i macaulay2-1.1-r7221.p0
+mabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ export MAKE="make -j8"
+mabshoff@sage:/scratch/release-cycle/junk/sage-3.2.2$ ./sage -i macaulay2-1.1-r7221.p0
 <SNIP - things do not blow up>
 ```
 

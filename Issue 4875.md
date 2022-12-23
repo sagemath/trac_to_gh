@@ -1,6 +1,6 @@
 # Issue 4875: Polyhedron.show(fill=True) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4875
 
 Original creator: abergeron
 
@@ -68,7 +68,7 @@ These faces are incorrect because Polyhedron.triangulated_facial_incidences() do
 
 ```
 sage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).triangulated_facial_incidences()
-[This is the Trac macro *0, [0, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [0, 2-macro), [1, [0, 1]], [2, [1, 2]]]
+[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]
 ```
 
 
@@ -81,7 +81,7 @@ The output from facial_incidences() looks like this:
 
 ```
 sage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).facial_incidences()
-[This is the Trac macro *0, [0, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [0, 2-macro), [1, [0, 1]], [2, [1, 2]]]
+[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]
 ```
 
 
@@ -154,7 +154,7 @@ Oh, here's an example of manually altering triangulated_facial_incidences() so t
 P = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])
 P.triangulated_facial_incidences()
 # the method caches its result in this private variable
-P._triangulated_facial_incidences = [This is the Trac macro *0, [0, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, [0, 1, 2-macro)]
+P._triangulated_facial_incidences = [[0, [0, 1, 2]]]
 P.show(fill=True)
 ```
 

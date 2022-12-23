@@ -1,6 +1,6 @@
 # Issue 2045: unfriendly error message when plotting square roots of a function that is negative.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2045
 
 Original creator: jason
 

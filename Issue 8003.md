@@ -1,6 +1,6 @@
 # Issue 8003: EllipticCurve('522j1').sha().an_padic(13) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8003
 
 Original creator: rlm
 
@@ -16,7 +16,7 @@ This is because the quadratic twist parameter `D` needs to be cast to an integer
 diff -r 0133676998bd sage/schemes/elliptic_curves/sha_tate.py
 --- a/sage/schemes/elliptic_curves/sha_tate.py	Tue Jan 19 10:28:48 2010 -0800
 +++ b/sage/schemes/elliptic_curves/sha_tate.py	Tue Jan 19 13:05:47 2010 -0800
-`@``@` -424,7 +424,7 `@``@`
+@@ -424,7 +424,7 @@
                  if Et.conductor() < Nmin and valuation(Et.conductor(),2) <= valuation(DD,2):
                      Nmin = Et.conductor()
                      Dmax = DD

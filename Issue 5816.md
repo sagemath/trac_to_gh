@@ -1,6 +1,6 @@
 # Issue 5816: [with patch; needs review] doctesting -- make it possible run doctests in order from file, in random order, and in random seeded order
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5816
 
 Original creator: was
 
@@ -397,7 +397,7 @@ Expected:
 Got:
     67108864,
     10321
-[This is the Trac macro *tons more problems!* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#tons more problems!-macro)
+[[tons more problems!]]
 
 
 
@@ -426,7 +426,7 @@ Expected:
     -?%at('diff(x(t),t,1),t=0)+s^2*?%laplace(x(t),t,s)-x(0)*s
 Got:
     -'at('diff(x(t),t,1),t=0)+s^2*'laplace(x(t),t,s)-x(0)*s
-[This is the Trac macro *many other problems* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#many other problems-macro)
+[[many other problems]]
 
 
 
@@ -554,7 +554,7 @@ File "/scratch/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/misc/latex.py", 
     sage: latex([1,2,3])
 Expected:
     \left[1,
-[This is the Trac macro *everything breaks as you know* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#everything breaks as you know-macro)
+[[everything breaks as you know]]
 
 
 
@@ -655,7 +655,7 @@ Got:
 File "/scratch/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/libs/fplll/fplll.pyx", line 656:
     sage: A = gen_uniform(10,10,12); A
 
-[This is the Trac macro *tons more problems* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#tons more problems-macro)
+[[tons more problems]]
 
 
 
@@ -851,7 +851,7 @@ Got:
 
 sage -t -long -rand=1 devel/sage/sage/interfaces/singular.py**********************************************************************File "/scratch/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/interfaces/singular.py", line 988:    sage: singular.trait_names()Expected:    ['headStand',     ...     'stdfglm']Got:    ['pause', 'writelist', 'tab', 'split', 'showrecursive', 'show', 'rMacaulay', 'pmat', 'lprint', 'allprint', 'newtonDiag', 'subrInterred', 'id2mod', 'mod2id', 'denominator', 'numerator', 'content', 'lcm', 'rad_con', 'normalize', 'mindeg1', 'mindeg', 'maxdeg1', 'maxdeg', 'maxcoef', 'is_zero', 'freerank', 'kat_var', 'katsura', 'cyclic', 'substitute', 'hilbPoly', 'select1', 'select', 'sat', 'nselect', 'elim1', 'elim', 'blowup0', 'triangMH', 'triangM', 'triangLfak', 'triangL', 'absFactorize', 'newZero_decom
 
-[This is the Trac macro *tons of other issues due to bad doctests* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#tons of other issues due to bad doctests-macro)
+[[tons of other issues due to bad doctests]]
 
 
 
@@ -897,7 +897,7 @@ Got:
     doctest:2324: DeprecationWarning: RestrictedPartitions_nsk is deprecated; use Partitions with the parts_in keyword instead.
     'Partitions of 5 restricted to the values [1, 2, 3] '
 
-[This is the Trac macro *and more* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#and more-macro)
+[[and more]]
 
 
 

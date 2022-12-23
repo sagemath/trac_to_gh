@@ -1,6 +1,6 @@
 # Issue 7488: plot3d? doesn't document some important options, which causes confusion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7488
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5460: [with patch, needs review] deprecate 'invert' in matrix_rational_dense
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5460
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 3440: Our PolyBoRi's GB calculation in AES mode is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3440
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 1435: Update FLINT.spkg to 1.01
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1435
 
 Original creator: mabshoff
 

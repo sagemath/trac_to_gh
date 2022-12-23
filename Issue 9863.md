@@ -1,6 +1,6 @@
 # Issue 9863: Error building PIL on RHEL Server 5.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9864
 
 Original creator: mpatel
 
@@ -149,14 +149,14 @@ passed.  Here are the specs:
 
 
 ```
- [aghitza`@`soleil sage-4.5.3]$ uname -a
+ [aghitza@soleil sage-4.5.3]$ uname -a
  Linux soleil.ms.unimelb.edu.au 2.6.18-194.11.3.el5 #1 SMP Mon Aug 23 15:51:38 EDT 2010 x86_64 x86_64 x86_64 GNU/Linux
 
- [aghitza`@`soleil sage-4.5.3]$ cat /etc/issue
+ [aghitza@soleil sage-4.5.3]$ cat /etc/issue
  Red Hat Enterprise Linux Server release 5.5 (Tikanga)
  Kernel \r on an \m
 
- [aghitza`@`soleil sage-4.5.3]$ gcc -v
+ [aghitza@soleil sage-4.5.3]$ gcc -v
  Using built-in specs.
  Target: x86_64-redhat-linux
  Configured with: ../configure --prefix=/usr --mandir=/usr/share/man 
@@ -170,10 +170,10 @@ passed.  Here are the specs:
  Thread model: posix
  gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)
 
- [aghitza`@`soleil ~]$ which python
+ [aghitza@soleil ~]$ which python
  /usr/bin/python
 
- [aghitza`@`soleil ~]$ python
+ [aghitza@soleil ~]$ python
  Python 2.4.3 (#1, Jun 11 2009, 14:09:37) 
  [GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2
  Type "help", "copyright", "credits" or "license" for more information.
@@ -712,7 +712,7 @@ Only in pil-1.1.6.p3/src/: ff
 diff -ur upstream/Imaging-1.1.6/setup.py pil-1.1.6.p3/src/setup.py
 --- upstream/Imaging-1.1.6/setup.py	2006-12-03 12:37:29.000000000 +0100
 +++ pil-1.1.6.p3/src/setup.py	2010-11-26 10:39:04.000000000 +0100
-`@``@` -90,6 +90,9 `@``@`
+@@ -90,6 +90,9 @@
  except ImportError:
      _tkinter = None
  

@@ -1,6 +1,6 @@
 # Issue 2046: [with patch] save(srange(3), './foo') fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2046
 
 Original creator: cwitty
 

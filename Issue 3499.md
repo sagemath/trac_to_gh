@@ -1,6 +1,6 @@
 # Issue 3499: [with patch, needs review] cyclotomic linear algebra: multiplying 1x1 identity matrix by anything fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3499
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 194: another ZZ[x] crash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/194
 
 Original creator: was
 
@@ -14,7 +14,7 @@ sage: R.<x> = ZZ['x']
 sage: x^3 % 2
 DivRem: quotient undefined over ZZ
 /Users/nalexand/Devel/sage/local/bin/sage-sage: line 174: 13174 Abort
-trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
  
 Yikes!
 Nick

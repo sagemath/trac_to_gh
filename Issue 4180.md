@@ -1,6 +1,6 @@
 # Issue 4180: magic pexpect logging switch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4180
 
 Original creator: was
 

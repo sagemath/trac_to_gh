@@ -1,6 +1,6 @@
 # Issue 9882: slow coercion of list to polynomial over integer mod ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9883
 
 Original creator: dmharvey
 

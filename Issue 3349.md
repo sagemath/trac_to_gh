@@ -1,6 +1,6 @@
 # Issue 3349: OSX: make sure LDFLAGS are set for linking purposes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3349
 
 Original creator: mabshoff
 

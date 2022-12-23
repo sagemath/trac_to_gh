@@ -1,6 +1,6 @@
 # Issue 6078: Add compatibility functions with deprecation warnings for QF code after doctest patch
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6078
 
 Original creator: tornaria
 

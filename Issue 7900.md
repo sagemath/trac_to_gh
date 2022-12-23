@@ -1,6 +1,6 @@
 # Issue 7900: Replace variables like $RM with  'rm' in Mercurial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7900
 
 Original creator: drkirkby
 

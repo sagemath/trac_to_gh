@@ -1,6 +1,6 @@
 # Issue 4017: Sage 3.1.2.alpha1 - PPC OSX: numerical noise in sage/stats/hmm/chmm.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4017
 
 Original creator: mabshoff
 

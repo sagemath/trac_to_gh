@@ -1,6 +1,6 @@
 # Issue 4614: automatically add md5sums for source tarballs to the web site
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4614
 
 Original creator: mabshoff
 

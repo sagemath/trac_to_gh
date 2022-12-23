@@ -1,6 +1,6 @@
 # Issue 6193: [with patch, needs review] implement elliptic logarithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6193
 
 Original creator: robertwb
 

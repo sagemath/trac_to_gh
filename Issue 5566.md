@@ -1,6 +1,6 @@
 # Issue 5566: Groebner bases of Symmetric Ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5566
 
 Original creator: SimonKing
 
@@ -1132,28 +1132,28 @@ it turned out that the doc test failure was not in `infinite_polynomial_ring.py`
 After applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:
 
 ```
-SimonKing`@`sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py
+SimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py
 sage -t -optional -long "devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py"
          [12.4 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 12.4 seconds
-SimonKing`@`sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx
+SimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx
 sage -t -optional -long "devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx"
          [4.3 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 4.3 seconds
-SimonKing`@`sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py
+SimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py
 sage -t -optional -long "devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py"
          [6.0 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 6.0 seconds
-SimonKing`@`sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py
+SimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py
 sage -t -optional -long "devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py"
          [2.6 s]
 

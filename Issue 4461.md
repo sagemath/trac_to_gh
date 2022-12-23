@@ -1,6 +1,6 @@
 # Issue 4461: fricas-1.0.4 update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4461
 
 Original creator: bpage
 
@@ -99,7 +99,7 @@ were "fricas.py" instead of "axiom.py".
 
 
 ```
-wstein`@`sage:~/sage/devel/sage/sage/interfaces$ sage -t -optional axiom.py
+wstein@sage:~/sage/devel/sage/sage/interfaces$ sage -t -optional axiom.py
 sage -t -optional "devel/sage-main/sage/interfaces/axiom.py"
 **********************************************************************
 File "/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py", line 61:

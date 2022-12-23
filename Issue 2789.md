@@ -1,6 +1,6 @@
 # Issue 2789: multivariate polynomials over residue fields of number fields are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2789
 
 Original creator: dmharvey
 

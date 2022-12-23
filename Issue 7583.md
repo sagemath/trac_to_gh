@@ -1,6 +1,6 @@
 # Issue 7583: typos in sage.numerical.optimize
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7583
 
 Original creator: Harold Gutch
 

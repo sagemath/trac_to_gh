@@ -1,6 +1,6 @@
 # Issue 5378: Sage 3.3: numerical noise in rings/polynomial/complex_roots.py on cicero & fulvia
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5378
 
 Original creator: mabshoff
 

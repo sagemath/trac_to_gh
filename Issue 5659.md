@@ -1,6 +1,6 @@
 # Issue 5659: [with patch, needs review] Use CRT to speed up solve_mod
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5659
 
 Original creator: whuss
 

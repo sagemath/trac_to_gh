@@ -1,6 +1,6 @@
 # Issue 1816: rename MPolynomialRing.repr_long method to __str__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1816
 
 Original creator: malb
 

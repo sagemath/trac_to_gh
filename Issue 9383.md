@@ -1,6 +1,6 @@
 # Issue 9383: Adding quadratic_forms Code to the Reference Manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9383
 
 Original creator: annahaensch
 

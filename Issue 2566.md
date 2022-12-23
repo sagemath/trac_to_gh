@@ -1,6 +1,6 @@
 # Issue 2566: [with patch, needs review] fix type of "size" in graph_isom and binary_code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2566
 
 Original creator: rlm
 

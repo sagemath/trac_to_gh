@@ -1,6 +1,6 @@
 # Issue 9993: gcc 4.2.4 generates an internal compiler issue when buidling symmetrica on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9994
 
 Original creator: drkirkby
 

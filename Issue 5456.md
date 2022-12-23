@@ -1,6 +1,6 @@
 # Issue 5456: remove 32/64 bit dependency in modular symbols base enumerations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5456
 
 Original creator: GeorgSWeber
 

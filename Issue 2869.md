@@ -1,6 +1,6 @@
 # Issue 2869: Cell sizing is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2869
 
 Original creator: boothby
 

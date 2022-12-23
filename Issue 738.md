@@ -1,6 +1,6 @@
 # Issue 738: probably easy-to-fix bug in matrix2.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/738
 
 Original creator: was
 

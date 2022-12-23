@@ -1,6 +1,6 @@
 # Issue 9413: Bug in tamagawa_product_bsd for elliptic curves over QQ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9413
 
 Original creator: davidloeffler
 

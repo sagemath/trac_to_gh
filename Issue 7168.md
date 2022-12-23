@@ -1,6 +1,6 @@
 # Issue 7168: Port status of Sage to less-popular Unix platforms.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7168
 
 Original creator: drkirkby
 

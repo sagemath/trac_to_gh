@@ -1,6 +1,6 @@
 # Issue 5995: Membership testing for modular forms subspaces is hopeless
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5995
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 5427: Evaluate the naming of (variable substitution) routines in Quadratic forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5427
 
 Original creator: jonhanke
 

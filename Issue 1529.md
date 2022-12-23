@@ -1,6 +1,6 @@
 # Issue 1529: update install_scripts to also install R script.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1529
 
 Original creator: was
 

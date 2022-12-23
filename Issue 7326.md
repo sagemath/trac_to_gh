@@ -1,6 +1,6 @@
 # Issue 7326: html.table should run jsmath on the resulting table
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7326
 
 Original creator: jason
 

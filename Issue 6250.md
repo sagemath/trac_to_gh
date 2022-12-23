@@ -1,6 +1,6 @@
 # Issue 6250: [with patch, needs review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6250
 
 Original creator: nthiery
 

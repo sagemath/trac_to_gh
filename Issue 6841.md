@@ -1,6 +1,6 @@
 # Issue 6841: the shift cryptosystem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6841
 
 Original creator: mvngu
 

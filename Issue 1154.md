@@ -1,6 +1,6 @@
 # Issue 1154: lost precision in RQDF -> RealField conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1154
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 2999: Some packages don't respect the CC environment variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2999
 
 Original creator: dfdeshom
 

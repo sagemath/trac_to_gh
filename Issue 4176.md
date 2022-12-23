@@ -1,6 +1,6 @@
 # Issue 4176: matplotlib build failure due to broken tcl/tk detection
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4176
 
 Original creator: mabshoff
 

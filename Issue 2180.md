@@ -1,6 +1,6 @@
 # Issue 2180: cython skipping build optimization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2180
 
 Original creator: jbmohler
 

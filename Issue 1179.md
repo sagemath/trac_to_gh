@@ -1,6 +1,6 @@
 # Issue 1179: change all #!/bin/sh to #!/bin/bash in $SAGE_LOCAL/bin (Solaris related)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1179
 
 Original creator: mabshoff
 

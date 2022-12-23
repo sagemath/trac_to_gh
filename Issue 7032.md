@@ -1,6 +1,6 @@
 # Issue 7032: symmetrica ignores CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7032
 
 Original creator: drkirkby
 

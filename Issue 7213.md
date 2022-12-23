@@ -1,6 +1,6 @@
 # Issue 7213: "sage -upgrade" to 4.1.2 results in issue with symbolic link and ecl
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7213
 
 Original creator: was
 

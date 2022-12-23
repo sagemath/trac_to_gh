@@ -1,6 +1,6 @@
 # Issue 4206: convert RDF and CDF vectors to use numpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4206
 
 Original creator: jason
 
@@ -242,7 +242,7 @@ Dag Sverre Seljebotn wrote:
 > diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py
 > --- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100
 > +++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100
-> `@``@` -710,7 +710,11 `@``@` def use_py2_buffer_functions(env):
+> @@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):
 >
 >      # Search all types for __getbuffer__ overloads
 >      types = []
@@ -297,7 +297,7 @@ To review this patch:
 diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py
 --- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100
 +++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100
-`@``@` -710,7 +710,11 `@``@` def use_py2_buffer_functions(env):
+@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):
      # Search all types for __getbuffer__ overloads
      types = []
 +    visited_scopes = set()
@@ -416,7 +416,7 @@ Needs work.  The top of the file that implements complex double vectors starts o
  	27	""" 
  	28	 
  	29	############################################################################## 
- 	30	#       Copyright (C) 2004,2005,2006 Joshua Kantor <kantor.jm`@`gmail.com> 
+ 	30	#       Copyright (C) 2004,2005,2006 Joshua Kantor <kantor.jm@gmail.com> 
  	31	#  Distributed under the terms of the GNU General Public License (GPL) 
  	32	#  The full text of the GPL is available at: 
  	33	#                  http://www.gnu.org/licenses/ 
@@ -459,7 +459,7 @@ It doesn't build for me:
 
 ```
 
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 hg_sage.revesage: hg_sage.revert('--all')
@@ -476,7 +476,7 @@ cd "/home/was/build/sage-3.2.1.alpha1/devel/sage" && hg import   "/home/was/.sag
 applying /home/was/.sage/temp/sage/15486/tmp_0.patch
 sage: 
 Exiting SAGE (CPU time 0m0.12s, Wall time 0m19.72s).
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage -br
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage -br
 | Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |
 | Type notebook() for the GUI, and license() for information.        |
 ----------------------------------------------------------

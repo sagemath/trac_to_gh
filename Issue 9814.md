@@ -1,6 +1,6 @@
 # Issue 9814: ATLAS fails to build on a PA-RISC system running HP-UX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9815
 
 Original creator: drkirkby
 

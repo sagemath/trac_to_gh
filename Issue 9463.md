@@ -1,6 +1,6 @@
 # Issue 9463: Integer factorization should handle perfect powers efficiently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9463
 
 Original creator: fredrik.johansson
 

@@ -1,6 +1,6 @@
 # Issue 9922: Minimum Feedback Arc/Edge set through constraint generation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9923
 
 Original creator: ncohen
 
@@ -126,7 +126,7 @@ Comment by rlm created at 2011-01-16 04:40:50
 Ran tests with the following applied:
 
 ```
-rlmill`@`geom:/scratch/rlmill/sage-4.6.1.rc0/devel/sage-main$ hg qap
+rlmill@geom:/scratch/rlmill/sage-4.6.1.rc0/devel/sage-main$ hg qap
 trac_9911.patch
 9911_fix.patch
 trac_10435.patch

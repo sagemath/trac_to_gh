@@ -1,6 +1,6 @@
 # Issue 248: elliptic curve constructor in funny case -- coercion issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/248
 
 Original creator: was
 

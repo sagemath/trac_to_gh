@@ -1,6 +1,6 @@
 # Issue 4897: integral_points() misses some points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4897
 
 Original creator: cremona
 

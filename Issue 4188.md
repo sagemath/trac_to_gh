@@ -1,6 +1,6 @@
 # Issue 4188: [with spkg, needs review] Fix cvxopt.spkg build on Solaris due to broken complex.h headers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4188
 
 Original creator: mabshoff
 

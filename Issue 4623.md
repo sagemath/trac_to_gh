@@ -1,6 +1,6 @@
 # Issue 4623: x^2 is wrong in RealIntervalField
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4623
 
 Original creator: zimmerma
 

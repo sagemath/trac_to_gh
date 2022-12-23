@@ -1,6 +1,6 @@
 # Issue 6974: cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6974
 
 Original creator: was
 

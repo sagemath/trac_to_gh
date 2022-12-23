@@ -1,6 +1,6 @@
 # Issue 7625: include new version of sagenb (0.4.5)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7625
 
 Original creator: was
 

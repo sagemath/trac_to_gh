@@ -1,6 +1,6 @@
 # Issue 9817: boehm_gc installs OK on HP-UX, but fails one of 6 tests if SAGE_CHECK=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9818
 
 Original creator: drkirkby
 
@@ -22,7 +22,7 @@ CC:  dimpase
 
 
 ```
-	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/smash_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/smash_test.o tests/smash_test.c; \
+	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/smash_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/smash_test.o tests/smash_test.c; \
 	then mv -f "$depbase.Tpo" "$depbase.Po"; else rm -f "$depbase.Tpo"; exit 1; fi
 /bin/sh ./libtool --tag=CC --mode=link gcc -fexceptions -I libatomic_ops/src -g -O2   -o smashtest  tests/smash_test.o ./libgc.la  
 libtool: link: warning: this platform does not like uninstalled shared libraries
@@ -30,7 +30,7 @@ libtool: link: `smashtest' will be relinked during installation
 gcc -fexceptions -I libatomic_ops/src -g -O2 -o .libs/smashtest tests/smash_test.o  ./.libs/libgc.sl -lpthread -lrt -Wl,+b -Wl,/home/drkirkby/sage-4.5.3.alpha2/spkg/build/boehm_gc-7.1.p6/src/.libs:/home/drkirkby/sage-4.5.3.alpha2/local/lib
 creating smashtest
 depbase=`echo tests/huge_test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`; \
-	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/huge_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/huge_test.o tests/huge_test.c; \
+	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/huge_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/huge_test.o tests/huge_test.c; \
 	then mv -f "$depbase.Tpo" "$depbase.Po"; else rm -f "$depbase.Tpo"; exit 1; fi
 /bin/sh ./libtool --tag=CC --mode=link gcc -fexceptions -I libatomic_ops/src -g -O2   -o hugetest  tests/huge_test.o ./libgc.la  
 libtool: link: warning: this platform does not like uninstalled shared libraries
@@ -38,7 +38,7 @@ libtool: link: `hugetest' will be relinked during installation
 gcc -fexceptions -I libatomic_ops/src -g -O2 -o .libs/hugetest tests/huge_test.o  ./.libs/libgc.sl -lpthread -lrt -Wl,+b -Wl,/home/drkirkby/sage-4.5.3.alpha2/spkg/build/boehm_gc-7.1.p6/src/.libs:/home/drkirkby/sage-4.5.3.alpha2/local/lib
 creating hugetest
 depbase=`echo tests/thread_leak_test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`; \
-	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/thread_leak_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/thread_leak_test.o tests/thread_leak_test.c; \
+	if gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" -DPACKAGE_STRING=\"gc\ 7.1\" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_HPUX_THREADS=1 -D_POSIX_C_SOURCE=199506L -DTHREAD_LOCAL_ALLOC=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1  -I./include   -fexceptions -I libatomic_ops/src -g -O2 -MT tests/thread_leak_test.o -MD -MP -MF "$depbase.Tpo" -c -o tests/thread_leak_test.o tests/thread_leak_test.c; \
 	then mv -f "$depbase.Tpo" "$depbase.Po"; else rm -f "$depbase.Tpo"; exit 1; fi
 /bin/sh ./libtool --tag=CC --mode=link gcc -fexceptions -I libatomic_ops/src -g -O2   -o threadleaktest  tests/thread_leak_test.o ./libgc.la  
 libtool: link: warning: this platform does not like uninstalled shared libraries
@@ -79,7 +79,7 @@ Leaked composite object at 400a2fe8 (tests/thread_leak_test.c:14, sz=4, NORMAL)
 PASS: threadleaktest
 ==================================
 1 of 6 tests failed
-Please report to Hans.Boehm`@`hp.com
+Please report to Hans.Boehm@hp.com
 ==================================
 make[4]: *** [check-TESTS] Error 1
 make[4]: Leaving directory `/home/drkirkby/sage-4.5.3.alpha2/spkg/build/boehm_gc-7.1.p6/src'

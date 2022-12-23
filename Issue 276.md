@@ -1,6 +1,6 @@
 # Issue 276: clisp/maxima dies with "invalid byte" on non-ASCII filename characters
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/276
 
 Original creator: cwitty
 

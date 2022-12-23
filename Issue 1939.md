@@ -1,6 +1,6 @@
 # Issue 1939: [with patch] Fix OSX rpy import issues: DYLD_LIBRARY_PATH fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1939
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3186: fix 64 bit OSX build support for numpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3186
 
 Original creator: mabshoff
 

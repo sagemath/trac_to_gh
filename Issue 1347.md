@@ -1,6 +1,6 @@
 # Issue 1347: display the path to the sage_notebook directory when starting the notebook server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1347
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4349: jmol doesn't work on the command-line on OS X 10.5(.5)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4349
 
 Original creator: anakha
 

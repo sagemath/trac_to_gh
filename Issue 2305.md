@@ -1,6 +1,6 @@
 # Issue 2305: Docstrings and doctests for rings/ideal.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2305
 
 Original creator: cswiercz
 

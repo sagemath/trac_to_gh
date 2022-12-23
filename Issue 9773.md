@@ -1,6 +1,6 @@
 # Issue 9773: Upgrade the notebook to use MathJax instead of jsMath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9774
 
 Original creator: mpatel
 
@@ -270,9 +270,9 @@ Yes.
 
 
 ```
-rob`@`tiger:/sage/dev/devel/sage$ ../../sage -version
+rob@tiger:/sage/dev/devel/sage$ ../../sage -version
 * Warning: this is a prerelease version, and it may be unstable.     *
-rob`@`tiger:/sage/dev/devel/sage$ hg qimport -P http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/mathjax.patch
+rob@tiger:/sage/dev/devel/sage$ hg qimport -P http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9774/mathjax.patch
 adding mathjax.patch to series file
 applying mathjax.patch
 now at: mathjax.patch
@@ -1008,7 +1008,7 @@ diff --git a/sagenb/misc/sphinxify.py b/sagenb/misc/sphinxify.py
 index 837b40a..85c9f4d 100644
 --- a/sagenb/misc/sphinxify.py
 +++ b/sagenb/misc/sphinxify.py
-`@``@` -71,7 +71,7 `@``@` def sphinxify(docstring, format='html'):
+@@ -71,7 +71,7 @@ def sphinxify(docstring, format='html'):
          sage: sphinxify('**Testing**\n`monospace`')
          '\n<div class="docstring"...<strong>Testing</strong>\n<span class="math"...</p>\n\n\n</div
          sage: sphinxify('`x=y`')
@@ -1266,7 +1266,7 @@ In particular this doctest fails, on Sage 5.2.rc1:
 
 
 ```
-[3] fs`@`boone /opt/sage/devel/sage $ sage -t --long --force_lib sage/misc/latex.py
+[3] fs@boone /opt/sage/devel/sage $ sage -t --long --force_lib sage/misc/latex.py
 sage -t --long --force_lib "devel/sage-main/sage/misc/latex.py"
 **********************************************************************
 File "/opt/sage-5.2.rc1/devel/sage-main/sage/misc/latex.py", line 1972:
@@ -1397,7 +1397,7 @@ because someone has replaced a verbatim spacer with a version that does not work
 ```diff
 --- a/sage/misc/latex.py
 +++ b/sage/misc/latex.py
-`@``@` -323,11 +323,7 `@``@`
+@@ -323,11 +323,7 @@
      # 2) wrap each line into \verb;
      # 3) assemble lines into a left-justified array.
      

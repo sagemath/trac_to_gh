@@ -1,6 +1,6 @@
 # Issue 1964: attaching multiple files should work but is broken (or never implemented?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1964
 
 Original creator: was
 

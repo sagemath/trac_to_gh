@@ -1,6 +1,6 @@
 # Issue 4280: Syntax error for a comment line, then help query in a notebook cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4280
 
 Original creator: jason
 

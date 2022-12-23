@@ -1,6 +1,6 @@
 # Issue 8503: broken multiline input in sage notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8503
 
 Original creator: robert.marik
 

@@ -1,6 +1,6 @@
 # Issue 4373: doctest failure in sage/algebras/group_algebra.py on 32 bit platforms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4373
 
 Original creator: mabshoff
 

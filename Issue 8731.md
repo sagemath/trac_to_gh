@@ -1,6 +1,6 @@
 # Issue 8731: update maxima to 5.21.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8731
 
 Original creator: jason
 
@@ -943,11 +943,11 @@ Just FYI:
 
 Message: 4
 Date: Sun, 1 Aug 2010 15:39:28 -0600
-From: Robert Dodier <robert.dodier`@`gmail.com>
-To: Maxima Mailing List <maxima`@`math.utexas.edu>
+From: Robert Dodier <robert.dodier@gmail.com>
+To: Maxima Mailing List <maxima@math.utexas.edu>
 Subject: [Maxima] Maxima 5.22.0
 Message-ID:
-       <AANLkTimGPxt1uLWDmFEVUgDU8nxByJ=V00Fxk4o2_3yc`@`mail.gmail.com>
+       <AANLkTimGPxt1uLWDmFEVUgDU8nxByJ=V00Fxk4o2_3yc@mail.gmail.com>
 Content-Type: text/plain; charset=ISO-8859-1
 
 Hi, I;ve tagged version-5_22_0 in CVS and built rpms

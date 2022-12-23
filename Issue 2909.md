@@ -1,6 +1,6 @@
 # Issue 2909: notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2909
 
 Original creator: was
 

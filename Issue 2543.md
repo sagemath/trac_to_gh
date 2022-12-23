@@ -1,6 +1,6 @@
 # Issue 2543: [with patch, needs quick review] fix broken doctest in modular/modform/element.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2543
 
 Original creator: craigcitro
 

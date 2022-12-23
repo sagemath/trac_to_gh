@@ -1,6 +1,6 @@
 # Issue 1694: Update FLINT to 1.04 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1694
 
 Original creator: mabshoff
 

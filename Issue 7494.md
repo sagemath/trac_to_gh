@@ -1,6 +1,6 @@
 # Issue 7494: remove (or clean up) SAGE_ROOT/examples
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7494
 
 Original creator: was
 
@@ -14,7 +14,7 @@ Did you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if
 
 ```
 changeset:   158:d18dad210d3b
-user:        Mike Hansen <mhansen`@`gmail.com>
+user:        Mike Hansen <mhansen@gmail.com>
 date:        Mon Apr 14 03:08:48 2008 -0700
 summary:     Extract sagetex.py and sagetex.sty
 ```
@@ -142,13 +142,13 @@ Comment by was created at 2011-08-24 06:31:40
 I just realized that there is one thing that has to be done. Observe:
 
 ```
-wstein`@`ubuntu:~/d/sage$ sage -grep "examples"|grep SAGE_ROOT
+wstein@ubuntu:~/d/sage$ sage -grep "examples"|grep SAGE_ROOT
 finance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]
 finance/stock.py:            sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]
 finance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + "/examples/finance/AAPL-minutely.csv")
 misc/hg.py:hg_examples = HG('%s/data/examples'%SAGE_ROOT,
 misc/inline_fortran.py:            sage: s = open(os.environ['SAGE_ROOT'] + '/examples/fortran/FIB1.F').read()
-wstein`@`ubuntu:~/d/sage$ 
+wstein@ubuntu:~/d/sage$ 
 ```
 
 

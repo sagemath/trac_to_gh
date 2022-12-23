@@ -1,6 +1,6 @@
 # Issue 8950: new function for sage.calculus.desolve module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8950
 
 Original creator: uri
 
@@ -177,7 +177,7 @@ The patch says:
 diff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py
 --- a/sage/calculus/desolvers.py	Wed Jan 20 15:09:32 2010 -0800
 +++ b/sage/calculus/desolvers.py	Wed Jun 30 10:47:17 2010 +0200
-`@``@` -1053,3 +1053,270 `@``@`
+@@ -1053,3 +1053,270 @@
      sol.extend(sol_2)
  
      return sol

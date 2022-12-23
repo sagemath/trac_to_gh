@@ -1,6 +1,6 @@
 # Issue 7277: Add permutahedron symmetry groups as standard
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7277
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 1722: Symbolic Matrices should be callable.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1722
 
 Original creator: boothby
 

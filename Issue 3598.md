@@ -1,6 +1,6 @@
 # Issue 3598: clisp -- fix building on RHEL5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3598
 
 Original creator: was
 

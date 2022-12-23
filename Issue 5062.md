@@ -1,6 +1,6 @@
 # Issue 5062: Make sure that "sage -b" checks build compatibility on shared filesystems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5062
 
 Original creator: mabshoff
 

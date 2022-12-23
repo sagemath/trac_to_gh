@@ -1,6 +1,6 @@
 # Issue 2496: bug in introspection (probably easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2496
 
 Original creator: was
 

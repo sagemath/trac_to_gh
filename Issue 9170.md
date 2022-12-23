@@ -1,6 +1,6 @@
 # Issue 9170: cygwin: get_memory_usage isn't implemented, e.g., because there's no top
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9170
 
 Original creator: was
 

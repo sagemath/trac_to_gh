@@ -1,6 +1,6 @@
 # Issue 6007: Bring plot/primitive.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6007
 
 Original creator: kcrisman
 

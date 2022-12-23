@@ -1,6 +1,6 @@
 # Issue 1336: [with patch] 2.8.14/Linux PPC: rings/polynomial/polynomial_element.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1336
 
 Original creator: mabshoff
 

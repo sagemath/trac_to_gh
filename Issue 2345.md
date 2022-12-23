@@ -1,6 +1,6 @@
 # Issue 2345: negative indicies in vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2345
 
 Original creator: mhansen
 

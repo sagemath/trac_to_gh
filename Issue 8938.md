@@ -1,6 +1,6 @@
 # Issue 8938: Multivariate polynomials can be incorrectly formatted in LaTeX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8938
 
 Original creator: fwclarke
 

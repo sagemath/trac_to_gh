@@ -1,6 +1,6 @@
 # Issue 7812: Compute Bell numbers using mpmath by default (instead of GAP)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7812
 
 Original creator: jbandlow
 

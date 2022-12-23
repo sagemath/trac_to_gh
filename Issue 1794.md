@@ -1,6 +1,6 @@
 # Issue 1794: Gram-Schmidt typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1794
 
 Original creator: wjp
 

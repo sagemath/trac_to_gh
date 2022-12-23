@@ -1,6 +1,6 @@
 # Issue 6510: Adds __nonzero__ method to abelian groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6510
 
 Original creator: tsutton
 

@@ -1,6 +1,6 @@
 # Issue 7385: renaming "Untitled" published pages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7385
 
 Original creator: jason
 

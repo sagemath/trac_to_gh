@@ -1,6 +1,6 @@
 # Issue 9439: hyperbolic geometry
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9439
 
 Original creator: vdelecroix
 
@@ -848,7 +848,7 @@ Let me know as things get merged in and I can review those changes so we can get
 FYI, a typo got introduced in `c612e31`:
 
 ```diff
-`@``@` -528,7 +528,7 `@``@` class HyperbolicGeodesic(SageObject):
+@@ -528,7 +528,7 @@ class HyperbolicGeodesic(SageObject):
           """
           return self._cached_geodesic.reflection_involution().to_model(self._model)
 

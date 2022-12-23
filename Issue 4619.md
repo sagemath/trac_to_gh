@@ -1,6 +1,6 @@
 # Issue 4619: Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4619
 
 Original creator: mabshoff
 

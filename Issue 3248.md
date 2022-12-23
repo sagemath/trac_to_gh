@@ -1,6 +1,6 @@
 # Issue 3248: [with patch; needs review] cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3248
 
 Original creator: was
 

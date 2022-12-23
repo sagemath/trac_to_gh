@@ -1,6 +1,6 @@
 # Issue 7149: [with patch, needs review] tutorial: delete the graph theory section
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7149
 
 Original creator: jhpalmieri
 

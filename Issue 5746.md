@@ -1,6 +1,6 @@
 # Issue 5746: rational points over subfields of the (finite) field of definition
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5746
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 1147: change location of valgrind output files to something less obnoxious
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1147
 
 Original creator: was
 

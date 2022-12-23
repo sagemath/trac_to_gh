@@ -1,6 +1,6 @@
 # Issue 8451: improve galois representation for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8451
 
 Original creator: wuthrich
 
@@ -212,7 +212,7 @@ So this patch needs to be rebased for 4.4 to have finite_field changed to finite
 diff -r 35160a4d594a sage/schemes/elliptic_curves/gal_reps.py
 --- a/sage/schemes/elliptic_curves/gal_reps.py  Tue Mar 30 15:26:20 2010 -0700
 +++ b/sage/schemes/elliptic_curves/gal_reps.py  Tue Apr 20 15:04:12 2010 -0700
-`@``@` -132,8 +132,7 `@``@`
+@@ -132,8 +132,7 @@
  import sage.rings.arith as arith
  import sage.misc.misc as misc
  import sage.rings.all as rings
@@ -241,14 +241,14 @@ Hi Drew,
 
 If you look in /scratch/drew you'll find a Sage install I created for you:
 
-drew`@`sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ pwd
+drew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ pwd
 /scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux
 
 It has both #8617, your code, and http://trac.sagemath.org/sage_trac/ticket/8451 which is the patch you're refereeing. 
 
 The file test.out in that directory will soon contain the output of running the full sage testsuite with those patches applied:
 
-drew`@`sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ ./sage -tp 20 devel/sage/sage/ > test.out&
+drew@sage:/scratch/drew/sage-4.4.alpha0-sage.math.washington.edu-x86_64-Linux$ ./sage -tp 20 devel/sage/sage/ > test.out&
 [1] 12438
 
 

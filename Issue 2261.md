@@ -1,6 +1,6 @@
 # Issue 2261: setup.py: Don't add emtpy Debian directory to scripts section
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2261
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 4589: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure due to #4583
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4589
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ CC:  malb
 With #4583 applied I am seeing the following issue:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
 sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py", line 58:
@@ -98,7 +98,7 @@ Comment by mabshoff created at 2008-11-23 04:46:29
 Odd, but the hunk
 
 ```
-`@``@` -164,7 +166,7 `@``@`
+@@ -164,7 +166,7 @@
 
          sage: I.change_ring(P.change_ring( IntegerModRing(2*7) )).groebner_basis()
          verbose 0 (...: multi_polynomial_ideal.py, groebner_basis) Warning: falling back to very slow toy implementation.
@@ -135,7 +135,7 @@ Comment by mabshoff created at 2008-11-23 04:51:37
 [8:46pm] wstein-4591: [...]
 [8:46pm] mabshoff: It is on sage.math, no m2 there.
 [8:46pm] mabshoff: At least no in $PATH
-[8:46pm] wstein-4591: was`@`sage:~$ which M2
+[8:46pm] wstein-4591: was@sage:~$ which M2
 [8:46pm] wstein-4591: /usr/local/bin/M2
 [8:46pm] wstein-4591: It's M2
 [8:46pm] mabshoff: shit

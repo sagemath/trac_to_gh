@@ -1,6 +1,6 @@
 # Issue 8052: Update prereq to version 0.7 (mostly Fortran issues fixed)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8052
 
 Original creator: drkirkby
 

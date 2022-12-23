@@ -1,6 +1,6 @@
 # Issue 7550: lapack ignores setting of SAGE_FORTRAN and uses 'gfortran'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7550
 
 Original creator: drkirkby
 

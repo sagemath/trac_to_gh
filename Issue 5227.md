@@ -1,6 +1,6 @@
 # Issue 5227: add next batch of 14 people to devmap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5227
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 6110: [with patch, needs review] implement a "decorator" to allow pickling nested classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6110
 
 Original creator: cwitty
 

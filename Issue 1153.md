@@ -1,6 +1,6 @@
 # Issue 1153: [with patch] fixed documentation typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1153
 
 Original creator: zimmerma
 

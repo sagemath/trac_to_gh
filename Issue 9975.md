@@ -1,6 +1,6 @@
 # Issue 9975: Decorated functions/methods have generic signature in documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9976
 
 Original creator: jsrn
 
@@ -165,7 +165,7 @@ Then, using `sage_getdoc` in `sage_autodoc.py` would mean that "usual" methods o
 
 ```
 sage: class MyClass:
-....:     `@`cached_method
+....:     @cached_method
 ....:     def f(x):
 ....:         return -x
 ....:     def g(x):
@@ -307,7 +307,7 @@ sage: sage.misc.sageinspect.sage_getdoc(MyClass)
 Then, it also allows inspection of Cython code that is defined in an interactive session. Its code is defined in a temporary file, thus, not in the sage library tree. But the old algorithm would only try to find files in the library tree.
 
 ```
-   sage: cython(*cpdef test_funct(x,y): return*) 
+   sage: cython('''cpdef test_funct(x,y): return''') 
    sage: sage_getsourcelines(test_funct) 
    (['cpdef test_funct(x,y): return\n'], 6) 
 ```
@@ -2118,7 +2118,7 @@ I suggest to edit the new examples, so that the comments appear as proper text. 
     decorated function (see trac ticket #9976)::
 
         sage: def square(f):
-        ...     `@`sage_wraps(f)
+        ...     @sage_wraps(f)
         ...     def new_f(x):
         ...         return f(x)*f(x)
         ...     return new_f
@@ -2132,7 +2132,7 @@ instead of
         # Demonstrate the _sage_src_ and __doc__ are retained from the
         # decorated function
         sage: def square(f):
-        ...     `@`sage_wraps(f)
+        ...     @sage_wraps(f)
         ...     def new_f(x):
         ...         return f(x)*f(x)
         ...     return new_f
@@ -2580,7 +2580,7 @@ def test1():
 
 test2 = CachedFunction(test1)
 
-`@`CachedFunction
+@CachedFunction
 def test3():
     "This is a docstring for test3"
     pass
@@ -2798,7 +2798,7 @@ def test1():
 
 test2 = cached_function(test1)
 
-`@`cached_function
+@cached_function
 def test3():
     "This is a docstring for test3"
     pass

@@ -1,6 +1,6 @@
 # Issue 2943: bug with power series and/or p-adics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2943
 
 Original creator: jen
 

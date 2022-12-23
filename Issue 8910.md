@@ -1,6 +1,6 @@
 # Issue 8910: Have CombinatorialClass inherits from Parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8910
 
 Original creator: hivert
 

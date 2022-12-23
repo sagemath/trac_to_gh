@@ -1,6 +1,6 @@
 # Issue 261: a new matrix constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/261
 
 Original creator: was
 

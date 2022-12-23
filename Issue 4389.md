@@ -1,6 +1,6 @@
 # Issue 4389: [with patch, needs review] Sage 3.1.4: optional doctest failure in sage/groups/perm_gps/permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4389
 
 Original creator: mabshoff
 

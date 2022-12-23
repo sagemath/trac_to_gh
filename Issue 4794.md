@@ -1,6 +1,6 @@
 # Issue 4794: Update pari to 2.3.4svb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4794
 
 Original creator: mabshoff
 
@@ -87,7 +87,7 @@ sage: There was an error installing modified sage library code.
 Ironically the doctests for gen.pyx pass:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/gp/sage-3.3.alpha6-pari2.4.3-special$ ./sage -t devel/sage/sage/libs/pari/gen.pyx 
+mabshoff@sage:/scratch/mabshoff/gp/sage-3.3.alpha6-pari2.4.3-special$ ./sage -t devel/sage/sage/libs/pari/gen.pyx 
 sage -t  "devel/sage/sage/libs/pari/gen.pyx"                
 	 [2.4 s]
  

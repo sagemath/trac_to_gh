@@ -1,6 +1,6 @@
 # Issue 4780: relative number field constructor -- error message when given poly of degree < 1 is bad
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4780
 
 Original creator: was
 

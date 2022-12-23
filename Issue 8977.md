@@ -1,6 +1,6 @@
 # Issue 8977: Bug in QuadraticForm.rational_diagonal_form()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8977
 
 Original creator: gdrama
 

@@ -1,6 +1,6 @@
 # Issue 4970: modify tkinter detection in our python spkg so that it works on macs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4970
 
 Original creator: was
 

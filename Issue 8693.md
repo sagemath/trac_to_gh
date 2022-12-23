@@ -1,6 +1,6 @@
 # Issue 8693: QuadraticForm::basis_of_short_vectors may not return an actual basis.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8693
 
 Original creator: afiori
 

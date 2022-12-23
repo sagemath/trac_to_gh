@@ -1,6 +1,6 @@
 # Issue 7568: multiply Dirichlet characters of different conductors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7568
 
 Original creator: AlexGhitza
 

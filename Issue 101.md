@@ -1,6 +1,6 @@
 # Issue 101: graph theory -- create a graph theory package for SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/101
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7548: modular form times scalar = boom
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7548
 
 Original creator: AlexGhitza
 

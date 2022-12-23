@@ -1,6 +1,6 @@
 # Issue 2048: sage does not have 1048576 users yet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2048
 
 Original creator: dmharvey
 

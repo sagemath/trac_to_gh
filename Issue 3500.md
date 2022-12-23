@@ -1,6 +1,6 @@
 # Issue 3500: [with patch, needs review] bug in cyclotomic linear algebra code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3500
 
 Original creator: craigcitro
 

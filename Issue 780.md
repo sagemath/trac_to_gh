@@ -1,6 +1,6 @@
 # Issue 780: calculus integration failing due to maxima interacting when it shouldn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/780
 
 Original creator: was
 
@@ -34,7 +34,7 @@ sage: h = g(x=1.) - g(x=0.0001415); h    # this is what you want.
 sage: h(y=5)
 3.231596665591034
 
-On 10/1/07, Eliz <elyip`@`comcast.net> wrote:
+On 10/1/07, Eliz <elyip@comcast.net> wrote:
 > 
 > Attached is the 'edit' view of my worksheet.  When I changed the lower
 > bound of the definite integral from 0.0001415 to  0.0001414, we got

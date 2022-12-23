@@ -1,6 +1,6 @@
 # Issue 3650: [with patch, needs review] Infinite recursion in pbuild by recursive pxd imports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3650
 
 Original creator: gfurnish
 

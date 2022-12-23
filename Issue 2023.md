@@ -1,6 +1,6 @@
 # Issue 2023: dynkin diagram weights
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2023
 
 Original creator: wdj
 

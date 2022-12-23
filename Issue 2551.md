@@ -1,6 +1,6 @@
 # Issue 2551: `__getitem__` for relative number field elements is ... surprising
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2551
 
 Original creator: craigcitro
 

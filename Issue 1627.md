@@ -1,6 +1,6 @@
 # Issue 1627: update libgcrypt to 1.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1627
 
 Original creator: mabshoff
 

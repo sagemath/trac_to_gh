@@ -1,6 +1,6 @@
 # Issue 295: '??' doesn't always print last line of last function in file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/295
 
 Original creator: justin
 

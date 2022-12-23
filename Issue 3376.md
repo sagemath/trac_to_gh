@@ -1,6 +1,6 @@
 # Issue 3376: matrix multiplication should use Strassen's algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3376
 
 Original creator: zimmerma
 
@@ -220,7 +220,7 @@ Comment by mabshoff created at 2008-08-31 00:35:32
 Positive review for the spkg. Note that there is some debug output to be killed:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx
 sage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       k: 1
 k: 1
 k: 1

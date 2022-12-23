@@ -1,6 +1,6 @@
 # Issue 4506: planarity ignores error code when adding edge
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4506
 
 Original creator: jason
 

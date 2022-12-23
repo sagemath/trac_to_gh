@@ -1,6 +1,6 @@
 # Issue 3625: fix latex2html'ing of the sage docs, which is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3625
 
 Original creator: was
 

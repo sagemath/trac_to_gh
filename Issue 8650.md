@@ -1,6 +1,6 @@
 # Issue 8650: Extreme faces of Polyhedra are inconsistent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8650
 
 Original creator: novoselt
 

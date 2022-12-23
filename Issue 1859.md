@@ -1,6 +1,6 @@
 # Issue 1859: 3d and 2d graphics -- some unification
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1859
 
 Original creator: was
 

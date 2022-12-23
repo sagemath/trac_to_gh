@@ -1,6 +1,6 @@
 # Issue 9453: Implement Aurifeuillian factorization
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9453
 
 Original creator: jdemeyer
 

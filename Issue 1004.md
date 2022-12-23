@@ -1,6 +1,6 @@
 # Issue 1004: basic discrete dynamical systems functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1004
 
 Original creator: mhampton
 

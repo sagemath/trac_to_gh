@@ -1,6 +1,6 @@
 # Issue 4055: serious bug in polynomial multiplication
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4055
 
 Original creator: robertwb
 
@@ -34,7 +34,7 @@ I believe this got fixed by Tom Boothby at Sage Days 12, see #3056.  I'm ccing h
 
 
 ```
-[ghitza`@`artin ~]$ sage
+[ghitza@artin ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: sage: R.<x> = RR[]

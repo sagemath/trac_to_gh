@@ -1,6 +1,6 @@
 # Issue 2062: [with patch] add support for binary vectors (sd7 test ticket)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2062
 
 Original creator: mhansen
 

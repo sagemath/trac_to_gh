@@ -1,6 +1,6 @@
 # Issue 5146: implement MPolynomial_ideal.varierty() for GF(p) with p > than what Singular supports
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5146
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 5742: ATLAS.spkg: parallel make breaks on system with "real" sh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5742
 
 Original creator: mabshoff
 

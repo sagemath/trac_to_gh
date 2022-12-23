@@ -1,6 +1,6 @@
 # Issue 7172: ratpoints should check for gmp is installed, before including it.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7172
 
 Original creator: drkirkby
 

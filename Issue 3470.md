@@ -1,6 +1,6 @@
 # Issue 3470: [with spkg; needs review] add pyprocessing (=multiproccessing) to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3470
 
 Original creator: was
 

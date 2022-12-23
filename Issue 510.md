@@ -1,6 +1,6 @@
 # Issue 510: IPython crashes on "import sage.rings.real_mpfr"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/510
 
 Original creator: burcin
 

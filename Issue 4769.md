@@ -1,6 +1,6 @@
 # Issue 4769: add 5 people to devmap; update info for 2 people
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4769
 
 Original creator: mvngu
 

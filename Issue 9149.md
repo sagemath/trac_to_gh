@@ -1,6 +1,6 @@
 # Issue 9149: spelling error (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9149
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 8532: Optional package mpi4py-1.1.0 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8532
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 1957: [with spkg] Solaris 9 fixes for libfplll
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1957
 
 Original creator: mabshoff
 

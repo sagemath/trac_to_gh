@@ -1,6 +1,6 @@
 # Issue 9048: different behaviour of var in notebook and text version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9048
 
 Original creator: zimmerma
 

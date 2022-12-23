@@ -1,6 +1,6 @@
 # Issue 6930: [with patch, needs review] make 3d axes labels a little more precise
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6930
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 2975: opening ports to conservative -- breaks on some os x systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2975
 
 Original creator: was
 

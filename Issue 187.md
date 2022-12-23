@@ -1,6 +1,6 @@
 # Issue 187: [Pyrex] c-code mis-interpretation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/187
 
 Original creator: joel
 

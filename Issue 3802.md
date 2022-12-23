@@ -1,6 +1,6 @@
 # Issue 3802: notebook -- run server locally and logout then go to local server again and get KeyError in server log and internal server error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3802
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8993: Representation of polynomial quotient rings in Singular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8993
 
 Original creator: SimonKing
 

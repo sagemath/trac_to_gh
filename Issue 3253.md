@@ -1,6 +1,6 @@
 # Issue 3253: f.jacob() used to work to compute jacobian ideal. Now it doesn't
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3253
 
 Original creator: jxxcarlson
 

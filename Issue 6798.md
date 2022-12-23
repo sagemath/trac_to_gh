@@ -1,6 +1,6 @@
 # Issue 6798: fix doctest timeout in modules/vector_double_dense.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6798
 
 Original creator: drkirkby
 

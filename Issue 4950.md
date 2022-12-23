@@ -1,6 +1,6 @@
 # Issue 4950: Sage-3.2.3 won't build on mandriva 32-bit due to an issue with numpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4950
 
 Original creator: was
 
@@ -53,7 +53,7 @@ Command exited with non-zero status 2
 
 NOTE THAT:
 
-wstein`@`mandriva32:~/build/mandriva32/build/sage-3.2.3$ ./sage -python
+wstein@mandriva32:~/build/mandriva32/build/sage-3.2.3$ ./sage -python
 Python 2.5.2 (r252:60911, Jan  6 2009, 18:03:10)
 [GCC 4.3.2] on linux2
 Type "help", "copyright", "credits" or "license" for more information.

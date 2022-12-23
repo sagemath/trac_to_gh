@@ -1,6 +1,6 @@
 # Issue 4797: upgrade -- if upgrading Cython run -ba instead of -b
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4797
 
 Original creator: mabshoff
 

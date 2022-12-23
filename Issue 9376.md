@@ -1,6 +1,6 @@
 # Issue 9376: non-QQ base rings in modular symbols
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9376
 
 Original creator: rlm
 

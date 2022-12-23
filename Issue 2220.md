@@ -1,6 +1,6 @@
 # Issue 2220: irreducibility testing in relative extensions seems to be messed up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2220
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4286: [with patch, needs review] minor improvements to old integer code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4286
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 4949: Optionally build spkgs in $SAGE_BUILD_TMPDIR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4949
 
 Original creator: mabshoff
 

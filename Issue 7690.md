@@ -1,6 +1,6 @@
 # Issue 7690: maxima stats too many files on startup, which is a performance issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7690
 
 Original creator: was
 
@@ -75,7 +75,7 @@ Comment by was created at 2009-12-18 06:04:37
 
 
 ```
-On Wed, Dec 16, 2009 at 6:14 AM, Robert Dodier <robert.dodier`@`gmail.com> wrote:
+On Wed, Dec 16, 2009 at 6:14 AM, Robert Dodier <robert.dodier@gmail.com> wrote:
 
     Hello,
 

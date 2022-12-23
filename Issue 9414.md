@@ -1,6 +1,6 @@
 # Issue 9414: make the rational number field, consistent with other number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9414
 
 Original creator: rkirov
 

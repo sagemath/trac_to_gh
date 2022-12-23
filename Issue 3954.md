@@ -1,6 +1,6 @@
 # Issue 3954: bug in elliptic curve period_lattice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3954
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 4195: [with patch, needs review] implicit plotting for multivariate polynomial ideals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4195
 
 Original creator: malb
 

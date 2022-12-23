@@ -1,6 +1,6 @@
 # Issue 283: vmware -- create a deluxe SAGE vmware virtual machine
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/283
 
 Original creator: was
 

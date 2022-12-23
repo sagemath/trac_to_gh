@@ -1,6 +1,6 @@
 # Issue 9613: Add a spkg-ceck script to linbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9613
 
 Original creator: drkirkby
 

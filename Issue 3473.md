@@ -1,6 +1,6 @@
 # Issue 3473: sage has bad error messages when sage link doesn't exist.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3473
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 2495: Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2495
 
 Original creator: jsp
 

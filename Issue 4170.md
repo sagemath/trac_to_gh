@@ -1,6 +1,6 @@
 # Issue 4170: symbolic ring does not accept python longs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4170
 
 Original creator: robertwb
 

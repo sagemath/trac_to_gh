@@ -1,6 +1,6 @@
 # Issue 1451: segfault in permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1451
 
 Original creator: rlm
 

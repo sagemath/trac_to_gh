@@ -1,6 +1,6 @@
 # Issue 6425: GammaH constructor doesn't check the gens are units mod N
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6425
 
 Original creator: davidloeffler
 

@@ -1,6 +1,6 @@
 # Issue 5709: singular interface -- use a smaller file size cutoff on solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5709
 
 Original creator: was
 

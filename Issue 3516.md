@@ -1,6 +1,6 @@
 # Issue 3516: [new coercion] libSingular segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3516
 
 Original creator: mabshoff
 

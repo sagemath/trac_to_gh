@@ -1,6 +1,6 @@
 # Issue 1736: sturm_bound() not working on spaces of cusp forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1736
 
 Original creator: AlexGhitza
 

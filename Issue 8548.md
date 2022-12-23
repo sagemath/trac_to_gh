@@ -1,6 +1,6 @@
 # Issue 8548: Permutation : a bad error message in hyperoctahedral_double_coset_type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8548
 
 Original creator: giraudo
 

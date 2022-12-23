@@ -1,6 +1,6 @@
 # Issue 8939: matrix classes for flint polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8939
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 6898: update the installation guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6898
 
 Original creator: mvngu
 

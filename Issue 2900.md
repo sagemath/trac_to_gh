@@ -1,6 +1,6 @@
 # Issue 2900: matplotlib bug in imshow (probably fixed in new version)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2900
 
 Original creator: cwitty
 
@@ -14,7 +14,7 @@ Sage's current version of matplotlib has a bug, as reported by Fabio Tonti (http
 
 ```
 sage: from pylab import *
-sage: imshow([This is the Trac macro ** that was inherited from the migration called with arguments (0,0,0))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: imshow([[(0,0,0)]])
 sage: savefig('foo.png')
 Traceback (most recent call last):
 ...
@@ -120,7 +120,7 @@ This is now fixed, given #5448 (and perhaps long before that):
 
 ```
 sage: from pylab import *
-sage: imshow([This is the Trac macro ** that was inherited from the migration called with arguments (0,0,0))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: imshow([[(0,0,0)]])
 <matplotlib.image.AxesImage object at 0xa50f190>
 sage: savefig('foo.png')
 ```

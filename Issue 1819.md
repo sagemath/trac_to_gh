@@ -1,6 +1,6 @@
 # Issue 1819: move crypto.mq.MPolynomialSystem somewhere else
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1819
 
 Original creator: malb
 

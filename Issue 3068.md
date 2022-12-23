@@ -1,6 +1,6 @@
 # Issue 3068: empty matrices: smith_form() throws a RuntimeError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3068
 
 Original creator: dfdeshom
 

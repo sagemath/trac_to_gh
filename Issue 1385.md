@@ -1,6 +1,6 @@
 # Issue 1385: Re-organize number field element inheritance hierarchy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1385
 
 Original creator: robertwb
 

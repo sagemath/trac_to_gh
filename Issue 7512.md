@@ -1,6 +1,6 @@
 # Issue 7512: plot3d variable ranges should respect the named variable, if there is one
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7512
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9777: Addition of LaTeX and better support of SI prefixes on units module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9778
 
 Original creator: cousteau
 

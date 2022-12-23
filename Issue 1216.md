@@ -1,6 +1,6 @@
 # Issue 1216: cremona.homspace extension fails to compile on osx 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1216
 
 Original creator: mabshoff
 

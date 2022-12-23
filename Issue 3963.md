@@ -1,6 +1,6 @@
 # Issue 3963: [with patch, needs review] bug in converting Sage's rationals to Sympy rationals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3963
 
 Original creator: mhansen
 

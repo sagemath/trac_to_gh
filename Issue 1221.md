@@ -1,6 +1,6 @@
 # Issue 1221: Use Mathematica syntax for integration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1221
 
 Original creator: certik
 
@@ -68,12 +68,12 @@ Report not phishing
 Show original
 Message text garbled?
 Why is this spam/nonspam?
-chris`@`seberino.org	
+chris@seberino.org	
 W. Stein I wanted to commend you for leading Sage. I think it is a great idea...
 	
 Nov 19 (2 days ago)
 William Stein	
-On Nov 20, 2007 11:10 AM, seberino`@`spawar.navy.mil So do I. I think we should...
+On Nov 20, 2007 11:10 AM, seberino@spawar.navy.mil So do I. I think we should...
 	
 11:17 AM (20 hours ago)
 Ondrej Certik to sage-devel
@@ -86,10 +86,10 @@ Reply
 	
 	
 
-On Nov 20, 2007 8:17 PM, William Stein <wstein`@`gmail.com> wrote:
+On Nov 20, 2007 8:17 PM, William Stein <wstein@gmail.com> wrote:
 >
-> On Nov 20, 2007 11:10 AM, seberino`@`spawar.navy.mil
-> <seberino`@`spawar.navy.mil> wrote:
+> On Nov 20, 2007 11:10 AM, seberino@spawar.navy.mil
+> <seberino@spawar.navy.mil> wrote:
 > > > As to syntax, I think in Python we could use:
 > > > >>> integrate(cos(x), (x, -pi/2, pi/2))
 > > >  Because then you can
@@ -113,8 +113,8 @@ Ondrej
 - Show quoted text -
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-devel`@`googlegroups.com
-To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-devel@googlegroups.com
+To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-devel
 URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
 -~----------~----~----~----~------~----~------~--~---
@@ -134,8 +134,8 @@ Reply
 	
 	
 
-On Nov 20, 2007 2:10 PM, seberino`@`spawar.navy.mil
-<seberino`@`spawar.navy.mil> wrote:
+On Nov 20, 2007 2:10 PM, seberino@spawar.navy.mil
+<seberino@spawar.navy.mil> wrote:
 
 [snip]
 > >  Because then you can
@@ -158,8 +158,8 @@ Steve
 - Show quoted text -
 
 --~--~---------~--~----~------------~-------~--~----~
-To post to this group, send email to sage-devel`@`googlegroups.com
-To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+To post to this group, send email to sage-devel@googlegroups.com
+To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com
 For more options, visit this group at http://groups.google.com/group/sage-devel
 URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
 -~----------~----~----~----~------~----~------~--~---
@@ -180,10 +180,10 @@ Reply
 	
 	
 
-On Nov 20, 2007 11:44 PM, Stephen Forrest <stephen.forrest`@`gmail.com> wrote:
+On Nov 20, 2007 11:44 PM, Stephen Forrest <stephen.forrest@gmail.com> wrote:
 >
-> On Nov 20, 2007 2:10 PM, seberino`@`spawar.navy.mil
-> <seberino`@`spawar.navy.mil> wrote:
+> On Nov 20, 2007 2:10 PM, seberino@spawar.navy.mil
+> <seberino@spawar.navy.mil> wrote:
 >
 > [snip]
 > > >  Because then you can

@@ -1,6 +1,6 @@
 # Issue 4126: [with patch; not ready for review] improve sage <--> magma interface for number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4126
 
 Original creator: was
 
@@ -96,7 +96,7 @@ Attachment
 The following two hunks
 
 ```
-`@``@` -5300,6 +5301,14 `@``@`
+@@ -5300,6 +5301,14 @@
          return NumberField_cyclotomic_v1, (self.__n, self.variable_name())
 
      def _magma_init_(self):
@@ -116,7 +116,7 @@ The following two hunks
 and
 
 ```
-`@``@` -5306,7 +5306,7 `@``@`
+@@ -5306,7 +5306,7 @@
          # (2) it abuses how conversion works and throws in an extra define.
          # (3) a cyclo field in a funny generator wouldn't get converted to
          #     one with the right name via this.

@@ -1,6 +1,6 @@
 # Issue 8199: developer's guide: consistency overhaul
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8199
 
 Original creator: mvngu
 

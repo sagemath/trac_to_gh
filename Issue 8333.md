@@ -1,6 +1,6 @@
 # Issue 8333: Finite fields to new coercion model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8333
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 2964: Improvements to weyl_group.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2964
 
 Original creator: bump
 

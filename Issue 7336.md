@@ -1,6 +1,6 @@
 # Issue 7336: boehm_gc fails to build on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7336
 
 Original creator: mhansen
 

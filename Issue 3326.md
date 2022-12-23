@@ -1,6 +1,6 @@
 # Issue 3326: trailing question marks in %html blocks are mistreated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3326
 
 Original creator: jhpalmieri
 

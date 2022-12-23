@@ -1,6 +1,6 @@
 # Issue 7564: graph theory: examples on degree sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7564
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 6084: Improved p-adic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6084
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 2956: generic multivariate polynomials are buggy on exponent overflow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2956
 
 Original creator: cwitty
 

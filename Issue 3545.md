@@ -1,6 +1,6 @@
 # Issue 3545: [with patch, needs review] is_vertex_transitive for graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3545
 
 Original creator: rlm
 

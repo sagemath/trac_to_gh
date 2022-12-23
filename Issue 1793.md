@@ -1,6 +1,6 @@
 # Issue 1793: [with patch, needs careful review] Hilbert series, Hilbert polynomial, Laurent series expansion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1793
 
 Original creator: malb
 

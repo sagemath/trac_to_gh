@@ -1,6 +1,6 @@
 # Issue 7894: bzip2 does not always clear up before building
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7894
 
 Original creator: drkirkby
 

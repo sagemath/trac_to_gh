@@ -1,6 +1,6 @@
 # Issue 9428: Internationalize the Sage Notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9428
 
 Original creator: timdumol
 
@@ -444,7 +444,7 @@ I think that the pot file distributed in spkg package is not up-to-date but runn
 
 
 ```
-marik`@`um-bc107:/opt/sage/spkg/build/sagenb-0.8.2-dev-i18n/src/sagenb/sagenb$ pybabel extract -F ./babel.cfg . -o output.pot
+marik@um-bc107:/opt/sage/spkg/build/sagenb-0.8.2-dev-i18n/src/sagenb/sagenb$ pybabel extract -F ./babel.cfg . -o output.pot
 extracting messages from data/sage/html/base.html (encoding="utf-8")
 Traceback (most recent call last):
   File "/usr/bin/pybabel", line 8, in <module>

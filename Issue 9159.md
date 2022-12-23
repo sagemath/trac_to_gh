@@ -1,6 +1,6 @@
 # Issue 9159: (modular decomposition) Improvement to graph coloring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9159
 
 Original creator: ncohen
 

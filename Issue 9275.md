@@ -1,6 +1,6 @@
 # Issue 9275: 2 Bugs related to Simple Sage Server API
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9275
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3811: number fields in different polynomials compare differently
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3811
 
 Original creator: ncalexan
 

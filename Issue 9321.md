@@ -1,6 +1,6 @@
 # Issue 9321: Documentation for sum() function should indicate Python syntax *first*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9321
 
 Original creator: rlm
 

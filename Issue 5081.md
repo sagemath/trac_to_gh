@@ -1,6 +1,6 @@
 # Issue 5081: Make numpy play nice with Sage types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5081
 
 Original creator: jason
 

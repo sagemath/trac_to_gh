@@ -1,6 +1,6 @@
 # Issue 4148: Upgrade to givaro-3.2.13rc1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4148
 
 Original creator: cpernet
 

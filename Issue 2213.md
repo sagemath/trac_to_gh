@@ -1,6 +1,6 @@
 # Issue 2213: [with patch, needs review] Referee suggestions for graph patches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2213
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7902: scipy-0.7.p3: misbuilt silently, due to missing perl modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7902
 
 Original creator: tornaria
 
@@ -13,7 +13,7 @@ This is similar to #5517.
 The error reported by scipy-0.7.p3 is:
 
 ```
-Can't locate File/Copy.pm in `@`INC (`@`INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./copy_patches.pl line 2.
+Can't locate File/Copy.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ./copy_patches.pl line 2.
 ```
 
 However, the `spkg-install` here is actually a shell script which calls the perl script (`copy_patches.pl`), _but it doesn't check the exit status_. Therefore, even though the perl script is aborted, the spkg-install continues without a real warning.
@@ -30,7 +30,7 @@ Here's the complete diff for reference:
 diff -r 51b50077f1c9 -r a5fb4ead3bf9 SPKG.txt
 --- a/SPKG.txt  Wed Nov 11 21:59:39 2009 -0800
 +++ b/SPKG.txt  Tue Jan 12 03:08:14 2010 -0200
-`@``@` -7,6 +7,9 `@``@`
+@@ -7,6 +7,9 @@
  
  == Changelog ==
  
@@ -43,7 +43,7 @@ diff -r 51b50077f1c9 -r a5fb4ead3bf9 SPKG.txt
 diff -r 51b50077f1c9 -r a5fb4ead3bf9 copy_patches.pl
 --- a/copy_patches.pl   Wed Nov 11 21:59:39 2009 -0800
 +++ /dev/null   Thu Jan 01 00:00:00 1970 +0000
-`@``@` -1,21 +0,0 `@``@`
+@@ -1,21 +0,0 @@
 -#!/usr/bin/env perl
 -use File::Copy;
 -
@@ -68,7 +68,7 @@ diff -r 51b50077f1c9 -r a5fb4ead3bf9 copy_patches.pl
 diff -r 51b50077f1c9 -r a5fb4ead3bf9 copy_patches.sh
 --- /dev/null   Thu Jan 01 00:00:00 1970 +0000
 +++ b/copy_patches.sh   Tue Jan 12 03:08:14 2010 -0200
-`@``@` -0,0 +1,23 `@``@`
+@@ -0,0 +1,23 @@
 +#!/usr/bin/env bash
 +
 +# abort on error --- the spkg-install will catch it
@@ -95,7 +95,7 @@ diff -r 51b50077f1c9 -r a5fb4ead3bf9 copy_patches.sh
 diff -r 51b50077f1c9 -r a5fb4ead3bf9 spkg-install
 --- a/spkg-install      Wed Nov 11 21:59:39 2009 -0800
 +++ b/spkg-install      Tue Jan 12 03:08:14 2010 -0200
-`@``@` -1,9 +1,16 `@``@`
+@@ -1,9 +1,16 @@
  #!/bin/sh
  
 +if [ "$SAGE_LOCAL" = "" ]; then 
@@ -115,7 +115,7 @@ diff -r 51b50077f1c9 -r a5fb4ead3bf9 spkg-install
  
  # These flags confuse numpy's distutils.   In particular,
  # if they are set empty bad things happen.
-`@``@` -36,11 +43,6 `@``@`
+@@ -36,11 +43,6 @@
  
  cd src/
  

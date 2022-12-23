@@ -1,6 +1,6 @@
 # Issue 2189: improve functionality of matrix_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2189
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  jason kcrisman
 ```
 
 
-On Feb 16, 2008 10:19 PM, inerkor`@`gmail.com <inerkor`@`gmail.com> wrote:
+On Feb 16, 2008 10:19 PM, inerkor@gmail.com <inerkor@gmail.com> wrote:
 > 
 > Hello all.
 > 

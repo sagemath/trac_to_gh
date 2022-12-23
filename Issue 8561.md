@@ -1,6 +1,6 @@
 # Issue 8561: Implement PicklableFunction(interactive_function)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8561
 
 Original creator: nthiery
 

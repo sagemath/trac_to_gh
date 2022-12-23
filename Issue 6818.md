@@ -1,6 +1,6 @@
 # Issue 6818: [with patch; needs review] maxima interface gets dramatically slower over time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6818
 
 Original creator: was
 

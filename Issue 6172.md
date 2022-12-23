@@ -1,6 +1,6 @@
 # Issue 6172: add support for building FAT binaries to mpir
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6172
 
 Original creator: was
 

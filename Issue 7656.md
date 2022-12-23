@@ -1,6 +1,6 @@
 # Issue 7656: Bitset tricks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7656
 
 Original creator: jason
 

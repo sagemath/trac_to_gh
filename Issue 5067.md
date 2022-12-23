@@ -1,6 +1,6 @@
 # Issue 5067: linear_code -- four doctest failures in specture method='leon' exposed by #4588
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5067
 
 Original creator: was
 

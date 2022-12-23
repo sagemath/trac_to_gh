@@ -1,6 +1,6 @@
 # Issue 6239: fix ReST formatting for pydesign module ext_rep
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6239
 
 Original creator: mvngu
 

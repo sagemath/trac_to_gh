@@ -1,6 +1,6 @@
 # Issue 6283: Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing "make ptest" or "make ptestlong" doesn't kill some computers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6283
 
 Original creator: was
 

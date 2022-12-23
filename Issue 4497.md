@@ -1,6 +1,6 @@
 # Issue 4497: Implement the function log10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4497
 
 Original creator: TimothyClemans
 

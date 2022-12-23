@@ -1,6 +1,6 @@
 # Issue 596: sage wiki() doesn't close with ctl-C
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/596
 
 Original creator: wdj
 

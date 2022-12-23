@@ -1,6 +1,6 @@
 # Issue 9555: Series expansions at singularities don't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9555
 
 Original creator: fredrik.johansson
 

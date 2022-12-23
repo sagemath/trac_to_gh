@@ -1,6 +1,6 @@
 # Issue 2095: Simplification sometimes is wrong in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2095
 
 Original creator: moretti
 

@@ -1,6 +1,6 @@
 # Issue 5920: Implements view(object, format='pdf')
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5920
 
 Original creator: nthiery
 

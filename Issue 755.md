@@ -1,6 +1,6 @@
 # Issue 755: graphs: adjacency_matrix() does not call multiple_edges correctly.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/755
 
 Original creator: jason
 
@@ -21,7 +21,7 @@ Comment by jason created at 2007-09-28 19:15:20
 ```
 --- a/sage/graphs/graph.py      Fri Sep 28 13:48:48 2007 -0500
 +++ b/sage/graphs/graph.py      Fri Sep 28 14:06:51 2007 -0500
-`@``@` -3411,6 +3411,9 `@``@` class Graph(GenericGraph):
+@@ -3411,6 +3411,9 @@ class Graph(GenericGraph):
          represented by its position in the list returned by the vertices()
          function.
 
@@ -31,7 +31,7 @@ Comment by jason created at 2007-09-28 19:15:20
          EXAMPLE:
              sage: G = graphs.CubeGraph(4)
              sage: G.adjacency_matrix()
-`@``@` -3448,7 +3451,7 `@``@` class Graph(GenericGraph):
+@@ -3448,7 +3451,7 @@ class Graph(GenericGraph):
          from sage.rings.integer_mod_ring import IntegerModRing
          from sage.rings.integer_ring import IntegerRing
          from sage.matrix.constructor import matrix
@@ -40,7 +40,7 @@ Comment by jason created at 2007-09-28 19:15:20
              R = IntegerRing()
          else:
              R = IntegerModRing(2)
-`@``@` -3552,10 +3555,13 `@``@` class Graph(GenericGraph):
+@@ -3552,10 +3555,13 @@ class Graph(GenericGraph):
              [-1  0  0  1]
 
          """
@@ -55,7 +55,7 @@ Comment by jason created at 2007-09-28 19:15:20
          A = list(-M)
          S = [sum(M[i]) for i in range(M.nrows())]
          for i in range(len(A)):
-`@``@` -5344,8 +5350,8 `@``@` class DiGraph(GenericGraph):
+@@ -5344,8 +5350,8 @@ class DiGraph(GenericGraph):
 
      def adjacency_matrix(self, sparse=True):
          """

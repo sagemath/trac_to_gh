@@ -7,7 +7,7 @@
 
 CC was set to the Sun C compiler, and CXX to the Sun C++ compiler,  uses GNU flags with the Sun compiler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7034
 
 Original creator: drkirkby
 

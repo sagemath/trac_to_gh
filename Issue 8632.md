@@ -1,6 +1,6 @@
 # Issue 8632: .save ignores ymin etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8632
 
 Original creator: damm
 

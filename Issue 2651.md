@@ -1,6 +1,6 @@
 # Issue 2651: rewrite matrix() constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2651
 
 Original creator: jason
 

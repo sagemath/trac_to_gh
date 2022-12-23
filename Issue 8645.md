@@ -1,6 +1,6 @@
 # Issue 8645: maxima package fails to install ECL library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8645
 
 Original creator: burcin
 
@@ -38,7 +38,7 @@ The files are here:
 
 
 ```
-burcin`@`karr ~/sage/sage-4.3.2 $ ls ~/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/
+burcin@karr ~/sage/sage-4.3.2 $ ls ~/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/
 libmaxima.a  maxima.fasb  
 ```
 

@@ -1,6 +1,6 @@
 # Issue 2149: Rename BooleanPolynomialRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2149
 
 Original creator: malb
 

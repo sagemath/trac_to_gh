@@ -1,6 +1,6 @@
 # Issue 9487: Have an acurate description of what "supported platforms" are, and have one list - not numerous different ones.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9487
 
 Original creator: drkirkby
 

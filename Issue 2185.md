@@ -1,6 +1,6 @@
 # Issue 2185: [with patch, needs easy review] improvement to plotting digraphs with fixed heights
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2185
 
 Original creator: rlm
 

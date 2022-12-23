@@ -1,6 +1,6 @@
 # Issue 4011: notebook -- copying a worksheet on worksheet listings page results in the new worksheet being listed as running
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4011
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 8653: Command-line "advanced" help has wrong option name for randomized tests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8653
 
 Original creator: rbeezer
 

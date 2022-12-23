@@ -1,6 +1,6 @@
 # Issue 4655: doctest failure in plot.py with 3.2.1.rc0 on 64-bit SuSe linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4655
 
 Original creator: cremona
 
@@ -13,7 +13,7 @@ Keywords: plot
 This test fails in 3.2.1.rc0:
 
 ```
-jec`@`host-57-89%./sage -t  "devel/sage/sage/plot/plot.py"
+jec@host-57-89%./sage -t  "devel/sage/sage/plot/plot.py"
 sage -t  "devel/sage/sage/plot/plot.py"                     
 **********************************************************************
 File "/home/jec/sage-3.2.1.rc0/devel/sage/sage/plot/plot.py", line 2283:
@@ -41,8 +41,8 @@ Total time for all tests: 38.8 seconds
 on this machine:
 
 ```
-jec`@`host-57-89%cat /proc/version 
-Linux version 2.6.18.8-0.3-default (geeko`@`buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007
+jec@host-57-89%cat /proc/version 
+Linux version 2.6.18.8-0.3-default (geeko@buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007
 ```
 
 with this cpu (*4):

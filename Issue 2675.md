@@ -1,6 +1,6 @@
 # Issue 2675: remove aux and toc files from doc.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2675
 
 Original creator: mabshoff
 

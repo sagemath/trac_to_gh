@@ -1,6 +1,6 @@
 # Issue 4594: typos in files under sage/algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4594
 
 Original creator: mvngu
 

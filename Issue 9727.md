@@ -1,6 +1,6 @@
 # Issue 9727: RepresentationGraph method that generalizes IntervalGraph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9727
 
 Original creator: edward.scheinerman
 

@@ -1,6 +1,6 @@
 # Issue 919: creation of p-adic rings uses O(n^2) memory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/919
 
 Original creator: roed
 

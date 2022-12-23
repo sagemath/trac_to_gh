@@ -1,6 +1,6 @@
 # Issue 2244: [with patch; needs review] add a randomize=False option to the plot command, to avoid "wiggle" in animations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2244
 
 Original creator: was
 
@@ -109,7 +109,7 @@ This gives the following reject:
 
 --- plot.py
 +++ plot.py
-`@``@` -3284,8 +3284,9 `@``@` class PlotFactory(GraphicPrimitiveFactor
+@@ -3284,8 +3284,9 @@ class PlotFactory(GraphicPrimitiveFactor
          200
          sage: P          # render
  

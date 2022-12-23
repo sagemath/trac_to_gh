@@ -1,6 +1,6 @@
 # Issue 5937: graph theory -- showing the result of a database query with_picture=True is totally broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5937
 
 Original creator: was
 

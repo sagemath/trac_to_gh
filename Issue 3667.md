@@ -1,6 +1,6 @@
 # Issue 3667: [with patch; needs (easy) review] notebook -- if user history can't be loaded from disk make it blank (much better than making entire notebook not work at all)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3667
 
 Original creator: was
 

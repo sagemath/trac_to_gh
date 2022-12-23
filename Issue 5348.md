@@ -1,6 +1,6 @@
 # Issue 5348: Implements guard selection in sage -combinat qselect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5348
 
 Original creator: nthiery
 

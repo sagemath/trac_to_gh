@@ -1,6 +1,6 @@
 # Issue 8325: Sphinx warning: 'Could not parse cython argspec'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8325
 
 Original creator: mpatel
 

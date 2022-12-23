@@ -1,6 +1,6 @@
 # Issue 2953: gcc 4.3/Itanium: fix givaro 3.2.10.rc3 build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2953
 
 Original creator: mabshoff
 

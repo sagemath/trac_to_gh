@@ -1,6 +1,6 @@
 # Issue 5679: fix a bug in solve and polynomial generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5679
 
 Original creator: was
 
@@ -62,7 +62,7 @@ input variables, then it works as before:
 
 >>> R.<x0,x1,x2> = PolynomialRing(RR, 3)
 >>> solve([symbolic_expression(x0) == 0], x0, x1, x2)
-[This is the Trac macro *x0 == 0, x1 == r10, x2 == r9* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x0 == 0, x1 == r10, x2 == r9-macro)
+[[x0 == 0, x1 == r10, x2 == r9]]
 
 I don't think killing the typecheck is the way to go, but maybe
 extending it to cover the polynomial elements.
@@ -117,7 +117,7 @@ But
 
 ```
 sage: solve([symbolic_expression(x0) == 0, 0==0], [SR(x0), SR(x1), SR(x2)])
-[This is the Trac macro *x0 == 0, x1 == r2, x2 == r1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#x0 == 0, x1 == r2, x2 == r1-macro)
+[[x0 == 0, x1 == r2, x2 == r1]]
 ```
 
 

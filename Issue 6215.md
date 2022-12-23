@@ -1,6 +1,6 @@
 # Issue 6215: Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6215
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 1325: 2.8.14/Solaris: rings/polynomial/multi_polynomial_libsingular.pyx doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1325
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: malb
 See also http://groups.google.com/group/sage-devel/t/2ebfa37291bcb6e4
 
 ```
-mabshoff`@`neron sage-2.8.14$ ./sage -t -gdb  devel/sage/rings/polynomial/multi_polynomial_libsingular.pyx
+mabshoff@neron sage-2.8.14$ ./sage -t -gdb  devel/sage/rings/polynomial/multi_polynomial_libsingular.pyx
 ERROR: File ./devel/sage/rings/polynomial/multi_polynomial_libsingular.pyx is missing
 exit code: 1
 
@@ -21,7 +21,7 @@ The following tests failed:
 
         ./devel/sage/rings/polynomial/multi_polynomial_libsingular.pyx
 Total time for all tests: 0.0 seconds
-mabshoff`@`neron sage-2.8.14$ ./sage -t -gdb  devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx
+mabshoff@neron sage-2.8.14$ ./sage -t -gdb  devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx
 sage -t -gdb devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx
 ********************************************************************************
 Type r at the (gdb) prompt to run the doctests.
@@ -100,7 +100,7 @@ Total time for all tests: 42.7 seconds
 Some more observations:
 
 ```
-mabshoff`@`neron sage-2.8.14$ ./sage
+mabshoff@neron sage-2.8.14$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.14, Release Date: 2007-11-24                      |
@@ -128,7 +128,7 @@ SAGE will now terminate (sorry).
 
 When using ZZ as a coefficient ring the problem goes away:
 
-mabshoff`@`neron sage-2.8.14$ ./sage
+mabshoff@neron sage-2.8.14$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.14, Release Date: 2007-11-24                      |
@@ -158,7 +158,7 @@ sage:
 These issues seems to rely on matrices, i.e. "just" polynomials does
 work:
 
-mabshoff`@`neron sage-2.8.14$ ./sage
+mabshoff@neron sage-2.8.14$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.14, Release Date: 2007-11-24                      |

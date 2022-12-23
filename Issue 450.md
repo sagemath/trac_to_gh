@@ -1,6 +1,6 @@
 # Issue 450: clisp build fixes for Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/450
 
 Original creator: mabshoff
 

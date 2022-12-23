@@ -1,6 +1,6 @@
 # Issue 9501: Make an @fork decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9501
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  mvngu
 Simon King mentioned that sometimes his code crashes/leaks/etc.  So make it so one can do:
 
 ```
-`@`fork
+@fork
 def f(x,y,z,...):
     ...
 ```

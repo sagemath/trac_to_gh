@@ -1,6 +1,6 @@
 # Issue 5683: Inverse operation for matrices over non integral domain
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5683
 
 Original creator: klee
 

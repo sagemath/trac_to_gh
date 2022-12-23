@@ -1,6 +1,6 @@
 # Issue 9760: Adjust spkg/standard/deps to build Python before zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9761
 
 Original creator: mpatel
 
@@ -165,7 +165,7 @@ Comment by leif created at 2010-08-18 14:55:12
 
 if test $# -ne 0
 then
-   python makemakefile.py "$`@`" > makefile
+   python makemakefile.py "$@" > makefile
 else
    python makemakefile.py > makefile
 fi
@@ -398,7 +398,7 @@ For now, I just meant:
 ```diff
 --- deps.orig	2010-08-19 01:30:33.000000000 +0200
 +++ deps	2010-08-19 03:00:48.000000000 +0200
-`@``@` -129,6 +129,12 `@``@`
+@@ -129,6 +129,12 @@
  			 $(INST)/$(DIR)
  	$(INSTALL) "$(SAGE_SPKG) $(SAGE_SCRIPTS) 2>&1" "tee -a $(SAGE_LOGS)/$(SAGE_SCRIPTS).log"
  
@@ -411,7 +411,7 @@ For now, I just meant:
  ########################################
  # Building normal packages
  ########################################
-`@``@` -374,7 +380,7 `@``@`
+@@ -374,7 +380,7 @@
  
  # zn_poly really does depend on Python, despite this is far from obvious.
  # The 'configure' script in zn_poly calls Python to make a 'makefile'
@@ -420,7 +420,7 @@ For now, I just meant:
  	$(INSTALL) "$(SAGE_SPKG) $(ZNPOLY) 2>&1" "tee -a $(SAGE_LOGS)/$(ZNPOLY).log"
  
  # setuptools forgets to update easy-install.pth during parallel
-`@``@` -468,7 +474,7 `@``@`
+@@ -468,7 +474,7 @@
  	$(INSTALL) "$(SAGE_SPKG) $(SAGE) 2>&1" "tee -a $(SAGE_LOGS)/$(SAGE).log"
  
  # Do not remove PYTHON below -- see trac 9368

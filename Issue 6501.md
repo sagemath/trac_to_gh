@@ -1,6 +1,6 @@
 # Issue 6501: [with SPKG, needs review] Coin-or CLP/CBC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6501
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 8491: incorret latex produced for some symbolic expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8491
 
 Original creator: mhansen
 

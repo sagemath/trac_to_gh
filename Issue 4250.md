@@ -1,6 +1,6 @@
 # Issue 4250: In QQ[t], 2**t should raise an error, but it crashes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4250
 
 Original creator: SimonKing
 

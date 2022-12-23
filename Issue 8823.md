@@ -1,6 +1,6 @@
 # Issue 8823: Fix Cayley table doctest failure in group theory tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8823
 
 Original creator: rbeezer
 

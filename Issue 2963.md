@@ -1,6 +1,6 @@
 # Issue 2963: make it so that strings pass as arguments and keyword arguments for the expect interfaces are passed down as string.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2963
 
 Original creator: mhansen
 

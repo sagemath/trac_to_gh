@@ -1,6 +1,6 @@
 # Issue 1549: Sage 2.9: fix optional doctests in tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1549
 
 Original creator: mabshoff
 

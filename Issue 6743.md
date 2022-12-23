@@ -1,6 +1,6 @@
 # Issue 6743: port Sage to Microsoft Windows (via Cygwin)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6743
 
 Original creator: was
 
@@ -3219,7 +3219,7 @@ and the more long
 **********************************************************************
 Tests run before process failed:
 sage: from sage.tests.interrupt import return_exception ## line 74 ##
-sage: `@`return_exception
+sage: @return_exception
 def raise_interrupt():
     raise KeyboardInterrupt("just testing") ## line 75 ##
 sage: raise_interrupt() ## line 78 ##
@@ -3363,14 +3363,14 @@ Comment by jpflori created at 2013-03-30 21:39:59
 
 
 ```
-jp`@`THINKPAD ~
+jp@THINKPAD ~
 $ echo > /dev/null
 
-jp`@`THINKPAD ~
+jp@THINKPAD ~
 $ ls -l /dev/null
 crw-rw-rw- 1 jp None 1, 3 30 mars  22:37 /dev/null
 
-jp`@`THINKPAD ~
+jp@THINKPAD ~
 $ 
 ```
 

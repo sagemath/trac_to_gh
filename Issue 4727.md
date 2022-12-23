@@ -1,6 +1,6 @@
 # Issue 4727: list method on relative number field elements is broken -- it doesn't satisfy the most basic consistency check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4727
 
 Original creator: was
 

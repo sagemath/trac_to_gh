@@ -1,6 +1,6 @@
 # Issue 3868: matrix_modn_dense -- numerical noise
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3868
 
 Original creator: was
 

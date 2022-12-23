@@ -1,6 +1,6 @@
 # Issue 8623: User interface to lcalc library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8623
 
 Original creator: rishi
 

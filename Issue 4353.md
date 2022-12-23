@@ -1,6 +1,6 @@
 # Issue 4353: [with patch, needs review] make sure garbage collection is reenabled after an exception in timeit.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4353
 
 Original creator: mhansen
 

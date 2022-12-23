@@ -1,6 +1,6 @@
 # Issue 9251: Lazy attribute does not properly handles the doc of Cython methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9251
 
 Original creator: hivert
 

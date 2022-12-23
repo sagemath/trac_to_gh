@@ -1,6 +1,6 @@
 # Issue 7694: change pickle jar doctest to make it a bit more robust and flexible...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7694
 
 Original creator: was
 

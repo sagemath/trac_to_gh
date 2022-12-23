@@ -1,6 +1,6 @@
 # Issue 1571: corrections for tut.tex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1571
 
 Original creator: mabshoff
 
@@ -15,7 +15,7 @@ Minh Nguyen send the following patch
 13:05:11.000000000 +1100
 +++ sage-2.8.16/devel/doc-main/tut/tut.tex      2007-12-20
 15:17:58.000000000 +1100
-`@``@` -191,7 +191,7 `@``@`
+@@ -191,7 +191,7 @@
  \ref{sec:compile}), and
  \item
  {\bf Scripts:}
@@ -24,7 +24,7 @@ Minh Nguyen send the following patch
  (see Section~\ref{sec:standalone}).
  \end{itemize}%two are needed for some weird reason
 
-`@``@` -403,7 +403,7 `@``@`
+@@ -403,7 +403,7 @@
 
  Semicolons are not needed at the ends of lines; a line is
  in most cases ended by a newline.   However, you can put multiple
@@ -33,7 +33,7 @@ Minh Nguyen send the following patch
  \begin{verbatim}
  sage: a = 5; b = a + 3; c = b^2; c
  64
-`@``@` -694,7 +694,7 `@``@`
+@@ -694,7 +694,7 @@
  integer literals beginning with a 0 as octal numbers.
 
  The field of $p$-adic numbers is implemented as well:
@@ -42,7 +42,7 @@ Minh Nguyen send the following patch
  change its precision.
 
  \begin{verbatim}
-`@``@` -706,7 +706,7 `@``@`
+@@ -706,7 +706,7 @@
  10*11^-2 + 5*11^-1 + 4 + 2*11 + O(11^18)
  \end{verbatim}
 
@@ -51,7 +51,7 @@ Minh Nguyen send the following patch
  fields or number fields other than $\Q$. The interested reader is
  invited to ask the experts on the mailing for further details.
 
-`@``@` -761,8 +761,8 `@``@`
+@@ -761,8 +761,8 @@
  Univariate Polynomial Ring in x over Rational Field
  \end{verbatim}%link
 
@@ -62,7 +62,7 @@ Minh Nguyen send the following patch
  known to \sage, so you cannot use it to enter a polynomial (such as $x^2+1$)
  belonging to $R$.
 
-`@``@` -1486,7 +1486,7 `@``@`
+@@ -1486,7 +1486,7 @@
  \langle (1,2,3)(4,5), (3,4) \rangle
  \end{verbatim}
 
@@ -71,7 +71,7 @@ Minh Nguyen send the following patch
 
  \begin{verbatim}
  sage: G = PermutationGroup([[(1,2),(3,4)], [(1,2,3)]])
-`@``@` -1789,7 +1789,7 `@``@`
+@@ -1789,7 +1789,7 @@
  sage: p = polygon(L, rgbcolor=(1/8,3/4,1/2))
  sage: p.save()
  \end{verbatim}
@@ -80,7 +80,7 @@ Minh Nguyen send the following patch
 
      A blue figure 8:
 
-`@``@` -1899,7 +1899,7 `@``@`
+@@ -1899,7 +1899,7 @@
                   2 (x - 1)   2 (x + 1)
  \end{verbatim}
 
@@ -89,7 +89,7 @@ Minh Nguyen send the following patch
 
  \begin{verbatim}
  sage: s = var("s")
-`@``@` -1916,7 +1916,7 `@``@`
+@@ -1916,7 +1916,7 @@
  \index{Laplace transform solution of DEs}
 
  In this section, we provide a few details which are useful to teaching a lower
@@ -98,7 +98,7 @@ Minh Nguyen send the following patch
 
  The displacement from equilibrium (respectively)
  for a coupled spring attached to a wall on the left
-`@``@` -2674,7 +2674,7 `@``@`
+@@ -2674,7 +2674,7 @@
  a trivial command in the system, in order to start up the
  server for that program.  The most relavant time is the wall time.
  However, if there is a significant difference between the
@@ -107,7 +107,7 @@ Minh Nguyen send the following patch
  a performance issue worth looking into.
 
  %skip
-`@``@` -2722,7 +2722,7 `@``@`
+@@ -2722,7 +2722,7 @@
  \index{error mesaages in SAGE}
 
  When something goes wrong, you will usually see a Python
@@ -116,7 +116,7 @@ Minh Nguyen send the following patch
  raised the exception.  Often you see the name of the exception, e.g.,
  {\tt NameError} or \code{ValueError} (see the Python Reference Manual
  \cite{Py} for a complete list of exceptions).  For example,
-`@``@` -2912,7 +2912,7 `@``@`
+@@ -2912,7 +2912,7 @@
          return self.ambient_vector_space()(v)
  \end{verbatim}
  The \code{coordinate_vector} function coerces its
@@ -125,7 +125,7 @@ Minh Nguyen send the following patch
  computing the vector of coefficients of $v$ in terms
  of $V$.  The space~$V$ is already ambient since it's
  just $\Q^3$.  There is also a \code{coordinate_vector}
-`@``@` -3105,7 +3105,7 `@``@`
+@@ -3105,7 +3105,7 @@
  you've defined in the current session as a dictionary in the given
  \code{sessionname}.  (In the rare case when a variable does not support saving,
  it is simply not saved to the dictionary.)  The resulting file
@@ -134,7 +134,7 @@ Minh Nguyen send the following patch
  object that was saved.   When you load the objects saved in a session,
  you get a dictionary whose keys are the variables names and whose
  values are the objects.
-`@``@` -3176,7 +3176,7 `@``@`
+@@ -3176,7 +3176,7 @@
  by William Stein, SAGE seminar, 6-9-2006 (notes by D. Joyner).
 
 -The SAGE notebook is run by typing
@@ -142,7 +142,7 @@ Minh Nguyen send the following patch
 
  %skip
  \begin{verbatim}
-`@``@` -3237,8 +3237,8 `@``@`
+@@ -3237,8 +3237,8 @@
  using the ``add" link in the left-hand panel.
 
  Your worksheet can be emailed to someone
@@ -153,7 +153,7 @@ Minh Nguyen send the following patch
 
  How does the notebook interface work?
 
-`@``@` -3266,7 +3266,7 `@``@`
+@@ -3266,7 +3266,7 @@
  ----------------------                    .
  \end{verbatim}
 
@@ -162,7 +162,7 @@ Minh Nguyen send the following patch
  browser box, type \code{cmd?} and now hit \verb+<esc>+ (not
  \verb+<shift-enter>+).
 
-`@``@` -3332,17 +3332,17 `@``@`
+@@ -3332,17 +3332,17 @@
  program, since it {\em is} running that program.  In particular, you can
  load complicated PARI programs and run them.
  In contrast, the PARI interface (via the C library) is much more restrictive;
@@ -183,7 +183,7 @@ Minh Nguyen send the following patch
  object off of the PARI stack, hence the stack never grows.  However,
  each object must not exceed 100MB in size, or the stack will overflow
  when the object is being created.  This extra copying does impose
-`@``@` -3709,7 +3709,7 `@``@`
+@@ -3709,7 +3709,7 @@
  Note that \sage will recompile \code{factorial.spyx} if you quit and
  restart \sage.  The compiled shared object library is stored under
  \code{\$HOME/.sage/temp/hostname/pid/spyx}.  These files are deleted
@@ -192,7 +192,7 @@ Minh Nguyen send the following patch
 
  {\em NO} \sage preparsing is applied to spyx files, e.g., \code{1/3}
  will result in 0 in a spyx file instead of the rational
-`@``@` -3964,7 +3964,7 `@``@`
+@@ -3964,7 +3964,7 @@
 
  \index{sequence!creating a}
  Sequences are a third list-oriented \SAGE type. Unlike lists and tuples,
@@ -201,7 +201,7 @@ Minh Nguyen send the following patch
  mutable, but using the \code{Sequence} class method
  \code{set_immutable}, it can be set to be immutable, as the following
  example illustrates. All elements of a sequence have a common parent,
-`@``@` -4050,7 +4050,7 `@``@`
+@@ -4050,7 +4050,7 @@
  sage: d.items()
  [(1, 5), ('sage', 17), (Integer Ring, Finite Field of size 7)]
  \end{verbatim}
@@ -210,7 +210,7 @@ Minh Nguyen send the following patch
  dictionary:
  \begin{verbatim}
  sage: d = {2:4, 3:9, 4:16}
-`@``@` -4216,9 +4216,9 `@``@`
+@@ -4216,9 +4216,9 @@
  \end{verbatim}
  Of course this is not an efficient implementation
  of the Legendre symbol!  It is meant to illustrate
@@ -222,7 +222,7 @@ Minh Nguyen send the following patch
  via a C-library call to PARI.
 
  \index{<=}\index{>=}
-`@``@` -4269,7 +4269,7 `@``@`
+@@ -4269,7 +4269,7 @@
  In the following two lines the first equality is \code{False} because
  there is no {\em canonical} morphism $\Q\to \F_5$, hence no canonical
  way to compare the $1$ in $\F_5$ to the $1 \in \Q$.  In contrast,
@@ -232,7 +232,7 @@ is \code{True}.
  Note also that the order doesn't matter.
  \begin{verbatim}
  sage: GF(5)(1) == QQ(1); QQ(1) == GF(5)(1)
-`@``@` -4643,7 +4643,7 `@``@`
+@@ -4643,7 +4643,7 @@
  still obey the standard Python rules when writing packages that will
  be imported into \SAGE.
 

@@ -1,6 +1,6 @@
 # Issue 2002: creating a fresh new notebook in sage-2.10.1.rc3 is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2002
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8415: bug in complex period lattice
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8415
 
 Original creator: robertwb
 
@@ -110,7 +110,7 @@ sage: (r-s).exactify()    # hangs
 It's  in the QQbqr code...    The actual hanging is happening in a call to pari's nffactor on line 1632 of qqbar.py.  So I think it's yet another manifestation of pari's nnffactor bugs:
 
 ```
-jec`@`selmer%sage -gp
+jec@selmer%sage -gp
 ...
                   GP/PARI CALCULATOR Version 2.3.3 (released)
          amd64 running linux (x86-64/GMP-4.2.1 kernel) 64-bit version

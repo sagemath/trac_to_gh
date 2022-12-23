@@ -1,6 +1,6 @@
 # Issue 3478: clisp picks up wrong dvipdf
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3478
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 4523: browser cache not cleared when restarting the worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4523
 
 Original creator: jason
 

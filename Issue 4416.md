@@ -1,6 +1,6 @@
 # Issue 4416: Sage 3.2.a2: optional doctest failure in sage/rings/arith.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4416
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -long -optional devel/sage/sage/rings/arith.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -long -optional devel/sage/sage/rings/arith.py
 sage -t -long -optional devel/sage/sage/rings/arith.py      Traceback (most recent call last):
   File "/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/.doctest_arith.py", line 2453, in <module>
     globs=globals())

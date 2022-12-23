@@ -1,6 +1,6 @@
 # Issue 875: further work needed on frast Sage --> PARI int conversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/875
 
 Original creator: was
 
@@ -19,7 +19,7 @@ Assignee: somebody
 22:44 < cwitty_>   current stack size: 8000000 (7.629 Mbytes)
 22:44 < cwitty_>   [hint] you can increase GP stack with allocatemem()
 22:44 < cwitty_> /home/cwitty/sage/local/bin/sage-sage: line 205: 25703 Aborted
-                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 22:44 < cwitty_> (This is after I applied the patch from #467.)
 22:45 < williamstein> weird.
 22:45 < williamstein> it should automatically double *if* the author correctly uses _sig_on/_sig_off

@@ -1,6 +1,6 @@
 # Issue 4282: [with patch, needs review] symbolic minpoly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4282
 
 Original creator: robertwb
 

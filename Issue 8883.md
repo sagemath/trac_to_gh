@@ -1,6 +1,6 @@
 # Issue 8883: Implement morphism.register_as_conversion()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8883
 
 Original creator: nthiery
 

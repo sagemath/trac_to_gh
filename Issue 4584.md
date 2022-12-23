@@ -1,6 +1,6 @@
 # Issue 4584: [with patch; needs review] remove doctest cruft -- delete sage-doctest_old_ver
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4584
 
 Original creator: was
 

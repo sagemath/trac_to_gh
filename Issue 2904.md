@@ -1,6 +1,6 @@
 # Issue 2904: sage/matrix/matrix_misc.py has no copyright info
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2904
 
 Original creator: dfdeshom
 

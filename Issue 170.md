@@ -1,6 +1,6 @@
 # Issue 170: QQ('1/0')
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/170
 
 Original creator: was
 
@@ -19,7 +19,7 @@ Fixed, along with some other related problems.  Basically it's necessary to prog
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1168651986 28800
 # Node ID 931f47e34e11519acdd0b2bb8ae0c811c252e13f
 # Parent  4ee645ba1eb61c95dbc383f05e8ea09da8682b7a
@@ -28,7 +28,7 @@ Fix trac bug #170 -- QQ('1/0') plus fix some other related issues with rational.
 diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
 --- a/sage/rings/rational.pyx   Fri Jan 12 16:29:26 2007 -0800
 +++ b/sage/rings/rational.pyx   Fri Jan 12 17:33:06 2007 -0800
-`@``@` -104,7 +104,26 `@``@` the_rational_ring = sage.rings.rational_
+@@ -104,7 +104,26 @@ the_rational_ring = sage.rings.rational_
  the_rational_ring = sage.rings.rational_field.Q
      
  cdef class Rational(sage.structure.element.FieldElement):
@@ -56,7 +56,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
      def __new__(self, x=None, int base=0):
          global the_rational_ring
          mpq_init(self.value)
-`@``@` -149,21 +168,25 `@``@` cdef class Rational(sage.structure.eleme
+@@ -149,21 +168,25 @@ cdef class Rational(sage.structure.eleme
  
          elif isinstance(x, long):
              mpz_set_pylong(mpq_numref(self.value), x)
@@ -85,7 +85,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
              else:
                  xstr = x.str(base)
                  if '.' in xstr:
-`@``@` -171,21 +194,21 `@``@` cdef class Rational(sage.structure.eleme
+@@ -171,21 +194,21 @@ cdef class Rational(sage.structure.eleme
                      p = base**exp
                      pstr = '1'+'0'*exp
                      s = xstr.replace('.','') +'/'+pstr
@@ -113,7 +113,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
              
          elif hasattr(x, "_rational_"):
              set_from_Rational(self, x._rational_())
-`@``@` -194,12 +217,10 `@``@` cdef class Rational(sage.structure.eleme
+@@ -194,12 +217,10 @@ cdef class Rational(sage.structure.eleme
              s = "%s/%s"%x
              if x[1] == 0:
                  raise ValueError, "denominator must not be 0"
@@ -128,7 +128,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
  
          elif isinstance(x, list) and len(x) == 1:
              self.__set_value(x[0], base)
-`@``@` -207,7 +228,8 `@``@` cdef class Rational(sage.structure.eleme
+@@ -207,7 +228,8 @@ cdef class Rational(sage.structure.eleme
          elif isinstance(x, sage.libs.pari.all.pari_gen):
              # TODO: figure out how to convert to pari integer in base 16
              s = str(x)
@@ -138,7 +138,7 @@ diff -r 4ee645ba1eb6 -r 931f47e34e11 sage/rings/rational.pyx
                  raise TypeError, "Unable to coerce %s (%s) to Rational"%(x,type(x))
              
          else:
-`@``@` -543,8 +565,10 `@``@` cdef class Rational(sage.structure.eleme
+@@ -543,8 +565,10 @@ cdef class Rational(sage.structure.eleme
  
      def set_str(self, s, base=10):
          valid = mpq_set_str(self.value, s, base)

@@ -1,6 +1,6 @@
 # Issue 1702: memleak in fplll.[pyx|pxi] in "void ZZ_mat_delete"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1702
 
 Original creator: mabshoff
 

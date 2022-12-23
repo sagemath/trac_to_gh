@@ -1,6 +1,6 @@
 # Issue 591: fix the documentation coverage of rings/number_fields/number_field.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/591
 
 Original creator: was
 

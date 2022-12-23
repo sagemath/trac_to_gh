@@ -1,6 +1,6 @@
 # Issue 5164: NTL.spkg: Set SHAREDFALGS to -fnocommon on Darwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5164
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9969: Flaky doctest in sage/interfaces/r.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9970
 
 Original creator: mpatel
 

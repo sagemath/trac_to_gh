@@ -1,6 +1,6 @@
 # Issue 7285: remove hgmerge from list of installed scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7285
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5177: Notebook keeps directories for deleted cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5177
 
 Original creator: kcrisman
 

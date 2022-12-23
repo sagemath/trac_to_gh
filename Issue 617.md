@@ -1,6 +1,6 @@
 # Issue 617: hyperelliptic_padic.py failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/617
 
 Original creator: robertwb
 

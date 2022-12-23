@@ -1,6 +1,6 @@
 # Issue 8128: UnicodeDecodeError with %latex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8128
 
 Original creator: mpatel
 

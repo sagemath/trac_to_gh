@@ -1,6 +1,6 @@
 # Issue 5896: [with patch, needs trivial review] Documentation fix for lcalc interface.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5896
 
 Original creator: craigcitro
 

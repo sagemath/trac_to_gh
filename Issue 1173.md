@@ -1,6 +1,6 @@
 # Issue 1173: implement numerical evaluation of erf at complex arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1173
 
 Original creator: was
 

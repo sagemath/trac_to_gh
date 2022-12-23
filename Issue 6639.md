@@ -1,6 +1,6 @@
 # Issue 6639: Documentation for Lyndon words, with patch, needs review
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6639
 
 Original creator: pmcnamara
 

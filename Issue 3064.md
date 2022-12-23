@@ -1,6 +1,6 @@
 # Issue 3064: empty matrices: density() function throws a ZeroDivisionError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3064
 
 Original creator: dfdeshom
 

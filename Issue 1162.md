@@ -1,6 +1,6 @@
 # Issue 1162: [with patch] fix issues in RealField <-> RQDF conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1162
 
 Original creator: zimmerma
 

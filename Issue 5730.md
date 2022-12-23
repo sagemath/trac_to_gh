@@ -1,6 +1,6 @@
 # Issue 5730: Add a line to the output of "sage -coverage ." which lists how many more tests are needed to get to 75% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5730
 
 Original creator: was
 

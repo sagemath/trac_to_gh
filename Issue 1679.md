@@ -1,6 +1,6 @@
 # Issue 1679: two documentation typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1679
 
 Original creator: was
 

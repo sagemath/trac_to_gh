@@ -1,6 +1,6 @@
 # Issue 9331: can't build PDF version of reference manual in Sage 4.4.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9331
 
 Original creator: mvngu
 
@@ -21,8 +21,8 @@ Overfull \hbox (41.96407pt too wide) in paragraph at lines 73487--73489
 sult of \T1/pcr/m/n/10 UniqueRepresentation.__classcall__()
 [890]
 ! TeX capacity exceeded, sorry [input stack size=5000].
-\reserved`@`a ->\def \reserved`@`a
-                               *{\ttl`@`assign`@`i {\`@`tempskipb }}\reserved`@`a
+\reserved@a ->\def \reserved@a
+                               *{\ttl@assign@i {\@tempskipb }}\reserved@a
 l.73597 ...{UniqueRepresentation}} and unpickling}
 
 !  ==> Fatal error occurred, no output PDF file produced!

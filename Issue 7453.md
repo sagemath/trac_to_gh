@@ -1,6 +1,6 @@
 # Issue 7453: add sandpile experimental package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7453
 
 Original creator: mhampton
 
@@ -130,7 +130,7 @@ It appears to make use of a GNU specific option to 'grep' (either that, or someo
 
 
 ```
-drkirkby`@`swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
+drkirkby@swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
 Installing http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
 Calling sage-spkg on http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
 Warning: Attempted to overwrite SAGE_ROOT environment variable

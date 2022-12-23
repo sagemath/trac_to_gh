@@ -1,6 +1,6 @@
 # Issue 7315: Can only forget one GenericDeclaration at a time for some reason
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7315
 
 Original creator: kcrisman
 

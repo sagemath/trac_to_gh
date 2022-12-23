@@ -1,6 +1,6 @@
 # Issue 3169: matrix augment and stack should take vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3169
 
 Original creator: jason
 

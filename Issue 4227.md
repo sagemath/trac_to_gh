@@ -1,6 +1,6 @@
 # Issue 4227: Sage 3.1.3.alpha2: many Magma doctests are not option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4227
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8600: fibonacci tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8600
 
 Original creator: schilly
 

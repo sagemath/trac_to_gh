@@ -1,6 +1,6 @@
 # Issue 9843: Fix relevant 'make doc-pdf' warnings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9844
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 6963: follow up to #3133: fix ReST formatting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6963
 
 Original creator: mvngu
 

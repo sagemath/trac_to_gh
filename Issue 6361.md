@@ -1,6 +1,6 @@
 # Issue 6361: elliptic curves -- easy to fix mistake in docs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6361
 
 Original creator: was
 

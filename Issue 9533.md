@@ -1,6 +1,6 @@
 # Issue 9533: Update GSL to the latest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9533
 
 Original creator: drkirkby
 
@@ -65,7 +65,7 @@ I've run the doctests on sage.math. I was quite expecting to get a few failures 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1095.8 seconds
-kirkby`@`sage:/scratch/kirkby/sage-4.5$ 
+kirkby@sage:/scratch/kirkby/sage-4.5$ 
 ```
 
 
@@ -136,7 +136,7 @@ $ make ptestlong
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 2503.7 seconds
-[kirkby`@`bsd sage-4.5.rc1]$ 
+[kirkby@bsd sage-4.5.rc1]$ 
 ```
 
 
@@ -644,7 +644,7 @@ Suggestion:
 diff --git a/SPKG.txt b/SPKG.txt
 --- a/SPKG.txt
 +++ b/SPKG.txt
-`@``@` -38,17 +38,15 `@``@`
+@@ -38,17 +38,15 @@
 
  == Dependencies ==
 

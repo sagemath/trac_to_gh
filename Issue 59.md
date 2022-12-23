@@ -1,6 +1,6 @@
 # Issue 59: optimize elliptic curve arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/59
 
 Original creator: was
 

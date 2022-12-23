@@ -1,6 +1,6 @@
 # Issue 4012: notebook -- Text tab gives bad text version of worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4012
 
 Original creator: TimothyClemans
 

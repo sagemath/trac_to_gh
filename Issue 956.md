@@ -1,6 +1,6 @@
 # Issue 956: small memleak in the graph_isom code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/956
 
 Original creator: mabshoff
 

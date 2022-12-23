@@ -1,6 +1,6 @@
 # Issue 7549: Reference manual: class hierarchy, inherited members, underscore variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7549
 
 Original creator: mpatel
 
@@ -310,7 +310,7 @@ Building the PDF manual with `-u` on sage.math yields
 ```
 [4811] [4812] [4813] [4814] [4815] [4816]
 ! TeX capacity exceeded, sorry [pool size=1165811].
-\Hy`@`pstringdef ...->\edef #1{\pdfescapestring {#2}
+\Hy@pstringdef ...->\edef #1{\pdfescapestring {#2}
                                                   }
 l.392012 ...matrix0.Matrix.multiplicative_order}{}
                                                   \begin{methoddesc}{multipl...

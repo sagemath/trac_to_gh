@@ -1,6 +1,6 @@
 # Issue 9172: cygwin: numerical noise in sage/rings/integer.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9172
 
 Original creator: was
 

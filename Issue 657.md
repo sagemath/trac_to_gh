@@ -1,6 +1,6 @@
 # Issue 657: Strange is_zero behavior for symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/657
 
 Original creator: robertwb
 
@@ -12,7 +12,7 @@ This may be due to how cmp is implemented (to produce symbolic expressions).
 
 
 ```
-On Aug 14, 2007, at 2:07 AM, PaulOlivierSage`@`gmail.com wrote:
+On Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:
 
 
 Hi,

@@ -1,6 +1,6 @@
 # Issue 4183: ?? can't always find the source for new style classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4183
 
 Original creator: robertwb
 

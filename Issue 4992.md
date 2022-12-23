@@ -1,6 +1,6 @@
 # Issue 4992: OSX 64 bit: add 64 bit build support for pynac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4992
 
 Original creator: mabshoff
 

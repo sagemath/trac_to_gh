@@ -1,6 +1,6 @@
 # Issue 7644: generic power series reversion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7644
 
 Original creator: was
 

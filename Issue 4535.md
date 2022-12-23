@@ -1,6 +1,6 @@
 # Issue 4535: refactoring in plot/*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4535
 
 Original creator: mhansen
 

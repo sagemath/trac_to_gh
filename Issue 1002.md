@@ -1,6 +1,6 @@
 # Issue 1002: update clisp to 2.42
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1002
 
 Original creator: mabshoff
 

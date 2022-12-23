@@ -1,6 +1,6 @@
 # Issue 3185: fix 64 bit OSX build support for f2c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3185
 
 Original creator: mabshoff
 

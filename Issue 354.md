@@ -1,6 +1,6 @@
 # Issue 354: Introspection broken for SageX'd files from notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/354
 
 Original creator: boothby
 
@@ -72,7 +72,7 @@ Comment by mabshoff created at 2007-08-29 15:21:25
 Works for me:
 
 ```
-[mabshoff`@`m940 sage-2.8.3.alpha2]$ ./sage
+[mabshoff@m940 sage-2.8.3.alpha2]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |

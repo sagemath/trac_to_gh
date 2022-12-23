@@ -1,6 +1,6 @@
 # Issue 535: Mismatched free() / delete / delete [] (from modular/dirichlet.py)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/535
 
 Original creator: mabshoff
 

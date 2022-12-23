@@ -1,6 +1,6 @@
 # Issue 3491: slightly polish/improve how the cython pyx caching thing works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3491
 
 Original creator: was
 

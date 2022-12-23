@@ -1,6 +1,6 @@
 # Issue 402: %slide directive produces segfault in dvipng
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/402
 
 Original creator: nbruin
 

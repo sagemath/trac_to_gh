@@ -1,6 +1,6 @@
 # Issue 2687: database.py - update to work with sqlalchemy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2687
 
 Original creator: rlm
 

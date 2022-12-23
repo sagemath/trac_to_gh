@@ -1,6 +1,6 @@
 # Issue 6358: use numpy to optimize RDF and CDF solve_right functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6358
 
 Original creator: was
 

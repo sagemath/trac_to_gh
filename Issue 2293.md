@@ -1,6 +1,6 @@
 # Issue 2293: word_problem error in AbelianGroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2293
 
 Original creator: wdj
 
@@ -12,20 +12,20 @@ Assignee: joyner
 ```
 sage: sage: A.<a,b,c,d,e> = AbelianGroup(5,[4, 5, 5, 7, 8])
 sage: wp = word_problem([a,b,c,d,e],a); wp
-[This is the Trac macro *a, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a, 1-macro)
+[[a, 1]]
 ```
 
 is okay but all these are wrong:
 
 ```
 sage: wp = word_problem([a,b,c,d,e],b); wp
-[This is the Trac macro *a, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a, 1-macro)
+[[a, 1]]
 sage: wp = word_problem([a,b,c,d,e],c); wp
-[This is the Trac macro *a, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a, 1-macro)
+[[a, 1]]
 sage: wp = word_problem([a,b,c,d,e],d); wp
-[This is the Trac macro *a, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a, 1-macro)
+[[a, 1]]
 sage: wp = word_problem([a,b,c,d,e],e); wp
-[This is the Trac macro *a, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a, 1-macro)
+[[a, 1]]
 ```
 
 

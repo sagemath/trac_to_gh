@@ -1,6 +1,6 @@
 # Issue 918: [with patch] improvements for crypto.mq module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/918
 
 Original creator: malb
 

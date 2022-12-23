@@ -1,6 +1,6 @@
 # Issue 4142: limit bug: should be -Infinity, but gives +Infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4142
 
 Original creator: ddrake
 

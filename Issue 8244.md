@@ -1,6 +1,6 @@
 # Issue 8244: Annoying warnings when building the HTML reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8244
 
 Original creator: mpatel
 
@@ -196,7 +196,7 @@ The following seems to remove the "arg is not a Python function" warnings:
 ```diff
 --- autodoc.py.origg    2010-02-18 15:51:38.000000000 -0800
 +++ autodoc.py  2010-02-18 17:03:58.000000000 -0800
-`@``@` -1005,7 +1005,16 `@``@` class MethodDocumenter(ClassLevelDocumen
+@@ -1005,7 +1005,16 @@ class MethodDocumenter(ClassLevelDocumen
              else:
                  return None
          else:

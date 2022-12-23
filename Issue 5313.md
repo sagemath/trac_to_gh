@@ -1,6 +1,6 @@
 # Issue 5313: patch singular so that when it runs out of memory the error message says "singular" in it
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5313
 
 Original creator: was
 
@@ -64,7 +64,7 @@ error: no more memory
 System 212048k:212048k Appl 164440k/2763k Malloc 156k/0k Valloc 167048k/2763k Pages 41762/0 Regions 360:360
 
 halt 14
-wstein`@`sage:~/build/sage-4.4.4/spkg/standard$   
+wstein@sage:~/build/sage-4.4.4/spkg/standard$   
 ```
 
 
@@ -79,8 +79,8 @@ More complete log on sage.math:
 
 ```
 
-wstein`@`sage:~/build/sage-4.4.4$ ulimit -v 1000000
-wstein`@`sage:~/build/sage-4.4.4$ sage
+wstein@sage:~/build/sage-4.4.4$ ulimit -v 1000000
+wstein@sage:~/build/sage-4.4.4$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: n = 1000
@@ -90,7 +90,7 @@ sage: g = f*f
 error: no more memory
 System 212080k:212080k Appl 168836k/2090k Malloc 211k/0k Valloc 170716k/2090k Pages 42679/0 Regions 388:388
 halt 14
-wstein`@`sage:~/build/sage-4.4.4$ 
+wstein@sage:~/build/sage-4.4.4$ 
 | Sage Version 4.4.4.1, Release Date: 2010-06-28                     |
 | Type notebook() for the GUI, and license() for information.        |
 ```

@@ -1,6 +1,6 @@
 # Issue 5315: Fix MPIR.spkg build on more OSX MacIntel boxen
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5315
 
 Original creator: mabshoff
 

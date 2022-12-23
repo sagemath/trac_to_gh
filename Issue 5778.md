@@ -1,6 +1,6 @@
 # Issue 5778: More p-adic doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5778
 
 Original creator: roed
 
@@ -79,7 +79,7 @@ Comment by mabshoff created at 2009-04-15 01:16:18
 This patch does not import particularly well:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import padic_doctests.patch 
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import padic_doctests.patch 
 applying padic_doctests.patch
 patching file sage/rings/padics/factory.py
 Hunk #1 FAILED at 291
@@ -438,7 +438,7 @@ The following tests failed:
 
 	sage -t -long "devel/sage/sage/rings/integer_ring.pyx"
 Total time for all tests: 2.5 seconds
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_capped_relative_element.pyx # 1 doctests failed
 sage -t -long "devel/sage/sage/rings/padics/padic_capped_relative_element.pyx"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_capped_relative_element.pyx", line 2283:
@@ -462,7 +462,7 @@ The following tests failed:
 
 	sage -t -long "devel/sage/sage/rings/padics/padic_capped_relative_element.pyx"
 Total time for all tests: 1.3 seconds
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx # 2 doctests failed
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.final$ sage -t -long devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx # 2 doctests failed
 sage -t -long "devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.1.final/devel/sage/sage/rings/padics/padic_ZZ_pX_element.pyx", line 667:

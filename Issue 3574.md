@@ -1,6 +1,6 @@
 # Issue 3574: [with patch; needs review] optimize startup time by not importing mwrank library until needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3574
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5553: allow vertical vectors in vector field plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5553
 
 Original creator: kcrisman
 

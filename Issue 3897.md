@@ -1,6 +1,6 @@
 # Issue 3897: bug in local_information due to the lack of residue_field for ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3897
 
 Original creator: wuthrich
 

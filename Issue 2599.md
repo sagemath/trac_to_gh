@@ -1,6 +1,6 @@
 # Issue 2599: Permutation -> PermutationGroupElement fails for the identity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2599
 
 Original creator: mhansen
 

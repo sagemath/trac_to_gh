@@ -1,6 +1,6 @@
 # Issue 6011: Bring plot/arrow.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6011
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 2993: [with spkg, needs review] OSX/gcc 4.2: disable padlock support per default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2993
 
 Original creator: mabshoff
 

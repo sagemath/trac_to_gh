@@ -1,6 +1,6 @@
 # Issue 1168: asinh/acosh/atanh are only partially known to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1168
 
 Original creator: zimmerma
 

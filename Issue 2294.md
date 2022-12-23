@@ -1,6 +1,6 @@
 # Issue 2294: RealDoubleElement _interface_init_ is very poor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2294
 
 Original creator: cwitty
 

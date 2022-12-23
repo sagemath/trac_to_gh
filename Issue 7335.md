@@ -1,6 +1,6 @@
 # Issue 7335: tachyon fails to build on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7335
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 521: put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/521
 
 Original creator: was
 
@@ -74,7 +74,7 @@ Comment by mabshoff created at 2008-02-15 22:10:06
 I am getting some rejects with the current patch against 2.10.2.alpha0:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 521.patch\?format\=raw
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 521.patch\?format\=raw
 patching file sage/schemes/elliptic_curves/monsky_washnitzer.py
 patching file sage/schemes/elliptic_curves/monsky_washnitzer.py
 Hunk #1 succeeded at 163 with fuzz 1 (offset -18 lines).

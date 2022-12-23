@@ -1,6 +1,6 @@
 # Issue 240: in notebook when refresh browser or first get page cell update list isn't sent out with running cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/240
 
 Original creator: was
 

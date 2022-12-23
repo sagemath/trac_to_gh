@@ -1,6 +1,6 @@
 # Issue 6017: Provide methods for graphs to set options for latex printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6017
 
 Original creator: rbeezer
 

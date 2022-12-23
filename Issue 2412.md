@@ -1,6 +1,6 @@
 # Issue 2412: basis_matrix returns matrix over wrong ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2412
 
 Original creator: ncalexan
 

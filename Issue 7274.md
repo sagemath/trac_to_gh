@@ -1,6 +1,6 @@
 # Issue 7274: graphs: Maximum flow algorithms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7274
 
 Original creator: tombuc
 

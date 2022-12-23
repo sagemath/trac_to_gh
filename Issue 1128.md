@@ -1,6 +1,6 @@
 # Issue 1128: Coercion of complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1128
 
 Original creator: robertwb
 

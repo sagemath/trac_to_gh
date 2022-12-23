@@ -1,6 +1,6 @@
 # Issue 5432: sage-combinat fixes: sage calls and qselect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5432
 
 Original creator: nthiery
 

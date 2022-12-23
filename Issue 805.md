@@ -1,6 +1,6 @@
 # Issue 805: is_trivial() does not work for fractional ideals of number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/805
 
 Original creator: dmharvey
 

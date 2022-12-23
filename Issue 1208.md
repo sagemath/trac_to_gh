@@ -1,6 +1,6 @@
 # Issue 1208: Faster _choose in matrix2.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1208
 
 Original creator: jsp
 
@@ -143,7 +143,7 @@ should be:
 For example _choose(1,1) should return
 
 ```
-[This is the Trac macro *0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0-macro)
+[[0]]
 ```
 
 

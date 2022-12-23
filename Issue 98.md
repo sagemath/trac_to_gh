@@ -1,6 +1,6 @@
 # Issue 98: p-adic print_prec does work as advertised
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/98
 
 Original creator: dmharvey
 
@@ -47,7 +47,7 @@ Fixed.
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169435812 28800
 # Node ID 8da5c79260af2dab705c01b32f330f923a9e113d
 # Parent  3ca3f4250d3073970959522a8e6a4b651d441594
@@ -56,7 +56,7 @@ Fix trac #98 -- padic print_prec problem.
 diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
 --- a/sage/rings/padic.py       Sun Jan 21 18:58:31 2007 -0800
 +++ b/sage/rings/padic.py       Sun Jan 21 19:16:52 2007 -0800
-`@``@` -56,9 +56,9 `@``@` class pAdic(field_element.FieldElement):
+@@ -56,9 +56,9 @@ class pAdic(field_element.FieldElement):
        p-adic field:
          sage: K = pAdicField(5, 4)
          sage: K(3)         # has an exact representation
@@ -68,7 +68,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          sage: K(1/3)       # needs to be approximated; use default precision
            2 + 3*5 + 5^2 + 3*5^3 + O(5^4)
          sage: K(5/3)
-`@``@` -69,11 +69,11 `@``@` class pAdic(field_element.FieldElement):
+@@ -69,11 +69,11 @@ class pAdic(field_element.FieldElement):
        Coercion from rational field with explicitly selected precision:
          sage: K = pAdicField(5, 4)
          sage: K(3, infinity)
@@ -83,7 +83,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          sage: K(1/3, 8)
            2 + 3*5 + 5^2 + 3*5^3 + 5^4 + 3*5^5 + 5^6 + 3*5^7 + O(5^8)
          sage: K(5/3, 8)
-`@``@` -244,7 +244,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -244,7 +244,7 @@ class pAdic(field_element.FieldElement):
              sage: a.denominator()
              1
              sage: b = K(3211/11^2); b
@@ -92,7 +92,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: b.denominator()
              121
          """
-`@``@` -264,7 +264,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -264,7 +264,7 @@ class pAdic(field_element.FieldElement):
              sage: a.ordp()
              0
              sage: b = K(3211/11^2); b
@@ -101,7 +101,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: b.ordp()
              -2
  
-`@``@` -365,7 +365,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -365,7 +365,7 @@ class pAdic(field_element.FieldElement):
          u     = self.__unit
          exp   = self.__ordp
          p     = self.__p
@@ -110,7 +110,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          if prec == infinity:
              prec = self.parent().prec()
          u   %= self.__p ** prec
-`@``@` -390,8 +390,8 `@``@` class pAdic(field_element.FieldElement):
+@@ -390,8 +390,8 @@ class pAdic(field_element.FieldElement):
                          s += "%s + "%var
              exp += 1
              u = (u-coeff)/p
@@ -121,7 +121,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          s += "O(%s"%(p)
          if self.big_oh() == 1:
              s += ")"
-`@``@` -410,7 +410,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -410,7 +410,7 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: K = Qp(11, 10); K.print_prec(5)
              sage: a = K(-1); a
@@ -130,7 +130,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: b = K(1); b
              1
              sage: a+b
-`@``@` -452,11 +452,11 `@``@` class pAdic(field_element.FieldElement):
+@@ -452,11 +452,11 @@ class pAdic(field_element.FieldElement):
              sage: (-1)*one(K)
              18 + 18*19 + 18*19^2 + 18*19^3 + 18*19^4 + O(19^5)
              sage: a = K(2/19); a
@@ -145,7 +145,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          """
          prec = min(self.__prec, right.__prec)
          ordp = self.__ordp + right.__ordp
-`@``@` -470,9 +470,9 `@``@` class pAdic(field_element.FieldElement):
+@@ -470,9 +470,9 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: K = Qp(19, 5)
              sage: a = K(2/19); a
@@ -157,7 +157,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a/b
              7 + 6*19 + 6*19^2 + 6*19^3 + 6*19^4 + O(19^5)
              sage: (5 + O(5)) / 1
-`@``@` -500,11 +500,11 `@``@` class pAdic(field_element.FieldElement):
+@@ -500,11 +500,11 @@ class pAdic(field_element.FieldElement):
              sage: a = K(-1); a
              18 + 18*19 + 18*19^2 + 18*19^3 + 18*19^4 + O(19^5)
              sage: a^2
@@ -171,7 +171,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          """
          right = integer.Integer(right)
          if self == 0:
-`@``@` -550,12 +550,12 `@``@` class pAdic(field_element.FieldElement):
+@@ -550,12 +550,12 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: K = Qp(19, 5)
              sage: a = K(20); a
@@ -186,7 +186,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
  
          One can pass an optional argument to __invert__ to
          affect the precision, which is especially useful when
-`@``@` -633,9 +633,9 `@``@` class pAdic(field_element.FieldElement):
+@@ -633,9 +633,9 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: K = Qp(19, 5)
              sage: a = K(2); a
@@ -198,7 +198,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a < b
              True
          """
-`@``@` -675,12 +675,12 `@``@` class pAdic(field_element.FieldElement):
+@@ -675,12 +675,12 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: x = 9*(2+3+O(3**7))
              sage: x.unit_part()
@@ -214,7 +214,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
          """
          return pAdic(self.__parent, self.__unit, self.__prec, 0)
  
-`@``@` -689,7 +689,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -689,7 +689,7 @@ class pAdic(field_element.FieldElement):
              EXAMPLES:
              sage: K = Qp(11)
              sage: a = K(2); a
@@ -223,7 +223,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a.is_zero()
              False
  
-`@``@` -704,7 +704,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -704,7 +704,7 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: K = Qp(11)
              sage: a = K(2); a
@@ -232,7 +232,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a.is_unit()
              True
              sage: K(121).is_unit()
-`@``@` -731,7 +731,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -731,7 +731,7 @@ class pAdic(field_element.FieldElement):
              sage: a.rational_reconstruction()
              -1
              sage: a = K(2); a
@@ -241,7 +241,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a.rational_reconstruction()
              2
          """
-`@``@` -782,7 +782,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -782,7 +782,7 @@ class pAdic(field_element.FieldElement):
          EXAMPLES:
              sage: Q13 = Qp(13, 10)
              sage: a = Q13(14); a
@@ -250,7 +250,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
              sage: a.log()
              13 + 6*13^2 + 2*13^3 + 5*13^4 + 10*13^6 + 13^7 + 11*13^8 + 8*13^9 + O(13^10)
  
-`@``@` -790,7 +790,7 `@``@` class pAdic(field_element.FieldElement):
+@@ -790,7 +790,7 @@ class pAdic(field_element.FieldElement):
          First we create a field with {\em default} precision 10.
              sage: K = pAdicField(5,10)
              sage: e = K(389); e
@@ -262,7 +262,7 @@ diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic.py
 diff -r 3ca3f4250d30 -r 8da5c79260af sage/rings/padic_field.py
 --- a/sage/rings/padic_field.py Sun Jan 21 18:58:31 2007 -0800
 +++ b/sage/rings/padic_field.py Sun Jan 21 19:16:52 2007 -0800
-`@``@` -59,8 +59,22 `@``@` class pAdicField_generic(field.Field):
+@@ -59,8 +59,22 @@ class pAdicField_generic(field.Field):
          p-adic field is truncated at $O(p^n)$.   Calling print_prec() with
          no arguments returns n.  This command only affects printing,
          and does not alter the actual values of elements of this field.

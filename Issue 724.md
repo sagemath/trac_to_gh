@@ -1,6 +1,6 @@
 # Issue 724: graph6 parsing does not throw an error when the string is the wrong size.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/724
 
 Original creator: jason
 

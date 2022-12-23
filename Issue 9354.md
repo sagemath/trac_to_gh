@@ -1,6 +1,6 @@
 # Issue 9354: Update FriCAS to 1.0.9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9354
 
 Original creator: mhansen
 

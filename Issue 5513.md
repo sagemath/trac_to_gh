@@ -1,6 +1,6 @@
 # Issue 5513: Enhanced support for number field unit groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5513
 
 Original creator: cremona
 

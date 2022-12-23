@@ -1,6 +1,6 @@
 # Issue 542: get gmp-4.2.2 into SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/542
 
 Original creator: was
 

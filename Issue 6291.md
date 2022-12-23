@@ -1,6 +1,6 @@
 # Issue 6291: Missing identity function in AbelianGroup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6291
 
 Original creator: jlefebvre
 

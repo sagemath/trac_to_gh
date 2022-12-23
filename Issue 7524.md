@@ -1,6 +1,6 @@
 # Issue 7524: frame axes are lost when saving a graphic to a file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7524
 
 Original creator: jason
 

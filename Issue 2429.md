@@ -1,6 +1,6 @@
 # Issue 2429: block_matrix command should be consistent with the syntax of the matrix command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2429
 
 Original creator: jason
 

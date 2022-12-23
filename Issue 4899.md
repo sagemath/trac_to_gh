@@ -1,6 +1,6 @@
 # Issue 4899: bug in sqrt(1) over GF(2^e) for e>15
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4899
 
 Original creator: cremona
 

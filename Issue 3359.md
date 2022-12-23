@@ -1,6 +1,6 @@
 # Issue 3359: bug/inconsistency in multivariate polynomial substitution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3359
 
 Original creator: was
 
@@ -12,7 +12,7 @@ Assignee: malb
 ```
 Dear Andrey,
 
-On Jun 4, 7:21 am, Andrey Novoseltsev <novos...`@`gmail.com> wrote:
+On Jun 4, 7:21 am, Andrey Novoseltsev <novos...@gmail.com> wrote:
 > What is wrong with the code below and how to fix it?
 
 I don't know what precisely is wrong with that code, but a very

@@ -1,6 +1,6 @@
 # Issue 1311: [graphs] calculate chromatic number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1311
 
 Original creator: jason
 

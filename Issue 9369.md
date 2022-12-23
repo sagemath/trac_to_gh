@@ -1,6 +1,6 @@
 # Issue 9369: make verbose command flush its output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9369
 
 Original creator: was
 

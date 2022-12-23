@@ -1,6 +1,6 @@
 # Issue 731: graphs: set_boundary accepts integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/731
 
 Original creator: jason
 

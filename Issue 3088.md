@@ -1,6 +1,6 @@
 # Issue 3088: [with patch; needs review] Fixes for Debian gfan build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3088
 
 Original creator: tabbott
 

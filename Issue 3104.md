@@ -1,6 +1,6 @@
 # Issue 3104: pbori.pyx: Make some doctest long since it uses a lot of RAM
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3104
 
 Original creator: mabshoff
 

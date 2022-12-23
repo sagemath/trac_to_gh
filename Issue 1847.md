@@ -1,6 +1,6 @@
 # Issue 1847: add nice print method for Sha(Elliptic curve) [trivial to implement -- requires taste]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1847
 
 Original creator: was
 
@@ -33,7 +33,7 @@ Comment by mabshoff created at 2009-01-25 20:47:24
 This patch causes the following doctest failure:
 
 ```
-mabshoff`@`geom:/scratch/mabshoff/sage-3.3.alpha3$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+mabshoff@geom:/scratch/mabshoff/sage-3.3.alpha3$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.3.alpha3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py", line 3639:

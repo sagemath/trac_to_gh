@@ -1,6 +1,6 @@
 # Issue 5657: [with patch; needs review] fix two trivial typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5657
 
 Original creator: was
 

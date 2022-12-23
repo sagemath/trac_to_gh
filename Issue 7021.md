@@ -1,6 +1,6 @@
 # Issue 7021: [with patch; needs review] Update prereq from 0.3 to 0.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7021
 
 Original creator: drkirkby
 
@@ -33,7 +33,7 @@ The tar file contains a configure script, configure.ac, and several macros.
  * Tests for the Sun linker. I'm not sure the test is very good, and while it attempts to export SAGE_LINKER, I'm not sure whether this will actually work. (It probably needs a bit more work, but I'll leave it for now).
 
 *Changes to prereq-0.4-install*
- * Issue a warning on OS X to use Apple's latest XCode, and provide a link to [http://developer.apple.com/TOOLS/Xcode/](http://developer.apple.com/TOOLS/Xcode/)(http://developer.apple.com/TOOLS/Xcode/)
+ * Issue a warning on OS X to use Apple's latest XCode, and provide a link to [http://developer.apple.com/TOOLS/Xcode/](http://developer.apple.com/TOOLS/Xcode/)
  * Specific messages are issued if one tries to build Sage on any of these operating systems, to encourage developers. A 'catch-all' is used for other operating systems. SAGE_PORT needs to be set to a non-empty value to proceed with any of these. 
    * AIX
    * HP-UX

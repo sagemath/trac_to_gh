@@ -1,6 +1,6 @@
 # Issue 6921: MATLAB crashes on Snow Leopard due to library conflicts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6921
 
 Original creator: jjh
 

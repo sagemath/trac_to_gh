@@ -1,6 +1,6 @@
 # Issue 6034: [with spkg, needs review] update Singular to newest upstream release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6034
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4998: OSX64: build Singulat with "--with-malloc=system"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4998
 
 Original creator: mabshoff
 

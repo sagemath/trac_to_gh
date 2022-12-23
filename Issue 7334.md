@@ -1,6 +1,6 @@
 # Issue 7334: Sage cannot simplify sums of logarithms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7334
 
 Original creator: whuss
 

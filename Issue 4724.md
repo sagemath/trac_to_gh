@@ -1,6 +1,6 @@
 # Issue 4724: expose pari's galois and finer number field interfaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4724
 
 Original creator: ncalexan
 

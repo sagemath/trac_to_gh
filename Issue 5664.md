@@ -1,6 +1,6 @@
 # Issue 5664: Bugs in PermutationGroup_subgroup.__cmp__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5664
 
 Original creator: SimonKing
 
@@ -154,8 +154,8 @@ Note that in `PermutationGroup_generic.__cmp__(self,right)`, the return value is
 By consequence, we have 
 
 ```
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
-sage: H = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments ())](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2)]])
+sage: H = PermutationGroup([[()]])
 sage: G<H
 True
 ```
@@ -191,8 +191,8 @@ sage: H2=G2.subgroup([G2(())])
 sage: H<H2
 True     # because the ambient group of H is a subgroup of the ambient group of H2
 
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
-sage: H = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments ())](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2)]])
+sage: H = PermutationGroup([[()]])
 sage: G<H
 False
 
@@ -301,7 +301,7 @@ How is this behaviour (after your patch is attached) explained?
 
 ```
 sage: G1 = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
-sage: G2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2,3),)](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G2 = PermutationGroup([[(1,2,3),(4,5)]])
 sage: G1 > G2
 False
 sage: G = SymmetricGroup(5)
@@ -335,8 +335,8 @@ which means that the trivial group may be _bigger_ than a non-trivial group:
 
 ```
 # without my patch
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
-sage: H = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments ())](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2)]])
+sage: H = PermutationGroup([[()]])
 sage: G<H
 True
 ```
@@ -374,14 +374,14 @@ statement?
 
 
 ```
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2)]])
 sage: H = PermutationGroup([[(1,2)],[(2,3)]])
 sage: G<H1             # correct 
 True
-sage: H2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,3))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: H2 = PermutationGroup([[(1,3)]])
 sage: G<H2             # correct 
 False
-sage: H2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: H2 = PermutationGroup([[(1)]])
 sage: G<H2             # incorrect 
 True
 ```
@@ -413,16 +413,16 @@ Maybe we should just use IsSubgroup (I thought < called that method but I guess 
 
 
 ```
-sage: G = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: G = PermutationGroup([[(1,2)]])
 sage: gG = gap(G)
 sage: H1 = PermutationGroup([[(1,2)],[(2,3)]])
 sage: gH1 = gap(H1)
 sage: bool(gH1.IsSubgroup(gG))             # correct 
 True
-sage: H2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,3))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: H2 = PermutationGroup([[(1,3)]])
 sage: bool(gH2.IsSubgroup(gG))             # correct 
 False
-sage: H3 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: H3 = PermutationGroup([[(1)]])
 sage: gH3 = gap(H3)
 sage: bool(gH3.IsSubgroup(gG))             # correct 
 False
@@ -494,8 +494,8 @@ However, there is a price to pay. The result is not an ordering!
 
 ```
 sage: H1 = PermutationGroup([[(1,2)],[(5,6)]])
-sage: H2 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (3,4))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
-sage: H3 = PermutationGroup([This is the Trac macro ** that was inherited from the migration called with arguments (1,2))](https://trac.sagemath.org/wiki/WikiMacros#-macro))
+sage: H2 = PermutationGroup([[(3,4)]])
+sage: H3 = PermutationGroup([[(1,2)]])
 # H1,H2 are mutually not subgroups, and H2,H3 are mutually not subgroups
 sage: H1 < H2 # according to Gap's ordering
 True

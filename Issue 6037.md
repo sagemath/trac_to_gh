@@ -1,6 +1,6 @@
 # Issue 6037: Major Upgrade to QuadraticForm Local Density Routines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6037
 
 Original creator: jonhanke
 

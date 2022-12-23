@@ -1,6 +1,6 @@
 # Issue 8469: add "Number Theory and the RSA Public Key Cryptosystem" to "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8469
 
 Original creator: mvngu
 
@@ -112,7 +112,7 @@ Attachment
 When applying the previous version of my patch on top of Sage 4.5.2.rc0, I got the following failure:
 
 ```sh
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush 
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8469/trac_8469-rsa.patch && hg qpush 
 adding trac_8469-rsa.patch to series file
 applying trac_8469-rsa.patch
 patching file doc/en/thematic_tutorials/index.rst
@@ -132,7 +132,7 @@ The content of pang's patch [attachment:trac_8469_review_final.patch] is mostly 
 ```diff
 --- a/doc/en/thematic_tutorials/numtheory_rsa.rst
 +++ b/doc/en/thematic_tutorials/numtheory_rsa.rst
-`@``@` -295,8 +295,8 `@``@`
+@@ -295,8 +295,8 @@
  pseudo-random integer uniformly distributed within the closed interval
  `[0, n-1]`.  
  

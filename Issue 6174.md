@@ -1,6 +1,6 @@
 # Issue 6174: Modify README.txt in the top level of the Sage install to describe the SAGE_FAT_BINARY build flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6174
 
 Original creator: was
 

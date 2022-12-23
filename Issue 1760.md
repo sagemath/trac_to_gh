@@ -1,6 +1,6 @@
 # Issue 1760: on osx make a symlink sage.command --> sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1760
 
 Original creator: was
 

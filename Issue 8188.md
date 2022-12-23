@@ -1,6 +1,6 @@
 # Issue 8188: additional functions for linear codes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8188
 
 Original creator: klee
 

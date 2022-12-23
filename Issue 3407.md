@@ -1,6 +1,6 @@
 # Issue 3407: [with patch, needs review] better error handling for GB calculations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3407
 
 Original creator: malb
 

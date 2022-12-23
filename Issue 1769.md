@@ -1,6 +1,6 @@
 # Issue 1769: [with patch] Fast Pari <--> Sage p-adic capped relative element conversions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1769
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 643: notebook -- fix space issues with the top bar.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/643
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: boothby
 
 
 ```
-On 9/12/07, Marshall Hampton <hamptonio`@`gmail.com> wrote:
+On 9/12/07, Marshall Hampton <hamptonio@gmail.com> wrote:
 >
 > I am very happy that the new notebook is more secure, and so I first
 > want to thank everyone who worked on it.

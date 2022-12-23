@@ -1,6 +1,6 @@
 # Issue 8277: Using matrix() to convert between sparse and dense.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8277
 
 Original creator: hivert
 

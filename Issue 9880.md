@@ -1,6 +1,6 @@
 # Issue 9880: fix the symbolic csgn function on complex input
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9881
 
 Original creator: burcin
 

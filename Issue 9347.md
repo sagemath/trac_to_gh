@@ -1,6 +1,6 @@
 # Issue 9347: change c_lib/include/gmp_globals.h to have sage_ prefix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9347
 
 Original creator: was
 

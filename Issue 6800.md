@@ -1,6 +1,6 @@
 # Issue 6800: [with patch, needs review] formal/lazy/infinite powerseries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6800
 
 Original creator: Henryk.Trappmann
 

@@ -1,6 +1,6 @@
 # Issue 219: more optimizations for special rings (e.g., copy, etc; use ssmod as an example to motivate this)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/219
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1846: maxima looses minus signs in symbolic expression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1846
 
 Original creator: jkantor
 

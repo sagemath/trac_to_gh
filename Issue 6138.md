@@ -1,6 +1,6 @@
 # Issue 6138: SymmetricGroupAlgebra: updates w.r.t. categories and free modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6138
 
 Original creator: nthiery
 

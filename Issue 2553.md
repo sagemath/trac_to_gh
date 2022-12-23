@@ -1,6 +1,6 @@
 # Issue 2553: dsage unit tests fail on linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2553
 
 Original creator: yi
 

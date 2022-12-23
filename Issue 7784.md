@@ -1,6 +1,6 @@
 # Issue 7784: sagenb -- either include setup.cfg if it is human-written or put it in the .hgignore file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7784
 
 Original creator: was
 

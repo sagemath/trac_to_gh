@@ -1,6 +1,6 @@
 # Issue 2290: [with easy patch] typo in calculus.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2290
 
 Original creator: zimmerma
 

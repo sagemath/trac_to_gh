@@ -1,6 +1,6 @@
 # Issue 2489: symmetric crashes when giving a skew partition to kostka_tab
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2489
 
 Original creator: mhansen
 

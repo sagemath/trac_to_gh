@@ -1,6 +1,6 @@
 # Issue 5874: [with patch, needs review] Fix readline build on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5874
 
 Original creator: pjeremy
 

@@ -1,6 +1,6 @@
 # Issue 9529: in graph_plot.py, sometimes get "libpng error: Image width or height is zero in IHDR"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9529
 
 Original creator: rlm
 

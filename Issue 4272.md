@@ -1,6 +1,6 @@
 # Issue 4272: add the files from new coercion to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4272
 
 Original creator: mabshoff
 

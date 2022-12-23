@@ -1,6 +1,6 @@
 # Issue 9712: Make building PolyBoRi depend on GD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9712
 
 Original creator: leif
 

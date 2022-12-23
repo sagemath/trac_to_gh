@@ -1,6 +1,6 @@
 # Issue 2486: unused/broken vector and matrix pyx files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2486
 
 Original creator: gfurnish
 

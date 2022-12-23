@@ -1,6 +1,6 @@
 # Issue 1109: [with patch] gp interface raises stack overflow exception if gp stack exceeds available memory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1109
 
 Original creator: cwitty
 

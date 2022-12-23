@@ -1,6 +1,6 @@
 # Issue 2030: hg_[doc|extcode|scripts] docstring is wrong about the repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2030
 
 Original creator: mabshoff
 

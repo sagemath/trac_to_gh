@@ -1,6 +1,6 @@
 # Issue 7635: notebook -- make it trivial for any user to restrict the notebook server to only listen on certain subdomain
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7635
 
 Original creator: was
 

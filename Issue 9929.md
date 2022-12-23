@@ -1,6 +1,6 @@
 # Issue 9929: Additional test in is_even_hole_free
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9930
 
 Original creator: ncohen
 

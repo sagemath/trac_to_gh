@@ -1,6 +1,6 @@
 # Issue 8602: Implement theta series of degree 2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8602
 
 Original creator: tornaria
 

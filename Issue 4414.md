@@ -1,6 +1,6 @@
 # Issue 4414: Improve notebook responsiveness
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4414
 
 Original creator: ahupfer
 

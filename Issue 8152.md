@@ -1,6 +1,6 @@
 # Issue 8152: Python needs to search /usr/sfw/lib on Solaris for OpenSSL libraries.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8152
 
 Original creator: drkirkby
 

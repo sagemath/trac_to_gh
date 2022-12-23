@@ -1,6 +1,6 @@
 # Issue 1908: Make it so that show plots a list as a grid
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1908
 
 Original creator: jason
 

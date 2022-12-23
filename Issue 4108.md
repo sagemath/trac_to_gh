@@ -1,6 +1,6 @@
 # Issue 4108: [with patch, needs review] disable hmm.pyx and chmm.pyx doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4108
 
 Original creator: mabshoff
 

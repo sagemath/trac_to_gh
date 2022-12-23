@@ -1,6 +1,6 @@
 # Issue 8482: Add a link from the static help embedded in the notebook to the corresponding live documentation page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8482
 
 Original creator: nthiery
 

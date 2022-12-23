@@ -1,6 +1,6 @@
 # Issue 9483: implicit_plot3d fails on symbolic inputs that can't be automatically differentiated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9483
 
 Original creator: cwitty
 

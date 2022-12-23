@@ -1,6 +1,6 @@
 # Issue 6619: [with patch, needs review] Fix ``inner`` option for integer vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6619
 
 Original creator: nthiery
 

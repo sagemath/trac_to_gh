@@ -1,6 +1,6 @@
 # Issue 4854: represent paths as lists of edges
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4854
 
 Original creator: rlm
 

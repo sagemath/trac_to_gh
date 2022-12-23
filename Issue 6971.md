@@ -1,6 +1,6 @@
 # Issue 6971: port ECL spkg to os x 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6971
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8673: No KeyErrror raised when it should for FiniteWord_callable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8673
 
 Original creator: slabbe
 

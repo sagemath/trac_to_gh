@@ -1,6 +1,6 @@
 # Issue 6597: [with patch, needs review] SetMorphism: 100% doctest + equality + pickling
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6597
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 9952: int(symbolic expr) off by 1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9953
 
 Original creator: schilly
 

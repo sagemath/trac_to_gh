@@ -1,6 +1,6 @@
 # Issue 3879: Constructing a c_graph from a DiGraph doubles the edges.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3879
 
 Original creator: saliola
 

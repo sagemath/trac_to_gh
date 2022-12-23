@@ -1,6 +1,6 @@
 # Issue 2451: plotting -- contour_plot and plot_vector_field are REALLY SLOW but it's easy to get a million times speedup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2451
 
 Original creator: was
 

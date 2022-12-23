@@ -1,6 +1,6 @@
 # Issue 7822: pynac log function cannot handle float arguments <= 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7822
 
 Original creator: burcin
 

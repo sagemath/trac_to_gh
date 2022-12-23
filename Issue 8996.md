@@ -1,6 +1,6 @@
 # Issue 8996: @ character is usernames is problematic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8996
 
 Original creator: ddrake
 

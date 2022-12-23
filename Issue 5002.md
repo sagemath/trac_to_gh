@@ -1,6 +1,6 @@
 # Issue 5002: CrystalOfTableaux call method breaks on legitimate data
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5002
 
 Original creator: bump
 
@@ -13,7 +13,7 @@ CC:  sage-combinat
 
 ```
 sage: C = CrystalOfTableaux(['B',2],shape=[3]) 
-sage: C(rows=[This is the Trac macro *1,1,0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,1,0-macro))
+sage: C(rows=[[1,1,0]])
 ```
 
 

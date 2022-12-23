@@ -1,6 +1,6 @@
 # Issue 4548: bug in latexing a certain symbolic expression
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4548
 
 Original creator: was
 

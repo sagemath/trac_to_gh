@@ -1,6 +1,6 @@
 # Issue 5084: speed regression in number of partitons
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5084
 
 Original creator: robertwb
 

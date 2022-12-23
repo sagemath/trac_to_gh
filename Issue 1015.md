@@ -1,6 +1,6 @@
 # Issue 1015: Free Monoid and Free Algebra Fixes and features
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1015
 
 Original creator: jbmohler
 

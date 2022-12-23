@@ -1,6 +1,6 @@
 # Issue 4182: plot3d fails with 'IndexError: list index out of range'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4182
 
 Original creator: jhpalmieri
 

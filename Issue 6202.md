@@ -1,6 +1,6 @@
 # Issue 6202: bitset "noise" on solaris sparc (mark)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6202
 
 Original creator: was
 
@@ -191,7 +191,7 @@ Woops.  It's no surprise but though you fixed the test on mark (the solaris box)
 ----------------------------------------------------------------------
 sage: 
 Exiting SAGE (CPU time 0m0.04s, Wall time 0m1.13s).
-wstein`@`sage:~/build/sage-4.0.1$ ./sage -t devel/sage/sage/misc/misc_c.pyx 
+wstein@sage:~/build/sage-4.0.1$ ./sage -t devel/sage/sage/misc/misc_c.pyx 
 sage -t  "devel/sage/sage/misc/misc_c.pyx"                  
 **********************************************************************
 File "/scratch/wstein/build/sage-4.0.1/devel/sage/sage/misc/misc_c.pyx", line 359:
@@ -295,7 +295,7 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/misc/misc_c.pyx"
 Total time for all tests: 1.2 seconds
-wstein`@`sage:~/build/sage-4.0.1$ 
+wstein@sage:~/build/sage-4.0.1$ 
 
 ```
 

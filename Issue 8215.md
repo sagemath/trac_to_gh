@@ -1,6 +1,6 @@
 # Issue 8215: The empty word is a factor of a word
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8215
 
 Original creator: slabbe
 

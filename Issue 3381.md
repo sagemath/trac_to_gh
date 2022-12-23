@@ -1,6 +1,6 @@
 # Issue 3381: iconv library needs to be added to Sage to allow R to build on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3381
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2309: [with patch, needs review] #2267 introduced spurious linebreak commands '\\'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2309
 
 Original creator: cwitty
 

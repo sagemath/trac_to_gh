@@ -1,6 +1,6 @@
 # Issue 5764: [with patch, needs review] improve doctest coverage for sageinspect.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5764
 
 Original creator: jhpalmieri
 

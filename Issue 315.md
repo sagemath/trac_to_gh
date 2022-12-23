@@ -1,6 +1,6 @@
 # Issue 315: wizard database and interface for notebook and commandline
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/315
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 5871: [with patch; needs review] solaris x86 3.4.1 -- code_bounds.py fails some plot doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5871
 
 Original creator: was
 

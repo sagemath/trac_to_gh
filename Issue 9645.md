@@ -1,6 +1,6 @@
 # Issue 9645: Bugs in the computation of Groebner bases over the integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9645
 
 Original creator: SimonKing
 

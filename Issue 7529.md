@@ -1,6 +1,6 @@
 # Issue 7529: Maximum Average Degree of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7529
 
 Original creator: ncohen
 

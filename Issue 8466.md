@@ -1,6 +1,6 @@
 # Issue 8466: include the document "Sage and Coding Theory" in the classification "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8466
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 9477: jmol shows a black screen in the notebook, it works fine in the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9477
 
 Original creator: olazo
 

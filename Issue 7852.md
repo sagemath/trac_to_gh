@@ -1,6 +1,6 @@
 # Issue 7852: solve_left for RDF matrices is WRONG
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7852
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5854: [with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5854
 
 Original creator: rlm
 
@@ -151,7 +151,7 @@ Comment by cremona created at 2009-04-29 15:54:34
 Partial review:  I ran valgrind on ratpoints's own test function and it does reasonably well:
 
 ```
-masgaj`@`host-56-150%valgrind ./rptest > rptest.out
+masgaj@host-56-150%valgrind ./rptest > rptest.out
 ==4873== Memcheck, a memory error detector.
 ==4873== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
 ==4873== Using LibVEX rev 1804, a library for dynamic binary translation.

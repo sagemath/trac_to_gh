@@ -1,6 +1,6 @@
 # Issue 2193: doctest framework should check for keywords only in comments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2193
 
 Original creator: burcin
 

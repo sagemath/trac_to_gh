@@ -1,6 +1,6 @@
 # Issue 8904: libsingular: memory leak in Matrix.act_on_polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8904
 
 Original creator: SimonKing
 

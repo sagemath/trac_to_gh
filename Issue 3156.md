@@ -1,6 +1,6 @@
 # Issue 3156: notebook -- implement way to delete a published worksheet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3156
 
 Original creator: was
 

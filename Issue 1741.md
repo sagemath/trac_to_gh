@@ -1,6 +1,6 @@
 # Issue 1741: [with spkg] Build zlib with debug info
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1741
 
 Original creator: mabshoff
 

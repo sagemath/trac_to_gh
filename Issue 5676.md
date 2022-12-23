@@ -1,6 +1,6 @@
 # Issue 5676: Preparser identifies hex literals as floating point.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5676
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 6019: [with patch, needs review] speed up new_subspace by a factor of > 100
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6019
 
 Original creator: davidloeffler
 

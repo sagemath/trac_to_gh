@@ -1,6 +1,6 @@
 # Issue 8582: sum(1/(1+k^2), k, -oo, oo) returns 0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8582
 
 Original creator: mvngu
 
@@ -69,7 +69,7 @@ This is fixed at ticket #10187 by upgrading to Maxima 5.22.1:
 
 
 ```
-[mvngu`@`sage sage-4.6.1.alpha3]$ ./sage 
+[mvngu@sage sage-4.6.1.alpha3]$ ./sage 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

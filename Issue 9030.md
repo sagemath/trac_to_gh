@@ -1,6 +1,6 @@
 # Issue 9030: rubiks is building part 32-bit and part 64-bit on OpenSolaris x64.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9030
 
 Original creator: drkirkby
 
@@ -74,9 +74,9 @@ When we check files, I note some are built 32-bit and some are built 64-bit.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/size222 
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 
 local/bin/size222:	ELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/optimal
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/optimal
 local/bin/optimal:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped
 ```
 
@@ -162,9 +162,9 @@ After building *all* the rubiks binaries are 64-bit. i.e.
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/size222 
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 
 local/bin/size222:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available
-drkirkby`@`hawk:~/sage-4.4.2$ file local/bin/dikcube
+drkirkby@hawk:~/sage-4.4.2$ file local/bin/dikcube
 local/bin/dikcube:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 ```
 

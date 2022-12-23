@@ -1,6 +1,6 @@
 # Issue 5109: add support for Bell polynomials in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5109
 
 Original creator: mhansen
 

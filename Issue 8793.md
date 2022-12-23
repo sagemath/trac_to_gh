@@ -1,6 +1,6 @@
 # Issue 8793: clean up documentation of logic/boolformula.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8793
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4421: create an optional singular_surf.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4421
 
 Original creator: mabshoff
 

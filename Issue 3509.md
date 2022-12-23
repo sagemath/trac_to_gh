@@ -1,6 +1,6 @@
 # Issue 3509: [with spkg, needs review] Update eclib to eclib-20080310.p3.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3509
 
 Original creator: mabshoff
 

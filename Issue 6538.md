@@ -1,6 +1,6 @@
 # Issue 6538: bug in Partitions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6538
 
 Original creator: jhpalmieri
 
@@ -16,7 +16,7 @@ Looks like there is a bug in Partitions.  Partitions(n, max_slope=-1)  should gi
 
 ```
 sage: Partitions(2, max_slope=-1).list()
-[This is the Trac macro *2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2-macro)
+[[2]]
 sage: Partitions(4, max_slope=-1).list()
 [[4], [3, 1]]
 ```
@@ -25,11 +25,11 @@ But if you add the "length" keyword, it doesn't work anymore, at least not compl
 
 ```
 sage: Partitions(2, max_slope=-1, length=2).list()  # doesn't work
-[This is the Trac macro *1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1-macro)
+[[1, 1]]
 sage: Partitions(4, max_slope=-1, length=2).list()  # works
-[This is the Trac macro *3, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3, 1-macro)
+[[3, 1]]
 sage: Partitions(4, max_slope=-1, length=3).list()  # doesn't work
-[This is the Trac macro *2, 1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 1, 1-macro)
+[[2, 1, 1]]
 ```
 
 
@@ -122,7 +122,7 @@ File "/release/merger/sage-5.2.beta1/devel/sage-main/sage/combinat/integer_vecto
 Expected:
     []
 Got:
-    [This is the Trac macro *3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#3-macro)
+    [[3]]
 **********************************************************************
 ```
 
@@ -134,7 +134,7 @@ sage -t  -force_lib devel/sage/sage/combinat/tutorial.py
 File "/release/merger/sage-5.2.beta1/devel/sage-main/sage/combinat/tutorial.py", line 1635:
     sage: Partitions(2, max_slope=-1, length=2).list()
 Expected:
-    [This is the Trac macro *1, 1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 1-macro)
+    [[1, 1]]
 Got:
     []
 **********************************************************************

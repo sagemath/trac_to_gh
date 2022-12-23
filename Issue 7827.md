@@ -1,6 +1,6 @@
 # Issue 7827: Fix atlas-3.8.3.p9 compilation on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7827
 
 Original creator: pjeremy
 
@@ -70,7 +70,7 @@ I committed the patch [7827.atlas.patch](http://trac.sagemath.org/sage_trac/atta
 diff -r cffdd7ee34e2 spkg-install-script
 --- a/spkg-install-script
 +++ b/spkg-install-script
-`@``@` -120,6 +120,10 `@``@`
+@@ -120,6 +120,10 @@
  
  CUR=`pwd`
  echo $CUR

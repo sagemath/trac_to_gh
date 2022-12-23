@@ -1,6 +1,6 @@
 # Issue 4977: vector(RR vector) doesn't create a new vector
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4977
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 9514: sage/symbolic/random_tests.py wrongly depends on order of dict.values()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9514
 
 Original creator: cwitty
 

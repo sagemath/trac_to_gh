@@ -1,6 +1,6 @@
 # Issue 3796: Do something about empty directories for pexpect interfaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3796
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 3731: [with patch, needs review] missing some derivatives in wester
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3731
 
 Original creator: jhpalmieri
 

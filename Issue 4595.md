@@ -1,6 +1,6 @@
 # Issue 4595: typos in files under sage/calculus
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4595
 
 Original creator: mvngu
 

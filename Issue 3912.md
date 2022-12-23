@@ -1,6 +1,6 @@
 # Issue 3912: sage -t foo.tex should also test listings blocks not only verbatim
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3912
 
 Original creator: malb
 

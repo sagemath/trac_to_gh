@@ -1,6 +1,6 @@
 # Issue 214: bug in small finite field error checking and modulus type
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/214
 
 Original creator: was
 

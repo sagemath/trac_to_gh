@@ -1,6 +1,6 @@
 # Issue 3514: Free modules revision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3514
 
 Original creator: kohel
 
@@ -84,7 +84,7 @@ I happened to have a 3.0.2 build lying around, but it fared no better:
 
 ```
 
-john`@`ubuntu%./sage 
+john@ubuntu%./sage 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: 3514

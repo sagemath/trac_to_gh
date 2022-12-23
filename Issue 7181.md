@@ -1,6 +1,6 @@
 # Issue 7181: We must ensure we have GNU make, not HP-UX or Solaris 'make'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7181
 
 Original creator: drkirkby
 

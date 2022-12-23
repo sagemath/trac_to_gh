@@ -1,6 +1,6 @@
 # Issue 2010: crap -- libpng contains lots and lots of weird (OS X?) temp or meta files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2010
 
 Original creator: was
 

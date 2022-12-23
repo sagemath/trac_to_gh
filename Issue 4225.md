@@ -1,6 +1,6 @@
 # Issue 4225: faster sqrt for complex numbers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4225
 
 Original creator: robertwb
 

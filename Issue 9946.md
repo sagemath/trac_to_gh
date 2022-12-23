@@ -1,6 +1,6 @@
 # Issue 9946: output bug in GiNaC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9947
 
 Original creator: zimmerma
 

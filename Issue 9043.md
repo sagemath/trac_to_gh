@@ -1,6 +1,6 @@
 # Issue 9043: lcalc failing to build on OpenSolaris x64.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9043
 
 Original creator: drkirkby
 
@@ -21,7 +21,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -207,7 +207,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing lcalc-20100428-1.23.p0.spkg
-[kirkby`@`bsd sage-4.4.2]$ uname -a
+[kirkby@bsd sage-4.4.2]$ uname -a
 Darwin bsd.local 10.3.0 Darwin Kernel Version 10.3.0: Fri Feb 26 11:58:09 PST 2010; root:xnu-1504.3.12~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin
 ```
 
@@ -278,7 +278,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing lcalc-20100428-1.23.p0.spkg
-kirkby`@`sage:~/sage-4.4.2$ uname -a
+kirkby@sage:~/sage-4.4.2$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 
 ```

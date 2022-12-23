@@ -1,6 +1,6 @@
 # Issue 4092: libm4ri-20080904 fails to build on OSX 10.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4092
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7063: SageNB -- Get SageNB to work seamlessly with old notebook saves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7063
 
 Original creator: timdumol
 

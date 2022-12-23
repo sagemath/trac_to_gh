@@ -1,6 +1,6 @@
 # Issue 9238: J. Gutow's update to Jmol in the notebook...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9238
 
 Original creator: gutow
 
@@ -129,7 +129,7 @@ else
   echo Jmol.jar not found
   exit
 fi
-$command -Xmx512m -jar $jarpath $`@`
+$command -Xmx512m -jar $jarpath $@
 
 
 ```
@@ -2152,12 +2152,12 @@ Some nitpicks with spkg-install in http://www.uwosh.edu/faculty_staff/gutow/Jmol
 2. You use "cp -v" near the bottom, but this is not POSIX compliant, e.g., on Solaris we have:
 
 ```
-wstein`@`t2:~$ touch a
-wstein`@`t2:~$ cp -v a b
+wstein@t2:~$ touch a
+wstein@t2:~$ cp -v a b
 cp: illegal option -- v
-Usage: cp [-f] [-i] [-p] [-`@`] f1 f2
-       cp [-f] [-i] [-p] [-`@`] f1 ... fn d1
-       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-`@`] d1 ... dn-1 dn
+Usage: cp [-f] [-i] [-p] [-@] f1 f2
+       cp [-f] [-i] [-p] [-@] f1 ... fn d1
+       cp -r|-R [-H|-L|-P] [-f] [-i] [-p] [-@] d1 ... dn-1 dn
 ```
 
 
@@ -2258,7 +2258,7 @@ The add-help patch would not apply with the response that a JmolHelp.html file a
 +            }else{ //Applet not ready. How many checks have we done?
 +            if(jmolStatus.attempts[loading]==10){
 +                alert("Jmol Applet #"+loading+" is having trouble loading.  Will retry once.");
-+                var scriptStr = 'x=defaultdirectory; data "directory `@`x";';
++                var scriptStr = 'x=defaultdirectory; data "directory @x";';
 +                scriptStr += 'set MessageCallback "jmolMessageHandler"; show defaultdirectory;';
 +                jmolScript(scriptStr);
 +                }

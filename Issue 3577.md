@@ -1,6 +1,6 @@
 # Issue 3577: [with patch; needs review] numpy -- don't import into sage on startup (take 2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3577
 
 Original creator: was
 

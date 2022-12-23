@@ -1,6 +1,6 @@
 # Issue 6709: There are many doctest failues on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6709
 
 Original creator: drkirkby
 

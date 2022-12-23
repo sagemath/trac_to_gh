@@ -1,6 +1,6 @@
 # Issue 3521: Atkin-Lehner operator doesn't square to 1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3521
 
 Original creator: roed
 

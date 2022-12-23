@@ -1,6 +1,6 @@
 # Issue 3252: add kbase functionality to libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3252
 
 Original creator: yi
 

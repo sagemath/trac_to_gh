@@ -1,6 +1,6 @@
 # Issue 6359: update to Python 2.6.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6359
 
 Original creator: mhansen
 

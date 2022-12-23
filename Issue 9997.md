@@ -1,6 +1,6 @@
 # Issue 9997: NTL is building the shared library with the wrong extension on AIX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9998
 
 Original creator: drkirkby
 

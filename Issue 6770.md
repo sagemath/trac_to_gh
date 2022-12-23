@@ -1,6 +1,6 @@
 # Issue 6770: typos in two modules of modular form
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6770
 
 Original creator: mvngu
 

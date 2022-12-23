@@ -1,6 +1,6 @@
 # Issue 4135: [with patch, needs review] notebook -- user management features
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4135
 
 Original creator: TimothyClemans
 
@@ -328,7 +328,7 @@ Comment by mvngu created at 2009-09-03 06:34:01
 I got two hunk failures when merging `trac_4135.4.patch`:
 
 ```
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4135/trac_4135.4.patch && hg qpush
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4135/trac_4135.4.patch && hg qpush
 adding trac_4135.4.patch to series file
 applying trac_4135.4.patch
 patching file sage/server/notebook/twist.py

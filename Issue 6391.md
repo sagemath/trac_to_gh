@@ -1,6 +1,6 @@
 # Issue 6391: libGAP!  -- create a Cython library interface to gap
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6391
 
 Original creator: was
 
@@ -142,8 +142,8 @@ cd sage/spkg/build/gap-4.4.10.p17
 To rebuild:
 
 ```
-steinz`@`sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src$ make
-steinz`@`sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src/bin/x86_64-unknown-linux-gnu-gcc$ gcc -shared *.o -o libgap.so
+steinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src$ make
+steinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src/bin/x86_64-unknown-linux-gnu-gcc$ gcc -shared *.o -o libgap.so
 ```
 
 
@@ -199,14 +199,14 @@ The cached_function decorator works at the interpreter level so I really do not 
 ```
 --- a/sage/libs/gap/gap.pyx	Sat Jun 27 05:49:14 2009 +0200
 +++ b/sage/libs/gap/gap.pyx	Sat Apr 10 16:30:27 2010 -0700
-`@``@` -71,8 +71,8 `@``@`
+@@ -71,8 +71,8 @@
  
  from sage.structure.element cimport ModuleElement, RingElement
    
 -from sage.misc.cachefunc import cached_function
--`@`cached_function
+-@cached_function
 +#from sage.misc.cachefunc import cached_function
-+#`@`cached_function
++#@cached_function
  def gap_root():
      """
      Find the location of the GAP root install which is stored in the gap
@@ -1063,7 +1063,7 @@ But I did get this scary thing:
 
 ```
 sage: libgap(1)
-/Users/student/Desktop/sage-4.6.2/local/bin/sage-sage: line 308: 14591 Abort trap              sage-ipython "$`@`" -i
+/Users/student/Desktop/sage-4.6.2/local/bin/sage-sage: line 308: 14591 Abort trap              sage-ipython "$@" -i
 ```
 
 Could this is another example of using the wrong !MAC_OSX_DEPLOYMENT_TARGET or something, like it was for the initial problems with 10.6 not working... ?  Maybe that's impossible.
@@ -1745,8 +1745,8 @@ Comment by vbraun created at 2012-09-07 21:25:59
 I can manually force the "halfing pool size" message by limiting the virtual mem size (in the followng example to 5gb which is a bit more than half of what GAP wants to take on x86 --- note that this is purely virtual and not used unless you actually do a huge computation)
 
 ```
-[vbraun`@`volker-desktop ~]$ ulimit -v 5000000
-[vbraun`@`volker-desktop ~]$ sage -c 'print libgap(1)'
+[vbraun@volker-desktop ~]$ ulimit -v 5000000
+[vbraun@volker-desktop ~]$ sage -c 'print libgap(1)'
 gap: halfing pool size.
 1
 ```
@@ -1760,7 +1760,7 @@ Comment by mmarco created at 2012-09-08 01:43:40
 
 
 ```
-mmarco`@`neumann ~/sage-5.2 $ ./sage -gdb
+mmarco@neumann ~/sage-5.2 $ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /home/mmarco/sage-5.2/local/bin/sage-ipython
@@ -2051,7 +2051,7 @@ I've removed the upstream-gap-x.y.z directories from the spkg, the `make-spkg.sh
 Gap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:
 
 ```
-(sage-sh) vbraun`@`volker-desktop:spkg$ ldd ~/Sage/sage/local/lib/libgap.so
+(sage-sh) vbraun@volker-desktop:spkg$ ldd ~/Sage/sage/local/lib/libgap.so
 	linux-vdso.so.1 =>  (0x00007fff8ebff000)
 	libgmp.so.7 => /home/vbraun/opt/sage-5.4.beta1/local/lib/libgmp.so.7 (0x00007f8a82885000)
 	libc.so.6 => /lib64/libc.so.6 (0x00007f8a824a9000)
@@ -2088,7 +2088,7 @@ Comment by vbraun created at 2012-09-23 14:55:38
 Nowadays GAP uses anonymous mmap to reserve a big chunk of addressing space (not physical RAM, mind you) and uses that as needed. This is the origin of the `halving pool size` message on stdout. The message is purely cosmetic, but I'll ask upstream to suppress it. It also appears on the GAP command line and has nothing to do with libGAP:
 
 ```
-[vbraun`@`volker-desktop ~]$ sage -gap -o 16384G
+[vbraun@volker-desktop ~]$ sage -gap -o 16384G
 gap: halving pool size.
 gap: halving pool size.
 gap: halving pool size.
@@ -2166,7 +2166,7 @@ I tried it on the system I am testing libgap now, and it doesn't work (I needed 
 
 ```
 
-(sage-sh) dima`@`spms-banana:test$ make main
+(sage-sh) dima@spms-banana:test$ make main
 gcc -std=gnu99 -I/usr/local/src/sage/sage-5.4.beta1/local/include -I/usr/local/src/sage/sage-5.4.beta1/local/include/python2.6 -c -g -DGAPLOCAL=/usr/local/src/sage/sage-5.4.beta1/local/gap/latest main.c
 In file included from main.c:10:
 /usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h: In function 'libGAP_SwitchToNewLvars':
@@ -2179,7 +2179,7 @@ main.c: In function 'eval':
 main.c:24: warning: implicit declaration of function 'libgap_set_error'
 main.c:26: warning: implicit declaration of function 'libGAP_ViewObjHandler'
 gcc -L/usr/local/src/sage/sage-5.4.beta1/local/lib -o main main.o -lgap -lcsage -lntl -lstdc++ -lpari -lpython2.7 -lm -lgmp
-(sage-sh) dima`@`spms-banana:test$ ./main
+(sage-sh) dima@spms-banana:test$ ./main
 Initialized
 Input:
 1+2+3;
@@ -2188,7 +2188,7 @@ Output:
 Input:
 g:=FreeGroup(2);
 Segmentation fault
-(sage-sh) dima`@`spms-banana:test$ 
+(sage-sh) dima@spms-banana:test$ 
 ```
 
 
@@ -2264,7 +2264,7 @@ and it keeps repeating, ad nauseum...
 The x86_64 system runs Debian, here are the compiler specs:
 
 ```
-(sage-sh) dima`@`spms-banana:test$ gcc -v
+(sage-sh) dima@spms-banana:test$ gcc -v
 Using built-in specs.
 Target: x86_64-linux-gnu
 Configured with: ../src/configure -v --with-pkgversion='Debian 4.4.5-8' --with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.4 --enable-shared --enable-multiarch --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4 --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --with-arch-32=i586 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu

@@ -1,6 +1,6 @@
 # Issue 6746: cliquer doesn't build under 64-bit mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6746
 
 Original creator: mvngu
 

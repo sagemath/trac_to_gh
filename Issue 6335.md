@@ -1,6 +1,6 @@
 # Issue 6335: optional doctest failure -- kash interface (trivial to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6335
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9763: Change hashing and printing for NumberFieldIdeals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9764
 
 Original creator: jdemeyer
 

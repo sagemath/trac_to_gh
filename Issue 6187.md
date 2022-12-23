@@ -1,6 +1,6 @@
 # Issue 6187: After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6187
 
 Original creator: jhpalmieri
 
@@ -163,7 +163,7 @@ The following may help with rebuilding the reference manual after cloning:
 diff --git a/doc/common/builder.py b/doc/common/builder.py
 --- a/doc/common/builder.py
 +++ b/doc/common/builder.py
-`@``@` -353,6 +353,16 `@``@` class ReferenceBuilder(DocBuilder):
+@@ -353,6 +353,16 @@ class ReferenceBuilder(DocBuilder):
          if os.path.exists(_sage):
              copytree(_sage, os.path.join(self.dir, 'sage'))
                  
@@ -180,7 +180,7 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
          getattr(DocBuilder, build_type)(self, *args, **kwds)
      
      def cache_filename(self):
-`@``@` -645,6 +655,8 `@``@` def help_message():
+@@ -645,6 +655,8 @@ def help_message():
  parser = optparse.OptionParser(usage="usage: sage -docbuild [options] name type")
  parser.add_option("--jsmath", action="store_true",
                    help="render math using jsMath")
@@ -189,7 +189,7 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
  parser.print_help = help_message
  
  if __name__ == '__main__':
-`@``@` -653,6 +665,11 `@``@` if __name__ == '__main__':
+@@ -653,6 +665,11 @@ if __name__ == '__main__':
      if options.jsmath:
          os.environ['SAGE_DOC_JSMATH'] = "True"
  

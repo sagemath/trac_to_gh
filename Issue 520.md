@@ -1,6 +1,6 @@
 # Issue 520: memory leak: some small issues with Givaro
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/520
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8447: Detect when Sage is old and issue warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8447
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9730: A simple RC4 cipher implementation for Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9730
 
 Original creator: sg.sourav
 
@@ -48,7 +48,7 @@ Comment by mvngu created at 2010-08-14 12:08:40
 Running doctests over `rc4.py` fails with message:
 
 ```sh
-[mvngu`@`sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py 
+[mvngu@sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py 
 sage -t -long "devel/sage-main/sage/crypto/rc4.py"          
 **********************************************************************
 Error: TAB character found.
@@ -77,14 +77,14 @@ Apply rc4_mod1.patch directly (not over rc4.patch).
 
 
 ```
-sourav`@`ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py
+sourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py
 sage -t -long "devel/sage-main/sage/crypto/rc4.py"          
 	 [6.7 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 6.7 seconds
-sourav`@`ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py
+sourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py
 sage -t -long "devel/sage-main/sage/crypto/rc4.py"          
 	 [6.7 s]
  

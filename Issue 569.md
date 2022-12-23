@@ -1,6 +1,6 @@
 # Issue 569: fix many broken --long doctests in functions/piecewise.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/569
 
 Original creator: was
 

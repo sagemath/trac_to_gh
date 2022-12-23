@@ -1,6 +1,6 @@
 # Issue 6724: spell-check all modules under sage/modules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6724
 
 Original creator: mvngu
 
@@ -70,7 +70,7 @@ and I just did it again on a brand new clone from sage 4.1.1.rc2; importing only
 
 
 ```
-chrigu`@`linux-ljo8:~/sage/trac_spell> sage -docbuild reference html
+chrigu@linux-ljo8:~/sage/trac_spell> sage -docbuild reference html
 Warning: could not import sage.modules.fg_pid.fgp_morphism        
 cannot import name FGP_Morphism                                   
 sphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/reference   .  /usr/local/sage/devel/sage/doc/output/html/en/reference                                                                                                                          

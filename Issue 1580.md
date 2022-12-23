@@ -1,6 +1,6 @@
 # Issue 1580: notebook shows graphics out of order
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1580
 
 Original creator: jason
 

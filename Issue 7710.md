@@ -1,6 +1,6 @@
 # Issue 7710: documentation of rational_reconstruction incoherent with code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7710
 
 Original creator: zimmerma
 

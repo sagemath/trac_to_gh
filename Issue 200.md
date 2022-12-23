@@ -1,6 +1,6 @@
 # Issue 200: elliptic curve formal group printing error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/200
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 931: Optimize permanent code for matrices over ZZ
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/931
 
 Original creator: jsp
 

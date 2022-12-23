@@ -1,6 +1,6 @@
 # Issue 3086: Update R to the 2.7 release and split off rpy.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3086
 
 Original creator: mabshoff
 

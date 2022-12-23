@@ -1,6 +1,6 @@
 # Issue 2538: Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2538
 
 Original creator: mabshoff
 

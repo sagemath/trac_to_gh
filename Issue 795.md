@@ -1,6 +1,6 @@
 # Issue 795: [with patch] tiny documentation update for MPolynomialIdeal.groebner_basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/795
 
 Original creator: malb
 

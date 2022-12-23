@@ -1,6 +1,6 @@
 # Issue 9467: p-adic l-series associated to modular Jacobians
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9467
 
 Original creator: jen
 

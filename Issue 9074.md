@@ -1,6 +1,6 @@
 # Issue 9074: Expand latex support for combinatorial graphs via tkz-graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9074
 
 Original creator: rbeezer
 
@@ -211,7 +211,7 @@ The "or" on the second line doesn't line up with the ```` on the first line, so 
 While you're fixing these issues, you might want to modify this code:
 
 ```
-`@`cached_function
+@cached_function
 def setup_latex_preamble():
   ...
 ```

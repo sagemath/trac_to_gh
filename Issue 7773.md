@@ -1,6 +1,6 @@
 # Issue 7773: Test failures with Fedora 12 on intel i7 860 processor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7773
 
 Original creator: jsp
 
@@ -244,7 +244,7 @@ detailed failure results:
 
 
 ```
-[erik`@`localhost sage-4.3.3.alpha1]$ ./sage -t devel/sage-main/sage/coding/linear_code.py 
+[erik@localhost sage-4.3.3.alpha1]$ ./sage -t devel/sage-main/sage/coding/linear_code.py 
 sage -t  "devel/sage-main/sage/coding/linear_code.py"       
 *** glibc detected *** python: double free or corruption (fasttop): 0x0bbfb540 ***
 ======= Backtrace: =========
@@ -364,7 +364,7 @@ Ring morphism:
   Defn: a |--> b^7 + b^5
 sage: quit
 Exiting SAGE (CPU time 0m0.54s, Wall time 0m7.06s).
-/usr/local/sage-4.3.3/sage/local/bin/sage-sage: line 206:  4274 Segmentation fault      (core dumped) sage-ipython "$`@`" -i
+/usr/local/sage-4.3.3/sage/local/bin/sage-sage: line 206:  4274 Segmentation fault      (core dumped) sage-ipython "$@" -i
 ```
 
 (Note the problem does not happen during the Sage session, but only when we quit Sage and it
@@ -504,7 +504,7 @@ Ring morphism:
   Defn: a |--> b^4 + b^3 + b
 sage: quit
 Exiting SAGE (CPU time 0m0.25s, Wall time 0m3.09s).
-[zimmerma`@`coing ~]$
+[zimmerma@coing ~]$
 ```
 
 No SegFault occurs with NTL, which shows the problem is linked with Givaro.
@@ -519,7 +519,7 @@ I tried again the 22 tests which did produce a Segfault, by changing zech_log_bo
 However, 9 of the 22 tests do fail, for example:
 
 ```
-[zimmerma`@`coing sage]$ sage -t matrix/matrix_space.py
+[zimmerma@coing sage]$ sage -t matrix/matrix_space.py
 sage -t  "devel/sage-7773/sage/matrix/matrix_space.py"      
 **********************************************************************
 File "/usr/local/sage-4.3.3/sage/devel/sage-7773/sage/matrix/matrix_space.py", line 1222:

@@ -1,6 +1,6 @@
 # Issue 4010: notebook -- Renaming worksheet: clicking OK with a blank text box should revert to worksheet's old name not name it to "null"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4010
 
 Original creator: TimothyClemans
 

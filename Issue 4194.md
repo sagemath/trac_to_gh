@@ -1,6 +1,6 @@
 # Issue 4194: pylab plots cut off
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4194
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 827: nfrootsof1 from Pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/827
 
 Original creator: jvoight
 

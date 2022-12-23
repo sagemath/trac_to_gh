@@ -1,6 +1,6 @@
 # Issue 7367: Add SageNB modules to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7367
 
 Original creator: mpatel
 

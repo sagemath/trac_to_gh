@@ -1,6 +1,6 @@
 # Issue 9203: plot ellipses
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9203
 
 Original creator: vdelecroix
 

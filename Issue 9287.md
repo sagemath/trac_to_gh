@@ -1,6 +1,6 @@
 # Issue 9287: improving doctest coverage for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9287
 
 Original creator: wuthrich
 

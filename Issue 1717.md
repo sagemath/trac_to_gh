@@ -1,6 +1,6 @@
 # Issue 1717: [with bundle] trivial fixes in the programming guide (mostly typos)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1717
 
 Original creator: AlexGhitza
 

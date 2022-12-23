@@ -1,6 +1,6 @@
 # Issue 9553: sage -ba (build all) waits for input, making it harder to use in scripts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9553
 
 Original creator: jdemeyer
 

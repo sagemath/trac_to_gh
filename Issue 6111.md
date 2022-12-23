@@ -1,6 +1,6 @@
 # Issue 6111: [with patch; needs review] review symbolics in sage-4.0 (switch to pynac)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6111
 
 Original creator: was
 

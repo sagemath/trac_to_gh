@@ -1,6 +1,6 @@
 # Issue 6961: provide wrapper for psi function of GiNaC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6961
 
 Original creator: burcin
 
@@ -11,7 +11,7 @@ From sage-support:
 
 ```
 On Fri, 18 Sep 2009 15:47:45 -0700 (PDT)
-The_Fool <masterfulet`@`yahoo.com> wrote:
+The_Fool <masterfulet@yahoo.com> wrote:
 
 > While working with the derivative of the Gamma function, the digamma
 > function is obviously involved.  The sage "diff" function does show Γ
@@ -93,19 +93,19 @@ Comment by mvngu created at 2010-01-25 19:30:14
 The patch on this ticket conflicts with #6207. If I first apply the patches on #6207 to Sage 4.3.1, and then [trac_6961-psi.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6961/trac_6961-psi.patch), I would get a hunk failure:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207.patch && hg qpush
 adding trac_6207.patch to series file
 applying trac_6207.patch
 now at: trac_6207.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207-part2.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207-part2.patch && hg qpush
 adding trac_6207-part2.patch to series file
 applying trac_6207-part2.patch
 now at: trac_6207-part2.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207-review.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6207/trac_6207-review.patch && hg qpush
 adding trac_6207-review.patch to series file
 applying trac_6207-review.patch
 now at: trac_6207-review.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6961/trac_6961-psi.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6961/trac_6961-psi.patch && hg qpush
 adding trac_6961-psi.patch to series file
 applying trac_6961-psi.patch
 patching file sage/symbolic/pynac.pyx
@@ -259,7 +259,7 @@ I applied patches in the following order against Sage 4.3.3.alpha0, together wit
 All doctests passed except for this trivial failure:
 
 ```
-[mvngu`@`sage sage-4.3.3.alpha0.1]$ ./sage -t -long devel/sage/sage/rings/arith.py
+[mvngu@sage sage-4.3.3.alpha0.1]$ ./sage -t -long devel/sage/sage/rings/arith.py
 sage -t -long "devel/sage/sage/rings/arith.py"              
 **********************************************************************
 File "/dev/shm/mvngu/sandbox/sage-4.3.3.alpha0.1/devel/sage/sage/rings/arith.py", line 287:

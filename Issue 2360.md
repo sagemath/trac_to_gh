@@ -1,6 +1,6 @@
 # Issue 2360: Strange Polynomial substitution problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2360
 
 Original creator: jbmohler
 

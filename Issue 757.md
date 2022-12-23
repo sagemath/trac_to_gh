@@ -1,6 +1,6 @@
 # Issue 757: Wrap NTL's zz_pX class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/757
 
 Original creator: robertwb
 

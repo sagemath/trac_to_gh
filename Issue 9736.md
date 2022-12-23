@@ -1,6 +1,6 @@
 # Issue 9736: gfran totally broken on 32-bit OpenSolaris  on x86 CPU
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9736
 
 Original creator: drkirkby
 

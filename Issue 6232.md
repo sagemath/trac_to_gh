@@ -1,6 +1,6 @@
 # Issue 6232: Consider CADO-NFS for inclusion
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6232
 
 Original creator: malb
 
@@ -107,7 +107,7 @@ Fatal Python error: Py_Initialize: Unable to get the locale encoding
 SyntaxError: invalid syntax
 
 Current thread 0x00002b81297f1700 (most recent call first):
-/tmp/cado-nfs-2.1.1/factor.sh: line 242: 13296 Aborted                 "${TIMEOUT[`@`]}" $PYTHON $cadofactor "$t/param" N=$n tasks.execpath="$bindir" tasks.threads=$cores tasks.workdir="$t" slaves.hostnames="$hostnames" slaves.nrclients=$slaves slaves.scriptpath="$scriptpath" "$server_address" slaves.basepath="$t/client/" "$`@`"
+/tmp/cado-nfs-2.1.1/factor.sh: line 242: 13296 Aborted                 "${TIMEOUT[@]}" $PYTHON $cadofactor "$t/param" N=$n tasks.execpath="$bindir" tasks.threads=$cores tasks.workdir="$t" slaves.hostnames="$hostnames" slaves.nrclients=$slaves slaves.scriptpath="$scriptpath" "$server_address" slaves.basepath="$t/client/" "$@"
 FAILED ; data left in /tmp/cado.mru0w9AeIM
 
 ---------------------------------------------------------------------------
@@ -143,7 +143,7 @@ CalledProcessError                        Traceback (most recent call last)
      78         from sage.misc.preparser import load_wrap
 ---> 79         return self.shell.ex(load_wrap(s, attach=False))
      80 
-     81     `@`line_magic
+     81     @line_magic
 
 /usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in ex(self, cmd)
    2382         """Execute a normal python statement in user namespace."""

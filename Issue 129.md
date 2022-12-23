@@ -1,6 +1,6 @@
 # Issue 129: relocation problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/129
 
 Original creator: nbruin
 

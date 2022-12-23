@@ -1,6 +1,6 @@
 # Issue 9061: Fix broken inequalities in add_constraint method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9061
 
 Original creator: ncohen
 

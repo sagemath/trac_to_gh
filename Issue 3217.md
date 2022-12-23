@@ -1,6 +1,6 @@
 # Issue 3217: [with patch, needs review] Serious bug in modular symbols for GammaH
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3217
 
 Original creator: craigcitro
 

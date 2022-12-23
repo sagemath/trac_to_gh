@@ -1,6 +1,6 @@
 # Issue 3626: Graph.set_boundary only takes lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3626
 
 Original creator: boothby
 

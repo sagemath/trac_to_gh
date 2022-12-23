@@ -1,6 +1,6 @@
 # Issue 7170: HP-UX failure of rubiks as no 'install' program.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7170
 
 Original creator: drkirkby
 

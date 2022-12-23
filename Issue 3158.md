@@ -1,6 +1,6 @@
 # Issue 3158: singular-3-0-4-2-20080405.p1 requires flex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3158
 
 Original creator: mabshoff
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 singular-3-0-4-2-20080405.p1 requires flex to build. This is because libparse.l has the same time stamp as libparse.cc:
 
 ```
-[mabshoff`@`eno Singular]$ ls -al libparse.*
+[mabshoff@eno Singular]$ ls -al libparse.*
 -rw-r----- 1 mabshoff sage 109970 2008-03-19 13:44 libparse.cc
 -rw-r----- 1 mabshoff sage   1524 2008-03-25 11:04 libparse.h
 -rw-r----- 1 mabshoff sage  31422 2008-03-19 13:44 libparse.l

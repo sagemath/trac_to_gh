@@ -1,6 +1,6 @@
 # Issue 6470: sage-4.1.rc0: On OS X 10.5 Singular fails to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6470
 
 Original creator: rlm
 

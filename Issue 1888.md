@@ -1,6 +1,6 @@
 # Issue 1888: 3d graphics -- cool plots of space curves (examples for docstrings)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1888
 
 Original creator: was
 

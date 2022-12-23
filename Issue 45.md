@@ -1,6 +1,6 @@
 # Issue 45: NTL modulus not reset correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/45
 
 Original creator: dmharvey
 
@@ -64,7 +64,7 @@ NOTE to self -- be sure to not forget about this fix when we transition to sagex
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169432669 28800
 # Node ID e4bb5ab8b7beb15adbfe9560ad7d2c015b3e9b5b
 # Parent  17021b7f73726bc025d59471aaa49fceaf33d24d
@@ -73,7 +73,7 @@ Trac #45 -- ntl modulus not reset correctly
 diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
 --- a/sage/rings/polynomial_element.py  Sun Jan 21 17:23:55 2007 -0800
 +++ b/sage/rings/polynomial_element.py  Sun Jan 21 18:24:29 2007 -0800
-`@``@` -2887,11 +2887,29 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -2887,11 +2887,29 @@ class Polynomial_dense_mod_n(Polynomial)
      """
      A dense polynomial over the integers modulo n, where n is composite.
  
@@ -103,7 +103,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
      """
      def __init__(self, parent, x=None, check=True,
                   is_gen=False, construct=False):
-`@``@` -2901,7 +2919,6 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -2901,7 +2919,6 @@ class Polynomial_dense_mod_n(Polynomial)
              if isinstance(x, ZZ_pX_class):
                  self.__poly = x
                  return
@@ -111,7 +111,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
              self.__poly = ZZ_pX(x)
              return
  
-`@``@` -2952,6 +2969,9 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -2952,6 +2969,9 @@ class Polynomial_dense_mod_n(Polynomial)
          parent._ntl_set_modulus()
          self.__poly = ZZ_pX(x)
  
@@ -121,7 +121,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
      def __reduce__(self):
          return Polynomial_dense_mod_n, \
                 (self.parent(), self.list(), False, self.is_gen())
-`@``@` -2973,10 +2993,14 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -2973,10 +2993,14 @@ class Polynomial_dense_mod_n(Polynomial)
                 pari(1).Mod(self.parent().base_ring().order())
  
      def ntl_ZZ_pX(self):
@@ -137,7 +137,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
          """
          return self.__poly
  
-`@``@` -2997,11 +3021,12 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -2997,11 +3021,12 @@ class Polynomial_dense_mod_n(Polynomial)
          n = int(n)
          if n < 0:
              raise IndexError, "n must be >= 0"
@@ -151,7 +151,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
          if self.degree() <= 0:
              return self.parent()(self[0]**n)
          if n < 0:
-`@``@` -3009,7 +3034,8 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -3009,7 +3034,8 @@ class Polynomial_dense_mod_n(Polynomial)
          return self.parent()(self.__poly**n, construct=True)
       
      def _add_(self, right):
@@ -161,7 +161,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
  
      def _mul_(self, right):
          """
-`@``@` -3018,7 +3044,8 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -3018,7 +3044,8 @@ class Polynomial_dense_mod_n(Polynomial)
              sage: (x - 2)*(x^2 - 8*x + 16)
              x^3 + 90*x^2 + 32*x + 68
          """
@@ -171,7 +171,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
  
      def quo_rem(self, right):
          """
-`@``@` -3029,9 +3056,10 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -3029,9 +3056,10 @@ class Polynomial_dense_mod_n(Polynomial)
              right = self.parent()(right)
          elif self.parent() != right.parent():
              raise TypeError
@@ -183,7 +183,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
          
      def shift(self, n):
          r"""
-`@``@` -3055,13 +3083,17 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -3055,13 +3083,17 @@ class Polynomial_dense_mod_n(Polynomial)
          """
          if n == 0:
              return self
@@ -204,7 +204,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
              d = right[0]
          elif (right in self.parent().base_ring()):
              d = right
-`@``@` -3135,7 +3167,7 `@``@` class Polynomial_dense_mod_n(Polynomial)
+@@ -3135,7 +3167,7 @@ class Polynomial_dense_mod_n(Polynomial)
          """
          if self._is_gen:
              raise TypeError, "Cannot change the value of the generator."
@@ -213,7 +213,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
          self.__poly = ZZ_pX(v)
          try:
              del self.__list
-`@``@` -3146,9 +3178,22 `@``@` class Polynomial_dense_mod_p(Polynomial_
+@@ -3146,9 +3178,22 @@ class Polynomial_dense_mod_p(Polynomial_
                               Polynomial_singular_repr,
                               principal_ideal_domain_element.PrincipalIdealDomainElement):
      """
@@ -237,7 +237,7 @@ diff -r 17021b7f7372 -r e4bb5ab8b7be sage/rings/polynomial_element.py
          return Polynomial_dense_mod_p, \
                 (self.parent(), self.list(), False, self.is_gen())
  
-`@``@` -3189,7 +3234,7 `@``@` class Polynomial_dense_mod_p(Polynomial_
+@@ -3189,7 +3234,7 @@ class Polynomial_dense_mod_p(Polynomial_
          """
          if not isinstance(other, Polynomial) or self.parent() != other.parent():
              other = self.polynomial(other)

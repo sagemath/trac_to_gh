@@ -1,6 +1,6 @@
 # Issue 9982: boehm_gc fails to build properly on AIX 5.3
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9983
 
 Original creator: drkirkby
 

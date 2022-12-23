@@ -1,6 +1,6 @@
 # Issue 7156: prereq-0.4 has a minor portability issue.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7156
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 9196: Update ATLAS to the latest upstream souce
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9196
 
 Original creator: drkirkby
 

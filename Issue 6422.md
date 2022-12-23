@@ -1,6 +1,6 @@
 # Issue 6422: [with patch, needs review] make sage.symbolic.expression.Expression.__init__ usable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6422
 
 Original creator: burcin
 
@@ -11,7 +11,7 @@ From sage-support:
 
 ```
 On Fri, 26 Jun 2009 06:14:13 -0700 (PDT)
-Nicolas <nicolas.fressengeas`@`gmail.com> wrote:
+Nicolas <nicolas.fressengeas@gmail.com> wrote:
 
 > 
 > I think there is definitely a bug in the __init__ method of the

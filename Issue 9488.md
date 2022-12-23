@@ -1,6 +1,6 @@
 # Issue 9488: [easy] parse make -j N as well as make -jN for parallel builds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9488
 
 Original creator: robertwb
 

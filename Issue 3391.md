@@ -1,6 +1,6 @@
 # Issue 3391: update scipy to match the numpy 1.1.0 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3391
 
 Original creator: mabshoff
 

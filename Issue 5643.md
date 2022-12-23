@@ -1,6 +1,6 @@
 # Issue 5643: [with patch, needs review] trivial doctest patch for steenrod_algebra.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5643
 
 Original creator: jhpalmieri
 

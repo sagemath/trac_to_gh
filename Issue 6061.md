@@ -1,6 +1,6 @@
 # Issue 6061: [with patch; needs review] refresh the pickle jar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6061
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5446: [with patch, needs review] RealIntervalField creates non-unique RealFields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5446
 
 Original creator: cwitty
 

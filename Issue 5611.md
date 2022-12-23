@@ -1,6 +1,6 @@
 # Issue 5611: [with spkg; needs review] blackboard bold font for jsMath
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5611
 
 Original creator: jhpalmieri
 
@@ -88,7 +88,7 @@ After installing the spkg, test it by adding one line to the file sage/server/no
 diff -r 0a59c5ea9cac -r 9d482703384d sage/server/notebook/notebook.py
 --- a/sage/server/notebook/notebook.py	Wed Mar 25 09:33:27 2009 -0700
 +++ b/sage/server/notebook/notebook.py	Wed Mar 25 14:07:43 2009 -0700
-`@``@` -1754,6 +1754,7 `@``@`
+@@ -1754,6 +1754,7 @@
           jsMath.Extension.Require("verb");
           jsMath.Extension.Require("moreArrows");
           jsMath.Extension.Require("AMSmath");

@@ -1,6 +1,6 @@
 # Issue 1337: tp_new leads to munmap_chunk(): invalid pointer segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1337
 
 Original creator: mabshoff
 
@@ -43,7 +43,7 @@ __pyx_tp_new_4sage_9structure_7element_Element (element.c:22299)
 For the Linux PPC port this leads to the following crash on exit:
 
 ```
-[mabshoff`@`localhost sage-2.8.14]$ ./sage -gdb
+[mabshoff@localhost sage-2.8.14]$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /tmp/Work/sage-2.8.14/local/bin/sage-gdb-pythonstartup
@@ -265,7 +265,7 @@ Comment by mabshoff created at 2008-01-22 05:14:14
 When I apply the patch I get double frees on sage.math:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.1.alpha0, Release Date: 2008-01-19               |
@@ -273,7 +273,7 @@ mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1$ ./sage
 sage:
 Exiting SAGE (CPU time 0m0.00s, Wall time 0m1.76s).
 *** glibc detected *** double free or corruption (out): 0x0000000000e37400 ***
-/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1/local/bin/sage-sage: line 210: 31963 Aborted                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/scratch/mabshoff/release-cycle/sage-2.10.1.alpha1/local/bin/sage-sage: line 210: 31963 Aborted                 sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
 
 So I am reverting this for now.

@@ -1,6 +1,6 @@
 # Issue 6608: [with patch, needs review] nodetex is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6608
 
 Original creator: jhpalmieri
 

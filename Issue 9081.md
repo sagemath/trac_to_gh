@@ -1,6 +1,6 @@
 # Issue 9081: Transistion better between two halves of the developer's walkthrough
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9081
 
 Original creator: rbeezer
 

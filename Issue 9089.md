@@ -1,6 +1,6 @@
 # Issue 9089: Graphics3dGroup __add__ modifies its arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9089
 
 Original creator: jason
 

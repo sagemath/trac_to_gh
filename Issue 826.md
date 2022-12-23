@@ -1,6 +1,6 @@
 # Issue 826: Coercing rational function elements (i.e. fraction field) to symbolic ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/826
 
 Original creator: jbmohler
 

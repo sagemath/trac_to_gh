@@ -1,6 +1,6 @@
 # Issue 501: more memory leaks in basic arithmetic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/501
 
 Original creator: was
 

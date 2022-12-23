@@ -1,6 +1,6 @@
 # Issue 8347: Test the positivity of the real part of a number field element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8347
 
 Original creator: nborie
 

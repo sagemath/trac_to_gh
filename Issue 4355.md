@@ -1,6 +1,6 @@
 # Issue 4355: Port latex/asciiArt output for tableaux and all friends from MuPAD-Combinat
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4355
 
 Original creator: nthiery
 

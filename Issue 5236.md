@@ -1,6 +1,6 @@
 # Issue 5236: x^(-pm) in ramified extensions of Qp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5236
 
 Original creator: roed
 

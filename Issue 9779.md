@@ -1,6 +1,6 @@
 # Issue 9779: Missing symbolic link for liblapack.a, so SAGE_ATLAS_LIB does not work on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9780
 
 Original creator: drkirkby
 
@@ -90,7 +90,7 @@ That passed all doctests:
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1825.6 seconds
-drkirkby`@`hawk:~/noatlas/sage-4.5.3.rc0$ ./sage -gap
+drkirkby@hawk:~/noatlas/sage-4.5.3.rc0$ ./sage -gap
 ```
 
 
@@ -150,7 +150,7 @@ The version I created that linked to the static libraries in /ATLAS on Solaris 1
 
 
 ```
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.rc0/local/lib$ ls -l | grep ATLAS
+kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0/local/lib$ ls -l | grep ATLAS
 lrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libatlas.a -> /ATLAS/lib/libatlas.a
 lrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libcblas.a -> /ATLAS/lib/libcblas.a
 lrwxrwxrwx   1 kirkby   1093          23 Sep  6 16:56 libf77blas.a -> /ATLAS/lib/libf77blas.a
@@ -174,7 +174,7 @@ but the system had run out of swap space, as shown in the system logs. I added s
 
 
 ```
-kirkby`@`t2:32 ~/t2/32/sage-4.5.3.rc0$ ./sage -t  -long devel/sage/sage/parallel/decorate.py
+kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ ./sage -t  -long devel/sage/sage/parallel/decorate.py
 sage -t -long "devel/sage/sage/parallel/decorate.py"        
          [39.6 s]
  
@@ -482,7 +482,7 @@ I addressed the other issue you had about the parent directory. See if the follo
 
 
 ```
-drkirkby`@`hawk:~$ export SAGE_ATLAS_LIB=/some/random/directory/for/atlas
+drkirkby@hawk:~$ export SAGE_ATLAS_LIB=/some/random/directory/for/atlas
 ```
 
 

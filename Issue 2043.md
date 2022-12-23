@@ -1,6 +1,6 @@
 # Issue 2043: [with spkg] add proper LDFLAGS to libpng.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2043
 
 Original creator: mabshoff
 

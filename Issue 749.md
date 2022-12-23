@@ -1,6 +1,6 @@
 # Issue 749: graphs: enum() functionality duplicated in relabel()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/749
 
 Original creator: jason
 

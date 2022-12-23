@@ -1,6 +1,6 @@
 # Issue 4531: Sage 3.2.rc1: automorphism_group() doctest failure on 32 bit in sage/combinat/species/library.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4531
 
 Original creator: mabshoff
 

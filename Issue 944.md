@@ -1,6 +1,6 @@
 # Issue 944: "sage -t ." does not run doctests in the current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/944
 
 Original creator: cwitty
 
@@ -12,12 +12,12 @@ Assignee: failure
 
 
 ```
-cwitty`@`magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t .
+cwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t .
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 0.0 seconds
-cwitty`@`magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t ../polynomial/
+cwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t ../polynomial/
  
 ----------------------------------------------------------------------
 All tests passed!

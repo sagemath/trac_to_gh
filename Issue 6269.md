@@ -1,6 +1,6 @@
 # Issue 6269: Coloring speed up
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6269
 
 Original creator: kcrisman
 
@@ -190,7 +190,7 @@ File "/Users/ncalexan/sage-4.0.1.alpha0/devel/sage-nca/sage/graphs/graph.py", li
 Expected:
     [[1, 2, 3], [0, 5, 6], [4]]
 Got:
-    [This is the Trac macro *0, 1, 4, 2, 5, 6, 3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1, 4, 2, 5, 6, 3-macro)
+    [[0, 1, 4, 2, 5, 6, 3]]
 **********************************************************************
 File "/Users/ncalexan/sage-4.0.1.alpha0/devel/sage-nca/sage/graphs/graph.py", line 8907:
     sage: for c in sorted(H.keys()):

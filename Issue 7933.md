@@ -1,6 +1,6 @@
 # Issue 7933: update copyright years to span 2006--2010
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7933
 
 Original creator: mvngu
 

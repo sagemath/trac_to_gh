@@ -1,6 +1,6 @@
 # Issue 7125: New report for "all tickets...participated in" doesn't think creation is participation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7125
 
 Original creator: kcrisman
 

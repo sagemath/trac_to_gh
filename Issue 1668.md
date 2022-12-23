@@ -1,6 +1,6 @@
 # Issue 1668: fix polybori's variable names: _P->PB_P
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1668
 
 Original creator: mabshoff
 

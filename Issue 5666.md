@@ -1,6 +1,6 @@
 # Issue 5666: forming ideals in IntegerModRing_generic does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5666
 
 Original creator: cremona
 

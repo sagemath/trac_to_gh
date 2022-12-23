@@ -1,6 +1,6 @@
 # Issue 1520: prebuilt 2.9-alpha7 osx ppc binary has hardcoded paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1520
 
 Original creator: craigcitro
 

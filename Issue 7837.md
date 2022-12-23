@@ -1,6 +1,6 @@
 # Issue 7837: modular symbols -- change boundary space B_k when k odd to have the right dimension
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7837
 
 Original creator: was
 

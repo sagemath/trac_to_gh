@@ -1,6 +1,6 @@
 # Issue 3656: log_repr and log on finite field with prime order fails,
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3656
 
 Original creator: syazdani
 

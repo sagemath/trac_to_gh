@@ -1,6 +1,6 @@
 # Issue 5138: implement computing manin constants of elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5138
 
 Original creator: was
 

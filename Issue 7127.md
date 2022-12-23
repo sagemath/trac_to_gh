@@ -1,6 +1,6 @@
 # Issue 7127: libgcrypt fails to build in 64-bit on Solaris SPARC with gcc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7127
 
 Original creator: drkirkby
 

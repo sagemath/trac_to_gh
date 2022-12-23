@@ -1,6 +1,6 @@
 # Issue 9497: Fix the Singular spkg so it can take advantage of building in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9497
 
 Original creator: was
 
@@ -262,8 +262,8 @@ is just a shell script, which calls something to pause for a random time before 
 
 ```/bin/sh 
 /usr/local/bin/randomsleep
-/usr/local/gcc-4.5.0/bin/gcc "$`@`"
-drkirkby`@`hawk:~$ 
+/usr/local/gcc-4.5.0/bin/gcc "$@"
+drkirkby@hawk:~$ 
 ```
 
 

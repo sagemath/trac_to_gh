@@ -1,6 +1,6 @@
 # Issue 7910: mpir.1.2.2 fails to build on Open Solaris 06/2009 in VirtualBox no ABI=64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7910
 
 Original creator: jsp
 
@@ -154,7 +154,7 @@ Comment by jsp created at 2010-01-13 10:40:18
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v
+jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v
 Status of virtual processor 0 as of: 01/13/2010 11:25:49
   on-line since 01/12/2010 05:53:06.
   The i386 processor operates at 2780 MHz,
@@ -163,7 +163,7 @@ Status of virtual processor 1 as of: 01/13/2010 11:25:49
   on-line since 01/12/2010 05:53:09.
   The i386 processor operates at 2780 MHz,
     and has an i387 compatible floating point processor.
-jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha1$
+jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$
 
 This is in VirtualBox, so virtual processors?
 
@@ -184,7 +184,7 @@ Replying to [comment:2 jsp]:
 ```
 > 
 > {{{
-> jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v
+> jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v
 > Status of virtual processor 0 as of: 01/13/2010 11:25:49
 >   on-line since 01/12/2010 05:53:06.
 >   The i386 processor operates at 2780 MHz,
@@ -193,7 +193,7 @@ Replying to [comment:2 jsp]:
 >   on-line since 01/12/2010 05:53:09.
 >   The i386 processor operates at 2780 MHz,
 >     and has an i387 compatible floating point processor.
-> jaap`@`opensolaris:~/Downloads/sage-4.3.1.alpha1$
+> jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$
 > 
 > This is in VirtualBox, so virtual processors?
 > 
@@ -205,12 +205,12 @@ No on Fedora in VirtualBox the real thing seems to be recognized:
 
 
 ```
-[jaap`@`pace ~]$ cat /proc/cpuinfo
+[jaap@pace ~]$ cat /proc/cpuinfo
 processor	: 0
 vendor_id	: GenuineIntel
 cpu family	: 6
 model		: 30
-model name	: Intel(R) Core(TM) i7 CPU         860  `@` 2.80GHz
+model name	: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
 stepping	: 5
 cpu MHz		: 2949.200
 cache size	: 0 KB
@@ -237,7 +237,7 @@ processor	: 1
 vendor_id	: GenuineIntel
 cpu family	: 6
 model		: 30
-model name	: Intel(R) Core(TM) i7 CPU         860  `@` 2.80GHz
+model name	: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
 stepping	: 5
 cpu MHz		: 2949.200
 cache size	: 0 KB

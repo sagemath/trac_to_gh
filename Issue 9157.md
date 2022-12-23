@@ -1,6 +1,6 @@
 # Issue 9157: (k-cores) Improvement to subgraph search
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9157
 
 Original creator: ncohen
 

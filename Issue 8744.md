@@ -1,6 +1,6 @@
 # Issue 8744: Improve add_edge in BipartiteGraph to make it independent from the current coloring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8744
 
 Original creator: ncohen
 

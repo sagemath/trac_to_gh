@@ -1,6 +1,6 @@
 # Issue 6732: spell-check all modules under sage/server
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6732
 
 Original creator: mvngu
 

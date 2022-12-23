@@ -1,6 +1,6 @@
 # Issue 5510: [with patch, not ready for review] update M4RI interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5510
 
 Original creator: malb
 

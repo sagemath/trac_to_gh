@@ -1,6 +1,6 @@
 # Issue 9734: METATICKET Doc test failures on 32-bit Solaris 10 and 32-bit OpenSolaris on x86 CPUs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9734
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2177: [with patch; needs review] debianized jmol spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2177
 
 Original creator: tabbott
 

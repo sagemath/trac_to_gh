@@ -1,6 +1,6 @@
 # Issue 9134: sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9134
 
 Original creator: was
 

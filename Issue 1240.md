@@ -1,6 +1,6 @@
 # Issue 1240: wrong unix rights of some files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1240
 
 Original creator: zimmerma
 

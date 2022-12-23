@@ -1,6 +1,6 @@
 # Issue 7098: Bring calculus.py to full coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7098
 
 Original creator: kcrisman
 

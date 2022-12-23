@@ -1,6 +1,6 @@
 # Issue 582: bug in cubegroup? (syntax in RubiksCube)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/582
 
 Original creator: wdj
 

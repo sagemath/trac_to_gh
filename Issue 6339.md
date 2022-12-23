@@ -1,6 +1,6 @@
 # Issue 6339: multivariate polynomial content is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6339
 
 Original creator: ncalexan
 

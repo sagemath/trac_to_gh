@@ -1,6 +1,6 @@
 # Issue 1330: [with patch] 2.8.14/Solaris: fix sympy doctest - numerical noise
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1330
 
 Original creator: mabshoff
 

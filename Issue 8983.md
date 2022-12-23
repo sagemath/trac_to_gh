@@ -1,6 +1,6 @@
 # Issue 8983: solve(erf(x)==0,x) should return x==0 as a solution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8983
 
 Original creator: rossk
 

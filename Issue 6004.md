@@ -1,6 +1,6 @@
 # Issue 6004: [with patch, needs review] add odd_degree_model function to hyperelliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6004
 
 Original creator: ncalexan
 
@@ -48,7 +48,7 @@ Comment by mabshoff created at 2009-05-12 20:41:05
 Hmm, this needs a rebase:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ hg import trac_6004-odd-degree-model-5.patch 
+mabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ hg import trac_6004-odd-degree-model-5.patch 
 applying trac_6004-odd-degree-model-5.patch
 patching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py
 Hunk #1 FAILED at 62
@@ -60,7 +60,7 @@ Most likely culprit is another patch by Nick:
 
 ```
 changeset:   12218:684af2b9657e
-user:        Nick Alexander <ncalexander`@`gmail.com>
+user:        Nick Alexander <ncalexander@gmail.com>
 date:        Thu May 07 13:37:26 2009 -0700
 summary:     [mq]: trac_6004-odd-degree-model.patch
 ```

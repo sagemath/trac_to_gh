@@ -1,6 +1,6 @@
 # Issue 1316: [graphs] evaluate speed of cliques() function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1316
 
 Original creator: jason
 

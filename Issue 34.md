@@ -1,6 +1,6 @@
 # Issue 34: Bug in is_simple() for a space of ModularSymbols
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/34
 
 Original creator: was
 

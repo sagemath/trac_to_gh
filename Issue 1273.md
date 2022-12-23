@@ -1,6 +1,6 @@
 # Issue 1273: [with patch] implement complex root isolation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1273
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 3896: [with spkg, patch - needs review] Upgrade Cython to 0.9.8.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3896
 
 Original creator: robertwb
 

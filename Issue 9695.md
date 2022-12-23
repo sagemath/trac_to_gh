@@ -1,6 +1,6 @@
 # Issue 9695: AdditiveAbelianGroup, __call__ is misleading and complicated
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9695
 
 Original creator: rbeezer
 

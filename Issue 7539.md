@@ -1,6 +1,6 @@
 # Issue 7539: primes.p0.spkg with "prime_sieve.c" functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7539
 
 Original creator: GeorgSWeber
 

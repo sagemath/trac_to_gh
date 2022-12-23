@@ -1,6 +1,6 @@
 # Issue 9282: Sage doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9282
 
 Original creator: retry
 

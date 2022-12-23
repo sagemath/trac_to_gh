@@ -1,6 +1,6 @@
 # Issue 5612: docs for solving a system of linear equations symbolically using symbolic matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5612
 
 Original creator: jason
 

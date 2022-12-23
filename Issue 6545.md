@@ -1,6 +1,6 @@
 # Issue 6545: sorting of ideal bases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6545
 
 Original creator: malb
 
@@ -124,7 +124,7 @@ Comment by mvngu created at 2009-09-03 06:13:47
 First I merged patches at #6596 and #6628. Merging `trac_6545_mpolynomial_ideal_sorted_outputs.patch` results in a hunk failure:
 
 ```
-[mvngu`@`mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch && hg qpush
+[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch && hg qpush
 adding trac_6545_mpolynomial_ideal_sorted_outputs.patch to series file
 applying trac_6545_mpolynomial_ideal_sorted_outputs.patch
 patching file sage/schemes/hyperelliptic_curves/jacobian_morphism.py
@@ -160,7 +160,7 @@ The patch `trac_6545-rebased.patch` is a rebase of `trac_6545_mpolynomial_ideal_
 ```
 --- jacobian_morphism.py                                                                                                                                                                                             
 +++ jacobian_morphism.py                                                                                                                                                                                             
-`@``@` -295,7 +295,7 `@``@`
+@@ -295,7 +295,7 @@
          sage: H = HyperellipticCurve(f, 2*x); H                                                                                                                                                                     
          Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1                                                                                        
          sage: J = H.jacobian()(F); J                                                                                                                                                                                

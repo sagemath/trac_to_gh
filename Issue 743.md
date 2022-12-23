@@ -1,6 +1,6 @@
 # Issue 743: graphs: simplify interface for accessing vertex objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/743
 
 Original creator: jason
 

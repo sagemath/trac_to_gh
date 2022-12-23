@@ -1,6 +1,6 @@
 # Issue 5842: [with patch, needs review] Various number field improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5842
 
 Original creator: fwclarke
 
@@ -92,7 +92,7 @@ Attachment
 Partial review:  this all looks fantastically useful.  I have only skimmed the patch so far, and checked that it applies cleanly to 3.4.1.rc4.  But there are some test failures in sage/rings/number_fields (on a 64-bit machine):
 
 ```
-jec`@`host-57-44%sage -t devel/sage-5842/sage/rings/number_field/
+jec@host-57-44%sage -t devel/sage-5842/sage/rings/number_field/
 sage -t  "devel/sage-5842/sage/rings/number_field/totallyreal_phc.py"
          [1.0 s]
 sage -t  "devel/sage-5842/sage/rings/number_field/number_field.py"

@@ -1,6 +1,6 @@
 # Issue 189: bug in text output for notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/189
 
 Original creator: was
 
@@ -61,7 +61,7 @@ Fixed
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169205610 28800
 # Node ID 854831432a611d7c3591506c59037c5c22b08897
 # Parent  21687c50ad918c8af09e6338ea5835c19a43f819
@@ -70,7 +70,7 @@ Fix trac #189 -- bug in text formatting for notebook for if / else block.
 diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
 --- a/sage/server/notebook/cell.py      Fri Jan 19 03:11:10 2007 -0800
 +++ b/sage/server/notebook/cell.py      Fri Jan 19 03:20:10 2007 -0800
-`@``@` -150,7 +150,7 `@``@` class Cell(Cell_generic):
+@@ -150,7 +150,7 @@ class Cell(Cell_generic):
          pr = 'sage: '
              
          if prompts:
@@ -79,7 +79,7 @@ diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
              has_prompt = False
              if pr == 'sage: ':
                  for v in input_lines:
-`@``@` -170,9 +170,12 `@``@` class Cell(Cell_generic):
+@@ -170,9 +170,12 @@ class Cell(Cell_generic):
                      if len(v) == 0:
                          pass
                      #    s += '<BLANKLINE>\n'
@@ -93,7 +93,7 @@ diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
                      else:
                          if in_loop:
                              s += '...\n'
-`@``@` -184,7 +187,7 `@``@` class Cell(Cell_generic):
+@@ -184,7 +187,7 @@ class Cell(Cell_generic):
          if prompts:
              msg = 'Traceback (most recent call last):'
              if self.__out.strip()[:len(msg)] == msg:
@@ -102,7 +102,7 @@ diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
                  w = [msg, '...']
                  for i in range(1,len(v)):
                      if not (len(v[i]) > 0 and v[i][0] == ' '):
-`@``@` -469,7 +472,7 `@``@` class Cell(Cell_generic):
+@@ -469,7 +472,7 @@ class Cell(Cell_generic):
                   </div>
                """%(id, id)
  
@@ -111,7 +111,7 @@ diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
              
          s += """
             <textarea class="%s" rows=%s cols=100000 columns=100000
-`@``@` -569,7 +572,7 `@``@` def format_exception(s0, ncols):
+@@ -569,7 +572,7 @@ def format_exception(s0, ncols):
      if ncols > 0:
          s = s.strip()
          s = s.replace('Traceback (most recent call last)','Exception (click to the left for traceback)')
@@ -123,7 +123,7 @@ diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/cell.py
 diff -r 21687c50ad91 -r 854831432a61 sage/server/notebook/server.py
 --- a/sage/server/notebook/server.py    Fri Jan 19 03:11:10 2007 -0800
 +++ b/sage/server/notebook/server.py    Fri Jan 19 03:20:10 2007 -0800
-`@``@` -594,7 +594,6 `@``@` class WebServer(BaseHTTPServer.BaseHTTPR
+@@ -594,7 +594,6 @@ class WebServer(BaseHTTPServer.BaseHTTPR
              path = '%s/%s'%(os.path.abspath(notebook.object_directory()), path)
          else:
              path = path[1:]

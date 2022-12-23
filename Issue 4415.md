@@ -1,6 +1,6 @@
 # Issue 4415: update sage-combinat script to latest upstream version
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4415
 
 Original creator: mabshoff
 

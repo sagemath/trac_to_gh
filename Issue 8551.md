@@ -1,6 +1,6 @@
 # Issue 8551: ace-5.0 package has gap version hardwired, etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8551
 
 Original creator: dimpase
 

@@ -1,6 +1,6 @@
 # Issue 348: R stats support in SAGE (??)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/348
 
 Original creator: was
 

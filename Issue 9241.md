@@ -1,6 +1,6 @@
 # Issue 9241: a section or chapter on how to write doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9241
 
 Original creator: mvngu
 

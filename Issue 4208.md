@@ -1,6 +1,6 @@
 # Issue 4208: [with spkg, needs review] Update mpfr to 2.3.2 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4208
 
 Original creator: mabshoff
 

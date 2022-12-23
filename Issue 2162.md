@@ -1,6 +1,6 @@
 # Issue 2162: [with patch; needs review] pari stack -- ability to resize at runtime
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2162
 
 Original creator: was
 

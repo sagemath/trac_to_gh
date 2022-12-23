@@ -1,6 +1,6 @@
 # Issue 6460: contentEditable cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6460
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 4858: parenthesis badly handled in notebook sheet titles
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4858
 
 Original creator: schilly
 

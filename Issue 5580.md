@@ -1,6 +1,6 @@
 # Issue 5580: preparsing error in recursive load of .sage files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5580
 
 Original creator: was
 
@@ -69,7 +69,7 @@ Comment by mvngu created at 2010-02-01 08:49:14
 Close as fixed:
 
 ```
-[mvngu`@`mod sage-4.3.2.alpha1-sage.math]$ ./sage
+[mvngu@mod sage-4.3.2.alpha1-sage.math]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

@@ -1,6 +1,6 @@
 # Issue 2929: [with spkg, needs review] gcc 4.3: fix gmp.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2929
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6079: modernize base inclusion morphism of relative number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6079
 
 Original creator: ncalexan
 

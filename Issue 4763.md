@@ -1,6 +1,6 @@
 # Issue 4763: [with patch, needs review] fixes to build reference manual in 3.2.2.alpha1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4763
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 396: vector-vector produc ts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/396
 
 Original creator: nbruin
 

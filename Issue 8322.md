@@ -1,6 +1,6 @@
 # Issue 8322: on sage.combinat.tableau.insert_word() , parameter left= is broken   (fix provided)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8322
 
 Original creator: drini
 

@@ -1,6 +1,6 @@
 # Issue 4177: Put Sage version in Notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4177
 
 Original creator: kcrisman
 

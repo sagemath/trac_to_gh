@@ -1,6 +1,6 @@
 # Issue 126: maxima -- doctest hang
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/126
 
 Original creator: was
 
@@ -17,7 +17,7 @@ you could put
 """nodoctest
 as the first line of maxima.py, and it will skip testing it. 
 
-On Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies`@`hccnet.nl> wrote:
+On Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies@hccnet.nl> wrote:
 
 >
 > In sage-1.4 make test hangs forever on

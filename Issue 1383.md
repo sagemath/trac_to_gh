@@ -1,6 +1,6 @@
 # Issue 1383: Modular Arithmetic Error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1383
 
 Original creator: trixb4kidz
 
@@ -82,7 +82,7 @@ I applied the following patch and doctests pass:
 
 ```
 # HG changeset patch
-# User mabshoff`@`sage.math.washington.edu
+# User mabshoff@sage.math.washington.edu
 # Date 1196711612 28800
 # Node ID 612d5a72a9e1a9c4eb90a0c746da5a358882b5a0
 # Parent  f6137fb146cb310be74c0ddb22faa3ee5eaa71a4
@@ -91,7 +91,7 @@ Fix modp arithmetic bug [fix by trixb4kidz], added doctest
 diff -r f6137fb146cb -r 612d5a72a9e1 sage/rings/integer_mod.pyx
 --- a/sage/rings/integer_mod.pyx        Mon Dec 03 11:26:06 2007 -0800
 +++ b/sage/rings/integer_mod.pyx        Mon Dec 03 11:53:32 2007 -0800
-`@``@` -1836,6 +1836,12 `@``@` cdef int_fast32_t mod_pow_int(int_fast32
+@@ -1836,6 +1836,12 @@ cdef int_fast32_t mod_pow_int(int_fast32
      """
      Returns base^exp mod n
      For use in IntegerMod_int
@@ -104,7 +104,7 @@ diff -r f6137fb146cb -r 612d5a72a9e1 sage/rings/integer_mod.pyx
      AUTHOR:
        -- Robert Bradshaw
      """
-`@``@` -1860,7 +1866,7 `@``@` cdef int_fast32_t mod_pow_int(int_fast32
+@@ -1860,7 +1866,7 @@ cdef int_fast32_t mod_pow_int(int_fast32
              if prod >= INTEGER_MOD_INT32_LIMIT: prod = prod % n
          exp = exp >> 1
 

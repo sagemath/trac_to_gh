@@ -1,6 +1,6 @@
 # Issue 958: bug in "make install"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/958
 
 Original creator: was
 

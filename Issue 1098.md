@@ -1,6 +1,6 @@
 # Issue 1098: make rpy work with SAGE data types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1098
 
 Original creator: mhansen
 

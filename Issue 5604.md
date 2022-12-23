@@ -1,6 +1,6 @@
 # Issue 5604: average Color objects when adding them together
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5604
 
 Original creator: jason
 
@@ -37,7 +37,7 @@ Comment by mvngu created at 2010-05-11 20:49:39
 This looks like fixed, but the averaging operator "+" is binary:
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: r = sage.plot.colors.red

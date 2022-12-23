@@ -1,6 +1,6 @@
 # Issue 9980: Unify univariate and multivariate power series rings, as has been done for polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9981
 
 Original creator: niles
 

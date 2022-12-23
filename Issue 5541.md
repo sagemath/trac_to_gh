@@ -1,6 +1,6 @@
 # Issue 5541: more formatting fixes for quaternion algebra docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5541
 
 Original creator: mvngu
 

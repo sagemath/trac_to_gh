@@ -1,6 +1,6 @@
 # Issue 8737: compile plot3d/base.pyx and index_face_set with "-std=c99"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8737
 
 Original creator: jhpalmieri
 

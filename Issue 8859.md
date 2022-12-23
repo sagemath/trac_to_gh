@@ -1,6 +1,6 @@
 # Issue 8859: bidirectional_dijkstra does not handle vertex labels properly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8859
 
 Original creator: rlm
 

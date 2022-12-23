@@ -1,6 +1,6 @@
 # Issue 8575: Sphinx should raise warning in case of ill formated enumerated lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8575
 
 Original creator: hivert
 

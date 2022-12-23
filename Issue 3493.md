@@ -1,6 +1,6 @@
 # Issue 3493: Notes on Elliptic curves documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3493
 
 Original creator: ljpk
 

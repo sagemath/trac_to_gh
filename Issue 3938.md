@@ -1,6 +1,6 @@
 # Issue 3938: coercion framework converts built-in types to Sage types when it should not
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3938
 
 Original creator: cwitty
 
@@ -124,7 +124,7 @@ This patch causes a Heisenbug:
 
 ```
 
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py
 sage -t -long devel/sage/sage/modular/modsym/ambient.py     
 
 ------------------------------------------------------------

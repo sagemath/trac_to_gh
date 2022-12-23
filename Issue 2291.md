@@ -1,6 +1,6 @@
 # Issue 2291: [with patch, needs additional work] Laurent Polynomial Rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2291
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 6318: optional doctest failure -- axiom interface -- something doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6318
 
 Original creator: was
 

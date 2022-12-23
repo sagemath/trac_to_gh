@@ -1,6 +1,6 @@
 # Issue 4245: notebook -- error clicking editing when there is a < in the html.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4245
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: boothby
 
 ```
 
-On Sun, Oct 5, 2008 at 3:56 AM, Joël Duet <joel.duet`@`gmail.com> wrote:
+On Sun, Oct 5, 2008 at 3:56 AM, Joël Duet <joel.duet@gmail.com> wrote:
 > Hi,
 > Here is my problem :
 > I want to write "a<b" in the HTML part of my worksheet (notebook() style).

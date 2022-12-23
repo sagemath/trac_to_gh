@@ -1,6 +1,6 @@
 # Issue 9586: Lecture Scheduler
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9586
 
 Original creator: schilly
 

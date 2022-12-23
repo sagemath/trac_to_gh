@@ -1,6 +1,6 @@
 # Issue 1883: Sage distribution includes Windows executables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1883
 
 Original creator: cwitty
 

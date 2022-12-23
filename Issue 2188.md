@@ -1,6 +1,6 @@
 # Issue 2188: mathematically senseless bit-shift operations in integer_mod.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2188
 
 Original creator: cwitty
 

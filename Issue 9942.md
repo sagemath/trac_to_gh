@@ -1,6 +1,6 @@
 # Issue 9942: ECL is linkin to two libraries it does not need to (at least on OpenSolaris anyway)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9943
 
 Original creator: drkirkby
 
@@ -18,7 +18,7 @@ ECL would appear to have 3 in the current version of Sage, though it is reduced 
 
 
 ```
-drkirkby`@`hawk:~/ecl$ ldd -u -r ./build/bin/ecl
+drkirkby@hawk:~/ecl$ ldd -u -r ./build/bin/ecl
 	libecl.so =>	 (file not found)
 	libdl.so.1 =>	 /lib/libdl.so.1
 	libm.so.2 =>	 /lib/libm.so.2
@@ -45,7 +45,7 @@ drkirkby`@`hawk:~/ecl$ ldd -u -r ./build/bin/ecl
 
    unused object=/lib/libsocket.so.1
    unused object=/lib/libintl.so.1
-drkirkby`@`hawk:~/ecl$ 
+drkirkby@hawk:~/ecl$ 
 ```
 
 

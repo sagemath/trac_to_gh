@@ -1,6 +1,6 @@
 # Issue 8251: traceback when computing E.torsion_subgroup() for an elliptic curve E
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8251
 
 Original creator: was
 

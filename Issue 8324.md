@@ -1,6 +1,6 @@
 # Issue 8324: Reconcile sage.misc.sageinspect and sagenb.misc.sageinspect
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8324
 
 Original creator: mpatel
 

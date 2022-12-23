@@ -1,6 +1,6 @@
 # Issue 7991: Generic matrix testing -- left and right kernel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7991
 
 Original creator: jason
 

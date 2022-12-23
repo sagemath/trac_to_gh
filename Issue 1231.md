@@ -1,6 +1,6 @@
 # Issue 1231: seg fault when computing with modular symbols over a finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1231
 
 Original creator: AlexGhitza
 
@@ -50,7 +50,7 @@ Comment by mabshoff created at 2007-11-21 04:55:39
 At least on sage.math the following is not a problem:
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.rc1$ ./sage
+mabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.rc1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.8.13.rc1, Release Date: 2007-11-20                  |

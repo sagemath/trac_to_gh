@@ -1,6 +1,6 @@
 # Issue 8236: installing spkg from remote location must leave a spkg (placeholder) in spkg/
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8236
 
 Original creator: dimpase
 

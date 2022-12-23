@@ -1,6 +1,6 @@
 # Issue 8529: default colors for plot and implicit_plot are not consistent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8529
 
 Original creator: AlexGhitza
 
@@ -275,7 +275,7 @@ The .rej file:
 ```diff
 --- plot.py
 +++ plot.py
-`@``@` -7,20 +7,20 `@``@`
+@@ -7,20 +7,20 @@
  The following graphics primitives are supported:
  
  

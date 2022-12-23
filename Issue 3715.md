@@ -1,6 +1,6 @@
 # Issue 3715: trivial to do bug fix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3715
 
 Original creator: was
 
@@ -19,10 +19,10 @@ http://sage.math.washington.edu/home/page/packages/lisp.diff
 
 --- lisp.orig   2008-07-20 17:22:27.000000000 -0400
 +++ lisp        2008-07-20 03:04:00.000000000 -0400
-`@``@` -1,2 +1,2 `@``@`
+@@ -1,2 +1,2 @@
  #!/bin/sh
--"$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" $`@`
-+"$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" "$`@`"
+-"$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" $@
++"$SAGE_ROOT/local/bin/clisp.bin" -B "$SAGE_ROOT/local/lib/clisp-2.46" "$@"
 
 -----
 

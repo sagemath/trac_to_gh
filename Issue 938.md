@@ -1,6 +1,6 @@
 # Issue 938: graph_database.py has some mysterious problems.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/938
 
 Original creator: was
 

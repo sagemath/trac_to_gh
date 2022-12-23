@@ -1,6 +1,6 @@
 # Issue 6212: make sage -upgrade check that there are no applied hg queue patches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6212
 
 Original creator: ncalexan
 

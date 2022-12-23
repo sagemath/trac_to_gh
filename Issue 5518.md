@@ -1,6 +1,6 @@
 # Issue 5518: Improve efficiency of multiplcative_order() for number field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5518
 
 Original creator: cremona
 

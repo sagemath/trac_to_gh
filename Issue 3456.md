@@ -1,6 +1,6 @@
 # Issue 3456: SQLize the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3456
 
 Original creator: boothby
 

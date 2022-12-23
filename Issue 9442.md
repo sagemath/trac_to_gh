@@ -1,6 +1,6 @@
 # Issue 9442: reference manual issues for 4.5.alpha4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9442
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 1726: Experimental package for Enthought Mayavi2 (linux only)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1726
 
 Original creator: jsp
 
@@ -56,7 +56,7 @@ sage -pkg mayavi_2.0.20080106
 
 And after some time we have mayavi_2.0.20080106.spkg ready for testing.
 
-[jaap`@`paix sagefiles]$ ls -l mayavi_2.0.20080106*
+[jaap@paix sagefiles]$ ls -l mayavi_2.0.20080106*
 -rw-rw-r-- 1 jaap jaap 54051652 2008-01-06 21:43 mayavi_2.0.20080106.spkg
 
 mayavi_2.0.20080106:

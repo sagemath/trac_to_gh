@@ -1,6 +1,6 @@
 # Issue 4370: Add ability to clone the doc repository
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4370
 
 Original creator: cremona
 

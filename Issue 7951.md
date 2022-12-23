@@ -1,6 +1,6 @@
 # Issue 7951: coercion problem with 0 variable polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7951
 
 Original creator: burcin
 

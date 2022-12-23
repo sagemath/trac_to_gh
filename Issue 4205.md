@@ -1,6 +1,6 @@
 # Issue 4205: [with patch, needs review] Fix deprecation warnings from numpy 1.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4205
 
 Original creator: jason
 
@@ -42,7 +42,7 @@ We need the following patch to quiet one deprecation warning:
 ```
 --- a/sage/numerical/test.py    Fri Sep 26 18:15:26 2008 -0500
 +++ b/sage/numerical/test.py    Sat Sep 27 01:03:08 2008 -0700
-`@``@` -6,7 +6,7 `@``@`
+@@ -6,7 +6,7 @@
  sage: from scipy import optimize
  sage: from scipy import special
  sage: from scipy import integrate
@@ -228,10 +228,10 @@ Got:
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 201:
     sage: finance.fractional_brownian_motion_simulation(0.8,0.1,8,1)
 Expected:
-    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+    [[-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289]]
 Got:
     doctest:1: DeprecationWarning: PyArray_FromDimsAndDataAndDescr: use PyArray_NewFromDescr.
-    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+    [[-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289]]
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 237:
     sage: a = finance.multifractal_cascade_random_walk_simulation(3770,0.02,0.01,0.01,10,3)
@@ -408,16 +408,16 @@ Got:
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 201:
     sage: finance.fractional_brownian_motion_simulation(0.8,0.1,8,1)
 Expected:
-    [This is the Trac macro *-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289-macro)
+    [[-0.0754, 0.1874, 0.2735, 0.5059, 0.6824, 0.6267, 0.6465, 0.6289]]
 Got:
-    [This is the Trac macro *0.8560, 0.5983, 0.8280, 0.5356, 0.0685, -0.3901, -0.6715, -0.3045* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0.8560, 0.5983, 0.8280, 0.5356, 0.0685, -0.3901, -0.6715, -0.3045-macro)
+    [[0.8560, 0.5983, 0.8280, 0.5356, 0.0685, -0.3901, -0.6715, -0.3045]]
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 204:
     sage: finance.fractional_brownian_motion_simulation(0.8,0.01,8,1)
 Expected:
-    [This is the Trac macro *-0.0239, 0.0593, 0.0865, 0.1600, 0.2158, 0.1982, 0.2044, 0.1989* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-0.0239, 0.0593, 0.0865, 0.1600, 0.2158, 0.1982, 0.2044, 0.1989-macro)
+    [[-0.0239, 0.0593, 0.0865, 0.1600, 0.2158, 0.1982, 0.2044, 0.1989]]
 Got:
-    [This is the Trac macro *0.2707, 0.1892, 0.2618, 0.1694, 0.0216, -0.1234, -0.2123, -0.0963* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0.2707, 0.1892, 0.2618, 0.1694, 0.0216, -0.1234, -0.2123, -0.0963-macro)
+    [[0.2707, 0.1892, 0.2618, 0.1694, 0.0216, -0.1234, -0.2123, -0.0963]]
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/fractal.py", line 206:
     sage: finance.fractional_brownian_motion_simulation(0.8,0.01,8,2)

@@ -1,6 +1,6 @@
 # Issue 2754: plotting with frame=True and ymin/ymax sometimes is buggy as a Florida swamp in summer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2754
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  jason mvngu
 
 ```
 
-On Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau`@`gmail.com> wrote:
+On Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:
 > 
 >  How can I specify the range of y coordinates in a 2d plot? I tried
 >  
@@ -106,7 +106,7 @@ Comment by mvngu created at 2009-09-29 15:58:29
 I can confirm this is now fixed:
 
 ```
-[mvngu`@`darkstar sage-4.1.2.alpha4]$ ./sage -br main
+[mvngu@darkstar sage-4.1.2.alpha4]$ ./sage -br main
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.

@@ -1,6 +1,6 @@
 # Issue 409: 3 small notebook bugs/issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/409
 
 Original creator: was
 

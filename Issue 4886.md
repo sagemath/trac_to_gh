@@ -1,6 +1,6 @@
 # Issue 4886: notebook -- make notebook autosave configurable from notebook settings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4886
 
 Original creator: TimothyClemans
 

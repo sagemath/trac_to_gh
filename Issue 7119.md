@@ -1,6 +1,6 @@
 # Issue 7119: Redundant minus sign in PolyDict polynomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7119
 
 Original creator: klee
 

@@ -1,6 +1,6 @@
 # Issue 628: Make binomial(x,m) work for symbolic expressions when x-m is an integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/628
 
 Original creator: pdenapo
 

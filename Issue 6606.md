@@ -1,6 +1,6 @@
 # Issue 6606: [with patch; needs review] Add a more efficient implementation of index for Gamma(N).
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6606
 
 Original creator: simon
 

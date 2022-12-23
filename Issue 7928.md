@@ -1,6 +1,6 @@
 # Issue 7928: Trivial follow up on #7776
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7928
 
 Original creator: nthiery
 

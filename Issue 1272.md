@@ -1,6 +1,6 @@
 # Issue 1272: integrate PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1272
 
 Original creator: mabshoff
 

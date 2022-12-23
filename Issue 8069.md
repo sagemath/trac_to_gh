@@ -1,6 +1,6 @@
 # Issue 8069: New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8069
 
 Original creator: jsp
 
@@ -30,7 +30,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing mpfi-1.3.4-cvs20071125.p8.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3.1$ 
+jaap@opensolaris:~/Downloads/sage-4.3.1$ 
 
 
 ```

@@ -1,6 +1,6 @@
 # Issue 1348: Incorporate Jan Groenewald's documentation fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1348
 
 Original creator: mabshoff
 
@@ -13,7 +13,7 @@ Assignee: tba
 On to the good stuff:
 
 General comments and questions regarding this document should be sent by
-email to wst...`@`gmail.com. If you are able to provide suggested text,
+email to wst...@gmail.com. If you are able to provide suggested text,
 either to replace existing incorrect or unclear material, or additional
 text to supplement what's already available, we'd appreciate the
 contribution.
@@ -88,7 +88,7 @@ bibtex(pari), bibtex(gp), bibtex(Singular), etc.
 
 If you happen to have just read straight through this tutorial, and have
 some sense of how long it took you, please let me know (email
-wst...`@`gmail.com).
+wst...@gmail.com).
 ^^^ Uhm, I did an hour or two yesterday and an hour or two today.
 Not sure. It's much more of a showcase() than a tutorial(). It has a
 heavy algebraic slant, and most students start learning more numerical

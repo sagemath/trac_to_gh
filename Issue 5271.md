@@ -1,6 +1,6 @@
 # Issue 5271: clean up jmol-11.6.16.spkg from #2873
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5271
 
 Original creator: mabshoff
 

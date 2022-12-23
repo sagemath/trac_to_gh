@@ -1,6 +1,6 @@
 # Issue 2121: move libecm wrapper from interfaces to libs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2121
 
 Original creator: robertwb
 

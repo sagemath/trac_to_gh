@@ -1,6 +1,6 @@
 # Issue 1658: sage -bdist on osx should output a dmg instead of a tar.bz2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1658
 
 Original creator: was
 

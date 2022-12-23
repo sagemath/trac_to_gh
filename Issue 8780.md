@@ -1,6 +1,6 @@
 # Issue 8780: add the Cephes spkg to Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8780
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 8412: Trivial Center of Matrix Group
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8412
 
 Original creator: iandrus
 
@@ -158,7 +158,7 @@ It looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_tra
          sage: G = MatrixGroup([MS.0])
          Traceback (most recent call last):
 # HG changeset patch
-# User Ivan Andrus <darthandrus`@`gmail.com>
+# User Ivan Andrus <darthandrus@gmail.com>
 # Date 1267527460 -3600
 # Node ID fa0a59cf132bca55c4500e7c134157e57a23dc3d
 # Parent  023d02e0af46ae4e4450e3f2f14db54345aa8774
@@ -167,7 +167,7 @@ Added doctest for trivial center patch
 diff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py
 --- a/sage/groups/matrix_gps/matrix_group.py	Mon Mar 01 23:52:39 2010 +0100
 +++ b/sage/groups/matrix_gps/matrix_group.py	Tue Mar 02 11:57:40 2010 +0100
-`@``@` -739,6 +739,11 `@``@`
+@@ -739,6 +739,11 @@
 ```
 
 A patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)

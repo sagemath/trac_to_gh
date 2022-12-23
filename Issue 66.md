@@ -1,6 +1,6 @@
 # Issue 66: notebook -- should be able export (=print) to latex/pdf/dvi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/66
 
 Original creator: was
 
@@ -19,7 +19,7 @@ Comment by was created at 2007-09-21 19:01:25
 
 
 ```
-On 9/21/07, gani <bganapathi`@`earthlink.net> wrote:
+On 9/21/07, gani <bganapathi@earthlink.net> wrote:
 > Since I really wanted a nice print out of my worksheets with Latex
 > with all the fancy math intact, I decided to write a simple sed file
 > which works pretty well for me. It can be modified to handle any user-
@@ -88,8 +88,8 @@ notebook server.
 > 
 > 
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-support`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-support-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-support@googlegroups.com
+> To unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-support
 > URLs: http://sage.math.washington.edu/sage/ and http://sage.scipy.org/sage/
 > -~----------~----~----~----~------~----~------~--~---

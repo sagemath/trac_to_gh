@@ -1,6 +1,6 @@
 # Issue 8964: Two small typos
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8964
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 8228: Segfault in libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8228
 
 Original creator: malb
 

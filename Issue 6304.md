@@ -1,6 +1,6 @@
 # Issue 6304: intermittent crash in bernmm (4.0.2.rc0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6304
 
 Original creator: dmharvey
 
@@ -19,7 +19,7 @@ bsd$ ./sage
 ----------------------------------------------------------------------
 sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
 sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
-/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62412 Illegal instruction     sage-ipython "$`@`" -i
+/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62412 Illegal instruction     sage-ipython "$@" -i
 | Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |
 | Type notebook() for the GUI, and license() for information.        |
 ~/sage-4.0.2.rc0
@@ -32,7 +32,7 @@ sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
 sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
 sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
 sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
-/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62473 Illegal instruction     sage-ipython "$`@`" -i
+/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62473 Illegal instruction     sage-ipython "$@" -i
 ```
 
 | Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |
@@ -137,12 +137,12 @@ Comment by was created at 2009-08-15 22:24:30
 
 ```
 
-On Sat, Aug 15, 2009 at 9:52 AM, William Stein<wstein`@`gmail.com> wrote:
-> On Sat, Aug 15, 2009 at 9:42 AM, David Harvey<dmharvey`@`cims.nyu.edu> wrote:
+On Sat, Aug 15, 2009 at 9:52 AM, William Stein<wstein@gmail.com> wrote:
+> On Sat, Aug 15, 2009 at 9:42 AM, David Harvey<dmharvey@cims.nyu.edu> wrote:
 >>
 >> On Aug 15, 2009, at 12:40 PM, William Stein wrote:
 >>
->>> On Sat, Aug 15, 2009 at 9:33 AM, David Harvey<dmharvey`@`cims.nyu.edu>
+>>> On Sat, Aug 15, 2009 at 9:33 AM, David Harvey<dmharvey@cims.nyu.edu>
 >>> wrote:
 >>>>
 >>>> On Aug 15, 2009, at 12:28 PM, William Stein wrote:

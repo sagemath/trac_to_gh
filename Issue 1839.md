@@ -1,6 +1,6 @@
 # Issue 1839: [with script; needs review and integration] sage-crap: incorporate this script into sage and start using it before each release.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1839
 
 Original creator: was
 
@@ -111,7 +111,7 @@ Comment by was created at 2008-06-15 23:30:10
 Example of using this with runlevel=1 on sage-3.0.3.alpha2 -- where we see there is some crap!:
 
 ```
-was`@`sage:~/build/sage-3.0.3.alpha2$ ./sage -crap sage-3.0.3.alpha2.tar 
+was@sage:~/build/sage-3.0.3.alpha2$ ./sage -crap sage-3.0.3.alpha2.tar 
 /home/was/.sage/temp/sage/32206/dir_0/sage-3.0.3.alpha2.tar
 runlevel=  1
 /home/was/.sage/temp/sage/32206/dir_0/sage-3.0.3.alpha2/spkg/standard/cddlib-094b.p2/src/src-gmp/.DS_Store: JVT NAL sequence

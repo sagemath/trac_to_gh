@@ -1,6 +1,6 @@
 # Issue 4630: bug in functions real() and imag().
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4630
 
 Original creator: ggrafendorfer
 
@@ -16,7 +16,7 @@ the examples where I use 'b' as variable ('I' is substituted by 'CDF(I)') are bu
 
 
 ```
-georg`@`HILBERT:~/Daten/Sync/Phd/Code/sde$ sage
+georg@HILBERT:~/Daten/Sync/Phd/Code/sde$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | Sage Version 3.2, Release Date: 2008-11-20                         |

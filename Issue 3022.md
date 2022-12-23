@@ -1,6 +1,6 @@
 # Issue 3022: [with patch; needs review] Debian package support for polybori
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3022
 
 Original creator: tabbott
 

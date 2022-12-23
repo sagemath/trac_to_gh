@@ -1,6 +1,6 @@
 # Issue 9629: sage -merge should look for sensible-editor before pico
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9629
 
 Original creator: ddrake
 

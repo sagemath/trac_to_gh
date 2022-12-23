@@ -1,6 +1,6 @@
 # Issue 5855: [with patch, needs review] implement squarefree_divisors function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5855
 
 Original creator: rlm
 

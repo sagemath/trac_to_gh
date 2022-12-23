@@ -1,6 +1,6 @@
 # Issue 6125: disable testing in flint, mpir, etc. packages
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6125
 
 Original creator: burcin
 

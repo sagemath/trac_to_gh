@@ -1,6 +1,6 @@
 # Issue 1070: the build system should rebuild Cython modules if the static libraries they depend on change
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1070
 
 Original creator: cwitty
 
@@ -24,7 +24,7 @@ This has been fixed during Sage 3.2 or so with the new build system. For example
 ```
 --- a/module_list.py    Tue Dec 16 16:52:43 2008 +0000
 +++ b/module_list.py    Wed Dec 17 06:23:47 2008 -0800
-`@``@` -339,7 +339,8 `@``@`
+@@ -339,7 +339,8 @@
      
      Extension('sage.libs.libecm',
                sources = ['sage/libs/libecm.pyx'],

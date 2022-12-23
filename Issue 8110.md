@@ -1,6 +1,6 @@
 # Issue 8110: fix issue with multi_polynomial.pyx in sage-4.3.2.alpha0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8110
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 5651: make it so plot(...) passes extra options to show (maybe only those that makes sense)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5651
 
 Original creator: was
 
@@ -98,7 +98,7 @@ Comment by mabshoff created at 2009-05-15 07:42:53
 This one needs to be rebased due to a doctest merge conflict in arrow.py. On top of that: this is a diff, so please make sure you post a proper patch this time.
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ patch -p1 --dry-run < trac_5651.patch 
+mabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ patch -p1 --dry-run < trac_5651.patch 
 patching file sage/plot/arrow.py
 Hunk #1 FAILED at 310.
 1 out of 1 hunk FAILED -- saving rejects to file sage/plot/arrow.py.rej

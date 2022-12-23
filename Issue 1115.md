@@ -1,6 +1,6 @@
 # Issue 1115: Sha_an either fails or lies when prec isn't the default 53
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1115
 
 Original creator: was
 
@@ -125,7 +125,7 @@ Thanks -- I can easily fix the typos of course.  But I have no idea about the du
 This works for me:
 
 ```
-john`@`ubuntu%./sage
+john@ubuntu%./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: sha

@@ -1,6 +1,6 @@
 # Issue 7481: upgrade phcpack optional package to version 2.3.51
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7481
 
 Original creator: mhampton
 

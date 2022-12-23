@@ -1,6 +1,6 @@
 # Issue 3309: massively optimize the binomial function when an input is real or complex floating point
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3309
 
 Original creator: was
 
@@ -17,7 +17,7 @@ to sage.   See my comment on the bottom below.  (I didn't
 both to respond to the pari list because all my emails 
 there bounce.)
 
-On Mon, May 26, 2008 at 9:56 AM, Robert Gerbicz <robert.gerbicz`@`gmail.com> wrote:
+On Mon, May 26, 2008 at 9:56 AM, Robert Gerbicz <robert.gerbicz@gmail.com> wrote:
 > I'm really surprised that computing binomial numbers for floating point
 > real/complex numbers so slow in Pari-Gp. For example:
 > binomial(1140000.78,420000) takes about 6 seconds and more than 22 MB Ram on

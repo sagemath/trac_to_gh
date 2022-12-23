@@ -1,6 +1,6 @@
 # Issue 8175: update installation guide for SPARC Solaris 10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8175
 
 Original creator: mvngu
 

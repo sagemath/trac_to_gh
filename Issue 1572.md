@@ -1,6 +1,6 @@
 # Issue 1572: binary in graphs/graph_fast.pyx leaks like a sieve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1572
 
 Original creator: mabshoff
 

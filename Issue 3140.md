@@ -1,6 +1,6 @@
 # Issue 3140: make sure Sage build prerequsists are available when running -upgrade
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3140
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6894: Plot list of functions with different colors by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6894
 
 Original creator: nbonifas
 

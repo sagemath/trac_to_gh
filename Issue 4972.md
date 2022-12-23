@@ -1,6 +1,6 @@
 # Issue 4972: matrix setitem should deal with slicing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4972
 
 Original creator: jason
 

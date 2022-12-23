@@ -1,6 +1,6 @@
 # Issue 6043: optimize the construction of Lagrange interpolating polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6043
 
 Original creator: mvngu
 

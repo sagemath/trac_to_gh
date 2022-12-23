@@ -1,6 +1,6 @@
 # Issue 7080: include new separated sage notebook in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7080
 
 Original creator: was
 

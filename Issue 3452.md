@@ -1,6 +1,6 @@
 # Issue 3452: implement inline error reporting for registration
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3452
 
 Original creator: TimothyClemans
 

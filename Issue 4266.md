@@ -1,6 +1,6 @@
 # Issue 4266: overflow error in SR approx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4266
 
 Original creator: robertwb
 

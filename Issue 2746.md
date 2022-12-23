@@ -1,6 +1,6 @@
 # Issue 2746: [with patch; needs review] Support for writing test-related files in SAGE_TESTDIR
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2746
 
 Original creator: tabbott
 

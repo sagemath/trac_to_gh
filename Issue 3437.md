@@ -1,6 +1,6 @@
 # Issue 3437: split sage.libs.ntl.decl.pxi into several files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3437
 
 Original creator: malb
 

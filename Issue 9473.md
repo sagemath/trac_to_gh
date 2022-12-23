@@ -1,6 +1,6 @@
 # Issue 9473: notebook: execute bit set on pickle's, but shouldn't be (really easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9473
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2066: [with patch; needs review] animate -- bug fix for xmin/ymin/xmax/ymax + add a nice example requested by a user
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2066
 
 Original creator: was
 

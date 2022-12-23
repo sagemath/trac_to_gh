@@ -1,6 +1,6 @@
 # Issue 4966: Switch gmp to eMPIRe svn1555
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4966
 
 Original creator: mabshoff
 

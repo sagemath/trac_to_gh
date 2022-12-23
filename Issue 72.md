@@ -1,6 +1,6 @@
 # Issue 72: trac doesn't handle control keys well
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/72
 
 Original creator: Justin Walker (justin@mac.com)
 

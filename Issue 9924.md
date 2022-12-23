@@ -1,6 +1,6 @@
 # Issue 9924: Doctest error in sage/graphs/graph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9925
 
 Original creator: mpatel
 

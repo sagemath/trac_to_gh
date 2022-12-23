@@ -1,6 +1,6 @@
 # Issue 4310: [with patch, needs review] simplification of the coercion api
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4310
 
 Original creator: robertwb
 

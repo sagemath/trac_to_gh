@@ -1,6 +1,6 @@
 # Issue 6852: cliquer-1.2 fails to build as it cant find Sun compiler (SCons issue)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6852
 
 Original creator: drkirkby
 

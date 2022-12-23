@@ -1,6 +1,6 @@
 # Issue 3161: sdist: #3046 seems to have broken sage-banner
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3161
 
 Original creator: mabshoff
 
@@ -40,11 +40,11 @@ Comment by mabshoff created at 2008-05-11 23:42:06
 The problem boils down to the following:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./local/bin/python
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./local/bin/python
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0$ cd local/bin/
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./python
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0$ cd local/bin/
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.alpha0/local/bin$ echo "import sage.misc.banner; sage.misc.banner.banner()" | ./python
 ls: devel/sage: No such file or directory
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>

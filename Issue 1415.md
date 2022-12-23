@@ -1,6 +1,6 @@
 # Issue 1415: FLINT 1.0 (from 2.9.alpha1) fails to compile with gcc 4.3 prerelease
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1415
 
 Original creator: cwitty
 

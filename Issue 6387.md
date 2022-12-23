@@ -1,6 +1,6 @@
 # Issue 6387: Typo in parent.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6387
 
 Original creator: roed
 

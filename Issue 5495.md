@@ -1,6 +1,6 @@
 # Issue 5495: type: "A mysterious error (perphaps a memory error?)"   *PERP*HAPS!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5495
 
 Original creator: was
 
@@ -12,7 +12,7 @@ There is a typo in the error message below (not a "perp"haps):
 
 
 ```
-wstein`@`debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx
+wstein@debian32:/space/wstein/farm/sage-3.4/devel/sage/sage/matrix$ sage -t matrix2.pyx
 sage -t  "devel/sage-main/sage/matrix/matrix2.pyx"          
 *** glibc detected *** double free or corruption (fasttop): 0x0a41a380 ***
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.

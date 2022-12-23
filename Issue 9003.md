@@ -1,6 +1,6 @@
 # Issue 9003: Doctest failure on Mac PPC in free_module.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9003
 
 Original creator: kcrisman
 
@@ -161,14 +161,14 @@ After much testing, I am pretty certain that the error is caused by revision 143
 ```
 changeset:   14321:1451c00a8d44
 tag:         tip
-user:        Minh Van Nguyen <nguyenminh2`@`gmail.com>
+user:        Minh Van Nguyen <nguyenminh2@gmail.com>
 date:        Wed May 19 00:55:29 2010 -0700
 summary:     4.4.2
 
 diff -r 26a4be28b4ef -r 1451c00a8d44 sage/version.py
 --- a/sage/version.py   Wed May 19 00:55:29 2010 -0700
 +++ b/sage/version.py   Wed May 19 00:55:29 2010 -0700
-`@``@` -1,2 +1,2 `@``@`
+@@ -1,2 +1,2 @@
  """nodoctests"""
 -version='4.4.2.rc0'; date='2010-05-12'
 +version='4.4.2'; date='2010-05-19'

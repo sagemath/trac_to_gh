@@ -1,6 +1,6 @@
 # Issue 1599: another preparser edge case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1599
 
 Original creator: dmharvey
 

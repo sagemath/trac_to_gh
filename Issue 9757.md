@@ -1,6 +1,6 @@
 # Issue 9757: implement Watkins-Delaunay's algorithm for computing modular degrees in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9758
 
 Original creator: was
 

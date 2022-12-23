@@ -1,6 +1,6 @@
 # Issue 7838: Remove script using ctypes from ATLAS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7838
 
 Original creator: drkirkby
 

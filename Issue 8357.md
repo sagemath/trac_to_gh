@@ -1,6 +1,6 @@
 # Issue 8357: Doctesting ell_rational_field.py leaves a file PRIMES in the current directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8357
 
 Original creator: mpatel
 
@@ -25,7 +25,7 @@ ell_rational_field.py
 Feb 18 14:25:25 2010 -0800
 +++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed
 Feb 24 20:37:09 2010 -0800
-`@``@` -1679,14 +1679,6 `@``@`
+@@ -1679,14 +1679,6 @@
              sage: E.minimal_model().rank()
              1
 
@@ -140,7 +140,7 @@ mpatel:  if possible could you make he following additional edits to src/procs/M
 diff -r 809e34b4c146 procs/Makefile
 --- a/procs/Makefile	Sat Feb 27 15:42:31 2010 -0800
 +++ b/procs/Makefile	Sun Feb 28 20:08:44 2010 +0000
-`@``@` -105,7 +105,7 `@``@`
+@@ -105,7 +105,7 @@
  	gzip procs.tar
  
  check: $(TESTS)
@@ -149,7 +149,7 @@ diff -r 809e34b4c146 procs/Makefile
  	./vectest1 < vectest.in >  t && diff t vectest.out
  	./vectest2 < vectest.in >  t && diff t vectest.out
  	./mattest1 < mattest.in >  t && diff t mattest.out
-`@``@` -128,7 +128,7 `@``@`
+@@ -128,7 +128,7 @@
  	./rcubic < rcubic.in > t && diff t rcubic.out
  	./lcubic < lcubic.in > t && diff t lcubic.out
  	./tp2points < tp2points.in > t && diff t tp2points.out

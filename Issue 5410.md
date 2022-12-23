@@ -1,6 +1,6 @@
 # Issue 5410: Install the HTML ReST documentation into $SAGE_LOCAL/documentation/sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5410
 
 Original creator: mabshoff
 

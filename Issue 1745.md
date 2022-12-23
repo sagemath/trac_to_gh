@@ -1,6 +1,6 @@
 # Issue 1745: bug in point enumeration mod p.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1745
 
 Original creator: was
 
@@ -155,8 +155,8 @@ This is definitely not the behavior that we want.  This is a bug, which I've now
 > ((1 : 0 : 0 : 0), 1)
 > 
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-devel`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-devel@googlegroups.com
+> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-devel
 > URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
 > -~----------~----~----~----~------~----~------~--~---

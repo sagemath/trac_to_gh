@@ -1,6 +1,6 @@
 # Issue 2146: PolyBoRi random_element is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2146
 
 Original creator: was
 

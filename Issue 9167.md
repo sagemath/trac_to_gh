@@ -1,6 +1,6 @@
 # Issue 9167: cygwin: importing sage.libs.ecl yields a "no such process" error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9167
 
 Original creator: was
 
@@ -142,11 +142,11 @@ cygwin* | mingw* | pw32*)
   yes,cygwin*)
     library_names_spec='$libname.dll.a'
     soname_spec='`echo ${libname} | sed -e 's/^lib/cyg/'``echo ${release} | sed -e 's/[.]/-/g'`${versuffix}.dll'
-    postinstall_cmds='dlpath=`bash 2>&1 -c '\_. $dir/${file}i;echo \$dlname'\_`~
+    postinstall_cmds='dlpath=`bash 2>&1 -c '\''. $dir/${file}i;echo \$dlname'\''`~
       dldir=$destdir/`dirname \$dlpath`~
       test -d \$dldir || mkdir -p \$dldir~
       $install_prog .libs/$dlname \$dldir/$dlname'
-    postuninstall_cmds='dldll=`bash 2>&1 -c '\_. $file; echo \$dlname'\_`~
+    postuninstall_cmds='dldll=`bash 2>&1 -c '\''. $file; echo \$dlname'\''`~
       dlpath=$dir/\$dldll~
        $rm \$dlpath'
 ```
@@ -433,7 +433,7 @@ Comment by kcrisman created at 2011-12-14 02:59:00
 Here's something interesting.
 
 ```
-User 1`@`GC02635 /home/SageUser/sage-4.7.2
+User 1@GC02635 /home/SageUser/sage-4.7.2
 $ cygcheck local/bin/ecl.dll
 C:\cygwin\home\SageUser\sage-4.7.2\local\bin\ecl.dll
   C:\cygwin\bin\cyggc-1.dll
@@ -447,7 +447,7 @@ C:\cygwin\home\SageUser\sage-4.7.2\local\bin\ecl.dll
   C:\cygwin\bin\cyggmp-3.dll
   C:\cygwin\bin\cygffi-4.dll
 
-User 1`@`GC02635 /home/SageUser/sage-4.7.2
+User 1@GC02635 /home/SageUser/sage-4.7.2
 $ cygcheck local/bin/ecl.exe
 C:\cygwin\home\SageUser\sage-4.7.2\local\bin\ecl.exe
   C:\cygwin\bin\cygwin1.dll
@@ -465,7 +465,7 @@ Or maybe it's boring.  At any rate, I find this weird.
 And here is the cygcheck for the offending dll.
 
 ```
-User 1`@`GC02635 /home/SageUser/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs
+User 1@GC02635 /home/SageUser/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs
 $ cygcheck ./ecl.dll
 C:\cygwin\home\SageUser\sage-4.7.2\devel\sage-main\build\sage\libs\ecl.dll
   C:\cygwin\bin\cygwin1.dll

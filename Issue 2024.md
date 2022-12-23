@@ -1,6 +1,6 @@
 # Issue 2024: [with patch, needs review] univariate gcd over Z_N (N composite)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2024
 
 Original creator: malb
 
@@ -227,7 +227,7 @@ Closing this ticket, per IRC discussion with malb (see also #2497):
 [2:24pm] malb: sage: P.<x> = PolynomialRing(Zmod(N))
 [2:24pm] malb: sage: 7*x//(5*x)
 [2:24pm] malb: InvMod: inverse undefined
-[2:24pm] malb: /usr/local/sage-2.11/local/bin/sage-sage: line 214: 30395 Aborted                sage-ipython "$`@`" -c "$SAGE_STARTUP_COMMAND;"
+[2:24pm] malb: /usr/local/sage-2.11/local/bin/sage-sage: line 214: 30395 Aborted                sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 [2:24pm] malb: okay, I have no idea how expensive it is
 [2:24pm] dmharvey: well, how expensive is _sig_on?
 [2:24pm] malb: it is a system call

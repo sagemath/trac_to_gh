@@ -1,6 +1,6 @@
 # Issue 4713: make an apply_map function for vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4713
 
 Original creator: jason
 

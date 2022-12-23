@@ -1,6 +1,6 @@
 # Issue 1784: number field doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1784
 
 Original creator: pdenapo
 

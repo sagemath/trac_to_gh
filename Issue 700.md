@@ -1,6 +1,6 @@
 # Issue 700: fix significant bug in how cvxopt package is built on Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/700
 
 Original creator: was
 

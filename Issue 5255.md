@@ -1,6 +1,6 @@
 # Issue 5255: [with patch, needs review] Deprecating the use of iterator in CombinatorialClass
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5255
 
 Original creator: hivert
 

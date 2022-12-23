@@ -1,6 +1,6 @@
 # Issue 5276: bug in creating polynomial ring over some rings of integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5276
 
 Original creator: AlexGhitza
 

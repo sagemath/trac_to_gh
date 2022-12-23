@@ -1,6 +1,6 @@
 # Issue 2812: [with patch; needs review] notebook.py doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2812
 
 Original creator: TimothyClemans
 

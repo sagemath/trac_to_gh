@@ -1,6 +1,6 @@
 # Issue 5291: notebook - Do not save snapshots if nothing has changed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5291
 
 Original creator: mabshoff
 

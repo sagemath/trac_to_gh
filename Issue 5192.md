@@ -1,6 +1,6 @@
 # Issue 5192: Improve factor documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5192
 
 Original creator: kcrisman
 

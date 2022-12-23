@@ -1,6 +1,6 @@
 # Issue 3320: Gap <-> Sage interface for Dense Matrices over GF(2)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3320
 
 Original creator: malb
 

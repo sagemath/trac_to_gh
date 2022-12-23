@@ -1,6 +1,6 @@
 # Issue 7988: add testcc and testcxx to hgignore in scripts repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7988
 
 Original creator: rlm
 

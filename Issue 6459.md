@@ -1,6 +1,6 @@
 # Issue 6459: make it so control-shift-enter sends a blank line to tinymce
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6459
 
 Original creator: was
 

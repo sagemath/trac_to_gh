@@ -1,6 +1,6 @@
 # Issue 8517: Optional package gmpy-1.0.1 fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8517
 
 Original creator: drkirkby
 

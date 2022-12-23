@@ -1,6 +1,6 @@
 # Issue 339: HTML code in src browser and in notebook cells that are not being editing is not showing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/339
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 237: create an interface to the "Inverse Symbolic Calculator"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/237
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9084: Move sage/gsl into libs directory.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9084
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 6016: factoring rational functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6016
 
 Original creator: syazdani
 

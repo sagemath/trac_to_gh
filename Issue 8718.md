@@ -1,6 +1,6 @@
 # Issue 8718: Polynomial.apply_map()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8718
 
 Original creator: mmezzarobba
 

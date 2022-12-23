@@ -1,6 +1,6 @@
 # Issue 8876: Allows triangular morphisms to have domain and codomain with different index sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8876
 
 Original creator: hivert
 

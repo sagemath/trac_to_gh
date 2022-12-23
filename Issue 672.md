@@ -1,6 +1,6 @@
 # Issue 672: Solaris 10: rings/complex_double.pyx doctests failure: nan vs. NaN
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/672
 
 Original creator: mabshoff
 

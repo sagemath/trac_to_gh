@@ -1,6 +1,6 @@
 # Issue 7210: Make revolution plot 3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7210
 
 Original creator: kcrisman
 

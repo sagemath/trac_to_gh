@@ -1,6 +1,6 @@
 # Issue 6925: Fast way of calculating cuspidal subgroup of J0(N)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6925
 
 Original creator: syazdani
 
@@ -493,12 +493,12 @@ Comment by rws created at 2014-05-27 06:03:17
 ```
 +++ b/src/sage/modular/abvar/cuspidal_subgroup.py
 
-`@``@` -371,6 +378,538 `@``@` def is_rational_cusp_gamma0(c, N, data):
+@@ -371,6 +378,538 @@ def is_rational_cusp_gamma0(c, N, data):
 
 +    .. [Ligo] GÃ©rard Ligozat, Courbes modulaires de genre 1.
 +       MÃ©moires de la SociÃ©tÃ© MathÃ©matique de France, 43 (1975), p. 5-80,
 
-Non-ascii characters inserted on 2 non-empty linesmultiple lines, _no wiki_
+Non-ascii characters inserted on 2 non-empty linesmultiple lines, ''no wiki''
       white space respected
 ```
 

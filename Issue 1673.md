@@ -1,6 +1,6 @@
 # Issue 1673: Failure of coercion between rationals and F_p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1673
 
 Original creator: ljpk
 

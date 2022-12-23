@@ -1,6 +1,6 @@
 # Issue 2253: sage-2.10.2 -- timeit doctests not robust enough
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2253
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8184: eclib upgrade and bugfix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8184
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 4405: double/single quotation marks in docstring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4405
 
 Original creator: mvngu
 
@@ -56,7 +56,7 @@ sage: def foo():
   File "<ipython console>", line 5
 SyntaxError: can't assign to function call (<ipython console>, line 5)
 
-John's suggestion about replacing the * with r* results in the same error:
+John's suggestion about replacing the ''' with r''' results in the same error:
 
 sage: def foo():
 ....:     r'''

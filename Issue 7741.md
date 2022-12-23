@@ -1,6 +1,6 @@
 # Issue 7741: Can't construct a rational fraction from a symbolic one.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7741
 
 Original creator: hivert
 
@@ -15,7 +15,7 @@ Keywords: Fraction Field, coercion
 Given a symbolic expression which is a rational fraction sage refuse to convert it to a element of the Field of rational fraction:
 
 ```
-hivert`@`boxen:~$ sage
+hivert@boxen:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: fr = (1+x)/(1+x+x^2)

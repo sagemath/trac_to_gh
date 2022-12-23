@@ -1,6 +1,6 @@
 # Issue 2324: RealNumber->QQ coercion fails for NaN, infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2324
 
 Original creator: cwitty
 
@@ -13,7 +13,7 @@ Both of these should raise an exception immediately.  Instead, the former crashe
 
 ```
 sage: QQ(RR(0.0/0.0))
-/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
 
 

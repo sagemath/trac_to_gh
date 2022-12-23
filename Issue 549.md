@@ -1,6 +1,6 @@
 # Issue 549: print statement doesn't leave blank line in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/549
 
 Original creator: dmharvey
 

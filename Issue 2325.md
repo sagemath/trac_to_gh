@@ -1,6 +1,6 @@
 # Issue 2325: segfault in p-adic extension() method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2325
 
 Original creator: ncalexan
 
@@ -19,7 +19,7 @@ sage: L = Qp(19).extension(F, names='a')
 fatal error:
    internal error: can't grow this _ntl_gbigint
 exit...
-/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
+/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 
 Process SAGE exited abnormally with code 134
 ```

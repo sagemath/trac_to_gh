@@ -1,6 +1,6 @@
 # Issue 5224: [with patch, needs review (easy)] speed up isomorphism testing for graphs which are c_graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5224
 
 Original creator: rlm
 

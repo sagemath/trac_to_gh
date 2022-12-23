@@ -1,6 +1,6 @@
 # Issue 6122: [with patch, needs review] strip 'nodetex' from docstrings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6122
 
 Original creator: jhpalmieri
 

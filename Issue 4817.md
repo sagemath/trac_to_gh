@@ -1,6 +1,6 @@
 # Issue 4817: make an os x clickable .app launcher thing for sage automatically when one does -bdist on osx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4817
 
 Original creator: was
 

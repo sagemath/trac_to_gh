@@ -1,6 +1,6 @@
 # Issue 334: Create SAGE_HG_SERVER environment variable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/334
 
 Original creator: kohel
 

@@ -1,6 +1,6 @@
 # Issue 6600: typos in "bordeaux_2008" document
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6600
 
 Original creator: mvngu
 

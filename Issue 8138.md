@@ -1,6 +1,6 @@
 # Issue 8138: Single-column index in PDF documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8138
 
 Original creator: mpatel
 

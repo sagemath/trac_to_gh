@@ -1,6 +1,6 @@
 # Issue 2968: [with patch; needs review] Debian package ntl fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2968
 
 Original creator: tabbott
 

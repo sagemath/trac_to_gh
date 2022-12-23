@@ -1,6 +1,6 @@
 # Issue 2819: edge_style option for directed graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2819
 
 Original creator: jason
 

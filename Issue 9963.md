@@ -1,6 +1,6 @@
 # Issue 9963: Document _pari_ and _pari_init_
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9964
 
 Original creator: jdemeyer
 

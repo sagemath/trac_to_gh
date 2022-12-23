@@ -1,6 +1,6 @@
 # Issue 6951: Singular fails to build on t2.math with GCC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6951
 
 Original creator: mvngu
 

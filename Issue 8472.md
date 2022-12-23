@@ -1,6 +1,6 @@
 # Issue 8472: add %xelatex to notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8472
 
 Original creator: ddrake
 

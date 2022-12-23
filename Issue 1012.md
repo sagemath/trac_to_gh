@@ -1,6 +1,6 @@
 # Issue 1012: fix some doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1012
 
 Original creator: was
 

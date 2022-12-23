@@ -1,6 +1,6 @@
 # Issue 3242: [with patch, needs review] Fix little bug in G.relabel() for G a graph...
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3242
 
 Original creator: rlm
 

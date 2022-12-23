@@ -1,6 +1,6 @@
 # Issue 6032: split boost-1.34.1.cropped off the polybori.spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6032
 
 Original creator: mabshoff
 

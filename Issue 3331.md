@@ -1,6 +1,6 @@
 # Issue 3331: [with patch, needs review] Disable --incref-local-binop in pbuild
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3331
 
 Original creator: gfurnish
 

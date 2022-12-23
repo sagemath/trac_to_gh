@@ -1,6 +1,6 @@
 # Issue 3713: notebook bug -- displaying 3d plots in the interactive reference manual does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3713
 
 Original creator: was
 

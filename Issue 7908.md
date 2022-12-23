@@ -1,6 +1,6 @@
 # Issue 7908: Published interacts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7908
 
 Original creator: mpatel
 

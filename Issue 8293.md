@@ -1,6 +1,6 @@
 # Issue 8293: Include g77
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8293
 
 Original creator: magawake
 

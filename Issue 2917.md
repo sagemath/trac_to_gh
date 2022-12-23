@@ -1,6 +1,6 @@
 # Issue 2917: internal server error in notebook sage-3.0.alpha4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2917
 
 Original creator: jsp
 

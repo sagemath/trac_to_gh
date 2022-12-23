@@ -1,6 +1,6 @@
 # Issue 1924: Optimize matrix multiply cache friendliness
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1924
 
 Original creator: robertwb
 

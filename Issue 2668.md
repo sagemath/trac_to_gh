@@ -1,6 +1,6 @@
 # Issue 2668: loads/dumps do not work with QQbar and AA
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2668
 
 Original creator: ncalexan
 

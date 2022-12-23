@@ -1,6 +1,6 @@
 # Issue 1005: Make Sage compile in 32 bit mode on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1005
 
 Original creator: mabshoff
 
@@ -355,7 +355,7 @@ the problem for me:
 --- src/kernel/system/givbasictype.h.ORIG       2007-11-01
 15:17:57.000000000 +0100
 +++ src/kernel/system/givbasictype.h    2007-11-01 15:18:33.000000000 +0100
-`@``@` -11,6 +11,9 `@``@`
+@@ -11,6 +11,9 @@
  #include "givaro/givconfig.h"
 
  #include <stdlib.h> // for size_t

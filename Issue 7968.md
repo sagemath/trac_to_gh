@@ -1,6 +1,6 @@
 # Issue 7968: doctest failure in heegner.py (Sage-4.3.1.rc0)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7968
 
 Original creator: GeorgSWeber
 

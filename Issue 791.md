@@ -1,6 +1,6 @@
 # Issue 791: ugly absprec parameter in Polynomial constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/791
 
 Original creator: dmharvey
 

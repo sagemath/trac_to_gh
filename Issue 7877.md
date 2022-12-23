@@ -1,6 +1,6 @@
 # Issue 7877: matrix indexing should be explained in the manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7877
 
 Original creator: jason
 

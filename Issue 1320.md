@@ -1,6 +1,6 @@
 # Issue 1320: [graphs] planarity testing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1320
 
 Original creator: jason
 
@@ -83,9 +83,7 @@ from sage.rings.rational import Rational
 ```
 
 The above was caused by the work on the chromatic number and chromatic polynomial by Tom.
-|||                           
-|||---------------------------
-|||| /tmp/graph.py~base.vsk2R5
+||||||| /tmp/graph.py~base.vsk2R5
 Cheers,
 
 Michael

@@ -1,6 +1,6 @@
 # Issue 7269: SageNB -- Change table layouts to CSS layouts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7269
 
 Original creator: timdumol
 

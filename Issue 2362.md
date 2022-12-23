@@ -1,6 +1,6 @@
 # Issue 2362: Integer digits method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2362
 
 Original creator: jbmohler
 

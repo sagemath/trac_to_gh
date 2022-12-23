@@ -1,6 +1,6 @@
 # Issue 5182: Strange Symmetrica segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5182
 
 Original creator: jbandlow
 

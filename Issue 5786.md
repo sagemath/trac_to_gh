@@ -1,6 +1,6 @@
 # Issue 5786: interrupt makes truncated output --> /dev/null
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5786
 
 Original creator: rlm
 

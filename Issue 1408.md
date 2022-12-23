@@ -1,6 +1,6 @@
 # Issue 1408: optional macaulay2 spkg doesn't install on osx10.5.1 due to problems with gc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1408
 
 Original creator: was
 
@@ -19,7 +19,7 @@ darwin_stop_world.Plo"; else rm -f ".deps/darwin_stop_world.Tpo"; exit
 rm -f .libs/darwin_stop_world.lo
 gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=
 \"6.8\" "-DPACKAGE_STRING=\"gc 6.8\"" -DPACKAGE_BUGREPORT=
-\"Hans.Boehm`@`hp.com\" -DGC_VERSION_MAJOR=6 -DGC_VERSION_MINOR=8 -
+\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=6 -DGC_VERSION_MINOR=8 -
 DPACKAGE=\"gc\" -DVERSION=\"6.8\" -DGC_DARdarwin_stop_world.c:203:
 error: 'ppc_thread_state_t' has no member named 'r1'
 darwin_stop_world.c:205: error: 'ppc_thread_state_t' has no member

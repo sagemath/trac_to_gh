@@ -1,6 +1,6 @@
 # Issue 4933: lots of files in sage.schemes.elliptic_curves are not included in the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4933
 
 Original creator: cremona
 

@@ -1,6 +1,6 @@
 # Issue 7101: Inconsistency in polynomial ring creation.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7101
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 7447: SageNB version and install date / time
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7447
 
 Original creator: mpatel
 

@@ -1,6 +1,6 @@
 # Issue 2847: [with patch, needs review] more speedups to cyclotomic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2847
 
 Original creator: robertwb
 
@@ -30,9 +30,9 @@ Comment by mabshoff created at 2008-04-07 20:55:39
 The patch currently does not apply against my tree:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-limits.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-limits.patch
 patching file sage/rings/polynomial/cyclotomic.pyx
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-radical.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 < trac_2847-cyclo-radical.patch
 patching file sage/rings/polynomial/cyclotomic.pyx
 Hunk #1 FAILED at 72.
 1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/cyclotomic.pyx.rej

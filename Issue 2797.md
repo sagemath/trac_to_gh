@@ -1,6 +1,6 @@
 # Issue 2797: [with spkg, needs review] fix memleaks in zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2797
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 2838: _PyList_Extend missing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2838
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 7248: include jinja2 / upgrade jinja spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7248
 
 Original creator: ddrake
 

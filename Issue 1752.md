@@ -1,6 +1,6 @@
 # Issue 1752: sage make install bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1752
 
 Original creator: pgrinber
 

@@ -1,6 +1,6 @@
 # Issue 4804: add latex output for ceiling, floor, and derivative functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4804
 
 Original creator: was
 

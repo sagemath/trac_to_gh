@@ -1,6 +1,6 @@
 # Issue 9370: customize printing of elements in CombinatorialFreeModules
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9370
 
 Original creator: jhpalmieri
 
@@ -264,9 +264,9 @@ I like the multiple options! I gonna have a more detailed look for a review; her
 2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:
 
 ```
-sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='`@``@`')
+sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')
 sage: A.an_element()
-2`@``@`B['`@``@`'] + 2`@``@`B['+']
+2@@B['@@'] + 2@@B['+']
 ```
 
 
@@ -291,9 +291,9 @@ I think it was just to preserve backward-compatibility, but if you think it's sa
 > 2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:
 
 ```
-sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='`@``@`')
+sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')
 sage: A.an_element()
-2`@``@`B['`@``@`'] + 2`@``@`B['+']
+2@@B['@@'] + 2@@B['+']
 ```
 
 

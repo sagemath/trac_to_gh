@@ -1,6 +1,6 @@
 # Issue 9671: Improve bar chart and histogram support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9671
 
 Original creator: kcrisman
 

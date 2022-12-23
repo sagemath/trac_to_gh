@@ -1,6 +1,6 @@
 # Issue 7035: R sends the correct Sun flags to C and C++ compilers, but not Fortran.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7035
 
 Original creator: drkirkby
 

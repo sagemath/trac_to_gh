@@ -1,6 +1,6 @@
 # Issue 3235: cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3235
 
 Original creator: was
 

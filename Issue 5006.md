@@ -1,6 +1,6 @@
 # Issue 5006: the hg script installed by install_script() does not pass parameters correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5006
 
 Original creator: mabshoff
 

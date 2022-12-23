@@ -1,6 +1,6 @@
 # Issue 9122: conversions between simplicial and cubical complexes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9122
 
 Original creator: jhpalmieri
 

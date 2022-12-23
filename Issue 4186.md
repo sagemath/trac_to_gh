@@ -1,6 +1,6 @@
 # Issue 4186: [with patch, needs review] speed up default __call__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4186
 
 Original creator: robertwb
 

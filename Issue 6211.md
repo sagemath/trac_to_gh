@@ -1,6 +1,6 @@
 # Issue 6211: typesetting symbolic integrals broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6211
 
 Original creator: burcin
 

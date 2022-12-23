@@ -1,6 +1,6 @@
 # Issue 9040: fatal relocation error installing R on OpenSolaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9040
 
 Original creator: drkirkby
 
@@ -21,7 +21,7 @@ Since the configuration of gcc is fairly critical on OpenSolaris, here's how it 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ gcc -v
+drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
 Target: i386-pc-solaris2.11
 Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local
@@ -175,16 +175,16 @@ should produce no output, but it does in the case of the three R libraries
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libR.so | fgrep TEXTREL 
+drkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libR.so | fgrep TEXTREL 
       [25]  TEXTREL           0                   
       [34]  FLAGS             0x4                 [ TEXTREL ]
-drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRblas.so | fgrep TEXTREL 
+drkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRblas.so | fgrep TEXTREL 
       [19]  TEXTREL           0                   
       [28]  FLAGS             0x4                 [ TEXTREL ]
-drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRlapack.so | fgrep TEXTREL 
+drkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRlapack.so | fgrep TEXTREL 
       [18]  TEXTREL           0                   
       [27]  FLAGS             0x4                 [ TEXTREL ]
-drkirkby`@`hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ 
+drkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ 
 ```
 
 

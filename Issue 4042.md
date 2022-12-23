@@ -1,6 +1,6 @@
 # Issue 4042: libm4ri-20080901 fails to build on Itanium Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4042
 
 Original creator: mabshoff
 
@@ -34,7 +34,7 @@ Comment by malb created at 2008-09-03 13:59:41
 It does seem to build on *cleo*:
 
 ```
-[malb`@`cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo
+[malb@cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo
 processor  : 0
 vendor     : GenuineIntel
 arch       : IA-64

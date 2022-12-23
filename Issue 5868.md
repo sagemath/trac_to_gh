@@ -1,6 +1,6 @@
 # Issue 5868: Fix libgcrypt shared library name on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5868
 
 Original creator: pjeremy
 

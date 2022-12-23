@@ -1,6 +1,6 @@
 # Issue 3333: [with patch, needs review] Matrix_mod2_dense randomize endianess issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3333
 
 Original creator: malb
 

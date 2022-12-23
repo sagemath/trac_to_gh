@@ -1,6 +1,6 @@
 # Issue 2851: clean binary install of sage followed by "sage -br" is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2851
 
 Original creator: was
 

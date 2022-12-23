@@ -1,6 +1,6 @@
 # Issue 7970: Make `hg` interfaces use `subprocess.Popen` and return exit code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7970
 
 Original creator: craigcitro
 

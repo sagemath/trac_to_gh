@@ -1,6 +1,6 @@
 # Issue 6384: elliptic curve -- isogeny function seems completely totally broken in first example I try
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6384
 
 Original creator: was
 

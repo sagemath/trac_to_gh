@@ -1,6 +1,6 @@
 # Issue 1417: update symmetrica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1417
 
 Original creator: mhansen
 

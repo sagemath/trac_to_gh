@@ -1,6 +1,6 @@
 # Issue 3204: [with spkg, needs review] update M4RI to version 20080514
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3204
 
 Original creator: malb
 

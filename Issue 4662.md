@@ -1,6 +1,6 @@
 # Issue 4662: Sage 3.2.1.rc1: Fix documentation build issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4662
 
 Original creator: mabshoff
 

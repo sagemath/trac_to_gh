@@ -1,6 +1,6 @@
 # Issue 2679: sage docs -- get rid of aux, etc., files when packaging up for distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2679
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7473: Sphinx hangs when making a clone
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7473
 
 Original creator: mpatel
 

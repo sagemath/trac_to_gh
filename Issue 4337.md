@@ -1,6 +1,6 @@
 # Issue 4337: modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4337
 
 Original creator: was
 

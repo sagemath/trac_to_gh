@@ -1,6 +1,6 @@
 # Issue 1934: sage-check for ATLAS broken on OSX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1934
 
 Original creator: mabshoff
 

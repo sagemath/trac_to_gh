@@ -1,6 +1,6 @@
 # Issue 7828: There should be a top-level sign() function.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7828
 
 Original creator: robertwb
 

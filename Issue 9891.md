@@ -1,6 +1,6 @@
 # Issue 9891: Eliminate (or minimize) #include <pari/paripriv.h>
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9892
 
 Original creator: jdemeyer
 

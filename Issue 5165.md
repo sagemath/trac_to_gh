@@ -1,6 +1,6 @@
 # Issue 5165: make padded_list use prec by default
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5165
 
 Original creator: AlexGhitza
 

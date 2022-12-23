@@ -1,6 +1,6 @@
 # Issue 9447: "except:" count in sage too high
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9447
 
 Original creator: wjlaffin
 
@@ -36,7 +36,7 @@ Comment by tscrim created at 2013-04-01 19:53:22
 These all seem to be gone in `5.9.beta1`:
 
 ```
-travis`@`travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R "except:" .
+travis@travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R "except:" .
 ./numerical/backends/glpk_backend.cpp:            /*except:*/ {
 ./structure/list_clone_timings_cy.c:        /*except:*/ {
 ./plot/plot3d/bugs.txt:        except:       # TODO -- this would catch control-C,etc. -- FIX THIS TO CATCH WHAT IS RAISED!!!!

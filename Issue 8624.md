@@ -1,6 +1,6 @@
 # Issue 8624: integral of abs(cos(x))*sin(x) gives false results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8624
 
 Original creator: jeroen
 
@@ -135,9 +135,9 @@ I get the following errors after applying attachment:trac-8624-abs-integration.p
 File ".../devel/sage-t/sage/functions/piecewise.py", line 780:
     sage: f.integral()
 Expected:
-    Piecewise defined function with 1 parts, [This is the Trac macro ** that was inherited from the migration called with arguments (-Infinity, +Infinity), x )](https://trac.sagemath.org/wiki/WikiMacros#-macro)
+    Piecewise defined function with 1 parts, [[(-Infinity, +Infinity), x |--> -integrate(e^(-abs(x)), x, x, +Infinity)]]
 Got:
-    Piecewise defined function with 1 parts, [This is the Trac macro ** that was inherited from the migration called with arguments (-Infinity, +Infinity), x )](https://trac.sagemath.org/wiki/WikiMacros#-macro)
+    Piecewise defined function with 1 parts, [[(-Infinity, +Infinity), x |--> -1/2*((sgn(x) - 1)*e^(2*x) - 2*e^x*sgn(x) + sgn(x) + 1)*e^(-x) - 1]]
 **********************************************************************
 ```
 
@@ -356,7 +356,7 @@ This is fixed at ticket #10187 by upgrading Maxima to version 5.22.1:
 
 
 ```
-[mvngu`@`sage sage-4.6.1.alpha3]$ ./sage
+[mvngu@sage sage-4.6.1.alpha3]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

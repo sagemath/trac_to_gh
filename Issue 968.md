@@ -1,6 +1,6 @@
 # Issue 968: graph_isom: memory management, legibility
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/968
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 335: directory not empty issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/335
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1478: M2 interface -- make it so large input gets read in from a file
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1478
 
 Original creator: was
 

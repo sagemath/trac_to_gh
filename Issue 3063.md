@@ -1,6 +1,6 @@
 # Issue 3063: empty matrices: norm() returns a ValueError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3063
 
 Original creator: dfdeshom
 

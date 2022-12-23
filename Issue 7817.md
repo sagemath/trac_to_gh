@@ -1,6 +1,6 @@
 # Issue 7817: opencdk ignoring SAGE64 except on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7817
 
 Original creator: drkirkby
 

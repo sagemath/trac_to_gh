@@ -1,6 +1,6 @@
 # Issue 9094: is_square and sqrt for fraction fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9094
 
 Original creator: robertwb
 
@@ -224,7 +224,7 @@ sage/rings/ring_element.py has only one line of code:
 
 ```
 
-from sage.structure.element import RingElement, is_RingElement
+from sage.structure.element import !RingElement, is_RingElement
 
 ```
 
@@ -261,9 +261,9 @@ Catching a specific TypeError isn't possible apparently.
 
 try:
 
-    raise TypeError("sqrt() got an unexpected keyword argument 'root'")
+    raise !TypeError("sqrt() got an unexpected keyword argument 'root'")
 
-except TypeError("sqrt() got an unexpected keyword argument 'root'"):
+except !TypeError("sqrt() got an unexpected keyword argument 'root'"):
 
     print "lol"
 
@@ -279,9 +279,7 @@ Traceback (click to the left of this block for traceback)
 ...
 TypeError: sqrt() got an unexpected keyword argument 'root'
 ` ||
-|  
-|--
-| `
+|| `
 
 ```
 

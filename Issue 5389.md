@@ -1,6 +1,6 @@
 # Issue 5389: Creating a  updated workspace with -tp is racy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5389
 
 Original creator: mabshoff
 

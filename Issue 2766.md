@@ -1,6 +1,6 @@
 # Issue 2766: graph adjacency matrix defaults to sparse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2766
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 2499: cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2499
 
 Original creator: was
 

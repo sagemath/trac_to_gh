@@ -1,6 +1,6 @@
 # Issue 9650: Adding support for differential forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9650
 
 Original creator: jvkersch
 
@@ -53,9 +53,9 @@ Integral[ d[x,y] , 	Chain[ {x -> r Cos[theta], y -> r Sin[theta]}, \
 
 Stokes Theorem:
 
-Integral[ d `@` ((x/2) d[y] - (y/2) d[y]) , 	Chain[ {x -> s, y -> t}, \
+Integral[ d @ ((x/2) d[y] - (y/2) d[y]) , 	Chain[ {x -> s, y -> t}, \
 {s, 0, 1}, {t, 0, 1}]] ==	
-Integral[ ((x/2) d[y] - (y/2) d[y]) , 	Boundary `@` Chain[ {x -> s, y -> \
+Integral[ ((x/2) d[y] - (y/2) d[y]) , 	Boundary @ Chain[ {x -> s, y -> \
 t}, {s, 0, 1}, {t, 0, 1}]]
 ```
 
@@ -102,9 +102,9 @@ Some things to keep in mind: right now, the way to create a differential form is
 ```
 
         sage: x, y, z = var('x, y, z')
-        sage: U = CoordinatePatch((x, y, z))
-        sage: F = DifferentialForms(U)
-        sage: form = DifferentialForm(F, 0, sin(x*y)); form
+        sage: U = !CoordinatePatch((x, y, z))
+        sage: F = !DifferentialForms(U)
+        sage: form = !DifferentialForm(F, 0, sin(x*y)); form
         sin(x*y)
 
 ```

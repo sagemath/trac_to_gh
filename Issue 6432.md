@@ -1,6 +1,6 @@
 # Issue 6432: plot and especially animate are very slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6432
 
 Original creator: ncalexan
 

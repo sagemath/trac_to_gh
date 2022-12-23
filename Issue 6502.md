@@ -1,6 +1,6 @@
 # Issue 6502: [with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6502
 
 Original creator: ncohen
 
@@ -123,7 +123,7 @@ I got this problem:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha0$ ./sage
+wdj@hera:~/sagefiles/sage-4.1.1.alpha0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: OR2
@@ -395,7 +395,7 @@ Am I to apply MIP1 then MIP2? If so, there was a problem compiling (amd64, ubunt
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b                                                             
+wdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b                                                             
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -552,7 +552,7 @@ The 3 patches applied fione to 4.1.1.a1. But on an ubuntu 9.04 machine, I got th
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/numerical/mip.pyx"            
+wdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/numerical/mip.pyx"            
 sage -t  "devel/sage/sage/numerical/mip.pyx"                                                      
 **********************************************************************                            
 File "/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx", line 280:         
@@ -757,7 +757,7 @@ There was also this compiling error:
 
 
 ```
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b  
+wdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b  
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.
@@ -858,7 +858,7 @@ Hopwever the was the following error:
 
 ```
 
-wdj`@`hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/numerical/mip.pyx"
+wdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  "devel/sage/sage/numerical/mip.pyx"
 sage -t  "devel/sage/sage/numerical/mip.pyx"                                          
 **********************************************************************                
 File "/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx", line 280:

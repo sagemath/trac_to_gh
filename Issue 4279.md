@@ -1,6 +1,6 @@
 # Issue 4279: Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4279
 
 Original creator: mabshoff
 

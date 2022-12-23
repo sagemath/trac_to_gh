@@ -1,6 +1,6 @@
 # Issue 1157: make sure the sage vmware image files are < 2GB
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1157
 
 Original creator: was
 

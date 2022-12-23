@@ -1,6 +1,6 @@
 # Issue 2694: Hecke algebra basis not implemented
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2694
 
 Original creator: syazdani
 

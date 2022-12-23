@@ -1,6 +1,6 @@
 # Issue 2582: [with patch, needs review] fix bug in PermutationGroupElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2582
 
 Original creator: rlm
 

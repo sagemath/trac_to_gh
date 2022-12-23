@@ -1,6 +1,6 @@
 # Issue 6275: atlas-3.8.3.p2 dumps core on Solaris 10 with gcc 4.4.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6275
 
 Original creator: drkirkby
 

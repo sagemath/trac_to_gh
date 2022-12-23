@@ -1,6 +1,6 @@
 # Issue 3798: [with patch, needs review] some docstrings for sage.graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3798
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 8241: p-adic fields should have Witt Frobenius
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8241
 
 Original creator: dmharvey
 

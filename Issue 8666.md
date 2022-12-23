@@ -1,6 +1,6 @@
 # Issue 8666: Bug in cyclotomic linear algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8666
 
 Original creator: craigcitro
 

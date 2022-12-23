@@ -1,6 +1,6 @@
 # Issue 6428: Large exponents overflow to negative in polydict ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6428
 
 Original creator: broune
 

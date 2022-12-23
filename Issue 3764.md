@@ -1,6 +1,6 @@
 # Issue 3764: notebook -- notebook.py coverage to
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3764
 
 Original creator: TimothyClemans
 

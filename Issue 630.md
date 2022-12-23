@@ -1,6 +1,6 @@
 # Issue 630: mhansen's big combinatorics update
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/630
 
 Original creator: mhansen
 

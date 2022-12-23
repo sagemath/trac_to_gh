@@ -1,6 +1,6 @@
 # Issue 3890: exact division syntax in finite fields of prime order
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3890
 
 Original creator: jbmohler
 

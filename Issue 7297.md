@@ -1,6 +1,6 @@
 # Issue 7297: spkg's for libogg and libtheora
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7297
 
 Original creator: whuss
 

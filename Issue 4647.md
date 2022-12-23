@@ -1,6 +1,6 @@
 # Issue 4647: Disable dependency code cacheing in setup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4647
 
 Original creator: mabshoff
 

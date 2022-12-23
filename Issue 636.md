@@ -1,6 +1,6 @@
 # Issue 636: cvxopt doesn't fully work yet in SAGE under Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/636
 
 Original creator: was
 

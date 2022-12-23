@@ -1,6 +1,6 @@
 # Issue 4167: wrong colors cornercase in list_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4167
 
 Original creator: schilly
 

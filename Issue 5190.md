@@ -1,6 +1,6 @@
 # Issue 5190: the sage documentation at sagemath.org is horribly out of date
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5190
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7438: the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7438
 
 Original creator: was
 

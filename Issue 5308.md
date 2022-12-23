@@ -1,6 +1,6 @@
 # Issue 5308: Removing __len__ for combinatorial classes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5308
 
 Original creator: hivert
 
@@ -61,7 +61,7 @@ I get a reject in
 zephyr-/opt/sage/devel/sage>cat sage/combinat/subset.py.rej
 --- subset.py
 +++ subset.py
-`@``@` -522,7 +522,7 `@``@`
+@@ -522,7 +522,7 @@
              [0, 1, 3]
              sage: S._multiplicities
              [1, 2, 1]
@@ -70,7 +70,7 @@ zephyr-/opt/sage/devel/sage>cat sage/combinat/subset.py.rej
              12
              sage: S == loads(dumps(S))
              True
-`@``@` -604,7 +604,7 `@``@`
+@@ -604,7 +604,7 @@
              sage: S = Subsets([1,2,3,3],2, multiset=True)
              sage: S._k
              2
@@ -265,7 +265,7 @@ Comment by mabshoff created at 2009-04-05 00:06:54
 This patch introduces two trivial to fix doctest failures:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py
 sage -t -long "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py", line 911:
@@ -291,7 +291,7 @@ The following tests failed:
 
 	sage -t -long "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 Total time for all tests: 11.3 seconds
-mabshoff`@`sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst
+mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst
 sage -t -long "devel/sage/doc/en/a_tour_of_sage/index.rst"  
 **********************************************************************
 File "/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/a_tour_of_sage/index.rst", line 132:

@@ -1,6 +1,6 @@
 # Issue 1164: Error in tutorial documentation about %hist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1164
 
 Original creator: ljpk
 

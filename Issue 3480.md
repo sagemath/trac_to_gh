@@ -1,6 +1,6 @@
 # Issue 3480: notebook -- hide "New Worksheet" and "Upload" links on the published worksheets page from guest users
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3480
 
 Original creator: TimothyClemans
 

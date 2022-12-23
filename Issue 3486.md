@@ -1,6 +1,6 @@
 # Issue 3486: fix NTL+gcc 4.3+csh build issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3486
 
 Original creator: mabshoff
 

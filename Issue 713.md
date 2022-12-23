@@ -1,6 +1,6 @@
 # Issue 713: [with patch] Interrupting Singular doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/713
 
 Original creator: malb
 

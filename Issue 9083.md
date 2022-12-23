@@ -1,6 +1,6 @@
 # Issue 9083: 'make distclean' fails to remove some files or directories.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9083
 
 Original creator: drkirkby
 

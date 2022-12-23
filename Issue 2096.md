@@ -1,6 +1,6 @@
 # Issue 2096: tab completion for mathematica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2096
 
 Original creator: jason
 

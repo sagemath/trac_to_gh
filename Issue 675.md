@@ -1,6 +1,6 @@
 # Issue 675: Solaris 10: random_element: "ValueError: denominator must not be 0"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/675
 
 Original creator: mabshoff
 

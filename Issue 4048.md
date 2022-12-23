@@ -1,6 +1,6 @@
 # Issue 4048: missing minpoly for GF(p)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4048
 
 Original creator: mabshoff
 

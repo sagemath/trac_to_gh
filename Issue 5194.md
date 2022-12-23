@@ -1,6 +1,6 @@
 # Issue 5194: add option to turn off automatic updates for an interact
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5194
 
 Original creator: john_perry
 

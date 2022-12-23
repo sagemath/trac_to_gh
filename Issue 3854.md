@@ -1,6 +1,6 @@
 # Issue 3854: interact needs to use "notruncate"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3854
 
 Original creator: rlm
 
@@ -44,7 +44,7 @@ Comment by mabshoff created at 2008-08-25 02:33:15
 As is the patch does not apply:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_3854_sage.patch 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_3854_sage.patch 
 patching file sage/server/notebook/interact.py
 Hunk #1 FAILED at 1397.
 1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej

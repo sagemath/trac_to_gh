@@ -1,6 +1,6 @@
 # Issue 9425: bug in kernel_on() in "matrix2.pyx"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9425
 
 Original creator: GeorgSWeber
 

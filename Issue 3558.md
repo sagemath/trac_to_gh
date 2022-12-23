@@ -1,6 +1,6 @@
 # Issue 3558: [with patch, needs review] make  "% cells" work in the notebook when the mode is not set to "sage"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3558
 
 Original creator: mhansen
 

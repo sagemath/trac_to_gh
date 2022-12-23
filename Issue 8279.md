@@ -1,6 +1,6 @@
 # Issue 8279: cygwin: cliquer names the library incorrectly for cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8279
 
 Original creator: was
 

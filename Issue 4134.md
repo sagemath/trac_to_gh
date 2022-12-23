@@ -1,6 +1,6 @@
 # Issue 4134: [with patch, needs review] notebook -- user.py has nodoctest flag
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4134
 
 Original creator: TimothyClemans
 

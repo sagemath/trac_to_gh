@@ -1,6 +1,6 @@
 # Issue 9104: _name is set too late when creating a combinatorial free module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9104
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 65: Profiler prints incorrect lines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/65
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 7944: update Developers' Guide to reflect new process for working on tickets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7944
 
 Original creator: mvngu
 

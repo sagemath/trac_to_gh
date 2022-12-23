@@ -1,6 +1,6 @@
 # Issue 302: Improved error reporting for notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/302
 
 Original creator: TimothyClemans
 

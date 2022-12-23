@@ -1,6 +1,6 @@
 # Issue 9166: cygwin: sympow does not work on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9166
 
 Original creator: was
 

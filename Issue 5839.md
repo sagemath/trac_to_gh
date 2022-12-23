@@ -1,6 +1,6 @@
 # Issue 5839: [with patch, needs review] MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5839
 
 Original creator: cwitty
 

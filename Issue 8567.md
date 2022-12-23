@@ -1,6 +1,6 @@
 # Issue 8567: Specify the location of iconv for 'gd'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8567
 
 Original creator: drkirkby
 
@@ -159,10 +159,10 @@ In Fedora 12 x86_64 the installation of libiconv is not complete:
 
 
 ```
-[root`@`vrede jaap]# find /usr/bin -name "*iconv*"
+[root@vrede jaap]# find /usr/bin -name "*iconv*"
 /usr/bin/iconv.bak
 /usr/bin/piconv
-[root`@`vrede jaap]# find /usr/include -name "*iconv*"
+[root@vrede jaap]# find /usr/include -name "*iconv*"
 /usr/include/evolution-data-server-2.28/camel/camel-iconv.h
 /usr/include/evolution-data-server-2.28/libedataserver/e-iconv.h
 /usr/include/Qt3Support/q3iconview.h
@@ -173,9 +173,9 @@ In Fedora 12 x86_64 the installation of libiconv is not complete:
 /usr/include/xulrunner-sdk-1.9.1/system_wrappers_js/iconv.h
 /usr/include/xulrunner-sdk-1.9.1/system_wrappers/iconv.h
 /usr/include/iconv.h.bak
-[root`@`vrede jaap]# find /usr/lib -name "*iconv*"
+[root@vrede jaap]# find /usr/lib -name "*iconv*"
 /usr/lib/ruby/1.8/xsd/iconvcharset.rb
-[root`@`vrede jaap]# 
+[root@vrede jaap]# 
 
 ```
 
@@ -476,7 +476,7 @@ I don't have time to test it now (really am tied up), but if you can test on Ope
 
 
 ```
-drkirkby`@`kestrel:~$ uname -r
+drkirkby@kestrel:~$ uname -r
 5.10
 ```
 
@@ -485,7 +485,7 @@ on Solaris 10, and
 
 
 ```
-drkirkby`@`hawk:~$ uname -r
+drkirkby@hawk:~$ uname -r
 5.11
 ```
 

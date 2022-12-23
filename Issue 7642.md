@@ -1,6 +1,6 @@
 # Issue 7642: Add an implementation of LCA to sage.combinat.words.suffix_trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7642
 
 Original creator: abergeron
 

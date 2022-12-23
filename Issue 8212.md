@@ -1,6 +1,6 @@
 # Issue 8212: arithmetic on GF(2^n) might be improved
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8212
 
 Original creator: zimmerma
 

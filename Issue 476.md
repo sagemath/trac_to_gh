@@ -1,6 +1,6 @@
 # Issue 476: sage reference manual --- notebook chapter is a mess
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/476
 
 Original creator: was
 

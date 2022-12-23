@@ -1,6 +1,6 @@
 # Issue 6656: [with patch, needs review] fix latex method for laurent series element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6656
 
 Original creator: jhpalmieri
 

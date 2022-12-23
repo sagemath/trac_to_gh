@@ -1,6 +1,6 @@
 # Issue 3089: removing an attached file doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3089
 
 Original creator: gnprice
 

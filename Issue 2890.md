@@ -1,6 +1,6 @@
 # Issue 2890: [with patch; needs review] html.py --fix up documentation a little and a small bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2890
 
 Original creator: was
 

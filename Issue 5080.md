@@ -1,6 +1,6 @@
 # Issue 5080: Bug in decomposing modular symbol subspace
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5080
 
 Original creator: robertwb
 
@@ -311,7 +311,7 @@ Comment by was created at 2009-06-28 15:00:48
 
 
 ```
-On Jun 27, 11:54 pm, davidloeffler <dave.loeff...`@`gmail.com> wrote:
+On Jun 27, 11:54 pm, davidloeffler <dave.loeff...@gmail.com> wrote:
 > On SuSE, 32-bit, sage -testall -long passes except for errors in the
 > same three files Jaap reported above (and a harmless timeout in
 > elliptic curves).

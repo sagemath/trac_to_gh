@@ -1,6 +1,6 @@
 # Issue 7814: [with spkg; needs review] eclib ignores SAGE64 if OS is not Darwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7814
 
 Original creator: drkirkby
 
@@ -83,7 +83,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing eclib-20080310.p8.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3$ 
+jaap@opensolaris:~/Downloads/sage-4.3$ 
 
 ```
 

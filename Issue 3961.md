@@ -1,6 +1,6 @@
 # Issue 3961: bug in ell_finite_field.abelian_group()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3961
 
 Original creator: cremona
 

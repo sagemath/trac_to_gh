@@ -1,6 +1,6 @@
 # Issue 5167: Sage 3.3.a4 on OSX: doctest failure in sage/calculus/calculus.py due to changed order of roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5167
 
 Original creator: mabshoff
 

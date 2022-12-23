@@ -1,6 +1,6 @@
 # Issue 8278: cygwin: cvxopt doesn't work at all
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8278
 
 Original creator: was
 

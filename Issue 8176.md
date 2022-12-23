@@ -1,6 +1,6 @@
 # Issue 8176: libpng fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8176
 
 Original creator: jsp
 
@@ -98,7 +98,7 @@ That looks fine now. I see the -m64 flag is added, and it builds as 64-bit. I ev
 
 
 ```
-drkirkby`@`swan:[~/sage-4.3.2.rc0] $ file  local/lib/libpng12.so.0.35.0
+drkirkby@swan:[~/sage-4.3.2.rc0] $ file  local/lib/libpng12.so.0.35.0
 local/lib/libpng12.so.0.35.0:   ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped
 ```
 

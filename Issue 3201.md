@@ -1,6 +1,6 @@
 # Issue 3201: notebook -- bug in parsing \ at end of line in %latex mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3201
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9634: binomial does not accept variable when only in the lower argument
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9634
 
 Original creator: Henryk.Trappmann
 

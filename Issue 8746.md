@@ -1,6 +1,6 @@
 # Issue 8746: Equality of posets element is very slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8746
 
 Original creator: hivert
 

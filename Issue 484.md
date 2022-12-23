@@ -1,6 +1,6 @@
 # Issue 484: multivariate polynomial coercion bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/484
 
 Original creator: wdj
 

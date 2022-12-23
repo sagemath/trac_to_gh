@@ -1,6 +1,6 @@
 # Issue 7522: Implement orthogonal complement in vector spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7522
 
 Original creator: kcrisman
 

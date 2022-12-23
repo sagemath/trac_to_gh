@@ -1,6 +1,6 @@
 # Issue 8524: DisjointUnionEnumeratedSets should have a private __classcall__ method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8524
 
 Original creator: hivert
 

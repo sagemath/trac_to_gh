@@ -1,6 +1,6 @@
 # Issue 1766: [with patch] enhancing latex embedding with plots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1766
 
 Original creator: schilly
 
@@ -135,7 +135,7 @@ Comment by dfdeshom created at 2008-03-04 03:29:12
 I can't apply this cleanly...
 
 ```
-dfdeshom`@`sage:~/custom/sage/examples$ ../sage -hg import 1766.patch
+dfdeshom@sage:~/custom/sage/examples$ ../sage -hg import 1766.patch
 applying 1766.patch
 not in dirstate: latex_embed/auto/example.el!
 not in dirstate: latex_embed/auto/sagetex.el!

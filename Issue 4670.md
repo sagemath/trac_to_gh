@@ -1,6 +1,6 @@
 # Issue 4670: prime_pi for input ~ 10^10 causes PariError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4670
 
 Original creator: roed
 

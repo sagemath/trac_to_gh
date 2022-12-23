@@ -1,6 +1,6 @@
 # Issue 4889: deprecate matrix.list()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4889
 
 Original creator: robertwb
 

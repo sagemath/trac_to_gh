@@ -1,6 +1,6 @@
 # Issue 6695: spell-check all modules under sage/ext
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6695
 
 Original creator: mvngu
 

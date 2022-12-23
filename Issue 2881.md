@@ -1,6 +1,6 @@
 # Issue 2881: numerical_integral doesn't use fast_float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2881
 
 Original creator: mhansen
 

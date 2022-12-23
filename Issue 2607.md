@@ -1,6 +1,6 @@
 # Issue 2607: find_minimum_on_interval() uses the wrong scipy function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2607
 
 Original creator: AlexGhitza
 

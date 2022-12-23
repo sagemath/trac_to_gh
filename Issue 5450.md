@@ -1,6 +1,6 @@
 # Issue 5450: plotting a vector as a point plots a sphere, not a point
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5450
 
 Original creator: jason
 

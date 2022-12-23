@@ -1,6 +1,6 @@
 # Issue 878: [with patch] graphs: Correct a doctest failing on some systems due to different output ordering.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/878
 
 Original creator: jason
 
@@ -15,7 +15,7 @@ Keywords: graphs
 diff -r 04e9996b0332 sage/graphs/graph.py
 --- a/sage/graphs/graph.py      Sat Oct 13 13:12:24 2007 -0500
 +++ b/sage/graphs/graph.py      Sat Oct 13 13:39:03 2007 -0500
-`@``@` -2114,11 +2114,13 `@``@` class GenericGraph(SageObject):
+@@ -2114,11 +2114,13 @@ class GenericGraph(SageObject):
              (2, 3, None),
              (2, 4, None),
              (3, 4, None)]

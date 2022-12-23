@@ -1,6 +1,6 @@
 # Issue 8706: sage-4.4.alpha0: numerical noise in chmm.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8706
 
 Original creator: was
 

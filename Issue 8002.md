@@ -1,6 +1,6 @@
 # Issue 8002: remove dead code from sage-ptest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8002
 
 Original creator: wjp
 

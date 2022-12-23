@@ -1,6 +1,6 @@
 # Issue 858: add support for numpy arrays with integer entries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/858
 
 Original creator: mhansen
 

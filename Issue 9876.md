@@ -1,6 +1,6 @@
 # Issue 9876: Add is_sturmian_factor, is_tangent methods for finite words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9877
 
 Original creator: tmonteil
 

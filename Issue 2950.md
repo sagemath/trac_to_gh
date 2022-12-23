@@ -1,6 +1,6 @@
 # Issue 2950: point3d misinterpret arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2950
 
 Original creator: novoselt
 

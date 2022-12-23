@@ -1,6 +1,6 @@
 # Issue 509: gdb mode for sage-ipython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/509
 
 Original creator: burcin
 

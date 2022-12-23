@@ -1,6 +1,6 @@
 # Issue 2236: plot randomizes the endpoints of the interval and causes wiggling in the graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2236
 
 Original creator: jason
 

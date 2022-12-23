@@ -1,6 +1,6 @@
 # Issue 7425: I.variety() doesn't check that I is zero-dimensional
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7425
 
 Original creator: AlexGhitza
 

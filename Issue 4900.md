@@ -1,6 +1,6 @@
 # Issue 4900: New BSGS point counting on elliptic curves over finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4900
 
 Original creator: cremona
 

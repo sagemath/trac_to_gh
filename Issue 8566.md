@@ -1,6 +1,6 @@
 # Issue 8566: Upate prereq to 0.8, removing 'm' option from 'tar'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8566
 
 Original creator: drkirkby
 

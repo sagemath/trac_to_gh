@@ -1,6 +1,6 @@
 # Issue 7323: tinkering with documentation for simplicial complexes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7323
 
 Original creator: jhpalmieri
 

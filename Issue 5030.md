@@ -1,6 +1,6 @@
 # Issue 5030: [with patch; needs review] get matrix/constructor.py up to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5030
 
 Original creator: was
 

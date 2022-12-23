@@ -1,6 +1,6 @@
 # Issue 9749: huge performance regression in computing with level one modular forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9749
 
 Original creator: was
 
@@ -16,7 +16,7 @@ I was working on the Ribet-Stein book, and a computation that is trivial in Magm
 ```
 sage: M = ModularForms(1,512)
 sage: time M.hecke_matrix(5)
-[This is the Trac macro *takes a very, very long time indeed.* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#takes a very, very long time indeed.-macro)
+[[takes a very, very long time indeed.]]
 ```
 
 This is very sad, since M has dimension only 43. Also, it is easy to get the answer directly --from start to finish in less than a second! -- as follows:

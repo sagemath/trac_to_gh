@@ -1,6 +1,6 @@
 # Issue 1409: multi_polynomial_ideal.py segfaults on 2.8.15
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1409
 
 Original creator: mhansen
 

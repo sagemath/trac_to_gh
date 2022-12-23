@@ -1,6 +1,6 @@
 # Issue 2916: [with patch; needs review] invalid coercion between non-prime finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2916
 
 Original creator: wjp
 

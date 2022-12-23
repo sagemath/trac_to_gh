@@ -1,6 +1,6 @@
 # Issue 2148: PolyBoRi inconsistency
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2148
 
 Original creator: malb
 
@@ -102,7 +102,7 @@ Comment by burcin created at 2008-02-27 09:06:03
 
 ```
 On Wed, 20 Feb 2008 10:40:09 +0100
-Alexander Dreyer <alexander.dreyer`@`itwm.fraunhofer.de> wrote:
+Alexander Dreyer <alexander.dreyer@itwm.fraunhofer.de> wrote:
 
 > PolyBoRi does not implement degrevlex (dp), but a variant, which we
 > called dp_asc. It is adp (not a dlex, as Martin states), but with

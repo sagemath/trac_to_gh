@@ -1,6 +1,6 @@
 # Issue 954: Make sure compiler is C99 capable
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/954
 
 Original creator: mabshoff
 

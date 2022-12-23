@@ -1,6 +1,6 @@
 # Issue 395: flatten command for nested lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/395
 
 Original creator: mhampton
 
@@ -256,7 +256,7 @@ def flatten(in_list, ltypes=(list, tuple)):
    Degenerate cases:
       sage: flatten([[],[]])
       []
-      sage: flatten([This is the Trac macro *[* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[-macro)])
+      sage: flatten([[[]]])
       []
    """
    index = 0

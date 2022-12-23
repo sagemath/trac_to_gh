@@ -1,6 +1,6 @@
 # Issue 1654: [easy -- no patch required] excise pysqlite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1654
 
 Original creator: was
 

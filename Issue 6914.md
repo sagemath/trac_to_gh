@@ -1,6 +1,6 @@
 # Issue 6914: update scipy to 0.7.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6914
 
 Original creator: fpatzelt
 

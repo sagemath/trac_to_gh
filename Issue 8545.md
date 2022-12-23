@@ -1,6 +1,6 @@
 # Issue 8545: \opi -> \overline\pi in coxter_groups.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8545
 
 Original creator: bump
 

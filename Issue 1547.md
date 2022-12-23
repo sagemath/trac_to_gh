@@ -1,6 +1,6 @@
 # Issue 1547: Add pre-tuned settings for ATLAS for certain CPUs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1547
 
 Original creator: mabshoff
 

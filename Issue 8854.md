@@ -1,6 +1,6 @@
 # Issue 8854: sage -upgrade segfaults on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8854
 
 Original creator: mhansen
 

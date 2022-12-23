@@ -1,6 +1,6 @@
 # Issue 8873: Inconsistency with CombinatorialFreeModule: Vector Space vs. Module
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8873
 
 Original creator: jbandlow
 

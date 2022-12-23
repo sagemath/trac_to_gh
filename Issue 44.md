@@ -1,6 +1,6 @@
 # Issue 44: customize preparsing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/44
 
 Original creator: was
 

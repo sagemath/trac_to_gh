@@ -1,6 +1,6 @@
 # Issue 3892: PowerSeries random element over GF(q) (Givaro) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3892
 
 Original creator: malb
 
@@ -44,7 +44,7 @@ diff -r 717c10d9cd4a sage/rings/finite_field_givaro.pyx
 -0700
 +++ b/sage/rings/finite_field_givaro.pyx        Mon Aug 18 16:10:50 2008
 +0200
-`@``@` -358,7 +358,7 `@``@` cdef class FiniteField_givaro(FiniteFiel
+@@ -358,7 +358,7 @@ cdef class FiniteField_givaro(FiniteFiel
          else:
              return True
 

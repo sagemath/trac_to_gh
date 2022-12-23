@@ -1,6 +1,6 @@
 # Issue 8751: conversion between non-prime finite fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8751
 
 Original creator: zimmerma
 

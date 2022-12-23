@@ -1,6 +1,6 @@
 # Issue 2049: symbolic matrix exp (easy to implement)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2049
 
 Original creator: was
 

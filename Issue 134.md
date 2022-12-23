@@ -1,6 +1,6 @@
 # Issue 134: GMP patches: AMD Opteron 64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/134
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8677: race condition creating dirs during Sage build on RH 5.4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8677
 
 Original creator: GeorgSWeber
 

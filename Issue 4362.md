@@ -1,6 +1,6 @@
 # Issue 4362: Bug fixes in tableaux latex output [with patches at #4355. Needs review.]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4362
 
 Original creator: bump
 
@@ -21,7 +21,7 @@ See http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3fff
 latex(Tableau([[1,2,3],[2,2],[3,4],[4]])) 
 latex(Tableau([[1,1,2,3,4],[2,2,2],[3]])) 
 latex(Tableau([[1],[2],[3],[4]])) 
-latex(Tableau([This is the Trac macro *1,2,3,4* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,3,4-macro))) 
+latex(Tableau([[1,2,3,4]])) 
 latex(Tableau([[1,2,3,4],[5,6,7,8]])) 
 latex(Tableau([[1,2,3,4],[5,6,7,8],[9]])) 
 latex(Tableau([[1,2,],[5,6],[7,9]])) 

@@ -1,6 +1,6 @@
 # Issue 9454: Add support for account tokens
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9454
 
 Original creator: wjp
 

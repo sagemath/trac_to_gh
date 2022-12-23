@@ -1,6 +1,6 @@
 # Issue 3151: notebook -- move the jsmath logo from bottom left to bottom right
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3151
 
 Original creator: was
 

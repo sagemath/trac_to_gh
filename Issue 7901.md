@@ -1,6 +1,6 @@
 # Issue 7901: Change $MKDIR to 'mkdir' in pari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7901
 
 Original creator: drkirkby
 

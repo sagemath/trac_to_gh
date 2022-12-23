@@ -1,6 +1,6 @@
 # Issue 1401: deprecate A[n] for n a matrix (easy to implement usability improvement)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1401
 
 Original creator: was
 

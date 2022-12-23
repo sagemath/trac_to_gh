@@ -1,6 +1,6 @@
 # Issue 2780: factorisation over number field has wrong unit part
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2780
 
 Original creator: dmharvey
 

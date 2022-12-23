@@ -1,6 +1,6 @@
 # Issue 5752: Bring doctests of sage/games/sudoku.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5752
 
 Original creator: rbeezer
 

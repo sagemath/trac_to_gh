@@ -1,6 +1,6 @@
 # Issue 8196: bad documentation output in tty mode
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8196
 
 Original creator: zimmerma
 

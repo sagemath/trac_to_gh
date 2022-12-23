@@ -1,6 +1,6 @@
 # Issue 1947: Implement homomorphisms between vector spaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1947
 
 Original creator: craigcitro
 

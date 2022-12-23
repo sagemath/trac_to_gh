@@ -1,6 +1,6 @@
 # Issue 5530: add absolute_diameter and relative_diameter to CIF (ComplexIntervalField)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5530
 
 Original creator: ncalexan
 

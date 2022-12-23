@@ -1,6 +1,6 @@
 # Issue 4694: ?? for decorated functions shows the source of the decorator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4694
 
 Original creator: whuss
 
@@ -18,7 +18,7 @@ Namespace:      Interactive
 File:           /.../site-packages/sage/plot/misc.py
 Definition:     plot(*args, **kwds)
 Source:
-        `@`wraps(func)
+        @wraps(func)
         def wrapper(*args, **kwds):
             for old_name, new_name in self.renames.items():
                 if kwds.has_key(old_name) and not kwds.has_key(new_name):

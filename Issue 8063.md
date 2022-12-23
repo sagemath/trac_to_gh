@@ -1,6 +1,6 @@
 # Issue 8063: New gsl-1.10.p2.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8063
 
 Original creator: jsp
 

@@ -1,6 +1,6 @@
 # Issue 4631: possible memory leak in matrix code?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4631
 
 Original creator: craigcitro
 
@@ -63,7 +63,7 @@ Comment by mabshoff created at 2008-12-10 06:26:46
 This may be relevant here. Either way it warrants consideration to call %reset at the end of Sage, but that would be another ticket.
 
 ```
-On Mon, Dec 8, 2008 at 19:15, frank wang <f.yw`@`hotmail.com> wrote:
+On Mon, Dec 8, 2008 at 19:15, frank wang <f.yw@hotmail.com> wrote:
 > > Hi,
 > >
 > > I have a program with some variables consume a lot of memory. The first time
@@ -117,7 +117,7 @@ Deleting <__main__.A object at 0xf3e930>
 -- Robert Kern "I have come to believe that the whole world is an enigma, 
 a harmless enigma that is made terrible by our own mad attempt to interpret 
 it as though it had an underlying truth." -- Umberto Eco _______________________________________________ 
-Numpy-discussion mailing list Numpy-discussion`@`scipy.org 
+Numpy-discussion mailing list Numpy-discussion@scipy.org 
 http://projects.scipy.org/mailman/listinfo/numpy-discussion 
 ```
 

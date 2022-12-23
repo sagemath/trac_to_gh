@@ -1,6 +1,6 @@
 # Issue 5557: implement ridiculously fast 4x4 determinant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5557
 
 Original creator: boothby
 

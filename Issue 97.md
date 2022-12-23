@@ -1,6 +1,6 @@
 # Issue 97: Limitation of number of variables when using the GP interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/97
 
 Original creator: was
 

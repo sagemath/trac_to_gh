@@ -1,6 +1,6 @@
 # Issue 5254: Mac app bundle: check for relocation at startup since the bundle version does not trigger the move check
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5254
 
 Original creator: mabshoff
 

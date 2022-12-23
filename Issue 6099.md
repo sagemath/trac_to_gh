@@ -1,6 +1,6 @@
 # Issue 6099: morphisms of simplicial complexes and the associated chain complex morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6099
 
 Original creator: bantieau
 
@@ -131,7 +131,7 @@ Also, I've changed the `__mul__` method for maps of chain complexes so that when
 Finally, the only major problem: my patch fixes an issue with converting maps of simplicial complexes to maps of chain complexes:
 
 ```
-sage: X = SimplicialComplex(1, [This is the Trac macro *0,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0,1-macro)); X
+sage: X = SimplicialComplex(1, [[0,1]]); X
 Simplicial complex with vertex set (0, 1) and facets {(0, 1)}
 sage: H = Hom(X, X)
 sage: f = H({0:1, 1:0})

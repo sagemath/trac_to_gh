@@ -1,6 +1,6 @@
 # Issue 6682: Support non-ASCII characters in Sage sources
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6682
 
 Original creator: robertwb
 

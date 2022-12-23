@@ -1,6 +1,6 @@
 # Issue 3269: Improved documentation to combinat/dyck_word.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3269
 
 Original creator: jbandlow
 

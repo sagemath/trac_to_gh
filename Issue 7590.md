@@ -1,6 +1,6 @@
 # Issue 7590: Create Bipartite Graph according to 2 degree sequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7590
 
 Original creator: ncohen
 

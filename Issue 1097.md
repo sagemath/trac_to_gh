@@ -1,6 +1,6 @@
 # Issue 1097: p-adic polynomials don't have discriminant
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1097
 
 Original creator: dmharvey
 

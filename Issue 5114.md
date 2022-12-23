@@ -1,6 +1,6 @@
 # Issue 5114: something wrong in the initializer for elements of QuaternionAlgebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5114
 
 Original creator: cwitty
 

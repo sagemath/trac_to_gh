@@ -1,6 +1,6 @@
 # Issue 2376: [with patch, needs review] Sage 2.10.3.rc1: various doctest failure in abvar
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2376
 
 Original creator: mabshoff
 

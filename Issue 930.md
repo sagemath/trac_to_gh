@@ -1,6 +1,6 @@
 # Issue 930: [with patch] MPolynomialIdeal.variety
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/930
 
 Original creator: malb
 

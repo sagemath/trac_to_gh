@@ -1,6 +1,6 @@
 # Issue 1595: do something about the pari overflow test
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1595
 
 Original creator: was
 
@@ -20,7 +20,7 @@ sage -t  devel/sage-main/sage/libs/pari/gen.pyx             python(85565) malloc
 This would disturb people less:
 
 ```
-[This is the Trac macro *The following doctest contains an intentional memory error.* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#The following doctest contains an intentional memory error.-macro)
+[[The following doctest contains an intentional memory error.]]
 sage -t  devel/sage-main/sage/libs/pari/gen.pyx             python(85565) malloc: *** mmap(size=4096000000) failed (error code=12)
 *** error: can't allocate region
 *** set a breakpoint in malloc_error_break to debug

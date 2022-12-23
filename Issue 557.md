@@ -1,6 +1,6 @@
 # Issue 557: missing dictionary deallocation in Cython's init code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/557
 
 Original creator: mabshoff
 

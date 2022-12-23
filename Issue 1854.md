@@ -1,6 +1,6 @@
 # Issue 1854: add more 3d plots to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1854
 
 Original creator: was
 

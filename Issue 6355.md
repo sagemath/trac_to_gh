@@ -1,6 +1,6 @@
 # Issue 6355: [with SPKG, needs review] Cliquer to compute maximum cliques
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6355
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 2341: vector subs over symbolic does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2341
 
 Original creator: was
 

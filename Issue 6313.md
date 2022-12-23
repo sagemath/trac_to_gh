@@ -1,6 +1,6 @@
 # Issue 6313: optional doctest failure -- caused by maxima --> pynac switch ?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6313
 
 Original creator: was
 

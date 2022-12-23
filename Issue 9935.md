@@ -1,6 +1,6 @@
 # Issue 9935: add sage.symbolic.function_factory to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9936
 
 Original creator: jason
 

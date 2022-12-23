@@ -1,6 +1,6 @@
 # Issue 107: can't multiply matrix by vector over an arbitrary ring?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/107
 
 Original creator: dmharvey
 

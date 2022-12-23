@@ -1,6 +1,6 @@
 # Issue 5274: Adapt matrices coherency check to (still future) Nicolas check framework.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5274
 
 Original creator: hivert
 

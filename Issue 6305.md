@@ -1,6 +1,6 @@
 # Issue 6305: preparser issue with recurssive loading of .sage files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6305
 
 Original creator: was
 

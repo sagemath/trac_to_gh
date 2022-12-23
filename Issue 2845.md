@@ -1,6 +1,6 @@
 # Issue 2845: [with patch, needs review] PolyBoRi assertion errror
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2845
 
 Original creator: malb
 

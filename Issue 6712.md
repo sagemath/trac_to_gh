@@ -1,6 +1,6 @@
 # Issue 6712: spell-check all modules under sage/interfaces
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6712
 
 Original creator: mvngu
 

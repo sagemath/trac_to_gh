@@ -1,6 +1,6 @@
 # Issue 8470: new documentation categories "FAQ" and "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8470
 
 Original creator: mvngu
 

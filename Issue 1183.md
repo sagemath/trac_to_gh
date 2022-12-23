@@ -1,6 +1,6 @@
 # Issue 1183: Residue fields are broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1183
 
 Original creator: roed
 

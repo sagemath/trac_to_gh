@@ -1,6 +1,6 @@
 # Issue 8618: Non standard alphabet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8618
 
 Original creator: vdelecroix
 

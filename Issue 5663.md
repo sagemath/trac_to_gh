@@ -1,6 +1,6 @@
 # Issue 5663: Infinite loop in multiplication of 0 (parent Symbolic Ring) and 1.0000000000000000 (parent Real Field with 60 bits of precision)!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5663
 
 Original creator: ncalexan
 

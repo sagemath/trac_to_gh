@@ -1,6 +1,6 @@
 # Issue 1860: arrow -- 2d plot truncates badly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1860
 
 Original creator: was
 

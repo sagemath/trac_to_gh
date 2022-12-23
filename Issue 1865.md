@@ -1,6 +1,6 @@
 # Issue 1865: notebook -- after restart output of first evaluation is not displayed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1865
 
 Original creator: was
 

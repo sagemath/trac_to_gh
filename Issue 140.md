@@ -1,6 +1,6 @@
 # Issue 140: sage -br : should not run if sage -b failed with an error!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/140
 
 Original creator: was
 

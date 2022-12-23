@@ -1,6 +1,6 @@
 # Issue 6832: [with patch, needs review] bug in inverse_mod for number field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6832
 
 Original creator: mtaranes
 

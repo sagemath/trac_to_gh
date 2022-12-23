@@ -1,6 +1,6 @@
 # Issue 8794: clean up documentation of logic/logicparser.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8794
 
 Original creator: mvngu
 

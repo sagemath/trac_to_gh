@@ -1,6 +1,6 @@
 # Issue 6631: speed up is_lyndon method for words
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6631
 
 Original creator: saliola
 

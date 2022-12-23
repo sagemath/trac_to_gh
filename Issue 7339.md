@@ -1,6 +1,6 @@
 # Issue 7339: Fix notebook interaction and cell focus bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7339
 
 Original creator: mpatel
 

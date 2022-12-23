@@ -1,6 +1,6 @@
 # Issue 7668: Play waveforms directly, like in Mathematica
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7668
 
 Original creator: kcrisman
 

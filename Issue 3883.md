@@ -1,6 +1,6 @@
 # Issue 3883: Streamline elliptic curve division (torsion) polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3883
 
 Original creator: cremona
 

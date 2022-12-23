@@ -1,6 +1,6 @@
 # Issue 1261: parallel "sage -br"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1261
 
 Original creator: was
 
@@ -303,7 +303,7 @@ Comment by mabshoff created at 2008-04-06 06:02:52
 diff -r 767784c4ad52 -r 4f98891c4496 setup.py
 --- a/setup.py  Sat Apr 05 22:40:57 2008 -0500
 +++ b/setup.py  Sat Apr 05 22:55:32 2008 -0700
-`@``@` -1391,6 +1391,7 `@``@` code = setup(name        = 'sage',
+@@ -1391,6 +1391,7 @@ code = setup(name        = 'sage',
                       'sage.schemes.hyperelliptic_curves',
 
                       'sage.server',

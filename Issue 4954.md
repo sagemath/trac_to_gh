@@ -1,6 +1,6 @@
 # Issue 4954: Words_over_Alphabet should check the type of input alphabet
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4954
 
 Original creator: slabbe
 

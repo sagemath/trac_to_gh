@@ -1,6 +1,6 @@
 # Issue 183: Regenerating files that hardcode the install PATH -- hangs forever during the install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/183
 
 Original creator: was
 
@@ -10,10 +10,10 @@ Assignee: was
 
 
 ```
-On Fri, 15 Dec 2006 17:03:48 -0800, Luis Finotti <luis.finotti`@`gmail.com> wrote:
+On Fri, 15 Dec 2006 17:03:48 -0800, Luis Finotti <luis.finotti@gmail.com> wrote:
 
 >
-> On 12/15/06, Kate Minola <kate01123`@`gmail.com> wrote:
+> On 12/15/06, Kate Minola <kate01123@gmail.com> wrote:
 >>
 >> When I try to build sage-1.5.0.2 on my
 >> x86_64-Linux box, it gets to

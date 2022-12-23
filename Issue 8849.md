@@ -1,6 +1,6 @@
 # Issue 8849: the palp interface throws a (harmless?) OSError on Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8849
 
 Original creator: mhansen
 

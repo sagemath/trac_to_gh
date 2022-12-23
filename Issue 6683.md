@@ -1,6 +1,6 @@
 # Issue 6683: notebook worksheet rating_info link leads to error page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6683
 
 Original creator: khorton
 

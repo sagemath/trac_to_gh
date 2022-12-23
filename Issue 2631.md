@@ -1,6 +1,6 @@
 # Issue 2631: Distinguishing between (un)evaluated  cells
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2631
 
 Original creator: dunfield
 

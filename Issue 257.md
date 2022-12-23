@@ -1,6 +1,6 @@
 # Issue 257: restart needed after segfault
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/257
 
 Original creator: boothby
 

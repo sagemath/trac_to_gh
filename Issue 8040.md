@@ -1,6 +1,6 @@
 # Issue 8040: given that m,n are optional inputs to CRT(a,b,m,n), given a,b mod m,n should work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8040
 
 Original creator: was
 

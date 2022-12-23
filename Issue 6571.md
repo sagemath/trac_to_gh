@@ -1,6 +1,6 @@
 # Issue 6571: Improve iterator of word morphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6571
 
 Original creator: slabbe
 

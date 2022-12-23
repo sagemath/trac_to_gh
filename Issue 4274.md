@@ -1,6 +1,6 @@
 # Issue 4274: assertion failure in rank for elliptic curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4274
 
 Original creator: zimmerma
 

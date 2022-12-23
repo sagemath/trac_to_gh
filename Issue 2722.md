@@ -1,6 +1,6 @@
 # Issue 2722: [with patch; needs trivial review] interact -- a doctest problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2722
 
 Original creator: was
 
@@ -59,7 +59,7 @@ This worked for me on Fedora 7 32 bits.
 
 
 ```
-[jaap`@`paix sage-2.11.alpha2]$ ./sage -t  devel/sage-main/sage/server/notebook/interact.py
+[jaap@paix sage-2.11.alpha2]$ ./sage -t  devel/sage-main/sage/server/notebook/interact.py
 sage -t  devel/sage-main/sage/server/notebook/interact.py   
          [3.6 s]
  

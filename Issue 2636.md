@@ -1,6 +1,6 @@
 # Issue 2636: notebook -- changing a cell without evaluate should put the red line back to the left
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2636
 
 Original creator: was
 

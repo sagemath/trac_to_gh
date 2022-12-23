@@ -1,6 +1,6 @@
 # Issue 8982: Fix jacobian for ode_solver example.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8982
 
 Original creator: lfousse
 

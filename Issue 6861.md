@@ -1,6 +1,6 @@
 # Issue 6861: allow users to test Sage script using system-wide Sage installation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6861
 
 Original creator: mvngu
 
@@ -11,9 +11,9 @@ Assignee: tbd
 At least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:
 
 ```
-[mvngu`@`mod mvngu]$ cat demo.sage 
+[mvngu@mod mvngu]$ cat demo.sage 
 print 2
-[mvngu`@`mod mvngu]$ sage -t demo.sage 
+[mvngu@mod mvngu]$ sage -t demo.sage 
 Traceback (most recent call last):
   File "/usr/local/sage/local/bin/sage-test", line 49, in <module>
     os.makedirs(TMP)

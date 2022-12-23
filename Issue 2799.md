@@ -1,6 +1,6 @@
 # Issue 2799: matrix's __getitem__ doesn't respect slice object's step attribute
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2799
 
 Original creator: dfdeshom
 

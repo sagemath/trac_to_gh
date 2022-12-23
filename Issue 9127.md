@@ -1,6 +1,6 @@
 # Issue 9127: BSD.py doctest failure due to timeout of Heegner index computation.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9127
 
 Original creator: drkirkby
 
@@ -147,7 +147,7 @@ The patch results in the test passing on the Sun Blade 1000 where the test origi
 
 
 ```
-drkirkby`@`redstart:~/sage-4.4.3.alpha3$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py
+drkirkby@redstart:~/sage-4.4.3.alpha3$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py
 sage -t -long "devel/sage/sage/schemes/elliptic_curves/BSD.py"
          [135.0 s]
  

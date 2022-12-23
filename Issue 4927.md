@@ -1,6 +1,6 @@
 # Issue 4927: convert sage.server.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4927
 
 Original creator: mhansen
 

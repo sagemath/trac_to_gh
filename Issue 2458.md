@@ -1,6 +1,6 @@
 # Issue 2458: bug in linbox's spkg-install: ${SAGE_LCOAL}
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2458
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6667: bug in newton_polygon() for p-adic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6667
 
 Original creator: AlexGhitza
 

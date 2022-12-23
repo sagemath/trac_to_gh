@@ -1,6 +1,6 @@
 # Issue 2016: crap -- there is a precompiled object file in the SAGE_ROOT/examples directory
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2016
 
 Original creator: was
 

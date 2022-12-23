@@ -1,6 +1,6 @@
 # Issue 5000: Solaris 10/x86: fix numerical noise in schemes/elliptic_curves/ell_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5000
 
 Original creator: mabshoff
 

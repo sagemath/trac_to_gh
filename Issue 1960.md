@@ -1,6 +1,6 @@
 # Issue 1960: bug when reducing Gröbner basis
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1960
 
 Original creator: malb
 

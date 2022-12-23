@@ -1,6 +1,6 @@
 # Issue 451: flintqs Solaris build fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/451
 
 Original creator: mabshoff
 

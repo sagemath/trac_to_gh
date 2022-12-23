@@ -1,6 +1,6 @@
 # Issue 2366: add docstring to sloane_find
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2366
 
 Original creator: TimothyClemans
 

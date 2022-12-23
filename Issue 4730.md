@@ -1,6 +1,6 @@
 # Issue 4730: magma/sage -- conversion of finite field elements back and forth
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4730
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2004: [with patch, needs review] padic_height_via_multiply
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2004
 
 Original creator: dmharvey
 

@@ -1,6 +1,6 @@
 # Issue 8104: developer's guide for making spkgs should specify that patches need to be version controlled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8104
 
 Original creator: ddrake
 

@@ -1,6 +1,6 @@
 # Issue 1222: cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1222
 
 Original creator: mabshoff
 

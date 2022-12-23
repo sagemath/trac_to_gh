@@ -1,6 +1,6 @@
 # Issue 7202: On OS X ppc, to_poly_solve evidently doesn't exist / work, which breaks some symbolic doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7202
 
 Original creator: was
 

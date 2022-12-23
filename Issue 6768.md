@@ -1,6 +1,6 @@
 # Issue 6768: [with patch, needs review] Basis of a Hecke algebra
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6768
 
 Original creator: wakep
 

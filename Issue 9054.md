@@ -1,6 +1,6 @@
 # Issue 9054: create a class for basic function_field arithmetic for Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9054
 
 Original creator: was
 
@@ -243,7 +243,7 @@ sage -t  "devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py" # 1 failur
 
 sage -t  "devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py" # 1 failure
 
-}}}They are all related since their error messages all end in:`      File "/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py", line 4700, in _echelonized_basis        d = self._denominator(basis)      File "/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py", line 4810, in _denominator        d = d.lcm(x.denominator())    AttributeError: 'int' object has no attribute 'lcm'`It would be nice if someone who has a better understanding of sage to fix this final bug, since then we would have no doctests failing anymore for this patch.
+}}}They are all related since their error messages all end in:`      File "/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py", line 4700, in _echelonized_basis        d = self._denominator(basis)      File "/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py", line 4810, in _denominator        d = d.lcm(x.denominator())    !AttributeError: 'int' object has no attribute 'lcm'`It would be nice if someone who has a better understanding of sage to fix this final bug, since then we would have no doctests failing anymore for this patch.
 
 
 ---
@@ -1130,7 +1130,7 @@ Comment by mderickx created at 2011-11-05 18:01:25
 On sage.math using the just released sage-4.7.2 with the following 21! patches applied
 
 ```
-mderickx`@`sage:/scratch/mderickx/sage/devel/sage$ hg qser | nl
+mderickx@sage:/scratch/mderickx/sage/devel/sage$ hg qser | nl
      1	9138_flat.patch
      2	trac_9054-all-parts.patch
      3	trac_9054_polynomial_base_field.patch

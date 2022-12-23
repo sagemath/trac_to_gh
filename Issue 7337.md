@@ -1,6 +1,6 @@
 # Issue 7337: PolyBoRi fails to build on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7337
 
 Original creator: mhansen
 

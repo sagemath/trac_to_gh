@@ -1,6 +1,6 @@
 # Issue 6918: notebook -- try harder to create worksheet process??
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6918
 
 Original creator: was
 

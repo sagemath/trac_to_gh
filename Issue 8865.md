@@ -1,6 +1,6 @@
 # Issue 8865: FractionFieldElement.__call__ doesn't handle keyword arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8865
 
 Original creator: mguaypaq
 

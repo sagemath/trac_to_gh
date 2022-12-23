@@ -1,6 +1,6 @@
 # Issue 1808: [with very short patch] two simple LaTeX fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1808
 
 Original creator: malb
 

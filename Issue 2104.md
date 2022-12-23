@@ -1,6 +1,6 @@
 # Issue 2104: missing dependency: lcalc on mpfr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2104
 
 Original creator: tabbott
 

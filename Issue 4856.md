@@ -1,6 +1,6 @@
 # Issue 4856: [with patch; needs review] make qasm an optional spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4856
 
 Original creator: was
 

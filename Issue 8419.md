@@ -1,6 +1,6 @@
 # Issue 8419: cddlib fails to build on OpenSolaris fully.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8419
 
 Original creator: drkirkby
 

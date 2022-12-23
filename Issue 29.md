@@ -1,6 +1,6 @@
 # Issue 29: implement len for elliptic curve over finite field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/29
 
 Original creator: was
 

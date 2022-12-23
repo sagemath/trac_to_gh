@@ -1,6 +1,6 @@
 # Issue 4565: sage-3.2.rc2 -- fix all tex failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4565
 
 Original creator: was
 

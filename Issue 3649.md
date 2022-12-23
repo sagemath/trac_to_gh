@@ -1,6 +1,6 @@
 # Issue 3649: Add option to disable the Notebook registration email
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3649
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 3012: animate.py: convert not being found is an annoying debug message - fix that
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3012
 
 Original creator: mabshoff
 

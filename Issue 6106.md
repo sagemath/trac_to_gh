@@ -1,6 +1,6 @@
 # Issue 6106: [with patch, need review] Addition Indefinite Binary Quadratic Forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6106
 
 Original creator: aliashamieh
 

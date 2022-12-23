@@ -1,6 +1,6 @@
 # Issue 7154: options for point/arrow thickness are inconsistently named
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7154
 
 Original creator: vbraun
 

@@ -1,6 +1,6 @@
 # Issue 4578: optimize modular symbols decomposition algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4578
 
 Original creator: was
 

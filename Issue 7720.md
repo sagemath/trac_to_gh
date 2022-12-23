@@ -1,6 +1,6 @@
 # Issue 7720: Digraph.reverse() should be rewritten more efficiently ( not hard )
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7720
 
 Original creator: ncohen
 

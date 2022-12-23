@@ -1,6 +1,6 @@
 # Issue 2828: get doctest coverage for combinat/ to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2828
 
 Original creator: mhansen
 

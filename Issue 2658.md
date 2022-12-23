@@ -1,6 +1,6 @@
 # Issue 2658: Matrix from a vector doesn't preserve the vector's parent ring automatically
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2658
 
 Original creator: dfdeshom
 

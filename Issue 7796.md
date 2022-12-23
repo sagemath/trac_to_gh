@@ -1,6 +1,6 @@
 # Issue 7796: prevent Sphinx from rebuilding full document
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7796
 
 Original creator: mvngu
 

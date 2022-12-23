@@ -1,6 +1,6 @@
 # Issue 4036: [with patch, needs review] minor improvements to the Axiom interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4036
 
 Original creator: mhansen
 
@@ -209,7 +209,7 @@ Comment by was created at 2008-11-27 17:17:13
 This needs to be rebased against sage-3.2.1.*:
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4036/trac_4036.patch')

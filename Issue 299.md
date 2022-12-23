@@ -1,6 +1,6 @@
 # Issue 299: make check and its analogues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/299
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2697: stupid bug in integrate (easy to fix)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2697
 
 Original creator: was
 

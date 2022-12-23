@@ -1,6 +1,6 @@
 # Issue 7395: The enumerated set of non negative integers !
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7395
 
 Original creator: hivert
 

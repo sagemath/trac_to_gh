@@ -1,6 +1,6 @@
 # Issue 9243: sage-doctest should use powers of 2 for return codes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9243
 
 Original creator: ddrake
 

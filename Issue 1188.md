@@ -1,6 +1,6 @@
 # Issue 1188: unexpected results after LLL?
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1188
 
 Original creator: malb
 

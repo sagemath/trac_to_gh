@@ -1,6 +1,6 @@
 # Issue 3568: optimize sage startup -- don't import twisted.web2 until needed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3568
 
 Original creator: was
 

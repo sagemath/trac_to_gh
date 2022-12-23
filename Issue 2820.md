@@ -1,6 +1,6 @@
 # Issue 2820: notebook -- turn off the jsmath warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2820
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9400: modify the NumberField constructor to pass in optional integer B such that all the internal pari routines will replace the discriminant by its gcd with B, making some things massively faster.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9400
 
 Original creator: was
 

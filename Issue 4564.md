@@ -1,6 +1,6 @@
 # Issue 4564: [with patch, needs review] implement long long -> mpz_t
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4564
 
 Original creator: robertwb
 

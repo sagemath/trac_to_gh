@@ -1,6 +1,6 @@
 # Issue 8872: neighbor-finding for attractor of IFS from a multidimensional radix representation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8872
 
 Original creator: ecurry
 

@@ -1,6 +1,6 @@
 # Issue 2936: notebook -- write a completely new use/data/security model backend for the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2936
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 2457: ideal.py doctest failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2457
 
 Original creator: gfurnish
 

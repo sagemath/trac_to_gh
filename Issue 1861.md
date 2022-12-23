@@ -1,6 +1,6 @@
 # Issue 1861: better document sage.el
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1861
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6165: new maxima spkg that enhances eigenvector results so they can be useable from symbolics
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6165
 
 Original creator: jason
 
@@ -30,7 +30,7 @@ Comment by was created at 2009-05-31 05:03:51
 
 
 ```
-21:59 < wstein> wstein`@`sage:~/tmp/maxima-5.16.3.p3$ hg status
+21:59 < wstein> wstein@sage:~/tmp/maxima-5.16.3.p3$ hg status
 21:59 < wstein> ? patches/eigen.mac
 21:59 < wstein> yep, that pynac segfault looks *very* serious.
 21:59 < wstein> ouch.
@@ -93,7 +93,7 @@ The function bug_report() provides bug reporting information.
                                 [            ]
                                 [ 0  0  0  2 ]
 (%i2) [vals, vecs] : eigenvectors (M1);
-(%o2) [[[0, 2], [2, 2]], [This is the Trac macro *[1, 0, 0, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#[1, 0, 0, 0-macro), [[0, 0, 1, 0], [0, 0, 0, 1]]]]
+(%o2) [[[0, 2], [2, 2]], [[[1, 0, 0, 0]], [[0, 0, 1, 0], [0, 0, 0, 1]]]]
 (%i3) for i thru length (vals) do disp (val[i] = vals[i][1], mult[i] =
 vals[i][2], vec[i] = vecs[i]);
                                    val  = 0
@@ -102,7 +102,7 @@ vals[i][2], vec[i] = vecs[i]);
                                    mult  = 2
                                        1
 
-                             vec  = [This is the Trac macro *1, 0, 0, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 0, 0, 0-macro)
+                             vec  = [[1, 0, 0, 0]]
                                 1
 
                                    val  = 2

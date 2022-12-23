@@ -1,6 +1,6 @@
 # Issue 7536: Toroidal Grid in graph_generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7536
 
 Original creator: ncohen
 

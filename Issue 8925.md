@@ -1,6 +1,6 @@
 # Issue 8925: __call__ for categories sets / enumeratedsets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8925
 
 Original creator: hivert
 
@@ -95,7 +95,7 @@ I reuploaded a new patche with the following diff folded:
 diff --git a/sage/categories/enumerated_sets.py b/sage/categories/enumerated_sets.py
 --- a/sage/categories/enumerated_sets.py
 +++ b/sage/categories/enumerated_sets.py
-`@``@` -103,7 +103,7 `@``@` class EnumeratedSets(Category):
+@@ -103,7 +103,7 @@ class EnumeratedSets(Category):
              sage: EnumeratedSets()(Primes())
              Set of all prime numbers: 2, 3, 5, 7, ...
  
@@ -132,7 +132,7 @@ Actually there where another occurrence in another file
 diff --git a/trac_8925-call_set_enumset-fh.patch b/trac_8925-call_set_enumset-fh.patch
 --- a/trac_8925-call_set_enumset-fh.patch
 +++ b/trac_8925-call_set_enumset-fh.patch
-`@``@` -83,7 +83,7 `@``@` diff --git a/sage/categories/finite_enum
+@@ -83,7 +83,7 @@ diff --git a/sage/categories/finite_enum
  +            sage: FiniteEnumeratedSets()(Partitions(3)) # todo: not implemented: Partitions
  +            Partitions of 3
  +

@@ -1,6 +1,6 @@
 # Issue 3352: slight inconsistency in the dsage documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3352
 
 Original creator: ljpk
 

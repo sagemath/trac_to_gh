@@ -1,6 +1,6 @@
 # Issue 8713: Prepare the ground for moving Parent._an_element_ to Sets().ParentMethods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8713
 
 Original creator: nthiery
 

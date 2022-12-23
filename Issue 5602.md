@@ -1,6 +1,6 @@
 # Issue 5602: make .lighter() and .darker() methods for Sage Color objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5602
 
 Original creator: jason
 
@@ -66,7 +66,7 @@ Close as fixed:
 
 
 ```sh
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: r = sage.plot.colors.red

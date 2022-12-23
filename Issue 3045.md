@@ -1,6 +1,6 @@
 # Issue 3045: K.gen() where K = GF(p) returns 1, not a primitive element
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3045
 
 Original creator: jxxcarlson
 

@@ -1,6 +1,6 @@
 # Issue 457: gp interface: TypeError: an integer is required
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/457
 
 Original creator: mhansen
 

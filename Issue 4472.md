@@ -1,6 +1,6 @@
 # Issue 4472: Sage 3.2.a3: more numerical noise in sage/calculus/wester.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4472
 
 Original creator: mabshoff
 

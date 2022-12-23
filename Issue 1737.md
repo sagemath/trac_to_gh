@@ -1,6 +1,6 @@
 # Issue 1737: ctl-c doesn't exit job in parametric_plot3d
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1737
 
 Original creator: wdj
 

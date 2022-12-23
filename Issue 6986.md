@@ -1,6 +1,6 @@
 # Issue 6986: [with spkg, needs review] Make PIL standard
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6986
 
 Original creator: jason
 

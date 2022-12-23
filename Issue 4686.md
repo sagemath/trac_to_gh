@@ -1,6 +1,6 @@
 # Issue 4686: Documentation for eta products
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4686
 
 Original creator: davidloeffler
 

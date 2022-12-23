@@ -1,6 +1,6 @@
 # Issue 389: bug in mpfi C library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/389
 
 Original creator: was
 
@@ -40,7 +40,7 @@ happens.
 
 neal
 
-On Jun 19, 11:16 am, neal <nho...`@`docuweb.ca> wrote:
+On Jun 19, 11:16 am, neal <nho...@docuweb.ca> wrote:
 > I wonder if there is something wrong with the interval cosine
 > calculation?  cos seems to loop forever on [-1 .. +1].  Try this:
 ```

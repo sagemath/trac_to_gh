@@ -1,6 +1,6 @@
 # Issue 9292: Parabolic and reflection subgroups of Coxeter groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9292
 
 Original creator: nthiery
 

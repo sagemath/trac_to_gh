@@ -1,6 +1,6 @@
 # Issue 2771: [with patch, needs review] PolyBoRi doctest coverage at 54%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2771
 
 Original creator: malb
 
@@ -56,7 +56,7 @@ It won't. There is `sage.rings.polynomial.pbori` and there is `polybori`. `polyb
 
 
 ```
-malb`@`XXX:~$ sage
+malb@XXX:~$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading SAGE library. Current Mercurial branch is: polybori

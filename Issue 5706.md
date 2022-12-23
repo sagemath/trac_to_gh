@@ -1,6 +1,6 @@
 # Issue 5706: implicit_plot totally sucks when input an equation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5706
 
 Original creator: was
 

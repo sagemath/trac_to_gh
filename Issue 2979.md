@@ -1,6 +1,6 @@
 # Issue 2979: clisp -- try to build using -O2; if that fails try again but using -O0.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2979
 
 Original creator: was
 

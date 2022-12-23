@@ -1,6 +1,6 @@
 # Issue 8675: Remove AmbientSpace._constructor and fix consequences
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8675
 
 Original creator: novoselt
 

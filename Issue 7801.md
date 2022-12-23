@@ -1,6 +1,6 @@
 # Issue 7801: save_notebook is called twice on notebook shutdown
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7801
 
 Original creator: mpatel
 

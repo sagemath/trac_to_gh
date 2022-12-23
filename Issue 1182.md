@@ -1,6 +1,6 @@
 # Issue 1182: update freetype.spkg to 2.3.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1182
 
 Original creator: mabshoff
 

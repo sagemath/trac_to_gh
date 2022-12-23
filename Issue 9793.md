@@ -1,6 +1,6 @@
 # Issue 9793: Make easy wrapper for symbolic lagrange interpolation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9794
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 7209: Make `sage -coverage` aware of TestSuite
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7209
 
 Original creator: nthiery
 

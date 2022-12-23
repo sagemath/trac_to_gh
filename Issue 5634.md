@@ -1,6 +1,6 @@
 # Issue 5634: installing optional R packages is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5634
 
 Original creator: was
 

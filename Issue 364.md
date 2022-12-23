@@ -1,6 +1,6 @@
 # Issue 364: Unnecessary exception when creating fraction field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/364
 
 Original creator: justin
 

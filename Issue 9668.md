@@ -1,6 +1,6 @@
 # Issue 9668: Fix hardcoding of paths in R binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9668
 
 Original creator: kcrisman
 
@@ -203,7 +203,7 @@ This problem prevents Sage from being relocatable on Solaris, or at least on the
 $ ./sage -R
 ld.so.1: R: fatal: libgcc_s.so.1: version `GCC_4.3.0' not found (required by file /usr/local/gcc-4.7.0/sparc-SunOS-ultrasparc3/lib/libgomp.so.1)
 ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory
-/home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  "$SAGE_LOCAL/bin/R" "$`@`"
+/home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  "$SAGE_LOCAL/bin/R" "$@"
 ```
 
 I tried just modifying local/bin/R and local/lib/R/bin/R, replacing the hard-coded paths with `$SAGE_ROOT`, but I still got an error.
@@ -460,7 +460,7 @@ Comment by jhpalmieri created at 2013-03-17 15:45:27
 If you look at `src/scripts/R.sh.in`, it has lines like
 
 ```
-        R_HOME_DIR="`@`prefix`@`/${libnn}/R"
+        R_HOME_DIR="@prefix@/${libnn}/R"
 ```
 
 My understanding is that `prefix` gets set by the configure script, stored in `Makefile.conf`, and then read by `src/scripts/Makefile` so this variable's value can get used when making the R script. In particular, the R people are deliberately using the `prefix` variable here. So it looks like their design decision, not a bug. But I'm not sure I understand your point.

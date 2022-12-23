@@ -1,6 +1,6 @@
 # Issue 4221: [with package, needs review] pynac package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4221
 
 Original creator: burcin
 

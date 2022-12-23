@@ -1,6 +1,6 @@
 # Issue 7426: fix mpir spkg to correctly detect OS X 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7426
 
 Original creator: was
 
@@ -115,7 +115,7 @@ sage -t -long "devel/sage/sage/interfaces/sage0.py"
  * 64-bit openSUSE 11.1, Intel(R) Core(TM)2 Quad CPU Q6600  `@` 2.40GHz, menas --- compiled OK; one doctest failure:
 
 ```
-[mvngu`@`menas sage-4.2.1.alpha0-7426]$ ./sage -t -long -verbose devel/sage-main/sage/interfaces/ecm.py 
+[mvngu@menas sage-4.2.1.alpha0-7426]$ ./sage -t -long -verbose devel/sage-main/sage/interfaces/ecm.py 
 sage -t -long -verbose "devel/sage-main/sage/interfaces/ecm.py"
 Traceback (most recent call last):
   File "/home/mvngu/.sage//tmp/.doctest_ecm.py", line 2, in <module>

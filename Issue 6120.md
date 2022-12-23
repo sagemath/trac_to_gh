@@ -1,6 +1,6 @@
 # Issue 6120: [with patch, needs review] P(0).total_degree() should return -1 for multivariate polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6120
 
 Original creator: malb
 

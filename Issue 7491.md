@@ -1,6 +1,6 @@
 # Issue 7491: solve(x==x,x) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7491
 
 Original creator: robert.marik
 
@@ -42,7 +42,7 @@ Attachment
 attached patch does the following
 
 ```
-[marik`@`um-bc107 /opt/sage]$ ./sage
+[marik@um-bc107 /opt/sage]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Loading Sage library. Current Mercurial branch is: solve

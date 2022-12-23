@@ -1,6 +1,6 @@
 # Issue 7379: layout interact controls
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7379
 
 Original creator: jason
 
@@ -21,7 +21,7 @@ Here is a patch to the sagenb directory which allows for the following:
 
 
 ```
-`@`interact(layout=[['a','b'],['c','d']])
+@interact(layout=[['a','b'],['c','d']])
 def _(a=(1,2),b=(3,10),c=["test","button"],d=x^2+1):
     print a,b,c,d
 ```
@@ -32,7 +32,7 @@ def _(a=(1,2),b=(3,10),c=["test","button"],d=x^2+1):
 diff -r 69309549b229 notebook/interact.py
 --- a/notebook/interact.py	Tue Nov 03 03:14:01 2009 -0600
 +++ b/notebook/interact.py	Tue Nov 03 03:48:40 2009 -0600
-`@``@` -1795,15 +1795,25 `@``@`
+@@ -1795,15 +1795,25 @@
              sage: sagenb.notebook.interact.InteractCanvas([B], 3).render_controls()
              '<table>...'
          """
@@ -65,7 +65,7 @@ diff -r 69309549b229 notebook/interact.py
      def wrap_in_outside_frame(self, inside):
          """
          Return the entire HTML for the interactive canvas, obtained by
-`@``@` -1907,8 +1917,15 `@``@`
+@@ -1907,8 +1917,15 @@
          """
          s = 'interact(%s, "_interact_.recompute(%s)")'%(cell_id, cell_id)
          JavascriptCodeButton.__init__(self, "Update", s)                                     
@@ -83,7 +83,7 @@ diff -r 69309549b229 notebook/interact.py
      r"""
      Use interact as a decorator to create interactive Sage notebook
      cells with sliders, text boxes, radio buttons, check boxes, and
-`@``@` -2281,7 +2298,9 `@``@`
+@@ -2281,7 +2298,9 @@
          i = args.index('auto_update')
          controls[i] = UpdateButton(SAGE_CELL_ID)
  
@@ -163,7 +163,7 @@ This is great, thanks very much for working on it.  The only problem I've seen s
 sage -t  "local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py"
 **********************************************************************
 File "/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/notebook/interact.py", line 2205:
-    sage: `@`interact
+    sage: @interact
     def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):
         show(factor(x**n - Integer(1)))
 Exception raised:
@@ -200,7 +200,7 @@ mhampton: that's a corner case in the `@`interact functionality (a magic paramet
 
 
 ```
-`@`interact(auto_update=False)
+@interact(auto_update=False)
 def _(...)
     ...
 ```
@@ -269,7 +269,7 @@ The patch causes the followinger doctest error:
 
 ```
 File "/opt/sage/local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/notebook/interact.py", line 2209:
-    sage: `@`interact
+    sage: @interact
     def _(n=(Integer(10),Integer(100),Integer(1)), auto_update=False):
         show(factor(x**n - Integer(1)))
 Exception raised:

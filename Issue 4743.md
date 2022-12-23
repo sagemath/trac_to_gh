@@ -1,6 +1,6 @@
 # Issue 4743: [with spkg; needs review] change genus2reduction to include GPL copyright file and email from liu making the program GPL'd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4743
 
 Original creator: was
 

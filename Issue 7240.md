@@ -1,6 +1,6 @@
 # Issue 7240: factorization of Cunningham numbers - applications
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7240
 
 Original creator: ylchapuy
 
@@ -93,7 +93,7 @@ Comment by mvngu created at 2010-01-22 17:06:42
 After applying the attachment [trac7240_Cunningham_factorization_application.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7240/trac7240_Cunningham_factorization_application.patch), I got the following doctest failures on Sage 4.3.1. In all of these cases, I didn't install the optional Cunningham spkg at #7239
 
 ```
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx
 sage -t -long "devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx"
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx", line 1349:
@@ -104,7 +104,7 @@ Got:
     doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``
     'Z(65536)^1'
 
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_element.py
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_element.py
 sage -t -long "devel/sage-main/sage/rings/finite_field_element.py"
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_element.py", line 375:
@@ -115,7 +115,7 @@ Got:
     doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``
     124
 
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ext_pari.py
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/finite_field_ext_pari.py
 sage -t -long "devel/sage-main/sage/rings/finite_field_ext_pari.py"
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/finite_field_ext_pari.py", line 103:
@@ -126,7 +126,7 @@ Got:
     doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``
     15
 
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
 sage -t -long "devel/sage-main/sage/rings/polynomial/polynomial_element.pyx"
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/rings/polynomial/polynomial_element.pyx", line 2860:
@@ -137,7 +137,7 @@ Got:
     doctest:21: UserWarning: You might consider installing the optional package for factoring Cunningham numbers with the following command: ``sage -i cunningham_tables-1.0``
     (True, False)
 
-[mvngu`@`sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/groups/generic.py
+[mvngu@sage sage-4.3.1]$ ./sage -t -long devel/sage-main/sage/groups/generic.py
 sage -t -long "devel/sage-main/sage/groups/generic.py"      
 **********************************************************************
 File "/mnt/usb1/scratch/mvngu/release/sage-4.3.1/devel/sage-main/sage/groups/generic.py", line 774:

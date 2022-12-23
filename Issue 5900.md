@@ -1,6 +1,6 @@
 # Issue 5900: [with patches, needs review] Add support for system python != Sage python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5900
 
 Original creator: tabbott
 

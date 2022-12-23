@@ -1,6 +1,6 @@
 # Issue 3942: Sage interfaces vs. pyprocessing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3942
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 4049: Don't use the -i option to tar as it does not exist on most BSDs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4049
 
 Original creator: anakha
 

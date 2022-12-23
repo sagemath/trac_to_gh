@@ -1,6 +1,6 @@
 # Issue 1341: [with spkg] add script so that which_fortran returns g95 or gfortran
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1341
 
 Original creator: jkantor
 

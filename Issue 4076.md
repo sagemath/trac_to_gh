@@ -1,6 +1,6 @@
 # Issue 4076: notebook -- <$> ... </$> and <$$> ... </$$> don't work in the notebook as the help page claims
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4076
 
 Original creator: TimothyClemans
 

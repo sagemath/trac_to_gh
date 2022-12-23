@@ -1,6 +1,6 @@
 # Issue 7935: local_data for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7935
 
 Original creator: wuthrich
 

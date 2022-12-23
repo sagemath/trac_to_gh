@@ -1,6 +1,6 @@
 # Issue 7261: sagenb notebook: make worksheets saved with new sagneb backwards compatible with old notebook servers.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7261
 
 Original creator: was
 

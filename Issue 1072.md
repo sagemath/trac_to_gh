@@ -1,6 +1,6 @@
 # Issue 1072: update matplotlib -- we ship 0.90.0 but should ship 0.90.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1072
 
 Original creator: was
 

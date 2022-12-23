@@ -1,6 +1,6 @@
 # Issue 7580: bugs in infinite polynomial ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7580
 
 Original creator: was
 

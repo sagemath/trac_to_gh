@@ -1,6 +1,6 @@
 # Issue 7651: c_graph backends should include a "reversed" copy for digraphs in the sparse case
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7651
 
 Original creator: rlm
 

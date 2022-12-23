@@ -1,6 +1,6 @@
 # Issue 2913: [with patch; needs review] notebook -- deleting a running cell results in a bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2913
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9290: Implement Coxeter groups in their geometric representation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9290
 
 Original creator: nthiery
 

@@ -1,6 +1,6 @@
 # Issue 5558: jsmath-image-fonts spkg not updated in optional spkg listing on sagemath.org
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5558
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4068: determinants for matrices over multivariate polynomial rings slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4068
 
 Original creator: malb
 

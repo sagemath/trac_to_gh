@@ -1,6 +1,6 @@
 # Issue 7130: libpng 1.2.35 always builds 32-bit libraries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7130
 
 Original creator: drkirkby
 
@@ -82,12 +82,12 @@ This can be closed. The latest version of libpng (libpng-1.2.35.p2) in Sage buil
 
 ```
 changeset:   13:ae01944f408c
-user:        Jaap Spies <jaapspies`@`gmail.com>
+user:        Jaap Spies <jaapspies@gmail.com>
 date:        Thu Feb 04 19:32:51 2010 +0100
 summary:     Corrected stupid typo I thought I had corrected earlier.
 
 changeset:   12:329a8eb6dd2e
-user:        Jaap Spies <jaapspies`@`gmail.com>
+user:        Jaap Spies <jaapspies@gmail.com>
 date:        Wed Feb 03 19:09:41 2010 +0100
 summary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform
 ```

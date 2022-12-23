@@ -1,6 +1,6 @@
 # Issue 3842: notebook -- major bug in how javascript <script> tags are interpreted by the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3842
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1215: Sage misparses maxima integration result
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1215
 
 Original creator: mabshoff
 

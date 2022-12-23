@@ -1,6 +1,6 @@
 # Issue 9523: Arch linux build fails because our readline spkg is too old
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9523
 
 Original creator: cwitty
 
@@ -141,7 +141,7 @@ I've checked that the whole of Sage builds, and passes all doctests
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1740.4 seconds
-drkirkby`@`hawk:~/sage-4.6.rc0$ 
+drkirkby@hawk:~/sage-4.6.rc0$ 
 ```
 
 
@@ -589,21 +589,21 @@ But when I run those two tests individually they both passed. I can only assume 
 
 
 ```
-drkirkby`@`hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py
+drkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py
 sage -t -long -force_lib "devel/sage/sage/interfaces/psage.py"
          [24.9 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 25.4 seconds
-drkirkby`@`hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx
+drkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx
 sage -t -long -force_lib "devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx"
          [13.0 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 13.0 seconds
-drkirkby`@`hawk:~/sage-4.6.rc0$ 
+drkirkby@hawk:~/sage-4.6.rc0$ 
 ```
 
 

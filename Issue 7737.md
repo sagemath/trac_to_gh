@@ -1,6 +1,6 @@
 # Issue 7737: spkg list has the entire description as a link
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7737
 
 Original creator: jason
 

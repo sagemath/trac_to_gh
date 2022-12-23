@@ -1,6 +1,6 @@
 # Issue 4053: [with patch, needs review] more checking for graph6. sparse6 and dig6 formats
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4053
 
 Original creator: rlm
 

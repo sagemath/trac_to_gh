@@ -1,6 +1,6 @@
 # Issue 3255: Add support for generic backtracking algorithms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3255
 
 Original creator: mhansen
 

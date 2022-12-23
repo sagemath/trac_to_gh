@@ -1,6 +1,6 @@
 # Issue 5759: bug in divides
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5759
 
 Original creator: was
 
@@ -64,7 +64,7 @@ This breaks a doctest somewhere else:
 
 
 ```
-wstein`@`sage:~/build/sage-3.4.1.rc2$ ./sage -t  devel/sage/sage/coding/code_constructions.py
+wstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t  devel/sage/sage/coding/code_constructions.py
 sage -t  "devel/sage/sage/coding/code_constructions.py"
 **********************************************************************
 File "/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/coding/code_constructions.py", line 530:

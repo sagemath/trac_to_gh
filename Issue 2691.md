@@ -1,6 +1,6 @@
 # Issue 2691: [with patch, needs review] generate digraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2691
 
 Original creator: rlm
 

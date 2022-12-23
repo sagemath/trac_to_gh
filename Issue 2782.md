@@ -1,6 +1,6 @@
 # Issue 2782: notebook: Make it so the default reference manual, etc., is static instead of dynamic
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2782
 
 Original creator: was
 

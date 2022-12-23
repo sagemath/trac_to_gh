@@ -1,6 +1,6 @@
 # Issue 342: ComplexNumber constructor seg faults
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/342
 
 Original creator: was
 

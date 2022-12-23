@@ -1,6 +1,6 @@
 # Issue 6108: sage -tp skips all.py!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6108
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7184: [with patch, needs review] Implement counting of spanning trees for graphs and digraphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7184
 
 Original creator: AJonsson
 

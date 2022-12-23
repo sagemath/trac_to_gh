@@ -1,6 +1,6 @@
 # Issue 2093: floats - sage is inconsistant at times
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2093
 
 Original creator: moretti
 

@@ -1,6 +1,6 @@
 # Issue 614: structure/element.pyx:  non-integral exponents not supported error in doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/614
 
 Original creator: mhansen
 

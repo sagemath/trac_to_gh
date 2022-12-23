@@ -1,6 +1,6 @@
 # Issue 4456: sage-3.2.alpha3 -- numerical noise on osx 32-bit intel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4456
 
 Original creator: was
 

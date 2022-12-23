@@ -1,6 +1,6 @@
 # Issue 353: public sage notebook robustness
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/353
 
 Original creator: was
 

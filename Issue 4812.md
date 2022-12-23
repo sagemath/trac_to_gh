@@ -1,6 +1,6 @@
 # Issue 4812: [with patch, needs review] matrix_plot is broken for matrices with "complicated" base rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4812
 
 Original creator: mhansen
 

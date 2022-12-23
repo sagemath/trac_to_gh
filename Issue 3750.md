@@ -1,6 +1,6 @@
 # Issue 3750: Request for a "log" function for Sage integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3750
 
 Original creator: ljpk
 
@@ -158,7 +158,7 @@ Comment by mabshoff created at 2008-11-05 18:53:07
 When I merge integer-log-exp-final.patch I get one doctest failure:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3$  ./sage -t -long devel/sage/sage/coding/linear_code.py
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3$  ./sage -t -long devel/sage/sage/coding/linear_code.py
 sage -t -long devel/sage/sage/coding/linear_code.py         
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/linear_code.py", line 1123:

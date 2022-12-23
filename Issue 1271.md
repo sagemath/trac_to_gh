@@ -1,6 +1,6 @@
 # Issue 1271: update Singular to 3-0-4 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1271
 
 Original creator: mabshoff
 

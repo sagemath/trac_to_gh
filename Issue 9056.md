@@ -1,6 +1,6 @@
 # Issue 9056: Add the category of SemiRings with an example : NonNegativeIntegers()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9056
 
 Original creator: nborie
 
@@ -309,7 +309,7 @@ For Nicolas Thiéry : This patch go in Sage before I fold your second reviewer p
 diff --git a/sage/categories/primer.py b/sage/categories/primer.py
 --- a/sage/categories/primer.py
 +++ b/sage/categories/primer.py
-`@``@` -122,6 +122,7 `@``@` Example of mathematical information::
+@@ -122,6 +122,7 @@ Example of mathematical information::
           Category of rings,
           Category of rngs,
           Category of commutative additive groups,
@@ -317,7 +317,7 @@ diff --git a/sage/categories/primer.py b/sage/categories/primer.py
           Category of commutative additive monoids,
           Category of commutative additive semigroups,
           Category of additive magmas,
-`@``@` -503,6 +504,7 `@``@` This gives the following order::
+@@ -503,6 +504,7 @@ This gives the following order::
       Category of algebras over Rational Field,
       Category of rings,
       Category of rngs,

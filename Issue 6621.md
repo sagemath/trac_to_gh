@@ -1,6 +1,6 @@
 # Issue 6621: [with patch, needs review] Permutation.inverse too slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6621
 
 Original creator: aclaesson
 

@@ -1,6 +1,6 @@
 # Issue 7307: EllipticCurveIsogeny doctest typo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7307
 
 Original creator: fwclarke
 

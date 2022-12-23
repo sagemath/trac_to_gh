@@ -1,6 +1,6 @@
 # Issue 6884: notebook doctest failures in Sage 4.1.2.alpha0 on mod.math
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6884
 
 Original creator: mvngu
 

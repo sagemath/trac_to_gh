@@ -1,6 +1,6 @@
 # Issue 1728: numpy 1.0.4 causes various numerical noise doctest failures
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1728
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py
+mabshoff@sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py
 sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py
 **********************************************************************
 File "complex_roots.py", line 21:
@@ -32,7 +32,7 @@ Got:
 and
 
 ```
-mabshoff`@`sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
+mabshoff@sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
 sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx
 **********************************************************************
 File "polynomial_element.pyx", line 2539:

@@ -1,6 +1,6 @@
 # Issue 2300: A copy method for SingularElement [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2300
 
 Original creator: SimonKing
 

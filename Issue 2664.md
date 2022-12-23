@@ -1,6 +1,6 @@
 # Issue 2664: [with patch, needs review] implement a symplectic form for finding symplectic bases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2664
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 6733: spell-check all modules under sage/sets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6733
 
 Original creator: mvngu
 

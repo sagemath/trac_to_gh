@@ -1,6 +1,6 @@
 # Issue 7266: implement computation of Silverman height bounds
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7266
 
 Original creator: was
 

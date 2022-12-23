@@ -1,6 +1,6 @@
 # Issue 2852: ctrl-enter broken in firefox/linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2852
 
 Original creator: boothby
 

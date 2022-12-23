@@ -1,6 +1,6 @@
 # Issue 4374: Numerical noise doctest failure in sage/tests/book_stein_ent.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4374
 
 Original creator: mabshoff
 

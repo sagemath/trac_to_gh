@@ -1,6 +1,6 @@
 # Issue 2264: Sage 2.10.2.rc0: numerical noise doctest failure in rings/real_rqdf.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2264
 
 Original creator: mabshoff
 

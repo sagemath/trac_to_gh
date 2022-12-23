@@ -1,6 +1,6 @@
 # Issue 6301: implement the Hadamard product of two matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6301
 
 Original creator: ncalexan
 

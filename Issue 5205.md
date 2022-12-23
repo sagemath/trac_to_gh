@@ -1,6 +1,6 @@
 # Issue 5205: [with patch, needs review] Set "# -*- coding: utf-8 -*-" encoding for sage/server/notebook/template.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5205
 
 Original creator: mabshoff
 

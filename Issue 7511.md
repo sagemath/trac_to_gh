@@ -1,6 +1,6 @@
 # Issue 7511: gnutls-2.2.1  fails to build on HP-UX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7511
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 8300: native algdep with proof option
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8300
 
 Original creator: robertwb
 

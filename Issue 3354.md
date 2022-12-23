@@ -1,6 +1,6 @@
 # Issue 3354: Bug in power series sqrt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3354
 
 Original creator: robertwb
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-sage: t = QQ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro).0
+sage: t = QQ[['t']].0
 sage: sqrt(1+t)
 1 + 1/2*t - 1/8*t^2 + 1/16*t^3 - 5/128*t^4 + 7/256*t^5 - 21/1024*t^6 + 33/2048*t^7 - 429/32768*t^8 + 715/65536*t^9 - 2431/262144*t^10 + 4199/524288*t^11 - 29393/4194304*t^12 + 52003/8388608*t^13 - 185725/33554432*t^14 + 334305/67108864*t^15 - 9694845/2147483648*t^16 + 17678835/4294967296*t^17 - 64822395/17179869184*t^18 + 119409675/34359738368*t^19 + O(t^20)
 sage: sqrt(2+t)
@@ -35,7 +35,7 @@ Related:
 
 
 ```
-[00:12] <jason--> sage: t = QQ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro).0
+[00:12] <jason--> sage: t = QQ[['t']].0
 [00:12] <jason--> sage: 1/(1-t)
 [00:12] <jason--> 1 + t + t^2 + t^3 + t^4 + t^5 + t^6 + t^7 + t^8 + t^9 + t^10 + t^11 + t^12 + t^13 + t^14 + t^15 + t^16 + t^17 + t^18 + t^19 + O(t^20)
 [00:12] <jason--> but log(1+t) doesn't work, for example

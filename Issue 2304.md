@@ -1,6 +1,6 @@
 # Issue 2304: sparse_poly should probably be removed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2304
 
 Original creator: dmharvey
 

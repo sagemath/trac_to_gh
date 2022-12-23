@@ -1,6 +1,6 @@
 # Issue 8648: Generic __call__ function for parents prevents empty input in constructor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8648
 
 Original creator: aschilling
 
@@ -19,7 +19,7 @@ Generic __call__ function for parents has a default value for its first argument
     sage: T = CrystalOfTableaux(['B',3], shape=[3])
     sage: t=T(1,2,0)
     sage: t
-    [This is the Trac macro *1, 2, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1, 2, 0-macro)
+    [[1, 2, 0]]
 
     sage: T = CrystalOfTableaux(['B',3], shape=[])
     sage: t=T()

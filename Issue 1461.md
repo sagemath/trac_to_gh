@@ -1,6 +1,6 @@
 # Issue 1461: [with patch] implement general subs_expr for calculus expressions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1461
 
 Original creator: was
 

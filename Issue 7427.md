@@ -1,6 +1,6 @@
 # Issue 7427: angle "wheel" widget for interacts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7427
 
 Original creator: jason
 

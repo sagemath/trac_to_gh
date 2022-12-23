@@ -1,6 +1,6 @@
 # Issue 7117: [with patch, needs review] latex fix for RIF
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7117
 
 Original creator: jhpalmieri
 

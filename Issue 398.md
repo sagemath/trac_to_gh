@@ -1,6 +1,6 @@
 # Issue 398: Fixing some of David Joyner's desolvers code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/398
 
 Original creator: mhampton
 

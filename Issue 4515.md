@@ -1,6 +1,6 @@
 # Issue 4515: make it so "make check" runs Sage once before running itself, to ensure that sage-location is called, and that sage works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4515
 
 Original creator: was
 

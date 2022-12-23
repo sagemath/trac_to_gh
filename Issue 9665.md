@@ -1,6 +1,6 @@
 # Issue 9665: Make lcalc accessible as a library on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9665
 
 Original creator: mpatel
 

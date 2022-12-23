@@ -1,6 +1,6 @@
 # Issue 2995: [with patch, needs review] some new functionality and doctests for congruence subgroups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2995
 
 Original creator: AlexGhitza
 

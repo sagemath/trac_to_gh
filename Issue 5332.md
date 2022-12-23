@@ -1,6 +1,6 @@
 # Issue 5332: Convert MV polynomial constructors in multi_polynomial_ideal.py, category_object.py, etc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5332
 
 Original creator: mabshoff
 
@@ -411,7 +411,7 @@ Comment by mmezzarobba created at 2015-04-18 10:39:16
 ```
 --- a/src/sage/rings/polynomial/polynomial_element.pyx
 +++ b/src/sage/rings/polynomial/polynomial_element.pyx
-`@``@` -181,8 +181,12 `@``@` cdef class Polynomial(CommutativeAlgebraElement):
+@@ -181,8 +181,12 @@ cdef class Polynomial(CommutativeAlgebraElement):
  
      EXAMPLE::
  
@@ -434,7 +434,7 @@ Comment by mmezzarobba created at 2015-04-18 10:39:16
 ```
 --- a/src/sage/schemes/generic/algebraic_scheme.py
 +++ b/src/sage/schemes/generic/algebraic_scheme.py
-`@``@` -194,7 +194,7 `@``@` def is_AlgebraicScheme(x):
+@@ -194,7 +194,7 @@ def is_AlgebraicScheme(x):
  
      We create a more complicated closed subscheme::
  

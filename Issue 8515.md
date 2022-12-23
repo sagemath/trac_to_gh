@@ -1,6 +1,6 @@
 # Issue 8515: Optional package frobby-0.7.6  fails to install on Solaris 10 SPARC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8515
 
 Original creator: drkirkby
 

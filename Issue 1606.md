@@ -1,6 +1,6 @@
 # Issue 1606: plotting -- add aspect_ratio option to show command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1606
 
 Original creator: was
 

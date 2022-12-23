@@ -1,6 +1,6 @@
 # Issue 6751: implement ternary quadratic forms associated to orders in rational quaternion algebras
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6751
 
 Original creator: was
 
@@ -41,7 +41,7 @@ Comment by mvngu created at 2009-08-30 09:29:13
 Merged both patches. The patch `trac_6751.patch` applies OK, but with fuzz:
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6751/trac_6751.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6751/trac_6751.patch && hg qpush
 adding trac_6751.patch to series file
 applying trac_6751.patch
 patching file sage/algebras/quatalg/quaternion_algebra_element.pyx

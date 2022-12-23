@@ -1,6 +1,6 @@
 # Issue 7984: QQbar doesn't use canonical coercion for comparison
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7984
 
 Original creator: robertwb
 

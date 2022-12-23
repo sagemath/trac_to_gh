@@ -1,6 +1,6 @@
 # Issue 9852: Enumerate Integer solution of a LP through new CPLEX interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9853
 
 Original creator: ncohen
 

@@ -1,6 +1,6 @@
 # Issue 5885: #5567 should throw a deprecation warning
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5885
 
 Original creator: jason
 

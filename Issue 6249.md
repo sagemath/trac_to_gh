@@ -1,6 +1,6 @@
 # Issue 6249: graph1.plot() + graph2.plot() doesn't zorder correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6249
 
 Original creator: ncalexan
 

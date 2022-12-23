@@ -1,6 +1,6 @@
 # Issue 9887: matrix multiplication over integer mod ring is slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9888
 
 Original creator: dmharvey
 

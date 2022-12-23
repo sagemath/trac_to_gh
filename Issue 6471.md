@@ -1,6 +1,6 @@
 # Issue 6471: clarify differences between c.abs() and c.norm() for complex c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6471
 
 Original creator: mvngu
 

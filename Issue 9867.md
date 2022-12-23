@@ -1,6 +1,6 @@
 # Issue 9867: Improve plot3d documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9868
 
 Original creator: kcrisman
 

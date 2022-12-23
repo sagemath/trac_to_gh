@@ -1,6 +1,6 @@
 # Issue 8096: Coersion of square matrices is slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8096
 
 Original creator: boothby
 

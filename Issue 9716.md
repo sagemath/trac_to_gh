@@ -1,6 +1,6 @@
 # Issue 9716: tachyon 3d plotting of graphs is still screwy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9716
 
 Original creator: was
 

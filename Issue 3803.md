@@ -1,6 +1,6 @@
 # Issue 3803: prime_range takes WAY WAY too long to convert its data back to PARI
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3803
 
 Original creator: was
 

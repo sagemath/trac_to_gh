@@ -1,6 +1,6 @@
 # Issue 8017: incorrect trailing digits for continued fraction
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8017
 
 Original creator: robertwb
 

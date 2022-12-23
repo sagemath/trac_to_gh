@@ -1,6 +1,6 @@
 # Issue 4566: speed up assume command (easy change)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4566
 
 Original creator: was
 
@@ -24,7 +24,7 @@ sage: timeit("maxima.assume(x>0)")
 I don't have time to do this...
 - Hide quoted text -
 
-On Tue, Oct 14, 2008 at 7:32 AM, Stan Schymanski <schymans`@`gmail.com> wrote:
+On Tue, Oct 14, 2008 at 7:32 AM, Stan Schymanski <schymans@gmail.com> wrote:
 >
 > Dear all,
 >

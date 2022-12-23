@@ -1,6 +1,6 @@
 # Issue 2657: [with patch; needs review] Debian package cleanups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2657
 
 Original creator: tabbott
 

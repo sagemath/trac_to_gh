@@ -1,6 +1,6 @@
 # Issue 2311: remove stupid timeout from sage-location
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2311
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1795: [with-patch] Adds support for cdef'd and cpdef'd functions to sage-coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1795
 
 Original creator: roed
 

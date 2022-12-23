@@ -1,6 +1,6 @@
 # Issue 652: .sage files destroy existing .py files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/652
 
 Original creator: jvoight
 

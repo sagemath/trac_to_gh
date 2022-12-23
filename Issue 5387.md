@@ -1,6 +1,6 @@
 # Issue 5387: [with patch, needs review] a few changes to the installation guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5387
 
 Original creator: jhpalmieri
 

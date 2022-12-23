@@ -1,6 +1,6 @@
 # Issue 312: LaTex notation in documentation does not show up in notebook doc browser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/312
 
 Original creator: TimothyClemans
 

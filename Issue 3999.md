@@ -1,6 +1,6 @@
 # Issue 3999: [with patch, needs review] Wrapper class to treat additive groups as multiplicative goups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3999
 
 Original creator: robertwb
 
@@ -100,7 +100,7 @@ REFEREE REPORT:
 This bitrotted.  I couldn't apply cleanly because of setup.py being refactored.  I fixed that by hand, but then this wouldn't compile:
 
 ```
-was`@`sage:~/build/sage-3.2.1.alpha1$ ./sage -br
+was@sage:~/build/sage-3.2.1.alpha1$ ./sage -br
 
 ----------------------------------------------------------
 sage: Building and installing modified Sage library files.

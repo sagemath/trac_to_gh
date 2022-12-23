@@ -1,6 +1,6 @@
 # Issue 408: Notebook glitch in Safari
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/408
 
 Original creator: justin
 

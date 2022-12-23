@@ -1,6 +1,6 @@
 # Issue 8829: Saturation for curves over number fields.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8829
 
 Original creator: robertwb
 

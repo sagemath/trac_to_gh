@@ -1,6 +1,6 @@
 # Issue 3840: [with patch, needs review] conversion of 0 from MV polynomial rings broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3840
 
 Original creator: gfurnish
 
@@ -37,7 +37,7 @@ This should be redone by changing the == to <= like this.  This is much nicer th
 diff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx
 --- a/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 09:54:40 2008 +0100
 +++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 11:02:59 2008 -0700
-`@``@` -15,7 +15,7 `@``@` cdef class MPolynomial(CommutativeRingEl
+@@ -15,7 +15,7 @@ cdef class MPolynomial(CommutativeRingEl
      # Some standard conversions
      ####################
      def __int__(self):

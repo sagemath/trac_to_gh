@@ -1,6 +1,6 @@
 # Issue 9693: Maxima is printing asinh(1.0) without a leading zero (.8813735870195429) on Solaris 10 x86
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9693
 
 Original creator: drkirkby
 
@@ -43,7 +43,7 @@ I run
 
 
 ```
-2 drkirkby`@`fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima
+2 drkirkby@fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima
 ;;; Loading #P"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas"
 ;;; Loading #P"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/cmp.fas"
 ;;; Loading #P"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp"
@@ -64,7 +64,7 @@ Trying this on the same version of Sage, but this time on a SPARC processor with
 
 
 ```
-32 drkirkby`@`redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima
+32 drkirkby@redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima
 ;;; Loading #P"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas"
 ;;; Loading #P"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/cmp.fas"
 ;;; Loading #P"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp"

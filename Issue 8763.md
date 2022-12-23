@@ -1,6 +1,6 @@
 # Issue 8763: put licensing information into published worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8763
 
 Original creator: ddrake
 

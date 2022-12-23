@@ -1,6 +1,6 @@
 # Issue 6272: upgrade to flint-1.3.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6272
 
 Original creator: ncalexan
 

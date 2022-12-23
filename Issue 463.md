@@ -1,6 +1,6 @@
 # Issue 463: sage -upgrade:  make it more flexible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/463
 
 Original creator: was
 

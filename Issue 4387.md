@@ -1,6 +1,6 @@
 # Issue 4387: [with patch, needs review] Fix memory leak in si2sa_ZZ in sage/libs/singular/singular.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4387
 
 Original creator: mabshoff
 

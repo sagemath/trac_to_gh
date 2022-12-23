@@ -1,6 +1,6 @@
 # Issue 753: derivative alias for diff
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/753
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 7848: Fix misleading stuff about HTML cells on sagenb
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7848
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 7649: improve documentation (etc) of totallyreal_rel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7649
 
 Original creator: was
 

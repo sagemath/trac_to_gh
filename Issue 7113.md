@@ -1,6 +1,6 @@
 # Issue 7113: Maxima does not build on SUSE Itanium  (Iras)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7113
 
 Original creator: was
 

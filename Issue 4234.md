@@ -1,6 +1,6 @@
 # Issue 4234: typos in programming guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4234
 
 Original creator: mvngu
 

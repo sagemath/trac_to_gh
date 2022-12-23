@@ -1,6 +1,6 @@
 # Issue 4343: gradient needs to be more careful about the variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4343
 
 Original creator: jason
 

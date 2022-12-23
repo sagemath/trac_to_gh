@@ -1,6 +1,6 @@
 # Issue 4682: Add about 36 people missing from the DevMap for Sage 3.0.6-3.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4682
 
 Original creator: mabshoff
 

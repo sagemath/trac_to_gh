@@ -1,6 +1,6 @@
 # Issue 8818: Infinite loop in ZZ.range()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8818
 
 Original creator: robertwb
 

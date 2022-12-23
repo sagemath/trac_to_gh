@@ -1,6 +1,6 @@
 # Issue 513: audit "import sage.all" -- it's getting too slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/513
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 9222: improve doctest coverage of databases/conway.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9222
 
 Original creator: AlexGhitza
 

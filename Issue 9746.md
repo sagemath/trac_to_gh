@@ -1,6 +1,6 @@
 # Issue 9746: documentation for plotting
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9746
 
 Original creator: jason
 

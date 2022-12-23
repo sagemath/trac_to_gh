@@ -1,6 +1,6 @@
 # Issue 9160: Singular - change timestamp of file and sort out SAGE64 isssue.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9160
 
 Original creator: drkirkby
 
@@ -370,10 +370,10 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing singular-3.1.0.4.p6.spkg
-[kirkby`@`bsd sage-4.4.2]$ uname -a 
+[kirkby@bsd sage-4.4.2]$ uname -a 
 Darwin bsd.local 10.3.0 Darwin Kernel Version 10.3.0: Fri Feb 26 11:58:09 PST 2010; root:xnu-1504.3.12~1/RELEASE_I386 i386 i386 MacPro1,
 1 Darwin
-[kirkby`@`bsd sage-4.4.2]$ 
+[kirkby@bsd sage-4.4.2]$ 
 ```
 
 
@@ -385,7 +385,7 @@ Now cleaning up tmp files.
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing singular-3.1.0.4.p6.spkg
-kirkby`@`sage:~/sage-4.4.2$ uname -a
+kirkby@sage:~/sage-4.4.2$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 ```
 
@@ -477,12 +477,12 @@ The second (newer) commit message isn't that nice:
 ```
 changeset:   93:6d0fd18da77b
 tag:         tip
-user:        kirkby`@`localhost
+user:        kirkby@localhost
 date:        Tue Jun 08 06:18:30 2010 -0700
 summary:     #9160 Singular - change timestamp of file and sort out SAGE64 isssue.
 
 changeset:   92:342850f8fd31
-user:        David Kirkby <david.kirkby`@`onetel.net>
+user:        David Kirkby <david.kirkby@onetel.net>
 date:        Sun Jun 06 14:15:05 2010 +0100
 summary:     #9160 Singular - change timestamp of file and sort out SAGE64 isssue.
 ```
@@ -545,7 +545,7 @@ I went back to the first version, and made a few minor changes from that. So for
 ```
 changeset:   93:0283ade6e1ad
 tag:         tip
-user:        kirkby`@`localhost
+user:        kirkby@localhost
 date:        Tue Jun 08 16:34:56 2010 -0700
 summary:     #9160. Few code changes, mainly releated to the dynamic kernel, and improved documentation
 ```
@@ -640,9 +640,9 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing singular-3.1.0.4.p6.spkg
-leif`@`californication:~/sage-4.4.4.alpha0$ uname -a
+leif@californication:~/sage-4.4.4.alpha0$ uname -a
 Linux californication 2.6.28-19-generic #61-Ubuntu SMP Wed May 26 23:35:15 UTC 2010 i686 GNU/Linux
-leif`@`californication:~/sage-4.4.4.alpha0$ ./sage -t -long devel/sage/sage/libs/singular/
+leif@californication:~/sage-4.4.4.alpha0$ ./sage -t -long devel/sage/sage/libs/singular/
 sage -t -long "devel/sage/sage/libs/singular/singular-cdefs.pxi"
 	 [4.3 s]
 sage -t -long "devel/sage/sage/libs/singular/__init__.py"   

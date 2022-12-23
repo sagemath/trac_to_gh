@@ -1,6 +1,6 @@
 # Issue 168: Plot bounds ignored when frame=True
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/168
 
 Original creator: nbruin
 

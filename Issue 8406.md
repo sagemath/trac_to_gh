@@ -1,6 +1,6 @@
 # Issue 8406: problem with duck typing in c_graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8406
 
 Original creator: ylchapuy
 

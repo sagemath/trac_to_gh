@@ -1,6 +1,6 @@
 # Issue 9862: Error in sage/graphs/genus.pyx on ia64-Linux-suse
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9863
 
 Original creator: mpatel
 
@@ -101,7 +101,7 @@ I find the test code which causes al the discussion in this ticket broken. The c
 
 ```
 sage: import sage.graphs.genus
-sage: G = graphs.CompleteGraph(100)
+sage: G = graphs.!CompleteGraph(100)
 sage: G = Graph(G, implementation='c_graph', sparse=False)
 sage: t = get_memory_usage()
 sage: gb = sage.graphs.genus.simple_connected_genus_backtracker(G._backend._cg)

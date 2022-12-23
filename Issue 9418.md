@@ -1,6 +1,6 @@
 # Issue 9418: Add GNU patch as a standard package.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9418
 
 Original creator: drkirkby
 

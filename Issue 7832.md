@@ -1,6 +1,6 @@
 # Issue 7832: singular-3-1-0-4-20090818.p2 - fix compilation on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7832
 
 Original creator: pjeremy
 
@@ -80,7 +80,7 @@ Apparently the following attached patch was all that was needed for now by Steph
 
 --- singular-3-1-3-3.p3/src/omalloc/configure-orig	2012-01-21 19:51:08.000000000 +0000
 +++ singular-3-1-3-3.p3/src/omalloc/configure	2012-01-21 19:51:32.000000000 +0000
-`@``@` -1293,9 +1293,6 `@``@`
+@@ -1293,9 +1293,6 @@
    echo "$ac_t""no" 1>&6
  fi
  
@@ -134,7 +134,7 @@ Anyway, this patch and the following diff for spkg-install are doing it for the 
 ```diff
 --- singular-3-1-3-3.p6/spkg-install-orig	2012-04-08 01:57:01.000000000 +0000
 +++ singular-3-1-3-3.p6/spkg-install	2012-04-08 01:58:19.000000000 +0000
-`@``@` -108,7 +108,7 `@``@`
+@@ -108,7 +108,7 @@
  
      patches="assert.h.diff sing_win.cc.diff Minor.h.patch os_x_ppc.patch \
  	Singular.configure.patch make_parallel.patch Singular.Makefile.in.shared.patch \

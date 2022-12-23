@@ -1,6 +1,6 @@
 # Issue 8997: riemann_roch_basis is implemented incorrectly in sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8997
 
 Original creator: was
 

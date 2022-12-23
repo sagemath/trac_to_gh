@@ -1,6 +1,6 @@
 # Issue 3355: invoke the libdir rewrite script on "sage -upgrade"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3355
 
 Original creator: mabshoff
 

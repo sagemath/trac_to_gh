@@ -1,6 +1,6 @@
 # Issue 6668: Allow doctesting of .tex, .rst. .sage files outside the devel tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6668
 
 Original creator: fwclarke
 

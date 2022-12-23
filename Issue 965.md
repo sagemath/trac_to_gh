@@ -1,6 +1,6 @@
 # Issue 965: incorporate drew sutherland's smalljac into Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/965
 
 Original creator: was
 
@@ -51,7 +51,7 @@ Drew
 
 Rank 14, torsion group Z/2Z  Fermigier 1997
 
-drew`@`penguin1:~/dev/net$ ./smalljacclient 1 2e36
+drew@penguin1:~/dev/net$ ./smalljacclient 1 2e36
 [0,1,0,-1692310759026568999140789578145,839379398840982294584587970773038145228669599]
 zeta 11 0 penguins.cfg Skipping 2 primes below 4 20 bad primes in remaining
 interval: 7 23 43 61 79 103 157 167 179 191 199 227 229 257 271 307 487 619

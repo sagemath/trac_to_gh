@@ -1,6 +1,6 @@
 # Issue 3050: notebook -- add "remember me" checkbox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3050
 
 Original creator: TimothyClemans
 

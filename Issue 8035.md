@@ -1,6 +1,6 @@
 # Issue 8035: make SageTeX able to detect version mismatches
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8035
 
 Original creator: ddrake
 

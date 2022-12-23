@@ -1,6 +1,6 @@
 # Issue 1820: update documentation for combinat/skew_partition.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1820
 
 Original creator: mhansen
 

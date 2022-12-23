@@ -1,6 +1,6 @@
 # Issue 984: sage-2.8.9.rc1: sage-banner is empty
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/984
 
 Original creator: cwitty
 
@@ -11,7 +11,7 @@ Assignee: was
 sage is missing its startup message in 2.8.9.rc1:
 
 ```
-cwitty`@`magnetar:~/sage-2.8.9.rc1$ ./sage
+cwitty@magnetar:~/sage-2.8.9.rc1$ ./sage
 
 sage: 
 ```

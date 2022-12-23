@@ -1,6 +1,6 @@
 # Issue 428: cannot build sage 2.8 on ppc G5, OS 10.4.10
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/428
 
 Original creator: dmharvey
 

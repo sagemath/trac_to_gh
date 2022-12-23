@@ -1,6 +1,6 @@
 # Issue 5075: Polynomials over inexact rings should not truncate inexact leading zeroes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5075
 
 Original creator: kedlaya
 

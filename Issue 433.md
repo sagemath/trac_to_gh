@@ -1,6 +1,6 @@
 # Issue 433: Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/433
 
 Original creator: ncalexan
 
@@ -42,7 +42,7 @@ This thing won't let me attach a bundle, so here's the text of the trivial patch
 
 ```
 # HG changeset patch
-# User Nick Alexander <ncalexander`@`gmail.com>
+# User Nick Alexander <ncalexander@gmail.com>
 # Date 1187292085 25200
 # Node ID da40e197fbefada36d098a0c449e65c3622387e1
 # Parent  840d064e20ea5bdbce4f71bb5ea5af07025d6f1b
@@ -51,7 +51,7 @@ Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch inf
 diff -r 840d064e20ea -r da40e197fbef sage-sage
 --- a/sage-sage Sun Aug 12 18:17:20 2007 -0700
 +++ b/sage-sage Thu Aug 16 12:21:25 2007 -0700
-`@``@` -6,6 +6,7 `@``@` usage() {
+@@ -6,6 +6,7 @@ usage() {
      echo "-----------------------------------------------------------"
      echo " Optional arguments:"
      echo "  -h            -- print this help message"
@@ -59,7 +59,7 @@ diff -r 840d064e20ea -r da40e197fbef sage-sage
      echo "  -notebook [options] -- start the SAGE notebook (options are"
      echo "                   the same as to the notebook command in SAGE)"
      echo "  -inotebook [options] -- start the *insecure* SAGE notebook "
-`@``@` -32,6 +33,7 `@``@` usage_advanced() {
+@@ -32,6 +33,7 @@ usage_advanced() {
      echo "  -ba [branch]  -- switch to, rebuild all Cython code, and run SAGE branch in devel/sage-branch"
      echo "  -ba-force [branch] -- same as -ba, but don't query before rebuilding"
      echo "  -bdist VER    -- build a binary distribution of SAGE"
@@ -67,7 +67,7 @@ diff -r 840d064e20ea -r da40e197fbef sage-sage
      echo "  -cleaner      -- run the SAGE cleaner"
      echo "  -clisp [...]  -- run Common Lisp"
      echo "  -clone [new branch] -- clone and run a new branch of the SAGE library from current branch"
-`@``@` -62,6 +64,7 `@``@` usage_advanced() {
+@@ -62,6 +64,7 @@ usage_advanced() {
      echo "  -preparse <file.sage> -- produce corresponding file.sage.py "
      echo "  -python       -- run the python interpreter"
      echo "  -q            -- quiet; start with no banner"
@@ -75,7 +75,7 @@ diff -r 840d064e20ea -r da40e197fbef sage-sage
      echo "  -sdist VER    -- build a source distribution of SAGE"
      echo "  -singular <..>-- run SAGE's singular with given arguments"
      echo "  -twistd <..>  -- run Twisted server"
-`@``@` -203,6 +206,25 `@``@` fi
+@@ -203,6 +206,25 @@ fi
  fi
  
  #####################################################################

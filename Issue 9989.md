@@ -1,6 +1,6 @@
 # Issue 9989: Pari fails to build on AIX - using wrong extension for libraries.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9990
 
 Original creator: drkirkby
 
@@ -208,8 +208,8 @@ Comment by fbissey created at 2012-06-02 11:33:09
 And with a little bit of fiddling in Oaix-ppc/Makefile
 
 ```
-frb15`@`p1n14-c /hpc/scratch/frb15/work/pari-2.5.1 :nano -w Oaix-ppc/Makefile 
-frb15`@`p1n14-c /hpc/scratch/frb15/work/pari-2.5.1 :gmake gp
+frb15@p1n14-c /hpc/scratch/frb15/work/pari-2.5.1 :nano -w Oaix-ppc/Makefile 
+frb15@p1n14-c /hpc/scratch/frb15/work/pari-2.5.1 :gmake gp
 Making gp in Oaix-ppc
 gmake[1]: Entering directory `/hpc/scratch/frb15/work/pari-2.5.1/Oaix-ppc'
 rm -f libpari-gmp.so.2.5.1

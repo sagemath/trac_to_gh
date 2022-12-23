@@ -1,6 +1,6 @@
 # Issue 3265: some doctests leave files in $SAGE_ROOT/devel/sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3265
 
 Original creator: mabshoff
 

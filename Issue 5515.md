@@ -1,6 +1,6 @@
 # Issue 5515: "make" attempts to build documentation even if the build fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5515
 
 Original creator: cwitty
 

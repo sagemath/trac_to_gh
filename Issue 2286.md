@@ -1,6 +1,6 @@
 # Issue 2286: [with patch, needs review] create and document a new "fp_rank" concept
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2286
 
 Original creator: cwitty
 

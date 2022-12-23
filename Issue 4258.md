@@ -1,6 +1,6 @@
 # Issue 4258: switch multiplication of dense matrices over finite prime fields to LinBox
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4258
 
 Original creator: malb
 

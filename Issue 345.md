@@ -1,6 +1,6 @@
 # Issue 345: Safari bugs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/345
 
 Original creator: TimothyClemans
 

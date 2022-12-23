@@ -1,6 +1,6 @@
 # Issue 8974: Added eigenvalues, eigenvector, eigenspaces and minpoly to vector space endomorphisms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8974
 
 Original creator: mmarco
 

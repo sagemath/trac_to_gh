@@ -1,6 +1,6 @@
 # Issue 4139: [with patch, needs review] Improvements to permutation groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4139
 
 Original creator: mhansen
 

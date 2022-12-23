@@ -1,6 +1,6 @@
 # Issue 2818: notebook -- document most functions in js.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2818
 
 Original creator: was
 
@@ -39,7 +39,7 @@ The rejected hunk:
 ```
 --- js.py
 +++ js.py
-`@``@` -520,10 +652,16 `@``@` function get_cursor_position(cell) {
+@@ -520,10 +652,16 @@ function get_cursor_position(cell) {
  }
 
  function set_cursor_position(cell, n) {

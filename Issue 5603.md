@@ -1,6 +1,6 @@
 # Issue 5603: make a .mix() method for Sage color objects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5603
 
 Original creator: jason
 
@@ -42,7 +42,7 @@ Close as fixed:
 
 
 ```
-[mvngu`@`sage ~]$ sage
+[mvngu@sage ~]$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: b = sage.plot.colors.blue

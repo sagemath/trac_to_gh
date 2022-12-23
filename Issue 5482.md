@@ -1,6 +1,6 @@
 # Issue 5482: Quotient ring can be created without generator names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5482
 
 Original creator: justin
 

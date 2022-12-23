@@ -1,6 +1,6 @@
 # Issue 4581: Permutation constructor fails with PermutationGroupElement
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4581
 
 Original creator: saliola
 

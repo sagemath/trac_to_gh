@@ -1,6 +1,6 @@
 # Issue 4263: elliptic curves -- point height serious stupid bug in raising error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4263
 
 Original creator: was
 

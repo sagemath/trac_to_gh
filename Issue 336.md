@@ -1,6 +1,6 @@
 # Issue 336: Create an option to clear all cell output
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/336
 
 Original creator: TimothyClemans
 

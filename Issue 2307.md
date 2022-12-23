@@ -1,6 +1,6 @@
 # Issue 2307: [with patch, needs easy review] has_edge ignores labels
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2307
 
 Original creator: rlm
 

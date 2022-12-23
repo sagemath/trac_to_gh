@@ -1,6 +1,6 @@
 # Issue 2939: piecewise.py improvements (docstring and laplace fixes)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2939
 
 Original creator: wdj
 

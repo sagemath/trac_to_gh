@@ -1,6 +1,6 @@
 # Issue 6777: segfault with univariate polynomial, realfield, complexfield
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6777
 
 Original creator: ncalexan
 

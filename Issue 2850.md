@@ -1,6 +1,6 @@
 # Issue 2850: Docstrings and doctests for permgroup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2850
 
 Original creator: cswiercz
 

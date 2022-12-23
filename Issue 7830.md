@@ -1,6 +1,6 @@
 # Issue 7830: function for floating point representation of a number
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7830
 
 Original creator: jason
 

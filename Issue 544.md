@@ -1,6 +1,6 @@
 # Issue 544: doctesting const.tex should not pop up any windows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/544
 
 Original creator: was
 

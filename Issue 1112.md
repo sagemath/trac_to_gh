@@ -1,6 +1,6 @@
 # Issue 1112: Integer.__pow__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1112
 
 Original creator: malb
 

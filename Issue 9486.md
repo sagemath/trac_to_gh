@@ -1,6 +1,6 @@
 # Issue 9486: ECL 10.2.1 fails to install on OS X (bsd.math) in sage-4.5.rc0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9486
 
 Original creator: drkirkby
 
@@ -194,14 +194,14 @@ I've attached the ptestlong.log (renamed to bsd.math+7379+9187-ptestlong.log). A
 
 
 ```
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py                 
+[kirkby@bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py                 
 sage -t -long "devel/sage/sage/interfaces/sage0.py"         
 	 [13.7 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 13.7 seconds
-[kirkby`@`bsd sage-4.5.rc0]$ 
+[kirkby@bsd sage-4.5.rc0]$ 
 ```
 
 
@@ -227,7 +227,7 @@ Here's a list of the order in which the packages were installed in a parallel bu
 
 
 ```
-[kirkby`@`bsd sage-4.5.rc0]$ ls -lrt spkg/installed
+[kirkby@bsd sage-4.5.rc0]$ ls -lrt spkg/installed
 total 380
 -rw-r--r-- 1 kirkby staff   0 Jul 12 14:02 dir-0.1
 -rw-r--r-- 1 kirkby staff   0 Jul 12 14:02 prereq-0.7
@@ -327,7 +327,7 @@ total 380
 -rw-r--r-- 1 kirkby staff 306 Jul 12 15:17 sage-4.5.rc0
 -rw-r--r-- 1 kirkby staff 307 Jul 12 15:18 gap-4.4.12.p4
 -rw-r--r-- 1 kirkby staff 307 Jul 12 15:18 sagetex-2.2.5
-[kirkby`@`bsd sage-4.5.rc0]$ 
+[kirkby@bsd sage-4.5.rc0]$ 
 ```
 
 
@@ -337,21 +337,21 @@ However, equally reproducible is fact this test passes at the command line if on
 
 
 ```
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
+[kirkby@bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
 sage -t -long "devel/sage/sage/interfaces/sage0.py"         
 	 [16.9 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 16.9 seconds
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
+[kirkby@bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
 sage -t -long "devel/sage/sage/interfaces/sage0.py"         
 	 [12.7 s]
  
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 12.7 seconds
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
+[kirkby@bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py
 sage -t -long "devel/sage/sage/interfaces/sage0.py"         
 	 [18.6 s]
  
@@ -447,14 +447,14 @@ Replying to [comment:7 drkirkby]:
 > I've attached the ptestlong.log (renamed to bsd.math+7379+9187-ptestlong.log). After that one test failed, I run it again from the command line:
 
 ```
-[kirkby`@`bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py                 
+[kirkby@bsd sage-4.5.rc0]$ ./sage -t  -long devel/sage/sage/interfaces/sage0.py                 
 sage -t -long "devel/sage/sage/interfaces/sage0.py"         
 	 [13.7 s]
 
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 13.7 seconds
-[kirkby`@`bsd sage-4.5.rc0]$ 
+[kirkby@bsd sage-4.5.rc0]$ 
 ```
 
 > 

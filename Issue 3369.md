@@ -1,6 +1,6 @@
 # Issue 3369: bool(x<0) should raise an error rather than return False
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3369
 
 Original creator: robertwb
 

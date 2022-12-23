@@ -1,6 +1,6 @@
 # Issue 4252: Arrangements / PermutationsNK iterator is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4252
 
 Original creator: saliola
 

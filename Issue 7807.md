@@ -1,6 +1,6 @@
 # Issue 7807: region_plot does not pass extra arguments to show
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7807
 
 Original creator: jason
 

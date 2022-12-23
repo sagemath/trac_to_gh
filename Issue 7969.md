@@ -1,6 +1,6 @@
 # Issue 7969: escaped backslash at end of line in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7969
 
 Original creator: wjp
 

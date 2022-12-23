@@ -1,6 +1,6 @@
 # Issue 3431: [with patch, needs review] QEPCAD interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3431
 
 Original creator: cwitty
 

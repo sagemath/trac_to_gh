@@ -1,6 +1,6 @@
 # Issue 3790: limit gets stuck without computing anything
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3790
 
 Original creator: mhansen
 

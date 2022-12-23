@@ -1,6 +1,6 @@
 # Issue 1006: Port Sage to 64 bit OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1006
 
 Original creator: mabshoff
 

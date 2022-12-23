@@ -1,6 +1,6 @@
 # Issue 3501: [with patch, needs review] charpoly of zero matrix over a cyclotomic field fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3501
 
 Original creator: craigcitro
 

@@ -1,6 +1,6 @@
 # Issue 8782: pari does not work under Cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8782
 
 Original creator: mhansen
 

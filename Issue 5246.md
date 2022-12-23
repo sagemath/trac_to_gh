@@ -1,6 +1,6 @@
 # Issue 5246: installing R package in r.console() doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5246
 
 Original creator: schilly
 

@@ -1,6 +1,6 @@
 # Issue 480: Make Sage work with SELinux on Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/480
 
 Original creator: mabshoff
 

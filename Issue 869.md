@@ -1,6 +1,6 @@
 # Issue 869: [with patch] graphs: bipartite graph functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/869
 
 Original creator: jason
 

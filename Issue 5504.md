@@ -1,6 +1,6 @@
 # Issue 5504: fix shell script "sage"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5504
 
 Original creator: dangrayson
 

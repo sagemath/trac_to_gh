@@ -1,6 +1,6 @@
 # Issue 300: Consider filling out the blanks in Pyrex' PyObjects
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/300
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4935: is_perfect_power leaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4935
 
 Original creator: mabshoff
 

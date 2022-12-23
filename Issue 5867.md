@@ -1,6 +1,6 @@
 # Issue 5867: Fix gd build on FreeBSD
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5867
 
 Original creator: pjeremy
 

@@ -1,6 +1,6 @@
 # Issue 3661: move sage/combinat/family.py into the main tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3661
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 1514: fix breakage and lameness in foo? and foo?? especially in the notebook.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1514
 
 Original creator: was
 

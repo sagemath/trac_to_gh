@@ -1,6 +1,6 @@
 # Issue 4929: [with patch, needs review] 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4929
 
 Original creator: mabshoff
 

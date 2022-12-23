@@ -1,6 +1,6 @@
 # Issue 2507: Docstrings and Doctests for rings/quotient_ring_element.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2507
 
 Original creator: cswiercz
 

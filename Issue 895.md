@@ -1,6 +1,6 @@
 # Issue 895: [with patch] .inverse() method for matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/895
 
 Original creator: mhansen
 

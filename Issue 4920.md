@@ -1,6 +1,6 @@
 # Issue 4920: convert sage.modular.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4920
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 2349: homogenize does different things in different contexts
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2349
 
 Original creator: ncalexan
 

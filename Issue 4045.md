@@ -1,6 +1,6 @@
 # Issue 4045: [with patch, needs review] fix PolyBoRi GB calculations in some situations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4045
 
 Original creator: malb
 

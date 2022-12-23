@@ -1,6 +1,6 @@
 # Issue 11: doctest failure in functions/special.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/11
 
 Original creator: was
 

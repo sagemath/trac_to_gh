@@ -1,6 +1,6 @@
 # Issue 5453: [with patch, needs review] Create a ring for working with polynomials in countably infinitely many variables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5453
 
 Original creator: mhansen
 

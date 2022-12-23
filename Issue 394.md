@@ -1,6 +1,6 @@
 # Issue 394: flatten command for nested lists
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/394
 
 Original creator: mhampton
 

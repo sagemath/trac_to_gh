@@ -1,6 +1,6 @@
 # Issue 8171: New Cbc spkg with Cplex support
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8171
 
 Original creator: ncohen
 

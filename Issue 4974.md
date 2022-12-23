@@ -1,6 +1,6 @@
 # Issue 4974: make sage.libs.pari.gen._normalize_slice a miscellaneous function for dealing with slices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4974
 
 Original creator: jason
 

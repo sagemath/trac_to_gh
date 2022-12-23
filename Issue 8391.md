@@ -1,6 +1,6 @@
 # Issue 8391: Temporary ugly fix: Change 'top' to 'prstat' on Solaris for 'getusage.py'
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8391
 
 Original creator: drkirkby
 
@@ -80,7 +80,7 @@ Here is the output of the same two commands with the changes I will soon attach.
 
 
 ```
-drkirkby`@`redstart:~/fresh/sage-4.3.3$ ./sage
+drkirkby@redstart:~/fresh/sage-4.3.3$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: top()

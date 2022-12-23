@@ -1,6 +1,6 @@
 # Issue 6329: optional doctest failure -- bad data type breakage in the sage-->magma interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6329
 
 Original creator: was
 

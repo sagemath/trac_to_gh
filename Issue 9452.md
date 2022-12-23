@@ -1,6 +1,6 @@
 # Issue 9452: strip_automount_prefix() is useless
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9452
 
 Original creator: rlm
 

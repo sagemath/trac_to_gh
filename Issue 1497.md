@@ -1,6 +1,6 @@
 # Issue 1497: atlas-3.8.p4.spkg fails to build on Intel Core 2 Duo with 32-bit operating system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1497
 
 Original creator: cwitty
 

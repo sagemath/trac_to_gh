@@ -1,6 +1,6 @@
 # Issue 3495: [with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3495
 
 Original creator: craigcitro
 

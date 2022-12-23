@@ -1,6 +1,6 @@
 # Issue 23: (Z/nZ)^k problem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/23
 
 Original creator: was
 

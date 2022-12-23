@@ -1,6 +1,6 @@
 # Issue 9662: gp(string) always returns a value, even when it should not
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9662
 
 Original creator: jdemeyer
 

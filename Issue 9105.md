@@ -1,6 +1,6 @@
 # Issue 9105: Improve the category primer and tutorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9105
 
 Original creator: nthiery
 

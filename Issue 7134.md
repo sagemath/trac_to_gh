@@ -1,6 +1,6 @@
 # Issue 7134: ntl 5.4.2.p9 always builds 32-bit libraries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7134
 
 Original creator: drkirkby
 
@@ -18,11 +18,11 @@ sing
 We can see that _ntl_ is building 32-bit libraries, despite the fact SAGE64 was set to "yes"
 
 ```
-drkirkby`@`swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *ntl*
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *ntl*
 libntl-5.4.2.so:        ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped
 libntl.a:       current ar archive, not a dynamic executable or shared object
 libntl.so:      ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped
-drkirkby`@`swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $
 ```
 
 

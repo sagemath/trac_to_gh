@@ -1,6 +1,6 @@
 # Issue 4361: [with patch, needs review] poles of gamma on integers
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4361
 
 Original creator: burcin
 

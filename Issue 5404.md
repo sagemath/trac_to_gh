@@ -1,6 +1,6 @@
 # Issue 5404: deprecate numerical_sqrt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5404
 
 Original creator: robertwb
 

@@ -1,6 +1,6 @@
 # Issue 7922: Pickling fails in WeightRing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7922
 
 Original creator: nthiery
 

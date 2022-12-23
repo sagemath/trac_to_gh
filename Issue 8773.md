@@ -1,6 +1,6 @@
 # Issue 8773: GCC-4.5.0 breaks GAP -- the workspace is broken, hence gap('2+2') fails.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8773
 
 Original creator: was
 
@@ -13,7 +13,7 @@ CC:  wjp
 If you build GAP as part of sage-4.4 with GCC-4.5.0 (on lena):
 
 ```
-[wstein`@`lena sage-4.4]$ ./sage
+[wstein@lena sage-4.4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: gap('2+3')
@@ -66,7 +66,7 @@ TypeError: Unable to start gap
 Exactly the same thing works fine with Sage-4.3.3 built using GCC-4.4.x on lena:
 
 ```
-[wstein`@`lena sage-4.4]$ ../sage-4.3.3/sage
+[wstein@lena sage-4.4]$ ../sage-4.3.3/sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: gap('2+3')
@@ -97,7 +97,7 @@ Comment by was created at 2010-04-26 23:38:17
 I tried building without -O2, and the problem vanishes.   I did this by *brutally* deleting -O2 everywhere in the src tree (!).   Then I built and now suddenly GAP works:
 
 ```
-[wstein`@`lena sage-4.4]$ ./sage
+[wstein@lena sage-4.4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: gap('2+2')

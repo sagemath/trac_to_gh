@@ -1,6 +1,6 @@
 # Issue 9590: Doctest failures in cone.py and toric_lattice_element.pyx on 32-bit Linux
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9590
 
 Original creator: mpatel
 
@@ -59,7 +59,7 @@ Comment by leif created at 2010-07-24 13:38:18
 
 
 ```sh
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ ../../sage -t -long sage/geometry/
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ ../../sage -t -long sage/geometry/
 sage -t -long "devel/sage-9590/sage/geometry/fan.py"        
 	 [10.9 s]
 sage -t -long "devel/sage-9590/sage/geometry/polytope.py"   
@@ -82,15 +82,15 @@ sage -t -long "devel/sage-9590/sage/geometry/toric_lattice_element.pyx"
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 193.4 seconds
-leif`@`californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ hg log | head -n 11
+leif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ hg log | head -n 11
 changeset:   14742:ebb1e171e138
 tag:         tip
-user:        Andrey Novoseltsev <novoselt`@`gmail.com>
+user:        Andrey Novoseltsev <novoselt@gmail.com>
 date:        Fri Jul 23 23:09:59 2010 -0600
 summary:     Trac 9590: Doctest failures in cone and toric_lattice_element.
 
 changeset:   14741:af5f40a73eda
-user:        Mitesh Patel <qed777`@`gmail.com>
+user:        Mitesh Patel <qed777@gmail.com>
 date:        Wed Jul 21 20:13:55 2010 -0700
 summary:     4.5.2.alpha0
 
@@ -125,7 +125,7 @@ Replying to [comment:3 novoselt]:
 This is on an otherwise idle Core2 (64-bit):
 
 ```sh
-leif`@`quadriga:~/sage-4.5.2.alpha0$ ./sage -t -long devel/sage/sage/geometry/
+leif@quadriga:~/sage-4.5.2.alpha0$ ./sage -t -long devel/sage/sage/geometry/
 sage -t -long "devel/sage/sage/geometry/__init__.py"
          [0.0 s]
 sage -t -long "devel/sage/sage/geometry/toric_lattice_element.pyx"
@@ -171,7 +171,7 @@ If anyone wants this to be fixed in a different way, here are two alternatives i
 diff --git a/sage/geometry/cone.py b/sage/geometry/cone.py
 --- a/sage/geometry/cone.py
 +++ b/sage/geometry/cone.py
-`@``@` -557,8 +557,12 `@``@`
+@@ -557,8 +557,12 @@
          TESTS::
  
              sage: c = Cone([(1,0), (0,1)])
@@ -189,7 +189,7 @@ diff --git a/sage/geometry/cone.py b/sage/geometry/cone.py
 diff --git a/sage/geometry/toric_lattice_element.pyx b/sage/geometry/toric_lattice_element.pyx
 --- a/sage/geometry/toric_lattice_element.pyx
 +++ b/sage/geometry/toric_lattice_element.pyx
-`@``@` -233,8 +233,13 `@``@`
+@@ -233,8 +233,13 @@
              ...
              TypeError: mutable vectors are unhashable
              sage: n.set_immutable()

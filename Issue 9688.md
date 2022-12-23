@@ -1,6 +1,6 @@
 # Issue 9688: sage notebook: Output of sh.eval? is corrupted
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9688
 
 Original creator: was
 

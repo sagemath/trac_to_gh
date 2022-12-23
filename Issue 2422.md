@@ -1,6 +1,6 @@
 # Issue 2422: Update Programming Guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2422
 
 Original creator: jason
 

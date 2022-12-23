@@ -1,6 +1,6 @@
 # Issue 7286: After installing sphinx-0.6.3.p1.spkg, error occurs during docbuild
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7286
 
 Original creator: timdumol
 

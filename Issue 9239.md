@@ -1,6 +1,6 @@
 # Issue 9239: delete the (ridiculous) method __copy__ from matrix0.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9239
 
 Original creator: was
 

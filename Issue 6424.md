@@ -1,6 +1,6 @@
 # Issue 6424: One can no longer convert I=sqrt(-1) to sympy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6424
 
 Original creator: drkirkby
 

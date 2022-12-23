@@ -1,6 +1,6 @@
 # Issue 940: read large output from octave (and probably matlab) takes *forever*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/940
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7226: Spanish doc #14 "Basic Algebra and Calculus"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7226
 
 Original creator: Loufer
 

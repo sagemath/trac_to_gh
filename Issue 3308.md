@@ -1,6 +1,6 @@
 # Issue 3308: [with patch; needs review] Update sage-sbuildhack to work with new sbuild in Debian
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3308
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 1563: dash r
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1563
 
 Original creator: rlm
 

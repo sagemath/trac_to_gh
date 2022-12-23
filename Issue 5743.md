@@ -1,6 +1,6 @@
 # Issue 5743: Solaris 10/Sparc: Fix numerical noise issues in doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5743
 
 Original creator: mabshoff
 

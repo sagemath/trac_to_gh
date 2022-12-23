@@ -1,6 +1,6 @@
 # Issue 3383: division_points() fails for elliptic curve over number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3383
 
 Original creator: cremona
 
@@ -166,7 +166,7 @@ Comment by mabshoff created at 2008-08-13 07:23:35
 This works for me:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.alpha1, Release Date: 2008-08-11                  |

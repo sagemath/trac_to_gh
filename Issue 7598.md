@@ -1,6 +1,6 @@
 # Issue 7598: NumberField embedding slightly off
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7598
 
 Original creator: mhansen
 

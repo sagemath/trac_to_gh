@@ -1,6 +1,6 @@
 # Issue 5585: [with patch, needs review]
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5585
 
 Original creator: malb
 

@@ -1,6 +1,6 @@
 # Issue 4437: Sage 3.2.a2: numerical noise in sage/graphs/graph.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4437
 
 Original creator: mabshoff
 

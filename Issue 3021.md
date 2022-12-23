@@ -1,6 +1,6 @@
 # Issue 3021: add curl and divergence functions to symbolic vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3021
 
 Original creator: jason
 

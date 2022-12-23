@@ -1,6 +1,6 @@
 # Issue 2222: sage-2.10.2.alpha1 -- bessel_K is now broken -- higher precision doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2222
 
 Original creator: was
 

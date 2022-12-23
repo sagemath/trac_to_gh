@@ -1,6 +1,6 @@
 # Issue 8303: Sage cannot work with files with spaces in their names
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8303
 
 Original creator: ddrake
 

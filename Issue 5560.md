@@ -1,6 +1,6 @@
 # Issue 5560: [with patch, needs review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5560
 
 Original creator: rhinton
 

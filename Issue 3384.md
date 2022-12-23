@@ -1,6 +1,6 @@
 # Issue 3384: Issues a warning for all unsupported / poorly supported operating systems.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3384
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 5536: [with patch, review pending] trivial docstring patches for permgp.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5536
 
 Original creator: jhpalmieri
 

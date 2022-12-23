@@ -1,6 +1,6 @@
 # Issue 5700: [with patch, needs review] 3.4.1.rc1: reference manual fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5700
 
 Original creator: jhpalmieri
 

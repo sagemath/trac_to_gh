@@ -1,6 +1,6 @@
 # Issue 1930: Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1930
 
 Original creator: mabshoff
 

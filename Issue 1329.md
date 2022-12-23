@@ -1,6 +1,6 @@
 # Issue 1329: 2.8.14/Solaris: real_rqdf.pyx compile fixes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1329
 
 Original creator: mabshoff
 

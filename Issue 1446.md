@@ -1,6 +1,6 @@
 # Issue 1446: make check needs to error out on build failure instead of runnind doctests
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1446
 
 Original creator: mabshoff
 

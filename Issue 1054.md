@@ -1,6 +1,6 @@
 # Issue 1054: add number fields documentation to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1054
 
 Original creator: was
 

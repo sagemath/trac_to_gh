@@ -1,6 +1,6 @@
 # Issue 7732: remove binary files from ECL distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7732
 
 Original creator: was
 

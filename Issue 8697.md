@@ -1,6 +1,6 @@
 # Issue 8697: Add basic generic test methods
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8697
 
 Original creator: nthiery
 

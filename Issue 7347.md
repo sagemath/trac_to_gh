@@ -1,6 +1,6 @@
 # Issue 7347: numerical_integral(SR(0), 0, 1) gives an error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7347
 
 Original creator: jason
 

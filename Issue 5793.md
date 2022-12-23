@@ -1,6 +1,6 @@
 # Issue 5793: [with patch, needs review] New algorithm for Max Clique in Graph class using Cython
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5793
 
 Original creator: ncohen
 

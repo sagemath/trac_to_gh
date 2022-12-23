@@ -1,6 +1,6 @@
 # Issue 3770: multiple copies of dsage_setup.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3770
 
 Original creator: tabbott
 

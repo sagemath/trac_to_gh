@@ -1,6 +1,6 @@
 # Issue 3189: add 64 bit OSX build support to pycrypto
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3189
 
 Original creator: mabshoff
 

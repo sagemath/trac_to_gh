@@ -1,6 +1,6 @@
 # Issue 7795: MPolynomialRing segfaults when getting high exponents
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7795
 
 Original creator: SimonKing
 
@@ -28,7 +28,7 @@ z^6561 + T^2187*z^2187
 sage: (z^3 + T*z)^(3^10)
 z^177147 + T^59049*z^59049
 sage: (z^3 + T*z)^(3^15)
-/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython "$`@`" -i
+/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython "$@" -i
 ```
 
 

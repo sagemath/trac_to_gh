@@ -1,6 +1,6 @@
 # Issue 4488: notebook -- login page not given when logged out and trying to view your worksheets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4488
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 7930: strange bug for elliptic curves over number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7930
 
 Original creator: wuthrich
 

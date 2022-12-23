@@ -1,6 +1,6 @@
 # Issue 7136: gp always building 32-bit on Solaris
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7136
 
 Original creator: drkirkby
 
@@ -20,7 +20,7 @@ Using
 Looking at the directory $SAGE_HOME/local/bin, we can see that _pg_ is being built as 32-bit binary, despite the fact that SAGE64 was set to "yes"
 
 ```
-drkirkby`@`swan:[~/sage/gcc64-sage-4.1.2.rc0/local/bin] $ file gp
+drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/bin] $ file gp
 gp:             ELF 32-bit MSB executable SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
 ```
 

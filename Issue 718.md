@@ -1,6 +1,6 @@
 # Issue 718: still rechable memory: various pyx-files instanciated their own PariInstance
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/718
 
 Original creator: mabshoff
 

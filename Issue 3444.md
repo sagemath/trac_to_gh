@@ -1,6 +1,6 @@
 # Issue 3444: subgroup/is_subgroup give misleading results
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3444
 
 Original creator: wjp
 

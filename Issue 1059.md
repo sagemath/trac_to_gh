@@ -1,6 +1,6 @@
 # Issue 1059: fix lcalc installation on OSX 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1059
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 9916: ECL has too few arguments and two many on file dpp.c
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9917
 
 Original creator: drkirkby
 
@@ -160,7 +160,7 @@ Comment by leif created at 2010-09-17 01:55:09
 diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
 --- ecl-10.2.1.p1/src/src/c/dpp.c	2010-02-13 15:04:41.000000000 +0100
 +++ ecl-10.4.1/src/src/c/dpp.c	2010-04-04 16:31:27.000000000 +0200
-`@``@` -251,13 +251,26 `@``@`
+@@ -251,13 +251,26 @@
  }
  
  char *
@@ -189,7 +189,7 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
  				pushstr("Cnil");
  				pushc(0);
  			} else {
-`@``@` -283,19 +296,20 `@``@`
+@@ -283,19 +296,20 @@
  }
  
  char *
@@ -213,8 +213,8 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
  	if (name == NULL) {
  		name = poolp;
  		printf("\nUnknown symbol: %s\n", name);
-`@``@` -387,7 +401,10 `@``@`
- 		} else if (c == '`@`') {
+@@ -387,7 +401,10 @@
+ 		} else if (c == '@') {
  			c = readc();
  			if (c == '\'') {
 -				(void)read_symbol();
@@ -223,9 +223,9 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
 +			} else if (c == '[') {
 +				(void)read_symbol(1);
  				poolp--;
- 			} else if (c == '`@`') {
+ 			} else if (c == '@') {
  				pushc(c);
-`@``@` -448,7 +465,7 `@``@`
+@@ -448,7 +465,7 @@
  get_function(void)
  {
  	function = read_function();
@@ -234,7 +234,7 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
  	if (function_symbol == NULL) {
  		function_symbol = poolp;
  		pushstr("Cnil");
-`@``@` -675,9 +692,9 `@``@`
+@@ -675,9 +692,9 @@
    }
    if (nopt == 0 && !rest_flag && !key_flag) {
      put_lineno();
@@ -246,7 +246,7 @@ diff -Nu ecl-10.2.1.p1/src/src/c/dpp.c ecl-10.4.1/src/src/c/dpp.c
    } else {
      simple_varargs = !rest_flag && !key_flag && ((nreq + nopt) < 32);
      if (key_flag) {
-`@``@` -833,7 +850,14 `@``@`
+@@ -833,7 +850,14 @@
  	} else if (c == '\'') {
  		char *p;
  		poolp = pool;

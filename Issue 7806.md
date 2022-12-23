@@ -1,6 +1,6 @@
 # Issue 7806: Clarify what a MIP variable is
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7806
 
 Original creator: ncohen
 

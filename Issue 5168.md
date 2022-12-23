@@ -1,6 +1,6 @@
 # Issue 5168: [with patch, needs review] matrix0.pyx: fix doctest for commutator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5168
 
 Original creator: jhpalmieri
 
@@ -16,7 +16,7 @@ Here is the extent of the docstring for the commutator method in matrix0.pyx:
         Return the commutator self*other - other*self.
 
         EXAMPLES:
-            sage: A = Matrix(QQ[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro), 2, 2, range(4))
+            sage: A = Matrix(QQ[['t']], 2, 2, range(4))
 ```
 
 Fix the doctest so that it actually computes a commutator.

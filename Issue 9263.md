@@ -1,6 +1,6 @@
 # Issue 9263: airy_ai yields wrong results in arbitrary precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9263
 
 Original creator: zimmerma
 

@@ -1,6 +1,6 @@
 # Issue 5363: Sage 3.4.alpha0: -sdist issue: MANIFEST.in needs to add the missing 186 files
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5363
 
 Original creator: mabshoff
 

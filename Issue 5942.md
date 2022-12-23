@@ -1,6 +1,6 @@
 # Issue 5942: bug in RealIntervalField printing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5942
 
 Original creator: ylchapuy
 

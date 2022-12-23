@@ -1,6 +1,6 @@
 # Issue 7153: Doctest failures don't kill processes and bring system to a halt.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7153
 
 Original creator: drkirkby
 
@@ -23,7 +23,7 @@ I've marked this as *critical*, as for Solaris at least, it makes testing Sage v
 
 
 ```
-drkirkby`@`swan:[~/sage/gcc32-sage-4.1.2.rc0] $ sage -t ./devel/sage-main/build/sa ge/symbolic/assumptions.py
+drkirkby@swan:[~/sage/gcc32-sage-4.1.2.rc0] $ sage -t ./devel/sage-main/build/sa ge/symbolic/assumptions.py
 sage -t  "devel/sage-main/build/sage/symbolic/assumptions.py"
 
 ```

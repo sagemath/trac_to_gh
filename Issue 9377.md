@@ -1,6 +1,6 @@
 # Issue 9377: unable to coerce matrix over finite field into magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9377
 
 Original creator: mariah
 

@@ -1,6 +1,6 @@
 # Issue 4912: convert sage.geometry.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4912
 
 Original creator: mhansen
 

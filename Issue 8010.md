@@ -1,6 +1,6 @@
 # Issue 8010: f2py broken on some mac systems
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8010
 
 Original creator: flawrence
 

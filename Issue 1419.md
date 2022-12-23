@@ -1,6 +1,6 @@
 # Issue 1419: notebook java3d plotting requires Internet access
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1419
 
 Original creator: cwitty
 

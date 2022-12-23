@@ -1,6 +1,6 @@
 # Issue 9945: Parallel build of Singular 3-1-1-4-package fails in other cases
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9946
 
 Original creator: mpatel
 

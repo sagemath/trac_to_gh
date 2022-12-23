@@ -1,6 +1,6 @@
 # Issue 4005: [with patch, needs review] sage-coverage screws up with lambda functions as default arguments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4005
 
 Original creator: rlm
 

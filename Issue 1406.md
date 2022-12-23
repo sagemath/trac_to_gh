@@ -1,6 +1,6 @@
 # Issue 1406: bug in coercion of multivariate polynomials (possibly libsingular related)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1406
 
 Original creator: was
 

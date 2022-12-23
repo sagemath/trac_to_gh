@@ -1,6 +1,6 @@
 # Issue 9767: Fix PolyBoRi's broken dynamic libraries
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9768
 
 Original creator: AlexanderDreyer
 

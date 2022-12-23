@@ -1,6 +1,6 @@
 # Issue 9753: Simplify NumberFieldIdeal.gens_reduced()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9753
 
 Original creator: jdemeyer
 

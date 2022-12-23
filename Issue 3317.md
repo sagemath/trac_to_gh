@@ -1,6 +1,6 @@
 # Issue 3317: a citation system for Sage components
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3317
 
 Original creator: mhampton
 

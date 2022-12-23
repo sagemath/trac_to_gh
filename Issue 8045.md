@@ -1,6 +1,6 @@
 # Issue 8045: add elliptic integrals to the reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8045
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 8282: implement victor_miller_basis over an arbitrary base ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8282
 
 Original creator: AlexGhitza
 

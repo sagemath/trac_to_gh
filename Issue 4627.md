@@ -1,6 +1,6 @@
 # Issue 4627: CRT_list in HNF dominates computation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4627
 
 Original creator: ncalexan
 
@@ -23,7 +23,7 @@ it. Nick, are you going to open a ticket?
 Clément
 
 William Stein a écrit :
-On Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander`@`gmail.com> wrote:
+On Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander@gmail.com> wrote:
 Hi William,
 
 The attached patch prevents recomputing a CRT a number of times when doing a

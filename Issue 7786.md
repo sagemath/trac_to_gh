@@ -1,6 +1,6 @@
 # Issue 7786: Restructure templates to idiomatic Jinja
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7786
 
 Original creator: timdumol
 

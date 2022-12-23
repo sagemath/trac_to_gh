@@ -1,6 +1,6 @@
 # Issue 7344: New libjpeg package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7344
 
 Original creator: timdumol
 

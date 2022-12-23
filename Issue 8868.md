@@ -1,6 +1,6 @@
 # Issue 8868: Make R graphics work regardless of X and other things
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8868
 
 Original creator: kcrisman
 

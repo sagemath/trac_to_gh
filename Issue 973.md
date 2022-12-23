@@ -1,6 +1,6 @@
 # Issue 973: Unhandled SIGSEGV: A segmentation fault occured in SAGE matrix.matrix2.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/973
 
 Original creator: jsp
 
@@ -49,7 +49,7 @@ The program (see below) uses methods from sage.matrix.matrix2.pyx:
 
 ```
 ##########################################################################
-#  Copyright (C) 2006 Jaap Spies, jaapspies`@`gmail.com
+#  Copyright (C) 2006 Jaap Spies, jaapspies@gmail.com
 #
 #  Distributed under the terms of the GNU General Public License (GPL):
 #

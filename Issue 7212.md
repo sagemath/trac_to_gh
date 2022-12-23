@@ -1,6 +1,6 @@
 # Issue 7212: [with patch, needs review] steenrod algebra multiplication bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7212
 
 Original creator: jhpalmieri
 

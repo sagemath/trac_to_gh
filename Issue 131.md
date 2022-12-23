@@ -1,6 +1,6 @@
 # Issue 131: doctests -- EVERY function/method in the SAGE library *must* have a doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/131
 
 Original creator: was
 

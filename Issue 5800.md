@@ -1,6 +1,6 @@
 # Issue 5800: Nice wrapper for bitset
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5800
 
 Original creator: robertwb
 

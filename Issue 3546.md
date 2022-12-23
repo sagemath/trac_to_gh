@@ -1,6 +1,6 @@
 # Issue 3546: line3d with jmol draws curves instead of straight lines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3546
 
 Original creator: mhansen
 

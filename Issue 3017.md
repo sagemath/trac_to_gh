@@ -1,6 +1,6 @@
 # Issue 3017: invalid link after make install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3017
 
 Original creator: zimmerma
 
@@ -11,7 +11,7 @@ Assignee: mabshoff
 An invalid link is present in sage 3.0 (after make install):
 
 ```
-[root`@`achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori
+[root@achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori
 lrwxrwxrwx 1 zimmerma cacao 39 2008-04-24 14:43 ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori -> ../../../share/polybori/pyroot/polybori
 ```
 

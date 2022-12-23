@@ -1,6 +1,6 @@
 # Issue 9540: Testing whether a Gaussian integer is in ZZ is extremely slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9540
 
 Original creator: fredrik.johansson
 

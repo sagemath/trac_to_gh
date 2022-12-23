@@ -1,6 +1,6 @@
 # Issue 9113: sage-4.4.3.alpha1 -lpng blocker issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9113
 
 Original creator: was
 

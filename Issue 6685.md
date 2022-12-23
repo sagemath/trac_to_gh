@@ -1,6 +1,6 @@
 # Issue 6685: include pictures in the reference manual and notebook introspection
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6685
 
 Original creator: jhpalmieri
 

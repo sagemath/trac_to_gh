@@ -1,6 +1,6 @@
 # Issue 2491: Showing source from sloane_functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2491
 
 Original creator: jsp
 

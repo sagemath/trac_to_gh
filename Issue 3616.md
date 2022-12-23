@@ -1,6 +1,6 @@
 # Issue 3616: flint hangs on itanium
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3616
 
 Original creator: was
 

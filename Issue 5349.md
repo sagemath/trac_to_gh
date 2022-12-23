@@ -1,6 +1,6 @@
 # Issue 5349: [with patch, needs review] Make extensions linking against libSingular depend on $SAGE_LOCAL/include/libsingular.h
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5349
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 5258: escape html strings with cgi.escape instead of custom (and lacking) regexp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5258
 
 Original creator: jason
 

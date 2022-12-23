@@ -1,6 +1,6 @@
 # Issue 8105: LaTex to Sage worksheet conversion system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8105
 
 Original creator: rbeezer
 

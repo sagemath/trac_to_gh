@@ -1,6 +1,6 @@
 # Issue 6006: Bring plot/point.py to 100% coverage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6006
 
 Original creator: kcrisman
 

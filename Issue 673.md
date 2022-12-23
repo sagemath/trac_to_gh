@@ -1,6 +1,6 @@
 # Issue 673: Solaris 10: rings/complex_double.pyx doctests failure: inf vs. Infinity
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/673
 
 Original creator: mabshoff
 

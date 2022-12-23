@@ -1,6 +1,6 @@
 # Issue 1049: [with patch] graphs: transitive reduction function
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1049
 
 Original creator: jason
 

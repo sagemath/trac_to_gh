@@ -1,6 +1,6 @@
 # Issue 5492: implement sage -bt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5492
 
 Original creator: AlexGhitza
 

@@ -1,6 +1,6 @@
 # Issue 721: refactoring ell_rational_field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/721
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 6870: [with patch, needs review] Bug in binomial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6870
 
 Original creator: hgranath
 

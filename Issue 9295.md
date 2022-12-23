@@ -1,6 +1,6 @@
 # Issue 9295: Add an spkg-check file for Python
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9295
 
 Original creator: drkirkby
 

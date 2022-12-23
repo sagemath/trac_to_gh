@@ -1,6 +1,6 @@
 # Issue 5447: upgrade to jquery 1.3 and jqueryui 1.7
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5447
 
 Original creator: jason
 

@@ -1,6 +1,6 @@
 # Issue 4393: Sage 3.1.4: magma related optional doctest failure in sage/structure/element.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4393
 
 Original creator: mabshoff
 
@@ -10,7 +10,7 @@ Assignee: mabshoff
 
 
 ```
-mabshoff`@`iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/structure/element.pyx
+mabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/structure/element.pyx
 sage -t -long -optional devel/sage/sage/structure/element.pyx
 **********************************************************************
 File "/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/element.py", line 1566:
@@ -146,7 +146,7 @@ Comment by mabshoff created at 2008-10-31 20:24:02
 Positive review. The doctests now pass:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ 
 ./sage -t -long -optional devel/sage/sage/structure/element.pyx
 sage -t -long -optional devel/sage/sage/structure/element.pyx
 	 [7.0 s]

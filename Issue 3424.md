@@ -1,6 +1,6 @@
 # Issue 3424: jordan_form gives incorrect results due to imprecise roots
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3424
 
 Original creator: johnwilmes
 

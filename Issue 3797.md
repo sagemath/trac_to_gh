@@ -1,6 +1,6 @@
 # Issue 3797: [with patch, needs review] several improvements to graph generation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3797
 
 Original creator: rlm
 

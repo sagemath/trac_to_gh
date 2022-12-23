@@ -1,6 +1,6 @@
 # Issue 7079: parallel doctest broken in Sage 4.1.2.alpha4 if HOME/.sage/tmp doesn't exist
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7079
 
 Original creator: mvngu
 
@@ -184,7 +184,7 @@ sage: diff(csch(x), x) == diff(Integer(1)/sinh(x), x)
 -coth(x)*csch(x) == -cosh(x)/sinh(x)^2
 sage: bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))
 /Users/mafwc/sage-4.1.2.alpha4/local/bin/sage-sage: line 200:   
-378 Abort trap  sage-ipython "$`@`" -i
+378 Abort trap  sage-ipython "$@" -i
 ```
 
 compared with

@@ -1,6 +1,6 @@
 # Issue 3322: [with spkg needs review] new python spkg with -j enabled
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3322
 
 Original creator: gfurnish
 

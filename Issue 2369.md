@@ -1,6 +1,6 @@
 # Issue 2369: clean up the Notebook HTML & CSS
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2369
 
 Original creator: TimothyClemans
 

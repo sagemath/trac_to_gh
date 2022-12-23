@@ -1,6 +1,6 @@
 # Issue 9198: Non-existent username does not yield error message when sharing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9198
 
 Original creator: DanaErnst
 

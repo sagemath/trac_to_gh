@@ -1,6 +1,6 @@
 # Issue 767: animate has cryptic error message when imagemagick is not installed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/767
 
 Original creator: moretti
 
@@ -56,7 +56,7 @@ Comment by mabshoff created at 2008-09-30 17:23:25
 Positive review on the patch. One small issue is that the animate.py doctest fails if convert is not installed:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t devel//sage/sage/plot/animate.py 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t devel//sage/sage/plot/animate.py 
 sage -t  devel/sage/sage/plot/animate.py                    
 **********************************************************************
 File "/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/animate.py", line 59:

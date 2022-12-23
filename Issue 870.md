@@ -1,6 +1,6 @@
 # Issue 870: singular.spkg requires bison to build
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/870
 
 Original creator: mabshoff
 
@@ -27,20 +27,20 @@ library. There are three ways to solve this issue for you:
 (b) replace
 
 $(srcdir)/readcf.cc: readcf.y
-        $(BISON) $< -o $`@`; \
+        $(BISON) $< -o $@; \
 
 with
 
 $(srcdir)/readcf.cc: readcf.y
-                `@`if test -r $`@`; then \
-                        touch $`@` ;\
+                @if test -r $@; then \
+                        touch $@ ;\
                 else \
                 if test "${BISON}" = where-is-your-bison; then \
                         echo Error: no bison given, could not rebuilt
 grammar.cc; \
                         exit 1; \
                 fi; \
-                $(BISON) $< -o $`@`; \
+                $(BISON) $< -o $@; \
                 fi
 
 in the singular spkg / factory/GNUmakefile.in or drop in the attached file.

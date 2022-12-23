@@ -1,6 +1,6 @@
 # Issue 3441: [with patch, needs review] Make binary code words longer.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3441
 
 Original creator: rlm
 

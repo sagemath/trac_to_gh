@@ -1,6 +1,6 @@
 # Issue 6414: OS X binaries should issue a better warning on incompatible CPUs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6414
 
 Original creator: GeorgSWeber
 
@@ -15,7 +15,7 @@ Currently, every now and then a user reports on sage-support, that he got an err
 ```
 /Applications/sage-4.0.1-OSX10.5-PowerPC-PowerMacintosh-Darwin/sage/
 local/bin/sage-sage: line 198:   407 Illegal instruction     sage-
-ipython "$`@`" -i
+ipython "$@" -i
 ```
 
 This is e.g. the case if a Sage binary built on a MacPPC with a G5 processor (typically the one the OS X 10.5 bdist is created on) is used on a MacPPC with only a G4 processor.

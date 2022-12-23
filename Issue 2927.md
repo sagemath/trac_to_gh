@@ -1,6 +1,6 @@
 # Issue 2927: [with spkg, needs review] gcc 4.3: make Singular.spkg compile
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2927
 
 Original creator: mabshoff
 

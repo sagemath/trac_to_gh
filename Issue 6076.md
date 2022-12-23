@@ -1,6 +1,6 @@
 # Issue 6076: Allow to redefine the python symbol in the Notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6076
 
 Original creator: certik
 

@@ -1,6 +1,6 @@
 # Issue 6389: expose building documentation for user modules not in the Sage library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6389
 
 Original creator: malb
 

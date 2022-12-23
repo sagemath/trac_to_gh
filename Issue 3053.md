@@ -1,6 +1,6 @@
 # Issue 3053: notebook -- new cell_resize doesn't respect %hide at the beginning of a cell
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3053
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5259: invalid array elements sent to matplotlib quiver, causing blank plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5259
 
 Original creator: jason
 

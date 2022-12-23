@@ -1,6 +1,6 @@
 # Issue 3945: sage -gdb doesn't work under OS X 10.5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3945
 
 Original creator: was
 
@@ -57,7 +57,7 @@ Comment by mabshoff created at 2008-10-07 22:21:20
 Ok, I think I am now hitting the same problem. On sage.math:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -gdb
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/bin/sage-gdb-pythonstartup
@@ -111,7 +111,7 @@ The following patchlet gets us a Python prompt, but this is obviously not the re
 diff -r cdf30964f1fe sage-gdb-pythonstartup
 --- a/sage-gdb-pythonstartup    Tue Sep 30 16:55:34 2008 -0700
 +++ b/sage-gdb-pythonstartup    Tue Oct 07 15:21:02 2008 -0700
-`@``@` -3,5 +3,5 `@``@`
+@@ -3,5 +3,5 @@
  sys.argv = ['', '-rc', os.environ['IPYTHONRC'], \
                  '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']
  import IPython

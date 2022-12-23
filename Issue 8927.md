@@ -1,6 +1,6 @@
 # Issue 8927: is_triangle_free
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8927
 
 Original creator: ncohen
 

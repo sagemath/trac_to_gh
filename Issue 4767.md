@@ -1,6 +1,6 @@
 # Issue 4767: [with patch; needs review] magma/sage interface -- speed up conversion of integers and rationals to Magma
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4767
 
 Original creator: was
 

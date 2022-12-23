@@ -1,6 +1,6 @@
 # Issue 5727: Improve doctest coverage for sage/modular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5727
 
 Original creator: davidloeffler
 

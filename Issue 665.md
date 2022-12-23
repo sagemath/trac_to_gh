@@ -1,6 +1,6 @@
 # Issue 665: notebook() failure under VMware Player
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/665
 
 Original creator: jvoight
 

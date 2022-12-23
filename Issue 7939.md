@@ -1,6 +1,6 @@
 # Issue 7939: shorten doctests in sage/rings/multi_polynomial_ideal.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7939
 
 Original creator: rlm
 

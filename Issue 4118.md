@@ -1,6 +1,6 @@
 # Issue 4118: [with patch, needs review] fix various Pari-related issues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4118
 
 Original creator: craigcitro
 

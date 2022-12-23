@@ -1,6 +1,6 @@
 # Issue 9925: Doctest error in sage/schemes/generic/toric_divisor.py on OS X
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9926
 
 Original creator: mpatel
 

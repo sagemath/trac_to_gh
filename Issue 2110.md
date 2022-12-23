@@ -1,6 +1,6 @@
 # Issue 2110: Cython annotation should be available more easily
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2110
 
 Original creator: roed
 

@@ -1,6 +1,6 @@
 # Issue 8090: genus2reduction no building on Open Solaris x64. (32/64 bit issue)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8090
 
 Original creator: drkirkby
 

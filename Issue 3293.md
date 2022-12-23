@@ -1,6 +1,6 @@
 # Issue 3293: [with patch, needs review] MPolynomialRing_generic.random_element returns tuple when degree=0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3293
 
 Original creator: burcin
 

@@ -1,6 +1,6 @@
 # Issue 2247: [with patch, needs wildly trivial review] comment out long doctest in totallyreal_rel.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2247
 
 Original creator: craigcitro
 

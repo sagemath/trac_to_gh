@@ -1,6 +1,6 @@
 # Issue 7389: Fallback _point_morphism_class() has wrong signature
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7389
 
 Original creator: wjp
 

@@ -1,6 +1,6 @@
 # Issue 3481: remove sage/plot/plot3dsoya.py from sage!!!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3481
 
 Original creator: was
 

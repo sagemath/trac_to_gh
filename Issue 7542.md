@@ -1,6 +1,6 @@
 # Issue 7542: Security issues in gnutls-2.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7542
 
 Original creator: drkirkby
 

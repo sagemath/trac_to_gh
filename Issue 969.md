@@ -1,6 +1,6 @@
 # Issue 969: cvxopt miscompiled on OSX ppc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/969
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: was
 
 
 ```
-On 10/22/07, Hamptonio <hamptonio`@`gmail.com> wrote:
+On 10/22/07, Hamptonio <hamptonio@gmail.com> wrote:
 > I had the following failure from "make test",  from devel/sage-main/
 > sage/numerical/test.py.  I'm guessing its from the convoluted history
 > of my fortran installs on that machine (a powerpc apple powerbook):
@@ -62,7 +62,7 @@ By the way, I am able to replicate exactly this problem on my powerpc mac test m
 >    2 of   8 in __main__.example_0
 > ***Test Failed*** 2 failures.
 > 
-> On Oct 21, 3:03 pm, "John Cremona" <john.crem...`@`gmail.com> wrote:
+> On Oct 21, 3:03 pm, "John Cremona" <john.crem...@gmail.com> wrote:
 > > Successfully upgraded to 2.8.8.1 on linux (Kubuntu 7.04):
 > >
 > > sage --testall
@@ -75,8 +75,8 @@ By the way, I am able to replicate exactly this problem on my powerpc mac test m
 > 
 > 
 > --~--~---------~--~----~------------~-------~--~----~
-> To post to this group, send email to sage-devel`@`googlegroups.com
-> To unsubscribe from this group, send email to sage-devel-unsubscribe`@`googlegroups.com
+> To post to this group, send email to sage-devel@googlegroups.com
+> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com
 > For more options, visit this group at http://groups.google.com/group/sage-devel
 > URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/
 > -~----------~----~----~----~------~----~------~--~---

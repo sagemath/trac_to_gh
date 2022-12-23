@@ -1,6 +1,6 @@
 # Issue 7413: cython mode is whitespace-sensitive
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7413
 
 Original creator: mhampton
 

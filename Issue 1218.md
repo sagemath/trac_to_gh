@@ -1,6 +1,6 @@
 # Issue 1218: update cython to 0.9.6.9 release
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1218
 
 Original creator: mabshoff
 

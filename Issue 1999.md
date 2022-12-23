@@ -1,6 +1,6 @@
 # Issue 1999: delete mpl3d code from sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1999
 
 Original creator: was
 

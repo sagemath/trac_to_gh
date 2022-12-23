@@ -1,6 +1,6 @@
 # Issue 8682: Improve AlgebraicScheme_subscheme.__init__ and AmbientSpace._validate
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8682
 
 Original creator: novoselt
 

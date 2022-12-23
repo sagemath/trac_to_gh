@@ -1,6 +1,6 @@
 # Issue 3095: Notebook, Documentation of DATA has a small error
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3095
 
 Original creator: lars.fischer
 

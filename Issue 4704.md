@@ -1,6 +1,6 @@
 # Issue 4704: Use jquery to make the javascript code nicer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4704
 
 Original creator: jason
 

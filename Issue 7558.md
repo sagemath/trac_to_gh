@@ -1,6 +1,6 @@
 # Issue 7558: Replace deprecated functions by deprecated_function_alias whenever possible
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7558
 
 Original creator: ncohen
 

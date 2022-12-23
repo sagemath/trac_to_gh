@@ -1,6 +1,6 @@
 # Issue 7026: linbox 1.1.6.p0 says GMP is not installed, even though MPIR is
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7026
 
 Original creator: drkirkby
 
@@ -133,9 +133,9 @@ Having looked at the error message, it would appear the library can't be found. 
 
 
 ```
-drkirkby`@`swan:[~] $ file  gcc64/sage-4.3.1.alpha2/local/lib/libgmpxx.so.3
+drkirkby@swan:[~] $ file  gcc64/sage-4.3.1.alpha2/local/lib/libgmpxx.so.3
 gcc64/sage-4.3.1.alpha2/local/lib/libgmpxx.so.3:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available
-drkirkby`@`swan:[~] $ 
+drkirkby@swan:[~] $ 
 ```
 
 

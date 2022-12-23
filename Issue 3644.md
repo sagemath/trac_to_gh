@@ -1,6 +1,6 @@
 # Issue 3644: re-enable server/simple/twist.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3644
 
 Original creator: was
 

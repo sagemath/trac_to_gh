@@ -1,6 +1,6 @@
 # Issue 4215: [with patch, needs review] Bug in creating sparse vectors using a dictionary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4215
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 9537: trial_division in Sage is really slow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9537
 
 Original creator: was
 

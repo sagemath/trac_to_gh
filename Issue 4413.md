@@ -1,6 +1,6 @@
 # Issue 4413: '?' in docstring gets interpreted immediately by the parser
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4413
 
 Original creator: justin
 

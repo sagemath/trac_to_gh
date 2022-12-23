@@ -1,6 +1,6 @@
 # Issue 2500: Deprecate "sage -upgrade"; replace by "sage -expert_upgrade"; likewise for sage: upgrade()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2500
 
 Original creator: was
 

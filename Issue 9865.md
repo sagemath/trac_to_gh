@@ -1,6 +1,6 @@
 # Issue 9865: Unable to start pari because the command 'gp --emacs --fast --quiet --stacksize 10000000' failed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9866
 
 Original creator: mpatel
 

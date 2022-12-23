@@ -1,6 +1,6 @@
 # Issue 4902: convert sage.algebras.* docstrings to Sphinx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4902
 
 Original creator: mhansen
 

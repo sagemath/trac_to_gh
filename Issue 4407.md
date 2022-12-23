@@ -1,6 +1,6 @@
 # Issue 4407: magma -- painful scalability issue with parser and interface
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4407
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 
 ```
 sage: a = magma('"%s"'%('n'*1000000))
-[This is the Trac macro *works instantly, uses almost no memeory* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#works instantly, uses almost no memeory-macro)
+[[works instantly, uses almost no memeory]]
 sage: magma.GetMemoryUsage()
 15728664
 ```

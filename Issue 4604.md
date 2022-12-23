@@ -1,6 +1,6 @@
 # Issue 4604: Graphics() should work in 3d as a valid empty object
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4604
 
 Original creator: mhampton
 

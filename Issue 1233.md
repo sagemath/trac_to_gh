@@ -1,6 +1,6 @@
 # Issue 1233: mwrank wrapper causes crashes and error on non-minimal curves
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1233
 
 Original creator: cremona
 

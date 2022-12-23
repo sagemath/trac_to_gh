@@ -1,6 +1,6 @@
 # Issue 1609: create an octave-3.0.0 optional spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1609
 
 Original creator: was
 
@@ -56,7 +56,7 @@ n/../lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/ -L/home2/sage/build/sage-2.9/lo
 x-gnu/4.0.3 -L/home2/sage/build/sage-2.9/local/lib/../lib64 -L/home2/sage/build/sage-2.9/local/lib// -L/home2/sage/build/s
 age-2.9/local/lib -L/usr/lib/gcc// -L/lib/../lib64 -L/lib// -L/home2/sage/build/sage-2.9/local/bin/../lib/gcc-lib/x86_64-u
 nknown-linux-gnu/4.0.3/// -L/usr/lib64/ -L/usr/lib64 -lz -lf95 -lm
-/usr/lib/gcc/x86_64-linux-gnu/4.1.2/libstdc++.so: undefined reference to `_Unwind_GetIPInfo`@`GCC_4.2.0'
+/usr/lib/gcc/x86_64-linux-gnu/4.1.2/libstdc++.so: undefined reference to `_Unwind_GetIPInfo@GCC_4.2.0'
 collect2: ld returned 1 exit status
 make[2]: *** [octave] Error 1
 make[2]: Leaving directory `/home2/sage/build/sage-2.9/spkg/build/octave-3.0.0/src/src'

@@ -1,6 +1,6 @@
 # Issue 1353: [with patch] fix easy bug in graph_database.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1353
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 1101: new gap_packages*
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1101
 
 Original creator: wdj
 

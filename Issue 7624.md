@@ -1,6 +1,6 @@
 # Issue 7624: notebook: get rid of nb.sobj stuff from any notebook docs.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7624
 
 Original creator: was
 

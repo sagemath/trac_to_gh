@@ -1,6 +1,6 @@
 # Issue 4988: major easy-to-fix but STUPID bug in gcd
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4988
 
 Original creator: was
 

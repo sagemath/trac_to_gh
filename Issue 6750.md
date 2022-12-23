@@ -1,6 +1,6 @@
 # Issue 6750: [with spkg, needs review] New version of optional Group Cohomology spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6750
 
 Original creator: SimonKing
 

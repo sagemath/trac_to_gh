@@ -1,6 +1,6 @@
 # Issue 445: serious issue with how interupting subprocesses sometimes behaves.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/445
 
 Original creator: was
 

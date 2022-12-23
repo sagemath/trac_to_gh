@@ -1,6 +1,6 @@
 # Issue 4514: Equality test fails for element coerced back into GL(2,7)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4514
 
 Original creator: saliola
 

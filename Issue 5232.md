@@ -1,6 +1,6 @@
 # Issue 5232: [with patch; needs review] interact -- major bug in interact ranges due to str versus repr
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5232
 
 Original creator: was
 
@@ -13,7 +13,7 @@ This is related a little to #5220, but tangentially.
 In sage-3.3.alphpha5 the following is now COMPLETELY BROKEN:
 
 ```
-`@`interact
+@interact
 def f(s=(0,pi,1)):
     print s
 ```
@@ -23,7 +23,7 @@ Basically anything involving symbolics in ranges is broken. If you try this in t
 
 
 ```
-sage: `@`interact
+sage: @interact
 ....: def f(s=(0,pi,1)):
 ....:         print s
 ....: 

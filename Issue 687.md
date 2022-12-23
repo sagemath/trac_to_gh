@@ -1,6 +1,6 @@
 # Issue 687: Wrap libSINGULAR's quotient ring implementation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/687
 
 Original creator: malb
 

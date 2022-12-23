@@ -1,6 +1,6 @@
 # Issue 7477: Matroids
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7477
 
 Original creator: ncohen
 
@@ -815,7 +815,7 @@ This change ought to fix the docbuilding problems:
 diff --git a/doc/en/reference/conf.py b/doc/en/reference/conf.py
 --- a/doc/en/reference/conf.py
 +++ b/doc/en/reference/conf.py
-`@``@` -94,6 +94,7 `@``@`
+@@ -94,6 +94,7 @@
      'libs',
      'logic',
      'matrices',

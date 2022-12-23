@@ -1,6 +1,6 @@
 # Issue 1889: 2.10.1.alpha2 doctest failure in crypto/mq/sr.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1889
 
 Original creator: mabshoff
 

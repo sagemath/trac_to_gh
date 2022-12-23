@@ -1,6 +1,6 @@
 # Issue 7233: [with patch, positive review] adapted SymmetricGroupAlgebra to the category framework
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7233
 
 Original creator: hivert
 

@@ -1,6 +1,6 @@
 # Issue 3118: update LCM (easy-to-fix buglet)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3118
 
 Original creator: was
 
@@ -14,7 +14,7 @@ CC:  cremona
 ```
 
 
-On Tue, May 6, 2008 at 8:49 PM, schmmd <schmmd`@`gmail.com> wrote:
+On Tue, May 6, 2008 at 8:49 PM, schmmd <schmmd@gmail.com> wrote:
 > 
 >  lcm? gives the following output:
 >  

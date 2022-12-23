@@ -1,6 +1,6 @@
 # Issue 4979: do not use xdg-open on Solaris to open the browser when starting the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4979
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6515: assume doesn't interact well with solve
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6515
 
 Original creator: robertwb
 

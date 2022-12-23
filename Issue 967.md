@@ -1,6 +1,6 @@
 # Issue 967: [with patch] inplace operators for GF(p),GF(p^n) and MPolynomial_libsingular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/967
 
 Original creator: malb
 

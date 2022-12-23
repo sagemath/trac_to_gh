@@ -1,6 +1,6 @@
 # Issue 2036: maxima is off by -5 with it's charpoly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2036
 
 Original creator: mhansen
 

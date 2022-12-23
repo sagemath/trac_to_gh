@@ -1,6 +1,6 @@
 # Issue 7116: Potential bug in elliptic curve pairing code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7116
 
 Original creator: was
 

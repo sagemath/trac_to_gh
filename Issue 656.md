@@ -1,6 +1,6 @@
 # Issue 656: incorporate mabshoff's bugfixes into iml and make a new spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/656
 
 Original creator: was
 

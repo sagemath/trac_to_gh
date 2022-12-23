@@ -1,6 +1,6 @@
 # Issue 5795: Improved performance of MPolynomialRing_libsingular.__call__()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5795
 
 Original creator: SimonKing
 

@@ -1,6 +1,6 @@
 # Issue 8275: upgrade to ecl 10.2.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8275
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 7160: comparison with quadratic number field elements needs work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7160
 
 Original creator: mhansen
 

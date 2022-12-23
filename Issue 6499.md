@@ -1,6 +1,6 @@
 # Issue 6499: minor formatting and typo in the script sage-location
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6499
 
 Original creator: mvngu
 
@@ -13,7 +13,7 @@ Keywords: sage-location
 Take a binary distribution of Sage, uncompress it, and start up Sage for the first time. You should see something similar to the following in your terminal:
 
 ```
-[mvngu`@`sage sage-4.1.rc1-x86_64-Linux]$ ./sage 
+[mvngu@sage sage-4.1.rc1-x86_64-Linux]$ ./sage 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 The SAGE install tree may have moved.
@@ -39,7 +39,7 @@ Comment by mvngu created at 2009-07-09 11:48:06
 After applying the patch `trac_6499.patch`, you should get something like the following:
 
 ```
-[mvngu`@`sage sage-4.1.rc1-x86_64]$ ./sage
+[mvngu@sage sage-4.1.rc1-x86_64]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 The Sage install tree may have moved.

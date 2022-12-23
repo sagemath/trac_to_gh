@@ -1,6 +1,6 @@
 # Issue 8826: [build error] ImportError: No module named sage.all
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8826
 
 Original creator: gostrc
 

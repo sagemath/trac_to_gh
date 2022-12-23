@@ -1,6 +1,6 @@
 # Issue 6226: developer's guide: sections on formatting docstrings and trac guidelines
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6226
 
 Original creator: mvngu
 

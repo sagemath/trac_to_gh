@@ -1,6 +1,6 @@
 # Issue 3483: notebook -- major improvements to registration page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3483
 
 Original creator: TimothyClemans
 

@@ -1,6 +1,6 @@
 # Issue 77: 'attach' command doesn't show up with TABbing
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/77
 
 Original creator: Justin Walker (justin@mac.com)
 

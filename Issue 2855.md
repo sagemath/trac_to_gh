@@ -1,6 +1,6 @@
 # Issue 2855: A correction to the weight of crystal elements for type A and a speedup for all types
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2855
 
 Original creator: bump
 

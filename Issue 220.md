@@ -1,6 +1,6 @@
 # Issue 220: SageX: generic power series over arbitrary ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/220
 
 Original creator: was
 

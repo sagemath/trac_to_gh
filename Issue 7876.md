@@ -1,6 +1,6 @@
 # Issue 7876: symbolic expression displayed wrong
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7876
 
 Original creator: iandrus
 

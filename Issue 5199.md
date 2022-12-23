@@ -1,6 +1,6 @@
 # Issue 5199: [with patch, needs review] new symbolics can treat floats as integers inappropriately
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5199
 
 Original creator: cwitty
 

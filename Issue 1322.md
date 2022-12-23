@@ -1,6 +1,6 @@
 # Issue 1322: interactive widgets in the notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1322
 
 Original creator: jason
 
@@ -308,12 +308,12 @@ Anyway, here are some example inputs (each should be entered in its own cell):
 
 
 ```
-`@`manipulate
+@manipulate
 def myfactor(n):
     print jsmath(factor(n))
 
 
-`@`manipulate
+@manipulate
 def polys(m):
     R = QQ['x']
     f = R.random_element(m)
@@ -323,7 +323,7 @@ def polys(m):
 
 
 
-`@`manipulate
+@manipulate
 def ellcurve(label):
     E = EllipticCurve(label)
     show(E)
@@ -333,7 +333,7 @@ def ellcurve(label):
 
 
 
-`@`manipulate
+@manipulate
 def pl(n):
     var('x,y')
     show(x^n-y^n)
@@ -352,7 +352,7 @@ I love the new code by William.
 Here is my first example using it:
 
 ```
-`@`manipulate
+@manipulate
 def gcd_steps(numbers):
     a, b = numbers
     w = a
@@ -392,7 +392,7 @@ Comment by was created at 2008-03-02 15:33:39
 Examples of how to use the version as of now:
 
 ```
-`@`manipulate
+@manipulate
 def foo(f=text_box("sin(x)"), L=slider(-5,0), U=slider(0,5)):
     return plot(f,L,U)
 ```
@@ -400,7 +400,7 @@ def foo(f=text_box("sin(x)"), L=slider(-5,0), U=slider(0,5)):
 
 
 ```
-`@`manipulate
+@manipulate
 def bar(a,b=slider([1..10])):
     return a+b
 ```
@@ -408,7 +408,7 @@ def bar(a,b=slider([1..10])):
 
 
 ```
-`@`manipulate
+@manipulate
 def ec(a,b):
     E = EllipticCurve([a,b])
     html("<h1>Data about an Elliptic Curve</h1>")
@@ -435,32 +435,32 @@ Comment by was created at 2008-03-03 02:09:26
 Examples as of manipulate_take3_part3.patch
 
 ```
-`@`manipulate
+@manipulate
 def factor_example(n=range(2,1000)):
     F = factor(n)
     html("<h1 align=center><font color='darkblue' size=+4>factor(%s) = %s</font></h1>"%(n, F))
 
 
 
-`@`manipulate
+@manipulate
 def foo(f, xmax=[0,0.1,..20]):
     show(f)
     show(plot(f, -1, xmax))
 
-`@`manipulate
+@manipulate
 def pl(n=[0..30], xmin=[-5..0], xmax=[0..10]):
     print n, xmin, xmax
     f = sin(n*x); g = cos(n*x)
     show(plot(f,xmin,xmax) + plot(g,xmin,xmax,color='red'), figsize=[5,2], xmin=xmin, xmax=xmax)
 
 
-`@`manipulate
+@manipulate
 def pl(n=[100,200,..,10^4]):
     html("<h1 align=center>Primes up to %s</h1>"%n)
     show(plot(prime_pi, 1, n) + plot(x/(log(x)-1), 0.1, n, color='red'))
 
 
-`@`manipulate
+@manipulate
 def a3dplot(a=[1..10], b=[1..10]):
     var('x,y')
     f = x^a + y^b

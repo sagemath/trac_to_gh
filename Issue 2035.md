@@ -1,6 +1,6 @@
 # Issue 2035: sage-2.10.1.rc5: transform.pyx is now broken (probably caused by other fixes)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2035
 
 Original creator: was
 

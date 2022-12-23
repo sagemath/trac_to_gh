@@ -1,6 +1,6 @@
 # Issue 5050: clean up how the percent directives at the top of cells are processed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5050
 
 Original creator: mhansen
 

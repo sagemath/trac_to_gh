@@ -1,6 +1,6 @@
 # Issue 3857: BinaryQF_reduced_representatives in binry_qf.py produces extra unreduced forms
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3857
 
 Original creator: choldsworth
 

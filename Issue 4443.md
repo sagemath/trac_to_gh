@@ -1,6 +1,6 @@
 # Issue 4443: [with patch, needs review] Massive prime_range speedup, arith* files cleanup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4443
 
 Original creator: craigcitro
 
@@ -276,7 +276,7 @@ Comment by mabshoff created at 2008-11-07 18:00:58
 Unfortunately this patch has now a conflict:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage/rings/arith.py.rej
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage/rings/arith.py.rej
 ***************
 *** 795,802 ****
           sage: next_prime(2004)

@@ -1,6 +1,6 @@
 # Issue 8596: Add more doctests for addition tables of additive magmas
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8596
 
 Original creator: rbeezer
 

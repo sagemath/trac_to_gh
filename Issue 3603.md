@@ -1,6 +1,6 @@
 # Issue 3603: memleak in GF(2^n)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3603
 
 Original creator: malb
 

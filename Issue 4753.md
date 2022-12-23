@@ -1,6 +1,6 @@
 # Issue 4753: make sparse * sparse = dense mod p like 50 frickin' times faster.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4753
 
 Original creator: was
 

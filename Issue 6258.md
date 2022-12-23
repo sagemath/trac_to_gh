@@ -1,6 +1,6 @@
 # Issue 6258: Improve accuracy of graph eigenvalues
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6258
 
 Original creator: rbeezer
 

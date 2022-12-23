@@ -1,6 +1,6 @@
 # Issue 8867: speed up the riemann mapping functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8867
 
 Original creator: jason
 

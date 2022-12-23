@@ -1,6 +1,6 @@
 # Issue 39: Misleading polynomial ring behavior
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/39
 
 Original creator: was
 
@@ -28,7 +28,7 @@ Fixed.
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169198371 28800
 # Node ID cbda6c27c46e6e36c6c192550b172f79189ce974
 # Parent  39c4cda2f4c474719648b289148014737a234682
@@ -37,7 +37,7 @@ Trac bug #39 -- fix issues with working with quotients of polynomial rings over 
 diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
 --- a/sage/rings/multi_polynomial_ideal.py      Fri Jan 19 00:35:22 2007 -0800
 +++ b/sage/rings/multi_polynomial_ideal.py      Fri Jan 19 01:19:31 2007 -0800
-`@``@` -35,6 +35,20 `@``@` benchmark and test ideal.
+@@ -35,6 +35,20 @@ benchmark and test ideal.
      sage: B = I.groebner_basis()
      sage: len(B)
      45
@@ -58,7 +58,7 @@ diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
  """
  
  #*****************************************************************************
-`@``@` -457,7 +471,7 `@``@` class MPolynomialIdeal_singular_repr:
+@@ -457,7 +471,7 @@ class MPolynomialIdeal_singular_repr:
          I.parent().lib('primdec.lib')
          r = I.radical()
          return S.ideal(r)
@@ -67,7 +67,7 @@ diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
      def reduce(self, f):
          """
          Reduce an element modulo a standard basis for this ideal.
-`@``@` -481,21 +495,27 `@``@` class MPolynomialIdeal_singular_repr:
+@@ -481,21 +495,27 @@ class MPolynomialIdeal_singular_repr:
              sage: (y^2 - x)^2
              y^4 - 2*x*y^2 + x^2
          """
@@ -110,7 +110,7 @@ diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
  
      def syzygy_module(self):
          r"""
-`@``@` -714,11 +734,6 `@``@` class MPolynomialIdeal( MPolynomialIdeal
+@@ -714,11 +734,6 @@ class MPolynomialIdeal( MPolynomialIdeal
              return self._macaulay2_groebner_basis()
          elif algorithm == 'magma:GroebnerBasis':
              return self._magma_groebner_basis()

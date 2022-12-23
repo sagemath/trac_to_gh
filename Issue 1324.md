@@ -1,6 +1,6 @@
 # Issue 1324: 2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1324
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 8008: Implement an rref() function which works over the fraction field of the base ring of a matrix
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8008
 
 Original creator: jason
 
@@ -97,11 +97,11 @@ Comment by mvngu created at 2010-01-22 14:53:24
 I got a hunk failure after applying [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch), then [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch):
 
 ```
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-rref.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-rref.patch && hg qpush
 adding trac-8008-rref.patch to series file
 applying trac-8008-rref.patch
 now at: trac-8008-rref.patch
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-fixes.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-fixes.patch && hg qpush
 adding trac-8008-fixes.patch to series file
 applying trac-8008-fixes.patch
 patching file sage/matrix/matrix2.pyx
@@ -110,10 +110,10 @@ Hunk #3 FAILED at 4273
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac-8008-fixes.patch
-[mvngu`@`sage sage-main]$ cat sage/matrix/matrix2.pyx.rej
+[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej
 --- matrix2.pyx
 +++ matrix2.pyx
-`@``@` -4267,12 +4274,14 `@``@`
+@@ -4267,12 +4274,14 @@
          """
          Return the echelon form of self.
  

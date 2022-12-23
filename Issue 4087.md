@@ -1,6 +1,6 @@
 # Issue 4087: [with patch, needs review] Improved printing of polynomials with 'negative' coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4087
 
 Original creator: fwclarke
 

@@ -1,6 +1,6 @@
 # Issue 9408: relativize in number fields is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9408
 
 Original creator: lftabera
 

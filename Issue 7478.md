@@ -1,6 +1,6 @@
 # Issue 7478: Remove "..." in the output of TestSuite.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7478
 
 Original creator: hivert
 

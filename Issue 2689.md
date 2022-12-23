@@ -1,6 +1,6 @@
 # Issue 2689: compute blocks and cut-vertices of a graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2689
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7020: Fix 32-bit versus 64-bit boolean_function issue in crypto
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7020
 
 Original creator: kcrisman
 
@@ -57,7 +57,7 @@ Works for me on Fedora 11, 32 bit:
 
 
 ```
-[jaap`@`paix sage-4.1.2.alpha4]$ ./sage -t  "devel/sage/sage/crypto/boolean_function.pyx"
+[jaap@paix sage-4.1.2.alpha4]$ ./sage -t  "devel/sage/sage/crypto/boolean_function.pyx"
 sage -t  "devel/sage/sage/crypto/boolean_function.pyx"      
 	 [8.9 s]
  

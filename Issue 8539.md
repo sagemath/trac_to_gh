@@ -1,6 +1,6 @@
 # Issue 8539: EllipticCurve('6006j1').sha().p_primary_bound(3) ignores CTRL-C
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8539
 
 Original creator: rlm
 

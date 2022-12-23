@@ -1,6 +1,6 @@
 # Issue 6246: SAGE_FAT_BINARY still doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6246
 
 Original creator: was
 
@@ -13,15 +13,15 @@ At least this nails down that MPIR is the problem, and gives me a straightforwar
 
 
 ```
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 The SAGE install tree may have moved.
 Regenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at
 most a few minutes)...
 Do not interrupt this.
-/home/wstein/tmp/sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux/local/bin/sage-sage: line 198: 27278 Illegal instruction     sage-ipython "$`@`" -i
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage -gdb
+/home/wstein/tmp/sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux/local/bin/sage-sage: line 198: 27278 Illegal instruction     sage-ipython "$@" -i
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage -gdb
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 /home/wstein/tmp/sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux/local/bin/sage-ipython
@@ -64,7 +64,7 @@ I then rebuilt MPIR with "sage -f mpir-1.2.p2" and Sage starts up.  But then it 
 ```
 Making script relocatable
 Finished installing mpir-1.2.p2.spkg
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: 
@@ -73,14 +73,14 @@ sage:
 sage: 
 Exiting SAGE (CPU time 0m0.09s, Wall time 0m11.48s).
 Exiting spawned Gap process.
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ 
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ 
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: a = random_matrix(ZZ,150)
 sage: time a.det()
-/home/wstein/tmp/sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux/local/bin/sage-sage: line 198: 17808 Illegal instruction     sage-ipython "$`@`" -i
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ cat /proc/cpuinfo 
+/home/wstein/tmp/sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux/local/bin/sage-sage: line 198: 17808 Illegal instruction     sage-ipython "$@" -i
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ cat /proc/cpuinfo 
 processor       : 0
 vendor_id       : GenuineIntel
 cpu family      : 15
@@ -105,7 +105,7 @@ power management:
 | Type notebook() for the GUI, and license() for information.        |
 | Sage Version 4.0.1, Release Date: 2009-06-06                       |
 | Type notebook() for the GUI, and license() for information.        |
-[wstein`@`cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ 
+[wstein@cicero sage-4.0.1-linux-Debian_GNU_Linux_4.0_etch-sse2-i686-Linux]$ 
 ```
 
 
@@ -147,7 +147,7 @@ Comment by was created at 2009-08-09 17:54:04
 
 ```
 
-On Sun, Aug 9, 2009 at 9:18 AM, Dr. David Kirkby <david.kirkby`@`onetel.net> wrote:
+On Sun, Aug 9, 2009 at 9:18 AM, Dr. David Kirkby <david.kirkby@onetel.net> wrote:
 
 
     Jason Moxham wrote:

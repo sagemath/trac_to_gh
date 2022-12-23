@@ -1,6 +1,6 @@
 # Issue 6811: prime_pi.plot is wrong (!)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6811
 
 Original creator: was
 

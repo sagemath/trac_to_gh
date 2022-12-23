@@ -1,6 +1,6 @@
 # Issue 541: mpfr-2.3.0
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/541
 
 Original creator: was
 

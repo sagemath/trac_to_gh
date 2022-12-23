@@ -1,6 +1,6 @@
 # Issue 7103: fix "mysterious error" in parallel doctesting first time: see ticket #7079
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7103
 
 Original creator: was
 

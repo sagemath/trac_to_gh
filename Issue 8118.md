@@ -1,6 +1,6 @@
 # Issue 8118: split off Galois representations and modular parametrization from ell_rational_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8118
 
 Original creator: wuthrich
 
@@ -159,9 +159,9 @@ Comment by mvngu created at 2010-02-13 05:55:47
 I get hunk failures when applying [trac_8118.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8118/trac_8118.patch) to Sage 4.3.3.alpha0:
 
 ```
-[mvngu`@`sage sage-main]$ pwd
+[mvngu@sage sage-main]$ pwd
 /dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main
-[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8118/trac_8118.patch && hg qpush
+[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8118/trac_8118.patch && hg qpush
 adding trac_8118.patch to series file
 applying trac_8118.patch
 patching file sage/schemes/elliptic_curves/ell_rational_field.py

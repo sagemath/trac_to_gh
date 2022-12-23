@@ -1,6 +1,6 @@
 # Issue 4432: [with patch, needs review] symbolic gamma and factorial
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4432
 
 Original creator: whuss
 

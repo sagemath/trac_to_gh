@@ -1,6 +1,6 @@
 # Issue 6399: [with patch, needs review] Allow ATLAS to build on Solaris with Sun or GNU linker
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6399
 
 Original creator: drkirkby
 

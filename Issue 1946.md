@@ -1,6 +1,6 @@
 # Issue 1946: Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1946
 
 Original creator: was
 
@@ -130,7 +130,7 @@ Comment by mabshoff created at 2008-02-19 17:35:27
 I am getting more rejects if I apply against my current version of 2.10.2.alpha1 (which will be alpha2 in about 30 minutes):
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 8089.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 8089.patch
 patching file sage/rings/ideal.py
 patching file sage/rings/number_field/all.py
 Hunk #1 succeeded at 6 with fuzz 1.

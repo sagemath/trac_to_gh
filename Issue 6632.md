@@ -1,6 +1,6 @@
 # Issue 6632: Bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6632
 
 Original creator: hartke
 
@@ -18,7 +18,7 @@ sage: G=Graph()
 sage: G.add_vertices(range(5))
 sage: G.add_edges([(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)])
 sage: print G.blocks_and_cut_vertices()
-([This is the Trac macro *0, 1, 2* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0, 1, 2-macro), [])
+([[0, 1, 2]], [])
 ```
 
 
@@ -75,7 +75,7 @@ I noticed a few other things with this function, but I'll open up another ticket
 ```
 sage: g=graphs.CubeGraph(2)
 sage: g.blocks_and_cut_vertices()
-([This is the Trac macro *2, 3, 1, 0* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#2, 3, 1, 0-macro), [])
+([[2, 3, 1, 0]], [])
 sage: g
 2-Cube: Graph on 4 vertices
 sage: g.vertices()

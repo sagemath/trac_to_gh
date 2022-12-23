@@ -1,6 +1,6 @@
 # Issue 9569: Expose/Update methods using NetworkX1-1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9569
 
 Original creator: ncohen
 

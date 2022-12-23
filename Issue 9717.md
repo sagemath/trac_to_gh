@@ -1,6 +1,6 @@
 # Issue 9717: fix variable substitution in PolyBoRi
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9717
 
 Original creator: malb
 

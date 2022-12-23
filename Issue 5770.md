@@ -1,6 +1,6 @@
 # Issue 5770: [with patch, needs review] Bring doctests of modular/modsym/p1list.py up to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5770
 
 Original creator: cremona
 

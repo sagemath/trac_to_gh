@@ -1,6 +1,6 @@
 # Issue 2884: notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2884
 
 Original creator: was
 
@@ -25,7 +25,7 @@ The following is now broken:
 
 ```
 plot(sin,0,1).show()
-`@`interact
+@interact
 def foo(a="1"):
     a
 ```
@@ -42,7 +42,7 @@ Your only reason for giving a negative review was a claim that
 
 ```
 plot(sin,0,1).show()
-`@`interact
+@interact
 def foo(a="1"):
     a
 ```

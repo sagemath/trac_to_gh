@@ -1,6 +1,6 @@
 # Issue 6749: [with patch, needs review] Knapsack algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6749
 
 Original creator: ncohen
 

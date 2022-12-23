@@ -1,6 +1,6 @@
 # Issue 2947: [with patch; needs review] block_matrix([]) fails
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2947
 
 Original creator: wjp
 
@@ -32,9 +32,9 @@ Comment by mabshoff created at 2008-04-18 06:15:16
 There are rejection problems [with or without #2946 applied]:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2947_block_matrix_empty.patch
 patching file sage/matrix/constructor.py
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha6/devel/sage$ patch -p1 < trac_2946_noninvertible_jordan_form.patch
 patching file sage/matrix/matrix2.pyx
 Hunk #1 succeeded at 3591 (offset 59 lines).
 Hunk #2 FAILED at 3601.

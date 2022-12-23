@@ -1,6 +1,6 @@
 # Issue 5380: devmap: allow to search for contributions by trac username
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5380
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 4229: special functions should use mpfr when available
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4229
 
 Original creator: AlexGhitza
 

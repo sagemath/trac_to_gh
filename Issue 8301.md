@@ -1,6 +1,6 @@
 # Issue 8301: segfault in m4ri
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8301
 
 Original creator: was
 

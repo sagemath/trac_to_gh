@@ -1,6 +1,6 @@
 # Issue 2215: if p is a permutation, matrix(p) should call p.to_matrix()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2215
 
 Original creator: jason
 

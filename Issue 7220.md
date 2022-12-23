@@ -1,6 +1,6 @@
 # Issue 7220: Spanish doc #8 "The Matrix of Frobenius on Hyperelliptic Curves"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7220
 
 Original creator: Loufer
 

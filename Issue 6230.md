@@ -1,6 +1,6 @@
 # Issue 6230: [with patch, needs review] Fix numerical noise and dictionary sorting issues in 4.0.1.rc2.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6230
 
 Original creator: mhansen
 

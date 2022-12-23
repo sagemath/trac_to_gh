@@ -1,6 +1,6 @@
 # Issue 7235: os x readme file is misleading
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7235
 
 Original creator: was
 

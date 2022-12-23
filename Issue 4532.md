@@ -1,6 +1,6 @@
 # Issue 4532: [with patch, needs review] trivial typo in modform theta.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4532
 
 Original creator: robertwb
 

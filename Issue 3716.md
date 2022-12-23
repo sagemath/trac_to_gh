@@ -1,6 +1,6 @@
 # Issue 3716: [with spkg, needs review] add GINV as experimental/optional package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3716
 
 Original creator: malb
 

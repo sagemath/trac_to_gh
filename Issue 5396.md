@@ -1,6 +1,6 @@
 # Issue 5396: Wrapping lcalc library
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5396
 
 Original creator: rishi
 
@@ -620,7 +620,7 @@ Comment by cremona created at 2009-12-23 20:14:43
 Here's what I did:  made a fresh clone of 4.3.rc0, installed the spkg (sage -i lcalc-1.23.spkg), applied the latch, rebuilt.  Then sage -t gives this:
 
 ```
-john`@`ubuntu%sage -t sage-4.3.rc0/devel/sage-lcalc/sage/libs/lcalc/ 
+john@ubuntu%sage -t sage-4.3.rc0/devel/sage-lcalc/sage/libs/lcalc/ 
 sage -t  "devel/sage-lcalc/sage/libs/lcalc/__init__.py"     
 	 [0.1 s]
 sage -t  "devel/sage-lcalc/sage/libs/lcalc/lcalc_Lfunction.pyx"

@@ -1,6 +1,6 @@
 # Issue 8781: Overfull graph (and a bug in edge_coloring)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8781
 
 Original creator: ncohen
 

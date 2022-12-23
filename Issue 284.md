@@ -1,6 +1,6 @@
 # Issue 284: m4r -- include Gregory Bard's method of four russians C library in SAGE
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/284
 
 Original creator: was
 

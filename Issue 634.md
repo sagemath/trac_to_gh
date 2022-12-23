@@ -1,6 +1,6 @@
 # Issue 634: Implement "sage -experimental" analog to "sage -optional"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/634
 
 Original creator: mabshoff
 

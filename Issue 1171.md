@@ -1,6 +1,6 @@
 # Issue 1171: _new() method for quadratic field elements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1171
 
 Original creator: dmharvey
 

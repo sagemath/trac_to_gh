@@ -1,6 +1,6 @@
 # Issue 4728: .roots() is inconsistent between polynomials and symbolic polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4728
 
 Original creator: ncalexan
 

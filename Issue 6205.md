@@ -1,6 +1,6 @@
 # Issue 6205: add __invert__ to number field morphism
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6205
 
 Original creator: ncalexan
 

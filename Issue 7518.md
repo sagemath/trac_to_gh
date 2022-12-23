@@ -1,6 +1,6 @@
 # Issue 7518: flint -- hangs computing certain degenerate case xgcd's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7518
 
 Original creator: was
 
@@ -60,8 +60,8 @@ Comment by was created at 2009-12-25 08:33:31
 
 
 ```
-from	Bill Hart <goodwillhart`@`googlemail.com>
-to	William Stein <wstein`@`gmail.com>
+from	Bill Hart <goodwillhart@googlemail.com>
+to	William Stein <wstein@gmail.com>
 date	Thu, Dec 24, 2009 at 5:23 PM
 subject	Re: flint bug maybe
 	

@@ -1,6 +1,6 @@
 # Issue 3409: conversion of matrices over polynomial rings to magma is broken
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3409
 
 Original creator: burcin
 

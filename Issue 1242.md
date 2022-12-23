@@ -1,6 +1,6 @@
 # Issue 1242: coercion problem in reduction of an elliptic curve at a prime ideal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1242
 
 Original creator: wuthrich
 

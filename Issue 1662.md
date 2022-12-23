@@ -1,6 +1,6 @@
 # Issue 1662: gnuplot issues (with something that can probably easily be made into a patch)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1662
 
 Original creator: was
 

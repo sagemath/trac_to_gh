@@ -1,6 +1,6 @@
 # Issue 9981: Allow plotting more complex points
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9982
 
 Original creator: kcrisman
 

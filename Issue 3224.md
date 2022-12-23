@@ -1,6 +1,6 @@
 # Issue 3224: add 64 bit OSX build support for lcalc
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3224
 
 Original creator: mabshoff
 

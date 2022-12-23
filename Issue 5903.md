@@ -1,6 +1,6 @@
 # Issue 5903: Remove dist directories from Sage distribution
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5903
 
 Original creator: tabbott
 

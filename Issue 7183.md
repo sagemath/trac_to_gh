@@ -1,6 +1,6 @@
 # Issue 7183: HP-UX issue: Evert package "date: bad format character - s
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7183
 
 Original creator: drkirkby
 

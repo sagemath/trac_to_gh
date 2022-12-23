@@ -1,6 +1,6 @@
 # Issue 9492: add computation of swinnerton-dyer polynomials to sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9492
 
 Original creator: was
 
@@ -135,7 +135,7 @@ def sdpoly6(n):
     I = R.ideal([ x[i]^2-v[i] for i in range(len(v)) ])
     S = R.quotient(I)
     x = S.gens()
-    C = cartesian_product_iterator([This is the Trac macro *-1,1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#-1,1-macro)*n)
+    C = cartesian_product_iterator([[-1,1]]*n)
     f = prod([ x[-1] + sum(s[i]*x[i] for i in range(n)) for s in C])
     return f
 ```

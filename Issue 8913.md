@@ -1,6 +1,6 @@
 # Issue 8913: S.cayley_graph(side = "twosided") returns broken labels
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8913
 
 Original creator: nthiery
 

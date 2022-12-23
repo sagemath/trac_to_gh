@@ -1,6 +1,6 @@
 # Issue 6981: include 64-bit OS X gfortran in standard SAge
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6981
 
 Original creator: was
 

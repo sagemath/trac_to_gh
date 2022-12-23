@@ -1,6 +1,6 @@
 # Issue 551: consider changing python to UCS4
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/551
 
 Original creator: was
 
@@ -21,7 +21,7 @@ Jaap
 
 
 
-On 8/14/07, Jaap Spies <j.spies`@`hccnet.nl> wrote:
+On 8/14/07, Jaap Spies <j.spies@hccnet.nl> wrote:
 > See also
 >
 > > http://mail.python.org/pipermail/distutils-sig/2006-July/006579.html

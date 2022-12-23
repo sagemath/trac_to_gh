@@ -1,6 +1,6 @@
 # Issue 1620: update cvxopt to 0.9.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1620
 
 Original creator: mabshoff
 

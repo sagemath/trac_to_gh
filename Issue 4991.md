@@ -1,6 +1,6 @@
 # Issue 4991: GDB is broken on OSX due to ipython's readline detection
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4991
 
 Original creator: mabshoff
 

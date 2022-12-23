@@ -1,6 +1,6 @@
 # Issue 9090: Interactive matrix_viewer(...)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9090
 
 Original creator: acleone
 

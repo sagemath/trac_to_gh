@@ -1,6 +1,6 @@
 # Issue 3231: Use the randgen framework to set the seeds for controlled Magma, Singular, etc. sessions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3231
 
 Original creator: malb
 

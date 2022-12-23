@@ -1,6 +1,6 @@
 # Issue 6455: Bug in twisting for p_primary_bound on Tate-Shafarevich groups
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6455
 
 Original creator: wuthrich
 

@@ -1,6 +1,6 @@
 # Issue 1739: [with patch] "Use of uninitialised value of size 8" in binary_code.pyx
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1739
 
 Original creator: mabshoff
 

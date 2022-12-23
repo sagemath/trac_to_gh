@@ -1,6 +1,6 @@
 # Issue 5145: increase default plot_points value for contour_plot
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5145
 
 Original creator: was
 

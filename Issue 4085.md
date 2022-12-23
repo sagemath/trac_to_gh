@@ -1,6 +1,6 @@
 # Issue 4085: [with patch, needs review] high precision real literals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4085
 
 Original creator: robertwb
 

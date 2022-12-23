@@ -1,6 +1,6 @@
 # Issue 4023: Sage 3.1.2.alpha3: 32 vs. 64 b bit doctesting issuess for gp
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4023
 
 Original creator: mabshoff
 

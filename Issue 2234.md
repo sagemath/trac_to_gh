@@ -1,6 +1,6 @@
 # Issue 2234: [with trivial patch, needs review] typo fix in doctest
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2234
 
 Original creator: malb
 

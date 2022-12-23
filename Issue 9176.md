@@ -1,6 +1,6 @@
 # Issue 9176: cygwin: various heegner_index errors involving interval arithmetic on cygwin
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9176
 
 Original creator: was
 

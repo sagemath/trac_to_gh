@@ -1,6 +1,6 @@
 # Issue 6795: doctest failure in sage/sage/interfaces/expect.py due to upgrade to Maxima 5.19.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6795
 
 Original creator: drkirkby
 

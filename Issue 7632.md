@@ -1,6 +1,6 @@
 # Issue 7632: Add to developer's guide information how to write portable code.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7632
 
 Original creator: drkirkby
 

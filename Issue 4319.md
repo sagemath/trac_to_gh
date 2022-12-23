@@ -1,6 +1,6 @@
 # Issue 4319: Update Italian tutorial for #4285
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4319
 
 Original creator: mhansen
 

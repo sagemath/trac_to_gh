@@ -1,6 +1,6 @@
 # Issue 3396: [with patch, needs review] new function in misc/latex.py: print_or_typeset
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3396
 
 Original creator: jhpalmieri
 

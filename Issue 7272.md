@@ -1,6 +1,6 @@
 # Issue 7272: Upgrade to Cython 0.12
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7272
 
 Original creator: robertwb
 

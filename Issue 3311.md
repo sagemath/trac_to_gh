@@ -1,6 +1,6 @@
 # Issue 3311: dsage.setup() is broken in Sage 3.0.2
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3311
 
 Original creator: mabshoff
 

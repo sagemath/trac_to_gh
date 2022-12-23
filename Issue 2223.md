@@ -1,6 +1,6 @@
 # Issue 2223: sage-2.10.2.alpha1 -- bessel_J -- precision errors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2223
 
 Original creator: was
 

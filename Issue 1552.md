@@ -1,6 +1,6 @@
 # Issue 1552: Fix gnuplot building on OS 10.5.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1552
 
 Original creator: rlm
 

@@ -1,6 +1,6 @@
 # Issue 7129: libgpg_error-1.6.p2 always builds 32-bit binaries on Solaris.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7129
 
 Original creator: drkirkby
 

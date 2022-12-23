@@ -1,6 +1,6 @@
 # Issue 3136: the readme for osx should be changed to delete the line about inotebook()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3136
 
 Original creator: jason
 

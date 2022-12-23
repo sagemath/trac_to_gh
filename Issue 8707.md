@@ -1,6 +1,6 @@
 # Issue 8707: view(x) calls x._latex_() 5 times!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8707
 
 Original creator: nthiery
 

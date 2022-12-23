@@ -1,6 +1,6 @@
 # Issue 8029: Defect: Power series over a polynomial ring with real coefficients
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8029
 
 Original creator: eduenez
 
@@ -16,7 +16,7 @@ Sage 4.3 in a PowerPC Mac:
 
 ```
 sage: A.<x> = RR['x']
-sage: B.<t> = PowerSeriesRing(A) # B = R[x][This is the Trac macro *t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#t-macro)
+sage: B.<t> = PowerSeriesRing(A) # B = R[x][[t]]
 sage: 1. + O(t)
 1.00000000000000 + O(t)
 sage: 1. + O(t^2)
@@ -77,7 +77,7 @@ Mac OS X 105.8, Dual 2.5 GHz PowerPC G5
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: A.<x> = RR['x'] 
-sage: B.<t> = PowerSeriesRing(A) # B = R[x][This is the Trac macro *t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#t-macro) 
+sage: B.<t> = PowerSeriesRing(A) # B = R[x][[t]] 
 sage: 1. + O(t) 
 1.00000000000000 + O(t)
 sage: 1. + O(t^2) 
@@ -123,7 +123,7 @@ Running Sage v 4.7.2 on a PowerMac G5 running OSX 10.5.8 it seems to work.  If d
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: A.<x> = RR['x']
-sage: B.<t> = PowerSeriesRing(A) # B = R[x][This is the Trac macro *t* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#t-macro)
+sage: B.<t> = PowerSeriesRing(A) # B = R[x][[t]]
 sage: 1. + O(t)
 1.00000000000000 + O(t)
 sage: 1. + O(t^2)

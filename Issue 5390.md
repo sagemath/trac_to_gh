@@ -1,6 +1,6 @@
 # Issue 5390: install_package, optional_package etc might pick the wrong sage installation
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5390
 
 Original creator: SimonKing
 

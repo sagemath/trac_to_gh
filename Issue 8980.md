@@ -1,6 +1,6 @@
 # Issue 8980: gac script hardcodes build path
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8980
 
 Original creator: wjlaffin
 
@@ -10,9 +10,9 @@ Assignee: tbd
 
 
 ```
-wjlaffin`@`dellbees$ pwd
+wjlaffin@dellbees$ pwd
 /sage/local/lib/gap-4.4.12/bin/x86_64-unknown-linux-gnu-gcc
-wjlaffin`@`dellbees$ grep build -n gac
+wjlaffin@dellbees$ grep build -n gac
 54:gap_bin=/sage/spkg/build/gap-4.4.12.p3/src/bin/x86_64-unknown-linux-gnu-gcc
 ```
 

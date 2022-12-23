@@ -1,6 +1,6 @@
 # Issue 9374: sage -help should mention sage -hg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9374
 
 Original creator: rlm
 

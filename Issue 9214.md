@@ -1,6 +1,6 @@
 # Issue 9214: Bring doc coverage of combinat/lyndon_word.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9214
 
 Original creator: slabbe
 

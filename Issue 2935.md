@@ -1,6 +1,6 @@
 # Issue 2935: notebook: internal server error sage-3.0.alpha5
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2935
 
 Original creator: jsp
 
@@ -12,7 +12,7 @@ Trying to delete some old worksheets, this happened:
 
 
 ```
-[jaap`@`paix sage-3.0.alpha5]$ ./sage
+[jaap@paix sage-3.0.alpha5]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.alpha5, Release Date: 2008-04-15                  |
@@ -163,7 +163,7 @@ Even with sage-2.10.4, just clicking in the overview on Delete:
 
 
 ```
-[jaap`@`paix sage-2.10.4]$ ./sage
+[jaap@paix sage-2.10.4]$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 2.10.4, Release Date: 2008-03-16                      |

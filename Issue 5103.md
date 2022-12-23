@@ -1,6 +1,6 @@
 # Issue 5103: setup.py: dependency checking does not ignore comments
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5103
 
 Original creator: mhansen
 

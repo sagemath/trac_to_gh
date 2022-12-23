@@ -1,6 +1,6 @@
 # Issue 3836: notebook interact -- make it so one control can depend on others
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3836
 
 Original creator: was
 
@@ -13,10 +13,10 @@ CC:  timdumol mpatel jason
 
 ```
 
-I really like the `@`interact functionality! I'm trying to do something
+I really like the @interact functionality! I'm trying to do something
 like this:
 
-`@`interact
+@interact
 def _(p=5,q=range(p)):
    ...
 
@@ -53,7 +53,7 @@ This is a testing code i wrote (of course, just for testing
 purposes :P) 
 
 ```
-`@`interact 
+@interact 
 def _(n1=input_box(0,label='Testing', type=int),a=selector([1,2,7], 
 buttons=True), n2=input_box(1,label='Testing2',type=int), 
 juega=input_box(0,label='Testing3',type=int)): 

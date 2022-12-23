@@ -1,6 +1,6 @@
 # Issue 4938: Words.count() returns a Python int instead of a Sage Integer
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4938
 
 Original creator: saliola
 

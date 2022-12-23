@@ -1,6 +1,6 @@
 # Issue 8985: update COPYING.txt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8985
 
 Original creator: was
 

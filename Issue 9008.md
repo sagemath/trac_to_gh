@@ -1,6 +1,6 @@
 # Issue 9008: Update zlib to latest upstream, and clean up spkg-install
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9008
 
 Original creator: drkirkby
 
@@ -78,12 +78,12 @@ I've now tested this on OpenSolaris, OS X and Linux. Setting SAGE64 to "yes" for
 
 
 ```
-drkirkby`@`hawk:~/sage-4.4.2$ file local/lib/libz.*
+drkirkby@hawk:~/sage-4.4.2$ file local/lib/libz.*
 local/lib/libz.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libz.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 local/lib/libz.so.1:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 local/lib/libz.so.1.2.5:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
-drkirkby`@`hawk:~/sage-4.4.2$ 
+drkirkby@hawk:~/sage-4.4.2$ 
 ```
 
 
@@ -167,7 +167,7 @@ when I grep 'cp' in the Makefile you posted, I see:
 
 
 ```
-drkirkby`@`hawk:~$ grep cp zlib-cygwin-Makefile
+drkirkby@hawk:~$ grep cp zlib-cygwin-Makefile
 #    cp contrib/asm?86/match.S ./match.S
 	cp $(STATICLIB) $(DESTDIR)$(libdir)
 	cp $(SHAREDLIBV) $(DESTDIR)$(sharedlibdir)
@@ -219,7 +219,7 @@ Looking further, I see the text "DESTDIR" is used in the top-level Sage makefile
 
 
 ```
-drkirkby`@`redstart:~/sage-4.4.3.alpha1$ grep DESTDIR makefile
+drkirkby@redstart:~/sage-4.4.3.alpha1$ grep DESTDIR makefile
 	if [ "$(DESTDIR)" = "" ]; then \
 		echo "Set DESTDIR"; \
 	mkdir -p $(DESTDIR)
@@ -229,7 +229,7 @@ drkirkby`@`redstart:~/sage-4.4.3.alpha1$ grep DESTDIR makefile
 	python local/bin/sage-hardcode_sage_root $(DESTDIR)/sage/sage "$(DESTDIR)"/sage
 	cp $(DESTDIR)/sage/sage $(DESTDIR)/bin/
 	cd $(DESTDIR)/bin/; ./sage -c
-drkirkby`@`redstart:~/sage-4.4.3.alpha1$
+drkirkby@redstart:~/sage-4.4.3.alpha1$
 ```
 
 

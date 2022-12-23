@@ -1,6 +1,6 @@
 # Issue 9884: slow coercion from integer mod ring to integer ring
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9885
 
 Original creator: dmharvey
 
@@ -183,7 +183,7 @@ OK, with this change made to your patch:
 ```diff
 --- a/src/sage/rings/integer.pyx
 +++ b/src/sage/rings/integer.pyx
-`@``@` -693,11 +693,10 `@``@` cdef class Integer(sage.structure.element.EuclideanDomainE
+@@ -693,11 +693,10 @@ cdef class Integer(sage.structure.element.EuclideanDomainE
  
              else:
  

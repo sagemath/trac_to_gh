@@ -1,6 +1,6 @@
 # Issue 635: p-adic height gives incorrect precision
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/635
 
 Original creator: dmharvey
 

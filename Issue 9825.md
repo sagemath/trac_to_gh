@@ -1,6 +1,6 @@
 # Issue 9825: Memory corruption in polynomial complex_roots() method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9826
 
 Original creator: hlaw
 

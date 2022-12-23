@@ -1,6 +1,6 @@
 # Issue 1127: modularSymbol complement fails for E=128a
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1127
 
 Original creator: syazdani
 

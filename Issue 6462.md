@@ -1,6 +1,6 @@
 # Issue 6462: Unpickling problem for orders in a number field
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6462
 
 Original creator: davidloeffler
 

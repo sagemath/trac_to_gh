@@ -1,6 +1,6 @@
 # Issue 411: sage_c_lib moved into primary sage tree
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/411
 
 Original creator: jbmohler
 

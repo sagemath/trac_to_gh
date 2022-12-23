@@ -1,6 +1,6 @@
 # Issue 2397: speed up matrix_from_rows
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2397
 
 Original creator: dfdeshom
 

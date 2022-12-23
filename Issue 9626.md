@@ -1,6 +1,6 @@
 # Issue 9626: Update and extend "SPKG Tracking" Wiki page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9626
 
 Original creator: leif
 

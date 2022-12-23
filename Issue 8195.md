@@ -1,6 +1,6 @@
 # Issue 8195: Problems with the 'download' page on the Sage web site.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8195
 
 Original creator: drkirkby
 

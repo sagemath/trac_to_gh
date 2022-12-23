@@ -1,6 +1,6 @@
 # Issue 5631: improve doctest coverage for schemes/generic/affine_space.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5631
 
 Original creator: AlexGhitza
 
@@ -76,7 +76,7 @@ Couldn't I do this:
 
 ```
 sage: A.<x, y, z> = AffineSpace(3, ZZ)
-sage: [This is the Trac macro *make an X and a Y over GF* that was inherited from the migration called with arguments (7) say that haven't nothing to do with A)](https://trac.sagemath.org/wiki/WikiMacros#make an X and a Y over GF-macro)
+sage: [[make an X and a Y over GF(7) say that haven't nothing to do with A]]
 sage: A.subscheme_complement(X, Y)
 ```
 

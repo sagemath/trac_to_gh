@@ -1,6 +1,6 @@
 # Issue 8468: add "Group Theory and Sage: A Primer" to the classification "Sage HOWTOs"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8468
 
 Original creator: mvngu
 

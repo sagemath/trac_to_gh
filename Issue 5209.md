@@ -1,6 +1,6 @@
 # Issue 5209: Sage 3.3.a6: numerical noise in sage/plot/plot.py on OpenSUSE 11.1 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5209
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6883: ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6883
 
 Original creator: mvngu
 
@@ -104,16 +104,16 @@ I also did some general clean up such as removing the empty directory `build` an
 For bsd.math, I have copied fortran-OSX64-20090120.spkg and ecl-9.8.4.p0.spkg to the directory /Users/mvngu/apps/. Here are the steps I took to start building Sage 4.1.2.alpha0 in 64-bit mode with ecl-9.8.4.p0.spkg:
 
 ```
-[mvngu`@`bsd ~]$ pwd
+[mvngu@bsd ~]$ pwd
 /Users/mvngu
-[mvngu`@`bsd ~]$ tar -xf apps/sage-4.1.2.alpha0.tar -C /scratch/mvngu/sandbox-64/alpha/
-[mvngu`@`bsd ~]$ cd /scratch/mvngu/sandbox-64/alpha/sage-4.1.2.alpha0/
-[mvngu`@`bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/fortran-20071120.p5.spkg
-[mvngu`@`bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/fortran-OSX64-20090120.spkg spkg/standard/
-[mvngu`@`bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/ecl-9.8.4.spkg 
-[mvngu`@`bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/ecl-9.8.4.p0.spkg spkg/standard/
-[mvngu`@`bsd sage-4.1.2.alpha0]$ export SAGE64=yes
-[mvngu`@`bsd sage-4.1.2.alpha0]$ make
+[mvngu@bsd ~]$ tar -xf apps/sage-4.1.2.alpha0.tar -C /scratch/mvngu/sandbox-64/alpha/
+[mvngu@bsd ~]$ cd /scratch/mvngu/sandbox-64/alpha/sage-4.1.2.alpha0/
+[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/fortran-20071120.p5.spkg
+[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/fortran-OSX64-20090120.spkg spkg/standard/
+[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/ecl-9.8.4.spkg 
+[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/ecl-9.8.4.p0.spkg spkg/standard/
+[mvngu@bsd sage-4.1.2.alpha0]$ export SAGE64=yes
+[mvngu@bsd sage-4.1.2.alpha0]$ make
 ```
 
 When `make` terminates, it would report success. But actually if you then start Sage with

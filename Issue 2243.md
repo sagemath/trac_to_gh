@@ -1,6 +1,6 @@
 # Issue 2243: contour_plot bug
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2243
 
 Original creator: mabshoff
 

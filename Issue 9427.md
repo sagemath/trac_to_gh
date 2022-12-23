@@ -1,6 +1,6 @@
 # Issue 9427: implement fricas integrator
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9427
 
 Original creator: whuss
 

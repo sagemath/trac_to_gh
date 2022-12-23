@@ -1,6 +1,6 @@
 # Issue 7540: Speed up shortest_path_all_pairs() and update distance_graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7540
 
 Original creator: ncohen
 

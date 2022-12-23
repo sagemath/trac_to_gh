@@ -1,6 +1,6 @@
 # Issue 1910: linear algebra -- doctesting for sage/matrix/matrix_field_dense.pyx is off for no good reason, and there are lots of problems when we turn it on.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1910
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5185: [with patch, needs review] is_zero is broken for sparse vectors
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5185
 
 Original creator: jhpalmieri
 

@@ -1,6 +1,6 @@
 # Issue 2384: reduce finite field implementations
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2384
 
 Original creator: malb
 

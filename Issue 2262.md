@@ -1,6 +1,6 @@
 # Issue 2262: Move the debian directory from the sage to the ext repo
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2262
 
 Original creator: mabshoff
 

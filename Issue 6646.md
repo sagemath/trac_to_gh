@@ -1,6 +1,6 @@
 # Issue 6646: R doctest failed
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6646
 
 Original creator: adavid
 

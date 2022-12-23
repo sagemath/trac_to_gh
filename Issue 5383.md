@@ -1,6 +1,6 @@
 # Issue 5383: isinstance(PrincipalIdealDomain) should be replaced with a method .is_principal_ideal_domain()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5383
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 8911: Categorification of Crystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8911
 
 Original creator: aschilling
 

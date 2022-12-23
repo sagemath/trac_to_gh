@@ -1,6 +1,6 @@
 # Issue 7569: random_vertex and random_edge functions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7569
 
 Original creator: ncohen
 

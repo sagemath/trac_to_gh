@@ -1,6 +1,6 @@
 # Issue 9595: Conversion from constant PARI polynomials to QQ doesn't work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9595
 
 Original creator: jdemeyer
 

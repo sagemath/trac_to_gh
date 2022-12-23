@@ -1,6 +1,6 @@
 # Issue 2798: probably easy-to-fix ptest issue
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2798
 
 Original creator: was
 

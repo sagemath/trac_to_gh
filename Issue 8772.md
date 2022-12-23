@@ -1,6 +1,6 @@
 # Issue 8772: Maxima interface chokes randomly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8772
 
 Original creator: dunfield
 
@@ -430,7 +430,7 @@ ValueError: variable names must be alphanumeric, but one is 'sqrt(-195)' which i
 sage: 
 Exiting Sage (CPU time 1m33.85s, Wall time 1921m38.11s).
 Exiting spawned Maxima process.
-leif`@`quadriga:~/Sage/sage-4.5.3.rc0$ ./sage
+leif@quadriga:~/Sage/sage-4.5.3.rc0$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 **********************************************************************

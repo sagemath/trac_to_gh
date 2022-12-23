@@ -1,6 +1,6 @@
 # Issue 1920: 3d graphics -- constant plot3d's
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1920
 
 Original creator: was
 
@@ -35,7 +35,7 @@ Comment by mabshoff created at 2008-08-27 01:03:03
 This is still an issue with all the plot fixes in Sage 3.1.2.alpha1:
 
 ```
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ ./sage
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.1.2.alpha0, Release Date: 2008-08-22                |
@@ -130,7 +130,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'sage.rings.integer.Integer' object is not callable
 sage: 
 Exiting SAGE (CPU time 0m1.16s, Wall time 0m27.83s).
-mabshoff`@`sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ 
+mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1$ 
 ```
 
 

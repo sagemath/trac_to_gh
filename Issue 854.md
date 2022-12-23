@@ -1,6 +1,6 @@
 # Issue 854: [with patch] memory leak: MultiModularBasis_base_mpz_crt_vec_tail
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/854
 
 Original creator: mabshoff
 

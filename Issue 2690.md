@@ -1,6 +1,6 @@
 # Issue 2690: add circular argument to genus command
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2690
 
 Original creator: rlm
 

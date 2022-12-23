@@ -1,6 +1,6 @@
 # Issue 7917: [with patch, needs review] make gauss_sum() work for dirichlet characters when the base ring is CC
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7917
 
 Original creator: bober
 

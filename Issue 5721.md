@@ -1,6 +1,6 @@
 # Issue 5721: [with patch, needs review] speed up irreducible_character_freudenthal
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5721
 
 Original creator: mhansen
 

@@ -1,6 +1,6 @@
 # Issue 5931: [with patch, needs review] Greatly speed up sage.combinat.symmetric_group_algebra.e
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5931
 
 Original creator: jdc
 

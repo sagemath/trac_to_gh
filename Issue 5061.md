@@ -1,6 +1,6 @@
 # Issue 5061: Steenrod algebras report additive order of 0 is p
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5061
 
 Original creator: boothby
 

@@ -1,6 +1,6 @@
 # Issue 2013: crap -- f2c spkg contains precompiled binary
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2013
 
 Original creator: was
 

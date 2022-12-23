@@ -1,6 +1,6 @@
 # Issue 5751: cartan_type now a method rather than attribute in weyl_characters.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5751
 
 Original creator: bump
 

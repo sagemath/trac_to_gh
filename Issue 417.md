@@ -1,6 +1,6 @@
 # Issue 417: Faster GF(p^n) arithmetic for p^n >= 2^16
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/417
 
 Original creator: malb
 

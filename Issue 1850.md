@@ -1,6 +1,6 @@
 # Issue 1850: graphics -- serious bug in parametric plotting of curves.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1850
 
 Original creator: was
 

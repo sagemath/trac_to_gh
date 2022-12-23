@@ -1,6 +1,6 @@
 # Issue 2492: Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2492
 
 Original creator: jsp
 

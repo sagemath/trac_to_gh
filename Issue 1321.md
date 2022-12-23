@@ -1,6 +1,6 @@
 # Issue 1321: [graphs] an interactive graph editor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1321
 
 Original creator: jason
 

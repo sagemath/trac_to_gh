@@ -1,6 +1,6 @@
 # Issue 2611: [with patch, needs review] add monomial_coefficent to boolean polynomials
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2611
 
 Original creator: malb
 

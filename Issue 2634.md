@@ -1,6 +1,6 @@
 # Issue 2634: (easy fix?) Unable to create certain multivariate polynomial rings since libsingular is invoked instead of generic code
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2634
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 5739: zeta(CDF(1)) go boom!
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5739
 
 Original creator: was
 
@@ -12,10 +12,10 @@ CC:  robertwb fredrik
 
 
 ```
-wstein`@`bsd:~/build/sage-3.4.1.rc1$ uname -a
+wstein@bsd:~/build/sage-3.4.1.rc1$ uname -a
 Darwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386
 
-wstein`@`bsd:~/build/sage-3.4.1.rc1$ sage
+wstein@bsd:~/build/sage-3.4.1.rc1$ sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: zeta(CDF(1))

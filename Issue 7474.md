@@ -1,6 +1,6 @@
 # Issue 7474: [with patch, needs review]Expose some more functionality of fmz_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7474
 
 Original creator: mraum
 

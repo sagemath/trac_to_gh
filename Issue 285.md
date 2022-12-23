@@ -1,6 +1,6 @@
 # Issue 285: p-adics : get the first version of David Roe's new p-adics into SAGE as the standard p-adic class
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/285
 
 Original creator: was
 

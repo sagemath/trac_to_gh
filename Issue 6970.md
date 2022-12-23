@@ -1,6 +1,6 @@
 # Issue 6970: port R spkg to os x 10.6
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6970
 
 Original creator: was
 

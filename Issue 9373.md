@@ -1,6 +1,6 @@
 # Issue 9373: some overhaul in organization of database of common graph generators
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9373
 
 Original creator: mvngu
 

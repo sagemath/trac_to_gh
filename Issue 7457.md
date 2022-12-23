@@ -1,6 +1,6 @@
 # Issue 7457: improvements to quotient_ring.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7457
 
 Original creator: AlexGhitza
 

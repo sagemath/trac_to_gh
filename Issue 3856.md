@@ -1,6 +1,6 @@
 # Issue 3856: Multiply between QQ and GF(7) gives exception
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3856
 
 Original creator: gfurnish
 
@@ -26,7 +26,7 @@ TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Univaria
 This is implied to work by the following doctest in coercion_maps.pyx
 
 ```
-            sage: mor = NamedConvertMap(SR, GF(7)[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro), '_polynomial_')
+            sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')
             sage: mor(x^2/4+1)
             1 + 2*t^2
 ```

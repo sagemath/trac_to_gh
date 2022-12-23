@@ -1,6 +1,6 @@
 # Issue 3489: DsageNg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3489
 
 Original creator: ghtdak
 

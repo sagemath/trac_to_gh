@@ -1,6 +1,6 @@
 # Issue 8565: atan2(-pi,0) throws "divide by zero"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8565
 
 Original creator: burcin
 

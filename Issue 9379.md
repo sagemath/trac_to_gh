@@ -1,6 +1,6 @@
 # Issue 9379: is64-Linux binary fails "devel/sage/sage/plot/plot3d/tachyon.py"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9379
 
 Original creator: mariah
 

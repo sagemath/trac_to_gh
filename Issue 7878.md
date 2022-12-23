@@ -1,6 +1,6 @@
 # Issue 7878: remove any spaces in output of testcc.sh and testcxx.sh
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7878
 
 Original creator: drkirkby
 
@@ -35,13 +35,13 @@ To test this patch you will need to have Sun Studio installed.
 
 ```
 $ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
+drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
 Sun_Studio
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC 
+drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC 
 Sun_Studio
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc 
+drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc 
        1       1      12
-drkirkby`@`hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc 
+drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc 
        1       1      11
 ```
 
@@ -58,13 +58,13 @@ Before:
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
 Sun_Studio
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC
 Sun_Studio 
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc
       1       1      12
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc
       1       1      11
 
 ```
@@ -76,9 +76,9 @@ After the patch
 
 
 ```
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc
       1       1      11
-jaap`@`opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc 
+jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc 
       1       1      11
 
 ```

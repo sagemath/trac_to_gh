@@ -1,6 +1,6 @@
 # Issue 5576: [with patch, needs review] MPolynomialSystem cleanup
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5576
 
 Original creator: malb
 
@@ -35,7 +35,7 @@ Comment by mvngu created at 2009-03-27 06:13:47
 First I applied the patch at #5569 against Sage 3.4, then I applied the patch on this ticket. Doctesting gave me timed out errors:
 
 ```
-[mvngu`@`sage sage-3.4]$ sage -t -long devel/sage-5576/sage/crypto/mq/
+[mvngu@sage sage-3.4]$ sage -t -long devel/sage-5576/sage/crypto/mq/
 sage -t -long "devel/sage-5576/sage/crypto/mq/sbox.py"      
          [11.3 s]
 sage -t -long "devel/sage-5576/sage/crypto/mq/mpolynomialsystemgenerator.py"

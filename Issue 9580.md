@@ -1,6 +1,6 @@
 # Issue 9580: Check in or ignore sagenb.po in SageNB package
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9580
 
 Original creator: mpatel
 
@@ -13,7 +13,7 @@ CC:  timdumol
 Noted by Leif Leonhardy in a [comment:ticket:9554:5 comment] at #9554:
 
 ```sh
-leif`@`portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
+leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 ? sagenb/sagenb.po
 ```
 

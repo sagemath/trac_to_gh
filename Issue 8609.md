@@ -1,6 +1,6 @@
 # Issue 8609: Switch AmbientSpace and Scheme to Parent
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8609
 
 Original creator: novoselt
 

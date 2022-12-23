@@ -1,6 +1,6 @@
 # Issue 6397: implement general Newton's method root finding for power series rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6397
 
 Original creator: ncalexan
 

@@ -1,6 +1,6 @@
 # Issue 3040: [with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3040
 
 Original creator: was
 

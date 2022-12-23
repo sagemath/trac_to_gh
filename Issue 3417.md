@@ -1,6 +1,6 @@
 # Issue 3417: added new combinatorial functions for tableaux and crystals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3417
 
 Original creator: aschilling
 

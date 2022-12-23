@@ -1,6 +1,6 @@
 # Issue 5760: bring doctest coverage of plot3d/shapes.pyx to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5760
 
 Original creator: robertwb
 

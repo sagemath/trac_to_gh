@@ -1,6 +1,6 @@
 # Issue 93: Create a native MS Windows program that starts colinux running SAGE, adjust memory, launches web browser etc.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/93
 
 Original creator: was
 

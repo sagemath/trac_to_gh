@@ -1,6 +1,6 @@
 # Issue 4089: notebook -- no active worksheets should show up on "archived" tab
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4089
 
 Original creator: TimothyClemans
 

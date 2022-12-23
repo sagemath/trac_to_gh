@@ -1,6 +1,6 @@
 # Issue 6381: bug in integral_points when rank is large
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6381
 
 Original creator: was
 
@@ -11,7 +11,7 @@ Assignee: was
 I don't know if this would ever finish, but it probably shouldn't stop with the following error! (this is in sage-4.0.2 on sage.math):
 
 ```
-wstein`@`sage:~/build/sage-4.0.2$ ./sage
+wstein@sage:~/build/sage-4.0.2$ ./sage
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: D=6611719866; E = EllipticCurve([0,0,0,-D^2,0])

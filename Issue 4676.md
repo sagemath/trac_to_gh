@@ -1,6 +1,6 @@
 # Issue 4676: Polyhedral improvements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4676
 
 Original creator: mhampton
 

@@ -1,6 +1,6 @@
 # Issue 2065: tidying up documentation for dsage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2065
 
 Original creator: ljpk
 

@@ -1,6 +1,6 @@
 # Issue 4458: tutorial and reference manual should explain NameError
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4458
 
 Original creator: robertwb
 

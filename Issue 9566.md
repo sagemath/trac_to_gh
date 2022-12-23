@@ -1,6 +1,6 @@
 # Issue 9566: [with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9566
 
 Original creator: fredrik.johansson
 

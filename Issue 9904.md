@@ -1,6 +1,6 @@
 # Issue 9904: Spkg logs should get timestamps
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9905
 
 Original creator: justin
 

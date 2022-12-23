@@ -1,6 +1,6 @@
 # Issue 8477: Force GNU make to build PALP serially
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8477
 
 Original creator: mpatel
 

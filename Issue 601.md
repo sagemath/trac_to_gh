@@ -1,6 +1,6 @@
 # Issue 601: bug -- caused by fixing#549 -- now there is too much space around output.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/601
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 1621: updagte gd to 2.0.36
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1621
 
 Original creator: mabshoff
 

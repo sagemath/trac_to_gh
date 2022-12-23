@@ -1,6 +1,6 @@
 # Issue 3853: [with patch, needs review] plot.py improvements part 1: Remove all factories
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3853
 
 Original creator: mhansen
 

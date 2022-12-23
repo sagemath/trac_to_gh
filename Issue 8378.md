@@ -1,6 +1,6 @@
 # Issue 8378: [trivial to fix] typo in documentation of crt
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8378
 
 Original creator: zimmerma
 

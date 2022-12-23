@@ -1,6 +1,6 @@
 # Issue 177: pari interface -- transition to new arithmetic model
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/177
 
 Original creator: was
 
@@ -10,7 +10,7 @@ Assignee: somebody
 
 
 ```
-On Mon, 04 Dec 2006 05:37:02 -0800, Luislang <dpl`@`sun.ac.za> wrote:
+On Mon, 04 Dec 2006 05:37:02 -0800, Luislang <dpl@sun.ac.za> wrote:
 
 >
 >
@@ -70,7 +70,7 @@ done for sage > 1.8.2.1
 
 ```
 # HG changeset patch
-# User William Stein <wstein`@`gmail.com>
+# User William Stein <wstein@gmail.com>
 # Date 1169749924 28800
 # Node ID 8faeaa5cc7cbc2f90c980a2011c354ba5479f615
 # Parent  77fad05c682bd6d4d76524f689941195f82778e6
@@ -79,7 +79,7 @@ Transition pari interface to new arithmetic architecture.
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pxd
 --- a/sage/libs/pari/gen.pxd    Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/libs/pari/gen.pxd    Thu Jan 25 10:32:04 2007 -0800
-`@``@` -1,6 +1,8 `@``@` include 'decl.pxi'
+@@ -1,6 +1,8 @@ include 'decl.pxi'
  include 'decl.pxi'
  
 -cdef class gen:
@@ -89,7 +89,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pxd
      cdef GEN g
      cdef object refers_to
      cdef pari_sp b
-`@``@` -12,7 +14,9 `@``@` cdef class gen:
+@@ -12,7 +14,9 @@ cdef class gen:
      cdef GEN _deepcopy_to_python_heap(self, GEN x, pari_sp* address)
      cdef int get_var(self, v)    
  
@@ -103,7 +103,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pxd
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
 --- a/sage/libs/pari/gen.pyx    Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/libs/pari/gen.pyx    Thu Jan 25 10:32:04 2007 -0800
-`@``@` -8,7 +8,26 `@``@` AUTHORS:
+@@ -8,7 +8,26 @@ AUTHORS:
               from any version to the next...).
      -- William Stein (2006-03-06): added newtonpoly
      -- Justin Walker: contributed some of the function definitions
@@ -131,7 +131,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  """
  
  import math
-`@``@` -16,7 +35,10 `@``@` from sage.misc.misc import xsrange
+@@ -16,7 +35,10 @@ from sage.misc.misc import xsrange
  from sage.misc.misc import xsrange
  import sage.structure.coerce
  import operator
@@ -143,7 +143,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  include 'pari_err.pxi'
  include 'setlvalue.pxi'
  include '../../ext/stdsage.pxi'
-`@``@` -33,6 +55,8 `@``@` P = pari_instance   # shorthand notation
+@@ -33,6 +55,8 @@ P = pari_instance   # shorthand notation
  # See the polgalois section of the PARI users manual.
  new_galois_format = 1   
  
@@ -152,7 +152,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  # keep track of the stack
  cdef pari_sp stack_avma
  
-`@``@` -66,13 +90,13 `@``@` cdef t4GEN(x):
+@@ -66,13 +90,13 @@ cdef t4GEN(x):
      global t4
      t4 = P.toGEN(x)
  
@@ -168,7 +168,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      def parent(self):
          return pari_instance
-`@``@` -86,6 +110,7 `@``@` cdef class gen:
+@@ -86,6 +110,7 @@ cdef class gen:
          """
          self.g = g
          self.b = b
@@ -176,7 +176,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      def __dealloc__(self):
          if self.b:
-`@``@` -117,49 +142,129 `@``@` cdef class gen:
+@@ -117,49 +142,129 @@ cdef class gen:
          return list(self.Vec())
          
      def __reduce__(self):
@@ -341,7 +341,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      def __mod__(self, other):
          if isinstance(self, gen) and isinstance(other, gen):
-`@``@` -424,7 +529,10 `@``@` cdef class gen:
+@@ -424,7 +529,10 @@ cdef class gen:
          _sig_on
          x = pari(y)
          if isinstance(n, tuple):
@@ -353,7 +353,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
              i = n[0]
              j = n[1]
              if i < 0 or i >= self.nrows():
-`@``@` -436,10 +544,14 `@``@` cdef class gen:
+@@ -436,10 +544,14 @@ cdef class gen:
  
          if n < 0 or n >= glength(self.g):
              raise IndexError, "index (%s) must be between 0 and %s"%(n,glength(self.g)-1)
@@ -372,7 +372,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
          if typ(self.g) == t_POL:
              n = n + 1
-`@``@` -466,8 +578,11 `@``@` cdef class gen:
+@@ -466,8 +578,11 @@ cdef class gen:
          result = gcmp(self.g, other.g)
          _sig_off
          return result
@@ -386,7 +386,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
          """
          Comparisons
  
-`@``@` -475,24 +590,6 `@``@` cdef class gen:
+@@ -475,24 +590,6 @@ cdef class gen:
          not comparable, it then compares the underlying strings (since
          in Python all objects are supposed to be comparable).
  
@@ -411,7 +411,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
          EXAMPLES:
              sage: a = pari(5)
              sage: b = 10
-`@``@` -512,23 +609,21 `@``@` cdef class gen:
+@@ -512,23 +609,21 @@ cdef class gen:
              True
              sage: a is 5
              False
@@ -450,7 +450,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      def copy(gen self):
          return P.new_gen(forcecopy(self.g))
-`@``@` -5019,7 +5114,7 `@``@` cdef class gen:
+@@ -5019,7 +5114,7 @@ cdef class gen:
  
  cdef unsigned long num_primes
  
@@ -459,7 +459,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
      def __init__(self, long size=16000000, unsigned long maxprime=500000):
          """
          Initialize the PARI system.
-`@``@` -5087,6 +5182,24 `@``@` cdef class PariInstance:
+@@ -5087,6 +5182,24 @@ cdef class PariInstance:
      def __repr__(self):
          return "Interface to the PARI C library"
  
@@ -484,7 +484,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
      def default(self, variable, value=None):
          if not value is None:
              return self('default(%s, %s)'%(variable, value))
-`@``@` -5161,8 +5274,8 `@``@` cdef class PariInstance:
+@@ -5161,8 +5274,8 @@ cdef class PariInstance:
          cdef gen g
          g = _new_gen(x)
          
@@ -495,7 +495,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
          _sig_off
          return g
  
-`@``@` -5181,8 +5294,11 `@``@` cdef class PariInstance:
+@@ -5181,8 +5294,11 @@ cdef class PariInstance:
          cdef gen p
          p = gen()
          p.init(x, 0)
@@ -509,7 +509,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
          return p
  
      cdef gen adapt(self, s):
-`@``@` -5223,7 +5339,7 `@``@` cdef class PariInstance:
+@@ -5223,7 +5339,7 @@ cdef class PariInstance:
          _sig_off
          return self.new_gen(g)
          
@@ -518,7 +518,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
          """
          Implicit canonical coercion into a PARI object.
          """
-`@``@` -5234,6 +5350,9 `@``@` cdef class PariInstance:
+@@ -5234,6 +5350,9 @@ cdef class PariInstance:
          if isinstance(x, gen):
              return x
          raise TypeError, "x must be a PARI object"
@@ -528,7 +528,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      def new_with_prec(self, s, long precision=0):
          r"""
-`@``@` -5628,7 +5747,7 `@``@` cdef int init_stack(size_t size) except 
+@@ -5628,7 +5747,7 @@ cdef int init_stack(size_t size) except 
  cdef int init_stack(size_t size) except -1:
      cdef size_t s
  
@@ -537,7 +537,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
  
      # delete this if get core dumps and change the 2* to a 1* below.
      if bot:
-`@``@` -5656,8 +5775,8 `@``@` cdef int init_stack(size_t size) except 
+@@ -5656,8 +5775,8 @@ cdef int init_stack(size_t size) except 
          if not bot:
              raise MemoryError, "Unable to allocate %s bytes memory for PARI."%(<long>size)
      #endif
@@ -547,7 +547,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
      avma = top
      stack_avma = avma
  
-`@``@` -5676,7 +5795,7 `@``@` cdef GEN deepcopy_to_python_heap(GEN x, 
+@@ -5676,7 +5795,7 @@ cdef GEN deepcopy_to_python_heap(GEN x, 
  cdef GEN deepcopy_to_python_heap(GEN x, pari_sp* address):
      cdef size_t s
      cdef pari_sp tmp_bot, tmp_top, tmp_avma
@@ -556,7 +556,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
      cdef GEN h
  
      tmp_top = top
-`@``@` -5699,14 +5818,23 `@``@` cdef GEN deepcopy_to_python_heap(GEN x, 
+@@ -5699,14 +5818,23 @@ cdef GEN deepcopy_to_python_heap(GEN x, 
      avma = tmp_avma
      return h
  
@@ -581,7 +581,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
      _sig_off
      return y
  
-`@``@` -5733,8 +5861,8 `@``@` cdef int _read_script(char* s) except -1
+@@ -5733,8 +5861,8 @@ cdef int _read_script(char* s) except -1
  
      # We set top to avma, so the script's affects won't be undone
      # when we call new_gen again.
@@ -595,7 +595,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/libs/pari/gen.pyx
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/modules/complex_double_vector.pxd
 --- a/sage/modules/complex_double_vector.pxd    Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/modules/complex_double_vector.pxd    Thu Jan 25 10:32:04 2007 -0800
-`@``@` -1,6 +1,8 `@``@` include '../ext/cdefs.pxi'
+@@ -1,6 +1,8 @@ include '../ext/cdefs.pxi'
  include '../ext/cdefs.pxi'
  include '../ext/interrupt.pxi'
  include '../gsl/gsl.pxi'
@@ -607,7 +607,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/modules/complex_double_vector.pxd
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/modules/complex_double_vector.pyx
 --- a/sage/modules/complex_double_vector.pyx    Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/modules/complex_double_vector.pyx    Thu Jan 25 10:32:04 2007 -0800
-`@``@` -35,8 +35,8 `@``@` import  free_module_element
+@@ -35,8 +35,8 @@ import  free_module_element
  
  from sage.structure.element cimport Element, ModuleElement, RingElement
  
@@ -620,7 +620,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/modules/complex_double_vector.pyx
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/rings/number_field/number_field.py
 --- a/sage/rings/number_field/number_field.py   Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/rings/number_field/number_field.py   Thu Jan 25 10:32:04 2007 -0800
-`@``@` -489,7 +489,7 `@``@` class NumberField_generic(field.Field):
+@@ -489,7 +489,7 @@ class NumberField_generic(field.Field):
              
          Here are the factors:
             
@@ -632,7 +632,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/rings/number_field/number_field.py
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/rings/number_field/number_field_ideal.py
 --- a/sage/rings/number_field/number_field_ideal.py     Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/rings/number_field/number_field_ideal.py     Thu Jan 25 10:32:04 2007 -0800
-`@``@` -363,7 +363,7 `@``@` class NumberFieldIdeal(Ideal_fractional)
+@@ -363,7 +363,7 @@ class NumberFieldIdeal(Ideal_fractional)
                  return self.__is_principal
              bnf = self.number_field().pari_bnf(certify)
              v = bnf.bnfisprincipal(self.pari_hnf())
@@ -641,7 +641,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/rings/number_field/number_field_ideal.
              if self.__is_principal:
                  K = self.number_field()
                  R = K.polynomial().parent()
-`@``@` -542,7 +542,7 `@``@` class NumberFieldIdeal_rel(NumberFieldId
+@@ -542,7 +542,7 @@ class NumberFieldIdeal_rel(NumberFieldId
              sage: K.<a> = NumberField(x^2+6)
              sage: L.<b> = K.extension(K['x'].gen()^4 + a)
              sage: L.ideal(b).norm()
@@ -653,7 +653,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/rings/number_field/number_field_ideal.
 diff -r 77fad05c682b -r 8faeaa5cc7cb sage/structure/element.pyx
 --- a/sage/structure/element.pyx        Thu Jan 25 07:12:49 2007 -0800
 +++ b/sage/structure/element.pyx        Thu Jan 25 10:32:04 2007 -0800
-`@``@` -1832,6 +1832,7 `@``@` cdef bin_op_c(x, y, op):
+@@ -1832,6 +1832,7 @@ cdef bin_op_c(x, y, op):
          x1, y1 = canonical_coercion_c(x, y)
          return op(x1,y1)        
      except TypeError, msg:
@@ -664,7 +664,7 @@ diff -r 77fad05c682b -r 8faeaa5cc7cb sage/structure/element.pyx
 diff -r 77fad05c682b -r 8faeaa5cc7cb setup.py
 --- a/setup.py  Thu Jan 25 07:12:49 2007 -0800
 +++ b/setup.py  Thu Jan 25 10:32:04 2007 -0800
-`@``@` -549,7 +549,7 `@``@` def need_to_pyrex(filename, outfile):
+@@ -549,7 +549,7 @@ def need_to_pyrex(filename, outfile):
          # Check to see if a/b/c/d.pxd exists and is newer than filename.
          # If so, we have to regenerate outfile.  If not, we're safe.
          if os.path.exists(A) and is_older(A, outfile):

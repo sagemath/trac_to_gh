@@ -1,6 +1,6 @@
 # Issue 5762: Bring doctests of sage/misc/latex.py to 100%
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5762
 
 Original creator: rbeezer
 

@@ -1,6 +1,6 @@
 # Issue 7301: Gale Ryser theorem
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7301
 
 Original creator: ncohen
 

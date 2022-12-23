@@ -1,6 +1,6 @@
 # Issue 1827: plot3d/transform.pyx test failure
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1827
 
 Original creator: gfurnish
 

@@ -1,6 +1,6 @@
 # Issue 8222: sagenb -- misc improvements to the notebook graph editor
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8222
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 3038: [with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3038
 
 Original creator: tabbott
 

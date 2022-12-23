@@ -1,6 +1,6 @@
 # Issue 5988: notebook feature request -- make it so non-logged in users are redirected to login page
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5988
 
 Original creator: was
 

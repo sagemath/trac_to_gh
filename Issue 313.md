@@ -1,6 +1,6 @@
 # Issue 313: Slideshow doesn't update when cell deleted.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/313
 
 Original creator: TimothyClemans
 

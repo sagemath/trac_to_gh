@@ -1,6 +1,6 @@
 # Issue 8400: doctest devel/sage/sage/databases/database.py fails on Solaris 10 (SPARC)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8400
 
 Original creator: drkirkby
 

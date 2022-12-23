@@ -1,6 +1,6 @@
 # Issue 9411: Given points on an elliptic curve, this finds a LLL reduced ZZ-independent set
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9411
 
 Original creator: aly.deines
 

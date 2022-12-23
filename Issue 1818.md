@@ -1,6 +1,6 @@
 # Issue 1818: [with patch] include AES polynomial system generator in reference manual
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1818
 
 Original creator: malb
 

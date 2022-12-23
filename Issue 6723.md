@@ -1,6 +1,6 @@
 # Issue 6723: spell-check all modules under sage/modular
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6723
 
 Original creator: mvngu
 

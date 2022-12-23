@@ -1,6 +1,6 @@
 # Issue 9731: Export/Import of GML/Graphml/Yaml files through NetworkX
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9731
 
 Original creator: ncohen
 

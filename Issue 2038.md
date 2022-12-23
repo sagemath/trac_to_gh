@@ -1,6 +1,6 @@
 # Issue 2038: plotting -- error message when failing to evaluate at a point is now sucky (it used to be good)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2038
 
 Original creator: was
 

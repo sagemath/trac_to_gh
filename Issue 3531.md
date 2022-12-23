@@ -1,6 +1,6 @@
 # Issue 3531: [With SPKG, needs review] Boehm_GC spkg
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3531
 
 Original creator: gfurnish
 

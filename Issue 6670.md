@@ -1,6 +1,6 @@
 # Issue 6670: [with patch, needs work] Port group algebras to the current coercion system
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6670
 
 Original creator: mraum
 

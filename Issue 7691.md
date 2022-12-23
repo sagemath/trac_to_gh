@@ -1,6 +1,6 @@
 # Issue 7691: Expect interfaces should not timeout
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7691
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 6913: __eq__ methods for the classes in numerical.MIP
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6913
 
 Original creator: ncohen
 

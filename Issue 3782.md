@@ -1,6 +1,6 @@
 # Issue 3782: [with patch, positive review] add support for non-symmetric Macdonald polynomials with permuted basements
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3782
 
 Original creator: mhansen
 

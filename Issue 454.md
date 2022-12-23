@@ -1,6 +1,6 @@
 # Issue 454: VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/454
 
 Original creator: was
 

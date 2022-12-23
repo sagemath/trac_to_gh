@@ -1,6 +1,6 @@
 # Issue 4829: Create Sage 3.2.2 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4829
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 7047: lapack sends GNU option -fPIC to Sun fortran compiler.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7047
 
 Original creator: drkirkby
 

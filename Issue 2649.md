@@ -1,6 +1,6 @@
 # Issue 2649: [with patch, needs review] matrix() constructor fails to find ring for empty dict
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2649
 
 Original creator: rhinton
 

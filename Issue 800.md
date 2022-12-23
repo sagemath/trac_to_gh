@@ -1,6 +1,6 @@
 # Issue 800: make _sig_on and _sig_off faster when stacked
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/800
 
 Original creator: craigcitro
 

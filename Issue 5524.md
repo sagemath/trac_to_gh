@@ -1,6 +1,6 @@
 # Issue 5524: attrcall missing __cmp__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5524
 
 Original creator: nthiery
 

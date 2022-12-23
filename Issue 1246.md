@@ -1,6 +1,6 @@
 # Issue 1246: mpfi-1.3.4-rc3.p9 fails to build on x86_64 SuSE 10.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1246
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 745: update the version of FLINT that is in Sage
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/745
 
 Original creator: was
 

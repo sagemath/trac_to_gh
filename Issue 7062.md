@@ -1,6 +1,6 @@
 # Issue 7062: ECL snapshot of 13th Sept 2009 fails with Sun Studio 12.1
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7062
 
 Original creator: drkirkby
 

@@ -1,6 +1,6 @@
 # Issue 2139: set partitions iterator not working
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2139
 
 Original creator: mhansen
 

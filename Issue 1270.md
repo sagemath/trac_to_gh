@@ -1,6 +1,6 @@
 # Issue 1270: [with patch] implement complex intervals
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1270
 
 Original creator: cwitty
 

@@ -1,6 +1,6 @@
 # Issue 3174: add 64 bit OSX build support to flint
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3174
 
 Original creator: mabshoff
 

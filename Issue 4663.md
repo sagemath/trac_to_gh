@@ -1,6 +1,6 @@
 # Issue 4663: prune module_list.py of dead extensions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4663
 
 Original creator: mabshoff
 

@@ -1,6 +1,6 @@
 # Issue 6053: Cython numpy broken in notebook
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6053
 
 Original creator: ghtdak
 

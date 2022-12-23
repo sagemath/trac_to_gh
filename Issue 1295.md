@@ -1,6 +1,6 @@
 # Issue 1295: butterfly graph
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1295
 
 Original creator: jason
 

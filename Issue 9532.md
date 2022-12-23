@@ -1,6 +1,6 @@
 # Issue 9532: fix uncontrolled randomness in sage/graphs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9532
 
 Original creator: cwitty
 

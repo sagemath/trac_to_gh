@@ -1,6 +1,6 @@
 # Issue 8703: Combinatorial Rooted Ordered and Binary Trees
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8703
 
 Original creator: hivert
 
@@ -234,7 +234,7 @@ The patch looks very complete, thanks you!
 One thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,
 
 ```
-sage: BinaryTree("[., [This is the Trac macro *., [., .* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#., [., .-macro), .]]")
+sage: BinaryTree("[., [[., [., .]], .]]")
 ```
 
 Unfortunately, this resulted in an infinite recursion. It would be great if you could fix this.
@@ -572,7 +572,7 @@ Attachment
 OK, I'm really not getting this:
 
 ```
-darij`@`travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit
+darij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit
 abort: cannot commit over an applied mq patch
 ```
 
@@ -612,13 +612,13 @@ Hmm......
 
 
 ```
-darij`@`travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh
+darij@travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh
 /bin/sh: 1: [[: not found
 Are you sure you want to refresh the following changes:
 into the patch: no patches applied
 (y/n)y
 no patches applied
-darij`@`travis-virtualbox:~/sage-5.6$ 
+darij@travis-virtualbox:~/sage-5.6$ 
 ```
 
 
@@ -626,13 +626,13 @@ But maybe it's the wrong folder?
 
 
 ```
-darij`@`travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/
-darij`@`travis-virtualbox:~/sage-5.6/devel/sage-combinat$ ../../sage -hg qrefresh
+darij@travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/
+darij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ ../../sage -hg qrefresh
 /bin/sh: 1: [[: not found
 Are you sure you want to refresh the following changes:
 into the patch: patch.patch
 (y/n)y
-darij`@`travis-virtualbox:~/sage-5.6/devel/sage-combinat$ 
+darij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ 
 ```
 
 

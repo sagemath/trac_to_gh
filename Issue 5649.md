@@ -1,6 +1,6 @@
 # Issue 5649: plot doesn't work when x-range too small
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5649
 
 Original creator: was
 

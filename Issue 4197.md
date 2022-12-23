@@ -1,6 +1,6 @@
 # Issue 4197: weird ntl finite field modulus caching bug.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4197
 
 Original creator: was
 
@@ -31,11 +31,11 @@ For whitespace errors, see the file
         [1.2 s]
 
 This machine is:
-[wstein`@`eno eno]$ cat /etc/issue
+[wstein@eno eno]$ cat /etc/issue
 Fedora release 8 (Werewolf)
 Kernel \r on an \m
 
-[wstein`@`eno eno]$ uname -a
+[wstein@eno eno]$ uname -a
 Linux eno 2.6.24.5-85.fc8 #1 SMP Sat Apr 19 11:18:09 EDT 2008 x86_64
 x86_64 x86_64 GNU/Linux
 ```

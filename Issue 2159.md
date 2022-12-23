@@ -1,6 +1,6 @@
 # Issue 2159: Gröbner bases over any field (cont'd)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2159
 
 Original creator: zimmerma
 

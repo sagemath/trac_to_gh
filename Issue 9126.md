@@ -1,6 +1,6 @@
 # Issue 9126: Symbolic arguments() method
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9126
 
 Original creator: jason
 

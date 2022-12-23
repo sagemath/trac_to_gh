@@ -1,6 +1,6 @@
 # Issue 2484: "Conditional jump" in  QuadDoubleElement __repr__
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2484
 
 Original creator: mabshoff
 

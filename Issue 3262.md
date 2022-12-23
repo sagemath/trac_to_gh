@@ -1,6 +1,6 @@
 # Issue 3262: interact selector breaks if there are too many options
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3262
 
 Original creator: mhampton
 
@@ -14,7 +14,7 @@ When the lists of values of multiple selectors are too long, the output is trunc
 
 
 ```
-`@`interact
+@interact
 def test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):
     show([q1,q2,q3])
 ```
@@ -46,13 +46,13 @@ REFEREE REPORT:
 2. This line
 
 ```
-if self.__in.find('`@`interact') == -1: 
+if self.__in.find('@interact') == -1: 
 ```
 
 would read better as
 
 ```
-if '`@`interact' not in self.__in
+if '@interact' not in self.__in
 ```
 
 
@@ -61,7 +61,7 @@ we are being *VERY HACKISH* doing this, since e.g. it will cause us to
 think that
 
 ```
- print "`@`interact"
+ print "@interact"
 ```
 
 is an interact cell, even though it isn't, and this could must be rewritten

@@ -1,6 +1,6 @@
 # Issue 1186: Charpoly of a matrix of polynomials sometimes breaks
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1186
 
 Original creator: kedlaya
 

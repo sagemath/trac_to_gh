@@ -1,6 +1,6 @@
 # Issue 4050: Shared worksheets are not copied correctly
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4050
 
 Original creator: mhampton
 

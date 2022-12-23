@@ -1,6 +1,6 @@
 # Issue 3061: use readlink and realpatch so that symlinking sage works
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3061
 
 Original creator: mabshoff
 
@@ -91,10 +91,10 @@ Attachment
 Tested on OSX & Linux. It works:
 
 ```
-mabshoff`@`sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo
-mabshoff`@`sage:~$ ls -al foo
+mabshoff@sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo
+mabshoff@sage:~$ ls -al foo
 lrwxrwxrwx 1 mabshoff 1090 54 2008-04-29 22:37 foo -> /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage
-mabshoff`@`sage:~$ ./foo
+mabshoff@sage:~$ ./foo
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 | SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26                |

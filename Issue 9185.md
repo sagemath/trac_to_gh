@@ -1,6 +1,6 @@
 # Issue 9185: Update Singular's spkg-install for building multiple spkgs in parallel
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9185
 
 Original creator: mpatel
 
@@ -90,7 +90,7 @@ Some Solaris stuff seems to be lost (obsolete?):
 ```
 --- patches/src.Singular.Makefile.in	2009-06-11 12:23:38.000000000 +0200
 +++ patches/Singular.Makefile.in	2010-01-20 18:30:21.000000000 +0100
-`@``@` -130,12 +130,6 `@``@`
+@@ -130,12 +130,6 @@
  LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc  -lhtmlhelp
  endif
  
@@ -103,7 +103,7 @@ Some Solaris stuff seems to be lost (obsolete?):
  #
  # End libSINGULAR
  #
-`@``@` -534,12 +528,18 `@``@`
+@@ -534,12 +528,18 @@
  	${INSTALL_DATA} `pwd`/LIB/gftables/* ${slibdir}/gftables/
  
  install-libsingular: libsingular

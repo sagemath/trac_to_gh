@@ -1,6 +1,6 @@
 # Issue 4477: [with patch; needs review] Allow exp() function for PowerSeriesRing element to compute with valid non-zero constant term
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4477
 
 Original creator: sengupta
 

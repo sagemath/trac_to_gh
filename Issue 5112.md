@@ -1,6 +1,6 @@
 # Issue 5112: generic Pollard lambda algorithm
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5112
 
 Original creator: ylchapuy
 

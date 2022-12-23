@@ -1,6 +1,6 @@
 # Issue 6529: adding doctests to arith.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6529
 
 Original creator: mhampton
 

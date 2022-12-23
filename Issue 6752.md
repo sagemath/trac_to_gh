@@ -1,6 +1,6 @@
 # Issue 6752: tutorial: explain where generated Python files are located
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6752
 
 Original creator: mvngu
 

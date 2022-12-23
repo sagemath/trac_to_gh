@@ -1,6 +1,6 @@
 # Issue 9118: utility for converting between different alphabets
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9118
 
 Original creator: mvngu
 

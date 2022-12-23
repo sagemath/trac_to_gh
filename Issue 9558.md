@@ -1,6 +1,6 @@
 # Issue 9558: Make `is_symmetric` method for polynomials or where else useful
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9558
 
 Original creator: kcrisman
 

@@ -1,6 +1,6 @@
 # Issue 3928: multiedge graphs create an edge for each character of a label
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3928
 
 Original creator: jason
 

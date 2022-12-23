@@ -1,6 +1,6 @@
 # Issue 6136: (Combinatorial) Free modules: cleanup, abstraction into categories, and functorial constructions
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6136
 
 Original creator: nthiery
 

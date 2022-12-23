@@ -1,6 +1,6 @@
 # Issue 8795: clean up documentation of logic/logictable.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8795
 
 Original creator: mvngu
 

@@ -1,6 +1,6 @@
 # Issue 2600: vector plot throws error when function contains a float
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2600
 
 Original creator: jason
 

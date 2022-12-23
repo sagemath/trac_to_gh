@@ -1,6 +1,6 @@
 # Issue 1312: [graphs] find hamiltonian cycles and paths
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1312
 
 Original creator: jason
 

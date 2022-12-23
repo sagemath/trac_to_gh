@@ -1,6 +1,6 @@
 # Issue 9561: Docbuild warnings caused by #9219
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9561
 
 Original creator: mpatel
 

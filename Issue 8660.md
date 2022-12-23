@@ -1,6 +1,6 @@
 # Issue 8660: German translation of installation guide
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8660
 
 Original creator: mvngu
 
@@ -289,7 +289,7 @@ WARNING:
 Make sure to create a ~/.hgrc file:
 ----------------------------------------------------------------------
 [ui]
-username = William Stein <wstein`@`gmail.com>
+username = William Stein <wstein@gmail.com>
 ----------------------------------------------------------------------
 
 
@@ -299,7 +299,7 @@ WARNING:
 Make sure to create a ~/.hgrc file:
 ----------------------------------------------------------------------
 [ui]
-username = William Stein <wstein`@`gmail.com>
+username = William Stein <wstein@gmail.com>
 ----------------------------------------------------------------------
 
 
@@ -309,7 +309,7 @@ WARNING:
 Make sure to create a ~/.hgrc file:
 ----------------------------------------------------------------------
 [ui]
-username = William Stein <wstein`@`gmail.com>
+username = William Stein <wstein@gmail.com>
 ----------------------------------------------------------------------
 
 
@@ -385,7 +385,7 @@ I think I see the problem: I was sort of wrong about the patch to builder.py not
 diff -r 361a4ad7d52c -r aad4d26889c1 doc/common/build_options.py
 --- a/doc/common/build_options.py	Fri Feb 25 18:56:01 2011 +0000
 +++ b/doc/common/build_options.py	Wed May 11 20:19:52 2011 +0200
-`@``@` -4,7 +4,7 `@``@`
+@@ -4,7 +4,7 @@
  
  import os
  SAGE_DOC = os.environ['SAGE_DOC']
@@ -528,7 +528,7 @@ John, we really have to get rid of these odd messages:
 Detected SAGE64 flag
 Building Sage on OS X in 64-bit mode
 # HG changeset patch
-# User Ivo Hedtke <hedtke`@`me.com>
+# User Ivo Hedtke <hedtke@me.com>
 # Date 1311110488 -7200
 # Node ID 3348063a50bb0129e20520811c459b799eca49b9
 # Parent  7bf76cfce2b3dabf5aeaf7a47d985b2204ad5cc0

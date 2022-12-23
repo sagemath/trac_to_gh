@@ -1,6 +1,6 @@
 # Issue 3328: minor fix rpy
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/3328
 
 Original creator: fbissey
 

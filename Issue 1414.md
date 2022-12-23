@@ -1,6 +1,6 @@
 # Issue 1414: wrap MPolynomialRing so inject_on() works.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1414
 
 Original creator: was
 

@@ -1,6 +1,6 @@
 # Issue 8779: Categories for polynomial rings
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8779
 
 Original creator: nthiery
 

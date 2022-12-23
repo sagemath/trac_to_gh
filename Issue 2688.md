@@ -1,6 +1,6 @@
 # Issue 2688: Kuratowski subgraph isolator for planarity checking
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2688
 
 Original creator: rlm
 

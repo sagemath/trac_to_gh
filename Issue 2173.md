@@ -1,6 +1,6 @@
 # Issue 2173: [with patch; needs review] SAGE setup.py should run cython as "python2.5 cython"
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2173
 
 Original creator: tabbott
 

@@ -1,6 +1,6 @@
 # Issue 798: [with patch] MPolynomial_libsingular.subs
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/798
 
 Original creator: malb
 

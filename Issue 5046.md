@@ -1,6 +1,6 @@
 # Issue 5046: converting between Graph and DiGraph naturally
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/5046
 
 Original creator: jason
 

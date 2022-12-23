@@ -1,6 +1,6 @@
 # Issue 9110: wrong documentation in EllipticCurve.change_weierstrass_model()
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/9110
 
 Original creator: dmharvey
 

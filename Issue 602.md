@@ -1,7 +1,7 @@
 # Issue 602: sage: (1/2)^(2^100)
 serious powering bug / overflow
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/602
 
 Original creator: was
 

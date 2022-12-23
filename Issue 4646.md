@@ -1,6 +1,6 @@
 # Issue 4646: Create Sage 3.2.1 release notes
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4646
 
 Original creator: mabshoff
 

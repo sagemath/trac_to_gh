@@ -1,6 +1,6 @@
 # Issue 1174: very minor bug in calculs _complex_ coercion.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/1174
 
 Original creator: was
 

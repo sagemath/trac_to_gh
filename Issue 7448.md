@@ -1,6 +1,6 @@
 # Issue 7448: Improve sphinx rendering of categories in reference manual.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/7448
 
 Original creator: hivert
 
@@ -74,7 +74,7 @@ More info on this: to workaround python's nested class pickle bug we put any cla
 diff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py
 --- a/sage/misc/nested_class.py
 +++ b/sage/misc/nested_class.py
-`@``@` -108,7 +108,7 `@``@` def modify_for_nested_pickle(cls, name_p
+@@ -108,7 +108,7 @@ def modify_for_nested_pickle(cls, name_p
              if v.__name__ == name and v.__module__ == module.__name__ and getattr(module, name, None) is not v:
                  # OK, probably this is a nested class.
                  dotted_name = name_prefix + '.' + name
@@ -402,7 +402,7 @@ Questions:
 diff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py
 --- a/doc/common/sage_autodoc.py
 +++ b/doc/common/sage_autodoc.py
-`@``@` -848,7 +848,9 `@``@` class ClassDocumenter(ModuleLevelDocumen
+@@ -848,7 +848,9 @@ class ClassDocumenter(ModuleLevelDocumen
          # as data/attribute
          if ret:
              if hasattr(self.object, '__name__'):

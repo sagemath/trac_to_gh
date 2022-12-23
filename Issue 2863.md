@@ -1,6 +1,6 @@
 # Issue 2863: Integer() does not specify that numbers beginning with 0 and 0x are treated specially
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/2863
 
 Original creator: ddrake
 

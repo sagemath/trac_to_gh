@@ -1,6 +1,6 @@
 # Issue 934: [with patch] doctest for sparse matrix .transpose() does not actually test the function.
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/934
 
 Original creator: mhansen
 

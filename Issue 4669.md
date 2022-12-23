@@ -1,6 +1,6 @@
 # Issue 4669: CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/4669
 
 Original creator: jason
 

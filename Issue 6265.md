@@ -1,6 +1,6 @@
 # Issue 6265: fix toy_d_basis.py
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6265
 
 Original creator: ncalexan
 

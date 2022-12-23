@@ -1,6 +1,6 @@
 # Issue 6582: Potential issue in polybori - 0.5rc.p8 and/or  0.5rc.p9
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/6582
 
 Original creator: drkirkby
 

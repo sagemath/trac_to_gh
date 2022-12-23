@@ -1,6 +1,6 @@
 # Issue 644: (sin + cos)(1) does not work
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/644
 
 Original creator: robertwb
 

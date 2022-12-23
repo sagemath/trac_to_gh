@@ -1,6 +1,6 @@
 # Issue 8077: New python_gnutls-1.1.4.p7.spkg works with Open Solaris 64 bit
 
-Issue created by migration from Trac.
+Issue created by migration from https://trac.sagemath.org/ticket/8077
 
 Original creator: jsp
 
@@ -29,7 +29,7 @@ You can safely delete the temporary build directory
 Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing python_gnutls-1.1.4.p7.spkg
-jaap`@`opensolaris:~/Downloads/sage-4.3.1$ touch spkg/installed/gnutls-1.1.4.p6
+jaap@opensolaris:~/Downloads/sage-4.3.1$ touch spkg/installed/gnutls-1.1.4.p6
 
 ```
 
