@@ -1,11 +1,21 @@
 # Issue 191: prime table / database
 
-Issue created by migration from https://trac.sagemath.org/ticket/191
-
-Original creator: was
-
-Original creation time: 2007-01-13 20:51:51
-
+archive/issues_000191.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\n\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
+    "created_at": "2007-01-13T20:51:51Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "prime table / database",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/191",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  mvngu
@@ -36,102 +46,260 @@ given the above reference.  Something similar would be good for a huge
 range of classes of prime numbers.   This would be an excellent student
 project.
 
+Issue created by migration from https://trac.sagemath.org/ticket/191
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-13 20:51:56
+archive/issue_comments_000866.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2007-01-13T20:51:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-866",
+    "user": "was"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-27 00:52:05
+archive/issue_comments_000867.json:
+```json
+{
+    "body": "CC'ing myself.",
+    "created_at": "2009-06-27T00:52:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-867",
+    "user": "mvngu"
+}
+```
 
 CC'ing myself.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:54:59
+archive/issue_comments_000868.json:
+```json
+{
+    "body": "Changing component from number theory to factorization.",
+    "created_at": "2009-07-20T19:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-868",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to factorization.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:54:59
+archive/issue_comments_000869.json:
+```json
+{
+    "body": "Changing assignee from was to tbd.",
+    "created_at": "2009-07-20T19:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-869",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to tbd.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-07-08 14:17:36
+archive/issue_comments_000870.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-07-08T14:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-870",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-07-08 14:17:36
+archive/issue_comments_000871.json:
+```json
+{
+    "body": "See #7239",
+    "created_at": "2010-07-08T14:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-871",
+    "user": "jdemeyer"
+}
+```
 
 See #7239
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:20:26
+archive/issue_comments_000872.json:
+```json
+{
+    "body": "Resolution changed from duplicate to ",
+    "created_at": "2010-07-08T19:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-872",
+    "user": "davidloeffler"
+}
+```
 
 Resolution changed from duplicate to 
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:20:26
+archive/issue_comments_000873.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-07-08T19:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-873",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:20:26
+archive/issue_comments_000874.json:
+```json
+{
+    "body": "Please do not close tickets yourself. Only release managers have the authority to do this.",
+    "created_at": "2010-07-08T19:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-874",
+    "user": "davidloeffler"
+}
+```
 
 Please do not close tickets yourself. Only release managers have the authority to do this.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:20:48
+archive/issue_comments_000875.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-08T19:20:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-875",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:23:39
+archive/issue_comments_000876.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-08T19:23:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-876",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-08 19:23:39
+archive/issue_comments_000877.json:
+```json
+{
+    "body": "What I usually do in this situation is to set the ticket to \"needs review\" with a message saying I think it ought to be closed. Then if someone else agrees, we can set it to \"positive review\", and then it'll show up in the list of tickets to be merged in the next release. Then the release manager will close it. In this case, I've put it at \"positive review\", since I agree with your claim that it should be fixed. \n\nBTW, I'm not sure \"duplicate\" is fair; this ticket has been open for years, so #7239 was a duplicate of this one rather than the other way round. Perhaps \"fixed\" is the most appropriate resolution. But that is for the release manager to decide.",
+    "created_at": "2010-07-08T19:23:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-877",
+    "user": "davidloeffler"
+}
+```
 
 What I usually do in this situation is to set the ticket to "needs review" with a message saying I think it ought to be closed. Then if someone else agrees, we can set it to "positive review", and then it'll show up in the list of tickets to be merged in the next release. Then the release manager will close it. In this case, I've put it at "positive review", since I agree with your claim that it should be fixed. 
 
 BTW, I'm not sure "duplicate" is fair; this ticket has been open for years, so #7239 was a duplicate of this one rather than the other way round. Perhaps "fixed" is the most appropriate resolution. But that is for the release manager to decide.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 09:40:24
+archive/issue_comments_000878.json:
+```json
+{
+    "body": "I'm resolving this as a \"duplicate,\" simply because the only relevant milestone is \"sage-duplicate/invalid/wontfix.\"",
+    "created_at": "2010-07-20T09:40:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-878",
+    "user": "mpatel"
+}
+```
 
 I'm resolving this as a "duplicate," simply because the only relevant milestone is "sage-duplicate/invalid/wontfix."
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 09:40:24
+archive/issue_comments_000879.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-07-20T09:40:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/191",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/191#issuecomment-879",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate

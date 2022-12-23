@@ -1,11 +1,21 @@
 # Issue 127: opera -- percent characters get mangled
 
-Issue created by migration from https://trac.sagemath.org/ticket/127
-
-Original creator: was
-
-Original creation time: 2006-10-14 04:52:01
-
+archive/issues_000127.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nFirefox is by far the best support browser for SAGE.\nI personally use opera a *lot* though; in fact, I'm writing\nthis email in opera.   I think there is some weird mangling\nof percents by opera that is causing trouble.  We'll add\nthis bug to the bug tracker, so it'll be a high priority to fix.\n\n\nOn 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:\n> On Friday 13 October 2006 12:29, William Stein wrote:\n> > On Fri, 13 Oct 2006 07:08:26 -0700, Tang Hai Tuan Minh\n> >\n> > <phohongtuyet@gmail.com> wrote:\n> > > Hi,\n> > >\n> > > It seems like all the commands that started with the % escape character\n> > > are not working properly for Opera 9.02/Linux. I tried out the examples in\n> > > the Sage Reference Manual regarding the Notebook Interface on Epiphany and\n> > > they work fine. I believe it must be because of the way Opera handles\n> > > the % character, however, I have no idea how to get around that.\n> >\n> > What install of SAGE are you using and where?\n> >\n> > Don't use opera by the way, as  a temporary fix.\n> >\n> > I think your problem might be known, unfortunately.\n> >\n> > William\n> \n> The current version of sage I am using is 1.4 on Fedora Core 5. I am not\n> really keen on using Opera but since Konqueror is not completely\n> supported :-), it doesn't really matter which browser I am using anyway.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/127\n\n",
+    "created_at": "2006-10-14T04:52:01Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "opera -- percent characters get mangled",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/127",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -44,23 +54,60 @@ On 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/127
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-13 02:29:11
+archive/issue_comments_000574.json:
+```json
+{
+    "body": "I just tried the notebook in opera, and it's even worse now...",
+    "created_at": "2007-01-13T02:29:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/127#issuecomment-574",
+    "user": "was"
+}
+```
 
 I just tried the notebook in opera, and it's even worse now...
 
 
+
 ---
 
-Comment by was created at 2007-01-25 19:47:30
+archive/issue_comments_000575.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-25T19:47:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/127#issuecomment-575",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-25 19:47:30
+archive/issue_comments_000576.json:
+```json
+{
+    "body": "Fix now.",
+    "created_at": "2007-01-25T19:47:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/127#issuecomment-576",
+    "user": "was"
+}
+```
 
 Fix now.

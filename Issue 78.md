@@ -1,26 +1,62 @@
 # Issue 78: write a SAGE <--> MATLAB interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/78
-
-Original creator: was
-
-Original creation time: 2006-09-23 00:21:21
-
+archive/issues_000078.json:
+```json
+{
+    "body": "Assignee: somebody\n\nTake interfaces/octave.py and modify it so it works with matlab.  There\nare a lot of extra spaces in Matlab output over octave. \n\nIssue created by migration from https://trac.sagemath.org/ticket/78\n\n",
+    "created_at": "2006-09-23T00:21:21Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "write a SAGE <--> MATLAB interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/78",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Take interfaces/octave.py and modify it so it works with matlab.  There
 are a lot of extra spaces in Matlab output over octave. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/78
+
+
+
+
 
 ---
 
-Comment by was created at 2007-08-24 05:23:47
+archive/issue_comments_000393.json:
+```json
+{
+    "body": "I did this a long time ago!  (Though it could be made more robust.)",
+    "created_at": "2007-08-24T05:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/78",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/78#issuecomment-393",
+    "user": "was"
+}
+```
 
 I did this a long time ago!  (Though it could be made more robust.)
 
 
+
 ---
 
-Comment by was created at 2007-08-24 05:23:47
+archive/issue_comments_000394.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-24T05:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/78",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/78#issuecomment-394",
+    "user": "was"
+}
+```
 
 Resolution: fixed

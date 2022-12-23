@@ -1,11 +1,21 @@
 # Issue 11: doctest failure in functions/special.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/11
-
-Original creator: was
-
-Original creation time: 2006-09-12 18:09:08
-
+archive/issues_000011.json:
+```json
+{
+    "body": "Assignee: somebody\n\nsage -t -optional devel/sage-darcs/sage/functions/special.py*******************************************************\\\n***************\nFile \"special.py\", line 756:\n    sage: inverse_jacobi(\"sn\",0.47,1/2)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/sage/local/lib/python2.4/doctest.py\", line 1243, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example13[1]>\", line 1, in ?\n        inverse_jacobi(\"sn\",RealNumber('0.47'),Integer(1)/Integer(2))###line 756:\n    sage: inverse_jacobi(\"sn\",0.47,1/2)\n      File \"/home/was/sage/local/lib/python2.4/site-packages/sage/functions/special.py\", line 785, in inverse_jacob\\\ni\n        return eval(maxima.eval(\"inverse_jacobi_sn(%s,%s)\"%(RR(x),RR(m))))\n      File \"<string>\", line 1\n         ^[[\n         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"special.py\", line 758:\n    sage: inverse_jacobi(\"sn\",0.4707504,1/2)\nException raised:\n\nIssue created by migration from https://trac.sagemath.org/ticket/11\n\n",
+    "created_at": "2006-09-12T18:09:08Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "doctest failure in functions/special.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/11",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 sage -t -optional devel/sage-darcs/sage/functions/special.py*******************************************************\
@@ -31,17 +41,43 @@ File "special.py", line 758:
     sage: inverse_jacobi("sn",0.4707504,1/2)
 Exception raised:
 
+Issue created by migration from https://trac.sagemath.org/ticket/11
+
+
+
+
 
 ---
 
-Comment by was created at 2006-10-15 18:10:16
+archive/issue_comments_000058.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-10-15T18:10:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/11",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/11#issuecomment-58",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2006-10-15 18:10:16
+archive/issue_comments_000059.json:
+```json
+{
+    "body": "Fixed:\n\nThe main trick was to use float conversions instead of RR before\ncalling into maxima.",
+    "created_at": "2006-10-15T18:10:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/11",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/11#issuecomment-59",
+    "user": "was"
+}
+```
 
 Fixed:
 

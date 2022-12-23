@@ -1,11 +1,21 @@
 # Issue 83: Docstring bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/83
-
-Original creator: burhanud
-
-Original creation time: 2006-09-25 02:47:04
-
+archive/issues_000083.json:
+```json
+{
+    "body": "Assignee: was\n\nAfter typing QQ? followed the enter key, sage command line seems to be in edit mode (Is it expecting more input?) where I can type anything I want. After Control-C the appropriate docstring is displayed. ZZ? has the same behavior.\n\n\n```\nburhanud@sage:~/sha5$ sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |\n| Distributed under the GNU General Public License V2. |\n\nsage: QQ?\n\n\nAHfDslh\n\nType:           RationalField\nBase Class:     <class 'sage.rings.rational_field.RationalField'>\nString Form:    Rational Field\nNamespace:      Interactive\nDocstring:\n    The class class{RationalField} represents the field Q of\n    rational numbers.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/83\n\n",
+    "created_at": "2006-09-25T02:47:04Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "Docstring bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/83",
+    "user": "burhanud"
+}
+```
 Assignee: was
 
 After typing QQ? followed the enter key, sage command line seems to be in edit mode (Is it expecting more input?) where I can type anything I want. After Control-C the appropriate docstring is displayed. ZZ? has the same behavior.
@@ -34,10 +44,25 @@ Docstring:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/83
+
+
+
+
 
 ---
 
-Comment by was created at 2006-09-25 23:15:46
+archive/issue_comments_000419.json:
+```json
+{
+    "body": "This is *really* weird!  I initially have no clue what is going on...  This may be an IPython bug, since\n\n```\nsha:~/sage/web was$ sage -ipython\nPython 2.4.3 (#1, Sep 21 2006, 04:25:45) \nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.7.2 -- An enhanced Interactive Python.\n?       -> Introduction to IPython's features.\n%magic  -> Information about IPython's 'magic' % functions.\nhelp    -> Python's own help system.\nobject? -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: import sage.all\n\nIn [2]: sage.all.QQ?\n[[hangs]]\n```\n",
+    "created_at": "2006-09-25T23:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/83",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-419",
+    "user": "was"
+}
+```
 
 This is *really* weird!  I initially have no clue what is going on...  This may be an IPython bug, since
 
@@ -60,16 +85,38 @@ In [2]: sage.all.QQ?
 
 
 
+
 ---
 
-Comment by was created at 2006-10-06 14:48:36
+archive/issue_comments_000420.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-10-06T14:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/83",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-420",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2006-10-06 14:48:36
+archive/issue_comments_000421.json:
+```json
+{
+    "body": "Fixed by Fernando Perez:\n\n\n```\nWilliam Stein wrote:\nFernando,\n You might have a thought about this:\n http://sage.math.washington.edu:9002/sage_trac/ticket/83\n \nI can't log in, but the problem is this:\n \nsage: len(QQ)\n \n \nThis never returns, so ipython waits forever, but in this case the bug is in SAGE, since infinite iterators should declare a safe len() implementation to avoid this kind of situation.\n \nYou can make it safe by defining:\n \n    def __len__(self):\n        raise TypeError('len() of unsized object')\n \n \nin the class sage.rings.rational_field.RationalField.  This is the standard idiom to indicate possibly infinite iterators in the Python library:\n \nIn [34]: from itertools import count\n \nIn [35]: count??\nType:           type\nBase Class:     <type 'type'>\nString Form:    <type 'itertools.count'>\nNamespace:      Interactive\nFile:           /usr/lib/python2.4/lib-dynload/itertools.so\nDocstring [source file open failed]:\n    count([firstval]) --> count object\n \n    Return a count object whose .next() method returns consecutive\n    integers starting from zero or, if specified, from firstval.\n \n \nIn [36]: len(count())\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n \n/home/fperez/<ipython console>\n \nTypeError: len() of unsized object\n \n \nSorry I couldn't get to fixing this one before your 1.4 release, I guess it can go into 1.4.1.\n \nRegards,\n \nf\n```\n",
+    "created_at": "2006-10-06T14:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/83",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-421",
+    "user": "was"
+}
+```
 
 Fixed by Fernando Perez:
 

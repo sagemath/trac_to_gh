@@ -1,14 +1,24 @@
 # Issue 31: modular forms -- missing q_eigenform functionality
 
-Issue created by migration from https://trac.sagemath.org/ticket/31
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:27:20
-
+archive/issues_000031.json:
+```json
+{
+    "body": "Assignee: somebody\n\n q_eigenform on old factors doesn't work:\n\n\n```\nsage: M = ModularSymbols(63,2,sign=1).cuspidal_subspace()\nsage: M[2].q_eigenform()\nTraceback (most recent call last):\n    M[2].q_eigenform()\n...\nAttributeError: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'subspace_generated_by_images'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/31\n\n",
+    "created_at": "2006-09-12T23:27:20Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "modular forms -- missing q_eigenform functionality",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/31",
+    "user": "was"
+}
+```
 Assignee: somebody
 
-*q_eigenform on old factors doesn't work:
+ q_eigenform on old factors doesn't work:
 
 
 ```
@@ -21,17 +31,43 @@ AttributeError: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'subspace
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/31
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-13 02:04:50
+archive/issue_comments_000210.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-13T02:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/31",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-210",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-13 02:04:50
+archive/issue_comments_000211.json:
+```json
+{
+    "body": "Fixed -- or rather, now there is the *correct* error message:\n\n```\n\nsage: M = ModularSymbols(63,2,sign=1).cuspidal_subspace()\nsage: M[2].q_eigenform()\nTraceback (most recent call last):\n...\nArithmeticError: self must be simple.\n\n\n```\n",
+    "created_at": "2007-01-13T02:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/31",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-211",
+    "user": "was"
+}
+```
 
 Fixed -- or rather, now there is the *correct* error message:
 

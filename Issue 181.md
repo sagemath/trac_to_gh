@@ -1,11 +1,21 @@
 # Issue 181: Recursive load makes symbol?? display the wrong File: information
 
-Issue created by migration from https://trac.sagemath.org/ticket/181
-
-Original creator: ncalexan
-
-Original creation time: 2006-12-11 18:58:16
-
+archive/issues_000181.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: recursive load source file\n\nWe use the example in examples/programming/recursive_load.\n\nfile1.sage defines a symbol foo.\nfile2.sage defines a symbol bar.\n\nEach file loads the other recursively.\n\nIf we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.\n\n\n```\nsage: load file2.sage\nloaded file1.sage\nI'm now defining s\nloaded file1.sage\n\nsage: foo??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function foo at 0x8fd6db0>\nNamespace:      Interactive\nFile:           /Users/nalexand/Devel/sage-alpha8/examples/programming/recursive_load/file2.py\nDefinition:     foo(n)\nSource:\ndef foo(n):\n    print \"foo\"\n    return n**Integer(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/181\n\n",
+    "created_at": "2006-12-11T18:58:16Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "Recursive load makes symbol?? display the wrong File: information",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/181",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 Keywords: recursive load source file
@@ -40,17 +50,43 @@ def foo(n):
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/181
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-22 05:00:58
+archive/issue_comments_000831.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-01-22T05:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-831",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by was created at 2007-01-22 05:00:58
+archive/issue_comments_000832.json:
+```json
+{
+    "body": "This isn't really a bug.  What happens is that from file2.sage the file file2.py\nis created.  And file2.py is where the function foo is actually defined (it's the\npreparsed version).  So the File field above is actually correct about where that\nfunction is defined.  It's *confusing* though, because there is a non-preparsed\n.sage function that is defined in file1.sage, and it would be very nice if the\nFile: field instead listed that.  The only reasonable way I can think of to do\nthat would be to add to the preparser code that embeds original file location\nand line number info in the .py file after the definition of any function. \n\nSo I'm going to change this to an enhancement request rather than a defect, \nas it's not even clear what the right design should be, and currently no invalid\noutput is actually being produced.",
+    "created_at": "2007-01-22T05:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-832",
+    "user": "was"
+}
+```
 
 This isn't really a bug.  What happens is that from file2.sage the file file2.py
 is created.  And file2.py is where the function foo is actually defined (it's the
@@ -66,8 +102,19 @@ as it's not even clear what the right design should be, and currently no invalid
 output is actually being produced.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-29 20:34:58
+archive/issue_comments_000833.json:
+```json
+{
+    "body": "Just pointing out to those looking at this that the examples directory no longer exists.  However, the request still makes sense.",
+    "created_at": "2013-01-29T20:34:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/181#issuecomment-833",
+    "user": "kcrisman"
+}
+```
 
 Just pointing out to those looking at this that the examples directory no longer exists.  However, the request still makes sense.

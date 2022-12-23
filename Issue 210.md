@@ -1,11 +1,21 @@
 # Issue 210: discrete log
 
-Issue created by migration from https://trac.sagemath.org/ticket/210
-
-Original creator: was
-
-Original creation time: 2007-01-23 20:48:16
-
+archive/issues_000210.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nFrom David Kohel:\n> ... dlog in SAGE mod p is slow.\n \nAnyway, yes, PARI has a function znlog, which should be very fast:\n \n    gp.znlog\n \nI'll have to add it to the PARI interface (libs/pari/gen.pyx) then that should\ngive a very fast implementation mod p for p a not-too-big prime.  E.g.,\n \n--------------------\n \nsage: p = 2^32+61\nsage: a = gp.znprimroot(p); a\nMod(2, 4294967357)\nsage: time gp.znlog(97, a)\n498735128\nCPU time: 0.00 s,  Wall time: 0.05 s\n \n--------------------\n \nI'm really glad I'm not writing everything in SAGE from scratch!\n \nIf somebody on sage-dev sends me a patch that does what you want (see email below)\ninstead of me having to do it, that would be nice...  I won't work\non this until probably a day from now...\n \n  -- William\n \n \nOn Mon, 22 Jan 2007 21:51:52 -0800, David R. Kohel <kohel@maths.usyd.edu.au> wrote:\n \n> Hi William, David,\n>  \n> I produced the following baby examples in Magma for use in my course.\n>  \n> First a prime for which p-1 is smooth:\n>  \n> sage: p = 2^32+15\n> sage: (p-1).factor()\n> 2 * 3^2 * 5 * 131 * 364289\n>  \n> Then one containing a \"large\" prime factor:\n>  \n> sage: p = 2^32+61\n> sage: (p-1).factor()\n> 2^2 * 1073741839\n>  \n> Both should take relatively trivial time to solve discrete logarithms,\n> but the former \"should\" recognize by initial trial division that the\n> problem is much easier.\n>  \n> Unfortunately the problem in my book doesn't come back snappily:\n>  \n> sage: FF = FiniteField(p)\n> sage: c = FF(4294967356)\n> sage: x = FF(2)\n> sage: c.log(x)\n>  \n> This gets down to the following function:\n>  \n>  return arith.discrete_log_generic(self, a, n) # TODO update this function\n>  \n> which does a BSGS (not even Pollard rho).\n>  \n> Shouldn't Pari or gmp have a more reasonable implementation?\n>  \n> This is at the level of IntegerMod_abstract rather than finite fields.\n>  \n> --David\n>  \n>  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/210\n\n",
+    "created_at": "2007-01-23T20:48:16Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "discrete log",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/210",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -85,15 +95,43 @@ On Mon, 22 Jan 2007 21:51:52 -0800, David R. Kohel <kohel@maths.usyd.edu.au> wro
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/210
+
+
+
+
 
 ---
+
+archive/issue_comments_000940.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-04T08:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-940",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-04-04 09:01:28
+archive/issue_comments_000941.json:
+```json
+{
+    "body": "The attached patch 9124.patch (based on 2.11) implements several completely generic group algorithms, including discrete log, which goes some way towards the issues raised in this ticket.\n\nMany of these functions were first written for elliptic curves over finite fields and then made generic.  They work in additive and multiplicative groups.  There is one new file sage/groups/generic.py;  some older versions which used to be in sage/rings/arith.py have been removed;  other changes are just those necessary for all doctests to pass.\n\nSo far I have not attepmted to use these functions everywhere they could be (even in the elliptic curve code) since I wanted this to be reviewed first.\n\nOn specific question:  would this generic code benefit from being done in cython?  If so that would be very well worth doing.",
+    "created_at": "2008-04-04T09:01:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-941",
+    "user": "cremona"
+}
+```
 
 The attached patch 9124.patch (based on 2.11) implements several completely generic group algorithms, including discrete log, which goes some way towards the issues raised in this ticket.
 
@@ -104,22 +142,55 @@ So far I have not attepmted to use these functions everywhere they could be (eve
 On specific question:  would this generic code benefit from being done in cython?  If so that would be very well worth doing.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-04 21:23:02
+archive/issue_comments_000942.json:
+```json
+{
+    "body": "Excellent work!  The code looks nice and is well-documented.  All tests pass as well.",
+    "created_at": "2008-04-04T21:23:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-942",
+    "user": "mhansen"
+}
+```
 
 Excellent work!  The code looks nice and is well-documented.  All tests pass as well.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 21:43:44
+archive/issue_comments_000943.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-04T21:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-943",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 21:43:44
+archive/issue_comments_000944.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha1",
+    "created_at": "2008-04-04T21:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/210",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-944",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha1

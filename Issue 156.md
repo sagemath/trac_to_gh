@@ -1,11 +1,21 @@
 # Issue 156: freeze of gfan (actually singular -- not gfan's fault)
 
-Issue created by migration from https://trac.sagemath.org/ticket/156
-
-Original creator: was
-
-Original creation time: 2006-10-27 18:47:06
-
+archive/issues_000156.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nx,y = QQ['x,y'].gens() \ni = ideal(x^2 - y^2 + 1)\ng = i.groebner_fan()\ng.reduced_groebner_bases()\n\n[[mysterious freeze]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/156\n\n",
+    "created_at": "2006-10-27T18:47:06Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "freeze of gfan (actually singular -- not gfan's fault)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/156",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -19,17 +29,43 @@ g.reduced_groebner_bases()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/156
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-19 11:00:48
+archive/issue_comments_000704.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T11:00:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/156#issuecomment-704",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-19 11:00:48
+archive/issue_comments_000705.json:
+```json
+{
+    "body": "Fixed -- there was a spurious comma in the input to gfan, which caused some problems in some cases:\n\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169204310 28800\n# Node ID 061691096b76580a55a655e654aa046f2071ebc4\n# Parent  08b37570702281f7b6208e4df5871cc07c19250b\nFix trac bug #156 -- problem running gfan from SAGE.\n\ndiff -r 08b375707022 -r 061691096b76 sage/rings/groebner_fan.py\n--- a/sage/rings/groebner_fan.py        Fri Jan 19 02:42:18 2007 -0800\n+++ b/sage/rings/groebner_fan.py        Fri Jan 19 02:58:30 2007 -0800\n@@ -34,6 +34,13 @@ AUTHORS:\n    -- Tristram Bogart (bogart@math): the design of the \\sage interface\n       to gfan is joint work with Tristram Bogart, who also supplied\n       numerous examples.\n+\n+EXAMPLES:\n+    sage: x,y = QQ['x,y'].gens() \n+    sage: i = ideal(x^2 - y^2 + 1)\n+    sage: g = i.groebner_fan()\n+    sage: g.reduced_groebner_bases()\n+    [[1 - y^2 + x^2], [-1 + y^2 - x^2]]\n \"\"\"\n \n __doc_exclude = ['to_intvec', 'multiple_replace', 'forall', \\\n@@ -195,7 +202,7 @@ class GroebnerFan(SageObject):\n             to_gfan, _ = self._gfan_maps()\n             J = to_gfan(self.__ideal)\n             s = str(J.gens())\n-            s = s.replace('(','{').replace(')','}')\n+            s = s.replace('(','{').replace(')','}').replace(',}','}')\n             self.__gfan_ideal = s\n             return s\n \n@@ -292,7 +299,10 @@ class GroebnerFan(SageObject):\n             I = self._gfan_ideal()\n         # todo -- put something in here (?) when self.__symmetry isn't None...\n         cmd += self._gfan_mod()\n-        return gfan(I, cmd, verbose=self.__verbose, format=format)\n+        s = gfan(I, cmd, verbose=self.__verbose, format=format)\n+        if s.strip() == '{':\n+            raise RuntimeError, \"Error running gfan command %s on %s\"%(cmd, self)\n+        return s\n         \n     def __iter__(self):\n         for x in self.reduced_groebner_bases():\n```\n",
+    "created_at": "2007-01-19T11:00:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/156#issuecomment-705",
+    "user": "was"
+}
+```
 
 Fixed -- there was a spurious comma in the input to gfan, which caused some problems in some cases:
 

@@ -1,11 +1,21 @@
 # Issue 92: Complex embeddings for non-cyclotomic number fields?
 
-Issue created by migration from https://trac.sagemath.org/ticket/92
-
-Original creator: was
-
-Original creation time: 2006-09-28 05:45:04
-
+archive/issues_000092.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI think this was in an older version of SAGE, but now it seems only to\nwork for cyclotomic fields... =(  Was there a reason for dropping it?\nI was using it to build archimedian valuations for an arbitrary number\nfield, and am sad to see it go... =(  Thanks,\n\n\t\t\t\t\t\t-Jon\n\t\t\t\t\t\t =)\n\nIssue created by migration from https://trac.sagemath.org/ticket/92\n\n",
+    "created_at": "2006-09-28T05:45:04Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "Complex embeddings for non-cyclotomic number fields?",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/92",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 I think this was in an older version of SAGE, but now it seems only to
@@ -16,10 +26,25 @@ field, and am sad to see it go... =(  Thanks,
 						-Jon
 						 =)
 
+Issue created by migration from https://trac.sagemath.org/ticket/92
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-13 02:18:11
+archive/issue_comments_000448.json:
+```json
+{
+    "body": "It works fine now:\n\n```\n\nsage: k = NumberField(x^3 + 2,'a')\nsage: k.complex_embeddings()\n[Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> -1.25992104989487, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 + 1.09112363597172*I, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 - 1.09112363597172*I]\n```\n",
+    "created_at": "2007-01-13T02:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/92",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/92#issuecomment-448",
+    "user": "was"
+}
+```
 
 It works fine now:
 
@@ -41,8 +66,19 @@ sage: k.complex_embeddings()
 
 
 
+
 ---
 
-Comment by was created at 2007-01-13 02:18:11
+archive/issue_comments_000449.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-13T02:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/92",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/92#issuecomment-449",
+    "user": "was"
+}
+```
 
 Resolution: fixed

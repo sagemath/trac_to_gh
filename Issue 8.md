@@ -1,73 +1,75 @@
-# Issue 8: py3: Make doctest pass in combinat/rigged_configurations module
+# Issue 8: Integer and Rational classes need nth_root and exact_power functions
 
-CC:  chapoton
-
-
-
-Issue created by migration from https://trac.sagemath.org/ticket/26805
-
-
-
-
----
-
-Changing status from new to needs_review.
-
-
----
-
-ok, good to go. But would you please first fix the pyflakes warnings ?
-
-
----
-
-Sure, i will do it this morning.
-
-
----
-
-Branch pushed to git repo; I updated commit sha1. New commits:
-
-
----
-
-`@`chapoton I commented `vct` rather than deleting the line to keep consistency with
-the comments below in the code. 
-Do you think the comments 
-
+archive/issues_000008.json:
+```json
+{
+    "body": "Assignee: somebody\n\nIt would be useful for Integer and Rational classes to have:\n\n(1) nth_root: this would wrap GMP's mpz_root.\n(2) exact_power: would accept a *rational* number as an index, and work out which root to take. For example\n\n(-8/27).exact_power(2/3) == 4/9\n\nI had to take an exact 6th root of a rational in some code the other day and it was **painful** going via real numbers, worrying about bits of precision and all that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8\n\n",
+    "created_at": "2006-09-12T02:39:12Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "Integer and Rational classes need nth_root and exact_power functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8",
+    "user": "dmharvey"
+}
 ```
-        # vct = self.parent()._folded_ct
-        # sigma = vct.folding_orbit()
-        # gammatilde = list(vct.scaling_factors())
-        # gammatilde[-1] = 2
-}}} 
-are helpful or do you think we should delete them?
+Assignee: somebody
+
+It would be useful for Integer and Rational classes to have:
+
+(1) nth_root: this would wrap GMP's mpz_root.
+(2) exact_power: would accept a *rational* number as an index, and work out which root to take. For example
+
+(-8/27).exact_power(2/3) == 4/9
+
+I had to take an exact 6th root of a rational in some code the other day and it was **painful** going via real numbers, worrying about bits of precision and all that.
 
 
----
-
-oh, we can keep them.
-
-green bot => positive review.
-
-Do you have a patchbot at your disposal that you could launch on this ticket ? Mines are already busy right now.
+Issue created by migration from https://trac.sagemath.org/ticket/8
 
 
----
 
-Not right now (some computing in progress). I will try this afternoon.
 
 
 ---
 
-Changing status from needs_review to positive_review.
+archive/issue_comments_000026.json:
+```json
+{
+    "body": "Fixed.\n\nFri Sep 15 17:19:10 PDT 2006  dmharvey`@`math.harvard.edu\n* Rational.nth_root() -- adds Rational nth root method\n\nFri Sep 15 17:18:20 PDT 2006  dmharvey`@`math.harvard.edu\n* Integer.nth_root() -- adds nth root method to Integer (wraps GMP mpz_root)",
+    "created_at": "2006-09-16T05:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8#issuecomment-26",
+    "user": "dmharvey"
+}
+```
+
+Fixed.
+
+Fri Sep 15 17:19:10 PDT 2006  dmharvey`@`math.harvard.edu
+* Rational.nth_root() -- adds Rational nth root method
+
+Fri Sep 15 17:18:20 PDT 2006  dmharvey`@`math.harvard.edu
+* Integer.nth_root() -- adds nth root method to Integer (wraps GMP mpz_root)
+
 
 
 ---
+
+archive/issue_comments_000027.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-09-16T05:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8#issuecomment-27",
+    "user": "dmharvey"
+}
+```
 
 Resolution: fixed
-
-
----
-
-This tickets were closed as fixed after the Sage 8.5 release.

@@ -1,11 +1,21 @@
 # Issue 204: bug in real number comparison or coercion
 
-Issue created by migration from https://trac.sagemath.org/ticket/204
-
-Original creator: was
-
-Original creation time: 2007-01-21 03:45:11
-
+archive/issues_000204.json:
+```json
+{
+    "body": "Assignee: somebody\n\nfrom Yi\n\n\n```\nOk, here is a weird bug:\non sage.math.washington.edu\n \nsage: sys.maxint\n9223372036854775807\nsage: sys.maxint >= 0.01\nFalse\n \nsage: sys.maxint >= int(0.01)\nTrue\n \nLooks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>\n \nAny ideas on how to fix this?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/204\n\n",
+    "created_at": "2007-01-21T03:45:11Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in real number comparison or coercion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/204",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 from Yi
@@ -29,10 +39,25 @@ Any ideas on how to fix this?
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/204
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-21 03:47:59
+archive/issue_comments_000918.json:
+```json
+{
+    "body": "\n```\nIt's a coercion issue:\n\nimport sys\nsage: sys.maxint\n9223372036854775807\nsage: type(sys.maxint)\n<type 'int'>\nsage: RR(sys.maxint)\n-1.00000000000000\nsage: RDF(sys.maxint)\n9.22337203685e+18\nsage: RealField(100)(sys.maxint)\n-1.0000000000000000000000000000\n```\n",
+    "created_at": "2007-01-21T03:47:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-918",
+    "user": "was"
+}
+```
 
 
 ```
@@ -53,16 +78,38 @@ sage: RealField(100)(sys.maxint)
 
 
 
+
 ---
 
-Comment by was created at 2007-01-23 21:50:33
+archive/issue_comments_000919.json:
+```json
+{
+    "body": "This is now fixed for sage > 1.8.  The problem in involved the \nreal number constructor.   While I was at it, I optimized that a lot.",
+    "created_at": "2007-01-23T21:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-919",
+    "user": "was"
+}
+```
 
 This is now fixed for sage > 1.8.  The problem in involved the 
 real number constructor.   While I was at it, I optimized that a lot.
 
 
+
 ---
 
-Comment by was created at 2007-01-23 21:50:33
+archive/issue_comments_000920.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-23T21:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-920",
+    "user": "was"
+}
+```
 
 Resolution: fixed

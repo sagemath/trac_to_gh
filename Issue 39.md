@@ -1,11 +1,21 @@
 # Issue 39: Misleading polynomial ring behavior
 
-Issue created by migration from https://trac.sagemath.org/ticket/39
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:31:09
-
+archive/issues_000039.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\n      sage: R.<x,y> = PolynomialRing(ZZ, 2)\n        sage: S = R/(x^2 + y^2); S\n        sage: S.<a,b> = R/(x^2 + y^2)\n        sage: a^2 + b^2 == 0\n    << -- *should* be true or give an error -- will require macaulay2... >>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/39\n\n",
+    "created_at": "2006-09-12T23:31:09Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Misleading polynomial ring behavior",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/39",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -18,10 +28,25 @@ Assignee: somebody
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/39
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-19 09:22:19
+archive/issue_comments_000248.json:
+```json
+{
+    "body": "Fixed.\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169198371 28800\n# Node ID cbda6c27c46e6e36c6c192550b172f79189ce974\n# Parent  39c4cda2f4c474719648b289148014737a234682\nTrac bug #39 -- fix issues with working with quotients of polynomial rings over ZZ and reduce method for their ideals.\n\ndiff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py\n--- a/sage/rings/multi_polynomial_ideal.py      Fri Jan 19 00:35:22 2007 -0800\n+++ b/sage/rings/multi_polynomial_ideal.py      Fri Jan 19 01:19:31 2007 -0800\n@@ -35,6 +35,20 @@ benchmark and test ideal.\n     sage: B = I.groebner_basis()\n     sage: len(B)\n     45\n+\n+We compute in a quotient of a polynomial ring over Z/17*Z:\n+    sage: R.<x,y> = PolynomialRing(ZZ, 2)                             \n+    sage: S.<a,b> = R.quotient((x^2 + y^2, 17))                 # optional -- requires Macaulay2\n+    sage: S                                                     # optional \n+    Quotient of Polynomial Ring in x, y over Integer Ring by the ideal (17, y^2 + x^2)\n+    sage: a^2 + b^2 == 0                                        # optional \n+    True\n+    sage: a^3 - b^2                                             # optional\n+    -1*b^2 - a*b^2\n+    sage: (a+b)^17                                              # optional\n+    b^17 + a*b^16\n+    sage: S(17) == 0                                            # optional\n+    True\n \"\"\"\n \n #*****************************************************************************\n@@ -457,7 +471,7 @@ class MPolynomialIdeal_singular_repr:\n         I.parent().lib('primdec.lib')\n         r = I.radical()\n         return S.ideal(r)\n-    \n+\n     def reduce(self, f):\n         \"\"\"\n         Reduce an element modulo a standard basis for this ideal.\n@@ -481,21 +495,27 @@ class MPolynomialIdeal_singular_repr:\n             sage: (y^2 - x)^2\n             y^4 - 2*x*y^2 + x^2\n         \"\"\"\n-        try:\n-            try:\n-                S = self.__singular_groebner_basis.parent()\n-            except AttributeError:\n-                self.groebner_basis()\n-                S = self.__singular_groebner_basis.parent()\n-            \n-            f = self.ring()(f)\n-            g = self.__singular_groebner_basis.parent()(f)\n-            h = g.reduce(self.__singular_groebner_basis)\n-            return self.ring()(h)\n-        \n-        except TypeError:\n-            \n-            return f\n+        if self.base_ring() == sage.rings.integer_ring.ZZ:\n+            return self._reduce_using_macaulay2(f)\n+        \n+        try:\n+            singular = self.__singular_groebner_basis.parent()\n+        except AttributeError:\n+            self.groebner_basis()\n+            singular = self.__singular_groebner_basis.parent()\n+\n+        f = self.ring()(f)\n+        g = singular(f)\n+        h = g.reduce(self.__singular_groebner_basis)\n+        return self.ring()(h)\n+\n+    def _reduce_using_macaulay2(self, f):\n+        I = self._macaulay2_()\n+        M2 = I.parent()\n+        R = self.ring()\n+        g = M2(R(f))\n+        k = M2('%s %% %s'%(g.name(), I.name()))\n+        return R(k)\n \n     def syzygy_module(self):\n         r\"\"\"\n@@ -714,11 +734,6 @@ class MPolynomialIdeal( MPolynomialIdeal\n             return self._macaulay2_groebner_basis()\n         elif algorithm == 'magma:GroebnerBasis':\n             return self._magma_groebner_basis()\n-        elif algorithm == None:\n-            if self.ring() == ZZ:\n-                return self._macaulay2_groebner_basis()\n-            else:\n-                return self._singular_groebner_basis()\n         else:\n             raise TypeError, \"algorithm '%s' unknown\"%algorithm\n```\n",
+    "created_at": "2007-01-19T09:22:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/39",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/39#issuecomment-248",
+    "user": "was"
+}
+```
 
 Fixed.
 
@@ -125,8 +150,19 @@ diff -r 39c4cda2f4c4 -r cbda6c27c46e sage/rings/multi_polynomial_ideal.py
 
 
 
+
 ---
 
-Comment by was created at 2007-01-19 09:22:19
+archive/issue_comments_000249.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T09:22:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/39",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/39#issuecomment-249",
+    "user": "was"
+}
+```
 
 Resolution: fixed

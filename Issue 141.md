@@ -1,11 +1,21 @@
 # Issue 141: sage -ldist -- needs to be updated
 
-Issue created by migration from https://trac.sagemath.org/ticket/141
-
-Original creator: was
-
-Original creation time: 2006-10-21 01:41:47
-
+archive/issues_000141.json:
+```json
+{
+    "body": "Assignee: was\n\nOn Fri, 20 Oct 2006 18:06:42 -0700, Mark <mfenner`@`gmail.com> wrote:\n> Could someone provide a basic road map of what would need to be done to\n> separate the interfaces (i.e., Python code) from the batteries included\n> distribution?  Aside from extracting sage-<version> from\n> spkg/sage-<version> and doing python setup.py install, that is ...\n\nFirst, something that might be helpful is to try typing \n\n    \"sage -ldist VER\"\n\nwhich ends up running\n\n    <SAGE_ROOT>/local/bin/sage-libdist\n\nwhich is supposed to make a \"stand alone\" version of SAGE without dependencies.\nI.e., a tarball that you can \"python setup.py install\" into a standard Python2.5\ninstall, assuming you have all dependencies.  \n\nIt is \"slightly\" behind, i.e,. I haven't used it in months, so it is not likely\nto work.  But it is a first step in the direction of what you want. \n\n[...]\n\nI just tried \"sage -ldist\" and it failed because it isn't aware of how\nI reorganized where the custom ipython config files go; basically, it fails\nin creating an ipython config for SAGE.  But it gets close -- in particular, \nif you run it you'll get a directory\n   <SAGE_ROOT>/dist/sage-....\nthat has a setup.py file in it.  \n\nI haven't kept it up only because the user base until now has not\nactually requested it.   I'll list that \"sage -ldist\" doesn't quite\nwork as a bug on the tracker, so I can fix it soon.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/141\n\n",
+    "created_at": "2006-10-21T01:41:47Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "sage -ldist -- needs to be updated",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/141",
+    "user": "was"
+}
+```
 Assignee: was
 
 On Fri, 20 Oct 2006 18:06:42 -0700, Mark <mfenner`@`gmail.com> wrote:
@@ -43,9 +53,24 @@ actually requested it.   I'll list that "sage -ldist" doesn't quite
 work as a bug on the tracker, so I can fix it soon.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/141
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-12 23:27:55
+archive/issue_comments_000655.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2007-01-12T23:27:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/141",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/141#issuecomment-655",
+    "user": "was"
+}
+```
 
 Resolution: wontfix

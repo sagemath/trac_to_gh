@@ -1,47 +1,116 @@
 # Issue 72: trac doesn't handle control keys well
 
-Issue created by migration from https://trac.sagemath.org/ticket/72
-
-Original creator: Justin Walker (justin@mac.com)
-
-Original creation time: 2006-09-20 21:43:29
-
+archive/issues_000072.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI don't know that this belongs here, but: emacs key bindings are hard-wired in my lizard brain, and I've noticed that not all control characters work: try ^F.\n\nIssue created by migration from https://trac.sagemath.org/ticket/72\n\n",
+    "created_at": "2006-09-20T21:43:29Z",
+    "labels": [
+        "basic arithmetic",
+        "trivial",
+        "bug"
+    ],
+    "title": "trac doesn't handle control keys well",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/72",
+    "user": "Justin Walker (justin@mac.com)"
+}
+```
 Assignee: somebody
 
 I don't know that this belongs here, but: emacs key bindings are hard-wired in my lizard brain, and I've noticed that not all control characters work: try ^F.
 
+Issue created by migration from https://trac.sagemath.org/ticket/72
+
+
+
+
 
 ---
 
-Comment by Justin Walker (justin@mac.com) created at 2006-09-20 21:44:36
+archive/issue_comments_000373.json:
+```json
+{
+    "body": "Hmmm... that \"^F\" is meant to be \"CTRL-F\".",
+    "created_at": "2006-09-20T21:44:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-373",
+    "user": "Justin Walker (justin@mac.com)"
+}
+```
 
 Hmmm... that "^F" is meant to be "CTRL-F".
 
 
+
 ---
 
-Comment by was created at 2006-09-21 01:25:20
+archive/issue_comments_000374.json:
+```json
+{
+    "body": "Is this a SAGE problem?",
+    "created_at": "2006-09-21T01:25:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-374",
+    "user": "was"
+}
+```
 
 Is this a SAGE problem?
 
 
+
 ---
 
-Comment by justin created at 2006-10-07 23:16:16
+archive/issue_comments_000375.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to user interface.",
+    "created_at": "2006-10-07T23:16:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-375",
+    "user": "justin"
+}
+```
 
 Changing component from basic arithmetic to user interface.
 
 
+
 ---
 
-Comment by justin created at 2006-10-07 23:16:16
+archive/issue_comments_000376.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2006-10-07T23:16:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-376",
+    "user": "justin"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by justin created at 2006-10-07 23:16:16
+archive/issue_comments_000377.json:
+```json
+{
+    "body": "Replying to [comment:2 was]:\n> Is this a SAGE problem? \n\nNo clue.  I was hoping an expert here would know.  This could be a problem in SAGE, browser, Trac.",
+    "created_at": "2006-10-07T23:16:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-377",
+    "user": "justin"
+}
+```
 
 Replying to [comment:2 was]:
 > Is this a SAGE problem? 
@@ -49,15 +118,37 @@ Replying to [comment:2 was]:
 No clue.  I was hoping an expert here would know.  This could be a problem in SAGE, browser, Trac.
 
 
+
 ---
 
-Comment by was created at 2007-09-14 02:58:25
+archive/issue_comments_000378.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-09-14T02:58:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-378",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by was created at 2007-09-14 02:58:25
+archive/issue_comments_000379.json:
+```json
+{
+    "body": "This is not a SAGE issue.",
+    "created_at": "2007-09-14T02:58:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/72",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-379",
+    "user": "was"
+}
+```
 
 This is not a SAGE issue.

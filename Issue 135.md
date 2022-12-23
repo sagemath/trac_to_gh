@@ -1,25 +1,61 @@
 # Issue 135: GMP patch: 64-bit MacPro
 
-Issue created by migration from https://trac.sagemath.org/ticket/135
-
-Original creator: was
-
-Original creation time: 2006-10-16 17:38:57
-
+archive/issues_000135.json:
+```json
+{
+    "body": "Assignee: somebody\n\nhttp://www.math.jmu.edu/~martin/gmp-4.2.1-porting-to-Mac-Pro.tar.gz\n\nIssue created by migration from https://trac.sagemath.org/ticket/135\n\n",
+    "created_at": "2006-10-16T17:38:57Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "GMP patch: 64-bit MacPro",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/135",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 http://www.math.jmu.edu/~martin/gmp-4.2.1-porting-to-Mac-Pro.tar.gz
 
+Issue created by migration from https://trac.sagemath.org/ticket/135
+
+
+
+
 
 ---
 
-Comment by malb created at 2007-08-09 21:48:16
+archive/issue_comments_000641.json:
+```json
+{
+    "body": "These patches are shipped with SAGE now.",
+    "created_at": "2007-08-09T21:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/135#issuecomment-641",
+    "user": "malb"
+}
+```
 
 These patches are shipped with SAGE now.
 
 
+
 ---
 
-Comment by malb created at 2007-08-09 21:48:16
+archive/issue_comments_000642.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-09T21:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/135#issuecomment-642",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

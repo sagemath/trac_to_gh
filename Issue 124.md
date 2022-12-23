@@ -1,11 +1,21 @@
 # Issue 124: Fix string comma errors with DihedralGroup(n) where n = 1,2 or 3
 
-Issue created by migration from https://trac.sagemath.org/ticket/124
-
-Original creator: moretti
-
-Original creation time: 2006-10-10 06:07:35
-
+archive/issues_000124.json:
+```json
+{
+    "body": "Assignee: moretti\n\nI get the following, indicating a bug with the way we send data to GAP.\n\n\n```\n\nsage: DihedralGroup(3)\n\nTraceback (most recent call last):\n    DihedralGroup(3)\n  File \"/home/moretti/sage/sage-1.4/local/lib/python2.5/\", line 1, in <module>\n    \n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 954, in __init__\n    PermutationGroup_generic.__init__(self, [gen0, gen1], from_group = True)\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 195, in __init__\n    self.gens()\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 342, in gens\n    raise RuntimeError, \"(It might be necessary to install the database_gap optional SAGE package,\nif you haven't already.)\\n%s\"%s\nRuntimeError: (It might be necessary to install the database_gap optional SAGE package, if you\nhaven't already.)\nGap produced error output\nSyntax error: expression expected\n$sage8:=Group([(1,2,3), ((1,3),)]);;\n                               ^\n\n   executing $sage8:=Group([(1,2,3), ((1,3),)]);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/124\n\n",
+    "created_at": "2006-10-10T06:07:35Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "Fix string comma errors with DihedralGroup(n) where n = 1,2 or 3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/124",
+    "user": "moretti"
+}
+```
 Assignee: moretti
 
 I get the following, indicating a bug with the way we send data to GAP.
@@ -43,17 +53,43 @@ $sage8:=Group([(1,2,3), ((1,3),)]);;
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/124
+
+
+
+
 
 ---
 
-Comment by moretti created at 2006-10-10 23:29:43
+archive/issue_comments_000567.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-10-10T23:29:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/124",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/124#issuecomment-567",
+    "user": "moretti"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by moretti created at 2006-10-10 23:29:43
+archive/issue_comments_000568.json:
+```json
+{
+    "body": "Replying to [ticket:124 moretti]:\n> I get the following, indicating a bug with the way we send data to GAP.\n> \n> {{{\n> \n> sage: DihedralGroup(3)\n> \n> Traceback (most recent call last):\n>     DihedralGroup(3)\n>   File \"/home/moretti/sage/sage-1.4/local/lib/python2.5/\", line 1, in <module>\n>     \n>   File\n> \"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\n> line 954, in __init__\n>     PermutationGroup_generic.__init__(self, [gen0, gen1], from_group = True)\n>   File\n> \"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\n> line 195, in __init__\n>     self.gens()\n>   File\n> \"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\n> line 342, in gens\n>     raise RuntimeError, \"(It might be necessary to install the database_gap optional SAGE package,\n> if you haven't already.)\\n%s\"%s\n> RuntimeError: (It might be necessary to install the database_gap optional SAGE package, if you\n> haven't already.)\n> Gap produced error output\n> Syntax error: expression expected\n> $sage8:=Group([(1,2,3), ((1,3),)]);;\n>                                ^\n> \n>    executing $sage8:=Group([(1,2,3), ((1,3),)]);;\n> }}}\n\nFixed in patch #1410:d981cce6baa2",
+    "created_at": "2006-10-10T23:29:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/124",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/124#issuecomment-568",
+    "user": "moretti"
+}
+```
 
 Replying to [ticket:124 moretti]:
 > I get the following, indicating a bug with the way we send data to GAP.

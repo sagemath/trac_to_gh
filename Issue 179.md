@@ -1,11 +1,21 @@
 # Issue 179: recent worksheets -- in notebook display
 
-Issue created by migration from https://trac.sagemath.org/ticket/179
-
-Original creator: was
-
-Original creation time: 2006-12-08 23:15:12
-
+archive/issues_000179.json:
+```json
+{
+    "body": "Assignee: boothby\n\nIn the notebook it would be good to be able to see recent worksheets, \nand also *active* worksheets.\n\nRecent: via cookies.\n\nActive: Last 5 worksheets changed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/179\n\n",
+    "created_at": "2006-12-08T23:15:12Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "recent worksheets -- in notebook display",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/179",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 In the notebook it would be good to be able to see recent worksheets, 
@@ -16,10 +26,25 @@ Recent: via cookies.
 Active: Last 5 worksheets changed.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/179
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-09-10 02:41:20
+archive/issue_comments_000822.json:
+```json
+{
+    "body": "How about this? Any progress? Are we going to implement this?\n\nCheers,\n\nMichael",
+    "created_at": "2007-09-10T02:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/179#issuecomment-822",
+    "user": "mabshoff"
+}
+```
 
 How about this? Any progress? Are we going to implement this?
 
@@ -28,15 +53,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by boothby created at 2008-03-17 04:21:40
+archive/issue_comments_000823.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-17T04:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/179#issuecomment-823",
+    "user": "boothby"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by boothby created at 2008-03-17 04:21:40
+archive/issue_comments_000824.json:
+```json
+{
+    "body": "This has been done for months... worksheets are dislayed last-edited first.",
+    "created_at": "2008-03-17T04:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/179#issuecomment-824",
+    "user": "boothby"
+}
+```
 
 This has been done for months... worksheets are dislayed last-edited first.

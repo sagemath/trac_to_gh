@@ -1,11 +1,21 @@
 # Issue 130: problem with multiline history recall in IPython
 
-Issue created by migration from https://trac.sagemath.org/ticket/130
-
-Original creator: nbruin
-
-Original creation time: 2006-10-14 05:44:23
-
+archive/issues_000130.json:
+```json
+{
+    "body": "Assignee: was\n\nIf you type a loop at the sage prompt:\n\n----------------------------------\nsage: for i in range(1,3):\n   ...:     print i\n   ...:\n1\n2\n----------------------------------\n\nand then do an \"arrow up\" key, it seems like the loop is recalled. However, it seems only the first line is actually still there:\n\n-----------------------------------------\nsage: for i in range(1,3):\n    print i\n   ....:     print \"done\"\n   ....:\ndone\ndone\n-----------------------------------------\n\nIssue created by migration from https://trac.sagemath.org/ticket/130\n\n",
+    "created_at": "2006-10-14T05:44:23Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "problem with multiline history recall in IPython",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/130",
+    "user": "nbruin"
+}
+```
 Assignee: was
 
 If you type a loop at the sage prompt:
@@ -29,20 +39,46 @@ done
 done
 -----------------------------------------
 
+Issue created by migration from https://trac.sagemath.org/ticket/130
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-12 23:23:06
+archive/issue_comments_000610.json:
+```json
+{
+    "body": "In straight Ipython this problems doesn't happen.  In sage it does.  Tricky.  \n\nPLAN:\n1. disable bits of how sage customizes ipython until find the problem.",
+    "created_at": "2007-01-12T23:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-610",
+    "user": "was"
+}
+```
 
 In straight Ipython this problems doesn't happen.  In sage it does.  Tricky.  
 
 PLAN:
-   1. disable bits of how sage customizes ipython until find the problem.
+1. disable bits of how sage customizes ipython until find the problem.
+
 
 
 ---
 
-Comment by was created at 2007-01-19 09:38:07
+archive/issue_comments_000611.json:
+```json
+{
+    "body": "Fixed\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169199334 28800\n# Node ID e89f3913fa979d38a32cbcbef9b4d0af56c5de16\n# Parent  cbda6c27c46e6e36c6c192550b172f79189ce974\nFix trac bug #130 -- multiline editing in Ipython/sage was broken.\n\ndiff -r cbda6c27c46e -r e89f3913fa97 sage/misc/interpreter.py\n--- a/sage/misc/interpreter.py  Fri Jan 19 01:19:31 2007 -0800\n+++ b/sage/misc/interpreter.py  Fri Jan 19 01:35:34 2007 -0800\n@@ -152,7 +152,15 @@ def do_prefilter_paste(line, continuatio\n def do_prefilter_paste(line, continuation):\n     \"\"\"\n     Alternate prefilter for input.\n-    \"\"\"\n+\n+    INPUT:\n+        line -- a single line; must *not* have any newlines in it\n+        continuation -- whether the input line is really part\n+                     of the previous line, because of open parens or backslash.\n+    \"\"\"\n+    if '\\n' in line:\n+        raise RuntimeError, \"bug in function that calls do_prefilter_paste -- there can be no newlines in the input\"\n+    \n     global attached\n \n     # This is so it's OK to have lots of blank space at the\n@@ -366,23 +374,34 @@ def process_file(name):\n     return name2\n     \n \n-def sage_prefilter(self, line, continuation):\n-    \"\"\"\n-    Alternate prefilter for input.\n+def sage_prefilter(self, block, continuation):\n+    \"\"\"\n+    SAGE's prefilter for input.  Given a string block (usually a\n+    line), return the preparsed version of it.  \n+\n+    INPUT:\n+        block -- string (usually a single line, but not always)\n+        continuation -- whether or not this line is a continuation.\n     \"\"\"\n     try:\n-        line2 = do_prefilter_paste(line, continuation)\n+        block2 = ''\n+        for L in block.split('\\n'):\n+            M = do_prefilter_paste(L, continuation)\n+            # The L[:len(L)-len(L.lstrip())]  business here preserves\n+            # the whitespace at the beginning of L.\n+            if block2 != '':\n+                block2 += '\\n'\n+            block2 += L[:len(L)-len(L.lstrip())] + M \n \n     except None:\n         \n         print \"WARNING: An error occured in the SAGE parser while\"\n-        print \"parsing the following line:\"\n-        print line\n+        print \"parsing the following block:\"\n+        print block\n         print \"Please report this as a bug (include the output of typing '%hist').\"\n-        line2 = line\n-        \n-    from IPython.iplib import InteractiveShell\n-    return InteractiveShell._prefilter(self, line2, continuation)\n+        block2 = block\n+        \n+    return InteractiveShell._prefilter(self, block2, continuation)\n \n```\n",
+    "created_at": "2007-01-19T09:38:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-611",
+    "user": "was"
+}
+```
 
 Fixed
 
@@ -121,8 +157,19 @@ diff -r cbda6c27c46e -r e89f3913fa97 sage/misc/interpreter.py
 
 
 
+
 ---
 
-Comment by was created at 2007-01-19 09:38:07
+archive/issue_comments_000612.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T09:38:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/130#issuecomment-612",
+    "user": "was"
+}
+```
 
 Resolution: fixed

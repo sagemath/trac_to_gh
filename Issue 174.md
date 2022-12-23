@@ -1,11 +1,21 @@
 # Issue 174: all existing open source Hermite Normal Form implementations totally SUCK.
 
-Issue created by migration from https://trac.sagemath.org/ticket/174
-
-Original creator: was
-
-Original creation time: 2006-12-01 02:15:15
-
+archive/issues_000174.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  burcin\n\nHermite Normal form is the analogue of echelon form over the integers.\nIt's crucial for almost all efficient computations with Z-modules (infinite \nabelian groups, finite abelian groups, lattices, modular abelian varieties\nvia lattices, etc).  \n\nMAGMA is 50 times faster even for small examples, and asymptotically\nmuch faster than GAP, PARI, and NTL. \n\nSee this page http://magma.maths.usyd.edu.au/users/allan/mat/hermite.html\nwhich is mirrored here:\nhttp://sage.math.washington.edu/sage/misc/hermite.html\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/174\n\n",
+    "created_at": "2006-12-01T02:15:15Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "all existing open source Hermite Normal Form implementations totally SUCK.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/174",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  burcin
@@ -25,50 +35,152 @@ http://sage.math.washington.edu/sage/misc/hermite.html
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/174
+
+
+
+
 
 ---
 
-Comment by was created at 2006-12-01 02:16:15
+archive/issue_comments_000798.json:
+```json
+{
+    "body": "a student paper on fast HNF algorithms (and there are other papers out there)",
+    "created_at": "2006-12-01T02:16:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-798",
+    "user": "was"
+}
+```
 
 a student paper on fast HNF algorithms (and there are other papers out there)
 
 
+
 ---
 
-Comment by was created at 2007-01-13 01:44:45
+archive/issue_comments_000799.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-01-13T01:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-799",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_000800.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2007-01-13T01:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-800",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2007-03-08 10:09:32
+archive/issue_comments_000801.json:
+```json
+{
+    "body": "The attached paper by students describes the super-fast algorithm in MAGMA, and should\nbe reasonably easy to implement in SAGE given what we now have.",
+    "created_at": "2007-03-08T10:09:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-801",
+    "user": "was"
+}
+```
 
 The attached paper by students describes the super-fast algorithm in MAGMA, and should
 be reasonably easy to implement in SAGE given what we now have.
 
 
+
 ---
+
+archive/issue_comments_000802.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-08T16:08:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-802",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_000803.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-08T16:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-803",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_000804.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-08T16:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-804",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_000805.json:
+```json
+{
+    "body": "Attachment\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
+    "created_at": "2008-02-17T01:14:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-805",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -99,9 +211,20 @@ sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 I suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...
 
 
+
 ---
 
-Comment by was created at 2008-02-17 01:28:28
+archive/issue_comments_000806.json:
+```json
+{
+    "body": "Here's a big leak:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9); e = a.hermite_form(proof=False); p = a.pivots()\nsage: get_memory_usage()\n'192M+'\nsage: w = e._add_row_and_maintain_echelon_form(random_matrix(ZZ,1,200), p)\nsage: get_memory_usage()\n'210M+'\n```\n",
+    "created_at": "2008-02-17T01:28:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-806",
+    "user": "was"
+}
+```
 
 Here's a big leak:
 
@@ -117,18 +240,40 @@ sage: get_memory_usage()
 
 
 
+
 ---
 
-Comment by was created at 2008-02-17 03:46:12
+archive/issue_comments_000807.json:
+```json
+{
+    "body": "ok, the file at http://sage.math.washington.edu/home/was/patches/hnf.hg has all the HNF stuff all working with no known issues.\n\n finally!",
+    "created_at": "2008-02-17T03:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-807",
+    "user": "was"
+}
+```
 
 ok, the file at http://sage.math.washington.edu/home/was/patches/hnf.hg has all the HNF stuff all working with no known issues.
 
  finally!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 03:52:44
+archive/issue_comments_000808.json:
+```json
+{
+    "body": "Ok, running the final bundle under valgrind with \n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n```\n\ndoesn't leak at all. Excellent. So positive review on memory leak issues.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-17T03:52:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-808",
+    "user": "mabshoff"
+}
+```
 
 Ok, running the final bundle under valgrind with 
 
@@ -146,9 +291,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 11:55:15
+archive/issue_comments_000809.json:
+```json
+{
+    "body": "FYI: The code has been merged, but still needs \"official\" review by a third party.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-17T11:55:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-809",
+    "user": "mabshoff"
+}
+```
 
 FYI: The code has been merged, but still needs "official" review by a third party.
 
@@ -157,9 +313,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 03:10:21
+archive/issue_comments_000810.json:
+```json
+{
+    "body": "The bundle has been extensively tested and I have verified via valgrind that it doesn't leak memory. While nobody external ever did a formal review  I am giving this a positive review due to the excessive amount of testing. Feel free to do a formal review, but please open another ticket in case  you come up with any issues.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T03:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-810",
+    "user": "mabshoff"
+}
+```
 
 The bundle has been extensively tested and I have verified via valgrind that it doesn't leak memory. While nobody external ever did a formal review  I am giving this a positive review due to the excessive amount of testing. Feel free to do a formal review, but please open another ticket in case  you come up with any issues.
 
@@ -168,15 +335,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 03:10:40
+archive/issue_comments_000811.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha1",
+    "created_at": "2008-02-21T03:10:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-811",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 03:10:40
+archive/issue_comments_000812.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-21T03:10:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/174",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-812",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

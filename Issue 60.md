@@ -1,11 +1,21 @@
 # Issue 60: notebook cuts output of latex view
 
-Issue created by migration from https://trac.sagemath.org/ticket/60
-
-Original creator: wdj
-
-Original creation time: 2006-09-14 15:15:34
-
+archive/issues_000060.json:
+```json
+{
+    "body": "Assignee: somebody\n\nKeywords: notebook, latex\n\nThis may be related to ticket #38.\n\nEnter\n\nf = maxima(\"%e<sup>(k*x)+sin(b*x)+x</sup>3\")\n\ng = f.diff(\"x\")\n\nview(f)\n\nview(g)\n\ninto a cell and hit \"shift-enter\". Only the latexed\ndisplay of g is shown.\n\nIssue created by migration from https://trac.sagemath.org/ticket/60\n\n",
+    "created_at": "2006-09-14T15:15:34Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "notebook cuts output of latex view",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/60",
+    "user": "wdj"
+}
+```
 Assignee: somebody
 
 Keywords: notebook, latex
@@ -25,10 +35,25 @@ view(g)
 into a cell and hit "shift-enter". Only the latexed
 display of g is shown.
 
+Issue created by migration from https://trac.sagemath.org/ticket/60
+
+
+
+
 
 ---
 
-Comment by boothby created at 2006-09-14 18:48:28
+archive/issue_comments_000316.json:
+```json
+{
+    "body": "Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely returns a string -- so if you want to see both f and g, \n\n\n```\n    f = maxima(\"%e(k*x)+sin(b*x)+x3\")\n    g = f.diff(\"x\")\n    print view(f)\n    print view(g)\n```\n\n\nPerhaps view() should print?",
+    "created_at": "2006-09-14T18:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-316",
+    "user": "boothby"
+}
+```
 
 Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely returns a string -- so if you want to see both f and g, 
 
@@ -44,30 +69,74 @@ Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely re
 Perhaps view() should print?
 
 
+
 ---
 
-Comment by boothby created at 2006-09-14 18:48:28
+archive/issue_comments_000317.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2006-09-14T18:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-317",
+    "user": "boothby"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by boothby created at 2006-09-14 18:48:28
+archive/issue_comments_000318.json:
+```json
+{
+    "body": "Changing priority from major to trivial.",
+    "created_at": "2006-09-14T18:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-318",
+    "user": "boothby"
+}
+```
 
 Changing priority from major to trivial.
 
 
+
 ---
 
-Comment by was created at 2006-09-15 18:10:02
+archive/issue_comments_000319.json:
+```json
+{
+    "body": "I definitely consider this a bug.",
+    "created_at": "2006-09-15T18:10:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-319",
+    "user": "was"
+}
+```
 
 I definitely consider this a bug.
 
 
+
 ---
 
-Comment by was created at 2006-10-15 17:49:21
+archive/issue_comments_000320.json:
+```json
+{
+    "body": "Fixed.  Changed start of view function in sage/misc/latex.py to the following:\n\n```\n    if EMBEDDED_MODE:\n        print typeset(objects)\n        return \n```\n",
+    "created_at": "2006-10-15T17:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-320",
+    "user": "was"
+}
+```
 
 Fixed.  Changed start of view function in sage/misc/latex.py to the following:
 
@@ -79,8 +148,19 @@ Fixed.  Changed start of view function in sage/misc/latex.py to the following:
 
 
 
+
 ---
 
-Comment by was created at 2006-10-15 17:49:21
+archive/issue_comments_000321.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-10-15T17:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/60",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/60#issuecomment-321",
+    "user": "was"
+}
+```
 
 Resolution: fixed

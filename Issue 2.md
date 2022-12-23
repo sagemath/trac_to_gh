@@ -1,39 +1,162 @@
-# Issue 2: py3: some care for abelian groups
+# Issue 2: Notebook locking
 
-CC:  tscrim
+archive/issues_000002.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCurrently it is possible to run two SAGE notebooks on the same directory,\nwhich is potentially VERY VERY bad.  It would be better if when a SAGE\nnotebook server starts up it checks for the presence of a lock file.  This\nfile would contain the pid of a running SAGE notebook process -- if the file\nand that process exist, then the notebook won't start.  When the notebook\nfinishes it should delete that lock file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2\n\n",
+    "created_at": "2006-09-11T04:04:32Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "Notebook locking",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2",
+    "user": "wstein@gmail.com"
+}
+```
+Assignee: somebody
+
+Currently it is possible to run two SAGE notebooks on the same directory,
+which is potentially VERY VERY bad.  It would be better if when a SAGE
+notebook server starts up it checks for the presence of a lock file.  This
+file would contain the pid of a running SAGE notebook process -- if the file
+and that process exist, then the notebook won't start.  When the notebook
+finishes it should delete that lock file. 
+
+Issue created by migration from https://trac.sagemath.org/ticket/2
 
 
 
-Issue created by migration from https://trac.sagemath.org/ticket/26799
 
+
+---
+
+archive/issue_comments_000003.json:
+```json
+{
+    "body": "A thought: PIDs live in a fairly small space, so it might be worth doing some kind of check to verify that the process corresponding to the PID is a SAGE notebook process.\n\nAlternate approach: instead of just bailing, ask the user whether to continue (and remove the existing lock file), or quit.  That puts the burden on the user instead of the programmer, but the results may be better.",
+    "created_at": "2006-09-11T16:26:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-3",
+    "user": "justin@mac.com"
+}
+```
+
+A thought: PIDs live in a fairly small space, so it might be worth doing some kind of check to verify that the process corresponding to the PID is a SAGE notebook process.
+
+Alternate approach: instead of just bailing, ask the user whether to continue (and remove the existing lock file), or quit.  That puts the burden on the user instead of the programmer, but the results may be better.
 
 
 
 ---
 
-Changing status from new to needs_review.
+archive/issue_comments_000004.json:
+```json
+{
+    "body": "Rather than keep a PID, a more robust solution would be to write the URL to the notebook in the lockfile.  Upon startup, the server would send a request to that URL -- if there's already a running server, just return.\n\nIf we also stored the PID, we could attempt to kill nonresponsive servers.",
+    "created_at": "2006-09-14T21:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-4",
+    "user": "boothby"
+}
+```
+
+Rather than keep a PID, a more robust solution would be to write the URL to the notebook in the lockfile.  Upon startup, the server would send a request to that URL -- if there's already a running server, just return.
+
+If we also stored the PID, we could attempt to kill nonresponsive servers.
+
+
+
+---
+
+archive/issue_comments_000005.json:
+```json
+{
+    "body": "One could end up with an NFS filesystem and notebooks running on distinct machines. If the port listened on is only a local one on machine A then sending a request from machine B will not confirm that the process is still running.\n\nThis is a bad thing to happen, but not unlikely if someone has sage installed in their homedir and moves from machine A to machine B.",
+    "created_at": "2007-01-24T05:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-5",
+    "user": "nbruin"
+}
+```
+
+One could end up with an NFS filesystem and notebooks running on distinct machines. If the port listened on is only a local one on machine A then sending a request from machine B will not confirm that the process is still running.
+
+This is a bad thing to happen, but not unlikely if someone has sage installed in their homedir and moves from machine A to machine B.
+
 
 
 ---
 
-New commits:
+archive/issue_comments_000006.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to notebook.",
+    "created_at": "2007-08-23T11:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-6",
+    "user": "mabshoff"
+}
+```
+
+Changing component from basic arithmetic to notebook.
+
+
+
+---
+
+archive/issue_comments_000007.json:
+```json
+{
+    "body": "Changing assignee from somebody to boothby.",
+    "created_at": "2007-08-23T11:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-7",
+    "user": "mabshoff"
+}
+```
+
+Changing assignee from somebody to boothby.
+
 
 
 ---
 
-green bot, please review
+archive/issue_comments_000008.json:
+```json
+{
+    "body": "This was fixed decades ago!",
+    "created_at": "2007-08-24T05:30:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-8",
+    "user": "was"
+}
+```
+
+This was fixed decades ago!
+
 
 
 ---
 
-LGTM.
-
-
----
-
-Changing status from needs_review to positive_review.
-
-
----
+archive/issue_comments_000009.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-08-24T05:30:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-9",
+    "user": "was"
+}
+```
 
 Resolution: fixed

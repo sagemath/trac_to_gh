@@ -1,11 +1,21 @@
 # Issue 120: abs for elements of CyclotomicField
 
-Issue created by migration from https://trac.sagemath.org/ticket/120
-
-Original creator: wdj
-
-Original creation time: 2006-10-08 02:34:43
-
+archive/issues_000120.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: abs, cyclotomic field\n\nIt seems to me that this behaviour is wrong:\n\n```\nsage: z = CyclotomicField(7).gen()\n\nsage: abs(z)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-1.4/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: bad operand type for abs(): 'NumberFieldElement'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/120\n\n",
+    "created_at": "2006-10-08T02:34:43Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "abs for elements of CyclotomicField",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/120",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 Keywords: abs, cyclotomic field
@@ -26,17 +36,43 @@ sage: abs(z)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/120
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-07 19:41:32
+archive/issue_comments_000560.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-07T19:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/120#issuecomment-560",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-07 19:41:32
+archive/issue_comments_000561.json:
+```json
+{
+    "body": "Fixed\n\n```\nrank4:~/d/sage/sage/rings/number_field was$ hg export 2286\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1168195848 28800\n# Node ID e6383f221f932db108f7507c91c1d79c6978671f\n# Parent  01a95c126cbc373b9538f51dc19f32d42419dac6\nFix trac 120 -- abs for number field elements wasn't defined.\n\ndiff -r 01a95c126cbc -r e6383f221f93 sage/rings/number_field/number_field_element.py\n--- a/sage/rings/number_field/number_field_element.py   Sun Jan 07 10:17:49 2007 -0800\n+++ b/sage/rings/number_field/number_field_element.py   Sun Jan 07 10:50:48 2007 -0800\n@@ -151,6 +151,38 @@ class NumberFieldElement(field_element.F\n \n     def __cmp__(self, other):\n         return cmp(self.__element, other.__element)\n+\n+    def __abs__(self, i=0, prec=53):\n+        \"\"\"\n+        Return the absolute value of this element with respect to the\n+        ith complex embedding of parent, to the given precision.\n+\n+        EXAMPLES:\n+            sage: z = CyclotomicField(7).gen()\n+            sage: abs(z)\n+            0.999999999999999\n+            sage: abs(z^2 + 17*z - 3)\n+            16.0604426799930\n+            sage: K.<a> = NumberField(x^3+17)\n+            sage: abs(a)\n+            2.57128159065823\n+            sage: a.__abs__(prec=100)\n+            2.5712815906582353554531872087\n+            sage: a.__abs__(1,100)\n+            2.5712815906582353554531872087\n+            sage: a.__abs__(2,100)\n+            2.5712815906582353554531872087\n+\n+        Here's one where the absolute value depends on the embedding.\n+            sage: K.<b> = NumberField(x^2-2)\n+            sage: a = 1 + b\n+            sage: a.__abs__(i=0)\n+            0.414213562373094\n+            sage: a.__abs__(i=1)\n+            2.41421356237309            \n+        \"\"\"\n+        P = self.parent().complex_embeddings(prec)[i]\n+        return abs(P(self))\n \n     def __pow__(self, right):\n         right = int(right)\n```\n",
+    "created_at": "2007-01-07T19:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/120#issuecomment-561",
+    "user": "was"
+}
+```
 
 Fixed
 

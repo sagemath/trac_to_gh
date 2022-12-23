@@ -1,11 +1,21 @@
 # Issue 77: 'attach' command doesn't show up with TABbing
 
-Issue created by migration from https://trac.sagemath.org/ticket/77
-
-Original creator: Justin Walker (justin@mac.com)
-
-Original creation time: 2006-09-22 22:29:27
-
+archive/issues_000077.json:
+```json
+{
+    "body": "Assignee: somebody\n\nsage: atta[TAB]ched_files\n\nAnother indication that 'attach' is not a first-class citizen.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/77\n\n",
+    "created_at": "2006-09-22T22:29:27Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "'attach' command doesn't show up with TABbing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/77",
+    "user": "Justin Walker (justin@mac.com)"
+}
+```
 Assignee: somebody
 
 sage: atta[TAB]ched_files
@@ -14,16 +24,42 @@ Another indication that 'attach' is not a first-class citizen.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/77
+
+
+
+
 
 ---
 
-Comment by was created at 2006-09-23 01:00:12
+archive/issue_comments_000391.json:
+```json
+{
+    "body": "closed with #76",
+    "created_at": "2006-09-23T01:00:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/77",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/77#issuecomment-391",
+    "user": "was"
+}
+```
 
 closed with #76
 
 
+
 ---
 
-Comment by was created at 2006-09-23 01:00:12
+archive/issue_comments_000392.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-09-23T01:00:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/77",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/77#issuecomment-392",
+    "user": "was"
+}
+```
 
 Resolution: fixed

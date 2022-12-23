@@ -1,11 +1,21 @@
 # Issue 33: notebook -- paste into worksheet problem
 
-Issue created by migration from https://trac.sagemath.org/ticket/33
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:28:10
-
+archive/issues_000033.json:
+```json
+{
+    "body": "Assignee: somebody\n\nwhen pasting a *huge* input file into the worksheet,\n   the input text area is not sufficiently large.  It\n   stays too small.  Weird.   We need a good way to literally\n   attach a file to the worksheet, then edit it in the worksheet.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/33\n\n",
+    "created_at": "2006-09-12T23:28:10Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- paste into worksheet problem",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/33",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 when pasting a *huge* input file into the worksheet,
@@ -14,51 +24,132 @@ when pasting a *huge* input file into the worksheet,
    attach a file to the worksheet, then edit it in the worksheet.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/33
+
+
+
+
 
 ---
 
-Comment by was created at 2006-11-26 05:38:40
+archive/issue_comments_000214.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2006-11-26T05:38:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-214",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by was created at 2006-11-26 05:38:40
+archive/issue_comments_000215.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to user interface.",
+    "created_at": "2006-11-26T05:38:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-215",
+    "user": "was"
+}
+```
 
 Changing component from basic arithmetic to user interface.
 
 
+
 ---
 
-Comment by was created at 2006-11-26 05:38:40
+archive/issue_comments_000216.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2006-11-26T05:38:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-216",
+    "user": "was"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-23 11:04:18
+archive/issue_comments_000217.json:
+```json
+{
+    "body": "Changing assignee from was to boothby.",
+    "created_at": "2007-08-23T11:04:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-217",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to boothby.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-23 11:04:18
+archive/issue_comments_000218.json:
+```json
+{
+    "body": "Changing component from user interface to notebook.",
+    "created_at": "2007-08-23T11:04:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-218",
+    "user": "mabshoff"
+}
+```
 
 Changing component from user interface to notebook.
 
 
+
 ---
 
-Comment by boothby created at 2007-09-07 02:35:09
+archive/issue_comments_000219.json:
+```json
+{
+    "body": "This was fixed in William's recent update to the notebook.  From the \"data\" menu, select \"upload or create a file\", enter a name into the resultant form, and edit away!  You can copy this file to other worksheets and further edit the file through the data menu.",
+    "created_at": "2007-09-07T02:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-219",
+    "user": "boothby"
+}
+```
 
 This was fixed in William's recent update to the notebook.  From the "data" menu, select "upload or create a file", enter a name into the resultant form, and edit away!  You can copy this file to other worksheets and further edit the file through the data menu.
 
 
+
 ---
 
-Comment by boothby created at 2007-09-07 02:35:09
+archive/issue_comments_000220.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-09-07T02:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/33",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-220",
+    "user": "boothby"
+}
+```
 
 Resolution: fixed

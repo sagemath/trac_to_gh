@@ -1,30 +1,66 @@
 # Issue 74: switch to mercurial source control manager.
 
-Issue created by migration from https://trac.sagemath.org/ticket/74
-
-Original creator: was
-
-Original creation time: 2006-09-21 01:30:16
-
+archive/issues_000074.json:
+```json
+{
+    "body": "Assignee: somebody\n\nWhy: Because SAGE is huge and darcs doesn't scale sufficiently well.  \nMercurial does scale to the task, though is less capable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/74\n\n",
+    "created_at": "2006-09-21T01:30:16Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "switch to mercurial source control manager.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/74",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Why: Because SAGE is huge and darcs doesn't scale sufficiently well.  
 Mercurial does scale to the task, though is less capable.
 
+Issue created by migration from https://trac.sagemath.org/ticket/74
+
+
+
+
 
 ---
 
-Comment by was created at 2006-09-21 09:47:53
+archive/issue_comments_000382.json:
+```json
+{
+    "body": "This is now finished for the source code.  \nWhat remains:\n\n* write hg_source, etc., python interfaces\n* move doc, extcode, and scripts into mercurial.",
+    "created_at": "2006-09-21T09:47:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/74",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-382",
+    "user": "was"
+}
+```
 
 This is now finished for the source code.  
 What remains:
 
-  * write hg_source, etc., python interfaces
-  * move doc, extcode, and scripts into mercurial.
+* write hg_source, etc., python interfaces
+* move doc, extcode, and scripts into mercurial.
+
 
 
 ---
 
-Comment by was created at 2006-09-21 10:58:54
+archive/issue_comments_000383.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-09-21T10:58:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/74",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-383",
+    "user": "was"
+}
+```
 
 Resolution: fixed

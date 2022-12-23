@@ -1,11 +1,21 @@
 # Issue 73: "sage -gdb" broken on OS X.
 
-Issue created by migration from https://trac.sagemath.org/ticket/73
-
-Original creator: was
-
-Original creation time: 2006-09-21 01:23:24
-
+archive/issues_000073.json:
+```json
+{
+    "body": "Assignee: somebody\n\nsage -gdb works fine in Linux, but it's broken in OS X.  See below.\n\n\n```\n\nsha:~ was$ sage -gdb\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.4, Build Date: 2006-09-20-1802    |\n| Distributed under the GNU General Public License V2. |\n/Volumes/HOME/s/local/bin/sage-gdb-pythonstartup\nGNU gdb 6.3.50-20050815 (Apple version gdb-563) (Wed Jul 19 05:10:58 GMT 2006)\nCopyright 2004 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i386-apple-darwin\"...Reading symbols for shared libraries .... done\n\nReading symbols for shared libraries . done\nPython 2.4.3 (#1, Aug 25 2006, 23:39:31) \n[GCC 4.0.1 (Apple Computer, Inc. build 5341)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nReading symbols for shared libraries .... done\nTraceback (most recent call last):\n  File \"/Volumes/HOME/s/local/bin/sage-gdb-pythonstartup\", line 1, in ?\n    from sage.all import *\n  File \"/Volumes/HOME/s/local/lib/python2.4/site-packages/sage/all.py\", line 39, in ?\n    raise RuntimeError, \"To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib\"\nRuntimeError: To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib\n>>> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/73\n\n",
+    "created_at": "2006-09-21T01:23:24Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "\"sage -gdb\" broken on OS X.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/73",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 sage -gdb works fine in Linux, but it's broken in OS X.  See below.
@@ -42,17 +52,43 @@ RuntimeError: To use the SAGE libraries, set the environment variable SAGE_ROOT 
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/73
+
+
+
+
 
 ---
 
-Comment by was created at 2006-09-30 18:28:32
+archive/issue_comments_000380.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-09-30T18:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/73",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/73#issuecomment-380",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2006-09-30 18:28:32
+archive/issue_comments_000381.json:
+```json
+{
+    "body": "Fixed (for sage-1.4)\n\n```\nsha:~/d/sage was$ hg diff\ndiff -r 97f9271f8637 sage/all.py\n--- a/sage/all.py       Fri Sep 22 19:44:53 2006 -0700\n+++ b/sage/all.py       Sat Sep 30 11:17:39 2006 -0700\n@@ -32,9 +32,13 @@ if sys.version_info[:2] < (2, 4):\n     sys.exit(1)\n \n try:\n-    _l = '%s/local/lib'%os.environ['SAGE_ROOT']    \n-    if not _l in os.environ['LD_LIBRARY_PATH']:\n-        raise KeyError\n+    _l = '%s/local/lib'%os.environ['SAGE_ROOT']\n+    if os.environ.has_key('LD_LIBRARY_PATH'):\n+        if not _l in os.environ['LD_LIBRARY_PATH']:\n+            raise KeyError\n+        elif not _l in os.environ['DYLD_LIBRARY_PATH']:\n+            raise KeyError\n+    del _l\n except KeyError:\n      raise RuntimeError, \"To use the SAGE libraries, set the environment variable SAGE_ROOT to the SAGE build directory and LD_LIBRARY_PATH to $SAGE_ROOT/local/lib\"\n```\n",
+    "created_at": "2006-09-30T18:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/73",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/73#issuecomment-381",
+    "user": "was"
+}
+```
 
 Fixed (for sage-1.4)
 

@@ -1,11 +1,21 @@
 # Issue 129: relocation problem
 
-Issue created by migration from https://trac.sagemath.org/ticket/129
-
-Original creator: nbruin
-
-Original creation time: 2006-10-14 05:35:46
-
+archive/issues_000129.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen you build a sage tree at one location and then move it to another location, introspection is broken. Example:\n\nNumberField?\n\nwould still quote an absolute file name in the old location and\n\nNumberField??\n\nwould fail.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/129\n\n",
+    "created_at": "2006-10-14T05:35:46Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "bug"
+    ],
+    "title": "relocation problem",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/129",
+    "user": "nbruin"
+}
+```
 Assignee: was
 
 When you build a sage tree at one location and then move it to another location, introspection is broken. Example:
@@ -19,24 +29,61 @@ NumberField??
 would fail.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/129
+
+
+
+
 
 ---
 
-Comment by was created at 2006-10-14 07:07:19
+archive/issue_comments_000607.json:
+```json
+{
+    "body": "This is trac #81.",
+    "created_at": "2006-10-14T07:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-607",
+    "user": "was"
+}
+```
 
 This is trac #81.
 
 
+
 ---
 
-Comment by was created at 2006-10-14 07:07:19
+archive/issue_comments_000608.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2006-10-14T07:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-608",
+    "user": "was"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by was created at 2006-10-15 17:11:24
+archive/issue_comments_000609.json:
+```json
+{
+    "body": "This is now fixed.  I fixed it by creating the script below and calling\nit from the sage_setup() section of sage-sage:\n\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file) or open(location_file).read() != SAGE_ROOT:\n        open(location_file,'w').write(SAGE_ROOT)\n        return True\n    return False\n\ndef update_hardcoded_files(path):\n    # The only known files with hard coded paths.\n    if os.path.isdir(path):\n        for X in os.listdir(path):\n            update_hardcoded_files('%s/%s'%(path,X))\n    else:\n        P = path[-4:]\n        if P == '.pyo' or P == '.pyc':\n            try:\n                os.unlink(path)\n            except OSError, msg:\n                print msg\n\nif __name__ ==  '__main__':\n    # Check if SAGE has moved, and if so delete all .pyo and .pyc files\n    # in the python libs directory, so they are rebuilt. \n    if install_moved():\n        print \"The SAGE install tree may have moved.\"\n        print \"Regenerating files that hardcode the install PATH (please wait a few seconds)...\"\n        update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')\n```\n",
+    "created_at": "2006-10-15T17:11:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-609",
+    "user": "was"
+}
+```
 
 This is now fixed.  I fixed it by creating the script below and calling
 it from the sage_setup() section of sage-sage:

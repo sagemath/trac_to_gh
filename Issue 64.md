@@ -1,11 +1,21 @@
 # Issue 64: division in pAdicField truncates precision
 
-Issue created by migration from https://trac.sagemath.org/ticket/64
-
-Original creator: dmharvey
-
-Original creation time: 2006-09-15 21:28:30
-
+archive/issues_000064.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nsage: 1/(1 + 3*5^5 + O(5^50))\n1 + 2*5^5 + 4*5^6 + 4*5^7 + 4*5^8 + 4*5^9 + 3*5^10 + 5^11 + 3*5^15 + 4*5^16 + 3*5^17\n+ 4*5^18 + 4*5^19 + O(5^20)\n```\n\n\nThe answer should be returned to precision 50.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/64\n\n",
+    "created_at": "2006-09-15T21:28:30Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "division in pAdicField truncates precision",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/64",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 
@@ -19,23 +29,60 @@ sage: 1/(1 + 3*5^5 + O(5^50))
 The answer should be returned to precision 50.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/64
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2006-09-26 22:24:21
+archive/issue_comments_000333.json:
+```json
+{
+    "body": "Changing assignee from somebody to dmharvey.",
+    "created_at": "2006-09-26T22:24:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/64",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-333",
+    "user": "dmharvey"
+}
+```
 
 Changing assignee from somebody to dmharvey.
 
 
+
 ---
 
-Comment by dmharvey created at 2006-10-10 23:56:42
+archive/issue_comments_000334.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-10-10T23:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/64",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-334",
+    "user": "dmharvey"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by dmharvey created at 2006-10-10 23:56:42
+archive/issue_comments_000335.json:
+```json
+{
+    "body": "this is fixed in sage 1.4",
+    "created_at": "2006-10-10T23:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/64",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-335",
+    "user": "dmharvey"
+}
+```
 
 this is fixed in sage 1.4

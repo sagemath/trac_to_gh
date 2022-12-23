@@ -1,11 +1,21 @@
 # Issue 154: gfan -- something wrong
 
-Issue created by migration from https://trac.sagemath.org/ticket/154
-
-Original creator: was
-
-Original creation time: 2006-10-26 20:37:48
-
+archive/issues_000154.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
+    "created_at": "2006-10-26T20:37:48Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "gfan -- something wrong",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/154",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -20,16 +30,42 @@ KeyError: 'Dimension of homogeneity space'
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/154
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-19 11:39:47
+archive/issue_comments_000700.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T11:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/154#issuecomment-700",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-19 11:39:47
+archive/issue_comments_000701.json:
+```json
+{
+    "body": "This is now fixed.",
+    "created_at": "2007-01-19T11:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/154#issuecomment-701",
+    "user": "was"
+}
+```
 
 This is now fixed.

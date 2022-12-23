@@ -1,33 +1,80 @@
 # Issue 26: add docs to eigenvectors function.
 
-Issue created by migration from https://trac.sagemath.org/ticket/26
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:24:32
-
+archive/issues_000026.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/26\n\n",
+    "created_at": "2006-09-12T23:24:32Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add docs to eigenvectors function.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/26",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/26
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2007-08-22 19:42:01
+archive/issue_comments_000188.json:
+```json
+{
+    "body": "Changing assignee from somebody to tba.",
+    "created_at": "2007-08-22T19:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-188",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from somebody to tba.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-22 19:42:01
+archive/issue_comments_000189.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to documentation.",
+    "created_at": "2007-08-22T19:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-189",
+    "user": "mabshoff"
+}
+```
 
 Changing component from basic arithmetic to documentation.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-23 12:58:23
+archive/issue_comments_000190.json:
+```json
+{
+    "body": "This is still a problem with Sage 2.8.2:\n\n```\nsage: search_doc(Eigenvector)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n<type 'exceptions.NameError'>: name 'Eigenvector' is not defined\nsage: search_doc(eigenvector)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n<type 'exceptions.NameError'>: name 'eigenvector' is not defined\nsage: search_doc(eigenvectors)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n<type 'exceptions.NameError'>: name 'eigenvectors' is not defined\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-23T12:58:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-190",
+    "user": "mabshoff"
+}
+```
 
 This is still a problem with Sage 2.8.2:
 
@@ -61,23 +108,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 21:17:27
+archive/issue_comments_000191.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2007-12-06T21:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-191",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-06 21:17:27
+archive/issue_comments_000192.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2007-12-06T21:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-192",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2007-12-07 03:17:28
+archive/issue_comments_000193.json:
+```json
+{
+    "body": "I think this is invalid.\n\n\n\n```\nsage: search_doc('eigenvector')\nconst/node32.html:5.4 Eigenvectors and eigenvalues\nconst/node32.html:How do you compute eigenvalues and eigenvectors using <I CLASS=\"sans\">SAGE</I>?\nconst/node32.html:sage: eig = A.eigenvectors()\nconst/node32.html: is an eigenvector of <!-- MATH\nconst/node32.html: is an eigenvector of <!-- MATH\nconst/node32.html:sage: A.eigenvectors()\nconst/node32.html:sage: A.eigenvectors()\nconst/node32.html:``rational'' eigenvalues and eigenvectors:\nconst/node32.html:sage: gap.eval(\"v := Eigenvectors( Rationals,A)\")\nconst/node33.html:<td class='online-navigation'><a rel=\"prev\" title=\"5.4 Eigenvectors and eigenvalues\"\nconst/node33.html:<a class=\"sectref\" rel=\"prev\" href=\"node32.html\">5.4 Eigenvectors and eigenvalues</A>\nconst/node33.html:<td class='online-navigation'><a rel=\"prev\" title=\"5.4 Eigenvectors and eigenvalues\"\nconst/node33.html:<a class=\"sectref\" rel=\"prev\" href=\"node32.html\">5.4 Eigenvectors and eigenvalues</A>\nref/genindex.html:<dt><a href=\"module-sage.modular.hecke.module.html#l2h-7427\">dual_eigenvector() (in module sage.modular.hecke.module)</a>\nref/module-sage.libs.pari.all.html:sage: A.eigenvectors()\nref/module-sage.matrix.matrix2.html:        algorithm that is in dual_eigenvector in sage/modular/hecke/module.py.\nref/module-sage.matrix.matrix-complex-double-dense.html:    of eigenvalues and the e is a matrix whose columns are the eigenvectors.\nref/module-sage.matrix.matrix-complex-double-dense.html:<EM>Computes the eigenvalues and eigenvectors of this matrix acting\nref/module-sage.matrix.matrix-complex-double-dense.html:             corresponding eigenvectors - as a matrix whose ** ROWS ** are the eigenvectors of\nref/module-sage.matrix.matrix-complex-double-dense.html:<EM>Computes the eigenvalues and eigenvectors of this matrix acting\nref/module-sage.matrix.matrix-complex-double-dense.html:             corresponding eigenvectors - as a matrix whose ** COLUMNS ** are the eigenvectors of\nref/module-sage.matrix.matrix-complex-double-dense.html:<EM>Computes the eigenvalues and eigenvectors of this matrix acting\nref/module-sage.matrix.matrix-real-double-dense.html:<EM>Computes the eigenvalues and *right* eigenvectors of this\nref/module-sage.matrix.matrix-real-double-dense.html:             corresponding eigenvectors - as an RDF matrix whose columns\nref/module-sage.matrix.matrix-real-double-dense.html:                           are the eigenvectors.\nref/module-sage.modular.hecke.module.html: <tt class=\"method\">dual_eigenvector</tt>,<SPAN CLASS=\"MATH\"><IMG\nref/module-sage.modular.hecke.module.html:  <td><nobr><b><tt id='l2h-7427' xml:id='l2h-7427' class=\"function\">dual_eigenvector</tt></b>(</nobr></td>\nref/module-sage.modular.hecke.module.html:Return an eigenvector for the Hecke operators acting on the\nref/module-sage.modular.hecke.module.html:        linear dual of this space.  This eigenvector will have entries\nref/module-sage.modular.hecke.module.html:    ring.  This vector is an eigenvector for all Hecke operators\nref/module-sage.modular.hecke.module.html:            eigenvector.  This function is used mainly for computing\nref/module-sage.modular.hecke.module.html:<EM>(2) One can also view a dual eigenvector as defining (via\nref/module-sage.modular.hecke.module.html:            eigenvector for the dual action of Hecke operators on\nref/module-sage.modular.modform.numerical.html: <tt class=\"method\">_eigenvectors</tt>,<SPAN CLASS=\"MATH\"><IMG\nref/module-sage.modular.modform.numerical.html:Return a very sparse vector v such that v times the eigenvector matrix\nref/module-sage.modular.modsym.space.html:            'eigen' -- compute basis using eigenvectors for the Hecke\ntut/node17.html:<I CLASS=\"sans\">SAGE</I> can compute eigenvalues and eigenvectors:\ntut/node17.html:Eigenvalues and eigenvectors over <!-- MATH\ntut/node44.html:matrices (such as row reduction, eigenvalues and eigenvectors), and\ntut/node44.html:sage: A.eigenvectors()\ntut/node44.html:sage: eigA = A.eigenvectors()\n```\n",
+    "created_at": "2007-12-07T03:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-193",
+    "user": "mhansen"
+}
+```
 
 I think this is invalid.
 
@@ -130,8 +210,19 @@ tut/node44.html:sage: eigA = A.eigenvectors()
 
 
 
+
 ---
 
-Comment by rlm created at 2007-12-22 18:35:41
+archive/issue_comments_000194.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2007-12-22T18:35:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/26",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-194",
+    "user": "rlm"
+}
+```
 
 Resolution: invalid

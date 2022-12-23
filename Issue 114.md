@@ -1,11 +1,21 @@
 # Issue 114: trac -- totally broken for Python 2.5 as of now
 
-Issue created by migration from https://trac.sagemath.org/ticket/114
-
-Original creator: was
-
-Original creation time: 2006-10-07 09:15:21
-
+archive/issues_000114.json:
+```json
+{
+    "body": "Assignee: was\n\ntrac doesn't work at all in Python 2.5, hence not with SAGE. \n\nI've moved it to the experimental package repo. \n\nThere are posts out there about one of the depenencies like this: \n\n```\nThe ClearSilver developer is on vacation, though, so it\nprobably won't be fixed for a couple of weeks. Just stay with Python\n2.4 a little longer (or, possibly, dive into the clearsilver source\nand see what the problem is).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/114\n\n",
+    "created_at": "2006-10-07T09:15:21Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "trac -- totally broken for Python 2.5 as of now",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/114",
+    "user": "was"
+}
+```
 Assignee: was
 
 trac doesn't work at all in Python 2.5, hence not with SAGE. 
@@ -22,16 +32,42 @@ and see what the problem is).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/114
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-12 23:18:22
+archive/issue_comments_000540.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-12T23:18:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/114",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/114#issuecomment-540",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-12 23:18:22
+archive/issue_comments_000541.json:
+```json
+{
+    "body": "fixed with upgrade of quicksilver...",
+    "created_at": "2007-01-12T23:18:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/114",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/114#issuecomment-541",
+    "user": "was"
+}
+```
 
 fixed with upgrade of quicksilver...

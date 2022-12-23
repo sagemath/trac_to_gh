@@ -1,11 +1,21 @@
 # Issue 133: Galois action
 
-Issue created by migration from https://trac.sagemath.org/ticket/133
-
-Original creator: wdj
-
-Original creation time: 2006-10-15 16:47:17
-
+archive/issues_000133.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: Galois group, algebric number theory\n\nIt would be great if something like the following worked:\n\n\n```\nsage: F = CyclotomicField(7)\n\nsage: z = F.gen()\n\nsage: G = F.galois_group()\n\nsage: phi = G.random()\n\nsage: z.galois_action(phi)\n```\n\n\nAlso needed, I think, are embedding into CC.\nAFAIK, neither of these has been entered onto the SAGE\n\"wish list\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/133\n\n",
+    "created_at": "2006-10-15T16:47:17Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Galois action",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/133",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 Keywords: Galois group, algebric number theory
@@ -30,10 +40,25 @@ Also needed, I think, are embedding into CC.
 AFAIK, neither of these has been entered onto the SAGE
 "wish list".
 
+Issue created by migration from https://trac.sagemath.org/ticket/133
+
+
+
+
 
 ---
 
-Comment by was created at 2006-10-15 17:42:17
+archive/issue_comments_000627.json:
+```json
+{
+    "body": "Complex embeddings were written long ago.  In your example above, try:\n\n```\n    F.complex_embeddings()\n```\n",
+    "created_at": "2006-10-15T17:42:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-627",
+    "user": "was"
+}
+```
 
 Complex embeddings were written long ago.  In your example above, try:
 
@@ -43,9 +68,20 @@ Complex embeddings were written long ago.  In your example above, try:
 
 
 
+
 ---
 
-Comment by cremona created at 2008-09-04 16:13:05
+archive/issue_comments_000628.json:
+```json
+{
+    "body": "This is quite usable:\n\n```\nsage: F = CyclotomicField(7)\nsage: z = F.gen()           \nsage: G = F.embeddings(F)   \nsage: G                     \n\n[\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^2,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^3,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^4,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> zeta7^5,\nRing endomorphism of Cyclotomic Field of order 7 and degree 6\n  Defn: zeta7 |--> -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1\n]\nsage: [g(z) for g in G]     \n\n[zeta7,\n zeta7^2,\n zeta7^3,\n zeta7^4,\n zeta7^5,\n -zeta7^5 - zeta7^4 - zeta7^3 - zeta7^2 - zeta7 - 1]\n```\n\n\nOne could easily implement F.autumorphisms() to return F.embeddings(F), but in fact there is already End(F) -- whose existence I discovered by doing F.galois_group?\n\nSo what should be done is to change the structure returned by F.galois_group() which is <class 'sage.rings.number_field.galois_group.GaloisGroup'> to be derived from that of End(F) which is <class 'sage.rings.number_field.morphism.NumberFieldHomset'>,  which does not look very difficult to me...",
+    "created_at": "2008-09-04T16:13:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-628",
+    "user": "cremona"
+}
+```
 
 This is quite usable:
 
@@ -85,9 +121,20 @@ One could easily implement F.autumorphisms() to return F.embeddings(F), but in f
 So what should be done is to change the structure returned by F.galois_group() which is <class 'sage.rings.number_field.galois_group.GaloisGroup'> to be derived from that of End(F) which is <class 'sage.rings.number_field.morphism.NumberFieldHomset'>,  which does not look very difficult to me...
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-25 13:39:54
+archive/issue_comments_000629.json:
+```json
+{
+    "body": "This one was almost fixed by #5159; but unfortunately the above snippet didn't quite work, because my new GaloisGroup class derived from PermutationGroup_generic, and the random_element method of that class always returned a PermutationGroupElement (rather than a GaloisGroupElement, which has more functionality).\n\nThe above patch makes the necessary tiny changes to the permutation groups code so this now works, although the interface is slightly different from the above:\n\n```\nsage: F.<z> = CyclotomicField(7)\nsage: G = F.galois_group()\nsage: phi = G.random_element()\nsage: phi(z)\nz^4\n```\n",
+    "created_at": "2009-05-25T13:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-629",
+    "user": "davidloeffler"
+}
+```
 
 This one was almost fixed by #5159; but unfortunately the above snippet didn't quite work, because my new GaloisGroup class derived from PermutationGroup_generic, and the random_element method of that class always returned a PermutationGroupElement (rather than a GaloisGroupElement, which has more functionality).
 
@@ -103,64 +150,165 @@ z^4
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-25 13:39:54
+archive/issue_comments_000630.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-25T13:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-630",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-25 13:39:54
+archive/issue_comments_000631.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-05-25T13:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-631",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-28 15:42:18
+archive/issue_comments_000632.json:
+```json
+{
+    "body": "patch against 4.0.rc1",
+    "created_at": "2009-05-28T15:42:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-632",
+    "user": "davidloeffler"
+}
+```
 
 patch against 4.0.rc1
 
 
+
 ---
+
+archive/issue_comments_000633.json:
+```json
+{
+    "body": "Attachment\n\nThe previous patch broke a doctest due to silly sorting issues; here's a better patch.",
+    "created_at": "2009-05-28T15:42:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-633",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 The previous patch broke a doctest due to silly sorting issues; here's a better patch.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-05-30 09:07:16
+archive/issue_comments_000634.json:
+```json
+{
+    "body": "Changing keywords from \"Galois group, algebric number theory\" to \"Galois group, algebraic number theory\".",
+    "created_at": "2009-05-30T09:07:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-634",
+    "user": "AlexGhitza"
+}
+```
 
 Changing keywords from "Galois group, algebric number theory" to "Galois group, algebraic number theory".
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-05-30 09:15:01
+archive/issue_comments_000635.json:
+```json
+{
+    "body": "Very good!",
+    "created_at": "2009-05-30T09:15:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-635",
+    "user": "AlexGhitza"
+}
+```
 
 Very good!
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-01 04:43:38
+archive/issue_comments_000636.json:
+```json
+{
+    "body": "Merged in 4.0.1.alpha0.",
+    "created_at": "2009-06-01T04:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-636",
+    "user": "mhansen"
+}
+```
 
 Merged in 4.0.1.alpha0.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-01 04:43:38
+archive/issue_comments_000637.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-01T04:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-637",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2009-06-01 04:53:45
+archive/issue_comments_000638.json:
+```json
+{
+    "body": "Lowest ticket award!",
+    "created_at": "2009-06-01T04:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/133#issuecomment-638",
+    "user": "was"
+}
+```
 
 Lowest ticket award!

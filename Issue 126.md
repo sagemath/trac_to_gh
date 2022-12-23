@@ -1,11 +1,21 @@
 # Issue 126: maxima -- doctest hang
 
-Issue created by migration from https://trac.sagemath.org/ticket/126
-
-Original creator: was
-
-Original creation time: 2006-10-11 15:07:20
-
+archive/issues_000126.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOK, this looks like a bug for 64-bit linux systems only.  I'll look into it.\nThe tests actually pass fine in about 8 seconds), but for some reasons when \nusing the automated test system it hangs.  I'll look into it.  in the meantime\nyou could put \n\"\"\"nodoctest\nas the first line of maxima.py, and it will skip testing it. \n\nOn Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies@hccnet.nl> wrote:\n\n>\n> In sage-1.4 make test hangs forever on\n> sage -t  devel/sage-main/sage/interfaces/maxima.py\n>\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/126\n\n",
+    "created_at": "2006-10-11T15:07:20Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "maxima -- doctest hang",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/126",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -27,16 +37,42 @@ On Wed, 11 Oct 2006 01:23:43 -0700, Jaap Spies <j.spies@hccnet.nl> wrote:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/126
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2006-10-11 16:33:57
+archive/issue_comments_000572.json:
+```json
+{
+    "body": "Duplicate of #125",
+    "created_at": "2006-10-11T16:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/126#issuecomment-572",
+    "user": "dmharvey"
+}
+```
 
 Duplicate of #125
 
 
+
 ---
 
-Comment by dmharvey created at 2006-10-11 16:33:57
+archive/issue_comments_000573.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2006-10-11T16:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/126#issuecomment-573",
+    "user": "dmharvey"
+}
+```
 
 Resolution: duplicate

@@ -1,34 +1,81 @@
 # Issue 139: automatic dependency checking for pyrex files
 
-Issue created by migration from https://trac.sagemath.org/ticket/139
-
-Original creator: was
-
-Original creation time: 2006-10-20 01:08:54
-
+archive/issues_000139.json:
+```json
+{
+    "body": "Assignee: was\n\nAdd code to devel/sage/setup.py so that a Pyrex file is pyrexed if it\nchanges *or* if any pxd file that it cimports changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/139\n\n",
+    "created_at": "2006-10-20T01:08:54Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "automatic dependency checking for pyrex files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/139",
+    "user": "was"
+}
+```
 Assignee: was
 
 Add code to devel/sage/setup.py so that a Pyrex file is pyrexed if it
 changes *or* if any pxd file that it cimports changes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/139
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2006-10-20 01:20:30
+archive/issue_comments_000648.json:
+```json
+{
+    "body": "It would also be good to check any .pxi files that are included. Maybe even any .h files that are referenced, because the C file compilation will depend on this too.",
+    "created_at": "2006-10-20T01:20:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-648",
+    "user": "dmharvey"
+}
+```
 
 It would also be good to check any .pxi files that are included. Maybe even any .h files that are referenced, because the C file compilation will depend on this too.
 
 
+
 ---
 
-Comment by was created at 2006-10-21 01:26:06
+archive/issue_comments_000649.json:
+```json
+{
+    "body": "I've made a change so when you do a \"sage -upgrade\" all .pyx files get rebuilt.  This is obviously slower, but will avoid a lot of stupid confusion for now.",
+    "created_at": "2006-10-21T01:26:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-649",
+    "user": "was"
+}
+```
 
 I've made a change so when you do a "sage -upgrade" all .pyx files get rebuilt.  This is obviously slower, but will avoid a lot of stupid confusion for now.
 
 
+
 ---
 
-Comment by was created at 2006-10-26 04:36:09
+archive/issue_comments_000650.json:
+```json
+{
+    "body": "* Checking for dependencies on .h files doesn't work at all.\n\n* Recursive dependencies don't work, i.e., if a depends on b and b on c, and\nc changes, then a isn't rebuilt.",
+    "created_at": "2006-10-26T04:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-650",
+    "user": "was"
+}
+```
 
 * Checking for dependencies on .h files doesn't work at all.
 
@@ -36,22 +83,55 @@ Comment by was created at 2006-10-26 04:36:09
 c changes, then a isn't rebuilt.
 
 
+
 ---
 
-Comment by malb created at 2008-02-26 23:57:22
+archive/issue_comments_000651.json:
+```json
+{
+    "body": "Is this still a valid ticket? We do check dependencies now, right?",
+    "created_at": "2008-02-26T23:57:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-651",
+    "user": "malb"
+}
+```
 
 Is this still a valid ticket? We do check dependencies now, right?
 
 
+
 ---
 
-Comment by was created at 2008-02-27 12:21:18
+archive/issue_comments_000652.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-27T12:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-652",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2008-02-27 12:21:18
+archive/issue_comments_000653.json:
+```json
+{
+    "body": "I implemented this and forgot to close the ticket.",
+    "created_at": "2008-02-27T12:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-653",
+    "user": "was"
+}
+```
 
 I implemented this and forgot to close the ticket.

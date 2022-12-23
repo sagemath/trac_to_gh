@@ -1,11 +1,21 @@
 # Issue 58: wanted -- subsets of a set
 
-Issue created by migration from https://trac.sagemath.org/ticket/58
-
-Original creator: was
-
-Original creation time: 2006-09-14 10:45:59
-
+archive/issues_000058.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI would like to be able to type\n\n```\nsage: X = Set(range(5))\nsage: X.subsets()  # or X.powerset()\n```\n\nand get iterator over the power set.  \n\nI wold also like to do \n\n```\nsage: X.subsets(2)\n```\n\nand get all 2-element subsets.\n\nIt seems that even Python's built-in set type doesn't do these basic operations...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/58\n\n",
+    "created_at": "2006-09-14T10:45:59Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "wanted -- subsets of a set",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/58",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 I would like to be able to type
@@ -28,10 +38,25 @@ and get all 2-element subsets.
 It seems that even Python's built-in set type doesn't do these basic operations...
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/58
+
+
+
+
 
 ---
 
-Comment by jason created at 2007-10-25 21:22:18
+archive/issue_comments_000304.json:
+```json
+{
+    "body": "The patch below uses Mike's combinatorial stuff.\n\n\n```\ndiff -r 58095d7eaad0 sage/sets/set.py\n--- a/sage/sets/set.py  Thu Oct 25 00:59:26 2007 -0700\n+++ b/sage/sets/set.py  Thu Oct 25 16:21:12 2007 -0500\n@@ -472,6 +472,23 @@ class Set_object(Set_generic):\n         \"\"\"\n         return self.__object\n\n+\n+    def subsets(self,size=None):\n+        \"\"\"\n+        Return the Subset object representing the subsets of a set.  If size\n+        is specified, return the subsets of that size.\n+\n+        EXAMPLES:\n+            sage: X = Set([1,2,3])\n+            sage: list(X.subsets())\n+            [{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}]\n+            sage: list(X.subsets(2))\n+            [{1, 2}, {1, 3}, {2, 3}]\n+\n+        \"\"\"\n+        from sage.combinat.subset import Subsets\n+        return Subsets(self,size)\n+\n class Set_object_enumerated(Set_object):\n     \"\"\"\n     A finite enumerated set.\n```\n",
+    "created_at": "2007-10-25T21:22:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/58",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/58#issuecomment-304",
+    "user": "jason"
+}
+```
 
 The patch below uses Mike's combinatorial stuff.
 
@@ -68,15 +93,37 @@ diff -r 58095d7eaad0 sage/sets/set.py
 
 
 
+
 ---
 
-Comment by jason created at 2007-10-25 21:32:30
+archive/issue_comments_000305.json:
+```json
+{
+    "body": "whew, this has been open a long time.  Good thing Mike implemented the combinatorics stuff recently ;).",
+    "created_at": "2007-10-25T21:32:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/58",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/58#issuecomment-305",
+    "user": "jason"
+}
+```
 
 whew, this has been open a long time.  Good thing Mike implemented the combinatorics stuff recently ;).
 
 
+
 ---
 
-Comment by cwitty created at 2007-10-27 02:47:26
+archive/issue_comments_000306.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-10-27T02:47:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/58",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/58#issuecomment-306",
+    "user": "cwitty"
+}
+```
 
 Resolution: fixed

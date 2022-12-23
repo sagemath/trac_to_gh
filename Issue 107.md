@@ -1,11 +1,21 @@
 # Issue 107: can't multiply matrix by vector over an arbitrary ring?
 
-Issue created by migration from https://trac.sagemath.org/ticket/107
-
-Original creator: dmharvey
-
-Original creation time: 2006-10-03 17:50:08
-
+archive/issues_000107.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: R = Integers(125)\nsage: M = Matrix(R, 2, 2, [0, 1, 2, 3])\nsage: V = Vector(R, [2, 3])\nsage: M * V\n---------------------------------------------------------------------------\nexceptions.AttributeError                            Traceback (most recent call last)\n\n/home/dmharvey/sage-1.3.7.3.3/<ipython console> \n\n/home/dmharvey/sage-1.3.7.3.3/matrix_pyx.pyx in matrix_pyx.Matrix.__mul__()\n\n/home/dmharvey/sage-1.3.7.3.3/matrix_pyx.pyx in matrix_pyx.Matrix.vector_matrix_multiply()\n\n/home/dmharvey/sage/local/lib/python2.4/site-packages/sage/modules/free_module_element.py in __add__(self, right)\n     65         if self.parent() is right.parent():\n     66             V = self.parent()\n---> 67         elif self.parent().ambient_vector_space() == right.parent().ambient_vector_space():\n     68             V = self.parent().ambient_vector_space()\n     69         else:\n\nAttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_space'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/107\n\n",
+    "created_at": "2006-10-03T17:50:08Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "can't multiply matrix by vector over an arbitrary ring?",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/107",
+    "user": "dmharvey"
+}
+```
 Assignee: was
 
 
@@ -35,17 +45,43 @@ AttributeError: 'FreeModule_ambient' object has no attribute 'ambient_vector_spa
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/107
+
+
+
+
 
 ---
 
-Comment by was created at 2006-10-05 08:16:03
+archive/issue_comments_000507.json:
+```json
+{
+    "body": "We shouldn't bother fixing this until when we are doing the serious pyrexing of linear algebra...",
+    "created_at": "2006-10-05T08:16:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/107#issuecomment-507",
+    "user": "was"
+}
+```
 
 We shouldn't bother fixing this until when we are doing the serious pyrexing of linear algebra...
 
 
+
 ---
 
-Comment by was created at 2007-01-07 19:42:39
+archive/issue_comments_000508.json:
+```json
+{
+    "body": "This works fine now in sage-1.5:\n\n```\nsage: R = Integers(125)\nsage: M = Matrix(R, 2, 2, [0, 1, 2, 3])\nsage: V = vector(R, [2, 3])\nsage: M * V\n(3, 13)\n```\n",
+    "created_at": "2007-01-07T19:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/107#issuecomment-508",
+    "user": "was"
+}
+```
 
 This works fine now in sage-1.5:
 
@@ -59,8 +95,19 @@ sage: M * V
 
 
 
+
 ---
 
-Comment by was created at 2007-01-07 19:42:39
+archive/issue_comments_000509.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-07T19:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/107#issuecomment-509",
+    "user": "was"
+}
+```
 
 Resolution: fixed

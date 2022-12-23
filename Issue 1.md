@@ -1,39 +1,85 @@
-# Issue 1: remove deprecated stuff in sage_object
+# Issue 1: SAGE Notebook leaves dead processes on OS X
 
-CC:  tscrim
+archive/issues_000001.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThe sage notebook restart often leaves \"dead Python\" process running.\nThis is especially bad on OS X, where there is a 100 process limit by\ndefault (at least on my laptop). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1\n\n",
+    "created_at": "2006-09-11T03:58:42Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "SAGE Notebook leaves dead processes on OS X",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1",
+    "user": "was"
+}
+```
+Assignee: somebody
 
-after #22128, #23103
+The sage notebook restart often leaves "dead Python" process running.
+This is especially bad on OS X, where there is a 100 process limit by
+default (at least on my laptop). 
 
-Issue created by migration from https://trac.sagemath.org/ticket/26798
+Issue created by migration from https://trac.sagemath.org/ticket/1
 
+
+
+
+
+---
+
+archive/issue_comments_000001.json:
+```json
+{
+    "body": "I finally decided to fix that bug under OS X where the SAGE notebook\nspawns > 100 processes, which OS X doesn't like (i.e., when you hit\nrestart a lot).  It took me 2 minutes to fix, so I wish I had done\nit earlier. \n\nI just inserted this line\n\n            self.__sage._expect = None\n\nin worksheet.py as line 661, so now its:\n        alarm(2)\n        try:\n            self.__sage._expect = None\n            del self.__sage\n        except AttributeError, msg:\n            print \"WARNING: %s\"%msg\n        except Exception, msg:\n            print msg\n            print \"WARNING: Error deleting SAGE object!\"\n        cancel_alarm()\n\n\nI checked this into the standard darcs repository.",
+    "created_at": "2006-09-14T08:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-1",
+    "user": "was"
+}
+```
+
+I finally decided to fix that bug under OS X where the SAGE notebook
+spawns > 100 processes, which OS X doesn't like (i.e., when you hit
+restart a lot).  It took me 2 minutes to fix, so I wish I had done
+it earlier. 
+
+I just inserted this line
+
+            self.__sage._expect = None
+
+in worksheet.py as line 661, so now its:
+        alarm(2)
+        try:
+            self.__sage._expect = None
+            del self.__sage
+        except AttributeError, msg:
+            print "WARNING: %s"%msg
+        except Exception, msg:
+            print msg
+            print "WARNING: Error deleting SAGE object!"
+        cancel_alarm()
+
+
+I checked this into the standard darcs repository.
 
 
 
 ---
 
-New commits:
-
-
----
-
-Changing status from new to needs_review.
-
-
----
-
-bot is morally green, please review (patchbot failure seems unrelated, comes from #26730)
-
-
----
-
-Changing status from needs_review to positive_review.
-
-
----
-
-LGTM.
-
-
----
+archive/issue_comments_000002.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-09-14T08:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-2",
+    "user": "was"
+}
+```
 
 Resolution: fixed

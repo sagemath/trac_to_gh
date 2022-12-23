@@ -1,11 +1,21 @@
 # Issue 41: doc generation script typos
 
-Issue created by migration from https://trac.sagemath.org/ticket/41
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:31:57
-
+archive/issues_000041.json:
+```json
+{
+    "body": "Assignee: somebody\n\n* Paisa Seeluangsawat:\n\n```\n> There are typos in the docs.  They tend to get functions'\n> optional arguments mixed up.  For an example, compare\n>\n> \n> http://modular.math.washington.edu/sage/doc/html/ref/module-sage.rings.multi-polynomial-ring.html\n>\n>     MPolynomialRing(base_ring, [n=False], [names=degrevlex],\n>   \t\t    [order=None], [macaulay2=1])\n>\n> with\n>\n>     $SAGE_ROOT/local/lib/python2.4/site-packages/sage/rings/\n>\n>     def MPolynomialRing(base_ring, n=1, names=None,\n>                         order='degrevlex', macaulay2=False):\n```\n\n\nThat's really weird.  Many thanks for pointing out the problem.\nThat documentation is generated from the source code, so I'll investigate\nthe script that does the generation.  Again, thanks for the bug\nreport.\n\nIssue created by migration from https://trac.sagemath.org/ticket/41\n\n",
+    "created_at": "2006-09-12T23:31:57Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "doc generation script typos",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/41",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 * Paisa Seeluangsawat:
@@ -34,10 +44,25 @@ That documentation is generated from the source code, so I'll investigate
 the script that does the generation.  Again, thanks for the bug
 report.
 
+Issue created by migration from https://trac.sagemath.org/ticket/41
+
+
+
+
 
 ---
 
-Comment by was created at 2006-10-07 06:23:45
+archive/issue_comments_000254.json:
+```json
+{
+    "body": "From Alec C:\n\n```\nLooking over the SAGE reference manual I found some crazy stuff in section\n8.1 2D Plotting\n \n* show*( self, [xmin=False], [xmax=None], [ymin=True], [ymax=125 ], [\nfigsize=None], [filename=[5, 4]], [dpi=None], [ axes=None], [axes_label=None\n], [frame=None])\n \nlook at figsize, etc.   some other functions have the same problem, any\nideas?\n \nThis has been reported before.  It must be a bug in update, i.e,. that file\nin <SAGE_ROOT>/devel/sage/sage/ref that I showed you.   We have to fix this.\n }}}",
+    "created_at": "2006-10-07T06:23:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-254",
+    "user": "was"
+}
+```
 
 From Alec C:
 
@@ -57,16 +82,38 @@ in <SAGE_ROOT>/devel/sage/sage/ref that I showed you.   We have to fix this.
  }}}
 
 
+
 ---
 
-Comment by was created at 2007-01-05 06:01:11
+archive/issue_comments_000255.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2007-01-05T06:01:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-255",
+    "user": "was"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by was created at 2007-01-05 06:01:11
+archive/issue_comments_000256.json:
+```json
+{
+    "body": "Another example from Ifti\n\n```\n> [2] There seems to be some strange function declaration mangling which\n> seems to be going on in the manual.\n>\n> For example the function Lseries_dokchitser in the manual\n>\n> http://sage.math.washington.edu/sage/doc/html/ref/module-sage.schemes.elliptic-curves.ell-rational-field.html\n>\n> reads\n>\n> Lseries_dokchitser(self, [prec=gp], [max_imaginary_part=40], [max_asymp_coeffs=0], [algorithm=53])\n>\n> whereas the source code and E.Lseries_dokchitser? help reads:\n>\n> def Lseries_dokchitser(self, prec=53,\n> \t\t\tmax_imaginary_part=0,\n> \t\t\tmax_asymp_coeffs=40,\n> \t\t\talgorithm='gp'):\n```\n",
+    "created_at": "2007-01-05T06:01:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-256",
+    "user": "was"
+}
+```
 
 Another example from Ifti
 
@@ -92,16 +139,38 @@ Another example from Ifti
 
 
 
+
 ---
 
-Comment by was created at 2007-01-05 06:01:11
+archive/issue_comments_000257.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to user interface.",
+    "created_at": "2007-01-05T06:01:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-257",
+    "user": "was"
+}
+```
 
 Changing component from basic arithmetic to user interface.
 
 
+
 ---
 
-Comment by was created at 2007-01-05 06:02:52
+archive/issue_comments_000258.json:
+```json
+{
+    "body": "From Ifti\n\n```\n> [2] There seems to be some strange function declaration mangling which\n> seems to be going on in the manual.\n>\n> For example the function Lseries_dokchitser in the manual\n>\n> http://sage.math.washington.edu/sage/doc/html/ref/module-sage.schemes.elliptic-curves.ell-rational-field.html\n>\n> reads\n>\n> Lseries_dokchitser(self, [prec=gp], [max_imaginary_part=40], [max_asymp_coeffs=0], [algorithm=53])\n>\n> whereas the source code and E.Lseries_dokchitser? help reads:\n>\n> def Lseries_dokchitser(self, prec=53,\n> \t\t\tmax_imaginary_part=0,\n> \t\t\tmax_asymp_coeffs=40,\n> \t\t\talgorithm='gp'):\n```\n",
+    "created_at": "2007-01-05T06:02:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-258",
+    "user": "was"
+}
+```
 
 From Ifti
 
@@ -127,9 +196,20 @@ From Ifti
 
 
 
+
 ---
 
-Comment by was created at 2007-01-25 20:04:41
+archive/issue_comments_000259.json:
+```json
+{
+    "body": "Fixed for SAGE-1.9.\nhg_doc patch below.\n\n\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169755223 28800\n# Node ID 85b2f50482ffb977c19441aa1966e62a1dec70ca\n# Parent  3b37261f05314307520d7fc83d34559ab3577746\nTrac #41 -- ref manual autogenerated argument input list had defaults *backwards*.\n\ndiff -r 3b37261f0531 -r 85b2f50482ff ref/update_script.py\n--- a/ref/update_script.py      Thu Jan 25 11:27:19 2007 -0800\n+++ b/ref/update_script.py      Thu Jan 25 12:00:23 2007 -0800\n@@ -229,8 +229,10 @@ def doc_method(name, f, source_code=None\n     except TypeError:\n         args = []; defaults=[]\n     if defaults != None:\n+        n = len(args)\n         for i in range(len(defaults)):\n-            args[len(args)-1-i] = '\\\\optional{%s=%s}'%(args[len(args)-1-i],defaults[i])\n+            args[n-1-i] = '\\\\optional{%s=%s}'%(\n+                args[n-1-i],defaults[len(defaults)-i-1])\n \n     if source_code and len(args) == 0:\n         args = determine_args_from_src(source_code, name, cls)\n```\n",
+    "created_at": "2007-01-25T20:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-259",
+    "user": "was"
+}
+```
 
 Fixed for SAGE-1.9.
 hg_doc patch below.
@@ -164,8 +244,19 @@ diff -r 3b37261f0531 -r 85b2f50482ff ref/update_script.py
 
 
 
+
 ---
 
-Comment by was created at 2007-01-25 20:04:41
+archive/issue_comments_000260.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-25T20:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/41",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-260",
+    "user": "was"
+}
+```
 
 Resolution: fixed

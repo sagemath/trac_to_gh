@@ -1,21 +1,46 @@
 # Issue 35: sage notebook load and DOS files
 
-Issue created by migration from https://trac.sagemath.org/ticket/35
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:29:11
-
+archive/issues_000035.json:
+```json
+{
+    "body": "Assignee: somebody\n\n SAGE notebook load doesn't deal with DOS format files correctly,\n  but python import does.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/35\n\n",
+    "created_at": "2006-09-12T23:29:11Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "sage notebook load and DOS files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/35",
+    "user": "was"
+}
+```
 Assignee: somebody
 
-*SAGE notebook load doesn't deal with DOS format files correctly,
+ SAGE notebook load doesn't deal with DOS format files correctly,
   but python import does.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/35
+
+
 
 
 
 ---
 
-Comment by was created at 2007-01-19 11:13:27
+archive/issue_comments_000230.json:
+```json
+{
+    "body": "Fixed.\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169205070 28800\n# Node ID 21687c50ad918c8af09e6338ea5835c19a43f819\n# Parent  4c0bbf3706fad3a37607129c520366de1b20e452\nfixed trac #35 -- laoding dos file didn't work.  (change split('\\n') to splitlines())\n\ndiff -r 4c0bbf3706fa -r 21687c50ad91 sage/misc/preparser.py\n--- a/sage/misc/preparser.py    Fri Jan 19 03:07:12 2007 -0800\n+++ b/sage/misc/preparser.py    Fri Jan 19 03:11:10 2007 -0800\n@@ -385,7 +385,7 @@ def preparse_file(contents, attached={},\n     loaded_files = []\n \n     F = []\n-    A = contents.split('\\n')\n+    A = contents.splitlines()\n     i = 0\n     while i < len(A):\n         L = A[i].rstrip()\n```\n",
+    "created_at": "2007-01-19T11:13:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/35",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/35#issuecomment-230",
+    "user": "was"
+}
+```
 
 Fixed.
 
@@ -44,8 +69,19 @@ diff -r 4c0bbf3706fa -r 21687c50ad91 sage/misc/preparser.py
 
 
 
+
 ---
 
-Comment by was created at 2007-01-19 11:13:27
+archive/issue_comments_000231.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T11:13:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/35",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/35#issuecomment-231",
+    "user": "was"
+}
+```
 
 Resolution: fixed

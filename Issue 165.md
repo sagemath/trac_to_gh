@@ -1,11 +1,21 @@
 # Issue 165: pyrex weakref -- implement pyrex weakref support
 
-Issue created by migration from https://trac.sagemath.org/ticket/165
-
-Original creator: was
-
-Original creation time: 2006-10-31 07:53:04
-
+archive/issues_000165.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThough Pyrex claims to have weakref support it doesn't, at least not\nfor Python 2.5, and not with c++ code.  Here are more details.\nI need to implement this for SAGE for memory efficiency reasons,\nsince some rings/fields are implemented in Pyrex:\n\n\n```\nHi David and Martin,\n\nI just figured out what the deals is with FiniteField_givaro crashing for us.\n\nI am making fields globally unique (so, e.g., arithmetic is faster and so SAGE is\nvery uniform), so I made Martin's FiniteField_givaro class weak referenceable,\nsince that way we can make the fields unique, yet if no references point\nto one then it is deleted from the cache --- this could be important, e.g., \nif fields have big tables in them, and one does computation involving all fields\nup to some big order. \n\nAnyway, having weakref support for a Pyrex extension calss is not automatic.\nAccording to the Pyrex manual, you just add \n\n    cdef object __weakref__\n\nto the class definition, and it works.   We'll it wasn't working with\nFiniteField_givaro.  I carefully read the docs on weakref support via \nthe Python/C API here: http://docs.python.org/ext/weakref-support.html\nIt says there that the __weakref__ attribute must be explicitly initialized\nto NULL, and that this is the responsibility of the author at object\ncreation.   \n\nI haven't had this problem with Pyrex C-compiled classes, but FiniteField_givaro\nis C++, and I have this problem.  I tried explicitly editing the generated\ncpp code and adding the initialization to NULL, and re-compiling my code, \nand it worked.  Evidently Pyrex doesn't generate code to initialize the\n__weakref__ PyObject* to 0.  And, unfortunately, to use __weakref__ with\nPyrex, you have to use the notation \n\n    cdef object __weakref__\n\nOnce you do that, I think there is no way to write\n\n    self.__weakref__ = NULL\n\nwince NULL is not a Python object, and __weakref__ *has* to be one. \nSo basically, I think it is a bug in Pyrex that initialization of\n__weakref__ isn't part of the code it generates. \n\nEven setting self.__weakref__ = None  doesn't help at all. The only\nthing that I've found that works is properly setting the __weakref__\nC PyObject* pointer to 0.   \n\nCurrently Pyrex generates code like this:\n\n    p->__weakref__ = Py_None;\n\nBut Py_None is just wrong.  And changing that to NULL does work. \n\nThoughts?  I'll probably just have to fix this in Pyrex.  I bet\nit won't be too hard. \n\nMoreover, according to the Python guide, one must call this code\nin the destructor:\n\n    if (inst->in_weakreflist != NULL)\n        PyObject_ClearWeakRefs((PyObject *) inst);\n\nPyrex doesn't generate any code that has ClearWekRefs in it, so again\nI think it's messed up regarding its support for weak references.\n\nAnyway, it looks like maybe I'm going to have to implement weak reference\nsupport for Pyrex.  This could be difficult... I don't know.  \nIn the meantime, I'm just going to cache finite fields without\ndoing the weakref thing, and make a note of it. \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/165\n\n",
+    "created_at": "2006-10-31T07:53:04Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "pyrex weakref -- implement pyrex weakref support",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/165",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Though Pyrex claims to have weakref support it doesn't, at least not
@@ -86,10 +96,25 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/165
+
+
+
+
 
 ---
 
-Comment by was created at 2006-11-30 19:09:29
+archive/issue_comments_000738.json:
+```json
+{
+    "body": "\n```\nI'm trying to understand how (or whether) Pyrex supports weakly-referencable\nobjects.\n \nAccording to the Pyrex docs, all that is required is to add \"cdef object\n__weakref__\" to the class.  That seems to work only superficially for me.\nI am able to create weak refs to instances, but I get mysterious crashes all\nover the place if I actually use them.\n \nAccording to this:\nhttp://effbot.org/lib/weakref.html#weak-references-in-extension-types\nthere are 5 things that need to be done to make an extension type\nweak-referenceable:\n \n1) include a PyObject* field in the instance structure.\n2) initialize it to NULL in the constructor\n3) set the tp_weaklistoffset field of the type object\n4) add Py_TPFLAGS_HAVE_WEAKREFS to the tp_flags slot\n5) call PyObject_ClearWeakRefs in the dealloc function\n \nAs far as I can tell by looking at the generated C code, Pyrex only does 1)\nand 3).  As for 2), it sets __weakref__ to Py_None instead of NULL (maybe\nthat's OK, I don't know).  It doesn't seem to do 4) or 5) at all.\n \nIs this intentional?  I don't know much about writing extension types, so\nit's entirely possible that the generated code is fine.  I would just like to\nbe sure before I spend more time hunting down the cause of the crash.\n \nThanks,\n \nChris Perkins\n }}}",
+    "created_at": "2006-11-30T19:09:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-738",
+    "user": "was"
+}
+```
 
 
 ```
@@ -126,23 +151,56 @@ Chris Perkins
  }}}
 
 
+
 ---
 
-Comment by was created at 2006-11-30 19:09:38
+archive/issue_comments_000739.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to packages.",
+    "created_at": "2006-11-30T19:09:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-739",
+    "user": "was"
+}
+```
 
 Changing component from basic arithmetic to packages.
 
 
+
 ---
 
-Comment by was created at 2006-11-30 19:09:38
+archive/issue_comments_000740.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2006-11-30T19:09:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-740",
+    "user": "was"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by was created at 2006-11-30 19:11:27
+archive/issue_comments_000741.json:
+```json
+{
+    "body": "I think at the least that the Py_None *must* be NULL instead.  I have\ncrashes because of exactly this, and found that changing the Py_None\nto NULL stopped those crashes.  But presumably one should do 4 and 5\nas well so that the weakref stuff actually works (rather than just\nnot crashing).",
+    "created_at": "2006-11-30T19:11:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-741",
+    "user": "was"
+}
+```
 
 I think at the least that the Py_None *must* be NULL instead.  I have
 crashes because of exactly this, and found that changing the Py_None
@@ -151,9 +209,20 @@ as well so that the weakref stuff actually works (rather than just
 not crashing).
 
 
+
 ---
 
-Comment by was created at 2006-12-03 00:12:38
+archive/issue_comments_000742.json:
+```json
+{
+    "body": "From Greg Ewing:\n\n\n```\nChris Perkins wrote:\n \n> According to this:\n> http://effbot.org/lib/weakref.html#weak-references-in-extension-types\n> there are 5 things that need to be done to make an extension type\n> weak-referenceable:\n \nIt's quite likely that I haven't done it right. Weak\nreference support was only added recently and hasn't\nbeen tested very well yet. I'll look into it.\n \n> 4) add Py_TPFLAGS_HAVE_WEAKREFS to the tp_flags slot\n \nLooking at object.h in the Python 2.3 distribution, it\nseems that Py_TPFLAGS_DEFAULT already includes\nPy_TPFLAGS_HAVE_WEAKREFS, which makes me think that\nthis list of requirements is not quite up to date.\n \nDoes anyone know more about what the requirements for\nweakref support really are in 2.3 and later?\n \n--\nGreg\n }}}",
+    "created_at": "2006-12-03T00:12:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-742",
+    "user": "was"
+}
+```
 
 From Greg Ewing:
 
@@ -185,15 +254,37 @@ Greg
  }}}
 
 
+
 ---
 
-Comment by was created at 2006-12-18 03:17:06
+archive/issue_comments_000743.json:
+```json
+{
+    "body": "I applied the patch from Peter Johnson, which implements weakref support.",
+    "created_at": "2006-12-18T03:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-743",
+    "user": "was"
+}
+```
 
 I applied the patch from Peter Johnson, which implements weakref support.
 
 
+
 ---
 
-Comment by was created at 2006-12-18 03:17:06
+archive/issue_comments_000744.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2006-12-18T03:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-744",
+    "user": "was"
+}
+```
 
 Resolution: fixed

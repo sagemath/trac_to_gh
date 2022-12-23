@@ -1,11 +1,21 @@
 # Issue 32: missing coercion functionality
 
-Issue created by migration from https://trac.sagemath.org/ticket/32
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:27:50
-
+archive/issues_000032.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nR.<x,y> = PolynomialRing(QQ,2)\n    S = PolynomialRing(GF(7),2)\n  S(x)\n    Boom!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/32\n\n",
+    "created_at": "2006-09-12T23:27:50Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "missing coercion functionality",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/32",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -17,17 +27,43 @@ R.<x,y> = PolynomialRing(QQ,2)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/32
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-19 11:09:37
+archive/issue_comments_000212.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-19T11:09:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/32",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/32#issuecomment-212",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2007-01-19 11:09:37
+archive/issue_comments_000213.json:
+```json
+{
+    "body": "This was easy to add\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169204832 28800\n# Node ID 4c0bbf3706fad3a37607129c520366de1b20e452\n# Parent  061691096b76580a55a655e654aa046f2071ebc4\nfix trac #32 -- a missing coercin.\n\ndiff -r 061691096b76 -r 4c0bbf3706fa sage/rings/multi_polynomial_ring.py\n--- a/sage/rings/multi_polynomial_ring.py       Fri Jan 19 02:58:30 2007 -0800\n+++ b/sage/rings/multi_polynomial_ring.py       Fri Jan 19 03:07:12 2007 -0800\n@@ -407,7 +407,14 @@ class MPolynomialRing_polydict( MPolynom\n \n         Coerce works and gets the right parent. \n             sage: parent(S2._coerce_(S.0)) is S2\n-            True        \n+            True\n+\n+        Coercion to reduce modulo a prime between rings with different variable names:\n+            sage: R.<x,y> = PolynomialRing(QQ,2)\n+            sage: S.<a,b> = PolynomialRing(GF(7),2)\n+            sage: f = x^2 + 2/3*y^3\n+            sage: S(f)\n+            3*b^3 + a^2        \n         \"\"\"\n         if isinstance(x, multi_polynomial_element.MPolynomial_polydict):\n             P = x.parent()\n@@ -415,13 +422,19 @@ class MPolynomialRing_polydict( MPolynom\n                 return x\n             elif P == self:\n                 return multi_polynomial_element.MPolynomial_polydict(self, x.element().dict())\n-            elif P.variable_names() == self.variable_names():\n+            elif len(P.variable_names()) == len(self.variable_names()):\n+                # Map the variables in some crazy way (but in order,\n+                # of course).  This is here since R(blah) is supposed\n+                # to be \"make an element of R if at all possible with\n+                # no guarantees that this is mathematically solid.\"\n                 K = self.base_ring()\n                 D = x.element().dict()\n                 for i, a in D.iteritems():\n                     D[i] = K(a)\n                 return multi_polynomial_element.MPolynomial_polydict(self, D)\n-            raise TypeError\n+            else:\n+                raise TypeError\n+\n         elif isinstance(x, polydict.PolyDict):\n             return multi_polynomial_element.MPolynomial_polydict(self, x)\n         elif isinstance(x, fraction_field_element.FractionFieldElement) and x.parent().ring() == self:\n```\n",
+    "created_at": "2007-01-19T11:09:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/32",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/32#issuecomment-213",
+    "user": "was"
+}
+```
 
 This was easy to add
 

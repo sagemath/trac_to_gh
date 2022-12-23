@@ -1,11 +1,21 @@
 # Issue 168: Plot bounds ignored when frame=True
 
-Issue created by migration from https://trac.sagemath.org/ticket/168
-
-Original creator: nbruin
-
-Original creation time: 2006-11-08 21:55:30
-
+archive/issues_000168.json:
+```json
+{
+    "body": "Assignee: boothby\n\nWhen I do:\n\n\n```\n  show(plot(lambda x: 1/x,-1,1),frame=True,ymin=-3,ymax=3)\n```\n\n\nthe ymin and ymax bounds get ignored. Without frame=True, the plot works properly\n\nIssue created by migration from https://trac.sagemath.org/ticket/168\n\n",
+    "created_at": "2006-11-08T21:55:30Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Plot bounds ignored when frame=True",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/168",
+    "user": "nbruin"
+}
+```
 Assignee: boothby
 
 When I do:
@@ -18,16 +28,42 @@ When I do:
 
 the ymin and ymax bounds get ignored. Without frame=True, the plot works properly
 
+Issue created by migration from https://trac.sagemath.org/ticket/168
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-17 21:05:05
+archive/issue_comments_000752.json:
+```json
+{
+    "body": "Alex C sent me a patch that fixes this problem.",
+    "created_at": "2007-01-17T21:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/168#issuecomment-752",
+    "user": "was"
+}
+```
 
 Alex C sent me a patch that fixes this problem.
 
 
+
 ---
 
-Comment by was created at 2007-01-17 21:05:05
+archive/issue_comments_000753.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-17T21:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/168#issuecomment-753",
+    "user": "was"
+}
+```
 
 Resolution: fixed

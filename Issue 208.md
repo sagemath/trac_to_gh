@@ -1,11 +1,21 @@
 # Issue 208: Implied Magma conversion causes seg fault
 
-Issue created by migration from https://trac.sagemath.org/ticket/208
-
-Original creator: kedlaya
-
-Original creation time: 2007-01-23 18:25:41
-
+archive/issues_000208.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: Magma, polynomial, coercion\n\nThe following code segment causes a segmentation fault (unhandled SIGSEGV):\n\n```\nP.<x> = PolynomialRing(Rationals())\ny = magma(x) * 1.0\n```\n\nThe expected behavior is to return a Magma polynomial over the real field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/208\n\n",
+    "created_at": "2007-01-23T18:25:41Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Implied Magma conversion causes seg fault",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/208",
+    "user": "kedlaya"
+}
+```
 Assignee: was
 
 Keywords: Magma, polynomial, coercion
@@ -19,10 +29,25 @@ y = magma(x) * 1.0
 
 The expected behavior is to return a Magma polynomial over the real field.
 
+Issue created by migration from https://trac.sagemath.org/ticket/208
+
+
+
+
 
 ---
 
-Comment by was created at 2007-01-23 19:48:25
+archive/issue_comments_000935.json:
+```json
+{
+    "body": "Kiran,\n\nThe implied behavior you want from MAGMA won't ever work, because\nMAGMA does not do that implicit coercion (like SAGE would):\n\n\n```\nwas@sage:~$ magma\nMagma V2.13-5     Tue Jan 23 2007 11:46:41 on sage     [Seed = 3876897989]\nType ? for help.  Type <Ctrl>-D to quit.\n> R<x> := PolynomialRing(RationalField());\n> x * 1.0;\n\n>> x * 1.0;\n     ^\nRuntime error in '*': Bad argument types\nArgument types given: RngUPolElt[FldRat], FldReElt\n```\n\n\nThat said, the infinite loop / seg fault you report is definitely\na SAGE bug -- SAGE should terminate with a proper error report.",
+    "created_at": "2007-01-23T19:48:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-935",
+    "user": "was"
+}
+```
 
 Kiran,
 
@@ -48,9 +73,20 @@ That said, the infinite loop / seg fault you report is definitely
 a SAGE bug -- SAGE should terminate with a proper error report.
 
 
+
 ---
 
-Comment by was created at 2007-01-23 20:05:36
+archive/issue_comments_000936.json:
+```json
+{
+    "body": "OK, fixed.\n\n```\nsage: R.<x> = ZZ[]\nsage: x * 5\n5*x\nsage: x * 1.0\n1.00000000000000*x\nsage: x * (2/3)\n2/3*x\nsage: y = magma(x)\nsage: y * 5\n5*x\nsage: y * 1.0\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Magma' and 'Magma'\nsage: y * (2/3)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Magma' and 'Magma'    \n\n```\n\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169582527 28800\n# Node ID decd1e49efc3cef353d0dcc8121eb681b4e38764\n# Parent  b99914e8d818b8ad1381e92dd8a4be2e6010654c\nFix trac #208 -- seg fault multiplying magma and non-magma elements\n\ndiff -r b99914e8d818 -r decd1e49efc3 sage/interfaces/expect.py\n--- a/sage/interfaces/expect.py Tue Jan 23 11:40:08 2007 -0800\n+++ b/sage/interfaces/expect.py Tue Jan 23 12:02:07 2007 -0800\n@@ -896,27 +896,41 @@ class ExpectElement(RingElement):\n         return P.new('%s.%s'%(self._name, int(n)))\n \n     def _add_(self, right):\n-        P = self._check_valid()        \n-        return P.new('%s + %s'%(self._name, right._name))\n+        P = self._check_valid()\n+        try:\n+            return P.new('%s + %s'%(self._name, right._name))\n+        except Exception, msg:\n+            raise TypeError, msg\n         \n     def _sub_(self, right):\n         P = self._check_valid()        \n-        return P.new('%s - %s'%(self._name, right._name))\n+        try:\n+            return P.new('%s - %s'%(self._name, right._name))\n+        except Exception, msg:\n+            raise TypeError, msg\n+        \n \n     def _mul_(self, right):\n-        P = self._check_valid()        \n-        return P.new('%s * %s'%(self._name, right._name))\n+        P = self._check_valid()\n+        try:\n+            return P.new('%s * %s'%(self._name, right._name))\n+        except Exception, msg:\n+            raise TypeError,msg\n \n     def _div_(self, right):\n         P = self._check_valid()        \n-        return P.new('%s / %s'%(self._name, right._name))\n+        try:\n+            return P.new('%s / %s'%(self._name, right._name))\n+        except Exception, msg:\n+            raise TypeError, msg\n+        \n \n     def __pow__(self, n):\n         P = self._check_valid()\n         if isinstance(n, ExpectElement):\n             return P.new('%s ^ %s'%(self._name,n._name))\n         else:\n-           return P.new('%s ^ %s'%(self._name,n))\n+            return P.new('%s ^ %s'%(self._name,n))\n \n \n def reduce_load(parent, x):\ndiff -r b99914e8d818 -r decd1e49efc3 sage/interfaces/magma.py\n--- a/sage/interfaces/magma.py  Tue Jan 23 11:40:08 2007 -0800\n+++ b/sage/interfaces/magma.py  Tue Jan 23 12:02:07 2007 -0800\n@@ -117,6 +117,27 @@ We coerce some polynomial rings into MAG\n     Univariate Polynomial Ring in y over Rational Field\n     sage: S.1\n     y\n+\n+This example illustrates that SAGE doesn't magically extend how MAGMA\n+implicit coercion (what there is, at least) works:\n+    sage: R.<x> = ZZ[]\n+    sage: x * 5\n+    5*x\n+    sage: x * 1.0\n+    1.00000000000000*x\n+    sage: x * (2/3)\n+    2/3*x\n+    sage: y = magma(x)\n+    sage: y * 5\n+    5*x\n+    sage: y * 1.0\n+    Traceback (most recent call last):\n+    ...\n+    TypeError: unsupported operand parent(s) for '*': 'Magma' and 'Magma'\n+    sage: y * (2/3)\n+    Traceback (most recent call last):\n+    ...\n+    TypeError: unsupported operand parent(s) for '*': 'Magma' and 'Magma'    \n \n \n AUTHOR:\n\n```\n",
+    "created_at": "2007-01-23T20:05:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-936",
+    "user": "was"
+}
+```
 
 OK, fixed.
 
@@ -174,8 +210,19 @@ diff -r b99914e8d818 -r decd1e49efc3 sage/interfaces/magma.py
 
 
 
+
 ---
 
-Comment by was created at 2007-01-23 20:05:36
+archive/issue_comments_000937.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2007-01-23T20:05:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/208#issuecomment-937",
+    "user": "was"
+}
+```
 
 Resolution: fixed

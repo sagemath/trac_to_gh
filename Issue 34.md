@@ -1,11 +1,21 @@
 # Issue 34: Bug in is_simple() for a space of ModularSymbols
 
-Issue created by migration from https://trac.sagemath.org/ticket/34
-
-Original creator: was
-
-Original creation time: 2006-09-12 23:28:51
-
+archive/issues_000034.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\n   sage: M = ModularSymbols(Gamma0(22),2,sign=1)\n   sage: M1 = M.decomposition()[1]\n   sage: M1\n   Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 5 for Gamma_0(22) of weight 2 with sign 1 over Rational Field\n   sage: M1.is_simple() ## throws a TypeError\n```\n\n\nIn fact, I can find lots of examples where this happens: levels 6, 7, 8, and 9 with weight 24 all have subspaces which crash is_simple.\n\nI don't really know if this qualifies as \"critical,\" but it seems more than just \"annoying.\" Maybe the page name should be clarified (at least to me)?\n\n-- Craig Citro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/34\n\n",
+    "created_at": "2006-09-12T23:28:51Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in is_simple() for a space of ModularSymbols",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/34",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -26,45 +36,115 @@ I don't really know if this qualifies as "critical," but it seems more than just
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/34
+
+
+
+
 
 ---
 
-Comment by ncalexan created at 2007-02-19 22:06:58
+archive/issue_comments_000221.json:
+```json
+{
+    "body": "Added doctest to sage/modular/modsym/subspace.py exposing related bug.  As of 2.1.5, does not pass.",
+    "created_at": "2007-02-19T22:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-221",
+    "user": "ncalexan"
+}
+```
 
 Added doctest to sage/modular/modsym/subspace.py exposing related bug.  As of 2.1.5, does not pass.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-02-19 22:06:58
+archive/issue_comments_000222.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2007-02-19T22:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-222",
+    "user": "ncalexan"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by ncalexan created at 2007-02-19 22:06:58
+archive/issue_comments_000223.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to modular forms.",
+    "created_at": "2007-02-19T22:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-223",
+    "user": "ncalexan"
+}
+```
 
 Changing component from basic arithmetic to modular forms.
 
 
+
 ---
 
-Comment by was created at 2007-08-16 09:45:34
+archive/issue_comments_000224.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2007-08-16T09:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-224",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by was created at 2007-08-16 09:45:34
+archive/issue_comments_000225.json:
+```json
+{
+    "body": "This throws notimplemented error now.  The problem is that actually implementing this in general efficiently is hard.  Because it's now a not implemented error, I've changed this to an enhancement.",
+    "created_at": "2007-08-16T09:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-225",
+    "user": "was"
+}
+```
 
 This throws notimplemented error now.  The problem is that actually implementing this in general efficiently is hard.  Because it's now a not implemented error, I've changed this to an enhancement.
 
 
+
 ---
 
-Comment by mabshoff created at 2007-08-28 11:59:15
+archive/issue_comments_000226.json:
+```json
+{
+    "body": "This is still a problem with Sage 2.8.2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2, Release Date: 2007-08-22                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: M = ModularSymbols(Gamma0(22),2,sign=1)\nsage: M1 = M.decomposition()[1]\nsage: M1\nModular Symbols subspace of dimension 3 of Modular Symbols space of dimension 5 for Gamma_0(22) of weight 2 with sign 1 over Rational Field\nsage: M1.is_simple()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.2/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.2/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in is_simple(self)\n    234             return self._is_simple\n    235         except AttributeError:\n--> 236             D = self.factorization()\n    237             if len(D) == 0 or len(D) == 1 and D[0][1] == 1:\n    238                 self._is_simple = True\n\n/tmp/Work2/sage-2.8.2/local/lib/python2.5/site-packages/sage/modular/modsym/subspace.py in factorization(self)\n    197         if r != s:\n    198             raise NotImplementedError, \"modular symbols factorization not fully implemented yet --  self has dimension %s, but sum of dimensions of factors is %s\"%(\n--> 199             r, s)\n    200         self._factorization = sage.structure.factorization.Factorization(D, cr=True)\n    201         return self._factorization\n\n<type 'exceptions.NotImplementedError'>: modular symbols factorization not fully implemented yet --  self has dimension 3, but sum of dimensions of factors is 2\nsage:    \n```\n\n\nMaybe something worth fixing during the next bug day.\n\nCheers,\n\nMichael",
+    "created_at": "2007-08-28T11:59:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-226",
+    "user": "mabshoff"
+}
+```
 
 This is still a problem with Sage 2.8.2:
 
@@ -109,24 +189,57 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-19 01:59:39
+archive/issue_comments_000227.json:
+```json
+{
+    "body": "This, as well as the other cases listed in Craig's post, work for me in sage-3.0.alpha5.\n\nI think this was fixed as a side effect of Craig's various fixes in the modular symbols code.",
+    "created_at": "2008-04-19T01:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-227",
+    "user": "AlexGhitza"
+}
+```
 
 This, as well as the other cases listed in Craig's post, work for me in sage-3.0.alpha5.
 
 I think this was fixed as a side effect of Craig's various fixes in the modular symbols code.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-19 21:20:01
+archive/issue_comments_000228.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-19T21:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-228",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-19 21:20:01
+archive/issue_comments_000229.json:
+```json
+{
+    "body": "Fixed in Sage 3.0.rc0 due to patches by Creg Citro merged earlier in the 3.0 alpha cycle.",
+    "created_at": "2008-04-19T21:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/34",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-229",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.0.rc0 due to patches by Creg Citro merged earlier in the 3.0 alpha cycle.
